@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9a860ad5408038cced1f5aa2ac20420e35a1240a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56f2d4cb0b02cc661177a4f781a5c40db924ee2c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672222"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302113"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,22 +42,22 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
  Im Test-Explorer können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Für Testprojekte können verschiedene Komponententest-Frameworks verwendet werden. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder ebenfalls auf .NET Framework abzielenden Sprache geschrieben werden, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer
  [Ausführen von Tests](#BKMK_Run_tests) **&#124;** [Ausführen von Tests nach jedem Build](#BKMK_Run_tests_after_every_build)
 
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
- ![Komponenten Test-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Komponententest-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
  Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Standardgruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests**angezeigt. Sie können die Gruppierung der Tests im Test-Explorer ändern.
 
  Über die Test-Explorer-Symbolleiste können Sie die meisten Aktionen zum Suchen, Organisieren und Ausführen von Tests ausführen.
 
- ![Ausführen von Tests über die Test-Explorer-Symbolleiste](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Run tests from the Test Explorer toolbar](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Run_tests"></a> Tests durchführen
  Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
@@ -68,11 +68,11 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
 - Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen**aus.
 
-- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-Small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
   Während der Testausführung wird die oben im Fenster "Test-Explorer" angezeigte Erfolgreich/Fehler-Leiste animiert. Am Ende des Testlaufs wird die Erfolgreich/Fehler-Leiste grün, wenn alle Tests erfolgreich verlaufen, oder rot, falls ein beliebiger Test fehlschlägt.
 
-  ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+  ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Run_tests_after_every_build"></a> Ausführen von Tests nach jedem Build
 
@@ -81,9 +81,9 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
 |||
 |-|-|
-|![Nach Build ausführen](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Wählen Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü **Test** und dann auf der Test-Explorer-Symbolleiste **Nach dem Buildvorgang Tests ausführen** aus.|
+|![Run after build](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Wählen Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü **Test** und dann auf der Test-Explorer-Symbolleiste **Nach dem Buildvorgang Tests ausführen** aus.|
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_View_test_results"></a> Testergebnisse anzeigen
  [Anzeigen von Testdetails](#BKMK_View_test_details) **&#124;** [Anzeigen des Quellcodes einer Testmethode](#BKMK_View_the_source_code_of_a_test_method)
@@ -93,7 +93,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 ### <a name="BKMK_View_test_details"></a> Anzeigen von Testdetails
  Zum Anzeigen der Details eines einzelnen Tests wählen Sie den jeweiligen Test aus.
 
- ![Test Ausführungsdetails](../test/media/ute-testdetails.png "UTE_TestDetails")
+ ![Test execution details](../test/media/ute-testdetails.png "UTE_TestDetails")
 
  Im Testdetailbereich werden folgende Informationen angezeigt:
 
@@ -109,12 +109,12 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
 - Die Stapelüberwachung zum Zeitpunkt des Testfehlers
 
-  ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+  ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_View_the_source_code_of_a_test_method"></a> Anzeigen des Quellcodes einer Testmethode
  Zum Anzeigen des Quellcodes einer Testmethode im Visual Studio-Editor wählen Sie den Test und anschließend im Kontextmenü **Test öffnen** (Tastatur: F12) aus.
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Group_and_filter_the_test_list"></a> Gruppieren und Filtern der Testliste
  [Gruppieren der Testliste](#BKMK_Grouping_the_test_list) **&#124;** [Gruppieren nach Merkmalen](#BKMK_Group_by_traits) **&#124;** [Durchsuchen und Filtern der Testliste](#BKMK_Search_and_filter_the_test_list)
@@ -124,7 +124,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 ### <a name="BKMK_Grouping_the_test_list"></a> Gruppieren der Testliste
  Klicken Sie zum Ändern der Testunterteilung den neben der Schaltfläche **Gruppieren nach** auf den Pfeil nach unten (![Gruppenschaltfläche „Test-Explorer“](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")), und wählen Sie anschließend neue Gruppierungskriterien aus.
 
- ![Gruppieren von Tests nach Kategorie im Test-Explorer](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")
+ ![Group tests by category in Test Explorer](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")
 
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
 
@@ -135,7 +135,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 |**Merkmale**|Gruppiert Tests nach von Ihnen definierten Kategorie/Wert-Paaren. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|
 |**Projekt**|Gruppiert Tests nach den Namen der Projekte.|
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Group_by_traits"></a> Gruppieren nach Merkmalen
  In der Regel handelt es sich bei Merkmalen um Kategoriename/Wert-Paare, ein Merkmal kann jedoch auch eine einzelne Kategorie darstellen. Merkmale können Methoden zugewiesen werden, die im Komponententest-Framework als Testmethoden identifiziert sind. In einem Komponententest-Framework können Merkmalskategorien definiert werden. Außerdem können Sie den Merkmalskategorien Werte hinzufügen, um eigene Kategoriename/Wert-Paare zu definieren. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.
@@ -183,7 +183,7 @@ TEST_METHOD(Method1)
 |`TEST_OWNER(ownerAlias)`|Verwenden Sie das vordefinierte Merkmal "Besitzer", um einen Besitzer der Testmethode anzugeben.|
 |`TEST_PRIORITY(priority)`|Verwenden Sie das vordefinierte Merkmal "Priorität", um den Testmethoden relative Prioritäten zuzuweisen.|
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Search_and_filter_the_test_list"></a> Durchsuchen und Filtern der Testliste
  Verwenden Sie Test-Explorer-Filter, um die Testmethoden einzuschränken, die in Ihren Projekten angezeigt und ausgeführt werden können.
@@ -198,7 +198,7 @@ TEST_METHOD(Method1)
 
 3. Geben Sie zwischen den Anführungszeichen den Filterwert ein.
 
-   ![Tests im Test-Explorer Filtern](../test/media/ute-filtertestlist.png "UTE_FilterTestList")
+   ![Filter tests in Test Explorer](../test/media/ute-filtertestlist.png "UTE_FilterTestList")
 
 > [!NOTE]
 > Bei Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet, und die angegebene Zeichenfolge kann einem die oft ausgegebene Befehlszeilen  Teil des Kriteriumswerts entsprechen.
@@ -227,12 +227,12 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  Gibt alle Tests mit "MyClass" im Namen zurück, mit Ausnahme der Tests, deren Namen auch "PerfTest" enthalten.
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Create_custom_playlists"></a> Erstellen benutzerdefinierter Wiedergabelisten
  Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgeführt oder angezeigt werden sollen. Wenn Sie eine Wiedergabeliste auswählen, werden die Tests in der Liste im Test-Explorer angezeigt. Sie können einen Test zu mehr als einer Wiedergabeliste hinzufügen, und bei Auswahl der Standardwiedergabeliste **Alle Tests** sind alle Tests im Projekt verfügbar.
 
- ![Wiedergabeliste auswählen](../test/media/ute-playlist.png "UTE_Playlist")
+ ![Choose a playlist](../test/media/ute-playlist.png "UTE_Playlist")
 
  Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Wählen Sie im Kontextmenü **Neue Wiedergabeliste**und dann **Zu Wiedergabeliste hinzufügen**aus. Speichern Sie die Datei unter dem im Dialogfeld **Neue Wiedergabeliste erstellen** angegebenen Namen und Speicherort.
 
@@ -240,9 +240,9 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  Wählen Sie zum**Öffnen einer Wiedergabeliste**im Visual Studio-Menü "Test" aus. Anschließend können Sie entweder aus der Liste der zuletzt verwendeten Wiedergabelisten oder die Option "Wiedergabelistendatei öffnen" auswählen, um den Namen und Speicherort der Wiedergabeliste anzugeben.
 
- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-Small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+ Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
- ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Debug_and_analyze_unit_tests"></a> Debugging und Analyse von Komponententests
  [Debugging von Komponententests](#BKMK_Debug_unit_tests) **&#124;** [Diagnose von Leistungsproblemen bei Testmethoden](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analysieren der Codeabdeckung für Komponententests](#BKMK_Analyzeunit_test_code_coverage)
@@ -259,7 +259,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    Weitere Informationen zum Debugger finden Sie unter [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-   ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnose von Leistungsproblemen bei Testmethoden
  Um die Ursache zu ermitteln, weshalb die Ausführung einer Testmethode zu lange dauert, wählen Sie im Komponententest-Explorer die Methode und anschließend im Kontextmenü "Profil" aus. Weitere Informationen finden Sie unter [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md).
@@ -285,12 +285,12 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    Weitere Informationen finden Sie unter [Using Code Coverage to Determine How Much Code is being Tested (Wie Sie feststellen können, wie viel Code untersucht wird)](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-   ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
+   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_External_resources"></a> Externe Ressourcen
 
 ### <a name="BKMK_Guidance"></a> Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Siehe auch
- Komponenten [Test: der Code](../test/unit-test-your-code.md) [führt einen Komponenten Test als 64-Bit-Prozess](../test/run-a-unit-test-as-a-64-bit-process.md) aus.
+ [Unit Test Your Code](../test/unit-test-your-code.md) [Run a unit test as a 64-bit process](../test/run-a-unit-test-as-a-64-bit-process.md)

@@ -1,5 +1,5 @@
 ---
-title: Erstellen von UML-Modellierungs Projekten und-Diagrammen | Microsoft-Dokumentation
+title: Create UML modeling projects and diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,47 +25,47 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e65f2f33d9c7b034da6b58f32280c95a96bacd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651259"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301010"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Erstellen von UML-Modellierungsprojekten und -diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu entwerfen. Visual Studio stellt Vorlagen für fünf der am häufigsten verwendeten UML-Diagramme bereit: Aktivität, Klasse, Komponente, Sequenz und Anwendungsfall. Darüber hinaus können Sie Ebenendiagramme erstellen, mit deren Hilfe Sie die Struktur des Systems definieren.
 
- UML-Modellierungsdiagramme und Ebenendiagramme können nur in einem Modellierungsprojekt vorhanden sein. Jedes Modellierungsprojekt enthält ein freigegebenes UML-Modell und mehrere UML-Diagramme. Jedes Diagramm ist eine Teilansicht des Modells. Das UML-Modell enthält alle Elemente der UML-Diagramme und kann mit dem UML-Modell-Explorer angezeigt werden. Informationen zu Modellen und deren Beziehung zu Diagrammen finden Sie unter [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md). Informationen zum Modellieren von Projekten unter Versionskontrolle finden Sie [unter Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md) und [strukturieren der Modellierungs Lösung](../modeling/structure-your-modeling-solution.md) .
+ UML-Modellierungsdiagramme und Ebenendiagramme können nur in einem Modellierungsprojekt vorhanden sein. Jedes Modellierungsprojekt enthält ein freigegebenes UML-Modell und mehrere UML-Diagramme. Jedes Diagramm ist eine Teilansicht des Modells. Das UML-Modell enthält alle Elemente der UML-Diagramme und kann mit dem UML-Modell-Explorer angezeigt werden. For information about models and their relationship to diagrams, see [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md). For information about modeling projects under version control, see [Manage models and diagrams under version control](../modeling/manage-models-and-diagrams-under-version-control.md) and [Structure your modeling solution](../modeling/structure-your-modeling-solution.md)
 
 > [!NOTE]
-> Es gibt eine andere Art von Diagramm, das .NET Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).
+> Es gibt eine andere Art von Diagramm, das .NET Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. For more information, see [Designing and Viewing Classes and Types](https://go.microsoft.com/fwlink/?LinkId=142231).
 
-## <a name="CreatingModelingDiagrams"></a>Erstellen eines Diagramms in einem Modellierungsprojekt
+## <a name="CreatingModelingDiagrams"></a> Create a Diagram in a Modeling Project
  Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>So erstellen Sie ein Diagramm und fügen es zu einem Projekt hinzu
 
-1. Wählen Sie im Menü **Architektur** die Option **neues UML-oder ebenendiagramm**aus.
+1. On the **Architecture** menu, choose **New UML or Layer Diagram**.
 
-2. Klicken Sie im Dialogfeld **Neues Diagramm hinzufügen** auf den gewünschten Modellierungs Diagrammtyp.
+2. In the **Add New Diagram** dialog box, click the type of modeling diagram that you want.
 
-    ![Dialogfeld zum Hinzufügen neuer Diagramme](../modeling/media/uml-adddiagram.png "UML_AddDiagram")
+    ![Add New Diagram dialog](../modeling/media/uml-adddiagram.png "UML_AddDiagram")
 
 3. Geben Sie einen Namen für das neue Diagramm ein.
 
-4. Im Feld **zu Modellierungsprojekt hinzufügen** :
+4. In the **Add to modeling project** box:
 
-   - Wählen Sie ein Modellierungsprojekt aus, das bereits in der Projekt Mappe vorhanden ist, und klicken Sie dann auf **OK**.
+   - Select a modeling project that already exists in your solution, and then click **OK**.
 
      \- oder -
 
-   1. Wählen Sie **Neues Modellierungsprojekt erstellen**aus, und klicken Sie dann auf **OK**.
+   1. Select **Create a new modeling project**, and then click **OK**.
 
-   2. Geben Sie im Dialogfeld **Neues Modellierungsprojekt erstellen** einen Namen und einen Speicherort für das neue Projekt ein, und klicken Sie dann auf **OK**.
+   2. In the **Create New Modeling Project** dialog box, type a name and location for the new project, and then click **OK**.
 
-        ![Dialogfeld "neues Modellierungsprojekt erstellen"](../modeling/media/uml-createmodel.png "UML_CreateModel")
+        ![Create New Modeling Project dialog](../modeling/media/uml-createmodel.png "UML_CreateModel")
 
         Wenn die Projektmappe geöffnet ist, wird das neue Projekt hinzugefügt. Wenn Sie keine Projektmappe geöffnet haben, können Sie einen Namen für eine neue Projektmappe eingeben.
 
@@ -73,87 +73,87 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
 
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Einem vorhandenen Modellierungsprojekt ein Diagramm hinzufügen
 
-1. Klicken Sie in **Projektmappen-Explorer**auf den Modellierungsprojekt Knoten.
+1. In **Solution Explorer**, click the modeling project node.
 
     > [!NOTE]
-    > Das Modellierungsprojekt enthält einen Modell Definitions Ordner mit dem Namen **Model Definition**.
+    > The modeling project contains a model definition folder named **ModelDefinition**.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** *\<project Name >* unter **Vorlagen**auf den Modellierungs Diagrammtyp, z. b. **UML-Komponenten Diagramm**.
+3. In the **Add New Item -** *\<project name>* dialog box, under **Templates**, click the modeling diagram type, for example, **UML Component Diagram**.
 
-4. Geben Sie einen Namen für das Diagramm ein, und klicken Sie dann auf **Hinzufügen**.
+4. Type a name for the diagram, and then click **Add**.
 
      Das Modellierungsdiagramm wird geöffnet und im Modellierungsprojekt angezeigt.
 
     > [!CAUTION]
-    > Vorhandene Diagrammdateien dürfen nicht hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden. Dies bewirkt, dass Elemente aus den kopierten Diagrammen ausgeblendet werden oder Fehler auftreten, wenn Sie die Diagramme öffnen. Die Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem es erstellt wurde. Ein UML-Diagramm ist eine Ansicht des Modells, das zum zum zugehörigen Modellierungsprojekt gehört. Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm. Weitere Informationen finden Sie unter [Problembehandlung bei Modellierungs Projekten und-Diagrammen](#TroubleshootingModelingProjects).
+    > Vorhandene Diagrammdateien dürfen nicht hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden. Dies bewirkt, dass Elemente aus den kopierten Diagrammen ausgeblendet werden oder Fehler auftreten, wenn Sie die Diagramme öffnen. Die Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem es erstellt wurde. Ein UML-Diagramm ist eine Ansicht des Modells, das zum zum zugehörigen Modellierungsprojekt gehört. Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm. For more information, see [Troubleshooting Modeling Projects and Diagrams](#TroubleshootingModelingProjects).
 
 #### <a name="to-create-a-blank-modeling-project"></a>So erstellen Sie ein leeres Modellierungsprojekt
 
 1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** unter **installierte Vorlagen**auf **Modellierungs Projekte**.
+2. In the **New Project** dialog box, under **Installed Templates**, click **Modeling Projects**.
 
-3. Klicken Sie im mittleren Fenster auf **Modellierungsprojekt**.
+3. In the middle window, click **Modeling Project**.
 
-4. Benennen Sie das Projekt, und geben Sie einen Speicherort in den Feldern **Name** und **Speicherort** an.
+4. Name the project and specify a location in the **Name** and **Location** boxes.
 
-5. Wählen Sie **im Feldprojekt Mappe die Option** zu Projekt Mappe **Hinzufügen** aus, um das neue Projekt zu einer bereits geöffneten Projekt Mappe hinzuzufügen. oder **Erstellen** Sie eine neue Projekt Mappe, um eine beliebige geöffnete Projekt Mappe zu schließen und das Projekt einer neuen Projekt Mappe hinzuzufügen
+5. In the **Solution** box, select **Add to Solution** to add the new project to a solution you already have open; or **Create new Solution** to close any open solution and add the project to a new solution.
 
-## <a name="RemovingModelingDiagrams"></a>Entfernen von Modellierungs Diagrammen aus einem Projekt
+## <a name="RemovingModelingDiagrams"></a> Removing Modeling Diagrams from a Project
  Sie können ein Diagramm dauerhaft löschen, oder Sie können vorübergehend ein Diagramm aus einem Projekt ausschließen und dann wiederherstellen.
 
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Dauerhaftes Löschen ein Diagramms aus einem Projekt
 
-- Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Hauptdatei, die das Diagramm darstellt, und klicken Sie dann auf **Löschen**.
+- In **Solution Explorer**, right-click the main file that represents the diagram, and then click **Delete**.
 
-     Das Diagramm wird aus dem Projekt und dem Dateisystem entfernt. Die Elemente, die im Diagramm angezeigt werden, werden nicht aus dem **UML-Modell-Explorer**entfernt.
+     Das Diagramm wird aus dem Projekt und dem Dateisystem entfernt. The elements shown on the diagram are not removed from **UML Model Explorer**.
 
     > [!NOTE]
     > Jedes Diagramm weist zwei Dateien auf, von denen eine der anderen untergeordnet ist. Wenn Sie z. B. ein Komponentendiagramm mit dem Namen `CD1` haben, sollten Sie die Datei mit dem Namen `CD1.componentdiagram` löschen. Die untergeordnete Datei mit dem Namen `CD1.componentdiagram.layout` wird automatisch gelöscht.
 
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Vorübergehendes Ausschließen eines Diagramms aus einem Projekt
 
-- Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Diagramm Datei, und klicken Sie dann auf **aus Projekt ausschließen**.
+- In **Solution Explorer**, right-click the diagram file, and then click **Exclude from Project**.
 
      Das Diagramm wird aus dem Projekt entfernt. Es wird nicht aus dem Dateisystem entfernt.
 
     > [!NOTE]
-    > Die Elemente, die im Diagramm angezeigt werden, werden nicht aus dem **UML-Modell-Explorer**entfernt.
+    > The elements shown on the diagram are not removed from **UML Model Explorer**.
 
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Ein vorübergehend ausgeschlossenes Diagramm in einem Projekt wiederherstellen
 
-1. Klicken Sie in **Projektmappen-Explorer**auf den Modellierungsprojekt Knoten.
+1. In **Solution Explorer**, click the modeling project node.
 
     > [!NOTE]
-    > Das Modellierungsprojekt enthält einen Modell Definitions Ordner mit dem Namen **Model Definition**.
+    > The modeling project contains a model definition folder named **ModelDefinition**.
 
-2. Klicken Sie im Menü **Projekt** auf **Vorhandenes Element hinzufügen**.
+2. On the **Project** menu, click **Add Existing Item**.
 
-3. Suchen Sie im Dialogfeld **Vorhandenes Element hinzufügen** nach der Diagramm Datei, wählen Sie die Datei aus, und klicken Sie dann auf **Hinzufügen**.
+3. In the **Add Existing Item** dialog box, locate the diagram file, select the file, and then click **Add**.
 
      Das Modellierungsdiagramm wird geöffnet und im Modellierungsprojekt angezeigt.
 
     > [!NOTE]
     > Jedes Diagramm verfügt über ein Paar von Dateien im Dateisystem. Wählen Sie keine Datei mit der Erweiterung `.layout`. Darüber hinaus bietet Visual Studio keine Unterstützung für das Hinzufügen vorhandener UML-Diagramme zu mehreren Modellierungsprojekten. Jede Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem sie erstellt wurde. Ein UML-Diagramm ist eine Ansicht eines Modells, das zum zum zugehörigen Modellierungsprojekt gehört.
 
-## <a name="NonModelDiagrams"></a>Diagramme, die keine Modellierungs Projekte erfordern
+## <a name="NonModelDiagrams"></a> Diagrams that Do Not Require Modeling Projects
  Die folgenden Arten von Diagrammen sind nicht Teil eines Modellierungsprojekts:
 
-- Klassendiagramme, die als Ansichten des Quellcodes erstellt werden. Diese beziehen sich nicht auf UML-Klassendiagramme. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md).
+- Klassendiagramme, die als Ansichten des Quellcodes erstellt werden. Diese beziehen sich nicht auf UML-Klassendiagramme. For more information, see [Designing and Viewing Classes and Types](../ide/designing-and-viewing-classes-and-types.md).
 
 - Code Maps. Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
 - Diagramme, die keine UML-Diagramme oder Ebenendiagramme sind, z. B. domänenspezifische Sprachen.
 
-## <a name="TroubleshootingModelingProjects"></a>Problembehandlung bei Modellierungs Projekten und-Diagrammen
+## <a name="TroubleshootingModelingProjects"></a> Troubleshooting Modeling Projects and Diagrams
  In der folgende Tabelle werden Probleme, die mit Modellierungsprojekten oder Diagrammen und deren Behebung auftreten können, beschrieben:
 
-|**Problem**|**Gründe**|**Auflösung**|
+|**Problem**|**Causes**|**Auflösung**|
 |---------------|----------------|--------------------|
-|Das Modellierungsprojekt kann nicht geöffnet oder in der Projektmappe geladen werden.<br /><br /> Folgende Meldung wird angezeigt:<br /><br /> "Ein oder mehrere Projekte in der Projektmappe wurden nicht ordnungsgemäß geladen. Details finden Sie im Ausgabefenster."<br /><br /> Im Ausgabefenster wird die folgende Meldung angezeigt:<br /><br /> "*Modelingprojectfile ameandpath*. modelproj: Error: Unbekanntes GUID-Format".|Ein Modellierungsprojekt enthält Verweise auf Projekte, die den gleichen Namen haben und in der gleichen Projektmappe vorkommen.<br /><br /> Beispielsweise ist eine Ebene mit Projekten verknüpft, die den gleichen Namen haben und in der gleichen Projektmappe vorhanden sind.|Verwenden Sie einen Text-Editor, öffnen Sie die Datei, entfernen Sie die Verweise, und versuchen Sie erneut, das Modellierungsprojekt zu öffnen.<br /><br /> Um dieses Problem zu vermeiden, fügen Sie keine Verweise auf Projekte hinzu, die den gleichen Namen haben. Stellen Sie sicher, dass Projekte über eindeutige Namen verfügen.|
-|Es fehlen Elemente aus Diagrammen, die hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden.<br /><br /> - oder -<br /><br /> Wenn Sie versuchen, ein Diagramm zu öffnen, werden die folgenden Meldungen angezeigt:<br /><br /> "Einige Formen oder Connectors im Diagramm fehlen, weil ihre Definitionen in diesem Projekt nicht vorhanden sind. Entweder die Definitionen wurden aus dem Modell gelöscht, während das Diagramm geschlossen war, oder das Diagramm wurde in ein anderes Projekt kopiert, das diese Definitionen nicht enthält."<br /><br /> - oder -<br /><br /> -"Dieses Dokument wird von einem anderen Projekt geöffnet."|Die Diagrammdatei wurde hinzugefügt, gezogen oder aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an einen anderen Speicherort in der Projektmappe kopiert.|Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm.|
+|Das Modellierungsprojekt kann nicht geöffnet oder in der Projektmappe geladen werden.<br /><br /> Folgende Meldung wird angezeigt:<br /><br /> "Ein oder mehrere Projekte in der Projektmappe wurden nicht ordnungsgemäß geladen. Details finden Sie im Ausgabefenster."<br /><br /> Im Ausgabefenster wird die folgende Meldung angezeigt:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: error: Unrecognized Guid format."|Ein Modellierungsprojekt enthält Verweise auf Projekte, die den gleichen Namen haben und in der gleichen Projektmappe vorkommen.<br /><br /> Beispielsweise ist eine Ebene mit Projekten verknüpft, die den gleichen Namen haben und in der gleichen Projektmappe vorhanden sind.|Verwenden Sie einen Text-Editor, öffnen Sie die Datei, entfernen Sie die Verweise, und versuchen Sie erneut, das Modellierungsprojekt zu öffnen.<br /><br /> Um dieses Problem zu vermeiden, fügen Sie keine Verweise auf Projekte hinzu, die den gleichen Namen haben. Stellen Sie sicher, dass Projekte über eindeutige Namen verfügen.|
+|Es fehlen Elemente aus Diagrammen, die hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden.<br /><br /> - oder -<br /><br /> Wenn Sie versuchen, ein Diagramm zu öffnen, werden die folgenden Meldungen angezeigt:<br /><br /> -   "Some shapes or connectors on the diagram are missing because their definitions do not exist in this project. Entweder die Definitionen wurden aus dem Modell gelöscht, während das Diagramm geschlossen war, oder das Diagramm wurde in ein anderes Projekt kopiert, das diese Definitionen nicht enthält."<br /><br /> - oder -<br /><br /> -   "This document is opened by another project."|Die Diagrammdatei wurde hinzugefügt, gezogen oder aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an einen anderen Speicherort in der Projektmappe kopiert.|Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm.|
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [strukturieren der Modellierungs Lösung](../modeling/structure-your-modeling-solution.md)
+ [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [Structure your modeling solution](../modeling/structure-your-modeling-solution.md)

@@ -1,5 +1,5 @@
 ---
-title: Fügen Sie Azure Storage mithilfe von verbundene Dienste hinzu
+title: Add Azure Storage by using Connected Services
 description: Fügen Sie Ihrer App mithilfe des Dialogfelds "Verbundene Dienste hinzufügen" in Visual Studio Azure Storage hinzu
 author: ghogen
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: e68f7503ecc75c03e9f4beda2003415d3175ee7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963857"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300167"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure-Speicher mithilfe von verbundenen Visual Studio-Diensten
 Mit Visual Studio können Sie über das Dialogfeld **Verbundene Dienste hinzufügen** eine Verbindung zwischen jedem der folgenden Elemente und Azure Storage herstellen:
@@ -63,12 +63,12 @@ Nach Abschluss zeigt das Dialogfeld **Verbundene Dienste hinzufügen** automatis
 ## <a name="how-your-project-is-modified"></a>Änderungen am Projekt
 Wenn Sie die Bearbeitung des Dialogfelds abschließen, fügt Visual Studio Verweise hinzu und ändert bestimmte Konfigurationsdateien. Die genauen Änderungen hängen vom Projekttyp ab:
 
-- ASP.NET-Projekt: [Was ist passiert – ASP.NET-Projekte](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- ASP.NET Core-Projekt: [Was ist passiert – ASP.NET 5-Projekte](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- Clouddienstprojekt (Web- und Workerrollen): [Was ist passiert – Clouddienstprojekte](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- ASP.NET-Projekt: [Was ist passiert – ASP.NET-Projekte](https://go.microsoft.com/fwlink/p/?LinkId=513126)
+- ASP.NET Core-Projekt: [Was ist passiert – ASP.NET 5-Projekte](https://go.microsoft.com/fwlink/p/?LinkId=513124)
+- Clouddienstprojekt (Web- und Workerrollen): [Was ist passiert – Clouddienstprojekte](https://go.microsoft.com/fwlink/p/?LinkId=516965)
 - WebJob-Projekt: [Was ist passiert – WebJob-Projekte](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [MSDN-Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
+- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Microsoft Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Azure Storage-Dokumentation](https://docs.microsoft.com/azure/storage/)

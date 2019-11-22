@@ -1,5 +1,5 @@
 ---
-title: Entwickeln von Workflow Anwendungen, die auf .NET 3,0 oder .NET 3,5 Framework abzielen | Microsoft-Dokumentation
+title: Developing Workflow Applications Targeting the .NET 3.0 or .NET 3.5 Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d5049a24b7457adb5ae126a75816814e1295b73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a80aef71271df0a1353dfd73898dbe8fcd7007c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656813"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300924"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Entwickeln von Workflowanwendungen, die auf .NET 3.0 oder .NET auf 3.5 Framework abzielen
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt die [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Anwendungen zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen bereit, die auf [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] abzielen. Der Designer verwendet die vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche für die grafische Erstellung und das Debuggen von Workflowanwendungen.
@@ -29,4 +29,4 @@ ms.locfileid: "72656813"
  [Debuggen von Legacyworkflows](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Windows Workflow Foundation-Programmier Handbuch](http://go.microsoft.com/fwlink?LinkID=65012)
+ [Windows Workflow Foundation Programming Guide](https://go.microsoft.com/fwlink?LinkID=65012)

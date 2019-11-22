@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a230b55149152ba1d195f487951323eda855b8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657144"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301388"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Stub-Typen* stellen eine von zwei Technologien des Microsoft Fakes-Frameworks da
 
  Im Diagramm soll die StockAnalyzer-Komponente getestet werden. Sie verwendet normalerweise eine andere Komponente, den RealStockFeed. RealStockFeed gibt jedoch bei jedem Aufruf seiner Methoden unterschiedliche Ergebnisse zurück. Daher ist es schwierig, den StockAnalyzer zu testen.  Ersetzen Sie ihn während des Tests durch eine andere Klasse, dem StubStockFeed.
 
- ![Real-und Stub-Klassen entsprechen einer Schnittstelle.](../test/media/fakesinterfaces.png "Fakesinterfaces")
+ ![Real and Stub classes conform to one interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
 
  Da Stubs darauf beruhen, dass Sie Ihren Code auf diese Weise strukturieren, verwenden Sie in der Regel Stubs, um einen Teil der Anwendung von einem anderen zu isolieren. Um diesen Teil von anderen Assemblys zu isolieren, die Sie nicht steuern können, z. B. System.dll, würden Sie normalerweise Shims verwenden. Weitere Informationen finden Sie unter [Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
@@ -37,7 +37,7 @@ Stub-Typen* stellen eine von zwei Technologien des Microsoft Fakes-Frameworks da
 ## <a name="How"></a> Verwendung von Stubs
 
 ### <a name="Dependency"></a> Entwurf für Zielabhängigkeit
- Um Stubs zu verwenden, muss die Anwendung so entwickelt werden, dass die verschiedenen Komponenten nicht voneinander, sondern nur von Schnittstellendefinitionen abhängen. Anstatt zur Kompilierzeit verknüpft zu werden, erfolgt die Verbindung von Komponenten zur Laufzeit. Dieses Muster hilft bei der Erstellung von Software, die stabil und einfach zu aktualisieren ist, da Änderungen eher nicht über Komponentenbegrenzungen hinweg weitergegeben werden. Es empfiehlt sich, dieses Muster anzuwenden, auch wenn Sie keine Stubs verwenden. Wenn Sie neuen Code schreiben, können Sie problemlos dem Muster zur [Abhängigkeitseinfügung](http://en.wikipedia.org/wiki/Dependency_injection) folgen. Wenn Sie Tests für vorhandene Software schreiben, müssen Sie diese möglicherweise umgestalten. Sollte das nicht möglich sein, können Sie stattdessen Shims verwenden.
+ Um Stubs zu verwenden, muss die Anwendung so entwickelt werden, dass die verschiedenen Komponenten nicht voneinander, sondern nur von Schnittstellendefinitionen abhängen. Anstatt zur Kompilierzeit verknüpft zu werden, erfolgt die Verbindung von Komponenten zur Laufzeit. Dieses Muster hilft bei der Erstellung von Software, die stabil und einfach zu aktualisieren ist, da Änderungen eher nicht über Komponentenbegrenzungen hinweg weitergegeben werden. Es empfiehlt sich, dieses Muster anzuwenden, auch wenn Sie keine Stubs verwenden. Wenn Sie neuen Code schreiben, können Sie problemlos dem Muster zur [Abhängigkeitseinfügung](https://en.wikipedia.org/wiki/Dependency_injection) folgen. Wenn Sie Tests für vorhandene Software schreiben, müssen Sie diese möglicherweise umgestalten. Sollte das nicht möglich sein, können Sie stattdessen Shims verwenden.
 
  Beginnen wir diese Erläuterung mit einem anschaulichen Beispiel – dem Beispiel im Diagramm. Die StockAnalyzer-Klasse liest die Aktienkurse aus und generiert einige interessante Ergebnisse. Sie verfügt über einige öffentliche Methoden, die getestet werden sollen. Um dieses Beispiel möglichst einfach zu halten, sehen wir uns hier nur eine der Methoden an – und zwar eine sehr einfache – die zur Meldung des aktuellen Preises einer bestimmten Aktie. Es soll ein Komponententest dieser Methode geschrieben werden. Im Folgenden sehen Sie einen ersten Entwurf des Tests:
 
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>Externe Ressourcen
 
 ### <a name="guidance"></a>Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Siehe auch
  [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

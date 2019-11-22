@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3cf8d0cfd3119113247dedf7723e02fca9634a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662652"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296836"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72662652"
 Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Dem Code können auch Verweise und Ersatzparameter hinzugefügt werden. Sie können den Codeausschnitt im Codeausschnitt-Manager über die Schaltfläche „Importieren“ (**Extras > Codeausschnitt-Manager**) zur Visual Studio-Installation hinzufügen.
 
 > [!TIP]
-> Informationen zur einfacheren Erstellung von Codeausschnitten, beispielsweise mithilfe des [Editors für Codeausschnitte](http://go.microsoft.com/fwlink/?LinkId=251033), finden Sie auf der CodePlex-Website für Communitytools.
+> Informationen zur einfacheren Erstellung von Codeausschnitten, beispielsweise mithilfe des [Editors für Codeausschnitte](https://go.microsoft.com/fwlink/?LinkId=251033), finden Sie auf der CodePlex-Website für Communitytools.
 
 ## <a name="snippet-template"></a>Ausschnittvorlage
  Im Folgenden finden Sie eine einfache Ausschnittvorlage:
@@ -91,7 +91,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
 
 ### <a name="adding-description-and-shortcut-fields"></a>Hinzufügen von Beschreibungs- und Verknüpfungsfeldern
 
-1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, den Sie hinzugefügt haben, indem Sie die Datei `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` öffnen.
+1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Edit the snippet you have added by opening the file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
 
 2. Fügen Sie dem Headerelement Autor- und Beschreibungselemente hinzu, und füllen Sie diese aus.
 
@@ -122,11 +122,11 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
 
 6. Speichern Sie die Ausschnittdatei erneut.
 
-7. Öffnen Sie zum Testen der Verknüpfung ein Visual Basic-Projekt und eine Codedatei. Geben Sie `hello` in die Datei ein, und drücken Sie Tab. Der Ausschnittcode sollte nun eingefügt sein.
+7. Öffnen Sie zum Testen der Verknüpfung ein Visual Basic-Projekt und eine Codedatei. Type `hello` in the file and press TAB. Der Ausschnittcode sollte nun eingefügt sein.
 
 ### <a name="to-add-references-and-imports"></a>So fügen Sie Verweise und Importe hinzu
 
-1. Mit Visual Basic-Ausschnitten können Sie mithilfe des Verweiselements einen Verweis auf ein Projekt und mithilfe des Import-Elements eine Import-Deklaration hinzufügen. (Code Ausschnitte in anderen Sprachen haben dieses Feature nicht.) Wenn Sie z. b. `Console.WriteLine` im Codebeispiel in `MessageBox.Show` ändern, müssen Sie möglicherweise die System. Windows. Forms. dll-Assembly dem Projekt hinzufügen.
+1. Mit Visual Basic-Ausschnitten können Sie mithilfe des Verweiselements einen Verweis auf ein Projekt und mithilfe des Import-Elements eine Import-Deklaration hinzufügen. (Snippets in other languages do not have this feature.) For example, if you change `Console.WriteLine` in the code example to `MessageBox.Show`, you may need to add the System.Windows.Forms.dll assembly to the project.
 
 2. Öffnen Sie den Ausschnitt.
 

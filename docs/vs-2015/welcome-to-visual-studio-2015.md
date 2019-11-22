@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657044"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297569"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Willkommen bei Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 >
 > Klicken Sie hier, um die Anmerkungen zu [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) zu lesen.
 
- Laden Sie [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) kostenlos herunter, um sofort mit dem Erstellen von Code zu beginnen. Wenn Sie eine plattformübergreifende Entwicklung vornehmen möchten, installieren Sie die optionalen Pakete. (In [anderen Editionen von Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)finden Sie mehr Features.)
+ Laden Sie [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) kostenlos herunter, um sofort mit dem Erstellen von Code zu beginnen. Wenn Sie eine plattformübergreifende Entwicklung vornehmen möchten, installieren Sie die optionalen Pakete. (In [anderen Editionen von Visual Studio](https://visualstudio.microsoft.com/vs/compare/)finden Sie mehr Features.)
 
  Legen Sie gleich los, erstellen Sie ein neues Projekt, und beginnen Sie mit dem Schreiben von Code. Wählen Sie den Typ der zu erstellenden App aus. Sie können auch eine [Tour](./ide/visual-studio-ide.md) durch die Visual Studio-IDE unternehmen, um sich mit den Tools vertraut zu machen.
 
  Sehen Sie sich auch die [Codebeispiele](https://code.msdn.microsoft.com/) an, und suchen Sie nach Beispielen, die Ihnen beim schnelleren Schreiben der App helfen.
 
- Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Weitere Informationen zum Installationsvorgang finden Sie unter [Installieren von Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. To learn more about the installation process, see [Install Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Erweitern von Visual Studio
  Fügen Sie Ihre eigene Visual Studio-Erweiterung hinzu, um ein Tool oder Skript einzuschließen, das Sie beim Schreiben von Code häufig verwenden. Sie können benutzerdefinierte Menüelemente und Toolfenster erstellen und auf diese Weise eigene Tools in die Visual Studio-IDE integrieren. Sie können den Visual Studio-Editor so erweitern, dass Code analysiert und Fehler behoben werden, oder einen neuen Projekttyp hinzufügen, um genau die benötigten Elemente einzuschließen.
@@ -74,7 +74,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 - Integrieren Sie Office 365-REST-APIs in Ihre eigene App, um eine Verbindung zu in der Cloud gespeicherten Daten herzustellen. Weitere Informationen finden Sie in [diesen Beispielen](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Schreiben hervorragender Web-Apps mit ASP.NET
- [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) ist ein wichtiges Update für MVC, WebAPI und SignalR und kann unter Windows, Mac und Linux ausgeführt werden.  ASP.NET 5 wurde von Grund auf als effizienter, zusammensetzbarer .NET-Stapel zum Erstellen moderner, cloudbasierter Web-Apps und Dienste entwickelt.
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) ist ein wichtiges Update für MVC, WebAPI und SignalR und kann unter Windows, Mac und Linux ausgeführt werden.  ASP.NET 5 wurde von Grund auf als effizienter, zusammensetzbarer .NET-Stapel zum Erstellen moderner, cloudbasierter Web-Apps und Dienste entwickelt.
 
 ## <a name="build-test-and-manage-your-code"></a>Erstellen, Testen und Verwalten von Code
 

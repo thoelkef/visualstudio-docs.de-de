@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Kommentaren Sperrverhalten | Microsoft-Dokumentation
+title: Annotating Locking Behavior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -33,88 +33,88 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157110"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295828"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um Fehler bei der Parallelität in einem Multithreadprogramm zu vermeiden, führen Sie eine entsprechende Sperren Disziplin immer, und Verwenden von SAL-Anmerkungen an.  
+To avoid concurrency bugs in your multithreaded program, always follow an appropriate locking discipline and use SAL annotations.  
   
- Fehler bei der Parallelität sind bekanntermaßen schwierig zu reproduzieren, diagnostizieren und zu debuggen, da sie nicht deterministisch sind. Argumentation Thread überlappen ist bestenfalls schwierig und unpraktisch wird, wenn Sie einen Codeabschnitt entwerfen, die mehr als ein paar Threads hat. Aus diesem Grund ist es empfiehlt sich, eine Sperre Disziplin in Ihre Multithreadprogramme zu folgen. Z. B. eine Sperre Reihenfolge obeying, während mehrere Sperren kann Deadlocks zu vermeiden, und die richtige guarding Sperre abrufen, bevor Sie den Zugriff auf eine freigegebene Ressource verhindert, dass Racebedingungen.  
+ Concurrency bugs are notoriously hard to reproduce, diagnose, and debug because they are non-deterministic. Reasoning about thread interleaving is difficult at best, and becomes impractical when you are designing a body of code that has more than a few threads. Therefore, it's good practice to follow a locking discipline in your multithreaded programs. For example, obeying a lock order while acquiring multiple locks helps avoid deadlocks, and acquiring the proper guarding lock before accessing a shared resource helps prevent race conditions.  
   
- Leider können scheinbar einfache Sperre Regeln überraschend schwierig in der Praxis sein. Eine grundlegende Einschränkung in der heutigen Programmiersprachen und -Compiler ist, dass sie nicht direkt die Spezifikation und die Analyse der parallelitätsanforderungen unterstützen. Programmierer müssen um informellen Codekommentare, die zum Ausdrücken von seiner Wahlabsicht darüber, wie sie Sperren verwenden.  
+ Unfortunately, seemingly simple locking rules can be surprisingly hard to follow in practice. A fundamental limitation in today’s programming languages and compilers is that they do not directly support the specification and analysis of concurrency requirements. Programmers have to rely on informal code comments to express their intentions about how they use locks.  
   
- Parallelität SAL-Anmerkungen werden entwickelt, um Hilfe bei der Angabe von Nebeneffekten, Sperren verantwortlich, Daten genießen, Sperrhierarchie für Reihenfolge und andere Sperren erwartet. Durch implizite Regeln explizites, bieten die Parallelität von SAL-Anmerkungen eine konsistente Möglichkeit für Sie, wie Ihr Code verwendet, Sperre Regeln zu dokumentieren. Concurrency-Anmerkungen verbessern auch die Möglichkeit des Codeanalysetools Racebedingungen, Deadlocks, nicht übereinstimmende Synchronisierungsvorgänge und andere geringfügige Parallelitätsfehler gefunden.  
+ Concurrency SAL annotations are designed to help you specify locking side effects, locking responsibility, data guardianship, lock order hierarchy, and other expected locking behavior. By making implicit rules explicit, SAL concurrency annotations provide a consistent way for you to document how your code uses locking rules. Concurrency annotations also enhance the ability of code analysis tools to find race conditions, deadlocks, mismatched synchronization operations, and other subtle concurrency errors.  
   
 ## <a name="general-guidelines"></a>Allgemeine Richtlinien  
- Verwenden von Anmerkungen, können Sie angeben, die Verträge, die von Funktionsdefinitionen zwischen Clients (Aufrufer) und Implementierungen (aufgerufene) impliziert werden, und express Invarianten und andere Eigenschaften des Programms, das kann Verbesserung der Analyse.  
+ By using annotations, you can state the contracts that are implied by function definitions between implementations (callees) and clients (callers), and express invariants and other properties of the program that can further improve analysis.  
   
- SAL unterstützt viele verschiedene Arten von Sperren primitiven – z. B. kritische Abschnitte, Mutexe, Spinlocks und anderen Ressourcenobjekten. Viele Parallelität Anmerkungen einen Lock-Ausdruck als Parameter in Anspruch nehmen. Gemäß der Konvention ist eine Sperre durch den Pfadausdruck, der das zugrunde liegende Sperrobjekt gekennzeichnet.  
+ SAL supports many different kinds of locking primitives—for example, critical sections, mutexes, spin locks, and other resource objects. Many concurrency annotations take a lock expression as a parameter. By convention, a lock is denoted by the path expression of the underlying lock object.  
   
- Einige Threads Besitzregeln zu beachten:  
+ Some thread ownership rules to keep in mind:  
   
-- Spinlocks sind ungezählte sperren, die klare Thread den Besitz an.  
+- Spin locks are uncounted locks that have clear thread ownership.  
   
-- Mutexe und kritische Abschnitte werden Sperren gezählt, die klare Thread den Besitz zu haben.  
+- Mutexes and critical sections are counted locks that have clear thread ownership.  
   
-- Semaphoren und Ereignissen werden Sperren gezählt, die keine klare Thread den Besitz aufweisen.  
+- Semaphores and events are counted locks that do not have clear thread ownership.  
   
 ## <a name="locking-annotations"></a>Sperren von Anmerkungen  
- Die folgende Tabelle enthält die Sperren von Anmerkungen.  
+ The following table lists the locking annotations.  
   
 |Anmerkung|Beschreibung|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die in POST-Anforderung Zustand der Funktion von einem die exklusive Sperrenanzahl von das Sperrobjekt erhöht sich mit dem Namen von `expr`.|  
-|`_Acquires_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die in POST-Anforderung Zustand der Funktion von einem die Sperrenanzahl des Sperren-Objekts erhöht, die von dem Namen `expr`.|  
-|`_Acquires_nonreentrant_lock_(expr)`|Die Sperre, die von dem Namen `expr` wird abgerufen.  Ein Fehler wird gemeldet, wenn die Sperre bereits verwendet wird.|  
-|`_Acquires_shared_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die in POST-Anforderung Zustand der Funktion von einem die freigegebene Sperrenanzahl von das Sperrobjekt erhöht sich mit dem Namen von `expr`.|  
-|`_Create_lock_level_(name)`|Eine Anweisung, die das Symbol deklariert `name` einer Sperrebene sein, damit sie in den Anmerkungen verwendet werden kann `_Has_Lock_level_` und `_Lock_level_order_`.|  
-|`_Has_lock_kind_(kind)`|Kommentiert ein Objekt, um die Typinformationen von einem Ressourcenobjekt zu optimieren. Manchmal ist kein gemeinsamer Typ für verschiedene Arten von Ressourcen verwendet, und der überladene Typ ist nicht ausreichend, um die semantischen Anforderungen zwischen verschiedenen Ressourcen zu unterscheiden. Es folgt eine Liste der vordefinierten `kind` Parameter:<br /><br /> `_Lock_kind_mutex_`<br /> Typ-ID für Mutexe zu sperren.<br /><br /> `_Lock_kind_event_`<br /> Typ-ID für die Ereignisse zu sperren.<br /><br /> `_Lock_kind_semaphore_`<br /> Typ-ID für die Semaphore zu sperren.<br /><br /> `_Lock_kind_spin_lock_`<br /> Typ-ID für Spinlocks zu sperren.<br /><br /> `_Lock_kind_critical_section_`<br /> Typ-ID für kritische Abschnitte zu sperren.|  
-|`_Has_lock_level_(name)`|Kommentiert eine Sperrobjekt und weist ihm die Sperrebene von `name`.|  
-|`_Lock_level_order_(name1, name2)`|Eine Anweisung, die die Reihenfolge für die Sperre erhalten `name1` und `name2`.|  
-|`_Post_same_lock_(expr1, expr2)`|Kommentiert eine Funktion und gibt an, dass die in POST-Anforderung die zwei Sperren, Status `expr1` und `expr2`, werden behandelt, als wären sie das gleiche Sperrobjekt.|  
-|`_Releases_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die in Post verringert die von einem die exklusive Sperre-Anzahl, der das Sperrobjekt Zustand mit dem Namen von `expr`.|  
-|`_Releases_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die in Post verringert die von einem die Sperrenanzahl des Objekts Sperre Zustand mit dem Namen von `expr`.|  
-|`_Releases_nonreentrant_lock_(expr)`|Die Sperre, die von dem Namen `expr` veröffentlicht wird. Ein Fehler wird gemeldet, wenn die Sperre im Moment nicht aufrechterhalten wird.|  
-|`_Releases_shared_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die in Post verringert die von einem die freigegebene Sperre-Anzahl, der das Sperrobjekt Zustand mit dem Namen von `expr`.|  
-|`_Requires_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Anzahl der Sperren des Objekts in vor mit dem Namen Status von `expr` ist mindestens eine.|  
-|`_Requires_lock_not_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Anzahl der Sperren des Objekts in vor mit dem Namen Status von `expr` ist 0 (null).|  
-|`_Requires_no_locks_held_`|Kommentiert eine Funktion, und gibt an, dass die Sperrenanzahl aller sperren, die die Prüfung von bekannt sind, 0 (null).|  
-|`_Requires_shared_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Anzahl der freigegebenen Sperren des Objekts in vor mit dem Namen Status von `expr` ist mindestens eine.|  
-|`_Requires_exclusive_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Anzahl der exklusiven Sperren des Objekts in vor mit dem Namen Status von `expr` ist mindestens eine.|  
+|`_Acquires_exclusive_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the exclusive lock count of the lock object that's named by `expr`.|  
+|`_Acquires_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the lock count of the lock object that's named by `expr`.|  
+|`_Acquires_nonreentrant_lock_(expr)`|The lock that's named by `expr` is acquired.  An error is reported if the lock is already held.|  
+|`_Acquires_shared_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the shared lock count of the lock object that's named by `expr`.|  
+|`_Create_lock_level_(name)`|A statement that declares the symbol `name` to be a lock level so that it may be used in the annotations `_Has_Lock_level_` and `_Lock_level_order_`.|  
+|`_Has_lock_kind_(kind)`|Annotates any object to refine the type information of a resource object. Sometimes a common type is used for different kinds of resources and the overloaded type is not sufficient to distinguish the semantic requirements among various resources. Here's a list of pre-defined `kind` parameters:<br /><br /> `_Lock_kind_mutex_`<br /> Lock kind ID for mutexes.<br /><br /> `_Lock_kind_event_`<br /> Lock kind ID for events.<br /><br /> `_Lock_kind_semaphore_`<br /> Lock kind ID for semaphores.<br /><br /> `_Lock_kind_spin_lock_`<br /> Lock kind ID for spin locks.<br /><br /> `_Lock_kind_critical_section_`<br /> Lock kind ID for critical sections.|  
+|`_Has_lock_level_(name)`|Annotates a lock object and gives it the lock level of `name`.|  
+|`_Lock_level_order_(name1, name2)`|A statement that gives the lock ordering between `name1` and `name2`.|  
+|`_Post_same_lock_(expr1, expr2)`|Annotates a function and indicates that in post state the two locks, `expr1` and `expr2`, are treated as if they are the same lock object.|  
+|`_Releases_exclusive_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the exclusive lock count of the lock object that's named by `expr`.|  
+|`_Releases_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the lock count of the lock object that's named by `expr`.|  
+|`_Releases_nonreentrant_lock_(expr)`|The lock that's named by `expr` is released. An error is reported if the lock is not currently held.|  
+|`_Releases_shared_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the shared lock count of the lock object that's named by `expr`.|  
+|`_Requires_lock_held_(expr)`|Annotates a function and indicates that in pre state the lock count of the object that's named by `expr` is at least one.|  
+|`_Requires_lock_not_held_(expr)`|Annotates a function and indicates that in pre state the lock count of the object that's named by `expr` is zero.|  
+|`_Requires_no_locks_held_`|Annotates a function and indicates that the lock counts of all locks that are known to the checker are zero.|  
+|`_Requires_shared_lock_held_(expr)`|Annotates a function and indicates that in pre state the shared lock count of the object that's named by `expr` is at least one.|  
+|`_Requires_exclusive_lock_held_(expr)`|Annotates a function and indicates that in pre state the exclusive lock count of the object that's named by `expr` is at least one.|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Systeminterne SAL-Funktionen für nicht verfügbare Sperrobjekte  
- Bestimmte Sperrobjekte nicht durch die Implementierung von der zugeordneten Sperren Funktionen verfügbar gemacht werden.  Die folgende Tabelle enthält die systeminterne SAL-Variablen, die Anmerkungen für Funktionen zu ermöglichen, die für diese Sperrobjekte nicht verfügbar gemachte ausgeführt werden.  
+ Certain lock objects are not exposed by the implementation of the associated locking functions.  The following table lists SAL intrinsic variables that enable annotations on functions that operate on those unexposed lock objects.  
   
 |Anmerkung|Beschreibung|  
 |----------------|-----------------|  
-|`_Global_cancel_spin_lock_`|Beschreibt den SpinLock "Abbrechen".|  
-|`_Global_critical_region_`|Beschreibt die kritischen Bereich.|  
-|`_Global_interlock_`|Beschreibt die interlocked-Vorgänge.|  
-|`_Global_priority_region_`|Beschreibt die Priorität der Region.|  
+|`_Global_cancel_spin_lock_`|Describes the cancel spin lock.|  
+|`_Global_critical_region_`|Describes the critical region.|  
+|`_Global_interlock_`|Describes interlocked operations.|  
+|`_Global_priority_region_`|Describes the priority region.|  
   
 ## <a name="shared-data-access-annotations"></a>Anmerkungen zum freigegebenen Datenzugriff  
- Die folgende Tabelle enthält die Anmerkungen für den Datenzugriff.  
+ The following table lists the annotations for shared data access.  
   
 |Anmerkung|Beschreibung|  
 |----------------|-----------------|  
-|`_Guarded_by_(expr)`|Kommentiert eine Variable aus, und gibt an, dass jedes Mal, wenn die Variable zugegriffen wird, die Anzahl der Sperren des Objekts mit dem Namen von Sperren `expr` ist mindestens eine.|  
-|`_Interlocked_`|Kommentiert eine Variable und entspricht `_Guarded_by_(_Global_interlock_)`.|  
-|`_Interlocked_operand_`|Der Parameter mit Anmerkung versehenen Funktion ist der Target-Operand, der eine der verschiedenen Interlocked-Funktionen.  Die Operanden müssen bestimmte zusätzliche Eigenschaften.|  
-|`_Write_guarded_by_(expr)`|Kommentiert eine Variable aus, und gibt an, dass jedes Mal, wenn die Variable geändert wird, wird die Anzahl der Sperren des Objekts mit dem Namen von Sperren `expr` ist mindestens eine.|  
+|`_Guarded_by_(expr)`|Annotates a variable and indicates that whenever the variable is accessed, the lock count of the lock object that's named by `expr` is at least one.|  
+|`_Interlocked_`|Annotates a variable and is equivalent to `_Guarded_by_(_Global_interlock_)`.|  
+|`_Interlocked_operand_`|The annotated function parameter is the target operand of one of the various Interlocked functions.  Those operands must have specific additional properties.|  
+|`_Write_guarded_by_(expr)`|Annotates a variable and indicates that whenever the variable is modified, the lock count of the lock object that's named by `expr` is at least one.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Einführung in SAL](../code-quality/understanding-sal.md)   
- [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   
- [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)   
- [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)   
- [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)   
- [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Understanding SAL](../code-quality/understanding-sal.md)   
+ [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
+ [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
+ [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+ [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)   
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)

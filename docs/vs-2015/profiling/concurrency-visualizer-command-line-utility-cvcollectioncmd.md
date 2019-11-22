@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692743"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300650"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "65692743"
 Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.exe) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in Concurrency Visualizer für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
   
 > [!NOTE]
-> Seit Visual Studio 2013 ist Concurrency Visualizer eine optionale Erweiterung. (Zuvor war das Programm Bestandteil von Visual Studio.) Sie können die [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) aus dem Download Center herunterladen.  
+> Seit Visual Studio 2013 ist Concurrency Visualizer eine optionale Erweiterung. (Previously it had been included in Visual Studio.) You can download the [Concurrency Visualizer Collection Tools for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) from the Download Center.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Befehlszeilenprogramm Concurrency Visualizer herunterladen  
- Zum Herunterladen und Installieren des Befehlszeilenprogramms rufen Sie [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) auf, und folgen Sie den Anweisungen. Standardmäßig wird CVCollectionCmd.exe in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ auf x64 computers) installiert.  
+ Zum Herunterladen und Installieren des Befehlszeilenprogramms rufen Sie [Concurrency Visualizer Collection Tools für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) auf, und folgen Sie den Anweisungen. Standardmäßig wird CVCollectionCmd.exe in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ auf x64 computers) installiert.  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Eine Ablaufverfolgung mit CVCollectionCmd sammeln  
  Sie können eine Ablaufverfolgung sammeln, indem Sie die App mit CVCollectionCmd starten oder es dieser anhängen. Siehe die Befehlszeilenreferenz unten hinsichtlich Ihrer Optionen. Beispiel:  
@@ -43,7 +43,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
   
 |Option|Beschreibung|Parameter|Rückgabewert|  
 |------------|-----------------|----------------|-------------------|  
-|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keiner|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92)-Sitzungen bereit aktiviert ist.|  
+|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keiner|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) -Sitzungen bereit aktiviert ist.|  
 |Starten|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|  
 |Anfügen|Beginnt mit dem Erfassen einer systemweiten Ablaufverfolgung; wird ansonsten an einen Prozess angefügt, sofern ein solcher festgelegt wurde.|Keine|0, wenn Anfügen erfolgreich war.<br /><br /> 1, wenn das Anfügen fehlgeschlagen ist, weil der festgelegte Prozess ungültig oder mehrdeutig ist.<br /><br /> 13, wenn das Anfügen fehlgeschlagen ist, weil CVCollectionCmd nicht ausreichende Berechtigungen für das Schreiben in das festgelegte Ausgabeverzeichnis besitzt.|  
 |Trennen|Auflistung wird angehalten.|Keine|0, wenn Trennen erfolgreich war.<br /><br /> 1, wenn das Trennen fehlgeschlagen ist, weil die Auflistung aktuell nicht ausgeführt wird.<br /><br /> 2, wenn das Trennen fehlgeschlagen ist, weil die Auflistung nicht angehalten werden konnte.|  
@@ -71,12 +71,12 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 |MinorVersion|Legt die Nebenversion der Konfigurationsdatei fest.|Muss 0 sein für [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] -Projekte. Wenn nicht 0, dann funktioniert das Dienstprogramm nicht.|  
 |IncludeEnvSymbolPath|Legt einen Wert fest, der bestimmt, ob der Umgebungssymbolpfad (_NT_SYMBOL_PATH) verwendet wird.|- TRUE<br />- FALSE|  
 |DeleteEtlsAfterAnalysis|Gibt einen Wert an, der festlegt, ob die ETL-Dateien nach Abschluss der Analyse gelöscht werden.|- TRUE<br />- FALSE|  
-|SymbolPath|Gibt den Pfad des Symbolservers an. Weitere Informationen finden Sie unter [Beziehen von Debugsymboldateien über den Microsoft-Symbolserver](http://go.microsoft.com/fwlink/?LinkID=149389).|Ein Verzeichnisname oder eine URL.|  
+|SymbolPath|Gibt den Pfad des Symbolservers an. Weitere Informationen finden Sie unter [Beziehen von Debugsymboldateien über den Microsoft-Symbolserver](https://go.microsoft.com/fwlink/?LinkID=149389).|Ein Verzeichnisname oder eine URL.|  
 |Marker|Enthält die Liste der Markeranbieter.|Kann null oder mehr MarkerProvider-Elemente enthalten.|  
 |MarkerProvider|Gibt einen einzelnen Markeranbieter an.|Muss folgende Elemente enthalten:<br /><br /> - Ebene<br />- GUID<br />- Name<br /><br /> Kann folgende Elemente enthalten:<br /><br /> - Kategorien<br />- IsEnabled|  
 |Ebene|Legt den Wert für die Bedeutung eines MarkerProviders fest.|- Niedrig<br />- Normal<br />- Hoch<br />- Kritisch<br />- Alles|  
 |GUID|Der Globally Unique Identifier des ETW-Markeranbieters.|Ein GUID.|  
-|Name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
+|-Name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
 |Kategorien|Gibt die für den Markeranbieter erfassten Kategorien an.|Eine durch Kommas getrennte Zeichenfolge oder eine Reihe von Zahlen.|  
 |IsEnabled|Gibt einen Wert an der festlegt, ob der Markeranbieter für die Auflistung aktiviert ist.|- TRUE<br />- FALSE|  
 |FilterConfig|Gibt die Liste der Konfigurationsoptionen der ETW-Ereignisse an, die aus der Auflistung gefiltert werden.|Kann folgende Elemente enthalten:<br /><br /> - CollectClrEvents<br />- ClrCollectionOptions<br />- CollectSampleEvents<br />- CollectGpuEvents<br />- CollectFileIO|  

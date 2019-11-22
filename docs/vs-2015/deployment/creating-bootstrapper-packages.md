@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Bootstrapperpaketen | Microsoft-Dokumentation
+title: Creating Bootstrapper Packages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187805"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300725"
 ---
 # <a name="creating-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermitt
  Der Bootstrapper ermittelt zunächst, ob erforderliche Komponenten bereits installiert sind. Ist dies nicht der Fall, werden vom Bootstrapper die Lizenzverträge angezeigt. Nachdem der Endbenutzer die Lizenzverträge akzeptiert hat, beginnt die Installation der erforderlichen Komponenten. Wurden alle erforderlichen Komponenten ermittelt, wird direkt das Installationsprogramm der Anwendung gestartet.  
   
 ## <a name="creating-custom-packages"></a>Erstellen von benutzerdefinierten Paketen  
- Sie können die Manifeste mit dem XML-Editor in Visual Studio generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md) und [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md). Ein Beispiel zum Erstellen eines Bootstrapperpakets finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Datenschutzbestimmungen Eingabeaufforderung anzeigen](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Sie können die Manifeste mit dem XML-Editor in Visual Studio generieren. Weitere Informationen finden Sie unter [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) und [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Ein Beispiel für das Erstellen eines Bootstrapperpakets finden Sie unter [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Zur Erstellung eines Bootstrapperpakets muss die weitervertreibbare Komponente in Form einer EXE- oder MSI-Datei im Bootstrapper Manifest-Generator angegeben werden. Dann werden vom Bootstrapper Manifest-Generator die folgenden Dateien erstellt:  
   
@@ -70,7 +70,7 @@ Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermitt
   
   `package.xml`  
   
-  Schließlich kopieren Sie die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Schließlich kopieren Sie die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  In der folgenden Tabelle werden die Eigenschaften angezeigt, die automatisch vom Bootstrapper eingetragen werden.  
   
-|Eigenschaft|Beschreibung|  
+|property|Beschreibung|  
 |--------------|-----------------|  
 |ApplicationName|Der Name der Anwendung.|  
 |ProcessorArchitecture|Der Prozessor und die Bits pro Wort für die Plattform, auf die eine ausführbare Datei zielt. Folgende Werte sind gültig:<br /><br /> –   Intel<br />–   IA64<br />–   AMD64|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Die verteilbare Liste ist eine XML-Datei, die Sie entsprechend dem folgenden Format benennen sollten: *Name des Unternehmens*. *Name der Komponente*. RedistList.xml. Beispiel: Wenn die Komponente "Datawidgets" heißt und von der Firma Acme stammt, nennen Sie die Datei "Acme.DataWidgets.RedistList.xml". Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
+ Die verteilbare Liste ist eine XML-Datei, die entsprechend dem folgenden Format benannt wird: *Company Name*.*Component Name*.RedistList.xml. Beispiel: Wenn die Komponente "Datawidgets" heißt und von der Firma Acme stammt, nennen Sie die Datei "Acme.DataWidgets.RedistList.xml". Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -125,7 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Dialogfeld "Erforderliche Komponenten"](../ide/reference/prerequisites-dialog-box.md)   
- [Produkt- und Paketschemareferenz](../deployment/product-and-package-schema-reference.md)   
- [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)   
+ [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](https://go.microsoft.com/fwlink/?LinkId=107537)

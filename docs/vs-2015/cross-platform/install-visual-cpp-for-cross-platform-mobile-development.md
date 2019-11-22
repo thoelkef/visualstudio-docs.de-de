@@ -11,17 +11,17 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698466"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299800"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[Visual C++ für plattformübergreifende Mobile-Entwicklung](http://go.microsoft.com/fwlink/p/?LinkId=536383) ist eine installierbare Komponente in Visual Studio 2015. Sie enthält plattformübergreifende Visual Studio-Vorlagen und installiert die plattformübergreifenden Tools und SDKs für den Schnelleinstieg, ohne dass Sie diese suchen, herunterladen und selbst konfigurieren müssen. Mit diesen Tools in Visual Studio können Sie mühelos plattformübergreifende Projekte erstellen, bearbeiten, debuggen und testen. In diesem Thema wird beschrieben, wie Sie die Tools und Drittanbietersoftware installieren, die zum Entwickeln plattformübergreifender Apps mit Visual Studio benötigt werden. Einen Überblick über die Komponente finden Sie unter [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+[Visual C++ für plattformübergreifende Mobile-Entwicklung](https://go.microsoft.com/fwlink/p/?LinkId=536383) ist eine installierbare Komponente in Visual Studio 2015. Sie enthält plattformübergreifende Visual Studio-Vorlagen und installiert die plattformübergreifenden Tools und SDKs für den Schnelleinstieg, ohne dass Sie diese suchen, herunterladen und selbst konfigurieren müssen. Mit diesen Tools in Visual Studio können Sie mühelos plattformübergreifende Projekte erstellen, bearbeiten, debuggen und testen. In diesem Thema wird beschrieben, wie Sie die Tools und Drittanbietersoftware installieren, die zum Entwickeln plattformübergreifender Apps mit Visual Studio benötigt werden. Einen Überblick über die Komponente finden Sie unter [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Anforderungen](#Requirements)   
  [Beschaffung der Tools](#GetTheTools)   
@@ -40,12 +40,12 @@ ms.locfileid: "65698466"
   
 - Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
   
-- Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
-- Zum Erstellen von Code für iOS sind eine Apple-ID, ein iOS-Entwicklerprogrammkonto und ein Mac erforderlich, auf dem [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) oder höher unter OS X Mavericks oder höher ausgeführt werden kann. Einfache Installationsschritte finden Sie unter [Install tools for iOS](#InstallForiOS).  
+- Zum Erstellen von Code für iOS sind eine Apple-ID, ein iOS-Entwicklerprogrammkonto und ein Mac erforderlich, auf dem [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) oder höher unter OS X Mavericks oder höher ausgeführt werden kann. Einfache Installationsschritte finden Sie unter [Install tools for iOS](#InstallForiOS).  
   
 ## <a name="GetTheTools"></a> Beschaffung der Tools  
- Visual C++ für die plattformübergreifende mobile Entwicklung ist eine installierbare Komponente, die in Visual Studio Community, Professional und Enterprise enthalten ist. Wechseln Sie zur Seite [Visual Studio 2015 Downloads](http://go.microsoft.com/fwlink/p/?linkid=517106), und laden Sie Visual Studio 2015 mit Update 2 oder höher herunter.  
+ Visual C++ für die plattformübergreifende mobile Entwicklung ist eine installierbare Komponente, die in Visual Studio Community, Professional und Enterprise enthalten ist. Wechseln Sie zur Seite [Visual Studio 2015 Downloads](https://go.microsoft.com/fwlink/p/?linkid=517106), und laden Sie Visual Studio 2015 mit Update 2 oder höher herunter.  
   
 ## <a name="InstallTheTools"></a> Installieren der Tools  
  Das Installationsprogramm für Visual Studio 2015 umfasst eine Option zum Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung. Damit werden die erforderlichen C++-Sprachtools, Vorlagen und Komponenten für Visual Studio, die erforderlichen GCC- und Clang-Toolsets für Android-Builds und -Debugging sowie Komponenten für die Kommunikation mit einem Mac für iOS-Entwicklung installiert. Außerdem werden die Drittanbietertools und -Softwareentwicklungskits installiert, die zur Unterstützung der IOS- und Android-App-Entwicklung erforderlich sind. Bei den meisten dieser Drittanbietertools handelt es sich um Open Source-Software für die Android-Plattformunterstützung.  
@@ -62,7 +62,7 @@ ms.locfileid: "65698466"
   
 2. Erweitern Sie unter „Features auswählen“ die Option **Plattformübergreifende, mobile Entwicklung** , und aktivieren Sie **Visual C++ Mobile Development**.  
   
-     ![Wählen Sie Visual C&#43;&#43; Mobile Development aus](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Select Visual C&#43;&#43; Mobile Development](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
      Standardmäßig wird bei der Auswahl von **Visual C++ Mobile Development** auch die Option **Programmiersprachen** festgelegt, um **Visual C++** zu installieren; ebenso wird die Option **Häufige Tools und Software Development Kits** zum Installieren der erforderlichen Komponenten von Drittanbietern festgelegt. Wenn benötigt, können sie weitere Komponenten auswählen. Der **Microsoft Visual Studio-Emulator** für Android wird ebenfalls standardmäßig ausgewählt. Die bereits installierten Komponenten werden in der Liste inaktiv angezeigt.  
   
@@ -127,12 +127,12 @@ ms.locfileid: "65698466"
   
 2. Erweitern Sie im Dialogfeld **Optionen** die Option **Plattformübergreifend**&gt; **C++** und wählen Sie **Android**aus.  
   
-     ![Android-Tool-Pfadoptionen](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
+     ![Pfadoptionen für Android-Tools](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3. Um den von einem Tool verwendeten Pfad zu ändern, aktivieren Sie das Kontrollkästchen neben dem Pfad, und bearbeiten Sie den Ordnerpfad im Textfeld. Sie können auch über die Schaltfläche zum Durchsuchen (**...**) das Dialogfeld **Speicherort auswählen** öffnen, um den Ordner auszuwählen.  
+3. Um den von einem Tool verwendeten Pfad zu ändern, aktivieren Sie das Kontrollkästchen neben dem Pfad, und bearbeiten Sie den Ordnerpfad im Textfeld. Sie können auch über die Schaltfläche zum Durchsuchen ( **...** ) das Dialogfeld **Speicherort auswählen** öffnen, um den Ordner auszuwählen.  
   
 4. Klicken Sie auf **OK** , um die benutzerdefinierten Toolordnerpfade zu speichern.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
+ [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

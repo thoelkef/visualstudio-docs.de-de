@@ -1,5 +1,5 @@
 ---
-title: T4-Vorlagen Direktive | Microsoft-Dokumentation
+title: T4 Template Directive | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658550"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298140"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normalerweise mit einer `template`-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
 
- Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
+ For a general overview of writing text templates, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template-directive"></a>Verwenden der Vorlagenanweisung
 
@@ -34,7 +34,7 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
 ## <a name="compileroptions-attribute"></a>compilerOptions-Attribut
  Ein Beispiel: `compilerOptions="optimize+"`
 
- Gültige Werte: beliebige gültige Compileroptionen. Weitere Informationen finden [ C# Sie unter Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valid values: Any valid compiler options. For more information, see [C# Compiler Options Listed by Category](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) and [Visual Basic Compiler Options Listed by Category](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignoriert für Laufzeitvorlagen (vorverarbeitete Vorlagen).
 
@@ -43,7 +43,7 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
 ## <a name="culture-attribute"></a>Kulturattribut
  Ein Beispiel: `culture="de-CH"`
 
- Gültige Werte: "", die invariante Kultur (Standard).
+ Valid values: "", the invariant culture, which is the default.
 
  Eine als Zeichenfolge im Format xx-XX ausgedrückte Kultur. Beispiel: en-US, ja-JP, de-CH, de-DE. Weitere Informationen finden Sie unter <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
@@ -56,13 +56,13 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
 debug="true"
 ```
 
- Gültige Werte: `true, false`. "False" ist der Standardwert.
+ Valid values: `true, false`. "False" ist der Standardwert.
 
  Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
- Bei Entwurfszeit Vorlagen wird die zwischen Code Datei in das Verzeichnis **% Temp%** geschrieben.
+ For design-time templates the intermediate code file will be written to your **%TEMP%** directory.
 
- Wenn Sie eine Entwurfszeit Vorlage im Debugger ausführen möchten, speichern Sie die Textvorlage, öffnen Sie das Kontextmenü der Textvorlage in Projektmappen-Explorer, und wählen Sie dann **T4-Vorlage Debuggen**aus.
+ To run a design-time template in the debugger, save the text template, then open the shortcut menu of the text template in Solution Explorer, and choose **Debug T4 Template**.
 
 ## <a name="hostspecific-attribute"></a>hostspecific-Attribut
  Beispiel:
@@ -71,11 +71,11 @@ debug="true"
 hostspecific="true"
 ```
 
- Gültige Werte: `true, false, trueFromBase`. "False" ist der Standardwert.
+ Valid values: `true, false, trueFromBase`. "False" ist der Standardwert.
 
- Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. Die-Eigenschaft ist ein Verweis auf den Host der Transformations-Engine und wird als [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))deklariert. Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.
+ Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. The property is a reference to the host of the transformation engine, and is declared as [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.
 
- Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. It’s applicable to [design-time templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md), but not [run-time templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Wenn `hostspecific` auf `true` festgelegt ist und Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
 
@@ -104,11 +104,11 @@ Content of myFile is:
 ## <a name="language-attribute"></a>language-Attribut
  Ein Beispiel: `language="VB"`
 
- Gültige Werte: `C#` (Standard)
+ Valid values: `C#` (default)
 
  `VB`
 
- Das Language-Attribut gibt die Sprache ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../includes/csprcs-md.md)]) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
+ The language attribute specifies the language ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../includes/csprcs-md.md)]) to use for the source code in statement and expression blocks. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
  Beispiel:
 
@@ -131,7 +131,7 @@ Squares of numbers:
  Sie können angeben, dass der Programmcode der Vorlage von einer anderen Klasse erben kann, die auch mit einer Textvorlage generiert werden kann.
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Vererbung in einer Laufzeittextvorlage (vorverarbeiteten Textvorlage)
- Sie können Vererbung zwischen Laufzeittextvorlagen verwenden, um eine Basisvorlage zu erstellen, die mehrere abgeleitete Varianten besitzt. Lauf Zeit Vorlagen sind solche, bei denen die Eigenschaft **benutzerdefinierter Tool** auf **texttemplatingfilepreprocessor**festgelegt ist. Eine Laufzeitvorlage generiert Code, den Sie in der Anwendung aufrufen können, um den in der Vorlage definierten Text zu erstellen. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Sie können Vererbung zwischen Laufzeittextvorlagen verwenden, um eine Basisvorlage zu erstellen, die mehrere abgeleitete Varianten besitzt. Run-time templates are those that have the **Custom Tool** property set to **TextTemplatingFilePreprocessor**. Eine Laufzeitvorlage generiert Code, den Sie in der Anwendung aufrufen können, um den in der Vorlage definierten Text zu erstellen. For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Wenn Sie kein `inherits`-Attribut angeben, werden eine Basisklasse und eine abgeleitete Klasse von der Textvorlage generiert. Wenn Sie ein `inherits`-Attribut angeben, wird nur die abgeleitete Klasse generiert. Sie können eine Basisklasse manuell erstellen, doch sie muss über die Methoden verfügen, die von der abgeleiteten Klasse verwendet werden.
 
@@ -207,16 +207,16 @@ This is the common footer.
 > Wenn Sie die Attribute `inherits` und `hostspecific` zusammen verwenden, geben Sie hostspecific="trueFromBase" in der abgeleiteten Klasse sowie host="true" in der Basisklasse an. Dies vermeidet eine doppelte Definition der Eigenschaft `Host` im generierten Code.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Vererbung in einer Entwurfszeittextvorlage
- Eine Textvorlage für die Entwurfszeit ist eine Datei, für die das **benutzerdefinierte Tool** auf **TextTemplatingFileGenerator**festgelegt ist. Die Vorlage generiert eine Ausgabedatei mit Code oder Text, die einen Teil des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekts bildet. Um die Ausgabedatei zu generieren, wird die Vorlage zuerst in eine Zwischenprogrammcodedatei übersetzt, die normalerweise nicht sichtbar ist. Das `inherits`-Attribut gibt die Basisklasse für den Zwischencode an.
+ A design-time text template is a file for which **Custom Tool** is set to **TextTemplatingFileGenerator**. Die Vorlage generiert eine Ausgabedatei mit Code oder Text, die einen Teil des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekts bildet. Um die Ausgabedatei zu generieren, wird die Vorlage zuerst in eine Zwischenprogrammcodedatei übersetzt, die normalerweise nicht sichtbar ist. Das `inherits`-Attribut gibt die Basisklasse für den Zwischencode an.
 
  Für eine Entwurfszeittextvorlage können Sie jede Basisklasse angeben, die von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> abgeleitet wird. Verwenden Sie die `<#@assembly#>`-Direktive, um die Assembly oder das Projekt zu laden, das die Basisklasse enthält.
 
- Weitere Informationen finden Sie unter ["Vererbung in Text Vorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+ For more information, see ["Inheritance in Text Templates" in Gareth Jones’ Blog](https://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>LinePragmas-Attribut
  Ein Beispiel: `linePragmas="false"`
 
- Gültige Werte: `true` (Standard)
+ Valid values: `true` (default)
 
  `false`
 
@@ -227,7 +227,7 @@ This is the common footer.
 ## <a name="visibility-attribute"></a>Sichtbarkeitsattribut
  Ein Beispiel: `visibility="internal"`
 
- Gültige Werte: `public` (Standard)
+ Valid values: `public` (default)
 
  `internal`
 

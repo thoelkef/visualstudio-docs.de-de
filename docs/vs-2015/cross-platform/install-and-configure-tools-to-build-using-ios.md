@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434150"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299814"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.  
+Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.  
   
 > [!NOTE]
 > Informationen zur Verwendung von in der Cloud gehosteten Mac-Diensten anstelle eines Macs finden Sie unter [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Die Anweisungen gelten für das Erstellen mit Visual Studio Tools for Apache Cordova. Wenn Sie die Anweisungen zum Erstellen mit Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden möchten, ersetzen Sie "vcremote" durch "vs-mda-remote".  
@@ -69,7 +69,7 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
      Ausführliche Informationen zum Erstellen von Bereitstellungsprofilen finden Sie unter [Creating Provisioning Profiles Using Member Center](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) (Erstellen von Bereitstellungsprofilen mit Member Center) (in englischer Sprache) in der iOS Developer Library.  
   
-- [Node.js](http://nodejs.org/)  
+- [Node.js](https://nodejs.org/en/)  
   
 - Eine aktualisierte Version von npm  
   
@@ -78,7 +78,7 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> Installieren des Remote-Agents für iOS  
- Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.  
+ Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.  
   
  Stellen Sie vor der Installation des Remote-Agents sicher, dass die [Erforderliche Komponenten](#Prerequisites) vorhanden sind und [Visual C++ für plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)installiert ist.  
   
@@ -88,9 +88,9 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   Der Schalter für die globale Installation (**-g**) wird empfohlen, ist jedoch nicht zwingend erforderlich.  
+   Der Schalter für die globale Installation ( **-g**) wird empfohlen, ist jedoch nicht zwingend erforderlich.  
   
-   Während der Installation wird "vcremote" installiert, und der Entwicklermodus wird auf Ihrem Mac aktiviert. [Homebrew](http://brew.sh/) und zwei npm-Pakete, "vcremote-lib" und "vcremote-utils", werden ebenfalls installiert.  
+   Während der Installation wird "vcremote" installiert, und der Entwicklermodus wird auf Ihrem Mac aktiviert. [Homebrew](https://brew.sh/) und zwei npm-Pakete, "vcremote-lib" und "vcremote-utils", werden ebenfalls installiert.  
   
   > [!NOTE]
   > Zum Installieren von Homebrew benötigen Sie sudo-Zugriff (Administrator). Wenn Sie "vcremote" ohne sudo installieren müssen, können Sie Homebrew manuell unter einem "usr/local"-Speicherort installieren und den Ordner "bin" zu Ihrem Pfad hinzufügen. Weitere Informationen finden Sie in der [Homebrew-Dokumentation](https://github.com/Homebrew/homebrew/wiki/Installation). Um den Entwicklermodus manuell zu aktivieren, geben Sie folgenden Befehl in die Terminal-App ein: `DevToolsSecurity –enable`  
@@ -149,7 +149,7 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
 3. Wählen Sie in der Menüleiste von Visual Studio **Extras**, **Optionen**aus.  
   
-4. Erweitern Sie im Dialogfeld **Optionen** **Plattformübergreifend**, **C++**, **iOS**.  
+4. Erweitern Sie im Dialogfeld **Optionen** **Plattformübergreifend**, **C++** , **iOS**.  
   
 5. Geben Sie in die Felder **Hostname** und **Port** die Werte ein, die vom Remote-Agent angegeben wurden, als Sie diesen gestartet haben. Der Hostname kann der DNS-Name oder die IP-Adresse Ihres Macs sein. Der Standardport ist 3030.  
   

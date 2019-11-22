@@ -1,5 +1,5 @@
 ---
-title: Verwenden von SAL-Anmerkungen zum Reduzieren von C / C++-Codefehlern | Microsoft-Dokumentation
+title: Using SAL Annotations to Reduce C-C++ Code Defects | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,54 +13,54 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201217"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291885"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-SAL ist die Microsoft Source Code Annotation-Sprache. Mithilfe von Code quellanmerkungen können Sie die Absicht hinter Ihrem Code explizit machen. Diese Anmerkungen ermöglichen auch die automatisierte statische Analyse-Tools zum Analysieren von Code genauer gesagt mit deutlich weniger falsch positive Ergebnisse und falschen negativen Ergebnissen.  
+SAL is the Microsoft source code annotation language. By using source code annotations, you can make the intent behind your code explicit. These annotations also enable automated static analysis tools to analyze your code more accurately, with significantly fewer false positives and false negatives.  
   
- Die Artikel in diesem Abschnitt der Dokumentation erläutert die Aspekte von SAL, Verweis bereitstellen, die für die Syntax für SAL und Beispielen für deren Verwendung geben.  
+ The articles in this section of the documentation discuss aspects of SAL, provide reference for SAL syntax, and give examples of its use.  
   
 - [Einführung in SAL](../code-quality/understanding-sal.md)  
   
-     Enthält Informationen und Beispiele, die den Kern von SAL-Anmerkungen anzeigen.  
+     Provides information and examples that show the core SAL annotations.  
   
 - [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)  
   
-     Listet die SAL-Anmerkungen für Funktionen und Funktionsparameter.  
+     Lists the SAL annotations for functions and function parameters.  
   
 - [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)  
   
-     Listet die SAL-Anmerkungen für Funktionen und Funktionsverhalten.  
+     Lists the SAL annotations for functions and function behavior.  
   
 - [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)  
   
-     Listet die SAL-Anmerkungen für Strukturen und Klassen.  
+     Lists the SAL annotations for structures and classes.  
   
 - [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)  
   
-     Erläutert das Verwenden von SAL-Anmerkungen mit Mechanismen für die Sperre.  
+     Explains how to use SAL annotations with lock mechanisms.  
   
 - [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
-     Listet die SAL-Anmerkungen, die die Bedingung oder einen Bereich (die Platzierung), der andere SAL-Anmerkungen angeben.  
+     Lists the SAL annotations that specify the condition or scope (placement) of other SAL annotations.  
   
 - [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)  
   
-     Listet die systeminternen SAL-Anmerkungen.  
+     Lists the intrinsic SAL annotations.  
   
 - [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)  
   
-     Enthält Beispiele für die Verwendung von SAL-Anmerkungen verwendet. Außerdem wird erläutert, häufige Probleme.  
+     Provides examples that show how to use SAL annotations. Also explains common pitfalls.  
   
 ## <a name="related-resources"></a>Verwandte Ressourcen  
- [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
 ## <a name="see-also"></a>Siehe auch  
- [2.0-SAL-Anmerkungen für Windows-Treiber](http://go.microsoft.com/fwlink/?LinkId=250979)
+ [SAL 2.0 Annotations for Windows Drivers](https://go.microsoft.com/fwlink/?LinkId=250979)

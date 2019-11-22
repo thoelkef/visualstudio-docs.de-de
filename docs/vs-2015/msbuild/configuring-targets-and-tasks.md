@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d2e067b70256bd86a1f7598033689d6a498af60
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68196599"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298345"
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurieren von Zielen und Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Sie können MSBuild-Ziele und -Aufgaben so konfigurieren, dass sie prozessextern
 ## <a name="installation"></a>Installation  
  .NET Framework 4.5 und 4.5.1 ersetzen die Common Language Runtime (CLR) und die Ziele, Aufgaben und Tools von .NET Framework 4 , ohne sie umzubenennen. .NET Framework 4.5.1 wird zusammen mit [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] installiert.  
   
- Wenn Sie MSBuild von Visual Studio getrennt installieren möchten, sollten Sie das Installationspaket von der [MSBuild-Downloadsite](http://go.microsoft.com/fwlink/?LinkId=309745) herunterladen. Sie müssen außerdem die .NET Framework-Versionen installieren, die Sie zusätzlich verwenden möchten.  
+ Wenn Sie MSBuild von Visual Studio getrennt installieren möchten, sollten Sie das Installationspaket von der [MSBuild-Downloadsite](https://go.microsoft.com/fwlink/?LinkId=309745) herunterladen. Sie müssen außerdem die .NET Framework-Versionen installieren, die Sie zusätzlich verwenden möchten.  
   
 ## <a name="targets-and-tasks"></a>Ziele und Aufgaben  
  MSBuild führt bestimmte Buildaufgaben prozessextern aus, um auf mehr Kontexte abzuzielen.  Beispielsweise kann ein 32-Bit-MSBuild eine Buildaufgabe in einem 64-Bit-Prozess ausführen, um auf einen 64-Bit-Computer abzuzielen. Dies wird durch `UsingTask`-Argumente und `Task`-Parameter gesteuert. Die Ziele, die von .NET Framework 4.5 installiert werden, legen diese Argumente und Parameter fest, und es sind keine Änderungen erforderlich, um Anwendungen für die verschiedenen Zielkontexte zu erstellen.  

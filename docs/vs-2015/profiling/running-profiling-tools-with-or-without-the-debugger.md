@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191680"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298208"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,18 +67,18 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Sammeln von Profilerstellungsdaten ohne das Debuggen  
  Für die Ausführung einiger Profilerstellungstools sind Administratorrechte erforderlich. Führen Sie daher entweder Visual Studio als Administrator aus, oder führen Sie die Tools als Administrator aus, wenn Sie die Diagnosesitzung starten.  
   
 1. Öffnen Sie das Projekt in Visual Studio.  
   
-2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…** . (Tastenkombination: ALT + F2).  
+2. On the **Debug** menu, choose **Performance Profiler...** (Shortcut key: Alt + F2).  
   
 3. Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
   
-    ![Diagnosetools auswählen](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Select the diagnostic tools](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
 4. Klicken Sie zum Starten der Diagnosesitzung auf **Start**.  
   
@@ -86,7 +86,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
     Während Sie die Sitzung ausführen, zeigen einige Tools Grafiken der Echtzeitdaten auf der Startseite der Diagnosetools an.  
   
-    ![Daten auf der Seite „Leistung und Diagnose“ erfassen](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Collect data on the Performance and Diagnostic pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Klicken Sie zum Beenden der Diagnosesitzung auf **Auflistung anhalten**.  
   
@@ -94,10 +94,10 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
    Sie können auch gespeicherte DIAGNOSTIC-Sitzungsdateien über die Liste der zuvor geöffneten Elemente auf der Startseite für die Diagnosetools öffnen.  
   
-   ![Öffnen einer gespeicherten Diagnosesitzungsdatei](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Open a saved diagnosis session file](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Der Profilerstellungsbericht  
- ![Diagnosetools-Bericht](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Diagnostic tools report](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
@@ -105,38 +105,38 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
 |![Schritt 2](../profiling/media/procguid-2.png "ProcGuid_2")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  
 |![Schritt 3](../profiling/media/procguid-3.png "ProcGuid_3")|Ein Tool zeigt mindestens ein Hauptdiagramm an. Wenn Ihre Diagnosesitzung mit mehreren Tools erstellt wird, werden alle Hauptdiagramme angezeigt.|  
 |![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Sie können die einzelnen Diagramme reduzieren und erweitern.|  
-|![Schritt 5](../profiling/media/procguid-6.png "ProcGuid_6")|Wenn Ihre Daten Informationen mehrerer Tools enthalten, werden die Details für das Tool unter Registerkarten aufgelistet.|  
-|![Schritt 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Ein Tool kann eine oder mehrere Detailansichten haben. Die Ansicht wird durch den ausgewählten Bereich der Zeitachse gefiltert.|  
+|![Step 5](../profiling/media/procguid-6.png "ProcGuid_6")|Wenn Ihre Daten Informationen mehrerer Tools enthalten, werden die Details für das Tool unter Registerkarten aufgelistet.|  
+|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Ein Tool kann eine oder mehrere Detailansichten haben. Die Ansicht wird durch den ausgewählten Bereich der Zeitachse gefiltert.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Festlegen des Analyseziels auf ein anderes Gerät  
  Sie können nicht nur Ihre App im Visual Studio-Projekt starten, sondern auch Diagnosesitzungen auf alternativen Zielen ausführen. Beispielsweise empfiehlt es sich, die Diagnose von Leistungsproblemen mit einer Version Ihrer App auszuführen, die aus dem Windows App Store installiert wurde.  
   
- ![Analyseziel für Diagnosetools auswählen](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Choose diagnostic tools analysis target](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Sie können Apps starten, die bereits auf einem Gerät installiert sind, oder Sie können die Diagnosetools an Apps anfügen, die bereits ausgeführt werden. Bei der Auswahl von **Ausgeführte App** oder **Installierte App** wählen Sie die App in einer Liste aus, die die Apps auf dem angegebenen Bereitstellungsziel erkennt.  
   
- ![Auswählen einer ausgeführten oder installierten App für die Diagnose](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Choose a running or installed app for diagnosis](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  Wenn Sie **Internet Explorer** auswählen, geben Sie die URL an, und Sie können das Windows Phone-Bereitstellungsziel ändern.  
   
- ![URL angeben, die in Internet Explorer angezeigt wird](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Specify the url to display in Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
  Für das Ausführen einer Diagnosesitzung auf einem Remote-PC oder -Tablet müssen die Visual Studio-Remotetools installiert sein und auf dem Remotezielgerät ausgeführt werden. Informationen zu Desktop-Apps finden Sie unter [Remotedebugging](../debugger/remote-debugging.md).  Informationen zu Windows Universal-Apps finden Sie unter [Run Windows Store apps on a remote machine (Ausführen von Windows Store-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogbeiträge und MSDN-Artikel vom Diagnoseentwicklungsteam  
- [MSDN Magazine: Analyze Performance While Debugging in Visual Studio 2015 (Analysieren der Leistung während des Debuggings in Visual Studio 2015)](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ MSD[MSDN Magazine: Analysieren der Leistung beim Debuggen in Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN Magazine: Use IntelliTrace to Diagnose Issues Faster (Schnellere Problemdiagnose mit IntelliTrace)](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN Magazine: Schnellere Problemdiagnose mit IntelliTrace](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Blogbeitrag: Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015 (Diagnostizieren von Ereignishandlerverlusten mit dem Speicherauslastungstool in Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Blogbeitrag: Diagnostizieren von Ereignishandlerverlusten mit dem Speicherauslastungstool in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
   
- [Video: Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015 (Verlaufsbezogenes Debuggen mit IntelliTrace in Microsoft Visual Studio Ultimate 2015)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Video: Verlaufsbezogenes Debuggen mit IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Video: Debugging Performance Issues Using Visual Studio 2015 (Debuggen von Leistungsproblemen mit Visual Studio 2015)](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Video: Debuggen von Leistungsproblemen mit Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (Leistungsinformationen auf einen Blick beim Debuggen mit Visual Studio)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Diagnostic Tools debugger window in Visual Studio 2015 (Fenster des Diagnosetoolsdebugger in Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Diagnostic Tools debugger window in Visual Studio 2015 (Fenster des Diagnosetoolsdebugger in Visual Studio 2015)](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [IntelliTrace in Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace in Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

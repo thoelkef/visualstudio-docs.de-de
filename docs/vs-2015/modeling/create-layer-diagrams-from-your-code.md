@@ -1,5 +1,5 @@
 ---
-title: Erstellen von ebenendiagrammen aus dem Code | Microsoft-Dokumentation
+title: Create layer diagrams from your code | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,24 +14,24 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 138f818eab34b0b1860c7daa85f1b6814888fc9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652843"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300275"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Erstellen von Ebenendiagrammen aus Ihrem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische Architektur des Software Systems visuell darzustellen. Um sicherzustellen, dass Code und Entwurf konsistent bleiben, validieren Sie den Code mit einem Ebenendiagramm. Sie können Ebenendiagramme für Visual C# .NET- und Visual Basic. NET-Projekte erstellen. Informationen dazu, welche Versionen von Visual Studio diese Funktion unterstützen, finden Sie unter [Versions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) .
+To visualize your software system's high-level, logical architecture, create a *layer diagram* in Visual Studio. Um sicherzustellen, dass Code und Entwurf konsistent bleiben, validieren Sie den Code mit einem Ebenendiagramm. Sie können Ebenendiagramme für Visual C# .NET- und Visual Basic. NET-Projekte erstellen. To see which versions of Visual Studio support this feature, see [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
- ![Erstellen eines ebenendiagramms](../modeling/media/layerdiagramvisualizecode.png "Layerdiagramvisualizecode")
+ ![Create a layer diagram](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
 
- Mit einem ebenendiagramm können Sie Visual Studio-Projektmappenelemente in logischen, abstrakten Gruppen mit dem Namen *Ebenen*organisieren. Sie können die Ebenen zum Beschreiben der Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder zum Beschreiben der Hauptkomponenten des Systems verwenden. Jede Ebene kann andere Ebenen enthalten, die ausführlichere Aufgaben beschreiben. Sie können auch die vorgesehenen oder vorhandenen *Abhängigkeiten* zwischen Ebenen angeben. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Geben Sie die beabsichtigten Abhängigkeiten im Diagramm an, um die Architektursteuerung für den Code beizubehalten, und überprüfen Sie anschließend den Code anhand des Diagramms.
+ A layer diagram lets you organize Visual Studio solution items into logical, abstract groups called *layers*. Sie können die Ebenen zum Beschreiben der Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder zum Beschreiben der Hauptkomponenten des Systems verwenden. Jede Ebene kann andere Ebenen enthalten, die ausführlichere Aufgaben beschreiben. You can also specify the intended or existing *dependencies* between layers. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Geben Sie die beabsichtigten Abhängigkeiten im Diagramm an, um die Architektursteuerung für den Code beizubehalten, und überprüfen Sie anschließend den Code anhand des Diagramms.
 
-## <a name="CreateDiagram"></a>Erstellen eines ebenendiagramms
- Bevor Sie ein Ebenendiagramm erstellen, vergewissern Sie sich, dass die Projektmappe ein Modellierungsprojekt enthält. Siehe [Erstellen von UML-Modellierungs Projekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).
+## <a name="CreateDiagram"></a> Create a layer diagram
+ Bevor Sie ein Ebenendiagramm erstellen, vergewissern Sie sich, dass die Projektmappe ein Modellierungsprojekt enthält. See [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 > [!IMPORTANT]
 > Fügen Sie anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe keine vorhandenen Ebenendiagramme aus Modellierungsprojekten hinzu, und kopieren bzw. verschieben Sie diese nicht. Dadurch werden die Verweise des ursprünglichen Diagramms beibehalten, auch wenn Sie das Diagramm ändern. Dies verhindert auch das ordnungsgemäße Funktionieren der Ebenenvalidierung und verursacht möglicherweise andere Probleme, z. B. fehlende Elemente oder andere Fehler beim Versuch, das Diagramm zu öffnen.
@@ -40,43 +40,43 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>So fügen Sie einem Modellierungsprojekt ein neues Ebenendiagramm hinzu
 
-1. Wählen Sie im Menü **Architektur** die Option **neues UML-oder ebenendiagramm**aus.
+1. On the **Architecture** menu, choose **New UML or Layer Diagram**.
 
-2. Wählen Sie unter **Vorlagen**die Option **ebenendiagramm**aus.
+2. Under **Templates**, choose **Layer Diagram**.
 
 3. Benennen Sie das Diagramm.
 
-4. Navigieren Sie unter **zu Modellierungsprojekt hinzufügen**zu einem vorhandenen Modellierungsprojekt in der Projekt Mappe, und wählen Sie es aus.
+4. In **Add to Modeling Project**, browse to and select an existing modeling project in your solution.
 
      - oder -
 
-     Wählen Sie **Neues Modellierungsprojekt erstellen** aus, um der Projekt Mappe ein neues Modellierungsprojekt hinzuzufügen.
+     Choose **Create a new modeling project** to add a new modeling project to the solution.
 
     > [!NOTE]
     > Das Ebenendiagramm muss in einem Modellierungsprojekt vorhanden sein. Sie können es allerdings mit Elementen an einer beliebigen Stelle in der Projektmappe verknüpfen.
 
 5. Vergewissern Sie sich, dass Sie das Modellierungsprojekt und das Ebenendiagramm gespeichert haben.
 
-## <a name="CreateLayers"></a>Erstellen von Ebenen aus Artefakten
+## <a name="CreateLayers"></a> Create layers from artifacts
  Ebenen können aus Visual Studio-Projektmappenelementen erstellt werden, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Dabei werden Verknüpfungen zwischen den Ebenen und den Elementen automatisch erstellt und im Ebenenvalidierungsprozess berücksichtigt.
 
  Sie können Ebenen auch mit den Elementen verknüpfen, die die Validierung nicht unterstützen, wie Word-Dokumente oder PowerPoint-Präsentationen, sodass Sie eine Ebene Spezifikationen oder Plänen zuordnen können. Außerdem können Sie Ebenen mit Dateien in Projekten verknüpfen, die für mehrere Apps freigegeben sind. Im Validierungsprozess werden diese Ebenen, die mit generischen Namen wie "Layer 1" und "Layer 2" angezeigt werden, jedoch nicht berücksichtigt.
 
- Um festzustellen, ob ein verknüpftes Element die Validierung unterstützt, öffnen Sie den **ebenenexplorer** , und überprüfen Sie die Eigenschaft **unterstützt Validation** Siehe [Verwalten von Links zu Artefakten](#Managing).
+ To see if a linked item supports validation, open **Layer Explorer** and examine the **Supports Validation** property of the item. See [Managing links to artifacts](#Managing).
 
-|**Aktion**|**Befolgen Sie diese Schritte.**|
+|**Aktion**|**Follow these steps**|
 |------------|----------------------------|
-|Erstellen einer Ebene für ein einzelnes Artefakt|<ol><li>Ziehen Sie das Element aus diesen Quellen in das Ebenendiagramm:<br /><br /> <ul><li>**Projektmappen-Explorer**<br /><br />         Beispiele: Dateien oder Projekte.</li><li>Codezuordnungen<br /><br />         Siehe Zuordnen von [Abhängigkeiten für Ihre](../modeling/map-dependencies-across-your-solutions.md) Projektmappen und [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Klassenansicht** oder **Objektkatalog**</li></ul><br />     Im Diagramm wird eine Ebene angezeigt und mit dem Artefakt verknüpft.</li><li>Ändern Sie den Namen der Ebene, um die Aufgaben des zugeordneten Codes oder der Artefakte widerzuspiegeln.</li></ol> **Wichtig:**  Beim Ziehen von Binärdateien in das ebenendiagramm werden Ihre Verweise nicht automatisch auf das Modellierungsprojekt hinzugefügt. Sie müssen die Binärdateien manuell hinzufügen, die Sie für das Modellierungsprojekt überprüfen möchten. **So fügen Sie dem Modellierungsprojekt Binärdateien hinzu** <ol><li>Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Modellierungsprojekt, und wählen Sie dann **Vorhandenes Element hinzufügen**aus.</li><li>Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zu den Binärdateien, wählen Sie Sie aus, und klicken Sie dann auf **OK**.     Die Binärdateien werden im Modellierungsprojekt angezeigt.</li><li>Wählen Sie in **Projektmappen-Explorer**eine Binärdatei aus, die Sie hinzugefügt haben, und drücken Sie dann **F4** , um das **Eigenschaften** Fenster zu öffnen.</li><li>Legen Sie die Eigenschaft **Buildaktion** für jede Binärdatei auf **Validate**fest.</li></ol>|
+|Erstellen einer Ebene für ein einzelnes Artefakt|<ol><li>Ziehen Sie das Element aus diesen Quellen in das Ebenendiagramm:<br /><br /> <ul><li>**Projektmappen-Explorer**<br /><br />         Beispiele: Dateien oder Projekte.</li><li>Codezuordnungen<br /><br />         See [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md) and [Use code maps to debug your applications](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Class View** or **Object Browser**</li></ul><br />     Im Diagramm wird eine Ebene angezeigt und mit dem Artefakt verknüpft.</li><li>Ändern Sie den Namen der Ebene, um die Aufgaben des zugeordneten Codes oder der Artefakte widerzuspiegeln.</li></ol> **Important:**  Dragging binary files to the layer diagram does not automatically add their references to modeling project. Sie müssen die Binärdateien manuell hinzufügen, die Sie für das Modellierungsprojekt überprüfen möchten. **To add binary files to the modeling project** <ol><li>In **Solution Explorer**, open the shortcut menu for the modeling project, and then choose **Add Existing Item**.</li><li>In the **Add Existing Item** dialog box, browse to the binary files, select them, and then choose **OK**.     Die Binärdateien werden im Modellierungsprojekt angezeigt.</li><li>In **Solution Explorer**, choose a binary file that you added, and then press **F4** to open the **Properties** window.</li><li>On each binary file, set the **Build Action** property to **Validate**.</li></ol>|
 |Erstellen einer einzelnen Ebene für alle ausgewählten Artefakte|Ziehen Sie alle Artefakte gleichzeitig in das Ebenendiagramm.<br /><br /> Im Diagramm wird eine Ebene angezeigt und mit allen Artefakten verknüpft.|
-|Erstellen einer Ebene für jedes ausgewählte Artefakt|Halten Sie die **UMSCHALT** Taste gedrückt, während Sie alle Artefakte gleichzeitig in das ebenendiagramm ziehen. **Hinweis:**  Wenn Sie mithilfe der **UMSCHALT** Taste einen Bereich von Elementen auswählen, geben Sie den Schlüssel nach dem Auswählen der Artefakte frei. Halten Sie sie anschließend erneut gedrückt, wenn Sie die Artefakte in das Diagramm ziehen. <br /><br /> Im Diagramm wird für jedes Artefakt eine Ebene angezeigt und mit den einzelnen Artefakten verknüpft.|
+|Erstellen einer Ebene für jedes ausgewählte Artefakt|Press and hold the **SHIFT** key while you drag all of the artifacts to the layer diagram at the same time. **Note:**  If you use the **SHIFT** key to select a range of items, release the key after you select the artifacts. Halten Sie sie anschließend erneut gedrückt, wenn Sie die Artefakte in das Diagramm ziehen. <br /><br /> Im Diagramm wird für jedes Artefakt eine Ebene angezeigt und mit den einzelnen Artefakten verknüpft.|
 |Hinzufügen eines Artefakts zu einer Ebene|Ziehen Sie das Artefakt auf die Ebene.|
-|Erstellen einer neuen, nicht verknüpften Ebene|Erweitern Sie in der **Toolbox**den Abschnitt **ebenendiagramm** , und ziehen Sie dann eine **Ebene** in das ebenendiagramm.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das ebenendiagramm, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Ebene**aus.|
-|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
-|Erstellen einer neuen Ebene, die mehrere vorhandene Ebenen enthält|Wählen Sie die Ebenen aus, öffnen Sie das Kontextmenü für Ihre Auswahl, und wählen Sie dann **Gruppe**aus.|
-|Ändern der Farbe einer Ebene|Legen Sie die **Color** -Eigenschaft auf die gewünschte Farbe fest.|
-|Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
-|Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespace Abhängigkeiten** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
-|Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in die Eigenschaft **erforderliche Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
+|Erstellen einer neuen, nicht verknüpften Ebene|In the **Toolbox**, expand the **Layer Diagram** section, and then drag a **Layer** to the layer diagram.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. When you are finished, choose the **Pointer** tool or press the **ESC** key.<br /><br /> - oder -<br /><br /> Open the shortcut menu for the layer diagram, choose **Add**, and then choose **Layer**.|
+|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Open the shortcut menu for a layer, choose **Add**, and then choose **Layer**.|
+|Erstellen einer neuen Ebene, die mehrere vorhandene Ebenen enthält|Select the layers, open the shortcut menu for your selection, and then choose **Group**.|
+|Ändern der Farbe einer Ebene|Set its **Color** property to the color that you want.|
+|Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Type the namespaces in the layer's **Forbidden Namespaces** property. Use a semicolon ( **;** ) to separate the namespaces.|
+|Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Type the namespaces in the layer's **Forbidden Namespace Dependencies** property. Use a semicolon ( **;** ) to separate the namespaces.|
+|Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Type the namespace in the layer's **Required Namespaces** property. Use a semicolon ( **;** ) to separate the namespaces.|
 
  Die Zahl auf einer Ebene gibt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch Folgendes, wenn Sie diese Zahl lesen:
 
@@ -86,48 +86,48 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 
 - Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
 
-## <a name="Managing"></a>Verwalten von Links zwischen Ebenen und Artefakten
+## <a name="Managing"></a> Manage links between layers and artifacts
 
-1. Öffnen Sie im ebenendiagramm das Kontextmenü für die Ebene, und wählen Sie dann **Verknüpfungen anzeigen**aus.
+1. On the layer diagram, open the shortcut menu for the layer, and then choose **View Links**.
 
-     **Ebenenexplorer** zeigt die artefaktlinks für die ausgewählte Ebene an.
+     **Layer Explorer** shows the artifact links for the selected layer.
 
 2. Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:
 
-|**Aktion**|**Im ebenenexplorer**|
+|**Aktion**|**In Layer Explorer**|
 |------------|---------------------------|
-|Löschen des Links zwischen der Ebene und einem Artefakt|Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Löschen**aus.|
-|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Ausschneiden**aus.<br />2. Öffnen Sie im ebenendiagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
-|Kopieren des Links von einer Ebene auf eine andere Ebene|1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Kopieren**aus.<br />2. Öffnen Sie im ebenendiagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
+|Löschen des Links zwischen der Ebene und einem Artefakt|Open the shortcut menu for the artifact link, and then choose **Delete**.|
+|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1.  Open the shortcut menu for the artifact link, and then choose **Cut**.<br />2.  On the layer diagram, open the shortcut menu for the layer, and then choose **Paste**.|
+|Kopieren des Links von einer Ebene auf eine andere Ebene|1.  Open the shortcut menu for the artifact link, and then choose **Copy**.<br />2.  On the layer diagram, open the shortcut menu for the layer, and then choose **Paste**.|
 |Erstellen einer neuen Ebene aus einem vorhandenen Artefaktlink|Ziehen Sie den Artefaktlink in einen leeren Bereich des Diagramms.|
-|Überprüfen, ob ein verknüpftes Artefakt die Validierung anhand des Ebenendiagramms unterstützt|Sehen Sie sich die Spalte **unterstützt die Validierung** für den artefaktlink an.|
+|Überprüfen, ob ein verknüpftes Artefakt die Validierung anhand des Ebenendiagramms unterstützt|Look at the **Supports Validation** column for the artifact link.|
 
-## <a name="Discovering"></a>Vorhandene Abhängigkeiten umkehren
+## <a name="Discovering"></a> Reverse-engineer existing dependencies
  Eine Abhängigkeit ist überall dort vorhanden, wo ein Artefakt, das einer Ebene zugeordnet ist, einen Verweis auf ein Artefakt enthält, das einer anderen Ebene zugeordnet ist. Beispiel: Eine Klasse in einer Ebene deklariert eine Variable, deren Klasse sich auf einer anderen Ebene befindet. Bei vorhandenen Abhängigkeiten von Artefakten, die mit Ebenen des Diagramms verknüpft sind, ist eine Rückentwicklung möglich.
 
 > [!NOTE]
-> Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. Öffnen Sie das Kontextmenü für eine oder mehrere Ebenen, und klicken Sie dann **auf Links anzeigen**, um zu sehen, welche Artefakte Abhängigkeiten aufweisen, die Sie rückgängig machen können. Überprüfen Sie im **Ebenen-Explorer**die Spalte **unterstützt die Validierung** . Abhängigkeiten werden nicht für Artefakte, für die diese Spalte **false**anzeigt, in umgekehrter Reihenfolge entwickelt.
+> Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. To see which artifacts have dependencies that you can reverse-engineer, open the shortcut menu for one or multiple layers, and then choose **View Links**. In **Layer Explorer**, examine the **Supports Validation** column. Dependencies will not be reverse-engineered for artifacts for which this column shows **False**.
 
-- Wählen Sie eine oder mehrere Ebenen aus, öffnen Sie das Kontextmenü für eine ausgewählte Ebene, und wählen Sie dann **Abhängigkeiten generieren**aus.
+- Select one or multiple layers, open the shortcut menu for a selected layer, and then choose **Generate Dependencies**.
 
   In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.
 
-## <a name="EditDependencies"></a>Bearbeiten von Ebenen und Abhängigkeiten, um den beabsichtigten Entwurf anzuzeigen
+## <a name="EditDependencies"></a> Edit layers and dependencies to show the intended design
  Um die geplanten Änderungen an Ihrem System oder der vorgesehenen Architektur zu beschreiben, bearbeiten Sie das Ebenendiagramm:
 
-|**Aktion**|**Führen Sie diese Schritte aus**|
+|**Aktion**|**Perform these steps**|
 |------------|-----------------------------|
-|Ändern oder Einschränken der Richtung einer Abhängigkeit|Legen Sie die Eigenschaft **Richtung** fest.|
-|Erstellen von neuen Abhängigkeiten|Verwenden Sie die **Abhängigkeits** -und **bidirektionalen Abhängigkeits** Tools<br /><br /> Doppelklicken Sie zum Zeichnen mehrerer Abhängigkeiten auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.|
-|Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespace Abhängigkeiten** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
-|Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
-|Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in die Eigenschaft **erforderliche Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
+|Ändern oder Einschränken der Richtung einer Abhängigkeit|Set its **Direction** property.|
+|Erstellen von neuen Abhängigkeiten|Use the **Dependency** and **Bidirectional Dependency** tools.<br /><br /> Doppelklicken Sie zum Zeichnen mehrerer Abhängigkeiten auf das Tool. When you are finished, choose the **Pointer** tool or press the **ESC** key.|
+|Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Type the namespaces in the layer's **Forbidden Namespace Dependencies** property. Use a semicolon ( **;** ) to separate the namespaces.|
+|Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Type the namespaces in the layer's **Forbidden Namespaces** property. Use a semicolon ( **;** ) to separate the namespaces.|
+|Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Type the namespace in the layer's **Required Namespaces** property. Use a semicolon ( **;** ) to separate the namespaces.|
 
-## <a name="EditLayout"></a>Ändern, wie Elemente im Diagramm angezeigt werden
+## <a name="EditLayout"></a> Change how elements appear on the diagram
  Sie können die Größe, Form, Farbe und Position von Ebenen oder die Farbe von Abhängigkeiten ändern, indem Sie ihre Eigenschaften bearbeiten.
 
-## <a name="Codemaps"></a>Erkennen von Mustern und Abhängigkeiten auf einem Code Map
- Beim Erstellen von ebenendiagrammen können Sie auch **Code Maps**erstellen. Diese Diagramme können Ihnen helfen, Muster und Abhängigkeiten zu ermitteln, während Sie den Code untersuchen. Mithilfe von Projektmappen-Explorer, Klassenansicht oder Objektkatalog können Assemblys, Namespaces und Klassen untersucht werden, die häufig den vorhandenen Ebenen entsprechen. Weitere Informationen zu Codezuordnungen finden Sie unter den folgenden Themen:
+## <a name="Codemaps"></a> Discover patterns and dependencies on a code map
+ While creating layer diagrams, you might also create **code maps**. Diese Diagramme können Ihnen helfen, Muster und Abhängigkeiten zu ermitteln, während Sie den Code untersuchen. Mithilfe von Projektmappen-Explorer, Klassenansicht oder Objektkatalog können Assemblys, Namespaces und Klassen untersucht werden, die häufig den vorhandenen Ebenen entsprechen. Weitere Informationen zu Codezuordnungen finden Sie unter den folgenden Themen:
 
 - [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
 
@@ -136,4 +136,4 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 - [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Channel 9-Video: Entwerfen und Validieren der Architektur mit ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073) [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md) [Validieren von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md) [visualisieren](../modeling/visualize-code.md)
+ [Channel 9 Video: Design and validate your architecture using layer diagrams](https://go.microsoft.com/fwlink/?LinkID=252073) [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md) [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md) [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md) [Visualize code](../modeling/visualize-code.md)

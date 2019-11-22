@@ -1,5 +1,5 @@
 ---
-title: Regelbedingungs-Editor (Dialog Feld) (Legacy) | Microsoft-Dokumentation
+title: Rule Condition Editor Dialog Box (Legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,55 +13,55 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93aef1e4466bd88d87ebce71161dcd1665178317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663349"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302853"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Dialogfeld "Regelbedingungs-Editor" (Vorgängerversion)
-In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelbedingungs-Editor** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)] verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+This topic describes how use the **Rule Condition Editor** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
- Deklarative Regel Bedingungen werden mithilfe des Dialog Felds **Regelbedingungs-Editor** erstellt und geändert. Diese Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten als Eigenschaften angegeben:
+ You create and modify declarative rule conditions by using the **Rule Condition Editor** dialog box. Diese Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten als Eigenschaften angegeben:
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
 
-  Sie greifen auf das Dialogfeld **Regelbedingungs-Editor** zu, indem Sie das [Dialogfeld Bedingung auswählen (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md)verwenden.
+  You access the **Rule Condition Editor** dialog box by using the [Select Condition Dialog Box (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
-  In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Regelbedingungs-Editor** beschrieben.
+  The following table describes the user interface (UI) elements of the **Rule Condition Editor** dialog box.
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|
-|**Anlage**|Geben Sie den Ausdruck für die Regelbedingung ein.|
-|**Okay**|Klicken Sie, um die Regelbedingung zu speichern.|
+|**Condition:**|Geben Sie den Ausdruck für die Regelbedingung ein.|
+|**OK**|Klicken Sie, um die Regelbedingung zu speichern.|
 
 ## <a name="entering-condition-expressions"></a>Eingeben von Bedingungsausdrücken
- Bedingungsausdrücke werden als Text eingegeben. Sie können **diese eingeben.** , um im Editor auf Felder, Eigenschaften und Methoden zu verweisen, die im Workflow verwendet werden, mit einem IntelliSense-ähnlichen Menü. Alternativ können Sie einen Workflowmembernamen auch direkt eingeben. Sie können logische Operatoren, wie z. B. UND, ODER und NICHT, zur Bedingung hinzufügen. Sie können auch Prädikate hinzufügen. Ein Prädikat besteht aus einem binären Operator und zwei Operanden. Die unterstützten binären Operatoren sind **==** , **>** , **\<** , **>=** und **<=** . Unterstützte Operanden sind konstanter Wert, arithmetische Funktion und geschützte öffentliche Member.
+ Bedingungsausdrücke werden als Text eingegeben. You can type **this.** into the editor to reference fields, properties, and methods used in the workflow, using an IntelliSense-like menu. Alternativ können Sie einen Workflowmembernamen auch direkt eingeben. Sie können logische Operatoren, wie z. B. UND, ODER und NICHT, zur Bedingung hinzufügen. Sie können auch Prädikate hinzufügen. Ein Prädikat besteht aus einem binären Operator und zwei Operanden. The binary operators supported are **==** , **>** , **\<** , **>=** , and **<=** . Unterstützte Operanden sind konstanter Wert, arithmetische Funktion und geschützte öffentliche Member.
 
- Sie können den Typ für den Vergleich angeben, und Sie können mit **null** oder einer leeren Zeichenfolge vergleichen. Sie können verschachtelte Aufrufe von Membern für eine Variable durchführen, die einen komplexen Typ enthält, wie z. B. `this.Address.State == "WA"`.
+ You can specify the type for the comparison, and you can compare to **null** or an empty string. Sie können verschachtelte Aufrufe von Membern für eine Variable durchführen, die einen komplexen Typ enthält, wie z. B. `this.Address.State == "WA"`.
 
  Der Regelbedingungs-Editor unterstützt die folgenden Operatoren:
 
 - Relationale Operatoren: ==, =, !=
 
-- Vergleichs Operatoren: <, \< =, >, > =
+- Comparison operators: <, \<=, >, >=
 
 - Arithmetische Operatoren: +, - , *, /, MOD
 
-- Logische Operatoren: and, & & oder, &#124; &#124;, not,!
+- Logical operators: AND, &&, OR, &#124;&#124;, NOT, !
 
-- Bitweise Operatoren: &&#124;
+- Bitwise operators: &, &#124;
 
   Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.
 
@@ -79,7 +79,7 @@ In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelbedingungs-Edito
 
   this.i == 1U (wird zu einem vorzeichenlosen int-Wert aufgelöst)
 
-  Weitere Informationen zu Bedingungen finden Sie unter [Verwenden von Bedingungen in Workflows](http://go.microsoft.com/fwlink?LinkID=65009).
+  For more information about conditions, see [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
 
 ## <a name="see-also"></a>Siehe auch
- [Ifelst Activity](http://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) [replieractivity](http://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049) [Select Condition Dialog Feld (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) [Verwenden von Bedingungen in Workflows](http://go.microsoft.com/fwlink?LinkID=65009) [Legacy-Designer für Windows Workflow Hilfe zu Foundation-UI](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [Select Condition Dialog Box (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009) [Legacy Designer for Windows Workflow Foundation UI Help](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

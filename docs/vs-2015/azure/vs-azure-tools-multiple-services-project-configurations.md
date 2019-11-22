@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 3dfea05e38930cc4613335fa5b5bccbe228b71fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422726"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299019"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -53,11 +53,11 @@ Wenn Sie bereits einen HTTPS-Endpunkt hinzugefügt haben, ist die Option „HTTP
 
 ### <a name="diagnostics"></a>Diagnose
 
-Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche (**…**), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche ( **…** ), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Seite „Einstellungen“
 
-Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. In der Rolle ausgeführter Code kann die Werte der Konfigurationseinstellungen zur Laufzeit anhand von Klassen lesen, die von der [verwalteten Azure-Bibliothek](http://go.microsoft.com/fwlink?LinkID=171026) bereitgestellt werden, insbesondere die Methode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. In der Rolle ausgeführter Code kann die Werte der Konfigurationseinstellungen zur Laufzeit anhand von Klassen lesen, die von der [verwalteten Azure-Bibliothek](https://go.microsoft.com/fwlink?LinkID=171026) bereitgestellt werden, insbesondere die Methode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurieren einer Verbindungszeichenfolge für ein Speicherkonto
 
@@ -70,7 +70,7 @@ Sie können festlegen, dass die Verbindungszeichenfolge nach Bedarf lokalen Spei
 
 Zum Erstellen einer Verbindungszeichenfolge wählen Sie **Einstellung hinzufügen** aus und legen den **Typ** auf „Verbindungszeichenfolge“ fest.
 
-Wählen Sie für neue oder vorhandene Verbindungszeichenfolgen **...*** rechts neben dem Feld **Wert** aus, um das Dialogfeld **Speicherkonto-Verbindungszeichenfolge erstellen** zu öffnen:
+Wählen Sie für neue oder vorhandene Verbindungszeichenfolgen **...** * rechts neben dem Feld **Wert** aus, um das Dialogfeld **Speicherkonto-Verbindungszeichenfolge erstellen** zu öffnen:
 
 1. Wählen Sie unter **Verbindung herstellen über** die Option **Ihr Abonnement**aus, um ein Speicherkonto aus einem Abonnement auszuwählen. Visual Studio ruft dann die Anmeldeinformationen des Speicherkontos automatisch aus der `.publishsettings`-Datei ab.
 1. Mit der Option **Manuell eingegebene Anmeldeinformationen** können Sie den Kontonamen und -schlüssel mithilfe von Informationen aus dem Azure-Portal direkt angeben. Kopieren des Kontoschlüssels:
@@ -97,7 +97,7 @@ Sie können die Eigenschaftenseite **Lokaler Speicher** verwenden, um mindestens
 
 ## <a name="certificates-page"></a>Seite "Zertifikate"
 
-Auf der Eigenschaftenseite **Zertifikate** werden der Dienstkonfiguration Informationen zu den Zertifikaten hinzugefügt. Die Zertifikate sind im Dienstpaket nicht enthalten, sondern müssen über das [Azure-Portal](http://portal.azure.com) gesondert in Azure hochgeladen werden.
+Auf der Eigenschaftenseite **Zertifikate** werden der Dienstkonfiguration Informationen zu den Zertifikaten hinzugefügt. Die Zertifikate sind im Dienstpaket nicht enthalten, sondern müssen über das [Azure-Portal](https://portal.azure.com) gesondert in Azure hochgeladen werden.
 
 Durch das Hinzufügen eines Zertifikats hier werden der Dienstkonfiguration Informationen zu den Zertifikaten hinzugefügt. Zertifikate sind nicht im Dienst enthalten. Sie müssen Ihre Zertifikate separat über das Azure-Portal hochladen.
 

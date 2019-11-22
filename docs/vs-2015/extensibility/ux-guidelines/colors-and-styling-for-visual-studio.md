@@ -8,102 +8,102 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68176967"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291612"
 ---
-# <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
+# <a name="colors-and-styling-for-visual-studio"></a>Colors and Styling for Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="using-color-in-visual-studio"></a>Verwenden von Farbe in Visual Studio
- In Visual Studio wird die Farbe in erster Linie als ein Tool für die Kommunikation, nicht nur als Dekoration verwendet. Verwenden Sie die Farbe minimal, und reservieren sie für Situationen, in denen Sie möchten:
+## <a name="using-color-in-visual-studio"></a>Using color in Visual Studio
+ In Visual Studio, color is used primarily as a communication tool, not just as decoration. Use color minimally and reserve it for situations where you want to:
 
-- Kommunikation von Bedeutung bzw. den Partner (z. B. Plattform oder Sprache Modifizierer)
+- Communicate meaning or affiliation (for example, platform or language modifiers)
 
-- Wecken Sie (z. B., der angibt, einer Änderung des)
+- Attract attention (for example, indicating a status change)
 
-- Verbessern Sie Lesbarkeit zu, und geben Sie Orientierungshilfen für die Navigation in der Benutzeroberfläche
+- Improve readability and provide landmarks for navigating the UI
 
-- Erhöhen Sie Serverupgrade
+- Increase desirability
 
-  Es sind mehrere Optionen zum Zuweisen von Farben für Elemente der Benutzeroberfläche in Visual Studio vorhanden. Manchmal kann es schwierig, in eine Form sein, welche Option Sie aufgefordert werden, verwenden oder wie Sie sie ordnungsgemäß verwenden. In diesem Thema helfen Ihnen:
+  Several options exist for assigning colors to UI elements in Visual Studio. Sometimes it can be difficult to figure out which option you’re supposed to use, or how to use it correctly. This topic will help you:
 
-1. Erfahren Sie, die verschiedene Dienste und Systeme, die zum Definieren von Farben in Visual Studio verwendet.
+1. Understand the different services and systems used to define colors in Visual Studio.
 
-2. Wählen Sie die richtige Option für ein angegebenes Element ein.
+2. Select the correct option for a given element.
 
-3. Ordnungsgemäß verwenden Sie die Option, die Sie ausgewählt haben.
+3. Correctly use the option you have chosen.
 
-   **WICHTIG:** Nie hartcodieren Hexadezimal, RGB oder Systemfarben für Ihre UI-Elemente. Nutzung der Dienste ermöglicht Flexibilität bei der Feineinstellung von Hue. Darüber hinaus ohne den Dienst nicht werden designswitching Funktionen von nutzen die [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+   **IMPORTANT:** Never hardcode hex, RGB, or system colors to your UI elements. Using the services allows for flexibility in tuning hue. Additionally, without the service, you will not be able to take advantage of the theme-switching capabilities of the [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
-### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Methoden für die Zuweisung von Farben für Elemente der Visual Studio-Benutzeroberfläche
- Wählen Sie die Methode, die am besten geeignet ist, um Ihre UI-Elemente.
+### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Methods for assigning color to Visual Studio interface elements
+ Choose the method best suited to your UI elements.
 
-|Die Benutzeroberfläche|Methode|Was sind sie?|
+|Your UI|Methode|What are they?|
 |-------------|------------|--------------------|
-|Sie verfügen über eingebettete oder eigenständige-Dialogfelder.|**Systemfarben**|Systemnamen, mit denen das Betriebssystem, um die Farbe und die Darstellung der Elemente der Benutzeroberfläche, z. B. für häufig verwendete Dialogfeldsteuerelemente zu definieren.|
-|Sie haben benutzerdefinierten Benutzeroberfläche, die mit der gesamten Visual Studio-Umgebung konsistent sein sollen, und Sie haben es sich um UI-Elemente, die die Kategorie und die semantische Bedeutung der freigegebenen Token entsprechen.|**Gemeinsam verwendeten Farben**|Vordefinierte Farben Tokennamen für bestimmte Elemente der Benutzeroberfläche|
-|Sie haben eine einzelne Funktion oder eine Gruppe von Funktionen und keine gemeinsam genutzten Farben für ähnliche Elemente vorhanden sind.|**Benutzerdefinierte Farben**|Token-Namen von Farben, die spezifisch für einen Bereich und nicht für andere Benutzeroberfläche freigegeben werden sollen|
-|Möchten Sie dem Endbenutzer zum Anpassen der Benutzeroberfläche oder Inhalt (z. B. für Text-Editoren oder spezielle Designerfenstern) ermöglichen.|**Durch den Endbenutzer-Anpassung**<br /><br /> **(Tools > Dialogfeld "Optionen")**|Einstellungen, die auf der Seite "Schriftarten und Farben" definiert die **Tools > Optionen** Dialogs oder einer speziellen Seite für eine UI-Funktion.|
+|You have embedded or standalone dialog boxes.|**System colors**|System names that allow the operating system to define the color and appearance of the UI elements, such as for common dialog controls.|
+|You have custom UI that you want to be consistent with the overall VS environment and you have UI elements that match the category and semantic meaning of the shared tokens.|**Common shared colors**|Existing predefined color token names for specific UI elements|
+|You have an individual feature or group of features and there is no shared color for similar elements.|**Custom colors**|Color token names that are specific to an area and not meant to be shared with other UI|
+|You want to allow the end user to customize UI or content (for example, for text editors or specialized designer windows).|**End-user customization**<br /><br /> **(Tools > Options dialog)**|Settings defined in the “Fonts and Colors” page of the **Tools > Options** dialog or a specialized page specific to one UI feature.|
 
-### <a name="visual-studio-themes"></a>Visual Studio-Designs
- Visual Studio verfügt über drei verschiedene Farbschemas: hell, dunkel und Blau. Außerdem wird erkannt, Modus für hohe Kontraste, eine systemweite Farbschema für Eingabehilfen entworfen wird.
+### <a name="visual-studio-themes"></a>Visual Studio themes
+ Visual Studio features three different color themes: light, dark, and blue . It also detects High Contrast mode, which is a system-wide color theme designed for accessibility.
 
- Benutzer werden aufgefordert, die bei ihrer ersten Verwendung von Visual Studio ein Design auswählen und können später Designs wechseln, indem Sie zu **Tools > Optionen > Umgebung > Allgemein** , und wählen ein neues Design aus dem Dropdown-Menü "Farbschema".
+ Users are prompted to select a theme during their first use of Visual Studio and are able to switch themes later by going to **Tools > Options > Environment > General** and choosing a new theme from the “color theme” dropdown menu.
 
- Benutzer können auch die Systemsteuerung verwenden, um ihre gesamten Systeme in einer von mehreren Designs mit hohem Kontrast zu wechseln. Wenn ein Benutzer ein Design mit hohem Kontrast ausgewählt hat, wirkt sich auf klicken Sie dann die Farbauswahl Design Visual Studio nicht mehr Farben in Visual Studio, jedoch Designänderungen für gespeichert werden, wenn der Benutzer den Modus für hohe Kontraste beendet. Weitere Informationen zu den Modus für hohe Kontraste, finden Sie unter [Farben mit hohem Kontrast auswählen](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
+ Users can also use Control Panel to switch their entire systems into one of several High Contrast themes. If a user selects a High Contrast theme, then the Visual Studio color theme selector no longer affects colors in Visual Studio, although any theme changes are saved for when the user exits High Contrast mode. For more information about High Contrast mode, see [Choosing High Contrast colors](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
 
-### <a name="the-vscolor-service"></a>Die VSColor service
- Visual Studio bietet einen Umgebung Farbe Dienst bekannt, wie der Dienst VSColor, in der Sie die Farbwerte, die Elemente der Benutzeroberfläche an einen benannten Eintrag mit Farbwerten für jedes Visual Studio-Design binden kann. Dadurch wird sichergestellt, dass Sie Farben entsprechend den aktuellen Benutzer ausgewählten Designs oder Modus für hohe Kontraste automatisch geändert werden. Verwendung des Diensts bedeutet, dass die Implementierung aller Farbe mit Design-bezogene Änderungen an einem Ort erfolgt, und wenn Sie gemeinsame verwendeten Farben aus dem Dienst verwenden, wird Ihre Benutzeroberfläche automatisch neuen Designs in zukünftigen Versionen von Visual Studio angewendet.
+### <a name="the-vscolor-service"></a>The VSColor service
+ Visual Studio provides an environment color service, known as the VSColor service, which allows you to bind the color values of your UI elements to a named entry containing color values for each Visual Studio theme. This ensures that your colors will automatically change to reflect the current user-selected theme or system High Contrast mode. Use of the service means that the implementation of all theme-related color changes is handled in one place, and if you are using common shared colors from the service, your UI will automatically reflect new themes in future versions of Visual Studio.
 
 ### <a name="implementation"></a>Implementierung
- Der Quellcode für Visual Studio enthält mehrere Paketdefinitionsdateien, die Listen von token-Namen und die Werte der entsprechenden Farbe für jedes Design enthalten. Der Color-Dienst liest die VSColors in diese Paketdefinitionsdateien definiert. Diese Farben werden in XAML-Markup oder Code auf die verwiesen wird und dann geladen wird, entweder durch die **IVsUIShell5.GetThemedColor** Methode oder eine DynamicResource-Zuordnung.
+ The Visual Studio source code includes several package definition files that contain lists of token names and the respective color values for each theme. The color service reads the VSColors defined in these package definition files. These colors are referenced in XAML markup or in code and then loaded through either the **IVsUIShell5.GetThemedColor** method or a DynamicResource mapping.
 
-### <a name="system-colors"></a>Systemfarben
- Allgemeine Steuerelemente auf die Systemfarben standardmäßig verweisen. Wenn Sie möchten Ihre Benutzeroberfläche mit Systemfarben verwenden, wie z. B. Wenn Sie eine eingebettete oder eigenständige Dialogfeld erstellen, müssen Sie keine nichts weiter tun.
+### <a name="system-colors"></a>System colors
+ Common controls reference the system colors by default. If you want your UI to use system colors, such as when you are creating an embedded or standalone dialog, you don’t need to do anything.
 
-### <a name="common-shared-colors-in-the-vscolor-service"></a>Gemeinsam verwendeten Farben im VSColor service
- Ihre Benutzeroberflächenelemente sollten die gesamte Visual Studio-Umgebung widerspiegeln. Durch die Wiederverwendung, der gemeinsamen verwendeten Farben, die für die UI-Komponente geeignet sind, die Sie entwerfen, stellen Sie sicher, dass Ihre Benutzeroberfläche mit anderen Schnittstellen für die Visual Studio konsistent ist und dass Sie Farben automatisch aktualisiert werden, wenn Designs hinzugefügt oder aktualisiert werden.
+### <a name="common-shared-colors-in-the-vscolor-service"></a>Common shared colors in the VSColor service
+ Your interface elements should reflect the overall Visual Studio environment. By reusing the common shared colors that are appropriate for the UI component you’re designing, you ensure that your interface is consistent with other Visual Studio interfaces, and that your colors will update automatically when themes are added or updated.
 
- Stellen Sie vor der Verwendung von gemeinsam verwendeten Farben sicher, dass Sie erfahren, wie sie ordnungsgemäß verwenden. Falsche Verwendung von gemeinsam verwendeten Farben kann zu einer inkonsistenten, frustrierend und verwirrend Erfahrung für Ihre Benutzer führen.
+ Before using common shared colors, make sure that you understand how to use them correctly. Incorrect use of common shared colors might result in an inconsistent, frustrating, or confusing experience for your users.
 
-### <a name="user-customizable-colors"></a>Benutzer anpassbare Farben
- Thema [Verfügbarmachen von Farben für Endbenutzer](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+### <a name="user-customizable-colors"></a>User-customizable colors
+ See: [Exposing colors for end users](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
- In einigen Fällen möchten Sie den Endbenutzer zum Anpassen der Benutzeroberflächenautomatisierungs, z. B. Wenn Sie eine Code-Editor oder die Entwurfsoberfläche erstellen können. Anpassbare UI-Komponenten finden Sie in der **Schriftarten und Farben** Teil der **Tools > Optionen** Dialogfeld, in dem Benutzer so ändern Sie die Vordergrundfarbe, Hintergrundfarbe oder beides auswählen können.
+ Sometimes, you will want to allow the end user to customize your UI, such as when you are creating a code editor or design surface. Customizable UI components are found in the **Fonts and Colors** section of the **Tools > Options** dialog, where users can choose to change the foreground color, background color, or both.
 
- ![Tools &#62; Dialogfeld "Optionen" in Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301-A_ToolsOptionsDialog")
+ ![Tools &#62; Options dialog in Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")
 
- **Tools > Dialogfeld "Optionen"**
+ **Tools>Options dialog**
 
-## <a name="BKMK_TheVSColorService"></a> Die VSColor Service
- Visual Studio bietet einen Umgebung Farbe Dienst auch die VSColor Service oder der Color-Shell-Dienst genannt. Dieser Dienst ermöglicht Ihnen, binden die Farbwerte, die Elemente der Benutzeroberfläche in eine Name / Wert-Farbe, die Farben für jedes Design enthält. Die VSColor Service muss für alle Elemente der Benutzeroberfläche verwendet werden, damit Farben automatisch entsprechend der aktuellen vom Benutzer ausgewählten Thema zu ändern und so, dass die Umgebung-Farben-Benutzeroberfläche gebunden mit neuen Designs in zukünftigen Versionen von Visual Studio integriert werden.
+## <a name="BKMK_TheVSColorService"></a> The VSColor Service
+ Visual Studio provides an environment color service, also called the VSColor service or the shell color service. This service allows you to bind the color values of your UI elements to a name-value color set containing colors for each theme. The VSColor service must be used for all UI elements, so that colors automatically change to reflect the current user-selected theme, and so that UI bound to the environment color service will integrate with new themes in future versions of Visual Studio.
 
-### <a name="how-the-service-works"></a>Funktionsweise des Diensts
- Die Umgebung-Farben-liest, dass VSColors in der PKGDEF für die UI-Komponente definiert. Diese VSColors klicken Sie dann in XAML-Markup oder Code referenziert werden und werden geladen, entweder durch die **IVsUIShell5.GetThemedColor** oder eine DynamicResource-Zuordnung.
+### <a name="how-the-service-works"></a>How the service works
+ The environment color service reads VSColors defined in the .pkgdef for the UI component. These VSColors are then referenced in XAML markup or code and are loaded through either the **IVsUIShell5.GetThemedColor** or a DynamicResource mapping.
 
- ![Umgebungsfarbe – Dienstarchitektur](../../extensibility/ux-guidelines/media/0302-a-environmentcolorservicearchitecture.png "0302-A_EnvironmentColorServiceArchitecture")
+ ![Environment color service architecture](../../extensibility/ux-guidelines/media/0302-a-environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")
 
- **Umgebungsfarbe – Dienstarchitektur**
+ **Environment color service architecture**
 
-### <a name="accessing-the-service"></a>Zugreifen auf den Dienst
- Es gibt mehrere Möglichkeiten, den Zugriff, die die VSColor Service, je nachdem, welche Art von Farbe, die Sie Token verwenden und welche Art von Code haben.
+### <a name="accessing-the-service"></a>Accessing the service
+ There are several different ways to access the VSColor service, depending on what kind of color tokens you are using and what kind of code you have.
 
-#### <a name="predefined-environment-colors"></a>Vordefinierte Umgebungsfarben
+#### <a name="predefined-environment-colors"></a>Predefined environment colors
 
-##### <a name="from-native-code"></a>Von nativem code
- Die Shell stellt einen Dienst, der Zugriff auf die COLORREF der Farben gibt. Die Dienstschnittstelle ist:
+##### <a name="from-native-code"></a>From native code
+ The shell provides a service that gives access to the COLORREF of the colors. The service/interface is:
 
 ```
 IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 ```
 
- In der Datei die Enumeration VSShell80.idl **__VSSYSCOLOREX** Farbkonstanten Shell hat. Verwendet werden, übergeben Sie den Indexwert entweder einen der Werte aus der Enumeration __VSSYSCOLOREX in MSDN dokumentiert, oder ein normaler Index Zahl, die Windows-System-API, **GetSysColor**, akzeptiert. Auf diese Weise ruft wieder den RGB-Wert, der die Farbe, die im zweiten Parameter verwendet werden soll.
+ In the file VSShell80.idl, the enumeration **__VSSYSCOLOREX** has shell color constants. To use it, pass in as the index value either one of the values from the enum __VSSYSCOLOREX documented in MSDN or a regular index number that the Windows system API, **GetSysColor**, accepts. Doing this gets back the RGB value of the color that should be used in the second parameter.
 
- Wenn einem Stift oder Pinsel, mit der eine neue Farbe zu speichern, müssen AdviseBroadcastMessages (außerhalb der Visual Studio-Shell) und um WM_SYSCOLORCHANGE und WM_THEMECHANGED Meldungen zu lauschen.
+ If storing a pen or brush with a new color, you must AdviseBroadcastMessages (off of the Visual Studio shell) and listen for WM_SYSCOLORCHANGE and WM_THEMECHANGED messages.
 
 ```
 // To access the color service in native code, you'll make a call that resembles this:
@@ -111,10 +111,10 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ```
 
- **HINWEIS:** Die COLORREF Rückgabewerte **GetVSSysColorEx()** enthalten nur R, G, B Komponenten ein Farbdesign aus. Wenn ein Eintrag Design Transparenz verwendet wird, wird der Alpha-Kanal-Wert vor der Rückgabe verworfen. Aus diesem Grund, wenn die gewünschten Farbe Umgebung muss an einer Stelle verwendet werden, wo der transparenzkanal wichtig ist, sollten Sie IVsUIShell5.GetThemedColor statt IVsUIShell2::GetVSSysColorEx, verwenden wie weiter unten in diesem Thema beschrieben.
+ **NOTE:** The COLORREF values returned by **GetVSSysColorEx()** contain just R,G,B components of a theme color. If a theme entry uses transparency, the alpha-channel value is discarded before returning. Therefore, if the environment color of interest needs to be used in a place where transparency channel is important, you should use IVsUIShell5.GetThemedColor instead of IVsUIShell2::GetVSSysColorEx, as described later in this topic.
 
-##### <a name="from-managed-code"></a>Aus verwaltetem code
- Zugreifen auf die VSColor Service durch systemeigenen Code ist ziemlich einfach. Wenn Sie mithilfe von verwaltetem Code arbeiten, kann jedoch bestimmen, wie Sie den Dienst verwenden knifflig sein. Beachten Sie, ist hier ein C#-Codeausschnitt veranschaulicht diesen Prozess:
+##### <a name="from-managed-code"></a>From managed code
+ Accessing the VSColor service through native code is fairly straightforward. If you are working through managed code, however, determining how to use the service can be tricky. With that in mind, here is a C# code snippet demonstrating this process:
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -137,14 +137,14 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 }
 ```
 
- Wenn Sie in Visual Basic arbeiten, verwenden Sie:
+ If you are working in Visual Basic, use:
 
 ```
 Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 ```
 
-##### <a name="from-wpf-ui"></a>Von WPF-Benutzeroberfläche
- Sie können Visual Studio-Farben, durch die Werte, die in der Anwendung ResourceDictionary exportiert binden. Es folgt ein Beispiel für die Verwendung von Ressourcen aus der Tabelle sowie zum Binden an die Umgebungsdaten für die Schriftart in XAML.
+##### <a name="from-wpf-ui"></a>From WPF UI
+ You can bind to Visual Studio colors through values exported into the Application's ResourceDictionary. Below is an example of using resources from the color table as well as binding to the environment font data in XAML.
 
 ```
 <Style TargetType="{x:Type Button}">
@@ -157,10 +157,10 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 </Style>
 ```
 
-#### <a name="helper-classes-and-methods-for-managed-code"></a>Hilfsklassen und Methoden für verwalteten code
- Für verwalteten Code enthält die Shell Managed Package Framework-Bibliothek (Microsoft.VisualStudio.Shell.12.0.dll) einige Hilfsklassen, die es vereinfacht die Verwendung von Farben mit Design versehen.
+#### <a name="helper-classes-and-methods-for-managed-code"></a>Helper classes and methods for managed code
+ For managed code, the shell’s Managed Package Framework library (Microsoft.VisualStudio.Shell.12.0.dll) contains a couple of helper classes facilitating the use of themed colors.
 
- Die Hilfsmethoden in den **Microsoft.VisualStudio.Shell.VsColors** Klasse in MPF enthalten **GetThemedGDIColor()** und **GetThemedWPFColor()** . Diese Hilfsmethoden zurückgeben den Farbwert eines Eintrags Design als System.Drawing.Color-Objekt oder System.Windows.Media.Color, um in Windows Forms oder WPF-UI verwendet werden.
+ The helper methods in the **Microsoft.VisualStudio.Shell.VsColors** class in MPF include **GetThemedGDIColor()** and **GetThemedWPFColor()** . Those helper methods return the color value of a theme entry as System.Drawing.Color or System.Windows.Media.Color, to be used in WinForms or WPF UI.
 
 ```
 IVsUIShell5 shell5;
@@ -210,14 +210,14 @@ public static System.Windows.Media.Color GetThemedWPFColor(this IVsUIShell5 vsUI
 
 ```
 
- Die Klasse kann auch verwendet werden, um VSCOLOR-IDs für einen bestimmten WPF Farbe Resource-Schlüssel erhalten oder umgekehrt.
+ The class can also be used to obtain VSCOLOR identifiers for a given WPF color resource key, or vice versa.
 
 ```
 public static string GetColorBaseKey(int vsSysColor);
 public static bool TryGetColorIDFromBaseKey(string baseKey, out int vsSysColor);
 ```
 
- Die Methoden der **VsColors** Abfragen-Klasse die VSColor Service zurückzugebenden Wert für die jedes Mal, sie werden aufgerufen. Zum Abrufen von eines Farbwert als **System.Drawing.Color**, Alternative mit besserer Leistung wird stattdessen die Methoden verwenden die **Microsoft.VisualStudio.PlatformUI.VSThemeColor** Klasse, die Caches die Farbwerte, die vom Dienst VSColor abgerufen wird. Die Klasse intern Shell Broadcastmeldungen Ereignisse abonniert und verwirft den zwischengespeicherten Wert, wenn eine Änderung Design-Ereignis tritt auf. Die Klasse bietet außerdem ein. NET-freundliche Ereignis Designänderungen abonnieren. Verwenden Sie die **ThemeChanged** Ereignis, um einen neuen Handler hinzuzufügen, und Verwenden der **GetThemedColor()** Methode zum Abrufen von Farbe, Werte für die **ThemeResourceKeys** von Interesse sind. Ein Beispielcode könnte folgendermaßen aussehen:
+ The methods of **VsColors** class query the VSColor service to return the color value each time they are invoked. To obtain a color value as **System.Drawing.Color**, an alternative with better performance is to instead use the methods of the **Microsoft.VisualStudio.PlatformUI.VSThemeColor** class, which caches the color values obtained from the VSColor service. The class subscribes internally to shell broadcast messages events, and discards the cached value when a theme changing event occurs. Also, the class provides a .NET-friendly event to subscribe to theme changes. Use the **ThemeChanged** event to add a new handler, and use the **GetThemedColor()** method to obtain color values for the **ThemeResourceKeys** of interest. A sample code could look like this:
 
 ```
 public MyWindowPanel()
@@ -256,164 +256,164 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-## <a name="BKMK_ChoosingHighContrastColors"></a> Farben mit hohem Kontrast auswählen
+## <a name="BKMK_ChoosingHighContrastColors"></a> Choosing High Contrast colors
 
 ### <a name="overview"></a>Übersicht
- Windows verwendet mehrere kontrastreiche auf Systemebene Designs, die den Farbkontrast Text, Hintergründe und Bilder, erhöhen vornehmen Elemente mehr unterschiedliche auf dem Bildschirm angezeigt werden. Aus Gründen der Barrierefreiheit ist es wichtig, dass die Benutzeroberflächenelemente von Visual Studio ordnungsgemäß reagieren, wenn Benutzer zum Design mit hohem Kontrast wechseln.
+ Windows uses several high-contrast system-level themes that increase the color contrast of text, backgrounds, and images, making elements appear more distinct on the screen. For accessibility reasons, it is important that Visual Studio interface elements respond correctly when users switch to a High Contrast theme.
 
- Nur eine Handvoll von Systemfarben kann für Designs mit hohem Kontrast verwendet werden. Wenn Sie Ihr System Farbnamen auswählen, beachten Sie die folgenden Tipps:
+ Only a handful of system colors can be used for High Contrast themes. When choosing your system color names, remember the following tips:
 
-1. **Wählen Sie die Systemfarben, die die gleiche semantische Bedeutung haben** als das Element, das Sie Farben sind. Z. B. Wenn Sie eine hohe Kontraste-Farbe für Text in einem Fenster auswählen, verwenden Sie WindowText und nicht ControlText.
+1. **Choose system colors that have the same semantic meaning** as the element that you are coloring. For instance, if you are choosing a high-contrast color for text within a window, use WindowText and not ControlText.
 
-2. **Wählen Sie die Vordergrund-/Hintergrund-Paare** zusammen oder werden Sie nicht sicher sind, dass Ihre Farbauswahl in allen Designs mit hohem Kontrast funktionieren.
+2. **Choose foreground/background pairs** together or you will not be confident that your color choice will work in all High Contrast themes.
 
-3. **Zu bestimmen, welche Teile der Benutzeroberfläche am wichtigsten sind, und stellen sicher, dass Inhaltsbereiche abhebt..** Sie verlieren viele Details, die geringfügige Unterschiede bei den Farbton normalerweise unterscheiden würden, daher ist die Verwendung der starken Rahmenfarben häufig zum Definieren von Bereichen, da keine Farbvarianten für verschiedene Inhaltsbereiche vorhanden sind.
+3. **Determine which parts of your UI are the most important and ensure that content areas will stand out.** You will lose a lot of detail that subtle differences in color hue would normally distinguish, so the use of strong border colors is common to define content areas, because there are no color variants for different content areas.
 
-### <a name="system-color-set"></a>System-Farbpalette
- Die Tabelle auf [WPF-Teamblog: SystemColors Verweis](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) gibt den vollständigen Satz von Namen der System-Farben und die entsprechenden Farbtöne in jedes Design angezeigt.
+### <a name="system-color-set"></a>System color set
+ The table at [WPF Team Blog: SystemColors Reference](https://devblogs.microsoft.com/wpf/systemcolors-reference/) indicates the complete set of system color names, and the corresponding hues displayed in each theme.
 
- Beim Anwenden dieses Satz von Farben auf der Benutzeroberfläche beschränkt *es wird erwartet, dass Sie feinen Details verlieren, die in den "normalen" Designs vorhanden waren*. Hier ist ein Beispiel der Benutzeroberfläche mit feine grauen Farben, die verwendet werden, um Bereiche innerhalb eines Toolfensters zu unterscheiden. In Kombination mit demselben Fenster im Modus mit hohem Kontrast angezeigt sehen Sie sich, dass alle die Hintergründe der gleiche Farbton und die Rahmen von Bereichen von Rahmen, die allein angegeben werden:
+ When applying this limited set of colors to your UI, *it is expected that you will lose subtle details that were present in the “normal” themes*. Here is an example of UI with subtle gray colors that are used to distinguish areas within a tool window. When paired with the same window displayed in High Contrast mode, you can see that all the backgrounds are the same hue and the borders of those areas are indicated by border alone:
 
- ![Fenster "Eigenschaften"](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303-A_PropertiesWindow")
+ ![Eigenschaftenfenster](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303-a_PropertiesWindow")
 
- **Beispiele wie feinen Details sind in hohem Kontrast verloren**
+ **Example of how subtle details are lost when in High Contrast**
 
-#### <a name="choosing-text-colors-in-an-editor"></a>Textfarben auswählen in einem editor
- Farbige Text wird in einem Editor oder auf einer Entwurfsoberfläche verwendet, um Bedeutung, z. B. ermöglicht die einfache Identifizierung von Gruppen ähnlicher Elemente anzugeben. Im Design mit hohem Kontrast allerdings müssen Sie nicht die Möglichkeit, mehr als drei Textfarben unterscheiden. WindowText, GrayText und HotTrackText sind die einzigen Farben auf WindowBackground Oberflächen zur Verfügung. Da Sie mehr als drei Farben verwenden können, wählen Sie sorgfältig die wichtigsten Unterschiede, die im Modus mit hohem Kontrast angezeigt werden soll.
+#### <a name="choosing-text-colors-in-an-editor"></a>Choosing text colors in an editor
+ Colorized text is used in an editor or on a design surface to indicate meaning, such as allowing for easy identification of groups of similar items. In a High Contrast theme, however, you do not have the ability to differentiate between more than three text colors. WindowText, GrayText and HotTrackText are the only colors available on WindowBackground surfaces. Since you cannot use more than three colors, carefully choose the most important differences that you want to display when in High Contrast mode.
 
- Farbtöne für jede von den Tokennamen auf einer Editoroberfläche zulässig sind, wie sie in jeder Design mit hohem Kontrast angezeigt werden:
+ Hues for each of the token names allowed on an editor surface, as they appear in each High Contrast theme:
 
- ![Hoher Kontrast Editor Vergleich](../../extensibility/ux-guidelines/media/030303-b-hceditorcomparison.png "030303-B_HCEditorComparison")
+ ![High Contrast editor comparison](../../extensibility/ux-guidelines/media/030303-b-hceditorcomparison.png "030303-b_HCEditorComparison")
 
- **Hoher Kontrast-Editor-Vergleich**
+ **High Contrast editor comparison**
 
- Beispiele für die der Editor-Entwurfsoberfläche in das Design "Blau":
+ Examples of the editor surface in the Blue theme:
 
- ![Editor im Design "Blau"](../../extensibility/ux-guidelines/media/030303-c-editorblue.png "030303-C_EditorBlue")
+ ![Editor in Blue theme](../../extensibility/ux-guidelines/media/030303-c-editorblue.png "030303-c_EditorBlue")
 
- **Editor im Design "Blau"**
+ **Editor in Blue theme**
 
- ![Editor im Design "hoher Kontrast"](../../extensibility/ux-guidelines/media/030303-d-editorhc1.png "030303-d_EditorHC1")
+ ![Editor in High Contrast theme](../../extensibility/ux-guidelines/media/030303-d-editorhc1.png "030303-d_EditorHC1")
 
- **Editor im Design "hoher Kontrast #1"**
+ **Editor in High Contrast #1 theme**
 
-### <a name="usage-patterns"></a>Verwendungsmuster
- Viele allgemeine Elemente der Benutzeroberfläche haben bereits definierte kontrastreiche Farben. Sie können diese Verwendungsmuster verweisen, wenn Sie Ihr eigenes System Farbnamen, auswählen, damit Ihre UI-Elemente mit ähnlichen Komponenten konsistent sind.
+### <a name="usage-patterns"></a>Usage patterns
+ Many common UI elements already have high-contrast colors defined. You can reference these usage patterns when choosing your own system color names, so that your UI elements are consistent with similar components.
 
-|Systemfarbe|Verwendung|
+|System Color|Verwendung|
 |------------------|-----------|
-|ActiveCaption|-Active-IDE und rafted Fenster Schaltfläche Symbole auf, wenn darauf gezeigt wird, und drücken Sie<br />-Befehlsleisten-Hintergrund für die IDE und rafted Windows Titel<br />-Standard Statusleisten-Hintergrund|
-|ActiveCaptionText|-Active-IDE und rafted Windows für Title Bar Vordergrund (Text und Symbole)<br />-Hintergrund und Rahmen des aktiven Fensters Schaltflächen auf, wenn darauf gezeigt wird, und drücken Sie|
-|Steuerelement|-Kombinationsfeld, Dropdown-Liste, und suchen steuern, Standard und deaktivierten Hintergrund, einschließlich der Dropdown-Schaltfläche<br />-Schaltflächenhintergrund<br />-Befehlsleisten-Hintergrund<br />-Toolfenster – Hintergrund|
-|ControlDark|-IDE Hintergrund<br />-Menü- und Befehlsleiste-Trennzeichen<br />-Befehlsleiste – Rahmen<br />-Zeichnen von Schatten Menü<br />-Tool Registerkarte Standard und zeigen Sie Fensterrahmen und -Trennzeichen<br />-Dokument auch Schaltflächenhintergrunds auf Überlauf<br />-Der andockziel symbolrahmens|
-|ControlDarkDark|-Ohne Fokus, ausgewählten Registerkarte Dokumentfenster|
-|ControlLight|-Automatisch ausblendbaren registerkartenrahmen<br />-Der Rahmen für die Kontrollkästchen und Dropdown-Liste Kombinationsfeld<br />-Ziel-Hintergrund und Rahmen Andocken|
-|ControlLightLight|-Ausgewählten, mit Fokus vorläufigen Rahmen|
-|ControlText|-Symbol für Kombinationsfeld Kontrollkästchen und Dropdown-Liste<br />-Toolfenster deaktiviert – Registerkartentext|
-|GrayText|-Kombinationsfeld und Rahmen der Dropdown-Liste deaktiviert, Dropdown-Glyphe, Text und Menüelementtext<br />– Deaktivierter Menütext<br />-Search Steuerelement "Search Options" HeaderText<br />-Suchen Steuerelements Abschnittstrennzeichen|
-|Hervorheben|– All zeigen und gedrückt, Hintergrund und Rahmen, mit Ausnahme von Kombinationsfeld-Box-Dropdownliste Schaltflächenhintergrunds und Dokument auch overflow Schaltflächenrahmens<br />– Ausgewähltes Element Hintergründen|
-|HighlightText|– Alle Hover- und gedrückten-vordergründen (Text und Symbole)<br />-Fokussiertes Tool Toolfenster- und Registerkarte Fenster Steuerelement Vordergrund<br />-Fokussierte Toolfenster Title-Leiste – Rahmen<br />-Fokussierten, ausgewählten provisorischen Registerkarte Vordergrund<br />-Dokument sowie Überlauf-Schaltflächenrahmens auf, wenn darauf gezeigt wird, und drücken Sie<br />– Ausgewähltes Symbol|
-|HotTrack|-Scrollbar Thumb-Hintergrund und Rahmen beim Klicken<br />-Scrollbar Pfeilsymbol, das beim Klicken|
-|InactiveCaption|-Inaktiv-IDE und rafted Fenster Schaltfläche Symbole, wenn darauf gezeigt wird<br />-Befehlsleisten-Hintergrund für die IDE und rafted Windows Titel<br />– Deaktivierter durchsuchen-Steuerelement – Hintergrund|
-|InactiveCaptionText|-Inaktiv-IDE und rafted Windows Title Bar Vordergrund (Text und Symbole)<br />-Inaktiven Fensters-Schaltflächen-Hintergrund und Rahmen, wenn darauf gezeigt wird<br />-Ohne Fokus Toolfenster Schaltfläche – Hintergrund und Rahmen<br />– Deaktivierter Suche Steuerelement Vordergrund|
-|Menü|-Der Menühintergrund Dropdownliste<br />-Aktivierten und deaktivierten Häkchen-Hintergrund|
-|MenuText|-Dropdown Menü "Rahmen"<br />-Überprüfen Sie die Häkchen<br />-Menü Symbole<br />-Text der Dropdown-Menüs<br />– Ausgewähltes Symbol|
-|Bildlaufleiste|-Scrollbar als auch Scrollbar Pfeil Hintergrund alle Zustände|
-|Fenster|Automatisch ausblendbaren Registerkarte-Hintergrund<br />-Menü Leiste und den hintergrundfarbverlaufsanfang Befehl<br />-Ohne Fokus oder nicht ausgewählte Dokument Registerkarte Fensterhintergrund und Dokumentrahmen, für offene und vorläufige Registerkarten<br />-Ohne Fokus Tool-Fensterhintergrund der Titelleiste<br />-Registerkarte toolfensterhintergrunds, sowohl ausgewählt als auch nicht ausgewählt|
-|WindowFrame|-IDE Rahmens|
-|WindowText|-Automatisch ausblendbaren Registerkarte Vordergrund<br />– Vordergrund Registerkarte ausgewählte tool<br />-Ohne Fokus Dokumentregisterkarte für Fenster und provisorischen Registerkarte ohne Fokus oder "deaktiviert" Vordergrund<br />-Struktur, die standardmäßige Vordergrund-Ansicht und zeigen Sie für nicht ausgewählte Symbol<br />– Toolfenster ausgewählte Registerkarte – Rahmen<br />-Scrollbar Thumb-Hintergrund, Rahmen und Symbol|
+|ActiveCaption|-   Active IDE and rafted window button glyphs on hover and press<br />-   Title bar background for IDE and rafted windows<br />-   Default status bar background|
+|ActiveCaptionText|-   Active IDE and rafted windows for title bar foreground (text and glyphs)<br />-   Background and border of active window buttons on hover and press|
+|Steuerelement|-   Combo box, dropdown list, and search control default and disabled background, including dropdown button<br />-   Dock target button background<br />-   Command bar background<br />-   Tool window background|
+|ControlDark|-   IDE background<br />-   Menu and command bar separators<br />-   Command bar border<br />-   Menu shadows<br />-   Tool window tab default and hover border and separator<br />-   Document well overflow button background<br />-   Dock target glyph border|
+|ControlDarkDark|-   Unfocused, selected document tab window|
+|ControlLight|-   Auto-hide tab border<br />-   Combo box and drop-down list border<br />-   Dock target background and border|
+|ControlLightLight|-   Selected, focused provisional border|
+|ControlText|-   Combo box and drop-down list glyph<br />-   Tool window unselected tab text|
+|GrayText|-   Combo box and dropdown list disabled border, dropdown glyph, text, and menu item text<br />-   Disabled menu text<br />-   Search control 'search options' header text<br />-   Search control section separator|
+|Hervorheben|-   All hover and pressed backgrounds and borders, except combo box dropdown button background and document well overflow button border<br />-   Selected item backgrounds|
+|HighlightText|-   All hover and pressed foregrounds (text and glyphs)<br />-   Focused tool window and document tab window control foreground<br />-   Focused tool window title bar border<br />-   Focused, selected provisional tab foreground<br />-   Document well overflow button border on hover and press<br />-   Selected icon border|
+|HotTrack|-   Scrollbar thumb background and border on press<br />-   Scrollbar arrow glyph on press|
+|InactiveCaption|-   Inactive IDE and rafted window button glyphs on hover<br />-   Title bar background for IDE and rafted windows<br />-   Disabled search control background|
+|InactiveCaptionText|-   Inactive IDE and rafted windows title bar foreground (text and glyphs)<br />-   Inactive window buttons background and border on hover<br />-   Unfocused tool window button background and border<br />-   Disabled search control foreground|
+|Menü|-   Dropdown menu background<br />-   Checked and disabled checkmark background|
+|MenuText|-   Dropdown menu border<br />-   Checkmark check<br />-   Menu glyphs<br />-   Drop-down menu text<br />-   Selected icon border|
+|Bildlaufleiste|-   Scrollbar and scrollbar arrow background, all states|
+|Fenster|-   Auto-hide tab background<br />-   Menu bar and command shelf background<br />-   Unfocused or unselected document window tab background and document border, for both open and provisional tabs<br />-   Unfocused tool window title bar background<br />-   Tool window tab background, both selected and unselected|
+|WindowFrame|-   IDE border|
+|WindowText|-   Auto-hide tab foreground<br />-   Selected tool window tab foreground<br />-   Unfocused document window tab and unfocused or unselected provisional tab foreground<br />-   Tree view default foreground and hover over unselected glyph<br />-   Tool window selected tab border<br />-   Scrollbar thumb background, border, and glyph|
 
-## <a name="BKMK_ExposingColorsForEndUsers"></a> Verfügbarmachen von Farben für Endbenutzer
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Exposing colors for end users
 
 ### <a name="overview"></a>Übersicht
- Manchmal möchten Sie den Endbenutzer zum Anpassen der Benutzeroberflächenautomatisierungs, z. B. Wenn Sie eine Code-Editor oder die Entwurfsoberfläche erstellen können. Die gängigste Methode dazu ist die Verwendung der **Tools > Optionen** Dialogfeld. Es sei denn, Sie hoch UI, die spezielle Steuerelemente erforderlich sind spezialisiert haben, ist die einfachste Möglichkeit zum Präsentieren der anpassungs über die **Schriftarten und Farben** Seite innerhalb der **Umgebung** Abschnitt des Dialogfelds. Für jedes Element, das Sie für die Anpassung verfügbar machen, kann der Benutzer auswählen, so ändern Sie die Vordergrundfarbe, Hintergrundfarbe oder beides.
+ Sometimes you will want to allow the end user to customize your UI, such as when you are creating a code editor or design surface. The most common way to do this is by using the **Tools > Options** dialog. Unless you have highly specialized UI that requires special controls, the easiest way to present the customization is through the **Fonts and Colors** page within the **Environment** section of the dialog. For each element that you expose for customization, the user can choose to change the foreground color, background color, or both.
 
-### <a name="building-a-vspackage-for-your-customizable-colors"></a>Erstellen eine VSPackage für Ihre anpassbare Farben
- Eine VSPackage kann steuern, Schriftarten und Farben durch benutzerdefinierte Kategorien und Einblenden von Elementen auf der Eigenschaftenseite für Schriftarten und Farben. Wenn Sie diesen Mechanismus verwenden zu können, muss die VSPackages implementieren die [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) -Schnittstelle und die zugehörigen Schnittstellen.
+### <a name="building-a-vspackage-for-your-customizable-colors"></a>Building a VSPackage for your customizable colors
+ A VSPackage can control the fonts and colors through custom categories and display items on the Fonts and Colors property page. When using this mechanism, VSPackages must implement the [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) interface and its associated interfaces.
 
- Im Prinzip kann dieser Mechanismus verwendet werden, so ändern Sie alle Elemente mit vorhandenen anzeigen und die Kategorien, die sie enthalten. Allerdings sollte es nicht verwendet werden, die Text-Editor-Kategorie oder ihre Anzeigeelemente zu ändern. Weitere Informationen zu der Kategorie "Text-Editor", finden Sie unter [Schriftart und Farbe (Übersicht)](https://msdn.microsoft.com/library/bb165065.aspx).
+ In principle, this mechanism can be used to modify all existing display items and the categories that contain them. However, it should not be used to modify the Text Editor category or its display items. For more information on the Text Editor category, see [Font and Color Overview](https://msdn.microsoft.com/library/bb165065.aspx).
 
- Implementieren benutzerdefinierte Kategorien oder Elemente anzeigen, müssen eine VSPackage ein:
+ To implement custom categories or display Items, a VSPackage must:
 
-- **Erstellen Sie oder identifizieren Sie die Kategorien in der Registrierung.** Die IDE Implementierung der **Schriftarten und Farben** Eigenschaftenseite anhand dieser Informationen ordnungsgemäß für den Dienst, der eine angegebene Kategorie unterstützt Abfragen.
+- **Create or identify categories in the registry.** The IDE's implementation of the **Fonts and Colors** property page uses this information to correctly query for the service supporting a given category.
 
-- **Erstellen Sie oder identifizieren Sie Gruppen in der Registrierung (optional).** Es kann hilfreich sein, eine Gruppe definieren, die die Gesamtmenge von zwei oder mehr Kategorien darstellt. Wenn eine Gruppe definiert ist, wird die IDE automatisch zusammengeführt Unterkategorien und verteilt die Elemente in der Gruppe anzeigen.
+- **Create or identify groups in the registry (optional).** It might be useful to define a group, which represents the union of two or more categories. If a group is defined, the IDE automatically merges subcategories and distributes display items within the group.
 
-- **Implementieren Sie die IDE-Unterstützung.**
+- **Implement IDE support.**
 
-- **Behandeln Sie Schriftart- und farbänderungen an.**
+- **Handle font and color changes.**
 
-#### <a name="to-create-or-identify-categories"></a>Zum Erstellen oder Identifizieren von Kategorien
- Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag unter ["HKLM\Software\Microsoft" \Visual Studio\\< Visual Studio-Version\>\FontAndColors\\< Kategorie\>]. \<Kategorie > ist der nicht lokalisierte Name der Kategorie.
+#### <a name="to-create-or-identify-categories"></a>To create or identify categories
+ Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]. \<Category> is the non-localized name of the Category.
 
- Füllen Sie die Registrierung mit zwei Werten:
+ Populate the registry with two values:
 
-|Name|Typ|Daten|Beschreibung|
+|-Name|Geben Sie Folgendes ein:|Daten|Beschreibung|
 |----------|----------|----------|-----------------|
-|Kategorie|REG_SZ|GUID|Eine GUID zum Identifizieren der Kategorie erstellt|
-|Package|REG_SZ|GUID|Die GUID des VSPackage-Diensts, der die Kategorie unterstützt.|
+|Kategorie|REG_SZ|GUID|A GUID created to identify the category|
+|Package|REG_SZ|GUID|The GUID of the VSPackage service that supports the category|
 
- Der Dienst in der Registrierung angegebene muss eine Implementierung bereitstellen [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) für die entsprechende Kategorie.
+ The service specified in the registry must provide an implementation of [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) for the corresponding category.
 
-#### <a name="to-create-or-identify-groups"></a>Zum Erstellen oder Identifizieren von Gruppen
- Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag unter ["HKLM\Software\Microsoft" \Visual Studio\\< Visual Studio-Version\>\FontAndColors\\< Gruppe\>]. \<Gruppe > wird von der nicht lokalisierten Namen der Gruppe.
+#### <a name="to-create-or-identify-groups"></a>To create or identify groups
+ Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]. \<group> is the non-localized name of the group.
 
- Füllen Sie die Registrierung mit zwei Werten:
+ Populate the registry with two values:
 
-|Name|Typ|Daten|Beschreibung|
+|-Name|Geben Sie Folgendes ein:|Daten|Beschreibung|
 |----------|----------|----------|-----------------|
-|Kategorie|REG_SZ|GUID|Eine GUID zum Identifizieren der Kategorie erstellt|
-|Package|REG_SZ|GUID|Die GUID des VSPackage-Diensts, der die Kategorie unterstützt.|
+|Kategorie|REG_SZ|GUID|A GUID created to identify the category|
+|Package|REG_SZ|GUID|The GUID of the VSPackage service that supports the category|
 
- Der Dienst in der Registrierung angegebene muss eine Implementierung bereitstellen **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** für die entsprechende Gruppe.
+ The service specified in the registry must provide an implementation of **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** for the corresponding group.
 
  ![IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a-fontandcolorgroup.png "0304-a_FontAndColorGroup")
 
-### <a name="to-implement-ide-support"></a>Zum Implementieren von IDE-Unterstützung
- Implementieren [GetObject](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), womit entweder ein [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) Schnittstelle oder ein **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** Schnittstelle, die die IDE für jede Kategorie oder der Gruppe angegebenen GUID.
+### <a name="to-implement-ide-support"></a>To implement IDE support
+ Implement [GetObject](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), which returns either an [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) interface or an **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** interface to the IDE for each category or group GUID supplied.
 
- Für jede Kategorie unterstützt, eine VSPackage implementiert eine separate Instanz von der [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) Schnittstelle.
+ For every category it supports, a VSPackage implements a separate instance of the [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) interface.
 
- Die Methoden implementiert, über [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) müssen die IDE mit bereitstellen:
+ The methods implemented through [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) must provide the IDE with:
 
-- Liste der Elemente in der Kategorie anzeigen
+- Lists of display items in the category
 
-- Lokalisierbaren Namen für Anzeigeelemente
+- Localizable names for display items
 
-- Anzeigen von Informationen für jedes Element der Kategorie
+- Display information for each member of the category
 
-  **HINWEIS:** Jede Kategorie muss mindestens ein Display-Element enthalten.
+  **NOTE:** Every category must contain at least one display item.
 
-  Die IDE verwendet das **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** Schnittstelle, um eine Kombination aus verschiedenen Kategorien zu definieren.
+  The IDE uses the **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** interface to define a union of several categories.
 
-  Die Implementierung bietet die IDE mit:
+  Its implementation provides the IDE with:
 
-- Eine Liste der Kategorien, die einer bestimmten Gruppe bilden
+- A list of the Categories that make up a given group
 
-- Zugriff auf Instanzen der [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) unterstützt jede Kategorie in der Gruppe
+- Access to instances of [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) supporting each Category within the group
 
-- Lokalisierbare Gruppennamen
+- Localizable group names
 
-#### <a name="updating-the-ide"></a>Aktualisieren der IDE
- Die IDE speichert Informationen über Schriftart-und Farbeinstellungen. Also nach jeder Änderung der Konfiguration IDE-Schriftart und Farbe, um sicherzustellen, dass der Cache auf dem neuesten Stand ist eine bewährte Methode.
+#### <a name="updating-the-ide"></a>Updating the IDE
+ The IDE caches information about Font and Color settings. Therefore, after any modification of the IDE Font and Color configuration, ensuring that the cache is up to date is a best practice.
 
- Aktualisieren des Caches erfolgt über die [IvsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) Schnittstelle und kann ausgeführt global oder nur für ausgewählte Elemente.
+ Updating the cache is done through the [IvsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface and can be performed globally or just on selected items.
 
-### <a name="handling-font-and-color-changes"></a>Behandeln von Schriftart- und farbänderungen an
- Um die farbliche Kennzeichnung von Text ordnungsgemäß zu unterstützen, die eine VSPackage anzeigt, muss der Farbgebung-Dienst unterstützt das VSPackage auf die vom Benutzer initiierte Änderungen, die über die Eigenschaftenseite für Schriftarten und Farben reagieren.
+### <a name="handling-font-and-color-changes"></a>Handling font and color changes
+ To properly support the colorization of text that a VSPackage displays, the colorization service supporting the VSPackage must respond to the user-initiated changes made through the Fonts and Colors properties page.
 
- Zu diesem Zweck müssen eine VSPackage ein:
+ To do this, a VSPackage must:
 
-- **IDE-generierte Ereignisse behandeln** durch die Implementierung der [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) Schnittstelle. Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer von der Seite "Schriftarten und Farben". Beispielsweise ruft die [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) Methode, wenn eine neue Schriftart ausgewählt ist.
+- **handle IDE-generated events** by implementing the [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) interface. The IDE calls the appropriate method following user modifications of the Fonts and Colors page. For example, it calls the [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) method if a new font is selected.
 
   **ODER**
 
-- **Abrufen die IDE Änderungen**. Dies kann erfolgen über das System implementierter [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle. Zwar in erster Linie für die Unterstützung von Persistenz der [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) Methode Schriftart und Farbe zu Elementen zu erhalten. Weitere Informationen zu den Schriftart-und farbeinstellungen, finden Sie im MSDN-Artikel [den Zugriff auf gespeicherte Schriftart- und Farbeinstellungen](https://msdn.microsoft.com/library/bb166382.aspx).
+- **poll the IDE for changes**. This can be done through the system-implemented [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Although primarily for support of persistence, the [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) method can obtain font and color information for Display Items. For more information on font and color settings, see the MSDN article [Accessing Stored Font and Color Settings](https://msdn.microsoft.com/library/bb166382.aspx).
 
-  **HINWEIS:** Verwenden, um sicherzustellen, dass die Abfrageergebnisse richtig sind, die [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) Schnittstelle, um zu bestimmen, ob eine Entleerung des Cache und die Updates erforderlich sind, vor dem Aufrufen der Abrufmethoden, der die [IVsFontAndColorStorage ](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle.
+  **NOTE:** To ensure that polling results are correct, use the [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface to determine if a cache flush and update are needed prior to calling the retrieval methods of the [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface.
 
-#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Registrieren benutzerdefinierte Schriftart und Farbe Kategorie ohne Schnittstellen zu implementieren
- Im folgenden Codebeispiel wird veranschaulicht, registrieren Sie die benutzerdefinierte Schriftart und Farbe, Kategorie ohne Schnittstellen zu implementieren:
+#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Registering custom font and color Category without implementing interfaces
+ The following code example demonstrates how to register the custom font and color Category without implementing interfaces:
 
 ```xml
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp Tool Window]
@@ -426,14 +426,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **HINWEIS:**
 
-- "NameID" = die Ressourcen-ID, der den lokalisierten Kategorienamen in Ihrem Paket
+- "NameID" = the resource ID of the localized category name in your package
 
-- "ToolWindowPackage" Paket-GUID =
+- "ToolWindowPackage" = Package GUID
 
-- "Category" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" ist nur ein Beispiel, und des tatsächlichen Werts kann eine neue GUID, die durch die Implementierung bereitgestellt.
+- "Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" is just an example and the actual value can be a new GUID provided by the implementer.
 
-### <a name="set-the-font-and-color-property-category-guid"></a>Legen Sie die Schriftart und Farbe Eigenschaftskategorie-GUID
- Das folgende Codebeispiel veranschaulicht das Festlegen der Category-GUIDs.
+### <a name="set-the-font-and-color-property-category-guid"></a>Set the Font and Color property category GUID
+ The code example below demonstrates setting Category GUIDs.
 
 ```cs
 // m_pView is your IVsTextView

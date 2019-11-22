@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer N-Tier-Daten Anwendung | Microsoft-Dokumentation'
+title: 'Walkthrough: Creating an N-Tier Data Application | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -17,21 +17,21 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 720f50fe486c0e625fcd67191f43897eba466698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660163"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299586"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehrere logische Ebenen oder *Ebenen*unterteilt sind. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Zur N-Tier-Architektur gehören eine Präsentationsebene, eine mittlere Ebene und eine Datenebene. Die mittlere Ebene enthält eine Datenzugriffsschicht, eine Geschäftslogikschicht und gemeinsame Komponenten, wie beispielsweise Authentifizierung und Validierung. Die Datenschicht enthält eine relationale Datenbank. N-Tier-Anwendungen speichern vertrauliche Informationen in der Datenzugriffsschicht der mittleren Ebene, um diese von Endbenutzern, die auf die Präsentationsebene zugreifen, getrennt zu halten. Weitere Informationen finden Sie unter [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md).
+N-tier* data applications are applications that access data and are separated into multiple logical layers, or *tiers*. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Zur N-Tier-Architektur gehören eine Präsentationsebene, eine mittlere Ebene und eine Datenebene. Die mittlere Ebene enthält eine Datenzugriffsschicht, eine Geschäftslogikschicht und gemeinsame Komponenten, wie beispielsweise Authentifizierung und Validierung. Die Datenschicht enthält eine relationale Datenbank. N-Tier-Anwendungen speichern vertrauliche Informationen in der Datenzugriffsschicht der mittleren Ebene, um diese von Endbenutzern, die auf die Präsentationsebene zugreifen, getrennt zu halten. For more information, see [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md).
 
  Eine Möglichkeit zum Trennen der verschiedenen Ebenen einer N-Tier-Anwendung besteht im Erstellen separater Projekte für jede Ebene, die in der Anwendung enthalten sein soll. Typisierte DataSets enthalten eine `DataSet Project`-Eigenschaft, mit der festgelegt wird, in welche Projekte der erzeugte DataSet-Code und der erzeugte `TableAdapter`-Code eingefügt werden.
 
- In dieser exemplarischen Vorgehensweise wird dargestellt, wie DataSet- und `TableAdapter`-Code mithilfe des **DataSet-Designers** in einzelne Klassenbibliotheksprojekte aufgeteilt werden. Nachdem Sie das DataSet und den TableAdapter-Code getrennt haben, erstellen Sie eine [Windows Communication Foundation Dienste und WCF Data Services im Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) -Dienst, um die Datenzugriffs Ebene aufzurufen. Abschließend wird eine Windows Forms-Anwendung als Präsentationsebene erstellt. Diese Ebene greift auf Daten des Datendiensts zu.
+ In dieser exemplarischen Vorgehensweise wird dargestellt, wie DataSet- und `TableAdapter`-Code mithilfe des **DataSet-Designers** in einzelne Klassenbibliotheksprojekte aufgeteilt werden. After you separate the dataset and TableAdapter code, you will create a [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) service to call into the data access tier. Abschließend wird eine Windows Forms-Anwendung als Präsentationsebene erstellt. Diese Ebene greift auf Daten des Datendiensts zu.
 
  Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Schritte aus:
 
@@ -41,7 +41,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 - Erstellen eines typisierten DataSets mithilfe des **Assistenten zum Konfigurieren von Datenquellen**.
 
-- Trennen Sie die generierten [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und den DataSet-Code in diskrete Projekte.
+- Separate the generated [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) and dataset code into discrete projects.
 
 - Erstellen eines WCF (Windows Communication Foundation)-Diensts für Aufrufe an die Datenzugriffsebene.
 
@@ -53,7 +53,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 - Schreiben von Code zum Füllen der Datentabellen.
 
-  ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter Gewusst [wie: Erstellen einer N-Tier-Daten Anwendung](http://go.microsoft.com/fwlink/?LinkId=115188).
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo") For a video version of this topic, see [Video How to: Creating an N-Tier Data Application](https://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Erforderliche Voraussetzungen
  Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:
@@ -61,58 +61,58 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 - Zugriff auf die Beispieldatenbank Northwind.
 
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Erstellen der N-Tier-Projektmappe der Klassenbibliothek für das DataSet (DataEntityTier)
- Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe und zwei Klassenbibliotheksprojekte erstellt. Die erste Klassenbibliothek enthält das DataSet (die generierte typisierte DataSet-Klasse und die DataTables für die Anwendungsdaten). Dieses Projekt wird als Datenentitätsschicht der Anwendung verwendet und befindet sich normalerweise in der mittleren Ebene. Der DataSet-Designer wird verwendet, um das ursprüngliche DataSet zu erstellen und den Code automatisch in die beiden Klassenbibliotheken zu trennen.
+ Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe und zwei Klassenbibliotheksprojekte erstellt. Die erste Klassenbibliothek enthält das DataSet (die generierte typisierte DataSet-Klasse und die DataTables für die Anwendungsdaten). Dieses Projekt wird als Datenentitätsschicht der Anwendung verwendet und befindet sich normalerweise in der mittleren Ebene. The Dataset Designer is used to create the initial dataset and automatically separate the code into the two class libraries.
 
 > [!NOTE]
 > Stellen Sie sicher, dass Projekt und Projektmappe ordnungsgemäß benannt wurden, bevor Sie auf **OK** klicken. Das erleichtert die Durchführung der exemplarischen Vorgehensweise.
 
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>So erstellen Sie die N-Tier-Projektmappe und die DataEntityTier-Klassenbibliothek
 
-1. Erstellen Sie im Menü **Datei** ein neues Projekt.
+1. From the **File** menu, create a new project.
 
     > [!NOTE]
-    > Der **DataSet-Designer** wird in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und C# Projekten unterstützt. Erstellen Sie das neue Projekt in einer der beiden Sprachen.
+    > The **Dataset Designer** is supported in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] and C# projects. Erstellen Sie das neue Projekt in einer der beiden Sprachen.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Bereich **Projekttypen** auf **Fenster**.
+2. In the **New Project** dialog box, in the **Project types** pane, click **Windows**.
 
-3. Klicken Sie auf die Vorlage **Klassenbibliothek** .
+3. Click the **Class Library** template.
 
 4. Nennen Sie das Projekt **DataEntityTier**.
 
-5. Nennen Sie die Projekt Mappe **NTierWalkthrough**.
+5. Name the solution **NTierWalkthrough**.
 
 6. Klicken Sie auf **OK**.
 
      Eine Projektmappe NTierWalkthrough mit dem Projekt DataEntityTier wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
 ## <a name="creating-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>Erstellen der Klassenbibliothek für die TableAdapter (DataAccessTier)
- Nach dem Erstellen des Projekts DataEntityTier besteht der nächste Schritt darin, ein zweites Klassenbibliotheksprojekt zu erstellen. Dieses Projekt enthält die generierten `TableAdapter`s und wird als *Datenzugriffs Ebene* der Anwendung bezeichnet. Die Datenzugriffsebene enthält die zum Herstellen einer Verbindung mit der Datenbank notwendigen Informationen und befindet sich normalerweise in der mittleren Ebene.
+ Nach dem Erstellen des Projekts DataEntityTier besteht der nächste Schritt darin, ein zweites Klassenbibliotheksprojekt zu erstellen. This project will hold the generated `TableAdapter`s and is called the *data access tier* of the application. Die Datenzugriffsebene enthält die zum Herstellen einer Verbindung mit der Datenbank notwendigen Informationen und befindet sich normalerweise in der mittleren Ebene.
 
 #### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>So erstellen Sie die neue Klassenbibliothek für die TableAdapter
 
-1. Fügen Sie im Menü Datei der NTierWalkthrough-Projekt **Mappe** ein neues Projekt hinzu.
+1. From the **File** menu, add a new project to the NTierWalkthrough solution.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Bereich **Vorlagen** auf **Klassenbibliothek**.
+2. In the **New Project** dialog box, in the **Templates** pane, click **Class Library**.
 
-3. Nennen Sie das Projekt **DataAccessTier** , und klicken Sie auf **OK**.
+3. Name the project **DataAccessTier** and click **OK**.
 
      Das Projekt DataAccessTier wird erstellt und zur Projektmappe NTierWalkthrough hinzugefügt.
 
 ## <a name="creating-the-dataset"></a>Erstellen des DataSets
- Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte DataSets werden mit beiden DataSet-Klassen (einschließlich der DataTables-Klassen) und der `TableAdapter`-Klassen in einem einzelnen Projekt erstellt. (Alle Klassen werden in einer einzelnen Datei generiert.) Wenn Sie das DataSet und das `TableAdapter`s in verschiedene Projekte aufteilen, ist es die DataSet-Klasse, die in das andere Projekt verschoben wird, wobei die `TableAdapter` Klassen im ursprünglichen Projekt belassen werden. Erstellen Sie daher das DataSet in dem Projekt, das letztendlich die `TableAdapter` (das Projekt DataAccessTier) enthalten wird. Das DataSet wird mithilfe des **Assistenten zum Konfigurieren von Datenquellen**erstellt.
+ Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte DataSets werden mit beiden DataSet-Klassen (einschließlich der DataTables-Klassen) und der `TableAdapter`-Klassen in einem einzelnen Projekt erstellt. (All classes are generated into a single file.) When you separate the dataset and `TableAdapter`s into different projects, it is the dataset class that is moved to the other project, leaving the `TableAdapter` classes in the original project. Erstellen Sie daher das DataSet in dem Projekt, das letztendlich die `TableAdapter` (das Projekt DataAccessTier) enthalten wird. You will create the dataset by using the **Data Source Configuration Wizard**.
 
 > [!NOTE]
 > Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können.
 
 #### <a name="to-create-the-dataset"></a>So erstellen Sie das DataSet
 
-1. Klicken Sie in **Projektmappen-Explorer**auf DataAccessTier.
+1. Click DataAccessTier in **Solution Explorer**.
 
 2. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-3. Klicken Sie im **Datenquellen** Fenster auf **neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
+3. In the **Data Sources** window, click **Add New Data Source** to start the **Data Source Configuration Wizard**.
 
-4. Klicken Sie auf der Seite **Daten Quellentyp auswählen** auf **Datenbank** , und klicken Sie dann auf **weiter**.
+4. On the **Choose a Data Source Type** page, click **Database** and then click **Next**.
 
 5. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** eine der folgenden Aktionen aus:
 
@@ -120,18 +120,18 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
      - oder -
 
-     Klicken Sie auf **neue Verbindung** , um das Dialogfeld **Verbindung hinzufügen** zu öffnen.
+     Click **New Connection** to open the **Add Connection** dialog box.
 
 6. Sollte für die Datenbank ein Kennwort erforderlich sein, wählen Sie die Option für die Einbeziehung vertraulicher Daten aus, und klicken Sie anschließend auf **Weiter**.
 
     > [!NOTE]
-    > Wenn Sie eine lokale Datenbankdatei ausgewählt haben (statt eine Verbindung mit SQL Server herzustellen), werden Sie möglicherweise gefragt, ob Sie die Datei zum Projekt hinzufügen möchten. Klicken Sie auf **Ja** , um die Datenbankdatei zum Projekt hinzuzufügen.
+    > Wenn Sie eine lokale Datenbankdatei ausgewählt haben (statt eine Verbindung mit SQL Server herzustellen), werden Sie möglicherweise gefragt, ob Sie die Datei zum Projekt hinzufügen möchten. Click **Yes** to add the database file to the project.
 
-7. Klicken Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern** auf **weiter** .
+7. Click **Next** on the **Save the Connection String to the Application Configuration File** page.
 
 8. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen** .
 
-9. Aktivieren Sie die Kontrollkästchen für die Tabellen **Customers** und **Orders** , und klicken Sie dann auf **Fertig**stellen.
+9. Click the check boxes for the **Customers** and **Orders** tables, and then click **Finish**.
 
      Das NorthwindDataSet wird zum DataAccessTier-Projekt hinzugefügt und im Fenster **Datenquellen** angezeigt.
 
@@ -146,11 +146,11 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 3. Suchen Sie den Knoten **DataSet-Projekt** im Fenster **Eigenschaften**.
 
-4. Klicken Sie in der Liste **DataSet-Projekt** auf **DataEntityTier**.
+4. In the **DataSet Project** list, click **DataEntityTier**.
 
 5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, in dem ursprünglich das gesamte DataSet (DataAccessTier) enthalten war, enthält jetzt nur noch die TableAdapter. Das in der **DataSet-Projekt** Eigenschaft angegebene Projekt (DataEntityTier) enthält das typisierte DataSet: NorthwindDataSet. DataSet. Designer. vb (oder NorthwindDataSet.DataSet.Designer.cs).
+   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, in dem ursprünglich das gesamte DataSet (DataAccessTier) enthalten war, enthält jetzt nur noch die TableAdapter. The project designated in the **DataSet Project** property (DataEntityTier) contains the typed dataset: NorthwindDataSet.Dataset.Designer.vb (or NorthwindDataSet.Dataset.Designer.cs).
 
 > [!NOTE]
 > Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt**-Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
@@ -160,11 +160,11 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-create-a-new-wcf-service-application"></a>So erstellen Sie eine neue WCF-Dienstanwendung
 
-1. Fügen Sie im Menü Datei der NTierWalkthrough-Projekt **Mappe** ein neues Projekt hinzu.
+1. From the **File** menu, add a new project to the NTierWalkthrough solution.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Bereich **Projekttypen** auf **WCF**. Klicken Sie im Bereich **Vorlagen** auf **WCF-Dienst Bibliothek**.
+2. In the **New Project** dialog box, in the **Project types** pane, click **WCF**. In the **Templates** pane, click **WCF Service Library**.
 
-3. Nennen Sie das Projekt **DataService** , und klicken Sie auf **OK**.
+3. Name the project **DataService** and click **OK**.
 
      Das Projekt DataService wird erstellt und zur Projektmappe NTierWalkthrough hinzugefügt.
 
@@ -173,9 +173,9 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>So erstellen Sie eine Methode in der Datenzugriffsebene, die die Tabelle Customers zurückgibt
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf NorthwindDataSet. xsd, um das Dataset im DataSet-Designer zu öffnen.
+1. In **Solution Explorer**, double-click NorthwindDataset.xsd to open the dataset in the Dataset Designer.
 
-2. Klicken Sie mit der rechten Maustaste auf CustomersTableAdapter, und klicken Sie auf **Abfrage hinzufügen** , um den TableAdapter
+2. Right-click CustomersTableAdapter and click **Add Query** to edit the Tableadapter.
 
 3. Übernehmen Sie auf der Seite **Wählen Sie einen Befehlstyp aus** den Standardwert **SQL-Anweisungen verwenden**, und klicken Sie auf **Weiter**.
 
@@ -189,7 +189,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>So erstellen Sie eine Methode in der Datenzugriffsebene, die die Tabelle Orders zurückgibt
 
-1. Klicken Sie mit der rechten Maustaste auf OrdersTableAdapter und dann auf **Abfrage hinzufügen**.
+1. Right-click OrdersTableAdapter and click **Add Query**.
 
 2. Übernehmen Sie auf der Seite **Wählen Sie einen Befehlstyp aus** den Standardwert **SQL-Anweisungen verwenden**, und klicken Sie auf **Weiter**.
 
@@ -208,7 +208,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-add-references-to-the-data-service"></a>So fügen Sie Verweise zum Datendienst hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf Datendienst, und klicken Sie auf **Verweis hinzufügen**
+1. Right-click DataService in **Solution Explorer** and click **Add Reference**.
 
 2. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Projekte**.
 
@@ -224,7 +224,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>So erstellen Sie im Datendienst die GetCustomers-Funktion und die GetOrders-Funktion
 
-1. Doppelklicken Sie im Projekt **DataService** auf IService1. vb oder IService1.cs.
+1. In the **DataService** project, double-click IService1.vb or IService1.cs.
 
 2. Fügen Sie unter dem Kommentar **Hier Dienstvorgänge hinzufügen** folgenden Code hinzu:
 
@@ -287,9 +287,9 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-create-the-presentation-tier-project"></a>So erstellen Sie das Präsentationsebenenprojekt
 
-1. Fügen Sie im Menü Datei der NTierWalkthrough-Projekt **Mappe** ein neues Projekt hinzu.
+1. From the **File** menu, add a new project to the NTierWalkthrough solution.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Bereich **Projekttypen** auf **Fenster**. Klicken Sie im Bereich **Vorlagen** auf **Windows Forms-Anwendung**.
+2. In the **New Project** dialog box, in the **Project types** pane, click **Windows**. Klicken Sie im Bereich **Vorlagen** auf **Windows Forms-Anwendung**.
 
 3. Nennen Sie das Projekt **PresentationTier**, und klicken Sie auf **OK**.
 
@@ -307,19 +307,19 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-add-a-reference-to-the-presentation-tier"></a>So fügen Sie einen Verweis auf die Präsentationsebene hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf PresentationTier, und klicken Sie auf **Verweis hinzufügen**
+1. In **Solution Explorer**, right-click PresentationTier and click **Add Reference**.
 
-2. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Projekte** .
+2. In the **Add Reference** dialog box, click the **Projects** tab.
 
-3. Wählen Sie **DataEntityTier** aus, und klicken Sie auf **OK**.
+3. Select **DataEntityTier** and click **OK**.
 
 #### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>So fügen Sie einen Dienstverweis auf die Präsentationsebene hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf PresentationTier, und klicken Sie auf **Dienstverweis hinzufügen**.
+1. In **Solution Explorer**, right-click PresentationTier and click **Add Service Reference**.
 
 2. Klicken Sie im Dialogfeld **Dienstverweis hinzufügen** auf **Ermitteln**.
 
-3. Wählen Sie **Service1** , und klicken Sie auf **OK**.
+3. Select **Service1** and click **OK**.
 
     > [!NOTE]
     > Wenn der aktuelle Computer über mehrere Dienste verfügt, wählen Sie den zuvor in dieser exemplarischen Vorgehensweise erstellten Dienst aus (der Dienst, der die GetCustomers-Methode und die GetOrders-Methode enthält).
@@ -329,7 +329,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>So fügen Sie zwei datengebundene DataGridViews zum Formular hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**das PresentationTier-Projekt aus.
+1. In **Solution Explorer**, select the PresentationTier project.
 
 2. Erweitern Sie im Fenster **Datenquellen** das **NorthwindDataSet**, und suchen Sie den Knoten **Customers**.
 
@@ -365,7 +365,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>So erhöhen Sie den maxReceivedMessageSize-Wert
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei app. config im Projekt PresentationTier.
+1. In **Solution Explorer**, double-click the app.config file in the PresentationTier project.
 
 2. Suchen Sie das **maxReceivedMessage**-Größenattribut, und ändern Sie den Wert in `6553600`.
 
@@ -381,9 +381,9 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 ## <a name="next-steps"></a>Nächste Schritte
  Abhängig von den Anforderungen Ihrer Anwendung können nach dem Speichern der verknüpften Daten in der Windows-Anwendung weitere Schritte sinnvoll sein. Beispielsweise können Sie der Anwendung folgende Erweiterungen hinzufügen:
 
-- Hinzufügen der Validierung zum DataSet. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Hinzufügen von Validierungen zu einer N-Tier-Daten Anwendung](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).
+- Hinzufügen der Validierung zum DataSet. For information, see [Walkthrough: Adding Validation to an N-Tier Data Application](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).
 
 - Hinzufügen von zusätzlichen Methoden zum Dienst für das Aktualisieren der Daten in der Datenbank.
 
 ## <a name="see-also"></a>Siehe auch
- [Arbeiten mit Datasets in n-Tier-Anwendungen](../data-tools/work-with-datasets-in-n-tier-applications.md) [hierarchische Aktualisierung](../data-tools/hierarchical-update.md) des [Zugriffs auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ [Work with datasets in n-tier applications](../data-tools/work-with-datasets-in-n-tier-applications.md) [Hierarchical update](../data-tools/hierarchical-update.md) [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

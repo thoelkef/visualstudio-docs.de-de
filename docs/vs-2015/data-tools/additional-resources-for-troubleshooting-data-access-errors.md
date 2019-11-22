@@ -1,5 +1,5 @@
 ---
-title: Zusätzliche Ressourcen für die Problembehandlung von Datenzugriffs Fehlern | Microsoft-Dokumentation
+title: Additional resources for troubleshooting data access errors | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: b304b31447c0a43e37a333516a3a79c71070bd4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72673020"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299454"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Zusätzliche Ressourcen für die Problembehandlung beim Datenzugriff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). In der folgenden Tabelle sind die auf MSDN verfügbaren datenbezogenen Foren aufgeführt.
 
- [Windows Forms von Daten Steuerelementen und Daten](http://go.microsoft.com/fwlink/?LinkId=160179) Bindung Bietet ein Forum für Fragen und allgemeine Diskussionen zum Datenzugriff in Windows Forms.
+ [Windows Forms Data Controls and Databinding](https://go.microsoft.com/fwlink/?LinkId=160179) Provides a forum for questions about and general discussions of data access in Windows Forms.
 
- [ADO.NET DataSet-Forum](http://go.microsoft.com/fwlink/?LinkId=160180) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datasets.
+ [ADO.NET DataSet Forum](https://go.microsoft.com/fwlink/?LinkId=160180) Provides a forum for questions about and general discussions of Datasets.
 
- [ADO.NET Entity Framework und LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) Bietet ein Forum für Fragen und allgemeine Erörterung von Entity Framework Anwendungen und der LINQ to Entities Sprache.
+ [ADO.NET Entity Framework and LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Provides a forum for questions about and general discussions of Entity Framework applications and the LINQ to Entities language.
 
- [WCF Data Services Forum](http://go.microsoft.com/fwlink/?LinkId=160181) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datendiensten.
+ [WCF Data Services Forum](https://go.microsoft.com/fwlink/?LinkId=160181) Provides a forum for questions about and general discussions of data services.
 
- [SQL Server Datenzugriffs Forum](http://go.microsoft.com/fwlink/?LinkID=160184) Bietet ein Forum für Fragen und allgemeine Diskussionen zum Zugreifen auf Daten in Microsoft SQL Server.
+ [SQL Server Data Access Forum](https://go.microsoft.com/fwlink/?LinkID=160184) Provides a forum for questions about and general discussions of accessing data in Microsoft SQL Server.
 
- [LINQ to SQL-Forum](http://go.microsoft.com/fwlink/?LinkId=160183) Bietet ein Forum für Fragen und allgemeine Diskussionen zu LINQ to SQL.
+ [Linq to SQL Forum](https://go.microsoft.com/fwlink/?LinkId=160183) Provides a forum for questions about and general discussions of Linq to SQL.
 
- [ADO.NET-Datenanbieter Forum](http://go.microsoft.com/fwlink/?LinkId=160182) Bietet ein Forum für Fragen und allgemeine Diskussionen über die verschiedenen .NET Framework Datenanbieter.
+ [ADO.NET Data Providers Forum](https://go.microsoft.com/fwlink/?LinkId=160182) Provides a forum for questions about and general discussions of the different .NET Framework Data Providers.
 
- Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter [Beheben von Problemen beim Herstellen einer Verbindung mit dem SQL Server Datenbank-Engine](http://go.microsoft.com/fwlink/?LinkID=246151).
+ For information about how to troubleshoot connectivity to SQL Server, see [How to Troubleshoot Connecting to the SQL Server Database Engine](https://go.microsoft.com/fwlink/?LinkID=246151).
 
 ## <a name="see-also"></a>Siehe auch
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

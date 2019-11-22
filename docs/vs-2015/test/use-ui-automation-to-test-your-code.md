@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 070a9bedd5e01e6c39d55d784559d4458e35d72f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657289"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297991"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 
  Wie in der folgenden Abbildung dargestellt könnte es sich bei einer typischen Entwicklungsumgebung um eine Umgebung handeln, bei der Sie einfach zu Beginn die Anwendung (F5) erstellen und durch die UI-Steuerelemente klicken, um sicherzustellen, dass alles ordnungsgemäß funktioniert. Anschließend können Sie einen codierten Test ausführen, statt die Anwendung weiterhin manuell zu testen. Abhängig von den jeweiligen in der Anwendung getesteten Funktionen können Sie entweder Code für einen Funktions- oder einen Integrationstest schreiben und festlegen, ob Tests auf Benutzeroberflächenebene einbezogen werden. Wenn Sie einfach auf einen Teil der Geschäftslogik direkt zugreifen möchten, können Sie Code für einen Komponententest schreiben. Unter bestimmten Umständen, kann es jedoch nützlich sein, Tests der verschiedenen UI-Steuerelemente in die Anwendung einzubeziehen. Ein Test der programmierten UI kann das ursprüngliche Szenario (F5) automatisieren und überprüfen, ob Codeänderungen die Funktionalität der Anwendung beeinflussen.
 
- ![Testen während der Anwendungsentwicklung](../test/media/cuit-overview.png "CUIT_Overview")
+ ![Testing during application development](../test/media/cuit-overview.png "CUIT_Overview")
 
  Das Erstellen eines Tests der programmierten UI ist einfach. Sie führen den Test einfach manuell aus, während der CUIT-Test-Generator im Hintergrund ausgeführt wird. Sie können außerdem angeben, welche Werte in bestimmten Feldern angezeigt werden sollen. Der CUIT-Test-Generator zeichnet die Aktionen auf und generiert entsprechenden Code. Nach dem Erstellen des Tests können Sie diesen in einem spezialisierten Editor bearbeiten und die Sequenz der Aktionen ändern.
 
@@ -79,15 +79,15 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 
     Wenn Sie gerade ein Testprojekt für codierte UI erstellt haben, wird die erste CUIT-Datei automatisch hinzugefügt. Öffnen Sie zum Hinzufügen einer weiteren Testdatei das Kontextmenü im Testprojekt für programmierte UI, zeigen Sie auf **Hinzufügen**, und wählen Sie dann **Test der programmierten UI** aus.
 
-    ![Erstellen eines Tests der programmierten UI](../test/media/codedui-create.png "CodedUI_Create")
+    ![Create a coded UI test](../test/media/codedui-create.png "CodedUI_Create")
 
     Wählen Sie im Dialogfeld **Code für den Test der programmierten UI generieren** die Option **Aktionen aufzeichnen, UI-Zuordnung bearbeiten oder Assertionen hinzufügen** aus.
 
-    ![Daten Satz Aktionen auswählen](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")
+    ![Select record actions](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")
 
     Der Test-Generator der programmierten UI wird angezeigt und Visual Studio wird minimiert.
 
-    ![Coded UI-Test-Generator](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")
+    ![Coded UI Test Builder](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")
 
 3. **Zeichnen Sie eine Sequenz von Aktionen auf**.
 
@@ -110,7 +110,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 
     Schließen Sie das Assertionsfenster, und wählen Sie **Code generieren** aus.
 
-    ![Ziel Element des Coded UI-Tests](../test/media/codedui-1.png "CodedUI_1")
+    ![Coded UI test targeting element](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
    > Wechseln Sie zwischen dem Aufzeichnen von Aktionen und dem Überprüfen von Werten. Generieren Sie Code am Ende jeder Sequenz von Aktionen oder Überprüfungen. Wenn Sie möchten, können Sie auch zu einem späteren Zeitpunkt neue Aktionen und Überprüfungen einfügen.
@@ -157,28 +157,28 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
    Ein ausführlicheres Beispiel finden Sie unter [Walkthrough: Creating, Editing and Maintaining a Coded UI Test (Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI)](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In der exemplarischen Vorgehensweise erstellen Sie eine einfache WPF (Windows Presentation Foundation)-Anwendung, um das Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI zu veranschaulichen. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und des Steuerelementrefactorings nicht mehr funktionieren.
 
 ### <a name="starting"></a> Starten und Beenden der getesteten Anwendung
- *Ich möchte meine Anwendung, Ihren Browser oder die Datenbank nicht für jeden Test separat starten und Abbrechen. Gewusst wie dies vermeiden?*
+ *I don’t want to start and stop my application, browser, or database separately for each test. How do I avoid that?*
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Wenn Sie die Aktionen zum Starten der getesteten Anwendung nicht aufzeichnen möchten, müssen Sie die Anwendung starten, bevor Sie das **Aufzeichnungs** Symbol auswählen.
+- ![Prerequsite](../test/media/prereq.png "Prereq") If you do not want to record the actions to start your application under test, you must start your application before you choose the **Record** icon.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Am Ende eines Tests wird der Prozess beendet, in dem der Test ausgeführt wird. Wenn Sie die Anwendung im Test gestartet haben, wird die Anwendung normalerweise geschlossen.  Wenn die Anwendung beim Beenden des Tests nicht geschlossen werden soll, müssen Sie der Projektmappe eine RUNSETTINGS-Datei hinzufügen und die `KeepExecutorAliveAfterLegacyRun`-Option verwenden. Weitere Informationen hierzu finden Sie unter [Configure unit tests by using a .runsettings file (Konfigurieren von Komponententests mithilfe einer .runsettings-Datei)](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+- ![Prerequsite](../test/media/prereq.png "Prereq")At the end of a test, the process in which the test runs is terminated. Wenn Sie die Anwendung im Test gestartet haben, wird die Anwendung normalerweise geschlossen.  Wenn die Anwendung beim Beenden des Tests nicht geschlossen werden soll, müssen Sie der Projektmappe eine RUNSETTINGS-Datei hinzufügen und die `KeepExecutorAliveAfterLegacyRun`-Option verwenden. Weitere Informationen hierzu finden Sie unter [Configure unit tests by using a .runsettings file (Konfigurieren von Komponententests mithilfe einer .runsettings-Datei)](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Sie können eine Test Initialisierungs Methode hinzufügen, die durch ein [TestInitialize]-Attribut gekennzeichnet ist, mit dem am Anfang jeder Testmethode Code ausgeführt wird. Sie können die Anwendung beispielsweise aus der TestInitialize-Methode starten.
+- ![Prerequsite](../test/media/prereq.png "Prereq") You can add a test initialize method, identified by a [TestInitialize] attribute, which runs code at the start of each test method. Sie können die Anwendung beispielsweise aus der TestInitialize-Methode starten.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Sie können eine Test Bereinigungs Methode hinzufügen, die durch ein [TestCleanup]-Attribut gekennzeichnet ist, mit dem am Ende jeder Testmethode Code ausgeführt wird. Zum Beispiel kann die Methode zum Schließen der Anwendung mit der TestCleanup-Methode aufgerufen werden.
+- ![Prerequsite](../test/media/prereq.png "Prereq") You can add a test cleanup method, identified by a [TestCleanup] attribute, that runs code at the end of each test method. Zum Beispiel kann die Methode zum Schließen der Anwendung mit der TestCleanup-Methode aufgerufen werden.
 
 ### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Überprüfen der Eigenschaften von UI-Steuerelementen
  Mithilfe des **Generators für den Test der programmierten UI** können Sie der [UIMap](/previous-versions/dd580454(v=vs.140))-Klasse für den Test ein Steuerelement für die Benutzeroberfläche (UI) hinzufügen oder Code für eine Validierungsmethode generieren, in der eine Assertion für ein UI-Steuerelement verwendet wird.
 
  Wählen Sie zum Generieren von Assertionen für die UI-Steuerelemente im Generator für Tests der programmierten UI das Tool **Assertionen hinzufügen** aus, und ziehen es auf das Steuerelement der getesteten Anwendung, die Sie überprüfen möchten. Lassen Sie die Maustaste los, sobald das Feld das Steuerelement enthält. Der Code der Steuerelementklasse wird sofort in der Datei `UIMap.Designer.cs` erstellt.
 
- ![Ziel Element des Coded UI-Tests](../test/media/codedui-1.png "CodedUI_1")
+ ![Coded UI test targeting element](../test/media/codedui-1.png "CodedUI_1")
 
  Die Eigenschaften dieses Steuerelements werden jetzt im Dialogfeld **Assertionen hinzufügen** angezeigt.
 
  Außerdem können Sie zu einem bestimmten Steuerelement navigieren, indem Sie den Pfeil **(<<)** auswählen und so die Ansicht für die **UI-Steuerelementzuordnung** erweitern. Wenn Sie nach einem übergeordneten, gleichgeordneten oder untergeordneten Steuerelement suchen möchten, können Sie an einer die oft ausgegebene Befehlszeilen Stelle auf die Zuordnung klicken und mit den Pfeiltasten durch die Struktur blättern.
 
- ![Eigenschaften der Coded UI-Test](../test/media/codedui-2.png "CodedUI_2")
+ ![Coded UI test properties](../test/media/codedui-2.png "CodedUI_2")
 
 - *Wenn ich in meiner Anwendung ein Steuerelement auswähle, werden keine Eigenschaften angezeigt, oder das Element wird nicht in der UI-Steuerelementzuordnung angezeigt.*
 
@@ -186,7 +186,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 
   Öffnen Sie als nächstes das Kontextmenü der Eigenschaft für das UI-Steuerelement, das Sie überprüfen möchten, und zeigen Sie dann auf **Assertion hinzufügen**. Wählen Sie im Dialogfeld **Assertion hinzufügen** den **Vergleichsoperator** für die Assertion aus, z.B. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, und geben Sie unter **Vergleichswert** den Wert für die Assertion ein.
 
-  ![Tests der Coded UI-Tests](../test/media/codedui-3.png "CodedUI_3")
+  ![Coded UI test assertions](../test/media/codedui-3.png "CodedUI_3")
 
   Wenn Sie alle Assertionen für den Test hinzugefügt haben, wählen Sie **OK** aus.
 
@@ -207,7 +207,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 
 - Fügt der UI-Zuordnung (UIMap.uitest) eine Methode mit dem Namen `AssertForAddTwoNumbers` hinzu. Diese Datei wird im Editor für Tests der programmierten UI geöffnet, in dem Sie die Assertionen bearbeiten können.
 
-   ![Assert mithilfe des Editors für Tests der programmierten UI bearbeiten](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")
+   ![Edit assert using Coded UI Test Editor](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")
 
    Weitere Informationen finden Sie unter [Bearbeiten von Tests der programmierten UI mit dem Test-Editor für programmierte UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -220,26 +220,26 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
   }
   ```
 
-  *Das Steuerelement, das ich auswählen möchte, verliert den Fokus und wird nicht mehr angezeigt, wenn ich versuche, im Test-Generator der programmierten UI das Tool "Assertionen Gewusst wie wählen Sie das Steuer* Element aus? 
-   auswählen eines ausgeblendeten**Steuer Elements mit der Tastatur**
+  *The control I want to select loses focus and disappears when I try to select the Add Assertions tool from the Coded UI Test Builder. How do I select the control?* 
+  **Selecting a hidden control using the keyboard**
 
   Beim [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions) muss manchmal die Tastatur verwendet werden. Wenn Sie beispielsweise versuchen, einen Test der programmierten UI aufzuzeichnen, der ein Kontextmenü-Steuerelement verwendet, verliert die Liste der Menüelemente im Steuerelement den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, im Test-Generator der programmierten UI das Tool „Assertionen hinzufügen“ auszuwählen. Dieser Vorgang wird in der folgenden Abbildung veranschaulicht. Das Kontextmenü in Internet Explorer verliert den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, es mit dem Tool "Assertionen hinzufügen" auszuwählen.
 
-  ![CodedUItest&#95;selectcontrolkeyboard](../test/media/codeduitest-selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
+  ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest-selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
 
   Wenn Sie die Tastatur zum Auswählen eines Steuerelements verwenden möchten, zeigen Sie mit der Maus auf das Steuerelement. Halten Sie anschließend gleichzeitig die **STRG-TASTE** und die **I-TASTE** gedrückt. Lassen Sie die Tasten los. Das Steuerelement wird durch den Test-Generator für codierte UI aufgezeichnet.
 
 > [!WARNING]
 > Wenn Sie Microsoft Lync verwenden, müssen Sie Lync schließen, bevor Sie den Test-Generator der programmierten UI starten. Microsoft Lync beeinträchtigt die Funktion der Tastenkombination **STRG+I**.
 
- *Ich kann eine Mauszeiger Bewegung auf einem Steuerelement nicht aufzeichnen. Gibt es eine Möglichkeit, dieses Problem zu umgehen?*
+ *I can’t record a mouse hover on a control. Is there a way around this?*
  **Manuelles Aufzeichnen von Mauszeigerbewegungen**
 
  Unter Umständen müssen Sie Mauszeiger-Bewegungsereignisse wegen eines bestimmten Steuerelements, das in einem Test der programmierten UI verwendet wird, mithilfe der Tastatur manuell aufzeichnen. Wenn Sie beispielsweise eine Windows Form- oder eine WPF (Windows Presentation Foundation)-Anwendung testen, weist diese möglicherweise benutzerdefinierten Code auf. Möglicherweise ist auch ein spezielles Verhalten für die Mauszeigerbewegung über ein Steuerelement definiert, beispielsweise ein sich erweiternder Strukturknoten. Zum Testen von solchen Bedingungen müssen Sie den Test-Generator für codierte UI manuell benachrichtigen, wenn Sie auf das Steuerelement zeigen, indem Sie vordefinierte Tasten drücken.
 
  Zeigen Sie beim Ausführen des Tests der codierten UI auf das Steuerelement. Halten Sie anschließend auf der Tastatur die STRG-TASTE und gleichzeitig die UMSCHALTTASTE und die R-TASTE gedrückt. Lassen Sie die Tasten los. Vom Test-Generator für codierte UI wird ein Mauszeiger-Bewegungsereignis aufgezeichnet.
 
- ![Codedui&#95;-Hover](../test/media/codedui-hover.png "CodedUI_Hover")
+ ![CodedUI&#95;Hover](../test/media/codedui-hover.png "CodedUI_Hover")
 
  Nach dem Generieren der Testmethode wird der Datei "UIMap.Desinger.cs" ähnlicher Code wie im folgenden Beispiel hinzugefügt:
 
@@ -249,7 +249,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
- *Die Schlüsselzuweisung zum Erfassen von Mauszeiger-Bewegungs Ereignissen wird in meiner Umgebung an anderer Stelle verwendet. Kann ich die Standardschlüssel Zuweisung ändern?*
+ *The key assignment for capturing mouse hover events is being used elsewhere in my environment. Can I change the default key assignment?*
  **Konfigurieren der Tastenbelegung für Mauszeigerbewegungen**
 
  Falls notwendig kann die Standardtastenbelegung für Mauszeiger-Bewegungsereignisse in Tests der programmierten UI so konfiguriert werden, dass anstelle von STRG+UMSCHALT+R andere Tasten verwendet werden.
@@ -271,7 +271,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
- *Beim Aufzeichnen von Mauszeiger Bewegungen auf einer Website treten Probleme auf. Gibt es auch eine Lösung für dieses Problem?*
+ *I’m having issues with recording mouse hovers on a website. Is there a fix for this, too?*
  **Festlegen impliziter Mauszeigerbewegungen für den Webbrowser**
 
  Auf vielen Websites wird ein Steuerelement erweitert, wenn Sie auf es zeigen, und es werden weitere Details angezeigt. Im Allgemeinen entspricht dieses Verhalten Menüs in Desktopanwendungen. Da dies ein allgemeines Muster ist, werden in Tests der codierten UI implizite Bewegungen des Mauszeigers für Webbrowser aktiviert. Wenn Sie beispielsweise Mauszeigerbewegungen in Internet Explorer aufzeichnen, wird ein Ereignis ausgelöst. Diese Ereignisse können zur Aufzeichnung redundanter Mauszeigerbewegungen führen. Daher wird für das Aufzeichnen impliziter Mauszeigerbewegungen `ContinueOnError` in der UI-Testkonfigurationsdatei auf `true` festgelegt. Auf diese Weise kann die Wiedergabe fortgesetzt werden, wenn bei einem Mauszeiger-Bewegungsereignis ein Fehler auftritt.
@@ -465,22 +465,22 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Zusätzliche Anleitungen finden Sie unter [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5: Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196). Weitere Informationen zum manuellen Tests finden Sie unter [&#91;retired&#93; Creating Manual Test Cases Using Microsoft Test Manager ([veraltet] Erstellen von manuellen Testfällen mit Microsoft Test Manager)](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Weitere Informationen zu automatisierten Systemtests finden Sie unter [Creating Automated Tests Using Microsoft Test Manager (Erstellen von automatischen Tests mit Microsoft Test Manager)](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Zusätzliche Anleitungen finden Sie unter [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5: Automatisieren von Systemtests)](https://go.microsoft.com/fwlink/?LinkID=255196). Weitere Informationen zum manuellen Tests finden Sie unter [&#91;retired&#93; Creating Manual Test Cases Using Microsoft Test Manager ([veraltet] Erstellen von manuellen Testfällen mit Microsoft Test Manager)](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Weitere Informationen zu automatisierten Systemtests finden Sie unter [Creating Automated Tests Using Microsoft Test Manager (Erstellen von automatischen Tests mit Microsoft Test Manager)](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
 ### <a name="guidance"></a>Empfehlungen
-- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>FAQ
-- [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+- [Tests der codierten UI – FAQ 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
-- [Tests der codierten UI – FAQ 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+- [Tests der codierten UI – FAQ 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
-- [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](http://go.microsoft.com/fwlink/?LinkID=224497)
+- [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Siehe auch
 

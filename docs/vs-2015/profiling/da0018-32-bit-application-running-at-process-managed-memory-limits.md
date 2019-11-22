@@ -13,21 +13,21 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194946"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301104"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt.
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Regel-Id | DA0018 |  
-| Kategorie | Verwendung der Profilerstellungstools |  
-| Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Die verwalteten speicherbelegungen erreichen beinahe das Standardlimit für einen 32-Bit-Prozess. Die Anwendung ist möglicherweise speichergebunden.|  
-| Regeltyp | Warnung |  
+Rule Id|DA0018|  
+|Category|Profiling Tools Usage|  
+|Profiling method|Sampling|  
+|Message|Managed memory allocations approaching the default limit for a 32-bit process. Die Anwendung ist möglicherweise speichergebunden.|  
+|Rule type|Warning|  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   
@@ -54,7 +54,7 @@ Regel-Id | DA0018 |
   
 - Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.  
   
-   -oder-  
+   - oder -  
   
 - Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.  
   
@@ -64,7 +64,7 @@ Regel-Id | DA0018 |
   
   Ermitteln Sie mithilfe der [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md) den Ausführungspfad, der zu diesen Speicherbelegungen geführt hat.  
   
-  Weitere Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie im technischen Artikel [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=177946) zu .NET Framework auf der MSDN-Website.  
+  Weitere Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie im technischen Artikel [Garbage Collector-Grundlagen und Tipps zur Leistung](https://go.microsoft.com/fwlink/?LinkId=177946) zu .NET Framework auf der MSDN-Website.  
   
   Wenn Sie den architektonischen Einschränkungen für virtuellen Arbeitsspeicher hinsichtlich der Größe des privaten Teils eines Prozessadressbereichs entgehen möchten, führen Sie diesen 32-Bit-Prozess auf einem 64-Bit-Computer aus.  Einem 32-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 4 GB an privatem, virtuellem Arbeitsspeicher zur Verfügung.  
   

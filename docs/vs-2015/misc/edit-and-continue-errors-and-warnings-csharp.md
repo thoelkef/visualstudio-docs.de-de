@@ -1,5 +1,5 @@
 ---
-title: 'Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (c#) | Microsoft-Dokumentation'
+title: Edit and Continue Errors and Warnings (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822955"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299274"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#)
 Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Funktion "Bearbeiten und Fortsetzen" nicht zulässig ist.  
@@ -75,13 +75,13 @@ Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Fu
   
  Bearbeitungen von deklarativem Code, die die öffentliche Struktur einer Klasse beeinflussen, sind generell unzulässig. Einige der Bearbeitungen, die Sie ggf. an einer Methode, an Eigenschaftentext oder an privaten Deklarationen in einer Klasse vornehmen, sind ebenfalls unzulässig. Wenn möglich wird Code, der nicht bearbeitet werden kann von "Bearbeiten und Fortsetzen" hellgrau markiert, und eine Fehlermeldung wird angezeigt.  
   
- Weitere Informationen zu unterstützten Bearbeitungen bei „Bearbeiten und Fortfahren“ für [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]finden Sie unter [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Wenn Sie weitere Informationen zu einem bestimmten Fehler oder einer Warnung benötigen, können Sie im MSDN [Visual C#-IDE-Forum](http://go.microsoft.com/fwlink/?LinkId=214693)suchen oder posten.  
+ Weitere Informationen zu unterstützten Bearbeitungen bei „Bearbeiten und Fortfahren“ für [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]finden Sie unter [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Wenn Sie weitere Informationen zu einem bestimmten Fehler oder einer Warnung benötigen, können Sie im MSDN [Visual C#-IDE-Forum](https://go.microsoft.com/fwlink/?LinkId=214693)suchen oder posten.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
 1. Wählen Sie im Menü **Debuggen** den Befehl **Rückgängig** aus, um die Änderung rückgängig zu machen.  
   
-     - oder -   
+     - oder -  
   
 2. Halten Sie die Debugsitzung an, nehmen Sie die Änderungen vor, und starten Sie eine neue Debugsitzung.  
   

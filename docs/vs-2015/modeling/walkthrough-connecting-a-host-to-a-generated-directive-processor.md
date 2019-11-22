@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor | Microsoft-Dokumentation'
+title: 'Walkthrough: Connecting a Host to a Generated Directive Processor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,102 +12,102 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41023f49f1897f3e3d26d7fc57807ea98fa35f24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659300"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301271"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einfacher benutzerdefinierter Host wird in Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Text Vorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)veranschaulicht. Sie können diesen Host erweitern, um Funktionen hinzuzufügen, z. b. das Erstellen mehrerer Ausgabedateien.
+You can write your own host that processes text templates. A basic custom host is demonstrated in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). You could extend that host to add functions such as generating multiple output files.
 
- In dieser exemplarischen Vorgehensweise erweitern Sie den benutzerdefinierten Host, sodass er Textvorlagen unterstützt, die direktivenprozessoren aufzurufen. Wenn Sie eine domänenspezifische Sprache definieren, generiert Sie einen *Direktivenprozessor* für das Domänen Modell. Der Direktivenprozessor erleichtert Benutzern das Schreiben von Vorlagen, die auf das Modell zugreifen, wodurch das Schreiben von Assemblys und Import Direktiven in den Vorlagen verringert wird.
+ In this walkthrough, you expand your custom host so that it supports text templates that call directive processors. When you define a domain-specific language, it generates a *directive processor* for the domain model. The directive processor makes it easier for users to write templates that access the model, reducing the need to write assembly and import directives in the templates.
 
 > [!WARNING]
-> Diese exemplarische Vorgehensweise baut auf Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Text Vorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)auf. Führen Sie diese exemplarische Vorgehensweise zuerst aus.
+> This walkthrough builds on [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). Perform that walkthrough first.
 
  Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
 
-- Mithilfe [!INCLUDE[dsl](../includes/dsl-md.md)] können Sie einen Direktivenprozessor generieren, der auf einem Domänen Modell basiert.
+- Using [!INCLUDE[dsl](../includes/dsl-md.md)] to generate a directive processor that is based on a domain model.
 
-- Verbinden eines benutzerdefinierten Textvorlagen Hosts mit dem generierten Direktivenprozessor.
+- Connecting a custom text template host to the generated directive processor.
 
-- Testen des benutzerdefinierten Hosts mit dem generierten Direktivenprozessor.
+- Testing the custom host with the generated directive processor.
 
 ## <a name="prerequisites"></a>Erforderliche Voraussetzungen
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
- Außerdem muss die Transformation für benutzerdefinierte Textvorlagen in Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Textvorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)erstellt werden.
+ In addition, you must have the custom text template transformation created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Verwenden von DSL-Tools zum Generieren eines direktivenprozessors
- In dieser exemplarischen Vorgehensweise verwenden Sie den Assistenten für domänenspezifische sprach-Designer, um eine domänenspezifische Sprache für die Lösung dslminimaltest zu erstellen.
+## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Using Domain-Specific Language Tools to Generate a Directive Processor
+ In this walkthrough, you use the Domain-Specific Language Designer Wizard to create a domain-specific language for the solution DSLMinimalTest.
 
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>So verwenden Sie DSL-Tools, um einen Direktivenprozessor zu generieren, der auf einem Domänen Modell basiert
+#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>To use Domain-Specific Language Tools to generate a directive processor that is based on a domain model
 
-1. Erstellen Sie eine domänenspezifische Sprachlösung mit folgenden Merkmalen:
+1. Create a domain-specific language solution that has the following characteristics:
 
-   - Name: dslminimaltest
+   - Name: DSLMinimalTest
 
-   - Lösungs Vorlage: minimale Sprache
+   - Solution template: Minimal Language
 
-   - Dateierweiterung: min
+   - File extension: min
 
-   - Firmenname: fabrikam
+   - Company name: Fabrikam
 
-     Weitere Informationen zum Erstellen einer domänenspezifischen Sprachlösung finden Sie unter Gewusst [wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
+     For more information about creating a domain-specific language solution, see [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
    > [!IMPORTANT]
-   > In diesem Schritt wird der Direktivenprozessor generiert und der Schlüssel für ihn in der Registrierung hinzugefügt.
+   > This step generates the directive processor and adds the key for it in the registry.
 
 3. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 
-    Eine zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet.
+    A second instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] opens.
 
-4. Doppelklicken Sie im experimentellen Build in **Projektmappen-Explorer**auf die Datei **Sample. min**.
+4. In the experimental build, in **Solution Explorer**, double-click the file **sample.min**.
 
-    Die Datei wird im Designer geöffnet. Beachten Sie, dass das Modell zwei Elemente, ExampleElement1 und ExampleElement2, und einen Link zwischen Ihnen enthält.
+    The file opens in the designer. Notice that the model has two elements, ExampleElement1 and ExampleElement2, and a link between them.
 
-5. Schließen Sie die zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. Close the second instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-6. Speichern Sie die Projekt Mappe, und schließen Sie dann den domänenspezifischen sprach Designer.
+6. Save the solution, and then close the Domain-Specific Language Designer.
 
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Verbinden eines benutzerdefinierten Text Vorlagen Hosts mit einem Direktivenprozessor
- Nachdem Sie den Direktivenprozessor generiert haben, verbinden Sie den Direktivenprozessor und den benutzerdefinierten Textvorlagen Host, den Sie in Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Textvorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)erstellt haben.
+## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Connecting a Custom Text Template Host to a Directive Processor
+ After you generate the directive processor, you connect the directive processor and the custom text template host that you created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>So verbinden Sie einen benutzerdefinierten Textvorlagen Host mit dem generierten Direktivenprozessor
+#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>To connect a custom text template host to the generated directive processor
 
-1. Öffnen Sie die Projekt Mappe "customhost".
+1. Open the CustomHost solution.
 
 2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
 
-     Das Dialogfeld **Verweis hinzufügen** wird geöffnet, und die Registerkarte **.net** wird angezeigt.
+     The **Add Reference** dialog box opens with the **.NET** tab displayed.
 
-3. Fügen Sie die folgenden Verweise hinzu:
+3. Add the following references:
 
-    - Microsoft. VisualStudio. Modeling. SDK. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. SDK. Diagramms. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. vshost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
-4. Fügen Sie am Anfang von Program.cs oder Module1. vb die folgende Codezeile hinzu:
+4. At the top of Program.cs or Module1.vb, add the following line of code:
 
     ```csharp
     using Microsoft.Win32;
@@ -117,10 +117,10 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
     Imports Microsoft.Win32
     ```
 
-5. Suchen Sie den Code für die Eigenschaft `StandardAssemblyReferences`, und ersetzen Sie ihn durch den folgenden Code:
+5. Locate the code for the property `StandardAssemblyReferences`, and replace it with the following code:
 
     > [!NOTE]
-    > In diesem Schritt fügen Sie Verweise auf die Assemblys hinzu, die vom generierten Direktivenprozessor benötigt werden, der vom Host unterstützt wird.
+    > In this step, you add references to the assemblies that are required by the generated directive processor that your host will support.
 
     ```csharp
     //the host can provide standard assembly references
@@ -153,10 +153,10 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
     }
     ```
 
-6. Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor`, und ersetzen Sie ihn durch den folgenden Code:
+6. Locate the code for the function `ResolveDirectiveProcessor`, and replace it with the following code:
 
     > [!IMPORTANT]
-    > Dieser Code enthält hart codierte Verweise auf den Namen des generierten direktivenprozessors, mit dem Sie eine Verbindung herstellen möchten. Dies kann auf einfache Weise allgemeineres sein. in diesem Fall sucht es nach allen in der Registrierung aufgelisteten direktivenprozessoren und versucht, eine Entsprechung zu finden. In diesem Fall würde der Host mit einem beliebigen generierten Direktivenprozessor funktionieren.
+    > This code contains hard-coded references to the name of the generated directive processor to which you want to connect. You could easily make this more general, in which case it looks for all directive processors listed in the registry and tries to find a match. In that case, the host would work with any generated directive processor.
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -231,17 +231,17 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 8. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testen des benutzerdefinierten Hosts mit dem Direktivenprozessor
- Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine Textvorlage schreiben, die den generierten Direktivenprozessor aufruft. Führen Sie dann den benutzerdefinierten Host aus, übergeben Sie den Namen der Textvorlage, und überprüfen Sie, ob die Direktive ordnungsgemäß verarbeitet wird.
+## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testing the Custom Host with the Directive Processor
+ To test the custom text template host, first you must write a text template that calls the generated directive processor. Then you run the custom host, pass to it the name of the text template, and verify that the directive is processed correctly.
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>So erstellen Sie eine Textvorlage zum Testen des benutzerdefinierten Hosts
 
-1. Erstellen Sie eine Textdatei, und benennen Sie Sie `TestTemplateWithDP.tt`. Sie können einen beliebigen Text-Editor, z. b. Notepad, verwenden, um die Datei zu erstellen.
+1. Create a text file, and name it `TestTemplateWithDP.tt`. You can use any text editor, such as Notepad, to create the file.
 
 2. Fügen Sie folgenden Text in der Textdatei ein:
 
     > [!NOTE]
-    > Die Programmiersprache der Textvorlage muss nicht mit der Programmiersprache des benutzerdefinierten Hosts identisch sein.
+    > The programming language of the text template does not need to match that of the custom host.
 
     ```csharp
     Text Template Host Test
@@ -310,7 +310,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
     #>
     ```
 
-3. Ersetzen Sie im Code \<YOUR Pfad > durch den Pfad der Datei Sample. Min aus der Entwurfs spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
+3. In the code, replace \<YOUR PATH> with the path of the Sample.min file from the design-specific language you created in the first procedure.
 
 4. Speichern und schließen Sie die Datei.
 
@@ -325,7 +325,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Anstatt die Adresse einzugeben, können Sie in **Windows-Explorer**zur Datei "customhost. exe" navigieren und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
+    > Instead of typing the address, you can browse to the file CustomHost.exe in **Windows Explorer**, and then drag the file into the Command Prompt window.
 
 3. Geben Sie ein Leerzeichen ein.
 
@@ -336,17 +336,17 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > Anstatt die Adresse einzugeben, können Sie die Datei "testtemplatewithdp. txt" im **Windows-Explorer**suchen und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
+    > Instead of typing the address, you can browse to the file TestTemplateWithDP.txt in **Windows Explorer**, and then drag the file into the Command Prompt window.
 
-     Die Anwendung für benutzerdefinierte Hosts wird ausgeführt, und der Textvorlagen-Transformationsprozess wird gestartet.
+     The custom host application runs and starts the text template transformation process.
 
-5. Navigieren Sie in **Windows-Explorer**zu dem Ordner, der die Datei "testtemplatewithdp. txt" enthält.
+5. In **Windows Explorer**, browse to the folder that contains the file TestTemplateWithDP.txt.
 
-     Der Ordner enthält auch die Datei "TestTemplateWithDP1. txt".
+     The folder also contains the file TestTemplateWithDP1.txt.
 
 6. Öffnen Sie diese Datei, um die Ergebnisse der Textvorlagentransformation anzuzeigen.
 
-     Die Ergebnisse der generierten Textausgabe werden angezeigt und sollten wie folgt aussehen:
+     The results of the generated text output appears and should look like this:
 
     ```
     Text Template Host Test

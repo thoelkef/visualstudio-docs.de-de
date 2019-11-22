@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674344"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295693"
 ---
 # <a name="memory-usage-without-debugging"></a>Speicherauslastung ohne Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
 3. Wählen Sie **Speicherauslastung** aus, und klicken Sie dann auf die Schaltfläche **Start** ganz unten auf der Seite.  
   
-     ![Starten einer Diagnosesitzung zur Speicherauslastung](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
+     ![Diagnosesitzung zur Speicherauslastung starten](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
 ## <a name="BKMK_Monitor_memory_use"></a> Speicherverwendung überwachen  
  Sie können das Tool **Speicherauslastung** verwenden, um detaillierte Berichte zu erstellen, mit denen Sie Probleme finden und beheben, aber Sie können dieses Tool auch verwenden, um die Echtzeit-Speicherauswirkungen eines Szenarios zu untersuchen, das Sie gerade entwickeln.  
   
  Wenn Sie eine Diagnosesitzung starten, startet Ihre App, und das Fenster **Diagnosetools** zeigt eine Zeitachse der Speicherauslastung Ihrer App an.  
   
- ![Übersichtsseite „Speicherauslastung“](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
+ ![Übersichtsseite Speicherauslastung](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
  Die Zeitachse der zeigt Schwankungen im Speicher Ihrer App an, während diese ausgeführt wird. Spitzen in der Zeitachse weisen normalerweise darauf hin, dass Code in der App Daten erfasst oder erstellt und diese dann verwirft, wenn die Verarbeitung abgeschlossen ist. Hohe Spitzen weisen auf Bereiche hin, die Sie ggf. optimieren können. Problematischer ist ein Anstieg in der Auslastung von Speicher, der nicht zurückgegeben wird, denn dies kann auf ineffiziente Speicherverwendung oder sogar einen Speicherverlust hindeuten.  
   
 ### <a name="BKMK_Close_a_monitoring_session"></a> Schließen der Überwachungssitzung  
- ![Auflistung anhalten](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
+ ![Stop collection](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
   
  Um eine Überwachungssitzung zu schließen, ohne einen Bericht zu erstellen, schließen Sie das Diagnosefenster einfach. Um einen Bericht zu generieren, wenn Sie Momentaufnahmen erstellt haben, wählen Sie **Beenden** aus.  
   
@@ -66,7 +66,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ## <a name="BKMK_Memory_Usage_overview_page"></a> Übersichtsseite Speicherauslastung  
  Wenn Sie die Datenerfassung beenden, hält das Speicherauslastungstool die App an und zeigt die Übersicht an.  
   
- ![Übersichtsseite „Speicherauslastung“](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
+ ![Übersichtsseite Speicherauslastung](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
 ### <a name="BKMK_Memory_Usage_snapshot_views"></a> Ansichten der Momentaufnahmen zur Speicherauslastung  
  Die Ansichten der Momentaufnahmen dienen dazu, detaillierte Berichte in neuen Visual Studio-Fenstern zu öffnen. Es gibt zwei zwei Arten von Ansichten:  
@@ -87,7 +87,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Der Text des Links zeigt den Unterschied zwischen der Gesamtzahl an Speicherobjekten in dieser Momentaufnahme und der Zahl der Objekte in der vorhergehenden Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtzahl der Typinstanzen geordnet ist.|  
   
 ## <a name="BKMK_Snapshot_reports"></a> Momentaufnahmenberichte  
- ![Speicherauslastung Snapshot-Bericht](../profiling/media/memuse-snapshotreport-all.png "MEMUSE_SnapshotReport_All")  
+ ![Momentaufnahmenbericht zur Speicherauslastung](../profiling/media/memuse-snapshotreport-all.png "MEMUSE_SnapshotReport_All")  
   
 ### <a name="BKMK_Snapshot_report_trees"></a> Strukturen der Momentaufnahmenberichte  
   
@@ -110,7 +110,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ### <a name="BKMK_Report_tree_filters_"></a> Berichtsstrukturenfilter  
  Die meisten Apps enthalten überraschend viele Typen, von denen die meisten für den App-Entwickler nicht von Interesse sind. Das **Speicherauslastungstool** definiert zwei Filter, mit denen Sie die meisten dieser Typen in den Strukturen des **verwalteten Heaps** und der **Pfade zum Stamm** verbergen können. Sie können eine Struktur auch nach dem Typennamen filtern.  
   
- ![Sortier-und Filteroptionen](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
+ ![Sortier- und Filteroptionen](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
 #### <a name="BKMK_Filter"></a> Filter  
  Geben Sie in das Feld **Filter** eine Zeichenfolge ein, um die Strukturanzeigen auf Typen zu beschränken, die diese Zeichenfolge enthalten. Der Filter berücksichtigt die Groß-/Kleinschreibung nicht und erkennt die angegebene Zeichenfolge in jedem Teil des Typennamens.  
@@ -124,16 +124,16 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ## <a name="BKMK_Snapshot_details_reports"></a> Berichte über Momentaufnahmendetails  
  Berichte über Momentaufnahmendetails werden verwendet, um sich auf eine Momentaufnahme aus einer Diagnosesitzung zu konzentrieren. Um einen Detailbericht zu öffnen, wählen Sie einen der Links aus der Ansicht der Momentaufnahme, wie im Bild unten gezeigt. Beide Links öffnen denselben Bericht; der Unterschied besteht lediglich in der Sortierreihenfolge der Struktur des **Managed Heap**. In beiden Fällen können Sie die Sortierreihenfolge ändern, nachdem der Bericht geöffnet wurde.  
   
- ![Links zum Snapshot-Bericht in einer Snapshot-Ansicht](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![Links to snapshot report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
-- Der Link **MB** ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)**.  
+- Der Link **MB** ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)** .  
   
 - Der Link **Objekte** ordnet den Bericht nach der Spalte **Anzahl**.  
   
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Struktur des verwalteten Heaps (Momentaufnahmendetails)  
  Die Struktur des **verwalteten Heaps** führt die Objekttypen auf, die im Speicher gehalten werden. Sie können den Typennamen erweitern, um die zehn größten Instanzen des Typs nach Größe geordnet anzuzeigen. Wenn Sie einen Typ oder eine Instanz auswählen, werden die Strukturen **Pfade zum Stamm** und **Referenzierte Objekte** für das gewählte Element angezeigt.  
   
- ![Verwaltete Heap-Struktur](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
+ ![Struktur „Verwalteter Heap“](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
 |||  
 |-|-|  
@@ -145,14 +145,14 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Struktur der Pfade zum Stamm (Momentaufnahmendetails)  
  Die **Paths to Root tree** (Struktur der Pfade zum Stamm) zeigt die Kette der Objekte, die den Typ oder die Instanz referenzieren. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.  
   
- ![Pfade zur Stammstruktur für Typen](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
+ ![Paths to Root tree for Types](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
  Wenn Sie einen Typ in der Struktur der **Pfade zum Stamm** anzeigen, wird die Zahl der Objekte der Typen mit Verweisen auf diesen Typ in der Spalte **Verweiszähler** angezeigt. Wenn Sie eine Instanz analysieren, wird die Spalte nicht angezeigt.  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Struktur der referenzierten Objekte (Momentaufnahmendetails)  
  Die Struktur der **referenzierten Objekte** zeigt die Objekte, die der gewählte Typ oder die gewählte Instanz referenziert.  
   
- ![Referenzierte Objektstruktur für Instanzen](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -163,16 +163,16 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> Bericht über Momentaufnahmenunterschiede  
  Ein Bericht über Momentaufnahmenunterschiede zeigt die Unterschiede zwischen der primären Momentaufnahme und der direkt davor erstellten Momentaufnahme. Um einen solchen Bericht zu öffnen, wählen Sie einen der Links in der Momentaufnahmenansicht, wie im Bild unten gezeigt. Beide Links öffnen denselben Bericht; der Unterschied besteht lediglich in der Sortierreihenfolge der Struktur des **Managed Heap**. Sie können die Sortierreihenfolge ändern, nachdem der Bericht geöffnet wurde.  
   
- ![Links zum Unterschiedebericht in einer Snapshot-Ansicht](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![Links to difference report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
-- Der Link **MB** ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)**.  
+- Der Link **MB** ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)** .  
   
 - Der Link **Objekte** ordnet den Bericht nach der Spalte **Anzahl**.  
   
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Struktur des verwalteten Heaps (Momentaufnahmenunterschiede)  
  Die Struktur des **verwalteten Heaps** führt die Objekttypen auf, die im Speicher gehalten werden. Sie können den Typennamen erweitern, um die zehn größten Instanzen des Typs nach Größe geordnet anzuzeigen. Wenn Sie einen Typ oder eine Instanz auswählen, werden die Strukturen **Pfade zum Stamm** und **Referenzierte Objekte** für das gewählte Element angezeigt.  
   
- ![Verwaltete Heap-Struktur für einen Typ im Unterschiedebericht](../profiling/media/memuse-snapshotdiff-type-heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
+ ![Struktur „Verwalteter Heap“ für einen Typ im Unterschiedebericht](../profiling/media/memuse-snapshotdiff-type-heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
   
  Im Bild sind die Spalten **Anzahl**, **Größe (Bytes)** und **Inklusive Größe (Bytes)** reduziert.  
   
@@ -189,12 +189,12 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Struktur der Pfade zum Stamm (Momentaufnahmenunterschiede)  
  Die **Paths to Root tree** (Struktur der Pfade zum Stamm) zeigt die Kette der Objekte, die den Typ oder die Instanz referenzieren. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.  
   
- ![Pfade zur Stammstruktur für Instanzen in anderer Ansicht](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+ ![Paths To Root tree for instances in a diff view](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Struktur der referenzierten Objekte (Momentaufnahmenunterschiede)  
  Die Struktur der **referenzierten Objekte** zeigt die Objekte, die der primäre Typ oder die Instanz referenziert.  
   
- ![Referenzierte Objektstruktur für Instanzen](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -207,4 +207,4 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
  [Analysieren der App-Leistung](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Ausführen von Leistungs- und Diagnosetools](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Bewährte Methoden zur Leistungssteigerung für Windows Store-Apps mit C++, C# und Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](https://go.microsoft.com/fwlink/p/?LinkId=394706)

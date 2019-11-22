@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung | Microsoft-Dokumentation'
+title: 'How to: Create a Domain-Specific Language Solution | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -15,119 +15,119 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671677"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301413"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eine domänenspezifische Sprache (DSL) wird mithilfe einer spezialisierten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Lösung erstellt.
+A domain-specific language (DSL) is created by using a specialized [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution.
 
 ## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Bevor Sie dieses Verfahren starten können, müssen Sie zunächst die folgenden Komponenten installieren:
+ Before you can start this procedure, you must first install these components:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
-## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer domänenspezifischen Sprachlösung
+## <a name="creating-a-domain-specific-language-solution"></a>Creating a Domain-Specific Language Solution
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>So erstellen Sie eine domänenspezifische Sprachlösung
+#### <a name="to-create-a-domain-specific-language-solution"></a>To create a domain-specific language solution
 
-1. Starten Sie den DSL-Assistenten.
+1. Start the DSL Wizard.
 
    1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
    2. Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-   3. Erweitern Sie unter **Projekttypen**den Knoten **andere Projekttypen** , und klicken Sie auf **Erweiterbarkeit**.
+   3. Under **Project types**, expand the **Other Project Types** node, and click **Extensibility**.
 
-   4. Klicken Sie auf **Domänen spezifischer sprach-Designer**.
+   4. Click **Domain-Specific Language Designer**.
 
-   5. Geben Sie im Feld **Name** einen Namen für die Projekt Mappe ein. Klicken Sie auf **OK**.
+   5. In the **Name** box, type a name for the solution. Klicken Sie auf **OK**.
 
-       Der **Assistent für das domänenspezifische sprach-Designer** wird angezeigt.
+       The **Domain-Specific Language Designer Wizard** appears.
 
       > [!NOTE]
-      > Vorzugsweise sollte der Name, den Sie eingeben, ein gültiger C# visueller Bezeichner sein, da er zum Generieren von Code verwendet werden kann.
+      > Preferably, the name that you type should be a valid Visual C# identifier, because it might be used to generate code.
 
-      ![DSL-Dialogfeld erstellen](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+      ![Create DSL dialog](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-2. Wählen Sie eine DSL-Vorlage aus.
+2. Choose a DSL template.
 
-    Wählen Sie auf der Seite **Optionen für domänenspezifische Sprache auswählen** eine der Lösungs Vorlagen aus, z. b. **minimale Sprache**. Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt.
+    On the **Select Domain-Specific Language Options** page, select one of the solution templates such as **Minimal Language**. Choose a template that is similar to the DSL that you want to create.
 
-    Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Lösungs Vorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    For more information about solution templates, see [Choosing a Domain-Specific Language Solution Template](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3. Geben Sie auf der Seite **Dateierweiterung** eine Dateierweiterung ein. Sie muss auf Ihrem Computer und auf allen Computern, auf denen Sie die DSL installieren möchten, eindeutig sein. Die Meldung " **keine Anwendungen oder Visual Studio-Editoren" sollte diese Erweiterung verwenden**.
+3. Enter a filename extension on the **File Extension** page. It should be unique in your computer, and in any computers on which you want to install the DSL. You should see the message **No applications or Visual Studio editors use this extension**.
 
-   - Wenn Sie die Dateinamenerweiterung in früheren experimentellen DSLs verwendet haben, die noch nicht vollständig installiert wurden, können Sie Sie mit dem Tool " **experimentelle Instanz zurücksetzen** " löschen, das sich im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK-Menü befindet.
+   - If you have used the file name extension in previous experimental DSLs that have not been fully installed, you can clear them out by using the **Reset the Experimental Instance** tool, which can be found in the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK menu.
 
-   - Wenn eine andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung, die diese Dateierweiterung verwendet, vollständig auf dem Computer installiert wurde, sollten Sie diese deinstallieren. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**.
+   - If another [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension that uses this file extension has been fully installed on your computer, consider uninstalling it. On the **Tools** menu, click **Extension Manager**.
 
-4. Überprüfen Sie die Felder auf den verbleibenden Seiten des Assistenten, und passen Sie Sie ggf. an. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig**stellen. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistenten Seiten](#settings).
+4. Inspect, and if necessary adjust, the fields in the remaining pages of the wizard. When you are satisfied with the settings, click **Finish**. For more information about the settings, see [DSL Designer Wizard Pages](#settings).
 
-    Der Assistent erstellt eine Projekt Mappe mit zwei Projekten namens **DSL** und **dslpackage**.
+    The wizard creates a solution that has two projects, which are named **Dsl** and **DslPackage**.
 
    > [!NOTE]
-   > Wenn eine Meldung angezeigt wird, dass keine Textvorlagen aus nicht vertrauenswürdigen Quellen ausgeführt werden sollen, klicken Sie auf **OK**. Diese Meldung kann so festgelegt werden, dass Sie nicht erneut angezeigt wird.
+   > If you see a message that alerts you not to run text templates from untrusted sources, click **OK**. You can set this message not to appear again.
 
-## <a name="settings"></a>Die Seiten des DSL-Designer-Assistenten
- Sie können einige der Felder unverändert lassen, um die Standardwerte zu ändern. Stellen Sie jedoch sicher, dass Sie das Feld Dateierweiterung festgelegt haben.
+## <a name="settings"></a> The DSL Designer Wizard Pages
+ You can leave several of the fields unchanged from their default values. However, make sure that you set the File Extension field.
 
-### <a name="solution-settings-page"></a>Seite "Lösungs Einstellungen"
- **Auf welcher Vorlage möchten Sie Ihre domänenspezifische Sprache aufbauen?**
-Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt. Die verschiedenen Vorlagen bieten praktische Ausgangspunkte. Wenn Sie eine Projektmappenvorlage auswählen, zeigt der Assistent eine Beschreibung an. Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Lösungs Vorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).
+### <a name="solution-settings-page"></a>Solution Settings page
+ **Which Template would you like to base your domain specific language on?**
+Choose a template that is similar to the DSL that you want to create. The different templates provide convenient starting points. When you select a solution template, the wizard displays a description. For more information about solution templates, see [Choosing a Domain-Specific Language Solution Template](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- **Wie möchten Sie Ihre domänenspezifische Sprache benennen?**
-Der Standardwert ist der Projektmappenname. Der Code wird aus diesem Wert generiert. Er muss als C# Klassenname gültig sein.
+ **What do you want to name your domain-specific language?**
+Defaults to the solution name. Code is generated from this value. It must be valid as a C# class name.
 
-### <a name="file-extension-page"></a>Datei Erweiterungs Seite
- **Welche Erweiterung sollen Modelldateien verwenden?**
-Geben Sie eine neue Dateierweiterung ein.
+### <a name="file-extension-page"></a>File Extension page
+ **What extension should model files use?**
+Type a new file extension.
 
- Vergewissern Sie sich, dass diese Dateierweiterung nicht bereits für die Verwendung auf diesem Computer registriert wurde. gehen Sie hierzu wie folgt vor:
+ Verify that this file extension has not already been registered for use in this computer, as follows:
 
- Sehen **Sie sich die anderen Tools und Anwendungen an, die für diese Erweiterung registriert**sind. Wenn die Meldung " **keine Anwendungen oder Visual Studio-Editoren verwenden diese Erweiterung**" angezeigt wird, können Sie diese Dateierweiterung verwenden.
+ Look under **Other tools and applications registered to handle this extension**. If you see the message **No applications or Visual Studio editors use this extension**, then you can use this file extension.
 
- Wenn eine Liste der Tools oder Pakete angezeigt wird, sollten Sie eine der folgenden Aktionen ausführen:
+ If you see a list of tools or packages, you should do one of the following:
 
-- Geben Sie eine andere Dateierweiterung ein.
-
-     \- oder -
-
-- Setzen Sie den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentellen Instanz zurück. Dadurch wird die Registrierung aller zuvor erstellten DSLs aufgehoben. Klicken Sie im **Startmenü** auf **Alle Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und setzen Sie dann **die experimentelle Microsoft Visual Studio 2010-Instanz zurück**. Sie können alle anderen DSLs neu erstellen, die Sie wieder verwenden möchten.
+- Type a different file extension.
 
      \- oder -
 
-- Wenn eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung, die diese Dateierweiterung verwendet, vollständig auf dem Computer installiert wurde, deinstallieren Sie Sie. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**.
+- Reset the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Experimental Instance. This will unregister all of the DSLs that you have previously built. On the **Start** menu, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**. You can rebuild any other DSLs that you want to use again.
 
-### <a name="product-settings-page"></a>Seite "Produkt Einstellungen"
- **Wie lautet der Name des Produkts, zu dem die neue domänenspezifische Sprache gehört?**
-Der Standardwert ist der DSL-Name.
+     \- oder -
 
- Dieser Wert wird im Windows-Explorer (oder Datei-Explorer) verwendet, um Dateien zu beschreiben, die diese Dateierweiterung aufweisen.
+- If a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension that uses this file extension has been fully installed on your computer, uninstall it. On the **Tools** menu, click **Extension Manager**.
 
- **Wie lautet der Name des Unternehmens, zu dem das Produkt gehört?**
-Der Name Ihres Unternehmens.
+### <a name="product-settings-page"></a>Product Settings page
+ **What is the name of the product that the new domain-specific language belongs to?**
+Defaults to the DSL name.
 
- Dieser Wert ist in die AssemblyInfo-Eigenschaften Ihres DSL-Pakets integriert.
+ This value is used in Windows Explorer (or File Explorer) to describe files that have this file extension.
 
- **Was ist der Stamm Namespace für Projekte in dieser Projekt Mappe?**
-Standardmäßig wird ein Name verwendet, der aus Ihrem Unternehmen und ihren Produktnamen besteht.
+ **What is the name of the company that the product belongs to?**
+Your company name.
 
-### <a name="signing-page"></a>Signierungs Seite
- **Erstellen einer Schlüsseldatei mit starkem Namen** Die Standardoption besteht darin, einen neuen Schlüssel zum Signieren Ihrer DSL-Assembly zu erstellen.
+ This value is incorporated into the AssemblyInfo properties of your DSL package.
 
- **Vorhandenen Schlüssel mit starkem Namen verwenden** Verwenden Sie diese Option, wenn Sie Ihre DSL in eine andere Assembly integrieren möchten.
+ **What is the root namespace for projects in this solution?**
+This defaults to a name composed from your company and product names.
 
- Weitere Informationen zu starken Namen finden Sie unter [Erstellen und verwenden](http://go.microsoft.com/fwlink/?LinkId=186073)von Assemblys mit starkem Namen.
+### <a name="signing-page"></a>Signing page
+ **Create a strong name key file** The default option is to create a new key to sign your DSL assembly.
+
+ **Use existing strong name key** Use this option if you want to integrate your DSL with another assembly.
+
+ For more information about strong naming, see [Creating and Using Strong-Named Assemblies](https://go.microsoft.com/fwlink/?LinkId=186073).
 
 ## <a name="see-also"></a>Siehe auch
- [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md) [DSL-Tools Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
