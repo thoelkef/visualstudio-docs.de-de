@@ -29,6 +29,6 @@ Sie haben versucht, die **default** -Anweisung mehrmals in einer Switch-Anweisun
 - Entfernen Sie alle zusätzlichen **default** Case-Anweisungen aus der `switch`-Anweisung (verwenden Sie höchstens eine Standard Case-Anweisung in der Switch-Anweisung).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)    
- [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)    
+ [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)   
+ [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
  [Reservierte Wörter in JavaScript](../../javascript/reference/javascript-reserved-words.md)

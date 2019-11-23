@@ -66,5 +66,5 @@ enum {
  Gibt an, dass das Wertfeld für diesen Objekttyp den automatisch erweiterten Wert enthalten soll, falls verfügbar.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debugpropertyinfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)    
+ [Debugpropertyinfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)

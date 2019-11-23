@@ -52,5 +52,5 @@ HRESULT onDebugOutput(
  Diese Methode wird aufgerufen, wenn `IDebugApplication::DebugOutput` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)    
+ [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

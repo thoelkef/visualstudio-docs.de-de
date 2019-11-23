@@ -37,7 +37,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parameter  
  `pddhParent`  
- in Die Dokumentstruktur, in der dieses Dokument hinzugefügt wird. Kann NULL sein.  
+ in Die Dokumentstruktur, in der dieses Dokument hinzugefügt wird. Kann möglicherweise NULL sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,8 +47,8 @@ HRESULT Attach(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Mit dieser Methode wird dieses Dokument der Dokumentstruktur hinzugefügt, wobei `pddhParent` als übergeordnetes Element verwendet wird. Wenn die `pddhParent` `NULL` ist, wird dieses Dokument als Dokument der obersten Ebene verwendet.  
+ Mit dieser Methode wird dieses Dokument der Dokumentstruktur hinzugefügt, wobei `pddhParent` als übergeordnetes Element verwendet wird. Wenn die `pddhParent` `NULL`ist, wird dieses Dokument als Dokument der obersten Ebene verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper::D Etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
+ [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

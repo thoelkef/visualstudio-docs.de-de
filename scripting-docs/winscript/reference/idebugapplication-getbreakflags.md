@@ -54,5 +54,5 @@ HRESULT GetBreakFlags(
  Diese Methode gibt die aktuellen Fehlerflags für die Anwendung zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
  [APPBREAKFLAGS-Enumeration](../../winscript/reference/appbreakflags-enumeration.md)

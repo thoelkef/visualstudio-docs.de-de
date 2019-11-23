@@ -54,5 +54,5 @@ HRESULT onRemoveText(
  Diese Methode gibt an, dass der Text aus dem Dokument entfernt wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenttextevents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)    
+ [Idebugdocumenttextevents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)

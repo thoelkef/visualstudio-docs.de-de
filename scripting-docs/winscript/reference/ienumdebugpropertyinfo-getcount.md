@@ -40,8 +40,8 @@ HRESULT GetCount (
  vorgenommen Gibt die Anzahl der `DebugPropertyInfo` Strukturen im Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT`zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ienumdebugpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)    
+ [Ienumdebugpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)
