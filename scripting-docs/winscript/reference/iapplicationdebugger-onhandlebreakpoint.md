@@ -57,10 +57,10 @@ HRESULT onHandleBreakPoint(
 ## <a name="remarks"></a>Hinweise  
  Diese Methode wird aufgerufen, wenn ein Breakpoint gedrückt wird und `IDebugApplication::HandleBreakPoint` aufgerufen wird.  
   
- Die Anwendung bleibt angehalten, bis die Debugger-IDE `IRemoteDebugApplication::ResumeFromBreakPoint` aufruft.  
+ Die Anwendung bleibt angehalten, bis die Debugger-IDE `IRemoteDebugApplication::ResumeFromBreakPoint`aufruft.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)    
+ [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)   
  [Idebugapplication:: Lenker Breakpoint](../../winscript/reference/idebugapplication-handlebreakpoint.md) -   
- [Iremotedebuapplication:: resumefrombreakpoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
+ [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [BREAKREASON-Enumeration](../../winscript/reference/breakreason-enumeration.md)

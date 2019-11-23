@@ -29,7 +29,7 @@ ms.locfileid: "72661441"
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Kategorie|Microsoft. Globalization|
+|Kategorie|Microsoft.Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -61,7 +61,7 @@ ms.locfileid: "72661441"
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn sicher ist, dass der standardmäßige Kultur-/Formatanbieter die richtige Wahl ist und die Code Wartbarkeit keine wichtige Entwicklungs Priorität darstellt.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel verursacht `BadMethod` zwei Verstöße gegen diese Regel. `GoodMethod` korrigiert den ersten Verstoß, indem die invariante Kultur an <xref:System.String.Compare%2A> übergeben wird, und korrigiert den zweiten Verstoß, indem die aktuelle Kultur an <xref:System.String.ToLower%2A> übergeben wird, da `string3` für den Benutzer angezeigt wird.
+ Im folgenden Beispiel verursacht `BadMethod` zwei Verstöße gegen diese Regel. `GoodMethod` korrigiert den ersten Verstoß, indem die invariante Kultur an <xref:System.String.Compare%2A>übergeben wird, und korrigiert den zweiten Verstoß, indem die aktuelle Kultur an <xref:System.String.ToLower%2A> übergeben wird, da `string3` für den Benutzer angezeigt wird.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -72,7 +72,7 @@ ms.locfileid: "72661441"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **6/4/1900 12:15:12 Uhr** 
+ **6/4/1900 12:15:12 Uhr**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1304: CultureInfo angeben](../code-quality/ca1304-specify-cultureinfo.md)

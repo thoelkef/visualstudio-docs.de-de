@@ -54,5 +54,5 @@ HRESULT onRemoveApplication(
  Diese Methode gibt an, dass eine Anwendung aus der Liste der laufenden Anwendungen entfernt wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Imachinedebugmanagerevents-Schnittstelle](../../winscript/reference/imachinedebugmanagerevents-interface.md)    
+ [Imachinedebugmanagerevents-Schnittstelle](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)

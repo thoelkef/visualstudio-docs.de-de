@@ -51,5 +51,5 @@ HRESULT ConnectDebugger(
  In einer Anwendung kann jeweils nur ein Debugger verbunden sein. Diese Methode schlägt fehl, wenn bereits ein Debugger verbunden ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iremotedebugapplication:: getdebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md) -   
+ [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

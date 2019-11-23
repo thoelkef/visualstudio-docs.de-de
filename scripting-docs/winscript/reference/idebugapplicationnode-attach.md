@@ -47,8 +47,8 @@ HRESULT Attach(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode fügt diesen Anwendungs Knoten der Projektstruktur hinzu, wobei `pdanParent` als übergeordnetes Element verwendet wird. Wenn `pdanParent` `NULL` ist, wird dieser Anwendungs Knoten als Knoten der obersten Ebene verwendet.  
+ Diese Methode fügt diesen Anwendungs Knoten der Projektstruktur hinzu, wobei `pdanParent` als übergeordnetes Element verwendet wird. Wenn `pdanParent` `NULL`ist, wird dieser Anwendungs Knoten als Knoten der obersten Ebene verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplicationnode::D Etach](../../winscript/reference/idebugapplicationnode-detach.md)    
+ [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

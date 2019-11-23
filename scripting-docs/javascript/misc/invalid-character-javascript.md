@@ -35,6 +35,6 @@ Sie haben einen Bezeichner mithilfe eines Zeichens (oder eines Zeichens) verfass
 - Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachdefinition sind.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Variablen](../../javascript/variables-javascript.md)    
- [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)    
+ [Variablen](../../javascript/variables-javascript.md)   
+ [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)   
  [Datentypen](../../javascript/data-types-javascript.md)

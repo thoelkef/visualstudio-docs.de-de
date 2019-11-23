@@ -50,5 +50,5 @@ HRESULT GetDocumentAttributes(
  Diese Methode gibt die Attribute des Dokuments zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenttext-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)    
+ [Idebugdocumenttext-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)   
  [TEXT_DOC_ATTR-Konstanten](../../winscript/reference/text-doc-attr-constants.md)

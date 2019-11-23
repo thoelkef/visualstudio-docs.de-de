@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573616"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode::CreateChildEntry
-Fügt eine untergeordnete Instanz von `IScriptEntry` hinzu.  
+Fügt eine untergeordnete Instanz von `IScriptEntry`hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -64,15 +64,15 @@ HRESULT CreateChildEntry(
  Bei `IScriptScriptlet`-Objekten schlägt diese Methode fehl.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `IScriptNode`-Schnittstelle stellt eine Webseite oder deren Elemente dar. Die `IScriptEntry`-Schnittstelle (die von `IScriptNode` abgeleitet ist) stellt entweder einen Skriptblock oder ein Funktions Objekt dar. Die `IScriptScriptlet`-Schnittstelle (die von `IScriptEntry` abgeleitet ist) stellt einen Ereignishandler dar.  
+ Die `IScriptNode`-Schnittstelle stellt eine Webseite oder deren Elemente dar. Die `IScriptEntry`-Schnittstelle (die von `IScriptNode`abgeleitet ist) stellt entweder einen Skriptblock oder ein Funktions Objekt dar. Die `IScriptScriptlet`-Schnittstelle (die von `IScriptEntry`abgeleitet ist) stellt einen Ereignishandler dar.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iscriptnode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)    
+ [Iscriptnode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

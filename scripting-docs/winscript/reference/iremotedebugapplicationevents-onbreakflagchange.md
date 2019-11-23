@@ -54,5 +54,5 @@ HRESULT OnBreakFlagChange(
  Diese Methode behandelt das-Ereignis, wenn das Break-Flag geändert wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iremotedebugapplicationevents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)    
+ [Iremotedebugapplicationevents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
  [APPBREAKFLAGS-Enumeration](../../winscript/reference/appbreakflags-enumeration.md)

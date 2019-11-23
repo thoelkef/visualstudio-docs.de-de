@@ -37,7 +37,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- Element Bezeichner. Verwendet `GetDispID` oder `GetNextDispID`, um den Dispatchbezeichner abzurufen.  
+ Elementbezeichner Verwendet `GetDispID` oder `GetNextDispID`, um den Dispatchbezeichner abzurufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -48,7 +48,7 @@ HRESULT DeleteMemberByDispID(
 |`S_FALSE`|Der Member ist vorhanden, kann aber nicht gelöscht werden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn der Member gelöscht wird, muss die DISPID für `GetNextDispID` gültig bleiben.  
+ Wenn der Member gelöscht wird, muss die DISPID für `GetNextDispID`gültig bleiben.  
   
  Wenn ein Element mit einem bestimmten Namen gelöscht und später ein Member mit demselben Namen neu erstellt wird, sollte die DISPID identisch sein. (Unabhängig davon, ob die Elementnamen, die sich nur durch die Groß-/Kleinschreibung unterscheiden, vom Objekt abhängig sind.)  
   
@@ -65,6 +65,6 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)    
- [IDispatchEx:: GetDispID-](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

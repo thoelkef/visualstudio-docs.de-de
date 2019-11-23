@@ -56,13 +56,13 @@ HRESULT GetScriptTextAttributes(
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Identifizieren Sie Bezeichner mit dem SOURCETEXT_ATTR_IDENTIFIER-Attribut, und identifizieren Sie Punkt Operatoren, die über das SOURCETEXT_ATTR_MEMBERLOOKUP-Attribut verfügen.|  
 |GETATTRFLAG_THIS|0x0100|Identifizieren Sie das aktuelle-Objekt, das über das SOURCETEXT_ATTR_THIS-Attribut verfügt.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Identifizieren Sie Zeichen folgen Inhalt und Kommentartext, der über das SOURCETEXT_ATTR_HUMANTEXT-Attribut verfügt.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Identifizieren Sie Zeichen folgen Inhalt und Kommentartext mit dem SOURCETEXT_ATTR_HUMANTEXT-Attribut.|  
   
  `pattr`  
  [in, out, size_is (`cch`)] Die Farbinformationen für den Skriptblock Code.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -71,5 +71,5 @@ HRESULT GetScriptTextAttributes(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)    
+ [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

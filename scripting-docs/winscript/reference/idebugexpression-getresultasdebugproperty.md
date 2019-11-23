@@ -52,10 +52,10 @@ HRESULT GetResultAsDebugProperty(
 |`E_PENDING`|Der Vorgang steht noch aus.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt das Ergebnis der Ausdrucks Auswertung als `IDebugProperty` und die `HRESULT` des Vorgangs zurück.  
+ Diese Methode gibt das Ergebnis der Ausdrucks Auswertung als `IDebugProperty` und die `HRESULT`des Vorgangs zurück.  
   
  Diese Methode gibt `S_OK` zurück, und `phrResult` gibt `E_ABORT` zurück, wenn `Abort` den Vorgang abbricht.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugexpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)    
+ [Idebugexpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

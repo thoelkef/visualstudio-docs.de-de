@@ -31,5 +31,5 @@ Sie haben versucht, eine (nicht bedingte Kompilierungs Variable) in einer Test A
 - Ersetzen Sie die Variable durch eine Variable für die bedingte Kompilierung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)    
+ [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)

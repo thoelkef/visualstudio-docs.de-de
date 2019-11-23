@@ -61,7 +61,7 @@ HRESULT InvokeEx(
 |DISPATCH_PROPERTYGET|Der Member wird als Eigenschaft oder Datenmember abgerufen (definiert durch `IDispatch`).|  
 |DISPATCH_PROPERTYPUT|Der Member wird als Eigenschaft oder Datenmember (definiert durch `IDispatch`) geändert.|  
 |DISPATCH_PROPERTYPUTREF|Der Member wird durch eine Verweis Zuweisung und nicht durch eine Wert Zuweisung geändert. Dieses Flag ist nur gültig, wenn die Eigenschaft einen Verweis auf ein Objekt akzeptiert (definiert durch `IDispatch`).|  
-|DISPATCH_CONSTRUCT|Der Member wird als Konstruktor verwendet. (Dies ist ein neuer Wert, der durch `IDispatchEx` definiert ist). Die zulässigen Werte für `wFlags` lauten:<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
+|DISPATCH_CONSTRUCT|Der Member wird als Konstruktor verwendet. (Dies ist ein neuer Wert, der durch `IDispatchEx`definiert ist). Die zulässigen Werte für `wFlags` lauten:<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
   
  `pdp`  
  Ein Zeiger auf eine Struktur, die ein Array von Argumenten und ein Array von Argument-DISPIDs für benannte Argumente sowie Zähler für die Anzahl der Elemente in jedem Array enthält. Eine vollständige Beschreibung der dispparameams-Struktur finden Sie in der `IDispatch`-Dokumentation.  
@@ -81,7 +81,7 @@ HRESULT InvokeEx(
 |-|-|  
 |DISPATCH_CONSTRUCT|Gibt an, dass das Element als Konstruktor verwendet wird.|  
 |`pspCaller`|Der `pspCaller` ermöglicht dem Objekt den Zugriff auf Dienste, die vom Aufrufer bereitgestellt werden. Bestimmte Dienste können vom Aufrufer selbst verarbeitet oder an Aufrufer weiter oben in der Aufruf Kette delegiert werden. Wenn eine Skript-Engine in einem Browser beispielsweise einen `InvokeEx`-aufrufenden an ein externes Objekt sendet, kann das Objekt der `pspCaller` Kette folgen, um Dienste von der Skript-Engine oder vom Browser abzurufen. (Beachten Sie, dass die-Rückruf Kette nicht mit der Erstellungs Kette identisch ist – auch als Container Kette oder Site Kette bezeichnet. Die Erstellungs Kette ist möglicherweise über einen anderen Mechanismus verfügbar, z. b. `IObjectWithSite`.)|  
-|`this`-Zeiger|Wenn DISPATCH_METHOD in `wFlags` festgelegt ist, kann für den Wert "This" ein "benannter Parameter" vorhanden sein. Die DISPID ist DISPID_THIS, und Sie muss der erste benannte Parameter sein.|  
+|`this`-Zeiger|Wenn DISPATCH_METHOD in `wFlags`festgelegt ist, gibt es möglicherweise einen "benannten Parameter" für den Wert "This". Die DISPID wird DISPID_THIS und muss der erste benannte Parameter sein.|  
   
  Der nicht verwendete `riid` Parameter in `IDispatch::Invoke` wurde entfernt.  
   
@@ -137,6 +137,6 @@ VARIANT var;
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)    
- [IDispatchEx:: GetDispID-](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

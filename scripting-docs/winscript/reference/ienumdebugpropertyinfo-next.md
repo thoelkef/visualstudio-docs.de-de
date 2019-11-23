@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- in Die Anzahl der abzurufenden `DebugPropertyInfo`structures.  
+ in Die Anzahl der `DebugPropertyInfo`Strukturen, die abgerufen werden sollen.  
   
  `rgelt`  
  vorgenommen Ein Array von `DebugPropertyInfo`-Strukturen, die abgerufen wurden.  
@@ -48,8 +48,8 @@ HRESULT Next (
  vorgenommen Gibt die Anzahl der tatsächlich abgerufenen `DebugPropertyInfo` Strukturen zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT`zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ienumdebugpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)    
+ [Ienumdebugpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)

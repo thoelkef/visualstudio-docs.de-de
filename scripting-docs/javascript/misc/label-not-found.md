@@ -31,7 +31,7 @@ Sie haben einen Verweis auf eine Bezeichnung erstellt, die nicht vorhanden ist. 
 - Stellen Sie sicher, dass alle Bezeichnungs Verweise auf Bezeichnungen festgelegt sind, die im aktuellen Gültigkeitsbereich definiert wurden (einschließlich Forward-Definitionen).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bezeichnete Anweisung](../../javascript/reference/labeled-statement-javascript.md)    
- [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)    
+ [Bezeichnete Anweisung](../../javascript/reference/labeled-statement-javascript.md)   
+ [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)   
  [break-Anweisung](../../javascript/reference/break-statement-javascript.md)   
  [continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)

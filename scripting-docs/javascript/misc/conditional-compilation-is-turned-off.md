@@ -37,8 +37,8 @@ Sie haben versucht, eine bedingte Kompilierungs Variable zu verwenden, ohne zuer
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)    
- [Variablen für bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
- [@cc_on-Anweisung](../../javascript/reference/at-cc-on-statement-javascript.md)    
- [@if-Anweisung](../../javascript/reference/at-if-statement-javascript.md)    
+ [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [Variablen für bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
+ [@cc_on-Anweisung](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if-Anweisung](../../javascript/reference/at-if-statement-javascript.md)   
  [@set-Anweisung](../../javascript/reference/at-set-statement-javascript.md)

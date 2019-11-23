@@ -58,6 +58,6 @@ HRESULT ResumeFromBreakPoint(
  Diese Methode setzt eine Anwendung fort, die sich derzeit in einem Breakpoint befindet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)    
- [Breakresumeaction-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)    
+ [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [Breakresumeaction-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION-Enumeration](../../winscript/reference/errorresumeaction-enumeration.md)

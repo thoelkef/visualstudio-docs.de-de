@@ -47,8 +47,8 @@ HRESULT SetDefaultTextAttr(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die Standard Attribute für Text außerhalb eines Skript Blocks sind SOURCETEXT_ATTR_NONSOURCE, es sei denn, die Standard Attribute werden von dieser Methode geändert. Die Benutzeroberfläche kann diese Informationen verwenden, um Text außerhalb von Skript Blöcken als schreibgeschützt zu markieren.  
+ Wenn die Standard Attribute von dieser Methode nicht geändert werden, werden die Standard Attribute für Text außerhalb eines Skript Blocks SOURCETEXT_ATTR_NONSOURCE. Die Benutzeroberfläche kann diese Informationen verwenden, um Text außerhalb von Skript Blöcken als schreibgeschützt zu markieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

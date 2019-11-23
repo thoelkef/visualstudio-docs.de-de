@@ -54,7 +54,7 @@ HRESULT GetScriptTextAttributes(
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Gibt an, dass Bezeichner und Punkt Operatoren mit den SOURCETEXT_ATTR_IDENTIFIER-bzw. SOURCETEXT_ATTR_MEMBERLOOKUP-Flags identifiziert werden sollen.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Gibt an, dass Bezeichner und Punkt Operatoren mit den SOURCETEXT_ATTR_IDENTIFIER-bzw. SOURCETEXT_ATTR_MEMBERLOOKUP Flags identifiziert werden sollen.|  
 |GETATTRFLAG_THIS|0x0100|Gibt an, dass der Bezeichner für das aktuelle Objekt mit dem SOURCETEXT_ATTR_THIS-Flag identifiziert werden soll.|  
 |GETATTRFLAG_HUMANTEXT|0x8000|Gibt an, dass Zeichen folgen Inhalt und Kommentartext mit dem SOURCETEXT_ATTR_HUMANTEXT-Flag identifiziert werden sollen.|  
   
@@ -70,8 +70,8 @@ HRESULT GetScriptTextAttributes(
 |`E_NOTIMPL`|Der Host verwendet nur Standard Attribute.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt die Text Attribute für einen beliebigen Block von Dokument Text zurück. Es ist zulässig, dass Hosts `E_NOTIMPL` zurückgeben. in diesem Fall werden die Standard Attribute verwendet.  
+ Diese Methode gibt die Text Attribute für einen beliebigen Block von Dokument Text zurück. Es ist zulässig, dass Hosts `E_NOTIMPL`zurückgeben. in diesem Fall werden die Standard Attribute verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumeinthost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)    
+ [Idebugdocumeinthost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)   
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

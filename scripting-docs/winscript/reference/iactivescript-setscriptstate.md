@@ -54,8 +54,8 @@ HRESULT SetScriptState(
  Weitere Informationen zu den Status der Skript-Engine finden Sie im Abschnitt Skript-Engine-Zustände von [Windows Script Engines](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md) -   
- [IActiveScript:: getscriptdispatch](../../winscript/reference/iactivescript-getscriptdispatch.md) -   
- [IActiveScript:: interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) -   
- [Iactivescriptparamese::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
+ [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

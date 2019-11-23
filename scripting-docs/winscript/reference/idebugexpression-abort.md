@@ -47,5 +47,5 @@ HRESULT Abort();
  Diese Methode beendet eine Ausdrucks Auswertung an der frühesten Gelegenheit.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugexpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)    
+ [Idebugexpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)

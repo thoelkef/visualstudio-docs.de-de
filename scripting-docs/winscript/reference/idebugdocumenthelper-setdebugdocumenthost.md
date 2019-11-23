@@ -50,5 +50,5 @@ HRESULT SetDebugDocumentHost(
  Die `IDebugDocumentHost`-Schnittstelle wird für die Farbgebung von intelligenten Hosts, das Abrufen von verzögertem Text und das Zurückgeben von steuerungsobjekten für neu erstellte Dokument Kontexte verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)

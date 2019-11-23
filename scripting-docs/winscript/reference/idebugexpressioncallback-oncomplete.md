@@ -47,5 +47,5 @@ HRESULT onComplete();
  Diese Methode wird aufgerufen, wenn die Ausdrucks Auswertung beendet ist. Die `IDebugExpression::GetResultAsString`-Methode kann innerhalb dieses Ereignis Handlers aufgerufen werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugexpressioncallback-Schnittstelle](../../winscript/reference/idebugexpressioncallback-interface.md)    
+ [Idebugexpressioncallback-Schnittstelle](../../winscript/reference/idebugexpressioncallback-interface.md)   
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

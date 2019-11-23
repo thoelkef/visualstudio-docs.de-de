@@ -70,6 +70,6 @@ HRESULT DefineScriptBlock(
  Die `DefineScriptBlock`-Methode sollte aufgerufen werden, nachdem der Text hinzugefügt wurde (z. b. mit der `IDebugDocumentHelper::AddDBCSText`-Methode), aber bevor der Skriptblock analysiert wurde (z. b. mit der `IActiveScriptParse ::ParseScriptText`-Methode).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
- [Idebugdocumenthelper:: adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

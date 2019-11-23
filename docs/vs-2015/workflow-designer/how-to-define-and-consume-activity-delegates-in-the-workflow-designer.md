@@ -17,11 +17,11 @@ ms.lasthandoff: 10/19/2019
 ms.locfileid: "72603857"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
-[!INCLUDE[net_v45](../includes/net-v45-md.md)] enthält einen neuen vordefinierten Designer für die <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Der Designer kann verwendet werden, um der Aktivität Delegate zuzuweisen, die von <xref:System.Activities.ActivityDelegate>, z. B. <xref:System.Activities.ActivityAction> oder <xref:System.Activities.ActivityFunc%601>, abgeleitet werden.
+[!INCLUDE[net_v45](../includes/net-v45-md.md)] enthält einen neuen Standard Designer für die <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Der Designer kann verwendet werden, um der Aktivität Delegate zuzuweisen, die von <xref:System.Activities.ActivityDelegate>, z. B. <xref:System.Activities.ActivityAction> oder <xref:System.Activities.ActivityFunc%601>, abgeleitet werden.
 
 ### <a name="define-an-activity-delegate"></a>Definieren eines Aktivitätsdelegaten
 
-1. Wählen Sie in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] die Option **Datei**, **neu**und **Projekt**aus. Wählen Sie auf der linken Seite den Knoten **Workflow** und die Vorlage **Konsolenanwendung für Workflows** auf der rechten Seite aus. Benennen Sie das Projekt (falls gewünscht), und klicken Sie auf **OK**.
+1. Wählen Sie in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]die Option **Datei**, **neu**und **Projekt**aus. Wählen Sie auf der linken Seite den Knoten **Workflow** und die Vorlage **Konsolenanwendung für Workflows** auf der rechten Seite aus. Benennen Sie das Projekt (falls gewünscht), und klicken Sie auf **OK**.
 
 2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Hinzufügen**, **Neues Element...** aus. Wählen Sie auf der linken Seite den Knoten **Workflow** und die **Aktivitäts** Vorlage auf der rechten Seite aus. Nennen Sie die neue Aktivität **myforeach. XAML** , und klicken Sie auf **OK**. Die Aktivität wird im Workflow-Designer geöffnet.
 
@@ -37,7 +37,7 @@ ms.locfileid: "72603857"
 
 8. Wählen Sie in der Spalte Argumenttyp die Option **nach Typen suchen... aus.**
 
-9. Geben Sie im Typbrowser im Feld **Typname den Namen** **ActivityAction** ein. Wählen Sie in der Strukturansicht **ActivityAction \<T >** aus. Wählen Sie in der Dropdown Liste das **Objekt** aus, das dem Argument den Typ **ActivityAction \<Object >** zuweist.
+9. Geben Sie im Typbrowser im Feld **Typname den Namen** **ActivityAction** ein. Wählen Sie in der Strukturansicht **ActivityAction\<t >** aus. Wählen Sie in der Dropdown Liste die Option **Objekt** aus, die den Typ **ActivityAction\<Objekt >** dem Argument zuweist.
 
 10. Ziehen Sie eine <xref:System.Activities.Statements.While>-Aktivität aus dem Abschnitt **Ablauf Steuerung** der Toolbox auf die Designer Oberfläche.
 
@@ -79,5 +79,5 @@ ms.locfileid: "72603857"
 
    Wenn der Workflow ausgeführt wird, wird in der Konsole Folgendes angezeigt:
 
-   **1** 
-   **ABC**
+   **1**
+   **abc**

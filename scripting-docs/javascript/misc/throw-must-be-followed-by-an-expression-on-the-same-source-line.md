@@ -37,6 +37,6 @@ if (denominator == 0) {
 - Stellen Sie sicher, dass das `throw`-Schlüsselwort und der auszulösenden Ausdruck in derselben Zeile angezeigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Fehler Objekt](../../javascript/reference/error-object-javascript.md)    
- [throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)    
+ [Fehler Objekt](../../javascript/reference/error-object-javascript.md)   
+ [throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

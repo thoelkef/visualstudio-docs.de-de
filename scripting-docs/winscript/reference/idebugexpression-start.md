@@ -37,7 +37,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parameter  
  `pdecb`  
- in Rückruf, der angibt, wann die Ausdrucks Auswertung beendet ist. Wenn dieser Parameter `NULL` ist, werden keine Ereignisse ausgelöst, und der Client muss den Ausdrucks Zustand mithilfe `QueryIsComplete` Abfragen.  
+ in Rückruf, der angibt, wann die Ausdrucks Auswertung beendet ist. Wenn dieser Parameter `NULL`ist, werden keine Ereignisse ausgelöst, und der Client muss den Ausdrucks Zustand mithilfe `QueryIsComplete`Abfragen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -50,5 +50,5 @@ HRESULT Start(
  Diese Methode beginnt mit der Auswertung des Ausdrucks.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugexpression:: Abort](../../winscript/reference/idebugexpression-abort.md)    
+ [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
  [IDebugExpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)

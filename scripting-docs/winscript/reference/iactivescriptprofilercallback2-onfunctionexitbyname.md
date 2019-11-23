@@ -46,5 +46,5 @@ HRESULT OnFunctionExitByName(
  Bei Dom-aufrufen Ruft die Skript-Engine diese Methode auf, anstatt [iactivescriptprofilercallback:: onfunctionexit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)aufzurufen. Dies liegt an der großen Anzahl von eindeutigen Methoden und Eigenschaften im Dom.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptProfilerCallback2:: onfunctionenterbyname](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

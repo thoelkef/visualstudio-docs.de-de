@@ -54,5 +54,5 @@ HRESULT RemoveText(
  Diese Methode entfernt Text aus dem Dokument.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenttextauthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)    
+ [Idebugdocumenttextauthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

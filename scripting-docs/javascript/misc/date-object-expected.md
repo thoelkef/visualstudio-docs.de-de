@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572898"
 ---
 # <a name="date-object-expected"></a>Date-Objekt erwartet
-Sie haben versucht, die **Date. Prototype. ToString** -oder **Date. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `Date` aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`Date`" sein. Beispiel:  
+Sie haben versucht, die **Date. Prototype. ToString** -oder **Date. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `Date`aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`Date`" sein. Beispiel:  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,9 +32,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Rufen Sie nur die **Date. Prototype. ToString** -Methode oder die **Date. Prototype. valueOf** -Methode für Objekte vom Typ `Date` auf.  
+- Rufen Sie nur die **Date. Prototype. ToString** -Methode oder die **Date. Prototype. valueOf** -Methode für Objekte vom Typ `Date`auf.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Date-Objekt](../../javascript/reference/date-object-javascript.md)   
- [getDate-Methode (Datum)](../../javascript/reference/getdate-method-date-javascript.md)    
+ [getDate-Methode (Datum)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Systeminterne Objekte](../../javascript/intrinsic-objects-javascript.md)

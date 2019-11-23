@@ -45,6 +45,6 @@ Sie haben versucht, die **Continue** -Anweisung außerhalb einer-Schleife zu ver
   - **for/in-** Schleife.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)    
- [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)    
+ [Continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)   
+ [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
  [Problembehandlung bei Skripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

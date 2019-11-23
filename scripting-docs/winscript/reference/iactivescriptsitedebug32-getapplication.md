@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572199"
 ---
-# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32:: getapplikation
+# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Gibt das Debug-Anwendungs Objekt zurück, das dieser Skript Site zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
@@ -44,5 +44,5 @@ HRESULT GetApplication(
  Die `GetApplication`-Methode bietet einem Smarthost die Möglichkeit, das Anwendungs Objekt zu definieren, zu dem die einzelnen Skripts gehören. Skript-Engines sollten versuchen, diese Methode aufzurufen, um Ihre enthaltende Anwendung abzurufen und auf `IProcessDebugManager::GetDefaultApplication` zurückzugreifen, wenn dies fehlschlägt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptSiteDebug32-Schnittstelle](../../winscript/reference/iactivescriptsitedebug32-interface.md)    
+ [IActiveScriptSiteDebug32-Schnittstelle](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

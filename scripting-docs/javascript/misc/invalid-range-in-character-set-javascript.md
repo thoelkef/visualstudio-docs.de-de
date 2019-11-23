@@ -34,5 +34,5 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
 - Verwenden Sie nur einzelne Zeichen, um den Zeichensatz für reguläre Ausdrücke zu verfassen, und stellen Sie sicher, dass Sie in der richtigen Reihenfolge vorliegen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

@@ -26,7 +26,7 @@ ms.locfileid: "72650336"
    > [!NOTE]
    > Wenn die **Workflow** -Projektvorlagen nicht angezeigt werden, installieren Sie zunächst die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie  > **Neues Element** **Hinzufügen** aus. Wählen Sie die Kategorie **Workflow** aus, und wählen Sie dann die Vorlage **Aktivitäts** Element aus. Nennen Sie die neue Aktivität **myforeach. XAML** , und wählen Sie dann **OK**aus.
+3. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie > **Neues Element** **Hinzufügen** aus. Wählen Sie die Kategorie **Workflow** aus, und wählen Sie dann die Vorlage **Aktivitäts** Element aus. Nennen Sie die neue Aktivität **myforeach. XAML** , und wählen Sie dann **OK**aus.
 
    Die-Aktivität wird im Workflow-Designer geöffnet.
 
@@ -42,7 +42,7 @@ ms.locfileid: "72650336"
 
 9. Wählen Sie in der Spalte Argumenttyp die Option **nach Typen suchen aus** .
 
-10. Geben Sie im Typbrowser im Feld **Typname den Namen** **ActivityAction** ein. Wählen Sie in der Strukturansicht **ActivityAction \<T >** aus. Wählen Sie in der Dropdown Liste das **Objekt** aus, das dem Argument den Typ **ActivityAction \<Object >** zuweist.
+10. Geben Sie im Typbrowser im Feld **Typname den Namen** **ActivityAction** ein. Wählen Sie in der Strukturansicht **ActivityAction\<t >** aus. Wählen Sie in der Dropdown Liste die Option **Objekt** aus, die den Typ **ActivityAction\<Objekt >** dem Argument zuweist.
 
 11. Ziehen Sie eine <xref:System.Activities.Statements.While>-Aktivität aus dem Abschnitt **Ablauf Steuerung** der Toolbox auf die Designer Oberfläche.
 
@@ -70,7 +70,7 @@ ms.locfileid: "72650336"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Verwenden der benutzerdefinierten Aktivität in einem Workflow
 
-1. Erstellen Sie das Projekt, indem Sie **STRG** +**UMSCHALT** +**B**drücken.
+1. Erstellen Sie das Projekt, indem Sie **STRG**+**UMSCHALT**+**B**drücken.
 
 2. Öffnen Sie **Workflow1. XAML** in **Projektmappen-Explorer**im Designer.
 
@@ -84,5 +84,5 @@ ms.locfileid: "72650336"
 
 Beim Ausführen des Workflows wird in der-Konsole die folgende Ausgabe angezeigt:
 
-**1** 
-**ABC**
+**1**
+**abc**

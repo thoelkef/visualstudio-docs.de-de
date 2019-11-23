@@ -50,6 +50,6 @@ HRESULT RemoveStackFrameSniffer(
  Mit der `RemoveStackFrameSniffer`-Methode wird ein Stapel Rahmen-enumeratoranbieter aus dieser Anwendung entfernt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication:: addstackframesniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
+ [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugStackFrameSniffer-Schnittstelle](../../winscript/reference/idebugstackframesniffer-interface.md)

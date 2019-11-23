@@ -55,11 +55,11 @@ HRESULT SetTextAttributes(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Es ist ein Fehler, `SetTextAttributes` für einen Textbereich aufzurufen, bevor dieser Text dem Dokument hinzugefügt wird. Wenden Sie die Methoden `AddDBCSText`, `AddUnicodeText` oder `AddDeferredText` an, um dem Dokument Text hinzuzufügen.  
+ Es ist ein Fehler, `SetTextAttributes` für einen Textbereich aufzurufen, bevor dieser Text dem Dokument hinzugefügt wird. Wenden Sie die Methoden `AddDBCSText`, `AddUnicodeText`oder `AddDeferredText` an, um dem Dokument Text hinzuzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
- [Idebugdocumenthelper:: addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [Idebugdocumenthelper:: adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
- [Idebugdocumenthelper:: adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

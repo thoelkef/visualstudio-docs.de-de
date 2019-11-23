@@ -47,5 +47,5 @@ HRESULT Detach();
  Diese Methode entfernt diesen Anwendungs Knoten aus der Projektstruktur.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplicationnode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)    
+ [Idebugapplicationnode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

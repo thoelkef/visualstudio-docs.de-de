@@ -29,8 +29,8 @@ Sie haben versucht, eine Erfassung, eine Assertion oder eine Gruppe für regulä
 - Fügen Sie die schließenden ganz rechts Klammern hinzu.  
   
     > [!NOTE]
-    > Wenn eine einzelne Klammer abgeglichen werden soll, versehen Sie Sie mit einem umgekehrten Schrägstrich \\ (), damit Sie von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nicht als Sonderzeichen interpretiert wird.  
+    > Wenn eine einzelne Klammer abgeglichen werden soll, versehen Sie Sie mit einem umgekehrten Schrägstrich \\(), damit Sie von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]nicht als Sonderzeichen interpretiert wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

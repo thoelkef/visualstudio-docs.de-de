@@ -52,8 +52,8 @@ HRESULT GetResult(
 |`E_PENDING`|Der Vorgang wurde nicht abgeschlossen.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn der Vorgang abgeschlossen wurde, gibt diese Methode den `HRESULT`-und den Object-Parameter von `IDebugSyncOperation::Execute` zurück.  
+ Wenn der Vorgang abgeschlossen wurde, gibt diese Methode den `HRESULT`-und den Object-Parameter von `IDebugSyncOperation::Execute`zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)    
+ [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)   
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

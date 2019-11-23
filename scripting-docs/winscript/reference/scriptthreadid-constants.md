@@ -37,15 +37,15 @@ typedef DWORD SCRIPTTHREADID;
   
 |Konstante|Wert|Bedeutung|  
 |--------------|-----------|-------------|  
-|SCRIPTTHREADID_CURRENT|0xfffffffd|Der derzeit ausgeführte Thread.|  
-|SCRIPTTHREADID_BASE|0xfffffffe|Der Basis Thread. Das heißt, der Thread, in dem die Skript-Engine instanziiert wurde.|  
+|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Der derzeit ausgeführte Thread.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Der Basis Thread. Das heißt, der Thread, in dem die Skript-Engine instanziiert wurde.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Alle Threads.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der `SCRIPTTHREADID` Typ wird von `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` und `IActiveScript::InterruptScriptThread` verwendet, aber die Konstanten können nur von `IActiveScript::GetScriptThreadState` und `IActiveScript::InterruptScriptThread` verwendet werden.  
+ Der `SCRIPTTHREADID` Typ wird von `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`und `IActiveScript::InterruptScriptThread`verwendet, aber die Konstanten können nur von `IActiveScript::GetScriptThreadState` und `IActiveScript::InterruptScriptThread`verwendet werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScript:: getcurrentscriptthreadid](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript:: getscriptthreadid](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript:: getscriptthreadstate](../../winscript/reference/iactivescript-getscriptthreadstate.md) -   
+ [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

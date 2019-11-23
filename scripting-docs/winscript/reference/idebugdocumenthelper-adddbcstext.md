@@ -54,6 +54,6 @@ HRESULT AddDBCSText(
 > Wenn diese Methode aufgerufen wird, nachdem `IDebugDocumentHelper::AddDeferredText` aufgerufen wurde, wird `E_FAIL` zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
- [Idebugdocumenthelper:: adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)

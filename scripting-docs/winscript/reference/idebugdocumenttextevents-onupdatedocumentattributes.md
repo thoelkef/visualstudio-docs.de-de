@@ -50,5 +50,5 @@ HRESULT onUpdateDocumentAttributes(
  Diese Methode gibt an, dass die Dokument Attribute geändert wurden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenttextevents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)    
+ [Idebugdocumenttextevents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [TEXT_DOC_ATTR-Konstanten](../../winscript/reference/text-doc-attr-constants.md)

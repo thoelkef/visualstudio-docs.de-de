@@ -39,7 +39,7 @@ Wenn Sie das Suchmuster für reguläre Ausdrücke erstellen, haben Sie ein patte
 |*|NULL oder mehr Wiederholungen|  
 |+|Mindestens eine Wiederholung|  
 |?|Keine oder eine Wiederholung|  
-|Nr|n Wiederholungen|  
+|{n}|n Wiederholungen|  
 |{n,}|n oder mehr Wiederholungen|  
 |{n, m}|Von n bis m Wiederholungen, einschließlich|  
   
@@ -48,5 +48,5 @@ Wenn Sie das Suchmuster für reguläre Ausdrücke erstellen, haben Sie ein patte
 - Stellen Sie sicher, dass das Suchmuster Element nur rechtliche Wiederholungs Faktoren enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

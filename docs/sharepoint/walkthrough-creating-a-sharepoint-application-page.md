@@ -37,7 +37,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - Unterstützte Editionen von Windows und SharePoint.
 
@@ -154,4 +154,4 @@ Weitere Informationen zum Entwerfen von SharePoint-Seiteninhalten mit dem Visual
 ## <a name="see-also"></a>Siehe auch
 
 Gewusst [wie: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)
-[Application _layouts Page Type](/previous-versions/office/aa979604(v=office.14))
+[Anwendungs _layouts Seitentyp](/previous-versions/office/aa979604(v=office.14))
