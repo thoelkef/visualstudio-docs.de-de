@@ -39,7 +39,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 - [Erstellen eines plattformübergreifenden Spiels für Android, iOS und Windows mithilfe von Visual Studio-Tools für Unity](#Unity)
 
 ## <a name="NET"></a>Erstellen einer App für Android, iOS und Windows(.NET Framework)
- ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Ling](../cross-platform/media/homedevices.png "HomeDevices")
 
  Mithilfe von Xamarin können Sie für Android, iOS und Windows mit der gleichen Projektmappe arbeiten und Code und sogar die Benutzeroberfläche freigeben.
 
@@ -79,7 +79,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |Sie können wählen, ob Sie den Code freigeben möchten, indem Sie gemeinsam genutzte Projekte, Portable Class Library-Projekte oder sowohl als auch verwenden.<br /><br /> [Plattformübergreifendes Freigeben von Code](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework-Blog)<br /><br /> [Sharing Code Options (Optionen für die Codefreigabe)](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Optionen für die Codefreigabe mit .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a>Windows 10-Zielgeräte
- ![Windows-Geräte](../cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Windows-Geräte](../cross-platform/media/windowsdevices.png "Windows-Geräte")
 
  Wenn Sie eine App erstellen möchten, die für alle Windows 10-Geräte ausgelegt ist, erstellen Sie eine universelle Windows-App. Sie müssen die App mit einem einzelnen Projekt entwerfen. Ihre Seiten werden dann ordnungsgemäß gerendert, unabhängig davon, welches Gerät für die Anzeige verwendet wird.
 
@@ -95,7 +95,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |[Migrieren von Apps auf die universelle Windows-Plattform (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a>Erstellen einer App für Android, iOS und Windows (HTML/JavaScript)
- ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Ling](../cross-platform/media/homedevices.png "HomeDevices")
 
  Wenn Sie als Webentwickler mit HTML und JavaScript vertraut sind, können Sie mithilfe von Visual Studio-Tools für Apache Cordova eine Nutzung unter Windows, Android und iOS ermöglichen. Diese Apps können auf allen drei Plattformen ausgeführt werden. Sie erstellen sie mithilfe Ihrer Kenntnisse und der Vorgehensweisen, mit denen Sie vertraut sind.
 
@@ -103,7 +103,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 
  Da diese APIs plattformübergreifend sind, können Sie den größten Teil Ihres Code für alle drei Plattformen verwenden. Dies trägt zu geringeren Entwicklungs- und Wartungskosten bei. Darüber hinaus müssen Sie nicht jedes Mal von Grund auf neu anfangen. Wenn Sie andere Arten von Webanwendungen erstellt haben, können Sie diese Dateien für Ihre Cordova-App verwenden, ohne sie ändern oder umgestalten zu müssen.
 
- ![Multi&#45;Device Hybrid Apps](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Hybrid&#45;Anwendungen für mehrere Geräte](../cross-platform/media/multidevicehybridapps.png "Multiabvicehybridapps")
 
  Installieren Sie zum Einstieg Visual Studio 2015, und wählen Sie während des Setups das **HTML/JavaScript (Apache Cordova)** -Feature. Wenn Sie Visual Studio 2013 verwenden, installieren Sie die Erweiterung „Visual Studio-Tools für Apache Cordova“. In jedem Fall installieren die Cordova-Tools automatisch sämtliche Drittanbieter-Software, die zum Erstellen der plattformübergreifenden App erforderlich ist.
 
@@ -126,7 +126,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 
  Wenn Sie eine App für Android erstellen müssen, die eine erweiterte Grafikbearbeitung erfordert, z.B. ein Spiel, können Sie C++ dazu verwenden. Beginnen Sie mit dem Projekt **Native-Activity Application (Android)** . Dieses Projekt bietet vollständige Unterstützung für die Clang-Toolkette.
 
- ![Vorlage für Projekt mit nativer Aktivität](../cross-platform/media/cross-plat-cpp-native.png "Cross-Plat_CPP_Native")
+ ![Vorlage für Projekt mit nativer Aktivität](../cross-platform/media/cross-plat-cpp-native.png "Kreuz Plat_CPP_Native")
 
  Wenn Sie soweit sind, dass Sie die Anwendung ausführen und die Anzeige prüfen möchten, verwenden Sie den Visual Studio-Emulator für Android. Er ist schnell, zuverlässig und leicht zu installieren und konfigurieren.
 
@@ -147,7 +147,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |[Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Installieren der erforderlichen Tools und anschließendes Erstellen einer App mit systemeigener Aktivität für Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
 |[Informationen zum Visual Studio Emulator für Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
-|[Learn more about sharing C++ code with Android and Windows apps (Weitere Informationen zum Freigeben von C++-Code mit Android- und Windows-Apps)](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
+|[Weitere Informationen zum Freigeben von C++-Code mit Android- und Windows-Apps](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
 |[Beispiele für plattformübergreifende mobile Entwicklung](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[Weitere Beispiele für plattformübergreifende mobile Entwicklung für C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -172,5 +172,5 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 ## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Azure-Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Azure Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

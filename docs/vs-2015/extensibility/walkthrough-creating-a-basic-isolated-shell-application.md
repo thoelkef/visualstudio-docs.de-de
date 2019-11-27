@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating a Basic Isolated Shell Application | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen einer einfachen isolierten Shellanwendung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -19,114 +19,114 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74291271"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Walkthrough: Creating a Basic Isolated Shell Application
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen isolierten Shellanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This walkthrough shows how to create an isolated shell solution, customize the Help About tool window, and create a setup program that installs the isolated shell.  
+In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte shelllösung erstellen, die Hilfe zum Tool Fenster anpassen und ein Setup Programm erstellen, mit dem die isolierte Shell installiert wird.  
   
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen  
- Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. For more information, see [Visual Studio SDK](../extensibility/visual-studio-sdk.md). To deploy the isolated shell, you must also use the Visual Studio Shell (Isolated) Redistributable Package.  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Zum Bereitstellen der isolierten Shell müssen Sie auch das verteilbare Visual Studio Shell-Paket (isoliert) verwenden.  
   
-## <a name="creating-an-isolated-shell-solution"></a>Creating an Isolated Shell Solution  
- This section shows how to use the Visual Studio Shell Isolated project template to create an isolated shell solution. The solution contains the following projects:  
+## <a name="creating-an-isolated-shell-solution"></a>Erstellen einer isolierten shelllösung  
+ In diesem Abschnitt wird gezeigt, wie Sie die isolierte Visual Studio Shell-Projektvorlage verwenden, um eine isolierte shelllösung zu erstellen. Die Lösung enthält die folgenden Projekte:  
   
-- The *SolutionName*.AboutBoxPackage project, which allows you to customize the appearance of the Help/About box.  
+- Der *SolutionName*. Aboutboxpackage-Projekt, mit dem Sie die Darstellung des Felds "Hilfe/Info" anpassen können.  
   
-- The ShellExtensionsVSIX project, which contains the source.extension.vsixmanifest file that defines the different components of the isolated shell application.  
+- Das shellextensionsvsix-Projekt, das die Datei "Source. Extension. vsixmanifest" enthält, die die verschiedenen Komponenten der isolierten Shellanwendung definiert.  
   
-- The *SolutionName* project, which produces the executable file that invokes the isolated shell application. This project contains the Shell Customization folder, which allows you to customiz the appearance and behavior of the isolated shell application.  
+- Das *SolutionName* -Projekt, das die ausführbare Datei erstellt, die die isolierte Shellanwendung aufruft. Dieses Projekt enthält den shellanpassungsordner, mit dem Sie die Darstellung und das Verhalten der isolierten Shellanwendung anpassen können.  
   
-- The *SolutionName* UI project, which produces a satellite assembly that defines active menu commands and localizable strings.  
+- Das *SolutionName* -Benutzeroberflächen Projekt, das eine Satellitenassembly erzeugt, die aktive Menübefehle und lokalisierbare Zeichen folgen definiert.  
   
-#### <a name="to-create-a-basic-isolated-shell-solution"></a>To create a basic isolated shell solution  
+#### <a name="to-create-a-basic-isolated-shell-solution"></a>So erstellen Sie eine grundlegende Lösung für isolierte Shell  
   
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.  
   
-2. In the **New Project** window, expand **Other Project Types** and then **Extensibility**. Select the **Visual Studio Shell Isolated** project template.  
+2. Erweitern Sie im Fenster **Neues Projekt** den Eintrag **andere Projekttypen** , und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie die Vorlage **Visual Studio Shell isoliertes** Projekt aus.  
   
-3. Name the project `MyVSShellStub` and specify a location. Make sure that **Create directory for solution** is checked, and then click **OK**.  
+3. Benennen Sie das Projekt `MyVSShellStub`, und geben Sie einen Speicherort an. Stellen Sie sicher, dass Projektmappenverzeichnis **Erstellen** aktiviert ist, und klicken Sie dann auf **OK**.  
   
-     The new solution appears in **Solution Explorer**.  
+     Die neue Projekt Mappe wird in **Projektmappen-Explorer**angezeigt.  
   
-4. Build the solution and start debugging the isolated shell application.  
+4. Erstellen Sie die Projekt Mappe, und starten Sie das Debugging der isolierten Shellanwendung.  
   
-     The Visual Studio isolated shell appears. The title bar reads **MyVSShellStub**. The title bar icon is generated from \MyVSShellStub\Resource Files\ApplicationIcon.ico.  
+     Die isolierte Visual Studio-Shell wird angezeigt. Die Titelleiste liest **myvsshellstub**. Das Symbol für die Titelleiste wird aus "\meinvsshellstub\ressourcendateien\applicationicon.ico" generiert.  
   
-## <a name="customizing-the-application-name-and-icon"></a>Customizing the Application Name and Icon  
- You may want to brand your application by using the name of your company and its logo in the title bar. The following steps show how to change the name and icon that are displayed in the custom application title bar by changing the package definition file, MyVSShellStub.Application.pkgdef.  
+## <a name="customizing-the-application-name-and-icon"></a>Anpassen des Anwendungs namens und des Symbols  
+ Möglicherweise möchten Sie Ihre Anwendung mit dem Namen Ihres Unternehmens und dem Logo in der Titelleiste versehen. Die folgenden Schritte zeigen, wie Sie den Namen und das Symbol ändern können, die in der Titelleiste der benutzerdefinierten Anwendung angezeigt werden, indem Sie die Paket Definitionsdatei myvsshellstub. Application. pkgdef ändern.  
   
-#### <a name="to-customize-the-application-name-and-icon"></a>To customize the application name and icon  
+#### <a name="to-customize-the-application-name-and-icon"></a>So passen Sie den Anwendungsnamen und das Symbol an  
   
-1. In the MyVSShellStub project, open \Shell Customization\MyVSShellStub.Application.pkgdef.  
+1. Öffnen Sie im Projekt myvsshellstub den Befehl \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2. Change the `AppName` element value to **"AppName"="Fabrikam Music Editor"**  
+2. Ändern Sie den Wert des `AppName` Elements in **"appname" = "Fabrikam Music Editor"** .  
   
-3. To change the application icon, copy a different icon to the \MyVSShellStub\MyVSShellStub\MyVSShellStub\ directory. Rename the existing ApplicationIcon.ico file to ApplicationIcon1.ico. Rename the new file to ApplicationIcon.ico.  
+3. Zum Ändern des Anwendungs Symbols kopieren Sie ein anderes Symbol in das Verzeichnis "\myvsshellstub\meinvsshellstub\meinvsshellstub\". Benennen Sie die vorhandene Datei "ApplicationIcon. ico" in ApplicationIcon1. ico um. Benennen Sie die neue Datei in "ApplicationIcon. ico" um.  
   
-4. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. The isolated shell IDE appears. The title bar has your new icon next to the words **Fabrikam Music Editor**.  
+4. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Die IDE für isolierte Shell wird angezeigt. Die Titelleiste enthält das neue Symbol neben den Wörtern **Fabrikam Music Editor**.  
   
-## <a name="customizing-the-default-web-browser-home-page"></a>Customizing the Default Web Browser Home Page  
- This section shows how to change the default home page of the **Web Browser** window by changing the package definition file.  
+## <a name="customizing-the-default-web-browser-home-page"></a>Anpassen der Standard Webbrowser-Startseite  
+ In diesem Abschnitt wird gezeigt, wie die Standard Startseite des **Webbrowser** Fensters geändert wird, indem die Paket Definitionsdatei geändert wird.  
   
-#### <a name="to-customize-the-default-web-browser-home-page"></a>To customize the default Web Browser home page  
+#### <a name="to-customize-the-default-web-browser-home-page"></a>So passen Sie die Standard Startseite des Webbrowsers an  
   
-1. In the MyVSShellStub.Application.pkgdef file, change the `DefaultHomePage` element value to "<https://www.microsoft.com>".  
+1. Ändern Sie in der Datei myvsshellstub. Application. pkgdef den Wert des `DefaultHomePage` Elements in "<https://www.microsoft.com>".  
   
-2. Rebuild the MyVSShellStub project.  
+2. Erstellen Sie das Projekt myvsshellstub neu.  
   
 3. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen.  
   
-4. In **View / Other Windows**, click **Web Browser**. The **Web Browser** window displays the Microsoft Corporation home page.  
+4. Klicken Sie in der **Ansicht bzw. in anderen Fenstern**auf **Webbrowser**. Im **Webbrowser** Fenster wird die Microsoft Corporation-Startseite angezeigt.  
   
-## <a name="removing-the-print-command"></a>Removing the Print Command  
- The .vsct file in an isolated shell UI project consists of a set of declarations of the form `<Define name=No_`*Element*`>`, where *Element* is one of the standard Visual Studio menus and commands.  
+## <a name="removing-the-print-command"></a>Entfernen des Print-Befehls  
+ Die vsct-Datei in einem Projekt für eine isolierte Shell-Benutzeroberfläche besteht aus einer Reihe von Deklarationen der Form `<Define name=No_`*Element*`>`, wobei *Element* eines der Standardmenüs und-Befehle von Visual Studio ist.  
   
- If a declaration is uncommented, that menu or command is excluded from the isolated shell. Conversely, if a declaration is commented, the menu or command is included in the isolated shell.  
+ Wenn eine Deklaration nicht kommentiert ist, wird das Menü oder der Befehl von der isolierten Shell ausgeschlossen. Wenn eine Deklaration hingegen kommentiert wird, ist das Menü oder der Befehl in der isolierten Shell enthalten.  
   
- In the following steps, you uncomment print command in your .vsct file.  
+ In den folgenden Schritten heben Sie die Auskommentierung des Befehls Drucken in der vsct-Datei auf.  
   
-#### <a name="to-remove-the-print-command"></a>To remove the print command  
+#### <a name="to-remove-the-print-command"></a>So entfernen Sie den Befehl "Drucken"  
   
-1. Verify that the **Print** command appears on the **File** menu in the isolated shell application.  
+1. Überprüfen Sie, ob der Befehl **Drucken** im Menü **Datei** in der isolierten Shellanwendung angezeigt wird.  
   
-2. In the MyVSShellStubUI project, open \Resource Files\MyVSShellStubUI.vsct for editing.  
+2. Öffnen Sie im Projekt myvsshellstubui \ressourcendateien\myvsshellstubui.vsct zur Bearbeitung.  
   
-3. Uncomment this line:  
+3. Kommentieren Sie diese Zeile aus:  
   
     ```  
     <!-- <Define name="No_PrintChildrenCommand"/> -->  
     ```  
   
-4. This removes the print command.  
+4. Dadurch wird der Befehl "Drucken" entfernt.  
   
-5. Start debugging the isolated shell application. Verify that the **File / Print** command is gone.  
+5. Starten Sie das Debuggen der isolierten Shellanwendung. Vergewissern Sie sich, dass der Befehl **File/Print** nicht mehr vorhanden ist.  
   
-## <a name="removing-features-from-the-isolated-shell"></a>Removing Features from the Isolated Shell  
- You can remove some of the packages that are loaded with Visual Studio by editing the .pkgundef file if you do not want those features in your custom isolated shell application. You specify the package in one of the subkeys of the $RootKey$\Packages registry key.  
+## <a name="removing-features-from-the-isolated-shell"></a>Entfernen von Features aus der isolierten Shell  
+ Sie können einige der Pakete entfernen, die mit Visual Studio geladen werden, indem Sie die pkgundef-Datei bearbeiten, wenn Sie diese Funktionen nicht in der benutzerdefinierten Anwendung für isolierte Shell verwenden möchten. Sie geben das Paket in einem der Unterschlüssel des Registrierungsschlüssels "$RootKey $ \packages" an.  
   
 > [!NOTE]
-> To find the GUIDs of Visual Studio features, see [Package GUIDs of Visual Studio Features](../extensibility/package-guids-of-visual-studio-features.md).  
+> Die GUIDs von Visual Studio-Funktionen finden Sie unter [Paket-GUIDs von Visual Studio-Funktionen](../extensibility/package-guids-of-visual-studio-features.md).  
   
- The following procedure shows how to remove the XML editor from the isolated shell.  
+ Im folgenden Verfahren wird gezeigt, wie der XML-Editor aus der isolierten Shell entfernt wird.  
   
-#### <a name="to-remove-the-xml-editor"></a>To remove the XML editor  
+#### <a name="to-remove-the-xml-editor"></a>So entfernen Sie den XML-Editor  
   
-1. Open the MyVSShellStub.pkgundef file in the Shell Customization folder of the MyVSShellStub project.  
+1. Öffnen Sie die Datei myvsshellstub. pkgundef im Ordner shellanpassung des Projekts myvsshellstub.  
   
-2. Uncomment the following line:  
+2. Entfernen Sie die Auskommentierung der folgenden Zeile:  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \packages\\{87569308-4813-40A0-9cd0-d7a30838ca3f}]  
   
-3. Rebuild the solution and start debugging the isolated shell. Open an XML file,for example, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verify that the XML keywords in the file are not colorized and that typing "<" on a line does not bring up XML tooltips.  
+3. Erstellen Sie die Projekt Mappe neu, und starten Sie das Debugging der isolierten Shell Öffnen Sie eine XML-Datei, z. b. \meinvsshellstub\meinvsshellstub\meinvsshellstus\meinvsshellstubui.vsct. Vergewissern Sie sich, dass die XML-Schlüsselwörter in der Datei nicht farbig sind und dass bei der Eingabe von "<" in einer Zeile keine XML-Quick Infos angezeigt werden.  
   
-## <a name="customizing-the-helpabout-box"></a>Customizing the Help/About box  
- You can customize the Help/About box, which is created as part of the isolated shell project template.  
+## <a name="customizing-the-helpabout-box"></a>Anpassen des Felds "Hilfe/Info"  
+ Sie können das Feld "Hilfe/Info" anpassen, das als Teil der Projektvorlage für isolierte Shell erstellt wird.  
   
-#### <a name="to-customize-the-company-name"></a>To customize the company name  
+#### <a name="to-customize-the-company-name"></a>So passen Sie den Firmennamen an  
   
-1. The company name, copyright information, product version, and product description are found in the MyVSShellStub.AboutBoxPackage project, in the \Properties\AssemblyInfo.cs file. Öffnen Sie diese Datei.  
+1. Der Name des Unternehmens, die Copyright Informationen, die Produktversion und die Produktbeschreibung finden Sie im Projekt "myvsshellstub. aboutboxpackage" in der Datei "\Properties\AssemblyInfo.cs". Öffnen Sie diese Datei.  
   
-2. Change the `AssemblyCompany` value to **Fabrikam**, the `AssemblyProduct` and `AssemblyTitle` values to **Fabrikam Music Editor**, and the `AssemblyCopyright` value to **Copyright © Fabrikam 2015**:  
+2. Ändern Sie den `AssemblyCompany` Wert in **Fabrikam**, die Werte für `AssemblyProduct` und `AssemblyTitle` in den **Fabrikam Music Editor**und den Wert `AssemblyCopyright` in **Copyright © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ This walkthrough shows how to create an isolated shell solution, customize the H
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. To add a description of the product, change the `AssemblyDescription` value to **The description of Fabrikam Music editor.** :  
+3. Um eine Beschreibung des Produkts hinzuzufügen, ändern Sie den `AssemblyDescription` Wert in **die Beschreibung des Fabrikam Music-Editors**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. Start debugging and in the isolated shell application, open the **Help / About** box. You should see the changed strings. The title of the Help/About box is the same as the `AssemblyTitle` value in AssemblyInfo.cs.  
+4. Starten Sie das Debugging, und öffnen Sie in der Anwendung für isolierte Shell das Feld **Hilfe/** Info. Die geänderten Zeichen folgen sollten angezeigt werden. Der Titel des Felds Hilfe/Info ist mit dem `AssemblyTitle` Wert in AssemblyInfo.cs identisch.  
   
-5. The properties of the **Help/About** box itself are found in the MyVSShellStub.AboutBoxPackage\AboutBox.xaml file. To change the width of the Help/About box, go to the `AboutDialogStyle` block and set the `Width` property to 200:  
+5. Die Eigenschaften des Felds " **Hilfe/** Info" selbst finden Sie in der Datei "myvsshellstub. aboutboxpackage\aboutbox.XAML". Um die Breite des Felds Hilfe/Info zu ändern, wechseln Sie zum `AboutDialogStyle` Block, und legen Sie die `Width`-Eigenschaft auf 200 fest:  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -160,47 +160,47 @@ This walkthrough shows how to create an isolated shell solution, customize the H
     </Style>  
     ```  
   
-6. Rebuild the solution and start debugging the isolated shell. The Help/About box should be approximately square.  
+6. Erstellen Sie die Projekt Mappe neu, und starten Sie das Debugging der isolierten Shell Das Feld "Hilfe/Info" sollte ungefähr quadratisch sein.  
   
-## <a name="before-you-deploy-the-isolated-shell-application"></a>Before You Deploy the Isolated Shell Application  
- Your isolated shell application can be installed on any computer that has the Visual Studio Shell (Isolated) Redistributable Package. For more information about the redistributable package, see the [Visual Studio Extensibility Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) website.  
+## <a name="before-you-deploy-the-isolated-shell-application"></a>Vor dem Bereitstellen der isolierten Shellanwendung  
+ Ihre isolierte Shell-Anwendung kann auf jedem Computer installiert werden, auf dem das verteilbare Paket von Visual Studio Shell (isoliert) installiert ist. Weitere Informationen zum verteilbaren Paket finden Sie auf der Website [Visual Studio-Erweiterbarkeits Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) .  
   
-## <a name="deploying-the-isolated-shell-application"></a>Deploying the Isolated Shell Application  
- You deploy your isolated shell application to a target computer by creating a setup project. You must specify these things:  
+## <a name="deploying-the-isolated-shell-application"></a>Bereitstellen der isolierten Shellanwendung  
+ Sie stellen die isolierte Shellanwendung auf einem Bereitstellungs Zielcomputer bereit, indem Sie ein Setup-Projekt erstellen. Sie müssen Folgendes angeben:  
   
-- The layout of the folders and files on the target computer.  
+- Das Layout der Ordner und Dateien auf dem Zielcomputer.  
   
-- The launch conditions that guarantee that the .NET Framework and the Visual Studio shell runtime are installed on the target computer.  
+- Die Startbedingungen, die sicherstellen, dass die .NET Framework und die Visual Studio Shell-Laufzeit auf dem Bereitstellungs Zielcomputer installiert sind.  
   
-  In the following procedure you will need to install InstallShield Limited Edition on your computer.  
+  Im folgenden Verfahren müssen Sie InstallShield Limited Edition auf Ihrem Computer installieren.  
   
-#### <a name="to-create-the-setup-project"></a>To create the setup project  
+#### <a name="to-create-the-setup-project"></a>So erstellen Sie das Setup-Projekt  
   
-1. In **Solution Explorer**, right-click the solution node and then click **Add New Project**.  
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Lösungs Knoten, und klicken Sie dann auf **Neues Projekt hinzufügen**.  
   
-2. In the **New Project** dialog box, expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template. Name the new project `MySetup` and then click **OK**.  
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **andere Projekttypen** , und wählen Sie dann **Setup und Bereitstellung**aus. Wählen Sie die Vorlage InstallShield aus. Benennen Sie das neue Projekt `MySetup` und klicken Sie dann auf **OK**.  
   
-3. If InstallShield Limited Edition is already installed, continue to the next step.  
+3. Wenn InstallShield Limited Edition bereits installiert ist, fahren Sie mit dem nächsten Schritt fort.  
   
-    If InstallShield Limited Edition is not already installed, the InstallShield download page appears. Follow the instructions to download and install the product, choosing the version of InstallShield that is compatible with your version of Visual Studio. You must decide whether to register your installation of InstallShield or use it as an evaluation. You must restart Visual Studio after you complete the installation.  
+    Wenn InstallShield Limited Edition noch nicht installiert ist, wird die InstallShield-Downloadseite angezeigt. Befolgen Sie die Anweisungen zum herunterladen und Installieren des Produkts, und wählen Sie die Version von InstallShield aus, die mit Ihrer Version von Visual Studio kompatibel ist. Sie müssen entscheiden, ob Sie die Installation von InstallShield registrieren oder als Evaluierungsversion verwenden möchten. Sie müssen Visual Studio nach Abschluss der Installation neu starten.  
   
    > [!IMPORTANT]
-   > You must start Visual Studio as an administrator before you create an InstallShield project. If you do not do so, you will get an error when you build the project.  
+   > Vor dem Erstellen eines InstallShield-Projekts müssen Sie Visual Studio als Administrator starten. Wenn Sie dies nicht tun, erhalten Sie eine Fehlermeldung, wenn Sie das Projekt erstellen.  
   
-   The next steps show how to configure the setup project.  
+   In den nächsten Schritten wird gezeigt, wie Sie das Setup-Projekt konfigurieren.  
   
 > [!IMPORTANT]
-> Make sure that you have built the release configuration of your isolated shell project at least once before you configure the setup project.  
+> Stellen Sie sicher, dass Sie die Releasekonfiguration des isolierten shellprojekts mindestens einmal erstellt haben, bevor Sie das Setup-Projekt konfigurieren.  
   
-#### <a name="to-configure-the-setup-project"></a>To configure the setup project  
+#### <a name="to-configure-the-setup-project"></a>So konfigurieren Sie das Setup-Projekt  
   
-1. In the **Solution Explorer**, under the **MySetup** project, choose **Project Assistant**. On the bottom row of the **Project Assistant** window, choose **Application Information**. Enter **Fabrikam** as your company name and **Fabrikam Music Editor** as your application name. Choose the forward arrow at the bottom right of the **Project Assistant**.  
+1. Wählen Sie im **Projektmappen-Explorer**unter dem Projekt **mySetup** die Option **Projekt-Assistent**aus. Wählen Sie in der unteren Zeile des Fensters **Projekt-Assistent** die Option **Anwendungsinformationen**aus. Geben Sie unter Unternehmens Name den Namen **Fabrikam** **und den Anwendungsnamen als Anwendungs** Namen ein. Wählen Sie den vorwärts Pfeil unten rechts im Projekt- **Assistent**aus.  
   
-2. Select **Yes** under **Does your application require any software to be installed on the machine?** and then select **Microsoft .NET Framework 4.5 Full Package**.  
+2. Wählen Sie unter **ist Ihre Anwendung muss Software auf dem Computer installiert sein? die** Option **Ja** aus, und wählen Sie dann **Microsoft .net vollständigen Paket für Framework 4,5**aus.  
   
-3. Choose the **Application Files** button at the bottom of the window, and make sure that the **Fabrikam Music Editor** folder is selected.  
+3. Wählen Sie unten im Fenster die Schaltfläche **Anwendungs Dateien** aus, und vergewissern Sie sich, dass der Ordner **Fabrikam Music Editor** ausgewählt ist.  
   
-4. Choose the **Add Files** button. In the **Add Files** dialog box, add the following files from the **MyVSShellStub\Release** folder:  
+4. Wählen Sie die Schaltfläche **Dateien hinzufügen** aus. Fügen Sie im Dialogfeld " **Dateien hinzufügen** " die folgenden Dateien aus dem Ordner " **myvsshellstub\release** " hinzu:  
   
     1. MyVSShellStub.exe.config  
   
@@ -214,49 +214,49 @@ This walkthrough shows how to create an isolated shell solution, customize the H
   
     6. MyVSShellStub.winprf  
   
-    7. Splash.bmp  
+    7. Splash. bmp  
   
-5. Click the **Add Project Outputs** button and add **MyVSShellStub/Primary Output**. Klicken Sie auf **OK**.  
+5. Klicken Sie auf die Schaltfläche **Projekt Ausgaben hinzufügen** , und fügen Sie **myvsshellstub/Primary Output**hinzu. Klicken Sie auf **OK**.  
   
-6. In the left pane, under **Destination Computer**, right-click the **Fabrikam Music Editor [INSTALLDIR]** node and add a **New Folder** named **Extensions**.  
+6. Klicken Sie im linken Bereich unter **Ziel Computer**mit der rechten Maustaste auf den Knoten **Fabrikam Music Editor [INSTALLDIR]** , und fügen Sie einen **neuen Ordner** mit dem Namen **Extensions**hinzu.  
   
-7. Right-click the **Extensions** node in the left pane and add a new folder named **Application**.  
+7. Klicken Sie mit der rechten Maustaste auf den Knoten **Erweiterungen** im linken Bereich, und fügen Sie einen neuen Ordner mit dem Namen **Application**  
   
-8. Select the **Application** folder and click the **Add Project Outputs** button, then select the primary output from the MyVSShellStub.AboutBoxPackage project.  
+8. Wählen Sie den **Anwendungs** Ordner aus, und klicken Sie auf die Schaltfläche **Projekt Ausgaben hinzufügen** . Wählen Sie dann die primäre Ausgabe aus dem Projekt myvsshellstub. aboutboxpackage aus.  
   
-9. Click the **Add Files** button and from the \MyVSShellStub\Release\Extensions\Application\ folder add the following files:  
+9. Klicken Sie auf die Schaltfläche **Dateien hinzufügen** , und fügen Sie im Ordner \myvsshellstub\release\extensions\application\ die folgenden Dateien hinzu:  
   
     - MyVSShellStub.AboutBoxPackage.pkgdef  
   
     - MyVSShellStub.Application.pkgdef  
   
-10. Right-click the **Fabrikam Music Editor [INSTALLDIR]** node in the left pane and add a new folder named **1033**.  
+10. Klicken Sie im linken Bereich mit der rechten Maustaste auf den Knoten **Fabrikam Music Editor [INSTALLDIR]** , und fügen Sie einen neuen Ordner mit dem Namen **1033**hinzu.  
   
-11. Select the 1033 folder and then click the **Add Project Outputs** button, and select the primary output from the MyVSShellStubUI project.  
+11. Wählen Sie den Ordner 1033 aus, und klicken Sie dann auf die Schaltfläche **Projekt Ausgaben hinzufügen** . Wählen Sie dann die primäre Ausgabe aus dem Projekt myvsshellstubui aus.  
   
-12. Move to the **Application Shortcuts** window.  
+12. Wechseln Sie zum Fenster **Anwendungs** Verknüpfungen.  
   
-13. Click **New** to create a shortcut and select **[ProgramFilesFolder]\Fabrikam\Fabrikam Music Editor\MyVSShellStub.Primary Output**.  
+13. Klicken Sie auf " **neu** ", um eine Verknüpfung zu erstellen, und wählen Sie " **[ProgramFilesFolder] \fabrikam\fabrikam Music editor\myvsshellstub.Primary Output**" aus.  
   
-14. Move to the **Installation Interview** pane.  
+14. Wechseln Sie zum Bereich **Installations Interview** .  
   
-15. Set all items to **No**.  
+15. Legen Sie alle Elemente auf **Nein**fest.  
   
-16. In **Solution Explorer**, in the MySetup project, open **Define Setup Requirements and Actions \ Requirements**. The **Requirements** window opens.  
+16. Öffnen Sie in **Projektmappen-Explorer**im Projekt mySetup die **Einstellung Setup Anforderungen und Aktionen \ Anforderungen definieren**. Das Fenster **Anforderungen** wird geöffnet.  
   
-17. Right click **System Software Requirements** and select **Create New Launch Condition**. The **System Search Wizard** appears.  
+17. Klicken Sie mit der rechten Maustaste auf **System Software Anforderungen** und dann auf **neue Startbedingung erstellen**. Der **Assistent für die System Suche** wird angezeigt.  
   
-18. In the **What do you want to find?** pane, choose **Registry Entry** in the drop-down list and click **Next**.  
+18. Wählen Sie im Bereich **Was möchten Sie suchen?** die Option **Registrierungs Eintrag** in der Dropdown Liste aus, und klicken Sie auf **weiter**.  
   
-19. In the **How do you want to look for it?** pane, select **HKEY_LOCAL_MACHINE** as the registry root. Enter **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** for 64-bit systems or **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** for 32-bit systems, and enter **Install** as the registry value. Klicken Sie auf **Weiter**.  
+19. Wählen Sie im Bereich **wie möchten Sie suchen?** den **HKEY_LOCAL_MACHINE** als Registrierungs Stamm aus. Geben Sie **software\wow6432node\microsoft\devdiv\vs\servicing\14.0\isoshell** für 64-Bit-Systeme oder **software\microsoft\devdiv\vs\servicing\14.0\isoshell** für 32-Bit-Systeme ein, und geben Sie **install** als Registrierungs Wert ein. Klicken Sie auf **Weiter**.  
   
-20. In the **What do you want to do with the value?** pane, enter **This product requires the Visual Studio 2015 Isolated Shell Redistributable to be installed.** as the display text and click **Finish**.  
+20. Geben Sie im Bereich **Was möchten Sie mit dem Wert machen?** ein, dass **für dieses Produkt die Installation von Visual Studio 2015 isolierte Shell Redistributable erforderlich ist.** als Anzeige Text, und klicken Sie auf **Fertig**stellen.  
   
-21. Rebuild the isolated shell solution to create the setup project.  
+21. Erstellen Sie die Lösung für isolierte Shell neu, um das Setup Projekt zu erstellen.  
   
-     You can find the setup.exe file in the following folder:  
+     Sie finden die Datei "Setup. exe" im folgenden Ordner:  
   
-     \MyVSShellStub\MySetup\MySetup\Express\SingleImage\DiskImages\DISK1  
+     \Meinvsshellstub\mysetup\mysetup\express \singleimage\diskimages\disk1  
   
-## <a name="testing-the-installation-program"></a>Testing the Installation Program  
- To test the setup, copy the setup.exe file to a different computer and run the Setup executable. You should be able to run the isolated shell application.
+## <a name="testing-the-installation-program"></a>Testen des Installationsprogramms  
+ Zum Testen des Setups kopieren Sie die Datei "Setup. exe" auf einen anderen Computer, und führen Sie die ausführbare Setup Datei aus. Sie sollten in der Lage sein, die isolierte Shellanwendung auszuführen.

@@ -1,5 +1,5 @@
 ---
-title: Sign in to Visual Studio 2015 | Microsoft Docs
+title: Anmelden bei Visual Studio 2015 | Microsoft-Dokumentation
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -46,7 +46,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
  Nach Angabe der Einstellungen wird Visual Studio gestartet. Sie sind nun registriert und können beginnen. Um sicherzustellen, dass Sie angemeldet sind, suchen Sie in der rechten oberen Ecke der Visual Studio-Umgebung nach Ihrem Namen.
 
- ![Currentlly logged in user](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Currentlly angemeldeter Benutzer](../ide/media/vs2015-username.png "VS2015_UserName")
 
  Sofern Sie sich nicht abmelden, sind Sie automatisch angemeldet, wenn Sie Visual Studio starten. Alle Änderungen an den synchronisierten Einstellungen werden automatisch übernommen. Wählen Sie zum Abmelden den Pfeil nach unten neben Ihrem Profilnamen in der Visual Studio-Umgebung, wählen Sie den Befehl **Kontoeinstellungen** , und wählen Sie dann den Link **Abmelden** . Für eine erneute Anmeldung wählen Sie den Befehl **Anmelden** in der rechten oberen Ecke der Visual Studio-Umgebung.
 

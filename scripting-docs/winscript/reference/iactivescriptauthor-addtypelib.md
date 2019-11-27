@@ -52,7 +52,7 @@ HRESULT AddTypeLib(
  in Nicht verwendet.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -62,6 +62,6 @@ HRESULT AddTypeLib(
  Diese Methode ruft `LoadTypeLib` auf, um die Typbibliothek zu laden. Bei erfolgreicher Ausführung ruft diese Methode `IActiveScriptAuthor::AddNamedItem` auf, um Typinformationen hinzuzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)    
- [Iactivescriptauthor:: addnameditem](../../winscript/reference/iactivescriptauthor-addnameditem.md) -   
+ [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

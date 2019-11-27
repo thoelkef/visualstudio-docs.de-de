@@ -42,7 +42,7 @@ HRESULT GetName(
  Untergeordnete Einträge stellen ein einzelnes Funktions Objekt dar.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -51,5 +51,5 @@ HRESULT GetName(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)    
+ [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

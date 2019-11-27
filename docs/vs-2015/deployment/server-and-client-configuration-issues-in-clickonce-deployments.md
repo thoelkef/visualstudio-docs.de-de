@@ -1,5 +1,5 @@
 ---
-title: Server and Client Configuration Issues in ClickOnce Deployments | Microsoft Docs
+title: Probleme mit der Server-und Client Konfiguration in ClickOnce-bereit Stellungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -28,13 +28,13 @@ ms.locfileid: "74295215"
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-If you use Internet Information Services (IIS) on Windows Server, and your deployment contains a file type that Windows does not recognize, such as a Microsoft Word file, IIS will refuse to transmit that file, and your deployment will not succeed.  
+Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und die Bereitstellung einen Dateityp enthält, den Windows nicht erkennt (z. b. eine Microsoft Word-Datei), lehnt IIS die Übertragung dieser Datei ab, und die Bereitstellung kann nicht erfolgreich ausgeführt werden.  
   
- Additionally, some Web servers and Web application software, such as [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], contain a list of files and file types that you cannot download. For example, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] prevents the download of all Web.config files. These files may contain sensitive information such as user names and passwords.  
+ Darüber hinaus enthalten einige Webserver und Webanwendungs Software, z. b. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], eine Liste von Dateien und Dateitypen, die Sie nicht herunterladen können. Beispielsweise wird durch [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] verhindert, dass alle Web. config-Dateien heruntergeladen werden. Diese Dateien können vertrauliche Informationen enthalten, wie z. b. Benutzernamen und Kenn Wörter.  
   
- Although this restriction should cause no problems for downloading core [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] files such as manifests and assemblies, this restriction may prevent you from downloading data files included as part of your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. In [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], you can resolve this error by removing the handler that prohibits downloading of such files from the IIS configuration manager. See the IIS server documentation for additional details.  
+ Obwohl diese Einschränkung keine Probleme beim Herunterladen von Kern [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Dateien (z. b. Manifeste und Assemblys) verursachen sollte, kann diese Einschränkung verhindern, dass Sie Datendateien herunterladen, die als Teil ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung enthalten In [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]können Sie diesen Fehler beheben, indem Sie den Handler entfernen, der das Herunterladen solcher Dateien aus dem IIS-Konfigurations-Manager untersagt. Weitere Informationen finden Sie in der Dokumentation zum IIS-Server.  
   
- Some Web servers might block files with extensions such as .dll, .config, and .mdf. Windows-based applications typically include files with some of these extensions. If a user attempts to run a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application that accesses a blocked file on a Web server, an error will result. Rather than unblocking all file extensions, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] publishes every application file with a ".deploy" file extension by default. Therefore, the administrator only needs to configure the Web server to unblock the following three file extensions:  
+ Einige Webserver blockieren möglicherweise Dateien mit Erweiterungen wie ". dll", ". config" und ". mdf". Windows-basierte Anwendungen enthalten in der Regel Dateien mit einigen dieser Erweiterungen. Wenn ein Benutzer versucht, eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung auszuführen, die auf eine blockierte Datei auf einem Webserver zugreift, führt dies zu einem Fehler. Anstatt alle Dateierweiterungen zu entsperren, veröffentlicht [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jede Anwendungsdatei standardmäßig mit der Dateierweiterung ". bereitstellen". Daher muss der Administrator den Webserver nur so konfigurieren, dass die Blockierung der folgenden drei Dateierweiterungen blockiert wird:  
   
 - APPLICATION  
   
@@ -42,48 +42,48 @@ If you use Internet Information Services (IIS) on Windows Server, and your deplo
   
 - DEPLOY  
   
-  However, you can disable this option by clearing the **Use ".deploy" file extension** option on the [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), in which case you must configure the Web server to unblock all file extensions used in the application.  
+  Sie können diese Option jedoch deaktivieren, indem Sie im [Dialog Feld "Veröffentlichungs Optionen](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)" die Option **". Bereitstellungs Dateierweiterung verwenden** " deaktivieren. in diesem Fall müssen Sie den Webserver so konfigurieren, dass alle in der Anwendung verwendeten Dateierweiterungen entsperrt werden.  
   
-  You will have to configure .manifest, .application, and .deploy, for example, if you are using IIS where you have not installed the [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], or if you are using another Web server (for example, Apache).  
+  Sie müssen die. Manifest-, Application-und.-Bereitstellung konfigurieren, z. b. Wenn Sie IIS verwenden, bei dem Sie die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]nicht installiert haben, oder wenn Sie einen anderen Webserver (z. b. Apache) verwenden.  
   
-## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce and Secure Sockets Layer (SSL)  
- A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application will work fine over SSL, except when Internet Explorer raises a prompt about the SSL certificate. The prompt can be raised when there is something wrong with the certificate, such as when the site names do not match or the certificate has expired. To make [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] work over an SSL connection, make sure that the certificate is up-to-date, and that the certificate data matches the site data.  
+## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce und Secure Sockets Layer (SSL)  
+ Eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung funktioniert problemlos über SSL, außer wenn Internet Explorer eine Aufforderung zum SSL-Zertifikat auslöst. Die Eingabeaufforderung kann ausgelöst werden, wenn ein Problem mit dem Zertifikat vorliegt, z. b. wenn die Standortnamen nicht stimmen oder das Zertifikat abgelaufen ist. Stellen Sie sicher, dass das Zertifikat auf dem neuesten Stand ist und dass die Zertifikat Daten mit den Standortdaten übereinstimmen, um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] über eine SSL-Verbindung zu arbeiten.  
   
-## <a name="clickonce-and-proxy-authentication"></a>ClickOnce and Proxy Authentication  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] provides support for Windows Integrated proxy authentication starting in .NET Framework 3.5. No specific machine.config directives are required. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] does not provide support for other authentication protocols such as Basic or Digest.  
+## <a name="clickonce-and-proxy-authentication"></a>ClickOnce und Proxy Authentifizierung  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bietet Unterstützung für die integrierte Windows-Proxy Authentifizierung ab .NET Framework 3,5. Bestimmte Machine. config-Direktiven sind nicht erforderlich. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bietet keine Unterstützung für andere Authentifizierungsprotokolle, wie z. b. Basic oder Digest.  
   
- You can also apply a hotfix to .NET Framework 2.0 to enable this feature. Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Sie können auch einen Hotfix auf .NET Framework 2,0 anwenden, um dieses Feature zu aktivieren. Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?LinkId=158730.  
   
- For more information, see [\<defaultProxy> Element (Network Settings)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Weitere Informationen finden Sie unter [\<defaultProxy >-Element (Netzwerkeinstellungen)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
-## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce and Web Browser Compatibility  
- Currently, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installations will launch only if the URL to the deployment manifest is opened using Internet Explorer. A deployment whose URL is launched from another application, such as Microsoft Office Outlook, will launch successfully only if Internet Explorer is set as the default Web browser.  
+## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce und Webbrowser Kompatibilität  
+ Zurzeit werden [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Installationen nur gestartet, wenn die URL des Bereitstellungs Manifests mithilfe von Internet Explorer geöffnet wird. Eine Bereitstellung, deren URL von einer anderen Anwendung, z. b. Microsoft Office Outlook, gestartet wird, wird nur dann erfolgreich gestartet, wenn Internet Explorer als Standard Webbrowser festgelegt ist.  
   
 > [!NOTE]
-> Mozilla Firefox is supported if the deployment provider is not blank or the Microsoft .NET Framework Assistant extension is installed. This extension is packaged with .NET Framework 3.5 SP1. For XBAP support, the NPWPF plug-in is activated when needed.  
+> Mozilla Firefox wird unterstützt, wenn der Bereitstellungs Anbieter nicht leer ist oder die Erweiterung des Microsoft .NET Framework-Assistenten installiert ist. Diese Erweiterung ist mit .NET Framework 3,5 SP1 verpackt. Bei der XBAP-Unterstützung wird das npwpf-Plug-in bei Bedarf aktiviert.  
   
-## <a name="activating-clickonce-applications-through-browser-scripting"></a>Activating ClickOnce Applications Through Browser Scripting  
- If you have developed a custom Web page that launches a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application using Active Scripting, you may find that the application will not launch on some machines. Internet Explorer contains a setting called **Automatic prompting for file downloads**, which affects this behavior. This setting is available on the **Security** Tab in its **Options** menu that affects this behavior. It is called **Automatic prompting for file downloads**, and it is listed underneath the **Downloads** category. The property is set to **Enable** by default for intranet Web pages, and to **Disable** by default for Internet Web pages. When this setting is set to **Disable**, any attempt to activate a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application programmatically (for example, by assigning its URL to the `document.location` property) will be blocked. Under this circumstance, users can launch applications only through a user-initiated download, for example, by clicking a hyperlink set to the application's URL.  
+## <a name="activating-clickonce-applications-through-browser-scripting"></a>Aktivieren von ClickOnce-Anwendungen mithilfe von Browser Skripts  
+ Wenn Sie eine benutzerdefinierte Webseite entwickelt haben, die eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung mithilfe von Active Scripting startet, werden Sie möglicherweise feststellen, dass die Anwendung auf einigen Computern nicht gestartet wird. Internet Explorer enthält eine Einstellung, die als **Automatische Eingabeaufforderung für Dateidownloads**bezeichnet wird, was sich auf dieses Verhalten auswirkt. Diese Einstellung ist im Menü **Optionen** auf der Registerkarte **Sicherheit** verfügbar und wirkt sich auf dieses Verhalten aus. Sie wird als **Automatische Aufforderung zum Herunterladen von Dateien**bezeichnet und unterhalb der Kategorie **Downloads** aufgeführt. Die-Eigenschaft ist so festgelegt, dass Sie für Intranetwebseiten standardmäßig **aktiviert** und für Internet Webseiten standardmäßig **deaktiviert** wird. Wenn diese Einstellung auf **Deaktivieren**festgelegt ist, wird jeder Versuch, eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung Programm gesteuert zu aktivieren (z. b. durch Zuweisen der URL zur `document.location`-Eigenschaft) blockiert. Unter diesen Umständen können Benutzer Anwendungen nur über einen vom Benutzer initiierten Download starten, indem Sie beispielsweise auf einen Hyperlink klicken, der auf die URL der Anwendung festgelegt ist.  
   
-## <a name="additional-server-configuration-issues"></a>Additional Server Configuration Issues  
+## <a name="additional-server-configuration-issues"></a>Zusätzliche Probleme bei der Server Konfiguration  
   
-##### <a name="administrator-permissions-required"></a>Administrator Permissions Required  
- You must have Administrator permissions on the target server if you are publishing with HTTP. IIS requires this permissions level. If you are not publishing using HTTP, you only need write permission on the target path.  
+##### <a name="administrator-permissions-required"></a>Administrator Berechtigungen erforderlich  
+ Wenn Sie mit http veröffentlichen, müssen Sie über Administrator Berechtigungen auf dem Zielserver verfügen. IIS erfordert diese Berechtigungsstufe. Wenn Sie nicht mit http veröffentlichen, benötigen Sie nur die Schreib Berechtigung für den Zielpfad.  
   
-##### <a name="server-authentication-issues"></a>Server Authentication Issues  
- When you publish to a remote server that has "Anonymous Access" turned off, you will receive the following warning:  
+##### <a name="server-authentication-issues"></a>Probleme mit der Server Authentifizierung  
+ Wenn Sie auf einem Remote Server veröffentlichen, auf dem "Anonymer Zugriff" deaktiviert ist, erhalten Sie die folgende Warnung:  
   
 ```  
 "The files could not be downloaded from http://<remoteserver>/<myapplication>/.  The remote server returned an error: (401) Unauthorized."  
 ```  
   
 > [!NOTE]
-> You can make NTLM (NT challenge-response) authentication work if the site prompts for credentials other than your default credentials, and, in the security dialog box, you click **OK** when you are prompted if you want to save the supplied credentials for future sessions. However, this workaround will not work for basic authentication.  
+> Sie können die NTLM-Authentifizierung (NT Challenge-Response) aktivieren, wenn die Website zur Eingabe von Anmelde Informationen verwendet, die nicht Ihren Standard Anmelde Informationen entsprechen, und Sie im Dialogfeld Sicherheit auf **OK** klicken, wenn Sie dazu aufgefordert werden, die angegebenen Anmelde Informationen für zukünftige Sitzungen zu speichern. Diese Problem Umgehung funktioniert jedoch nicht bei der Standard Authentifizierung.  
   
-## <a name="using-third-party-web-servers"></a>Using Third-Party Web Servers  
- If you are deploying a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application from a Web server other than IIS, you may experience a problem if the server is returning the incorrect content type for key [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] files, such as the deployment manifest and application manifest. To resolve this problem, see your Web server's Help documentation about how to add new content types to the server, and make sure that all the file name extension mappings listed in the following table are in place.  
+## <a name="using-third-party-web-servers"></a>Verwenden von Drittanbieter-Webservern  
+ Wenn Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung von einem anderen Webserver als IIS bereitstellen, tritt möglicherweise ein Problem auf, wenn der Server den falschen Inhaltstyp für Schlüssel [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Dateien zurückgibt, wie z. b. das Bereitstellungs Manifest und das Anwendungs Manifest. Um dieses Problem zu beheben, finden Sie in der Hilfe Dokumentation Ihres Webservers Informationen zum Hinzufügen neuer Inhaltstypen zum Server, und stellen Sie sicher, dass alle in der folgenden Tabelle aufgeführten Dateinamen-Erweiterungs Zuordnungen vorhanden sind.  
   
-|Dateinamenerweiterung|Inhaltstyp|  
+|Dateinamenerweiterung|Art des Inhalts|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -91,51 +91,51 @@ If you use Internet Information Services (IIS) on Windows Server, and your deplo
 |`.msu`|`application/octet-stream`|  
 |`.msp`|`application/octet-stream`|  
   
-## <a name="clickonce-and-mapped-drives"></a>ClickOnce and Mapped Drives  
- If you use Visual Studio to publish a ClickOnce application, you cannot specify a mapped drive as the installation location. However, you can modify the ClickOnce application to install from a mapped drive by using the Manifest Generator and Editor (Mage.exe and MageUI.exe). Weitere Informationen finden Sie unter [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) und [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+## <a name="clickonce-and-mapped-drives"></a>ClickOnce und zugeordnete Laufwerke  
+ Wenn Sie Visual Studio verwenden, um eine ClickOnce-Anwendung zu veröffentlichen, können Sie kein zugeordnetes Laufwerk als Installations Speicherort angeben. Sie können jedoch die ClickOnce-Anwendung so ändern, dass Sie von einem zugeordneten Laufwerk aus mithilfe des Manifest-Generators und des Editors ("Mage. exe" und "MageUI. exe") installiert wird. Weitere Informationen finden Sie unter [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) und [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP Protocol Not Supported for Installing Applications  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] supports installing applications from any HTTP 1.1 Web server or file server. FTP, the File Transfer Protocol, is not supported for installing applications. You can use FTP to publish applications only. The following table summarizes these differences:  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll wird für die Installation von Anwendungen nicht unterstützt  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] unterstützt die Installation von Anwendungen von einem beliebigen HTTP 1,1-Webserver oder-Dateiserver. FTP, die Dateiübertragungsprotokoll, wird für die Installation von Anwendungen nicht unterstützt. Sie können FTP nur zum Veröffentlichen von Anwendungen verwenden. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:  
   
-|URL Type|Beschreibung|  
+|URL-Typ|Beschreibung|  
 |--------------|-----------------|  
-|ftp://|You can publish a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application by using this protocol.|  
-|http://|You can install a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application by using this protocol.|  
-|https://|You can install a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application by using this protocol.|  
-|file://|You can install a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application by using this protocol.|  
+|ftp://|Sie können eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung mithilfe dieses Protokolls veröffentlichen.|  
+|http://|Mithilfe dieses Protokolls können Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installieren.|  
+|https://|Mithilfe dieses Protokolls können Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installieren.|  
+|file://|Mithilfe dieses Protokolls können Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installieren.|  
   
 ## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows Firewall  
- By default, Windows XP SP2 enables the Windows Firewall. If you are developing your application on a computer that has Windows XP installed, you are still able to publish and run [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications from the local server that is running IIS. However, you cannot access that server that is running IIS from another computer unless you open the Windows Firewall. See Windows Help for instructions on managing the Windows Firewall.  
+ Standardmäßig wird die Windows-Firewall von Windows XP SP2 aktiviert. Wenn Sie Ihre Anwendung auf einem Computer entwickeln, auf dem Windows XP installiert ist, können Sie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen weiterhin auf dem lokalen Server veröffentlichen und ausführen, auf dem IIS ausgeführt wird. Sie können jedoch nicht auf den Server zugreifen, auf dem IIS von einem anderen Computer ausgeführt wird, sofern Sie nicht die Windows-Firewall öffnen. Anweisungen zur Verwaltung der Windows-Firewall finden Sie in der Windows-Hilfe.  
   
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Enable FrontPage server extensions  
- FrontPage Server Extensions from Microsoft is required for publishing applications to a Windows Web server that uses HTTP.  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: FrontPage-Server Erweiterungen aktivieren  
+ Zum Veröffentlichen von Anwendungen auf einem Windows-Webserver, der HTTP verwendet, sind FrontPage-Servererweiterungen von Microsoft erforderlich.  
   
- By default, Windows Server does not have FrontPage Server Extensions installed. If you want to use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to publish to a Windows Server Web server that uses HTTP with FrontPage Server Extensions, you must install FrontPage Server Extensions first. You can perform the installation by using the Manage Your Server administration tool in Windows Server.  
+ Standardmäßig ist auf Windows Server keine FrontPage-Servererweiterungen installiert. Wenn Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden möchten, um auf einem Windows Server-Webserver zu veröffentlichen, der HTTP mit FrontPage-Servererweiterungen verwendet, müssen Sie zuerst FrontPage-Servererweiterungen installieren. Sie können die Installation mithilfe des Verwaltungs Tools Server verwalten in Windows Server ausführen.  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Locked-Down Content Types  
- IIS on [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] locks down all file types except for certain known content types (for example, .htm, .html, .txt, and so on). To enable deployment of [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications using this server, you need to change the IIS settings to allow downloading files of type .application, .manifest, and any other custom file types used by your application.  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: gesperrte Inhaltstypen  
+ IIS auf [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] sperrt alle Dateitypen außer für bestimmte bekannte Inhaltstypen (z. b. htm, HTML, txt usw.). Um die Bereitstellung von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen mit diesem Server zu ermöglichen, müssen Sie die IIS-Einstellungen ändern, um das Herunterladen von Dateien vom Typ ". Application", "Manifest" und anderen von der Anwendung verwendeten benutzerdefinierten Dateitypen zuzulassen.  
   
- If you deploy using an IIS server, run inetmgr.exe and add new File Types for the default Web page:  
+ Wenn Sie die Bereitstellung über einen IIS-Server durchführen, führen Sie inetmgr. exe aus, und fügen Sie neue Dateitypen für die Standard Webseite hinzu:  
   
-- For the .application and .manifest extensions, the MIME type should be "application/x-ms-application." For other file types, the MIME type should be "application/octet-stream."  
+- Für die Erweiterungen ". Application" und ". Manifest" sollte der MIME-Typ "application/x-ms-application" lauten. Bei anderen Dateitypen sollte der MIME-Typ "Application/Octett-Stream" lauten.  
   
-- If you create a MIME type with extension "*" and the MIME type "application/octet-stream," it will allow files of unblocked file type to be downloaded. (However, blocked file types such as .aspx and .asmx cannot be downloaded.)  
+- Wenn Sie einen MIME-Typ mit der Erweiterung "*" und dem MIME-Typ "Application/Octett-Stream" erstellen, können Dateien vom Typ "nicht blockierter Dateityp" heruntergeladen werden. (Blockierte Dateitypen wie ASPX und ASMX können jedoch nicht heruntergeladen werden.)  
   
-  For specific instructions on configuring MIME types on Windows Server, refer to Microsoft Knowledge Base article KB326965, "IIS 6.0 Does Not Serve Unknown MIME Types" at [https://support.microsoft.com/default.aspx?scid=kb;en-us;326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Spezifische Anweisungen zum Konfigurieren von MIME-Typen unter Windows Server finden Sie im Microsoft Knowledge Base-Artikel KB326965, "IIS 6,0 bedient keine unbekannten MIME-Typen" unter [https://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
-## <a name="content-type-mappings"></a>Content Type Mappings  
- When publishing over HTTP, the content type (also known as MIME type) for the .application file should be "application/x-ms-application." If you have [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] installed on the server, this will be set for you automatically. If this is not installed, then you need to create a MIME type association for the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application vroot (or entire server).  
+## <a name="content-type-mappings"></a>Inhaltstyp Zuordnungen  
+ Beim Veröffentlichen über HTTP sollte der Inhaltstyp (auch als MIME-Typ bezeichnet) für die Anwendungsdatei "application/x-ms-application" lauten. Wenn Sie [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] auf dem Server installiert haben, wird dieser automatisch für Sie festgelegt. Wenn dies nicht installiert ist, müssen Sie eine MIME-Typzuordnung für den [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Application vroot (oder den gesamten Server) erstellen.  
   
- If you deploy using an IIS server, run inetmgr.exe and add a new content type of "application/x-ms-application" for the .application extension.  
+ Wenn Sie die Bereitstellung über einen IIS-Server ausführen, führen Sie inetmgr. exe aus, und fügen Sie den neuen Inhaltstyp "application/x-ms-application" für die Erweiterung ". Application" hinzu.  
   
-## <a name="http-compression-issues"></a>HTTP Compression Issues  
- With [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], you can perform downloads that use HTTP compression, a Web server technology that uses the GZIP algorithm to compress a data stream before sending the stream to the client. The client—in this case, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]—decompresses the stream before reading the files.  
+## <a name="http-compression-issues"></a>HTTP-Komprimierungs Probleme  
+ Mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]können Sie Downloads ausführen, die die HTTP-Komprimierung verwenden, eine Webserver Technologie, die den gzip-Algorithmus zum Komprimieren eines Datenstroms verwendet, bevor der Datenstrom an den Client gesendet wird. Der Client – in diesem Fall, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]– den Stream vor dem Lesen der Dateien dekomprimiert.  
   
- If you are using IIS, you can easily enable HTTP compression. However, when you enable HTTP compression, it is only enabled for certain file types—namely, HTML and text files. To enable compression for assemblies (.dll), XML (.xml), deployment manifests (.application), and application manifests (.manifest), you must add these file types to the list of types for IIS to compress. Until you add the file types to your deployment, only text and HTML files will be compressed.  
+ Wenn Sie IIS verwenden, können Sie die HTTP-Komprimierung problemlos aktivieren. Wenn Sie die HTTP-Komprimierung aktivieren, ist Sie jedoch nur für bestimmte Dateitypen aktiviert – HTML-und Textdateien. Um die Komprimierung für Assemblys (. dll), XML (XML), Bereitstellungs Manifeste (. Application) und Anwendungs Manifeste (. manifest) zu aktivieren, müssen Sie diese Dateitypen der Liste der Typen hinzufügen, die von IIS komprimiert werden sollen. Bis Sie die Dateitypen der Bereitstellung hinzufügen, werden nur Text-und HTML-Dateien komprimiert.  
   
- For detailed instructions for IIS, see [How to specify additional document types for HTTP compression](https://go.microsoft.com/fwlink/?LinkId=178459).  
+ Ausführliche Anweisungen für IIS finden Sie unter [Angeben zusätzlicher Dokumenttypen für die HTTP-Komprimierung](https://go.microsoft.com/fwlink/?LinkId=178459).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Troubleshooting ClickOnce Deployments](../deployment/troubleshooting-clickonce-deployments.md)   
- [Choosing a ClickOnce Deployment Strategy](../deployment/choosing-a-clickonce-deployment-strategy.md)   
+ [Problembehandlung bei ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) -bereit Stellungen   
+ [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)

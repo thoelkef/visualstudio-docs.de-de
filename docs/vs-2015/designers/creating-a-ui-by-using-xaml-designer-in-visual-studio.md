@@ -36,7 +36,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  In der Entwurfsansicht ist das Fenster, welches die *Zeichenfläche* enthält, das aktive Fenster, und Sie können es als primäre Arbeitsoberfläche verwenden. Sie können es verwenden, um eine Seite Ihrer App visuell zu entwerfen, indem Sie Elemente hinzufügen oder zeichnen, und indem Sie diese dann ändern. Weitere Informationen finden Sie unter [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Diese Abbildung zeigt die Zeichenfläche in der Entwurfsansicht.
 
- ![Design view of XAML Designer](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Designansicht XAML-Designer](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Diese Funktionen sind auf der Zeichenfläche verfügbar:
 
@@ -58,7 +58,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  In der Entwurfsansicht sind zusätzliche Zeichenflächenbefehle im unteren linken Bildschirmbereich verfügbar, wie hier gezeigt wird:
 
- ![Design view commands](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Designansicht-Befehle](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Diese Befehle sind auf dieser Symbolleiste verfügbar:
 
@@ -72,16 +72,16 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  In der XAML-Ansicht ist das Fenster, welches den XAML-Editor enthält, das aktive Fenster, und der XAML-Editor ist Ihr primäres Entwicklungstool. Die Extensible Application Markup Language (XAML) stellt ein deklaratives, auf XML basierendes Vokabular bereit, mit dem die Benutzeroberfläche einer Anwendung festgelegt werden kann. Die XAML-Ansicht enthält IntelliSense und automatische Formatierung, Syntaxhervorhebung und Tagnavigation. Diese Abbildung zeigt die XAML-Ansicht:
 
- ![XAML view](../designers/media/xaml-editor.png "xaml_editor")
+ ![XAML-Ansicht](../designers/media/xaml-editor.png "xaml_editor")
 
  **Leiste für geteilte Ansicht** Die Leiste für geteilte Ansicht wird am oberen Rand der XAML-Ansicht angezeigt, wenn sich der XAML-Editor im unteren Fenster befindet. Mit der Leiste für geteilte Ansicht können Sie die relative Größe der Entwurfsansicht und der XAML-Ansicht steuern. Sie können auch die Positionen der Ansichten austauschen (mithilfe der Schaltfläche **Bereiche austauschen** ). Außerdem können Sie angeben, ob die Ansichten horizontal oder vertikal angeordnet werden und jede dieser Ansichten reduzieren.
 
  **Markupzoom** Der Markupzoom ermöglicht es Ihnen, die XAML-Ansicht zu skalieren. Es stehen Zoomstufen von 20 % bis 400 % zur Verfügung.
 
 ## <a name="device-window"></a>Gerätefenster
- Das Gerätefenster im XAML-Designer für Visual Studio ermöglicht es Ihnen, während der Entwurfsphase verschiedene Ansichten, Anzeigevarianten und Anzeigeoptionen für Ihr Windows Store- oder Windows Phone-Projekt zu simulieren. Das Gerätefenster ist im Menü **Entwurf** verfügbar, wenn Sie im XAML-Designer arbeiten. Hier sehen Sie, wie es aussieht:
+ Das Gerätefenster im XAML-Designer für Visual Studio ermöglicht es Ihnen, während der Entwurfsphase verschiedene Ansichten, Anzeigevarianten und Anzeigeoptionen für Ihr Windows Store- oder Windows Phone-Projekt zu simulieren. Das Gerätefenster ist im Menü **Entwurf** verfügbar, wenn Sie im XAML-Designer arbeiten. Und so sieht es aus:
 
- ![Device window](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Geräte Fenster](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Dies sind die Optionen, die im Gerätefenster verfügbar sind:
 
@@ -116,7 +116,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
   Wählen Sie zum Anzeigen des Dokumentgliederungsfensters auf der Menüleiste **Ansicht**, **Weitere Fenster**, **Dokumentgliederung**.
 
-  ![Document Outline window](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![Dokument Gliederungs Fenster](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   Dies sind die verfügbaren Optionen im Dokumentgliederungsfenster:
 
@@ -128,8 +128,8 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
   **Bereich auf pageRoot zurücksetzen:** Die Option oben im Dokumentgliederungsfenster, die als Pfeil-nach-oben-Symbol dargestellt wird, gibt die Dokumentgliederung an den vorherigen Bereich zurück. Die Vergrößerung des Bereichs ist nur möglich, wenn Sie sich im Bereich eines Stils oder einer Vorlage befinden.
 
-## <a name="properties-window"></a>Eigenschaftenfenster
- Mit dem Eigenschaftenfenster können Sie Eigenschaftswerte für Steuerelemente festlegen. Hier sehen Sie, wie es aussieht:
+## <a name="properties-window"></a>Fenster Eigenschaften
+ Mit dem Eigenschaftenfenster können Sie Eigenschaftswerte für Steuerelemente festlegen. Und so sieht es aus:
 
  ![Eigenschaftenfenster](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
@@ -138,4 +138,4 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
  Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der als Feldsymbol angezeigt wird. Die Anzeige des Eigenschaftenmarkers weist darauf hin, ob es eine Datenbindung oder eine Ressource gibt, die auf die Eigenschaft angewendet wurde. Beispielsweise zeigt ein weißes Feldsymbol einen Standardwert an, ein schwarzes Feldsymbol zeigt in der Regel an, dass eine lokale Ressource angewendet wurde, und ein oranges Feld zeigt in der Regel an, dass eine Datenbindung angewendet wurde. Wenn Sie auf den Eigenschaftenmarker klicken, können Sie zur Definition eines Stils navigieren, den Datenbindungs-Generator öffnen oder die Ressourcenauswahl öffnen.
 
 ## <a name="see-also"></a>Siehe auch
- [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md) [How to create and apply a resource](../designers/how-to-create-and-apply-a-resource.md) [Walkthrough: Binding to data in XAML Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Arbeiten mit Elementen in XAML-Designer](../designers/working-with-elements-in-xaml-designer.md) [Erstellen und Anwenden einer Ressource](../designers/how-to-create-and-apply-a-resource.md) Exemplarische Vorgehensweise [: Binden an Daten in XAML-Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

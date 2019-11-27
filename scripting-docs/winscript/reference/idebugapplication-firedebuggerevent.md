@@ -59,5 +59,5 @@ HRESULT FireDebuggerEvent(
  Diese Methode bewirkt, dass `IApplicationDebugger::onDebuggerEvent` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

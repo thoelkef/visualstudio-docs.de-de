@@ -62,13 +62,13 @@ ms.locfileid: "74299800"
   
 2. Erweitern Sie unter „Features auswählen“ die Option **Plattformübergreifende, mobile Entwicklung** , und aktivieren Sie **Visual C++ Mobile Development**.  
   
-     ![Select Visual C&#43;&#43; Mobile Development](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Visual C&#43; &#43; Mobile-Entwicklung auswählen](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
      Standardmäßig wird bei der Auswahl von **Visual C++ Mobile Development** auch die Option **Programmiersprachen** festgelegt, um **Visual C++** zu installieren; ebenso wird die Option **Häufige Tools und Software Development Kits** zum Installieren der erforderlichen Komponenten von Drittanbietern festgelegt. Wenn benötigt, können sie weitere Komponenten auswählen. Der **Microsoft Visual Studio-Emulator** für Android wird ebenfalls standardmäßig ausgewählt. Die bereits installierten Komponenten werden in der Liste inaktiv angezeigt.  
   
      Um universelle Windows-Apps zu erstellen und Code für diese Apps, Ihr Android-Gerät und Ihre iOS-Projekte freizugeben, erweitern Sie unter **Features auswählen** die Option **Windows- und Webentwicklung** und aktivieren Sie das Kontrollkästchen für **Universal Windows App-Entwicklungstools**. Wenn Sie nicht vorhaben, universelle Windows-Apps zu erstellen, können Sie diese Option überspringen.  
   
-     Klicken Sie auf **Weiter** , um fortzufahren.  
+     Klicken Sie auf **Weiter**, um fortzufahren.  
   
 3. Die Komponenten von Drittanbietern verfügen über eigene Lizenzbedingungen. Zum Anzeigen der Lizenzbedingungen klicken Sie auf den Link **Lizenzbedingungen** links neben der jeweiligen Komponente. Wählen Sie die Option **Installieren**, um die Komponenten hinzuzufügen und Visual Studio und Visual C++ für die plattformübergreifende mobile Entwicklung zu installieren.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "74299800"
     > [!NOTE]
     > Wenn Ihr Computer oder die Version Ihres Windows-Betriebssystems Hyper-V nicht unterstützt, können Sie die Komponente „Microsoft Visual Studio-Emulator für Android“ verwenden. Die Home Edition der Windows-Betriebssysteme unterstützt Hyper-V nicht.  
   
-5. Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**&gt; **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
+5. Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**> **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
   
 ## <a name="InstallForiOS"></a> Install tools for iOS  
  Sie können Visual C++ für die plattformübergreifende mobile Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Mac erstellt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent auf Ihrem Mac einrichten und konfigurieren. Detaillierte Informationen zur Installation, Voraussetzungen und Konfigurationsoptionen finden Sie unter [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Wenn Sie keinen Code für iOS erstellen, können Sie diesen Schritt überspringen.  
@@ -123,7 +123,7 @@ ms.locfileid: "74299800"
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>So legen Sie die Pfade für Drittanbietertools fest  
   
-1. Wählen Sie in der Menüleiste von Visual Studio **Extras**&gt; **Optionen**aus.  
+1. Wählen Sie in der Menüleiste von Visual Studio **Extras**> **Optionen**aus.  
   
 2. Erweitern Sie im Dialogfeld **Optionen** die Option **Plattformübergreifend**&gt; **C++** und wählen Sie **Android**aus.  
   
@@ -134,5 +134,5 @@ ms.locfileid: "74299800"
 4. Klicken Sie auf **OK** , um die benutzerdefinierten Toolordnerpfade zu speichern.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
+ [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

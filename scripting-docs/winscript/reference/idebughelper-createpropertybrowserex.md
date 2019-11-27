@@ -66,6 +66,6 @@ HRESULT CreatePropertyBrowserEx(
  Diese Methode gibt einen Eigenschaften Browser zurück, der eine Variante umschließt und die benutzerdefinierte Konvertierung von Variant-Werten oder VarType-Typen in Zeichen folgen ermöglicht.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebughelper::](../../winscript/reference/idebughelper-createpropertybrowser.md)   der  
- [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)    
+ [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
+ [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)

@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573674"
 ---
 # <a name="string-expected"></a>Zeichenfolge erwartet
-Sie haben versucht, die **String. Prototype. ToString** -oder **String. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `String` aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`String`" sein.  
+Sie haben versucht, die **String. Prototype. ToString** -oder **String. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `String`aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`String`" sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Rufen Sie nur die **String. Prototype. ToString** -Methode oder die **String. Prototype. valueOf** -Methode für Objekte vom Typ `String` auf.  
+- Rufen Sie nur die **String. Prototype. ToString** -Methode oder die **String. Prototype. valueOf** -Methode für Objekte vom Typ `String`auf.  
   
 ## <a name="see-also"></a>Siehe auch  
- [String-Objekt](../../javascript/reference/string-object-javascript.md)    
+ [String-Objekt](../../javascript/reference/string-object-javascript.md)   
  [toString-Methode (Objekt)](../../javascript/reference/tostring-method-object-javascript.md)

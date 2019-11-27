@@ -40,7 +40,7 @@ HRESULT GetRoot(
  vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptNode`-Schnittstelle des Stamm Knotens empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -49,5 +49,5 @@ HRESULT GetRoot(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)    
+ [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)

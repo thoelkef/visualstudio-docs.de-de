@@ -31,7 +31,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
  Nachdem Sie 3D-Ressourcen mit den Tools von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt haben, besteht der nächste Schritt darin, sie in Ihrer App zu verwenden. Bevor Sie sie jedoch verwenden können, müssen sie in ein Format umgewandelt werden, dass von DirectX unterstützt wird. Um Sie bei der Umwandlung Ihrer Ressourcen zu unterstützen, stellt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Buildanpassungen für jede Art von Ressource bereit, die es erzeugen kann. Um die Ressourcen in Ihrem Build zu integrieren, müssen Sie einfach nur Ihr Projekt für die Verwendung der Buildanpassungen konfigurieren, die Ressourcen dem Projekt hinzufügen und die Ressourcen so konfigurieren, dass die richtige Buildanpassung verwendet wird. Danach können Sie die Ressourcen in die App laden und sie verwenden. Dazu erstellen und füllen Sie DirectX-Ressourcen so, wie Sie es in jeder anderen DirectX-App tun würden.
 
 ## <a name="configuring-your-project"></a>Konfigurieren des Projekts
- Bevor Sie die 3D-Ressourcen als Teil des Builds bereitstellen können, muss [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitgeteilt werden, welche Arten von Ressourcen Sie bereitstellen möchten. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kennt bereits viele gängige Dateitypen. Da aber nur bestimmte Arten von Apps 3D-Ressourcen verwenden, kann [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht wissen, dass ein Projekt mit diesen Arten von Dateien erstellt wird. Sie können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitteilen, dass die App diese Arten von Ressourcen verwendet, indem Sie die *Buildanpassungen* nutzen, die für jeden Ressourcentyp bereitgestellt werden. Buildanpassungen sind Dateien, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] darüber informieren, wie die verschiedenen Dateitypen sinnvoll verarbeitet werden. Da diese Anpassungen projektweise angewendet werden, müssen Sie einfach nur die entsprechenden Anpassungen dem Projekt hinzufügen.
+ Bevor Sie die 3D-Ressourcen als Teil des Builds bereitstellen können, muss [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitgeteilt werden, welche Arten von Ressourcen Sie bereitstellen möchten. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kennt bereits viele gängige Dateitypen. Da aber nur bestimmte Arten von apps 3D-Assets verwenden, geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht davon aus, dass ein Projekt diese Arten von Dateien erstellt. Sie können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitteilen, dass die App diese Arten von Ressourcen verwendet, indem Sie die *Buildanpassungen* nutzen, die für jeden Ressourcentyp bereitgestellt werden. Buildanpassungen sind Dateien, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] darüber informieren, wie die verschiedenen Dateitypen sinnvoll verarbeitet werden. Da diese Anpassungen projektweise angewendet werden, müssen Sie einfach nur die entsprechenden Anpassungen dem Projekt hinzufügen.
 
 #### <a name="to-add-the-build-customizations-to-your-project"></a>So fügen Sie die Buildanpassungen dem Projekt hinzu
 
@@ -67,7 +67,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 
 |Elementtyp|Typen der Quelldatei|Format der Ausgabedatei|
 |---------------|-----------------------|------------------------|
-|**Bildinhaltspipeline**|Portable Network Graphics (.png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Graphics Interchange Format (.gif)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
+|**Bildinhaltspipeline**|Portable Network Graphics (PNG)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Graphics Interchange Format (GIF)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
 |**Meshinhaltspipeline**|AutoDesk-FBX-Austauschdatei (.fbx)<br /><br /> Collada DAE-Datei (.dae)<br /><br /> Wavefront-OBJ-Datei (.obj)|3D-Mesh-Datei (.cmo)|
 |**Shaderinhaltspipeline**|Visual Shader-Diagramm (.dgsl)|Compiled Shader Output (.cso)|
 
@@ -87,7 +87,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 ### <a name="image-content-pipeline-configuration"></a>Konfiguration der Bildinhaltspipeline
  Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines verwenden, können Sie die Textur auf verschiedene Arten komprimieren. Und Sie können angeben, ob MIP-Ebenen zum Zeitpunkt der Erstellung generiert werden sollen, und den Namen der Ausgabedatei angeben.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Die folgenden Optionen sind verfügbar:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](https://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja**, um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
@@ -97,14 +97,14 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguration der Mesh-Inhaltspipeline
  Wenn Sie das Tool für Mesh-Inhaltspipelines verwenden, um eine Meshressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Konfiguration der Shader-Inhaltspipeline
  Wenn Sie das Tool für Shader-Inhaltspipelines verwenden, um eine Shader-Ressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
 

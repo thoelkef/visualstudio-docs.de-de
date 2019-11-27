@@ -18,10 +18,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299931"
 ---
-# <a name="talk-to-us"></a>Talk to Us
+# <a name="talk-to-us"></a>Sprechen Sie mit uns
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [Talk to Us](https://docs.microsoft.com/visualstudio/ide/feedback-options).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [sprechen Sie mit uns](https://docs.microsoft.com/visualstudio/ide/feedback-options).
 
 Wir würden gern Ihre Ideen zur Verbesserung unserer Dokumentation erfahren. Wir können nicht persönlich antworten, aber wir werden sicherstellen, dass Ihr Feedback an die richtige Person weitergeleitet wird.
 
@@ -29,7 +29,7 @@ Wir würden gern Ihre Ideen zur Verbesserung unserer Dokumentation erfahren. Wir
  Verwenden Sie bitte unsere Feedback-Schaltfläche (**War diese Seite hilfreich?** ) am unteren Rand der Seite. Sie finden diese Schaltfläche auf allen Seiten der MSDN. Wenn Sie nach einer Antwort suchen und diese nicht finden, teilen Sie uns bitte mit, welche Informationen Sie suchen.
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Ich möchte ein Problem mit Visual Studio melden
- If you are running into issues using Visual Studio such as crashes, sluggish performance, unexpected behavior, and so on, please report the problem to us by right-clicking on the feedback icon next to **QuickLaunch**, or by choosing **Help &#124; Send Feedback &#124; Report a Problem** from the main menu. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
+ Wenn bei der Verwendung von Visual Studio Probleme auftreten, z. b. Abstürze, langsame Leistung, unerwartetes Verhalten usw., melden Sie uns das Problem, indem Sie mit der rechten Maustaste auf das Feedback Symbol neben **Schnellstart**klicken, oder indem Sie im Hauptmenü **Hilfe &#124; senden &#124; Feedback melden Problem melden** auswählen. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Ich möchte einen Vorschlag zu Visual Studio-Features machen
  Für Verbesserungsvorschläge sind wir immer offen! Wählen Sie die Option zum **Unterbreiten eines Vorschlags** aus, um dem Visual Studio-Team eine Funktion oder Änderung vorzuschlagen.

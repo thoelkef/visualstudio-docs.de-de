@@ -1,5 +1,5 @@
 ---
-title: 'CA3075: Insecure DTD Processing | Microsoft Docs'
+title: 'CA3075: unsichere DTD-Verarbeitung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -35,31 +35,31 @@ ms.locfileid: "74300964"
 
 - Die <xref:System.Xml.XmlNode.InnerXml%2A> -Eigenschaft in XML wird festgelegt.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set  to Parse    .
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>-Eigenschaft ist auf "analysieren" festgelegt.
 
 - Die Verarbeitung einer nicht vertrauenswürdigen Eingabe erfolgt mit <xref:System.Xml.XmlResolver> anstelle von <xref:System.Xml.XmlSecureResolver> .
 
-- The XmlReader.<xref:System.Xml.XmlReader.Create%2A> method is invoked with an insecure <xref:System.Xml.XmlReaderSettings> instance or no instance at all.
+- Der XmlReader.<xref:System.Xml.XmlReader.Create%2A> die Methode wird mit einer unsicheren <xref:System.Xml.XmlReaderSettings> Instanz oder gar keiner Instanz aufgerufen.
 
-- <xref:System.Xml.XmlReader> is created with insecure default settings or values    .
+- <xref:System.Xml.XmlReader> mit unsicheren Standardeinstellungen oder-Werten erstellt wird.
 
   In jedem dieser Fälle ist das Ergebnis identisch: Der Inhalt aus dem Dateisystem oder von Netzwerkfreigaben auf dem Computer, auf dem der XML-Code verarbeitet wird, wird dem Angreifer offengelegt und kann dann als DoS-Vektor verwendet werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .
+- Alle XmlTextReader-Ausnahmen ordnungsgemäß erfassen und verarbeiten, um die Offenlegung von Pfadinformationen zu vermeiden.
 
-- Use the <xref:System.Xml.XmlSecureResolver> to restrict the resources      that the XmlTextReader can access.
+- Verwenden Sie die <xref:System.Xml.XmlSecureResolver>, um die Ressourcen einzuschränken, auf die der XmlTextReader zugreifen kann.
 
-- Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlResolver> property to **null**.
+- Lassen Sie die <xref:System.Xml.XmlReader> externe Ressourcen nicht zu öffnen, indem Sie die <xref:System.Xml.XmlResolver>-Eigenschaft auf **null**festlegen.
 
 - Stellen Sie sicher, dass die <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> -Eigenschaft von <xref:System.Data.DataViewManager> von einer vertrauenswürdigen Quelle aus zugewiesen wird.
 
   .NET 3.5 und früher
 
-- Disable DTD processing if you are dealing with untrusted sources by setting the <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> property to **true** .
+- Deaktivieren Sie die DTD-Verarbeitung, wenn Sie mit nicht vertrauenswürdigen Quellen arbeiten, indem Sie die <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>-Eigenschaft auf **true** festlegen.
 
-- Die XmlTextReader-Klasse verfügt über die Vererbungsanforderung „volle Vertrauenswürdigkeit“. See [Inheritance Demands](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) for more information    .
+- Die XmlTextReader-Klasse verfügt über die Vererbungsanforderung „volle Vertrauenswürdigkeit“. Weitere Informationen finden Sie unter [Vererbungs Anforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 
   .NET 4 und höher
 

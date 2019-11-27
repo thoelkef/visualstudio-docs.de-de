@@ -30,7 +30,7 @@ Es wurde versucht, `JSON.stringify` mit einem ungültigen Wert aufzurufen. Das `
 - Entfernen Sie den Zirkel Verweis aus dem Argument.  
   
 ## <a name="example"></a>Beispiel  
- Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` einen Verweis auf `mary` und `mary` über einen Verweis auf `john` verfügt. um den Zirkel Verweis zu entfernen, entfernen Sie entweder die Eigenschaft `brother` aus dem `mary` Objekt oder die Eigenschaft `sister` aus dem `john` Objekt, oder entfernen Sie Sie.  
+ Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` einen Verweis auf `mary` und `mary` über einen Verweis auf `john`verfügt. um den Zirkel Verweis zu entfernen, entfernen Sie entweder die Eigenschaft `brother` aus dem `mary` Objekt oder die Eigenschaft `sister` aus dem `john` Objekt, oder entfernen Sie Sie.  
   
 ```JavaScript  
 var john = new Object();  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [JSON-Objekt](../../javascript/reference/json-object-javascript.md)    
- [JSON.](../../javascript/reference/json-parse-function-javascript.md) Analyse-Funktion    
+ [JSON-Objekt](../../javascript/reference/json-object-javascript.md)   
+ [JSON.](../../javascript/reference/json-parse-function-javascript.md) Analyse-Funktion   
  [JavaScript-Laufzeitfehler](../../javascript/reference/javascript-run-time-errors.md)

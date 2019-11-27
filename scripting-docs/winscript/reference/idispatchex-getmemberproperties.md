@@ -48,25 +48,25 @@ HRESULT GetMemberProperties(
 |-----------|-------------|  
 |GRF-proppropcanall|Kombiniert fdexpropcanget, fdexpropcanput, fdexpropcanputref, fdexpropcancall, fdexpropcanconstruct und fdexpropcansourceevents.|  
 |GRF-propcannotall|Kombiniert fdexpropcannotget, fdexpropcannotput, fdexpropcannotputref, fdexpropcannotcall, fdexpropcannotconstruct und fdexpropcannotsourceevents.|  
-|GRF-propextraall|Kombiniert ' f ' propnosideeffects ' und ' ' ' ' '.|  
-|GRF-proppropall|Kombiniert "GRF" propcanall, "GRF" propcannotall und "GRF dexpropextraall".|  
+|grfdexPropExtraAll|Kombiniert ' f ' propnosideeffects ' und ' ' ' ' '.|  
+|grfdexPropAll|Kombiniert "GRF" propcanall, "GRF" propcannotall und "GRF dexpropextraall".|  
   
  `pgrfdex`  
  Adresse einer `DWORD`, die die angeforderten Eigenschaften empfängt. Dies kann eine Kombination der folgenden Werte sein:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|' f ' propcanget|Der Member kann mithilfe von DISPATCH_PROPERTYGET abgerufen werden.|  
-|' f ' propcannotget|Der Member kann nicht mithilfe von DISPATCH_PROPERTYGET abgerufen werden.|  
-|' f ' propcanput|Der Member kann mithilfe von DISPATCH_PROPERTYPUT festgelegt werden.|  
-|' f ' propcannotput|Der Member kann nicht mithilfe von DISPATCH_PROPERTYPUT festgelegt werden.|  
-|' f ' propcanputref|Der Member kann mithilfe von DISPATCH_PROPERTYPUTREF festgelegt werden.|  
-|' f ' propcannotputref|Der Member kann nicht mithilfe von DISPATCH_PROPERTYPUTREF festgelegt werden.|  
-|"f" propnosideeffects|Der Member hat keine Nebeneffekte. Ein Debugger kann diesen Member z. b. sicher abrufen, festlegen/abrufen, ohne den Status des Skripts zu ändern, das gedebuggt wird.|  
-|' f ' propdynamictype|Der-Member ist dynamisch und kann sich während der Lebensdauer des-Objekts ändern.|  
+|' f ' propcanget|Der Member kann mit DISPATCH_PROPERTYGET abgerufen werden.|  
+|' f ' propcannotget|Der Member kann nicht mit DISPATCH_PROPERTYGET abgerufen werden.|  
+|' f ' propcanput|Der Member kann mit DISPATCH_PROPERTYPUT festgelegt werden.|  
+|' f ' propcannotput|Der Member kann nicht mit DISPATCH_PROPERTYPUT festgelegt werden.|  
+|fdexPropCanPutRef|Der Member kann mit DISPATCH_PROPERTYPUTREF festgelegt werden.|  
+|fdexPropCannotPutRef|Der Member kann nicht mit DISPATCH_PROPERTYPUTREF festgelegt werden.|  
+|fdexPropNoSideEffects|Der Member hat keine Nebeneffekte. Ein Debugger kann diesen Member z. b. sicher abrufen, festlegen/abrufen, ohne den Status des Skripts zu ändern, das gedebuggt wird.|  
+|fdexPropDynamicType|Der-Member ist dynamisch und kann sich während der Lebensdauer des-Objekts ändern.|  
 |fdexpropcancall|Der Member kann mithilfe von DISPATCH_METHOD als Methode aufgerufen werden.|  
 |fdexpropcannotcall|Der Member kann nicht als Methode mithilfe von DISPATCH_METHOD aufgerufen werden.|  
-|' f ' propcanconstruct|Der Member kann mithilfe von DISPATCH_CONSTRUCT als Konstruktor aufgerufen werden.|  
+|' f ' propcanconstruct|Der Member kann mit DISPATCH_CONSTRUCT als Konstruktor aufgerufen werden.|  
 |' f ' propcannotconstruct|Der Member kann nicht als Konstruktor mit DISPATCH_CONSTRUCT aufgerufen werden.|  
 |' f ' propcansourceevents|Der Member kann Ereignisse auslösen.|  
 |' f ' propcannotsourceevents|Der Member kann keine Ereignisse auslösen.|  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)    
- [IDispatchEx:: GetDispID-](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

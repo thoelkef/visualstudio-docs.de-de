@@ -26,13 +26,13 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
 
  Das Formular enthält vier Schaltflächen, und die IDE hat ihnen folgende Namen zugewiesen: **button1**, **button2**, **button3**und **button4**. Anhand der aktuellen Namen können Sie jedoch nicht erkennen, welches Steuerelement die Schaltfläche **Close** ist und welches Steuerelement die Schaltfläche **Show a picture** ist. Daher ist es hilfreich, den Schaltflächen-Steuerelementen aufschlussreichere Namen zu geben.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 3](https://go.microsoft.com/fwlink/?LinkId=205213) or [Tutorial 1: Create a Picture Viewer in C# - Video 3](https://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 3](https://go.microsoft.com/fwlink/?LinkId=205213) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 3](https://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-name-your-button-controls"></a>So benennen Sie die Schaltflächen-Steuerelemente
 
-1. Wählen Sie im Formular die Schaltfläche **Schließen** aus. (If you still have all the buttons selected, choose the ESC key to cancel the selection.) Scroll in the **Properties** window until you see the **(Name)** property. (The **(Name)** property is near the top when the properties are alphabetical.) Change the name to **closeButton**, as shown in the following picture.
+1. Wählen Sie im Formular die Schaltfläche **Schließen** aus. (Wenn alle Schaltflächen noch ausgewählt sind, wählen Sie die ESC-Taste, um die Auswahl abzubrechen.) Scrollen Sie im Fenster **Eigenschaften** , bis Sie die Eigenschaft **(Name)** sehen. (Die Eigenschaft **(Name)** befindet sich in der Nähe des oberen Rands, wenn die Eigenschaften alphabetisch sind.) Ändern Sie den Namen in **CloseButton**, wie in der folgenden Abbildung dargestellt.
 
-     ![Properties window with closeButton name](../ide/media/express-setnameproperty.png "Express_SetNameProperty") Properties window with closeButton name
+     ![Mit CloseButton-Namen Eigenschaftenfenster](../ide/media/express-setnameproperty.png "Express_SetNameProperty") Mit CloseButton-Namen Eigenschaftenfenster
 
     > [!NOTE]
     > If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.
@@ -41,7 +41,7 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
 
 3. Doppelklicken Sie im Formular auf die Schaltfläche **Bild anzeigen** . Wählen Sie alternativ die Schaltfläche **Bild anzeigen** im Formular und anschließend die EINGABETASTE aus. Damit öffnet die IDE eine zusätzliche Registerkarte im Hauptfenster mit der Bezeichnung **Form1.cs** (**Form1.vb** bei Verwendung von Visual Basic). Auf dieser Registerkarte wird die Codedatei hinter dem Formular angezeigt, wie im folgenden Bild dargestellt.
 
-     ![Form1.cs tab with Visual C&#35; code](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Form1.cs tab with Visual C# code
+     ![Registerkarte "Form1.cs"&#35; mit Visual C](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") -Code C# Form1.cs Registerkarte mit Visual Code
 
 4. Konzentrieren Sie sich auf diesen Teil des Codes. (Wählen Sie bei Verwendung von Visual Basic die Registerkarte **VB** unten aus, um die Visual Basic-Version des Codes anzuzeigen.)
 
@@ -71,10 +71,10 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
 
      Nachdem Sie für ein Steuerelement einen Ereignishandler hinzugefügt haben, können Sie jederzeit vom Windows Forms-Designer aus zum Steuerelement zurückkehren, indem Sie auf das Steuerelement doppelklicken oder in der Menüleiste **Ansicht**, **Code**auswählen.
 
-     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. See [Rename Refactoring (C#)](../csharp-ide/rename-refactoring-csharp.md) or [Refactoring and Rename Dialog Box](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) for more information.
+     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. Weitere Informationen finden Sie unter [Umbenennen ()C#](../csharp-ide/rename-refactoring-csharp.md) oder [umgestalten und Umbenennen (Dialog Feld](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) ).
 
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
 - Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).
 
-- Um zum vorherigen Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
+- Um zum vorherigen Schritt des Lernprogramms zurückzukehren, klicken Sie auf [Step 5: Add Controls to Your Form](../ide/step-5-add-controls-to-your-form.md).

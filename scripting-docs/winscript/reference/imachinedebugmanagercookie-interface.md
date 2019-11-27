@@ -27,7 +27,7 @@ ms.locfileid: "72573887"
   
  Ein Skript Debugger ruft die `IDebugCookie::SetDebugCookie`-Methode für den Process Debug Manager (PDM) auf. Anschließend sendet das PDM dieses Cookie zusammen mit allen Anforderungen zum Hinzufügen oder Entfernen einer Skript Anwendung zum bzw. aus dem Machine Debug Manager (MDM) mithilfe der Methoden der `IMachineDebugManagerCookie`-Schnittstelle. Die MDM benachrichtigt dann jeden Debugger über die Änderung, mit Ausnahme derjenigen, die über dieses Cookie verfügt.  
   
- Zusätzlich zu den Methoden, die von `IUnknown` geerbt werden, macht die `IMachineDebugManagerCookie`-Schnittstelle die folgenden Methoden verfügbar.  
+ Zusätzlich zu den Methoden, die von `IUnknown`geerbt werden, macht die `IMachineDebugManagerCookie`-Schnittstelle die folgenden Methoden verfügbar.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
@@ -38,5 +38,5 @@ ms.locfileid: "72573887"
 |[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Entfernt eine Anwendung aus der Liste der laufenden Anwendungen.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)    
+ [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IDebugCookie-Schnittstelle](../../winscript/reference/idebugcookie-interface.md)

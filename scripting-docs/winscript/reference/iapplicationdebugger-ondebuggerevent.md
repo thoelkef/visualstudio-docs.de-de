@@ -41,7 +41,7 @@ HRESULT onDebuggerEvent(
  in Der Schnittstellen Bezeichner für das-Objekt.  
   
  `punk`  
- in Das Ereignis Objekt, das die durch `riid` definierte-Schnittstelle implementiert.  
+ in Das Ereignis Objekt, das die durch `riid`definierte-Schnittstelle implementiert.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -59,5 +59,5 @@ HRESULT onDebuggerEvent(
  Diese Methode wird aufgerufen, wenn `IDebugApplication::FireDebuggerEvent` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)    
+ [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

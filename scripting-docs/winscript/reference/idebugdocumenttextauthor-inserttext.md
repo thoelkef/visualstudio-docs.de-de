@@ -58,5 +58,5 @@ HRESULT InsertText(
  Mit dieser Methode wird neuer Text in das Dokument eingefügt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenttextauthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)    
+ [Idebugdocumenttextauthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
  [IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)

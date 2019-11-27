@@ -41,10 +41,10 @@ HRESULT SetBody(
   
  Bei einem `IScriptEntry`-Funktionsblock ist `psz` der Funktions Rumpf.  
   
- Bei einem `IScriptScriptlet` Objekt (das von `IScriptEntry` abgeleitet ist) ist `psz` der Skript Text des Scriptlets.  
+ Bei einem `IScriptScriptlet` Objekt (das von `IScriptEntry`abgeleitet ist) ist `psz` der Skript Text des Scriptlets.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -53,5 +53,5 @@ HRESULT SetBody(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)    
+ [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

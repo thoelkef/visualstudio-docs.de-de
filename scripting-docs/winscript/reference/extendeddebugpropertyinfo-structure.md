@@ -66,7 +66,7 @@ typedef struct ExtendedDebugPropertyInfo{
  Eine Enumeration, die die Flags für die Debug-Eigenschafts Attribute angibt.  
   
  `pDebugProp`  
- `IDebugProperty` Objekt, das diesem `ExtendedDebugPropertyInfo` entspricht.  
+ `IDebugProperty` Objekt, das diesem `ExtendedDebugPropertyInfo`entspricht.  
   
  `nDISPID`  
  Die Dispatch-ID.  
@@ -81,11 +81,11 @@ typedef struct ExtendedDebugPropertyInfo{
  Die tatsächlichen Daten Bytes des Eigenschafts Werts.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty` Objekt, das diesem `ExtendedDebugPropertyInfo` entspricht.  
+ `IDebugExtendedProperty` Objekt, das diesem `ExtendedDebugPropertyInfo`entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debugpropertyinfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)    
- [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)    
- [Idebugextendecodproperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)    
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+ [Debugpropertyinfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)   
+ [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)   
+ [Idebugextendecodproperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

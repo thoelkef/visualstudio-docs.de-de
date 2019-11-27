@@ -24,15 +24,15 @@ ms.locfileid: "74295963"
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder für Verkettungen verwenden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [DA0001: Use StringBuilder for concatenations](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0001: Verwenden von StringBuilder für Verkettungen](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  
-|Regel-ID|DA0001|  
+|Regel-ID:|DA0001|  
 |Kategorie|.NET Framework-Verwendung|  
 |Profilerstellungsmethoden|Sampling<br /><br /> Instrumentation|  
-|Nachricht|Verwenden Sie für Verkettungen ggf. StringBuilder.|  
-|Nachrichtentyp|Warnung|  
+|Meldung|Verwenden Sie für Verkettungen ggf. StringBuilder.|  
+|Meldungstyp|Warnung|  
   
 ## <a name="cause"></a>Ursache  
  Aufrufe von System.String.Concat machen einen großen Teil der Profilerstellungsdaten aus. Verwenden Sie ggf. die <xref:System.Text.StringBuilder>-Klasse zum Erstellen von Zeichenfolgen aus mehreren Segmenten.  

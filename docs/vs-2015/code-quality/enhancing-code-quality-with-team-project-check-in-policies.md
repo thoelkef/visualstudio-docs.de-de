@@ -1,5 +1,5 @@
 ---
-title: Enhancing Code Quality with Team Project Check-in Policies | Microsoft Docs
+title: Verbessern der Code Qualität mit Eincheck Richtlinien für das Team Projekt | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -51,7 +51,7 @@ Wenn Sie Team Foundation-Versionskontrolle (TFVC) verwenden, können Sie Einchec
 |**Entwicklungsumgebung vorbereiten:** Bevor Sie Code erstellen oder ändern, müssen Sie die Entwicklungs- und Testumgebung mit dem entsprechenden Quellcode einrichten. Wenn Sie Datenbanken verwenden, benötigen Sie außerdem Zugriff auf die Offlinedarstellung der Datenbanken.|[Einrichten von Entwicklungsumgebungen](https://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|
 |**Codeanalyse im Entwicklungsprozess verwenden:** Teammitglieder führen die Codeanalyse auf ihren Entwicklungscomputern durch. In Visual Studio werden Codeanalysen für einzelne Codeprojekte von Entwicklern konfiguriert und ausgeführt, im Rahmen der Ausführung gefundene Probleme werden angezeigt und analysiert, und Arbeitselemente für Warnungen werden erstellt.|[Analysieren der Anwendungsqualität](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
 |**Komponententests erstellen und ausführen:** Komponententests ermöglichen Entwicklern und Testern, die Methoden der Klassen in C#-, Visual Basic .NET- und C++-Projekten schnell auf logische Fehler hin zu überprüfen. Ein Komponententest kann einmal erstellt und jedes Mal ausgeführt werden, wenn der Quellcode geändert wurde, um sicherzustellen, dass keine Fehler eingebaut wurden.|[Komponententest für Code](../test/unit-test-your-code.md)|
-|**Arbeitselemente und Fehler nachverfolgen:** Mit Arbeitselementen können Sie Ihre Arbeit sowie Informationen über das Teamprojekt nachverfolgen und verwalten. Ein Arbeitselement ist ein Datenbankeintrag, den [!INCLUDE[esprfound](../includes/esprfound-md.md)] zum Nachverfolgen der Zuordnung und des Status der Arbeit verwendet. Sie können verschiedene Typen von Arbeitselementen verwenden, um unterschiedliche Arten von Arbeiten nachzuverfolgen, z. B. Kundenanforderungen, Produktfehler oder Entwicklungsaufgaben.|[Track work and manage workflow &#91;redirected&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|
+|**Arbeitselemente und Fehler nachverfolgen:** Mit Arbeitselementen können Sie Ihre Arbeit sowie Informationen über das Teamprojekt nachverfolgen und verwalten. Ein Arbeitselement ist ein Datenbankeintrag, den [!INCLUDE[esprfound](../includes/esprfound-md.md)] zum Nachverfolgen der Zuordnung und des Status der Arbeit verwendet. Sie können verschiedene Typen von Arbeitselementen verwenden, um unterschiedliche Arten von Arbeiten nachzuverfolgen, z. B. Kundenanforderungen, Produktfehler oder Entwicklungsaufgaben.|[Nachverfolgen von Arbeit und &#91;Verwalten von Workflows umgeleitet&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|
 
 ## <a name="external-resources"></a>Externe Ressourcen
 

@@ -1,5 +1,5 @@
 ---
-title: Installing an Isolated Shell Application | Microsoft Docs
+title: Installieren einer isolierten Shellanwendung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,47 +21,47 @@ ms.locfileid: "74301163"
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Anwendung der isolierten Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-To install a Shell app you must perform the following steps.  
+Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.  
   
-- Prepare your solution.  
+- Bereiten Sie die Lösung vor.  
   
-- Create a Windows Installer (MSI) package for your application.  
+- Erstellen Sie ein Windows Installer-Paket (MSI) für die Anwendung.  
   
-- Create a Setup bootstrapper.  
+- Erstellen eines Setup-Boots Trappers  
   
-  All of the example code in this document comes from the [Shell Deployment Sample](https://go.microsoft.com/fwlink/?LinkId=262245), which you can download from the Code Gallery on the MSDN website. The sample shows the results of performing each of these steps.  
+  Der gesamte Beispielcode in diesem Dokument stammt aus dem [shellbereitstellungsbeispiel](https://go.microsoft.com/fwlink/?LinkId=262245), das Sie aus der Code Galerie auf der MSDN-Website herunterladen können. Das Beispiel zeigt die Ergebnisse der Ausführung der einzelnen Schritte.  
   
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen  
- To perform the procedures that this topic describes, the following tools must be installed on your computer.  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Um die in diesem Thema beschriebenen Verfahren auszuführen, müssen die folgenden Tools auf dem Computer installiert sein.  
   
-- The Visual Studio SDK  
+- Das Visual Studio SDK  
   
-- The [Windows Installer XML Toolset](https://go.microsoft.com/fwlink/?LinkId=82720) version 3.6  
+- Die [Windows Installer XML-Toolsetversion](https://go.microsoft.com/fwlink/?LinkId=82720) 3,6  
   
-  The sample also requires the Microsoft Visualization and Modeling SDK, which not all shells require.  
+  Das Beispiel erfordert auch das Microsoft-Visualisierungs-und Modellierungs-SDK, das nicht für alle Shells erforderlich ist.  
   
-## <a name="preparing-your-solution"></a>Preparing Your Solution  
- By default, Shell templates build to VSIX packages, but this behavior is intended primarily for debugging purposes. When you deploy a Shell application, you must use MSI packages to allow for registry access and for restarts during installation. To prepare your application for MSI deployment, perform the following steps.  
+## <a name="preparing-your-solution"></a>Vorbereiten der Lösung  
+ Standardmäßig werden shellvorlagen in VSIX-Paketen erstellt, aber dieses Verhalten ist hauptsächlich für Debugzwecke vorgesehen. Wenn Sie eine Shellanwendung bereitstellen, müssen Sie MSI-Pakete verwenden, um den Registrierungs Zugriff und die Neustarts während der Installation zuzulassen. Führen Sie die folgenden Schritte aus, um die Anwendung für die MSI-Bereitstellung vorzubereiten.  
   
-#### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>To prepare a Shell application for MSI deployment  
+#### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>So bereiten Sie eine Shellanwendung für MSI-Bereitstellung vor  
   
-1. Edit each .vsixmanifest file in your solution.  
+1. Bearbeiten Sie jede vsixmanifest-Datei in der Projekt Mappe.  
   
-     In the `Identifier` element, add an `InstalledByMSI` element and a `SystemComponent` element, and then set their values to `true`.  
+     Fügen Sie im `Identifier`-Element ein `InstalledByMSI`-Element und ein `SystemComponent`-Element hinzu, und legen Sie dann deren Werte auf `true`fest.  
   
-     These elements prevent the VSIX installer from trying to install your components and the user from uninstalling them by using the **Extensions and Updates** dialog box.  
+     Diese Elemente verhindern, dass der VSIX-Installer versucht, die Komponenten zu installieren, und der Benutzer wird daran gehindert, Sie mithilfe des Dialog Felds **Erweiterungen und Updates** zu deinstallieren.  
   
-2. For each project that contains a VSIX manifest, edit the build tasks to output the content to the location from which your MSI will install. Include the VSIX manifest in the build output, but don't build a .vsix file.  
+2. Bearbeiten Sie für jedes Projekt, das ein VSIX-Manifest enthält, die Buildaufgaben, um den Inhalt an den Speicherort auszugeben, von dem die MSI-Datei installiert wird. Schließen Sie das VSIX-Manifest in die Buildausgabe ein, erstellen Sie jedoch keine vsix-Datei.  
   
-## <a name="creating-an-msi-for-your-shell"></a>Creating an MSI for Your Shell  
- To build your MSI package, we recommend that you use the [Windows Installer XML Toolset](https://go.microsoft.com/fwlink/?LinkId=82720) because it gives greater flexibility than a standard Setup project.  
+## <a name="creating-an-msi-for-your-shell"></a>Erstellen einer MSI für Ihre Shell  
+ Zum Erstellen des MSI-Pakets wird empfohlen, dass Sie das [Windows Installer XML-Toolset](https://go.microsoft.com/fwlink/?LinkId=82720) verwenden, da es größere Flexibilität bietet als ein Standard-Setup-Projekt.  
   
- In your Product.wxs file, set detection blocks and the layout of Shell components.  
+ Legen Sie in der Datei "Product. wxs" Erkennungs Blöcke und das Layout von Shellkomponenten fest.  
   
- Then create Registry entries, both in the .reg file for your solution and in ApplicationRegistry.wxs.  
+ Erstellen Sie dann Registrierungseinträge, sowohl in der reg-Datei für die Projekt Mappe als auch in der Datei "ApplicationRegistry. wxs".  
   
-### <a name="detection-blocks"></a>Detection Blocks  
- A detection block consists of a `Property` element that specifies a prerequisite to detect and a `Condition` element that specifies a message to return if the prerequisite isn't present on the computer. For example, your Shell application will require the Microsoft Visual Studio Shell redistributable, and the detection block will resemble the following markup.  
+### <a name="detection-blocks"></a>Erkennungs Blöcke  
+ Ein Erkennungs Block besteht aus einem `Property`-Element, das eine erforderliche Voraussetzung angibt, und ein `Condition` Element, das eine Meldung angibt, die zurückgegeben werden soll, wenn die Voraussetzung auf dem Computer nicht vorhanden ist. Beispielsweise ist für Ihre Shellanwendung die weitervertreibbare Microsoft Visual Studio Shell erforderlich, und der Erkennungs Block ähnelt dem folgenden Markup.  
   
 ```xml  
 <Property Id="ISOSHELLSFX">  
@@ -80,12 +80,12 @@ To install a Shell app you must perform the following steps.
   
 ```  
   
-### <a name="layout-of-shell-components"></a>Layout of Shell Components  
- You must add elements to identify the target directory structure and the components to install.  
+### <a name="layout-of-shell-components"></a>Layout von Shellkomponenten  
+ Sie müssen Elemente hinzufügen, um die Zielverzeichnis Struktur und die zu installierende Komponenten zu identifizieren.  
   
-##### <a name="to-set-the-layout-of-shell-components"></a>To set the layout of Shell components  
+##### <a name="to-set-the-layout-of-shell-components"></a>So legen Sie das Layout von Shellkomponenten fest  
   
-1. Create a hierarchy of `Directory` elements to represent all of the directories to create on the file system on the target computer, as the following example shows.  
+1. Erstellen Sie eine Hierarchie von `Directory` Elementen, die alle Verzeichnisse darstellt, die im Dateisystem auf dem Zielcomputer erstellt werden sollen, wie im folgenden Beispiel gezeigt.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -103,12 +103,12 @@ To install a Shell app you must perform the following steps.
     </Directory>  
     ```  
   
-     These directories are referred to by `Id` when files that must be installed are specified.  
+     Auf diese Verzeichnisse wird `Id` verwiesen, wenn Dateien angegeben werden, die installiert werden müssen.  
   
-2. Identify the components that the Shell and your Shell application require, as the following example shows.  
+2. Identifizieren Sie die Komponenten, die für die Shell und die Shellanwendung erforderlich sind, wie im folgenden Beispiel gezeigt.  
   
     > [!NOTE]
-    > Some elements may refer to definitions in other .wxs files.  
+    > Einige Elemente können auf Definitionen in anderen wxs-Dateien verweisen.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -123,7 +123,7 @@ To install a Shell app you must perform the following steps.
     </Feature>  
     ```  
   
-    1. The `ComponentRef` element refers to another .wxs file that identifies files that the current component requires. For example, GeneralProfile has the following definition in HelpAbout.wxs.  
+    1. Das `ComponentRef`-Element verweist auf eine andere wxs-Datei, mit der die von der aktuellen Komponente benötigten Dateien identifiziert werden. Beispielsweise hat generalprofile die folgende Definition in helpabout. wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -137,9 +137,9 @@ To install a Shell app you must perform the following steps.
         </Fragment>  
         ```  
   
-         The `DirectoryRef` element specifies where these files go on the user's computer. The `Directory` element specifies that it will be installed into a sub-directory, and each `File` element represents a file that's built or that exists as part of the solution and identifies where that file can be found when the MSI file is created.  
+         Das `DirectoryRef` Element gibt an, wo sich diese Dateien auf dem Computer des Benutzers befinden. Das `Directory`-Element gibt an, dass es in einem Unterverzeichnis installiert wird, und jedes `File` Element stellt eine Datei dar, die erstellt wurde oder als Teil der Projekt Mappe vorhanden ist, und gibt an, wo diese Datei beim Erstellen der MSI-Datei gefunden werden kann.  
   
-    2. The `ComponentGroupRef` element refers to a group of other components (or components and component groups). For instance, `ComponentGroupRef` under ApplicationGroup is defined as follows in Application.wxs.  
+    2. Das `ComponentGroupRef`-Element verweist auf eine Gruppe anderer Komponenten (oder Komponenten und Komponenten Gruppen). Beispielsweise wird `ComponentGroupRef` unter ApplicationGroup in "Application. wxs" wie folgt definiert.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -159,120 +159,120 @@ To install a Shell app you must perform the following steps.
         ```  
   
     > [!NOTE]
-    > Required dependencies for Shell (Isolated) applications are: DebuggerProxy, MasterPkgDef, Resources (especially the .winprf file), Application, and PkgDefs.  
+    > Erforderliche Abhängigkeiten für Shell (isolierte) Anwendungen sind: debuggerproxy, masterpkgdef, Ressourcen (insbesondere die winprf-Datei), Application und pkgdefs.  
   
 ### <a name="registry-entries"></a>Registrierungseinträge  
- The Shell (Isolated) project template includes a *ProjectName*.reg file for registry keys to merge on installation. These registry entries must be part of the MSI for both installation and cleanup purposes. You must also create matching registry blocks in ApplicationRegistry.wxs.  
+ Die Projektvorlage "Shell (isoliert)" enthält die Datei " *ProjectName*. reg" für Registrierungsschlüssel, die bei der Installation zusammengeführt werden sollen. Diese Registrierungseinträge müssen sowohl bei der Installation als auch bei der Bereinigung Teil der MSI-Version sein. Außerdem müssen Sie in der Datei "ApplicationRegistry. wxs" übereinstimmende Registrierungs Blöcke erstellen.  
   
-##### <a name="to-integrate-registry-entries-into-the-msi"></a>To integrate registry entries into the MSI  
+##### <a name="to-integrate-registry-entries-into-the-msi"></a>So integrieren Sie Registrierungseinträge in die MSI  
   
-1. In the **Shell Customization** folder, open *ProjectName*.reg.  
+1. Öffnen Sie im Ordner **shellanpassung** den Ordner *ProjectName*. reg.  
   
-2. Replace all instances of the $RootFolder$ token with the path of the target installation directory.  
+2. Ersetzen Sie alle Instanzen des $RootFolder $-Tokens durch den Pfad des Ziel Installationsverzeichnisses.  
   
-3. Add any other registry entries that your application requires.  
+3. Fügen Sie alle anderen Registrierungseinträge hinzu, die für die Anwendung erforderlich sind.  
   
-4. Open ApplicationRegistry.wxs.  
+4. Öffnen Sie die Datei "ApplicationRegistry. wxs".  
   
-5. For each registry entry in *ProjectName*.reg, add a corresponding registry block, as the following examples show.  
+5. Fügen Sie für jeden Registrierungs Eintrag in *ProjectName*. reg einen entsprechenden Registrierungs Block hinzu, wie in den folgenden Beispielen gezeigt.  
   
-    |*ProjectName*.reg|ApplicationRegisty.wxs|  
+    |*ProjectName*. reg|Applicationregisty. wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE-Objekt"|\<RegistryKey ID = ' dteclsidregkey ' root = ' HKCR ' Key = ' $ (var. Dteclsidregkey) ' Action = ' "|" kreateandremuveonuninstall "><br /><br /> \<REGISTRYVALUE Type = ' String ' Name = ' @ ' value = ' $ (var. ShortProductName) DTE-Objekt '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' Key = ' $ (var. Dteclsidregkey) \LocalServer32 ' Action = ' kreateandremuveonuninstall ' ><br /><br /> \<REGISTRYVALUE Type = ' String ' Name = ' @ ' value = ' [INSTALLDIR] $ (var). ShortProductName). exe '/><br /><br /> \</RegistryKey >|  
   
-     In this example, Var.DteClsidRegKey resolves to the registry key in the top row. Var.ShortProductName resolves to `PhotoStudio`.  
+     In diesem Beispiel wird var. dteclsidregkey in den Registrierungsschlüssel in der obersten Zeile aufgelöst. "Var. ShortProductName" wird in "`PhotoStudio`" aufgelöst.  
   
-## <a name="creating-a-setup-bootstrapper"></a>Creating a Setup Bootstrapper  
- Your completed MSI will install only if all the prerequisites are installed first. To ease the end user experience, create a Setup program that gathers and installs all prerequisites before it installs your application. To ensure a successful installation, perform these actions:  
+## <a name="creating-a-setup-bootstrapper"></a>Erstellen eines Setup-Boots Trappers  
+ Die abgeschlossene MSI-Installation wird nur dann installiert, wenn alle erforderlichen Komponenten zuerst installiert werden. Um die Benutzerfreundlichkeit zu vereinfachen, erstellen Sie ein Setup Programm, das alle Voraussetzungen sammelt und installiert, bevor die Anwendung installiert wird. Führen Sie die folgenden Aktionen aus, um eine erfolgreiche Installation zu gewährleisten:  
   
-- Enforce installation by Administrator.  
+- Erzwingen Sie die Installation durch den Administrator.  
   
-- Detect whether the Visual Studio Shell (Isolated) is installed.  
+- Erkennen, ob die Visual Studio Shell (isoliert) installiert ist.  
   
-- Run one or both Shell installers in order.  
+- Führen Sie einen oder beide shellinstaller in der richtigen Reihenfolge aus.  
   
-- Handle restart requests.  
+- Verarbeiten von Neustart Anforderungen.  
   
-- Run your MSI.  
+- Führen Sie die MSI aus.  
   
-### <a name="enforcing-installation-by-administrator"></a>Enforcing Installation by Administrator  
- This procedure is required to enable the Setup program to access required directories such as \Program Files\\.  
+### <a name="enforcing-installation-by-administrator"></a>Erzwingen der Installation durch den Administrator  
+ Dieses Verfahren ist erforderlich, damit das Setup Programm auf erforderliche Verzeichnisse wie z. b. "\Programme\\" zugreifen kann.  
   
-##### <a name="to-enforce-installation-by-administrator"></a>To enforce installation by Administrator  
+##### <a name="to-enforce-installation-by-administrator"></a>So erzwingen Sie die Installation durch den Administrator  
   
-1. Open the shortcut menu for the Setup project, and then choose **Properties**.  
+1. Öffnen Sie das Kontextmenü für das Setup-Projekt, und wählen Sie dann **Eigenschaften**aus.  
   
-2. Under **Configuration Properties/Linker/Manifest File**, set **UAC Execution Level** to **requireAdministrator**.  
+2. Legen Sie unter **Konfigurations Eigenschaften/Linker/Manifest-Datei**die **UAC-Ausführungs Ebene** auf **requiinfoministrator**fest.  
   
-     This property puts the attribute that requires the program to be run as Administrator into the embedded manifest file.  
+     Mit dieser Eigenschaft wird das Attribut, das das Programm erfordert, als Administrator in der eingebetteten Manifest-Datei ausgeführt.  
   
-### <a name="detecting-shell-installations"></a>Detecting Shell Installations  
- To determine whether the Visual Studio Shell (Isolated) must be installed, first determine whether it's already installed by checking the registry value of HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
+### <a name="detecting-shell-installations"></a>Erkennen von shellinstallationen  
+ Um zu ermitteln, ob die Visual Studio Shell (isoliert) installiert werden muss, ermitteln Sie zunächst, ob Sie bereits installiert ist, indem Sie den Registrierungs Wert hklm\software\microsoft\devdiv\vs\servicing\shellversion\isoshell\lcid\install überprüfen.  
   
 > [!NOTE]
-> These values are also read by the Shell detection block in Product.wxs.  
+> Diese Werte werden auch vom shellerkennungs Block in "Product. wxs" gelesen.  
   
- HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder specifies the location where the Visual Studio Shell was installed, and you can check for files there.  
+ Hklm\software\microsoft\appenv\14.0\shellfolder gibt den Speicherort an, an dem die Visual Studio-Shell installiert wurde, und Sie können dort nach Dateien suchen.  
   
- For an example of how to detect a Shell installation, see the `GetProductDirFromReg` function of Utilities.cpp in the Shell Deployment Sample.  
+ Ein Beispiel zum Erkennen einer Shellinstallation finden Sie in der `GetProductDirFromReg`-Funktion von Utilities. cpp im Beispiel zur shellbereitstellung.  
   
- If one or both of the Visual Studio Shells that your package requires isn't installed on the computer, you must add them to your list of components to install. For an example, see the `ComponentsPage::OnInitDialog` function of ComponentsPage.cpp in the Shell Deployment Sample.  
+ Wenn mindestens eine der Visual Studio-Shells, die das Paket erfordert, nicht auf dem Computer installiert ist, müssen Sie Sie der Liste der zu installierenden Komponenten hinzufügen. Ein Beispiel finden Sie in der `ComponentsPage::OnInitDialog`-Funktion von "componentspage. cpp" im shellbereitstellungsbeispiel.  
   
-### <a name="running-the-shell-installers"></a>Running the Shell Installers  
- To run the Shell installers, call the Visual Studio Shell redistributables by using the correct command-line arguments. At a minimum, you must use the command-line arguments **/norestart /q** and watch for the return code to determine what should be done next. The following example runs the Shell (Isolated) redistributable.  
+### <a name="running-the-shell-installers"></a>Ausführen der Shell-Installationsprogramme  
+ Um die Shell-Installationsprogramme auszuführen, müssen Sie die setzungen von Visual Studio Shell mithilfe der korrekten Befehlszeilenargumente abrufen. Sie müssen mindestens die Befehlszeilenargumente **/norestart/q** verwenden und auf den Rückgabecode achten, um zu bestimmen, was als Nächstes geschehen soll. Im folgenden Beispiel wird die verteilbare Shell (isoliert) ausgeführt.  
   
 ```  
 dwResult = ExecCmd("Vs_IsoShell.exe /norestart /q", TRUE);  
 ```  
   
-### <a name="running-the-shell-language-pack-installers"></a>Running the Shell Language Pack Installers  
- If you instead find that the shell or shells have been installed and just need a language pack, you can install the language packs as the following example shows.  
+### <a name="running-the-shell-language-pack-installers"></a>Ausführen der Shell Language Pack-Installationsprogramme  
+ Wenn Sie stattdessen feststellen, dass die Shell oder Shells installiert sind und nur ein Sprachpaket benötigt werden, können Sie die Sprachpakete installieren, wie im folgenden Beispiel gezeigt.  
   
 ```  
 dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);  
   
 ```  
   
-### <a name="deciphering-return-values"></a>Deciphering Return Values  
- On some operating systems, the Visual Studio Shell (Isolated) installation will require a restart. This condition can be determined by the return code of the call to `ExecCmd`.  
+### <a name="deciphering-return-values"></a>Entschlüsseln von Rückgabe Werten  
+ Bei einigen Betriebssystemen ist für die Installation von Visual Studio Shell (isoliert) ein Neustart erforderlich. Diese Bedingung kann durch den Rückgabecode des Aufruf`ExecCmd`bestimmt werden.  
   
 |Rückgabewert|Beschreibung|  
 |------------------|-----------------|  
-|ERROR_SUCCESS|Installation completed. You can now install your application.|  
-|ERROR_SUCCESS_REBOOT_REQUIRED|Installation completed. You can install your application after the computer has been restarted.|  
-|3015|Installation is in progress. A computer restart is required to continue the installation.|  
+|ERROR_SUCCESS|Die Installation wurde abgeschlossen. Sie können nun Ihre Anwendung installieren.|  
+|ERROR_SUCCESS_REBOOT_REQUIRED|Die Installation wurde abgeschlossen. Nachdem der Computer neu gestartet wurde, können Sie die Anwendung installieren.|  
+|3015|Die Installation wird durchgeführt. Zum Fortsetzen der Installation ist ein Neustart des Computers erforderlich.|  
   
-### <a name="handling-restarts"></a>Handling Restarts  
- When you ran the Shell installer by using the **/norestart** argument, you specified that it wouldn't restart the computer or ask for the computer to be restarted. However, a restart might be required, and you must ensure that your installer continues after the computer is restarted.  
+### <a name="handling-restarts"></a>Behandeln von Neustarts  
+ Wenn Sie den shellinstaller mithilfe des **/norestart** -Arguments ausgeführt haben, haben Sie festgelegt, dass der Computer nicht neu gestartet oder der Computer neu gestartet werden soll. Möglicherweise ist jedoch ein Neustart erforderlich, und Sie müssen sicherstellen, dass das Installationsprogramm nach dem Neustart des Computers fortgesetzt wird.  
   
- To handle restarts correctly, make sure that only one Setup program is set to resume and that the resume process will be handled correctly.  
+ Um Neustarts ordnungsgemäß zu behandeln, stellen Sie sicher, dass nur ein Setup Programm fortgesetzt werden kann und dass der Fortschritt ordnungsgemäß verarbeitet wird.  
   
- If either ERROR_SUCCESS_REBOOT_REQUIRED or 3015 is returned, your code should restart the computer before the installation continues.  
+ Wenn ERROR_SUCCESS_REBOOT_REQUIRED oder 3015 zurückgegeben wird, sollte Ihr Code den Computer neu starten, bevor die Installation fortgesetzt wird.  
   
- To handle restarts, perform these actions:  
+ Führen Sie zum Verarbeiten von Neustarts folgende Aktionen aus:  
   
-- Set the registry to resume installation when Windows starts.  
+- Legen Sie fest, dass die Registrierung beim Start von Windows fortgesetzt wird.  
   
-- Perform a double restart of the bootstrapper.  
+- Führen Sie einen doppelten Neustart des Boots Trappers aus.  
   
-- Delete the Shell installer ResumeData key.  
+- Löschen Sie den Schlüssel "Shell Installer resumedata".  
   
-- Restart Windows.  
+- Starten Sie Windows neu.  
   
-- Reset the start path of the MSI.  
+- Setzen Sie den Startpfad der MSI zurück.  
   
-### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Setting the Registry to Resume Setup When Windows Starts  
- The HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ registry key executes at system startup with administrative permissions and then is erased. HKEY_CURRENT_USER contains a similar key, but it runs as a normal user and isn't appropriate for installations. You can resume installation by putting a string value in the RunOnce key that calls your installer. However, we recommend that you call the installer by using a **/restart** or similar parameter to notify the application that it's resuming instead of starting. You can also include parameters to indicate where you are in the installation process, which is especially useful in installations that may require multiple restarts.  
+### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Festlegen der Registrierung zum Fortsetzen des Setups beim Starten von Windows  
+ Der Registrierungsschlüssel HKEY_LOCAL_MACHINE \software\microsoft\windows\currentversion\runonce\ wird beim Systemstart mit Administrator Berechtigungen ausgeführt und dann gelöscht. HKEY_CURRENT_USER enthält einen ähnlichen Schlüssel, wird aber als normaler Benutzer ausgeführt und ist nicht für Installationen geeignet. Sie können die Installation fortsetzen, indem Sie einen Zeichen folgen Wert in den RunOnce-Schlüssel einfügen, der das Installationsprogramm aufruft. Es wird jedoch empfohlen, dass Sie den Installer mit einem **/Restart ein** -Parameter oder einem ähnlichen Parameter aufrufen, um die Anwendung darüber zu benachrichtigen, dass Sie fortgesetzt wird, anstatt zu starten. Sie können auch Parameter einschließen, um anzugeben, wo Sie sich im Installationsprozess befinden. Dies ist besonders nützlich bei Installationen, die möglicherweise mehrere Neustarts erfordern.  
   
- The following example shows a RunOnce registry key value for resuming an installation.  
+ Das folgende Beispiel zeigt einen RunOnce-Registrierungsschlüssel Wert zum Fortsetzen einer-Installation.  
   
  `"c:\MyAppInstaller.exe /restart /SomeOtherDataFlag"`  
   
-### <a name="installing-double-restart-of-bootstrapper"></a>Installing Double Restart of Bootstrapper  
- If Setup is used directly from RunOnce, the desktop won't be able to load completely. To make the full user interface available, you must create another execution of Setup and end the RunOnce instance.  
+### <a name="installing-double-restart-of-bootstrapper"></a>Installieren eines doppelten Neustarts des Boots Trappers  
+ Wenn das Setup direkt von RunOnce verwendet wird, kann der Desktop nicht vollständig geladen werden. Um die vollständige Benutzeroberfläche verfügbar zu machen, müssen Sie eine weitere Ausführung des Setups erstellen und die RunOnce-Instanz beenden.  
   
- You must re-execute the Setup program so that it obtains the correct permissions, and you must give it enough information to know where you stopped before the restart, as the following example shows.  
+ Sie müssen das Setup Programm erneut ausführen, damit es die richtigen Berechtigungen erhält, und Sie müssen genügend Informationen angeben, um zu wissen, wo Sie vor dem Neustart angehalten haben, wie im folgenden Beispiel gezeigt.  
   
 ```  
 if (_cmdLineInfo.IsRestart())  
@@ -284,16 +284,16 @@ if (_cmdLineInfo.IsRestart())
   
 ```  
   
-### <a name="deleting-the-shell-installer-resumedata-key"></a>Deleting the Shell Installer ResumeData Key  
- The Shell installer sets the HKLM\Software\Microsoft\VisualStudio\14.0\Setup\ResumeData registry key with data to resume Setup after restart. Because your application, not the Shell installer, is resuming, delete that registry key, as the following example shows.  
+### <a name="deleting-the-shell-installer-resumedata-key"></a>Löschen des "Shell Installer resumedata"-Schlüssels  
+ Das Shell-Installationsprogramm legt den Registrierungsschlüssel hklm\software\microsoft\visualstudio\14.0\setup\resumedata auf Daten fest, um Setup nach dem Neustart fortzusetzen. Da Ihre Anwendung, nicht das Shell-Installationsprogramm, fortgesetzt wird, löschen Sie diesen Registrierungsschlüssel, wie im folgenden Beispiel gezeigt.  
   
 ```  
 CString resumeSetupPath(MAKEINTRESOURCE("SOFTWARE\\Microsoft\\VisualStudio\\14.0\\Setup\\ResumeData"));  
 RegDeleteKey(HKEY_LOCAL_MACHINE, resumeSetupPath);  
 ```  
   
-### <a name="restarting-windows"></a>Restarting Windows  
- After you set the required registry keys, you can restart Windows. The following example invokes the restart commands for different Windows operating systems.  
+### <a name="restarting-windows"></a>Neustarten von Windows  
+ Nachdem Sie die erforderlichen Registrierungsschlüssel festgelegt haben, können Sie Windows neu starten. Im folgenden Beispiel werden die Neustart Befehle für verschiedene Windows-Betriebssysteme aufgerufen.  
   
 ```  
 OSVERSIONINFO ov;  
@@ -330,8 +330,8 @@ catch(...)
   
 ```  
   
-### <a name="resetting-the-start-path-of-msi"></a>Resetting the Start Path of MSI  
- Before restart, the current directory is the location of your Setup program but, after restart, the location becomes the system32 directory. Your Setup program should reset the current directory before each MSI call, as the following example shows.  
+### <a name="resetting-the-start-path-of-msi"></a>Zurücksetzen des Start Pfads von MSI  
+ Vor dem Neustart ist das aktuelle Verzeichnis der Speicherort des Setup Programms, aber nach dem Neustart wird der Speicherort zum Verzeichnis "System32". Das Setup Programm sollte das aktuelle Verzeichnis vor jedem MSI-Befehl Zurücksetzen, wie im folgenden Beispiel gezeigt.  
   
 ```  
 CString GetSetupPath()  
@@ -350,8 +350,8 @@ CString GetSetupPath()
   
 ```  
   
-### <a name="running-the-application-msi"></a>Running the Application MSI  
- After the Visual Studio Shell installer returns ERROR_SUCCESS, you can run the MSI for your application. Because your Setup program is providing the user interface, start your MSI in quiet mode ( **/q**) and with logging ( **/L**), as the following example shows.  
+### <a name="running-the-application-msi"></a>Ausführen der MSI für die Anwendung  
+ Nachdem der Visual Studio Shell-Installer ERROR_SUCCESS zurückgegeben hat, können Sie die MSI-Datei für Ihre Anwendung ausführen. Da das Setup Programm die Benutzeroberfläche bereitstellt, starten Sie die MSI im stillen Modus ( **/q**) und mit der Protokollierung ( **/L**), wie im folgenden Beispiel gezeigt.  
   
 ```cpp#  
 TCHAR temp[MAX_PATH];  

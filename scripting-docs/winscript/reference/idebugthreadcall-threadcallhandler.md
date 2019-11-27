@@ -58,6 +58,6 @@ HRESULT ThreadCallHandler(
  Diese Methode verarbeitet Aufrufe zum Ausführen von Code im Debugger-Thread.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugthreadcallschnittstelle](../../winscript/reference/idebugthreadcall-interface.md)    
- [Idebugapplication:: synchronouscallindebuggerthread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md) -   
+ [Idebugthreadcallschnittstelle](../../winscript/reference/idebugthreadcall-interface.md)   
+ [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

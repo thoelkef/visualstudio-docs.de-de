@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 494287c6691d27eb636f92eff324eecf49daf5fa
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1df72c6978f5ab34a86c74dbc1ea349db5aa4457
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187575"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491305"
 ---
 # <a name="how-to-install-a-visualizer"></a>Gewusst wie: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.
@@ -30,7 +30,33 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 > [!NOTE]
 > In UWP-apps werden nur die standardmäßigen Text-, HTML-, XML-und JSON-Visualisierungen unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.
 
-### <a name="to-install-a-visualizer"></a>So installieren Sie eine Schnellansicht
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>So installieren Sie eine Schnellansicht für Visual Studio 2019
+  
+1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
+
+2. Kopieren Sie die [Debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) -dll an einen der folgenden Speicherorte:
+
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
+    
+3. Kopieren Sie die zu [debuggende Seite](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) an einen der folgenden Speicherorte:
+
+    - *Visualstudioinstallpath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
+
+    - `My Documents\` *visualstudioversion* `\Visualizers\` *Framework*
+
+    Dabei ist *Framework* beides:
+    - `net2.0` für die, die die `.NET Framework`-Laufzeit ausführen.
+    - `netstandard2.0` für Debug-Ausdrücke mit einer Laufzeit, die `netstandard 2.0` (`.NET Framework v4.6.1+` oder `.NET Core 2.0+`) unterstützt.
+    - `netcoreapp` für die, die die `.NET Core`-Laufzeit ausführen. (unterstützt `.NET Core 2.0+`)
+
+4. Starten Sie die Debugsitzung neu.
+
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>So installieren Sie eine Schnellansicht für Visual Studio 2017 und ältere
+
+> [!IMPORTANT]
+> Nur .NET Framework Visualisierungen werden in Visual Studio 2017 und älter unterstützt.
 
 1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
 
@@ -40,9 +66,10 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3. Wenn Sie eine verwaltete Schnellansicht zum Remotedebuggen verwenden möchten, kopieren Sie die DLL-Datei in denselben Pfad auf dem Remotecomputer.
+3. Starten Sie die Debugsitzung neu.
 
-4. Starten Sie die Debugsitzung neu.
+> [!NOTE]
+> Wenn Sie eine verwaltete Schnellansicht zum Remotedebuggen verwenden möchten, kopieren Sie die DLL-Datei in denselben Pfad auf dem Remotecomputer.
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)

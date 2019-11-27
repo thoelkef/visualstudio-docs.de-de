@@ -1,5 +1,5 @@
 ---
-title: 'How to: Troubleshoot Unsuccessful Project Upgrades | Microsoft Docs'
+title: 'Gewusst wie: Problembehandlung bei nicht erfolgreichen Projekt Upgrades | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -28,7 +28,7 @@ ms.locfileid: "74300348"
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Gewusst wie: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früheren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Version konvertiert werden. If the tips in the following sections do not resolve your specific problem, you might be able to find more information on the TechNet [Wiki: Development Portal](https://go.microsoft.com/fwlink/?LinkId=254808).
+Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früheren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Version konvertiert werden. Wenn Sie mit den Tipps in den folgenden Abschnitten Ihr bestimmtes Problem nicht lösen können, finden Sie möglicherweise weitere Informationen im TechNet- [wiki: Entwicklungs Portal](https://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Das Projekt wird nicht ausgeführt, da Dateien nicht gefunden werden können
  Eine Projektdatei enthält fest codierte Dateipfade, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Ausführung des Projekts verwendet werden, wenn Sie F5 drücken. Diese Pfade enthalten möglicherweise den Speicherort von devenv.exe und anderer erforderlicher Dateien. In einer aktualisierten Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden die Pfade dieser Dateien möglicherweise geändert.
@@ -57,4 +57,4 @@ Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früher
    Wenn das Projekt in der aktualisierten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version ausgeführt werden soll, müssen Sie die Verweise auf das Projekt und auch sämtliche `Imports`-Anweisungen oder `Using`-Anweisungen aktualisieren, die die Verweise aufrufen. Wenn das Projekt in der IDE geladen wird, können Sie die Verweise mithilfe des **Projektmappen-Explorers** oder des Dialogfelds **Verweis-Manager** aktualisieren.
 
 ## <a name="see-also"></a>Siehe auch
- [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [Converting to ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade ("Debug-v. exe")](../ide/reference/upgrade-devenv-exe.md) wird in " [ASP.NET 4" umgerechnet](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

@@ -50,5 +50,5 @@ HRESULT SetBreakPoint(
  Diese Methode legt einen Haltepunkt in diesem Code Kontext fest oder löscht ihn.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugcodecontext-Schnittstelle](../../winscript/reference/idebugcodecontext-interface.md)    
+ [Idebugcodecontext-Schnittstelle](../../winscript/reference/idebugcodecontext-interface.md)   
  [BREAKPOINT_STATE-Enumeration](../../winscript/reference/breakpoint-state-enumeration.md)

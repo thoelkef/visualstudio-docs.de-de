@@ -47,5 +47,5 @@ HRESULT onComplete();
  Diese Methode signalisiert, dass ein Ergebnis aus einem `IDebugAsyncOperation`-Objekt verfügbar ist. Das Ereignis wird im Debugger-Thread ausgelöst.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugasyncoperationcallback-Schnittstelle](../../winscript/reference/idebugasyncoperationcallback-interface.md)    
+ [Idebugasyncoperationcallback-Schnittstelle](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
  [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)

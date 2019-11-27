@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Displaying Related Data in a WPF Application | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -29,35 +29,35 @@ ms.locfileid: "74299585"
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In this walkthrough, you will create a WPF application that displays data from database tables that have a parent/child relationship. The data is encapsulated in entities in an Entity Data Model. The parent entity contains overview information for a set of orders. Each property of this entity is bound to a different control in the application. The child entity contains details for each order. This set of data is bound to a <xref:System.Windows.Controls.DataGrid> control.
+In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Daten aus Datenbanktabellen anzeigt, die über eine Beziehung zwischen über-und untergeordneten Elementen verfügen. Die Daten werden in Entitäten in einem Entity Data Model gekapselt. Die übergeordnete Entität enthält Übersichts Informationen für eine Reihe von Aufträgen. Jede Eigenschaft dieser Entität wird an ein anderes Steuerelement in der Anwendung gebunden. Die untergeordnete Entität enthält Details für jede Bestellung. Diese Datenmenge ist an ein <xref:System.Windows.Controls.DataGrid> Steuerelement gebunden.
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
-- Creating a WPF application and an Entity Data Model that is generated from data in the AdventureWorksLT sample database.
+- Erstellen einer WPF-Anwendung und eines Entity Data Model, das aus Daten in der AdventureWorksLT-Beispieldatenbank generiert wird.
 
-- Creating a set of data-bound controls that display overview information for a set of orders. You create the controls by dragging a parent entity from the **Data Sources** window to **the WPF Designer**.
+- Erstellen eines Satzes Daten gebundener Steuerelemente, die Übersichts Informationen für eine Reihe von Aufträgen anzeigen. Sie erstellen die Steuerelemente, indem Sie eine übergeordnete Entität aus dem **Datenquellen** Fenster in **den WPF-Designer**ziehen.
 
-- Creating a <xref:System.Windows.Controls.DataGrid> control that displays related details for each selected order. You create the controls by dragging a child entity from the **Data Sources** window to a window in **the WPF designer**.
+- Erstellen eines <xref:System.Windows.Controls.DataGrid>-Steuer Elements, das verwandte Details für jede ausgewählte Bestellung anzeigt. Sie erstellen die Steuerelemente, indem Sie eine untergeordnete Entität aus dem **Datenquellen** Fenster in ein Fenster im **WPF-Designer**ziehen.
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. You can download the AdventureWorksLT database from the [CodePlex Web site](https://go.microsoft.com/fwlink/?linkid=87843).
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
 
   Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
-- Entity Data Models und der ADO.NET Entity Framework. For more information, see [Entity Framework Overview](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).
+- Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Entity Framework Übersicht](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).
 
-- Arbeiten mit dem WPF-Designer. For more information, see [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
+- Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [Übersicht über WPF-und Silverlight-Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie in der [Übersicht über die Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="creating-the-project"></a>Erstellen des Projekts
- Create a new WPF project to display the order records.
+ Erstellen Sie ein neues WPF-Projekt, um die Bestelldaten Sätze anzuzeigen.
 
 #### <a name="to-create-a-new-wpf-project"></a>So erstellen Sie ein neues WPF-Projekt
 
@@ -65,9 +65,9 @@ In this walkthrough, you will create a WPF application that displays data from d
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-3. Expand **Visual C#** or **Visual Basic**, and then select **Windows**.
+3. Erweitern **Sie C# Visual** oder **Visual Basic**, und wählen Sie dann **Windows**aus.
 
-4. Make sure that **.NET Framework 4** is selected in the combo box at the top of the dialog box. The <xref:System.Windows.Controls.DataGrid> control that you use in this walkthrough is available only in the .NET Framework 4.
+4. Stellen Sie sicher, dass **.NET Framework 4** im Kombinations Feld am oberen Rand des Dialog Felds ausgewählt ist. Das <xref:System.Windows.Controls.DataGrid> Steuerelement, das Sie in dieser exemplarischen Vorgehensweise verwenden, ist nur in der .NET Framework 4 verfügbar.
 
 5. Wählen Sie die Projektvorlage **WPF-Anwendung** aus.
 
@@ -75,32 +75,32 @@ In this walkthrough, you will create a WPF application that displays data from d
 
 7. Klicken Sie auf **OK**.
 
-     Visual Studio creates the `AdventureWorksOrdersViewer` project.
+     Visual Studio erstellt das `AdventureWorksOrdersViewer` Projekt.
 
-## <a name="creating-an-entity-data-model-for-the-application"></a>Creating an Entity Data Model for the Application
- Ehe Sie datengebundene Steuerelemente erstellen können, müssen Sie ein Datenmodell für die Anwendung definieren und es dem **Datenquellenfenster** hinzufügen. In this walkthrough, the data model is an Entity Data Model.
+## <a name="creating-an-entity-data-model-for-the-application"></a>Erstellen eines Entity Data Model für die Anwendung
+ Ehe Sie datengebundene Steuerelemente erstellen können, müssen Sie ein Datenmodell für die Anwendung definieren und es dem **Datenquellenfenster** hinzufügen. In dieser exemplarischen Vorgehensweise ist das Datenmodell eine Entity Data Model.
 
 #### <a name="to-create-an-entity-data-model"></a>So erstellen Sie ein Entity Data Model
 
-1. On the **Data** menu, click **Add New Data Source** to open the **Data Source Configuration Wizard**.
+1. Klicken Sie im Menü **Daten** auf **neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu öffnen.
 
-2. On the **Choose a Data Source Type** page, click **Database**, and then click **Next**.
+2. Klicken Sie auf der Seite **Daten Quellentyp auswählen** auf **Datenbank**, und klicken Sie dann auf **weiter**.
 
-3. On the **Choose a Database Model** page, click **Entity Data Model**, and then click **Next**.
+3. Klicken Sie auf der Seite **Datenbankmodell auswählen** auf **Entity Data Model**, und klicken Sie dann auf **weiter**.
 
-4. On the **Choose Model Contents** page, click **Generate from database**, and then click **Next**.
+4. Klicken Sie auf der Seite **Modell Inhalte auswählen** auf **aus Datenbank generieren**, und klicken Sie dann auf **weiter**.
 
-5. On the **Choose Your Data Connection** page, do one of the following:
+5. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** aus einen der folgenden Schritte aus:
 
    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "AdventureWorksLT" verfügbar ist, wählen Sie diese aus.
 
-      - oder -
+      \- oder -
 
-   - Click **New Connection** and create a connection to the AdventureWorksLT database.
+   - Klicken Sie auf **neue Verbindung** , und erstellen Sie eine Verbindung mit der AdventureWorksLT-Datenbank.
 
-     Make sure that the **Save entity connection settings in App.Config as** option is selected, and then click **Next**.
+     Stellen Sie sicher, dass die Option **Entitäts Verbindungseinstellungen in app. config speichern als** ausgewählt ist, und klicken Sie dann auf **weiter**.
 
-6. On the **Choose Your Database Objects** page, expand **Tables**, and then select the following tables:
+6. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**, und wählen Sie dann die folgenden Tabellen aus:
 
    - **SalesOrderDetail**
 
@@ -110,40 +110,40 @@ In this walkthrough, you will create a WPF application that displays data from d
 
 8. Erstellen Sie das Projekt.
 
-## <a name="creating-data-bound-controls-that-display-the-orders"></a>Creating Data-Bound Controls that Display the Orders
- Create controls that display order records by dragging the `SalesOrderHeaders` entity from the **Data Sources** window to the WPF designer.
+## <a name="creating-data-bound-controls-that-display-the-orders"></a>Erstellen Daten gebundener Steuerelemente, die die Bestellungen anzeigen
+ Erstellen Sie Steuerelemente, die Bestelldaten Sätze anzeigen, indem Sie die `SalesOrderHeaders` Entität aus dem **Datenquellen** Fenster in den WPF-Designer ziehen.
 
-#### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>To create data-bound controls that display the order records
+#### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>So erstellen Sie Daten gebundene Steuerelemente, die die Bestelldaten Sätze anzeigen
 
-1. In **Solution Explorer**, double-click MainWindow.xaml.
+1. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei MainWindow. XAML.
 
     Das Fenster wird automatisch im WPF-Designer geöffnet.
 
-2. Edit the XAML so the **Height** and **Width** properties are set to 800
+2. Bearbeiten Sie den XAML-Code, sodass die Eigenschaften **height** und **Width** auf 800 festgelegt sind.
 
-3. In the **Data Sources** window, click the drop-down menu for the **SalesOrderHeaders** node and select **Details**.
+3. Klicken Sie im Fenster **Datenquellen** auf das Dropdown Menü für den Knoten **SalesOrderHeaders** , und wählen Sie **Details**aus.
 
 4. Erweitern Sie den Knoten **SalesOrderHeaders**.
 
-5. Click the drop-down menu next to **SalesOrderID** and select **ComboBox**.
+5. Klicken Sie auf das Dropdown Menü neben **SalesOrderID** , und wählen Sie **ComboBox**aus.
 
-6. For each of the following child nodes of the **SalesOrderHeaders** node, click the drop-down menu next the node and select **None**:
+6. Klicken Sie für jeden der folgenden untergeordneten Knoten des Knotens **SalesOrderHeaders** auf das Dropdown Menü neben dem Knoten, und wählen Sie **keine**aus:
 
    - **RevisionNumber**
 
    - **OnlineOrderFlag**
 
-   - **ShipToAddressID**
+   - **Ship-adressssid**
 
-   - **BillToAddressID**
+   - **Abrechnungs-SSID**
 
    - **CreditCardApprovalCode**
 
-   - **SubTotal**
+   - **Teilergebnis**
 
    - **TaxAmt**
 
-   - **Freight**
+   - **FRA**
 
    - **Rowguid**
 
@@ -151,27 +151,27 @@ In this walkthrough, you will create a WPF application that displays data from d
 
      Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.
 
-7. From the **Data Sources** window, drag the **SalesOrderHeaders** node to the window in **the WPF Designer**.
+7. Ziehen Sie aus dem Fenster **Datenquellen** den Knoten **SalesOrderHeaders** in das Fenster im **WPF-Designer**.
 
-    Visual Studio generates XAML that creates a set of controls that are bound to data in the **SalesOrderHeaders** entity, and code that loads the data. For more information about the generated XAML and code, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+    Visual Studio generiert XAML, das eine Reihe von Steuerelementen erstellt, die an Daten in der **SalesOrderHeaders** -Entität gebunden sind, und Code, der die Daten lädt. Weitere Informationen über den generierten XAML-Code und Code finden [Sie unterbinden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-8. In the designer, click the combo box next to the **Sales Order ID** label.
+8. Klicken Sie im Designer auf das Kombinations Feld neben der Bezeichnung **Sales Order ID** .
 
 9. Aktivieren Sie im Fenster **Eigenschaften** das Kontrollkästchen neben der Eigenschaft **IsReadOnly**.
 
-## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Creating a DataGrid that Displays the Order Details
- Create a <xref:System.Windows.Controls.DataGrid> control that displays order details by dragging the `SalesOrderDetails` entity from the **Data Sources** window to the WPF designer.
+## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Erstellen eines DataGrid-Steuerelement, das die Bestell Details anzeigt
+ Erstellen Sie ein <xref:System.Windows.Controls.DataGrid> Steuerelement, das Bestelldetails anzeigt, indem Sie die `SalesOrderDetails` Entität aus dem **Datenquellen** Fenster in den WPF-Designer ziehen.
 
-#### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>To create a DataGrid that displays the order details
+#### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>So erstellen Sie ein DataGrid-Steuerelement, das die Bestelldetails anzeigt
 
-1. In the **Data Sources** window, locate the **SalesOrderDetails** node that is a child of the **SalesOrderHeaders** node.
+1. Suchen Sie im Fenster **Datenquellen** den Knoten **SalesOrderDetails** , der ein untergeordnetes Element des Knotens **SalesOrderHeaders** ist.
 
    > [!NOTE]
-   > There is also a **SalesOrderDetails** node that is a peer of the **SalesOrderHeaders** node. Make sure that you select the child node of the **SalesOrderHeaders** node.
+   > Es gibt auch einen **SalesOrderDetails** -Knoten, der ein Peer des **SalesOrderHeaders** -Knotens ist. Stellen Sie sicher, dass Sie den untergeordneten Knoten des Knotens **SalesOrderHeaders** auswählen.
 
-2. Expand the child **SalesOrderDetails** node.
+2. Erweitern Sie den untergeordneten Knoten **SalesOrderDetails** .
 
-3. For each of the following child nodes of the **SalesOrderDetails** node, click the drop-down menu next the node and select **None**:
+3. Klicken Sie für jeden der folgenden untergeordneten Knoten des Knotens **SalesOrderDetails** auf das Dropdown Menü neben dem Knoten, und wählen Sie **keine**aus:
 
    - **SalesOrderID**
 
@@ -181,14 +181,14 @@ In this walkthrough, you will create a WPF application that displays data from d
 
    - **ModifiedDate**
 
-     This action prevents Visual Studio from including this data in the <xref:System.Windows.Controls.DataGrid> control you create in the next step. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.
+     Durch diese Aktion wird verhindert, dass Visual Studio diese Daten in das <xref:System.Windows.Controls.DataGrid> Steuerelement einschließt, das Sie im nächsten Schritt erstellen. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.
 
-4. From the **Data Sources** window, drag the child **SalesOrderDetails** node to the window in **the WPF Designer**.
+4. Ziehen Sie den untergeordneten Knoten **SalesOrderDetails** aus dem Fenster **Datenquellen** in das Fenster des **WPF-Designers**.
 
-    Visual Studio generates XAML to define a new data-bound <xref:System.Windows.Controls.DataGrid> control, and the control appears in the designer. Visual Studio also updates the generated `GetSalesOrderHeadersQuery` method in the code-behind file to include the data in the **SalesOrderDetails** entity.
+    Visual Studio generiert XAML, um ein neues Daten gebundenes <xref:System.Windows.Controls.DataGrid> Steuerelement zu definieren, und das Steuerelement wird im Designer angezeigt. Visual Studio aktualisiert auch die generierte `GetSalesOrderHeadersQuery`-Methode in der Code Behind-Datei, um die Daten in der **SalesOrderDetails** -Entität einzubeziehen.
 
 ## <a name="testing-the-application"></a>Testen der Anwendung
- Build and run the application to verify that it displays the order records.
+ Erstellen Sie die Anwendung, und führen Sie Sie aus.
 
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung
 
@@ -196,14 +196,14 @@ In this walkthrough, you will create a WPF application that displays data from d
 
      Die Anwendung wird erstellt und ausgeführt. Überprüfen Sie Folgendes:
 
-    - The **Sales Order ID** combo box displays **71774**. This is the first order ID in the entity.
+    - Im Kombinations Feld **Sales Order ID** wird **71774**angezeigt. Dies ist die erste Bestell-ID in der Entität.
 
-    - For each order you select in the **Sales Order ID** combo box, detailed order information is displayed in the <xref:System.Windows.Controls.DataGrid>.
+    - Für jede von Ihnen im Kombinations Feld **Sales Order ID** ausgewählte Reihenfolge werden ausführliche Bestellinformationen in der <xref:System.Windows.Controls.DataGrid>angezeigt.
 
 2. Schließen Sie die Anwendung.
 
 ## <a name="next-steps"></a>Nächste Schritte
- After completing this walkthrough, learn how to use the **Data Sources** window in Visual Studio to bind WPF controls to other types of data sources. For more information, see [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) and [Bind WPF controls to a dataset](../data-tools/bind-wpf-controls-to-a-dataset.md).
+ Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, erfahren Sie, wie Sie das **Datenquellen** Fenster in Visual Studio verwenden, um WPF-Steuerelemente an andere Arten von Datenquellen zu binden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) und [Binden von WPF-Steuerelementen an ein DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Display related data in WPF applications](../data-tools/display-related-data-in-wpf-applications.md)
+ [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Anzeigen verwandter Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)

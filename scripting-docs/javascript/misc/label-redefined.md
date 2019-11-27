@@ -29,7 +29,7 @@ Sie haben eine neue Bezeichnung erstellt, aber den Namen einer vorhandenen Bezei
 - Stellen Sie sicher, dass alle Bezeichnungen, die Sie in ihren Programmen verwenden, innerhalb der jeweiligen Bereiche eindeutig sind.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bezeichnete Anweisung](../../javascript/reference/labeled-statement-javascript.md)    
- [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)    
+ [Bezeichnete Anweisung](../../javascript/reference/labeled-statement-javascript.md)   
+ [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)   
  [break-Anweisung](../../javascript/reference/break-statement-javascript.md)   
  [continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)

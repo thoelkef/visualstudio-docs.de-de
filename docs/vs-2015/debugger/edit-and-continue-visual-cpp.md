@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue (Visual C++) | Microsoft Docs
+title: Bearbeiten und Fortfahren ( C++Visual) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,15 +28,15 @@ ms.locfileid: "74301060"
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.  
+Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. Weitere Informationen zu den Einschränkungen von "Bearbeiten und Fortfahren" finden Sie [unter Unterstützte Code Änderungen (C++)](../debugger/supported-code-changes-cpp.md) .  
   
- Starting in Visual Studio 2015 Update 1, you can now use Edit and Continue in Windows Store C++ apps and DirectX apps, because it now supports the **/ZI** compiler switch with **/bigobj** switch. You can also use Edit  and Continue with binaries compiled with the **/FASTLINK** switch.  
+ Ab Visual Studio 2015 Update 1 können Sie jetzt "Bearbeiten und Fortfahren" in Windows Store C++ -apps und DirectX-Apps verwenden, da jetzt der **/Zi** -Compilerschalter mit dem **/bigobj** -Schalter unterstützt wird. Sie können "Bearbeiten und Fortfahren" auch mit Binärdateien verwenden, die mit dem Schalter **/fastlink** kompiliert wurden.  
   
- Other Update 1 improvements include a new, cancelable wait dialog, and notification when a file does not support Edit and Continue. For more information about Update 1 improvements, see [Improvements for C++ Edit and Continue in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
+ Weitere Update 1-Verbesserungen sind ein neues Wartedialogfeld, das abgebrochen werden kann, sowie eine Benachrichtigung für den Fall, dass „Bearbeiten und Fortfahren“ für eine Datei nicht unterstützt wird. Weitere Informationen zu Update 1-Verbesserungen finden Sie unter [Verbesserungen C++ für "Bearbeiten und Fortfahren" in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  Die Compileroption [/Zo (erweitertes optimiertes Debugging)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f), die in Visual Studio 2013 Update 3 eingeführt wurde, fügt zusätzliche Informationen in PDB-Dateien (Symboldateien) für Binärdateien hinzu, die ohne die Option [/Od ((Debug) deaktivieren)](https://msdn.microsoft.com/library/aafb762y.aspx) kompiliert wurden.  
   
- **/Zo** disables Edit and Continue. Weitere Informationen finden Sie unter [How to: Debug Optimized Code (Vorgehensweise: Debuggen von optimiertem Code)](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** deaktiviert Bearbeiten und fortfahren. Weitere Informationen finden Sie unter [How to: Debug Optimized Code (Vorgehensweise: Debuggen von optimiertem Code)](../debugger/how-to-debug-optimized-code.md).  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Aktivieren oder Deaktivieren von „Bearbeiten und Fortfahren“  
  Möglicherweise möchten Sie das automatische Aufrufen von „Bearbeiten und Fortfahren“ deaktivieren, wenn Sie Änderungen am Code vornehmen, die nicht während der aktuellen Debugsitzung angewendet werden sollen. Sie können das automatische Aufrufen von „Bearbeiten und Fortfahren“ später wieder aktivieren.  

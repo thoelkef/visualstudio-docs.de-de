@@ -1,5 +1,5 @@
 ---
-title: Select Rule Set Dialog Box (Legacy) | Microsoft Docs
+title: Regelsatz auswählen (Dialog Feld) (Legacy) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -21,27 +21,27 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301441"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor auswählen" (Vorgängerversion)
-This topic describes how use the **Select Rule Set** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelsatz auswählen** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)]verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
- The **Select Rule Set** dialog box is used to select a rule set that you can use with a [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) activity. For information about how to access the **Select Rule Set** dialog box, see [How to: Create a PolicyActivity Rule Set (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ Mit dem Dialogfeld **Regelsatz auswählen** wird ein Regelsatz ausgewählt, den Sie mit einer [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) -Aktivität verwenden können. Informationen zum Zugreifen auf das Dialogfeld **Regelsatz auswählen finden Sie** unter Vorgehens [Weise: Erstellen eines PolicyActivity-Regelsatzes (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
- The following table describes the user interface (UI) elements of the **Select Rule Set** dialog box.
+ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Regelsatz auswählen** beschrieben.
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|
-|**New…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to create a new rule condition.|
-|**Edit…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to edit the selected rule condition.|
-|**Rename…**|Klicken Sie hierauf, um ein Dialogfeld zu öffnen, das zum Umbenennen des ausgewählten Regelsatzes verwendet wird.|
+|**Neu...**|Klicken Sie hierauf, um das [Dialog Feld Regelsatz-Editor (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) zu öffnen und eine neue Regel Bedingung zu erstellen.|
+|**Bearbeiten...**|Klicken Sie hierauf, um das [Dialog Feld Regelsatz-Editor zu öffnen (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) , um die ausgewählte Regel Bedingung zu bearbeiten.|
+|**Umbenennen...**|Klicken Sie hierauf, um ein Dialogfeld zu öffnen, das zum Umbenennen des ausgewählten Regelsatzes verwendet wird.|
 |**Löschen**|Klicken Sie hierauf, um den ausgewählten Regelsatz zu löschen.|
-|**Rule Set Preview**|Zeigt die im ausgewählten Regelsatz enthaltenen Regeln an.|
-|**OK**|Click to assign the selected rule set to the **PolicyActivity** activity.|
+|**Regelsatz-Vorschau**|Zeigt die im ausgewählten Regelsatz enthaltenen Regeln an.|
+|**Okay**|Klicken Sie hierauf, um den ausgewählten Regelsatz der **PolicyActivity** -Aktivität zuzuweisen.|
 
- For more information about how to create and edit rule sets, see [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
+ Weitere Informationen zum Erstellen und Bearbeiten von Regelsätzen finden Sie unter [Dialog Feld "Regelsatz-Editor" (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
 > Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../includes/wfd2-md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.
 
- For more information about conditions, see [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
+ Weitere Informationen zu Bedingungen finden Sie unter [Verwenden von Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
 
 ## <a name="see-also"></a>Siehe auch
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) - [Regelsatz-Editor (Dialog Feld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Verwenden der PolicyActivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65004) unter Verwendung von [Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)

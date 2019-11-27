@@ -24,9 +24,9 @@ Mit dem Cloud-Explorer können Sie Ihre Azure-Ressourcen und -Ressourcengruppen 
 
 Der Cloud-Explorer setzt wie das [Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) auf dem Azure Resource Manager-Stapel auf. Daher kann der Cloud-Explorer mit Ressourcen wie Azure-Ressourcengruppen und Azure-Diensten wie Logic Apps und API-Apps arbeiten und unterstützt die [rollenbasierte Zugriffssteuerung](/azure/role-based-access-control/role-assignments-portal) (Role-Based Access Control, RBAC).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Visual Studio 2015 with the [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2015 mit dem [Microsoft Azure SDK für .NET 2,9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Microsoft Azure-Konto: Wenn Sie noch nicht über ein Konto verfügen, können Sie sich [für eine kostenlose Testversion registrieren](https://go.microsoft.com/fwlink/?LinkId=623901) oder Ihre [Visual Studio-Abonnentenvorteile aktivieren](https://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

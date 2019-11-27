@@ -50,5 +50,5 @@ HRESULT QueryContinue();
  Ein Multithread-Host kann die `IActiveScript::InterruptScriptThread`-Methode verwenden, um ein Skript zu beenden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptsiteinterruptabruf-Schnittstelle](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)    
+ [Iactivescriptsiteinterruptabruf-Schnittstelle](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

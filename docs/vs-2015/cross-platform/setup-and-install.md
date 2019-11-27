@@ -64,13 +64,13 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xam
   
 2. (Nur Neuinstallationen) Wählen Sie im Installationsprogramm eine **Benutzerdefinierte** Installation aus:  
   
-    ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+    ![Auswählen der benutzerdefinierten Option in der Visual Studio-Installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Plattformübergreifendes xamarin-Setup 1")  
   
 3. Aktivieren Sie die folgenden Felder:  
   
    1. **Plattformübergreifende mobile Entwicklung > C#/.NET (Xamarin)** . Dadurch werden unter „Häufig verwendete Tools und Software Development Kits“ auch automatisch verschiedene Android-Tools ausgewählt. Diese Option sollte auch alle vorhandenen Xamarin-Installationen aktualisieren.  
   
-        ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+        ![Wählen Sie unter plattformübergreifende&#45;Mobile Entwicklung die Option xamarin aus.](../cross-platform/media/cross-plat-xamarin-setup-2.png "Plattformübergreifendes xamarin-Setup 2")  
   
    2. Für Windows 8+: **Plattformübergreifende mobile Entwicklung > Microsoft Visual Studio-Emulator für Android**. Hinweis: Wenn Sie einen Computer mit Windows 7 oder früher verwenden oder Windows auf einem Mac ausführen, achten Sie darauf, dass die Option *nicht aktiviert* ist. Weitere Informationen finden Sie unter „Hinweis zu Emulatoren auf Windows-Computern“ nach Schritt 5. Sie können diese Option deaktiviert lassen, wenn Sie nur auf physischen Android-Geräten debuggen möchten.  
   
@@ -80,7 +80,7 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xam
   
 5. Starten Sie Visual Studio nach dem Abschluss der Installation, und melden Sie sich mit Ihrem Microsoft-Konto an, wenn Sie dazu aufgefordert werden (es handelt sich um das gleiche Konto, das Sie für Windows verwenden). Suchen Sie anschließend mithilfe von **Extras > Optionen > Xamarin** oder **Extras > Optionen > Xamarin > Sonstige** nach Xamarin-Updates; dazu dient der Link **Jetzt überprüfen**:  
   
-    ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+    ![Überprüfen von xamarin-Updates in Visual Studio-Optionen](../cross-platform/media/cross-plat-xamarin-setup-3.png "Plattformübergreifendes xamarin-Setup 3")  
   
    > [!NOTE]
    > Wie bereits erwähnt, müssen Sie Xamarin auf Version 4.0.3.214 oder höher aktualisieren, um Probleme mit früheren Xamarin-Lizenzen zu vermeiden.  
@@ -91,7 +91,7 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xam
   
    **Hinweis zu Emulatoren auf Windows-Computern:** Da die CPUs jeweils nur eine Virtualisierungstechnologie unterstützen, sollte auf einem Entwicklungscomputer jeweils nur eine eingesetzt werden. Die drei wichtigsten Virtualisierungstechnologien sind Hyper-V (das vom Visual Studio Emulator für Android und dem Windows Phone-Emulator verwendet wird), Virtual Box (das von Genymotion verwendet wird) und Intel HAXM (das vom Android SDK-Emulator verwendet wird). Aufgrund von verschiedenen Problemen zwischen Hyper-V und Virtual Box sollten auf einem Computer jeweils nur Emulatoren eines dieser Typen verwendet werden; darauf beziehen sich auch die oben genannten Empfehlungen für den Einsatz von Hyper-V auf Computern mit Windows 8 und höher und Intel HAXM-Emulatoren auf Windows 7 sowie bei der Ausführung von Windows auf einem Mac.  
   
-## <a name="mac"></a> Mac-Setup (Apple ID, Xcode und Xamarin)  
+## <a name="mac"></a>Mac-Setup (Apple ID, Xcode und Xamarin)  
   
 1. Unter [https://appleid.apple.com](https://appleid.apple.com/) können Sie eine kostenlose Apple-ID erstellen, wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.  
   

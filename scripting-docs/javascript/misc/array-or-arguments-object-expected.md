@@ -29,6 +29,6 @@ Sie haben kein Array als Argument bereitgestellt. Dieser Fehler gilt nur für di
 - Geben Sie entweder ein `Array`-oder ein **Arguments** -Objekt als zweites Argument an.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)    
- [Apply-Methode (Funktion)](../../javascript/reference/apply-method-function-javascript.md)    
+ [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)   
+ [Apply-Methode (Funktion)](../../javascript/reference/apply-method-function-javascript.md)   
  [Funktionen](../../javascript/functions-javascript.md)

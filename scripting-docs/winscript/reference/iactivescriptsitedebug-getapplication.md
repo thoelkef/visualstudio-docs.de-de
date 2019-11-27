@@ -51,5 +51,5 @@ HRESULT GetApplication(
  Die `GetApplication`-Methode bietet einem Smarthost die Möglichkeit, das Anwendungs Objekt zu definieren, zu dem die einzelnen Skripts gehören. Skript-Engines sollten versuchen, diese Methode aufzurufen, um Ihre enthaltende Anwendung abzurufen und auf `IProcessDebugManager::GetDefaultApplication` zurückzugreifen, wenn dies fehlschlägt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptsitedebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)    
+ [Iactivescriptsitedebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

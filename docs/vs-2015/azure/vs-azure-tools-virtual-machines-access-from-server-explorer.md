@@ -20,26 +20,26 @@ ms.locfileid: "74291055"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Zugreifen auf virtuelle Azure-Computer im Server-Explorer
 
-Wenn Sie in Azure gehostete virtuelle Computer verwenden, können Sie über den Server-Explorer auf diese Computer zugreifen. Sie müssen sich zunächst bei Ihrem Azure-Abonnement anmelden, um die mobilen Dienste anzeigen zu können. Öffnen Sie das Kontextmenü für den Azure-Knoten, und wählen Sie **Verbindung mit Microsoft Azure-Abonnement herstellen**aus, um sich anzumelden.
+Wenn Sie in Azure gehostete virtuelle Computer verwenden, können Sie über Server-Explorer auf diese Computer zugreifen. Sie müssen sich zunächst bei Ihrem Azure-Abonnement anmelden, um die mobilen Dienste anzeigen zu können. Öffnen Sie das Kontextmenü für den Azure-Knoten, und wählen Sie **Verbindung mit Microsoft Azure-Abonnement herstellen**aus, um sich anzumelden.
 
 1. Wählen Sie im Cloud-Explorer einen virtuellen Computer aus, und drücken Sie anschließend die F4-Taste, um das Eigenschaftenfenster für den Computer anzuzeigen.
 
     Die folgende Tabelle zeigt, welche Eigenschaften verfügbar sind – diese jedoch alle schreibgeschützt. Sie können sie über das [Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) ändern.
 
-   | property | Beschreibung |
+   | Eigenschaft | Beschreibung |
    | --- | --- |
    | DNS-Name |Die URL mit der Internetadresse des virtuellen Computers. |
    | Umgebung |Für einen virtuellen Computer lautet der Wert dieser Eigenschaft immer "Produktion". |
-   | -Name |Der Name des virtuellen Computers. |
+   | Name |Der Name des virtuellen Computers. |
    | Größe |Die Größe des virtuellen Computers. Diese Eigenschaft gibt die Menge an verfügbarem Arbeitsspeicher und Festplattenspeicher an. Weitere Informationen finden Sie unter [Größen virtueller Computer](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
    | Status |Mögliche Werte lauten "Wird gestartet", "Gestartet", "Wird angehalten", "Angehalten" und "Status wird abgerufen". Wird "Status wird abgerufen" angezeigt, ist der aktuelle Status unbekannt. Die Werte für diese Eigenschaft unterscheiden sich von den Werten, die im [Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) verwendet werden. |
    | SubscriptionID |Die Abonnement-ID für Ihr Azure-Konto. Sie können diese Informationen im [Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) anzeigen, indem Sie die Eigenschaften für ein Abonnement öffnen. |
 2. Wählen Sie einen Endpunktknoten aus, und zeigen Sie dann das Fenster **Eigenschaften** an.
 3. Die folgende Tabelle beschreibt die verfügbaren Endpunkteigenschaften. Alle Eigenschaften sind schreibgeschützt. Verwenden Sie zum Hinzufügen oder Bearbeiten der Endpunkte für einen virtuellen Computer das [Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). 
 
-   | property | Beschreibung |
+   | Eigenschaft | Beschreibung |
    | --- | --- |
-   | -Name |Ein Bezeichner für den Endpunkt. |
+   | Name |Ein Bezeichner für den Endpunkt. |
    | Privater Port |Der Port für den internen Netzwerkzugriff auf Ihre Anwendung. |
    | Protokoll |Das Protokoll, das von der Transportschicht für diesen Endpunkt verwendet wird – entweder TCP oder UDP. |
    | Öffentlicher Port |Der Port, der für den öffentlichen Zugang auf Ihrer Anwendung verwendet wird. |

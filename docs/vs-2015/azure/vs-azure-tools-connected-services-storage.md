@@ -1,5 +1,5 @@
 ---
-title: Add Azure Storage by using Connected Services
+title: Fügen Sie Azure Storage mithilfe verbundene Dienste
 description: Fügen Sie Ihrer App mithilfe des Dialogfelds "Verbundene Dienste hinzufügen" in Visual Studio Azure Storage hinzu
 author: ghogen
 manager: jillfra
@@ -69,6 +69,6 @@ Wenn Sie die Bearbeitung des Dialogfelds abschließen, fügt Visual Studio Verwe
 - WebJob-Projekt: [Was ist passiert – WebJob-Projekte](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [MSDN-Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Microsoft Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Azure Storage-Dokumentation](https://docs.microsoft.com/azure/storage/)

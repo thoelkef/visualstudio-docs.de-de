@@ -1,5 +1,5 @@
 ---
-title: XSLT Profiler | Microsoft Docs
+title: XSLT-Profiler | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -21,11 +21,11 @@ ms.locfileid: "74300953"
 
 Der XSLT-Profiler ist ein Leistungsanalyse-Profilertool, das Ihnen hilft, XSLT-Dokumente zu entwickeln und zu debuggen. Der XSLT-Profiler ermöglicht Entwicklern durch das Erstellen von ausführlichen XSLT-Leistungsberichten, leistungsbezogene XSLT-Codeprobleme zu messen und zu bewerten. Der XSLT-Profiler enthält nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen, die für XSLT-basierte Anwendungen wichtig sind, die eine optimale Leistung erfordern.
 
- The XSLT Profiler is part of Visual Studio 2010 and is available from the Visual Studio **XML** menu.
+ Der XSLT-Profiler ist Teil von Visual Studio 2010 und steht im **XML** -Menü von Visual Studio zur Verfügung.
 
  ![XSLT-Profiler](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- Der XSLT-Profiler wurde zuerst als Add-In für Visual Studio 2008 veröffentlicht. For more information, see the Related Resources section on the [XSLT Profiler for Visual Studio Feb 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) page.
+ Der XSLT-Profiler wurde zuerst als Add-In für Visual Studio 2008 veröffentlicht. Weitere Informationen finden Sie im Abschnitt Verwandte Ressourcen auf der Community Technology Preview Seite für den [XSLT-Profiler für Visual Studio Feb 08](https://go.microsoft.com/fwlink/?LinkId=142987) .
 
 > [!NOTE]
 > Einige Bildschirme sehen in Visual Studio 2010 möglicherweise anders aus als in diesen Dokumenten, da einige visuelle Elemente gegenüber Visual Studio 2008 geändert wurden.

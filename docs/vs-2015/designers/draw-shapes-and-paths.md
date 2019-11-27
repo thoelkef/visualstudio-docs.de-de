@@ -40,7 +40,7 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 ## <a name="Shape"></a> Zeichnen einer Form
  Formen finden Sie im Bereich **Objekte** .
 
- ![Shapes category on the Assets panel](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
+ ![Kategorie "Formen" im Objekte Panel](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
 
  Ziehen Sie die gewünschte Form auf die Zeichenfläche. Anschließend können Sie die Handles an der Form verwenden, um die Form zu skalieren, zu drehen, zu verschieben oder zu neigen.
 
@@ -51,50 +51,50 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 
  Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Bereich **Tools** .
 
- ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")
+ ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4CF6-903b-3a49f00c9860")
 
 ### <a name="draw-a-straight-line"></a>Zeichnen einer geraden Linie
- Use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54"), or the **Line** tool ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").
+ Verwenden Sie das Stift ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")Werkzeug oder das **Linien** Tool ![ ](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").
 
- **Using the Pen tool** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")
+ **Verwenden des Stift Tools**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")
 
  Klicken Sie einmal auf die Zeichenfläche, um den Anfangspunkt zu definieren, und klicken Sie dann erneut, um das Ende der Linie zu definieren.
 
- **Using the Line tool** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")
+ **Verwenden des Line-Tools**![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")
 
  Ziehen Sie auf der Zeichenfläche vom gewünschten Anfangspunkt der Linie, und lassen Sie die Maustaste an dem Punkt los, an dem die Linie enden soll.
 
 ### <a name="draw-a-curve"></a>Zeichnen einer Kurve
- Use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
+ Verwenden Sie das Tool ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")Stift.
 
  Klicken Sie einmal auf die Zeichenfläche, um den Ausgangspunkt einer Linie zu definieren, und ziehen Sie dann bei gedrückter Maustaste den Mauszeiger, um die gewünschte Kurve zu erstellen.
 
  Wenn Sie den Pfad schließen möchten, klicken Sie auf den ersten Punkt der Linie.
 
 ### <a name="change-the-shape-of-a-curve"></a>Ändern der Form einer Kurve
- Use the **Direct selection** tool ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").
+ Verwenden Sie das Tool ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451d-8dd2-1f88b8406362") **direkt Auswahl** .
 
  Klicken Sie auf die Form, und ziehen Sie dann einen beliebigen Punkt der Form, um die Kurvenformen zu ändern.
 
 ### <a name="draw-a-free-form-path"></a>Zeichnen eines Freihandformpfads
- Use the **Pencil** tool ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd").
+ Verwenden Sie das Stift ![ ](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f -46c9-B012-987ee63450cd")Werkzeug.
 
  Zeichnen Sie auf der Zeichenfläche einen Freihandformpfad genau so, als würden Sie einen echten Zeichenstift verwenden.
 
 ### <a name="remove-part-of-a-path"></a>Entfernen eines Pfadsegments
- Use the **Direct selection** tool ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").
+ Verwenden Sie das Tool ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451d-8dd2-1f88b8406362") **direkt Auswahl** .
 
  Wählen Sie den Pfad aus, der das Segment enthält, das Sie löschen möchten, und klicken Sie dann auf die Schaltfläche **Löschen** .
 
 ### <a name="remove-a-point-in-a-path"></a>Entfernen eines Punkts in einem Pfad
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa"), and the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
+ Verwenden Sie das Tool ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")Auswahl und das Tool ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")Stift.
 
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") to select the path. Then, use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") to click the point that you want to remove.
+ Verwenden Sie das Auswahl ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") Werkzeug, um den Pfad auszuwählen. Verwenden Sie dann das **Stift** Werkzeug ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") , um auf den Punkt zu klicken, den Sie entfernen möchten.
 
 ### <a name="add-a-point-to-a-path"></a>Hinzufügen eines Punkts zu einem Pfad
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa"), and the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
+ Verwenden Sie das Tool ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")Auswahl und das Tool ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")Stift.
 
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") to select the path. Use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") to click anywhere on the path where you want to add the point.
+ Verwenden Sie das Auswahl ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") Werkzeug, um den Pfad auszuwählen. Verwenden Sie den Stift ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") , um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
 
 ## <a name="Convert"></a> Konvertieren von Formen in Pfade
  Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad.

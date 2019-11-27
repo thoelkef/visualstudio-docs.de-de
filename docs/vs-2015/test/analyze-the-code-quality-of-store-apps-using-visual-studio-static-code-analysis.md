@@ -1,5 +1,5 @@
 ---
-title: Analyze the code quality of Store apps using static code analysis
+title: Analysieren der Codequalität von Store-Apps mithilfe der statischen Code Analyse
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -28,12 +28,12 @@ Das Codeanalysetool in Visual Studio überprüft den Code auf eine Reihe von all
 
 |||
 |-|-|
-|[Analysieren der Qualität von Visual Basic- und C#-Code](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden der Codeanalyse in Visual Basic- und C#-Projekten.|
-|[Analysieren der Qualität von C++-Code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden der Codeanalyse in C++-Projekten.|
+|[Analysieren der Qualität von Visual Basic- und C#-Code](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden Sie die Codeanalyse in Visual Basic- und C#-Projekten.|
+|[Analysieren der Qualität von C++-Code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden Sie die Codeanalyse in C++-Projekten.|
 
 ## <a name="more-code-analysis-info"></a>Weitere Informationen zur Codeanalyse
 
 |||
 |-|-|
-|[Codeanalyse in der MSDN Library](https://go.microsoft.com/fwlink/?LinkID=227580)|Weitere Informationen zur Verwendung von Codeanalyse in Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional.|
-|[Blog des MSDN-Codeanalyseteams](https://go.microsoft.com/fwlink/?LinkId=227200)|Weitere Informationen, einschließlich Fachbeiträgen und Beispielen, im Blog des Codeanalyseteams.|
+|[Codeanalyse in der MSDN Library](https://go.microsoft.com/fwlink/?LinkID=227580)|Weitere Informationen zur Verwendung der Codeanalyse in Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional.|
+|[Blog des MSDN-Codeanalyseteams](https://go.microsoft.com/fwlink/?LinkId=227200)|Weitere Informationen, darunter Fachbeiträge und Beispiele, erhalten Sie im Blog des Codeanalyseteams.|

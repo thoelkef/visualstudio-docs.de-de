@@ -29,5 +29,5 @@ Sie haben versucht, einen regulären Ausdruck zu erstellen, aber keinen der Schr
 - Fügen Sie einen abschließenden Schrägstrich ein, um das Ende des regulären Ausdrucks zu markieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

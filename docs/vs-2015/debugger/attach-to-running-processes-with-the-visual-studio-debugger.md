@@ -1,5 +1,5 @@
 ---
-title: Attach to Running Processes with the Debugger | Microsoft Docs
+title: Anfügen an laufende Prozesse mit dem Debugger | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -39,21 +39,21 @@ ms.locfileid: "74299517"
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. After the process is running, click **Debug / Attach to Process** (or press **CTRL+ALT+P**) to open the **Attach to Process** dialog box.
+Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wurde, klicken Sie auf **Debuggen/an den Prozess anhängen** (oder drücken Sie **STRG + ALT + P**), um das Dialogfeld **an den Prozess anhängen** zu öffnen.
 
-You can use this capability to debug apps that are running on a local or remote computer, debug multiple processes simultaneously, or debug an application that was not created in Visual Studio. It is often useful when you want to debug an app, but (for whatever reason) you did not start the app from Visual Studio with the debugger attached. For example, if you are running the app without the debugger and hit an exception, you might then attach to the process running the app to begin debugging.
+Mit dieser Funktion können Sie apps Debuggen, die auf einem lokalen oder Remote Computer ausgeführt werden, mehrere Prozesse gleichzeitig Debuggen oder eine Anwendung debuggen, die nicht in Visual Studio erstellt wurde. Dies ist oft hilfreich, wenn Sie eine APP debuggen möchten, aber (aus irgendeinem Grund) haben Sie die APP nicht aus Visual Studio gestartet, und der Debugger ist angefügt. Wenn Sie z. b. die APP ohne den Debugger ausführen und eine Ausnahme ausgelöst haben, können Sie den Prozess, der die app ausführen soll, anfügen, um mit dem Debuggen zu beginnen.
 
 > [!TIP]
-> Not sure whether you need to use **Attach to Process** for your debugging scenario? See [Common debugging scenarios](#BKMK_Scenarios). If you want to debug ASP.NET applications that have been deployed to IIS, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+> Sie sind nicht sicher, ob Sie das **Anfügen an den Prozess** für Ihr Debugszenario verwenden müssen? Siehe [gängige Debugszenarien](#BKMK_Scenarios). Wenn Sie ASP.NET-Anwendungen debuggen möchten, die in IIS bereitgestellt wurden, finden Sie weitere Informationen unter [Remote Debugging ASP.net auf einem Remote Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-## <a name="BKMK_Attach_to_a_running_process"></a> Attach to a running process on the local machine
- In order to attach to a process, you must know the name of the process (see [Common debugging scenarios](#BKMK_Scenarios) for a few common process names).
+## <a name="BKMK_Attach_to_a_running_process"></a>Anfügen an einen laufenden Prozess auf dem lokalen Computer
+ Um an einen Prozess anzufügen, müssen Sie den Namen des Prozesses kennen (Weitere Informationen finden Sie unter [häufige Debugszenarien](#BKMK_Scenarios) für einige gängige Prozessnamen).
 
-1. In Visual Studio, select **Debug / Attach to Process** (or press **CTRL+ALT+P**).
+1. Wählen Sie in Visual Studio **Debuggen/an den Prozess anhängen** aus (oder drücken Sie **STRG + ALT + P**).
 
 2. Wählen Sie im Dialogfeld **An den Prozess anhängen** aus der Liste **Verfügbare Prozesse** das Programm, mit dem Sie eine Verbindung herstellen möchten.
 
-     To quickly select the process you want, type the first letter of the process name. If you don't know the process name, see [Common debugging scenarios](#BKMK_Scenarios).
+     Geben Sie den ersten Buchstaben des Prozess namens ein, um den gewünschten Prozess schnell auszuwählen. Wenn Sie den Prozessnamen nicht kennen, finden Sie weitere Informationen unter [häufige Debugszenarien](#BKMK_Scenarios).
 
      ![DBG_Basics_Attach_To_Process](../debugger/media/dbg-basics-attach-to-process.png "DBG_Basics_Attach_To_Process")
 
@@ -67,16 +67,16 @@ You can use this capability to debug apps that are running on a local or remote 
 
     3. Klicken Sie auf **OK**.
 
-4. Klicken Sie auf **Anfügen**aus.
+4. Klicken Sie auf **Anfügen**.
 
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anfügen an einen Prozess auf einem Remotecomputer
- In order to attach to a process, you must know the name of the process (see [Common debugging scenarios](#BKMK_Scenarios) for a few common process names). For more complete guidance for ASP.NET apps that have been deployed to IIS, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Bei anderen Anwendungen finden Sie den Namen des Prozesses möglicherweise im Task-Manager.
+ Um an einen Prozess anzufügen, müssen Sie den Namen des Prozesses kennen (Weitere Informationen finden Sie unter [häufige Debugszenarien](#BKMK_Scenarios) für einige gängige Prozessnamen). Eine ausführlichere Anleitung für ASP.net-apps, die in IIS bereitgestellt wurden, finden Sie unter [Remote Debugging ASP.net auf einem Remote Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Bei anderen Anwendungen finden Sie den Namen des Prozesses möglicherweise im Task-Manager.
 
- Wenn Sie das Dialogfeld **An den Prozess anhängen** verwenden, können Sie einen anderen Computer auswählen, der für das Remotedebuggen eingerichtet wurde. For more information, see [Remote Debugging](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Nach dem Auswählen eines Remotecomputers können Sie über eine Liste, in der alle verfügbaren laufenden Prozesse des Remotecomputers enthalten sind, den Debugger an einen oder mehrere Prozesse anhängen.
+ Wenn Sie das Dialogfeld **An den Prozess anhängen** verwenden, können Sie einen anderen Computer auswählen, der für das Remotedebuggen eingerichtet wurde. Weitere Informationen finden Sie unter [Remote Debuggen](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Nach dem Auswählen eines Remotecomputers können Sie über eine Liste, in der alle verfügbaren laufenden Prozesse des Remotecomputers enthalten sind, den Debugger an einen oder mehrere Prozesse anhängen.
 
- **To select a remote computer:**
+ **So wählen Sie einen Remote Computer aus:**
 
-1. In Visual Studio, select **Debug / Attach to Process** (or press **CTRL+ALT+P**).
+1. Wählen Sie in Visual Studio **Debuggen/an den Prozess anhängen** aus (oder drücken Sie **STRG + ALT + P**).
 
 2. Wählen Sie im Dialogfeld **An den Prozess anhängen** die entsprechende Verbindungsart aus der Liste **Transport** aus. **Standard** ist für die meisten Programme die richtige Einstellung.
 
@@ -87,11 +87,11 @@ You can use this capability to debug apps that are running on a local or remote 
    1. Geben Sie im Listenfeld **Qualifizierer** den Namen ein.
 
       > [!NOTE]
-      > If, in later steps, you can't connect using the remote computer name, use the IP address. (The port number may appear automatically after selecting the process. You can also enter it manually. In the illustration below, 4020 is the default port for the remote debugger.)
+      > Wenn Sie in späteren Schritten keine Verbindung mit dem Remote Computernamen herstellen können, verwenden Sie die IP-Adresse. (Die Portnummer wird möglicherweise automatisch angezeigt, nachdem Sie den Prozess ausgewählt haben. Sie können Sie auch manuell eingeben. In der Abbildung unten ist 4020 der Standardport für den Remote Debugger.)
 
    2. Klicken Sie auf den Dropdownpfeil neben dem Listenfeld **Qualifizierer** , und wählen Sie den Computernamen aus der Dropdownliste aus.
 
-   3. Click the **Find** button next to the **Qualifier** list to open the **Select Remote Debugger Connection** dialog box. Im Dialogfeld **Remotedebuggerverbindung auswählen** werden alle Geräte aufgeführt, die sich auf dem lokalen Subnetz befinden, sowie sämtliche Geräte, die über ein Ethernetkabel direkt mit dem Computer verbunden sind. Klicken Sie auf den gewünschten Computer bzw. das gewünschte Gerät, und klicken Sie dann auf **Auswählen**.
+   3. Klicken Sie neben der Liste **Qualifizierer** auf die Schaltfläche **Suchen** , um das Dialogfeld remotedebuggerverbindung **auswählen** zu öffnen. Im Dialogfeld **Remotedebuggerverbindung auswählen** werden alle Geräte aufgeführt, die sich auf dem lokalen Subnetz befinden, sowie sämtliche Geräte, die über ein Ethernetkabel direkt mit dem Computer verbunden sind. Klicken Sie auf den gewünschten Computer bzw. das gewünschte Gerät, und klicken Sie dann auf **Auswählen**.
 
       Die Einstellung **Qualifizierer** bleibt nur zwischen Debugsitzungen erhalten, wenn eine erfolgreiche Debugverbindung mit diesem Qualifizierer auftritt.
 
@@ -103,9 +103,9 @@ You can use this capability to debug apps that are running on a local or remote 
 
     Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .
 
-6. Klicken Sie auf **Anfügen**aus.
+6. Klicken Sie auf **Anfügen**.
 
-## <a name="additional-info"></a>Additional info
+## <a name="additional-info"></a>Zusätzliche Informationen
 
 Sie können beim Debuggen mit mehreren Programmen verbunden sein, es ist jedoch jeweils nur ein Programm im Debugger aktiv. Sie können das aktive Programm auf der Symbolleiste **Debugspeicherort** oder im Fenster **Prozesse** festlegen. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen des aktuellen Programms](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
@@ -113,25 +113,25 @@ Wird versucht, eine Verbindung mit einem Prozess herzustellen, der zu einem nich
 
 In einigen Fällen werden beim Debuggen in einer Remotedesktopsitzung (Terminaldienste) in der Liste **Verfügbare Prozesse** nicht alle verfügbaren Prozesse angezeigt. Wenn Sie Visual Studio als Benutzer ausführen, der nur über ein eingeschränktes Benutzerkonto verfügt, enthält die Liste **Verfügbare Prozesse** keine Prozesse, die in Sitzung 0 laufen. Sie wird für Dienste und andere Serverprozesse verwendet, wie z.B. „w3wp.exe“. Sie können dieses Problem beheben, indem Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unter einem Administratorkonto oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] an der Serverkonsole und nicht in einer Terminaldienstesitzung ausführen. Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit den Prozess anfügen, indem Sie `vsjitdebugger.exe -p` *ProzessID* in der Windows-Befehlszeile ausführen. Die Prozess-ID kann mit tlist.exe ermittelt werden. Um die Datei "tlist.exe" abzurufen, laden Sie die Debugtools für Windows von der Seite  [WDK- und WinDbg-Downloads](https://go.microsoft.com/fwlink/?LinkId=168279)herunter, und installieren Sie diese.
 
-## <a name="BKMK_Scenarios"></a> Common debugging scenarios
+## <a name="BKMK_Scenarios"></a>Gängige Debugszenarien
 
-To help you identify whether you need to use **Attach to process** and what process to attach to, a few common debugging scenarios are shown here (the list is not exhaustive). Where more instructions are available, we provide links.
+Um Ihnen zu helfen, zu ermitteln, ob Sie " **an den Prozess anhängen** " und den Prozess zum Anfügen verwenden müssen, werden hier einige gängige Debugszenarien angezeigt (die Liste ist nicht vollständig). Wenn weitere Anweisungen verfügbar sind, bieten wir Links.
 
-For some app types (like Windows Store apps), you don't attach directly to a process name, but use the **Debug Installed App Package** menu option instead (see table).
+Bei einigen App-Typen (wie Windows Store-Apps) fügen Sie nicht direkt an einen Prozessnamen an, sondern verwenden stattdessen die Menüoption " **installiertes App-Paket Debuggen** " (siehe Tabelle).
 
 > [!NOTE]
-> For information about basic debugging in Visual Studio, see [Getting started with the debugger](../debugger/getting-started-with-the-debugger.md).
+> Informationen zum grundlegenden Debuggen in Visual Studio finden Sie unter [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).
 
-|Szenario|Debug Method|Prozessname|Notes and Links|
+|Szenario|Debug-Methode|Prozessname|Hinweise und Links|
 |-|-|-|-|
-|Debug a managed or native app on the local machine|Use attach to process or [standard debugging](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|To quickly access the dialog box, use **CTRL+ALT+P** and then type the first letter of the process name.|
-|Debug ASP.NET apps on the local machine after starting the app without the debugger|Use attach to process|iiexpress.exe|This may be helpful to make your app load faster, such as (for example) when profiling. |
-|Remote debug ASP.NET 4 or 4.5 on an IIS server|Use remote tools and attach to process|w3wp.exe|See [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remote debug ASP.NET Core on an IIS server|Use remote tools and attach to process|dnx.exe|For app deployment, see [Publish to IIS](https://docs.asp.net/en/latest/publishing/iis.html). For debugging, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Debug other supported app types on a server process|Use remote tools (if server is remote) and attach to process|iexplore.exe or other processes|If necessary, use Task Manager to help identify the process. See [Remote Debugging](../debugger/remote-debugging.md) and later sections in this topic|
-|Remote debug a Windows desktop app|Remote Tools and F5|Nicht zutreffend| See [Remote Debugging](../debugger/remote-debugging.md)|
-|Remote debug a Windows Universal (UWP), OneCore, HoloLens, or IoT app|Installiertes App-Paket debuggen|Nicht zutreffend|Use **Debug / Other Debug Targets / Debug Installed App Package** instead of **Attach to process**|
-|Debug a Windows Universal (UWP), OneCore, HoloLens, or IoT app that you didn't start from Visual Studio|Installiertes App-Paket debuggen|Nicht zutreffend|Use **Debug / Other Debug Targets / Debug Installed App Package** instead of **Attach to process**|
+|Debuggen einer verwalteten oder nativen App auf dem lokalen Computer|Verwenden von Anhängen an den Prozess oder [Standard-Debuggen](../debugger/getting-started-with-the-debugger.md)|*appname*. exe|Um schnell auf das Dialogfeld zuzugreifen, verwenden Sie **STRG + ALT + P** , und geben Sie dann den ersten Buchstaben des Prozess namens ein.|
+|Debuggen von ASP.net-apps auf dem lokalen Computer nach dem Starten der APP ohne den Debugger|"An den Prozess anhängen" verwenden|iiexpress.exe|Dies kann hilfreich sein, damit die APP schneller geladen wird, z. b. bei der Profilerstellung (z. b.). |
+|Remote Debuggen ASP.NET 4 oder 4,5 auf einem IIS-Server|Remote Tools verwenden und an den Prozess anhängen|w3wp.exe|Weitere Informationen finden Sie [unter Remote Debugging ASP.net auf einem Remote Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Remote Debuggen ASP.net Core auf einem IIS-Server|Remote Tools verwenden und an den Prozess anhängen|DNX. exe|Informationen zur Bereitstellung von apps finden [Sie unter Veröffentlichen in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Informationen zum Debuggen finden Sie [unter Remote Debugging ASP.net auf einem IIS-Remote Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) .|
+|Andere unterstützte App-Typen auf einem Server Prozess Debuggen|Remote Tools verwenden (wenn der Server Remote ist) und an den Prozess anhängen|"iexplore. exe" oder andere Prozesse|Verwenden Sie ggf. den Task-Manager, um den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote Debugging](../debugger/remote-debugging.md) und spätere Abschnitte in diesem Thema.|
+|Remote Debuggen einer Windows-Desktop-App|Remotetools und F5|N/V| Siehe [Remote Debuggen](../debugger/remote-debugging.md)|
+|Remote Debuggen einer universellen Windows-app (UWP), onecore, hololens oder IOT-App|Installiertes App-Paket debuggen|N/V|**Debug/andere debugziele verwenden/installiertes App-Paket Debuggen** **, anstatt an den Prozess anhängen**|
+|Debuggen Sie eine Windows Universal (UWP)-, onecore-, hololens-oder IOT-APP, die Sie nicht von Visual Studio aus gestartet haben.|Installiertes App-Paket debuggen|N/V|**Debug/andere debugziele verwenden/installiertes App-Paket Debuggen** **, anstatt an den Prozess anhängen**|
 
 > [!WARNING]
 > Zum Anhängen an eine in JavaScript geschriebene universelle Windows-App müssen Sie zuerst das Debuggen für die App aktivieren. Weitere Informationen hierzu finden Sie unter [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) im Windows Developer Center.
@@ -139,13 +139,13 @@ For some app types (like Windows Store apps), you don't attach directly to a pro
 > [!NOTE]
 > Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute`ausgeben. Sie können dieses Attribut automatisch in den Code einfügen, indem Sie eine Verknüpfung über die [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) -Linkeroption herstellen.
 
-## <a name="what-debugger-features-can-i-use"></a>What debugger features can I use?
+## <a name="what-debugger-features-can-i-use"></a>Welche Debuggerfunktionen kann ich verwenden?
 
-To use the full features of the Visual Studio debugger (like hitting breakpoints) when attaching to a process, the executable must exactly match your local source and symbols (that is, the debugger must be able to load the correct [symbol (.pbd) files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). By default, this requires a debug build.
+Um die vollständigen Funktionen des Visual Studio-Debuggers (z. b. das erreichen von Haltepunkten) beim Anfügen an einen Prozess zu verwenden, muss die ausführbare Datei genau mit der lokalen Quelle und den Symbolen übereinstimmen (d. h., der Debugger muss die richtigen [Symbol Dateien (. PBD)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)laden können). Standardmäßig ist hierfür ein Debugbuild erforderlich.
 
-For remote debugging scenarios, you must have the source code (or a copy of the source code) already open in Visual Studio. The compiled app binaries on the remote machine must come from the same build as on the local machine.
+Für remotedebuggingszenarien muss der Quellcode (oder eine Kopie des Quellcodes) bereits in Visual Studio geöffnet sein. Die kompilierten App-Binärdateien auf dem Remote Computer müssen vom gleichen Build wie auf dem lokalen Computer stammen.
 
-In some local debugging scenarios, you can debug in Visual Studio with no access to the source if the correct symbol files are present with the app (by default, this requires a debug build). For more info, see [Specify Symbol and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+In einigen lokalen debuggingszenarien können Sie in Visual Studio ohne Zugriff auf die Quelle Debuggen, wenn die richtigen Symbol Dateien mit der app vorhanden sind (Standardmäßig ist hierfür ein Debugbuild erforderlich). Weitere Informationen finden Sie unter [Angeben von Symbol-und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="BKMK_Troubleshoot_attach_errors"></a> Beheben von Fehlern beim Anfügen
  Wenn der Debugger an einen laufenden Prozess angehängt wird, kann dieser Prozess mehrere Codetypen enthalten. Die Codetypen, an die der Debugger angefügt werden kann, werden im Dialogfeld **Codetyp auswählen** angezeigt und ausgewählt.
@@ -158,7 +158,7 @@ In some local debugging scenarios, you can debug in Visual Studio with no access
 
  Um weitere Informationen darüber zu erhalten, warum der Debugger nicht an einen Codetyp angefügt werden konnte, versuchen Sie erneut, den Debugger nur an diesen Codetyp anzufügen.
 
- **To obtain specific information about why a code type failed to attach**
+ **So erhalten Sie spezifische Informationen dazu, warum ein Codetyp nicht angefügt werden konnte**
 
 1. Trennen Sie den Prozess. Klicken Sie im Menü **Debuggen** auf **Alle trennen**.
 
@@ -177,4 +177,4 @@ In some local debugging scenarios, you can debug in Visual Studio with no access
       Dieses Mal schlägt das Anfügen komplett fehl, und Sie erhalten eine spezifische Fehlermeldung.
 
 ## <a name="see-also"></a>Siehe auch
- [Debug Multiple Processes](../debugger/debug-multiple-processes.md) [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md) [Remote Debugging](../debugger/remote-debugging.md)
+ Debuggen [mehrerer Prozesse](../debugger/debug-multiple-processes.md) [Just-in-Time-Debugging](../debugger/just-in-time-debugging-in-visual-studio.md) für [Remote Debugging](../debugger/remote-debugging.md)

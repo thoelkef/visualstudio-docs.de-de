@@ -23,11 +23,11 @@ ms.locfileid: "74300102"
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Hohe GC-CPU-Zeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0023|  
-|Category|.NET Framework Usage|  
-|Profiling method|All|  
-|Message|% Time in GC is fairly high. Dies ist ein Hinweis auf einen sehr hohen Mehraufwand für die Garbage Collection, der sich möglicherweise auf die Reaktionsfähigkeit Ihrer Anwendung auswirkt. Sammeln Sie die .NET-Speicherbelegungsdaten und die Informationen zur Objektlebensdauer, um besser nachvollziehen zu können, welches Speicherbelegungsmuster von der Anwendung verwendet wird.|  
-|Rule type|Informational|  
+Regel-ID | DA0023 |  
+| Kategorie |. .NET Framework-Verwendung |  
+| Profil Erstellungs Methode | Alle |  
+| Nachricht |% Zeit in GC ist relativ hoch. Dies ist ein Hinweis auf einen sehr hohen Mehraufwand für die Garbage Collection, der sich möglicherweise auf die Reaktionsfähigkeit Ihrer Anwendung auswirkt. Sammeln Sie die .NET-Speicherbelegungsdaten und die Informationen zur Objektlebensdauer, um besser nachvollziehen zu können, welches Speicherbelegungsmuster von der Anwendung verwendet wird.|  
+| Regeltyp | Information |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   

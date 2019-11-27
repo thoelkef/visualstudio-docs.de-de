@@ -49,6 +49,6 @@ HRESULT onDetach();
  Implementierer der `IDebugApplicationNode`-Schnittstelle gibt dieses Ereignis aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplicationnodeevents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)    
- [Idebugapplicationnodeevents:: onattach](../../winscript/reference/idebugapplicationnodeevents-onattach.md) -   
+ [Idebugapplicationnodeevents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+ [IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

@@ -50,5 +50,5 @@ HRESULT CreateApplication(
  Das von dieser Methode erstellte-Objekt hat keinen Namen und wird nicht zur Liste der laufenden Anwendungen hinzugefügt. Verwenden Sie die `IProcessDebugManager::AddApplication`, um die debugginganwendung der Anwendungsliste hinzuzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iprocessdebug Manager-Schnittstelle](../../winscript/reference/iprocessdebugmanager-interface.md)    
+ [Iprocessdebug Manager-Schnittstelle](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

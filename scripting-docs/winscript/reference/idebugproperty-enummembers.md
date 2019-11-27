@@ -46,16 +46,16 @@ HRESULT EnumMembers (
  in Radix, das zum Interpretieren numerischer Informationen verwendet werden soll.  
   
  `refiid`  
- in Diese IID wird zum Filtern des Enumerators übermittelt. Die IID ist eine der `IDebugPropertyEnumType` Schnittstellen, die von `IDebugPropertyEnumType_All` erben.  
+ in Diese IID wird zum Filtern des Enumerators übermittelt. Die IID ist eine der `IDebugPropertyEnumType` Schnittstellen, die von `IDebugPropertyEnumType_All`erben.  
   
  `ppEnum`  
  vorgenommen Gibt die `IEnumDebugPropertyInfo`-Schnittstelle zurück, die die Element Eigenschaften auflistet.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT`zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)    
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
- [IDebugPropertyEnumType_All-Schnittstelle](../../winscript/reference/idebugpropertyenumtype-all-interface.md)    
+ [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [IDebugPropertyEnumType_All Schnittstellen](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
  [IEnumDebugPropertyInfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

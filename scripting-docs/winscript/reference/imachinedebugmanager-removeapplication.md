@@ -50,6 +50,6 @@ HRESULT RemoveApplication(
  Diese Methode wird vom Process Debug Manager aufgerufen, wenn `IProcessDebugManager::RemoveApplication` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Imachinedebugmanager:: addapplikation](../../winscript/reference/imachinedebugmanager-addapplication.md) -   
- [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)    
+ [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   
+ [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

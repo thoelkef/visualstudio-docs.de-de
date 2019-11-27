@@ -47,5 +47,5 @@ HRESULT onClose();
  Diese Methode wird aufgerufen, wenn `IDebugApplication::Close` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)    
+ [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)

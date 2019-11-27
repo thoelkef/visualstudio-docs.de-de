@@ -54,6 +54,6 @@ HRESULT AddApplication(
  Diese Methode wird vom Process Debug Manager aufgerufen, wenn `IProcessDebugManager::AddApplication` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)    
- [Imachinedebugmanager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md) -   
+ [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Error: The Web Server Could Not Find the Requested Resource | Microsoft Docs'
+title: 'Fehler: der Webserver konnte die angeforderte Ressource nicht finden. Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -35,5 +35,5 @@ Aufgrund von Sicherheitsüberlegungen wurde von IIS ein generischer Fehler zurü
  Weitere Informationen über die Problembehandlung bei IIS finden Sie unter [IIS-Verwaltung](https://go.microsoft.com/fwlink/?LinkId=255872).  
   
 ## <a name="see-also"></a>Siehe auch  
- [UrlScan Security Tool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
+ [URLScan-Sicherheits Tool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

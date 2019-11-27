@@ -40,7 +40,7 @@ HRESULT SetName(
  in Der neue Name des `IScriptEntry` Objekts.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -49,5 +49,5 @@ HRESULT SetName(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)    
+ [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

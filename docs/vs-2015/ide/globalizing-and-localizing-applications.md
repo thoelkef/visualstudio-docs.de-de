@@ -31,21 +31,21 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
  Visual Studio war von Anfang an darauf ausgerichtet, mithilfe der in [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] integrierten Dienste die Entwicklung in einem internationalen Umfeld zu erleichtern. Auf den folgenden Seiten können Sie sich einen Überblick über die in Visual Studio verfügbaren Funktionen für die Internationalisierung verschaffen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Introduction to International Applications Based on the .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Introduces the concepts related to developing software for an international market using Visual Studio and the [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ [Einführung in internationale Anwendungen basierend auf dem .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Erläutert die Konzepte im Zusammenhang mit der Entwicklung von Software für einen internationalen Markt mithilfe von Visual Studio und der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- [Localizing Applications](../ide/localizing-applications.md) Provides links to pages about customizing applications for a given culture.
+ [Lokalisieren von Anwendungen](../ide/localizing-applications.md) Enthält Links zu Seiten über das Anpassen von Anwendungen für eine bestimmte Kultur.
 
- [Globalizing Applications](../ide/globalizing-applications.md) Provides links to pages about creating applications that support multiple cultures.
+ [Globalisieren von Anwendungen](../ide/globalizing-applications.md) Enthält Links zu Seiten über das Erstellen von Anwendungen, die mehrere Kulturen unterstützen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Globalizing your app (Windows Store apps using JavaScript and HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Contains how-to topics and guidelines to help you globalize and localize your [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app built using JavaScript and HTML.
+ [Globalisieren Ihrer APP (Windows Store-Apps mit JavaScript und HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Enthält Vorgehensweisen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung Ihrer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App helfen, die mit JavaScript und HTML erstellt wurde.
 
- [Globalizing your app (Windows Store apps using C#/VB/C++ and XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) Contains how-to topics and guidelines to help you globalize and localize your [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app built using XAML and Visual C#, Visual Basic, or Visual C++.
+ [Globalisieren Ihrer APP (Windows Store-Apps C#mitC++ /VB/und XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) enthält Themen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung Ihrer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App helfen, die mit XAML C#und Visual, Visual Basic oder C++Visual erstellt wurde.
 
- [Best Practices for Developing World-Ready Applications](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Provides background information on programming for an international audience.
+ [Bewährte Methoden für die Entwicklung weltweit einsatzbereiter Anwendungen](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Bietet Hintergrundinformationen zur Programmierung für eine internationale Zielgruppe.
 
- [Class Library Overview](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) Introduces the classes, interfaces, and value types that expedite and optimize the development process and provide access to system functionality.
+ [Übersicht über die Klassenbibliothek](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) Führt die Klassen, Schnittstellen und Werttypen ein, die den Entwicklungsprozess beschleunigen und optimieren und den Zugriff auf Systemfunktionen ermöglichen.
 
- <xref:System.Globalization> Points out the classes in this namespace, which define culture-related information, including the language, the country/region, the calendars in use, the format patterns for dates, currency and numbers, and the sort order for strings.
+ <xref:System.Globalization> verweist auf die Klassen in diesem Namespace, die kulturbezogene Informationen definieren, einschließlich der Sprache, des Landes oder der Region, der verwendeten Kalender, der Format Muster für Datumsangaben, Währungen und Zahlen sowie der Sortierreihenfolge für Zeichen folgen.
 
- <xref:System.Resources> Points out the classes and interfaces in this namespace, which allows developers to create, store, and manage various culture-specific resources used in an application.
+ <xref:System.Resources> zeigt die Klassen und Schnittstellen in diesem Namespace an, mit denen Entwickler verschiedene kulturspezifische Ressourcen, die in einer Anwendung verwendet werden, erstellen, speichern und verwalten können.

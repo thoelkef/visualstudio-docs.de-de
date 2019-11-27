@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576375"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-Ruft erweiterte Informationen für eine erweiterte Eigenschaft ab, die mehr Informationen als die einfachere `IDebugProperty` ist.  
+Ruft erweiterte Informationen für eine erweiterte Eigenschaft ab, die mehr Informationen als die einfachere `IDebugProperty`ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,9 +48,9 @@ HRESULT GetExtendedPropertyInfo(
  vorgenommen Gibt die `ExtendedDebugPropertyInfo`-Struktur zurück, die die Eigenschaft beschreibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT`zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugextendecodproperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)    
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
+ [Idebugextendecodproperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)   
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
  [ExtendedDebugPropertyInfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

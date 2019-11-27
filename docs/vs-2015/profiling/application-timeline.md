@@ -35,13 +35,13 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
   
 4. Windows Presentation Foundation (.NET 4.0 und höher)  
   
-5. Windows 7  
+5. Windows 7  
   
 > [!NOTE]
-> Zusätzlich zu den Daten der **Anwendungszeitachse** können Sie Daten zu CPU-Auslastung und Energieverbrauch sammeln und analysieren. See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Zusätzlich zu den Daten der **Anwendungszeitachse** können Sie Daten zu CPU-Auslastung und Energieverbrauch sammeln und analysieren. Siehe [Ausführen von Profil Erstellungs Tools ohne Debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Erfassen von Anwendungszeitachsen-Daten  
- Sie können Profile für die Reaktionsfähigkeit Ihrer App auf dem lokalen Computer, einem angeschlossenen Gerät, dem Visual Studio-Simulator bzw. -Emulatoren sowie auf einem Remotegerät erstellen. See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Sie können Profile für die Reaktionsfähigkeit Ihrer App auf dem lokalen Computer, einem angeschlossenen Gerät, dem Visual Studio-Simulator bzw. -Emulatoren sowie auf einem Remotegerät erstellen. Siehe [Ausführen von Profil Erstellungs Tools ohne Debuggen](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
 > Führen Sie die App nach Möglichkeit direkt auf dem Gerät aus. Die Anwendungsleistung, die im Simulator oder über eine Remotedesktopverbindung überwacht wird, ist möglicherweise nicht identisch mit der tatsächlichen Leistung auf dem Gerät. Auf der anderen Seite wirkt sich das Sammeln der Daten mithilfe der Visual Studio-Remotetools sich nicht auf die Leistungsdaten aus.  
@@ -50,7 +50,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
   
 1. Öffnen Sie die XAML-App.  
   
-2. Click **Debug / Performance Profiler...** . You should see a list of profiling tools in the .diagsession window.  
+2. Klicken Sie auf **Debug/Performance Profiler...** . Im Fenster ". diagsession" sollte eine Liste der Profil Erstellungs Tools angezeigt werden.  
   
 3. Wählen Sie **Anwendungszeitachse** aus, und klicken Sie unten im Fenster auf **Starten** .  
   
@@ -61,9 +61,9 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
   
 5. Um die Profilerstellung zu beenden, wechseln Sie zurück zum Fenster ".diagsession", und klicken Sie oben im Fenster auf **Beenden** .  
   
-     Visual Studio analysiert die gesammelten Daten und zeigt die Ergebnisse an.  
+     Visual Studio analysiert die erfassten Daten und zeigt die Ergebnisse an.  
   
-     ![Timeline profiler report](../profiling/media/timeline-base.png "TIMELINE_Base")  
+     ![Zeitachsen-Profiler-Bericht](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
 ## <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analysieren von Zeitachsen-Profilerstellungsdaten  
  Nachdem Sie die Profilerstellungsdaten gesammelt haben, können Sie diese Schritte ausführen, um mit der Analyse zu beginnen:  
@@ -76,11 +76,11 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
  Das Tool **Anwendungszeitachse** zeigt zeitbezogene Daten zu Szenarien, Kategorien und Ereignissen im Zusammenhang mit der XAML-Leistung.  
   
 ### <a name="BKMK_Diagnostic_session_timeline"></a> Zeitachse der Diagnosesitzung  
- ![Performance and Diagnostics timeline](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
+ ![Leistungs-und Diagnose Zeitachse](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  Das Lineal oben auf der Seite zeigt die Zeitachse für die Profilerstellungsinformationen an. Diese Zeitachse gilt sowohl für das Diagramm **Auslastung des UI-Threads** als auch für das Diagramm **Visueller Durchsatz** . Sie können den Bereich des Berichtes eingrenzen, indem Sie die Navigationsleisten auf der Zeitachse ziehen, um ein Segment der Zeitachse auszuwählen.  
   
- Die Zeitachse zeigt auch alle Benutzermarkierungen an, die Sie eingefügt haben, sowie die Ereignisse des Aktivierungslebenszyklus der App.  
+ Die Zeitachse zeigt auch alle von Ihnen eingefügten Benutzermarkierungen und die Ereignisse des Aktivierungslebenszyklus der App an.  
   
 ### <a name="BKMK_UI_thread_utilization_graph"></a> Diagramm der Auslastung des UI-Threads  
  ![CPU-Auslastungsdiagramm](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
@@ -88,7 +88,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
  Das Diagramm **Auslastung des UI-Threads (%)** ist ein Balkendiagramm, in dem für den Verlauf einer Datensammlung die relative Dauer in der jeweiligen Kategorie angezeigt wird.  
   
 ### <a name="BKMK_Visual_throughput_FPS_graph"></a> Diagramm des visuellen Durchsatzes (FPS)  
- ![Visual throughput graph](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
+ ![Diagramm des visuellen Durchsatzes](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  Das Liniendiagramm **Visueller Durchsatz (FPS)** zeigt die Bilder pro Sekunde (FPS) auf der UI und dem Kompositionsthread für die App an.  
   
@@ -115,9 +115,9 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
 |||  
 |-|-|  
 |**Sortieren nach**|Sortieren Sie nach Startzeit oder Ereignisdauer.|  
-|![Group events by frame](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Dient zum Hinzufügen oder Entfernen einer Kategorie **Frame** der obersten Ebene, die Ereignisse nach Frame gruppiert.|  
-|![Filter Timeline details list](../profiling/media/timeline-filter.png "TIMELINE_Filter")|Filtert die Liste anhand ausgewählter Kategorien und der Dauer von Ereignissen.|  
-|![Customize Timeline details information](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Ermöglicht die Angabe von Anmerkungen zu Ereignissen.|  
+|![Ereignisse nach Frame gruppieren](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Dient zum Hinzufügen oder Entfernen einer Kategorie **Frame** der obersten Ebene, die Ereignisse nach Frame gruppiert.|  
+|![Liste der Zeitachsen Details Filtern](../profiling/media/timeline-filter.png "TIMELINE_Filter")|Filtert die Liste anhand ausgewählter Kategorien und der Dauer von Ereignissen.|  
+|![Anpassen von Zeitachsen Detailinformationen](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Ermöglicht die Angabe von Anmerkungen zu Ereignissen.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications (WPF-Teamblog: Neues Tool für die Analyse der Benutzeroberflächenleistung für WPF-Anwendungen)](https://devblogs.microsoft.com/wpf/new-ui-performance-analysis-tool-for-wpf-applications/)   

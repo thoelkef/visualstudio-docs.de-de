@@ -1,5 +1,5 @@
 ---
-title: Using the Managed Package Framework to Implement a Project Type (C#) | Microsoft Docs
+title: Verwenden des Managed Package Frameworks zum Implementieren eines Projekt TypsC#() | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,16 +22,16 @@ ms.locfileid: "74300370"
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Verwenden des Managed Package Framework zum Implementieren eines Projekttyps (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The Managed Package Framework (MPF) provides C# classes you can use or inherit from to implement your own project types. The MPF implements many of the interfaces Visual Studio expects a project type to provide, leaving you free to concentrate on implementing the particulars of your project type.  
+Das Managed Package Framework (MPF) stellt C# Klassen bereit, die Sie verwenden oder von erben können, um Ihre eigenen Projekttypen zu implementieren. Das MPF implementiert viele der Schnittstellen, die Visual Studio für einen Projekttyp erwartet, sodass Sie sich auf die Implementierung der Einzelheiten Ihres Projekt Typs konzentrieren können.  
   
-## <a name="using-the-mpf-project-source-code"></a>Using the MPF Project Source Code  
- The Managed Package Framework for Projects (MPFProj) provides helper classes for creating and managing new project system. Unlike other classes in the MPF, the project classes are not included in the assemblies shipped with Visual Studio. Instead, the project classes are provided as source code at [MPF for Projects 2013](https://archive.codeplex.com/?p=mpfproj12).  
+## <a name="using-the-mpf-project-source-code"></a>Verwenden des MPF-Projekt Quellcodes  
+ Das Managed Package Framework for Projects (mpfproj) stellt Hilfsklassen zum Erstellen und Verwalten eines neuen Projekt Systems bereit. Im Gegensatz zu anderen Klassen im MPF sind die Projektklassen nicht in den Assemblys enthalten, die im Lieferumfang von Visual Studio enthalten sind. Stattdessen werden die Projektklassen als Quellcode bei [MPF für Projekte 2013](https://archive.codeplex.com/?p=mpfproj12)bereitgestellt.  
   
- To add this project to your VSPackage solution, do the following:  
+ Gehen Sie folgendermaßen vor, um dieses Projekt der VSPackage-Projekt Mappe hinzuzufügen:  
   
-1. Download the MPFProj files to *MPFProjectDir*.  
+1. Laden Sie die mpfproj-Dateien in " *mpfprojectdir*" herunter.  
   
-2. In the *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, change the following block:  
+2. Ändern Sie in der Datei " *mpfprojectdir*\dev10\src\csharp\projectbase.File" den folgenden Block:  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ The Managed Package Framework (MPF) provides C# classes you can use or inherit f
   </PropertyGroup>  
 ```  
   
-1. Create a VSPackage project.  
+1. Erstellen Sie ein VSPackage-Projekt.  
   
-2. Unload the VSPackage project.  
+2. Entladen Sie das VSPackage-Projekt.  
   
-3. Edit the VSPackage .csproj file by adding the following block before the other `<Import>` blocks:  
+3. Bearbeiten Sie die Datei "VSPackage. csproj", indem Sie den folgenden Block vor den anderen `<Import>` Blöcken hinzufügen:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -58,18 +58,18 @@ The Managed Package Framework (MPF) provides C# classes you can use or inherit f
   
 1. Speichern Sie das Projekt.  
   
-2. Close and reopen the VSPackage solution.  
+2. Schließen und öffnen Sie die VSPackage-Projekt Mappe erneut.  
   
-3. Reopen the VSPackage project. You should see a new directory named ProjectBase.  
+3. Öffnen Sie das VSPackage-Projekt erneut. Ein neues Verzeichnis mit dem Namen projectbase sollte angezeigt werden.  
   
-4. Add the following reference to the VSPackage project:  
+4. Fügen Sie dem VSPackage-Projekt den folgenden Verweis hinzu:  
   
      Microsoft.Build.Tasks.4.0  
   
 5. Erstellen Sie das Projekt.  
   
-## <a name="hierarchy-classes"></a>Hierarchy Classes  
- The following table summarizes the classes in the MPFProj that support project hierarchies. For more information, see [Hierarchies and Selection](../../extensibility/internals/hierarchies-and-selection.md).  
+## <a name="hierarchy-classes"></a>Hierarchie Klassen  
+ In der folgenden Tabelle werden die Klassen in der "mpfproj" zusammengefasst, die Projekt Hierarchien unterstützen. Weitere Informationen finden Sie unter [Hierarchien und Auswahl](../../extensibility/internals/hierarchies-and-selection.md).  
   
 |Klassenname|  
 |----------------|  
@@ -85,16 +85,16 @@ The Managed Package Framework (MPF) provides C# classes you can use or inherit f
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|  
 |`Microsoft.VisualStudio.Package.BuildDependency`|  
   
-## <a name="document-handling-classes"></a>Document-Handling Classes  
- The following table lists the classes in the MPF that support document handling. For more information, see [Opening and Saving Project Items](../../extensibility/internals/opening-and-saving-project-items.md).  
+## <a name="document-handling-classes"></a>Klassen für die Dokument Behandlung  
+ In der folgenden Tabelle werden die-Klassen im MPF aufgelistet, die die Verarbeitung von Dokumenten unterstützen. Weitere Informationen finden Sie unter [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 |Klassenname|  
 |----------------|  
 |`Microsoft.VisualStudio.Package.DocumentManager`|  
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|  
   
-## <a name="configuration-and-output-classes"></a>Configuration and Output Classes  
- The following table lists the classes in the MPF that let project types support multiple configurations, such as debug and release, and collections of project output. For more information, see [Managing Configuration Options](../../extensibility/internals/managing-configuration-options.md).  
+## <a name="configuration-and-output-classes"></a>Konfigurations-und Ausgabe Klassen  
+ In der folgenden Tabelle sind die-Klassen im MPF aufgeführt, mit denen Projekttypen mehrere Konfigurationen unterstützen können, wie z. b. Debug und Release, und Auflistungen der Projekt Ausgabe. Weitere Informationen finden Sie unter [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md).  
   
 |Klassenname|  
 |----------------|  
@@ -104,8 +104,8 @@ The Managed Package Framework (MPF) provides C# classes you can use or inherit f
 |`Microsoft.VisualStudio.Package.OutputGroup`|  
 |`Microsoft.VisualStudio.Package.ProjectElement`|  
   
-## <a name="automation-support-classes"></a>Automation-Support Classes  
- The following table lists the classes in the MPF that support automation so that users of your project type can write add-ins.  
+## <a name="automation-support-classes"></a>Automation-Support-Klassen  
+ In der folgenden Tabelle werden die-Klassen im MPF aufgelistet, die Automation unterstützen, sodass Benutzer Ihres Projekt Typs Add-Ins schreiben können.  
   
 |Klassenname|  
 |----------------|  
@@ -115,8 +115,8 @@ The Managed Package Framework (MPF) provides C# classes you can use or inherit f
 |`Microsoft.VisualStudio.Package.Automation.OAProjectItem`|  
 |`Microsoft.VisualStudio.Package.Automation.OANestedProjectItem`|  
   
-## <a name="properties-classes"></a>Properties Classes  
- The following table lists the classes in the MPF that let project types add properties that users can browse and modify in a property browser.  
+## <a name="properties-classes"></a>Eigenschaften Klassen  
+ In der folgenden Tabelle werden die Klassen im MPF aufgelistet, mit denen Projekttypen Eigenschaften hinzufügen können, die Benutzer in einem Eigenschaften Browser durchsuchen und ändern können.  
   
 |Klassenname|  
 |----------------|  

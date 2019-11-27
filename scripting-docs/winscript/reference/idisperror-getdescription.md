@@ -53,5 +53,5 @@ HRESULT GetDescription(
 > Diese Methode ist nicht implementiert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idisperror-Schnittstelle](../../winscript/reference/idisperror-interface.md)    
+ [Idisperror-Schnittstelle](../../winscript/reference/idisperror-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

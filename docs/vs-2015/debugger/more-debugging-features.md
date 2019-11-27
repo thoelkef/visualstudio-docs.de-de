@@ -1,5 +1,5 @@
 ---
-title: More Debugging Features | Microsoft Docs
+title: Weitere Debuggingfeatures | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -47,7 +47,7 @@ Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debu
  [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)  
  Beschreibt "Bearbeiten und Fortfahren", ein Tool, mit dem Sie den Quellcode bearbeiten können, während sich das Programm im Unterbrechungsmodus befindet. Diese Änderungen können übernommen werden, ohne dass die Debugsitzung beendet und das Programm erneut erstellt werden muss. Darüber hinaus werden die Anweisungen zum Aktivieren und Deaktivieren dieses Features beschrieben.  
   
- [Using Dump Files](../debugger/using-dump-files.md) Describes dump files, including instructions on saving and opening. Dumpdateien enthalten eine Momentaufnahme des Programmzustands zu einem bestimmten Zeitpunkt (normalerweise nach einem Absturz). Wenn Sie das Programm auf einem Computer testen, auf dem die Quelldateien oder PDBs nicht installiert sind, können Sie bei einem Absturz eine Dumpdatei speichern und den Absturz dann mithilfe der Dumpdatei auf dem Buildcomputer debuggen, auf dem die Quelldateien und PDBs vorhanden sind. 
+ [Verwenden von Dumpdateien](../debugger/using-dump-files.md) Beschreibt Dumpdateien, einschließlich Anweisungen zum Speichern und öffnen. Dumpdateien enthalten eine Momentaufnahme des Programmzustands zu einem bestimmten Zeitpunkt (normalerweise nach einem Absturz). Wenn Sie das Programm auf einem Computer testen, auf dem die Quelldateien oder PDBs nicht installiert sind, können Sie bei einem Absturz eine Dumpdatei speichern und den Absturz dann mithilfe der Dumpdatei auf dem Buildcomputer debuggen, auf dem die Quelldateien und PDBs vorhanden sind. 
   
  [Vorgehensweise: Wiederherstellen von ausgeblendeten Debuggerbefehlen](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Beschreibt das Sichtbarmachen von Debuggerbefehlen, die gemäß den IDE-Standardeinstellungen ausgeblendet wurden.

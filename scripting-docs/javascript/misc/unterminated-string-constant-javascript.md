@@ -32,5 +32,5 @@ Sie haben die Zeichen folgen Konstante nicht mit einem schließenden Anführungs
 - Fügen Sie das schließende Anführungszeichen am Ende der Zeichenfolge hinzu.  
   
 ## <a name="see-also"></a>Siehe auch  
- [String-Objekt](../../javascript/reference/string-object-javascript.md)    
+ [String-Objekt](../../javascript/reference/string-object-javascript.md)   
  [toString-Methode (Objekt)](../../javascript/reference/tostring-method-object-javascript.md)

@@ -47,5 +47,5 @@ HRESULT Detach();
  Diese Methode entfernt dieses Dokument aus der Dokumentstruktur.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ [Idebugdocumenthelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

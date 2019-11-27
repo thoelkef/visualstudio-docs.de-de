@@ -54,7 +54,7 @@ HRESULT GetScriptTextAttributes(
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Gibt an, dass Bezeichner und Punkt Operatoren mit den SOURCETEXT_ATTR_IDENTIFIER-bzw. SOURCETEXT_ATTR_MEMBERLOOKUP-Flags identifiziert werden sollen.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Gibt an, dass Bezeichner und Punkt Operatoren mit den SOURCETEXT_ATTR_IDENTIFIER-bzw. SOURCETEXT_ATTR_MEMBERLOOKUP Flags identifiziert werden sollen.|  
 |GETATTRFLAG_THIS|0x0100|Gibt an, dass der Bezeichner für das aktuelle Objekt mit dem SOURCETEXT_ATTR_THIS-Flag identifiziert werden soll.|  
 |GETATTRFLAG_HUMANTEXT|0x8000|Gibt an, dass Zeichen folgen Inhalt und Kommentartext mit dem SOURCETEXT_ATTR_HUMANTEXT-Flag identifiziert werden sollen.|  
   
@@ -74,8 +74,8 @@ HRESULT GetScriptTextAttributes(
  Diese Methode für Skriptblöcke. die `GetScriptletTextAttributes`-Methode wird für Scriptlets verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptdebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md)    
- [Iactivescriptdebug:: getscriptlettextattributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
- [Idebugdocumenttext-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)    
- [Idebugdocumenttext:: gettext](../../winscript/reference/idebugdocumenttext-gettext.md)    
+ [Iactivescriptdebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md)   
+ [IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
+ [Idebugdocumenttext-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)   
+ [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

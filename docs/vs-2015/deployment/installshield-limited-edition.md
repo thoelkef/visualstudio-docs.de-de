@@ -1,5 +1,5 @@
 ---
-title: InstallShield Limited Edition | Microsoft Docs
+title: InstallShield Limited Edition | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -26,7 +26,7 @@ Mit InstallShield Limited Edition können Sie eine Setupdatei erstellen und sie 
   
 ### <a name="to-enable-installshield-limited-edition"></a>Aktivieren von InstallShield Limited Edition  
   
-1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Andere Projekttypen** , und wählen Sie den Knoten **Setup und Bereitstellung** aus.  
   

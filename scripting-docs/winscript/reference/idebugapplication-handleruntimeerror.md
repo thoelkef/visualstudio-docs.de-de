@@ -69,8 +69,8 @@ HRESULT HandleRuntimeError(
 > Während des Lauf zeitfehlers kann die Sprach-Engine vom Thread aufgerufen werden, um Aufgaben wie das Aufzählen von Stapel Rahmen oder das Auswerten von Ausdrücken auszuführen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
- [Iactivescripterrordebug-Schnittstelle](../../winscript/reference/iactivescripterrordebug-interface.md)    
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [Iactivescripterrordebug-Schnittstelle](../../winscript/reference/iactivescripterrordebug-interface.md)   
  [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) -   
- [Breakresumeaction-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)    
+ [Breakresumeaction-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION-Enumeration](../../winscript/reference/errorresumeaction-enumeration.md)

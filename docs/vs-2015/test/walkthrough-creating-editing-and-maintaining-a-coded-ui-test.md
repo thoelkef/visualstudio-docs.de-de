@@ -20,7 +20,7 @@ ms.locfileid: "74302056"
 
 In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Presentation Foundation (WPF)-Anwendung, um das Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI zu veranschaulichen. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und des Steuerelementrefactorings nicht mehr funktionieren.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Für diese exemplarische Vorgehensweise benötigen Sie:
 
 - Visual Studio Enterprise
@@ -55,7 +55,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 12. Wählen Sie das Checkbox-Steuerelement aus. Ändern Sie im Eigenschaftenfenster den Wert für die Eigenschaft **Name** von \<Ohne Namen> in „checkBox1“, und löschen Sie die Eigenschaft **IsEnabled**.
 
-     ![Simple WPF Application](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
+     ![Einfache WPF-Anwendung](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
 13. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um einen Click-Ereignishandler hinzuzufügen.
 
@@ -141,17 +141,17 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 7. Wählen Sie die Option **Aktionen aufzeichnen, UI-Zuordnung bearbeiten oder Assertionen hinzufügen** aus, und klicken Sie auf **OK**.
 
-     Der UIMap – Test-Generator der programmierten UI wird angezeigt, und das Visual Studio-Fenster wird minimiert.
+     Der UIMap – Test-Generator für codierte UI wird angezeigt, und das Visual Studio-Fenster wird minimiert.
 
      Weitere Informationen zu den Optionen im Dialogfeld finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
 8. Klicken Sie auf dem „UIMap – Test-Generator der programmierten UI“ auf **Aufzeichnung starten**.
 
-     ![Start recording](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
+     ![Aufzeichnung starten](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
 
      Sie können die Aufzeichnung bei Bedarf anhalten, etwa wenn Sie eine eingehende E-Mail lesen möchten.
 
-     ![Pause the recording](../test/media/cuit.png "CUIT_")
+     ![Aufzeichnung anhalten](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > Alle auf dem Desktop ausgeführten Aktionen werden aufgezeichnet. Halten Sie die Aufzeichnung an, wenn Sie Aktionen ausführen, bei denen sensible Daten in die Aufzeichnung gelangen könnten.
@@ -369,22 +369,22 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 ## <a name="external-resources"></a>Externe Ressourcen
 
 ### <a name="videos"></a>Videos
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [Coded UI Tests-deepdive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [Coded UI Tests-deepdive-Episode2-wart-ceanddebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [Coded UI Tests-deepdive-Episode3-handcoding](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>Praktische Übungseinheiten
  [MSDN Virtual Lab: Introduction to Creating Coded UI Tests with Visual Studio 2010 (MSDN Virtual Lab: Einführung in die Erstellung programmierter UI-Tests mit Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=22508)
 
-### <a name="faq"></a>FAQ
+### <a name="faq"></a>Häufig gestellte Fragen
  [Tests der codierten UI – FAQ 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Tests der codierten UI – FAQ 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
- [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Siehe auch
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Getting Started with the WPF Designer](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+ [Verwenden von Benutzeroberflächen Automatisierung zum Testen](../test/use-ui-automation-to-test-your-code.md) [des Codes Einstieg in den WPF-Designer](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Bearbeiten von Tests der programmierten UI mit dem Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) für Tests

@@ -21,7 +21,7 @@ ms.locfileid: "74300837"
 
 Bilder, Videos und Audioclips machen Ihre App visuell ansprechender.
 
- ![Images sized to fit](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
+ ![Bild Größe anpassen](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
 
  Um ein Bild, ein Video oder einen Audioclip zu verwenden, fügen Sie das Element dem Projekt hinzu, und ziehen Sie es dann aus dem Bereich **Objekte** auf die **Zeichenfläche**.
 

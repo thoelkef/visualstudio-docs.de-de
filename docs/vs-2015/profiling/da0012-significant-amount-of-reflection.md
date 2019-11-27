@@ -24,11 +24,11 @@ ms.locfileid: "74300304"
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Starke Reflektion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0012|  
-|Category|.NET Framework Usage|  
-|Profiling methods|Sampling|  
-|Message|You may be using Reflection excessively. Dieser Vorgang ist äußerst speicherintensiv.|  
-|Rule type|Warning|  
+Regel-ID | DA0012 |  
+| Kategorie |. .NET Framework-Verwendung |  
+| Profil Erstellungs Methoden | Stichprobenentnahme |  
+| Meldung | Möglicherweise verwenden Sie Reflektion übermäßig. Dieser Vorgang ist äußerst speicherintensiv.|  
+| Regeltyp | Warnung |  
   
 ## <a name="cause"></a>Ursache  
  Aufrufe der System.Reflection-Methoden (beispielsweise „InvokeMember“ oder „GetMember“) oder der Type-Methoden (beispielsweise „MemberInvoke“) machen einen großen Teil der Profilerstellungsdaten aus. Ersetzen Sie diese Methoden nach Möglichkeit durch eine frühe Bindung an Methoden abhängiger Assemblys.  

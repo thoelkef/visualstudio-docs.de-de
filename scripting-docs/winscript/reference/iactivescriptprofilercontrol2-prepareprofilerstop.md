@@ -46,5 +46,5 @@ HRESULT PrepareProfilerStop();
  Durch Aufrufen von `IActiveScriptProfilerControl2::PrepareProfilerStop` wird sichergestellt, dass Ereignisse für Funktionen in der aufrufenden Stapel gesendet werden. Diese Methode muss aufgerufen werden, bevor Sie die Profilerstellung für eine Skript-Engine, die sich auf der aktuellen Registerkarte befindet, beendet haben. Die-Methode kann für jede Skript-Engine aufgerufen werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptProfilerControl2:: completeprofilerstart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
+ [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [IActiveScriptProfilerControl2-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

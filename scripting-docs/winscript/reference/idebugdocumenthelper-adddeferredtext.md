@@ -54,13 +54,13 @@ HRESULT AddDeferredText(
 ## <a name="remarks"></a>Hinweise  
  Diese Methode ermöglicht es dem Host, die Bereitstellung der zu addier enden Zeichen zu verzögern, bis Sie benötigt werden, und ermöglicht gleichzeitig dem Hilfsprogramm das Generieren präziser Benachrichtigungen und Größen Informationen. Der `dwTextStartCookie`-Parameter ist ein vom Host definiertes Cookie, das die Anfangsposition des Texts darstellt. Bei nachfolgenden Aufrufen von `IDebugDocumentText::GetText` muss dieses Cookie bereitgestellt werden. Beispielsweise könnte das Cookie in einem Host, der Text in DBCS darstellt, ein Byte Offset sein.  
   
- Es wird davon ausgegangen, dass ein einzelner Aufruf von `IDebugDocumentText::GetText` Zeichen aus mehreren Aufrufen an `AddDeferredText` abrufen kann. Hilfsklassen können auch mehrmals den gleichen Bereich von verzögerten Zeichen anfordern.  
+ Es wird davon ausgegangen, dass ein einzelner Aufruf von `IDebugDocumentText::GetText` Zeichen aus mehreren Aufrufen an `AddDeferredText`abrufen kann. Hilfsklassen können auch mehrmals den gleichen Bereich von verzögerten Zeichen anfordern.  
   
 > [!NOTE]
-> Aufrufe von `AddDeferredText` sollten nicht mit Aufrufen von `AddUnicodeText` oder `AddDBCSText` gemischt werden. Wenn dies auftritt, wird `E_FAIL` zurückgegeben.  
+> Aufrufe von `AddDeferredText` sollten nicht mit Aufrufen von `AddUnicodeText` oder `AddDBCSText`gemischt werden. Wenn dies auftritt, wird `E_FAIL` zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
- [Idebugdocumenthelper:: addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [Idebugdocumenthelper:: adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

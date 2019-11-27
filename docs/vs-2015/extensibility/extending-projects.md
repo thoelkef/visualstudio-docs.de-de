@@ -1,5 +1,5 @@
 ---
-title: Extending Projects | Microsoft Docs
+title: Erweitern von Projekten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,35 +21,35 @@ ms.locfileid: "74295977"
 # <a name="extending-projects"></a>Erweitern von Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projects and solutions are the ways Visual Studio organizes code and resource files into compilation and deployment units. You can find more information about projects in [Projects (Visual Studio SDK)](../extensibility/extending-projects.md).  
+Projekte und Projektmappen sind die Möglichkeiten, wie Visual Studio Code-und Ressourcen Dateien in Kompilierungs-und Bereitstellungs Einheiten organisiert. Weitere Informationen zu Projekten in [Projekten (Visual Studio SDK)](../extensibility/extending-projects.md)finden Sie hier.  
   
- You can create your own project types with the Visual Studio SDK and the Managed Package Framework for Projects, which you can download at [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). To understand how custom projects are implemented, see [New Project Generation: Under the Hood, Part One](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) and [New Project Generation: Under the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Sie können eigene Projekttypen mit dem Visual Studio SDK und dem Managed Package Framework für Projekte erstellen, die Sie unter [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12)herunterladen können. Informationen dazu, wie benutzerdefinierte Projekte implementiert werden, finden Sie unter [New Project Generation: at the Hood, Part One](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) and [New Project Generation: at the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
- The topics in this section describe how to create custom projects and how to manage different types of Visual Studio solution.  
+ In den Themen in diesem Abschnitt wird beschrieben, wie benutzerdefinierte Projekte erstellt werden und wie unterschiedliche Typen von Visual Studio-Projektmappen verwaltet werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Erstellen eines grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md)  
- Describes how to create a custom project system.  
+ Beschreibt, wie ein benutzerdefiniertes Projekt System erstellt wird.  
   
  [Erstellen eines grundlegenden Projektsystems, Teil 2](../extensibility/creating-a-basic-project-system-part-2.md)  
- Describes how to create a custom project system.  
+ Beschreibt, wie ein benutzerdefiniertes Projekt System erstellt wird.  
   
  [Speichern von Daten in Projektdateien](../extensibility/saving-data-in-project-files.md)  
- Explains how add to project (.*proj) files.  
+ Erläutert, wie Projektdateien (. * proj) hinzugefügt werden.  
   
  [Überprüfen von Untertypen eines Projekts zur Laufzeit](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
- Explains how to verify the subtype of a project at run time.  
+ Erläutert, wie der Untertyp eines Projekts zur Laufzeit überprüft wird.  
   
  [Hinzufügen und Entfernen von Eigenschaftenseiten](../extensibility/adding-and-removing-property-pages.md)  
- Explains how to customize the property pages for your custom project.  
+ Erläutert, wie die Eigenschaften Seiten für Ihr benutzerdefiniertes Projekt angepasst werden.  
   
  [Hinzufügen eines Attributs zu einem Projektelement](../extensibility/adding-an-attribute-to-a-project-item.md)  
- Explains how to add an attribute to a custom project item.  
+ Erläutert, wie einem benutzerdefinierten Projekt Element ein Attribut hinzugefügt wird.  
   
  [Beibehalten der Eigenschaft eines Projektelements](../extensibility/persisting-the-property-of-a-project-item.md)  
- Explains how to persist the properties of a custom project item.  
+ Erläutert, wie die Eigenschaften eines benutzerdefinierten Projekt Elements persistent gespeichert werden.  
   
  [Verwalten von universellen Windows-Projekten](../extensibility/managing-universal-windows-projects.md)  
- Explains how to manage universal projects.  
+ Erläutert, wie universelle Projekte verwaltet werden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte

@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573703"
 ---
 # <a name="regular-expression-object-expected"></a>Reguläres Ausdrucksobjekt erwartet
-Sie haben versucht, die **RegExp. Prototype. ToString** -Methode oder die **RegExp. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `RegExp` aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`RegExp`" sein.  
+Sie haben versucht, die **RegExp. Prototype. ToString** -Methode oder die **RegExp. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `RegExp`aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`RegExp`" sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
 - Rufen Sie nur die Methoden " **RegExp. Prototype. ToString** " oder " **RegExp. Prototype. valueOf** " für Objekte vom Typ "`RegExp`" auf.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

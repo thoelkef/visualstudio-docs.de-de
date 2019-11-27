@@ -55,5 +55,5 @@ HRESULT GetName(
  Diese Methode gibt den angegebenen Dokumentnamen zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumentinfo-Schnittstelle](../../winscript/reference/idebugdocumentinfo-interface.md)    
+ [Idebugdocumentinfo-Schnittstelle](../../winscript/reference/idebugdocumentinfo-interface.md)   
  [DOCUMENTNAMETYPE-Enumeration](../../winscript/reference/documentnametype-enumeration.md)

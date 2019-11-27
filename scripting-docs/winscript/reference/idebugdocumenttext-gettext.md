@@ -66,5 +66,5 @@ HRESULT GetText(
  Diese Methode ruft die Zeichen und/oder die Zeichen Attribute ab, die einem Zeichen Positions Bereich zugeordnet sind. Der Zeichen Positions Bereich wird durch eine Zeichenposition und eine Anzahl von Zeichen angegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenttext-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)    
+ [Idebugdocumenttext-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)   
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

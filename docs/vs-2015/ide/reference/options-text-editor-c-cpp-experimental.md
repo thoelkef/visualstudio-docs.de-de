@@ -28,23 +28,23 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  Diese Features sind in einer Visual Studio 2015 Update 1 RC-Installation verfügbar.
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ## <a name="browsingnavigation"></a>Durchsuchen/Navigation
- **Enable New Database Engine** This should automatically speed up database population and make all database operations faster (with no loss in accuracy) for operations such as **Go To Definition** and **Find All References**. (Sie müssen Ihre Projektmappe nur schließen und erneut öffnen , um die Änderungen anzuwenden. Es ist nicht erforderlich, Visual Studio neu zu starten.)
+ **Neue Datenbank-Engine aktivieren** Dadurch wird die Daten Bank Population automatisch beschleunigt, und alle Daten Bank Vorgänge werden schneller (ohne Genauigkeits Verlust) für Vorgänge wie " **Gehe zu Definition** " und " **alle Verweise suchen**" ausgeführt. (Sie müssen Ihre Projektmappe nur schließen und erneut öffnen , um die Änderungen anzuwenden. Es ist nicht erforderlich, Visual Studio neu zu starten.)
 
 ## <a name="intellisense"></a>IntelliSense
- **Member List Dot-To-Arrow** Replaces '.' with '->' when applicable for Member List.
+ Element **Liste (Punkt-zu-Pfeil** ) Ersetzt "." durch "->", wenn dies für die Elementliste anwendbar ist.
 
 ## <a name="refactoring"></a>Umgestaltung
- **Enable Extract Function** Extract selected code to its own function and replace code with a call to the new function. Um auf dieses Feature zuzugreifen, klicken Sie mit der rechten Maustaste auf den ausgewählten Code, und wählen Sie **Schnelle Aktionen**aus, oder drücken Sie einfach die Standardtastenkombination STRG + Punkt [STRG + .].
+ **Extract-Funktion aktivieren** Extrahieren Sie den ausgewählten Code in seine eigene Funktion, und ersetzen Sie den Code durch einen-Rückruf der neuen Funktion. Um auf dieses Feature zuzugreifen, klicken Sie mit der rechten Maustaste auf den ausgewählten Code, und wählen Sie **Schnelle Aktionen**aus, oder drücken Sie einfach die Standardtastenkombination STRG + Punkt [STRG + .].
 
- **Enable Change Signature** Add, reorder, and delete parameters of a function and propagate the changes to all call sites. Um auf dieses Feature zuzugreifen, klicken Sie mit der rechten Maustaste auf irgendeinen Aufruf der Funktion, und wählen Sie **Schnelle Aktionen**aus, oder drücken Sie einfach die Standardtastenkombination STRG + Punkt [STRG + .].
+ **Änderungs Signatur aktivieren** Sie können Parameter einer Funktion hinzufügen, neu anordnen und löschen und die Änderungen an alle Aufrufen Sites weitergeben. Um auf dieses Feature zuzugreifen, klicken Sie mit der rechten Maustaste auf irgendeinen Aufruf der Funktion, und wählen Sie **Schnelle Aktionen**aus, oder drücken Sie einfach die Standardtastenkombination STRG + Punkt [STRG + .].
 
 ## <a name="text-editor"></a>Text-Editor
- **Enable Expand Scopes** If enabled, you can surround selected text with curly braces by typing '{' into the text editor.
+ Erweiterungs **Bereiche aktivieren** Wenn diese Option aktiviert ist, können Sie markierten Text mit geschweiften Klammern umschließen, indem Sie "{" in den Text-Editor eingeben.
 
- **Enable Expand Precedence** If enabled, you can surround selected text with parentheses by typing '(' into the text editor.
+ Erweiterungs **Rangfolge aktivieren** Wenn diese Option aktiviert ist, können Sie markierten Text in Klammern umschließen, indem Sie "(" in den Text-Editor eingeben.
 
  Weitere Text-Editor-Features für die Visual Studio Gallery finden Sie in der Liste [hier](https://go.microsoft.com/fwlink/?LinkId=692016). Ein Beispiel ist [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), das Folgendes unterstützt:
 
@@ -59,4 +59,4 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
   Sie können entweder mit dem Mauszeiger auf eine Wellenlinie zeigen, um eine Glühbirne anzuzeigen, oder die Standardtastenkombination Strg + Punkt (STRG + .) verwenden. Für die Tastenkombination muss die Einfügemarke nicht auf dem speziellen Fehler oder Token positioniert werden. Es genügt, wenn Sie sich in der Zeile befinden, in der der Fehler auftritt, um Vorschläge für alle Elemente in dieser Zeile aufzurufen.
 
 ## <a name="see-also"></a>Siehe auch
- [Setting Language-Specific Editor Options](../../ide/reference/setting-language-specific-editor-options.md) [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+ [Festlegen von sprachspezifischen Editor Optionen](../../ide/reference/setting-language-specific-editor-options.md) [Refactoring in C++ (VC-Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

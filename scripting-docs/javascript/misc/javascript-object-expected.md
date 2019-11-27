@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573788"
 ---
 # <a name="javascript-object-expected"></a>JavaScript-Objekt erwartet
-Sie haben versucht, ein nicht [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt an eine integrierte Funktion zu übergeben, die ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt erwartet. Für verschiedene integrierte Funktionen sind in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definierte Objekte erforderlich (im Gegensatz zu vom Host definierten Objekten oder einer externen Komponente wie einem Steuerelement).  
+Sie haben versucht, ein nicht[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt an eine integrierte Funktion zu übergeben, die ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt erwartet. Für verschiedene integrierte Funktionen sind in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definierte Objekte erforderlich (im Gegensatz zu vom Host definierten Objekten oder einer externen Komponente wie einem Steuerelement).  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

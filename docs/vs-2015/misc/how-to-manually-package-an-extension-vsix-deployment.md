@@ -1,5 +1,5 @@
 ---
-title: 'How to: Manually Package an Extension (VSIX Deployment) | Microsoft Docs'
+title: 'Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -29,7 +29,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
  Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
   
 > [!NOTE]
-> The names of files in VSIX packages must not include spaces, nor characters that are reserved in Uniform Resource Identifiers (URI), as defined under [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
+> Die Namen der Dateien in VSIX-Paketen dürfen keine Leerzeichen und keine Zeichen enthalten, die in URI (Uniform Resource Identifier) reserviert sind, wie unter [\[rfc2396\]](https://go.microsoft.com/fwlink/?LinkId=90339)definiert.  
   
 #### <a name="to-manually-create-a-vsix-package"></a>So erstellen Sie manuell ein VSIX-Paket  
   
@@ -41,7 +41,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
   
 4. Erstellen Sie eine zweite XML-Datei, und nennen Sie sie `[Content_Types].xml`.  
   
-5. Fill in the [Content_Types].xml file as specified in [The Structure of the Content_types\].xml File](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Füllen Sie die Datei [Content_Types]. XML wie in [der Struktur der Content_Types\]. XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)-Datei angegeben aus.  
   
 6. Fügen Sie beide XML-Dateien zusammen mit der zu bereitstellenden Erweiterung in ein Verzeichnis ein.  
   
@@ -54,6 +54,6 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
 8. Benennen Sie die resultierende ZIP-Datei in *Dateiname*.vsix um, wobei *Dateiname* der Name der verteilbaren Datei ist, mit der das Paket installiert wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Shipping Visual Studio Extensions](../extensibility/shipping-visual-studio-extensions.md)   
- [Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Liefer  für Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)  
+ [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
+ [Packagemanifest-Element (Stamm Element, VSX-Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

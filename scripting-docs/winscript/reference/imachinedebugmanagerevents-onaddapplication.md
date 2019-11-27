@@ -54,5 +54,5 @@ HRESULT onAddApplication(
  Diese Methode gibt an, dass der Liste der laufenden Anwendungen eine Anwendung hinzugefügt wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Imachinedebugmanagerevents-Schnittstelle](../../winscript/reference/imachinedebugmanagerevents-interface.md)    
+ [Imachinedebugmanagerevents-Schnittstelle](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

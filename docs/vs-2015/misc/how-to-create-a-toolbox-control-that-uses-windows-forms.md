@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create a Toolbox Control That Uses Windows Forms | Microsoft Docs'
+title: 'Gewusst wie: Erstellen eines Toolbox-Steuer Elements, das Windows Forms verwendet | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -87,7 +87,7 @@ Mit der Vorlage „Windows Forms-Toolbox-Steuerelement“, die im [!INCLUDE[vssd
   
 2. Laden Sie die VSIX-Datei in ein Netzwerk oder auf einer Website hoch.  
   
-     If you upload the file to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site, other users can use **Extension Manager** in Visual Studio to find the control and install it.  
+     Wenn Sie die Datei auf die [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website hochladen, können andere Benutzer den **Erweiterungs-Manager** in Visual Studio verwenden, um das Steuerelement zu finden und zu installieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)

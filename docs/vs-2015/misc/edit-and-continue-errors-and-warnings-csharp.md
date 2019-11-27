@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue Errors and Warnings (C#) | Microsoft Docs
+title: Fehler und Warnungen bearbeiten und FortfahrenC#() | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -81,7 +81,7 @@ Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Fu
   
 1. Wählen Sie im Menü **Debuggen** den Befehl **Rückgängig** aus, um die Änderung rückgängig zu machen.  
   
-     - oder -  
+     \- oder -  
   
 2. Halten Sie die Debugsitzung an, nehmen Sie die Änderungen vor, und starten Sie eine neue Debugsitzung.  
   

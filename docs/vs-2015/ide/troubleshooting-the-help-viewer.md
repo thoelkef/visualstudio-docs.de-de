@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the Help Viewer | Microsoft Docs
+title: Problembehandlung bei Help Viewer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer

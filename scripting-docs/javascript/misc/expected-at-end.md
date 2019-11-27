@@ -1,5 +1,5 @@
 ---
-title: "\"@No__t_0\" erwartet | Microsoft-Dokumentation"
+title: "\"@end\" erwartet | Microsoft-Dokumentation"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,13 +21,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573438"
 ---
-# <a name="expected-end"></a>Es wurde "\@end" erwartet.
-Sie haben versucht, einen bedingt kompilierten Codeblock zu erstellen, aber die <strong>@end</strong> -Anweisung am Ende nicht eingeschlossen. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Anweisungen können bedingt durch einschließen in einen <strong>@if/ @end</strong> -Block kompiliert werden.  
+# <a name="expected-end"></a>"\@Ende" erwartet
+Sie haben versucht, einen bedingt kompilierten Codeblock zu erstellen, aber die <strong>@end</strong> -Anweisung am Ende nicht eingeschlossen. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Anweisungen können bedingt durch einschließen in einen <strong>@if/@end</strong> -Block kompiliert werden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
 - Fügen Sie die entsprechende <strong>@end</strong> -Anweisung hinzu.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)    
+ [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)

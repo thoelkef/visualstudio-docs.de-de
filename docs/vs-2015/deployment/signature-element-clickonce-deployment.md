@@ -1,5 +1,5 @@
 ---
-title: '&lt;Signature&gt; Element (ClickOnce Deployment) | Microsoft Docs'
+title: '&lt;Signatur&gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,7 +22,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295074"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; Element (ClickOnce Deployment)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signatur&gt; Element (ClickOnce-Bereitstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.  
@@ -37,12 +37,12 @@ Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digita
 ```  
   
 ## <a name="remarks"></a>Hinweise  
- Signing a deployment manifest using an envelope signature is optional, but recommended. For more information about signing XML files see the World Wide Web Consortium Recommendation, "XML-Signature Syntax and Processing," described at [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
+ Das Signieren eines Bereitstellungs Manifests mithilfe einer Umschlag Signatur ist optional, wird jedoch empfohlen. Weitere Informationen zum Signieren von XML-Dateien finden Sie in der World Wide Web Consortium Empfehlung "Syntax und Verarbeitung von XML-Signaturen", die unter [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/)beschrieben wird.  
   
- If you want to sign your manifest, hashes must be provided for all files. A manifest with files that are not hashed cannot be signed, because users cannot verify the contents of unhashed files.  
+ Wenn Sie das Manifest signieren möchten, müssen Sie Hashes für alle Dateien bereitstellen. Ein Manifest mit Dateien, die nicht als Hash verwendet werden, kann nicht signiert werden, da Benutzer den Inhalt von Dateien ohne Hash überprüfen können.  
   
 ## <a name="example"></a>Beispiel  
- The following code example illustrates a `Signature` element in a deployment manifest used in a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment.  
+ Das folgende Codebeispiel veranschaulicht ein `Signature`-Element in einem Bereitstellungs Manifest, das in einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung verwendet wird.  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  

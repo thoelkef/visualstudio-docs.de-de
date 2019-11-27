@@ -21,7 +21,7 @@ ms.locfileid: "74295744"
 
 Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Formulars zu ändern.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-set-your-form-properties"></a>So legen Sie die Formulareigenschaften fest
 
@@ -34,7 +34,7 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
 
 3. Suchen Sie nach dem Auswählen des Formulars die Eigenschaft **Text** im Fenster **Eigenschaften**. Je nachdem, wie die Liste sortiert wird, müssen Sie möglicherweise einen Bildlauf nach unten durchführen. Wählen Sie **Text** aus, geben Sie **Picture Viewer** ein, und wählen Sie dann die EINGABETASTE aus.  In der Titelleiste des Formulars sollte jetzt der Text **Picture Viewer** angezeigt werden, und das **Eigenschaftenfenster** sollte wie im folgenden Bild aussehen.
 
-    ![Properties window](../ide/media/express-edittextproperty.png "Express_EditTextProperty") Properties window
+    ![Eigenschaftenfenster](../ide/media/express-edittextproperty.png "Express_EditTextProperty") Eigenschaftenfenster
 
    > [!NOTE]
    > Eigenschaften können in einer kategorisierten oder alphabetischen Ansicht angeordnet sein. Sie können mit den Schaltflächen im **Eigenschaftenfenster** zwischen diesen beiden Ansichten umschalten. In diesem Lernprogramm ist es einfacher, in der alphabetischen Ansicht nach Eigenschaften zu suchen.
@@ -55,7 +55,7 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
 
    - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen starten** aus, die wie folgt aussieht.
 
-      ![Start Debugging toolbar button](../ide/media/express-icondebug.png "Express_IconDebug") Start Debugging toolbar button
+      ![Symbolleisten Schaltfläche "Debugging](../ide/media/express-icondebug.png "Express_IconDebug") Symbolleisten Schaltfläche "Debugging
 
      Wie bereits zuvor geschehen, erstellt die IDE das Programm und führt es aus, und ein Fenster wird angezeigt.
 

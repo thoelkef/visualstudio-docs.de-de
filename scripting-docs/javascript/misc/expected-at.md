@@ -33,6 +33,6 @@ Sie haben versucht, eine Variable zu erstellen, die mit Anweisungen für die bed
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [@set-Anweisung](../../javascript/reference/at-set-statement-javascript.md)    
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)    
+ [@set-Anweisung](../../javascript/reference/at-set-statement-javascript.md)   
+ [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)

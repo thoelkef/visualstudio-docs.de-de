@@ -42,28 +42,28 @@ typedef struct DebugPropertyInfo{
 ```  
   
 ## <a name="members"></a>Member  
- dwvalidfields  
+ dwValidFields  
  Ein enumerierter Datentyp, der verwendet wird, um anzugeben, welche Felder initialisiert werden.  
   
  bstrName  
  Der Eigenschaftsname innerhalb eines Kontexts.  
   
- bstrintype  
+ bstrType  
  Der Eigenschaftentyp, als formatierte Zeichenfolge.  
   
- bstrauvalue  
+ bstrValue  
  Der Eigenschafts Wert als formatierte Zeichenfolge.  
   
  bstraufullname  
  Der vollständige Name der Eigenschaft.  
   
- dwattenb  
+ dwAttrib  
  Eine Enumeration, die die Flags für die Debug-Eigenschafts Attribute angibt.  
   
  pdebug-Prop  
  Die `IDebugProperty`, die durch die Informationen in dieser `DebugPropertyInfo` Struktur beschrieben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)    
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+ [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

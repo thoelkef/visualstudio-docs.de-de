@@ -52,5 +52,5 @@ HRESULT StartDebugSession(
  Diese Methode initiiert eine Debugsitzung mit der angegebenen Anwendung. Der Debugger sollte `IRemoteDebugApplication::ConnectDebugger` vor der Rückgabe von diesem-Befehl abrufen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugsessionproviderex-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)    
+ [Idebugsessionproviderex-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)   
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

@@ -27,9 +27,9 @@ Sie können mehrere Dienstkonfigurationen für jede Ihrer Bereitstellungsumgebun
 
 Sie können diese Dienstkonfigurationen basierend auf Ihren Anforderungen hinzufügen, löschen, umbenennen und ändern. Sie können diese Dienstkonfigurationen in Visual Studio verwalten, wie in der folgenden Abbildung dargestellt.
 
-![Dienstkonfigurationen verwalten](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
+![Verwalten von Dienstkonfigurationen](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
-Sie können das Dialogfeld **Konfigurationen verwalten** auch über die Eigenschaftenseiten der Rolle öffnen. Um die Eigenschaften für eine Rolle im Azure-Projekt zu öffnen, öffnen Sie das Kontextmenü für diese Rolle, und wählen Sie dann **Eigenschaften**aus. Erweitern Sie auf der Registerkarte **Einstellungen** die Liste **Dienstkonfiguration**, und klicken Sie dann auf **Verwalten**, um das Dialogfeld **Konfigurationen verwalten** zu öffnen.
+Sie können das Dialogfeld **Konfigurationen verwalten** auch über die Eigenschaftenseiten der Rolle öffnen. Öffnen Sie das Kontextmenü für diese Rolle, und wählen Sie dann **Eigenschaften** aus, um die Eigenschaften für eine Rolle im Azure-Projekt zu öffnen. Erweitern Sie auf der Registerkarte **Einstellungen** die Liste **Dienstkonfiguration**, und klicken Sie dann auf **Verwalten**, um das Dialogfeld **Konfigurationen verwalten** zu öffnen.
 
 ### <a name="to-add-a-service-configuration"></a>So fügen Sie eine Dienstkonfiguration hinzu
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und klicken Sie anschließend auf **Konfigurationen verwalten**.
@@ -58,7 +58,7 @@ Sie können das Dialogfeld **Konfigurationen verwalten** auch über die Eigensch
     Der Name der Dienstkonfigurationsdatei wird im Azure-Projekt im Projektmappen-Explorer geändert.
 
 ### <a name="to-change-a-service-configuration"></a>So ändern Sie eine Dienstkonfiguration
-* Wenn Sie eine Dienstkonfiguration ändern möchten, öffnen Sie das Kontextmenü für die jeweilige Rolle, die Sie im Azure-Projekt ändern möchten. Klicken Sie dann auf **Eigenschaften**. See [How to: Configure the Roles for an Azure Cloud Service with Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) for more information.
+* Wenn Sie eine Dienstkonfiguration ändern möchten, öffnen Sie das Kontextmenü für die jeweilige Rolle, die Sie im Azure-Projekt ändern möchten. Klicken Sie dann auf **Eigenschaften**. Weitere Informationen finden Sie unter Gewusst [wie: Konfigurieren der Rollen für einen Azure-clouddienst mit Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) .
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Erstellen verschiedener Einstellungskombinationen mithilfe von Profilen
 Mithilfe eines Profils können Sie den **Veröffentlichungs-Assistenten** mit verschiedenen Kombinationen von Einstellungen für unterschiedliche Verwendungszwecke automatisch auffüllen. Beispielsweise können Sie ein Profil für Debugging und ein weiteres für Releasebuilds verwenden. In diesem Fall ist im **Debug**-Profil **IntelliTrace** aktiviert und die **Debug**-Konfiguration ausgewählt, und im **Release**-Profil wäre **IntelliTrace** deaktiviert und die **Release**-Konfiguration ausgewählt. Sie können auch verschiedene Profile verwenden, um einen Dienst mithilfe eines anderen Speicherkontos bereitzustellen.
@@ -74,11 +74,11 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
    
     Das Dialogfeld **Profile verwalten** wird angezeigt, wie in der folgenden Abbildung gezeigt.
    
-    ![Dialogfeld "Profile verwalten"](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
+    ![Profile verwalten (Dialogfeld)](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Wählen Sie in der Liste **Name** ein Profil aus, und klicken Sie dann auf **Kopie erstellen**.
-5. Wählen Sie die Schaltfläche **Schließen** .
+5. Klicken Sie auf die Schaltfläche **Schließen**.
    
-    Das neue Profil wird in der Liste "Zielprofil" angezeigt.
+    Das neue Profil wird in der Liste Zielprofil angezeigt.
 6. Klicken Sie in der Liste **Zielprofil** auf das soeben erstellte Profil. Die Einstellungen des Veröffentlichungs-Assistenten werden mit den Optionen aus dem ausgewählten Profil aufgefüllt.
 7. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und passen Sie dann die Einstellungen für dieses Profil an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](https://go.microsoft.com/fwlink/p/?LinkID=623085) .
 8. Klicken Sie nach dem Anpassen der Einstellungen auf **Weiter** , um zur Seite „Einstellungen“ zurückzukehren. Das Profil wird gespeichert, wenn Sie den Dienst mit diesen Einstellungen veröffentlichen oder auf die Schaltfläche **Speichern** neben der Liste mit den Profilen klicken.

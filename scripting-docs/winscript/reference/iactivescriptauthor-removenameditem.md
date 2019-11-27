@@ -40,7 +40,7 @@ HRESULT RemoveNamedItem(
  in Die Adresse des Puffers, der das zu entfernenden `NamedItem` Objekt identifiziert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -51,5 +51,5 @@ HRESULT RemoveNamedItem(
  [IActiveScript:: addnameditem](../../winscript/reference/iactivescript-addnameditem.md) wird zum Einfügen des `NamedItem` Objekts in den Namespace der Skript Erstellungs-Engine verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)    
+ [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

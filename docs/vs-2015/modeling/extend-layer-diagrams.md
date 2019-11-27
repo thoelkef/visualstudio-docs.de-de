@@ -1,5 +1,5 @@
 ---
-title: Extend layer diagrams | Microsoft Docs
+title: Erweitern von ebenendiagrammen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -37,13 +37,13 @@ Sie können Code schreiben, um Ebenendiagramme zu erstellen und zu aktualisieren
 ## <a name="prereqs"></a> Anforderungen
  Auf dem Computer, auf dem Sie die Ebenenerweiterungen entwickeln möchten, muss Folgendes installiert sein:
 
-- Visual Studio
+- Visual Studio
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Modellierungs-SDK für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  Sie müssen die passende Visual Studio-Version auf dem Computer installiert haben, auf dem Sie die Ebenenerweiterungen ausführen möchten. For more information, see [Deploy a layer model extension](../modeling/deploy-a-layer-model-extension.md).
+  Sie müssen die passende Visual Studio-Version auf dem Computer installiert haben, auf dem Sie die Ebenenerweiterungen ausführen möchten. Weitere Informationen finden Sie unter Bereitstellen [einer ebenenmodellerweiterung](../modeling/deploy-a-layer-model-extension.md).
 
   Welche Versionen von Visual Studio Ebenendiagramme unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -61,4 +61,4 @@ Sie können Code schreiben, um Ebenendiagramme zu erstellen und zu aktualisieren
  [Problembehandlung bei Erweiterungen für Ebenendiagramme](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md) [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md) [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md) [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md) [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md) [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+ [Definieren und Installieren einer Modellierungs Erweiterung](../modeling/define-and-install-a-modeling-extension.md) [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md) [Erstellen von ebenendiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md) [Überprüfen von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md) [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md) [Öffnen eines UML-Modells mithilfe der Visual Studio-API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

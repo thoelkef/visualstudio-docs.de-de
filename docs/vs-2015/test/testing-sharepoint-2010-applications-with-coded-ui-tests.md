@@ -29,14 +29,14 @@ Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwend
 
  **Notizen**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI tests for SharePoint applications are supported only with SharePoint 2010.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI-Tests für SharePoint-Anwendungen werden nur mit SharePoint 2010 unterstützt.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Support for Visio and PowerPoint 2010 controls in your SharePoint application is not supported.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Unterstützung für Visio-und PowerPoint 2010-Steuerelemente in Ihrer SharePoint-Anwendung wird nicht unterstützt.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Erstellen eines Tests der codierten UI für die SharePoint-App
  Das[Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) für Ihre SharePoint 2010-Anwendungen entspricht dem Erstellen von Tests für andere Anwendungstypen. Die Aufzeichnung und Wiedergabe wird für alle Steuerelemente in der Webbearbeitungsschnittstelle unterstützt. Bei der Schnittstelle für das Auswählen von Kategorien und Webparts handelt es sich um standardmäßige Websteuerelemente.
 
- ![SharePoint web parts](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+ ![SharePoint-Webparts](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
 > Wenn Sie Aktionen aufzeichnen, überprüfen Sie die Aktionen vor dem Generieren von Code. Da mehrere Verhaltensweisen Mauszeigerbewegungen zugeordnet sind, ist es standardmäßig aktiviert. Achten Sie darauf, dass Sie redundante Bewegungen des Mauszeigers aus Tests der programmierten UI entfernen. Sie erreichen dies durch Bearbeiten des Codes für den Test oder mithilfe des [Test-Editors für codierte UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
@@ -138,10 +138,10 @@ uiGridKeyboardInputEdit.Text=value;
  [Inhaltsindex für den Test der programmierten UI](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>Empfehlungen
- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>Forum
  [Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=254496)
 
 ## <a name="see-also"></a>Siehe auch
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Web performance and load testing SharePoint 2010 and 2013 applications](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Create SharePoint Solutions](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifying and Debugging SharePoint Code](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Building and Debugging SharePoint Solutions](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Profiling the Performance of SharePoint Applications](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [Verwenden von Benutzeroberflächen Automatisierung zum Testen Ihres](../test/use-ui-automation-to-test-your-code.md) [codewebleistungs-und Auslastungs Tests SharePoint 2010-und 2013-Anwendungen](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Erstellen](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) von SharePoint-Lösungen über [prüfen und Debuggen](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) von SharePoint-Code erstellen [und Debuggen](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [von](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8) SharePoint-Lösungen erstellen und

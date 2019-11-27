@@ -63,10 +63,10 @@ Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [
 
  Enthält Links zu Informationen zum Ausführen automatisierter Tests mithilfe von Visual Studio anstelle von [!INCLUDE[TCMext](../includes/tcmext-md.md)].
 
-## <a name="reference"></a>Referenz
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Describes the UnitTesting namespace, which provides attributes, exceptions, asserts, and other classes that support unit testing.
+## <a name="reference"></a>Verweis
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> beschreibt den UnitTesting-Namespace, der Attribute, Ausnahmen, Bestätigungen und andere Klassen bereitstellt, die Komponententests unterstützen.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Describes the UnitTesting.Web namespace, which extends the UnitTesting namespace by providing support for [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] and Web service unit tests.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> beschreibt den UnitTesting. Web-Namespace, der den UnitTesting-Namespace durch die Unterstützung für [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-und Webdienst-Komponententests erweitert.
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
@@ -79,8 +79,8 @@ Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [
 ### <a name="guidance"></a>Empfehlungen
  [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="reference"></a>Referenz
+### <a name="reference"></a>Verweis
  [Inhaltsverzeichnis für Komponententests](https://go.microsoft.com/fwlink/?LinkID=254719)
 
 ## <a name="see-also"></a>Siehe auch
- [Improve Code Quality](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [Testing the application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
+ [Verbessern der Code Qualität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

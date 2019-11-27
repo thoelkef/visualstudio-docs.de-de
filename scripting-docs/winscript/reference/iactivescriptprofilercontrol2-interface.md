@@ -31,5 +31,5 @@ Stellt Methoden bereit, die die Fähigkeit zum Starten oder Beenden der Profiler
 |[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Benachrichtigt den Profiler, dass die Profilerstellung für alle anwendbaren Skript-Engines beendet werden soll. Dies ermöglicht es Ihnen, die komplette aufrufsstapel abzurufen, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung beenden.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptprofilercontrol-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol-interface.md)    
+ [Iactivescriptprofilercontrol-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   
  [Active Script-Profilerschnittstelle](../../winscript/reference/active-script-profiler-interfaces.md)

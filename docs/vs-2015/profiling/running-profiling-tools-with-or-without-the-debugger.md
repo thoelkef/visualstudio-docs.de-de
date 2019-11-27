@@ -45,13 +45,13 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 2. Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen / Windows / Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.  
   
-3. Führen Sie die Szenarien aus, für die Sie Daten erfassen möchten.  
+3. Führen Sie die Szenarien aus, für die Sie Daten sammeln möchten.  
   
     Während der Debuggingsitzung können Sie Informationen zu Ereignissen, Prozessarbeitsspeicher und CPU-Auslastung anzeigen.  
   
     Folgende Abbildung zeigt das Fenster **Diagnosetools** in Visual Studio 2015 Update 1:  
   
-    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![Diagnostictools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4. Mithilfe der Einstellung **Tools auswählen** auf der Symbolleiste können Sie auswählen, ob Sie die **Speicherauslastung** oder die **CPU-Auslastung** (oder beides) anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie IntelliTrace unter **Tools / Optionen / IntelliTrace** aktivieren oder deaktivieren.  
   
@@ -61,11 +61,11 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
    Das Fenster hat jetzt ein Suchfeld, damit Sie nach einer bestimmten Zeichenfolge in der Ereignisliste suchen können. Folgende Abbildung zeigt beispielsweise die Ergebnisse der Suche nach der Zeichenfolge "install", der vier Ereignisse entsprechen:  
   
-   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![Diagnosticsiebzig Search](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
    Sie können in dem Fenster Ereignisse auch in die Ansicht hineinfiltern bzw. aus dieser herausfiltern. In der Dropdownliste **Filtern** können Sie bestimmte Kategorien von Ereignissen aktivieren bzw. deaktivieren: Die Kategorienamen entsprechen den Präfixnamen.  
   
-   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![Diagnosticeventfilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
    Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
@@ -74,11 +74,11 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 1. Öffnen Sie das Projekt in Visual Studio.  
   
-2. On the **Debug** menu, choose **Performance Profiler...** (Shortcut key: Alt + F2).  
+2. Klicken Sie im Menü **Debuggen** auf **leistungsprofiler...** (Tastenkombination: Alt + F2).  
   
 3. Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
   
-    ![Select the diagnostic tools](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Wählen Sie die Diagnosetools aus.](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
 4. Klicken Sie zum Starten der Diagnosesitzung auf **Start**.  
   
@@ -86,7 +86,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
     Während Sie die Sitzung ausführen, zeigen einige Tools Grafiken der Echtzeitdaten auf der Startseite der Diagnosetools an.  
   
-    ![Collect data on the Performance and Diagnostic pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Sammeln von Daten für die Leistungs-und Diagnose-Pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Klicken Sie zum Beenden der Diagnosesitzung auf **Auflistung anhalten**.  
   
@@ -94,34 +94,34 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
    Sie können auch gespeicherte DIAGNOSTIC-Sitzungsdateien über die Liste der zuvor geöffneten Elemente auf der Startseite für die Diagnosetools öffnen.  
   
-   ![Open a saved diagnosis session file](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Öffnen einer gespeicherten Diagnose Sitzungs Datei](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Der Profilerstellungsbericht  
- ![Diagnostic tools report](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Bericht "Diagnosetools"](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
 |![Schritt 1](../profiling/media/procguid-1.png "ProcGuid_1")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|  
 |![Schritt 2](../profiling/media/procguid-2.png "ProcGuid_2")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  
-|![Schritt 3](../profiling/media/procguid-3.png "ProcGuid_3")|Ein Tool zeigt mindestens ein Hauptdiagramm an. Wenn Ihre Diagnosesitzung mit mehreren Tools erstellt wird, werden alle Hauptdiagramme angezeigt.|  
-|![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Sie können die einzelnen Diagramme reduzieren und erweitern.|  
-|![Step 5](../profiling/media/procguid-6.png "ProcGuid_6")|Wenn Ihre Daten Informationen mehrerer Tools enthalten, werden die Details für das Tool unter Registerkarten aufgelistet.|  
-|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Ein Tool kann eine oder mehrere Detailansichten haben. Die Ansicht wird durch den ausgewählten Bereich der Zeitachse gefiltert.|  
+|![Schritt 3](../profiling/media/procguid-3.png "ProcGuid_3")|Ein Tool zeigt mindestens ein Hauptdiagramm an. Wenn die Diagnosesitzung mit mehreren Tools erstellt wird, werden sämtliche Hauptdiagramme angezeigt.|  
+|![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Sie können die einzelnen Diagramme erweitern und reduzieren.|  
+|![Schritt 5](../profiling/media/procguid-6.png "ProcGuid_6")|Wenn die Daten Informationen aus mehreren Tools enthalten, werden die Details für das Tool auf Registerkarten aufgelistet.|  
+|![Schritt 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Ein Tool kann eine oder mehrere Detailansichten haben. Die Ansicht wird durch den ausgewählten Bereich der Zeitachse gefiltert.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Festlegen des Analyseziels auf ein anderes Gerät  
- Sie können nicht nur Ihre App im Visual Studio-Projekt starten, sondern auch Diagnosesitzungen auf alternativen Zielen ausführen. Beispielsweise empfiehlt es sich, die Diagnose von Leistungsproblemen mit einer Version Ihrer App auszuführen, die aus dem Windows App Store installiert wurde.  
+ Sie können im Visual Studio-Projekt nicht nur die App starten, sondern auch Diagnosesitzungen für alternative Ziele ausführen. Beispielsweise empfiehlt es sich, die Diagnose von Leistungsproblemen mit einer Version Ihrer App auszuführen, die aus dem Windows App Store installiert wurde.  
   
- ![Choose diagnostic tools analysis target](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Analyse Ziel für Diagnosetools auswählen](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Sie können Apps starten, die bereits auf einem Gerät installiert sind, oder Sie können die Diagnosetools an Apps anfügen, die bereits ausgeführt werden. Bei der Auswahl von **Ausgeführte App** oder **Installierte App** wählen Sie die App in einer Liste aus, die die Apps auf dem angegebenen Bereitstellungsziel erkennt.  
   
- ![Choose a running or installed app for diagnosis](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Auswählen einer laufenden oder installierten App für die Diagnose](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  Wenn Sie **Internet Explorer** auswählen, geben Sie die URL an, und Sie können das Windows Phone-Bereitstellungsziel ändern.  
   
- ![Specify the url to display in Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Angeben der URL, die in Internet Explorer angezeigt werden soll](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
-## <a name="remote-debugging"></a>Remote Debugging  
+## <a name="remote-debugging"></a>Remotedebuggen  
  Für das Ausführen einer Diagnosesitzung auf einem Remote-PC oder -Tablet müssen die Visual Studio-Remotetools installiert sein und auf dem Remotezielgerät ausgeführt werden. Informationen zu Desktop-Apps finden Sie unter [Remotedebugging](../debugger/remote-debugging.md).  Informationen zu Windows Universal-Apps finden Sie unter [Run Windows Store apps on a remote machine (Ausführen von Windows Store-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogbeiträge und MSDN-Artikel vom Diagnoseentwicklungsteam  

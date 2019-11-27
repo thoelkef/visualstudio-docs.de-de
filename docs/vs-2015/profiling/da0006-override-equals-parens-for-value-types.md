@@ -24,11 +24,11 @@ ms.locfileid: "74300991"
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Equals() für Werttypen überschreiben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0006|  
-|Category|.NET Framework Usage|  
-|Profiiling methods|Sampling|  
-|Message|Override Equals and equality operator on value types.|  
-|Messge type|Warning|  
+Regel-ID | DA0006 |  
+| Kategorie |. .NET Framework-Verwendung |  
+| Profiiling-Methoden | Stichprobenentnahme |  
+| Meldung | Überschreiben Gleichheits-und Gleichheits Operator für Werttypen. |  
+| Messge-Typ | Warnung |  
   
 ## <a name="cause"></a>Ursache  
  Aufrufe der Equals-Methode oder der Gleichheitsoperatoren eines öffentlichen Werttyps machen einen großen Teil der Profilerstellungsdaten aus. Implementieren Sie ggf. eine effizientere Methode.  

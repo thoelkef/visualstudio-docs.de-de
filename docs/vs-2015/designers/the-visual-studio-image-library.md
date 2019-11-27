@@ -1,5 +1,5 @@
 ---
-title: Image Library | Microsoft Docs
+title: Bildbibliothek | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300825"
 ---
-# <a name="the-visual-studio-image-library"></a>Visual Studio Bildbibliothek
+# <a name="the-visual-studio-image-library"></a>Visual Studio-Bildbibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Visual Studio, in Microsoft Windows, im Office-System und in anderer Microsoft-Software angezeigt werden. Mit dieser Sammlung von mehr als 1.000 Bildern können Sie Anwendungen erstellen, die der Microsoft-Software visuell nachempfunden sind.

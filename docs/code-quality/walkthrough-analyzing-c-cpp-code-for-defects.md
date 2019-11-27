@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler'
+title: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "72018340"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
 
 In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit dem Code Analysetool für C/C++ Code auf potenzielle Code Fehler analysiert wird.
 
@@ -35,7 +35,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>So führen Sie die Code Fehleranalyse für nativen Code aus
 
-1. Öffnen Sie die Demo Projekt Mappe in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+1. Öffnen Sie die Demo Lösung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
      Die Demo Lösung füllt nun **Projektmappen-Explorer**auf.
 
@@ -61,13 +61,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
 1. Klicken Sie im Menü **Ansicht** auf **Fehlerliste**.
 
-     Abhängig vom Entwickler Profil, das Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgewählt haben, müssen Sie möglicherweise im Menü **Ansicht** auf **andere Fenster** zeigen und dann auf **Fehlerliste**klicken.
+     Abhängig vom Entwickler Profil, das Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ausgewählt haben, müssen Sie möglicherweise im Menü **Ansicht** auf **andere Fenster** zeigen und dann auf **Fehlerliste**klicken.
 
 2. Doppelklicken Sie im **Fehlerliste**auf die folgende Warnung:
 
-     Warnung C6230: Implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT wird in einem Boolean-Kontext verwendet.
+     Warning C6230: Implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT wird in einem Boolean-Kontext verwendet.
 
-     Der Code-Editor zeigt die Zeile, die die Warnung verursacht hat, in der-Funktion an `bool ProcessDomain()`. Diese Warnung gibt an, dass ein HRESULT in einer if-Anweisung verwendet wird, in der ein boolesches Ergebnis erwartet wird.
+     Im Code-Editor wird die Zeile, die die Warnung verursacht hat, im `bool ProcessDomain()`der Funktion angezeigt. Diese Warnung gibt an, dass ein HRESULT in einer if-Anweisung verwendet wird, in der ein boolesches Ergebnis erwartet wird.
 
 3. Korrigieren Sie diese Warnung, indem Sie das Makro "erfolgreich" verwenden. Der Code sollte dem folgenden Code ähneln:
 
@@ -77,7 +77,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
 4. Doppelklicken Sie im **Fehlerliste**auf die folgende Warnung:
 
-     Warnung C6282: Falscher Operator: Zuweisung zu konstanter im Test Kontext. Was = = beabsichtigt?
+     Warning C6282: Falscher Operator: Zuweisung zu konstanter im Test Kontext. Was = = beabsichtigt?
 
 5. Korrigieren Sie diese Warnung, indem Sie auf Gleichheit testen. Der Code sollte in etwa wie der folgende Code aussehen:
 
@@ -97,7 +97,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
      Im **Fehlerliste**wird C6001 jetzt als Fehler angezeigt.
 
-3. Korrigieren Sie die verbleibenden zwei C6001-Fehler im **Fehlerliste** , indem Sie `i` und `j` auf 0 initialisieren.
+3. Korrigieren Sie die verbleibenden zwei C6001-Fehler im **Fehlerliste** , indem Sie `i` initialisieren und auf 0 `j`.
 
 4. Erstellen Sie das Projekt "codemängel" neu.
 
@@ -119,7 +119,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
 6. Doppelklicken Sie im **Fehlerliste**auf die folgende Warnung:
 
-     Warnung C6011: Dereferenzierender NULL-Zeiger "newNode".
+     Warnung C6011: dereferenzierender NULL-Zeiger "newNode".
 
      Diese Warnung weist darauf hin, dass der Aufrufer den Rückgabewert nicht überprüfen konnte. In diesem Fall kann ein Rückruf von " **Zuordnungs-Ode** " einen NULL-Wert zurückgeben (Weitere Informationen finden Sie in der Annotations. h-Header Datei für die Funktionsdeklaration für "zustellerode")
 
@@ -156,7 +156,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
 3. Doppelklicken Sie im **Fehlerliste**auf die folgende Warnung:
 
-     Warnung C6011: Dereferenzierender NULL-Zeiger "Node".
+     Warnung C6011: dereferenzierender NULL-Zeiger "Node".
 
      Diese Warnung gibt an, dass der an die Funktion eingegebene Knoten NULL sein kann, und gibt die Nummer der Zeile an, in der die Warnung ausgelöst wurde.
 
@@ -178,4 +178,5 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Code Fehler @ no__t-0 @ no__t-1[Code Analyse fürC++ C/](../code-quality/code-analysis-for-c-cpp-overview.md)
+Exemplarische Vorgehensweise [: Analysieren von verwaltetem Code auf Code Fehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[CodeC++ Analyse für C/](../code-quality/code-analysis-for-c-cpp-overview.md)

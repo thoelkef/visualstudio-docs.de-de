@@ -52,5 +52,5 @@ HRESULT SetName(
  Diese Methode sollte aufgerufen werden, bevor die `IProcessDebugManager::AddApplication`-Methode aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

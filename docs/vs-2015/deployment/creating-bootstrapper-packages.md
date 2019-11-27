@@ -1,5 +1,5 @@
 ---
-title: Creating Bootstrapper Packages | Microsoft Docs
+title: Erstellen von Bootstrapperpaketen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  In der folgenden Tabelle werden die Eigenschaften angezeigt, die automatisch vom Bootstrapper eingetragen werden.  
   
-|property|Beschreibung|  
+|Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
 |ApplicationName|Der Name der Anwendung.|  
 |ProcessorArchitecture|Der Prozessor und die Bits pro Wort für die Plattform, auf die eine ausführbare Datei zielt. Folgende Werte sind gültig:<br /><br /> –   Intel<br />–   IA64<br />–   AMD64|  
@@ -127,5 +127,5 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Dialogfeld "Erforderliche Komponenten"](../ide/reference/prerequisites-dialog-box.md)   
- [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)   
+ [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)   
  [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](https://go.microsoft.com/fwlink/?LinkId=107537)

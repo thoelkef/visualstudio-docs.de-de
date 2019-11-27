@@ -29,5 +29,5 @@ Sie haben einen Verweis auf ein Array Element erstellt, aber nicht die rechte ec
 - Fügen Sie dem Ausdruck, der auf das Array Element verweist, die rechte eckige Klammer hinzu.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)    
+ [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)   
  [Array-Objekt](../../javascript/reference/array-object-javascript.md)

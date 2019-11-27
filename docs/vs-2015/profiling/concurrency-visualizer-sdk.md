@@ -31,9 +31,9 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 ### <a name="c-and-visual-basic"></a>C# und Visual Basic
 
-Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbieter, indem Sie Methoden in der [Marker](/previous-versions/hh694099(v=vs.140))-Klasse aufrufen. It exposes four methods for generating markers: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)), and [WriteAlert](/previous-versions/hh694180(v=vs.140)). Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
+Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbieter, indem Sie Methoden in der [Marker](/previous-versions/hh694099(v=vs.140))-Klasse aufrufen. Es macht vier Methoden zum Generieren von Markern verfügbar: " [Write-Flag](/previous-versions/hh694185(v=vs.140))", " [enterspan](/previous-versions/hh694205(v=vs.140))", " [Write temess](/previous-versions/hh694161(v=vs.140))" und " [Write](/previous-versions/hh694180(v=vs.140))". Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Add SDK support to a C# or Visual Basic project
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Hinzufügen der SDK- C# Unterstützung zu einem oder Visual Basic Projekt
 
 1. Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.
 
@@ -84,7 +84,7 @@ Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbie
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>So verwenden Sie einen neuen Markeranbieter in einem C++- oder Visual Basic-Projekt
 
-1. Verwenden Sie die `CvInitProvider`-Funktion, um PCV_PROVIDER zu initialisieren. The constructor takes a GUID* and PCV_PROVIDER\*.
+1. Verwenden Sie die `CvInitProvider`-Funktion, um PCV_PROVIDER zu initialisieren. Der Konstruktor nimmt eine GUID * und PCV_PROVIDER\*.
 
 2. Öffnen Sie zum Registrieren des Anbieters das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Wählen Sie die Registerkarte **Marker**, und wählen Sie anschließend die Schaltfläche **Neuen Anbieter hinzufügen** aus. Geben Sie in diesem Dialogfeld die GUID ein, die verwendet wurde, um den Anbieter und eine Beschreibung des Anbieters zu erstellen.
 
@@ -104,7 +104,7 @@ Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbie
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>So verwenden Sie eine neue Markerserie in einem C++-Projekt
 
-1. Erstellen eines `marker_series`-Objekts  Sie können Ereignisse aus dieser neuen Serie generieren.
+1. Erstellen Sie ein `marker_series`-Objekt.  Sie können Ereignisse aus dieser neuen Serie generieren.
 
     ```scr
     marker_series series;
@@ -127,5 +127,5 @@ Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbie
 |-----------|-----------------|
 |[C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|
 |[C-Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
-|[Instrumentierung](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
-|[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten|
+|[Instrumentation](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
+|[Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.|
