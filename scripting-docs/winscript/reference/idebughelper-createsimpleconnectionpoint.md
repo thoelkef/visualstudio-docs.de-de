@@ -41,7 +41,7 @@ HRESULT CreateSimpleConnectionPoint(
  in Das `IDispatch` zu Umbruch Ende-Objekt.  
   
  `ppscp`  
- vorgenommen Die Ereignis Schnittstelle, die `pdisp` umschließt.  
+ vorgenommen Die Ereignis Schnittstelle, die `pdisp`umschließt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -54,5 +54,5 @@ HRESULT CreateSimpleConnectionPoint(
  Gibt eine Ereignis Schnittstelle zurück, die die angegebene `IDispatch` umschließt (siehe [isimpleconnectionpoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)    
+ [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)   
  [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)

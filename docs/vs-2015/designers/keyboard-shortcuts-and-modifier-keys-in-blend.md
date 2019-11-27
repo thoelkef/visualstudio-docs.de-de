@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1068c87a8979b853dd27de1b35e2449d7f96eaf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664329"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300807"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tastenkombinationen und Zusatztasten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Tastenkombinationen, die neben Menü Elementen mit Tastenkombinationen angezeigt werden
 
-  Weitere Informationen zur Barrierefreiheit finden Sie unter [Accessibility at Microsoft (Barrierefreiheit bei Microsoft)](http://go.microsoft.com/fwlink/?LinkId=75069).
+  Weitere Informationen zur Barrierefreiheit finden Sie unter [Accessibility at Microsoft (Barrierefreiheit bei Microsoft)](https://go.microsoft.com/fwlink/?LinkId=75069).
 
 ## <a name="modifier-keys"></a>Zusatztasten
  Einigen Tastenkombinationen sind keine Menüoptionen zugeordnet. Sie können daher nicht über die [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-Benutzeroberfläche ermittelt werden. Unter den folgenden Themen sind die Tastenkombinationen aufgeführt, mit denen Sie das Verhalten von Werkzeugen oder eine Aktion ändern können, z. B. die Größenänderung eines Objekts:

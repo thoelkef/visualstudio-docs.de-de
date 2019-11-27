@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645485"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300165"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 - Durchsuchen, mit der aktuellen Untergruppe.
 
 ## <a name="assemblies-tab"></a>Assemblyregisterkarte
- Die Registerkarte **Assemblys** führt alle .NET Framework-Assemblys auf, die für Verweise verfügbar sind. Die Registerkarte **Assemblys** führt keine Assemblys aus dem globalen Assemblycache (GAC) auf, da Assemblys im GAC Teil der Laufzeitumgebung sind. Wenn Sie eine Anwendung bereitstellen oder kopieren, die einen Verweis auf eine im GAC registrierte Assembly enthält, wird die Komponente unabhängig von der Einstellung "Lokal kopieren" nicht mit der Anwendung bereitgestellt oder kopiert. Weitere Informationen finden Sie unter [Projektverweise](http://go.microsoft.com/fwlink/?LinkId=238512).
+ Die Registerkarte **Assemblys** führt alle .NET Framework-Assemblys auf, die für Verweise verfügbar sind. Die Registerkarte **Assemblys** führt keine Assemblys aus dem globalen Assemblycache (GAC) auf, da Assemblys im GAC Teil der Laufzeitumgebung sind. Wenn Sie eine Anwendung bereitstellen oder kopieren, die einen Verweis auf eine im GAC registrierte Assembly enthält, wird die Komponente unabhängig von der Einstellung "Lokal kopieren" nicht mit der Anwendung bereitgestellt oder kopiert. Weitere Informationen finden Sie unter [Projektverweise](https://go.microsoft.com/fwlink/?LinkId=238512).
 
  Wenn Sie manuell einen Verweis auf einen der EnvDTE-Namespaces (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a oder EnvDTE100) hinzufügen, legen Sie im Eigenschaftenfenster die Eigenschaft "Interoptypen einbetten" des Verweises auf "False" fest. Wenn diese Eigenschaft auf "True" festgelegt wird, können aufgrund bestimmter EnvDTE-Eigenschaften, die nicht eingebettet werden können, Buildprobleme auftreten.
 
@@ -109,7 +109,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 
   - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)
 
-    \- oder -
+    \- oder –
 
 - Legen Sie einen Registrierungsschlüssel fest, der den Speicherort der anzuzeigenden Assemblys angibt:
 
@@ -185,7 +185,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 
  Wenn ein Projekttyp keine **Erweiterungen** unterstützt, wird die Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
 
-## <a name="browse-button"></a>Schaltfläche "Durchsuchen"
+## <a name="browse-button"></a>Durchsuchen (Schaltfläche)
  Mit der Schaltfläche **Durchsuchen** können Sie nach einer Komponente im Dateisystem suchen.
 
  Ein Projekt kann auf eine Komponente verweisen, die eine andere .NET Framework-Version als Ziel verwendet. Beispielsweise können Sie eine Anwendung erstellen, die .NET Framework 4 Client Profile als Ziel verwendet, das auf eine Komponente verweist, die auf .NET Framework 2 ausgerichtet ist. Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md).
@@ -209,10 +209,10 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
     > [!NOTE]
     > Wenn Sie die Eigenschaft hinzufügen, wird der Build ggf. langsamer ausgeführt.
 
-## <a name="recent"></a>Zuletzt
+## <a name="recent"></a>Zuletzt verwendet
  Assemblys, COM, Windows und Durchsuchen unterstützen jeweils eine Registerkarte "Aktuell", auf der die Liste der Komponenten aufgeführt werden, die Projekten kürzlich hinzugefügt wurden.
 
-## <a name="search"></a>Suche
+## <a name="search"></a>Suchen
  Die Suchleiste im Dialogfeld **Verweis-Manager** funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.
 
 ## <a name="see-also"></a>Siehe auch

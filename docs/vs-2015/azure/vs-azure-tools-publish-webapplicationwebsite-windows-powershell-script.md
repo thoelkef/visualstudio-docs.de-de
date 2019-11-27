@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dba4e9143c02a76763372a12153b2e22f612959c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624440"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298127"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell-Skript)
 ## <a name="syntax"></a>Syntax
@@ -37,62 +37,62 @@ Der Pfad zur JSON-Konfigurationsdatei, in der die Details der Bereitstellung bes
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |Keine |
+| Aliase |none |
 | Erforderlich? |true |
 | Position |benannt |
-| Standardwert |Keine |
-| Pipelineeingabe akzeptieren? |False |
-| Platzhalterzeichen akzeptieren? |False |
+| Standardwert |none |
+| Pipelineeingabe akzeptieren? |false |
+| Platzhalterzeichen akzeptieren? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Der Name des Azure-Abonnements, in dem Sie die Website erstellen möchten.
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |Keine |
-| Erforderlich? |False |
+| Aliase |none |
+| Erforderlich? |false |
 | Position |benannt |
-| Standardwert |Keine |
-| Pipelineeingabe akzeptieren? |False |
-| Platzhalterzeichen akzeptieren? |False |
+| Standardwert |none |
+| Pipelineeingabe akzeptieren? |false |
+| Platzhalterzeichen akzeptieren? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Der Pfad zum Webbereitstellungspaket für die Veröffentlichung auf der Website. Sie können dieses Paket in Visual Studio mithilfe des Assistenten "Web veröffentlichen" erstellen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure-Clouddiensten und ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+Der Pfad zum Webbereitstellungspaket für die Veröffentlichung auf der Website. Sie können dieses Paket in Visual Studio mithilfe des Assistenten "Web veröffentlichen" erstellen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure-Clouddiensten und ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |Keine |
-| Erforderlich? |False |
+| Aliase |none |
+| Erforderlich? |false |
 | Position |benannt |
-| Standardwert |Keine |
-| Pipelineeingabe akzeptieren? |False |
-| Platzhalterzeichen akzeptieren? |False |
+| Standardwert |none |
+| Pipelineeingabe akzeptieren? |false |
+| Platzhalterzeichen akzeptieren? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Der Benutzername und das Kennwort für die SQL-Datenbank in Azure.
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |Keine |
-| Erforderlich? |False |
+| Aliase |none |
+| Erforderlich? |false |
 | Position |benannt |
-| Standardwert |Keine |
-| Pipelineeingabe akzeptieren? |False |
-| Platzhalterzeichen akzeptieren? |False |
+| Standardwert |none |
+| Pipelineeingabe akzeptieren? |false |
+| Platzhalterzeichen akzeptieren? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Falls "true", werden Nachrichten vom Skript in den Ausgabedatenstrom ausgegeben.
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |Keine |
-| Erforderlich? |False |
+| Aliase |none |
+| Erforderlich? |false |
 | Position |benannt |
-| Standardwert |False |
-| Pipelineeingabe akzeptieren? |False |
-| Platzhalterzeichen akzeptieren? |False |
+| Standardwert |false |
+| Pipelineeingabe akzeptieren? |false |
+| Platzhalterzeichen akzeptieren? |false |
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Eine ausführliche Erläuterung der Verwendung des Skripts zum Erstellen von Entwicklungs- und Testumgebungen finden Sie unter [Verwenden von Windows PowerShell-Skripts zum Veröffentlichen in Entwicklungs- und Testumgebungen](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 In der JSON-Konfigurationsdatei sind die Details angegeben, was bereitgestellt werden muss. Dazu zählen die Informationen, die Sie beim Erstellen des Projekts angegeben haben, z. B. den Namen und Benutzernamen für die Website. Sie umfassen auch die bereitzustellende Datenbank, sofern vorhanden. Der folgende Code zeigt ein Beispiel einer JSON-Konfigurationsdatei:
@@ -121,7 +121,7 @@ In der JSON-Konfigurationsdatei sind die Details angegeben, was bereitgestellt w
 }
 ```
 
-Sie können die JSON-Konfigurationsdatei bearbeiten, um den Umfang der Bereitstellung zu ändern. Der Abschnitt "Website" ist erforderlich, der Abschnitt "Datenbank" optional.
+Sie können die JSON-Konfigurationsdatei bearbeiten, um den Umfang der Bereitstellung zu ändern. Der Abschnitt Website ist erforderlich, aber der Abschnitt Datenbank ist optional.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen finden Sie unter [Publish-WebApplicationWebSite (Windows PowerShell-Skript)](vs-azure-tools-publish-webapplicationvm.md)

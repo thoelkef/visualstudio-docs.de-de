@@ -48,10 +48,10 @@ HRESULT Start(
 |`E_UNEXPECTED`|Ein Vorgang steht bereits aus.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bewirkt, dass `IDebugSyncOperation::Execute` asynchron in dem Thread aufgerufen wird, der von `IDebugSyncOperation::GetTargetThread` abgerufen wird. Diese Methode sollte nur innerhalb des Debugger-Threads aufgerufen werden. Andernfalls wird nicht zurückgegeben, bis der Vorgang beendet ist.  
+ Diese Methode bewirkt, dass `IDebugSyncOperation::Execute` asynchron in dem Thread aufgerufen wird, der von `IDebugSyncOperation::GetTargetThread`abgerufen wird. Diese Methode sollte nur innerhalb des Debugger-Threads aufgerufen werden. Andernfalls wird nicht zurückgegeben, bis der Vorgang beendet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugasyncoperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
- [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)    
- [Idebugsyncoperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+ [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+ [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)   
+ [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

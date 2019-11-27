@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d057296e38cbba38651bb9228b8cd837f21deaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645549"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290314"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalisieren und Lokalisieren von Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
  [Globalisieren von Anwendungen](../ide/globalizing-applications.md) Enthält Links zu Seiten über das Erstellen von Anwendungen, die mehrere Kulturen unterstützen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Globalisieren Ihrer APP (Windows Store-Apps mit JavaScript und HTML)](http://go.microsoft.com/fwlink/?LinkId=258266) Enthält Vorgehensweisen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung Ihrer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App helfen, die mit JavaScript und HTML erstellt wurde.
+ [Globalisieren Ihrer APP (Windows Store-Apps mit JavaScript und HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Enthält Vorgehensweisen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung Ihrer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App helfen, die mit JavaScript und HTML erstellt wurde.
 
- [Globalisieren Ihrer APP (Windows Store-Apps C#mitC++ /VB/und XAML)](http://go.microsoft.com/fwlink/?LinkId=258267) enthält Themen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung Ihrer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App helfen, die mit XAML C#und Visual, Visual Basic oder C++Visual erstellt wurde.
+ [Globalisieren Ihrer APP (Windows Store-Apps C#mitC++ /VB/und XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) enthält Themen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung Ihrer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App helfen, die mit XAML C#und Visual, Visual Basic oder C++Visual erstellt wurde.
 
  [Bewährte Methoden für die Entwicklung weltweit einsatzbereiter Anwendungen](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Bietet Hintergrundinformationen zur Programmierung für eine internationale Zielgruppe.
 

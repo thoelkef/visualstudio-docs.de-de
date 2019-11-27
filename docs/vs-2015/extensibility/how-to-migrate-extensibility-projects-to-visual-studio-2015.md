@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2015 | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2015 | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,48 +10,48 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 41bf80c8ae00aa22666750de7b4b23df981c8465
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435926"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295559"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Hier ist die Erweiterung zu aktualisieren.  
+So aktualisieren Sie die Erweiterung.  
   
 > [!IMPORTANT]
-> Wenn Sie beabsichtigen, eine Version der Erweiterungsprojektmappe für eine frühere Version von Visual Studio verwalten, achten Sie darauf, dass Sie eine Kopie zu erstellen, bevor Sie ein Upgrade durchführen. Es kann schwierig sein, die aktualisierte Version den ursprünglichen Zustand zurückzukehren sein.  
+> Wenn Sie beabsichtigen, eine Version der Erweiterungs Lösung für eine frühere Version von Visual Studio beizubehalten, stellen Sie sicher, dass Sie eine Kopie erstellen, bevor Sie Sie aktualisieren. Es ist möglicherweise schwierig, die aktualisierte Version auf den vorherigen Zustand zurückzusetzen.  
   
-#### <a name="to-upgrade-an-extensibility-solution"></a>So aktualisieren eine Lösung für die Erweiterbarkeit  
+#### <a name="to-upgrade-an-extensibility-solution"></a>So aktualisieren Sie eine Erweiterbarkeits Lösung  
   
-1. Mit der Kopie soll, aktualisieren, öffnen Sie ihn in der neuen Version. Sie werden aufgefordert, dass das Upgrade nicht rückgängig gemacht werden.  
+1. Öffnen Sie die Kopie, die Sie aktualisieren möchten, in der neuen Version. Sie werden darüber informiert, dass das Upgrade nicht rückgängig gemacht werden kann.  
   
-2. Nachdem das Upgrade abgeschlossen ist, ändern Sie den Pfad des externen Programms auf die neue Version von devenv.exe ein. Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer**, wählen Sie dann **Eigenschaften**. In der **Debuggen** Registerkarte, finden Sie im Textfeld durch **externes Programm starten** , und ändern Sie den Pfad der devenv.exe auf den Pfad für Visual Studio 2015, die etwa wie folgt aussehen sollte:  
+2. Nachdem das Upgrade abgeschlossen ist, ändern Sie den Pfad des externen Programms in die neue Version von "devenv. exe". Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie dann **Eigenschaften**aus. Suchen Sie auf der Registerkarte **Debuggen** nach dem Textfeld, indem Sie **externes Programm starten** , und ändern Sie den Pfad von "devenv. exe" in den Pfad von Visual Studio 2015, der in etwa wie folgt aussehen sollte:  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14,0 \ Common7\IDE\devenv.exe**  
   
-3. Fügen Sie einen Verweis auf Microsoft.VisualStudio.Shell.14.0.dll hinzu. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** und wählen Sie dann **hinzufügen / Reference**. Wählen der **Erweiterungen** Registerkarte, und überprüfen Sie dann **Microsoft.VisualStudio.Shell.14.0**.)  
+3. Fügen Sie einen Verweis auf Microsoft. VisualStudio. Shell. 14,0. dll hinzu. (Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie dann **Hinzufügen/Verweis**aus. Wählen Sie die Registerkarte **Erweiterungen** aus, und überprüfen Sie **Microsoft. VisualStudio. Shell. 14,0**.)  
   
-4. Erstellen Sie die Projektmappe. Die erstellten Dateien werden in bereitgestellt:  
+4. Erstellen Sie die Projektmappe. Die erstellten Dateien werden für Folgendes bereitgestellt:  
   
-     **%LocalAppData%\Microsoft\VisualStudio.14.0Exp\Extensions\\< author Name\>\\< Projektname\>\\< Projektversion\>\\**.  
+     **%LocalAppData%\Microsoft\VisualStudio.14.0Exp\Extensions\\< Autor Name\>\\< Projektname** \>\\< Projekt Version\>\\.  
   
-#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Aktualisieren Sie ein Erweiterungsprojekt zum Verweisen auf Assemblys von NuGet-VS-SDK  
+#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>So aktualisieren Sie ein Erweiterbarkeits Projekt auf nuget vs SDK-Verweisassemblys  
   
-1. Bestimmen Sie die VS-SDK-Verweisassemblys, die das Projekt benötigt.  In **Projektmappen-Explorer**, erweitern Sie das Projekt des **Verweise** Knoten und überprüfen Sie die Projekt-verweisen.  VS-SDK verweisen auf Assemblys haben das Präfix **Microsoft.VisualStudio** im Namen (z. B.: Microsoft.VisualStudio.Shell.14.0).  
+1. Ermitteln der vs SDK-Verweisassemblys, die Ihr Projekt benötigt  Erweitern Sie in **Projektmappen-Explorer**den Knoten **Verweise** des Projekts, und überprüfen Sie die Liste der Projekt Verweise.  VS SDK References-Assemblys haben das Präfix " **Microsoft. VisualStudio** " im Namen (z. b. Microsoft. VisualStudio. Shell. 14,0).  
   
-2. Entfernen Sie die VS-SDK-Verweisassemblys aus dem Projekt, indem Sie sie auswählen, klicken Sie mit der rechten Maustaste auf und **entfernen**.  
+2. Entfernen Sie die vs SDK-Verweisassemblys aus dem Projekt, indem Sie Sie **auswählen und mit**der rechten Maustaste klicken  
   
-3. Fügen Sie die NuGet-Versionen der VS-SDK-Referenz-Assemblys hinzu.  In der die **Projektmappen-Explorer Verweise** Knoten, die **NuGet-Pakete verwalten...** Dialogfeld.  Wenn Sie weitere Informationen zu diesem Dialogfeld möchten, finden Sie unter [Verwalten von NuGet-Paketen mithilfe des Dialogfelds](http://docs.nuget.org/Consume/Package-Manager-Dialog). Die VS-SDK-Verweisassemblys werden veröffentlicht, auf [nuget.org](http://www.nuget.org) von [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. Fügen Sie die nuget-Versionen der vs SDK-Verweisassemblys hinzu.  Öffnen Sie im Knoten **Projektmappen-Explorer Verweise** die **Pakete nuget-Pakete verwalten...** hinzu.  Weitere Informationen zu diesem Dialogfeld finden Sie unter Verwalten von [nuget-Paketen mithilfe des Dialog](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)Felds. Die vs SDK-Verweisassemblys werden von [visualstudioextensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)auf [nuget.org](https://www.nuget.org/) veröffentlicht.  
   
-4. Mithilfe von **nuget.org** als Ihre **Paketquelle**, suchen Sie nach dem NuGet-Paketnamen an die gewünschte verweist die Verweisassembly entspricht (z. B.: Microsoft.VisualStudio.Shell.14.0), und installieren Sie es in Ihrem Projekt.  NuGet kann mehrere Verweisassemblys hinzufügen, um die anfängliche Abhängigkeiten der Assembly zu erfüllen.  
+4. Wenn Sie **nuget.org** als **Paketquelle**verwenden, suchen Sie nach dem nuget-Paketnamen, der der gewünschten Verweisassembly (z. b. Microsoft. VisualStudio. Shell. 14,0) entspricht, und installieren Sie Sie in Ihrem Projekt.  Nuget kann mehrere Verweisassemblys hinzufügen, um die Abhängigkeiten der ersten Assembly zu erfüllen.  
   
-     Falls gewünscht, können Sie die VS-SDK-Verweisassemblys auf einmal hinzufügen, indem Sie die Installation von Visual Studio SDK [metapaket](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
+     Wenn Sie möchten, können Sie alle vs SDK-Verweisassemblys gleichzeitig hinzufügen, indem Sie das vs SDK- [Meta-Paket](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)installieren.  
   
-5. Sie können auch wechseln, die NuGet-Version von Visual Studio SDK-Buildtools zu verwenden. Dieses NuGet-Paket ist [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) und nach dem Hinzufügen zu Ihrem Projekt wird die erforderlichen Tools und Dateien mit der Sie Ihr Erweiterungsprojekt auf einem Computer ohne das VS-SDK installiert erstellen können.  
+5. Sie können auch mit der nuget-Version der vs SDK-Buildtools wechseln. Dieses nuget-Paket ist " [Microsoft. VSSDK. Buildtools](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) " und wird nach dem Hinzufügen zu Ihrem Projekt die erforderlichen Tools und Zieldateien enthalten, damit Sie das Erweiterbarkeits Projekt auf einem Computer erstellen können, auf dem das vs SDK nicht installiert ist.  
   
 > [!NOTE]
-> Es ist nicht erforderlich, dass Sie der vorhandenen Erweiterbarkeit-Projekte zur Verwendung von NuGet-Referenz-Assemblys und Tools aktualisieren.  Sie können weiterhin zum Erstellen mithilfe von Verweisassemblys und Tools, die mit dem Visual Studio SDK installiert.
+> Es ist nicht erforderlich, dass Sie vorhandene Erweiterbarkeits Projekte aktualisieren, um nuget-Verweisassemblys und-Tools zu verwenden.  Sie können weiterhin mithilfe von Verweisassemblys und Tools erstellt werden, die mit dem vs SDK installiert werden.

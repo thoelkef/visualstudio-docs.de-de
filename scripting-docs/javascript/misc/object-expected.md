@@ -47,5 +47,5 @@ Sie haben versucht, eine Methode oder Eigenschaft für ein Objekt aufzurufen, de
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt Objekt](../../javascript/reference/object-object-javascript.md)    
+ [Objekt Objekt](../../javascript/reference/object-object-javascript.md)   
  [Objekte und Arrays](../../javascript/objects-and-arrays-javascript.md)

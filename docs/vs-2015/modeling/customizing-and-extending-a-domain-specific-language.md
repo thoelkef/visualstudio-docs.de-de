@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b1e5bac7f39bcabb9cdc9b5c3acabe169827b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655084"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299340"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Das Visual Studio-Modellierungs-und-Visualisierungs-SDK (vmsdk) bietet mehrere E
 |Symbol bei Formänderungen, um den Status anzugeben.|Festlegen der Sichtbarkeit der decoratorzuordnung im Fenster "DSL-Details". Suchen Sie mehrere Bild-Decorator-Zeichen an der gleichen Position. Weitere Informationen finden [Sie unter Aktualisieren von Formen und Connectors für das Modell](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Oder überschreiben Sie `ImageField.GetDisplayImage()`. Siehe Beispiel in <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Festlegen eines Hintergrund Bilds für beliebige Formen|Überschreiben Sie initializeingestanceresources (), um ein verankertes ImageField hinzuzufügen. Weitere Informationen finden Sie unter [Anpassen der Präsentation im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
 |Formen in beliebiger tiefe schachteln|Richten Sie einen rekursiven Einbettungs Baum ein. Definiert boundsrules, um die Formen zu enthalten. Weitere Informationen finden Sie unter [Anpassen der Präsentation im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
-|Anfügen von Connectors an festem Punkt an der Grenze eines Elements.|Definieren Sie eingebettete Terminal Elemente, die durch kleine Ports im Diagramm dargestellt werden. Verwenden Sie boundsrules, um die Ports zu korrigieren. Weitere Informationen finden Sie im Beispiel für das Verbindungs Diagramm unter [Visualisierung und modellieren von SDK](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|Anfügen von Connectors an festem Punkt an der Grenze eines Elements.|Definieren Sie eingebettete Terminal Elemente, die durch kleine Ports im Diagramm dargestellt werden. Verwenden Sie boundsrules, um die Ports zu korrigieren. Weitere Informationen finden Sie im Beispiel für das Verbindungs Diagramm unter [Visualisierung und modellieren von SDK](https://go.microsoft.com/fwlink/?LinkID=186128)|
 |Textfeld zeigt einen Wert an, der von anderen Werten abgeleitet ist.|Ordnen Sie den Text Decorator einer berechneten oder benutzerdefinierten Speicher Domänen Eigenschaft zu. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).|
 |Weitergeben von Änderungen zwischen Modellelementen oder zwischen Formen|Weitere Informationen finden Sie [unter Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).|
 |Weitergeben von Änderungen an Ressourcen, z. b. andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungen außerhalb des Stores.|Weitere Informationen finden Sie [unter Ereignishandler weitergeben von Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
@@ -56,7 +56,7 @@ Das Visual Studio-Modellierungs-und-Visualisierungs-SDK (vmsdk) bietet mehrere E
 |Kopieren, Ausschneiden und Einfügen aktivieren|Legen Sie die Eigenschaft **Kopiervorgang aktivieren** des Knotens **Editor** im DSL-Explorer fest.|
 |Kopieren Sie Verweis Links und ihre Ziele, wenn ein Element kopiert wird. Kopieren Sie beispielsweise Kommentare, die an ein Element angefügt sind.|Legen Sie die Eigenschaft für die Weiterleitungs **Kopie** der Quell Rolle fest (dargestellt durch die Linie auf einer Seite der Domänen Beziehung im DSL-Definitions Diagramm).<br /><br /> Schreiben Sie Code, um processoncopy zu überschreiben, um komplexere Effekte zu erzielen.<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
 |Löschen, wiederherstellen oder Verknüpfen verwandter Elemente, wenn ein Element gelöscht wird.|Legen Sie den Wert " **Delete** " für eine Beziehungs Rolle fest. Wenn Sie komplexere Effekte haben, überschreiben Sie `ShouldVisitRelationship` und `ShouldVisitRolePlayer` Methoden in der `MyDslDeleteClosure`-Klasse, die in **DomainModel.cs** definiert ist.<br /><br /> Siehe [Anpassen des Lösch Verhaltens](../modeling/customizing-deletion-behavior.md)|
-|Behalten Sie das Layout und die Darstellung von Formen beim Kopieren und ziehen-ablegen bei.|Fügen Sie die Formen und Connectors der kopierten `ElementGroupPrototype` hinzu. Die bequemste Methode zum Überschreiben ist `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
+|Behalten Sie das Layout und die Darstellung von Formen beim Kopieren und ziehen-ablegen bei.|Fügen Sie die Formen und Connectors der kopierten `ElementGroupPrototype`hinzu. Die bequemste Methode zum Überschreiben ist `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
 |Fügen Sie Formen an einer ausgewählten Stelle ein, beispielsweise an der aktuelle Cursorposition.|Überschreiben Sie `ClipboardCommandSet.ProcessOnCopy()`, um die standortspezifische Version von zu verwenden `ElementOperations.Merge().` siehe [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
 |Zusätzliche Verknüpfungen beim Einfügen erstellen|Überschreiben von clipboardcommandset. processonpastecommand ()|
 |Aktivieren von Drag & Drop aus diesem Diagramm, anderen DSLs-oder UML-Diagrammen und Windows-Elementen|Weitere Informationen finden [Sie unter Gewusst wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) .|

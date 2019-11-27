@@ -31,5 +31,5 @@ Sie haben den **try** -Block für die Ausnahmebehandlung verwendet, aber die zug
 - Versuchen Sie, anstelle eines **catch** -Blocks einen **abschließend** -Block zu verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [try... catch... letzte Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)    
+ [try... catch... letzte Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)

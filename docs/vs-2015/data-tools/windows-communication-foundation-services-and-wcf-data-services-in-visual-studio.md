@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c2dc46a3e78c5823e569aec80a3166c6e30c04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657827"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299568"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +49,10 @@ Visual Studio bietet Tools zum Arbeiten mit Windows Communication Foundation (WC
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] ist ein einheitliches Framework zum Erstellen sicherer, zuverlässiger, transaktiver und interoperable verteilter Anwendungen. Es ersetzt ältere Technologien für die prozessübergreifende Kommunikation, wie z. b. asmx-Webdienste, .NET Remoting, Enterprise Services (DCOM) und MSMQ. WCF vereint die Funktionen all dieser Technologien in einem einheitlichen Programmiermodell. Dies vereinfacht die Entwicklung verteilter Anwendungen.
 
 #### <a name="what-are-wcf-data-services"></a>Was sind WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] ist eine Implementierung des odata-Protokolls (Open Data).  Mit WCF Data Services können Sie tabellarische Daten als Satz von Rest-APIs verfügbar machen, sodass Sie Daten mit Standard-HTTP-Verben wie Get, Post, Put oder DELETE zurückgeben können. Auf der Serverseite werden WCF Data Services durch [ASP.net-Web-API](http://www.asp.net/web-api) zum Erstellen neuer odata-Dienste abgelöst. Die WCF Data Services-Client Bibliothek ist weiterhin eine gute Wahl für die Nutzung von odata-Diensten in einer .NET-Anwendung in Visual Studio (**Project &#124; Dienstverweis hinzufügen**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] ist eine Implementierung des odata-Protokolls (Open Data).  Mit WCF Data Services können Sie tabellarische Daten als Satz von Rest-APIs verfügbar machen, sodass Sie Daten mit Standard-HTTP-Verben wie Get, Post, Put oder DELETE zurückgeben können. Auf der Serverseite werden WCF Data Services durch [ASP.net-Web-API](https://dotnet.microsoft.com/apps/aspnet/apis) zum Erstellen neuer odata-Dienste abgelöst. Die WCF Data Services-Client Bibliothek ist weiterhin eine gute Wahl für die Nutzung von odata-Diensten in einer .NET-Anwendung in Visual Studio (**Project &#124; Dienstverweis hinzufügen**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952).
 
 ### <a name="wcf-programming-model"></a>WCF-Programmiermodell
- Das WCF-Programmiermodell basiert auf der Kommunikation zwischen zwei Entitäten: einem WCF-Dienst und einem WCF-Client. Das-Programmiermodell wird im <xref:System.ServiceModel>-Namespace in der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] gekapselt.
+ Das WCF-Programmiermodell basiert auf der Kommunikation zwischen zwei Entitäten: einem WCF-Dienst und einem WCF-Client. Das-Programmiermodell wird im <xref:System.ServiceModel>-Namespace in der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]gekapselt.
 
 #### <a name="wcf-service"></a>WCF-Dienst
  Ein WCF-Dienst basiert auf einer Schnittstelle, die einen Vertrag zwischen dem Dienst und dem Client definiert. Es ist mit einem <xref:System.ServiceModel.ServiceContractAttribute>-Attribut gekennzeichnet, wie im folgenden Code gezeigt:
@@ -102,7 +102,7 @@ Visual Studio bietet Tools zum Arbeiten mit Windows Communication Foundation (WC
  Weitere Informationen zum WCF-Dienst Host finden Sie unter [WCF-Dienst Host (WcfSvcHost. exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>WCF-Testclient
- Mit dem WCF-Test Client Tool können Sie Test Parameter eingeben, die Eingabe an einen WCF-Dienst übermitteln und die vom Dienst zurück gesendete Antwort anzeigen. Sie bietet eine praktische Dienst Überprüfung, wenn Sie Sie mit dem WCF-Dienst Host kombinieren. Das Tool befindet sich im Ordner "\Common7\IDE", der für Visual Studio 2015 in Laufwerk C: hier installiert ist: **c:\Programme (x86) \Microsoft Visual Studio 14,0 \ Common7\IDE \\** .
+ Mit dem WCF-Test Client Tool können Sie Test Parameter eingeben, die Eingabe an einen WCF-Dienst übermitteln und die vom Dienst zurück gesendete Antwort anzeigen. Sie bietet eine praktische Dienst Überprüfung, wenn Sie Sie mit dem WCF-Dienst Host kombinieren. Das Tool befindet sich im Ordner "\Common7\IDE", der für Visual Studio 2015 in Laufwerk C: hier installiert ist: **c:\Programme (x86) \Microsoft Visual Studio 14,0 \ Common7\IDE\\** .
 
  Wenn Sie zum Debuggen eines WCF-Dienst Projekts F5 drücken, wird der WCF-Test Client geöffnet, und es wird eine Liste der Dienst Endpunkte angezeigt, die in der Konfigurationsdatei definiert sind. Sie können die Parameter testen und den Dienst starten und diesen Vorgang wiederholen, um den Dienst fortlaufend zu testen und zu überprüfen.
 
@@ -152,7 +152,7 @@ Visual Studio bietet Tools zum Arbeiten mit Windows Communication Foundation (WC
 
 2. Suchen Sie in der Datei nach dem `<Client>`-Tag.
 
-3. Suchen Sie unter dem `<Client>`-Tag nach einem Tag, das mit `<Endpoint>` beginnt.
+3. Suchen Sie unter dem `<Client>`-Tag nach einem Tag, das mit `<Endpoint>`beginnt.
 
      Wenn der Dienst Verweis mehrere Endpunkte bereitstellt, sind mindestens zwei `<Endpoint` Tags vorhanden.
 
@@ -238,14 +238,14 @@ Visual Studio bietet Tools zum Arbeiten mit Windows Communication Foundation (WC
 |[Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst in Visual Studio](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Enthält eine schrittweise Anleitung zum Erstellen und Verwenden von [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Verwenden der WCF-Entwicklungstools](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Erläutert das Erstellen und Testen von WCF-Diensten in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Vorgehensweise: Hinzufügen, aktualisieren oder Entfernen eines Dienst Verweises](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Beschreibt das Hinzufügen, aktualisieren oder Entfernen von WCF-Diensten aus einem Projekt.|
-|[Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Erläutert, wie [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] referenziert und verwendet wird.|
+|[Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Erläutert, wie [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]referenziert und verwendet wird.|
 |[Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md)|Zeigt einige allgemeine Fehler an, die bei Dienst verweisen auftreten können, und wie Sie verhindert werden.|
 |[Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)|Beschreibt häufige Debugprobleme und Techniken, die beim Debuggen von WCF-Diensten auftreten können.|
 |[Übersicht über Windows Communication Foundation Authentifizierungsdienst](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Beschreibt, wie WCF verwendet wird, um einen Rollen Dienst für eine Website bereitzustellen.|
 |[Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.|
 |[Dienstverweis konfigurieren (Dialogfeld)](../data-tools/configure-service-reference-dialog-box.md)|Beschreibt die Benutzeroberflächen Elemente des Dialog Felds **Dienst Verweis konfigurieren** .|
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663598"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295939"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72663598"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Kategorie|Microsoft. Design|
+|Kategorie|Microsoft.Design|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -89,20 +89,20 @@ ms.locfileid: "72663598"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- ["M:IEquatable.ist"](http://go.microsoft.com/fwlink/?LinkId=113472)
+- ["M:IEquatable.ist"](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  Eine **Gleichheits** Methode sollte `true` oder `false` zurückgeben, anstatt eine Ausnahme auszulösen. Wenn z. b. gleich zwei nicht übereinstimmende Typen weitergegeben werden, sollten Sie nur `false` zurückgeben, anstatt eine <xref:System.ArgumentException> auszulösen.
+  Eine **Gleichheits** Methode sollte `true` oder `false` zurückgeben, anstatt eine Ausnahme auszulösen. Wenn z. b. auf gleich zwei nicht übereinstimmende Typen folgt, sollte nur `false` zurückgegeben werden, anstatt eine <xref:System.ArgumentException>auszulösen.
 
 ### <a name="gethashcode-methods"></a>GetHashCode-Methoden
  Die folgenden **GetHashCode** -Methoden sollten normalerweise keine Ausnahmen auslösen:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode (T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** sollte immer einen Wert zurückgeben. Andernfalls können Sie Elemente in der Hash Tabelle verlieren.
 
-  Die Versionen von **GetHashCode** , die ein Argument annehmen, können eine <xref:System.ArgumentException> auslösen. **Object. GetHashCode** sollte jedoch nie eine Ausnahme auslösen.
+  Die Versionen von **GetHashCode** , die ein Argument annehmen, können eine <xref:System.ArgumentException>auslösen. **Object. GetHashCode** sollte jedoch nie eine Ausnahme auslösen.
 
 ### <a name="tostring-methods"></a>Methoden mit dem Methoden Satz
  Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName>, um Informationen zu Objekten im Zeichen folgen Format anzuzeigen. Daher sollte die Objekt **Zeichenfolge** den Status eines Objekts nicht ändern und keine Ausnahmen auslösen.
@@ -114,7 +114,7 @@ ms.locfileid: "72663598"
  Das Auslösen einer Ausnahme von einem Finalizer bewirkt, dass die CLR schnell ausfällt, was den Prozess aufreißt. Daher sollte das Auslösen von Ausnahmen in einem Finalizer immer vermieden werden.
 
 ### <a name="dispose-methods"></a>Verwerfen von Methoden
- Eine <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme auslösen. "Verwerfen" wird häufig als Teil der Bereinigungs Logik in einer `finally`-Klausel aufgerufen. Daher zwingt das explizite Auslösen einer Ausnahme von verwerfen den Benutzer, die Ausnahmebehandlung in der `finally`-Klausel hinzuzufügen.
+ Eine <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme auslösen. "Verwerfen" wird häufig als Teil der Bereinigungs Logik in einer `finally`-Klausel aufgerufen. Daher zwingt das explizite Auslösen einer Ausnahme von verwerfen den Benutzer, eine Ausnahmebehandlung in der `finally`-Klausel hinzuzufügen.
 
  Der verwerfen **(false)** -Codepfad sollte nie Ausnahmen auslösen, da dies fast immer von einem Finalizer aufgerufen wird.
 

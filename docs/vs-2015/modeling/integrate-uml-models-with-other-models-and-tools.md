@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f511a96f94ab98a93144938529a05d07bb6ed26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: caecb85392170559a860a7dc334570880d6e76f1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669582"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301475"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrieren von UML-Modellen in andere Modelle und Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ In einem UML-Element können Sie Links zu anderen UML-Elementen, Dateien oder an
 
    Weitere Informationen finden Sie unter [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   Ein Beispiel Projekt, in dem ein Profil mit Menübefehlen und Gesten Handlern bereitgestellt wird, finden Sie unter [Sample: UML Profiles](http://go.microsoft.com/fwlink/?LinkID=213811).
+   Ein Beispiel Projekt, in dem ein Profil mit Menübefehlen und Gesten Handlern bereitgestellt wird, finden Sie unter [Sample: UML Profiles](https://go.microsoft.com/fwlink/?LinkID=213811).
 
 - **Bezieht.** An jedes UML-Element können Sie einen Satz von Zeichenfolgen anfügen. Sie können Code schreiben, in dem die Informationen gespeichert werden, z. B. ein Dateiname oder die GUID eines anderen Elements. Dazu müssen Sie keine weiteren Definitionen bereitstellen. Verweise sind für Benutzer nicht direkt sichtbar.
 
-   Weitere Informationen finden Sie unter [Anfügen von Verweis Zeichenfolgen an UML-Modellelemente](../modeling/attach-reference-strings-to-uml-model-elements.md). Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](http://go.microsoft.com/fwlink/?LinkId=213813).
+   Weitere Informationen finden Sie unter [Anfügen von Verweis Zeichenfolgen an UML-Modellelemente](../modeling/attach-reference-strings-to-uml-model-elements.md). Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://go.microsoft.com/fwlink/?LinkId=213813).
 
   Es gibt zwei Möglichkeiten, Verweise auf Modellelemente zu codieren:
 
 - **GUID und Dateiname** des Zielmodell Elements und des Modells, in dem es enthalten ist, oder ein bestimmtes Diagramm, in dem es angezeigt wird.
 
-   Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](http://go.microsoft.com/fwlink/?LinkId=213813).
+   Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://go.microsoft.com/fwlink/?LinkId=213813).
 
 - **ModelBus-Verweise.** ModelBus ist ein Framework zum Erstellen und Auflösen von Verweisen zwischen Modellen. Enthalten ist die ModelBus-Auswahl, mit der Benutzer ein Element in einem Modell auswählen können. Zudem können Verweise leichter aufgelöst werden, die aufgrund von Änderungen im Zielmodell verloren gehen.
 
@@ -61,7 +61,7 @@ In einem UML-Element können Sie Links zu anderen UML-Elementen, Dateien oder an
 
 1. **Vmsdk-Regeln** können verwendet werden, um Änderungen innerhalb desselben Modells weiterzugeben.
 
-    Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](http://go.microsoft.com/fwlink/?LinkId=213813).
+    Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://go.microsoft.com/fwlink/?LinkId=213813).
 
 2. **Vmsdk-Ereignisse** können verwendet werden, um Änderungen außerhalb des Modells weiterzugeben – beispielsweise, um den Dateinamen eines verknüpften Dokuments zu ändern oder um ein Element in einem anderen Modell zu ändern.
 
@@ -71,8 +71,8 @@ In einem UML-Element können Sie Links zu anderen UML-Elementen, Dateien oder an
 
    Weitere Informationen finden Sie [unter Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) und Gewusst [wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="samples"></a>Proben
- Weitere Informationen finden Sie im Codebeispiel [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](http://go.microsoft.com/fwlink/?LinkId=213813). Anhand des Beispiels können Benutzer eine Datei auf ein beliebiges UML-Element ziehen und die Datei später durch Doppelklicken auf das Element öffnen. Sie können z. B. ein Aktivitätsdiagramm mit einem Anwendungsfallelement verknüpfen. Ein Symbol gibt an, welche Elemente über Links verfügen.
+## <a name="samples"></a>Beispiele
+ Weitere Informationen finden Sie im Codebeispiel [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://go.microsoft.com/fwlink/?LinkId=213813). Anhand des Beispiels können Benutzer eine Datei auf ein beliebiges UML-Element ziehen und die Datei später durch Doppelklicken auf das Element öffnen. Sie können z. B. ein Aktivitätsdiagramm mit einem Anwendungsfallelement verknüpfen. Ein Symbol gibt an, welche Elemente über Links verfügen.
 
  Diese Verfahren werden im folgenden Codebeispiel veranschaulicht:
 
@@ -97,4 +97,4 @@ In einem UML-Element können Sie Links zu anderen UML-Elementen, Dateien oder an
   Ein Beispiel für das Lesen eines UML-Modells durch eine DSL finden Sie unter Gewusst [wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) Gewusst [wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) Gewusst [wie: reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Beispiel: UML-profile](http://go.microsoft.com/fwlink/?LinkID=213811) [Verknüpfen von UML-Elementen mit Diagramme oder andere Dateien](http://go.microsoft.com/fwlink/?LinkId=213813)
+ [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) Gewusst [wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) Gewusst [wie: reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Beispiel: UML-profile](https://go.microsoft.com/fwlink/?LinkID=213811) [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://go.microsoft.com/fwlink/?LinkId=213813)

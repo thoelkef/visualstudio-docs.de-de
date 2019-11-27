@@ -16,21 +16,21 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651413"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294232"
 ---
-# <a name="maintaining-security"></a>Gewährleisten der Sicherheit
+# <a name="maintaining-security"></a>Verwalten der Sicherheit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es wird oft betont, dass der Preis für die Sicherheit die ständige Wachsamkeit ist. Auch wenn Sie beim Entwerfen und Entwickeln der Anwendung größten Wert auf Sicherheit gelegt haben, ist davon auszugehen, dass nach der Bereitstellung Sicherheitsfehler auftreten. Durch das Überwachen der Anwendung und Analysieren von Ereignisprotokollen werden möglicherweise einige zuvor nicht feststellbare Fehler erkennbar.
 
  Außerdem ist nicht nur die eigene Anwendung zu überwachen. Sie müssen auch ständig über die aktuellen Sicherheitsrisiken und Fehler der Plattform, auf der die Anwendung ausgeführt wird, und anderer Produkte, von denen die Anwendung abhängt, informiert sein.
 
- [Sicherheit, Datenschutz und Konten](http://go.microsoft.com/fwlink/?LinkId=72881) Erhalten Sie Hilfe zu Sicherheit, Datenschutz und Benutzerkonten, einschließlich Informationen über Viren, Kenn Wörter, Jugendschutz, Firewalls und Laufwerk Verschlüsselung.
+ [Sicherheit, Datenschutz und Konten](https://go.microsoft.com/fwlink/?LinkId=72881) Erhalten Sie Hilfe zu Sicherheit, Datenschutz und Benutzerkonten, einschließlich Informationen über Viren, Kenn Wörter, Jugendschutz, Firewalls und Laufwerk Verschlüsselung.
 
  [Suche nach Microsoft-Sicherheits Bulletins](/security-updates/) Diese Seite vereinfacht die Suche nach bereits veröffentlichten Bulletins. Die für IT-Experten erstellten Sicherheitsbulletins enthalten detaillierte Informationen über Sicherheitsupdates.
 

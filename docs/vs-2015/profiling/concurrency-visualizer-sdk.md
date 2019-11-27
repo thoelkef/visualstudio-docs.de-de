@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaaaacdcc5cf7e3044505f7cdb7aeb2e7e3e7078
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871968"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300642"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](http://go.microsoft.com/fwlink/?LinkId=235405).
+Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](https://go.microsoft.com/fwlink/?LinkId=235405).
 
 ## <a name="properties"></a>Eigenschaften
  Kennzeichen, Spannen und Meldungen verfügen über jeweils zwei Eigenschaften: Kategorie und Wichtigkeit. Im Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) können Sie diese Eigenschaften verwenden, um den Satz der angezeigten Marker zu filtern. Diese Eigenschaften beeinflussen außerdem die visuelle Darstellung der Marker. Die Größe der Kennzeichen beispielsweise gibt einen Hinweis auf die Wichtigkeit. Die Farbe weist auf die Kategorie hin.
@@ -31,7 +31,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 ### <a name="c-and-visual-basic"></a>C# und Visual Basic
 
-Verwenden C#Sie in, Visual Basic und anderen verwalteten Code den Standardanbieter, indem Sie Methoden in der [Markers](/previous-versions/hh694099(v=vs.140)) -Klasse aufrufen. Es macht vier Methoden zum Erstellen von Markern verfügbar: " [Write Flag](/previous-versions/hh694185(v=vs.140))", " [enterspan](/previous-versions/hh694205(v=vs.140))", " [Write temess](/previous-versions/hh694161(v=vs.140))" und " [Write](/previous-versions/hh694180(v=vs.140))". Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
+Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbieter, indem Sie Methoden in der [Marker](/previous-versions/hh694099(v=vs.140))-Klasse aufrufen. Es macht vier Methoden zum Generieren von Markern verfügbar: " [Write-Flag](/previous-versions/hh694185(v=vs.140))", " [enterspan](/previous-versions/hh694205(v=vs.140))", " [Write temess](/previous-versions/hh694161(v=vs.140))" und " [Write](/previous-versions/hh694180(v=vs.140))". Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
 
 #### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Hinzufügen der SDK- C# Unterstützung zu einem oder Visual Basic Projekt
 
@@ -78,7 +78,7 @@ Verwenden C#Sie in, Visual Basic und anderen verwalteten Code den Standardanbiet
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>So verwenden Sie einen neuen Markeranbieter in einem C#- oder Visual Basic-Projekt
 
-1. Erstellen Sie ein [markerwriter](/previous-versions/hh694138(v=vs.140)) -Objekt. Der Konstruktor nimmt eine GUID an.
+1. Erstellen Sie ein [MarkerWriter](/previous-versions/hh694138(v=vs.140)) -Objekt. Der Konstruktor nimmt eine GUID an.
 
 2. Öffnen Sie zum Registrieren des Anbieters das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) der Nebenläufigkeitsschnellansicht.  Wählen Sie die Registerkarte **Marker**, und wählen Sie anschließend die Schaltfläche **Neuen Anbieter hinzufügen** aus. Geben Sie im Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) die GUID ein, die verwendet wurde, um den Anbieter und eine Beschreibung des Anbieters zu erstellen.
 
@@ -90,7 +90,7 @@ Verwenden C#Sie in, Visual Basic und anderen verwalteten Code den Standardanbiet
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>So verwenden Sie eine neue Markerserie in einem C#- oder Visual Basic-Projekt
 
-1. Um eine neue [markerseries](/previous-versions/hh694127(v=vs.140))zu verwenden, erstellen Sie Sie zunächst mithilfe eines [markerwriter](/previous-versions/hh694138(v=vs.140)) -Objekts, und generieren Sie dann markerereignisse direkt aus der neuen Reihe.
+1. Um eine neue [MarkerSeries](/previous-versions/hh694127(v=vs.140)) zu verwenden, erstellen Sie sie zuerst mithilfe eines [MarkerWriter](/previous-versions/hh694138(v=vs.140))-Objekts. Generieren Sie anschließend Markerereignisse direkt aus der neuen Serie.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);
@@ -104,7 +104,7 @@ Verwenden C#Sie in, Visual Basic und anderen verwalteten Code den Standardanbiet
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>So verwenden Sie eine neue Markerserie in einem C++-Projekt
 
-1. Erstellen eines `marker_series`-Objekts  Sie können Ereignisse aus dieser neuen Serie generieren.
+1. Erstellen Sie ein `marker_series`-Objekt.  Sie können Ereignisse aus dieser neuen Serie generieren.
 
     ```scr
     marker_series series;
@@ -126,6 +126,6 @@ Verwenden C#Sie in, Visual Basic und anderen verwalteten Code den Standardanbiet
 |Titel|Beschreibung|
 |-----------|-----------------|
 |[C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|
-|[C Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
-|[Instrumentierung](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
-|[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten|
+|[C-Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
+|[Instrumentation](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
+|[Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.|

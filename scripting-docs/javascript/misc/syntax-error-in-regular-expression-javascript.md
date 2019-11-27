@@ -29,6 +29,6 @@ Die Struktur ihrer Such Zeichenfolge verstößt gegen mindestens eine der gramma
 - Stellen Sie sicher, dass die Struktur der Such Zeichenfolge für reguläre Ausdrücke der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Syntax für reguläre Ausdrücke entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
- [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile-Methode (regulärer Ausdruck)](../../javascript/reference/compile-method-regular-expression-javascript.md)

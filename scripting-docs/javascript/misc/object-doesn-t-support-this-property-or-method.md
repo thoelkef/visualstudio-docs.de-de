@@ -33,5 +33,5 @@ Sie haben eine Eigenschaft oder eine Methode angegeben, die für dieses Objekt n
 - Weitere Informationen finden Sie in der Dokumentation zum Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt Objekt](../../javascript/reference/object-object-javascript.md)    
+ [Objekt Objekt](../../javascript/reference/object-object-javascript.md)   
  [JavaScript-Objekte](../../javascript/reference/javascript-objects.md)

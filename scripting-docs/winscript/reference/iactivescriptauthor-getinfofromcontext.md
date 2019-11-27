@@ -65,7 +65,7 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Ruft die Methoden Parameterliste auf.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Globale Liste.|  
   
- Der SCRIPT_CMPL_GLOBALLIST-Typ wird als Standard Vervollständigungs Element behandelt, das mithilfe des OR-Operators mit anderen Vervollständigungs Elementen kombiniert werden kann. Die Skript Erstellungs-Engine versucht zunächst, Typinformationen für andere Vervollständigungs Listenelemente aufzufüllen. Wenn dies nicht möglich ist, füllt die Engine SCRIPT_CMPL_GLOBALLIST auf.  
+ Der SCRIPT_CMPL_GLOBALLIST Typ wird als Standard Vervollständigungs Element behandelt, das mithilfe des OR-Operators mit anderen Vervollständigungs Elementen kombiniert werden kann. Die Skript Erstellungs-Engine versucht zunächst, Typinformationen für andere Vervollständigungs Listenelemente aufzufüllen. Wenn dies nicht möglich ist, füllt die Engine SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
  vorgenommen Der Typ der angegebenen Liste.  
@@ -94,7 +94,7 @@ HRESULT GetInfoFromContext(
  Die Typinformationen, die in Form eines `IProvideMultipleClassInfo` Objekts bereitgestellt werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -103,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iprovidemultipleclassinfo-Schnittstelle](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
+ [Iprovidemultipleclassinfo-Schnittstelle](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 749763a9a2bb742bb3670050010f497c5c15fba4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668595"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297736"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 |Methode|Vorteile|
 |------------|--------------|
 |VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung)|Einfache Bereitstellung: Kopieren Sie die **VSIX** -Datei, und führen Sie Sie aus dem dslpackage-Projekt aus.<br /><br /> Weitere Informationen finden [Sie unter Installieren und Deinstallieren einer DSL mithilfe von VSX](#Installing).|
-|MSI (Installerdatei)|: Ermöglicht dem Benutzer das Öffnen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durch Doppelklicken auf eine DSL-Datei.<br />-Verknüpft ein Symbol mit dem DSL-Dateityp auf dem Zielcomputer.<br />-Ordnet ein XSD-Schema (XML-Schema) dem DSL-Dateityp zu. Dadurch werden Warnungen vermieden, wenn die Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geladen wird.<br /><br /> Sie müssen der Projekt Mappe ein Setup-Projekt hinzufügen, um eine MSI-Datei zu erstellen.<br /><br /> Weitere Informationen finden Sie unter Bereitstellen [einer DSL mithilfe einer MSI-Datei](#msi).|
+|MSI (Installerdatei)|: Ermöglicht dem Benutzer das Öffnen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durch Doppelklicken auf eine DSL-Datei.<br />-Verknüpft ein Symbol mit dem DSL-Dateityp auf dem Zielcomputer.<br />-Ordnet ein XSD-Schema (XML-Schema) dem DSL-Dateityp zu. Dadurch werden Warnungen vermieden, wenn die Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]geladen wird.<br /><br /> Sie müssen der Projekt Mappe ein Setup-Projekt hinzufügen, um eine MSI-Datei zu erstellen.<br /><br /> Weitere Informationen finden Sie unter Bereitstellen [einer DSL mithilfe einer MSI-Datei](#msi).|
 
 ## <a name="Installing"></a>Installieren und Deinstallieren einer DSL mithilfe von VSX
- Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] öffnen, aber die Datei kann nicht aus Windows-Explorer geöffnet werden.
+ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]öffnen, aber die Datei kann nicht aus Windows-Explorer geöffnet werden.
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>So installieren Sie eine DSL mithilfe von VSX
 
@@ -38,7 +38,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
     1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **dslpackage** , und klicken Sie dann auf **Ordner in Windows-Explorer öffnen**.
 
-    2. Suchen Sie den Datei- **bin \\ \* \\** _yourproject_ **. Dslpackage. vsix**
+    2. Suchen Sie den Datei- **bin\\\*\\** _yourproject_ **. Dslpackage. vsix**
 
 2. Kopieren Sie die **VSIX** -Datei auf den Zielcomputer, auf dem Sie die DSL installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 
@@ -71,7 +71,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
  Weitere Informationen zu MSI-Dateien und anderen Bereitstellungs Optionen finden Sie unter bereit [Stellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).
 
- Zum Erstellen einer MSI fügen Sie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt Mappe ein Setup-Projekt hinzu. Die einfachste Methode zum Erstellen eines Setup-Projekts ist die Verwendung der Vorlage CreateMsiSetupProject.tt, die Sie von der [vmsdk-Website](http://go.microsoft.com/fwlink/?LinkID=186128)herunterladen können.
+ Zum Erstellen einer MSI fügen Sie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt Mappe ein Setup-Projekt hinzu. Die einfachste Methode zum Erstellen eines Setup-Projekts ist die Verwendung der Vorlage CreateMsiSetupProject.tt, die Sie von der [vmsdk-Website](https://go.microsoft.com/fwlink/?LinkID=186128)herunterladen können.
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>So stellen Sie eine DSL in einer MSI bereit
 
@@ -79,7 +79,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
    1. DslPackage\source.Extension.tt öffnen
 
-   2. Fügen Sie die folgende Zeile vor dem `<SupportedProducts>` ein:
+   2. Fügen Sie die folgende Zeile vor dem `<SupportedProducts>`ein:
 
        ```
        <InstalledByMsi>true</InstalledByMsi>
@@ -99,17 +99,17 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
    - Öffnen Sie im Menü **Erstellen** die **Configuration Manager**, und wählen Sie die Konfiguration aus, die Sie erstellen möchten, z. b. **Release** oder **Debug**.
 
-4. Wechseln Sie zur [Startseite des Visualisierungs-und Modellierungs-](http://go.microsoft.com/fwlink/?LinkID=186128)SDKs, und laden Sie auf der Registerkarte **Downloads** **CreateMsiSetupProject.tt**herunter
+4. Wechseln Sie zur [Startseite des Visualisierungs-und Modellierungs-](https://go.microsoft.com/fwlink/?LinkID=186128)SDKs, und laden Sie auf der Registerkarte **Downloads** **CreateMsiSetupProject.tt**herunter
 
 5. Fügen Sie **CreateMsiSetupProject.tt** Ihrem DSL-Projekt hinzu.
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt eine Datei namens " **deatemsisetupproject. vdproj**".
 
-6. Kopieren Sie in Windows-Explorer DSL \\ *. vdproj in einen neuen Ordner mit dem Namen Setup.
+6. Kopieren Sie in Windows-Explorer DSL\\*. vdproj in einen neuen Ordner mit dem Namen Setup.
 
     (Wenn Sie möchten, können Sie jetzt CreateMsiSetupProject.tt aus Ihrem DSL-Projekt ausschließen.)
 
-7. Fügen Sie in **Projektmappen-Explorer**das **Setup \\ \*. vdproj** als vorhandenes Projekt hinzu.
+7. Fügen Sie in **Projektmappen-Explorer**das **Setup\\\*. vdproj** als vorhandenes Projekt hinzu.
 
 8. Klicken Sie im Menü **Projekt** auf **Projekt Abhängigkeiten**.
 
@@ -129,7 +129,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
     - Wenn Sie auf die Datei doppelklicken, wird [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gestartet, und die DSL-Datei wird in Ihrem DSL-Editor geöffnet.
 
-    Wenn Sie möchten, können Sie das Setup-Projekt manuell erstellen, anstatt die Textvorlage zu verwenden. Eine exemplarische Vorgehensweise, die diese Vorgehensweise umfasst, finden Sie in Kapitel 5 der SDK-Übungseinheit für [Visualisierung und Modellierung](http://go.microsoft.com/fwlink/?LinkId=208878).
+    Wenn Sie möchten, können Sie das Setup-Projekt manuell erstellen, anstatt die Textvorlage zu verwenden. Eine exemplarische Vorgehensweise, die diese Vorgehensweise umfasst, finden Sie in Kapitel 5 der SDK-Übungseinheit für [Visualisierung und Modellierung](https://go.microsoft.com/fwlink/?LinkId=208878).
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>So deinstallieren Sie eine von einer MSI installierte DSL
 

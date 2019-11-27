@@ -54,6 +54,6 @@ HRESULT RemoveApplication(
  Diese Methode wird vom Process Debug Manager aufgerufen, wenn `IProcessDebugManager::RemoveApplication` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Imachinedebugmanagercookie:: addapplikation](../../winscript/reference/imachinedebugmanagercookie-addapplication.md) -   
- [Imachinedebugmanagercookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)    
+ [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
+ [Imachinedebugmanagercookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

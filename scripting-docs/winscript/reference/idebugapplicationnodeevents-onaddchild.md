@@ -52,6 +52,6 @@ HRESULT onAddChild(
  Implementierer der `IDebugApplicationNode`-Schnittstelle gibt dieses Ereignis aus  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplicationnodeevents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)    
- [Idebugapplicationnodeevents:: onremovechild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)    
+ [Idebugapplicationnodeevents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+ [IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)   
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

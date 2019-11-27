@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf25f5e0239eafd5594c38f7f3701114558b55cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299551"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe von einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
- Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualizaton und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128) .
+ Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualizaton und Modellierungs-SDK](https://go.microsoft.com/fwlink/?LinkID=186128) .
 
 ## <a name="templates"></a>Auswählen einer Vorlagen Lösung
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe von der Projektvorlage "Domänenspezifische Sprache".
 
@@ -92,7 +92,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 
    Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Übersicht über die DSL-Tools-Benutzeroberfläche](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
-### <a name="test-the-solution"></a>Testen der Projektmappe
+### <a name="test-the-solution"></a>Testen der Lösung
  Die Vorlagenprojektmappe enthält eine funktionsfähige DSL, die Sie ändern oder direkt verwenden können.
 
  Drücken Sie F5 oder STRG+F5, um die Projektmappe zu testen. Eine neue Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird im Testmodus gestartet.
@@ -192,7 +192,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 
  Klicken Sie in der-Klasse auf **Domänen Eigenschaften** , drücken Sie die EINGABETASTE, und geben Sie dann den Namen einer Eigenschaft ein. Der Standardtyp einer Domäneneigenschaft lautet String. Wenn Sie den Typ ändern möchten, wählen Sie die Domänen Eigenschaft aus, und legen Sie den **Typ** im **Eigenschaften** Fenster fest. Wenn der gewünschte Typ nicht in der Dropdown Liste enthalten ist, finden Sie weitere Informationen unter [Hinzufügen von Eigenschafts Typen](#addTypes).
 
- **Legen Sie eine Eigenschaft für den Element Namen fest.** Wählen Sie eine Domänen Eigenschaft aus, die zum Identifizieren von Elementen im sprach-Explorer verwendet werden kann. Beispielsweise könnten Sie in der "Song"-Domänenklasse die "Titel"-Domäneneigenschaft auswählen. Legen Sie im Fenster **Eigenschaften** den Wert **Element Name** auf `true` fest.
+ **Legen Sie eine Eigenschaft für den Element Namen fest.** Wählen Sie eine Domänen Eigenschaft aus, die zum Identifizieren von Elementen im sprach-Explorer verwendet werden kann. Beispielsweise könnten Sie in der "Song"-Domänenklasse die "Titel"-Domäneneigenschaft auswählen. Legen Sie im Fenster **Eigenschaften** den Wert **Element Name** auf `true`fest.
 
 ### <a name="create-derived-domain-classes"></a>Erstellen abgeleiteter Domänenklassen
  Soll eine Domänenklasse Varianten aufweisen, die ihre Eigenschaften und Beziehungen erben, erstellen Sie von der Domänenklasse abgeleitete Klassen. "Album" könnte z. B. die abgeleiteten Klassen WMA und MP3 haben.
@@ -609,7 +609,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
  Siehe auch Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a>Problem
- In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Forum Visualisierungs Tools extensibililty](http://go.microsoft.com/fwlink/?LinkId=186074).
+ In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Forum Visualisierungs Tools extensibililty](https://go.microsoft.com/fwlink/?LinkId=186074).
 
 |Problem|Vorschlag|
 |-------------|----------------|
@@ -620,7 +620,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 |Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt.|Wählen Sie in der DSL-Definition eine Domänen Eigenschaft der-Klasse aus, und legen Sie in der Eigenschaftenfenster den Wert **Element Name** auf true fest.|
 |Meine DSL wird immer im XML-Editor geöffnet.|Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Klicken Sie mit der rechten Maustaste auf das Projekt Element, klicken Sie auf **Öffnen mit** , und wählen Sie _YourLanguage_**Designer (Standard)** .|
 |Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe.|Weitere Informationen finden Sie unter " **dslpackage\generatedcode\package.tt** ". Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1. Klicken Sie im Windows-Startmenü unter **Alle Programme**auf [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)] und dann auf **Extras, und klicken Sie dann auf** **Microsoft Visual Studio experimentelle Instanz zurücksetzen**.<br />2. Klicken Sie im Menü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Erstellen** auf Projekt Mappe **neu**erstellen.|
+|Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1. Klicken Sie im Windows-Startmenü unter **Alle Programme**auf [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]und dann auf **Extras, und klicken Sie dann auf** **Microsoft Visual Studio experimentelle Instanz zurücksetzen**.<br />2. Klicken Sie im Menü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Erstellen** auf Projekt Mappe **neu**erstellen.|
 
 ## <a name="see-also"></a>Siehe auch
  [Einstieg in domänenspezifische Sprachen](../modeling/getting-started-with-domain-specific-languages.md) [Erstellen einer Windows Forms basierten domänenspezifischen Sprache](../modeling/creating-a-windows-forms-based-domain-specific-language.md) [Erstellen einer WPF-basierten domänenspezifischen Sprache](../modeling/creating-a-wpf-based-domain-specific-language.md)

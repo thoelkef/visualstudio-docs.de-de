@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47083fe3f496cb855a7fb7101a886290e53cfbce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619134"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300599"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
  Sie müssen im System .NET Framework 3.5 installiert haben, um auf frühere Frameworkversionen als 4 auf zugreifen zu können.
 
 ## <a name="downloading-sample-solutions"></a>Herunterladen von Beispielprojektmappen
- Sie können Visual Studio verwenden, um Beispiele für vollständige, gepackte Anwendungen aus der [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185)herunterzuladen und zu installieren.
+ Sie können Visual Studio verwenden, um Beispiele für vollständige, gepackte Anwendungen aus der [MSDN Code Gallery](https://go.microsoft.com/fwlink/?LinkId=254185)herunterzuladen und zu installieren.
 
  Sie können jedes Beispiel einzeln oder aber ein Beispielpaket herunterladen, das Beispiele enthält, die eine Technologie oder ein Thema gemeinsam haben. Sie erhalten eine Benachrichtigung, wenn Quellcodeänderungen für ein Beispiel veröffentlicht werden, das Sie herunterladen.
 

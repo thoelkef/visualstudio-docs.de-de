@@ -64,6 +64,6 @@ HRESULT Init(
  Dieses Dokument wird erst dann in der Struktur angezeigt, wenn `IDebugDocumentHelper::Attach` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
- [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ [Idebugdocumenthelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR-Konstanten](../../winscript/reference/text-doc-attr-constants.md)

@@ -52,8 +52,8 @@ HRESULT CanHandleException(
 |`E_FAIL`|Der Aufrufer kann die Ausnahme nicht verarbeiten.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn ein Aufruf von `IDispatchEx::InvokeEx` oder einer ähnlichen Methode zu einer Ausnahme führt, sucht die Skript-Engine nach einem Aufrufer in der Aufruf Kette des Skripts, der die `ICanHandleException` Schnittstelle unterstützt und zeigt an, dass die Ausnahme behandelt werden kann. Wenn kein Aufrufer die Ausnahme behandeln kann, wird die Skript-Engine angehalten.  
+ Wenn ein Aufruf von `IDispatchEx::InvokeEx`oder einer ähnlichen Methode zu einer Ausnahme führt, sucht die Skript-Engine nach einem Aufrufer in der Aufruf Kette des Skripts, der die `ICanHandleException` Schnittstelle unterstützt und zeigt an, dass die Ausnahme behandelt werden kann. Wenn kein Aufrufer die Ausnahme behandeln kann, wird die Skript-Engine angehalten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Icanlenker Exception-Schnittstelle](../../winscript/reference/icanhandleexception-interface.md)    
+ [Icanlenker Exception-Schnittstelle](../../winscript/reference/icanhandleexception-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

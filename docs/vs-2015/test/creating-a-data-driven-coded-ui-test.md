@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660631"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302605"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Erstellen eines datengesteuerten Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
 #### <a name="step-1---create-a-coded-ui-test"></a>Schritt 1: Erstellen Sie einen Test für die codierte UI
 
-1. Erstellen eines Projekts.
+1. Erstellen Sie ein Projekt.
 
      ![Erstellen eines Coded UI-Testprojekts](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
@@ -102,7 +102,7 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
 2. Füllen Sie die .csv-Datei mit den folgenden Daten aus:
 
-    |Num1|Num2|Summe|
+    |Num1|Num2|Sum|
     |----------|----------|---------|
     |3|4|7|
     |5|6|11|
@@ -205,7 +205,7 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
    **Empfehlungen**
 
-   Weitere Informationen finden Sie unter [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 2: Komponententests: Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188) und [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 5: Automatisierte Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)
+   Weitere Informationen finden Sie unter [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 2: Komponententests: Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188) und [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 5: Automatisierte Systemtests)](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ## <a name="q--a"></a>Fragen und Antworten
 

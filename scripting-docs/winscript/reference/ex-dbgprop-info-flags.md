@@ -56,5 +56,5 @@ enum {
  Initialisiert das `pDebugExtProp` Feld, das eine `IDebugExtendedProperty` Schnittstelle enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Extendeddebugpropertyinfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)    
+ [Extendeddebugpropertyinfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
  [IDebugExtendedProperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)

@@ -47,5 +47,5 @@ HRESULT OnFunctionEnter(
  Bei Dom-aufrufen Ruft die Skript-Engine " [IActiveScriptProfilerCallback2:: onfunctionenterbyname](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) " anstelle von "`IActiveScriptProfilerCallback::OnFunctionEnter`" auf. Dies liegt an der großen Anzahl von eindeutigen Methoden und Eigenschaften im Dom.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptprofilercallback:: onfunctionexit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md) -   
+ [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
  [IActiveScriptProfilerCallback-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md)

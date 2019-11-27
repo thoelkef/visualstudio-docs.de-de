@@ -50,5 +50,5 @@ HRESULT GetDebugger(
  Diese Methode gibt den aktuellen Debugger zurück, der mit der Anwendung verbunden ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iremotedebugapplication:: connectdebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md) -   
+ [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

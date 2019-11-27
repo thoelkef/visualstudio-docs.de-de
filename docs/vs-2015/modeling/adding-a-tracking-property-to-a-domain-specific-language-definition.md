@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609247"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292640"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,14 +45,14 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 - Wenn sich im **Eigenschaften** Fenster die nach Verfolgungs Eigenschaft im aktualisierten Benutzer Zustand befindet, wird der Wert in einer fett formatierten Schriftart angezeigt.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Bevor Sie diese exemplarische Vorgehensweise starten können, müssen Sie zunächst die folgenden Komponenten installieren:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-the-dsl-project"></a>Erstellen des DSL-Projekts
  Erstellen Sie das Projekt für Ihre domänenspezifische Sprache.
@@ -67,13 +67,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
     2. Verwenden Sie den Standardnamen für die domänenspezifische Sprache, `TrackingPropertyDSL`.
 
-    3. Legen Sie die Erweiterung für Modelldateien auf `trackingPropertyDsl` fest.
+    3. Legen Sie die Erweiterung für Modelldateien auf `trackingPropertyDsl`fest.
 
     4. Verwenden Sie das Standardvorlagen Symbol für die Modelldateien.
 
-    5. Legen Sie den Namen des Produkts auf `Product Name` fest.
+    5. Legen Sie den Namen des Produkts auf `Product Name`fest.
 
-    6. Legen Sie den Namen des Unternehmens auf `Company Name` fest.
+    6. Legen Sie den Namen des Unternehmens auf `Company Name`fest.
 
     7. Verwenden Sie den Standardwert für den Stamm Namespace für Projekte in der Projekt Mappe, `CompanyName.ProductName.TrackingPropertyDSL`.
 
@@ -98,19 +98,19 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
     1. Benennen Sie die neue Eigenschaft `DefaultNamespace`.
 
-    2. Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft **Standardwert** auf `DefaultNamespace` fest, und legen Sie **Typ** auf **Zeichenfolge**fest.
+    2. Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft **Standardwert** auf `DefaultNamespace`fest, und legen Sie **Typ** auf **Zeichenfolge**fest.
 
-2. Fügen Sie der Domänen Klasse **examplemodel** eine Domänen Eigenschaft mit dem Namen `CustomElements` hinzu.
+2. Fügen Sie der Domänen Klasse **examplemodel** eine Domänen Eigenschaft mit dem Namen `CustomElements`hinzu.
 
      Legen Sie im **Eigenschaften** Fenster für die neue Eigenschaft **Art** auf **berechnet**fest.
 
-3. Fügen Sie der **ExampleElement** -Domänen Klasse eine Domänen Eigenschaft mit dem Namen `Namespace` hinzu.
+3. Fügen Sie der **ExampleElement** -Domänen Klasse eine Domänen Eigenschaft mit dem Namen `Namespace`hinzu.
 
      Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft den Wert durchsuchbar auf **false**fest, und **legen Sie** **Art** auf **CustomStorage**fest.
 
-4. Fügen Sie der **ExampleElement** -Domänen Klasse eine Domänen Eigenschaft mit dem Namen `IsNamespaceTracking` hinzu.
+4. Fügen Sie der **ExampleElement** -Domänen Klasse eine Domänen Eigenschaft mit dem Namen `IsNamespaceTracking`hinzu.
 
-     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft den Wert durchsuchbar **auf false** **fest,** legen Sie den **Standardwert** auf `true` fest, und legen Sie **Typ** auf **Boolean**fest.
+     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft den Wert durchsuchbar **auf false** **fest,** legen Sie den **Standardwert** auf `true`fest, und legen Sie **Typ** auf **Boolean**fest.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>So aktualisieren Sie die Diagramm Elemente und DSL-Details
 
@@ -156,11 +156,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 2. Klicken Sie mit der rechten Maustaste auf den neuen Ordner **customcode** , zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.
 
-3. Wählen Sie die Vorlage **Code Datei** aus, legen Sie den **Namen** auf `NamespaceTrackingProperty.cs` fest, und klicken Sie dann auf **OK**.
+3. Wählen Sie die Vorlage **Code Datei** aus, legen Sie den **Namen** auf `NamespaceTrackingProperty.cs`fest, und klicken Sie dann auf **OK**.
 
      Die Datei NamespaceTrackingProperty.cs wird erstellt und zur Bearbeitung geöffnet.
 
-4. Erstellen Sie im Ordner die folgenden Code Dateien: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs` und `TypeDescriptor.cs`.
+4. Erstellen Sie im Ordner die folgenden Code Dateien: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`und `TypeDescriptor.cs`.
 
 5. Erstellen Sie im **dslpackage** -Projekt auch einen `CustomCode` Ordner, und fügen Sie ihm eine `Package.cs` Codedatei hinzu.
 
@@ -346,9 +346,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 > [!NOTE]
 > Der Code, der von den DSL-Tools für `ExampleModel`-Aufrufe generiert wird `GetCustomElementsValue`; die DSL-Tools generieren jedoch keinen Code, der die-Methode implementiert.
 
- Wenn Sie die `GetCustomElementsValue`-Methode definieren, wird die Logik für die berechnete Eigenschaft customelements von `ExampleModel` bereitstellt. Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die über einen vom Benutzer aktualisierten Wert verfügt, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
+ Wenn Sie die `GetCustomElementsValue`-Methode definieren, wird die Logik für die berechnete Eigenschaft customelements von `ExampleModel`bereitstellt. Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die über einen vom Benutzer aktualisierten Wert verfügt, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
 
- Fügen Sie der `ExampleModel` außerdem eine `OnDefaultNamespaceChanged` Methode hinzu, und überschreiben Sie die `OnValueChanged`-Methode der `DefaultNamespacePropertyHandler` `ExampleModel`-Klasse, um `OnDefaultNamespaceChanged` aufzurufen.
+ Fügen Sie der `ExampleModel`außerdem eine `OnDefaultNamespaceChanged` Methode hinzu, und überschreiben Sie die `OnValueChanged`-Methode der `DefaultNamespacePropertyHandler` `ExampleModel`-Klasse, um `OnDefaultNamespaceChanged`aufzurufen.
 
  Da die Eigenschaft DefaultNamespace verwendet wird, um die Eigenschaft Namespace Verfolgung zu berechnen, müssen `ExampleModel` alle `ExampleElement` Domänen Klassen Benachrichtigen, die der Wert von DefaultNamespace geändert hat.
 
@@ -420,7 +420,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 ## <a name="adding-custom-code-for-the-tracking-property"></a>Hinzufügen von benutzerdefiniertem Code für die nach Verfolgungs Eigenschaft
  Fügen Sie der `ExampleElement` Domänen Klasse eine `CalculateNamespace`-Methode hinzu.
 
- Wenn Sie diese Methode definieren, wird die Logik für die berechnete Eigenschaft customelements von `ExampleModel` bereitstellt. Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die im aktualisierten Benutzer Zustand ist, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
+ Wenn Sie diese Methode definieren, wird die Logik für die berechnete Eigenschaft customelements von `ExampleModel`bereitstellt. Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die im aktualisierten Benutzer Zustand ist, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
 
  Fügen Sie außerdem Speicher für die Methoden, und hinzu, um die Eigenschaft Namespace Custom Storage der `ExampleElement` Domänen Klasse zu erhalten und festzulegen.
 

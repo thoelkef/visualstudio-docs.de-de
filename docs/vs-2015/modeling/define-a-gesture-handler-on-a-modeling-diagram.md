@@ -12,24 +12,24 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf111dbf8297994994f10b9b867e03321268679
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654868"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299307"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Benutzer auf Elemente doppelklicken oder Elemente in ein UML-Diagramm ziehen. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
+In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Benutzer auf Elemente doppelklicken oder Elemente in ein UML-Diagramm ziehen. Sie können diese Erweiterungen in eine Visual Studio-Integrationserweiterung ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) packen, die Sie an andere Visual Studio-Benutzer verteilen können.
 
  Wenn bereits ein integriertes Verhalten für den Diagrammtyp und den Elementtyp vorhanden ist, das gezogen werden soll, können Sie dieses Verhalten möglicherweise nicht hinzufügen oder überschreiben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Voraussetzungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-gesture-handler"></a>Erstellen eines Gestenhandlers
  Um für einen UML-Designer einen Gestenhandler zu definieren, müssen Sie eine Klasse erstellen, die das Verhalten des Gestenhandlers definiert, und diese Klasse in eine Visual Studio-Integrationserweiterung (VSIX) einbetten. Die VSIX fungiert als Container, der den Handler installieren kann. Es gibt zwei alternative Methoden, um einen Gestenhandler zu definieren:
@@ -48,7 +48,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
 3. Testen Sie den Gestenhandler durch Drücken von F5. Weitere Informationen finden Sie unter [Ausführen des Gestenhandlers](#Executing).
 
-4. Installieren Sie den Gesten Handler auf einem anderen Computer, indem Sie den Datei- **bin \\ \* \\ \*. vsix** kopieren, die vom Projekt erstellt wurde. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
+4. Installieren Sie den Gesten Handler auf einem anderen Computer, indem Sie den Datei- **bin\\\*\\\*. vsix** kopieren, die vom Projekt erstellt wurde. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
 
    Es gibt ein alternatives Verfahren:
 
@@ -56,7 +56,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
 1. Erstellen Sie in einer neuen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektmappe oder in einer vorhandenen Projektmappe ein Klassenbibliotheksprojekt.
 
-   1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
+   1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
 
    2. Erweitern Sie unter **Installierte Vorlagen**entweder **Visual C#** oder **Visual Basic**, und wählen Sie anschließend in der mittleren Spalte **Klassenbibliothek**aus.
 
@@ -243,7 +243,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
    - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.
 
-   - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie "Eigenschaften" aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist, in der Regel:
+   - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie Eigenschaften aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist, in der Regel:
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -280,9 +280,9 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
  Die Parameter dieser Methoden lauten wie folgt:
 
-- `ShapeElement target` Die Form oder das Diagramm, auf die bzw. das der Benutzer ein Element gezogen hat.
+- `ShapeElement target`. Die Form oder das Diagramm, auf die bzw. das der Benutzer ein Element gezogen hat.
 
-    `ShapeElement` ist eine Klasse in der Implementierung, die den UML-Modellierungstools zugrunde liegt. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden dieser Klasse nicht direkt verwendet werden. Schließen Sie stattdessen das-Element in einem-`IShape` ein, und verwenden Sie dann die unter [Anzeigen eines UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md)beschriebenen Methoden.
+    `ShapeElement` ist eine Klasse in der Implementierung, die den UML-Modellierungstools zugrunde liegt. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden dieser Klasse nicht direkt verwendet werden. Schließen Sie stattdessen das-Element in einem-`IShape`ein, und verwenden Sie dann die unter [Anzeigen eines UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md)beschriebenen Methoden.
 
   - Abrufen einer `IShape`:
 
@@ -311,7 +311,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
       target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE
       ```
 
-- `DiagramDragEventArgs eventArgs` Dieser Parameter enthält die serialisierte Form des Quellobjekts eines Ziehvorgangs:
+- `DiagramDragEventArgs eventArgs`. Dieser Parameter enthält die serialisierte Form des Quellobjekts eines Ziehvorgangs:
 
     ```
     System.Windows.Forms.IDataObject data = eventArgs.Data;
@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.
 
-    2. Suchen Sie den Datei- **bin \\ \* \\** _yourproject_ **. VSIX.**
+    2. Suchen Sie den Datei- **bin\\\*\\** _yourproject_ **. VSIX.**
 
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 
@@ -379,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. Sie haben die Möglichkeit, die Erweiterung zu entfernen, indem Sie die Datei aus dem folgenden Ordner löschen:
 
-   *% LocalAppData%* **\local\microsoft\visualstudio \\ [Version] \extensions**
+   *% LocalAppData%* **\local\microsoft\visualstudio\\[Version] \extensions**
 
 ## <a name="DragExample"></a> Beispiel
  Im folgenden Beispiel wird gezeigt, wie basierend auf den Teilen und Anschlüssen einer aus einem Komponentendiagramm gezogenen Komponente Lebenslinien in einem Sequenzdiagramm erstellt werden.

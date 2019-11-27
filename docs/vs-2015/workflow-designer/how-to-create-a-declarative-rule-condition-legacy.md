@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a15aad987e46edb58da3560828c70571df2227
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663412"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297491"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Vorgehensweise: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)
 In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] deklariert wird, die auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.
@@ -27,17 +27,17 @@ In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgänge
 
  Deklarative Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten verwendet:
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>So erstellen Sie eine deklarative Regelbedingung mit dem Regelbedingungs-Editor
 
@@ -64,4 +64,4 @@ In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgänge
      Weitere Informationen zur Verwendung des Dialog Felds **Bedingung auswählen** finden [Sie unter Dialogfeld "Bedingung auswählen" (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [mithilfe von ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066) mithilfe der Aktivität [ifelmenbranchactivity](http://go.microsoft.com/fwlink?LinkID=65075) mithilfe [der Replicator-Aktivität](http://go.microsoft.com/fwlink?LinkID=65080) mithilfe des Dialog Felds while- [Aktivitäts](http://go.microsoft.com/fwlink?LinkID=65091) Regel Bedingungs- [Editor (Legacy) ](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Dialog Feld ' Bedingung auswählen ' (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) [unter Verwendung von Bedingungen in Workflows](http://go.microsoft.com/fwlink?LinkID=65009)
+ [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [mithilfe von ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) mithilfe der [ifelmenbranchactivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65075) [mithilfe der Replicator-Aktivität](https://go.microsoft.com/fwlink?LinkID=65080) mithilfe des Dialog Felds "while- [Aktivitäts](https://go.microsoft.com/fwlink?LinkID=65091) Regel Bedingungs-Editor" ( [Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) Dialogfeld " [Bedingung auswählen" (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) unter [Verwendung von Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)

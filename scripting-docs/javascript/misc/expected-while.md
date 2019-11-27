@@ -29,5 +29,5 @@ Sie haben die `while` Bedingung in einer `do...while`-Schleife nicht eingeschlos
 - Fügen Sie die `while` Test-Anweisung nach der schließenden geschweiften Klammer ein.  
   
 ## <a name="see-also"></a>Siehe auch  
- [while-Anweisung](../../javascript/reference/while-statement-javascript.md)    
+ [while-Anweisung](../../javascript/reference/while-statement-javascript.md)   
  [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)

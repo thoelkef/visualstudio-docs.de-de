@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 5c5cea89b337f4da586ba4ca1954e49b96c84638
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154950"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298196"
 ---
 # <a name="getting-started-with-python"></a>Erste Schritte mit Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Die Programmiersprache Python ist:
 
 Wenn Sie mehr über die Sprache erfahren möchten, beginnen Sie mit [python für Einsteiger](https://www.python.org/about/gettingstarted/) auf Python.org.
 
-Informationen zur Installation von python selbst [https://www.python.org/download/](https://www.python.org/download/)finden Sie unter.
+Besuchen Sie [https://www.python.org/download/](https://www.python.org/download/), um python selbst zu installieren.
 
 ## <a name="python-tools-for-visual-studio"></a>Python-Tools für Visual Studio
   
@@ -63,11 +63,11 @@ Die folgenden Ressourcen helfen Ihnen beim Einstieg:
 - Demo zu Installation und Funktionen (27 min.)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentation](https://github.com/Microsoft/PTVS/wiki)  
 
-Beachten Sie, dass Visual Studio derzeit nicht die Möglichkeit bietet, eine eigenständige ausführbare Datei mithilfe von Python zu erstellen. Dies bedeutet im Wesentlichen ein Programm mit einem eingebetteten Python-Interpreter. Es gibt jedoch innerhalb der Python-Community verschiedene Arten, wie dies erreicht werden kann, wie unter [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) beschrieben wird. CPython unterstützt es auch, in eine native Anwendung eingebettet zu werden, wie im Blogbeitrag [Using CPython's Embeddable Zip File (Verwenden der eingebetteten ZIP-Datei von CPython)](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) beschrieben wird.
+Beachten Sie, dass Visual Studio derzeit nicht die Möglichkeit bietet, eine eigenständige ausführbare Datei mithilfe von Python zu erstellen. Dies bedeutet im Wesentlichen ein Programm mit einem eingebetteten Python-Interpreter. Es gibt jedoch innerhalb der Python-Community verschiedene Arten, wie dies erreicht werden kann, wie unter [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) beschrieben wird. CPython unterstützt es auch, in eine native Anwendung eingebettet zu werden, wie im Blogbeitrag [Using CPython's Embeddable Zip File (Verwenden der eingebetteten ZIP-Datei von CPython)](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) beschrieben wird.
   
 ## <a name="building-ui-with-python"></a>Aufbauen von Benutzeroberflächen mit python  
 
-Das wichtigste Angebot zum Entwickeln einer Benutzeroberfläche mit Python ist [das Qt-Projekt](https://www.qt.io/qt-for-application-development/)mit Bindungen für python, [die als pyside (die offizielle Bindung)](http://wiki.qt.io/PySide) (siehe auch [pyside-Downloads](https://download.qt.io/official_releases/pyside/.)) und [pyqt](https://wiki.python.org/moin/PyQt)bezeichnet werden. Derzeit umfasst die Python-Unterstützung in Visual Studio keine bestimmten Tools für die Entwicklung von Benutzeroberflächen.
+Das wichtigste Angebot zum Entwickeln einer Benutzeroberfläche mit Python ist [das Qt-Projekt](https://www.qt.io/qt-for-application-development/)mit Bindungen für python, [die als pyside (die offizielle Bindung)](https://wiki.qt.io/PySide) (siehe auch [pyside-Downloads](https://download.qt.io/official_releases/pyside/.)) und [pyqt](https://wiki.python.org/moin/PyQt)bezeichnet werden. Derzeit umfasst die Python-Unterstützung in Visual Studio keine bestimmten Tools für die Entwicklung von Benutzeroberflächen.
 
 ## <a name="azure-sdk-for-python"></a>Azure-SDK für Python
   
@@ -87,13 +87,13 @@ Das Azure-SDK für Python, das Windows, Max und Linux unterstützt, vereinfacht 
 
 Zusätzlich zu den Python-Bibliotheken für Datenwissenschaftler bietet das Python-Tool für Visual Studio Unterstützung für IPython und IPython Notebooks, die Sie in Azure hosten können.
 
-Das Beschaffen von IPython und wissenschaftlichen Berechnungsbibliotheken (Matplotlib, Scipy, Numpy usw.) von [University of California, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack) wird empfohlen.  
+Das Beschaffen von IPython und wissenschaftlichen Berechnungsbibliotheken (Matplotlib, Scipy, Numpy usw.) von [University of California, Irvine](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack) wird empfohlen.  
   
 ## <a name="see-also"></a>Siehe auch  
 
 [Erste Schritte mit PTVS: Einrichten von Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[: Einstieg in ptvs: Beginnen Sie mit dem Program](../python/getting-started-with-ptvs-start-coding-projects.md)mieren (Projects)
-[erste Schritte mit ptvs: Bearbeiten von](../python/getting-started-with-ptvs-editing-code.md)Code
-fürdieerstenSchrittemitptvs[: ](../python/getting-started-with-ptvs-debugging.md)
-Debuggen[von ersten Schritten mit ptvs: Interaktive python](../python/getting-started-with-ptvs-interactive-python.md)
--erstenSchritte[mit ptvs: Erstellen einer Website in Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Erste Schritte mit PTVS: Programmieren beginnen (Projekte) ](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Erste Schritte mit PTVS: Bearbeiten von Code](../python/getting-started-with-ptvs-editing-code.md)
+[Erste Schritte mit PTVS: Debuggen](../python/getting-started-with-ptvs-debugging.md)
+[Erste Schritte mit PTVS: Interaktives Python](../python/getting-started-with-ptvs-interactive-python.md)
+[Erste Schritte mit PTVS: Erstellen einer Website in Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

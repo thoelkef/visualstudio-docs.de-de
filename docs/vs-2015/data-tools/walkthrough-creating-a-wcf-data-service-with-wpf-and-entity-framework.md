@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f26d81c3ac80b889f90e2a729545f0db0e52fa1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660232"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299622"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst mit WPF und Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 - Ein [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] zur Darstellung der Tabelle "Customers" in der Northwind-Datenbank erstellen.
 
-- Erstellen Sie eine [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
+- Erstellen Sie ein [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
 - Eine Clientanwendung erstellen und dieser einen Verweis auf den [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] hinzufügen.
 
@@ -40,12 +40,12 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 - Optional Filterfunktionen zur Anwendung hinzufügen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - Die Beispieldatenbank Northwind.
 
-     Befindet sich diese Datenbank nicht auf Ihrem Entwicklungscomputer, können Sie sie aus dem [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088)herunterladen. Anweisungen hierzu finden Sie unter [Herunterladen von Beispiel Datenbanken](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Befindet sich diese Datenbank nicht auf Ihrem Entwicklungscomputer, können Sie sie aus dem [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=98088)herunterladen. Anweisungen hierzu finden Sie unter [Herunterladen von Beispiel Datenbanken](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Erstellen des Diensts
  Um einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] zu erstellen, fügen Sie ein Webprojekt hinzu. Dann erstellen Sie ein [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] und erstellen anschließend den Dienst aus dem Modell.
@@ -72,7 +72,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Daten** und anschließend das Element **ADO.NET Entity Data Model** aus.
 
-3. Geben Sie im Textfeld **Name** `NorthwindModel` ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
+3. Geben Sie im Textfeld **Name** `NorthwindModel`ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
     Der Assistent für Entity Data Model wird angezeigt.
 
@@ -82,7 +82,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
    - Wenn eine Datenverbindung mit der Beispieldatenbank Northwind in der Dropdownliste verfügbar ist, wählen Sie sie aus.
 
-        - oder -
+        \- oder -
 
    - Wählen Sie die Schaltfläche **Neue Verbindung**, um eine neue Datenverbindung zu konfigurieren. Weitere Informationen finden Sie unter [Hinzufügen neuer Verbindungen](../data-tools/add-new-connections.md).
 
@@ -94,11 +94,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 7. Wählen Sie auf der Seite **Wählen Sie Ihre Version** das Optionsfeld **Entity Framework 5.0** aus, und klicken Sie dann auf die Schaltfläche **Weiter**.
 
    > [!NOTE]
-   > Um die aktuelle Version vom Entity Framework 6 mit WCF-Diensten zu verwenden, müssen Sie das WCF Data Services Entity Framework Provider NuGet-Paket installieren. Weitere Informationen finden [Sie unter Verwenden von WCF Data Services 5.6.0 mit Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+   > Um die aktuelle Version vom Entity Framework 6 mit WCF-Diensten zu verwenden, müssen Sie das WCF Data Services Entity Framework Provider NuGet-Paket installieren. Weitere Informationen finden [Sie unter Verwenden von WCF Data Services 5.6.0 mit Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**, aktivieren Sie das Kontrollkästchen **Customers**, und wählen Sie dann die Schaltfläche **Fertig stellen**.
 
-    Das Entitätsmodelldiagramm wird angezeigt, und dem Projekt wird die Datei NorthwindModel.edmx hinzugefügt.
+    Das Entitätsmodelldiagramm wird angezeigt, und dem Projekt wird die Datei {1}NorthwindModel.edmx{2} hinzugefügt.
 
    In diesem Schritt erstellen und testen Sie den Datendienst.
 
@@ -108,11 +108,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Web** und anschließend das Element **WCF Data Service 5.6**.
 
-3. Geben Sie im Textfeld **Name** `NorthwindCustomers` ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
+3. Geben Sie im Textfeld **Name** `NorthwindCustomers`ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
     Die Datei "NorthwindCustomers. svc" wird im **Code-Editor**angezeigt.
 
-4. Suchen Sie im **Code-Editor`TODO:` den ersten** -Kommentar, und ersetzen Sie den Code durch Folgendes:
+4. Suchen Sie im **Code-Editor** den ersten `TODO:`-Kommentar, und ersetzen Sie den Code durch Folgendes:
 
     [!code-csharp[WCFDataServiceWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#1)]
     [!code-vb[WCFDataServiceWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#1)]
@@ -146,7 +146,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**  , wählen Sie den Knoten **Windows** aus, und wählen Sie dann **Windows Forms Anwendung**aus.
 
-3. Geben Sie im Textfeld **Name** `NorthwindClient` ein, und wählen Sie dann die Schaltfläche **OK** aus.
+3. Geben Sie im Textfeld **Name** `NorthwindClient` ein, und klicken Sie auf **OK**.
 
 4. Wählen Sie im **Projektmappen-Explorer** den **NorthwindClient**-Projektknoten.
 

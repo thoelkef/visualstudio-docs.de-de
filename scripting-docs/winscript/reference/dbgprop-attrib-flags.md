@@ -110,5 +110,5 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  Diese Markierungen werden auch verwendet, um untergeordnete Elemente eines Objekts zu filtern. Die Werte können mit einem bitweisen OR-Operator kombiniert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)    
+ [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)   
  [DebugPropertyInfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)

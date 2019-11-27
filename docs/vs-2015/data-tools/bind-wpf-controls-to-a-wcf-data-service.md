@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 421bd778b86aa223e1e7b3a96aa3943a86588174
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662512"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299415"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](http://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
 
   Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
@@ -61,7 +61,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 - Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [Übersicht über WPF-und Silverlight-Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie in der [Übersicht über die Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="create-the-service-project"></a>Erstellen des Dienst Projekts
  Beginnen Sie diese exemplarische Vorgehensweise, indem Sie ein Projekt für einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] erstellen.
@@ -109,7 +109,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 8. Klicken Sie auf **Fertig stellen**.
 
-## <a name="create-the-service"></a>Erstellen Sie den Dienst.
+## <a name="create-the-service"></a>Dienst erstellen
  Erstellen Sie eine [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], um die Daten in der Entity Data Model für eine WPF-Anwendung verfügbar zu machen.
 
 #### <a name="to-create-the-service"></a>So erstellen Sie den Dienst
@@ -118,7 +118,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 2. Klicken Sie in der Liste installierte Vorlagen auf **Web**, und wählen Sie dann das Element **WCF Data Service** -Projekt aus.
 
-3. Geben Sie im Feld **Name** `AdventureWorksService.svc` ein, und klicken Sie auf **Hinzufügen**.
+3. Geben Sie im Feld **Name** `AdventureWorksService.svc`ein, und klicken Sie auf **Hinzufügen**.
 
      Visual Studio fügt dem Projekt die `AdventureWorksService.svc` hinzu.
 
@@ -165,7 +165,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
      Visual Studio durchsucht die aktuelle Projekt Mappe nach verfügbaren Diensten und fügt der Liste der verfügbaren Dienste `AdventureWorksService.svc` in das Feld **Dienste** hinzu.
 
-9. Geben Sie im Feld **Namespace** `AdventureWorksService` ein.
+9. Geben Sie im Feld **Namespace** `AdventureWorksService`ein.
 
 10. Geben Sie im Feld **Dienste** den Namen **AdventureWorksService.svc** ein, und klicken Sie auf **OK**.
 
@@ -323,4 +323,4 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 - Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) Binden von WPF-Steuer [Elementen an ein DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md) [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework Übersicht](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [WPF-und Silverlight-Designer Übersicht](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [Daten Bindungs Übersicht](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Übersicht über das](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211) Binden von WPF-Steuerelementen [an ein DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md) [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework Übersicht](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) Übersicht über [WPF und Silverlight-Designer Übersicht](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)

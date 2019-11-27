@@ -48,6 +48,6 @@ HRESULT Abort();
  Diese Methode wird in der Regel innerhalb des Debugger-Threads aufgerufen, um einen nicht reagierenden Vorgang abzubrechen. Diese Methode bewirkt, dass die `InProgressAbort`-Methode für das `IDebugSyncOperation` Objekt aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)    
- [Idebugasyncoperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)    
+ [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)   
+ [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

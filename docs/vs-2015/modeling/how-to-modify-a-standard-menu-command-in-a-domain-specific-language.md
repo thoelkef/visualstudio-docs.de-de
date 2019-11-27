@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a821899eb660fb8448b541f9c1be082351dacc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662581"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300879"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,19 +136,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Schreiben des Methodencodes
  Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:
 
-- `this.CurrentSelection` Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
+- `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
 
-- `this.IsDiagramSelected()`  -  `true`, wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
+- `this.IsDiagramSelected()` - `true`, wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
 
 - `this.IsCurrentDiagramEmpty()`
 
 - `this.IsSingleSelection()`: der Benutzer hat nicht mehrere Formen ausgewählt.
 
-- `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat
+- `this.SingleSelection`-die Form oder das Diagramm, auf die der Benutzer mit der rechten Maustaste geklickt hat
 
-- `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird
+- `shape.ModelElement as MyLanguageElement`-das Modellelement, das durch eine Form dargestellt wird.
 
   Weitere Informationen zum Navigieren von einem Element zu einem Element und zum Erstellen von Objekten und Links finden Sie unter [navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.ComponentModel.Design.MenuCommand> [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md) Gewusst [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) Exemplarische Vorgehensweise [: erhalten von Informationen von einem ausgewählten Link Gewusst wie: Hinzufügen von Informationen von einem ausgewählten Link](../misc/walkthrough-getting-information-from-a-selected-link.md) Gewusst wie: Hinzufügen von [Elementen](../extensibility/internals/how-vspackages-add-user-interface-elements.md) in [Visual Studio Befehls Tabelle (. Vsct) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct XML Schema Reference](../extensibility/vsct-xml-schema-reference.md) [vmsdk – Circuit Diagramms Sample. Umfangreicher DSL-Anpassungs](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8) [Beispielcode: Leitungs Diagramme](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ <xref:System.ComponentModel.Design.MenuCommand> [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md) Gewusst [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) Exemplarische Vorgehensweise [: erhalten von Informationen von einem ausgewählten Link](../misc/walkthrough-getting-information-from-a-selected-link.md) Gewusst [wie: Hinzufügen von Benutzeroberflächen Elementen](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio Command Table (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) ( [vsct-XML-Schema Referenz](../extensibility/vsct-xml-schema-reference.md) )

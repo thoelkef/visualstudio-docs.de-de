@@ -54,5 +54,5 @@ HRESULT onInsertText(
  Diese Methode wird in der Regel von einem Host aufgerufen, der Inhalte progressiv (z. b. einen Webbrowser) lädt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenttextevents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)    
+ [Idebugdocumenttextevents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)

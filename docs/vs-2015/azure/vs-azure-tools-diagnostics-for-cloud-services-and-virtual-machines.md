@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0839c69a95df4419781ece2a163071ae0e3e6930
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964760"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293687"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -38,7 +38,7 @@ Die Verbindungszeichenfolge weist in Azure SDK 2.6 und höher einige grundlegend
 * Bis Azure SDK 2.4 wird die Verbindungszeichenfolge vom Diagnose-Plug-In als Runtime verwendet, um Informationen zum Speicherkonto für die Übertragung der Diagnoseprotokolle abzurufen.
 * Ab Azure SDK 2.6 wird die Diagnose-Verbindungszeichenfolge von Visual Studio während der Veröffentlichung zum Einrichten der Erweiterung für Azure-Diagnose mit den entsprechenden Speicherkontoinformationen verwendet. Sie können die Verbindungszeichenfolge verwenden, um verschiedenen Speicherkonten für verschiedene Dienstkonfigurationen definieren, die Visual Studio während der Veröffentlichung verwendet. Da das Diagnose-Plug-In nach Azure SDK 2.5 nicht mehr verfügbar ist, kann die CSCFG-Datei allein die Diagnoseerweiterung nicht einrichten. Sie müssen die Erweiterung separat einrichten, indem Sie Tools wie Visual Studio oder PowerShell verwenden.
 * Um das Einrichten der Diagnoseerweiterung mithilfe von PowerShell zu vereinfachen, enthält die Paketausgabe von Visual Studio die öffentliche Konfigurations-XML für die Diagnoseerweiterung jeder Rolle. Visual Studio verwendet die Diagnose-Verbindungszeichenfolge zum Ausfüllen der Speicherkontoinformationen in der öffentlichen Konfiguration. Die öffentlichen Konfigurationsdateien werden im Ordner „Erweiterungen“ erstellt. Die öffentlichen Konfigurationsdateien verwenden das Namensmuster PaaSDiagnostics.&lt;Rollenname\>.PubConfig.xml. Dieses Muster kann von allen PowerShell-basierten Bereitstellungen verwendet werden, um die einzelnen Konfigurationen einer Rolle zuzuordnen.
-* Das [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) verwendet die Verbindungszeichenfolge in der CSCFG-Datei, um auf die Diagnosedaten zuzugreifen. Die Daten werden in der Registerkarte **Überwachung** angezeigt. Die Verbindungszeichenfolge ist erforderlich, um den Dienst darauf festzulegen, ausführliche Überwachungsdaten im Portal anzuzeigen.
+* Das [Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) verwendet die Verbindungszeichenfolge in der CSCFG-Datei, um auf die Diagnosedaten zuzugreifen. Die Daten werden auf der Registerkarte **Überwachung** angezeigt. Die Verbindungs Zeichenfolge ist erforderlich, um den Dienst so festzulegen, dass ausführliche Überwachungsdaten im Portal angezeigt werden.
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>Migrieren von Projekten zu Azure SDK 2.6 und höher
 Wenn beim Migrieren von Azure SDK 2.5 zu Azure SDK 2.6 oder höher in der WADCFGX-Datei ein Diagnosespeicherkonto angegeben ist, dann verbleibt das Speicherkonto in dieser Datei. Um die Flexibilität nutzen zu können, die sich aus der Verwendung verschiedener Speicherkonten für unterschiedliche Speicherkonfigurationen ergibt, fügen Sie Ihrem Projekt die Verbindungszeichenfolge manuell hinzu. Wenn Sie ein Projekt aus Azure SDK 2.4 oder früher zu Azure SDK 2.6 migrieren, werden die Diagnose-Verbindungszeichenfolgen beibehalten. Beachten Sie jedoch die Änderungen im Hinblick auf die Handhabung von Verbindungszeichenfolgen in Azure SDK 2.6, die im vorherigen Abschnitt beschrieben werden.
@@ -53,7 +53,7 @@ Das Kontrollkästchen **Verbindungszeichenfolgen für Entwicklungsspeicher zur D
 
 Wenn Sie dieses Kontrollkästchen aktivieren und die Diagnose-Verbindungszeichenfolge beispielsweise `UseDevelopmentStorage=true` angibt, aktualisiert Visual Studio die Diagnose-Verbindungszeichenfolge automatisch mit dem Speicherkonto, das Sie im Veröffentlichungs-Assistenten angegeben haben, wenn Sie das Projekt in Azure veröffentlichen. Wenn jedoch ein echtes Speicherkonto als Diagnose-Verbindungszeichenfolge angegeben wurde, wird stattdessen dieses Konto verwendet.
 
-## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Unterschiede zwischen Diagnosefunktionen in Azure SDK 2.4 und früher und Azure SDK 2.5 und höher
+## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Unterschiede bei der Diagnosefunktion in Azure SDK 2,4 und früher im Vergleich zu Azure SDK 2,5 und höher
 Wenn Sie für Ihr Projekt ein Upgrade von Azure SDK 2.4 und früher auf Azure SDK 2.5 oder höher durchführen, sollten Sie die folgenden Unterschiede der Diagnosefunktionen beachten:
 
 * **Konfigurations-APIs sind veraltet**. In Azure SDK 2.4 und früher ist eine programmgesteuerte Konfiguration der Diagnose verfügbar; diese Funktion ist jedoch in Azure SDK 2.5 und höher veraltet. Wenn die Diagnosekonfiguration derzeit im Code definiert ist, müssen Sie diese Einstellungen im migrierten Projekt von Grund auf neu konfigurieren, damit die Diagnose weiterhin funktioniert. Die Konfigurationsdatei für die Diagnose für Azure SDK 2.4 ist „diagnostics.wadcfg“. Die Konfigurationsdatei für die Diagnose für Azure SDK 2.5 und höher ist „diagnostics.wadcfgx“.
@@ -69,7 +69,7 @@ In Visual Studio können Sie Diagnosedaten für Rollen sammeln, die in Azure aus
 ### <a name="to-turn-on-diagnostics-in-visual-studio-before-deployment"></a>Aktivieren der Diagnose in Visual Studio vor der Bereitstellung
 
 1. Wählen Sie **Eigenschaften** im Kontextmenü für die Rolle aus. Klicken Sie im Dialogfeld **Eigenschaften** der Rolle auf die Registerkarte **Konfiguration**.
-2. Stellen Sie im Abschnitt **Diagnose** sicher, dass das Kontrollkästchen **Diagnose aktivieren** aktiviert ist.
+2. Im Abschnitt **Diagnose** muss das Kontrollkästchen **Diagnose aktivieren** aktiviert sein.
 
     ![Zugreifen auf die Option „Diagnose aktivieren“](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
 3. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten (…), um das Speicherkonto für die Diagnosedaten anzugeben.
@@ -82,7 +82,7 @@ In Visual Studio können Sie Diagnosedaten für Rollen sammeln, die in Azure aus
    * Wenn Sie den **Microsoft Azure-Speicheremulator** auswählen, wird die Verbindungszeichenfolge auf `UseDevelopmentStorage=true` festgelegt.
    * Wenn Sie **Ihr Abonnement** auswählen, können Sie das Azure-Abonnement auswählen, das Sie verwenden möchten, und einen Kontonamen angeben. Klicken Sie auf **Konten verwalten**, um Ihre Azure-Abonnements zu verwalten.
    * Wenn Sie **Manuell eingegebene Anmeldeinformationen** auswählen, geben Sie den Namen und den Schlüssel des Azure-Kontos ein, das Sie verwenden möchten.
-5. Klicken Sie auf **Konfigurieren**, um das Dialogfeld **Diagnosekonfiguration** anzuzeigen. Jede Registerkarte (mit Ausnahme von **Allgemein** und **Protokollverzeichnisse**) stellt eine Diagnosedatenquelle dar, die Sie sammeln können. Die Standardregisterkarte **Allgemein** enthält die folgenden Optionen für die Diagnosedatensammlung: **Nur Fehler**, **Alle Informationen** und **Benutzerdefinierter Plan**. Die Standardoption **Nur Fehler** verwendet am wenigsten Speicherplatz, da keine Warnungen oder Ablaufverfolgungsmeldungen übertragen werden. Die Option **Alle Informationen** überträgt die meisten Informationen, verwendet den meisten Speicher und ist daher die teuerste Option.
+5. Klicken Sie auf **Konfigurieren**, um das Dialogfeld **Diagnosekonfiguration** anzuzeigen. Jede Registerkarte (mit Ausnahme von **Allgemein** und **Protokollverzeichnisse**) stellt eine Diagnosedatenquelle dar, die Sie sammeln können. Die Standard Registerkarte **Allgemein** bietet die folgenden Optionen für die Diagnosedaten Sammlung: **nur Fehler**, **alle Informationen**und **benutzerdefinierter Plan**. Die Standardoption **Nur Fehler** verwendet am wenigsten Speicherplatz, da keine Warnungen oder Ablaufverfolgungsmeldungen übertragen werden. Die Option **Alle Informationen** überträgt die meisten Informationen, verwendet den meisten Speicher und ist daher die teuerste Option.
 
    > [!NOTE]
    > Die unterstützte Mindestgröße für „Datenträgerkontingent in MB“ beträgt 4 GB. Wenn Sie jedoch Speicherabbilder sammeln, sollte das Datenträgerkontingent auf einen höheren Wert, z.B. 10 GB, heraufgestuft werden.
@@ -101,11 +101,11 @@ In Visual Studio können Diagnosedaten für virtuelle Azure-Computer gesammelt w
 ### <a name="to-turn-on-diagnostics-on-azure-virtual-machines"></a>Aktivieren der Diagnose für virtuelle Azure-Computer
 
 1. Wählen Sie im Server-Explorer den Azure-Knoten aus, und stellen Sie dann eine Verbindung mit Ihrem Azure-Abonnement her, wenn noch keine Verbindung besteht.
-2. Erweitern Sie den Knoten **Virtuelle Computer** . Sie können einen neuen virtuellen Computer erstellen oder einen vorhandenen Knoten auswählen.
+2. Erweitern Sie den Knoten **Virtuelle Computer**. Sie können einen neuen virtuellen Computer erstellen oder einen vorhandenen Knoten auswählen.
 3. Klicken Sie im Kontextmenü für den gewünschten virtuellen Computer auf **Konfigurieren**. Das Dialogfeld „Konfiguration des virtuellen Computers“ wird angezeigt.
 
     ![Konfigurieren eines virtuellen Azure-Computers](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
-4. Fügen Sie die Erweiterung "Microsoft Monitoring Agent-Diagnose" hinzu, wenn sie noch nicht installiert wurde. Mit dieser Erweiterung können Sie Diagnosedaten für virtuelle Azure-Computer sammeln. Wählen Sie im Dropdown-Listenfeld **Verfügbare Erweiterung auswählen** unter **Installierte Erweiterungen** **Microsoft Monitoring Agent Diagnostics** (Microsoft Monitoring Agent-Diagnose) aus.
+4. Wenn sie noch nicht installiert ist, fügen Sie die Microsoft Monitoring Agent-Diagnose-Erweiterung hinzu. Mit dieser Erweiterung können Sie Diagnosedaten für virtuelle Azure-Computer sammeln. Wählen Sie im Dropdown-Listenfeld **Verfügbare Erweiterung auswählen** unter **Installierte Erweiterungen** **Microsoft Monitoring Agent Diagnostics** (Microsoft Monitoring Agent-Diagnose) aus.
 
     ![Installieren einer Erweiterung für virtuelle Azure-Computer](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
@@ -120,12 +120,12 @@ In Visual Studio können Diagnosedaten für virtuelle Azure-Computer gesammelt w
 
     ![Aktivieren der Azure-Diagnose und Konfiguration](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    Die Standardregisterkarte **Allgemein** enthält die folgenden Optionen für die Diagnosedatensammlung: **Nur Fehler**, **Alle Informationen** und **Benutzerdefinierter Plan**. Die Standardoption **Nur Fehler**benötigt am wenigsten Speicherplatz, da keine Warnungen oder Ablaufverfolgungsmeldungen übertragen werden. Die Option **Alle Informationen** überträgt die meisten Informationen und ist daher die teuerste Option in Bezug auf Speicher.
-7. Wählen Sie für dieses Beispiel die Option **Benutzerdefinierter Plan** , um die gesammelten Daten anzupassen.
-8. Über das Feld **Datenträgerkontingent in MB** können Sie festlegen, wie viel Speicherplatz Sie in Ihrem Speicherkonto für Diagnosedaten zuordnen möchten. Sie können den Standardwert bei Bedarf ändern.
+    Die Standard Registerkarte **Allgemein**bietet Ihnen die folgenden Optionen für die Diagnosedaten Sammlung: **nur Fehler**, **alle Informationen**und **benutzerdefinierter Plan**. Die Standardoption **Nur Fehler** belegt den geringsten Speicherplatz, weil sie Warnungen oder Ablaufverfolgungsmeldungen nicht überträgt. Die Option **Alle Informationen** überträgt die meisten Informationen und ist daher, bezogen auf den Speicher, die teuerste Option.
+7. Wählen Sie für dieses Beispiel die Option **Benutzerdefinierter Plan** aus, damit Sie die erfassten Daten anpassen können.
+8. Das Feld **Datenträgerkontingent in MB** gibt an, wie viel Speicherplatz Sie in Ihrem Speicherkonto für die Diagnosedaten zuweisen möchten. Sie können den Standardwert bei Bedarf ändern.
 9. Aktivieren Sie auf jeder Registerkarte für Diagnosedaten, die Sie sammeln möchten, das Kontrollkästchen **Übertragung von \<Protokolltyp\> aktivieren**.
 
-    Wählen Sie beispielsweise das Kontrollkästchen **Übertragung von Anwendungsprotokollen aktivieren** auf der Registerkarte **Anwendungsprotokolle** aus, wenn Sie Anwendungsprotokolle erfassen möchten. Geben Sie auch alle andere Informationen an, die für die einzelnen Diagnosedatentypen erforderlich sind. Weitere Informationen zur Konfiguration der einzelnen Registerkarten finden Sie nachfolgend im Abschnitt **Set up diagnostics data sources (Einrichten der Diagnosedatenquellen)** dieses Artikels.
+    Wenn Sie z. b. Anwendungsprotokolle erfassen möchten, aktivieren Sie das Kontrollkästchen **Übertragung von Anwendungs Protokollen aktivieren** auf der Registerkarte **Anwendungsprotokolle** . Geben Sie außerdem alle anderen Informationen an, die für die einzelnen Diagnose Datentypen erforderlich sind. Weitere Informationen zur Konfiguration der einzelnen Registerkarten finden Sie nachfolgend im Abschnitt **Set up diagnostics data sources (Einrichten der Diagnosedatenquellen)** dieses Artikels.
 10. Nachdem Sie die Sammlung aller gewünschten Diagnosedaten aktiviert haben, klicken Sie auf **OK**.
 11. Speichern Sie das aktualisierte Projekt.
 
@@ -135,14 +135,14 @@ In Visual Studio können Diagnosedaten für virtuelle Azure-Computer gesammelt w
 Nachdem Sie die Sammlung von Diagnosedaten aktiviert haben, können Sie genau auswählen, welche Datenquellen Sie sammeln möchten und welche Informationen gesammelt werden. In den folgenden Abschnitten erfolgt eine Beschreibung der Registerkarten im Dialogfeld **Diagnosekonfiguration** sowie der einzelnen Konfigurationsoptionen.
 
 ### <a name="application-logs"></a>Anwendungsprotokolle
-Anwendungsprotokolle enthalten Diagnoseinformationen, die von einer Webanwendung erstellt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Anwendungsprotokollen aktivieren**, wenn Sie Anwendungsprotokolle erfassen möchten. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Anwendungsprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Sie können auch die Menge an Informationen ändern, die im Protokoll erfasst werden, indem Sie den Wert **Protokollebene** festlegen. Sie können z.B. **Ausführlich** auswählen, um weitere Informationen zu erhalten, oder **Kritisch**, um nur kritische Fehler zu erfassen. Wenn Sie einen bestimmten Diagnoseanbieter haben, der Anwendungsprotokolle ausgibt, können Sie diese erfassen, indem Sie die Anbieter-GUID in das Feld **Anbieter-GUID** einfügen.
+Anwendungsprotokolle enthalten Diagnoseinformationen, die von einer Webanwendung erstellt wurden. Wenn Sie die Anwendungsprotokolle aufzeichnen möchten, aktivieren Sie das Kontrollkästchen **Übertragung von Anwendungsprotokollen aktivieren**. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Anwendungsprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Sie können auch die Menge an Informationen ändern, die im Protokoll erfasst werden, indem Sie den Wert **Protokollebene** festlegen. Sie können z.B. **Ausführlich** auswählen, um weitere Informationen zu erhalten, oder **Kritisch**, um nur kritische Fehler zu erfassen. Wenn Sie einen bestimmten Diagnoseanbieter haben, der Anwendungsprotokolle ausgibt, können Sie diese erfassen, indem Sie die Anbieter-GUID in das Feld **Anbieter-GUID** einfügen.
 
   ![Anwendungsprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
 Weitere Informationen zu Anwendungsprotokollen finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 
 ### <a name="windows-event-logs"></a>Windows-Ereignisprotokolle
-Aktivieren Sie das Kontrollkästchen **Übertragung von Windows-Ereignisprotokollen aktivieren**, um Windows-Ereignisprotokolle zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Ereignistypen aus, die Sie nachverfolgen möchten.
+Aktivieren Sie das Kontrollkästchen **Übertragung von Windows-Ereignisprotokollen aktivieren**, um Windows-Ereignisprotokolle zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Ereignistypen aus, die Sie nachverfolgen möchten.
 
 ![Ereignisprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
@@ -158,21 +158,21 @@ Wenn Sie Azure SDK 2.5 verwenden und eine benutzerdefinierte Datenquelle angeben
 ```
 
 ### <a name="performance-counters"></a>Leistungsindikatoren
-Anhand von Leistungsindikatorinformationen können Sie nach Engpässen im System suchen und die System- und Anwendungsleistung optimieren. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Leistungsindikatoren in einer Azure-Anwendung](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aktivieren Sie das Kontrollkästchen **Übertragung der Leistungsindikatoren aktivieren**, um Leistungsindikatoren zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Leistungsindikatoren aus, die Sie nachverfolgen möchten.
+Anhand von Leistungsindikatorinformationen können Sie nach Engpässen im System suchen und die System- und Anwendungsleistung optimieren. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Leistungsindikatoren in einer Azure-Anwendung](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aktivieren Sie das Kontrollkästchen **Übertragung der Leistungsindikatoren aktivieren**, um Leistungsindikatoren zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Leistungsindikatoren aus, die Sie nachverfolgen möchten.
 
 ![Leistungsindikatoren](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-Für das Hinzufügen eines Leistungsindikators, der nicht aufgelistet ist, geben Sie diesen mit der vorgeschlagenen Syntax ein, und klicken Sie dann auf **Hinzufügen**. Das Betriebssystem auf dem virtuellen Computer bestimmt, welche Leistungsindikatoren Sie nachverfolgen können. Weitere Informationen zur Syntax finden Sie unter [Specify a counter path (Angeben eines Indikatorpfads)](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
+Für das Hinzufügen eines Leistungsindikators, der nicht aufgelistet ist, geben Sie diesen mit der vorgeschlagenen Syntax ein, und klicken Sie dann auf **Hinzufügen**. Das Betriebssystem auf dem virtuellen Computer bestimmt, welche Leistungsindikatoren Sie nachverfolgen können. Weitere Informationen zur Syntax finden Sie unter [Angeben eines Counter-Pfads](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
 
 ### <a name="infrastructure-logs"></a>Infrastrukturprotokolle
-Infrastrukturprotokolle enthalten Informationen über die Azure-Diagnoseinfrastruktur, das RemoteAccess-Modul und das RemoteForwarder-Modul. Aktivieren Sie das Kontrollkästchen **Übertragung von Infrastrukturprotokollen aktivieren**, um Informationen über Infrastrukturprotokolle zu sammeln. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Infrastrukturprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
+Infrastrukturprotokolle enthalten Informationen über die Azure-Diagnoseinfrastruktur, das RemoteAccess-Modul und das RemoteForwarder-Modul. Aktivieren Sie das Kontrollkästchen **Übertragung von Infrastrukturprotokollen aktivieren**, um Informationen über Infrastrukturprotokolle zu sammeln. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Infrastrukturprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
 
 ![Diagnoseinfrastrukturprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
 Weitere Informationen finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](https://msdn.microsoft.com/library/azure/gg433048.aspx).
 
 ### <a name="log-directories"></a>Protokollverzeichnisse
-Protokollverzeichnisse enthalten Daten, die aus IIS-Anforderungen (Internetinformationsdienste), fehlerhaften Anforderungen oder von Ihnen ausgewählten Ordnern gesammelt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Protokollverzeichnissen aktivieren**, um Protokollverzeichnisse zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
+Protokollverzeichnisse enthalten Daten, die aus IIS-Anforderungen (Internetinformationsdienste), fehlerhaften Anforderungen oder von Ihnen ausgewählten Ordnern gesammelt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Protokollverzeichnissen aktivieren**, um Protokollverzeichnisse zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
 
 Sie können die Kontrollkästchen der Protokolle aktivieren, die Sie sammeln möchten, z.B. **IIS-Protokolle** und **Protokolle zu fehlerhaften Anforderungen**. Es werden standardmäßig Speichercontainernamen angegeben, Sie können die Namen jedoch ändern.
 
@@ -181,7 +181,7 @@ Sie können Protokolle aus einem beliebigen Ordner erfassen. Geben Sie den Pfad 
 ![Protokollverzeichnisse](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796665.png)
 
 ### <a name="etw-logs"></a>ETW-Protokolle
-Wenn Sie [Ereignisablaufverfolgung für Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) verwenden und ETW-Protokolle erfassen möchten, aktivieren Sie das Kontrollkästchen **Übertragung von ETW-Protokollen aktivieren**. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
+Wenn Sie [Ereignisablaufverfolgung für Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) verwenden und ETW-Protokolle erfassen möchten, aktivieren Sie das Kontrollkästchen **Übertragung von ETW-Protokollen aktivieren**. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
 
 Die Ereignisse werden von den Ereignisquellen und Ereignismanifesten erfasst, die Sie angeben. Geben Sie im Abschnitt **Ereignisquelle** einen Namen ein, und klicken Sie dann auf **Ereignisquelle hinzufügen**, um eine Ereignisquelle festzulegen. Gleichermaßen können Sie ein Ereignismanifest im Abschnitt **Ereignismanifeste** angeben und dann auf **Ereignismanifest hinzufügen** klicken.
 
@@ -190,13 +190,13 @@ Die Ereignisse werden von den Ereignisquellen und Ereignismanifesten erfasst, di
 Das ETW-Framework wird in ASP.NET durch Klassen im Namespace [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) unterstützt. Der Microsoft.WindowsAzure.Diagnostics-Namespace, der von [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))-Standardklassen erbt und diese erweitert, ermöglicht die Verwendung von [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) als Protokollierungsframework in der Azure-Umgebung. Weitere Informationen finden Sie unter [Protokollierung und Ablaufverfolgung in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) und [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Absturzabbilder
-Aktivieren Sie das Kontrollkästchen **Übertragung von Absturzabbildern aktivieren**, um Informationen zum Absturz einer Rolleninstanz zu erfassen. (Da die meisten Ausnahmen von ASP.NET verarbeitet werden, ist dies im Allgemeinen nur für Workerrollen von nutzen.) Ändern Sie den Wert **Verzeichniskontingent (%)**, um den Prozentsatz des Speicherplatzes zu erhöhen oder zu verringern, der für Absturzabbilder reserviert ist. Sie können den Speichercontainer ändern, in dem die Absturzabbilder gespeichert werden, und Sie können angeben, ob Sie ein **vollständiges Abbild** oder ein **Miniabbild** erfassen möchten.
+Aktivieren Sie das Kontrollkästchen **Übertragung von Absturzabbildern aktivieren**, um Informationen zum Absturz einer Rolleninstanz zu erfassen. (Da ASP.net die meisten Ausnahmen behandelt, ist dies im Allgemeinen nur für workerrollen nützlich.) Um den Prozentsatz des Speicherplatzes zu erhöhen oder zu verringern, der für die Absturz Abbilder reserviert ist, ändern Sie den Wert für das **Verzeichnis Kontingent (%)** . Sie können den Speichercontainer ändern, in dem die Absturzabbilder gespeichert werden, und Sie können angeben, ob Sie ein **vollständiges Abbild** oder ein **Miniabbild** erfassen möchten.
 
 Die derzeit nachverfolgten Prozesse werden im folgenden Screenshot aufgelistet. Wählen Sie die Kontrollkästchen für die Prozesse aus, die Sie erfassen möchten. Geben Sie den Namen des Prozesses ein, und klicken Sie dann auf **Prozess hinzufügen**, um einen weiteren Prozess der Liste hinzuzufügen.
 
 ![Absturzabbilder](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Weitere Informationen finden Sie unter [Protokollierung und Ablaufverfolgung in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) und [Microsoft Azure Diagnostics Part 4: Custom Logging Components and Azure Diagnostics 1.3 Changes (Microsoft Azure-Diagnose Teil 4: benutzerdefinierte Protokollierungskomponenten und Änderungen an Azure-Diagnose 1.3)](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
+Weitere Informationen finden Sie unter [Übernehmen der Protokollierung und Ablauf Verfolgung in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) und [Microsoft Azure-Diagnose Teil 4: benutzerdefinierte Protokollierungs Komponenten und Azure-Diagnose 1,3 Änderungen](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Anzeigen von Diagnosedaten
 Nachdem Sie die Diagnosedaten für einen Clouddienst oder einen virtuellen Computer gesammelt haben, können Sie diese anzeigen.
@@ -218,7 +218,7 @@ Nachdem Sie die Diagnosedaten für einen Clouddienst oder einen virtuellen Compu
     Öffnen Sie im Cloud-Explorer oder Server-Explorer das Speicherkonto, das der Bereitstellung zugeordnet ist.
 3. Öffnen Sie die Diagnosetabellen im Tabellenviewer, und überprüfen Sie die erfassten Daten. Für IIS-Protokolle und benutzerdefinierte Protokolle können Sie einen Blobcontainer öffnen. Die folgende Tabelle listet die Tabellen oder Blobcontainer auf, die die Daten für die verschiedenen Protokolldateien enthalten. Zusätzlich zu den Daten für diese Protokolldatei enthalten die Tabelleneinträge **EventTickCount**, **DeploymentId**, **Role** und **RoleInstance**, mit denen Sie identifizieren können, welcher virtuelle Computer und welche Rolle die Daten generiert hat und wann.
 
-   | Diagnosedaten | BESCHREIBUNG | Speicherort |
+   | Diagnosedaten | Beschreibung | Location |
    | --- | --- | --- |
    | Anwendungsprotokolle |Protokolle, die Ihr Code durch den Aufruf von Methoden der **System.Diagnostics.Trace**-Klasse generiert. |WADLogsTable |
    | Ereignisprotokolle |Daten aus den Windows-Ereignisprotokollen auf den virtuellen Computern Windows speichert Informationen in diesen Protokollen, aber Anwendungen und Dienste verwenden diese ebenfalls, um Fehler zu melden oder Informationen zu protokollieren. |WADWindowsEventLogsTable |
@@ -238,7 +238,7 @@ Nachdem Sie die Diagnosedaten für einen Clouddienst oder einen virtuellen Compu
 
     Das Dialogfeld **Diagnosezusammenfassung** wird angezeigt.
 
-    ![Diagnosezusammenfassung von virtuellen Azure-Computern](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
+    ![Diagnosezusammenfassung für den virtuellen Azure-Computer](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
 
     Wenn die neuesten Daten nicht angezeigt werden, sollten Sie warten, bis der Übertragungszeitraum abgelaufen ist.
 
@@ -258,7 +258,7 @@ Wenn Sie ein Problem mit einem Clouddienst untersuchen, der bereits ausgeführt 
     Wenn Sie die Datensammlung im Server-Explorer ändern, bleiben diese Änderungen wirksam, bis Sie den Clouddienst vollständig erneut bereitstellen. Wenn Sie die Standardeinstellungen für die Veröffentlichung verwenden, werden die Änderungen nicht überschrieben. Die Standardeinstellung für die Veröffentlichung ist nicht die vollständige erneute Bereitstellung, sondern das Aktualisieren der vorhandenen Bereitstellung. Wechseln Sie zur Registerkarte **Erweiterte Einstellungen** im Veröffentlichungs-Assistenten, und deaktivieren Sie das Kontrollkästchen **Deployment update** (Bereitstellungsupdate), um sicherzustellen, dass die Einstellungen zum Zeitpunkt der Bereitstellung gelöscht werden. Wenn Sie bei deaktiviertem Kontrollkästchen eine erneute Bereitstellung durchführen, werden die Einstellungen wieder auf die der WADCFGX-Datei (oder WADCFG-Datei) zurückgesetzt, die mit dem **Eigenschaften-Editor** für die Rolle festgelegt wurden. Wenn Sie Ihre Bereitstellung aktualisieren, behält Azure die früheren Einstellungen bei.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Problembehandlung für Azure-Clouddienste
-Wenn Probleme mit Ihren Clouddienstprojekten auftreten, z.B. eine Rolle, die dauerhaft den Status „Beschäftigt“ hat, wiederholte Neustarts oder die Ausgabe eines internen Serverfehlers, stehen Ihnen Tools und Techniken zur Verfügung, mit denen Sie diese Probleme diagnostizieren und beheben können. Beispiele für häufige Probleme und Lösungen sowie einen Überblick über die Konzepte und Tools, die Sie zum Diagnostizieren und Beheben dieser Fehler verwenden können, finden Sie unter [Azure PaaS compute diagnostics data (Computediagnosedaten in Azure PaaS)](http://blogs.msdn.com/b/kwill/archive/2013/08/09/windows-azure-paas-compute-diagnostics-data.aspx).
+Wenn Probleme mit Ihren Clouddienstprojekten auftreten, z.B. eine Rolle, die dauerhaft den Status „Beschäftigt“ hat, wiederholte Neustarts oder die Ausgabe eines internen Serverfehlers, stehen Ihnen Tools und Techniken zur Verfügung, mit denen Sie diese Probleme diagnostizieren und beheben können. Beispiele für häufige Probleme und Lösungen sowie einen Überblick über die Konzepte und Tools, die Sie zum Diagnostizieren und Beheben dieser Fehler verwenden können, finden Sie unter [Azure PaaS compute diagnostics data (Computediagnosedaten in Azure PaaS)](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/).
 
 ## <a name="q--a"></a>Fragen und Antworten
 **Wie groß ist der Puffer, und wie groß sollte er sein?**
@@ -273,9 +273,9 @@ Der Übertragungszeitraum ist der Zeitraum zwischen Datenerfassungen. Nach jedem
 
 Zeitstempel haben dieselbe Zeitzone wie das lokale Rechenzentrum, in dem der Clouddienst gehostet wird. Die folgenden drei Zeitstempelspalten werden in den Protokolltabellen verwendet:
 
-* **PreciseTimeStamp:** der ETW-Zeitstempel des Ereignisses. Das heißt die Zeit, zu der das Ereignis vom Client protokolliert wird.
-* **TIMESTAMP:** der auf die Uploadhäufigkeitsgrenze abgerundete Wert für **PreciseTimeStamp**. Wenn die Uploadhäufigkeit beispielsweise 5 Minuten beträgt und die Ereigniszeit 00:17:12 ist, lautet TIMESTAMP 00:15:00.
-* **Timestamp** (Zeitstempel): Der Zeitstempel, der angibt, wann die Entität in der Azure-Tabelle erstellt wurde.
+* **Precistitimestamp**: der etw-Zeitstempel des Ereignisses. Das heißt die Zeit, zu der das Ereignis vom Client protokolliert wird.
+* **Timestamp**: der Wert für " **precicontimestamp** ", abgerundet auf die Grenze für die uploadhäufigkeit. Wenn die Uploadhäufigkeit beispielsweise 5 Minuten beträgt und die Ereigniszeit 00:17:12 ist, lautet TIMESTAMP 00:15:00.
+* **Timestamp**: der Zeitstempel, zu dem die Entität in der Azure-Tabelle erstellt wurde.
 
 **Wie verwalte ich Kosten beim Sammeln von Diagnoseinformationen?**
 
@@ -285,9 +285,9 @@ Die Standardeinstellungen (**Protokollebene**, festgelegt auf **Fehler** und **�
 
 Standardmäßig erfasst IIS keine Protokolle zu fehlgeschlagenen Anforderungen. Sie können IIS für das Sammeln von Protokollen für fehlerhafte Anforderungen einrichten, indem Sie die „web.config“-Datei für Ihre Webrolle bearbeiten.
 
-**Ich erhalte keine Nachverfolgungsinformationen von RoleEntryPoint-Methoden wie OnStart. Wo liegt der Fehler?**
+**Ich erhalte keine Ablauf Verfolgungs Informationen von RoleEntrypoint-Methoden wie OnStart. Was ist los?**
 
-Die Methoden von **RoleEntryPoint** werden im Kontext von „WAIISHost.exe“ und nicht von IIS aufgerufen. Die Konfigurationsinformationen in der Datei „web.config“, mit denen die Nachverfolgung normalerweise aktiviert wird, gelten nicht. Fügen Sie Ihrem Webrollenprojekt eine CONFIG-Datei hinzu, um dieses Problem zu beheben, und geben Sie der Datei einen Namen, der mit der Ausgabeassembly übereinstimmt, die den **RoleEntryPoint**-Code enthält. Im Standardprojekt für Webrollen sollte der Name der CONFIG-Datei „WAIISHost.exe.config“ lauten. Fügen Sie dieser Datei die folgenden Zeilen hinzu:
+Die Methoden von **RoleEntryPoint** werden im Kontext von „WAIISHost.exe“ und nicht von IIS aufgerufen. Die Konfigurationsinformationen in der Datei „web.config“, mit denen die Nachverfolgung normalerweise aktiviert wird, gelten nicht. Fügen Sie Ihrem Webrollenprojekt eine CONFIG-Datei hinzu, um dieses Problem zu beheben, und geben Sie der Datei einen Namen, der mit der Ausgabeassembly übereinstimmt, die den **RoleEntryPoint**-Code enthält. Im standardmäßigen Webrollen Projekt sollte der Name der config-Datei "waiishost. exe. config" lauten. Fügen Sie dieser Datei die folgenden Zeilen hinzu:
 
 ```xml
 <system.diagnostics>

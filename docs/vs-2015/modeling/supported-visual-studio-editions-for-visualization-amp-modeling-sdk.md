@@ -11,35 +11,35 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89d65aab64ba82f152e2fe888ab10b88b73a7c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b81aaba14acc2c050a770e810c57e99ee43c2ab3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672376"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298149"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Unterstützte Visual Studio-Editionen für die Visualisierung &amp; Modellierungs-SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Im folgenden finden Sie Listen der Visual Studio-Editionen, die mit [!INCLUDE[dsl](../includes/dsl-md.md)] in den Erstellungs-und Bereitstellungs Umgebungen unterstützt werden. Weitere Informationen zu diesen Editionen finden Sie im Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).
+Im folgenden finden Sie Listen der Visual Studio-Editionen, die mit [!INCLUDE[dsl](../includes/dsl-md.md)] in den Erstellungs-und Bereitstellungs Umgebungen unterstützt werden. Weitere Informationen zu diesen Editionen finden Sie im Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Developer Center](https://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Erstellungsedition
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
 ## <a name="deployment-editions"></a>Bereitstellungseditionen
- [!INCLUDE[dsl](../includes/dsl-md.md)] unterstützt die folgenden Konfigurationen für die Bereitstellung der von Ihnen erstellten domänenspezifischen Sprachen:
+ [!INCLUDE[dsl](../includes/dsl-md.md)] unterstützt die folgenden Konfigurationen für die Bereitstellung der domänenspezifischen Sprachen, die Sie erstellen:
 
 - Visual Studio Enterprise
 
 - Visual Studio Professional
 
-- Visual Studio Shell (integrierter Modus) verteilbares Paket Redistributable Package
+- Visual Studio Shell (integrierter Modus) verteilbares Paket
 
 - Visual Studio Shell (isolierter Modus), verteilbares Paket
 

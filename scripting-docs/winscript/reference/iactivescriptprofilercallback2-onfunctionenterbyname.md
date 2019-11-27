@@ -45,5 +45,5 @@ HRESULT OnFunctionEnterByName(
  Bei Dom-aufrufen Ruft die Skript-Engine diese Methode auf, anstatt [iactivescriptprofilercallback:: onfunctionenter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)aufzurufen. Dies liegt an der großen Anzahl von eindeutigen Methoden und Eigenschaften im Dom.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptProfilerCallback2:: onfunctionexitbyname](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) -   
+ [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
  [IActiveScriptProfilerCallback2-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

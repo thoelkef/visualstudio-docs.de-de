@@ -11,25 +11,25 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e0dbc2c4a4402cc60febaaf158a7a4578bc78115
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655892"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292065"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Erste Schritte mit der Entwicklung mit Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/community) des Produkts finden Sie auf diesen Seiten Informationen, die Ihnen die ersten Schritte beim Codieren vereinfachen.
+Willkommen bei Visual Studio! Nach dem [Download](https://visualstudio.microsoft.com/vs/community/) des Produkts finden Sie auf diesen Seiten Informationen, die Ihnen die ersten Schritte beim Codieren vereinfachen.
 
 - **[Erstellen von Web-Apps](https://www.visualstudio.com/features/modern-web-tooling-vs):** Tools zum Erstellen und Bereitstellen moderner Webanwendungen.
 
-     [Tutorial durchlaufen](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Dokumentation durchsuchen](https://docs.asp.net/) &#124;                                   [Video ansehen](http://www.asp.net/vnext)
+     [Tutorial durchlaufen](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Dokumentation durchsuchen](https://docs.asp.net/) &#124;                                   [Video ansehen](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
 
-- **[Erstellen von plattformübergreifenden mobilen Apps in HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)** :               Apache Cordova ist eine plattformübergreifende Open-Source-Umgebung, die auf HTML/CSS/Javascript basiert.  Ihr Javascript-Code wird in einem Wrapper für                eine bestimmte Plattform ausgeführt. So haben Sie Zugriff auf alle Hardwarefunktionen des Geräts. Entwickeln Sie Apps für Apple Store, Android Store und Windows Store.
+- **[Erstellen von plattformübergreifenden mobilen Apps in HTML/Javascript (Apache Cordova)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** :               Apache Cordova ist eine plattformübergreifende Open-Source-Umgebung, die auf HTML/CSS/Javascript basiert.  Ihr Javascript-Code wird in einem Wrapper für                eine bestimmte Plattform ausgeführt. So haben Sie Zugriff auf alle Hardwarefunktionen des Geräts. Entwickeln Sie Apps für Apple Store, Android Store und Windows Store.
 
-     [Beispiel laden](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [Tutorial durchlaufen](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124;                               [Dokumentation durchsuchen](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124;                                [Video ansehen](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [Beispiel laden](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [Tutorial durchlaufen](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [Dokumentation durchsuchen](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [Video ansehen](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[Erstellen von plattformübergreifenden mobilen Apps in C# oder Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : Finden Sie den Einstieg in Visual Studio und Tools für Xamarin, um mobile Apps zu erstellen, die von einer gemeinsamen Codebasis aus auf der Android-, der iOS- und der universellen Windows-Plattform ausgeführt werden können.
 
@@ -45,7 +45,7 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 
 - **[Erstellen von Spielen mit Unity](../cross-platform/visual-studio-tools-for-unity.md)** : Erstellen Sie plattformübergreifende Spiele mit dem Unity-Framework.
 
-     [Beispiel laden](http://unity3d.com/learn/resources/downloads) &#124;                     [Tutorial durchlaufen](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [Dokumentation durchsuchen](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [Video ansehen](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
+     [Beispiel laden](http://unity3d.com/learn/resources/downloads) &#124;                     [Tutorial durchlaufen](https://learn.unity.com/projects) &#124;                               [Dokumentation durchsuchen](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [Video ansehen](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
 - **[Erstellen von Apps für die universelle Windows-Plattform](https://dev.windows.com/windows-apps)** : Erstellen Sie Apps für die universelle Windows-Plattform (XBox, PCs, Tablets, Windows Phone, Surface Hub und Internet der Dinge).
 
@@ -57,7 +57,7 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 
 - **[Office-Anwendungen](https://msdn.microsoft.com/library/fp161347.aspx)** erstellen: Erstellen Sie Office-Anwendungen, mit denen Word, Excel, Outlook und PowerPoint mit Office 365-Diensten erweitert und angepasst werden.
 
-     [Beispiel laden](https://code.msdn.microsoft.com/office365/) &#124;                       [Tutorial durchlaufen](http://dev.office.com/getting-started/office365apis) &#124;                              [Dokumentation durchsuchen](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [Video ansehen](http://dev.office.com/videos)
+     [Beispiel laden](https://code.msdn.microsoft.com/office365/) &#124;                       [Tutorial durchlaufen](https://developer.microsoft.com/graph) &#124;                              [Dokumentation durchsuchen](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [Video ansehen](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 
 - **[Tour zu Visual Studio Team Services und Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Erfahren Sie mehr über Visual Studio Team Services und Team Foundation Server.
 

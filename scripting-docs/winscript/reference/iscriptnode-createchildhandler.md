@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573600"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-Fügt ein Scriptlet als untergeordnete Instanz eines `IScriptNode` hinzu.  
+Fügt ein Scriptlet als untergeordnete Instanz eines `IScriptNode`hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -80,7 +80,7 @@ HRESULT CreateChildHandler(
  vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptEntry`-Schnittstelle der untergeordneten Instanz empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -90,5 +90,5 @@ HRESULT CreateChildHandler(
  Ein Scriptlet gibt einen Ereignishandler an. Diese Methode erstellt ein Scriptlet, wenn Sie von einem `IScriptNode`-Objekt aufgerufen wird, das eine Webseite darstellt. Diese Methode ist nicht erfolgreich, wenn Sie von anderen Schnittstellen aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iscriptnode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)    
+ [Iscriptnode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

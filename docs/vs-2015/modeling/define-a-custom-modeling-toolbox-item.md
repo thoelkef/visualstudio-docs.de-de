@@ -11,19 +11,19 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 27692c31c2c0f1c52ab026fb2d55e5d240839ff3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654900"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299290"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gemäß eines Musters, das Sie häufig verwenden, können Sie der Toolbox mit Modellierungsdiagrammen in Visual Studio neue Tools hinzufügen. Sie können diese Toolboxelemente an andere Visual Studio-Benutzer verteilen.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Ein benutzerdefiniertes Tool erstellt ein oder mehrere neue Elemente in einem Diagramm. Sie können z. B. ein benutzerdefiniertes Tool zum Erstellen von Elementen, wie beispielsweise die folgenden, erstellen:
 
@@ -113,7 +113,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 - `<bmp fileName="…"/>` für das Toolboxsymbol und `<value>string</value>` für die anderen Elemente, wie in dem Beispiel dargestellt.
 
-  \- oder -
+  \- oder –
 
 - `<resource fileName="Resources.dll"`
 
@@ -129,7 +129,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 |---------------|-------------|
 |displayName|Der Name des Toolboxelements.|
 |tabName|Die Toolboxregisterkarte, in der das Element angezeigt werden soll. Sie können entweder den Namen der normalen Registerkarte für diesen Typ von Diagramm oder einen anderen Namen angeben.|
-|Bild|Der Speicherort der Bitmapdatei ( **. bmp**), die die Höhe und Breite von 16 und eine Farbtiefe von 24 Bits aufweisen muss.|
+|image|Der Speicherort der Bitmapdatei ( **. bmp**), die die Höhe und Breite von 16 und eine Farbtiefe von 24 Bits aufweisen muss.|
 |f1Keyword|Das Schlüsselwort, mit dem ein Hilfethema gesucht wird.|
 |QuickInfo|Eine QuickInfo für dieses Tool.|
 
@@ -139,7 +139,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 > Wenn Sie beginnen, eine TBXINFO-Datei zu verwenden, nachdem Sie mit der alleinigen Verwendung von Diagrammdateien experimentiert haben, stellen sie möglicherweise fest, dass die Toolbox sowohl die alten als auch die neuen Versionen eines Toolboxelements enthält. Dies kann auch auftreten, wenn der Name der Diagrammdatei in der TBXINFO-Datei falsch eingegeben wurde. Wenn dies der Fall ist, wählen Sie im Kontextmenü der Toolbox **Toolbox zurücksetzen**aus. Die benutzerdefinierten Toolboxelemente werden ausgeblendet. Starten Sie Visual Studio neu; daraufhin werden die richtigen benutzerdefinierten Elemente angezeigt.
 
 ## <a name="Extension"></a>Verteilen von Toolbox Elementen in einer Visual Studio-Erweiterung
- Sie können Toolbox Elemente an andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Benutzer verteilen, indem Sie Sie in eine Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](http://go.microsoft.com/fwlink/?LinkId=160780).
+ Sie können Toolbox Elemente an andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Benutzer verteilen, indem Sie Sie in eine Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](https://go.microsoft.com/fwlink/?LinkId=160780).
 
  Die übliche Vorgehensweise zum Erstellen einer Visual Studio-Erweiterung besteht darin, die VSIX-Projektvorlage zu verwenden. Zu diesem Zweck muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.
 
@@ -151,11 +151,11 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 3. Öffnen Sie ein vorhandenes Visual Studio-Erweiterungsprojekt.
 
-     \- oder -
+     \- oder –
 
      Definieren Sie ein neues Visual Studio-Erweiterungsprojekt.
 
-    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
+    1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
 
     2. Wählen Sie im Dialogfeld **Neues Projekt** unter **installierte Vorlagen**die Option **Visualisierung C#** , **Erweiterbarkeit**und **VSIX-Projekt**aus.
 
@@ -168,11 +168,11 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 5. Legen Sie die folgenden Eigenschaften aller Dateien fest, die Sie gerade hinzugefügt haben. Sie können ihre Eigenschaften gleichzeitig festlegen, indem Sie alle im Projektmappen-Explorer auswählen. Achten Sie darauf, dass Sie keine Änderungen an den Eigenschaften der anderen Dateien im Projekt vornehmen.
 
-     **In Ausgabeverzeichnis kopieren**  = **immer kopieren**
+     **In Ausgabeverzeichnis kopieren** = **immer kopieren**
 
-     **Build-Aktion**  = **Inhalt**
+     **Build-Aktion** = **Inhalt**
 
-     **In VSIX einschließen**  = **true**
+     **In VSIX einschließen** = **true**
 
 6. Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Erweiterungsmanifest-Editor geöffnet.
 
@@ -180,14 +180,14 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
      Wählen Sie unter **Assets**die Option **neu** aus, und legen Sie dann die Felder im Dialogfeld wie folgt fest:
 
-    - **Typ**  = **benutzerdefinierter Erweiterungstyp**
+    - **Typ** = **benutzerdefinierter Erweiterungstyp**
 
     - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Dies ist keine der Optionen in der Dropdownliste. Sie müssen sie über die Tastatur eingeben.
 
-    - **Quell**  = **Datei im Dateisystem**.
+    - **Quell** = **Datei im Dateisystem**.
 
     - **Path** = your **tbxinfo** -Datei, z. b. **mytools. tbxinfo**
 
@@ -214,13 +214,13 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 1. Erstellen Sie ein Visual Studio-Erweiterungsprojekt, das ein oder mehrere benutzerdefinierte Tools enthält.
 
-    Verwenden Sie in der **tbxinfo** -Datei die Ressourcen Datei Methode, um die `displayName`, Toolbox `tabName` und die QuickInfo des Tools zu definieren. Erstellen Sie eine Ressourcendatei, in der diese Zeichenfolgen definiert sind, kompilieren Sie diese in eine Assembly, und verweisen Sie dann aus der TBXINFO-Datei darauf.
+    Verwenden Sie in der **tbxinfo** -Datei die Ressourcen Datei Methode, um die `displayName`, Toolbox `tabName`und die QuickInfo des Tools zu definieren. Erstellen Sie eine Ressourcendatei, in der diese Zeichenfolgen definiert sind, kompilieren Sie diese in eine Assembly, und verweisen Sie dann aus der TBXINFO-Datei darauf.
 
 2. Erstellen Sie zusätzliche Assemblys, die Ressourcendateien mit Zeichenfolgen in anderen Sprachen enthalten.
 
 3. Legen Sie jede zusätzliche Assembly in einen Ordner, dessen Name der Kulturcode für die Sprache ist. Platzieren Sie z. b. eine französische Version der Assembly in einem Ordner mit dem Namen " **fr**".
 
-4. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu Kultur Codes finden Sie unter [CultureInfo. GetCultures-Methode](http://go.microsoft.com/fwlink/?LinkId=160782), die eine komplette Liste der Kultur Codes enthält.
+4. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu Kultur Codes finden Sie unter [CultureInfo. GetCultures-Methode](https://go.microsoft.com/fwlink/?LinkId=160782), die eine komplette Liste der Kultur Codes enthält.
 
 5. Erstellen Sie die Visual Studio-Erweiterung, und verteilen Sie sie.
 

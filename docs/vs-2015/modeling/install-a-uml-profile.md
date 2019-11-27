@@ -11,21 +11,21 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e38e89ee5572f5ba552f3b6807a3edab5012a727
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669591"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298910"
 ---
 # <a name="install-a-uml-profile"></a>Installieren eines UML-Profils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Visual Studio mit einem UML-Profil erweitern. Mit einem Profil können Sie den Elementen, die Sie in UML-Modellen erstellen können, Stereotypen und zusätzliche Eigenschaften hinzufügen. Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Sie können Visual Studio mit einem UML-Profil erweitern. Mit einem Profil können Sie den Elementen, die Sie in UML-Modellen erstellen können, Stereotypen und zusätzliche Eigenschaften hinzufügen. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Wenn Sie ein UML-Modell erhalten, das mit Profilen erstellt wurde, werden einige Eigenschaften nur dann angezeigt, wenn Sie die gleichen Profile installieren.
 
- Ein Profil wird in einer Visual Studio-Erweiterung verteilt. Eine Erweiterung kann auch andere Features wie z. B. Menübefehle enthalten. Weitere Informationen finden Sie unter [Verwalten von Visual Studio-Erweiterungen](http://go.microsoft.com/fwlink/?LinkId=160728).
+ Ein Profil wird in einer Visual Studio-Erweiterung verteilt. Eine Erweiterung kann auch andere Features wie z. B. Menübefehle enthalten. Weitere Informationen finden Sie unter [Verwalten von Visual Studio-Erweiterungen](https://go.microsoft.com/fwlink/?LinkId=160728).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>So installieren Sie ein UML-Profil auf Ihrem Computer
 

@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669612"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301037"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Erweitern von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Das Fabrikam-Team für Tools erstellt eine Reihe von Erweiterungen, um die Entwicklungsteams zu unterstützen. In den folgenden Abschnitten werden die verschiedenen Arten von Erweiterungen beschrieben, die Sie definieren können. Sie können mehrere dieser Techniken in einer Visual Studio-Erweiterung kombinieren.
 
- Weitere Informationen finden Sie in diesem Video: ![Link to Video](../data-tools/media/playvideo.gif "Wiedergeben")[MSDN How do I Series: UML Tools and Extensibility](http://go.microsoft.com/fwlink/?LinkId=214467).
+ Weitere Informationen finden Sie in diesem Video: ![Link to Video](../data-tools/media/playvideo.gif "Wiedergeben")[MSDN How do I Series: UML Tools and Extensibility](https://go.microsoft.com/fwlink/?LinkId=214467).
 
 ## <a name="Requirements"></a> Anforderungen
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-- [Modellierungs-SDK für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).
+- [Modellierungs-SDK für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Profile
  Mithilfe von Profilen können Sie Stereotype und zusätzliche Eigenschaften für UML-Elemente definieren.
@@ -50,7 +50,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Weitere Informationen finden Sie unter [Definieren eines benutzerdefinierten Modellierungs Toolbox Elements](../modeling/define-a-custom-modeling-toolbox-item.md).
 
-## <a name="validation"></a>Validierung
+## <a name="validation"></a>Validation
  Sie können Regeln definieren, um sicherzustellen, dass ein UML-Modell angegebene Einschränkungen erfüllt.
 
  Die Toolentwickler von Fabrikam definieren Regeln, um Teammitglieder dabei zu unterstützen, einfache Fehler in Bezug auf die Modelle zur Gepäckbeförderung zu vermeiden. Ein Check-in-Schalter kann zum Beispiel nicht direkt mit einem Aufbewahrungsbehälter verbunden sein. Es muss mindestens ein Fließband zwischengeschaltet sein.
@@ -113,10 +113,10 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "Playvideo ") [Channel 9: UML mit Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "Playvideo ") [Channel 9: UML mit Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Technische Artikel und Journale**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md) - [API-Referenz für UML-Modellierungs Erweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md)

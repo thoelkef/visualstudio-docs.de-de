@@ -29,5 +29,5 @@ Sie haben versucht, einen Ausdruck mithilfe des ternären bedingten Operators zu
 - Fügen Sie einen Doppelpunkt zwischen dem zweiten und dritten Operanden ein.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bedingter (ternärer) Operator (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+ [Bedingter (ternärer) Operator (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [Operatoren](../../javascript/operators-javascript.md)

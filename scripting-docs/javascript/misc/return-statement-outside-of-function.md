@@ -43,5 +43,5 @@ return [ expression ];
   
 ## <a name="see-also"></a>Siehe auch  
  [return Statement („return“-Anweisung)](../../javascript/reference/return-statement-javascript.md)   
- [Funktions Objekt](../../javascript/reference/function-object-javascript.md)    
+ [Funktions Objekt](../../javascript/reference/function-object-javascript.md)   
  [caller-Eigenschaft (Funktion)](../../javascript/reference/caller-property-function-javascript.md)

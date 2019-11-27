@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670475"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300738"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 ### <a name="UserDefined"></a>Benutzerdefinierte Variablen, Funktionen und Objekte
  Wenn Sie eine JavaScript-Datei ändern, werden Dokumente, die geöffnet sind und auf die verwiesen wird, von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] überprüft, um alle verfügbaren Coderessourcen zu ermitteln. Dies schließt auch die von Ihnen erstellten Variablen, Funktionen und Objekte ein. Diese Ressourcen stehen dann für JavaScript-IntelliSense zur Verfügung.
 
- Weitere Informationen zu benutzerdefinierten Variablen, Funktionen und Objekten finden Sie unter [Erstellen von Objekten](http://go.microsoft.com/fwlink/?LinkId=108671) auf der MSDN-Website.
+ Weitere Informationen zu benutzerdefinierten Variablen, Funktionen und Objekten finden Sie unter [Erstellen von Objekten](https://go.microsoft.com/fwlink/?LinkId=108671) auf der MSDN-Website.
 
 ### <a name="External"></a> Externe Dateiverweise
  Sie können verschiedene externe Dateiverweise einschließen, um IntelliSense-Unterstützung im Code zu erreichen. Externe Dateiverweise können Skriptverweise oder Reference-Anweisungen sein oder sie können mit Verweisgruppen angegeben werden.
@@ -283,6 +283,6 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 - [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [Anweisungsvervollständigung für Bezeichner](../ide/statement-completion-for-identifiers.md)
 - [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)
-- [Über dieses DHTML-Objektmodell](http://go.microsoft.com/fwlink/?LinkID=92344)
+- [Über dieses DHTML-Objektmodell](https://go.microsoft.com/fwlink/?LinkID=92344)
 - [Member auflisten](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [SRC-Attribut | src-Eigenschaft](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [SRC-Attribut | src-Eigenschaft](https://go.microsoft.com/fwlink/?LinkId=92345)

@@ -58,5 +58,5 @@ HRESULT Next(
  Diese Methode ruft eine angegebene Anzahl von Segmenten in der enumerationssequenz ab.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ienumdebug bugstackframes-Schnittstelle](../../winscript/reference/ienumdebugstackframes-interface.md)    
+ [Ienumdebug bugstackframes-Schnittstelle](../../winscript/reference/ienumdebugstackframes-interface.md)   
  [DebugStackFrameDescriptor-Struktur](../../winscript/reference/debugstackframedescriptor-structure.md)

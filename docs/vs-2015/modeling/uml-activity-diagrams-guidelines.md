@@ -15,19 +15,19 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: abcc83a301553ee0c6141502c25903ef2153258b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658487"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298984"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäftsprozess oder einen Softwarealgorithmus als Arbeitsfluss zu beschreiben, der eine Reihe von Aktionen durchläuft. Diese Aktionen können von Personen, Softwarekomponenten oder Geräten ausgeführt werden. Eine videodemo finden Sie unter: [Erfassen von Geschäfts Workflows mithilfe von Aktivitäts Diagrammen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).
+In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäftsprozess oder einen Softwarealgorithmus als Arbeitsfluss zu beschreiben, der eine Reihe von Aktionen durchläuft. Diese Aktionen können von Personen, Softwarekomponenten oder Geräten ausgeführt werden. Eine videodemo finden Sie unter: [Erfassen von Geschäfts Workflows mithilfe von Aktivitäts Diagrammen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Um ein UML-Aktivitätsdiagramm zu erstellen, klicken Sie im Menü **Architektur** auf **neues UML-oder ebenendiagramm**.
 
@@ -93,7 +93,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
 - Ziehen Sie im **UML-Modell-Explorer**die Aktivität in ein Paket.
 
-     \- oder -
+     \- oder –
 
 - Klicken Sie im **UML-Modell-Explorer**mit der rechten Maustaste auf die Aktivität, und klicken Sie auf Klicken Sie dann mit der rechten Maustaste auf das Paket und dann auf **Einfügen**.
 
@@ -398,7 +398,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
 - Fügen Sie einen Kommentar an den Eingabe- oder Ausgabepin an.
 
-  - Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie mit dem Kommentar < \<**Transformation**beginnen > > oder < \< >**Auswahl**>.
+  - Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie mit dem Kommentar <\<**Transformation**beginnen > > oder <\<> **Auswahl**>.
 
 - Geben Sie die Details der Transformation oder Auswahl in einem eigenen Aktivitätsdiagramm an.
 
@@ -427,4 +427,4 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
    Sie können auch eine Auswahl für einen Objektknoten sowie für einzelne Eingabe- und Ausgabepins definieren. Definieren Sie eine auswahlaktivität wie in der vorherigen Prozedur, und legen Sie dann die **Auswahl** Eigenschaft des Objekt Knotens oder die Eingabe-oder Ausgabe-PIN fest.
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) zu [UML-Komponenten Diagrammen: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für UML- [Klassendiagramme:](../modeling/uml-class-diagrams-reference.md) Referenz [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [ Video: Erfassen von Geschäfts Workflows mithilfe von Aktivitäts Diagrammen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
+ [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) zu [UML-Komponenten Diagrammen: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) zu [UML-Klassendiagrammen: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [Video: Erfassen von Geschäfts Workflows mithilfe von Aktivitäts Diagrammen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

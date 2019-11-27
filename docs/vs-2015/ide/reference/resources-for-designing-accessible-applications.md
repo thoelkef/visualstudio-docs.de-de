@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665563"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297796"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den barrierefreien Entwurf von Software sowie Tipps und Beispiele für die Entwicklung barrierefreier Windows-Anwendungen und Websites. Allgemeine Informationen über die Barrierefreiheit finden Sie online unter [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den barrierefreien Entwurf von Software sowie Tipps und Beispiele für die Entwicklung barrierefreier Windows-Anwendungen und Websites. Allgemeine Informationen über die Barrierefreiheit finden Sie online unter [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Technologien
 
@@ -54,7 +54,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
 
 ### <a name="third-party-resources"></a>Ressourcen von Drittanbietern
 
-- **Web Accessibility Initiative des World Wide Web Consortium (W3C)** Diese Website enthält Richtlinien und Techniken für die Entwicklung barrierefreier Websites. Weitere Informationen finden Sie unter [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).
+- **Web Accessibility Initiative des World Wide Web Consortium (W3C)** Diese Website enthält Richtlinien und Techniken für die Entwicklung barrierefreier Websites. Weitere Informationen finden Sie unter [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Siehe auch
- [Barrierefreiheitsfunktionen in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+ [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

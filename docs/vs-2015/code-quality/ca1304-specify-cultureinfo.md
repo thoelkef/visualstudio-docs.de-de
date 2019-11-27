@@ -29,7 +29,7 @@ ms.locfileid: "72661468"
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Kategorie|Microsoft. Globalization|
+|Kategorie|Microsoft.Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -72,7 +72,7 @@ ms.locfileid: "72661468"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **6/4/1900 12:15:12 Uhr** 
+ **6/4/1900 12:15:12 Uhr**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1305: IFormatProvider angeben](../code-quality/ca1305-specify-iformatprovider.md)

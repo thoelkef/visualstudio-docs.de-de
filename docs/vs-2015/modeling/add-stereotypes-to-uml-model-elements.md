@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655275"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292334"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Hinzufügen von Stereotypen zu UML-Modellelementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu komm
 
     - Klicken Sie in einem UML-Klassendiagramm auf das Tool für ein Element, und klicken Sie dann in das Paket des Diagramms.
 
-         \- oder -
+         \- oder –
 
     - Klicken Sie im UML-Modell-Explorer mit der rechten Maustaste auf das Paket, zeigen Sie auf **Hinzufügen**, und klicken Sie auf einen Elementtyp.
 
-         \- oder -
+         \- oder –
 
     - Ziehen Sie im UML-Modell-Explorer ein vorhandenes Element in das Paket.
 
-         \- oder -
+         \- oder –
 
     - Verknüpfen Sie ein Diagramm mit dem Paket, und erstellen Sie dann Elemente innerhalb des Diagramms.
 
@@ -82,4 +82,5 @@ Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu komm
          Sie können dieses Verfahren nur für einige Typen von Diagrammen tun.
 
 ## <a name="see-also"></a>Siehe auch
- [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md) [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Definieren von Paketen und Namespaces](../modeling/define-packages-and-namespaces.md) [Color UML-Klassen nach Stereotyp](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)
+ [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md) [Anpassen des Modells mit Profilen und Stereotypen definieren von](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Paketen und Namespaces](../modeling/define-packages-and-namespaces.md)
+

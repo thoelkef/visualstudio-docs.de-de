@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 138f818eab34b0b1860c7daa85f1b6814888fc9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652843"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300275"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Erstellen von Ebenendiagrammen aus Ihrem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 
 4. Navigieren Sie unter **zu Modellierungsprojekt hinzufügen**zu einem vorhandenen Modellierungsprojekt in der Projekt Mappe, und wählen Sie es aus.
 
-     - oder -
+     \- oder -
 
      Wählen Sie **Neues Modellierungsprojekt erstellen** aus, um der Projekt Mappe ein neues Modellierungsprojekt hinzuzufügen.
 
@@ -136,4 +136,4 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 - [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Channel 9-Video: Entwerfen und Validieren der Architektur mit ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073) [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md) [Validieren von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md) [visualisieren](../modeling/visualize-code.md)
+ [Channel 9-Video: Entwerfen und Validieren der Architektur mit ebenendiagrammen](https://go.microsoft.com/fwlink/?LinkID=252073) [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md) [Validieren von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md) [visualisieren](../modeling/visualize-code.md)

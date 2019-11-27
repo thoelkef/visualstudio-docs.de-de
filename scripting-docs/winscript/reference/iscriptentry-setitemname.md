@@ -40,7 +40,7 @@ HRESULT SetItemName(
  in Die Adresse eines Puffers, der den Elementnamen enthält. Der Elementname wird vom Host zum Identifizieren des Eintrags verwendet.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
+ Ein `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -48,10 +48,10 @@ HRESULT SetItemName(
 |`E_FAIL`|Die Methode konnte nicht erfolgreich ausgeführt werden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Bei `IScriptEntry` Objekten gibt diese Methode `S_OK` zurück.  
+ Bei `IScriptEntry` Objekten gibt diese Methode `S_OK`zurück.  
   
- Bei `IScriptScriptlet` Objekten (die von `IScriptEntry` abgeleitet sind) gibt diese Methode `E_FAIL` zurück. Bei `IScriptScriptlet` Objekten wird der Elementname von [iactivescriptauthor:: addscriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) festgelegt und kann nicht geändert werden.  
+ Bei `IScriptScriptlet` Objekten (die von `IScriptEntry`abgeleitet sind) gibt diese Methode `E_FAIL`zurück. Bei `IScriptScriptlet` Objekten wird der Elementname von [iactivescriptauthor:: addscriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) festgelegt und kann nicht geändert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)    
+ [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

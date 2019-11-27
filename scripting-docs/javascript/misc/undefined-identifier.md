@@ -35,5 +35,5 @@ Sie haben versucht, einen Bezeichner zu verwenden, der vom [!INCLUDE[javascript]
 - Deklarieren Sie die Variable mit einer **var** -Anweisung (wie in `var` x;).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Variablen](../../javascript/variables-javascript.md)    
+ [Variablen](../../javascript/variables-javascript.md)   
  [Variablenbereich](../../javascript/advanced/variable-scope-javascript.md)

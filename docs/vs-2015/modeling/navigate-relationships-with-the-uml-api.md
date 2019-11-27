@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5c0067e213fdff2bde09c290d9fcaa9b4f52b9ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668533"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300241"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navigieren in Beziehungen mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Auflisten von Beziehungen
- Alle Eigenschaften des UML-Modells, die mehrere Werte zurückgeben, entsprechen der IEnumerable-< >-Schnittstelle. Dies bedeutet, dass Sie [LINQ-Abfrage Ausdrücke](http://go.microsoft.com/fwlink/?LinkId=168834) und die Erweiterungs Methoden verwenden können, die im **System. Linq** -Namespace definiert sind.
+ Alle Eigenschaften des UML-Modells, die mehrere Werte zurückgeben, entsprechen der IEnumerable-< >-Schnittstelle. Dies bedeutet, dass Sie [LINQ-Abfrage Ausdrücke](https://go.microsoft.com/fwlink/?LinkId=168834) und die Erweiterungs Methoden verwenden können, die im **System. Linq** -Namespace definiert sind.
 
  Beispiel:
 

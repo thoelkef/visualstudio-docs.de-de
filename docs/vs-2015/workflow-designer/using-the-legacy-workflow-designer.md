@@ -11,23 +11,23 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c09c4588bb1fcd0aa7487a6896d2fc286253e198
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606775"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302792"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Verwenden des Legacyworkflow-Designers
 Die von [!INCLUDE[wfd2](../includes/wfd2-md.md)] bereitgestellte Vorgängerversion von [!INCLUDE[vs2010](../includes/vs2010-md.md)] kann verwendet werden, um auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzuzielen.
 
- Sie können darauf zugreifen, indem Sie in der Dropdown Liste am oberen Rand des Fensters **Neues Projekt** entweder die Option **.NET Framework 3,0** oder die Option **.NET Framework 3,5** auswählen. Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4** , die verwendet wird, um [!INCLUDE[wf](../includes/wf-md.md)] Anwendungen zu erstellen, die auf die [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] abzielen.
+ Sie können darauf zugreifen, indem Sie in der Dropdown Liste am oberen Rand des Fensters **Neues Projekt** entweder die Option **.NET Framework 3,0** oder die Option **.NET Framework 3,5** auswählen. Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4** , die verwendet wird, um [!INCLUDE[wf](../includes/wf-md.md)] Anwendungen zu erstellen, die auf die [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]abzielen.
 
  [!INCLUDE[wfd2](../includes/wfd2-md.md)] bietet eine Möglichkeit, [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen mithilfe der vertrauten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche grafisch zu erstellen. [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen bestehen aus Workflowprozessschritten, den so genannten Aktivitäten. Um einen Workflow zu erstellen, verfassen Sie Aktivitäten auf der Entwurfs Oberfläche, indem Sie die entsprechenden Aktivitäts Designer aus der **Toolbox** auf die Entwurfs Oberfläche ziehen.
 
  In der folgenden Tabelle sind die wichtigsten Funktionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] für Windows Workflow Foundation aufgeführt.
 
-|Feature|Beschreibung|
+|Funktion|Beschreibung|
 |-------------|-----------------|
 |Drag &amp; Drop-Funktionalität für Aktivitäten|Ziehen Sie Aktivitäten aus der **Toolbox** auf die Entwurfs Oberfläche, um einen Workflow zu erstellen.|
 |Eigenschaftenbrowser|Das Fenster Standard **Eigenschaften** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird verwendet, um die Eigenschaften einer Aktivität zu konfigurieren.|
@@ -54,4 +54,4 @@ Die von [!INCLUDE[wfd2](../includes/wfd2-md.md)] bereitgestellte Vorgängerversi
  [Benutzeroberflächenhilfe von Visual Studio Designer für Windows Workflow Foundation (Vorgängerversion)](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Entwickeln von Workflows](http://go.microsoft.com/fwlink?LinkID=65010)
+ [Entwickeln von Workflows](https://go.microsoft.com/fwlink?LinkID=65010)

@@ -54,6 +54,6 @@ HRESULT CreateAsyncDebugOperation(
  Diese Methode ermöglicht Sprachmodulen das asynchrone Auswerten von Ausdrücken ohne explizite Synchronisierung mit dem Debuggerthread. Weitere Informationen finden Sie unter [idebugsyncoperation-Schnittstelle](../../winscript/reference/idebugsyncoperation-interface.md) und [idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
- [Idebugsyncoperation-Schnittstelle](../../winscript/reference/idebugsyncoperation-interface.md)    
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [Idebugsyncoperation-Schnittstelle](../../winscript/reference/idebugsyncoperation-interface.md)   
  [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)

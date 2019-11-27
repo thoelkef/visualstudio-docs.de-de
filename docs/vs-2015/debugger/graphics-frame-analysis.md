@@ -1,5 +1,5 @@
 ---
-title: Grafik-Frameanalyse | Microsoft-Dokumentation
+title: Grafikframe-Analyse | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 331722df4749ca59241259e13c3b387d8303b69f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437939"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300514"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
   Obwohl die Frame-Analyse hauptsächlich den Zweck hat, eine schnellere Renderingleistung zu erreichen, kann sie auch helfen, eine bessere visuelle Qualität bei einem angegebenen Leistungsziel zu erreichen oder den GPU-Stromverbrauch zu reduzieren.  
   
-  Um eine Demonstration der Frame-Analyse für Ihre app Möglichkeiten zu sehen, können Sie beobachten das [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Channel 9.  
+  Sehen Sie sich das Video zu [Visual Studio Grafikframe-Analyse](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) auf Channel 9 an, um zu demonstrieren, welche Frame-Analyse für Ihre APP durchführen kann.  
   
 ## <a name="using-frame-analysis"></a>Verwenden der Frame-Analyse  
  Bevor Sie die Frame-Analyse verwenden können, müssen Sie die Grafikinformationen von Ihrer App erfassen, während diese ausgeführt wird, und zwar so wie Sie dies mit einem anderen der Grafikanalysetools vornehmen würden. Wählen Sie anschließend im Fenster mit dem Grafikprotokolldokument die Registerkarte **Frame-Analyse**.  
   
- ![Wählen Sie die Registerkarte "Frameanalyse"](../debugger/media/pix-frame-analysis-select-tab.png "Pix_frame_analysis_select_tab")  
+ ![Wählen Sie die Registerkarte Frame-Analyse aus.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
   
  Wenn die Analyse abgeschlossen ist, werden die Ergebnisse angezeigt. Oben auf der Registerkarte Frame-Analyse werden die Zeitachse und die Zusammenfassungstabelle angezeigt. Im unteren Teil werden die Detailtabellen angezeigt. Wenn bei der Abspielung Fehler oder Warnungen ausgegeben wurden, werden diese über der Zeitachse angezeigt. Hier können Sie den Links folgen, um mehr über die Fehler und Warnungen zu erfahren.  
   
@@ -77,14 +77,14 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="timeline"></a>Zeitachse  
  Die Zeitachse zeigt eine relative Übersicht über die Zeichnen-Befehle. Da längere Balken längeren Zeichnungszeiten entsprechen, können Sie die Zeitachse verwenden, um schnell die teuersten Zeichnen-Befehle im betreffenden Frame zu finden. Wenn der erfasste Frame eine sehr große Anzahl von Zeichnen-Befehlen enthält, werden mehrere Zeichnen-Befehle in einem Balken kombiniert, dessen Länge der Summe dieser Zeichnen-Befehle entspricht.  
   
- ![Die Zeitachse zeigt Zeichnen-Befehl&#45;Kosten aufrufen. ](../debugger/media/pix-frame-analysis-timeline.png "Pix_frame_analysis_timeline")  
+ ![Die Zeitachse&#45;zeigt die Kosten für zeichnen-Aufrufe.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
  Sie können mit dem Zeiger auf einen Balken zeigen, um zu sehen, welchem Zeichnen-Befehlsereignis der Balken entspricht. Die Auswahl des Balkens führt zu einer Synchronisation der Ereignisliste mit dem entsprechenden Ereignis.  
   
-#### <a name="table"></a>Tabelle  
+#### <a name="table"></a>Table  
  Die Tabelle mit Zahlen unter der Zeitachse zeigt die Leistung jeder Rendering-Variante für jeden Zeichnen-Befehl relativ zum Standard-Rendering Ihrer App. In jeder Spalte wird eine andere Rendering-Variante angezeigt, und jede Zeile steht für einen anderen Zeichnen-Befehl, der in der Spalte ganz links identifiziert wird. Hier können Sie einem Link zum betreffenden Ereignis im Fenster "Grafikereignisliste" folgen.  
   
- ![Die Zusammenfassungstabelle zeigt verschiedene Varianten. ](../debugger/media/pix-frame-analysis-summary.png "Pix_frame_analysis_summary")  
+ ![In der Zusammenfassungs Tabelle werden verschiedene Abweichungen angezeigt.](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
   
  In der zweite Spalte von links der Zusammenfassungstabelle wird die Baseline-Rendering-Zeit Ihrer App angezeigt – dies ist die Dauer, in der das Standard-Rendering der App den Zeichnen-Befehl abschließt. In den anderen Spalten wird die relative Leistung jeder Rendering-Variante als Prozentsatz der Baseline dargestellt, sodass leichter festzustellen ist, ob die Leistung verbessert wurde. Prozentsätze über 100 bedeuten, dass das Rendering länger gedauert hat als die Baseline - d. h., dass die Leistung zurückgegangen ist –, und Prozentsätze unter 100 bedeuten, dass weniger Zeit benötigt wurde, die Leistung also gestiegen ist.  
   
@@ -93,14 +93,14 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="hot-draw-calls"></a>"Heiße" Zeichnen-Befehle  
  Um die Aufmerksamkeit auf Zeichnen-Befehle zu lenken, die einen größeren proportionalen Anteil der gesamten Rendering-Zeit verbrauchen oder aus vermeidbaren Gründen ungewöhnlich langsam sind, wird die Zeile, die diese "heißen" Zeichnen-Befehle enthält, rot schattiert, wenn ihre Baseline-Dauer um mehr als eine Standardabweichung länger ist als die durchschnittliche Baseline-Dauer aller Zeichnen-Befehle in diesem Rahmen.  
   
- ![Dieser DrawIndexed-Aufruf hat kalte und warme Varianten. ](../debugger/media/pix-frame-analysis-hot-calls.png "Pix_frame_analysis_hot_calls")  
+ ![Dieser drawinentxed-Befehl weist heiße und kalte Abweichungen auf.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Statistische Bedeutung  
  Um Aufmerksamkeit auf die Rendering-Variationen mit der potenziell höchsten Relevanz zu lenken, ermittelt die Frame-Analyse die statistische Bedeutung jeder Rendering-Variante und zeigt die wichtigen in Fettdruck an. Die Varianten, die die Leistung verbessern, werden in grün angezeigt, diejenigen, die sie verschlechtern, in rot. Ergebnisse, die keine statistische Bedeutung haben, werden in normaler Schrift angezeigt.  
   
- ![Die statistische Relevanz der Zeichnen-Aufruf-Variante](../debugger/media/pix-frame-analysis-summary-stats.png "Pix_frame_analysis_summary_stats")  
+ ![Die statistische Relevanz der Draw-aufrufsvariante](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
- Zum Bestimmen der statistischen Relevanz verwendet die Frame-Analyse der [Student t-Test](http://www.wikipedia.org/wiki/Student%27s_t-test).  
+ Zum Ermitteln der statistischen Relevanz verwendet die Frame-Analyse den [t-Test des Studenten](https://en.wikipedia.org/wiki/Student's_t-test).  
   
 ### <a name="details-table"></a>Detailtabelle  
  Unter der Zusammenfassungstabelle befindet sich die Detailtabelle, die standardmäßig reduziert ist. Der Inhalt der Detailtabelle hängt von der Hardwareplattform des Wiedergabecomputers ab. Weitere Informationen zu den unterstützten Hardwareplattformen finden Sie unter [Hardwaresupport](#HardwareSupport).  
@@ -108,12 +108,12 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plattformen, die keine Hardwarezähler unterstützen  
  Die meisten Plattformen unterstützen Hardware-GPU-Zähler nicht vollständig. Zu diesen Plattformen gehören alle zurzeit von Intel, AMD und nVidia angebotenen GPUs. Wenn es keine Hardwarezähler zu sammeln gibt, wird nur eine Detailtabelle angezeigt. Diese enthält dann die mittleren absoluten Zeitwerte aller Varianten.  
   
- ![Die Detailtabelle und einige Wiedergabe-Varianten. ](../debugger/media/pix-frame-analysis-details.png "Pix_frame_analysis_details")  
+ ![Die Detail Tabelle und einige Wiedergabe Varianten.](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plattformen, die Hardwarezähler unterstützen  
  Für Plattformen, die Hardware-GPU-Zähler unterstützen – z. B. die nVidia T40 SOC und alle SOCs von Qualcomm – werden mehrere Detailtabellen angezeigt, eine pro Variante. Jeder verfügbare Hardwarezähler wird für jede Rendering-Variante erfasst und in seiner eigenen Detailtabelle angezeigt.  
   
- ![Hardwareindikatoren werden angezeigt, wenn unterstützt. ](../debugger/media/pix-frame.png "Pix_frame")  
+ ![Hardware Zähler werden angezeigt, wenn Sie unterstützt werden.](../debugger/media/pix-frame.png "pix_frame")  
   
  Mit den Hardwarezähler-Informationen erhalten Sie eine sehr detaillierte Übersicht über das spezifische Hardwareplattform-Verhalten für jeden Zeichnen-Befehl, die Ihnen hilft, die Gründe für Leistungsengpässe sehr genau zu ermitteln.  
   
@@ -191,14 +191,14 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 |**0× MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0×/2×/4×-MSAA-Varianten](../debugger/0x-2x-4x-msaa-variants.md)|  
 |**2× MSAA**|Aktiviert das 2x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0×/2×/4×-MSAA-Varianten](../debugger/0x-2x-4x-msaa-variants.md)|  
 |**4× MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0×/2×/4×-MSAA-Varianten](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**Punkttexturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_MIP_POINT` (Punkttexturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Bilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Trilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Anisotrope Texturfilterung**|Legt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_ANISOTROPIC` und `MaxAnisotropy` auf `16` (16× anisotrope Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Punkttexturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_MIP_POINT` (Punkttexturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt-, bilineare, drei lineare und anisotrope Textur Filter Varianten](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Bilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt-, bilineare, drei lineare und anisotrope Textur Filter Varianten](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Trilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt-, bilineare, drei lineare und anisotrope Textur Filter Varianten](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Anisotrope Texturfilterung**|Legt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_ANISOTROPIC` und `MaxAnisotropy` auf `16` (16× anisotrope Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt-, bilineare, drei lineare und anisotrope Textur Filter Varianten](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**16bpp-Renderzielformat**|Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, Format 565).<br /><br /> Weitere Informationen finden Sie unter [16bpp-Renderzielformat-Variante](../debugger/16bpp-render-target-format-variant.md).|  
 |**Mipmap-Generierung**|Aktiviert Mipmaps auf allen Texturen, die keine Renderziele sind.<br /><br /> Weitere Informationen finden Sie unter [Mipmap-Generierungsvariante](../debugger/mip-map-generation-variant.md).|  
 |**Halbe Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, auf die Hälfte in jeder Dimension ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 128x64 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [Halb-/Viertel-Texturdimensionsvariante](../debugger/half-quarter-texture-dimensions-variant.md).|  
 |**Viertel-Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, in jeder Dimension auf ein Viertel ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 64x32 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [Halb-/Viertel-Texturdimensionsvariante](../debugger/half-quarter-texture-dimensions-variant.md).|  
 |**BC-Texturkomprimierung**|Aktiviert die Blockkomprimierung auf allen Texturen mit der Pixelformatvariante B8G8R8X8, B8G8R8A8 oder R8G8B8A8. Varianten im Format B8G8R8X8 werden mit BC1 komprimiert; die Formatvarianten B8G8R8A8 und R8G8B8A8 werden mit BC3 komprimiert.<br /><br /> Weitere Informationen finden Sie unter [BC-Texturkomprimierungsvariante](../debugger/bc-texture-compression-variant.md).|  
   
- Das Ergebnis für die meisten Varianten ist präskriptiv: "Verringern der Texturgröße um die Hälfte ist 25 Prozent schneller" oder "Aktivierung von 2 X MSAA ist nur 2 % langsamer". Andere Variationen können mehr Interpretation erfordern – z, B. wenn die Variante, die die Viewport-Dimensionen in 1x1 ändert, zu einer bedeutenden Leistungssteigerung führt. Dies kann bedeuten, dass das Rendering durch eine geringe Füllrate verlangsamt wird. Andererseits kann es, falls keine bedeutende Leistungsänderung auftritt, bedeuten, dass das Rendering durch die Scheitelpunktverarbeitung verlangsamt wird.
+ Das Ergebnis für die meisten Varianten ist präskriptiv: "Die Reduzierung der Texturgröße um die Hälfte ist um 25 % schneller" oder "Die Aktivierung von 2x MSAA ist nur um 2 % langsamer". Andere Variationen können mehr Interpretation erfordern – z, B. wenn die Variante, die die Viewport-Dimensionen in 1x1 ändert, zu einer bedeutenden Leistungssteigerung führt. Dies kann bedeuten, dass das Rendering durch eine geringe Füllrate verlangsamt wird. Andererseits kann es, falls keine bedeutende Leistungsänderung auftritt, bedeuten, dass das Rendering durch die Scheitelpunktverarbeitung verlangsamt wird.

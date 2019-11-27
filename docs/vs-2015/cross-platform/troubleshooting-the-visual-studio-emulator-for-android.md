@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung bei der Emulator für Android | Microsoft-Dokumentation
+title: Problembehandlung beim Emulator für Android | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -8,14 +8,14 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 380de9206b2dc4e78c3719919dfd78720de28129
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263387"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297646"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Fehlerbehebung beim Visual Studio-Emulator für Android
+# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Fehlerbehebung beim Visual Studio-Emulator für Android-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwendung des Visual Studio-Emulators für Android auftreten können.
@@ -62,7 +62,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 ## <a name="BeforeYouStart"></a> Vor der Installation
  Bevor Sie mit der Problembehandlung beginnen, kann es sinnvoll sein, folgende Themen zu überprüfen:
 
-- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Systemanforderungen für den Visual Studio-Emulator für Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
 ## <a name="NoInstall"></a> Fehler bei der Installation des Emulators
  Wenn Hyper-V auf Ihrem System nicht installiert ist, wird bei dem Versuch, den Emulator zu installieren, die folgende Meldung angezeigt: Sie müssen einen Computer verwenden, der HyperV unterstützt, und HyperV muss aktiviert sein.
@@ -94,9 +94,9 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 ## <a name="ManualNetworkConfig"></a> Keine Verbindung zu Netzwerk-Zielen möglich, wenn die Netzwerkeinstellungen eine manuelle Konfiguration erfordern
  Zum Herstellen einer Verbindung zu Netzwerk-Zielen über den Emulator muss Ihr Netzwerk folgende Anforderungen erfüllen:
 
-- DHCP. Emulator erfordert DHCP, da er sich selbst als separates Gerät im Netzwerk mit eigener IP-Adresse konfiguriert.
+- DHCP. Der Emulator benötigt DHCP, da er sich selbst als separates Gerät im Netzwerk mit eigener IP-Adresse konfiguriert.
 
-- Automatisch konfigurierte DNS- und Gateway-Einstellungen. Es ist nicht möglich, DNS und Gateway-Einstellungen für den Emulator manuell zu konfigurieren.
+- Automatisch konfigurierte DNS- und Gateway-Einstellungen. Es ist nicht möglich, die DNS und Gateway-Einstellungen für den Emulator manuell zu konfigurieren.
 
   Wenn Ihr Netzwerk manuell konfigurierte Einstellungen erfordert, wenden Sie sich an Ihren IT-Administrator, um zu bestimmen, wie Sie die Netzwerkkonnektivität für den Emulator aktivieren können.
 
@@ -134,7 +134,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
 
-     Wenn das Setup fehlerhaft ist und Sie Windows 10 verwenden, können Sie [Erneutes Installieren von Netzwerkgeräten mit dem netcfg –d-Befehl](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (Abschnitt 6) versuchen.
+     Wenn das Setup fehlerhaft ist und Sie Windows 10 verwenden, können Sie [Erneutes Installieren von Netzwerkgeräten mit dem netcfg –d-Befehl](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (Abschnitt 6) versuchen.
 
 - Wenn sich das Problem mit diesen Schritten nicht beheben lässt, finden Sie unter [Emulator fails to start (first use)](#NoStart) Informationen zur Software von Drittanbietern, die möglicherweise zu Konflikten mit dem Emulator führen.
 
@@ -173,7 +173,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 
      - Deaktivieren der vertrauenswürdigen Ausführung
 
-       Weitere Informationen finden Sie in diesem Artikel: TechNet: Hyper-V: How to Fix BIOS Errors Enabling Hyper-V (Beheben von BIOS-Fehlern beim Aktivieren von Hyper-V)
+       Weitere Informationen finden Sie in diesem Artikel: Technet: Hyper-V: Vorgehensweise zur Behebung von BIOS-Fehlern und Aktivierung von Hyper-V
 
   5. Stellen Sie sicher, dass Sie über mindestens 4 GB Systemspeicher verfügen und, dass sie nicht von anderen ressourcenintensiven Programmen und Prozessen in Anspruch genommen werden.
 
@@ -191,7 +191,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 
    Im Allgemeinen ist es an den Entwicklern der Produkte, die Software zu aktualisieren, damit sie mit Windows 8 und Hyper-V kompatibel ist.
 
-   Für folgende Produkte müssen Sie möglicherweise Upgrades durchführen, damit sie mit Windows 8 kompatibel sind: VirtualBox, Virtual PC 7, VMWare, einige VPN-Clients, Softwarefirewalls, einige Versionen von Cisco-VPN-Clients und andere Virtualisierungssysteme. Arbeiten Sie mit dem Entwickler der verdächtigen Virtualisierungssoftware zusammen, um sie dazu zu bewegen, die Software zu aktualisieren, damit sie mit Windows 8 und Hyper-V kompatibel ist.
+   Bei den folgenden Produkten sind möglicherweise für die Windows 8-Konformität Aktualisierungen erforderlich: VirtualBox, Virtual PC 7, VMWare, einige VPN-Clients, Software-Firewalls, einige Versionen von Cisco-VPN-Clients und andere Visualisierungssysteme. Arbeiten Sie mit dem Entwickler der verdächtigen Virtualisierungssoftware zusammen, um sie dazu zu bewegen, die Software zu aktualisieren, damit sie mit Windows 8 und Hyper-V kompatibel ist.
 
    Als **Problemumgehung**können Sie alle Treiber und Anwendungen von Drittanbietern deaktivieren, die zu einer Störung des vom Emulator für die Kommunikation mit Visual Studio verwendeten virtuellen Netzwerks führen kann. Diese Anwendungen können Folgendes umfassen:
 
@@ -209,11 +209,11 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 
   2. Wählen Sie für den vEthernet-Adapter (Port Windows Phone Emulator – interner Switch) **Eigenschaften** aus dem Kontextmenü.
 
-      ![Von Hyper&#45;V verwendeter virtueller Adapter](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
+      ![Von Hyper-V verwendeter virtueller Adapter](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
 
       Hier werden die Eigenschaften des Adapters angezeigt.
 
-      ![Eigenschaften des virtuellen Adapters](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")
+      ![Eigenschaften von virtuellem Adapter](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")
 
   3. Für diesen Adapter sollten nur die folgenden Elemente unter **diese Verbindung verwendet folgende Elemente** ausgewählt werden:
 
@@ -241,7 +241,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 
   - Öffnen Sie Hyper-V und wechseln Sie zum Manager für virtuelle Switches. Erstellen Sie einen virtuellen Switch mit dem Namen „Windows Phone-Emulator, interner Switch“, und setzen Sie den Verbindungstyp auf **internes Netzwerk**.
 
-     ![Manager für virtuelle Switches](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")
+     ![Manager für virtuelle Switches](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_V_Switch_Man")
 
     Starten Sie jetzt den Emulator. Es sollte funktionieren.
 
@@ -254,7 +254,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 
   Deaktivieren Sie USB3 in den BIOS-Einstellungen des Motherborads und starten Sie den Computer neu, um dieses Problem zu lösen. Prüfen Sie dann, ob Gigabyte ein Update für das BIOS Ihres Motherboards veröffentlicht hat.
 
-  Weitere Informationen finden Sie in folgendem Artikel in der Wissensdatenbank: [Boot failure after installation of Hyper-V role on Gigabyte systems (Startfehler nach der Installation der Hyper-V-Rolle auf GIGABYTE-Systemen)](https://support.microsoft.com/kb/2693144).
+  Weitere Informationen finden Sie im folgenden Knowledge Base-Artikel: [Startfehler nach Installation der Hyper-V-Rolle auf Gigabyte-Systemen](https://support.microsoft.com/kb/2693144).
 
 ## <a name="ADB"></a> Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt
  Wenn der Emulator ausgeführt wird, jedoch anscheinend nicht mit der ADB (Android Debug Bridge) verbunden ist oder in Android-Tools nicht angezeigt wird, die ADB verwenden (z. B. Android Studio oder Eclipse), müssen Sie möglicherweise den Ort anpassen, an dem der Emulator nach ADB sucht. Der Emulator verwendet zum Ermitteln des Speicherorts Ihres Android SDK einen Registrierungsschlüssel und sucht in dem Verzeichnis nach der \platform-tools\adb.exe-Datei. So ändern Sie den vom Emulator verwendeten Android-SDK-Pfad:
@@ -268,7 +268,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
   Starten den Emulator neu, nun sollte Ihnen angezeigt werden, dass der Emulator mit ADB und entsprechenden Android-Tools verbunden ist.
 
 ## <a name="XamarinPlayer"></a> Der Emulator hängt, da er den UDP-Port nicht einrichten konnte
- Dieses Problem tritt möglicherweise aufgrund von Inkompatibilität mit Xamarin Player auf. Wenn der Emulator nicht zu reagieren scheint oder Sie die Fehlermeldung „The emulator is unable to connect to the device operating system: Der UDP-Port konnte nicht eingerichtet werden.  Einige Funktionen sind möglicherweise deaktiviert“, liegt bei Ihnen möglicherweise dieses Problem vor. Führen Sie die folgenden Schritte aus:
+ Dieses Problem tritt möglicherweise aufgrund von Inkompatibilität mit Xamarin Player auf. Wenn der Emulator nicht zu reagieren scheint oder Sie diese Fehlermeldung sehen "Der Emulator konnte keine Verbindung zum Betriebssystem des Geräts herstellen: Der UDP-Port konnte nicht eingerichtet werden.  Einige Funktionen sind möglicherweise deaktiviert", liegt bei Ihnen möglicherweise dieses Problem vor. Führen Sie die folgenden Schritte aus:
 
 1. Deinstallieren Sie Xamarin
 
@@ -311,6 +311,6 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 ## <a name="Support"></a> Supportressourcen
  Wenn Ihr Hostcomputer die Systemanforderungen erfüllt und Sie ein Problem feststellen, das in diesem Handbuch zur Problembehandlung nicht erörtert wird, müssen Sie Folgendes vornehmen:
 
-- Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) und "visual-studio".
+- Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) und "visual-studio".
 
 - Melden Sie ein Problem mithilfe des Tools „Lächeln senden“ in Visual Studio oder im Emulator-Manager.

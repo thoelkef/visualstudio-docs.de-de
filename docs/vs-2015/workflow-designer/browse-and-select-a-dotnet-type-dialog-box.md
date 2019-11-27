@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa7d087d8354a25b5e16f89b72963c2bfdb55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657027"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297617"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 Wenn Sie im **Eigenschaften** Fenster, in den Dialogfeldern, in Designer, z. b. im Variablen-Designer, **nach Typen suchen auswählen...** in einer Liste mit Datentypen ist das Dialogfeld **.NET-Typ suchen und auswählen** (in Kürzungs Form als "Typbrowser" bezeichnet). In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys und Projekte auswählen.
@@ -31,7 +31,7 @@ Wenn Sie im **Eigenschaften** Fenster, in den Dialogfeldern, in Designer, z. b. 
 - Beim Hinzufügen einer catch-Anweisung für die <xref:System.Activities.Statements.TryCatch>-Aktivität.
 
 > [!NOTE]
-> Der Typbrowser kann verzweigte Visual Basic-Arraytypen, aber keine mehrdimensionalen Arraytypen anzeigen. Weitere Informationen finden Sie unter verzweigte [Arrays](http://go.microsoft.com/fwlink/?LinkId=195226) und mehr [dimensionale Arrays](http://go.microsoft.com/fwlink/?LinkId=195227) .
+> Der Typbrowser kann verzweigte Visual Basic-Arraytypen, aber keine mehrdimensionalen Arraytypen anzeigen. Weitere Informationen finden Sie unter verzweigte [Arrays](https://go.microsoft.com/fwlink/?LinkId=195226) und mehr [dimensionale Arrays](https://go.microsoft.com/fwlink/?LinkId=195227) .
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Auswählen eines Werts oder eines Verweistyps im Typbrowser
 
@@ -39,7 +39,7 @@ Wenn Sie im **Eigenschaften** Fenster, in den Dialogfeldern, in Designer, z. b. 
 
 1. Geben Sie im Feld **Typname** den Namen des Typs ein, den Sie verwenden möchten.
 
-2. Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie eine der folgenden Aktionen aus:
 
     - Sobald der Name des Typs, den Sie verwenden möchten, in der Struktur im Feld **Typname** angezeigt wird, doppelklicken Sie auf den Typ, um ihn auszuwählen.
 

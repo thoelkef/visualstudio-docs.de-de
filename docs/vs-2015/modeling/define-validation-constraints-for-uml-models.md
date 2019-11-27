@@ -11,26 +11,26 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f279216d06972578f5173e57375c89542c71e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669889"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295843"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Validierungseinschränkungen definieren, die testen, ob das Modell eine von Ihnen angegebene Bedingung erfüllt. Sie können z. B. eine Einschränkung definieren, um sicherzustellen, dass ein Benutzer keine Schleife mit Vererbungsbeziehungen erstellt. Die Einschränkung wird aufgerufen, wenn der Benutzer versucht, das Modell zu öffnen oder zu speichern. Sie kann auch manuell aufgerufen werden. Wenn die Einschränkung fehlschlägt, wird dem Fehlerfenster eine von Ihnen definierte Fehlermeldung hinzugefügt. Sie können diese Einschränkungen in einer Visual Studio-Integrationserweiterung ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
+Sie können Validierungseinschränkungen definieren, die testen, ob das Modell eine von Ihnen angegebene Bedingung erfüllt. Sie können z. B. eine Einschränkung definieren, um sicherzustellen, dass ein Benutzer keine Schleife mit Vererbungsbeziehungen erstellt. Die Einschränkung wird aufgerufen, wenn der Benutzer versucht, das Modell zu öffnen oder zu speichern. Sie kann auch manuell aufgerufen werden. Wenn die Einschränkung fehlschlägt, wird dem Fehlerfenster eine von Ihnen definierte Fehlermeldung hinzugefügt. Sie können diese Einschränkungen in einer Visual Studio-Integrationserweiterung ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
 
  Sie können auch Einschränkungen definieren, mit denen das Modell anhand externer Ressourcen (z. B. Datenbanken) überprüft wird. Wenn Sie Programmcode anhand eines ebenendiagramms überprüfen möchten, lesen Sie [Hinzufügen einer benutzerdefinierten Architektur Überprüfung zu ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
  Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Voraussetzungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="applying-validation-constraints"></a>Anwenden von Validierungseinschränkungen
  Validierungseinschränkungen werden in drei Situationen angewendet: wenn Sie ein Modell speichern, wenn Sie ein Modell öffnen, und wenn Sie im Menü **Architektur** auf **UML-Modell überprüfen** klicken. In jedem Fall werden nur die Einschränkungen angewendet, die für die jeweiligen Situation definiert wurden. In der Regel werden Einschränkungen jedoch für mehrere Situationen definiert.
@@ -63,7 +63,7 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 
 4. Testen Sie die Einschränkungen, indem Sie F5 drücken. Weitere Informationen finden Sie unter [Ausführen einer Validierungseinschränkung](#Executing).
 
-5. Installieren Sie den Menübefehl auf einem anderen Computer, indem Sie den Datei- **bin \\ \* \\ \*. vsix** kopieren, die vom Projekt erstellt wurde. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
+5. Installieren Sie den Menübefehl auf einem anderen Computer, indem Sie den Datei- **bin\\\*\\\*. vsix** kopieren, die vom Projekt erstellt wurde. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
 
    Wenn Sie andere **.cs** -Dateien hinzuzufügen, benötigen Sie normalerweise die folgenden `using` -Anweisungen:
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Erstellen Sie ein Klassenbibliotheksprojekt. Sie können dieses entweder zu einer vorhandenen VSIX-Projektmappe hinzufügen, oder Sie können eine neue Projektmappe erstellen.
 
-    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
+    1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
 
     2. Erweitern Sie unter **Installierte Vorlagen**entweder **Visual C#** oder **Visual Basic**, und wählen Sie anschließend in der mittleren Spalte **Klassenbibliothek**aus.
 
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.
 
-    - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist, in der Regel:
+    - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist, in der Regel:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.
 
-    2. Suchen Sie den Datei- **bin \\ \* \\** _yourproject_ **. VSIX.**
+    2. Suchen Sie den Datei- **bin\\\*\\** _yourproject_ **. VSIX.**
 
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 
@@ -392,9 +392,9 @@ context.LogError(... , usecase);
 
 3. Wählen Sie die Erweiterung aus, und wählen Sie anschließend **Deinstallieren**.
 
-   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, indem Sie die Datei von folgendem Speicherort löschen: *% LocalAppData%* ist in der Regel *driveName*: \Users \\*username*\AppData\Local:
+   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, indem Sie die Datei von folgendem Speicherort löschen: *% LocalAppData%* ist in der Regel *driveName*: \Users\\*username*\AppData\Local:
 
-   *% LocalAppData%* **\microsoft\visualstudio \\ [Version] \extensions**
+   *% LocalAppData%* **\microsoft\visualstudio\\[Version] \extensions**
 
 ## <a name="Example"></a> Beispiel
  In diesem Beispiel wird nach Schleifen in der Abhängigkeitsbeziehung zwischen Elementen gesucht.

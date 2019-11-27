@@ -17,19 +17,19 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c86506395ee388c7481fa8a5e9ee32320a63c030
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dca65fdfdfa6ad4ea27aa97033a95b4ed27e81ca
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664091"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300825"
 ---
-# <a name="the-visual-studio-image-library"></a>Visual Studio Bildbibliothek
+# <a name="the-visual-studio-image-library"></a>Visual Studio-Bildbibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Visual Studio, in Microsoft Windows, im Office-System und in anderer Microsoft-Software angezeigt werden. Mit dieser Sammlung von mehr als 1.000 Bildern können Sie Anwendungen erstellen, die der Microsoft-Software visuell nachempfunden sind.
 
- [Laden Sie die Visual Studio-Bildbibliothek herunter](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+ [Laden Sie die Visual Studio-Bildbibliothek herunter](https://go.microsoft.com/fwlink/p/?LinkId=275090)
 
  Die Bildbibliothek wird in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
 

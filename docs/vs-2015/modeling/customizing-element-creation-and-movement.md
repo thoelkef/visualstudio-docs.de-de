@@ -13,19 +13,19 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aa377f657143ccc03a19d99bfc9620782bb916e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8189330f5bc3ff5c9008b6f01ffc00af96162806
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655028"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301151"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einfüge-oder verschiebe Vorgang auf ein anderes gezogen wird. Mithilfe der von Ihnen angegebenen Beziehungen können die verschoten Elemente mit den Ziel Elementen verknüpft werden.
 
- Eine elementmerge-Direktive (EMD) gibt an, was geschieht, wenn ein Modellelement in einem anderen Modellelement *zusammengeführt* wird. Dies geschieht in folgenden Fällen:
+ Eine elementmerge-Direktive (EMD) gibt an, was geschieht, wenn ein Modellelement in einem anderen Modellelement *zusammengeführt* wird. Das Problem kann im folgenden Fall auftreten:
 
 - Der Benutzer zieht von der Toolbox auf das Diagramm oder eine Form.
 
@@ -94,7 +94,7 @@ Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einf�
 
 3. Legen Sie die **Indizierungs Klasse** im Fenster "DSL-Details" fest, um zu definieren, welche Klasse von Elementen auf `ExampleElement` Objekten zusammengeführt werden kann.
 
-    Wählen Sie in diesem Beispiel `ExampleElements` aus, damit der Benutzer neue Elemente auf vorhandene Elemente ziehen kann.
+    Wählen Sie in diesem Beispiel `ExampleElements`aus, damit der Benutzer neue Elemente auf vorhandene Elemente ziehen kann.
 
     Beachten Sie, dass die Indizierungs Klasse der Name der EMD im DSL-Explorer wird.
 
@@ -110,7 +110,7 @@ Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einf�
 
       Mit dem Pfad Navigations Tool können Sie die einzelnen Pfade erstellen:
 
-   3. Klicken Sie unter **Prozess Zusammenführung durch Erstellen von Links in Pfaden auf** **\<add Pfad >** .
+   3. Klicken Sie unter **Prozess Zusammenführung durch Erstellen von Links in Pfaden auf** **\<Pfad > hinzufügen**.
 
    4. Klicken Sie auf den Dropdown Pfeil rechts neben dem Listenelement. Eine Strukturansicht wird angezeigt.
 
@@ -151,7 +151,7 @@ Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einf�
 
 1. Erstellen Sie eine DSL mithilfe der Vorlage für **minimale sprach** Lösungen. Öffnen Sie das DSL-Definitions Diagramm.
 
-2. Erweitern Sie im DSL-Explorer **Domänen Klassen**, `ExampleModel` und **elementmergedirektiven**. Wählen Sie die elementmerge-Direktive mit dem Namen `ExampleElement` aus.
+2. Erweitern Sie im DSL-Explorer **Domänen Klassen**, `ExampleModel`und **elementmergedirektiven**. Wählen Sie die elementmerge-Direktive mit dem Namen `ExampleElement`aus.
 
      Diese EMD steuert, wie der Benutzer neue `ExampleElement` Objekte im Modell erstellen kann, z. b. durchziehen aus der Toolbox.
 
@@ -161,7 +161,7 @@ Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einf�
 
      Ein Buildfehler wird gemeldet, ähnlich wie: "Company. elementmergesample. ExampleElement enthält keine Definition für canmergeexampleelement..."
 
-     Sie müssen die-Methode `CanMergeExampleElement` implementieren.
+     Sie müssen die-Methode `CanMergeExampleElement`implementieren.
 
 5. Erstellen Sie eine neue Codedatei im **DSL** -Projekt. Ersetzen Sie den Inhalt durch den folgenden Code, und ändern Sie den Namespace in den Namespace des Projekts.
 
@@ -191,7 +191,7 @@ Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einf�
 
     ```
 
-     In diesem einfachen Beispiel wird die Anzahl der Elemente, die mit dem übergeordneten Modell zusammengeführt werden können, eingeschränkt. Für interessantere Bedingungen kann die-Methode alle Eigenschaften und Verknüpfungen des empfangenden Objekts überprüfen. Sie kann auch die Eigenschaften der zusammengeführten Elemente untersuchen, die in einer <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> übertragen werden. Weitere Informationen zu `ElementGroupPrototypes` finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md). Weitere Informationen zum Schreiben von Code, der ein Modell liest, finden Sie unter [navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     In diesem einfachen Beispiel wird die Anzahl der Elemente, die mit dem übergeordneten Modell zusammengeführt werden können, eingeschränkt. Für interessantere Bedingungen kann die-Methode alle Eigenschaften und Verknüpfungen des empfangenden Objekts überprüfen. Sie kann auch die Eigenschaften der zusammengeführten Elemente untersuchen, die in einer <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>übertragen werden. Weitere Informationen zu `ElementGroupPrototypes`finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md). Weitere Informationen zum Schreiben von Code, der ein Modell liest, finden Sie unter [navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 6. Testen Sie die DSL:
 
@@ -222,7 +222,7 @@ Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einf�
 
 2. Wählen Sie im DslDefinition-Diagramm die empfangende Klasse des Merge aus. In der Regel ist es die-Klasse am Quellende einer Embedding Relationship.
 
-     Wählen Sie z. b. in einer von der Lösung mit minimaler Sprache generierten DSL `ExampleModel` aus.
+     Wählen Sie z. b. in einer von der Lösung mit minimaler Sprache generierten DSL `ExampleModel`aus.
 
 3. Legen Sie im Fenster **Eigenschaften** die Eigenschaft wird von **Double abgeleitet** auf **true**festgelegt fest.
 
@@ -317,4 +317,4 @@ Sie können zulassen, dass ein Element entweder aus der Toolbox oder einem Einf�
      Der nicht verfügbare Zeiger sollte nicht angezeigt werden, und Sie sollten in der Lage sein, den neuen **eingabeport** für den vorhandenen zu löschen. Wählen Sie den neuen **eingabeport** aus, und ziehen Sie ihn an einen anderen Punkt in der **Komponente**.
 
 ## <a name="see-also"></a>Siehe auch
- [Navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md) [Anpassen von Tools und den Toolbox-](../modeling/customizing-tools-and-the-toolbox.md) Verbindungs [Diagrammen Beispiel-DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md) [Anpassen von Tools und der Toolbox](../modeling/customizing-tools-and-the-toolbox.md)

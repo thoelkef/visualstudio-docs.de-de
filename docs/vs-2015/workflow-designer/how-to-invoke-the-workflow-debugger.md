@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34c5cdae4b8730c9058a87061456d5ab6d186c53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603669"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292888"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Vorgehensweise: Aufrufen des Workflow-Debuggers
 Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Programmiersprachen geschriebene Programme. Sie können den Workflowdebugger auf folgende Weise starten:
@@ -23,10 +23,10 @@ Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Program
 
 - Drücken Sie **F5** , um die Ausführung einer Instanz des Workflows zu starten, oder, um die Ausführung nach dem Erreichen eines Breakpoints fortzusetzen.
 
-- Verwenden Sie Remotedebuggen. Weitere Informationen zur Verwendung des Remote Debuggens finden Sie unter Gewusst [wie: Aktivieren des Remote Debuggens](http://go.microsoft.com/fwlink/?LinkId=196257).
+- Verwenden Sie Remotedebuggen. Weitere Informationen zur Verwendung des Remote Debuggens finden Sie unter Gewusst [wie: Aktivieren des Remote Debuggens](https://go.microsoft.com/fwlink/?LinkId=196257).
 
     > [!NOTE]
-    > Wenn die Workflow Anwendung die x86-Architektur als Ziel verwendet und auf einem Computer gehostet wird, auf dem ein 64-Bit-Betriebssystem ausgeführt wird, funktioniert das Remote Debuggen nur dann, wenn [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] auf dem Remote Computer installiert ist oder das Ziel für die Workflow Anwendung in **geändert wird. Beliebige CPU**.
+    > Wenn die Workflow Anwendung die x86-Architektur als Ziel verwendet und auf einem Computer gehostet wird, auf dem ein 64-Bit-Betriebssystem ausgeführt wird, funktioniert das Remote Debuggen nur dann, wenn [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] auf dem Remote Computer installiert ist oder das Ziel für die Workflow Anwendung in eine **beliebige CPU**geändert wird.
 
 ### <a name="stepping-through-code"></a>Schrittweises Durchlaufen des Codes
 

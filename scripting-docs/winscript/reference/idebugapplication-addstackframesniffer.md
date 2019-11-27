@@ -54,6 +54,6 @@ HRESULT AddStackFrameSniffer(
  Obwohl Sprachmodule diese Methode in der Regel zum verfügbar machen ihrer Stapel Rahmen für den Debugger aufruft, ist es möglich, dass andere Entitäten Stapel Rahmen verfügbar machen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
- [Idebugapplication:: removestackframesniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [IDebugStackFrameSniffer-Schnittstelle](../../winscript/reference/idebugstackframesniffer-interface.md)

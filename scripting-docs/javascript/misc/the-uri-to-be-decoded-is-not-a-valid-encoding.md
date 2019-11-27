@@ -37,5 +37,5 @@ Sie haben versucht, einen nicht ordnungsgemäß formatierten URI (Uniform Resour
 - Stellen Sie sicher, dass Sie nur gültige URIs decodieren. Sie können keine normalen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Zeichenfolgen decodieren, da Sie möglicherweise ungültige Zeichen enthalten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [decodeURI-Funktion](../../javascript/reference/decodeuri-function-javascript.md)    
+ [decodeURI-Funktion](../../javascript/reference/decodeuri-function-javascript.md)   
  [decodeURIComponent-Funktion](../../javascript/reference/decodeuricomponent-function-javascript.md)

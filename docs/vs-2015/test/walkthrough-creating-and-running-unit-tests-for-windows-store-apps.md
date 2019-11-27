@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5999edf14692e5ad51f56cb7989ea07eb0f11f5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60e7ddd7c535d99abcb64d4adde97157b117f3ed
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657123"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301379"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für Windows Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72657123"
 Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Anwendungen und enthält Komponententest-Bibliotheksvorlagen für Visual C#, Visual Basic und Visual C++.
 
 > [!TIP]
-> Weitere Informationen zum Entwickeln von [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps finden Sie unter [Erste Schritte mit Windows Store-Apps](http://go.microsoft.com/fwlink/?LinkID=241410).
+> Weitere Informationen zum Entwickeln von [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps finden Sie unter [Erste Schritte mit Windows Store-Apps](https://go.microsoft.com/fwlink/?LinkID=241410).
 
  Visual Studio stellt die folgende Funktionalität für Unittests bereit:
 
@@ -38,10 +38,10 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 
 - [Ausführen von Komponententests](#CreateAndRunUnitTestWin8Tailored_Run)
 
-  Im folgenden sind Schritte zur Erstellung, zum Lauf und zum Debugging von Komponententests für verwaltete Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps beschrieben.
+  Im folgenden sind Schritte zur Erstellung, zum Lauf und zum Debugging von Komponententests für verwaltete Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps beschrieben.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Visual Studio
+## <a name="prerequisites"></a>Erforderliche Komponenten
+ Visual Studio
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Erstellen eines Komponententestprojekts
 
@@ -84,7 +84,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 3. Wählen Sie in der **Funktionen**-Liste die Funktionen, über die die getestete Komponente verfügen soll, und den für diese Tests erforderlichen Code aus. Aktivieren Sie beispielsweise das Kontrollkästchen **Internet** , wenn die Komponente, die getestet werden soll, und der Code Zugriff auf das Internet benötigen.
 
     > [!NOTE]
-    > Die ausgewählten Funktionen sollten nur Funktionen enthalten, die für die ordnungsgemäße Durchführung des [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Komponententests erforderlich sind. Sie sollten niemals Funktionen auswählen, die nicht Teil der zu testenden [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App sind. Die Funktionen sollten im Allgemeinen eine Untergruppe der Funktionen sein, die für die getestete [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App angegeben werden.
+    > Die ausgewählten Funktionen sollten nur Funktionen enthalten, die für die ordnungsgemäße Durchführung des [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Komponententests erforderlich sind. Sie sollten niemals Funktionen auswählen, die nicht Teil der zu testenden [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App sind. Die Funktionen sollten im Allgemeinen eine Untergruppe der Funktionen sein, die für die getestete [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App angegeben werden.
 
      Weitere Informationen zum Manifest-Designer finden Sie unter [Konfigurieren eines Windows 8.1-App-Pakets mit dem Manifest-Designer](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).
 
@@ -96,7 +96,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 
 1. Bearbeiten Sie im Code-Editor den Komponententest und fügen Sie die Bestätigungs- und Logikanforderungen für den Test hinzu.
 
-     Weitere Informationen finden Sie unter [Verwenden von Assert-Klassen](http://go.microsoft.com/fwlink/?LinkID=224991) in der MSDN Library.
+     Weitere Informationen finden Sie unter [Verwenden von Assert-Klassen](https://go.microsoft.com/fwlink/?LinkID=224991) in der MSDN Library.
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Run"></a> Ausführen von Komponententests
 
@@ -121,7 +121,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
     > [!TIP]
     > Der Test-Explorer stellt neben **Quelle:** einen Link zum Quellcode bereit.
 
-4. Wählen Sie **Alle ausführen** aus.
+4. Wählen Sie **Alle ausführen**aus.
 
      ![Komponenten Test- &#45; Explorer-Komponenten Test ausführen](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
 
@@ -139,13 +139,13 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 ## <a name="external-resources"></a>Externe Ressourcen
 
 ### <a name="videos"></a>Videos
- [Channel 9: Unit testing your Windows Store apps built using XAML (Durchführen von Komponententests für Ihre mit XAML erstellten Windows Store-Apps)](http://go.microsoft.com/fwlink/?LinkId=226285)
+ [Channel 9: Unit testing your Windows Store apps built using XAML (Durchführen von Komponententests für Ihre mit XAML erstellten Windows Store-Apps)](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>Foren
- [Visual Studio-Komponententest](http://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio-Komponententest](https://go.microsoft.com/fwlink/?LinkId=224477)
 
-### <a name="msdn-library"></a>MSDN Library
- [MSDN Library – Erstellen und Ausführen von Komponententests für vorhandenen Code (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)
+### <a name="msdn-library"></a>MSDN-Bibliothek
+ [MSDN Library – Erstellen und Ausführen von Komponententests für vorhandenen Code (Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=223683)
 
 ## <a name="see-also"></a>Siehe auch
  [Testen von Store-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Erstellen und Testen einer Windows Store-App mithilfe von Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

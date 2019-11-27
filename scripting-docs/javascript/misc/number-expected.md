@@ -29,5 +29,5 @@ Sie haben versucht, die **Number. Prototype. ToString** -oder **Number. Prototyp
 - Rufen Sie nur die **Number. Prototype. ToString** -oder **Number. Prototype. valueOf** -Methode für Objekte vom Typ **Number**auf.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Number-Objekt](../../javascript/reference/number-object-javascript.md)    
+ [Number-Objekt](../../javascript/reference/number-object-javascript.md)   
  [number-Eigenschaft (Fehler)](../../javascript/reference/number-property-error-javascript.md)

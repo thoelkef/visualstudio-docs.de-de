@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670125"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296877"
 ---
 # <a name="walkthrough-building-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -24,7 +24,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
 
 Dieses Thema enthält folgende Abschnitte:
 
-[Installieren der Beispielanwendung](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Installieren der Beispielanwendung](../ide/walkthrough-building-an-application.md)
 
 [Erstellen einer benutzerdefinierten Buildkonfiguration](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ Dieses Thema enthält folgende Abschnitte:
 
 [Anzeigen zusätzlicher Builddetails im Ausgabefenster](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Erstellen eines Releasebuilds](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> Installieren der Beispielanwendung
-
-Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) im Beispielkatalog auf der Microsoft-Website zu suchen und zu installieren. Der Beispielkatalog bietet eine Vielzahl von Beispielsprojekten und -code, die bzw. den Sie beim Erstellen und Entwickeln von Anwendungen herunterladen und überprüfen können.
+[Erstellen eines Releasebuilds](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>So Installieren Sie die Beispielanwendung
 
@@ -68,7 +64,7 @@ Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Int
 
      ![Dialogfeld "Neues Projekt", installierte Beispiele](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     ODER
+     OR
 
      Geben Sie der Projektmappe bei Visual Basic den Namen `IntroWPFvb`.
 
@@ -185,7 +181,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 1. Öffnen Sie das Dialogfeld **Optionen**.
 
-    ![Befehl "Optionen" im Menü "Extras"](../ide/media/exploreide-toolsoptionsmenu.png "Exploreide-toolsoptionsmenu")
+    ![Befehl „Optionen“ im Menü „Tools“](../ide/media/exploreide-toolsoptionsmenu.png "Exploreide-toolsoptionsmenu")
 
 2. Wählen Sie die Kategorie **Projekte und Projektmappen**, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
 
@@ -206,7 +202,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
    Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a> Erstellen eines Releasebuilds
+## <a name="create-a-release-build"></a>Erstellen eines Versionsbuilds
 
 Sie können eine Version der Beispielanwendung erstellen, die für das Versenden optimiert wird. Beim Releasebuild geben Sie an, dass die ausführbare Datei auf eine Netzwerkfreigabe kopiert wird, bevor der Build gestartet wird.
 
@@ -233,7 +229,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 6. Erstellen Sie die Anwendung.
 
-     ![Befehl "Projekt Mappe erstellen" im Menü "erstellen"](../ide/media/exploreide-buildsolution.png "Exploreide-BUILDSOLUTION")
+     ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "Exploreide-BUILDSOLUTION")
 
 #### <a name="to-specify-a-release-build-for-visual-c"></a>So geben Sie einen Releasebuild für Visual C-\# an
 
@@ -256,7 +252,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 6. Erstellen Sie die Anwendung.
 
-    ![Befehl "Projekt Mappe erstellen" im Menü "erstellen"](../ide/media/exploreide-buildsolution.png "Exploreide-BUILDSOLUTION")
+    ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "Exploreide-BUILDSOLUTION")
 
    Die ausführbare Datei wird auf den von Ihnen angegebenen Netzwerkpfad kopiert. Der Pfad ist \\\myserver\builds\\*Dateiname*.exe.
 

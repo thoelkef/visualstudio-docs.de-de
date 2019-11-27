@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c44b949daabf587dbca5d8a5d1d932afca2c1f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602469"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299585"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +41,12 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](http://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
 
   Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
@@ -54,7 +54,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
 - Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [Übersicht über WPF-und Silverlight-Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie in der [Übersicht über die Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="creating-the-project"></a>Erstellen des Projekts
  Erstellen Sie ein neues WPF-Projekt, um die Bestelldaten Sätze anzuzeigen.
@@ -94,7 +94,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "AdventureWorksLT" verfügbar ist, wählen Sie diese aus.
 
-      - oder -
+      \- oder -
 
    - Klicken Sie auf **neue Verbindung** , und erstellen Sie eine Verbindung mit der AdventureWorksLT-Datenbank.
 
@@ -198,7 +198,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
     - Im Kombinations Feld **Sales Order ID** wird **71774**angezeigt. Dies ist die erste Bestell-ID in der Entität.
 
-    - Für jede von Ihnen im Kombinations Feld **Sales Order ID** ausgewählte Reihenfolge werden ausführliche Bestellinformationen in der <xref:System.Windows.Controls.DataGrid> angezeigt.
+    - Für jede von Ihnen im Kombinations Feld **Sales Order ID** ausgewählte Reihenfolge werden ausführliche Bestellinformationen in der <xref:System.Windows.Controls.DataGrid>angezeigt.
 
 2. Schließen Sie die Anwendung.
 

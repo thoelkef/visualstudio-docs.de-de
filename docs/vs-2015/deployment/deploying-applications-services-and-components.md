@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289815"
 ---
 # <a name="deploying-applications-services-and-components"></a>Bereitstellen von Anwendungen, Diensten und Komponenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,18 +40,18 @@ Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, vertei
   
 |Bereitstellungsszenario|Unterstützender Inhalt|  
 |-------------------------|------------------------|  
-|**Veröffentlichen Sie in der Cloud:** Sie können Anwendungen, Diensten und Daten verfügbar machen, an einer beliebigen Stelle indem mithilfe von Visual Studio in Microsoft Azure bereitstellen.|[Veröffentlichen von Anwendungen in Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Veröffentlichen einer Windows Store-app an:** Sie können ganz einfach erstellen, senden und verkaufen Sie Ihre apps aus dem Windows Store für Kunden auf der ganzen Welt.|[Packen, bereitstellen und Abfragen von Windows Store-apps](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**Veröffentlichen Sie eine Windows Phone-app:** Sie können eine neue Anwendung oder ein Update für eine vorhandene app für die Zertifizierung im Windows Phone Dev Center senden.|[Veröffentlichen einer Windows Phone-App](http://dev.windowsphone.com/publish)|  
-|**Stellen Sie eine ASP.NET-Anwendung oder einen Dienst bereit:** Sie können ASP.NET-Anwendungen und-Dienste in einer Reihe von Möglichkeiten bereitstellen.|[Bereitstellen von ASP.NET Web-Anwendungen und Diensten](http://www.asp.net/aspnet/overview/deployment)|  
-|**Stellen Sie eine LightSwitch-Anwendung oder einen Dienst bereit:** Nachdem Sie mithilfe von LightSwitch-Anwendungen und OData-Dienste erstellen, können Sie diese auf einem Webserver oder unter Microsoft Azure bereitstellen.|[Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
-|**Veröffentlichen einer app für SharePoint:** Sie können eine app für SharePoint auf den Office Store oder in einem Anwendungskatalog für eine interne Organisation veröffentlichen.|[Veröffentlichen einer app für SharePoint mithilfe von Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Veröffentlichen einer app für Office:** Sie können eine app für Office, um den Office Store oder in einem Anwendungskatalog für eine interne Organisation veröffentlichen.|[Veröffentlichen Ihre app für Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**Bereitstellen eines WCF-Diensts:** Für andere Anwendungen können WCF RIA-Dienste verwendet werden, die Sie auf einem Webserver bereitstellen.|[Bereitstellen von WCF RIA Services-Lösungen](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**Bereitstellen eines OData-Diensts:** Andere Anwendungen können OData-Dienste, die Sie auf einem Webserver bereitstellen.|[Bereitstellen eines OData-Diensts](https://msdn.microsoft.com/library/hh973447.aspx)|  
-|**Bereitstellen einer desktop-Anwendung:** Mithilfe von ClickOnce-Bereitstellung können Sie eine Desktopanwendung auf einem Webserver oder in einer Netzwerkdateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren.|[ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)|  
-|**Erstellen Sie ein Setup-Programm:** Sie können ein Setupprogramm erstellen, mithilfe der InstallShield Limited Edition, die ist kostenlos.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**Verwalten eines vorhandenen Setupprogramms:** Weiterhin ein Setupprogramm in einer früheren Version von Visual Studio erstellt werden, indem Sie die Visual Studio Installer Projects Extension installieren.|[Visual Studio Installer Projects-Erweiterung](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Dokumentation für Installer-Projekte ist hier verfügbar: [Visual Studio-Installer-Bereitstellung](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Bereitstellen einer Visual C++-Anwendung:** Sie können die Visual C++-Laufzeit mit einer Anwendung bereitstellen, mit der zentrale Bereitstellung, lokale Bereitstellung oder statische Verknüpfung.|[Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
-|**Bereitstellen einer Anwendung zum Testen:** Stellen Sie die Anwendungen in virtuellen Umgebungen bereit, um ausgereiftere Entwicklungs- und Testvorgänge zu ermöglichen.|[Testen in einer Lab-Umgebung](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**Installieren der erforderlichen Komponenten:** Sie können die erforderlichen Komponenten für Desktopanwendungen installieren, indem Sie ein generisches Installationsprogramm konfigurieren, das als Bootstrapper bezeichnet wird.|[Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)|
+|**In der Cloud veröffentlichen:** Sie können Anwendungen, Dienste und Daten von jedem beliebigen Standort aus verfügbar machen, indem Sie Visual Studio verwenden, um Sie in Microsoft Azure bereitzustellen.|[Veröffentlichen von Anwendungen auf Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
+|**Veröffentlichen einer Windows Store-App:** Sie können Ihre apps ganz einfach aus dem Windows Store für Kunden auf der ganzen Welt erstellen, übermitteln und verkaufen.|[Verpacken, Bereitstellung und Abfrage von Windows Store-Apps](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Veröffentlichen einer Windows Phone-App:** Sie können eine neue APP oder ein Update für eine vorhandene App zur Zertifizierung im Windows Phone dev Center einreichen.|[Veröffentlichen einer Windows Phone-App](https://developer.microsoft.com/)|  
+|Stellen Sie **eine ASP.NET-Anwendung oder einen-Dienst bereit:** ASP.NET-Anwendungen und-Dienste können auf unterschiedliche Weise bereitgestellt werden.|[Bereitstellen von ASP.NET Webanwendungen und-Diensten](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|Bereitstellen **einer lighungwitch-Anwendung** Nachdem Sie mithilfe von lighungwitch Anwendungen und odata-Dienste erstellt haben, können Sie Sie auf einem Webserver oder auf Microsoft Azure bereitstellen.|[Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
+|**Veröffentlichen einer APP für SharePoint:** Sie können eine APP für SharePoint im Office Store oder in einem App-Katalog für eine interne Organisation veröffentlichen.|[Veröffentlichen einer APP für SharePoint mithilfe von Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
+|**Veröffentlichen einer APP für Office:** Sie können eine APP für Office im Office Store oder in einem App-Katalog für eine interne Organisation veröffentlichen.|[Veröffentlichen Ihrer APP für Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
+|**WCF-Dienst** bereitstellen: Andere Anwendungen können WCF RIA-Dienste verwenden, die Sie auf einem Webserver bereitstellen.|[Bereitstellen von WCF RIA Services-Lösungen](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
+|Stellen Sie **einen odata-Dienst bereit:** Andere Anwendungen können odata-Dienste verwenden, die Sie auf einem Webserver bereitstellen.|[Einen odata-Dienst bereitstellen](https://msdn.microsoft.com/library/hh973447.aspx)|  
+|Bereitstellen **einer Desktop Anwendung:** Mithilfe der ClickOnce-Bereitstellung können Sie eine Desktop Anwendung auf einem Webserver oder einer Netzwerkdatei Freigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren.|[ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)|  
+|**Erstellen Sie ein Setup Programm:** Sie können ein Setup Programm erstellen, indem Sie die InstallShield Limited Edition verwenden, die kostenlos ist.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
+|Verwalten **eines vorhandenen Setup Programms:** Verwenden Sie weiterhin ein in einer früheren Version von Visual Studio erstelltes Setup Programm, indem Sie die Erweiterung "Visual Studio-Installer Projects" installieren.|[Erweiterung für Visual Studio-Installer Projekte](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> Dokumentation für Installer-Projekte finden Sie hier: [Visual Studio-Installer Bereitstellung](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
+|**Bereitstellen einer C++ visuellen Anwendung:** Sie können die Visual C++ -Runtime mit einer Anwendung bereitstellen, indem Sie eine zentrale Bereitstellung, lokale Bereitstellung oder statische Verknüpfung verwenden.|[Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|Bereitstellen **einer Anwendung für Tests:** Sie können komplexere Entwicklungs-und Testumgebungen aktivieren, indem Sie Ihre Anwendungen in virtuellen Umgebungen bereitstellen.|[Testen in einer Lab-Umgebung](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
+|**Installieren** der erforderlichen Komponenten: Sie können erforderliche Komponenten für Desktop Anwendungen installieren, indem Sie ein generisches Installationsprogramm konfigurieren, das als Boots Trapper bezeichnet wird.|[Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)|

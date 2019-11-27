@@ -21,23 +21,23 @@ caps.latest.revision: 86
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6585fbfa7c16e710633e81841b4c8eb380f9f564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669724"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295531"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Bearbeiten von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen bereitgestellten Ansichten erstellen und bearbeiten. Durch Bereitstellen von unterschiedlichen Perspektiven auf Ihrem System helfen Ihnen diese Diagramme dabei, verschiedene Aspekte des Degins und Anforderungen zu verstehen. Visual Studio stellt Vorlagen für fünf der am häufigsten verwendeten UML-Diagrammtypen bereit:
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Dieses Thema beschreibt Verfahren zum Bearbeiten des Modells, das bei den verschiedenen Diagrammtypen gleich ist. Weitere Informationen, die spezifisch für bestimmte Diagrammtypen sind, finden [Sie unter Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md).
 
-## <a name="in-this-topic"></a>In diesem Thema
+## <a name="in-this-topic"></a>Inhalt dieses Themas
 
 - [UML-Diagramme sind Ansichten eines UML-Modells.](#Views)
 
@@ -136,11 +136,11 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>So verschieben Sie ein Ende der Verbindung zu einer anderen Form
 
-1. Führen Sie einen der folgenden Schritte aus:
+1. Führen Sie eine der folgenden Aktionen aus:
 
    - Drücken Sie **STRG** , und verschieben Sie das Ende.
 
-     \- oder -
+     \- oder –
 
    - Klicken Sie mit der rechten Maustaste auf den Connector und dann auf **Verbindung wiederherstellen**.
 
@@ -158,11 +158,11 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
 
 - Halten Sie die **STRG** -Taste gedrückt, während Sie das Mausrad drehen.
 
-     \- oder -
+     \- oder –
 
 - Halten Sie **STRG + UMSCHALT**gedrückt, und klicken Sie dann auf die linke oder Rechte Maustaste.
 
-     \- oder -
+     \- oder –
 
 - Klicken Sie auf der Symbolleiste **Architektur-Designer** auf das Pluszeichen ( **+** ) oder Minuszeichen ( **-** ), oder wählen Sie eine Zoomstufe aus.
 
@@ -173,7 +173,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
 
 1. Drücken Sie **STRG + F**.
 
-     \- oder -
+     \- oder –
 
      Zeigen Sie im Menü **Bearbeiten** auf **Suchen und ersetzen**, und klicken Sie dann auf **Schnellsuche**.
 
@@ -282,7 +282,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
 
 - Klicken Sie mit der rechten Maustaste auf das Element im Diagramm, und klicken Sie dann auf **aus Diagramm entfernen**.
 
-  \- oder -
+  \- oder –
 
 - Klicken Sie auf das Element im Diagramm, und drücken Sie dann die ENTF **-Taste.**
 
@@ -320,23 +320,11 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
 
 - Um Hinweise und Erläuterungen zu Modellelementen hinzuzufügen, können Sie Kommentare erstellen und diese dann mit den Elementen verknüpfen.
 
-- Um eine Spalte oder Zeilenformen im Diagramm sauber auszurichten, können Sie den Befehl „Formen ausrichten“ installieren. Dies ist als Beispiel für eine UML-Erweiterung verfügbar: [UML: Command zum Ausrichten von Formen](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7) .
-
 ### <a name="to-export-a-diagram-as-an-image"></a>Exportieren eines Diagramms als Bild
  Weitere Informationen finden Sie unter [Exportieren von Diagrammen als Bilder](../modeling/export-diagrams-as-images.md).
 
 ## <a name="extensions"></a>Erweitern von UML-Designern
  Sie können neue Funktionalität zu den UML-Tools hinzufügen und die Diagramm-Notation an Ihre eigenen Anforderungen anpassen. Weitere Informationen finden Sie unter [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md).
-
- Es sind mehrere Beispielerweiterungen verfügbar. Sie können sie entweder einfach installieren und verwenden oder Sie können ihren Quellcode als Grundlage für eigene Erweiterungen verwenden. Die Beispiele enthalten:
-
-|||
-|-|-|
-|[Formen ausrichten](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)|Menübefehl, der Ihnen hilft, ein Diagramm zu bereinigen.|
-|[Link zu docs](http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8)|Verknüpfen Sie ein UML-Element mit Word-Überschriften, PowerPoint-Folien, Dateien eines beliebigen Typs, UML-Diagrammen oder anderen UML-Elementen. Die Verknüpfung kann einfach durch Ziehen erstellt werden. Später können Sie auf das Element doppelklicken, um das verknüpfte Element anzuzeigen. Beispielsweise können Sie die Anwendungsfälle zu Word-Spezifikationen oder ausführlichen Aktivitätsdiagrammen und Aktionen mit Storyboard-Folien verknüpfen.|
-|[Schneller Einstieg](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)|Erstellen Sie mithilfe von Texteingabe schnell ein Modell. Nützlich zum Erfassen von Ideen in Besprechungen.|
-|[Farbe nach Stereotype](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Farben-Klassen nach Stereotyp. Sie können den Code für Ihre eigenen Stereotype leicht erweitern.|
-|[Domänen Modellierung](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)|Praktische Standardwerte für Geschäftsmodelle. Zuordnungen werden standardmäßig ohne Pfeile angezeigt, und Vorgänge werden nicht in Klassen angezeigt.|
 
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von UML-Modellierungs Projekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md) [analysieren und modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md) [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md)

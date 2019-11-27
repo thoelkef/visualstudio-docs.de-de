@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 45aa7c9807ba08751a354c336b646aa7f7ce641b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659388"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301359"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Überprüfen von Code mit Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
   **Voraussetzungen**
 
-- Visual Studio
+- Visual Studio
 
 - Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen
 
 - Eine Projektmappe, die über ein Modellierungsprojekt mit einem Ebenendiagramm verfügt. Dieses Ebenendiagramm muss mit Artefakten in Visual C# .NET- oder Visual Basic .NET-Projekten verknüpft sein, die Sie überprüfen möchten. Siehe [Erstellen von ebenendiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).
 
-  Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Sie können Code über ein geöffnetes Ebenendiagramm in Visual Studio oder eine Eingabeaufforderung manuell überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Weitere Informationen finden [Sie unter Channel 9-Video: Entwerfen und validieren ihrer Architektur mit ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073)
+  Sie können Code über ein geöffnetes Ebenendiagramm in Visual Studio oder eine Eingabeaufforderung manuell überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Weitere Informationen finden [Sie unter Channel 9-Video: Entwerfen und validieren ihrer Architektur mit ebenendiagrammen](https://go.microsoft.com/fwlink/?LinkID=252073)
 
 > [!IMPORTANT]
 > Wenn Sie die Ebenenvalidierung mit Team Foundation Build ausführen möchten, muss auch Visual Studio auf dem Buildserver installiert werden.
@@ -99,7 +99,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 2. Wenn Sie die Quelle der einzelnen Fehler anzeigen möchten, doppelklicken Sie im Fenster **Fehlerliste** auf den Fehler.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zeigt möglicherweise anstelle der Quelle des Fehlers eine Code Map an. Dies ist der Fall, wenn der Code eine Abhängigkeit von einer Assembly enthält, die nicht im Ebenendiagramm angegeben ist, oder wenn im Code eine im Ebenendiagramm angegebene Abhängigkeit fehlt. Überprüfen Sie die Code Map oder den Code, um festzustellen, ob die Abhängigkeit vorhanden sein sollte. Weitere Informationen zu Code Maps finden Sie unterzuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md).
+    > in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird möglicherweise eine Code Map anstelle der Fehlerquelle angezeigt. Dies ist der Fall, wenn der Code eine Abhängigkeit von einer Assembly enthält, die nicht im Ebenendiagramm angegeben ist, oder wenn im Code eine im Ebenendiagramm angegebene Abhängigkeit fehlt. Überprüfen Sie die Code Map oder den Code, um festzustellen, ob die Abhängigkeit vorhanden sein sollte. Weitere Informationen zu Code Maps finden Sie unterzuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md).
 
 3. Informationen zum Verwalten von Fehlern finden Sie unter [Verwalten von Validierungs Fehlern](#ManageErrors).
 
@@ -137,7 +137,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
      msbuild /p:ValidateArchitecture=true
      ```
 
-     Alle aufgetretenen Fehler werden aufgelistet. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] finden Sie unter [MSBuild](../msbuild/msbuild.md) und [MSBuild-Aufgabe](../msbuild/msbuild-task.md).
+     Alle aufgetretenen Fehler werden aufgelistet. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]finden Sie unter [MSBuild](../msbuild/msbuild.md) und [MSBuild-Aufgabe](../msbuild/msbuild-task.md).
 
    Weitere Informationen zu Validierungs Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
 
@@ -171,7 +171,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- oder -
+ \- oder –
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, das das ebenendiagramm oder die Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.
 
@@ -195,7 +195,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
     `/p:ValidateArchitecture=true`
 
-   Weitere Informationen zu Validierungs Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen über [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] finden Sie hier:
+   Weitere Informationen zu Validierungs Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen zu [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] finden Sie unter:
 
 - [Erstellen der Anwendung](/azure/devops/pipelines/index)
 

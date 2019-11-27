@@ -11,27 +11,27 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb55508c705013c3ad604c3ceeb52d7af6bb4445
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158452"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296893"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio-Grafikdiagnose
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio*Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen, und klicken Sie dann Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.  
+Visual Studio*Grafikdiagnose* ist eine Reihe von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering-und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.  
   
- Der Grafikdiagnose-Workflow beginnt mit der Erfassung eines Datensatzes zur Verwendung von Direct3D durch Ihre App – live, während der Ausführung –, damit das Verhalten sofort analysiert, freigegeben oder für die spätere Nutzung gespeichert werden kann. Erfassungssitzungen können und verwaltet werden initiiert manuell aus Visual Studio oder mit dem Befehlszeilen-Erfassungstool **dxcap.exe**. Erfassungssitzungen können auch initiiert und programmgesteuert mithilfe der Grafikdiagnose-erfassungs-APIs gesteuert werden.  
+ Der Grafikdiagnose-Workflow beginnt mit der Erfassung eines Datensatzes zur Verwendung von Direct3D durch Ihre App – live, während der Ausführung –, damit das Verhalten sofort analysiert, freigegeben oder für die spätere Nutzung gespeichert werden kann. Erfassungs Sitzungen können manuell von Visual Studio oder mit dem Befehlszeilen-Erfassungs Tool **dxcap. exe**initiiert und gesteuert werden. Erfassungs Sitzungen können auch Programm gesteuert mithilfe der Grafikdiagnose Capture-APIs initiiert und gesteuert werden.  
   
- Nachdem eine Erfassungssitzung aufgezeichnet wurde, kann der Inhalt der *Visual Studio-Grafikanalyse* zu einem beliebigen Zeitpunkt wiedergegeben werden, wobei die aufgezeichneten Frames durch genau dieselben Ressourcen neu erstellt und die von der App verwendeten Befehle gerendert werden. Anschließend können mit den Tools im Grafikanalyse-Fenster, alle aufgezeichneten Frames im Detail analysiert werden. Diese Tools können verwendet werden, um Direct3D-API-Aufrufe, Ressourcen, Pipelinezustandsobjekte, Pipelinestufen oder sogar den vollständigen Verlauf jedes Pixels in einem erfassten Frame zu untersuchen. Durch die kombinierte Verwendung dieser Tools kann ein Renderingproblem intuitiv untersucht werden, beginnend bei der Anzeige in einem erfassten Frame bis zu den Grundursachen in Quellcode, Shadern oder Grafikressourcen der App.  
+ Nachdem eine Erfassungssitzung aufgezeichnet wurde, kann der Inhalt der *Visual Studio-Grafikanalyse* zu einem beliebigen Zeitpunkt wiedergegeben werden, wobei die aufgezeichneten Frames durch genau dieselben Ressourcen neu erstellt und die von der App verwendeten Befehle gerendert werden. Mithilfe der im grafikanalyse Fenster bereitgestellten Tools können alle aufgezeichneten Frames ausführlich analysiert werden. Diese Tools können verwendet werden, um Direct3D-API-Aufrufe, Ressourcen, Pipelinezustandsobjekte, Pipelinestufen oder sogar den vollständigen Verlauf jedes Pixels in einem erfassten Frame zu untersuchen. Durch die kombinierte Verwendung dieser Tools kann ein Renderingproblem intuitiv untersucht werden, beginnend bei der Anzeige in einem erfassten Frame bis zu den Grundursachen in Quellcode, Shadern oder Grafikressourcen der App.  
   
  Sie können einen erfassten Frame mithilfe des Tools *Frame-Analyse* analysieren, um Leistungsprobleme zu diagnostizieren. Das Tool ermittelt, ob ein Potenzial zur Leistungsoptimierung vorhanden ist, indem es automatisch die Art und Weise ändert, in der die App Direct3D verwendet, und Vergleichstests zu allen Varianten ausführt. In der Vergangenheit haben Sie diese Änderungen möglicherweise manuell vorgenommen und die Ergebnisse gemessen, um herauszufinden, welche Unterschiede auftreten. Mit Frame-Analyse müssen Sie nur noch die Änderungen vornehmen, von denen Sie wissen, dass sie sich auszahlen.  
   
  Grafikdiagnose hilft Ihnen, Aussehen und Funktion einer grafisch aufwendigen Direct3D-App zu optimieren.  
   
- Weiterhin [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md) erfahren Sie, was Visual Studio Grafikdiagnose bietet.  
+ Weitere Informationen zu den Funktionen von Visual Studio Grafikdiagnose finden Sie weiter in der [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md) .  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
@@ -40,7 +40,7 @@ Visual Studio*Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen, und klicke
  [Erste Schritte](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  In diesem Abschnitt erfahren Sie, wie Sie Visual Studio-Grafikdiagnose installieren und mit der Direct3D-App verwenden.  
   
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
+ [Aufzeichnen von Grafikinformationen](../debugger/capturing-graphics-information.md)  
  Um die Grafikdiagnose zur Untersuchung eines Renderingproblems zu verwenden, zeichnen Sie zuerst Informationen darüber auf, wie die App DirectX verwendet. In der Aufzeichnungssitzung, während der Ihre App normal ausgeführt wird, können Sie die gewünschten Frames *aufzeichnen*, d. h. auswählen. Die Aufzeichnungen enthalten ausführliche Informationen darüber, wie die Frames gerendert werden. Sie können die aufgezeichneten Informationen als Grafikprotokolldokument speichern, um sie später zu untersuchen oder für andere Teammitglieder freizugeben.  
   
  [GPU-Nutzung](../debugger/gpu-usage.md)  
@@ -84,4 +84,4 @@ Visual Studio*Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen, und klicke
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)|Stellt die Debuggingfunktionen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vor.|  
-|[DirectX-Grafiken und -Spiele](http://go.microsoft.com/fwlink/?LinkId=256498)|Enthält Artikel, in denen die DirectX-Grafiktechnologien erläutert werden.|
+|[DirectX-Grafiken und -Spiele](https://go.microsoft.com/fwlink/?LinkId=256498)|Enthält Artikel, in denen die DirectX-Grafiktechnologien erläutert werden.|

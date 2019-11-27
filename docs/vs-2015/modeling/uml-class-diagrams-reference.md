@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6d2368c19292f9e4205cec9f1b42b1553ce3188f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: da4e0e3bab904b660f3d843e105b7d256a63a1b5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658437"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297216"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML-Klassendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "72658437"
 Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, die sowohl intern als auch bei der Kommunikation mit Benutzern von der Anwendung verwendet werden. Die Informationen werden ohne Verweis auf eine bestimmte Implementierung beschrieben. Die Klassen und Beziehungen können auf viele verschiedene Arten implementiert werden, z. B. Datenbanktabellen, XML-Knoten oder Zusammenstellungen von Softwareobjekten.
 
 > [!NOTE]
-> In diesem Thema geht es um UML-Klassendiagramme. Es gibt eine weitere Art von Klassendiagramm, das .NET-Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).
+> In diesem Thema geht es um UML-Klassendiagramme. Es gibt eine weitere Art von Klassendiagramm, das .NET-Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](https://go.microsoft.com/fwlink/?LinkId=142231).
 
  Um ein UML-Klassendiagramm zu erstellen, wählen Sie im Menü **Architektur** die Option **neues UML-oder ebenendiagramm**aus. Weitere Informationen zum Zeichnen von UML-Klassendiagrammen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md). Weitere Informationen zum Erstellen und Zeichnen von Modellierungs Diagrammen finden Sie unter [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="reading-class-diagrams"></a>Lesen von Klassendiagrammen
  Die Tabelle in diesem Abschnitt beschreibt die Elemente, die Sie in einem UML-Klassendiagramm sehen können. Informationen zu den Eigenschaften dieser Elemente finden Sie unter den folgenden Themen:
@@ -89,4 +89,4 @@ Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, di
 |16|**Alisierungs**|Eine alternative Darstellung der gleichen Beziehung. Die Bezeichnung auf dem Lollipopsymbol identifiziert die Schnittstelle.<br /><br /> Um diese Präsentation zu erstellen, wählen Sie eine vorhandene Realisierungsbeziehung aus. In der Nähe der Zuordnung wird ein Aktionstag angezeigt. Klicken Sie auf das Aktions-Tag, und klicken Sie dann auf **als Lollipop anzeigen**.|
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md) [Eigenschaften von Typen in UML-Klassendiagrammen](../modeling/properties-of-types-on-uml-class-diagrams.md) [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md) Eigenschaften [von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md) [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)
+ [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md) [Eigenschaften von Typen in UML-Klassendiagrammen](../modeling/properties-of-types-on-uml-class-diagrams.md) [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md) Eigenschaften [von Operationen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md) Eigenschaften [von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)

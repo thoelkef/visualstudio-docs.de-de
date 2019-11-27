@@ -1,5 +1,5 @@
 ---
-title: Debuggen von CSS-Stilen mithilfe von DOM Explorer | Microsoft-Dokumentation
+title: Debuggen von CSS-Stilen mit Dom Explorer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,17 +20,17 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 05d8cafce91fa55c515457b9f44779a06586387a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409500"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299504"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Debuggen von CSS-Stilen mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content. png "windows_and_phone_content")  
   
  Wenn Sie Windows Store- und Windows Phone Store-Apps sowie mit Visual Studio-Tools für Apache Cordova erstellte Apps debuggen, können Sie CSS-Regeln für ausgewählte DOM-Elemente und ihre untergeordneten Elemente anzeigen und ändern.  
   
@@ -48,7 +48,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 - Verwenden Sie die Registerkarte **Änderungen** (nur Windows Store- und Windows Phone Store-Apps), um CSS-Formatvorlagen zu identifizieren und nachzuverfolgen, die Sie während einer Debugsitzung geändert haben.  
   
 > [!TIP]
-> Änderungen, die Sie an Formatvorlagen auf den Registerkarten **Formatvorlagen** und **Berechnet** vornehmen, sind nicht dauerhaft. Sie gehen nach dem Beenden des Debuggens verloren. Um Quellcode zu ändern und Seiten ohne Beenden und Neustarten des Debuggers neu zu laden, aktualisieren Sie die app mithilfe der ![Schaltfläche "Aktualisieren von Windows-app"](../debugger/media/js-refresh.png "JS_Refresh") Schaltfläche (**Aktualisieren von Windows-app** ) auf die **Debuggen** Symbolleiste (nur Windows Store und Windows Phone Store-apps). Weitere Informationen finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Änderungen, die Sie an Formatvorlagen auf den Registerkarten **Formatvorlagen** und **Berechnet** vornehmen, sind nicht dauerhaft. Sie gehen nach dem Beenden des Debuggens verloren. Um Quellcode zu ändern und Seiten neu zu laden, ohne den Debugger zu beenden und neu zu starten, aktualisieren Sie die App mithilfe der ![Schaltfläche Windows-APP aktualisieren](../debugger/media/js-refresh.png "JS_Refresh") (**Windows-APP aktualisieren**) auf der Symbolleiste **Debuggen** (nur Windows Store-und Windows Phone Store-Apps). Weitere Informationen finden Sie unter [Aktualisieren einer APP (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Beispiel für das Beheben einer CSS-Regel  
  Dieses Beispiel zeigt, wie Sie CSS-Regeln überprüfen und ein Problem mit einer Formatvorlage debuggen. Nehmen wir in diesem Beispiel an, dass Sie die Farbe einer Schriftart ändern möchten, die für die Anzeige von Gruppentiteln in der Vorlage [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] "Split App" verwendet wird.  
@@ -91,23 +91,23 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 4. Wählen Sie in der Dropdownliste auf der Symbolleiste **Debuggen** die Option **Simulator** aus (**Lokaler Computer** ist der Standardwert).  
   
-     ![Debugzielliste auswählen](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Liste der debugziele auswählen](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 5. Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
-     Wenn die Anwendung vollständig geladen ist, schauen Sie sich die Überschriften der Listenelemente wie z. B. **Gruppentitel: 1**. Da die Farbe unverändert ist, wurde Orange folglich nicht auf die Titel angewendet. Die Ursache des Fehlers wird ermittelt und im DOM Explorer mithilfe der CSS-Registerkarten behoben.  
+     Wenn die Anwendung vollständig geladen ist, schauen Sie sich die Überschriften der Listenelemente wie z. B. **Gruppentitel: 1**an. Da die Farbe unverändert ist, wurde Orange folglich nicht auf die Titel angewendet. Die Ursache des Fehlers wird ermittelt und im DOM Explorer mithilfe der CSS-Registerkarten behoben.  
   
     > [!TIP]
     > Nachdem die App im Simulator angezeigt wird, positionieren Sie den Simulator rechts neben dem Visual Studio-Fenster, sodass Sie die Ergebnisse der Auswahl und Änderungen, die Sie an den CSS-Formatvorlagen vornehmen, sofort sehen können.  
   
-6. Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt. Das Beispiel zeigt die Schaltfläche **Element auswählen** . ![Wählen Sie die Schaltfläche "Element" im DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt. Das Beispiel zeigt die Schaltfläche **Element auswählen** . ![Schaltfläche "Element auswählen" in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
   
     > [!TIP]
-    > Sie können HTML-Elemente auch direkt in DOM Explorer auswählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md).  
+    > Sie können HTML-Elemente auch direkt in DOM Explorer auswählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-7. Im Simulator, zeigen Sie auf den Titel des ersten Elements in der Liste der **Gruppentitel: 1**, im linken Bereich der Homepage angezeigt. Der Titel wird wie hier gezeigt hervorgehoben:  
+7. Bewegen Sie im linken Bereich der Startseite den Mauszeiger im Simulator über den Titel des ersten Elements in der Liste **Gruppentitel: 1**. Der Titel wird wie hier gezeigt hervorgehoben:  
   
-     ![Verwenden die Schaltfläche "Element auswählen"](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
+     ![Verwenden der Schaltfläche "Element auswählen"](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     > Der Windows Phone-Emulator unterstützt das Hervorheben von Elementen durch Zeigen mit dem Mauszeiger nur teilweise.  
@@ -120,7 +120,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
      Wenn Sie das H4-Element in DOM Explorer auswählen, zeigen die DOM Explorer-Registerkarten nun die Regeln an, die dem H4-Element verknüpft sind. In diesem Beispiel ist die Registerkarte **Berechnet** mit der geöffneten `color` -Eigenschaft zu sehen:  
   
-     ![Ablaufverfolgung Registerkarte "Formatvorlagen" im DOM Explorer](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
+     ![Registerkarte "Formatvorlagen" in DOM Explorer](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
      Diese Ansicht bietet nützliche Informationen zu den Regeln, die der `color` -Formatvorlage zugeordnet sind, wie im folgenden Beispiel dargestellt.  
   
@@ -136,7 +136,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 9. Deaktivieren Sie das Kontrollkästchen für das erste Vorkommen der Formatvorlage `color` , die für die Auswahl `.itemspage .itemslist .item .item-overlay .item-title` gilt. Jetzt sehen Sie im Simulator, dass die Farbe der Elementnamen sich in orange ändert, so wie wir es beabsichtigt haben, und dass die Auswahl, die wir in CSS geändert haben, `.itemspage .itemslist .item`, nicht mehr überschrieben wird (das heißt, sie wird nicht mehr in durchgestrichenem Text dargestellt). In diesem Beispiel sehen Sie die Registerkarte **Berechnet** , nachdem die Kontrollkästchen deaktiviert wurden.  
   
-     ![Die Registerkarte "berechnet" nach der Aktualisierung des CSS-Stils](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![Die berechnete Registerkarte nach dem Aktualisieren des CSS-Stils](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. Wählen Sie die Registerkarte **Änderungen** aus.  
   
@@ -154,10 +154,10 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 15. Ändern Sie diesen Wert über die Tastatur. Ändern Sie ihn in `rgb(255, 255, 0, 0.87)`, und drücken Sie die EINGABETASTE. Im Simulator ändert sich die Farbe der Elementnamen in gelb.  
   
-16. Um Änderungen an der CSS-Quelldatei vorzunehmen, klicken Sie auf der Registerkarte **Formatvorlagen** auf den Link **items.css** . Dadurch wird "items.css" geöffnet. Hier können Sie den Wert der Formatvorlage `color` in Ihrem App-Code ändern. Um die app ohne Beenden und erneutes Starten des Debuggers zu aktualisieren, klicken Sie auf die ![Schaltfläche "Aktualisieren von Windows-app"](../debugger/media/js-refresh.png "JS_Refresh") (**Aktualisieren von Windows-app**) Schaltfläche auf der **Debuggen** Symbolleiste.  
+16. Um Änderungen an der CSS-Quelldatei vorzunehmen, klicken Sie auf **der Registerkarte** Formatvorlagen auf den Link **Items. CSS** . Dadurch wird "Items. CSS" geöffnet, in dem Sie den Wert des `color` Stils in Ihrem app-Code ändern können. Um die APP zu aktualisieren, ohne den Debugger anzuhalten und neu zu starten, klicken Sie auf der Symbolleiste **Debuggen** auf die Schaltfläche ![Windows-APP aktualisieren](../debugger/media/js-refresh.png "JS_Refresh") (**Windows-APP aktualisieren**).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
- [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)   
- [Produktsupport und Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=253502)
+ [Debuggen von Layouts mithilfe Dom Explorer](../debugger/debug-layout-using-dom-explorer.md)   
+ [DOM-Ereignislistener anzeigen](../debugger/view-dom-event-listeners.md)   
+ [Produktsupport und Barrierefreiheit](https://go.microsoft.com/fwlink/?LinkId=253502)

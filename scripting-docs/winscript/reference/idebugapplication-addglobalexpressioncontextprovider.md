@@ -54,5 +54,5 @@ HRESULT AddGlobalExpressionContextProvider(
  Diese Methode fügt dieser Anwendung einen globalen Ausdrucks Kontext Anbieter hinzu.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)

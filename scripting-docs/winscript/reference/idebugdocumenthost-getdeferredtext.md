@@ -44,10 +44,10 @@ HRESULT GetDeferredText(
  in Host definiertes Cookie, das die Anfangsposition des Texts darstellt.  
   
  `pcharText`  
- [in, out] Ein Zeichen Text Puffer. Diese Methode gibt keine Zeichen zurück, wenn dieser Parameter `NULL` ist.  
+ [in, out] Ein Zeichen Text Puffer. Diese Methode gibt keine Zeichen zurück, wenn dieser Parameter `NULL`ist.  
   
  `pstaTextAttr`  
- [in, out] Ein Zeichen Attribut Puffer. Diese Methode gibt keine Attribute zurück, wenn dieser Parameter `NULL` ist.  
+ [in, out] Ein Zeichen Attribut Puffer. Diese Methode gibt keine Attribute zurück, wenn dieser Parameter `NULL`ist.  
   
  `pcNumChars`  
  [in, out] Gibt die tatsächliche Anzahl der zurückgegebenen Zeichen/Attribute an. Dieser Parameter muss auf 0 (null) festgelegt werden, bevor diese Methode aufgerufen wird.  
@@ -64,12 +64,12 @@ HRESULT GetDeferredText(
 |`E_NOTIMPL`|Die Methode ist nicht implementiert.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt möglicherweise `E_NOTIMPL` zurück, wenn der Host `IDebugDocumentHelper::AddDeferredText` nicht aufruft.  
+ Diese Methode gibt möglicherweise `E_NOTIMPL`zurück, wenn der Host `IDebugDocumentHelper::AddDeferredText`nicht aufruft.  
   
 > [!NOTE]
 > Diese Methode gibt den Text aus dem ursprünglichen Dokument zurück. Der Host verfolgt keine Bearbeitungen oder andere Änderungen am Dokument.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumeinthost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)    
- [Idebugdocumenthelper:: adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [Idebugdocumeinthost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

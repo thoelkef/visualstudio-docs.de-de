@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren (Visual C++) | Microsoft-Dokumentation
+title: Bearbeiten und Fortfahren ( C++Visual) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,25 +18,25 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fef02f08ac635687eaaf071188ba0455c6389d9e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697386"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301060"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. Finden Sie unter [unterstützt-Code-Änderungen (C++)](../debugger/supported-code-changes-cpp.md) für Informationen zu den Einschränkungen von bearbeiten und fortfahren.  
+Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. Weitere Informationen zu den Einschränkungen von "Bearbeiten und Fortfahren" finden Sie [unter Unterstützte Code Änderungen (C++)](../debugger/supported-code-changes-cpp.md) .  
   
- Ab Visual Studio 2015 Update 1 ist jetzt können bearbeiten und Fortfahren in Windows Store C++ und DirectX-apps, da er jetzt unterstützt die **"/ Zi"** -Compilerschalter mit **/bigobj** wechseln. Sie können auch bearbeiten und Fortfahren mit Binärdateien kompiliert wird, mit der **Fastlink** wechseln.  
+ Ab Visual Studio 2015 Update 1 können Sie jetzt "Bearbeiten und Fortfahren" in Windows Store C++ -apps und DirectX-Apps verwenden, da jetzt der **/Zi** -Compilerschalter mit dem **/bigobj** -Schalter unterstützt wird. Sie können "Bearbeiten und Fortfahren" auch mit Binärdateien verwenden, die mit dem Schalter **/fastlink** kompiliert wurden.  
   
- Weitere Update 1-Verbesserungen sind ein neues Wartedialogfeld, das abgebrochen werden kann, sowie eine Benachrichtigung für den Fall, dass „Bearbeiten und Fortfahren“ für eine Datei nicht unterstützt wird. Weitere Informationen zu Update 1-Verbesserungen, finden Sie unter [Verbesserungen für C++-bearbeiten und Fortfahren in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
+ Weitere Update 1-Verbesserungen sind ein neues Wartedialogfeld, das abgebrochen werden kann, sowie eine Benachrichtigung für den Fall, dass „Bearbeiten und Fortfahren“ für eine Datei nicht unterstützt wird. Weitere Informationen zu Update 1-Verbesserungen finden Sie unter [Verbesserungen C++ für "Bearbeiten und Fortfahren" in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  Die Compileroption [/Zo (erweitertes optimiertes Debugging)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f), die in Visual Studio 2013 Update 3 eingeführt wurde, fügt zusätzliche Informationen in PDB-Dateien (Symboldateien) für Binärdateien hinzu, die ohne die Option [/Od ((Debug) deaktivieren)](https://msdn.microsoft.com/library/aafb762y.aspx) kompiliert wurden.  
   
- **/ Zo** bearbeiten und Fortfahren deaktiviert. Weitere Informationen finden Sie unter [How to: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** deaktiviert Bearbeiten und fortfahren. Weitere Informationen finden Sie unter [How to: Debug Optimized Code (Vorgehensweise: Debuggen von optimiertem Code)](../debugger/how-to-debug-optimized-code.md).  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Aktivieren oder Deaktivieren von „Bearbeiten und Fortfahren“  
  Möglicherweise möchten Sie das automatische Aufrufen von „Bearbeiten und Fortfahren“ deaktivieren, wenn Sie Änderungen am Code vornehmen, die nicht während der aktuellen Debugsitzung angewendet werden sollen. Sie können das automatische Aufrufen von „Bearbeiten und Fortfahren“ später wieder aktivieren.  

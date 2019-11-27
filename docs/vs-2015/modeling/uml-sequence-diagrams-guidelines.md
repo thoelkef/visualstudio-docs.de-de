@@ -23,21 +23,21 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 88c72ecaf44855badfd42456d9818f2ba9168a49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661731"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297145"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
+# <a name="uml-sequence-diagrams-guidelines"></a>UML-Sequenzdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion anzuzeigen. Eine Interaktion ist eine Sequenz von Meldungen zwischen typischen Instanzen von Klassen, Komponenten, Subsystemen oder Akteuren.
 
- UML-Sequenzdiagramme sind Teil eines UML-Modells und nur innerhalb von UML-Modellierungsprojekten vorhanden. Um ein UML-Sequenzdiagramm zu erstellen, klicken Sie im Menü **Architektur** auf **neues UML-oder ebenendiagramm**. Erfahren Sie mehr über [UML-Sequenzdiagramm Elemente](../modeling/uml-sequence-diagrams-reference.md) oder [UML-Modellierungs Diagramme](../modeling/edit-uml-models-and-diagrams.md) im Allgemeinen. Eine videodemo finden Sie unter [Verwenden von Sequenzdiagrammen (2010)](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
+ UML-Sequenzdiagramme sind Teil eines UML-Modells und nur innerhalb von UML-Modellierungsprojekten vorhanden. Um ein UML-Sequenzdiagramm zu erstellen, klicken Sie im Menü **Architektur** auf **neues UML-oder ebenendiagramm**. Erfahren Sie mehr über [UML-Sequenzdiagramm Elemente](../modeling/uml-sequence-diagrams-reference.md) oder [UML-Modellierungs Diagramme](../modeling/edit-uml-models-and-diagrams.md) im Allgemeinen. Eine videodemo finden Sie unter [Verwenden von Sequenzdiagrammen (2010)](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-topic"></a>In diesem Thema
  [Verwenden von UML-Sequenzdiagrammen](#Using)
@@ -115,7 +115,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 3. Zum Anzeigen einer Meldung, die aus einer unbekannten Ereignisquelle (9) stammt oder an unbekannte Empfänger (10) überträgt, zeichnen Sie eine asynchrone Meldung von oder zu einem Leerraum im Diagramm. Diese Nachrichten werden als *gefundene Meldungen* (9) und *verlorene Nachrichten* (10) bezeichnet.
 
     > [!NOTE]
-    > Um eine Gruppe von Lebenslinien zu verschieben, die über verlorene oder gefundene Meldungen verfügen, führen Sie die folgenden Schritte aus, um die Lebenslinien vor dem Verschieben auszuwählen: Zeichnen Sie ein Rechteck um diese Lebenslinien, oder halten Sie die **STRG** -Taste gedrückt, während Sie auf die einzelnen Lebenslinien klicken. Wenn Sie alle **auswählen** oder **STRG** +**A** verwenden, um alle Lebenslinien auszuwählen, und Sie dann verschieben, werden verlorene oder gefundene Meldungen, die diesen Lebenslinien zugeordnet sind, nicht verschoben. Wenn diese Situation eintritt, können Sie diese Meldungen separat verschieben.
+    > Um eine Gruppe von Lebenslinien zu verschieben, die über verlorene oder gefundene Meldungen verfügen, führen Sie die folgenden Schritte aus, um die Lebenslinien vor dem Verschieben auszuwählen: Zeichnen Sie ein Rechteck um diese Lebenslinien, oder halten Sie die **STRG** -Taste gedrückt, während Sie auf die einzelnen Lebenslinien klicken. Wenn Sie alle **auswählen** oder **STRG**+**A** verwenden, um alle Lebenslinien auszuwählen, und Sie dann verschieben, werden verlorene oder gefundene Meldungen, die diesen Lebenslinien zugeordnet sind, nicht verschoben. Wenn diese Situation eintritt, können Sie diese Meldungen separat verschieben.
 
 4. Zeichnen Sie Sequenzdiagramme für jede wichtige Meldung in der gleichen Komponente oder im gleichen System.
 
@@ -123,7 +123,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
 - Ziehen Sie eine Meldung in der zugehörigen Lebenslinie aufwärts oder abwärts. Sie können sie über andere Meldungen oder in einen bzw. aus einem Ausführungsblock ziehen.
 
-     \- oder -
+     \- oder –
 
 - Klicken Sie auf die Meldung, und verwenden Sie die nach- **oben** -und **nach-unten** -Taste, um die Nachrichten Verwenden Sie **UMSCHALT +** nach-oben und **UMSCHALT + nach-unten-Taste** , um die Reihenfolge der Meldungen zu ändern.
 
@@ -144,7 +144,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
   - Klicken Sie mit der rechten Maustaste auf die Lebenslinie, und wählen Sie dann **Klasse erstellen**.
 
-     - oder -
+     \- oder -
 
   - Wählen Sie die Lebenslinie aus, drücken Sie **F4**, und legen Sie dann im **Eigenschaften** Fenster die **Type** -Eigenschaft auf einen vorhandenen Typ fest, oder geben Sie den Namen für einen neuen Typ an. Klicken Sie mit der rechten Maustaste auf die Bezeichnung Nachricht, und wählen Sie dann **Vorgang erstellen**aus.
 
@@ -165,7 +165,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
 2. Ziehen Sie die Interaktion in das Paket.
 
-     \- oder -
+     \- oder –
 
      Klicken Sie mit der rechten Maustaste auf die Interaktion und dann auf **Ausschneiden**. Klicken Sie mit der rechten Maustaste auf das Paket, und klicken Sie auf **Einfügen**.
 
@@ -179,7 +179,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
 - Verwenden Sie das **synchrone** Tool, um eine Interaktion zu beschreiben, bei der der Absender darauf wartet, dass der Empfänger eine Antwort zurückgibt (3).
 
-     Am Ende der vorkommnisausführung wird eine **< \<return > >** Pfeil angezeigt. Er zeigt die Rückgabe der Steuerung an den Absender an.
+     Eine **<\<Rückgabe > >** Pfeil wird am Ende der vorkommnisausführung angezeigt. Er zeigt die Rückgabe der Steuerung an den Absender an.
 
 - Verwenden Sie das **asynchrone** Tool, um eine Interaktion zu beschreiben, bei der der Absender sofort fortfahren kann, ohne auf den Empfänger zu warten (4).
 
@@ -274,7 +274,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
 - Ziehen Sie eine Klasse, Komponente oder Schnittstelle aus dem UML-Modell-Explorer in ein Sequenzdiagramm.
 
-   \- oder -
+   \- oder –
 
   1. Klicken Sie im jeweiligen Diagramm mit der rechten Maustaste auf die Klasse, Komponente oder Schnittstelle, und klicken Sie dann auf **Lebenslinie erstellen**.
 
@@ -323,7 +323,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
          Die Klasse oder Schnittstelle wird im Klassendiagramm angezeigt.
 
-         \- oder -
+         \- oder –
 
     3. Ziehen Sie die neue Schnittstelle aus dem **UML-Modell-Explorer** auf eine Komponente oder einen Port in einem Komponenten Diagramm.
 
@@ -349,7 +349,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
 3. Doppelklicken Sie auf den Namen der Interaktionsverwendung, und benennen Sie sie um, um die Wirkung der wiederverwendbaren Sequenz in diesem Diagramm zu beschreiben.
 
-     \- oder -
+     \- oder –
 
      Schreiben Sie den Namen wie einen Funktionsaufruf mit Parametern.
 
@@ -357,7 +357,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
      Klicken Sie auf **neue Sequenz erstellen** , um ein neues Sequenzdiagramm zu erstellen.
 
-     \- oder -
+     \- oder –
 
      Klicken Sie auf **verknüpfen,** um eine Verknüpfung mit einem vorhandenen Diagramm zu verknüpfen.
 
@@ -384,7 +384,7 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 
 - Doppelklicken Sie auf die Interaktionsverwendung.
 
-     \- oder -
+     \- oder –
 
      Klicken Sie mit der rechten Maustaste auf die Interaktion, und klicken Sie dann auf **Gehe zu Sequenz**.
 
@@ -443,4 +443,4 @@ In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion
 5. Um neue Meldungen zu einem Fragment hinzuzufügen, verwenden Sie die Meldungstools oder die Funktion zum Kopieren und Einfügen.
 
 ## <a name="see-also"></a>Siehe auch
- [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) zur [Bearbeitung von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für UML- [Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) für UML- [Komponenten Diagramme:](../modeling/uml-component-diagrams-reference.md) [Referenz](../modeling/uml-component-diagrams-reference.md) [ Video: Entfernen von Interaktionen mit Sequenzdiagrammen](http://go.microsoft.com/fwlink/?LinkId=201113)
+ [UML-Sequenzdiagramme:](../modeling/uml-sequence-diagrams-reference.md) Referenz zur [Bearbeitung von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) zu UML- [Komponenten Diagrammen:](../modeling/uml-component-diagrams-reference.md) Referenz für UML- [Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [Video: Ändern von Interaktionen mithilfe von Sequenzdiagrammen](https://go.microsoft.com/fwlink/?LinkId=201113)

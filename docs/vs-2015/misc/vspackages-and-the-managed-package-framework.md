@@ -11,33 +11,33 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 84fb41bfc80415535ca41d6b1a8c9dcf47124c7a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683048"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298238"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages und das Managed Package Framework
-Sie können die Entwicklungszeit reduzieren, indem Sie erstellen eine VSPackage mit dem verwalteten Paket Framework (MPF)-Klassen anstelle von mithilfe von COM-Interop-Klassen.  
+Sie können die Entwicklungszeit verringern, indem Sie ein VSPackage mit den MPF-Klassen (Managed Package Framework) anstatt mithilfe von COM-Interop-Klassen erstellen.  
   
  Es gibt zwei Möglichkeiten, ein verwaltetes VSPackage zu erstellen:  
   
-- Verwenden der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
+- Verwenden der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Paket-Projektvorlage  
   
-     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Menübefehls mithilfe der Visual Studio-Paket Vorlage](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-- Erstellen Sie Ihr VSPackage ohne die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
+- Erstellen des VSPackages ohne die Projektvorlage "[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket"  
   
-     Sie können z. B. Kopieren Sie ein Beispiel für VSPackage und die GUIDs und die Namen ändern. Beispiele finden Sie im Abschnitt VSX [Code Gallery](http://code.msdn.microsoft.com/vsx/).  
+     Beispielsweise können Sie ein Beispiel-VSPackage kopieren und die GUIDs und die Namen ändern. 
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Managed Package Framework-Klassen](../misc/managed-package-framework-classes.md)  
- Beschreibt und führt die Klasse MPF-Namespaces und die DLL-Dateien.  
+ Beschreibt die MPF-Klassen-Namespaces und dll-Dateien und listet diese auf.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
- Erläutert, wie ein verwaltetes VSPackage zu erstellen.  
+ [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paket Vorlage](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ Erläutert, wie ein verwaltetes VSPackage erstellt wird.  
   
  [Verwaltete VSPackages](../misc/managed-vspackages.md)  
- Führt die Aspekte des VSPackages, die an verwalteten Code gelten.
+ Führt Aspekte von VSPackages ein, die auf verwalteten Code angewendet werden.

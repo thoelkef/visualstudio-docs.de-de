@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669684"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295511"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Im Visualisierungs-und Modellierungs-SDK können Sie Ereignishandler für die Sp
 
 2. Fügen Sie eine partielle Klassendefinition für _yourdsl_**docdata** in einer separaten Codedatei im **dslpackage** -Projekt hinzu.
 
-3. Schreiben Sie den Code des Ereignisses als Methode, wie im folgenden Beispiel gezeigt. Sie kann `static` werden, es sei denn, Sie möchten auf `DocData` zugreifen.
+3. Schreiben Sie den Code des Ereignisses als Methode, wie im folgenden Beispiel gezeigt. Sie kann `static`werden, es sei denn, Sie möchten auf `DocData`zugreifen.
 
 4. Überschreiben Sie `OnDocumentLoaded()`, um den Handler zu registrieren. Wenn Sie mehr als einen Handler haben, können Sie alle am gleichen Ort registrieren.
 
@@ -178,16 +178,16 @@ private static void AlbumTitleAdjuster(object sender,
 |Eigenschaften Name `EventManagerDirectory`|Wird ausgeführt, wenn|
 |-------------------------------------------|-------------------|
 |Element hinzugefügt|Eine Instanz einer Domänen Klasse, einer Domänen Beziehung, einer Form, eines Connector oder eines Diagramms wird erstellt.|
-|Element Deleted|Ein Modellelement wurde aus dem Element Verzeichnis des Stores entfernt und ist nicht mehr die Quelle oder das Ziel einer Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, sondern wird bei einem späteren Rückgängigmachen beibehalten.|
-|Elementeventsbegonnene|Wird am Ende einer äußeren Transaktion aufgerufen.|
+|ElementDeleted|Ein Modellelement wurde aus dem Element Verzeichnis des Stores entfernt und ist nicht mehr die Quelle oder das Ziel einer Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, sondern wird bei einem späteren Rückgängigmachen beibehalten.|
+|ElementEventsBegun|Wird am Ende einer äußeren Transaktion aufgerufen.|
 |Elementeventsended|Wird aufgerufen, wenn alle anderen Ereignisse verarbeitet wurden.|
-|Element verschoben|Ein Modellelement wurde von einer Speicher Partition in eine andere verschoben.<br /><br /> Dies steht nicht im Zusammenhang mit dem Speicherort einer Form im Diagramm.|
-|Elementpropertychanged|Der Wert einer Domänen Eigenschaft hat sich geändert. Diese wird nur ausgeführt, wenn die alten und neuen Werte ungleich sind.|
-|Roleplayerchanged|Eine der beiden Rollen (enden) einer Beziehung verweist auf ein neues Element.|
-|Roleplayerorderchanged|In einer Rolle mit einer Multiplizität größer als 1 hat sich die Sequenz der Links geändert.|
+|ElementMoved|Ein Modellelement wurde von einer Speicher Partition in eine andere verschoben.<br /><br /> Dies steht nicht im Zusammenhang mit dem Speicherort einer Form im Diagramm.|
+|ElementPropertyChanged|Der Wert einer Domänen Eigenschaft hat sich geändert. Diese wird nur ausgeführt, wenn die alten und neuen Werte ungleich sind.|
+|RolePlayerChanged|Eine der beiden Rollen (enden) einer Beziehung verweist auf ein neues Element.|
+|RolePlayerOrderChanged|In einer Rolle mit einer Multiplizität größer als 1 hat sich die Sequenz der Links geändert.|
 |Transaktionat||
-|Transaktioncommit||
-|Transaktionrolledback||
+|TransactionCommitted||
+|TransactionRolledBack||
 
 ## <a name="see-also"></a>Siehe auch
- [Reagieren auf und propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md) [Beispielcode: Leitungs Diagramme](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)

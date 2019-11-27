@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e65f2f33d9c7b034da6b58f32280c95a96bacd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651259"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301010"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Erstellen von UML-Modellierungsprojekten und -diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,10 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
  UML-Modellierungsdiagramme und Ebenendiagramme können nur in einem Modellierungsprojekt vorhanden sein. Jedes Modellierungsprojekt enthält ein freigegebenes UML-Modell und mehrere UML-Diagramme. Jedes Diagramm ist eine Teilansicht des Modells. Das UML-Modell enthält alle Elemente der UML-Diagramme und kann mit dem UML-Modell-Explorer angezeigt werden. Informationen zu Modellen und deren Beziehung zu Diagrammen finden Sie unter [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md). Informationen zum Modellieren von Projekten unter Versionskontrolle finden Sie [unter Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md) und [strukturieren der Modellierungs Lösung](../modeling/structure-your-modeling-solution.md) .
 
 > [!NOTE]
-> Es gibt eine andere Art von Diagramm, das .NET Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).
+> Es gibt eine andere Art von Diagramm, das .NET Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](https://go.microsoft.com/fwlink/?LinkId=142231).
 
 ## <a name="CreatingModelingDiagrams"></a>Erstellen eines Diagramms in einem Modellierungsprojekt
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>So erstellen Sie ein Diagramm und fügen es zu einem Projekt hinzu
 
@@ -59,7 +59,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
 
    - Wählen Sie ein Modellierungsprojekt aus, das bereits in der Projekt Mappe vorhanden ist, und klicken Sie dann auf **OK**.
 
-     \- oder -
+     \- oder –
 
    1. Wählen Sie **Neues Modellierungsprojekt erstellen**aus, und klicken Sie dann auf **OK**.
 
@@ -80,7 +80,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** *\<project Name >* unter **Vorlagen**auf den Modellierungs Diagrammtyp, z. b. **UML-Komponenten Diagramm**.
+3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** *\<Projektname >* unter **Vorlagen**auf den Modellierungs Diagrammtyp, z. b. **UML-Komponenten Diagramm**.
 
 4. Geben Sie einen Namen für das Diagramm ein, und klicken Sie dann auf **Hinzufügen**.
 

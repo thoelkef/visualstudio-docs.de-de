@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669349"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297443"
 ---
 # <a name="xml-tools-in-visual-studio"></a>XML-Tools in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +49,15 @@ Extensible Markup Language (XML) * ist eine Markup Sprache, die ein Format zum B
 
  XML ist die Grundlage vieler Funktionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Im folgenden Thema werden Namen von Tools und Funktionen in Bezug auf XML aufgelistet, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bereitgestellt werden.
 
- Weitere Informationen finden Sie im [XML Developer Center](http://go.microsoft.com/fwlink/?LinkID=100176), das die aktuelle Dokumentation, technische Informationen, Downloads, Newsgroups und andere Ressourcen für XML-Entwickler bereitstellt.
+ Weitere Informationen finden Sie im [XML Developer Center](https://go.microsoft.com/fwlink/?LinkID=100176), das die aktuelle Dokumentation, technische Informationen, Downloads, Newsgroups und andere Ressourcen für XML-Entwickler bereitstellt.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Arbeiten mit XML-Daten](../xml-tools/working-with-xml-data.md) Erläutert die Rolle von XML in der Art und Weise, wie Daten in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] behandelt werden.
+ [Arbeiten mit XML-Daten](../xml-tools/working-with-xml-data.md) Erläutert die Rolle von XML in der Art und Weise, wie Daten in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]behandelt werden.
 
  [Buggen von XSLT](../xml-tools/debugging-xslt.md) Enthält Links zu Themen über die Verwendung des Visual Studio-Debuggers zum Debuggen von XSLT.
 
-## <a name="reference"></a>Referenz
- [Microsoft. VisualStudio. XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) macht die Analyse Struktur des [XML-Editors](http://go.microsoft.com/fwlink/?LinkId=228249) über [System. Xml. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) für beliebige XML-Dokumente verfügbar.
+## <a name="reference"></a>Verweis
+ [Microsoft. VisualStudio. XmlEditor](https://go.microsoft.com/fwlink/?LinkID=165699) macht die Analyse Struktur des [XML-Editors](https://go.microsoft.com/fwlink/?LinkId=228249) über [System. Xml. Linq](https://go.microsoft.com/fwlink/?LinkId=228250) für beliebige XML-Dokumente verfügbar.
 
  [XML-Standard Referenz](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Bietet Informationen über XML-Technologien, einschließlich XML, Dokumenttyp Definition (DTD), XML Schema Definition Language (XSD) und XSLT.
 

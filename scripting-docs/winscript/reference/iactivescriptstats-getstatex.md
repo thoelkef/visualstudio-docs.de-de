@@ -59,8 +59,8 @@ HRESULT GetStatEx(
  Mit dieser Methode kann eine benutzerdefinierte Skript-Engine Statistiken für einen benutzerdefinierten Host zurückgeben.  
   
 > [!NOTE]
-> Diese Methode ist zurzeit nicht implementiert.  
+> Diese Methode ist derzeit nicht implementiert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptstats:: getstat](../../winscript/reference/iactivescriptstats-getstat.md)    
+ [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [IActiveScriptStats-Schnittstelle](../../winscript/reference/iactivescriptstats-interface.md)

@@ -62,6 +62,6 @@ HRESULT CreatePropertyBrowser(
  Diese Methode gibt einen Eigenschaften Browser zurück, der eine Variante umschließt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebughelper:: kreatepropertybrowserex](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
- [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)    
+ [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
+ [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)

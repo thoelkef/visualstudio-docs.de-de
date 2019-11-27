@@ -37,5 +37,5 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
  vorgenommen Die Haupt- [iremotedebugapplicationthread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)    
+ [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110-Schnittstelle](../../winscript/reference/iremotedebugapplication110-interface.md)

@@ -29,5 +29,5 @@ Sie haben nicht die Rechte geschweifter Klammer eingeschlossen, die das Ende des
 - Fügen Sie die Rechte geschweifter Klammer hinzu, die das Beenden der Funktion, der Schleife, des Blocks oder des Objektinitialisierers markiert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Funktions Objekt](../../javascript/reference/function-object-javascript.md)    
+ [Funktions Objekt](../../javascript/reference/function-object-javascript.md)   
  [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)

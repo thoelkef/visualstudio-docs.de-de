@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c8365f045618b92b4b34935bf5024c2ff781650
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669743"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296005"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Anzeigen eines UML-Modells in Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im Programmcode zu einer Erweiterung von Visual Studio können Sie steuern, wie Modellelemente in Diagrammen angezeigt werden. Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-In diesem Thema:
+In diesem Abschnitt:
 - [So zeigen Sie ein Element in einem Diagramm an](#Display)
 
 - [Zugreifen auf die Formen, die ein Element darstellen](#GetShapes)
@@ -41,7 +41,7 @@ In diesem Thema:
 
 |Elementtyp|Beispiel:|Code zum Anzeigen muss wie folgt lauten|
 |---------------------|-----------------|-------------------------------------|
-|Klassifizierer|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Erstellen Sie zugeordnete Formen in angegebenen Diagrammen. Sie können für jeden Klassifizierer eine beliebige Anzahl von Formen erstellen.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Legen Sie `parentShape` für eine Form auf der obersten Ebene des Diagramms auf `null` fest.<br /><br /> So zeigen Sie eine Form in einer anderen Form an:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Hinweis:** Wenn Sie die Anzeige innerhalb einer **ILinkedUndo** -Transaktion ausführen, gibt die Methode manchmal keine `IShape` zurück. Die Form wird jedoch ordnungsgemäß erstellt, und mit `IElement.Shapes().` kann darauf zugegriffen werden.|
+|Klassifizierer|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Erstellen Sie zugeordnete Formen in angegebenen Diagrammen. Sie können für jeden Klassifizierer eine beliebige Anzahl von Formen erstellen.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Legen Sie `parentShape` für eine Form auf der obersten Ebene des Diagramms auf `null` fest.<br /><br /> So zeigen Sie eine Form in einer anderen Form an:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Hinweis:** Wenn Sie die Anzeige innerhalb einer **ILinkedUndo** -Transaktion ausführen, gibt die Methode manchmal keine `IShape`zurück. Die Form wird jedoch ordnungsgemäß erstellt, und mit `IElement.Shapes().` kann darauf zugegriffen werden.|
 |Untergeordnetes Element des Klassifizierers|Attribut, Vorgang,<br /><br /> Teil, Port|Automatisch – Kein Code erforderlich.<br /><br /> Wird als Teil des übergeordneten Elements angezeigt.|
 |Verhalten|Interaktion (Sequenz),<br /><br /> Aktivität|Binden Sie das Verhalten an ein entsprechendes Diagramm.<br /><br /> Jedes Verhalten kann nur jeweils an ein Diagramm gebunden werden.<br /><br /> Beispiel:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Untergeordnetes Element des Verhaltens|Lebenslinien, Meldungen, Aktionen, Objektknoten|Automatisch – Kein Code erforderlich.<br /><br /> Wird angezeigt, wenn das übergeordnete Element an ein Diagramm gebunden ist.|
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md) [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md) [Beispiel: Ausrichten von Formen auf einem Diagramm Menübefehls](http://go.microsoft.com/fwlink/?LinkId=213809) [Beispiel: Erstellen von Elementen, Formen und Stereotypen](http://go.microsoft.com/fwlink/?LinkId=213811)
+ [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md) [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md) [Beispiel: Ausrichten von Formen auf einem Diagramm Menübefehls](https://go.microsoft.com/fwlink/?LinkId=213809) [Beispiel: Erstellen von Elementen, Formen und Stereotypen](https://go.microsoft.com/fwlink/?LinkId=213811)

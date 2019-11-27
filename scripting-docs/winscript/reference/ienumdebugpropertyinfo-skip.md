@@ -40,8 +40,8 @@ HRESULT Skip(
  in Die Anzahl der zu über springenden `DebugPropertyInfo` Strukturen in der enumerationssequenz.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`. Gibt `S_FALSE` zurück und legt den aktuellen Element Zeiger auf das Ende der Enumeration fest, wenn `celt` größer als die Anzahl der im Enumerator verbleibenden Elemente ist.  
+ Gibt eine gültige `HRESULT`zurück, die in der Regel `S_OK`. Gibt `S_FALSE` zurück und legt den aktuellen Element Zeiger auf das Ende der Enumeration fest, wenn `celt` größer als die Anzahl der im Enumerator verbleibenden Elemente ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ienumdebugpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)    
+ [Ienumdebugpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -27,17 +27,17 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e007830a91f0450f6c26c6c175196db308e3a43
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191559"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300214"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („midl.exe“). Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
+Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („midl.exe“). Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
@@ -48,7 +48,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die auf importierte IDL-Dateien durchsucht werden, einschließlich Headerdateien und Anwendungskonfigurationsdateien (ACF).  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/I**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/I**.  
   
 - **AdditionalOptions**  
   
@@ -56,7 +56,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Eine Liste der Befehlszeilenoptionen. Zum Beispiel **„** _/option1 /option2 /option#_ “. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
 - **ApplicationConfigurationMode**  
   
@@ -64,7 +64,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, dann können Sie einige ACF-Schlüsselwörter in der IDL-Datei benutzen.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/app_config**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/app_config**.  
   
 - **ClientStubFile**  
   
@@ -72,7 +72,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den Namen der Client-Stub-Datei für eine RPC-Schnittstelle an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/cstub**. Siehe auch den Parameter **ServerStubFile** in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/cstub**. Siehe auch den Parameter **ServerStubFile** in dieser Tabelle.  
   
 - **CPreprocessOptions**  
   
@@ -80,7 +80,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt Optionen für die Übergabe an den C++-Präprozessor an. Geben eine durch Leerzeichen getrennte Liste mit Präprozessoroptionen an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/cpp_opt**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/cpp_opt**.  
   
 - **DefaultCharType**  
   
@@ -96,7 +96,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**Unsigned**|**/char unsigned**|  
     |**Ascii**|**/char ascii7**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/char**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/char**.  
   
 - **DllDataFileName**  
   
@@ -104,7 +104,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den Dateinamen für die generierte *dlldata*-Datei für eine Proxy-DLL an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/dlldata**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/dlldata**.  
   
 - **EnableErrorChecks**  
   
@@ -120,7 +120,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**EnableCustom**|**/error**|  
     |**All**|**/error all**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error**.  
   
 - **ErrorCheckAllocations**  
   
@@ -128,7 +128,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, stellen Sie sicher, das keine Fehler aufgrund von unzureichendem Arbeitsspeicher aufgetreten sind.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error allocation**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error allocation**.  
   
 - **ErrorCheckBounds**  
   
@@ -136,7 +136,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, dann wird die Größe der konform-variierenden und variierenden Arrays mit der Übertragungslängenspezifikation abgeglichen.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error bounds_check**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error bounds_check**.  
   
 - **ErrorCheckEnumRange**  
   
@@ -152,7 +152,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, stellen Sie sicher, dass keine NULL-Verweiszeiger an die Client-Stubs übergeben werden.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error ref**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error ref**.  
   
 - **ErrorCheckStubData**  
   
@@ -160,7 +160,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, wird ein Stub generiert, das Unmarshalling-Ausnahmen auf Serverseite erkennt, und überträgt sie zurück an den Client.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error stub_data**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error stub_data**.  
   
 - **GenerateClientFiles**  
   
@@ -175,7 +175,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**Keine**|**/client none**|  
     |**Stub**|**/client stub**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/client**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/client**.  
   
 - **GenerateServerFiles**  
   
@@ -190,7 +190,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**Keine**|**/server none**|  
     |**Stub**|**/server stub**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/server**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/server**.  
   
 - **GenerateStublessProxies**  
   
@@ -198,7 +198,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, werden vollständig interpretierte Stubs mit Proxys ohne Stubs für Objektschnittstellen generiert.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/Oicf**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/Oicf**.  
   
 - **GenerateTypeLibrary**  
   
@@ -206,7 +206,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, dann wird keine Typbibliotheksdatei (.tlb) generiert.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/notlb**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/notlb**.  
   
 - **HeaderFileName**  
   
@@ -214,7 +214,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den Namen der generierten Headerdatei an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/h** und **/header**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/h** und **/header**.  
   
 - **IgnoreStandardIncludePath**  
   
@@ -222,7 +222,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, dann sucht die MIDL-Aufgabe nur in den angegebenen Verzeichnissen mithilfe des Schalters **AdditonalIncludeDirectories**, und ignoriert das aktuelle Verzeichnis und die durch die Umgebungsvariable „INCLUDE“ angegebenen Verzeichnisse.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/no_def_idir**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/no_def_idir**.  
   
 - **InterfaceIdentifierFileName**  
   
@@ -230,7 +230,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den Namen für die *Schnittstellen-Bezeichnerdatei* für die COM-Schnittstelle an. Dies setzt den Standardnamen außer Kraft, der durch ein Anhängen von „_i.c“ an den IDL-Dateinamen entsteht.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/iid**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/iid**.  
   
 - **LocaleID**  
   
@@ -238,7 +238,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den *Gebietsschemabezeichner* an, der den Gebrauch von internationalen Zeichen in der Eingabedatei, dem Dateinamen und den Verzeichnispfaden ermöglicht. Geben Sie einen dezimalen Gebietsschemabezeichner an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/lcid**. Siehe auch „Microsoft-Zuweisungen der Gebietsschema-IDs“ auf MSDN.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/lcid**. Siehe auch „Microsoft-Zuweisungen der Gebietsschema-IDs“ auf MSDN.  
   
 - **MkTypLibCompatible**  
   
@@ -246,7 +246,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, dann muss das Format der Eingabedatei mit mktyplib.exe Version 2.03 kompatibel sein.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/mktyplib203**. Siehe auch „Syntax der ODL-Datei“ auf MSDN.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/mktyplib203**. Siehe auch „Syntax der ODL-Datei“ auf MSDN.  
   
 - **OutputDirectory**  
   
@@ -254,7 +254,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt das Standardverzeichnis an, in dem die MIDL-Aufgabe Ausgabedateien schreibt.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/out**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/out**.  
   
 - **PreprocessorDefinitions**  
   
@@ -262,7 +262,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt einen oder mehrere *defines* an; d.h., einen Namen oder einen optionalen Wert, der an einen C-Präprozessor wie von einer `#define`-Direktive weitergegeben werden soll. Jedes „define“ ist folgendermaßen aufgebaut: *name[=value]* .  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/D**. Siehe auch die Parameter **UndefinePreprocessorDefinitions** in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/D**. Siehe auch die Parameter **UndefinePreprocessorDefinitions** in dieser Tabelle.  
   
 - **ProxyFileName**  
   
@@ -270,7 +270,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den Namen für die Schnittstellen-Proxydatei für die COM-Schnittstelle an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/proxy**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/proxy**.  
   
 - **RedirectOutputAndErrors**  
   
@@ -278,7 +278,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Leitet Ausgaben, wie z.B. Fehlermeldungen und Warnungen, aus der Standardausgabe in die angegebenen Dateien weiter.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/o**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/o**.  
   
 - **ServerStubFile**  
   
@@ -286,7 +286,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den Namen der Server-Stub-Datei für eine RPC-Schnittstelle an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/sstub**. Siehe auch den Parameter **ClientStubFile** in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/sstub**. Siehe auch den Parameter **ClientStubFile** in dieser Tabelle.  
   
 - **Source**  
   
@@ -310,7 +310,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/Zp**. Die Option **/Zp** ist äquivalent zu der Option **/pack** und der älteren Option **/align**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/Zp**. Die Option **/Zp** ist äquivalent zu der Option **/pack** und der älteren Option **/align**.  
   
 - **SuppressCompilerWarnings**  
   
@@ -318,7 +318,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, dann werden Warnmeldungen aus der MIDL-Aufgabe unterdrückt.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/no_warn**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/no_warn**.  
   
 - **SuppressStartupBanner**  
   
@@ -326,7 +326,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/nologo**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/nologo**.  
   
 - **TargetEnvironment**  
   
@@ -343,7 +343,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/env**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/env**.  
   
 - **TrackerLogDirectory**  
   
@@ -364,7 +364,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/newtlb** und **/oldtlb**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/newtlb** und **/oldtlb**.  
   
 - **TypeLibraryName**  
   
@@ -372,7 +372,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Gibt den Namen der Typbibliotheksdatei an.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/tlb**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/tlb**.  
   
 - **UndefinePreprocessorDefinitions**  
   
@@ -380,7 +380,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Entfernt jede vorherige Definition eines Namens, indem er den Namen wie eine `#undefine`-Direktive an den C-Präprozessor weitergibt. Geben Sie eine oder mehrere vorher definierte Namen ein.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/U**. Siehe auch die Parameter **PreprocessorDefinitions** in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/U**. Siehe auch die Parameter **PreprocessorDefinitions** in dieser Tabelle.  
   
 - **ValidateAllParameters**  
   
@@ -388,7 +388,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, dann werden zusätzliche Dateifehler-Überprüfungsinformationen generiert, die für Integritätsprüfungen in der Laufzeit verwendet werden. Wenn `false`, dann werden keine Dateifehler-Überprüfungsinformationen generiert.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/robust** und **/no_robist**.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/robust** und **/no_robist**.  
   
 - **WarnAsError**  
   
@@ -398,7 +398,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn der MIDL-Aufgabenparameter **WarningLevel** nicht angegeben ist, werden Warnungen auf Standardlevel und auf Level 1 wie Fehler behandelt.  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/WX**. Siehe auch den Parameter **WarningLevel** in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/WX**. Siehe auch den Parameter **WarningLevel** in dieser Tabelle.  
   
 - **WarningLevel**  
   
@@ -416,7 +416,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |**3**|**/W3**|  
     |**4**|**/W4**|  
   
-     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/W**. Siehe auch den Parameter **WarningLevel** in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/W**. Siehe auch den Parameter **WarningLevel** in dieser Tabelle.  
   
 ## <a name="remarks"></a>Anmerkungen  
   

@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665718"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297820"
 ---
-# <a name="proxy-authorization-required"></a>Proxyautorisierung erforderlich
+# <a name="proxy-authorization-required"></a>Proxyautorisierung erforderlich.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Der Fehler " **Proxy Autorisierung erforderlich** " tritt im Allgemeinen auf, wenn Benutzer über einen Proxy Server mit Visual Studio Online-Ressourcen verbunden sind und der Proxy Server die Aufrufe blockiert.
@@ -25,19 +25,19 @@ Um diesen Fehler zu beheben, führen Sie einen oder mehrere der folgenden Schrit
 
 - Starten Sie Visual Studio neu. Das Dialogfeld Proxy-Authentifizierung sollte angezeigt werden. Geben Sie Ihre Anmeldeinformationen in das Dialogfeld ein.
 
-- Wenn durch die oben genannten Schritte das Problem nicht behoben wird, besteht die Möglichkeit, dass der Proxyserver Sie nicht zur Eingabe von Anmeldeinformationen für http://go.microsoft.com -Adressen, sondern für die *. visualStudio.com-Adressen auffordert. Für diese Server müssen Sie die folgenden URLs zur Zulassungsliste hinzufügen, um die Blockierung aller Anmelde Szenarien in Visual Studio zu ermöglichen:
+- Wenn durch die oben genannten Schritte das Problem nicht behoben wird, besteht die Möglichkeit, dass der Proxyserver Sie nicht zur Eingabe von Anmeldeinformationen für https://go.microsoft.com-Adressen, sondern für die *. visualStudio.com-Adressen auffordert. Für diese Server müssen Sie die folgenden URLs zur Zulassungsliste hinzufügen, um die Blockierung aller Anmelde Szenarien in Visual Studio zu ermöglichen:
 
   - *.windows.net
 
   - *.microsoftonline.com
 
-  - *.visualstudio.com
+  - *. visualStudio.com
 
   - *.microsoft.com
 
   - *.live.com
 
-- Sie können die http://go.microsoft.com Adresse aus der Zulassungsliste entfernen, damit das Dialogfeld für die Proxy Authentifizierung sowohl für die http://go.microsoft.com Adresse als auch die Server Endpunkte angezeigt wird, wenn Visual Studio neu gestartet wird.
+- Sie können die https://go.microsoft.com Adresse aus der Zulassungsliste entfernen, damit das Dialogfeld für die Proxy Authentifizierung sowohl für die https://go.microsoft.com Adresse als auch die Server Endpunkte angezeigt wird, wenn Visual Studio neu gestartet wird.
 
 - Wenn Sie Ihre Standard Anmelde Informationen mit Ihrem Proxy verwenden möchten, gehen Sie folgendermaßen vor:
 
@@ -51,6 +51,6 @@ Um diesen Fehler zu beheben, führen Sie einen oder mehrere der folgenden Schrit
       </defaultProxy>
       ```
 
-      Fügen Sie die korrekte Proxy Adresse für Ihr Netzwerk in `proxyaddress="<http://<yourproxy:port#>` ein.
+      Fügen Sie die korrekte Proxy Adresse für Ihr Netzwerk in `proxyaddress="<http://<yourproxy:port#>`ein.
 
-- Befolgen Sie die Anweisungen in [diesem Blogbeitrag](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) , um Code hinzuzufügen, mit dem Sie den Proxy verwenden können.
+- Befolgen Sie die Anweisungen in [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) , um Code hinzuzufügen, mit dem Sie den Proxy verwenden können.

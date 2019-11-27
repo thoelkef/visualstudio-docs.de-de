@@ -44,12 +44,12 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Der Debugger läuft auf Quell Ebene ab.|  
 |APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Der Debugger läuft auf der Byte Code Ebene ab.|  
 |APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Der Debugger läuft auf Computer Ebene ab.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00f 00000|Maske zum Gestalten der Schritt Typen.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maske zum Gestalten der Schritt Typen.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Ein Haltepunkt wird gerade ausgeführt.|  
   
 ## <a name="remarks"></a>Hinweise  
  Einige Flags geben an, dass Sprachmodule bei der nächsten Gelegenheit unterbrechen werden sollen, während andere Flags den Schritt Modus des Debuggers angeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
+ [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON-Enumeration](../../winscript/reference/breakreason-enumeration.md)

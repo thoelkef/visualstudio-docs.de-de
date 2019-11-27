@@ -54,5 +54,5 @@ HRESULT Advise(
  Diese Methode stellt eine Verbindung zwischen dem einfachen Verbindungspunkt Objekt und der Senke des Clients her.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Isimpleconnectionpoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)    
+ [Isimpleconnectionpoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)   
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

@@ -9,17 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d45b7917f5e92f20ec7d7c896c2dc9540a9554e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d808fce2783d444071ea1a7976d26e3c5bf02eed
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656280"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297468"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integration von XML-Literalen in den XML-Schema-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic unterstützt XML-Literale. Dies bedeutet, dass Sie XML-Fragmente direkt in ihren Visual Basic Code integrieren können. Weitere Informationen finden Sie unter [Übersicht über XML-Literale](http://go.microsoft.com/fwlink/?LinkId=140325).
+Visual Basic unterstützt XML-Literale. Dies bedeutet, dass Sie XML-Fragmente direkt in ihren Visual Basic Code integrieren können. Weitere Informationen finden Sie unter [Übersicht über XML-Literale](https://go.microsoft.com/fwlink/?LinkId=140325).
 
  Wenn eine XSD-Datei im Visual Basic-Projekt ein XML-Literal enthält, können Sie das XML-Schemaset im XML-Schema-Explorer anzeigen. Klicken Sie mit der rechten Maustaste auf einen XML-Knoten in einem XML-Literaltyp oder einem XML-Namespace Import, und wählen Sie **im Schema-Explorer anzeigen aus**
 

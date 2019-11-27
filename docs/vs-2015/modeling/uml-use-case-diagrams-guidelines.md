@@ -15,21 +15,21 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d3434236908771cbc2149e766b841e7bcf4cb4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667843"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302833"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-Anwendungsfalldiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammenzufassen, wer die Anwendung oder das System verwendet und was Sie damit tun können. Um ein UML-Anwendungsfall Diagramm zu erstellen, klicken Sie im Menü **Architektur** auf **neues UML-oder ebenendiagramm**.
 
- Eine videodemo finden Sie unter [Organisieren von Features in Anwendungsfällen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/).
+ Eine videodemo finden Sie unter [Organisieren von Features in Anwendungsfällen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Mithilfe eines Anwendungsfalldiagramms können Sie Folgendes erläutern und kommunizieren:
 
@@ -170,7 +170,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
  ![Anwendungsfall, der viele bis viele Multiplizität anzeigt](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Wenn Sie angeben möchten, dass mehrere Akteure derselben Klasse an einem einzelnen Vorkommen eines Anwendungsfalls beteiligt sein können, legen Sie die Multiplizität am Actor-Ende der Zuordnung auf **1.. \*** fest.
+- Wenn Sie angeben möchten, dass mehrere Akteure derselben Klasse an einem einzelnen Vorkommen eines Anwendungsfalls beteiligt sein können, legen Sie die Multiplizität am Actor-Ende der Zuordnung auf **1..\*** fest.
 
    In der Abbildung können ein oder mehrere Restaurants an der Erledigung der gleichen Essensbestellung beteiligt sein.
 
@@ -190,7 +190,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
    - **1** geben Sie an, dass genau eine Instanz dieser Rolle an den einzelnen Links teilnimmt.
 
-   - **1.. \*** , dass eine oder mehrere Instanzen dieser Rolle an den einzelnen Links beteiligt sind.
+   - **1..\*** , dass eine oder mehrere Instanzen dieser Rolle an den einzelnen Links beteiligt sind.
 
    - **0.. 1** zum angeben, dass die Teilnahme optional ist.
 
@@ -270,7 +270,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>So erstellen Sie einen Link zu einem freigegebenen Dokument, einem OneNote-Element oder einer Webseite
 
-1. Sie benötigen die URL des freigegebenen Elements. Dies kann z. b. ein Netzwerkdatei Pfad sein, der mit "\\ \\" beginnt, oder eine Webseite oder SharePoint-URL, beginnend mit "http://", oder ein Link zu einem OneNote-Abschnitt, einer Seite oder einem Absatz, beginnend mit "OneNote:".
+1. Sie benötigen die URL des freigegebenen Elements. Dies kann z. b. ein Netzwerkdatei Pfad sein, der mit "\\\\" beginnt, oder eine Webseite oder SharePoint-URL, beginnend mit "http://", oder ein Link zu einem OneNote-Abschnitt, einer Seite oder einem Absatz, beginnend mit "OneNote:".
 
 2. Klicken Sie in der Toolbox auf **artefaktelement** , und klicken Sie dann in das Anwendungsfall Diagramm.
 
@@ -280,7 +280,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 > Sie können auf ein Artefakt doppelklicken, um das Diagramm oder das Dokument zu öffnen, mit dem es verknüpft ist.
 
 ### <a name="linking-use-cases-to-work-items"></a>Verknüpfen von Anwendungsfällen mit Arbeitsaufgaben
- Wenn das Projekt [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] verwendet und Sie [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] haben, können Sie jeden Anwendungsfall mit einer Arbeitsaufgabe in [!INCLUDE[esprfound](../includes/esprfound-md.md)] verknüpfen. Informationen dazu, wie Sie diese Links erstellen, finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).
+ Wenn das Projekt [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] verwendet und Sie [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]haben, können Sie jeden Anwendungsfall mit einer Arbeitsaufgabe in [!INCLUDE[esprfound](../includes/esprfound-md.md)]verknüpfen. Informationen dazu, wie Sie diese Links erstellen, finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).
 
  Sie haben dann folgende Möglichkeiten:
 
@@ -420,7 +420,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 3. Ziehen Sie vorhandene Anwendungsfälle in das oder aus dem Subsystem, um seinen Inhalt anzupassen.
 
-   \- oder -
+   \- oder –
 
    Um einen neuen Anwendungsfall direkt in einem Subsystem zu erstellen, klicken Sie in der Toolbox auf **Anwendungsfall** , und klicken Sie dann innerhalb des Subsystems.
 
@@ -441,4 +441,4 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
  ![Subsysteme zeigen verschiedene Versionen eines Systems an.](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
 ## <a name="see-also"></a>Siehe auch
- [Modell Benutzer Anforderungen](../modeling/model-user-requirements.md) [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md) [Bearbeiten von UML-Modellen und Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [UML Aktivitätsdiagramme:](../modeling/uml-activity-diagrams-guidelines.md) [richtlinienvideo: Organisieren von Features in Anwendungsfällen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
+ [Modell Benutzer Anforderungen](../modeling/model-user-requirements.md) [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md) [Bearbeiten von UML-Modellen und Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme:](../modeling/uml-component-diagrams-reference.md) Referenz [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md) - [Video: Organisieren von Features in Anwendungsfällen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

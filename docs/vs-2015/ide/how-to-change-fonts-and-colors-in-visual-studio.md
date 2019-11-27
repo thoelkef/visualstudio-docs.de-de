@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645442"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300136"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Gewusst wie: Ändern von Schriftarten und Farben in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf versc
     > [!IMPORTANT]
     > Wenn Sie ein Farbschema ändern, wird der Text in der IDE auf die Standardeinstellung oder zuvor benutzerdefinierte Schriftarten und Größen zurückgesetzt.
     >
-    >  Wenn Sie Visual Studio Professional, Visual Studio Premium oder Visual Studio Ultimate haben, können Sie weitere vordefinierte Farbschemas installieren sowie eigene erstellen, indem Sie den [Visual Studio 2013 Color Theme Editor](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe) herunterladen und installieren.
+    >  Wenn Sie Visual Studio Professional, Visual Studio Premium oder Visual Studio Ultimate haben, können Sie weitere vordefinierte Farbschemas installieren sowie eigene erstellen, indem Sie den [Visual Studio 2013 Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=MatthewJohnsonMSFT.VisualStudio2013ColorThemeEditor) herunterladen und installieren.
 
 ### <a name="use-windows-high-contrast-colors"></a>Verwenden kontrastreicher Windows-Farben
 

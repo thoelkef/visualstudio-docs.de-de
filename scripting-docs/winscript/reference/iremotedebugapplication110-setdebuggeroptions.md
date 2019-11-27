@@ -34,11 +34,11 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>Parameter  
  `mask`  
- Die [SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) -enumerationsmaske.  
+ Die [SCRIPT_DEBUGGER_OPTIONS enumerationsmaske](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
  `value`  
- Der [SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) -Enumerationswert.  
+ Der [SCRIPT_DEBUGGER_OPTIONS Enumerationswert](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)    
+ [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110-Schnittstelle](../../winscript/reference/iremotedebugapplication110-interface.md)

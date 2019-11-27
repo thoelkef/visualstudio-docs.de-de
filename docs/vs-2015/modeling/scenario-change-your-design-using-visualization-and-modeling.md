@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e66f8438e0c28a64d2e8705fea0ffa5e362887b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671255"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296019"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 - [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)
 
   > [!NOTE]
-  > Einige Versionen von Visual Studio unterstützen Ebenenvalidierung und schreibgeschützte Versionen von Code Maps und UML-Diagrammen zur Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+  > Einige Versionen von Visual Studio unterstützen Ebenenvalidierung und schreibgeschützte Versionen von Code Maps und UML-Diagrammen zur Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="UnderstandingCommunicating"></a> Verstehen und Kommunizieren von Informationen zum System
  Es gibt keine vorgeschriebene Reihenfolge zum Verwenden der Visual Studio-Modellierungsdiagramme. Daher können Sie sie ganz Ihren Anforderungen oder dem Ansatz entsprechend verwenden. Normalerweise rufen Teams ihre Modelle im Verlauf des Projekts wiederholt und häufig auf. Jedes Diagramm bietet bestimmte Vorteile, um verschiedene Aspekte des Systems in der Entwicklung zu verstehen, zu beschreiben und zu kommunizieren.
@@ -241,7 +241,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 
 |**Code Map oder Diagramm**|**Zeigt Folgendes an**|
 |------------------------|---------------|
-|*Code Map*<br /><br /> Thema<br /><br /> -    Zuordnen von[Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Anpassen von Code Maps durch Bearbeiten der dgml-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Abhängigkeiten und andere Beziehungen im Code.<br /><br /> Dinner Now könnte z. B. damit beginnen, Assembly-Code Maps zu überprüfen, um eine Übersicht der Assemblys und ihrer Abhängigkeiten zu erhalten. Sie können in den Code Maps einen Drilldown durchführen, um die Namespaces und Klassen in diesen Assemblys zu untersuchen.<br /><br /> Dinner Now kann auch Code Maps erstellen, um bestimmte Bereiche und andere Arten von Beziehungen im Code zu untersuchen. Sie verwenden den Projektmappen-Explorer, um relevante Bereiche und Beziehungen zu finden und auszuwählen.|
+|*Code Map*<br /><br /> Thema<br /><br /> -   Zuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Anpassen von Code Maps durch Bearbeiten der dgml-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Abhängigkeiten und andere Beziehungen im Code.<br /><br /> Dinner Now könnte z. B. damit beginnen, Assembly-Code Maps zu überprüfen, um eine Übersicht der Assemblys und ihrer Abhängigkeiten zu erhalten. Sie können in den Code Maps einen Drilldown durchführen, um die Namespaces und Klassen in diesen Assemblys zu untersuchen.<br /><br /> Dinner Now kann auch Code Maps erstellen, um bestimmte Bereiche und andere Arten von Beziehungen im Code zu untersuchen. Sie verwenden den Projektmappen-Explorer, um relevante Bereiche und Beziehungen zu finden und auszuwählen.|
 |*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|
 
  Beispiel: Die Entwicklerin erstellt eine Code Map. Sie passt den Umfang an, um sich auf die Bereiche zu konzentrieren, die von dem neuen Szenario betroffen sind. Diese Bereiche werden ausgewählt und auf der Code Map hervorgehoben:
@@ -363,7 +363,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 
 - [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
 
-- [Verwenden der Versionskontrolle](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [Verwenden der Versionskontrolle](https://go.microsoft.com/fwlink/?LinkID=525605)
 
 - [Erstellen der Anwendung](/azure/devops/pipelines/index)
 
@@ -590,7 +590,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 
 |**Diagramm**|**Beschreibung**|
 |-----------------|---------------------|
-|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Kandidaten für Komponenten zu identifizieren, erstellen Sie eine Code Map, und gruppieren Sie Elemente nach ihrer Funktion im System.<br /><br /> Thema<br /><br /> -    Zuordnen von[Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)|
+|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Kandidaten für Komponenten zu identifizieren, erstellen Sie eine Code Map, und gruppieren Sie Elemente nach ihrer Funktion im System.<br /><br /> Thema<br /><br /> -   Zuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)|
 |Sequenzdiagramm|Visualisieren Sie die Sequenz der Interaktionen zwischen Komponenten oder den Teilen innerhalb einer Komponente.<br /><br /> Um aus einer Komponente eine Lebenslinie in einem Sequenzdiagramm zu erstellen, klicken Sie mit der rechten Maustaste auf die Komponente, und klicken Sie dann auf **Lebenslinie erstellen**.<br /><br /> Thema<br /><br /> -   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)|
 |Klassendiagramm (UML)|Definieren Sie die Schnittstellen an den bereitgestellten oder angeforderten Ports sowie die Klassen, die die Funktionalität der Komponenten implementieren.<br /><br /> Thema<br /><br /> -   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|
 |Ebenendiagramm|Beschreiben Sie die logische Architektur des Systems in Bezug auf die Komponenten. Stellen Sie durch Ebenenvalidierung sicher, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Thema<br /><br /> -   [Erstellen von ebenendiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)|
@@ -697,9 +697,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 
 - Horizontale *Meldungen* stellen Methodenaufrufe, Webdienstmeldungen oder eine andere Kommunikationsarten dar. *Vorkommnisausführungen* sind vertikal schraffierte Rechtecke, die auf Lebenslinien angezeigt werden und die Zeiträume darstellen, in denen Objektprozessaufrufe empfangen werden.
 
-- Während einer *synchronen* Meldung wartet das Absender Objekt, dass die Steuerung auf < \<return > > wie in einem regulären Funktions Aufruf. Bei einer *asynchronen* Meldung kann der Absender unmittelbar fortfahren.
+- Während einer *synchronen* Nachricht wartet das Absender Objekt auf die < Steuerung,\<Rückgabe > > wie in einem regulären Funktions Aufruf. Bei einer *asynchronen* Meldung kann der Absender unmittelbar fortfahren.
 
-- Verwenden Sie < \<create > > Meldungen, um die Erstellung von Objekten durch andere Objekte anzugeben. Dies sollte die erste an das Objekt gesendete Meldung sein.
+- Verwenden Sie <\<erstellen Sie > > Meldungen, um die Erstellung von Objekten durch andere Objekte anzugeben. Dies sollte die erste an das Objekt gesendete Meldung sein.
 
   Thema
 
@@ -804,7 +804,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Komponentendiagramm|Beschreiben Sie Komponenten, ihre Schnittstellen und ihre Beziehungen. Eine Klasse kann auch eine vollständige Komponente beschreiben.<br /><br /> Thema<br /><br /> -   [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponenten Diagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|
 |Ebenendiagramm|Definieren Sie die logische Architektur des Systems in Bezug auf Klassen.<br /><br /> Stellen Sie durch Ebenenvalidierung sicher, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Thema<br /><br /> -   [Erstellen von ebenendiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)|
 |Sequenzdiagramm|Definieren Sie die Typen von Lebenslinien sowie die Vorgänge, Parameter und Rückgabewerte für alle Meldungen, die die Lebenslinie empfangen kann.<br /><br /> Um eine Lebenslinie aus einem Typ in einem Klassendiagramm zu erstellen, klicken Sie mit der rechten Maustaste auf den Typ, und klicken Sie dann auf **Lebenslinie erstellen**erstellen.<br /><br /> Thema<br /><br /> -   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)|
-|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Klassen, ihre Beziehungen und ihre Methoden zu identifizieren, erstellen Sie eine Code Map, in der diese Elemente angezeigt werden.<br /><br /> Thema<br /><br /> -    Zuordnen von[Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)|
+|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Klassen, ihre Beziehungen und ihre Methoden zu identifizieren, erstellen Sie eine Code Map, in der diese Elemente angezeigt werden.<br /><br /> Thema<br /><br /> -   Zuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a>Beschreiben der logischen Architektur: ebenendiagramme
  Ebenendiagramme beschreiben die logische Architektur eines Systems, indem die Artefakte in der Projektmappe in abstrakten Gruppen bzw. *Ebenen*organisiert werden. Artefakte können viele Dinge sein, z. B. Namespaces, Projekte, Klassen, Methoden usw. Ebenen stellen die Rollen oder Aufgaben dar, die die Artefakte im System ausführen. Sie können auch eine Ebenenvalidierung in die Build- und Eincheckvorgänge einschließen, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.
@@ -875,14 +875,14 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 
 |**Diagramm**|**Beschreibung**|
 |-----------------|---------------------|
-|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Ebenen zu erstellen, generieren Sie eine Code Map, und gruppieren Sie dann die Elemente auf der Code Map als potenzielle Ebenen. Ziehen Sie die Gruppen aus der Code Map in das Ebenendiagramm.<br /><br /> Thema<br /><br /> -    Zuordnen von[Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)|
+|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Ebenen zu erstellen, generieren Sie eine Code Map, und gruppieren Sie dann die Elemente auf der Code Map als potenzielle Ebenen. Ziehen Sie die Gruppen aus der Code Map in das Ebenendiagramm.<br /><br /> Thema<br /><br /> -   Zuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)|
 |Komponentendiagramm|Beschreiben Sie Komponenten, ihre Schnittstellen und ihre Beziehungen.<br /><br /> Um Ebenen zu visualisieren, erstellen Sie ein Komponentendiagramm, das die Funktionalität verschiedener Komponenten im System beschreibt.<br /><br /> Thema<br /><br /> -   [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponenten Diagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Siehe auch
  [Visualisieren von Code](../modeling/visualize-code.md) [Erstellen von Modellen für Ihre APP verwenden von](../modeling/create-models-for-your-app.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Verwenden von Modellen in der Agile-Entwicklung](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) Überprüfen des [Systems während der Entwicklung](../modeling/validate-your-system-during-development.md) [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)

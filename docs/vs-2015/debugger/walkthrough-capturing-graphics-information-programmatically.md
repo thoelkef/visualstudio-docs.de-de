@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erfassen von Grafikinformationen programmgesteuert | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Programm gesteuertes erfassen von Grafik Informationen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444334"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296909"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
     ```  
   
     > [!IMPORTANT]
-    > Schließen Sie nicht die Header-Datei vsgcapture.h—which unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher – programmgesteuerte Erfassung in Ihren Windows 8.1-apps ausführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei enthalten ist, nachdem die d3d11_2.h-Header enthalten ist, gibt der Compiler eine Warnung aus. Wenn vor dem d3d11_2.h vsgcapture.h enthalten ist, wird die app nicht starten.  
+    > Schließen Sie nicht die Headerdatei vsgcapture.h ein – diese unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher –, um die programmgesteuerte Erfassung in Ihren Windows 8.1-Apps auszuführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei nach dem einschließen des d3d11_2. h-Headers enthalten ist, gibt der Compiler eine Warnung aus. Wenn vsgcapture. h vor d3d11_2. h eingeschlossen ist, wird die APP nicht gestartet.  
   
     > [!NOTE]
     > Wenn das DirectX SDK vom Juni 2010 auf Ihrem Computer installiert wurde und der Include-Pfad Ihres Projekts `%DXSDK_DIR%includex86`enthält, verschieben Sie diesen Teil an das Ende des Include-Pfads. Gehen Sie beim Bibliothekspfad genauso vor.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Da das Windows Phone 8.1 SDK den DXProgrammableCapture.h-Header einzuschließen, nicht, müssen Sie definieren die `IDXGraphicsAnalysis` -Schnittstelle selbst, sodass Sie verwenden können, die `BeginCapture()` und `EndCapture()` Methoden. Schließen Sie die anderen Header so ein, wie dies im vorherigen Abschnitt beschrieben ist.  
+ Da das Windows Phone 8,1 SDK den dxprogrammablecapture. h-Header nicht enthält, müssen Sie die `IDXGraphicsAnalysis` Schnittstelle selbst definieren, damit Sie die Methoden `BeginCapture()` und `EndCapture()` verwenden können. Schließen Sie die anderen Header so ein, wie dies im vorherigen Abschnitt beschrieben ist.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>So definieren Sie die IDXGraphicsAnalysis-Schnittstelle  
   
@@ -85,7 +85,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
  Bevor Sie Grafikinformationen von DirectX 11.2 erfassen können, müssen Sie die DXGI-Debugschnittstelle abrufen.  
   
 > [!IMPORTANT]
-> Wenn Sie programmgesteuerte Erfassung verwenden zu können, müssen Sie weiterhin Ihre app unter der Grafikdiagnose ausführen (Alt + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) oder unter dem [Befehlszeilen-Erfassungs-Tool](../debugger/command-line-capture-tool.md).  
+> Wenn Sie die programmgesteuerte Erfassung verwenden, müssen Sie Ihre APP weiterhin unter Grafik Diagnose (ALT + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) oder unter dem [Befehlszeilen-Erfassungs Tool](../debugger/command-line-capture-tool.md)ausführen.  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>So rufen Sie die IDXGraphicsAnalysis-Schnittstelle ab  
   
@@ -145,7 +145,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Vorbereiten Ihres Computers für die Verwendung der programmgesteuerten Erfassung  
  Die API für die programmgesteuerte Erfassung verwendet Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um die Erfassungsfunktionen bereitzustellen. Auf dem Computer, auf dem die App läuft, müssen die Remote-Tools installiert sein, auch wenn Sie die programmgesteuerte Erfassung auf Ihrem lokalen Computer anwenden. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss nicht laufen, wenn Sie die programmgesteuerte Erfassung auf einem lokalen Computer durchführen.  
   
- Um die APIs für die Remote-Erfassung in einer App zu verwenden, die auf einem Computer läuft, müssen Sie zuerst die Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf diesem Computer installieren. Verschiedene Versionen der Remote-Tools unterstützen verschiedene Hardwareplattformen. Informationen zur Installation der Remotetools finden Sie auf der Download-Website von Microsoft auf der [Downloadseite für Remotetools](http://go.microsoft.com/fwlink/p/?LinkId=246691) .  
+ Um die APIs für die Remote-Erfassung in einer App zu verwenden, die auf einem Computer läuft, müssen Sie zuerst die Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf diesem Computer installieren. Verschiedene Versionen der Remote-Tools unterstützen verschiedene Hardwareplattformen. Informationen zur Installation der Remotetools finden Sie auf der Download-Website von Microsoft auf der [Downloadseite für Remotetools](https://go.microsoft.com/fwlink/p/?LinkId=246691) .  
   
  Alternativ werden durch [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die erforderlichen Komponenten zur Durchführung der Remote-Erfassung für 32-Bit-Apps installiert.  
   
@@ -182,7 +182,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
    Wenn Sie diesen Schritt nicht ausführen, lautet der Dateiname default.vsglog. Wenn Sie `DONT_SAVE_VSGLOG_TO_TEMP`nicht definiert haben, ist der Speicherort der Datei relativ zum Temp-Verzeichnis; andernfalls ist er relativ zum Arbeitsverzeichnis oder an einem anderen Speicherort, wenn Sie einen absoluten Dateinamen angegeben haben.  
   
-  Für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -apps, den Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und -app und befindet sich in der Regel an einem Ort wie z. B. C:\users\\*Benutzername*\AppData\Local\Packages\\ *paketfamilienname*\TempState\\. Für desktop-apps, der Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und befindet sich in der Regel an einem Ort wie z. B. C:\Users\\*Benutzername*\AppData\Local\Temp\\.  
+  Bei [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps ist der Speicherort des TEMP-Verzeichnisses für jeden Benutzer und jede APP spezifisch und befindet sich in der Regel an einem Speicherort wie z. b. c:\Users\\*username*\appdata\local\packages\\*Paket Familienname*\tempstate\\. Bei Desktop-Apps ist der Speicherort des TEMP-Verzeichnisses für jeden Benutzer spezifisch und befindet sich normalerweise an einem Speicherort wie c:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 > Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  
@@ -196,9 +196,9 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 ## <a name="next-steps"></a>Nächste Schritte  
  In dieser exemplarische Vorgehensweise wurde veranschaulicht, wie Grafikinformationen programmatisch erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:  
   
-- Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. Finden Sie unter [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. Siehe [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Erfassen von Grafikinformationen](../debugger/walkthrough-capturing-graphics-information.md)   
+ Exemplarische Vorgehensweise [: Erfassen von Grafik Informationen](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Befehlszeilen-Erfassungstool](../debugger/command-line-capture-tool.md)

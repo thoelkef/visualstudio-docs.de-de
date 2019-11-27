@@ -54,5 +54,5 @@ HRESULT AddApplication(
  Diese Methode fügt der Liste der laufenden Anwendungen im Machine Debug-Manager eine Anwendung hinzu.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iprocessdebug Manager-Schnittstelle](../../winscript/reference/iprocessdebugmanager-interface.md)    
+ [Iprocessdebug Manager-Schnittstelle](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

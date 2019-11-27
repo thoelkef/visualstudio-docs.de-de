@@ -1,5 +1,5 @@
 ---
-title: Weitere Debugfunktionen | Microsoft-Dokumentation
+title: Weitere Debuggingfeatures | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e6140b10b9f0c9a540144ca70bb081ac2d3e7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157452"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300542"
 ---
 # <a name="more-debugging-features"></a>Weitere Debuggingfunktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debugger verwenden können.  
   
- Eine Liste mit Tipps und Tricks zum Beschleunigen und Vereinfachen des Debuggings finden Sie im Blogbeitrag über [Tipps und Tricks für das Debugging](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx).  
+ Eine Liste mit Tipps und Tricks zum Beschleunigen und Vereinfachen des Debuggings finden Sie im Blogbeitrag über [Tipps und Tricks für das Debugging](https://devblogs.microsoft.com/visualstudio/debugging-tips-and-tricks/).  
   
 ## <a name="additional-features"></a>Zusätzliche Funktionen  
  [Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)  
@@ -47,7 +47,7 @@ Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debu
  [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)  
  Beschreibt "Bearbeiten und Fortfahren", ein Tool, mit dem Sie den Quellcode bearbeiten können, während sich das Programm im Unterbrechungsmodus befindet. Diese Änderungen können übernommen werden, ohne dass die Debugsitzung beendet und das Programm erneut erstellt werden muss. Darüber hinaus werden die Anweisungen zum Aktivieren und Deaktivieren dieses Features beschrieben.  
   
- [Verwenden von Dumpdateien mit](../debugger/using-dump-files.md) beschreibt Dumpdateien sowie die Anweisungen zum Speichern und öffnen. Dumpdateien enthalten eine Momentaufnahme des Programmzustands zu einem bestimmten Zeitpunkt (normalerweise nach einem Absturz). Wenn Sie das Programm auf einem Computer testen, auf dem die Quelldateien oder PDBs nicht installiert sind, können Sie bei einem Absturz eine Dumpdatei speichern und den Absturz dann mithilfe der Dumpdatei auf dem Buildcomputer debuggen, auf dem die Quelldateien und PDBs vorhanden sind. 
+ [Verwenden von Dumpdateien](../debugger/using-dump-files.md) Beschreibt Dumpdateien, einschließlich Anweisungen zum Speichern und öffnen. Dumpdateien enthalten eine Momentaufnahme des Programmzustands zu einem bestimmten Zeitpunkt (normalerweise nach einem Absturz). Wenn Sie das Programm auf einem Computer testen, auf dem die Quelldateien oder PDBs nicht installiert sind, können Sie bei einem Absturz eine Dumpdatei speichern und den Absturz dann mithilfe der Dumpdatei auf dem Buildcomputer debuggen, auf dem die Quelldateien und PDBs vorhanden sind. 
   
  [Vorgehensweise: Wiederherstellen von ausgeblendeten Debuggerbefehlen](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Beschreibt das Sichtbarmachen von Debuggerbefehlen, die gemäß den IDE-Standardeinstellungen ausgeblendet wurden.

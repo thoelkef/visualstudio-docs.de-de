@@ -62,5 +62,5 @@ HRESULT GetStat(
  Diese Methode gibt eine der Standardskript Statistiken zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptstats:: getstatex](../../winscript/reference/iactivescriptstats-getstatex.md)    
+ [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
  [IActiveScriptStats-Schnittstelle](../../winscript/reference/iactivescriptstats-interface.md)

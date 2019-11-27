@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624153"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291233"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
@@ -32,7 +32,7 @@ Ab dem Azure SDK 2.7 können Sie auch den Cloud-Explorer zum Anzeigen und Verwal
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Anzeigen und Verwalten von Speicherressourcen in Visual Studio
 
-Der Server-Explorer zeigt automatisch eine Liste von Blobs, Warteschlangen und Tabellen in Ihrem Speicheremulatorkonto an. Das Speicheremulatorkonto wird als der Knoten **Entwicklung** unter dem Knoten **Storage** im Server-Explorer angezeigt.
+Server-Explorer zeigt automatisch eine Liste von Blobs, Warteschlangen und Tabellen in Ihrem Speicheremulatorkonto. Das Speicheremulatorkonto wird als der Knoten **Entwicklung** unter dem Knoten **Storage** im Server-Explorer angezeigt.
 
 Erweitern Sie zum Anzeigen der Ressourcen des Speicheremulatorkontos den Knoten **Entwicklung** . Wenn der Speicheremulator nicht gestartet wurde, wird er automatisch gestartet, wenn Sie den Knoten **Entwicklung** erweitern. Dieser Prozess kann mehrere Sekunden dauern. Sie können weiterhin in anderen Bereichen von Visual Studio arbeiten, während der Speicheremulator gestartet wird.
 
@@ -78,11 +78,11 @@ Sie können die folgenden Vorgänge für Blobs mithilfe der Schaltflächen in de
 
 1. Wählen Sie im Dialogfeld **Neue Datei hochladen** die Schaltfläche **Durchsuchen**, um die Datei anzugeben, die Sie hochladen möchten. Geben Sie dann einen Ordnernamen im Feld **Ordner (optional)** ein.
 
-   ![Hochladen einer Datei in einen Blobordner](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![Hochladen einer Datei in einen BLOB-Ordner](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
    Sie können den Containerordnern Unterordner hinzufügen, indem Sie den Schritt wie beschrieben erneut durchführen. Wenn Sie keinen Ordnernamen angeben, wird die Datei auf der obersten Ebene des Blobcontainers hochgeladen. Die Datei wird im angegebenen Ordner im Container angezeigt.
 
-   ![Ordner, der einem Blobcontainer hinzugefügt wurde](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![Ordner, der einem BLOB-Container hinzugefügt wurde](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
 1. Doppelklicken Sie auf den Ordner, oder drücken Sie die EINGABETASTE, um den Inhalt des Ordners anzuzeigen. Wenn Sie sich im Ordner des Containers befinden, können Sie in das Stammverzeichnis des Containers zurückkehren, indem Sie die Schaltfläche **Übergeordnetes Verzeichnis öffnen** (Pfeilschaltfläche) wählen.
 
@@ -110,7 +110,7 @@ Verwenden Sie im Cloud-Explorer eine der folgenden Methoden:
 * Wählen Sie den Blobnamen und anschließend die Schaltfläche **Öffnen** aus.
 * Doppelklicken Sie auf den Blobnamen.
 
-Der Status eines Blobdownloads wird im Fenster **Azure-Aktivitätsprotokoll** angezeigt.
+Der Status eines Blob-Downloads wird im Fenster **Azure-Aktivitätsprotokoll** angezeigt.
 
 Das Blob wird im Standard-Editor für diesen Dateityp geöffnet. Wenn das Betriebssystem den Dateityp erkennt, wird die Datei in einer lokal installierten Anwendung geöffnet. Andernfalls werden Sie aufgefordert, eine für den Dateityp des Blobs geeignete Anwendung auszuwählen. Die beim Herunterladen von Blobs erstellte lokale Datei ist als schreibgeschützt gekennzeichnet.
 
@@ -122,7 +122,7 @@ Standardmäßig wird ein Blob in ein temporäres Verzeichnis heruntergeladen. Um
 
 Klicken Sie zum Hochladen von Blobs auf die Schaltfläche **Blob hochladen**, wenn der Container für die Anzeige in der Blobcontaineransicht geöffnet ist.
 
-Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>So zeigen Sie an Blobs übertragene Protokolle an
 
@@ -142,11 +142,11 @@ Die Datei wird an einen temporären Speicherort heruntergeladen und auf dem loka
 
 ## <a name="work-with-queue-resources"></a>Arbeiten mit Warteschlangenressourcen
 
-Speicherdienstwarteschlangen werden in einem Azure-Speicherkonto gehostet. Dieses ermöglicht die Kommunikation der Clouddienstrollen untereinander und mit anderen Diensten über einen Nachrichtenübergabemechanismus. Greifen Sie auf die Warteschlange programmgesteuert über einen Clouddienst und einen Webdienst für externe Clients zu. Oder greifen Sie mit dem Server-Explorer in Visual Studio direkt auf die Warteschlange zu.
+Speicherdienstwarteschlangen werden in einem Azure-Speicherkonto gehostet. Dieses ermöglicht die Kommunikation der Clouddienstrollen untereinander und mit anderen Diensten über einen Nachrichtenübergabemechanismus. Greifen Sie auf die Warteschlange programmgesteuert über einen Clouddienst und einen Webdienst für externe Clients zu. Oder greifen Sie mit Server-Explorer in Visual Studio direkt auf die Warteschlange zu.
 
 Wenn Sie einen Clouddienst entwickeln, in dem Warteschlangen verwendet werden, können Sie Warteschlangen mit Visual Studio erstellen und interaktiv mit ihnen arbeiten, während Sie Ihren Code entwickeln und testen.
 
-Im Server-Explorer können Sie die Warteschlangen in einem Speicherkonto anzeigen, Warteschlangen erstellen und löschen, eine Warteschlange zum Anzeigen von Nachrichten öffnen und einer Warteschlange Nachrichten hinzufügen. Ist eine Warteschlange zum Anzeigen geöffnet, können Sie die einzelnen Nachrichten anzeigen. Mit den Schaltflächen in der linken oberen Ecke können Sie die folgenden Aktionen für die Warteschlange ausführen:
+Im Dialogfeld Server-Explorer können Sie die Warteschlangen in einem Speicherkonto anzeigen, Warteschlangen erstellen und löschen, eine Warteschlange zum Anzeigen von Nachrichten öffnen und einer Warteschlange Nachrichten hinzufügen. Ist eine Warteschlange zum Anzeigen geöffnet, können Sie die einzelnen Nachrichten anzeigen. Mit den Schaltflächen in der linken oberen Ecke können Sie die folgenden Aktionen für die Warteschlange ausführen:
 
 * Aktualisieren der Ansicht der Warteschlange
 * Fügen Sie eine Meldung in die Warteschlange hinzu.
@@ -157,7 +157,7 @@ Die folgende Abbildung zeigt eine Warteschlange, die zwei Nachrichten enthält:
 
 ![Anzeigen einer Warteschlange](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Weitere Informationen zu Speicherdienstwarteschlangen finden Sie unter [Erste Schritte mit Azure Queue Storage mit .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Weitere Informationen zum Webdienst für Speicherdienstwarteschlangen finden Sie unter [Konzepte des Warteschlangendiensts](http://go.microsoft.com/fwlink/?LinkId=264788). Informationen dazu, wie Nachrichten mithilfe von Visual Studio an eine Speicherdienstwarteschlange gesendet werden, finden Sie unter [Senden von Nachrichten an eine Speicherdienstwarteschlange](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Weitere Informationen zu Speicherdienstwarteschlangen finden Sie unter [Erste Schritte mit Azure Queue Storage mit .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Weitere Informationen zum Webdienst für Speicherdienstwarteschlangen finden Sie unter [Konzepte des Warteschlangendiensts](https://go.microsoft.com/fwlink/?LinkId=264788). Informationen dazu, wie Nachrichten mithilfe von Visual Studio an eine Speicherdienstwarteschlange gesendet werden, finden Sie unter [Senden von Nachrichten an eine Speicherdienstwarteschlange](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Speicherdienstwarteschlangen unterscheiden sich von Azure Service Bus-Warteschlangen. Weitere Informationen zu Service Bus-Warteschlangen finden Sie unter [Service Bus-Warteschlangen, -Themen und -Abonnements](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -185,7 +185,7 @@ Die Tabelle ist in Entitäten (Anzeige in Zeilen) und Eigenschaften (Anzeige in 
 
 Öffnen Sie im Tabellen-Designer das Kontextmenü für eine Entität (eine einzelne Zeile) oder eine Eigenschaft (eine einzelne Zelle), und wählen Sie dann **Bearbeiten** aus.
 
-![Hinzufügen oder Bearbeiten einer Tabellenentität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Hinzufügen oder Bearbeiten einer Tabellen Entität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Entitäten in einer einzelnen Tabelle müssen nicht denselben Eigenschaftensatz (Spalten) aufweisen. Beachten Sie beim Anzeigen und Bearbeiten von Tabellendaten folgende Einschränkungen:
 
@@ -227,7 +227,7 @@ Die folgende Abbildung zeigt ein Beispiel für eine gültige Filterzeichenfolge:
 
 ## <a name="refresh-storage-data"></a>Aktualisieren von Speicherdaten
 
-Wenn der Server-Explorer eine Verbindung mit einem Speicherkonto herstellt oder Daten daraus abruft, kann es bis zu einer Minute dauern, bis der Vorgang abgeschlossen ist. Wenn der Server-Explorer keine Verbindung herstellen kann, führt dies möglicherweise zu einer Zeitüberschreitung des Vorgangs. Während Daten abgerufen werden, können Sie weiterhin in anderen Bereichen von Visual Studio arbeiten. Wenn der Vorgang zu lange dauert, klicken Sie zum Abbrechen in der Symbolleiste des Server-Explorers auf die Schaltfläche **Aktualisieren beenden**.
+Wenn der Server-Explorer eine Verbindung mit einem Speicherkonto herstellt oder Daten daraus abruft, kann es bis zu einer Minute dauern, bis der Vorgang abgeschlossen ist. Wenn Server-Explorer keine Verbindung herstellen kann, tritt möglicherweise ein Timeout des Vorgangs auf. Während Daten abgerufen werden, können Sie weiterhin in anderen Bereichen von Visual Studio arbeiten. Wenn der Vorgang zu lange dauert, klicken Sie zum Abbrechen in der Symbolleiste des Server-Explorers auf die Schaltfläche **Aktualisieren beenden**.
 
 ### <a name="to-refresh-blob-container-data"></a>So aktualisieren Sie Blobcontainerdaten
 
@@ -259,10 +259,10 @@ Es gibt zwei Möglichkeiten, Speicherkonten mithilfe des Server-Explorers hinzuz
 
    * Das Azure-Abonnement, dem Sie das Speicherkonto hinzufügen möchten
    * Den Namen, den Sie für das neue Speicherkonto verwenden möchten
-   * Die Region oder Affinitätsgruppe (z. B. USA, Westen oder Ostasien)
+   * Die Region oder Affinitätsgruppe (z. B. Westliche USA oder Ostasien)
    * Den Typ der Replikation, den Sie für das Speicherkonto verwenden möchten, zum Beispiel „Lokal redundant“
 
-   ![Erstellen eines Azure-Speicherkontos](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
+   ![Azure-Speicherkonto erstellen](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
 1. Wählen Sie **Erstellen** aus.
 
@@ -295,4 +295,4 @@ Das Löschen eines Speicherkontos aus dem Server-Explorer hat keine Auswirkungen
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen zum Verwenden von Azure Storage-Dienste finden Sie unter [Einführung in Azure Storage](/azure/storage/common/storage-introduction).
+Weitere Informationen zur Verwendung der Azure-Speicherdienste finden Sie unter [Einführung in Azure Storage](/azure/storage/common/storage-introduction).

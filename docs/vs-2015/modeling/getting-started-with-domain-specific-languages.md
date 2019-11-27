@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 124fc1027e3b5eba537341c87ae2a80ce5c325bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666072"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300914"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden einer domänenspezifischen Sprache (DSL) erläutert, die mit dem Modellierungs-SDK für Visual Studio erstellt wurde.
 
- Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualizaton und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128) .
+ Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualizaton und Modellierungs-SDK](https://go.microsoft.com/fwlink/?LinkID=186128) .
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Was können Sie mit einer domänenspezifischen Sprache tun?
  Bei einer domänenspezifischen Sprache handelt es sich in der Regel um eine grafische Notation, die für einen bestimmten Zweck entwickelt wurde. Im Gegensatz dazu sind Sprachen wie UML universell. In einer DSL können Sie die Typen von Modellelement und deren Beziehungen definieren und angeben, wie diese auf dem Bildschirm angezeigt werden.
@@ -34,15 +34,15 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
  Eine der Prinzipal Anwendungen von DSLs besteht darin, Programmcode, Konfigurationsdateien und andere Artefakte zu generieren. Vor allem bei großen Projekten und Produktlinien, in denen mehrere Varianten eines Produkts erstellt werden, kann das Erstellen vieler der Variablen Aspekte aus DSLs eine hohe Steigerung der Zuverlässigkeit und eine sehr schnelle Reaktion auf Anforderungsänderungen zur Folge haben.
 
- Der Rest dieser Übersicht ist eine exemplarische Vorgehensweise, in der die grundlegenden Vorgänge zum Erstellen und Verwenden einer domänenspezifischen Sprache in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vorgestellt werden.
+ Der Rest dieser Übersicht ist eine exemplarische Vorgehensweise, in der die grundlegenden Vorgänge zum Erstellen und Verwenden einer domänenspezifischen Sprache in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]vorgestellt werden.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
 |Modellierungs-SDK für Visual Studio|[Msdk herunterladen](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Erstellen einer DSL-Lösung
@@ -94,7 +94,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
 - **DSL-Projekt** Dieses Projekt enthält Code, der die domänenspezifische Sprache definiert.
 
-- **Dslpackage-Projekt** Dieses Projekt enthält Code, mit dem Instanzen der DSL in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geöffnet und bearbeitet werden können.
+- **Dslpackage-Projekt** Dieses Projekt enthält Code, mit dem Instanzen der DSL in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]geöffnet und bearbeitet werden können.
 
 ## <a name="Debugging"></a>Ausführen der DSL
  Sie können die DSL-Lösung ausführen, sobald Sie Sie erstellt haben. Später können Sie die DSL-Definition schrittweise ändern, indem Sie die Lösung nach jeder Änderung erneut ausführen.
@@ -108,13 +108,13 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
 2. Drücken Sie F5, oder klicken Sie im Menü **Debuggen** auf **Debugging starten**.
 
-    Die DSL erstellt und wird in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert.
+    Die DSL erstellt und wird in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]installiert.
 
     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet. Die experimentelle Instanz übernimmt ihre Einstellungen aus einer separaten Unterstruktur der Registrierung, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungen zu Debuggingzwecken registriert werden. Normale Instanzen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben keinen Zugriff auf die dort registrierten Erweiterungen.
 
-3. Öffnen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die Modelldatei mit dem Namen **Test** von **Projektmappen-Explorer**.
+3. Öffnen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]die Modelldatei mit dem Namen **Test** von **Projektmappen-Explorer**.
 
-    \- oder -
+    \- oder –
 
     Klicken Sie mit der rechten Maustaste auf das Projekt Debugging, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Element** Wählen Sie im Dialogfeld **Element hinzufügen** den Dateityp Ihrer DSL aus.
 
@@ -141,12 +141,12 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
  Sie können ein Modell als Baumstruktur in der **Explorer** -Ansicht anzeigen, während Sie ein Modell bearbeiten. Wenn Sie dem Diagramm Formen hinzufügen, werden die Modellelemente auch im Explorer angezeigt. Der Explorer kann auch dann verwendet werden, wenn kein Diagramm vorhanden ist.
 
- Wenn der Explorer in der debugginginstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht angezeigt wird, zeigen Sie im Menü **Ansicht** auf **Weitere Fenster**, und klicken Sie dann auf *\<Your Sprache >* - **Explorer**.
+ Wenn der Explorer in der debugginginstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]nicht angezeigt wird, zeigen Sie im Menü **Ansicht** auf **Weitere Fenster**, und klicken Sie dann auf *\<der Sprache >* - **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>Die API ihrer DSL
  Ihre DSL generiert eine API, mit der Sie Modelle lesen und aktualisieren können, bei denen es sich um Instanzen der DSL handelt. Eine Anwendung der API besteht darin, Textdateien aus einem Modell zu generieren. Weitere Informationen finden Sie unter [Entwurfszeit Code Generierung mithilfe von T4-Text Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
- Öffnen Sie in der Projekt Mappe Debuggen die Vorlagen Dateien mit der Erweiterung ". tt". Diese Beispiele veranschaulichen, wie Sie Text aus Modellen generieren können, und Sie können die API ihrer DSL testen. Eines der Beispiele ist in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] geschrieben, das andere in [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+ Öffnen Sie in der Projekt Mappe Debuggen die Vorlagen Dateien mit der Erweiterung ". tt". Diese Beispiele veranschaulichen, wie Sie Text aus Modellen generieren können, und Sie können die API ihrer DSL testen. Eines der Beispiele ist in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]geschrieben, das andere in [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
  Unter jeder Vorlagen Datei befindet sich die Datei, die Sie generiert. Erweitern Sie die Vorlagen Datei in Projektmappen-Explorer, und öffnen Sie die generierte Datei.
 
@@ -158,13 +158,13 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>So generieren Sie Textdateien nach dem Ändern der Modelldatei erneut
 
-1. Speichern Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die Modelldatei.
+1. Speichern Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]die Modelldatei.
 
 2. Stellen Sie sicher, dass sich der Dateiname-Parameter in jeder Tt-Datei auf die Modelldatei bezieht, die Sie für Experimente verwenden. Speichern Sie die TT-Datei.
 
 3. Klicken Sie in der Symbolleiste von **Projektmappen-Explorer**auf **alle Vorlagen transformieren** .
 
-    \- oder -
+    \- oder –
 
     Klicken Sie mit der rechten Maustaste auf die zu generierenden Vorlagen, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**
 
@@ -200,7 +200,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
     2. Öffnen Sie die Eigenschaftenfenster, und positionieren Sie Sie, damit Sie den DSL-Explorer und die Eigenschaften gleichzeitig sehen können.
 
-    3. Erweitern Sie im DSL-Explorer den Bereich **Editor**, **Toolbox Registerkarten**, *\<your DSL >* und dann **Tools**.
+    3. Erweitern Sie im DSL-Explorer den Bereich **Editor**, **Toolbox Registerkarten**, *\<Sie die DSL->* und dann **Tools**.
 
     4. Klicken Sie auf **ExampleElement**. Dies ist das Toolbox Element, das verwendet wird, um-Elemente zu erstellen.
 
@@ -218,7 +218,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
     3. Drücken Sie F5. Warten Sie, bis die experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.
 
-4. Öffnen Sie in der Projekt Mappe Debuggen in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Testmodell Datei. Ziehen Sie Elemente aus der Toolbox auf die Datei. Beachten Sie, dass sich die Tool Beschriftungen und die Typnamen im DSL-Explorer geändert haben.
+4. Öffnen Sie in der Projekt Mappe Debuggen in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eine Testmodell Datei. Ziehen Sie Elemente aus der Toolbox auf die Datei. Beachten Sie, dass sich die Tool Beschriftungen und die Typnamen im DSL-Explorer geändert haben.
 
 5. Speichern Sie die Modelldatei.
 
@@ -324,7 +324,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
     1. Erweitern Sie im **DSL-Explorer**den Bereich **Editor** und dann **Registerkarten**.
 
-    2. Klicken Sie mit der rechten Maustaste auf *\<your DSL >* und klicken Sie dann auf **Add New Element Tool**.
+    2. Klicken Sie mit der rechten Maustaste auf *\<ihrer DSL >* und klicken Sie dann auf **Add New Element Tool**.
 
     3. Legen Sie die **Name** -Eigenschaft des neuen Tools fest, und legen Sie die zugehörige **Class** -Eigenschaft auf Town fest.
 
@@ -332,7 +332,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
 7. Erstellen Sie ein Connector-Tool, um eine Verknüpfung zwischen Städten und Personen herzustellen.
 
-    1. Klicken Sie mit der rechten Maustaste auf *\<your DSL >* und klicken Sie dann auf **Add New Connector Tool**.
+    1. Klicken Sie mit der rechten Maustaste auf *\<ihrer DSL >* und klicken Sie dann auf **Add New Connector Tool**.
 
     2. Legen Sie die Name-Eigenschaft des neuen Tools fest.
 
@@ -342,7 +342,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
 8. Speichern Sie die DSL-Definition, klicken Sie auf **alle Vorlagen transformieren**, und drücken Sie dann **F5**.
 
-9. Öffnen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Testmodell Datei. Mit den neuen Tools können Sie Städte und Verknüpfungen zwischen Städten und Personen erstellen. Beachten Sie, dass Sie nur Links zwischen den richtigen Elementtypen erstellen können.
+9. Öffnen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eine Testmodell Datei. Mit den neuen Tools können Sie Städte und Verknüpfungen zwischen Städten und Personen erstellen. Beachten Sie, dass Sie nur Links zwischen den richtigen Elementtypen erstellen können.
 
 10. Erstellen Sie Code, der die Stadt auflistet, in der sich die einzelnen Personen befinden. Text Vorlagen sind eine der Orte, an denen Sie diesen Code ausführen können. Beispielsweise können Sie die vorhandene Sample.tt-Datei in der debugginglösung ändern, sodass Sie den folgenden Code enthält:
 
@@ -381,7 +381,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
  Suchen Sie die vsix-Datei im Ordner "bin" der Projekt Mappe. Kopieren Sie die Datei auf den Computer, auf dem Sie Sie installieren möchten. Doppelklicken Sie auf diesem Computer auf die vsix-Datei. Die DSL kann in allen Instanzen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf diesem Computer verwendet werden.
 
- Sie können das gleiche Verfahren verwenden, um die DSL auf Ihrem eigenen Computer zu installieren, sodass Sie die experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht verwenden müssen.
+ Sie können das gleiche Verfahren verwenden, um die DSL auf Ihrem eigenen Computer zu installieren, sodass Sie die experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]nicht verwenden müssen.
 
  Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
@@ -399,4 +399,4 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 2. Erstellen Sie alle experimentellen DSLs oder anderen experimentellen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungen neu, die Sie weiterhin verwenden möchten.
 
 ## <a name="see-also"></a>Siehe auch
- Grundlegendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md) [Definieren einer domänenspezifischen sprach](../modeling/how-to-define-a-domain-specific-language.md) [Visualisierung und eines Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ Grundlegendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md) [Definieren einer domänenspezifischen sprach](../modeling/how-to-define-a-domain-specific-language.md) [Visualisierung und eines Modellierungs-SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

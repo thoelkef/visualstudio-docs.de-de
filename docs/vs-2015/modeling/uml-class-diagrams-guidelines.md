@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 804678985ae30d833b57fe7589f0903cf1edb291
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652280"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297290"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-Klassendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
  Um ein UML-Klassendiagramm zu erstellen, wählen Sie im Menü **Architektur** die Option **neues UML-Diagramm oder ebenendiagramm**aus.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> In diesem Thema geht es um UML-Klassendiagramme. Es gibt noch eine andere Art von Klassendiagramm, das erstellt und verwendet wird, um Programmcode visuell darzustellen. Siehe [Entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).
+> In diesem Thema geht es um UML-Klassendiagramme. Es gibt noch eine andere Art von Klassendiagramm, das erstellt und verwendet wird, um Programmcode visuell darzustellen. Siehe [Entwerfen und Anzeigen von Klassen und Typen](https://go.microsoft.com/fwlink/?LinkId=142231).
 
 ## <a name="Using"></a>Verwenden von UML-Klassendiagrammen
  Sie können ein UML-Klassendiagramm für viele verschiedene Zwecke verwenden:
@@ -180,7 +180,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
 - Einen Typ, der im Modell definiert ist.
 
-- Ein parametrisierter Wert eines Vorlagen Typs, der als Vorlage \<Parameter > geschrieben wurde. Siehe [Vorlagen Typen](#Templates).
+- Ein parametrisierter Wert eines Vorlagen Typs, der als Vorlage\<Parameter > geschrieben wurde. Siehe [Vorlagen Typen](#Templates).
 
   Sie können auch den Namen eines Typs schreiben, den Sie im Modell noch nicht definiert haben. Der Name wird im UML-Modell-Explorer unter **nicht angegebene Typen** aufgeführt.
 
@@ -256,7 +256,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 visibility attribute-name : Type
 ```
 
- \- oder -
+ \- oder –
 
 ```
 visibility operation-name (parameter1 : Type1, ...) : Type
@@ -351,7 +351,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   Ausführliche Informationen zu diesen und anderen Eigenschaften finden Sie unter [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 
 ### <a name="navigability"></a>Navigierbarkeit
- Eine gezeichnete Zuordnung weist an einem Ende einen Pfeil auf, der angibt, dass die Zuordnung in dieser Richtung navigierbar ist. Dies ist hilfreich, wenn das Klassendiagramm Softwareklassen darstellt und die Zuordnungen Zeiger oder Verweise darstellen. Wenn Sie jedoch ein Klassendiagramm zum Darstellen von Entitäten und Beziehungen oder Geschäftskonzepten verwenden, ist es weniger wichtig, die Navigierbarkeit darzustellen. In diesem Fall kann es ratsam sein, Zuordnungen ohne Pfeile zu zeichnen. Legen Sie dazu die Eigenschaft **ist Navigier** an beiden Enden der Zuordnung auf true fest. Um dies zu vereinfachen, können Sie das Codebeispiel [UML-Domänen Modellierung](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)herunterladen.
+ Eine gezeichnete Zuordnung weist an einem Ende einen Pfeil auf, der angibt, dass die Zuordnung in dieser Richtung navigierbar ist. Dies ist hilfreich, wenn das Klassendiagramm Softwareklassen darstellt und die Zuordnungen Zeiger oder Verweise darstellen. Wenn Sie jedoch ein Klassendiagramm zum Darstellen von Entitäten und Beziehungen oder Geschäftskonzepten verwenden, ist es weniger wichtig, die Navigierbarkeit darzustellen. In diesem Fall kann es ratsam sein, Zuordnungen ohne Pfeile zu zeichnen. Legen Sie dazu die Eigenschaft **ist Navigier** an beiden Enden der Zuordnung auf true fest.
 
 ### <a name="attributes-and-associations"></a>Attribute und Zuordnungen
  Eine Zuordnung ist eine grafische Darstellung eines Attributs. Anstatt z. B. eine Klasse "Restaurant" mit einem Attribut vom Typ "Menu" zu erstellen, können Sie eine Zuordnung von "Restaurant" zu "Menu" ziehen.
@@ -367,7 +367,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - Eine *Generalisierungs* Beziehung zwischen einem spezialisierten Typ und einem allgemeinen Typ
 
-   \- oder -
+   \- oder –
 
 - Eine *Erkenntnis* Beziehung zwischen einer Klasse und einer Schnittstelle, die implementiert wird.
 
@@ -473,4 +473,4 @@ visibility operation-name (parameter1 : Type1, ...) : Type
      Weitere Informationen zum Festlegen dieser Eigenschaften und zum Anpassen der bereitgestellten Vorlagen finden Sie unter [Generieren von Code aus UML-Klassendiagrammen](../modeling/generate-code-from-uml-class-diagrams.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [Modell Benutzer Anforderungen](../modeling/model-user-requirements.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) [UML Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md)
+ [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [Modell Benutzer Anforderungen](../modeling/model-user-requirements.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md)

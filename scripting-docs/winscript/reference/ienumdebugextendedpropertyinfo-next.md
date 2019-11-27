@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574256"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-Ruft eine angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in einer Enumerationsfolge ab.  
+Ruft eine angegebene Anzahl von`ExtendedDebugPropertyInfo` Strukturen in einer Enumerationsfolge ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- in Die Anzahl der abzurufenden `ExtendedDebugPropertyInfo`structures.  
+ in Die Anzahl der `ExtendedDebugPropertyInfo`Strukturen, die abgerufen werden sollen.  
   
  `rgelt`  
  vorgenommen Ein Array von `ExtendedDebugPropertyInfo`-Strukturen, die abgerufen wurden.  
@@ -48,8 +48,8 @@ HRESULT Next (
  vorgenommen Die Anzahl der tatsächlich abgerufenen `ExtendedDebugPropertyInfo` Strukturen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT`zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ienumdebugextendedpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)    
+ [Ienumdebugextendedpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

@@ -13,17 +13,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 165214dff519e7db94d5ee8f3a1a6d86856cd4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609667"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302795"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu besprechen und zu kommunizieren, indem Diagramme über ihre Aktivitäten und die Rolle Ihres System bei der Erreichung ihrer Ziele gezeichnet werden. Ein Anforderungsmodell ist ein Satz dieser Diagramme, von denen sich jedes auf einen anderen Aspekt der Benutzeranforderungen konzentriert. Eine Videodemo finden Sie unter: [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(Modellieren der Geschäftsdomäne) .
+Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu besprechen und zu kommunizieren, indem Diagramme über ihre Aktivitäten und die Rolle Ihres System bei der Erreichung ihrer Ziele gezeichnet werden. Ein Anforderungsmodell ist ein Satz dieser Diagramme, von denen sich jedes auf einen anderen Aspekt der Benutzeranforderungen konzentriert. Eine Videodemo finden Sie unter: [Modeling the Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)(Modellieren der Geschäftsdomäne) .
 
  Informationen dazu, welche Versionen von Visual Studio die einzelnen Modelltypen unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -138,7 +138,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|
 |Entwickeln von Code aus konzeptionellen Klassen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
- In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Durch die folgende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung werden nicht direktionale Pfeile als Standard festgelegt: [Sample: UML Domain Modeling features](http://go.microsoft.com/fwlink/?LinkId=213849)(Beispiel zu Funktionen für die UML-Domänenmodellierung).
+ In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Durch die folgende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung werden nicht direktionale Pfeile als Standard festgelegt: [Sample: UML Domain Modeling features](https://go.microsoft.com/fwlink/?LinkId=213849)(Beispiel zu Funktionen für die UML-Domänenmodellierung).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.
@@ -162,17 +162,17 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Entwickeln von Code, der Geschäftsregeln entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
- Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören Folgende:
+ Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Dazu gehören:
 
 - Leistung
 
 - Sicherheit
 
-- Verwendbarkeit
+- Benutzerfreundlichkeit
 
 - Zuverlässigkeit
 
-- Stabilität
+- Robustheit
 
   Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter den Titeln von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:
 
@@ -239,4 +239,4 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   Durch Untersuchen der Beziehungen zwischen den Ansichten, die von verschiedenen Diagrammen bereitstellt werden, können Sie schnell die wichtigsten Konzepte verstehen, mit denen die Benutzer arbeiten, und ihnen helfen, zu verstehen, was sie aus dem System benötigen. Sie können auch besser verstehen, bei welchen Anforderungen sich die Projektbeteiligten am unsichersten sind. Sie können planen, diese Features zumindest in vereinfachter Form in einem frühen Stadium des Projekts zu entwickeln, damit Benutzer mit ihnen experimentieren können.
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [entwickeln von Tests aus einem Modell verwenden von](../modeling/develop-tests-from-a-model.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Modell Ihrer APP Architektur](../modeling/model-your-app-s-architecture.md) [Sample vs Extension: UML Domain Modeling Features](http://go.microsoft.com/fwlink/?LinkId=213849) [Sample vs Extension: Color UML Elemente nach Stereotype](http://go.microsoft.com/fwlink/?LinkID=213841) [Sample vs Extension: Verknüpfen von UML-Elementen mit Diagrammen, Dateien und anderen Elementen Beispiel-vs-](http://go.microsoft.com/fwlink/?LinkID=213813) [Erweiterung: Ausrichten von Formen auf einem UML-Diagramm](http://go.microsoft.com/fwlink/?LinkID=213809) [Video: Modellieren der Geschäftsdomäne](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
+ [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [entwickeln von Tests aus einem Modell verwenden von](../modeling/develop-tests-from-a-model.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Modell Ihrer APP Architektur](../modeling/model-your-app-s-architecture.md) [Sample vs Extension: UML Domain Modeling Features](https://go.microsoft.com/fwlink/?LinkId=213849) [Sample vs Extension: Color UML Elements by](https://go.microsoft.com/fwlink/?LinkID=213841) [stereosample vs Extension: Verknüpfen von UML-Elementen mit Diagrammen, Dateien und anderen Elementen](https://go.microsoft.com/fwlink/?LinkID=213813) [Sample vs Extension: Align Shapes on a UML Diagram](https://go.microsoft.com/fwlink/?LinkID=213809) [Video: Modeling The Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

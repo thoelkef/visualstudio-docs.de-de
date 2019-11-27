@@ -66,7 +66,7 @@ ms.locfileid: "72666011"
 
  Die Ausgabe dieses Beispiels lautet wie folgt:
 
- **Vor der Manipulation: Grades: 90, 90, 90 private Grades: 90, 90, 90 Secure Grades, 90, 90, 90** 
+ **Vor der Manipulation: Grades: 90, 90, 90 private Grades: 90, 90, 90 Secure Grades, 90, 90, 90**
 **nach Manipulation: Grades: 90, 555, 90 private Grades: 90, 555, 90 Secure Grades, 90, 90, 90**
 ## <a name="see-also"></a>Siehe auch
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

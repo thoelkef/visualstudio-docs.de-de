@@ -47,5 +47,5 @@ HRESULT CompleteProfilerStart();
  Durch Aufrufen von `IActiveScriptProfilerControl2::CompleteProfilerStart` wird sichergestellt, dass Ereignisse für Funktionen, die bereits in der aufrufenden Stapel vorhanden sind Diese Methode muss aufgerufen werden, nachdem die Profilerstellung für eine beliebige Skript-Engine auf der aktuellen Registerkarte gestartet wurde. Die-Methode kann für jede Skript-Engine aufgerufen werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptProfilerControl2::P Analyse Profil erhalte](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [IActiveScriptProfilerControl2-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

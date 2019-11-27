@@ -40,7 +40,7 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>Parameter  
  `dwSourceContext`  
- in Der Quell Kontext, der für `IActiveScriptParse::ParseScriptText` oder `IActiveScriptParse::AddScriptlet` bereitgestellt wird.  
+ in Der Quell Kontext, der für `IActiveScriptParse::ParseScriptText` oder `IActiveScriptParse::AddScriptlet`bereitgestellt wird.  
   
  `uCharacterOffset`  
  in Zeichen Offset relativ zum Anfang des Skript Texts.  
@@ -62,5 +62,5 @@ HRESULT EnumCodeContextsOfPosition(
  Smart Hosts verwenden diese Methode, um die `IDebugDocumentContext::EnumCodeContexts`-Methode zu delegieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iactivescriptdebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md)    
+ [Iactivescriptdebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

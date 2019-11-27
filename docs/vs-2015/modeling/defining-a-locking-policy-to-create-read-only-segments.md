@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53542ec2a5270aec6836864fa3108d5f84da2df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669878"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295820"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Die unveränderlichkeits-API des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Vi
 > [!NOTE]
 > Eine Sperr Richtlinie kann mithilfe von Reflektion umgangen werden. Er bietet eine klare Grenze für Entwickler von Drittanbietern, bietet aber keine hohe Sicherheit.
 
- Weitere Informationen und Beispiele finden Sie auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualisierungs-und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkId=186128) -Website.
+ Weitere Informationen und Beispiele finden Sie auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualisierungs-und Modellierungs-SDK](https://go.microsoft.com/fwlink/?LinkId=186128) -Website.
 
 ## <a name="setting-and-getting-locks"></a>Festlegen und erhalten von Sperren
  Sie können Sperren für den Speicher, für eine Partition oder für ein einzelnes Element festlegen. Mit dieser Anweisung wird beispielsweise verhindert, dass ein Modellelement gelöscht wird, und es wird außerdem verhindert, dass die Eigenschaften geändert werden:
@@ -40,7 +40,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 
  Die Sperren gelten sowohl für Benutzeraktionen als auch für Programmcode. Wenn Programmcode versucht, eine Änderung vorzunehmen, wird eine `InvalidOperationException` ausgelöst. Sperren werden bei einem Vorgang zum Rückgängigmachen oder wiederholen ignoriert.
 
- Mithilfe von `IsLocked(Locks)` können Sie feststellen, ob ein Element über eine beliebige Sperre verfügt, und Sie können den aktuellen Satz von Sperren für ein Element mithilfe `GetLocks()` abrufen.
+ Mithilfe von `IsLocked(Locks)` können Sie feststellen, ob ein Element über eine beliebige Sperre verfügt, und Sie können den aktuellen Satz von Sperren für ein Element mithilfe `GetLocks()`abrufen.
 
  Sie können eine Sperre festlegen, ohne eine Transaktion zu verwenden. Die Sperr Datenbank ist nicht Teil des Stores. Wenn Sie als Antwort auf eine Änderung eines Werts im Speicher, z. b. in OnValueChanged, eine Sperre festgelegt haben, sollten Sie Änderungen zulassen, die Teil eines Rückgängig-Vorgangs sind.
 
@@ -79,21 +79,21 @@ partition.SetLocks(Locks.Delete);
 
 |Wert|Bedeutung, wenn `IsLocked(Value)` true ist|
 |-----------|------------------------------------------|
-|Keiner|Keine Einschränkung.|
-|property|Domänen Eigenschaften von Elementen können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänen Klasse in einer Beziehung generiert werden.|
+|Keine|Keine Einschränkung.|
+|Eigenschaft|Domänen Eigenschaften von Elementen können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänen Klasse in einer Beziehung generiert werden.|
 |Hinzufügen|Neue Elemente und Verknüpfungen können nicht in einer Partition oder einem Speicher erstellt werden.<br /><br /> Gilt nicht für `ModelElement`.|
 |Verschieben|Das Element kann nicht zwischen Partitionen verschoben werden, wenn `element.IsLocked(Move)` true ist, oder, wenn `targetPartition.IsLocked(Move)` true ist.|
 |Löschen|Ein Element kann nicht gelöscht werden, wenn diese Sperre für das Element selbst oder für eines der Elemente festgelegt wird, an die der Löschvorgang weitergegeben werden soll, z. b. eingebettete Elemente und Formen.<br /><br /> Mit `element.CanDelete()` können Sie feststellen, ob ein Element gelöscht werden kann.|
 |Neu anordnen|Die Reihenfolge der Links auf einem das RolePlayer kann nicht geändert werden.|
-|Das RolePlayer|Der Satz von Links, die von diesem Element stammen, kann nicht geändert werden. Beispielsweise können neue Elemente unter diesem Element nicht eingebettet werden. Dies wirkt sich nicht auf Verknüpfungen aus, für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element ein Link ist, sind die Quelle und das Ziel nicht betroffen.|
+|RolePlayer|Der Satz von Links, die von diesem Element stammen, kann nicht geändert werden. Beispielsweise können neue Elemente unter diesem Element nicht eingebettet werden. Dies wirkt sich nicht auf Verknüpfungen aus, für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element ein Link ist, sind die Quelle und das Ziel nicht betroffen.|
 |Alle|Bitweises OR der anderen-Werte.|
 
 ## <a name="locking-policies"></a>Sperren von Richtlinien
- Als Autor einer DSL können Sie eine *Sperr Richtlinie*definieren. Eine Sperr Richtlinie moderiert den Betrieb von setlocks (), sodass Sie verhindern können, dass bestimmte Sperren festgelegt werden, oder Sie können festlegen, dass bestimmte Sperren festgelegt werden müssen. In der Regel verwenden Sie eine Sperr Richtlinie, um zu verhindern, dass Benutzer oder Entwickler versehentlich auf die beabsichtigte Verwendung einer DSL verstoßen, so wie Sie eine Variable `private` deklarieren können.
+ Als Autor einer DSL können Sie eine *Sperr Richtlinie*definieren. Eine Sperr Richtlinie moderiert den Betrieb von setlocks (), sodass Sie verhindern können, dass bestimmte Sperren festgelegt werden, oder Sie können festlegen, dass bestimmte Sperren festgelegt werden müssen. In der Regel verwenden Sie eine Sperr Richtlinie, um zu verhindern, dass Benutzer oder Entwickler versehentlich auf die beabsichtigte Verwendung einer DSL verstoßen, so wie Sie eine Variable `private`deklarieren können.
 
  Sie können auch eine Sperr Richtlinie verwenden, um Sperren für alle Elemente festzulegen, die vom Typ des Elements abhängig sind. Der Grund hierfür ist, dass `SetLocks(Locks.None)` immer aufgerufen wird, wenn ein Element erstmalig erstellt oder aus einer Datei deserialisiert wird.
 
- Es ist jedoch nicht möglich, eine Richtlinie zu verwenden, um die Sperren eines Elements während des Lebenszyklus zu verändern. Um diesen Effekt zu erzielen, sollten Sie Aufrufe `SetLocks()` verwenden.
+ Es ist jedoch nicht möglich, eine Richtlinie zu verwenden, um die Sperren eines Elements während des Lebenszyklus zu verändern. Um diesen Effekt zu erzielen, sollten Sie Aufrufe `SetLocks()`verwenden.
 
  Zum Definieren einer Sperr Richtlinie müssen Sie folgende Schritte ausführen:
 

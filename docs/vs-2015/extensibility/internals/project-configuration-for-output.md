@@ -1,5 +1,5 @@
 ---
-title: Projektkonfiguration für die Ausgabe | Microsoft-Dokumentation
+title: Projekt Konfiguration für Ausgabe | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,44 +10,44 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: addd7e8630ce35c6bdbbbb4c063197f75a74c97d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443883"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300675"
 ---
 # <a name="project-configuration-for-output"></a>Projektkonfiguration für die Ausgabe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Jeder Konfiguration kann es sich um einen Satz von Erstellungsvorgängen unterstützen, die Ausgabe-Elementen, z. B. ausführbare Datei oder Ressource Dateien zu erzeugen. Diese Ausgabeelemente sind für den Benutzer privat und platziert werden können, in Gruppen, die verwandte Typen, die Ausgabe, z. B. ausführbare Dateien (".exe", ".dll", ".lib") und Quelldateien (IDL, h-Dateien) zu verknüpfen.  
+Jede Konfiguration kann einen Satz von Buildprozessen unterstützen, die Ausgabe Elemente wie z. b. ausführbare Dateien oder Ressourcen Dateien erstellen. Diese Ausgabe Elemente sind für den Benutzer Privat und können in Gruppen platziert werden, die Verwandte Ausgabetypen wie ausführbare Dateien (exe-, dll-, lib-) und Quelldateien (IDL-und h-Dateien) verknüpfen.  
   
- Ausgabeelemente können zur Verfügung gestellt durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> Methoden und aufgelisteten mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> Methoden. Wenn Sie die Ausgabe die Gruppenelemente möchten, sollten auch das Projekt implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> Schnittstelle.  
+ Ausgabe Elemente können über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2>-Methoden zur Verfügung gestellt und mit den <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>-Methoden aufgelistet werden. Wenn Sie Ausgabe Elemente gruppieren möchten, sollte Ihr Projekt auch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>-Schnittstelle implementieren.  
   
- Das Konstrukt entwickelt, durch die Implementierung `IVsOutputGroup` können Projekte auf Gruppe Ausgaben entsprechend der Verwendung. Beispielsweise kann eine DLL-Datei mit der Programmdatenbank (PDB) gruppiert werden.  
+ Das-Konstrukt, das durch Implementieren von `IVsOutputGroup` entwickelt wird, ermöglicht Projekten, Ausgaben entsprechend der Verwendung zu gruppieren. Beispielsweise kann eine DLL mit ihrer Programmdatenbank (PDB) gruppiert werden.  
   
 > [!NOTE]
-> Eine PDB-Datei enthält Debuginformationen aus, und es erstellt, wenn die Option "Debuginfo generieren" angegeben wird, wenn Sie die .dll oder .exe erstellen. Die PDB-Datei wird in der Regel für Debug-Projektkonfiguration generiert.  
+> Eine PDB-Datei enthält Debuginformationen und wird erstellt, wenn beim Erstellen der DLL-oder exe-Datei die Option "Debuginformationen generieren" angegeben wird. Die PDB-Datei wird in der Regel nur für die debugprojektkonfiguration generiert.  
   
- Das Projekt muss die gleiche Anzahl von Gruppen für jede Konfiguration, die dies unterstützen, zurückgeben, auch wenn die Anzahl von Ausgaben in einer Gruppe enthaltene Konfiguration auf Konfiguration variieren. Z. B. des Projekts Matt DLL möglicherweise mattd.dll und mattd.pdb in Debug-Konfiguration enthalten, jedoch nur matt.dll in Retail-Konfiguration.  
+ Das Projekt muss die gleiche Anzahl von Gruppen für jede unterstützte Konfiguration zurückgeben, obwohl die Anzahl der in einer Gruppe enthaltenen Ausgaben von der Konfiguration bis zur Konfiguration abweichen kann. Beispielsweise kann die DLL-Datei des Projekts mattd. dll und mattd. pdb in die Debugkonfiguration einschließen, aber nur Matt. dll in der Einzelhandels Konfiguration enthalten.  
   
- Die Gruppen haben auch die gleichen Bezeichnerinformationen, wie kanonische Name, Anzeigename und Gruppeninformationen, Konfiguration auf Konfiguration in einem Projekt. Diese Konsistenz ermöglicht die Bereitstellung und paketerstellung für weiterhin ausgeführt, auch wenn die Konfigurationen zu ändern.  
+ Die Gruppen verfügen auch über die gleichen Bezeichnerinformationen, z. b. Kanonischer Name, Anzeige Name und Gruppeninformationen, von der Konfiguration bis zur Konfiguration innerhalb eines Projekts. Diese Konsistenz ermöglicht die Bereitstellung und Paket Erstellung, auch wenn sich die Konfigurationen ändern.  
   
- Gruppen können auch eine wichtige Ausgabe aufweisen, mit der paketerstellung Verknüpfungen in einen aussagekräftigeren Namen verweisen können. Eine beliebige Gruppe möglicherweise in einer bestimmten Konfiguration leer, damit keine Annahmen über die Größe einer Gruppe erfolgen soll. Die Größe (Anzahl von Ausgaben) der Gruppe "Jeder" in jeder Konfiguration kann von der Größe einer anderen Gruppe in der gleichen Konfiguration abweichen. Sie können auch von der Größe der gleichen Gruppe in einer anderen Konfiguration abweichen.  
+ Gruppen können auch eine Schlüsselausgabe aufweisen, die das Verpacken von Verknüpfungen ermöglicht, um auf etwas Sinnvolles zu zeigen. Jede Gruppe ist in einer bestimmten Konfiguration möglicherweise leer, sodass keine Annahmen über die Größe einer Gruppe erfolgen sollten. Die Größe (Anzahl der Ausgaben) der einzelnen Gruppen in einer beliebigen Konfiguration kann sich von der Größe einer anderen Gruppe in der gleichen Konfiguration unterscheiden. Sie kann sich auch von der Größe derselben Gruppe in einer anderen Konfiguration unterscheiden.  
   
- ![Grafik zu Ausgabegruppen "Ausgabe"](../../extensibility/internals/media/vsoutputgroups.gif "VsOutputGroups")  
+ ![Grafik zu Ausgabe Gruppen](../../extensibility/internals/media/vsoutputgroups.gif "vsoutputgroups")  
 Ausgabegruppen  
   
- Der primäre Verwendungszweck der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> ist, bieten Zugang zum Erstellen, bereitstellen und Debuggen von Verwaltungsobjekten und können Projekte die Freiheit gibt, die Ausgaben von Gruppe-Schnittstelle. Weitere Informationen zur Verwendung dieser Schnittstelle finden Sie unter [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md).  
+ Der primäre Einsatz der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> Schnittstelle ist die Bereitstellung des Zugriffs zum Erstellen, bereitstellen und Debuggen von Verwaltungs Objekten und ermöglicht es Projekten, Ausgaben zu gruppieren. Weitere Informationen zur Verwendung dieser Schnittstelle finden Sie unter [Project Configuration Object](../../extensibility/internals/project-configuration-object.md).  
   
- Im vorherigen Diagramm Gruppe erstellt, verfügt über einen Schlüssel, die Ausgabe in Konfigurationen (bD.exe oder b.exe), daher kann der Benutzer erstellen Sie eine Verknüpfung, um integrierte und wissen, dass die Verknüpfung unabhängig von der Konfiguration bereitgestellt funktioniert. Gruppenquelle besitzt keinen Schlüssel für die Ausgabe, sodass der Benutzer eine Verknüpfung erstellen, kann nicht. Wenn die Debug-Gruppe erstellt eine wichtige Ausgabe wurde, aber nicht die Retail-Gruppe erstellt, wäre, die eine falsche Implementierung. Daraus folgt, dann verfügt jede Konfiguration eine Gruppe, die keine Ausgaben, enthält und daher keine Schlüsseldatei, und klicken Sie dann auf andere Konfigurationen, die diese Gruppe, die Ausgaben enthalten keine Dateien mit Schlüsseln. Die Installer-Editoren davon ausgehen, dass kanonischen Namen und Anzeigenamen von Gruppen sowie das Vorhandensein einer Schlüsseldatei ein, nicht ändern basiert auf Konfigurationen.  
+ Im vorherigen Diagramm hat eine Gruppe erstellt eine Schlüsselausgabe über Konfigurationen hinweg (entweder "BD. exe" oder "b. exe"), sodass der Benutzer eine Verknüpfung erstellen kann, die erstellt wird und weiß, dass die Verknüpfung unabhängig von der bereitgestellten Konfiguration funktioniert. Die Gruppen Quelle weist keine Schlüsselausgabe auf, sodass der Benutzer keine Verknüpfung damit erstellen kann. Wenn die integrierte debuggruppe über eine Schlüsselausgabe verfügt, die von der Einzelhandelsgruppe jedoch nicht erstellt wurde, wäre dies eine falsche Implementierung. Danach folgt Folgendes: Wenn eine Konfiguration eine Gruppe enthält, die keine Ausgaben enthält, und folglich keine Schlüsseldatei, können andere Konfigurationen mit dieser Gruppe, die Ausgaben enthalten, keine Schlüsseldateien haben. Die Installer-Editoren nehmen an, dass kanonische Namen und anzeigen Amen von Gruppen sowie das vorhanden sein einer Schlüsseldatei nicht auf der Grundlage von Konfigurationen geändert werden.  
   
- Beachten Sie, dass, wenn ein Projekt enthält eine `IVsOutputGroup` , dass er nicht möchte, Verpacken oder bereitstellen, ist es ausreichend, platzieren Sie diese Ausgabe in einer Gruppe nicht. Die Ausgabe immer noch aufgelistet werden kann, normalerweise durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> Methode, die alle von einer Konfiguration der Ausgaben unabhängig von der Gruppierung zurückgibt.  
+ Beachten Sie, dass die Ausgabe nicht in eine Gruppe eingefügt werden muss, wenn ein Projekt über eine `IVsOutputGroup` verfügt, die nicht Verpacken oder bereitgestellt werden soll. Die Ausgabe kann weiterhin normal aufgezählt werden, indem die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A>-Methode implementiert wird, die unabhängig von der Gruppierung alle Ausgaben der Konfiguration zurückgibt.  
   
- Weitere Informationen finden Sie auf die Implementierung der `IVsOutputGroup` in dem Beispiel von benutzerdefinierten Projekt-in [MPF für Projekte](http://mpfproj12.codeplex.com).  
+ Weitere Informationen finden Sie in der Implementierung von `IVsOutputGroup` im Beispiel für ein benutzerdefiniertes Projekt unter [MPF for Projects](https://archive.codeplex.com/?p=mpfproj12).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)   
- [Konfiguration für die Erstellung des Projekts](../../extensibility/internals/project-configuration-for-building.md)   
- [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md)   
+ [Projekt Konfiguration zum Aufbauen von](../../extensibility/internals/project-configuration-for-building.md)   
+   des [Projekt Konfigurations Objekts](../../extensibility/internals/project-configuration-object.md)  
  [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)

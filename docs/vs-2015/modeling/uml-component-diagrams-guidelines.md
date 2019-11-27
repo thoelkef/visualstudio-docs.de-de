@@ -15,19 +15,19 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652260"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297162"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML-Komponentendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktur eines Software Systems anzuzeigen. Eine videodemo finden Sie unter [Entwerfen der physischen Struktur mithilfe von Komponenten Diagrammen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).
+In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktur eines Software Systems anzuzeigen. Eine videodemo finden Sie unter [Entwerfen der physischen Struktur mithilfe von Komponenten Diagrammen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Klicken Sie zum Erstellen eines UML-Komponenten Diagramms im Menü **Architektur** auf **neues UML-oder ebenendiagramm**.
 
@@ -82,7 +82,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
 1. Klicken Sie in der Toolbox auf **Komponente** und dann auf einen leeren Teil des Diagramms.
 
-     \- oder -
+     \- oder –
 
      Kopieren Sie eine vorhandene Komponente, und fügen Sie diese ein.
 
@@ -146,7 +146,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
 - Suchen Sie im **UML-Modell-Explorer** die-Schnittstelle, und ziehen Sie Sie von dort auf die-Komponente.
 
-     - oder -
+     \- oder -
 
 - Kopieren Sie einen Verweis auf eine Schnittstelle aus einem Diagramm, und fügen Sie ihn ein.
 
@@ -188,13 +188,13 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
          Im **UML-Modell-Explorer**wird eine neue-Komponente erstellt. Dies ist der Typ des neuen Teils.
 
-         \- oder -
+         \- oder –
 
          Ziehen Sie eine vorhandene Komponente aus dem UML-Modell-Explorer auf die übergeordnete Komponente.
 
          Ein neuer Teil (3) wird in der übergeordneten Komponente angezeigt. Der Typ ist die Komponente, die Sie aus dem UML-Modell-Explorer gezogen haben.
 
-         \- oder -
+         \- oder –
 
          Klicken Sie mit der rechten Maustaste auf eine Komponente, entweder in einem Diagramm oder im UML-Modell-Explorer, und klicken Sie dann auf **Kopieren**.
 
@@ -206,7 +206,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
     3. Sie können dem neuen Teil angebotene und erforderliche Schnittstellen (4, 5) hinzufügen. Klicken Sie auf die **bereitgestellte Schnittstelle** oder das **erforderliche Schnittstellen** Tool, und klicken Sie dann auf den Teil.
 
-         \- oder -
+         \- oder –
 
          Ziehen Sie eine vorhandene Schnittstelle aus dem **UML-Modell-Explorer** auf den Teil.
 
@@ -333,4 +333,4 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
   Sie können den Namen des Abhängigkeitspfeils verwenden, um eine bestimmte Art der Verwendung anzugeben. Um den Namen festzulegen, klicken Sie mit der rechten Maustaste auf den Pfeil, klicken Sie dann auf **Eigenschaften**, und legen Sie im Eigenschaften Fenster das Feld **Name** fest.
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [ Video: Entwerfen der physischen Struktur mithilfe von Komponenten Diagrammen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+ [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [Video: Entwerfen der physischen Struktur mithilfe von Komponenten Diagrammen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

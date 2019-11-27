@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671104"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291202"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analysieren der Anwendungsqualität mit Codeanalysetools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Abschnitt wird die [Qualität der Qualität von verwaltetem Code analysiert](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) : Visual Studio-Code Analyse für verwalteten Code stellt Informationen zu verwalteten Assemblys bereit, z. b. Verstöße gegen die Programmier-und Entwurfs Regeln, die im Microsoft .net Richtlinien. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.
+In diesem Abschnitt wird die Visual Studio-Code Analyse von [verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) für verwalteten Code analysiert, die Informationen zu verwalteten Assemblys enthält, wie z. b. Verstöße gegen die Programmier-und Entwurfs Regeln, die in den Entwurfs Richtlinien für Microsoft .NET Framework In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.
 
  [Analysieren der cC++ /Code-Qualität mithilfe der Code Analyse](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) dasC++ c/Code-Analysetool stellt Entwicklern Informationen zu möglichen Fehlern im cC++ /Quellcode-Code zur Verfügung. Zu den Codierungsfehlern, die das Tool am häufigsten findet, zählen Pufferüberläufe, nicht initialisierter Speicher, Dereferenzierungen von NULL-Zeigern sowie Speicher- und Ressourcenverluste.
 
@@ -40,7 +40,7 @@ In diesem Abschnitt wird die [Qualität der Qualität von verwaltetem Code analy
 
  [Analysieren der Treiber Qualität mithilfe von Code Analyse Tools](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Die Code Analyse für Treiber ist ein statisches Überprüfungs Tool zur Kompilierzeit, das grundlegende Codierungsfehler in C und C++ Programmen erkennt und ein spezielles Modul umfasst, das zum Erkennen von Fehlern in (hauptsächlich) Kernelmodustreiber-Code konzipiert ist. Der Static Driver Verifier (Statisches Treiber-Prüfmodul, SDV) ist ein statisches Überprüfungstool, das systematisch den Quellcode von Windows-Kernelmodustreibern analysiert. SDV ermittelt, ob der Treiber ordnungsgemäß mit dem Windows-Betriebssystemkernel interagiert.
 
- [Code Analyse für Treiber Warnungen](http://go.microsoft.com/fwlink/?LinkId=225920) Beschreibt die Warnungen, die die Code Analyse für Treiber meldet, wenn ein möglicher Fehler im Treiber Code erkannt wird.
+ [Code Analyse für Treiber Warnungen](https://go.microsoft.com/fwlink/?LinkId=225920) Beschreibt die Warnungen, die die Code Analyse für Treiber meldet, wenn ein möglicher Fehler im Treiber Code erkannt wird.
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
  [Messen von Komplexität und Verwaltbarkeit von verwaltetem Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Beschreibung hier einfügen.

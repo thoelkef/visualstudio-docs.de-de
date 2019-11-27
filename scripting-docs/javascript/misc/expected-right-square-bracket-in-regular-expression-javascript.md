@@ -29,8 +29,8 @@ Sie haben versucht, eine Zeichenklasse für eine Abgleich mit einem regulären A
 - Fügen Sie dem regulären Ausdruck die rechte eckige Klammer hinzu.  
   
     > [!NOTE]
-    > Wenn Sie eine einzelne eckige Klammer abgleichen möchten, versehen Sie Sie mit einem umgekehrten Schrägstrich \\ [-damit Sie nicht als Sonderzeichen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] interpretiert wird.  
+    > Wenn Sie eine einzelne eckige Klammer abgleichen möchten, versehen Sie Sie mit einem umgekehrten Schrägstrich \\[-damit Sie nicht als Sonderzeichen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]interpretiert wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

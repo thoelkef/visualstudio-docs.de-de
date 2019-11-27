@@ -12,14 +12,14 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41b589526fb1f864c97571db893506bc612893ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660611"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302648"
 ---
-# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
+# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der codierten UI mithilfe des Test-Editors für codierte UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten von Eigenschaften der Testmethoden und UI-Aktionen. Darüber hinaus können Sie mit der UI-Steuerelementzuordnung die entsprechenden Steuerelemente anzeigen und bearbeiten.
@@ -33,7 +33,7 @@ Mit dem Editor für Tests der programmierten UI können Sie Tests der programmie
 
  ![UI-Test-Editor](../test/media/uitesteditor.png "Uitesteditor")
 
-1. Mit [Suchen](../ide/finding-and-replacing-text.md) können Sie nach UI-Aktionen und -Steuerelementen suchen.
+1. Mit[Suchen](../ide/finding-and-replacing-text.md) können Sie nach UI-Aktionen und -Steuerelementen suchen.
 
 2. Mit[Löschen](#CodedUITestEditor_DeleteUIActions) können Sie unerwünschte UI-Aktionen entfernen.
 
@@ -65,7 +65,7 @@ Mit dem Editor für Tests der programmierten UI können Sie Tests der programmie
 > Beim Auswählen einer UI-Aktion, die in einer Methode im Bereich **UI-Aktionen** enthalten ist, wird das entsprechende Steuerelement hervorgehoben. Sie können auch die UI-Aktion oder die Steuerelementeigenschaften ändern.
 
  Der Editor für Tests der programmierten UI*wird nicht angezeigt* .
-Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die älter als 2012 ist. Der Editor für Tests der programmierten UI stand auch in Visual Studio 2010 Feature Pack 2 mit einem MSDN-Abonnement zur Verfügung. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).
+Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die älter als 2012 ist. Der Editor für Tests der programmierten UI stand auch in Visual Studio 2010 Feature Pack 2 mit einem MSDN-Abonnement zur Verfügung. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119).
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Eigenschaften der UI-Aktionen und ihre entsprechenden Steuerelementeigenschaften ändern
  Mit dem Editor für Tests der programmierten UI, können Sie leicht alle UI-Aktionen in den Testmethoden finden und anzeigen. Wenn Sie die UI-Aktion im Editor auswählen, wird das entsprechende Steuerelement automatisch hervorgehoben. Wenn Sie ein Steuerelement auswählen, werden entsprechend die zugeordneten UI-Aktionen hervorgehoben. Wenn Sie eine UI-Aktion oder ein -Steuerelement auswählen, können Sie dann einfach das Fenster „Eigenschaften“ verwenden, um die entsprechenden Eigenschaften zu  ändern.
@@ -82,7 +82,7 @@ Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die äl
 
  Ein Entwickler könnte z. B. die **(ID)** -Eigenschaft auf einem Schaltflächen-Steuerelement im Quellcode für die getestete Anwendung von „idSubmit“ in „idLogin“ geändert haben. Wenn die **(ID)** -Eigenschaft in der Anwendung geändert wurde, kann der Test der programmierten UI nicht das Schaltflächen-Steuerelement finden, und es wird ein Fehler ausgegeben. In diesem Fall kann der Tester die Auflistung **Sucheigenschaften** öffnen und die **ID** -Eigenschaft auf den neuen Wert festlegen, den der Entwickler in der Anwendung verwendet hat. Der Tester kann auch den Eigenschaftswert von **Anzeigename** von „Submit“ in „Login“ ändern. Durch diese Änderung wird die zugeordnete UI-Aktion im Editor für Tests der programmierten UI von „Schaltfläche 'Submit' auswählen“ in „Schaltfläche 'Login' auswählen" geändert.
 
- Nachdem Sie die Änderungen abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Symbolleiste **Speichern** auswählen.
+ Nachdem Sie die Änderungen abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie auf der **-Symbolleiste** Speichern [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auswählen.
 
  *Was sollte ich noch wissen?*
  **Tipps**
@@ -91,7 +91,7 @@ Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die äl
 
 - ![Tipp](../test/media/tip.png "Tipp") Wenn Sie die vorgenommenen Eigenschaften Änderungen rückgängig machen möchten, wählen Sie **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG + Z.
 
-- ![Tipp](../test/media/tip.png "Tipp") Sie können die Schaltfläche **Suchen** auf der Symbolleiste des Editors für Tests der programmierten UI verwenden, um das Tool suchen und ersetzen in Visual Studio zu öffnen. Anschließend können Sie mit dem Steuerelement „Suchen“ nach einer UI-Aktion im Editor für Tests der programmierten UI suchen. Sie können z. B. die Option „Auf die Schaltfläche 'Anmelden' klicken“ suchen. Dies kann bei umfangreichen Tests hilfreich sein. Beachten Sie, dass Sie die Ersetzungsfunktion nicht im Tool zum Suchen und Ersetzen im Editor für Tests der programmierten UI verwenden können. Weitere Informationen finden Sie unter „Steuerelement Suchen‘“ in [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md).
+- ![Tipp](../test/media/tip.png "Tipp") Sie können die Schaltfläche **Suchen** auf der Symbolleiste des Editors für Tests der programmierten UI verwenden, um das Tool suchen und ersetzen in Visual Studio zu öffnen. Anschließend können Sie mit dem Steuerelement „Suchen“ nach einer UI-Aktion im Editor für Tests der programmierten UI suchen. Sie können z. B. die Option „Auf die Schaltfläche 'Anmelden' klicken“ suchen. Dies kann bei umfangreichen Tests hilfreich sein. Beachten Sie, dass Sie die Ersetzungsfunktion nicht im Tool zum Suchen und Ersetzen im Editor für Tests der programmierten UI verwenden können. Weitere Informationen finden Sie unter „Steuerelement ‚Suchen‘“ in [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
 - ![Tipp](../test/media/tip.png "Tipp") Manchmal kann es schwierig sein, den Speicherort der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung zu visualisieren. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Suchen eines UI-Steuerelements in der getesteten Anwendung](#CodedUITestEditor_LocateUIControl) im weiteren Verlauf dieses Themas.
 
@@ -126,7 +126,7 @@ Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die äl
 
 - ![Tipp](../test/media/tip.png "Tipp") Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich „UI-Aktionen“, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI.
 
-   - oder -
+   \- oder -
 
    Öffnen Sie das Kontextmenü für die neue Testmethode, und wählen Sie **Umbenennen**.
 
@@ -203,15 +203,15 @@ Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die äl
 ## <a name="external-resources"></a>Externe Ressourcen
 
 ### <a name="guidance"></a>Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="faq"></a>FAQ
- [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Häufig gestellte Fragen
+ [Tests der codierten UI – FAQ 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Tests der codierten UI – FAQ 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Tests der codierten UI – FAQ 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
- [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Siehe auch
- [Verwenden von Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md) [Erstellen von Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) der programmierten UI [Erstellen eines datengesteuerten](../test/creating-a-data-driven-coded-ui-test.md) Tests der programmierten UI Erstellen eines Tests der programmierten UI [aus einer vorhandenen Aktions Aufzeichnung Exemplarische Vorgehensweise](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [: erstellen, bearbeiten und Verwalten eines Tests der programmierten UI ](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [Verwenden von Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md) [Erstellen von Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) der programmierten UI [Erstellen eines datengesteuerten](../test/creating-a-data-driven-coded-ui-test.md) Tests der programmierten UI Erstellen eines Tests der programmierten UI [aus einer vorhandenen Aktions Aufzeichnung Exemplarische Vorgehensweise](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [: erstellen, bearbeiten und Verwalten eines Tests](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) der programmierten UI

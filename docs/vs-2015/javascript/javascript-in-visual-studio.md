@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705788"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295910"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben
 
  Unter Umständen sind bestimmte Versionen von Visual Studio oder bestimmte Visual Studio-Erweiterungen erforderlich, um bestimmte Anwendungstypen und Dienste mit HTML und JavaScript zu entwickeln. Die folgende Liste enthält Links für weitere Informationen.
 
-- Für das Erstellen von plattformübergreifenden Apps mit Apache Cordova [laden Sie die Visual Studio-Tools für Apache Cordova herunter](http://go.microsoft.com/fwlink/p/?LinkId=397606).
+- Für das Erstellen von plattformübergreifenden Apps mit Apache Cordova [laden Sie die Visual Studio-Tools für Apache Cordova herunter](https://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Um [Windows Store](http://dev.windows.com/develop)-, [Windows Phone](http://dev.windows.com/develop)- und universelle Apps (die beide Plattformen unterstützen) zu erstellen, [laden Sie die Tools herunter](https://developer.microsoft.com/windows/downloads).
+- Um [Windows Store](https://developer.microsoft.com/)-, [Windows Phone](https://developer.microsoft.com/)- und universelle Apps (die beide Plattformen unterstützen) zu erstellen, [laden Sie die Tools herunter](https://developer.microsoft.com/windows/downloads).
 
 - Weitere Informationen zum Erstellen von cloudbasierten Diensten finden Sie auf der [Microsoft Azure-Website](https://azure.microsoft.com/documentation/).
 
-- Weitere Informationen zum Erstellen von Websites und Web-Apps [finden Sie auf der ASP.NET-Website](http://www.asp.net/get-started/websites).
+- Weitere Informationen zum Erstellen von Websites und Web-Apps [finden Sie auf der ASP.NET-Website](https://dotnet.microsoft.com/apps/aspnet/web-apps).
 
   > [!NOTE]
   > Sie können eine leere ASP.NET-Website erstellen und für die HTML-, CSS- und JavaScript-Programmierung verwenden. Die von ASP.NET bereitgestellte Datei "Webconfig" ermöglicht das Debuggen in Visual Studio (Sie können auch die F12-Tools beim Ausführen der App verwenden).
@@ -41,11 +41,11 @@ JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben
 ## <a name="whats-new-in-javascript"></a>Neues bei JavaScript
  Die neuen Funktionen für JavaScript werden in der folgenden Tabelle aufgeführt
 
-|Feature|Beschreibung|
+|Funktion|Beschreibung|
 |-------------|-----------------|
 |Klassen|Neue Syntax unterstützt die Deklaration von [Klassen](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promises|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) ermöglichen eine leichtere und sauberere asynchrone Codierung. Promise-Konstruktoren werden unterstützt, zusammen mit den Hilfsmethoden `all` und `race`.|
-|Iterators|Jetzt können Sie iterierbare Objekte (einschließlich Arrays, arrayähnliche Objekte und Iteratoren) wiederholt durchlaufen und dabei einen benutzerdefinierten Iterationshaken mit Anweisungen aufrufen, die für den Wert jeder einzelnen Eigenschaft ausgeführt werden sollen. Weitere Informationen finden Sie unter [Iteratoren und Generatoren](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Hinweis**:  Generatoren werden noch nicht unterstützt.|
+|Iteratoren|Jetzt können Sie iterierbare Objekte (einschließlich Arrays, arrayähnliche Objekte und Iteratoren) wiederholt durchlaufen und dabei einen benutzerdefinierten Iterationshaken mit Anweisungen aufrufen, die für den Wert jeder einzelnen Eigenschaft ausgeführt werden sollen. Weitere Informationen finden Sie unter [Iteratoren und Generatoren](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Hinweis:** Generatoren werden noch nicht unterstützt.|
 |Pfeilfunktionen|Die Pfeilfunktion (= >) bietet eine Kurzsyntax für das Schlüsselwort `function`, dass eine lexikalische `this`-Bindung darstellt.|
 |Neue Methoden für integrierte Objekte|Die integrierten Objekte [Array-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) und [String-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) umfassen viele neue Hilfsfunktionen und Eigenschaften zum Bearbeiten und Überprüfen von Daten.|
 |Verbesserungen des Objektliterals|Objekte unterstützen nun berechnete Eigenschaften, präzise Methodendefinitionen und eine Kurzsyntax für Eigenschaften, deren Wert für eine gleichnamige Variable initialisiert wird. Weitere Informationen finden Sie unter [Erstellen von Objekten](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

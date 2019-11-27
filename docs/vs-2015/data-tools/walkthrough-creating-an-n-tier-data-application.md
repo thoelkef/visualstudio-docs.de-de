@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 720f50fe486c0e625fcd67191f43897eba466698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660163"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299586"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 - Schreiben von Code zum Füllen der Datentabellen.
 
-  ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter Gewusst [wie: Erstellen einer N-Tier-Daten Anwendung](http://go.microsoft.com/fwlink/?LinkId=115188).
+  ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter Gewusst [wie: Erstellen einer N-Tier-Daten Anwendung](https://go.microsoft.com/fwlink/?LinkId=115188).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:
 
 - Zugriff auf die Beispieldatenbank Northwind.
@@ -99,7 +99,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
      Das Projekt DataAccessTier wird erstellt und zur Projektmappe NTierWalkthrough hinzugefügt.
 
 ## <a name="creating-the-dataset"></a>Erstellen des DataSets
- Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte DataSets werden mit beiden DataSet-Klassen (einschließlich der DataTables-Klassen) und der `TableAdapter`-Klassen in einem einzelnen Projekt erstellt. (Alle Klassen werden in einer einzelnen Datei generiert.) Wenn Sie das DataSet und das `TableAdapter`s in verschiedene Projekte aufteilen, ist es die DataSet-Klasse, die in das andere Projekt verschoben wird, wobei die `TableAdapter` Klassen im ursprünglichen Projekt belassen werden. Erstellen Sie daher das DataSet in dem Projekt, das letztendlich die `TableAdapter` (das Projekt DataAccessTier) enthalten wird. Das DataSet wird mithilfe des **Assistenten zum Konfigurieren von Datenquellen**erstellt.
+ Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte DataSets werden mit beiden DataSet-Klassen (einschließlich der DataTables-Klassen) und der `TableAdapter`-Klassen in einem einzelnen Projekt erstellt. (Alle Klassen werden in einer einzelnen Datei generiert.) Wenn Sie das DataSet und die `TableAdapter`s in verschiedene Projekte aufteilen, handelt es sich um die DataSet-Klasse, die in das andere Projekt verschoben wird, wobei die `TableAdapter` Klassen im ursprünglichen Projekt belassen werden. Erstellen Sie daher das DataSet in dem Projekt, das letztendlich die `TableAdapter` (das Projekt DataAccessTier) enthalten wird. Das DataSet wird mithilfe des **Assistenten zum Konfigurieren von Datenquellen**erstellt.
 
 > [!NOTE]
 > Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können.
@@ -118,7 +118,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
      Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank Northwind verfügbar ist, klicken Sie auf diese.
 
-     - oder -
+     \- oder -
 
      Klicken Sie auf **neue Verbindung** , um das Dialogfeld **Verbindung hinzufügen** zu öffnen.
 

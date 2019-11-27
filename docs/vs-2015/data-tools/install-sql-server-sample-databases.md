@@ -9,25 +9,25 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3991d3b741162b4b1993e5359ad427c17f00321a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651525"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299635"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installieren von SQL Server-Beispieldatenbanken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Beispiel Datenbanken sind nützlich, um mit SQL-und LINQ-Abfragen, DataBinding, Entity Framework Modellierung usw. zu experimentieren.  Jedes Datenbankprodukt verfügt über eigene Beispiel Datenbanken. Northwind und AdventureWorks sind zwei beliebte SQL Server-Beispiel Datenbanken.
 
- **AdventureWorks** ist die aktuelle Beispieldatenbank, die für SQL Server-Produkte bereitgestellt wird. Sie können Sie als MDF-Datei von der Seite " [AdventureWorks" auf CodePlex](http://msftdbprodsamples.codeplex.com/)herunterladen. Hier sind reguläre und Lightweight (lt)-Versionen der Datenbank verfügbar. In den meisten Szenarien wird die lt-Version bevorzugt, da Sie weniger komplex ist.
+ **AdventureWorks** ist die aktuelle Beispieldatenbank, die für SQL Server-Produkte bereitgestellt wird. Sie können Sie als MDF-Datei von der Seite " [AdventureWorks" auf CodePlex](https://archive.codeplex.com/?p=msftdbprodsamples)herunterladen. Hier sind reguläre und Lightweight (lt)-Versionen der Datenbank verfügbar. In den meisten Szenarien wird die lt-Version bevorzugt, da Sie weniger komplex ist.
 
  **Northwind** ist eine relativ einfache SQL Server Datenbank, die seit vielen Jahren verwendet wurde. Sie können Sie als BAK-Datei von der [Northwind-Datenbankseite auf CodePlex](https://northwinddatabase.codeplex.com/)herunterladen. Um Berechtigungsprobleme zu vermeiden, entzippen Sie die Datei in einen neuen Ordner, der nicht in Ihrem Benutzerordner gespeichert ist.
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>So stellen Sie eine Datenbank aus einer BAK-Datei in Visual Studio wieder her
 
-1. Wenn Sie eine Microsoft SQL Server Datenbank sichern, ist das Ergebnis eine BAK-Datei. Damit die BAK-Datei wieder als Datenbankdatei verwendbar ist, muss Sie wieder *hergestellt*werden. Wählen Sie im Hauptmenü  >  SQL Server-Objekt-Explorer **anzeigen** aus. Wenn Sie es nicht sehen, müssen Sie es möglicherweise installieren. Wechseln Sie zur **Systemsteuerung**  > **Programme und Funktionen**, suchen Sie Microsoft Visual Studio 2015, und klicken Sie auf die Schaltfläche **ändern** . Wenn die Liste der installierten Komponenten im Installationsfenster angezeigt wird, aktivieren Sie das Kontrollkästchen **SQL Server-Objekt-Explorer** , und fahren Sie dann mit der Installation fort.
+1. Wenn Sie eine Microsoft SQL Server Datenbank sichern, ist das Ergebnis eine BAK-Datei. Damit die BAK-Datei wieder als Datenbankdatei verwendbar ist, muss Sie wieder *hergestellt*werden. Wählen Sie im Hauptmenü > SQL Server-Objekt-Explorer **anzeigen** aus. Wenn Sie es nicht sehen, müssen Sie es möglicherweise installieren. Wechseln Sie zur **Systemsteuerung** > **Programme und Funktionen**, suchen Sie Microsoft Visual Studio 2015, und klicken Sie auf die Schaltfläche **ändern** . Wenn die Liste der installierten Komponenten im Installationsfenster angezeigt wird, aktivieren Sie das Kontrollkästchen **SQL Server-Objekt-Explorer** , und fahren Sie dann mit der Installation fort.
 
 2. Klicken Sie in SQL Server-Objekt-Explorer mit der rechten Maustaste auf eine beliebige SQL Server Datenbank-Engine (z. b. localdb), und wählen Sie**neue Abfrage**aus.
 
