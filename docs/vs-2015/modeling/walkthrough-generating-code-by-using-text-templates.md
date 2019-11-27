@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen von Code mithilfe von Text Vorlagen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -157,7 +157,7 @@ namespace MyProject
    <#@ output extension=".cs" #>
    ```
 
-   sein.
+   .
 
    Beachten Sie, dass eine CS-Datei im Projektmappen-Explorer als untergeordnete Datei der Vorlagendatei angezeigt wird. Sie können Sie sehen, wenn Sie auf das [+] neben dem Namen der Vorlagendatei klicken. Diese Datei wird aus der Vorlagendatei generiert wenn Sie speichern oder den Fokus von der Vorlagendatei wegnehmen. Die generierte Datei wird als Teil des Projekts kompiliert.
 
@@ -421,4 +421,4 @@ namespace MyProject
  Wenn Sie Vorlagentransformations- oder Kompilierungsfehler in der **Fehlerliste** sehen oder die Ausgabedatei nicht korrekt generiert wurde, können Sie die Textvorlage mit den unter [Generieren von Dateien mit dem Hilfsprogramm „TextTransform“](../modeling/generating-files-with-the-texttransform-utility.md) beschriebenen Techniken entsprechend korrigieren.
 
 ## <a name="see-also"></a>Siehe auch
- [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)
+ [Code Generierung zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)

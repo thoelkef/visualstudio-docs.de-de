@@ -24,7 +24,7 @@ Wenn Sie eine Webanwendung in Visual Studio erstellen, können Sie ein Windows P
 
 Mithilfe dieser Skripts können Sie angepasste Versionen Ihrer Website (auch als Entwicklungs- und Testumgebungen bezeichnet) zur vorübergehenden Verwendung bereitstellen. Sie können z. B. eine bestimmte Version Ihrer Website auf einem virtuellen Azure-Computer oder auf dem Stagingslot einer Website einrichten, um eine Testsuite auszuführen, einen Bug zu reproduzieren, einen Bugfix zu testen, eine vorgeschlagene Änderung zu prüfen oder eine benutzerdefinierte Umgebung für eine Demonstration oder eine Präsentation einzurichten. Nachdem Sie ein Skript zum Veröffentlichen Ihres Projekts erstellt haben, können Sie identische Umgebungen erstellen, indem Sie das Skript bei Bedarf erneut ausführen. Sie können das Skript auch mit Ihrem eigenen Build Ihrer Webanwendung ausführen, um eine benutzerdefinierte Umgebung für Testzwecke zu erstellen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 * Azure SDK 2.3 oder höher. Siehe [Visual Studio-Downloads](https://go.microsoft.com/fwlink/?LinkID=624384). (Sie benötigen das Azure SDK nicht, um die Skripts für Webprojekte zu generieren. Dieses Feature bezieht sich auf Webprojekte, nicht auf Webrollen in Clouddiensten.)
 * Azure PowerShell 0.7.4 oder höher. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Azure PowerShell](/powershell/azure/overview).
@@ -40,7 +40,7 @@ Sie können die Veröffentlichungsskripts für einen virtuellen Computer generie
 
 ## <a name="scripts-that-visual-studio-generates"></a>Von Visual Studio generierte Skripts
 
-Visual Studio generiert einen Ordner auf Projektebene namens **PublishScripts** , der zwei Windows PowerShell-Dateien enthält: ein Veröffentlichungsskript für Ihren virtuellen Computer oder die Website und ein Modul mit Funktionen, die Sie in den Skripts verwenden können. Visual Studio generiert außerdem eine Datei im JSON-Format, die die Details des von Ihnen bereitgestellten Projekts angibt.
+Visual Studio generiert einen Ordner auf Projektebene namens **PublishScripts**, der zwei Windows PowerShell-Dateien enthält – ein Veröffentlichungsskript für Ihren virtuellen Computer oder die Website und ein Modul, das Funktionen enthält, die Sie in den Skripts verwenden können. Visual Studio generiert außerdem eine Datei im JSON-Format, die die Details des von Ihnen bereitgestellten Projekts angibt.
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell-Veröffentlichungsskript
 
@@ -52,7 +52,7 @@ Das von Visual Studio generierte Windows PowerShell-Modul enthält Funktionen, d
 
 ### <a name="json-configuration-file"></a>JSON-Konfigurationsdatei
 
-Die JSON-Datei wird im Ordner **Configurations** erstellt und enthält die Konfigurationsdaten, die genau angeben, welche Ressourcen für Azure bereitgestellt werden. Der Name der von Visual Studio generierten Datei lautet "projektname-WAWS-dev.json", wenn Sie eine Website erstellt haben, bzw. "projektname-VM-dev.json", wenn Sie einen virtuellen Computer erstellt haben. Das folgende Beispiel zeigt eine JSON-Konfigurationsdatei, die generiert wird, wenn Sie eine Website erstellen. Die meisten Werte sind selbsterklärend. Der Websitename wird von Azure generiert. Er stimmt daher ggf. nicht mit Ihrem Projektnamen überein.
+Die JSON-Datei wird im Ordner **Konfigurationen** erstellt und enthält die spezifischen Konfigurationsdaten, die genau angeben, welche Ressourcen in Azure bereitgestellt werden. Der Name der von Visual Studio generierten Datei lautet "projektname-WAWS-dev.json", wenn Sie eine Website erstellt haben, bzw. "projektname-VM-dev.json", wenn Sie einen virtuellen Computer erstellt haben. Das folgende Beispiel zeigt eine JSON-Konfigurationsdatei, die generiert wird, wenn Sie eine Website erstellen. Die meisten Werte sind selbsterklärend. Der Websitename wird von Azure generiert. Er stimmt daher ggf. nicht mit Ihrem Projektnamen überein.
 
 ```json
 {
@@ -144,7 +144,7 @@ Wenn Sie einen virtuellen Computer erstellen, sieht die JSON-Konfigurationsdatei
 
 Sie können die JSON-Konfiguration bearbeiten, um das Verhalten beim Ausführen der Veröffentlichungsskripts zu ändern. Die Abschnitte `cloudService` und `virtualMachine` sind erforderlich, der Abschnitt `databases` kann jedoch gelöscht werden, wenn er nicht benötigt wird. Die Eigenschaften, die in der von Visual Studio generierten Standardkonfigurationsdatei leer sind, sind optional. Die Eigenschaften, die in der Standardkonfigurationsdatei Werte aufweisen, sind erforderlich.
 
-Wenn Sie eine Website mit mehreren Bereitstellungsumgebungen (als Slots bezeichnet) anstelle einer einzelnen Produktionswebsite in Azure verwenden, können Sie den Slotnamen in den Namen der Website in der JSON-Konfigurationsdatei einschließen. Wenn Sie z.B. eine Website mit dem Namen **mysite** und einen zugehörigen Slot namens **test** verwenden, lautet der URI `mysite-test.cloudapp.net`. Der richtige Name zur Verwendung in der Konfigurationsdatei lautet jedoch „mysite(test)“. Diese Vorgehensweise ist nur möglich, wenn die Website und die Slots bereits in Ihrem Abonnement vorhanden sind. Andernfalls erstellen Sie die Website, indem Sie das Skript ausführen, ohne den Slot anzugeben. Erstellen Sie den Slot dann im [Azure-Portal](https://portal.azure.com/), und führen Sie anschließend das Skript mit dem geänderten Websitenamen aus. Weitere Informationen zu den Bereitstellungsslots für Web-Apps finden Sie unter [Einrichten von Stagingumgebungen für Web-Apps in Azure App Service](/azure/app-service/web-sites-staged-publishing).
+Wenn Sie eine Website mit mehreren Bereitstellungsumgebungen (als Slots bezeichnet) anstelle einer einzelnen Produktionswebsite in Azure verwenden, können Sie den Slotnamen in den Namen der Website in der JSON-Konfigurationsdatei einschließen. Wenn Sie z. B. eine Website mit dem Namen **mysite** und einen zugehörigen Slot namens **test** verwenden, lautet der URI `mysite-test.cloudapp.net`. Der richtige Name für die Verwendung in der Konfigurationsdatei ist jedoch mysite(test). Diese Vorgehensweise ist nur möglich, wenn die Website und die Slots bereits in Ihrem Abonnement vorhanden sind. Andernfalls erstellen Sie die Website, indem Sie das Skript ausführen, ohne den Slot anzugeben. Erstellen Sie den Slot dann im [Azure-Portal](https://portal.azure.com/), und führen Sie anschließend das Skript mit dem geänderten Websitenamen aus. Weitere Informationen zu den Bereitstellungsslots für Web-Apps finden Sie unter [Einrichten von Stagingumgebungen für Web-Apps in Azure App Service](/azure/app-service/web-sites-staged-publishing).
 
 ## <a name="how-to-run-the-publish-scripts"></a>Ausführen der Veröffentlichungsskripts
 
@@ -156,7 +156,7 @@ Wenn Sie noch nie zuvor ein Windows PowerShell-Skript ausgeführt haben, müssen
 
    ![Web Deploy-Paket erstellen](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   For more information, see [How to: Create a Web Deployment Package in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Sie können die Erstellung Ihres Web Deploy-Pakets wie unter [Customizing and extending the publish scripts (Anpassen und Erweitern des Veröffentlichungsskripts)](#customizing-and-extending-the-publish-scripts) beschrieben automatisieren.
+   Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Webbereitstellungs Pakets in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Sie können die Erstellung Ihres Web Deploy-Pakets wie unter [Customizing and extending the publish scripts (Anpassen und Erweitern des Veröffentlichungsskripts)](#customizing-and-extending-the-publish-scripts) beschrieben automatisieren.
 
 1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Skript, und wählen Sie dann **Mit PowerShell-ISE öffnen** aus.
 1. Wenn Sie Windows PowerShell-Skripts erstmals auf diesem Computer ausführen, öffnen Sie ein Eingabeaufforderungsfenster mit Administratorberechtigungen, und geben Sie den folgenden Befehl ein:
@@ -244,7 +244,7 @@ Wenn Sie den Buildvorgang Ihres Projekts automatisieren möchten, fügen Sie Cod
     }
     ```
 
-1. Ersetzen Sie `New-WebDeployPackage` durch den folgenden Code, und ersetzen Sie die Platzhalter in der Zeile, mit der `$msbuildCmd` erstellt wird. This code is for Visual Studio 2015. If you're using Visual Studio 2017, change the **VisualStudioVersion** property to `15.0` (`12.0` for Visual Studio 2013).
+1. Ersetzen Sie `New-WebDeployPackage` durch den folgenden Code, und ersetzen Sie die Platzhalter in der Zeile, mit der `$msbuildCmd` erstellt wird. Dieser Code ist für Visual Studio 2015. Wenn Sie Visual Studio 2017 verwenden, ändern Sie die **visualstudioversion** -Eigenschaft in `15.0` (`12.0` für Visual Studio 2013).
 
     ```powershell
     function New-WebDeployPackage
@@ -324,7 +324,7 @@ Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerS
 | Find-AzureVM |Ruft den angegebenen virtuellen Azure-Computer ab. |
 | Format-DevTestMessageWithTime |Stellt einer Meldung das Datum und die Uhrzeit voran. Diese Funktion bezieht sich auf Meldungen, die in die Datenströme vom Typ "Fehler" und "Ausführlich" geschrieben werden. |
 | Get-AzureSQLDatabaseConnectionString |Stellt eine Verbindungszeichenfolge zum Herstellen einer Verbindung mit einer Azure SQL-Datenbank zusammen. |
-| Get-AzureVMStorage |Returns the name of the first storage account with the name pattern "devtest *" (case insensitive) in the specified location or affinity group. If the "devtest*" storage account doesn't match the location or affinity group, the function ignores it. Geben Sie einen Speicherort oder eine Affinitätsgruppe an. |
+| Get-AzureVMStorage |Gibt den Namen des ersten Speicher Kontos mit dem Namensmuster "devtest" (ohne Beachtung der*Groß-/Kleinschreibung) am angegebenen Speicherort oder in der affinitätsgruppe zurück. Wenn das Speicherkonto "devtest*" nicht mit dem Speicherort oder der affinitätsgruppe identisch ist, wird es von der Funktion ignoriert. Geben Sie einen Speicherort oder eine Affinitätsgruppe an. |
 | Get-MSDeployCmd |Gibt einen Befehl zum Ausführen des Tools "MsDeploy.exe" zurück. |
 | New-AzureVMEnvironment |Sucht oder erstellt einen virtuellen Computer im Abonnement, das mit den Werten in der JSON-Konfigurationsdatei übereinstimmt. |
 | Publish-WebPackage |Verwendet "MsDeploy.exe" und eine Webveröffentlichungspaket-ZIP-Datei zum Bereitstellen von Ressourcen für eine Website. Diese Funktion generiert keine Ausgabe. Wenn beim Aufruf von "MSDeploy.exe" ein Fehler auftritt, löst die Funktion eine Ausnahme aus. Verwenden Sie die Option **-Verbose** , wenn Sie eine ausführlichere Ausgabe wünschen. |

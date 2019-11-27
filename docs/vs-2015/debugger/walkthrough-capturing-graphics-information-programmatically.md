@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Capturing Graphics Information Programmatically | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Programm gesteuertes erfassen von Grafik Informationen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -58,13 +58,13 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
     ```  
   
     > [!IMPORTANT]
-    > Do not include the header file vsgcapture.h—which supports programmatic capture on Windows 8.0 and earlier—to perform programmatic capture in your Windows 8.1 apps. Dieser Header ist nicht mit DirectX 11.2 kompatibel. If this file is included after the d3d11_2.h header is included, the compiler issues a warning. If vsgcapture.h is included before d3d11_2.h, the app will not start.  
+    > Schließen Sie nicht die Headerdatei vsgcapture.h ein – diese unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher –, um die programmgesteuerte Erfassung in Ihren Windows 8.1-Apps auszuführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei nach dem einschließen des d3d11_2. h-Headers enthalten ist, gibt der Compiler eine Warnung aus. Wenn vsgcapture. h vor d3d11_2. h eingeschlossen ist, wird die APP nicht gestartet.  
   
     > [!NOTE]
     > Wenn das DirectX SDK vom Juni 2010 auf Ihrem Computer installiert wurde und der Include-Pfad Ihres Projekts `%DXSDK_DIR%includex86`enthält, verschieben Sie diesen Teil an das Ende des Include-Pfads. Gehen Sie beim Bibliothekspfad genauso vor.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Because the Windows Phone 8.1 SDK doesn't include the DXProgrammableCapture.h header, you'll need to define the `IDXGraphicsAnalysis` interface yourself so that you can use the `BeginCapture()` and `EndCapture()` methods. Schließen Sie die anderen Header so ein, wie dies im vorherigen Abschnitt beschrieben ist.  
+ Da das Windows Phone 8,1 SDK den dxprogrammablecapture. h-Header nicht enthält, müssen Sie die `IDXGraphicsAnalysis` Schnittstelle selbst definieren, damit Sie die Methoden `BeginCapture()` und `EndCapture()` verwenden können. Schließen Sie die anderen Header so ein, wie dies im vorherigen Abschnitt beschrieben ist.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>So definieren Sie die IDXGraphicsAnalysis-Schnittstelle  
   
@@ -85,7 +85,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
  Bevor Sie Grafikinformationen von DirectX 11.2 erfassen können, müssen Sie die DXGI-Debugschnittstelle abrufen.  
   
 > [!IMPORTANT]
-> When using programmatic capture, you must still run your app under graphics diagnostics (Alt+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) or under the [Command-Line Capture Tool](../debugger/command-line-capture-tool.md).  
+> Wenn Sie die programmgesteuerte Erfassung verwenden, müssen Sie Ihre APP weiterhin unter Grafik Diagnose (ALT + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) oder unter dem [Befehlszeilen-Erfassungs Tool](../debugger/command-line-capture-tool.md)ausführen.  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>So rufen Sie die IDXGraphicsAnalysis-Schnittstelle ab  
   
@@ -182,7 +182,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
    Wenn Sie diesen Schritt nicht ausführen, lautet der Dateiname default.vsglog. Wenn Sie `DONT_SAVE_VSGLOG_TO_TEMP`nicht definiert haben, ist der Speicherort der Datei relativ zum Temp-Verzeichnis; andernfalls ist er relativ zum Arbeitsverzeichnis oder an einem anderen Speicherort, wenn Sie einen absoluten Dateinamen angegeben haben.  
   
-  For [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps, the location of the temp directory is specific to each user and app, and is typically found in a location such as C:\users\\*username*\AppData\Local\Packages\\*package family name*\TempState\\. For desktop apps, the location of the temp directory is specific to each user and is typically found in a location such as C:\Users\\*username*\AppData\Local\Temp\\.  
+  Bei [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps ist der Speicherort des TEMP-Verzeichnisses für jeden Benutzer und jede APP spezifisch und befindet sich in der Regel an einem Speicherort wie z. b. c:\Users\\*username*\appdata\local\packages\\*Paket Familienname*\tempstate\\. Bei Desktop-Apps ist der Speicherort des TEMP-Verzeichnisses für jeden Benutzer spezifisch und befindet sich normalerweise an einem Speicherort wie c:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 > Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  
@@ -196,9 +196,9 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 ## <a name="next-steps"></a>Nächste Schritte  
  In dieser exemplarische Vorgehensweise wurde veranschaulicht, wie Grafikinformationen programmatisch erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:  
   
-- Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. See [Overview](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. Siehe [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Walkthrough: Capturing Graphics Information](../debugger/walkthrough-capturing-graphics-information.md)   
+ Exemplarische Vorgehensweise [: Erfassen von Grafik Informationen](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Befehlszeilen-Erfassungstool](../debugger/command-line-capture-tool.md)

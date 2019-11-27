@@ -24,11 +24,11 @@ ms.locfileid: "74300962"
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0007|  
-|Category|.NET Framework Usage|  
-|Profiling methods|All|  
-|Message|A high number of exceptions are consistently being thrown. Verwenden Sie nach Möglichkeit weniger Ausnahmen in der Programmlogik.|  
-|Message type|Warning|  
+Regel-ID | DA0007 |  
+| Kategorie |. .NET Framework-Verwendung |  
+| Profil Erstellungs Methoden | Alle |  
+| Meldung | Es wird immer eine große Anzahl von Ausnahmen ausgelöst. Verwenden Sie nach Möglichkeit weniger Ausnahmen in der Programmlogik.|  
+| Nachrichtentyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 25 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   

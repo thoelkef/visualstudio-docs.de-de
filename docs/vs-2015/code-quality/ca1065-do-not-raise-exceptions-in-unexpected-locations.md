@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: Do not raise exceptions in unexpected locations | Microsoft Docs'
+title: 'CA1065: keine Ausnahmen an unerwarteten Speicherorten Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -36,101 +36,101 @@ ms.locfileid: "74295939"
  Eine Methode, von der das Auslösen von Ausnahmen nicht erwartet wird, löst eine Ausnahme aus.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Methods that are not expected to throw exceptions can be categorized as follows:
+ Methoden, für die keine Ausnahmen ausgelöst werden, können wie folgt kategorisiert werden:
 
-- Property Get Methods
+- Get-Methoden der Eigenschaft
 
 - Ereigniszugriffsmethoden
 
-- Equals Methods
+- Gleichheits Methoden
 
-- GetHashCode Methods
+- GetHashCode-Methoden
 
-- ToString Methods
+- Methoden mit dem Methoden Satz
 
 - Statische Konstruktoren
 
 - Finalizer
 
-- Dispose Methods
+- Verwerfen von Methoden
 
 - Gleichheitsoperatoren
 
-- Implicit Cast Operators
+- Implizite Umwandlungs Operatoren
 
-  The following sections discuss these method types.
+  In den folgenden Abschnitten werden diese Methoden Typen erörtert.
 
-### <a name="property-get-methods"></a>Property Get Methods
- Properties are basically smart fields. Therefore, they should behave like a field as much as possible. Fields do not throw exceptions and neither should properties. If you have a property that throws an exception, consider making it a method.
+### <a name="property-get-methods"></a>Get-Methoden der Eigenschaft
+ Eigenschaften sind im Grunde intelligente Felder. Daher sollten Sie sich so weit wie möglich wie ein Feld Verhalten. Felder lösen keine Ausnahmen aus, und keine Eigenschaften. Wenn Sie über eine Eigenschaft verfügen, die eine Ausnahme auslöst, sollten Sie eine Methode erstellen.
 
- The following exceptions are allowed to be thrown from a property get method:
+ Die folgenden Ausnahmen können von einer Get-Methode der Eigenschaft ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
 
-- <xref:System.ArgumentException?displayProperty=fullName> (only from indexed get)
+- <xref:System.ArgumentException?displayProperty=fullName> (nur aus indiziertem Get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (only from indexed get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (nur aus indiziertem Get)
 
 ### <a name="event-accessor-methods"></a>Ereigniszugriffsmethoden
- Event accessors should be simple operations that do not throw exceptions. An event should not throw an exception when you try to add or remove an event handler.
+ Ereignisaccessoren sollten einfache Vorgänge sein, die keine Ausnahmen auslösen. Ein Ereignis sollte keine Ausnahme auslösen, wenn Sie versuchen, einen Ereignishandler hinzuzufügen oder zu entfernen.
 
- The following exceptions are allowed to be thrown from an event accesor:
+ Die folgenden Ausnahmen können von einem Ereignis accesor ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
 
-- <xref:System.ArgumentException> and derivatives
+- <xref:System.ArgumentException> und Ableitungen
 
-### <a name="equals-methods"></a>Equals Methods
- The following **Equals** methods should not throw exceptions:
+### <a name="equals-methods"></a>Gleichheits Methoden
+ Die folgenden **Gleichheits** Methoden sollten keine Ausnahmen auslösen:
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
+- ["M:IEquatable.ist"](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  An **Equals** method should return `true` or `false` instead of throwing an exception. For example, if Equals is passed two mismatched types it should just return `false` instead of throwing an <xref:System.ArgumentException>.
+  Eine **Gleichheits** Methode sollte `true` oder `false` zurückgeben, anstatt eine Ausnahme auszulösen. Wenn z. b. auf gleich zwei nicht übereinstimmende Typen folgt, sollte nur `false` zurückgegeben werden, anstatt eine <xref:System.ArgumentException>auszulösen.
 
-### <a name="gethashcode-methods"></a>GetHashCode Methods
- The following **GetHashCode** methods should usually not throw exceptions:
+### <a name="gethashcode-methods"></a>GetHashCode-Methoden
+ Die folgenden **GetHashCode** -Methoden sollten normalerweise keine Ausnahmen auslösen:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
-  **GetHashCode** should always return a value. Otherwise, you can lose items in the hash table.
+  **GetHashCode** sollte immer einen Wert zurückgeben. Andernfalls können Sie Elemente in der Hash Tabelle verlieren.
 
-  The versions of **GetHashCode** that take an argument can throw an <xref:System.ArgumentException>. However, **Object.GetHashCode** should never throw an exception.
+  Die Versionen von **GetHashCode** , die ein Argument annehmen, können eine <xref:System.ArgumentException>auslösen. **Object. GetHashCode** sollte jedoch nie eine Ausnahme auslösen.
 
-### <a name="tostring-methods"></a>ToString Methods
- The debugger uses <xref:System.Object.ToString%2A?displayProperty=fullName> to help display information about objects in string format. Therefore, **ToString** should not change the state of an object and it should not throw exceptions.
+### <a name="tostring-methods"></a>Methoden mit dem Methoden Satz
+ Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName>, um Informationen zu Objekten im Zeichen folgen Format anzuzeigen. Daher sollte die Objekt **Zeichenfolge** den Status eines Objekts nicht ändern und keine Ausnahmen auslösen.
 
 ### <a name="static-constructors"></a>Statische Konstruktoren
- Throwing exceptions from a static constructor causes the type to be unusable in the current application domain. You should have a very good reason (such as a security issue) for throwing an exception from a static constructor.
+ Das Auslösen von Ausnahmen von einem statischen Konstruktor bewirkt, dass der Typ in der aktuellen Anwendungsdomäne unbrauchbar ist. Sie sollten einen sehr guten Grund (z. b. ein Sicherheitsproblem) zum Auslösen einer Ausnahme von einem statischen Konstruktor haben.
 
 ### <a name="finalizers"></a>Finalizer
- Throwing an exception from a finalizer causes the CLR to fail fast, which tears down the process. Therefore, throwing exceptions in a finalizer should always be avoided.
+ Das Auslösen einer Ausnahme von einem Finalizer bewirkt, dass die CLR schnell ausfällt, was den Prozess aufreißt. Daher sollte das Auslösen von Ausnahmen in einem Finalizer immer vermieden werden.
 
-### <a name="dispose-methods"></a>Dispose Methods
- A <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method should not throw an exception. Dispose is often called as part of the clean up logic in a `finally` clause. Therefore, explicitly throwing an exception from Dispose forces the user to add exception handling inside the `finally` clause.
+### <a name="dispose-methods"></a>Verwerfen von Methoden
+ Eine <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme auslösen. "Verwerfen" wird häufig als Teil der Bereinigungs Logik in einer `finally`-Klausel aufgerufen. Daher zwingt das explizite Auslösen einer Ausnahme von verwerfen den Benutzer, eine Ausnahmebehandlung in der `finally`-Klausel hinzuzufügen.
 
- The **Dispose(false)** code path should never throw exceptions, because this is almost always called from a finalizer.
+ Der verwerfen **(false)** -Codepfad sollte nie Ausnahmen auslösen, da dies fast immer von einem Finalizer aufgerufen wird.
 
-### <a name="equality-operators--"></a>Equality Operators (==, !=)
- Like Equals methods, equality operators should return either `true` or `false` and should not throw exceptions.
+### <a name="equality-operators--"></a>Gleichheits Operatoren (= =,! =)
+ Gleichheits Operatoren sollten wie Gleichheits Methoden entweder `true` oder `false` zurückgeben und sollten keine Ausnahmen auslösen.
 
-### <a name="implicit-cast-operators"></a>Implicit Cast Operators
- Because the user is often unaware that an implicit cast operator has been called, an exception thrown by the implicit cast operator is completely unexpected. Therefore, no exceptions should be thrown from implicit cast operators.
+### <a name="implicit-cast-operators"></a>Implizite Umwandlungs Operatoren
+ Da der Benutzer häufig nicht weiß, dass ein impliziter Umwandlungs Operator aufgerufen wurde, ist eine Ausnahme, die vom impliziten Umwandlungs Operator ausgelöst wurde, völlig unerwartet. Daher sollten keine Ausnahmen von impliziten Umwandlungs Operatoren ausgelöst werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- For property getters, either change the logic so that it no longer has to throw an exception, or change the property into a method.
+ Ändern Sie für Eigenschaften Getter die Logik, sodass keine Ausnahme mehr ausgelöst werden muss, oder ändern Sie die-Eigenschaft in eine-Methode.
 
- For all other method types listed previously, change the logic so that it no longer must throw an exception.
+ Ändern Sie für alle anderen zuvor aufgelisteten Methoden Typen die Logik so, dass Sie keine Ausnahme mehr auslösen muss.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- It is safe to suppress a warning from this rule if the violation was caused by an exception declaration instead of a thrown exception.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Verletzung durch eine Ausnahme Deklaration anstelle einer ausgelösten Ausnahme verursacht wurde.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)

@@ -1,5 +1,5 @@
 ---
-title: Customize your model with profiles and stereotypes | Microsoft Docs
+title: Anpassen des Modells mit Profilen und Stereotypen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,15 +23,15 @@ ms.locfileid: "74301201"
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Anpassen des Modells mit Profilen und Stereotypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie die standardmäßigen UML-Modellelemente wie z. B. Klassen und Komponenten an spezifische Zwecke anpassen. You can apply a *stereotype* to a model element that can change the element's list of properties. Stereotypes are defined within collections called *profiles*.
+In Visual Studio können Sie die standardmäßigen UML-Modellelemente wie z. B. Klassen und Komponenten an spezifische Zwecke anpassen. Sie können ein *Stereotyp* auf ein Modellelement anwenden, das die Liste der Eigenschaften des Elements ändern kann. Stereotype werden in Auflistungen namens *profile*definiert.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Um ein Stereotyp zu verwenden, verknüpfen Sie ein Paket mit einem Profil. So können Sie die im Profil definierten Stereotype auf die Elemente im Paket anwenden. Einige Profile werden zusammen mit Visual Studio installiert. Darüber hinaus können Sie eigene Profile definieren.
 
  Stereotype können in der Eigenschaftenliste eines Elements festgelegt werden. Für die wichtigsten Arten von Formen in einem Diagramm werden die angewendeten Stereotype auch in der Form angezeigt, wie im Beispiel dargestellt.
 
- ![A UML class with a stereotype.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![Eine UML-Klasse mit einem Stereotyp.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Wenn Sie ein Modell mithilfe eines Profils erstellen und dann das Modell für einen anderen Benutzer freigeben, werden für diesen die Stereotype nur angezeigt, wenn auf dem Computer des Benutzers das gleiche Profil installiert ist.

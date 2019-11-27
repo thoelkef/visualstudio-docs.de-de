@@ -109,7 +109,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 
   - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)
 
-    \- oder -
+    \- oder –
 
 - Legen Sie einen Registrierungsschlüssel fest, der den Speicherort der anzuzeigenden Assemblys angibt:
 
@@ -131,7 +131,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 
     Indem der Registrierungsschlüssel unter dem HKEY_LOCAL_MACHINE-Knoten erstellt wird, können die Assemblys am angegebenen Speicherort von allen Benutzern im Dialogfeld **Verweis hinzufügen** angezeigt werden. Wenn der Registrierungsschlüssel unter dem HKEY_CURRENT_USER-Knoten erstellt wird, hat dies nur Einfluss auf die Einstellung für den aktuellen Benutzer.
 
-    Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
+    Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. Die Assemblys sollten auf der Registerkarte **.net** angezeigt werden. Wenn dies nicht der Fall ist, stellen Sie sicher, dass sich die *Assemblys im angegebenen Verzeichnis assemblylocation* befinden, starten Sie Visual Studio neu, und wiederholen Sie den Vorgang.
 
 ## <a name="com-tab"></a>COM-Registerkarte
  Die Registerkarte "COM" listet alle COM-Komponenten auf, die für Verweise verfügbar sind. Wenn Sie einer registrierten COM DLL mit einem internen Manifest eine Referenz hinzufügen möchten, müssen Sie die Registrierung der DLL zunächst aufheben. Andernfalls fügt Visual Studio den Assemblyverweis als ActiveX-Steuerelement und nicht als systemeigene DLL hinzu.
@@ -185,7 +185,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 
  Wenn ein Projekttyp keine **Erweiterungen** unterstützt, wird die Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
 
-## <a name="browse-button"></a>Schaltfläche "Durchsuchen"
+## <a name="browse-button"></a>Durchsuchen (Schaltfläche)
  Mit der Schaltfläche **Durchsuchen** können Sie nach einer Komponente im Dateisystem suchen.
 
  Ein Projekt kann auf eine Komponente verweisen, die eine andere .NET Framework-Version als Ziel verwendet. Beispielsweise können Sie eine Anwendung erstellen, die .NET Framework 4 Client Profile als Ziel verwendet, das auf eine Komponente verweist, die auf .NET Framework 2 ausgerichtet ist. Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md).
@@ -209,11 +209,11 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
     > [!NOTE]
     > Wenn Sie die Eigenschaft hinzufügen, wird der Build ggf. langsamer ausgeführt.
 
-## <a name="recent"></a>Zuletzt
+## <a name="recent"></a>Zuletzt verwendet
  Assemblys, COM, Windows und Durchsuchen unterstützen jeweils eine Registerkarte "Aktuell", auf der die Liste der Komponenten aufgeführt werden, die Projekten kürzlich hinzugefügt wurden.
 
-## <a name="search"></a>Suche
+## <a name="search"></a>Suchen
  Die Suchleiste im Dialogfeld **Verweis-Manager** funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.
 
 ## <a name="see-also"></a>Siehe auch
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)
+ [NIB: Gewusst wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) " [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)

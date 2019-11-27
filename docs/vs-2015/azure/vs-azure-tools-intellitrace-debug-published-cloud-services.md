@@ -1,5 +1,5 @@
 ---
-title: Debugging a published an Azure cloud service with Visual Studio and IntelliTrace | Microsoft Docs
+title: Debuggen eines veröffentlichten Azure-clouddiensts mit Visual Studio und IntelliTrace | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie einen Clouddienst mit Visual Studio und IntelliTrace debuggen.
 author: mikejo5000
 manager: jillfra
@@ -32,7 +32,7 @@ Alternativ dazu können Sie das [Remotedebuggen](https://go.microsoft.com/fwlink
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Konfigurieren einer Azure-Anwendung für IntelliTrace
 Wenn Sie IntelliTrace für eine Azure-Anwendung aktivieren möchten, müssen Sie die Anwendung in einem Visual Studio Azure-Projekt erstellen und von dort veröffentlichen. Sie müssen IntelliTrace für die Azure-Anwendung konfigurieren, bevor Sie die Anwendung in Azure veröffentlichen. Wenn Sie Ihre Anwendung veröffentlichen, ohne IntelliTrace zu konfigurieren, müssen Sie das Projekt erneut veröffentlichen. Weitere Informationen finden Sie unter [Veröffentlichen eines Azure-Clouddienstprojekts mit Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=623012).
 
-1. Wenn Sie bereit sind, die Azure-Anwendung bereitzustellen, überprüfen Sie, ob die Projektbuildziele auf **Debuggen**festgelegt sind.
+1. Wenn Sie bereit sind, die Azure-Anwendung bereitzustellen, überprüfen Sie, ob die Projektbuildziele auf **Debuggen** festgelegt wurden.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie im Kontextmenü die Option **Veröffentlichen** aus.
    

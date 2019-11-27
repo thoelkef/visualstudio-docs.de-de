@@ -15,10 +15,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301388"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Shims, um Teile Ihrer Anwendung für Komponententests voneinander zu isolieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Stub-Typen* stellen eine von zwei Technologien des Microsoft Fakes-Frameworks dar. Sie können damit eine Komponente, die Sie testen, einfacher von den anderen aufgerufenen Komponenten isolieren. Ein Stub ist ein kleiner Codeabschnitt, der während des Tests an die Stelle einer anderen Komponente tritt. Der Vorteil eines Stubs liegt darin, dass dieser konsistente Ergebnisse zurückgibt und so das Schreiben des Tests erleichtert. Außerdem können Sie Tests ausführen, auch wenn die anderen Komponenten noch nicht funktionieren.
+Stub-Typen* stellen eine von zwei Technologien des Microsoft Fakes-Frameworks dar. Sie können damit eine Komponente, die Sie testen, einfacher von den anderen aufgerufenen Komponenten isolieren. Ein Stub ist ein kleines Codestück, das während des Tests den Platz einer anderen Komponente einnimmt. Der Vorteil bei der Verwendung eines Stubs besteht darin, dass er konsistente Ergebnisse zurückgibt, weshalb sich der Test einfacher schreiben lässt. Außerdem können Sie Tests ausführen, auch wenn die anderen Komponenten noch nicht funktionieren.
 
  Eine Übersicht und ein Schnellstarthandbuch für Fakes finden Sie unter [Isolieren von Komponententestmethoden mit Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -26,7 +26,7 @@ Stub-Typen* stellen eine von zwei Technologien des Microsoft Fakes-Frameworks da
 
  Im Diagramm soll die StockAnalyzer-Komponente getestet werden. Sie verwendet normalerweise eine andere Komponente, den RealStockFeed. RealStockFeed gibt jedoch bei jedem Aufruf seiner Methoden unterschiedliche Ergebnisse zurück. Daher ist es schwierig, den StockAnalyzer zu testen.  Ersetzen Sie ihn während des Tests durch eine andere Klasse, dem StubStockFeed.
 
- ![Real and Stub classes conform to one interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
+ ![Real-und Stub-Klassen entsprechen einer Schnittstelle.](../test/media/fakesinterfaces.png "Fakesinterfaces")
 
  Da Stubs darauf beruhen, dass Sie Ihren Code auf diese Weise strukturieren, verwenden Sie in der Regel Stubs, um einen Teil der Anwendung von einem anderen zu isolieren. Um diesen Teil von anderen Assemblys zu isolieren, die Sie nicht steuern können, z. B. System.dll, würden Sie normalerweise Shims verwenden. Weitere Informationen finden Sie unter [Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 

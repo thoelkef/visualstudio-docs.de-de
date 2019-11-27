@@ -1,5 +1,5 @@
 ---
-title: Developing Workflow Applications Targeting the .NET 3.0 or .NET 3.5 Framework | Microsoft Docs
+title: Entwickeln von Workflow Anwendungen, die auf .NET 3,0 oder .NET 3,5 Framework abzielen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -19,7 +19,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300924"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Entwickeln von Workflowanwendungen, die auf .NET 3.0 oder .NET auf 3.5 Framework abzielen
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt die [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Anwendungen zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen bereit, die auf [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] abzielen. Der Designer verwendet die vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche für die grafische Erstellung und das Debuggen von Workflowanwendungen.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt die [!INCLUDE[wfd1](../includes/wfd1-md.md)] zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)] Anwendungen bereit, die auf das [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]abzielen. Der Designer verwendet die vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche für die grafische Erstellung und das Debuggen von Workflowanwendungen.
 
  [!INCLUDE[vs2010](../includes/vs2010-md.md)] bietet auch Zugriff auf einen Legacyworkflow-Designer, der verwendet werden kann, um auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzuzielen. Dieser Abschnitt enthält Anweisungen zur Verwenden dieses Legacydesigners.
 
@@ -29,4 +29,4 @@ ms.locfileid: "74300924"
  [Debuggen von Legacyworkflows](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Windows Workflow Foundation Programming Guide](https://go.microsoft.com/fwlink?LinkID=65012)
+ [Windows Workflow Foundation-Programmier Handbuch](https://go.microsoft.com/fwlink?LinkID=65012)

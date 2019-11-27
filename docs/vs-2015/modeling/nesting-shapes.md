@@ -1,5 +1,5 @@
 ---
-title: Nesting Shapes | Microsoft Docs
+title: Schachteln von Formen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,4 +19,4 @@ ms.locfileid: "74296052"
 # <a name="nesting-shapes"></a>Verschachteln von Formen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-See [Jean-Marc Prieur’s blog](https://blogs.msdn.microsoft.com/jmprieur/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1/)
+Siehe [den Blog von Jean-Marc prieuro](https://blogs.msdn.microsoft.com/jmprieur/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1/)

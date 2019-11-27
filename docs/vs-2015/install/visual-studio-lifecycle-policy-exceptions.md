@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Lifecycle Policy Exceptions | Microsoft Docs
+title: Ausnahmen für die Visual Studio-Lebenszyklus Richtlinie | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -24,12 +24,12 @@ Visual Studio enthält eine Sammlung von Compilern, Sprachen, Laufzeiten, Umgebu
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Externe Komponenten, die einer anderen Lebenszyklusrichtlinie als der Visual Studio-Richtlinie unterliegen  
  Die folgende Tabelle enthält die Microsoft-Plattformkomponenten, die (je nach Edition der Visual Studio-Software) in Visual Studio enthalten sein können und eigenen Supportrichtlinien und Fristen unterliegen.  
   
-|PRODUKTFAMILIE|EXTERNER NAME|  
+|PRODUKTFAMILIE|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 Packet zur Festlegung von Zielversionen (klassisch)<br /><br /> .NET 4.5.1 Paket zur Festlegung von Zielversionen (Store)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> .NET 4.5.1 Redist<br /><br /> .NET 4.5.1 Redist-Sprachpakete<br /><br /> .NET 4.5.1 SDK|  
-|[ASP.NET-Webstapel](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET-Web-API<br /><br /> ASP.NET-Web-API 2<br /><br /> ASP.NET-Webseiten 2<br /><br /> ASP.NET-Webseiten 3|  
+|[ASP.NET-Webstapel](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web-API<br /><br /> ASP.NET-Web-API 2<br /><br /> ASP.NET Web Pages 2<br /><br /> ASP.NET-Webseiten 3|  
 |[Entity Framework 6](https://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
 |[Exchange 2013](https://go.microsoft.com/fwlink/?LinkId=328950)|Exchange-Webdienste|  
 |[Microsoft OWIN](https://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
@@ -49,4 +49,4 @@ Visual Studio enthält eine Sammlung von Compilern, Sprachen, Laufzeiten, Umgebu
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> Windows Library für JavaScript (WinJS)|  
-|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> See also: [Online Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> Siehe auch: [Online Lifecycle-Richtlinie](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|

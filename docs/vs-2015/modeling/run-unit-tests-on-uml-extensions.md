@@ -1,5 +1,5 @@
 ---
-title: Run unit tests on UML extensions | Microsoft Docs
+title: Ausführen von Komponententests für UML-Erweiterungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,45 +21,45 @@ ms.locfileid: "74292536"
 
 Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen, dass Sie Komponententests erstellen und diese im Rahmen des normalen Buildprozesses ausführen. Weitere Informationen finden Sie unter [Unit Test Your Code](../test/unit-test-your-code.md). Zum Einrichten von Tests für Visual Studio-Modellierungserweiterungen sind einige wichtige Informationen erforderlich. Zusammenfassung:
 
-- [Setting up a Unit Test for VSIX Extensions](#Host)
+- [Einrichten eines Komponententests für VSIX-Erweiterungen](#Host)
 
    Ausführen von Tests mit dem VS IDE-Hostadapter Stellen Sie jeder Testmethode `[HostType("VS IDE")]`als Präfix voran. Dieser Hostadapter startet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , wenn Ihre Tests ausgeführt werden.
 
-- [Accessing DTE and ModelStore](#DTE)
+- [Zugreifen auf DTE und Model Store](#DTE)
 
    In der Regel müssen Sie ein Modell und seine Diagramme öffnen und dann während der Testinitialisierung auf `IModelStore` zugreifen.
 
-- [Opening a Model Diagram](#Opening)
+- [Öffnen eines Modell Diagramms](#Opening)
 
    Sie können `EnvDTE.ProjectItem` in und von `IDiagramContext`umwandeln.
 
-- [Performing Changes in the UI Thread](#UiThread)
+- [Ausführen von Änderungen im UI-Thread](#UiThread)
 
    Tests, die Änderungen am Modellspeicher vornehmen, müssen im UI-Thread durchgeführt werden. Sie können dazu `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` verwenden.
 
-- [Testing commands, gestures and other MEF components](#MEF)
+- [Testen von Befehlen, Gesten und anderen MEF-Komponenten](#MEF)
 
    Zum Testen von MEF-Komponenten müssen Sie deren importierten Eigenschaften explizit mit Werten verbinden.
 
   Diese Punkte werden in den folgenden Abschnitten ausgearbeitet.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Voraussetzungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="Host"></a> Setting up a Unit Test for VSIX Extensions
+## <a name="Host"></a>Einrichten eines Komponententests für VSIX-Erweiterungen
  Die Methoden in Ihren Modellierungserweiterungen funktionieren normalerweise mit einem Diagramm, das bereits geöffnet ist. Die Methoden verwenden MEF-Importe wie **IDiagramContext** und **ILinkedUndoContext**. Dieser Kontext muss von Ihrer Testumgebung eingerichtet werden, bevor Sie die Tests ausführen.
 
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>So richten Sie einen Komponententest ein, der in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ausgeführt wird
 
 1. Erstellen Sie ein UML-Erweiterungsprojekt sowie das Komponententestprojekt.
 
-    1. **A UML extension project.** Normalerweise erstellen Sie dies mithilfe der Befehls-, Gesten- oder Validierungsprojektvorlagen. For example, see [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+    1. **Ein UML-Erweiterungsprojekt.** Normalerweise erstellen Sie dies mithilfe der Befehls-, Gesten- oder Validierungsprojektvorlagen. Informationen hierzu finden Sie beispielsweise [unter Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **A unit test project.** Weitere Informationen finden Sie unter [Unit Test Your Code](../test/unit-test-your-code.md).
+    2. **Ein Komponenten Testprojekt.** Weitere Informationen finden Sie unter [Unit Test Your Code](../test/unit-test-your-code.md).
 
-2. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Lösung, die ein UML-Modellierungsprojekt enthält. Sie werden diese Lösung als Ausgangszustand für Ihre Tests verwenden. Sie sollte von der Lösung getrennt sein, in der Sie die UML-Erweiterung und ihre Komponententests erstellen. For more information, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
+2. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Lösung, die ein UML-Modellierungsprojekt enthält. Sie werden diese Lösung als Ausgangszustand für Ihre Tests verwenden. Sie sollte von der Lösung getrennt sein, in der Sie die UML-Erweiterung und ihre Komponententests erstellen. Weitere Informationen finden Sie unter [Erstellen von UML-Modellierungs Projekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 3. **Im UML-Erweiterungsprojekt**bearbeiten Sie die CSPROJ-Datei als Text und stellen sicher, dass die folgenden Zeilen den Wert `true`anzeigen:
 
@@ -78,25 +78,25 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
 
 5. **Fügen Sie im Komponententestprojekt**die folgenden Assemblyverweise hinzu:
 
-    - *Your UML extension project*
+    - *Ihr UML-Erweiterungsprojekt*
 
-    - **EnvDTE.dll**
+    - **"Umvdte. dll"**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. architecturetools. Extensibility. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. componentmodelhost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. Uml. Interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. testhostframework. dll**
 
 6. Stellen Sie jeder Testmethode, einschließlich der Initialisierungsmethoden, das `[HostType("VS IDE")]` -Attribut als Präfix voran.
 
      Dadurch wird sichergestellt, dass der Test in einer experimentellen Instanz von Visual Studio ausgeführt wird.
 
-## <a name="DTE"></a> Accessing DTE and ModelStore
+## <a name="DTE"></a>Zugreifen auf DTE und Model Store
  Erstellen Sie eine Methode zum Öffnen eines Modellierungsprojekts in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In der Regel öffnen Sie eine Lösung während eines Testlaufs nur einmal. Damit die Methode nur einmal ausgeführt wird, stellen Sie das `[AssemblyInitialize]` -Attribut der Methode als Präfix voran. Vergessen Sie nicht, dass auch das [HostType("VS IDE")]-Attribut für jede Testmethode erforderlich ist.  Beispiel:
 
 ```csharp
@@ -162,9 +162,9 @@ namespace UnitTests
 
 ```
 
- If an instance of <xref:EnvDTE.Project?displayProperty=fullName> represents a modeling project, then you can cast it to and from [IModelingProject](/previous-versions/ee789474(v=vs.140)).
+ Wenn eine Instanz von <xref:EnvDTE.Project?displayProperty=fullName> ein Modellierungsprojekt darstellt, können Sie Sie in und aus [IModelingProject](/previous-versions/ee789474(v=vs.140))umwandeln.
 
-## <a name="Opening"></a> Opening a Model Diagram
+## <a name="Opening"></a>Öffnen eines Modell Diagramms
  Für jeden Test oder jede Testklasse möchten Sie normalerweise mit einem geöffneten Diagramm arbeiten. Das folgende Beispiel verwendet das `[ClassInitialize]` -Attribut, das diese Methode vor anderen Methoden in dieser Testklasse ausführt. Vergessen Sie wiederum nicht, dass auch das [HostType("VS IDE")]-Attribut für die einzelnen Testmethoden erforderlich ist.
 
 ```csharp
@@ -209,7 +209,7 @@ public class MyTestClass
 
 ```
 
-## <a name="UiThread"></a> Perform Model Changes in the UI Thread
+## <a name="UiThread"></a>Durchführen von Modelländerungen im UI-Thread
  Wenn Ihre Tests oder die getesteten Methoden Änderungen am Modellspeicher vornehmen, müssen Sie sie im Benutzeroberflächenthread ausführen. Wenn Sie dies ignorieren, wird möglicherweise eine `AccessViolationException`angezeigt. Schließen Sie den Code der Testmethode in einen Aufruf zum Aufrufen von Folgendem ein:
 
 ```
@@ -229,7 +229,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }
 ```
 
-## <a name="MEF"></a> Testing command, gesture and other MEF components
+## <a name="MEF"></a>Testen von Befehls-, Gesten-und anderen MEF-Komponenten
  MEF-Komponenten verwenden Eigenschaftsdeklarationen, die über das `[Import]` -Attribut verfügen und deren Werte von ihren Hosts festgelegt werden. Im Allgemeinen umfassen diese Eigenschaften "IDiagramContext", "SVsServiceProvider" und "ILinkedUndoContext". Wenn Sie eine Methode testen, die eine dieser Eigenschaften verwendet, müssen Sie deren Werte festlegen, bevor Sie die getestete Methode ausführen. Wenn Sie z. B. eine Befehlserweiterung erstellt haben, die dem folgenden Code ähnelt:
 
 ```
@@ -324,7 +324,7 @@ using System.ComponentModel.Composition;
 ## <a name="access-from-tests-to-private-methods-and-variables"></a>Zugreifen aus Tests auf private Methoden und Variablen
  Gelegentlich möchten Sie möglicherweise eine Methode testen, die privat ist oder Sie möchten den Zustand eines privaten Felds überprüfen, bevor und nachdem Sie eine getestete Methode ausführen. Dies erweist sich als Schwierigkeit, da sich die Tests in einer Assembly befinden, die von den getesteten Klassen getrennt ist. Es gibt verschiedene Möglichkeiten, die Sie erwägen können, einschließlich der Folgenden:
 
- Test only by using public and internal items Write your tests so that they use only public (or internal) classes and members. Dies ist der optimale Ansatz. Ihre Tests funktionieren auch dann noch, wenn Sie die interne Implementierung der zu testenden Assembly umgestalten. Indem Sie dieselben Tests vor und nach den Änderungen anwenden, können Sie sicherstellen, dass sich Ihre Änderungen nicht auf das Verhalten der Assembly ausgewirkt haben.
+ Testen Sie die Tests nur mit öffentlichen und internen Elementen, sodass Sie nur öffentliche (oder interne) Klassen und Member verwenden. Dies ist der optimale Ansatz. Ihre Tests funktionieren auch dann noch, wenn Sie die interne Implementierung der zu testenden Assembly umgestalten. Indem Sie dieselben Tests vor und nach den Änderungen anwenden, können Sie sicherstellen, dass sich Ihre Änderungen nicht auf das Verhalten der Assembly ausgewirkt haben.
 
  Dazu müssen Sie möglicherweise den Code umstrukturieren. Möglicherweise müssen Sie einige Methoden in eine andere Klasse verschieben.
 
@@ -336,7 +336,7 @@ using System.ComponentModel.Composition;
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- Define a test interface Define an interface that includes both the public members of a class to be tested, and additional properties and methods for the private members that you want the tests to be able to use. Fügen Sie diese Schnittstelle zum zu testenden Projekt hinzu. Beispiel:
+ Definieren einer Test Schnittstelle definieren Sie eine Schnittstelle, die sowohl die öffentlichen Member einer zu testenden Klasse als auch zusätzliche Eigenschaften und Methoden für die privaten Member enthält, die von den Tests verwendet werden sollen. Fügen Sie diese Schnittstelle zum zu testenden Projekt hinzu. Beispiel:
 
 ```csharp
 internal interface MyClassTestInterface {
@@ -374,7 +374,7 @@ testInstance.PublicMethod1();
 Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 ```
 
- Define accessors by using reflection This is the way that we recommend least. Ältere Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben ein Hilfsprogramm bereitgestellt, das automatisch eine Accessormethode für die einzelnen privaten Methoden bereitgestellt hat. Obwohl diese Vorgehensweise praktisch ist, sagt uns unsere Erfahrung, dass dies eher zu Komponententests führt, die sehr stark an die interne Struktur der zu testenden Anwendung gebunden sind. Dies führt bei sich ändernden Anforderungen oder einer veränderten Architektur wiederum zu zusätzlichem Aufwand, da die Tests zusammen mit der Implementierung geändert werden müssen. Zudem werden sämtliche fehlerhaften Annahmen für den Implementierungsentwurf auch in die Tests übernommen, sodass in den Tests keine Fehler gefunden werden.
+ Definieren von Accessoren mithilfe von Reflektion Dies ist die empfohlene Vorgehensweise. Ältere Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben ein Hilfsprogramm bereitgestellt, das automatisch eine Accessormethode für die einzelnen privaten Methoden bereitgestellt hat. Obwohl diese Vorgehensweise praktisch ist, sagt uns unsere Erfahrung, dass dies eher zu Komponententests führt, die sehr stark an die interne Struktur der zu testenden Anwendung gebunden sind. Dies führt bei sich ändernden Anforderungen oder einer veränderten Architektur wiederum zu zusätzlichem Aufwand, da die Tests zusammen mit der Implementierung geändert werden müssen. Zudem werden sämtliche fehlerhaften Annahmen für den Implementierungsentwurf auch in die Tests übernommen, sodass in den Tests keine Fehler gefunden werden.
 
 ## <a name="see-also"></a>Siehe auch
- [Anatomy of a Unit Test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Anatomie eines Komponententests](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

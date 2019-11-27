@@ -101,21 +101,21 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  *Was sollte ich noch wissen?*
  **Notizen**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Der Webbrowser von Apple Safari wird nicht unterstützt.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.
 
    Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen wie maximieren, minimieren und Wiederherstellen wird nicht unterstützt.
 
   **Tipps**
 
-- ![Tip](../test/media/tip.png "Tipp") You can configure the output to include screenshots in the coded UI logs. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:
+- ![Tipp](../test/media/tip.png "Tipp") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:
 
    **C:\Programme (x86)\Microsoft Visual Studio 11.0\Common7\IDE“**
 
-   Geben Sie die folgenden Werte an:
+   Legen Sie die folgenden Werte fest:
 
   - `EqtTraceLevel` im Abschnitt `system.diagnostics`.
 
@@ -143,7 +143,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
  [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>FAQ
+### <a name="faq"></a>Häufig gestellte Fragen
  [Tests der codierten UI – FAQ 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Tests der codierten UI – FAQ 2](https://go.microsoft.com/fwlink/?LinkID=230578)
@@ -152,4 +152,4 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Siehe auch
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+ [Verwenden von Benutzeroberflächen Automatisierung zum Testen ihrer vom Code](../test/use-ui-automation-to-test-your-code.md) [unterstützten Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) Analysieren von Tests der programmierten [UI mithilfe von Test Protokollen](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

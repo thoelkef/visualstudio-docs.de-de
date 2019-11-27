@@ -69,7 +69,7 @@ int main() {
   
  Wenn Sie diesen Code in Visual Studio 2015 Update 1 ausführen, sollte das folgende Ausnahmedialogfeld angezeigt werden:  
   
- ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
+ ![Accessviolationcplus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
   
  Wenn Sie nicht bestimmen können, warum der Zeiger eine Zugriffsverletzung verursacht hat, überwachen Sie den Code mithilfe der Ablaufverfolgung, um sicherzustellen, dass der Zeiger, der das Problem verursacht, ordnungsgemäß zugewiesen wurde.  Wenn er als Parameter übergeben wird, achten Sie darauf, dass die Übergabe ordnungsgemäß erfolgt und Sie nicht versehentlich eine [flache Kopie](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)erstellen. Überprüfen Sie anschließend, ob die Werte nicht unbeabsichtigt im Programm geändert werden, indem Sie einen Datenhaltepunkt für den fraglichen Zeiger erstellen, um sicherzustellen, dass er nicht an anderer Stelle im Programm geändert wird. Weitere Informationen zu Datenhaltepunkten finden Sie im Abschnitt über Datenhaltepunkte in [Using Breakpoints](../debugger/using-breakpoints.md).  
   

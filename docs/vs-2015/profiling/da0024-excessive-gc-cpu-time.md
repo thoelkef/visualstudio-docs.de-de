@@ -23,11 +23,11 @@ ms.locfileid: "74300090"
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Übermäßige GC-CPU-Zeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0024|  
-|Category|.NET Framework Usage|  
-|Profiling method|All|  
-|Message|% Time in GC is very high. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.|  
-|Rule type|Warning|  
+Regel-ID | DA0024 |  
+| Kategorie |. .NET Framework-Verwendung |  
+| Profil Erstellungs Methode | Alle |  
+| Die Meldung |% Zeit in GC ist sehr hoch. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.|  
+| Regeltyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   

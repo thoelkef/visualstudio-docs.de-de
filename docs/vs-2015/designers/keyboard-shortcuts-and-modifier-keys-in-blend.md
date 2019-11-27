@@ -25,13 +25,13 @@ Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion
 
    Drücken Sie zum Verwenden der Zugriffstasten zuerst die ALT-TASTE oder F10, um die Unterstriche anzuzeigen, und drücken Sie dann den entsprechenden Buchstaben des Menü- oder Dialogfeldelements. Alternativ dazu können Sie auch durch ein Menü oder Dialogfeld navigieren, indem Sie die TAB-TASTE oder die Pfeiltasten verwenden. Wenn Sie in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] z.B. die ALT-TASTE drücken, wird im Menü **Datei** unter dem Buchstaben **D** ein Unterstrich angezeigt, um die Zugriffstaste anzugeben. Um ein Projekt zu öffnen, können Sie die ALT-TASTE gedrückt halten, den Buchstaben D drücken und dann den Buchstaben F drücken.
 
-   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") Access keys that appear with an underscore after you press ALT
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")Zugriffstasten, die nach dem Drücken von alt mit einem Unterstrich angezeigt werden
 
 - **Tastenkombinationen** Sie können Tastenkombinationen verwenden, um eine Aktion auszuführen (z.B. das Auswählen eines Menübefehls oder das Ändern des Verhaltens eines Werkzeugs), indem Sie eine Tastenkombination drücken.
 
    Auf der Benutzeroberfläche von [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] können Sie die meisten Tastenkombinationen leicht identifizieren. Sie werden jeweils rechts von den Menübefehlen angezeigt. Im Menü **Datei** wird für den Menübefehl **Projekt öffnen** beispielsweise die Tastenkombination STRG+UMSCHALT+O angezeigt. Zeigen Sie mit der Maus auf das Tool, um die Tastenkombinationen für ein Tool im Bereich **Werkzeuge** anzuzeigen.
 
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") Shortcut keys that appear next to menu items that have shortcuts
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Tastenkombinationen, die neben Menü Elementen mit Tastenkombinationen angezeigt werden
 
   Weitere Informationen zur Barrierefreiheit finden Sie unter [Accessibility at Microsoft (Barrierefreiheit bei Microsoft)](https://go.microsoft.com/fwlink/?LinkId=75069).
 

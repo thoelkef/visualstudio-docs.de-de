@@ -1,5 +1,5 @@
 ---
-title: Structure your modeling solution | Microsoft Docs
+title: Strukturieren der Modellierungs Lösung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -26,7 +26,7 @@ Um schnell mit einem Projekt oder Unterprojekt beginnen zu können, ist es hilfr
 
 In diesem Thema wird davon ausgegangen, dass Sie an einem Projekt arbeiten, das so groß ist, dass mehrere Teammitglieder erforderlich sind, und an dem möglicherweise mehrere Teams beteiligt sind. Der Code und die Modelle des Projekts sind in einem Quellcodeverwaltungssystem wie z. B. [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] gespeichert. Zumindest einige Teammitglieder verwenden Visual Studio zum Entwickeln von Modellen, und andere Teammitglieder können die Modelle mit anderen Versionen von Visual Studio anzeigen.
 
-To see which versions of Visual Studio support each tool and modeling feature, see [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Welche Versionen von Visual Studio die einzelnen Tools und Modellierungsfunktionen unterstützen, erfahren Sie unter [Versions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Projektmappenstruktur
 
@@ -34,13 +34,13 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
 #### <a name="to-divide-an-application-into-layers"></a>So unterteilen Sie eine Anwendung in Ebenen
 
-1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. A variety of common architectures is discussed in [Application Archetypes in the Microsoft Application Architecture Guide](https://go.microsoft.com/fwlink/?LinkId=196681).
+1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. Eine Reihe von gängigen Architekturen finden Sie im [Leitfaden zur Microsoft-Anwendungsarchitektur unter Anwendungs-archetypes](https://go.microsoft.com/fwlink/?LinkId=196681).
 
 2. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe, die wir als Architektur-Projektmappe bezeichnen. Diese Projektmappe wird zur Erstellung des allgemeinen Entwurfs des Systems verwendet. Es enthält Modelle, jedoch keinen Code.
 
     Fügen Sie dieser Projektmappe ein Ebenendiagramm hinzu. Zeichnen Sie im Ebenendiagramm die Architektur, die Sie für Ihre Anwendung ausgewählt haben. Das Diagramm kann beispielsweise die folgenden Ebenen und die Abhängigkeiten zwischen ihnen zeigen: Präsentation, Geschäftslogik und Daten.
 
-    You can create the layer diagram and a new Visual Studio solution at the same time by using the **New UML or Layer Diagram** command on the **Architecture** menu.
+    Sie können das ebenendiagramm und eine neue Visual Studio-Projekt Mappe gleichzeitig erstellen, indem Sie den Befehl **neues UML-oder ebenendiagramm** im Menü **Architektur** verwenden.
 
 3. Fügen Sie dem Architekturmodell UML-Diagramme hinzu, die die wichtigen Geschäftskonzepte darstellen, und Anwendungsfälle, auf die im Entwurf aller Ebenen verwiesen wird.
 
@@ -60,7 +60,7 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
     Sie verfügen jetzt über ein Modell für jede Ebene sowie über ein Modell für die Anwendungsarchitektur. Jedes Modell ist in einer eigenen Projektmappe enthalten. Dies ermöglicht es Teammitgliedern, gleichzeitig an den Ebenen zu arbeiten.
 
-2. Fügen Sie der Architektur-Projektmappe das Modellierungsprojekt jeder Ebenenprojektmappe hinzu. Öffnen Sie hierzu die Architektur-Projektmappe. In Solution Explorer, right-click the solution node, point to Add, and then click **Existing Project**. Navigieren Sie zum Modellierungsprojekt (.modelproj) in einer Ebenenprojektmappe.
+2. Fügen Sie der Architektur-Projektmappe das Modellierungsprojekt jeder Ebenenprojektmappe hinzu. Öffnen Sie hierzu die Architektur-Projektmappe. Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf den Lösungs Knoten, zeigen Sie auf Hinzufügen, und klicken Sie dann auf **vorhandenes Projekt**. Navigieren Sie zum Modellierungsprojekt (.modelproj) in einer Ebenenprojektmappe.
 
     Jedes Modell wird jetzt in zwei Projektmappen angezeigt: der Start-Projektmappe und der Architektur-Projektmappe.
 
@@ -80,9 +80,9 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>So verwenden Sie ein separates Paket für jede Ebene
 
-1. Fügen Sie in der Projektmappe für jede Ebene das Architektur-Modellierungsprojekt hinzu. In Solution Explorer, right-click the solution node, point to **Add**, and then click **Existing Project**. Das einzelne Modellierungsprojekt kann nun aus allen Projektmappen aufgerufen werden: das Projekt für die Architektur und das Entwicklungsprojekt für jede Ebene.
+1. Fügen Sie in der Projektmappe für jede Ebene das Architektur-Modellierungsprojekt hinzu. Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf den Lösungs Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**. Das einzelne Modellierungsprojekt kann nun aus allen Projektmappen aufgerufen werden: das Projekt für die Architektur und das Entwicklungsprojekt für jede Ebene.
 
-2. Erstellen Sie im freigegebenen UML-Modell ein Paket für jede Ebene: Wählen Sie im Projektmappen-Explorer das Modellierungsprojekt. In UML Model Explorer, right-click the model root node, point to **Add**, and then click **Package**.
+2. Erstellen Sie im freigegebenen UML-Modell ein Paket für jede Ebene: Wählen Sie im Projektmappen-Explorer das Modellierungsprojekt. Klicken Sie im UML-Modell-Explorer mit der rechten Maustaste auf den Modell Stamm Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Paket**
 
     Jede Paket enthält UML-Diagramme, in denen die Anforderungen und der Entwurf der jeweiligen Ebene beschrieben werden.
 
@@ -90,7 +90,7 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
     Diese Methode ermöglicht es, dass die Entwurfselemente der einzelnen Ebenen direkt auf die der Ebenen und gemeinsame Architektur verweisen, von denen sie abhängen.
 
-    Obwohl das gleichzeitige Arbeiten an verschiedenen Paketen Konflikte verursachen kann, sind sie relativ einfach zu lösen, da die Pakete in separaten Dateien gespeichert werden. Die Hauptschwierigkeit wird durch das Löschen eines Elements verursacht, auf das von einem abhängigen Paket verwiesen wird. For more information, see [Manage models and diagrams under version control](../modeling/manage-models-and-diagrams-under-version-control.md).
+    Obwohl das gleichzeitige Arbeiten an verschiedenen Paketen Konflikte verursachen kann, sind sie relativ einfach zu lösen, da die Pakete in separaten Dateien gespeichert werden. Die Hauptschwierigkeit wird durch das Löschen eines Elements verursacht, auf das von einem abhängigen Paket verwiesen wird. Weitere Informationen finden Sie [unter Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md).
 
 ## <a name="creating-architecture-templates"></a>Erstellen von Architekturvorlagen
 
@@ -100,24 +100,24 @@ Wenn Sie beispielsweise häufig Projektmappen mit Präsentations-, Geschäfts- u
 
 #### <a name="to-create-a-solution-template"></a>So erstellen Sie ein Projektmappenvorlage
 
-1. [Download and install the Export Template Wizard](https://go.microsoft.com/fwlink/?LinkId=196686), if you have not already done this.
+1. [Laden Sie den Assistenten zum Exportieren von Vorlagen herunter, und installieren](https://go.microsoft.com/fwlink/?LinkId=196686)Sie ihn, falls Sie dies noch nicht getan haben.
 
 2. Erstellen Sie die Projektmappenstruktur, die Sie als Ausgangspunkt für zukünftige Projekte verwenden möchten.
 
-3. Klicken Sie im Menü **Datei** auf **Vorlage als VSIX exportieren**. The **Export Template as VSIX Wizard** opens.
+3. Klicken Sie im Menü **Datei** auf **Vorlage als VSIX exportieren**. Der **Assistent "Vorlage als VSIX exportieren** " wird geöffnet.
 
 4. Folgen Sie den Anweisungen im Assistenten und wählen Sie die Projekte aus, die in die Vorlage aufgenommen werden sollen, geben Sie einen Namen und eine Beschreibung für die Vorlage an, und geben Sie einen Ausgabespeicherort an.
 
 > [!NOTE]
-> Das Material in diesem Thema wurde aus der Visual Studio Architecture Tooling Guidance+++ abstrahiert und verallgemeinert, die von den Visual Studio ALM Rangers+++ verfasst wurde und aus der Zusammenarbeit zwischen Most Valued Professionals (MVPs), Microsoft-Diensten und Visual Studio-Produktteam und -Autoren entstanden ist [Click here to download the complete Guidance package.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> Das Material in diesem Thema wurde aus der Visual Studio Architecture Tooling Guidance+++ abstrahiert und verallgemeinert, die von den Visual Studio ALM Rangers+++ verfasst wurde und aus der Zusammenarbeit zwischen Most Valued Professionals (MVPs), Microsoft-Diensten und Visual Studio-Produktteam und -Autoren entstanden ist [Klicken Sie hier, um das komplette Anleitungs Paket herunterzuladen.](https://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>Verwandte Materialien
 
-[Organizing and Managing Your Models](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) - video by Clint Edmondson.
+[Organisieren und Verwalten Ihrer Modelle](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) : Video von Clint Edmondson.
 
-[Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md) – Further guidance on managing models in a team
+[Leitfaden für Visual Studio-Architektur](../modeling/visual-studio-architecture-tooling-guidance.md) Tools – weitere Anleitungen zum Verwalten von Modellen in einem Team
 
 ## <a name="see-also"></a>Siehe auch
 
-[Manage models and diagrams under version control](../modeling/manage-models-and-diagrams-under-version-control.md)
-[Use models in your development process](../modeling/use-models-in-your-development-process.md)
+[Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md)
+[Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)

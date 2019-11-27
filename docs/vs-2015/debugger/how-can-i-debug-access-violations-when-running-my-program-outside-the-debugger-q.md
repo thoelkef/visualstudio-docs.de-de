@@ -36,7 +36,7 @@ Problembeschreibung
 ## <a name="solution"></a>Lösung  
  Legen Sie die Option für das [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) fest, und führen Sie das Programm im eigenständigen Modus aus, bis eine Zugriffsverletzung auftritt. Dann können Sie im Dialogfeld **Zugriffsverletzung** auf **Abbrechen** klicken, um den Debugger zu starten.  
   
- Weitere Informationen finden Sie im Knowledge Base-Artikel Q133174, "How to Locate Where a General Protection (GP) Fault Occurs" (nur auf Englisch verfügbar). You can find Knowledge Base articles on the MSDN Library CD or by searching [http://support.microsoft.com/](https://support.microsoft.com/).  
+ Weitere Informationen finden Sie im Knowledge Base-Artikel Q133174, "How to Locate Where a General Protection (GP) Fault Occurs" (nur auf Englisch verfügbar). Knowledge Base-Artikel finden Sie auf der MSDN Library-CD oder durchsuchen [http://support.microsoft.com/](https://support.microsoft.com/).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   

@@ -1,5 +1,5 @@
 ---
-title: Debug layout using DOM Explorer | Microsoft Docs
+title: Layout mit Dom Explorer Debuggen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,14 +28,14 @@ ms.locfileid: "74298390"
 # <a name="debug-layout-using-dom-explorer"></a>Debuggen von Layout mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content. png "windows_and_phone_content")  
   
  Die Registerkarte **Layout** des DOM Explorer teigt das [CSS-Verschachtelungsmodell](https://go.microsoft.com/fwlink/?LinkID=238778) für das ausgewählte Elemente in einer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App, Windows Phone Store-App oder einer mit Visual Studio Tools for Apache Cordova erstellten App. Sie können die visuelle Darstellung des Verschachtelungsmodells verwenden, um die layoutbezogenen Werte, die die Darstellung der Elemente beeinflussen, zu identifizieren und zu ändern.  
   
 > [!TIP]
 > Änderungen, die Sie auf der Registerkarte **Layout** vornehmen, werden nicht dauerhaft übernommen. Wenn Sie permanente Änderungen am Quellcode vornehmen möchten, aktualisieren Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** (nur Windows Store- und Windows Phone Store-Apps) auf der Symbolleiste "Debuggen". Dadurch können Sie vermeiden, dass der Debugger neu gestartet wird.  
   
- To use DOM Explorer to modify aspects of layout that aren’t shown in the box model, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md) and [Debug CSS styles using DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Wenn Sie DOM Explorer verwenden möchten, um Aspekte des Layouts zu ändern, die im Feld Modell nicht angezeigt werden, lesen Sie [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von CSS-Dom Explorer Stilen](../debugger/debug-css-styles-using-dom-explorer.md)  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Beispiel für das Beheben eines Layoutproblems  
  In diesem Beispiel wird ein Listenelement in der Hub/Pivot-Vorlage ausgewählt, dann werden die Werte des Verschachtelungsmodells interpretiert, die auf der Registerkarte **Layout** vorhanden sind, und anschließend wird einer der Eigenschaftswerte geändert, um ein Layoutproblem zu beheben.  
@@ -69,7 +69,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 5. Wählen Sie je nach Startprojekt **Emulator 8.1 WVGA 4 inch 512MB** oder **Simulator** in der Dropdownliste auf der Symbolleiste "Debuggen" aus (der Standardwert ist**Lokaler Computer** ).  
   
-     ![Selecting a debug target](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
+     ![Auswählen eines debugziels](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
 6. Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
@@ -83,11 +83,11 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
 8. Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt.  
   
     > [!TIP]
-    > Sie können auch die Pfeilschaltflächen oder andere Methoden verwenden, um HTML-Elemente direkt im DOM Explorer auszuwählen. For more info on selecting elements, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Sie können auch die Pfeilschaltflächen oder andere Methoden verwenden, um HTML-Elemente direkt im DOM Explorer auszuwählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Wählen Sie im Phone-Emulator oder Simulator die graue rechte Hälfte eines der Bilder aus, das nur halb dargestellt ist. Das ausgewählte Element wird markiert, wie hier im Windows Phone-Emulator dargestellt:  
   
-     ![Selecting a DOM element](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
+     ![Auswählen eines DOM-Elements](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
     > Der Simulator unterstützt das Zeigen auf Elemente, um eine rechteckige Hervorhebung um DOM-Elemente anzuzeigen, bevor Sie sie auswählen. Der Windows Phone-Emulator unterstützt dies nicht.  
@@ -99,13 +99,13 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
     </img>  
     ```  
   
-10. Click the **Layout** tab. This tab shows the box model of the selected element, as shown here in the Windows Phone Emulator.  
+10. Klicken Sie auf die Registerkarte **Layout** . Diese Registerkarte zeigt das Feld Modell des ausgewählten Elements an, wie hier im Windows Phone Emulator dargestellt.  
   
-     ![Layout tab of DOM Explorer](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Registerkarte "Layout" des DOM Explorer](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      Diese Ansicht enthält einige nützliche Informationen zum Element:  
   
-    - Die Farben entsprechen der rechteckigen Hervorhebung, die im Simulator beim Zeigen auf die Elemente angezeigt wird. The blue color represents the \<img> element dimensions. Die braune Farbe stellt Randwerte dar.  
+    - Die Farben entsprechen der rechteckigen Hervorhebung, die im Simulator beim Zeigen auf die Elemente angezeigt wird. Die blaue Farbe stellt die \<IMG > Element Dimensionen dar. Die braune Farbe stellt Randwerte dar.  
   
     - Der linke Rand (margin-left) ist festgelegt, was auf die Ursache des Problems hinweist, da er mit dem Symptom (schwarz auf der linken Seite der Bilder) übereinstimmt.  
   
@@ -114,7 +114,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
 11. Um zu sehen, wie die margin-left-Regel angewendet wird, klicken Sie auf die Registerkarte **Berechnet** , und schauen Sie unter der Regel "margin-left" nach. Sie sehen, dass die margin-left-Regel mit einem Wert von "5em" festgelegt ist, der berechnete Wert aber "66.66px" oder "146.66px" lautet, je nach Zielgerät.  
   
     > [!TIP]
-    > The **Computed** tab shows that the margin-left rule is set in the `..hubpage .hub. section4 .sub-image-row img` CSS selector, found in hub.css. Sie müssen das Problem in dieser Demo-App beheben.  
+    > Die Registerkarte **berechnet** zeigt, dass die margin-left-Regel im `..hubpage .hub. section4 .sub-image-row img` CSS-Selektor festgelegt wird, der in "Hub. CSS" enthalten ist. Sie müssen das Problem in dieser Demo-App beheben.  
   
      Sie können auch die Registerkarte **Layout** verwenden, um Änderungen an den Layoutwerten zu testen.  
   
@@ -122,11 +122,11 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 13. Geben Sie `0` ein, und drücken Sie die EINGABETASTE. (Sie können ebenso die NACH-OBEN- und NACH-UNTEN-TASTEN verwenden, um den Wert zu ändern.)  
   
-14. Select the other \<img> elements in DOM Explorer and change their margin-left values to 0.  
+14. Wählen Sie die anderen \<IMG > Elemente in DOM Explorer aus, und ändern Sie Ihre margin-left-Werte in 0.  
   
 15. Wechseln Sie zum Phone-Emulator bzw. zum Simulator. Die aktualisierten Werte des linken Rands wurden auf die Bilder in "Section 4" angewendet. Diese Werte werden auch auf der Registerkarte **Berechnet** unter der margin-left-Regel aktualisiert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debug CSS styles using DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
+ [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Debuggen von CSS-Stilen mithilfe Dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)

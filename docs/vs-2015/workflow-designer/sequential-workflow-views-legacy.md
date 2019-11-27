@@ -1,5 +1,5 @@
 ---
-title: Sequential Workflow Views (Legacy) | Microsoft Docs
+title: Sequenzielle Workflow Sichten (Legacy) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -20,21 +20,21 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74292353"
 ---
 # <a name="sequential-workflow-views-legacy"></a>Sequenzielle Workflowansichten (Vorgängerversion)
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt eine Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] bereit, die zum Abzielen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet werden kann.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt eine Legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] bereit, die verwendet werden kann, um die [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder die [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]als Ziel festzustellen.
 
- [!INCLUDE[wfd2](../includes/wfd2-md.md)] bietet eine Möglichkeit, [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen mithilfe der vertrauten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche grafisch zu erstellen. [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen bestehen aus Workflowprozessschritten, den so genannten Aktivitäten. To create a workflow, compose activities on the design surface by dragging their respective activity designers from **Toolbox** onto the design surface.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)] bietet eine Möglichkeit, [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen mithilfe der vertrauten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche grafisch zu erstellen. [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen bestehen aus Workflowprozessschritten, den so genannten Aktivitäten. Um einen Workflow zu erstellen, verfassen Sie Aktivitäten auf der Entwurfs Oberfläche, indem Sie die entsprechenden Aktivitäts Designer aus der **Toolbox** auf die Entwurfs Oberfläche ziehen.
 
- When you create a sequential workflow, which is a [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040), three views of the workflow are available. These views are accessible from the **Workflow** menu and from the context menu on the design surface.
+ Wenn Sie einen sequenziellen Workflow erstellen, bei dem es sich um eine [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)handelt, stehen drei Ansichten des Workflows zur Verfügung. Diese Sichten sind über das Menü **Workflow** und über das Kontextmenü der Entwurfs Oberfläche zugänglich.
 
  In der folgenden Tabelle werden die Namen und Beschreibungen der einzelnen Ansichten aufgeführt.
 
 |Menü-/Registerkartenoption|Beschreibung|
 |----------------------|-----------------|
-|**View SequentialWorkflow**|Right-click the design surface and select the **View SequentialWorkflow** option from the context menu to display the **Sequential Workflow** view, which shows the activity-based graphical representation of the sequential workflow. Or select **View SequentialWorkflow** from the **Workflow** menu.|
-|**View Cancel Handler**|Right-click the design surface and select the **View Cancel Handler** option from the context menu to display the **Sequential Workflow** view, which shows the [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) activity associated with the workflow. Or select **View Cancel Handler** from the **Workflow** menu.|
-|**View Fault Handler**|Right-click the design surface and select the **View Fault Handler** option from the context menu to display the **Faults** view, which shows the [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) activity associated with the workflow. Or select **View Fault Handler** from the **Workflow** menu.|
+|**SequentialWorkflow anzeigen**|Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche, und wählen Sie im Kontextmenü die Option **SequentialWorkflow anzeigen** aus, um die Ansicht **sequenzieller Workflow** anzuzeigen, in der die aktivitätsbasierte grafische Darstellung des sequenziellen Workflows angezeigt wird. Oder wählen Sie im Menü **Workflow** die Option **SequentialWorkflow anzeigen** aus.|
+|**Abbruch Handler anzeigen**|Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche, und wählen Sie die Option **Abbruch Handler anzeigen** im Kontextmenü aus, um die Ansicht **sequenzieller Workflow** anzuzeigen, die die dem Workflow zugeordnete [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) -Aktivität anzeigt. Oder wählen Sie im Menü **Workflow** die Option **Abbruch Handler anzeigen** aus.|
+|**Fehler Handler anzeigen**|Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche, und wählen Sie die Option **Fehler Handler anzeigen** im Kontextmenü aus, um die Ansicht **Fehler** anzuzeigen, die die dem Workflow zugeordnete [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) -Aktivität anzeigt. Oder wählen Sie im Menü **Workflow** die Option **Fehler Handler anzeigen** aus.|
 
- For more information about similar views, see [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md).
+ Weitere Informationen zu ähnlichen Sichten finden Sie unter [Aktivitäts Ansichten (Legacy)](../workflow-designer/activity-views-legacy.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md) [Creating Legacy Workflow Projects](../workflow-designer/creating-legacy-workflow-projects.md) [Workflow Authoring Modes](https://go.microsoft.com/fwlink?LinkID=65014)
+ [Aktivitäts Sichten (Legacy)](../workflow-designer/activity-views-legacy.md) Erstellen von [Workflow-Erstellungs Modi](https://go.microsoft.com/fwlink?LinkID=65014) für [Legacy Workflow Projekte](../workflow-designer/creating-legacy-workflow-projects.md)

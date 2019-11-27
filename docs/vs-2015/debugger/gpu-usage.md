@@ -23,9 +23,9 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
  Im Folgenden ist das Fenster **GPU-Nutzungsbericht** dargestellt:  
   
- ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![Der GPU-Verwendungs Bericht mit CPU-und GPU-Zeitachsen](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Voraussetzungen  
  Im Folgenden werden Anforderungen für die Verwendung des GPU-Nutzungstools aufgeführt, die zusätzlich zu den Anforderungen der Grafikdiagnose gelten.  
   
 - Ein Grafikprozessor und Treiber, die die erforderliche zeitliche Timinginstrumentierung unterstützen.  
@@ -44,7 +44,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 2. Aktivieren Sie im Leistungs- und Diagnosehub das Kontrollkästchen neben **GPU-Nutzung**. Aktivieren Sie optional die Kontrollkästchen neben anderen gewünschten Tools. Sie können mehrere Leistungs- und Diagnosetools gleichzeitig ausführen, um ein umfassenderes Bild der Leistung Ihrer App zu erhalten.  
   
-    ![Choose the diagnostic tools you want to use.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Wählen Sie die Diagnosetools aus, die Sie verwenden möchten.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
    > Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
@@ -63,15 +63,15 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 1. Wählen Sie im unteren Bereich des Fensters „Diagnosesitzung“ den Link **Auflistung beenden**, oder drücken Sie oben links **Beenden**.  
   
-    ![Collect GPU and CPU timing information.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Sammeln von GPU-und CPU-Zeit Steuerungsinformationen.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. Wählen Sie im oberen Bereich des Berichts einen Abschnitt aus einem der Diagramme, die das Problem anzeigt, das Sie untersuchen möchten. Die Auswahl kann bis zu drei Sekunden umfassen. Längere Abschnitte werden in Richtung Anfang gekürzt.  
   
-    ![Post&#45;collection, select a range to view details](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Nach&#45;Sammlung wählen Sie einen Bereich zum Anzeigen von Details aus.](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. Wählen Sie im unteren Bereich des Berichts den Link **Details anzeigen** in der Meldung **...Klicken Sie hier, um detaillierte Informationen zur GPU-Nutzung für diesen Bereich anzuzeigen**, um eine detaillierte Zeitachse der Auswahl anzuzeigen.  
   
-    ![Post&#45;collection, with range selected](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Nach&#45;Sammlung mit ausgewähltem Bereich](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Es wird ein neues Dokument im Registerkartenformat mit dem Bericht geöffnet. Mithilfe des GPU-Nutzungsberichts können Sie sehen, wann ein Grafikereignis auf CPU gestartet wurde, wann es GPU erreicht und wie lange die Ausführung auf GPU gedauert hat. Anhand dieser Informationen können Sie Engpässe und Möglichkeiten für eine verbesserte Parallelität in Ihrem Code erkennen.  
   
@@ -82,7 +82,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
  Im Folgenden ist das Fenster **GPU-Nutzungsbericht** dargestellt:  
   
- ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![Der GPU-Verwendungs Bericht mit CPU-und GPU-Zeitachsen](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  Beim Auswählen eines Ereignisses im unteren Bereich des Berichts wird ein Marker auf den entsprechenden Ereignissen auf den relevanten Zeitachsen platziert, in der Regel ein Ereignis in einem CPU-Thread, der den API-Aufruf darstellt, und ein anderes Ereignis auf einer GPU-Zeitachse, die angibt, wann eine Aufgabe von GPU abgeschlossen wurde. Ebenso wird beim Auswählen eines Ereignisses in einer Zeitachse das entsprechende Ereignis im unteren Bereich des Berichts hervorgehoben. Wenn eine Zeitachse im oberen Bereich des Berichts verkleinert wurde, werden nur die zeitaufwändigsten Ereignisse angezeigt. Zum Anzeigen von Ereignissen mit einer kürzeren Dauer können Sie die Zeitachsen mithilfe von STRG+Mausrad oder des Skalierungssteuerelements in der unteren linken Ecke des oberen Bereichs vergrößern. Sie können auch die Inhalte des Zeitachsenbereichs ziehen, um durch die erfassten Ereignisse zu navigieren.  
   
@@ -94,7 +94,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 |--------------------|-----------------|  
 |**Process**|Der Name des Prozesses, der Sie interessiert. Alle Prozesse, die GPU während der Diagnosesitzung verwenden, sind in dieser Dropdownliste enthalten. Die dem Prozess in dieser Dropdownliste zugeordnete Farbe entspricht der Farbe der Threadvorgänge auf den Zeitachsen unten.|  
 |**Thread**|Die Thread-ID, die Sie interessiert. In einer Multithread-App können Sie hiermit bestimmte Threads isolieren, die mit dem gewünschten Prozess verknüpft sind. Die im Zusammenhang mit dem ausgewählten Thread stehenden Ereignisse werden auf jeder Zeitachse hervorgehoben.|  
-|**Anzeigen**|Die Anzahl von Anzeigen, deren Aktualisierungsrate angezeigt wird. **Hinweis:** Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzige große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|  
+|**Anzeige**|Die Anzahl von Anzeigen, deren Aktualisierungsrate angezeigt wird. **Hinweis:** Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzige große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|  
 |**Filter**|Die Schlüsselwörter, die Sie interessieren. Ereignisse im unteren Bereich des Berichts beinhalten nur diejenigen, die mit einem Schlüsselwort ganz oder teilweise übereinstimmen. Sie können mehrere Schlüsselwörter durch Semikolons (;) getrennt angeben.|  
 |**Hierarchische Sortierung**|Ein Kontrollkästchen, das angibt, ob durch Benutzermarkierungen definierte  Ereignishierarchien beibehalten oder ignoriert werden.|  
   
@@ -123,7 +123,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 3. Deaktivieren Sie unter **GPU-Profilerstellungskonfiguration** auf der Eigenschaftenseite **Allgemein** das Kontrollkästchen **Profilerstellung beim Appstart beginnen**, um die Profilerstellung zurückzustellen.  
   
-     ![Configure when GPU Usage collection starts](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Konfigurieren, wann die GPU-Verwendungs Erfassung gestartet wird](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > Das Zurückstellen der Profilerstellung wird derzeit nicht für Direct3D 12-Apps unterstützt.  
@@ -133,7 +133,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 ## <a name="hwsupport"></a> Unterstützte Hardware und Treiber  
  Folgende GPU-Hardware und Treiber werden unterstützt:  
   
-|Hersteller|GPU-Beschreibung|Erforderliche Treiberversion|  
+|Netzwerkverwaltungskonsole|GPU-Beschreibung|Erforderliche Treiberversion|  
 |------------|---------------------|-----------------------------|  
 |Intel®|Intel® Core Prozessoren der vierten Generation („Haswell“)<br /><br /> -   Intel® HD-Grafik (GT1)<br />-   Intel® HD-Grafik 4200 (GT2)<br />-   Intel® HD-Grafik 4400 (GT2)<br />-   Intel® HD-Grafik 4600 (GT2)<br />-   Intel® HD-Grafik P4600 (GT2)<br />-   Intel® HD-Grafik P4700 (GT2)<br />-   Intel® HD-Grafik 5000 (GT3)<br />-   Intel® Iris™ Grafik 5100 (GT3)<br />-   Intel® Iris™ Pro Grafik 5200 (GT3e)|-- (Verwenden Sie die neuesten Treiber)|  
 |AMD®|Die meisten ab der AMD Radeon™ HD 7000-Serie (AMD Radeon™ HD 7350-7670 ausgeschlossen)<br /><br /> AMD Radeon™ GPU, AMD FirePro™ Grafikkarten und GPU-Beschleuniger von AMD FirePro mit Graphics Core Next (GCN)-Architektur.<br /><br /> Accelerated Processing Units (APUs) der AMD® E-Serie und AMD A-Serie mit Graphics Core Next (GCN)-Architektur („Kaveri“, „Kabini“, „Temash“, „Beema“, „Mullins“)|14.7 RC3 oder höher|  

@@ -25,7 +25,7 @@ Wenn Sie Apps programmieren, für die Microsoft Azure verwendet wird, sollten Si
 Im Azure-Tool für die Codeanalyse werden die folgenden Regeln verwendet, um den Azure-Code automatisch zu kennzeichnen, wenn bekannte Probleme erkannt werden, die sich auf die Leistung auswirken. Erkannte Probleme werden als Warnungen oder Compilerfehler angezeigt. Codefehlerbehebungen oder Vorschläge zur Lösung der Warnung oder des Fehlers werden häufig durch das Glühbirnen-Symbol angegeben.
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>Vermeiden der Verwendung des standardmäßigen Sitzungszustandsmodus (In Bearbeitung)
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP0000
 
 ### <a name="description"></a>Beschreibung
@@ -36,13 +36,13 @@ Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeana
 ### <a name="reason"></a>Grund
 Standardmäßig lautet der in der Datei „web.config“ angegebene Sitzungszustandsmodus „In Bearbeitung“. Außerdem wird der Sitzungszustandsmodus automatisch auf „In Bearbeitung“ festgelegt, wenn in der Konfigurationsdatei kein Eintrag angegeben ist. Im Modus „In Bearbeitung“ werden Sitzungszustände im Arbeitsspeicher auf dem Webserver gespeichert. Wenn eine Instanz neu gestartet wird oder eine neue Instanz für den Lastenausgleich oder die Failoverunterstützung verwendet wird, wird der im Arbeitsspeicher auf dem Webserver befindliche Sitzungszustand nicht gespeichert. Diese Situation verhindert, dass die Anwendung in der Cloud skalierbar ist.
 
-ASP.NET session state supports several different storage options for session state data: InProc, StateServer, SQLServer, Custom, and Off. Es wird empfohlen, den benutzerdefinierten Modus (Custom) zum Hosten von Daten in einem externen Sitzungszustandsspeicher zu verwenden, z.B. [Azure-Sitzungszustandsanbieter für Redis](https://go.microsoft.com/fwlink/?LinkId=401521).
+ASP.NET Session State unterstützt verschiedene Speicheroptionen für Sitzungszustandsdaten: INPROC, staaterver, SQLServer, Custom und Off. Es wird empfohlen, den benutzerdefinierten Modus (Custom) zum Hosten von Daten in einem externen Sitzungszustandsspeicher zu verwenden, z.B. [Azure-Sitzungszustandsanbieter für Redis](https://go.microsoft.com/fwlink/?LinkId=401521).
 
 ### <a name="solution"></a>Lösung
 Eine empfohlene Lösung ist das Speichern des Sitzungszustands unter einem Managed Cache Service. Informieren Sie sich, wie Sie [Azure-Sitzungszustandsanbieter für Redis](https://go.microsoft.com/fwlink/?LinkId=401521) zum Speichern des Sitzungszustands verwenden. Sie können den Sitzungszustand auch an anderen Orten speichern, um sicherzustellen, dass die Anwendung in der Cloud skalierbar ist. Weitere Informationen zu alternativen Lösungen finden Sie unter [Sitzungszustandsmodi](https://msdn.microsoft.com/library/ms178586).
 
 ## <a name="run-method-should-not-be-async"></a>Run-Methode sollte nicht asynchron sein
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP1000
 
 ### <a name="description"></a>Beschreibung
@@ -87,7 +87,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Verwenden der Authentifizierung „Service Bus Shared Access Signature“
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2000
 
 ### <a name="description"></a>Beschreibung
@@ -113,7 +113,7 @@ Weitere Informationen finden Sie in den folgenden Themen.
 * [Verwenden von SAS-Authentifizierung (Shared Access Signature) mit Service Bus](https://msdn.microsoft.com/library/dn205161.aspx)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Erwägen der Verwendung der OnMessage-Methode zum Vermeiden einer „Empfangsschleife“
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2002
 
 ### <a name="description"></a>Beschreibung
@@ -217,7 +217,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Verwenden asynchroner Service Bus-Methoden
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2003
 
 ### <a name="description"></a>Beschreibung
@@ -234,7 +234,7 @@ Informationen zur Verwendung der empfohlenen asynchronen Methode finden Sie unte
 Sehen Sie sich die Informationen zum Entwurfsmuster unter [Einführung in asynchrone Nachrichten](https://msdn.microsoft.com/library/dn589781.aspx)an, um die Leistung der Azure-Messaginginfrastruktur zu verbessern.
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Partitionieren von Service Bus-Warteschlangen und -Themen
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2004
 
 ### <a name="description"></a>Beschreibung
@@ -259,7 +259,7 @@ ns.CreateTopic(td);
 Weitere Informationen finden Sie unter [Partitionierte Service Bus-Warteschlangen und -Themen | Microsoft Azure-Blog](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/). Sehen Sie sich außerdem das Beispiel [Microsoft Azure Service Bus – Partitionierte Warteschlange](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f) an.
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>Vermeiden des Festlegens von SharedAccessStartTime
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP3001
 
 ### <a name="description"></a>Beschreibung
@@ -291,7 +291,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>Ablaufzeit der SAS-Richtlinie muss mehr als fünf Minuten betragen
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP3002
 
 ### <a name="description"></a>Beschreibung
@@ -341,7 +341,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Weitere Informationen finden Sie unter [Erstellen und Verwenden einer SAS (Shared Access Signature)](https://msdn.microsoft.com/library/azure/jj721951.aspx).
 
 ## <a name="use-cloudconfigurationmanager"></a>Verwenden von CloudConfigurationManager
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP4000
 
 ### <a name="description"></a>Beschreibung
@@ -350,7 +350,7 @@ Durch die Verwendung der [ConfigurationManager](https://msdn.microsoft.com/libra
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://go.microsoft.com/fwlink/?LinkId=403771)gern mitteilen.
 
 ### <a name="reason"></a>Grund
-CloudConfigurationManager liest die für die Anwendungsumgebung passende Konfigurationsdatei.
+CloudConfigurationManager liest die für die Anwendungsumgebung geeignete Konfigurationsdatei.
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
@@ -361,7 +361,7 @@ Der folgende Codeausschnitt veranschaulicht die Codefehlerbehebung für dieses P
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
-with
+mit
 
 `var settings = CloudConfigurationManager.GetSetting("mySettings");`
 
@@ -378,7 +378,7 @@ Hier ist ein Beispiel dafür angegeben, wie Sie die Konfigurationseinstellung in
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Vermeiden der Verwendung von hartcodierten Verbindungszeichenfolgen
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP4001
 
 ### <a name="description"></a>Beschreibung
@@ -396,10 +396,10 @@ Speichern Sie Verbindungszeichenfolgen in den Konfigurationsdateien oder in Azur
 * Verwenden Sie für IIS-gehostete Webanwendungen die Datei „web.config“ zum Speichern der Verbindungszeichenfolgen.
 * Verwenden Sie für ASP.NET vNext-Anwendungen die Datei „configuration.json“ zum Speichern der Verbindungszeichenfolgen.
 
-Informationen zur Verwendung von Konfigurationsdateien wie „web.config“ oder „app.config“ finden Sie unter [ASP.NET-Webkonfigurationsrichtlinien](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). For information on how Azure environment variables work, see [Azure Web Sites: How Application Strings and Connection Strings Work](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Informationen zum Speichern der Verbindungszeichenfolge in der Quellcodeverwaltung finden Sie unter [Vermeiden des Einfügens von vertraulichen Informationen (z. B. Verbindungszeichenfolgen) in Dateien, die im Quellcode-Repository gespeichert werden](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Informationen zur Verwendung von Konfigurationsdateien wie „web.config“ oder „app.config“ finden Sie unter [ASP.NET-Webkonfigurationsrichtlinien](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Informationen zur Funktionsweise von Azure-Umgebungsvariablen finden Sie unter Azure-Websites [: Funktionsweise von Anwendungs-und Verbindungs](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)Zeichenfolgen. Informationen zum Speichern der Verbindungszeichenfolge in der Quellcodeverwaltung finden Sie unter [Vermeiden des Einfügens von vertraulichen Informationen (z. B. Verbindungszeichenfolgen) in Dateien, die im Quellcode-Repository gespeichert werden](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Verwenden der Konfigurationsdatei für die Diagnose
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP5000
 
 ### <a name="description"></a>Beschreibung
@@ -408,23 +408,23 @@ Anstatt Diagnoseeinstellungen in Ihrem Code zu konfigurieren, z. B. mithilfe de
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://go.microsoft.com/fwlink/?LinkId=403771)gern mitteilen.
 
 ### <a name="reason"></a>Grund
-Vor der Veröffentlichung von Azure SDK 2.5 (mit Verwendung von Azure Diagnostics 1.3) konnte Azure Diagnostics (WAD) mit mehreren unterschiedlichen Methoden konfiguriert werden: durch das Hinzufügen zum Konfigurations-Blob im Speicher, per imperativem Code, per deklarativer Konfiguration oder über die Standardkonfiguration. Allerdings ist die bevorzugte Methode zum Konfigurieren der Diagnose die Verwendung einer XML-Konfigurationsdatei („diagnostics.wadcfg“ oder „diagnostics.wadcfgx“ für SDK 2.5 und höher) im Anwendungsprojekt. Bei diesem Ansatz wird die Konfiguration vollständig über die Datei „diagnostics.wadcfg“ definiert und kann je nach Bedarf aktualisiert und neu bereitgestellt werden. Mixing the use of the diagnostics.wadcfg configuration file with the programmatic methods of setting configurations by using the [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)or [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) classes can lead to confusion. Weitere Informationen finden Sie unter [Initialisieren oder Ändern der Azure-Diagnosekonfiguration](https://msdn.microsoft.com/library/azure/hh411537.aspx) .
+Vor der Veröffentlichung von Azure SDK 2.5 (mit Verwendung von Azure Diagnostics 1.3) konnte Azure Diagnostics (WAD) mit mehreren unterschiedlichen Methoden konfiguriert werden: durch das Hinzufügen zum Konfigurations-Blob im Speicher, per imperativem Code, per deklarativer Konfiguration oder über die Standardkonfiguration. Allerdings ist die bevorzugte Methode zum Konfigurieren der Diagnose die Verwendung einer XML-Konfigurationsdatei („diagnostics.wadcfg“ oder „diagnostics.wadcfgx“ für SDK 2.5 und höher) im Anwendungsprojekt. Bei diesem Ansatz wird die Konfiguration vollständig über die Datei „diagnostics.wadcfg“ definiert und kann je nach Bedarf aktualisiert und neu bereitgestellt werden. Das Mischen der Verwendung der Konfigurationsdatei Diagnostics. wadcfg mit den programmgesteuerten Methoden zum Festlegen von Konfigurationen mithilfe der Klassen [diagnosticmonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)oder [roleinstancediagnosticmanager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) kann zu Verwirrung führen. Weitere Informationen finden Sie unter [Initialisieren oder Ändern der Azure-Diagnosekonfiguration](https://msdn.microsoft.com/library/azure/hh411537.aspx) .
 
 Ab WAD 1.3 (Teil von Azure SDK 2.5) ist es nicht mehr möglich, Code zum Konfigurieren der Diagnose zu verwenden. Sie können die Konfiguration daher nur angeben, wenn Sie die Diagnoseerweiterung anwenden oder aktualisieren.
 
 ### <a name="solution"></a>Lösung
 Verwenden Sie den Designer für die Diagnosekonfiguration, um die Diagnoseeinstellungen in die Diagnosekonfigurationsdatei zu verschieben („diagnostics.wadcfg“ oder „diagnostics.wadcfgx“ für SDK 2.5 und höher). Es wird empfohlen, [Azure SDK 2.5](https://go.microsoft.com/fwlink/?LinkId=513188) zu installieren und die aktuelle Diagnosefunktion zu verwenden.
 
-1. Wählen Sie im Kontextmenü für die Rolle, die Sie konfigurieren möchten, die Option „Eigenschaften“ und dann die Registerkarte „Konfiguration“.
-2. Stellen Sie im Abschnitt **Diagnose** sicher, dass das Kontrollkästchen **Diagnose aktivieren** aktiviert ist.
-3. Wählen Sie die Schaltfläche **Konfigurieren** .
+1. Wählen Sie im Kontextmenü für die Rolle, die Sie konfigurieren möchten, Eigenschaften und klicken Sie dann auf die Registerkarte Konfiguration.
+2. Im Abschnitt **Diagnose** muss das Kontrollkästchen **Diagnose aktivieren** aktiviert sein.
+3. Klicken Sie auf die Schaltfläche **Konfigurieren**.
 
-   ![Zugreifen auf die Option „Diagnose aktivieren“](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
+   ![Zugriff auf die Option "Diagnose aktivieren"](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    Weitere Informationen finden Sie unter [Konfigurieren der Diagnose für Azure Cloud Services und Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) .
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Vermeiden der Deklaration von DbContext-Objekten als „statisch“
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP6000
 
 ### <a name="description"></a>Beschreibung

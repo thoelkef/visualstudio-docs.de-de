@@ -15,7 +15,7 @@ ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
 ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297569"
@@ -36,7 +36,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 
  Sehen Sie sich auch die [Codebeispiele](https://code.msdn.microsoft.com/) an, und suchen Sie nach Beispielen, die Ihnen beim schnelleren Schreiben der App helfen.
 
- Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. To learn more about the installation process, see [Install Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Weitere Informationen zum Installationsvorgang finden Sie unter [Installieren von Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Erweitern von Visual Studio
  Fügen Sie Ihre eigene Visual Studio-Erweiterung hinzu, um ein Tool oder Skript einzuschließen, das Sie beim Schreiben von Code häufig verwenden. Sie können benutzerdefinierte Menüelemente und Toolfenster erstellen und auf diese Weise eigene Tools in die Visual Studio-IDE integrieren. Sie können den Visual Studio-Editor so erweitern, dass Code analysiert und Fehler behoben werden, oder einen neuen Projekttyp hinzufügen, um genau die benötigten Elemente einzuschließen.
@@ -67,7 +67,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 ## <a name="connect-your-apps-to-services"></a>Verbinden der Apps mit Diensten
  Sie können standardmäßig eine Verbindung mit folgenden Diensten herstellen (vorausgesetzt, Sie verfügen über ein Konto für den jeweiligen Dienst):
 
-- [Azure-Mobile Services](https://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure Mobile Services](https://azure.microsoft.com/documentation/services/mobile-services/)
 
 - [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
 
@@ -90,7 +90,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
  Sie können manuelle und automatisierte Tests für die App planen, erstellen und ausführen. Testpläne, Testauflistungen, Testfälle und die Ergebnisse werden in der Cloud mit Visual Studio Team Services oder lokal mit Team Foundation Server gespeichert. Erfahren Sie mehr über das [Testen der Anwendung](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Schnellere Bereitstellung von Code des Teams
- Beseitigen Sie Barrieren zwischen Mitgliedern Ihres Teams, und verbessern Sie die Zusammenarbeit. Gehen Sie noch weiter, und automatisieren Sie die Freigabe Ihrer App in den einzelnen Phasen der Entwicklung bis hin zur Produktion. Überwachen Sie die Leistung und Verfügbarkeit Ihrer App zur Laufzeit. Sammeln Sie Echtzeit-Nutzungsdaten dazu, wie Ihre Kunden die App tatsächlich verwenden. Weitere Informationen finden Sie unter [DevOps und Anwendungslebenszyklus-Verwaltung](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6).
+ Beseitigen Sie Barrieren zwischen Mitgliedern Ihres Teams, und verbessern Sie die Zusammenarbeit. Gehen Sie noch weiter, und automatisieren Sie die Freigabe Ihrer App in den einzelnen Phasen der Entwicklung bis hin zur Produktion. Überwachen Sie die Leistung und Verfügbarkeit Ihrer App zur Laufzeit. Sammeln Sie Echtzeit-Nutzungsdaten dazu, wie Ihre Kunden die App tatsächlich verwenden. Ausführliche Informationen finden Sie unter [DevOps und Anwendungslebenszyklus-Verwaltung](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) .
 
 ## <a name="whats-new"></a>Neuerungen?
 

@@ -22,7 +22,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297803"
 ---
-# <a name="quick-launch-environment-options-dialog-box"></a>Schnellstart, Umgebung, Dialogfeld „Optionen“
+# <a name="quick-launch-environment-options-dialog-box"></a>Schnellstart, Umgebung, Dialogfeld „Optionen“.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optionen, Vorlagen oder Menüs schnell zu suchen und auszuführen. Sie können **Schnellstart** nicht zur Suche nach Code und Symbolen verwenden. Das Suchfeld **Schnellstart** befindet sich rechts oben in der Menüleiste und kann mit der Tastenkombination STRG+Q aufgerufen werden. Geben Sie einfach die Suchzeichenfolge im Feld ein. Verwenden Sie ‘@@‘, um nach Zeichenfolgen zu suchen, die @ enthalten.
@@ -34,7 +34,7 @@ Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optione
 
  Sie können die folgenden Tastenkombinationen verwenden, um die Suche auf bestimmte Kategorien einzuschränken.
 
-|Kategorie|Verknüpfung|Verknüpfungsbeschreibung|
+|Kategorie|Shortcut|Verknüpfungsbeschreibung|
 |--------------|--------------|--------------------------|
 |Zuletzt verwendet|@mru<br /><br /> Beispiel: `@mru font`|Zeigt bis zu fünf Elemente der Liste **Zuletzt verwendet** an.|
 |Menüs|@menu<br /><br /> Beispiel: `@menu font`|Schränkt die Suche auf Menüelemente ein.|
@@ -50,4 +50,4 @@ Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optione
  Die neuesten Tipps und Tricks für die Verwendung von **Schnellstart** finden Sie im [Visual Studio-Blog](https://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Siehe auch
- [General User Interface Elements (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)
+ [Allgemeine Benutzeroberflächen Elemente (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [Dialog Feld "Umgebungsoptionen](../../ide/reference/environment-options-dialog-box.md) "

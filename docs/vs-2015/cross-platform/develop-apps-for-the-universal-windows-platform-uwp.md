@@ -29,11 +29,11 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
 
  Zum ersten Mal wurde Windows so umgestaltet, dass ein gemeinsamer Kern für alle Windows 10-Plattformen verwendet wird. Es ist eine gemeinsame Quelle, ein gemeinsamer Windows-Kernel, ein Datei-E/A-Stapel und ein App-Modell vorhanden. Für die Benutzeroberfläche ist nur ein XAML-Benutzeroberlächen-Framework und ein HTML-Benutzeroberflächen-Framework vorhanden. So können Sie sich auf das Entwickeln einer tollen App konzentrieren, weil wir die Bereitstellung Ihrer App auf unterschiedlichen Windows 10-Geräten vereinfacht haben.
 
- **Was ist die Universelle Windows-Plattform?**
+ **Was ist die universelle Windows-Plattform?**
 
  Es ist eine Auflistung von Verträgen und Versionen. Mit diesen können Sie die Ziele auswählen, für die Ihre App ausgeführt werden kann. Es wird nicht länger ein Betriebssystem als Ziel für Ihre App angegeben. Jetzt richten Sie Ihre App auf eine oder mehrere Gerätefamilien aus. Weitere Informationen finden Sie in dieser [Plattform-Anleitung](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Voraussetzungen
  Die Entwicklungstools für universelle Windows-Apps verfügen über Emulatoren, die Sie verwenden können, um zu prüfen, wie Ihre App auf unterschiedlichen Geräten aussieht. Wenn Sie diesen Emulatoren verwenden möchten, müssen Sie diese Software auf einem physischen Computer installieren. Auf dem physischen Computer muss Windows 8.1 (X 64) Professional Edition oder höher installiert sein, und er muss über einen Prozessor verfügen, der Hyper-V für Clients und SLAT (Second Level Address Translation) unterstützt. Die Emulatoren können nicht verwendet werden, wenn Visual Studio auf einem virtuellen Computer installiert ist.
 
  Hier finden Sie die Liste erforderlicher Softwarekomponenten:

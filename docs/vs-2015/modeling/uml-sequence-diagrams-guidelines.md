@@ -1,5 +1,5 @@
 ---
-title: 'UML Sequence Diagrams: Guidelines | Microsoft Docs'
+title: 'UML-Sequenzdiagramme: Richtlinien | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -30,36 +30,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297145"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
+# <a name="uml-sequence-diagrams-guidelines"></a>UML-Sequenzdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine Interaktion ist eine Sequenz von Meldungen zwischen typischen Instanzen von Klassen, Komponenten, Subsystemen oder Akteuren.
+In Visual Studio können Sie ein *Sequenzdiagramm* zeichnen, um eine Interaktion anzuzeigen. Eine Interaktion ist eine Sequenz von Meldungen zwischen typischen Instanzen von Klassen, Komponenten, Subsystemen oder Akteuren.
 
- UML-Sequenzdiagramme sind Teil eines UML-Modells und nur innerhalb von UML-Modellierungsprojekten vorhanden. To create a UML sequence diagram, on the **Architecture** menu, click **New UML or Layer Diagram**. Find out more about [UML sequence diagram elements](../modeling/uml-sequence-diagrams-reference.md) or [UML modeling diagrams](../modeling/edit-uml-models-and-diagrams.md) in general. For a video demonstration, see [Sketching Interactions by using Sequence Diagrams (2010)](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
+ UML-Sequenzdiagramme sind Teil eines UML-Modells und nur innerhalb von UML-Modellierungsprojekten vorhanden. Um ein UML-Sequenzdiagramm zu erstellen, klicken Sie im Menü **Architektur** auf **neues UML-oder ebenendiagramm**. Erfahren Sie mehr über [UML-Sequenzdiagramm Elemente](../modeling/uml-sequence-diagrams-reference.md) oder [UML-Modellierungs Diagramme](../modeling/edit-uml-models-and-diagrams.md) im Allgemeinen. Eine videodemo finden Sie unter [Verwenden von Sequenzdiagrammen (2010)](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-topic"></a>In diesem Thema
- [Using UML Sequence Diagrams](#Using)
+ [Verwenden von UML-Sequenzdiagrammen](#Using)
 
- [Basic Steps for Drawing Sequence Diagrams](#BasicSteps)
+ [Grundlegende Schritte zum Zeichnen von Sequenzdiagrammen](#BasicSteps)
 
- [Creating and Using Simple Sequence Diagrams](#Simple)
+ [Erstellen und Verwenden von einfachen Sequenzdiagrammen](#Simple)
 
- [Classes and Lifelines](#ClassesAndLifelines)
+ [Klassen und Lebenslinien](#ClassesAndLifelines)
 
- [Creating Reusable Interaction Sequences](#Multiple)
+ [Erstellen von wiederverwendbaren Interaktions Sequenzen](#Multiple)
 
- [Collapsing Groups of Lifelines](#Collapse)
+ [Reduzieren von Lebenslinien Gruppen](#Collapse)
 
- [Describing Control Structures with Fragments](#Fragments)
+ [Beschreiben von Steuerungsstrukturen mit Fragmenten](#Fragments)
 
-## <a name="Using"></a> Using UML Sequence Diagrams
+## <a name="Using"></a>Verwenden von UML-Sequenzdiagrammen
  Sie können Sequenzdiagramme für eine Vielzahl von Zwecken auf unterschiedlichen Programmdetailebenen verwenden. Nachfolgend sind typische Situationen aufgeführt, in denen Sequenzdiagramme gezeichnet werden:
 
-- Wenn Sie über ein Anwendungsfalldiagramm verfügen, das Systembenutzer und ihre Ziele zusammenfasst, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die Hauptkomponenten des Systems interagieren, um das Ziel der einzelnen Anwendungsfälle zu erreichen. For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
+- Wenn Sie über ein Anwendungsfalldiagramm verfügen, das Systembenutzer und ihre Ziele zusammenfasst, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die Hauptkomponenten des Systems interagieren, um das Ziel der einzelnen Anwendungsfälle zu erreichen. Weitere Informationen finden Sie unter [UML-Anwendungsfall Diagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).
 
-- Wenn Sie Nachrichten identifiziert haben, die bei einer Schnittstelle einer Komponente eingehen, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die internen Teile der Komponente interagieren, um das für die einzelnen eingehenden Meldungen erforderliche Ergebnis zu erzielen. For more information, see [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
+- Wenn Sie Nachrichten identifiziert haben, die bei einer Schnittstelle einer Komponente eingehen, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die internen Teile der Komponente interagieren, um das für die einzelnen eingehenden Meldungen erforderliche Ergebnis zu erzielen. Weitere Informationen finden Sie unter [UML-Komponenten Diagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md).
 
   Das Zeichnen von Sequenzdiagrammen hat mehrere Vorteile:
 
@@ -71,40 +71,40 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
  Sie können UML-Sequenzdiagramme auf verschiedene Arten zusammen mit anderen Diagrammen verwenden.
 
 #### <a name="lifelines-and-types"></a>Lebenslinien und Typen
- Die Lebenslinien, die Sie in einem Sequenzdiagramm zeichnen, können typische Instanzen der Komponenten oder Klassen im System darstellen. Sie können Lebenslinien aus Typen und Typen aus Lebenslinien erstellen und die Typen in UML-Klassendiagrammen und UML-Komponentendiagrammen anzeigen. For more information, see [Classes and Lifelines](#ClassesAndLifelines).
+ Die Lebenslinien, die Sie in einem Sequenzdiagramm zeichnen, können typische Instanzen der Komponenten oder Klassen im System darstellen. Sie können Lebenslinien aus Typen und Typen aus Lebenslinien erstellen und die Typen in UML-Klassendiagrammen und UML-Komponentendiagrammen anzeigen. Weitere Informationen finden Sie unter [Klassen und Lebenslinien](#ClassesAndLifelines).
 
 #### <a name="parameter-types"></a>Parametertypen
  Sie können in einem UML-Klassendiagramm auch die Typen der Parameter und der zurückgegebenen Werte beschreiben, die in den zwischen den Lebenslinien gesendeten Meldungen verwendet wurden.
 
 #### <a name="use-case-details"></a>Anwendungsfalldetails
- Ein Anwendungsfall stellt das Ziel eines Benutzers zusammen mit einer Sequenz von Schritten zum Erreichen des Ziels dar. Die Sequenz der Schritte kann auf verschiedene Weise beschrieben werden. Eine Option besteht im Zeichnen eines Sequenzdiagramms, das die Interaktionen zwischen den Benutzern und den Hauptkomponenten des Systems zeigt. For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
+ Ein Anwendungsfall stellt das Ziel eines Benutzers zusammen mit einer Sequenz von Schritten zum Erreichen des Ziels dar. Die Sequenz der Schritte kann auf verschiedene Weise beschrieben werden. Eine Option besteht im Zeichnen eines Sequenzdiagramms, das die Interaktionen zwischen den Benutzern und den Hauptkomponenten des Systems zeigt. Weitere Informationen finden Sie unter [UML-Anwendungsfall Diagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a> Basic Steps for Drawing Sequence Diagrams
- For a complete list of elements on sequence diagrams, see [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md).
+## <a name="BasicSteps"></a>Grundlegende Schritte zum Zeichnen von Sequenzdiagrammen
+ Eine umfassende Liste der Elemente in Sequenzdiagrammen finden Sie unter [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md).
 
 > [!NOTE]
-> Detailed steps for how to create any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+> Ausführliche Schritte zum Erstellen von Modellierungs Diagrammen finden Sie unter [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-sequence-diagram"></a>So erstellen Sie ein Sequenzdiagramm
 
-1. On the **Architecture** menu, click **New UML or Layer Diagram**.
+1. Klicken Sie im Menü **Architektur** auf **neues UML-oder ebenendiagramm**.
 
-2. Under **Templates**, click **UML Sequence Diagram**.
+2. Klicken Sie unter **Vorlagen**auf **UML-Sequenzdiagramm**.
 
 3. Benennen Sie das Diagramm.
 
-4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a new modeling project**, and then click **OK**.
+4. Wählen Sie unter **zu Modellierungsprojekt hinzufügen**ein vorhandenes Modellierungsprojekt in der Projekt Mappe aus, oder **Erstellen Sie ein neues Modellierungsprojekt**, und klicken Sie dann auf **OK**.
 
-    A new sequence diagram appears with the **Sequence Diagram** toolbox. Die Toolbox enthält die erforderlichen Elemente und Konnektoren.
+    Ein neues Sequenzdiagramm wird mit der Toolbox **Sequenzdiagramm** angezeigt. Die Toolbox enthält die erforderlichen Elemente und Konnektoren.
 
-   ![Parts of a sequence diagram](../modeling/media/uml-sequence.png "UML_Sequence")
+   ![Teile eines Sequenz Diagramms](../modeling/media/uml-sequence.png "UML_Sequence")
 
 #### <a name="to-draw-a-sequence-diagram"></a>So zeichnen Sie ein Sequenzdiagramm
 
-1. Drag **Lifelines** (1) from the **Toolbox** onto the diagram to represent instances of classes, components, actors, or devices.
+1. Ziehen Sie Lebens **Linien** (1) aus der **Toolbox** auf das Diagramm, um Instanzen von Klassen, Komponenten, Actors oder Geräten darzustellen.
 
     > [!NOTE]
-    > You can also create a lifeline by dragging an existing class, interface, actor or component from **UML Model Explorer** onto the diagram. Dadurch wird eine Lebenslinie erstellt, die eine Instanz des ausgewählten Typs darstellt.
+    > Sie können auch eine Lebenslinie erstellen, indem Sie eine vorhandene Klasse, Schnittstelle, Actor oder Komponente aus dem **UML-Modell-Explorer** in das Diagramm ziehen. Dadurch wird eine Lebenslinie erstellt, die eine Instanz des ausgewählten Typs darstellt.
 
 2. Zeichnen Sie Meldungen, um darzustellen, wie die Lebenslinien zusammenarbeiten, um ein bestimmtes Ziel zu erreichen.
 
@@ -112,10 +112,10 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
      An der empfangenden Lebenslinie wird eine Vorkommnisausführung (5) angezeigt. Die Vorkommnisausführung stellt einen Zeitraum dar, während dem die Instanz eine Methode ausführt. Sie können andere Meldungen erstellen, die an einer Vorkommnisausführung beginnen.
 
-3. Zum Anzeigen einer Meldung, die aus einer unbekannten Ereignisquelle (9) stammt oder an unbekannte Empfänger (10) überträgt, zeichnen Sie eine asynchrone Meldung von oder zu einem Leerraum im Diagramm. These messages are called *found messages* (9) and *lost messages* (10).
+3. Zum Anzeigen einer Meldung, die aus einer unbekannten Ereignisquelle (9) stammt oder an unbekannte Empfänger (10) überträgt, zeichnen Sie eine asynchrone Meldung von oder zu einem Leerraum im Diagramm. Diese Nachrichten werden als *gefundene Meldungen* (9) und *verlorene Nachrichten* (10) bezeichnet.
 
     > [!NOTE]
-    > To move a group of lifelines that have lost or found messages, follow these steps to select the lifelines before you move them: Draw a rectangle around those lifelines, or press and hold the **CTRL** key while you click each lifeline. If you use **Select All** or **CTRL**+**A** to select all lifelines, and then move them, any lost or found messages attached to these lifelines will not move. Wenn diese Situation eintritt, können Sie diese Meldungen separat verschieben.
+    > Um eine Gruppe von Lebenslinien zu verschieben, die über verlorene oder gefundene Meldungen verfügen, führen Sie die folgenden Schritte aus, um die Lebenslinien vor dem Verschieben auszuwählen: Zeichnen Sie ein Rechteck um diese Lebenslinien, oder halten Sie die **STRG** -Taste gedrückt, während Sie auf die einzelnen Lebenslinien klicken. Wenn Sie alle **auswählen** oder **STRG**+**A** verwenden, um alle Lebenslinien auszuwählen, und Sie dann verschieben, werden verlorene oder gefundene Meldungen, die diesen Lebenslinien zugeordnet sind, nicht verschoben. Wenn diese Situation eintritt, können Sie diese Meldungen separat verschieben.
 
 4. Zeichnen Sie Sequenzdiagramme für jede wichtige Meldung in der gleichen Komponente oder im gleichen System.
 
@@ -123,15 +123,15 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 - Ziehen Sie eine Meldung in der zugehörigen Lebenslinie aufwärts oder abwärts. Sie können sie über andere Meldungen oder in einen bzw. aus einem Ausführungsblock ziehen.
 
-     \- oder -
+     \- oder –
 
-- Click the message and use the **UP ARROW** and **DOWN ARROW** keys to adjust message positions. Use **SHIFT+UP ARROW** and **SHIFT+DOWN ARROW** to change the order of the messages.
+- Klicken Sie auf die Meldung, und verwenden Sie die nach- **oben** -und **nach-unten** -Taste, um die Nachrichten Verwenden Sie **UMSCHALT +** nach-oben und **UMSCHALT + nach-unten-Taste** , um die Reihenfolge der Meldungen zu ändern.
 
 #### <a name="to-move-or-copy-message-sequences-on-the-sequence-diagram"></a>So verschieben oder kopieren Sie Meldungssequenzen im Sequenzdiagramm
 
-1. Right-click a message (3, 4) and then click **Copy**.
+1. Klicken Sie mit der rechten Maustaste auf eine Meldung (3, 4), und klicken Sie dann auf **Kopieren**.
 
-2. Right-click the execution occurrence (5) or a lifeline (1) from which you want the new message to be sent, and then click **Paste**. Der neue Absender kann sich in einem anderen Diagramm befinden.
+2. Klicken Sie mit der rechten Maustaste auf die Ausführung (5) oder eine Lebenslinie (1), von der die neue Nachricht gesendet werden soll, und klicken Sie dann auf **Einfügen**. Der neue Absender kann sich in einem anderen Diagramm befinden.
 
      Eine Kopie der Meldung und all ihrer untergeordneten Meldungen wird am Ende der Vorkommnisausführung oder am Ende der Lebenslinie hinzugefügt.
 
@@ -142,34 +142,34 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 - Die Ziel-Lebenslinie muss an Typen gebunden oder Typen zugeordnet sein, damit der Signaturtext sichtbar ist. Um diese Aufgabe auszuführen, führen Sie einen der folgenden Schritte aus:
 
-  - Right-click the lifeline, and then choose **Create Class**.
-
-     - oder -
-
-  - Select the lifeline, press **F4**, and then in the **Properties** window, set the **Type** property to an existing type or specify the name for a new type. Right-click the message label, and then choose **Create Operation**.
-
-    Der Signaturtext wird unterhalb der Meldungsbezeichnung angezeigt. Sie können den Signaturtext jetzt bearbeiten. For more information, see [Classes and Lifelines](#ClassesAndLifelines).
-
-#### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>So verbessern Sie das Layout eines Sequenzdiagramms
-
-- Right-click a blank part of the diagram, and then click **Rearrange Layout**.
-
-- To undo the operation, click **Edit**, and then click **Undo**.
-
-#### <a name="to-change-the-package-that-owns-the-interaction"></a>So ändern Sie das Paket, das die Interaktion besitzt
-
-1. In **UML Model Explorer**, find the Interaction that the sequence diagram displays.
-
-    > [!NOTE]
-    > The interaction will not appear in **UML Model Explorer** until you add the first lifeline to the sequence diagram.
-
-2. Ziehen Sie die Interaktion in das Paket.
+  - Klicken Sie mit der rechten Maustaste auf die Lebenslinie, und wählen Sie dann **Klasse erstellen**.
 
      \- oder -
 
-     Right-click the Interaction, and then click **Cut**. Right-click the Package, and then click **Paste**.
+  - Wählen Sie die Lebenslinie aus, drücken Sie **F4**, und legen Sie dann im **Eigenschaften** Fenster die **Type** -Eigenschaft auf einen vorhandenen Typ fest, oder geben Sie den Namen für einen neuen Typ an. Klicken Sie mit der rechten Maustaste auf die Bezeichnung Nachricht, und wählen Sie dann **Vorgang erstellen**aus.
 
-## <a name="Simple"></a> Creating and Using Simple Sequence Diagrams
+    Der Signaturtext wird unterhalb der Meldungsbezeichnung angezeigt. Sie können den Signaturtext jetzt bearbeiten. Weitere Informationen finden Sie unter [Klassen und Lebenslinien](#ClassesAndLifelines).
+
+#### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>So verbessern Sie das Layout eines Sequenzdiagramms
+
+- Klicken Sie mit der rechten Maustaste auf einen leeren Bereich des Diagramms, und klicken Sie dann auf **Layout neu anordnen**.
+
+- Um den Vorgang rückgängig zu machen, klicken Sie auf **Bearbeiten**und dann auf **Rückgängig**.
+
+#### <a name="to-change-the-package-that-owns-the-interaction"></a>So ändern Sie das Paket, das die Interaktion besitzt
+
+1. Suchen Sie im **UML-Modell-Explorer**die Interaktion, die im Sequenzdiagramm angezeigt wird.
+
+    > [!NOTE]
+    > Die Interaktion wird erst dann im **UML-Modell-Explorer** angezeigt, wenn Sie die erste Lebenslinie zum Sequenzdiagramm hinzufügen.
+
+2. Ziehen Sie die Interaktion in das Paket.
+
+     \- oder –
+
+     Klicken Sie mit der rechten Maustaste auf die Interaktion und dann auf **Ausschneiden**. Klicken Sie mit der rechten Maustaste auf das Paket, und klicken Sie auf **Einfügen**.
+
+## <a name="Simple"></a>Erstellen und Verwenden von einfachen Sequenzdiagrammen
  Die einfachste und am häufigsten verwendete Form des Sequenzdiagramms enthält nur Lebenslinien und Meldungen. Mit einem Diagramm dieser Art können Sie deutlich eine typische Sequenz von Interaktionen zwischen Objekten im Entwurf oder zwischen Ihrem System und dessen Benutzern anzeigen. Dies reicht häufig aus, um den Entwurf zu verdeutlichen und zu diskutieren.
 
  Nachfolgend sind einige Punkte aufgeführt, die Sie beim Zeichnen eines einfachen Sequenzdiagramms beachten sollten.
@@ -177,20 +177,20 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 ### <a name="types-of-message"></a>Meldungstypen
  Es gibt drei Tools, die Sie verwenden können, um Meldungen zu erstellen.
 
-- Use the **Synchronous** tool to describe an interaction in which the sender waits for the receiver to return a response (3).
+- Verwenden Sie das **synchrone** Tool, um eine Interaktion zu beschreiben, bei der der Absender darauf wartet, dass der Empfänger eine Antwort zurückgibt (3).
 
-     A **<\<return>>** arrow will be shown at the end of the execution occurrence. Er zeigt die Rückgabe der Steuerung an den Absender an.
+     Eine **<\<Rückgabe > >** Pfeil wird am Ende der vorkommnisausführung angezeigt. Er zeigt die Rückgabe der Steuerung an den Absender an.
 
-- Use the **Asynchronous** tool to describe an interaction in which the sender can continue immediately without waiting for the receiver (4).
+- Verwenden Sie das **asynchrone** Tool, um eine Interaktion zu beschreiben, bei der der Absender sofort fortfahren kann, ohne auf den Empfänger zu warten (4).
 
-- Use the **Create** tool to describe an interaction in which the sender creates the receiver (8).
+- Verwenden Sie das Tool **Erstellen** , um eine Interaktion zu beschreiben, bei der der Absender den Empfänger erstellt (8).
 
      Eine Create-Meldung sollte die erste Meldung sein, die der Empfänger erhält.
 
 ### <a name="annotating-the-interactions"></a>Kommentieren der Interaktionen
- To describe more detail about the sequence, you can place a **Comment** anywhere on the diagram.
+ Wenn Sie weitere Details zur Sequenz beschreiben möchten, können Sie einen **Kommentar** an beliebiger Stelle im Diagramm platzieren.
 
- Using **Comment Links**, you can link a comment to lifelines, executions, interaction uses, and fragments.
+ Mithilfe von **Kommentar Verknüpfungen**können Sie einen Kommentar mit Lebenslinien, Ausführungen, Interaktions Verwendungsmöglichkeiten und Fragmenten verknüpfen.
 
 > [!CAUTION]
 > Wenn Sie einen Kommentar an einem bestimmten Punkt in der Sequenz anfügen möchten, verknüpfen Sie ihn mit einer Vorkommnisausführung, einer Interaktionsverwendung oder einem Fragment. Verknüpfen Sie ihn nicht mit einer Lebenslinie, da er in diesem Fall nicht am richtigen Punkt in der Sequenz bleibt.
@@ -205,7 +205,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 - Anmerken von Ausnahmen oder Alternativen, die als Alternative zu der typischen angezeigten Sequenz ausgeführt werden können. Zum Beispiel: „Der Kunde kann wählen, den Rest dieser Sequenz zu überspringen.“
 
-  - Erwägen Sie die Verwendung von Fragmenten als formalere Alternativen zu dieser Art von Anmerkung. See [Describing Control Structures with Fragments](#Fragments)
+  - Erwägen Sie die Verwendung von Fragmenten als formalere Alternativen zu dieser Art von Anmerkung. Siehe [beschreiben von Steuerungsstrukturen mit Fragmenten](#Fragments)
 
 ## <a name="deciding-the-scope-of-the-diagram"></a>Festlegen des Diagrammumfangs
  Es ist wichtig, deutlich hervorzuheben, was das Diagramm darstellen soll.
@@ -245,7 +245,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 - Zeichnen Sie separate Sequenzdiagramme, um solche Szenarien zu beschreiben.
 
-- Use [Describing Control Structures with Fragments](#Fragments) to show loops, alternatives, and so on.
+- Verwenden Sie das [beschreiben von Steuerungsstrukturen mit Fragmenten](#Fragments) , um Schleifen, Alternativen usw. anzuzeigen.
 
 ## <a name="assessing-the-design"></a>Bewerten des Entwurfs
  Sie können das Diagramm verwenden, um die Verteilung der Aufgaben zwischen den Objekten oder Komponenten zu bewerten. Ziehen Sie eine Umgestaltung in Erwägung, wenn Sie diese Muster sehen:
@@ -256,13 +256,13 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 - Einige Lebenslinien scheinen mehr als eine Art von Aufgabe zu behandeln. Es sollte einfach sein, die Verantwortlichkeiten der einzelnen Lebenslinien in einem kurzen Satz zu beschreiben,der die Arbeit zusammenfasst, die sie als Antwort auf die empfangenen Meldungen ausführen.
 
-## <a name="ClassesAndLifelines"></a> Classes and Lifelines
+## <a name="ClassesAndLifelines"></a>Klassen und Lebenslinien
  Die Lebenslinien in den Sequenzdiagrammen zeigen Instanzen von Klassen oder Komponentenschnittstellen. Sie können eine Lebenslinie auf zweierlei Weise benennen:
 
-|**For this purpose**|**Use this format**|
+|**Zu diesem Zweck**|**Dieses Format verwenden**|
 |--------------------------|-------------------------|
 |Anonyme Instanz eines Typs.<br /><br /> Verwenden Sie diese Option, wenn Sie nur über eine Lebenslinie jedes Typs verfügen.|*typeName*|
-|Benannte Instanz eines Typs.<br /><br /> Verwenden Sie diese Option, wenn Sie eine Sequenz darstellen möchten, die mehr als eine Instanz des gleichen Typs umfasst.|*objectName*:*typeName*|
+|Benannte Instanz eines Typs.<br /><br /> Verwenden Sie diese Option, wenn Sie eine Sequenz darstellen möchten, die mehr als eine Instanz des gleichen Typs umfasst.|*objectName*:*Typname*|
 
 ### <a name="creating-lifelines-from-types"></a>Erstellen von Lebenslinien aus Typen
  Sie können neue Lebenslinien aus Klassen erstellen, die Sie bereits definiert haben, z. B. in einem Klassendiagramm.
@@ -274,11 +274,11 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 - Ziehen Sie eine Klasse, Komponente oder Schnittstelle aus dem UML-Modell-Explorer in ein Sequenzdiagramm.
 
-   \- oder -
+   \- oder –
 
-  1. Right-click the class, component, or interface on its respective diagram, and then click **Create Lifeline**.
+  1. Klicken Sie im jeweiligen Diagramm mit der rechten Maustaste auf die Klasse, Komponente oder Schnittstelle, und klicken Sie dann auf **Lebenslinie erstellen**.
 
-  2. In the **Create Lifeline** dialog box, select a sequence diagram, and then click **OK**.
+  2. Wählen Sie im Dialogfeld **Lebenslinie erstellen** ein Sequenzdiagramm aus, und klicken Sie dann auf **OK**.
 
      Eine neue benannte Instanzlebenslinie wird angezeigt, deren Typ dem Typ entspricht, den Sie gezogen haben.
 
@@ -287,16 +287,16 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 ##### <a name="to-change-the-type-of-a-lifeline"></a>So ändern Sie den Typ einer Lebenslinie
 
-1. Right-click a lifeline, and then click **Properties**.
+1. Klicken Sie mit der rechten Maustaste auf eine Lebenslinie und dann auf **Eigenschaften**.
 
-2. In the **Properties** window, set the **Type** property. Sie können einen Typ aus dem Dropdown-Menü auswählen oder einen neuen Namen eingeben.
+2. Legen Sie im **Eigenschaften** Fenster die **Type** -Eigenschaft fest. Sie können einen Typ aus dem Dropdown-Menü auswählen oder einen neuen Namen eingeben.
 
 ### <a name="creating-classes-from-lifelines"></a>Erstellen von Klassen aus Lebenslinien
  Wenn Sie ein oder mehrere Sequenzdiagramme erstellt haben, können Sie die Lebenslinien zusammenfassen, indem Sie Klassen oder Schnittstellen daraus erstellen.
 
 ##### <a name="to-create-a-class-or-interface-from-a-lifeline"></a>So erstellen Sie eine Klasse oder Schnittstelle aus einer Lebenslinie
 
-1. Right-click the lifeline, and then click **Create Class** or **Create Interface**.
+1. Klicken Sie mit der rechten Maustaste auf die Lebenslinie, und klicken Sie auf **Klasse erstellen** oder **Schnittstelle erstellen**.
 
      Eine neue Klasse oder Schnittstelle wird im UML-Modell-Explorer angezeigt.
 
@@ -304,11 +304,11 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
     1. Wählen Sie alle Meldungen, die Sie einschließen möchten.
 
-    2. Right-click one of the messages, and then click **Create Method**.
+    2. Klicken Sie mit der rechten Maustaste auf eine der Nachrichten, und klicken Sie dann auf **Methode erstellen**.
 
          Die neue Klasse oder Schnittstelle verfügt über Vorgänge für jede ausgewählte Meldung.
 
-         The operation name appears below each message arrow, and in the **Operation** property of the message.
+         Der Vorgangs Name wird unter jedem Nachrichten Pfeil und in der Eigenschaft **Vorgang** der Nachricht angezeigt.
 
          Wenn die Meldung Parameter im Format „(Parameter : Typ)“ enthalten hat, werden sie in der Parameterliste des neuen Vorgangs angezeigt.
 
@@ -319,20 +319,20 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
     1. Öffnen oder erstellen Sie ein Klassen- oder Komponentendiagramm.
 
-    2. Drag the new class or interface from **UML Model Explorer** to a class diagram.
+    2. Ziehen Sie die neue Klasse oder Schnittstelle aus dem **UML-Modell-Explorer** in ein Klassendiagramm.
 
          Die Klasse oder Schnittstelle wird im Klassendiagramm angezeigt.
 
-         \- oder -
+         \- oder –
 
-    3. Drag the new interface from **UML Model Explorer** onto a component or port in a component diagram.
+    3. Ziehen Sie die neue Schnittstelle aus dem **UML-Modell-Explorer** auf eine Komponente oder einen Port in einem Komponenten Diagramm.
 
          Die Schnittstelle wird auf der Komponente als Lollipop angezeigt.
 
 ### <a name="creating-classes-for-parameters"></a>Erstellen von Klassen für Parameter
  Sie können Parameter in die Meldungen in einem Sequenzdiagramm einschließen. Mit einem UML-Klassendiagramm können Sie die Parametertypen beschreiben.
 
-## <a name="Multiple"></a> Creating Reusable Interaction Sequences
+## <a name="Multiple"></a>Erstellen von wiederverwendbaren Interaktions Sequenzen
  Sie können ein separates Diagramm verwenden, um eine Sequenz zu beschreiben, die Details enthält, die Sie herausstellen möchten oder die mehreren Diagrammen gemeinsam sind.
 
  Sie können ein Interaktionsverwendungsrechteck (12) in einem Diagramm erstellen, das auf die Details in einem anderen Diagramm verweist.
@@ -341,7 +341,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 #### <a name="to-create-a-reusable-interaction-sequence-from-existing-lifelines"></a>So erstellen Sie eine wiederverwendbare Interaktionssequenz aus vorhandenen Lebenslinien
 
-1. In the **Toolbox**, click **Interaction Use**.
+1. Klicken Sie in der **Toolbox**auf **Interaktions Verwendung**.
 
 2. Halten Sie im Sequenzdiagramm die Maustaste gedrückt, während Sie über die Lebenslinien ziehen, die Sie in die wiederverwendbare Sequenz einschließen möchten. Starten Sie an der vertikalen Position, an der Sie die Interaktionsverwendung einfügen möchten.
 
@@ -349,17 +349,17 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 3. Doppelklicken Sie auf den Namen der Interaktionsverwendung, und benennen Sie sie um, um die Wirkung der wiederverwendbaren Sequenz in diesem Diagramm zu beschreiben.
 
-     \- oder -
+     \- oder –
 
      Schreiben Sie den Namen wie einen Funktionsaufruf mit Parametern.
 
 4. Verknüpfen Sie die Interaktionsverwendung mit einem anderen Sequenzdiagramm. Klicken Sie mit der rechten Maustaste auf die Interaktionsverwendung, und führen Sie dann eine der folgenden Aktionen durch:
 
-     Click **Create New Sequence** to create a new sequence diagram
+     Klicken Sie auf **neue Sequenz erstellen** , um ein neues Sequenzdiagramm zu erstellen.
 
-     \- oder -
+     \- oder –
 
-     Click **Link to Sequence** to link to an existing diagram.
+     Klicken Sie auf **verknüpfen,** um eine Verknüpfung mit einem vorhandenen Diagramm zu verknüpfen.
 
      Visual Studio erstellt eine Verknüpfung zwischen der Interaktionsverwendung und der neuen Interaktionssequenz.
 
@@ -370,7 +370,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>So erstellen Sie eine wiederverwendbare Sequenz aus vorhandenen Meldungen
 
-- Right-click the message that you want to move, and then click **Move to Diagram**.
+- Klicken Sie mit der rechten Maustaste auf die Meldung, die Sie verschieben möchten, und klicken Sie dann **auf in Diagramm verschieben**.
 
   Visual Studio:
 
@@ -384,21 +384,21 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 - Doppelklicken Sie auf die Interaktionsverwendung.
 
-     \- oder -
+     \- oder –
 
-     Right-click the interaction use and then click **Go to Sequence**.
+     Klicken Sie mit der rechten Maustaste auf die Interaktion, und klicken Sie dann auf **Gehe zu Sequenz**.
 
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>Erstellen eines Platzhalters mit einer Interaktionsverwendung
- Sie können eine Interaktionsverwendung erstellen, ohne sie mit einem anderen Diagramm zu verknüpfen. You can use this as a placeholder for a part of the sequence whose details are yet to be worked out. Use the name of the interaction use to indicate the outcome that you want.
+ Sie können eine Interaktionsverwendung erstellen, ohne sie mit einem anderen Diagramm zu verknüpfen. Sie können dies als Platzhalter für einen Teil der Sequenz verwenden, deren Details noch nicht verarbeitet werden sollen. Verwenden Sie den Namen der Interaktion, um das gewünschte Ergebnis anzugeben.
 
-## <a name="Collapse"></a> Collapsing Groups of Lifelines
+## <a name="Collapse"></a>Reduzieren von Lebenslinien Gruppen
  Sie können eine Gruppe von Lebenslinien so reduzieren, dass die Gruppe als eine Lebenslinie angezeigt wird. Dadurch können Sie eine Gruppe von Objekten als einzelne Komponente visualisieren. Meldungen und Interaktionsverwendungen zwischen Lebenslinien in einer reduzierten Gruppe werden ausgeblendet. Meldungen und Interaktionssequenzen, die andere Lebenslinien einschließen, werden angezeigt.
 
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>So reduzieren Sie eine Gruppe von Lebenslinien
 
 1. Wählen Sie zwei oder mehr Lebenslinien aus.
 
-2. Right-click one of them, and then click **Collapse**.
+2. Klicken Sie mit der rechten Maustaste auf eine dieser Elemente, und klicken Sie dann auf **reduzieren.**
 
      Die separaten Lebenslinien werden durch eine einzelne Lebenslinie ersetzt.
 
@@ -411,15 +411,15 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
 
 #### <a name="to-expand-a-collapsed-group"></a>So erweitern Sie eine reduzierte Gruppe
 
-- Right-click the collapsed lifeline, and then click **Expand**.
+- Klicken Sie mit der rechten Maustaste auf die reduzierte Lebenslinie und dann auf **erweitern**.
 
     > [!NOTE]
     > Der Name der Gruppe geht zusammen mit allen Verknüpfungen von der Gruppe zu Kommentaren oder Arbeitsaufgaben verloren.
 
-## <a name="Fragments"></a> Describing Control Structures with Fragments
+## <a name="Fragments"></a>Beschreiben von Steuerungsstrukturen mit Fragmenten
  Sie können kombinierte Fragmente (13) verwenden, um Schleifen, Verzweigungen und die gleichzeitige Verarbeitung in einem Sequenzdiagramm zu definieren. Ziehen Sie alternativ die Verwendung eines Aktivitätsdiagramms in Erwägung. Das Aktivitätsdiagramm ist nicht so nützlich, um Meldungen zwischen Akteuren darzustellen, aber in einigen Fällen ist es besser geeignet, um Schleifen, Verzweigungen und Parallelität zu zeigen.
 
- For a full list of the types of fragment, see [Describe control flow with fragments on UML sequence diagrams](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).
+ Eine vollständige Liste der fragmenttypen finden Sie unter [beschreiben der Ablauf Steuerung mit Fragmenten in UML-Sequenzdiagrammen](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).
 
 #### <a name="to-create-a-combined-fragment"></a>So erstellen Sie ein kombiniertes Fragment
 
@@ -428,19 +428,19 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Eine
     > [!NOTE]
     > Wählen Sie die Meldungspfeile, nicht die Vorkommnisausführungen, auf die die Meldungen verweisen.
 
-2. Right-click one of the messages, point to **Surround With**, and then click the type of fragment that you require.
+2. Klicken Sie mit der rechten Maustaste auf eine der Meldungen, zeigen Sie auf **Umschließen mit**, und klicken Sie dann auf den gewünschten fragmenttyp.
 
      Ein neues Fragment wird angezeigt. Es enthält die ausgewählten Meldungen.
 
      Wenn der kombinierte Fragmenttyp mehrere Fragmente zulässt, wird auch ein leeres Fragment angezeigt.
 
-3. To set the guard of a fragment, right-click the fragment border, and then click **Properties**. Set the **Guard** property.
+3. Wenn Sie den Wächter eines Fragments festlegen möchten, klicken Sie mit der rechten Maustaste auf den fragmentrahmen, und klicken Sie dann auf **Eigenschaften**. Legen Sie die **Guard** -Eigenschaft fest.
 
      Mit dem Wächter wird die Bedingung einer Verzweigung oder Schleife definiert.
 
-4. To add a new fragment to a kind that allows multiple fragments, right-click the boundary of a fragment, and point to **Add**. Click either **Interaction Operand Before** or **Interaction Operand After**.
+4. Wenn Sie ein neues Fragment zu einer Art hinzufügen möchten, die mehrere Fragmente zulässt, klicken Sie mit der rechten Maustaste auf die Grenze eines Fragments, und zeigen Sie auf **Hinzufügen**. Klicken Sie entweder auf **Interaktions Operand vor** oder **Interaktions Operand after**.
 
 5. Um neue Meldungen zu einem Fragment hinzuzufügen, verwenden Sie die Meldungstools oder die Funktion zum Kopieren und Einfügen.
 
 ## <a name="see-also"></a>Siehe auch
- [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Sketching Interactions by using Sequence Diagrams](https://go.microsoft.com/fwlink/?LinkId=201113)
+ [UML-Sequenzdiagramme:](../modeling/uml-sequence-diagrams-reference.md) Referenz zur [Bearbeitung von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) zu UML- [Komponenten Diagrammen:](../modeling/uml-component-diagrams-reference.md) Referenz für UML- [Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [Video: Ändern von Interaktionen mithilfe von Sequenzdiagrammen](https://go.microsoft.com/fwlink/?LinkId=201113)

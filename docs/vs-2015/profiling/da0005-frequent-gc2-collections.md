@@ -25,10 +25,10 @@ ms.locfileid: "74301255"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 RuleId|DA0005|  
-|Category|.NET Framework Usage|  
-|Profiling method|.NET Memory|  
-|Message|Many of your objects are being collected in generation 2 garbage collection.|  
-|Message type|Warning|  
+| Kategorie |. .NET Framework-Verwendung |  
+| Profil Erstellungs Methode |. NET-Speicher |  
+| Meldung | Viele ihrer Objekte werden in der Generation 2 Garbage Collection gesammelt. |  
+| Nachrichtentyp | Warnung |  
   
 ## <a name="cause"></a>Ursache  
  Bei der Garbage Collection der Generation 2 wird eine hohe Anzahl von .NET-Speicherobjekten freigegeben.  

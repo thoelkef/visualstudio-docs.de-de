@@ -35,9 +35,9 @@ Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstü
 | lt |Kleiner als |Preis lt 20 |
 | le |Kleiner oder gleich |Preis le 100 |
 | ne |Ungleich |Ort ne 'London' |
-| und |And |Preis le 200 and Preis gt 3,5 |
-| oder |Or |Preis le 3,5 or Preis gt 200 |
-| not |not |not isAvailable |
+| und |und |Preis le 200 and Preis gt 3,5 |
+| oder |Oder |Preis le 3,5 or Preis gt 200 |
+| not |Not |not isAvailable |
 
 Wenn Sie eine Filterzeichenfolge erstellen, sind die folgenden Regeln wichtig:
 

@@ -106,7 +106,7 @@ ms.locfileid: "74297763"
 
 Es gibt nicht für alle Fehlermeldungen ein zugehöriges Hilfethema. Wenn Sie das Problem anhand der Informationen in der Fehlermeldung nicht lösen können, können Sie andere Ressourcen wie Knowledge Base-Artikel, die Entwicklercommunity oder den Produktsupport konsultieren.
 
-## <a name="knowledge-base-articles"></a>Knowledge Base-Artikel
+## <a name="knowledge-base-articles"></a>Artikel der Knowledge Base
  Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Auf der [Microsoft-Support](https://go.microsoft.com/fwlink/?linkid=1782)-Website erhalten Sie Zugriff auf KB-Artikel.
 
 ## <a name="the-developer-community"></a>Die Entwicklercommunity

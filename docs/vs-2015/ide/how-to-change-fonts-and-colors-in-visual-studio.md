@@ -66,4 +66,4 @@ Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf versc
 5. Wählen Sie in der Liste **Größe** eine Textgröße aus, und klicken Sie dann auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
- [Accessibility Features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Barrierefreiheits Funktionen von Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) Gewusst [wie: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

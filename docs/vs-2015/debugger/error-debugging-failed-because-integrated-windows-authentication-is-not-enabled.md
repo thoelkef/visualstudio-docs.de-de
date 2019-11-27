@@ -1,5 +1,5 @@
 ---
-title: 'Error: Debugging Failed Because Integrated Windows Authentication Is Not Enabled | Microsoft Docs'
+title: 'Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist. Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -71,7 +71,7 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
   
 2. Aktivieren Sie die Windows-Authentifizierung und die IIS6-Verwaltungskompatibilität, wenn diese nicht bereits aktiviert wurden, indem Sie folgende Schritte ausführen:  
   
-    1. Click **Start**, click **Control Panel** and then click **Programs**.  
+    1. Klicken Sie im **Startmenü**auf **Systemsteuerung** , und klicken Sie dann auf **Programme**.  
   
     2. Klicken Sie unter **Programme und Funktionen** auf **Windows-Funktionen ein- oder ausschalten**.  
   
@@ -118,6 +118,6 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 10. Schließen Sie das Fenster **Internetinformationsdienste-Manager**.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Debugging von Webanwendungen: Fehler und Problem](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Behandlung   
  [Microsoft-Digestauthentifizierung](https://go.microsoft.com/fwlink/?LinkId=77938)   
- [Running Web Applications on Windows Vista with IIS 7.0 and Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Ausführen von Webanwendungen unter Windows Vista mit IIS 7,0 und Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

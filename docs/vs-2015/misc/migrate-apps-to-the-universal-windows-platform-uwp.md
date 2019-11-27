@@ -1,5 +1,5 @@
 ---
-title: Migrate apps to the Universal Windows Platform (UWP) | Microsoft Docs
+title: Migrieren von apps zum universelle Windows-Plattform (UWP) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299479"
 ---
-# <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrieren von Apps in die universelle Windows-Plattform (UWP)
+# <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrieren von Apps auf die universelle Windows-Plattform (UWP)
 Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projektdateien für Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps vor, damit sie mit Visual Studio 2015 RTM verwendet werden können. (Wenn Sie über eine universelle Windows 8.1-App mit einem Windows-Anwendungsprojekt und einem Windows Phone-Projekt verfügen, müssen Sie die Schritte befolgen, um jedes Projekt zu migrieren).
 
  Mit der universellen Windows-Plattform können Sie Ihre App auf mindestens eine Gerätefamilie abzielen. Weitere Informationen zu universellen Windows-Apps finden Sie in diesem [Plattform-Handbuch](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
@@ -31,13 +31,13 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
   Wenn Sie diese Änderungen nicht alle vornehmen möchten, erfahren Sie hier mehr über das [Portieren Ihrer vorhandenen Apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) in ein neues universelles Windows-Projekt.
 
-## <a name="MigrateCSharp"></a> Migrate your C#/VB Windows Store 8.1 or Windows Phone 8.1 apps to use the Universal Windows Platform
+## <a name="MigrateCSharp"></a>Migrieren C#Sie Ihre/VB Windows Store 8,1-oder Windows Phone 8,1-apps, um die universelle Windows-Plattform
 
 #### <a name="migrate-your-cvb-project-files"></a>Migrieren Ihrer C#/VB-Projektdateien
 
 1. Um zu erfahren, welche universelle Windows-Plattform installiert ist, öffnen Sie diesen Ordner: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Er enthält eine Liste der Ordner für jede universelle Windows-Plattform, die installiert ist. Der Ordnername ist die Version der universellen Windows-Plattform, die installiert ist. Auf diesem Windows 10-Gerät beispielsweise ist die Version 10.0.10240.0 der universellen Windows-Plattform installiert.
 
-     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Öffnen Sie den Ordner, um die installierten Versionen anzuzeigen.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      Es kann mehr als eine Version der universellen Windows-Plattform installiert sein. Es wird empfohlen, dass Sie die neueste Version für Ihre App verwenden.
 
@@ -82,19 +82,19 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 5. Klicken Sie mit der rechten Maustaste auf das vorhandene Projekt für Ihre App im Projektmappen-Explorer, und wählen Sie dann **Projekt entladen**aus. Nachdem das Projekt entladen wurde, klicken Sie mit der rechten Maustaste erneut auf die Projektdatei, und wählen Sie die Option zum Bearbeiten der CSPROJ- oder VBPROJ-Datei.
 
-     ![Right click the project and choose Edit](../misc/media/uap-editproject.png "UAP_EditProject")
+     ![Klicken Sie mit der rechten Maustaste, und wählen Sie bearbeiten](../misc/media/uap-editproject.png "UAP_EditProject")
 
-6. Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:
+6. Suchen Sie das \<PropertyGroup-> Element, das das \<targetplatformversion-> Element mit dem Wert 8,1 enthält. Führen Sie die folgenden Schritte für dieses \<PropertyGroup-> Element aus:
 
-    1. Set the value of the \<Platform> element to: **x86**.
+    1. Legen Sie den Wert der \<Platform-> Element auf **x86**fest.
 
-    2. Add a \<TargetPlatformIdentifier> element and set its value to: **UAP**.
+    2. Fügen Sie ein \<targetplatformidentifier >-Element hinzu, und legen Sie dessen Wert auf **UAP**fest.
 
-    3. Change the existing value of the \<TargetPlatformVersion> element to be the value of the Universal Windows Platform version that you installed. Also add a \<TargetPlatformMinVersion> element and give it the same value.
+    3. Ändern Sie den vorhandenen Wert des \<targetplatformversion-> Elements in den Wert der installierten universelle Windows-Plattform Version. Fügen Sie auch ein \<targetplatformminversion-> Element hinzu, und geben Sie ihm denselben Wert.
 
-    4. Change the value of the \<MinimumVisualStudioVersion> element to: **14**.
+    4. Ändern Sie den Wert der \<minimumvisualstudioversion >-Elements in: **14**.
 
-    5. Replace the \<ProjectTypeGuids> element as shown below:
+    5. Ersetzen Sie das >-Element \<projecttypguids, wie unten dargestellt:
 
          Für C#:
 
@@ -108,11 +108,11 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
         ```
 
-    6. Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: **true**.
+    6. Fügen Sie ein \<enabledotnetnativecompatibleprofile-> Element hinzu, und legen Sie dessen Wert auf " **true**" fest.
 
-    7. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. If your project includes assets not scaled at 200, you will need to add a \<UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
+    7. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Wenn das Projektressourcen enthält, die nicht bei 200 skaliert sind, müssen Sie der PropertyGroup ein \<uapdefaultassetscale >-Element mit dem Wert der Skalierung Ihrer Assets hinzufügen. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
 
-         Now your \<PropertyGroup> element should look similar to this example:
+         Nun sollte Ihr \<PropertyGroup-> Element in etwa wie in diesem Beispiel aussehen:
 
         ```xml
         <PropertyGroup>
@@ -140,7 +140,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
         <VisualStudioVersion>14.0</VisualStudioVersion>
     ```
 
-8. Find \<PropertyGroup> elements that are configured for the AnyCPU platform as part of the Condition attribute. Entfernen Sie diese Elemente und alle ihre untergeordneten Elemente. AnyCPU wird für Windows 10-Apps in Visual Studio 2015 nicht unterstützt. For example, you should remove \<PropertyGroup> elements like these ones:
+8. Suchen Sie \<PropertyGroup-> Elemente, die für die anycpu-Plattform als Teil des Condition-Attributs konfiguriert sind. Entfernen Sie diese Elemente und alle ihre untergeordneten Elemente. AnyCPU wird für Windows 10-Apps in Visual Studio 2015 nicht unterstützt. Sie sollten z. b. \<PropertyGroup-> Elemente wie diese entfernen:
 
     ```xml
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -164,7 +164,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
       </PropertyGroup>
     ```
 
-9. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
+9. Überprüfen Sie für jedes verbleibende \<PropertyGroup-> Element, ob das Element über ein Condition-Attribut mit einer Releasekonfiguration verfügt. Wenn dies der Fall ist, aber keine \<usedotnetnativetoolchain >-Element enthalten ist, fügen Sie eine hinzu. Legen Sie den Wert für das \<usedotnetnativetoolchain >-Element wie folgt auf true fest:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
@@ -181,7 +181,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
       </PropertyGroup>
     ```
 
-10. For Windows Phone projects only, remove the \<PropertyGroup> element that contains a \<TargetPlatformIdentifier> element with a value of WindowsPhoneApp. Entfernen Sie zudem alle untergeordneten Elemente dieses Elements:
+10. Entfernen Sie nur bei Windows Phone Projekten das \<PropertyGroup-> Element, das ein \<targetplatformidentifier-> Element mit einem Wert von windowsphoneapp enthält. Entfernen Sie zudem alle untergeordneten Elemente dieses Elements:
 
     ```xml
     <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
@@ -189,27 +189,27 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
     </PropertyGroup>
     ```
 
-11. Find the \<ItemGroup> element that contains the \<AppxManifest> element. Add the following \<None> element as a child of the \<ItemGroup> element:
+11. Suchen Sie das \<ItemGroup-> Element, das das \<appxmanifest >-Element enthält. Fügen Sie die folgende \<kein >-Element als untergeordnetes Element des > Elements \<ItemGroup hinzu:
 
     ```xml
     <None Include="project.json" />
     ```
 
-12. Find the \<ItemGroup> element that contains other assets that are added to your project such as logo .png files (\<Content Include="Assets\Logo.scale-100.png" />). Add the following \<Content> child element to this \<ItemGroup> element:
+12. Suchen Sie das \<ItemGroup-> Element, das andere Ressourcen enthält, die dem Projekt hinzugefügt werden, wie z. b. Logo. png-Dateien (\<Content include = "Assets\Logo.Scale-100.png"/>). Fügen Sie diesem \<ItemGroup-> Element den folgenden \<Inhalt > untergeordneten-Elements hinzu:
 
-     **For C#:**
+     **Für C#:**
 
     ```xml
     <Content Include="Properties\default.rd.xml" />
     ```
 
-     **For VB:**
+     **Für VB:**
 
     ```xml
     <Content Include="My Project\default.rd.xml" />
     ```
 
-13. Find the \<ItemGroup> element that includes \<Reference> children elements to NuGet packages. Notieren Sie sich die NuGet-Pakete, die Sie verwenden, da Sie sie mit dem NuGet-Paket-Manager herunterladen müssen, nachdem Ihr Projekt erneut geladen wurde. Remove this \<ItemGroup> along with its children. Beispielsweise könnte ein UWP-Projekt die folgenden NuGet-Pakete aufweisen, die entfernt werden müssten:
+13. Suchen Sie das \<ItemGroup-> Element, das \<Verweis > untergeordnete Elemente für nuget-Pakete enthält. Notieren Sie sich die NuGet-Pakete, die Sie verwenden, da Sie sie mit dem NuGet-Paket-Manager herunterladen müssen, nachdem Ihr Projekt erneut geladen wurde. Entfernen Sie diese \<ItemGroup-> zusammen mit den zugehörigen untergeordneten Elementen. Beispielsweise könnte ein UWP-Projekt die folgenden NuGet-Pakete aufweisen, die entfernt werden müssten:
 
     ```xml
     <ItemGroup>
@@ -246,13 +246,13 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
      Nun müssen Sie die Schritte befolgen, um die [Paketmanifestdateien für alle Ihre Windows Store 8.1- oder Windows Phone 8.1-Projekte zu aktualisieren](#PackageManifest) .
 
-## <a name="MigrateCPlusPlus"></a> Migrate your C++ Windows Store 8.1 or Windows Phone 8.1 apps to use the Universal Windows Platform
+## <a name="MigrateCPlusPlus"></a>Migrieren C++ Sie Ihre Windows Store 8,1-oder Windows Phone 8,1-apps, um die universelle Windows-Plattform
 
 #### <a name="migrate-your-c-project-files"></a>Migrieren Ihrer C++-Projektdateien
 
 1. Um zu erfahren, welche universelle Windows-Plattform installiert ist, öffnen Sie diesen Ordner: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Er enthält eine Liste der Ordner für jede universelle Windows-Plattform, die installiert ist. Der Ordnername ist die Version der universellen Windows-Plattform, die installiert ist. Auf diesem Windows 10-Gerät beispielsweise ist die Version 10.0.10240.0 der universellen Windows-Plattform installiert.
 
-     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Öffnen Sie den Ordner, um die installierten Versionen anzuzeigen.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      Es kann mehr als eine Version der universellen Windows-Plattform installiert sein. Es wird empfohlen, dass Sie die neueste Version für Ihre App verwenden.
 
@@ -260,23 +260,23 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
      Klicken Sie mit der rechten Maustaste auf das vorhandene Projekts im Projektmappen-Explorer, und wählen Sie dann **Projekt entladen**. Nachdem das Projekt entladen wurde, klicken Sie mit der rechten Maustaste erneut auf die Projektdatei, und wählen Sie die Option zum Bearbeiten der VCXPROJ-Datei.
 
-     ![Right&#45;click project file and choose to edit](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")
+     ![Klicken&#45;Sie mit der rechten Maustaste auf Projektdatei und wählen Sie](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")
 
-3. Find the \<PropertyGroup> element that contains the \<ApplicationTypeRevision> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:
+3. Suchen Sie das \<PropertyGroup-> Element, das das \<applicationtyperevision >-Element mit dem Wert 8,1 enthält. Führen Sie die folgenden Schritte für dieses \<PropertyGroup-> Element aus:
 
-    1. Add a \<WindowsTargetPlatformVersion> element and a \<WindowsTargetPlatformMinVersion> element and give them the value of the Universal Windows Platform version that you installed.
+    1. Fügen Sie ein \<windowstargetplatformversion-> Element und ein \<windowstargetplatformminversion-> Element hinzu, und geben Sie ihm den Wert der universelle Windows-Plattform Version, die Sie installiert haben.
 
     2. Aktualisieren Sie den Wert des Elements „ApplicationTypeRevision“ von „8.1“auf „10.0“.
 
-    3. Change the value of the \<MinimumVisualStudioVersion> element to: 14.
+    3. Ändern Sie den Wert der \<minimumvisualstudioversion >-Elements in: 14.
 
-    4. Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: true.
+    4. Fügen Sie ein \<enabledotnetnativecompatibleprofile-> Element hinzu, und legen Sie dessen Wert auf "true" fest.
 
-    5. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. If your project includes assets not scaled at 200, you will need to add a \<UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
+    5. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Wenn das Projektressourcen enthält, die nicht bei 200 skaliert sind, müssen Sie der PropertyGroup ein \<uapdefaultassetscale >-Element mit dem Wert der Skalierung Ihrer Assets hinzufügen. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
 
-    6. For Windows Phone projects only, change the value of \<ApplicationType> from Windows Phone to Windows Store.
+    6. Ändern Sie für Windows Phone Projekte den Wert \<applicationtype-> von Windows phone in den Windows Store.
 
-         Now your \<PropertyGroup> element should look similar to this example:
+         Nun sollte Ihr \<PropertyGroup-> Element in etwa wie in diesem Beispiel aussehen:
 
         ```xml
         <PropertyGroup>
@@ -292,7 +292,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
         </PropertyGroup>
         ```
 
-4. Change all instances of the \<PlatformToolset> element to have the value v140. Beispiel:
+4. Ändern Sie alle Instanzen des \<platformtoolset >-Elements in den Wert V140. Beispiel:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -304,7 +304,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
       </PropertyGroup>
     ```
 
-5. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
+5. Überprüfen Sie für jedes verbleibende \<PropertyGroup-> Element, ob das Element über ein Condition-Attribut mit einer Releasekonfiguration verfügt. Wenn dies der Fall ist, aber keine \<usedotnetnativetoolchain >-Element enthalten ist, fügen Sie eine hinzu. Legen Sie den Wert für das \<usedotnetnativetoolchain >-Element wie folgt auf true fest:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
@@ -323,16 +323,16 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
      Nun müssen Sie die Schritte befolgen, um die [Paketmanifestdateien für alle Ihre Windows Store 8.1- oder Windows Phone 8.1-Projekte zu aktualisieren](#PackageManifest) .
 
-## <a name="PackageManifest"></a> Update your package manifest file for all your Windows Store 8.1 or Windows Phone 8.1 projects
+## <a name="PackageManifest"></a>Aktualisieren Sie die Paket Manifest-Datei für alle Windows Store 8,1-oder Windows Phone 8,1-Projekte.
  Sie müssen die Paketmanifestdatei für jedes Projekt in der Projektmappe aktualisieren.
 
 #### <a name="update-your-package-manifest-file"></a>Aktualisieren der Paketmanifestdatei
 
 1. Öffnen Sie die Datei „Package.appxmanifest“ im Projektmappen-Explorer. Sie müssen die Datei „Package.AppxManifest“ für jedes Windows Store- und Windows Phone-Projekt bearbeiten.
 
-2. You need to update the \<Package> element with the new schemas based on your existing project type. Entfernen Sie zuerst die folgenden Schemas, je nachdem, ob Sie über ein Windows Store- oder ein Windows Phone-Projekt verfügen.
+2. Sie müssen das \<Package >-Element mit den neuen Schemas aktualisieren, basierend auf dem vorhandenen Projekttyp. Entfernen Sie zuerst die folgenden Schemas, je nachdem, ob Sie über ein Windows Store- oder ein Windows Phone-Projekt verfügen.
 
-    **OLD for Windows Store project:** Your \<Package> element will look similar to this one.
+    **Altes für Windows Store-Projekt:** Das \<Paket > Element sieht in etwa so aus.
 
    ```xml
    <Package
@@ -341,7 +341,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-    **OLD for Windows Phone project:** Your \<Package> element will look similar to this one.
+    **Alt für Windows Phone Projekt:** Das \<Paket > Element sieht in etwa so aus.
 
    ```xml
    <Package
@@ -351,7 +351,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
    ```
 
-    **NEW for Universal Windows Platform:** Add the schemas below to your \<Package> element. Entfernen Sie alle zugehörigen Namespace-Bezeichnerpräfixe von Elementen für die Schemas, die Sie gerade entfernt haben. Aktualisieren Sie die IgnorableNamespaces-Eigenschaft auf „uap mp“. Your new \<Package> element should look similar to this one.
+    **Neu für universelle Windows-Plattform:** Fügen Sie die folgenden Schemas zu Ihrem \<Package >-Element hinzu. Entfernen Sie alle zugehörigen Namespace-Bezeichnerpräfixe von Elementen für die Schemas, die Sie gerade entfernt haben. Aktualisieren Sie die IgnorableNamespaces-Eigenschaft auf „uap mp“. Das neue \<Paket > Element sollte in etwa wie folgt aussehen.
 
    ```xml
    <Package
@@ -362,7 +362,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-3. Add a \<Dependencies> child element to the \<Package> element. Then add a \<TargetDeviceFamily> child element to this \<Dependencies> element with Name, MinVersion, and MaxVersionTested attributes. Weisen Sie dem Name-Attribut den Wert „Windows.Universal“ zu. Geben Sie „MinVersion“ und „MaxVersionTested“ den Wert der installierten Version der universellen Windows-Plattform. Dieses Element sollte in etwa wie folgt aussehen:
+3. Fügen Sie dem \<Package-> Element > untergeordneten-Element \<Abhängigkeiten hinzu. Fügen Sie dieser \<Abhängigkeiten > Element mit den Attributen "Name", "MinVersion" und "maxversiongetesteten" dann ein \<targetdevicefamily-> untergeordnetes Element hinzu. Weisen Sie dem Name-Attribut den Wert „Windows.Universal“ zu. Geben Sie „MinVersion“ und „MaxVersionTested“ den Wert der installierten Version der universellen Windows-Plattform. Dieses Element sollte in etwa wie folgt aussehen:
 
    ```xml
    <Dependencies>
@@ -370,16 +370,16 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
    </Dependencies>
    ```
 
-4. **For Windows Store only:** You need to add a \<mp:PhoneIdentity> child element to the \<Package> element. Fügen Sie ein „PhoneProductId“-Attribut und ein „PhonePublisherId“-Attribut hinzu. Set the PhoneProductId to have the same value as the Name attribute in the \<Identity> element. Legen Sie den „PhonePublishedId“-Wert auf Folgendes fest: 00000000-0000-0000-0000-000000000000. Und zwar so:
+4. **Nur für Windows Store:** Sie müssen dem \<Package-> Element ein \<MP: phoneidentity-> untergeordnetes Element hinzufügen. Fügen Sie ein „PhoneProductId“-Attribut und ein „PhonePublisherId“-Attribut hinzu. Legen Sie die phoneproductid so fest, dass Sie denselben Wert wie das Name-Attribut im \<Identity >-Element hat. Legen Sie den „PhonePublishedId“-Wert auf Folgendes fest: 00000000-0000-0000-0000-000000000000. Und zwar so:
 
    ```xml
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />
    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
    ```
 
-5. Find the \<Prerequisites> element and delete this element and any child elements that it has.
+5. Suchen Sie die \<Voraussetzungen > Element, und löschen Sie dieses Element und alle untergeordneten Elemente, die es besitzt.
 
-6. Add the **uap** namespace to the following \<Resource> elements: Scale, DXFeatureLevel. Beispiel:
+6. Fügen Sie den **UAP** -Namespace zu den folgenden \<Ressourcen > Elementen hinzu: Scale, dxfeaturelevel. Beispiel:
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-7. Add the **uap** namespace to the following \<Capability> elements: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, appointments, and contacts. Beispiel:
+7. Fügen Sie den **UAP** -Namespace zu den folgenden \<Funktionen > Elementen hinzu: documentslibrary, pictureslibrary, videoslibrary, musiclibrary, enterprisauthentication, shareduserzertifikate, removablestorage, Termine und Kontakte. Beispiel:
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-8. Add the **uap** namespace to the \<VisualElements> element and any of its child elements. Beispiel:
+8. Fügen Sie den **UAP** -Namespace zum \<visualelements >-Element und zu seinen untergeordneten Elementen hinzu. Beispiel:
 
    ```xml
    <uap:VisualElements
@@ -414,7 +414,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-    **Gilt nur für Windows Store:** Die Namen der Kachelgröße wurden geändert. Change the attributes in the \<VisualElements> element to reflect the new converged tile sizes. 70 x 70 wird zu 71 x 71 und 30 x 30 zu 44 x 44.
+    **Gilt nur für Windows Store:** Die Namen der Kachelgröße wurden geändert. Ändern Sie die Attribute im \<visualelements >-Element, um die neuen zusammen gespiegelten Kachel Größen widerzuspiegeln. 70 x 70 wird zu 71 x 71 und 30 x 30 zu 44 x 44.
 
     **ALT:** Kachelgrößennamen
 
@@ -444,7 +444,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-9. Add the **uap** namespace to the \<ApplicationContentUriRules> and all its child elements. Beispiel:
+9. Fügen Sie den **UAP** -Namespace dem \<applicationcontenturirules > und allen untergeordneten Elementen hinzu. Beispiel:
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-10. Add the **uap** namespace to the following \<Extension> elements and all of its child elements: windows.accountPictureProvide,  windows.alarm, windows.appointmentsProvider windows.autoPlayContent,  windows.autoPlayDevice, windows.cachedFileUpdate, windows.cameraSettings, windows.fileOpenPicker, windows.fileTypeAssociation, windows.fileSavePicke, windows.lockScreenCall, windows.printTaskSettings, windows.protocol, windows.search, windows.shareTarget. Beispiel:
+10. Fügen Sie den **UAP** -Namespace zu den folgenden \<Erweiterung > Elementen und allen untergeordneten Elementen hinzu: Windows. accountpictureprovider, Windows. Alarm, Windows. autoplaycontent, Windows. autoplaydevice, Windows. cachedfileupdate, Windows. camerasettings, Windows. fileopenpicker, Windows. filetypeassociation, Windows. filesavepicke, Windows. lockscreencall, Windows. printtasksettings, Windows. Protocol, Windows. Search, Windows. sharetarget. Beispiel:
 
     ```xml
     <Extensions>
@@ -480,9 +480,9 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-12. Ändern Sie die Framework-Abhängigkeiten. Add a Publisher name to all \<PackageDependency> elements, and specify a MinVersion if it’s not already specified.
+12. Ändern Sie die Framework-Abhängigkeiten. Fügen Sie einen Herausgeber Namen zu allen \<packagedepen> Elementen hinzu, und geben Sie eine MinVersion an, wenn Sie nicht bereits angegeben ist.
 
-     **OLD:** \<PackageDependency> element
+     **Alt:** \<packagedepen> Element
 
     ```xml
     <Dependencies>
@@ -491,7 +491,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-     **NEW:** \<PackageDependency> element
+     **New:** \<packagedepen> Element
 
     ```xml
     <Dependencies>
@@ -507,7 +507,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 13. Ersetzen Sie die Hintergrundaufgaben „gattCharacteristicNotification“ und „rfcommConnection“ durch eine Aufgabe vom Typ Bluetooth. Beispiel:
 
-     **OLD:**
+     **Jährigen**
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -530,7 +530,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 14. Ersetzen Sie die Bluetooth-Gerätefunktionen „bluetooth.rfcomm“ und „bluetooth.genericAttributeProfile“ durch eine generische Bluetooth-Funktion. Beispiel:
 
-     **OLD:**
+     **Jährigen**
 
     ```xml
     <Capabilities>
@@ -558,13 +558,13 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 15. Entfernen Sie alle veralteten Elemente.
 
-    1. These attributes for \<VisualElements> are deprecated and should be removed:
+    1. Diese Attribute für \<visualelements-> sind veraltet und sollten entfernt werden:
 
-       - The \<VisualElements> attributes: ForegroundText, ToastCapable
+       - Die \<visualelements > Attribute: foregroundtext, toastfähig
 
-       - The \<DefaultTile> attribute DefaultSize
+       - Das \<defaulttile > Attribut "DefaultSize"
 
-       - The \<ApplicationView> element
+       - Das \<applicationview-> Element
 
          Beispiel:
 
@@ -585,7 +585,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 17. Sie müssen einige ausgeblendete Dateien entfernen, bevor Sie die Projektmappe erneut öffnen können.
 
-    1. Öffnen Sie den Datei-Explorer, klicken Sie in der Symbolleiste auf **Ansicht** , und wählen Sie **Ausgeblendete Elemente** und **Dateinamenerweiterungen**. Open this folder on your machine: \<path for the location of your solution>\\.vs\\{Project Name}\v14. Wenn eine Datei mit der Erweiterung .suo vorhanden ist, löschen Sie sie.
+    1. Öffnen Sie den Datei-Explorer, klicken Sie in der Symbolleiste auf **Ansicht** , und wählen Sie **Ausgeblendete Elemente** und **Dateinamenerweiterungen**. Öffnen Sie diesen Ordner auf Ihrem Computer: \<Pfad für den Speicherort der Lösung >\\. vs\\{Project Name} \v14. Wenn eine Datei mit der Erweiterung .suo vorhanden ist, löschen Sie sie.
 
     2. Kehren Sie nun zurück zu dem Ordner, in dem sich die Projektmappe befindet. Öffnen Sie Ordner für Projekte, die in der Projektmappe vorhanden sind. Wenn eine Datei innerhalb eines dieser Projektordner über eine Erweiterung „.csproj.user“ oder „.vbproj.user“ verfügt, löschen Sie sie.
 
@@ -593,21 +593,21 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
          Erfahren Sie, wie Sie [Ihren Code anpassen können](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx) , um die neuen Funktionen der universellen Windows-Plattform nutzen zu können.
 
-## <a name="PreviousVersions"></a> Changes required for existing Universal Windows apps created with Visual Studio 2015 RC
+## <a name="PreviousVersions"></a>Erforderliche Änderungen für vorhandene universelle Windows-apps, die mit Visual Studio 2015 RC erstellt wurden
  Wenn Sie universelle Windows 10-Apps mit Visual Studio 2015 RC erstellt haben, müssen Sie Ihr Projekt neu ausrichten, um die Version der UWP zu verwenden, die mit der neuesten Version von Visual Studio 2015 installiert wurde. Vorherige Versionen werden nicht unterstützt. Die erforderlichen Änderungen unterscheiden sich abhängig von der Sprache, die Sie zum Erstellen der App verwendet haben:
 
-- [C#/VB apps](#RCUpdate10CSharp)
+- [C#/VB-apps](#RCUpdate10CSharp)
 
-- [C++ apps](#RCUpdate10CPlusPlus)
+- [C++war](#RCUpdate10CPlusPlus)
 
-### <a name="RCUpdate10CSharp"></a> Update your C#/VB projects to use the latest Universal Windows Platform
+### <a name="RCUpdate10CSharp"></a>Aktualisieren der C#/VB-Projekte zur Verwendung der neuesten universelle Windows-Plattform
  Wenn Sie Ihre Projektmappe für Ihre vorhandene App öffnen, sehen Sie, dass für Ihre App eine Aktualisierung erforderlich ist:
 
- ![View your project in Solution Explorer](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")
+ ![Anzeigen des Projekts in Projektmappen-Explorer](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")
 
  Wenn Sie das Projekt über den Projektmappen-Explorer erneut laden, wird dieses Dialogfeld angezeigt:
 
- ![Retarget your app to use the correct SDK](../misc/media/missingsdkforuap.png "MissingSDKforUAP")
+ ![Neuzuweisen Ihrer APP für die Verwendung des richtigen SDK](../misc/media/missingsdkforuap.png "Missingsdkforuap")
 
  Da das universelle Windows-Plattform-SDK für Ihr Projekt nun nicht unterstützt wird, können Sie es nicht installieren. Klicken Sie auf „OK“, und befolgen Sie dann die folgenden Schritte.
 
@@ -615,7 +615,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 1. Um zu erfahren, welche universelle Windows-Plattform installiert ist, öffnen Sie diesen Ordner: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Er enthält eine Liste der Ordner für jede universelle Windows-Plattform, die installiert ist. Der Ordnername ist die Version der universellen Windows-Plattform, die installiert ist. Auf diesem Windows 10-Gerät beispielsweise ist die Version 10.0.10240.0 der universellen Windows-Plattform installiert.
 
-    ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+    ![Öffnen Sie den Ordner, um die installierten Versionen anzuzeigen.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
     Es kann mehr als eine Version der universellen Windows-Plattform installiert sein. Es wird empfohlen, dass Sie die neueste Version für Ihre App verwenden.
 
@@ -647,13 +647,13 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 3. Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihre universelle C#-/VB-Windows-App enthält. Sie sehen, dass die Projektdatei (CSPROJ- oder VBPROJ-Datei) aktualisiert werden muss. Klicken Sie mit der rechten Maustaste auf die Projektdatei, und wählen Sie die Option zum Bearbeiten der Datei.
 
-    ![Right click the project and choose Edit](../misc/media/uap-editproject.png "UAP_EditProject")
+    ![Klicken Sie mit der rechten Maustaste, und wählen Sie bearbeiten](../misc/media/uap-editproject.png "UAP_EditProject")
 
-4. Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements. Change the existing value of the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements to be the same version of the Universal Windows Platform that you have installed.
+4. Suchen Sie das \<PropertyGroup-> Element, das die \<targetplatformversion > und \<targetplatformminversion >-Elemente enthält. Ändern Sie den vorhandenen Wert der \<targetplatformversion > und \<targetplatformminversion > Elemente in dieselbe Version der installierten universelle Windows-Plattform.
 
-    Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
+    Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Projekte, die mit Visual Studio 2015 RC erstellt wurden, enthalten Ressourcen, die auf 100 skaliert sind. Sie müssen der PropertyGroup ein \<uapdefaultassetscale-> Element mit dem Wert 100 hinzufügen. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
 
-5. Wenn Sie Verweise zu den SDKs für die UWP-Erweiterung (wie das Windows Mobile SDK) hinzugefügt haben, müssen Sie die SDK-Version aktualisieren. For example this \<SDKReference> element:
+5. Wenn Sie Verweise zu den SDKs für die UWP-Erweiterung (wie das Windows Mobile SDK) hinzugefügt haben, müssen Sie die SDK-Version aktualisieren. Beispielsweise \<sdkreferenzierungs>-Element:
 
    ```xml
    <SDKReference Include="WindowsMobile, Version=10.0.0.1">
@@ -671,7 +671,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-6. Find the \<Target> element with a name attribute that has the value: EnsureNuGetPackageBuildImports. Löschen Sie dieses Element und alle zugehörigen untergeordneten Elemente.
+6. Suchen Sie das \<Ziel > Element mit einem Namensattribut, das den Wert "ensurenugetpackagebuildimports" hat. Löschen Sie dieses Element und alle zugehörigen untergeordneten Elemente.
 
    ```xml
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -683,7 +683,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
    </Target>
    ```
 
-7. Find and delete the \<Import> elements with Project and Condition attributes that reference Microsoft.Diagnostics.Tracing.EventSource and Microsoft.ApplicationInsights, like this:
+7. Suchen und löschen Sie die \<importieren Sie > Elemente mit Project-und Condition-Attributen, die auf "Microsoft. Diagnostics. Tracing. eventSource" und "Microsoft. applicationinsights" folgendermaßen verweisen:
 
    ```xml
    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />
@@ -691,9 +691,9 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-8. Find the \<ItemGroup> that has \<Reference> children elements to NuGet packages. Notieren Sie sich die NuGet-Pakete, die referenziert wurden, da Sie diese Informationen in einem künftigen Schritt benötigen. Ein entscheidender Unterschied zwischen dem Windows 10-Projektformat zwischen Visual Studio 2015 RC und Visual Studio 2015 RTM besteht darin, dass das RTM-Format [NuGet](https://docs.microsoft.com/nuget/) Version 3 verwendet.
+8. Suchen Sie die \<ItemGroup->, die \<Verweis > untergeordnete Elemente für nuget-Pakete enthält. Notieren Sie sich die NuGet-Pakete, die referenziert wurden, da Sie diese Informationen in einem künftigen Schritt benötigen. Ein entscheidender Unterschied zwischen dem Windows 10-Projektformat zwischen Visual Studio 2015 RC und Visual Studio 2015 RTM besteht darin, dass das RTM-Format [NuGet](https://docs.microsoft.com/nuget/) Version 3 verwendet.
 
-    Remove the \<ItemGroup> and all its children. Beispielsweise weist ein mit Visual Studio RC erstelltes UWP-Projekt die folgenden zu löschenden NuGet-Pakete auf:
+    Entfernen Sie die \<ItemGroup > und alle untergeordneten Elemente. Beispielsweise weist ein mit Visual Studio RC erstelltes UWP-Projekt die folgenden zu löschenden NuGet-Pakete auf:
 
    ```xml
    <ItemGroup>
@@ -721,7 +721,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-9. Find the \<ItemGroup> element that contains an \<AppxManifest> element. If there is a \<None> element with an Include attribute set to: packages.config, delete it. Also, add a \<None> element with an Include attribute and set its value to: project.json.
+9. Suchen Sie das \<ItemGroup-> Element, das ein \<appxmanifest-> Element enthält. Wenn ein \<kein > Element mit einem Include-Attribut auf Packages. config festgelegt ist, löschen Sie es. Fügen Sie außerdem ein \<none >-Element mit einem Include-Attribut hinzu, und legen Sie dessen Wert auf "Project. JSON" fest.
 
 10. Speichern Sie die Änderungen. Schließen Sie dann die Projektdatei.
 
@@ -731,7 +731,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 13. Öffnen Sie die Datei „Package.appxmanifest“ im Projektmappen-Explorer.
 
-    1. Find the \<TargetDeviceFamily> element. Ändern Sie die zugehörigen Attribute „MinVersion“ und „MaxVersionTested“ auf die installierte Version der universellen Windows-Plattform. Und zwar so:
+    1. Suchen Sie nach dem \<targetdevicefamily-> Element. Ändern Sie die zugehörigen Attribute „MinVersion“ und „MaxVersionTested“ auf die installierte Version der universellen Windows-Plattform. Und zwar so:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -745,25 +745,25 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     Wenn Sie über Komponententestprojekte für Ihre universellen Windows-Apps verfügen, müssen Sie zudem die [diese Schritte](#MigrateUnitTest)befolgen.
 
-### <a name="RCUpdate10CPlusPlus"></a> Update your C++ projects to use the latest Universal Windows Platform
+### <a name="RCUpdate10CPlusPlus"></a>Aktualisieren Sie C++ Ihre Projekte, sodass Sie die neuesten universelle Windows-Plattform
 
 1. Um zu erfahren, welche universelle Windows-Plattform installiert ist, öffnen Sie diesen Ordner: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Er enthält eine Liste der Ordner für jede universelle Windows-Plattform, die installiert ist. Der Ordnername ist die Version der universellen Windows-Plattform, die installiert ist. Auf diesem Windows 10-Gerät beispielsweise ist die Version 10.0.10240.0 der universellen Windows-Plattform installiert.
 
-     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Öffnen Sie den Ordner, um die installierten Versionen anzuzeigen.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      Es kann mehr als eine Version der universellen Windows-Plattform installiert sein. Es wird empfohlen, dass Sie die neueste Version für Ihre App verwenden.
 
 2. Öffnen Sie die Projektmappe, die die universelle C++-Windows-App enthält. Klicken Sie mit der rechten Maustaste auf die VCXPROJ-Datei des Projekts, und wählen Sie die Option zum Entladen der Projektdatei. Nachdem das Projekt entladen wurde, klicken Sie mit der rechten Maustaste erneut auf die Projektdatei, und wählen Sie die Option zum Bearbeiten.
 
-     ![Unload the project, then edit the project file](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")
+     ![Entladen Sie das Projekt, und bearbeiten Sie dann die Projektdatei.](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")
 
-3. Find any \<PropertyGroup> elements that do not contain a Condition attribute but do contain an \<ApplicationTypeRevision> element. Aktualisieren Sie den Wert für „ApplicationTypeRevision“ von „8.2“ auf „10.0“. Add a \<WindowsTargetPlatformVersion> and a \<WindowsTargetPlatformMinVersion> element and set their values to be the value of the Universal Windows Platform version that you installed.
+3. Suchen Sie \<PropertyGroup-> Elemente, die kein Condition-Attribut enthalten, aber ein \<applicationtyperevision-> Element enthalten. Aktualisieren Sie den Wert für „ApplicationTypeRevision“ von „8.2“ auf „10.0“. Fügen Sie eine \<windowstargetplatformversion-> und ein \<windowstargetplatformminversion-> Element hinzu, und legen Sie deren Werte auf den Wert der universelle Windows-Plattform Version fest, die Sie installiert haben.
 
-     Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to true if the element does not already exist.
+     Fügen Sie ein \<enabledotnetnativecompatibleprofile-> Element hinzu, und legen Sie dessen Wert auf true fest, wenn das Element nicht bereits vorhanden ist.
 
-     Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
+     Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Projekte, die mit Visual Studio 2015 RC erstellt wurden, enthalten Ressourcen, die auf 100 skaliert sind. Sie müssen der PropertyGroup ein \<uapdefaultassetscale-> Element mit dem Wert 100 hinzufügen. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).
 
-     So this \<PropertyGroup> element will now be similar to this:
+     Dieses \<PropertyGroup-> Element sieht nun etwa wie folgt aus:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -779,7 +779,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-4. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
+4. Überprüfen Sie für jedes verbleibende \<PropertyGroup-> Element, ob das Element über ein Condition-Attribut mit einer Releasekonfiguration verfügt. Wenn dies der Fall ist, aber keine \<usedotnetnativetoolchain >-Element enthalten ist, fügen Sie eine hinzu. Legen Sie den Wert für das \<usedotnetnativetoolchain >-Element wie folgt auf true fest:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -792,7 +792,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-5. You need to update the \<EnableDotNetNativeCompatibleProfile> element and the \<UseDotNetNativeToolchain> element to enable .NET Native, but .NET Native is not enabled in the C++ templates.
+5. Sie müssen das \<enabledotnetnativecompatibleprofile-> Element und das \<usedotnetnativetoolchain-> Element aktualisieren, um .net Native zu aktivieren. .net Native ist in den C++ Vorlagen jedoch nicht aktiviert.
 
      Speichern Sie die Änderungen. Schließen Sie dann die Projektdatei.
 
@@ -800,7 +800,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
 7. Öffnen Sie die Datei „Package.appxmanifest“ im Projektmappen-Explorer.
 
-    1. Find the \<TargetDeviceFamily> element. Ändern Sie die zugehörigen Attribute „MinVersion“ und „MaxVersionTested“ auf die installierte Version der universellen Windows-Plattform. Und zwar so:
+    1. Suchen Sie nach dem \<targetdevicefamily-> Element. Ändern Sie die zugehörigen Attribute „MinVersion“ und „MaxVersionTested“ auf die installierte Version der universellen Windows-Plattform. Und zwar so:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -812,16 +812,16 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
          Wenn Sie über Komponententestprojekte für Ihre universellen Windows-Apps verfügen, müssen Sie zudem die [diese Schritte](#MigrateUnitTest)befolgen.
 
-## <a name="MigrateUnitTest"></a> Changes required for existing unit test projects for Universal Windows apps created with Visual Studio 2015 RC
+## <a name="MigrateUnitTest"></a>Erforderliche Änderungen für vorhandene Komponenten Testprojekte für universelle Windows-apps, die mit Visual Studio 2015 RC erstellt wurden
  Wenn Sie Komponententestprojekte für universelle Windows 10-Apps mit Visual Studio 2015 RC erstellt haben, müssen Sie diese zusätzlichen Änderungen an Ihren Projektdateien vornehmen, um diese Testprojekte mit der neuesten Version von Visual Studio 2015 verwenden zu können. Die erforderlichen Änderungen unterscheiden sich abhängig von der Sprache, die Sie zum Erstellen der App verwendet haben:
 
-- [C#/VB apps](#UnitTestRCUpdate10CSharp)
+- [C#/VB-apps](#UnitTestRCUpdate10CSharp)
 
-- [C++ apps](#UnitTestRCUpdate10CPlusPlus)
+- [C++war](#UnitTestRCUpdate10CPlusPlus)
 
-### <a name="UnitTestRCUpdate10CSharp"></a> Update your C#/VB unit test projects
+### <a name="UnitTestRCUpdate10CSharp"></a>Aktualisieren Ihrer C#/VB-Komponenten Testprojekte
 
-1. Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihr C#-/VB-Komponententestprojekt enthält. Change the value of the \<OuttputType> element to: AppContainerExe.
+1. Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihr C#-/VB-Komponententestprojekt enthält. Ändern Sie den Wert des \<outtputtype >-Elements in: appcontainerexe.
 
    ```xml
 
@@ -829,7 +829,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-2. Replace this element \<EnableCoreRuntime>false\</EnableCoreRuntime> with the following element:
+2. Ersetzen Sie dieses Element \<enablecoreruntime-> false\</EnableCoreRuntime-> durch das folgende Element:
 
    ```xml
 
@@ -867,7 +867,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-4. Add this element \<UseDotNetNativeToolchain>true\</UseDotNetNativeToolchain> as a child element to these property groups:
+4. Fügen Sie dieses Element \<usedotnetnativetoolchain > true\</UseDotNetNativeToolchain-> als untergeordnetes Element zu diesen Eigenschaften Gruppen hinzu:
 
    ```xml
 
@@ -877,7 +877,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    ```
 
-5. Delete the following \<ItemGroup> elements:
+5. Löschen Sie die folgenden \<ItemGroup-> Elemente:
 
    ```xml
 
@@ -992,7 +992,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
    Sie können nun die Komponententests ausführen.
 
-### <a name="UnitTestRCUpdate10CPlusPlus"></a> Update your C++ projects to use the latest Universal Windows Platform
+### <a name="UnitTestRCUpdate10CPlusPlus"></a>Aktualisieren Sie C++ Ihre Projekte, sodass Sie die neuesten universelle Windows-Plattform
 
 1. Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihr C++-Komponententestprojekt enthält. Entfernen Sie das folgenden Elemente:
 
@@ -1005,7 +1005,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-2. Add the following \<ProjectConfiguration> elements below this element \<ItemGroup Label="ProjectConfigurations"> if they are not already in this fille:
+2. Fügen Sie die folgenden \<ProjectConfiguration-> Elemente unterhalb dieses Elements hinzu \<ItemGroup Label = "projectkonfigurationen" >, wenn Sie sich nicht bereits in diesem Filter befinden:
 
     ```xml
 
@@ -1036,7 +1036,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-4. Add these \<PropertyGroup> elements if they are not already in the file:
+4. Fügen Sie diese \<PropertyGroup-> Elemente hinzu, wenn Sie noch nicht in der Datei vorhanden sind:
 
     ```xml
 
@@ -1086,7 +1086,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-7. Add these \<ItemDefinitionGroup> elements in the section that already contains other \<ItemDefinitionGroup> elements:
+7. Fügen Sie diese \<ItemDefinitionGroup > Elemente in dem Abschnitt hinzu, der bereits weitere \<ItemDefinitionGroup-> Elemente enthält:
 
     ```xml
 
@@ -1113,7 +1113,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-8. Delete the following \< ItemGroup> element:
+8. Löschen Sie die folgenden \< ItemGroup-> Element:
 
     ```xml
 
@@ -1127,7 +1127,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-     Replace it with this \<ItemGroup> element:
+     Ersetzen Sie diese \<ItemGroup-> Element:
 
     ```xml
 
@@ -1143,7 +1143,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
 
     ```
 
-9. Delete the following \< ItemGroup> element:
+9. Löschen Sie die folgenden \< ItemGroup-> Element:
 
     ```xml
 
@@ -1152,7 +1152,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
     </ItemGroup>
     ```
 
-     Replace it with these \<ItemGroup> elements:
+     Ersetzen Sie Sie durch diese \<ItemGroup > Elemente:
 
     ```xml
 
@@ -1176,7 +1176,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
     <ClCompile Include="UnitTest.cpp"/>
     ```
 
-     Replace it with these \<CICompile> elements:
+     Ersetzen Sie Sie durch diese \<cicompile-> Elemente:
 
     ```xml
 

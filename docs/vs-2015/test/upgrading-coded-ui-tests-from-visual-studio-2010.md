@@ -1,5 +1,5 @@
 ---
-title: Upgrading Coded UI Tests
+title: Aktualisieren von Tests der programmierten UI
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -64,4 +64,4 @@ Tests der programmierten UI enthaltende Testprojekte, die in [!INCLUDE[vs_dev10_
 - **Auslastungstest:** Wenn Sie einen Auslastungstest zusammen mit einem Netzwerktyp ausführen, der nicht dem LAN-Profil auf einem Computer unter Windows 8 entspricht, führt der Netzwerkemulatortreiber dazu, dass das Betriebssystem abstürzt. Weitere Informationen finden Sie unter [KB-Artikel 2736182](https://support.microsoft.com/help/2736182/a-gdr-update-for-visual-studio-2010-sp1-is-available-to-add-compatibil).
 
 ## <a name="see-also"></a>Siehe auch
- [Porting, Migrating, and Upgrading Visual Studio Projects](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Upgrading Tests from Earlier Versions of Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Generating a Coded UI Test from an Existing Action Recording](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Portieren, migrieren und Aktualisieren von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Aktualisieren von Tests aus früheren Versionen von Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Verwenden von Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md) erzeugen eines Tests der programmierten [UI aus einer vorhandenen Aktion aufzeichnen von](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [unterstützten Konfigurationen und Plattformen für Tests](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) der programmierten UI und Aktions Aufzeichnungen

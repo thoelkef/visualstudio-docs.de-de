@@ -1,5 +1,5 @@
 ---
-title: 'How to: Install a Visualizer | Microsoft Docs'
+title: 'Gewusst wie: Installieren einer Schnellansicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,35 +28,35 @@ ms.locfileid: "74491305"
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.
 
 > [!NOTE]
-> In UWP apps, only the standard text, HTML, XML, and JSON visualizers are supported. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.
+> In UWP-apps werden nur die standardmäßigen Text-, HTML-, XML-und JSON-Visualisierungen unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.
 
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>To install a visualizer for Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>So installieren Sie eine Schnellansicht für Visual Studio 2019
   
 1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
 
-2. Copy the [Debugger Side](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL to either of the following locations:
+2. Kopieren Sie die [Debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) -dll an einen der folgenden Speicherorte:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copy the [Debuggee Side](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) DLL to either of the following locations:
+3. Kopieren Sie die zu [debuggende Seite](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) an einen der folgenden Speicherorte:
 
-    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
+    - *Visualstudioinstallpath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
-    - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
+    - `My Documents\` *visualstudioversion* `\Visualizers\` *Framework*
 
-    Where *Framework* is either:
-    - `net2.0` for debuggees running the `.NET Framework` runtime.
-    - `netstandard2.0` for debuggees using a runtime that supports `netstandard 2.0` (`.NET Framework v4.6.1+` or `.NET Core 2.0+`).
-    - `netcoreapp` for debuggees running the `.NET Core` runtime. (supports `.NET Core 2.0+`)
+    Dabei ist *Framework* beides:
+    - `net2.0` für die, die die `.NET Framework`-Laufzeit ausführen.
+    - `netstandard2.0` für Debug-Ausdrücke mit einer Laufzeit, die `netstandard 2.0` (`.NET Framework v4.6.1+` oder `.NET Core 2.0+`) unterstützt.
+    - `netcoreapp` für die, die die `.NET Core`-Laufzeit ausführen. (unterstützt `.NET Core 2.0+`)
 
 4. Starten Sie die Debugsitzung neu.
 
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>To install a visualizer for Visual Studio 2017 and older
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>So installieren Sie eine Schnellansicht für Visual Studio 2017 und ältere
 
 > [!IMPORTANT]
-> Only .NET Framework visualizers are supported in Visual Studio 2017 and older
+> Nur .NET Framework Visualisierungen werden in Visual Studio 2017 und älter unterstützt.
 
 1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
 

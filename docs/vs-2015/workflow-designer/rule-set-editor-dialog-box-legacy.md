@@ -1,5 +1,5 @@
 ---
-title: Rule Set Editor Dialog Box (Legacy) | Microsoft Docs
+title: Dialog Feld "Regelsatz-Editor" (Legacy) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -21,74 +21,74 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302754"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
-This topic describes how use the **Rule Set Editor** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelsatz-Editor** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)]verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
- The **Rule Set Editor** dialog box is used to create and modify [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) rule sets, which are serialized to a .rules file.
+ Das Dialogfeld **Regelsatz-Editor** wird verwendet, um [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) -Regelsätze zu erstellen und zu ändern, die in eine rules-Datei serialisiert werden.
 
 > [!NOTE]
-> If you want to open the .rules file with the **XML Editor with encoding**, you must first close the associated designer window for the workflow or activity.
+> Wenn Sie die rules-Datei mit dem **XML-Editor mit Codierung**öffnen möchten, müssen Sie zunächst das zugehörige Designer Fenster für den Workflow oder die Aktivität schließen.
 
- For information about how to access the **Rule Set Editor** dialog box, see [How to: Create a PolicyActivity Rule Set (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ Weitere Informationen zum Zugreifen auf das Dialogfeld **Regelsatz-Editor** finden Sie unter Vorgehens [Weise: Erstellen eines PolicyActivity-Regelsatzes (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
 > Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../includes/wfd2-md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.
 
- The following table describes the user interface (UI) elements of the **Rule Set Editor** dialog box.
+ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Regelsatz-Editor** beschrieben.
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|
-|**Add Rule**|Fügt dem Regelsatz eine neue Regeldefinition hinzu.|
+|**Regel hinzufügen**|Fügt dem Regelsatz eine neue Regeldefinition hinzu.|
 |**Löschen**|Löscht die ausgewählte Regel aus dem Regelsatz.|
-|**Chaining**|Gibt an, welcher Vorwärtsverkettungstyp mit dem Regelsatz verwendet werden soll. Die folgenden Optionen sind verfügbar:<br /><br /> -   **Full Chaining**, which specifies to use all forward chaining mechanisms: implicit, method attributing, and explicit using an **Update** function.<br />-   **Sequential**, which specifies not to use any forward chaining.<br />-   **Explicit Update Only**, which specifies to only perform forward chaining on **Update** actions.<br /><br /> For more information about forward chaining, see [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004).|
+|**Verkettung**|Gibt an, welcher Vorwärtsverkettungstyp mit dem Regelsatz verwendet werden soll. Die folgenden Optionen sind verfügbar:<br /><br /> -   **vollständige Verkettung**, die angibt, dass alle vorwärts Verkettungs Mechanismen verwendet werden sollen: implizit, Methoden Zuweisung und explizite Verwendung einer **Update** -Funktion.<br />-   **sequenziell**, das angibt, dass keine vorwärts Verkettung verwendet werden soll.<br />-   **explizites Update**, das angibt, dass für **Aktualisierungs** Aktionen nur eine vorwärts Verkettung durchgeführt werden soll.<br /><br /> Weitere Informationen zur vorwärts Verkettung finden Sie unter [Verwenden der PolicyActivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65004).|
 |**Name**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Namen zu sortieren.|
-|**Priority**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Priorität zu sortieren.|
-|**Reevaluation**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Typ der erneuten Auswertung zu sortieren.|
-|**Rule Preview**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach der Vorschau der Bedingung und Aktionen einer Regel zu sortieren.|
+|**Haben**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Priorität zu sortieren.|
+|**Erneute Bewertung**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Typ der erneuten Auswertung zu sortieren.|
+|**Regel Vorschau**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach der Vorschau der Bedingung und Aktionen einer Regel zu sortieren.|
 |**Name:**|Geben Sie den Namen der Regel ein.|
-|**Priority:**|Geben Sie eine Priorität für die Regel ein. Die Standardpriorität ist 0.|
-|**Reevaluation:**|Gibt an, welcher erneute Auswertungstyp mit der Regel verwendet werden soll. Die folgenden Optionen sind verfügbar:<br /><br /> -   **Always**, which causes the rule to be reevaluated as needed.<br />-   **Never**, which causes the rule to never be reevaluated. In diesem Fall wird eine Regel nur einmal ausgeführt.|
+|**Haben**|Geben Sie eine Priorität für die Regel ein. Die Standardpriorität ist 0.|
+|**Erneute Bewertung**|Gibt an, welcher erneute Auswertungstyp mit der Regel verwendet werden soll. Die folgenden Optionen sind verfügbar:<br /><br /> -   **immer**, was bewirkt, dass die Regel bei Bedarf neu ausgewertet wird.<br />-   **nie**, was bewirkt, dass die Regel nie erneut ausgewertet wird. In diesem Fall wird eine Regel nur einmal ausgeführt.|
 |**Active**|Aktivieren, damit die Regel aktiv wird.|
-|**Condition:**|Geben Sie einen Ausdruck für die Regelbedingung ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|
-|**Then Actions:**|Geben Sie einen Ausdruck für Then-Aktionen ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|
-|**Else Actions:**|Geben Sie einen Ausdruck für Else-Aktionen ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|
-|**OK**|Klicken Sie, um den Regelsatz in einer .rules-Datei zu speichern.|
+|**Anlage**|Geben Sie einen Ausdruck für die Regelbedingung ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|
+|**Aktionen ausführen:**|Geben Sie einen Ausdruck für Then-Aktionen ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|
+|**Else-Aktionen:**|Geben Sie einen Ausdruck für Else-Aktionen ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|
+|**Okay**|Klicken Sie, um den Regelsatz in einer .rules-Datei zu speichern.|
 
- For more information about rule sets, see [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004).
+ Weitere Informationen zu Regelsätzen finden Sie unter [Verwenden der PolicyActivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65004).
 
 ## <a name="entering-condition-and-action-expressions"></a>Eingeben von Bedingungs- und Aktionsausdrücken
- You enter expressions for the Condition and the Then and Else actions as text in their respective text boxes in the **Rule Set Editor** dialog box. You can type **this.** into the editor to reference fields, properties and methods used in the workflow, using an IntelliSense-type of menu. Alternativ können Sie einen Workflowmembernamen auch direkt eingeben. Sie können statische Methoden für Typen, auf die verwiesen wird, aufrufen, indem Sie den Klassennamen gefolgt vom Methodennamen eingeben.
+ Sie geben Ausdrücke für die Bedingung und die then-und Else-Aktionen als Text in die entsprechenden Textfelder im Dialogfeld **Regelsatz-Editor** ein. Sie können **diese eingeben.** , um im Editor auf Felder, Eigenschaften und Methoden zu verweisen, die im Workflow verwendet werden. verwenden Sie dazu den Menübefehl IntelliSense. Alternativ können Sie einen Workflowmembernamen auch direkt eingeben. Sie können statische Methoden für Typen, auf die verwiesen wird, aufrufen, indem Sie den Klassennamen gefolgt vom Methodennamen eingeben.
 
- Sie können logische Operatoren, wie z. B. UND, ODER und NICHT, zur Bedingung hinzufügen. Sie können auch Prädikate hinzufügen. Ein Prädikat besteht aus einem binären Operator und zwei Operanden. The binary operators supported are ==, >, \<, >=, and <=. Unterstützte Operanden sind konstanter Wert, arithmetische Funktion und geschützte öffentliche Member.
+ Sie können logische Operatoren, wie z. B. UND, ODER und NICHT, zur Bedingung hinzufügen. Sie können auch Prädikate hinzufügen. Ein Prädikat besteht aus einem binären Operator und zwei Operanden. Die unterstützten binären Operatoren sind = =, > \<, > = und < =. Unterstützte Operanden sind konstanter Wert, arithmetische Funktion und geschützte öffentliche Member.
 
- You can specify the type for the comparison, and you can compare to **null** or an empty string. Sie können Aufrufe von Membern in einer Variable schachteln, die einen komplexen Typ enthält, wie z. B. `this.Address.State == "WA"`.
+ Sie können den Typ für den Vergleich angeben, und Sie können mit **null** oder einer leeren Zeichenfolge vergleichen. Sie können Aufrufe von Membern in einer Variable schachteln, die einen komplexen Typ enthält, wie z. B. `this.Address.State == "WA"`.
 
  Ausdrücke unterstützen die folgenden Operatoren:
 
 - Relationale Operatoren: ==, =, !=
 
-- Comparison operators: <, \<=, >, >=
+- Vergleichs Operatoren: <, \<=, >, > =
 
 - Arithmetische Operatoren: +, - , *, /, MOD
 
-- Logical operators: AND, &&, OR, &#124;&#124;, NOT, !
+- Logische Operatoren: and, & & oder, &#124; &#124;, not,!
 
-- Bitwise operators: &, &#124;
+- Bitweise Operatoren: &&#124;
 
   Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.
 
-  For more information about conditions, see [Using Conditions in Workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).
+  Weitere Informationen zu Bedingungen finden Sie unter [Verwenden von Bedingungen in Workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).
 
 ### <a name="halt-and-update-functions"></a>Halt-Funktion und Update-Funktion
- **Then Actions:** and **Else Actions:** expressions support **Halt** and **Update** functions. To use the **Halt** function, type **Halt** into a **Then Action:** or **Else Action:** text box. The **Halt** action causes rule set execution to stop immediately, and control returns to the calling code. You use the **Update** function with forward chaining.
+ **Aktionen:** und **Else-Aktionen:** -Ausdrücke unterstützen **Halt** -und **Update** -Funktionen. Wenn Sie die **Halt** -Funktion verwenden möchten, geben Sie **Halt** in ein **Then Action:** -oder **else Action:** Textfeld ein. Die **Halt** -Aktion bewirkt, dass die Ausführung der Regelsätze sofort beendet wird und die Steuerung an den aufrufenden Code zurückgegeben wird. Sie verwenden die **Update** -Funktion mit vorwärts Verkettung.
 
- An **Update** statement can be expressed in the editor in one of two forms; both forms are shown in the following example:
+ Eine **Update** -Anweisung kann im Editor in einer von zwei Formen ausgedrückt werden. beide Formen werden im folgenden Beispiel gezeigt:
 
 ```
 Update(this.Address.State)
 Update("this/Address/State")
 ```
 
- For more information about using **Update** with forward chaining, see [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004).
+ Weitere Informationen zur Verwendung von **Update** mit vorwärts Verkettung finden Sie unter [Verwenden der PolicyActivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65004).
 
 ## <a name="see-also"></a>Siehe auch
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Select Rule Set Dialog Box (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) - [Dialog Feld "Regelsatz auswählen" (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [mithilfe der PolicyActivity-Aktivität unter](https://go.microsoft.com/fwlink?LinkID=65004) [Verwendung von Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)

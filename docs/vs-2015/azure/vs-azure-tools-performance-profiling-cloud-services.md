@@ -74,38 +74,38 @@ Basierend auf den Leistungsproblemen, die Sie untersuchen möchten, können Sie 
 * Sie können auch die **Profilerstellung für Ebeneninteraktion**aktivieren, die zusätzliche Informationen zu den Ausführungszeiten synchroner ADO.NET-Aufrufe in Funktionen von Anwendungen mit mehreren Ebenen bereitstellt, die mit einer oder mehreren Datenbanken kommunizieren. Sie können Ebeneninteraktionsdaten mit einer der folgenden Profilerstellungsmethoden erfassen. Weitere Informationen zur Profilerstellung für Ebeneninteraktionen finden Sie unter [Ansicht "Ebeneninteraktionen"](https://msdn.microsoft.com/library/azure/dd557764.aspx).
 
 ## <a name="configuring-profiling-settings"></a>Konfigurieren von Profilerstellungseinstellungen
-Die folgende Abbildung zeigt, wie Sie die Profilerstellungseinstellungen im Dialogfeld "Azure-Anwendung veröffentlichen" konfigurieren.
+Die folgende Abbildung veranschaulicht, wie Profilerstellungseinstellungen im Dialogfeld Azure-Anwendung veröffentlichen konfiguriert werden.
 
-![Profilerstellungseinstellungen konfigurieren](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
+![Konfigurieren von Profilerstellungseinstellungen](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> Um das Kontrollkästchen **Profilerstellung aktivieren** zu aktivieren, muss der Profiler auf dem lokalen Computer installiert sein, mit dem Sie den Clouddienst veröffentlichen. Der Profiler wird standardmäßig installiert, wenn Sie Visual Studio Ultimate oder Visual Studio Premium installieren.
+> Um das Kontrollkästchen **Profilerstellung aktivieren** zu aktivieren, muss der Profiler auf dem lokalen Computer installiert sein, mit dem Sie den Cloud-Dienst veröffentlichen. Der Profiler wird standardmäßig installiert, wenn Sie Visual Studio Ultimate oder Visual Studio Premium installieren.
 > 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>So konfigurieren Sie Profilerstellungseinstellungen
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und wählen Sie anschließend **Veröffentlichen**aus. Detaillierte Informationen zum Veröffentlichen eines Clouddiensts finden Sie unter [Veröffentlichen eines Clouddiensts mit den Azure-Tools](https://go.microsoft.com/fwlink/p?LinkId=623012).
-2. Wählen Sie im Dialogfeld **Azure-Anwendung veröffentlichen** die Registerkarte **Erweiterte Einstellungen** aus.
-3. Aktivieren Sie zum Aktivieren der Profilerstellung das Kontrollkästchen **Profilerstellung aktivieren** .
-4. Zum Konfigurieren der Profilerstellungseinstellungen wählen Sie den Hyperlink **Einstellungen** aus. Das Dialogfeld "Profilerstellungseinstellungen" wird angezeigt.
+2. Wählen Sie im Dialogfeld **Veröffentlichen der Azure-Anwendung** die Registerkarte **Erweiterte Einstellungen**.
+3. Um die Profilerstellung zu aktivieren, aktivieren Sie das Kontrollkästchen **Profilerstellung aktivieren**.
+4. Um Ihre Profilerstellungseinstellungen zu konfigurieren, klicken Sie auf den Hyperlink **Einstellungen**. Das Dialogfeld Profilerstellungseinstellungen wird angezeigt.
 5. Wählen Sie aus den Optionsschaltflächen unter **Welche Profilerstellungsmethode möchten Sie verwenden?** die gewünschte Profilerstellungsmethode aus.
-6. Um die Profilerstellungsdaten für die Ebeneninteraktion zu erfassen, aktivieren Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** .
-7. Wählen Sie die Schaltfläche **OK** , um die Einstellungen zu speichern.
+6. Aktivieren Sie zum Erfassen der Profilerstellungsdaten für Ebeneninteraktion das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren**.
+7. Um die Einstellungen zu speichern, wählen Sie **OK**.
    
     Wenn Sie diese Anwendung veröffentlichen, werden diese Einstellungen verwendet, um die Profilerstellungssitzung für jede Rolle zu erstellen.
 
 ## <a name="viewing-profiling-reports"></a>Anzeigen von Profilerstellungsberichten
-Für jede Instanz einer Rolle in Ihrem Clouddienst wird eine Profilerstellungssitzung erstellt. Um die Profilerstellungsberichte zu jeder Sitzung in Visual Studio anzuzeigen, können Sie das Server-Explorer-Fenster anzeigen und den Azure-Computeknoten auswählen, um die Instanz einer Rolle auszuwählen. Danach können Sie den Profilerstellungsbericht anzeigen, wie in der folgenden Abbildung veranschaulicht.
+Für jede Instanz einer Rolle in Ihrem Clouddienst wird eine Profilerstellungssitzung erstellt. Zum Anzeigen Ihrer Profilerstellungsberichte jeder Sitzung in Visual Studio können Sie das Fenster Server-Explorer anzeigen und dann den Knoten Azure Compute auswählen, um eine Instanz einer Rolle auszuwählen. Danach können Sie den Profilerstellungsbericht anzeigen, wie in der folgenden Abbildung veranschaulicht.
 
-![Anzeigen von Profilerstellungsberichten in Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
+![Anzeigen des Profilerstellungsberichts aus Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
 
 ### <a name="to-view-profiling-reports"></a>So zeigen Sie Profilerstellungsberichte an
-1. Wählen Sie zum Anzeigen des Server-Explorer-Fensters in Visual Studio in der Menüleiste nacheinander die Optionen "Ansicht" und "Server-Explorer".
-2. Wählen Sie den Azure-Computeknoten und anschließend den Azure-Bereitstellungsknoten für den Clouddienst aus, den Sie bei der Veröffentlichung aus Visual Studio für die Profilerstellung ausgewählt haben.
-3. Wählen Sie die Rolle im Dienst aus, öffnen Sie dann das Kontextmenü für eine bestimmte Instanz, und wählen Sie **Profilerstellungsbericht anzeigen**aus, um Profilerstellungsberichte für eine Instanz anzuzeigen.
+1. Wählen Sie zum Anzeigen des Fensters Server-Explorer in Visual Studio in der Menüleiste Ansicht, Server-Explorer.
+2. Wählen Sie den Knoten Azure Compute und dann den Azure-Bereitstellungsknoten für den Cloud-Dienst aus, den Sie zur Profilerstellung bei der Veröffentlichung aus Visual Studio ausgewählt haben.
+3. Wählen Sie die Rolle im Dienst aus, öffnen Sie dann das Kontextmenü für eine bestimmte Instanz, und wählen Sie **Profilerstellungsbericht anzeigen** aus, um Profilerstellungsberichte für eine Instanz anzuzeigen.
    
     Der Bericht (eine VSP-Datei) wird nun aus Azure heruntergeladen, und der Status des Downloads wird im Azure-Aktivitätsprotokoll angezeigt. Wenn der Download abgeschlossen ist, wird der Profilerstellungsbericht auf einer Registerkarte im Editor für Visual Studio unter der Bezeichnung „\> *<Instanznummer\>* <Bezeichner\>.vsp“ angezeigt. Es werden Übersichtsdaten für den Bericht angezeigt.
-4. Um verschiedene Ansichten des Berichts anzuzeigen, wählen Sie in der Liste der aktuellen Ansichten die gewünschte Ansicht aus. Weitere Informationen finden Sie unter [Berichtsansichten für Profilerstellungstools](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Zum Anzeigen verschiedener Ansichten des Berichts wählen Sie in der Liste Aktuelle Ansicht den gewünschten Ansichtstyp aus. Weitere Informationen finden Sie unter [Berichtsansichten für Profilerstellungstools](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Debuggen von Cloud-Diensten.](vs-azure-tools-debugging-cloud-services-overview.md)

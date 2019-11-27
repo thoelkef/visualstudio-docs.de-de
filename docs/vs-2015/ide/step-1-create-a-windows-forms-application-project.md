@@ -21,13 +21,13 @@ ms.locfileid: "74295783"
 
 Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows Forms-Anwendungsprojekt.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>So erstellen Sie ein Windows Forms-Anwendungsprojekt
 
-1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus. Das Dialogfeld sollte wie folgt aussehen.
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus. Das Dialogfeld sollte wie folgt aussehen.
 
-     ![New project dialog](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") New project dialog box
+     ![Dialogfeld für neues Projekt](../ide/media/newprojectdialogcallouts.png "Neuesprojektdialogfeldlegende") Dialogfeld "Neues Projekt"
 
 2. Wählen Sie in der Liste **Installierte Vorlagen** entweder **Visual C#** oder **Visual Basic** aus.
 
@@ -40,7 +40,7 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
     > [!NOTE]
     > Ihr Fensterlayout weicht möglicherweise von dieser Abbildung ab. Das genaue Fensterlayout hängt von der Version von Visual Studio, der verwendeten Programmiersprache und von anderen Faktoren ab. Sie sollten jedoch sicherstellen, dass alle drei Fenster angezeigt werden.
 
-     ![IDE window](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE window
+     ![IDE-Fenster](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE-Fenster
 
      Die Oberfläche enthält drei Fenster: ein Hauptfenster, den **Projektmappen-Explorer** und das Fenster **Eigenschaften**.
 
@@ -61,7 +61,7 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
 
      Wählen Sie alternativ die Schaltfläche **Alle speichern** auf der Symbolleiste aus, die in der folgenden Abbildung dargestellt ist.
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All toolbar button
+     ![Schaltfläche "Alle speichern](../ide/media/express-iconsaveall.png "Express_IconSaveAll") " Schaltfläche "Alle speichern"
 
      Visual Studio fügt automatisch den Ordnernamen und den Projektnamen ein und speichert das Projekt dann im Projektordner.
 

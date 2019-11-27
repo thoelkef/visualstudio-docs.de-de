@@ -1,5 +1,5 @@
 ---
-title: 'How to: Respond to Changes in a UML Model | Microsoft Docs'
+title: 'Gewusst wie: reagieren auf Änderungen in einem UML-Modell | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -23,4 +23,4 @@ Es ist möglich, Code zu schreiben, der ausgeführt wird, wenn eine Änderung an
 > Diese Techniken werden von der UML-API nicht unterstützt. Sie funktionieren in zukünftigen Versionen von Visual Studio möglicherweise nicht.
 
 ## <a name="see-also"></a>Siehe auch
- [Navigate the UML model](../modeling/navigate-the-uml-model.md) [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md) [Sample: Color by Stereotype](https://go.microsoft.com/fwlink/?LinkId=213841)
+ [Navigieren in den UML-Modell](../modeling/navigate-the-uml-model.md) [Ereignis Handlern weitergeben von Änderungen außerhalb des Modell](../modeling/event-handlers-propagate-changes-outside-the-model.md) Beispiels [: Color by Stereotyp](https://go.microsoft.com/fwlink/?LinkId=213841)

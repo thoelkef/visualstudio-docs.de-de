@@ -23,11 +23,11 @@ ms.locfileid: "74301104"
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0018|  
-|Category|Profiling Tools Usage|  
-|Profiling method|Sampling|  
-|Message|Managed memory allocations approaching the default limit for a 32-bit process. Die Anwendung ist möglicherweise speichergebunden.|  
-|Rule type|Warning|  
+Regel-ID | DA0018 |  
+| Kategorie | Profilerstellungstools Verwendung |  
+| Profil Erstellungs Methode | Stichprobenentnahme |  
+| Meldung | Verwaltete Speicher Belegungen nähern sich dem Standard Limit für einen 32-Bit-Prozess an. Die Anwendung ist möglicherweise speichergebunden.|  
+| Regeltyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   
@@ -54,7 +54,7 @@ Rule Id|DA0018|
   
 - Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.  
   
-   - oder -  
+   \- oder -  
   
 - Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.  
   

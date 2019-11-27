@@ -1,5 +1,5 @@
 ---
-title: Samples | Microsoft Docs
+title: Beispiele | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,7 +18,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74296851"
 ---
-# <a name="visual-studio-samples"></a>Visual Studio-Beispiele
+# <a name="visual-studio-samples"></a>Visual Studio-Beispiele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio-Beispiele sind auf der Website [MSDN Code Gallery](https://go.microsoft.com/fwlink/?LinkID=127810) zu finden.
@@ -28,7 +28,7 @@ Visual Studio-Beispiele sind auf der Website [MSDN Code Gallery](https://go.micr
 ## <a name="finding-samples"></a>Suchen von Beispielen
  Sie können auch an folgenden Stellen nach Beispielen suchen.
 
-|Bereich|Beschreibung|
+|Fläche|Beschreibung|
 |----------|-----------------|
 |[Windows Developer Center – Beispiele](https://go.microsoft.com/fwlink/?LinkID=255278)|Zeigt, wie [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps entwickelt werden.|
 |[.NET Framework-Beispiele](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Verschiedene Aspekte von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in C# und Visual Basic.|

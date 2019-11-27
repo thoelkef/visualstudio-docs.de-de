@@ -112,4 +112,4 @@ Der Visual Studio-Emulator für Android ist eine Desktopanwendung, die ein Andro
   
 ## <a name="see-also"></a>Siehe auch  
  [Systemanforderungen für den Visual Studio-Emulator für Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Fehlerbehebung beim Visual Studio-Emulator für Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

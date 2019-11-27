@@ -1,5 +1,5 @@
 ---
-title: Writing a T4 Text Template | Microsoft Docs
+title: Schreiben einer T4-Text Vorlage | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,19 +23,19 @@ ms.locfileid: "74301118"
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eine Textvorlage enthält den Text, der aus ihr generiert wird. For example, a template that creates a web page will contain "\<html>…" and all the other standard parts of an HTML page. Inserted into the template are *control blocks*, which are fragments of program code. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
+Eine Textvorlage enthält den Text, der aus ihr generiert wird. Eine Vorlage, die eine Webseite erstellt, enthält z. b. "\<HTML->..." und alle anderen Standardteile einer HTML-Seite. In die Vorlage eingefügt werden *Kontroll Blöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
 
  Diese Struktur vereinfacht das Entwickeln einer Vorlage, da Sie mit einem Prototyp der generierten Datei beginnen und nach und nach Kontrollblöcke zum Verändern des Ergebnisses einfügen können.
 
  Textvorlagen bestehen aus den folgenden Teilen:
 
-- **Directives** - elements that control how the template is processed.
+- **Direktiven** -Elemente, die Steuern, wie die Vorlage verarbeitet wird.
 
-- **Text blocks** - content that is copied directly to the output.
+- **Text Blöcke** -Inhalt, der direkt in die Ausgabe kopiert wird.
 
-- **Control blocks** - program code that inserts variable values into the text, and controls conditional or repeated parts of the text.
+- **Steuerungsblöcke** : Programmcode, der Variablen Werte in den Text einfügt und bedingte oder wiederholte Teile des Texts steuert.
 
-  To try the examples in this topic, copy them into a template file as described in [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md). After editing the template file, save it, and then inspect the output **.txt** file.
+  Um die Beispiele in diesem Thema zu testen, kopieren Sie Sie in eine Vorlagen Datei, wie unter [Entwurfszeit Code Generierung mithilfe von T4-Text Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)beschrieben. Nachdem Sie die Vorlagen Datei bearbeitet haben, speichern Sie Sie, und überprüfen Sie dann die Datei Output **. txt** .
 
 ## <a name="directives"></a>Anweisungen
  Textvorlagenanweisungen stellen allgemeine Anweisungen zum Generieren des Transformationscodes und der Ausgabedatei für die Textvorlagen-Engine bereit.
@@ -47,7 +47,7 @@ Eine Textvorlage enthält den Text, der aus ihr generiert wird. For example, a t
 <#@ output extension=".txt" #>
 ```
 
- For more information about directives, see [T4 Text Template Directives](../modeling/t4-text-template-directives.md).
+ Weitere Informationen zu-Direktiven finden Sie unter [T4-Text Vorlagen Direktiven](../modeling/t4-text-template-directives.md).
 
 ## <a name="text-blocks"></a>Textblöcke
  Durch einen Textblock wird Text direkt in die Ausgabedatei eingefügt. Für Textblöcke wird keine spezielle Formatierung verwendet. Die folgende Textvorlage erzeugt z. B. eine Textdatei, die das Wort "Hello" enthält:
@@ -84,7 +84,7 @@ Hello
 #> Hello!
 ```
 
- Anstatt explizite `Write()`-Anweisungen zu verwenden, können Sie Text und Code verschachteln. The following example prints "Hello!" four times:
+ Anstatt explizite `Write()`-Anweisungen zu verwenden, können Sie Text und Code verschachteln. Im folgenden Beispiel wird "Hello!" ausgegeben. viermal:
 
 ```
 <#
@@ -100,7 +100,7 @@ Hello!
  Sie können überall dort einen Textblock einfügen, wo eine `Write();`-Anweisung im Code zulässig wäre.
 
 > [!NOTE]
-> When you embed a text block within a compound statement such as a loop or conditional, always use braces {...} to contain the text block.
+> Wenn Sie einen TextBlock in einer Verbund Anweisung einbetten, z. b. eine Schleife oder eine bedingte Anweisung, verwenden Sie immer geschweifte Klammern {...} , wenn der TextBlock enthalten sein soll.
 
 ### <a name="expression-control-blocks"></a>Ausdruckskontrollblöcke
  Durch einen Ausdruckskontrollblock wird ein Ausdruck ausgewertet und in eine Zeichenfolge konvertiert. Diese Zeichenfolge wird in die Ausgabedatei eingefügt.
@@ -113,7 +113,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Notice that the opening symbol has three characters "<#=".
+ Beachten Sie, dass das öffnende Symbol drei Zeichen enthält: "< # =".
 
  Der Ausdruck kann beliebige gültige Variablen enthalten. Durch den folgenden Block werden z. B. Zeilen mit Zahlen ausgegeben:
 
@@ -130,7 +130,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Klassenfunktionskontrollblöcke
- Ein Klassenfunktionskontrollblock definiert Eigenschaften, Methoden oder anderen Code, die nicht in der Haupttransformation enthalten sein sollten. Klassenfunktionsblöcke werden häufig für Hilfsfunktionen verwendet.  Typically, class feature blocks are placed in separate files so that they can be [included](#Include) by more than one text template.
+ Ein Klassenfunktionskontrollblock definiert Eigenschaften, Methoden oder anderen Code, die nicht in der Haupttransformation enthalten sein sollten. Klassenfunktionsblöcke werden häufig für Hilfsfunktionen verwendet.  Üblicherweise werden Klassen Funktionsblöcke in separaten Dateien abgelegt, sodass Sie in mehr als eine Textvorlage [eingeschlossen](#Include) werden können.
 
  Klassenfunktionskontrollblöcke sind durch die Symbole `<#+ ... #>` begrenzt.
 
@@ -158,7 +158,7 @@ private int Square(int i)
 
  Klassenfunktionen müssen am Ende der Datei eingefügt werden, in der sie geschrieben werden. `<#@include#>` kann jedoch auch dann für eine Datei, die eine Klassenfunktion enthält, verwendet werden, wenn nach der `include`-Direktive Standardblöcke und Text eingefügt werden.
 
- For more information about control blocks, see [Text Template Control Blocks](../modeling/text-template-control-blocks.md).
+ Weitere Informationen zu Kontroll Blöcken finden Sie unter [Text Vorlagen-Kontroll Blöcke](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Klassenfunktionsblöcke können Textblöcke enthalten
  Sie können eine Methode schreiben, durch die Text generiert wird. Beispiel:
@@ -197,11 +197,11 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
 ```
 
- For a list of macros, see [Common Macros for Build Commands and Properties](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).
+ Eine Liste der Makros finden Sie unter [Allgemeine Makros für Buildbefehle und-Eigenschaften](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).
 
- The assembly directive has no effect in a [preprocessed text template](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Die Assembly-Direktive hat in einer [vorverarbeiteten Textvorlage](../modeling/run-time-text-generation-with-t4-text-templates.md)keine Auswirkung.
 
- For more information, see [T4 Assembly Directive](../modeling/t4-assembly-directive.md).
+ Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).
 
 ### <a name="namespaces"></a>Namespaces
  Die import-Anweisung entspricht der `using`-Klausel in C# bzw. der `imports`-Klausel in Visual Basic. Sie ermöglicht es Ihnen, ohne einen vollqualifizierten Namen auf Typen im Code zu verweisen:
@@ -212,44 +212,44 @@ private void WriteSquareLine(int i)
 
  Sie können beliebig viele `assembly`- und `import`-Direktiven verwenden. Diese Direktiven müssen vor Text- und Kontrollblöcken eingefügt werden.
 
- For more information, see [T4 Import Directive](../modeling/t4-import-directive.md).
+ Weitere Informationen finden Sie unter [T4 Import-Direktive](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a> Including code and text
+### <a name="Include"></a>Einschließen von Code und Text
  Die `include`-Anweisung fügt Text aus einer anderen Vorlagendatei ein. Die folgende Direktive fügt z. B. den Inhalt von `test.txt` ein.
 
  `<#@ include file="c:\test.txt" #>`
 
  Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der include-Direktive normale Text- und Standardkontrollblöcke eingefügt werden.
 
- For more information, see [T4 Include Directive](../modeling/t4-include-directive.md).
+ Weitere Informationen finden Sie unter [T4 include-Direktive](../modeling/t4-include-directive.md).
 
 ### <a name="utility-methods"></a>Hilfsmethoden
  Mehrere Methoden wie z. B. `Write()` stehen Ihnen in einem Kontrollblock immer zur Verfügung. Dazu zählen Methoden zum Einziehen der Ausgabe und Melden von Fehlern.
 
  Sie können auch einen eigenen Satz von Hilfsmethoden schreiben.
 
- For more information, see [Text Template Utility Methods](../modeling/text-template-utility-methods.md).
+ Weitere Informationen finden Sie unter [Text Template Utility Methods](../modeling/text-template-utility-methods.md).
 
 ## <a name="transforming-data-and-models"></a>Transformieren von Daten und Modellen
  Einer der sinnvollsten Verwendungszwecke von Textvorlagen ist das Generieren von Material basierend auf dem Inhalt einer Quelle, z. B. einem Modell, einer Datenbank oder einer Datendatei. Die Vorlage extrahiert Daten und formatiert sie neu. Durch eine Auflistung von Vorlagen kann eine solche Quelle in mehrere Dateien transformiert werden.
 
  Zum Lesen der Quelldatei sind mehrere Ansätze verfügbar.
 
- **Read a file in the text template**. Dies ist einfachste Methode, um Daten in die Vorlage abzurufen:
+ **Liest eine Datei in der Textvorlage**. Dies ist einfachste Methode, um Daten in die Vorlage abzurufen:
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Load a file as a navigable model**. Eine effektivere Methode besteht darin, die Daten als ein Modell zu lesen, durch das der Textvorlagencode navigieren kann. Sie können z. B. eine XML-Datei laden und mit XPath-Ausdrücken darin navigieren. You could also use [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765) to create a set of classes with which you can read the XML data.
+ **Laden Sie eine Datei als Navigier bares Modell**. Eine effektivere Methode besteht darin, die Daten als ein Modell zu lesen, durch das der Textvorlagencode navigieren kann. Sie können z. B. eine XML-Datei laden und mit XPath-Ausdrücken darin navigieren. Sie können auch " [XSD. exe](https://go.microsoft.com/fwlink/?LinkId=178765) " verwenden, um einen Satz von Klassen zu erstellen, mit denen Sie die XML-Daten lesen können.
 
- **Edit the model file in a diagram or form.** [!INCLUDE[dsl](../includes/dsl-md.md)] provides tools that let you edit a model as a diagram or Windows form. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. Die [!INCLUDE[dsl](../includes/dsl-md.md)] erstellen auch einen Satz stark typisierter Klassen, die die Struktur des Modells wiedergeben. For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Bearbeiten Sie die Modelldatei in einem Diagramm oder Formular.** [!INCLUDE[dsl](../includes/dsl-md.md)] stellt Tools bereit, mit denen Sie ein Modell als Diagramm oder Windows Form bearbeiten können. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. [!INCLUDE[dsl](../includes/dsl-md.md)] erstellt auch einen Satz stark typisierter Klassen, die die Struktur des Modells widerspiegeln. Weitere Informationen finden Sie unter [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
 
- **Use a UML model**. Sie können Code aus einem UML-Modell generieren. Dies hat den Vorteil, dass das Modell als Diagramm in einer gewohnten Darstellungsweise bearbeitet werden kann. Zudem müssen Sie das Diagramm nicht entwerfen. For more information, see [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md).
+ **Verwenden Sie ein UML-Modell**. Sie können Code aus einem UML-Modell generieren. Dies hat den Vorteil, dass das Modell als Diagramm in einer gewohnten Darstellungsweise bearbeitet werden kann. Zudem müssen Sie das Diagramm nicht entwerfen. Weitere Informationen finden Sie unter [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Relative Dateipfade in den Entwurfszeitvorlagen
- In a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md), if you want to reference a file in a location relative to the text template, use `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:
+ Wenn Sie in einer [Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md)auf eine Datei in einem Speicherort verweisen möchten, der relativ zur Textvorlage ist, verwenden Sie `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -264,22 +264,22 @@ Content of MyFile.txt is:
 
 ```
 
- Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. For more information, see [Accessing Visual Studio or other Hosts from a Template](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. Weitere Informationen finden Sie unter [zugreifen auf Visual Studio oder andere Hosts aus einer Vorlage](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Entwurfszeittextvorlagen werden in einer separaten AppDomain ausgeführt
- You should be aware that a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md) runs in an AppDomain that is separate from the main application. In den meisten Fällen ist dies nicht wichtig, doch in bestimmten komplexen Fällen können sich Einschränkungen ergeben. Wenn Sie z. B. Daten in oder aus der Vorlage von einem separaten Dienst übergeben möchten, muss der Dienst eine serialisierbare API bereitstellen.
+ Beachten Sie, dass eine [Textvorlage zur Entwurfszeit](../modeling/design-time-code-generation-by-using-t4-text-templates.md) in einer AppDomain ausgeführt wird, die von der Hauptanwendung getrennt ist. In den meisten Fällen ist dies nicht wichtig, doch in bestimmten komplexen Fällen können sich Einschränkungen ergeben. Wenn Sie z. B. Daten in oder aus der Vorlage von einem separaten Dienst übergeben möchten, muss der Dienst eine serialisierbare API bereitstellen.
 
- (This isn’t true of a [run-time text template](../modeling/run-time-text-generation-with-t4-text-templates.md), which provides code that is compiled along with the rest of your code.)
+ (Dies gilt nicht für eine [Lauf Zeit Textvorlage](../modeling/run-time-text-generation-with-t4-text-templates.md), die Code bereitstellt, der zusammen mit dem restlichen Code kompiliert wird.)
 
 ## <a name="editing-templates"></a>Bearbeiten von Vorlagen
- Spezialisierte Textvorlagen-Editoren können aus dem Onlinekatalog des Erweiterungs-Managers heruntergeladen werden. On the **Tools** menu, click **Extension Manager**. Click **Online Gallery**, and then use the search tool.
+ Spezialisierte Textvorlagen-Editoren können aus dem Onlinekatalog des Erweiterungs-Managers heruntergeladen werden. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**. Klicken Sie auf **Online**Katalog, und verwenden Sie dann das Suchtool.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Aufgabe|Topic|
+|Aufgabe|Thema|
 |----------|-----------|
 |Schreiben einer Textvorlage.|[Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md)|
-|Generieren Sie Text mithilfe von Programmcode.|[Text Template Structure](../modeling/writing-a-t4-text-template.md)|
+|Generieren Sie Text mithilfe von Programmcode.|[Text Vorlagen Struktur](../modeling/writing-a-t4-text-template.md)|
 |Generieren Sie Dateien in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Führen Sie die Textgenerierung außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus.|[Generieren von Dateien mit dem Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|

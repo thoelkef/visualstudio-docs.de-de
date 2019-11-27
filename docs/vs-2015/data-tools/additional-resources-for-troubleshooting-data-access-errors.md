@@ -1,5 +1,5 @@
 ---
-title: Additional resources for troubleshooting data access errors | Microsoft Docs
+title: Zusätzliche Ressourcen für die Problembehandlung von Datenzugriffs Fehlern | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -243,21 +243,21 @@ ms.locfileid: "74299454"
 
 Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). In der folgenden Tabelle sind die auf MSDN verfügbaren datenbezogenen Foren aufgeführt.
 
- [Windows Forms Data Controls and Databinding](https://go.microsoft.com/fwlink/?LinkId=160179) Provides a forum for questions about and general discussions of data access in Windows Forms.
+ [Windows Forms von Daten Steuerelementen und Daten](https://go.microsoft.com/fwlink/?LinkId=160179) Bindung Bietet ein Forum für Fragen und allgemeine Diskussionen zum Datenzugriff in Windows Forms.
 
- [ADO.NET DataSet Forum](https://go.microsoft.com/fwlink/?LinkId=160180) Provides a forum for questions about and general discussions of Datasets.
+ [ADO.NET DataSet-Forum](https://go.microsoft.com/fwlink/?LinkId=160180) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datasets.
 
- [ADO.NET Entity Framework and LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Provides a forum for questions about and general discussions of Entity Framework applications and the LINQ to Entities language.
+ [ADO.NET Entity Framework und LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Bietet ein Forum für Fragen und allgemeine Erörterung von Entity Framework Anwendungen und der LINQ to Entities Sprache.
 
- [WCF Data Services Forum](https://go.microsoft.com/fwlink/?LinkId=160181) Provides a forum for questions about and general discussions of data services.
+ [WCF Data Services Forum](https://go.microsoft.com/fwlink/?LinkId=160181) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datendiensten.
 
- [SQL Server Data Access Forum](https://go.microsoft.com/fwlink/?LinkID=160184) Provides a forum for questions about and general discussions of accessing data in Microsoft SQL Server.
+ [SQL Server Datenzugriffs Forum](https://go.microsoft.com/fwlink/?LinkID=160184) Bietet ein Forum für Fragen und allgemeine Diskussionen zum Zugreifen auf Daten in Microsoft SQL Server.
 
- [Linq to SQL Forum](https://go.microsoft.com/fwlink/?LinkId=160183) Provides a forum for questions about and general discussions of Linq to SQL.
+ [LINQ to SQL-Forum](https://go.microsoft.com/fwlink/?LinkId=160183) Bietet ein Forum für Fragen und allgemeine Diskussionen zu LINQ to SQL.
 
- [ADO.NET Data Providers Forum](https://go.microsoft.com/fwlink/?LinkId=160182) Provides a forum for questions about and general discussions of the different .NET Framework Data Providers.
+ [ADO.NET-Datenanbieter Forum](https://go.microsoft.com/fwlink/?LinkId=160182) Bietet ein Forum für Fragen und allgemeine Diskussionen über die verschiedenen .NET Framework Datenanbieter.
 
- For information about how to troubleshoot connectivity to SQL Server, see [How to Troubleshoot Connecting to the SQL Server Database Engine](https://go.microsoft.com/fwlink/?LinkID=246151).
+ Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter [Beheben von Problemen beim Herstellen einer Verbindung mit dem SQL Server Datenbank-Engine](https://go.microsoft.com/fwlink/?LinkID=246151).
 
 ## <a name="see-also"></a>Siehe auch
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

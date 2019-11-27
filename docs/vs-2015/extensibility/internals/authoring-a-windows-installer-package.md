@@ -1,5 +1,5 @@
 ---
-title: Authoring a Windows Installer Package | Microsoft Docs
+title: Erstellen eines Windows Installer Pakets | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,35 +21,35 @@ ms.locfileid: "74301135"
 # <a name="authoring-a-windows-installer-package"></a>Erstellen eines Windows Installer-Pakets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Data drives the Windows Installer model. Rather than writing a procedural script to copy files and write registry entries, for example, you author rows and columns in database tables that contain file and registry data.  
+Daten steuern das Windows Installer Modell. Anstatt ein prozedurales Skript zum Kopieren von Dateien und zum Schreiben von Registrierungs Einträgen zu schreiben, schreiben Sie z. b. Zeilen und Spalten in Datenbanktabellen, die Datei-und Registrierungsdaten enthalten.  
   
 ## <a name="database-entries"></a>Datenbankeinträge  
- To install a VSPackage, a Windows Installer package must contain database entries to perform the following tasks:  
+ Um ein VSPackage zu installieren, muss ein Windows Installer Paketdaten Bank Einträge enthalten, um die folgenden Aufgaben auszuführen:  
   
-- Search the system to locate the versions of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] your VSPackage supports (using Windows Installer tables that include AppSearch, CompLocator, RegLocator, DrLocator, and Signature).  
+- Durchsuchen Sie das System, um die Versionen von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], die das VSPackage unterstützt (mithilfe Windows Installer Tabellen, die AppSearch, complocator, reglocator, drlocator und Signature enthalten) zu suchen.  
   
-- Cancel the installation if no supported version of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] is installed or if another system requirement of the VSPackage is not met (using the LaunchCondition table).  
+- Brechen Sie die Installation ab, wenn keine unterstützte Version von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] installiert ist oder eine andere System Anforderung des VSPackage nicht erfüllt wird (mithilfe der LaunchCondition-Tabelle).  
   
-- Install the VSPackage and dependent files (using the directory, component, and file tables).  
+- Installieren Sie das VSPackage und abhängige Dateien (mithilfe der Verzeichnis-, Komponenten-und Datei Tabellen).  
   
-- Add appropriate information for the VSPackage to the registry (using the Registry table).  
+- Fügen Sie die entsprechenden Informationen für das VSPackage zur Registrierung hinzu (mithilfe der Registrierungs Tabelle).  
   
-- Integrate the VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by calling **devenv.exe /setup** (using the CustomAction table).  
+- Integrieren Sie das VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], indem Sie " **devenv. exe/Setup** " aufrufen (mithilfe der Tabelle "CustomAction").  
   
-  For more information, see [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Weitere Informationen finden Sie unter [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Setup Tools  
- A variety of third-party setup tools provide a development environment for Windows Installer packages. Two free tools are the following:  
+ Eine Reihe von Setup Tools von Drittanbietern bieten eine Entwicklungsumgebung für Windows Installer Pakete. Zwei kostenlose Tools sind die folgenden:  
   
 - InstallShield Limited Edition  
   
-   You can get a limited version of InstallShield through the Visual Studio **New Project** dialog. Expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template.  
+   Sie können eine begrenzte Version von InstallShield über das Visual Studio-Dialogfeld " **Neues Projekt** " erhalten. Erweitern Sie **andere Projekttypen** , und wählen Sie dann **Setup und Bereitstellung**aus. Wählen Sie die Vorlage InstallShield aus.  
   
 - Windows Installer XML Toolset  
   
-   The Toolset builds Windows Installer packages from XML source files. The Toolset is a Microsoft open-source project. You can download the source code and executables from [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/).  
+   Das Toolset erstellt Windows Installer Pakete aus XML-Quelldateien. Das Toolset ist ein Microsoft-Open-Source-Projekt. Sie können den Quellcode und ausführbare Dateien aus [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/)herunterladen.  
   
-  For commercial products that integrate into [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by using the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], see [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
+  Informationen zu kommerziellen Produkten, die mithilfe des [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integriert werden, finden Sie unter [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

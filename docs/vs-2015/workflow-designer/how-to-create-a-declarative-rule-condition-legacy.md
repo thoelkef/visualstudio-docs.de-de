@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create a Declarative Rule Condition (Legacy) | Microsoft Docs'
+title: 'Vorgehensweise: Erstellen einer deklarativen Regel Bedingung (Legacy) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -23,7 +23,7 @@ ms.locfileid: "74297491"
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Vorgehensweise: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)
 In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] deklariert wird, die auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.
 
- A condition statement evaluates to **True** or **False**. A declarative rule condition is a condition statement that is created by using the [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) and stored as XML with the workflow. Sie kann Prädikate beinhalten, mit denen Workflowstatus und boolesche Algebra verglichen werden, in der mehrere Prädikate kombiniert sind.
+ Eine Bedingungs Anweisung ergibt **true** oder **false**. Eine deklarative Regel Bedingung ist eine Bedingungs Anweisung, die mithilfe des Dialog Felds [Regelbedingungs-Editor (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) erstellt und im XML-Format mit dem Workflow gespeichert wird. Sie kann Prädikate beinhalten, mit denen Workflowstatus und boolesche Algebra verglichen werden, in der mehrere Prädikate kombiniert sind.
 
  Deklarative Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten verwendet:
 
@@ -41,27 +41,27 @@ In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgänge
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>So erstellen Sie eine deklarative Regelbedingung mit dem Regelbedingungs-Editor
 
-1. In the activity's **Properties** window, click the **Condition** property or **UntilCondition** property, depending on the activity.
+1. Klicken Sie im **Eigenschaften** Fenster der Aktivität abhängig von der Aktivität auf die **Condition** -Eigenschaft oder die **UntilCondition** -Eigenschaft.
 
-2. Select **Declarative Rule Condition** from the list for the property.
+2. Wählen Sie in der Liste für die Eigenschaft **deklarative Regel Bedingung** aus.
 
-3. Expand the **Condition** or **UntilCondition** property.
+3. Erweitern Sie die **Condition** -Eigenschaft oder die **UntilCondition** -Eigenschaft.
 
-4. Click the **ConditionName** property.
+4. Klicken Sie auf die Eigenschaft **ConditionName** .
 
-5. Click the **ConditionName** ellipses **[…]** to open the **Select Condition** dialog box.
+5. Klicken Sie auf die Schaltfläche **ConditionName** Auslassungs Punkte **[...]** , um das Dialogfeld **Bedingung auswählen** zu öffnen.
 
-6. Click **New Condition** to open the **Rule Condition Editor** dialog box.
+6. Klicken Sie auf **neue Bedingung** , um das Dialogfeld **Regelbedingungs-Editor** zu öffnen.
 
-7. Type the expression for the condition in the **Condition** text box.
+7. Geben Sie den Ausdruck für die Bedingung in das Textfeld **Bedingung** ein.
 
-     For information about how to create condition expressions, see [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
+     Weitere Informationen zum Erstellen von Bedingungs Ausdrücken finden Sie unter [Regelbedingungs-Editor (Dialog Feld) (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 
-8. When you are finished creating the condition expression, click **OK** to close the dialog box and create the rule condition with an assigned name.
+8. Wenn Sie die Erstellung des Bedingungs Ausdrucks abgeschlossen haben, klicken Sie auf **OK** , um das Dialogfeld zu schließen und die Regel Bedingung mit einem zugewiesenen Namen zu erstellen.
 
-     The **Select Condition** dialog box opens.
+     Das Dialogfeld **Bedingung auswählen** wird geöffnet.
 
-     For information about how to use the **Select Condition** dialog box, see [Select Condition Dialog Box (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).
+     Weitere Informationen zur Verwendung des Dialog Felds **Bedingung auswählen** finden [Sie unter Dialogfeld "Bedingung auswählen" (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md) [Using the ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) [Using the IfElseBranchActivity Activity](https://go.microsoft.com/fwlink?LinkID=65075) [Using the Replicator Activity](https://go.microsoft.com/fwlink?LinkID=65080) [Using the While Activity](https://go.microsoft.com/fwlink?LinkID=65091) [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Select Condition Dialog Box (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [mithilfe von ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) mithilfe der [ifelmenbranchactivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65075) [mithilfe der Replicator-Aktivität](https://go.microsoft.com/fwlink?LinkID=65080) mithilfe des Dialog Felds "while- [Aktivitäts](https://go.microsoft.com/fwlink?LinkID=65091) Regel Bedingungs-Editor" ( [Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) Dialogfeld " [Bedingung auswählen" (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) unter [Verwendung von Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)

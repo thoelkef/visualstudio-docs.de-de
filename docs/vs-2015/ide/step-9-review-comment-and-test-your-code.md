@@ -43,9 +43,9 @@ Als Nächstes fügen Sie dem Code einen Kommentar hinzu. Ein Kommentar ist ein H
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Anweisungen sorgen dafür, dass Programme bestimmte Schritte ausführen. In Visual C# endet eine Anweisung immer mit einem Semikolon. In Visual Basic ist das Ende einer Zeile das Ende einer Anweisung. (No semicolon is needed in Visual Basic.) The preceding statement tells your `PictureBox` control to load the file that the user selected with the **OpenFileDialog** component.
+   Anweisungen sorgen dafür, dass Programme bestimmte Schritte ausführen. In Visual C# endet eine Anweisung immer mit einem Semikolon. In Visual Basic ist das Ende einer Zeile das Ende einer Anweisung. (In Visual Basic ist kein Semikolon erforderlich.) Die vorangehende Anweisung teilt dem `PictureBox`-Steuerelement mit, die Datei zu laden, die der Benutzer mit der **OpenFileDialog** -Komponente ausgewählt hat.
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+  ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-add-comments"></a>So fügen Sie Kommentare hinzu
 
@@ -66,13 +66,13 @@ Als Nächstes fügen Sie dem Code einen Kommentar hinzu. Ein Kommentar ist ein H
 
 2. Speichern Sie das Programm, bevor Sie es ausführen, indem Sie die Symbolleistenschaltfläche **Alle speichern** auswählen, die wie folgt aussieht.
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All button
+     ![Schaltfläche "Alle speichern](../ide/media/express-iconsaveall.png "Express_IconSaveAll") " Schaltfläche zum Speichern aller
 
      Wählen Sie alternativ in der Menüleiste **Datei**, **Alle speichern** aus, um das Programm zu speichern. Es ist empfehlenswert, früh und häufig zu speichern.
 
      Wenn das Programm ausgeführt wird, sollte es wie im folgenden Bild aussehen.
 
-     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Picture Viewer
+     ![Bild](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Anzeige Bild Anzeige
 
 ### <a name="to-test-your-program"></a>So testen Sie das Programm
 

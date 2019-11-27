@@ -57,4 +57,4 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
 - **Web Accessibility Initiative des World Wide Web Consortium (W3C)** Diese Website enthält Richtlinien und Techniken für die Entwicklung barrierefreier Websites. Weitere Informationen finden Sie unter [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Siehe auch
- [Barrierefreiheitsfunktionen in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+ [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

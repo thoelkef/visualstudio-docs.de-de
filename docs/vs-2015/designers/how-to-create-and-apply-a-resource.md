@@ -34,7 +34,7 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
 
      Das Dialogfeld für das Erstellen einer Ressource wird angezeigt. Dieses Dialogfeld wird angezeigt, wenn Sie eine Ressource mit einem Pinsel erstellen:
 
-     ![Create Resource Dialog Box](../designers/media/xaml-create-resource.png "xaml_create_resource")
+     ![Dialog Feld "Ressource erstellen"](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
 3. Geben Sie im Feld **Name (Schlüssel)** einen Schlüsselnamen ein. Dies ist der Name, den Sie verwenden können, wenn Sie möchten, dass andere Elemente auf die Ressource verweisen.
 
@@ -54,7 +54,7 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
 
 1. Wählen Sie im Fenster "Dokumentgliederung" das Element aus, auf das eine Ressource angewendet werden soll.
 
-2. Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie eine der folgenden Aktionen aus:
 
    - Anwenden einer Ressource auf eine Eigenschaft Wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker neben dem Eigenschaftswert und dann **Lokale Ressource** oder **Systemressource** aus. Anschließend wählen Sie eine verfügbare Ressource aus der angezeigten Liste aus.
 

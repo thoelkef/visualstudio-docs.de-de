@@ -26,7 +26,7 @@ Das Testframework für Tests der programmierten UI und Aktionsaufzeichnungen unt
 
   In diesem Abschnitt wird eine Erweiterung des Tests der codierten UI beschrieben, mit der Tests von Excel-Arbeitsblättern aufgezeichnet und wiedergegeben werden können. Entwickler, die eine solche Erweiterung erstellen möchten, finden in diesem Abschnitt und in den Codekommentaren eine Erläuterung der einzelnen Teile der Erweiterung.
 
-  ![UI Test Architecture](../test/media/ui-testarch.png "UI_TestArch") Architecture Overview
+  ![UI-Test Architektur](../test/media/ui-testarch.png "UI_TestArch") Übersicht über die Architektur
 
 ## <a name="download-the-sample"></a>Herunterladen des Beispiels
  Das Beispiel besteht aus vier Projekten in der `CodedUIExtensibilitySample.sln`-Projektmappe:

@@ -225,7 +225,7 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
      `vcremote --serverDir directory_path`  
   
-     *&lt;directory_path&gt;* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig handelt es sich hierbei um "/Users/*Benutzername*/vcremote". Builds werden an diesem Speicherort nach Build-Nummer angeordnet.  
+     *<directory_path>* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig handelt es sich hierbei um "/Users/*Benutzername*/vcremote". Builds werden an diesem Speicherort nach Build-Nummer angeordnet.  
   
 - Um mithilfe eines Hintergrundprozesses `stdout` und `stderr` in einer Datei namens "server.log" zu erfassen, geben Sie Folgendes ein:  
   

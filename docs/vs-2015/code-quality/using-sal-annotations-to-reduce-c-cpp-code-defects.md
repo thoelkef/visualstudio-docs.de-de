@@ -1,5 +1,5 @@
 ---
-title: Using SAL Annotations to Reduce C-C++ Code Defects | Microsoft Docs
+title: Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C-Code Fehlern | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -23,44 +23,44 @@ ms.locfileid: "74291885"
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-SAL is the Microsoft source code annotation language. By using source code annotations, you can make the intent behind your code explicit. These annotations also enable automated static analysis tools to analyze your code more accurately, with significantly fewer false positives and false negatives.  
+SAL ist die Sprache der Microsoft-Quell Code Anmerkung. Mithilfe von Quell Code Anmerkungen können Sie die Absicht hinter dem Code explizit machen. Diese Anmerkungen ermöglichen auch automatisierte statische Analysetools, um Ihren Code genauer zu analysieren, mit deutlich weniger falsch positiven und falschen negativen Werten.  
   
- The articles in this section of the documentation discuss aspects of SAL, provide reference for SAL syntax, and give examples of its use.  
+ In den Artikeln in diesem Abschnitt der Dokumentation werden Aspekte von Sal erörtert, eine Referenz für die SAL-Syntax bereitgestellt, und es werden Beispiele für die Verwendung bereitgestellt.  
   
 - [Einführung in SAL](../code-quality/understanding-sal.md)  
   
-     Provides information and examples that show the core SAL annotations.  
+     Enthält Informationen und Beispiele, die die grundlegenden SAL-Anmerkungen veranschaulichen.  
   
 - [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)  
   
-     Lists the SAL annotations for functions and function parameters.  
+     Listet die SAL-Anmerkungen für Funktionen und Funktionsparameter auf.  
   
 - [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)  
   
-     Lists the SAL annotations for functions and function behavior.  
+     Listet die SAL-Anmerkungen für Funktionen und Funktionsverhalten auf.  
   
 - [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)  
   
-     Lists the SAL annotations for structures and classes.  
+     Listet die SAL-Anmerkungen für Strukturen und Klassen auf.  
   
 - [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)  
   
-     Explains how to use SAL annotations with lock mechanisms.  
+     Erläutert, wie SAL-Anmerkungen mit Sperrmechanismen verwendet werden.  
   
 - [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
-     Lists the SAL annotations that specify the condition or scope (placement) of other SAL annotations.  
+     Listet die SAL-Anmerkungen auf, die die Bedingung oder den Gültigkeitsbereich (Platzierung) von anderen SAL-Anmerkungen angeben.  
   
 - [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)  
   
-     Lists the intrinsic SAL annotations.  
+     Listet die systeminternen SAL-Anmerkungen auf.  
   
 - [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)  
   
-     Provides examples that show how to use SAL annotations. Also explains common pitfalls.  
+     Enthält Beispiele, die zeigen, wie SAL-Anmerkungen verwendet werden. Erläutert auch gängige Fehler.  
   
 ## <a name="related-resources"></a>Verwandte Ressourcen  
- [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog des Code Analyseteams](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
 ## <a name="see-also"></a>Siehe auch  
- [SAL 2.0 Annotations for Windows Drivers](https://go.microsoft.com/fwlink/?LinkId=250979)
+ [SAL 2,0-Anmerkungen für Windows-Treiber](https://go.microsoft.com/fwlink/?LinkId=250979)

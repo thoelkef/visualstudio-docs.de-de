@@ -1,5 +1,5 @@
 ---
-title: Managed Package Framework Classes | Microsoft Docs
+title: Managed Package Framework-Klassen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -39,6 +39,6 @@ Die MPF-Klassen (Managed Package Framework) können dazu verwendet werden, mit v
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|Unterstützt Projektuntertypen (werden auch als „Konfigurationen“ bezeichnet).|  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSPackages and the Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
- [Using Visual Studio Interop Assemblies](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
+ [VSPackages und das Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Verwenden von Visual Studio-Interop](../extensibility/internals/using-visual-studio-interop-assemblies.md) -Assemblys   
  [VSPackages und das Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)
