@@ -8,12 +8,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27ef5a1f79b97a5be5583917f1c9703b3d624c16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183306"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298745"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Übersicht über Visual Studio-Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,4 +67,4 @@ In diesem Abschnitt erfahren Sie mehr über die Funktionen von Visual Studio-Too
 - Sie können ändern, wie Visual Studio-Tools für Unity Projektdateien mithilfe des Rückrufs von "ProjectFileGeneration" im Unity-Stil erstellt. Weitere Informationen finden Sie im Beispiel "Erstellung der Projektdatei".  
   
 ## <a name="see-also"></a>Siehe auch  
- [Unity-Homepage](http://unity3d.com)
+ [Unity-Homepage](https://unity.com/)
