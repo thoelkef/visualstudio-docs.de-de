@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.author: jillfra
 author: jillre
 ms.manager: jillfra
-ms.openlocfilehash: f3e4b2b5df96f397104afb3ab6268e1fa294116e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c442ec22080a5f3533776e9d581aa1e7ef0e52ee
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652633"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538677"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Herstellen einer Verbindung mit Projekten in Team Explorer
 
-Verwenden Sie das Toolfenster **Team Explorer**, um Ihren Codeaufwand für die Entwicklung eines Projekts mit anderen Teammitgliedern zu koordinieren und die Aufgaben zu verwalten, die Ihnen, Ihrem Team oder Ihren Projekten zugewiesen sind. **Team Explorer** verbindet Visual Studio mit Git- und GitHub-Repositorys, Repositorys der Team Foundation-Versionskontrolle (TFVC) und Projekten, die auf [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) oder einer lokalen [Azure DevOps Server](/tfs/index)-Instanz (früher „TFS“ genannt) gehostet werden. Sie können Quellcode, Arbeitselemente und Builds verwalten.
+Verwenden Sie das Toolfenster **Team Explorer**, um Ihren Codeaufwand für die Entwicklung eines Projekts mit anderen Teammitgliedern zu koordinieren und die Aufgaben zu verwalten, die Ihnen, Ihrem Team oder Ihren Projekten zugewiesen sind. **Team Explorer** verbindet Visual Studio mit Git- und GitHub-Repositorys, Repositorys der Team Foundation-Versionskontrolle (TFVC) und Projekten, die auf [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) oder einer lokalen [Azure DevOps Server](/azure/devops/index-all)-Instanz (früher „TFS“ genannt) gehostet werden. Sie können Quellcode, Arbeitselemente und Builds verwalten.
 
 ![Team Explorer-Homepage in Visual Studio](media/team-explorer/team-explorer.png)
 
