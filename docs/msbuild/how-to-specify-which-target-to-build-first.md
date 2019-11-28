@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a567ca32a78eb6a78aad3702a68a6e08ed122db8
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997362"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316507"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Vorgehensweise: Angeben des zuerst zu erstellenden Ziels
 Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definieren, wie das Projekt erstellt wird. Die [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)])-Engine erstellt das erste Projekt, das sie findet, sowie alle Abhängigkeiten, es sei denn, die Projektdatei enthält ein `DefaultTargets`-Attribut, ein `InitialTargets`-Attribut oder ein Ziel, das in der Befehlszeile unter Verwendung des Schalters **-target** angegeben ist.
@@ -72,6 +72,6 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>Siehe auch
-  [MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [Ziele](../msbuild/msbuild-targets.md)
 - [Vorgehensweise: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)
