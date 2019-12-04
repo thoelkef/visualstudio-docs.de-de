@@ -9,14 +9,15 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0655c0faf57a72d6e99ba65f9f84db059e5fe0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406012"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779752"
 ---
 # <a name="call-tree-view---sampling-data"></a>Aufrufstrukturansicht: Samplingdaten
 In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden.
@@ -36,7 +37,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 
  Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Um den Stammknoten auf den ursprünglichen Knoten zurückzusetzen, klicken Sie mit der rechten Maustaste auf das Fenster der Aufrufstrukturansicht, und wählen Sie dann **Stamm zurücksetzen** aus.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
 |**Prozessname**|Der Prozessname.|

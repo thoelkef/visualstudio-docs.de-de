@@ -8,14 +8,15 @@ ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: b11815a709cf91d4e29c8f04dfc2dd9e1fadb75e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a67902af99eaee6c75f92f86c2481dfc2afd744e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423997"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771555"
 ---
 # <a name="summary-view---net-memory-data"></a>Zusammenfassungsansicht – .NET-Arbeitsspeicherdaten
 Die Zusammenfassung zeigt Informationen über die .NET-Funktionen und Typen, die den meisten Speicher belegen, und die Typen, die am häufigsten in einem Profilerstellungslauf erstellt wurden. Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).
@@ -26,7 +27,7 @@ Die Zusammenfassung zeigt Informationen über die .NET-Funktionen und Typen, die
 ## <a name="functions-allocating-most-memory"></a>Funktionen, die den meisten Speicher zuordnen
  Listet die Funktionen auf, die die größte Anzahl von Bytes an Arbeitsspeicher im Profilerstellungslauf zugewiesen haben.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Name**|Der Name der Funktion.|
 |**Bytes %**|Der Prozentsatz aller zugewiesenen Bytes im Profilerstellungslauf, die von dieser Funktion oder einer untergeordneten Funktion, die von dieser Funktion aufgerufen wurde zugewiesen wurden.|
@@ -34,7 +35,7 @@ Die Zusammenfassung zeigt Informationen über die .NET-Funktionen und Typen, die
 ## <a name="types-with-most-memory-allocated"></a>Typen mit der größten Speicherbelegung
  Listet die Typen auf, für die die größte Anzahl von Bytes an Arbeitsspeicher im Profilerstellungslauf zugewiesen wurde.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Name**|Der Name des Typs.|
 |**Bytes %**|Der Prozentsatz aller zugewiesenen Bytes im Profilerstellungslauf, die für diesen Typ zugewiesen wurden.|
@@ -42,7 +43,7 @@ Die Zusammenfassung zeigt Informationen über die .NET-Funktionen und Typen, die
 ## <a name="types-with-most-instances"></a>Typen mit den meisten Instanzen
  Liste die Typen, die am häufigsten während des Profilerstellungslaufs erstellt wurden. had
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Name**|Der Name des Typs.|
 |**Instancen %**|Der Prozentsatz der Gesamtzahl der .NET-Objekte, die beim Profilerstellungslauf erstellt wurden und Instanzen dieses Typs sind.|

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73913001"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777932"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -111,7 +111,7 @@ Der Debugger benötigt Hilfe beim Identifizieren des richtigen Prozesses, um den
 
     Verwenden Sie **STRG**+**F** (oder **Bearbeiten** > **Suchen und Ersetzen** > **Schnellsuche**), um den spezifischen Code in einer transpilierten Datei zu finden.
 
-    Damit clientseitiger Code einen Breakpoint in einer TypeScript-, oder JSX-Datei erreichen kann, ist in der Regel die Verwendung von [Quellzuordnungsdateien](#generate_source_maps) erforderlich. Eine Quellzuordnungsdatei muss für die Unterstützung des Debuggens in Visual Studio ordnungsgemäß konfiguriert sein.
+    Damit clientseitiger Code einen Breakpoint in einer TypeScript-, *VUE*- oder JSX-Datei erreichen kann, ist in der Regel die Verwendung von [Quellzuordnungsdateien](#generate_source_maps) erforderlich. Eine Quellzuordnungsdatei muss für die Unterstützung des Debuggens in Visual Studio ordnungsgemäß konfiguriert sein.
 
 2. Wählen Sie Ihren Zielbrowser in Visual Studio als Debugziel aus, und drücken Sie dann **STRG**+**F5** (oder klicken Sie auf **Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
 
@@ -127,7 +127,6 @@ Der Debugger benötigt Hilfe beim Identifizieren des richtigen Prozesses, um den
     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie ab Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.
 
 4. Im Dialogfeld **An Prozess anhängen** finden Sie eine gefilterte Liste der Browserinstanzen, an die Sie anfügen können.
-
     ::: moniker range=">=vs-2019"
     Wählen Sie in Visual Studio 2019 im Feld **Anfügen an** den entsprechenden Debugger für Ihren Zielbrowser aus, **JavaScript (Chrome)** oder **JavaScript (Microsoft Edge (Chromium))** , und geben Sie **chrome** oder **edge** in das Filterfeld ein, um die Suchergebnisse zu filtern.
     ::: moniker-end

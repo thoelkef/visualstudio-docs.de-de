@@ -6,14 +6,15 @@ ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8087f620f457f1e88ee6dc9ffff90f5c8747e50d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552813"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779453"
 ---
 # <a name="crosssession"></a>CrossSession
 Mit der *VSPerfCmd.exe*-Option **CrossSession** kann der Profiler Daten aus jeder Konsolensitzung sammeln. Die Option **CrossSession** muss zusammen mit der Option **Start** verwendet werden.
@@ -27,16 +28,16 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
 #### <a name="parameters"></a>Parameter
- Keiner
+ Keine
 
 ## <a name="valid-options"></a>Gültige Optionen
  Um die Profilerstellung in einer anderen Sitzung zu aktivieren, muss die Option **CrossSession** mit der Option **Start** angegeben werden. **CrossSession** muss außerdem in allen nachfolgenden **VSPerfCmd Attach**- und **Detach**-Befehlen angegeben werden.
 
  **Start:** `Method`: Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.
 
- **Attach:** _PID_[**,**_PID_] startet die Profilerstellung für die angegebenen Prozesse.
+ **Attach:** _PID_[ **,** _PID_] startet die Profilerstellung für die angegebenen Prozesse.
 
- **Detach**[**:**_PID_[,_PID_]] beendet die Profilerstellung für die angegebenen Prozesse.
+ **Detach**[ **:** _PID_[,_PID_]] beendet die Profilerstellung für die angegebenen Prozesse.
 
 ## <a name="example"></a>Beispiel
  In diesem Beispiel wird mit der Option **CrossSession** eine Anwendung angefügt, die in einer anderen Konsolensitzung gestartet wurde.

@@ -6,14 +6,15 @@ ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a6d31d15f7f7ed533d73683a3c12d152bd7046
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f28d7271fdf33822475a663debed269bb515959
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552901"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777776"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Erstellen von Profiler-Berichten über die Befehlszeile
 Mit dem Befehlszeilentool **VSPerfReport** können Sie Berichte im *XML*- oder *CSV*-Format aus Profilerstellungsdateien (*VSP*) erstellen. VSPerfReport-Berichtstypen entsprechen in den tabellenbasierten Ansichten der Schnittstelle für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sie können den Bericht filtern, sodass nur Ihr Code und nur ein Teil der Profilerstellungs-Datendatei angezeigt wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).

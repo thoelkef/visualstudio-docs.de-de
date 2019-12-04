@@ -7,14 +7,15 @@ ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4911b41058c2546ea373302d326535be775877ba
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 04745140c3f92b3d601a03ddbcd68259b3959364
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261566"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776469"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln paralleler Daten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an eine ASP.NET-Anwendung angefügt wird und Parallelitätsdaten für Prozesse und Threads erfasst werden können.
@@ -37,7 +38,7 @@ Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unt
 
      Sie können alle Optionen in der folgenden Tabelle in Verbindung mit der **/start**-Option verwenden.
 
-   | Option | Beschreibung |
+   | Option | BESCHREIBUNG |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | Gibt den optionalen Domänen- und Benutzernamen des Kontos an, dem Zugriff auf den Profiler gewährt werden soll. |
    | [/crosssession](../profiling/crosssession.md) | Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen. |
@@ -60,7 +61,7 @@ Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unt
 
 - Mit den VSPerfCmd-Optionspaaren in der folgenden Tabelle wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
-    |Option|Beschreibung|
+    |Option|BESCHREIBUNG|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|

@@ -7,14 +7,15 @@ ms.assetid: ffbdfe37-8325-44be-bd36-2c8aab2dec7b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9b77d4e27edd470d83941e29d5d7a2314cd2a8e1
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: a95e907379db19d88fd7204e8410038ddb881d3b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746268"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779115"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Parallelitätsdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an einen .NET Framework-Dienst angefügt wird und wie Parallelitätsdaten zu Prozessen und Threads mit der Samplingmethode erfasst werden.
@@ -56,7 +57,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
     > [!NOTE]
     > Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.
 
-    |Option|Beschreibung|
+    |Option|BESCHREIBUNG|
     |------------|-----------------|
     |[/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName`|Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des profilierten Prozesses ist. Diese Option ist nur erforderlich, wenn der Prozess als Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte **Prozesse** in der Spalte **Benutzername** des Windows Task-Managers aufgeführt.|
     |[/crosssession](../profiling/crosssession.md)|Aktiviert die Profilerstellung für Prozesse in anderen Sitzungen. Diese Option ist erforderlich, wenn der Dienst in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte **Prozesse** in der Spalte **Sitzungs-ID** des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden.|
@@ -72,7 +73,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
     - `PID` gibt die ID oder den Namen des Dienstprozesses an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
 
-    - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
+    - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Optional.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
  Während der Dienst ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit *VSPerfCmd.exe*-Optionen starten und beenden. Durch die Steuerung der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
@@ -81,7 +82,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
 - Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
-    |Option|Beschreibung|
+    |Option|BESCHREIBUNG|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|
@@ -98,7 +99,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
     - Beenden Sie den Dienst.
 
-         - oder -
+         Oder
 
     - Geben Sie **VSPerfCmd /detach** ein.
 

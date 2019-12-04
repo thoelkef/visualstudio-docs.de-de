@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161967"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706983"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können Probleme bei der Problemlösung für Produkte in **produktionsfernen Umgebungen** gelöst werden, die sich noch in der Standardsupportphase des [Supportlebenszyklus](https://support.microsoft.com/lifecycle/search) befinden. Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden; bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents, geltend 1 Jahr lang ab Aktivierung des Vorteils. Die Aktivierung des Vorteils muss stattfinden, während das Abonnement aktiv ist.
@@ -54,7 +54,7 @@ Beschreibungen auf Produktebene: Erweitern Sie **Nicht verfügbare Supportpläne
 > Wählen Sie Ihr Land aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Einreichen eines Incidents mithilfe Ihres Vorteils
-Sobald Ihre **Vertrags-ID** und **Zugriffs-ID** eingerichtet wurden, können Sie diese verwenden, um [online](http://support.microsoft.com/oas/) einen technischen Support-Incident einzureichen (Anmeldung erforderlich), oder über das [Azure-Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview), oder, indem Sie die Nummer des technischen Supports für Ihr Land anrufen. Wenn Sie einen Incident online einreichen, kann Sie ein Microsoft-Support-Experte anrufen.
+Sobald Ihre **Vertrags-ID** und **Zugriffs-ID** eingerichtet wurden, können Sie diese verwenden, um [online](https://support.microsoft.com/oas/) einen technischen Support-Incident einzureichen (Anmeldung erforderlich), oder über das [Azure-Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview), oder, indem Sie die Nummer des technischen Supports für Ihr Land anrufen. Wenn Sie einen Incident online einreichen, kann Sie ein Microsoft-Support-Experte anrufen.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Haben Sie Ihre Vertrags-ID und Zugriffs-ID bereits dem Konto zugeordnet, mit dem Sie sich anmelden, um online einen technischen Support-Incident einzureichen?
 Wenn Sie einen Incident online einreichen, werden Sie zunächst aufgefordert, sich anzumelden. Melden Sie sich mit dem Konto an, von dem Sie wissen, dass es Ihrer Vertrags-ID und Zugriffs-ID zugeordnet wurde. Den aktuellen Supportplan-Vorteil, der Ihrem Konto zugeordnet wurde, können Sie in Schritt 3 im Supportworkflow einsehen. Wählen Sie diesen Plan einfach aus, und fahren Sie mit der Einreichung Ihres Falls fort. Sie können Incidents bis zu dem im Plan angegebenen Limit einreichen, oder bis zum Ablaufdatum des Plans, je nachdem, was zuerst eintritt. Sobald „0“ für verbleibende Incidents angezeigt wird oder wenn Ihr Plan abläuft, ist er nicht länger aktiv.

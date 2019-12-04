@@ -9,12 +9,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d84292592183d11e5d9ee4fc2febac6679e2a73b
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000292"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797220"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Vorgehensweise: Ignorieren von Fehlern in Aufgaben
 Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist. Wenn diese nicht kritischen Aufgaben fehlschlagen, soll der Buildvorgang fortgesetzt werden, da er immer noch die gewünschte Ausgabe erzeugen kann. Wenn z.B. ein Projekt eine Aufgabe `SendMail` zum Senden einer E-Mail-Nachricht verwendet, nachdem jede Komponente erzeugt wurde, sollte der Build bis zum Abschluss weiterarbeiten, selbst wenn der Mailserver nicht verfügbar ist und die Statusnachricht nicht gesendet werden kann. Oder wenn beispielsweise temporäre Dateien während des Buildvorgangs normalerweise gelöscht werden, sollte der Build auch bis zum Abschluss weiterarbeiten, selbst wenn diese Dateien nicht gelöscht werden können.
@@ -30,15 +30,17 @@ Das Attribut `ContinueOnError` kann einen oder mehrere der folgenden Werte entha
 
 - **ErrorAndStop** oder **FALSE** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.
 
-  Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.
+Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.
 
-  Der Standardwert von `ContinueOnError` ist `ErrorAndStop`. Wenn Sie das Attribut auf `ErrorAndStop` festlegen, machen Sie das Verhalten für jeden explizit, der die Projektdatei lesen kann.
+Der Standardwert von `ContinueOnError` ist `ErrorAndStop`. Wenn Sie das Attribut auf `ErrorAndStop` festlegen, machen Sie das Verhalten für jeden explizit, der die Projektdatei lesen kann.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>So ignorieren Sie Fehler in einer Aufgabe
 
-- Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Beispiel:
+Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Beispiel:
 
-    `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
+```xml
+<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
+```
 
 ## <a name="example"></a>Beispiel
 Im folgenden Codebeispiel wird veranschaulicht, dass das `Build`-Ziel weiter ausgeführt wird und der Build als erfolgreich betrachtet wird, selbst wenn die Aufgabe `Delete` fehlschlägt.

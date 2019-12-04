@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199884"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706877"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 Berechtigte Visual Studio-Abonnements enthalten Abonnements für DataCamp.  Mit DataCamp können Sie über Ihren Browser alle Data Science-Fähigkeiten erwerben, die Sie benötigen. Sie können auswählen, wann Sie lernen und was Sie lernen. Da keine Software installiert werden muss und keine besonderen Hardwareanforderungen vorliegen, ist das Erlernen von Data Science einfacher als je zuvor.
@@ -50,7 +50,7 @@ Berechtigte Visual Studio-Abonnements enthalten Abonnements für DataCamp.  Mit 
    > [!div class="mx-imgBorder"]
    > ![Erste Schritte mit DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetzen.  Besuchen Sie [http://www.datacamp.com](http://www.datacamp.com), und melden Sie sich an.  Zunächst wird Ihnen Ihr Dashboard angezeigt, und Sie können Ihr Training dort fortsetzen, wo Sie es angehalten haben. Klicken Sie einfach auf **Continue Track** (Pfad fortsetzen).
+Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetzen.  Besuchen Sie [https://www.datacamp.com](https://www.datacamp.com), und melden Sie sich an.  Zunächst wird Ihnen Ihr Dashboard angezeigt, und Sie können Ihr Training dort fortsetzen, wo Sie es angehalten haben. Klicken Sie einfach auf **Continue Track** (Pfad fortsetzen).
 
 > [!div class="mx-imgBorder"]
 > ![Fortsetzen des DataCamp-Trainings](_img/vs-datacamp/vs-datacamp-continue-training.png)

@@ -8,14 +8,15 @@ ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386647"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775318"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen
 Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen einschränken, indem Sie die Optionen unter der Seite **Erweitert** der **Leistungssitzung** oder die Zielbinärdateieigenschaften einstellen.

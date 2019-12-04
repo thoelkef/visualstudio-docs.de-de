@@ -8,14 +8,15 @@ ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b05c5d6b477fffdb56377fe4a8d13dda6219cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422990"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778192"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 Die `SuspendProfile`-Methode erhöht den Suspend/Resume-Zähler für die angegebene Profilerstellungsebene.
@@ -33,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 
  Gibt die Profilebene an, auf die die Sammlung von Leistungsdaten angewendet werden kann. Die folgenden **PROFILE_CONTROL_LEVEL**-Enumeratoren können verwendet werden, um eine der drei Ebenen anzugeben, auf die die Sammlung der Leistungsdaten angewendet werden kann:
 
-|Enumerator|Beschreibung|
+|Enumerator|BESCHREIBUNG|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Die Einstellung globaler Ebene wirkt sich auf alle Prozesse und Threads bei der Profilerstellung aus.|
 |PROFILE_PROCESSLEVEL|Die Einstellung auf die Prozessebene wirkt sich auf alle Threads aus, die Teil des angegebenen Prozesses sind.|
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
  Die Funktion gibt mithilfe der **PROFILE_COMMAND_STATUS**-Enumeration einen Erfolg oder Fehler an. Einer der folgenden Werte kann zurückgegeben werden:
 
-|Enumerator|Beschreibung|
+|Enumerator|BESCHREIBUNG|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Die Profilerstellungselement-ID ist nicht vorhanden.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Die angegebene Profilerstellungsebene ist nicht vorhanden.|

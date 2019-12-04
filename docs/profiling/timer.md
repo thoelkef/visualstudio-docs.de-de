@@ -6,14 +6,15 @@ ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 351b5a8da781d8e60d6a603c1d037f8bf71cd317
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999316"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778114"
 ---
 # <a name="timer"></a>Zeitgeber
 Die *VSPerfCmd.exe* **Timer**-Option legt das Profilerstellungsereignis fest, das für Prozessortaktzyklen gesampelt wird, und optional wird die Anzahl der Zyklen in einem Sample vom Standard 10.000.000 auf einen anderen Wert geändert. Auf einen 1-GHz-Prozessor (ein Gigahertz) entsprechen 10.000.000 Prozessortaktzyklen ungefähr 100 Samples pro Sekunde. Die Mindestanzahl an Zyklen, die sich festlegen lässt, ist 50.000.
@@ -43,13 +44,13 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="invalid-options"></a>Ungültige Optionen
  Die folgenden Optionen können nicht auf der selben Befehlszeile wie **Timer** festgelegt werden.
 
- **PF**[**:**`Events`]: legt die Seitenstandards für das Samplingereignis und optional das Samplingintervall auf `Events` fest. Das standardmäßige PF-Intervall beträgt 10.
+ **PF**[ **:** `Events`]: legt die Seitenstandards für das Samplingereignis und optional das Samplingintervall auf `Events` fest. Das standardmäßige PF-Intervall beträgt 10.
 
- **Sys**[**:**`Events`]: legt die Betriebssystemaufrufe für das Samplingereignis und optional das Samplingintervall auf `Events` fest. Das standardmäßige Sys-Intervall beträgt 10.
+ **Sys**[ **:** `Events`]: legt die Betriebssystemaufrufe für das Samplingereignis und optional das Samplingintervall auf `Events` fest. Das standardmäßige Sys-Intervall beträgt 10.
 
- **Counter**[**:**`Name,Reload,FriendlyName`]: legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator und das Samplingintervall auf `Reload` fest.
+ **Counter**[ **:** `Name,Reload,FriendlyName`]: legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator und das Samplingintervall auf `Reload` fest.
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]: erfasst .NET-Arbeitsspeicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]: erfasst .NET-Arbeitsspeicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.
 
 ## <a name="example"></a>Beispiel
  Dieses Beispiel zeigt, wie das Profiler-Samplingintervall auf 1.000.000 Prozessortaktzyklen festgelegt wird.
