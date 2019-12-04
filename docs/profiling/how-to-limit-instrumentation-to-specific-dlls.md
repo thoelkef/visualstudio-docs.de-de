@@ -7,14 +7,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980914"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778816"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs
 
@@ -36,7 +37,7 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 
 7. Wählen Sie aus der Liste **Zielprojekt hinzufügen** das ausführbare Projekt aus, das Sie zum Ausführen der DLL verwenden möchten.
 
-     Dies ist optional. Sie können alle DLL-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.
+     Optional. Sie können alle DLL-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.
 
 8. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und deaktivieren Sie das Kontrollkästchen **Instrumentieren**, um die Datensammlung für ein zusätzliches Projekt zu verhindern.
 
@@ -50,11 +51,11 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 
 4. Führen Sie auf der zweiten Seite des Assistenten die folgenden Schritte aus:
 
-    - Geben Sie den Pfad und den Namen der *DLL*-Datei an, deren Profil Sie im **DLL-Pfad** erstellen möchten. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Dynamic Link Library, für die ein Profil erstellt werden soll** zu suchen. Beachten Sie, dass Sie die Kopie der *DLL*-Datei angeben müssen, die durch die ausführbare Datei (*.exe*) gestartet wird, die Sie als Nächstes auswählen.
+    - Geben Sie den Pfad und den Namen der *DLL*-Datei an, deren Profil Sie im **DLL-Pfad** erstellen möchten. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Dynamic Link Library, für die ein Profil erstellt werden soll** zu suchen. Beachten Sie, dass Sie die Kopie der *DLL*-Datei angeben müssen, die durch die ausführbare Datei ( *.exe*) gestartet wird, die Sie als Nächstes auswählen.
 
-    - Geben Sie im **Pfad der ausführbaren Datei** den Pfad und den Namen der ausführbaren Datei (*.exe*) an, die in der *DLL*-Datei ausgeführt wird. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Zu startende ausführbare Datei** zu suchen.
+    - Geben Sie im **Pfad der ausführbaren Datei** den Pfad und den Namen der ausführbaren Datei ( *.exe*) an, die in der *DLL*-Datei ausgeführt wird. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Zu startende ausführbare Datei** zu suchen.
 
-    - Dies ist optional. Geben Sie in **Befehlszeilenargumente** Befehlszeilenargumente an, die an die ausführbare Datei übergeben werden sollen. Geben Sie ggf. in **Arbeitsverzeichnis** das Arbeitsverzeichnis für die Anwendung an.
+    - Optional. Geben Sie in **Befehlszeilenargumente** Befehlszeilenargumente an, die an die ausführbare Datei übergeben werden sollen. Geben Sie ggf. in **Arbeitsverzeichnis** das Arbeitsverzeichnis für die Anwendung an.
 
     - Klicken Sie auf **Weiter**.
 
@@ -62,10 +63,10 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 
 6. Klicken Sie auf **Fertig stellen**, um den Assistenten zu beenden und um im Fenster **Leistungs-Explorer** die neue Leistungssitzung anzuzeigen.
 
-7. Dies ist optional. Klicken Sie mit der rechten Maustaste auf **Ziele**, und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere *DLL*-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.
+7. Optional. Klicken Sie mit der rechten Maustaste auf **Ziele**, und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere *DLL*-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.
 
     > [!NOTE]
-    > Geben Sie nicht die ausführbare Datei (*.exe*) an, die die DLLs ausführt.
+    > Geben Sie nicht die ausführbare Datei ( *.exe*) an, die die DLLs ausführt.
 
 ## <a name="see-also"></a>Siehe auch
 
