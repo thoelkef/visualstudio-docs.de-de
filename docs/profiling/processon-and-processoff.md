@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972409"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778387"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn und ProcessOff
 Die Unterbefehle **ProcessOff** und **ProcessOn** von „VSPerfCmd.exe“ halten die Profilerstellung für den angegebenen Prozess in einer Befehlszeilen-Profilerstellungssitzung an bzw. setzen sie fort. **ProcessOff** stoppt die Profilerstellung des Prozesses, und **ProcessOn** startet sie.
@@ -41,7 +42,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID`: der ganzzahlige Bezeichner des Prozesses zum Starten oder Beenden. Prozess-IDs werden auf der Registerkarte **Prozesse** des Windows Task-Managers aufgeführt.
 
 ## <a name="required-subcommands"></a>Erforderliche Unterbefehle
- Keiner
+ Keine
 
 ## <a name="valid-subcommands"></a>Gültige Unterbefehle
  **ProcessOn** und **ProcessOff** können in Befehlszeilen angegeben werden, die auch die folgenden Unterbefehle enthalten:
@@ -54,7 +55,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
  **GlobalOff**&#124;**GlobalOn** beendet oder startet die Profilerstellung für alle Prozesse in einer Befehlszeilen-Profilerstellungssitzung.
 
- {**ThreadOff**|**ThreadOn**}**:**`TID` Beendet oder beginnt die Profilerstellung für den angegebenen Thread (nur Instrumentierungsmethode)
+ {**ThreadOff**|**ThreadOn**} **:** `TID` Beendet oder beginnt die Profilerstellung für den angegebenen Thread (nur Instrumentierungsmethode)
 
 ## <a name="example"></a>Beispiel
  In diesem Beispiel werden mit dem Unterbefehl **ProcessOff** Profilerstellungsdaten für den Start der Anwendung gesammelt.

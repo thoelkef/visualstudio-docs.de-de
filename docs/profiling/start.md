@@ -6,14 +6,15 @@ ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979678"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778270"
 ---
 # <a name="start"></a>Starten
 Die **Start**-Option ist eine *VSPerfCmd.exe*-Option, die den Profiler mit der angegebenen Profilerstellungsmethode initialisiert.
@@ -45,7 +46,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **CrossSession**&#124;**CS** ermöglicht die prozessübergreifende Profilerstellung. Die Optionsnamen **CrossSession** und **CS** werden beide unterstützt.
 
- **User:**[`domain\`]`username`: ermöglicht dem Client Zugriff auf den Monitor vom angegebenen Konto aus.
+ **User:** [`domain\`]`username`: ermöglicht dem Client Zugriff auf den Monitor vom angegebenen Konto aus.
 
  **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** gibt einen Windows-Leistungsindikator an, der als Markierung in die Profilerstellungsdatendatei aufgenommen werden soll. **AutoMark** gibt das Intervall in Millisekunden zwischen dem Erfassen der Datendatei an.
 
@@ -54,7 +55,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Status** **Status** gilt für die Prozesse, von denen ein Profil erstellt wurde. Prozesse und Threads und der aktuelle Zustand der Profile (ein/aus) wird hier aufgeführt. Wenn beispielsweise ein Prozess beendet wird, gibt **Status** dies nicht im Bericht an. **Status** zeigt an, ob vom Prozess ein Profil erstellt wird.
 
- **Shutdown**[**:**`Timeout`] deaktiviert den Profiler.
+ **Shutdown**[ **:** `Timeout`] deaktiviert den Profiler.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel veranschaulicht, wie die Option **Start** von *VSPerfCmd.exe* den Profiler initialisiert.
