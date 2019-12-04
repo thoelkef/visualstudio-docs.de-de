@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493358"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706967"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -43,7 +43,7 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 ## <a name="renewing-my-subscriptions"></a>Verlängern meiner Abonnements
 
 **Standardabonnements**
-- Microsoft Store: Wenn Sie Ihr Abonnement im [Microsoft Store](http://www.microsoft.com/store) erworben haben, können Sie es auch dort verlängern.
+- Microsoft Store: Wenn Sie Ihr Abonnement im [Microsoft Store](https://www.microsoft.com/store) erworben haben, können Sie es auch dort verlängern.
 - Volumenlizenz:  Wenn Ihr Unternehmen Abonnements über eine Volumenlizenz erwirbt, sollte sich der Administrator für die Verlängerung Ihres Abonnements an einen Händler wenden.
 
 **Cloudabonnements:**  Cloudabonnements müssen nicht verlängert werden. Solange Ihr Abonnement bezahlt wird, bleibt es aktiv.

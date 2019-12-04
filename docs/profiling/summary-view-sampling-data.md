@@ -9,14 +9,15 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b346047ff52c994e76a322a5afa0494259277163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438480"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778205"
 ---
 # <a name="summary-view---sampling-data"></a>Zusammenfassungsansicht: Samplingdaten
 Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen in einem Profilerstellungslauf. Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).
@@ -32,7 +33,7 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
 
  **Langsamster Pfad** umfasst die folgenden Daten für jede Funktion:
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Name**|Der Name der Funktion.|
 |**Inklusive Samplings in %**|Der Prozentsatz aller Samplings, die stattgefunden haben, wenn die Funktion oder eine von ihr aufgerufene Funktion ausgeführt wurde.|
@@ -45,7 +46,7 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
 
  **Funktionen mit den meisten einzelnen Aufgaben** umfasst die folgenden Daten für jede Funktion:
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Name**|Der Name der Funktion.|
 |**Exklusive Samplings %**|Der Prozentsatz aller Samplings bei der Profilerstellung, die gesammelt wurden, als die Funktion Code in ihrem Funktionsrumpf ausgeführt hat. Der Prozentsatz schließt Samplings aus, die während der Ausführung von Funktionen erfasst wurden, die von dieser Funktion aufgerufen wurden.|
