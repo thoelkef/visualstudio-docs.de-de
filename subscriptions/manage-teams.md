@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über die Aufgaben eines Administrators beim Verwalten von Abonnements für große Teams und externe Vertragspartner.
-ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493336"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491697"
 ---
 # <a name="large-teams-and-external-contractors"></a>Große Teams und externe Auftragnehmer
 Administratoren für Visual Studio-Abonnements sind dafür verantwortlich, sicherzustellen, dass jeder Benutzer, der mit lizenzierter Visual Studio-Software interagiert, angemessen für sein Visual Studio-Abonnement lizenziert ist.

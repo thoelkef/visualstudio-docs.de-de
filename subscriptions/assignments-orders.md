@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortung von Administratoren hinsichtlich des Nachverfolgens von Benutzerzuweisungen und des Verarbeitens von Aufträgen.
-ms.openlocfilehash: ab2a19fc94be27e8eaf90290b50820d58e919297
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420531"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491605"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Nachverfolgen der Benutzerzuweisungen und der Verarbeitung von Aufträgen
 Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie die Nutzung von Visual Studio und die Verarbeitung von Aufträgen nachverfolgen und darauf achten, ob die Nutzung im Vergleich zu dem Zeitplan angestiegen ist, der in der Volumenlizenzierungsvereinbarung oder der Microsoft Produkt- und Servicevereinbarung festgelegt wurde. Das neue Administrationsportal für Visual Studio-Abonnements hat zur Vereinfachung dieser Aufgabe einen einfachen, hilfreichen Tracker implementiert, der die verfügbaren und bereits verwendeten Lizenzen anzeigt.
@@ -39,6 +39,6 @@ Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihne
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:
 - [Administratoraufgaben](admin-responsibilities.md)
-- [Inventory of pre-production environment (Inventur der Präproduktion)](admin-inventory.md)
+- [Inventory of pre-production environment (Inventur der Präproduktionsumgebung)](admin-inventory.md)
 - [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
 - Verwenden der [maximalen Auslastung](maximum-usage.md) zum Nachverfolgen von Kaufverpflichtungen

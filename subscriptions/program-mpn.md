@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Einzelheiten zu den angebotenen Abonnements, geltenden Regeln und der Anzahl der in MPN angebotenen Abonnements
-ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816570"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491668"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio-Abonnements für Partner in Microsoft Partner Network (MPN)
 
@@ -73,7 +73,7 @@ Bei Visual Studio-Abonnements, die über MPN angeboten werden, muss der lizenzie
 
 - [MPN Program Administrator Guide (MPN-Programmleitfaden für Administratoren):](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) Enthält Anweisungen zum Zuweisen von Visual Studio-Abonnements zu MPN-Mitarbeitern.
 - [Assign Visual Studio subscriptions to MPN employees (Zuweisen von Visual Studio-Abonnements zu MPN-Mitarbeitern)](manage-mpn-subscriptions.md)
-- [Nutzungsbedingungen:](http://www.microsoft.com/useterms/) Visual Studio-Abonnements, die über MPN angeboten werden, unterliegen den Lizenzbedingungen für nicht zum Weiterverkauf bestimmte Visual Studio-Abonnements.
+- [Nutzungsbedingungen:](https://www.microsoft.com/useterms/) Visual Studio-Abonnements, die über MPN angeboten werden, unterliegen den Lizenzbedingungen für nicht zum Weiterverkauf bestimmte Visual Studio-Abonnements.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

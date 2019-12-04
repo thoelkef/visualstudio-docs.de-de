@@ -1,7 +1,7 @@
 ---
 title: Veröffentlichen einer Node.js-App in Linux App Service
 description: Sie können in Visual Studio erstellte Node.js-Anwendungen in Linux App Service unter Azure veröffentlichen.
-ms.date: 11/1/2018
+ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e02e232f8ebfd9454842de5aabaa1706a0df6202
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695919"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474013"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Veröffentlichen einer Node.js-Anwendung in Azure (Linux App Service)
 
@@ -47,7 +47,7 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
     Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
     ::: moniker-end
 
-    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
     ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
 
@@ -130,15 +130,17 @@ So richten Sie GitHub für Visual Studio ein:
     > [!WARNING]
     > Bei der Bereitstellung des App Service wird mit Heuristiken ermittelt, welche Art von Anwendung ausprobiert und ausgeführt wird. Wenn im bereitgestellten Inhalt eine *SLN*-Datei erkannt wird, wird davon ausgegangen, dass ein auf MSBuild basierendes Projekt bereitgestellt wird. Mit der weiter oben hinzugefügten Einstellung wird diese Logik überschrieben und explizit angegeben, dass es sich hierbei um eine Node.js-Anwendung handelt. Ohne diese Einstellung kann die Node.js-Anwendung nicht bereitgestellt werden, wenn die *SLN*-Datei Teil des Repositorys ist, das im App Service bereitgestellt wird.
 
-7. Öffnen Sie den App Service nach der Bereitstellung, und wählen Sie **Bereitstellungsoptionen** aus.
+7. Fügen Sie unter **Anwendungseinstellungen** eine weitere Einstellung mit dem Namen `WEBSITE_NODE_DEFAULT_VERSION` und dem Wert `8.9.0` hinzu.
+
+8. Öffnen Sie den App Service nach der Bereitstellung, und wählen Sie **Bereitstellungsoptionen** aus.
 
     ![Bereitstellungsoptionen](../javascript/media/azure-deployment-options.png)
 
-8. Klicken Sie auf **Quelle auswählen**, wählen Sie **GitHub** aus, und konfigurieren Sie anschließend alle erforderlichen Berechtigungen.
+9. Klicken Sie auf **Quelle auswählen**, wählen Sie **GitHub** aus, und konfigurieren Sie anschließend alle erforderlichen Berechtigungen.
 
     ![GitHub-Berechtigungen](../javascript/media/azure-choose-source.png)
 
-9. Wählen Sie das Repository aus, branchen Sie zum Veröffentlichen, und wählen Sie **OK** aus.
+10. Wählen Sie das Repository aus, branchen Sie zum Veröffentlichen, und wählen Sie **OK** aus.
 
     ![Veröffentlichen in Linux App Service](../javascript/media/azure-repo-and-branch.png)
 
@@ -173,7 +175,7 @@ So richten Sie GitHub für Visual Studio ein:
 * Wenn der node.exe-Prozess stockt (d.h., wenn ein Ausnahmefehler auftritt), wird der Container neu gestartet.
 * Der Container durchläuft beim Starten verschiedene Heuristiken, um zu ermitteln, wie der Node.js-Prozess gestartet werden soll. Details zur Implementierung finden Sie unter [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
 * Für Untersuchungen können Sie über SSH eine Verbindung mit dem aktiven Container herstellen. Hierzu können Sie einfach das Azure-Portal verwenden. Wählen Sie den App Service aus. Blättern Sie in der Liste der Tools nach unten bis zu **SSH** im Abschnitt **Entwicklungstools**.
-* Wechseln Sie zur Unterstützung bei der Problembehandlung zu den Einstellungen für **Diagnoseprotokolle** für den App Service. Ändern Sie die Einstellung **Protokollierung von Docker-Containern** von **Off** (Aus) in **Dateisystem**. Protokolle werden im Container unter */home/LogFiles/*_docker.log* erstellt. Sie können auf Ihrem Computer über SSH oder FTP(S) darauf zugreifen.
+* Wechseln Sie zur Unterstützung bei der Problembehandlung zu den Einstellungen für **Diagnoseprotokolle** für den App Service. Ändern Sie die Einstellung **Protokollierung von Docker-Containern** von **Off** (Aus) in **Dateisystem**. Protokolle werden im Container unter */home/LogFiles/* _docker.log* erstellt. Sie können auf Ihrem Computer über SSH oder FTP(S) darauf zugreifen.
 * Anstelle der standardmäßig zugewiesenen *.azurewebsites.net-URL wird der Site möglicherweise ein benutzerdefinierter Domänenname zugewiesen. Weitere Informationen finden Sie im Thema [Map Custom Domain (Zuordnen von benutzerdefinierten Domänen)](/azure/app-service/app-service-web-tutorial-custom-domain).
 * Die Bereitstellung auf einer Stagingsite vor dem Wechsel in die Produktion zum Durchführen weiterer Tests hat sich bewährt. Informationen zur entsprechenden Konfiguration finden Sie im Thema [Create staging environments (Erstellen von Stagingumgebungen)](/azure/app-service/web-sites-staged-publishing).
 * Häufig gestellte Fragen finden Sie unter [Häufig gestellte Fragen (FAQ) zu Azure App Service unter Linux](/azure/app-service/containers/app-service-linux-faq).

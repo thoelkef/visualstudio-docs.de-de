@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 1d7c7ada277d9b9f7259b8ab07d93c48294b252c
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888710"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549965"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installieren von Build Tools in einem Container
 
@@ -134,6 +134,9 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
    > Informationen dazu,welche Containerbetriebssystemversionen auf welchen Hostbetriebssystemversionen unterstützt werden, finden Sie unter [Kompatibilität der Windows-Containerversionen](/virtualization/windowscontainers/deploy-containers/version-compatibility). Informationen zu bekannten Problemen finden Sie unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
 
    ::: moniker-end
+   
+   > [!NOTE]
+   > Der Fehlercode `3010` wird verwendet, um den Erfolg eines erforderlichen Neustarts anzuzeigen. Weitere Informationen finden Sie unter [MsiExec.exe-Fehlermeldungen](/windows/win32/msi/error-codes).
 
 1. Führen Sie den folgenden Befehl innerhalb jenes Verzeichnisses aus.
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie sich die maximale Anzahl zugewiesener Abonnements im Visual Studio-Verwaltungsportal anzeigen lassen können.
-ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605496"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491720"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements
 Mithilfe eines neuen Features im Verwaltungsportal für Visual Studio-Abonnements haben Sie immer im Blick, wie viele Abonnements Sie erworben und zugewiesen haben, und wissen, wie viele Abonnements auf jeder Stufe Sie sowohl während des vergangenen Jahres als auch über die gesamte Dauer Ihrer Vereinbarung hinweg maximal zugewiesen hatten. 
@@ -39,7 +39,7 @@ In der Tabelle oben können Sie z.B. sehen, dass am 13.12.2018 von den 123 im Ra
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>Frage: Inwiefern unterscheiden sich die Informationen, die durch das Feature „Maximum Usage“ (Maximale Auslastung) gewonnen werden können, von den Zuweisungsinformationen, die auf der linken Seite des Portals im Bereich „Overview“ (Übersicht) verfügbar sind?
-Antwort:  Die Informationen in der Übersicht zeigen die *aktuellen* Zuweisungen und die verfügbaren Abonnements für jede Abonnementebene an.  Diese Zahlen können stark von der maximalen Anzahl von Abonnements abweichen, die dem Abonnement während des laufenden Jahres oder während der Laufzeit der Vereinbarung zugewiesen werden.  Mithilfe des Features „Maximum Usage“ (Maximale Auslastung) können Sie sich anzeigen lassen, wann diese Höchstwerte für Zuweisungen erreicht wurden, und wie hoch diese waren.  Dieser Unterschied ist entscheidend, da die Abrechnung für Abonnements während des Abgleichs auf der maximalen Zahl von Abonnements basiert, die zu einem beliebigen Zeitpunkt im Jahr zugewiesen waren. 
+Antwort:  Die Informationen in der Übersicht zeigen die *aktuellen* Zuweisungen und die verfügbaren Abonnements für jede Abonnementebene an.  Diese Zahlen können stark von der maximalen Anzahl von Abonnements abweichen, die dem Abonnement während des laufenden Jahres oder während der Laufzeit der Vereinbarung zugewiesen werden.  Mithilfe des Features „Maximale Nutzung“ können Sie sich anzeigen lassen, wann diese Höchstwerte für Zuweisungen erreicht wurden, und wie hoch diese waren.  Dieser Unterschied ist entscheidend, da die Abrechnung für Abonnements während des Abgleichs auf der maximalen Zahl von Abonnements basiert, die zu einem beliebigen Zeitpunkt im Jahr zugewiesen waren. 
 
 ## <a name="resources"></a>Ressourcen
 - [Whitepaper zur Lizenzierung von Visual Studio](https://aka.ms/vslicensing)

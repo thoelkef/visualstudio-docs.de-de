@@ -1,6 +1,6 @@
 ---
 title: Codenavigationsbefehle
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667011"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316466"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -124,6 +124,15 @@ Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **STRG**+**F12**.
 **Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Implementierung** aus
+
+## <a name="go-to-base"></a>Zu Basis wechseln
+
+Über „Zu Basis wechseln“ können in der Vererbungskette des ausgewählten Elements nach oben navigieren. Wenn es mehrere Ergebnisse gibt, werden sie im Fenster **Zu Basis wechseln** aufgelistet:
+
+Eingabe | Funktion
+------------ | ---
+**Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **ALT**+**POS1**.
+**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Zu Basis wechseln** aus.
 
 ## <a name="call-hierarchy"></a>Aufrufhierarchie
 

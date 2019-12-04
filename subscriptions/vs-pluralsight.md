@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161960"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491289"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
