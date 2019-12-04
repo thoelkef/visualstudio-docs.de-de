@@ -6,14 +6,14 @@ manager: lank
 ms.date: 08/22/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren, die in Volumenlizenzverträgen festgelegt sind, auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen können.
-ms.openlocfilehash: 35a2186346bd50d883e5dddd0c353393d1f8b85e
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: f160d9278453ea87ae8f793692930ff2a95c4537
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000950"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491679"
 ---
-# <a name="accessing-the-administation-portal-as-an-admin-on-a-volume-license-agreement"></a>Zugreifen auf das Verwaltungsportal als Administrator, der in einem Volumenlizenzvertrag festgelegt ist
+# <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Zugreifen auf das Verwaltungsportal als Administrator, der in einem Volumenlizenzvertrag festgelegt ist
 
 Wenn Sie der primäre Kontakt für die Vereinbarung Ihrer Organisation sind, erhalten Sie automatisch Zugriff auf das Portal, sobald der Volumenlizenzvertrag in Kraft getreten ist. Sie erhalten eine automatisch generierte Begrüßungs-E-Mail, in der Sie aufgefordert werden, sich beim Portal anzumelden. In dieser E-Mail werden Sie auch darüber informiert, welche E-Mail-Adresse Sie zur Anmeldung verwenden müssen. 
 

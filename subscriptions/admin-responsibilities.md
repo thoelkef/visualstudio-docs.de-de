@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortlichkeiten von Abonnementadministratoren.
-ms.openlocfilehash: eb5a557d19aafdd36ccf175ec4fc37e482091f80
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5ebdc3cb2448815ee5193020808c51630c5f1c17
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415612"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491533"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Übersicht über die Verantwortlichkeiten des Administrators
 Als Administrator können Sie Abonnements für Ihre Organisation verwalten.  Die Administratorrolle trägt auch die Verantwortung dafür, dass die Abonnements in Übereinstimmung mit den Lizenzbedingungen verwaltet werden. In diesem Artikel werden die Verantwortlichkeiten, Vorteile und Einschränkungen der Administratorrolle beschrieben.

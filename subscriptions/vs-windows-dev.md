@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über das Windows-Entwicklerkonto, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 7ba77979c47d61cd230351a352d85baa7c1eae9a
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174119"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491282"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows-Entwicklerkonto in Visual Studio-Abonnements
 Mit Ihrem Windows-Entwicklerkonto, das in ausgewählten Visual Studio-Abonnements enthalten ist, können Sie kostenlose und kostenpflichtige Windows-Apps an den Windows Store übermitteln.

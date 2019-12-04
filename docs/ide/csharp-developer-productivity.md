@@ -1,21 +1,21 @@
 ---
 title: Steigern Ihrer Produktivität für die .NET-Entwicklung
 description: Überblick über die Navigation, die Codeanalyse, Unittests und andere Funktionen, um schneller besseren .NET Code zu schreiben
-author: kuhlenh
-ms.author: jillfra
+author: mikadumont
+ms.author: tglee
 manager: jillfra
-ms.date: 04/25/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652589"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491632"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivitätsleitfaden für Visual Studio für C#-Entwickler
 
@@ -47,6 +47,7 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 | **F12** (oder **Strg**+**Klicken**) | Gehe zu Definition | Navigieren zum Ort, an dem ein Symbol definiert ist |
 | **Strg**+**F12** | Gehe zu Implementierung | Navigieren von einem Basistyp oder Member zu seinen verschiedenen Implementierungen |
 | **Umschalt**+**F12** | Alle Verweise suchen | Alle Symbol- oder Literalverweise ansehen |
+| **ALT**+**POS1** | Zu Basis wechseln | In der Vererbungskette nach oben navigieren |
 | **STRG**+ **.** (oder **Alt**+**Eingabetaste** im C#-Profil) | Schnellaktionen und Refactorings | Ansehen, welche Codekorrekturen, Aktionen zum Generieren von Code, Refactorings oder anderen Schnellaktionen an der Cursorposition oder für den markierten Code zur Verfügung stehen. |
 | **STRG**+**D** | Zeile duplizieren | Die Codezeile, in der sich der Cursor befindet, wird dupliziert (verfügbar in **Visual Studio 2017 Version 15.6** und höher) |
 | **UMSCHALT**+**ALT**+ **+** / **-** | Erweitern/Reduzieren | Erweitert oder reduziert die aktuelle Auswahl im Editor (verfügbar in **Visual Studio 2017 Version 15.5** und höher) |
@@ -95,6 +96,10 @@ Sie können eine EditorConfig-Datei zum Codieren von Codierungskonventionen verw
 ::: moniker-end
 
 - Das [Coderückschluss-Feature](/visualstudio/intellicode/code-style-inference) von IntelliCode für Visual Studio leitet Codeformate aus vorhandenem Code ab. Dann erstellt das Feature eine nicht leere EditorConfig-Datei, in der Ihre bevorzugten Codeformate bereits definiert sind.
+
+- Konfigurieren Sie den Schweregrad einer Codestilregel direkt im Editor. Wenn Sie derzeit nicht über eine Datei „.editorconfig“ verfügen, wird eine für Sie generiert. Zeigen Sie mit dem Cursor auf den Fehler, die Warnung oder den Vorschlag, und drücken Sie **STRG**+ **.** , um das Menü „Schnellaktionen und Refactorings“ zu öffnen. Wählen Sie **Issues konfigurieren oder unterdrücken** aus. Wählen Sie dann die Regel sowie den Schweregrad aus, den Sie für die Regel konfigurieren möchten. Dadurch wird die vorhandene Editorkonfiguration mit dem neuen Schweregrad für die Regel aktualisiert.
+
+   ![Konfigurieren Sie den Schweregrad einer Codestilregel direkt im Editor.](../ide/media/configure-severity-level.png)
 
 Lesen Sie die Dokumentation zu den [Einstellungen für die .NET-Codierungskonventionen](editorconfig-code-style-settings-reference.md), die auch ein Beispiel einer vollständigen EditorConfig-Datei enthält.
 

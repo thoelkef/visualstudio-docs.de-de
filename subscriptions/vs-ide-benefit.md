@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/14/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099632"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491587"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Der Visual Studio 2019-Vorteils
 
