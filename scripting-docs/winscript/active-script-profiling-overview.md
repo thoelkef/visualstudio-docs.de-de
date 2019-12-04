@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3b85410af965fdb9fe4785efe2cf12051e19436e
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572730"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797356"
 ---
 # <a name="active-script-profiling-overview"></a>Active Script-Profilerstellung - Übersicht
 Die [Active Script Profiler-Schnittstelle](../winscript/reference/active-script-profiler-interfaces.md) erlaubt die Profilerstellung einer Skript-Engine. Die Active Script-Profilerstellung umfasst folgende Teile:  
@@ -41,7 +41,7 @@ Die [Active Script Profiler-Schnittstelle](../winscript/reference/active-script-
  Der Host erstellt die Sprach-Engine und stellt sie mit Skripts bereit, die ausgeführt werden sollen. Ein Smarthost stellt ebenso den Dokumentkontext bereit, der von einem Debugger oder Profiler verwendet werden kann, damit bessere Informationen beim Debuggen oder bei der Profilerstellung bereitgestellt werden können.  
   
 ## <a name="profiler"></a>Profiler  
- Wenn verschiedene Ereignisse eintreten, erhält der Profiler die Aufrufe der Sprach-Engine. Der Profiler muss als COM-Objekt registriert sein und die [IActiveScriptProfilerCallback-Schnittstelle](../winscript/reference/iactivescriptprofilercallback-interface.md) implementieren.  
+ Wenn verschiedene Ereignisse eintreten, erhält der Profiler die Aufrufe der Sprach-Engine. Der Profiler muss als COM-Objekt registriert werden und muss die [iactivescriptprofilercallback-Schnittstelle](../winscript/reference/iactivescriptprofilercallback-interface.md)implementieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Profilerschnittstelle](../winscript/reference/active-script-profiler-interfaces.md)

@@ -36,7 +36,7 @@
           href: container-tools-configure.md
     - name: Konzepte
       items:
-        - name: Erstellen von Container-Apps
+        - name: Wie Visual Studio Containeranwendungen erstellt
           href: container-build.md
     - name: Problembehandlung
       href: troubleshooting-docker-errors.md
