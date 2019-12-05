@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491289"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74707002"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -83,14 +83,14 @@ Antwort: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsig
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Frage: Habe ich Zugriff auf benutzerdefinierte Wiedergabelisten oder -Kanäle mit Lernressourcen?
 Antwort: Ja, als Abonnent von Visual Studio erhalten Sie im Rahmen Ihrer Pluralsight-Schulungsvorteile Zugang zu Expertenkanälen. Diese Kanäle wurden von Microsoft-Experten speziell zusammengestellt und sind auf das Lernen in den Bereichen .Net, Azure, DevOps und Mobilität ausgerichtet. Aktivieren Sie Ihren Pluralsight-Vorteil über Ihr Visual Studio-Abonnement-Portal [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), um auf der Startseite von Pluralsight Zugriff auf diese Kanäle zu erhalten –
 
-•   Scott Hanselmann (.Net, Azure): [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
+•   Scott Hanselmann (.Net, Azure): [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
 
-•   Donovan Brown (DevOps): [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
+•   Donovan Brown (DevOps): [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
 
-•   James Montemagno (Mobilität): [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+•   James Montemagno (Mobilität): [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Frage: Was passiert, wenn mein Pluralsight-Abonnement abläuft?
-Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein Abonnement direkt bei Pluralsight abschließen.  Wenden Sie sich an [Pluralsight](http://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.
+Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein Abonnement direkt bei Pluralsight abschließen.  Wenden Sie sich an [Pluralsight](https://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.
 
 ## <a name="support-resources"></a>Supportressourcen
 - [Pluralsight Help Center](https://help.pluralsight.com/help) bietet Hilfe bei der Durchführung von Pluralsight-Kursen und der Verwendung der Pluralsight-Website.
@@ -98,6 +98,6 @@ Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein 
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
-Sobald Sie Ihr Konto erstellt haben, können Sie mit den Schulungen starten.  Besuchen Sie [https://www.pluralsight.com](http://www.pluralsight.com), und klicken Sie auf **Anmelden** oben rechts auf der Seite, um einen neuen Kurs zu starten oder um zu einem laufenden Kurs zurückzukehren.
+Sobald Sie Ihr Konto erstellt haben, können Sie mit den Schulungen starten.  Besuchen Sie [https://www.pluralsight.com](https://www.pluralsight.com), und klicken Sie auf **Anmelden** oben rechts auf der Seite, um einen neuen Kurs zu starten oder um zu einem laufenden Kurs zurückzukehren.
 
 Profitieren Sie von ihrer eigenen Entwicklungssandbox, indem Sie Ihr [Einzelguthaben für Azure DevTest](vs-azure.md) aktivieren. 
