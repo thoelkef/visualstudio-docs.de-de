@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549959"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706794"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Erstellen und Debuggen von Container-Apps mithilfe von Visual Studio oder der Befehlszeile
+# <a name="how-visual-studio-builds-containerized-apps"></a>Wie Visual Studio Containeranwendungen erstellt
 
-Wenn Sie Projekte erstellen, müssen Sie wissen wie Visual Studio das Dockerfile für den Buildvorgang nutzt: ganz egal, ob Sie Visual Studio oder die Befehlszeile für Builds verwenden.  Aus Leistungsgründen führt Visual Studio einen speziellen Prozess für Container-Apps aus. Wenn Sie den Buildprozess durch die Bearbeitung des Dockerfile anpassen, ist es besonders wichtig, zu verstehen, wie Visual Studio Ihre Projekte erstellt.
+Wenn Sie Projekte erstellen, müssen Sie wissen wie Visual Studio das Dockerfile nutzt: ganz egal, ob Sie Visual Studio oder die Befehlszeile für Builds verwenden.  Aus Leistungsgründen führt Visual Studio einen speziellen Prozess für Container-Apps aus. Wenn Sie den Buildprozess durch die Bearbeitung des Dockerfile anpassen, ist es besonders wichtig, zu verstehen, wie Visual Studio Ihre Projekte erstellt.
 
 Wenn Visual Studio ein Projekt erstellt, das keine Docker-Container verwendet, ruft die IDE MSBuild auf dem lokalen Computer auf und generiert die Ausgabedateien in einem Ordner (in der Regel `bin`) innerhalb Ihres lokalen Projektmappenordners. Bei einem Containerprojekt berücksichtigt der Buildprozess jedoch die Anweisungen des Dockerfile zum Erstellen der Container-App. Das von Visual Studio verwendete Dockerfile ist in mehrere Stages unterteilt. Dieser Prozess basiert auf den *Multistagebuilds* von Docker.
 
@@ -99,7 +99,7 @@ Als *Projektaufwärmphase* wird eine Reihe von Schritten bezeichnet, die erfolge
 - Pullen der Images in der ersten Phase der Dockerfile (der Phase `base` in den meisten Dockerfiles)  
 - Erstellen der Dockerfile und Starten des Containers
 
-Die Aufwärmphase findet nur im Modus **Schnell** statt, sodass für den aktiven Container das Volume des App-Ordners bereitgestellt wird, und Änderungen an der App sollten den Container nicht ungültig machen. Dadurch wird die Debugleistung deutlich verbessert und die Wartezeit für zeitintensiv Aufgaben wie das Pullen großer Images verkürzt.
+Die Aufwärmphase findet nur im Modus **Schnell** statt, sodass für den aktiven Container das Volume des App-Ordners bereitgestellt wird. Das heißt, dass Änderungen an der App den Container nicht ungültig machen sollten. Dadurch wird die Debugleistung deutlich verbessert und die Wartezeit für zeitintensiv Aufgaben wie das Pullen großer Images verkürzt.
 
 ## <a name="volume-mapping"></a>Volumezuordnung
 
