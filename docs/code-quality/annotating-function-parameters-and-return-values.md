@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806808"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879268"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 In diesem Artikel werden typische Verwendungsmöglichkeiten von Anmerkungen für einfache Funktionsparameter – skalare und Zeiger auf Strukturen und Klassen – und die meisten Puffer Typen beschrieben.  Dieser Artikel zeigt auch gängige Verwendungs Muster für Anmerkungen. Weitere Anmerkungen, die sich auf Funktionen beziehen, finden Sie unter [kommentieren von Funktionsverhalten](../code-quality/annotating-function-behavior.md).
@@ -185,9 +185,12 @@ Wenn für die Anmerkungen in der folgenden Tabelle ein Zeiger Parameter mit Anme
 
      Ein Zeiger auf ein Array von `s` Elementen (bzw. Bytes), die von der Funktion geschrieben werden.  Die Array Elemente müssen nicht im Voraus State gültig sein, und die Anzahl der Elemente, die im Post-State gültig sind, ist nicht angegeben.  Wenn Anmerkungen zum Parametertyp vorhanden sind, werden Sie im Post-State angewendet. Betrachten Sie hierzu den folgenden Beispielcode:
 
-     `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
+     ```cpp
+     typedef _Null_terminated_ wchar_t *PWSTR;
+     void MyStringCopy(_Out_writes_(size) PWSTR p1, _In_ size_t size, _In_ PWSTR p2);
+     ```
 
-     In diesem Beispiel stellt der Aufrufer einen Puffer `size` Elemente für `p1` bereit.  `MyStringCopy` macht einige dieser Elemente gültig. Noch wichtiger ist, dass die `_Null_terminated_` Anmerkung auf `PWSTR` bedeutet, dass `p1` im nach Zustand NULL endet.  Auf diese Weise ist die Anzahl der gültigen Elemente immer noch klar definiert, aber eine bestimmte Element Anzahl ist nicht erforderlich.
+     In diesem Beispiel stellt der Aufrufer einen Puffer `size` Elemente für `p1`bereit.  `MyStringCopy` macht einige dieser Elemente gültig. Noch wichtiger ist, dass die `_Null_terminated_` Anmerkung auf `PWSTR` bedeutet, dass `p1` im nach Zustand NULL endet.  Auf diese Weise ist die Anzahl der gültigen Elemente immer noch klar definiert, aber eine bestimmte Element Anzahl ist nicht erforderlich.
 
      Der `_bytes_` Variant gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char` Zeichen folgen die `_bytes_` Variant nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet.
 
@@ -215,13 +218,14 @@ Wenn für die Anmerkungen in der folgenden Tabelle ein Zeiger Parameter mit Anme
 
      `_Out_writes_bytes_all_(s)`
 
-     Ein Zeiger auf ein Array von `s` Elementen.  Die Elemente müssen nicht im Voraus State gültig sein.  Im Post-Zustand müssen die Elemente bis zum `c`-th-Element gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` und `c` von der Elementgröße, oder verwenden Sie den `_bytes_` Variant, der wie folgt definiert ist:
+     Ein Zeiger auf ein Array von `s` Elementen.  Die Elemente müssen nicht im Voraus State gültig sein.  Im Post-Zustand müssen die Elemente bis zum `c`-th-Element gültig sein.  Die `_bytes_` Variante kann verwendet werden, wenn die Größe in Bytes und nicht in der Anzahl der Elemente bekannt ist.
+     
+     Beispiel:
 
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     Das heißt, dass jedes Element, das im Puffer vorhanden ist, bis `s` im Zustand "Pre" ist, im Post-State gültig ist.  Beispiel:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
+     ```cpp
+     void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
+     void *wordcpy(_Out_writes_all_(s) DWORD *p1, _In_reads_(s) DWORD *p2, _In_ int s);
+     ```
 
 - `_Inout_updates_to_(s,c)`
 
@@ -245,19 +249,24 @@ Wenn für die Anmerkungen in der folgenden Tabelle ein Zeiger Parameter mit Anme
 
 - `_In_reads_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
+     Ein Zeiger auf ein Array, für das `p - _Curr_` (`p` minus `_Curr_`) ein gültiger Ausdruck ist.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
+
+    Beispiel:
+    ```cpp
+    int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
+    ```
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
+     Ein Zeiger auf ein mit Null endendes Array, für das Expression `p - _Curr_` (d. h. `p` minus `_Curr_`) ein gültiger Ausdruck ist.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
+     Ein Zeiger auf ein Array, für das `p - _Curr_` (`p` minus `_Curr_`) ein gültiger Ausdruck ist.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
+     Ein Zeiger auf ein mit Null endendes Array, für das `p - _Curr_` (`p` minus `_Curr_`) ein gültiger Ausdruck ist.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
 
 ## <a name="optional-pointer-parameters"></a>Optionale Zeigerparameter
 
@@ -361,7 +370,7 @@ Ausgabe Zeiger Parameter erfordern eine besondere Schreibweise, um die NULL-Wert
 
 ## <a name="output-reference-parameters"></a>Ausgabeverweisparameter
 
-Der Verweis Parameter wird häufig für Ausgabeparameter verwendet.  Für einfache Ausgabe Verweis Parameter – z. b. `int&`–`_Out_` die richtige Semantik bereit.  Wenn der Ausgabewert jedoch ein Zeiger ist – z. b. `int *&`– werden die entsprechenden Zeiger Anmerkungen wie `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Verwenden Sie die folgenden zusammengesetzten Anmerkungen, um die Semantik der Ausgabe Verweis Parameter für Zeiger Typen kurz auszudrücken:
+Der Verweis Parameter wird häufig für Ausgabeparameter verwendet.  Für einfache Ausgabe Verweis Parameter, wie z. b. `int&`, stellt `_Out_` die richtige Semantik bereit.  Wenn der Ausgabewert jedoch ein Zeiger ist, wie z. b. `int *&`, stellen die entsprechenden Zeiger Anmerkungen wie `_Outptr_ int **` nicht die richtige Semantik bereit.  Verwenden Sie die folgenden zusammengesetzten Anmerkungen, um die Semantik der Ausgabe Verweis Parameter für Zeiger Typen kurz auszudrücken:
 
 **Anmerkungen und Beschreibungen**
 
@@ -507,7 +516,7 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
 
 - `_Struct_size_bytes_(size)`
 
-     Gilt für eine Struktur-oder Klassen Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs größer als der deklarierte Typ sein kann, mit der Anzahl der Bytes, die von `size` angegeben werden.  Beispiel:
+     Gilt für eine Struktur-oder Klassen Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs größer als der deklarierte Typ sein kann, mit der Anzahl der Bytes, die von `size`angegeben werden.  Beispiel:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
