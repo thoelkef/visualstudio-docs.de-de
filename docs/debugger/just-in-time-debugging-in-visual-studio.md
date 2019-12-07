@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911459"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903864"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Deaktivieren des Just-In-Time-Debuggers
 
 Das Dialogfeld Just-in-Time-Debugger kann geöffnet werden, wenn ein Fehler in einer laufenden app auftritt, und verhindert, dass die APP fortgesetzt wird.
 
-Der Just-in-Time-Debugger bietet Ihnen die Möglichkeit, Visual Studio zu starten, um den Fehler zu debuggen. Sie müssen [Visual Studio](https://visualstudio.microsoft.com/) oder einen anderen ausgewählten Debugger installiert haben, um ausführliche Informationen zum Fehler anzuzeigen oder zu debuggen.
+Der Just-in-Time-Debugger bietet Ihnen die Möglichkeit, Visual Studio zu starten, um den Fehler zu debuggen. Sie müssen Visual Studio oder einen anderen ausgewählten Debugger installiert haben, um ausführliche Informationen zum Fehler anzuzeigen oder zu debuggen.
 
-Wenn Sie ein Visual Studio-Benutzer sind und versuchen möchten, den Fehler zu debuggen, lesen Sie [Debuggen mithilfe des Just-in-Time-Debuggers](../debugger/debug-using-the-just-in-time-debugger.md). Wenn Sie den Fehler nicht beheben können oder den Just-in-Time-Debugger nicht öffnen möchten, können Sie [Just-in-Time-Debuggen in Visual Studio deaktivieren](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Wenn Sie bereits ein Visual Studio-Benutzer sind und versuchen möchten, den Fehler zu debuggen, lesen Sie [Debuggen mithilfe des Just-in-Time-Debuggers](../debugger/debug-using-the-just-in-time-debugger.md). Wenn Sie den Fehler nicht beheben können oder den Just-in-Time-Debugger nicht öffnen möchten, können Sie [Just-in-Time-Debuggen in Visual Studio deaktivieren](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
 Wenn Sie Visual Studio installiert haben, aber nicht mehr tun, müssen Sie möglicherweise [das Just-in-Time-Debuggen aus der Windows-Registrierung deaktivieren](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
 
