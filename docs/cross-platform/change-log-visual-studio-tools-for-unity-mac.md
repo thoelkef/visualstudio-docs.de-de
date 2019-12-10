@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Mac) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185962"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771542"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="2420"></a>2.4.2.0
+
+Veröffentlichung: 3. Dezember 2019
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Diagnosen mit benutzerdefinierten Schnittstellen korrigiert.
+
+  - QuickInfos mit falsch formatierten Ausdrücken korrigiert.
+  
+## <a name="2410"></a>2.4.1.0
+
+Veröffentlichung: 6. November 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Unterstützung für Unity-Hintergrundprozesse hinzugefügt. (Der Debugger kann automatisch eine Verbindung mit dem Hauptprozess anstatt mit einem untergeordneten Prozess herstellen).
+
+  - QuickInfo für Unity-Meldungen hinzugefügt, die Informationen zur zugehörigen Dokumentation anzeigt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Analysetool für Tagvergleich, `UNT0002`, mit erweiterten Binär- und Aufrufausdrücken korrigiert.
+
+### <a name="deprecated-features"></a>Veraltete Features
+
+- **Integration:**
+
+  - In Zukunft unterstützen die Visual Studio-Tools für Unity nur noch Visual Studio 2017 und höher.
+
+## <a name="2400"></a>2.4.0.0
+
+Veröffentlichung: 15. Oktober 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Suppressor für `IDE0060` (nicht verwendeter Parameter) für alle Unity-Meldungen hinzugefügt.
+
+  - QuickInfo für mit `TooltipAttribute` markierte Felder hinzugefügt. (Dies funktioniert auch für einen einfachen get-Accessor, der dieses Feld verwendet).
 
 ## <a name="2330"></a>2.3.3.0
 
@@ -83,9 +131,9 @@ Veröffentlicht am 13. August 2019
 
   - Probleme mit Ausnahmen bei der Einzelschrittausführung wurden behoben.
 
-  - Die Auswertung von Pseudobezeichnen (z. B. $exception) wurde behoben.
+  - Behoben: Auswertung von Pseudobezeichnen (z. B. $exception)
 
-  - Absturz bei Dereferenzierung ungültiger Adressen wurde behoben.  
+  - Behoben: Absturz bei Dereferenzierung ungültiger Adressen  
 
   - Ein Problem bei entladenen AppDomains wurde behoben.
 

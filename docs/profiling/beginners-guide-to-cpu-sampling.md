@@ -13,14 +13,15 @@ ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128218"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779804"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Einführung in CPU-Sampling
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung von **Sampling**-Daten.
@@ -78,7 +79,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
 
 1. In der Ansicht **Zusammenfassung** finden Sie unter **Langsamster Pfad** den Branch der Anwendungsaufrufstruktur mit den höchsten inklusiven Samplings. Hierbei handelt es sich um den Ausführungspfad, der beim Sammeln der Daten am aktivsten war. Hohe inklusive Werte können darauf hindeuten, dass der Algorithmus zum Generieren der Aufrufstruktur optimiert werden kann. Suchen Sie im Code die Funktion, die im Pfad am niedrigsten ist. Beachten Sie, dass der Pfad auch Systemfunktionen oder Funktionen in externen Modulen enthalten kann.
 
-     ![Profiler-Langsamster Pfad](../profiling/media/profiler_hotpath.png "Profiler_HotPath")
+     ![Profiler – langsamster Pfad](../profiling/media/profiler_hotpath.png "Profiler_HotPath")
 
     1. Mit dem Wert **Inklusive Samplings** wird das Pensum angegeben, das von der Funktion und den von der Funktion aufgerufenen Funktionen bewältigt wurde. Ein hohes Maß an inklusiven Samplings deutet auf die insgesamt aufwändigsten Funktionen hin.
 
@@ -94,13 +95,13 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
 
 3. Kehren Sie zum Fortsetzen der Analyse zur Ansicht **Zusammenfassung** zurück, indem Sie in der Dropdownliste **Ansicht** die Option **Zusammenfassung** auswählen. Untersuchen Sie dann die Funktionen unter **Funktionen, die die meisten Einzelaufgaben durchführen**. Diese Liste enthält die Funktionen mit den höchsten exklusiven Samplings. Durch den Code im Funktionstext dieser Funktionen wurde eine Vielzahl von Aufgaben ausgeführt, und er lässt sich unter Umständen optimieren. Klicken Sie zur ausführlicheren Analyse einer bestimmten Funktion auf den Funktionsnamen, um sie in der Ansicht **Funktionsdetails** anzuzeigen.
 
-     ![Liste von Funktionen, die die meiste Arbeit erledigen](../profiling/media/functions_mostwork.png "Functions_MostWork")
+     ![Liste von Funktionen, die die meisten Aufgaben ausführen](../profiling/media/functions_mostwork.png "Functions_MostWork")
 
      Wenn Sie mit der Untersuchung der Profilerstellung fortfahren möchten, können Sie mithilfe der Zeitachse in der Ansicht **Zusammenfassung** ein Segment der Profilerstellungsdaten erneut analysieren, um die Werte für **Langsamster Pfad** und **Funktionen, die die meisten Einzelaufgaben durchführen** eines ausgewählten Segments anzuzeigen. So werden bei der Untersuchung einer kleineren Spitze auf der Zeitachse unter Umständen aufwändige Aufrufstrukturen und Funktionen ersichtlich, die bei der Analyse der gesamten Profilerstellung nicht sichtbar waren.
 
      Wählen Sie im Feld **Zeitachsenübersicht** ein Segment aus, und klicken Sie dann auf **Nach Auswahl filtern**, um ein Segment erneut zu analysieren.
 
-     ![Leistungszusammenfassung - Zeitachse anzeigen](../profiling/media/performancesummary.png "PerformanceSummary")
+     ![Leistungszusammenfassung – Zeitachse anzeigen](../profiling/media/performancesummary.png "PerformanceSummary")
 
 4. Der Profiler schlägt zudem anhand eines Satzes von Regeln Möglichkeiten zur Verbesserung der Profilerstellungsausführung vor und erkennt Leistungsprobleme. Wenn ein Problem gefunden wurde, wird im Fenster **Fehlerliste** eine Warnung angezeigt. Klicken Sie zum Öffnen des Fensters **Fehlerliste** im Menü **Ansicht** auf **Fehlerliste**.
 

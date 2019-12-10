@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
+ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026489"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74567000"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
@@ -46,7 +46,17 @@ Gehen Sie folgendermaßen vor:
 
 ## <a name="modify-workloads"></a>Ändern von Arbeitsauslastungen
 
- [Workloads](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) enthalten die Funktionen, die Sie für die verwendete Programmiersprache oder Plattform benötigen. Verwenden Sie Arbeitsauslastungen, um Visual Studio so zu ändern, dass die Arbeit, die Sie ausführen möchten zum gewünschten Zeitpunkt unterstützt werden.
+::: moniker range="vs-2017"
+
+ [Workloads](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) enthalten die Funktionen, die Sie für die verwendete Programmiersprache oder Plattform benötigen. Verwenden Sie Arbeitsauslastungen, um Visual Studio so zu ändern, dass die Arbeit, die Sie ausführen möchten zum gewünschten Zeitpunkt unterstützt werden.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ Arbeitsauslastungen enthalten die Features, die Sie für die verwendete Programmiersprache oder Plattform benötigen. Verwenden Sie Arbeitsauslastungen, um Visual Studio so zu ändern, dass die Arbeit, die Sie ausführen möchten zum gewünschten Zeitpunkt unterstützt werden.
+
+::: moniker-end
 
 >[!NOTE]
 > Beim folgenden Verfahren wird davon ausgegangen, dass Sie über eine Internetverbindung verfügen.
@@ -66,15 +76,15 @@ Gehen Sie folgendermaßen vor:
 
 1. Starten Sie das Installationsprogramm, indem Sie darauf klicken oder tippen, und wählen Sie dann **Ändern**.
 
-     ![Starten oder Ändern von Visual Studio](media/modify-visual-studio.png "Ändern von Visual Studio 2017")
+     ![Starten oder Ändern von Visual Studio](media/modify-visual-studio.png "Ändern von Visual Studio 2017")
 
      Bei einem ausstehenden Update befindet sich die Schaltfläche „Ändern“ an einer anderen Stelle. Auf diese Weise können Sie bei Bedarf Visual Studio ohne Aktualisierung ändern. Klicken Sie auf **Mehr**, und wählen Sie dann **Ändern**.
 
-     ![Aktualisieren oder Ändern von Visual Studio](media/modify-or-update-visual-studio.png "Aktualisieren oder Ändern von Visual Studio 2017")
+     ![Aktualisieren oder Ändern von Visual Studio](media/modify-or-update-visual-studio.png "Aktualisieren oder Ändern von Visual Studio 2017")
 
 1. Aktivieren oder deaktivieren Sie auf dem Bildschirm **Arbeitsauslastungen** die Arbeitsauslastungen, die Sie installieren bzw. deinstallieren möchten.
 
-    ![Visual Studio 2017-Setupdialogfeld](media/vs2017-modify-workloads.PNG "Auswählen einer Arbeitsauslastung in Visual Studio 2017")
+    ![Visual Studio 2017-Setupdialogfeld](media/vs2017-modify-workloads.PNG "Auswählen einer Arbeitsauslastung in Visual Studio 2017")
 
 1. Wählen Sie erneut **Ändern**.
 
@@ -88,7 +98,7 @@ Gehen Sie folgendermaßen vor:
 
      Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
 
-     ![Öffnen des Visual Studio-Installers über Windows](media/vs-2019/vs-installer-windows-start.png "Öffnen des Visual Studio-Installers")
+     ![Öffnen des Visual Studio-Installers unter Windows](media/vs-2019/vs-installer-windows-start.png "Öffnen des Visual Studio-Installers")
 
      > [!NOTE]
      > Sie können den Visual Studio-Installer auch an folgendem Speicherort finden:
@@ -99,15 +109,15 @@ Gehen Sie folgendermaßen vor:
 
 1. Suchen Sie im Installer nach der Edition von Visual Studio, die Sie installiert haben, und klicken Sie dann auf **Ändern**.
 
-     ![Aktualisieren oder Ändern von Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualisieren oder Ändern von Visual Studio 2019")
+     ![Aktualisieren oder Ändern von Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualisieren oder Ändern von Visual Studio 2019")
 
 1. Wählen Sie auf der Registerkarte **Workloads** die Workloads aus oder ab, die Sie installieren bzw. deinstallieren möchten.
 
-    ![Visual Studio 2019-Setupdialogfeld](media/vs-2019/vs-installer-modify-workloads.png "Auswählen einer Workload in Visual Studio 2019")
+    ![Visual Studio 2019-Setupdialogfeld](media/vs-2019/vs-installer-modify-workloads.png "Auswählen einer Arbeitsauslastung in Visual Studio 2019")
 
 1. Wählen Sie aus, ob Sie die Standardoption **Beim Herunterladen installieren** oder die Option **Alle herunterladen und dann installieren** verwenden möchten.
 
-    ![Visual Studio 2019-Setupoptionen](media/vs-2019/vs-installer-choose-install-or-download.png "Auswählen von „Beim Herunterladen installieren“ oder „Alle herunterladen und dann installieren“")
+    ![Visual Studio 2019-Setupoptionen](media/vs-2019/vs-installer-choose-install-or-download.png "Auswählen von „Beim Herunterladen installieren“ oder „Alle herunterladen und dann installieren“")
 
     Die Option „Alle herunterladen und dann installieren“ ist praktisch, wenn Sie zuerst alle Dateien herunterladen und die Installation später durchführen möchten.
 
@@ -119,13 +129,12 @@ Gehen Sie folgendermaßen vor:
 
 ## <a name="modify-individual-components"></a>Ändern einzelner Komponenten
 
-Klicken Sie im Visual Studio-Installer auf die Registerkarte **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen, wenn Sie keine [Workloads](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) installieren möchten, um Ihre Visual Studio-Installation anzupassen.
+Wenn Sie keine Workloads installieren möchten, um Ihre Visual Studio-Installation anzupassen, wählen Sie die Registerkarte **Einzelne Komponenten** im Visual Studio-Installer aus, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Weitere Informationen zu Visual Studio-Workloads](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
 * [Liste der Workload- und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
 * [Visual Studio aktualisieren](update-visual-studio.md)
 * [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)

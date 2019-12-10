@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.openlocfilehash: 8125c5cbad2ff44dabbf1b0c5014c313d75d2e71
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604698"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797369"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements
 Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
@@ -41,7 +41,8 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Ab
    > [!div class="mx-imgBorder"]
    > ![Schaltfläche „Hinzufügen“ auswählen](media/add-button.png)
 
-4. Nachdem Sie den Abonnenten hinzugefügt haben, wird automatisch eine E-Mail zur Zuweisung mit weiteren Anweisungen an den neuen Abonnenten gesendet. Sie können die E-Mail zur Zuweisung jederzeit erneut senden, indem Sie den Abonnenten auswählen und auf die Schaltfläche **Erneut senden** im oberen Menü klicken.
+## <a name="resend-assignment-emails"></a>Erneutes Senden von Zuweisungs-E-Mails
+Nachdem Sie einen Abonnenten hinzugefügt haben, wird automatisch eine Zuweisungs-E-Mail mit weiteren Anweisungen an den neuen Abonnenten gesendet. Sie können die Zuweisungs-E-Mail jederzeit erneut senden, indem Sie den Abonnenten auswählen und im oberen Menü auf die Schaltfläche **Erneut senden** klicken.  Um E-Mails an mehrere Benutzer erneut zu senden, halten Sie die Taste **STRG** gedrückt, während Sie die Abonnenten auswählen.  Wenn Sie auf die Schaltfläche **Erneut senden** klicken, wird ein Dialogfeld angezeigt, in dem Sie bestätigen können, dass Sie die E-Mail an diese Abonnenten erneut senden möchten.  
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Müssen Sie viele Benutzer hinzufügen?  Erfahren Sie, wie Sie [mehreren Abonnenten](assign-license-bulk.md) Abonnements zuweisen.

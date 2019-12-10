@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636553"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777945"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -403,6 +403,10 @@ Verwenden Sie Chrome für dieses Szenario.
    Beenden Sie auch alle Instanzen von Chrome, wenn Sie Microsoft Edge (Chromium) verwenden. Da beide Browser die Chromium-Codebase nutzen, führt dies zu den besten Ergebnissen.
    ::: moniker-end
 
+   ::: moniker range=">=vs-2019"
+   Beenden Sie auch alle Instanzen von Chrome, wenn Sie Microsoft Edge (Chromium) verwenden. Da beide Browser die Chromium-Codebase nutzen, führt dies zu den besten Ergebnissen.
+   ::: moniker-end
+
 2. Starten Sie Ihren Browser mit aktiviertem Debuggen.
 
     ::: moniker range=">=vs-2019"
@@ -513,7 +517,6 @@ Verwenden Sie Chrome für dieses Szenario.
       * Haben Sie alle Browserinstanzen, einschließlich der Chrome-Erweiterungen (mithilfe des Task-Managers) geschlossen, damit Sie den Browser im Debugmodus ausführen können? Stellen Sie sicher, dass Sie den Browser im Debugmodus starten.
 
       * Stellen Sie sicher, dass Ihre Quellzuordnungsdatei einen Verweis auf *./app.tsx* und nicht auf *webpack:///./app.tsx* enthält, da dies den Visual Studio-Debugger daran hindern würde, *app.tsx* zu finden.
-
        Wenn Sie den Code in *app.tsx* unterbrechen müssen und nicht in der Lage dazu sind, können Sie alternativ versuchen, die `debugger;`-Anweisung in *app.tsx* zu verwenden oder Breakpoints in den Chrome-Entwicklertools (oder in den F12-Tools für Microsoft Edge) festzulegen.
 
    * Wenn Sie Code in *app bundle.js* unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *app bundle.js.map*.
