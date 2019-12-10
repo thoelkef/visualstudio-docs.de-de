@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a98164488d548a15c07e67b9a02cad2341f7300b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985651"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955048"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Registrierungseinträge für VSTO-Add-ins
   Sie müssen einen bestimmten Satz von Registrierungseinträgen erstellen, wenn Sie VSTO-Add-Ins bereitstellen, die mithilfe von Visual Studio erstellt werden. Diese Registrierungseinträge enthalten Informationen, mit denen die Microsoft Office-Anwendung das VSTO-Add-In erkennt und lädt.
@@ -40,45 +40,38 @@ ms.locfileid: "72985651"
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrieren von VSTO-Add-Ins für den aktuellen Benutzer im Vergleich zu allen Benutzern
  Wenn ein VSTO-Add-In installiert ist, kann es auf zwei Arten registriert werden:
 
-- Nur für den aktuellen Benutzer (d. h., er ist nur für den Benutzer verfügbar, der bei der Installation des VSTO-Add-Ins auf dem Computer angemeldet ist). In diesem Fall werden die Registrierungseinträge unter **HKEY_CURRENT_USER**erstellt.
+- Nur für den aktuellen Benutzer (d. h., er ist nur für den Benutzer verfügbar, der bei der Installation des VSTO-Add-Ins auf dem Computer angemeldet ist). In diesem Fall werden die Registrierungseinträge unter dem **HKEY_CURRENT_USER**erstellt.
 
 - Für alle Benutzer (d. h. jeder Benutzer, der sich beim Computer anmeldet, kann das VSTO-Add-in verwenden). In diesem Fall werden die Registrierungseinträge unter **HKEY_LOCAL_MACHINE**erstellt.
 
   Alle VSTO-Add-Ins, die Sie mit Visual Studio erstellen, können für den aktuellen Benutzer registriert werden. VSTO-Add-Ins können für alle Benutzer jedoch nur in bestimmten Szenarien registriert werden. Diese Szenarien hängen von der Version von Microsoft Office auf dem Computer und davon ab, wie das VSTO-Add-In bereitgestellt wurde.
 
-### <a name="microsoft-office-version"></a>Microsoft Office-Version
- In Office-Anwendungen können VSTO-Add-Ins geladen werden, die unter **HKEY_LOCAL_MACHINE** oder **HKEY_CURRENT_USER**registriert sind.
-
- Zum Laden von VSTO-Add-Ins, die unter **HKEY_LOCAL_MACHINE**registriert sind, muss auf den Computern das Update-Paket 976477 installiert sein. Weitere Informationen finden Sie unter [http://go.microsoft.com/fwlink/?LinkId=184923](https://support.microsoft.com/help/976811/a-2007-office-system-application-does-not-load-an-add-in-that-is-devel).
-
 ### <a name="deployment-type"></a>Bereitstellungstyp
  Wenn Sie ClickOnce verwenden, um ein VSTO-Add-In bereitzustellen, kann das VSTO-Add-In nur für den aktuellen Benutzer registriert werden. Dies liegt daran, dass ClickOnce nur das Erstellen von Schlüsseln unter **HKEY_CURRENT_USER**unterstützt. Wenn Sie ein VSTO-Add-In für alle Benutzer auf einem Computer registrieren möchten, müssen Sie Windows Installer verwenden, um das VSTO-Add-In bereitzustellen. Weitere Informationen zu diesen Bereitstellungs Typen finden Sie unter Bereitstellen einer Office-Projekt Mappe [mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) und bereitstellen [einer Office](../vsto/deploying-an-office-solution-by-using-windows-installer.md)-Projekt Mappe mit Windows Installer.
 
 ## <a name="registry-entries"></a>Registrierungseinträge
- Die erforderlichen VSTO-Add-in-Registrierungseinträge befinden sich unter dem folgenden Registrierungsschlüssel für alle Anwendungen mit Ausnahme von Visio, wobei *root* **HKEY_CURRENT_USER** oder **HKEY_LOCAL_MACHINE**ist.
+ Die erforderlichen VSTO-Add-in-Registrierungseinträge befinden sich unter den folgenden Registrierungs Schlüsseln, bei denen *root* **HKEY_CURRENT_USER** oder **HKEY_LOCAL_MACHINE** ist, je nachdem, ob die Installation für den aktuellen Benutzer oder für alle Benutzer vorgesehen ist.
 
- **Alle Anwendungen mit Ausnahme von Visio**
+|Office-Anwendung|Konfigurationspfad|
+|------------------|------------------|
+|Visio|*Root*\Software\Microsoft\\*Visio*\Addins\\*Add-in-ID*|
+|Alle anderen|*Root*\software\microsoft\office\\*Office-Anwendungsname*\Addins\\*Add-in-ID*|
 
-|Office-Version|Konfigurationspfad|
-|--------------------|------------------------|
-|32 Bit|*Root*\software\microsoft\office\\*Anwendungsname*\Addins\\*Add-in-ID*|
-|64 Bit|*Root*\software\wow6432node \Microsoft\Office\\*Anwendungsname*\Addins\\*Add-in-ID*|
-
- **Visio**
-
-|Office-Version|Konfigurationspfad|
-|--------------------|------------------------|
-|32 Bit|*Root*\software\microsoft\visio\addins\\*Add-in-ID*|
-|64 Bit|*Root*\software\wow6432node \visio\addins\\*Add-in-ID*|
+> [!NOTE]
+> Wenn das Installationsprogramm für alle Benutzer unter 64-Bit-Windows verwendet wird, wird empfohlen, dass es zwei Registrierungseinträge enthält, eine unter dem HKEY_LOCAL_MACHINE \Software\Microsoft und eine in der HKEY_LOCAL_MACHINE \SOFTWARE\\**WOW6432Node**\Microsoft Hive. Dies liegt daran, dass es Benutzern möglich ist, entweder 32-Bit-oder 64-Bit-Versionen von Office auf dem Computer zu verwenden.
+>
+>Wenn das Installationsprogramm den aktuellen Benutzer als Ziel verwendet, muss es nicht auf dem WOW6432Node installiert werden, da der HKEY_CURRENT_USER \softwareipfad freigegeben ist.
+>
+>Weitere Informationen finden Sie [unter 32-Bit-und 64-Bit-Anwendungsdaten in der Registrierung](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
 
  In der folgenden Tabelle werden die Einträge in diesem Registrierungsschlüssel aufgeführt.
 
-|Eingabe|Geben Sie Folgendes ein:|Wert|
+|Eingabe|Typ|{2&gt;Wert&lt;2}|
 |-----------|----------|-----------|
-|**Beschreibung**|REG_SZ|Erforderlich. Eine kurze Beschreibung des VSTO-Add-Ins.<br /><br /> Diese Beschreibung wird angezeigt, wenn der Benutzer das VSTO-Add-In in der Microsoft Office-Anwendung im Dialogfeld **Optionen** im Bereich **Add-Ins** auswählt.|
-|**FriendlyName**|REG_SZ|Erforderlich. Ein beschreibender Name des VSTO-Add-Ins, der in der Microsoft Office-Anwendung im Dialogfeld **COM-Add-Ins** angezeigt wird. Der Standardwert ist die ID des VSTO-Add-Ins.|
-|**LoadBehavior**|REG_DWORD|Erforderlich. Ein Wert, der zusätzlich zum aktuellen Zustand des VSTO-Add-Ins (geladen oder entladen) angibt, wann die Anwendung das VSTO-Add-In laden soll.<br /><br /> Standardmäßig ist dieser Wert auf 3 festgelegt, was bedeutet, dass das VSTO-Add-In beim Start geladen wird. Weitere Informationen finden Sie unter [LoadBehavior-Werte](#LoadBehavior). **Hinweis:**  Wenn ein Benutzer das VSTO-Add-in deaktiviert, ändert diese Aktion den **LoadBehavior** -Wert in der Registrierungs Struktur **HKEY_CURRENT_USER** . Für jeden Benutzer überschreibt der Wert des **LoadBehavior** -Werts in der HKEY_CURRENT_USER-Struktur das in der **HKEY_LOCAL_MACHINE** Hive definierte standardmäßige **LoadBehavior** .|
-|**Manifest**|REG_SZ|Erforderlich. Der vollständige Pfad des Bereitstellungsmanifests für das VSTO-Add-In. Bei dem Pfad kann es sich um einen Speicherort auf dem lokalen Computer, eine Netzwerkfreigabe (UNC) oder um einen Webserver (HTTP) handeln.<br /><br /> Wenn Sie Windows Installer zum Bereitstellen der Lösung verwenden, müssen **Sie dem manifestressfad das** Präfix **file:///** hinzufügen. Sie müssen auch die Zeichenfolge  **&#124;vstolocal** (d. h. das Pipezeichen **&#124;** , gefolgt von **vstolocal**) an das Ende dieses Pfads anfügen. Dadurch wird sichergestellt, dass die Projektmappe aus dem Installationsordner geladen wird und nicht aus dem ClickOnce-Cache. Weitere Informationen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution-by-using-windows-installer.md)-Projekt Mappe mit Windows Installer. **Hinweis:**  Wenn Sie ein VSTO-Add-in auf dem Entwicklungs Computer erstellen, fügt Visual Studio automatisch die  **&#124;vstolocal** -Zeichenfolge an diesen Registrierungs Eintrag an.|
+|**Beschreibung**|REG_SZ|Erforderlich Eine kurze Beschreibung des VSTO-Add-Ins.<br /><br /> Diese Beschreibung wird angezeigt, wenn der Benutzer das VSTO-Add-In in der Microsoft Office-Anwendung im Dialogfeld **Optionen** im Bereich **Add-Ins** auswählt.|
+|**FriendlyName**|REG_SZ|Erforderlich Ein beschreibender Name des VSTO-Add-Ins, der in der Microsoft Office-Anwendung im Dialogfeld **COM-Add-Ins** angezeigt wird. Der Standardwert ist die ID des VSTO-Add-Ins.|
+|**LoadBehavior**|REG_DWORD|Erforderlich Ein Wert, der zusätzlich zum aktuellen Zustand des VSTO-Add-Ins (geladen oder entladen) angibt, wann die Anwendung das VSTO-Add-In laden soll.<br /><br /> Standardmäßig ist dieser Wert auf 3 festgelegt, was bedeutet, dass das VSTO-Add-In beim Start geladen wird. Weitere Informationen finden Sie unter [LoadBehavior-Werte](#LoadBehavior). **Hinweis:**  Wenn ein Benutzer das VSTO-Add-in deaktiviert, ändert diese Aktion den **LoadBehavior** -Wert in der **HKEY_CURRENT_USER** Registrierungs Struktur. Der Wert des **LoadBehavior** -Werts in der HKEY_CURRENT_USER Hive überschreibt für jeden Benutzer das in der **HKEY_LOCAL_MACHINE** Hive definierte standardmäßige **LoadBehavior** .|
+|**Manifest**|REG_SZ|Erforderlich Der vollständige Pfad des Bereitstellungsmanifests für das VSTO-Add-In. Bei dem Pfad kann es sich um einen Speicherort auf dem lokalen Computer, eine Netzwerkfreigabe (UNC) oder um einen Webserver (HTTP) handeln.<br /><br /> Wenn Sie Windows Installer zum Bereitstellen der Lösung verwenden, müssen **Sie dem manifestressfad das** Präfix **file:///** hinzufügen. Sie müssen auch die Zeichenfolge  **&#124;vstolocal** (d. h. das Pipezeichen **&#124;** , gefolgt von **vstolocal**) an das Ende dieses Pfads anfügen. Dadurch wird sichergestellt, dass die Projektmappe aus dem Installationsordner geladen wird und nicht aus dem ClickOnce-Cache. Weitere Informationen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution-by-using-windows-installer.md)-Projekt Mappe mit Windows Installer. **Hinweis:**  Wenn Sie ein VSTO-Add-in auf dem Entwicklungs Computer erstellen, fügt Visual Studio automatisch die  **&#124;vstolocal** -Zeichenfolge an diesen Registrierungs Eintrag an.|
 
 ### <a name="OutlookEntries"></a>Registrierungseinträge für Outlook-Formular Bereiche
  Wenn Sie einen benutzerdefinierten Formularbereich in einem VSTO-Add-In für Outlook erstellen, werden zusätzliche Registrierungseinträge verwendet, um den Formularbereich für Outlook zu registrieren. Diese Einträge werden unter einem anderen Registrierungsschlüssel für jede Nachrichtenklasse erstellt, die vom Formularbereich unterstützt wird. Diese Registrierungsschlüssel befinden sich am folgenden Speicherort, wobei root **HKEY_CURRENT_USER** oder **HKEY_LOCAL_MACHINE**ist.

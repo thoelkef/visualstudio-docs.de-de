@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211333"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777911"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
-**Für [Release 16.3](/visualstudio/releases/2019/release-notes/) aktualisiert**
+**Für [Release 16.4](/visualstudio/releases/2019/release-notes/) aktualisiert**
 
 >[!div class="button"]
 >[Herunterladen von Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -110,7 +110,7 @@ Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience
 
 ### <a name="net-core"></a>.NET Core
 
-**Neu in Version 16.3:** Unterstützung für .NET Core 3.0 wurde integriert. .NET Core 3.0 ist plattformübergreifend, Open Source und wird vollständig von Microsoft unterstützt. 
+**Neu in Version 16.3:** Unterstützung für .NET Core 3.0 wurde integriert. .NET Core 3.0 ist plattformübergreifend, Open Source und wird vollständig von Microsoft unterstützt.
 
 Weitere Informationen finden Sie im Blogbeitrag zur [Ankündigung von .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
@@ -195,6 +195,12 @@ Weitere Informationen finden Sie auf der Seite [Debuggen von aktiven ASP.NET Azu
 **Neu in Version 16.2:** Sie können einen Breakpoint in einer JavaScript-Anwendung festlegen und eine Debugsitzung starten, indem Sie den Browser [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) verwenden. Daraufhin öffnet Visual Studio ein neues Browserfenster mit aktiviertem Debuggen, das Sie dann zum Durchlaufen der JavaScript-Anwendung in Visual Studio verwenden können.
 
    ![Screenshot: JavaScript-Code, der im Browser gerendert wird](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>Tool zum Anheften von Eigenschaften
+
+**Neu in 16.4**: Mit dem neuen Tool zum Anheften von Eigenschaften ist es jetzt einfacher, beim Debuggen Objekte anhand ihrer Eigenschaften zu identifizieren. Bewegen Sie einfach im Debuggerfenster der Überwachungsfenster, Fenster für lokale Variablen und Fenster für automatische Tools den Cursor über eine Eigenschaft, die Sie anzeigen möchten, und klicken Sie auf das Nadelsymbol: Oben im Fenster werden sofort die gesuchten Informationen angezeigt!
+
+   ![Animation: So heften Sie Eigenschaften im Visual Studio-Debugger mithilfe des Tools zum Anheften von Eigenschaften an.](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>Ausblick
 

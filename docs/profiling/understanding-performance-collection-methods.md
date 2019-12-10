@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821228"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778088"
 ---
 # <a name="understand-performance-collection-methods"></a>Grundlagen zu Leistungsauflistungsmethoden
 
@@ -25,7 +26,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
 > [!NOTE]
 > Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[Sampling](#sampling)|Sammelt statistische Daten zu den von einer Anwendung ausgeführten Aufgaben.|
 |[Instrumentierung](#instrumentation)|Dient zum Sammeln ausführlicher Zeitsteuerungsinformationen zu den einzelnen Funktionsaufrufen.|
@@ -121,7 +122,7 @@ Die .NET-Speicherprofilerstellung kann sowohl im Sampling- als auch im Instrumen
 
 Bei der Profilerstellung für die Ebeneninteraktion werden einer Profilerstellungsdatendatei Informationen zu synchronen [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]-Aufrufen zwischen einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Seite oder einer anderen Anwendung und einer [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]-Datenbank hinzugefügt. Die Daten umfassen Anzahl und Zeit der Aufrufe sowie die höchsten und niedrigsten Zeiten. Ebeneninteraktionsdaten können den Profilerstellungsdaten hinzugefügt werden, die mithilfe der Sampling-, Instrumentierungs-, .NET-Speicher- oder Parallelitätsmethode gesammelt wurden.
 
-![Profilerstellungsdaten der Ebeneninteraktion](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Daten des Ebeneninteraktionsprofils](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 Von den Profilerstellungstools gesammelte Ebeneninteraktionsdaten
 

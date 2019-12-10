@@ -1,18 +1,18 @@
 ---
 title: Konfigurieren von Komponententests mit einer RUNSETTINGS-Datei
-ms.date: 06/14/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665138"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771492"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -38,11 +38,52 @@ Die Datei wird im Menü „Testeinstellungen“ angezeigt, und Sie können sie a
 
 ::: moniker range=">=vs-2019"
 
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019, Version 16.3 und früher
+
 Wählen Sie **Test** > **Einstellungsdatei auswählen** aus, um eine Testlaufeinstellungsdatei anzugeben. Navigieren Sie zur *.runsettings*-Datei, und wählen Sie diese aus.
 
 ![Menü „Datei für Testeinstellungen auswählen“ in Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
 Die Datei wird im Menü „Test“ angezeigt, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
+
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019, Version 16.4 und höher
+
+Es gibt drei Möglichkeiten, in Visual Studio 2019, Version 16.4 und höher, eine Datei mit Laufzeiteinstellungen anzugeben:
+
+- Fügen Sie entweder über die Projektdatei oder eine Directory.Build.props-Datei eine Buildeigenschaft zu einem Projekt hinzu. Die Datei mit Laufzeiteinstellungen für ein Projekt wird durch die Eigenschaft **RunSettingsFilePath** angegeben. 
+
+    - Laufzeiteinstellungen auf Projektebene werden zurzeit in C#-, VB-, C++- und F#-Projekten unterstützt.
+    - Eine für ein Projekt angegebene Datei setzt alle anderen in der Projektmappe angegebenen Laufzeiteinstellungen außer Kraft.
+
+    Beispiel für die Angabe einer *RUNSETTINGS*-Datei für ein Projekt:
+    
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+      </PropertyGroup>
+      ...
+    </Project>
+    ```
+
+- Fügen Sie im Stammverzeichnis Ihrer Projektmappe eine Datei mit Laufzeiteinstellungen namens „RUNSETTINGS“ ein.
+
+  Wenn die automatische Erkennung der Datei mit Laufzeiteinstellungen aktiviert ist, werden die Einstellungen in dieser Datei auf alle ausgeführten Tests angewendet. Die können die automatische Erkennung der RUNSETTINGS-Datei an zwei Stellen aktivieren:
+  
+    - **Tools** > **Optionen** > **Test** > **RUNSETTINGS-Dateien automatisch erkennen**
+
+      ![Option zum automatischen Erkennen einer RUNSETTINGS-Datei in Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      
+    - **Test** > **Laufzeiteinstellungen konfigurieren** > **RUNSETTINGS-Dateien automatisch erkennen**
+    
+      ![Menü für das automatisch Erkennen einer RUNSETTINGS-Datei in Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
+
+- Wählen Sie in der IDE **Test** > **Laufzeiteinstellungen konfigurieren** > **Lösungsweite RUNSETTINGS-Datei auswählen** und anschließend die *RUNSETTINGS*-Datei aus.
+
+   ![Menü „Lösungsweite RUNSETTINGS-Datei auswählen“ in Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
+      
+   - Diese Datei setzt die RUNSETTINGS-Datei im Stammverzeichnis der Projektmappe außer Kraft, sofern diese vorhanden ist, und wird auf alle ausgeführten Tests angewendet.  
+   - Diese Dateiauswahl wird nur lokal beibehalten. 
 
 ::: moniker-end
 
