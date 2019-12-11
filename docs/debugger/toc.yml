@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: Problembehandlung von Haltepunkten
           href: troubleshooting-breakpoints.md
+        - name: 'Problembehandlung von Datenhaltepunkten in C#'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: Datenüberprüfung
       items:
         - name: Überprüfen von Daten in Debuggerfenstern
