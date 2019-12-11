@@ -1,17 +1,17 @@
 ---
 title: Deinstallieren von Visual Studio für Mac
 description: Anleitung zum Deinstallieren von Visual Studio für Mac und dazugehörigen Tools
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef9b609b74b878a2d9bdafb087481ad1c6e79a70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78bf7fce98f2a77e05a3fbbd31afcf3f20d97a9f
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986838"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985135"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
 
@@ -102,7 +102,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
-Sie können auch das folgende Verzeichnis entfernen, das verschiedene Xamarin-Dateien und -Ordner enthält. Sie sollten sich dabei aber bewusst sein, dass dieses Verzeichnis die Android-Signaturschlüssel enthält. Weitere Informationen finden Sie im Abschnitt **[Deinstallieren des Android SDK und des Java SDK](#uninstall-android-sdk-and-java-sdk)**.
+Sie können auch das folgende Verzeichnis entfernen, das verschiedene Xamarin-Dateien und -Ordner enthält. Sie sollten sich dabei aber bewusst sein, dass dieses Verzeichnis die Android-Signaturschlüssel enthält. Weitere Informationen finden Sie im Abschnitt **[Deinstallieren des Android SDK und des Java SDK](#uninstall-android-sdk-and-java-sdk)** .
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -139,7 +139,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Deinstallieren des Android SDK und des Java SDK
 
-Das Android SDK ist für die Entwicklung von Android-Anwendungen erforderlich. Um alle Bestandteile des Android SDK vollständig zu entfernen, suchen Sie die Datei unter **~/Library/Developer/Xamarin/**, und verschieben Sie sie in den **Papierkorb**.
+Das Android SDK ist für die Entwicklung von Android-Anwendungen erforderlich. Um alle Bestandteile des Android SDK vollständig zu entfernen, suchen Sie die Datei unter **~/Library/Developer/Xamarin/** , und verschieben Sie sie in den **Papierkorb**.
 
 > [!WARNING]
 > Sie sollten dabei beachten, dass sich Android Signaturschlüssel, die von Visual Studio für Mac generiert werden, in `~/Library/Developer/Xamarin/Keystore` befinden. Stellen Sie sicher, dass diese entsprechend gesichert werden, oder vermeiden Sie es, dieses Verzeichnis zu entfernen, wenn Sie Ihren Keystore beibehalten möchten.

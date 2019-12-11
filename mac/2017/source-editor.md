@@ -1,16 +1,16 @@
 ---
 title: Quellcode-Editor
 description: Verwendung des Quellcode-Editors in Visual Studio für Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987691"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985219"
 ---
 # <a name="source-editor"></a>Quellcode-Editor
 
@@ -50,7 +50,7 @@ Dieses Menüelement kann auch zur Aktivierung oder Deaktivierung der Codefaltung
 
 Es kann für Sie notwendig sein, unsichtbare Zeichen im Quellcode zu sehen. So können Sie sicherstellen, dass Codierungsstandards eingehalten und Speicherplatz nicht unnötigerweise verschwendet wird. Auch beim Programmieren in F# ist dies nützlich, denn dabei kommt es bei der Bewertung von Code genau auf die eingezogenen Zeilen an.
 
-Um Leerzeichen anzuzeigen, navigieren Sie zu **Visual Studio > Einstellungen > Text-Editor > Markierungen und Lineale**. Wenn Sie diese Option auswählen, können Sie festlegen, _wann_ unsichtbare Zeichen angezeigt werden sollen: Never (Nie), On Selection (Bei Auswahl) oder Always (Immer):
+Um Leerzeichen anzuzeigen, navigieren Sie zu **Visual Studio > Einstellungen > Text-Editor > Markierungen und Lineale**. Wenn Sie diese Option auswählen, können Sie festlegen, _wann_ unsichtbare Zeichen angezeigt werden sollen: „Never“ (Nie), „On Selection“ (Bei Auswahl) oder „Always“ (Immer):
 
 ![Optionen zum Anzeigen unsichtbarer Zeichen](media/source-editor-image3.png)
 
