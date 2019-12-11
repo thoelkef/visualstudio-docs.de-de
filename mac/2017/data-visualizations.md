@@ -1,17 +1,17 @@
 ---
 title: 'Debuggen: Datenvisualisierungen'
 description: Das Debuggen ist ein üblicher und notwendiger Teil des Programmierens. Visual Studio für Mac enthält eine Reihe von Features, die das Debuggen vereinfachen. Dieser Artikel behandelt die verschiedenen Datenvisualisierungen, die angezeigt werden können, wenn Objekte im Debugger überprüft werden.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932124"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984761"
 ---
 # <a name="data-visualizations"></a>Datenvisualisierungen
 
