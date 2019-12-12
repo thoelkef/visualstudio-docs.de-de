@@ -1,7 +1,7 @@
 ---
 title: Feedbackoptionen
 description: Wir würden gern Ihre Ideen zur Verbesserung unserer Produkte und unserer Dokumentation kennenlernen. Hier erfahren Sie, wie Sie uns Feedback senden können.
-ms.date: 04/25/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.custom: seoapril2019
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919086"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853489"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio-Feedbackoptionen
 
@@ -34,7 +34,7 @@ Wenn Sie Probleme mit Visual Studio&mdash; wie Abstürze, schleppende Leistung o
 
 ![Symbol „Feedback senden“ in der Visual Studio 2019-IDE](./media/vs-2019/send-feedback-icon.png)
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -44,38 +44,34 @@ Wenn Sie Probleme mit Visual Studio&mdash; wie Abstürze, schleppende Leistung o
 
 ![Symbol „Feedback senden“ in der Visual Studio 2019-IDE](./media/send-feedback-icon.png)
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
-## <a name="make-a-suggestion"></a>Einen Vorschlag unterbreiten
+## <a name="suggest-a-feature"></a>Vorschlagen eines Features
 
 ::: moniker range="vs-2019"
 
-Wenn Ihnen etwas auffällt, was wir hinzufügen oder besser umsetzen können, teilen Sie es uns mit dem Tool **Feature vorschlagen** mit. Wählen Sie in Visual Studio das Feedbacksymbol in der oberen rechten Ecke aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Feature vorschlagen**.
+Wenn Sie eine Idee oder einen Vorschlag zur Verbesserung von Visual Studio haben, lassen Sie es uns wissen, indem Sie das Tool **Feature vorschlagen** verwenden. Wählen Sie in Visual Studio das Feedbacksymbol in der oberen rechten Ecke aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Feature vorschlagen**.
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um Ihren Vorschlag einzureichen. Weitere Informationen finden Sie unter [Vorschlagen eines Features](suggest-a-feature.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Vorschlagen eines Features](suggest-a-feature.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Wenn Ihnen etwas auffällt, was wir besser umsetzen können, teilen Sie es uns mit dem Tool **Vorschlag senden** mit. Wählen Sie in Visual Studio das Feedbacksymbol neben dem Suchfeld aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Vorschlag senden**.
+Wenn Sie eine Idee oder einen Vorschlag zur Verbesserung von Visual Studio haben, lassen Sie es uns wissen, indem Sie das Tool **Vorschlag senden** verwenden. Wählen Sie in Visual Studio das Feedbacksymbol neben dem Suchfeld aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Vorschlag senden**.
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um Ihren Vorschlag einzureichen. Weitere Informationen finden Sie unter [Vorschlagen eines Features](suggest-a-feature.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Vorschlagen eines Features](suggest-a-feature.md).
 
 ::: moniker-end
-
-### <a name="rate-this-product"></a>Dieses Produkt bewerten
-
-Vorabversionen von Visual Studio verfügen über ein Menüelement **Dieses Produkt bewerten**, das veröffentlichte Versionen des Produkts nicht enthalten. Verwenden Sie das Menüelement **Dieses Produkt bewerten**, um Feedback zur Qualität der von Ihnen ausgeführten Vorabversion zu senden.
 
 ## <a name="improve-the-documentation"></a>Verbessern der Dokumentation
 
 Es gibt zwei Möglichkeiten, wie Sie uns bei der Verbesserung der Dokumentation helfen können:
 
-* Wählen Sie die Schaltfläche **War diese Seite hilfreich?** unten auf der Seite aus. Sie finden diese Schaltfläche auf allen unseren Dokumentationsseiten.
-* Verwenden Sie Ihr GitHub-Konto, um Feedback zu einer beliebigen Visual Studio-Seite auf [docs.microsoft.com](/visualstudio/) zu geben. Wählen Sie dazu die Schaltfläche **Feedback senden über** > **Diese Seite**, ebenfalls unten auf der Seite.
+* Nutzen Sie rechts oben auf einer beliebigen Dokumentationsseite das Antworttool **Ist diese Seite hilfreich?**.
+* Verwenden Sie Ihr GitHub-Konto, um Feedback zu einer beliebigen Visual Studio-Seite auf [docs.microsoft.com](/visualstudio/) zu geben. Wählen Sie dazu unten auf einer beliebigen Dokumentationsseite die Schaltfläche **Feedback senden über** > **Diese Seite** aus.
 
 ## <a name="contact-microsoft-support"></a>Kontakt zum Microsoft Support
 
@@ -94,12 +90,11 @@ Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und Vertra
 
 Wenn Sie die Fragen und Antworten mit anderen Entwicklern teilen möchten, erwägen Sie, sich mit ihnen auf den folgenden Communitywebsites in Verbindung zu setzen:
 
-* Visual Studio [Developer Community](https://developercommunity.visualstudio.com)
 * [MSDN-Foren](https://social.msdn.microsoft.com/Forums/home)
 * Visual Studio auf [Reddit](https://www.reddit.com/r/VisualStudio/)
 * [Stapelüberlauf](https://stackoverflow.com/search?q=visual+studio+-code)
 
-Sie können auf der Website [Codebeispiele für Entwickler](https://code.msdn.microsoft.com/) auch Code anderer Entwickler einsehen und eigene Beispiele teilen.
+Sie können auch Code anderer Entwickler anzeigen und Ihre eigenen Beispiele auf der Seite [Codebeispiele durchsuchen](/samples/browse/) freigeben.
 
 ## <a name="see-also"></a>Siehe auch
 

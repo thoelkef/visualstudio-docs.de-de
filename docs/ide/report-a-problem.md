@@ -1,5 +1,5 @@
 ---
-title: Problem melden
+title: 'Problem melden: Status und häufig gestellte Fragen'
 description: Dieser Artikel bietet eine Übersicht über das Tool „Problem melden“ und beinhaltet Problemstatus und Definitionen.
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925983"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853502"
 ---
-# <a name="overview-report-a-problem"></a>Übersicht: Melden eines Problems
+# <a name="report-a-problem-states-and-faq"></a>Problem melden: Status und häufig gestellte Fragen
 
 Mithilfe des Tools „Problem melden“ kann die Visual Studio-Entwicklercommunity Probleme einreichen. Jeder Ihrer Problemberichte wird zu einem Arbeitselement in unserem zentralen Engineering-Team, sodass Sie sich direkt in unsere Produktteams einbringen und uns dabei helfen können, bedeutende Probleme ausfindig zu machen und zu lösen. Ihr Feedback, das Sie mit umfassenden Diagnoseinformationen übermitteln, spielt eine entscheidende Rolle bei der Verbesserung der Visual Studio-Produktfamilie. Wir schätzen es sehr, dass Sie sich die Zeit nehmen, um Probleme zu melden.
 

@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180241"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830009"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -136,7 +136,7 @@ Beginnen Sie mit grundlegenden Berechnungen von Integern in C#.
 
     ![Animation von Code zur Berechnung von Integern mit der IntelliSense-Funktion für die automatische Vervollständigung in der Visual Studio-IDE](./media/integer-math-intellisense.gif)
 
-1. Wählen Sie **Calculator** aus, um das Programm auszuführen, oder drücken Sie **F5**.
+1. Wählen Sie die grüne Schaltfläche **Starten** neben **Rechner** aus, um Ihr Programm zu erstellen und auszuführen, oder drücken Sie **F5**.
 
    ![Auswählen der Schaltfläche „Calculator“ zum Ausführen der App aus der Symbolleiste](./media/csharp-console-calculator-button.png)
 

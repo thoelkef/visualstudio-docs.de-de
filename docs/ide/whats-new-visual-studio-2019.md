@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777911"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810127"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
@@ -198,7 +198,7 @@ Weitere Informationen finden Sie auf der Seite [Debuggen von aktiven ASP.NET Azu
 
 ### <a name="pinnable-properties-tool"></a>Tool zum Anheften von Eigenschaften
 
-**Neu in 16.4**: Mit dem neuen Tool zum Anheften von Eigenschaften ist es jetzt einfacher, beim Debuggen Objekte anhand ihrer Eigenschaften zu identifizieren. Bewegen Sie einfach im Debuggerfenster der Überwachungsfenster, Fenster für lokale Variablen und Fenster für automatische Tools den Cursor über eine Eigenschaft, die Sie anzeigen möchten, und klicken Sie auf das Nadelsymbol: Oben im Fenster werden sofort die gesuchten Informationen angezeigt!
+**Neu in 16.4**: Mit dem neuen Tool zum Anheften von Eigenschaften ist es jetzt einfacher, beim Debuggen Objekte anhand ihrer Eigenschaften zu identifizieren. Bewegen Sie einfach im Debuggerfenster im Überwachungsfenster, Fenster für lokale Variablen und Fenster für automatische Tools den Cursor über eine Eigenschaft, die Sie anzeigen möchten, und wählen Sie das Stecknadelsymbol aus. Oben im Fenster werden sofort die gesuchten Informationen angezeigt!
 
    ![Animation: So heften Sie Eigenschaften im Visual Studio-Debugger mithilfe des Tools zum Anheften von Eigenschaften an.](media/vs-2019/debugger-pinnable-properties.gif)
 
