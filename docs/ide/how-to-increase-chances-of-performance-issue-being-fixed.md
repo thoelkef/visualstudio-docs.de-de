@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528535"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903993"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems
 
