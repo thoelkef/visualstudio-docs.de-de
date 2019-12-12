@@ -2,15 +2,15 @@
 title: Verbundene Dienste
 description: Hinzufügen von Azure-Datenspeicher, Authentifizierung und Pushbenachrichtigungen zu mobilen Apps über Visual Studio für Mac
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
-ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932180"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985292"
 ---
 # <a name="connected-services-walkthrough"></a>Exemplarische Vorgehensweise für verbundene Dienste
 
@@ -31,12 +31,12 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines Azure-B
 3. Die Abhängigkeiten müssen der PCL und den plattformspezifischen Projekten hinzugefügt werden, damit sie funktionieren.
   Aktivieren Sie die Kontrollkästchen, um den Dienst jedem Projekt hinzuzufügen, das darauf verweisen soll (entweder direkt oder indirekt):
 
-    [![Alle Projekte aktivieren, die auf den Dienst verweisen sollen](media/connected-services-image003-sml.png "Alle Projekte aktivieren, die auf den Dienst verweisen sollen")](media/connected-services-image003.png#lightbox)
+    [![Kontrollkästchen aller Projekte aktivieren, die auf den Dienst verweisen sollen](media/connected-services-image003-sml.png "Kontrollkästchen aller Projekte aktivieren, die auf den Dienst verweisen sollen")](media/connected-services-image003.png#lightbox)
 
 4. Wählen Sie in den Dialogfeldern **Zustimmung zur Lizenz** für die NuGet-Pakete **Zustimmen** aus.
   Es können zwei Dialogfelder für die Zustimmung angezeigt werden: eines für MobileClient und die Abhängigkeiten und das andere für SQLiteStore (das Paket ist für die Offlinedatensynchronisierung erforderlich):
 
-    [![Lizenzverträgen zustimmen](media/connected-services-image004-sml.png "Lizenzverträgen zustimmen")](media/connected-services-image004.png#lightbox)
+    [![Lizenzbedingungen zustimmen](media/connected-services-image004-sml.png "Lizenzbedingungen zustimmen")](media/connected-services-image004.png#lightbox)
 
     ![Fenster „Zustimmung zur Lizenz“](media/connected-services-image005.png "Fenster „Zustimmung zur Lizenz“")
 
@@ -45,14 +45,14 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines Azure-B
 
 6. Wählen Sie einen App-Dienst aus der Liste aus. Dadurch wird der Vorlagencode für das `MobileServiceClient`-Objekt mit der entsprechenden URL des App-Diensts in Azure ausgefüllt:
 
-    [![App-Dienst aus Liste auswählen](media/connected-services-image006-sml.png "App-Dienst aus Liste auswählen")](media/connected-services-image006.png#lightbox)
+    [![App-Dienst in Liste auswählen](media/connected-services-image006-sml.png "App-Dienst in Liste auswählen")](media/connected-services-image006.png#lightbox)
 
     Wenn keine Dienste aufgeführt sind, klicken Sie auf die Schaltfläche **Neu** (siehe Schritt 9).
 
 7. Kopieren Sie den Vorlagencode für `MobileServiceClient` in die PCL. Der Speicherort der Datei ist nicht wichtig, solange nur eine Instanz davon vorhanden ist.
   Die empfohlene Vorgehensweise ist, eine `AzureService`-Klasse zu erstellen, die alle Azure-Interaktionen verarbeitet und `MobileServiceClient` verwendet:
 
-    ![Konfigurationscode in die App kopieren](media/connected-services-image007.png "Konfigurationscode in die App kopieren")
+    ![Kopieren von Konfigurationscode in die App](media/connected-services-image007.png "Kopieren von Konfigurationscode in die App")
 
 8. Befolgen Sie die Dokumentation unter **Nächste Schritte**, um Ihrer App Daten, Offlinesynchronisierung, Authentifizierung und Pushbenachrichtigungen hinzuzufügen:
 
@@ -61,7 +61,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines Azure-B
 9. Wenn Sie keine vorhandenen App-Dienste besitzen, können Sie in Visual Studio für Mac neue Dienste erstellen.
   Klicken Sie unten links in der Liste der Dienste auf die Schaltfläche **Neu**, um das Dialogfeld **Neuer App-Dienst** zu öffnen:
 
-    [![Einen neuen App-Dienst in Visual Studio für Mac erstellen](media/connected-services-image009-sml.png "Einen neuen App-Dienst in Visual Studio für Mac erstellen")](media/connected-services-image009.png#lightbox)
+    [![Erstellen eines neuen App-Diensts in Visual Studio für Mac](media/connected-services-image009-sml.png "Erstellen eines neuen App-Diensts in Visual Studio für Mac")](media/connected-services-image009.png#lightbox)
 
 Folgende Parameter sind für einen neuen Dienst erforderlich:
 

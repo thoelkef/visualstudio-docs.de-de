@@ -6,14 +6,15 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-Abonnements Ihrer Organisation mit dem Verwaltungsportal für Abonnements verwalten.
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490705"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879307"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Übersicht über das Portal für die Verwaltung von Visual Studio-Abonnements
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Übersicht über das Verwaltungsportal für Visual Studio-Abonnements
+
 Das Portal für die Verwaltung von Visual Studio-Abonnements bietet Ihnen die Tools zum Verwalten der Abonnements Ihrer Organisation an einem zentralen Ort. 
 
 ## <a name="important-considerations"></a>Wichtige Hinweise

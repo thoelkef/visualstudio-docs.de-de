@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983770"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810044"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -74,6 +74,9 @@ Antwort:  Die Übermittlung einer Supportanfrage aus dem Azure-Portal umfasst dr
 3. Senden Sie die Supportanfrage.
 
 Ausführliche Informationen finden Sie in der Dokumentation zum [technischen Support](vs-tech-support.md).
+
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Frage: Wer ist der Besitzer des geistigen Eigentums, das ich mit meiner persönlichen Gutschrift für Azure DevTest erstellt habe?
+Antwort:  Geistiges Eigentum, das von einem Mitarbeiter auf Grundlage der vom jeweiligen Unternehmen bereitgestellten Ressourcen geschaffen wurde, ist folglich geistiges Eigentum des Unternehmens, das die Ressource bereitstellt. Wenn Sie Ihr Visual Studio-Abonnement von Ihrem Arbeitgeber erhalten haben, gelten dessen Richtlinien für geistiges Eigentum. 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Frage: Ich habe eine Nachricht erhalten, dass ich bald keinen Zugriff auf Azure mehr haben werde.  Wie kann ich Azure weiterhin nutzen?
 Antwort:  Sie erhalten diese E-Mail, weil Sie den mit Ihrem Visual Studio-Abonnement verbundenen Azure-Vorteil nutzen und dieses Abonnement abgelaufen ist oder entfernt wurde.  Um Azure weiterhin zu verwenden, haben Sie mehrere Möglichkeiten:
