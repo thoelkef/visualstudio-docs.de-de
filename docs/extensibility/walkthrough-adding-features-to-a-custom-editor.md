@@ -10,90 +10,90 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50565363f2fc88e40816bdfc4773e436e960ee06
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5fa926b21171c3e09b5a0f4d74e9415da090bf2f
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312888"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569075"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einer benutzerdefinierten editor
-Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie weitere Features, hinzufügen.
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor
+Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm weitere Funktionen hinzufügen.
 
-## <a name="to-create-an-editor-for-a-vspackage"></a>Beim Erstellen eines Editors für ein VSPackage
+## <a name="to-create-an-editor-for-a-vspackage"></a>So erstellen Sie einen Editor für ein VSPackage
 
-1. Erstellen Sie einen benutzerdefinierten Editor, indem Sie mithilfe der Visual Studio-Paket-Projektvorlage.
+1. Erstellen Sie mithilfe der Projektvorlage für Visual Studio-Pakete einen benutzerdefinierten Editor.
 
-     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefiniertes Editors](../extensibility/walkthrough-creating-a-custom-editor.md).
+     Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md).
 
-2. Entscheiden Sie, ob Sie Ihren-Editor, um eine einzelne oder mehrere Ansichten zu unterstützen.
+2. Entscheiden Sie, ob Sie möchten, dass Ihr Editor eine einzelne Ansicht oder mehrere Ansichten unterstützt.
 
-     Einen Editor, unterstützt die **neues Fenster** Befehl oder Formularansicht und Codeansicht, sind separate dokumentdatenobjekten und dokumentenansichtsobjekten erforderlich. In einem Editor, der nur eine einzige Ansicht unterstützt, kann auf demselben Objekt das dokumentendatenobjekt und dem dokumentenansichtsobjekt implementiert werden.
+     Ein Editor, der den **neuen Fenster** Befehl oder die Formularansicht und die Code Ansicht unterstützt, erfordert separate Dokument Datenobjekte und Dokument Ansichts Objekte. In einem Editor, der nur eine einzelne Ansicht unterstützt, können das Dokument Datenobjekt und das Dokument Ansichts Objekt für dasselbe Objekt implementiert werden.
 
-     Ein Beispiel für mehrere Ansichten, finden Sie unter [unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md).
+     Ein Beispiel für mehrere Ansichten finden Sie [unter Unterstützung mehrerer Dokument Sichten](../extensibility/supporting-multiple-document-views.md).
 
-3. Implementieren eine Editor-Factory durch das Einrichten der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Schnittstelle.
+3. Implementieren Sie eine Editorfactory, indem Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>-Schnittstelle einrichten.
 
      Weitere Informationen finden Sie unter [editorfactorys](../extensibility/editor-factories.md).
 
-4. Entscheiden Sie, ob Sie Ihre-Editor, um die direkte Aktivierung verwendet werden soll, oder zum Vereinfachen des Einbettens, um das Dokumentfenster des Ansicht-Objekt zu verwalten.
+4. Entscheiden Sie, ob Sie möchten, dass der Editor die direkte Aktivierung oder die vereinfachte Einbettung verwendet, um das Dokument Ansichts Objekt Fenster zu verwalten.
 
-     Ein vereinfachtes einbetten Editor-Fenster hostet eine standardmäßige Dokumentenansicht, während ein Editor-Fenster für die direkte Aktivierung ein ActiveX-Steuerelement oder andere aktive Objekt als Dokumentansicht hostet. Weitere Informationen finden Sie unter [vereinfachtes einbetten](../extensibility/simplified-embedding.md) und [direkte Aktivierung](../extensibility/in-place-activation.md).
+     Ein vereinfachtes Fenster zum Einbetten eines Editors hostet eine Standarddokument Ansicht, während ein direktes Aktivierungs-Editor-Fenster ein ActiveX-Steuerelement oder ein anderes aktives Objekt als Dokument Ansicht hostet. Weitere Informationen finden Sie unter [vereinfachte Einbettung](../extensibility/simplified-embedding.md) und direkte [Aktivierung](/visualstudio/misc/in-place-activation?view=vs-2015).
 
-5. Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, um Befehle zu verarbeiten.
+5. Implementieren Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>-Schnittstelle zum Verarbeiten von Befehlen.
 
-6. Geben Sie Dokument Persistenz und Reaktion auf Änderungen der externen Datei:
+6. Dokument Persistenz und Antwort auf externe Dateiänderungen bereitstellen:
 
-    1. Behalten Sie die Datei implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> und <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> auf dokumentendatenobjekt des Editors.
+    1. Um die Datei beizubehalten, implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> und <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> für das Dokument Datenobjekt des Editors.
 
-    2. Um externe Änderungen zu reagieren, implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> auf dokumentendatenobjekt des Editors.
+    2. Um auf Änderungen externer Dateien zu reagieren, implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> für das Dokument Datenobjekt des Editors.
 
         > [!NOTE]
-        > Rufen Sie `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> um einen Zeiger auf `IVsFileChangeEx`.
+        > `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> abrufen, um einen Zeiger auf `IVsFileChangeEx`zu erhalten.
 
-7. Bearbeiten der Dokumentereignisse mit quellcodeverwaltung zu koordinieren. Führen Sie folgende Schritte aus:
+7. Koordinieren Sie Dokument Bearbeitungs Ereignisse mit der Quell Code Verwaltung. Führen Sie folgende Schritte aus:
 
-    1. Erhalten Sie einen Zeiger auf `IVsQueryEditQuerySave2` durch Aufrufen von `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
+    1. Rufen Sie einen Zeiger auf `IVsQueryEditQuerySave2` auf, indem Sie `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>aufrufen.
 
-    2. Wenn das erste bearbeiten-Ereignis auftritt, rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> Methode.
+    2. Wenn das erste Bearbeitungs Ereignis auftritt, wird die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>-Methode aufgerufen.
 
-         Diese Methode der Benutzer aufgefordert, die Datei auschecken, wenn sie nicht bereits ausgecheckt wird. Achten Sie darauf, behandeln eine Bedingung "Datei nicht ausgecheckt", um diese Fehler zu vermeiden.
+         Diese Methode fordert den Benutzer auf, die Datei auszuchecken, wenn Sie nicht bereits ausgecheckt ist. Stellen Sie sicher, dass die Bedingung "Datei nicht ausgecheckt" behandelt wird, um Fehler zu verhindern.
 
-    3. Rufen Sie vor dem Speichern der Datei an, auf ähnliche Weise die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> Methode.
+    3. Gleichermaßen können Sie vor dem Speichern der Datei die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>-Methode aufzurufen.
 
-         Diese Methode fordert den Benutzer zum Speichern der Datei, wenn sie noch nicht gespeichert wurde oder wenn es sich seit der letzten Speicherung geändert.
+         Diese Methode fordert den Benutzer auf, die Datei zu speichern, wenn Sie nicht gespeichert wurde, oder wenn Sie sich seit der letzten Speicherung geändert hat.
 
-8. Aktivieren der **Eigenschaften** Fenster aus, um die Eigenschaften im Editor ausgewählten Text anzuzeigen. Führen Sie folgende Schritte aus:
+8. Aktivieren Sie das Fenster **Eigenschaften** , um Eigenschaften für Text anzuzeigen, der im Editor ausgewählt ist. Führen Sie folgende Schritte aus:
 
-    1. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> jedes Mal Textauswahl geändert wird, übergibt in der Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
+    1. Wenn Sie die Textauswahl ändern und die Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>übergeben, wird <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> aufgerufen.
 
-    2. Rufen Sie `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> Dienst um einen Zeiger auf abrufen <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
+    2. Rufen Sie `QueryService` für <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> Dienst auf, um einen Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>zu erhalten.
 
-9. Aktivieren von Benutzern für Drag & drop Elemente zwischen dem-Editor und die **Toolbox**, oder zwischen externen Editors (z. B. Microsoft Word) und die **Toolbox**. Führen Sie folgende Schritte aus:
+9. Ermöglicht Benutzern das ziehen und Ablegen von Elementen zwischen dem Editor und der **Toolbox**oder zwischen externen Editoren (z. b. Microsoft Word) und der **Toolbox**. Führen Sie folgende Schritte aus:
 
-    1. Implementieren `IDropTarget` in Ihrem Editor, um der Editor ein Ablageziel ist der IDE zu informieren.
+    1. Implementieren Sie `IDropTarget` im Editor, um die IDE zu warnen, dass der Editor ein Ablage Ziel ist.
 
-    2. Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> Schnittstelle für die Sicht, damit der Editor kann aktivieren und Deaktivieren von Elementen in der **Toolbox**.
+    2. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>-Schnittstelle in der Sicht, damit der Editor Elemente in der **Toolbox**aktivieren und deaktivieren kann.
 
-    3. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> , und rufen Sie `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> Dienst erhalten einen Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> Schnittstellen.
+    3. Implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>, und rufen Sie `QueryService` für <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> Dienst auf, um einen Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>-und <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> Schnittstellen zu erhalten.
 
-         Die folgenden Schritte ermöglichen das VSPackage, neue Elemente hinzufügen das **Toolbox**.
+         Mit diesen Schritten kann Ihr VSPackage neue Elemente zur **Toolbox**hinzufügen.
 
-10. Entscheiden Sie, ob Sie alle anderen optionalen Features für den Editor.
+10. Entscheiden Sie, ob Sie weitere optionale Features für den Editor benötigen.
 
-    - Wenn Sie Ihre-Editor unterstützt werden sollen, suchen und Befehle ersetzen, implementieren <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
+    - Wenn Sie möchten, dass der Editor Befehle zum Suchen und ersetzen unterstützt, implementieren Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
 
-    - Wenn Sie ein dokumentgliederung-Toolfenster in Ihrem Editor verwenden möchten, implementieren Sie `IVsDocOutlineProvider`.
+    - Wenn Sie ein Dokument Gliederungs Tool Fenster in Ihrem Editor verwenden möchten, implementieren Sie `IVsDocOutlineProvider`.
 
-    - Wenn Sie eine Statusleiste im Editor verwenden möchten, implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> , und rufen Sie `QueryService` für <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> um einen Zeiger auf `IVsStatusBar`.
+    - Wenn Sie eine Statusleiste im Editor verwenden möchten, implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> und `QueryService` für <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>, um einen Zeiger auf `IVsStatusBar`abzurufen.
 
-         Ein Editor kann z. B. Zeile anzeigen / Spalteninformationen, Auswahlmodus (streamen / Feld), und Einfügemodus (eingefügt / Insert|).
+         Beispielsweise kann ein Editor Zeilen-/Spalteninformationen, den Auswahlmodus (Stream/Box) und den Einfügemodus (INSERT/OVERSTRIKE) anzeigen.
 
-    - Wenn Sie Ihre-Editor unterstützt werden sollen die `Undo` Befehl, die empfohlene Methode ist die Verwendung von OLE rückgängig-Manager-Modell. Als Alternative können Sie das Handle des Editors haben die `Undo` direkt den Befehl.
+    - Wenn Sie möchten, dass der Editor den `Undo`-Befehl unterstützt, wird empfohlen, das OLE rückgängig-Manager-Modell zu verwenden. Als Alternative können Sie den Editor direkt mit dem `Undo` Befehl behandeln lassen.
 
-11. Erstellen Sie die Registrierung Informationen, einschließlich die GUIDs für das VSPackage, die Menüs, Editor und andere Funktionen.
+11. Erstellen Sie Registrierungsinformationen, einschließlich der GUIDs für das VSPackage, die Menüs, den Editor und andere Funktionen.
 
-     Folgendes ist ein allgemeines Beispiel für Code, den Sie in eingegeben würden Ihrem *RGS* Datei Skript veranschaulicht, wie Sie einen Editor ordnungsgemäß zu registrieren.
+     Im folgenden finden Sie ein allgemeines Beispiel für Code, den Sie in das *RGS* -Datei Skript einfügen, um zu veranschaulichen, wie ein Editor ordnungsgemäß registriert wird.
 
     ```csharp
     NoRemove Editors
@@ -113,21 +113,21 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie weitere
     }
     ```
 
-12. Implementieren Sie die kontextbezogene Hilfe an.
+12. Implementieren der kontextbezogenen Hilfe Unterstützung.
 
-     Dadurch können Sie angeben, dass F1-Hilfe und dynamische Hilfefenster für Elemente in einem Editor unterstützen. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen von Kontext für Editoren](../extensibility/how-to-provide-context-for-editors.md).
+     Dieser Schritt ermöglicht es Ihnen, F1-Hilfe und dynamische Hilfefenster Unterstützung für Elemente in Ihrem Editor bereitzustellen. Weitere Informationen finden Sie unter Gewusst [wie: Bereitstellen von Kontext für Editoren](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015).
 
-13. Machen Sie ein Automation-Objektmodell aus Ihrem Editor durch die Implementierung der `IDispatch` Schnittstelle.
+13. Machen Sie ein Automatisierungs Objektmodell aus dem Editor verfügbar, indem Sie die `IDispatch`-Schnittstelle implementieren.
 
      Weitere Informationen finden Sie unter [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).
 
 ## <a name="robust-programming"></a>Stabile Programmierung
 
-- Die Editor-Instanz wird erstellt, wenn es sich bei die IDE Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> Methode. Wenn der Editor über mehrere Ansichten unterstützt `CreateEditorInstance` wird sowohl die Dokumentdaten als auch die dokumentenansichtsobjekten erstellt. Wenn das dokumentendatenobjekt bereits ist zu öffnen, eine Wert ungleich Null `punkDocDataExisting` Wert wird übergeben, um `IVsEditorFactory::CreateEditorInstance`. Die Implementierung der Factory-Editors muss bestimmen, ob ein vorhandenes dokumentendatenobjekt kompatibel ist, indem entsprechende Schnittstellen darauf abgefragt. Weitere Informationen finden Sie unter [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).
+- Die Editor-Instanz wird erstellt, wenn die IDE die <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>-Methode aufruft. Wenn der Editor mehrere Ansichten unterstützt, erstellt `CreateEditorInstance` sowohl die Dokument Daten als auch die Dokument Ansichts Objekte. Wenn das Dokument Datenobjekt bereits geöffnet ist, wird ein `punkDocDataExisting` Wert ungleich NULL an `IVsEditorFactory::CreateEditorInstance`übermittelt. Die Editorfactory-Implementierung muss bestimmen, ob ein vorhandenes Dokument Datenobjekt kompatibel ist, indem entsprechende Schnittstellen abgefragt werden. Weitere Informationen finden Sie [unter unterstützen mehrerer Dokument Ansichten](../extensibility/supporting-multiple-document-views.md).
 
-- Wenn Sie die vereinfachte einbettungsansatz verwenden, implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> Schnittstelle.
+- Wenn Sie den vereinfachten Einbettungs Ansatz verwenden, implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>-Schnittstelle.
 
-- Wenn Sie die direkte Aktivierung verwenden möchten, werden implementieren Sie die folgenden Schnittstellen:
+- Wenn Sie die direkte Aktivierung verwenden möchten, implementieren Sie die folgenden Schnittstellen:
 
    <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>
 
@@ -136,22 +136,22 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie weitere
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  > Die `IOleInPlaceComponent` Schnittstelle wird verwendet, um OLE 2 das Zusammenführen von Menüs zu vermeiden.
+  > Die `IOleInPlaceComponent`-Schnittstelle wird verwendet, um die Zusammenführung von OLE 2-Menüs zu
 
-   Ihre `IOleCommandTarget` Implementierung behandelt Befehle wie z. B. **Ausschneiden**, **Kopie**, und **einfügen**. Bei der Implementierung `IOleCommandTarget`, entscheiden Sie, ob Ihre-Editor eine eigene erfordert *VSCT* Datei, um eine eigene Menüstruktur Befehl definieren, oder wenn es von definierten standard-Befehle implementieren kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In der Regel Editoren verwenden und erweitern die IDE Menüs und definieren ihre eigenen Symbolleisten haben. Allerdings ist es häufig erforderlich, für einen Editor, um eine eigene bestimmte Befehle zusätzlich zur Verwendung der IDE-standard-Befehlssatz zu definieren. Als Editor muss deklarieren Sie die standard-Befehle verwendet, wobei Sie neuen Befehle, Kontextmenüs, Menüs der obersten Ebene und Symbolleisten in einem *VSCT* Datei. Wenn Sie eine direkte Aktivierung-Editor erstellen, implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> und definieren Sie die Menüs und Symbolleisten für den Editor in einem *VSCT* Datei anstelle von OLE 2 das Zusammenführen von Menüs.
+   Die `IOleCommandTarget`-Implementierung verarbeitet Befehle wie **Ausschneiden**, **Kopieren**und **Einfügen**. Wenn Sie `IOleCommandTarget`implementieren, entscheiden Sie, ob Ihr Editor eine eigene *vsct* -Datei erfordert, um eine eigene Befehlsmenü Struktur zu definieren, oder ob Sie von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]definierte Standard Befehle implementieren kann. In der Regel verwenden Editoren die Menüs der IDE und definieren ihre eigenen Symbolleisten. Es ist jedoch häufig notwendig, dass ein Editor zusätzlich zur Verwendung des Standard Befehlssatzes der IDE seine eigenen spezifischen Befehle definiert. Der Editor muss die verwendeten Standard Befehle deklarieren und dann alle neuen Befehle, Kontextmenüs, Menüs der obersten Ebene und Symbolleisten in einer *vsct* -Datei definieren. Wenn Sie einen direkten Aktivierungs-Editor erstellen, implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>, und definieren Sie die Menüs und Symbolleisten für den Editor in einer *vsct* -Datei anstelle der OLE 2-Menü Zusammenführung.
 
-- Um Menübefehl Versammeln in der Benutzeroberfläche zu verhindern, sollten Sie die vorhandene Befehle vor dem entwickeln neue Befehle in der IDE verwenden. Freigegebenen Befehle in definiert *SharedCmdDef.vsct* und *ShellCmdDef.vsct*. Diese Dateien werden standardmäßig installiert, in das Unterverzeichnis VisualStudioIntegration\Common\Inc Ihre [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Installation.
+- Um die Überfüllung des Menübefehls in der Benutzeroberfläche zu verhindern, sollten Sie die vorhandenen Befehle in der IDE verwenden, bevor Sie neue Befehle erfinden. Freigegebene Befehle sind in " *sharedcmddef. vsct* " und " *shellcmddef. vsct*" definiert. Diese Dateien werden standardmäßig im Unterverzeichnis visualstudiointegration\common\inc der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]-Installation installiert.
 
-- `ISelectionContainer` können einzelne und mehrere Auswahl Ausdrücken. Jedes ausgewählte Objekt wird als implementiert eine `IDispatch` Objekt.
+- `ISelectionContainer` kann sowohl eine einfache als auch eine Mehrfachauswahl Ausdrücken. Jedes ausgewählte Objekt wird als `IDispatch` Objekt implementiert.
 
-- Die IDE implementiert die `IOleUndoManager` als Dienst über eine <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> oder als ein Objekt, das durch instanziiert werden kann <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Die Editor-implementiert die `IOleUndoUnit` Schnittstelle für die einzelnen `Undo` Aktion.
+- Die IDE implementiert `IOleUndoManager` als Dienst, der von einem <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> oder als Objekt zugänglich ist, das über <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>instanziiert werden kann. Der Editor implementiert die `IOleUndoUnit`-Schnittstelle für jede `Undo` Aktion.
 
-- Es gibt zwei Stellen ein benutzerdefinierter Editor kann Automatisierungsobjekte verfügbar zu machen:
+- Es gibt zwei Stellen, in denen ein benutzerdefinierter Editor Automatisierungs Objekte verfügbar machen kann:
 
   - `Document.Object`
 
   - `Window.Object`
 
 ## <a name="see-also"></a>Siehe auch
-- [Mitwirken Sie am Automatisierungsmodell](../extensibility/internals/contributing-to-the-automation-model.md)
-- [Vorgehensweise: Bereitstellen von Kontext für Editoren](../extensibility/how-to-provide-context-for-editors.md)
+
+- [Zum Automatisierungs Modell beitragen](../extensibility/internals/contributing-to-the-automation-model.md)
