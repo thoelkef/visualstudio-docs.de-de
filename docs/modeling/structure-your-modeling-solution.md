@@ -2,17 +2,17 @@
 title: Strukturieren der Modellierungslösung
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985226"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591943"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturieren der Modellierungslösung
 
@@ -72,7 +72,7 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Verwenden Sie für jede Ebene ein separates Paket.
 
-1. Fügen Sie in der Projektmappe für jede Ebene das Architektur-Modellierungsprojekt hinzu. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Lösungs Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**. Das einzelne Modellierungsprojekt kann nun aus allen Projektmappen aufgerufen werden: das Projekt für die Architektur und das Entwicklungsprojekt für jede Ebene.
+1. Fügen Sie in der Projektmappe für jede Ebene das Architektur-Modellierungsprojekt hinzu. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**. Das einzelne Modellierungsprojekt kann nun aus allen Projektmappen aufgerufen werden: das Projekt für die Architektur und das Entwicklungsprojekt für jede Ebene.
 
 2. Erstellen Sie im freigegebenen Modell ein Paket für jede Ebene: Wählen Sie in **Projektmappen-Explorer**das Modellierungsprojekt aus. Klicken Sie im **UML-Modell-Explorer**mit der rechten Maustaste auf den Modell Stamm Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Paket**
 

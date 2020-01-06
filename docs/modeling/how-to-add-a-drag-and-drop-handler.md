@@ -2,17 +2,17 @@
 title: 'Gewusst wie: Hinzufügen eines Drag & Drop-Handlers'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985093"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594694"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 
@@ -22,7 +22,7 @@ In diesem Thema werden Drag &amp; Drop-Gesten behandelt, deren Ursprung in ander
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>Definieren von Gestenhandlern durch Überschreiben von ShapeElement-Methoden
 
-`OnDragDrop`, `OnDoubleClick`, `OnDragOver` und andere Methoden können überschrieben werden.
+`OnDragDrop`, `OnDoubleClick`, `OnDragOver`und andere Methoden können überschrieben werden.
 
 Fügen Sie Ihrem DSL-Projekt eine neue Codedatei hinzu. Bei Gesten Handlern benötigen Sie in der Regel mindestens die folgenden `using` Direktiven:
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Diagrammklasse, die auf den Ziehvorgang reagieren soll. Überschreiben Sie die folgenden Methoden:
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> – Diese Methode wird aufgerufen, wenn der Mauszeiger während des Ziehvorgangs in die Form eintritt. Die Methode sollte das Element untersuchen, das der Benutzer zieht, und die Effect-Eigenschaft festlegen, um anzugeben, ob der Benutzer das Element auf der Form ablegen kann. Mit der Effect-Eigenschaft wird die Darstellung des Cursors bestimmt, während er sich über dieser Form befindet. Darüber hinaus wird mit der Eigenschaft festgelegt, ob `OnDragDrop()` aufgerufen wird, wenn der Benutzer die Maustaste loslässt.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>: Diese Methode wird aufgerufen, wenn der Mauszeiger während eines Zieh Vorgangs in die Form eintritt. Die Methode sollte das Element untersuchen, das der Benutzer zieht, und die Effect-Eigenschaft festlegen, um anzugeben, ob der Benutzer das Element auf der Form ablegen kann. Mit der Effect-Eigenschaft wird die Darstellung des Cursors bestimmt, während er sich über dieser Form befindet. Darüber hinaus wird mit der Eigenschaft festgelegt, ob `OnDragDrop()` aufgerufen wird, wenn der Benutzer die Maustaste loslässt.
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -124,7 +124,7 @@ Wenn der Benutzer ein Element auf Ihr Diagramm oder von einem Teil des Diagramm 
 
 Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen verfügbar sein können, indem Sie den Code im Debuggingmodus ausführen und einen Haltepunkt beim Beginn von `OnDragOver()` oder `CanDragDrop()` festlegen. Prüfen Sie die Werte des `DiagramDragEventArgs`-Parameters. Die Informationen werden in zwei Formen bereitgestellt:
 
-- <xref:System.Windows.Forms.IDataObject> `Data`: Diese Eigenschaft enthält serialisierte Versionen der Quell Objekte (in der Regel in mehr als einem Format). Die nützlichsten Funktionen sind:
+- <xref:System.Windows.Forms.IDataObject>`Data`: Diese Eigenschaft enthält serialisierte Versionen der Quell Objekte (in der Regel in mehr als einem Format). Die nützlichsten Funktionen sind:
 
   - diagrammventargs. Data. getdataformats ()-listet die Formate auf, in denen Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).
 
@@ -148,7 +148,7 @@ Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen v
 
      Um UML-Formen zu akzeptieren, bestimmen Sie die GUIDs der UML-Form Klassen nach Experiment. Denken Sie daran, dass ein Diagramm meist mehr als einen Elementtyp aufweist. Denken Sie außerdem daran, dass ein Objekt, das aus einem DSL- oder UML-Diagramm gezogen wird, die Form und nicht das Modellelement ist.
 
-Darüber hinaus weist `DiagramDragEventArgs` Eigenschaften auf, die angeben, wo sich der Mauszeiger gerade befindet und ob der Benutzer die Tasten STRG, ALT oder UMSCHALT drückt.
+`DiagramDragEventArgs` verfügt auch über Eigenschaften, die die aktuelle Mauszeigerposition angeben und angeben, ob der Benutzer die STRG-Taste, die Alt-Taste oder die UMSCHALTTASTE drückt.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Abrufen des Originals eines gezogenen Elements
 
@@ -160,7 +160,7 @@ Die Eigenschaften `Data` und `Prototype` der Ereignisargumente enthalten nur ein
 
 Machen Sie die Quell-DSL für den Visual Studio-modellbus zugänglich:
 
-1. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche und dann auf **ModelBus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
+1. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Mit der rechten Maustaste in der Entwurfsoberfläche, und klicken Sie dann auf **Modelbus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
 
 2. Klicken Sie auf **alle Vorlagen transformieren** , und erstellen Sie die Lösung neu.
 

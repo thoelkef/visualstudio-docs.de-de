@@ -2,17 +2,17 @@
 title: T4-Vorlagendirektive
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983707"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591839"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 
@@ -68,7 +68,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standardwert)
+`false` (Standard)
 
 Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
@@ -88,7 +88,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standardwert)
+`false` (Standard)
 
 `trueFromBase`
 
@@ -128,7 +128,7 @@ Beispiel:
 
 Gültige Werte:
 
-`C#` (Standardwert)
+`C#` (Standard)
 
 `VB`
 
@@ -245,7 +245,7 @@ Beispiel:
 
 Gültige Werte:
 
-`true` (Standardwert)
+`true` (Standard)
 
 `false`
 
@@ -261,7 +261,7 @@ Beispiel:
 
 Gültige Werte:
 
-`public` (Standardwert)
+`public` (Standard)
 
 `internal`
 

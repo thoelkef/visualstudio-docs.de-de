@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985129"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594733"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -145,7 +145,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
 ## <a name="CommandSet"></a>Definieren des Verhaltens des Befehls
 
-Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist in der Regel *\<YourDslName >* `CommandSet`. Es ist hilfreich zu beginnen, indem Sie den Namen der Klasse überprüfen und ihren Inhalt überprüfen.
+Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist in der Regel *\<yourdslname >* `CommandSet`. Es ist hilfreich zu beginnen, indem Sie den Namen der Klasse überprüfen und ihren Inhalt überprüfen.
 
 Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.
 
@@ -193,7 +193,7 @@ namespace Company.Language1 /* Make sure this is correct */
 Sie müssen zwei Methoden definieren, eine, um zu bestimmen, wann der Befehl im Kontextmenü (Kontextmenü) angezeigt wird, und der andere, um den Befehl auszuführen. Diese Methoden sind keine Überschreibungen, sondern Sie registrieren sie in einer Liste von Befehlen.
 
 ### <a name="define-when-the-command-will-be-visible"></a>Definieren, wann der Befehl sichtbar ist
- Definieren Sie für jeden Befehl eine `OnStatus...` Methode, die bestimmt, ob der Befehl im Menü angezeigt wird und ob er aktiviert oder abgeblendet wird. Legen Sie die Eigenschaften `Visible` und `Enabled` der `MenuCommand` fest, wie im folgenden Beispiel gezeigt. Diese Methode wird jedes Mal, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, aufgerufen, um das Kontextmenü zu erstellen. Daher muss sie schnell ausführbar sein.
+ Definieren Sie für jeden Befehl eine `OnStatus...` Methode, die bestimmt, ob der Befehl im Menü angezeigt wird und ob er aktiviert oder abgeblendet wird. Legen Sie die Eigenschaften `Visible` und `Enabled` der `MenuCommand`fest, wie im folgenden Beispiel gezeigt. Diese Methode wird jedes Mal, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, aufgerufen, um das Kontextmenü zu erstellen. Daher muss sie schnell ausführbar sein.
 
  Im Beispiel ist der Befehl nur sichtbar, wenn der Benutzer einen bestimmten Formtyp ausgewählt hat. Und er wird nur aktiviert, wenn sich mindestens eines der ausgewählten Elemente in einem bestimmten Zustand befindet. Das Beispiel basiert auf der Vorlage "Klassendiagramm-DSL", und ClassShape und ModelClass sind in der DSL definierte Typen:
 
@@ -220,17 +220,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 Die folgenden Fragmente sind häufig in OnStatus-Methoden nützlich:
 
-- `this.CurrentSelection` Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
+- `this.CurrentSelection`. Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
 
-- `this.IsDiagramSelected()`  -  `true`, wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
+- `this.IsDiagramSelected()` - `true`, wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` – der Benutzer hat nur ein einzelnes Objekt ausgewählt
+- `this.IsSingleSelection()`: der Benutzer hat nicht mehrere Objekte ausgewählt.
 
-- `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat
+- `this.SingleSelection`-die Form oder das Diagramm, auf die der Benutzer mit der rechten Maustaste geklickt hat
 
-- `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird
+- `shape.ModelElement as MyLanguageElement`-das Modellelement, das durch eine Form dargestellt wird.
 
 Generell sollten Sie die `Visible`-Eigenschaft davon abhängig machen, was ausgewählt ist, und die `Enabled`-Eigenschaft vom Zustand der ausgewählten Elemente abhängig machen.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Wenn Sie den Abschnitt "Symbols" in der VSCT-Datei ändern, müssen Sie auch diese Deklarationen entsprechend ändern. Außerdem sollten Sie die Versionsnummer in Package.tt erhöhen.
 
- Registrieren Sie Ihre Menübefehle im Rahmen dieses Befehlssatzes. `GetMenuCommands()` wird einmalig bei der Initialisierung des Diagramms aufgerufen:
+ Registrieren Sie Ihre Menübefehle im Rahmen dieses Befehlssatzes. `GetMenuCommands()` wird einmal aufgerufen, wenn das Diagramm initialisiert wird:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()

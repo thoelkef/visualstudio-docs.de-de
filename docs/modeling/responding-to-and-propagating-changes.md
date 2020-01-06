@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 537f41418b6e66055acd9bedd5f0ccf4e01db524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbe09c242fce137d90b90ff2d6c547cee1ed2dc7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660340"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595396"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Reagieren auf und Weitergeben von Änderungen
 
@@ -24,7 +24,7 @@ Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code sc
 
 Beachten Sie als Richtlinie diese Verfahren in der folgenden Reihenfolge:
 
-|Fahr|Szenarien|Weitere Informationen|
+|Verfahren|Szenarien|Weitere Informationen|
 |-|-|-|
 |Definieren Sie eine berechnete Domänen Eigenschaft.|Eine Domänen Eigenschaft, deren Wert aus anderen Eigenschaften im Modell berechnet wird. Beispielsweise ein Preis, der die Summe der Preise für verwandte Elemente ist.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|
 |Definieren Sie eine benutzerdefinierte Speicher Domänen Eigenschaft.|Eine Domänen Eigenschaft, die in anderen Teilen des Modells oder extern gespeichert ist. Beispielsweise können Sie eine Ausdrucks Zeichenfolge in eine Struktur im Modell analysieren.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|
@@ -34,7 +34,7 @@ Beachten Sie als Richtlinie diese Verfahren in der folgenden Reihenfolge:
 |.Net-Ereignisse|Formen verfügen über Ereignishandler, die auf Mausklicks und andere Gesten reagieren. Sie müssen für jedes Objekt eine Registrierung für diese Ereignisse durchsuchen. Die Registrierung erfolgt in der Regel in einer außer Kraft Setzung von initializeingestanceresources und muss für jedes Element ausgeführt werden.<br /><br /> Diese Ereignisse treten in der Regel außerhalb einer Transaktion auf.|[Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
 |Begrenzungs Regeln|Eine Begrenzungs Regel wird speziell verwendet, um die Grenzen einer Form einzuschränken.|[BoundsRules schränken Position und Größe von Formen ein](/visualstudio/modeling/boundsrules-constrain-shape-location-and-size?view=vs-2015)|
 |Auswahlregeln|Auswahlregeln beschränken speziell das, was der Benutzer auswählen kann.|[Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)|
-|Onassoalisiedpropertychanged|Geben Sie die Zustände der Modellelemente mithilfe von Merkmalen von Formen und Connectors wie Schatten, Pfeilspitzen, Farbe, Linienbreite und Stil an.|[Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
+|OnAssocatedPropertyChanged|Geben Sie die Zustände der Modellelemente mithilfe von Merkmalen von Formen und Connectors wie Schatten, Pfeilspitzen, Farbe, Linienbreite und Stil an.|[Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
 ## <a name="compare-rules-and-store-events"></a>Vergleichen von Regeln und Speichern von Ereignissen
 
@@ -44,9 +44,9 @@ Regeln werden normalerweise bei der End-Transaktion angewendet, in der die Ände
 
 Verwenden Sie Store-Ereignisse, um das Modell mit Objekten außerhalb des Stores zu synchronisieren, und Regeln, um die Konsistenz innerhalb des Stores aufrechtzuerhalten.
 
-- **Erstellen von benutzerdefinierten Regeln** Sie erstellen eine benutzerdefinierte Regel als abgeleitete Klasse aus einer abstrakten Regel. Außerdem müssen Sie das Framework über die benutzerdefinierte Regel informieren. Weitere Informationen finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+- **Erstellen von benutzerdefinierten Regeln** Sie erstellen eine benutzerdefinierte Regel als abgeleitete Klasse aus einer abstrakten Regel. Außerdem müssen Sie das Framework über die benutzerdefinierte Regel informieren. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
-- **Abonnieren von Ereignissen** Bevor Sie ein Ereignis abonnieren können, erstellen Sie einen Ereignishandler und einen Delegaten. Verwenden Sie dann die <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property, um das Ereignis zu abonnieren. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Abonnieren von Ereignissen** Bevor Sie ein Ereignis abonnieren können, erstellen Sie einen Ereignishandler und einen Delegaten. Verwenden Sie dann die <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>-Eigenschaft, um das-Ereignis zu abonnieren. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 - **Änderungen werden nicht mehr** ausgeführt Wenn Sie eine Transaktion rückgängig machen, werden Ereignisse ausgelöst, aber Regeln werden nicht angewendet. Wenn eine Regel einen Wert ändert und Sie diese Änderung rückgängig machen, wird der Wert während der Rückgängig-Aktion auf den ursprünglichen Wert zurückgesetzt. Wenn ein Ereignis ausgelöst wird, müssen Sie den Wert manuell auf seinen ursprünglichen Wert zurücksetzen. Weitere Informationen zu Transaktionen und zum Rückgängigmachen finden Sie unter Gewusst [wie: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).
 

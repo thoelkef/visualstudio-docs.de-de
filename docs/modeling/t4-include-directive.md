@@ -2,17 +2,17 @@
 title: T4-Include-Direktive
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606390"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591852"
 ---
 # <a name="t4-include-directive"></a>T4-Include-Direktive
 
@@ -24,7 +24,7 @@ In einer Textvorlage in Visual Studio können Sie Text aus einer anderen Datei m
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` kann absolut oder relativ zur aktuellen Vorlagendatei sein.
+- `filePath` kann absolut oder relativ zur aktuellen Vorlagen Datei sein.
 
    Darüber hinaus können bestimmte Visual Studio-Erweiterungen ihre eigenen Verzeichnisse angeben, um nach Includedateien zu suchen. Wenn Sie z. b. das Visualisierungs-und Modellierungs-SDK (DSL-Tools) installiert haben, wird der folgende Ordner der Include-Liste hinzugefügt: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
@@ -38,7 +38,7 @@ In einer Textvorlage in Visual Studio können Sie Text aus einer anderen Datei m
 
 - Für einen Namen einer eingeschlossenen Datei muss nicht die Erweiterung `".tt"` verwendet werden.
 
-   Sie können für eingeschlossene Dateien ggf. eine andere Erweiterung verwenden, z. B. `".t4"`. Dies liegt daran, dass Visual Studio beim Hinzufügen einer `.tt`-Datei zu einem Projekt automatisch seine **benutzerdefinierte Tool** -Eigenschaft auf `TextTemplatingFileGenerator` festlegt. Normalerweise sollen eingeschlossene Dateien nicht einzeln transformiert werden.
+   Sie können für eingeschlossene Dateien ggf. eine andere Erweiterung verwenden, z. B. `".t4"`. Dies liegt daran, dass Visual Studio beim Hinzufügen einer `.tt`-Datei zu einem Projekt automatisch seine **benutzerdefinierte Tool** -Eigenschaft auf `TextTemplatingFileGenerator`festlegt. Normalerweise sollen eingeschlossene Dateien nicht einzeln transformiert werden.
 
    Andererseits sollten Sie beachten, dass die Dateierweiterung in einigen Fällen Einfluss darauf hat, welche zusätzlichen Ordner nach Includedateien durchsucht werden. Dies könnte wichtig sein, wenn eine eingeschlossene Datei andere Dateien enthält.
 
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **TextFile1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **TextFile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).
