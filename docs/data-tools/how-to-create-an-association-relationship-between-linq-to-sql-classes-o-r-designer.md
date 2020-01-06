@@ -3,17 +3,17 @@ title: Beziehungen zwischen LINQ to SQL Klassen (O/R-Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13443dd25719caad5002b29a33975a0dbc5850f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb81cf17de86a11d2373f6a545b3efc78e65ada9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641890"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586470"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Gewusst wie: Erstellen einer Zuordnung zwischen LINQ to SQL Klassen (O/R-Designer)
 Zuordnungen zwischen Entitätsklassen in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ähneln Beziehungen zwischen Tabellen einer Datenbank. Sie können Zuordnungen zwischen Entitätsklassen mithilfe des Dialogfelds **Zuordnungs-Editor** erstellen.
@@ -26,11 +26,11 @@ Sie müssen eine übergeordnete und eine untergeordnete Klasse auswählen, wenn 
 ## <a name="association-properties"></a>Zuordnungseigenschaften
 Nach dem Erstellen der Zuordnung kann die Zuordnung im **O/R-Designer** ausgewählt werden, um einige ihrer Eigenschaften im Fenster **Eigenschaften** zu konfigurieren. (Die Zuordnung ist die Linie zwischen den verknüpften Klassen.) In der folgenden Tabelle finden Sie Beschreibungen der Eigenschaften einer Zuordnung.
 
-|property|Beschreibung|
+|Die Eigenschaften-|Beschreibung|
 |--------------|-----------------|
 |**Kardinalität**|Bestimmt, ob es sich um eine 1:n- oder eine 1:1-Zuordnung handelt.|
-|**Untergeordnete Eigenschaft**|Gibt an, ob für die übergeordnete Klasse eine Eigenschaft erstellt werden soll, die eine Auflistung der untergeordneten Datensätze auf der Fremdschlüsselseite der Zuordnung ist oder auf diese Datensätze verweist. Wenn die untergeordnete **Eigenschaft** beispielsweise in der Zuordnung zwischen `Customer` und `Order` auf **true**festgelegt ist, wird für die übergeordnete Klasse eine Eigenschaft mit dem Namen `Orders` erstellt.|
-|**Übergeordnete Eigenschaft**|Die Eigenschaft der untergeordneten Klasse, die auf die zugeordnete übergeordnete Klasse verweist. Beispielsweise wird in der Zuordnung zwischen `Customer` und `Order` eine Eigenschaft mit dem Namen `Customer`, die auf den zugeordneten Kunden für einen Auftrag verweist, in der `Order`-Klasse erstellt.|
+|**Untergeordnete Eigenschaft**|Gibt an, ob für die übergeordnete Klasse eine Eigenschaft erstellt werden soll, die eine Auflistung der untergeordneten Datensätze auf der Fremdschlüsselseite der Zuordnung ist oder auf diese Datensätze verweist. Wenn die untergeordnete **Eigenschaft** beispielsweise in der Zuordnung zwischen `Customer` und `Order`auf **true**festgelegt ist, wird für die übergeordnete Klasse eine Eigenschaft mit dem Namen `Orders` erstellt.|
+|**Übergeordnete Eigenschaft**|Die Eigenschaft der untergeordneten Klasse, die auf die zugeordnete übergeordnete Klasse verweist. Beispielsweise wird in der Zuordnung zwischen `Customer` und `Order`eine Eigenschaft mit dem Namen `Customer`, die auf den zugeordneten Kunden für einen Auftrag verweist, in der `Order`-Klasse erstellt.|
 |**Beteiligte Eigenschaften**|Zeigt die Zuordnungseigenschaften an und stellt eine Schaltfläche mit **Auslassungszeichen** (...) bereit, mit der das Dialogfeld **Zuordnungs-Editor** erneut geöffnet werden kann.|
 |**Eindeutig**|Gibt an, ob die Fremdschlüssel-Zielspalten eine Unique-Einschränkung aufweisen.|
 

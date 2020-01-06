@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666983"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596488"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors
 
@@ -84,9 +84,9 @@ End Property
 
 2. Verweise auf diese Assemblys hinzufügen:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
 3. Ersetzen Sie den Code in **Class1** durch den folgenden Code. Dieser Code definiert eine CustomDirectiveProcessor-Klasse, die von der <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>-Klasse erbt und die erforderlichen Methoden implementiert.
 
@@ -637,9 +637,9 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
 1. Führen Sie den `regedit` Befehl über das Startmenü oder die Befehlszeile aus.
 
-2. Navigieren Sie zum Speicherort **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* 0 \ texttemplating\directiveprocessor**, und klicken Sie auf den Knoten.
+2. Navigieren Sie zum Speicherort **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*0 \ texttemplating\directiveprocessor**, und klicken Sie auf den Knoten.
 
-   Verwenden Sie auf 64-Bit-Systemen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ texttemplating\directiveprozessoren**
+   Verwenden Sie auf 64-Bit-Systemen **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*. 0 \ texttemplating\directiveprozessoren**
 
 3. Fügen Sie einen neuen Schlüssel mit dem Namen "CustomDirectiveProcessor" hinzu.
 
@@ -650,21 +650,21 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
 5. Fügen Sie einen neuen Zeichenfolgenwert mit dem Namen "CodeBase" hinzu, dessen Wert dem Pfad der zuvor in dieser exemplarischen Vorgehensweise erstellten CustomDP.dll entspricht.
 
-     Der Pfad könnte z. b. wie `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll` aussehen.
+     Der Pfad könnte z. b. wie `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`aussehen.
 
      Folgende Werte müssen für den Registrierungsschlüssel festgelegt werden:
 
-   | -Name | Geben Sie Folgendes ein: | Daten |
+   | -Name | Typ | importieren |
    |-|-|-|
-   | (Standard) | REG_SZ | (Wert nicht festgelegt) |
+   | (Standardeinstellung) | REG_SZ | (Wert nicht festgelegt) |
    | Klasse | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<Path Ihrer Lösung ></strong> Customdp\bin\debug\customdp.dll |
+   | CodeBase | REG_SZ | <strong>\<Pfad zu Ihrer Lösung ></strong> Customdp\bin\debug\customdp.dll |
 
      Wenn Sie die Assembly im GAC gespeichert haben, sollten die Werte wie folgt aussehen:
 
-   | -Name | Geben Sie Folgendes ein: | Daten |
+   | -Name | Typ | importieren |
    |-|-|-|
-   | (Standard) | REG_SZ | (Wert nicht festgelegt) |
+   | (Standardeinstellung) | REG_SZ | (Wert nicht festgelegt) |
    | Klasse | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
@@ -732,7 +732,7 @@ In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen
 
 2. Fügen Sie eine neue Textvorlagendatei mit dem Namen "TestDP.tt" hinzu.
 
-3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von TestDP.tt auf `TextTemplatingFileGenerator` festgelegt ist.
+3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von TestDP.tt auf `TextTemplatingFileGenerator`festgelegt ist.
 
 4. Ändern Sie den Inhalt von TestDP.tt in den folgenden Text.
 
@@ -877,7 +877,7 @@ Nachdem Sie den benutzerdefinierten Anweisungsprozessor getestet haben, können 
 1. Ersetzen Sie den Code in *TestDP.tt* durch den folgenden Code. Der HTML-Code ist hervorgehoben. Stellen Sie sicher, dass Sie die Zeichenfolge `YOUR PATH` durch den Pfad zur Datei " *DOCFILE. XML* " ersetzen.
 
     > [!NOTE]
-    > Zusätzliche Open \< #-und Close # >-Tags trennen den Anweisungs Code von den HTML-Tags.
+    > Zusätzliche Open \<#-und Close # >-Tags trennen den Anweisungs Code von den HTML-Tags.
 
     ```csharp
     <#@ assembly name="System.Xml" #>

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924545"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586977"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -38,11 +38,11 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
-- Visual Studio
+- öffnen
 
 - Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, der die AdventureWorks Light (AdventureWorksLT)-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank aus dem [codeplex-Archiv](https://archive.codeplex.com/?p=awlt2008dbscript)herunterladen.
 
@@ -50,7 +50,7 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 - DataSets und TableAdapters. Weitere Informationen finden Sie unter [DataSet-Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) und [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie in der [Übersicht über die Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 
@@ -58,9 +58,9 @@ Erstellen Sie ein neues WPF-Projekt, um Produktdaten Sätze anzuzeigen.
 
 ::: moniker range="vs-2017"
 
-1. Öffnen Sie Visual Studio.
+1. Öffnen Sie Visual Studio.
 
-2. Wählen Sie im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
+2. Wählen Sie im Menü **Datei** die Option **neu** > **Projekt**aus.
 
 3. Erweitern Sie **Visual Basic** oder **Visual C#** , und wählen Sie dann **Windows** aus.
 
@@ -72,7 +72,7 @@ Erstellen Sie ein neues WPF-Projekt, um Produktdaten Sätze anzuzeigen.
 
 ::: moniker range=">=vs-2019"
 
-1. Öffnen Sie Visual Studio.
+1. Öffnen Sie Visual Studio.
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
@@ -80,7 +80,7 @@ Erstellen Sie ein neues WPF-Projekt, um Produktdaten Sätze anzuzeigen.
 
 ::: moniker-end
 
-   Visual Studio erstellt das Projekt „AdventureWorksProductsEditor“.
+   Visual Studio erstellt das Projekt AdventureWorksProductsEditor.
 
 ## <a name="create-a-dataset-for-the-application"></a>Erstellen eines Datasets für die Anwendung
 

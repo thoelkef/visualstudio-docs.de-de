@@ -2,17 +2,17 @@
 title: Siehe Abhängigkeiten zwischen C++ Quelldateien und Header Dateien
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654181"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597242"
 ---
 # <a name="code-maps-for-c-projects"></a>Code Maps für C++ Projekte
 
@@ -20,7 +20,7 @@ Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivie
 
 Wenn Sie eine Projektmappe öffnen, die Visual C++-Projekte enthält, könnte die Aktualisierung der IntelliSense-Datenbank etwas Zeit beanspruchen. Während dieser Zeit sind Sie möglicherweise nicht in der Lage, Code Maps für Header Dateien ( *. h* oder `#include`) zu erstellen, bis die Aktualisierung der IntelliSense-Datenbank abgeschlossen ist. Sie können den Status der Aktualisierung in der Statusleiste von Visual Studio überwachen.
 
-- Um Abhängigkeiten zwischen allen Quelldateien und Header Dateien in ihrer Projekt Mappe anzuzeigen, wählen Sie **Architektur**  > **Diagramm der Includedateien generieren aus**.
+- Um Abhängigkeiten zwischen allen Quelldateien und Header Dateien in ihrer Projekt Mappe anzuzeigen, wählen Sie **Architektur** > **Diagramm der Includedateien generieren aus**.
 
    ![Abhängigkeitsdiagramm für nativen Code](../modeling/media/dependencygraphgeneral_nativecode.png)
 

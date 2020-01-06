@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Data Sources window
 - displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7257bd25adf32b7529d2c5e1dc6d2a753d9b2458
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648855"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587029"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 
@@ -45,7 +45,7 @@ Im Kontext der Datenbindung stellt eine Datenquelle die Daten im Arbeitsspeicher
 
 ## <a name="data-sources-window"></a>Datenquellenfenster
 
-Datenquellen stehen dem Projekt als Elemente im Fenster **Datenquellen** zur Verfügung. Dieses Fenster ist sichtbar, wenn eine Formular Entwurfs Oberfläche das aktive Fenster in Ihrem Projekt ist, oder Sie können es öffnen (wenn ein Projekt geöffnet ist), indem Sie **anzeigen**  > **anderen Windows**  > **Datenquellen**auswählen. Sie können Elemente aus diesem Fenster ziehen, um Steuerelemente zu erstellen, die an die zugrunde liegenden Daten gebunden sind. Außerdem können Sie die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste klicken.
+Datenquellen stehen dem Projekt als Elemente im Fenster **Datenquellen** zur Verfügung. Dieses Fenster ist sichtbar, wenn eine Formular Entwurfs Oberfläche das aktive Fenster in Ihrem Projekt ist, oder Sie können es öffnen (wenn ein Projekt geöffnet ist), indem Sie **anzeigen** > **anderen Windows** > **Datenquellen**auswählen. Sie können Elemente aus diesem Fenster ziehen, um Steuerelemente zu erstellen, die an die zugrunde liegenden Daten gebunden sind. Außerdem können Sie die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste klicken.
 
 ![Datenquellenfenster](../data-tools/media/raddata-data-sources-window.png)
 
@@ -55,9 +55,9 @@ Für jeden Datentyp, der im Fenster **Datenquellen** angezeigt wird, wird ein st
 
 In der folgenden Tabelle sind einige der gängigsten Aufgaben aufgeführt, die Sie zum Binden von Steuerelementen an Daten ausführen.
 
-|Aufgabe|Weitere Informationen|
+|Task|Weitere Informationen|
 |----------| - |
-|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und wählen Sie  > **Datenquellen** **anzeigen** aus.|
+|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und wählen Sie > **Datenquellen** **anzeigen** aus.|
 |Fügen Sie dem Projekt eine Datenquelle hinzu.|[Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)|
 |Legen Sie das Steuerelement fest, das erstellt wird, wenn Sie ein Element vom Fenster **Datenquellen** in den Designer ziehen.|[Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Ändern Sie die Liste der Steuerelemente, die Elementen im Fenster **Datenquellen** zugeordnet sind.|[Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

@@ -4,21 +4,21 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606008"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591761"
 ---
 # <a name="text-template-utility-methods"></a>Hilfsprogrammmethoden für Textvorlagen
 
-Wenn Sie Code in einer Visual Studio-Textvorlage schreiben, stehen Ihnen mehrere Methoden zur Verfügung. Diese Methoden werden in <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> definiert.
+Wenn Sie Code in einer Visual Studio-Textvorlage schreiben, stehen Ihnen mehrere Methoden zur Verfügung. Diese Methoden werden in <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>definiert.
 
 > [!TIP]
 > Sie können auch andere Methoden und Dienste, die von der Host Umgebung bereitgestellt werden, in einer regulären (nicht vorverarbeiteten) Textvorlage verwenden. Beispielsweise können Sie Dateipfade auflösen, Fehler protokollieren und Dienste, die von Visual Studio bereitgestellt werden, sowie alle geladenen Pakete erhalten. Weitere Informationen finden Sie unter [zugreifen auf Visual Studio von einer Text Vorlage aus](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
@@ -115,7 +115,7 @@ Sie können Fehler-und Warnungs Hilfsprogrammmethoden zum Hinzufügen von Nachri
 
 ## <a name="access-to-host-and-service-provider"></a>Zugriff auf Host und Dienstanbieter
 
-Die-Eigenschaft `this.Host` kann den Zugriff auf Eigenschaften bereitstellen, die vom Host verfügbar gemacht werden, der die Vorlage ausführt. Um `this.Host` verwenden zu können, müssen Sie `hostspecific` Attribut in der `<@template#>`-Direktive festlegen:
+Die-Eigenschaft `this.Host` kann den Zugriff auf Eigenschaften bereitstellen, die vom Host verfügbar gemacht werden, der die Vorlage ausführt. Um `this.Host`verwenden zu können, müssen Sie `hostspecific` Attribut in der `<@template#>`-Direktive festlegen:
 
 `<#@template ... hostspecific="true" #>`
 
@@ -128,7 +128,7 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>Verwenden eines anderen Satzes von Hilfsprogrammmethoden
 
-Im Rahmen des Text Generierungs Prozesses wird die Vorlagen Datei in eine Klasse transformiert, die immer benannt ist, `GeneratedTextTransformation`and von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> erbt. Wenn Sie stattdessen einen anderen Satz von Methoden verwenden möchten, können Sie eine eigene Klasse schreiben und in der Template-Direktive angeben. Die Klasse muss von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> erben.
+Im Rahmen des Text Generierungs Prozesses wird die Vorlagen Datei in eine Klasse transformiert, die immer `GeneratedTextTransformation`benannt ist und von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>erbt. Wenn Sie stattdessen einen anderen Satz von Methoden verwenden möchten, können Sie eine eigene Klasse schreiben und in der Template-Direktive angeben. Die Klasse muss von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>erben.
 
 ```
 <#@ template inherits="MyUtilityClass" #>

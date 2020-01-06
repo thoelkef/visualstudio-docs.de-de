@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748166"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594005"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
 Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) können Sie Validierungseinschränkungen definieren, um zu überprüfen, ob das vom Benutzer erstellte Modell sinnvoll ist. Wenn Benutzer in Ihrer DSL beispielsweise einen Stammbaum von Personen und deren Vorfahren zeichnen können, könnten Sie eine Einschränkung schreiben, mit der sichergestellt wird, dass die Geburtstage der Kinder nach denen der Eltern liegen.
@@ -58,7 +58,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
 
    2. Erweitern Sie im DSL-Explorer den Knoten **Editor** , und wählen Sie über **Prüfung**aus.
 
-   3. Legen Sie im Eigenschaftenfenster die Eigenschaften **verwendet** auf `true` fest. Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.
+   3. Legen Sie im Eigenschaftenfenster die Eigenschaften **verwendet** auf `true`fest. Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.
 
    4. Klicken Sie in der Symbolleiste **Projektmappen-Explorer** auf **alle Vorlagen transformieren** .
 
@@ -125,7 +125,7 @@ public partial class ParentsHaveChildren
 
  Beachten Sie die folgenden Punkte zu diesem Code:
 
-- Sie können Validierungsmethoden Domänenklassen oder -beziehungen hinzufügen. Der Code für diese Typen befindet sich in " **dsl\generated code\domain \*. cs**".
+- Sie können Validierungsmethoden Domänenklassen oder -beziehungen hinzufügen. Der Code für diese Typen befindet sich in " **dsl\generated code\domain\*. cs**".
 
 - Jede Validierungsmethode wird auf jede Instanz ihrer Klasse und deren Unterklassen angewendet. Bei einer Domänenbeziehung ist jede Instanz ein Link zwischen zwei Modellelementen.
 
@@ -173,11 +173,11 @@ public partial class Person
         { ...
 ```
 
- **Aggregierten Validierungs Einschränkungen.** Wenn Sie die Validierung in einer vorhersagbaren Reihenfolge anwenden möchten, definieren Sie eine einzelne Validierungsmethode für eine Besitzer Klasse, z. b. das Stamm Element des Modells. Mit dieser Technik können Sie mehrere Fehlerberichte in einer Meldung aggregieren.
+ **Aggregierten Validierungs Einschränkungen.** Definieren Sie zur Anwendung der Validierung in einer vorhersagbaren Reihenfolge eine Validierungsmethode für eine Besitzerklasse wie dem Stammelement Ihres Modells. Mit dieser Technik können Sie mehrere Fehlerberichte in einer Meldung aggregieren.
 
  Zu den Nachteilen gehört, dass die Verwaltung der kombinierten Methode schwieriger ist und dass alle Einschränkungen die gleichen `ValidationCategories` aufweisen müssen. Daher empfiehlt es sich, jede Einschränkung möglichst in einer gesonderten Methode zu belassen.
 
- **Übergeben von Werten im Kontext Cache.** Der Kontext Parameter verfügt über ein Wörterbuch, in das Sie beliebige Werte platzieren können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:
+ **Übergeben von Werten im Kontext Cache.** Der Kontextparameter weist ein Wörterbuch auf, in das Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -193,7 +193,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Wenn Sie als Multiplizität einer Rolle in einer Domänenbeziehung 1..* oder 1..1 festlegen, der Benutzer aber keinen Link mit dieser Beziehung erstellt, wird eine Validierungsfehlermeldung angezeigt.
 
- Wenn Ihre DSL beispielsweise die Klassen "Person" und "Town" und eine Beziehung "personlivesintown" mit der Beziehung **1.. \\** * in der Rolle "Ort" aufweist, wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
+ Wenn Ihre DSL beispielsweise die Klassen "Person" und "Town" und eine Beziehung "personlivesintown" mit der Beziehung **1..\\** * in der Rolle "Ort" aufweist, wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
 
 ## <a name="running-validation-from-program-code"></a>Ausführen der Validierung über den Programmcode
  Sie können die Validierung ausführen, indem Sie auf einen ValidationController zugreifen oder ihn erstellen. Wenn die Fehler im Fehler Fenster für den Benutzer angezeigt werden sollen, verwenden Sie den validationcontroller, der an die docdata Ihres Diagramms angehängt ist. Wenn Sie beispielsweise einen Menübefehl schreiben, ist `CurrentDocData.ValidationController` in der Befehlssatzklasse verfügbar:
@@ -327,9 +327,9 @@ validationController.ValidateCustom
 
  Diese Techniken werden jedoch nicht empfohlen. Normalerweise ist es besser, den Benutzer entscheiden zu lassen, wie ein ungültiges Modell korrigiert wird.
 
- **Passen Sie die Änderung an, um das Modell auf Gültigkeit wiederherzustellen.** Wenn der Benutzer z. b. eine Eigenschaft über dem zulässigen Maximum festlegt, können Sie die Eigenschaft auf den maximalen Wert zurücksetzen. Definieren Sie dazu eine Regel. Weitere Informationen finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+ **Passen Sie die Änderung an, um das Modell auf Gültigkeit wiederherzustellen.** Beispiel: Wenn der Benutzer eine Eigenschaft oberhalb des zulässigen Maximums festlegt, könnten Sie die Eigenschaft auf den maximalen Wert zurücksetzen. Definieren Sie dazu eine Regel. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Führen Sie ein Rollback der Transaktion aus, wenn eine ungültige Änderung versucht wird** Sie können für diesen Zweck auch eine Regel definieren, aber in einigen Fällen ist es möglich, einen Eigenschaftenhandler **onvaluechanging ()** zu überschreiben oder eine Methode zu überschreiben, z. b. `OnDeleted().`, um ein Rollback für eine `this.Store.TransactionManager.CurrentTransaction.Rollback().` Transaktion auszuführen. Weitere Informationen finden Sie unter [Domänen Eigenschaft. Wert Änderungs Handler](../modeling/domain-property-value-change-handlers.md).
+ **Führen Sie ein Rollback der Transaktion aus, wenn eine ungültige Änderung versucht wird** Sie können für diesen Zweck auch eine Regel definieren, aber in einigen Fällen ist es möglich, einen Eigenschaftenhandler **onvaluechanging ()** zu überschreiben oder eine Methode zu überschreiben, z. b. `OnDeleted().`, einen Rollback für eine Transaktion auszuführen, `this.Store.TransactionManager.CurrentTransaction.Rollback().` Weitere Informationen finden Sie unter [Domänen Eigenschafts Wert-Änderungs Handler](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Stellen Sie sicher, dass der Benutzer weiß, dass die Änderung angepasst oder zurückgesetzt wurde. Verwenden Sie beispielsweise `System.Windows.Forms.MessageBox.Show("message").`.

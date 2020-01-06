@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648900"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587055"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 
@@ -37,7 +37,7 @@ Im Kontext von .NET Data Tools in Visual Studio bezieht sich der Begriff *Datenq
 > [!NOTE]
 > Wenn Sie keine Daten Bindungsfunktionen, Datasets, Entity Framework LINQ to SQL, WCF oder SharePoint verwenden, gilt das Konzept einer "Datenquelle" nicht. Stellen Sie einfach eine direkte Verbindung mit der Datenbank her, indem Sie die SqlCommand-Objekte verwenden und direkt mit der Datenbank kommunizieren.
 
-Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigurieren von Daten** Quellen in einer Windows Forms oder Windows Presentation Foundation Anwendung. Erstellen Sie für Entity Framework zuerst die Entitäts Klassen, und starten Sie dann den Assistenten, indem Sie **Project**  > **neue Datenquelle hinzufügen** auswählen (Weitere Informationen finden Sie weiter unten in diesem Artikel).
+Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigurieren von Daten** Quellen in einer Windows Forms oder Windows Presentation Foundation Anwendung. Erstellen Sie für Entity Framework zuerst die Entitäts Klassen, und starten Sie dann den Assistenten, indem Sie **Project** > **neue Datenquelle hinzufügen** auswählen (Weitere Informationen finden Sie weiter unten in diesem Artikel).
 
 ![Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -46,7 +46,7 @@ Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigu
 Nachdem Sie eine Datenquelle erstellt haben, wird Sie im Fenster **Datenquellen** Tool angezeigt.
 
 > [!TIP]
-> Um das Fenster **Datenquellen** zu öffnen, stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann **UMSCHALT** +**alt** +**D** , oder wählen Sie  > **andere Fenster**  > **Datenquellen** **anzeigen** aus.
+> Um das Fenster **Datenquellen** zu öffnen, stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann **UMSCHALT**+**alt**+**D** , oder wählen Sie > **andere Fenster** > **Datenquellen** **anzeigen** aus.
 
 Sie können eine Datenquelle aus dem **Datenquellen** Fenster auf eine Formular Entwurfs Oberfläche oder ein Steuerelement ziehen. Dies bewirkt, dass Code Bausteine generiert werden, in dem die Daten aus dem Datenspeicher angezeigt werden.
 
@@ -60,13 +60,13 @@ Sie können ein DataSet oder ein Entity Framework Modell erstellen, das als Date
 
 ### <a name="dataset"></a>DataSet
 
-Um ein DataSet als Datenquelle zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, indem Sie **Projekt**  > **neue Datenquelle hinzufügen**auswählen. Wählen Sie den Daten Quellentyp **Datenbank** aus, und befolgen Sie die Anweisungen, um entweder eine neue oder eine vorhandene Datenbankverbindung oder eine Datenbankdatei anzugeben.
+Um ein DataSet als Datenquelle zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, indem Sie **Projekt** > **neue Datenquelle hinzufügen**auswählen. Wählen Sie den Daten Quellentyp **Datenbank** aus, und befolgen Sie die Anweisungen, um entweder eine neue oder eine vorhandene Datenbankverbindung oder eine Datenbankdatei anzugeben.
 
 ### <a name="entity-classes"></a>Entitätsklassen
 
 So erstellen Sie ein Entity Framework Modell als Datenquelle:
 
-1. Führen Sie den **Entity Data Model Assistenten** aus, um die Entitäts Klassen zu erstellen. Wählen Sie **Projekt**  >  neues Element  > **ADO.NET Entity Data Model** **Hinzufügen** aus.
+1. Führen Sie den **Entity Data Model Assistenten** aus, um die Entitäts Klassen zu erstellen. Wählen Sie **Projekt** > neues Element > **ADO.NET Entity Data Model** **Hinzufügen** aus.
 
    ![Neues Entity Framework Modell-Projekt Element](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648993"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587081"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Verwenden des Fensters "Code Metrikergebnisse"
 
@@ -30,9 +30,9 @@ Das Fenster **Code Metrikergebnisse** wird automatisch angezeigt, wenn Sie Code 
 
 Sie können das Fenster Code Metrikergebnisse mithilfe einer der folgenden Menü Sequenzen anzeigen:
 
-- Wählen Sie im Menü **analysieren** die Option **Windows**  > **Codemetrikergebnisse**aus.
+- Wählen Sie im Menü **analysieren** die Option **Windows** > **Codemetrikergebnisse**aus.
 
-- Wählen Sie im Menü **Ansicht** die Option **Weitere Fenster**  > **Codemetrikergebnisse**aus.
+- Wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** > **Codemetrikergebnisse**aus.
 
 Das Fenster **Code Metrikergebnisse** wird geöffnet, auch wenn es keine Ergebnisse enthält.
 

@@ -18,21 +18,21 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e8d5d8e3091b464084df065bb7b889db9fc2194f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648513"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586691"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Direktes Zugreifen auf die Datenbank mit einem TableAdapter
 
-Zusätzlich zu den `InsertCommand`, `UpdateCommand` und `DeleteCommand` werden TableAdapters mit Methoden erstellt, die direkt für die Datenbank ausgeführt werden können. Sie können diese Methoden (`TableAdapter.Insert`, `TableAdapter.Update` und `TableAdapter.Delete`) zum direkten Bearbeiten von Daten in der Datenbank aufzurufen.
+Zusätzlich zu den `InsertCommand`, `UpdateCommand`und `DeleteCommand`werden TableAdapters mit Methoden erstellt, die direkt für die Datenbank ausgeführt werden können. Sie können diese Methoden (`TableAdapter.Insert`, `TableAdapter.Update`und `TableAdapter.Delete`) zum direkten Bearbeiten von Daten in der Datenbank aufzurufen.
 
 Wenn Sie diese direkten Methoden nicht erstellen möchten, legen Sie die `GenerateDbDirectMethods`-Eigenschaft des TableAdapter auf `false` im **Eigenschaften** Fenster fest. Wenn einer TableAdapter-Abfrage zusätzlich zur Haupt Abfrage des TableAdapters Abfragen hinzugefügt werden, handelt es sich hierbei um eigenständige Abfragen, die diese `DbDirect` Methoden nicht generieren.
 
