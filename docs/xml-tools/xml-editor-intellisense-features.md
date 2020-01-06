@@ -3,17 +3,17 @@ title: IntelliSense-Funktionen des XML-Editors
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592385"
 ---
 # <a name="xml-editor-intellisense-features"></a>IntelliSense-Features des XML-Editors
 
@@ -85,9 +85,9 @@ Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und d
 
 `<e:Book xmlns:e="http://books"`
 
-## <a name="brace-matching"></a>Klammer Zuordnung
+## <a name="brace-matching"></a>Zugehörige Klammer
 
-Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den Elementen erhalten, die Sie gerade geschlossen haben. Sie können auch die Tastenkombination (**STRG** + **]** ) verwenden, um von einer geschweifter Klammer zur passenden geschweifter Klammer zu springen.
+Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den Elementen erhalten, die Sie gerade geschlossen haben. Sie können auch die Tastenkombination (**STRG**+ **]** ) verwenden, um von einer geschweifter Klammer zur passenden geschweifter Klammer zu springen.
 
 Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
@@ -107,7 +107,7 @@ Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
 ## <a name="modify-the-intellisense-options"></a>Ändern der IntelliSense-Optionen
 
-Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Sie können dies jedoch ändern, indem Sie die **Tools**  > **options** Einstellungen ändern.
+Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Sie können dies jedoch ändern, indem Sie die **Tools** > **options** Einstellungen ändern.
 
 Der Abschnitt **automatische Einfügung** der Seite **Verschiedenes** steuert das folgende Verhalten:
 

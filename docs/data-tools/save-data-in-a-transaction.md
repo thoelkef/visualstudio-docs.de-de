@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641100"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586236"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion
 
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe des <xref:System.Transactions>-Namespace in einer Transaktion gespeichert werden. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows Forms-Anwendung. Mit dem Assistenten zum Konfigurieren von Datenquellen können Sie in der Beispieldatenbank Northwind ein Dataset für zwei Tabellen erstellen. Sie fügen einem Windows Form Daten gebundene Steuerelemente hinzu, und Sie ändern den Code für die Schaltfläche "Save" (speichern) des bindingnavigators, um die Datenbank in einem Transaktionsbereich zu aktualisieren.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -50,7 +50,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 Der erste Schritt besteht darin, eine **Windows Forms Anwendung**zu erstellen.
 
-1. Wählen Sie in Visual Studio im Menü **Datei** die Option **neu**  > **Projekt**aus.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
 2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
 
@@ -74,7 +74,7 @@ In diesem Schritt wird mithilfe des **Assistenten zum Konfigurieren von Datenque
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder -
+         \- oder -
 
     - Klicken Sie auf **neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.
 
@@ -96,7 +96,7 @@ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus
 
 2. Ziehen Sie den Hauptknoten **Customers** aus dem Fenster **Datenquellen** auf **Form1**.
 
-   Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
+   Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
 
 3. Ziehen Sie den zugehörigen Knoten **Orders** (nicht den Haupt Knoten **Orders** , sondern den zugehörigen untergeordneten Tabellen Knoten unterhalb der Spalte **Fax** ) auf das Formular unterhalb von **CustomersDataGridView**.
 
@@ -108,7 +108,7 @@ Transaktionen verwenden den Namespace <xref:System.Transactions>. Eine Projektve
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>So fügen Sie einen Verweis zur DLL-Datei System.Transactions hinzu
 
-1. Wählen Sie im Menü **Projekt** die Option **Verweis hinzufügen**aus.
+1. Wählen Sie im Menü **Projekt** die Option **Verweis hinzufügen** aus.
 
 2. Wählen Sie auf der Registerkarte **.net** die Option **System. Transactions** aus, und klicken Sie dann auf **OK**.
 
@@ -116,7 +116,7 @@ Transaktionen verwenden den Namespace <xref:System.Transactions>. Eine Projektve
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Ändern Sie den Code in der Schaltfläche "SaveItem" von BindingNavigator.
 
-Für die erste Tabelle, die auf dem Formular abgelegt wird, wird standardmäßig Code dem `click`-Ereignis der Schaltfläche Speichern auf der <xref:System.Windows.Forms.BindingNavigator> hinzugefügt. Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise wird der vorhandene Save-Code aus dem Click-Ereignishandler der Schaltfläche "Save" umgestalten. Wir erstellen außerdem einige weitere Methoden, um bestimmte Aktualisierungs Funktionen bereitzustellen, je nachdem, ob die Zeile hinzugefügt oder gelöscht werden muss.
+Für die erste Tabelle, die auf dem Formular abgelegt wird, wird standardmäßig Code dem `click`-Ereignis der Schaltfläche Speichern auf der <xref:System.Windows.Forms.BindingNavigator>hinzugefügt. Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise wird der vorhandene Save-Code aus dem Click-Ereignishandler der Schaltfläche "Save" umgestalten. Wir erstellen außerdem einige weitere Methoden, um bestimmte Aktualisierungs Funktionen bereitzustellen, je nachdem, ob die Zeile hinzugefügt oder gelöscht werden muss.
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>So ändern Sie automatisch generierten Speichern-Code
 

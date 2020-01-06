@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984075"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594564"
 ---
 # <a name="dependency-diagrams-reference"></a>Abhängigkeits Diagramme: Referenz
 
@@ -58,8 +58,8 @@ In der folgenden Tabelle werden die Elemente beschrieben, die Sie in einem Abhä
 
 |**Gebildet**|**Element**|**Beschreibung**|
 |-|-|-|
-|1|**Deck**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die mit einer Ebene verknüpften Artefakte anzuzeigen, öffnen Sie das Kontextmenü für die Ebene, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -    unzulässige**Namespace Abhängigkeiten** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht von den angegebenen Namespaces abhängen können.<br />-    unzulässige**Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht zu den angegebenen Namespaces gehören dürfen.<br />-   **erforderliche Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte zu einem der angegebenen Namespaces gehören müssen.|
-|2|**Gkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
+|1|**Deck**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die mit einer Ebene verknüpften Artefakte anzuzeigen, öffnen Sie das Kontextmenü für die Ebene, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -   unzulässige **Namespace Abhängigkeiten** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht von den angegebenen Namespaces abhängen können.<br />-   unzulässige **Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht zu den angegebenen Namespaces gehören dürfen.<br />-   **erforderliche Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte zu einem der angegebenen Namespaces gehören müssen.|
+|2|**Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
 |3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
 |4|**Kommentar**|Verwenden Sie einen Kommentar, um dem Diagramm oder Elementen im Diagramm allgemeine Hinweise hinzuzufügen.|
 |5|**Kommentar Verknüpfung**|Verwenden Sie dieses Feature, um Kommentare mit Elementen im Diagramm zu verknüpfen.|
@@ -91,7 +91,7 @@ Der **Ebenen-Explorer** wird geöffnet und zeigt die Artefakte an, die mit den a
 
 |**Spalte im ebenenexplorer**|**Beschreibung**|
 |-|-|
-|**Klassen**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|
+|**Kategorien**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|
 |**Deck**|Die Ebene, die mit dem Artefakt verknüpft ist.|
 |**Unterstützt Validierung**|Wenn **true**, kann der ebenenvalidierungsprozess überprüfen, ob das Projekt Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn der Wert **false**ist, wird der Link nicht an dem ebenenvalidierungsprozess beteiligt.<br /><br /> Weitere Informationen finden Sie unter [Abhängigkeits Diagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).|
 |**Bezeichner**|Der Verweis auf das verknüpfte Artefakt|

@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018340"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401024"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
 
@@ -49,7 +49,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
      Das Dialogfeld **Codedefekte-Eigenschaften Seiten** wird angezeigt.
 
-5. Klicken Sie auf **Code Analyse**.
+5. Klicken Sie auf **Codeanalyse**.
 
 6. Aktivieren Sie das Kontrollkästchen **Code Analyse fürC++ C/on-Build aktivieren** .
 
@@ -67,9 +67,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
      Warning C6230: Implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT wird in einem Boolean-Kontext verwendet.
 
-     Im Code-Editor wird die Zeile, die die Warnung verursacht hat, im `bool ProcessDomain()`der Funktion angezeigt. Diese Warnung gibt an, dass ein HRESULT in einer if-Anweisung verwendet wird, in der ein boolesches Ergebnis erwartet wird.
+     Im Code-Editor wird die Zeile, die die Warnung verursacht hat, im `bool ProcessDomain()`der Funktion angezeigt. Diese Warnung gibt an, dass eine `HRESULT` in einer if-Anweisung verwendet wird, in der ein boolesches Ergebnis erwartet wird.  Dies ist in der Regel ein Fehler, weil der `S_OK` HRESULT von der Funktion zurückgegeben wird, auf Erfolg hinweist, bei der Konvertierung in einen booleschen Wert jedoch zu `false`.
 
-3. Korrigieren Sie diese Warnung, indem Sie das Makro "erfolgreich" verwenden. Der Code sollte dem folgenden Code ähneln:
+3. Korrigieren Sie diese Warnung, indem Sie das `SUCCEEDED`-Makro verwenden, das in `true` konvertiert, wenn ein `HRESULT` Rückgabewert Erfolg angibt. Der Code sollte dem folgenden Code ähneln:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -111,7 +111,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
      Das Dialogfeld **Annotations-Eigenschaften Seiten** wird angezeigt.
 
-3. Klicken Sie auf **Code Analyse**.
+3. Klicken Sie auf **Codeanalyse**.
 
 4. Aktivieren Sie das Kontrollkästchen **Code Analyse fürC++ C/on-Build aktivieren** .
 
@@ -128,11 +128,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 8. Um diese Warnung zu korrigieren, verwenden Sie eine if-Anweisung, um den Rückgabewert zu testen. Der Code sollte dem folgenden Code ähneln:
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
 ### <a name="to-use-source-code-annotation"></a>So verwenden Sie die Quell Code Anmerkung
 
-1. Kommentieren Sie formale Parameter und den Rückgabewert der Funktion `AddTail`, indem Sie die Pre-und Post-Bedingungen wie im folgenden Beispiel gezeigt verwenden:
+1. Kommentieren Sie formale Parameter und den Rückgabewert der Funktion `AddTail`, um anzugeben, dass die Zeiger Werte möglicherweise NULL sind:
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. Projekt zum erneuten Erstellen von Anmerkungen.
@@ -160,21 +156,18 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
      Diese Warnung gibt an, dass der an die Funktion eingegebene Knoten NULL sein kann, und gibt die Nummer der Zeile an, in der die Warnung ausgelöst wurde.
 
-4. Um diese Warnung zu korrigieren, verwenden Sie eine if-Anweisung, um den Rückgabewert zu testen. Der Code sollte dem folgenden Code ähneln:
+4. Um diese Warnung zu korrigieren, verwenden Sie eine if-Anweisung am Anfang der Funktion, um den bestandenen Wert zu testen. Der Code sollte dem folgenden Code ähneln:
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. Projekt zum erneuten Erstellen von Anmerkungen.
 
-     Das Projekt wird ohne Warnungen oder Fehler erstellt.
+     Das Projekt wird jetzt ohne Warnungen oder Fehler erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 

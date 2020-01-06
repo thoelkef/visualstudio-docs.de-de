@@ -12,17 +12,17 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641438"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586366"
 ---
 # <a name="pass-data-between-forms"></a>Übergeben von Daten zwischen Formularen
 
@@ -47,7 +47,7 @@ In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranscha
 
 - Übergeben von Daten zwischen Formularen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -67,7 +67,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 ## <a name="create-the-windows-forms-app-project"></a>Erstellen des Windows Forms-App-Projekts
 
-1. Wählen Sie in Visual Studio im Menü **Datei** die Option **neu**  > **Projekt**aus.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
 2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
 
@@ -154,7 +154,7 @@ Fügen Sie Form2 eine TableAdapter-Abfrage hinzu, um die Bestellungen für den a
 
 6. Klicken Sie auf **Weiter**.
 
-7. Geben Sie für den **datatablemethod-Namen ausfüllen `FillByCustomerID` ein**.
+7. Geben Sie für den **datatablemethod-Namen ausfüllen `FillByCustomerID`ein**.
 
 8. Löschen Sie die Option **DataTable zurückgeben**, und klicken Sie anschließend **Weiter**.
 

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648221"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586288"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 
@@ -96,14 +96,14 @@ Wenn die <xref:System.Data.DataSet.Merge%2A>-Methode mit `preserveChanges = true
 
 Wenn Sie Änderungen an einer vorhandenen Daten Zeile vornehmen möchten, können Sie Daten in den einzelnen Spalten hinzufügen oder aktualisieren. Wenn das DataSet Einschränkungen enthält (z. b. Fremdschlüssel oder Einschränkungen, die keine NULL-Werte zulassen), kann sich der Datensatz vorübergehend in einem Fehlerzustand befinden, wenn Sie ihn aktualisieren. Das heißt, es kann sich in einem Fehlerzustand befinden, nachdem Sie eine Spalte aktualisiert haben, aber bevor Sie zur nächsten Spalte gelangen.
 
-Um vorzeitige Verletzungen dieser Einschränkungen zu vermeiden, können Sie sie vorübergehend außer Kraft setzen. Bei diesem Verfahren werden zwei Ziele verfolgt:
+Um vorzeitige Verletzungen dieser Einschränkungen zu vermeiden, können Sie sie vorübergehend außer Kraft setzen. Dies erfüllt zweierlei Zwecke:
 
 - Es wird verhindert, dass ein Fehler ausgelöst wird, nachdem Sie eine Spalte aktualisiert haben, aber noch nicht mit dem Aktualisieren eines weiteren begonnen haben.
 
 - Es verhindert, dass bestimmte Update Ereignisse ausgelöst werden (Ereignisse, die häufig zur Validierung verwendet werden).
 
 > [!NOTE]
-> In Windows Forms unterbricht die Daten Bindungs Architektur, die in das DataGrid integriert ist, die Einschränkungs Überprüfung, bis sich der Fokus aus einer Zeile bewegt, und Sie müssen die Methoden <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> oder <xref:System.Data.DataRow.CancelEdit%2A> nicht explizit aufzurufen.
+> In Windows Forms unterbricht die Daten Bindungs Architektur, die in das DataGrid integriert ist, die Einschränkungs Überprüfung, bis sich der Fokus aus einer Zeile bewegt, und Sie müssen die Methoden <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>oder <xref:System.Data.DataRow.CancelEdit%2A> nicht explizit aufzurufen.
 
 Beim Aufruf der <xref:System.Data.DataSet.Merge%2A>-Methode für ein Dataset werden Einschränkungen automatisch deaktiviert. Wenn für das DataSet, das nicht aktiviert werden kann, Einschränkungen vorliegen, wird eine <xref:System.Data.ConstraintException> ausgelöst. In einer solchen Situation ist die <xref:System.Data.DataSet.EnforceConstraints%2A>-Eigenschaft auf `false,` festgelegt, und alle Einschränkungsverletzungen müssen vor dem Zurücksetzen der <xref:System.Data.DataSet.EnforceConstraints%2A>-Eigenschaft auf `true` aufgelöst werden.
 
@@ -181,7 +181,7 @@ Sie können für die ausstehenden Änderungen im Dataset ein Commit ausführen, 
 - Nachdem Sie das DataSet geladen haben. Wenn Sie ein Dataset laden, indem Sie die `Fill`-Methode eines TableAdapter aufrufen, führt der Adapter automatisch ein Commit für die Änderungen aus. Wenn ein Dataset jedoch geladen wird, indem Sie ein anderes Dataset mit ihm zusammenführen, müssen Sie den Commit für die Änderungen manuell ausführen.
 
     > [!NOTE]
-    > Sie können verhindern, dass der Adapter die Änderungen automatisch ausführt, wenn Sie die `Fill`-Methode aufzurufen, indem Sie die `AcceptChangesDuringFill`-Eigenschaft des Adapters auf `false` festlegen. Wenn Sie auf `false` festgelegt ist, wird die <xref:System.Data.DataRow.RowState%2A> der einzelnen Zeilen, die während des Füllvorgangs eingefügt werden, auf <xref:System.Data.DataRowState.Added> festgelegt.
+    > Sie können verhindern, dass der Adapter die Änderungen automatisch ausführt, wenn Sie die `Fill`-Methode aufzurufen, indem Sie die `AcceptChangesDuringFill`-Eigenschaft des Adapters auf `false`festlegen. Wenn Sie auf `false`festgelegt ist, wird die <xref:System.Data.DataRow.RowState%2A> der einzelnen Zeilen, die während des Füllvorgangs eingefügt werden, auf <xref:System.Data.DataRowState.Added>festgelegt.
 
 - Nachdem Sie Datasetänderungen an einen anderen Prozess gesendet haben, z. b. an einen XML-Webdienst.
 
@@ -192,7 +192,7 @@ Diese Methode umfasst folgende Schritte:
 
 - Schreibt die <xref:System.Data.DataRowVersion.Current> Version eines Datensatzes in seine <xref:System.Data.DataRowVersion.Original> Version und überschreibt die ursprüngliche Version.
 
-- Entfernt alle Zeilen, in denen die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft auf <xref:System.Data.DataRowState.Deleted> festgelegt ist.
+- Entfernt alle Zeilen, in denen die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft auf <xref:System.Data.DataRowState.Deleted>festgelegt ist.
 
 - Legt die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft eines Datensatzes auf <xref:System.Data.DataRowState.Unchanged> fest.
 
@@ -200,7 +200,7 @@ Die <xref:System.Data.DataSet.AcceptChanges%2A>-Methode ist auf drei Ebenen verf
 
 In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode aufgerufen wird, beschrieben, für welche Änderungen ein Commit ausgeführt wird:
 
-|Methode|Ergebnis|
+|-Methode|Ergebnis|
 |------------|------------|
 |<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird nur für Änderungen in der spezifischen Zeile ausgeführt.|
 |<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird für Änderungen in allen Zeilen der spezifischen Tabelle ausgeführt.|
@@ -209,7 +209,7 @@ In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode auf
 > [!NOTE]
 > Wenn Sie ein Dataset laden, indem Sie die `Fill`-Methode eines TableAdapter aufrufen, müssen Sie die Änderungen nicht explizit akzeptieren. Standardmäßig ruft die `Fill`-Methode die `AcceptChanges`-Methode auf, nachdem Sie das Auffüllen der Datentabelle abgeschlossen hat.
 
-Eine verwandte Methode, <xref:System.Data.DataSet.RejectChanges%2A>, macht die Auswirkungen von Änderungen rückgängig, indem die <xref:System.Data.DataRowVersion.Original> Version zurück in die <xref:System.Data.DataRowVersion.Current> Version von Datensätzen kopiert wird. Außerdem wird die <xref:System.Data.DataRow.RowState%2A> jedes Datensatzes wieder auf <xref:System.Data.DataRowState.Unchanged> festgelegt.
+Eine verwandte Methode, <xref:System.Data.DataSet.RejectChanges%2A>, macht die Auswirkungen von Änderungen rückgängig, indem die <xref:System.Data.DataRowVersion.Original> Version zurück in die <xref:System.Data.DataRowVersion.Current> Version von Datensätzen kopiert wird. Außerdem wird die <xref:System.Data.DataRow.RowState%2A> jedes Datensatzes wieder auf <xref:System.Data.DataRowState.Unchanged>festgelegt.
 
 ## <a name="data-validation"></a>Datenvalidierung
 
@@ -224,7 +224,7 @@ Daten können auf verschiedene Weisen überprüft werden:
 - Im Back-End der Datenschicht. Daten werden an die Datenquelle, z. B. die Datenbank, gesendet, und die Datenbank kann diese Daten annehmen oder ablehnen. Bei Verwendung einer Datenbank, die hochentwickelte Datenüberprüfungsmechanismen besitzt und Fehlerinformationen bereitstellt, ist dieser Ansatz durchaus überlegenswert, da Daten unabhängig von ihrer Herkunft überprüft werden können. Diese Vorgehensweise kann jedoch nicht die anwendungsspezifischen Überprüfungsanforderungen erfüllen. Darüber hinaus kann das Überprüfen von Daten durch die Datenquelle zu einer Vielzahl von Roundtrips zur Datenquelle führen, je nachdem, wie Ihre Anwendung die Auflösung von Validierungs Fehlern, die durch das Back-End ausgelöst werden, vereinfacht.
 
    > [!IMPORTANT]
-   > Wenn Sie Daten Befehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A>-Eigenschaft verwenden, die auf <xref:System.Data.CommandType.Text> festgelegt ist, sollten Sie vor der Übergabe an die Datenbank sorgfältig Informationen überprüfen, die von einem Client gesendet werden. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in eine Datenbank übertragen, sollten Sie stets überprüfen, ob die Informationen gültig sind. Es wird empfohlen, nach Möglichkeit immer parametrisierte Abfragen oder gespeicherte Prozeduren zu verwenden.
+   > Wenn Sie Daten Befehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A>-Eigenschaft verwenden, die auf <xref:System.Data.CommandType.Text>festgelegt ist, sollten Sie vor der Übergabe an die Datenbank sorgfältig Informationen überprüfen, die von einem Client gesendet werden. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in eine Datenbank übertragen, sollten Sie stets überprüfen, ob die Informationen gültig sind. Es wird empfohlen, nach Möglichkeit immer parametrisierte Abfragen oder gespeicherte Prozeduren zu verwenden.
 
 ## <a name="transmit-updates-to-the-data-source"></a>Übertragen von Aktualisierungen an die Datenquelle
 
@@ -278,5 +278,5 @@ In einer Update-Anweisung müssen Sie sowohl die neuen Werte (die in den Datensa
 - [Erstellen und Konfigurieren eines TableAdapters](create-and-configure-tableadapters.md)
 - [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Validieren von Daten](validate-data-in-datasets.md)
+- [Überprüfen von Daten](validate-data-in-datasets.md)
 - [Vorgehensweise: Hinzufügen, Ändern und Löschen von Entitäten (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

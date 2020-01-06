@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924530"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586951"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 
@@ -33,7 +33,7 @@ Allgemeine Informationen zum Erstellen von Daten gebundenen Steuerelementen in V
 
 In der folgenden Tabelle werden die Aufgaben aufgeführt, die durch Ziehen von Elementen aus dem Fenster **Datenquellen** in den [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] ausgeführt werden können.
 
-|Aufgabe|Weitere Informationen|
+|Task|Weitere Informationen|
 |----------| - |
 |Erstellen von neuen datengebundenen Steuerelementen<br /><br /> Binden Sie vorhandenen Steuerelemente an Daten.|[WPF-Steuerelemente an einen Datensatz binden](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Erstellen von Steuerelementen, die verknüpfte Daten in Beziehungen zwischen übergeordneten und untergeordneten Elementen anzeigen: Wenn der Benutzer einen übergeordneten Datensatz in einem Steuerelement auswählt, werden in einem anderen Steuerelement verknüpfte untergeordnete Daten für den ausgewählten Datensatz angezeigt.|[Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -57,7 +57,7 @@ In der folgenden Tabelle sind die [!INCLUDE[TLA#tla_titlexaml](../data-tools/inc
 | Dienst | Ja | Nein |
 | Objekt | Ja | Nein |
 
-### <a name="datasets"></a>Datasets
+### <a name="datasets"></a>DataSets
 
 Wenn Sie eine Tabelle oder eine Spalte aus dem **Datenquellen** Fenster in den Designer ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], die Folgendes bewirkt:
 
@@ -93,7 +93,7 @@ Visual Studio generiert XAML, das folgende Aktionen ausführt:
 
 - Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
-### <a name="objects"></a>erzwingen
+### <a name="objects"></a>-Objekte
 
 Wenn Sie ein Objekt oder eine Eigenschaft aus dem **Datenquellen** Fenster in den Designer ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], die ein Daten gebundenes Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). Visual Studio generiert jedoch keinen Code, um das Objekt mit Daten zu füllen. Sie müssen diesen Code selbst schreiben.
 

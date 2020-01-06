@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 836e2c24d9f236c7b87dfff60b934221b7645f1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654071"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597177"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
 
@@ -22,7 +22,7 @@ Der *Textvorlagen-Transformationsprozess* übernimmt eine *Textvorlagen* Datei a
 
 Zum Erstellen eines benutzerdefinierten Anweisungsprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.
 
-Der Unterschied zwischen diesen beiden besteht darin, dass <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> die minimale Schnittstelle implementiert, die erforderlich ist, um Parameter vom Benutzer zu erhalten und den Code zu generieren, der die Vorlagen Ausgabedatei erzeugt. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementiert das Entwurfsmuster "erfordert/bereitstellen". <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> behandelt zwei spezielle Parameter, `requires` und `provides`.  Beispielsweise kann ein benutzerdefinierter Direktivenprozessor einen Dateinamen vom Benutzer akzeptieren, die Datei öffnen und lesen und dann den Text der Datei in einer Variablen mit dem Namen `fileText` speichern. Eine Unterklasse der <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>-Klasse kann einen Dateinamen vom Benutzer als Wert des `requires`-Parameters und den Namen der Variablen, in der der Text als Wert des Parameters `provides` gespeichert werden soll, annehmen. Dieser Prozessor würde die Datei öffnen und lesen und dann den Text der Datei in der angegebenen Variablen speichern.
+Der Unterschied zwischen diesen beiden besteht darin, dass <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> die minimale Schnittstelle implementiert, die erforderlich ist, um Parameter vom Benutzer zu erhalten und den Code zu generieren, der die Vorlagen Ausgabedatei erzeugt. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementiert das Entwurfsmuster "erfordert/bereitstellen". <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> behandelt zwei spezielle Parameter, `requires` und `provides`.  Beispielsweise kann ein benutzerdefinierter Direktivenprozessor einen Dateinamen vom Benutzer akzeptieren, die Datei öffnen und lesen und dann den Text der Datei in einer Variablen mit dem Namen `fileText`speichern. Eine Unterklasse der <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>-Klasse kann einen Dateinamen vom Benutzer als Wert des `requires`-Parameters und den Namen der Variablen, in der der Text als Wert des Parameters `provides` gespeichert werden soll, annehmen. Dieser Prozessor würde die Datei öffnen und lesen und dann den Text der Datei in der angegebenen Variablen speichern.
 
 Bevor Sie einen benutzerdefinierten Direktivenprozessor aus einer Textvorlage in Visual Studio aufzurufen, müssen Sie ihn registrieren.
 
@@ -46,7 +46,7 @@ Einige Beispiele für benutzerdefinierte direktivenprozessoren können wie folgt
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Prinzipal Teile eines benutzerdefinierten direktivenprozessors
 
-Zum Entwickeln eines direktivenprozessors müssen Sie eine Klasse erstellen, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.
+Zum Entwickeln eines direktivenprozessors müssen Sie eine Klasse erstellen, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>erbt.
 
 Die wichtigsten `DirectiveProcessor` Methoden, die Sie implementieren müssen, sind wie folgt.
 

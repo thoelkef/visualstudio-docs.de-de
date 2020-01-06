@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648231"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586340"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 Um bestimmte Datensätze in einem DataSet zu suchen, verwenden Sie die `FindBy`-Methode für die Datentabelle, schreiben Sie Ihre eigene foreach-Anweisung, um die Zeilen Auflistung der Tabelle zu durchlaufen, oder verwenden Sie [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -35,7 +35,7 @@ Die Berücksichtigung der Groß-/Kleinschreibung kann jedoch ein Faktor für die
 
 - Um eine Zeile zu suchen, müssen Sie die stark typisierte `FindBy` Methode, die den Primärschlüssel der Tabelle verwendet, abrufen.
 
-     Im folgenden Beispiel ist die `CustomerID` Spalte der Primärschlüssel der `Customers` Tabelle. Dies bedeutet, dass die generierte `FindBy` Methode `FindByCustomerID` ist. Das Beispiel zeigt, wie einer Variablen mithilfe der generierten `FindBy` Methode eine bestimmte <xref:System.Data.DataRow> zugewiesen wird.
+     Im folgenden Beispiel ist die `CustomerID` Spalte der Primärschlüssel der `Customers` Tabelle. Dies bedeutet, dass die generierte `FindBy` Methode `FindByCustomerID`ist. Das Beispiel zeigt, wie einer Variablen mithilfe der generierten `FindBy` Methode eine bestimmte <xref:System.Data.DataRow> zugewiesen wird.
 
      [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
      [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
@@ -53,7 +53,7 @@ Die Berücksichtigung der Groß-/Kleinschreibung kann jedoch ein Faktor für die
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>So suchen Sie Zeilen basierend auf den Werten in einer Spalte
 
-- Datentabellen werden mit der <xref:System.Data.DataTable.Select%2A>-Methode erstellt, die ein Array von <xref:System.Data.DataRow>s basierend auf dem an die <xref:System.Data.DataTable.Select%2A>-Methode weiter gegebenen Ausdruck zurückgibt. Weitere Informationen zum Erstellen gültiger Ausdrücke finden Sie im Abschnitt "Ausdrucks Syntax" der Seite zur <xref:System.Data.DataColumn.Expression%2A>-Eigenschaft.
+- Datentabellen werden mit der <xref:System.Data.DataTable.Select%2A>-Methode erstellt, die basierend auf dem an die <xref:System.Data.DataTable.Select%2A>-Methode weiter gegebenen Ausdruck ein Array von <xref:System.Data.DataRow>s zurückgibt. Weitere Informationen zum Erstellen gültiger Ausdrücke finden Sie im Abschnitt "Ausdrucks Syntax" der Seite zur <xref:System.Data.DataColumn.Expression%2A>-Eigenschaft.
 
      Im folgenden Beispiel wird gezeigt, wie die <xref:System.Data.DataTable.Select%2A>-Methode des <xref:System.Data.DataTable> verwendet wird, um bestimmte Zeilen zu suchen.
 
@@ -76,7 +76,7 @@ Die folgenden Codebeispiele veranschaulichen, wie Sie in typisierten Datasets na
 
 - Eine `Orders` Tabelle.
 
-- Eine Beziehung mit dem Namen `FK_Orders_Customers`relating die beiden Tabellen.
+- Eine Beziehung mit dem Namen `FK_Orders_Customers`, die die beiden Tabellen bezieht.
 
 Außerdem müssen beide Tabellen mit Daten aufgefüllt werden, damit alle Datensätze zurückgegeben werden können.
 

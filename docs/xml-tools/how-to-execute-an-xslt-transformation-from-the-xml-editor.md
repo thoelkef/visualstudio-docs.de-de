@@ -3,17 +3,17 @@ title: Ausführen einer XSLT-Transformation
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb4aee348ae48a2078f7803a44d4746d3dbacc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3bd26eaadf921d13fc425a91031a39df5a80ea2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668810"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592697"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Gewusst wie: Ausführen einer XSLT-Transformation im XML-Editor
 
@@ -31,11 +31,11 @@ Die **Output** -Eigenschaft gibt den Dateinamen für die Ausgabe an. Wenn die **
 
     - Fügen Sie dem XML-Dokument eine `xml-stylesheet`-Verarbeitungsanweisung hinzu. Fügen Sie z. b. die folgende Zeile zum Dokument Prolog hinzu: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       - oder -
+       \- oder -
 
     - Fügen Sie das XSLT-Stylesheet mithilfe des Fensters **Eigenschaften** hinzu. Wenn die XML-Datei im Editor geöffnet ist, klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Editor, und wählen Sie **Eigenschaften**. Klicken Sie im Fenster **Eigenschaften** auf das Feld **Stylesheet** , und wählen Sie die Schaltfläche zum Durchsuchen (...) aus. Wählen Sie das XSLT-Stylesheet aus, und wählen Sie dann **Öffnen**aus.
 
-3. Wählen Sie in der Menüleiste die Option **XML**  > **XSLT ohne Debugging starten**aus. Oder drücken Sie **STRG** +**alt** +**F5**.
+3. Wählen Sie in der Menüleiste die Option **XML** > **XSLT ohne Debugging starten**aus. Oder drücken Sie **STRG**+**alt**+**F5**.
 
    Die Ausgabe der XSLT-Transformation wird in einem neuen Dokument Fenster angezeigt.
 
@@ -51,7 +51,7 @@ Die **Output** -Eigenschaft gibt den Dateinamen für die Ausgabe an. Wenn die **
    > [!NOTE]
    > Das XML-Dokument ist das für die Transformation verwendete Eingabedokument. Wenn ein Dokument beim Starten der XSLT-Transformation nicht angegeben wird, wird das Dialogfeld **Datei öffnen** angezeigt, und Sie können ein Dokument zu diesem Zeitpunkt angeben.
 
-3. Wählen Sie in der Menüleiste die Option **XML**  > **XSLT ohne Debugging starten**aus. Oder drücken Sie **STRG** +**alt** +**F5**.
+3. Wählen Sie in der Menüleiste die Option **XML** > **XSLT ohne Debugging starten**aus. Oder drücken Sie **STRG**+**alt**+**F5**.
 
    Die Ausgabe der XSLT-Transformation wird in einem neuen Dokument Fenster angezeigt.
 

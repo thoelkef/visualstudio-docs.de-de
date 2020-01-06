@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189458"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565941"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 
@@ -70,7 +70,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
  (Im Beispiel der Komponentenprojektmappe trägt einer der Verbindungs-Generatoren den Namen "ConnectionBuilder". Dies ist ein Zufall, da die Domänenbeziehung "Connection" genannt wurde.)
 
- Die Beziehung wird in der *Beziehung* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Beispiel:
+ Die Beziehung wird in der *Beziehung*`Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Beispiel:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
 - EGP-Handlermethoden (Elementgruppenprototyp). Diese sind erforderlich, wenn der Benutzer ein anderes Element auf Instanzen dieser Klasse zusammen *führen* (hinzufügen) kann. Üblicherweise führt der Benutzer dazu einen Ziehvorgang von einem Elementtool oder einer anderen Form oder einen Einfügevorgang aus.
 
-   In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Die
+   In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Die Einstellung
 
    Die EGP-Handlermethoden in der Komponentenklasse lassen es zu, dass eine Komponente Ports akzeptiert, aber keine Kommentare. Der EGP-Handler in der Stammmodellklasse akzeptiert Kommentare und Komponenten, aber keine Ports.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Um diese Datei anzupassen, bearbeiten Sie die `.tt`-Datei.
 
 > [!WARNING]
-> Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Wählen Sie in Projektmappen-Explorer die Datei aus, und vergewissern Sie sich, dass die Eigenschaft **in VSIX einschließen** `True` ist.
+> Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Wählen Sie in Projektmappen-Explorer die Datei aus, und vergewissern Sie sich, dass die Eigenschaft **in VSIX einschließen** `True`ist.
 
  Mit dieser Datei wird gesteuert, wie die DSL in eine Visual Studio-Integrationserweiterung (VSIX) verpackt wird. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 

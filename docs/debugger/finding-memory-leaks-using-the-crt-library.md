@@ -3,9 +3,6 @@ title: Suchen von Arbeits Speicherverlusten mit der CRT-Bibliothek | Microsoft-D
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829945"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404981"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Finden von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 
 Speicher Verluste gehören zu den gängigsten und schwer zu erkennender Fehler in C/C++ apps. Arbeitsspeicher Verluste führen dazu, dass der zuvor zugewiesene Arbeitsspeicher nicht ordnungsgemäß freigegeben wird. Ein kleiner Speichermangel wird möglicherweise zuerst nicht bemerkt, aber im Laufe der Zeit kann es zu Symptomen zwischen einer schlechten Leistung und Abstürzen kommen, wenn die APP nicht über genügend Arbeitsspeicher verfügt. Eine Verlust-APP, die den gesamten verfügbaren Arbeitsspeicher beansprucht, kann dazu führen, dass andere apps abstürzen, wodurch Verwirrung entsteht, welche App verantwortlich ist. Sogar harmlose Speicher Verluste können auf andere Probleme hindeuten, die korrigiert werden sollten.
 
- Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger und die C-Lauf Zeit Bibliothek (CRT) können Ihnen helfen, Speicher Verluste zu erkennen und zu identifizieren.
+Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger und die C-Lauf Zeit Bibliothek (CRT) können Ihnen helfen, Speicher Verluste zu erkennen und zu identifizieren.
 
 ## <a name="enable-memory-leak-detection"></a>Aktivieren der Erkennung von Speicherlecks
 
@@ -216,7 +213,8 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>Vergleichen von Arbeitsspeicher Zuständen
- Ein weiteres Verfahren zum Ermitteln von Speicherverlusten besteht darin, zu bestimmten Zeitpunkten Momentaufnahmen von Speicherzuständen der Anwendung aufzuzeichnen. Um eine Momentaufnahme des Speicher Zustands an einem bestimmten Punkt in der Anwendung zu erstellen, erstellen Sie eine `_CrtMemState` Struktur, und übergeben Sie Sie an die Funktion `_CrtMemCheckpoint`.
+
+Ein weiteres Verfahren zum Ermitteln von Speicherverlusten besteht darin, zu bestimmten Zeitpunkten Momentaufnahmen von Speicherzuständen der Anwendung aufzuzeichnen. Um eine Momentaufnahme des Speicher Zustands an einem bestimmten Punkt in der Anwendung zu erstellen, erstellen Sie eine `_CrtMemState` Struktur, und übergeben Sie Sie an die Funktion `_CrtMemCheckpoint`.
 
 ```cpp
 _CrtMemState s1;
@@ -259,9 +257,11 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 Ein Verfahren zum Auffinden von Speicher Verlusten beginnt mit dem Platzieren von `_CrtMemCheckpoint`-aufrufen am Anfang und Ende der APP und der anschließenden Verwendung `_CrtMemDifference` zum Vergleichen der Ergebnisse. Wenn `_CrtMemDifference` einen Speicherlecks anzeigt, können Sie weitere `_CrtMemCheckpoint` Aufrufe hinzufügen, um das Programm mithilfe einer binären Suche aufzuteilen, bis Sie die Quelle des Lecks isoliert haben.
 
 ## <a name="false-positives"></a>Falsch positive Ergebnisse
+
  `_CrtDumpMemoryLeaks` kann falsche Anzeichen für Speicher Verluste verursachen, wenn eine Bibliothek Interne Zuordnungen als normale Blöcke anstelle von CRT-Blöcken oder Client Blöcken kennzeichnet. In diesem Fall kann `_CrtDumpMemoryLeaks` den Unterschied zwischen Benutzerspeicherbelegungen und internen Bibliotheksspeicherbelegungen nicht erkennen. Wenn die globalen Destruktoren für die Bibliotheksspeicherbelegungen nach dem Punkt ausgeführt werden, an dem `_CrtDumpMemoryLeaks`aufgerufen wird, wird jede interne Bibliotheksspeicherbelegung als Arbeitsspeicherverlust angezeigt. Versionen der Standard Vorlagen Bibliothek vor Visual Studio .net können `_CrtDumpMemoryLeaks` bewirken, dass diese falsch positiven Ergebnisse melden.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Details zum CRT-Debugheap](../debugger/crt-debug-heap-details.md)
 - [Debuggersicherheit](../debugger/debugger-security.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)

@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641149"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586210"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Speichern von Daten mit den TableAdapter-DBDirect-Methoden
 
-Diese exemplarische Vorgehensweise enthält ausführliche Anweisungen zum Ausführen von SQL-Anweisungen direkt für eine-Datenbank mithilfe der DBDirect-Methoden eines TableAdapter. Die DBDirect-Methoden eines TableAdapters bieten ein sehr gutes Maß an Kontrolle über Änderungen an der Datenbank. Sie können Sie verwenden, um bestimmte SQL-Anweisungen und gespeicherte Prozeduren auszuführen, indem Sie die einzelnen `Insert`-, `Update`-und `Delete`-Methoden aufrufen, die von der Anwendung benötigt werden (im Gegensatz zur überladenen `Update` Methode, die das Update ausführt, einfügen und DELETE-Anweisungen in einem einzigen-Befehl.
+Diese exemplarische Vorgehensweise enthält ausführliche Anweisungen zum Ausführen von SQL-Anweisungen direkt für eine-Datenbank mithilfe der DBDirect-Methoden eines TableAdapter. Die DBDirect-Methoden eines TableAdapters bieten ein sehr gutes Maß an Kontrolle über Änderungen an der Datenbank. Sie können Sie verwenden, um bestimmte SQL-Anweisungen und gespeicherte Prozeduren auszuführen, indem Sie die einzelnen `Insert`-, `Update`-und `Delete`-Methoden aufrufen, die von der Anwendung benötigt werden (im Gegensatz zur überladenen `Update`-Methode, die die Update-, INSERT-und DELETE-Anweisungen in einem Aufruf ausführt).
 
 Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
@@ -39,7 +39,7 @@ Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
 - Fügen Sie Methoden hinzu, um direkt auf die Datenbank zuzugreifen und Einfügungen, Updates und Löschungen auszuführen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -61,7 +61,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 Der erste Schritt besteht darin, eine **Windows Forms Anwendung**zu erstellen.
 
-1. Wählen Sie in Visual Studio im Menü **Datei** die Option **neu**  > **Projekt**aus.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
 2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
 
@@ -89,7 +89,7 @@ Dieser Schritt verwendet den **Assistenten zum Konfigurieren von Datenquellen** 
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder -
+         \- oder -
 
     - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
@@ -109,7 +109,7 @@ Erstellen Sie die datengebundenen Steuerelemente, indem Sie Elemente aus dem **D
 
 Wenn Sie Daten gebundene Steuerelemente auf dem Windows Form erstellen möchten, ziehen Sie **den Haupt Knoten** Knoten aus dem **Datenquellen** Fenster auf das Formular.
 
-Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
+Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Hinzufügen von Schaltflächen, die die einzelnen TableAdapter DbDirect-Methoden aufruft
 

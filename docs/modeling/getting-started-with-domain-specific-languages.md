@@ -2,24 +2,24 @@
 title: Erste Schritte mit domänenspezifischen Sprachen
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985048"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596566"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 
 In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden einer domänenspezifischen Sprache (DSL) erläutert, die mit dem Modellierungs-SDK für Visual Studio erstellt wurde.
 
 > [!NOTE]
-> Das Text Template Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Features von Visual Studio installieren. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Das Text Template Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Features von Visual Studio installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualisierung und Modellierungs-SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) .
 
@@ -37,13 +37,13 @@ Eine der Prinzipal Anwendungen von DSLs besteht darin, Programmcode, Konfigurati
 
 Der Rest dieser Übersicht ist eine exemplarische Vorgehensweise, in der die grundlegenden Vorgänge zum Erstellen und Verwenden einer domänenspezifischen Sprache in Visual Studio vorgestellt werden.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| öffnen | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | Modellierungs-SDK für Visual Studio | |
 
@@ -147,7 +147,7 @@ Die DSL-Definition kann angeben, wie das Modell in einem Diagramm angezeigt wird
 
 Sie können ein Modell als Baumstruktur in der **Explorer** -Ansicht anzeigen, während Sie ein Modell bearbeiten. Wenn Sie dem Diagramm Formen hinzufügen, werden die Modellelemente auch im Explorer angezeigt. Der Explorer kann auch dann verwendet werden, wenn kein Diagramm vorhanden ist.
 
-Wenn der Explorer in der debugginginstanz von Visual Studio nicht angezeigt wird, zeigen Sie im Menü **Ansicht** auf **Weitere Fenster**, und klicken Sie dann auf *\<Your Sprache >* **Explorer**.
+Wenn der Explorer in der debugginginstanz von Visual Studio nicht angezeigt wird, zeigen Sie im Menü **Ansicht** auf **Weitere Fenster**, und klicken Sie dann auf *\<ihrer Sprache >* - **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>Die API ihrer DSL
 
@@ -209,7 +209,7 @@ Umbenennen der vorhandenen Domänen Klassen und-Beziehungen. Beispielsweise kön
 
     2. Öffnen Sie die Eigenschaftenfenster, und positionieren Sie Sie, damit Sie den DSL-Explorer und die Eigenschaften gleichzeitig sehen können.
 
-    3. Erweitern Sie im DSL-Explorer den Bereich **Editor**, **Toolbox Registerkarten**, *\<your DSL >* und dann **Tools**.
+    3. Erweitern Sie im DSL-Explorer den Bereich **Editor**, **Toolbox Registerkarten**, *\<Sie die DSL->* und dann **Tools**.
 
     4. Klicken Sie auf **ExampleElement**. Dies ist das Toolbox Element, das verwendet wird, um-Elemente zu erstellen.
 
@@ -333,7 +333,7 @@ Umbenennen der vorhandenen Domänen Klassen und-Beziehungen. Beispielsweise kön
 
     1. Erweitern Sie im **DSL-Explorer**den Bereich **Editor** und dann **Registerkarten**.
 
-    2. Klicken Sie mit der rechten Maustaste auf *\<your DSL >* und klicken Sie dann auf **Add New Element Tool**.
+    2. Klicken Sie mit der rechten Maustaste auf *\<ihrer DSL >* und klicken Sie dann auf **Add New Element Tool**.
 
     3. Legen Sie die **Name** -Eigenschaft des neuen Tools fest, und legen Sie die zugehörige **Class** -Eigenschaft auf Town fest.
 
@@ -341,7 +341,7 @@ Umbenennen der vorhandenen Domänen Klassen und-Beziehungen. Beispielsweise kön
 
 7. Erstellen Sie ein Connector-Tool, um eine Verknüpfung zwischen Städten und Personen herzustellen.
 
-    1. Klicken Sie mit der rechten Maustaste auf *\<your DSL >* und klicken Sie dann auf **Add New Connector Tool**.
+    1. Klicken Sie mit der rechten Maustaste auf *\<ihrer DSL >* und klicken Sie dann auf **Add New Connector Tool**.
 
     2. Legen Sie die Name-Eigenschaft des neuen Tools fest.
 

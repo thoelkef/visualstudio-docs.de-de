@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11743756ffd8f59520448d2687dbada6d4eaca40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608038"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592333"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML-Schemas (Dialogfeld)
 
@@ -25,11 +25,11 @@ Sie können auf das Dialogfeld **XML-Schemas** zugreifen, indem Sie im Dokumente
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-**Konsum**
+**Verwendung**
 
 Wählen Sie aus, wie das XML-Schema verwendet werden soll.
 
-- **Automatisch**. Dieses Schema wird vom aktuellen Dokument nicht verwendet, ist jedoch für eine automatische Zuordnung verfügbar. Wenn im XML-Dokument ein Namespace deklariert wird, der dem `targetNamespace` dieses Schemas entspricht, wird das Schema automatisch zugeordnet und dem Schemaset hinzugefügt.
+- **Automatisch**: Dieses Schema wird vom aktuellen Dokument nicht verwendet, ist jedoch für eine automatische Zuordnung verfügbar. Wenn im XML-Dokument ein Namespace deklariert wird, der dem `targetNamespace` dieses Schemas entspricht, wird das Schema automatisch zugeordnet und dem Schemaset hinzugefügt.
 
 - **Verwenden Sie dieses Schema**. Dieses Schema wird vom aktuellen Dokument verwendet. Entweder wurde die Verwendung dieses Schemas durch Klicken auf diese Spalte explizit durch den Benutzer festgelegt, oder das Schema wurde auf Grundlage eines übereinstimmenden `targetNamespace` automatisch zugeordnet.
 

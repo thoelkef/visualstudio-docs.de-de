@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591787"
 ---
 # <a name="text-template-control-blocks"></a>Kontrollblöcke für Textvorlagen
 Kontrollblöcke ermöglichen Ihnen das Schreiben von Code in die Textvorlage, um die Ausgabe zu variieren. Es gibt drei Arten von Kontrollblöcken, die anhand ihrer öffnenden Klammern unterschieden werden:
@@ -145,7 +145,7 @@ Some text.
 
  Sie sollten beim Verwenden von Kontrollblöcken Folgendes bedenken:
 
-- **Kurse.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Direktive angeben. (Weitere Informationen zur `template`-Direktive finden Sie unter [T4-Text Vorlagen Direktiven](../modeling/t4-text-template-directives.md).)
+- **Sprache.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Direktive angeben. (Weitere Informationen zur `template`-Direktive finden Sie unter [T4-Text Vorlagen Direktiven](../modeling/t4-text-template-directives.md).)
 
      Die in Kontrollblöcken verwendete Sprache hat nichts mit der Sprache oder dem Format des Texts zu tun, den Sie in einer Textvorlage generieren. Sie können C# mithilfe von Visual Basic-Code generieren oder umgekehrt.
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649060"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587185"
 ---
 # <a name="usage-warnings"></a>Verwendungswarnungen
 
@@ -31,7 +31,7 @@ Verwendungs Warnungen unterstützen die ordnungsgemäße Verwendung von .net.
 |----------|-----------------|
 |[CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801.md)|Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird.|
 |[CA1806: Methodenergebnisse nicht ignorieren](../code-quality/ca1806.md)|Ein neues Objekt wird erstellt, aber nie verwendet, oder eine Methode wird aufgerufen, die eine neue Zeichenfolge erstellt und zurückgibt, die nie verwendet wird, oder eine COM-Methode oder P/Invoke-Methode gibt ein HRESULT oder einen Fehlercode zurück, das oder der nie verwendet wird.|
-|[CA1816: GC.SuppressFinalize korrekt aufrufen](../code-quality/ca1816.md)|Eine Methode, bei der es sich um eine-Implementierung handelt, ruft keine GC auf. SuppressFinalize oder eine Methode, die keine Implementierung von verwerfen ist, ruft GC auf. SuppressFinalize oder eine Methode ruft GC auf. SuppressFinalize und übergibt etwas anderes als dieses (mich in Visual Basic).|
+|[CA1816: GC.SuppressFinalize korrekt aufrufen](../code-quality/ca1816.md)|Eine Methode, die eine Implementierung von Dispose bildet, ruft nicht GC auf. SuppressFinalize; oder eine Methode, die eine Implementierung von Dispose nicht ist, ruft GC. SuppressFinalize; oder eine Methode aufruft, GC. SuppressFinalize aus und übergibt ein anderes Element als dieses (Me in Visual Basic).|
 |[CA2200: Erneut ausführen, um Stapeldetails beizubehalten](../code-quality/ca2200.md)|Eine Ausnahme wird erneut ausgelöst, und die Ausnahme wird in der throw-Anweisung explizit angegeben. Wenn eine Ausnahme durch Angeben der Ausnahme in der throw-Anweisung erneut ausgelöst wird, geht die Liste der Methoden, die zwischen der Methode, durch die die Ausnahme ursprünglich ausgelöst wurde, und der aktuellen Methode aufgerufen wurden, verloren.|
 |[CA2201: Keine reservierten Ausnahmetypen auslösen](../code-quality/ca2201.md)|Dadurch wird der ursprüngliche Fehler schwer zu erkennen und zu debuggen.|
 |[CA2202: Objekte nicht mehrmals verwerfen](../code-quality/ca2202.md)|Eine Methodenimplementierung enthält Codepfade, die für dasselbe Objekt mehrere Aufrufe von System.IDisposable.Dispose oder einer Entsprechung von Dispose (z. B. einer Close()-Methode für bestimmte Typen) verursachen können.|

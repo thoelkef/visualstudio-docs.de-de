@@ -11,23 +11,23 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648598"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586756"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 
 Der Begriff Nachschlage *Tabelle* (manchmal als *Such Bindung*bezeichnet) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle basierend auf dem Wert eines Fremdschlüssel Felds in einer anderen Tabelle anzeigt. Sie können eine Nachschlage Tabelle erstellen, indem Sie den Haupt Knoten einer übergeordneten Tabelle oder eines Objekts im **Datenquellen** Fenster auf ein Steuerelement ziehen, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.
 
-Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der `Orders` Tabelle enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag aufgegeben hat. Der `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendaten Satz in der `Customers` Tabelle zeigt. Wenn Sie eine Liste der Bestellungen aus der `Orders` Tabelle anzeigen, möchten Sie möglicherweise den tatsächlichen Kundennamen anstelle des `CustomerID` anzeigen. Da der Kunden Name in der `Customers` Tabelle enthalten ist, müssen Sie eine Nachschlage Tabelle erstellen, um den Kundennamen anzuzeigen. In der Nachschlage Tabelle wird der `CustomerID` Wert im `Orders` Datensatz verwendet, um in der Beziehung zu navigieren und den Kundennamen zurückzugeben.
+Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der `Orders` Tabelle enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag aufgegeben hat. Der `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendaten Satz in der `Customers` Tabelle zeigt. Wenn Sie eine Liste der Bestellungen aus der `Orders` Tabelle anzeigen, möchten Sie möglicherweise den tatsächlichen Kundennamen anstelle des `CustomerID`anzeigen. Da der Kunden Name in der `Customers` Tabelle enthalten ist, müssen Sie eine Nachschlage Tabelle erstellen, um den Kundennamen anzuzeigen. In der Nachschlage Tabelle wird der `CustomerID` Wert im `Orders` Datensatz verwendet, um in der Beziehung zu navigieren und den Kundennamen zurückzugeben.
 
 ## <a name="to-create-a-lookup-table"></a>So erstellen Sie eine Suchtabelle
 
@@ -68,7 +68,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
         > [!NOTE]
         > Wenn das **ListBox** -Steuerelement oder das **ListView** -Steuerelement nicht in der Liste angezeigt wird, können Sie diese Steuerelemente der Liste hinzufügen. Weitere Informationen finden [Sie unter Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    - Alle benutzerdefinierten Steuerelemente, die von <xref:System.Windows.Controls.Primitives.Selector> abgeleitet werden.
+    - Alle benutzerdefinierten Steuerelemente, die von <xref:System.Windows.Controls.Primitives.Selector>abgeleitet werden.
 
         > [!NOTE]
         > Weitere Informationen zum Hinzufügen von benutzerdefinierten Steuerelementen zur Liste der Steuerelemente, die Sie für Elemente im **Datenquellen** Fenster auswählen können, finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellen Fenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
@@ -81,7 +81,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
      Visual Studio legt einige Eigenschaften für das Steuerelement fest, um die Such Bindung zu konfigurieren. In der folgenden Tabelle werden die Eigenschaften aufgelistet, die von Visual Studio geändert werden. Bei Bedarf können Sie diese Eigenschaften im XAML-oder im **Eigenschaften** Fenster ändern.
 
-    |property|Erklärung der Einstellung|
+    |Die Eigenschaften-|Erklärung der Einstellung|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Diese Eigenschaft gibt die Auflistung oder Bindung an, die verwendet wird, um die im Steuerelement angezeigten Daten zu erhalten. Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Data.CollectionViewSource> für die übergeordneten Daten fest, die Sie in das Steuerelement gezogen haben.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Diese Eigenschaft gibt den Pfad des Datenelements an, das im-Steuerelement angezeigt wird. Visual Studio legt diese Eigenschaft auf die erste Spalte oder Eigenschaft in den übergeordneten Daten fest, und zwar nach dem Primärschlüssel, der einen Zeichen folgen-Datentyp aufweist.<br /><br /> Wenn Sie eine andere Spalte oder Eigenschaft in den übergeordneten Daten anzeigen möchten, ändern Sie diese Eigenschaft in den Pfad einer anderen Eigenschaft.|

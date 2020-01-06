@@ -2,17 +2,17 @@
 title: Richtlinien für das Verfassen von T4-Textvorlagen
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667279"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596540"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Richtlinien für das Verfassen von T4-Textvorlagen
 
@@ -64,7 +64,7 @@ Erwägen Sie, große Code Blöcke in eine separate Assembly zu verschieben.
 
 Wenn Sie über umfangreiche Code Blöcke und Klassen Funktionsblöcke verfügen, kann es hilfreich sein, einen Teil dieses Codes in Methoden zu verschieben, die Sie in einem separaten Projekt kompilieren. Sie können die `<#@ assembly #>`-Direktive verwenden, um auf den Code in der Vorlage zuzugreifen. Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).
 
-Sie können die Methoden in einer abstrakten Klasse platzieren, die von der Vorlage geerbt werden kann. Die abstrakte Klasse muss von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> erben. Weitere Informationen finden Sie unter [T4 Template-Direktive](../modeling/t4-template-directive.md).
+Sie können die Methoden in einer abstrakten Klasse platzieren, die von der Vorlage geerbt werden kann. Die abstrakte Klasse muss von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>erben. Weitere Informationen finden Sie unter [T4 Template-Direktive](../modeling/t4-template-directive.md).
 
 Generieren von Code und nicht von Konfigurationsdateien.
 
@@ -115,7 +115,7 @@ In **MyReportText-methods.cs**:
 
 Benutzerdefinierten Code zulassen: Stellen Sie Erweiterungs Punkte bereit.
 
-Erstellen Sie virtuelle Methoden in \< # +-Klassen Funktionsblöcke # >. Dadurch kann eine einzelne Vorlage in vielen Kontexten ohne Änderungen verwendet werden. Anstatt die Vorlage zu ändern, können Sie eine abgeleitete Klasse erstellen, die die minimale zusätzliche Logik bereitstellt. Die abgeleitete Klasse kann entweder regulärer Code sein, oder es kann sich um eine Lauf Zeit Vorlage handeln.
+Erstellen Sie virtuelle Methoden in \<# +-Klassen Funktionsblöcke # >. Dadurch kann eine einzelne Vorlage in vielen Kontexten ohne Änderungen verwendet werden. Anstatt die Vorlage zu ändern, können Sie eine abgeleitete Klasse erstellen, die die minimale zusätzliche Logik bereitstellt. Die abgeleitete Klasse kann entweder regulärer Code sein, oder es kann sich um eine Lauf Zeit Vorlage handeln.
 
 Beispielsweise in MyStandardRunTimeTemplate.tt:
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Trennen Sie die Datensammlung von der Textgenerierung.
 
-Versuchen Sie, die Berechnung und die Textblöcke nicht zu mischen. Verwenden Sie in jeder Textvorlage den ersten \< #-Code Block # >, um Variablen festzulegen und komplexe Berechnungen auszuführen. Vermeiden Sie vom ersten Text Block bis zum Ende der Vorlage oder der ersten \< # + Class Feature Block # >, vermeiden Sie Long-Ausdrücke, und vermeiden Sie Schleifen und Bedingungs Werte, es sei denn, Sie enthalten Textblöcke. Diese Vorgehensweise erleichtert das Lesen und warten der Vorlage.
+Versuchen Sie, die Berechnung und die Textblöcke nicht zu mischen. Verwenden Sie in jeder Textvorlage den ersten \<#-Code Block # >, um Variablen festzulegen und komplexe Berechnungen auszuführen. Vermeiden Sie vom ersten Text Block bis zum Ende der Vorlage oder der ersten \<# + Class Feature Block # >, vermeiden Sie Long-Ausdrücke, und vermeiden Sie Schleifen und Bedingungs Werte, es sei denn, Sie enthalten Textblöcke. Diese Vorgehensweise erleichtert das Lesen und warten der Vorlage.
 
 Verwenden Sie `.tt` nicht für Includedateien.
 

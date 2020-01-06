@@ -3,17 +3,17 @@ title: 'Exemplarische Vorgehensweise: Verwenden von XML-Editor-Funktionen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604448"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592463"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden von XML-Editor-Funktionen
 
@@ -64,7 +64,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 3. Geben Sie die **Test-XML-Datei**ein.
 
-4. Geben Sie in einer neuen Zeile `<` ein, und wählen Sie **Employee** aus der Liste Mitglied aus.
+4. Geben Sie in einer neuen Zeile `<`ein, und wählen Sie **Employee** aus der Liste Mitglied aus.
 
      Im Editor wird der Anfang eines XML-Elements, `<employee`, hinzugefügt. An dieser Stelle können Sie dem Element Attribute hinzufügen, oder Sie können das Starttag schließen, indem Sie `>` eingeben.
 
@@ -88,7 +88,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
      Die Wellen **förmige Unterstreichung und die** QuickInfo werden unter dem ID-Elementwert gelöscht. Die **QuickInfo für das** Endtag Employee zeigt nun folgende Meldung an: **das Element "Employee" hat unvollständigen Inhalt. "Hire-Date" erwartet**.
 
-11. Platzieren Sie den Cursor nach dem ID-Endtag, geben Sie `<` ein, wählen Sie in der Liste Mitglied den Wert " **Hire-Date** " aus, und geben Sie dann `>` ein.
+11. Platzieren Sie den Cursor nach dem ID-Endtag, geben Sie `<`ein, wählen Sie in der Liste Mitglied den Wert " **Hire-Date** " aus, und geben Sie dann `>`ein.
 
      Der Editor fügt das XML-Element `<hire-date></hire-date>` hinzu und platziert den Cursor hinter dem 'hire-date'-Starttag.
 
@@ -96,7 +96,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 ## <a name="to-format-the-xml-document"></a>So formatieren Sie das XML-Dokument
 
-- Wählen Sie auf der XML-Editor-Symbolleiste die Schaltfläche **Dokument formatieren** aus, oder drücken Sie **STRG** +**E**,**D**.
+- Wählen Sie auf der XML-Editor-Symbolleiste die Schaltfläche **Dokument formatieren** aus, oder drücken Sie **STRG**+**E**,**D**.
 
    ![Formatieren der XML-Dokument Schaltfläche in Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 ## <a name="to-save-the-xml-document"></a>So speichern Sie das XML-Dokument
 
-1. Wählen Sie im Menü **Datei** die Option **Speichern**unter aus.
+1. Wählen Sie im Menü **Datei** **Speichern unter**.
 
      Das Dialogfeld **Datei speichern** unter wird angezeigt. Der Standard Dateiname ist *"XMLFile1"* .
 

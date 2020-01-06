@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d786e9acfa99d2b106b72822a0106e2161724790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650459"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597034"
 ---
 # <a name="flowchart-activity-designer"></a>Flussdiagramm-Aktivitätsdesigner
 
@@ -29,7 +29,7 @@ Die <xref:System.Activities.Statements.Flowchart>-Aktivität gibt einen eindeuti
 
 ### <a name="using-the-flowchart-activity-designer"></a>Verwenden des Flussdiagramm-Aktivitätsdesigners
 
-Der **Flussdiagramm** -Aktivitäts Designer befindet sich in der Kategorie **Flussdiagramm** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** +**alt** +**X**drücken.
+Der **Flussdiagramm** -Aktivitäts Designer befindet sich in der Kategorie **Flussdiagramm** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG**+**alt**+**X**drücken.
 
 Der **Flussdiagramm** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, entweder als Stamm Aktivität oder als untergeordnetes Element einer anderen Ablauf Steuerungs Aktivität. Wenn der **Flussdiagramm** -Aktivitäts Designer auf einer leeren Workflow-Designer Oberfläche abgelegt wird, erstellt er eine <xref:System.Activities.Statements.Flowchart>-Aktivität, die sich standardmäßig in einer erweiterten Ansicht präsentiert, in der der Startknoten, der die Ausführung initiiert, als grüne Kugel dargestellt wird. Wenn der **Flussdiagramm** -Aktivitäts Designer in einer anderen Ablauf Steuerungs Aktivität abgelegt wird, stellt er sich in einer minimierten Ansicht vor, die durch Doppelklicken auf den **Flussdiagramm** -Aktivitäts Designer erweitert werden kann. Alle Aktivitäten in der **Toolbox** können direkt auf den **Flussdiagramm** -Aktivitäts Designer, einschließlich anderer Ablauf Steuerungsaktivitäten, gezogen werden.
 
@@ -39,12 +39,12 @@ Nachdem verschiedene Aktivitäts Designer auf die Workflow-Designer Canvas gezog
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.Flowchart>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder auf der Designeroberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftsname|Erforderlich|Verwendungs-|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert lautet Flussdiagramm. Der Wert kann im **Eigenschaften** Fenster oder direkt im Header des Aktivitäts Designers bearbeitet werden.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|Die Auflistung der innerhalb dieses <xref:System.Activities.Statements.Flowchart> gültigen Variablen, mittels derer der Zustand gemeinsam mit seinen untergeordneten Aktivitäten verwendet wird.|
-|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|Der <xref:System.Activities.Statements.FlowNode>, der ausgeführt wird, wenn <xref:System.Activities.Statements.Flowchart> startet.|
-|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Enthält die Auflistung der <xref:System.Activities.Statements.FlowNode>-Objekte im <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert lautet Flussdiagramm. Der Wert kann im **Eigenschaften** Fenster oder direkt im Header des Aktivitäts Designers bearbeitet werden.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.Flowchart.Variables%2A>|Falsch|Die Auflistung der innerhalb dieses <xref:System.Activities.Statements.Flowchart> gültigen Variablen, mittels derer der Zustand gemeinsam mit seinen untergeordneten Aktivitäten verwendet wird.|
+|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|Falsch|Der <xref:System.Activities.Statements.FlowNode>, der ausgeführt wird, wenn <xref:System.Activities.Statements.Flowchart> startet.|
+|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|Falsch|Enthält die Auflistung der <xref:System.Activities.Statements.FlowNode>-Objekte im <xref:System.Activities.Statements.Flowchart>.|
 
 ## <a name="see-also"></a>Siehe auch
 

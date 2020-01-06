@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eff5e0d2f13bfe462ff19d6cfb4e8a32a15a6064
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639635"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586106"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typisierte Datasets im Vergleich zu nicht typisierten Datasets
 Ein typisiertes DataSet ist ein DataSet, das zuerst von der Basis <xref:System.Data.DataSet> Klasse abgeleitet wird, und dann Informationen aus dem **DataSet-Designer**verwendet, das in einer XSD-Datei gespeichert ist, um eine neue, stark typisierte DataSet-Klasse zu generieren. Informationen aus dem Schema (Tabellen, Spalten usw.) werden generiert und in diese neue DataSet-Klasse als Satz von Objekten und Eigenschaften der ersten Klasse kompiliert. Da ein typisiertes DataSet von der Basis <xref:System.Data.DataSet> Klasse erbt, übernimmt die typisierte Klasse die gesamte Funktionalität der <xref:System.Data.DataSet> Klasse und kann mit Methoden verwendet werden, die eine Instanz einer <xref:System.Data.DataSet> Klasse als Parameter annehmen.

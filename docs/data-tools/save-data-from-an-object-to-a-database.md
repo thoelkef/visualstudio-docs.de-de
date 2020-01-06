@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648217"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586262"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 
@@ -36,7 +36,7 @@ Standardmäßig werden `DBDirect` Methoden auf einem TableAdapter erstellt, der 
 |TableAdapter-DBDirect-Methode|Beschreibung|
 | - |-----------------|
 |`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu und ermöglicht es Ihnen, einzelne Spaltenwerte als Methoden Parameter zu übergeben.|
-|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die `Update`-Methode übernimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die `TableAdapter.Update`-Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> oder ein Array von <xref:System.Data.DataRow>s als Methoden Parameter verwendet wird.|
+|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die `Update`-Methode übernimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die `TableAdapter.Update`-Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>oder ein Array von <xref:System.Data.DataRow>s als Methoden Parameter verwendet wird.|
 |`TableAdapter.Delete`|Löscht vorhandene Datensätze aus der Datenbank auf Grundlage der ursprünglichen Spaltenwerte, die als Methoden Parameter weitergegeben werden.|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>So speichern Sie neue Datensätze aus einem Objekt in einer Datenbank
@@ -74,7 +74,7 @@ Standardmäßig werden `DBDirect` Methoden auf einem TableAdapter erstellt, der 
 
 ## <a name="net-security"></a>.NET-Sicherheit
 
-Sie müssen über die Berechtigung verfügen, die ausgewählten `INSERT`, `UPDATE` oder `DELETE` in der-Tabelle in der-Datenbank auszuführen.
+Sie müssen über die Berechtigung verfügen, die ausgewählten `INSERT`, `UPDATE`oder `DELETE` in der-Tabelle in der-Datenbank auszuführen.
 
 ## <a name="see-also"></a>Siehe auch
 

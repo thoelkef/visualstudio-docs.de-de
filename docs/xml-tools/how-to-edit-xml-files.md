@@ -3,17 +3,17 @@ title: 'Gewusst wie: Bearbeiten von XML-Dateien'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645925"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592736"
 ---
 # <a name="how-to-edit-xml-files"></a>Gewusst wie: Bearbeiten von XML-Dateien
 
@@ -36,7 +36,7 @@ Zum Bearbeiten einer XML-Datei doppelklicken Sie auf die Datei, die Sie bearbeit
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Hinzufügen einer vorhandenen XML-Datei zu einem Projekt
 
-1. Wählen Sie im Menü **Projekt** die Option **Vorhandenes Element hinzufügen**aus.
+1. Klicken Sie im Menü **Projekt** auf **Vorhandenes Element hinzufügen**.
 
    Das Dialogfeld **Vorhandenes Element hinzufügen** wird angezeigt.
 
@@ -46,7 +46,7 @@ Zum Bearbeiten einer XML-Datei doppelklicken Sie auf die Datei, die Sie bearbeit
 
 1. Wählen Sie im Menü **Datei** die Option **neu**aus.
 
-   Das Dialogfeld **neue Datei** wird angezeigt.
+   Das Dialogfeld **Neue Datei** wird angezeigt.
 
 2. **XML-Datei** auswählen, um eine neue XML-Datei zu erstellen. oder wählen Sie **XSLT-Datei** aus, um ein neues XSLT-Stylesheet zu erstellen.
 
@@ -56,7 +56,7 @@ Zum Bearbeiten einer XML-Datei doppelklicken Sie auf die Datei, die Sie bearbeit
 
 ::: moniker range="vs-2017"
 
-1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
+1. Wählen Sie im Menü **Datei** die Option **neu** > **Projekt**aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -68,7 +68,7 @@ Zum Bearbeiten einer XML-Datei doppelklicken Sie auf die Datei, die Sie bearbeit
 
 ::: moniker range=">=vs-2019"
 
-1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
+1. Wählen Sie im Menü **Datei** die Option **neu** > **Projekt**aus.
 
 2. Geben Sie im Feld für die Vorlagen Suche ein **leeres Projekt** ein, wählen Sie die Vorlage **leeres Projekt (.NET Framework)** aus, und klicken Sie dann auf **weiter**.
 

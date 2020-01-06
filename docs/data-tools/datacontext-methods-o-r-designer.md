@@ -3,17 +3,17 @@ title: DataContext-Methoden (O/R-Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e81f2337931f565e0068a852bf9b8284350690c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b9d322ea9c805b7fc1ce55dbf93b72b29958af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648542"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586704"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext-Methoden (O/R-Designer)
 
@@ -26,7 +26,7 @@ Die <xref:System.Data.Linq.DataContext>-Klasse ist eine [!INCLUDE[vbtecdlinq](..
 <xref:System.Data.Linq.DataContext> Methoden, die gespeicherten Prozeduren und Funktionen zugeordnet sind, werden im **Methoden** Bereich des **O/R-Designers**angezeigt. Der Bereich **Methoden** befindet sich neben dem Bereich **Entitäten** (der Hauptentwurfsoberfläche). Im Bereich **Methoden** werden alle <xref:System.Data.Linq.DataContext> Methoden aufgelistet, die Sie mit dem **O/R-Designer**erstellt haben. Standardmäßig ist der **Methoden** Bereich leer. Ziehen Sie gespeicherte Prozeduren oder Funktionen aus **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer** , um <xref:System.Data.Linq.DataContext> Methoden zu erstellen und den **Methoden** Bereich aufzufüllen. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von DataContext-Methoden, die gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).
 
 > [!NOTE]
-> Öffnen und schließen Sie den Methoden Bereich, indem Sie mit der rechten Maustaste auf den **O/R-Designer** klicken und dann auf **Methoden Bereich ausblenden** oder **Methoden Bereich anzeigen**klicken oder die Tastenkombination **STRG** +**1**verwenden.
+> Öffnen und schließen Sie den Methoden Bereich, indem Sie mit der rechten Maustaste auf den **O/R-Designer** klicken und dann auf **Methoden Bereich ausblenden** oder **Methoden Bereich anzeigen**klicken oder die Tastenkombination **STRG**+**1**verwenden.
 
 ## <a name="two-types-of-datacontext-methods"></a>Zwei Typen von DataContext-Methoden
 
@@ -34,7 +34,7 @@ DataContext-Methoden sind Methoden, die gespeicherten Prozeduren und Funktionen 
 
 - <xref:System.Data.Linq.DataContext>-Methoden, die ein oder mehrere Resultsets zurückgeben:
 
-   Erstellen Sie diese Art von <xref:System.Data.Linq.DataContext>-Methode, wenn eine Anwendung nur gespeicherte Prozeduren und Funktionen in der Datenbank ausführen und die Ergebnisse zurückgeben muss. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von DataContext-Methoden, die gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System. Data. Linq. ISingleResult \<T > und <xref:System.Data.Linq.IMultipleResults>.
+   Erstellen Sie diese Art von <xref:System.Data.Linq.DataContext>-Methode, wenn eine Anwendung nur gespeicherte Prozeduren und Funktionen in der Datenbank ausführen und die Ergebnisse zurückgeben muss. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von DataContext-Methoden, die gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System. Data. Linq. ISingleResult\<t > und <xref:System.Data.Linq.IMultipleResults>.
 
 - <xref:System.Data.Linq.DataContext>-Methoden, die keine Resultsets zurückgeben, wie Einfüge-, Update- und Löschvorgänge für eine bestimmte Entitätsklasse.
 

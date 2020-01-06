@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911734"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573312"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
 
@@ -22,7 +22,7 @@ Wenn Sie eine Webanwendung in Visual Studio erstellen, können Sie ein Windows P
 
 Mithilfe dieser Skripts können Sie angepasste Versionen Ihrer Website (auch als Entwicklungs- und Testumgebungen bezeichnet) zur vorübergehenden Verwendung bereitstellen. Sie können z. B. eine bestimmte Version Ihrer Website auf einem virtuellen Azure-Computer oder auf dem Stagingslot einer Website einrichten, um eine Testsuite auszuführen, einen Bug zu reproduzieren, einen Bugfix zu testen, eine vorgeschlagene Änderung zu prüfen oder eine benutzerdefinierte Umgebung für eine Demonstration oder eine Präsentation einzurichten. Nachdem Sie ein Skript zum Veröffentlichen Ihres Projekts erstellt haben, können Sie identische Umgebungen erstellen, indem Sie das Skript bei Bedarf erneut ausführen. Sie können das Skript auch mit Ihrem eigenen Build Ihrer Webanwendung ausführen, um eine benutzerdefinierte Umgebung für Testzwecke zu erstellen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 * Visual Studio 2015 oder höher mit installierter **Azure-Workload** oder Visual Studio 2013 und Azure SDK 2.3 oder höher. Siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads). (Sie benötigen das Azure SDK nicht, um die Skripts für Webprojekte zu generieren. Dieses Feature bezieht sich auf Webprojekte, nicht auf Webrollen in Clouddiensten.)
 * Azure PowerShell 0.7.4 oder höher. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Azure PowerShell](/powershell/azure/overview).
@@ -154,7 +154,7 @@ Wenn Sie noch nie zuvor ein Windows PowerShell-Skript ausgeführt haben, müssen
 
    ![Web Deploy-Paket erstellen](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Webbereitstellungs Pakets in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Sie können die Erstellung Ihres Web Deploy-Pakets wie unter [Customizing and extending the publish scripts (Anpassen und Erweitern des Veröffentlichungsskripts)](#customizing-and-extending-the-publish-scripts) beschrieben automatisieren.
+   Weitere Informationen finden Sie unter [Gewusst wie: Erstellen eines Webbereitstellungspakets in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Sie können die Erstellung Ihres Web Deploy-Pakets wie unter [Customizing and extending the publish scripts (Anpassen und Erweitern des Veröffentlichungsskripts)](#customizing-and-extending-the-publish-scripts) beschrieben automatisieren.
 
 1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Skript, und wählen Sie dann **Mit PowerShell-ISE öffnen** aus.
 1. Wenn Sie Windows PowerShell-Skripts erstmals auf diesem Computer ausführen, öffnen Sie ein Eingabeaufforderungsfenster mit Administratorberechtigungen, und geben Sie den folgenden Befehl ein:
@@ -250,7 +250,7 @@ Wenn Sie den Buildvorgang Ihres Projekts automatisieren möchten, fügen Sie Cod
         #Write a function to build and package your web application
     ```
 
-    Verwenden Sie zum Erstellen Ihrer Webanwendung „MsBuild.exe“. Hilfreiche Informationen finden Sie in der MSBuild-Befehlszeilenreferenz unter: [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)
+    Verwenden Sie zum Erstellen Ihrer Webanwendung „MsBuild.exe“. Hilfe finden Sie unter [MSBuild-Befehlszeilen Referenz](../msbuild/msbuild-command-line-reference.md) .
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'

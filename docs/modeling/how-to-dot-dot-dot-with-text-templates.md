@@ -2,17 +2,17 @@
 title: 'Gewusst wie: ... mit Textvorlagen'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fc29b7daa65a9aa0b0c45ae5bc90a4f845dedff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605624"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594655"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in Visual Studio bieten eine nützliche Möglichkeit zum Erstellen von Text beliebiger Art. Sie können Textvorlagen verwenden, um zur Laufzeit Text als Teil der Anwendung zu generieren, und zur Entwurfszeit, um einen Teil des Projekt Codes zu generieren. In diesem Thema werden die am häufigsten gestellten "Gewusst wie...?" zusammengefasst. Anfragen.
@@ -21,7 +21,7 @@ Textvorlagen in Visual Studio bieten eine nützliche Möglichkeit zum Erstellen 
 
  Eine allgemeine Einführung in Textvorlagen finden Sie unter [Code Generierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="how-to-"></a>So wird es gemacht...
+## <a name="how-to-"></a>So wird es gemacht
 
 ### <a name="generate-part-of-my-application-code"></a>Einen Teil des Anwendungs Codes generieren
  Ich verfüge über eine Konfiguration oder ein *Modell* in einer Datei oder einer Datenbank. Ein oder mehrere Teile des Codes hängen von diesem Modell ab.
@@ -35,7 +35,7 @@ Textvorlagen in Visual Studio bieten eine nützliche Möglichkeit zum Erstellen 
 
 - Wenn Sie aus Vorlagen generieren möchten, die nur zur Laufzeit verfügbar sind, können Sie Standardtext Vorlagen verwenden. Wenn Sie eine Visual Studio-Erweiterung schreiben, können Sie den Textvorlagen Dienst aufrufen. Weitere Informationen finden Sie unter [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md). In anderen Kontexten können Sie die Textvorlagen-Engine verwenden. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Verwenden Sie die \< # @parameter # >-Direktive, um Parameter an diese Vorlagen zu übergeben. Weitere Informationen finden Sie unter [T4-Parameter Direktive](../modeling/t4-parameter-directive.md).
+     Verwenden Sie die \<#@parameter# >-Direktive, um Parameter an diese Vorlagen zu übergeben. Weitere Informationen finden Sie unter [T4-Parameter Direktive](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Lesen einer anderen Projektdatei aus einer Vorlage
  So lesen Sie eine Datei aus dem gleichen Visual Studio-Projekt wie die Vorlage:
@@ -48,7 +48,7 @@ Textvorlagen in Visual Studio bieten eine nützliche Möglichkeit zum Erstellen 
 
 Wenn die Methoden bereits vorhanden sind, z. b. in .NET-Klassen:
 
-- Verwenden Sie die \< # @assembly # >-Direktive, um die Assembly zu laden, und verwenden Sie \< # @import # >, um den Namespace Kontext festzulegen. Weitere Informationen finden Sie unter [T4 Import-Direktive](../modeling/t4-import-directive.md).
+- Verwenden Sie die \<#@assembly# >-Direktive, um die Assembly zu laden, und verwenden Sie \<#@import# >, um den Namespace Kontext festzulegen. Weitere Informationen finden Sie unter [T4 Import-Direktive](../modeling/t4-import-directive.md).
 
    Wenn Sie häufig denselben Satz von Assemblys und Import Direktiven verwenden, sollten Sie ggf. einen Direktivenprozessor schreiben. In jeder Vorlage können Sie den Direktivenprozessor aufrufen, der die Assemblys und die Modelldateien laden und den Namespace Kontext festlegen kann. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4](../modeling/creating-custom-t4-text-template-directive-processors.md)-Anweisungs Prozessoren für Text Vorlagen.
 
@@ -94,7 +94,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Ausführen von Textvorlagen im Buildprozess
 
-- Weitere Informationen finden Sie unter [Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md).
+- Weitere Informationen finden Sie unter [Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="more-general-questions"></a>Allgemeinere Fragen
 

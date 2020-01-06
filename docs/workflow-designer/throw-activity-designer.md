@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6a530888c7c28c5c1556114db03a6cd7369fe6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 650082ab0e4f8576b7028b8011c88bf5d93b2afd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649853"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593095"
 ---
 # <a name="throw-activity-designer"></a>Throw-Aktivitätsdesigner
 
@@ -35,9 +35,9 @@ Der **throw** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.Throw>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftsname|Erforderlich|Verwendungs-|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Throw>-Aktivität an. Der Standardwert lautet Throw.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Throw>-Aktivität an. Der Standardwert lautet Throw.|
 |<xref:System.Activities.Statements.Throw.Exception%2A>|True|Die auszulösende Ausnahme. Diese Ausnahme muss sich von <xref:System.Exception> ableiten. Geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein, um die Ausnahme anzugeben.|
 
 ## <a name="see-also"></a>Siehe auch

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639469"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586015"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Dienstanbieter in Windows Forms
 
@@ -31,11 +31,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 ## <a name="create-a-service"></a>Erstellen eines Diensts
 
-1. Öffnen Sie Visual Studio.
+1. Öffnen Sie Visual Studio.
 
 ::: moniker range="vs-2017"
 
-2. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** >**Projekt**aus.
+2. Wählen Sie im Menü **Datei** die Option **New** > **Project**aus.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**  , und wählen Sie **WCF**und dann **WCF-Dienst Bibliothek**aus.
 

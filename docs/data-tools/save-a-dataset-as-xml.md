@@ -11,21 +11,21 @@ helpviewer_keywords:
 - datasets [Visual Basic], saving as XML
 - saving data
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5b3aa23cb0fde98b4da4225b8e255b7cd6e7aef5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3198b94b1248f20b178e85e9e75a2765e6191c28
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641355"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586301"
 ---
 # <a name="save-a-dataset-as-xml"></a>Speichern eines Datasets als XML
 
-Greifen Sie auf die XML-Daten in einem DataSet zu, indem Sie die verfügbaren XML-Methoden für das DataSet aufrufen. Um die Daten im XML-Format zu speichern, können Sie entweder die <xref:System.Data.DataSet.GetXml%2A>-Methode oder die <xref:System.Data.DataSet.WriteXml%2A>-Methode einer <xref:System.Data.DataSet> abrufen.
+Greifen Sie auf die XML-Daten in einem DataSet zu, indem Sie die verfügbaren XML-Methoden für das DataSet aufrufen. Um die Daten im XML-Format zu speichern, können Sie entweder die <xref:System.Data.DataSet.GetXml%2A>-Methode oder die <xref:System.Data.DataSet.WriteXml%2A>-Methode einer <xref:System.Data.DataSet>abrufen.
 
 Wenn Sie die <xref:System.Data.DataSet.GetXml%2A>-Methode aufrufen, wird eine Zeichenfolge zurückgegeben, die die Daten aus allen Datentabellen im DataSet enthält, die als XML formatiert sind.
 

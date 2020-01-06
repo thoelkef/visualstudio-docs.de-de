@@ -10,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648255"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586314"
 ---
 # <a name="create-relationships-between-datasets"></a>Erstellen von Beziehungen zwischen Datasets
 Datasets, die Verwandte Datentabellen enthalten, verwenden <xref:System.Data.DataRelation>-Objekte, um eine über-/Unterordnungsbeziehung zwischen den Tabellen darzustellen und verknüpfte Datensätze voneinander zurückzugeben. Durch das Hinzufügen verknüpfter Tabellen zu Datasets mithilfe des **Assistenten zum Konfigurieren von Datenquellen**oder des **DataSet-Designer**wird das <xref:System.Data.DataRelation> Objekt erstellt und konfiguriert.
@@ -55,10 +55,10 @@ Als Teil der FOREIGN KEY-Einschränkung können Sie referenzielle Integritäts R
 
 Die Regeln, die Sie vornehmen können, werden in der <xref:System.Data.Rule>-Enumeration angegeben und sind in der folgenden Tabelle aufgeführt.
 
-|Foreign Key-Einschränkungs Regel|Aktion|
+|Foreign Key-Einschränkungs Regel|-Aktion|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|Die Änderung (aktualisieren oder löschen), die am übergeordneten Datensatz vorgenommen wurde, erfolgt auch in verknüpften Datensätzen in der untergeordneten Tabelle.|
-|<xref:System.Data.Rule.SetNull>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird auf <xref:System.DBNull> festgelegt. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" verbleiben, d. –., Sie haben keine Beziehung zu übergeordneten Datensätzen. **Hinweis:** Die Verwendung dieser Regel kann zu ungültigen Daten in der untergeordneten Tabelle führen.|
+|<xref:System.Data.Rule.SetNull>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird auf <xref:System.DBNull>festgelegt. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" verbleiben, d. –., Sie haben keine Beziehung zu übergeordneten Datensätzen. **Hinweis:** Die Verwendung dieser Regel kann zu ungültigen Daten in der untergeordneten Tabelle führen.|
 |<xref:System.Data.Rule.SetDefault>|Der Fremdschlüssel in den zugehörigen untergeordneten Datensätzen wird auf seinen Standardwert festgelegt (wie durch die <xref:System.Data.DataColumn.DefaultValue%2A>-Eigenschaft der Spalte festgelegt).|
 |<xref:System.Data.Rule.None>|An verwandten untergeordneten Datensätzen wird keine Änderung vorgenommen. Mit dieser Einstellung können untergeordnete Datensätze Verweise auf ungültige übergeordnete Datensätze enthalten.|
 
@@ -92,7 +92,7 @@ Beziehungen zwischen Datentabellen werden in der **DataSet-Designer**als Zeilen 
 
 7. Wählen Sie aus, ob eine Beziehung, eine Einschränkung oder beides erstellt werden soll.
 
-8. Aktivieren bzw. deaktivieren Sie das Feld für die Feld- **Beziehung** . Wenn Sie diese Option auswählen, wird die <xref:System.Data.DataRelation.Nested%2A>-Eigenschaft auf `true` festgelegt. Dadurch werden die untergeordneten Zeilen der Beziehung innerhalb der übergeordneten Spalte geschachtelt, wenn diese Zeilen als XML-Daten geschrieben oder mit <xref:System.Xml.XmlDataDocument> synchronisiert werden. Weitere Informationen finden Sie unter Schachteln von [DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)-Elementen.
+8. Aktivieren bzw. deaktivieren Sie das Feld für die Feld- **Beziehung** . Wenn Sie diese Option auswählen, wird die <xref:System.Data.DataRelation.Nested%2A>-Eigenschaft auf `true`festgelegt. Dadurch werden die untergeordneten Zeilen der Beziehung innerhalb der übergeordneten Spalte geschachtelt, wenn diese Zeilen als XML-Daten geschrieben oder mit <xref:System.Xml.XmlDataDocument>synchronisiert werden. Weitere Informationen finden Sie unter Schachteln von [DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)-Elementen.
 
 9. Legen Sie die Regeln fest, die erzwungen werden sollen, wenn Sie Änderungen an Datensätzen in diesen Tabellen vornehmen. Weitere Informationen finden Sie unter <xref:System.Data.Rule>.
 

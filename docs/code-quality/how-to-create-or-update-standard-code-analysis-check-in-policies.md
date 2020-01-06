@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649479"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587536"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 
@@ -39,7 +39,7 @@ Nachdem Sie eine Eincheck Richtlinie für verwalteten Code angegeben haben, kön
 
 1. Wählen Sie im Dialogfeld **Quell** Code Verwaltung die Registerkarte **Check-in-Richtlinie** aus.
 
-1. Führen Sie einen der folgenden Schritte aus:
+1. Führen Sie eine der folgenden Aktionen aus:
 
     - Klicken Sie auf **Hinzufügen** , um eine neue Eincheck Richtlinie zu erstellen.
 
@@ -49,7 +49,7 @@ Nachdem Sie eine Eincheck Richtlinie für verwalteten Code angegeben haben, kön
 
 Aktivieren oder deaktivieren Sie die folgenden Optionen:
 
-|Option|Beschreibung|
+|-Option|Beschreibung|
 |------------|-----------------|
 |**Erzwingen Sie den Eincheck Vorgang, sodass nur Dateien enthalten sind, die Teil der aktuellen Projekt Mappe sind.**|Die Code Analyse kann nur für Dateien ausgeführt werden, die in den Projektmappen-und Projekt Konfigurationsdateien Diese Richtlinie stellt sicher, dass der gesamte Code, der Teil einer Lösung ist, analysiert wird.|
 |**C/CodeC++ -Analyse erzwingen (/analyze)**|Erfordert, dass alle C C++ -oder-Projekte mit der/analyze-Compileroption erstellt werden, um die Code Analyse auszuführen, bevor Sie eingeglichen werden können.|
@@ -61,7 +61,7 @@ Verwenden Sie in der Liste **diesen Regelsatz ausführen** eine der folgenden Me
 
 - Wählen Sie einen Microsoft Standard-Regelsatz aus.
 
-- Wählen Sie einen benutzerdefinierten Regelsatz aus, indem Sie auf **\<Select Regelsatz aus Quell Code Verwaltung klicken... >** . Geben Sie dann den Versions Kontroll Pfad des Regelsatzes im Quellcodeverwaltungs-Browser ein. Die Syntax eines Versions Kontroll Pfads lautet wie folgt:
+- Wählen Sie einen benutzerdefinierten Regelsatz aus, indem Sie auf **\<Regelsatz aus Quell Code Verwaltung auswählen... >** . Geben Sie dann den Versions Kontroll Pfad des Regelsatzes im Quellcodeverwaltungs-Browser ein. Die Syntax eines Versions Kontroll Pfads lautet wie folgt:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ Weitere Informationen zum Erstellen und Implementieren eines benutzerdefinierten
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Eincheck Richtlinien für die Code Analyse erstellen und verwenden](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

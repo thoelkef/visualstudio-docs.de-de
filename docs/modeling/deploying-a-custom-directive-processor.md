@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83edb231819a47c3c8a6f7a1943ae9086e06467d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653887"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596670"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Direktivenprozessors
 
@@ -52,9 +52,9 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
     1. Wählen Sie im VSIX-Manifest-Editor auf der Registerkarte **Objekte** die Option **neu** aus, und legen Sie die Eigenschaften des neuen Elements fest:
 
-         **Inhaltstyp**  = **VSPackage**
+         **Inhaltstyp** = **VSPackage**
 
-         **Quell Projekt**  =  \<*das aktuelle Projekt* >
+         **Quell Projekt** = \<*das aktuelle Projekt*>
 
     2. Klicken Sie auf **ausgewählte Editionen** , und überprüfen Sie die Installationstypen, für die der Direktivenprozessor verwendet werden soll.
 
@@ -66,11 +66,11 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
     2. Wählen Sie die Datei im Projektmappen-Explorer aus, und legen Sie die Eigenschaften wie folgt fest:
 
-         **Build-Aktion**  = **Inhalt**
+         **Buildvorgang** = **Inhalt**
 
-         **In Ausgabeverzeichnis kopieren**  = **immer kopieren**
+         **In Ausgabeverzeichnis kopieren** = **immer kopieren**
 
-         **In VSIX einschließen**  = **true**
+         **In VSIX einschließen** = **true**
 
     3. Legen Sie den Namen der VSIX fest, und stellen Sie sicher, dass die ID eindeutig ist.
 
@@ -89,11 +89,11 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
 5. Fügen Sie dem Projekt die folgenden Verweise hinzu:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. vshost. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
 6. Fügen Sie dem Projekt die benutzerdefinierte Direktivenprozessorklasse hinzu.
 
@@ -124,7 +124,7 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
 - Die `IsDirectiveSupported`-Methode muss `true` zurückgeben, wenn der Name der `CustomDirective` an sie übergeben wird.
 
-- Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt wird, aber das System die Installation nicht zulässt, löschen Sie die Erweiterung aus **%LocalAppData%\microsoft\visualstudio \\ \* 0 \ Extensions \\** .
+- Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt wird, aber das System die Installation nicht zulässt, löschen Sie die Erweiterung aus **%LocalAppData%\microsoft\visualstudio\\\*0 \ Extensions\\** .
 
 - Öffnen Sie die VSIX-Datei, und überprüfen Sie den Inhalt. Ändern Sie die Dateierweiterung in .zip, um die Datei zu öffnen. Vergewissern Sie sich, dass sie die DLL-, PKGDEF- und extension.vsixmanifest-Dateien enthält. Die extension.vsixmanifest-Datei sollte die entsprechende Liste im Knoten "SupportedProducts" und einen Knoten "VsPackage" unter dem Knoten "Inhalt" enthalten:
 
@@ -164,7 +164,7 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
 2. Navigieren Sie in regedit zum folgenden Eintrag:
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ texttemplating\directiveprozessoren**
+    **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*. 0 \ texttemplating\directiveprozessoren**
 
     Wenn Sie den Direktivenprozessor in der experimentellen Version von Visual Studio installieren möchten, fügen Sie "EXP" nach "11,0" ein.
 
@@ -182,19 +182,19 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
    Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
-|-Name|Geben Sie Folgendes ein:|Daten|
+|-Name|Typ|importieren|
 |-|-|-|
-|(Standard)|REG_SZ|(Wert nicht festgelegt)|
-|Klasse|REG_SZ|**\<Namespace Name >. \<Class Name >**|
-|CodeBase|REG_SZ|**\<Your Pfad > \\ < Ihres Assemblynamens \>**|
+|(Standardeinstellung)|REG_SZ|(Wert nicht festgelegt)|
+|Klasse|REG_SZ|**\<Namespace Name >.\<Klassen Name >**|
+|CodeBase|REG_SZ|**\<Sie Ihren Pfad >\\< Ihren Assemblynamen\>**|
 
  Wenn die Assembly im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
-|-Name|Geben Sie Folgendes ein:|Daten|
+|-Name|Typ|importieren|
 |-|-|-|
-|(Standard)|REG_SZ|(Wert nicht festgelegt)|
-|Klasse|REG_SZ|\<**Sie den voll qualifizierten Klassennamen** >|
-|Assembly|REG_SZ|\<**Sie den Assemblynamen im GAC** >|
+|(Standardeinstellung)|REG_SZ|(Wert nicht festgelegt)|
+|Klasse|REG_SZ|\<**Sie den voll qualifizierten Klassennamen**>|
+|Assembly|REG_SZ|\<**Sie den Assemblynamen im GAC**>|
 
 ## <a name="see-also"></a>Siehe auch
 

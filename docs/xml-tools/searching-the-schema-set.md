@@ -3,17 +3,17 @@ title: 'XML-Schema-Explorer: Durchsuchen des Schema Satzes'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7684c56a22ef760655563d1d9f58e2ff01b0c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8378ebaccefaedfcc3d83f23bcab56f7417264dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604651"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592502"
 ---
 # <a name="search-the-schema-set"></a>Durchsuchen des Schemasets
 
@@ -43,11 +43,11 @@ Der **XML-Schema-Explorer** enthält auch integrierte Suchvorgänge, auf die Sie
 
 ## <a name="display-and-navigate-search-results"></a>Anzeigen und Navigieren in den Suchergebnissen
 
-Nach der Suche wird der Symbolleiste ein Bereich mit der Ergebniszusammenfassung der Suche hinzugefügt. Die Suchergebnisse werden auch im XML- **Schema-Explorer** hervorgehoben und auf der vertikalen Schiebe Leiste durch Ticks gekennzeichnet. Sie können in den Suchergebnissen navigieren, indem Sie auf der Symbolleiste des **XML-Schema-Explorers** im Ergebnisbereich "Zusammenfassung" auf die Schaltflächen " **Gehe zur nächsten Suchergebnis** " klicken. mithilfe der Tastaturtasten **F3** und **UMSCHALT** +**F3**; oder klicken Sie auf die Teil Striche in der Bild Lauf Leiste.
+Nach der Suche wird der Symbolleiste ein Bereich mit der Ergebniszusammenfassung der Suche hinzugefügt. Die Suchergebnisse werden auch im XML- **Schema-Explorer** hervorgehoben und auf der vertikalen Schiebe Leiste durch Ticks gekennzeichnet. Sie können in den Suchergebnissen navigieren, indem Sie auf der Symbolleiste des **XML-Schema-Explorers** im Ergebnisbereich "Zusammenfassung" auf die Schaltflächen " **Gehe zur nächsten Suchergebnis** " klicken. mithilfe der Tastaturtasten **F3** und **UMSCHALT**+**F3**; oder klicken Sie auf die Teil Striche in der Bild Lauf Leiste.
 
 Sie können die Suchergebnisse dem Arbeitsbereich hinzufügen, indem Sie im Zusammenfassungs Ergebnisbereich auf die Schaltfläche **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** klicken.
 
-![Suchergebnis im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
+![Suchergebnis des XML-Schema-Explorers](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Suchergebnisse löschen
 

@@ -3,21 +3,21 @@ title: Inhaltsmodellansicht im XML-Schema-Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67453571963ae22910842be0021e008632942de5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661525"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592912"
 ---
 # <a name="content-model-view"></a>Inhaltsmodellansicht
 
-Die Inhaltsmodellansicht bietet eine grafische Darstellung lokaler und globaler Schemaknoten und ihrer Komponenten. Dazu zählen einfache und komplexe Typen, Elemente, Modellgruppen, Attribute und Attributgruppen. XML-Kommentare und -Verarbeitungsanweisungen können nicht in der Inhaltsmodellansicht angezeigt werden. Die Inhalts Modell Ansicht enthält zwei Bereiche: einen **Arbeitsbereich** mit einer Liste der Knoten im [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md)und die Entwurfs Oberfläche, auf der Sie das Inhalts Modell von Schema Knoten sehen können, die im **Arbeitsbereich ausgewählt sind.** Bereich. Die Inhaltsmodellansicht enthält auch die Symbolleiste des XML-Schema-Designers und die Breadcrumb-Leiste.
+Die Inhaltsmodellansicht bietet eine grafische Darstellung lokaler und globaler Schemaknoten und ihrer Komponenten. Dazu zählen einfache und komplexe Typen, Elemente, Modellgruppen, Attribute und Attributgruppen. XML-Kommentare und -Verarbeitungsanweisungen können nicht in der Inhaltsmodellansicht angezeigt werden. Die Inhalts Modell Ansicht enthält zwei Bereiche: einen **Arbeitsbereich** mit einer Liste der Knoten im [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md)und die Entwurfs Oberfläche, auf der Sie das Inhalts Modell von Schema Knoten sehen können, die im **Arbeitsbereich** ausgewählt sind. Die Inhaltsmodellansicht enthält auch die Symbolleiste des XML-Schema-Designers und die Breadcrumb-Leiste.
 
 In der folgenden Abbildung enthält der **Arbeitsbereichs Bereich** sechs Schema Knoten. Der Knoten `purchaseOrder` ist im **Arbeitsbereich** ausgewählt und wird auf der Entwurfs Oberfläche angezeigt.
 
@@ -29,7 +29,7 @@ Nachdem Sie dem Arbeitsbereich Knoten hinzugefügt haben, wird die Liste der Kno
 
 Weitere Informationen zum Hinzufügen von Knoten finden Sie im Abschnitt "Hinzufügen von Knoten zum Arbeitsbereich" im [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md).
 
-## <a name="design-surface"></a>Entwurfs Oberfläche
+## <a name="design-surface"></a>Entwurfsoberfläche
 
 Wenn ein Knoten im **Arbeitsbereich** ausgewählt ist, wird er zur Entwurfs Oberfläche der Inhalts Modell Ansicht hinzugefügt, auf der Sie die Details des Knotens anzeigen können.
 
@@ -45,7 +45,7 @@ Die Breadcrumb-Leiste am unteren Rand der Inhaltsmodellansicht zeigt an, wo sich
 
 Wenn Sie auf der Entwurfs Oberfläche oder im **Arbeitsbereich** mit der rechten Maustaste auf ein Element klicken, wird ein Kontextmenü angezeigt. In der folgenden Tabelle werden die Optionen beschrieben, die für die Entwurfsoberfläche der Inhaltsmodellansicht verfügbar sind.
 
-|Option|Beschreibung|
+|-Option|Beschreibung|
 |-|-----------------|
 |**Im XML-Schema-Explorer anzeigen**|Legt den Fokus auf den Schema-Explorer und hebt den Schemasetknoten hervor.|
 |**In Diagramm Ansicht anzeigen**|Wechselt zur Diagrammansicht.|
@@ -57,7 +57,7 @@ Wenn Sie auf der Entwurfs Oberfläche oder im **Arbeitsbereich** mit der rechten
 
 In der folgenden Tabelle werden die Optionen beschrieben, die für den **Arbeitsbereich** verfügbar sind.
 
-|Option|Beschreibung|
+|-Option|Beschreibung|
 |-|-----------------|
 |**Im XML-Schema-Explorer anzeigen**|Legt den Fokus auf den Schema-Explorer und hebt den Schemasetknoten hervor.|
 |**In Diagramm Ansicht anzeigen**|Wechselt zur Diagrammansicht.|
@@ -65,11 +65,11 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für den **Arbeits
 |**Aus Arbeitsbereich entfernen**|Entfernt ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Generieren von Beispiel-XML**|Ist nur für globale Elemente verfügbar. Generiert eine Beispiel-XML-Datei für das globale Element.|
-|**Alle auswählen**|Wählt alle Knoten im **Arbeitsbereich** aus.|
+|**Alles markieren**|Wählt alle Knoten im **Arbeitsbereich** aus.|
 |**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten im XML-Editor enthält. Das Element, das im XML- **Schema-Explorer** ausgewählt ist, wird auch im XML-Editor ausgewählt.|
 |**Eigenschaftenfenster**|Öffnet das **Eigenschaften** Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
-## <a name="properties-window"></a>Eigenschaftenfenster
+## <a name="properties-window"></a>Fenster Eigenschaften
 
 Verwenden Sie das Kontextmenü (Kontextmenü), um das Fenster **Eigenschaften** zu öffnen. Standardmäßig wird das Fenster **Eigenschaften** in der unteren rechten Ecke von Visual Studio angezeigt. Wenn Sie auf einen Knoten klicken, der in der Inhalts Modell Ansicht gerendert wird, werden die Eigenschaften dieses Knotens im **Eigenschaften** Fenster angezeigt.
 
@@ -79,11 +79,11 @@ Die folgenden XSD-Designer-Symbolleistenschaltflächen sind aktiviert, wenn die 
 
 ![Symbolleiste für XML-Schema-Designer](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
-|Option|Beschreibung|
+|-Option|Beschreibung|
 |-|-----------------|
-|**Start Ansicht anzeigen**|Wechselt zur [Start Ansicht](../xml-tools/start-view.md). Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG** +**1**.|
-|**Inhalts Modell Ansicht anzeigen**|Wechselt zur [Inhalts Modell Ansicht](../xml-tools/content-model-view.md). Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG** +**2**.|
-|**Diagramm Ansicht anzeigen**|Wechselt zur [Diagramm Ansicht](../xml-tools/graph-view.md). Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG** +**3**.|
+|**Start Ansicht anzeigen**|Wechselt zur [Start Ansicht](../xml-tools/start-view.md). Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG**+**1**.|
+|**Inhalts Modell Ansicht anzeigen**|Wechselt zur [Inhalts Modell Ansicht](../xml-tools/content-model-view.md). Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG**+**2**.|
+|**Diagramm Ansicht anzeigen**|Wechselt zur [Diagramm Ansicht](../xml-tools/graph-view.md). Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG**+**3**.|
 |**Arbeitsbereich löschen**|Löscht den Arbeitsbereich und die Entwurfsoberfläche.|
 |**Aus Arbeitsbereich entfernen**|Entfernt ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|

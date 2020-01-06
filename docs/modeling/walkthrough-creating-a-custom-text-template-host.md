@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666974"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593537"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 
@@ -35,7 +35,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 - Testen des benutzerdefinierten Hosts
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
@@ -51,9 +51,9 @@ In dieser exemplarischen Vorgehensweise erstellen Sie einen benutzerdefinierten 
 
 2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
-   - **Microsoft. VisualStudio. TextTemplating. \*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   - **Microsoft. VisualStudio. TextTemplating. Interfaces. 10.0 und spätere Versionen**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**
 
 3. Ersetzen Sie den Code in der Datei "Program.cs" oder "Module1.vb" durch folgenden Code:
 
@@ -730,7 +730,7 @@ Zum Testen des benutzerdefinierten Hosts schreiben Sie eine Textvorlage. Anschli
 
      Sie können einen beliebigen Text-Editor (z. B. Editor) zum Erstellen der Datei verwenden.
 
-2. Fügen Sie der Datei die folgende Zeile hinzu:
+2. Fügen Sie dieser Datei Folgendes hinzu:
 
     > [!NOTE]
     > Die Programmiersprache der Textvorlage muss nicht mit der Sprache des benutzerdefinierten Hosts identisch sein.
@@ -781,7 +781,7 @@ Zum Testen des benutzerdefinierten Hosts schreiben Sie eine Textvorlage. Anschli
 
 2. Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.
 
-     Beispiel:
+     Geben Sie z. B. Folgendes ein:
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
@@ -792,7 +792,7 @@ Zum Testen des benutzerdefinierten Hosts schreiben Sie eine Textvorlage. Anschli
 
 4. Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.
 
-     Beispiel:
+     Geben Sie z. B. Folgendes ein:
 
      `C:\<YOUR PATH>TestTemplate.tt`
 

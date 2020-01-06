@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658410"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590240"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 
@@ -48,7 +48,7 @@ Ein Anforderungsmodell bietet den größten Vorteil, wenn Sie es für die Ausric
 
 Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede Ansicht bietet eine bestimmte Art von Informationen.  Wenn Sie diese Ansichten erstellen, empfiehlt es sich, häufig zwischen ihnen zu wechseln. Sie können bei jeder Ansicht starten.
 
-|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|Bereich|
+|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|Abschnitt|
 |-|-|-|
 |Konzeptionelles Klassendiagramm|Glossar von Typen, die zum Beschreiben der Anforderungen verwendet werden; die auf der Benutzeroberfläche des Systems sichtbaren Typen.||
 |Zusätzliche Dokumente oder Arbeitselemente|Kriterien für die Leistung, Sicherheit, Nutzbarkeit und Zuverlässigkeit|[Beschreiben von Servicequalitätsanforderungen](#QoSRequirements)|
@@ -72,13 +72,13 @@ Beachten Sie, dass hier zu entscheiden ist, wie Sie die Anforderungen definieren
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
-|Thema|Lesen|
+|Thema|Siehe|
 |-|-|
 |Entwickeln von Code, der Geschäftsregeln entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören Folgende:
+Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Dazu gehören:
 
 - Leistung
 
@@ -88,7 +88,7 @@ Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören F
 
 - Zuverlässigkeit
 
-- Stabilität
+- Robustheit
 
 Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter den Titeln von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:
 

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981248"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593485"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
-Eine Textvorlage enthält den Text, der aus ihr generiert wird. Eine Vorlage, die eine Webseite erstellt, enthält z. b. "\<html >..." und alle anderen Standardteile einer HTML-Seite. In die Vorlage eingefügt werden *Kontroll Blöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
+Eine Textvorlage enthält den Text, der aus ihr generiert wird. Eine Vorlage, die eine Webseite erstellt, enthält z. b. "\<HTML->..." und alle anderen Standardteile einer HTML-Seite. In die Vorlage eingefügt werden *Kontroll Blöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
 
  Diese Struktur vereinfacht das Entwickeln einer Vorlage, da Sie mit einem Prototyp der generierten Datei beginnen und nach und nach Kontrollblöcke zum Verändern des Ergebnisses einfügen können.
 
@@ -195,7 +195,7 @@ private void WriteSquareLine(int i)
 
  Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Namespaces
+### <a name="namespaces"></a>-Namespaces
  Die import-Anweisung entspricht der `using`-Klausel in C# bzw. der `imports`-Klausel in Visual Basic. Sie ermöglicht es Ihnen, ohne einen vollqualifizierten Namen auf Typen im Code zu verweisen:
 
 ```
@@ -238,7 +238,7 @@ private void WriteSquareLine(int i)
 
  **Laden Sie eine Datei als Navigier bares Modell**. Eine effektivere Methode besteht darin, die Daten als ein Modell zu lesen, durch das der Textvorlagencode navigieren kann. Sie können z. B. eine XML-Datei laden und mit XPath-Ausdrücken darin navigieren. Sie können auch " [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) " verwenden, um einen Satz von Klassen zu erstellen, mit denen Sie die XML-Daten lesen können.
 
- **Bearbeiten Sie die Modelldatei in einem Diagramm oder Formular.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] stellt Tools bereit, mit denen Sie ein Modell als Diagramm oder Windows Form bearbeiten können. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. Die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] erstellen auch einen Satz stark typisierter Klassen, die die Struktur des Modells wiedergeben. Weitere Informationen finden Sie unter [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Bearbeiten Sie die Modelldatei in einem Diagramm oder Formular.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] stellt Tools bereit, mit denen Sie ein Modell als Diagramm oder Windows Form bearbeiten können. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] erstellt auch einen Satz stark typisierter Klassen, die die Struktur des Modells widerspiegeln. Weitere Informationen finden Sie unter [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Relative Dateipfade in den Entwurfszeitvorlagen
  Wenn Sie in einer [Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md)auf eine Datei in einem Speicherort verweisen möchten, der relativ zur Textvorlage ist, verwenden Sie `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:
@@ -268,11 +268,11 @@ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. W
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Aufgabe|Topic|
+|Task|Topic|
 |-|-|
 |Schreiben einer Textvorlage.|[Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Generieren Sie Text mithilfe von Programmcode.|[Text Vorlagen Struktur](../modeling/writing-a-t4-text-template.md)|
-|Generieren von Dateien in einer Visual Studio-Projekt Mappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Generieren von Dateien in Visual Studio-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Ausführen von Textgenerierung außerhalb von Visual Studio.|[Generieren von Dateien mit dem Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|

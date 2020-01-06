@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648608"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586782"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 
@@ -51,10 +51,10 @@ Wenn Sie einen neuen TableAdapter aus der Toolbox ziehen, wenn die **DataSet-Des
 
 - Sie können auch vorhandene gespeicherte Prozeduren für die Befehle **Select**, **Insert**, **Update**und **Delete** des TableAdapter ausführen. Die gespeicherte Prozedur, die dem **Update** -Befehl zugewiesen ist, wird z. b. ausgeführt, wenn die `TableAdapter.Update()`-Methode aufgerufen wird.
 
-Ordnen Sie die Parameter der ausgewählten gespeicherten Prozedur den entsprechenden Spalten in der Datentabelle zu. Wenn Ihre gespeicherte Prozedur z. b. einen Parameter mit dem Namen `@CompanyName` akzeptiert, der an die Spalte `CompanyName` in der Tabelle übergeben wird, legen Sie die **Quell Spalte** des Parameters `@CompanyName` auf `CompanyName` fest.
+Ordnen Sie die Parameter der ausgewählten gespeicherten Prozedur den entsprechenden Spalten in der Datentabelle zu. Wenn Ihre gespeicherte Prozedur z. b. einen Parameter mit dem Namen `@CompanyName` akzeptiert, der an die Spalte `CompanyName` in der Tabelle übergeben wird, legen Sie die **Quell Spalte** des Parameters `@CompanyName` auf `CompanyName`fest.
 
 > [!NOTE]
-> Die gespeicherte Prozedur, die dem SELECT-Befehl zugewiesen ist, wird ausgeführt, indem Sie die-Methode des TableAdapter aufrufen, den Sie im nächsten Schritt des Assistenten benennen. Die Standardmethode ist `Fill`, sodass der Code, der normalerweise zum Ausführen der SELECT-Prozedur verwendet wird, `TableAdapter.Fill(tableName)` ist. Wenn Sie den Standardnamen von `Fill` ändern, ersetzen Sie `Fill` durch den Namen, den Sie zuweisen, und ersetzen Sie "TableAdapter" durch den tatsächlichen Namen des TableAdapters (z. b. `CustomersTableAdapter`).
+> Die gespeicherte Prozedur, die dem SELECT-Befehl zugewiesen ist, wird ausgeführt, indem Sie die-Methode des TableAdapter aufrufen, den Sie im nächsten Schritt des Assistenten benennen. Die Standardmethode ist `Fill`, sodass der Code, der normalerweise zum Ausführen der SELECT-Prozedur verwendet wird, `TableAdapter.Fill(tableName)`ist. Wenn Sie den Standardnamen von `Fill`ändern, ersetzen Sie `Fill` durch den Namen, den Sie zuweisen, und ersetzen Sie "TableAdapter" durch den tatsächlichen Namen des TableAdapters (z. b. `CustomersTableAdapter`).
 
 - Wenn Sie die Option **Methoden erstellen, um Updates direkt an die Datenbank zu senden** auswählen, entspricht dies dem Festlegen der `GenerateDBDirectMethods`-Eigenschaft auf true. Die Option ist nicht verfügbar, wenn die ursprüngliche SQL-Anweisung nicht genügend Informationen bereitstellt oder die Abfrage keine aktualisierbare Abfrage darstellt. Diese Situation kann z. b. bei Verknüpfungs **Abfragen und Abfragen eintreten,** die einen einzelnen (skalaren) Wert zurückgeben.
 
@@ -74,7 +74,7 @@ Alle Änderungen, die Sie an der Haupt `Fill` Methode des TableAdapter vornehmen
 
 Mit dem Konfigurations-Assistenten für TableAdapter-Abfragen können Sie weitere Abfragen für den TableAdapter erstellen und bearbeiten. Diese zusätzlichen Abfragen müssen dem Tabellen Schema entsprechen, es sei denn, Sie geben einen Skalarwert zurück.  Jede zusätzliche Abfrage hat einen Namen, den Sie angeben.
 
-Im folgenden Beispiel wird gezeigt, wie Sie eine zusätzliche Abfrage namens `FillByCity` aufzurufen:
+Im folgenden Beispiel wird gezeigt, wie Sie eine zusätzliche Abfrage namens `FillByCity`aufzurufen:
 
 `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`
 
@@ -82,7 +82,7 @@ Im folgenden Beispiel wird gezeigt, wie Sie eine zusätzliche Abfrage namens `Fi
 
 1. Öffnen Sie das Dataset im **DataSet-Designer**.
 
-2. Wenn Sie eine neue Abfrage erstellen, ziehen Sie ein **Abfrage** Objekt von der Registerkarte **DataSet** der **Toolbox** auf eine <xref:System.Data.DataTable>, oder wählen Sie im Kontextmenü von TableAdapter die Option **Abfrage hinzufügen** aus. Sie können ein **Abfrage** Objekt auch in einen leeren Bereich der **DataSet-Designer**ziehen, wodurch ein TableAdapter ohne zugeordnete <xref:System.Data.DataTable> erstellt wird. Diese Abfragen können nur einzelne (skalare) Werte zurückgeben oder Update-, INSERT-oder DELETE-Befehle für die Datenbank ausführen.
+2. Wenn Sie eine neue Abfrage erstellen, ziehen Sie ein **Abfrage** Objekt von der Registerkarte **DataSet** der **Toolbox** auf eine <xref:System.Data.DataTable>, oder wählen Sie im Kontextmenü von TableAdapter die Option **Abfrage hinzufügen** aus. Sie können ein **Abfrage** Objekt auch in einen leeren Bereich der **DataSet-Designer**ziehen, wodurch ein TableAdapter ohne zugeordnete <xref:System.Data.DataTable>erstellt wird. Diese Abfragen können nur einzelne (skalare) Werte zurückgeben oder Update-, INSERT-oder DELETE-Befehle für die Datenbank ausführen.
 
 3. Wählen oder erstellen Sie auf dem Bildschirm **Wählen Sie Ihre Datenverbindung** aus die Verbindung, die von der Abfrage verwendet wird.
 

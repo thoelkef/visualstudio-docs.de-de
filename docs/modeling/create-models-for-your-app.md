@@ -16,17 +16,17 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984432"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590526"
 ---
 # <a name="create-models-for-your-app"></a>Erstellen von Modellen für Ihre App
 
@@ -44,7 +44,7 @@ Um die Architektur eines Systems oder von vorhandenem Code visuell darzustellen,
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
-|**Sonder**|**Aufgabe**|
+|**Thema**|**Task**|
 |-|-|
 |[Visualisieren von Code](../modeling/visualize-code.md)|Erstellen Sie Code Maps und Abhängigkeits Diagramme, um den unbekannten Code besser zu verstehen.|
 |[Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)|Verwenden Sie Modelle, um die Anforderungen der Benutzer zu verdeutlichen und zu kommunizieren.|

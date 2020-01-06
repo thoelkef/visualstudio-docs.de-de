@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648069"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586002"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen einer Datentabelle in der DataSet-Designer
 
@@ -25,7 +25,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Da
 
 ## <a name="create-a-new-windows-forms-application"></a>Erstellen einer neuen Windows Forms-Anwendung
 
-1. Wählen Sie in Visual Studio im Menü **Datei** die Option **neu**  > **Projekt**aus.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
 2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
 
@@ -53,7 +53,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Da
 
      Eine Tabelle mit dem Namen **DataTable1** wird dem DataSet hinzugefügt.
 
-2. Klicken Sie auf die Titelleiste von **DataTable1** , und benennen Sie Sie `Music` um.
+2. Klicken Sie auf die Titelleiste von **DataTable1** , und benennen Sie Sie `Music`um.
 
 ## <a name="add-columns-to-the-datatable"></a>Hinzufügen von Spalten zur Datentabelle
 

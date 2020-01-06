@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658361"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566175"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 
@@ -55,7 +55,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
 
  `henry.Name = "Henry VIII";`
 
- Wenn in der DSL-Definition die **Art** einer Eigenschaft **berechnet**wird, können Sie Sie nicht festlegen. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).
+ Wenn in der DSL-Definition die **Art** einer Eigenschaft **berechnet**wird, können Sie Sie nicht festlegen. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Beziehungen
  Domänen Beziehungen, die Sie in der DSL-Definition definieren, werden zu Paaren von Eigenschaften, eine für die Klasse an jedem Ende der Beziehung. Die Namen der Eigenschaften werden im DslDefinition-Diagramm als Bezeichnungen für die Rollen auf den einzelnen Seiten der Beziehung angezeigt. Abhängig von der Multiplizität der Rolle ist der Typ der Eigenschaft entweder die Klasse am anderen Ende der Beziehung oder eine Auflistung dieser Klasse.
@@ -64,7 +64,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
 
  `FamilyTreeModel ftree = henry.FamilyTreeModel;`
 
- Die Eigenschaften an umgekehrten Enden einer Beziehung sind immer gegenseitig. Wenn ein Link erstellt oder gelöscht wird, werden die Rollen Eigenschaften für beide Elemente aktualisiert. Der folgende Ausdruck (der die Erweiterungen von `System.Linq` verwendet) gilt immer für die Beziehung "parametershavechildren" im Beispiel:
+ Die Eigenschaften an umgekehrten Enden einer Beziehung sind immer gegenseitig. Wenn ein Link erstellt oder gelöscht wird, werden die Rollen Eigenschaften für beide Elemente aktualisiert. Der folgende Ausdruck (der die Erweiterungen von `System.Linq`verwendet) gilt immer für die Beziehung "parametershavechildren" im Beispiel:
 
  `(Person p) => p.Children.All(child => child.Parents.Contains(p))`
 
@@ -80,7 +80,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
 
  `link == null || link.Parent == henry && link.Child == edward`
 
- Standardmäßig darf nicht mehr als eine Instanz einer Beziehung ein paar von Modellelementen verknüpfen. Wenn in der DSL-Definition jedoch das `Allow Duplicates`-Flag für die Beziehung true ist, können mehrere Links vorhanden sein, und Sie müssen `GetLinks` verwenden:
+ Standardmäßig darf nicht mehr als eine Instanz einer Beziehung ein paar von Modellelementen verknüpfen. Wenn in der DSL-Definition jedoch das `Allow Duplicates`-Flag für die Beziehung true ist, können mehrere Links vorhanden sein, und Sie müssen `GetLinks`verwenden:
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
@@ -227,17 +227,17 @@ using (Transaction t =
 
 ## <a name="deleteelements"></a>Löschen von Elementen
 
-Löschen Sie ein Element, indem Sie `Delete()` aufrufen:
+Löschen Sie ein Element, indem Sie `Delete()`aufrufen:
 
 `henry.Delete();`
 
 Mit diesem Vorgang wird auch Folgendes gelöscht:
 
-- Beziehungslinks zu und aus dem Element. @No__t_0 enthalten beispielsweise `henry` nicht mehr.
+- Beziehungslinks zu und aus dem Element. `edward.Parents` enthalten beispielsweise `henry`nicht mehr.
 
 - Elemente bei Rollen, für die das `PropagatesDelete`-Flag "true" ist. Beispielsweise wird die Form, in der das Element angezeigt wird, gelöscht.
 
-Standardmäßig hat jede Embedding Relationship für die Zielrolle `PropagatesDelete` true. Durch das Löschen `henry` werden die `familyTree` nicht gelöscht, aber `familyTree.Delete()` alle `Persons` löschen.
+Standardmäßig hat jede Embedding Relationship für die Zielrolle `PropagatesDelete` true. Durch das Löschen `henry` werden die `familyTree`nicht gelöscht, aber `familyTree.Delete()` alle `Persons`löschen.
 
 Standardmäßig ist `PropagatesDelete` für die Rollen von Verweis Beziehungen nicht wahr.
 
@@ -262,7 +262,7 @@ In einigen Fällen wird das Löschen durch das vorhanden sein einer Sperre verhi
 
  Diese drei Methoden haben die gleiche Wirkung. Sie müssen nur eine davon verwenden.
 
- Wenn die Rolle eine Multiplizität von 0.. 1 oder 1.. 1 hat, können Sie Sie auf `null` oder auf einen anderen Wert festlegen:
+ Wenn die Rolle eine Multiplizität von 0.. 1 oder 1.. 1 hat, können Sie Sie auf `null`oder auf einen anderen Wert festlegen:
 
  `edward.FamilyTreeModel = null;`//oder:
 
@@ -285,13 +285,13 @@ In einigen Fällen wird das Löschen durch das vorhanden sein einer Sperre verhi
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a>Schleusen
- Ihre Änderungen werden möglicherweise durch eine Sperre verhindert. Sperren können für einzelne Elemente, für Partitionen und für den Speicher festgelegt werden. Wenn eine dieser Ebenen eine Sperre aufweist, die die Art der Änderung verhindert, die Sie vornehmen möchten, wird möglicherweise eine Ausnahme ausgelöst, wenn Sie versuchen, Sie zu ändern. Sie können ermitteln, ob Sperren mithilfe des-Elements festgelegt werden. Getlocks (), bei dem es sich um eine Erweiterungsmethode handelt, die im-Namespace <xref:Microsoft.VisualStudio.Modeling.Immutability> definiert ist.
+## <a name="locks"></a> Locks
+ Ihre Änderungen werden möglicherweise durch eine Sperre verhindert. Sperren können für einzelne Elemente, für Partitionen und für den Speicher festgelegt werden. Wenn eine dieser Ebenen eine Sperre aufweist, die die Art der Änderung verhindert, die Sie vornehmen möchten, wird möglicherweise eine Ausnahme ausgelöst, wenn Sie versuchen, Sie zu ändern. Sie können ermitteln, ob Sperren mithilfe des-Elements festgelegt werden. Getlocks (), bei dem es sich um eine Erweiterungsmethode handelt, die im-Namespace <xref:Microsoft.VisualStudio.Modeling.Immutability>definiert ist.
 
  Weitere Informationen finden Sie unter [Definieren einer Sperr Richtlinie zum Erstellen](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)von schreibgeschützten Segmenten.
 
 ## <a name="copy"></a>Kopieren und Einfügen
- Sie können Elemente oder Gruppen von Elementen in eine <xref:System.Windows.Forms.IDataObject> kopieren:
+ Sie können Elemente oder Gruppen von Elementen in eine <xref:System.Windows.Forms.IDataObject>kopieren:
 
 ```csharp
 Person person = personShape.ModelElement as Person;
@@ -313,7 +313,7 @@ using (Transaction t = targetDiagram.Store.
 }
 ```
 
- `Merge ()` können entweder eine `PresentationElement` oder eine `ModelElement` akzeptieren. Wenn Sie einen `PresentationElement` angeben, können Sie auch eine Position im Ziel Diagramm als dritten Parameter angeben.
+ `Merge ()` können entweder eine `PresentationElement` oder eine `ModelElement`akzeptieren. Wenn Sie einen `PresentationElement`angeben, können Sie auch eine Position im Ziel Diagramm als dritten Parameter angeben.
 
 ## <a name="diagrams"></a>Navigieren in und Aktualisieren von Diagrammen
  In einer DSL ist das Domänen Modellelement, das ein Konzept wie Person oder Song darstellt, getrennt vom Shape-Element, das die Darstellung des Diagramms darstellt. Das Domänen Modellelement speichert die wichtigen Eigenschaften und Beziehungen der Konzepte. Das Shape-Element speichert die Größe, Position und Farbe der Objekt Ansicht im Diagramm sowie das Layout der Komponenten Teile.
@@ -401,7 +401,7 @@ FamilyTreeDiagram diagram =
 
  ------- <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>
 
- ------- *yourshape*
+ ------- *YourShape*
 
  ----- <xref:Microsoft.VisualStudio.Modeling.Diagrams.LinkShape>
 
@@ -428,7 +428,7 @@ FamilyTreeDiagram diagram =
 
 Wenn Sie ein Element erstellen und es mit der Struktur der Einbettungs Beziehungen verknüpfen, wird automatisch eine Form erstellt und zugeordnet. Dies erfolgt durch die "Fixup"-Regeln, die am Ende der Transaktion ausgeführt werden. Die Form wird jedoch an einem automatisch zugewiesenen Speicherort angezeigt, und die Form, Farbe und andere Features haben Standardwerte. Um zu steuern, wie die Form erstellt wird, können Sie die Merge-Funktion verwenden. Sie müssen zunächst die Elemente, die Sie hinzufügen möchten, zu einer Element Gruppe hinzufügen und dann die Gruppe in das Diagramm zusammenführen.
 
-Diese Methode:
+Eigenschaften dieser Methode:
 
 - Legt den Namen fest, wenn Sie eine Eigenschaft als Elementnamen zugewiesen haben.
 
@@ -469,7 +469,7 @@ partial class MyDiagram
 }
 ```
 
- Wenn Sie mehr als eine Form angeben, legen Sie ihre relativen Positionen mithilfe der `AbsoluteBounds` fest.
+ Wenn Sie mehr als eine Form angeben, legen Sie ihre relativen Positionen mithilfe der `AbsoluteBounds`fest.
 
  Mit dieser Methode können Sie auch die Farbe und andere verfügbare Eigenschaften von Connectors festlegen.
 

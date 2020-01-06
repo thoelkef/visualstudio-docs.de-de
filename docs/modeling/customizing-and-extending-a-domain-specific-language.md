@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984272"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597164"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 
@@ -41,7 +41,7 @@ Das Visual Studio-Modellierungs-und-Visualisierungs-SDK (vmsdk) bietet mehrere E
 |Festlegen eines Hintergrund Bilds für beliebige Formen|Überschreiben Sie initializeingestanceresources (), um ein verankertes ImageField hinzuzufügen.|
 |Formen in beliebiger tiefe schachteln|Richten Sie einen rekursiven Einbettungs Baum ein. Definiert boundsrules, um die Formen zu enthalten.|
 |Anfügen von Connectors an festem Punkt an der Grenze eines Elements.|Definieren Sie eingebettete Terminal Elemente, die durch kleine Ports im Diagramm dargestellt werden. Verwenden Sie boundsrules, um die Ports zu korrigieren. Weitere Informationen finden Sie im Beispiel für das Verbindungs Diagramm unter [Visualisierung und modellieren von SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)|
-|Textfeld zeigt einen Wert an, der von anderen Werten abgeleitet ist.|Ordnen Sie den Text Decorator einer berechneten oder benutzerdefinierten Speicher Domänen Eigenschaft zu. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).|
+|Textfeld zeigt einen Wert an, der von anderen Werten abgeleitet ist.|Ordnen Sie den Text Decorator einer berechneten oder benutzerdefinierten Speicher Domänen Eigenschaft zu. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).|
 |Weitergeben von Änderungen zwischen Modellelementen oder zwischen Formen|Weitere Informationen finden Sie [unter Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).|
 |Weitergeben von Änderungen an Ressourcen, z. b. anderen Visual Studio-Erweiterungen außerhalb des Stores.|Weitere Informationen finden Sie [unter Ereignishandler weitergeben von Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |Im Eigenschaften Fenster werden Eigenschaften eines verknüpften Elements angezeigt.|Einrichten der Eigenschaften Weiterleitung. Weitere Informationen finden Sie [unter Anpassen des Fensters "Eigenschaften](../modeling/customizing-the-properties-window.md)".|
@@ -51,7 +51,7 @@ Das Visual Studio-Modellierungs-und-Visualisierungs-SDK (vmsdk) bietet mehrere E
 |Kopieren, Ausschneiden und Einfügen aktivieren|Legen Sie die Eigenschaft **Kopiervorgang aktivieren** des Knotens **Editor** im DSL-Explorer fest.|
 |Kopieren Sie Verweis Links und ihre Ziele, wenn ein Element kopiert wird. Kopieren Sie beispielsweise Kommentare, die an ein Element angefügt sind.|Legen Sie die Eigenschaft für die Weiterleitungs **Kopie** der Quell Rolle fest (dargestellt durch die Linie auf einer Seite der Domänen Beziehung im DSL-Definitions Diagramm).<br /><br /> Schreiben Sie Code, um processoncopy zu überschreiben, um komplexere Effekte zu erzielen.<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
 |Löschen, wiederherstellen oder Verknüpfen verwandter Elemente, wenn ein Element gelöscht wird.|Legen Sie den Wert " **Delete** " für eine Beziehungs Rolle fest. Wenn Sie komplexere Effekte haben, überschreiben Sie `ShouldVisitRelationship`-und `ShouldVisitRolePlayer` Methoden in der `MyDslDeleteClosure`-Klasse, die in **DomainModel.cs**definiert ist.|
-|Behalten Sie das Layout und die Darstellung von Formen beim Kopieren und ziehen-ablegen bei.|Fügen Sie die Formen und Connectors der kopierten `ElementGroupPrototype` hinzu. Die bequemste Methode zum Überschreiben ist `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
+|Behalten Sie das Layout und die Darstellung von Formen beim Kopieren und ziehen-ablegen bei.|Fügen Sie die Formen und Connectors der kopierten `ElementGroupPrototype`hinzu. Die bequemste Methode zum Überschreiben ist `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
 |Fügen Sie Formen an einer ausgewählten Stelle ein, beispielsweise an der aktuelle Cursorposition.|Überschreiben Sie `ClipboardCommandSet.ProcessOnCopy()`, um die standortspezifische Version von zu verwenden `ElementOperations.Merge().` siehe [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md).|
 |Zusätzliche Verknüpfungen beim Einfügen erstellen|Überschreiben von clipboardcommandset. processonpastecommand ()|
 |Aktivieren von Drag & Drop aus diesem Diagramm, anderen DSLs-und Windows-Elementen|Weitere Informationen finden [Sie unter Gewusst wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) .|

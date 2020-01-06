@@ -2,24 +2,22 @@
 title: Datenzugriff und-Tools
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807049"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587094"
 ---
 # <a name="access-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
 
@@ -67,18 +65,18 @@ Die meisten anderen in diesem Abschnitt aufgeführten SQL-und nosql-Daten Bankpr
 
 ::: moniker range="vs-2017"
 
-Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio **(Extras**  > **nuget-Paket-Manager**  > **Verwalten von nuget-Paketen für die Lösung**) erkunden. Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote in der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu **Tools**  > **Erweiterungen und Updates** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio **(Extras** > **nuget-Paket-Manager** > **Verwalten von nuget-Paketen für die Lösung**) erkunden. Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote in der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu **Tools** > **Erweiterungen und Updates** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio **(Extras**  > **nuget-Paket-Manager**  > **Verwalten von nuget-Paketen für die Lösung**) erkunden. Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu **Erweiterungen** navigieren  > **Erweiterungen verwalten** und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio **(Extras** > **nuget-Paket-Manager** > **Verwalten von nuget-Paketen für die Lösung**) erkunden. Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu **Erweiterungen** navigieren > **Erweiterungen verwalten** und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 > [!NOTE]
-> Der erweiterte Support für SQL Server 2005 wurde am 12. April 2016. Es gibt keine Garantie dafür, dass Data Tools in Visual Studio 2015 und höher weiterhin mit SQL Server 2005 funktionieren. Weitere Informationen finden Sie in der [Ankündigung zum Ende des Supports für SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Der erweiterte Support für SQL Server 2005 wurde am 12. April 2016 eingestellt. Es gibt keine Garantie dafür, dass Data Tools in Visual Studio 2015 und höher weiterhin mit SQL Server 2005 funktionieren. Weitere Informationen finden Sie in der [Ankündigung zum Ende des Supports für SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>.NET-Sprachen
 
@@ -106,7 +104,7 @@ In .net haben Sie drei Möglichkeiten, um Daten im Arbeitsspeicher zu modelliere
 
 [DataSets](../data-tools/dataset-tools-in-visual-studio.md) Die älteste der drei Modellierungs Technologien. Es wurde hauptsächlich für die schnelle Entwicklung von "Forms over Data"-Anwendungen entwickelt, bei denen keine großen Datenmengen verarbeitet werden oder komplexe Abfragen oder Transformationen ausgeführt werden. Ein DataSet-Objekt besteht aus Datable-und DataRow-Objekten, die SQL-Datenbankobjekten wesentlich mehr als .NET-Objekte ähneln. Für relativ einfache Anwendungen, die auf SQL-Datenquellen basieren, sind Datasets möglicherweise trotzdem eine gute Wahl.
 
-Es ist nicht erforderlich, eine dieser Technologien zu verwenden. In einigen Szenarien, insbesondere bei kritischer Leistung, können Sie einfach ein DataReader-Objekt verwenden, um Daten aus der Datenbank zu lesen und die Werte, die Sie benötigen, in ein Auflistungs Objekt, z. b. Listen \<T >, zu kopieren.
+Es ist nicht erforderlich, eine dieser Technologien zu verwenden. In einigen Szenarien, insbesondere bei kritischer Leistung, können Sie einfach ein DataReader-Objekt verwenden, um Daten aus der Datenbank zu lesen und die Werte, die Sie benötigen, in ein Auflistungs Objekt, z. b. Listen\<t >, zu kopieren.
 
 ## <a name="native-c"></a>Systemeigenes C++
 
@@ -116,7 +114,7 @@ C++Programme, die Rest-Dienste nutzen, können das [ C++ Rest-SDK](https://githu
 
 C++Programme, die mit Microsoft Azure Storage arbeiten, können den [Microsoft Azure Storage-Client](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)verwenden.
 
-Datenmodellierung &mdash;Visual Studio stellt keine ORM-Ebene für C++bereit. [ODB](https://www.codesynthesis.com/products/odb/) ist eine beliebte Open Source-ORM für C++.
+Datenmodellierung&mdash;Visual Studio stellt keine ORM-Ebene für C++bereit. [ODB](https://www.codesynthesis.com/products/odb/) ist eine beliebte Open Source-ORM für C++.
 
 Weitere Informationen zum Herstellen einer Verbindung mit Daten C++ Banken aus apps finden Sie unter [Visual Studio C++-Daten Tools für ](../data-tools/visual-studio-data-tools-for-cpp.md). Weitere Informationen zu Legacy Technologien für C++ den visuellen Datenzugriff finden Sie unter [Datenzugriff](/cpp/data/data-access-in-cpp).
 
@@ -134,24 +132,24 @@ Installieren [der Python-Unterstützung in Visual Studio](../python/overview-of-
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-Die [Microsoft Ki-Plattform](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) &mdash;Provides eine Einführung in die Microsoft Intelligent Cloud, einschließlich der Cortana Analytics Suite und der Unterstützung für Internet der Dinge.
+Die [Microsoft Ki-Plattform](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;bietet eine Einführung in die Microsoft Intelligent Cloud, einschließlich Cortana Analytics Suite und Unterstützung für Internet der Dinge.
 
-[Microsoft Azure Storage](/azure/storage/) &mdash;Describes Azure Storage und das Erstellen von Anwendungen mithilfe von Azure-blobdateien,-Tabellen,-Warteschlangen und-Dateien.
+In [Microsoft Azure Storage](/azure/storage/)&mdash;werden Azure Storage beschrieben und Anwendungen mithilfe von Azure-blobdateien,-Tabellen,-Warteschlangen und-Dateien erstellt.
 
-[Azure SQL-Datenbank](/azure/sql-database/) &mdash;Describes, wie Sie eine Verbindung mit Azure SQL-Datenbank herstellen, einer relationalen Database as a Service.
+In der [Azure SQL-Datenbank](/azure/sql-database/)&mdash;wird beschrieben, wie Sie eine Verbindung mit Azure SQL-Datenbank, einem relationalen Database as a Service
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) &mdash;Describes Tools, die das Entwerfen, durchsuchen, testen und Bereitstellen von Daten verbundenen Anwendungen und Datenbanken vereinfachen.
+In [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;werden die Tools beschrieben, die das Entwerfen, durchsuchen, testen und Bereitstellen von Daten verbundenen Anwendungen und Datenbanken vereinfachen.
 
 [ADO.NET](/dotnet/framework/data/adonet/index)&mdash;Beschreibt die ADO.NET-Architektur und die Verwendung der ADO.NET-Klassen zum Verwalten von Anwendungsdaten und Interagieren mit Datenquellen und XML.
 
-[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes, wie Sie Daten Anwendungen erstellen, die es Entwicklern ermöglichen, anstelle einer relationalen Datenbank direkt mit einem konzeptionellen Modell zu programmieren.
+In [ADO.NET Entity Framework](/ef/ef6/)&mdash;wird beschrieben, wie Daten Anwendungen erstellt werden, mit denen Entwickler anstelle einer relationalen Datenbank direkt mit einem konzeptionellen Modell programmieren können.
 
 In [WCF Data Services 4,5](/dotnet/framework/data/wcf/index)&mdash;wird beschrieben, wie [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] zum Bereitstellen von Datendiensten im Internet oder in einem Intranet verwendet wird, das die [Open Data Protocol (odata)](https://www.odata.org/)implementiert.
 
-[Daten in Office-Lösungen](../vsto/data-in-office-solutions.md) &mdash;Contains Links zu Themen, in denen die Funktionsweise von Daten in Office-Lösungen erläutert wird. Dazu gehören Informationen über schemaorientierte Programmierung, Datenzwischenspeicherung und serverseitigen Datenzugriff.
+[Daten in Office](../vsto/data-in-office-solutions.md) -Projektmappen&mdash;enthalten Links zu Themen, in denen erläutert wird, wie Daten in Office-Lösungen funktionieren Dazu gehören Informationen über schemaorientierte Programmierung, Datenzwischenspeicherung und serverseitigen Datenzugriff.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) &mdash;Describes die Abfragefunktionen, die C# in und Visual Basic integriert sind, und das allgemeine Modell zum Abfragen relationaler Datenbanken, XML-Dokumente, Datasets und in-Memory-Auflistungen.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;beschreibt die in C# und Visual Basic integrierten Abfragefunktionen und das gängige Modell zum Abfragen relationaler Datenbanken, XML-Dokumente, Datasets und in-Memory-Auflistungen.
 
-[XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) &mdash;Discusses arbeiten mit XML-Daten, Debuggen von XSLT, .NET XML-Funktionen und der Architektur von XML Query.
+[XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;erläutert das Arbeiten mit XML-Daten, das Debuggen von XSLT, .NET XML-Funktionen und die Architektur von XML Query.
 
-[XML-Dokumente und-Daten](/dotnet/standard/data/xml/index) &mdash;Provides eine Übersicht zu einem umfassenden und integrierten Satz von Klassen, die mit XML-Dokumenten und-Daten in .net funktionieren.
+[XML-Dokumente und-Daten](/dotnet/standard/data/xml/index)&mdash;bietet einen Überblick über einen umfassenden und integrierten Satz von Klassen, die mit XML-Dokumenten und-Daten in .net funktionieren.

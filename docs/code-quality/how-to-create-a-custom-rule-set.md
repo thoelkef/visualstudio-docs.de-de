@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649507"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587549"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -24,7 +24,7 @@ Sie können einen benutzerdefinierten Regelsatz erstellen, um bestimmte Projekta
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Erstellen eines benutzerdefinierten Regelsatzes aus einem vorhandenen Regelsatz
 
-Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integrierten Regelsatz im **Regelsatz-Editor**öffnen. Von dort aus können Sie bestimmte Regeln hinzufügen oder entfernen, und Sie können die Aktion ändern, die auftritt, wenn eine Regel verletzt wird &mdash;for beispielsweise eine Warnung oder einen Fehler angezeigt wird.
+Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integrierten Regelsatz im **Regelsatz-Editor**öffnen. Von dort aus können Sie bestimmte Regeln hinzufügen oder entfernen, und Sie können die Aktion ändern, die auftritt, wenn eine Regel verletzt wird&mdash;z. b. eine Warnung oder einen Fehler anzeigen.
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
 
@@ -46,7 +46,7 @@ Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integriert
 
      \- oder -
 
-   - Wählen Sie **\<Browse >** aus, um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
+   - Wählen Sie **\<Durchsuchen >** aus, um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
 
 4. Wählen Sie **Öffnen** aus, um die Regeln im Regelsatz-Editor anzuzeigen.
 
@@ -57,7 +57,7 @@ Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integriert
 
 Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstellen:
 
-1. Wählen Sie **Datei**  > **neue**  > **Datei**aus, oder drücken Sie **STRG** +**N**.
+1. Wählen Sie **Datei** > **neue** > **Datei**aus, oder drücken Sie **STRG**+**N**.
 
 2. Wählen Sie im Dialogfeld **neue Datei** auf der linken Seite die Kategorie **Allgemein** aus, und wählen Sie dann **Code Analyse-Regelsatz**aus.
 
@@ -76,13 +76,13 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 ::: moniker range="vs-2017"
 
-3. Wählen Sie **\<Choose mehrerer Regelsätze** aus, > aus **diesen Regelsatz ausführen**.
+3. Wählen Sie **\<wählen Sie mehrere Regelsätze aus, > Wählen Sie** **diesen Regelsatz ausführen**aus.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Wählen Sie **\<Choose mehrerer Regelsätze** aus, die von **aktiven Regeln**> werden.
+3. Wählen Sie **\<wählen Sie mehrere Regelsätze** aus, > aus **aktiven Regeln**aus.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 - Wenn dieselbe Regel mindestens zwei Mal in einem Regelsatz mit *demselben* Schweregrad aufgelistet ist, wird im **Fehlerliste**möglicherweise die folgende Warnung angezeigt:
 
-   **CA0063: Fehler beim Laden der Regel Satz Datei ' \[your]. RuleSet ' oder einer der abhängigen Regel Satz Dateien. Die Datei entspricht nicht dem Regel Satz Schema.**
+   **CA0063: Fehler beim Laden der Regel Satz Datei "\[your]. RuleSet" oder einer der abhängigen Regel Satz Dateien. Die Datei entspricht nicht dem Regel Satz Schema.**
 
 - Wenn der Regelsatz mithilfe eines **include** -Tags einen untergeordneten Regelsatz enthält und die untergeordnete und übergeordnete Regel beide die gleiche Regel, aber unterschiedliche Schweregrade, enthält, hat der Schweregrad im übergeordneten Regelsatz Vorrang. Beispiel:
 
@@ -136,7 +136,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 ## <a name="name-and-description"></a>Name und Beschreibung
 
-Um den anzeigen Amen eines Regelsatzes zu ändern, der im Editor geöffnet ist, öffnen Sie das **Eigenschaften** Fenster, indem Sie auf der Menüleiste  > **Eigenschaften Fenster** **anzeigen** auswählen. Geben Sie den anzeigen Amen in das Feld **Name** ein. Sie können auch eine Beschreibung für den Regelsatz eingeben.
+Um den anzeigen Amen eines Regelsatzes zu ändern, der im Editor geöffnet ist, öffnen Sie das **Eigenschaften** Fenster, indem Sie auf der Menüleiste > **Eigenschaften Fenster** **anzeigen** auswählen. Geben Sie den anzeigen Amen in das Feld **Name** ein. Sie können auch eine Beschreibung für den Regelsatz eingeben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

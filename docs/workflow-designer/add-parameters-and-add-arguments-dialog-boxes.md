@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650755"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597125"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dialogfelder Parameter hinzufügen und Argumente hinzufügen
 
@@ -23,7 +23,7 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 
 |||
 |-|-|
-|**Orientierung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|
+|**Richtung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|
 |**Type**|Der Typname des neuen Parameters.|
 |**Wert**|Ein Visual Basic Ausdruck, der verwendet wird, um dem neuen Parameter einen Standardwert zuzuweisen.|
 
@@ -32,6 +32,6 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 |||
 |-|-|
 |**Name**|Der Name des Arguments.|
-|**Orientierung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|
+|**Richtung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|
 |**Type**|Der Typname des neuen Arguments.|
 |**Wert**|Der für diese Instanz des Delegatarguments zu verwendende Wert.|

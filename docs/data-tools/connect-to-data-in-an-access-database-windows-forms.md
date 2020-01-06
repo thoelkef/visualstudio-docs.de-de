@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924516"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586860"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank
 
 Mithilfe von Visual Studio können Sie eine Verbindung mit einer Access-Datenbank (entweder eine *MDB* -Datei oder eine *ACCDB* -Datei) herstellen. Nachdem Sie die Verbindung definiert haben, werden die Daten im Fenster **Datenquellen** angezeigt. Von dort aus können Sie Tabellen oder Sichten auf die Entwurfs Oberfläche ziehen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Um diese Prozeduren verwenden zu können, benötigen Sie ein Windows Forms-oder WPF-Projekt und entweder eine Access-Datenbank ( *. accdb* -Datei) oder eine Access 2000-2003-Datenbank (*MDB* -Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
 
@@ -33,7 +33,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken he
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster**  > **Datenquellen**aus.
+2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** > **Datenquellen**aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit mit Access 200
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Wählen Sie im Menü **Ansicht** die Option **Weitere Fenster**  > **Datenquellen**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** > **Datenquellen**aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 

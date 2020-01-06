@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: d474de7da459e9639e8ec9f29f34e59267388b50
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984422"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593979"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 
@@ -37,15 +37,15 @@ Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
 
 - Testen des benutzerdefinierten Hosts mit dem generierten Direktivenprozessor.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| öffnen | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
-| Visual Studio Visualization and Modeling SDK | |
+| Visual Studio-Visualisierungs- und Modellierungs-SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -96,17 +96,17 @@ Nachdem Sie den Direktivenprozessor generiert haben, verbinden Sie den Direktive
 
 3. Fügen Sie die folgenden Verweise hinzu:
 
-    - Microsoft. VisualStudio. Modeling. SDK. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. SDK. Diagramms. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. vshost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. Fügen Sie am Anfang von Program.cs oder Module1. vb die folgende Codezeile hinzu:
 
@@ -312,7 +312,7 @@ Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine
     #>
     ```
 
-3. Ersetzen Sie im Code \<YOUR Pfad > durch den Pfad der Datei Sample. Min aus der Entwurfs spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
+3. Ersetzen Sie im Code \<Pfad > durch den Pfad der Datei Sample. Min aus der Entwurfs spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
 
 4. Speichern und schließen Sie die Datei.
 
@@ -322,7 +322,7 @@ Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine
 
 2. Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.
 
-     Beispiel:
+     Geben Sie z. B. Folgendes ein:
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
@@ -333,7 +333,7 @@ Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine
 
 4. Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.
 
-     Beispiel:
+     Geben Sie z. B. Folgendes ein:
 
      `<YOUR PATH>TestTemplateWithDP.txt`
 

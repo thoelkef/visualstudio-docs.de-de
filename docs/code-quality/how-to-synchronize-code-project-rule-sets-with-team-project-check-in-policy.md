@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649382"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587406"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Vorgehensweise: Synchronisieren von Code Projekt-Regelsätzen mit einer Azure devops-Projekt Eincheck Richtlinie
 
@@ -31,9 +31,9 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>So geben Sie einen Microsoft Standard-Regelsatz an
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie auf **Code Analyse**.
+2. Klicken Sie auf **Codeanalyse**.
 
 ::: moniker range="vs-2017"
 
@@ -51,19 +51,19 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 1. Führen Sie bei Bedarf einen Get-Vorgang für die Regel Satz Datei aus, die die Eincheck Richtlinie angibt.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
+2. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.
 
-3. Klicken Sie auf **Code Analyse**.
+3. Klicken Sie auf **Codeanalyse**.
 
 ::: moniker range="vs-2017"
 
-4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse >** .
+4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Durchsuchen >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Klicken Sie in der Liste **aktive Regeln** auf **\<Browse >** .
+4. Klicken Sie in der Liste **aktive Regeln** auf **\<Durchsuchen >** .
 
 ::: moniker-end
 

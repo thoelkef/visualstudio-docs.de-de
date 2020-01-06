@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736703"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404358"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 
 Wenn Sie versuchen, eine ASP.NET-Anwendung zu debuggen, die auf einem Webserver ausgeführt wird, wird möglicherweise die folgende Fehlermeldung angezeigt: `Unable to start debugging on the Web server`.
 
-Dieser Fehler tritt häufig auf, weil eine Fehler-oder Konfigurationsänderung aufgetreten ist, die ein Update Ihrer Anwendungs Pools, eine IIS-zurück setzung oder beides erfordert. Sie können IIS zurücksetzen, indem Sie eine Eingabeaufforderung mit erhöhten Rechten öffnen und `iisreset` eingeben.
+Dieser Fehler tritt häufig auf, weil eine Fehler-oder Konfigurationsänderung aufgetreten ist, die ein Update Ihrer Anwendungs Pools, eine IIS-zurück setzung oder beides erfordert. Sie können IIS zurücksetzen, indem Sie eine Eingabeaufforderung mit erhöhten Rechten öffnen und `iisreset`eingeben.
 
 ## <a name="specificerrors"></a>Was ist die ausführliche Fehlermeldung?
 
@@ -52,6 +52,7 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 - [ASP.NET-Debugging konnte nicht gestartet werden.](#aspnet)
 - [Der Debugger kann keine Verbindung mit dem Remote Computer herstellen.](#cannot_connect)
 - [Weitere Informationen finden Sie in der Hilfe zu häufigen Konfigurationsfehlern. Wenn Sie die Webseite außerhalb des Debuggers ausführen, werden möglicherweise weitere Informationen bereitgestellt.](#see_help)
+- [Der Vorgang wird nicht unterstützt. Unbekannter Fehler: *Fehlernummer*](#operation_not_supported)
 
 ## <a name="IISlist"></a>IIS listet keine Websites auf, die mit der Start-URL übereinstimmen.
 
@@ -76,7 +77,7 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 ## <a name="msvsmon"></a> Der Microsoft Visual Studio-Remotedebugmonitor (msvsmon.exe) wird auf dem Remotecomputer nicht ausgeführt
 
 - Wenn Sie auf einem Remote Computer Debuggen, müssen Sie sicherstellen, dass [der Remote Debugger installiert ist und ausgeführt](../debugger/remote-debugging.md)wird. Wenn in der Meldung eine Firewall erwähnt wird, stellen Sie sicher, dass die [richtigen Ports in der Firewall](../debugger/remote-debugger-port-assignments.md) geöffnet sind. Dies gilt insbesondere, wenn Sie eine Firewall eines Drittanbieters verwenden.
-- Wenn Sie eine Hosts-Datei verwenden, stellen Sie sicher, dass Sie ordnungsgemäß konfiguriert ist. Wenn Sie z. b. mit **F5** Debuggen (statt **an den Prozess anhängen**), muss die Datei "Hosts" dieselbe Projekt-URL wie in den Projekteigenschaften, **Eigenschaften > web > Server** oder **Eigenschaften > Debuggen**, abhängig von Ihr Projekttyp.
+- Wenn Sie eine Hosts-Datei verwenden, stellen Sie sicher, dass Sie ordnungsgemäß konfiguriert ist. Wenn Sie z. b. mit **F5** Debuggen (statt **an den Prozess anhängen**), muss die Hostdatei die gleiche Projekt-URL wie in den Projekteigenschaften, **Eigenschaften > web > Server** oder **Eigenschaften > Debuggen**, abhängig vom Projekttyp, enthalten.
 
 ## <a name="server_error"></a>Der Remote Server hat einen Fehler zurückgegeben.
 
@@ -96,7 +97,7 @@ Außerdem finden Sie hier einige der allgemeinen Fehlercodes und einige Vorschl�
 
 Wenn Sie lokal debuggen, öffnen Sie die Projekteigenschaften in Visual Studio, und stellen Sie sicher, dass das Projekt für die Verbindung mit dem richtigen Webserver und der richtigen URL konfiguriert ist. (Öffnen Sie die **Eigenschaften > web > Server** oder Eigenschaften, die je nach Projekttyp **> Debuggen** .)
 
-Dieser Fehler kann auftreten, wenn Sie lokal debuggen, da Visual Studio eine 32-Bit-Anwendung ist. Daher wird die 64-Bit-Version des Remote Debuggers verwendet, um 64-Bit-Anwendungen zu debuggen. Überprüfen Sie Ihren app-Pool auf IIS, um sicherzustellen, dass **32-Bit-Anwendungen aktivieren** auf `true` festgelegt ist, starten Sie IIS neu, und versuchen Sie es
+Dieser Fehler kann auftreten, wenn Sie lokal debuggen, da Visual Studio eine 32-Bit-Anwendung ist. Daher wird die 64-Bit-Version des Remote Debuggers verwendet, um 64-Bit-Anwendungen zu debuggen. Überprüfen Sie Ihren app-Pool auf IIS, um sicherzustellen, dass **32-Bit-Anwendungen aktivieren** auf `true`festgelegt ist, starten Sie IIS neu, und versuchen Sie es
 
 Wenn Sie eine Hostdatei verwenden, stellen Sie außerdem sicher, dass Sie ordnungsgemäß konfiguriert ist. Beispielsweise muss die Datei "Hosts" die gleiche Projekt-URL wie in den Projekteigenschaften, **Eigenschaften > web > Server** oder **Eigenschaften > Debuggen**, abhängig vom Projekttyp, einschließen.
 
@@ -106,9 +107,13 @@ Wenn Sie eine Hostdatei verwenden, stellen Sie außerdem sicher, dass Sie ordnun
 
 - Wenn dies nicht funktioniert oder Sie Remote Debuggen, führen Sie die Schritte unter [Überprüfen der IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck)aus.
 
+## <a name="operation_not_supported"></a>Der Vorgang wird nicht unterstützt. Unbekannter Fehler: *Fehlernummer*
+
+Wenn Sie URL-Neuschreibungen ausführen, testen Sie eine einfache Web. config-Datei ohne URL-Neuschreibungen. Weitere Informationen finden **Sie im Hinweis** zum URL-Rewrite-Modul unter [Überprüfen der IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
+
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>Überprüfen der IIS-Konfiguration
 
-Nachdem Sie die hier beschriebenen Schritte ausgeführt haben, um das Problem zu beheben, und bevor Sie versuchen, das Debugging erneut auszuführen, müssen Sie möglicherweise auch IIS zurücksetzen. Öffnen Sie hierzu eine Eingabeaufforderung mit erhöhten Rechten, und geben Sie `iisreset` ein.
+Nachdem Sie die hier beschriebenen Schritte ausgeführt haben, um das Problem zu beheben, und bevor Sie versuchen, das Debugging erneut auszuführen, müssen Sie möglicherweise auch IIS zurücksetzen. Öffnen Sie hierzu eine Eingabeaufforderung mit erhöhten Rechten, und geben Sie `iisreset`ein.
 
 * Starten Sie die IIS-Anwendungs Pools, und starten Sie Sie neu.
 
@@ -125,7 +130,7 @@ Nachdem Sie die hier beschriebenen Schritte ausgeführt haben, um das Problem zu
 
 * Überprüfen Sie, ob Ihr Webanwendungs Ordner die richtigen Berechtigungen besitzt.
 
-    Stellen Sie sicher, dass Sie IIS_IUSRS, IUSR oder der bestimmte Benutzer, die dem [Anwendungs Pool](/iis/manage/configuring-security/application-pool-identities) zugeordnet sind, über die Berechtigungen Lesen und Ausführen für den Webanwendungs Ordner verfügen. Beheben Sie das Problem, und starten Sie den Anwendungs Pool neu.
+    Stellen Sie sicher, dass Sie IIS_IUSRS, IUSR oder dem jeweiligen Benutzer, der mit dem [Anwendungs Pool](/iis/manage/configuring-security/application-pool-identities) verknüpft ist, über Lese-und Ausführungsrechte für den Webanwendungs Ordner verfügen. Beheben Sie das Problem, und starten Sie den Anwendungs Pool neu.
 
 * Stellen Sie sicher, dass die richtige Version von ASP.net auf IIS installiert ist.
 

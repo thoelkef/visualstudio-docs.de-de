@@ -3,17 +3,17 @@ title: 'Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645379"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592684"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema
 
@@ -90,7 +90,7 @@ Die Schritte in diesem Abschnitt veranschaulichen die Verwendung des Schema gene
 
 4. Drücken Sie die **Tab** -Taste, um basierend auf Ihren Schema Informationen XML-Daten für das `Contact` Element zu generieren.
 
-## <a name="input"></a>Eingabe
+## <a name="input"></a>Input
 
 Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.
 
@@ -139,7 +139,7 @@ Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.
 </xs:schema>
 ```
 
-### <a name="output"></a>Output
+### <a name="output"></a>Ausgabe
 
 Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Elemente, die als `bold` gekennzeichnet sind, legen bearbeitbare Felder im XML-Ausschnitt fest.
 

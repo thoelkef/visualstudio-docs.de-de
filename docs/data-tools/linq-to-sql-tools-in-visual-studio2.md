@@ -3,17 +3,17 @@ title: Übersicht über den O/R-Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648286"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586392"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL-Tools in Visual Studio
 
@@ -27,7 +27,7 @@ Der **O/R-Designer** stellt eine visuelle Entwurfs Oberfläche zum Erstellen von
 
 ## <a name="open-the-or-designer"></a>Öffnen Sie den O/R-Designer.
 
-Um dem Projekt ein LINQ to SQL Entitäts Modell hinzuzufügen, wählen Sie **Projekt**  > **Neues Element hinzufügen**aus, und wählen Sie dann **LINQ to SQL Klassen** aus der Liste der Projekt Elemente aus:
+Um dem Projekt ein LINQ to SQL Entitäts Modell hinzuzufügen, wählen Sie **Projekt** > **Neues Element hinzufügen**aus, und wählen Sie dann **LINQ to SQL Klassen** aus der Liste der Projekt Elemente aus:
 
 ![LINQ to SQL-Klassen](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -48,11 +48,11 @@ Nachdem Sie einem Projekt ein **LINQ to SQL Classes** -Element hinzugefügt und 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Erstellen von Entitäts Klassen, die Datenbanktabellen und-Sichten zugeordnet sind
 
-Sie können Entitäts Klassen erstellen, die Tabellen und Sichten zugeordnet sind, indem Sie Datenbanktabellen und-Sichten von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen. Wie im vorherigen Abschnitt angegeben, wird die Klasse <xref:System.Data.Linq.DataContext> mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf die Entwurfsoberfläche gezogen wird. Wenn ein nachfolgendes Element, das eine andere Verbindung verwendet, dem **O/R-Designer**hinzugefügt wird, können Sie die Verbindung für den <xref:System.Data.Linq.DataContext> ändern. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen von LINQ to SQL Klassen, die Tabellen und Ansichten zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Sie können Entitäts Klassen erstellen, die Tabellen und Sichten zugeordnet sind, indem Sie Datenbanktabellen und-Sichten von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen. Wie im vorherigen Abschnitt angegeben, wird die Klasse <xref:System.Data.Linq.DataContext> mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf die Entwurfsoberfläche gezogen wird. Wenn ein nachfolgendes Element, das eine andere Verbindung verwendet, dem **O/R-Designer**hinzugefügt wird, können Sie die Verbindung für den <xref:System.Data.Linq.DataContext>ändern. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen von LINQ to SQL Klassen, die Tabellen und Ansichten zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Erstellen von DataContext-Methoden, die gespeicherte Prozeduren und Funktionen abrufen
 
-Sie können <xref:System.Data.Linq.DataContext> Methoden erstellen, die gespeicherte Prozeduren und Funktionen aufzurufen, indem Sie Sie von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen. Gespeicherte Prozeduren und Funktionen werden dem **O/R-Designer** als Methoden der <xref:System.Data.Linq.DataContext> hinzugefügt.
+Sie können <xref:System.Data.Linq.DataContext> Methoden erstellen, die gespeicherte Prozeduren und Funktionen aufzurufen, indem Sie Sie von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen. Gespeicherte Prozeduren und Funktionen werden dem **O/R-Designer** als Methoden der <xref:System.Data.Linq.DataContext>hinzugefügt.
 
 > [!NOTE]
 > Wenn Sie gespeicherte Prozeduren und Funktionen von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen, unterscheidet sich der Rückgabetyp der generierten <xref:System.Data.Linq.DataContext> Methode je nachdem, wo Sie das Element ablegen. Weitere Informationen finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).
@@ -71,7 +71,7 @@ Die vom **O/R-Designer** erstellten Entitäts Klassen sind für die Verwendung m
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Den generierten DataContext-und Entitäts Klassen Code in verschiedene Namespaces aufteilen
 
-Der **O/R-Designer** stellt die Eigenschaften für den **Kontext Namespace** und den **Entitäts Namespace** auf dem <xref:System.Data.Linq.DataContext> bereit. Mit diesen Eigenschaften wird festgelegt in welchen Namespace der <xref:System.Data.Linq.DataContext> und der Entitätsklassencode generiert werden. Standardmäßig sind diese Eigenschaften leer, und der <xref:System.Data.Linq.DataContext> und die Entitätsklassen werden in den Namespace der Anwendung generiert. Geben Sie einen Wert in die Eigenschaften **Context Namespace** und/oder **Entity Namespace** ein, um den Code in einem anderen Namespace als dem der Anwendung zu generieren.
+Der **O/R-Designer** stellt die Eigenschaften für den **Kontext Namespace** und den **Entitäts Namespace** auf dem <xref:System.Data.Linq.DataContext>bereit. Mit diesen Eigenschaften wird festgelegt in welchen Namespace der <xref:System.Data.Linq.DataContext> und der Entitätsklassencode generiert werden. Standardmäßig sind diese Eigenschaften leer, und der <xref:System.Data.Linq.DataContext> und die Entitätsklassen werden in den Namespace der Anwendung generiert. Geben Sie einen Wert in die Eigenschaften **Context Namespace** und/oder **Entity Namespace** ein, um den Code in einem anderen Namespace als dem der Anwendung zu generieren.
 
 ## <a name="reference-content"></a>Referenz Inhalt
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649008"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587133"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Verwenden des Regelsatz-Editors für die Code Analyse
 
@@ -29,7 +29,7 @@ In der folgenden Tabelle werden die Schweregrad Optionen angezeigt:
 |Fehler|Generiert einen Fehler in der **Fehlerliste** und auch zur Buildzeit.|
 |Info|Generiert eine Meldung in der **Fehlerliste**.|
 |Hidden|Der Verstoß ist für den Benutzer nicht sichtbar. Die IDE wird jedoch über den Verstoß benachrichtigt.|
-|Keiner|Die Regel wird unterdrückt. Das Verhalten entspricht dem, wenn die Regel aus dem Regelsatz entfernt wurde.|
+|Keine|Die Regel wird unterdrückt. Das Verhalten entspricht dem, wenn die Regel aus dem Regelsatz entfernt wurde.|
 
 Der Editor zeigt die Regeln in einer Baumstruktur an, in der die Regeln nach einem von Ihnen angegebenen Regelsatz Feld gruppiert werden. Um Regeln zu einem Regelsatz hinzuzufügen oder daraus zu entfernen, führen Sie einen oder mehrere der folgenden Schritte aus:
 
@@ -52,7 +52,7 @@ In der folgenden Tabelle werden die Steuerelemente auf der Symbolleiste des Rege
 |---------------------|-----------------|
 |**Alle aufklappen**|Zeigt die Regeln in allen Gruppen an.|
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen aus.|
-|**Group By**|Gibt das Feld an, nach dem Regeln gruppiert werden. Klicken Sie auf **\<None >** , um die Regeln ohne Gruppen anzuzeigen.|
+|**Group By**|Gibt das Feld an, nach dem Regeln gruppiert werden. Klicken Sie auf **\<keine >** , um die Regeln ohne Gruppen anzuzeigen.|
 |**Spaltenoptionen**|Gibt die anzuzeigenden Regel Felder an.|
 |**Regeln ausblenden, die nicht für die aktuelle Projekt Mappe gelten**|Zeigt Regeln an, die nicht denselben Zieltyp wie die Projekt Mappe haben, oder blendet sie aus.|
 |**Regeln anzeigen, die Code Analysefehler generieren können**|Blendet Regeln ein oder aus, denen die Fehler Aktion zugewiesen wird.|
@@ -67,7 +67,7 @@ Regelsatz-Felder zeigen Informationen zu einem Regelsatz an und können verwende
 
 In der folgenden Tabelle werden die Felder eines Regelsatzes beschrieben:
 
-|Feld|Beschreibung|
+|Field|Beschreibung|
 |-----------|-----------------|
 |**ID**|Der Bezeichner der Regel.|
 |**Kategorie**|Zusätzlich zur Mitgliedschaft in Regelsätzen werden Code Analyse Regeln auch nach Kategorie gruppiert. Weitere Informationen finden Sie unter [Code Analyse Warnungen](../code-quality/code-analysis-for-managed-code-warnings.md).|
