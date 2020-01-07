@@ -3,17 +3,17 @@ title: Regelsatz für systemeigene Mindestregeln
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc7888a49f5bc7896f5f3cd568b1062e9b9a0379
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 55eb9948aba4579b58bb3c24580fe9ec16079812
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649186"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587289"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Regelsatz für systemeigene Mindestregeln
 
@@ -92,13 +92,13 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|
 |[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
 |[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|
-|[C28205](../code-quality/c28205.md)|\_Success \_ oder \_On \_failure \_ in unzulässigem Kontext verwendet|
+|[C28205](../code-quality/c28205.md)|\_Erfolg\_ oder \_auf\_Fehler\_ in unzulässigem Kontext verwendet|
 |[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|
 |[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|
 |[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|
 |[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|
 |[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|
-|[C28213](../code-quality/c28213.md)|Die \_Use \_decl \_annotations \_ Anmerkung muss verwendet werden, um eine vorherige Deklaration ohne Änderung zu verweisen.|
+|[C28213](../code-quality/c28213.md)|Die \_\_decl-\_Anmerkungen verwenden,\_ Anmerkung verwendet werden muss, um auf eine vorherige Deklaration ohne Änderung zu verweisen.|
 |[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
@@ -140,7 +140,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|
 |[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|
 |[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|
-|[C28275](../code-quality/c28275.md)|Der Parameter zum \_Macro \_value \_ NULL ist.|
+|[C28275](../code-quality/c28275.md)|Der Parameter zum \_Makro\_Wert\_ NULL ist.|
 |[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|
 |[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|
 |[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|

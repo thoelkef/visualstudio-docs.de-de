@@ -3,17 +3,17 @@ title: 'Workflow-Designer: ein neues Element zum Workflow Projekt hinzufügen'
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cdea5b3cbf99ab8213c320acc82665816062dca
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: d7bedc36af2e8fbe19fbb3cc85d82be09d8673de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189638"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593953"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Gewusst wie: Hinzufügen eines neuen Elements zu einem Workflow Projekt
 
@@ -23,7 +23,7 @@ In der folgenden Tabelle sind die Windows Workflow Foundation (WF)-Elemente aufg
 
 | -Name | Beschreibung |
 |-| - |
-| Aktivität | Eine Aktivität, die aus anderen Aktivitäten besteht. Wenn Sie dieses Element auswählen, wird dem Projekt die gleiche XAML-Datei hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Bibliothek** für ein neues Projekt. Weitere Informationen zu diesem Verfahren finden Sie unter [Erstellen eines Workflow Projekts](creating-a-workflow-project.md). |
+| Activity | Eine Aktivität, die aus anderen Aktivitäten besteht. Wenn Sie dieses Element auswählen, wird dem Projekt die gleiche XAML-Datei hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Bibliothek** für ein neues Projekt. Weitere Informationen zu diesem Verfahren finden Sie unter [Erstellen eines Workflow Projekts](creating-a-workflow-project.md). |
 | Aktivitätsdesigner | Ein Designer, mit dem die Behandlung einer Aktivität zur Entwurfszeit angepasst wird. Durch die Auswahl dieses Elements werden dem Projekt die gleichen Dateien hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Designer Bibliothek** für ein neues Projekt. |
 | Codeaktivität | Eine Aktivität mit in Code geschriebener Ausführungslogik. Eine Quellcodedatei mit einer Überschreibung der <xref:System.Activities.CodeActivity.Execute%2A>-Methode wird bereits für Sie generiert. |
 | WCF-Workflowdienst | Ein [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)]-Dienst, der mithilfe von Workflowaktivitäten erstellt wurde. Durch die Auswahl dieses Elements werden dem Projekt die gleichen Dateien hinzugefügt wie beim Auswählen der Vorlage **WCF-Workflow Dienst Anwendung** für ein neues Projekt. Weitere Informationen zu diesem Verfahren finden Sie unter Gewusst [wie: Erstellen einer WCF-Workflow Dienst Anwendung](creating-a-workflow-project.md). |

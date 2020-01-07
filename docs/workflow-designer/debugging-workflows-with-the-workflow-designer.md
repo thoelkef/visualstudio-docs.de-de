@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7432e02a4c8e133d7d758909a7ea851f90b88841
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b8de1ff9875d175c956a45b87d459d0943e783c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650558"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597060"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Debuggen von Workflows mit dem Workflow-Designer
 
@@ -33,13 +33,13 @@ Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Program
 - Verwenden Sie Remotedebuggen. Weitere Informationen zur Verwendung des Remote Debuggens finden Sie unter Gewusst [wie: Aktivieren des Remote Debuggens](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
 
    > [!NOTE]
-   > Wenn die Workflow Anwendung die x86-Architektur als Ziel verwendet und auf einem Computer gehostet wird, auf dem ein 64-Bit-Betriebssystem ausgeführt wird, funktioniert das Remote Debuggen nur dann, wenn Visual Studio auf dem Remote Computer installiert ist oder das Ziel für die Workflow Anwendung in  **Beliebige CPU**.
+   > Wenn die Workflow Anwendung die x86-Architektur als Ziel verwendet und auf einem Computer gehostet wird, auf dem ein 64-Bit-Betriebssystem ausgeführt wird, funktioniert das Remote Debuggen nur dann, wenn Visual Studio auf dem Remote Computer installiert ist oder das Ziel für die Workflow Anwendung in eine **beliebige CPU**geändert wird.
 
 ## <a name="step-through-code"></a>Schritt-für-Schritt-Ausführung des Codes
 
 - Einzel **Schritt**: schrittweises Ausführen einer Aktivität durch Drücken von **F11**. Der Debugger führt alle definierten Handler in Einzelschritten aus. Ist kein Handler definiert, wird die Aktivität übersprungen. Bei zusammengesetzten Aktivitäten, die andere Aktivitäten enthalten, führen Sie die erste ausgeführte Aktivität in einem Einzelschritt aus.
 
-- Rück **Sprung:** Durch Drücken von **UMSCHALT** +**F11**durchlaufen Sie eine Aktivität. Mit dem Verlassen einer Aktivität werden die aktuelle Aktivität und alle dazugehörigen gleichgeordneten Aktivitäten bis zum Abschluss ausgeführt. Der Debugger wird dann auf dem übergeordneten Element der aktuellen Aktivität unterbrochen. Bei der Ausführung bis zum Rücksprung von einem Codehandler unterbricht der Debugger an der Aktivität, der der Handler zugewiesen ist.
+- Rück **Sprung:** Durch Drücken von **UMSCHALT**+**F11**durchlaufen Sie eine Aktivität. Mit dem Verlassen einer Aktivität werden die aktuelle Aktivität und alle dazugehörigen gleichgeordneten Aktivitäten bis zum Abschluss ausgeführt. Der Debugger wird dann auf dem übergeordneten Element der aktuellen Aktivität unterbrochen. Bei der Ausführung bis zum Rücksprung von einem Codehandler unterbricht der Debugger an der Aktivität, der der Handler zugewiesen ist.
 
 - Prozedur **Schritt**: Überspringen einer Aktivität durch Drücken von **F10** Wird ein Prozedurschritt für eine zusammengesetzte Aktivität ausgeführt, unterbricht der Debugger an der ersten ausführbaren untergeordneten Komponente der zusammengesetzten Aktivität. Wird ein Prozedurschritt für eine nicht zusammengesetzte Aktivität ausgeführt, zum Beispiel eine <xref:System.Activities.Statements.Assign>-Aktivität, führt der Debugger die Aktivität und die dazugehörigen Handler aus und unterbricht an der nächsten Aktivität. Handelt es sich bei der ausgeführten Aktivität um die letzte untergeordnete Aktivität einer zusammengesetzten Aktivität, hält der Debugger nach der Ausführung an der übergeordneten Aktivität an.
 

@@ -2,15 +2,15 @@
 title: 'Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604445"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592450"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
 
@@ -103,11 +103,11 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-4. Fügen Sie einen Haltepunkt in der Anweisungs `<xsl:include href="xslincludefile.xsl" />` hinzu.
+4. Fügen Sie einen Haltepunkt in der Anweisungs `<xsl:include href="xslincludefile.xsl" />`hinzu.
 
 5. Beginnen Sie mit dem Debuggen.
 
-6. Wenn der Debugger bei der Anweisungs `<xsl:include href="xslincludefile.xsl" />` angehalten wird, klicken Sie auf die Schaltfläche Einzel **Schritt** . Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
+6. Wenn der Debugger bei der Anweisungs `<xsl:include href="xslincludefile.xsl" />`angehalten wird, klicken Sie auf die Schaltfläche Einzel **Schritt** . Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be19729b61831e6f15ff40b6b4e1d7b4b0bb541
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639503"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586054"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio-Datentools für C++
 
@@ -41,7 +41,7 @@ Um die benutzerdefinierte Funktionalität in SQL Server 2005 und höher zu nutze
 
 4. Laden Sie das ODBC-Windows SDK Beispiel herunter, und entpacken Sie es an einem neuen Speicherort. Dieses Beispiel zeigt die grundlegenden ODBC-Befehle, die verwendet werden, um eine Verbindung mit einer Datenbank herzustellen und Abfragen und Befehle auszugeben. Weitere Informationen zu diesen Funktionen finden Sie im [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Wenn Sie die Projekt C++ Mappe zum ersten Mal laden (diese befindet sich im Ordner), bietet Visual Studio eine Aktualisierung der Projekt Mappe auf die aktuelle Version von Visual Studio an. Klicken Sie auf **Ja**.
 
-5. Um den Native Client verwenden zu können, benötigen Sie die *Header* Datei und die *lib* -Datei. Diese Dateien enthalten Funktionen und Definitionen, die für SQL Server spezifisch sind, außer den in SQL. h definierten ODBC-Funktionen. Fügen Sie in **Projekt**  > **Eigenschaften**  > **VC + +-Verzeichnissen**das folgende Includeverzeichnis hinzu:
+5. Um den Native Client verwenden zu können, benötigen Sie die *Header* Datei und die *lib* -Datei. Diese Dateien enthalten Funktionen und Definitionen, die für SQL Server spezifisch sind, außer den in SQL. h definierten ODBC-Funktionen. Fügen Sie in **Projekt** > **Eigenschaften** > **VC + +-Verzeichnissen**das folgende Includeverzeichnis hinzu:
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -58,13 +58,13 @@ Um die benutzerdefinierte Funktionalität in SQL Server 2005 und höher zu nutze
 
     Beachten Sie, dass im Beispiel tatsächlich keine der Native Client-Funktionen verwendet wird, sodass die vorangehenden Schritte nicht erforderlich sind, damit Sie kompiliert und ausgeführt werden können. Das Projekt ist nun jedoch so konfiguriert, dass Sie diese Funktion verwenden können. Weitere Informationen finden Sie unter [SQL Server Native Client-Programmierung](/sql/relational-databases/native-client/sql-server-native-client).
 
-7. Geben Sie an, welcher Treiber im ODBC-Subsystem verwendet werden soll. Das Beispiel übergibt das Attribut für die Treiber Verbindungs Zeichenfolge in als Befehlszeilenargument. Fügen Sie in **Project**  > **Properties**  > **Debugging**das folgende Befehls Argument hinzu:
+7. Geben Sie an, welcher Treiber im ODBC-Subsystem verwendet werden soll. Das Beispiel übergibt das Attribut für die Treiber Verbindungs Zeichenfolge in als Befehlszeilenargument. Fügen Sie in **Project** > **Properties** > **Debugging**das folgende Befehls Argument hinzu:
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Drücken Sie **F5**, um die Anwendung zu erstellen und auszuführen. Es sollte ein Dialogfeld mit dem Treiber angezeigt werden, in dem Sie aufgefordert werden, eine Datenbank einzugeben. Geben Sie `(localdb)\MSSQLLocalDB` ein, und aktivieren Sie **Vertrauenswürdige Verbindung verwenden**. Klicken Sie auf **OK**. Es sollte eine Konsole mit Meldungen angezeigt werden, die auf eine erfolgreiche Verbindung hinweisen. Außerdem sollte eine Eingabeaufforderung angezeigt werden, in der Sie eine SQL-Anweisung eingeben können. Der folgende Bildschirm zeigt eine Beispiel Abfrage und die Ergebnisse:
+8. Drücken Sie **F5**, um die Anwendung zu erstellen und auszuführen. Es sollte ein Dialogfeld mit dem Treiber angezeigt werden, in dem Sie aufgefordert werden, eine Datenbank einzugeben. Geben Sie `(localdb)\MSSQLLocalDB`ein, und aktivieren Sie **Vertrauenswürdige Verbindung verwenden**. Klicken Sie auf **OK**. Es sollte eine Konsole mit Meldungen angezeigt werden, die auf eine erfolgreiche Verbindung hinweisen. Außerdem sollte eine Eingabeaufforderung angezeigt werden, in der Sie eine SQL-Anweisung eingeben können. Der folgende Bildschirm zeigt eine Beispiel Abfrage und die Ergebnisse:
 
    ![Ausgabe der ODBC-Beispiel Abfrage](../data-tools/media/raddata-odbc-sample-query-output.png)
 

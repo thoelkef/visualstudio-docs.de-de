@@ -5,45 +5,45 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c190115836972f86590233e331f172422efbd6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747433"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595409"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 
 Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modellerstellung unterstützt, wird das Modell im schreibgeschützten Modus geöffnet. In diesem Modus können Sie das Layout der Diagramme ändern, aber nicht das Modell.
 
-Welche Versionen von Visual Studio die Modell Erstellung unterstützen, erfahren Sie unter [Versions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Welche Versionen von Visual Studio die Modellerstellung unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Erhalten von Zugriff auf ein Modell und Diagramme
 
-Zum Lesen eines Abhängigkeits Diagramms müssen Sie zunächst Visual Studio verwenden, um das Modellierungsprojekt zu öffnen, und dann das Diagramm darin öffnen.
+Um ein Abhängigkeitsdiagramm zu lesen, müssen Sie zunächst Visual Studio verwenden, um das Modellierungsprojekt zu öffnen, und öffnen Sie dann auf das Diagramm in diesem.
 
-Wenn Sie ein Abhängigkeits Diagramm lesen möchten, müssen Sie aus diesem Grund auch Zugriff auf das Modellierungsprojekt haben, in dem es erstellt wurde. Dazu können Sie entweder über die Quell Code Verwaltung auf das Projekt zugreifen oder eine Kopie der Projektdateien abrufen.
+Aus diesem Grund sollten Sie ein Abhängigkeitsdiagramm, lesen müssen Sie auch den Zugriff auf das Modellierungsprojekt in denen es erstellt wurde. Sie erreichen dies durch den Zugriff auf das Projekt aus der quellcodeverwaltung oder eine Kopie der Projektdateien abrufen.
 
 > [!NOTE]
 > Dies gilt nicht für Codezuordnungen und .NET-Klassendiagramme, die aus Code generiert wurden. Diese Diagramme können unabhängig von einem Modellierungsprojekt angezeigt werden.
 
-Wenn Sie ein Abhängigkeits Diagramm lesen möchten, benötigen Sie mindestens die folgenden Dateien:
+Um ein Abhängigkeitsdiagramm zu lesen, lautet der minimale Satz von Dateien, die Sie benötigen:
 
-- Die beiden Diagramm Dateien für das Diagramm, das Sie lesen möchten, z. b. " **mydiagram. classdiagram" und "mydiagram. classdiagram. Layout**".
+- Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
-    > Für Abhängigkeits Diagramme sollten Sie auch über die Datei mit dem Namen " _mydiagram_ **. layerdiagram. Suppression**" verfügen.
+    > Bei Abhängigkeitsdiagramme, sollten Sie auch die Datei mit dem Namen haben _MyDiagram_ **. layerdiagram.suppressions**.
 
-- Die Modellierungsprojekt Datei (**MyModel. modelproj**)
+- Die Modellierungsprojektdatei (**MyModel.modelproj**)
 
-- Die Stamm Modelldatei (**ModelDefinition\MyModel.UML**)
+- Die Stammmodelldatei (**ModelDefinition\MyModel. UML**)
 
-- Die Paketdateien für ein beliebiges Paket, auf das im Diagramm verwiesen wird (**ModelDefinition\MyPackage.UML**).
+- Die Paketdateien für ein beliebiges Paket im Diagramm auf die verwiesen wird. (**ModelDefinition\MyPackage. UML**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Änderungen, die Sie im schreibgeschützten Modus vornehmen können
 
@@ -53,7 +53,7 @@ Wenn Sie ein Modell und seine Diagramme in einer Version von Visual Studio öff
 
 - Erweitern und Reduzieren von Formen.
 
-Sie können diese Änderungen speichern. Wenn Sie die Änderungen für andere Benutzer sichtbar machen möchten, müssen Sie mindestens die aktualisierten **Layoutdateien** senden.
+Sie können diese Änderungen speichern. Wenn Sie Ihre Änderungen für andere Benutzer sichtbar machen möchten, müssen Sie mindestens Senden der aktualisierten **.layout** Dateien.
 
 ## <a name="see-also"></a>Siehe auch
 

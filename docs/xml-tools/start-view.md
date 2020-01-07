@@ -3,17 +3,17 @@ title: Ausgangsansicht im XML-Schema-Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1978760aba90b884099085c995372f9612be3c8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608492"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592528"
 ---
 # <a name="start-view"></a>Ausgangsansicht
 
@@ -23,7 +23,7 @@ Die Start Ansicht enthält zwei Hauptabschnitte: das *Wasserzeichen* und den Ber
 
 ![Ausgangsansicht im XML-Schema-Designer](../xml-tools/media/xsddesigner_startview.gif)
 
-## <a name="watermark"></a>Wasserzeichen
+## <a name="watermark"></a>Grenze
 
 Der Wasserzeichen Bereich enthält eine Liste mit Links zu allen Ansichten des XSD-Designers, dem XML-Editor und dem **XML-Schema-Explorer**. Wenn das Schemaset Fehler enthält, wird der folgende Text am Ende der Liste angezeigt: "Verwenden Sie die Fehlerliste, um die Fehler im Schemaset anzuzeigen und zu beheben."
 
@@ -39,11 +39,11 @@ Sie können auf der Symbolleiste des XML-Schema-Designers zwischen der Start Ans
 
 Die folgenden Schaltflächen sind auf der XSD-Designer-Symbolleiste aktiviert, wenn die Ausgangsansicht aktiv ist:
 
-|Option|Beschreibung|
+|-Option|Beschreibung|
 |-|-----------------|
-|**Start Ansicht anzeigen**|Wechselt zur Ausgangsansicht. Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG** +**1**.|
-|**Inhalts Modell Ansicht anzeigen**|Wechselt zur Inhaltsmodellansicht. Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG** +**2**.|
-|**Diagramm Ansicht anzeigen**|Wechselt zur Diagrammansicht. Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG** +**3**.|
+|**Start Ansicht anzeigen**|Wechselt zur Ausgangsansicht. Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG**+**1**.|
+|**Inhalts Modell Ansicht anzeigen**|Wechselt zur Inhaltsmodellansicht. Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG**+**2**.|
+|**Diagramm Ansicht anzeigen**|Wechselt zur Diagrammansicht. Auf diese Sicht kann über die Tastenkombination zugegriffen werden: **STRG**+**3**.|
 
 ## <a name="see-also"></a>Siehe auch
 

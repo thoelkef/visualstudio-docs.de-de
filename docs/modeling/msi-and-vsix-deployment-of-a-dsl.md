@@ -2,17 +2,17 @@
 title: MSI- und VSIX-Bereitstellung einer DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984450"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590188"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
 Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. Visual Studio muss bereits auf dem Zielcomputer installiert sein.
@@ -20,7 +20,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 ## <a name="which"></a>Auswählen zwischen VSIX und MSI-Bereitstellung
  Es gibt zwei Methoden zum Bereitstellen einer domänenspezifischen Sprache:
 
-|Methode|Vorteile|
+|-Methode|Vorteile|
 |-|-|
 |VSX (Visual Studio-Erweiterung)|Einfache Bereitstellung: Kopieren Sie die **VSIX** -Datei, und führen Sie Sie aus dem dslpackage-Projekt aus.<br /><br /> Weitere Informationen finden [Sie unter Installieren und Deinstallieren einer DSL mithilfe von VSX](#Installing).|
 |MSI (Installerdatei)|: Ermöglicht dem Benutzer das Öffnen von Visual Studio durch Doppelklicken auf eine DSL-Datei.<br />-Verknüpft ein Symbol mit dem DSL-Dateityp auf dem Zielcomputer.<br />-Ordnet ein XSD-Schema (XML-Schema) dem DSL-Dateityp zu. Dadurch werden Warnungen vermieden, wenn die Datei in Visual Studio geladen wird.<br /><br /> Sie müssen der Projekt Mappe ein Setup-Projekt hinzufügen, um eine MSI-Datei zu erstellen.<br /><br /> Weitere Informationen finden Sie unter Bereitstellen [einer DSL mithilfe einer MSI-Datei](#msi).|
@@ -35,7 +35,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
    1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **dslpackage** , und klicken Sie dann auf **Ordner in Datei-Explorer öffnen**.
 
-   2. Suchen Sie den Datei- **bin \\ \* \\** _yourproject_ **. Dslpackage. vsix**
+   2. Suchen Sie den Datei- **bin\\\*\\** _yourproject_ **. Dslpackage. vsix**
 
 2. Kopieren Sie die **VSIX** -Datei auf den Zielcomputer, auf dem Sie die DSL installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 
@@ -76,7 +76,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
    1. DslPackage\source.Extension.tt öffnen
 
-   2. Fügen Sie die folgende Zeile vor dem `<SupportedProducts>` ein:
+   2. Fügen Sie die folgende Zeile vor dem `<SupportedProducts>`ein:
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -102,11 +102,11 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
     Visual Studio erstellt eine Datei namens " **deatemsisetupproject. vdproj**".
 
-6. Kopieren Sie in Windows-Explorer DSL \\ *. vdproj in einen neuen Ordner mit dem Namen Setup.
+6. Kopieren Sie im Windows-Explorer Dsl\\\*.vdproj in einen neuen Ordner mit dem Namen Setup.
 
     (Wenn Sie möchten, können Sie jetzt CreateMsiSetupProject.tt aus Ihrem DSL-Projekt ausschließen.)
 
-7. Fügen Sie in **Projektmappen-Explorer**das **Setup \\ \*. vdproj** als vorhandenes Projekt hinzu.
+7. Fügen Sie in **Projektmappen-Explorer**das **Setup\\\*. vdproj** als vorhandenes Projekt hinzu.
 
 8. Klicken Sie im Menü **Projekt** auf **Projekt Abhängigkeiten**.
 
@@ -120,7 +120,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
      Kopieren Sie die MSI-Datei auf einen Computer, auf dem Sie die DSL installieren möchten. Doppelklicken Sie auf die MSI-Datei. Das Installationsprogramm wird ausgeführt.
 
-11. Erstellen Sie auf dem Zielcomputer eine neue Datei, die über die Dateierweiterung ihrer DSL verfügt. Überprüfen Sie Folgendes:
+11. Erstellen Sie auf dem Zielcomputer eine neue Datei, die über die Dateierweiterung ihrer DSL verfügt. Verifizieren Sie Folgendes:
 
     - In der Listenansicht von Windows-Explorer wird die Datei mit dem von Ihnen definierten Symbol und der Beschreibung angezeigt.
 

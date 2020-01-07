@@ -11,17 +11,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28ff14f10cd6ad5612551bb65b7b17f0280358f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639603"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586119"
 ---
 # <a name="troubleshoot-service-references"></a>Problembehandlung bei Dienstverweisen
 
@@ -60,9 +60,9 @@ So beheben Sie diesen Fehler
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Die Einstellung für die Zugriffsebene für generierte Klassen hat keine Auswirkungen.
 
-Das Festlegen der Option **Zugriffsebene für generierte Klassen** im Dialogfeld **Dienst Verweise konfigurieren** auf **intern** oder **Friend** funktioniert möglicherweise nicht immer. Obwohl die-Option im Dialogfeld festgelegt werden muss, werden die resultierenden Unterstützungs Klassen mit der Zugriffsebene `Public` generiert.
+Das Festlegen der Option **Zugriffsebene für generierte Klassen** im Dialogfeld **Dienst Verweise konfigurieren** auf **intern** oder **Friend** funktioniert möglicherweise nicht immer. Obwohl die-Option im Dialogfeld festgelegt werden muss, werden die resultierenden Unterstützungs Klassen mit der Zugriffsebene `Public`generiert.
 
-Dies ist eine bekannte Einschränkung für bestimmte Typen, z. b. solche, die mit dem <xref:System.Xml.Serialization.XmlSerializer> serialisiert werden.
+Dies ist eine bekannte Einschränkung für bestimmte Typen, z. b. solche, die mit dem <xref:System.Xml.Serialization.XmlSerializer>serialisiert werden.
 
 ## <a name="error-debugging-service-code"></a>Fehler beim Debugging von Dienst Code
 
@@ -90,7 +90,7 @@ Um diesen Fehler zu beheben, müssen Sie das Dienstprojekt manuell neu erstellen
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services nicht im Browser angezeigt.
 
-Wenn versucht wird, eine XML-Darstellung der Daten in einem [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] anzuzeigen, interpretiert Internet Explorer die Daten möglicherweise nicht als RSS-Feed. Stellen Sie sicher, dass die Option zum Anzeigen von RSS-Feeds deaktiviert ist.
+Wenn versucht wird, eine XML-Darstellung der Daten in einem [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]anzuzeigen, interpretiert Internet Explorer die Daten möglicherweise nicht als RSS-Feed. Stellen Sie sicher, dass die Option zum Anzeigen von RSS-Feeds deaktiviert ist.
 
 Deaktivieren Sie RSS-Feeds, um diesen Fehler zu beheben:
 

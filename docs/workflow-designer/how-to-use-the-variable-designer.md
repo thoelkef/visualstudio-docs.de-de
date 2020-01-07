@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650251"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593173"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Vorgehensweise: Verwenden des Variablen-Designers
 
@@ -31,7 +31,7 @@ Der Variablen-Designer dient zum Erstellen von Variablen in Datenbindungsszenari
 
 3. Öffnen Sie den Variablen-Designer, indem Sie auf die Schaltfläche **Variablen** in der unteren linken Ecke der Entwurfs Canvas klicken. Der Variablen-Designer wird angezeigt.
 
-4. Klicken Sie auf die leere Zeile mit der Bezeichnung **Variable erstellen**. Dadurch wird eine neue Zeile mit einer neuen Variablen mit den folgenden Standardwerten hinzugefügt: VariableX für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch inkrementiert wird, um eindeutige Variablennamen, **Zeichenfolge** für die Variable zu erstellen.  **Type**und **Sequence** für den **Bereich**. Für den **Standard**Wert wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
+4. Klicken Sie auf die leere Zeile mit der Bezeichnung **Variable erstellen**. Dadurch wird eine neue Zeile mit einer neuen Variablen mit den folgenden Standardwerten hinzugefügt: VariableX für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch inkrementiert wird, um eindeutige Variablennamen, **Zeichenfolge** für den **Variablentyp**und **Sequenz** für den **Bereich**zu erstellen. Für den **Standard**Wert wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
 
     > [!NOTE]
     > Wählen Sie zum Löschen einer Variablen die Variable aus, indem Sie darauf klicken, und drücken Sie dann die ENTF **-Taste.**

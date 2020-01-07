@@ -3,17 +3,17 @@ title: Auswerten eines XPath-Ausdrucks beim Debuggen
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2e0b6c84fa9447dc38aa7976fa59bb5aa67d5c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654271"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592723"
 ---
 # <a name="evaluate-xpath-expressions"></a>XPath-Ausdrücke auswerten
 
@@ -34,7 +34,7 @@ Im folgenden Verfahren werden die Dateien *below-average. xsl* und *Books. XML* 
 
 1. Fügen Sie einen Haltepunkt am `xsl:if`-Starttag ein.
 
-2. Um das Debuggen zu starten, wählen Sie in der Menüleiste die Optionen **XML**  > **XSLT-Debugging starten** aus (oder drücken Sie **alt** +**F5**).
+2. Um das Debuggen zu starten, wählen Sie in der Menüleiste die Optionen **XML** > **XSLT-Debugging starten** aus (oder drücken Sie **alt**+**F5**).
 
    Der Debugger wird gestartet und am `xsl:if`-Tag unterbrochen.
 
@@ -50,7 +50,7 @@ Im folgenden Verfahren werden die Dateien *below-average. xsl* und *Books. XML* 
 
 5. Ändern Sie den XPath-Ausdruck in `./price/text() < $bookAverage` und klicken Sie dann auf **neu auswerten**.
 
-   Im Feld **Wert** wird angezeigt, dass der XPath-Ausdruck zu `true` ausgewertet wird.
+   Im Feld **Wert** wird angezeigt, dass der XPath-Ausdruck zu `true`ausgewertet wird.
 
 ## <a name="see-also"></a>Siehe auch
 

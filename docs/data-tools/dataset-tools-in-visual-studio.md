@@ -42,17 +42,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642122"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586717"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 

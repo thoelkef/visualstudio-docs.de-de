@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648834"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587003"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Binden von Steuerelementen an Bilder aus einer Datenbank
 
@@ -39,7 +39,7 @@ In der folgenden Prozedur wird davon ausgegangen, dass das Fenster **Datenquelle
 2. Erweitern Sie im Fenster **Datenquellen** die gewünschte Tabelle oder das gewünschte Objekt, sodass die Spalten bzw. Eigenschaften angezeigt werden.
 
    > [!TIP]
-   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, öffnen Sie es, indem Sie  > **anderen Windows**  > **Datenquellen** **anzeigen** auswählen.
+   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, öffnen Sie es, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** auswählen.
 
 3. Wählen Sie die Spalte oder die Eigenschaft aus, die die Bilddaten enthält, und wählen Sie eines der folgenden Steuerelemente aus der Dropdown-Steuerelementliste aus:
 

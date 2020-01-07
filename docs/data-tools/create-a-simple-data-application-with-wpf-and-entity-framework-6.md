@@ -4,17 +4,17 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642921"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586899"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 
@@ -26,7 +26,7 @@ Der Schwerpunkt dieses Artikels liegt auf der Verwendung von Data Tools in Visua
 
 In diesem Beispiel werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet. Wenn der ADO.NET-Datenanbieter für dieses Produkt Entity Framework unterstützt, sollte es auch mit anderen SQL-Datenbankprodukten funktionieren.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **.net-Desktop Entwicklung** oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express LocalDB als Teil der Workload **.NET-Desktopentwicklung** oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
@@ -46,7 +46,7 @@ In diesem Beispiel werden SQL Server Express localdb-und Northwind-Beispieldaten
 
 1. Erstellen Sie in Visual Studio ein neues C# **WPF-App** -Projekt.
 
-2. Fügen Sie das nuget-Paket für Entity Framework 6 hinzu. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus. Wählen Sie im Hauptmenü **Projekt**  > **nuget-Pakete verwalten**aus.
+2. Fügen Sie das nuget-Paket für Entity Framework 6 hinzu. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus. Wählen Sie im Hauptmenü **Projekt** > **nuget-Pakete verwalten**aus.
 
      ![Menü Element "nuget-Pakete verwalten"](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -58,7 +58,7 @@ In diesem Beispiel werden SQL Server Express localdb-und Northwind-Beispieldaten
 
 ## <a name="create-the-model"></a>Erstellen des Modells
 
-1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie  > **Neues Element** **Hinzufügen** aus. Wählen Sie im linken Bereich unter dem C# Knoten **Daten** aus, und wählen Sie im mittleren Bereich die Option **ADO.NET Entity Data Model**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie > **Neues Element** **Hinzufügen** aus. Wählen Sie im linken Bereich unter dem C# Knoten **Daten** aus, und wählen Sie im mittleren Bereich die Option **ADO.NET Entity Data Model**aus.
 
    ![Neues Element Entity Framework Modell](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -86,7 +86,7 @@ In diesem Beispiel werden SQL Server Express localdb-und Northwind-Beispieldaten
 
    - Ersetzen Sie das einzige Vorkommen von <xref:System.Collections.Generic> (um Zeile 431) durch <xref:System.Collections.ObjectModel>.
 
-7. Drücken Sie **STRG** +**UMSCHALT** +**B** , um das Projekt zu erstellen. Wenn der Build abgeschlossen ist, sind die Modellklassen für den Datenquellen-Assistenten sichtbar.
+7. Drücken Sie **STRG**+**UMSCHALT**+**B** , um das Projekt zu erstellen. Wenn der Build abgeschlossen ist, sind die Modellklassen für den Datenquellen-Assistenten sichtbar.
 
 Nun können Sie dieses Modell mit der XAML-Seite verbinden, sodass Sie die Daten anzeigen, navigieren und ändern können.
 
@@ -94,7 +94,7 @@ Nun können Sie dieses Modell mit der XAML-Seite verbinden, sodass Sie die Daten
 
 Es ist möglich, ihren eigenen Datenbindung-Code zu schreiben, aber es ist viel einfacher, Visual Studio für Sie zu verwenden.
 
-1. Wählen Sie im Hauptmenü **Projekt**  > **neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen**zu aktivieren. Wählen Sie **Objekt** aus, weil Sie an die Modellklassen und nicht an die Datenbank gebunden sind:
+1. Wählen Sie im Hauptmenü **Projekt** > **neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen**zu aktivieren. Wählen Sie **Objekt** aus, weil Sie an die Modellklassen und nicht an die Datenbank gebunden sind:
 
      ![Assistent zum Konfigurieren von Datenquellen mit Objekt Quelle](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
@@ -114,7 +114,7 @@ Es ist möglich, ihren eigenen Datenbindung-Code zu schreiben, aber es ist viel 
         </Grid.RowDefinitions>
     ```
 
-5. Öffnen Sie nun die Datei " *MainWindow. XAML* ", sodass Sie Sie im Designer anzeigen. Dies bewirkt, dass das Fenster **Datenquellen** als Option im Visual Studio-Fensterrand neben der **Toolbox**angezeigt wird. Klicken Sie auf die Registerkarte, um das Fenster zu öffnen, oder drücken Sie **UMSCHALT** +**alt** +**D** , oder wählen Sie  > **andere Fenster**  > **Datenquellen** **anzeigen** aus. Jede Eigenschaft in der Customers-Klasse wird in einem eigenen Textfeld angezeigt. Klicken Sie zuerst auf den Pfeil im Kombinations Feld **Customers** , und wählen Sie **Details**aus. Ziehen Sie dann den Knoten auf den mittleren Teil der Entwurfs Oberfläche, damit der Designer weiß, dass er in der mittleren Zeile angezeigt werden soll. Wenn Sie ihn falsch angeben, können Sie die Zeile später in der XAML manuell angeben. Standardmäßig werden die Steuerelemente vertikal in einem Raster Element platziert, aber an diesem Punkt können Sie Sie im Formular anordnen. Beispielsweise kann es sinnvoll sein, das Textfeld **Name** oberhalb der Adresse zu platzieren. Die Beispielanwendung für diesen Artikel ordnet die Felder neu an und ordnet Sie in zwei Spalten an.
+5. Öffnen Sie nun die Datei " *MainWindow. XAML* ", sodass Sie Sie im Designer anzeigen. Dies bewirkt, dass das Fenster **Datenquellen** als Option im Visual Studio-Fensterrand neben der **Toolbox**angezeigt wird. Klicken Sie auf die Registerkarte, um das Fenster zu öffnen, oder drücken Sie **UMSCHALT**+**alt**+**D** , oder wählen Sie > **andere Fenster** > **Datenquellen** **anzeigen** aus. Jede Eigenschaft in der Customers-Klasse wird in einem eigenen Textfeld angezeigt. Klicken Sie zuerst auf den Pfeil im Kombinations Feld **Customers** , und wählen Sie **Details**aus. Ziehen Sie dann den Knoten auf den mittleren Teil der Entwurfs Oberfläche, damit der Designer weiß, dass er in der mittleren Zeile angezeigt werden soll. Wenn Sie ihn falsch angeben, können Sie die Zeile später in der XAML manuell angeben. Standardmäßig werden die Steuerelemente vertikal in einem Raster Element platziert, aber an diesem Punkt können Sie Sie im Formular anordnen. Beispielsweise kann es sinnvoll sein, das Textfeld **Name** oberhalb der Adresse zu platzieren. Die Beispielanwendung für diesen Artikel ordnet die Felder neu an und ordnet Sie in zwei Spalten an.
 
      ![Kundendaten Quellen Bindung an einzelne Steuerelemente](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -146,7 +146,7 @@ Es ist möglich, ihren eigenen Datenbindung-Code zu schreiben, aber es ist viel 
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Anpassen des Seiten Entwurfs und Hinzufügen von Rastern für neue Kunden und Bestellungen
 
-Die von Visual Studio erstellte Standardanordnung ist nicht ideal für Ihre Anwendung. Daher nehmen Sie einige Änderungen manuell in der XAML vor. Sie benötigen auch einige "Formulare" (die tatsächlich Raster sind), damit der Benutzer einen neuen Kunden oder eine Bestellung hinzufügen kann. Um einen neuen Kunden und eine Bestellung hinzufügen zu können, benötigen Sie einen separaten Satz von Textfeldern, die nicht an den `CollectionViewSource` an Daten gebunden sind. Sie steuern, welches Raster der Benutzer zu einem beliebigen Zeitpunkt sieht, indem Sie die Visible-Eigenschaft in den Handlermethoden festlegen. Schließlich fügen Sie jeder Zeile im Raster Orders eine Lösch Schaltfläche hinzu, um dem Benutzer zu ermöglichen, eine einzelne Bestellung zu löschen.
+Die von Visual Studio erstellte Standardanordnung ist nicht ideal für Ihre Anwendung. Daher nehmen Sie einige Änderungen manuell in der XAML vor. Sie benötigen auch einige "Formulare" (die tatsächlich Raster sind), damit der Benutzer einen neuen Kunden oder eine Bestellung hinzufügen kann. Um einen neuen Kunden und eine Bestellung hinzufügen zu können, benötigen Sie einen separaten Satz von Textfeldern, die nicht an den `CollectionViewSource`an Daten gebunden sind. Sie steuern, welches Raster der Benutzer zu einem beliebigen Zeitpunkt sieht, indem Sie die Visible-Eigenschaft in den Handlermethoden festlegen. Schließlich fügen Sie jeder Zeile im Raster Orders eine Lösch Schaltfläche hinzu, um dem Benutzer zu ermöglichen, eine einzelne Bestellung zu löschen.
 
 Fügen Sie zunächst diese Stile dem `Windows.Resources`-Element in " *MainWindow. XAML*" hinzu:
 
@@ -387,7 +387,7 @@ Es gibt Teile der Befehls Logik: (1) die Befehle, (2) die Bindungen, (3) die Sch
     </Window.CommandBindings>
     ```
 
-3. Fügen Sie nun die `StackPanel` mit den Schaltflächen Navigation, hinzufügen, löschen und aktualisieren hinzu. Fügen Sie diesem Stil zunächst `Windows.Resources` hinzu:
+3. Fügen Sie nun die `StackPanel` mit den Schaltflächen Navigation, hinzufügen, löschen und aktualisieren hinzu. Fügen Sie diesem Stil zunächst `Windows.Resources`hinzu:
 
     ```xaml
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">

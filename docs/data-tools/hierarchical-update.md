@@ -16,17 +16,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33ca9f91c9b1105af43af21a91f25be13e153aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648447"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586574"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 
@@ -80,7 +80,7 @@ Speichern Sie die Änderungen der verknüpften Tabellen im Dataset in der Datenb
 
 Nachdem Sie die Elemente aus dem Fenster **Datenquellen** abgelegt haben, wird der Code automatisch dem `Form_Load`-Ereignis für das Füllen jeder Tabelle hinzugefügt (den `TableAdapter.Fill`-Methoden). Es wird auch Code zum Click-Ereignis der Schaltfläche **Speichern** des <xref:System.Windows.Forms.BindingNavigator> hinzugefügt, sodass die Daten des Datasets wieder in der Datenbank gespeichert werden (der `TableAdapterManager.UpdateAll`-Methode).
 
-Der generierte Speichern-Code enthält eine Codezeile, die die Methode `CustomersBindingSource.EndEdit` aufruft. Genauer gesagt wird die <xref:System.Windows.Forms.BindingSource.EndEdit%2A>-Methode des ersten <xref:System.Windows.Forms.BindingSource>that aufgerufen, das dem Formular hinzugefügt wird. Dies bedeutet, dass dieser Code nur für die erste Tabelle generiert wird, die aus dem **Datenquellen** Fenster auf das Formular gezogen wird. Der Aufruf <xref:System.Windows.Forms.BindingSource.EndEdit%2A> führt ein Commit aller Änderungen durch, die in irgendeinem datengebundenen Steuerelement ablaufen, das derzeit bearbeitet wird. Wenn also ein datengebundenes Steuerelement den Fokus noch besitzt und Sie auf **Speichern** klicken, werden alle ausstehenden Bearbeitungen in diesem Steuerelement committet, bevor der eigentliche Speichervorgang durchgeführt wird (die `TableAdapterManager.UpdateAll`-Methode).
+Der generierte Speichern-Code enthält eine Codezeile, die die Methode `CustomersBindingSource.EndEdit` aufruft. Genauer gesagt wird die <xref:System.Windows.Forms.BindingSource.EndEdit%2A>-Methode der ersten <xref:System.Windows.Forms.BindingSource>aufgerufen, die dem Formular hinzugefügt wird. Dies bedeutet, dass dieser Code nur für die erste Tabelle generiert wird, die aus dem **Datenquellen** Fenster auf das Formular gezogen wird. Der Aufruf <xref:System.Windows.Forms.BindingSource.EndEdit%2A> führt ein Commit aller Änderungen durch, die in irgendeinem datengebundenen Steuerelement ablaufen, das derzeit bearbeitet wird. Wenn also ein datengebundenes Steuerelement den Fokus noch besitzt und Sie auf **Speichern** klicken, werden alle ausstehenden Bearbeitungen in diesem Steuerelement committet, bevor der eigentliche Speichervorgang durchgeführt wird (die `TableAdapterManager.UpdateAll`-Methode).
 
 > [!NOTE]
 > Der **DataSet-Designer** fügt nur den `BindingSource.EndEdit` Code für die erste Tabelle, die auf dem Formular abgelegt wird, hinzu. Sie müssen deshalb eine Codezeile zum Aufruf der `BindingSource.EndEdit`-Methode für jede verknüpfte Tabelle auf dem Formular hinzufügen. Für diese exemplarische Vorgehensweise heißt das, dass Sie einen Aufruf zur `OrdersBindingSource.EndEdit`-Methode hinzufügen müssen.
@@ -97,7 +97,7 @@ Der generierte Speichern-Code enthält eine Codezeile, die die Methode `Customer
 Neben dem Commit für Änderungen an einer verknüpften untergeordneten Tabelle vor dem Speichern in einer Datenbank müssen Sie vielleicht einen einen Commit der neue erstellten übergeordneten Datensätze durchführen, ehe Sie neue untergeordnete Datensätze dem Dataset hinzufügen. Anders ausgedrückt: Sie müssen möglicherweise den neuen übergeordneten Datensatz (`Customer`) dem DataSet hinzufügen, bevor Foreign Key-Einschränkungen das Hinzufügen neuer untergeordneter Datensätze (`Orders`) zum DataSet ermöglichen. Das erreichen Sie, indem Sie das untergeordnete `BindingSource.AddingNew`-Ereignis verwenden.
 
 > [!NOTE]
-> Ob Sie einen Commit für neue übergeordnete Datensätze durchsetzen müssen, hängt vom Typ des Steuer Elements ab, das zum Binden an die Datenquelle verwendet wird. In dieser exemplarischen Vorgehensweise verwenden Sie einzelne Steuerelemente, um eine Bindung an die übergeordnete Tabelle herzustellen. Hierfür ist zusätzlicher Code erforderlich, um einen Commit für den neuen übergeordneten Datensatz durchzusetzen. Wenn die übergeordneten Datensätze stattdessen in einem komplexen Bindungs Steuerelement wie dem <xref:System.Windows.Forms.DataGridView> angezeigt wurden, ist dieser zusätzliche <xref:System.Windows.Forms.BindingSource.EndEdit%2A>-Befehl für den übergeordneten Datensatz nicht erforderlich. Das liegt daran, dass die zugrunde liegende Datenbindungsfunktion des Steuerelements den Commit neuer Datensätze übernimmt.
+> Ob Sie einen Commit für neue übergeordnete Datensätze durchsetzen müssen, hängt vom Typ des Steuer Elements ab, das zum Binden an die Datenquelle verwendet wird. In dieser exemplarischen Vorgehensweise verwenden Sie einzelne Steuerelemente, um eine Bindung an die übergeordnete Tabelle herzustellen. Hierfür ist zusätzlicher Code erforderlich, um einen Commit für den neuen übergeordneten Datensatz durchzusetzen. Wenn die übergeordneten Datensätze stattdessen in einem komplexen Bindungs Steuerelement wie dem <xref:System.Windows.Forms.DataGridView>angezeigt wurden, ist dieser zusätzliche <xref:System.Windows.Forms.BindingSource.EndEdit%2A>-Befehl für den übergeordneten Datensatz nicht erforderlich. Das liegt daran, dass die zugrunde liegende Datenbindungsfunktion des Steuerelements den Commit neuer Datensätze übernimmt.
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>So fügen Sie Code für den Commit übergeordneter Datensätze hinzu, ehe untergeordnete Datensätze hinzufügt werden
 
@@ -122,7 +122,7 @@ Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der `
 |------------|-----------------|
 |`UpdateAll`-Methode|Speichert alle Daten aus allen Datentabellen.|
 |`BackUpDataSetBeforeUpdate` -Eigenschaft|Bestimmt, ob vor dem Ausführen der `TableAdapterManager.UpdateAll` Methode eine Sicherungskopie des Datasets erstellt wird. Booleschen.|
-|*TableName* `TableAdapter` Eigenschaft|Stellt eine `TableAdapter` dar. Die generierte `TableAdapterManager` enthält eine Eigenschaft für jede `TableAdapter`, die Sie verwaltet. Beispielsweise wird ein DataSet mit einer Customers-und Orders-Tabelle mit einem `TableAdapterManager` generiert, das `CustomersTableAdapter`-und `OrdersTableAdapter`-Eigenschaften enthält.|
+|*TableName* `TableAdapter` Eigenschaft|Stellt eine `TableAdapter`dar. Die generierte `TableAdapterManager` enthält eine Eigenschaft für jede `TableAdapter`, die Sie verwaltet. Beispielsweise wird ein DataSet mit einer Customers-und Orders-Tabelle mit einem `TableAdapterManager` generiert, das `CustomersTableAdapter`-und `OrdersTableAdapter`-Eigenschaften enthält.|
 |`UpdateOrder` -Eigenschaft|Steuert die Reihenfolge der einzelnen INSERT-, Update-und DELETE-Befehle. Legen Sie diesen Wert auf einen der Werte in der `TableAdapterManager.UpdateOrderOption`-Enumeration fest.<br /><br /> Standardmäßig ist der `UpdateOrder` auf **InsertUpdateDelete**festgelegt. Dies bedeutet, dass Einfügungen, Updates und Löschungen für alle Tabellen im DataSet durchgeführt werden.|
 
 ## <a name="see-also"></a>Siehe auch

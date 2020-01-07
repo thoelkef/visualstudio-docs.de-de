@@ -6,21 +6,21 @@ f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ca8baa34de7763608641d9269b1721058c5af2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649864"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593108"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Registerkarte "System. Activities", Dialogfeld "Toolbox Elemente auswählen"
 
-Auf dieser Registerkarte des Dialog Felds **Toolbox Elemente auswählen** wird eine Liste der Windows Workflow Foundation (WF)-Aktivitäten,-Vorlagen und-Elemente angezeigt, die Ihnen zur Verfügung stehen. Um diese Liste anzuzeigen, wählen Sie **im Menü Extras die Option** **Toolbox Elemente** auswählen aus, oder klicken Sie mit der rechten Maustaste auf die **Toolbox** , und **Wählen Sie Elemente auswählen** aus, um das Dialogfeld **Toolbox Elemente auswählen** anzuzeigen, und wählen Sie **dann Registerkarte System. Activities** . Standardmäßig enthält die Liste Workflow Aktivitäten aus den Assemblys System. Activities, System. Service Model. Activities und System. Activities. Core. Presentation. Allerdings werden nur die vom System bereitgestellten Aktivitäten und Aktivitäten, die über andere in der **Toolbox** angezeigte Assemblys hinzugefügt wurden, standardmäßig aktiviert. Zuletzt hinzugefügte Aktivitäten werden automatisch aktiviert und in der **Toolbox** angezeigt, wenn Sie im Dialogfeld auf **OK** klicken. Außerdem werden diese Elemente in der **Toolbox** unter einer neuen Kategorie angezeigt, die dem Namespace entspricht, in dem sich die Aktivität/das Element/die Vorlage befindet.
+Auf dieser Registerkarte des Dialog Felds **Toolbox Elemente auswählen** wird eine Liste der Windows Workflow Foundation (WF)-Aktivitäten,-Vorlagen und-Elemente angezeigt, die Ihnen zur Verfügung stehen. Um diese Liste anzuzeigen, wählen Sie **im Menü Extras die Option** **Toolbox Elemente** auswählen aus, oder klicken Sie mit der rechten Maustaste auf die **Toolbox** , und **Wählen Sie Elemente auswählen** aus, um das Dialogfeld **Toolbox Elemente auswählen** anzuzeigen, und wählen Sie dann die Registerkarte **System. Activities** aus. die Liste enthält die Workflow Aktivitäten aus System. Activities, System. Service Model. Activities und System. Activities. Core Allerdings werden nur die vom System bereitgestellten Aktivitäten und Aktivitäten, die über andere in der **Toolbox** angezeigte Assemblys hinzugefügt wurden, standardmäßig aktiviert. Zuletzt hinzugefügte Aktivitäten werden automatisch aktiviert und in der **Toolbox** angezeigt, wenn Sie im Dialogfeld auf **OK** klicken. Außerdem werden diese Elemente in der **Toolbox** unter einer neuen Kategorie angezeigt, die dem Namespace entspricht, in dem sich die Aktivität/das Element/die Vorlage befindet.
 
 > [!WARNING]
 > Wenn Sie versuchen, eine Assembly hinzuzufügen, die keine Workflowaktivitäten enthält, wird ein Dialogfeld mit einer Fehlermeldung angezeigt, die besagt, dass die Assembly keine Aktivitäten enthält.
@@ -29,7 +29,7 @@ Dieses Dialogfeld ist Projekt agnostisch, sodass die Registerkarte **System. Act
 
 Die Filterung erfolgt auf jeder Registerkarte, und es ist nicht möglich, Workflow Aktivitäten über die Registerkarte **.NET-Komponente** hinzuzufügen. Fügen Sie Sie über die Registerkarte **System. Activities** selbst hinzu.
 
-Sie können alle Elemente, die nicht in der **Toolbox** angezeigt werden sollen, auf dieser Dialogfeld Registerkarte deaktivieren. Alternativ dazu können Sie auch die Menüoption zum **Löschen** mit der rechten Maustaste in der **Toolbox** verwenden. Wenn Sie auf eine Assembly verweisen, wird das Element nicht aus dem **Toolbox**.
+Sie können alle Elemente, die nicht in der **Toolbox** angezeigt werden sollen, auf dieser Dialogfeld Registerkarte deaktivieren. Alternativ dazu können Sie auch die Menüoption zum **Löschen** mit der rechten Maustaste in der **Toolbox** verwenden. Wenn Sie auf eine Assembly verweisen, wird das Element nicht aus der **Toolbox**entfernt.
 
 Durch Ziehen und Ablegen im Designer wird die Aktivität instanziiert und die Assembly, die das Element enthält, automatisch der Liste von Assemblys hinzugefügt, auf die verwiesen wird. Außerdem gilt, wenn die Aktivität auf eine Assembly C verweist, wird C nicht der Liste von Assemblys, auf die verwiesen wird, hinzugefügt. Die Assembly C muss sich im GAC oder im selben Verzeichnis wie die Aktivität B befinden. Im eigenständigen Fall muss sich die Assembly im GAC oder in den Überprüfungs Pfaden von vs befinden. Nur dann können Sie die Aktivität auf die Workflow-Designer-Oberfläche ziehen und dort ablegen.
 

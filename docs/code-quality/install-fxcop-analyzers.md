@@ -4,17 +4,17 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649339"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587458"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installieren von FxCop-Analyzern in Visual Studio
 
@@ -34,7 +34,7 @@ In Visual Studio 2019 Version 16,3 und höher können Sie das nuget-Paket [Micro
 
 2. Klicken Sie auf **Installieren**.
 
-   Visual Studio installiert die neueste Version des Pakets Microsoft. codeanalyzers. fxcopanalyzers. Die Assemblys werden in **Projektmappen-Explorer** unter **Verweise** ** >  Analyzer**angezeigt.
+   Visual Studio installiert die neueste Version des Pakets Microsoft. codeanalyzers. fxcopanalyzers. Die Assemblys werden in **Projektmappen-Explorer** unter **Verweise** ** > Analyzer**angezeigt.
 
    ![Analyzers-Knoten in Projektmappen-Explorer](media/solution-explorer-analyzers-node.png)
 
@@ -72,11 +72,11 @@ Verwenden Sie die folgenden Richtlinien, um zu bestimmen, welche Version des FxC
 
 | Visual Studio-Version | FxCop Analyzer-Paketversion |
 | - | - |
-| Visual Studio 2019 (alle Versionen)<br />Visual Studio 2017 Version 15,8 und höher | [neueste](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (alle Versionen)<br />Visual Studio 2017 Version 15,8 und höher | [Neueste](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017, Version 15,5 bis 15,7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017, Version 15,3 bis 15,4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
-| Visual Studio 2017, Version 15,0 bis 15,2 | [2.0.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
-| Visual Studio 2015 Update 2 und 3 | [1.2.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
+| Visual Studio 2017, Version 15,0 bis 15,2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
+| Visual Studio 2015 Update 2 und 3 | [1.2.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
 | Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
 | Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
@@ -120,7 +120,7 @@ Die [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?it
 
 ::: moniker-end
 
-4. Wählen Sie **herunterladen**.
+4. Wählen Sie **Herunterladen** aus.
 
    Die Erweiterung wird heruntergeladen.
 
@@ -142,13 +142,13 @@ Die [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?it
 
 ::: moniker range="vs-2017"
 
-Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, **Wählen Sie** Extras  > **Erweiterungen und Updates**aus. Wählen Sie im Dialogfeld **Erweiterungen und Updates** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
+Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, **Wählen Sie** Extras > **Erweiterungen und Updates**aus. Wählen Sie im Dialogfeld **Erweiterungen und Updates** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, klicken Sie auf **Erweiterungen**  > **Erweiterungen verwalten**. Wählen Sie im Dialogfeld **Erweiterungen verwalten** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
+Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, klicken Sie auf **Erweiterungen** > **Erweiterungen verwalten**. Wählen Sie im Dialogfeld **Erweiterungen verwalten** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
 
 ::: moniker-end
 

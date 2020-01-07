@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 9a833cb46811bd97467fdb048272c9feb2bb7873
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636538"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587380"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installieren von .NET Compiler Platform Code-Analyzern
 
@@ -31,9 +31,9 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Ros
 2. Installieren Sie das Paket in Visual Studio, indem Sie entweder die [Paket-Manager-Konsole](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) oder die [Benutzeroberfläche des Paket-Managers](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)verwenden.
 
    > [!NOTE]
-   > Die Seite "www.nuget.org" für jedes Analysepaket zeigt den Befehl an, der in die **Paket-Manager-Konsole**eingefügt werden soll. Es gibt sogar eine praktische Schaltfläche, um den Text in die Zwischenablage zu kopieren.
+   > Die Seite www.nuget.org für jedes Analysepaket zeigt den Befehl an, der in die **Paket-Manager-Konsole**eingefügt werden soll. Es gibt sogar eine praktische Schaltfläche, um den Text in die Zwischenablage zu kopieren.
 
-   Die Analyzer-Assemblys werden installiert und in **Projektmappen-Explorer** unter **Verweise** ** >  Analyzer**angezeigt.
+   Die Analyzer-Assemblys werden installiert und in **Projektmappen-Explorer** unter **Verweise** ** > Analyzer**angezeigt.
 
 ## <a name="to-install-vsix-analyzers"></a>So installieren Sie VSIX-Analysen
 
@@ -63,7 +63,7 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Ros
 
 3. Geben Sie im Suchfeld den Namen der Analyzer-Erweiterung ein, die Sie installieren möchten. Beispielsweise können Sie [die Microsoft FxCop-Analysen installieren](install-fxcop-analyzers.md#vsix) , um den Code unter anderem auf Sicherheits-und Leistungsprobleme zu überprüfen.
 
-4. Wählen Sie **herunterladen**.
+4. Wählen Sie **Herunterladen** aus.
 
    Die Erweiterung wird heruntergeladen.
 
@@ -81,13 +81,13 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Ros
 
 ::: moniker range="vs-2017"
 
-Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, **Wählen Sie** Extras  > **Erweiterungen und Updates**aus. Wählen Sie im Dialogfeld **Erweiterungen und Updates** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
+Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, **Wählen Sie** Extras > **Erweiterungen und Updates**aus. Wählen Sie im Dialogfeld **Erweiterungen und Updates** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, klicken Sie auf **Erweiterungen**  > **Erweiterungen verwalten**. Wählen Sie im Dialogfeld **Erweiterungen verwalten** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
+Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, klicken Sie auf **Erweiterungen** > **Erweiterungen verwalten**. Wählen Sie im Dialogfeld **Erweiterungen verwalten** auf der linken Seite die Kategorie **installiert** aus, und suchen Sie nach der Erweiterung anhand des Namens.
 
 ::: moniker-end
 

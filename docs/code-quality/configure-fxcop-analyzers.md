@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649698"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587718"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurieren von FxCop-Analyzern
 
 Das [Paket FxCop](install-fxcop-analyzers.md) Analyzer besteht aus den wichtigsten "FxCop"-Regeln aus der Legacy-Analyse, die in .NET Compiler Platform-basierte Code Analysen konvertiert wurden. Bei bestimmten FxCop-Regeln können Sie durch [konfigurierbare Optionen](fxcop-analyzer-options.md)verfeinern, auf welche Teile Ihrer Codebasis Sie angewendet werden sollen. Jede Option wird durch Hinzufügen eines Schlüssel-Wert-Paars zu einer [Editor config](https://editorconfig.org) -Datei angegeben. Eine Konfigurationsdatei kann [für ein projektspezifisch](#per-project-configuration) sein oder von zwei oder mehr Projekten [gemeinsam genutzt](#shared-configuration) werden.
 
 > [!TIP]
-> Fügen Sie dem Projekt eine Editor config-Datei hinzu, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und  > **Neues Element** **Hinzufügen** auswählen. Geben Sie im Fenster **Neues Element hinzufügen** im Suchfeld den Text **Editor config** ein. Wählen Sie die Vorlage **Editor config file (Standard)** aus, und wählen Sie **Hinzufügen**aus.
+> Fügen Sie dem Projekt eine Editor config-Datei hinzu, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und > **Neues Element** **Hinzufügen** auswählen. Geben Sie im Fenster **Neues Element hinzufügen** im Suchfeld den Text **Editor config** ein. Wählen Sie die Vorlage **Editor config file (Standard)** aus, und wählen Sie **Hinzufügen**aus.
 >
 > ![Editor config-Datei dem Projekt in Visual Studio hinzufügen](media/add-editorconfig-file.png)
 

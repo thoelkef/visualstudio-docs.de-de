@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648278"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586379"
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über n-schichtige Datenanwendungen
 *N-Tier-* Daten Anwendungen sind Daten Anwendungen, die in mehrere *Ebenen*aufgeteilt sind. Sie werden auch "verteilte Anwendungen" oder "Anwendungen mit mehreren Ebenen" genannt, da die Verarbeitung auf voneinander unabhängige, auf Client und Server verteilte Ebenen aufgeteilt wird. Beim Entwickeln einer Anwendung, die auf Daten zugreift, sollten die verschiedenen Ebenen, aus denen die Anwendung besteht, klar getrennt sein.
@@ -42,7 +42,7 @@ Die *Präsentationsebene* ist die Ebene, auf der Benutzer mit einer Anwendung in
 
 Die Präsentationsebene greift in der Regel mithilfe eines Dienst Verweises auf die mittlere Ebene zu (z. b. ein [Windows Communication Foundation Dienste und WCF Data Services in der Visual Studio-](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) Anwendung). Die Präsentationsschicht greift nicht direkt auf die Datenschicht zu. Sie kommuniziert mit der Datenebene unter Verwendung der Datenzugriffskomponenten der mittleren Ebene.
 
-## <a name="middle-tier"></a>Mittlere Ebene
+## <a name="middle-tier"></a>Mittlere Schicht
 Die *mittlere Ebene* ist die Ebene, über die Präsentationsebene und Datenebene miteinander kommunizieren. Zu den typischen Komponenten einer mittleren Ebene gehören:
 
 - Geschäftslogik, z. B. Geschäftsregeln und Datenvalidierung.
@@ -57,16 +57,16 @@ Die *mittlere Ebene* ist die Ebene, über die Präsentationsebene und Datenebene
 
 In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Features und Technologien und deren mögliche Verwendung in der mittleren Ebene einer N-Tier-Anwendung dargestellt.
 
-Komponenten der ![Middle Ebene ](../data-tools/media/ntiermid.png) mittlere Ebene
+![Komponenten der mittleren Ebene](../data-tools/media/ntiermid.png) mittlere Ebene
 
 Die mittlere Ebene stellt in der Regel mithilfe einer Datenverbindung eine Verbindung mit der Datenschicht her. Diese Datenverbindung wird üblicherweise in der Datenzugriffskomponente gespeichert.
 
 ## <a name="data-tier"></a>Datenebene
-Die *Datenebene* ist im Grunde der Server, auf dem die Daten einer Anwendung gespeichert werden (z. b. ein Server, auf dem SQL Server ausgeführt wird).
+Die *Datenebene* ist im Grunde der Server, auf dem Daten einer Anwendung (z.B. ein Server mit SQL Server) gespeichert werden.
 
 In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Funktionen und Technologien und deren mögliche Verwendung in der Datenebene einer N-Tier-Anwendung dargestellt.
 
-Komponenten der ![Data Ebene ](../data-tools/media/ntierdatatier.png) Datenebene
+![Datenebenenkomponenten](../data-tools/media/ntierdatatier.png) Datenebene
 
 Vom Client in der Präsentationsebene kann nicht direkt auf die Datenschicht zugegriffen werden. Stattdessen fungiert die mittlere Ebene als Datenzugriffskomponente und dient zur Kommunikation zwischen der Präsentations- und der Datenebene.
 

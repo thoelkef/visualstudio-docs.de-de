@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648918"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587107"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 
@@ -39,7 +39,7 @@ Zum Hinzufügen oder Entfernen von Steuerelementen aus der Liste der verfügbare
 2. Klicken Sie im Fenster **Datenquellen** auf ein Element, das Teil einer Datenquelle ist, die Sie dem-Fenster hinzugefügt haben, und klicken Sie dann auf das Dropdown Menü für das Element.
 
    > [!TIP]
-   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es, indem Sie  > **anderen Windows**  > **Datenquellen** **anzeigen** auswählen.
+   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** auswählen.
 
 3. Klicken Sie im Dropdown Menü auf **Anpassen**. Eines der folgenden Dialogfelder wird geöffnet:
 
@@ -76,7 +76,7 @@ So fügen Sie der Liste der zugeordneten Steuerelemente Steuerelemente hinzu:
 
      Das Steuerelement muss eines der folgenden Attribute aufweisen:
 
-    |Attribut|Beschreibung|
+    |Attribute|Beschreibung|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) von Daten anzeigen, z. b. eine <xref:System.Windows.Forms.TextBox>.|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, z. b. eine <xref:System.Windows.Forms.DataGridView>.|

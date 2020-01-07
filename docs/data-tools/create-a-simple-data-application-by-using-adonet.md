@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648730"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586873"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
@@ -27,11 +27,11 @@ Dieser Artikel veranschaulicht eine einfache Methode, um Daten aus einer Datenba
 > [!IMPORTANT]
 > Der Code enthält keine produktionsbereite Ausnahmebehandlung, um ihn einfach zu halten.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zum Erstellen der Anwendung benötigen Sie:
 
-- Visual Studio.
+- Visual Studio erstellen.
 
 - SQL Server Express LocalDB. Wenn Sie nicht über SQL Server Express localdb verfügen, können Sie es über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)installieren.
 
@@ -122,12 +122,12 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 ## <a name="store-the-connection-string"></a>Die Verbindungszeichenfolge speichern
 Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Speichern Sie die Zeichenfolge in der Datei " *app. config* " in Ihrem Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode von einem beliebigen Formular in der Anwendung aufgerufen wird, um zu vermeiden, dass Sie die Zeichenfolge manuell eingeben.
 
-Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG** +**A**, **STRG** +**C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
+Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG**+**A**, **STRG**+**C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
 
 1. C#Wenn Sie verwenden, erweitern Sie in **Projektmappen-Explorer**den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
     Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer**auf **alle Dateien anzeigen**, erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
 
-2. Geben Sie in der Spalte **Name** `connString` ein.
+2. Geben Sie in der Spalte **Name** `connString`ein.
 
 3. Wählen Sie in der Liste **Typ** die Option **(Verbindungs Zeichenfolge)** aus.
 

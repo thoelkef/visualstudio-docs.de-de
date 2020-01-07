@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648196"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586249"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Speichern von Daten in einer Datenbank (mehrere Tabellen)
 
@@ -41,7 +41,7 @@ In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranscha
 
 - Ändern von Code zum Zurücksenden der aktualisierten Daten des Datasets an die Datenbank.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -79,7 +79,7 @@ In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen*
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder -
+         \- oder -
 
     - Wählen Sie **Neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen/ändern** zu öffnen.
 
@@ -109,7 +109,7 @@ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus
 
 1. Ziehen Sie den Hauptknoten **Customers** aus dem Fenster **Datenquellen** auf **Form1**.
 
-     Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeichnungen sowie ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
+     Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeichnungen sowie ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
 
 2. Ziehen Sie den Knoten **Orders** aus dem Fenster **Datenquellen** auf **Form1**.
 
@@ -120,14 +120,14 @@ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus
 
 ## <a name="add-code-to-update-the-database"></a>Hinzufügen von Code zum Aktualisieren der Datenbank
 
-Sie können die Datenbank aktualisieren, indem Sie die `Update`-Methoden der TableAdapters **Customers** und **Orders** aufrufen. Standardmäßig wird ein Ereignishandler für die Schaltfläche **Speichern** des <xref:System.Windows.Forms.BindingNavigator> dem Code des Formulars hinzugefügt, um Updates an die Datenbank zu senden. Diese Prozedur ändert den Code, um Updates in der richtigen Reihenfolge zu senden. Dadurch ist es nicht mehr möglich, referenzielle Integritäts Fehler zu erhöhen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.
+Sie können die Datenbank aktualisieren, indem Sie die `Update`-Methoden der TableAdapters **Customers** und **Orders** aufrufen. Standardmäßig wird ein Ereignishandler für die Schaltfläche **Speichern** des<xref:System.Windows.Forms.BindingNavigator> dem Code des Formulars hinzugefügt, um Updates an die Datenbank zu senden. Diese Prozedur ändert den Code, um Updates in der richtigen Reihenfolge zu senden. Dadurch ist es nicht mehr möglich, referenzielle Integritäts Fehler zu erhöhen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.
 
 > [!NOTE]
 > Aus Gründen der Übersichtlichkeit wird in dieser exemplarischen Vorgehensweise keine Transaktion verwendet. Wenn Sie jedoch zwei oder mehr verknüpfte Tabellen aktualisieren, schließen Sie die gesamte Aktualisierungs Logik in eine Transaktion ein. Eine Transaktion ist ein Prozess, mit dem sichergestellt wird, dass alle zugehörigen Änderungen an einer Datenbank erfolgreich sind, bevor für Änderungen ein Commit ausgeführt wird. Weitere Informationen finden Sie unter [Transaktionen und](/dotnet/framework/data/adonet/transactions-and-concurrency)Parallelität.
 
 ### <a name="to-add-update-logic-to-the-application"></a>So fügen Sie der Anwendung Aktualisierungslogik hinzu
 
-1. Wählen Sie auf der <xref:System.Windows.Forms.BindingNavigator> die Schaltfläche **Speichern** aus. Dadurch wird der Code-Editor für den `bindingNavigatorSaveItem_Click` Ereignishandler geöffnet.
+1. Wählen Sie auf der <xref:System.Windows.Forms.BindingNavigator>die Schaltfläche **Speichern** aus. Dadurch wird der Code-Editor für den `bindingNavigatorSaveItem_Click` Ereignishandler geöffnet.
 
 2. Ändern Sie den Code im Ereignishandler, sodass die `Update`-Methoden der verknüpften TableAdapters aufgerufen werden. Mit folgendem Code werden zunächst drei temporäre Datentabellen zum Speichern der aktualisierten Informationen für jeden <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> und <xref:System.Data.DataRowState.Modified>) erstellt. Die Updates werden in der richtigen Reihenfolge ausgeführt. Der Code sollte wie folgt aussehen:
 

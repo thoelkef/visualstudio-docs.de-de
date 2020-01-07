@@ -6,17 +6,17 @@ f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650290"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584555"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Vorgehensweise: Verwenden des Argument-Designers
 
@@ -28,7 +28,7 @@ Mit dem Argument-Designer können Daten problemlos in eine und aus einer Aktivit
 
 2. Öffnen Sie den Argument-Designer, indem Sie auf die Schaltfläche **Argumente** in der linken unteren Ecke der Entwurfs Canvas klicken. Der Argument-Designer wird angezeigt.
 
-3. Klicken Sie auf die leere Zeile mit der Bezeichnung **Create Argument**. Dadurch wird eine neue Zeile mit einem neuen Argument mit den folgenden Standardwerten hinzugefügt: argumentx für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch erhöht wird, um eindeutige Argument Namen zu erstellen, **in** für die **Richtung**. und die **Zeichenfolge** für den **Argumenttyp**. Für den **Standardwert**wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
+3. Klicken Sie auf die leere Zeile mit der Bezeichnung **Create Argument**. Dadurch wird eine neue Zeile mit einem neuen Argument mit den folgenden Standardwerten hinzugefügt: argumentx für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch erhöht wird, um eindeutige Argument Namen zu erstellen, **in** für die **Richtung**und **Zeichenfolge** für den **Argumenttyp**. Für den **Standardwert**wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
 
     > [!NOTE]
     > Wählen Sie zum Löschen eines Arguments das Argument aus, indem Sie darauf klicken, und drücken Sie dann die ENTF **-Taste.**

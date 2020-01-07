@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652298"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590591"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen
 
@@ -38,7 +38,7 @@ Wenn Sie möchten, dass Ihr Code nur Werte an ein beliebiges Element in einem Ab
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Öffnen Sie im **Visual Studio-Tools** Abschnitt des Visual Studio-Anwendungs Startmenüs **Developer-Eingabeaufforderung**. Geben Sie Folgendes ein:
+> 3. Öffnen Sie im **Visual Studio-Tools** Abschnitt des Visual Studio-Anwendungs Startmenüs **Developer-Eingabeaufforderung**. Geben Sie folgenden Code ein:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -63,9 +63,9 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Sie können Eigenschaften für [ilayerelement](/previous-versions/ff644511(v=vs.140)) oder eine der abgeleiteten Klassen definieren, die Folgendes umfassen:
 
-- `ILayerModel` - das Modell
+- `ILayerModel`: das Modell
 
-- `ILayer` - jede Ebene
+- `ILayer`-jede Ebene
 
 - `ILayerDependencyLink` - die Links zwischen Ebenen
 

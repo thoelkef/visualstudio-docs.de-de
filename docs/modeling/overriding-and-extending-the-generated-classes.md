@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658336"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595890"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
 
@@ -28,7 +28,7 @@ Es werden mehrere Mechanismen bereitgestellt, mit denen Sie den generierten Code
 
 Partielle Klassendefinitionen ermöglichen es, dass eine Klasse an mehr als einem Ort definiert wird. Dies ermöglicht es Ihnen, den generierten Code von dem Code zu trennen, den Sie selbst schreiben. In Ihrem manuell geschriebenen Code können Sie Klassen überschreiben, die vom generierten Code geerbt wurden.
 
-Wenn Sie in ihrer DSL-Definition z. b. eine Domänen Klasse mit dem Namen `Book` definieren, können Sie benutzerdefinierten Code schreiben, der Überschreibungs Methoden hinzufügt:
+Wenn Sie in ihrer DSL-Definition z. b. eine Domänen Klasse mit dem Namen `Book`definieren, können Sie benutzerdefinierten Code schreiben, der Überschreibungs Methoden hinzufügt:
 
 ```csharp
 public partial class Book
@@ -52,11 +52,11 @@ Die meisten Methoden in generierten Klassen werden von einem festgelegten Satz v
 
 Dennoch können Sie diese Methoden überschreiben, indem Sie das Flag für die **doppelte abgeleitete** Generierung für die Domänen Klasse festlegen. Dies bewirkt, dass zwei Klassen generiert werden, von denen eine eine abstrakte Basisklasse der anderen ist. Alle Methoden-und Eigenschafts Definitionen befinden sich in der Basisklasse, und nur der Konstruktor ist in der abgeleiteten Klasse.
 
-Beispielsweise ist in der Beispiel Bibliothek. DSL für die `CirculationBook` Domänen Klasse die Eigenschaft `Generates``Double Derived` auf `true` festgelegt. Der generierte Code für diese Domänen Klasse enthält zwei Klassen:
+Beispielsweise ist in der Beispiel Bibliothek. DSL für die `CirculationBook` Domänen Klasse die Eigenschaft `Generates``Double Derived` auf `true`festgelegt. Der generierte Code für diese Domänen Klasse enthält zwei Klassen:
 
 - `CirculationBookBase`, bei dem es sich um eine abstrakte handelt, die alle Methoden und Eigenschaften enthält.
 
-- `CirculationBook`, die von `CirculationBookBase` abgeleitet ist. Es ist leer, außer für seine Konstruktoren.
+- `CirculationBook`, die von `CirculationBookBase`abgeleitet ist. Es ist leer, außer für seine Konstruktoren.
 
 Um eine beliebige Methode zu überschreiben, erstellen Sie eine partielle Definition der abgeleiteten Klasse, z. b. `CirculationBook`. Sie können sowohl die generierten Methoden als auch die Methoden überschreiben, die vom Modellierungs Framework geerbt wurden.
 
@@ -80,7 +80,7 @@ Wenn Sie in jedem Fall das Flag festlegen und den Code neu generieren, wird ein 
 
 Mit dem Transaktions-Manager können Sie Regeln definieren, die vor dem Ende einer Transaktion ausgeführt werden, in der ein bestimmtes Ereignis aufgetreten ist, z. b. eine Änderung in einer Eigenschaft. Regeln werden in der Regel verwendet, um den Synchronität zwischen verschiedenen Elementen im Speicher beizubehalten. Beispielsweise werden Regeln verwendet, um sicherzustellen, dass im Diagramm der aktuelle Zustand des Modells angezeigt wird.
 
-Regeln werden pro Klasse definiert, sodass Sie nicht über Code verfügen müssen, der die Regel für jedes Objekt registriert. Weitere Informationen finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+Regeln werden pro Klasse definiert, sodass Sie nicht über Code verfügen müssen, der die Regel für jedes Objekt registriert. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="store-events"></a>Speichern von Ereignissen
 

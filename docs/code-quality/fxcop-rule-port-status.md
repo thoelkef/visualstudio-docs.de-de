@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568819"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587588"
 ---
 # <a name="fxcop-rule-port-status"></a>Port Status der FxCop-Regel
 
@@ -27,7 +27,7 @@ Die [Seite für die automatisch generierte Dokumentation](https://github.com/dot
 
 Die Liste der FxCop-Regeln, die zu den [FxCop-Analyzern](install-fxcop-analyzers.md) portiert wurden, entspricht dem Datum auf dieser Seite:
 
-Regel-ID | Titel
+Regel-ID | Title
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | Statische Member nicht in generischen Typen deklarieren.
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Typen, die löschbare Felder besitzen, müssen gelöscht werden können.
@@ -67,8 +67,8 @@ Regel-ID | Titel
 [CA1063](ca1063-implement-idisposable-correctly.md) | Ordnungsgemäße Implementierung von iverwerf
 [CA1064](ca1064-exceptions-should-be-public.md) | Ausnahmen sollten öffentlich sein.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Keine Ausnahmen an unerwarteten Speicherorten auslösen.
-CA1066 | Der Typ {0} sollte IEquatable \<T > implementieren, da er "ist mit" überschreibt.
-CA1067 | Überschreiben Sie Object. Gleichheits (Objekt), wenn Sie IEquatable \<T implementieren >
+CA1066 | Der Typ {0} sollte IEquatable\<t > implementieren, da er "was" überschreibt.
+CA1067 | Überschreiben Sie Object. Gleichheits (Objekt), wenn Sie IEquatable\<t implementieren >
 [CA1068](ca1068.md) | CancellationToken-Parameter müssen zuletzt aufgeführt werden.
 CA1200 | Verwenden Sie keine cref-Tags mit einem Präfix.
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Literale nicht als lokalisierte Parameter übergeben.

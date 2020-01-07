@@ -3,17 +3,17 @@ title: XML-Dokumenteigenschaften, Eigenschaftenfenster
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604159"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592424"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML-Dokumenteigenschaften, Eigenschaftenfenster
 
@@ -22,13 +22,13 @@ Das Fenster **Eigenschaften** enthält grundlegende Informationen über das Doku
 > [!NOTE]
 > Alle XML-Dokumenteigenschaften werden in der Projektmappe gespeichert. Dadurch müssen Sie diese Werte nicht erneut eingeben, wenn Sie die Projektmappe das nächste Mal öffnen.
 
-**Kodierung**
+**Codierung**
 
 Die Zeichencodierung für die Datei. Wenn diese Eigenschaft geändert wird, wird auch das Codierungsattribut für die XML-Deklaration geändert und umgekehrt. Die neue Codierung wird verwendet, um die Datei zu codieren, wenn Sie die Datei speichern.
 
 **Eingabe**
 
-Das dem XSLT-Stylesheet zugeordnete Eingabedokument. Sie wird von den **Start-XSLT** -Befehlen verwendet, z. b. **XML**  > **XSLT ohne Debugging starten**. Ein Dokument kann mithilfe der Schaltfläche zum Durchsuchen ( **...** ) ausgewählt werden.
+Das dem XSLT-Stylesheet zugeordnete Eingabedokument. Sie wird von den **Start-XSLT** -Befehlen verwendet, z. b. **XML** > **XSLT ohne Debugging starten**. Ein Dokument kann mithilfe der Schaltfläche zum Durchsuchen ( **...** ) ausgewählt werden.
 
 Diese Eigenschaft ist nur sichtbar, wenn eine XSLT-Datei im Editor geöffnet ist.
 

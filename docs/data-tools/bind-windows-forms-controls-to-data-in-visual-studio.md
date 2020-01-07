@@ -12,17 +12,17 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24c3549cf98e49f3419ef0e7387a6c236c15e9e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 244829edb30bbd43384ba445852f0a9ceafafb3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648839"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587016"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Binden von Windows Forms-Steuerelementen an Daten in Visual Studio
 
@@ -31,7 +31,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Windo
 ![Datenquellen-Zieh Vorgang](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Wenn das **Fenster Datenquellen** nicht sichtbar ist, können Sie es öffnen, indem Sie  > **anderen Windows**  > **Datenquellen** **anzeigen** oder **UMSCHALT** +**alt** +**D**drücken. Sie müssen ein Projekt in Visual Studio geöffnet haben, um das Fenster **Datenquellen** anzuzeigen.
+> Wenn das **Fenster Datenquellen** nicht sichtbar ist, können Sie es öffnen, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** oder **UMSCHALT**+**alt**+**D**drücken. Sie müssen ein Projekt in Visual Studio geöffnet haben, um das Fenster **Datenquellen** anzuzeigen.
 
 Vor dem Ziehen von Elementen können Sie den Steuer Elementtyp festlegen, an den die Bindung erfolgen soll. Abhängig davon, ob Sie die Tabelle selbst oder eine einzelne Spalte auswählen, werden unterschiedliche Werte angezeigt.  Sie können auch benutzerdefinierte Werte festlegen. Für eine **Tabelle bedeutet das** , dass jede Spalte an ein separates Steuerelement gebunden ist.
 
@@ -63,7 +63,7 @@ Sie können das Verhalten von **DataGridView** und **BindingNavigator** anpassen
 
 Wenn die von der Anwendung benötigten Steuerelemente im **Datenquellen** Fenster nicht verfügbar sind, können Sie Steuerelemente hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellen Fenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-Sie können auch Elemente aus dem **Datenquellen** Fenster auf Steuerelemente ziehen, die sich bereits in einem Formular befinden, um das Steuerelement an Daten zu binden. Ein Steuerelement, das bereits an Daten gebunden ist, setzt die Daten Bindungen auf das Element zurück, das zuletzt auf das Element gezogen wurde. Um gültige Drop-Ziele zu sein, müssen Steuerelemente in der Lage sein, den zugrunde liegenden Datentyp des Elements anzuzeigen, das aus dem **Datenquellen** Fenster auf das Element gezogen wird. Beispielsweise ist es nicht zulässig, ein Element mit dem Datentyp <xref:System.DateTime> auf einen <xref:System.Windows.Forms.CheckBox> zu ziehen, da die <xref:System.Windows.Forms.CheckBox> kein Datum anzeigen kann.
+Sie können auch Elemente aus dem **Datenquellen** Fenster auf Steuerelemente ziehen, die sich bereits in einem Formular befinden, um das Steuerelement an Daten zu binden. Ein Steuerelement, das bereits an Daten gebunden ist, setzt die Daten Bindungen auf das Element zurück, das zuletzt auf das Element gezogen wurde. Um gültige Drop-Ziele zu sein, müssen Steuerelemente in der Lage sein, den zugrunde liegenden Datentyp des Elements anzuzeigen, das aus dem **Datenquellen** Fenster auf das Element gezogen wird. Beispielsweise ist es nicht zulässig, ein Element mit dem Datentyp <xref:System.DateTime> auf einen <xref:System.Windows.Forms.CheckBox>zu ziehen, da die <xref:System.Windows.Forms.CheckBox> kein Datum anzeigen kann.
 
 ## <a name="bind-to-data-in-individual-controls"></a>Binden an Daten in einzelnen Steuerelementen
 

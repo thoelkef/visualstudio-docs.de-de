@@ -2,17 +2,17 @@
 title: 'Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661177"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594616"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode
 
@@ -41,7 +41,7 @@ Fügen Sie dem Visual Studio-Anwendungsprojekt diese Verweise hinzu:
 
   - Wenn dies im Dialogfeld **Verweise hinzufügen** auf der Registerkarte **.net** nicht angezeigt wird, klicken Sie auf die Registerkarte **Durchsuchen** , und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
-- Ihre DSL-Assembly, die Sie im Ordner "bin" Ihres DSL-Projekts finden. Der Name hat in der Regel folgendes Format: *yourcompany*. *Yourproject* `.Dsl.dll`.
+- Ihre DSL-Assembly, die Sie im Ordner "bin" Ihres DSL-Projekts finden. Der Name hat in der Regel folgendes Format: *yourcompany*. *Yourproject*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Wichtige Klassen in der DSL
 
@@ -59,11 +59,11 @@ Dabei handelt es sich um die Klassen, die Sie identifizieren sollten:
 
 Das folgende Beispiel dient zum Lesen einer DSL, in der die wichtigsten Klassen folgendermaßen aussehen:
 
-- Familytreemodel
+- FamilyTreeModel
 
-- Familytreeserializationhelper
+- FamilyTreeSerializationHelper
 
-- Familytreedomainmodel
+- FamilyTreeDomainModel
 
 Die andere Domänen Klasse in dieser DSL ist Person.
 

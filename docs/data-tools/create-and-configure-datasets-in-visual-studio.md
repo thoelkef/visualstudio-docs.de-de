@@ -6,17 +6,17 @@ helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44023543f1f7b57352448755de942af1c0c712ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642403"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586912"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Gewusst wie: Erstellen und Konfigurieren von Datasets in Visual Studio
 
@@ -26,7 +26,7 @@ Mithilfe des **Assistenten zum Konfigurieren von Datenquellen**können Sie zur E
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Erstellen eines neuen Datasets mit dem Assistenten zum Konfigurieren von Datenquellen
 
-1. Öffnen Sie das Projekt in Visual Studio, und wählen Sie dann **Projekt**  > **neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
+1. Öffnen Sie das Projekt in Visual Studio, und wählen Sie dann **Projekt** > **neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
 
 2. Wählen Sie den Typ der Datenquelle aus, mit der eine Verbindung hergestellt werden soll.
 
@@ -84,7 +84,7 @@ In diesem Verfahren wird gezeigt, wie Sie eine Tabelle aus derselben Datenbank h
 
 2. Ziehen Sie eine <xref:System.Data.DataTable> Klasse von der Registerkarte **DataSet** der **Toolbox** auf die **DataSet-Designer**.
 
-3. Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Klicken Sie mit der rechten Maustaste auf die Tabelle, und wählen Sie  > **Spalte** **Hinzufügen** . Verwenden Sie das Fenster **Eigenschaften** , um den Datentyp der Spalte und ggf. einen Schlüssel festzulegen.
+3. Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Klicken Sie mit der rechten Maustaste auf die Tabelle, und wählen Sie > **Spalte** **Hinzufügen** . Verwenden Sie das Fenster **Eigenschaften** , um den Datentyp der Spalte und ggf. einen Schlüssel festzulegen.
 
 Eigenständige Tabellen müssen `Fill` Logik in eigenständigen Tabellen implementieren, damit Sie Sie mit Daten füllen können. Informationen zum Auffüllen von eigenständigen Datentabellen finden Sie unter Auffüllen [eines Datasets aus einem DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 

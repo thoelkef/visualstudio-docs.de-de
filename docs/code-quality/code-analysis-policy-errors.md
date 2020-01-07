@@ -1,5 +1,5 @@
 ---
-title: Richtlinienfehler bei der Codeanalyse
+title: Code Analysis Policy Errors
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e6ff6000f0eab60e17642bf2bd8257154e54a9d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745944"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587744"
 ---
-# <a name="code-analysis-policy-errors"></a>Richtlinienfehler bei der Codeanalyse
+# <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
 Die folgenden Fehler treten auf, wenn die Codeanalyserichtlinie beim Einchecken nicht erfüllt wird:
 
@@ -29,7 +29,7 @@ Die Code Analyseanforderungen, die an die Projekt Quell Code Verwaltung eincheck
 
 - Die Codeanalyse ist nicht für das Build für alle Projekte in der Projektmappe aktiviert.
 
-- Der lokale Regelsatz für das Projekt in Visual Studio verfügt über eine weniger einschränkende **Aktions** Einstellung als der Projekt Regelsatz. eine Regel, die auf **Aktion** festgelegt ist, =**Fehler** auf dem Server auf " **Warnung** " **festgelegt ist** , oder **Keine** im Regelsatz, der in Visual Studio ausgeführt wird.
+- Der lokale Regelsatz für das Projekt in Visual Studio verfügt über eine weniger einschränkende **Aktions** Einstellung als der Projekt Regelsatz. eine Regel, die auf **Aktion** festgelegt ist,=**Fehler** auf dem Server auf " **Warning** " oder " **None** " in dem Regel Satz **festgelegt ist** , der in Visual Studio ausgeführt wird.
 
 - Der in Visual Studio angegebene Regelsatz enthält nicht alle Regeln, die im Regelsatz angegeben sind, der in der Eincheck Richtlinie für die Code Analyse für das Projekt angegeben ist.
 
@@ -45,13 +45,13 @@ Die Codeanalyserichtlinie setzt voraus, dass alle eingecheckten Dateien in der a
 
 Die Codeanalyserichtlinie setzt voraus, dass alle eingecheckten Dateien in der aktuell geöffneten Projektmappe enthalten sein müssen. Dieser Fehler tritt auf, wenn eine Projektmappe geöffnet ist, aber einige Dateien in der Ansicht "Anstehende Eincheckvorgänge" nicht zur gerade geöffneten Projektmappe gehören. Um diesen Fehler zu korrigieren, öffnen Sie die Projektmappe, in der die einzucheckende Datei enthalten ist.
 
-**Die Version von ' {0} ' ist nicht richtig. Der in der Richtlinie angegebene starke Name ist "{1}".**
+**Die Version von '{0}' ist nicht richtig. Der in der Richtlinie angegebene starke Name ist "{1}".**
 
-Dieser Fehler bezieht sich auf .NET-Projekte. Eine für die Codeanalyserichtlinie erforderliche Regel-DLL ist auf dem lokalen Computer vorhanden, aber die Version/der öffentliche Schlüssel stimmt nicht überein. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die DLLs im Verzeichnis " *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* " auf dem Computer aktualisieren.
+Dieser Fehler bezieht sich auf .NET-Projekte. Eine für die Codeanalyserichtlinie erforderliche Regel-DLL ist auf dem lokalen Computer vorhanden, aber die Version/der öffentliche Schlüssel stimmt nicht überein. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die DLLs im Verzeichnis " *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\* " auf dem Computer aktualisieren.
 
-**die in der Richtlinie angegebene ' {0} '-Assembly ist nicht vorhanden.**
+**die in der Richtlinie angegebene '{0}'-Assembly ist nicht vorhanden.**
 
-Dieser Fehler bezieht sich auf .NET-Projekte. Für eine für die Codeanalyserichtlinie erforderliche Regel ist die entsprechende DLL nicht auf dem Clientcomputer installiert. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die dll im Verzeichnis *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* auf dem Computer aktualisieren.
+Dieser Fehler bezieht sich auf .NET-Projekte. Für eine für die Codeanalyserichtlinie erforderliche Regel ist die entsprechende DLL nicht auf dem Clientcomputer installiert. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die dll im Verzeichnis *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\* auf dem Computer aktualisieren.
 
 **Die Projekt {0} Regel Einstellungen stimmen nicht mit der Code Analyse Richtlinie überein.**
 

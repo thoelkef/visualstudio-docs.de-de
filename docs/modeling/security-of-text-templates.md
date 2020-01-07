@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660090"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591969"
 ---
 # <a name="security-of-text-templates"></a>Sicherheit von Textvorlagen
 Für Text Vorlagen gelten die folgenden Sicherheitsaspekte:
@@ -24,7 +24,7 @@ Für Text Vorlagen gelten die folgenden Sicherheitsaspekte:
 - Wenn der Mechanismus, mit dem der Host einen Direktivenprozessor findet, nicht sicher ist, könnte ein böswilliger Direktivenprozessor ausgeführt werden.
 
 ## <a name="arbitrary-code"></a>Beliebiger Code
- Wenn Sie eine Vorlage schreiben, können Sie jeden beliebigen Code innerhalb der \< # # > Tags platzieren. Dadurch kann beliebiger Code aus einer Textvorlage heraus ausgeführt werden.
+ Wenn Sie eine Vorlage schreiben, können Sie jeden beliebigen Code innerhalb der \<# # > Tags platzieren. Dadurch kann beliebiger Code aus einer Textvorlage heraus ausgeführt werden.
 
  Stellen Sie sicher, dass Sie Vorlagen aus vertrauenswürdigen Quellen abrufen. Stellen Sie sicher, dass die Endbenutzer Ihrer Anwendung keine Vorlagen ausführen, die nicht aus vertrauenswürdigen Quellen stammen.
 

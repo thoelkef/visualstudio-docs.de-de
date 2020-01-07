@@ -3,17 +3,17 @@ title: XSLT-Debuggerfenster
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646090"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592879"
 ---
 # <a name="debugger-user-interface-xslt"></a>Debugger-Benutzeroberfläche (XSLT)
 
@@ -45,7 +45,7 @@ Im Lokalfenster werden auch die vordefinierten Kontextvariablen angezeigt, mit d
 |`position()`|Die Position bzw. Indexnummer des Kontextknotens in Bezug auf die Kontextgröße.|
 |`self::node()`|Der Wert des Kontextknotens.|
 
-## <a name="output-window"></a>Ausgabefenster
+## <a name="output-window"></a>Fenster Ausgabe.
 
 Im Ausgabefenster werden alle während des Debuggens ausgegebenen Fehlermeldungen und aufgetretenen Sicherheitsausnahmen angezeigt. Außerdem wird die Debugger-Ausgabe angezeigt.
 
@@ -58,7 +58,7 @@ Der **Aufgabenliste** enthält alle Fehler, die in den Skript Blöcken in der XS
 > [!NOTE]
 > Der XSLT-Debugger hat keine Warnungen, sodass Sie nie in der **Aufgabenliste**angezeigt werden.
 
-## <a name="breakpoints-window"></a>"Haltepunkte" (Fenster)
+## <a name="breakpoints-window"></a>Fenster Haltepunkte
 
 Im Fenster Haltepunkte werden alle im aktuellen Projekt festgelegten Haltepunkte angezeigt. Wenn während der Anzeige dieses Fensters ein Haltepunkt hinzugefügt wird, wird das Fenster automatisch aktualisiert, sodass der neue Haltepunkt ebenfalls angezeigt wird.
 

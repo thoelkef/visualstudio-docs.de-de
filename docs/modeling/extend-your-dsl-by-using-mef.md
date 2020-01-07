@@ -2,17 +2,17 @@
 title: Erweitern von DSL mittels MEF
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f42186915ade2a518506f5f6ccc55b3599a3ba99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657514"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596605"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 
@@ -107,7 +107,7 @@ Weitere Informationen zu MEF finden Sie unter [Managed Extensibility Framework (
 
 5. Wählen Sie im DSL-Explorer **Editor \ Validierung**aus.
 
-6. Stellen Sie im Eigenschaftenfenster sicher, dass mindestens eine der Eigenschaften mit dem Namen " **Verwendung** " `true` ist.
+6. Stellen Sie im Eigenschaftenfenster sicher, dass mindestens eine der Eigenschaften mit dem Namen " **Verwendung** " `true`ist.
 
 7. Klicken Sie in der **Projektmappen-Explorer** Symbolleiste auf **alle Vorlagen transformieren**.
 
@@ -129,17 +129,17 @@ Wenn Sie Zugriff auf eine MEF-fähige DSL haben, die von Ihnen oder einer andere
 
    - Diese Assembly weist in der Regel einen Namen auf, der auf endet. DSL. dll ".
 
-   - Wenn Sie Zugriff auf das DSL-Projekt haben, können Sie die Assemblydatei in der Verzeichnis- **DSL \\bin \\ finden \***
+   - Wenn Sie Zugriff auf das DSL-Projekt haben, können Sie die Assemblydatei in der Verzeichnis- **DSL\\bin\\finden \***
 
    - Wenn Sie Zugriff auf die DSL-vsix-Datei haben, können Sie die Assembly suchen, indem Sie die Dateinamenerweiterung der VSIX-Datei in ". zip" ändern. Dekomprimieren der ZIP-Datei.
 
 3. Verweise auf die folgenden .NET-Assemblys hinzufügen:
 
-   - Microsoft. VisualStudio. Modeling. SDK. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. SDK. Diagramms. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. SDK. Shell. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
@@ -157,7 +157,7 @@ Wenn Sie Zugriff auf eine MEF-fähige DSL haben, die von Ihnen oder einer andere
 
    1. Klicken Sie in **Source. Extension. vsixmanifest**auf **Verweis hinzufügen** .
 
-   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** , und suchen Sie dann die vsix-Datei der DSL. Die vsix-Datei wird in der DSL-Lösung unter **dslpackage \\bin \\ \*** erstellt.
+   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** , und suchen Sie dann die vsix-Datei der DSL. Die vsix-Datei wird in der DSL-Lösung in **dslpackage\\bin\\\*** erstellt.
 
        Dadurch können Benutzer die DSL und die Erweiterung gleichzeitig installieren. Wenn der Benutzer die DSL bereits installiert hat, wird nur Ihre Erweiterung installiert.
 
@@ -175,7 +175,7 @@ Sie können Erweiterungen in das assemblycodeprojekt einer separaten DSL-Erweite
 
 ### <a name="menu-commands"></a>Menübefehle
 
-Um einen Menübefehl zu schreiben, definieren Sie eine Klasse, die <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> implementiert und der Klasse das in ihrer DSL definierte Attribut mit dem Namen *yourdsl* `CommandExtension` vorangestellt. Sie können mehr als eine Menübefehls Klasse schreiben.
+Um einen Menübefehl zu schreiben, definieren Sie eine Klasse, die <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> implementiert und der Klasse das in ihrer DSL definierte Attribut mit dem Namen *yourdsl*`CommandExtension`vorangestellt. Sie können mehr als eine Menübefehls Klasse schreiben.
 
 `QueryStatus()` wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt. Er sollte die aktuelle Auswahl überprüfen und `command.Enabled` festlegen, um anzugeben, wann der Befehl anwendbar ist.
 

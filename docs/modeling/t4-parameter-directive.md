@@ -2,17 +2,17 @@
 title: T4-Parameter-Direktive
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4a9ea9d3c1f80c669ec52936969ae38342e6343
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606181"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591800"
 ---
 # <a name="t4-parameter-directive"></a>T4-Parameter-Direktive
 
@@ -24,9 +24,9 @@ In einer Textvorlage von Visual Studio deklariert die `parameter`-Direktive Eige
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- Die `parameter`-Direktive deklariert Eigenschaften im Vorlagen Code, die aus Werten initialisiert werden, die aus dem externen Kontext übermittelt werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, der die Text Transformation aufruft. Die Werte können entweder im `Session` Wörterbuch oder in <xref:System.Runtime.Remoting.Messaging.CallContext> übermittelt werden.
+ Die `parameter`-Direktive deklariert Eigenschaften im Vorlagen Code, die aus Werten initialisiert werden, die aus dem externen Kontext übermittelt werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, der die Text Transformation aufruft. Die Werte können entweder im `Session` Wörterbuch oder in <xref:System.Runtime.Remoting.Messaging.CallContext>übermittelt werden.
 
- Sie können Parameter eines beliebigen Remote fähigen Typs deklarieren. Das heißt, der Typ muss mit <xref:System.SerializableAttribute> deklariert werden, oder er muss von <xref:System.MarshalByRefObject> abgeleitet werden. Dadurch können Parameterwerte an die AppDomain übergeben werden, in der die Vorlage verarbeitet wird.
+ Sie können Parameter eines beliebigen Remote fähigen Typs deklarieren. Das heißt, der Typ muss mit <xref:System.SerializableAttribute>deklariert werden, oder er muss von <xref:System.MarshalByRefObject>abgeleitet werden. Dadurch können Parameterwerte an die AppDomain übergeben werden, in der die Vorlage verarbeitet wird.
 
  Beispielsweise können Sie eine Textvorlage mit folgendem Inhalt schreiben:
 
@@ -59,7 +59,7 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ```
 
 ## <a name="passing-values-in-the-call-context"></a>Übergeben von Werten im Aufrufkontext
- Sie können in <xref:System.Runtime.Remoting.Messaging.CallContext> Alternativ Werte als logische Daten übergeben.
+ Sie können in <xref:System.Runtime.Remoting.Messaging.CallContext>Alternativ Werte als logische Daten übergeben.
 
  Im folgenden Beispiel werden Werte mithilfe beider Methoden weitergeleitet:
 

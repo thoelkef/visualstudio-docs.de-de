@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d097f76bcdb419be56d7fd1501fb93e872b1b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748234"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591917"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Freigeben von Modellen und Exportieren von Diagrammen
 In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für Kollegen freigeben.
@@ -43,7 +43,7 @@ In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Title|Beschreibung|
 |-|-|
 |[Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)|Freigeben von Modellen in einem großen oder mittleren Projekt.|
 |[Exportieren von Diagrammen als Bild](../modeling/export-diagrams-as-images.md)|Sie können Teile von Diagrammen in Anwendungen wie PowerPoint oder Word kopieren oder ein Diagramm in eine XPS-Datei drucken.|

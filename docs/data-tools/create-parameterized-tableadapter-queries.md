@@ -13,17 +13,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642160"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586743"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 
@@ -40,7 +40,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 - Erstellen Sie einen neuen TableAdapter und fügen Sie eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzu. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     - oder -
+     \- oder -
 
 - Fügen Sie eine Abfrage zu einem vorhandenen TableAdapter hinzu und dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung.
 
@@ -65,7 +65,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 4. Geben Sie den Namen in das Feld **Neuer Abfragename** ein, wenn Sie eine neue Abfrage erstellen.
 
-     - oder -
+     \- oder -
 
      Wählen Sie eine Abfrage im Feld **Vorhandener Abfragename** aus.
 
@@ -96,7 +96,7 @@ So aktivieren Sie eine Abfrage, um NULL-Werte zu akzeptieren:
 
 2. Wählen Sie im Fenster **Eigenschaften** **die Option** **Parameter**aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ( **...** ).
 
-3. Wählen Sie den Parameter aus, der NULL-Werte zulässt, und legen Sie die Eigenschaft **AllowDBNull** auf `true` fest.
+3. Wählen Sie den Parameter aus, der NULL-Werte zulässt, und legen Sie die Eigenschaft **AllowDBNull** auf `true`fest.
 
 ## <a name="see-also"></a>Siehe auch
 

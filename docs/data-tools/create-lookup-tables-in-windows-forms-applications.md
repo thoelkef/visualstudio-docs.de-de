@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642240"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586769"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen
 
@@ -28,7 +28,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
 ## <a name="to-databind-a-lookup-control"></a>So stellen Sie die Datenbindung für ein Nachschlagesteuerelement her
 
-1. Öffnen Sie Ihr Projekt, indem Sie das Fenster **Datenquellen** öffnen, indem Sie  > **anderen Windows**  > **Datenquellen** **anzeigen** auswählen.
+1. Öffnen Sie Ihr Projekt, indem Sie das Fenster **Datenquellen** öffnen, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** auswählen.
 
     > [!NOTE]
     > Für Nachschlagetabellen ist es erforderlich, dass zwei zusammengehörige Tabellen oder Objekte im **Datenquellenfenster** verfügbar sind. Weitere Informationen finden Sie unter [Beziehungen in Datasets](relationships-in-datasets.md).
@@ -50,7 +50,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
      Die Nachschlagebindungen werden jetzt festgelegt. In der folgenden Tabelle finden Sie die spezifischen Eigenschaften, die für das-Steuerelement festgelegt wurden.
 
-    |property|Erklärung der Einstellung|
+    |Die Eigenschaften-|Erklärung der Einstellung|
     |--------------| - |
     |**DataSource**|Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Forms.BindingSource> fest, die für die auf das Steuerelement gezogene Tabelle erstellt wurde (also nicht auf die <xref:System.Windows.Forms.BindingSource>, die bei der Erstellung des Steuerelements erstellt wurde).<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf die <xref:System.Windows.Forms.BindingSource> der Tabelle mit der Spalte fest, die Sie anzeigen möchten.|
     |**DisplayMember**|Visual Studio legt diese Eigenschaft auf die erste Spalte nach dem Primärschlüssel fest, der einen Zeichenfolgendatentyp für die auf das Steuerelement gezogene Tabelle besitzt.<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf den Spaltennamen fest, den Sie anzeigen möchten.|

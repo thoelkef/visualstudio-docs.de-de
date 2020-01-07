@@ -3,17 +3,17 @@ title: Arbeitsbereich des XML-Schema-Designers
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608262"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592372"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>XML-Schema-Designer-Ansicht
 
@@ -37,7 +37,7 @@ Zum Hinzufügen von Knoten zum Arbeitsbereich stehen die folgenden Methoden zur 
 
 - Führen Sie im XSD-Explorer eine Suche aus, und klicken Sie im Zusammenfassungs Ergebnisbereich auf die Schaltfläche **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** . Weitere Informationen finden Sie unter durch [Suchen des Schema Satzes](../xml-tools/searching-the-schema-set.md).
 
-## <a name="switch-views"></a>Wechseln von Ansichten
+## <a name="switch-views"></a>Ansicht wechseln
 
 Zum Wechseln zwischen den Ansichten stehen folgende Methoden zur Auswahl:
 
@@ -47,4 +47,4 @@ Zum Wechseln zwischen den Ansichten stehen folgende Methoden zur Auswahl:
 
 - Wasserzeichen in der Ausgangsansicht oder der leeren Inhaltsmodell- oder Diagrammansicht
 
-- Hotkeys: **STRG** +**1** für die Ausgangs Ansicht, **STRG** +**2** für die Diagramm Ansicht und **STRG** +**3** für die Inhalts Modell Ansicht.
+- Hotkeys: **STRG**+**1** für die Ausgangs Ansicht, **STRG**+**2** für die Diagramm Ansicht und **STRG**+**3** für die Inhalts Modell Ansicht.

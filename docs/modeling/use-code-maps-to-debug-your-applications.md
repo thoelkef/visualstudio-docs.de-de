@@ -11,17 +11,17 @@ helpviewer_keywords:
 - mapping code relationships
 - code maps
 - mapping relationships in code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748276"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594109"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Verwenden von Code Maps zum Debuggen von Anwendungen
 
@@ -31,7 +31,7 @@ Code Maps helfen Ihnen, die Übersicht in umfangreichen Codebasen, nicht vertrau
 
 **Ein grüner Pfeil zeigt an, wo der Cursor im Editor angezeigt wird.**
 
-Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten mit Code Maps verwenden können, finden Sie unter [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md).
+Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
 > [!NOTE]
 > Zum Erstellen und Bearbeiten von Code Maps benötigen Sie Visual Studio Enterprise Edition. In den Editionen von Visual Studio Community und Professional können Sie Diagramme öffnen, die in der Enterprise Edition generiert wurden, Sie können Sie jedoch nicht bearbeiten.

@@ -30,17 +30,17 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806955"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585937"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 
@@ -52,7 +52,7 @@ Windows Communication Foundation (WCF) ist ein einheitliches Framework zum Erste
 
 ### <a name="what-are-wcf-data-services"></a>Was sind WCF Data Services
 
-WCF Data Services ist eine Implementierung des odata-Protokolls (Open Data).  Mit WCF Data Services können Sie tabellarische Daten als Satz von Rest-APIs verfügbar machen, sodass Sie Daten mit Standard-HTTP-Verben wie Get, Post, Put oder DELETE zurückgeben können. Auf der Serverseite werden WCF Data Services durch [ASP.net-Web-API](https://dotnet.microsoft.com/apps/aspnet/apis) zum Erstellen neuer odata-Dienste abgelöst. Die WCF Data Services-Client Bibliothek ist weiterhin eine gute Wahl für die Nutzung von odata-Diensten in einer .NET-Anwendung in Visual Studio (**Project**  > **Dienstverweis hinzufügen**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
+WCF Data Services ist eine Implementierung des odata-Protokolls (Open Data).  Mit WCF Data Services können Sie tabellarische Daten als Satz von Rest-APIs verfügbar machen, sodass Sie Daten mit Standard-HTTP-Verben wie Get, Post, Put oder DELETE zurückgeben können. Auf der Serverseite werden WCF Data Services durch [ASP.net-Web-API](https://dotnet.microsoft.com/apps/aspnet/apis) zum Erstellen neuer odata-Dienste abgelöst. Die WCF Data Services-Client Bibliothek ist weiterhin eine gute Wahl für die Nutzung von odata-Diensten in einer .NET-Anwendung in Visual Studio (**Project** > **Dienstverweis hinzufügen**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](/dotnet/framework/data/wcf).
 
 ### <a name="wcf-programming-model"></a>WCF-Programmiermodell
 
@@ -167,7 +167,7 @@ In einem solchen Fall können Sie den `endpointConfigurationName` als Parameter 
 
 2. Suchen Sie in der Datei nach dem `<Client>`-Tag.
 
-3. Suchen Sie unter dem `<Client>`-Tag nach einem Tag, das mit `<Endpoint>` beginnt.
+3. Suchen Sie unter dem `<Client>`-Tag nach einem Tag, das mit `<Endpoint>`beginnt.
 
      Wenn der Dienst Verweis mehrere Endpunkte bereitstellt, sind mindestens zwei `<Endpoint` Tags vorhanden.
 
@@ -252,7 +252,7 @@ Um dieses Problem zu vermeiden, werden Typen in referenzierten Assemblys standar
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-| Titel | Beschreibung |
+| Title | Beschreibung |
 | - | - |
 | [Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Bietet eine Schritt-für-Schritt-Demonstration zum Erstellen und Verwenden von WCF-Diensten in Visual Studio. |
 | [Walkthrough: Creating a WCF data service with WPF and Entity Framework (Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst in Visual Studio)](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Bietet eine Schritt-für-Schritt-Demonstration zum Erstellen und Verwenden von WCF Data Services in Visual Studio. |

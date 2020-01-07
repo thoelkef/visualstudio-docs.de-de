@@ -11,17 +11,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b046eaa4244d08c9fff9e2412471d018203de42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e3ad2cfc2690c27e4e26e51f6b40d7afd79f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648800"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586990"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Binden von Objekten als Datenquellen in Visual Studio
 
@@ -74,12 +74,12 @@ Im folgenden Beispiel wird gezeigt, wie Sie die Zeilen in einer Datentabelle dur
 
 Sie können Auflistungs Klassen für Ihre Objekte erstellen oder die typisierten Auflistungen verwenden, die automatisch von der [BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component)bereitgestellt werden.
 
-Wenn Sie eine benutzerdefinierte Auflistungs Klasse für-Objekte erstellen, empfiehlt es sich, von <xref:System.ComponentModel.BindingList%601> zu erben. Diese generische Klasse bietet Funktionen zum Verwalten Ihrer Auflistung sowie zum Senden von Ereignissen, die Benachrichtigungen an die Daten Bindungs Infrastruktur in Windows Forms senden.
+Wenn Sie eine benutzerdefinierte Auflistungs Klasse für-Objekte erstellen, empfiehlt es sich, von <xref:System.ComponentModel.BindingList%601>zu erben. Diese generische Klasse bietet Funktionen zum Verwalten Ihrer Auflistung sowie zum Senden von Ereignissen, die Benachrichtigungen an die Daten Bindungs Infrastruktur in Windows Forms senden.
 
-Bei der automatisch generierten Auflistung im <xref:System.Windows.Forms.BindingSource> wird ein <xref:System.ComponentModel.BindingList%601> für die typisierte-Auflistung verwendet. Wenn Ihre Anwendung keine zusätzliche Funktionalität benötigt, können Sie Ihre Sammlung innerhalb der <xref:System.Windows.Forms.BindingSource> beibehalten. Weitere Informationen finden Sie in der <xref:System.Windows.Forms.BindingSource.List%2A>-Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Klasse.
+Bei der automatisch generierten Auflistung im <xref:System.Windows.Forms.BindingSource> wird ein <xref:System.ComponentModel.BindingList%601> für die typisierte-Auflistung verwendet. Wenn Ihre Anwendung keine zusätzliche Funktionalität benötigt, können Sie Ihre Sammlung innerhalb der <xref:System.Windows.Forms.BindingSource>beibehalten. Weitere Informationen finden Sie in der <xref:System.Windows.Forms.BindingSource.List%2A>-Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Klasse.
 
 > [!NOTE]
-> Wenn Ihre Auflistung Funktionen erfordert, die nicht von der Basis Implementierung der <xref:System.ComponentModel.BindingList%601> bereitgestellt werden, sollten Sie eine benutzerdefinierte Sammlung erstellen, damit Sie Sie der Klasse nach Bedarf hinzufügen können.
+> Wenn Ihre Auflistung Funktionen erfordert, die nicht von der Basis Implementierung der <xref:System.ComponentModel.BindingList%601>bereitgestellt werden, sollten Sie eine benutzerdefinierte Sammlung erstellen, damit Sie Sie der Klasse nach Bedarf hinzufügen können.
 
 Der folgende Code zeigt, wie die-Klasse für eine stark typisierte Auflistung von `Order`-Objekten erstellt wird:
 
@@ -88,17 +88,17 @@ Der folgende Code zeigt, wie die-Klasse für eine stark typisierte Auflistung vo
 
 ### <a name="add-objects-to-a-collection"></a>Hinzufügen von Objekten zu einer Sammlung
 
-Sie fügen einer Auflistung Objekte hinzu, indem Sie die `Add`-Methode der benutzerdefinierten Auflistungs Klasse oder des <xref:System.Windows.Forms.BindingSource> aufrufen.
+Sie fügen einer Auflistung Objekte hinzu, indem Sie die `Add`-Methode der benutzerdefinierten Auflistungs Klasse oder des <xref:System.Windows.Forms.BindingSource>aufrufen.
 
 > [!NOTE]
-> Die `Add`-Methode wird automatisch für Ihre benutzerdefinierte Sammlung bereitgestellt, wenn Sie von <xref:System.ComponentModel.BindingList%601> erben.
+> Die `Add`-Methode wird automatisch für Ihre benutzerdefinierte Sammlung bereitgestellt, wenn Sie von <xref:System.ComponentModel.BindingList%601>erben.
 
 Der folgende Code zeigt, wie der typisierten-Auflistung in einer <xref:System.Windows.Forms.BindingSource>-Objekte hinzugefügt werden:
 
 [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
 [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
 
-Der folgende Code zeigt, wie Sie einer typisierten Auflistung Objekte hinzufügen, die von <xref:System.ComponentModel.BindingList%601> erbt:
+Der folgende Code zeigt, wie Sie einer typisierten Auflistung Objekte hinzufügen, die von <xref:System.ComponentModel.BindingList%601>erbt:
 
 > [!NOTE]
 > In diesem Beispiel ist die `Orders` Auflistung eine Eigenschaft des `Customer` Objekts.
@@ -108,10 +108,10 @@ Der folgende Code zeigt, wie Sie einer typisierten Auflistung Objekte hinzufüge
 
 ### <a name="remove-objects-from-a-collection"></a>Entfernen von Objekten aus einer Sammlung
 
-Sie entfernen Objekte aus einer Auflistung, indem Sie die `Remove`-oder `RemoveAt`-Methode der benutzerdefinierten Auflistungs Klasse oder <xref:System.Windows.Forms.BindingSource> aufrufen.
+Sie entfernen Objekte aus einer Auflistung, indem Sie die `Remove`-oder `RemoveAt`-Methode der benutzerdefinierten Auflistungs Klasse oder <xref:System.Windows.Forms.BindingSource>aufrufen.
 
 > [!NOTE]
-> Wenn Sie von <xref:System.ComponentModel.BindingList%601> erben, werden die Methoden `Remove` und `RemoveAt` automatisch für Ihre benutzerdefinierte Sammlung bereitgestellt.
+> Wenn Sie von <xref:System.ComponentModel.BindingList%601>erben, werden die Methoden `Remove` und `RemoveAt` automatisch für Ihre benutzerdefinierte Sammlung bereitgestellt.
 
 Der folgende Code zeigt, wie Sie Objekte in einer <xref:System.Windows.Forms.BindingSource> mit der <xref:System.Windows.Forms.BindingSource.RemoveAt%2A>-Methode suchen und aus der typisierten Auflistung entfernen:
 
@@ -126,7 +126,7 @@ Um die Daten in Objekten für Benutzer anzuzeigen, erstellen Sie mithilfe des As
 
 Wenn Sie Daten in benutzerdefinierten Objekten bearbeiten möchten, die an Windows Forms Steuerelemente an Daten gebunden sind, bearbeiten Sie einfach die Daten im gebundenen Steuerelement (oder direkt in den Eigenschaften des Objekts). Die Daten Bindungs Architektur aktualisiert die Daten im-Objekt.
 
-Wenn die Anwendung die Nachverfolgung von Änderungen und das Rollback der vorgeschlagenen Änderungen an ihren ursprünglichen Werten erfordert, müssen Sie diese Funktionalität in Ihrem Objektmodell implementieren. Beispiele für die Art und Weise, wie Datentabellen vorgeschlagene Änderungen verfolgen, finden Sie unter <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A> und <xref:System.Data.DataTable.GetChanges%2A>.
+Wenn die Anwendung die Nachverfolgung von Änderungen und das Rollback der vorgeschlagenen Änderungen an ihren ursprünglichen Werten erfordert, müssen Sie diese Funktionalität in Ihrem Objektmodell implementieren. Beispiele für die Art und Weise, wie Datentabellen vorgeschlagene Änderungen verfolgen, finden Sie unter <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>und <xref:System.Data.DataTable.GetChanges%2A>.
 
 ### <a name="save-data-in-objects-back-to-the-database"></a>Daten in Objekten wieder in der Datenbank speichern
 
@@ -137,7 +137,7 @@ Visual Studio erstellt DBDirect-Methoden, die direkt für die Datenbank ausgefü
 |TableAdapter-DBDirect-Methode|Beschreibung|
 | - |-----------------|
 |`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu, sodass einzelne Spaltenwerte als Methoden Parameter übergeben werden können.|
-|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die Update-Methode nimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter an. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die `TableAdapter.Update`-Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem eine <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> oder ein Array von <xref:System.Data.DataRow>s als Methoden Parameter verwendet wird.|
+|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die Update-Methode nimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter an. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die `TableAdapter.Update`-Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem eine <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>oder ein Array von <xref:System.Data.DataRow>s als Methoden Parameter verwendet wird.|
 |`TableAdapter.Delete`|Löscht vorhandene Datensätze aus der Datenbank auf Grundlage der ursprünglichen Spaltenwerte, die als Methoden Parameter weitergegeben werden.|
 
 Um Daten aus einer Auflistung von-Objekten zu speichern, durchlaufen Sie die Auflistung von-Objekten (z. b. mithilfe einer for-Next-Schleife). Senden Sie die Werte für jedes Objekt mithilfe der DBDirect-Methoden des TableAdapter an die Datenbank.

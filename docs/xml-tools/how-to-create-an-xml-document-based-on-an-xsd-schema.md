@@ -3,17 +3,17 @@ title: 'Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schem
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645980"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592801"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 
@@ -31,11 +31,11 @@ Diese Funktion generiert i. d. R. gültige XML-Dokumente. Wenn das Schema jedoch
 
 - Die folgenden Identitätseinschränkungen: `xs:key`, `xs:keyref` und `xs:unique`
 
-- `xs:pattern`-Facets
+- `xs:pattern` Facetten.
 
 - Enumerationen des `xs:QName`-Typs
 
-- `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen
+- die Typen `xs:ENTITY`, `xs:ENTITIES`und `xs:NOTATION`.
 
 Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, wenn Enumerationen im Schema für diesen Typ vorkommen.
 

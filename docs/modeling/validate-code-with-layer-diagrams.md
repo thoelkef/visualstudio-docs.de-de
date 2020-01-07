@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981132"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594018"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -44,7 +44,7 @@ ms.locfileid: "72981132"
 
 **Voraussetzungen**
 
-- Visual Studio
+- öffnen
 
   Um ein Abhängigkeits Diagramm für ein .net Core-Projekt zu erstellen, müssen Sie über Visual Studio 2019 Version 16,2 oder höher verfügen.
 
@@ -57,7 +57,7 @@ Sie können Code manuell über ein offenes Abhängigkeits Diagramm in Visual Stu
 > [!IMPORTANT]
 > Wenn Sie die ebenenvalidierung mit Team Foundation Server (TFS) ausführen möchten, müssen Sie auch die gleiche Version von Visual Studio auf dem Buildserver installieren.
 
-## <a name="live-dependency-validation"></a>Live-Abhängigkeits Überprüfung
+## <a name="live-dependency-validation"></a>Liveüberprüfung von Abhängigkeiten
 
 Die Überprüfung der Abhängigkeit erfolgt in Echtzeit, und Fehler werden sofort im **Fehlerliste**angezeigt.
 
@@ -112,7 +112,7 @@ Wenn Sie über ein offenes Abhängigkeits Diagramm verfügen, das mit Projektmap
 
 ### <a name="validate-code-at-the-command-prompt"></a>Überprüfen von Code an der Eingabeaufforderung
 
-1. Öffnen Sie die Visual Studio-Eingabeaufforderung.
+1. Öffnen Sie die Visual Studio-Eingabeaufforderung.
 
 2. Wählen Sie eine der folgenden Optionen aus:
 
@@ -218,9 +218,9 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 
 |**Syntax**|**Beschreibung**|
 |-|-|
-|*Artifaktn*(*artifakttypen*)|*Artifacetten TN* ist ein Artefakt, das einer Ebene im Abhängigkeits Diagramm zugeordnet ist.<br /><br /> *Artifacttypen* ist der Typ von *artifactn*, z. b. eine **Klasse** oder **Methode**, z. b.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
-|*Namespacenamen*|Der Name eines Namespace.|
-|*Layer-Namen*|Der Name einer Ebene im Abhängigkeits Diagramm.|
+|*ArtifactN*(*ArtifactTypeN*)|*Artifacetten TN* ist ein Artefakt, das einer Ebene im Abhängigkeits Diagramm zugeordnet ist.<br /><br /> *Artifacttypen* ist der Typ von *artifactn*, z. b. eine **Klasse** oder **Methode**, z. b.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*NamespaceNameN*|Der Name eines Namespace.|
+|*LayerNameN*|Der Name einer Ebene im Abhängigkeits Diagramm.|
 |*DependencyType*|Der Typ der Abhängigkeitsbeziehung zwischen *Element1* und *Artifact2*. Beispielsweise hat *Element1* eine Beziehung zum **aufrufen** von *Artifact2*.|
 
 | **Fehler Syntax** | **Fehlerbeschreibung** |
@@ -229,6 +229,8 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 | DV1001: **ungültiger Namespace Name** | Dieses Problem wird in einem Code Element gemeldet, das einer Ebene zugeordnet ist, die die Eigenschaft "zulässige Namespace-Namen" nicht den Namespace enthält, in dem dieses Code Element definiert ist. Dies ist eine Verletzung der Benennungs Einschränkung. Beachten Sie, dass die Syntax "zulässige Namespace Namen" eine Semikolons Liste von Namespaces sein muss, in denen Code Elemente, die zugeordnet sind, eine Ebene definiert werden dürfen. |
 | DV1002: **Abhängigkeit von nicht referenzierbarem Namespace** | Dieses Problem wird in einem Code Element gemeldet, das einer Ebene zugeordnet ist, und verweist auf ein anderes Code Element, das in einem Namespace definiert ist, der in der Eigenschaft "nicht referenzierbare Namespace" der Ebene definiert ist. Dies ist eine Verletzung der Benennungs Einschränkung. Beachten Sie, dass die Eigenschaft "nicht referenzierbare Namespaces" als eine durch Semikolons getrennte Liste von Namespaces definiert ist, auf die in Code Elementen, die dieser Ebene zugeordnet sind, nicht verwiesen werden soll. |
 | DV1003: **unzulässiger Namespace Name** | Dieses Problem wird in einem Code Element gemeldet, das einer Ebene zugeordnet ist, die die Eigenschaft "unzulässige Namespace Namen" enthält den Namespace, in dem dieses Code Element definiert ist. Dies ist eine Verletzung der Benennungs Einschränkung. Beachten Sie, dass die Eigenschaft "unzulässiger Namespace Name" als eine durch Semikolons getrennte Liste von Namespaces definiert ist, in denen Code Elemente, die dieser Ebene zugeordnet sind, nicht definiert werden dürfen. |
+| DV2001: **Darstellung des ebenendiagramms** | Dieses Problem wird in einem Projekt gemeldet, das keine Abhängigkeits Diagramm Datei enthält, sondern verweist auf die Analyzers für die Abhängigkeits Überprüfung. Wenn keine Abhängigkeits Validierung verwendet wurde, können Sie "Microsoft. dependencyvalidation. Analyzers" direkt aus Projektmappen-Explorer entfernen oder diese Warnung unterdrücken. Weitere Informationen zum Hinzufügen eines Abhängigkeits Diagramms finden Sie unter [Erstellen von Abhängigkeits Diagrammen aus](../modeling/create-layer-diagrams-from-your-code.md) |
+| DV2002: **nicht zugeordnete Typen Basis** | Dieses Problem wird gemeldet, wenn ein Code Element keiner Ebene zugeordnet ist. |
 | DV3001: **fehlender Link** | Schicht '*Layername*' ist mit '*artefakt'* verknüpft, das nicht gefunden werden kann. Möglicherweise fehlt ein Assemblyverweis. |
 | DV9001: es **wurden interne Fehler bei der Architekturanalyse gefunden** . | Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster. |
 

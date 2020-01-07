@@ -3,17 +3,17 @@ title: 'Gewusst wie: Auswählen der zu verwendenden XML-Schemas'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275def786a93d42e6b8e110d3b3d785a24e948b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2acafe0c782b39bb7aa345b5456df7238703cb20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601901"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592645"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Gewusst wie: Auswählen der zu verwendenden XML-Schemas
 
@@ -34,13 +34,13 @@ Die von Ihnen angegebenen Schemas werden in einer Projektmappen-Benutzer Options
 
    ![Schemas-Eigenschaft für eine XML-Datei](media/properties-schemas.png)
 
-   Das [Dialogfeld XML-Schemas](xml-schemas-dialog-box.md) wird geöffnet. Im Dialogfeld werden alle Schemas mit einer aufgelistet. die *XSD* -Erweiterung im Schema Cache (einschließlich Schemas, auf die in der *catalog. XML* -Datei verwiesen wird) sowie jedes Schema, das in der aktuellen Projekt Mappe vorhanden ist, in Visual Studio geöffnet ist, in einem `xsd:schemaLocation` Attribut referenziert wird oder in den **Schemas** darauf verwiesen wird. Property.
+   Das [Dialogfeld XML-Schemas](xml-schemas-dialog-box.md) wird geöffnet. Im Dialogfeld werden alle Schemas mit einer aufgelistet. die *XSD* -Erweiterung im Schema Cache (einschließlich Schemas, auf die in der *catalog. XML* -Datei verwiesen wird) sowie jedes Schema in der aktuellen Projekt Mappe, das in Visual Studio geöffnet ist, auf das in einem `xsd:schemaLocation` Attribut verwiesen wird oder in der **Schemas** -Eigenschaft darauf verwiesen wird.
 
 3. Wählen Sie Schemata zu Validierungszwecken aus, indem Sie eine der folgenden Methoden verwenden:
 
    - Wählen Sie ein im Dialogfeld **XML-Schemas** aufgelistetes Schema aus, klicken Sie auf die Spalte **verwenden** , und wählen Sie dann **dieses Schema verwenden**.
 
-     - oder -
+     \- oder -
 
    - Wählen Sie mehrere Schemas aus, die im Dialogfeld **XML-Schemas** aufgelistet sind, klicken Sie mit der rechten Maustaste, und wählen Sie **dieses Schema verwenden**
 

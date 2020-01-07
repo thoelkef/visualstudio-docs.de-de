@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652383"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590617"
 ---
 # <a name="access-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 
@@ -138,9 +138,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Dynamisches Laden von Modellen
  Wenn Sie zur Laufzeit bestimmen möchten, welche Modelle geladen werden sollen, können Sie eine Modelldatei dynamisch in den Programmcode laden, anstatt die DSL-spezifische Direktive zu verwenden.
 
- Eine der Funktionen der DSL-spezifischen Direktive besteht jedoch darin, den DSL-Namespace zu importieren, damit der Vorlagen Code die in dieser DSL definierten Domänen Klassen verwenden kann. Da Sie nicht die-Direktive verwenden, müssen Sie **\<assembly >** und **\<import >** Direktiven für alle Modelle hinzufügen, die Sie möglicherweise laden. Dies ist einfach, wenn die verschiedenen Modelle, die Sie möglicherweise laden, alle Instanzen derselben DSL sind.
+ Eine der Funktionen der DSL-spezifischen Direktive besteht jedoch darin, den DSL-Namespace zu importieren, damit der Vorlagen Code die in dieser DSL definierten Domänen Klassen verwenden kann. Da Sie nicht die-Direktive verwenden, müssen Sie **\<Assembly>** hinzufügen **\<und >** Direktiven für alle Modelle importieren, die Sie möglicherweise laden. Dies ist einfach, wenn die verschiedenen Modelle, die Sie möglicherweise laden, alle Instanzen derselben DSL sind.
 
- Die effektivste Methode zum Laden der Datei ist die Verwendung Visual Studio ModelBus. In einem typischen Szenario verwendet Ihre Textvorlage eine DSL-spezifische Direktive, um das erste Modell auf die übliche Weise zu laden. Dieses Modell enthält ModelBus-Verweise auf ein anderes Modell. Mit ModelBus können Sie das Modell öffnen, auf das verwiesen wird, und auf ein bestimmtes Element zugreifen. Weitere Informationen finden Sie unter [Verwenden von Visual Studio ModelBus in einer Text Vorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Die effektivste Methode zum Laden der Datei ist die Verwendung Visual Studio ModelBus. In einem typischen Szenario verwendet Ihre Textvorlage eine DSL-spezifische Direktive, um das erste Modell auf die übliche Weise zu laden. Dieses Modell enthält ModelBus-Verweise auf ein anderes Modell. Mit ModelBus können Sie das Modell öffnen, auf das verwiesen wird, und auf ein bestimmtes Element zugreifen. Weitere Informationen finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  In einem weniger üblichen Szenario möchten Sie möglicherweise eine Modelldatei öffnen, für die Sie nur einen Dateinamen haben und der möglicherweise nicht im aktuellen Visual Studio-Projekt enthalten ist. In diesem Fall können Sie die Datei mit dem Verfahren öffnen, das unter Gewusst [wie: Öffnen eines Modells aus einer Datei im Programm Code](../modeling/how-to-open-a-model-from-file-in-program-code.md)beschrieben wird.
 
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt` ruft `LoopTemplate.t4` auf und teilt dann die resultierende Datei in ihre Segmente auf. Beachten Sie, dass diese Vorlage keine Modellierungs Vorlage sein muss, da Sie das Modell nicht liest.
+ `LoopSplitter.tt` ruft `LoopTemplate.t4`auf und teilt dann die resultierende Datei in ihre Segmente auf. Beachten Sie, dass diese Vorlage keine Modellierungs Vorlage sein muss, da Sie das Modell nicht liest.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

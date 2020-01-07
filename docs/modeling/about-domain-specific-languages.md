@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660c93c5e1ee6b41369ebbfc9f43c4c047042589
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652398"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597268"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 
@@ -64,19 +64,19 @@ Eine grafische domänenspezifische Sprache muss die folgenden Features enthalten
 
 - Notation
 
-- Domänen Modell
+- Domänenmodell
 
 - Artefaktgenerierung
 
-- Serialisierung
+- Serialization
 
-- Integration in Visual Studio
+- Integration mit Visual Studio
 
 ### <a name="notation"></a>Notation
 
-Eine domänenspezifische Sprache muss über einen relativ kleinen Satz von Elementen verfügen, der leicht definiert und erweitert werden kann, um domänenspezifische Konstrukte darzustellen. Eine Notation besteht aus Formen, die die Elemente und Connectors darstellen, die die Beziehungen zwischen Elementen auf einer grafischen Diagramm Oberfläche darstellen. In [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] können die Formen erweitert und verfeinert werden, um die Elemente Ihrer domänenspezifischen Sprache darzustellen.
+Eine domänenspezifische Sprache muss über einen relativ kleinen Satz von Elementen verfügen, der leicht definiert und erweitert werden kann, um domänenspezifische Konstrukte darzustellen. Eine Notation besteht aus Formen, die die Elemente und Connectors darstellen, die die Beziehungen zwischen Elementen auf einer grafischen Diagramm Oberfläche darstellen. In [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]können die Formen erweitert und verfeinert werden, um die Elemente Ihrer domänenspezifischen Sprache darzustellen.
 
-### <a name="domain-model"></a>Domänen Modell
+### <a name="domain-model"></a>Domänenmodell
 
 Eine domänenspezifische Sprache muss den Satz von Elementen und die Beziehungen zwischen Ihnen in eine kohärente Grammatik kombinieren. Außerdem muss definiert werden, ob Kombinationen aus Elementen und Beziehungen gültig sind. Programmiersprachen verhindern z. b. in der Regel die zirkuläre Vererbung, bei der eine Klasse von einer zweiten Klasse abgeleitet und die zweite Klasse von der ersten Klasse abgeleitet wird. Einschränkungen können auch verwendet werden, um Geschäftslogik auszudrücken, z. b. kann eine Person nicht von sich selbst abhängig sein. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] verwendet Einschränkungen, um die Arten von Einschränkungen auszudrücken, die für die meisten domänenspezifischen Sprachen erforderlich sind.
 
@@ -84,11 +84,11 @@ Eine domänenspezifische Sprache muss den Satz von Elementen und die Beziehungen
 
 Einer der Hauptzwecke einer domänenspezifischen Sprache besteht darin, ein Element zu generieren, z. b. Quellcode, eine XML-Datei oder andere verwendbare Daten. In der Regel bedeutet eine Änderung im Modell eine Änderung des Artefakts. Sie können [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] zum Generieren von Artefakten und zum erneuten Generieren von Artefakten verwenden, wenn Sie das Modell ändern.
 
-### <a name="serialization"></a>Serialisierung
+### <a name="serialization"></a>Serialization
 
 Eine domänenspezifische Sprache muss in einer Form beibehalten werden, die bearbeitet, gespeichert, geschlossen und erneut geladen werden kann. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] verwendet ein XML-Format, mit dem Sie definieren und anpassen können, wie Ihre domänenspezifische Sprache serialisiert oder beibehalten wird.
 
-### <a name="integration-with-visual-studio"></a>Integration in Visual Studio
+### <a name="integration-with-visual-studio"></a>Integration mit Visual Studio
 
 Da [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] in Visual Studio gehostet wird, werden viele Visual Studio-Fenster und-Steuerelemente erweitert. Außerdem können Sie das Verhalten von Menübefehlen, Toolbox Elementen und anderen Elementen der Benutzeroberfläche anpassen.
 

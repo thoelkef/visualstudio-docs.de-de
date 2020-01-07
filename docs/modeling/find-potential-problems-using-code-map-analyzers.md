@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f55d4d3c4470d32d9779f7adf06934f10ac618e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd20d3c40a4fbe80ac1578275ccd8614eb018d7a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657483"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596592"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern
 
@@ -32,7 +32,7 @@ Führen Sie Analyzer auf Code Maps aus, die Ihnen beim Auffinden sehr komplexer 
 
 ## <a name="analyze-code-maps"></a>Analysieren von Code Maps
 
-Wählen Sie auf der Zuordnungs Symbolleiste **Layout**  >  Analyzer und dann das Analysetool**aus, das**Sie ausführen möchten:
+Wählen Sie auf der Zuordnungs Symbolleiste **Layout** > Analyzer und dann das Analysetool **aus, das**Sie ausführen möchten:
 
 |**Analyse**|**Zur Identifizierung der Knoten, die...**|
 |-|-|
@@ -40,7 +40,7 @@ Wählen Sie auf der Zuordnungs Symbolleiste **Layout**  >  Analyzer und dann das
 |**Hubs Analyzer suchen**|...zu den obersten 25 % der Knoten mit den meisten Verbindungen gehören<br /><br /> **So blenden Sie alle anderen Knoten auf der Map aus**<br /><br /> -Öffnen Sie das Kontextmenü für die Karte, wählen Sie **erweitert**, **auswählen**, **nicht ausgewählt ausblenden**aus.<br />     Nicht markierte Knoten werden auf der Map ausgeblendet und neue Knoten werden vom Analyzer als Hubs identifiziert.|
 |**Analyzer für Knoten, auf die nicht verwiesen wird**|...keine Verweise aus anderen Knoten haben. **Vorsicht:**  Überprüfen Sie jeden dieser Fälle, bevor Sie davon ausgehen, dass der Code nicht verwendet wird. Bestimmte Abhängigkeiten wie XAML- und Laufzeitabhängigkeiten können im Code nicht statisch gefunden werden.|
 
-Code Map Analyzer werden weiterhin ausgeführt, nachdem Sie sie anwenden. Wenn Sie die Map ändern, verarbeiten alle angewendeten Analyzer automatisch die aktualisierte Map erneut. Um die Ausführung eines**Analyzers**zu beenden, wählen Sie auf der Kartensymbol Leiste **Layout**  >  Analyzer aus. Deaktivieren Sie den ausgewählten Analyzer.
+Code Map Analyzer werden weiterhin ausgeführt, nachdem Sie sie anwenden. Wenn Sie die Map ändern, verarbeiten alle angewendeten Analyzer automatisch die aktualisierte Map erneut. Um die Ausführung eines **Analyzers**zu beenden, wählen Sie auf der Kartensymbol Leiste **Layout** > Analyzer aus. Deaktivieren Sie den ausgewählten Analyzer.
 
 > [!TIP]
 > Bei einer sehr großen Map tritt bei der Ausführung eines Analyzers,möglicherweise eine Ausnahme aufgrund unzureichenden Arbeitsspeichers auf. Bearbeiten Sie in diesem Fall die Map, um den Umfang zu verringern oder eine kleinere Map zu generieren, und führen Sie dann den Analyzer aus.

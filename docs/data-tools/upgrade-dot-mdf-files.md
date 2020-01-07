@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639573"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586093"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
 
@@ -101,11 +101,11 @@ Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwe
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>So erstellen Sie SQL Server Express der Standarddatenbank-Engine
 
-1. **Wählen Sie** in der Menüleiste Extras  > **Optionen**aus.
+1. Wählen Sie auf der Menüleiste **Extras** > **Optionen** aus.
 
 2. Erweitern Sie im Dialogfeld **Optionen** die Optionen **Daten Bank Tools** , und wählen Sie dann **Datenverbindungen**aus.
 
-3. Geben Sie im Textfeld **SQL Server Instanzname** den Namen der Instanz von SQL Server Express oder localdb an, die Sie verwenden möchten. Wenn die Instanz nicht benannt ist, geben Sie `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` an.
+3. Geben Sie im Textfeld **SQL Server Instanzname** den Namen der Instanz von SQL Server Express oder localdb an, die Sie verwenden möchten. Wenn die Instanz nicht benannt ist, geben Sie `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`an.
 
 4. Klicken Sie auf die Schaltfläche **OK**.
 

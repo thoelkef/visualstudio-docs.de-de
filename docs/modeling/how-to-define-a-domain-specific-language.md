@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985158"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594681"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projekt Mappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
@@ -32,7 +32,7 @@ Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über di
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
-- Visual Studio
+- öffnen
 - Visual Studio-Erweiterungs Entwicklung (enthält das Visual Studio SDK)
 - Modellierungs-SDK (installieren Sie es als einzelne Komponente in Visual Studio)
 
@@ -90,7 +90,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Übersicht über die DSL-Tools-Benutzeroberfläche](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
-### <a name="test-the-solution"></a>Testen der Projektmappe
+### <a name="test-the-solution"></a>Testen der Lösung
  Die Vorlagenprojektmappe enthält eine funktionsfähige DSL, die Sie ändern oder direkt verwenden können.
 
  Drücken Sie F5 oder STRG+F5, um die Projektmappe zu testen. Eine neue Instanz von Visual Studio wird im experimentellen Modus geöffnet.
@@ -190,7 +190,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Klicken Sie in der-Klasse auf **Domänen Eigenschaften** , drücken Sie die EINGABETASTE, und geben Sie dann den Namen einer Eigenschaft ein. Der Standardtyp einer Domäneneigenschaft lautet String. Wenn Sie den Typ ändern möchten, wählen Sie die Domänen Eigenschaft aus, und legen Sie den **Typ** im **Eigenschaften** Fenster fest. Wenn der gewünschte Typ nicht in der Dropdown Liste enthalten ist, finden Sie weitere Informationen unter [Hinzufügen von Eigenschafts Typen](#addTypes).
 
- **Legen Sie eine Eigenschaft für den Element Namen fest.** Wählen Sie eine Domänen Eigenschaft aus, die zum Identifizieren von Elementen im sprach-Explorer verwendet werden kann. Beispielsweise könnten Sie in der "Song"-Domänenklasse die "Titel"-Domäneneigenschaft auswählen. Legen Sie im Fenster **Eigenschaften** den Wert **Element Name** auf `true` fest.
+ **Legen Sie eine Eigenschaft für den Element Namen fest.** Wählen Sie eine Domäneneigenschaft aus, mit der Elemente im Sprach-Explorer identifiziert werden können. Beispielsweise könnten Sie in der "Song"-Domänenklasse die "Titel"-Domäneneigenschaft auswählen. Legen Sie im Fenster **Eigenschaften** den Wert **Element Name** auf `true`fest.
 
 ### <a name="create-derived-domain-classes"></a>Erstellen abgeleiteter Domänenklassen
  Soll eine Domänenklasse Varianten aufweisen, die ihre Eigenschaften und Beziehungen erben, erstellen Sie von der Domänenklasse abgeleitete Klassen. "Album" könnte z. B. die abgeleiteten Klassen WMA und MP3 haben.
@@ -344,7 +344,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Passen Sie ggf. **die Multiplizitäten der einzelnen Rollen an**. Soll jede Person höchstens einen Manager haben, legen Sie die Multiplizität (unter der Beschriftung "Manager") im Diagramm auf 0..1 fest.
 
- **Fügen Sie der Beziehung Domänen Eigenschaften hinzu.** In der Abbildung hat die Beziehung "Artist-Album" eine Eigenschaft der Rolle "Role".
+ **Fügen Sie der Beziehung Domänen Eigenschaften hinzu.** In der Abbildung hat die Beziehung zwischen Interpret und Album eine Eigenschaft "Rolle".
 
  **Legen Sie die Eigenschaft lässt Duplikate der Beziehung ein,** wenn mehrere Verknüpfungen derselben Klasse zwischen demselben paar von Modellelementen vorhanden sein können. Beispielsweise könnten Sie zulassen, dass ein Lehrer einen Schüler in mehreren Fächern unterrichtet.
 
@@ -396,7 +396,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 5. **Erstellen Sie Verbindungen** zwischen den Formen. Klicken Sie auf das Konnektorwerkzeug, auf eine Form und dann auf eine andere Form.
 
-6. **Stellen Sie sicher, dass Sie keine Verbindungen zwischen nicht geeigneten Klassen erstellen können.** Wenn Ihre Beziehung beispielsweise zwischen den Alben und Künstlern besteht, stellen Sie sicher, dass Sie keine Künstler mit Künstlern verknüpfen können.
+6. **Stellen Sie sicher, dass Sie keine Verbindungen zwischen nicht geeigneten Klassen erstellen können.** Besteht die Beziehung beispielsweise zwischen Alben und Interpreten, überprüfen Sie, ob Sie nicht Interpreten mit Interpreten verbinden können.
 
 7. **Überprüfen Sie, ob die Multiplizitäten korrekt sind. Stellen Sie z. b. sicher, dass Sie eine Person nicht mit mehreren Vorgesetzten verbinden können.**
 
@@ -606,7 +606,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Siehe auch Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Problem
+## <a name="trouble"></a> Problembehandlung
  In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Erweiterbarkeits Forum für Visualisierungs Tools](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problem | Vorschlag |

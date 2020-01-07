@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879281"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402032"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Sie immer eine angemessene Sperr Disziplin, und verwenden Sie SAL-Anmerkungen.
@@ -73,7 +73,7 @@ In der folgenden Tabelle sind die Sperr Anmerkungen aufgeführt.
 |`_Create_lock_level_(name)`|Eine Anweisung, die das Symbol deklariert, `name` eine Sperr Ebene sein kann, damit Sie in den Anmerkungen `_Has_Lock_level_` und `_Lock_level_order_`verwendet werden kann.|
 |`_Has_lock_kind_(kind)`|Kommentiert alle-Objekte, um die Typinformationen eines Ressourcen Objekts zu verfeinern. Manchmal wird ein gemeinsamer Typ für verschiedene Arten von Ressourcen verwendet, und der überladene Typ reicht nicht aus, um die semantischen Anforderungen zwischen verschiedenen Ressourcen zu unterscheiden. Im folgenden finden Sie eine Liste vordefinierter `kind` Parameter:<br /><br /> `_Lock_kind_mutex_`<br /> Sperrenkind-ID für Mutexes.<br /><br /> `_Lock_kind_event_`<br /> Sperrenkind-ID für Ereignisse.<br /><br /> `_Lock_kind_semaphore_`<br /> Sperrenkind-ID für Semaphore.<br /><br /> `_Lock_kind_spin_lock_`<br /> Sperrenkind-ID für Spin-sperren.<br /><br /> `_Lock_kind_critical_section_`<br /> Sperrenkind-ID für kritische Abschnitte.|
 |`_Has_lock_level_(name)`|Kommentiert ein Lock-Objekt und übergibt ihm die Sperr Ebene `name`.|
-|`_Lock_level_order_(name1, name2)`|Eine-Anweisung, die die Sperr Anordnung zwischen `name1` und `name2`ermöglicht.  Sperren, die über eine Ebene `name1` verfügen, müssen vor Sperren mit einer Ebene abgerufen werden `name2`|
+|`_Lock_level_order_(name1, name2)`|Eine-Anweisung, die die Sperr Anordnung zwischen `name1` und `name2`ermöglicht.  Sperren, die über eine Ebene `name1` verfügen, müssen vor Sperren mit der Ebene `name2`abgerufen werden.|
 |`_Post_same_lock_(expr1, expr2)`|Kommentiert eine Funktion und gibt an, dass die beiden sperren, `expr1` und `expr2`im Post-Zustand so behandelt werden, als wären Sie das gleiche Sperr Objekt.|
 |`_Releases_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine exklusive Sperrenanzahl des Sperr Objekts, das von `expr`benannt wird, dekreliert.|
 |`_Releases_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine Sperrenanzahl des Sperr Objekts, das von `expr`benannt wird, dekreliert.|

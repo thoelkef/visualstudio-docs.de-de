@@ -2,17 +2,17 @@
 title: 'Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344a9331ed63d2da27379770305905ecf5edee77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593524"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder hinzufügen, treten möglicherweise Fehler auf, wenn die Engine die Vorlage in den Quellcode umwandelt oder den generierten Code kompiliert. In der folgenden exemplarischen Vorgehensweise werden einige Dinge veranschaulicht, die Sie zum Debuggen einer Textvorlage ausführen können.
@@ -42,10 +42,10 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 
 2. Fügen Sie dem debugprojekt eine Textdatei mit dem Namen `DebugTest.tt` hinzu.
 
-3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von DebugTest.tt auf `TextTemplatingFileGenerator` festgelegt ist.
+3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von DebugTest.tt auf `TextTemplatingFileGenerator`festgelegt ist.
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Debugdirektiven, die auf ein Modell aus einer Textvorlage zugreifen
- Bevor Sie aus den Anweisungen und Ausdrücken in einer Textvorlage auf ein Modell zugreifen können, müssen Sie zuerst einen generierten Direktivenprozessor aufrufen. Wenn Sie den generierten Direktivenprozessor aufrufen, werden die Klassen in Ihrem Modell dem Textvorlagen Code als Eigenschaften zur Verfügung gestellt. Weitere Informationen finden Sie unter [zugreifen auf Modelle aus Text Vorlagen](../modeling/accessing-models-from-text-templates.md).
+ Bevor Sie aus den Anweisungen und Ausdrücken in einer Textvorlage auf ein Modell zugreifen können, müssen Sie zuerst einen generierten Direktivenprozessor aufrufen. Wenn Sie den generierten Direktivenprozessor aufrufen, werden die Klassen in Ihrem Modell dem Textvorlagen Code als Eigenschaften zur Verfügung gestellt. Weitere Informationen finden Sie unter [zugreifen auf Modelle aus Textvorlagen](../modeling/accessing-models-from-text-templates.md).
 
  In den folgenden Prozeduren debuggen Sie einen falschen Direktivennamen und einen falschen Eigenschaftsnamen.
 
@@ -157,11 +157,11 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 
      (C#)
 
-     **Die Transformation wird kompiliert: Microsoft. VisualStudio. TextTemplating \<GUID >. "Generatedtexttransform" enthält keine Definition für "examplemodel".**
+     **Die Transformation wird kompiliert: Microsoft. VisualStudio. TextTemplating\<GUID->. "Generatedtexttransform" enthält keine Definition für "examplemodel".**
 
      (Visual Basic)
 
-     **Die Transformation "examplemodel" ist kein Member von "Microsoft. VisualStudio. TextTemplating \<GUID >. Generatedtexttransformation '.**
+     **Kompilieren der Transformation: "examplemodel" ist kein Member von "Microsoft. VisualStudio. TextTemplating\<GUID >. Generatedtexttransformation '.**
 
      In diesem Fall enthält der Textvorlagen Code einen falschen Eigenschaftsnamen. Sie haben `ExampleModel` als Eigenschaftsnamen angegeben, aber der richtige Eigenschaftsname ist `LibraryModel`. Den richtigen Eigenschaftsnamen finden Sie im bereitgestellten Parameter, wie im folgenden Code gezeigt:
 

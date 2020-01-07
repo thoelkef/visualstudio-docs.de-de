@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903882"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404282"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Anzeigen von Datenwerten in DataTips im Code-Editor
 
@@ -96,7 +96,7 @@ Wenn Sie den Wert einer Variablen oder eines Elements in einem DataTip bearbeite
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>Anheften von Eigenschaften in DataTips (unterstützt in Visual Studio 2019, Version 16,4, Vorschau 3 oder höher)
+## <a name="pin-properties-in-datatips"></a>Anheften von Eigenschaften in DataTips
 
 > [!NOTE]
 > Dieses Feature wird für .net Core 3,0 oder höher unterstützt.
@@ -138,7 +138,7 @@ Sie können DataTips in eine XML-Datei exportieren, die Sie mithilfe eines Text-
 1. Wählen Sie im Dialogfeld **DataTips importieren** die DataTips-XML-Datei aus, die Sie öffnen möchten, und wählen Sie dann **Öffnen**aus.
 
 ## <a name="see-also"></a>Siehe auch
-- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
+- [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)
 - [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
 - [Erster Einblick in das Debuggen](../debugger/debugger-feature-tour.md)
 - [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

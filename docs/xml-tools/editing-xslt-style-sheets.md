@@ -3,17 +3,17 @@ title: Bearbeiten von XSLT-Stylesheets
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc987f8362d5daf435b7e9de860cc13f16a1aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646059"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592840"
 ---
 # <a name="edit-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
 
@@ -25,7 +25,7 @@ In der folgenden Tabelle werden die für die Arbeit mit XSLT-Stylesheets spezifi
 
 **Syntax Farbgebung**
 
-XSLT-Schlüsselwörter wie `template` und `match` werden in der XSLT-Schlüsselwort Farbe angezeigt, die in den Einstellungen für **Schriftarten und Farben** angegeben ist.
+XSLT-Schlüsselwörter wie `template` und `match`werden in der XSLT-Schlüsselwort Farbe angezeigt, die in den Einstellungen für **Schriftarten und Farben** angegeben ist.
 
 **Wellenförmige Unterstreichungen**
 

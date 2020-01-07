@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568841"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587471"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
@@ -48,7 +48,7 @@ Diese Regeln sind standardmäßig deaktiviert, aber Sie können Sie über [**Pro
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Konfiguration
+### <a name="configuration"></a>-Konfiguration
 
 Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln im Paket FxCop Analyzer ausgelöst werden.
 
@@ -72,13 +72,13 @@ Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln im 
 
 ## <a name="calculate-code-metrics-menu-command"></a>Menübefehl "Code Metrik berechnen"
 
-Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE mithilfe des Menüs **analysieren**  > **Code Metriken** .
+Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE mithilfe des Menüs **analysieren** > **Code Metriken** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generieren von Codemetrikergebnissen für eine gesamte Projekt Mappe
 
 Sie können Code Metrikergebnisse für eine gesamte Lösung auf eine der folgenden Arten generieren:
 
-- Wählen Sie in der Menüleiste **analysieren** aus,  >   > **für die Lösung** **Code Metriken berechnen** .
+- Wählen Sie in der Menüleiste **analysieren** aus, >  > **für die Lösung** **Code Metriken berechnen** .
 
 - Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Lösung, und wählen Sie dann **Codemetriken berechnen**aus.
 
@@ -90,7 +90,7 @@ Die Ergebnisse werden generiert, und das Fenster **Code Metrikergebnisse** wird 
 
 1. Wählen Sie in **Projektmappen-Explorer**mindestens ein Projekt aus.
 
-1. Wählen Sie in der Menüleiste **analysieren** aus,  >   > **Metrik Code Metrik** **für ausgewählte Projekte**berechnen.
+1. Wählen Sie in der Menüleiste **analysieren** aus, >  > **Metrik Code Metrik** **für ausgewählte Projekte**berechnen.
 
 Die Ergebnisse werden generiert, und das Fenster **Code Metrikergebnisse** wird angezeigt. Um die Ergebnis Details anzuzeigen, erweitern Sie die Struktur in der **Hierarchie**.
 
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Sie können den Namen der Ausgabedatei überschreiben, indem Sie `/p:MetricsOutputFile=<filename>` angeben. Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, indem Sie `/p:LEGACY_CODE_METRICS_MODE=true`angeben. Beispiel:
+Sie können den Namen der Ausgabedatei überschreiben, indem Sie `/p:MetricsOutputFile=<filename>`angeben. Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, indem Sie `/p:LEGACY_CODE_METRICS_MODE=true`angeben. Beispiel:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -265,5 +265,5 @@ Bei anderen Metriken, z. b. `CyclomaticComplexity` und `MaintainabilityIndex`, w
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden des Fensters "Code Metrikergebnisse"](../code-quality/working-with-code-metrics-data.md)
+- [Verwenden Sie das Fenster Codemetrikergebnisse](../code-quality/working-with-code-metrics-data.md)
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)

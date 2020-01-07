@@ -5,8 +5,8 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,20 +14,20 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 50afd9ffd72c37510997176f103f3b269f29fcf2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649310"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587445"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Code Analyse Warnungen unterdrücken
 
 Häufig ist es hilfreich, anzugeben, dass eine Warnung nicht anwendbar ist. Dies weist Teammitgliedern an, dass der Code überprüft wurde und dass die Warnung unterdrückt werden kann. In-Source-Unterdrückung (ISS) verwendet das <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>-Attribut, um eine Warnung zu unterdrücken. Das-Attribut kann in der Nähe des Code Segments platziert werden, das die Warnung generiert hat. Sie können das <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>-Attribut zur Quelldatei hinzufügen, indem Sie es eingeben, oder Sie können das Kontextmenü für eine Warnung im **Fehlerliste** verwenden, um es automatisch hinzuzufügen.
 
-Das <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>-Attribut ist ein bedingtes Attribut, das in den IL-Metadaten der verwalteten Codeassembly enthalten ist, nur wenn das CODE_ANALYSIS-Kompilierungs Symbol zur Kompilierzeit definiert ist.
+Das <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>-Attribut ist ein bedingtes Attribut, das in den IL-Metadaten der verwalteten Codeassembly enthalten ist, nur wenn das CODE_ANALYSIS Kompilierungs Symbol zum Zeitpunkt der Kompilierung definiert wird.
 
-Verwenden C++Sie in/CLI die Makros ca \_SUPPRESS \_MESSAGE oder ca \_GLOBAL \_SUPPRESS_MESSAGE in der Header Datei, um das-Attribut hinzuzufügen.
+Verwenden C++Sie in/CLI die Makros-Zertifizierungsstelle\_\_Nachricht oder die Zertifizierungsstelle\_globalen\_SUPPRESS_MESSAGE in der Header Datei zu unterdrücken, um das-Attribut hinzuzufügen.
 
 > [!NOTE]
 > Sie sollten keine in-Source-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die in-Source-Unterdrückungs Metadaten versehentlich versendet werden. Außerdem kann die Leistung Ihrer Anwendung aufgrund der Verarbeitungskosten der in-Source-Unterdrückung beeinträchtigt werden.
@@ -35,7 +35,7 @@ Verwenden C++Sie in/CLI die Makros ca \_SUPPRESS \_MESSAGE oder ca \_GLOBAL \_SU
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie **analysieren**  > **Code Analyse ausführen und aktive Probleme unterdrücken**auswählen.
+> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie **analysieren** > **Code Analyse ausführen und aktive Probleme unterdrücken**auswählen.
 >
 > ![Ausführen der Code Analyse und unterdrücken von Problemen in Visual Studio](media/suppress-active-issues.png)
 
@@ -44,7 +44,7 @@ Verwenden C++Sie in/CLI die Makros ca \_SUPPRESS \_MESSAGE oder ca \_GLOBAL \_SU
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2019 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie auf **analysieren**  > **erstellen klicken und aktive Probleme unterdrücken**.
+> Wenn Sie ein Projekt zu Visual Studio 2019 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie auf **analysieren** > **erstellen klicken und aktive Probleme unterdrücken**.
 
 ::: moniker-end
 
@@ -78,17 +78,17 @@ Zu den Eigenschaften des-Attributs gehören:
 
 - **Bereich** : das Ziel, für das die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es auf das Ziel des Attributs festgelegt. Folgende [Bereiche](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) werden unterstützt:
 
-  - `module`
+  - `module`: dieser Bereich unterdrückt Warnungen für eine Assembly. Es handelt sich um eine globale Unterdrückung, die für das gesamte Projekt gilt.
 
-  - `resource`
+  - `resource` (nur[Legacy FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) ) dieser Bereich unterdrückt Warnungen in Diagnoseinformationen, die in Ressourcen Dateien geschrieben werden, die Teil des Moduls (Assembly) sind. Dieser Bereich wird in C#/VB-Compilern für die Roslyn Analyzer-Diagnose, die nur Quelldateien analysiert, nicht gelesen/beachtet.
 
-  - `type`
+  - `type`: dieser Bereich unterdrückt Warnungen für einen Typ.
 
-  - `member`
+  - `member`: dieser Bereich unterdrückt Warnungen für einen Member.
 
   - `namespace`: dieser Bereich unterdrückt Warnungen für den Namespace selbst. Warnungen für Typen im-Namespace werden nicht unterdrückt.
 
-  - `namespaceanddescendants`-(neu in Visual Studio 2019) dieser Bereich unterdrückt Warnungen in einem Namespace und allen untergeordneten Symbolen. Der `namespaceanddescendants`-Wert wird von der Legacy Analyse ignoriert.
+  - `namespaceanddescendants`-(erfordert Compilerversion 3. x oder höher und Visual Studio 2019) dieser Bereich unterdrückt Warnungen in einem Namespace und allen untergeordneten Symbolen. Der `namespaceanddescendants`-Wert wird von der Legacy Analyse ignoriert.
 
 - **Target** : ein Bezeichner, der verwendet wird, um das Ziel anzugeben, auf dem die Warnung unterdrückt wird. Er muss einen voll qualifizierten Elementnamen enthalten.
 
@@ -112,7 +112,7 @@ Unterdrückungs Attribute können auf eine Methode angewendet werden, können ab
 
 In einigen Fällen möchten Sie möglicherweise eine bestimmte Instanz des Verstoßes unterdrücken, sodass zukünftiger Code nicht automatisch von der Code Analyse Regel ausgenommen wird. Bestimmte Code Analyse Regeln ermöglichen es Ihnen, dies zu erreichen, indem Sie die `MessageId`-Eigenschaft des <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>-Attributs verwenden. Im Allgemeinen berücksichtigen ältere Regeln für Verstöße für ein bestimmtes Symbol (eine lokale Variable oder einen Parameter) die `MessageId` Eigenschaft. [CA1500: variablenamesschuldnotmatchfieldnames](../code-quality/ca1500.md) ist ein Beispiel für eine solche Regel. Ältere Regeln für Verstöße gegen ausführbaren Code (nicht-Symbol) beachten jedoch nicht die `MessageId`-Eigenschaft. Außerdem beachten .NET Compiler Platform ("Roslyn")-Analysen die `MessageId`-Eigenschaft nicht.
 
-Um eine bestimmte Symbol Verletzung einer Regel zu unterdrücken, geben Sie den Symbolnamen für die `MessageId`-Eigenschaft des <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attributs an. Das folgende Beispiel zeigt Code mit zwei Verstößen gegen [CA1500: variablenamestiondnotmatchfieldnames](../code-quality/ca1500.md) &mdash;one für die `name` Variable und eine für die `age` Variable. Nur die Verletzung des `age` Symbols wird unterdrückt.
+Um eine bestimmte Symbol Verletzung einer Regel zu unterdrücken, geben Sie den Symbolnamen für die `MessageId`-Eigenschaft des <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attributs an. Das folgende Beispiel zeigt Code mit zwei Verstößen gegen [CA1500: variablenamestiondnotmatchfieldnames](../code-quality/ca1500.md)&mdash;einen für die `name` Variable und einen für die `age` Variable. Nur die Verletzung des `age` Symbols wird unterdrückt.
 
 ```vb
 Public Class Animal
@@ -147,7 +147,7 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>Generierter Code
+## <a name="generated-code"></a>Generierter code
 
 Compiler verwalteter Code und einige Tools von Drittanbietern generieren Code, um eine schnelle Code Entwicklung zu ermöglichen. Vom Compiler generierter Code, der in Quelldateien angezeigt wird, ist in der Regel mit dem `GeneratedCodeAttribute`-Attribut gekennzeichnet.
 

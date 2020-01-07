@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747621"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597190"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
@@ -51,7 +51,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
 4. Navigieren Sie unter **zu Modellierungsprojekt hinzufügen**zu einem vorhandenen Modellierungsprojekt in der Projekt Mappe, und wählen Sie es aus.
 
-     - oder -
+     \- oder -
 
      Wählen Sie **Neues Modellierungsprojekt erstellen** aus, um der Projekt Mappe ein neues Modellierungsprojekt hinzuzufügen.
 
@@ -70,7 +70,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
 4. Erstellen eines neuen Abhängigkeits Diagramms für die Lösung mit dem Menü " **Architektur** "
 
-5. Wählen Sie alle Knoten in der Code Map aus (verwenden Sie _STRG_  + _ein_, oder verwenden Sie die Option "Gummi Band", indem Sie die _UMSCHALT_ Taste drücken, bevor Sie auf klicken, ziehen und freigeben klicken.
+5. Wählen Sie alle Knoten in der Code Map aus (verwenden Sie _STRG_ + _ein_, oder verwenden Sie die Option "Gummi Band", indem Sie die _UMSCHALT_ Taste drücken, bevor Sie auf klicken, ziehen und freigeben klicken.
 
 6. Ziehen Sie die ausgewählten Elemente per Drag & Drop oder durch Kopieren und Einfügen in das neue Abhängigkeits Validierungs Diagramm.
 
@@ -91,8 +91,8 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 |Erstellen einer einzelnen Ebene für alle ausgewählten Artefakte|Ziehen Sie alle Artefakte gleichzeitig in das Abhängigkeits Diagramm.<br /><br /> Im Diagramm wird eine Ebene angezeigt und mit allen Artefakten verknüpft.|
 |Erstellen einer Ebene für jedes ausgewählte Artefakt|Halten Sie die **UMSCHALT** Taste gedrückt, während Sie alle Artefakte gleichzeitig in das Abhängigkeits Diagramm ziehen. **Hinweis:**  Wenn Sie mithilfe der **UMSCHALT** Taste einen Bereich von Elementen auswählen, geben Sie den Schlüssel nach dem Auswählen der Artefakte frei. Halten Sie sie anschließend erneut gedrückt, wenn Sie die Artefakte in das Diagramm ziehen. <br /><br /> Im Diagramm wird für jedes Artefakt eine Ebene angezeigt und mit den einzelnen Artefakten verknüpft.|
 |Hinzufügen eines Artefakts zu einer Ebene|Ziehen Sie das Artefakt auf die Ebene.|
-|Erstellen einer neuen, nicht verknüpften Ebene|Erweitern Sie in der **Toolbox**den Abschnitt **Abhängigkeits Diagramm** , und ziehen Sie dann eine **Ebene** in das Abhängigkeits Diagramm.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das Abhängigkeits Diagramm, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
-|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
+|Erstellen einer neuen, nicht verknüpften Ebene|Erweitern Sie in der **Toolbox**den Abschnitt **Abhängigkeits Diagramm** , und ziehen Sie dann eine **Ebene** in das Abhängigkeits Diagramm.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das Abhängigkeits Diagramm, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
+|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
 |Erstellen einer neuen Ebene, die mehrere vorhandene Ebenen enthält|Wählen Sie die Ebenen aus, öffnen Sie das Kontextmenü für Ihre Auswahl, und wählen Sie dann **Gruppe**aus.|
 |Ändern der Farbe einer Ebene|Legen Sie die **Color** -Eigenschaft auf die gewünschte Farbe fest.|
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
@@ -118,7 +118,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 |**Aktion**|**Im ebenenexplorer**|
 |-|-|
 |Löschen des Links zwischen der Ebene und einem Artefakt|Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Löschen**aus.|
-|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Ausschneiden**aus.<br />2. Öffnen Sie im Abhängigkeits Diagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
+|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Ausschneiden**aus.<br />2. Öffnen Sie im Abhängigkeits Diagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
 |Kopieren des Links von einer Ebene auf eine andere Ebene|1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Kopieren**aus.<br />2. Öffnen Sie im Abhängigkeits Diagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
 |Erstellen einer neuen Ebene aus einem vorhandenen Artefaktlink|Ziehen Sie den Artefaktlink in einen leeren Bereich des Diagramms.|
 |Überprüfen Sie, ob ein verknüpftes Element die Validierung für das Abhängigkeits Diagramm unterstützt|Sehen Sie sich die Spalte **unterstützt die Validierung** für den artefaktlink an.|

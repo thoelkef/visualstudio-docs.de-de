@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597112"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
-Wenn Sie im **Eigenschaften** Fenster, in den Dialogfeldern oder in Designern wie dem Variablen-Designer **nach Typen** aus einer Liste von Datentypen suchen auswählen, wird das Dialogfeld **.NET-Typ suchen und auswählen** (in Kürzungs Form als "Typ" bezeichnet). Browser "). In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys und Projekte auswählen.
+Wenn Sie im **Eigenschaften** Fenster, in den Dialogfeldern oder in Designern wie dem Variablen-Designer **nach Typen** aus einer Liste von Datentypen suchen auswählen, wird das Dialogfeld **.NET-Typ suchen und auswählen** (in Kürzungs Form als "Typbrowser" bezeichnet). In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys und Projekte auswählen.
 
 Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem eingesetzt:
 
@@ -39,7 +39,7 @@ Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem ei
 
 1. Geben Sie im Feld **Typname** den Namen des Typs ein, den Sie verwenden möchten.
 
-2. Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie eine der folgenden Aktionen aus:
 
     - Sobald der Name des Typs, den Sie verwenden möchten, in der Struktur im Feld **Typname** angezeigt wird, doppelklicken Sie auf den Typ, um ihn auszuwählen.
 

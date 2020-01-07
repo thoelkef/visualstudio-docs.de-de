@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650101"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593160"
 ---
 # <a name="parallel-activity-designer"></a>Parallel-Aktivitätsdesigner
 
@@ -39,11 +39,11 @@ Um der <xref:System.Activities.Statements.Parallel.Branches%2A>-Auflistung der P
 
 In der folgenden Tabelle werden die nützlichsten Eigenschaften der Parallel-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftsname|Erforderlich|Verwendungs-|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **parallel**. Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **parallel**. Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Enthält die Auflistung von untergeordneten Aktivitäten, die ausgeführt werden sollen.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Die Auswertung erfolgt nach Beendigung eines Branches. Wenn **true**ausgewertet wird, werden die geplanten ausstehenden branches abgebrochen. Wenn diese Eigenschaft nicht festgelegt oder als **false**ausgewertet wird, wird die-Aktivität abgeschlossen, wenn alle untergeordneten Aktivitäten abgeschlossen sind. Der Standardwert ist **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Falsch|Die Auswertung erfolgt nach Beendigung eines Branches. Wenn **true**ausgewertet wird, werden die geplanten ausstehenden branches abgebrochen. Wenn diese Eigenschaft nicht festgelegt oder als **false**ausgewertet wird, wird die-Aktivität abgeschlossen, wenn alle untergeordneten Aktivitäten abgeschlossen sind. Der Standardwert ist **NULL**.|
 
 ## <a name="see-also"></a>Siehe auch
 

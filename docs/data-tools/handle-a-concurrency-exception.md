@@ -13,21 +13,21 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648430"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586600"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
-Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) werden ausgelöst, wenn zwei Benutzer gleichzeitig versuchen, dieselben Daten in einer Datenbank zu ändern. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die veranschaulicht, wie ein <xref:System.Data.DBConcurrencyException> abgefangen, die Zeile, die den Fehler verursacht hat, ermittelt wird, und wie eine Strategie für die Handhabung gefunden wird.
+Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) werden ausgelöst, wenn zwei Benutzer gleichzeitig versuchen, dieselben Daten in einer Datenbank zu ändern. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die veranschaulicht, wie ein <xref:System.Data.DBConcurrencyException>abgefangen, die Zeile, die den Fehler verursacht hat, ermittelt wird, und wie eine Strategie für die Handhabung gefunden wird.
 
 Diese exemplarische Vorgehensweise enthält folgende Vorgänge:
 
@@ -45,7 +45,7 @@ Diese exemplarische Vorgehensweise enthält folgende Vorgänge:
 
 7. Fangen Sie den Fehler ab, und zeigen Sie anschließend die verschiedenen Versionen des Datensatzes an, um festzulegen, ob die Aktualisierung der Datenbank fortgesetzt oder abgebrochen werden soll.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -63,11 +63,11 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
        Nach kurzer Zeit wird die Ausführung der Abfrage abgeschlossen und die Datenbank Northwind erstellt.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
 
 Erstellen Sie zunächst eine neue Windows Forms Anwendung:
 
-1. Wählen Sie in Visual Studio im Menü **Datei** die Option **neu**  > **Projekt**aus.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
 2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
 
@@ -112,7 +112,7 @@ In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView?d
 
 4. Ziehen Sie die Tabelle auf einen leeren Bereich des Formulars.
 
-     Ein <xref:System.Windows.Forms.DataGridView> Steuerelement mit dem Namen **CustomersDataGridView**und eine <xref:System.Windows.Forms.BindingNavigator> mit dem Namen **CustomersBindingNavigator**werden dem Formular hinzugefügt, das an die <xref:System.Windows.Forms.BindingSource> gebunden ist. Dies wird wiederum an die Customers-Tabelle im NorthwindDataSet gebunden.
+     Ein <xref:System.Windows.Forms.DataGridView> Steuerelement mit dem Namen **CustomersDataGridView**und eine <xref:System.Windows.Forms.BindingNavigator> mit dem Namen **CustomersBindingNavigator**werden dem Formular hinzugefügt, das an die <xref:System.Windows.Forms.BindingSource>gebunden ist. Dies wird wiederum an die Customers-Tabelle im NorthwindDataSet gebunden.
 
 ## <a name="test-the-form"></a>Testen des Formulars
 
@@ -122,7 +122,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten bi
 
      Das Formular wird mit einem <xref:System.Windows.Forms.DataGridView>-Steuerelement angezeigt, das mit Daten aus der Customers-Tabelle gefüllt ist.
 
-2. Wählen Sie im Menü **Debuggen** die Option **Debuggen Abbrechen**.
+2. Klicken Sie im Menü **Debuggen** auf **Stop Debugging** (Debuggen beenden).
 
 ## <a name="handle-concurrency-errors"></a>Behandeln von Parallelitäts Fehlern
 
@@ -191,7 +191,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 2. Wenn das Formular angezeigt wird, führen Sie es weiterhin, und wechseln Sie zur Visual Studio-IDE.
 
-3. Wählen Sie im Menü **Ansicht** die Option **Server-Explorer**aus.
+3. Wählen Sie im Menü **Ansicht** den Eintrag **Server-Explorer** aus.
 
 4. Erweitern Sie im **Server-Explorer** die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten **Tabellen**.
 

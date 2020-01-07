@@ -10,17 +10,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08451c679f372cb376c6baf97a9a4d06282ba45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748425"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589629"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 
@@ -41,7 +41,7 @@ Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, 
 
 2. Fügen Sie dem Projekt eine Textvorlagen Datei hinzu, und geben Sie Ihr einen Namen mit der Erweiterung **. tt**.
 
-    Wählen Sie dazu **Projektmappen-Explorer**im Kontextmenü des Projekts  > **Neues Element** **Hinzufügen** aus. Wählen Sie im Dialogfeld **Neues Element hinzufügen** im mittleren Bereich **Text Vorlage** aus.
+    Wählen Sie dazu **Projektmappen-Explorer**im Kontextmenü des Projekts > **Neues Element** **Hinzufügen** aus. Wählen Sie im Dialogfeld **Neues Element hinzufügen** im mittleren Bereich **Text Vorlage** aus.
 
     Beachten Sie, dass die Eigenschaft **benutzerdefiniertes Tool** der Datei **TextTemplatingFileGenerator**ist.
 
@@ -75,7 +75,7 @@ In den folgenden Fällen wird eine Vorlage ausgeführt, wobei die untergeordnete
 
 - Bearbeiten Sie die Vorlage, und ändern Sie dann den Fokus in ein anderes Visual Studio-Fenster.
 
-- Sie speichern die Vorlage.
+- Speichern Sie die Vorlage.
 
 - Klicken Sie im Menü **Erstellen** auf **alle Vorlagen transformieren** . Dadurch werden alle Vorlagen in der Visual Studio-Projekt Mappe transformiert.
 
@@ -134,7 +134,7 @@ So debuggen Sie eine Textvorlage
    Die Vorlage wird an den Breakpoints ausgeführt und angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.
 
 > [!TIP]
-> Mit `debug="true"` wird die Zuordnung des generierten Codes zur Textvorlage genauer, indem mehr Direktiven zur Zeilennummerierungsdirektive in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
+> `debug="true"` bewirkt, dass die generierten Code Map genauer in die Textvorlage eingefügt werden, indem weitere Zeilen nummerierungsdirektiven in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
 >
 > Sie können jedoch die Klausel in der template-Anweisung lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.
 
@@ -299,7 +299,7 @@ Wenn sich das Quellmodell ändert, müssen Sie alle Vorlagen in der Projektmappe
 Wenn Sie das Visual Studio-Modellierungs-SDK installiert haben, können alle Vorlagen automatisch transformiert werden, wenn Sie einen Build ausführen. Bearbeiten Sie dazu die Projektdatei (.csproj oder .vbproj) in einem Text-Editor, und fügen Sie in der Nähe des Endes der Datei nach allen anderen `<import>`-Anweisungen die folgenden Zeilen hinzu:
 
 > [!NOTE]
-> Das Text Template Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Features von Visual Studio installieren. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Das Text Template Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Features von Visual Studio installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -325,7 +325,7 @@ Wenn Sie das Visual Studio-Modellierungs-SDK installiert haben, können alle Vor
 
 ::: moniker-end
 
-Weitere Informationen finden Sie unter [Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md).
+Weitere Informationen finden Sie unter [Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Fehlerberichte
 
@@ -342,7 +342,7 @@ Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>So konvertieren Sie eine vorhandene Datei in eine Entwurfszeitvorlage
 
-1. Fügen Sie Ihrem Visual Studio-Projekt eine Datei des Typs hinzu, den Sie generieren möchten, z. b. eine `.cs`, `.vb` oder `.resx` Datei.
+1. Fügen Sie Ihrem Visual Studio-Projekt eine Datei des Typs hinzu, den Sie generieren möchten, z. b. eine `.cs`, `.vb`oder `.resx` Datei.
 
 2. Testen Sie die neue Datei, um sicherzustellen, dass sie ordnungsgemäß funktioniert.
 

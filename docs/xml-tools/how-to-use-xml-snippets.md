@@ -3,17 +3,17 @@ title: Verwenden von XML-Ausschnitten
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fcddb8553da39b035e649155e04c3da4b430e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: decc565eca9b7299761405e06c0cecf82f63319d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601794"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592606"
 ---
 # <a name="how-to-use-xml-snippets"></a>Gewusst wie: Verwenden von XML-Ausschnitten
 
@@ -26,7 +26,7 @@ Nachdem dem Editor der XML-Ausschnitt hinzugefügt wurde, werden alle editierbar
 In den folgenden Prozeduren wird beschrieben, wie Sie auf den Befehl **Ausschnitt einfügen** zugreifen.
 
 > [!NOTE]
-> Der Befehl **Ausschnitt einfügen** ist auch über die Tastenkombination (**STRG** +**K**, dann **STRG** +**X**) verfügbar.
+> Der Befehl **Ausschnitt einfügen** ist auch über die Tastenkombination (**STRG**+**K**, dann **STRG**+**X**) verfügbar.
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>So fügen Sie Ausschnitte über das Kontextmenü ein
 
@@ -52,7 +52,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie auf den Befehl **Ausschnit
 
 1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.
 
-2. Beginnen Sie mit dem Eingeben des XML-Ausschnitts, der der Datei hinzugefügt werden soll. Wenn die automatische Vervollständigung aktiviert ist, wird die Wort vervollständigen-Liste von IntelliSense angezeigt. Wenn Sie nicht angezeigt wird, drücken Sie **STRG** +**LEERTASTE** , um Sie zu aktivieren.
+2. Beginnen Sie mit dem Eingeben des XML-Ausschnitts, der der Datei hinzugefügt werden soll. Wenn die automatische Vervollständigung aktiviert ist, wird die Wort vervollständigen-Liste von IntelliSense angezeigt. Wenn Sie nicht angezeigt wird, drücken Sie **STRG**+**LEERTASTE** , um Sie zu aktivieren.
 
 3. Wählen Sie den XML-Ausschnitt aus der Wort vervollständigen-Liste aus.
 
@@ -76,7 +76,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie auf den Befehl **Ausschnit
 In den folgenden Verfahren wird beschrieben, wie Sie auf den Befehl **Umschließen mit** zugreifen.
 
 > [!NOTE]
-> Der Befehl **Umschließen mit** ist auch über die Tastenkombination (**STRG** +**K**, dann **STRG** +**S**) verfügbar.
+> Der Befehl **Umschließen mit** ist auch über die Tastenkombination (**STRG**+**K**, dann **STRG**+**S**) verfügbar.
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>So verwenden Sie "umgeben mit" über das Kontextmenü
 
@@ -102,7 +102,7 @@ In den folgenden Verfahren wird beschrieben, wie Sie auf den Befehl **Umschließ
 
 Wenn Sie einen XML-Ausschnitt ausgewählt haben, wird der Text des Codeausschnitts automatisch an der Cursorposition eingefügt. Alle editierbaren Felder im Ausschnitt sind hervorgehoben, und das erste editierbare Feld wird automatisch markiert. Das aktuell markierte Feld ist geschachtelt.
 
-Wenn ein Feld markiert ist, können Sie einen neuen Wert in das Feld eingeben. Durch Drücken der **Tab** -Taste durch die bearbeitbaren Felder des Code Ausschnitts durch Drücken der **UMSCHALT** +**Registerkarte** werden Sie in umgekehrter Reihenfolge durchlaufen Durch Klicken auf ein Feld wird der Cursor in diesem Feld platziert. Mit einem Doppelklick auf ein Feld wird dieses markiert. Wenn ein Feld hervorgehoben ist, kann eine QuickInfo angezeigt werden, die eine Beschreibung des Felds liefert.
+Wenn ein Feld markiert ist, können Sie einen neuen Wert in das Feld eingeben. Durch Drücken der **Tab** -Taste durch die bearbeitbaren Felder des Code Ausschnitts durch Drücken der **UMSCHALT**+**Registerkarte** werden Sie in umgekehrter Reihenfolge durchlaufen Durch Klicken auf ein Feld wird der Cursor in diesem Feld platziert. Mit einem Doppelklick auf ein Feld wird dieses markiert. Wenn ein Feld hervorgehoben ist, kann eine QuickInfo angezeigt werden, die eine Beschreibung des Felds liefert.
 
 Nur die erste Instanz des jeweiligen Feldes ist editierbar. Wenn dieses Feld hervorgehoben ist, sind die anderen Instanzen des Feldes mit einem Rahmen versehen. Wenn Sie den Wert eines editierbaren Feldes ändern, wird das Feld an allen Stellen im Ausschnitt geändert, an denen es verwendet wird.
 

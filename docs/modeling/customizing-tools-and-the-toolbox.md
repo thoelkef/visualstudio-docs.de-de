@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords:
 - Domain-Specific Language, toolbox
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747595"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589720"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 
@@ -69,7 +69,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
 3. Legen Sie die **Toolbox Icon** -Eigenschaft so fest, dass Sie auf eine 16x16-Bitmap verweist.
 
-     Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei in Projektmappen-Explorer im Ordner " **dsl\resources** ". Die Datei sollte die folgenden Eigenschaftswerte aufweisen: **Buildaktion**  = **Inhalt**. **In Ausgabeverzeichnis kopieren**  = **nicht kopieren**.
+     Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei in Projektmappen-Explorer im Ordner " **dsl\resources** ". Die Datei sollte die folgenden Eigenschaftswerte aufweisen: **Buildaktion** = **Inhalt**. **In Ausgabeverzeichnis kopieren** = **nicht kopieren**.
 
 4. **Für ein Element Tool:** Legen Sie die Eigenschaft **Klasse** des Tools so fest, dass Sie auf eine konkrete Domänen Klasse verweist, die einer Form zugeordnet ist.
 
@@ -154,12 +154,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Verbindungs-Generatoren enthalten mindestens eine Direktive für Linkverbindungen, um die Domänenbeziehung sowie die Quell- und Zielelemente anzugeben. Beispielsweise können Sie in der Lösungs Vorlage für Aufgaben Abläufe den **commentreferencessubjezbuilder** im **DSL-Explorer**sehen. Dieser Verbindungs-Generator enthält eine Link Verbindungs Direktive mit dem Namen **commentreferencessubjects**, die der Domänen Beziehung **commentreferencessubjects**zugeordnet ist. Diese Direktive für Linkverbindungen enthält eine Direktive für die Quellrolle, die auf die `Comment`-Domänenklasse verweist, und eine Direktive für die Zielrolle, die auf die `FlowElement`-Domänenklasse verweist.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Verwenden von Verbindungs-Generatoren zum Beschränken von Quell- und Zielrollen
- Sie können mit Verbindungs-Generatoren das Auftreten bestimmter Klassen in der Quell- oder Zielrolle einer angegebenen Domänenbeziehung beschränken. Beispiel: Sie verfügen über eine Basisdomänenklasse, die eine Domänenbeziehung mit einer anderen Domänenklasse aufweist, Sie möchten jedoch nicht, dass alle abgeleiteten Klassen der Basisklasse in dieser Beziehung die gleiche Rolle haben. In der Lösung für den Task Ablauf gibt es vier konkrete Domänen Klassen (**StartPoint**, **EndPoint**, **mergebranch**und **Synchronisierung**), die direkt von der abstrakten Domänen Klasse **flowelements**erben, und zwei konkrete Domänen Klassen (**Task** und **objectinstate**), die indirekt von der Klasse erben. Es gibt auch eine **flowverweisbeziehung** , die **flowelements** -Domänen Klassen sowohl in der Quell-als auch in der Zielrolle übernimmt. Eine Instanz einer **Endpunkt** Domänen Klasse sollte jedoch nicht die Quelle einer Instanz einer **Flow** -Beziehung sein, und es sollte keine Instanz einer **Start Point** -Klasse das Ziel einer Instanz einer **Flow** -Beziehung sein. Der **flowbuilder** -Verbindungs-Generator verfügt über eine Link Verbindungs Direktive namens **Flow** , die angibt, welche Domänen Klassen die Quell Rolle wiedergeben können (**Task**, **mergebranch**, **StartPoint**und **Synchronisierung**) und welche kann die Zielrolle wiedergeben (**mergebranch**, **Endpunkt**und **Synchronisierung**).
+ Sie können mit Verbindungs-Generatoren das Auftreten bestimmter Klassen in der Quell- oder Zielrolle einer angegebenen Domänenbeziehung beschränken. Beispiel: Sie verfügen über eine Basisdomänenklasse, die eine Domänenbeziehung mit einer anderen Domänenklasse aufweist, Sie möchten jedoch nicht, dass alle abgeleiteten Klassen der Basisklasse in dieser Beziehung die gleiche Rolle haben. In der Lösung für den Task Ablauf gibt es vier konkrete Domänen Klassen (**StartPoint**, **EndPoint**, **mergebranch**und **Synchronisierung**), die direkt von der abstrakten Domänen Klasse " **flowelements**" und zwei konkrete Domänen Klassen (**Task** und **objectinstate**) erben, die indirekt von der Klasse erben. Es gibt auch eine **flowverweisbeziehung** , die **flowelements** -Domänen Klassen sowohl in der Quell-als auch in der Zielrolle übernimmt. Eine Instanz einer **Endpunkt** Domänen Klasse sollte jedoch nicht die Quelle einer Instanz einer **Flow** -Beziehung sein, und es sollte keine Instanz einer **Start Point** -Klasse das Ziel einer Instanz einer **Flow** -Beziehung sein. Der **flowbuilder** -Verbindungs-Generator verfügt über eine Link Verbindungs Direktive namens **Flow** , die angibt, welche Domänen Klassen die Quell Rolle wiedergeben können (**Task**, **mergebranch**, **StartPoint**und **Synchronisierung**) und welche die Zielrolle wiedergeben kann (**mergebranch**, **Endpunkt**und **Synchronisierung**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Verbindungs-Generatoren mit mehreren Direktiven für Linkverbindungen
  Sie können einem Verbindungs-Generator mehr als eine Direktive für Linkverbindungen hinzufügen. Dies kann Ihnen dabei helfen, einige der Komplexitäten des Domänen Modells vor Benutzern auszublenden und zu verhindern, dass die **Toolbox** zu überlastet ist. Sie können in einem Verbindungs-Generator für mehrere verschiedene Domänenbeziehungen Direktiven für Linkverbindungen hinzufügen. Sie sollten Domänenbeziehungen jedoch kombinieren, wenn sie annähernd die gleiche Funktion ausführen.
 
- In der Lösung für den Task Ablauf wird das **Flow** -Verbindungs Tool zum Zeichnen von Instanzen der Daten **Fluss** -und **objectflow** -Domänen Beziehungen verwendet. Der **flowbuilder** -Verbindungs-Generator hat zusätzlich zur zuvor beschriebenen Anweisung für die **Fluss** Link Verbindung zwei Verknüpfungs Verbindungs Direktiven namens **objectflow**. Diese Direktiven legen fest, dass eine Instanz einer **objectflow** -Beziehung zwischen Instanzen der **objectinstate** -Domänen Klasse oder von einer Instanz von **objectinstate** in eine Instanz einer **Aufgabe**gezeichnet werden kann, jedoch nicht zwischen zwei Instanzen einer **Aufgabe**oder von einer Instanz einer **Aufgabe** bis zu einer Instanz eines **objectinstate**. Allerdings kann eine Instanz einer **Flow** -Beziehung zwischen zwei Instanzen einer **Aufgabe**gezeichnet werden. Wenn Sie die Lösung für den Task Ablauf kompilieren und ausführen, können Sie sehen, dass das Zeichnen eines **Flows** von einer Instanz eines **objectinstate** **zu einer Instanz** eines Tasks eine Instanz eines **objectflow**erstellt, aber einen **Flow** zwischen zwei Instanzen zeichnet. einer **Aufgabe** erstellt eine Instanz eines **Flows**.
+ In der Lösung für den Task Ablauf wird das **Flow** -Verbindungs Tool zum Zeichnen von Instanzen der Daten **Fluss** -und **objectflow** -Domänen Beziehungen verwendet. Der **flowbuilder** -Verbindungs-Generator hat zusätzlich zur zuvor beschriebenen Anweisung für die **Fluss** Link Verbindung zwei Verknüpfungs Verbindungs Direktiven namens **objectflow**. Diese Direktiven legen fest, dass eine Instanz einer **objectflow** -Beziehung zwischen Instanzen der **objectinstate** -Domänen Klasse oder von einer Instanz von **objectinstate** in eine Instanz eines **Tasks, jedoch**nicht zwischen zwei Instanzen einer **Aufgabe**oder von einer Instanz eines Tasks in eine Instanz von **objectinstate**gezeichnet werden kann. Allerdings kann eine Instanz einer **Flow** -Beziehung zwischen zwei Instanzen einer **Aufgabe**gezeichnet werden. Wenn Sie die Lösung für den Task Ablauf kompilieren und ausführen, sehen Sie, dass das Zeichnen eines **Flows** von einer Instanz eines **objectinstate** zu einer Instanz eines Tasks eine Instanz eines **objectflow** **erstellt,** aber das Zeichnen eines **Flows** zwischen zwei Instanzen einer **Aufgabe** eine Instanz eines **Flows**erzeugt.
 
 ### <a name="custom-code-for-connection-builders"></a>Benutzerdefinierter Code für Verbindungs-Generatoren
  Es gibt vier Kontrollkästchen auf der Benutzeroberfläche, mit denen die unterschiedlichen Typen von Anpassungen der Verbindungs-Generatoren definiert werden:

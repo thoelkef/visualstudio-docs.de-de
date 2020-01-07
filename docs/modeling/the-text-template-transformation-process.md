@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605809"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565863"
 ---
 # <a name="the-text-template-transformation-process"></a>Textvorlagen-Transformationsprozess
 Der Textvorlagen-Transformationsprozess nimmt eine Textvorlagen Datei als Eingabe an und generiert eine neue Textdatei als Ausgabe. Beispielsweise können Sie Textvorlagen verwenden, um Visual Basic oder C# Code zu generieren, oder Sie können einen HTML-Bericht generieren.
@@ -23,11 +23,11 @@ Der Textvorlagen-Transformationsprozess nimmt eine Textvorlagen Datei als Eingab
 
  Der Textvorlagen-Transformationsprozess wird in zwei Schritten ausgeführt. Zuerst erstellt die Engine eine temporäre Klasse, die als generierte Transformations Klasse bezeichnet wird. Diese Klasse enthält den Code, der von den Direktiven und Kontroll Blöcken generiert wird. Danach kompiliert die Engine die generierte Transformations Klasse und führt Sie aus, um die Ausgabedatei zu erstellen.
 
-## <a name="components"></a>Komponenten
+## <a name="components"></a>Components
 
 |Komponente|Beschreibung|Anpassbar (Ja/Nein)|
 |-|-|-|
-|Ge|Die Engine-Komponente steuert den Textvorlagen-Transformationsprozess|Nein.|
+|Engine|Die Engine-Komponente steuert den Textvorlagen-Transformationsprozess|No.|
 |Host|Der Host ist die Schnittstelle zwischen der-Engine und der Benutzerumgebung. Visual Studio ist ein Host des Text Transformationsprozesses.|Ja. Sie können einen benutzerdefinierten Host schreiben.|
 |Direktivenprozessoren|Direktivenprozessoren sind Klassen, die Direktiven in Textvorlagen verarbeiten. Sie können-Direktiven verwenden, um Daten für eine Textvorlage aus einer Eingabe Quelle bereitzustellen.|Ja. Sie können benutzerdefinierte direktivenprozessoren schreiben.|
 
@@ -60,4 +60,4 @@ Der Textvorlagen-Transformationsprozess nimmt eine Textvorlagen Datei als Eingab
 
  `<#@ import namespace="System.Text" #>`
 
- Der Standard Direktivenprozessor konvertiert diesen in eine `using`-Anweisung in der generierten Transformations Klasse. Anschließend können Sie die `StringBuilder`-Klasse im restlichen Vorlagen Code verwenden, ohne Sie als `System.Text.StringBuilder` zu qualifizieren.
+ Der Standard Direktivenprozessor konvertiert diesen in eine `using`-Anweisung in der generierten Transformations Klasse. Anschließend können Sie die `StringBuilder`-Klasse im restlichen Vorlagen Code verwenden, ohne Sie als `System.Text.StringBuilder`zu qualifizieren.

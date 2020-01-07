@@ -3,17 +3,17 @@ title: 'Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ddd3d8b25c6e215302af8e0b40b5a971f5f4aa39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64a29eb3ebb1a5366eb9aaced1b5c228832fe71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586509"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer
 Der **objektrelationaler Designer** (**O/R-Designer**) unterstützt das Konzept der Vererbung einer einzelnen Tabelle, da es häufig in relationalen Systemen implementiert wird. Bei der Vererbung einer einzelnen Tabelle gibt es eine einzelne Datenbanktabelle, die Felder sowohl für übergeordnete Informationen als auch für untergeordnete Informationen enthält. Bei relationalen Daten enthält eine Unterscheidungsspalte den Wert, der festlegt, zu welcher Klasse ein bestimmter Datensatz gehört.
@@ -35,7 +35,7 @@ Das Erstellen eines Objektmodells, das Vererbung verwendet (und sich auf relatio
     > [!NOTE]
     > Klicken Sie in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie auf die zweite Kopie der in Schritt 3 erstellten Klasse, und klicken Sie dann auf die erste Klasse, die Sie in Schritt 2 erstellt haben. Der Pfeil auf der Vererbungs Zeile verweist auf die erste Klasse.
 
-5. Löschen Sie in jeder Klasse die Objekteigenschaften, die nicht angezeigt werden sollen und die nicht für Zuordnungen verwendet werden. Wenn Sie versuchen, die für Zuordnungen verwendeten Objekteigenschaften zu löschen, erhalten Sie eine Fehlermeldung: [die Eigenschaft \<property namens > kann nicht gelöscht werden, da Sie an der Zuordnung \<association Namen > teilnimmt](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. Löschen Sie in jeder Klasse die Objekteigenschaften, die nicht angezeigt werden sollen und die nicht für Zuordnungen verwendet werden. Sie erhalten eine Fehlermeldung, wenn Sie versuchen, die für Zuordnungen verwendeten Objekteigenschaften zu löschen: [die Eigenschaft \<Eigenschaften Name > kann nicht gelöscht werden, weil Sie an der Zuordnung \<Association Name > teilnimmt](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     > Da eine abgeleitete Klasse die in der Basisklasse definierten Eigenschaften erbt, dürfen in den Klassen nicht dieselben Spalten definiert sein. (Spalten werden als Eigenschaften implementiert.) Sie können die Erstellung von Spalten in der abgeleiteten Klasse aktivieren, indem Sie den Vererbungs Modifizierer für die Eigenschaft in der Basisklasse festlegen. Weitere Informationen finden Sie unter [Grundlagen der Vererbung (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
@@ -48,7 +48,7 @@ Das Erstellen eines Objektmodells, das Vererbung verwendet (und sich auf relatio
 
 9. Legen Sie die Eigenschaft **Basisklassen-Diskriminatorwert** auf den Wert fest, der den Datensatz als Basistyp kennzeichnet. (Dies ist der Wert, der in der diskriminatorspalte gespeichert wird und zum Festlegen der Basisklasse verwendet wird.)
 
-10. Wahlweise können Sie auch die Eigenschaft **Vererbungsstandard** festlegen, um in einer Vererbungshierarchie einen Typ zu kennzeichnen, der beim Laden von Spalten verwendet wird, die keinem definierten Vererbungscode entsprechen. Anders ausgedrückt: Wenn ein Datensatz in der Unterscheidungs Spalte einen Wert enthält, der nicht mit dem Wert in den Eigenschaften der **Diskriminatorwert der abgeleiteten Klasse** oder den **Basisklassen-Diskriminatorwert** -Eigenschaften identisch ist, lädt der Datensatz in den Typ, der **als Vererbungs Standard**.
+10. Wahlweise können Sie auch die Eigenschaft **Vererbungsstandard** festlegen, um in einer Vererbungshierarchie einen Typ zu kennzeichnen, der beim Laden von Spalten verwendet wird, die keinem definierten Vererbungscode entsprechen. Anders ausgedrückt: Wenn ein Datensatz in der Unterscheidungs Spalte einen Wert enthält, der nicht mit dem Wert in den Eigenschaften der **Diskriminatorwert der abgeleiteten Klasse** oder den **Basisklassen-Diskriminatorwert** -Eigenschaften identisch ist, lädt der Datensatz in den als **Vererbungs Standard**bezeichneten Typ.
 
 ## <a name="see-also"></a>Siehe auch
 

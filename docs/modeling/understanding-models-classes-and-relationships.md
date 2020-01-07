@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748224"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565902"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie durch benutzerdefinierten Programmcode definiert, den Sie möglicherweise schreiben. Der meiste Programmcode in der DSL-Lösung wird aus dieser Datei generiert.
@@ -22,7 +22,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
  In diesem Thema werden die zentralen Funktionen der DSL-Definition erläutert.
 
 ## <a name="the-dsl-definition"></a>Die DSL-Definition
- Wenn Sie `Dsl\DslDefinition.dsl` öffnen, ähnelt das Visual Studio-Fenster der folgenden Abbildung.
+ Wenn Sie `Dsl\DslDefinition.dsl`öffnen, ähnelt das Visual Studio-Fenster der folgenden Abbildung.
 
  ![DSL-Designer](../modeling/media/dsl_designer.png)
 
@@ -116,7 +116,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  In der XML-Darstellung des Modells wird ein Verweis Link zwischen zwei Elementen mithilfe von *Monikern dargestellt.* Das heißt, Moniker sind Namen, die jedes Element im Modell eindeutig identifizieren. Der XML-Knoten für jedes Modellelement enthält einen Knoten, der den Namen der Beziehung und den Moniker des anderen Elements angibt.
 
-## <a name="roles"></a>Rollen
+## <a name="roles"></a>-Rollen
  Jede Domänen Beziehung verfügt über zwei Rollen: eine Quell Rolle und eine Zielrolle.
 
  In der folgenden Abbildung ist die Linie zwischen der Domänen Klasse **Verleger** und der **publishercatalog** -Domänen Beziehung die Quell Rolle. Die Linie zwischen der Domänen Beziehung und der Domänen Klasse des **Albums** ist die Zielrolle.
@@ -128,7 +128,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
  Wenn Sie in einer DSL-Definition eine Beziehung erstellen, werden den Eigenschafts-und Beziehungs Namen Standardwerte zugewiesen. Sie können Sie jedoch ändern.
 
 ## <a name="multiplicities"></a>Multiplizitäten
- Multiplizitäten geben an, wie viele Elemente in einer Domänen Beziehung dieselbe Rolle aufweisen können. Im Beispiel gibt die NULL-zu-n-multiplizitätseinstellung (0.. \*) für die- **Katalog** Rolle an, dass jede Instanz der **Verleger** Domänen Klasse so viele **publishercatalog** -Beziehungslinks haben kann, wie Sie Sie angeben möchten.
+ Multiplizitäten geben an, wie viele Elemente in einer Domänen Beziehung dieselbe Rolle aufweisen können. Im Beispiel gibt die NULL-zu-n-multiplizitätseinstellung (0..\*) für die- **Katalog** Rolle an, dass jede Instanz der **Verleger** Domänen Klasse so viele **publishercatalog** -Beziehungslinks haben kann, wie Sie Sie angeben möchten.
 
  Konfigurieren Sie die Multiplizität einer Rolle entweder durch Eingabe des Diagramms oder durch Ändern der `Multiplicity`-Eigenschaft im **Eigenschaften** Fenster. In der folgenden Tabelle werden die Einstellungen für diese Eigenschaft beschrieben.
 

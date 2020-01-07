@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1316602d900fb122567b5ad50edf8e7b90c79bd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300953"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406735"
 ---
 # <a name="xslt-profiler"></a>XSLT-Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Der XSLT-Profiler ist ein Leistungsanalyse-Profilertool, das Ihnen hilft, XSLT-D
 
  ![XSLT-Profiler](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- Der XSLT-Profiler wurde zuerst als Add-In für Visual Studio 2008 veröffentlicht. Weitere Informationen finden Sie im Abschnitt Verwandte Ressourcen auf der Community Technology Preview Seite für den [XSLT-Profiler für Visual Studio Feb 08](https://go.microsoft.com/fwlink/?LinkId=142987) .
+ Der XSLT-Profiler wurde zuerst als Add-In für Visual Studio 2008 veröffentlicht. Weitere Informationen finden Sie unter [XSLT Profiler](https://marketplace.visualstudio.com/items?itemName=SinanUssakli-MSFT.XSLTProfilerAddin)-Add-in.
 
 > [!NOTE]
 > Einige Bildschirme sehen in Visual Studio 2010 möglicherweise anders aus als in diesen Dokumenten, da einige visuelle Elemente gegenüber Visual Studio 2008 geändert wurden.

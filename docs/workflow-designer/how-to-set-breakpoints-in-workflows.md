@@ -3,17 +3,17 @@ title: 'Workflow-Designer: Gewusst wie: Festlegen von Breakpoints in Workflows'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d2806a8757f00924d51c76aea82cfc8c6a5673
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ebebd0efe689c2f3f83e776c0cb3889ee64add2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650329"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593888"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Vorgehensweise: Festlegen von Breakpoints in Workflows
 
@@ -25,10 +25,10 @@ Ein Haltepunkt hat drei Zustände: " *Pending*", " *Bound*" und " *Error*". Wenn
 > Das Festlegen von Haltepunkten für aufgerufene Workflows wird nicht unterstützt.
 
 > [!NOTE]
-> Stellen Sie sicher, dass Sie die Option **nur eigenen Code aktivieren (nur verwaltet)** **im Menü Extras  > ** **Optionen**  >  Menü**Debuggen** aktivieren, bevor Sie Debuggen. Wenn die Option nicht ausgewählt ist und zwei Sequenzen in einer anderen Sequenz geschachtelt sind und Sie einen Haltepunkt für die erste innere Sequenz festgelegt haben, wird durch Drücken von **F11** nicht in die zweite innere Sequenz debuggt.
+> Stellen Sie sicher, dass Sie die Option **nur eigenen Code aktivieren (nur verwaltet)** **im Menü Extras > ** **Optionen** > Menü **Debuggen** aktivieren, bevor Sie Debuggen. Wenn die Option nicht ausgewählt ist und zwei Sequenzen in einer anderen Sequenz geschachtelt sind und Sie einen Haltepunkt für die erste innere Sequenz festgelegt haben, wird durch Drücken von **F11** nicht in die zweite innere Sequenz debuggt.
 
 > [!NOTE]
-> Haltepunkte in einem Workflow werden nicht getroffen, wenn der vollständige Pfad zur XAML-Datei Eigenschaft nicht korrekt ist. Der vollständige Pfad zur XAML-Datei ist nicht korrekt, nachdem das Projekt oder die Projekt Mappe in einen anderen Ordner oder auf einen anderen Computer verschoben wurde. Wählen Sie **STRG** +**S** aus, um die vollständige Pfadeigenschaft zu speichern und zu aktualisieren.
+> Haltepunkte in einem Workflow werden nicht getroffen, wenn der vollständige Pfad zur XAML-Datei Eigenschaft nicht korrekt ist. Der vollständige Pfad zur XAML-Datei ist nicht korrekt, nachdem das Projekt oder die Projekt Mappe in einen anderen Ordner oder auf einen anderen Computer verschoben wurde. Wählen Sie **STRG**+**S** aus, um die vollständige Pfadeigenschaft zu speichern und zu aktualisieren.
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>So legen Sie einen Haltepunkt für eine Aktivität in der Entwurfsansicht fest
 
@@ -36,7 +36,7 @@ Ein Haltepunkt hat drei Zustände: " *Pending*", " *Bound*" und " *Error*". Wenn
 
 2. Klicken Sie im Menü **Debuggen** auf halte **Punkt umschalten**. Ein rotes Symbol wird am oberen linken Rand der Aktivität angezeigt.
 
-   Alternativ können Sie **F9** drücken, nachdem Sie die Aktivität ausgewählt haben, oder Sie können mit der rechten Maustaste auf die Aktivität klicken und im Kontextmenü halte **Punkt  >  halte** **Punkt einfügen** auswählen.
+   Alternativ können Sie **F9** drücken, nachdem Sie die Aktivität ausgewählt haben, oder Sie können mit der rechten Maustaste auf die Aktivität klicken und im Kontextmenü halte **Punkt > halte** **Punkt einfügen** auswählen.
 
 ## <a name="see-also"></a>Siehe auch
 
