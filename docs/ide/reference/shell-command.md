@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747741"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565876"
 ---
 # <a name="shell-command"></a>Befehl "Shell"
 Startet ausführbare Programme aus [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -41,22 +41,22 @@ Erforderlich. Der Pfad und Dateiname der auszuführenden Datei oder des zu öffn
 
 `args`
 
-Optional. Alle Argumente, die an das aufgerufene Programm übergeben werden sollen.
+Dies ist optional. Alle Argumente, die an das aufgerufene Programm übergeben werden sollen.
 
 ## <a name="switches"></a>Schalter
 /commandwindow [oder] /command [oder] /c [oder] /cmd
 
-Optional. Gibt an, dass die Ausgabe für die ausführbare Datei im **Befehlsfenster** angezeigt werden soll.
+Dies ist optional. Gibt an, dass die Ausgabe für die ausführbare Datei im **Befehlsfenster** angezeigt werden soll.
 
 /dir:`folder` [oder] /d: `folder`
 
-Optional. Gibt das bei der Ausführung des Programms festzulegende Arbeitsverzeichnis an.
+Dies ist optional. Gibt das bei der Ausführung des Programms festzulegende Arbeitsverzeichnis an.
 
 /outputwindow [oder] /output [oder] /out [oder] /o
 
-Optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.
+Dies ist optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die /dir-, /o- und /c-Schalter müssen unmittelbar nach `Tools.Shell` angegeben werden. Alles, was nach dem Namen der ausführbaren Datei angegeben wird, wird als Befehlszeilenargumente übergeben.
 
 Der vordefinierte Alias `Shell` kann anstelle von `Tools.Shell` verwendet werden.

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655834"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591085"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
@@ -46,14 +46,14 @@ Eine *ZIP*-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte ent
 
 Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:
 
-- Das **Type**-Attribut des **VSTemplate**-Elements hat den Wert **ProjectGroup** statt **Project**. Beispiel:
+- Das **Type**-Attribut des **VSTemplate**-Elements hat den Wert **ProjectGroup** statt **Project**. Zum Beispiel:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- Das **TemplateContent**-Element enthält ein **ProjectCollection**-Element, das über mindestens ein **ProjectTemplateLink**-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Beispiel:
+- Das **TemplateContent**-Element enthält ein **ProjectCollection**-Element, das über mindestens ein **ProjectTemplateLink**-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Zum Beispiel:
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
     ```
 
 > [!TIP]
-> Wenn Sie möchten, dass nur die Vorlage mit mehreren Projekten im Dialogfenster des neuen Projekts angezeigt wird und nicht die darin enthaltenen Einzelprojekte, markieren Sie die inneren Vorlagen als [ausgeblendet](../extensibility/hidden-element-visual-studio-templates.md). Beispiel:
+> Wenn Sie möchten, dass nur die Vorlage mit mehreren Projekten im Dialogfenster des neuen Projekts angezeigt wird und nicht die darin enthaltenen Einzelprojekte, markieren Sie die inneren Vorlagen als [ausgeblendet](../extensibility/hidden-element-visual-studio-templates.md). Zum Beispiel:
 >
 > ```xml
 > <VSTemplate Type="Project" ... >

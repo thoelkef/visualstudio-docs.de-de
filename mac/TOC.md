@@ -81,6 +81,7 @@
 ### [Erste Schritte mit ASP.NET Core](asp-net-core.md)
 ### [Erstellen von ASP.NET Core-Anwendungen in Visual Studio für Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
+### [Blazor](blazor.md)
 ### [JavaScript und TypeScript](javascript.md)
 ### [launchSettings.json](launch-settings.md)
 ## Azure

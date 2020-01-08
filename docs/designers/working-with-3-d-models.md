@@ -3,17 +3,17 @@ title: Arbeiten mit 3D-Modellen
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b364682d8173d34d2b9977836929ca93ddf45a78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60789dece03487f3f3a6dfd71407ec03bab6700e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633983"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589876"
 ---
 # <a name="work-with-3d-models"></a>Arbeiten mit 3D-Modellen
 
@@ -29,7 +29,7 @@ Mit dem Modell-Editor können Sie auch 3D-Modelle anzeigen, die mithilfe eines T
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Modell-Editor](../designers/model-editor.md)|In diesem Artikel wird beschrieben, wie sich der Modell-Editor für die Arbeit mit 3D-Modellen einsetzen lässt.|
 |[Beispiele für den Modell-Editor](../designers/how-to-create-a-basic-3-d-model.md)|Enthält Links zu Themen, in denen erklärt wird, wie häufige Vorgänge bei der 3D-Modellerstellung mit dem Modell-Editor ausgeführt werden können|

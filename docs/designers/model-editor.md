@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ca91c431f574190a5cddbe17f1b042685056bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7adee409ff6bb5721724b9acc2e76a11d32a4f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635031"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589850"
 ---
 # <a name="model-editor"></a>Modell-Editor
 
@@ -86,7 +86,7 @@ Die Symbolleiste **Model Editor Mode** (Modell-Editor-Modus):
 
 In dieser Tabelle werden die Elemente der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden.
 
-|Element der Symbolleiste|BESCHREIBUNG|
+|Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht, abhängig vom aktiven Auswahlmodus, das Auswählen von Punkten, Rändern, Flächen oder Objekten in der Szene.|
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene unter Berücksichtigung des Fensterrahmens. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
@@ -114,7 +114,7 @@ Die Symbolleiste **Model Editor** (Modell-Editor):
 
 In der folgenden Tabelle werden die Elemente der Symbolleiste **Model Editor** (Modell-Editor) beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.
 
-|Element der Symbolleiste|BESCHREIBUNG|
+|Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Verschieben**|Verschiebt die Markierung.|
 |**Scale** (Skalieren)|Ändert die Größe der Auswahl.|
@@ -132,7 +132,7 @@ Die 3D-Szene wird entsprechend der Ansicht gerendert, die Sie sich als virtuelle
 
 In der folgenden Tabelle werden die Hauptsteuerelemente der Ansicht beschrieben.
 
-|Ansichtsteuerung|BESCHREIBUNG|
+|Ansichtsteuerung|Beschreibung|
 |------------------|-----------------|
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene unter Berücksichtigung des Fensterrahmens. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
 |**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Szenendetails relativ zum Fensterrahmen. Klicken Sie im **Zoom**-Modus auf einen Punkt in der Szene, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten, und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswahl**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie währenddessen die **STRG**-TASTE gedrückt.|
@@ -141,7 +141,7 @@ In der folgenden Tabelle werden die Hauptsteuerelemente der Ansicht beschrieben.
 
 Die Ansicht wird zwar von der virtuellen Kamera erstellt, ist jedoch auch durch eine Projektion definiert. Die Projektion definiert, wie Formen und Objekte in der Ansicht auf der Entwurfsoberfläche in Pixel übersetzt werden. Sie können auf der Symbolleiste **Model Editor** (Modell-Editor) zwischen der Projektionsoption **Perspektive** oder **Orthografisch** auswählen.
 
-|Projection|BESCHREIBUNG|
+|Projection|Beschreibung|
 |----------------|-----------------|
 |**Perspektive**|In der perspektivischen Projektion erscheinen weiter vom Blickpunkt entfernte Objekte kleiner und laufen letztendlich in der Entfernung zu einem Punkt zusammen.|
 |**Orthografisch**|In der ortographischen Projektion erscheinen Objekte unabhängig von ihrer Entfernung zum Blickpunkt gleich Groß. Es wird keine Konvergenz angezeigt. Ist die Projektionsoption **Orthografisch** aktiviert, können Sie den **Orbit**-Modus nicht beliebig zum Positionieren der Ansicht verwenden.|
@@ -241,7 +241,7 @@ Die Darstellung eines Objekts wird durch das Zusammenwirken der Beleuchtung in d
 
 Der Model-Editor stellt folgende Standardmaterialien bereit:
 
-|Material|BESCHREIBUNG|
+|Material|Beschreibung|
 |--------------|-----------------|
 |**Unbeleuchtet**|Rendert eine Oberfläche ohne simulierte Beleuchtung.|
 |**Lambert**|Rendert eine Oberfläche mit simulierter umgebender und diffuser Beleuchtung.|
@@ -251,7 +251,7 @@ Jedes dieser Materialien stellt eine Textur auf der Oberfläche eines Objekts. S
 
 Um die Reaktion eines bestimmten Objekts auf verschiedenen Lichtquellen in der Szene zu ändern, können Sie die Beleuchtungseigenschaften des Materials unabhängig von anderen Objekten ändern, bei denen das Material verwendet wird. Die folgende Tabelle beschreibt allgemeine Beleuchtungseigenschaften:
 
-|Beleuchtungseigenschaft|BESCHREIBUNG|
+|Beleuchtungseigenschaft|Beschreibung|
 | - |-----------------|
 |**Umgebend**|Beschreibt die Auswirkung von umgebenden Beleuchtung auf die Oberfläche.|
 |**Diffus**|Beschreibt die Auswirkung direktionaler Punktlichter auf die Oberfläche.|
@@ -334,7 +334,7 @@ Wenn Sie die Zuordnung zwischen zwei übergeordneten und untergeordneten Objekte
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie bei der Arbeit mit Grafikobjekten wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|

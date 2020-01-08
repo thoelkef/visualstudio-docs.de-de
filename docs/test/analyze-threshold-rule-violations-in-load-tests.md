@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665344"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591280"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
@@ -34,7 +34,7 @@ Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** i
 
 In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen angezeigt. Die Tabelle enthält folgende Spalten:
 
-|Spalte|BESCHREIBUNG|In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung|In der Standardeinstellung angezeigt|
 |-|-|-|
 |zeit|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
 |Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**:  Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|

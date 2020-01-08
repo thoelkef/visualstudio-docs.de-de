@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.Goto command
 - Go To command
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5782f5e7dba8d18f9d6f48f345d5e133138e6eea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748739"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569204"
 ---
 # <a name="go-to-command"></a>Befehl "Gehe zu"
 Bewegt den Cursor in die angegebene Zeile.
@@ -31,9 +31,9 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>Argumente
 `linenumber`\
-Optional. Eine ganze Zahl, die die Zeilennummer, zu der Sie springen wollen, angibt.
+Dies ist optional. Eine ganze Zahl, die die Zeilennummer, zu der Sie springen wollen, angibt.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die Zeilennummerierung beginnt bei eins. Wenn der Wert von `linenumber` kleiner als eins ist, wird die erste Zeile angezeigt. Wenn der Wert von `linenumber` größer als die Nummer der letzten Zeile ist, wird die letzte Zeile angezeigt.
 
 Wenn für `linenumber` kein Wert angegeben wird, wird das **Gehe zu Zeile**-Dialogfeld angezeigt.

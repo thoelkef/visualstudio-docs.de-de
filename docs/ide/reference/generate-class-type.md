@@ -2,8 +2,8 @@
 title: Generieren einer Klasse oder eines Typs
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660074"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595630"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generieren einer Klasse oder eines Typs in Visual Studio
 
@@ -70,7 +70,7 @@ Diese Codegenerierung gilt für:
 
    ![Typ generieren](media/class-newtype-cs.png)
 
-   Auswahl | BESCHREIBUNG
+   Auswahl | Beschreibung
    --- | ---
    Zugriff | Legen Sie den Zugriffstyp auf *Standard*, *Intern* oder *Öffentlich* fest.
    Art | Dieses Element kann auf *Klasse* oder *Struktur* festgelegt werden.

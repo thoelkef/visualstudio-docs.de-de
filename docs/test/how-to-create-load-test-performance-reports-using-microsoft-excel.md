@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653567"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589070"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 
@@ -29,7 +29,7 @@ Zwei Typen von Auslastungstestberichten sind verfügbar:
 - **Trend:** Eine Trendanalyse kann für zwei oder mehr Auslastungstestergebnisse generiert werden. Die Ergebnisse werden mit Liniendiagrammen angezeigt, doch die Daten sind in PivotTables enthalten.
 
 > [!TIP]
-> Sie können auch manuell Microsoft Word-Berichte erstellen, indem Sie Daten aus der Zusammenfassungsansicht, Diagrammansicht und Tabellenansicht kopieren und einfügen. Weitere Informationen finden Sie unter [Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Sie können auch manuell Microsoft Word-Berichte erstellen, indem Sie Daten aus der Zusammenfassungsansicht, Diagrammansicht und Tabellenansicht kopieren und einfügen. Weitere Informationen finden Sie unter [How to: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Beide Berichte können verwendet werden, um Leistungsdaten für Projektbeteiligte freizugeben, und liefern Informationen dazu, ob die Gesamtleistung und Integrität des Systems besser oder schlechter wird.
 

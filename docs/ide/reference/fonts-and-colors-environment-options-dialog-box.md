@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667021"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595617"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
@@ -99,7 +99,7 @@ Listet die Elemente auf, für die Sie die Vorder- und Hintergrundfarbe ändern k
 
 Hier einige Anzeigeelemente:
 
-|Anzeigeelement|BESCHREIBUNG|
+|Anzeigeelement|Beschreibung|
 |------------------|-----------------|
 |**Nur-Text**|Text im Editor.|
 |**Markierter Text**|Text, der in der aktuellen Auswahl enthalten ist, wenn der Editor den Fokus besitzt.|
@@ -132,7 +132,7 @@ Hier einige Anzeigeelemente:
 |**Von Codeabdeckung nicht verwendeter Bereich**|Code, der nicht von einem Komponententest abgedeckt wurde.|
 |**Von Codeabdeckung teilweise verwendeter Bereich**|Code, der teilweise von einem Komponententest abgedeckt wurde.|
 |**Von Codeabdeckung verwendeter Bereich**|Code, der vollständig von einem Komponententest abgedeckt wurde.|
-|**CSS-Kommentar**|Ein Kommentar in Cascading Stylesheets (CSS). Beispiel:<br /><br /> /* comment \*/|
+|**CSS-Kommentar**|Ein Kommentar in Cascading Stylesheets (CSS). Zum Beispiel:<br /><br /> /* comment \*/|
 |**CSS-Schlüsselwort**|Schlüsselwörter im Cascading Style Sheet (CSS).|
 |**CSS-Eigenschaftenname**|Der Name einer Eigenschaft, z. B. „Background“.|
 |**CSS-Eigenschaftenwert**|Der einer Eigenschaft zugewiesene Wert, z. B. „blue“.|
@@ -168,7 +168,7 @@ Hier einige Anzeigeelemente:
 |**SQL-DML-Marker**|Gilt für den Transact-SQL-Editor. DML-Anweisungen in diesem Editor werden standardmäßig mit einem blauen Rahmen gekennzeichnet.|
 |**Veralteter Code**|Abgelöster Code, für den ein Update erwartet wird. In einigen Fällen können Codeänderungen beim Bearbeiten und Fortfahren nicht sofort angewendet werden; sie werden später angewendet, wenn Sie mit dem Debuggen fortfahren. Dies geschieht, wenn Sie eine Funktion bearbeiten, die die aktuell ausgeführte Funktion aufrufen muss, oder wenn Sie einer in der Aufrufliste wartenden Funktion neue Variablen mit einer Größe von mehr als 64 Bytes hinzufügen. In diesem Fall zeigt der Debugger das Dialogfeld „Warnung: Veralteter Code“ an, und der abgelöste Code wird weiterhin ausgeführt, bis die betreffende Funktion beendet und erneut aufgerufen wird. Bearbeiten und Fortfahren wendet die Codeänderungen zu diesem Zeitpunkt an.|
 |**String**|Zeichenfolgenliterale.|
-|**Zeichenfolge (C# @ Verbatim)**|Zeichenfolgenliterale in C#, die wörtlich interpretiert werden. Beispiel:<br /><br /> @"x"|
+|**Zeichenfolge (C# @ Verbatim)**|Zeichenfolgenliterale in C#, die wörtlich interpretiert werden. Zum Beispiel:<br /><br /> @"x"|
 |**Syntaxfehler**|Analysefehler.|
 |**Verknüpfung für Aufgabenliste**|Wenn einer Zeile eine Verknüpfung zu einer **Aufgabenliste** hinzugefügt wird und der Indikatorrand deaktiviert ist, wird die Zeile hervorgehoben.|
 |**Ablaufverfolgungspunkt (Deaktiviert)**|Nicht verwendet.|

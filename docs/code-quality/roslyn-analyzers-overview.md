@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649136"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587276"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Übersicht über Quellcode-Analysetools
 
@@ -25,7 +25,7 @@ Analysetools der .NET Compiler Platform („Roslyn“) analysieren Ihren C#- ode
 
 - Einige Analysetools werden in Visual Studio integriert. Die Diagnose-ID oder der Code für diese Analysetools ist vom Format IDExxxx, z. B. IDE0067. Die meisten integrierten Analysetools überprüfen das [Codeformat](../ide/code-styles-and-code-cleanup.md), und Sie können auf der Seite mit den [Text-Editor-Optionen](../ide/code-styles-and-code-cleanup.md) oder in einer [EditorConfig-Datei](../ide/editorconfig-code-style-settings-reference.md) Einstellungen konfigurieren. Einige wenige integrierte Analysetools überprüfen die Qualität des Codes.
 
-- Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren. Beispiel:
+- Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren. Zum Beispiel:
 
   - [FxCop-Analysetools](../code-quality/install-fxcop-analyzers.md), die von Microsoft empfohlenen Analysetools für die Qualitätsanalyse des Codes
   - Analysetools von Drittanbietern wie [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) und [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)

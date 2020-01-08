@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747354"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593355"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).
@@ -354,7 +354,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **ForcedIncludeFiles**
 
-   Optionaler `String[]` -Parameter.
+   Optionaler `String[]`-Parameter.
 
    Weist den Präprozessor an, eine oder mehrere angegebene Headerdateien zu verarbeiten.
 
@@ -370,7 +370,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **FunctionLevelLinking**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird dem Compiler ermöglicht, einzelne Funktionen in Form von kompilierten Funktionen (COMDATs) zu kompilieren.
 
@@ -378,7 +378,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **GenerateXMLDocumentationFiles**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine *XDC*-Datei erstellt.
 
@@ -386,7 +386,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **IgnoreStandardIncludePath**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Hindert bei `true` den Compiler daran, in den Verzeichnissen, die in den Umgebungsvariablen PATH und INCLUDE angegeben sind, nach Includedateien zu suchen.
 
@@ -412,7 +412,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **IntrinsicFunctions**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden einige Funktionsaufrufe durch systeminterne oder sonstige spezielle Formen der Funktion ersetzt, die dazu beitragen, dass die Arbeitsgeschwindigkeit der Anwendung erhöht wird.
 
@@ -420,7 +420,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **MinimalRebuild**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird die Mindestneuerstellung aktiviert, die bestimmt, ob C++-Quelldateien, die geänderte C++-Klassendefinitionen enthalten (die in Headerdateien (H) gespeichert sind), neu kompiliert werden müssen.
 
@@ -428,7 +428,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **MultiProcessorCompilation**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden mehrere Prozessoren für das Kompilieren verwendet. Dieser Parameter erstellt einen Prozess für jeden effektiven Prozessor auf dem Computer.
 
@@ -450,7 +450,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **OmitDefaultLibName**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei (*OBJ*) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der *OBJ*-Datei ab, um den Linker zur richtigen Bibliothek zu leiten.
 
@@ -458,7 +458,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **OmitFramePointers**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird die Erstellung von Framezeigern in der Anrufliste unterdrückt.
 
@@ -466,7 +466,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **OpenMPSupport**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` verarbeitet der Compiler OpenMP-Klauseln und -Direktiven.
 
@@ -524,7 +524,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **PreprocessKeepComments**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden Kommentare bei der Vorverarbeitung beibehalten.
 
@@ -532,7 +532,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **PreprocessorDefinitions**
 
-   Optionaler `String[]` -Parameter.
+   Optionaler `String[]`-Parameter.
 
    Definiert ein Präprozessorsymbol für Ihre Quelldatei.
 
@@ -540,13 +540,13 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **PreprocessOutput**
 
-   Optionaler `ITaskItem[]` -Parameter.
+   Optionaler `ITaskItem[]`-Parameter.
 
    Definiert ein Array von Präprozessorausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.
 
 - **PreprocessOutputPath**
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt den Namen der Ausgabedatei an, in die der **PreprocessToFile**-Parameter die vorverarbeitete Ausgabe schreibt.
 
@@ -554,7 +554,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **PreprocessSuppressLineNumbers**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeiteten Dateien werden auf das Standardausgabegerät kopiert.
 
@@ -562,7 +562,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **PreprocessToFile**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeitete Ausgabe wird in eine Datei geschrieben.
 
@@ -576,7 +576,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **ProgramDataBaseFileName**
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt einen Dateinamen für die Programmdatenbankdatei (PDB) an.
 
@@ -584,7 +584,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **RuntimeLibrary**
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Zeigt an, ob es sich bei einem Multithread-Modul um eine DLL handelt, und wählt Veröffentlichungs- oder Debugversionen der Laufzeitbibliothek aus.
 
@@ -602,7 +602,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **RuntimeTypeInfo**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird Code hinzugefügt, um C++-Objekttypen während der Laufzeit zu überprüfen (Laufzeit-Typeninformationen).
 
@@ -610,7 +610,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **ShowIncludes**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` gibt der Compiler eine Liste der Includedateien aus.
 
@@ -618,7 +618,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **SmallerTypeCheck**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird ein Laufzeitfehler gemeldet, wenn ein Wert einem kleineren Datentyp zugewiesen wird und dies einen Datenverlust verursacht.
 
@@ -632,7 +632,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **StringPooling**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` kann der Compiler eine Kopie identischer Zeichenfolgen im Programmabbild erstellen.
 
@@ -640,7 +640,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **StructMemberAlignment**
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die Byte-Ausrichtung für alle Member in einer Struktur an.
 
@@ -662,7 +662,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **SuppressStartupBanner**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.
 
@@ -670,7 +670,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **TrackerLogDirectory**
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt das Zwischenverzeichnis an, in dem die Nachverfolgungsprotokolle für diese Aufgabe gespeichert sind.
 
@@ -686,7 +686,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **TreatWarningAsError**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden alle Compilerwarnungen als Fehler behandelt.
 
@@ -694,7 +694,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **TreatWChar_tAsBuiltInType**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird der `wchar_t`-Typ als nativer Typ behandelt.
 
@@ -702,7 +702,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **UndefineAllPreprocessorDefinitions**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird die Definition der Microsoft-spezifischen Symbole aufgehoben, die der Compiler definiert.
 
@@ -710,7 +710,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **UndefinePreprocessorDefinitions**
 
-   Optionaler `String[]` -Parameter.
+   Optionaler `String[]`-Parameter.
 
    Gibt eine Liste mit einem oder mehreren Präprozessorsymbolen an, deren Definition aufgehoben werden soll.
 
@@ -718,7 +718,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **UseFullPaths**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird der vollständige Pfad der Quellcodedateien angezeigt, die in der Diagnostik an den Compiler übergeben werden.
 
@@ -726,7 +726,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **UseUnicodeForAssemblerListing**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird die Ausgabedatei im UTF-8-Format erstellt.
 
@@ -734,7 +734,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **WarningLevel**
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die höchste Warnstufe an, die vom Compiler generiert werden soll.
 
@@ -756,7 +756,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **WholeProgramOptimization**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird die Optimierung des ganzen Programms aktiviert.
 
@@ -764,7 +764,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **XMLDocumentationFileName**
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt den Namen der generierten XML-Dokumentationsdateien an. Bei diesem Parameter kann es sich um einen Datei- oder Verzeichnisnamen handeln.
 
@@ -772,13 +772,13 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **MinimalRebuildFromTracking**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` wird ein nachverfolgter inkrementeller Build ausgeführt; bei `false` erfolgt eine Neuerstellung.
 
 - **TLogReadFiles**
 
-   Optionaler `ITaskItem[]` -Parameter.
+   Optionaler `ITaskItem[]`-Parameter.
 
    Gibt ein Array von Elementen an, die die *Read-Datei-Nachverfolgungsprotokolle* darstellen.
 
@@ -786,7 +786,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **TLogWriteFiles**
 
-   Optionaler `ITaskItem[]` -Parameter.
+   Optionaler `ITaskItem[]`-Parameter.
 
    Gibt ein Array von Elementen an, die die *Write-Datei-Nachverfolgungsprotokolle* darstellen.
 
@@ -794,7 +794,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
 - **TrackFileAccess**
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Bei `true` werden Dateizugriffsmuster nachverfolgt.
 

@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a8ed6b9789569e9f68706a5b132aa9000b25d910
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251710"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590643"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich dabei um Dateien (die Dateien sind im `Include`-Attribut angegeben). Elemente werden auf Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Elementtypen sind benannte Listen von Elementen, die als Parameter für Aufgaben verwendet werden können. In den Aufgaben werden die Schritte des Buildprozesses mithilfe der Elementwerte ausgeführt.
@@ -285,7 +285,7 @@ Output:
 ### <a name="BKMK_KeepDuplicates"></a> KeepDuplicates-Attribut
  Wenn ein Element in einem Ziel erstellt wird, enthält das Item-Element möglicherweise das `KeepDuplicates`-Attribut. `KeepDuplicates` ist ein `Boolean`-Attribut, das angibt, ob ein Element der Zielgruppe hinzugefügt werden soll, wenn es sich um ein exaktes Duplikat eines bereits vorhandenen Elements handelt.
 
- Wenn Quell- und Zielelement denselben Include-Wert, aber unterschiedliche Metadaten aufweisen, wird das Element auch dann hinzugefügt, wenn für `KeepDuplicates` `false` festgelegt wurde. Wird für dieses Attribut ein leerer Wert angegeben, ist dies, als wäre nichts angegeben worden. Das `KeepDuplicates`-Attribut wurde in .NET Framework 4.5 eingeführt.
+ Wenn Quell- und Zielelement denselben Include-Wert, aber unterschiedliche Metadaten aufweisen, wird das Element auch dann hinzugefügt, wenn für `KeepDuplicates``false` festgelegt wurde. Wird für dieses Attribut ein leerer Wert angegeben, ist dies, als wäre nichts angegeben worden. Das `KeepDuplicates`-Attribut wurde in .NET Framework 4.5 eingeführt.
 
  Das folgende Beispiel veranschaulicht, wie das `KeepDuplicates`-Attribut verwendet wird.
 

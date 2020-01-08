@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635315"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589317"
 ---
 # <a name="image-editor"></a>Grafik-Editor
 
@@ -111,7 +111,7 @@ Auf der Symbolleiste für den **Bildbearbeitungsmodus** finden Sie Befehle, die 
 
 In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bildbearbeitungsmodus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
-|Element der Symbolleiste|BESCHREIBUNG|
+|Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Auswahl eines rechteckigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
 |**Unregelmäßige Auswahl**|Ermöglicht die Auswahl eines unregelmäßigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
@@ -135,7 +135,7 @@ In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bildbearbeit
 
 In der folgenden Tabelle werden die Elemente der Symbolleiste der **Bildbearbeitung** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden:
 
-|Element der Symbolleiste|BESCHREIBUNG|
+|Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Zeichenstift**|Verwendet die aktive Farbauswahl, um einen Aliasstrich zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
 |**Pinsel**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
@@ -158,7 +158,7 @@ Einige Bildformate, z.B. DirectDraw Surface ( *.dds*), unterstützen Transparenz
 
 In der folgende Tabelle wird beschrieben, wie unterschiedliche Tools Transparenz anwenden:
 
-|Tool|BESCHREIBUNG|
+|Tool|Beschreibung|
 |----------|-----------------|
 |**Zeichenstift**, **Pinsel**, **Airbrush**, **Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**, **Text**|Erweitern Sie zum Verschmelzen der aktiven Farbauswahl mit dem Bild die Eigenschaftengruppe **Kanäle** im Fenster **Eigenschaften**, und aktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**. Zeichnen Sie dann ganz normal.<br /><br /> Deaktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**, und zeichnen Sie normal weiter, um mit der aktiven Farbauswahl zu zeichnen und den Alphawert des Bilds unverändert zu lassen.|
 |**Füllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Wenn das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) überschrieben werden soll, halten Sie die **UMSCHALTTASTE** gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|
@@ -169,7 +169,7 @@ In der folgende Tabelle wird beschrieben, wie unterschiedliche Tools Transparenz
 
 In der folgenden Tabelle werden die Bildeigenschaften beschrieben:
 
-|Eigenschaft|BESCHREIBUNG|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |Breite|Die Breite des Bilds.|
 |Höhe|Die Höhe des Bilds.|
@@ -214,7 +214,7 @@ Nachdem Sie einen Bereich ausgewählt haben, können Sie dessen Größe oder die
 
 In der folgenden Tabelle werden die gültigen Zusatztasten beschrieben:
 
-|Ctrl|Shift|Alt|BESCHREIBUNG|
+|Ctrl|Shift|Alt|Beschreibung|
 |----------|-----------|---------|-----------------|
 ||||Ändert die Größe des Inhalts des ausgewählten Bereichs.|
 ||**UMSCHALTTASTE**||Ändert proportional die Größe des Inhalts des ausgewählten Bereichs.|
@@ -286,7 +286,7 @@ In der folgenden Tabelle werden die Tooleigenschaften beschrieben:
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie bei der Arbeit mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Modell-Editor](../designers/model-editor.md)|In diesem Artikel wird beschrieben, wie sich der Modell-Editor von Visual Studio für die Arbeit mit 3D-Modellen einsetzen lässt.|

@@ -3,17 +3,17 @@ title: 'Vorgehensweise: Erstellen einer Basistextur'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3313dd60775bc1136ebd79af6266be0ed4107ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635866"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589453"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer Basistextur
 
@@ -56,7 +56,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angez
 
 6. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.
 
-7. Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R**, **G** und **B** `0` sowie den Wert der Eigenschaft **A** auf `255` fest.
+7. Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R**, **G** und **B**`0` sowie den Wert der Eigenschaft **A** auf `255` fest.
 
 8. Legen Sie die Hintergrundfarbe auf ein vollständig deckendes weiß fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Hintergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** auf `255` fest.
 

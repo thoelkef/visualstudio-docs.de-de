@@ -2,17 +2,17 @@
 title: Umgebungseinstellungen
 ms.date: 11/21/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb535a301ec7e6045a44b910cecc21f2306b94bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650886"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588576"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Umgebungseinstellungen für Visual Studio
 
