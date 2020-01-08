@@ -17,17 +17,17 @@ helpviewer_keywords:
 - MSBuild, DownloadFile task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821429"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590474"
 ---
 # <a name="downloadfile-task"></a>DownloadFile-Aufgabe
 Diese Aufgabe lädt die angegebenen Dateien mithilfe des Hypertext Transfer-Protokolls (HTTP) herunter.
@@ -43,12 +43,12 @@ In der folgenden Tabelle werden die Parameter der `DownloadFile` -Aufgabe beschr
 |`DestinationFileName`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter<br /><br /> Der Name, der für die heruntergeladene Datei verwendet werden soll.  Der Dateiname wird standardmäßig von `SourceUrl` oder vom Remoteserver abgeleitet.|
 |`DestinationFolder`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Zielordner an, in den die Datei heruntergeladen werden soll.  Der Ordner wird erstellt, falls er noch nicht vorhanden ist.|
 |`DownloadedFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Ausgabeparameter.<br /><br /> Gibt die Datei an, die heruntergeladen wird.|
-|`Retries`|Optionaler `Int32` -Parameter.<br /><br /> Gibt die Anzahl der vorgesehenen Downloadversuche an, wenn alle vorherigen Versuche fehlgeschlagen sind. Der Standardwert ist 0 (null).|
-|`RetryDelayMilliseconds`|Optionaler `Int32` -Parameter.<br /><br /> Gibt die Verzögerung zwischen jeglichen erforderlichen Wiederholungen in Millisekunden an. Diese wird standardmäßig auf 5000 festgelegt.|
-|`SkipUnchangedFiles`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true` festgelegt ist, wird das Herunterladen der unveränderten Dateien übersprungen. Wird standardmäßig auf `true` festgelegt. In der `DownloadFile`-Aufgabe werden Dateien als unverändert betrachtet, wenn sie laut dem Remoteserver dieselbe Größe aufweisen und zur selben Zeit zuletzt geändert wurden. <br /><br />**Hinweis**:  Nicht alle HTTP-Server geben das letzte Änderungsdatum von Dateien an. Dadurch wird die Datei erneut heruntergeladen.|
+|`Retries`|Optionaler `Int32`-Parameter.<br /><br /> Gibt die Anzahl der vorgesehenen Downloadversuche an, wenn alle vorherigen Versuche fehlgeschlagen sind. Der Standardwert ist 0 (null).|
+|`RetryDelayMilliseconds`|Optionaler `Int32`-Parameter.<br /><br /> Gibt die Verzögerung zwischen jeglichen erforderlichen Wiederholungen in Millisekunden an. Diese wird standardmäßig auf 5000 festgelegt.|
+|`SkipUnchangedFiles`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true` festgelegt ist, wird das Herunterladen der unveränderten Dateien übersprungen. Wird standardmäßig auf `true` festgelegt. In der `DownloadFile`-Aufgabe werden Dateien als unverändert betrachtet, wenn sie laut dem Remoteserver dieselbe Größe aufweisen und zur selben Zeit zuletzt geändert wurden. <br /><br />**Hinweis**:  Nicht alle HTTP-Server geben das letzte Änderungsdatum von Dateien an. Dadurch wird die Datei erneut heruntergeladen.|
 |`SourceUrl`|Erforderlicher `String` -Parameter.<br /><br /> Gibt die URL für den Download an.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel

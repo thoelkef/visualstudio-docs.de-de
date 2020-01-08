@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108146"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398172"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -24,10 +24,10 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 > * Integrieren mit Webressourcen und Azure-Speicherressourcen
 > * Orchestrieren eines Workflows mit mehreren Azure-Funktionen
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 - Visual Studio für Mac 7.5 oder höher
-- Ein Azure-Abonnement (kostenlos unter [https://azure.com/free](https://azure.com/free) verfügbar)
+- Ein Azure-Abonnement (kostenlos unter [https://azure.com/free](https://azure.com/free?ref=visualstudio) verfügbar)
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Übung 1: Erstellen eines Azure Functions-Projekts
 

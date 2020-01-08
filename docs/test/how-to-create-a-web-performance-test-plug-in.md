@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Web performance tests, creating plug-ins
 - plug-ins, creating in Web performance tests
 ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 318cc217bee235842ebc206b0461dcd7c9aeceaa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc2eeafa41b953f9d853c7ff435a6a9706ae73ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653611"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589109"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins
 
@@ -29,7 +29,7 @@ Sie können ein benutzerdefiniertes Webleistungstest-Plug-In erstellen, indem Si
 Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Webleistungstests verwendet werden, sodass Sie nur eine minimale Menge Code erstellen müssen, um eine größere Kontrolle über Ihre Webleistungstests zu erhalten. Sie können die Plug-Ins jedoch auch mit codierten Webleistungstests verwenden. Weitere Informationen finden Sie unter [Generieren und Ausführen eines programmierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> Außerdem können Sie Auslastungstest-Plug-Ins erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md).
+> Außerdem können Sie Auslastungstest-Plug-Ins erstellen. Weitere Informationen finden Sie unter [How to: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>So erstellen Sie ein benutzerdefiniertes Webleistungstest-Plug-In
 

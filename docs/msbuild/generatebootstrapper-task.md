@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GenerateBootstrapper task
 - GenerateBootstrapper task [MSBuild]
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746590"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589291"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
 Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren einer Anwendung sowie ihrer erforderlichen Komponenten. Sie dient als einzelner Installer, der den separaten Installer für alle Komponenten integriert, die zu einer Anwendung gehören.
@@ -33,25 +33,25 @@ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben
 
 - `ApplicationFile`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die Datei an, mit der der Bootstrapper die Installation der Anwendung startet, nachdem alle erforderlichen Komponenten installiert wurde. Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.
 
 - `ApplicationName`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt den Namen der Anwendung an, die vom Bootstrapper installiert wird. Dieser Name wird in der Benutzeroberfläche angezeigt, die vom Bootstrapper während der Installation verwendet wird.
 
 - `ApplicationRequiresElevation`
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Wenn `true`, wird die Komponente mit erweiterten Berechtigungen ausgeführt, wenn sie auf einem Ziel-Computer installiert wird.
 
 - `ApplicationUrl`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die Webadresse an, die das Installationsprogramm der Anwendung hostet
 
@@ -88,7 +88,7 @@ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben
 
 - `ComponentsLocation`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt einen Speicherort für den Bootstrapper an, an dem nach zu installierenden Voraussetzungen für die Installation gesucht wird. Dieser Parameter kann die folgenden Werte aufweisen:
 
@@ -102,53 +102,53 @@ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben
 
 - `ComponentsUrl`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die URL an, die die Voraussetzung für die Installation enthält.
 
 - `CopyComponents`
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Wenn `true`, kopiert der Bootstrapper alle Ausgabedateien in den Pfad, der im Parameter `OutputPath` angegeben ist. Die Werte des Parameters `BootstrapperComponentFiles` sollten alle auf diesen Pfad basieren. Wenn `false`, werden die Dateien nicht kopiert. Die `BootstrapperComponentFiles`-Werte basieren dann auf den Wert des Parameters `Path`.  Der Standardwert dieses Parameters ist `true`.
 
 - `Culture`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die Kultur an, die für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation verwendet werden soll. Wenn die angegebene Kultur nicht verfügbar ist, verwendet die Aufgabe den Wert des Parameters `FallbackCulture`.
 
 - `FallbackCulture`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die sekundäre Kultur für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation an.
 
 - `OutputPath`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt den Speicherort zum Kopieren von *setup.exe* und aller Paketdateien an.
 
 - `Path`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt den Speicherort für alle verfügbaren erforderlichen Pakete an.
 
 - `SupportUrl`
 
-   Optionaler `String` -Parameter.
+   Optionaler `String`-Parameter.
 
    Gibt die URL an, die bei einem Fehler der Bootstrapper-Installation bereitgestellt werden soll.
 
 - `Validate`
 
-   Optionaler `Boolean` -Parameter.
+   Optionaler `Boolean`-Parameter.
 
    Wenn `true`, führt der Bootstrapper die XSD-Validierung der angegebenen Bootstrapper-Eingabeelemente durch. Der Standardwert dieses Parameters ist `false`.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622116"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596371"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 
@@ -31,7 +31,7 @@ Für viele Befehle sind Aliase verfügbar. Eine Liste der Aliase für Befehle fi
 
 ## <a name="escape-character"></a>Escapezeichen
 
-Das Escapezeichen für Visual Studio-Befehle ist ein Caretzeichen (^). Das Escapezeichen bedeutet, dass das unmittelbar darauf folgende Zeichen wörtlich und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:
+Das Escapezeichen für Visual Studio-Befehle ist ein Caretzeichen (^). Das Escapezeichen bedeutet, dass das unmittelbar darauf folgende Zeichen wörtlich und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Zum Beispiel:
 
 ```
 >Edit.Find ^^t /regex
@@ -43,7 +43,7 @@ Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungs
 
 Die folgenden Befehle verwenden Argumente oder Schalter:
 
-| Befehlsname | BESCHREIBUNG |
+| Befehlsname | Beschreibung |
 | - | - |
 | [Vorhandenes Element hinzufügen](../../ide/reference/add-existing-item-command.md) | Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese. |
 | [Vorhandenes Projekt hinzufügen](../../ide/reference/add-existing-project-command.md) | Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu. |

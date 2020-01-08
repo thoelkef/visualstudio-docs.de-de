@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985191"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678960"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
@@ -160,7 +160,7 @@ Da der Rückgabewert für die Ansicht nur eine Zeichenfolge ist, können Sie bel
             content = "<strong>Hello, Flask!</strong> on " + formatted_now)
     ```
 
-1. Führen Sie die App aus, und sehen Sie sich die Ergebnisse an. Beachten Sie, dass das Inline-HTML in `content` *nicht als HTML* gerendert wird, da die Vorlagenengine (Jinja) HTML-Inhalte automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern, dass unbeabsichtigte Sicherheitslücken durch Injection-Angriffe ausgenutzt werden. Entwickler nutzen nämlich häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Auch Escapezeichen verdeutlichen, dass HTML nicht im Code verwendet werden sollte.
+1. Führen Sie die App aus, und sehen Sie sich die Ergebnisse an. Beachten Sie, dass das Inline-HTML in `content`*nicht als HTML* gerendert wird, da die Vorlagenengine (Jinja) HTML-Inhalte automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern, dass unbeabsichtigte Sicherheitslücken durch Injection-Angriffe ausgenutzt werden. Entwickler nutzen nämlich häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Auch Escapezeichen verdeutlichen, dass HTML nicht im Code verwendet werden sollte.
 
     Sie sollten daher *templates\index.html* so anpassen, dass für die jeweiligen Datenelemente im Markup unterschiedliche Platzhalter verwendet werden:
 
@@ -204,10 +204,6 @@ Antwort: Obwohl Vorlagen in der Regel in separaten HTML-Dateien gespeichert sind
 Antwort: Antwort: Die *.html*-Erweiterung für Seitenvorlagendateien ist optional, da Sie immer den genauen relativen Pfad zur Datei im ersten Argument der Funktion `render_template` angeben. Visual Studio (und andere Editoren) verfügt jedoch in der Regel über Features wie Codevervollständigung und Syntaxfarbcodierung für *.html*-Dateien, die schwerer wiegen als die Tatsache, dass es sich bei den Seitenvorlagen nicht um HTML im eigentlichen Sinne handelt.
 
 Wenn Sie mit einem Flask-Projekt arbeiten, erkennt Visual Studio automatisch, ob die HTML-Datei, die Sie gerade bearbeiten, tatsächlich eine Flask-Vorlage ist, und stellt bestimmte Features zur automatischen Vervollständigung bereit. Wenn Sie beispielsweise einen Kommentar zu der Flask-Seitenvorlage, `{#`, eingeben, bietet Visual Studio Ihnen automatisch die schließenden `#}`-Zeichen. Die Befehle **Auswahl kommentieren** und **Kommentar der Auswahl entfernen** (im Menü **Bearbeiten** > **Erweitert** und in der Symbolleiste) verwenden ebenfalls anstelle von HTML-Kommentaren Vorlagenkommentare.
-
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Frage: Beim Ausführen des Projekts wird eine Fehlermeldung angezeigt, die besagt, dass die Vorlage nicht gefunden werden kann. Wo liegt der Fehler?
-
-Antwort: Wenn Sie von einer Fehlermeldung informiert werden, dass die Vorlage nicht gefunden werden kann, stellen Sie sicher, dass Sie der Datei *settings.py* des Flask-Projekts in der Liste `INSTALLED_APPS` die App hinzugefügt haben. Ohne diesen Eintrag weiß Flask nicht, dass der Ordner *Templates* der App überprüft werden soll.
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Frage: Können Vorlagen in weiteren Unterordnern verwaltet werden?
 

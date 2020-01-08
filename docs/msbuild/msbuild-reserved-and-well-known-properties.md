@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd54e97535c281d50119fdc7aa759d0704fa9e1
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1ab4c18006834cc1bef6841864e42609e09bc3a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491551"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585833"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt eine Reihe vordefinierter Eigenschaften zum Speichern von Informationen über die Projektdatei und die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Binärdateien bereit. Diese Eigenschaften werden auf dieselbe Weise ausgewertet wie andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften. Zum Verwenden der `MSBuildProjectFile`-Eigenschaft geben Sie beispielsweise `$(MSBuildProjectFile)` ein.
@@ -30,13 +30,13 @@ ms.locfileid: "74491551"
 ## <a name="reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften
  In der folgenden Tabelle werden die vordefinierten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften beschrieben.
 
-| Eigenschaft | Reserviert oder bekannt | BESCHREIBUNG |
+| Eigenschaft | Reserviert oder bekannt | Beschreibung |
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | Reserviert | Der absolute Pfad des Ordners, in dem sich die zurzeit verwendeten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Binärdateien befinden (z.B. *C:\Windows\Microsoft.Net\Framework\\\<Versionsnummer>* ). Diese Eigenschaft ist nützlich, wenn Sie auf Dateien im [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Verzeichnis verweisen müssen.<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein. |
 | `MSBuildExtensionsPath` | Bekannt | Seit .NET Framework 4 gibt es keinen Unterschied zwischen den Standardwerten von `MSBuildExtensionsPath` und `MSBuildExtensionsPath32`. Sie können die Umgebungsvariable `MSBUILDLEGACYEXTENSIONSPATH` auf einen Wert ungleich NULL festlegen, um das Verhalten des Standardwerts von `MSBuildExtensionsPath` in früheren Versionen zu ermöglichen.<br /><br /> In .NET Framework 3.5 und Vorgängerversionen verweist der Standardwert von `MSBuildExtensionsPath` auf den Pfad des MSBuild-Unterordners unter dem Ordner *\Programme\\* oder *\Programme (x86)* , je nach Bitanzahl des aktuellen Prozesses. Bei einem 32-Bit-Prozess auf einem 64-Bit-Computer zeigt diese Eigenschaft beispielsweise auf den Ordner *\Programme (x86)* . Bei einem 64-Bit-Prozess auf einem 64-Bit-Computer zeigt diese Eigenschaft auf den Ordner *\Programme*.<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein.<br /><br /> Dieser Speicherort ist nützlich zum Ablegen benutzerdefinierter Zieldateien. Ihre Zieldateien können beispielsweise unter *\Programme\MSBuild\MyFiles\Northwind.targets* installiert sein und dann mithilfe des folgenden XML-Codes in Projektdateien importiert werden:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
 | `MSBuildExtensionsPath32` | Bekannt | Der Pfad zu dem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Unterordner unter dem Ordner *\Programme* oder *\Programme (x86)* . Dieser Pfad führt stets zum 32-Bit-Ordner *\Programme* auf einem 32-Bit-Computer und zu *\Programme (x86)* auf einem 64-Bit-Computer. Siehe auch `MSBuildExtensionsPath` und `MSBuildExtensionsPath64`.<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein. |
 | `MSBuildExtensionsPath64` | Bekannt | Der Pfad des [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Unterordners im Ordner *\Programme*. Bei einem 64-Bit-Computer zeigt dieser Pfad immer auf den Ordner *\Programme*. Bei einem 32-Bit-Computer ist dieser Pfad leer. Siehe auch `MSBuildExtensionsPath` und `MSBuildExtensionsPath32`.<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein. |
-| `MSBuildLastTaskResult` | Reserviert | `true`, wenn die vorherige Aufgabe ohne Fehler (auch wenn Warnungen auftraten) abgeschlossen wurde, oder `false`, wenn bei der vorherigen Aufgabe Fehler aufgetreten sind. Wenn ein Fehler in einer Aufgabe auftritt, ist das Auftreten des Fehlers in der Regel das letzte Ereignis in dem jeweiligen Projekt. Daher ist der Wert dieser Eigenschaft niemals `false`, außer in diesen Szenarien:<br /><br /> – Wenn für das `ContinueOnError`-Attribut des [Aufgabenelements (MSBuild)](../msbuild/task-element-msbuild.md) `WarnAndContinue` (oder `true`) bzw. `ErrorAndContinue` festgelegt wird.<br /><br /> – Wenn `Target` über ein [OnError-Element (MSBuild)](../msbuild/onerror-element-msbuild.md) als untergeordnetes Element verfügt. |
+| `MSBuildLastTaskResult` | Reserviert | `true`, wenn die vorherige Aufgabe ohne Fehler (auch wenn Warnungen auftraten) abgeschlossen wurde, oder `false`, wenn bei der vorherigen Aufgabe Fehler aufgetreten sind. Wenn ein Fehler in einer Aufgabe auftritt, ist das Auftreten des Fehlers in der Regel das letzte Ereignis in dem jeweiligen Projekt. Daher ist der Wert dieser Eigenschaft niemals `false`, außer in diesen Szenarien:<br /><br /> – Wenn für das `ContinueOnError`-Attribut des [Aufgabenelements (MSBuild)](../msbuild/task-element-msbuild.md)`WarnAndContinue` (oder `true`) bzw. `ErrorAndContinue` festgelegt wird.<br /><br /> – Wenn `Target` über ein [OnError-Element (MSBuild)](../msbuild/onerror-element-msbuild.md) als untergeordnetes Element verfügt. |
 | `MSBuildNodeCount` | Reserviert | Die maximale Anzahl nebenläufiger Prozesse, die beim Erstellen verwendet werden. Dies ist der Wert, den Sie in der Befehlszeile für **-maxcpucount** angegeben haben. Wenn Sie **-maxcpucount** ohne einen Wert angegeben haben, wird die Anzahl der Prozessoren im Computer durch `MSBuildNodeCount` angegeben. Weitere Informationen finden Sie unter [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md) sowie unter [Paralleles Erstellen von mehreren Projekten mit MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). |
 | `MSBuildProgramFiles32` | Reserviert | Der Speicherort des Ordners für 32-Bit-Programme, beispielsweise *C:\Programme (x86)* .<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein. |
 | `MSBuildProjectDefaultTargets` | Reserviert | Die vollständige Liste der Ziele, die im `DefaultTargets`-Attribut des `Project`-Elements angegeben sind. Das folgende `Project`-Element würde beispielsweise über einen `MSBuildDefaultTargets`-Eigenschaftswert von `A;B;C` verfügen:<br /><br /> `<Project DefaultTargets="A;B;C" >` |

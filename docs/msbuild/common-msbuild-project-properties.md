@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747364"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596189"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
@@ -32,7 +32,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 
 ## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter
 
-| Eigenschaften- oder Parametername | BESCHREIBUNG |
+| Eigenschaften- oder Parametername | Beschreibung |
 |------------------------------------| - |
 | AdditionalLibPaths | Gibt weitere Ordner an, in denen Compiler nach Verweisassemblys suchen sollen. |
 | AddModules | Bewirkt, dass der Compiler dem Projekt, das Sie kompilieren, sämtliche Typinformationen aus den angegebenen Dateien bereitstellt. Diese Eigenschaft entspricht dem `/addModules`-Compilerschalter. |
@@ -43,8 +43,8 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | AssemblySearchPaths | Eine Liste von Speicherorten, die bei der Verweisassemblyauflösung zur Buildzeit durchsucht werden sollen. Die Reihenfolge der aufgelisteten Pfade ist von Bedeutung, da Pfade weiter oben in der Liste Vorrang vor weiter unten stehenden Pfaden haben. |
 | AssemblyName | Der Name der endgültigen Ausgabeassembly, nachdem das Projekt erstellt wurde. |
 | BaseAddress | Gibt die Basisadresse der Hauptausgabeassembly an. Diese Eigenschaft entspricht dem `/baseaddress`-Compilerschalter. |
-| BaseOutputPath | Gibt den Basispfad für die Ausgabedatei an. Wenn dies festgelegt ist, verwendet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Beispielsyntax: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
-| BaseIntermediateOutputPath | Der Ordner der obersten Ebene, in dem alle konfigurationsspezifischen Zwischenausgabeordner erstellt werden. Der Standardwert ist `obj\`sein. Codebeispiel: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
+| BaseOutputPath | Gibt den Basispfad für die Ausgabedatei an. Wenn dies festgelegt ist, verwendet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]`OutputPath = $(BaseOutputPath)\$(Configuration)\`. Beispielsyntax: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
+| BaseIntermediateOutputPath | Der Ordner der obersten Ebene, in dem alle konfigurationsspezifischen Zwischenausgabeordner erstellt werden. Der Standardwert ist `obj\`. Codebeispiel: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
 | BuildInParallel | Ein boolescher Wert, der angibt, ob Projektverweise bei der Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Multi-Proc parallel erstellt oder bereinigt werden. Der Standardwert ist `true`. Das bedeutet, dass Projekte parallel erstellt werden, wenn das System über mehrere Kerne oder Prozessoren verfügt. |
 | BuildProjectReferences | Ein boolescher Wert, der angibt, ob Projektverweise von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erstellt werden. Automatisch auf `false` festgelegt, wenn Sie Ihr Projekt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, andernfalls `true`. `-p:BuildProjectReferences=false` kann in der Befehlszeile eingegeben werden, um die Überprüfung von Projekten, auf die verwiesen wird, auf Aktualität zu vermeiden. |
 | CleanFile | Der Name der Datei, die als "Löschcache" verwendet wird. Der Löschcache ist eine Liste generierter Dateien, die während des Bereinigungsvorgangs gelöscht werden. Die Datei wird vom Buildprozess im Zwischenausgabepfad abgelegt.<br /><br /> Diese Eigenschaft gibt nur Dateinamen an, die keine Pfadinformationen aufweisen. |
@@ -75,7 +75,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | MSBuildProjectExtensionsPath | Gibt den Pfad an, unter dem Projekterweiterungen gespeichert sind. Standardmäßig entspricht dies dem Wert von `BaseIntermediateOutputPath`. |
 | ModuleAssemblyName | Der Name der Assembly, in die das kompilierte Modul integriert werden soll. Die Eigenschaft entspricht dem `/moduleassemblyname`-Compilerschalter. |
 | NoLogo | Ein boolescher Wert, der angibt, ob das Compilerlogo deaktiviert werden soll. Diese Eigenschaft entspricht dem `/nologo`-Compilerschalter. |
-| NoStdLib | Ein boolescher Wert, der angibt, ob Verweise auf die Standardbibliothek (*mscorlib.dll*) vermieden werden sollen. Der Standardwert ist `false`sein. |
+| NoStdLib | Ein boolescher Wert, der angibt, ob Verweise auf die Standardbibliothek (*mscorlib.dll*) vermieden werden sollen. Der Standardwert ist `false`. |
 | NoVBRuntimeReference | Ein boolescher Wert, der angibt, ob die [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Runtime (*Microsoft.VisualBasic.dll*) als Verweis in das Projekt eingefügt werden soll. |
 | NoWin32Manifest | Ein boolescher Wert, der angibt, ob Manifestinformationen zur Benutzerkontensteuerung (User Account Control, UAC) in die ausführbare Datei der Anwendung eingebettet werden. Bezieht sich nur auf Visual Studio-Projekte für [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. In Projekten, die mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] und COM ohne Registrierung bereitgestellt werden, wird dieses Element ignoriert. `False` (der Standardwert) gibt an, dass Manifestinformationen zur Benutzerkontensteuerung in die ausführbare Datei der Anwendung eingebettet werden. `True` gibt an, dass UAC-Manifestinformationen nicht eingebettet werden.<br /><br /> Diese Eigenschaft wird nur auf [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekte für [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] angewendet. In Projekten, die mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] und COM ohne Registrierung bereitgestellt werden, wird diese Eigenschaft ignoriert.<br /><br /> Sie dürfen „NoWin32Manifest“ nur hinzufügen, wenn Sie möchten, dass von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] keine Manifestinformationen in die ausführbare Datei der Anwendung einbettet werden. Dieser Vorgang wird als *Virtualisierung* bezeichnet. Legen Sie zur Verwendung der Virtualisierung `<ApplicationManifest>` zusammen mit `<NoWin32Manifest>` wie folgt fest:<br /><br /> – Entfernen Sie bei [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekten den `<ApplicationManifest>`-Knoten. (In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekten wird `<NoWin32Manifest>` ignoriert, wenn ein `<ApplicationManifest>`-Knoten vorhanden ist.)<br />– Legen Sie bei [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Projekten für `<ApplicationManifest>` den Wert `False` und für `<NoWin32Manifest>` den Wert `True` fest. (In [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Projekten wird `<ApplicationManifest>` von `<NoWin32Manifest>` überschrieben.)<br /> Diese Eigenschaft entspricht der `/nowin32manifest`-Compileroption von *vbc.exe*. |
 | Optimize | Ein boolescher Wert, der Compileroptimierungen aktiviert, wenn er auf `true` festgelegt ist. Diese Eigenschaft entspricht dem `/optimize`-Compilerschalter. |
@@ -91,7 +91,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | Plattform | Das Betriebssystem, für das Sie erstellen. Gültige Werte sind "Beliebige CPU", "x86" und "x64". |
 | ProduceReferenceAssembly | Ein boolescher Wert, der auf `true` festgelegt wurde, ermöglicht die Produktion von [Verweisassemblys](/dotnet/standard/assembly/reference-assemblies) für die aktuelle Assembly. `Deterministic` sollte beim Verwenden dieser Funktion `true` entsprechen. Diese Eigenschaft entspricht der `/refout`-Option der Compiler *vbc.exe* und *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Ein boolescher Wert, der den Compiler anweist, nur eine Verweisassembly und keinen kompilierten Code ausgegeben. Kann nicht in Verbindung mit `ProduceReferenceAssembly` verwendet werden.  Diese Eigenschaft entspricht der `/refonly`-Option der Compiler *vbc.exe* und *csc.exe*. |
-| RemoveIntegerChecks | Ein boolescher Wert, der angibt, ob Überprüfungen auf Ganzzahlüberlauf-Fehler deaktiviert werden sollen. Der Standardwert ist `false`sein. Diese Eigenschaft entspricht der `/removeintchecks`-Option des Compilers *vbc.exe*. |
+| RemoveIntegerChecks | Ein boolescher Wert, der angibt, ob Überprüfungen auf Ganzzahlüberlauf-Fehler deaktiviert werden sollen. Der Standardwert ist `false`. Diese Eigenschaft entspricht der `/removeintchecks`-Option des Compilers *vbc.exe*. |
 | SGenUseProxyTypes | Ein boolescher Wert, der angibt, ob Proxytypen von *SGen.exe* generiert werden sollen. Dies gilt nur, wenn *GenerateSerializationAssemblies* ausschließlich für .NET Framework aktiviert ist.<br /><br /> Das SGen-Ziel verwendet diese Eigenschaft, um das "UseProxyTypes"-Flag festzulegen. Diese Eigenschaft wird standardmäßig auf "true" festgelegt. Es ist keine Benutzeroberfläche verfügbar, um diesen Wert zu ändern. Fügen Sie diese Eigenschaft der Projektdatei hinzu, und legen Sie sie auf FALSE fest, bevor Sie *Microsoft.Common.Targets* oder *C#/VB.targets* importieren, um die Serialisierungsassembly für nicht webdienstbezogene Typen zu generieren. |
 | SGenToolPath | Ein optionaler Toolpfad, der angibt, von wo *SGen.exe* abgerufen werden kann, wenn die aktuelle Version von *SGen.exe* überschrieben wurde. Diese Eigenschaft wird nur für .NET Framework verwendet.|
 | StartupObject | Gibt die Klasse oder das Modul an, die bzw. das die "Main"-Methode oder die "Sub Main"-Prozedur enthält. Diese Eigenschaft entspricht dem `/main`-Compilerschalter. |

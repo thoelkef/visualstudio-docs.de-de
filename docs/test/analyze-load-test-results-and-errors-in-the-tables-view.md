@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665390"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565174"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht des Auslastungstest-Analyzers
 
@@ -50,7 +50,7 @@ Die meisten Tabellen können sortiert werden, indem Sie den Titel der Spalte wä
 
 In der folgenden Tabelle sind die Tabellen aufgeführt, die für die Analyse von Auslastungstestläufen verfügbar sind.
 
-|Tabellenname|BESCHREIBUNG|
+|Tabellenname|Beschreibung|
 |-|-|
 |Fehler|Zeigt eine Liste mit Fehlern an, die während des Auslastungstestlaufs aufgetreten sind. Weitere Informationen finden Sie unter [Die Tabelle „Errors“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in diesem Artikel sowie unter [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Seiten|Zeigt eine Liste mit Seiten an, auf die während eines Auslastungstestlaufs zugegriffen wurde. Einige Daten dieser Tabelle sind nur nach Abschluss eines Auslastungstests verfügbar. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
@@ -72,7 +72,7 @@ In der Tabelle **Anforderungen** werden ausführliche Informationen zu einzelnen
 
 In der folgenden Tabelle sind die Spalten der Tabelle **Anforderungen** aufgelistet:
 
-|Spalte|BESCHREIBUNG|In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung|In der Standardeinstellung angezeigt|
 |-|-|-|
 |**Anforderung**|Die URL der Anforderung. Beispiel: *home.html* oder *orange-arrow.gif*.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
@@ -94,7 +94,7 @@ In der Tabelle **Tests** werden ausführliche Informationen zu einzelnen Tests a
 
 In der folgenden Tabelle sind die Spalten der Tabelle **Tests** aufgelistet.
 
-|Spalte|BESCHREIBUNG|In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung|In der Standardeinstellung angezeigt|
 |-|-|-|
 |**Test**|Der Name des Tests.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
@@ -118,7 +118,7 @@ In der folgenden Tabelle sind die Spalten der Tabelle **Transaktionen** aufgelis
 > [!NOTE]
 > Sie müssen zum Anzeigen aller Spalten die Eigenschaft "Speicher für Details der zeitlichen Steuerung" aktivieren, die der aktiven Testlaufeinstellung zugeordnet ist. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Spalte|BESCHREIBUNG|Sichtbar ohne zeitliche Steuerungsdetails|
+|Spalte|Beschreibung|Sichtbar ohne zeitliche Steuerungsdetails|
 |-|-|-|
 |**Transaktion**|Der Name der Transaktion.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
@@ -144,7 +144,7 @@ In der Tabelle Errors sind die Fehler, die während eines Auslastungstests aufge
 
 Die Tabelle Errors enthält folgende Spalten:
 
-|Spalte|BESCHREIBUNG|Standardmäßig angezeigt|
+|Spalte|Beschreibung|Standardmäßig angezeigt|
 |-|-|-|
 |Typ|Der Typ des Fehlers. Beispielsweise HttpError.|Ja|
 |SubType|Der Untertyp des Fehlers. Beispielsweise LoadTestException.|Ja|
@@ -162,7 +162,7 @@ In der Tabelle Errors sind die Fehler nach Typ und Untertyp gruppiert. Zeigen Si
 
 Die Tabelle **Auslastungstestfehler** enthält folgende Spalten:
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |-|-|
 |**Zeit**|Der Zeitpunkt während des Auslastungstests, zu dem der Fehler auftrat|
 |**Agent**|Der Name des Agent-Computers, auf dem der Fehler auftrat. Dies ist wichtig, wenn Sie Auslastungstests mithilfe von Testcontrollern und Test-Agents ausführen. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).|

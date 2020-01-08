@@ -3,8 +3,8 @@ title: Arbeitsauslastung und Komponenten-IDs von Visual Studio
 titleSuffix: ''
 description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs, um Visual Studio über die Befehlszeile zu installieren, oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben.
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: a5da7186bcc67fb61e80fdd691142423b879f312
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211378"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588433"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Arbeitsauslastung und Komponenten-IDs von Visual Studio
 

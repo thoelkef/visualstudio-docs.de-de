@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588654"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -183,11 +183,11 @@ Das Symbol in der Spalte **Branch** gibt die Beziehung des Branches zu dem Branc
 |![CodeLens: Vom Symbol für untergeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromchildicon.png)|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|
 |![CodeLens: Vom Symbol für übergeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromunrelatedicon.png)|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|
 
-## <a name="linked-work-items"></a>Verknüpfte Arbeitsaufgaben
+## <a name="linked-work-items"></a>Verknüpfte Arbeitselemente
 
 Suchen Sie verknüpfte Arbeitselemente, indem Sie auf den Indikator **Arbeitselemente** klicken oder **ALT**+**8** drücken.
 
-![CodeLens – Arbeitsaufgaben für bestimmten Code suchen](../ide/media/codelens-work-items.png)
+![CodeLens – Arbeitselemente für bestimmten Code suchen](../ide/media/codelens-work-items.png)
 
 ## <a name="linked-code-reviews"></a>Verknüpfte Code Reviews
 

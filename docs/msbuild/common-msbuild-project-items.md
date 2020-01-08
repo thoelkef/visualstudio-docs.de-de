@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
-ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
+ms.openlocfilehash: b10768d5ab291981dc77af650de61eb9496dfda5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73956142"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596150"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei *Microsoft.Build.CommonTypes.xsd* definiert.
@@ -31,7 +31,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Referenz
  Stellt einen Assemblyverweis (verwaltet) im Projekt dar.
 
-|Elementmetadatenname|BESCHREIBUNG|
+|Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
 |HintPath|Optionale Zeichenfolge. Relativer oder absoluter Pfad der Assembly.|
 |name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|
@@ -43,7 +43,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comreference"></a>COMReference
  Stellt einen COM-Komponentenverweis (nicht verwaltet) im Projekt dar. Dieses Element gilt nur für .NET-Projekte.
 
-|Elementmetadatenname|BESCHREIBUNG|
+|Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
 |name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|
 |GUID|Erforderliche Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|
@@ -56,14 +56,14 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comfilereference"></a>COMFileReference
  Stellt eine Liste von Typbibliotheken dar, die an den Parameter `TypeLibFiles` des [ResolvedComreference](resolvecomreference-task.md)-Ziels übertragen werden. Dieses Element gilt nur für .NET-Projekte.
 
-|Elementmetadatenname|BESCHREIBUNG|
+|Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
 |WrapperTool|Optionale Zeichenfolge. Der Name des Wrappertools, das auf die Komponente angewendet wird, z. B. "tlbimp".|
 
 ### <a name="nativereference"></a>NativeReference
  Stellt eine systemeigene Manifestdatei oder einen Verweis auf eine solche Datei dar.
 
-|Elementmetadatenname|BESCHREIBUNG|
+|Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
 |name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|
 |HintPath|Erforderliche Zeichenfolge. Der relative Pfad der Manifestdatei.|
@@ -71,7 +71,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="projectreference"></a>ProjectReference
  Stellt einen Verweis auf ein anderes Projekt dar.
 
-|Elementmetadatenname|BESCHREIBUNG|
+|Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
 |name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|
 |Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|
@@ -81,7 +81,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compile
  Stellt die Quelldateien für den Compiler dar.
 
-| Elementmetadatenname | BESCHREIBUNG |
+| Elementmetadatenname | Beschreibung |
 |-----------------------| - |
 | DependentUpon | Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren. |
 | AutoGen | Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwicklungsumgebung (IDE) generiert wurde. |
@@ -92,7 +92,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="embeddedresource"></a>EmbeddedResource
  Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.
 
-| Elementmetadatenname | BESCHREIBUNG |
+| Elementmetadatenname | Beschreibung |
 |-----------------------| - |
 | DependentUpon | Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren. |
 | Generator | Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird. |
@@ -106,7 +106,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Inhalt
  Stellt Dateien dar, die zwar nicht in das Projekt kompiliert werden, jedoch möglicherweise mit dem Projekt eingebettet oder veröffentlicht werden.
 
-| Elementmetadatenname | BESCHREIBUNG |
+| Elementmetadatenname | Beschreibung |
 |-----------------------| - |
 | DependentUpon | Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren. |
 | Generator | Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird. |
@@ -121,7 +121,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="none"></a>Keine
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.
 
-| Elementmetadatenname | BESCHREIBUNG |
+| Elementmetadatenname | Beschreibung |
 |-----------------------| - |
 | DependentUpon | Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren. |
 | Generator | Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird. |
@@ -134,7 +134,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="assemblymetadata"></a>AssemblyMetadata
  Stellt Assemblyattribute dar, die als `[AssemblyMetadata(key, value)]` generiert werden sollen.
 
-| Elementmetadatenname | BESCHREIBUNG |
+| Elementmetadatenname | Beschreibung |
 |-----------------------| - |
 | Einschließen | Wird zum ersten Parameter (Schlüssel) im Attributkonstruktor `AssemblyMetadataAttribute`. |
 | Wert | Erforderliche Zeichenfolge. Wird zum zweiten Parameter (Wert) im Attributkonstruktor `AssemblyMetadataAttribute`. |

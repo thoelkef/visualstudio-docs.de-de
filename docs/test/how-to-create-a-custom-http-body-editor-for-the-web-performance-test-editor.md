@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357114ad623494a26d98d3b190ed50847a0b27cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664793"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589200"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -117,7 +117,7 @@ Das <xref:System.Windows.Forms.UserControl> "MessageEditorControl", das in der v
 private MessageEditorControl messageEditorControl
 ```
 
-Die messageEditorControl-Instanz wird innerhalb des Plug-In-Dialogfelds gehostet, das von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>-Methode erstellt wird. Darüber hinaus wird das <xref:System.Windows.Forms.RichTextBox> von "messageEditorControl" mit dem Inhalt von <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aufgefüllt. Das Plug-In kann jedoch nur erstellt werden, wenn <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> `true` zurückgibt. Bei diesem Editor gibt <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> `true` zurück, wenn der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> "xml" enthält.
+Die messageEditorControl-Instanz wird innerhalb des Plug-In-Dialogfelds gehostet, das von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>-Methode erstellt wird. Darüber hinaus wird das <xref:System.Windows.Forms.RichTextBox> von "messageEditorControl" mit dem Inhalt von <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aufgefüllt. Das Plug-In kann jedoch nur erstellt werden, wenn <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*>`true` zurückgibt. Bei diesem Editor gibt <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*>`true` zurück, wenn der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> "xml" enthält.
 
 Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer im Plug-In-Dialogfeld auf **OK** klickt, wird <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> aufgerufen, um den bearbeiteten Text als Zeichenfolge abzurufen und den **Zeichenfolgentext** in der Anforderung im Webleistungstest-Editor zu aktualisieren.
 
@@ -204,7 +204,7 @@ Das in der ersten Prozedur erstellte <xref:System.Windows.Forms.UserControl> "Me
 private MessageEditorControl messageEditorControl
 ```
 
-Die messageEditorControl-Instanz wird innerhalb des Plug-In-Dialogfelds gehostet, das von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.CreateEditor*>-Methode erstellt wird. Darüber hinaus wird das <xref:System.Windows.Forms.RichTextBox> von "messageEditorControl" mit dem Inhalt von <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aufgefüllt. Das Plug-In kann jedoch nur erstellt werden, wenn <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*> `true` zurückgibt. Bei diesem Editor gibt <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*>`true` zurück, wenn der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> "msbin1" enthält.
+Die messageEditorControl-Instanz wird innerhalb des Plug-In-Dialogfelds gehostet, das von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.CreateEditor*>-Methode erstellt wird. Darüber hinaus wird das <xref:System.Windows.Forms.RichTextBox> von "messageEditorControl" mit dem Inhalt von <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aufgefüllt. Das Plug-In kann jedoch nur erstellt werden, wenn <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*>`true` zurückgibt. Bei diesem Editor gibt <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*>`true` zurück, wenn der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> "msbin1" enthält.
 
 Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer im Plug-In-Dialogfeld auf **OK** klickt, wird <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.GetNewValue*> aufgerufen, um den bearbeiteten Text als Zeichenfolge abzurufen und **BinaryHttpBody.Data** in der Anforderung im Webleistungstest-Editor zu aktualisieren.
 

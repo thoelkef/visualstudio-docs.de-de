@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75ebee68bf76a4dd5419942f79a3207c29673134
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645363"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565239"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Entwickeln mit Visual F# in Visual Studio
 
@@ -58,7 +58,7 @@ In der folgenden Tabelle sind Features in Projekteigenschaften für F# zusammeng
 
 Der **Projekt-Designer** enthält mehrere Projekteigenschaftenseiten, die nach verwandten Funktionalitäten gruppiert sind. Bei den für F#-Projekte verfügbaren Seiten handelt es sich im Wesentlichen um eine Teilmenge der für andere Sprachen verfügbaren Seiten. Sie werden in der folgenden Tabelle beschrieben. Dabei werden Links für die entsprechenden **Projekt-Designer**-Seiten für C# angegeben.
 
-|Projekt-Designer-Seite|Verwandte Links|BESCHREIBUNG|
+|Projekt-Designer-Seite|Verwandte Links|Beschreibung|
 | - |-------------|-----------|
 |Anwendung|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Hier können Sie Einstellungen und Eigenschaften auf Anwendungsebene angeben und beispielsweise festlegen, ob Sie eine Bibliothek oder eine ausführbare Datei erstellen und auf welche .NET-Version die Anwendung abzielt. Ferner können Sie Informationen zum Speicherort der von der Anwendung verwendeten Ressourcendateien bereitstellen.|
 |Build|[Seite „Erstellen“, Projekt-Designer](reference/build-page-project-designer-csharp.md)|Damit können Sie festlegen, wie der Code kompiliert wird.|
@@ -72,7 +72,7 @@ Der **Projekt-Designer** enthält mehrere Projekteigenschaftenseiten, die nach v
 
 In der folgenden Tabelle sind F#-spezifische Einstellungen zusammengefasst:
 
-|Projekt-Designer-Seite|Einstellung|BESCHREIBUNG|
+|Projekt-Designer-Seite|Einstellung|Beschreibung|
 | - |-------|-----------|
 |Build|Endeaufrufe generieren|Wenn diese Option ausgewählt wird, kann die MSIL-Anweisung (Microsoft Intermediate Language) „tail“ verwendet werden. Dadurch kann der Stapelrahmen für endrekursive Funktionen wiederverwendet werden. Entspricht der Compileroption `--tailcalls`.|
 |Build|Andere Flags|Damit können Sie zusätzliche Compilerbefehlszeilenoptionen angeben.|
@@ -81,7 +81,7 @@ In der folgenden Tabelle sind F#-spezifische Einstellungen zusammengefasst:
 
 Folgende Features der Code- und Text-Editoren von Visual Studio werden in F# unterstützt:
 
-|Feature|BESCHREIBUNG|In F# unterstützt?|
+|Feature|Beschreibung|In F# unterstützt?|
 |-------|-----------|----------------|
 |Automatically comment (Automatisch auskommentieren)|Damit können Sie Codeabschnitte auskommentieren bzw. die Auskommentierung aufheben.|Ja|
 |Automatically format (Automatisch formatieren)|Damit wird Code mit Standardeinzügen und -formaten neu formatiert.|Nein|
@@ -113,7 +113,7 @@ Allgemeine Informationen zum Bearbeiten von Code in Visual Studio sowie zu den F
 
 In der folgenden Tabelle sind die in F# unterstützten und nicht unterstützten IntelliSense-Features zusammengefasst:
 
-|Feature|BESCHREIBUNG|In F# unterstützt?|
+|Feature|Beschreibung|In F# unterstützt?|
 |-------|-----------|----------------|
 |Automatically implement interfaces (Schnittstellen automatisch implementieren)|Generiert Codestubs für Schnittstellenmethoden.|Ja|
 |Codeausschnitte|Fügt Code aus einer Bibliothek allgemeiner Codierungskonstrukte in Themen ein.|Nein|
@@ -133,7 +133,7 @@ Allgemeine Informationen zu IntelliSense finden Sie unter [IntelliSense in Visua
 
 In der folgenden Tabelle sind die Features zusammengefasst, die beim Debuggen von F#-Code verfügbar sind.
 
-|Feature|BESCHREIBUNG|In F# unterstützt?|
+|Feature|Beschreibung|In F# unterstützt?|
 |-------|-----------|----------------|
 |Fenster|Zeigt automatische oder temporäre Variablen an.|Nein|
 |Haltepunkte|Damit können Sie beim Debuggen die Codeausführung an bestimmten Punkten anhalten.|Ja|
@@ -152,7 +152,7 @@ Weitere Informationen zum Visual Studio-Debugger finden Sie unter [Debugging in 
 
 In der folgenden Tabelle ist die Unterstützung für F# in Visual Studio-Tools zusammengefasst.
 
-|Tool|BESCHREIBUNG|In F# unterstützt?|
+|Tool|Beschreibung|In F# unterstützt?|
 |----|-----------|----------------|
 |Aufrufhierarchie|Zeigt die geschachtelte Struktur von Funktionsaufrufen im Code an.|Nein|
 |Codemetriken|Sammelt Informationen zum Code wie etwa die Zeilenanzahl.|Nein|

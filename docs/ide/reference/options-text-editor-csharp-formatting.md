@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8947f6e2fee2b8615c750b770ac3b0dea85bb991
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666317"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596241"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Dialogfeld „Optionen“: Text-Editor \> C# \> Codeformat \> Formatierung
 
@@ -40,7 +40,7 @@ Wählen Sie in der Menüleiste **Tools** > **Optionen** um diese Optionsseite au
 
 Es hängt von den Einstellungen ab, *wann* Formatierungsoptionen für den Code vom Code-Editor übernommen werden.
 
-|Bezeichnung|BESCHREIBUNG|
+|Bezeichnung|Beschreibung|
 |-----------|-----------------|
 |**Automatisch während der Eingabe formatieren**|Wenn diese Bezeichnung deaktiviert ist, sind auch die Optionen **Beim Eingeben von ; Anweisung formatieren** und **Bei Eingabe von } Block formatieren** deaktiviert.|
 |**Bei Eingabe von ; Anweisung automatisch formatieren**|Bei Auswahl dieser Option werden Anweisungen nach der Fertigstellung entsprechend den für den Editor ausgewählten Formatierungsoptionen formatiert.|
@@ -60,7 +60,7 @@ Wenn Sie Codeformateinstellungen für C#-Dateien bisher mit dem Befehl **Dokumen
 
 Mit den folgenden Einstellungen wird der Befehl **Dokument formatieren** so konfiguriert, dass zusätzliche Bereinigungsvorgänge für eine Datei ausgeführt werden. Weitere Informationen darüber, wie diese Einstellungen übernommen werden, finden Sie unter [Befehl „Dokument formatieren“](../code-styles-and-code-cleanup.md#apply-code-styles).
 
-|Bezeichnung|BESCHREIBUNG|Entsprechende EditorConfig-Optionen und Regeln unter „Extras“ > „Optionen“|
+|Bezeichnung|Beschreibung|Entsprechende EditorConfig-Optionen und Regeln unter „Extras“ > „Optionen“|
 |-----------|-----------------|-----------------|-----------------|
 |**Alle C#-Formatierungsregeln anwenden (Einzug, Umbruch, Abstände)**|Durch den Befehl **Dokument formatieren** werden alle Formatierungsprobleme behoben. Diese Einstellung kann nicht angepasst werden.| [Grundlegende EditorConfig-Optionen](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig-Formatierungsoptionen](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Formatierung** > [**Einzug**, **Neue Zeilen**, **Abstand** oder **Umbruch**]|
 |**Zusätzliche Codebereinigung während der Formatierung durchführen**|Bei Auswahl dieser Option werden die Korrekturen angewendet, die in den Regeln für den **Edit.FormatDocument**-Befehl angegeben wurden.| Nicht zutreffend |

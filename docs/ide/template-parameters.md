@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647391"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585885"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -23,7 +23,7 @@ Wenn die Vorlage instanziiert wird, können Sie die darin erhaltenen Werte erset
 
 ## <a name="declare-and-enable-template-parameters"></a>Deklarieren und Aktivieren von Vorlagenparametern
 
-Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
+Vorlagenparameter werden im Format $*parameter*$ deklariert. Zum Beispiel:
 
 - $safeprojectname$
 
@@ -47,7 +47,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
 
 In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können:
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
 |ext_*|Fügen Sie das Präfix `ext_` zu einem beliebigen Parameter hinzu, um auf die Variablen der übergeordneten Vorlage zu verweisen. Beispielsweise `ext_safeprojectname`.|

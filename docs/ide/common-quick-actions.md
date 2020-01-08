@@ -3,20 +3,20 @@ title: Häufige schnelle Aktionen
 description: Die beliebtesten Schnellaktionen für C# und Visual Basic sind unter anderem das Bearbeiten falsch geschriebener Schlüsselwörter oder falscher Symbole, das Lösen von Mergekonflikten, das Entfernen nötiger Importe, das Generieren von Typen, die Einführung lokaler Variablen usw.
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652246"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585521"
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
@@ -30,7 +30,7 @@ Die Abschnitte in diesem Thema enthalten einige der häufig vorkommenden **Schne
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Richtige falsch geschriebenes Symbol oder Schlüsselwort
 
-Wenn Sie versehentlich einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion diesen Fehler für Sie. Diese Elemente werden im Fehlerbehebungsmenü als **„Change '\<misspelled word>' to '\<correct word>'“** („'<Falsch geschriebenes Wort>' in '<richtiges Wort>' ändern“) angezeigt. Beispiel:
+Wenn Sie versehentlich einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion diesen Fehler für Sie. Diese Elemente werden im Fehlerbehebungsmenü als **„Change '\<misspelled word>' to '\<correct word>'“** („'<Falsch geschriebenes Wort>' in '<richtiges Wort>' ändern“) angezeigt. Zum Beispiel:
 
 ```csharp
 // Before

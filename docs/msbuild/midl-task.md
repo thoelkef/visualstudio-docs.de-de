@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (C++), MIDL task
 - MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911247"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592151"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *midl.exe*. Weitere Informationen finden Sie unter [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference).
@@ -319,7 +319,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **SuppressStartupBanner**
 
-     Optionaler `Boolean` -Parameter.
+     Optionaler `Boolean`-Parameter.
 
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.
 
@@ -344,7 +344,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **TrackerLogDirectory**
 
-     Optionaler `String` -Parameter.
+     Optionaler `String`-Parameter.
 
      Gibt das Zwischenverzeichnis an, in dem die Nachverfolgungsprotokolle für diese Aufgabe gespeichert sind.
 
@@ -381,7 +381,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **ValidateAllParameters**
 
-     Optionaler `Boolean` -Parameter.
+     Optionaler `Boolean`-Parameter.
 
      Wenn `true`, dann werden zusätzliche Dateifehler-Überprüfungsinformationen generiert, die für Integritätsprüfungen in der Laufzeit verwendet werden. Wenn `false`, dann werden keine Dateifehler-Überprüfungsinformationen generiert.
 
@@ -389,7 +389,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **WarnAsError**
 
-     Optionaler `Boolean` -Parameter.
+     Optionaler `Boolean`-Parameter.
 
      Wenn `true`, werden alle Warnungen als Fehler behandelt.
 

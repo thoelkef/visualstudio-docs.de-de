@@ -10,19 +10,19 @@ helpviewer_keywords:
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12b8f29f80f80a4322dc6a4cf43061696db6f370
-ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
+ms.openlocfilehash: c33de2ef29394cc09b6a65072439c745ca24af94
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413559"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594096"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -84,7 +84,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 
 Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Diensten hinter einer Firewall oder einem Proxyserver Zugriff auf alle benötigten Komponenten haben, müssen Sie die folgenden URLs in die Zulassungsliste aufnehmen und diese Ports und Protokolle öffnen bzw. zulassen.
 
-| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | BESCHREIBUNG |
+| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung |
 | - | - | - | - | - |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | | Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden. |
 | Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite (nur in Visual Studio 2017). |

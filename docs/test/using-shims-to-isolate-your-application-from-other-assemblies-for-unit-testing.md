@@ -2,18 +2,18 @@
 title: Verwenden von Shims zum Isolieren der Anwendung für Unittests
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585534"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Verwenden von Shims zum Isolieren der Anwendung für Unittests
 
@@ -92,7 +92,7 @@ Es ist wichtig, jeden Shimkontext ordnungsgemäß zu löschen. Als Faustregel gi
 
 ### <a name="write-a-test-with-shims"></a>Einen Test mit Shims schreiben
 
-Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Beispiel:
+Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Zum Beispiel:
 
 ```csharp
 [TestClass]

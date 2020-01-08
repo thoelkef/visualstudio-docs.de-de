@@ -5,15 +5,15 @@ ms.topic: reference
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bea257e45b557fd157d68baf9e0229a602a7a6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8898a474888ce9efbf4c91a5251bf8fe7036fe5f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652975"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584464"
 ---
 # <a name="load-test-run-settings-properties"></a>Eigenschaften von Laufzeiteinstellungen für Auslastungstests
 
@@ -43,7 +43,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |-|----------------|
 |**Maximale Testprotokolle**|Gibt die maximale Anzahl von Testprotokollen an, die für den Auslastungstest gespeichert werden sollen. Wenn der für die maximale Anzahl von Testprotokollen eingegebene Wert erreicht wird, wird das Sammeln von Protokollen durch den Auslastungstest beendet. Daher werden die Protokolle am Anfang des Tests gesammelt, und nicht am Ende. Der Auslastungstest wird weiterhin ausgeführt, bis er abgeschlossen ist.|
 |**Protokollhäufigkeit für abgeschlossene Tests speichern**|Gibt die Häufigkeit an, mit der das Testprotokoll geschrieben wird. Die Zahl gibt an, dass von jeder eingegebenen Anzahl von Tests jeweils ein Test im Testprotokoll gespeichert wird. Durch Eingabe des Werts zehn wird z. B. angegeben, dass der zehnte, zwanzigste und dreißigste Test in das Testprotokoll geschrieben wird. Wenn Sie den Wert auf "0" festlegen, werden keine Testprotokolle gespeichert.|
-|**Protokoll bei Testfehler speichern**|Ein boolescher Wert, der bestimmt, ob Testprotokolle gespeichert werden, wenn ein Test in einem Auslastungstest fehlschlägt. Die Standardeinstellung ist `True`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Protokoll bei Testfehler speichern**|Ein boolescher Wert, der bestimmt, ob Testprotokolle gespeichert werden, wenn ein Test in einem Auslastungstest fehlschlägt. Der Standardwert ist `True`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
 Weitere Informationen finden Sie unter [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md).
 
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter [Ändern von Einstellungen für die Ausla
 |**Mindestdauer von SQL-Vorgängen, für die Ablaufverfolgung durchgeführt wird**|Notwendige Mindestdauer eines SQL-Vorgangs in Millisekunden, damit dieser von der SQL-Ablaufverfolgung aufgezeichnet wird. Wenn Sie z. B. nach SQL-Vorgängen suchen, die unter Belastung langsam durchgeführt werden, ermöglicht Ihnen diese Einstellung das Ignorieren von schnell ablaufenden Vorgängen.|
 |**Verbindungszeichenfolge für SQL-Ablaufverfolgung**|Die Verbindungszeichenfolge für den Zugriff auf die Datenbank, für die eine SQL-Ablaufverfolgung durchgeführt werden soll.|
 |**SQL-Ablaufverfolgungsverzeichnis**|Der Speicherort, an dem die SQL-Ablaufverfolgungsdatei nach Abschluss der Aufzeichnung gespeichert wird. Dieses Verzeichnis muss über Schreibberechtigungen für SQL Server und Leseberechtigungen für den Controller verfügen.|
-|**SQL-Ablaufverfolgung aktiviert**|Hiermit wird die Ablaufverfolgung von SQL-Vorgängen aktiviert. Der Standardwert ist `False`sein.|
+|**SQL-Ablaufverfolgung aktiviert**|Hiermit wird die Ablaufverfolgung von SQL-Vorgängen aktiviert. Der Standardwert ist `False`.|
 
 ## <a name="test-iterations-properties"></a>Eigenschaften von Testiterationen
 
