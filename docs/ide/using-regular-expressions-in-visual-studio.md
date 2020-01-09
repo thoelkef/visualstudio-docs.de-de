@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fd8af330d0cdab84d944dc453dbfe66208608f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647331"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568619"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -33,7 +33,7 @@ Die folgende Tabelle enthält eine Auswahl an Zeichen, Operatoren, Konstrukten u
 
 |Zweck|expression|Beispiel|
 |-------------|----------------|-------------|
-|Übereinstimmung mit beliebigem Zeichen (mit Ausnahme des Zeilenumbruchs). Weitere Informationen finden Sie unter [Alle Zeichen](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|sein.|`a.o` findet „aro“ in „around“ und „abo“ in „about“, jedoch nicht „acro“ in „across“.|
+|Übereinstimmung mit beliebigem Zeichen (mit Ausnahme des Zeilenumbruchs). Weitere Informationen finden Sie unter [Alle Zeichen](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` findet „aro“ in „around“ und „abo“ in „about“, jedoch nicht „acro“ in „across“.|
 |Übereinstimmung mit keinem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst viele Zeichen umfasst). Weitere Informationen finden Sie unter [Übereinstimmung mit null oder mehr Vorkommen](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` findet „r“ in „rack“, „ar“ in „ark“ und „aar“ in „aardvark“.|
 |Übereinstimmung mit keinem oder mehreren beliebigen Zeichen.|.*|`c.*e` findet „cke“ in „racket“, „comme“ in „comment“ und „code“ in „code“.|
 |Übereinstimmung mit einem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst viele Zeichen umfasst). Weitere Informationen finden Sie unter [Übereinstimmung mit null oder mehr Vorkommen](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d` findet „eed“ in „feeder“ und „ed“ in „faded“.|
