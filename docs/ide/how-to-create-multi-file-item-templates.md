@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655943"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593732"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien
 
@@ -36,7 +36,7 @@ Eine Elementvorlage mit mehreren Dateien wird auf dieselbe Weise erstellt, wie e
 
 1. Erstellen Sie die Elementvorlage auf dieselbe Weise, wie Sie manuell eine Elementvorlage erstellen würden, die nur aus einer Datei besteht. Fügen Sie dabei allerdings jede Datei hinzu, die Bestandteil des Elements mit mehreren Dateien ist.
 
-1. Fügen Sie der *VSTEMPLATE*-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließend diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie den Wert des `TargetFileName`-Attributs auf *$fileinputname$.FileExtension* fest, wobei *FileExtension* der Erweiterung der Datei entspricht, die in der Vorlage enthalten ist. Beispiel:
+1. Fügen Sie der *VSTEMPLATE*-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließend diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie den Wert des `TargetFileName`-Attributs auf *$fileinputname$.FileExtension* fest, wobei *FileExtension* der Erweiterung der Datei entspricht, die in der Vorlage enthalten ist. Zum Beispiel:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

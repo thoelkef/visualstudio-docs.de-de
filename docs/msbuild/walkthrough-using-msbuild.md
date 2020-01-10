@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445298"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567293"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 
@@ -40,12 +40,12 @@ Sie können MSBuild in Visual Studio oder im **Befehlsfenster** ausführen. In d
     ::: moniker range=">=vs-2019"
     Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** zum Öffnen des Suchfelds ein, geben Sie **winforms** ein, und wählen Sie dann **Neue Windows Forms-App (.NET Framework) erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
-    Geben Sie im Feld **Name** `BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\*. Übernehmen Sie die Standardwerte für **Lösung**, **Projektmappenname** (**BuildApp**) und **Framework**.
+    Geben Sie im Feld **Name**`BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Übernehmen Sie die Standardwerte für **Lösung**, **Projektmappenname** (**BuildApp**) und **Framework**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** > **Windows Desktop**, und wählen Sie dann **Windows Forms-App (.NET Framework)** aus. Wählen Sie dann **OK** aus.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#**  > **Windows Desktop**, und wählen Sie dann **Windows Forms-App (.NET Framework)** aus. Wählen Sie dann **OK** aus.
 
-    Geben Sie im Feld **Name** `BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\*. Übernehmen Sie die Standardwerte für **Projektmappenverzeichnis erstellen** (ausgewählt), **Zur Quellcodeverwaltung hinzufügen** (nicht ausgewählt) und **Projektmappenname** (**BuildApp**).
+    Geben Sie im Feld **Name**`BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Übernehmen Sie die Standardwerte für **Projektmappenverzeichnis erstellen** (ausgewählt), **Zur Quellcodeverwaltung hinzufügen** (nicht ausgewählt) und **Projektmappenname** (**BuildApp**).
     ::: moniker-end
 
 1. Klicken Sie auf **OK** oder **Erstellen**, um die Projektdatei zu erstellen.

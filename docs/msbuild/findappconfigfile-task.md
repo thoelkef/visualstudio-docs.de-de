@@ -11,17 +11,17 @@ helpviewer_keywords:
 - FindAppConfigFile task [MSBuild]
 - MSBuild, FindAppConfigFile task
 ms.assetid: e292de3e-7482-4426-83ce-d921061808bf
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0033bcb21922d6f7e0204b1555fa2c46f8d91d50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de2b36f1003515a47774eaa40fda390728940324
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977564"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591150"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile-Aufgabe
 Sucht nach der Datei *app.config* (falls vorhanden) in den angegebenen Listen.
@@ -36,7 +36,7 @@ Sucht nach der Datei *app.config* (falls vorhanden) in den angegebenen Listen.
 |`SecondaryList`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die sekundäre Liste an, die durchsucht werden soll|
 |`TargetPath`|Erforderlicher `String` -Parameter.<br /><br /> Gibt den Wert an, der als Metadatenelement hinzugefügt werden soll|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch

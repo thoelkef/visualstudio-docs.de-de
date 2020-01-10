@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tasks, creating for MSBuild
 - MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238193"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594993"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten ist, finden Sie unter [MSBuild Task Reference](../msbuild/msbuild-task-reference.md).
@@ -163,11 +163,11 @@ Eine Aufgabe sollte nicht von der relativen Reihenfolge des Aufrufs von Paramete
 
 ### <a name="task-parameter-types"></a>Typen von Aufgabenparametern
 
-In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erfolgt die native Verarbeitung von Eigenschaften der Typen `string`, `bool`, `ITaskItem` und `ITaskItem[]`. Akzeptiert eine Aufgabe einen Parameter eines anderen Typs, ruft [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A> auf, um von `string` (wobei alle Eigenschaften- und Elementverweise erweitert werden) in den Zieltyp zu konvertieren. Schlägt die Konvertierung für einen Eingabeparameter fehl, gibt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] einen Fehler aus und ruft die Methode `Execute()` der Aufgabe nicht auf.
+In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erfolgt die native Verarbeitung von Eigenschaften der Typen `string`, `bool`, `ITaskItem` und `ITaskItem[]`. Akzeptiert eine Aufgabe einen Parameter eines anderen Typs, ruft [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]<xref:System.Convert.ChangeType%2A> auf, um von `string` (wobei alle Eigenschaften- und Elementverweise erweitert werden) in den Zieltyp zu konvertieren. Schlägt die Konvertierung für einen Eingabeparameter fehl, gibt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] einen Fehler aus und ruft die Methode `Execute()` der Aufgabe nicht auf.
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 
 Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.
 
@@ -192,7 +192,7 @@ namespace SimpleTask1
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 
 Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine Aufgabe, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.
 
@@ -228,7 +228,7 @@ namespace SimpleTask2
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 
 Diese [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Sie verfügt über eine erforderliche Zeichenfolgeneigenschaft und löst ein Ereignis aus, das von allen registrierten Protokollierungen angezeigt wird.
 
@@ -238,7 +238,7 @@ Diese [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaul
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 
 Im folgenden Beispiel wird eine Projektdatei dargestellt, die die vorherigen Beispielaufgabe „SimpleTask3“ aufruft.
 

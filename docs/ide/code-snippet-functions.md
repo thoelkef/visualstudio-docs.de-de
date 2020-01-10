@@ -7,17 +7,17 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85124837e378ea4377de0ca08c5a8680034240c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647544"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594239"
 ---
 # <a name="code-snippet-functions"></a>Codeausschnittfunktionen
 
@@ -27,7 +27,7 @@ Es stehen drei Funktionen zur Verfügung, die mit C#-Codeausschnitten verwendet 
 
 In der folgenden Tabelle werden die verfügbaren Funktionen für die Verwendung mit dem `Function`-Element in Codeausschnitten beschrieben.
 
-|Funktion|BESCHREIBUNG|Sprache|
+|Funktion|Beschreibung|Sprache|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Es werden eine switch-Anweisung sowie mehrere case-Anweisungen für die vom `EnumerationLiteral`-Parameter angegebenen Member der Enumeration generiert. Der `EnumerationLiteral`-Parameter muss entweder ein Verweis auf ein Enumerationsliteral oder auf einen Enumerationstyp sein.|C#|
 |`ClassName()`|Gibt den Namen der Klasse zurück, die den eingefügten Ausschnitt enthält.|C#|

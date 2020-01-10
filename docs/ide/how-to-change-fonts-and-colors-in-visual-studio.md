@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4527592b5638b171aa39f88e254bd8adf5c73b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588875"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio
 
@@ -27,7 +27,7 @@ Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf versc
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Ändern des Farbschemas der IDE
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 1. Klicken Sie in der Optionsliste auf **Umgebung** > **Allgemein**.
 
@@ -52,7 +52,7 @@ Sie können die Schriftart und Textgröße für alle Fenster und Dialogfelder in
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Ändern der Schriftart und -größe des gesamten Texts in der IDE
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 1. Klicken Sie in der Optionsliste auf **Umgebung** > **Schriftarten und Farben**.
 
