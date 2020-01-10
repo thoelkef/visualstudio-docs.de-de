@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8674f0c8ed833ac8db80f30f616aa8b0dbf4cf9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50a4b756e0f0926e6c0ccd1a68ab44b7bc13e25c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977176"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574057"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien
 Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien autorisiert haben, haben Sie möglicherweise festgestellt, dass Sie die gleichen Aufgaben und Ziele in verschiedenen Projektdateien verwenden müssen. Statt die vollständige Beschreibung dieser Aufgaben oder Ziele in jede Projektdatei einzuschließen, können Sie ein Ziel in einer separaten Projektdatei speichern und dieses Projekt anschließend in einem beliebigen anderen Projekt importieren, in dem das Ziel verwendet werden muss.
@@ -28,7 +28,7 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 
 1. Definieren Sie in der importierten Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.
 
-2. Verwenden Sie das `Import`-Element zum Importieren des Projekts. Beispiel:
+2. Verwenden Sie das `Import`-Element zum Importieren des Projekts. Zum Beispiel:
 
      `<Import Project="MyCommon.targets"/>`
 

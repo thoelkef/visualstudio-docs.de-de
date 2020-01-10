@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779090"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567137"
 ---
 # <a name="warning-task"></a>Warnungsaufgabe
 Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Bedingungsanweisung basiert
@@ -33,12 +33,12 @@ Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Be
 
 | Parameter | Beschreibung |
 |---------------| - |
-| `Code` | Optionaler `String` -Parameter.<br /><br /> Der Warncode, der der Warnung zugeordnet werden soll. |
-| `File` | Optionaler `String` -Parameter.<br /><br /> Gibt die relevante Datei an, falls vorhanden. Wenn keine Datei angegeben wird, wird die Datei verwendet, die die Warnungsaufgabe enthält. |
-| `HelpKeyword` | Optionaler `String` -Parameter.<br /><br /> Das der Warnung zuzuordnende Hilfeschlüsselwort. |
-| `Text` | Optionaler `String` -Parameter.<br /><br /> Der Warnungstext, den [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolliert, wenn der `Condition`-Parameter `true` ergibt. |
+| `Code` | Optionaler `String`-Parameter.<br /><br /> Der Warncode, der der Warnung zugeordnet werden soll. |
+| `File` | Optionaler `String`-Parameter.<br /><br /> Gibt die relevante Datei an, falls vorhanden. Wenn keine Datei angegeben wird, wird die Datei verwendet, die die Warnungsaufgabe enthält. |
+| `HelpKeyword` | Optionaler `String`-Parameter.<br /><br /> Das der Warnung zuzuordnende Hilfeschlüsselwort. |
+| `Text` | Optionaler `String`-Parameter.<br /><br /> Der Warnungstext, den [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolliert, wenn der `Condition`-Parameter `true` ergibt. |
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Die `Warning`-Aufgabe ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten, zu prüfen, ob eine erforderliche Konfiguration oder Eigenschaft vorhanden ist, bevor Sie mit dem nächsten Schritt des Buildvorgangs fortfahren.
 
  Wenn der `Condition`-Parameter der `Warning`-Aufgabe `true` ergibt, wird der Wert des `Text`-Parameters protokolliert und der Build weiter ausgeführt. Wenn kein `Condition`-Parameter vorhanden ist, wird der Warnungstext protokolliert. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).

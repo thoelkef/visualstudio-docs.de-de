@@ -3,8 +3,8 @@ title: Workload- und Komponenten-IDs in Visual Studio Desktop Express
 titleSuffix: ''
 description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d3d8e78d2a36d9a295fc114784a76641929b7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818959"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588446"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Visual Studio Desktop Express-Komponentenverzeichnis
 

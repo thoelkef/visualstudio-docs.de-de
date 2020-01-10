@@ -4,17 +4,17 @@ ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 923e8bb50b1caa323c602334c1d9a28b072043bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154813"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591319"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 
@@ -46,13 +46,13 @@ Sie können auch Protokolle generieren, indem Sie MSBuild direkt von der Befehls
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Ändern der Informationsmenge im Buildprotokoll
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen**.
 
 3. Wählen Sie einen der folgenden Werte aus der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** aus, und klicken Sie dann auf die Schaltfläche **OK**.
 
-    |Ausführlichkeitsgrad|BESCHREIBUNG|
+    |Ausführlichkeitsgrad|Beschreibung|
     | - |-----------------|
     |**Still**|Zeigt ausschließlich eine Zusammenfassung des Builds an.|
     |**Minimal**|Zeigt eine Zusammenfassung des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden.|

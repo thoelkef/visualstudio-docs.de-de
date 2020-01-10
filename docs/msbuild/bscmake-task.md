@@ -15,17 +15,17 @@ helpviewer_keywords:
 - MSBuild (C++), tasks
 - BscMake task (MSBuild (C++))
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf9c0df17ec0e1bb97c1426d5d312f616de0a8e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ff0c95c37e24f8c51453a849159073baff8dca0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747375"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593420"
 ---
 # <a name="bscmake-task"></a>BscMake-Aufgabe
 > [!IMPORTANT]
@@ -36,7 +36,7 @@ ms.locfileid: "72747375"
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der **BscMake**-Aufgabe beschrieben. Die meisten Aufgabenparameter entsprechen einer Befehlszeilenoption.
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **BscMake**-Aufgabenparameter repräsentiert werden.<br /><br /> Weitere Informationen finden Sie unter den Optionen in [BSCMAKE-Optionen](/cpp/build/reference/bscmake-options).|
 |**OutputFile**|Optionaler **String**-Parameter.<br /><br /> Gibt einen Dateinamen an, der den Standardausgabedateinamen überschreibt.<br /><br /> Weitere Informationen finden Sie unter der **/o**-Option in [BSCMAKE-Optionen](/cpp/build/reference/bscmake-options).|

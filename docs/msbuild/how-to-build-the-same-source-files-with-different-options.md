@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, modifying
 - Hello World example [Visual Studio]
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b196ae92b7388e8b9f4e1cee60a62b3839a9c120
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977338"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585231"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mit unterschiedlichen Buildoptionen. So können Sie, z.B. ein Debugbuild mit Symbolinformationen oder ein Releasebuild ohne Symbolversionen, aber mit aktivierten Optimierungen erstellen. Oder Sie können ein Projekt erstellen, das auf einer bestimmten Plattform wie x86 oder [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] ausgeführt wird. In allen diesen Fällen bleiben die meisten Buildoptionen gleich. Nur ein paar Optionen werden zur Steuerung der Buildkonfiguration geändert. Sie verwenden Eigenschaften und Bedingungen mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um die unterschiedlichen Buildkonfigurationen zu erstellen.
@@ -52,7 +52,7 @@ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt,
 
 #### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest
 
-- Verwenden Sie den Schalter **-property** mit der Eigenschaft und dem Eigenschaftswert. Beispiel:
+- Verwenden Sie den Schalter **-property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:
 
   ```cmd
   msbuild file.proj -property:Flavor=Debug
@@ -66,7 +66,7 @@ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt,
 
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an
 
-- Verwenden Sie mehrmals den Schalter **-property** oder **-p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **-property** bzw. **-p** und unterteilen mehrere Eigenschaft mithilfe von Semikolons (;). Beispiel:
+- Verwenden Sie mehrmals den Schalter **-property** oder **-p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **-property** bzw. **-p** und unterteilen mehrere Eigenschaft mithilfe von Semikolons (;). Zum Beispiel:
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86

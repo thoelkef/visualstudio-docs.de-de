@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf80e9df7910b0b581ae956978fb2020542ae96f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a489f9d42930dca88a6de69b8875a4406250f66e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747265"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595058"
 ---
 # <a name="msbuild"></a>MSBuild
 Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ist eine Plattform zum Erstellen von Anwendungen. Diese Engine, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, ist aber nicht von Visual Studio abhängig. Wenn Sie *msbuild.exe* im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.
@@ -168,7 +168,7 @@ Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multi
 
 ## <a name="see-also"></a>Siehe auch
 
-| Titel | BESCHREIBUNG |
+| Titel | Beschreibung |
 | - | - |
 | [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird. |
 | [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md) | Die Bausteine von MSBuild werden eingeführt, und es wird gezeigt, wie MSBuild-Projekte erstellt, bearbeitet und debuggt werden, ohne die Visual Studio-IDE zu schließen. |

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37597d1e1f4fde2b2e81e7aa7868c0aaff935337
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416854"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593654"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
@@ -82,7 +82,7 @@ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineau
 
 Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z.B. „\<“ oder „>“, nicht mit Escapezeichen versehen.
 
-Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type` `Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.
+Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type``Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.
 
 > [!NOTE]
 > Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.

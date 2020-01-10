@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386188"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574612"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.

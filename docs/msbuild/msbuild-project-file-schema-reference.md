@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, file schema
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49c2198a4ecc40a40e3f5f6414bfd4af47279b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def9edb232a37bc58a56ffd1ec9a16bcb1b75092
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842291"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590318"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenz zum MSBuild-Projektdateischema
 Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sowie ihren verfügbaren Attributen und untergeordneten Elementen.
