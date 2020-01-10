@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
-ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
+ms.openlocfilehash: 4f1b0e774d70c5787a7221aa0dfa7b0834dac7e3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141171"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588290"
 ---
 # <a name="customize-your-build"></a>Anpassen Ihres Builds
 
@@ -140,7 +140,7 @@ Befolgen Sie bei der Entscheidung, wo Sie die Eigenschaften platzieren möchten,
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
-Standardmäßig importiert *Microsoft.Common.props* `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`, und *Microsoft.Common.targets* importiert `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Der Standardwert von `MSBuildProjectExtensionsPath` ist `$(BaseIntermediateOutputPath)`, `obj/`. NuGet verwendet diesen Mechanismus, um einen Verweis auf die mit Paketen bereitgestellte Buildlogik herzustellen. D.h., NuGet erstellt während der Wiederherstellung `{project}.nuget.g.props`-Dateien, die auf die Paketinhalte verweisen.
+Standardmäßig importiert *Microsoft.Common.props*`$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`, und *Microsoft.Common.targets* importiert `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Der Standardwert von `MSBuildProjectExtensionsPath` ist `$(BaseIntermediateOutputPath)`, `obj/`. NuGet verwendet diesen Mechanismus, um einen Verweis auf die mit Paketen bereitgestellte Buildlogik herzustellen. D.h., NuGet erstellt während der Wiederherstellung `{project}.nuget.g.props`-Dateien, die auf die Paketinhalte verweisen.
 
 Sie können diesen Erweiterbarkeitsmechanismus deaktivieren, indem Sie die Eigenschaft `ImportProjectExtensionProps` in einer *Directory.Build.props*-Datei oder vor dem Import von *Microsoft.Common.props* auf `false` festlegen.
 
