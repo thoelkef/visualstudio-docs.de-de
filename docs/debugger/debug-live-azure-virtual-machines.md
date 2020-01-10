@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415779"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776112"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET-Apps auf Azure-VMs und Azure-VMSS mit dem Momentaufnahmedebugger
 
@@ -43,6 +43,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
   * ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
   * ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
 
+  > [!NOTE]
+  >  Visual Studio Enterprise, die auf 32-Bit-Windows ausgeführt wird, können keine Momentaufnahmen anzeigen.
+
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Öffnen Ihres Projekts und Starten des Momentaufnahmedebuggers
 
 1. Öffnen Sie das Projekt, das Sie mit einer Momentaufnahme debuggen möchten.
@@ -50,7 +53,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
     > [!IMPORTANT]
     > Zum Debuggen von Momentaufnahmen müssen Sie *dieselbe Version des Quellcodes* öffnen, die in Ihrem virtuellen Azure-computer\vm-Skalierungs Gruppendienst veröffentlicht wird.
 
-1. Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen** aus. Wählen Sie die Azure Virtual machine\vm-Skalierungs Gruppe, in der Ihre Web-App bereitgestellt wird, und ein Azure Storage-Konto aus, und klicken Sie dann auf **Anhängen** Momentaufnahmedebugger unterstützt auch den [Azure Kubernetes-Dienst](debug-live-azure-kubernetes.md) und [Azure App Service](debug-live-azure-applications.md).
+1. Wählen Sie **Debuggen > anfügen Momentaufnahmedebugger...** aus. Wählen Sie die Azure Virtual machine\vm-Skalierungs Gruppe, in der Ihre Web-App bereitgestellt wird, und ein Azure Storage-Konto aus, und klicken Sie dann auf **Anhängen** Momentaufnahmedebugger unterstützt auch den [Azure Kubernetes-Dienst](debug-live-azure-kubernetes.md) und [Azure App Service](debug-live-azure-applications.md).
 
     ![Starten des Momentaufnahmedebuggers im Menü „Debuggen“](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +61,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     > [!IMPORTANT]
     > Wenn Sie **Momentaufnahmedebugger anfügen** zum ersten Mal für Ihren virtuellen Computer auswählen, wird IIS automatisch neu gestartet.
-    > Wenn Sie zum ersten Mal **Momentaufnahmedebugger** für Ihre Virtual Machine Scale Sets anfügen auswählen, ist das manuelle Upgrade der einzelnen Instanzen des Virtual Machine Scale Sets erforderlich.
+    > Wenn Sie zum ersten Mal Momentaufnahmedebugger für Ihre Virtual Machine Scale Sets **Anfügen** auswählen, ist das manuelle Upgrade der einzelnen Instanzen des Virtual Machine Scale Sets erforderlich.
 
     > [!NOTE]
     > (Visual Studio 2019, Version 16,2 und höher) Momentaufnahmedebugger hat den Azure-cloudsupport aktiviert. Stellen Sie sicher, dass sich sowohl die von Ihnen ausgewählte Azure-Ressource als auch das Azure Storage Konto in derselben Cloud befinden. Wenden Sie sich an Ihren Azure-Administrator, wenn Sie Fragen zu den [Azure-Konformitäts](https://azure.microsoft.com/overview/trusted-cloud/) Konfigurationen Ihres Unternehmens haben.

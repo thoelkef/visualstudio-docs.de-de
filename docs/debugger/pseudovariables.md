@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e328e85f58e69ef1d579fd979f629c59b90caf3e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730517"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776087"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo Variablen im Visual Studio-Debugger
 Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variablenfenster oder im Dialogfeld **Schnellüberwachung** angezeigt werden. Eine Pseudovariable können Sie genauso wie eine normale Variable eingeben. Pseudovariablen sind jedoch keine Variablen und es gibt keine entsprechenden Variablennamen im Programm.
@@ -43,11 +43,11 @@ Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variab
 |`$env`|Zeigt den Umgebungsblock im Zeichenfolgen-Viewer an.|
 |`$cmdline`|Zeigt die Befehlszeilenzeichenfolge an, mit der das Programm gestartet wurde.|
 |`$pid`|Zeigt die Prozess-ID an.|
-|`$` *Registername*<br /><br /> oder<br /><br /> `@` *Registername*|Zeigt den Inhalt des Registers *Registername* an.<br /><br /> Normalerweise geben Sie zum Anzeigen des Registerinhalts einfach den Registernamen ein. Nur beim Überladen eines Variablennamens durch einen Registernamen müssen Sie diese Syntax verwenden. Wenn der Registername im aktuellen Gültigkeitsbereich dem Variablennamen entspricht, interpretiert der Debugger den Namen als Variablenname. In diesem Fall sind `$`*Registername* bzw. `@`*Registername* praktisch.|
+|*Register Name* `$`<br /><br /> oder<br /><br /> *Register Name* `@`|Zeigt den Inhalt des Registers *Registername* an.<br /><br /> Normalerweise geben Sie zum Anzeigen des Registerinhalts einfach den Registernamen ein. Nur beim Überladen eines Variablennamens durch einen Registernamen müssen Sie diese Syntax verwenden. Wenn der Registername im aktuellen Gültigkeitsbereich dem Variablennamen entspricht, interpretiert der Debugger den Namen als Variablenname. In diesem Fall sind `$`*Registername* bzw. `@`*Registername* praktisch.|
 |`$clk`|Zeigt die Zeit in Taktzyklen an.|
 |`$user`|Zeigt eine Struktur mit Kontoinformationen für das die Anwendung ausführende Konto an. Aus Sicherheitsgründen werden die Kennwortinformationen nicht angezeigt.|
 |`$exceptionstack`|Zeigt die Stapelüberwachung der aktuellen Windows-Runtime-Ausnahme an. `$ exceptionstack` funktioniert nur in UWP-apps. `$ exceptionstack` wird für C++ -und SEH-Ausnahmen nicht unterstützt.|
-|`$returnvalue`|Zeigt den Rückgabewert einer .NET-Methode an.|
+|`$returnvalue`|Zeigt den Rückgabewert einer Methode an.|
 
  In C# können Sie die in der folgenden Tabelle aufgeführten Pseudo Variablen verwenden:
 
@@ -62,10 +62,10 @@ Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variab
 |Pseudovariable|Funktion|
 |--------------------|--------------|
 |`$exception`|Zeigt Informationen über die letzte Ausnahme an. Wenn keine Ausnahme aufgetreten ist, wird beim Auswerten von `$exception` eine Fehlermeldung angezeigt.|
-|`$delete` oder `$$delete`|Löscht eine implizite Variable, die im Fenster **Direkt** erstellt wurde. Die Syntax ist `$delete,` *Variable* oder `$delete,` *Variable* `.`|
-|`$objectids` oder `$listobjectids`|Zeigt alle aktiven Objekt-IDs als untergeordnete Elemente des angegebenen Ausdrucks an. Die Syntax ist `$objectid,` *Ausdruck* oder `$listobjectids,` *Ausdruck* `.`|
+|`$delete` oder `$$delete`|Löscht eine implizite Variable, die im Fenster **Direkt** erstellt wurde. Die Syntax ist `$delete,` *Variable* oder`$delete,` *Variable*`.`|
+|`$objectids` oder `$listobjectids`|Zeigt alle aktiven Objekt-IDs als untergeordnete Elemente des angegebenen Ausdrucks an. Die Syntax ist `$objectid,` *Ausdruck* oder`$listobjectids,` *Ausdruck*`.`|
 |`$` *N* `#`|Zeigt das Objekt mit der Objekt-ID *N* an.|
-|`$dynamic`|Zeigt den besonderen Knoten **Dynamische Ansicht** für ein Objekt an, das `IDynamicMetaObjectProvider` implementiert. Schnittstelle Die Syntax lautet `$dynamic,` *Objekt*. Diese Funktion gilt nur für Code, der .NET Framework Version 4 oder höher verwendet.|
+|`$dynamic`|Zeigt den besonderen Knoten **Dynamische Ansicht** für ein Objekt an, das `IDynamicMetaObjectProvider` implementiert. -Schnittstelle. Die Syntax ist `$dynamic,` *Objekt*. Diese Funktion gilt nur für Code, der .NET Framework Version 4 oder höher verwendet.|
 
 ## <a name="see-also"></a>Siehe auch
 - [Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)
