@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 60dbeacbbb4b4e169dd84d0018a0c078ccca7def
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c3afe4d310e659fd63580bc7e298c0a50ba7891e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299355"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845738"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Erstellen Sie plattformübergreifende Mobile Apps mit VisualisierungenC++
 Sie können mit Visual C++ für die plattformübergreifende Mobilgeräteentwicklung plattformübergreifenden Code für Android-, iOS- und Windows-Geräte schreiben. Dies ist eine optionale Funktion in Visual Studio 2015, die eine plattformübergreifende Entwicklung für iOS, Android und Windows mithilfe von Visual C++ ermöglicht.  
@@ -22,4 +22,4 @@ Sie können mit Visual C++ für die plattformübergreifende Mobilgeräteentwickl
  Installationsanweisungen und Codebeispiele finden Sie unter [Visual C++ for Cross-Platform Mobile Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Herunterladen von Visual Studio 2015](https://go.microsoft.com/fwlink/?linkid=517106)
+ [Laden Sie Visual Studio 2015 herunter](https://visualstudio.microsoft.com/downloads/)

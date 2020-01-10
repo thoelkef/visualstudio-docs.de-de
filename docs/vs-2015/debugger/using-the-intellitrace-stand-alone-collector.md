@@ -13,19 +13,19 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40a61ef8c8b3f389af97024475fab9a625131a44
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 02639b91ce07ade97e9023dee3de7cfdaf10a07e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297123"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847971"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Verwenden des eigenständigen IntelliTrace-Collectors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.
 
- So funktioniert IntelliTrace: [Visual Studio Ultimate 2012: Sammeln und Analysieren von Daten in der Produktion (Channel 9-Video)](https://go.microsoft.com/fwlink/?LinkID=251851)
+ So funktioniert IntelliTrace: [Visual Studio Ultimate 2012: Sammeln und Analysieren von Daten in der Produktion (Channel 9-Video)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
 
 > [!NOTE]
 > Sie können IntelliTrace-Daten auf Remotecomputern auch für Web- und SharePoint-Anwendungen mithilfe des **Microsoft Monitoring Agent** im **Ablaufverfolgungs** modus erfassen.
@@ -91,7 +91,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      3. Führen Sie die IntelliTraceCollector.exe aus. Dadurch wird die IntelliTraceCollection.cab-Datei extrahiert.
 
-        \- oder –
+        \- oder -
 
    - **Visual Studio-Installationsordner**:
 
@@ -120,7 +120,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 2. Verwenden Sie den Windows-Befehl **icacls** , um dem Serveradministrator vollständige Berechtigungen für das Collector-Verzeichnis einzuräumen. Beispiel:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
 
 3. So sammeln Sie Daten für eine Web App oder eine SharePoint-Anwendung:
 
@@ -226,12 +226,12 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
     |||
     |-|-|
     |*ApplicationPool*|Der Name des Anwendungspools, in dem die Anwendung ausgeführt wird|
-    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgenden Pläne funktionieren bei Web Apps und SharePoint-Anwendungen:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse und SharePoint-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufen und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://go.microsoft.com/fwlink/?LinkId=227871) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis:**  Standardmäßig beträgt die maximale Größe der itrace-Datei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
+    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgenden Pläne funktionieren bei Web Apps und SharePoint-Anwendungen:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse und SharePoint-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufen und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis:**  Standardmäßig beträgt die maximale Größe der itrace-Datei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
     |*FullPathToITraceFileDirectory*|Der vollständige Pfad zum ITRACE-Dateiverzeichnis. **Sicherheitshinweis:**  Geben Sie den vollständigen Pfad an, nicht einen relativen Pfad.|
 
      Der Collector wird an den Anwendungspool angefügt und startet die Datensammlung.
 
-     *Kann ich die ITRACE-Datei zu diesem Zeitpunkt öffnen?* Nein, die Datei ist während der Datensammlung gesperrt.
+     *Kann ich die ITRACE-Datei zu diesem Zeitpunkt öffnen?* Nein, die Datei ist während der Datenerfassung gesperrt.
 
 2. Reproduzieren Sie das Problem.
 
@@ -265,7 +265,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
     |||
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|Der vollständige Pfad zur ausführbaren IntelliTraceSC.exe-Datei des Collectors|
-    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgende Pläne funktionieren bei verwalteten Apps:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufe und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://go.microsoft.com/fwlink/?LinkId=227871) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis:**  Standardmäßig beträgt die maximale Größe der itrace-Datei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
+    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgende Pläne funktionieren bei verwalteten Apps:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufe und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis:**  Standardmäßig beträgt die maximale Größe der itrace-Datei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
     |*FullPathToITraceFileDirectoryAndFileName*|Der vollständige Pfad zum ITRACE-Dateiverzeichnis und dem ITRACE-Dateinamen mit der Erweiterung **.itrace** . **Sicherheitshinweis:**  Geben Sie den vollständigen Pfad an, nicht einen relativen Pfad.|
     |*PathToAppExecutableFileAndFileName*|Pfad und Dateiname der verwalteten App|
 
@@ -288,7 +288,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
     > Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen auf dem Entwicklungscomputer die entsprechenden Quelldateien und Symboldateien vorhanden sein. Siehe [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?
- IntelliTrace kann sehr viele Daten sammeln, daher sind die Auswirkungen auf die Leistung der App von den mit IntelliTrace gesammelten Daten und von der Art der analysierten Codes abhängig. Siehe [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](https://go.microsoft.com/fwlink/?LinkId=255233).
+ IntelliTrace kann sehr viele Daten sammeln, daher sind die Auswirkungen auf die Leistung der App von den mit IntelliTrace gesammelten Daten und von der Art der analysierten Codes abhängig. Siehe [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx).
 
  Es gibt folgende Möglichkeiten, möglichst viele Daten abzurufen, ohne die App zu verlangsamen:
 
@@ -391,16 +391,16 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
  [IntelliTrace](../debugger/intellitrace.md)
 
 ### <a name="blogs"></a>Blogs
- [Remoteverwendung des eigenständigen IntelliTrace Collector](https://go.microsoft.com/fwlink/?LinkId=262277)
+ [Remoteverwendung des eigenständigen IntelliTrace Collector](https://blogs.msdn.com/b/visualstudioalm/archive/2012/07/09/using-the-intellitrace-standalone-collector-remotely.aspx)
 
- [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://go.microsoft.com/fwlink/?LinkId=227871)
+ [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx)
 
- [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](https://go.microsoft.com/fwlink/?LinkId=255233)
+ [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)
 
- [Visual Studio ALM- und TFS-Blog](https://go.microsoft.com/fwlink/?LinkID=201340)
+ [Visual Studio ALM- und TFS-Blog](https://blogs.msdn.com/b/visualstudioalm)
 
 ### <a name="forums"></a>Foren
- [Visual Studio Debugger](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio Debugger](https://social.msdn.microsoft.com/Forums/vsdebug)
 
 ### <a name="videos"></a>Videos
- [Channel 9-Video: Sammeln und Analysieren von IntelliTrace-Daten](https://go.microsoft.com/fwlink/?LinkID=251851)
+ [Channel 9-Video: Sammeln und Analysieren von IntelliTrace-Daten](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

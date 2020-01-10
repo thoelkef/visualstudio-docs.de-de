@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298164"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850804"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturieren der Modellierungslösung
 
@@ -34,7 +34,7 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
 #### <a name="to-divide-an-application-into-layers"></a>So unterteilen Sie eine Anwendung in Ebenen
 
-1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. Eine Reihe von gängigen Architekturen finden Sie im [Leitfaden zur Microsoft-Anwendungsarchitektur unter Anwendungs-archetypes](https://go.microsoft.com/fwlink/?LinkId=196681).
+1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. Eine Reihe von gängigen Architekturen finden Sie im [Leitfaden zur Microsoft-Anwendungsarchitektur unter Anwendungs-archetypes](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN).
 
 2. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe, die wir als Architektur-Projektmappe bezeichnen. Diese Projektmappe wird zur Erstellung des allgemeinen Entwurfs des Systems verwendet. Es enthält Modelle, jedoch keinen Code.
 
@@ -100,7 +100,7 @@ Wenn Sie beispielsweise häufig Projektmappen mit Präsentations-, Geschäfts- u
 
 #### <a name="to-create-a-solution-template"></a>So erstellen Sie ein Projektmappenvorlage
 
-1. [Laden Sie den Assistenten zum Exportieren von Vorlagen herunter, und installieren](https://go.microsoft.com/fwlink/?LinkId=196686)Sie ihn, falls Sie dies noch nicht getan haben.
+1. [Laden Sie den Assistenten zum Exportieren von Vorlagen herunter, und installieren](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)Sie ihn, falls Sie dies noch nicht getan haben.
 
 2. Erstellen Sie die Projektmappenstruktur, die Sie als Ausgangspunkt für zukünftige Projekte verwenden möchten.
 
@@ -109,7 +109,7 @@ Wenn Sie beispielsweise häufig Projektmappen mit Präsentations-, Geschäfts- u
 4. Folgen Sie den Anweisungen im Assistenten und wählen Sie die Projekte aus, die in die Vorlage aufgenommen werden sollen, geben Sie einen Namen und eine Beschreibung für die Vorlage an, und geben Sie einen Ausgabespeicherort an.
 
 > [!NOTE]
-> Das Material in diesem Thema wurde aus der Visual Studio Architecture Tooling Guidance+++ abstrahiert und verallgemeinert, die von den Visual Studio ALM Rangers+++ verfasst wurde und aus der Zusammenarbeit zwischen Most Valued Professionals (MVPs), Microsoft-Diensten und Visual Studio-Produktteam und -Autoren entstanden ist [Klicken Sie hier, um das komplette Anleitungs Paket herunterzuladen.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> Das Material in diesem Thema wurde aus der Visual Studio Architecture Tooling Guidance+++ abstrahiert und verallgemeinert, die von den Visual Studio ALM Rangers+++ verfasst wurde und aus der Zusammenarbeit zwischen Most Valued Professionals (MVPs), Microsoft-Diensten und Visual Studio-Produktteam und -Autoren entstanden ist [Klicken Sie hier, um das komplette Anleitungs Paket herunterzuladen.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Verwandte Materialien
 

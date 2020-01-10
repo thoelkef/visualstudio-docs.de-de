@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7290ba820c9b678e0b87bdbeaadf9c025162e8ae
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299814"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844474"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.  
+Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://www.npmjs.com/package/vcremote)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.  
   
 > [!NOTE]
 > Informationen zur Verwendung von in der Cloud gehosteten Mac-Diensten anstelle eines Macs finden Sie unter [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Die Anweisungen gelten für das Erstellen mit Visual Studio Tools for Apache Cordova. Wenn Sie die Anweisungen zum Erstellen mit Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden möchten, ersetzen Sie "vcremote" durch "vs-mda-remote".  
@@ -78,7 +78,7 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> Installieren des Remote-Agents für iOS  
- Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.  
+ Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](https://www.npmjs.com/package/vcremote)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.  
   
  Stellen Sie vor der Installation des Remote-Agents sicher, dass die [Erforderliche Komponenten](#Prerequisites) vorhanden sind und [Visual C++ für plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)installiert ist.  
   
@@ -225,7 +225,7 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
      `vcremote --serverDir directory_path`  
   
-     *<directory_path>* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig handelt es sich hierbei um "/Users/*Benutzername*/vcremote". Builds werden an diesem Speicherort nach Build-Nummer angeordnet.  
+     *&lt;directory_path&gt;* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig handelt es sich hierbei um "/Users/*Benutzername*/vcremote". Builds werden an diesem Speicherort nach Build-Nummer angeordnet.  
   
 - Um mithilfe eines Hintergrundprozesses `stdout` und `stderr` in einer Datei namens "server.log" zu erfassen, geben Sie Folgendes ein:  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300886"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850415"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 
 3. [Schreiben Sie Methoden in der CommandSet-Klasse](#CommandSet) , um den Befehl sichtbar zu machen und zu definieren, was der Befehl tun soll.
 
-   Beispiele finden Sie auf der [Website zum Visualisieren und modellieren des SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Beispiele finden Sie auf der [Website zum Visualisieren und modellieren des SDK](https://www.visualstudio.com/).
 
 > [!NOTE]
 > Sie können auch das Verhalten einiger vorhandener Befehle wie Ausschneiden, Einfügen, Alle auswählen und Drucken ändern, indem Sie die entsprechenden Methoden in "CommandSet.cs" überschreiben. Weitere Informationen finden Sie unter Gewusst [wie: Ändern eines Standard Menübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).

@@ -1,5 +1,5 @@
 ---
-title: 'Bewährte Methoden für die Entwicklung: COM, VSTO, & VBA-Add-Ins in Office'
+title: 'Bewährte Methoden für die Entwicklung: com, VSTO, & VBA-Add-Ins in Office'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,27 +11,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254648"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846359"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Methoden für die Entwicklung von com-, VSTO-und VBA-Add-Ins in Office
-  Wenn Sie com-, VSTO-oder VBA-Add-Ins für Office entwickeln, befolgen Sie die in diesem Artikel beschriebenen bewährten Methoden für die Entwicklung.   Dadurch wird Folgendes sichergestellt:
+  Wenn Sie com-, VSTO-oder VBA-Add-Ins für Office entwickeln, befolgen Sie die in diesem Artikel beschriebenen bewährten Methoden für die Entwicklung.   Vorteile:
 
 - Kompatibilität von Add-Ins über verschiedene Versionen und bereit Stellungen von Office hinweg.
 - Geringere Komplexität der Add-in-Bereitstellung für Ihre Benutzer und IT-Administratoren.
 - Unbeabsichtigte Installation oder Laufzeitfehler des Add-ins treten nicht auf.
 
->Hinweis: Das Verwenden der [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) zum Vorbereiten des com-, VSTO-oder VBA-Add-Ins für den Windows Store wird nicht unterstützt. COM-, VSTO-und VBA-Add-Ins können nicht im Windows Store oder im Office Store verteilt werden.
+>Hinweis: das Verwenden der [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) zum Vorbereiten des com-, VSTO-oder VBA-Add-Ins für den Windows Store wird nicht unterstützt. COM-, VSTO-und VBA-Add-Ins können nicht im Windows Store oder im Office Store verteilt werden.
 
 ## <a name="do-not-check-for-office-during-installation"></a>Nicht während der Installation für Office prüfen
  Es wird nicht empfohlen, dass Sie mit dem Add-in erkennen, ob Office während des Add-in-Installationsvorgangs installiert wird. Wenn Office nicht installiert ist, können Sie das Add-in installieren, und der Benutzer kann nach der Installation von Office darauf zugreifen.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Eingebettete Interop-Typen (nopia) verwenden
-Wenn Ihre Lösung .NET 4,0 oder höher verwendet, verwenden Sie eingebettete Interop-Typen (nopia) anstelle von der verteilbaren Office Primary Interopassemblys (PIA). Durch die Verwendung von Einbettungs Typen wird die Installations Größe Ihrer Lösung reduziert, und die zukünftige Kompatibilität wird sichergestellt. Office 2010 war die letzte Version von Office, die die PIA Redistributable ausgeliefert hat. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einbetten von Typinformationen aus](https://msdn.microsoft.com/library/ee317478.aspx) Microsoft Office Assemblys und [typäquivalenz und eingebetteten Interop-Typen](/windows/uwp/porting/desktop-to-uwp-root).
+Wenn Ihre Lösung .NET 4,0 oder höher verwendet, verwenden Sie eingebettete Interop-Typen (nopia) anstelle von der verteilbaren Office Primary Interopassemblys (PIA). Durch die Verwendung von Einbettungs Typen wird die Installations Größe Ihrer Lösung reduziert, und die zukünftige Kompatibilität wird sichergestellt. Office 2010 war die letzte Version von Office, die die PIA Redistributable ausgeliefert hat. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Einbetten von Typinformationen aus Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) Assemblys und [typäquivalenz und eingebetteten Interop-Typen](/windows/uwp/porting/desktop-to-uwp-root).
 
 Wenn Ihre Lösung eine frühere Version von .NET verwendet, empfiehlt es sich, die Lösung für die Verwendung von .NET 4,0 oder höher zu aktualisieren. Die Verwendung von .NET 4,0 oder höher reduziert die Lauf Zeit Voraussetzungen für neuere Versionen von Windows.
 
@@ -46,7 +46,7 @@ Verwenden Sie beim Schreiben von VBA-Code 64-Bit-sichere Declare-Anweisungen, un
 ## <a name="support-restricted-environments"></a>Unterstützen eingeschränkter Umgebungen
 Für Ihre Lösung sollten keine Rechte für das Benutzerkonto oder Administrator Rechte erforderlich sein. Außerdem sollte die Lösung nicht von der Einstellung oder Änderung abhängen:
 
-- Das aktuelle Arbeitsverzeichnis.
+- Das aktuelle Arbeitsverzeichnis
 - DLL-Lade Verzeichnisse.
 - Die Pfad Variable.
 
@@ -61,7 +61,7 @@ Kunden bitten Sie ISVs, Support Anweisungen für Ihre com-, VSTO-und VBA-Add-Ins
 
 Zum Bereitstellen von Support Anweisungen für Office-Client Anwendungen (z. b. Word oder Excel) überprüfen Sie zunächst, ob Ihre Add-Ins in der aktuellen Office-Version ausgeführt werden, und führen Sie dann die Bereitstellung von Updates durch, wenn das Add-in in einer zukünftigen Version unterbrochen wird. Sie müssen Ihre Add-Ins nicht testen, wenn Microsoft einen neuen Build oder ein Update für Office freigibt. Microsoft ändert die Erweiterbarkeits Plattform für com, VSTO und VBA in Office selten, und diese Änderungen werden gut dokumentiert.
 
->Wichtig: Microsoft verwaltet eine Liste der unterstützten Add-Ins für Bereitschafts Berichte und ISV-Kontaktinformationen. Informationen dazu, wie Sie das Add-in [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows)auflisten, finden Sie unter.
+>Wichtig: Microsoft verwaltet eine Liste der unterstützten Add-Ins für Bereitschafts Berichte und ISV-Kontaktinformationen. Informationen dazu, wie Sie das Add-in auflisten, finden Sie unter [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Verwenden des Prozess Monitors zum Debuggen oder Laden von Problemen
 Wenn das Add-in während der Installation oder Auslastung Kompatibilitätsprobleme aufweist, sind Sie möglicherweise mit Problemen mit dem Datei-oder Registrierungs Zugriff verknüpft. Verwenden Sie den [Prozess Monitor](/sysinternals/downloads/procmon) oder ein ähnliches Debugtool, um das Verhalten einer funktionierenden Umgebung zu protokollieren und zu vergleichen, um das Problem zu identifizieren.

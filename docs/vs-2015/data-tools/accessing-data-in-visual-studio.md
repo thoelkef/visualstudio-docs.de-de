@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299440"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846666"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ In Visual Studio können Sie Anwendungen erstellen, die eine Verbindung mit Date
  Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio **(Extras** > **nuget-Paket-Manager** > **Verwalten von nuget-Paketen für die Lösung**) erkunden. Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert.   Sie können diese Angebote in der Visual Studio Gallery durchsuchen, indem Sie zu **Tools** > **Erweiterungen und Updates** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen.  Weitere Informationen finden Sie unter [Installieren von Datenbanksystemen, Tools und Beispielen](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> Der erweiterte Support für SQL Server 2005 wurde am 12. April 2016.   Es gibt keine Garantie dafür, dass Data Tools in Visual Studio 2015 und höher nach diesem Datum weiterhin mit SQL Server 2005 funktionieren. Weitere Informationen finden Sie in der [Ankündigung zum Ende des Supports für SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Der erweiterte Support für SQL Server 2005 wurde am 12. April 2016 eingestellt.   Es gibt keine Garantie dafür, dass Data Tools in Visual Studio 2015 und höher nach diesem Datum weiterhin mit SQL Server 2005 funktionieren. Weitere Informationen finden Sie in der [Ankündigung zum Ende des Supports für SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ### <a name="net-languages"></a>.NET-Sprachen
  Alle .NET-Daten Zugriffe, einschließlich in .net Core, basieren auf ADO.net, einer Reihe von Klassen, die eine Schnittstelle für den Zugriff auf eine beliebige Art von Datenquelle definieren, sowohl relationale als auch nicht relationale. Visual Studio verfügt über mehrere Tools und Designer, die mit ADO.NET verwendet werden können, um eine Verbindung mit Datenbanken herzustellen, die Daten zu bearbeiten und die Daten dem Benutzer vorzustellen. In der Dokumentation in diesem Abschnitt wird beschrieben, wie diese Tools verwendet werden. Sie können auch direkt mit den ADO.NET-Befehls Objekten programmieren. Weitere Informationen zum direkten Aufrufen der ADO.NET-APIs finden Sie unter [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) in der MSDN Library.
@@ -133,7 +133,7 @@ In Visual Studio können Sie Anwendungen erstellen, die eine Verbindung mit Date
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) Beschreibt, wie Sie Daten Anwendungen erstellen, die es Entwicklern ermöglichen, anstelle einer relationalen Datenbank direkt mit einem konzeptionellen Modell zu programmieren.
 
- [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Beschreibt, wie [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] verwendet wird, um Datendienste im Internet oder in einem Intranet bereitzustellen, die die [Open Data Protocol (odata)](https://go.microsoft.com/fwlink/?LinkID=182204)implementieren.
+ [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Beschreibt, wie [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] verwendet wird, um Datendienste im Internet oder in einem Intranet bereitzustellen, die die [Open Data Protocol (odata)](https://www.odata.org/)implementieren.
 
  [Daten in Office](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) -Projektmappen Enthält Links zu Themen, in denen die Funktionsweise von Daten in Office-Lösungen erläutert wird. Dazu gehören Informationen über schemaorientierte Programmierung, Datenzwischenspeicherung und serverseitigen Datenzugriff.
 

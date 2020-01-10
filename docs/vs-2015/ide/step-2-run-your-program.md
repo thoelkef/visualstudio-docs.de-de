@@ -9,19 +9,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef28781252181dbf765db52dbe6fed1b286516b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295775"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851568"
 ---
 # <a name="step-2-run-your-program"></a>Schritt 2: Ausführen des Programms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausführbares Programm erstellt. Noch macht das Programm nicht viel. Es zeigt nur ein leeres Fenster mit dem Text **Form1** in der Titelleiste an. Aber es kann ausgeführt werden, wie Sie gleich feststellen werden.
 
- ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-run-your-program"></a>So führen Sie das Programm aus
 

@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa9db3e67b1f5ba5e183f8df0c7b34372476fb08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301415"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851168"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "74301415"
 
 - Visual Studio Enterprise
 
-  Weitere Informationen finden Sie unter [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012 (Testen von nicht-testbarem Code mit Fakes in Visual Studio 2012)](https://go.microsoft.com/fwlink/?LinkId=261837).
+  Weitere Informationen finden Sie unter [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012 (Testen von nicht-testbarem Code mit Fakes in Visual Studio 2012)](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411).
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> Beispiel: Der Y2K-Fehler
  Betrachten wir eine Methode, die am 1. Januar 2000 eine Ausnahme auslöst:
@@ -442,7 +442,7 @@ ShimsBehaviors.Current =
 ```
 
 ## <a name="BKMK_Detecting_environment_accesses"></a> Erkennen von Umgebungszugriffen
- Es ist möglich, ein Verhalten an alle Member (einschließlich statische Methoden) eines bestimmten Typs anzufügen, indem der statischen `ShimsBehaviors.NotImplemented`-Eigenschaft des entsprechenden Shimtyps das `Behavior`-Verhalten zugewiesen wird:
+ Es ist möglich, ein Verhalten an alle Member (einschließlich statische Methoden) eines bestimmten Typs anzufügen, indem der statischen `Behavior`-Eigenschaft des entsprechenden Shimtyps das `ShimsBehaviors.NotImplemented`-Verhalten zugewiesen wird:
 
 ```csharp
 // unit test code
@@ -503,8 +503,8 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
-### <a name="guidance"></a>Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Anleitung
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Siehe auch
- Isolieren von getesteten [Code mit Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost Blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1h16): Testen von nicht testbarem Code mit Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
+ Isolieren von getesteten [Code mit Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost Blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1h16): Testen von nicht testbarem Code mit Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

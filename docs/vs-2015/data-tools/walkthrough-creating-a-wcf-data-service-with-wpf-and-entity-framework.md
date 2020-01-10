@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299622"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844272"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst mit WPF und Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 - Die Beispieldatenbank Northwind.
 
-     Befindet sich diese Datenbank nicht auf Ihrem Entwicklungscomputer, können Sie sie aus dem [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=98088)herunterladen. Anweisungen hierzu finden Sie unter [Herunterladen von Beispiel Datenbanken](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Befindet sich diese Datenbank nicht auf Ihrem Entwicklungscomputer, können Sie sie aus dem [Microsoft Download Center](https://www.microsoft.com/downloads)herunterladen. Anweisungen hierzu finden Sie unter [Herunterladen von Beispiel Datenbanken](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Erstellen des Diensts
  Um einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] zu erstellen, fügen Sie ein Webprojekt hinzu. Dann erstellen Sie ein [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] und erstellen anschließend den Dienst aus dem Modell.
@@ -98,7 +98,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 8. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**, aktivieren Sie das Kontrollkästchen **Customers**, und wählen Sie dann die Schaltfläche **Fertig stellen**.
 
-    Das Entitätsmodelldiagramm wird angezeigt, und dem Projekt wird die Datei {1}NorthwindModel.edmx{2} hinzugefügt.
+    Das Entitätsmodelldiagramm wird angezeigt, und dem Projekt wird die Datei NorthwindModel.edmx hinzugefügt.
 
    In diesem Schritt erstellen und testen Sie den Datendienst.
 
@@ -112,7 +112,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
     Die Datei "NorthwindCustomers. svc" wird im **Code-Editor**angezeigt.
 
-4. Suchen Sie im **Code-Editor** den ersten `TODO:`-Kommentar, und ersetzen Sie den Code durch Folgendes:
+4. Suchen Sie im **Code-Editor`TODO:` den ersten** -Kommentar, und ersetzen Sie den Code durch Folgendes:
 
     [!code-csharp[WCFDataServiceWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#1)]
     [!code-vb[WCFDataServiceWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#1)]
@@ -146,7 +146,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**  , wählen Sie den Knoten **Windows** aus, und wählen Sie dann **Windows Forms Anwendung**aus.
 
-3. Geben Sie im Textfeld **Name** `NorthwindClient` ein, und klicken Sie auf **OK**.
+3. Geben Sie im Textfeld **Name**`NorthwindClient` ein, und wählen Sie dann die Schaltfläche **OK** aus.
 
 4. Wählen Sie im **Projektmappen-Explorer** den **NorthwindClient**-Projektknoten.
 

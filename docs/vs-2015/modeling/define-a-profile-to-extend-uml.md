@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295673"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850472"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definieren eines Profils zum Erweitern von UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Sie können ein *UML-Profil* definieren, um die Standardmodell Elemente für bes
 6. Senden Sie die Erweiterungsdatei an andere Benutzer von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], damit diese sie auf ihren Computern installieren können.
 
 ## <a name="AddProfile"></a>Hinzufügen eines Profils zu einer Visual Studio-Erweiterung
- Um ein Profil zu installieren und das Senden an andere Benutzer zu ermöglichen, müssen Sie das Profil einer Visual Studio-Erweiterung hinzufügen. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Um ein Profil zu installieren und das Senden an andere Benutzer zu ermöglichen, müssen Sie das Profil einer Visual Studio-Erweiterung hinzufügen. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>So definieren Sie ein Profil in einer neuen Visual Studio-Erweiterung
 
@@ -105,7 +105,7 @@ Sie können ein *UML-Profil* definieren, um die Standardmodell Elemente für bes
 
 5. Fügen Sie auf der Seite **Assets** eine Zeile hinzu, in der das Profil beschrieben wird:
 
-   - Klicken Sie auf **Neu**. Legen Sie die Felder im Dialogfeld **Neues Objekt hinzufügen** wie folgt fest.
+   - Klicken Sie auf **New** (Neu). Legen Sie die Felder im Dialogfeld **Neues Objekt hinzufügen** wie folgt fest.
 
    - Legen Sie **Typ** auf `Microsoft.VisualStudio.UmlProfile` fest.
 
@@ -196,7 +196,7 @@ Sie können ein *UML-Profil* definieren, um die Standardmodell Elemente für bes
     > [!NOTE]
     > Falls Sie die Erweiterung mithilfe eines Visual Studio-Erweiterungsprojekts erstellen, verwenden Sie den Projektmappen-Explorer, um dem Projekt einen neuen Ordner hinzuzufügen.
 
-3. Ändern Sie den Namen des neuen Verzeichnisses in den ISO-Kurzcode für die lokalisierte Kultur, z. B. `bg` für Bulgarisch oder `fr` für Französisch. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu Kultur Codes finden Sie unter [CultureInfo. GetCultures-Methode](https://go.microsoft.com/fwlink/?LinkId=160782), die eine komplette Liste der Kultur Codes enthält.
+3. Ändern Sie den Namen des neuen Verzeichnisses in den ISO-Kurzcode für die lokalisierte Kultur, z. B. `bg` für Bulgarisch oder `fr` für Französisch. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu Kultur Codes finden Sie unter [CultureInfo. GetCultures-Methode](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), die eine komplette Liste der Kultur Codes enthält.
 
 4. Fügen Sie dem neuen Verzeichnis eine Kopie des Standardprofils hinzu. Ändern Sie den Dateinamen nicht.
 
@@ -220,7 +220,7 @@ Sie können ein *UML-Profil* definieren, um die Standardmodell Elemente für bes
 7. Erstellen Sie die Visual Studio-Erweiterung, indem Sie entweder das Erweiterungsprojekt erstellen oder alle Dateien komprimieren, wie in den vorherigen Abschnitten beschrieben.
 
 ## <a name="Schema"></a>Struktur eines Profils
- Die XSD-Datei für UML-Profile finden Sie im folgenden Beispiel: [Festlegen von Stereotypen und Profilen XSD](https://go.microsoft.com/fwlink/?LinkID=213811). Installieren Sie die `.xsd`-Datei zur Unterstützung der Bearbeitung von Profildateien in:
+ Die XSD-Datei für UML-Profile finden Sie im folgenden Beispiel: [Festlegen von Stereotypen und Profilen XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Installieren Sie die `.xsd`-Datei zur Unterstützung der Bearbeitung von Profildateien in:
 
  **%ProgramFiles%\Microsoft Visual Studio [Version] \Xml\Schemas**
 
@@ -353,7 +353,7 @@ Das Profil muss als Paket oder Modell ausgewählt werden. Anschließend werden d
 
    - Wenn die Erweiterung nicht angezeigt wird, gehen Sie wie im Folgenden beschrieben vor.
 
-5. Erstellen Sie die VSIX-Datei neu, und öffnen Sie sie in Windows-Explorer, um sie erneut zu installieren. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.
+5. Erstellen Sie die VSIX-Datei neu, und öffnen Sie sie in Windows-Explorer, um sie erneut zu installieren. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.
 
    Die Erweiterung wird nicht im Erweiterungs-Manager angezeigt, aber wenn Sie versuchen, Sie erneut zu installieren, wird die folgende Meldung angezeigt: **die Extension ist bereits für alle anwendbaren Produkte installiert.**
    1. Entfernen Sie die Erweiterungs Datei aus einem Unterordner von *LocalAppData*\microsoft\visualstudio\\[Version] \extensions\
@@ -362,7 +362,7 @@ Das Profil muss als Paket oder Modell ausgewählt werden. Anschließend werden d
 
    - *LocalAppData* befindet sich normalerweise unter "c:\Users\\*username*\AppData\Local\".
 
-6. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.
+6. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.
 
 ## <a name="see-also"></a>Siehe auch
- [Hinzufügen von Stereotypen zu UML-Modellelementen](../modeling/add-stereotypes-to-uml-model-elements.md) [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Standard Stereotype für UML-Modelle](../modeling/standard-stereotypes-for-uml-models.md) [Beispiel: Color UML Elements by stereosample](https://go.microsoft.com/fwlink/?LinkID=213841) [: Setting Stereotype, Profiles XSD](https://go.microsoft.com/fwlink/?LinkID=213811)
+ [Hinzufügen von Stereotypen zu UML-Modellelementen](../modeling/add-stereotypes-to-uml-model-elements.md) [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Standard Stereotype für UML-Modelle](../modeling/standard-stereotypes-for-uml-models.md) [Beispiel: Color UML Elements by stereosample](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [: Setting Stereotype, Profiles XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

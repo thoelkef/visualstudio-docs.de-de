@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: d072f54dfe351d54e3e115dca7a91bec77fbb9e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144776"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844929"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ausführen von Windows Store-Apps im Simulator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Der Visual Studio-Simulator für Windows Store-Apps ist eine Desktopanwendung, d
   
  Der Simulator stellt eine Umgebung bereit, in der Sie Windows Store-Apps entwerfen, entwickeln, debuggen und testen können. Bevor Sie Ihre App im Windows Store veröffentlichen, sollten Sie sie jedoch auf einem echten Gerät testen.  
   
- Der Visual Studio-Simulator für Windows Store-Apps wird nicht in einer isolierten Umgebung auf dem lokalen Computer ausgeführt. Daher können im Simulator auftretende Fehler, z. B. nicht behebbare systemweite Fehler, auch Auswirkungen auf den restlichen Computer haben.  
+ Der Visual Studio-Simulator für Windows Store-Apps wird nicht in einer isolierten Umgebung auf dem lokalen Computer ausgeführt. Daher können im Simulator auftretende Fehler, z. B. nicht behebbare systemweite Fehler, auch Auswirkungen auf den restlichen Computer haben.  
   
  Für Informationen zu Windows Phone gehen Sie zu [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) .  
   
@@ -49,7 +49,7 @@ Der Visual Studio-Simulator für Windows Store-Apps ist eine Desktopanwendung, d
   
      ![Simulator mit einem fingerziel](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") Das einzelne Ziel Symbol gibt die Position von Ereignissen im Simulator an. Verwenden Sie die Maus, um den Zeiger zu positionieren.  
   
-     ![Ein Finger Touch-Ziel](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") Drücken Sie die linke Maustaste, um den Fingereingabe Modus zu aktivieren. Klicken Sie beispielsweise auf die Schaltfläche, um ein Tippen zu simulieren oder drücken und halten Sie die Schaltfläche beim Ziehen oder Streifen.  
+     ![Ein Finger Touch-Ziel](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") Drücken Sie die linke Maustaste, um den Fingereingabe Modus zu aktivieren. Klicken Sie beispielsweise auf die Schaltfläche, um ein Tippen zu simulieren, oder drücken und halten Sie die Schaltfläche beim Ziehen oder Streifen.  
   
 ## <a name="pinch-and-zoom"></a>Verkleinern und vergrößern  
  Legt den Interaktionsmodus auf Verkleinerungs- und Vergrößerungsgesten fest.  
@@ -60,13 +60,13 @@ Der Visual Studio-Simulator für Windows Store-Apps ist eine Desktopanwendung, d
 
   - Bewegen Sie den Mauszeiger, um die Symbole über dem Objekt auf dem Gerätebildschirm zu positionieren.  
 
-  - Drehen Sie das Mausrad nach oben oder unten , um den simulierten Abstand der zwei Finger vor dem Zusammendrücken oder Zoomen zu simulieren.  
+  - Drehen Sie das Mausrad nach oben oder unten, um den simulierten Abstand der zwei Finger vor dem Zusammendrücken oder Zoomen zu simulieren.  
 
 - ![Verkleinern, Zoomen und Drehen von Zielen](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
 
-  - Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach unten (zu Ihnen hin), um zu vergrößern.  
+  - Drücken Sie die linke Maustaste, und drehen Sie das Mausrad nach unten (zu Ihnen hin), um die Ansicht zu vergrößern.  
 
-  - Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach oben (von Ihnen weg), um zu verkleinern .  
+  - Drücken Sie die linke Maustaste, und drehen Sie das Mausrad nach oben (von Ihnen weg), um die Ansicht zu verkleinern.  
   
 ## <a name="object-rotation"></a>Objektdrehung  
  Die Schaltfläche **Fingereingabe-Emulation – Drehen** legt den Interaktionsmodus auf Drehbewegungen mit zwei Fingern fest.  
@@ -75,18 +75,18 @@ Der Visual Studio-Simulator für Windows Store-Apps ist eine Desktopanwendung, d
   
   - Drehen Sie das Mausrad nach oben oder unten, um die simulierte Ausrichtung der zwei Finger vor dem Drehen des Objekts zu simulieren.  
 
-- Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach unten (zu Ihnen hin), um das Objekt gegen den Uhrzeigersinn zu drehen. Beim Drehen des Mausrads rotiert eines der beiden Zielsymbole um das andere, um die relative Größe der Drehung anzugeben.  
+- Drücken Sie die linke Maustaste, und drehen Sie das Mausrad nach unten (zu Ihnen hin), um das Objekt gegen den Uhrzeigersinn zu drehen. Beim Drehen des Mausrads rotiert eines der beiden Zielsymbole um das andere, um die relative Größe der Drehung anzugeben.  
 
-  - Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach oben (von Ihnen weg), um das Objekt im Uhrzeigersinn zu drehen.  
+  - Drücken Sie die linke Maustaste, und drehen Sie das Mausrad nach oben (von Ihnen weg), um das Objekt im Uhrzeigersinn zu drehen.  
 
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Aktivieren oder deaktivieren des "Immer im Vordergrund"-Modus  
- Sie können festlegen, dass das Simulatorfenster immer an der obersten Position aller Fenster angezeigt wird. Die Schaltfläche **Umschalten des obersten Fensters** aktiviert oder deaktiviert den Modus **Immer im Vordergrund** des Simulatorfensters.  
+ Sie können festlegen, dass das Simulatorfenster immer im Vordergrund vor allen anderen Fenstern angezeigt wird. Die Schaltfläche **Umschalten des obersten Fensters** aktiviert oder deaktiviert den Modus **Immer im Vordergrund** des Simulatorfensters.  
   
 ## <a name="BKMK_Change_the_device_orientation"></a> Ändern der Geräteausrichtung  
  Sie können Hochformat- und Querformatausrichtung des Geräts wechseln, indem Sie den Simulator in beliebiger Richtung um 90 Grad drehen.  
   
 > [!NOTE]
-> Der Simulator berücksichtigt nicht die Eigenschaft [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) eines Projekts. Wenn Ihr Projekt beispielsweise auf die Ausrichtung `Landscape`festgelegt ist und Sie den Simulator in die Ausrichtung "Hochformat" drehen, wird die Anzeige des Simulators ebenfalls gedreht und die Größe angepasst. Testen Sie diese Einstellungen auf einem echten Gerät.  
+> Der Simulator berücksichtigt nicht die Eigenschaft [DisplayProperties.AutoRotationPreferences](https://msdn.microsoft.com/library/windows/apps/windows.graphics.display.displayproperties.autorotationpreferences.aspx) eines Projekts. Wenn Ihr Projekt beispielsweise auf die Ausrichtung `Landscape`festgelegt ist und Sie den Simulator in die Ausrichtung "Hochformat" drehen, wird die Anzeige des Simulators ebenfalls gedreht und die Größe angepasst. Testen Sie diese Einstellungen auf einem echten Gerät.  
   
 > [!NOTE]
 > Wenn Sie den Simulator so drehen, dass der Simulator größer als der Bildschirm ist, auf dem er angezeigt wird, erfolgt eine automatische Größenanpassung auf die Bildschirmgröße. Die ursprüngliche Größe des Simulators wird nicht wiederhergestellt, wenn Sie diesen erneut drehen.  

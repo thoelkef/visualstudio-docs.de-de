@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c66a25830e34571648727bd6ec71791e5e637ca8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294734"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850604"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ In diesem Thema werden die folgenden allgemeinen Fehler aufgelistet, die bei der
  Wenn Sie mit einer URL veröffentlichen, stellen Sie sicher, dass der Zielcomputer FrontPage-Servererweiterungen aktiviert ist.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Fehlermeldung: die Website "\<Site >" konnte nicht erstellt werden. Die Komponenten für die Kommunikation mit FrontPage-Servererweiterungen sind nicht installiert.  
- Stellen Sie sicher, dass auf dem Computer, von dem aus Sie veröffentlichen, die Microsoft Visual Studio Web Authoring-Komponente installiert ist. Für Express-Benutzer wird diese Komponente standardmäßig nicht installiert. Weitere Informationen finden Sie unter [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310).  
+ Stellen Sie sicher, dass auf dem Computer, von dem aus Sie veröffentlichen, die Microsoft Visual Studio Web Authoring-Komponente installiert ist. Für Express-Benutzer wird diese Komponente standardmäßig nicht installiert. Weitere Informationen finden Sie unter [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us).  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Fehlermeldung: die Datei ' Microsoft. Windows. Common-Controls, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf 1DF, ProcessorArchitecture =\*, Type = Win32 ' wurde nicht gefunden.  
  Diese Fehlermeldung wird angezeigt, wenn Sie versuchen, eine WPF-Anwendung mit aktivierten visuellen Stilen zu veröffentlichen. Informationen zum Beheben dieses Problems finden Sie unter Gewusst [wie: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
@@ -140,5 +140,5 @@ In diesem Thema werden die folgenden allgemeinen Fehler aufgelistet, die bei der
 |Die Anwendung ist zu groß, um in teilweiser Vertrauenswürdigkeit online auszuführen. Wenden Sie sich an den Hersteller der Anwendung oder an den Systemadministrator.|Eine Anwendung, die mit teilweiser Vertrauenswürdigkeit ausgeführt wird, darf nicht größer als die Hälfte der Größe des Online Anwendungs Kontingents sein, das standardmäßig 250 MB beträgt.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)

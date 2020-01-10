@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298322"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850518"
 ---
 # <a name="debug-xaml-in-blend"></a>Debuggen von XAML in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../includes/blend-first-md.md)
   
 - Ein XAML-Element ist an einer Position vorhanden, an der es nicht zulässig ist.  
   
-  Weitere Informationen über die allgemeine XAML-Syntax finden Sie in der [Anleitung zur grundlegenden XAML-Syntax](https://go.microsoft.com/fwlink/?LinkId=329942).  
+  Weitere Informationen über die allgemeine XAML-Syntax finden Sie in der [Anleitung zur grundlegenden XAML-Syntax](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx).  
   
   Sie können in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] auch einfache Code-Behind-Syntaxfehler, Kompilierungsfehler und Laufzeitfehler identifizieren und beheben. Für Code-Behind-Fehler können Sie dies allerdings möglicherweise in Visual Studio einfacher durchführen.  
   
@@ -123,7 +123,7 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../includes/blend-first-md.md)
 ## <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio  
  Sie können [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-Projekte in Visual Studio öffnen, um den App-Code einfacher zu debuggen. Um ein [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-Projekt in Visual Studio zu öffnen, klicken Sie im Bereich **Projekte** mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **In Visual Studio bearbeiten**. Wenn Sie die Debugsitzung in Visual Studio abgeschlossen haben, drücken Sie STRG+UMSCHALT+S, um sämtliche Änderungen zu speichern, und wechseln Sie anschließend zurück zu [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Sie werden aufgefordert, das Projekt erneut zu laden. Klicken Sie auf **Ja, alle**, um in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] weiterzuarbeiten.  
   
- Weitere Informationen zum Debuggen Ihrer App finden Sie unter [Debuggen von Windows Store-Apps in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ Weitere Informationen zum Debuggen Ihrer App finden Sie unter [Debuggen von Windows Store-Apps in Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Hilfe zu weiteren Fragen  
- Wenn Sie weitere Hilfe beim Debuggen Ihrer [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-App benötigen, können Sie im [Community-Forum der Windows Store-App](https://go.microsoft.com/fwlink/?LinkId=280308) nach Beiträgen suchen, die Ihr Problem betreffen, oder eine Frage stellen.
+ Wenn Sie weitere Hilfe beim Debuggen Ihrer [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-App benötigen, können Sie im [Community-Forum der Windows Store-App](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) nach Beiträgen suchen, die Ihr Problem betreffen, oder eine Frage stellen.

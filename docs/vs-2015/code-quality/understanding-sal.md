@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291880"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848469"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Microsoft-Quell Code Anmerkung (Source-Code Anmerkung Language, SAL) stellt eine Reihe von Anmerkungen bereit, mit denen Sie beschreiben können, wie eine Funktion Ihre Parameter verwendet, die Annahmen, die Sie für Sie vornimmt, und die Garantien, die Sie nach dem Abschluss trifft. Die Anmerkungen werden in der Header Datei `<sal.h>`definiert. Die Visual Studio-Code C++ Analyse für verwendet SAL-Anmerkungen, um die Analyse von Funktionen zu ändern. Weitere Informationen zu SAL 2,0 für die Windows-Treiberentwicklung finden Sie unter [SAL 2,0-Anmerkungen für Windows-Treiber](https://go.microsoft.com/fwlink/?LinkId=250979).  
+Die Microsoft-Quell Code Anmerkung (Source-Code Anmerkung Language, SAL) stellt eine Reihe von Anmerkungen bereit, mit denen Sie beschreiben können, wie eine Funktion Ihre Parameter verwendet, die Annahmen, die Sie für Sie vornimmt, und die Garantien, die Sie nach dem Abschluss trifft. Die Anmerkungen werden in der Header Datei `<sal.h>`definiert. Die Visual Studio-Code C++ Analyse für verwendet SAL-Anmerkungen, um die Analyse von Funktionen zu ändern. Weitere Informationen zu SAL 2,0 für die Windows-Treiberentwicklung finden Sie unter [SAL 2,0-Anmerkungen für Windows-Treiber](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
   
  Nativ, C und C++ bieten nur eingeschränkte Möglichkeiten für Entwickler, Absicht und Invarianz konsistent auszudrücken. Mithilfe von Sal-Anmerkungen können Sie Ihre Funktionen ausführlicher beschreiben, damit Entwickler, die Sie nutzen, besser verstehen können, wie Sie verwendet werden.  
   
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  Dieser Abschnitt enthält Codebeispiele für die grundlegenden SAL-Anmerkungen.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio-Codeanalysetools  
- In den Beispielen wird das Visual Studio Code Analysetool in Verbindung mit SAL-Anmerkungen verwendet, um Code Fehler zu finden. Gehen Sie dazu wie folgt vor.  
+ In den Beispielen wird das Visual Studio Code Analysetool in Verbindung mit SAL-Anmerkungen verwendet, um Code Fehler zu finden. Hierzu gehst du wie folgt vor.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL  
   
@@ -409,7 +409,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   Oder Sie können alle Parameter mit Anmerkungen versehen, um die Absicht zu vereinfachen und zu überprüfen, ob Anmerkungen durchgeführt wurden.  
   
 ## <a name="related-resources"></a>Verwandte Ressourcen  
- [Blog des Code Analyseteams](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [Blog des Code Analyseteams](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

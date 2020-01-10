@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6111900fb4c7b12a6238046fd27c3f6dad9d15ae
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294232"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848329"
 ---
 # <a name="maintaining-security"></a>Verwalten der Sicherheit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Es wird oft betont, dass der Preis für die Sicherheit die ständige Wachsamkeit
 
  Außerdem ist nicht nur die eigene Anwendung zu überwachen. Sie müssen auch ständig über die aktuellen Sicherheitsrisiken und Fehler der Plattform, auf der die Anwendung ausgeführt wird, und anderer Produkte, von denen die Anwendung abhängt, informiert sein.
 
- [Sicherheit, Datenschutz und Konten](https://go.microsoft.com/fwlink/?LinkId=72881) Erhalten Sie Hilfe zu Sicherheit, Datenschutz und Benutzerkonten, einschließlich Informationen über Viren, Kenn Wörter, Jugendschutz, Firewalls und Laufwerk Verschlüsselung.
+ [Sicherheit, Datenschutz und Konten](https://windows.microsoft.com/windows/security-privacy-accounts-help#security-privacy-accounts-help=windows-8&v0h=winrttab1&v1h=win8tab1&v2h=win7tab1&v3h=winvistatab1) Erhalten Sie Hilfe zu Sicherheit, Datenschutz und Benutzerkonten, einschließlich Informationen über Viren, Kenn Wörter, Jugendschutz, Firewalls und Laufwerk Verschlüsselung.
 
  [Suche nach Microsoft-Sicherheits Bulletins](/security-updates/) Diese Seite vereinfacht die Suche nach bereits veröffentlichten Bulletins. Die für IT-Experten erstellten Sicherheitsbulletins enthalten detaillierte Informationen über Sicherheitsupdates.
 

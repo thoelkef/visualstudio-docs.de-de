@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d92fd478e4106afd9b61a15146a68f279a358fb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a4297cfee592977cd09ba9c0abe36e12f7986181
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297104"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845617"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Verwenden von Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
   
     - Sie haben alle vorherigen Versionen von Microsoft Monitoring Agent deinstalliert.  
   
-2. [Laden Sie den kostenlosen Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384)(entweder die 32-Bit-Version **MMASetup-i386.exe** oder die 64-Bit-Version **MMASetup-AMD64.exe**) vom Microsoft Download Center auf Ihren Webserver herunter.  
+2. [Laden Sie den kostenlosen Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771)(entweder die 32-Bit-Version **MMASetup-i386.exe** oder die 64-Bit-Version **MMASetup-AMD64.exe**) vom Microsoft Download Center auf Ihren Webserver herunter.  
   
 3. Führen Sie die heruntergeladene ausführbare Datei aus, um den Installations-Assistenten zu starten.  
   
@@ -111,17 +111,17 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
   7. Stellen Sie sicher, dass der Anwendungspool über Berechtigungen zum **Lesen und Ausführen** verfügt.  
   
 ## <a name="MonitorEvents"></a> Schritt 2: Die Überwachung Ihrer App starten  
- Verwenden Sie den Windows PowerShell-Befehl [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) , um die Überwachung der App zu starten. Wenn Sie System Center 2012 verwenden, erhalten Sie weitere Informationen unter [Überwachung von Webanwendungen mit Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
+ Verwenden Sie den Windows PowerShell-Befehl [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) , um die Überwachung der App zu starten. Wenn Sie System Center 2012 verwenden, erhalten Sie weitere Informationen unter [Überwachung von Webanwendungen mit Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. Öffnen Sie auf dem Webserver ein **Windows PowerShell** - oder **Windows PowerShell ISE** -Eingabeaufforderungsfenster als Administrator.  
   
      ![Öffnen Sie Windows PowerShell als Administrator.](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
   
-2. Führen Sie den Befehl [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) aus, um die Überwachung Ihrer App zu starten. Dies startet alle Web Apps auf Ihrem Webserver neu.  
+2. Führen Sie den Befehl [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) aus, um die Überwachung Ihrer App zu starten. Dies startet alle Web Apps auf Ihrem Webserver neu.  
   
      Hier ist die kurze Syntax:  
   
-     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
+     **Start-webapplicationmonitoring** *"\<appname >"* *\<monitoringmode >* *"\<OutputPath >"* *\<UInt32 >* *"\<collectionplanpathandfilename >"*  
   
      Im Folgenden ein Beispiel, bei dem nur der Web App-Name und der Lightweight- **Monitor** -Modus verwendet wird:  
   
@@ -137,15 +137,15 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Geben Sie den Pfad zur Website und dem Namen der Web App in IIS an. Sie können auch den IIS-Pfad einschließen, falls gewünscht.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> \- oder -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Sie können diesen Pfad im IIS-Manager finden. Beispiel:<br /><br /> ![Pfad zur IIS-Website und Web-App](../debugger/media/ffr-iismanager.png "FFR_IISManager ")<br /><br /> Sie können auch die Befehle [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) und [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) verwenden.|  
+    |*"\<appName>"*|Geben Sie den Pfad zur Website und dem Namen der Web App in IIS an. Sie können auch den IIS-Pfad einschließen, falls gewünscht.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> \- oder -<br /><br /> **"IIS: \ Sites** *\\< iiswebsitename\>\\< iiswebappname\>"*<br /><br /> Sie können diesen Pfad im IIS-Manager finden. Beispiel:<br /><br /> ![Pfad zur IIS-Website und Web-App](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Sie können auch die Befehle [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) und [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) verwenden.|  
     |*\<monitoringMode>*|Legen Sie den Überwachungsmodus fest:<br /><br /> <ul><li>**Monitor**: Zeichnen Sie minimale Details über Ausnahmeereignisse und Leistungsereignisse auf. Dieser Modus verwendet den Standardauflistungsplan.</li><li>**Trace**: Zeichnen Sie Funktionsebenendetails auf, oder überwachen Sie SharePoint 2010- und SharePoint 2013-Anwendungen mithilfe des angegebenen Auflistungsplans. Durch diesen Modus wird Ihre App möglicherweise langsamer ausgeführt.<br /><br /> <ul><li>[F: Wie richte ich Berechtigungen für den Anwendungspool ein?](#FullPermissionsITLog)</li><li>[F: Wie rufe ich möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing)</li></ul><br />     Dieses Beispiel zeichnet Ereignisse für eine SharePoint-App auf, die auf einer SharePoint-Website gehostet wird:<br /><br />     **Start-webapplicationmonitoring "fabrikamsharepointsite\fabrikamsharepointapp" Trace "c:\Programme\Microsoft Monitoring agent\agent\intellitracecollector \ collection_plan. ASP. net. default. xml" "c:\intellitracelogs"**</li><li>**Custom**: Zeichnen Sie benutzerdefinierte Details mithilfe des angegebenen benutzerdefinierten Auflistungsplans auf. Sie müssen die Überwachung neu starten, wenn Sie den Auflistungsplan bearbeiten, nachdem die Überwachung bereits gestartet wurde.</li></ul>|  
     |*"\<outputPath>"*|Geben Sie den vollständigen Verzeichnispfad zum Speichern der IntelliTrace-Protokolle an. Achten Sie darauf, dass Sie dieses Verzeichnis erstellen, bevor Sie die Überwachung starten.|  
     |*\<UInt32>*|Geben Sie die maximale Größe für das IntelliTrace-Protokoll an. Die standardmäßige maximale Größe der IntelliTrace-Datei beträgt 250 MB.<br /><br /> Wenn das Protokoll diese Grenze erreicht, überschreibt der Agent die frühesten Einträge, um Platz für mehr Einträge zu schaffen. Um diese Beschränkung zu ändern, verwenden Sie die Option **-MaximumFileSizeInMegabytes** oder bearbeiten Sie das `MaximumLogFileSize` -Attribut im Auflistungsplan.|  
-    |*"\<collectionPlanPathAndFileName>"*|Geben Sie den vollständigen Pfad oder den relativen Pfad und den Dateiname des Auflistungsplans an. Dieser Plan ist eine XML-Datei, die Einstellungen für den Agent konfiguriert.<br /><br /> Diese Pläne werden mit dem Agent eingeschlossen und funktionieren mit Web Apps und SharePoint-Anwendungen:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Sammelt nur Ereignisse, wie z. B. Ausnahmen, Leistungsereignisse, Datenbankaufrufe und Webserveranforderungen.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Sammelt Funktionsebenenaufrufe sowie alle Daten im Standardauflistungsplan. Dieser Plan ist gut für eine ausführliche Analyse. Er verlangsamt jedoch möglicherweise die App.<br /><br /> Sie können lokalisierte Versionen dieser Pläne in Unterordnern des Agents finden. Um eine Verlangsamung der App zu vermeiden, können Sie auch [diese Pläne anpassen oder Ihre eigenen Pläne erstellen](https://go.microsoft.com/fwlink/?LinkId=227871) . Legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie den Agenten.<br /><br /> [F: Wie rufe ich möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing)|  
+    |*"\<collectionPlanPathAndFileName>"*|Geben Sie den vollständigen Pfad oder den relativen Pfad und den Dateiname des Auflistungsplans an. Dieser Plan ist eine XML-Datei, die Einstellungen für den Agent konfiguriert.<br /><br /> Diese Pläne werden mit dem Agent eingeschlossen und funktionieren mit Web Apps und SharePoint-Anwendungen:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Sammelt nur Ereignisse, wie z. B. Ausnahmen, Leistungsereignisse, Datenbankaufrufe und Webserveranforderungen.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Sammelt Funktionsebenenaufrufe sowie alle Daten im Standardauflistungsplan. Dieser Plan ist gut für eine ausführliche Analyse. Er verlangsamt jedoch möglicherweise die App.<br /><br /> Sie können lokalisierte Versionen dieser Pläne in Unterordnern des Agents finden. Um eine Verlangsamung der App zu vermeiden, können Sie auch [diese Pläne anpassen oder Ihre eigenen Pläne erstellen](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) . Legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie den Agenten.<br /><br /> [F: Wie rufe ich möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing)|  
   
      Für weitere Informationen über die vollständige Syntax und andere Beispiele, führen Sie den **get-help Start-WebApplicationMonitoring –detailed** -Befehl oder den **get-help Start-WebApplicationMonitoring –examples** -Befehl aus.  
   
-3. Um den Status aller überwachten Web Apps zu überprüfen, führen Sie den Befehl [GET-WebApplicationMonitoringStatus](https://go.microsoft.com/fwlink/?LinkID=313685) aus.  
+3. Um den Status aller überwachten Web Apps zu überprüfen, führen Sie den Befehl [GET-WebApplicationMonitoringStatus](https://technet.microsoft.com/library/dn472751(v=sc.20).aspx) aus.  
   
 ### <a name="q--a"></a>Fragen und Antworten  
   
@@ -238,11 +238,11 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
   
 1. Öffnen Sie auf dem Webserver ein Windows PowerShell-Eingabeaufforderungsfenster als Administrator.  
   
-2. Führen Sie den Befehl [Checkpoint-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313684) aus, um eine Momentaufnahme des IntelliTrace-Protokolls zu speichern:  
+2. Führen Sie den Befehl [Checkpoint-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472750(v=sc.20).aspx) aus, um eine Momentaufnahme des IntelliTrace-Protokolls zu speichern:  
   
-    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
+    **Checkpoint-webapplicationmonitoring** *"\<iiswebsitename >\\< iiswebappname\>"*  
   
-    \- oder –  
+    \- oder -  
   
     **Checkpoint-webapplicationmonitoring "IIS: \ Sites** *\\< iiswebsitename\>\\< iiswebappname\>"*  
   
@@ -261,18 +261,18 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
    > [!IMPORTANT]
    > Seien Sie vorsichtig, wenn Sie IntelliTrace-Protokolle freigeben, da diese eventuell persönliche und vertrauliche Daten enthalten. Stellen Sie sicher, dass Personen mit Zugriff auf diese Protokolle auch die Berechtigungen zu deren Anzeige haben. Überprüfen Sie Datenschutzrichtlinien des Unternehmens.  
   
-   **Nächstes Thema:** [Diagnose von aufgezeichneten Ereignissen in Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Weiter:** [Diagnose von aufgezeichneten Ereignissen in Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Speichern von aufgezeichneten Ereignissen und Beenden der Überwachung  
  Führen Sie folgende Schritte aus, wenn das Abrufen von Diagnoseinformationen nur beim Reproduzieren eines bestimmten Problems erwünscht ist. Dies startet alle Web Apps auf Ihrem Webserver neu.  
   
 1. Öffnen Sie auf dem Webserver ein Windows PowerShell-Eingabeaufforderungsfenster als Administrator.  
   
-2. Führen Sie den Befehl [Stop-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313687) aus, um das IntelliTrace-Protokoll zu erstellen und die Überwachung einer bestimmten Webanwendung zu beenden:  
+2. Führen Sie den Befehl [Stop-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472753(v=sc.20).aspx) aus, um das IntelliTrace-Protokoll zu erstellen und die Überwachung einer bestimmten Webanwendung zu beenden:  
   
-    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
+    "" **Beendet-webapplicationmonitoring** *"\<iiswebsitename >\\< iiswebappname\>"*  
   
-    \- oder –  
+    \- oder -  
   
     "%% Amp; quot **; IIS: \ Sites** *\\< iiswebsitename\>\\< iiswebappname\>"*  
   
@@ -284,7 +284,7 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
   
     **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-    \- oder –  
+    \- oder -  
   
     **PS C:\\>Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
@@ -292,7 +292,7 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
   
 3. Kopieren Sie das Protokoll in einen sicheren Ordner, und öffnen Sie das Protokoll auf einem Computer, auf dem Visual Studio Enterprise installiert ist.  
   
-   **Nächstes Thema:** [Diagnose von aufgezeichneten Ereignissen in Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Weiter:** [Diagnose von aufgezeichneten Ereignissen in Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Fragen und Antworten  
   
@@ -301,7 +301,7 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
 #### <a name="blogs"></a>Blogs  
  [Einführung in Microsoft Monitoring Agent](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent-2/)  
   
- [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](https://go.microsoft.com/fwlink/?LinkId=255233)  
+ [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)  
   
 #### <a name="forums"></a>Foren  
- [Visual Studio-Diagnose](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio-Diagnose](https://social.msdn.microsoft.com/Forums/vsdebug)

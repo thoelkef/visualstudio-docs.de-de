@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297128"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845660"
 ---
 # <a name="using-saved-intellitrace-data"></a>Verwenden gespeicherter IntelliTrace-Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +55,13 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
 - Doppelklicken Sie außerhalb von Visual Studio auf die ITRACE-Datei, oder öffnen Sie die Datei aus Visual Studio heraus.  
   
-     \- oder –  
+     \- oder -  
   
 - Wenn die ITRACE-Datei einem Team Foundation Server-Arbeitselement angefügt ist, führen Sie folgende Schritte im Arbeitselement durch:  
   
   - Suchen Sie in **Alle Links**die ITRACE-Datei. Öffnen Sie sie.  
 
-    \- oder –  
+    \- oder -  
 
   - Wählen Sie unter **Reproduktionsschritte**den Link **IntelliTrace** aus.  
   
@@ -143,7 +143,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
     |**Spalte**|**Enthält Folgendes**|  
     |----------------|-------------------|  
-    |**Typ**|.NET-Typ der Ausnahme|  
+    |**Type**|.NET-Typ der Ausnahme|  
     |**Neueste Meldung** für gruppierte Ausnahmen oder **Meldung** für nicht gruppierte Ausnahmen|Die von der Ausnahme bereitgestellte Meldung|  
     |**Anzahl** für gruppierte Ausnahmen|Die Anzahl, wie oft die Ausnahme ausgelöst wurde|  
     |**Thread-ID** für nicht gruppierte Ausnahmen|ID des Threads, der die Ausnahme ausgelöst hat|  
@@ -270,7 +270,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Foren  
- [Visual Studio Debugger](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Visual Studio Debugger](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
-#### <a name="guidance"></a>Empfehlungen  
- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 6: Ein Testwerkzeugkasten](https://go.microsoft.com/fwlink/?LinkID=255203)
+#### <a name="guidance"></a>Anleitung  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 6: Ein Testwerkzeugkasten](https://msdn.microsoft.com/library/jj159337.aspx)

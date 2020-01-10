@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299585"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850242"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://codeplex.com/SqlServerSamples)herunterladen.
 
   Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
@@ -71,7 +71,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
 5. Wählen Sie die Projektvorlage **WPF-Anwendung** aus.
 
-6. Geben Sie im Feld **Name** `AdventureWorksOrdersViewer`ein.
+6. Geben Sie im Feld **Name**`AdventureWorksOrdersViewer`ein.
 
 7. Klicken Sie auf **OK**.
 
@@ -133,9 +133,9 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
    - **OnlineOrderFlag**
 
-   - **Ship-adressssid**
+   - **ShipToAddressID**
 
-   - **Abrechnungs-SSID**
+   - **BillToAddressID**
 
    - **CreditCardApprovalCode**
 
@@ -143,7 +143,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Da
 
    - **TaxAmt**
 
-   - **FRA**
+   - **Freight**
 
    - **Rowguid**
 

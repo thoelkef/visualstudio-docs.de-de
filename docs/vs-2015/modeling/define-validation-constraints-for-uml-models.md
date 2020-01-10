@@ -11,23 +11,23 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295843"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849740"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Validierungseinschränkungen definieren, die testen, ob das Modell eine von Ihnen angegebene Bedingung erfüllt. Sie können z. B. eine Einschränkung definieren, um sicherzustellen, dass ein Benutzer keine Schleife mit Vererbungsbeziehungen erstellt. Die Einschränkung wird aufgerufen, wenn der Benutzer versucht, das Modell zu öffnen oder zu speichern. Sie kann auch manuell aufgerufen werden. Wenn die Einschränkung fehlschlägt, wird dem Fehlerfenster eine von Ihnen definierte Fehlermeldung hinzugefügt. Sie können diese Einschränkungen in einer Visual Studio-Integrationserweiterung ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
+Sie können Validierungseinschränkungen definieren, die testen, ob das Modell eine von Ihnen angegebene Bedingung erfüllt. Sie können z. B. eine Einschränkung definieren, um sicherzustellen, dass ein Benutzer keine Schleife mit Vererbungsbeziehungen erstellt. Die Einschränkung wird aufgerufen, wenn der Benutzer versucht, das Modell zu öffnen oder zu speichern. Sie kann auch manuell aufgerufen werden. Wenn die Einschränkung fehlschlägt, wird dem Fehlerfenster eine von Ihnen definierte Fehlermeldung hinzugefügt. Sie können diese Einschränkungen in einer Visual Studio-Integrationserweiterung ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
 
  Sie können auch Einschränkungen definieren, mit denen das Modell anhand externer Ressourcen (z. B. Datenbanken) überprüft wird. Wenn Sie Programmcode anhand eines ebenendiagramms überprüfen möchten, lesen Sie [Hinzufügen einer benutzerdefinierten Architektur Überprüfung zu ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
  Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Voraussetzungen
+## <a name="requirements"></a>-Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Erstellen Sie ein Klassenbibliotheksprojekt. Sie können dieses entweder zu einer vorhandenen VSIX-Projektmappe hinzufügen, oder Sie können eine neue Projektmappe erstellen.
 
-    1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
+    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
 
     2. Erweitern Sie unter **Installierte Vorlagen**entweder **Visual C#** oder **Visual Basic**, und wählen Sie anschließend in der mittleren Spalte **Klassenbibliothek**aus.
 

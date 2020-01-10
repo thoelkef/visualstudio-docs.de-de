@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299429"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852155"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://codeplex.com/SqlServerSamples)herunterladen.
 
   Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
@@ -70,7 +70,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 4. Wählen Sie die Projektvorlage **WPF-Anwendung** aus.
 
-5. Geben Sie im Feld **Name** `AdventureWorksProductsEditor` ein, und klicken Sie auf **OK**.
+5. Geben Sie im Feld **Name**`AdventureWorksProductsEditor` ein, und klicken Sie auf **OK**.
 
      Visual Studio erstellt das `AdventureWorksProductsEditor` Projekt.
 

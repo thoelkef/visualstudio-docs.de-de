@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295619"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852217"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menüelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Fügen Sie der vsct-Datei für das Paket einfach einen Eintrag hinzu, um eine Ta
   
    In den meisten Fällen sollte **Shift** nicht ohne einen zweiten Modifizierer verwendet werden, da durch das Drücken der Zeichen bereits ein Großbuchstabe oder ein Symbol für die meisten alphanumerischen Schlüssel verwendet wird.  
   
-   Mit virtuellen Schlüsselcodes können Sie auf spezielle Schlüssel zugreifen, denen kein Zeichen zugeordnet ist, z. b. Funktionstasten und die **RÜCKTASTE** . Weitere Informationen finden Sie unter [virtuelle Schlüssel Codes](https://go.microsoft.com/fwlink/?LinkID=105932).  
+   Mit virtuellen Schlüsselcodes können Sie auf spezielle Schlüssel zugreifen, denen kein Zeichen zugeordnet ist, z. b. Funktionstasten und die **RÜCKTASTE** . Weitere Informationen finden Sie unter [virtuelle Schlüssel Codes](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
    Um den Befehl im Visual Studio-Editor verfügbar zu machen, legen Sie das `editor`-Attribut auf `guidVSStd97`fest.  
   

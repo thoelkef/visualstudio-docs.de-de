@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dcf8f67e240476ad75ab5b0b7b0c446be32ad816
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299454"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846519"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Zusätzliche Ressourcen für die Problembehandlung beim Datenzugriff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). In der folgenden Tabelle sind die auf MSDN verfügbaren datenbezogenen Foren aufgeführt.
 
- [Windows Forms von Daten Steuerelementen und Daten](https://go.microsoft.com/fwlink/?LinkId=160179) Bindung Bietet ein Forum für Fragen und allgemeine Diskussionen zum Datenzugriff in Windows Forms.
+ [Windows Forms von Daten Steuerelementen und Daten](https://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads) Bindung Bietet ein Forum für Fragen und allgemeine Diskussionen zum Datenzugriff in Windows Forms.
 
- [ADO.NET DataSet-Forum](https://go.microsoft.com/fwlink/?LinkId=160180) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datasets.
+ [ADO.NET DataSet-Forum](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataset/threads) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datasets.
 
- [ADO.NET Entity Framework und LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Bietet ein Forum für Fragen und allgemeine Erörterung von Entity Framework Anwendungen und der LINQ to Entities Sprache.
+ [ADO.NET Entity Framework und LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/adodotnetentityframework/) Bietet ein Forum für Fragen und allgemeine Erörterung von Entity Framework Anwendungen und der LINQ to Entities Sprache.
 
- [WCF Data Services Forum](https://go.microsoft.com/fwlink/?LinkId=160181) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datendiensten.
+ [WCF Data Services Forum](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataservices/threads) Bietet ein Forum für Fragen und allgemeine Diskussionen zu Datendiensten.
 
- [SQL Server Datenzugriffs Forum](https://go.microsoft.com/fwlink/?LinkID=160184) Bietet ein Forum für Fragen und allgemeine Diskussionen zum Zugreifen auf Daten in Microsoft SQL Server.
+ [SQL Server Datenzugriffs Forum](https://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads) Bietet ein Forum für Fragen und allgemeine Diskussionen zum Zugreifen auf Daten in Microsoft SQL Server.
 
- [LINQ to SQL-Forum](https://go.microsoft.com/fwlink/?LinkId=160183) Bietet ein Forum für Fragen und allgemeine Diskussionen zu LINQ to SQL.
+ [LINQ to SQL-Forum](https://social.msdn.microsoft.com/Forums/en-US/linqtosql/threads) Bietet ein Forum für Fragen und allgemeine Diskussionen zu LINQ to SQL.
 
- [ADO.NET-Datenanbieter Forum](https://go.microsoft.com/fwlink/?LinkId=160182) Bietet ein Forum für Fragen und allgemeine Diskussionen über die verschiedenen .NET Framework Datenanbieter.
+ [ADO.NET-Datenanbieter Forum](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads) Bietet ein Forum für Fragen und allgemeine Diskussionen über die verschiedenen .NET Framework Datenanbieter.
 
- Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter [Beheben von Problemen beim Herstellen einer Verbindung mit dem SQL Server Datenbank-Engine](https://go.microsoft.com/fwlink/?LinkID=246151).
+ Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter [Beheben von Problemen beim Herstellen einer Verbindung mit dem SQL Server Datenbank-Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Siehe auch
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

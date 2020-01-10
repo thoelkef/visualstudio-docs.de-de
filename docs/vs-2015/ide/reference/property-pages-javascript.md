@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297823"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851815"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
 
  **Zu startender Debugger** Gibt den Standard Host für den Debugger an.
 
-- Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](https://go.microsoft.com/fwlink/?LinkId=234912).
+- Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](https://msdn.microsoft.com/library/windows/apps/hh441483(v=VS.85).aspx).
 
-- Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](https://go.microsoft.com/fwlink/?LinkId=234913).
+- Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](https://msdn.microsoft.com/library/windows/apps/hh441475(v=VS.85).aspx).
 
-- Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](https://go.microsoft.com/fwlink/?LinkId=234914).
+- Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](https://msdn.microsoft.com/library/windows/apps/hh441469(v=VS.85).aspx).
 
   **Anwendung starten** Gibt an, ob die Anwendung gestartet werden soll, wenn Sie F5 drücken oder auf **Debuggen**, **Debugging starten**klicken. Klicken Sie auf **Ja**, um die Anwendung zu starten. Klicken Sie ansonsten auf **Nein**. Wenn Sie auf **Nein** klicken, können Sie bei Verwendung einer anderen Methode zum Starten der Anwendung diese immer noch debuggen.
 

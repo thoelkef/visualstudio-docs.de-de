@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298266"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847789"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce und Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode * ist eine Microsoft-Technologie, die Branchenstandard-Kryptografie
 ## <a name="authenticode-and-code-signing"></a>Authenticode und Codesignatur  
  Ein *digitales Zertifikat* ist eine Datei, die ein öffentliches/privates kryptografisches Schlüsselpaar enthält sowie Metadaten über den Herausgeber, für den das Zertifikat ausgestellt wurde, und die Agentur, die das Zertifikat ausgestellt hat.  
   
- Es gibt viele verschiedene Arten von Authenticode-Zertifikaten. Jedes ist für unterschiedliche Arten von Signaturen konfiguriert. Für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen benötigen Sie ein Authenticode-Zertifikat, das zum Signieren von Code gültig ist. Wenn Sie versuchen, eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mit einem anderen Typ von Zertifikat zu signieren, z.B. einem digitalen Zertifikat für E-Mail, funktioniert dies nicht. Weitere Informationen finden Sie unter [Einführung in die Codesignatur](https://go.microsoft.com/fwlink/?LinkId=179452).  
+ Es gibt viele verschiedene Arten von Authenticode-Zertifikaten. Jedes ist für unterschiedliche Arten von Signaturen konfiguriert. Für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen benötigen Sie ein Authenticode-Zertifikat, das zum Signieren von Code gültig ist. Wenn Sie versuchen, eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mit einem anderen Typ von Zertifikat zu signieren, z.B. einem digitalen Zertifikat für E-Mail, funktioniert dies nicht. Weitere Informationen finden Sie unter [Einführung in die Codesignatur](https://msdn.microsoft.com/library/ms537361.aspx).  
   
  Sie können ein Zertifikat für Codesignaturen auf eine von drei Arten abrufen:  
   
@@ -65,14 +65,14 @@ Authenticode * ist eine Microsoft-Technologie, die Branchenstandard-Kryptografie
   
 - Deinstallieren Sie die Anwendung, und installieren Sie eine neue Version mit einem gültigen Zertifikat.  
   
-- Erstellen Sie eine Befehlszeilen-Assembly, die das Zertifikat aktualisiert. Detaillierte Informationen zu diesem Vorgang finden Sie im [Microsoft Support-Artikel 925521](https://go.microsoft.com/fwlink/?LinkId=179454).  
+- Erstellen Sie eine Befehlszeilen-Assembly, die das Zertifikat aktualisiert. Detaillierte Informationen zu diesem Vorgang finden Sie im [Microsoft Support-Artikel 925521](https://support.microsoft.com/kb/925521).  
   
 ### <a name="storing-certificates"></a>Speichern von Zertifikaten  
   
 - Sie können Zertifikate als PFX-Datei im Dateisystem speichern oder in einem Schlüsselcontainer speichern. Ein Benutzer auf einer Windows-Domäne kann über mehrere Schlüsselcontainer verfügen. Standardmäßig werden MakeCert.exe Zertifikate in Ihrem persönlichen Schlüsselcontainer gespeichert, es sei denn, Sie geben an, dass sie in einer PFX-Datei gespeichert werden sollen. Mage.exe und MageUI.exe, die [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] Tools zum Erstellen von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellungen, ermöglichen es Ihnen, auf beide Arten gespeicherte Zertifikate zu verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

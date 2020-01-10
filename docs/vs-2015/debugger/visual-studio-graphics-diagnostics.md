@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296893"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847828"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio-Grafikdiagnose
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio*Grafikdiagnose* ist eine Reihe von Tools zum Aufzeichnen und ansch
  [Erste Schritte](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  In diesem Abschnitt erfahren Sie, wie Sie Visual Studio-Grafikdiagnose installieren und mit der Direct3D-App verwenden.  
   
- [Aufzeichnen von Grafikinformationen](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  Um die Grafikdiagnose zur Untersuchung eines Renderingproblems zu verwenden, zeichnen Sie zuerst Informationen darüber auf, wie die App DirectX verwendet. In der Aufzeichnungssitzung, während der Ihre App normal ausgeführt wird, können Sie die gewünschten Frames *aufzeichnen*, d. h. auswählen. Die Aufzeichnungen enthalten ausführliche Informationen darüber, wie die Frames gerendert werden. Sie können die aufgezeichneten Informationen als Grafikprotokolldokument speichern, um sie später zu untersuchen oder für andere Teammitglieder freizugeben.  
   
  [GPU-Nutzung](../debugger/gpu-usage.md)  
@@ -81,7 +81,7 @@ Visual Studio*Grafikdiagnose* ist eine Reihe von Tools zum Aufzeichnen und ansch
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
   
-|Titel|Beschreibung|  
+|Title|Beschreibung|  
 |-----------|-----------------|  
 |[Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)|Stellt die Debuggingfunktionen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vor.|  
-|[DirectX-Grafiken und -Spiele](https://go.microsoft.com/fwlink/?LinkId=256498)|Enthält Artikel, in denen die DirectX-Grafiktechnologien erläutert werden.|
+|[DirectX-Grafiken und -Spiele](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|Enthält Artikel, in denen die DirectX-Grafiktechnologien erläutert werden.|

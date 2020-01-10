@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301191"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845289"
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,16 +46,16 @@ In einer domänenspezifischen Sprache (Domain-Specific Language, DSL), die mit d
  **Aktivieren oder deaktivieren Sie kopieren, Ausschneiden und einfügen.**
 Legen Sie im DSL-Explorer die Eigenschaft **Kopiervorgang aktivieren** des Knotens **Editor** fest.
 
- **Kopieren Sie Verknüpfungen in das gleiche Ziel.** So kann z. b. ein kopiertes Kommentarfeld mit dem gleichen Subjekt Element verknüpft werden.
+ **Kopieren Sie Verknüpfungen in das gleiche Ziel.** Auf diese Weise können Sie beispielsweise ein kopiertes Kommentarfeld mit dem gleichen Betreffelement verknüpfen.
 Legen Sie die Eigenschaft " **Kopieren** " der Rolle auf " **Kopieren" nur an den Link weiter**. Weitere Informationen finden Sie unter [Anpassen des Verhaltens](#customizeLinks)von Verknüpfungs Kopien.
 
  Kopieren Sie verknüpfte Elemente. Wenn Sie ein neues Element kopieren, werden beispielsweise auch Kopien verknüpfter Kommentarfelder erstellt.
 Legen Sie die Eigenschaft **Kopie** Verteilen der Rolle auf **Kopie an Link und gegenteiligen Rollen**Inhaber weitergeben fest. Weitere Informationen finden Sie unter [Anpassen des Verhaltens](#customizeLinks)von Verknüpfungs Kopien.
 
- **Duplizieren Sie Elemente schnell, indem Sie kopieren und einfügen.** Normalerweise ist das Element, das Sie gerade kopiert haben, weiterhin ausgewählt, und Sie können nicht denselben Elementtyp auf dem Element einfügen.
+ **Duplizieren Sie Elemente schnell, indem Sie kopieren und einfügen.** Normalerweise ist das Element, das Sie gerade kopiert haben, noch ausgewählt, und Sie können nicht den gleichen Elementtyp darin einfügen.
 Fügen Sie der Domänenklasse eine Direktive für Elementzusammenführungen hinzu, und legen Sie sie für vorwärts gerichtete Zusammenführungen in der übergeordneten Klasse fest. Dies hat die gleichen Auswirkungen auf Ziehvorgänge. Weitere Informationen finden Sie unter [Anpassen der Element Erstellung und-](../modeling/customizing-element-creation-and-movement.md)Verschiebung.
 
- \- oder –
+ \- oder -
 
  Wählen Sie vor dem Einfügen der Elemente das Diagramm aus, indem Sie `ClipboardCommandSet.ProcessOnPasteCommand()` überschreiben. Fügen Sie diesen Code in einer benutzerdefinierten Datei im DslPackage-Projekt hinzu:
 
@@ -77,10 +77,10 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Erstellen Sie zusätzliche Links, wenn der Benutzer auf ein ausgewähltes Ziel einfügt.** Wenn z. b. ein Kommentarfeld in ein Element eingefügt wird, wird ein Link zwischen diesen eingefügt.
+ **Erstellen Sie zusätzliche Links, wenn der Benutzer auf ein ausgewähltes Ziel einfügt.** Wenn beispielsweise ein Kommentarfeld in ein Element eingefügt wird, wird zwischen beiden ein Link erstellt.
 Fügen Sie der Zieldomänenklasse eine Direktive für Elementzusammenführungen hinzu, und legen Sie für sie fest, dass die Zusammenführung durch Hinzufügen von Links verarbeitet wird. Dies hat die gleichen Auswirkungen auf Ziehvorgänge. Weitere Informationen finden Sie unter [Anpassen der Element Erstellung und-](../modeling/customizing-element-creation-and-movement.md)Verschiebung.
 
- \- oder –
+ \- oder -
 
  Überschreiben Sie `ClipboardCommandSet.ProcessOnPasteCommand()`, um nach dem Aufruf der Basismethode weitere Links zu erstellen.
 
@@ -91,7 +91,7 @@ Fügen Sie der Zieldomänenklasse eine Direktive für Elementzusammenführungen 
 Überschreiben Sie *myDSL* -`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` im dslpackage-Projekt.
 
  **Bewahren Sie das Form Layout durch Kopieren und Einfügen auf.**
-Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird anhand des Beispiels unter [vmsdk: Circuit](https://go.microsoft.com/fwlink/?LinkId=213879)Diagramms veranschaulicht.
+Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird anhand des Beispiels unter [vmsdk: Circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)Diagramms veranschaulicht.
 
  Sie können diesen Effekt erreichen, indem Sie dem kopierten ElementGroupPrototype Formen und Konnektoren hinzufügen. Für das Überschreiben empfiehlt sich ElementOperations.CreateElementGroupPrototype(). Fügen Sie dem Dsl-Projekt zu diesem Zweck den folgenden Code hinzu:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Fügen Sie Formen an einer ausgewählten Stelle ein, z. b. die aktuelle Cursorposition.**
-Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird anhand des Beispiels unter [vmsdk: Circuit](https://go.microsoft.com/fwlink/?LinkId=213879)Diagramms veranschaulicht.
+Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird anhand des Beispiels unter [vmsdk: Circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)Diagramms veranschaulicht.
 
  Diesen Effekt erreichen Sie, indem Sie `ClipboardCommandSet.ProcessOnMenuPasteCommand()` überschreiben, sodass die positionsspezifische Version von `ElementOperations.Merge()` verwendet wird. Fügen Sie dem DslPackage-Projekt zu diesem Zweck den folgenden Code hinzu:
 
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Anpassen der Element Erstellung und](../modeling/customizing-element-creation-and-movement.md) [-Verschiebung Gewusst wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) [Anpassen des Lösch Verhaltens](../modeling/customizing-deletion-behavior.md) , [Beispiel: vmsdk Circuit](https://go.microsoft.com/fwlink/?LinkId=213879) Diagramms Sample
+ [Anpassen der Element Erstellung und](../modeling/customizing-element-creation-and-movement.md) [-Verschiebung Gewusst wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) [Anpassen des Lösch Verhaltens](../modeling/customizing-deletion-behavior.md) , [Beispiel: vmsdk Circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) Diagramms Sample

@@ -11,25 +11,25 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300425"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850327"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Gewusst wie: Erstellen eines Toolbox-Steuerelements, das Windows Forms verwendet
 Mit der Vorlage „Windows Forms-Toolbox-Steuerelement“, die im [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] enthalten ist, können Sie die Windows Forms-Steuerelemente erstellen, die beim Installieren der Extension automatisch zur **Toolbox** hinzugefügt werden. Dieses Thema veranschaulicht, wie Sie die Vorlage verwenden, um ein **Toolbox** -Steuerelement zu erstellen, das Sie an andere Benutzer verteilen können.  
   
 > [!NOTE]
-> Informationen zum Herunterladen des Visual Studio SDK finden Sie im [Visual Studio Extensibility Developer Center](https://go.microsoft.com/fwlink/?linkid=121964) auf der MSDN-Website.  
+> Informationen zum Herunterladen des Visual Studio SDK finden Sie im [Visual Studio Extensibility Developer Center](https://msdn.microsoft.com/vsx/default.aspx) auf der MSDN-Website.  
   
 ## <a name="creating-a-toolbox-control"></a>Erstellen eines Toolbox-Steuerelements  
  Verwenden Sie die Vorlage „Windows Forms-Toolbox-Steuerelement“ zum Erstellen des Projekts, und erstellen Sie dann eine Benutzeroberfläche (User Interface, UI) im Designer.  
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>So erstellen Sie ein Windows Forms-Toolbox-Steuerelementprojekt  
   
-1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.  
+1. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.  
   
 2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Installierte Vorlagen**auf den Knoten für Ihre bevorzugte Programmiersprache, und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie in der Liste der Projekttypen **Windows Forms-Toolbox-Steuerelement**aus.  
   

@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301237"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846369"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Die Struktur der Content_types].xml-Datei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74301237"
 Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Studio verwendet die Datei [Content_Types]. XML, um das Paket zu installieren, aber die Datei selbst wird nicht installiert.  
   
 > [!NOTE]
-> Obwohl sich dieses Thema nur auf [content_type]. XML-Dateien bezieht, die in VSIX-Paketen verwendet werden, ist der Dateityp [Content_Types]. XML Teil des OPC-Standards *(Open Packaging Conventions)* . Weitere Informationen finden Sie unter [OPC: ein neuer Standard zum Verpacken Ihrer Daten](https://go.microsoft.com/fwlink/?LinkID=148207) auf der MSDN-Website.  
+> Obwohl sich dieses Thema nur auf [content_type]. XML-Dateien bezieht, die in VSIX-Paketen verwendet werden, ist der Dateityp [Content_Types]. XML Teil des OPC-Standards *(Open Packaging Conventions)* . Weitere Informationen finden Sie unter [OPC: ein neuer Standard zum Verpacken Ihrer Daten](https://msdn.microsoft.com/magazine/cc163372.aspx) auf der MSDN-Website.  
   
 ## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden das root-Element und seine Attribute und untergeordneten Elemente beschrieben.  
@@ -39,13 +39,13 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|Attribute|Beschreibung|  
 |---------------|-----------------|  
 |`Xmlns`|(Erforderlich) Der Speicherort des Schemas, das für diese [Content_Types]. XML-Datei verwendet wird.|  
   
 ### <a name="attribute-name-attribute"></a>{Attribut Name} Versehen  
   
-|                           Wert                           |                Beschreibung                |
+|                           {2&gt;Wert&lt;2}                           |                Beschreibung                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | Der Speicherort des Inhaltstypen Schemas. |
   
@@ -58,7 +58,7 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|Attribute|Beschreibung|  
 |---------------|-----------------|  
 |`Extension`|Die Dateinamenerweiterung einer Datei im VSIX-Paket.|  
 |`ContentType`|Beschreibt die Art des Inhalts, der der Dateinamenerweiterung zugeordnet ist.|  
@@ -72,12 +72,12 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
 |pkgdef|text/plain|  
 |xml|Text/XML|  
 |vsixmanifest|Text/XML|  
-|htm oder HTML|Text/HTML|  
+|htm oder HTML|text/html|  
 |rtf|Anwendung/RTF|  
 |pdf|application/pdf|  
-|GIF|image/gif|  
+|gif|image/gif|  
 |JPG oder JPEG|Bild/jpg|  
-|PPE|Bild/TIFF|  
+|tiff|image/tiff|  
 |VSIX|application/zip|  
 |zip|application/zip|  
 |dll|application/octet-stream|  
@@ -104,4 +104,4 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
 ## <a name="see-also"></a>Siehe auch  
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX-Erweiterungs Schema 1,0 Verweis](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: ein neuer Standard zum Verpacken von Daten](https://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC: ein neuer Standard zum Verpacken von Daten](https://msdn.microsoft.com/magazine/cc163372.aspx)

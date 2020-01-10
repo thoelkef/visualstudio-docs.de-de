@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ef6ae6b042b1616997821febe156ef5cac3b7f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299714"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850367"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
  Die Visual Studio SDK-API-Referenz finden Sie unter [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md).  
   
 ## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK-Beispiele  
- Open-Source-Beispiele für vs SDK-Erweiterungen finden Sie auf GitHub unter [Visual Studio](https://aka.ms/vs2015sdksamples)-Beispiele. Dieses GitHub-Repository enthält Beispiele, die verschiedene erweiterbare Funktionen in Visual Studio veranschaulichen.  
+ Open-Source-Beispiele für vs SDK-Erweiterungen finden Sie auf GitHub unter [Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples)-Beispiele. Dieses GitHub-Repository enthält Beispiele, die verschiedene erweiterbare Funktionen in Visual Studio veranschaulichen.  
   
 ## <a name="other-visual-studio-sdk-resources"></a>Weitere Visual Studio SDK-Ressourcen  
  Wenn Sie Fragen zum VSSDK haben oder Ihre Erfahrungen mit der Entwicklung von Erweiterungen freigeben möchten, können Sie das [Visual Studio-Erweiterbarkeits Forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) oder den [extendvs-Gruppen Chat](https://gitter.im/Microsoft/extendvs)verwenden.  

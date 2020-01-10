@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297971"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851239"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Codeabdeckung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 
 1. Wählen Sie im Menü **Test** die Option **Code Coverage analysieren** aus.
 
-2. Um anzuzeigen, welche Zeilen ausgeführt wurden, wählen Sie ![Code Coverage-Färbung anzeigen Symbol](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-showcoloringicon")**Code Coverage-Färbung anzeigen**aus.
+2. Wählen Sie ![Symbol „Code Coverage-Färbung anzeigen“](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-showcoloringicon")**Code Coverage-Färbung anzeigen**, um anzuzeigen, welche Zeilen ausgeführt wurden.
 
      Um die Farben zu ändern oder den Text fett formatiert anzuzeigen, wählen Sie **Extras**, **Optionen**, **Umgebung**, **Schriftarten und Farben** und **Einstellungen anzeigen für: Text-Editor** aus. Unter **Elemente anzeigen** können Sie die Abdeckungselemente anpassen.
 
@@ -81,7 +81,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 
  Bei einem Test mit der Eingabe "2 " stellen Sie beispielsweise fest, dass 50 % einer bestimmten Funktion abgedeckt werden. Wenn Sie den Test ein zweites Mal mit der Eingabe "– 2 " ausführen, sehen Sie in der Ansicht der Abdeckungsfärbung, dass die anderen 50 % der Funktion abgedeckt werden. Führen Sie nun die Ergebnisse aus den zwei Testläufen zusammen. Die Berichtsansicht und die Ansicht der Abdeckungsfärbung zeigen nun an, dass 100 % der Funktion ausgeführt wurden.
 
- Verwenden Sie das ![Symbol für die zusammenlauftaste im Code Coverage-Fenster](../test/media/codecoverage-mergeicon.png "CodeCoverage-mergeicon")zusammen**führen** , um dies zu tun. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
+ Klicken Sie hierzu auf ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Code Coverage“](../test/media/codecoverage-mergeicon.png "CodeCoverage-mergeicon")**Code Coverage-Ergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
 
  Speichern Sie die Ergebnisse eines Zusammenführungsvorgangs mithilfe der Option **Export Code Coverage Results** (Codeabdeckungsergebnisse exportieren).
 
@@ -221,9 +221,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Verwenden Sie folgende Makros:
 
- `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
+ `ExcludeFromCodeCoverage(` *exclusionname* `, L"` *FunctionName* -`");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+ `ExcludeSourceFromCodeCoverage(` *exclusionname* `, L"` *sourceFilePath* `");`
 
 - *ExclusionName* ist ein eindeutiger Name.
 
@@ -280,8 +280,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
-### <a name="guidance"></a>Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Anleitung
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Siehe auch
  [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md) [Problembehandlung Code Coverage](../test/troubleshooting-code-coverage.md) [Unit Test Your Code](../test/unit-test-your-code.md)

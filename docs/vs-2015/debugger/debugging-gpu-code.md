@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28ea84e4de92ae2cd3bad8b6fea4f9036fd65014
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5092a2d2a823db6b101ee73d9d5c5dddef5c4526
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298281"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843985"
 ---
 # <a name="debugging-gpu-code"></a>Debuggen von GPU-Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 2. Mit dem Befehl **Aktuelle Kachel bis zum Cursor ausführen** wird die App ausgeführt, bis alle Threads in der aktuellen Kachel die Cursorposition erreichen und dann angehalten werden.  
   
 ## <a name="debugging-windows"></a>Debugfenster  
- Wenn Sie bestimmte Debugfenster verwenden, können Sie GPU-Threads überprüfen, kennzeichnen und einfrieren. Weitere Informationen finden Sie unter:  
+ Wenn Sie bestimmte Debugfenster verwenden, können Sie GPU-Threads überprüfen, kennzeichnen und einfrieren. Weitere Informationen finden Sie unter: .  
   
 - [Verwenden des Fensters "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)  
   
@@ -80,9 +80,9 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
  Dieser Fehler tritt auf, wenn Sie auf einem Remotecomputer debuggen. Der Debugger kann bis zur Laufzeit nicht bestimmen, ob die Treiber auf dem Remotecomputer installiert sind. Die Treiber sind vom Hersteller der Grafikkarte erhältlich.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Fehler: Auf der Remotesite muss TDR (Timeout Detection and Recovery) deaktiviert sein.  
- Es ist möglich, dass die C++ AMP-Berechnungen das Standardzeitintervall überschreiten, das durch den Windows-TDR-Prozess (Timeout Detection and Recovery) festgelegt wird. Wenn dies geschieht, wird die Berechnung abgebrochen und die Daten gehen verloren. Weitere Informationen finden Sie unter [Behandlung von TDRs in C++ AMP](https://go.microsoft.com/fwlink/p/?LinkId=249154).  
+ Es ist möglich, dass die C++ AMP-Berechnungen das Standardzeitintervall überschreiten, das durch den Windows-TDR-Prozess (Timeout Detection and Recovery) festgelegt wird. Wenn dies geschieht, wird die Berechnung abgebrochen und die Daten gehen verloren. Weitere Informationen finden Sie unter [Behandlung von TDRs in C++ AMP](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/07/handling-tdrs-in-c-amp.aspx).  
   
 ## <a name="see-also"></a>Siehe auch  
  Exemplarische Vorgehensweise [: C++ Debuggen eines Anwendungs](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Project Settings for a C++ Debug Configuration (Projekteinstellungen für eine C++-Debugkonfiguration)](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Start GPU Debugging in Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=255381) (Starten von GPU-Debugging in Visual Studio)
+ [Start GPU Debugging in Visual Studio](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/17/start-gpu-debugging-in-visual-studio-11.aspx) (Starten von GPU-Debugging in Visual Studio)

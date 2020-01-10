@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299663"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848000"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
 - [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
-  [In diesem Thema](#BKMK_In_this_topic)  
+  [Inhalt](#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden  
  Die Profilerstellung mithilfe der Instrumentationsmethode hat sich unter Windows 8 nicht geändert.  
@@ -100,9 +100,9 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
  Um Profile für Anwendungen auf Geräten zu erstellen, auf denen Visual Studio nicht installiert ist, führen Sie eines der folgenden Verfahren aus:  
   
-- Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](https://go.microsoft.com/fwlink/?LinkID=219549)herunter.  
+- Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software)herunter.  
   
-- Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Die Installationsprogramme befinden sich im Ordner *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.  
+- Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Die Installationsprogramme befinden sich im Ordner *% VSInstallDir%* **\Team Tools\Performance tools\setups** . Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.  
   
 > [!NOTE]
 > Um Profilerstellungsdaten für die Ebeneninteraktion (TIP-Daten) zu erfassen, müssen Sie den eigenständigen Profiler vom Visual Studio-Computer auf dem Remotecomputer installieren.  
@@ -145,6 +145,6 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
    Ebeneninteraktionsdaten können nur in der [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] - oder [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] -IDE angezeigt werden. Dateibasierte Ebeneninteraktionsberichte über [VSPerfReport](../profiling/vsperfreport.md) sind nicht verfügbar.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)   
+ [Leistungs-Explorer](../profiling/performance-explorer.md)   
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

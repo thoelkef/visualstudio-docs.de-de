@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e988c8818cdee756310b73d0d214deda43226f2b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299568"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850215"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual Studio bietet Tools zum Arbeiten mit Windows Communication Foundation (WC
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] ist ein einheitliches Framework zum Erstellen sicherer, zuverlässiger, transaktiver und interoperable verteilter Anwendungen. Es ersetzt ältere Technologien für die prozessübergreifende Kommunikation, wie z. b. asmx-Webdienste, .NET Remoting, Enterprise Services (DCOM) und MSMQ. WCF vereint die Funktionen all dieser Technologien in einem einheitlichen Programmiermodell. Dies vereinfacht die Entwicklung verteilter Anwendungen.
 
 #### <a name="what-are-wcf-data-services"></a>Was sind WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] ist eine Implementierung des odata-Protokolls (Open Data).  Mit WCF Data Services können Sie tabellarische Daten als Satz von Rest-APIs verfügbar machen, sodass Sie Daten mit Standard-HTTP-Verben wie Get, Post, Put oder DELETE zurückgeben können. Auf der Serverseite werden WCF Data Services durch [ASP.net-Web-API](https://dotnet.microsoft.com/apps/aspnet/apis) zum Erstellen neuer odata-Dienste abgelöst. Die WCF Data Services-Client Bibliothek ist weiterhin eine gute Wahl für die Nutzung von odata-Diensten in einer .NET-Anwendung in Visual Studio (**Project &#124; Dienstverweis hinzufügen**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] ist eine Implementierung des odata-Protokolls (Open Data).  Mit WCF Data Services können Sie tabellarische Daten als Satz von Rest-APIs verfügbar machen, sodass Sie Daten mit Standard-HTTP-Verben wie Get, Post, Put oder DELETE zurückgeben können. Auf der Serverseite werden WCF Data Services durch [ASP.net-Web-API](https://dotnet.microsoft.com/apps/aspnet/apis) zum Erstellen neuer odata-Dienste abgelöst. Die WCF Data Services-Client Bibliothek ist weiterhin eine gute Wahl für die Nutzung von odata-Diensten in einer .NET-Anwendung in Visual Studio (**Project &#124; Dienstverweis hinzufügen**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](https://msdn.microsoft.com/library/cc668792.aspx).
 
 ### <a name="wcf-programming-model"></a>WCF-Programmiermodell
  Das WCF-Programmiermodell basiert auf der Kommunikation zwischen zwei Entitäten: einem WCF-Dienst und einem WCF-Client. Das-Programmiermodell wird im <xref:System.ServiceModel>-Namespace in der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]gekapselt.
@@ -232,7 +232,7 @@ Visual Studio bietet Tools zum Arbeiten mit Windows Communication Foundation (WC
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Title|Beschreibung|
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Bietet eine Schritt-für-Schritt-Demonstration zum Erstellen und Verwenden von WCF-Diensten in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst in Visual Studio](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Enthält eine schrittweise Anleitung zum Erstellen und Verwenden von [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
@@ -245,7 +245,7 @@ Visual Studio bietet Tools zum Arbeiten mit Windows Communication Foundation (WC
 |[Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.|
 |[Dienstverweis konfigurieren (Dialogfeld)](../data-tools/configure-service-reference-dialog-box.md)|Beschreibt die Benutzeroberflächen Elemente des Dialog Felds **Dienst Verweis konfigurieren** .|
 
-## <a name="reference"></a>Verweis
+## <a name="reference"></a>Referenz
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>

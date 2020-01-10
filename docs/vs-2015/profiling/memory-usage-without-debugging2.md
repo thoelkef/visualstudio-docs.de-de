@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295693"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850820"
 ---
 # <a name="memory-usage-without-debugging"></a>Speicherauslastung ohne Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,8 +138,8 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |||  
 |-|-|  
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|  
-|**Count**|Die Anzahl der Objektinstanzen des Typs. Für eine Instanz ist die Anzahl stets 1.|  
-|**Größe (Byte)**|Für Typen: Die Größe aller Instanzen des Typs in der Momentaufnahme des Speichers, ohne die Größe der in den Instanzen enthaltenen Objekte.<br /><br /> Für Instanzen: Die Größe des Objekts ohne die Größe der in den Instanzen enthaltenen Objekte. Instanzen geändert.|  
+|**Anzahl**|Die Anzahl der Objektinstanzen des Typs. Für eine Instanz ist die Anzahl stets 1.|  
+|**Größe (Byte)**|Für Typen: Die Größe aller Instanzen des Typs in der Momentaufnahme des Speichers, ohne die Größe der in den Instanzen enthaltenen Objekte.<br /><br /> Für Instanzen: Die Größe des Objekts ohne die Größe der in den Instanzen enthaltenen Objekte. -Instanzen.|  
 |**Inklusive Größe (Bytes)**|Die Größe der Instanzen des Typs oder einer einzelnen Instanz, einschließlich der Größe der enthaltenen Objekte.|  
   
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Struktur der Pfade zum Stamm (Momentaufnahmendetails)  
@@ -179,7 +179,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |||  
 |-|-|  
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|  
-|**Count**|Die Zahl der Instanzen eines Typs in der primären Momentaufnahme. Für eine Instanz ist die **Anzahl** stets 1.|  
+|**Anzahl**|Die Zahl der Instanzen eines Typs in der primären Momentaufnahme. Für eine Instanz ist die **Anzahl** stets 1.|  
 |**Differenz der Anzahl**|Für Typen: Der Unterschied zwischen der Anzahl der Instanzen des Typs in der primären Momentaufnahme und der vorhergehenden Momentaufnahme. Für Instanzen ist das Feld leer.|  
 |**Größe (Byte)**|Die Größe der Objekte in der primären Momentaufnahme ohne die Größe der in den Objekten enthaltenen Objekte. Für Typen sind **Größe (Bytes)** und **Inklusive Größe (Bytes)** die Gesamtgrößen der Typinstanzen.|  
 |**Unterschied der Gesamtgrößen (Bytes)**|Für Typen: Der Unterschied in der Gesamtgröße der Typinstanzen zwischen der primären Momentaufnahme und der vorhergehenden Momentaufnahme, ohne die Größe der in den Instanzen enthaltenen Objekte. Für Instanzen ist das Feld leer.|  
@@ -207,4 +207,4 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
  [Analysieren der App-Leistung](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Ausführen von Leistungs- und Diagnosetools](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Bewährte Methoden zur Leistungssteigerung für Windows Store-Apps mit C++, C# und Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](https://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx)

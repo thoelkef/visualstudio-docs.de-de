@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f382226ab20053a57b10326853f16e27f641b3be
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298112"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846516"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Veröffentlichen eines Clouddiensts unter Verwendung von Visual Studio
 
@@ -33,7 +33,7 @@ Verwenden Sie die folgenden Verfahren zum Veröffentlichen der Azure-Anwendung u
 
 Wenn Sie Ihre Azure-Anwendung veröffentlichen, können Sie eine der folgenden Aufgaben ausführen:
 
-- Erstellen eines Dienst Pakets: Sie können dieses Paket und die Dienst Konfigurationsdatei verwenden, um die Anwendung aus der [Azure-Portal](https://portal.azure.com)in einer Bereitstellungs Umgebung zu veröffentlichen.
+- Erstellen eines Dienstpakets: Sie können dieses Paket und die Dienstkonfigurationsdatei verwenden, um Ihre Anwendung über das [Azure-Portal](https://portal.azure.com) in einer Bereitstellungsumgebung zu veröffentlichen.
 
 - Veröffentlichen Sie das Azure-Projekts in Visual Studio: Verwenden Sie den Webpublishing-Assistenten, um die Anwendung direkt auf Azure zu veröffentlichen. Informationen hierzu finden Sie unter [Assistent zur Veröffentlichung einer Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md).
 
@@ -43,13 +43,13 @@ Wenn Sie Ihre Azure-Anwendung veröffentlichen, können Sie eine der folgenden A
 
 1. Führen Sie die folgenden Schritte aus, um nur ein Dienstpaket zu erstellen:
 
-   a. Wählen Sie im Kontextmenü für das Azure-Projekt die Option **Paket** aus.
+   a. Öffnen Sie das Kontextmenü für das Azure-Projekt, und wählen Sie **Verpacken**.
 
-   b. Wählen Sie im Dialogfeld **Azure-Anwendung verpacken** die Dienstkonfiguration aus, für die Sie ein Paket erstellen möchten, und wählen Sie dann die Buildkonfiguration.
+   b. Wählen Sie im Dialogfeld **Azure-Anwendung verpacken** die Dienstkonfiguration, für die Sie ein Paket erstellen möchten, und wählen Sie anschließend die Buildkonfiguration.
 
    c. (Optional) Um Remotedesktop für den Clouddienst nach dem Veröffentlichen zu aktivieren, aktivieren Sie **Remotedesktop für alle Rollen aktivieren** und klicken dann auf **Einstellungen**, um die Anmeldeinformationen für Remotedesktop zu konfigurieren. Weitere Informationen finden Sie unter [Aktivieren einer Remotedesktopverbindung für eine Rolle in Azure Cloud Services mit Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-      Wenn Sie Ihren Cloud-Dienst nach der Veröffentlichung debuggen möchten, aktivieren Sie Remotedebuggen, indem Sie **Remotedebugger für alle Rollen aktivieren** auswählen.
+      Wenn Sie den Clouddienst nach dem Veröffentlichen debuggen möchten, aktivieren Sie das Remotedebuggen, indem Sie die Option **Remotedebugger für alle Rollen aktivieren**aktivieren.
 
    d. Wählen Sie den Link **Verpacken** , um das Paket zu erstellen.
 
@@ -69,13 +69,13 @@ Wenn die Back-End-Infrastruktur Ihrer App stabil ist, aber die Webrollen eine h�
 
 ### <a name="requirements-for-using-web-deploy"></a>Anforderungen für die Verwendung von Web Deploy
 
-- **Nur für Entwicklungs-und Testzwecke**: die Änderungen werden direkt an dem virtuellen Computer vorgenommen, auf dem die webrolle ausgeführt wird. Wenn dieser virtuelle Computer recycelt werden muss, gehen die Änderungen verloren, da das von Ihnen veröffentlichte Originalpaket zum Neuerstellen des virtuellen Computers für die Rolle verwendet wird. Veröffentlichen Sie Ihre Anwendung erneut, um die aktuellen Änderungen für die Webrolle zu erhalten.
+- **Nur für Entwicklungs- und Testzwecke:** Die Änderungen werden direkt auf dem virtuellen Computer vorgenommen, auf dem die Webrolle ausgeführt wird. Wenn dieser virtuelle Computer recycelt werden muss, gehen die Änderungen verloren, da das von Ihnen veröffentlichte Originalpaket zum Neuerstellen des virtuellen Computers für die Rolle verwendet wird. Veröffentlichen Sie Ihre Anwendung erneut, um die aktuellen Änderungen für die Webrolle zu erhalten.
 
-- **Nur Webrollen können aktualisiert werden**: workerrollen können nicht aktualisiert werden. Darüber hinaus kann `RoleEntryPoint` in `web role.cs` nicht aktualisiert werden.
+- **Nur Webrollen können aktualisiert werden:** Workerrollen können nicht aktualisiert werden. Darüber hinaus kann `RoleEntryPoint` in `web role.cs` nicht aktualisiert werden.
 
-- **Unterstützt nur eine einzelne Instanz einer webrolle**: in ihrer Bereitstellungs Umgebung können nicht mehrere Instanzen einer webrolle vorhanden sein. Mehrere Webrollen jeweils mit einer Instanz werden aber unterstützt.
+- **Unterstützt nur eine einzelne Instanz einer Webrolle:** Sie können in Ihrer Bereitstellungsumgebung nicht mehrere Instanzen einer Webrolle nutzen. Mehrere Webrollen jeweils mit einer Instanz werden aber unterstützt.
 
-- **Remote Desktop Verbindungen aktivieren**: bei dieser Anforderung können Web deploy den Benutzer und das Kennwort verwenden, um eine Verbindung mit dem virtuellen Computer herzustellen, um die Änderungen auf dem Server bereitzustellen, auf dem Internetinformationsdienste (IIS) ausgeführt wird. Außerdem kann es erforderlich sein, eine Verbindung mit dem virtuellen Computer herzustellen, um auf diesem virtuellen Computer ein vertrauenswürdiges Zertifikat für IIS hinzuzufügen. (Mit diesem Zertifikat wird sichergestellt, dass die von Web Deploy verwendete Remoteverbindung für IIS sicher ist.)
+- **Remotedesktopverbindungen aktivieren:** Bei dieser Anforderung können für Web Deploy der Benutzer und das Kennwort verwendet werden, um eine Verbindung mit dem virtuellen Computer herzustellen. Über diese Verbindung werden die Änderungen auf dem Server bereitgestellt, auf dem Internetinformationsdienste (IIS) ausgeführt wird. Außerdem kann es erforderlich sein, eine Verbindung mit dem virtuellen Computer herzustellen, um auf diesem virtuellen Computer ein vertrauenswürdiges Zertifikat für IIS hinzuzufügen. (Mit diesem Zertifikat wird sichergestellt, dass die von Web Deploy verwendete Remoteverbindung für IIS sicher ist.)
 
 Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azure-Anwendung veröffentlichen** verwenden.
 
@@ -83,7 +83,7 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
 1. Sie müssen zuerst Remotedesktopverbindungen konfigurieren, um die Option **Web Deploy für alle Webrollen aktivieren** aktivieren zu können. Wählen Sie für alle Rollen die Option **Remotedesktop aktivieren** aus, und geben Sie dann die Anmeldeinformationen an, die zum Herstellen der Remoteverbindung im angezeigten Feld **Remotedesktopkonfiguration** verwendet werden. Informationen finden Sie unter [Aktivieren einer Remotedesktopverbindung für eine Rolle in Azure Cloud Services mit Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-1. Wenn Sie Web Deploy für alle Webrollen in der Anwendung aktivieren möchten, wählen Sie **Web Deploy für alle Webrollen aktivieren** aus.
+1. Wählen Sie **Web Deploy für alle Webrollen aktivieren**, um Web Deploy für alle Webrollen in Ihrer Anwendung zu aktivieren.
 
     Als Warnung wird ein gelbes Dreieck angezeigt. Für Web Deploy wird standardmäßig ein nicht vertrauenswürdiges, selbstsigniertes Zertifikat verwendet. Dies wird nicht zum Hochladen von vertraulichen Daten empfohlen. Wenn Sie diesen Prozess für vertrauliche Daten schützen möchten, können Sie ein SSL-Zertifikat hinzufügen, das für Web Deploy-Verbindungen verwendet wird. Dieses Zertifikat muss ein vertrauenswürdiges Zertifikat sein. Weitere Informationen finden Sie unter [Schützen von Web Deploy](#make-web-deploy-secure).
 
@@ -96,9 +96,9 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
 ### <a name="update-your-web-role-by-using-web-deploy"></a>Aktualisieren Ihrer Webrolle mit Web Deploy
 
-1. Damit Web Deploy verwendet werden kann, müssen Sie Codeänderungen am Projekt für alle Webrollen in Visual Studio vornehmen, die Sie veröffentlichen möchten. Klicken Sie dann mit der rechten Maustaste in der Projektmappe auf diesen Projektknoten, und zeigen Sie auf **Veröffentlichen**. Das Dialogfeld **Web veröffentlichen** wird angezeigt.
+1. Nehmen Sie zum Verwenden von Web Deploy am Projekt Codeänderungen für alle Webrollen in Visual Studio vor, die Sie veröffentlichen möchten, und klicken Sie in der Projektmappe dann mit der rechten Maustaste auf diesen Projektknoten, und zeigen Sie auf **Veröffentlichen**. Das Dialogfeld **Website veröffentlichen** wird angezeigt.
 
-1. (Optional) Wenn Sie ein vertrauenswürdiges SSL-Zertifikat zur Verwendung für Remoteverbindungen für IIS hinzugefügt haben, können Sie das Kontrollkästchen **Nicht vertrauenswürdiges Zertifikat zulassen** deaktivieren. Informationen zur Vorgehensweise beim Hinzufügen eines Zertifikats, um Web Deploy sicher zu machen, finden Sie im Abschnitt **Schützen von Web Deploy** weiter unten in diesem Artikel.
+1. (Optional) Wenn Sie ein vertrauenswürdiges SSL-Zertifikat zur Verwendung durch Remoteverbindungen für IIS hinzugefügt haben, können Sie das Kontrollkästchen **Nicht vertrauenswürdiges Zertifikat zulassen** deaktivieren. Informationen zur Vorgehensweise beim Hinzufügen eines Zertifikats, um Web Deploy sicher zu machen, finden Sie im Abschnitt **Schützen von Web Deploy** weiter unten in diesem Artikel.
 
 1. Zum Verwenden von Web Deploy werden für den Veröffentlichungsmechanismus der Benutzername und das Kennwort benötigt, den bzw. das Sie beim ersten Veröffentlichen des Pakets für die Remotedesktopverbindung eingerichtet haben.
 
@@ -110,7 +110,7 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
 1. Wählen Sie **Veröffentlichen**, um die Änderungen an der Webrolle zu veröffentlichen.
 
-    Die Statuszeile zeigt **Veröffentlichungsvorgang wurde gestartet** an. Wenn die Veröffentlichung abgeschlossen ist, wird **Veröffentlichen erfolgreich** angezeigt. Die Änderungen wurden auf dem virtuellen Computer für die Webrolle bereitgestellt. Sie können die Azure-Anwendung jetzt in der Azure-Umgebung starten, um die Änderungen zu testen.
+    In der Statuszeile wird **Veröffentlichungsvorgang wurde gestartet**angezeigt. Wenn die Veröffentlichung abgeschlossen ist, wird **Veröffentlichen erfolgreich** angezeigt. Die Änderungen wurden auf dem virtuellen Computer für die Webrolle bereitgestellt. Sie können die Azure-Anwendung jetzt in der Azure-Umgebung starten, um die Änderungen zu testen.
 
 ### <a name="make-web-deploy-secure"></a>Schützen von Web Deploy
 
@@ -122,10 +122,10 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
    a. Klicken Sie zum Herstellen einer Verbindung mit dem virtuellen Computer, auf dem die Webrolle ausgeführt wird, unter **Cloud-Explorer** oder **Server-Explorer** auf die Instanz der Webrolle. Wählen Sie anschließend den Befehl **Mithilfe von Remotedesktop verbinden**. Ausführliche Schritte zum Herstellen einer Verbindung mit dem virtuellen Computer finden Sie unter [Aktivieren einer Remotedesktopverbindung für eine Rolle in Azure Cloud Services mit Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). Im Browser wird eine Aufforderung zum Herunterladen einer `.rdp`-Datei angezeigt.
 
-   b. Öffnen Sie den Verwaltungsdienst im IIS-Manager, um ein SSL-Zertifikat hinzuzufügen. Aktivieren Sie in IIS-Manager SSL, indem Sie den Link **Bindungen** im Bereich **Aktion** öffnen. Das Dialogfeld **Sitebindung hinzufügen** wird angezeigt. Wählen Sie **Hinzufügen** und in der Dropdownliste **Typ** dann die Option „HTTPS“ aus. Wählen Sie in der Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das von einer Zertifizierungsstelle signiert wurde und das Sie in das Azure-Portal hochgeladen haben. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungseinstellungen für den Verwaltungsdienst](https://go.microsoft.com/fwlink/?LinkId=215824).
+   b. Öffnen Sie den Verwaltungsdienst im IIS-Manager, um ein SSL-Zertifikat hinzuzufügen. Aktivieren Sie SSL im IIS-Manager, indem Sie im **Aktionsbereich** den Link **Bindungen** öffnen. Das Dialogfeld **Sitebindung hinzufügen** wird angezeigt. Wählen Sie **Hinzufügen** und in der Dropdownliste **Typ** dann die Option „HTTPS“ aus. Wählen Sie in der Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das von einer Zertifizierungsstelle signiert wurde und das Sie in das Azure-Portal hochgeladen haben. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungseinstellungen für den Verwaltungsdienst](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
 
       > [!NOTE]
-      > Wenn Sie ein vertrauenswürdiges SSL-Zertifikat hinzufügen, wird das gelbe Warndreieck nicht mehr im **Webpublishing-Assistenten** angezeigt.
+      > Wenn Sie ein vertrauenswürdiges SSL-Zertifikat hinzufügen, wird die Warnung mit dem gelben Dreieck im **Veröffentlichungs-Assistenten**nicht mehr angezeigt.
 
 ## <a name="include-files-in-the-service-package"></a>Einschließen von Dateien in das Dienstpaket
 
@@ -134,26 +134,26 @@ Unter Umständen müssen Sie bestimmte Dateien in Ihr Dienstpaket einschließen,
 1. Führen Sie die folgenden Schritte aus, um einem Dienstpaket eine Assembly hinzuzufügen:
 
    a. Öffnen Sie im **Projektmappen-Explorer** den Projektknoten für das Projekt, für das die referenzierte Assembly fehlt.
-   b. Öffnen Sie zum Hinzufügen der Assembly zum Projekt das Kontextmenü für den Ordner **References**, und wählen Sie dann **Verweis hinzufügen** aus. Das Dialogfeld „Verweis hinzufügen“ wird angezeigt.
-   c. Wählen Sie den Verweis, den Sie hinzufügen möchten, und dann **OK**. Der Verweis wird der Liste unter dem Ordner **References** hinzugefügt.
-   d. Öffnen Sie das Kontextmenü für die Assembly, die Sie hinzugefügt haben, und wählen Sie dann **Eigenschaften** aus. Das Fenster **Eigenschaften** wird angezeigt.
+   b. Um die Assembly dem Projekt hinzuzufügen, öffnen Sie das Kontextmenü für den Ordner **Verweise** und wählen dann **Verweis hinzufügen** aus. Das Dialogfeld „Verweis hinzufügen“ wird angezeigt.
+   c. Wählen Sie den Verweis, den Sie hinzufügen möchten, und dann **OK**. Der Verweis wird der Liste unter dem Ordner **Verweise** hinzugefügt.
+   d. Öffnen Sie das Kontextmenü für die Assembly, die Sie hinzugefügt haben, und wählen Sie **Eigenschaften**. Das Fenster **Eigenschaften** wird angezeigt.
 
       Um diese Assembly in das Dienstpaket einzuschließen, wählen Sie in der Liste **Lokale Kopie** die Option **True** aus.
 1. Öffnen Sie im **Projektmappen-Explorer** den Projektknoten für das Projekt, für das die referenzierte Assembly fehlt.
 
-1. Öffnen Sie zum Hinzufügen der Assembly zum Projekt das Kontextmenü für den Ordner **References**, und wählen Sie dann **Verweis hinzufügen** aus. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
+1. Um die Assembly dem Projekt hinzuzufügen, öffnen Sie das Kontextmenü für den Ordner **Verweise** und wählen dann **Verweis hinzufügen** aus. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-1. Wählen Sie den Verweis aus, das Sie hinzufügen möchten, und klicken Sie dann auf die Schaltfläche **OK**.
+1. Wählen Sie den Verweis, den Sie hinzufügen möchten, und dann die Schaltfläche **OK** .
 
-    Der Verweis wird der Liste unter dem Ordner **References** hinzugefügt.
+    Der Verweis wird der Liste unter dem Ordner **Verweise** hinzugefügt.
 
-1. Öffnen Sie das Kontextmenü für die Assembly, die Sie hinzugefügt haben, und wählen Sie dann **Eigenschaften** aus. Das Fenster Eigenschaften wird angezeigt.
+1. Öffnen Sie das Kontextmenü für die Assembly, die Sie hinzugefügt haben, und wählen Sie **Eigenschaften**. Das Fenster Eigenschaften wird angezeigt.
 
 1. Um diese Assembly in das Dienstpaket einzuschließen, wählen Sie in der Liste **Lokale Kopie** die Option **True** aus.
 
-1. Öffnen Sie zum Aufnehmen von Dateien in das Dienstpaket, die Ihrem Webrollenprojekt hinzugefügt wurden, das Kontextmenü für die Datei, und wählen Sie dann **Eigenschaften** aus. Wählen Sie im Fenster **Eigenschaften** die Option **Inhalt** aus dem Listenfeld **Buildvorgang** aus.
+1. Zum Einschließen von Dateien in das Dienstpaket, die Ihrem Webrollenprojekt hinzugefügt wurden, öffnen Sie das Kontextmenü für die Datei und wählen dann **Eigenschaften**. Wählen Sie im Fenster **Eigenschaften** im Listenfeld **Buildvorgang** die Option **Inhalt** aus.
 
-1. Öffnen Sie zum Aufnehmen von Dateien in das Dienstpaket, die Ihrem Workerrollenprojekt hinzugefügt wurden, das Kontextmenü für die Datei, und wählen Sie dann **Eigenschaften** aus. Wählen Sie im Fenster **Eigenschaften** die Option **Kopieren, wenn neuer** aus dem Listenfeld **In Ausgabeverzeichnis kopieren** aus.
+1. Zum Einschließen von Dateien in das Dienstpaket, die Ihrem Workerrollenprojekt hinzugefügt wurden, öffnen Sie das Kontextmenü für die Datei und wählen dann **Eigenschaften**. Wählen Sie im Fenster **Eigenschaften** im Listenfeld **In Ausgabeverzeichnis kopieren** die Option **Kopieren, wenn neuer** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

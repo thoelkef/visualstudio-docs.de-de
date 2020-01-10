@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42c42a845ef98fb3a6ebe9b5e017ae2783365f1b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301173"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851365"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und -katalog
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 </ImageManifest>  
 ```  
 
- **MB**  
+ **Symbols**  
 
  Zur Unterstützung der Lesbarkeit und Wartung kann das Bild Manifest Symbole für Attributwerte verwenden. Symbole werden wie folgt definiert:  
 
@@ -106,9 +106,9 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |-|-|  
 |**Unterelement**|**Definition**|  
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei zur Verwendung im aktuellen Manifest.|  
-|Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|  
-|ID|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|  
-|String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|  
+|GUID|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|  
+|Id|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|  
+|Zeichenfolge|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|  
 
  Bei Symbolen wird die Groß-/Kleinschreibung beachtet und mithilfe der Syntax $ (Symbol Name) auf Sie verwiesen:  
 
@@ -122,7 +122,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 
 |||  
 |-|-|  
-|**Tick**|**Beschreibung**|  
+|**Symbol**|**Beschreibung**|  
 |CommonProgramFiles|Der Wert der Umgebungsvariablen "% COMMONPROGRAM Files%"|  
 |LocalAppData|Der Wert der Umgebungsvariablen "% LocalAppData%"|  
 |ManifestFolder|Der Ordner, der die Manifest-Datei enthält.|  
@@ -147,8 +147,8 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Guid|Benötigten Der GUID-Teil des bilmonikers.|  
-|ID|Benötigten Der ID-Teil des bilmonikers.|  
+|GUID|Benötigten Der GUID-Teil des bilmonikers.|  
+|Id|Benötigten Der ID-Teil des bilmonikers.|  
 |AllowColorInversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|  
 
  **Source**  
@@ -164,8 +164,8 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Dabei kann es sich um einen der folgenden handeln:<br /><br /> -Ein [Paket-URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält.                                                                                                                                                                                                                                                                                                               |
-|  Hintergrund   | Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Dabei kann es sich um einen der folgenden handeln:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em> Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert. |
+|      URI      |                                                                                                                                                                                                                                                                                                               Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Folgende Werte sind möglich:<br /><br /> -Ein [Paket-URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält.                                                                                                                                                                                                                                                                                                               |
+|  -Hintergrund   | Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em> Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Ein \<Quell > Element kann genau eines der folgenden optionalen unter Elemente aufweisen:  
@@ -173,7 +173,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 ||||  
 |-|-|-|  
 |**Element**|**Attribute (alle erforderlich)**|**Definition**|  
-|\<Größe >|Wert|Die Quelle wird für Images der angegebenen Größe (in Geräte Einheiten) verwendet. Das Bild wird quadratisch.|  
+|\<Größe >|{2&gt;Wert&lt;2}|Die Quelle wird für Images der angegebenen Größe (in Geräte Einheiten) verwendet. Das Bild wird quadratisch.|  
 |\<sizerange >|MinSize, MaxSize|Die Quelle wird für Images von MinSize bis MaxSize (in Geräte Einheiten) inklusive verwendet. Das Bild wird quadratisch.|  
 |\<Dimensionen >|Breite, Höhe|Die Quelle wird für Bilder mit der angegebenen Breite und Höhe (in Geräte Einheiten) verwendet.|  
 |\<dimensionrange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird für Bilder von der minimalen Breite/Höhe bis zur maximalen Breite bzw. Höhe (in Geräte Einheiten) einschließlich der maximalen Breite/Höhe verwendet.|  
@@ -188,7 +188,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |-|-|  
 |**Attribut**|**Definition**|  
 |Typ|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|  
-|ID|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|  
+|Id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|  
 
  **ImageList**  
 
@@ -204,8 +204,8 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Guid|Benötigten Der GUID-Teil des bilmonikers.|  
-|ID|Benötigten Der ID-Teil des bilmonikers.|  
+|GUID|Benötigten Der GUID-Teil des bilmonikers.|  
+|Id|Benötigten Der ID-Teil des bilmonikers.|  
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|  
 
  Der Moniker für das enthaltene Bild muss nicht auf ein Bild verweisen, das im aktuellen Manifest definiert ist. Wenn das enthaltene Bild in der Bildbibliothek nicht gefunden werden kann, wird an seiner Stelle ein leeres Platzhalter Bild verwendet.  
@@ -215,35 +215,35 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 ### <a name="first-steps-managed"></a>Erste Schritte (verwaltet)  
  Um den Image Dienst zu verwenden, müssen Sie Ihrem Projekt Verweise auf einige oder alle der folgenden Assemblys hinzufügen:  
 
-- **Microsoft. VisualStudio. imagecatalog. dll**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
   - Erforderlich, wenn Sie den integrierten Image Katalog knownmoniker verwenden  
 
-- **Microsoft. VisualStudio. Imaging. dll**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
   - Erforderlich, wenn Sie " **crispimage** " und " **imagethemingutilities** " in der WPF-Benutzeroberfläche verwenden  
 
-- **Microsoft. VisualStudio. Imaging. Interop. 14,0. designtime. dll**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
   - Erforderlich, wenn Sie die Typen " **imagemoniker** " und " **imageattribute** " verwenden  
 
   - **Embedinteroptypes** muss auf "true" festgelegt werden.  
 
-- **Microsoft. VisualStudio. Shell. Interop. 14,0. designtime**  
+- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
   - Erforderlich, wenn Sie den **IVsImageService2** -Typ verwenden.  
 
   - **Embedinteroptypes** muss auf "true" festgelegt werden.  
 
-- **Microsoft. VisualStudio. Utilities. dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
   - Erforderlich, wenn Sie " **brushumcolorconverter** " für "imagethemingutilities" verwenden. **Imagebackgroundcolor** in der WPF-Benutzeroberfläche  
 
-- **Microsoft. VisualStudio. Shell.\<vsversion >. 0**  
+- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
   - Erforderlich, wenn Sie den **ivsuiobject** -Typ verwenden.  
 
-- **Microsoft. VisualStudio. Shell. Interop. 10.0. dll**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
   - Erforderlich, wenn Sie die mit WinForms verknüpften UI-Hilfsprogramme verwenden.  
 
@@ -252,15 +252,15 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 ### <a name="first-steps-native"></a>Erste Schritte (nativ)  
  Um den Image-Dienst zu verwenden, müssen Sie einige oder alle der folgenden Header in Ihr Projekt einschließen:  
 
-- **Knownimageids. h**  
+- **KnownImageIds.h**  
 
   - Erforderlich, wenn Sie den integrierten Image Katalog **knownmoniker**verwenden, aber den **imagemoniker** -Typ nicht verwenden können, z. b. beim Zurückgeben von Werten von **ivshierarchie getguidproperty** -oder **GetProperty** -aufrufen.  
 
-- **Knownmoniker. h**  
+- **KnownMonikers.h**  
 
   - Erforderlich, wenn Sie den integrierten Image Katalog **knownmonikers**verwenden.  
 
-- **ImageParameters140. h**  
+- **ImageParameters140.h**  
 
   - Erforderlich, wenn Sie die Typen **imagemoniker** und **imageattribute** verwenden.  
 
@@ -268,13 +268,13 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 
   - Erforderlich, wenn Sie den **IVsImageService2** -Typ verwenden.  
 
-- **Imagethemingutilities. h**  
+- **ImageThemingUtilities.h**  
 
   - Erforderlich, wenn Sie den Image-Dienst nicht für Sie behandeln können.  
 
   - Verwenden Sie diesen Header nicht, wenn der bilddienst Ihre Bildbearbeitung verarbeiten kann.  
 
-- **Vsuidpihelper. h**  
+- **VSUIDPIHelper.h**  
 
   - Erforderlich, wenn Sie die dpi-Hilfsprogramme zum erhalten des aktuellen dpi verwenden.  
 
@@ -650,11 +650,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Aktualisieren Sie Ihren Code, um den Image-Dienst zum Anfordern von Monikern über die aktualisierte Zuordnung zu verwenden. (Dies kann bedeuten, dass Sie für verwalteten Code auf " **crispimages** " aktualisieren, HBITMAPs oder hicons aus dem Image-Dienst anfordern und Sie für nativen Code übergeben.)  
 
 ## <a name="testing-your-images"></a>Testen von Images  
- Mit dem Bildbibliothek-Viewer-Tool können Sie die bildmanifeste testen, um sicherzustellen, dass alles ordnungsgemäß erstellt wurde. Sie finden das Tool im [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx). Dokumentation für dieses Tool und weitere Informationen finden Sie [hier](https://aka.ms/VSImageThemeTools).  
+ Mit dem Bildbibliothek-Viewer-Tool können Sie die bildmanifeste testen, um sicherzustellen, dass alles ordnungsgemäß erstellt wurde. Sie finden das Tool im [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx). Dokumentation für dieses Tool und weitere Informationen finden Sie [hier](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).  
 
 ## <a name="additional-resources"></a>Weitere Ressourcen  
 
-### <a name="samples"></a>Beispiele  
+### <a name="samples"></a>-Beispiele  
  Einige der Visual Studio-Beispiele auf GitHub wurden aktualisiert, um zu veranschaulichen, wie Sie den Image Service als Teil verschiedener Visual Studio-Erweiterbarkeits Punkte verwenden können.  
 
  Überprüfen Sie [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) auf die neuesten Beispiele.  
@@ -670,7 +670,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Das Manifest to Code Tool nimmt eine bildmanifest-Datei an und generiert eine Wrapper Datei zum Verweisen auf die Manifestressourcen in Code (C++, C#, oder VB) oder vsct-Dateien.  
 
- **Imagelibraryviewer**  
+ **ImageLibraryViewer**  
 
  Das Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und es dem Benutzer ermöglichen, diese auf die gleiche Weise zu manipulieren wie Visual Studio, um sicherzustellen, dass das Manifest ordnungsgemäß erstellt wurde. Der Benutzer kann Hintergrund, Größe, dpi-Einstellung, hoher Kontrast und andere Einstellungen ändern. Außerdem werden ladeinformationen angezeigt, um Fehler in den Manifesten zu finden, und die Quell Informationen für jedes Bild im Manifest werden angezeigt.  
 
@@ -948,8 +948,8 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |Glyphgroupjsharpinterface|GlyphItemShortcut|Interfakeshortcut|  
     |GlyphGroupError||StatusError|  
     |Glyphbscfile||Classfile|  
-    |Glyphassembly||Verweis|  
-    |GlyphLibrary||Bibliothek|  
+    |Glyphassembly||Referenz|  
+    |GlyphLibrary||-Bibliothek|  
     |Glyphvbproject||VBProjectNode|  
     |GlyphCoolProject||Csprojectnode|  
     |GlyphCppProject||Cppprojectnode|  
@@ -958,14 +958,14 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |Glyphclosedfolder||Folderclosed|  
     |Glypharrow||GoToNext|  
     |Glyphcsharpfile||CSFile Ode|  
-    |Glyphcsharp-Erweiterung||Ausschnitt|  
+    |Glyphcsharp-Erweiterung||Codeausschnitt|  
     |Glyphkeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |Glyphreference||Classmethodreferenzierung|  
     |Glyphrecursion||Rekursion|  
-    |GlyphXmlItem||Tag|  
+    |GlyphXmlItem||Taggen|  
     |GlyphJSharpProject||DocumentCollection|  
-    |Glyphjsharpdocument||Dokument|  
+    |Glyphjsharpdocument||Dokumentieren|  
     |Glyphforwardtype||GoToNext|  
     |Glyphcallersgraph||Callto|  
     |GlyphCallGraph||Callfrom|  

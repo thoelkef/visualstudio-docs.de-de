@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291271"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850348"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen isolierten Shellanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 2. Entfernen Sie die Auskommentierung der folgenden Zeile:  
   
-     [$RootKey $ \packages\\{87569308-4813-40A0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Erstellen Sie die Projekt Mappe neu, und starten Sie das Debugging der isolierten Shell Öffnen Sie eine XML-Datei, z. b. \meinvsshellstub\meinvsshellstub\meinvsshellstus\meinvsshellstubui.vsct. Vergewissern Sie sich, dass die XML-Schlüsselwörter in der Datei nicht farbig sind und dass bei der Eingabe von "<" in einer Zeile keine XML-Quick Infos angezeigt werden.  
   
@@ -163,7 +163,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
 6. Erstellen Sie die Projekt Mappe neu, und starten Sie das Debugging der isolierten Shell Das Feld "Hilfe/Info" sollte ungefähr quadratisch sein.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Vor dem Bereitstellen der isolierten Shellanwendung  
- Ihre isolierte Shell-Anwendung kann auf jedem Computer installiert werden, auf dem das verteilbare Paket von Visual Studio Shell (isoliert) installiert ist. Weitere Informationen zum verteilbaren Paket finden Sie auf der Website [Visual Studio-Erweiterbarkeits Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Ihre isolierte Shell-Anwendung kann auf jedem Computer installiert werden, auf dem das verteilbare Paket von Visual Studio Shell (isoliert) installiert ist. Weitere Informationen zum verteilbaren Paket finden Sie auf der Website [Visual Studio-Erweiterbarkeits Downloads](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="deploying-the-isolated-shell-application"></a>Bereitstellen der isolierten Shellanwendung  
  Sie stellen die isolierte Shellanwendung auf einem Bereitstellungs Zielcomputer bereit, indem Sie ein Setup-Projekt erstellen. Sie müssen Folgendes angeben:  

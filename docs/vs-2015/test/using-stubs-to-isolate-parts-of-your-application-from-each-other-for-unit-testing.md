@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b77a088fc144df8c7305098e48c45f672733a7c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301388"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851186"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Shims, um Teile Ihrer Anwendung für Komponententests voneinander zu isolieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -471,8 +471,8 @@ StubBehaviors.Current =
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
-### <a name="guidance"></a>Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Anleitung
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Siehe auch
  [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298939"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850425"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Sie können Ihrer DSL Handler für Drag &amp; Drop-Ereignisse hinzufügen, sodas
 
  In diesem Thema werden Drag &amp; Drop-Gesten behandelt, deren Ursprung in anderen Diagrammen liegt. Für Verschiebe- und Kopierereignisse innerhalb eines Diagramms könnten Sie alternativ eine Unterklasse von `ElementOperations` definieren. Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md). Eine Anpassung der DSL-Definition kann auch möglich sein.
 
-## <a name="in-this-topic"></a>In diesem Thema
+## <a name="in-this-topic"></a>Gegenstand dieses Themas
 
 - In den ersten beiden Abschnitten werden zwei alternative Methoden beschrieben, einen Gestenhandler zu definieren:
 
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Richten Sie die Quell-DSL für den Zugriff durch [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Modellbus ein:
 
-    1. Laden Sie die Visual Studio-Modellbuserweiterung herunter, und installieren Sie sie, sofern noch nicht geschehen. Weitere Informationen finden Sie unter [Visualisierungs-und Modellierungs-SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Laden Sie die Visual Studio-Modellbuserweiterung herunter, und installieren Sie sie, sofern noch nicht geschehen. Weitere Informationen finden Sie unter [Visualisierungs- und Modellierungs-SDK](https://www.visualstudio.com/).
 
-    2. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche und dann auf **ModelBus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
+    2. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Mit der rechten Maustaste in der Entwurfsoberfläche, und klicken Sie dann auf **Modelbus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
 
     3. Klicken Sie auf **alle Vorlagen transformieren** , und erstellen Sie die Lösung neu.
 

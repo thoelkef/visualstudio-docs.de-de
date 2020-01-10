@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299800"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844331"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ ms.locfileid: "74299800"
   
 - Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
   
-- Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](https://github.com/intel/haxm).  
   
 - Zum Erstellen von Code für iOS sind eine Apple-ID, ein iOS-Entwicklerprogrammkonto und ein Mac erforderlich, auf dem [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) oder höher unter OS X Mavericks oder höher ausgeführt werden kann. Einfache Installationsschritte finden Sie unter [Install tools for iOS](#InstallForiOS).  
   
 ## <a name="GetTheTools"></a> Beschaffung der Tools  
- Visual C++ für die plattformübergreifende mobile Entwicklung ist eine installierbare Komponente, die in Visual Studio Community, Professional und Enterprise enthalten ist. Wechseln Sie zur Seite [Visual Studio 2015 Downloads](https://go.microsoft.com/fwlink/p/?linkid=517106), und laden Sie Visual Studio 2015 mit Update 2 oder höher herunter.  
+ Visual C++ für die plattformübergreifende mobile Entwicklung ist eine installierbare Komponente, die in Visual Studio Community, Professional und Enterprise enthalten ist. Wechseln Sie zur Seite [Visual Studio 2015 Downloads](https://visualstudio.microsoft.com/downloads/), und laden Sie Visual Studio 2015 mit Update 2 oder höher herunter.  
   
 ## <a name="InstallTheTools"></a> Installieren der Tools  
  Das Installationsprogramm für Visual Studio 2015 umfasst eine Option zum Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung. Damit werden die erforderlichen C++-Sprachtools, Vorlagen und Komponenten für Visual Studio, die erforderlichen GCC- und Clang-Toolsets für Android-Builds und -Debugging sowie Komponenten für die Kommunikation mit einem Mac für iOS-Entwicklung installiert. Außerdem werden die Drittanbietertools und -Softwareentwicklungskits installiert, die zur Unterstützung der IOS- und Android-App-Entwicklung erforderlich sind. Bei den meisten dieser Drittanbietertools handelt es sich um Open Source-Software für die Android-Plattformunterstützung.  
@@ -68,7 +68,7 @@ ms.locfileid: "74299800"
   
      Um universelle Windows-Apps zu erstellen und Code für diese Apps, Ihr Android-Gerät und Ihre iOS-Projekte freizugeben, erweitern Sie unter **Features auswählen** die Option **Windows- und Webentwicklung** und aktivieren Sie das Kontrollkästchen für **Universal Windows App-Entwicklungstools**. Wenn Sie nicht vorhaben, universelle Windows-Apps zu erstellen, können Sie diese Option überspringen.  
   
-     Klicken Sie auf **Weiter**, um fortzufahren.  
+     Klicken Sie auf **Weiter** , um fortzufahren.  
   
 3. Die Komponenten von Drittanbietern verfügen über eigene Lizenzbedingungen. Zum Anzeigen der Lizenzbedingungen klicken Sie auf den Link **Lizenzbedingungen** links neben der jeweiligen Komponente. Wählen Sie die Option **Installieren**, um die Komponenten hinzuzufügen und Visual Studio und Visual C++ für die plattformübergreifende mobile Entwicklung zu installieren.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "74299800"
     > [!NOTE]
     > Wenn Ihr Computer oder die Version Ihres Windows-Betriebssystems Hyper-V nicht unterstützt, können Sie die Komponente „Microsoft Visual Studio-Emulator für Android“ verwenden. Die Home Edition der Windows-Betriebssysteme unterstützt Hyper-V nicht.  
   
-5. Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**> **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
+5. Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**&gt; **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
   
 ## <a name="InstallForiOS"></a> Install tools for iOS  
  Sie können Visual C++ für die plattformübergreifende mobile Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Mac erstellt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent auf Ihrem Mac einrichten und konfigurieren. Detaillierte Informationen zur Installation, Voraussetzungen und Konfigurationsoptionen finden Sie unter [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Wenn Sie keinen Code für iOS erstellen, können Sie diesen Schritt überspringen.  
@@ -123,7 +123,7 @@ ms.locfileid: "74299800"
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>So legen Sie die Pfade für Drittanbietertools fest  
   
-1. Wählen Sie in der Menüleiste von Visual Studio **Extras**> **Optionen**aus.  
+1. Wählen Sie in der Menüleiste von Visual Studio **Extras**&gt; **Optionen**aus.  
   
 2. Erweitern Sie im Dialogfeld **Optionen** die Option **Plattformübergreifend**&gt; **C++** und wählen Sie **Android**aus.  
   

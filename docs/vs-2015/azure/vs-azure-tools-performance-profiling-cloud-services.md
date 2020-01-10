@@ -11,19 +11,19 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 35593f4164ed024db19b5fa3503b2d7589a7ac2b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289760"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851894"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testen der Leistung eines Clouddiensts
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Übersicht über
 Sie können die Leistung eines Clouddiensts mit folgenden Methoden testen:
 
-* Verwenden Sie die Azure-Diagnose, um Informationen zu Anforderungen und Verbindungen zu erfassen und Websitestatistiken zu überprüfen, welche die Leistung des Diensts aus Kundenperspektive darstellen. Informationen zum Einstieg finden Sie unter [Konfigurieren der Diagnose für Azure Cloud Services und Virtual Machines](https://go.microsoft.com/fwlink/p/?LinkId=623009)
-* Verwenden Sie den Visual Studio-Profiler, um eine detaillierte Analyse der Computingaspekte der Dienstausführung zu erhalten. Wie in diesem Thema beschrieben, können Sie mit dem Profiler die Leistung messen, während ein Dienst in Azure ausgeführt wird. Informationen dazu, wie Sie den Profiler verwenden, um die Leistung eines lokal in einem Compute-Emulator ausgeführten Diensts zu messen, finden Sie unter [Testen der Leistung eines lokalen Azure-Clouddiensts im Compute-Emulator mithilfe des Visual Studio-Profilers](https://go.microsoft.com/fwlink/p/?LinkId=262845).
+* Verwenden Sie die Azure-Diagnose, um Informationen zu Anforderungen und Verbindungen zu erfassen und Websitestatistiken zu überprüfen, welche die Leistung des Diensts aus Kundenperspektive darstellen. Informationen zum Einstieg finden Sie unter [Konfigurieren der Diagnose für Azure Cloud Services und Virtual Machines](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019)
+* Verwenden Sie den Visual Studio-Profiler, um eine detaillierte Analyse der Computingaspekte der Dienstausführung zu erhalten. Wie in diesem Thema beschrieben, können Sie mit dem Profiler die Leistung messen, während ein Dienst in Azure ausgeführt wird. Informationen dazu, wie Sie den Profiler verwenden, um die Leistung eines lokal in einem Compute-Emulator ausgeführten Diensts zu messen, finden Sie unter [Testen der Leistung eines lokalen Azure-Clouddiensts im Compute-Emulator mithilfe des Visual Studio-Profilers](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/).
 
 ## <a name="choosing-a-performance-testing-method"></a>Auswählen einer Leistungstestmethode
 ### <a name="use-azure-diagnostics-to-collect"></a>Verwenden Sie die Azure-Diagnose, um folgende Daten zu erfassen:
@@ -76,21 +76,21 @@ Basierend auf den Leistungsproblemen, die Sie untersuchen möchten, können Sie 
 ## <a name="configuring-profiling-settings"></a>Konfigurieren von Profilerstellungseinstellungen
 Die folgende Abbildung veranschaulicht, wie Profilerstellungseinstellungen im Dialogfeld Azure-Anwendung veröffentlichen konfiguriert werden.
 
-![Konfigurieren von Profilerstellungseinstellungen](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
+![Profilerstellungseinstellungen konfigurieren](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> Um das Kontrollkästchen **Profilerstellung aktivieren** zu aktivieren, muss der Profiler auf dem lokalen Computer installiert sein, mit dem Sie den Cloud-Dienst veröffentlichen. Der Profiler wird standardmäßig installiert, wenn Sie Visual Studio Ultimate oder Visual Studio Premium installieren.
+> Um das Kontrollkästchen **Profilerstellung aktivieren** zu aktivieren, muss der Profiler auf dem lokalen Computer installiert sein, mit dem Sie den Clouddienst veröffentlichen. Der Profiler wird standardmäßig installiert, wenn Sie Visual Studio Ultimate oder Visual Studio Premium installieren.
 > 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>So konfigurieren Sie Profilerstellungseinstellungen
-1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und wählen Sie anschließend **Veröffentlichen**aus. Detaillierte Informationen zum Veröffentlichen eines Clouddiensts finden Sie unter [Veröffentlichen eines Clouddiensts mit den Azure-Tools](https://go.microsoft.com/fwlink/p?LinkId=623012).
-2. Wählen Sie im Dialogfeld **Veröffentlichen der Azure-Anwendung** die Registerkarte **Erweiterte Einstellungen**.
-3. Um die Profilerstellung zu aktivieren, aktivieren Sie das Kontrollkästchen **Profilerstellung aktivieren**.
-4. Um Ihre Profilerstellungseinstellungen zu konfigurieren, klicken Sie auf den Hyperlink **Einstellungen**. Das Dialogfeld Profilerstellungseinstellungen wird angezeigt.
+1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und wählen Sie anschließend **Veröffentlichen**aus. Detaillierte Informationen zum Veröffentlichen eines Clouddiensts finden Sie unter [Veröffentlichen eines Clouddiensts mit den Azure-Tools](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
+2. Wählen Sie im Dialogfeld **Azure-Anwendung veröffentlichen** die Registerkarte **Erweiterte Einstellungen** aus.
+3. Aktivieren Sie zum Aktivieren der Profilerstellung das Kontrollkästchen **Profilerstellung aktivieren** .
+4. Zum Konfigurieren der Profilerstellungseinstellungen wählen Sie den Hyperlink **Einstellungen** aus. Das Dialogfeld Profilerstellungseinstellungen wird angezeigt.
 5. Wählen Sie aus den Optionsschaltflächen unter **Welche Profilerstellungsmethode möchten Sie verwenden?** die gewünschte Profilerstellungsmethode aus.
-6. Aktivieren Sie zum Erfassen der Profilerstellungsdaten für Ebeneninteraktion das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren**.
-7. Um die Einstellungen zu speichern, wählen Sie **OK**.
+6. Um die Profilerstellungsdaten für die Ebeneninteraktion zu erfassen, aktivieren Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** .
+7. Wählen Sie die Schaltfläche **OK** , um die Einstellungen zu speichern.
    
     Wenn Sie diese Anwendung veröffentlichen, werden diese Einstellungen verwendet, um die Profilerstellungssitzung für jede Rolle zu erstellen.
 
@@ -102,7 +102,7 @@ Für jede Instanz einer Rolle in Ihrem Clouddienst wird eine Profilerstellungssi
 ### <a name="to-view-profiling-reports"></a>So zeigen Sie Profilerstellungsberichte an
 1. Wählen Sie zum Anzeigen des Fensters Server-Explorer in Visual Studio in der Menüleiste Ansicht, Server-Explorer.
 2. Wählen Sie den Knoten Azure Compute und dann den Azure-Bereitstellungsknoten für den Cloud-Dienst aus, den Sie zur Profilerstellung bei der Veröffentlichung aus Visual Studio ausgewählt haben.
-3. Wählen Sie die Rolle im Dienst aus, öffnen Sie dann das Kontextmenü für eine bestimmte Instanz, und wählen Sie **Profilerstellungsbericht anzeigen** aus, um Profilerstellungsberichte für eine Instanz anzuzeigen.
+3. Wählen Sie die Rolle im Dienst aus, öffnen Sie dann das Kontextmenü für eine bestimmte Instanz, und wählen Sie **Profilerstellungsbericht anzeigen**aus, um Profilerstellungsberichte für eine Instanz anzuzeigen.
    
     Der Bericht (eine VSP-Datei) wird nun aus Azure heruntergeladen, und der Status des Downloads wird im Azure-Aktivitätsprotokoll angezeigt. Wenn der Download abgeschlossen ist, wird der Profilerstellungsbericht auf einer Registerkarte im Editor für Visual Studio unter der Bezeichnung „\> *<Instanznummer\>* <Bezeichner\>.vsp“ angezeigt. Es werden Übersichtsdaten für den Bericht angezeigt.
 4. Zum Anzeigen verschiedener Ansichten des Berichts wählen Sie in der Liste Aktuelle Ansicht den gewünschten Ansichtstyp aus. Weitere Informationen finden Sie unter [Berichtsansichten für Profilerstellungstools](https://msdn.microsoft.com/library/azure/bb385755.aspx).

@@ -13,17 +13,17 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9c6cc7a101a854611228b1a3bc38f63fffff45c1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301441"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846172"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor auswählen" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelsatz auswählen** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)]verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
- Mit dem Dialogfeld **Regelsatz auswählen** wird ein Regelsatz ausgewählt, den Sie mit einer [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) -Aktivität verwenden können. Informationen zum Zugreifen auf das Dialogfeld **Regelsatz auswählen finden Sie** unter Vorgehens [Weise: Erstellen eines PolicyActivity-Regelsatzes (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ Mit dem Dialogfeld **Regelsatz auswählen** wird ein Regelsatz ausgewählt, den Sie mit einer [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) -Aktivität verwenden können. Informationen zum Zugreifen auf das Dialogfeld **Regelsatz auswählen finden Sie** unter Vorgehens [Weise: Erstellen eines PolicyActivity-Regelsatzes (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
  In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Regelsatz auswählen** beschrieben.
 
@@ -34,14 +34,14 @@ In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelsatz auswählen*
 |**Umbenennen...**|Klicken Sie hierauf, um ein Dialogfeld zu öffnen, das zum Umbenennen des ausgewählten Regelsatzes verwendet wird.|
 |**Löschen**|Klicken Sie hierauf, um den ausgewählten Regelsatz zu löschen.|
 |**Regelsatz-Vorschau**|Zeigt die im ausgewählten Regelsatz enthaltenen Regeln an.|
-|**Okay**|Klicken Sie hierauf, um den ausgewählten Regelsatz der **PolicyActivity** -Aktivität zuzuweisen.|
+|**OK**|Klicken Sie hierauf, um den ausgewählten Regelsatz der **PolicyActivity** -Aktivität zuzuweisen.|
 
  Weitere Informationen zum Erstellen und Bearbeiten von Regelsätzen finden Sie unter [Dialog Feld "Regelsatz-Editor" (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
 > Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../includes/wfd2-md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.
 
- Weitere Informationen zu Bedingungen finden Sie unter [Verwenden von Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
+ Weitere Informationen zu Bedingungen finden Sie unter [Verwenden von Bedingungen in Workflows](https://msdn2.microsoft.com/library/bb628447.aspx).
 
 ## <a name="see-also"></a>Siehe auch
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) - [Regelsatz-Editor (Dialog Feld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Verwenden der PolicyActivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65004) unter Verwendung von [Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) - [Regelsatz-Editor (Dialog Feld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Verwenden der PolicyActivity-Aktivität](https://msdn2.microsoft.com/library/bb675229.aspx) unter Verwendung von [Bedingungen in Workflows](https://msdn2.microsoft.com/library/bb628447.aspx)

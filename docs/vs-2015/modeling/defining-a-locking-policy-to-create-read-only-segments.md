@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295820"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849569"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Die unveränderlichkeits-API des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Vi
 > [!NOTE]
 > Eine Sperr Richtlinie kann mithilfe von Reflektion umgangen werden. Er bietet eine klare Grenze für Entwickler von Drittanbietern, bietet aber keine hohe Sicherheit.
 
- Weitere Informationen und Beispiele finden Sie auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualisierungs-und Modellierungs-SDK](https://go.microsoft.com/fwlink/?LinkId=186128) -Website.
+ Weitere Informationen und Beispiele finden Sie auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualisierungs-und Modellierungs-SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) -Website.
 
 ## <a name="setting-and-getting-locks"></a>Festlegen und erhalten von Sperren
  Sie können Sperren für den Speicher, für eine Partition oder für ein einzelnes Element festlegen. Mit dieser Anweisung wird beispielsweise verhindert, dass ein Modellelement gelöscht wird, und es wird außerdem verhindert, dass die Eigenschaften geändert werden:
@@ -77,13 +77,13 @@ partition.SetLocks(Locks.Delete);
 
   Eine Sperre für eine Partition oder einen Speicher kann nicht festgelegt werden, und gleichzeitig wird die Sperre für ein einzelnes Element deaktiviert.
 
-|Wert|Bedeutung, wenn `IsLocked(Value)` true ist|
+|{2&gt;Wert&lt;2}|Bedeutung, wenn `IsLocked(Value)` true ist|
 |-----------|------------------------------------------|
 |Keine|Keine Einschränkung.|
-|Eigenschaft|Domänen Eigenschaften von Elementen können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänen Klasse in einer Beziehung generiert werden.|
+|Die Eigenschaften-|Domänen Eigenschaften von Elementen können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänen Klasse in einer Beziehung generiert werden.|
 |Hinzufügen|Neue Elemente und Verknüpfungen können nicht in einer Partition oder einem Speicher erstellt werden.<br /><br /> Gilt nicht für `ModelElement`.|
 |Verschieben|Das Element kann nicht zwischen Partitionen verschoben werden, wenn `element.IsLocked(Move)` true ist, oder, wenn `targetPartition.IsLocked(Move)` true ist.|
-|Löschen|Ein Element kann nicht gelöscht werden, wenn diese Sperre für das Element selbst oder für eines der Elemente festgelegt wird, an die der Löschvorgang weitergegeben werden soll, z. b. eingebettete Elemente und Formen.<br /><br /> Mit `element.CanDelete()` können Sie feststellen, ob ein Element gelöscht werden kann.|
+|Konto|Ein Element kann nicht gelöscht werden, wenn diese Sperre für das Element selbst oder für eines der Elemente festgelegt wird, an die der Löschvorgang weitergegeben werden soll, z. b. eingebettete Elemente und Formen.<br /><br /> Mit `element.CanDelete()` können Sie feststellen, ob ein Element gelöscht werden kann.|
 |Neu anordnen|Die Reihenfolge der Links auf einem das RolePlayer kann nicht geändert werden.|
 |RolePlayer|Der Satz von Links, die von diesem Element stammen, kann nicht geändert werden. Beispielsweise können neue Elemente unter diesem Element nicht eingebettet werden. Dies wirkt sich nicht auf Verknüpfungen aus, für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element ein Link ist, sind die Quelle und das Ziel nicht betroffen.|
 |Alle|Bitweises OR der anderen-Werte.|

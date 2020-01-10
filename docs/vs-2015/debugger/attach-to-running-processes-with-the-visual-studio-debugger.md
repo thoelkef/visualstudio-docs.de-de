@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b30e171756527352976dcb03abb0d1c32370c442
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299517"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849893"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,13 +105,13 @@ Mit dieser Funktion können Sie apps Debuggen, die auf einem lokalen oder Remote
 
 6. Klicken Sie auf **Anfügen**.
 
-## <a name="additional-info"></a>Zusätzliche Informationen
+## <a name="additional-info"></a>Zusätzliche Infos
 
 Sie können beim Debuggen mit mehreren Programmen verbunden sein, es ist jedoch jeweils nur ein Programm im Debugger aktiv. Sie können das aktive Programm auf der Symbolleiste **Debugspeicherort** oder im Fenster **Prozesse** festlegen. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen des aktuellen Programms](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Wird versucht, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann riskant sein. Wenn Sie die folgende Informationen verdächtig wirken oder Sie nicht sicher sind, nicht für diesen Prozess anfügen](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
-In einigen Fällen werden beim Debuggen in einer Remotedesktopsitzung (Terminaldienste) in der Liste **Verfügbare Prozesse** nicht alle verfügbaren Prozesse angezeigt. Wenn Sie Visual Studio als Benutzer ausführen, der nur über ein eingeschränktes Benutzerkonto verfügt, enthält die Liste **Verfügbare Prozesse** keine Prozesse, die in Sitzung 0 laufen. Sie wird für Dienste und andere Serverprozesse verwendet, wie z.B. „w3wp.exe“. Sie können dieses Problem beheben, indem Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unter einem Administratorkonto oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] an der Serverkonsole und nicht in einer Terminaldienstesitzung ausführen. Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit den Prozess anfügen, indem Sie `vsjitdebugger.exe -p` *ProzessID* in der Windows-Befehlszeile ausführen. Die Prozess-ID kann mit tlist.exe ermittelt werden. Um die Datei "tlist.exe" abzurufen, laden Sie die Debugtools für Windows von der Seite  [WDK- und WinDbg-Downloads](https://go.microsoft.com/fwlink/?LinkId=168279)herunter, und installieren Sie diese.
+In einigen Fällen werden beim Debuggen in einer Remotedesktopsitzung (Terminaldienste) in der Liste **Verfügbare Prozesse** nicht alle verfügbaren Prozesse angezeigt. Wenn Sie Visual Studio als Benutzer ausführen, der nur über ein eingeschränktes Benutzerkonto verfügt, enthält die Liste **Verfügbare Prozesse** keine Prozesse, die in Sitzung 0 laufen. Sie wird für Dienste und andere Serverprozesse verwendet, wie z.B. „w3wp.exe“. Sie können dieses Problem beheben, indem Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unter einem Administratorkonto oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] an der Serverkonsole und nicht in einer Terminaldienstesitzung ausführen. Wenn keine dieser Problem Umgehungen möglich ist, besteht die dritte Möglichkeit darin, den Prozess anzufügen, indem `vsjitdebugger.exe -p` *ProcessID* von der Windows-Befehlszeile aus ausgeführt wird. Die Prozess-ID kann mit tlist.exe ermittelt werden. Um die Datei "tlist.exe" abzurufen, laden Sie die Debugtools für Windows von der Seite  [WDK- und WinDbg-Downloads](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)herunter, und installieren Sie diese.
 
 ## <a name="BKMK_Scenarios"></a>Gängige Debugszenarien
 
@@ -127,11 +127,11 @@ Bei einigen App-Typen (wie Windows Store-Apps) fügen Sie nicht direkt an einen 
 |Debuggen einer verwalteten oder nativen App auf dem lokalen Computer|Verwenden von Anhängen an den Prozess oder [Standard-Debuggen](../debugger/getting-started-with-the-debugger.md)|*appname*. exe|Um schnell auf das Dialogfeld zuzugreifen, verwenden Sie **STRG + ALT + P** , und geben Sie dann den ersten Buchstaben des Prozess namens ein.|
 |Debuggen von ASP.net-apps auf dem lokalen Computer nach dem Starten der APP ohne den Debugger|"An den Prozess anhängen" verwenden|iiexpress.exe|Dies kann hilfreich sein, damit die APP schneller geladen wird, z. b. bei der Profilerstellung (z. b.). |
 |Remote Debuggen ASP.NET 4 oder 4,5 auf einem IIS-Server|Remote Tools verwenden und an den Prozess anhängen|w3wp.exe|Weitere Informationen finden Sie [unter Remote Debugging ASP.net auf einem Remote Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remote Debuggen ASP.net Core auf einem IIS-Server|Remote Tools verwenden und an den Prozess anhängen|DNX. exe|Informationen zur Bereitstellung von apps finden [Sie unter Veröffentlichen in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Informationen zum Debuggen finden Sie [unter Remote Debugging ASP.net auf einem IIS-Remote Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) .|
+|Remote Debuggen ASP.net Core auf einem IIS-Server|Remote Tools verwenden und an den Prozess anhängen|dnx.exe|Informationen zur Bereitstellung von apps finden [Sie unter Veröffentlichen in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Informationen zum Debuggen finden Sie [unter Remote Debugging ASP.net auf einem IIS-Remote Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) .|
 |Andere unterstützte App-Typen auf einem Server Prozess Debuggen|Remote Tools verwenden (wenn der Server Remote ist) und an den Prozess anhängen|"iexplore. exe" oder andere Prozesse|Verwenden Sie ggf. den Task-Manager, um den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote Debugging](../debugger/remote-debugging.md) und spätere Abschnitte in diesem Thema.|
-|Remote Debuggen einer Windows-Desktop-App|Remotetools und F5|N/V| Siehe [Remote Debuggen](../debugger/remote-debugging.md)|
-|Remote Debuggen einer universellen Windows-app (UWP), onecore, hololens oder IOT-App|Installiertes App-Paket debuggen|N/V|**Debug/andere debugziele verwenden/installiertes App-Paket Debuggen** **, anstatt an den Prozess anhängen**|
-|Debuggen Sie eine Windows Universal (UWP)-, onecore-, hololens-oder IOT-APP, die Sie nicht von Visual Studio aus gestartet haben.|Installiertes App-Paket debuggen|N/V|**Debug/andere debugziele verwenden/installiertes App-Paket Debuggen** **, anstatt an den Prozess anhängen**|
+|Remote Debuggen einer Windows-Desktop-App|Remotetools und F5|Nicht zutreffend| Siehe [Remote Debuggen](../debugger/remote-debugging.md)|
+|Remote Debuggen einer universellen Windows-app (UWP), onecore, hololens oder IOT-App|Installiertes App-Paket debuggen|Nicht zutreffend|**Debug/andere debugziele verwenden/installiertes App-Paket Debuggen** **, anstatt an den Prozess anhängen**|
+|Debuggen Sie eine Windows Universal (UWP)-, onecore-, hololens-oder IOT-APP, die Sie nicht von Visual Studio aus gestartet haben.|Installiertes App-Paket debuggen|Nicht zutreffend|**Debug/andere debugziele verwenden/installiertes App-Paket Debuggen** **, anstatt an den Prozess anhängen**|
 
 > [!WARNING]
 > Zum Anhängen an eine in JavaScript geschriebene universelle Windows-App müssen Sie zuerst das Debuggen für die App aktivieren. Weitere Informationen hierzu finden Sie unter [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) im Windows Developer Center.

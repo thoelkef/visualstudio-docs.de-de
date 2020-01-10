@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297491"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849336"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Vorgehensweise: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)
 In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] deklariert wird, die auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.
@@ -27,17 +27,17 @@ In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgänge
 
  Deklarative Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten verwendet:
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>So erstellen Sie eine deklarative Regelbedingung mit dem Regelbedingungs-Editor
 
@@ -64,4 +64,4 @@ In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgänge
      Weitere Informationen zur Verwendung des Dialog Felds **Bedingung auswählen** finden [Sie unter Dialogfeld "Bedingung auswählen" (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [mithilfe von ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) mithilfe der [ifelmenbranchactivity-Aktivität](https://go.microsoft.com/fwlink?LinkID=65075) [mithilfe der Replicator-Aktivität](https://go.microsoft.com/fwlink?LinkID=65080) mithilfe des Dialog Felds "while- [Aktivitäts](https://go.microsoft.com/fwlink?LinkID=65091) Regel Bedingungs-Editor" ( [Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) Dialogfeld " [Bedingung auswählen" (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) unter [Verwendung von Bedingungen in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [mithilfe von ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) mithilfe der [ifelmenbranchactivity-Aktivität](https://msdn2.microsoft.com/library/bb628465.aspx) [mithilfe der Replicator-Aktivität](https://msdn2.microsoft.com/library/bb628544.aspx) mithilfe des Dialog Felds "while- [Aktivitäts](https://msdn2.microsoft.com/library/bb628552.aspx) Regel Bedingungs-Editor" ( [Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) Dialogfeld " [Bedingung auswählen" (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) unter [Verwendung von Bedingungen in Workflows](https://msdn2.microsoft.com/library/bb628447.aspx)

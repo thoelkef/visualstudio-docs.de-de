@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296329"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847630"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Projektmappenübergreifendes Zuordnen von Abhängigkeiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
  **Hier finden Sie einige Videos**:
 
-- [Verstehen der Codeabhängigkeiten durch Visualisierung](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [Verstehen der Codeabhängigkeiten durch Visualisierung](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [Visualisieren der Auswirkungen einer Änderung](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [Visualisieren der Auswirkungen einer Änderung](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [Nachvollziehen komplexen Codes mit Code Maps](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [Nachvollziehen komplexen Codes mit Code Maps](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a> Erste Schritte mit Code Maps
  **Zur Verwendung von Code Maps benötigen Sie abhängig von Ihrer Visual Studio-Version**:
@@ -105,7 +105,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 1. Öffnen Sie das Menü **Architektur** , und wählen Sie die Option **Neue Code Map**aus.
 
-     \- oder –
+     \- oder -
 
 2. Öffnen Sie das Menü **Datei** , und wählen Sie **Neu** und dann **Datei**aus.
 

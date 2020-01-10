@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 66988fa88ae347a2db08bf2f6d1b79ba3bcd80b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299902"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851322"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Lernprogramm 1: Erstellen eines Bildanzeigeprogramms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei 
 
   ![Bild, das Sie in diesem Tutorial erstellen](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Bild, das Sie in diesem Tutorial erstellen
 
-  ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden [Sie unter How do i: Create a Picture Viewer in Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) oder [How do i: Create a Picture Viewer in C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
+  ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") Eine videoversion dieses Themas finden [Sie unter How do i: Create a Picture Viewer in Visual Basic?](https://msdn.microsoft.com/vstudio/gg315352) oder [How do i: Create a Picture Viewer in C#?](https://msdn.microsoft.com/vcsharp/gg278960.aspx).
 
 > [!NOTE]
 > Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise. In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
@@ -50,7 +50,7 @@ In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Title|Beschreibung|
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md)|Beginnen Sie, indem Sie ein Windows Forms-Anwendungsprojekt erstellen.|
 |[Schritt 2: Ausführen des Programms](../ide/step-2-run-your-program.md)|Führen Sie das Windows Forms-Anwendungsprogramm aus, das Sie im vorherigen Schritt erstellt haben.|

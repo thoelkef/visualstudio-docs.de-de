@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301620"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850615"
 ---
 # <a name="layer-diagrams-reference"></a>Ebenendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ In Visual Studio können Sie ein *ebenendiagramm* verwenden, um die logische Arc
 
 - Untermauern der vorgesehenen Architektur während der Entwicklung und Wartung des Codes durch Einschließen von Validierung in Eincheck- und Buildvorgänge
 
-  In diesem Thema werden die Elemente beschrieben, die Sie in Ebenendiagrammen verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von ebenendiagrammen finden Sie unter [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu ebenenmustern finden Sie auf der [Seite Patterns & Practices](https://go.microsoft.com/fwlink/?LinkId=145794).
+  In diesem Thema werden die Elemente beschrieben, die Sie in Ebenendiagrammen verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von ebenendiagrammen finden Sie unter [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu ebenenmustern finden Sie auf der [Seite Patterns & Practices](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 ## <a name="reading-layer-diagrams"></a>Lesen von Ebenendiagrammen
  ![Elemente in ebenendiagrammen](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
@@ -58,7 +58,7 @@ In Visual Studio können Sie ein *ebenendiagramm* verwenden, um die logische Arc
 |**Gebildet**|**Element**|**Beschreibung**|
 |---------------|-----------------|---------------------|
 |1|**Deck**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die mit einer Ebene verknüpften Artefakte anzuzeigen, öffnen Sie das Kontextmenü für die Ebene, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -   unzulässige **Namespace Abhängigkeiten** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht von den angegebenen Namespaces abhängen können.<br />-   unzulässige **Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht zu den angegebenen Namespaces gehören dürfen.<br />-   **erforderliche Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte zu einem der angegebenen Namespaces gehören müssen.|
-|2|**Gkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
+|2|**Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
 |3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
 |4|**Kommentar**|Verwenden Sie einen Kommentar, um dem Diagramm oder Elementen im Diagramm allgemeine Hinweise hinzuzufügen.|
 |5|**Kommentar Verknüpfung**|Verwenden Sie dieses Feature, um Kommentare mit Elementen im Diagramm zu verknüpfen.|
@@ -89,7 +89,7 @@ In Visual Studio können Sie ein *ebenendiagramm* verwenden, um die logische Arc
 
     |**Spalte im ebenenexplorer**|**Beschreibung**|
     |----------------------------------|---------------------|
-    |**Klassen**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|
+    |**Kategorien**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|
     |**Deck**|Die Ebene, die mit dem Artefakt verknüpft ist.|
     |**Unterstützt Validierung**|Wenn **true**, kann der ebenenvalidierungsprozess überprüfen, ob das Projekt Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn der Wert **false**ist, wird der Link nicht an dem ebenenvalidierungsprozess beteiligt.<br /><br /> Weitere Informationen finden Sie unter [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).|
     |**Bezeichner**|Der Verweis auf das verknüpfte Artefakt|

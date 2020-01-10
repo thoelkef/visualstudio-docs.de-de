@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295910"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852260"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben
 
  Unter Umständen sind bestimmte Versionen von Visual Studio oder bestimmte Visual Studio-Erweiterungen erforderlich, um bestimmte Anwendungstypen und Dienste mit HTML und JavaScript zu entwickeln. Die folgende Liste enthält Links für weitere Informationen.
 
-- Für das Erstellen von plattformübergreifenden Apps mit Apache Cordova [laden Sie die Visual Studio-Tools für Apache Cordova herunter](https://go.microsoft.com/fwlink/p/?LinkId=397606).
+- Für das Erstellen von plattformübergreifenden Apps mit Apache Cordova [laden Sie die Visual Studio-Tools für Apache Cordova herunter](https://taco.visualstudio.com/docs/install-vs-tools-apache-cordova/).
 
 - Um [Windows Store](https://developer.microsoft.com/)-, [Windows Phone](https://developer.microsoft.com/)- und universelle Apps (die beide Plattformen unterstützen) zu erstellen, [laden Sie die Tools herunter](https://developer.microsoft.com/windows/downloads).
 
@@ -41,11 +41,11 @@ JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben
 ## <a name="whats-new-in-javascript"></a>Neues bei JavaScript
  Die neuen Funktionen für JavaScript werden in der folgenden Tabelle aufgeführt
 
-|Funktion|Beschreibung|
+|Feature|Beschreibung|
 |-------------|-----------------|
 |Klassen|Neue Syntax unterstützt die Deklaration von [Klassen](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promises|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) ermöglichen eine leichtere und sauberere asynchrone Codierung. Promise-Konstruktoren werden unterstützt, zusammen mit den Hilfsmethoden `all` und `race`.|
-|Iteratoren|Jetzt können Sie iterierbare Objekte (einschließlich Arrays, arrayähnliche Objekte und Iteratoren) wiederholt durchlaufen und dabei einen benutzerdefinierten Iterationshaken mit Anweisungen aufrufen, die für den Wert jeder einzelnen Eigenschaft ausgeführt werden sollen. Weitere Informationen finden Sie unter [Iteratoren und Generatoren](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Hinweis:** Generatoren werden noch nicht unterstützt.|
+|Iterators|Jetzt können Sie iterierbare Objekte (einschließlich Arrays, arrayähnliche Objekte und Iteratoren) wiederholt durchlaufen und dabei einen benutzerdefinierten Iterationshaken mit Anweisungen aufrufen, die für den Wert jeder einzelnen Eigenschaft ausgeführt werden sollen. Weitere Informationen finden Sie unter [Iteratoren und Generatoren](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Hinweis:** Generatoren werden noch nicht unterstützt.|
 |Pfeilfunktionen|Die Pfeilfunktion (= >) bietet eine Kurzsyntax für das Schlüsselwort `function`, dass eine lexikalische `this`-Bindung darstellt.|
 |Neue Methoden für integrierte Objekte|Die integrierten Objekte [Array-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) und [String-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) umfassen viele neue Hilfsfunktionen und Eigenschaften zum Bearbeiten und Überprüfen von Daten.|
 |Verbesserungen des Objektliterals|Objekte unterstützen nun berechnete Eigenschaften, präzise Methodendefinitionen und eine Kurzsyntax für Eigenschaften, deren Wert für eine gleichnamige Variable initialisiert wird. Weitere Informationen finden Sie unter [Erstellen von Objekten](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300348"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844451"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Gewusst wie: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früheren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Version konvertiert werden. Wenn Sie mit den Tipps in den folgenden Abschnitten Ihr bestimmtes Problem nicht lösen können, finden Sie möglicherweise weitere Informationen im TechNet- [wiki: Entwicklungs Portal](https://go.microsoft.com/fwlink/?LinkId=254808).
+Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früheren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Version konvertiert werden. Wenn Sie mit den Tipps in den folgenden Abschnitten Ihr bestimmtes Problem nicht lösen können, finden Sie möglicherweise weitere Informationen im TechNet- [wiki: Entwicklungs Portal](https://social.technet.microsoft.com/wiki/contents/articles/706.wiki-development-portal.aspx#Visual_Studio).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Das Projekt wird nicht ausgeführt, da Dateien nicht gefunden werden können
  Eine Projektdatei enthält fest codierte Dateipfade, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Ausführung des Projekts verwendet werden, wenn Sie F5 drücken. Diese Pfade enthalten möglicherweise den Speicherort von devenv.exe und anderer erforderlicher Dateien. In einer aktualisierten Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden die Pfade dieser Dateien möglicherweise geändert.

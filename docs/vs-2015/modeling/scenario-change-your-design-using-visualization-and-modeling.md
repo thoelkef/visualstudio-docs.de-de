@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0954a38a2667331c537487a706d1d2d13a07f6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296019"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850912"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,7 +363,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 
 - [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
 
-- [Verwenden der Versionskontrolle](https://go.microsoft.com/fwlink/?LinkID=525605)
+- [Verwenden der Versionskontrolle](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Erstellen der Anwendung](/azure/devops/pipelines/index)
 
@@ -882,7 +882,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>Siehe auch
  [Visualisieren von Code](../modeling/visualize-code.md) [Erstellen von Modellen für Ihre APP verwenden von](../modeling/create-models-for-your-app.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Verwenden von Modellen in der Agile-Entwicklung](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) Überprüfen des [Systems während der Entwicklung](../modeling/validate-your-system-during-development.md) [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)

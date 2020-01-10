@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 53e3c5fe30acf3221d52b0f6bd0e85aa9bb01085
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537961"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851205"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Willkommen bei Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 >
 > Klicken Sie hier, um die Anmerkungen zu [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) zu lesen.
 
- Laden Sie [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) kostenlos herunter, um sofort mit dem Erstellen von Code zu beginnen. Wenn Sie eine plattformübergreifende Entwicklung vornehmen möchten, installieren Sie die optionalen Pakete. (In [anderen Editionen von Visual Studio](https://visualstudio.microsoft.com/vs/compare/)finden Sie mehr Features.)
+ Laden Sie [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) kostenlos herunter, um sofort mit dem Erstellen von Code zu beginnen. Wenn Sie eine plattformübergreifende Entwicklung vornehmen möchten, installieren Sie die optionalen Pakete. (In [anderen Editionen von Visual Studio](https://visualstudio.microsoft.com/vs/compare/) erhalten Sie mehr Funktionen.)
 
  Legen Sie gleich los, erstellen Sie ein neues Projekt, und beginnen Sie mit dem Schreiben von Code. Wählen Sie den Typ der zu erstellenden App aus. Sie können auch eine [Tour](./ide/visual-studio-ide.md) durch die Visual Studio-IDE unternehmen, um sich mit den Tools vertraut zu machen.
 
@@ -90,13 +90,13 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
  Sie können manuelle und automatisierte Tests für die App planen, erstellen und ausführen. Testpläne, Testauflistungen, Testfälle und die Ergebnisse werden in der Cloud mit Visual Studio Team Services oder lokal mit Team Foundation Server gespeichert. Erfahren Sie mehr über das [Testen der Anwendung](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Schnellere Bereitstellung von Code des Teams
- Beseitigen Sie Barrieren zwischen Mitgliedern Ihres Teams, und verbessern Sie die Zusammenarbeit. Gehen Sie noch weiter, und automatisieren Sie die Freigabe Ihrer App in den einzelnen Phasen der Entwicklung bis hin zur Produktion. Überwachen Sie die Leistung und Verfügbarkeit Ihrer App zur Laufzeit. Sammeln Sie Echtzeit-Nutzungsdaten dazu, wie Ihre Kunden die App tatsächlich verwenden. Weitere Informationen finden Sie unter [DevOps und Anwendungslebenszyklus-Verwaltung](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6).
+ Beseitigen Sie Barrieren zwischen Mitgliedern Ihres Teams, und verbessern Sie die Zusammenarbeit. Gehen Sie noch weiter, und automatisieren Sie die Freigabe Ihrer App in den einzelnen Phasen der Entwicklung bis hin zur Produktion. Überwachen Sie die Leistung und Verfügbarkeit Ihrer App zur Laufzeit. Sammeln Sie Echtzeit-Nutzungsdaten dazu, wie Ihre Kunden die App tatsächlich verwenden. Ausführliche Informationen finden Sie unter [DevOps und Anwendungslebenszyklus-Verwaltung](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) .
 
 ## <a name="whats-new"></a>Neuerungen?
 
 |||||
 |-|-|-|-|
-|[What’s new in Visual Studio 2015 (Neues in Visual Studio 2015)](./what-s-new-in-visual-studio-2015.md)|[What’s new for Visual C# (Neues bei Visual C#)](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Neues in .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[What’s new for ALM (Neues im ALM)](/azure/devops/server/whats-new)|
+|[What’s new in Visual Studio 2015 (Neues in Visual Studio 2015)](./what-s-new-in-visual-studio-2015.md)|[Neues bei Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Neues in .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[What’s new for ALM (Neues im ALM)](/azure/devops/server/whats-new)|
 |[Neues bei Visual C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Neues bei Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[What’s new for JavaScript (Neues bei JavaScript)](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

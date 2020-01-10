@@ -12,14 +12,14 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ab2651767e36abd8e85efff0dadea8071fc7db5b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302648"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851844"
 ---
-# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der codierten UI mithilfe des Test-Editors für codierte UI
+# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten von Eigenschaften der Testmethoden und UI-Aktionen. Darüber hinaus können Sie mit der UI-Steuerelementzuordnung die entsprechenden Steuerelemente anzeigen und bearbeiten.
@@ -65,7 +65,7 @@ Mit dem Editor für Tests der programmierten UI können Sie Tests der programmie
 > Beim Auswählen einer UI-Aktion, die in einer Methode im Bereich **UI-Aktionen** enthalten ist, wird das entsprechende Steuerelement hervorgehoben. Sie können auch die UI-Aktion oder die Steuerelementeigenschaften ändern.
 
  Der Editor für Tests der programmierten UI*wird nicht angezeigt* .
-Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die älter als 2012 ist. Der Editor für Tests der programmierten UI stand auch in Visual Studio 2010 Feature Pack 2 mit einem MSDN-Abonnement zur Verfügung. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119).
+Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die älter als 2012 ist. Der Editor für Tests der programmierten UI stand auch in Visual Studio 2010 Feature Pack 2 mit einem MSDN-Abonnement zur Verfügung. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://msdn.microsoft.com/library/gg269474.aspx).
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Eigenschaften der UI-Aktionen und ihre entsprechenden Steuerelementeigenschaften ändern
  Mit dem Editor für Tests der programmierten UI, können Sie leicht alle UI-Aktionen in den Testmethoden finden und anzeigen. Wenn Sie die UI-Aktion im Editor auswählen, wird das entsprechende Steuerelement automatisch hervorgehoben. Wenn Sie ein Steuerelement auswählen, werden entsprechend die zugeordneten UI-Aktionen hervorgehoben. Wenn Sie eine UI-Aktion oder ein -Steuerelement auswählen, können Sie dann einfach das Fenster „Eigenschaften“ verwenden, um die entsprechenden Eigenschaften zu  ändern.
@@ -202,16 +202,16 @@ Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die äl
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
-### <a name="guidance"></a>Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Anleitung
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="faq"></a>Häufig gestellte Fragen
- [Tests der codierten UI – FAQ 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Tests der codierten UI – FAQ 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Tests der codierten UI – FAQ 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Tests der codierten UI – FAQ 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Siehe auch
  [Verwenden von Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md) [Erstellen von Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) der programmierten UI [Erstellen eines datengesteuerten](../test/creating-a-data-driven-coded-ui-test.md) Tests der programmierten UI Erstellen eines Tests der programmierten UI [aus einer vorhandenen Aktions Aufzeichnung Exemplarische Vorgehensweise](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [: erstellen, bearbeiten und Verwalten eines Tests](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) der programmierten UI
