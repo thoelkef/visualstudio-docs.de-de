@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302056"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851235"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -369,22 +369,22 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 ## <a name="external-resources"></a>Externe Ressourcen
 
 ### <a name="videos"></a>Videos
- ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [Coded UI Tests-deepdive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-deepdive-Episode1-GettingStarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [Coded UI Tests-deepdive-Episode2-wart-ceanddebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-deepdive-Episode2-wart-ceanddebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [Coded UI Tests-deepdive-Episode3-handcoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-deepdive-Episode3-handcoding](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>Praktische Übungseinheiten
- [MSDN Virtual Lab: Introduction to Creating Coded UI Tests with Visual Studio 2010 (MSDN Virtual Lab: Einführung in die Erstellung programmierter UI-Tests mit Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [MSDN Virtual Lab: Introduction to Creating Coded UI Tests with Visual Studio 2010 (MSDN Virtual Lab: Einführung in die Erstellung programmierter UI-Tests mit Visual Studio 2010)](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
 ### <a name="faq"></a>Häufig gestellte Fragen
- [Tests der codierten UI – FAQ 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Tests der codierten UI – FAQ 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Tests der codierten UI – FAQ 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Tests der codierten UI – FAQ 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Siehe auch
  [Verwenden von Benutzeroberflächen Automatisierung zum Testen](../test/use-ui-automation-to-test-your-code.md) [des Codes Einstieg in den WPF-Designer](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Bearbeiten von Tests der programmierten UI mit dem Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) für Tests

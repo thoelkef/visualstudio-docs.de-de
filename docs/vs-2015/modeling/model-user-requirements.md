@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302795"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844914"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
  Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede Ansicht bietet eine bestimmte Art von Informationen.  Wenn Sie diese Ansichten erstellen, empfiehlt es sich, häufig zwischen ihnen zu wechseln. Sie können bei jeder Ansicht starten.
 
-|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|Bereich|
+|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|Abschnitt|
 |-------------------------|-----------------------------------------------|-------------|
 |Anwendungsfalldiagramm|Wer das System verwendet und was sie damit tun|[Beschreiben, wie das System verwendet wird](#UseCases)|
 |Konzeptionelles Klassendiagramm|Glossar von Typen, die zum Beschreiben der Anforderungen verwendet werden; die auf der Benutzeroberfläche des Systems sichtbaren Typen.|[Definieren von Begriffen zum Beschreiben von Anforderungen](#RequirementsClasses)|
@@ -87,7 +87,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 
   Weitere Informationen finden Sie in den folgenden Themen:
 
-|Thema|Lesen|
+|Thema|Siehe|
 |--------------------|----------|
 |Ausführlichere Informationen zum Erstellen von Anwendungsfällen|[UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)|
 |Elemente in einem Anwendungsfalldiagramm|[UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)|
@@ -132,13 +132,13 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 
   Weitere Informationen finden Sie in den folgenden Themen:
 
-|Thema|Lesen|
+|Thema|Siehe|
 |--------------------|----------|
 |Genauere Informationen zum Finden von Anforderungsklassen|[UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|
 |Entwickeln von Code aus konzeptionellen Klassen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
- In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Durch die folgende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung werden nicht direktionale Pfeile als Standard festgelegt: [Sample: UML Domain Modeling features](https://go.microsoft.com/fwlink/?LinkId=213849)(Beispiel zu Funktionen für die UML-Domänenmodellierung).
+ In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Durch die folgende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung werden nicht direktionale Pfeile als Standard festgelegt: [Sample: UML Domain Modeling features](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)(Beispiel zu Funktionen für die UML-Domänenmodellierung).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.
@@ -155,7 +155,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 
  Weitere Informationen finden Sie in den folgenden Themen:
 
-|Thema|Lesen|
+|Thema|Siehe|
 |--------------------|----------|
 |Genauere Informationen zum Finden und Aufzeichnen statischer Geschäftsregeln|[UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|
@@ -168,7 +168,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 
 - Sicherheit
 
-- Benutzerfreundlichkeit
+- Verwendbarkeit
 
 - Zuverlässigkeit
 
@@ -180,7 +180,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 
   Weitere Informationen finden Sie in den folgenden Themen:
 
-|Thema|Lesen|
+|Thema|Siehe|
 |--------------------|----------|
 |Anfügen zusätzlicher Dokumente an Anwendungsfälle|[Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |Entwickeln von Code, der Servicequalitätsanforderungen entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
@@ -200,7 +200,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 
  Weitere Informationen finden Sie in den folgenden Themen:
 
-|Thema|Lesen|
+|Thema|Siehe|
 |--------------------|----------|
 |Weitere Informationen zum Definieren von Geschäftsarbeitsabläufen|[UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)|
 |Elemente in einem Aktivitätsdiagramm|[UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)|
@@ -217,7 +217,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 
  Weitere Informationen finden Sie in den folgenden Themen:
 
-|Thema|Lesen|
+|Thema|Siehe|
 |--------------------|----------|
 |Weitere Informationen zum Definieren von Interaktionen|[UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)|
 |Elemente in einem Sequenzdiagramm|[UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)|
@@ -239,4 +239,4 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   Durch Untersuchen der Beziehungen zwischen den Ansichten, die von verschiedenen Diagrammen bereitstellt werden, können Sie schnell die wichtigsten Konzepte verstehen, mit denen die Benutzer arbeiten, und ihnen helfen, zu verstehen, was sie aus dem System benötigen. Sie können auch besser verstehen, bei welchen Anforderungen sich die Projektbeteiligten am unsichersten sind. Sie können planen, diese Features zumindest in vereinfachter Form in einem frühen Stadium des Projekts zu entwickeln, damit Benutzer mit ihnen experimentieren können.
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [entwickeln von Tests aus einem Modell verwenden von](../modeling/develop-tests-from-a-model.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Modell Ihrer APP Architektur](../modeling/model-your-app-s-architecture.md) [Sample vs Extension: UML Domain Modeling Features](https://go.microsoft.com/fwlink/?LinkId=213849) [Sample vs Extension: Color UML Elements by](https://go.microsoft.com/fwlink/?LinkID=213841) [stereosample vs Extension: Verknüpfen von UML-Elementen mit Diagrammen, Dateien und anderen Elementen](https://go.microsoft.com/fwlink/?LinkID=213813) [Sample vs Extension: Align Shapes on a UML Diagram](https://go.microsoft.com/fwlink/?LinkID=213809) [Video: Modeling The Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [entwickeln von Tests aus einem Modell verwenden von](../modeling/develop-tests-from-a-model.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Modell Ihrer APP Architektur](../modeling/model-your-app-s-architecture.md) [Sample vs Extension: UML Domain Modeling Features](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Sample vs Extension: Color UML Elements by](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [stereosample vs Extension: Verknüpfen von UML-Elementen mit Diagrammen, Dateien und anderen Elementen](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Sample vs Extension: Align Shapes on a UML Diagram](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Video: Modeling The Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

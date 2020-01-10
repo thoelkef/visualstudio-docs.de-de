@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289715"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847693"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Gewusst wie: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
   
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
   
-2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
   
@@ -51,7 +51,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
   
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
   
-2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
   
@@ -64,10 +64,10 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
  [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [How to: Enable ClickOnce Security Settings (Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen)](../deployment/how-to-enable-clickonce-security-settings.md)   
- [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [How to: Set a Security Zone for a ClickOnce Application (Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung)](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [How to: Set Custom Permissions for a ClickOnce Application (Vorgehensweise: Festlegen von benutzerdefinierten Berechtigungen für eine ClickOnce-Anwendung)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Gewusst wie: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  Vorgehens [Weise: Erneutes Signieren von Anwendungs-und Bereitstellungs Manifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   

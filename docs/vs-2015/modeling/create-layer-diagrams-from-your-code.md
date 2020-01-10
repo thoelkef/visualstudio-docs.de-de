@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eea557035ef4e5f1ffa2585e620a331fb6b5cce2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300275"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852077"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Erstellen von Ebenendiagrammen aus Ihrem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,8 +70,8 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 |Erstellen einer einzelnen Ebene für alle ausgewählten Artefakte|Ziehen Sie alle Artefakte gleichzeitig in das Ebenendiagramm.<br /><br /> Im Diagramm wird eine Ebene angezeigt und mit allen Artefakten verknüpft.|
 |Erstellen einer Ebene für jedes ausgewählte Artefakt|Halten Sie die **UMSCHALT** Taste gedrückt, während Sie alle Artefakte gleichzeitig in das ebenendiagramm ziehen. **Hinweis:**  Wenn Sie mithilfe der **UMSCHALT** Taste einen Bereich von Elementen auswählen, geben Sie den Schlüssel nach dem Auswählen der Artefakte frei. Halten Sie sie anschließend erneut gedrückt, wenn Sie die Artefakte in das Diagramm ziehen. <br /><br /> Im Diagramm wird für jedes Artefakt eine Ebene angezeigt und mit den einzelnen Artefakten verknüpft.|
 |Hinzufügen eines Artefakts zu einer Ebene|Ziehen Sie das Artefakt auf die Ebene.|
-|Erstellen einer neuen, nicht verknüpften Ebene|Erweitern Sie in der **Toolbox**den Abschnitt **ebenendiagramm** , und ziehen Sie dann eine **Ebene** in das ebenendiagramm.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das ebenendiagramm, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Ebene**aus.|
-|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
+|Erstellen einer neuen, nicht verknüpften Ebene|Erweitern Sie in der **Toolbox**den Abschnitt **ebenendiagramm** , und ziehen Sie dann eine **Ebene** in das ebenendiagramm.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das ebenendiagramm, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Ebene**aus.|
+|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
 |Erstellen einer neuen Ebene, die mehrere vorhandene Ebenen enthält|Wählen Sie die Ebenen aus, öffnen Sie das Kontextmenü für Ihre Auswahl, und wählen Sie dann **Gruppe**aus.|
 |Ändern der Farbe einer Ebene|Legen Sie die **Color** -Eigenschaft auf die gewünschte Farbe fest.|
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon ( **;** ).|
@@ -97,7 +97,7 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 |**Aktion**|**Im ebenenexplorer**|
 |------------|---------------------------|
 |Löschen des Links zwischen der Ebene und einem Artefakt|Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Löschen**aus.|
-|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Ausschneiden**aus.<br />2. Öffnen Sie im ebenendiagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
+|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Ausschneiden**aus.<br />2. Öffnen Sie im ebenendiagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
 |Kopieren des Links von einer Ebene auf eine andere Ebene|1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Kopieren**aus.<br />2. Öffnen Sie im ebenendiagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
 |Erstellen einer neuen Ebene aus einem vorhandenen Artefaktlink|Ziehen Sie den Artefaktlink in einen leeren Bereich des Diagramms.|
 |Überprüfen, ob ein verknüpftes Artefakt die Validierung anhand des Ebenendiagramms unterstützt|Sehen Sie sich die Spalte **unterstützt die Validierung** für den artefaktlink an.|
@@ -136,4 +136,4 @@ Erstellen Sie ein *ebenendiagramm* in Visual Studio, um die allgemeine logische 
 - [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Channel 9-Video: Entwerfen und Validieren der Architektur mit ebenendiagrammen](https://go.microsoft.com/fwlink/?LinkID=252073) [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md) [Validieren von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md) [visualisieren](../modeling/visualize-code.md)
+ [Channel 9-Video: Entwerfen und Validieren der Architektur mit ebenendiagrammen](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture) [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md) [Validieren von Code mit ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md) [visualisieren](../modeling/visualize-code.md)

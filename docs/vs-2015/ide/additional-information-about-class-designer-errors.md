@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300289"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852208"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Zusätzliche Informationen zu Klassen-Designer-Fehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Klassen-Designer verfolgt nicht den Speicherort der Quelldateien, so dass die Ä
 
  [Das Arbeiten mit C++ Visual Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) umfasst Informationen zur Problem C++ Behandlung bei der Anzeige in einem Klassendiagramm.
 
- [Forum des Visual Studio-Klassen-Designers:](https://go.microsoft.com/fwlink/?LinkId=160754) Ein Forum für Fragen zum Klassen-Designer.
+ [Forum des Visual Studio-Klassen-Designers:](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) Ein Forum für Fragen zum Klassen-Designer.
 
 ## <a name="see-also"></a>Siehe auch
  [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md)

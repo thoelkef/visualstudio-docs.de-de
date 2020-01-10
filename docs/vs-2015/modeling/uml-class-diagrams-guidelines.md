@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297290"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850187"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-Klassendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> In diesem Thema geht es um UML-Klassendiagramme. Es gibt noch eine andere Art von Klassendiagramm, das erstellt und verwendet wird, um Programmcode visuell darzustellen. Siehe [Entwerfen und Anzeigen von Klassen und Typen](https://go.microsoft.com/fwlink/?LinkId=142231).
+> In diesem Thema geht es um UML-Klassendiagramme. Es gibt noch eine andere Art von Klassendiagramm, das erstellt und verwendet wird, um Programmcode visuell darzustellen. Siehe [Entwerfen und Anzeigen von Klassen und Typen](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="Using"></a>Verwenden von UML-Klassendiagrammen
  Sie können ein UML-Klassendiagramm für viele verschiedene Zwecke verwenden:
@@ -194,7 +194,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
  `[1]`
 
- Ein Wert des angegebenen Typs. Dies ist die Standardeinstellung.
+ Ein Wert des angegebenen Typs. Dies ist der Standardwert.
 
  `[0..1]`
 
@@ -256,7 +256,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 visibility attribute-name : Type
 ```
 
- \- oder –
+ \- oder -
 
 ```
 visibility operation-name (parameter1 : Type1, ...) : Type
@@ -367,7 +367,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - Eine *Generalisierungs* Beziehung zwischen einem spezialisierten Typ und einem allgemeinen Typ
 
-   \- oder –
+   \- oder -
 
 - Eine *Erkenntnis* Beziehung zwischen einer Klasse und einer Schnittstelle, die implementiert wird.
 

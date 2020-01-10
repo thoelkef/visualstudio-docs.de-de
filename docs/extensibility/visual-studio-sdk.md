@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 5949a651c99c0ce45f963b5f2042cdfe6cb40b87
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568835"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848577"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue Funktionen in Visual Studio integrieren. Sie können Ihre Erweiterungen sowohl an andere Benutzer als auch an den Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:
@@ -60,7 +60,7 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
  Die Visual Studio SDK-API-Referenz finden Sie unter [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK-Beispiele
- Open-Source-Beispiele für vs SDK-Erweiterungen finden Sie auf GitHub unter [Visual Studio](https://aka.ms/vs2015sdksamples)-Beispiele. Dieses GitHub-Repository enthält Beispiele, die verschiedene erweiterbare Funktionen in Visual Studio veranschaulichen.
+ Open-Source-Beispiele für vs SDK-Erweiterungen finden Sie auf GitHub unter [Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples)-Beispiele. Dieses GitHub-Repository enthält Beispiele, die verschiedene erweiterbare Funktionen in Visual Studio veranschaulichen.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Weitere Visual Studio SDK-Ressourcen
  Wenn Sie Fragen zum VSSDK haben oder Ihre Erfahrungen mit der Entwicklung von Erweiterungen freigeben möchten, können Sie das [Visual Studio-Erweiterbarkeits Forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) oder den [erweiterbaren Gitter-Chatroom](https://gitter.im/Microsoft/extendvs)verwenden.

@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a510c522723cf991c7a3fff21542a069a3de000a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 63390672b246add079806c68a23b69f0e0132c2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299488"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850207"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Erstellen von benutzerdefinierten Ansichten von nativen Objekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 ## <a name="BKMK_Why_create_visualizations_"></a> Warum werden Natvis-Visualisierungen erstellt?  
  Sie können das Natvis-Framework zum Erstellen von Visualisierungsregeln für Typen verwenden, die Sie erstellen, damit sie von Entwicklern beim Debuggen problemlos angezeigt werden können.  
 
- Im folgenden Bild ist beispielsweise eine Variable des Typs [Windows::UI::Xaml::Controls::TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) angegeben, die im Debugger ohne angewendete benutzerdefinierte Visualisierungen dargestellt wird.  
+ Im folgenden Bild ist beispielsweise eine Variable des Typs [Windows::UI::Xaml::Controls::TextBox](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textbox.aspx) angegeben, die im Debugger ohne angewendete benutzerdefinierte Visualisierungen dargestellt wird.  
 
  ![Standardmäßige TextBox-Visualisierung](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
@@ -283,7 +283,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 </Type>  
 ```  
 
- Die einfache Ansicht zeigt die Elemente „[size]“ und „[capacity]“ in der einfachen Ansicht nicht an. Wenn wir anstelle von `IncludeView="simple"` `ExcludeView`verwendet hätten, würden die Elemente `[size]` und `[capacity]` anstelle in der Standardansicht in der einfachen Ansicht angezeigt werden.  
+ Die einfache Ansicht zeigt die Elemente „[size]“ und „[capacity]“ in der einfachen Ansicht nicht an. Wenn wir anstelle von `IncludeView="simple"``ExcludeView`verwendet hätten, würden die Elemente `[size]` und `[capacity]` anstelle in der Standardansicht in der einfachen Ansicht angezeigt werden.  
 
  Sie können die Attribute `IncludeView` und `ExcludeView` für Typen und einzelne Member verwenden.  
 

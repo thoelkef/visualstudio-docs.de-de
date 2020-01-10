@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299415"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850141"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +49,11 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://go.microsoft.com/fwlink/?linkid=87843)herunterladen.
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank von der [CodePlex-Website](https://codeplex.com/SqlServerSamples)herunterladen.
 
   Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
-- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- WCF Data Services. Weitere Informationen finden Sie in der [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - Datenmodelle in [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].
 
@@ -76,7 +76,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 4. Wählen Sie die Projektvorlage **ASP.NET-Webanwendung** aus.
 
-5. Geben Sie im Feld **Name** `AdventureWorksService` ein, und klicken Sie auf **OK**.
+5. Geben Sie im Feld **Name**`AdventureWorksService` ein, und klicken Sie auf **OK**.
 
      Visual Studio erstellt das `AdventureWorksService` Projekt.
 

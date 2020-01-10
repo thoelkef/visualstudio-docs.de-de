@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292888"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849270"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Vorgehensweise: Aufrufen des Workflow-Debuggers
 Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Programmiersprachen geschriebene Programme. Sie können den Workflowdebugger auf folgende Weise starten:
@@ -23,7 +23,7 @@ Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Program
 
 - Drücken Sie **F5** , um die Ausführung einer Instanz des Workflows zu starten, oder, um die Ausführung nach dem Erreichen eines Breakpoints fortzusetzen.
 
-- Verwenden Sie Remotedebuggen. Weitere Informationen zur Verwendung des Remote Debuggens finden Sie unter Gewusst [wie: Aktivieren des Remote Debuggens](https://go.microsoft.com/fwlink/?LinkId=196257).
+- Verwenden Sie Remotedebuggen. Weitere Informationen zur Verwendung des Remote Debuggens finden Sie unter Gewusst [wie: Aktivieren des Remote Debuggens](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
     > Wenn die Workflow Anwendung die x86-Architektur als Ziel verwendet und auf einem Computer gehostet wird, auf dem ein 64-Bit-Betriebssystem ausgeführt wird, funktioniert das Remote Debuggen nur dann, wenn [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] auf dem Remote Computer installiert ist oder das Ziel für die Workflow Anwendung in eine **beliebige CPU**geändert wird.

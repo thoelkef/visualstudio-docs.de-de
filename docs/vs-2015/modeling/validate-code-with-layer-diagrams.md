@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301359"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845428"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Überprüfen von Code mit Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
   **Voraussetzungen**
 
-- Visual Studio
+- öffnen
 
 - Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen
 
@@ -53,7 +53,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
   Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Sie können Code über ein geöffnetes Ebenendiagramm in Visual Studio oder eine Eingabeaufforderung manuell überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Weitere Informationen finden [Sie unter Channel 9-Video: Entwerfen und validieren ihrer Architektur mit ebenendiagrammen](https://go.microsoft.com/fwlink/?LinkID=252073)
+  Sie können Code über ein geöffnetes Ebenendiagramm in Visual Studio oder eine Eingabeaufforderung manuell überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Weitere Informationen finden [Sie unter Channel 9-Video: Entwerfen und validieren ihrer Architektur mit ebenendiagrammen](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)
 
 > [!IMPORTANT]
 > Wenn Sie die Ebenenvalidierung mit Team Foundation Build ausführen möchten, muss auch Visual Studio auf dem Buildserver installiert werden.
@@ -147,7 +147,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 > [!WARNING]
 > Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.
 
-##### <a name="to-create-a-work-item-for-a-validation-error"></a>So erstellen Sie eine Arbeitsaufgabe für einen Validierungsfehler
+##### <a name="to-create-a-work-item-for-a-validation-error"></a>So erstellen Sie ein Arbeitselement für einen Validierungsfehler
 
 - Klicken Sie im **Fehlerliste** Fenster mit der rechten Maustaste auf den Fehler, zeigen Sie auf **Arbeits Element erstellen**, und klicken Sie dann auf den Typ des Arbeits Elements, das Sie erstellen möchten.
 
@@ -171,7 +171,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- oder –
+ \- oder -
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, das das ebenendiagramm oder die Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.
 
@@ -205,7 +205,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
 - [Anpassen der Buildprozessvorlage](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-- [Überwachen des Fortschritts eines laufenden Builds](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+- [Überwachen des Status eines Builds während der Ausführung](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
 ## <a name="TroubleshootingValidation"></a>Beheben von ebenenvalidierungsproblemen
  In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Auflösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
@@ -227,9 +227,9 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
 |**Syntax**|**Beschreibung**|
 |----------------|---------------------|
-|*Artifaktn*(*artifakttypen*)|*Artifacetten TN* ist ein Artefakt, das einer Ebene im ebenendiagramm zugeordnet ist.<br /><br /> *Artifacttypen* ist der Typ von *artifactn*, z. b. eine **Klasse** oder **Methode**, z. b.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
-|*Namespacenamen*|Der Name eines Namespace.|
-|*Layer-Namen*|Der Name einer Ebene im Ebenendiagramm.|
+|*ArtifactN*(*ArtifactTypeN*)|*Artifacetten TN* ist ein Artefakt, das einer Ebene im ebenendiagramm zugeordnet ist.<br /><br /> *Artifacttypen* ist der Typ von *artifactn*, z. b. eine **Klasse** oder **Methode**, z. b.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*NamespaceNameN*|Der Name eines Namespace.|
+|*LayerNameN*|Der Name einer Ebene im Ebenendiagramm.|
 |*DependencyType*|Der Typ der Abhängigkeitsbeziehung zwischen *Element1* und *Artifact2*. Beispielsweise hat *Element1* eine Beziehung zum **aufrufen** von *Artifact2*.|
 
 |**Fehler Syntax**|**Fehlerbeschreibung**|

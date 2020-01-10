@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 2185641d5e3f9facf416e6ea999a1e8dcec0b37b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294202"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850397"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio
 
@@ -30,7 +30,7 @@ Der Emulator simuliert den Azure-Computedienst und wird in Ihrer lokalen Umgebun
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>So debuggen Sie den Clouddienst auf dem lokalen Computer
 
-1. Wählen Sie auf der Menüleiste **Debuggen**, **Debuggen starten** aus, um Ihr Azure-Cloud-Dienstprojekt auszuführen. Alternativ können Sie F5 drücken. Eine Meldung wird angezeigt, dass der Serveremulator gestartet wurde. Wenn der Emulator gestartet wird, wird dies durch das Taskleistensymbol bestätigt.
+1. Wählen Sie auf der Menüleiste **Debuggen** und **Debuggen starten** aus, um das Azure-Clouddienstprojekt auszuführen. Alternativ können Sie F5 drücken. Eine Meldung wird angezeigt, dass der Serveremulator gestartet wurde. Wenn der Emulator gestartet wird, wird dies durch das Taskleistensymbol bestätigt.
 
     ![Azure-Emulator in der Taskleiste](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -50,7 +50,7 @@ Um einen Clouddienst über einen Remotecomputer zu debuggen, müssen Sie diese F
 Wenn Sie das Remotedebuggen für einen Clouddienst aktivieren, führt dies nicht zu einer Leistungsverschlechterung oder zu zusätzlichen Gebühren. Verwenden Sie das Remotedebuggen nicht für einen Produktionsdienst, da sich dies negativ auf Clients auswirken kann, die den Dienst nutzen.
 
 > [!NOTE]
-> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace**können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](https://go.microsoft.com/fwlink/?LinkID=623016) und [Visual Studio und Verwenden von IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace**können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) und [Visual Studio und Verwenden von IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>So aktivieren Sie das Remotedebuggen für einen Clouddienst
 
@@ -80,7 +80,7 @@ Wenn Sie das Remotedebuggen für einen Clouddienst aktivieren, führt dies nicht
 
     ![Dialogfeld "Codetyp auswählen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Öffnen Sie zum Identifizieren der Prozesse, an die der Debugger angefügt ist, das Dialogfeld Prozesse, indem Sie Debuggen, Windows, Prozesse in der Menüleiste auswählen. (Tastatur: STRG + ALT + Z) Um einen bestimmten Prozess zu trennen, öffnen Sie das Kontextmenü, und wählen Sie dann **Prozess trennen**aus. Sie können auch den Instanzknoten im Server-Explorer suchen, dann den Prozess suchen, das Kontextmenü öffnen und auf **Prozess abtrennen**klicken.
+4. Öffnen Sie zum Identifizieren der Prozesse, an die der Debugger angefügt ist, das Dialogfeld Prozesse, indem Sie Debuggen, Windows, Prozesse in der Menüleiste auswählen. (Tastatur: Strg+Alt+Z) Um einen bestimmten Prozess zu trennen, öffnen Sie dessen Kontextmenü, und klicken Sie dann auf **Prozess abtrennen**. Sie können auch den Instanzknoten im Server-Explorer suchen, dann den Prozess suchen, das Kontextmenü öffnen und auf **Prozess abtrennen**klicken.
 
     ![Debuggen von Prozessen](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -150,7 +150,7 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
     > [!NOTE]
     > Sie werden aufgefordert, sich an Ihrem Azure-Konto anzumelden, wenn Sie noch nicht angemeldet sind.
 
-3. Wählen Sie die verschiedenen Einstellungen für den virtuellen Computer aus, und klicken Sie dann auf **OK**. Weitere Informationen finden Sie unter [Virtuelle Computer](https://go.microsoft.com/fwlink/?LinkId=623033) .
+3. Wählen Sie die verschiedenen Einstellungen für den virtuellen Computer aus, und klicken Sie dann auf **OK**. Weitere Informationen finden Sie unter [Virtuelle Computer](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) .
 
     Der Name, den Sie als DNS-Name eingeben, wird zum Namen des virtuellen Computers.
 
@@ -168,11 +168,11 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
     ![Azure-Aktivitätsprotokoll](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Veröffentlichen Sie Ihr Projekt wie unter Gewusst [wie: Bereitstellen eines Webprojekts mithilfe der One-Click-Veröffentlichung in Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx)beschrieben. Da Sie auf dem virtuellen Computer debuggen möchten, wählen Sie auf der Seite **Einstellungen** des Assistenten **Web veröffentlichen** als Konfiguration **Debuggen** aus. Dadurch wird sichergestellt, dass Codesymbole beim Debuggen verfügbar sind.
+6. Veröffentlichen Sie Ihr Projekt, wie unter [Gewusst wie: Bereitstellen eines Webanwendungsprojekts mit der One-Click-Veröffentlichung in Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx)beschrieben. Da Sie auf dem virtuellen Computer debuggen möchten, wählen Sie auf der Seite **Einstellungen** des Assistenten **Web veröffentlichen** als Konfiguration **Debuggen** aus. Dadurch wird sichergestellt, dass Codesymbole beim Debuggen verfügbar sind.
 
     ![Veröffentlichungseinstellungen](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. Wählen Sie unter **Dateiveröffentlichungsoptionen** die Option **Zusätzliche Dateien am Ziel entfernen** aus, wenn das Projekt zu einem früheren Zeitpunkt bereits bereitgestellt wurde.
+7. Wählen Sie **Zusätzliche Dateien am Ziel entfernen** in den **Dateiveröffentlichungsoptionen** aus, wenn das Projekt zu einem früheren Zeitpunkt bereits bereitgestellt wurde.
 
 8. Nachdem das Projekt veröffentlicht wurde, klicken Sie im Kontextmenü des virtuellen Computers in Server-Explorer auf **Debugger anfügen**
 
@@ -188,6 +188,6 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* Verwenden Sie **IntelliTrace**, um ein Protokoll der Aufrufe und Ereignisse von einem Releaseserver zu sammeln. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](https://go.microsoft.com/fwlink/?LinkID=623016).
+* Verwenden Sie **IntelliTrace**, um ein Protokoll der Aufrufe und Ereignisse von einem Releaseserver zu sammeln. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
 
-* Verwenden Sie die **Azure-Diagnose** , um ausführliche Informationen zu Code, der in Rollen ausgeführt wird, zu protokollieren, unabhängig davon, ob die Rollen in der Entwicklungsumgebung oder in Azure ausgeführt werden. Weitere Informationen finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](https://go.microsoft.com/fwlink/p/?LinkId=400450).
+* Verwenden Sie die **Azure-Diagnose** , um ausführliche Informationen zu Code, der in Rollen ausgeführt wird, zu protokollieren, unabhängig davon, ob die Rollen in der Entwicklungsumgebung oder in Azure ausgeführt werden. Weitere Informationen finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](https://msdn.microsoft.com/library/gg433048.aspx).

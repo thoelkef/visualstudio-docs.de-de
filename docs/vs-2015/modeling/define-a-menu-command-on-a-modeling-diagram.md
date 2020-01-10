@@ -11,19 +11,19 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299270"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850463"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definieren eines Menübefehls in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs eines UML-Diagramms definieren. Sie können steuern, ob der Menübefehl angezeigt wird und im Kontextmenü für alle Elemente des Diagramms verfügbar ist, und Sie können Code schreiben, der bei Auswahl des Menüelements ausgeführt wird. Sie können diese Erweiterungen in eine Visual Studio-Integrationserweiterung ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) packen, die Sie an andere Visual Studio-Benutzer verteilen können.
+In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs eines UML-Diagramms definieren. Sie können steuern, ob der Menübefehl angezeigt wird und im Kontextmenü für alle Elemente des Diagramms verfügbar ist, und Sie können Code schreiben, der bei Auswahl des Menüelements ausgeführt wird. Sie können diese Erweiterungen in eine Visual Studio-Integrationserweiterung ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) packen, die Sie an andere Visual Studio-Benutzer verteilen können.
 
-## <a name="requirements"></a>Voraussetzungen
+## <a name="requirements"></a>-Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -55,7 +55,7 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
 1. Erstellen Sie ein neues Klassenbibliotheksprojekt, entweder in einer neuen Visual Studio-Projektmappe oder in einer vorhandenen Projektmappe.
 
-   1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
+   1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
 
    2. Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus. Wählen Sie in der mittleren Spalte **Klassenbibliothek**aus.
 
@@ -65,7 +65,7 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
 2. Fügen Sie dem Projekt die folgenden Verweise hinzu.
 
-   |                                                                                                    Verweis                                                                                                    |                                                                                                  Optionen                                                                                                  |
+   |                                                                                                    Referenz                                                                                                    |                                                                                                  Optionen                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definieren Sie Komponenten mithilfe von [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Lesen und Ändern der Eigenschaften von Modellelementen                                                                                         |
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Definieren und Installieren einer Modellierungs Erweiterung](../modeling/define-and-install-a-modeling-extension.md) [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md) [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Definieren eines benutzerdefinierten Modellierungs-Toolbox Elements](../modeling/define-a-custom-modeling-toolbox-item.md) definieren von [Validierungs Einschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md) [Bearbeiten von UML-Sequenzdiagrammen mithilfe der UML-API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) - [Programmierung mit dem UML-API](../modeling/programming-with-the-uml-api.md) - [Beispiel: Befehl zum Ausrichten von Formen in einem UML](https://go.microsoft.com/fwlink/?LinkID=213809)
+ [Definieren und Installieren einer Modellierungs Erweiterung](../modeling/define-and-install-a-modeling-extension.md) [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md) [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Definieren eines benutzerdefinierten Modellierungs-Toolbox Elements](../modeling/define-a-custom-modeling-toolbox-item.md) definieren von [Validierungs Einschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md) [Bearbeiten von UML-Sequenzdiagrammen mithilfe der UML-API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) - [Programmierung mit dem UML-API](../modeling/programming-with-the-uml-api.md) - [Beispiel: Befehl zum Ausrichten von Formen in einem UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

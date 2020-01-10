@@ -12,19 +12,19 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298722"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850453"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen definieren. Auf diese Weise können Sie die Diagramme und Modelle Ihren eigenen Anforderungen anpassen. Sie können z. B. Menübefehle, UML-Profile, Validierungseinschränkungen und Toolboxelemente definieren. In einer Erweiterung können mehrere Komponenten definiert werden. Sie können diese Erweiterungen auch anderen Visual Studio-Benutzern in Form einer [Visual Studio Integration Extension (VSIX)](https://go.microsoft.com/fwlink/?LinkId=160780)bereitstellen. Eine VSIX können Sie mithilfe eines VSIX-Projekts in Visual Studio erstellen.
+In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen definieren. Auf diese Weise können Sie die Diagramme und Modelle Ihren eigenen Anforderungen anpassen. Sie können z. B. Menübefehle, UML-Profile, Validierungseinschränkungen und Toolboxelemente definieren. In einer Erweiterung können mehrere Komponenten definiert werden. Sie können diese Erweiterungen auch anderen Visual Studio-Benutzern in Form einer [Visual Studio Integration Extension (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)bereitstellen. Eine VSIX können Sie mithilfe eines VSIX-Projekts in Visual Studio erstellen.
 
-## <a name="requirements"></a>Voraussetzungen
+## <a name="requirements"></a>-Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,7 +42,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Erstellen eines Klassenbibliothekprojekts für Menübefehle, Gestenhandler oder Überprüfung
 
-1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
 
 2. Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus, und wählen Sie anschließend **Klassenbibliothek**aus.
 
@@ -74,9 +74,9 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
         |||
         |-|-|
-        | = **eingeben**|**Microsoft. VisualStudio. MEFComponent**|
+        |**Typ** =|**Microsoft.VisualStudio.MefComponent**|
         |**Source** =|**Ein Projekt in der aktuellen Projekt Mappe.**|
-        |**Projekt** =|*Ihr Klassen Bibliotheksprojekt*|
+        |**Project** =|*Ihr Klassen Bibliotheksprojekt*|
         |**In diesen Ordner einbetten** =|*leer*|
 
          Informationen zu anderen Komponententypen finden Sie unter den Links im nächsten Abschnitt.
@@ -84,7 +84,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 ## <a name="developing-the-component"></a>Entwickeln der Komponente
  Sie müssen für jede Komponente (z. B. für einen Menübefehl oder Gestenhandler) einen separaten Handler definieren. Sie können mehrere Handler in das gleiche Klassenbibliotheksprojekt einfügen. In der folgenden Tabelle erhalten Sie eine Übersicht über die verschiedenen Arten von Handlern.
 
-|Erweiterungstyp|Thema|Typische Deklaration der einzelnen Komponenten|
+|Erweiterungstyp|Topic|Typische Deklaration der einzelnen Komponenten|
 |--------------------|-----------|----------------------------------------------|
 |Menübefehl|[Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|
 |Drag & Drop oder Doppelklick|[Definieren eines Gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|
@@ -97,7 +97,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 #### <a name="to-run-an-extension-during-its-development"></a>So führen Sie eine Erweiterung während ihrer Entwicklung aus
 
-1. Wählen Sie im Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** das Element **Start Debuggenging**aus.
+1. Wählen Sie im Menü **Debuggen** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen starten**aus.
 
      Das Projekt wird erstellt, und eine neue Instanz von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird im Testmodus gestartet.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e9d476cfc4ce742d3300c78f2219c0b3797130c8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1676f438b876757ab66d8b9e9b1ee09bde442ef9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301304"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852052"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
 - [Weitere Informationen](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
-> Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](https://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
+> Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/enable/default.aspx) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
 
 ## <a name="windows"></a> Barrierefreiheitsfeatures in Windows
- Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](https://go.microsoft.com/fwlink/?LinkId=8431).
+ Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/enable/default.aspx).
 
 ### <a name="free-step-by-step-tutorials"></a>Kostenlose schrittweise Lernprogramme
  Microsoft bietet eine Reihe von Lernprogrammen mit Schritt-für-Schritt-Beschreibungen zur Anpassung der Barrierefreiheitsoptionen und -einstellungen auf Ihrem Computer. Diese Informationen werden parallel präsentiert, sodass Sie die Verwendung der Maus, der Tastatur oder die kombinierte Verwendung beider Eingabegeräte erlernen können.
 
- Schrittweise Lernprogramme für Microsoft-Produkte finden Sie auf der [Microsoft-Website für Barrierefreiheit](https://go.microsoft.com/fwlink/?LinkId=8431).
+ Schrittweise Lernprogramme für Microsoft-Produkte finden Sie auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/enable/default.aspx).
 
 ### <a name="assistive-technology-products-for-windows"></a>Hilfstechnologieprodukte für Windows
- Es ist eine Vielzahl von Hilfstechnologieprodukten verfügbar, um Personen mit Behinderungen die Verwendung von Computern zu erleichtern. Microsoft stellt auf der [Microsoft-Website für Barrierefreiheit](https://go.microsoft.com/fwlink/?LinkId=8431)einen Suchkatalog für Hilfstechnologieprodukte bereit, die unter Windows ausgeführt werden können.
+ Es ist eine Vielzahl von Hilfstechnologieprodukten verfügbar, um Personen mit Behinderungen die Verwendung von Computern zu erleichtern. Microsoft stellt auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/enable/default.aspx)einen Suchkatalog für Hilfstechnologieprodukte bereit, die unter Windows ausgeführt werden können.
 
  Wenn Sie Hilfstechnologien verwenden, informieren Sie sich bei Ihrem Hilfstechnologieanbieter über mögliche Kompatibilitätsprobleme, bevor Sie Ihre Software oder Hardware aktualisieren.
 
 ## <a name="altfortmats"></a> Dokumentation in alternativen Formaten
- Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](https://go.microsoft.com/fwlink/?LinkId=8431).
+ Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](https://www.microsoft.com/enable/default.aspx).
 
  Weitere Microsoft-Veröffentlichungen erhalten Sie bei Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D verteilt diese Dokumente an registrierte, berechtigte Mitglieder ihres Vertriebsdienstes. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:
 
@@ -76,7 +76,7 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
   Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgemeinen Bedingungen.
 
 ## <a name="moreinfo"></a> Weitere Informationen
- Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](https://go.microsoft.com/fwlink/?LinkId=8431).
+ Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/enable/default.aspx).
 
 ## <a name="see-also"></a>Siehe auch
  [Ressourcen für das Entwerfen Barrierefreiheits Funktionen für barrierefreie Anwendungen](../../ide/reference/resources-for-designing-accessible-applications.md) [in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

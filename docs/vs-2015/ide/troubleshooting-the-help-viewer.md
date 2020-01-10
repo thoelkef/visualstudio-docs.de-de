@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299901"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851078"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Problembehandlung bei Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ In diesem Thema werden Probleme behandelt, die bei der Verwendung des Help Viewe
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
  Mithilfe der folgenden Ressourcen können Sie weitere Informationen abrufen und Feedback zum Help Viewer bereitstellen:
 
-- Sie können auf der Microsoft-Website unter [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) Feedback einreichen, oder Sie senden eine E-Mail an [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Sie können auf der Microsoft-Website unter [Microsoft Connect](https://connect.microsoft.com/) Feedback einreichen, oder Sie senden eine E-Mail an [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Weitere Informationen finden Sie in der [Entwicklerdokumentation und Hilfe im MSDN](https://go.microsoft.com/fwlink/?LinkId=232741) und im Blog [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743).
+- Weitere Informationen finden Sie in der [Entwicklerdokumentation und Hilfe im MSDN](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) und im Blog [The Help Guy](https://blogs.msdn.com/b/thehelpguy/).
 
 ## <a name="see-also"></a>Siehe auch
- [Help Viewer 2.1-Administratorhandbuch](https://go.microsoft.com/fwlink/?LinkId=243985)
+ [Help Viewer 2.1-Administratorhandbuch](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

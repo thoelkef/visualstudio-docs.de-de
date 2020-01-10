@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d2916bd43571ddade68e3e642b5d006c26269670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298335"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850509"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Debuggen von Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Der Visual Studio-Debugger ermöglicht Ihnen, die Ausführung eines Programms zu
 |[Auslösen von Anhalte-, Fortsetzungs- und Hintergrundereignissen für Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|Der Debugger deaktiviert Ereignisse der Prozesslebensdauer-Verwaltung (Windows Process Lifetime Management, PLM), die Apps anhalten, fortsetzen und beenden. Sie können diese Ereignisse über die Symbolleiste des Debuggers auslösen.<br /><br /> Hintergrundaufgaben ermöglichen es Ihnen, wichtige Vorgänge auch dann auszuführen, wenn Ihre App angehalten wurde. Der Debugger ermöglicht es Ihnen, diese Hintergrundaufgaben zu starten und zu debuggen.|
 
 ## <a name="see-also"></a>Siehe auch
- [Debuggen in Visual Studio (in der MSDN Library)](https://go.microsoft.com/fwlink/?LinkID=226896)
+ [Debuggen in Visual Studio (in der MSDN Library)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

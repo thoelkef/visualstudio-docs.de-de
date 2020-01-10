@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296909"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847807"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Vorbereiten Ihres Computers für die Verwendung der programmgesteuerten Erfassung  
  Die API für die programmgesteuerte Erfassung verwendet Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um die Erfassungsfunktionen bereitzustellen. Auf dem Computer, auf dem die App läuft, müssen die Remote-Tools installiert sein, auch wenn Sie die programmgesteuerte Erfassung auf Ihrem lokalen Computer anwenden. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss nicht laufen, wenn Sie die programmgesteuerte Erfassung auf einem lokalen Computer durchführen.  
   
- Um die APIs für die Remote-Erfassung in einer App zu verwenden, die auf einem Computer läuft, müssen Sie zuerst die Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf diesem Computer installieren. Verschiedene Versionen der Remote-Tools unterstützen verschiedene Hardwareplattformen. Informationen zur Installation der Remotetools finden Sie auf der Download-Website von Microsoft auf der [Downloadseite für Remotetools](https://go.microsoft.com/fwlink/p/?LinkId=246691) .  
+ Um die APIs für die Remote-Erfassung in einer App zu verwenden, die auf einem Computer läuft, müssen Sie zuerst die Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf diesem Computer installieren. Verschiedene Versionen der Remote-Tools unterstützen verschiedene Hardwareplattformen. Informationen zur Installation der Remotetools finden Sie auf der Download-Website von Microsoft auf der [Downloadseite für Remotetools](https://visualstudio.microsoft.com/downloads#remote-tools) .  
   
  Alternativ werden durch [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die erforderlichen Komponenten zur Durchführung der Remote-Erfassung für 32-Bit-Apps installiert.  
   

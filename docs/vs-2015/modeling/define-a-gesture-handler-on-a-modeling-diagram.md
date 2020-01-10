@@ -12,21 +12,21 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299307"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850491"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Benutzer auf Elemente doppelklicken oder Elemente in ein UML-Diagramm ziehen. Sie können diese Erweiterungen in eine Visual Studio-Integrationserweiterung ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) packen, die Sie an andere Visual Studio-Benutzer verteilen können.
+In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Benutzer auf Elemente doppelklicken oder Elemente in ein UML-Diagramm ziehen. Sie können diese Erweiterungen in eine Visual Studio-Integrationserweiterung ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) packen, die Sie an andere Visual Studio-Benutzer verteilen können.
 
  Wenn bereits ein integriertes Verhalten für den Diagrammtyp und den Elementtyp vorhanden ist, das gezogen werden soll, können Sie dieses Verhalten möglicherweise nicht hinzufügen oder überschreiben.
 
-## <a name="requirements"></a>Voraussetzungen
+## <a name="requirements"></a>-Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -56,7 +56,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
 1. Erstellen Sie in einer neuen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektmappe oder in einer vorhandenen Projektmappe ein Klassenbibliotheksprojekt.
 
-   1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
+   1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
 
    2. Erweitern Sie unter **Installierte Vorlagen**entweder **Visual C#** oder **Visual Basic**, und wählen Sie anschließend in der mittleren Spalte **Klassenbibliothek**aus.
 

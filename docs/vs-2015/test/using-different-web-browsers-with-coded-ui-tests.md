@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297953"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851216"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
     2. Deaktivieren Sie in den **Common Language Runtime-Ausnahmen** die Option **Vom Benutzercode unbehandelt**.
 
-## <a name="generate"></a> *Die Option zum Ändern von „BrowserWindow.CurrentBrowser“ wird im Test der programmierten UI nicht angezeigt.*
+## <a name="generate"></a>*Die Option zum Ändern von "BrowserWindow. currentbrowser" wird im Coded UI-Test nicht angezeigt.*
  Möglicherweise verwenden Sie eine Version von [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)], die Coded UI-Tests mit verschiedenen Webbrowsern nicht unterstützt. Zum Erstellen von Tests der programmierten UI müssen Sie Visual Studio Enterprise verwenden.
 
  *Was sollte ich noch wissen?*
@@ -115,7 +115,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
    **C:\Programme (x86)\Microsoft Visual Studio 11.0\Common7\IDE“**
 
-   Legen Sie die folgenden Werte fest:
+   Geben Sie die folgenden Werte an:
 
   - `EqtTraceLevel` im Abschnitt `system.diagnostics`.
 
@@ -138,18 +138,18 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
  [Beheben von Fehlern in browserübergreifenden Tests](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Anleitung
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>Häufig gestellte Fragen
- [Tests der codierten UI – FAQ 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Tests der codierten UI – FAQ 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Tests der codierten UI – FAQ 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Tests der codierten UI – FAQ 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Siehe auch
  [Verwenden von Benutzeroberflächen Automatisierung zum Testen ihrer vom Code](../test/use-ui-automation-to-test-your-code.md) [unterstützten Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) Analysieren von Tests der programmierten [UI mithilfe von Test Protokollen](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

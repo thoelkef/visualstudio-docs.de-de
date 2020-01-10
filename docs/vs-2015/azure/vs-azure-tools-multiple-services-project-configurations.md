@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a151e16537eb143f27e9fd518cdc2495ac954563
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299019"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851372"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -37,7 +37,7 @@ Informationen zu den zugrunde liegenden Schemas für die Dienstdefinition und di
 
 Legt fest, welche `ServiceConfiguration.*.cscfg`-Datei von Änderungen betroffen ist. Standardmäßig sind lokale Varianten und Cloudvarianten vorhanden, und Sie können den Befehl **... verwalten** verwenden, um Konfigurationsdateien zu kopieren, umzubenennen und zu entfernen. Diese Dateien werden Ihrem Clouddienstprojekt hinzugefügt und im **Projektmappen-Explorer** angezeigt. Das Umbenennen oder Entfernen von Konfigurationen kann jedoch nur über dieses Steuerelement erfolgen.
 
-### <a name="instances"></a>Instanzen
+### <a name="instances"></a>-Instanzen
 
 Legen Sie die Eigenschaft **Instanzenanzahl** auf die Anzahl der Instanzen fest, die der Dienst für diese Rolle ausführen soll.
 
@@ -57,7 +57,7 @@ Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-
 
 ## <a name="settings-page"></a>Seite „Einstellungen“
 
-Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. In der Rolle ausgeführter Code kann die Werte der Konfigurationseinstellungen zur Laufzeit anhand von Klassen lesen, die von der [verwalteten Azure-Bibliothek](https://go.microsoft.com/fwlink?LinkID=171026) bereitgestellt werden, insbesondere die Methode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. In der Rolle ausgeführter Code kann die Werte der Konfigurationseinstellungen zur Laufzeit anhand von Klassen lesen, die von der [verwalteten Azure-Bibliothek](https://msdn.microsoft.com/library/azure/dn602775(v=azure.11).aspx) bereitgestellt werden, insbesondere die Methode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurieren einer Verbindungszeichenfolge für ein Speicherkonto
 

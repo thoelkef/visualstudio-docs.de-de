@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298127"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846557"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell-Skript)
 ## <a name="syntax"></a>Syntax
@@ -32,15 +32,15 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Konfiguration
+## <a name="configuration"></a>-Konfiguration
 Der Pfad zur JSON-Konfigurationsdatei, in der die Details der Bereitstellung beschrieben sind.
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |none |
+| Aliase |Keine |
 | Erforderlich? |true |
-| Position |benannt |
-| Standardwert |none |
+| Position |Benannt |
+| Standardwert |Keine |
 | Pipelineeingabe akzeptieren? |false |
 | Platzhalterzeichen akzeptieren? |false |
 
@@ -49,22 +49,22 @@ Der Name des Azure-Abonnements, in dem Sie die Website erstellen möchten.
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |none |
+| Aliase |Keine |
 | Erforderlich? |false |
-| Position |benannt |
-| Standardwert |none |
+| Position |Benannt |
+| Standardwert |Keine |
 | Pipelineeingabe akzeptieren? |false |
 | Platzhalterzeichen akzeptieren? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Der Pfad zum Webbereitstellungspaket für die Veröffentlichung auf der Website. Sie können dieses Paket in Visual Studio mithilfe des Assistenten "Web veröffentlichen" erstellen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure-Clouddiensten und ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
+Der Pfad zum Webbereitstellungspaket für die Veröffentlichung auf der Website. Sie können dieses Paket in Visual Studio mithilfe des Assistenten "Web veröffentlichen" erstellen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure-Clouddiensten und ASP.NET](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019).
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |none |
+| Aliase |Keine |
 | Erforderlich? |false |
-| Position |benannt |
-| Standardwert |none |
+| Position |Benannt |
+| Standardwert |Keine |
 | Pipelineeingabe akzeptieren? |false |
 | Platzhalterzeichen akzeptieren? |false |
 
@@ -73,10 +73,10 @@ Der Benutzername und das Kennwort für die SQL-Datenbank in Azure.
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |none |
+| Aliase |Keine |
 | Erforderlich? |false |
-| Position |benannt |
-| Standardwert |none |
+| Position |Benannt |
+| Standardwert |Keine |
 | Pipelineeingabe akzeptieren? |false |
 | Platzhalterzeichen akzeptieren? |false |
 
@@ -85,9 +85,9 @@ Falls "true", werden Nachrichten vom Skript in den Ausgabedatenstrom ausgegeben.
 
 | Parameter | Standardwert |
 | --- | --- |
-| Aliase |none |
+| Aliase |Keine |
 | Erforderlich? |false |
-| Position |benannt |
+| Position |Benannt |
 | Standardwert |false |
 | Pipelineeingabe akzeptieren? |false |
 | Platzhalterzeichen akzeptieren? |false |

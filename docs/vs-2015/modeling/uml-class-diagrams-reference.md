@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da4e0e3bab904b660f3d843e105b7d256a63a1b5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 06e83e254cad77d4ede9716a18a51f6476fb51ad
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297216"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850182"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML-Klassendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74297216"
 Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, die sowohl intern als auch bei der Kommunikation mit Benutzern von der Anwendung verwendet werden. Die Informationen werden ohne Verweis auf eine bestimmte Implementierung beschrieben. Die Klassen und Beziehungen können auf viele verschiedene Arten implementiert werden, z. B. Datenbanktabellen, XML-Knoten oder Zusammenstellungen von Softwareobjekten.
 
 > [!NOTE]
-> In diesem Thema geht es um UML-Klassendiagramme. Es gibt eine weitere Art von Klassendiagramm, das .NET-Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](https://go.microsoft.com/fwlink/?LinkId=142231).
+> In diesem Thema geht es um UML-Klassendiagramme. Es gibt eine weitere Art von Klassendiagramm, das .NET-Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [Entwerfen und Anzeigen von Klassen und Typen](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
  Um ein UML-Klassendiagramm zu erstellen, wählen Sie im Menü **Architektur** die Option **neues UML-oder ebenendiagramm**aus. Weitere Informationen zum Zeichnen von UML-Klassendiagrammen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md). Weitere Informationen zum Erstellen und Zeichnen von Modellierungs Diagrammen finden Sie unter [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md).
 
@@ -65,10 +65,10 @@ Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, di
 |     4     |      **Vorgang**       | Eine Methode oder Funktion, die von Instanzen eines Klassifizierers ausgeführt werden kann. Klicken Sie zum Hinzufügen eines Vorgangs auf den Abschnitt **Vorgänge** , und drücken Sie dann die **Eingabe**Taste. Geben Sie die Signatur des Vorgangs ein. Weitere Informationen finden Sie unter [Eigenschaften von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
 |     5     |     **Anwalt**      |                                                                  Eine Beziehung zwischen den Membern von zwei Klassifizierern. Weitere Informationen finden Sie unter [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
 |    5a     |     **Aggregation**      |                                                                                                    Eine Zuordnung, die eine gemeinsame Besitzbeziehung darstellt. Die **Aggregations** Eigenschaft der Rolle "Besitzer" ist auf " **Shared**" festgelegt.                                                                                                     |
-|    5 b     |     **Gas**      |                                                                                                      Eine Zuordnung, die eine ganzteilige Besitzbeziehung darstellt. Die **Aggregations** Eigenschaft der Rolle "Besitzer" ist auf " **Composite**" festgelegt.                                                                                                      |
+|    5 b     |     **Komposition**      |                                                                                                      Eine Zuordnung, die eine ganzteilige Besitzbeziehung darstellt. Die **Aggregations** Eigenschaft der Rolle "Besitzer" ist auf " **Composite**" festgelegt.                                                                                                      |
 |     6     |   **Zuordnungs Name**   |                                                                                                                                         Der Name einer Zuordnung. Der Name kann leer gelassen werden.                                                                                                                                          |
 |     7     |      **Rollen Name**       |                       Der Name einer Rolle, d. h. ein Ende einer Zuordnung. Kann verwendet werden, um auf das zugeordnete Objekt zu verweisen. In der vorherigen Abbildung steht `O` für jede `O.ChosenMenu`-Bestellung für die zugeordnete Speisekarte.<br /><br /> Jede Rolle verfügt über eigene Eigenschaften, die unter den Eigenschaften der Zuordnung aufgeführt sind.                       |
-|     8     |     **Deu**     |                                         Gibt an, wie viele der Objekte an diesem Ende mit jedem Objekt am anderen Ende verknüpft werden können. Im Beispiel muss jede Bestellung mit genau einer Speisekarte verknüpft sein.<br /><br /> **\\** \* bedeutet, dass es keine Obergrenze für die Anzahl der Verknüpfungen gibt.                                         |
+|     8     |     **Multiplizität**     |                                         Gibt an, wie viele der Objekte an diesem Ende mit jedem Objekt am anderen Ende verknüpft werden können. Im Beispiel muss jede Bestellung mit genau einer Speisekarte verknüpft sein.<br /><br /> **\\** \* bedeutet, dass es keine Obergrenze für die Anzahl der Verknüpfungen gibt.                                         |
 |     9     |    **Generalisierung**    |  Der *spezifische* Klassifizierer erbt seinen Teil seiner Definition von der *allgemeinen* Klassifizierung. Der allgemeine Klassifizierer befindet sich am Pfeilende des Connectors. Attribute, Zuordnungen und Vorgänge werden vom spezifischen Klassifizierer geerbt.<br /><br /> Verwenden Sie das **Vererbungs** Tool, um eine Generalisierung zwischen zwei Klassifizierern zu erstellen.   |
 
  ![Paket mit Schnittstelle und Enumeration](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")
@@ -79,7 +79,7 @@ Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, di
 |11|**Enumeration**|Ein Klassifizierer, der aus einem Satz von Literalwerten besteht.|
 |12|**Pakete**|Eine Gruppe von Klassifizierern, Zuordnungen, Lebenslinien, Komponenten und Paketen. Ein logisches Klassendiagramm zeigt, dass die Memberklassifizierer und -pakete im Paket enthalten sind.<br /><br /> Namen werden innerhalb von Paketen festgelegt, sodass sich **Class1** innerhalb von **package1** von **Class1** außerhalb dieses Pakets unterscheidet. Der Name des Pakets wird als Teil der Eigenschaften des **qualifizierten Namens** seines Inhalts angezeigt.<br /><br /> Sie können die Eigenschaft des **verknüpften Pakets** eines beliebigen UML-Diagramms so festlegen, dass Sie auf ein Paket verweist. Alle Elemente, die Sie in diesem Diagramm erstellen, werden dann Teil des Pakets. Sie werden unter dem Paket im **UML-Modell-Explorer**angezeigt.|
 |13|**Importieren**|Eine Beziehung zwischen Paketen, die angibt, dass ein Paket alle Definitionen eines anderen Pakets enthält.|
-|14|**Gkeit**|Die Definition oder Implementierung des abhängigen Klassifizierers kann sich möglicherweise ändern, wenn der Klassifizierer am Pfeilspitzenende geändert wird.|
+|14|**Abhängigkeit**|Die Definition oder Implementierung des abhängigen Klassifizierers kann sich möglicherweise ändern, wenn der Klassifizierer am Pfeilspitzenende geändert wird.|
 
  ![Mit dem "-und Lollipop" angezeigte Realisierung](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")
 

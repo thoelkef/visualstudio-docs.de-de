@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538985"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851487"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Funktionen in 
  Die Visual Studio-Tools für Apache Cordova sind das Ergebnis enger Zusammenarbeit zwischen Microsoft und der Open Source Apache Cordova-Community. Die Tools ermöglichen plattformübergreifende mobile Entwicklung mit HTML, CSS und JavaScript (oder Typescript). Sie können mit einer einzigen Codebasis für Android, iOS und Windows entwickeln und von der reichhaltigen Visual Studio-IDE mit JavaScript IntelliSense, dem DOM Explorer, der JavaScript-Konsole, Haltepunkten, Überwachungen, dem Lokalfenster, "Nur eigenen Code" und mehr profitieren.  Mit den Visual Studio-Tools für Apache Cordova erhalten Ihre Apps über Plug-Ins, die eine gemeinsame JavaScript-API bereitstellen, Zugriff auf systemeigene Gerätefunktionen auf allen Plattformen. Informationen zu den ersten Schritten finden Sie unter [Get Started with Visual Studio-Tools for Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Plattformübergreifende mobile Spiele in C# mit Unity
- Unity ist eine häufig verwendete Plattform für die 2D- und 3D-Spielentwicklung auf mehreren Plattformen. Sie können ein Spiel in C# schreiben und es dann nativ unter Android, iOS, Windows Phone und vielen weiteren Plattformen ausführen. Die Visual Studio-Tools für Unity sind eine Erweiterung, die Unity mit der Visual Studio-IDE integrieren. Mit dieser Erweiterung erhalten Sie zusätzlich zu allen Features der IDE und des Debuggers von Visual Studio Produktivitätsfeatures, die auf Unity-Entwickler ausgerichtet sind. Visual Studio-Tools für Unity Preview 2.0 sorgt neben einer Reihe neuer Features wie besserer Visualisierung von Objekten in den Fenstern "Lokal" und "Überwachen" zusätzlich für Unterstützung von Visual Studio 2015. Microsoft hat kürzlich SyntaxTree, den Ersteller der Visual Studio-Tools für Unity übernommen. Weitere Informationen zu Visual Studio-Tools für Unity und den Download der Visual Studio-Tools für Unity 2.0 Preview 2 finden Sie unter [Visual Studio-Tools für Unity 2.0](https://aka.ms/vstu).
+ Unity ist eine häufig verwendete Plattform für die 2D- und 3D-Spielentwicklung auf mehreren Plattformen. Sie können ein Spiel in C# schreiben und es dann nativ unter Android, iOS, Windows Phone und vielen weiteren Plattformen ausführen. Die Visual Studio-Tools für Unity sind eine Erweiterung, die Unity mit der Visual Studio-IDE integrieren. Mit dieser Erweiterung erhalten Sie zusätzlich zu allen Features der IDE und des Debuggers von Visual Studio Produktivitätsfeatures, die auf Unity-Entwickler ausgerichtet sind. Visual Studio-Tools für Unity Preview 2.0 sorgt neben einer Reihe neuer Features wie besserer Visualisierung von Objekten in den Fenstern "Lokal" und "Überwachen" zusätzlich für Unterstützung von Visual Studio 2015. Microsoft hat kürzlich SyntaxTree, den Ersteller der Visual Studio-Tools für Unity übernommen. Weitere Informationen zu Visual Studio-Tools für Unity und den Download der Visual Studio-Tools für Unity 2.0 Preview 2 finden Sie unter [Visual Studio-Tools für Unity 2.0](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Plattformübergreifende Apps und Bibliotheken für systemeigenes C++
  C++ ist eine Sprache, die systemintern auf den meisten mobilen Geräten verfügbar ist. Sie können Sie verwenden, um plattformübergreifend gemeinsam genutzte Codebibliotheken zu schreiben, die für mehrere mobile Plattformen entwickelt werden können. Sie können sogar komplette mobile Apps in C++ erstellen. Mit Visual C++ erhalten Sie die Tools an die Hand, um plattformübergreifenden Code zu bearbeiten, zu erstellen, bereitzustellen und zu debuggen. Zusätzlich zu den Vorlagen für Windows-Apps können Sie Projekte aus Vorlagen für systemeigene Android Aktivitäts-Apps, iOS-Apps oder freigegebene Code-Bibliotheksprojekte für mehrere Plattformen erstellen, die hybride Xamarin-Apps enthalten. Mit dem plattformspezifischen IntelliSense können Sie APIs entdecken und Code für Android-, iOS- oder Windows-Ziele generieren. Sie können Ihr Build für x86- oder ARM-Plattformen konfigurieren und Ihren Code für den iOS-Simulator oder für an einen in das Netzwerk eingebundenen Mac angeschlossene iOS-Geräte und direkt angeschlossene Android-Geräte bereitstellen, oder Sie können zu Testzwecken den leistungsfähigen Microsoft Visual Studio-Emulator für Android verwenden. Im Visual Studio-Debugger können Sie Haltepunkte setzen, Variablen überwachen, den Stapel anzeigen und C++-Code schrittweise durchlaufen. Sie können abgesehen vom plattformspezifischsten Code den Code für mehrere App-Plattformen freigeben und eine Lösung für alle Plattformen in Visual Studio schreiben.
@@ -107,7 +107,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Funktionen in 
 
 1. Azure-Mobile Services
 
-2. Azure Storage
+2. Azure-Speicher
 
 3. Office 365 (E-Mail, Kontakte, Kalender, Dateien, Benutzer und Gruppen)
 
@@ -140,7 +140,7 @@ Informationen zu den Neuerungen bei der Diagnose finden Sie unter [What es New i
 Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschiedene Arten von Diagnosen und Analysen des Codes durchgeführt werden können:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zu den ersten Schritten finden Sie unter [perftips: Performance Information at-a-glance while Debugging with Visual Studio (Leistungsinformationen auf einen Blick beim Debuggen mit Visual Studio)](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zu den ersten Schritten finden Sie unter [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
 
 ### <a name="error-list"></a>Fehlerliste
  Die Fehlerliste kann nun nach einer beliebigen Spalte gefiltert werden. Sie zeigt zudem eine Liveansicht von Fehlern, Warnungen und Codeanalysen für die gesamte C#- oder Visual Basic-Projektmappe an, selbst wenn eine Codeänderung Tausende von Warnungen nach sich zieht. Die neue Fehlerliste ist abwärtskompatibel zur derzeitigen Verwendung. Weitere Informationen finden Sie unter [Error List Window](./ide/reference/error-list-window.md).
@@ -176,21 +176,21 @@ Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschied
 
  ![Visual Studio-Menü Element für benutzerdefiniertes Layout](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
-### <a name="notification-hub"></a>Notification Hub
+### <a name="notification-hub"></a>Benachrichtigungs-Hub
  Die Benutzeroberfläche für den Notification Hub wurde optimiert und kann jetzt schneller durchsucht werden. Es wurden weitere Arten von Benachrichtigungen hinzugefügt, z. B. für Leistungsprobleme, Renderingprobleme und Abstürze, und Sie können Visual Studio jetzt anweisen, eine Benachrichtigung nicht mehr anzuzeigen. Weitere Informationen finden Sie unter [Visual Studio-Benachrichtigungen](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Ermitteln, was mit Ihrem Code geschehen ist (nur Enterprise-und Professional-Editionen)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Ermitteln, was mit Ihrem Code geschehen ist (nur Enterprise und Professional Editionen)
  Bleiben Sie auf Ihre Arbeit konzentriert, während Sie Informationen zum Code suchen, ohne den Editor zu verlassen. Sie können Änderungen und andere Verläufe für Arbeitselemente, Fehler, Codeüberprüfungen usw. für den Code prüfen, der in Visual Studio Team Services (VSTS) oder in Team Foundation Server (TFS) gespeichert ist.
 
  Visual Studio Professional und Visual Studio Enterprise ermöglichen jetzt Folgendes:
 
 - Rufen Sie den Verlauf für eine gesamte Codedatei im Visual Studio-Editor ab.
 
-   ![codelta ens: Code Dateidetails anzeigen](./ide/media/codelensfilelevel.png "Codelta-FileLevel")
+   ![Codelta ens: Code Dateidetails erhalten](./ide/media/codelensfilelevel.png "Codelta-FileLevel")
 
 - Zeigen Sie ein Diagramm mit den Personen an, die Ihren Code geändert haben. Dadurch können Sie Muster bei den Änderungen Ihres Teams erkennen und ihre Auswirkung bewerten.
 
-   ![codelta ens: Siehe Verlauf der Codeänderungen als Graph-](./ide/media/codelens.png "CodeLens")
+   ![Codelta ens: siehe Verlauf der Codeänderungen als Diagramm](./ide/media/codelens.png "CodeLens")
 
 - Erkennen Sie ganz leicht, wann der Code zuletzt geändert wurde.
 
@@ -257,7 +257,7 @@ Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschied
 ### <a name="send-a-frown"></a>Ein Stirnrunzeln senden
  Zu hören, an welchen Punkten wir das Produkt verbessern müssen, hilft uns, unseren Nachholbedarf zu verwalten, indem wir zuerst die Dinge in den Fokus rücken, die unseren Kunden am wichtigsten sind. Wenn Sie sich über etwas ärgern, teilen Sie uns dies mithilfe des Features **Stirnrunzeln senden** direkt über die IDE mit. Auch dieser Prozess ist ganz einfach:
 
- Klicken Sie auf das gelbe Smileysymbol in der Titelleiste, und klicken Sie dann auf **Stirnrunzeln senden**. Sagen Sie uns, was Ihnen nicht gefallen hat, und klicken Sie dann auf die Schaltfläche "Stirnrunzeln senden". Weitere Informationen finden Sie unter [Sprechen Sie mit uns](./ide/talk-to-us.md).
+ Klicken Sie auf das gelbe Smileysymbol in der Titelleiste, und klicken Sie dann auf **Stirnrunzeln senden**. Sagen Sie uns, was Ihnen nicht gefallen hat, und klicken Sie dann auf die Schaltfläche "Stirnrunzeln senden". Weitere Informationen finden Sie unter [Talk to Us](./ide/talk-to-us.md).
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Berichte über Abstürze, Hängen und Leistungsprobleme
  Gelegentlich reicht eine kurze Mitteilung bei einem Stirnrunzeln nicht aus, um die vollständige Auswirkung von Vorkommnissen darzustellen, die Ihnen nicht gefallen. Bei jedem Hängen, Absturz oder Leistungsproblem können Sie mit dem Dialogfeld, das nach dem Senden eines Stirnrunzelns angezeigt wird, die Schritte zur Reproduktion des Problems, Crashdumps und Ablaufverfolgungsdateien ohne weiteres weitergeben.

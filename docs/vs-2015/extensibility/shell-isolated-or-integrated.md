@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300490"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850230"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isoliert oder integriert)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Ihre eigene, auf Visual Studio basierende Anwendung im integrierten oder isolierten Modus erstellen. Im integrierten Modus sind neben ihrer Anwendung viele Visual Studio-Features verfügbar. Im isolierten Modus wählen Sie eine Teilmenge von Visual Studio-Funktionen aus, die Sie zusammen mit ihrer eigenen Erweiterung verteilen möchten.  
+Sie können Ihre eigene, auf Visual Studio basierende Anwendung im integrierten oder isolierten Modus erstellen. Im integrierten Modus stehen viele Funktionen von Visual Studio über Ihre Anwendung hinaus zur Verfügung. Im isolierten Modus wählen Sie eine Teilmenge von Visual Studio-Funktionen aus, die Sie zusammen mit Ihrer eigenen Extension verteilen möchten.  
   
 ## <a name="integrated-mode"></a>Integrierter Modus  
  Der integrierte Modus ermöglicht es Ihren Benutzern, Visual Studio-Standardfunktionen zusammen mit Ihren benutzerdefinierten Tools zu verwenden. Die integrierte Shell dient hauptsächlich zum Hosting von Programmiersprachen und Software Entwicklungs Tools.  
@@ -55,7 +55,7 @@ Sie können Ihre eigene, auf Visual Studio basierende Anwendung im integrierten 
 > - Ihre eigenen EULA, bei denen Ihre Kunden den Bedingungen zustimmen müssen, die die integrierte oder isolierte Shell von Visual Studio schützen, zumindest so weit wie die Microsoft-Endbenutzer-Lizenzbedingungen für die shellsoftware.  
   
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
- Weitere Informationen zu verteilbaren Paketen finden Sie auf der Website [Visual Studio-Erweiterbarkeits Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Weitere Informationen zu verteilbaren Paketen finden Sie auf der Website [Visual Studio-Erweiterbarkeits Downloads](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)

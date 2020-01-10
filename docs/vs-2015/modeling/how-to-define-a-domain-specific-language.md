@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299551"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850698"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe von einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
- Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualizaton und Modellierungs-SDK](https://go.microsoft.com/fwlink/?LinkID=186128) .
+ Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualizaton und Modellierungs-SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
 
 ## <a name="templates"></a>Auswählen einer Vorlagen Lösung
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Visual Studio-Visualisierungs- und Modellierungs-SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe von der Projektvorlage "Domänenspezifische Sprache".
 
@@ -192,7 +192,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 
  Klicken Sie in der-Klasse auf **Domänen Eigenschaften** , drücken Sie die EINGABETASTE, und geben Sie dann den Namen einer Eigenschaft ein. Der Standardtyp einer Domäneneigenschaft lautet String. Wenn Sie den Typ ändern möchten, wählen Sie die Domänen Eigenschaft aus, und legen Sie den **Typ** im **Eigenschaften** Fenster fest. Wenn der gewünschte Typ nicht in der Dropdown Liste enthalten ist, finden Sie weitere Informationen unter [Hinzufügen von Eigenschafts Typen](#addTypes).
 
- **Legen Sie eine Eigenschaft für den Element Namen fest.** Wählen Sie eine Domänen Eigenschaft aus, die zum Identifizieren von Elementen im sprach-Explorer verwendet werden kann. Beispielsweise könnten Sie in der "Song"-Domänenklasse die "Titel"-Domäneneigenschaft auswählen. Legen Sie im Fenster **Eigenschaften** den Wert **Element Name** auf `true`fest.
+ **Legen Sie eine Eigenschaft für den Element Namen fest.** Wählen Sie eine Domäneneigenschaft aus, mit der Elemente im Sprach-Explorer identifiziert werden können. Beispielsweise könnten Sie in der "Song"-Domänenklasse die "Titel"-Domäneneigenschaft auswählen. Legen Sie im Fenster **Eigenschaften** den Wert **Element Name** auf `true`fest.
 
 ### <a name="create-derived-domain-classes"></a>Erstellen abgeleiteter Domänenklassen
  Soll eine Domänenklasse Varianten aufweisen, die ihre Eigenschaften und Beziehungen erben, erstellen Sie von der Domänenklasse abgeleitete Klassen. "Album" könnte z. B. die abgeleiteten Klassen WMA und MP3 haben.
@@ -346,7 +346,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 
  Passen Sie ggf. **die Multiplizitäten der einzelnen Rollen an**. Soll jede Person höchstens einen Manager haben, legen Sie die Multiplizität (unter der Beschriftung "Manager") im Diagramm auf 0..1 fest.
 
- **Fügen Sie der Beziehung Domänen Eigenschaften hinzu.** In der Abbildung hat die Beziehung "Artist-Album" eine Eigenschaft der Rolle "Role".
+ **Fügen Sie der Beziehung Domänen Eigenschaften hinzu.** In der Abbildung hat die Beziehung zwischen Interpret und Album eine Eigenschaft "Rolle".
 
  **Legen Sie die Eigenschaft lässt Duplikate der Beziehung ein,** wenn mehrere Verknüpfungen derselben Klasse zwischen demselben paar von Modellelementen vorhanden sein können. Beispielsweise könnten Sie zulassen, dass ein Lehrer einen Schüler in mehreren Fächern unterrichtet.
 
@@ -398,7 +398,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 
 5. **Erstellen Sie Verbindungen** zwischen den Formen. Klicken Sie auf das Konnektorwerkzeug, auf eine Form und dann auf eine andere Form.
 
-6. **Stellen Sie sicher, dass Sie keine Verbindungen zwischen nicht geeigneten Klassen erstellen können.** Wenn Ihre Beziehung beispielsweise zwischen den Alben und Künstlern besteht, stellen Sie sicher, dass Sie keine Künstler mit Künstlern verknüpfen können.
+6. **Stellen Sie sicher, dass Sie keine Verbindungen zwischen nicht geeigneten Klassen erstellen können.** Besteht die Beziehung beispielsweise zwischen Alben und Interpreten, überprüfen Sie, ob Sie nicht Interpreten mit Interpreten verbinden können.
 
 7. **Überprüfen Sie, ob die Multiplizitäten korrekt sind. Stellen Sie z. b. sicher, dass Sie eine Person nicht mit mehreren Vorgesetzten verbinden können.**
 
@@ -417,7 +417,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 
  Am einfachsten erzielen Sie diesen Effekt in einer DSL-Definition, indem Sie eine Domänenklasse für den Container und eine Domänenklasse für jede Liste definieren. Die Containerklasse wird der Depot-Form zugeordnet.
 
- ![Form Zuordnung](../modeling/media/music-mapcomp.png "Music_MapComp")
+ ![Formenzuordnung](../modeling/media/music-mapcomp.png "Music_MapComp")
 
  Weitere Informationen finden Sie unter [Eigenschaften von Depot Formen](../modeling/properties-of-compartment-shapes.md).
 
@@ -608,8 +608,8 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 
  Siehe auch Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Problem
- In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Forum Visualisierungs Tools extensibililty](https://go.microsoft.com/fwlink/?LinkId=186074).
+## <a name="trouble"></a> Problembehandlung
+ In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Forum Visualisierungs Tools extensibililty](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 |Problem|Vorschlag|
 |-------------|----------------|

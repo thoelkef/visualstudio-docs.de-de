@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300249"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852006"
 ---
 # <a name="create-models-for-your-app"></a>Erstellen von Modellen für Ihre App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mithilfe von Modellierungsdiagrammen können Sie Ideen zum Code und den Benutzeranforderungen, die das Softwaresystem unterstützen muss, verstehen, verdeutlichen und kommunizieren. Beispielsweise können Sie zum Beschreiben und Kommunizieren von Benutzeranforderungen UML-Anwendungsfalldiagramme (Unified Modeling Language) sowie Aktivitäts-, Klassen- und Sequenzdiagramme verwenden. Um die Funktionalität Ihres Systems zu beschreiben und zu kommunizieren, können Sie UML-Komponenten-, Klassen-, Aktivitäts- und Sequenzdiagramme verwenden.
 
- Siehe [Channel 9-Video: verbessern der Architektur durch Modellierung](https://go.microsoft.com/fwlink/?LinkID=252078).
+ Siehe [Channel 9-Video: verbessern der Architektur durch Modellierung](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  In dieser Version können Sie die folgenden UML-Diagramme erstellen:
 
@@ -73,7 +73,7 @@ Mithilfe von Modellierungsdiagrammen können Sie Ideen zum Code und den Benutzer
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|**Sonder**|**Task**|
+|**Thema**|**Task**|
 |---------------|--------------|
 |[Erstellen von UML-Modellierungsprojekten und -Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Erstellen Sie Modelle** , und fügen Sie Diagramme hinzu.|
 |[Bearbeiten von UML-Modellen und -Diagrammen](../modeling/edit-uml-models-and-diagrams.md)|**Zeichnen Sie Diagramme** , um das Modell zu bearbeiten.|
@@ -85,7 +85,7 @@ Mithilfe von Modellierungsdiagrammen können Sie Ideen zum Code und den Benutzer
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
-|**Sonder**|**Task**|
+|**Thema**|**Task**|
 |---------------|--------------|
 |[Visualisieren von Code](../modeling/visualize-code.md)|Erstellen Sie Code Maps und Ebenendiagramme zum besseren Verständnis von unbekanntem Code.|
 |[Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)|Verwenden Sie Modelle, um die Anforderungen der Benutzer zu verdeutlichen und zu kommunizieren.|
@@ -98,4 +98,4 @@ Mithilfe von Modellierungsdiagrammen können Sie Ideen zum Code und den Benutzer
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

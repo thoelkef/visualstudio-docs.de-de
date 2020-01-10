@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299274"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850974"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#)
 Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Funktion "Bearbeiten und Fortsetzen" nicht zulässig ist.  
@@ -75,7 +75,7 @@ Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Fu
   
  Bearbeitungen von deklarativem Code, die die öffentliche Struktur einer Klasse beeinflussen, sind generell unzulässig. Einige der Bearbeitungen, die Sie ggf. an einer Methode, an Eigenschaftentext oder an privaten Deklarationen in einer Klasse vornehmen, sind ebenfalls unzulässig. Wenn möglich wird Code, der nicht bearbeitet werden kann von "Bearbeiten und Fortsetzen" hellgrau markiert, und eine Fehlermeldung wird angezeigt.  
   
- Weitere Informationen zu unterstützten Bearbeitungen bei „Bearbeiten und Fortfahren“ für [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]finden Sie unter [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Wenn Sie weitere Informationen zu einem bestimmten Fehler oder einer Warnung benötigen, können Sie im MSDN [Visual C#-IDE-Forum](https://go.microsoft.com/fwlink/?LinkId=214693)suchen oder posten.  
+ Weitere Informationen zu unterstützten Bearbeitungen bei „Bearbeiten und Fortfahren“ für [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]finden Sie unter [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Wenn Sie weitere Informationen zu einem bestimmten Fehler oder einer Warnung benötigen, können Sie im MSDN [Visual C#-IDE-Forum](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads)suchen oder posten.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

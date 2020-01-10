@@ -1,82 +1,82 @@
 ---
-title: Diagnostizieren von UI-Erweiterung in Visual Studio verzögert | Microsoft-Dokumentation
+title: Diagnostizieren von Verzögerungen bei der Benutzeroberfläche in Visual Studio | Microsoft-Dokumentation
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912083"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849147"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Gewusst wie: Diagnostizieren von UI-Verzögerungen durch Erweiterungen
 
-Bei der Benutzeroberfläche nicht mehr reagiert, überprüft Visual Studio die Aufrufliste des UI-Threads, beginnt dabei auf der Blattebene und arbeitet sich zur Basis herunter. Wenn Visual Studio feststellt, dass ein Aufruf Stapelrahmen auf ein Modul gehört, die Teil einer installierten und aktivierten Erweiterung ist, wird eine Benachrichtigung angezeigt.
+Wenn die Benutzeroberfläche nicht mehr reagiert, untersucht Visual Studio den Aufrufstapel des UI-Threads, beginnend mit dem Blatt und arbeitet an der Basis. Wenn Visual Studio feststellt, dass ein Aufrufstapel Rahmen zu einem Modul gehört, das Teil einer installierten und aktivierten Erweiterung ist, wird eine Benachrichtigung angezeigt.
 
-![Verzögerung der Benutzeroberfläche (einen Stillstand) Benachrichtigung](media/ui-delay-notification-in-vs.png)
+![Benachrichtigung zur Benutzeroberflächen Verzögerung (nicht Reaktionsfähigkeit)](media/ui-delay-notification-in-vs.png)
 
-Die Benachrichtigung informiert den Benutzer, dass die Verzögerung der Benutzeroberfläche (d. h., die eine nicht reagierende Benutzeroberfläche in der Benutzeroberfläche) für das Ergebnis des Codes von einer Erweiterung gegangen sein könnte. Darüber hinaus werden die Benutzer mit Optionen, um die Erweiterung oder zukünftige Benachrichtigungen für diese Erweiterung zu deaktivieren.
+Die Benachrichtigung informiert den Benutzer darüber, dass die Benutzeroberflächen Verzögerung (d. h. die nicht Reaktionsfähigkeit in der Benutzeroberfläche) möglicherweise das Ergebnis von Code aus einer Erweiterung gewesen ist. Außerdem bietet der Benutzeroptionen, um die Erweiterung oder zukünftige Benachrichtigungen für diese Erweiterung zu deaktivieren.
 
-In diesem Dokument wird beschrieben, wie Sie diagnostizieren können, was zu Ihrem Erweiterungscode Benachrichtigungen zur UI Verzögerung verursacht.
+In diesem Dokument wird beschrieben, wie Sie diagnostizieren können, was in Ihrem Erweiterungs Code zu Benutzeroberflächen-Verzögerungs Benachrichtigungen führt.
 
 > [!NOTE]
-> Verwenden Sie nicht die experimentelle Instanz von Visual Studio, um Verzögerungen zu diagnostizieren. Einige Teile der Aufrufliste-Analyse für Benachrichtigungen zur UI Verzögerung erforderlich sind deaktiviert, wenn mit der experimentellen Instanz ein, was bedeutet, dass Benachrichtigungen zur UI Verzögerung nicht angezeigt werden können.
+> Verwenden Sie die experimentelle Instanz von Visual Studio nicht zur Diagnose von UI-Verzögerungen. Wenn die experimentelle Instanz verwendet wird, werden einige Teile der bei der Verwendung der UI-Verzögerungs Benachrichtigung erforderlichen Rückruf Stapel Analyse deaktiviert. Dies bedeutet, dass Benachrichtigungen für die Benutzeroberflächen Verzögerung möglicherweise nicht angezeigt werden.
 
-Eine Übersicht über den Diagnoseprozess lautet wie folgt aus:
-1. Identifizieren Sie die Trigger-Szenario.
-2. Starten Sie Visual Studio mit der Aktivität, die Protokollierung auf neu.
-3. Starten Sie die ETW-Ablaufverfolgung.
-4. Lösen Sie die Benachrichtigung erneut angezeigt werden.
-5. ETW-Ablaufverfolgung zu beenden.
-6. Überprüfen Sie das Aktivitätsprotokoll zum Abrufen der Verzögerung-ID.
-7. Analysieren Sie die ETW-Ablaufverfolgung, die mit der Verzögerung-ID aus Schritt 6.
+Eine Übersicht über den Diagnoseprozess lautet wie folgt:
+1. Identifizieren Sie das auslöserszenario.
+2. Starten Sie vs mit Aktivitätenprotokollierung neu.
+3. Etw-Ablauf Verfolgung starten.
+4. Veranlassen Sie, dass die Benachrichtigung erneut angezeigt wird.
+5. Beendet die ETW-Ablauf Verfolgung.
+6. Prüfen Sie das Aktivitätsprotokoll, um die Verzögerungs-ID zu erhalten.
+7. Analysieren Sie die ETW-Ablauf Verfolgung mithilfe der Verzögerungs-ID aus Schritt 6.
 
-In den folgenden Abschnitten werden wir diese Schritte ausführlicher durchlaufen.
+In den folgenden Abschnitten werden diese Schritte ausführlicher erläutert.
 
-## <a name="identify-the-trigger-scenario"></a>Identifizieren Sie das Szenario für trigger
+## <a name="identify-the-trigger-scenario"></a>Identifizieren des auslöserszenarios
 
-Um eine Verzögerung der Benutzeroberfläche zu diagnostizieren, müssen Sie zunächst zu identifizieren, welche (Sequenz von Aktionen) bewirkt, dass Visual Studio, um die Benachrichtigung angezeigt. Dies ist in der Reihenfolge für die Sie in der Lage sein, um die Benachrichtigung höher mit aktivierter Protokollierung auszulösen.
+Um eine Benutzeroberflächen Verzögerung zu diagnostizieren, müssen Sie zuerst bestimmen, welche Aktion (Aktions Folge) bewirkt, dass Visual Studio die Benachrichtigung anzeigt. Dies ist möglich, damit Sie die Benachrichtigung später mithilfe der Protokollierung aktivieren können.
 
-## <a name="restart-vs-with-activity-logging-on"></a>Starten Sie Visual Studio mit der Aktivität, die Protokollierung auf neu
+## <a name="restart-vs-with-activity-logging-on"></a>Neustart im Vergleich mit der Aktivitäts Protokollierung
 
-Visual Studio kann ein "Aktivitätsprotokoll" generieren, die hilfreiche Informationen bereitstellt, wenn ein Problem debuggen. So schalten Sie die Aktivität, die Protokollierung in Visual Studio, öffnen Sie Visual Studio mit der `/log` -Befehlszeilenoption. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
+Visual Studio kann ein "Aktivitätsprotokoll" generieren, das beim Debuggen eines Problems nützliche Informationen bereitstellt. Öffnen Sie Visual Studio mit der `/log`-Befehlszeilenoption, um die Aktivitäts Protokollierung in Visual Studio zu aktivieren. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
 ```
 
-Mehr darüber, wie Sie Ihre Visual Studio suchen können Instanz-ID finden Sie unter [Tools zum Erkennen und Verwalten von Visual Studio-Instanzen](../install/tools-for-managing-visual-studio-instances.md). Wir werden diese Aktivitätsprotokoll später benötigen, finden Sie weitere Informationen zu Verzögerungen und die zugehörigen Benachrichtigungen.
+Weitere Informationen dazu, wie Sie Ihre vs-Instanz-ID finden können, finden Sie unter [Tools zum erkennen und Verwalten von Visual Studio-Instanzen](../install/tools-for-managing-visual-studio-instances.md). Wir verwenden dieses Aktivitätsprotokoll später, um weitere Informationen zu Benutzeroberflächen Verzögerungen und zugehörigen Benachrichtigungen zu erhalten.
 
-## <a name="starting-etw-tracing"></a>ETW-Ablaufverfolgung wird gestartet.
+## <a name="starting-etw-tracing"></a>Etw-Ablauf Verfolgung wird gestartet
 
-Sie können [PerfView](https://github.com/Microsoft/perfview/) zum Sammeln von ETW-Ablaufverfolgung. PerfView bietet eine einfache zu bedienende-Schnittstelle, für das Sammeln von ETW-Ablaufverfolgung und der Analyse. Verwenden Sie den folgenden Befehl aus, um eine Ablaufverfolgung sammeln:
+Sie können [perfview](https://github.com/Microsoft/perfview/) verwenden, um eine ETW-Ablauf Verfolgung zu erfassen. Perfview bietet eine benutzerfreundliche Schnittstelle, die sowohl zum Erfassen einer etw-Ablauf Verfolgung als auch zur Analyse verwendet wird. Verwenden Sie den folgenden Befehl, um eine Ablauf Verfolgung zu erfassen:
 
 ```DOS
 Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:true -Providers:*Microsoft-VisualStudio:@StacksEnabled=true -NoV2Rundown /kernelEvents=default+FileIOInit+ContextSwitch+Dispatcher
 ```
 
-Dadurch wird den Anbieter "Microsoft-VisualStudio", der den Anbieter, die, den Visual Studio für Ereignisse im Zusammenhang mit Verzögerung Benachrichtigungen zur UI verwendet. Es gibt auch das Schlüsselwort für den kernelanbieter, die PerfView, zum Generieren verwenden können der **Thread Zeit Stapel** anzeigen.
+Dadurch wird der Anbieter "Microsoft-VisualStudio" aktiviert. Dies ist der Anbieter, den Visual Studio für Ereignisse verwendet, die sich auf Benachrichtigungen in der Benutzeroberfläche beziehen. Außerdem wird das Schlüsselwort für den Kernel Anbieter angegeben, den perfview zum Generieren der **Thread Zeit Stapel** Ansicht verwenden kann.
 
-## <a name="trigger-the-notification-to-appear-again"></a>Lösen Sie die Benachrichtigung erneut angezeigt.
+## <a name="trigger-the-notification-to-appear-again"></a>Benachrichtigung zum erneuten Anzeigen der Benachrichtigung
 
-Nachdem PerfView Ablaufverfolgungssammlung gestartet wurde, können Sie die Trigger-aktionsabfolge (aus Schritt 1) für die Benachrichtigung, wieder angezeigt werden. Wenn die Benachrichtigung angezeigt wird, können Sie Ablaufverfolgungssammlung für PerfView zum Verarbeiten und generieren die Ausgabedatei der Ablaufverfolgung beenden.
+Nachdem perfview die Ablauf Verfolgungs Sammlung gestartet hat, können Sie die triggeraktionssequenz (aus Schritt 1) verwenden, damit die Benachrichtigung erneut angezeigt wird. Sobald die Benachrichtigung angezeigt wird, können Sie die Ablauf Verfolgungs Sammlung für perfview abbrechen, um die Ausgabedatei der Ablauf Verfolgung zu verarbeiten und zu generieren.
 
-## <a name="stop-etw-tracing"></a>Beenden Sie die ETW-Ablaufverfolgung
+## <a name="stop-etw-tracing"></a>Etw-Ablauf Verfolgung Abbrechen
 
-Zum Beenden der Sammlung von startablaufdaten verwenden Sie einfach die **Auflistung beenden** Schaltfläche im PerfView-Fenster. Wenn Ablaufverfolgungssammlung beendet wurde, kann PerfView automatisch die ETW-Ereignisse verarbeitet und generiert eine Ausgabedatei der Ablaufverfolgung.
+Um die Ablauf Verfolgungs Sammlung anzuhalten, verwenden Sie einfach die Schaltfläche Auflistung **Abbrechen** im Fenster perfview. Wenn Sie die Ablauf Verfolgungs Sammlung beenden, verarbeitet perfview automatisch die ETW-Ereignisse und generiert eine Ausgabedatei der Ablauf Verfolgung.
 
-## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Überprüfen Sie das Aktivitätsprotokoll zum Abrufen der Verzögerung-ID
+## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Überprüfen des Aktivitäts Protokolls, um die Verzögerungs-ID zu erhalten
 
-Wie bereits erwähnt, finden Sie das Aktivitätsprotokoll *%APPDATA%\Microsoft\VisualStudio\<Vs_instance_id > \ActivityLog.xml*. Jedes Mal, wenn eine Erweiterung Verzögerung der Benutzeroberfläche von Visual Studio erkannt wird, schreibt er einen Knoten, in das Aktivitätsprotokoll mit `UIDelayNotifications` als Quelle. Dieser Knoten enthält vier Arten von Informationen über die Verzögerung der Benutzeroberfläche:
+Wie bereits erwähnt, finden Sie das Aktivitätsprotokoll unter *%AppData%\microsoft\visualstudio\<vs_instance_id > \activitylog.XML*. Jedes Mal, wenn Visual Studio eine Benutzeroberflächen Verzögerung der Erweiterung erkennt, wird ein Knoten mit `UIDelayNotifications` als Quelle in das Aktivitätsprotokoll geschrieben. Dieser Knoten enthält vier Informationen über die Benutzeroberflächen Verzögerung:
 
-- Die UI-Delay-ID, eine sequenzielle Zahl, die eine Verzögerung der Benutzeroberfläche in einem Visual Studio-Sitzung eindeutig identifiziert
-- Die Sitzungs-ID, die Identifizierung von Visual Studio-Sitzung vom Anfang bis zum Schließen
-- Unabhängig davon, ob eine Benachrichtigung für die Verzögerung der Benutzeroberfläche angezeigt wurde
-- Die Erweiterung, die die Verzögerung der Benutzeroberfläche dadurch, dass verursacht
+- Die UI-Verzögerungs-ID, eine sequenzielle Zahl, die eine Benutzeroberflächen Verzögerung in einer vs-Sitzung eindeutig identifiziert
+- Die Sitzungs-ID, die die Visual Studio-Sitzung von Anfang bis Ende eindeutig identifiziert.
+- Gibt an, ob eine Benachrichtigung für die Benutzeroberflächen Verzögerung angezeigt wurde oder nicht.
+- Die Erweiterung, die die Benutzeroberflächen Verzögerung wahrscheinlich verursacht hat
 
 ```xml
 <entry>
@@ -89,71 +89,71 @@ Wie bereits erwähnt, finden Sie das Aktivitätsprotokoll *%APPDATA%\Microsoft\V
 ```
 
 > [!NOTE]
-> Nicht alle Benutzeroberflächen-Verzögerungen führen eine Benachrichtigung. Aus diesem Grund sollten Sie immer überprüfen die **Benachrichtigung angezeigt?** Wert den richtige Verzögerung der Benutzeroberfläche ordnungsgemäß zu identifizieren.
+> Nicht alle Benutzeroberflächen Verzögerungen führen zu einer Benachrichtigung. Daher sollten Sie immer den Wert " **Benachrichtigung angezeigt?** " überprüfen, um die richtige Benutzeroberflächen Verzögerung korrekt zu ermitteln.
 
-Nachdem Sie die richtige Verzögerung der Benutzeroberfläche im Aktivitätsprotokoll gefunden haben, notieren Sie die UI-Verzögerung-ID, die im Knoten angegeben. Die ID verwenden, suchen Sie nach der entsprechenden ETW-Ereignis im nächsten Schritt.
+Nachdem Sie die korrekte Benutzeroberflächen Verzögerung im Aktivitätsprotokoll gefunden haben, notieren Sie sich die im Knoten angegebene UI-Verzögerungs-ID. Im nächsten Schritt wird die ID verwendet, um nach dem entsprechenden ETW-Ereignis zu suchen.
 
-## <a name="analyze-the-etw-trace"></a>Analysieren der ETW-Ablaufverfolgungs
+## <a name="analyze-the-etw-trace"></a>Analysieren der etw-Ablauf Verfolgung
 
-Öffnen Sie als Nächstes die Datei ein. Dazu können Sie mit der gleichen Instanz von PerfView oder durch eine neue Instanz starten und den aktuellen Ordnerpfad in der oberen linken Ecke des Fensters auf den Speicherort der Ablaufverfolgungsdatei festlegen.
+Öffnen Sie als nächstes die Ablauf Verfolgungs Datei. Hierzu können Sie entweder die gleiche Instanz von perfview verwenden oder eine neue Instanz starten und den aktuellen Ordner Pfad in der oberen linken Ecke des Fensters auf den Speicherort der Ablauf Verfolgungs Datei festlegen.
 
-![Festlegen des Ordnerpfads in Perfview](media/perfview-set-path.png)
+![Festlegen des Ordner Pfads in perfview](media/perfview-set-path.png)
 
-Wählen Sie die Datei im linken Bereich und öffnen Sie es durch Auswahl **öffnen** aus dem Kontextmenü -Menü.
+Wählen Sie dann im linken Bereich die Ablauf Verfolgungs Datei aus, und öffnen Sie Sie, indem Sie im Kontextmenü auf **Öffnen** klicken.
 
 > [!NOTE]
-> Standardmäßig gibt PerfView ein Zip-Archiv. Beim Öffnen *trace.zip*, wird automatisch das Archiv dekomprimiert und öffnet Sie die Ablaufverfolgung. Sie können diesen Schritt überspringen, wenn Sie deaktivieren die **Zip** Feld bei der Ablaufverfolgungssammlung. Aber wenn Sie beabsichtigen, übertragen und ablaufverfolgungen auf unterschiedlichen Computern verwenden, wird dringend empfohlen Deaktivieren der **Zip** Feld. Ohne diese Option die erforderlichen PDBs für Assemblys mit Ngen werden die Ablaufverfolgung nicht begleitet, und daher Symbole von Assemblys mit Ngen nicht auf dem Zielcomputer aufgelöst werden werden. (Finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) für Weitere Informationen zu PDB-Dateien für Assemblys mit Ngen.)
+> Standardmäßig gibt perfview ein ZIP-Archiv aus. Wenn Sie *Trace. zip*öffnen, wird das Archiv automatisch deaktiviert und die Ablauf Verfolgung geöffnet. Sie können dies überspringen, indem Sie die **ZIP** -Datei während der Ablauf Verfolgungs Sammlung deaktivieren. Wenn Sie jedoch die Übertragung und Verwendung von Ablauf Verfolgungen auf verschiedenen Computern planen, wird dringend empfohlen, das **ZIP** -Feld nicht zu deaktivieren. Ohne diese Option werden die erforderlichen PDBs für ngen-Assemblys nicht mit der Ablauf Verfolgung begleitet, sodass Symbole aus ngen-Assemblys auf dem Zielcomputer nicht aufgelöst werden. (Weitere Informationen zu pdsb für ngen-Assemblys finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) .)
 
-Es dauert einige Minuten, bis PerfView zum Verarbeiten und die Ablaufverfolgung zu öffnen. Sobald die Ablaufverfolgung geöffnet ist, wird eine Liste der verschiedenen "Ansichten" darunter angezeigt.
+Es kann einige Minuten dauern, bis perfview die Ablauf Verfolgung verarbeitet und geöffnet hat. Nachdem die Ablauf Verfolgung geöffnet ist, wird eine Liste mit verschiedenen "Ansichten" darunter angezeigt.
 
-![Zusammenfassungsansicht für PerfView-Ablaufverfolgung](media/perfview-summary-view-events-selected.png)
+![Perfview-Zusammenfassungs Ansicht](media/perfview-summary-view-events-selected.png)
 
-Wir verwenden zunächst das **Ereignisse** anzeigen, um den Zeitraum, der die Verzögerung der Benutzeroberfläche zu erhalten:
+Zuerst wird die **Ereignis** Ansicht verwendet, um den Zeitbereich der Benutzeroberflächen Verzögerung zu ermitteln:
 
-1. Öffnen der **Ereignisse** Ansicht wählen `Events` Knoten unter der Ablaufverfolgung auswählen und **öffnen** aus dem Kontextmenü -Menü.
-2. Wählen Sie "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`" im linken Bereich.
-3. Drücken Sie die EINGABETASTE
+1. Öffnen Sie die **Ereignis** Ansicht, indem Sie unter der Ablauf Verfolgung `Events` Knoten auswählen und dann im Kontextmenü auf **Öffnen** klicken.
+2. Klicken Sie im linken Bereich auf "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`".
+3. EINGABETASTE drücken
 
-Die Auswahl angewendet wird und alle `ExtensionUIUnresponsiveness` Ereignisse werden im rechten Bereich angezeigt.
+Die Auswahl wird angewendet, und alle `ExtensionUIUnresponsiveness` Ereignisse werden im rechten Bereich angezeigt.
 
 ![Auswählen von Ereignissen in der Ereignisansicht](media/perfview-event-selection.png)
 
-Jede Zeile im rechten Bereich entspricht eine Verzögerung der Benutzeroberfläche. Das Ereignis enthält einen Verzögerung ID-Wert, der die ID der Verzögerung im Aktivitätsprotokoll aus Schritt 6 übereinstimmen sollte. Da `ExtensionUIUnresponsiveness` wird ausgelöst, am Ende der Verzögerung der Benutzeroberfläche, den Zeitstempel des Ereignisses (ungefähr) markiert die Endzeit der die Verzögerung der Benutzeroberfläche. Das Ereignis enthält auch die Dauer der Verzögerung. Wir können die Dauer von der Zeitstempel für das Ende den Zeitstempel des abgerufen, wenn die Verzögerung der Benutzeroberfläche gestartet, subtrahieren.
+Jede Zeile im rechten Bereich entspricht einer Benutzeroberflächen Verzögerung. Das Ereignis enthält den Wert "Delay ID", der der verzögerten ID im Aktivitätsprotokoll aus Schritt 6 entsprechen sollte. Da `ExtensionUIUnresponsiveness` am Ende der UI-Verzögerung ausgelöst wird, kennzeichnet der Zeitstempel des Ereignisses (ungefähr) die Endzeit der Benutzeroberflächen Verzögerung. Das Ereignis enthält auch die Dauer der Verzögerung. Wir können die Dauer des Endzeit Stempels subtrahieren, um den Zeitstempel zu erhalten, wann die Benutzeroberflächen Verzögerung gestartet wurde.
 
-![Berechnen der Benutzeroberfläche verzögert Zeitraum](media/ui-delay-time-range.png)
+![Berechnen des Zeit Bereichs für die Benutzeroberflächen Verzögerung](media/ui-delay-time-range.png)
 
-Im vorherigen Screenshot ist beispielsweise der Zeitstempel des Ereignisses ist 12,125.679 und der Dauer der Verzögerung wird 6,143.085 (ms). Demnach sind
-* Die Verzögerung Start ist 12,125.679-6,143.085 5,982.594 =.
-* Der Zeitbereich der UI-Verzögerung ist 5,982.594 zu 12,125.679.
+Im vorherigen Screenshot ist beispielsweise der Zeitstempel des Ereignisses 12.125,679, und die Verzögerungs Dauer beträgt 6.143,085 (MS). Demnach sind
+* Der Verzögerungs Start beträgt 12.125,679-6.143,085 = 5.982,594.
+* Der Zeitbereich für die Benutzeroberflächen Verzögerung beträgt 5.982,594 bis 12.125,679.
 
-Sobald wir den Zeitbereich haben, können wir Schließen von der **Ereignisse** anzeigen und öffnen Sie die **Thread-Zeit (mit StartStop Aktivitäten) Stapel** anzeigen. Diese Ansicht ist besonders praktisch, da häufig Erweiterungen, die im UI-Thread blockieren lediglich auf andere Threads oder ein e/A Vorgang warten. Daher die **CPU-Stack** anzuzeigen, in der die Go-to-Option in den meisten Fällen ist, nicht die Zeit eines Threads blockiert benötigt, da es während dieser Zeit nicht die CPU verwendet erfasst werden kann. Die **Thread Zeit Stapel** löst dieses Problem durch ordnungsgemäß mit blockierten Zeit.
+Sobald der Zeitbereich vorhanden ist, können wir die Ansicht **Ereignisse** schließen und die **Thread Zeit (mit der startstopps-Aktivität) der Stapel** Ansicht öffnen. Diese Ansicht ist besonders nützlich, da häufig Erweiterungen, die den UI-Thread blockieren, nur auf andere Threads oder einen e/a-gebundenen Vorgang warten. Daher kann die **CPU-Stapel** Ansicht, die in den meisten Fällen die Option "Gehe zu" ist, die Zeit, die der Thread blockiert, nicht erfassen, da die CPU während dieser Zeit nicht verwendet wird. Die **Thread Zeit Stapel** löst dieses Problem, indem die blockierte Zeit ordnungsgemäß angezeigt wird.
 
-![Knoten des Threads (mit StartStop Aktivitäten)-Stapel in PerfView Ansicht "Zusammenfassung"](media/perfview-thread-time-with-startstop-activities-stacks.png)
+![Thread Zeit (mit startstoppaktivitäten) Stapel Knoten in der perfview-Zusammenfassungs Ansicht](media/perfview-thread-time-with-startstop-activities-stacks.png)
 
-Beim Öffnen **Thread Zeit Stapel** anzuzeigen, wählen Sie die **Devenv** Prozess zur Analyse zu starten.
+Wählen Sie beim Öffnen der **Thread Zeit Stapel** Ansicht den **devenv** -Prozess zum Starten der Analyse aus.
 
-![Thread Zeit Stapelansicht für die Analyse der Benutzeroberfläche verzögert](media/ui-delay-thread-time-stacks.png)
+![Thread Zeit Stapel Ansicht für UI-Verzögerungs Analyse](media/ui-delay-thread-time-stacks.png)
 
-In der **Thread Zeit Stapel** anzeigen, in der oberen linken Ecke der Seite können Sie den Zeitraum, wir berechneten, Werte in den vorherigen Schritt, und drücken Sie **EINGABETASTE** , dass der Stapel zu diesem Zeitraum angepasst werden.
-
-> [!NOTE]
-> Bestimmen, welcher Thread der Benutzeroberfläche wird möglich (Start) Thread kontraintuitiv, wenn die Sammlung von startablaufdaten gestartet wird, nachdem Visual Studio bereits geöffnet ist. Die ersten Elemente auf dem Stapel des Benutzeroberflächenthreads (Start) sind jedoch häufig immer Operating System-DLLs (*ntdll.dll* und *"Kernel32.dll"*) gefolgt von `devenv!?` und dann `msenv!?` . Diese Sequenz können Sie den UI-Thread identifizieren.
-
- ![Identifiziert den Startupthread](media/ui-delay-startup-thread.png)
-
-Sie können auch weitere in dieser Ansicht filtern, dazu nur Stapel, die Module aus dem Paket enthalten.
-
-* Legen Sie **GroupPats** , leerer Text So entfernen Sie alle möglichen Gruppierungen, die standardmäßig hinzugefügt.
-* Legen Sie **IncPats** Teil Ihres Assemblynamens "zusätzlich zum vorhandenen Prozessfilter einschließen. In diesem Fall wird **Devenv; UIDelayR2**.
-
-![Festlegen von GroupPath und IncPath in Thread Zeit Stapelansicht](media/perfview-tts-group-path-inc-path.png)
-
-PerfView enthält ausführliche Anleitungen unter dem **Hilfe** Menü, das Sie verwenden können, um Leistungsengpässe in Ihrem Code zu erkennen. Darüber hinaus enthalten die folgenden Links Weitere Informationen zum Verwenden von Visual Studio-threading-APIs, um Ihren Code zu optimieren:
-
-* [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
-* [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
-
-Sie können auch die neuen statischen Analysetools für Visual Studio für Erweiterungen (NuGet-Paket [hier](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), die Anleitungen zu bewährten Methoden zum Schreiben von effizienten Erweiterungen bereitstellen. Eine Liste der [VS-SDK-Analysetools](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) und [threading Analysen](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
+In der Ansicht **Thread Zeit Stapel** oben links auf der Seite können Sie den Zeitbereich auf die Werte festlegen, die wir im vorherigen Schritt berechnet haben, und die **Eingabe** Taste drücken, damit die Stapel an diesen Zeitbereich angepasst werden.
 
 > [!NOTE]
-> Wenn Sie nicht auf eine nicht reagierende Benutzeroberfläche aufgrund der Abhängigkeiten der Adresse können Sie haben keine Kontrolle über (z. B., wenn die Erweiterung ist zum Aufrufen von synchronen Visual Studio-Diensten im UI-Thread), möchten wir davon erfahren. Wenn Sie Mitglied unserer Visual Studio-Partner-Programm sind, können Sie uns kontaktieren, durch die Übermittlung einer Supportanfrage für Entwickler. Andernfalls verwenden Sie das Tool "Problem melden", um Ihr Feedback übermitteln, und schließen `"Extension UI Delay Notifications"` im Titel. Nehmen Sie auch eine ausführliche Beschreibung der Analyse.
+> Zu bestimmen, welcher Thread der UI-Thread (Start Thread) ist, kann kontraintuitiv sein, wenn die Ablauf Verfolgungs Sammlung gestartet wird, nachdem Visual Studio bereits geöffnet ist. Allerdings sind die ersten Elemente im Stapel des UI-Threads (Start) wahrscheinlich immer Betriebssystem-DLLs (*ntdll. dll* und *Kernel32. dll*), gefolgt von `devenv!?` und dann `msenv!?`. Mithilfe dieser Sequenz kann der UI-Thread identifiziert werden.
+
+ ![Identifizieren des Start Threads](media/ui-delay-startup-thread.png)
+
+Sie können diese Ansicht auch weiter filtern, indem Sie nur Stapel einschließen, die Module aus dem Paket enthalten.
+
+* Legen Sie **grouppats** auf leeren Text fest, um alle standardmäßig hinzugefügten Gruppierungen zu entfernen.
+* Legen Sie " **incpats** " fest, um einen Teil des Assemblynamens zusätzlich zum vorhandenen Prozessfilter einzubeziehen. In diesem Fall sollte Sie "Debug" lauten **. UIDelayR2**.
+
+![Festlegen von "GroupPath" und "incpath" in der Thread Zeit Stapel Ansicht](media/perfview-tts-group-path-inc-path.png)
+
+Perfview enthält eine ausführliche Anleitung im Menü " **Hilfe** ", mit der Sie Leistungsengpässe in Ihrem Code identifizieren können. Zusätzlich finden Sie unter den folgenden Links weitere Informationen zum Verwenden von Visual Studio-Threading-APIs zur Optimierung Ihres Codes:
+
+* [https://github.com/Microsoft/vs-threading/blob/master/doc/index.md](https://github.com/Microsoft/vs-threading/blob/master/doc/index.md)
+* [https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md)
+
+Sie können auch die neuen statischen Visual Studio-Analysen für Erweiterungen (nuget-Paket [hier](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)) verwenden, die Anleitungen zu bewährten Methoden zum Schreiben effizienter Erweiterungen bereitstellen. Hier finden Sie eine Liste der [vs SDK-Analysen](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) und [Threading-Analysen](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
+
+> [!NOTE]
+> Wenn Sie die nicht Reaktionsfähigkeit aufgrund von Abhängigkeiten nicht beheben können (z. b. wenn die Erweiterung synchrone vs-Dienste im UI-Thread aufruft), möchten wir Sie darüber informieren. Wenn Sie Mitglied unseres Visual Studio-Partner Programms sind, können Sie sich mit uns in Verbindung setzen, indem Sie eine Supportanfrage für Entwickler einreichen. Verwenden Sie andernfalls das Tool "Problem melden", um Ihr Feedback zu senden und `"Extension UI Delay Notifications"` in den Titel einzubeziehen. Fügen Sie auch eine ausführliche Beschreibung ihrer Analyse ein.

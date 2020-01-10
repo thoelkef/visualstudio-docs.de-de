@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cafdfacec24e906569d0f2b0d1a334511a75e30a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96647f362566f0687cb04b7da4459331ac56b031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300720"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851903"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Dieser Artikel enthält die folgenden Aufgaben für Visual Studio Help Viewer-In
 
 - CPlusPlus oder VisualC + + oder c++
 
-- JScript
+- jscript
 
 - VisualBasic oder VB
 
@@ -445,10 +445,10 @@ some F# code
 |Verwenden Sie folgenden Befehl:|Code Ausschnitt-Steuerelement Text.  Hinweis: Code Ausschnitt Inhalt mit "nicht unterbrechenden" Speicherplatz wird in "Space" geändert.|
 |**Element**|**Wert**|
 |Copyum-Zwischenablage|In Zwischenablage kopieren|
-|ViewColorizedText|Farbige Ansicht|
+|ViewColorizedText|Koloriert anzeigen|
 |CombinedVBTabDisplayLanguage|Visual Basic (Beispiel)|
 |Vbdeclaration|Deklaration|
-|VBUsage|Verwendung|
+|VBUsage|Verwendungs-|
 |Feature:|**Feedback, Fußzeile und Logo**|
 |Verwenden Sie folgenden Befehl:|Stellen Sie ein Feedback-Steuerelement bereit, mit dem Kundenfeedback zum aktuellen Thema per e-Mail senden können.  Copyright Text für den Inhalt.  Logo Definition.|
 |**Element**|**Value (diese Zeichen folgen können so geändert werden, dass Sie die Anforderungen der Inhalts Adoption erfüllen.)**|
@@ -458,7 +458,7 @@ some F# code
 |Logotitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
-|Feature:|**ERS**|
+|Feature:|**Haftungsausschluss**|
 |Verwenden Sie folgenden Befehl:|Ein Satz von Fall spezifischen Haftungsausschlüsse für maschinell übersetzte Inhalte.|
 |**Element**|**Wert**|
 |MT_Editable|Dieser Artikel war maschinell übersetzt. Wenn Sie über eine Internet Verbindung verfügen, wählen Sie "dieses Thema Online anzeigen" aus, um diese Seite im bearbeitbaren Modus mit dem ursprünglichen englischen Inhalt gleichzeitig anzuzeigen.|
@@ -505,26 +505,26 @@ some F# code
 |**Element**|**Wert**|
 |HomePageTitle|Help Viewer-Startseite|
 |HomePageIntroduction|\<p > Willkommen beim Microsoft Help Viewer, einer wichtigen Informationsquelle für alle, die Microsoft-Tools,-Produkte,-Technologien und-Dienste verwenden. Der Help Viewer bietet Ihnen Zugriff auf Anleitungen und Referenzinformationen, Beispielcode, technische Artikel und vieles mehr. Um den benötigten Inhalt zu finden, Durchsuchen Sie das Inhaltsverzeichnis, verwenden Sie die Volltextsuche, oder navigieren Sie mithilfe des Schlüsselwort Indexes durch Inhalt.\</p >|
-|HomePageContentInstallText|\<p >\<br/> Verwenden Sie die Registerkarte \<a href = "{0}" {1}>\<> Verwalten von Inhalten\</a, um Folgendes zu tun: > UL\<> Li dem Computer Inhalte hinzufügen.\</li >\<li > nach Updates für Ihre lokalen Inhalte suchen.\</li >\<li > Inhalt von Ihrem Computer entfernen.\</li >\</ul >\</p >|
+|HomePageContentInstallText|\<p >\<br/> Verwenden Sie die Registerkarte \<a href = "{0}" {1}\<> Verwalten von Inhalten\</a, um Folgendes zu tun: > UL\<> Li dem Computer Inhalte hinzufügen.\</li >\<li > nach Updates für Ihre lokalen Inhalte suchen.\</li >\<li > Inhalt von Ihrem Computer entfernen.\</li >\</ul >\</p >|
 |HomePageInstalledBooks|Installierte Bücher|
 |HomePageNoBooksInstalled|Auf Ihrem Computer wurde kein Inhalt gefunden.|
 |HomePageHelpSettings|Hilfe Inhaltseinstellungen|
 |HomePageHelpSettingsText|\<p > Ihre aktuelle Einstellung die lokale Hilfe ist. In Help Viewer werden Inhalte angezeigt, die Sie auf Ihrem Computer installiert haben.\<br/>, um Ihre Quelle von Hilfe Inhalten zu ändern, wählen Sie in der Visual Studio-Menüleiste \<span style = "{0}" > Hilfe aus, und legen Sie die Hilfe Einstellung\</span > fest.\<br/>\</p >|
 |Megabyte|MB|
 
- **Branding. js**
+ **branding.js**
 
  Die Datei "Branding. js" enthält JavaScript, das von den Visual Studio Help Viewer-Branding-Elementen verwendet wird.  Im folgenden finden Sie eine Liste der Brandingelemente und der unterstützenden JavaScript-Funktion.  Alle Zeichen folgen, die für diese Datei lokalisiert werden sollen, werden im Abschnitt "lokalisierbare Zeichen folgen" oben in dieser Datei definiert.  Die ICL-Datei wurde für LOC-Zeichen folgen in der Datei "Branding. js" erstellt.
 
 ||||
 |-|-|-|
 |**Brandingfeature**|**JavaScript-Funktion**|**Beschreibung**|
-|Var...||Variablen definieren|
+|Var...||Definieren von Variablen|
 |Benutzercode Sprache|setUserPreferenceLang|ordnet einen Index # der Codesprache zu.|
 |Festlegen und erhalten von Cookie-Werten|GetCookie, setcookie||
 |Vererbte Member|changemembership-Bezeichnung|Vererbten Member erweitern/reduzieren|
 |Wenn selfbranding = false|onLoad|Lesen Sie die Abfrage Zeichenfolge, um zu prüfen, ob Sie eine Druck Anforderung ist.  Legen Sie alle CodeSnippets fest, um die Benutzer bevorzugte Registerkarte zu fokussieren.  Wenn es sich um eine Druck Anforderung handelt, legen Sie isprinterfriendly auf true fest. Überprüfen Sie den Modus für hohe Kontraste.|
-|Code Ausschnitt|addSpecificTextLanguageTagSet||
+|Codeausschnitt|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||Changetab||
 ||setCodesnippetLang||
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Datei**|**Konsum**|**Quelle der angezeigten Inhalte**|
+|**Datei**|**Verwendung**|**Quelle der angezeigten Inhalte**|
 |Homepage. htm|Dies ist eine Seite, auf der der aktuell installierte Inhalt und jede andere Meldung angezeigt wird, die dem Benutzer für seinen Inhalt zur Verfügung steht.  Diese Datei enthält das zusätzliche Meta-Daten Attribut "Microsoft.Help.ID" Content = "-1", mit dem dieser Inhalt am oberen Rand des lokalen Inhalts Inhaltsverzeichnis platziert wird.||
 ||<META_HOME_PAGE_TITLE_ADD />|Branding. XML, Tag \<HomePageTitle >|
 ||< HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding. XML, Tag \<HomePageIntroduction >|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Datei**|**Konsum**|**Beispiele**|
+|**Datei**|**Verwendung**|**Beispiele**|
 |Clear. gif|Wird zum Rendering des redusible-Bereichs verwendet.||
 |footer_slice.gif|Footer-Präsentation||
 |info_icon.gif|Wird beim Anzeigen von Informationen verwendet.|Haftungsausschluss|
@@ -824,4 +824,4 @@ Informationen zur Laufzeit-API finden Sie unter [Windows-Hilfe-API](https://msdn
 
 Weitere Informationen zur Verwendung der Hilfe-API finden Sie unter [Help Viewer-Code Beispiele](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Informationen zu aktuellen Problemen finden Sie in der [Hilfe Viewer](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)-Info.
+Informationen zu aktuellen Problemen finden Sie in der [Hilfe Viewer](https://go.microsoft.com/fwlink/?LinkId=255960)-Info.

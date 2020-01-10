@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295856"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852383"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -493,7 +493,7 @@ In diesem Artikel werden typische Verwendungsmöglichkeiten von Anmerkungen für
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Verwandte Ressourcen  
- [Blog des Code Analyseteams](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog des Code Analyseteams](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

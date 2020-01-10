@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301037"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849805"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Erweitern von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Das Fabrikam-Team für Tools erstellt eine Reihe von Erweiterungen, um die Entwicklungsteams zu unterstützen. In den folgenden Abschnitten werden die verschiedenen Arten von Erweiterungen beschrieben, die Sie definieren können. Sie können mehrere dieser Techniken in einer Visual Studio-Erweiterung kombinieren.
 
- Weitere Informationen finden Sie in diesem Video: ![Link to Video](../data-tools/media/playvideo.gif "Wiedergeben")[MSDN How do I Series: UML Tools and Extensibility](https://go.microsoft.com/fwlink/?LinkId=214467).
+ Weitere Informationen finden Sie in diesem Video: ![Link to Video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How do I Series: UML Tools and Extensibility](https://msdn.microsoft.com/vstudio/ff859492).
 
 ## <a name="Requirements"></a> Anforderungen
 
@@ -113,10 +113,10 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "Playvideo ") [Channel 9: UML mit Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Technische Artikel und Journale**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML mit Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
+|**Technische Artikel und Journale**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md) - [API-Referenz für UML-Modellierungs Erweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md)

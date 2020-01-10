@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56f2d4cb0b02cc661177a4f781a5c40db924ee2c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4cf121bd7f312518e334c7153acf2d6486e37012
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302113"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851793"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
 - Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-Small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
-  Während der Testausführung ist die Erfolgreich/Fehler-Leiste oben im Test-Explorer-Fenster animiert. Am Ende des Testlaufs wird die Erfolgreich/Fehler-Leiste grün, wenn alle Tests erfolgreich verlaufen, oder rot, falls ein beliebiger Test fehlschlägt.
+  Während der Testausführung ist die Erfolgreich/Fehler-Leiste oben im Test-Explorer-Fenster animiert. Am Ende des Testlaufs wird die Erfolgreich/Fehler-Leiste grün, wenn alle Tests erfolgreich sind oder rot, sofern irgendein Test nicht erfolgreich war.
 
   ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
@@ -117,7 +117,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
  ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
 ## <a name="BKMK_Group_and_filter_the_test_list"></a> Gruppieren und Filtern der Testliste
- [Gruppieren der Testliste](#BKMK_Grouping_the_test_list) **&#124;** [Gruppieren nach Merkmalen](#BKMK_Group_by_traits) **&#124;** [Durchsuchen und Filtern der Testliste](#BKMK_Search_and_filter_the_test_list)
+ [Gruppieren der Test Listen](#BKMK_Grouping_the_test_list) **&#124;** [Gruppe nach Merkmalen](#BKMK_Group_by_traits) **&#124;** [Suchen und Filtern der Testliste](#BKMK_Search_and_filter_the_test_list)
 
  Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In den meisten der im Test-Explorer ausführbaren Komponententest-Frameworks können Sie eigene Kategorien und Kategorie/Wert-Paare zum Gruppieren der Tests definieren. Sie können die Testliste auch durch das Vergleichen von Zeichenfolgen mit Testeigenschaften filtern.
 
@@ -142,7 +142,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
  **Merkmale im Microsoft-Komponententest-Framework für verwalteten Code**
 
- Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>-Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:
+ Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> -Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:
 
 |Merkmal|Beschreibung|
 |-----------|-----------------|
@@ -219,7 +219,7 @@ TEST_METHOD(Method1)
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
- Beispiel:
+ Ein auf ein Objekt angewendeter
 
 ```
 FullName:"MyClass" - FullName:"PerfTest"
@@ -245,12 +245,12 @@ FullName:"MyClass" - FullName:"PerfTest"
  ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
 ## <a name="BKMK_Debug_and_analyze_unit_tests"></a> Debugging und Analyse von Komponententests
- [Debugging von Komponententests](#BKMK_Debug_unit_tests) **&#124;** [Diagnose von Leistungsproblemen bei Testmethoden](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analysieren der Codeabdeckung für Komponententests](#BKMK_Analyzeunit_test_code_coverage)
+ [Debugkomponententests](#BKMK_Debug_unit_tests) **&#124;** [Diagnose von Leistungsproblemen](#BKMK_Diagnose_test_method_performance_issues) **&#124;** bei Testmethoden Analysieren von Komponenten [Test Code Coverage](#BKMK_Analyzeunit_test_code_coverage)
 
 ### <a name="BKMK_Debug_unit_tests"></a> Debugging von Komponententests
  Im Test-Explorer können Sie eine Debugsitzung für Ihre Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. So starten Sie das Debuggen
 
-1. Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
+1. Legen Sie im Visual Studio-Editor einen Haltepunkt in mindestens einer Testmethode fest, die Sie debuggen möchten.
 
    > [!NOTE]
    > Da Testmethoden in jeder beliebigen Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
@@ -283,14 +283,14 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    Im Fenster "Codeabdeckungsergebnisse " wird der Prozentsatz der durchlaufenen Produktcodeblöcke angezeigt, angeordnet nach Zeile, Funktion, Klasse, Namespace und Modul.
 
-   Weitere Informationen finden Sie unter [Using Code Coverage to Determine How Much Code is being Tested](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+   Weitere Informationen finden Sie unter [Using Code Coverage to Determine How Much Code is being Tested (Wie Sie feststellen können, wie viel Code untersucht wird)](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
    ![Zurück zum obersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
 ## <a name="BKMK_External_resources"></a> Externe Ressourcen
 
 ### <a name="BKMK_Guidance"></a> Empfehlungen
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Siehe auch
  Komponenten [Test: der Code](../test/unit-test-your-code.md) [führt einen Komponenten Test als 64-Bit-Prozess](../test/run-a-unit-test-as-a-64-bit-process.md) aus.

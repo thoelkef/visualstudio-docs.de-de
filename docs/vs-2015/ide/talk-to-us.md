@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299931"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851063"
 ---
 # <a name="talk-to-us"></a>Sprechen Sie mit uns
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Wir würden gern Ihre Ideen zur Verbesserung unserer Dokumentation erfahren. Wir
  Vorabversionen von Visual Studio weisen das Menüelement **Dieses Produkt bewerten** auf, über das Sie uns Feedback über die Qualität des Builds, den Sie ausführen, senden können. In der endgültigen Produktversion ist diese Option nicht verfügbar.
 
 ## <a name="i-need-help"></a>Ich brauche Hilfe!
- Die Onlinehilfe finden Sie unter [Microsoft Support](https://go.microsoft.com/fwlink/?LinkID=99019) .
+ Die Onlinehilfe finden Sie unter [Microsoft Support](https://support.microsoft.com/) .
 
  Die Unterstützung außerhalb der USA und Kanada kann variieren. Eine Liste internationaler Kontakte finden Sie unter [Microsoft Worldwide Sites](https://www.microsoft.com/worldwide/).
 
  Weitere Optionen finden Sie unter [Supportübersicht](https://visualstudio.microsoft.com/support/).
 
- Für größere Organisationen, die verwaltete Unterstützung direkt von Microsoft benötigen, stehen Verträge über verschiedene Premier-Support-Angebote zur Verfügung. Weitere Informationen finden Sie unter [Microsoft-Dienste-Premier-Support](https://go.microsoft.com/fwlink/?LinkId=258223).
+ Für größere Organisationen, die verwaltete Unterstützung direkt von Microsoft benötigen, stehen Verträge über verschiedene Premier-Support-Angebote zur Verfügung. Weitere Informationen finden Sie unter [Microsoft-Dienste-Premier-Support](https://www.microsoft.com/industry/services/support).
 
  Wenn das Produkt auf einem neuen Computer oder einem Gerät installiert geliefert wurde, erhalten Sie technischen Support und Hilfe für diese Software vom Hardwarehersteller. Wenden Sie sich für Unterstützung direkt an den Hersteller.
 

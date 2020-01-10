@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295741"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851545"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Schritt fügen Sie Ihrem Formular ein `TableLayoutPanel`-Steuerelement hinzu. Das TableLayoutPanel hilft, Steuerelemente im Formular ordnungsgemäß auszurichten, die Sie später hinzufügen.
 
- ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 2](https://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>So erstellen Sie ein Layout für das Formular mit einem TableLayoutPanel-Steuerelement
 
@@ -69,7 +69,7 @@ In diesem Schritt fügen Sie Ihrem Formular ein `TableLayoutPanel`-Steuerelement
 
      ![TableLayoutPanel-Aufgaben](../ide/media/express-tablepanel.png "Express_TablePanel") TableLayoutPanel-Aufgaben
 
-10. Wählen Sie die Aufgabe **Zeilen und Spalten bearbeiten** aus, um das Fenster **Spalten- und Zeilenstile** anzuzeigen. Wählen Sie **Column1** aus, und legen Sie die Größe auf 15 Prozent fest, indem Sie die Schaltfläche **Prozent** auswählen und im Feld `15`Prozent**den Wert** eingeben. (Dies ist ein `NumericUpDown` Steuerelement, das Sie in einem späteren Tutorial verwenden werden.) Wählen Sie **Column2** aus, und legen Sie es auf 85 Prozent fest. Wählen Sie noch nicht die Schaltfläche **OK** aus, da sonst das Fenster geschlossen wird. (Wenn das Fenster geschlossen ist, können Sie es über die Aufgabenliste erneut öffnen.)
+10. Wählen Sie die Aufgabe **Zeilen und Spalten bearbeiten** aus, um das Fenster **Spalten- und Zeilenstile** anzuzeigen. Wählen Sie **Column1** aus, und legen Sie die Größe auf 15 Prozent fest, indem Sie die Schaltfläche **Prozent** auswählen und im Feld **Prozent** den Wert `15` eingeben. (Dies ist ein `NumericUpDown` Steuerelement, das Sie in einem späteren Tutorial verwenden werden.) Wählen Sie **Column2** aus, und legen Sie es auf 85 Prozent fest. Wählen Sie noch nicht die Schaltfläche **OK** aus, da sonst das Fenster geschlossen wird. (Wenn das Fenster geschlossen ist, können Sie es über die Aufgabenliste erneut öffnen.)
 
      ![Spalten-und Zeilen Stile des TableLayoutPanel-](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") Steuerelement Spalten-und Zeilen Stile des TableLayoutPanel-Steuerelement
 

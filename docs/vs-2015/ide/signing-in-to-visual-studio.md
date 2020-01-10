@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301227"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851625"
 ---
 # <a name="signing-in-to-visual-studio"></a>Anmelden bei Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Warum sollte ich mich in Visual Studio anmelden?
  Durch die Anmeldung bei Visual Studio erhalten Sie folgende Vorteile:
 
-- **Vielzahl von Vorteilen** des Visual Studio Dev Essentials-Programms, u. a. kostenlose Software, Trainings und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+- **Vielzahl von Vorteilen** des Visual Studio Dev Essentials-Programms, u. a. kostenlose Software, Trainings und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 - **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 

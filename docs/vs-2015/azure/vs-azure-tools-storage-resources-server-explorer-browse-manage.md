@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291233"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849868"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Übersicht über
 
 Wenn Sie die Azure-Tools für Microsoft Visual Studio installiert haben, können Sie Blob-, Warteschlangen- und Tabellendaten von Ihren Speicherkonten für Azure aus anzeigen. Der Knoten für Azure **Storage** im Server-Explorer zeigt Daten, die sich in Ihrem lokalen Speicheremulatorkonto und Ihren anderen Azure-Speicherkonten befinden.
 
@@ -110,7 +110,7 @@ Verwenden Sie im Cloud-Explorer eine der folgenden Methoden:
 * Wählen Sie den Blobnamen und anschließend die Schaltfläche **Öffnen** aus.
 * Doppelklicken Sie auf den Blobnamen.
 
-Der Status eines Blob-Downloads wird im Fenster **Azure-Aktivitätsprotokoll** angezeigt.
+Der Status eines Blobdownloads wird im Fenster **Azure-Aktivitätsprotokoll** angezeigt.
 
 Das Blob wird im Standard-Editor für diesen Dateityp geöffnet. Wenn das Betriebssystem den Dateityp erkennt, wird die Datei in einer lokal installierten Anwendung geöffnet. Andernfalls werden Sie aufgefordert, eine für den Dateityp des Blobs geeignete Anwendung auszuwählen. Die beim Herunterladen von Blobs erstellte lokale Datei ist als schreibgeschützt gekennzeichnet.
 
@@ -122,7 +122,7 @@ Standardmäßig wird ein Blob in ein temporäres Verzeichnis heruntergeladen. Um
 
 Klicken Sie zum Hochladen von Blobs auf die Schaltfläche **Blob hochladen**, wenn der Container für die Anzeige in der Blobcontaineransicht geöffnet ist.
 
-Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
+Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>So zeigen Sie an Blobs übertragene Protokolle an
 
@@ -157,7 +157,7 @@ Die folgende Abbildung zeigt eine Warteschlange, die zwei Nachrichten enthält:
 
 ![Anzeigen einer Warteschlange](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Weitere Informationen zu Speicherdienstwarteschlangen finden Sie unter [Erste Schritte mit Azure Queue Storage mit .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Weitere Informationen zum Webdienst für Speicherdienstwarteschlangen finden Sie unter [Konzepte des Warteschlangendiensts](https://go.microsoft.com/fwlink/?LinkId=264788). Informationen dazu, wie Nachrichten mithilfe von Visual Studio an eine Speicherdienstwarteschlange gesendet werden, finden Sie unter [Senden von Nachrichten an eine Speicherdienstwarteschlange](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Weitere Informationen zu Speicherdienstwarteschlangen finden Sie unter [Erste Schritte mit Azure Queue Storage mit .NET](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/). Weitere Informationen zum Webdienst für Speicherdienstwarteschlangen finden Sie unter [Konzepte des Warteschlangendiensts](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx). Informationen dazu, wie Nachrichten mithilfe von Visual Studio an eine Speicherdienstwarteschlange gesendet werden, finden Sie unter [Senden von Nachrichten an eine Speicherdienstwarteschlange](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Speicherdienstwarteschlangen unterscheiden sich von Azure Service Bus-Warteschlangen. Weitere Informationen zu Service Bus-Warteschlangen finden Sie unter [Service Bus-Warteschlangen, -Themen und -Abonnements](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -185,7 +185,7 @@ Die Tabelle ist in Entitäten (Anzeige in Zeilen) und Eigenschaften (Anzeige in 
 
 Öffnen Sie im Tabellen-Designer das Kontextmenü für eine Entität (eine einzelne Zeile) oder eine Eigenschaft (eine einzelne Zelle), und wählen Sie dann **Bearbeiten** aus.
 
-![Hinzufügen oder Bearbeiten einer Tabellen Entität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Hinzufügen oder Bearbeiten einer Tabellenentität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Entitäten in einer einzelnen Tabelle müssen nicht denselben Eigenschaftensatz (Spalten) aufweisen. Beachten Sie beim Anzeigen und Bearbeiten von Tabellendaten folgende Einschränkungen:
 

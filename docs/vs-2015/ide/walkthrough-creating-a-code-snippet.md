@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296836"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845580"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "74296836"
 Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Dem Code können auch Verweise und Ersatzparameter hinzugefügt werden. Sie können den Codeausschnitt im Codeausschnitt-Manager über die Schaltfläche „Importieren“ (**Extras > Codeausschnitt-Manager**) zur Visual Studio-Installation hinzufügen.
 
 > [!TIP]
-> Informationen zur einfacheren Erstellung von Codeausschnitten, beispielsweise mithilfe des [Editors für Codeausschnitte](https://go.microsoft.com/fwlink/?LinkId=251033), finden Sie auf der CodePlex-Website für Communitytools.
+> Informationen zur einfacheren Erstellung von Codeausschnitten, beispielsweise mithilfe des [Editors für Codeausschnitte](https://snippeteditor.codeplex.com/), finden Sie auf der CodePlex-Website für Communitytools.
 
 ## <a name="snippet-template"></a>Ausschnittvorlage
  Im Folgenden finden Sie eine einfache Ausschnittvorlage:

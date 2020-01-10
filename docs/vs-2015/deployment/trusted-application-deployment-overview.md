@@ -17,14 +17,14 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294688"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847703"
 ---
-# <a name="trusted-application-deployment-overview"></a>Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
+# <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen, die mithilfe der Technologie für die Bereitstellung einer vertrauenswürdigen Anwendung erweiterte Berechtigungen aufweisen.  
@@ -43,7 +43,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 |trust manager|Das Subsystem innerhalb der Common Language Runtime (CLR), das verantwortlich für das Erzwingen der Anwendungssicherheit auf Clientcomputern ist.|  
 |publisher|Die Entität, die die Anwendung schreibt und verwaltet.|  
 |deployer|Die Entität, die Anwendung für Benutzer packt und an diese verteilt.|  
-|Zertifikat|Eine kryptografische Signatur, die aus einem öffentlichen und einem privaten Schlüssel besteht; wird im Allgemeinen von einer Zertifizierungsstelle (CA) ausgegeben, die für seine Echtheit bürgen kann.|  
+|certificate|Eine kryptografische Signatur, die aus einem öffentlichen und einem privaten Schlüssel besteht; wird im Allgemeinen von einer Zertifizierungsstelle (CA) ausgegeben, die für seine Echtheit bürgen kann.|  
 |Authenticode certificate|Ein Zertifikat mit eingebetteten Metadaten, das unter anderem die Verwendungsmöglichkeiten für das Zertifikat beschreibt.|  
 |certification authority|Eine Organisation, die die Identität eines Herausgebers überprüft und Zertifikate ausstellt, die in den Herausgebermetadaten eingebettet sind.|  
 |Stammzertifizierungsstelle|Eine Zertifizierungsstelle, die andere Zertifizierungsstellen zum Ausstellen von Zertifikaten autorisiert.|  
@@ -74,7 +74,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Hinzufügen des Herausgebers zum Speicher für vertrauenswürdige Herausgeber  
  Damit die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung ein höheres Maß an Vertrauen erhält, müssen Sie das Zertifikat als vertrauenswürdiger Herausgeber auf jedem Clientcomputer hinzufügen, auf dem die Anwendung ausgeführt wird. Bei dieser Aufgabe handelt es sich um eine einmalige Konfiguration. Nachdem sie abgeschlossen wurde, können Sie beliebig viele [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen bereitstellen, die mit dem Zertifikat Ihres Herausgebers signiert sind, und alle werden auf einer hohen Vertrauensebene ausgeführt.  
   
- Wenn Sie Ihre Anwendung in einer verwalteten Desktopumgebung bereitstellen, zum Beispiel in einem Unternehmensintranet, in dem das Windows-Betriebssystem ausgeführt wird, können Sie vertrauenswürdige Herausgeber einem Clientspeicher hinzufügen, indem Sie eine neue Zertifikatsvertrauensliste (CTL) mithilfe von Gruppenrichtlinien erstellen. Weitere Informationen finden Sie unter [Erstellen einer Zertifikatvertrauensliste für ein Gruppenrichtlinienobjekt](https://go.microsoft.com/fwlink/?LinkId=102576).  
+ Wenn Sie Ihre Anwendung in einer verwalteten Desktopumgebung bereitstellen, zum Beispiel in einem Unternehmensintranet, in dem das Windows-Betriebssystem ausgeführt wird, können Sie vertrauenswürdige Herausgeber einem Clientspeicher hinzufügen, indem Sie eine neue Zertifikatsvertrauensliste (CTL) mithilfe von Gruppenrichtlinien erstellen. Weitere Informationen finden Sie unter [Erstellen einer Zertifikatvertrauensliste für ein Gruppenrichtlinienobjekt](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7).  
   
  Wenn Sie die Anwendung nicht in einer verwalteten Desktopumgebung bereitstellen, haben Sie die folgenden Optionen zum Hinzufügen eines Zertifikats zum Speicher vertrauenswürdiger Herausgeber:  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299586"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844203"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ N-Tier *-Daten Anwendungen sind Anwendungen, die auf Daten zugreifen und in mehr
 
 - Schreiben von Code zum Füllen der Datentabellen.
 
-  ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter Gewusst [wie: Erstellen einer N-Tier-Daten Anwendung](https://go.microsoft.com/fwlink/?LinkId=115188).
+  ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") Eine videoversion dieses Themas finden Sie unter Gewusst [wie: Erstellen einer N-Tier-Daten Anwendung](https://msdn2.microsoft.com/library/cc178916.aspx).
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
  Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:

@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6db11d583818f1ea63c490cd8f588cb005b50a8d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 246ffa914ba21b9b2813abca1bae063162576486
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295933"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852144"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Ausnahmen von Visual Studio-Lebenszyklusrichtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Visual Studio enthält eine Sammlung von Compilern, Sprachen, Laufzeiten, Umgebu
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 Packet zur Festlegung von Zielversionen (klassisch)<br /><br /> .NET 4.5.1 Paket zur Festlegung von Zielversionen (Store)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> .NET 4.5.1 Redist<br /><br /> .NET 4.5.1 Redist-Sprachpakete<br /><br /> .NET 4.5.1 SDK|  
-|[ASP.NET-Webstapel](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web-API<br /><br /> ASP.NET-Web-API 2<br /><br /> ASP.NET Web Pages 2<br /><br /> ASP.NET-Webseiten 3|  
-|[Entity Framework 6](https://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
-|[Exchange 2013](https://go.microsoft.com/fwlink/?LinkId=328950)|Exchange-Webdienste|  
-|[Microsoft OWIN](https://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
-|[Microsoft Web Developer Tools 2013](https://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
+|[ASP.NET-Webstapel](https://support.microsoft.com/kb/2902020)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET-Web-API<br /><br /> ASP.NET-Web-API 2<br /><br /> ASP.NET Web Pages 2<br /><br /> ASP.NET-Webseiten 3|  
+|[Entity Framework 6](https://support.microsoft.com/kb/2902020)|Entity Framework 6|  
+|[Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange-Webdienste|  
+|[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
+|[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
 |Updates für diese Komponenten werden über NuGet verteilt und unterliegen nicht den standardmäßigen Microsoft-Lebenszyklusrichtlinien.  Weitere Informationen finden Sie unter [http://docs.nuget.org/](https://docs.microsoft.com/nuget/).|JSON-Webtokenhandler für Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
-|[ODataLib](https://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
+|[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[Online Services-Richtlinie](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  
 |[SharePoint 2013](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|SharePoint-Clientkomponente<br /><br /> SharePoint Foundation 2013<br /><br /> Windows Identity Foundation (WIF)-Erweiterungen|  
@@ -44,7 +44,7 @@ Visual Studio enthält eine Sammlung von Compilern, Sprachen, Laufzeiten, Umgebu
 |[SQL Server 2012](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL-Befehlszeilenprogramme<br /><br /> SQL-Sprachdienst – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> CLR-Typen des SQL-Systems (SQL Server 2012)<br /><br /> SQLDOM|  
 |[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL-Befehlszeilenprogramme<br /><br /> SQL-Sprachdienst – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> CLR-Typen des SQL-Systems (SQL Server 2014)<br /><br /> SQLDOM|  
 |[SQL Server Compact Edition 4.0](https://support.microsoft.com/lifecycle/search/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[WCF RIA Services v1.0 SP2](https://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
+|[WCF RIA Services v1.0 SP2](https://support.microsoft.com/kb/2902020)|WCF RIA Services v1.0 SP2|  
 |[Windows Server 2008](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Windows-Webdienste für Windows Server 2008|  
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Windows 8 SDK|  

@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301315"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851347"
 ---
 # <a name="visualize-code"></a>Visualisieren von Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Sie können die Visualisierungs- und Modellierungstools in Visual Studio verwend
 
   Informationen dazu, welche Versionen von Visual Studio die einzelnen Features unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="what-do-you-want-to-do"></a>Was möchten Sie tun?
+## <a name="what-do-you-want-to-do"></a>Wie möchten Sie vorgehen?
 
 |||
 |-|-|
@@ -50,9 +50,9 @@ Sie können die Visualisierungs- und Modellierungstools in Visual Studio verwend
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Technische Artikel und Journale**|[MSDN Architecture-Forum](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
+|**Technische Artikel und Journale**|[MSDN Architecture-Forum](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Siehe auch
  [Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [analysieren und modellieren](../modeling/analyze-and-model-your-architecture.md) [von Modellen Erstellen von Modellen für das App](../modeling/create-models-for-your-app.md) - [Modell Benutzer Anforderungen](../modeling/model-user-requirements.md) [Modell Ihrer APP-Architektur verwenden von](../modeling/model-your-app-s-architecture.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)

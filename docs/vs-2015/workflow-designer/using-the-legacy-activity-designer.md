@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a13aeeb3394ee6b8896376c0e7d520b90fb56fa6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302823"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846150"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Verwenden des Aktivitätsdesigners der Vorgängerversion
 In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet wird. Verwenden Sie den Designer der Vorgängerversion, wenn Sie auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
@@ -46,15 +46,15 @@ In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerv
 ## <a name="configuring-an-activity"></a>Konfigurieren einer Aktivität
  Wenn der Aktivitätsdesigner aktiv ist, können Sie mit dem Eigenschaftenbrowser die in der folgenden Tabelle aufgeführten Eigenschaften konfigurieren.
 
-|Eigenschaft|Comments|
+|Die Eigenschaften-|Comments|
 |--------------|--------------|
 |**Name**|Der Name der Aktivität.|
-|**Basisklasse**|Die Basisklasse, von der die Aktivität abgeleitet wird. Die Standardbasis Klasse ist [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020). Klicken Sie im **Eigenschaften** Fenster auf die Auslassungs Punkte **[...]** der **Basisklasse** , um eine andere Basisklasse im [Dialog Feld .NET-Typ suchen und auswählen (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)auszuwählen.|
+|**Basisklasse**|Die Basisklasse, von der die Aktivität abgeleitet wird. Die Standardbasis Klasse ist [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). Klicken Sie im **Eigenschaften** Fenster auf die Auslassungs Punkte **[...]** der **Basisklasse** , um eine andere Basisklasse im [Dialog Feld .NET-Typ suchen und auswählen (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)auszuwählen.|
 |**Beschreibung**|Die benutzerdefinierte Beschreibung der Aktivität.|
-|**Aktiviert**|Standardmäßig auf **true** festgelegt, um die Aktivitäts Ausführung und die Validierung zu aktivieren. Legen Sie diese Einstellung auf **false** fest, um die Aktivitäts Ausführung und die Validierung Weitere Informationen zur Aktivitäts Ausführung und-Validierung finden Sie unter [entwickeln von Workflow Aktivitäten](https://go.microsoft.com/fwlink?LinkID=65024).|
+|**Aktiviert**|Standardmäßig auf **true** festgelegt, um die Aktivitäts Ausführung und die Validierung zu aktivieren. Legen Sie diese Einstellung auf **false** fest, um die Aktivitäts Ausführung und die Validierung Weitere Informationen zur Aktivitäts Ausführung und-Validierung finden Sie unter [entwickeln von Workflow Aktivitäten](https://msdn2.microsoft.com/library/ms734413.aspx).|
 
 ## <a name="adding-child-activities"></a>Hinzufügen von untergeordneten Aktivitäten
  Sie können untergeordnete Aktivitäten von der Toolbox zu der Aktivität ziehen, die Sie entwerfen. Sie können anschließend jede untergeordnete Aktivität mit dem Eigenschaftenbrowser konfigurieren.
 
 ## <a name="see-also"></a>Siehe auch
- [Entwickeln von Workflow Aktivitäten](https://go.microsoft.com/fwlink?LinkID=65024) [Erstellen von benutzerdefinierten Aktivitäten](https://go.microsoft.com/fwlink?LinkID=65021) [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [benutzerdefinierte Aktivitäten Beispiele](https://go.microsoft.com/fwlink?LinkID=65022) Gewusst [wie: Erstellen einer Workflow Aktivitäts Bibliothek (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [mit dem Legacy-Workflow-Designer](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Entwickeln von Workflow Aktivitäten](https://msdn2.microsoft.com/library/ms734413.aspx) [Erstellen von benutzerdefinierten Aktivitäten](https://msdn2.microsoft.com/library/bb675228.aspx) [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [benutzerdefinierte Aktivitäten Beispiele](https://msdn2.microsoft.com/library/bb472471.aspx) Gewusst [wie: Erstellen einer Workflow Aktivitäts Bibliothek (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [mit dem Legacy-Workflow-Designer](../workflow-designer/using-the-legacy-workflow-designer.md)

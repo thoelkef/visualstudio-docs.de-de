@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299290"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851523"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 - Eigenschaftswerte wie z. B. Is Abstract
 
-- Verknüpfte Arbeitsaufgaben
+- Verknüpfte Arbeitselemente
 
 - Multiplizitäten und andere Eigenschaften von Beziehungen
 
@@ -113,7 +113,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 - `<bmp fileName="…"/>` für das Toolboxsymbol und `<value>string</value>` für die anderen Elemente, wie in dem Beispiel dargestellt.
 
-  \- oder –
+  \- oder -
 
 - `<resource fileName="Resources.dll"`
 
@@ -129,7 +129,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 |---------------|-------------|
 |displayName|Der Name des Toolboxelements.|
 |tabName|Die Toolboxregisterkarte, in der das Element angezeigt werden soll. Sie können entweder den Namen der normalen Registerkarte für diesen Typ von Diagramm oder einen anderen Namen angeben.|
-|image|Der Speicherort der Bitmapdatei ( **. bmp**), die die Höhe und Breite von 16 und eine Farbtiefe von 24 Bits aufweisen muss.|
+|Bild|Der Speicherort der Bitmapdatei ( **. bmp**), die die Höhe und Breite von 16 und eine Farbtiefe von 24 Bits aufweisen muss.|
 |f1Keyword|Das Schlüsselwort, mit dem ein Hilfethema gesucht wird.|
 |QuickInfo|Eine QuickInfo für dieses Tool.|
 
@@ -139,7 +139,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 > Wenn Sie beginnen, eine TBXINFO-Datei zu verwenden, nachdem Sie mit der alleinigen Verwendung von Diagrammdateien experimentiert haben, stellen sie möglicherweise fest, dass die Toolbox sowohl die alten als auch die neuen Versionen eines Toolboxelements enthält. Dies kann auch auftreten, wenn der Name der Diagrammdatei in der TBXINFO-Datei falsch eingegeben wurde. Wenn dies der Fall ist, wählen Sie im Kontextmenü der Toolbox **Toolbox zurücksetzen**aus. Die benutzerdefinierten Toolboxelemente werden ausgeblendet. Starten Sie Visual Studio neu; daraufhin werden die richtigen benutzerdefinierten Elemente angezeigt.
 
 ## <a name="Extension"></a>Verteilen von Toolbox Elementen in einer Visual Studio-Erweiterung
- Sie können Toolbox Elemente an andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Benutzer verteilen, indem Sie Sie in eine Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Sie können Toolbox Elemente an andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Benutzer verteilen, indem Sie Sie in eine Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  Die übliche Vorgehensweise zum Erstellen einer Visual Studio-Erweiterung besteht darin, die VSIX-Projektvorlage zu verwenden. Zu diesem Zweck muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.
 
@@ -151,11 +151,11 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 3. Öffnen Sie ein vorhandenes Visual Studio-Erweiterungsprojekt.
 
-     \- oder –
+     \- oder -
 
      Definieren Sie ein neues Visual Studio-Erweiterungsprojekt.
 
-    1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
+    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
 
     2. Wählen Sie im Dialogfeld **Neues Projekt** unter **installierte Vorlagen**die Option **Visualisierung C#** , **Erweiterbarkeit**und **VSIX-Projekt**aus.
 
@@ -170,7 +170,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
      **In Ausgabeverzeichnis kopieren** = **immer kopieren**
 
-     **Build-Aktion** = **Inhalt**
+     **Buildvorgang** = **Inhalt**
 
      **In VSIX einschließen** = **true**
 
@@ -220,7 +220,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 3. Legen Sie jede zusätzliche Assembly in einen Ordner, dessen Name der Kulturcode für die Sprache ist. Platzieren Sie z. b. eine französische Version der Assembly in einem Ordner mit dem Namen " **fr**".
 
-4. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu Kultur Codes finden Sie unter [CultureInfo. GetCultures-Methode](https://go.microsoft.com/fwlink/?LinkId=160782), die eine komplette Liste der Kultur Codes enthält.
+4. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu Kultur Codes finden Sie unter [CultureInfo. GetCultures-Methode](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), die eine komplette Liste der Kultur Codes enthält.
 
 5. Erstellen Sie die Visual Studio-Erweiterung, und verteilen Sie sie.
 
