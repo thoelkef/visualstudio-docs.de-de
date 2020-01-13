@@ -2,7 +2,7 @@
 # [Neuigkeiten](whats-new-in-subscriptions.md)
 # Abonnements
 ## Abonnements kaufen
-### [Retail (Einzelhandel)](https://visualstudio.microsoft.com/vs/pricing)
+### [Einzelhandel](https://visualstudio.microsoft.com/vs/pricing)
 ### Wolke 
 #### [Übersicht](vscloud-overview.md)
 #### [Abrechnung – Häufig gestellte Fragen](vscloud-billing-faq.md)
@@ -88,7 +88,7 @@
 ### [Abonnenten mit Anmeldungen über private E-Mail-Adressen](personal-email-sign-ins.md)
 ### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
 # Ressourcen
-## [Whitepaper zur Visual Studio-Lizenzierung](https://aka.ms/vslicensing)
+## [Whitepaper zur Visual Studio-Lizenzierung](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [Vergleich von Abonnementoptionen und -preisen](https://visualstudio.microsoft.com/vs/pricing)
 ## [Vergleich von Visual Studio-IDE-Features](https://visualstudio.microsoft.com/vs/compare)
 ## [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)

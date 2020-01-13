@@ -30,6 +30,8 @@
       items:
         - name: Analysieren der Speicherauslastung
           href: analyze-memory-usage.md
+        - name: Analysieren der Speicherauslastung für .NET-Objekte
+          href: dotnet-alloc-tool.md
         - name: Ereignisse für benutzerdefinierte native ETW-Heaps
           href: custom-native-etw-heap-events.md
         - name: Speicherauslastung ohne Debuggen
