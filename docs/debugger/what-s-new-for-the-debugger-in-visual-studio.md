@@ -20,12 +20,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71210587"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944217"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Neues im Debugger in Visual Studio 2017
 
@@ -44,31 +44,31 @@ Der Debugger umfasst die folgenden neuen Features:
 
     Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vor** in der Debugsymbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden.
 
-    ![Schaltflächen „Schritt zurück“ und „Schritt vorwärts“](../debugger/media/intellitrace-step-back-icons-description.png  "Step Backward and Step Forward buttons")
+    ![Schaltflächen „Schritt zurück“ und „Schritt vorwärts“](../debugger/media/intellitrace-step-back-icons-description.png  "Schaltflächen „Schritt zurück“ und „Schritt vorwärts“")
 
-    Weitere Informationen finden Sie auf der Seite [Inspect previous app states using IntelliTrace (Untersuchen vorheriger App-Zustände mithilfe von IntelliTrace)](../debugger/view-historical-application-state.md).
+    Weitere Informationen finden Sie auf der Seite [Inspect previous app states using IntelliTrace (Untersuchen vorheriger App-Zustände mithilfe von IntelliTrace)](view-historical-application-state.md).
 
 - Das **Exception** -Hilfsprogramm ersetzt den Ausnahmen-Assistenten und wird in einem nicht modalen Dialogfeld angezeigt, in dem der Fehler aufgetreten ist. Das **Exception** -Hilfsprogramm bietet einen schnelleren Zugriff auf alle inneren Ausnahmen, eine zusätzliche Analyse durch den Debugger (falls verfügbar) und unmittelbaren Zugriff auf die **Ausnahme Einstellungen** für die Ausnahme. Die Ausnahmen-Hilfsobjekte können auch in eine Gleit Komma Ansicht gezogen werden, wenn Sie etwas blockiert, das Sie sehen müssen.
 
     Beispielsweise zeigt eine **NullReferenceException** nun die Variable mit dem NULL-Verweis an (zusätzliche Informationen).
 
-    ![Ausnahme Unterstützung des Debuggers] (../debugger/media/dbg-exception-helper.png "Dbgexceptionhelper")
+    ![Ausnahme Unterstützung des Debuggers](../debugger/media/dbg-exception-helper.png "Dbgexceptionhelper")
 
-    Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Verwenden der neuen Ausnahmen-Hilfe in Visual Studio).
+    Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) (Verwenden der neuen Ausnahmen-Hilfe in Visual Studio).
 
 - Sie können nun bis zu einer Codezeile ausführen, während Sie im Debugger angehalten wird, indem Sie das Symbol **Ausführung bis zu** diesem grünen Pfeil ausführen auswählen (das Symbol wird angezeigt, während Sie auf eine Codezeile zeigen). Dadurch entfällt die Notwendigkeit, temporäre Haltepunkte festzulegen.
 
-    ![Debugger-ausführen bis Klick] (../debugger/media/dbg-run-to-click.png "Dbgrunper Click")
+    ![Debugger-ausführen bis Klick](../debugger/media/dbg-run-to-click.png "Dbgrunper Click")
 
 - Sie können Bedingungen für Ausnahmen im Dialogfeld **Ausnahme Einstellungen** festlegen (Sie können hierzu das Symbol **Bedingung bearbeiten** im Dialogfeld Ausnahme Einstellungen oder das Kontextmenü der Ausnahme verwenden.) Zu den derzeit unterstützten Bedingungen gehören die Modulnamen, die für die Ausnahme eingeschlossen oder ausgeschlossen werden sollen.
 
-    ![Bedingungen für eine Ausnahme] (../debugger/media/dbg-conditional-exception.png "Dbgconditionalexception")
+    ![Bedingungen für eine Ausnahme](../debugger/media/dbg-conditional-exception.png "Dbgconditionalexception")
 
 - Das Dialogfeld an den Prozess anhängen enthält eine neue Suchfunktion, mit der Sie den Prozess, den Sie anfügen müssen, schneller identifizieren können.
 
-    ![In Anfügen an den Prozess suchen] (../debugger/media/dbg-attach-to-process-search.png "Dbgattachtoprocess Search")
+    ![In Anfügen an den Prozess suchen](../debugger/media/dbg-attach-to-process-search.png "Dbgattachtoprocess Search")
 
-Weitere Informationen zu diesen neuen Features finden Sie in den [Anmerkungen zu dieser [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]Version von ](/visualstudio/releasenotes/vs2017-relnotes).
+Weitere Informationen zu diesen neuen Features finden Sie in den [Anmerkungen zu dieser Version [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -18,28 +18,26 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 03c0da634ea740517380896542e9df5e6c7a5fbd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850698"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918592"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe von einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
- Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualizaton und Modellierungs-SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
-
 ## <a name="templates"></a>Auswählen einer Vorlagen Lösung
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Visual Studio-Visualisierungs- und Modellierungs-SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio-Visualisierungs- und Modellierungs-SDK|[Modellierungs-SDK-Download](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe von der Projektvorlage "Domänenspezifische Sprache".
 

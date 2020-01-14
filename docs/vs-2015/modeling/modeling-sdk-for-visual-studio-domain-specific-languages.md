@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0673f7511276799804dc327bab67637f3fc450b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4907838720e3a68614e4b9774eb2d7e9fb42ff20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850096"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916536"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,6 @@ Mit dem Modellierungs-SDK für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (msd
 
 ## <a name="samples-and-the-latest-information"></a>Beispiele und aktuelle Informationen
  [Herunterladen des Modellierungs-SDK für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
-
- [Beispiele](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) für das Modellierungs-SDK für Visual Studio.
 
  Die Anleitung in fortgeschrittenen Techniken und Problembehandlung, finden Sie unter [Forum von Visual Studio DSL & Modellierungstool-Erweiterbarkeit](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 

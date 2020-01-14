@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671528"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918169"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Überprüfen von nicht verwendeten Parametern](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Überprüfen von nicht verwendeten Parametern](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Kategorie|Microsoft. Usage|
+|Kategorie|Microsoft.Usage|
 |Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen.<br /><br /> Nicht unterbrechend: Wenn Sie den Member so ändern, dass er den-Parameter innerhalb seines Texts verwendet.<br /><br /> Unterbrechen: Wenn Sie den Parameter entfernen und dieser außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache

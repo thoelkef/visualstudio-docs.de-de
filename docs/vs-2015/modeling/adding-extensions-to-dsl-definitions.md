@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 72c5968fccb55a265639ff05c600bd5f97a9f90a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852101"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919060"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Die DSL-Definitions Erweiterung ermöglicht es Ihnen, ein Paket mit Erweiterunge
 
   Ein Benutzer einer erweiterten DSL kann ein Modell erstellen und speichern, das Instanzen der zusätzlichen Funktionen enthält. Diese können von anderen Benutzern gelesen werden, die die entsprechende Erweiterung installiert haben. Benutzer, die die Erweiterung nicht installiert haben, können die zusätzlichen Features nicht verwenden, aber Sie können ein Modell aktualisieren und speichern, ohne die zusätzlichen Features zu verlieren.
 
-  Beispielcode und weitere Informationen zu diesem Feature finden Sie auf der [Visual Studio-Website zum Visualisieren und modellieren von SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
+  Beispielcode und weitere Informationen zu diesem Feature finden Sie auf der [Visual Studio-Website zum Visualisieren und modellieren von SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148) .
 
 ## <a name="see-also"></a>Siehe auch
- [Visual Studio-Visualisierungs-und Modellierungs-SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Visual Studio-Visualisierungs-und Modellierungs-SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

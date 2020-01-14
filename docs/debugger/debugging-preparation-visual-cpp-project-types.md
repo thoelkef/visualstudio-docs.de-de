@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738110"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916321"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Vorbereitung zum Debuggen: C++ Projekttypen
 In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die mithilfe von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektvorlagen erstellt wurden.
@@ -47,13 +47,13 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Knoten " &#124; Konfigurations EigenschaftenC++ &#124; C/Optimierung"
 
-|Eigenschaftenname|Einstellung|
+|Eigenschaftsname|-Einstellung|
 |-------------------|-------------|
 |**Optimization**|Legen Sie für diese Eigenschaft **Deaktiviert (/ 0d)** fest. Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn das Programm einen Fehler aufweist, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren. Beachten Sie jedoch, dass der im **Disassembly**-Fenster angezeigte Code aus optimiertem Code generiert wurde, der u. U. nicht mit dem Inhalt der Quellcodefenster übereinstimmt. Andere Funktionen, z. B. die Ausführung in Einzelschritten, verhalten sich möglicherweise nicht wie erwartet.|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Konfigurations Eigenschaften &#124; Linker &#124; -debugknoten
 
-|Eigenschaftenname|Einstellung|
+|Eigenschaftsname|-Einstellung|
 |-------------------|-------------|
 |**Debuginformationen generieren**|Sie sollten diese Option beim Erstellen von Debugsymbolen und Dateien, die für das Debuggen benötigt werden, immer auf **Ja (/DEBUG)** festlegen. Wenn die Anwendung in Produktion geht, können Sie die Option wieder deaktivieren.|
 
@@ -97,7 +97,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
    [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms-Anwendungen (.NET)
- Die Vorlage der **Windows Forms-Anwendung (.NET)** erstellt eine [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Windows Forms-Anwendung. Weitere Informationen finden Sie unter [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ Die Vorlage der **Windows Forms-Anwendung (.NET)** erstellt eine [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Windows Forms-Anwendung. Weitere Informationen finden Sie unter [How to: Create a Windows Application Project (Vorgehensweise: Erstellen eines neuen Windows Forms-Anwendungsprojekts)](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist mit dem Debuggen in verwalteten Windows Forms-Anwendungen vergleichbar.
 
@@ -114,4 +114,4 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
 - [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attach to running processes with the Visual Studio debugger (Anfügen an laufende Prozesse mit dem Visual Studio Debugger)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Set debug and release configurations in Visual Studio (Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../debugger/how-to-set-debug-and-release-configurations.md)
-- [How to: Create a Windows Application Project (Vorgehensweise: Erstellen eines Projekts für eine Windows-Anwendung)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [How to: Create a Windows Application Project (Vorgehensweise: Erstellen eines Projekts für eine Windows-Anwendung)](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

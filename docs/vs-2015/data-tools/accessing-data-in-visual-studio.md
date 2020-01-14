@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d2b716bb4e6119c76f593ff067784f360cb48187
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846666"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917031"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ In Visual Studio können Sie Anwendungen erstellen, die eine Verbindung mit Date
 ### <a name="net-languages"></a>.NET-Sprachen
  Alle .NET-Daten Zugriffe, einschließlich in .net Core, basieren auf ADO.net, einer Reihe von Klassen, die eine Schnittstelle für den Zugriff auf eine beliebige Art von Datenquelle definieren, sowohl relationale als auch nicht relationale. Visual Studio verfügt über mehrere Tools und Designer, die mit ADO.NET verwendet werden können, um eine Verbindung mit Datenbanken herzustellen, die Daten zu bearbeiten und die Daten dem Benutzer vorzustellen. In der Dokumentation in diesem Abschnitt wird beschrieben, wie diese Tools verwendet werden. Sie können auch direkt mit den ADO.NET-Befehls Objekten programmieren. Weitere Informationen zum direkten Aufrufen der ADO.NET-APIs finden Sie unter [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) in der MSDN Library.
 
- Informationen zur Datenzugriffs Dokumentation, die sich speziell auf ASP.net bezieht, finden Sie unter [Arbeiten mit Daten](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/) auf der ASP.NET-Website. Ein Tutorial zur Verwendung von Entity Framework mit ASP.NET MVC finden [Sie unter Getting Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ Informationen zur Datenzugriffs Dokumentation, die sich speziell auf ASP.net bezieht, finden Sie unter [Arbeiten mit Daten](/aspnet/web-forms/overview/presenting-and-managing-data/) auf der ASP.NET-Website. Ein Tutorial zur Verwendung von Entity Framework mit ASP.NET MVC finden [Sie unter Getting Started with Entity Framework 6 Code First using MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
  Universelle Windows-Plattform-Apps (UWP) C# in oder Visual Basic können den Microsoft Azure SDK für .NET verwenden, um auf Azure Storage und andere Azure-Dienste zuzugreifen. Die Windows. Web. HttpClient-Klasse ermöglicht die Kommunikation mit einem beliebigen Rest-Dienst. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit einem HTTP-Server mithilfe von Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 

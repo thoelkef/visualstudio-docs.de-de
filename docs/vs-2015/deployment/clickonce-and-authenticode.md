@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f7fd108250a406339d5be08b5a6e9aaf67d039
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847789"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917569"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce und Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Authenticode * ist eine Microsoft-Technologie, die Branchenstandard-Kryptografie
   
 - Deinstallieren Sie die Anwendung, und installieren Sie eine neue Version mit einem gültigen Zertifikat.  
   
-- Erstellen Sie eine Befehlszeilen-Assembly, die das Zertifikat aktualisiert. Detaillierte Informationen zu diesem Vorgang finden Sie im [Microsoft Support-Artikel 925521](https://support.microsoft.com/kb/925521).  
+- Erstellen Sie eine Befehlszeilen-Assembly, die das Zertifikat aktualisiert.  
   
 ### <a name="storing-certificates"></a>Speichern von Zertifikaten  
   

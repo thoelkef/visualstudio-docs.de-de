@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299679"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917334"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>&#39;Neues im Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Ab Visual Studio 2017 wird das Scannen von benutzerdefinierten Projekt-und Eleme
  Beginnend mit dem Visual Studio 2015 SDK haben Sie verschiedene Optionen zum Erstellen von Erweiterungen, je nachdem, welche Programmiersprache Sie verwenden.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C#- oder Visual Basic
- Für C# und Visual Basic gibt es eine vollständige Palette von Projekt Element Vorlagen, mit denen Sie VSPackages, Menübefehle, Tool Fenster, editorklassifizierer, Editor-Zusatzelemente und Editor-Rand Erweiterungen erstellen können. Sie können dem VSIX-Standard Projekt beliebige oder alle diese hinzufügen. Weitere Informationen finden Sie unter:
+ Für C# und Visual Basic gibt es eine vollständige Palette von Projekt Element Vorlagen, mit denen Sie VSPackages, Menübefehle, Tool Fenster, editorklassifizierer, Editor-Zusatzelemente und Editor-Rand Erweiterungen erstellen können. Sie können dem VSIX-Standard Projekt beliebige oder alle diese hinzufügen. Weitere Informationen finden Sie unter: .
 
 - [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -56,7 +56,7 @@ Ab Visual Studio 2017 wird das Scannen von benutzerdefinierten Projekt-und Eleme
  Für C++unterstützt der VSPackage-Assistent Menübefehle, Tool Fenster und benutzerdefinierte Editoren. Suchen Sie im Dialogfeld " **Neues Projekt** " **unter C++ Visualisierung/Erweiterbarkeit**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS SDK-Verweisassemblys über nuget
- Um die Portabilität und die Freigabe von Erweiterbarkeits Projekten zu erhöhen, können Sie die nuget-Versionen der vs SDK-Verweisassemblys verwenden.  Diese sind auf [nuget.org](https://www.nuget.org/) verfügbar, die von [visualstudioextensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) veröffentlicht werden, und können Ihrem Projekt oder ihrer Projekt Mappe problemlos über das Dialogfeld Visual Studio **-Verweise/-Verwalten von nuget-Paketen** hinzugefügt werden. Sie können einzelne Verweise auf bestimmte Erweiterbarkeits Assemblys hinzufügen oder alle vs SDK-Verweisassemblys gleichzeitig mithilfe des vs SDK- [Meta-Pakets](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)hinzufügen. Weitere Informationen zu nuget finden Sie unter [nuget-Übersicht](https://docs.microsoft.com/nuget/) und [Verwalten von nuget-Paketen mithilfe des Dialog](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)Felds.
+ Um die Portabilität und die Freigabe von Erweiterbarkeits Projekten zu erhöhen, können Sie die nuget-Versionen der vs SDK-Verweisassemblys verwenden.  Diese sind auf [nuget.org](https://www.nuget.org/) verfügbar, die von [visualstudioextensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) veröffentlicht werden, und können Ihrem Projekt oder ihrer Projekt Mappe problemlos über das Dialogfeld Visual Studio **-Verweise/-Verwalten von nuget-Paketen** hinzugefügt werden. Sie können einzelne Verweise auf bestimmte Erweiterbarkeits Assemblys hinzufügen oder alle vs SDK-Verweisassemblys gleichzeitig mithilfe des vs SDK- [Meta-Pakets](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)hinzufügen. Weitere Informationen zu nuget finden Sie unter [nuget-Übersicht](/nuget/) und [Verwalten von nuget-Paketen mithilfe des Dialog](/nuget/consume-packages/install-use-packages-visual-studio)Felds.
 
  Wenn Sie die nuget-Versionen der vs SDK-Verweisassemblys verwenden, muss ein anderer Benutzer das vs SDK nicht installieren, um das Projekt zu öffnen und zu erstellen.  Die nuget-Verweisassemblys und vs SDK-Buildtools werden automatisch für dieses Projekt auf dem Computer installiert.
 

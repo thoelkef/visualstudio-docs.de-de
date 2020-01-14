@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573312"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916020"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
 
@@ -26,7 +26,7 @@ Mithilfe dieser Skripts können Sie angepasste Versionen Ihrer Website (auch als
 
 * Visual Studio 2015 oder höher mit installierter **Azure-Workload** oder Visual Studio 2013 und Azure SDK 2.3 oder höher. Siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads). (Sie benötigen das Azure SDK nicht, um die Skripts für Webprojekte zu generieren. Dieses Feature bezieht sich auf Webprojekte, nicht auf Webrollen in Clouddiensten.)
 * Azure PowerShell 0.7.4 oder höher. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) oder höher.
+* [Windows PowerShell 3.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) oder höher.
 
 ## <a name="additional-tools"></a>Zusätzliche Tools
 

@@ -15,23 +15,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7dec130e4a4704bea347f94ff57d354a4465ddd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604979"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917825"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1903: nur API aus Ziel Framework verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1903: nur API aus Ziel Framework verwenden](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
 |||
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Kategorie|Microsoft. Portabilität|
+|Kategorie|Microsoft.Portability|
 |Unterbrechende Änderung|Unterbrechen: Wenn Sie für die Signatur eines extern sichtbaren Members oder Typs ausgelöst werden.<br /><br /> Nicht unterbrechend: beim Auslösen im Text einer Methode.|
 
 ## <a name="cause"></a>Ursache
@@ -47,7 +47,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1903: nur API aus
 |Wenn das Ziel Framework|Ausgelöst bei der Verwendung von Membern, die in eingeführt wurden|
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3,5|.NET Framework 3.5 SP1|
+|.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Nicht zutreffend|
 
  Informationen zum Ändern des Ziel-Frameworks eines Projekts finden Sie unter [Ausrichten einer bestimmten .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md).

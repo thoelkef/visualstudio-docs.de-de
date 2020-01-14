@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845289"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918922"
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Fügen Sie der Zieldomänenklasse eine Direktive für Elementzusammenführungen 
 Überschreiben Sie *myDSL* -`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` im dslpackage-Projekt.
 
  **Bewahren Sie das Form Layout durch Kopieren und Einfügen auf.**
-Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird anhand des Beispiels unter [vmsdk: Circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)Diagramms veranschaulicht.
+Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. 
 
  Sie können diesen Effekt erreichen, indem Sie dem kopierten ElementGroupPrototype Formen und Konnektoren hinzufügen. Für das Überschreiben empfiehlt sich ElementOperations.CreateElementGroupPrototype(). Fügen Sie dem Dsl-Projekt zu diesem Zweck den folgenden Code hinzu:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Fügen Sie Formen an einer ausgewählten Stelle ein, z. b. die aktuelle Cursorposition.**
-Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird anhand des Beispiels unter [vmsdk: Circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)Diagramms veranschaulicht.
+Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten.
 
  Diesen Effekt erreichen Sie, indem Sie `ClipboardCommandSet.ProcessOnMenuPasteCommand()` überschreiben, sodass die positionsspezifische Version von `ElementOperations.Merge()` verwendet wird. Fügen Sie dem DslPackage-Projekt zu diesem Zweck den folgenden Code hinzu:
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Anpassen der Element Erstellung und](../modeling/customizing-element-creation-and-movement.md) [-Verschiebung Gewusst wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) [Anpassen des Lösch Verhaltens](../modeling/customizing-deletion-behavior.md) , [Beispiel: vmsdk Circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) Diagramms Sample
+ [Anpassen der Element Erstellung und-Bewegung](../modeling/customizing-element-creation-and-movement.md) Gewusst [wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) [Anpassen des Lösch Verhaltens](../modeling/customizing-deletion-behavior.md)
+ 

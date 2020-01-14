@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57e735db68d90130b537f9f5f4b220bd688c7675
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666673"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918759"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Serialisierungsmethoden korrekt implementieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA2238: Implementieren Sie Serialisierungsmethoden ordnungsgemäß](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA2238: Implementieren Sie Serialisierungsmethoden ordnungsgemäß](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Kategorie|Microsoft. Usage|
+|Kategorie|Microsoft.Usage|
 |Unterbrechende Änderung|Unterbrechung: Wenn die Methode außerhalb der Assembly sichtbar ist.<br /><br /> Nicht unterbrechend: Wenn die Methode außerhalb der Assembly nicht sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
@@ -48,7 +48,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA2238: Implementie
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Serialisierungsereignishandler verwenden einen einzelnen Parameter vom Typ "<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>", geben "`void`" zurück und haben `private`-Sichtbarkeit.
+  Serialisierungsereignishandler verwenden einen einzelnen Parameter vom Typ <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, geben `void`zurück und haben `private` Sichtbarkeit.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Signatur, den Rückgabetyp oder die Sichtbarkeit des Serialisierungsereignishandlers.

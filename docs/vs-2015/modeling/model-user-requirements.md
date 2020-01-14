@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844914"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918269"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|
 |Entwickeln von Code aus konzeptionellen Klassen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
- In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Durch die folgende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung werden nicht direktionale Pfeile als Standard festgelegt: [Sample: UML Domain Modeling features](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)(Beispiel zu Funktionen für die UML-Domänenmodellierung).
+ In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar.
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.
@@ -239,4 +239,4 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   Durch Untersuchen der Beziehungen zwischen den Ansichten, die von verschiedenen Diagrammen bereitstellt werden, können Sie schnell die wichtigsten Konzepte verstehen, mit denen die Benutzer arbeiten, und ihnen helfen, zu verstehen, was sie aus dem System benötigen. Sie können auch besser verstehen, bei welchen Anforderungen sich die Projektbeteiligten am unsichersten sind. Sie können planen, diese Features zumindest in vereinfachter Form in einem frühen Stadium des Projekts zu entwickeln, damit Benutzer mit ihnen experimentieren können.
 
 ## <a name="see-also"></a>Siehe auch
- [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [entwickeln von Tests aus einem Modell verwenden von](../modeling/develop-tests-from-a-model.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Modell Ihrer APP Architektur](../modeling/model-your-app-s-architecture.md) [Sample vs Extension: UML Domain Modeling Features](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Sample vs Extension: Color UML Elements by](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [stereosample vs Extension: Verknüpfen von UML-Elementen mit Diagrammen, Dateien und anderen Elementen](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Sample vs Extension: Align Shapes on a UML Diagram](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Video: Modeling The Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [entwickeln von Tests aus einem Modell verwenden von](../modeling/develop-tests-from-a-model.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md) [Modell des Architektur Videos ihrer App](../modeling/model-your-app-s-architecture.md) [: Modellieren der Geschäftsdomäne](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

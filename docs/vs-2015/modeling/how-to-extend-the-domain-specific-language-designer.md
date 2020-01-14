@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850680"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916799"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Erweiterungen für den Designer vornehmen, mit dem Sie DSL-Definitionen bearbeiten. Zu den Erweiterungs Typen, die Sie vornehmen können, zählen das Hinzufügen von Menübefehlen, das Hinzufügen von Handlern für Drag-und Doppelklick Gesten und Regeln, die ausgelöst werden, wenn bestimmte Werte oder Beziehungen geändert werden. Die Erweiterungen können als Visual Studio-Integrations Erweiterung (VSIX) verpackt und an andere Benutzer verteilt werden.
-
- Beispielcode und weitere Informationen zu diesem Feature finden Sie auf der Visual Studio-Website für das [Visualisierungs-und Modellierungs-SDK (vmsdk)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Einrichten der Lösung
  Richten Sie ein Projekt ein, das den Code der Erweiterung enthält, und ein VSIX-Projekt, das das Projekt exportiert. Die Projekt Mappe kann andere Projekte enthalten, die in dieselbe VSIX integriert sind.

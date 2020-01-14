@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849935"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918580"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Durch Codegenerierung können Sie Programmcode erstellen, der stark typisiert is
  In diesem Beispielprojekt liest eine Vorlage eine Beispiel-XML-Datei und generiert Klassen, die jedem Knotentyp entsprechen. Bei handgeschriebenem Code können Sie diese Klassen verwenden, um in der XML-Datei zu navigieren. Sie können Ihre Anwendung auch mit anderen Dateien ausführen, die die gleichen Knotentypen verwenden. Die XML-Beispieldatei dient dazu, Beispiele für alle Knotentypen bereitzustellen, für die Ihre Anwendung gedacht ist.
 
 > [!NOTE]
-> Die Anwendung [xsd.exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
+> Die Anwendung [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
 
  Hier ist die Beispieldatei:
 

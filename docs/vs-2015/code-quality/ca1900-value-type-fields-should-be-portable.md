@@ -15,23 +15,23 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23b5705b7ee81e56945050fe63dd2f086894bd08
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661107"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917929"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Werttypfelder sollten portabel sein
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1900: Werttyp Felder sollten portabel sein](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1900: Werttyp Felder sollten portabel sein](/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
 
 |||
 |-|-|
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
-|Kategorie|Microsoft. Portabilität|
+|Kategorie|Microsoft.Portability|
 |Unterbrechende Änderung|Unterbrechung: Wenn das Feld außerhalb der Assembly sichtbar ist.<br /><br /> Nicht unterbrechend: Wenn das Feld außerhalb der Assembly nicht sichtbar ist.|
 
 ## <a name="cause"></a>Ursache

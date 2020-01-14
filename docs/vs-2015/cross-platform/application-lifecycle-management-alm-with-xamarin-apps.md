@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 1a0ea4f611c5312331fa0e2f2f467b4189778f30
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37c855f7940cbed847dcb7d5c6414be436cee993
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300023"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918376"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) mit Xamarin-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
   
  Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Projekttyp und den Programmiersprachen unabhängig.  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Verwalten von Rückständen und Sprints|Ja||  
 |Arbeitsüberwachung|Ja||  
@@ -46,7 +46,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
   
  Die Entwicklungsfeatures sind unabhängig von der Programmiersprache oder funktionieren mit .NET-Sprachen wie C#. Mit Code zusammenhängende Aspekte finden Sie unter [Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Sequenzdiagramme|Ja||  
 |Abhängigkeitsdiagramme|Ja||  
@@ -55,11 +55,11 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |Architektur-Explorer|Ja||  
 |UML-Diagramme (Anwendungsfall, Aktivität, Klasse, Komponente, Sequenz und DSL)|Ja||  
 |Ebenendiagramme|Ja||  
-|Gültigkeitsprüfung|Ja||  
+|Ebenenüberprüfung|Ja||  
   
 ## <a name="code"></a>Code  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |[Verwenden von Team Foundation-Versionskontrolle](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) oder Visual Studio Team Services|Ja||  
 |[Erste Schritte mit Git in Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ja||  
@@ -70,9 +70,9 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 ## <a name="build"></a>Erstellen  
  Verweislink: **[Build](/azure/devops/pipelines/index)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
-|Lokaler TFS-Server|Ja|Auf Buildcomputern muss Xamarin installiert sein, und sie können mit einem OSX-Computer verknüpft werden, um Builds für iOS zu erstellen. Weitere Informationen finden Sie unter [Konfigurieren von TFS für Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (Xamarin-Website)|  
+|Lokaler TFS-Server|Ja|Auf Buildcomputern muss Xamarin installiert sein, und sie können mit einem OSX-Computer verknüpft werden, um Builds für iOS zu erstellen. Weitere Informationen finden Sie unter [Konfigurieren von TFS für Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (Xamarin-Website)|  
 |Lokaler Buildserver mit Verbindung zu Visual Studio Team Services|Ja|Anweisungen finden Sie unter [Buildserver](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
 |Gehosteter Controllerdienst von Visual Studio Team Services|Ja|Siehe [Erstellen Ihrer Xamarin-App](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Builddefinitionen mit Vor- und Nachskripts|Ja||  
@@ -81,38 +81,38 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 ## <a name="testing"></a>Test  
  Verweislink: **[Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Planen von Tests, Erstellen von Testfällen und Organisieren von Testauflistungen|Ja||  
 |Manuelle Tests|Ja||  
 |Test-Manager (Aufzeichnung und Wiedergabe von Tests)|Ja|Nur Windows-Geräte und Android-Emulatoren von Visual Studio. Ein Aufzeichnen für alle Geräte ist mit [Xamarin Text Recorder](https://www.xamarin.com/test-cloud/recorder) möglich.|  
-|Codeabdeckung|n/v||  
-|[Komponententest für Code](../test/unit-test-your-code.md)|Ja|Für Windows- und Android-Ziele können die integrierten MSTest-Tools verwendet werden. Zum Ausführen von Komponententests für Windows, Android und iOS empfiehlt Xamarin NUnit. Weitere Informationen finden Sie unter [Konfigurieren von TFS für Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (Xamarin-Website).|  
+|Codeabdeckung|nicht verfügbar||  
+|[Komponententest für Code](../test/unit-test-your-code.md)|Ja|Für Windows- und Android-Ziele können die integrierten MSTest-Tools verwendet werden. Zum Ausführen von Komponententests für Windows, Android und iOS empfiehlt Xamarin NUnit. Weitere Informationen finden Sie unter [Konfigurieren von TFS für Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (Xamarin-Website).|  
 |[Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nur Windows|Testaufzeichnung der Benutzeroberfläche in Visual Studio ist nur unter Windows möglich. Alle Plattformen finden Sie unter [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
  Verweislink: **[Verbessern der Codequalität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |[Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ja||  
 |[Suchen von doppeltem Code mit der Codeklonerkennung](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ja||  
 |[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ja||  
-|[Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)|Nein|Verwenden Sie stattdessen den [Xamarin Profiler](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/) über Xamarin Studio. Beachten Sie, dass der Xamarin Profiler sich derzeit in der Vorschauversion befindet und noch nicht für Windows-Ziele funktioniert.|  
+|[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Verwenden Sie stattdessen den [Xamarin Profiler](/xamarin/cross-platform/deploy-test/) über Xamarin Studio. Beachten Sie, dass der Xamarin Profiler sich derzeit in der Vorschauversion befindet und noch nicht für Windows-Ziele funktioniert.|  
 |[Analysieren von .NET Framework-Arbeitsspeicherproblemen](../misc/analyze-dotnet-framework-memory-issues.md)|Nein|Visual Studio-Tools haben keinen Zugriff auf das Mono-Framework für die Profilerstellung.|  
   
 ## <a name="release-management"></a>Release Management:  
  Verweislink: **[Automatisieren von Bereitstellungen mit Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Verwalten von Releaseprozessen|Ja||  
 |Bereitstellen auf Servern für das Sideloading über Skripts|Ja||  
-|Hochladen in den App Store|Teilweise|Es stehen Erweiterungen zur Verfügung, die diesen Prozess für manche App-Stores automatisieren können.  Siehe [Erweiterungen für Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS); beispielsweise die [Extension for Google Play (Erweiterung für Google Play)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Hochladen in den App Store|Partial|Es stehen Erweiterungen zur Verfügung, die diesen Prozess für manche App-Stores automatisieren können.  Siehe [Erweiterungen für Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS); beispielsweise die [Extension for Google Play (Erweiterung für Google Play)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Überwachen mit HockeyApp  
  Verweislink: **[Überwachen mit HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Absturzanalysen, Telemetrie und Betaverteilung|Ja||

@@ -15,17 +15,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5988d472317540ca1b1a7f91acd75a48fa9743b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669115"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919190"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Bezeichner sollten ein korrektes Präfix aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner sollten ein korrektes Präfix aufweisen](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner sollten ein korrektes Präfix aufweisen](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
 |||
 |-|-|
@@ -37,7 +37,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner 
 ## <a name="cause"></a>Ursache
  Der Name einer extern sichtbaren Schnittstelle beginnt nicht mit einem Großbuchstaben "I".
 
- - oder -
+ \- oder -
 
  Der Name eines generischen Typparameters für einen extern sichtbaren Typ oder eine extern sichtbare Methode beginnt nicht mit einem Großbuchstaben "t".
 

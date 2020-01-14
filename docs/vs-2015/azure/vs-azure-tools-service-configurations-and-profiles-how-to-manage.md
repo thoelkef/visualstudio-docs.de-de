@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850002"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917360"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Verwalten von Dienstkonfigurationen und -profilen
 ## <a name="overview"></a>Übersicht über
@@ -80,7 +80,7 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
    
     Das neue Profil wird in der Liste Zielprofil angezeigt.
 6. Klicken Sie in der Liste **Zielprofil** auf das soeben erstellte Profil. Die Einstellungen des Veröffentlichungs-Assistenten werden mit den Optionen aus dem ausgewählten Profil aufgefüllt.
-7. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und passen Sie dann die Einstellungen für dieses Profil an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+7. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und passen Sie dann die Einstellungen für dieses Profil an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md) .
 8. Klicken Sie nach dem Anpassen der Einstellungen auf **Weiter** , um zur Seite „Einstellungen“ zurückzukehren. Das Profil wird gespeichert, wenn Sie den Dienst mit diesen Einstellungen veröffentlichen oder auf die Schaltfläche **Speichern** neben der Liste mit den Profilen klicken.
 
 ### <a name="to-rename-or-delete-a-profile"></a>So benennen Sie ein Profil um oder löschen es
@@ -93,9 +93,9 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
 ### <a name="to-change-a-profile"></a>So ändern Sie ein Profil
 1. Öffnen Sie das Kontextmenü des Azure-Projekts, und klicken Sie auf **Veröffentlichen**.
 2. Klicken Sie in der Liste **Zielprofil** auf das Profil, das Sie ändern möchten.
-3. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und ändern Sie dann die gewünschten Einstellungen an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+3. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und ändern Sie dann die gewünschten Einstellungen an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md) .
 4. Klicken Sie nach dem Ändern der Einstellungen auf **Weiter**, um zur Seite **Einstellungen** zurückzukehren.
 5. (Optional) Klicken Sie auf **Veröffentlichen** , um den Clouddienst mit den neuen Einstellungen zu veröffentlichen. Wenn Sie den Clouddienst nicht unmittelbar veröffentlichen möchten und den Veröffentlichungs-Assistenten schließen, werden Sie von Visual Studio gefragt, ob Sie die Änderungen am Profil speichern möchten.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Informationen zum Konfigurieren anderer Teile des Azure-Projekts in Visual Studio finden Sie unter [Konfigurieren eines Azure-Projekts](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+Informationen zum Konfigurieren anderer Teile des Azure-Projekts in Visual Studio finden Sie unter [Konfigurieren eines Azure-Projekts](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

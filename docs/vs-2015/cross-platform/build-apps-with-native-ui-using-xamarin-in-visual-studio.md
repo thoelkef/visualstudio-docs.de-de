@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297922"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918343"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit nativer Benutzeroberfläche über Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 >
 >   - [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (einfache App mit einem Bildschirm)
 >   - [Hello, Android multiscreen](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (App mit Navigation zwischen Bildschirmen)
->   - [Android Fragments Walkthrough](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (u. a. für die Demonstration von Haupt-/Detailbildschirmen verwendet)
+>   - [Android Fragments Walkthrough](/xamarin/android/platform/fragments/implementing-with-fragments/) (u. a. für die Demonstration von Haupt-/Detailbildschirmen verwendet)
 >   - [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Hello, iOS Multiscreen](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Xamarin-Apps mit Xamarin.Forms (gemeinsame Benutzeroberfläche)
@@ -230,7 +230,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **WeatherApp.Droid**>**Ressourcen**>**Layout**, und öffnen Sie **Main.axml**. Dadurch wird die Datei im visuellen Designer geöffnet. (Wenn ein Java-bezogener Fehler angezeigt wird, lesen Sie diesen [Blogbeitrag](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    > Es sind viele weitere Dateien in diesem Projekt vorhanden. Sie alle zu besprechen, würde den Rahmen dieses Themas sprengen. Wenn Sie jedoch mehr über die Struktur eines Android-Projekts erfahren möchten, finden Sie ausführliche Informationen unter [Part 2 Deep Dive (Detailinformationen, Teil 2, in englischer Sprache)](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) des Themas „Hello Android“ auf xamarin.com.
+    > Es sind viele weitere Dateien in diesem Projekt vorhanden. Sie alle zu besprechen, würde den Rahmen dieses Themas sprengen. Wenn Sie jedoch mehr über die Struktur eines Android-Projekts erfahren möchten, finden Sie ausführliche Informationen unter [Part 2 Deep Dive (Detailinformationen, Teil 2, in englischer Sprache)](/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) des Themas „Hello Android“ auf xamarin.com.
 
 2. Markieren und löschen Sie die Standardschaltfläche, die im Designer angezeigt wird.
 
@@ -247,9 +247,9 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 7. Legen Sie im Fenster **Eigenschaften** die folgenden Eigenschaften fest. (Hinweis: Es kann helfen, die Liste mithilfe der Sortierschaltfläche in der Symbolleiste des Fensters „Eigenschaften“ alphabetisch zu sortieren):
 
-    |Eigenschaft|Wert|
+    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
     |--------------|-----------|
-    |**text**|**Search by Zip Code**|
+    |**Text**|**Search by Zip Code**|
     |**ID**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
@@ -279,9 +279,9 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 9. Legen Sie im **Eigenschaftsfenster** diese Eigenschaften fest:
 
-    |Eigenschaft|Wert|
+    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
     |--------------|-----------|
-    |**text**|**Zip Code**|
+    |**Text**|**Zip Code**|
     |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
@@ -301,7 +301,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 10. Ziehen Sie aus der **Toolbox** ein **Number**-Steuerelement auf **RelativeLayout**, und positionieren Sie es unter der Beschriftung **Zip Code**. Legen Sie dann die folgenden Eigenschaften fest:
 
-    |Eigenschaft|Wert|
+    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
     |--------------|-----------|
     |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -324,10 +324,10 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 11. Ziehen Sie aus der **Toolbox** eine **Schaltfläche** auf das Steuerelement **RelativeLayout**, und positionieren Sie sie rechts neben dem Steuerelement „zipCodeEntry“. Legen Sie dann diese Eigenschaften fest:
 
-    |Eigenschaft|Wert|
+    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
-    |**text**|**Get Weather**|
+    |**Text**|**Get Weather**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -636,11 +636,11 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
  Erweitern Sie dieses Beispiel, indem Sie eine native Benutzeroberfläche für iOS hinzufügen. Hierzu müssen Sie über Ihr lokales Netzwerk eine Verbindung zu einem Mac herstellen, auf dem Xcode und Xamarin installiert sind. Anschließend können Sie den iOS-Designer direkt in Visual Studio verwenden. Weitere Informationen finden Sie im [Repository „mobile-samples“ auf GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
- Beachten Sie auch die exemplarische Vorgehensweise für [Hello, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Hinweis: Achten Sie darauf, dass auf „xamarin.com“ oben rechts auf jeder Seite „Visual Studio“ ausgewählt ist, damit der richtige Satz von Anweisungen angezeigt wird.
+ Beachten Sie auch die exemplarische Vorgehensweise für [Hello, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Hinweis: Achten Sie darauf, dass auf „xamarin.com“ oben rechts auf jeder Seite „Visual Studio“ ausgewählt ist, damit der richtige Satz von Anweisungen angezeigt wird.
 
  **Hinzufügen von plattformspezifischem Code in einem freigegebenen Projekt**
 
- Freigegebener Code in einer PCL ist plattformneutral, da die PCL einmal kompiliert und in alle plattformspezifischen App-Pakete aufgenommen wird. Wenn Sie freigegebenen Code schreiben möchten, der eine bedingte Kompilierung verwendet, um plattformspezifischen Code zu isolieren, können Sie ein *freigegebenes* Projekt verwenden. Weitere Informationen finden Sie unter [Code Sharing Options (Codefreigabeoptionen)](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
+ Freigegebener Code in einer PCL ist plattformneutral, da die PCL einmal kompiliert und in alle plattformspezifischen App-Pakete aufgenommen wird. Wenn Sie freigegebenen Code schreiben möchten, der eine bedingte Kompilierung verwendet, um plattformspezifischen Code zu isolieren, können Sie ein *freigegebenes* Projekt verwenden. Weitere Informationen finden Sie unter [Code Sharing Options (Codefreigabeoptionen)](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
 
 ## <a name="see-also"></a>Siehe auch
- [Xamarin-Entwickler Website](https://docs.microsoft.com/xamarin/) [Windows dev Center](https://dev.windows.com/en-us) [SWIFT C# und kurz Referenz Poster](https://aka.ms/scposter)
+ [Xamarin-Entwickler Website](/xamarin/) [Windows dev Center](https://dev.windows.com/en-us) [SWIFT C# und kurz Referenz Poster](https://aka.ms/scposter)

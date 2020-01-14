@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 23abafcae0e777216a8880adc05ecac38d5b3f0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27837390306ad29da55c7c5262ecd8fa6bcf75b3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961949"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917366"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Einrichten von benannten Anmeldeinformationen zur Authentifizierung
 
@@ -39,7 +39,7 @@ Wenn Sie selbst ein Zertifikat erstellen möchten, lesen Sie die Anleitung unter
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Allgemeine Übersicht über die Web-Apps](https://docs.microsoft.com/azure/app-service/)
-- [Bereitstellen der App in Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
-- [Bereitstellen von Webaufträgen mit Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [Erstellen und Bereitstellen eines Clouddiensts](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Allgemeine Übersicht über die Web-Apps](/azure/app-service/)
+- [Bereitstellen der App in Azure App Service](/azure/app-service/app-service-deploy-local-git) 
+- [Bereitstellen von Webaufträgen mit Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Erstellen und Bereitstellen eines Clouddiensts](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

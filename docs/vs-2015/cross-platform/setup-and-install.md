@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 430c54527ad0a4647bb750c505942242688aaa17
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbdeeab49da1a63562bb9a4188a264a8d3d99da2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297722"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917046"
 ---
 # <a name="setup-and-install"></a>Setup und Installation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,14 +91,14 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xam
   
    **Hinweis zu Emulatoren auf Windows-Computern:** Da die CPUs jeweils nur eine Virtualisierungstechnologie unterstützen, sollte auf einem Entwicklungscomputer jeweils nur eine eingesetzt werden. Die drei wichtigsten Virtualisierungstechnologien sind Hyper-V (das vom Visual Studio Emulator für Android und dem Windows Phone-Emulator verwendet wird), Virtual Box (das von Genymotion verwendet wird) und Intel HAXM (das vom Android SDK-Emulator verwendet wird). Aufgrund von verschiedenen Problemen zwischen Hyper-V und Virtual Box sollten auf einem Computer jeweils nur Emulatoren eines dieser Typen verwendet werden; darauf beziehen sich auch die oben genannten Empfehlungen für den Einsatz von Hyper-V auf Computern mit Windows 8 und höher und Intel HAXM-Emulatoren auf Windows 7 sowie bei der Ausführung von Windows auf einem Mac.  
   
-## <a name="mac"></a>Mac-Setup (Apple ID, Xcode und Xamarin)  
+## <a name="mac"></a> Mac-Setup (Apple ID, Xcode und Xamarin)  
   
 1. Unter [https://appleid.apple.com](https://appleid.apple.com/) können Sie eine kostenlose Apple-ID erstellen, wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.  
   
 2. Laden Sie Xcode von [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) herunter, installieren Sie Xcode, und fügen Sie Ihre Apple-ID so hinzu, wie es unter [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Hinzufügen Ihres Kontos zu XCode) (apple.com) beschrieben wird.  
   
-3. Laden Sie Xamarin herunter, und installieren Sie es, indem Sie die Anweisungen unter [Installing and Configuring Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (xamarin.com) befolgen.  
+3. Laden Sie Xamarin herunter, und installieren Sie es, indem Sie die Anweisungen unter [Installing and Configuring Xamarin.iOS](/xamarin/ios/get-started/installation/mac) (xamarin.com) befolgen.  
   
-4. Sobald Sie die Installation von Xamarin auf dem Windows- und dem Mac-Computer abgeschlossen haben, folgen Sie den Anweisungen unter [Connecting to the Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Anschließen an den Mac) (xamarin.com), sodass Sie mit iOS und dem Mac in Visual Studio auf dem Windows-Computer arbeiten können.  
+4. Sobald Sie die Installation von Xamarin auf dem Windows- und dem Mac-Computer abgeschlossen haben, folgen Sie den Anweisungen unter [Connecting to the Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Anschließen an den Mac) (xamarin.com), sodass Sie mit iOS und dem Mac in Visual Studio auf dem Windows-Computer arbeiten können.  
   
      Beide Computer müssen sich im selben lokalen Netzwerk befinden.

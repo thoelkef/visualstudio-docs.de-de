@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a22bc8fbe65795a3c5162607a12690081e565666
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738581"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917105"
 ---
 # <a name="querying-the-pdb-file"></a>Abfragen der PDB-Datei
-Bei einer Programm Datenbankdatei (Erweiterung. pdb) handelt es sich um eine Binärdatei, die Typen-und symbolische Debuginformationen enthält, die im Verlauf der Kompilierung und Verknüpfung des Projekts gesammelt werden. Eine PDB-Datei wird erstellt, wenn Sie ein CC++ /Programm mit **/Zi** oder **/Zi** oder einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-, [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-oder [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]-Programm mit der **/Debug** -Option kompilieren. Objektdateien enthalten Verweise auf die PDB-Datei zum Debuggen von Informationen. Weitere Informationen zu PDB-Dateien finden Sie unter [PDB-Dateien](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Eine Dia-Anwendung kann die folgenden allgemeinen Schritte zum Abrufen von Details über die verschiedenen Symbole, Objekte und Datenelemente innerhalb eines ausführbaren Images verwenden.
+Bei einer Programm Datenbankdatei (Erweiterung. pdb) handelt es sich um eine Binärdatei, die Typen-und symbolische Debuginformationen enthält, die im Verlauf der Kompilierung und Verknüpfung des Projekts gesammelt werden. Eine PDB-Datei wird erstellt, wenn Sie ein CC++ /Programm mit **/Zi** oder **/Zi** oder einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-, [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-oder [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]-Programm mit der **/Debug** -Option kompilieren. Objektdateien enthalten Verweise auf die PDB-Datei zum Debuggen von Informationen. Weitere Informationen zu PDB-Dateien finden Sie unter [PDB-Dateien](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Eine Dia-Anwendung kann die folgenden allgemeinen Schritte zum Abrufen von Details über die verschiedenen Symbole, Objekte und Datenelemente innerhalb eines ausführbaren Images verwenden.
 
 ### <a name="to-query-the-pdb-file"></a>So Fragen Sie die PDB-Datei ab
 

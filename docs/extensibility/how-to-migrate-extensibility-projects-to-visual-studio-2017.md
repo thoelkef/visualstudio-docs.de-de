@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5d32a7efa050d04c848ec8add761d0d235e95304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 01c0c8613ec2e4fe72613867d623d510d9734e45
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849128"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917653"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2017
 
@@ -179,7 +179,7 @@ Debugger | Just-In-Time-Debugger | Microsoft.VisualStudio.Component.Debugger.Jus
 
 ## <a name="find-component-ids"></a>Komponenten-IDs suchen
 
-Die Liste der von Visual Studio-Produkten sortierten Komponenten finden Sie unter [Visual Studio 2017-Arbeitsauslastung und Komponenten-IDs](https://docs.microsoft.com/visualstudio/install/workload-and-component-ids?view=vs-2019). Verwenden Sie diese Komponenten-IDs für die erforderlichen IDs im Manifest.
+Die Liste der von Visual Studio-Produkten sortierten Komponenten finden Sie unter [Visual Studio 2017-Arbeitsauslastung und Komponenten-IDs](/visualstudio/install/workload-and-component-ids?view=vs-2019). Verwenden Sie diese Komponenten-IDs für die erforderlichen IDs im Manifest.
 
 Wenn Sie nicht sicher sind, welche Komponente eine bestimmte Binärdatei enthält, laden Sie das Arbeitsblatt für die [Binär Zuordnung von Komponenten >](https://aka.ms/vs2017componentid-binaries)herunter.
 

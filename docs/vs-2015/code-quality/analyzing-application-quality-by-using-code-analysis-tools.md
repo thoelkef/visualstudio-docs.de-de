@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f8ec0706530cd61653d44533654cf453d25eb42e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849885"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919074"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analysieren der Anwendungsqualität mit Codeanalysetools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ In diesem Abschnitt wird die Visual Studio-Code Analyse von [verwaltetem Code](.
 
  [Analysieren der Treiber Qualität mithilfe von Code Analyse Tools](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Die Code Analyse für Treiber ist ein statisches Überprüfungs Tool zur Kompilierzeit, das grundlegende Codierungsfehler in C und C++ Programmen erkennt und ein spezielles Modul umfasst, das zum Erkennen von Fehlern in (hauptsächlich) Kernelmodustreiber-Code konzipiert ist. Der Static Driver Verifier (Statisches Treiber-Prüfmodul, SDV) ist ein statisches Überprüfungstool, das systematisch den Quellcode von Windows-Kernelmodustreibern analysiert. SDV ermittelt, ob der Treiber ordnungsgemäß mit dem Windows-Betriebssystemkernel interagiert.
 
- [Code Analyse für Treiber Warnungen](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Beschreibt die Warnungen, die die Code Analyse für Treiber meldet, wenn ein möglicher Fehler im Treiber Code erkannt wird.
+ [Code Analyse für Treiber Warnungen](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings) Beschreibt die Warnungen, die die Code Analyse für Treiber meldet, wenn ein möglicher Fehler im Treiber Code erkannt wird.
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
  [Messen von Komplexität und Verwaltbarkeit von verwaltetem Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Beschreibung hier einfügen.

@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851456"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915655"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -110,7 +110,7 @@ In Visual Studio können Diagnosedaten für virtuelle Azure-Computer gesammelt w
     ![Installieren einer Erweiterung für virtuelle Azure-Computer](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > Für Ihre virtuellen Computer sind noch andere Diagnoseerweiterungen verfügbar. Weitere Informationen finden Sie unter [Erweiterungen und Features für virtuelle Computer für Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > Für Ihre virtuellen Computer sind noch andere Diagnoseerweiterungen verfügbar. Weitere Informationen finden Sie unter [Erweiterungen und Features für virtuelle Computer für Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Klicken Sie auf **Hinzufügen**, um die Erweiterung hinzuzufügen und das entsprechende Dialogfeld **Diagnosekonfiguration** anzuzeigen.

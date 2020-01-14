@@ -11,17 +11,17 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: adfd23cfcee69ef3242545f6d0680d7316be8156
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851063"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917688"
 ---
 # <a name="talk-to-us"></a>Sprechen Sie mit uns
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [sprechen Sie mit uns](https://docs.microsoft.com/visualstudio/ide/feedback-options).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [sprechen Sie mit uns](/visualstudio/ide/feedback-options).
 
 Wir würden gern Ihre Ideen zur Verbesserung unserer Dokumentation erfahren. Wir können nicht persönlich antworten, aber wir werden sicherstellen, dass Ihr Feedback an die richtige Person weitergeleitet wird.
 
