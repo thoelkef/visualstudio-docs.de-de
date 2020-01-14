@@ -3,17 +3,17 @@ title: Schema Cache des XML-Editors
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae5749d57dd1c9aaca8748ed02bdbb5587cade6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668739"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592489"
 ---
 # <a name="schema-cache"></a>Schemacache
 
@@ -26,22 +26,22 @@ In der folgenden Tabelle werden die Schemas beschrieben, die mit dem XML-Editor 
 | Dateiname | Beschreibung |
 |-| - |
 | *Catalog. xsd* | Schema für Schemakatalogdateien des XML-Editors. Weitere Informationen zu den Schemakatalogen finden Sie weiter unten. |
-| *DotNetConfig. xsd* | Schema für Web. config-Dateien, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild. xsd* | Schema für die MSBuild Make-Dateien, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *msdata. xsd* | Schema für XSD-Anmerkungen, die von der <xref:System.Data.DataSet>-Klasse hinzugefügt werden, "urn:schemas-microsoft-com:xml-msdata". |
-| *msxsl. xsd* | Schema für Microsoft XSLT-Skriptblockerweiterungen, urn:schemas-microsoft-com:xslt. |
-| *Snippetformat. xsd* | Schema für die XML-Dateien von Codeausschnitten. Beispiele finden Sie unter *% VSInstallDir% \VC#\erweiterungen*. |
-| *SOAP 1.1. xsd* | Schema für SOAP (Simple Object Access Protocol) 1,1, http://schemas.xmlsoap.org/soap/envelope/. |
+| *DotNetConfig.xsd* | Schema für Web. config-Dateien, `http://schemas.microsoft.com/.NETConfiguration/v2.0`. |
+| *msbuild.xsd* | Schema für die MSBuild-Dateien zum Erstellen von Dateien, `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| *msdata.xsd* | Schema für XSD-Anmerkungen, die von der <xref:System.Data.DataSet>-Klasse hinzugefügt werden, "urn:schemas-microsoft-com:xml-msdata". |
+| *msxsl.xsd* | Schema für Microsoft XSLT-Skriptblockerweiterungen, urn:schemas-microsoft-com:xslt. |
+| *SnippetFormat.xsd* | Schema für die XML-Dateien von Codeausschnitten. Beispiele finden Sie unter *% VSInstallDir% \VC#\erweiterungen*. |
+| *SOAP 1.1. xsd* | Schema für SOAP (Simple Object Access Protocol) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`. |
 | *SOAP 1.2. xsd* | Schema für Simple Object Access Protocol 1.2. |
-| *Sitemapschema. xsd* | Schema für die ASP.net-Sitemap-XML-Datei, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL. xsd* | Schema für die Webdienst-Beschreibungssprache, http://schemas.xmlsoap.org/wsdl/. |
-| *xenc. xsd* | Schema für die XML-Verschlüsselung, http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML. xsd* | Schema für XHTML- http://www.w3.org/1999/xhtml. |
-| *XLink. xsd* | Schema für XLink 1.0, http://www.w3.org/1999/xlink. |
-| *XML. xsd* | Schema, das XML: Space-und XML: lang-Attribute beschreibt, http://www.w3.org/XML/1998/namespace. |
-| *xmlsig. xsd* | Schema für digitale XML-Signaturen, http://www.w3.org/2000/09/xmldsig#. |
-| *xsdschema. xsd* | Schema, das XSD selbst beschreibt, http://www.w3.org/2001/XMLSchema. |
-| *XSLT. xsd* | Schema für XML-Transformationen, http://www.w3.org/1999/XSL/Transform. |
+| *SiteMapSchema.xsd* | Schema für die ASP.net-Sitemap-XML-Datei, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`. |
+| *wsdl.xsd* | Schema für die Webdienst-Beschreibungssprache, `http://schemas.xmlsoap.org/wsdl/`. |
+| *xenc.xsd* | Schema für die XML-Verschlüsselung, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xhtml.xsd* | Schema für XHTML-`http://www.w3.org/1999/xhtml`. |
+| *xlink.xsd* | Schema für XLink 1.0, `http://www.w3.org/1999/xlink`. |
+| *xml.xsd* | Schema, das XML: Space-und XML: lang-Attribute beschreibt, `http://www.w3.org/XML/1998/namespace`. |
+| *xmlsig.xsd* | Schema für digitale XML-Signaturen, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xsdschema.xsd* | Schema, das XSD selbst beschreibt, `http://www.w3.org/2001/XMLSchema`. |
+| *xslt.xsd* | Schema für XML-Transformationen, `http://www.w3.org/1999/XSL/Transform`. |
 
 ## <a name="update-schemas-in-the-cache"></a>Aktualisieren von Schemas im Cache
 

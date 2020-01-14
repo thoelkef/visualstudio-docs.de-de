@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dc49a628cdf5695df7744295d2c1d990986bcfbe
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ead3faa5354dae198524e2a816a85b05bc5d8f08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295627"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845546"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 |Bereich|Aufgabe|Weitere Informationen|
 |----------|----------|--------------------------|
 |Installation|Installieren von Visual Studio.|[Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Aktualisieren von einer Testversion von Visual Studio.|[Gewusst wie: Aktualisieren von einer Visual Studio-Testversion](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Aktualisieren von einer Testversion von Visual Studio.|[Vorgehensweise: Aktualisieren von einer Visual Studio-Testversion](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Installieren, Aktualisieren oder Entfernen der lokalen Hilfeinhalte.|[Installieren und Verwalten von lokalen Inhalten](../ide/install-and-manage-local-content.md)|
 |Anwendungstypen|Entwickeln von Lösungen für SharePoint 2010.|[Anforderungen für die Entwicklung von SharePoint-Lösungen](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
-||Erwerben einer Entwicklerlizenz für [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Anfordern einer Entwicklerlizenz (Windows Store-Apps)](https://go.microsoft.com/fwlink/?LinkID=241313)|
+||Erwerben einer Entwicklerlizenz für [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Anfordern einer Entwicklerlizenz (Windows Store-Apps)](https://msdn.microsoft.com/library/windows/apps/hh974578.aspx)|
 |Werkzeugkasten|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Verwenden der Toolbox](../ide/using-the-toolbox.md)|
 |Add-Ins|Installieren und Verwenden von Add-Ins, die mit klassischem COM in der IDE geschrieben wurden.|[Erstellen von Add-Ins und Assistenten](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |Erstellung|Verwenden von Postbuildereignissen, die eine Komponente registrieren.|[Grundlagen benutzerdefinierter Buildschritte und Buildereignisse](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
@@ -45,11 +45,11 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 |Debuggen|Debuggen von Anwendungen, die mit höheren Berechtigungen ausgeführt werden.|[Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)|
 ||Debuggen von Anwendungen, die unter einem anderen Benutzerkonto, wie ASP.NET-Websites, ausgeführt werden.|[Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||Debuggen in der Zone für XAML-Browseranwendungen (XBAP).|[WPF-Host (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||Verwenden des Emulators zum Debuggen von Cloud-Dienstprojekten für Microsoft Azure.|[Debuggen eines Clouddiensts in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=266725)|
+||Verwenden des Emulators zum Debuggen von Cloud-Dienstprojekten für Microsoft Azure.|[Debuggen eines Clouddiensts in Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debug-cloud-services-virtual-machines?view=vs-2019)|
 ||Konfigurieren einer Firewall für das Remotedebuggen.|[Einrichten der Remotetools auf dem Gerät](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Leistungstools|Profilerstellung für eine Anwendung|[Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)|
-|Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment (Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter, der Visual Studio oder Visual Web Developer verwendet: Bereitstellen in IIS als Testumgebung)](https://go.microsoft.com/fwlink/?LinkId=266478)|
-|Bereitstellen von Feedback für Microsoft|Ändern der Teilnahme am Visual Studio-Programm zur Verbesserung der Benutzerfreundlichkeit.|[Vorgehensweise: Senden von Feedback](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter unter Verwendung von Visual Studio oder Visual Web Developer: Bereitstellung in IIS als Testumgebung](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
+|Bereitstellen von Feedback für Microsoft|Ändern der Teilnahme am Visual Studio-Programm zur Verbesserung der Benutzerfreundlichkeit.|[Vorgehensweise: Send Feedback (Vorgehensweise: Senden von Feedback)](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Ausführen von Visual Studio als Administrator
  Sie können Visual Studio bei jedem Starten der IDE mit Administratorberechtigungen starten, oder Sie können die Anwendungsverknüpfung so ändern, dass sie immer mit Administratorberechtigungen ausgeführt werden muss. Weitere Informationen finden Sie in der Windows-Hilfe.
@@ -66,9 +66,9 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 
 1. Wählen Sie im **Start**-Menü die Option **Alle Programme** aus.
 
-2. Wählen Sie im **Microsoft Visual Studio** *Version*-Ordner **Visual Studio** *Version* aus, öffnen Sie das Kontextmenü, und wählen Sie **Als Administrator ausführen** aus.
+2. Klicken Sie im Ordner **Microsoft Visual Studio** *Version* auf **Visual Studio** *Version*, öffnen Sie das Kontextmenü, und wählen Sie **Als Administrator ausführen** aus.
 
      Beim Starten von Visual Studio wird **(Administrator)** nach dem Produktnamen in der Titelleiste angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
- [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [Portieren, migrieren und Aktualisieren von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md)
