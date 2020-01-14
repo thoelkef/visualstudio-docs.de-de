@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297778"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851663"
 ---
 # <a name="toolbox-html-tab"></a>Toolbox, Registerkarte „HTML“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 
 ## <a name="tasks"></a>Aufgaben
 
-- [How to: Manage the Toolbox Window (Vorgehensweise: Verwalten des Toolbox-Fensters)](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)
+- [Vorgehensweise: Verwalten des Toolbox-Fensters](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)
 
 - [Vorgehensweise: Ändern von Registerkarten der Toolbox](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)
 
@@ -40,7 +40,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 
  **Zeiger** ![ASP.NET Mobile Designer HtmlPage-Zeiger](../../ide/reference/media/vxpointer.gif "|::ref1::|")
 
- Dieses Tool ist standardmäßig ausgewählt, wenn eine Toolboxregisterkarte geöffnet wird. Es kann nicht gelöscht werden. Mithilfe des Zeigers können Sie Objekte auf die Entwurfsoberfläche ziehen, die Größe der Objekte ändern und sie auf der Seite oder dem Formular neu anordnen. Weitere Informationen finden Sie unter [How to: Manage the Toolbox Window (Vorgehensweise: Verwalten des Toolbox-Fensters)](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) und [Vorgehensweise: Ändern von Registerkarten der Toolbox](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
+ Dieses Tool ist standardmäßig ausgewählt, wenn eine Toolboxregisterkarte geöffnet wird. Es kann nicht gelöscht werden. Mithilfe des Zeigers können Sie Objekte auf die Entwurfsoberfläche ziehen, die Größe der Objekte ändern und sie auf der Seite oder dem Formular neu anordnen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten des Toolbox-Fensters](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) und [Vorgehensweise: Ändern von Registerkarten der Toolbox](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
 
  ![Schaltfläche](../../ide/reference/media/vxbutton.gif "|::ref2::|") " **Eingabe (Schaltfläche)** HTML-Webseite"
 
@@ -52,7 +52,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputButton-Serversteuerelements](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Vorgehensweise: Erstellen von Skripts und Bearbeiten von Ereignishandlern](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Übersicht über die Button-Webserversteuerelemente](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> und <xref:System.Web.UI.WebControls.Button>.
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputButton-Serversteuerelements](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Vorgehensweise: Erstellen von Skripts und Bearbeiten von Ereignishandlern](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Button-Webserversteuerelemente – Inhaltsübersicht](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, und <xref:System.Web.UI.WebControls.Button>.
 
  **Eingabe (zurücksetzen)** ![HTMLpageResetButton Screenshot](../../ide/reference/media/vxreset.gif "|::ref3::|")
 
@@ -118,10 +118,10 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Password1" type="password" name="Password1">
 ```
 
- Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputPassword-Serversteuerelements](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Vorgehensweise: Einrichten eines TextBox-Webserversteuerelements für die Kennworteingabe](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) und [Exemplarische Vorgehensweise: Validieren der Benutzereingabe in einer Web Forms-Seite](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputPassword-Serversteuerelements](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Vorgehensweise: Festlegen eines TextBox-Webserversteuerelements für die Kennworteingabe](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) und [Exemplarische Vorgehensweise: Validieren von Benutzereingaben in einer Web Forms-Seite](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
-> Wenn Ihre Anwendung Benutzernamen und Kennwörter überträgt, sollten Sie Ihre Webseite so konfigurieren, dass sie Secure Sockets Layer (SSL) verwendet, um die Übertragung zu verschlüsseln. Weitere Informationen finden Sie unter „Securing Connections with SSL“ („Sichern von Verbindungen mit SSL“) im [IIS Operations Guide (IIS-Benutzerhandbuch)](https://go.microsoft.com/fwlink/?linkid=47856). Es wird außerdem empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Überprüfen der Benutzereingabe in ASP.NET-Webseiten](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Wenn Ihre Anwendung Benutzernamen und Kennwörter überträgt, sollten Sie Ihre Webseite so konfigurieren, dass sie Secure Sockets Layer (SSL) verwendet, um die Übertragung zu verschlüsseln. Weitere Informationen finden Sie unter „Securing Connections with SSL“ („Sichern von Verbindungen mit SSL“) im [IIS Operations Guide (IIS-Benutzerhandbuch)](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx). Es wird außerdem empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Überprüfen der Benutzereingabe in ASP.NET-Webseiten](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Eingabe (Kontrollkästchen)** ![HTML-Webseiten-Toolbox (Kontrollkästchen](../../ide/reference/media/vxcheckbox.gif "|::ref8::|") )
 
@@ -198,7 +198,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 
  Weitere Informationen finden Sie unter [Deklarative Syntax des HtmlImage-Serversteuerelements](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Übersicht über das Image-Webserversteuerelement](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> und <xref:System.Web.UI.WebControls.Image>.
 
- **** ![Dropdown für HTML-Seiten-Toolbox](../../ide/reference/media/vxdropdown.gif "|::ref14::|") auswählen
+ ![Dropdown für HTML-Seiten-Toolbox](../../ide/reference/media/vxdropdown.gif "|::ref14::|") **auswählen**
 
  Fügt ein Dropdown-`select`-Element ein (ohne `size`-Attribut). In der Standardeinstellung wird `id="select1"` für das erste Listenfeld eingefügt, `id="select2"` für das zweite usw.
 
