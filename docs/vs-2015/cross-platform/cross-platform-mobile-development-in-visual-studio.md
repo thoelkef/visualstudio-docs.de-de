@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1efc8ea7f40c3098e681cc80ac90789b629630a9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297890"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918294"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende, mobile Entwicklung in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 - [Erstellen eines plattformübergreifenden Spiels für Android, iOS und Windows mithilfe von Visual Studio-Tools für Unity](#Unity)
 
 ## <a name="NET"></a>Erstellen einer App für Android, iOS und Windows(.NET Framework)
- ![Ling](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Geräte](../cross-platform/media/homedevices.png "HomeDevices")
 
  Mithilfe von Xamarin können Sie für Android, iOS und Windows mit der gleichen Projektmappe arbeiten und Code und sogar die Benutzeroberfläche freigeben.
 
@@ -76,7 +76,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 
 |**Weitere Informationen**|
 |--------------------|
-|Sie können wählen, ob Sie den Code freigeben möchten, indem Sie gemeinsam genutzte Projekte, Portable Class Library-Projekte oder sowohl als auch verwenden.<br /><br /> [Plattformübergreifendes Freigeben von Code](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework-Blog)<br /><br /> [Sharing Code Options (Optionen für die Codefreigabe)](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Optionen für die Codefreigabe mit .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
+|Sie können wählen, ob Sie den Code freigeben möchten, indem Sie gemeinsam genutzte Projekte, Portable Class Library-Projekte oder sowohl als auch verwenden.<br /><br /> [Plattformübergreifendes Freigeben von Code](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework-Blog)<br /><br /> [Sharing Code Options (Optionen für die Codefreigabe)](/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Optionen für die Codefreigabe mit .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a>Windows 10-Zielgeräte
  ![Windows-Geräte](../cross-platform/media/windowsdevices.png "Windows-Geräte")
@@ -95,7 +95,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |[Migrieren von Apps auf die universelle Windows-Plattform (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a>Erstellen einer App für Android, iOS und Windows (HTML/JavaScript)
- ![Ling](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Geräte](../cross-platform/media/homedevices.png "HomeDevices")
 
  Wenn Sie als Webentwickler mit HTML und JavaScript vertraut sind, können Sie mithilfe von Visual Studio-Tools für Apache Cordova eine Nutzung unter Windows, Android und iOS ermöglichen. Diese Apps können auf allen drei Plattformen ausgeführt werden. Sie erstellen sie mithilfe Ihrer Kenntnisse und der Vorgehensweisen, mit denen Sie vertraut sind.
 
@@ -116,7 +116,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |**Weitere Informationen**|
 |--------------------|
 |[Installieren von Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Erste Schritte mit Visual Studio-Tools für Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Erste Schritte mit Visual Studio-Tools für Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
 |[Informationen zum Visual Studio Emulator für Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a>Erstellen einer App für Android und Windows (C++)
@@ -147,7 +147,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |[Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Installieren der erforderlichen Tools und anschließendes Erstellen einer App mit systemeigener Aktivität für Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
 |[Informationen zum Visual Studio Emulator für Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
-|[Weitere Informationen zum Freigeben von C++-Code mit Android- und Windows-Apps](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
+|[Learn more about sharing C++ code with Android and Windows apps (Weitere Informationen zum Freigeben von C++-Code mit Android- und Windows-Apps)](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
 |[Beispiele für plattformübergreifende mobile Entwicklung](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[Weitere Beispiele für plattformübergreifende mobile Entwicklung für C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -172,5 +172,5 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 ## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Azure Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Azure-Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

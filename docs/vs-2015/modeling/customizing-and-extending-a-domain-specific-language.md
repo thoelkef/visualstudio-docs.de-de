@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 55ec2cf2f2a6ebf4186f81f6f3dd61766acd7958
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852414"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918894"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Das Visual Studio-Modellierungs-und-Visualisierungs-SDK (vmsdk) bietet mehrere E
 |Symbol bei Formänderungen, um den Status anzugeben.|Festlegen der Sichtbarkeit der decoratorzuordnung im Fenster "DSL-Details". Suchen Sie mehrere Bild-Decorator-Zeichen an der gleichen Position. Weitere Informationen finden [Sie unter Aktualisieren von Formen und Connectors für das Modell](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Oder überschreiben Sie `ImageField.GetDisplayImage()`. Siehe Beispiel in <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Festlegen eines Hintergrund Bilds für beliebige Formen|Überschreiben Sie initializeingestanceresources (), um ein verankertes ImageField hinzuzufügen. Weitere Informationen finden Sie unter [Anpassen der Präsentation im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
 |Formen in beliebiger tiefe schachteln|Richten Sie einen rekursiven Einbettungs Baum ein. Definiert boundsrules, um die Formen zu enthalten. Weitere Informationen finden Sie unter [Anpassen der Präsentation im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
-|Anfügen von Connectors an festem Punkt an der Grenze eines Elements.|Definieren Sie eingebettete Terminal Elemente, die durch kleine Ports im Diagramm dargestellt werden. Verwenden Sie boundsrules, um die Ports zu korrigieren. Weitere Informationen finden Sie im Beispiel für das Verbindungs Diagramm unter [Visualisierung und modellieren von SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|Anfügen von Connectors an festem Punkt an der Grenze eines Elements.|Definieren Sie eingebettete Terminal Elemente, die durch kleine Ports im Diagramm dargestellt werden. Verwenden Sie boundsrules, um die Ports zu korrigieren.|
 |Textfeld zeigt einen Wert an, der von anderen Werten abgeleitet ist.|Ordnen Sie den Text Decorator einer berechneten oder benutzerdefinierten Speicher Domänen Eigenschaft zu. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).|
 |Weitergeben von Änderungen zwischen Modellelementen oder zwischen Formen|Weitere Informationen finden Sie [unter Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).|
 |Weitergeben von Änderungen an Ressourcen, z. b. andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungen außerhalb des Stores.|Weitere Informationen finden Sie [unter Ereignishandler weitergeben von Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).|

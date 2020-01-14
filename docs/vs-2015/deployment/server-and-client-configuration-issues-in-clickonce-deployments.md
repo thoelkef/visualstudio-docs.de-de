@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844988"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918812"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
  Mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]können Sie Downloads ausführen, die die HTTP-Komprimierung verwenden, eine Webserver Technologie, die den gzip-Algorithmus zum Komprimieren eines Datenstroms verwendet, bevor der Datenstrom an den Client gesendet wird. Der Client – in diesem Fall, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]– den Stream vor dem Lesen der Dateien dekomprimiert.  
   
  Wenn Sie IIS verwenden, können Sie die HTTP-Komprimierung problemlos aktivieren. Wenn Sie die HTTP-Komprimierung aktivieren, ist Sie jedoch nur für bestimmte Dateitypen aktiviert – HTML-und Textdateien. Um die Komprimierung für Assemblys (. dll), XML (XML), Bereitstellungs Manifeste (. Application) und Anwendungs Manifeste (. manifest) zu aktivieren, müssen Sie diese Dateitypen der Liste der Typen hinzufügen, die von IIS komprimiert werden sollen. Bis Sie die Dateitypen der Bereitstellung hinzufügen, werden nur Text-und HTML-Dateien komprimiert.  
-  
- Ausführliche Anweisungen für IIS finden Sie unter [Angeben zusätzlicher Dokumenttypen für die HTTP-Komprimierung](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung bei ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) -bereit Stellungen   

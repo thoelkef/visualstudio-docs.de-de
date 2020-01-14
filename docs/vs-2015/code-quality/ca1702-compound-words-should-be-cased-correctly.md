@@ -1,5 +1,5 @@
 ---
-title: 'CA1702: Zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden | Microsoft-Dokumentation'
+title: 'CA1702: zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669257"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919239"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1702: Zusammengesetzte Wörter sollten ](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) ordnungsgemäß geschrieben werden.
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1702: zusammengesetzte Wörter sollten korrekt geschrieben werden](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
 |||
 |-|-|
@@ -49,11 +49,11 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1702: Zusammenges
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn beide Teile des Verbund Worts vom Rechtschreib Wörterbuch erkannt werden und die Absicht ist, zwei Wörter zu verwenden.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter müssen ordnungsgemäß geschrieben werden ](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1709: Bezeichner sollten korrekt geschrieben werden ](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Bezeichner sollten sich um mehr als die Groß-/Kleinschreibung unterscheiden
+ [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Siehe auch
  [Benennungs Richtlinien](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) für [Benennungs Richtlinien](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

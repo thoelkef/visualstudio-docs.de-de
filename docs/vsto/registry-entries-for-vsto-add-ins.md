@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955048"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919123"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Registrierungseinträge für VSTO-Add-ins
   Sie müssen einen bestimmten Satz von Registrierungseinträgen erstellen, wenn Sie VSTO-Add-Ins bereitstellen, die mithilfe von Visual Studio erstellt werden. Diese Registrierungseinträge enthalten Informationen, mit denen die Microsoft Office-Anwendung das VSTO-Add-In erkennt und lädt.
@@ -62,7 +62,7 @@ ms.locfileid: "74955048"
 >
 >Wenn das Installationsprogramm den aktuellen Benutzer als Ziel verwendet, muss es nicht auf dem WOW6432Node installiert werden, da der HKEY_CURRENT_USER \softwareipfad freigegeben ist.
 >
->Weitere Informationen finden Sie [unter 32-Bit-und 64-Bit-Anwendungsdaten in der Registrierung](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
+>Weitere Informationen finden Sie [unter 32-Bit-und 64-Bit-Anwendungsdaten in der Registrierung](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
 
  In der folgenden Tabelle werden die Einträge in diesem Registrierungsschlüssel aufgeführt.
 

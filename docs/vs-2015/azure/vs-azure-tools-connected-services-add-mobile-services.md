@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 83f908876b2e0de774443084d830f20d121e33d0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0a8f6fab3c8f30834a467e2ad98843b16a9245b4
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844851"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916710"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Hinzufügen von Mobile Services mithilfe von verbundenen Visual Studio-Diensten
 Mit Visual Studio 2015 können Sie mithilfe des Dialogfelds **Verbundenen Dienst hinzufügen** eine Verbindung mit Azure Mobile Services herstellen. Sie können Verbindungen von jeder C#-Client-App, jeder JavaScript-App und jeder plattformübergreifenden Cordova-App aus herstellen. Sobald die Verbindung besteht, können Sie Daten erstellen und auf sie zugreifen, benutzerdefinierte APIs und geplante Aufträge erstellen oder Unterstützung für Pushbenachrichtigungen hinzufügen.  Mit dem Vorgang für verbundene Dienste werden alle entsprechenden Verweise und der Verbindungscode hinzugefügt. Sie können darüber hinaus die eingebaute Unterstützung für Authentifizierung nach einer Reihe gängiger Identifikationsschemas, wie etwa Azure AD, Facebook, Twitter und Microsoft-Konten nutzen.
@@ -63,9 +63,6 @@ Mit dem Dialogfeld "Verbundene Dienste" können Sie in den folgenden Projekttype
    5. Der neue mobile Dienst sollte in der Dienstliste des Dialogfelds **Azure Mobile Services** angezeigt werden. Wählen Sie den neuen mobilen Dienst in der Liste und dann die Schaltfläche **Hinzufügen** aus, um den Dienst Ihrem Projekt hinzuzufügen.
 5. Überprüfen Sie die Seite "Erste Schritte", die dann angezeigt wird, und finden Sie heraus, wie Ihr Projekt geändert wurde. Die Seite Erste Schritte wird im Browser angezeigt, wenn Sie einen verbundenen Dienst hinzufügen. Sie können die empfohlenen ersten Schritte und Codebeispiele überprüfen oder zur Seite Was ist geschehen? wechseln, um herauszufinden, welche Verweise dem Projekt hinzugefügt wurden und wie Ihr Code und die Konfigurationsdateien geändert wurden.
 6. Nutzen Sie die Codebeispiele als Leitfaden, um mit dem Schreiben von Code für den Zugriff auf Ihren mobilen Dienst zu beginnen.
-
-## <a name="how-your-project-is-modified"></a>Änderungen am Projekt
-Wie Visual Studio das Projekt ändert, hängt vom Projekttyp ab. Informationen zu C#-Client-Apps finden Sie unter [Was ist passiert – C#-Projekte](https://docs.microsoft.com/azure/). Informationen zu JavaScript-Client-Apps finden Sie unter [Was ist passiert – JavaScript-Projekte](https://docs.microsoft.com/azure/). Informationen zu Cordova-Apps finden Sie unter [Was ist passiert – Cordova Projekte](https://docs.microsoft.com/azure/).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Stellen Sie Fragen, und holen Sie sich Hilfe:

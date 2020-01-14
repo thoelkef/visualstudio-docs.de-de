@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d7742c988e0193c8175621a08478b6225c8670
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850644"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918355"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrieren von UML-Modellen in andere Modelle und Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,11 @@ In einem UML-Element können Sie Links zu anderen UML-Elementen, Dateien oder an
 
    Weitere Informationen finden Sie unter [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   Ein Beispiel Projekt, in dem ein Profil mit Menübefehlen und Gesten Handlern bereitgestellt wird, finden Sie unter [Sample: UML Profiles](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
 - **Bezieht.** An jedes UML-Element können Sie einen Satz von Zeichenfolgen anfügen. Sie können Code schreiben, in dem die Informationen gespeichert werden, z. B. ein Dateiname oder die GUID eines anderen Elements. Dazu müssen Sie keine weiteren Definitionen bereitstellen. Verweise sind für Benutzer nicht direkt sichtbar.
 
-   Weitere Informationen finden Sie unter [Anfügen von Verweis Zeichenfolgen an UML-Modellelemente](../modeling/attach-reference-strings-to-uml-model-elements.md). Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
-  Es gibt zwei Möglichkeiten, Verweise auf Modellelemente zu codieren:
+Es gibt zwei Möglichkeiten, Verweise auf Modellelemente zu codieren:
 
 - **GUID und Dateiname** des Zielmodell Elements und des Modells, in dem es enthalten ist, oder ein bestimmtes Diagramm, in dem es angezeigt wird.
-
-   Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 - **ModelBus-Verweise.** ModelBus ist ein Framework zum Erstellen und Auflösen von Verweisen zwischen Modellen. Enthalten ist die ModelBus-Auswahl, mit der Benutzer ein Element in einem Modell auswählen können. Zudem können Verweise leichter aufgelöst werden, die aufgrund von Änderungen im Zielmodell verloren gehen.
 
@@ -61,8 +55,6 @@ In einem UML-Element können Sie Links zu anderen UML-Elementen, Dateien oder an
 
 1. **Vmsdk-Regeln** können verwendet werden, um Änderungen innerhalb desselben Modells weiterzugeben.
 
-    Ein Beispiel finden Sie unter [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
 2. **Vmsdk-Ereignisse** können verwendet werden, um Änderungen außerhalb des Modells weiterzugeben – beispielsweise, um den Dateinamen eines verknüpften Dokuments zu ändern oder um ein Element in einem anderen Modell zu ändern.
 
    Weitere Informationen zu diesen Mechanismen finden Sie unter Gewusst [wie: reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md).
@@ -71,30 +63,5 @@ In einem UML-Element können Sie Links zu anderen UML-Elementen, Dateien oder an
 
    Weitere Informationen finden Sie [unter Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) und Gewusst [wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="samples"></a>-Beispiele
- Weitere Informationen finden Sie im Codebeispiel [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Anhand des Beispiels können Benutzer eine Datei auf ein beliebiges UML-Element ziehen und die Datei später durch Doppelklicken auf das Element öffnen. Sie können z. B. ein Aktivitätsdiagramm mit einem Anwendungsfallelement verknüpfen. Ein Symbol gibt an, welche Elemente über Links verfügen.
-
- Diese Verfahren werden im folgenden Codebeispiel veranschaulicht:
-
-- [Anfügen von Referenzzeichenfolgen an UML-Modellelemente](../modeling/attach-reference-strings-to-uml-model-elements.md)
-
-   Im Beispielcode werden Dateipfade und Element-GUIDs in dem Element zugeordneten Verweiszeichenfolgen gespeichert.
-
-- Hinzufügen von Decorator-Elementen zu UML-Elementen. Allgemeine Informationen zu decoratoren finden Sie unter [Anpassen von Text-und Image-Feldern](../modeling/customizing-text-and-image-fields.md).
-
-   Im Beispiel wird den UML-Formen ein Decorator-Bildelement hinzugefügt.
-
-- [Gewusst wie: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md)
-
-   Das Beispiel veranschaulicht das Definieren einer Regel, die auf neu in einem Diagramm angezeigte Formen reagiert.
-
-- [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-- [Definieren eines Gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-   Das Beispiel zeigt, wie die Elemente behandelt werden, die von Windows-Explorer (oder von Datei-Explorer), dem Projektmappen-Explorer und anderen UML-Elementen gezogen werden.
-
-  Ein Beispiel für das Lesen eines UML-Modells durch eine DSL finden Sie unter Gewusst [wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).
-
 ## <a name="see-also"></a>Siehe auch
- [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) Gewusst [wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) Gewusst [wie: reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Beispiel: UML-profile](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) Gewusst [wie: Hinzufügen eines Drag & amp; Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) Gewusst [wie: reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md)

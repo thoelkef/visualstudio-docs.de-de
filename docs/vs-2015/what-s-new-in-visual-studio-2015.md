@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851487"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919254"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Funktionen in 
 
 - **C#/Xamarin**. Verwenden Sie [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) , um systemeigene Apps für Windows, iOS und Android in Visual Studio mit C# zu erstellen.
 
-     [Debugging](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) und [Debug on Device](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) in den [Xamarin-Entwicklerhandbüchern](https://docs.microsoft.com/xamarin/) beschreiben den Debugvorgang.
+     [Debugging](/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) und [Debug on Device](/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) in den [Xamarin-Entwicklerhandbüchern](/xamarin/) beschreiben den Debugvorgang.
 
 - **C++/Android**. Verwenden Sie die [Visual C++ for Cross-Platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) -Vorlagen zusammen mit Drittanbietertools wie [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) zum Erstellen von systemeigenen Apps für Windows und Android.
 

@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850397"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919165"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio
 
@@ -50,7 +50,7 @@ Um einen Clouddienst über einen Remotecomputer zu debuggen, müssen Sie diese F
 Wenn Sie das Remotedebuggen für einen Clouddienst aktivieren, führt dies nicht zu einer Leistungsverschlechterung oder zu zusätzlichen Gebühren. Verwenden Sie das Remotedebuggen nicht für einen Produktionsdienst, da sich dies negativ auf Clients auswirken kann, die den Dienst nutzen.
 
 > [!NOTE]
-> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace**können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) und [Visual Studio und Verwenden von IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace**können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](vs-azure-tools-intellitrace-debug-published-cloud-services.md) und [Visual Studio und Verwenden von IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>So aktivieren Sie das Remotedebuggen für einen Clouddienst
 
@@ -150,7 +150,7 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
     > [!NOTE]
     > Sie werden aufgefordert, sich an Ihrem Azure-Konto anzumelden, wenn Sie noch nicht angemeldet sind.
 
-3. Wählen Sie die verschiedenen Einstellungen für den virtuellen Computer aus, und klicken Sie dann auf **OK**. Weitere Informationen finden Sie unter [Virtuelle Computer](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) .
+3. Wählen Sie die verschiedenen Einstellungen für den virtuellen Computer aus, und klicken Sie dann auf **OK**. Weitere Informationen finden Sie unter [Virtuelle Computer](/previous-versions/azure/jj156003(v=azure.100)) .
 
     Der Name, den Sie als DNS-Name eingeben, wird zum Namen des virtuellen Computers.
 
@@ -188,6 +188,6 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* Verwenden Sie **IntelliTrace**, um ein Protokoll der Aufrufe und Ereignisse von einem Releaseserver zu sammeln. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+* Verwenden Sie **IntelliTrace**, um ein Protokoll der Aufrufe und Ereignisse von einem Releaseserver zu sammeln. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 * Verwenden Sie die **Azure-Diagnose** , um ausführliche Informationen zu Code, der in Rollen ausgeführt wird, zu protokollieren, unabhängig davon, ob die Rollen in der Entwicklungsumgebung oder in Azure ausgeführt werden. Weitere Informationen finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](https://msdn.microsoft.com/library/gg433048.aspx).

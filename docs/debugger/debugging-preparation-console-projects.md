@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738134"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916276"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Vorbereitung zum Debuggen:C#Konsolen C++Projekte (, F#, Visual Basic,)
 
-Die Vorbereitung zum Debuggen eines Konsolen Projekts ähnelt dem Vorbereiten des Debuggens eines Windows-Projekts, mit einigen zusätzlichen Überlegungen wie dem Festlegen von Befehlszeilen Argumenten und dem Anhalten der APP zum Debuggen. Weitere Informationen finden Sie unter [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md), und [Vorbereitung zum Debuggen: Windows Forms-Anwendungen (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
+Die Vorbereitung zum Debuggen eines Konsolen Projekts ähnelt dem Vorbereiten des Debuggens eines Windows-Projekts, mit einigen zusätzlichen Überlegungen wie dem Festlegen von Befehlszeilen Argumenten und dem Anhalten der APP zum Debuggen. Weitere Informationen finden Sie unter [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md), und [Vorbereitung zum Debuggen: Windows Forms-Anwendungen (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
 
 - C#, Visual Basic und F# Konsolenanwendung
 
@@ -49,7 +49,7 @@ Wie alle Projekteigenschaften bleiben diese Argumente über die Debug- und Visua
 
 - Legen Sie einen Haltepunkt im Code fest, und starten Sie die Anwendung.
 
-- Starten Sie die Anwendung **mit F10** (**Debug**  > **Step over**) oder **F11** (**Debug**  > **step into**), und navigieren Sie dann durch den Code, indem Sie andere Optionen wie z. b. **Ausführen zum Klicken**verwenden.
+- Starten Sie die Anwendung **mit F10** (**Debug** > **Step over**) oder **F11** (**Debug** > **step into**), und navigieren Sie dann durch den Code, indem Sie andere Optionen wie z. b. **Ausführen zum Klicken**verwenden.
 
 - Klicken Sie im Code-Editor mit der rechten Maustaste auf eine Zeile, und wählen Sie **Ausführen bis Cursor**aus.
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431677"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916451"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Debugfehler und Warnmeldungen
 Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen einer Anwendung auftreten können.
@@ -63,9 +63,9 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
 
  [Fehler beim Remotedebuggen](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
- [Fehler beim Anfügen](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+ [Fehler beim Anfügen](/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
 
- [Problembehandlung beim Einrichten des SQL-Debuggens](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+ [Problembehandlung beim Einrichten des SQL-Debuggens](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
  [Häufig gestellte Fragen zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)
 

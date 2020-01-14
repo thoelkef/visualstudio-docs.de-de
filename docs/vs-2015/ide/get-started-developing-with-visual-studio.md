@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f005ea0fce0ccf33902b6ebfd6822640782ef20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292065"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917592"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Erste Schritte mit der Entwicklung mit Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Willkommen bei Visual Studio! Nach dem [Download](https://visualstudio.microsoft
 
 - **[Erstellen von Web-Apps](https://www.visualstudio.com/features/modern-web-tooling-vs):** Tools zum Erstellen und Bereitstellen moderner Webanwendungen.
 
-     [Tutorial durchlaufen](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Dokumentation durchsuchen](https://docs.asp.net/) &#124;                                   [Video ansehen](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
+     [Tutorial durchlaufen](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Dokumentation durchsuchen](https://docs.asp.net/) &#124;                                   [Video ansehen](/aspnet/core/?view=aspnetcore-3.0)
 
-- **[Erstellen von plattformübergreifenden mobilen Apps in HTML/Javascript (Apache Cordova)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** :               Apache Cordova ist eine plattformübergreifende Open-Source-Umgebung, die auf HTML/CSS/Javascript basiert.  Ihr Javascript-Code wird in einem Wrapper für                eine bestimmte Plattform ausgeführt. So haben Sie Zugriff auf alle Hardwarefunktionen des Geräts. Entwickeln Sie Apps für Apple Store, Android Store und Windows Store.
+- **[Erstellen von plattformübergreifenden mobilen Apps in HTML/Javascript (Apache Cordova)](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** :               Apache Cordova ist eine plattformübergreifende Open-Source-Umgebung, die auf HTML/CSS/Javascript basiert.  Ihr Javascript-Code wird in einem Wrapper für                eine bestimmte Plattform ausgeführt. So haben Sie Zugriff auf alle Hardwarefunktionen des Geräts. Entwickeln Sie Apps für Apple Store, Android Store und Windows Store.
 
-     [Beispiel laden](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [Tutorial durchlaufen](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [Dokumentation durchsuchen](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [Video ansehen](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [Beispiel laden](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [Tutorial durchlaufen](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [Dokumentation durchsuchen](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [Video ansehen](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[Erstellen von plattformübergreifenden mobilen Apps in C# oder Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : Finden Sie den Einstieg in Visual Studio und Tools für Xamarin, um mobile Apps zu erstellen, die von einer gemeinsamen Codebasis aus auf der Android-, der iOS- und der universellen Windows-Plattform ausgeführt werden können.
 

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846359"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918628"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Methoden für die Entwicklung von com-, VSTO-und VBA-Add-Ins in Office
   Wenn Sie com-, VSTO-oder VBA-Add-Ins für Office entwickeln, befolgen Sie die in diesem Artikel beschriebenen bewährten Methoden für die Entwicklung.   Vorteile:
@@ -61,7 +61,7 @@ Kunden bitten Sie ISVs, Support Anweisungen für Ihre com-, VSTO-und VBA-Add-Ins
 
 Zum Bereitstellen von Support Anweisungen für Office-Client Anwendungen (z. b. Word oder Excel) überprüfen Sie zunächst, ob Ihre Add-Ins in der aktuellen Office-Version ausgeführt werden, und führen Sie dann die Bereitstellung von Updates durch, wenn das Add-in in einer zukünftigen Version unterbrochen wird. Sie müssen Ihre Add-Ins nicht testen, wenn Microsoft einen neuen Build oder ein Update für Office freigibt. Microsoft ändert die Erweiterbarkeits Plattform für com, VSTO und VBA in Office selten, und diese Änderungen werden gut dokumentiert.
 
->Wichtig: Microsoft verwaltet eine Liste der unterstützten Add-Ins für Bereitschafts Berichte und ISV-Kontaktinformationen. Informationen dazu, wie Sie das Add-in auflisten, finden Sie unter [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
+>Wichtig: Microsoft verwaltet eine Liste der unterstützten Add-Ins für Bereitschafts Berichte und ISV-Kontaktinformationen. Informationen zum Auflisten des Add-Ins finden Sie unter [/ConfigMgr/Desktop-Analytics/Ready-for-Windows](/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Verwenden des Prozess Monitors zum Debuggen oder Laden von Problemen
 Wenn das Add-in während der Installation oder Auslastung Kompatibilitätsprobleme aufweist, sind Sie möglicherweise mit Problemen mit dem Datei-oder Registrierungs Zugriff verknüpft. Verwenden Sie den [Prozess Monitor](/sysinternals/downloads/procmon) oder ein ähnliches Debugtool, um das Verhalten einer funktionierenden Umgebung zu protokollieren und zu vergleichen, um das Problem zu identifizieren.

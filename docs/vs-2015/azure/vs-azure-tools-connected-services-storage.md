@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 8b03d1e698108fac2f81d1e3263d7b38ff82b1dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852355"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916699"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure-Speicher mithilfe von verbundenen Visual Studio-Diensten
 Mit Visual Studio können Sie über das Dialogfeld **Verbundene Dienste hinzufügen** eine Verbindung zwischen jedem der folgenden Elemente und Azure Storage herstellen:
@@ -63,12 +63,12 @@ Nach Abschluss zeigt das Dialogfeld **Verbundene Dienste hinzufügen** automatis
 ## <a name="how-your-project-is-modified"></a>Änderungen am Projekt
 Wenn Sie die Bearbeitung des Dialogfelds abschließen, fügt Visual Studio Verweise hinzu und ändert bestimmte Konfigurationsdateien. Die genauen Änderungen hängen vom Projekttyp ab:
 
-- ASP.NET-Projekt: [Was ist passiert – ASP.NET-Projekte](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
-- ASP.NET Core-Projekt: [Was ist passiert – ASP.NET 5-Projekte](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
-- Clouddienstprojekt (Web- und Workerrollen): [Was ist passiert – Clouddienstprojekte](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
+- ASP.NET-Projekt: [Was ist passiert – ASP.NET-Projekte](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- ASP.NET Core-Projekt: [Was ist passiert – ASP.NET 5-Projekte](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- Clouddienstprojekt (Web- und Workerrollen): [Was ist passiert – Clouddienstprojekte](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob-Projekt: [Was ist passiert – WebJob-Projekte](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Microsoft Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
-- [Azure Storage-Dokumentation](https://docs.microsoft.com/azure/storage/)
+- [Azure Storage-Dokumentation](/azure/storage/)

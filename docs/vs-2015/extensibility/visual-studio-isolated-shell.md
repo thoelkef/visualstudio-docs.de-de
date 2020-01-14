@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850392"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919204"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (isoliert)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Mithilfe von Visual Studio Isolated Shell können Sie eigenständige Anwendungen
   
  Wenn Sie mit einem isolierten shellprojekt arbeiten möchten, müssen Sie das Visual Studio SDK installieren. Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Wenn Sie eine isolierte Shell-Anwendung erstellen möchten, beginnen Sie mit einem von Visual Studio Shell isolierten Projekt. Dieses Projekt enthält alles, was Sie zum entwickeln und Testen Ihrer eigenen isolierten Shellanwendung benötigen. Wenn Sie bereit sind, das Setup Programm zu schreiben, mit dem Ihre Anwendung bereitgestellt wird, müssen Sie das isolierte verteilbare Shell-Paket aus [Microsoft Visual Studio Shell (isoliert) verteilbaren Pakets](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J)erhalten.  
+ Wenn Sie eine isolierte Shell-Anwendung erstellen möchten, beginnen Sie mit einem von Visual Studio Shell isolierten Projekt. Dieses Projekt enthält alles, was Sie zum entwickeln und Testen Ihrer eigenen isolierten Shellanwendung benötigen. Wenn Sie bereit sind, das Setup Programm zu schreiben, mit dem Ihre Anwendung bereitgestellt wird, müssen Sie das isolierte verteilbare Shell-Paket aus [Microsoft Visual Studio Shell (isoliert) verteilbaren Pakets](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)erhalten.  
   
 > [!NOTE]
 > Bevor Sie auf das verteilbare Paket für isolierte Shell zugreifen können, werden Sie aufgefordert, eine kurze Kundenumfrage auszufüllen.  Nach dem Ausfüllen der Umfrage werden Sie auf eine Visual Studio Connect-Seite mit Downloadlinks für die verteilbaren Pakete geleitet.  Die Download Links finden Sie auf den nachfolgenden Besuchen auf der Visual Studio Connect-Website **unter &#124; Programme Visual Studio 2015 Integrated and isolierte Shell** (Registerkarte).  

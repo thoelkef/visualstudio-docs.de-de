@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 09da3bd59163cbef8b33b1d5ece732330e32eac7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299760"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918930"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Erlernen von Grundlagen der App-Erstellung mit Xamarin.Forms in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Nachdem Sie die Schritte in [Setup and install](../cross-platform/setup-and-inst
 
     - Aktualisieren Sie das Feld **Version** auf die **neueste stabile** Version, die verfügbar ist.
 
-    - Klicken Sie auf **Update**.
+    - Klicken Sie auf **Aktualisieren**.
 
          ![Aktualisieren des xamarin. Forms-nuget-Pakets](../cross-platform/media/crossplat-xamarin-formsguide-4.png "Crossplat xamarin formsguide 4")
 
@@ -287,10 +287,10 @@ Nachdem Sie die Schritte in [Setup and install](../cross-platform/setup-and-inst
 
      ![Wetter-App vor und nach dem Tippen auf die Schaltfläche](../cross-platform/media/crossplat-xamarin-formsguide-8.png "Crossplat xamarin formsguide 8")
 
-## <a name="finish"></a> Fertigstellen der Benutzeroberfläche mit einem plattformübergreifenden, nativen Aussehen und Verhalten
+## <a name="finish"></a> Fertigstellen der Benutzeroberfläche mit einem homogenen Aussehen und Verhalten über Plattformen hinweg
  Xamarin.Forms rendert systemeigene Benutzeroberflächen-Steuerelemente für jede Plattform, damit die App automatisch ein homogenes Aussehen und Verhalten aufweist. Um dies besser zu verdeutlichen, stellen Sie die Benutzeroberfläche mit einem Eingabefeld für eine Postleitzahl festig, und zeigen Sie dann die Wetterdaten an, die vom Dienst zurückgegeben werden.
 
-1. Ersetzen Sie den Inhalt von **WeatherPage.xaml** durch den unten stehenden Code. Beachten Sie, dass jedes Element, wie zuvor beschrieben, mit dem **x:Name** -Attribut benannt wird, damit vom Code aus auf das Element verwiesen werden kann. Xamarin.Forms stellt außerdem eine Reihe von [Layoutoptionen](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com) bereit. Hier verwendet WeatherPage [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
+1. Ersetzen Sie den Inhalt von **WeatherPage.xaml** durch den unten stehenden Code. Beachten Sie, dass jedes Element, wie zuvor beschrieben, mit dem **x:Name** -Attribut benannt wird, damit vom Code aus auf das Element verwiesen werden kann. Xamarin.Forms stellt außerdem eine Reihe von [Layoutoptionen](/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com) bereit. Hier verwendet WeatherPage [StackLayout](/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ Nachdem Sie die Schritte in [Setup and install](../cross-platform/setup-and-inst
    </ContentPage>
    ```
 
-    Beachten Sie die Verwendung des Tags **OnPlatform** in Xamarin.Forms. **OnPlatform** wählt einen Eigenschaftswert aus, der spezifisch für die Plattform ist, auf der die App aktuell ausgeführt wird (siehe [Essential XAML Syntax](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) („Essentielle XAML-Syntax“ auf xamarin.com). Das Tag wird hier verwendet, um für die Datenfelder eine andere Farbe festzulegen: Weiß unter Android und Windows Phone, Schwarz unter iOS. Sie können **OnPlatform** für alle Eigenschaften und alle Datentypen verwenden, um an einer beliebigen Stelle in XAML-Code plattformspezifische Anpassungen vorzunehmen. In der CodeBehind-Datei dient die [Device.OnPlatform-API](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) demselben Zweck.
+    Beachten Sie die Verwendung des Tags **OnPlatform** in Xamarin.Forms. **OnPlatform** wählt einen Eigenschaftswert aus, der spezifisch für die Plattform ist, auf der die App aktuell ausgeführt wird (siehe [Essential XAML Syntax](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) („Essentielle XAML-Syntax“ auf xamarin.com). Das Tag wird hier verwendet, um für die Datenfelder eine andere Farbe festzulegen: Weiß unter Android und Windows Phone, Schwarz unter iOS. Sie können **OnPlatform** für alle Eigenschaften und alle Datentypen verwenden, um an einer beliebigen Stelle in XAML-Code plattformspezifische Anpassungen vorzunehmen. In der CodeBehind-Datei dient die [Device.OnPlatform-API](/xamarin/xamarin-forms/platform/device) demselben Zweck.
 
 2. Ersetzen Sie in **WeatherPage.xaml.cs**den **GetWeatherBtn_Clicked** -Ereignishandler durch den unten stehenden Code. Mit diesem Code wird überprüft, ob im Eingabefeld eine Postleitzahl angegeben wurde. Anschließend werden Daten für diese Postleitzahl abgerufen, der Bindungskontext für den gesamten Bildschirm wird auf die resultierende Weather-Instanz festgelegt, und abschließend wird der Schaltflächentext in „Erneut suchen“ geändert. Beachten Sie, dass jede Bezeichnung in der Benutzeroberflächen an eine Eigenschaft der Klasse „Weather“ gebunden ist. Wenn Sie also den Bindungskontext des Bildschirms auf eine **Weather** -Instanz festlegen, werden diese Bezeichnungen automatisch aktualisiert.
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: babfc00dfadc6b26f8338faf37b5b4a1f7c1d8e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587224"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929224"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Regelsatz für Sicherheitsregeln für verwalteten Code
 
@@ -86,4 +86,5 @@ Verwenden Sie den Microsoft-Regelsatz für Sicherheitsregeln für die Legacy Cod
 |[CA3010](../code-quality/ca3010.md)|Review code for XAML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XAML-Befehlen)|
 |[CA3011](../code-quality/ca3011.md)|Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)|
 |[CA3012](../code-quality/ca3012.md)|Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)|
+|[CA5358](../code-quality/ca5358.md)|Unsichere Chiffre Modi nicht verwenden|
 |[CA5403](../code-quality/ca5403.md)|Keine Hartcodierung von Zertifikaten|

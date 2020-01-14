@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 960511fcfb83dfc6ac3c58a806d8a23f1ff61597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298196"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918777"
 ---
 # <a name="getting-started-with-python"></a>Erste Schritte mit Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Wenn Sie mehr über die Sprache erfahren möchten, beginnen Sie mit [python für
 
 Besuchen Sie [https://www.python.org/download/](https://www.python.org/download/), um python selbst zu installieren.
 
-## <a name="python-tools-for-visual-studio"></a>Python-Tools für Visual Studio
+## <a name="python-tools-for-visual-studio"></a>Python Tools für Visual Studio
   
 Die python Tools für Visual Studio, die Sie über [VisualStudio.com](https://www.visualstudio.com/explore/python-vs)installieren können, bieten die folgenden Features:  
   
@@ -73,7 +73,7 @@ Das wichtigste Angebot zum Entwickeln einer Benutzeroberfläche mit Python ist [
   
 Das Azure-SDK für Python, das Windows, Max und Linux unterstützt, vereinfacht die Nutzung und Verwaltung von Microsoft Azure-Diensten. Weitere Informationen finden Sie in den folgenden Ressourcen: 
 
-- Verwenden Sie den [Python Package Index](https://pypi.python.org/pypi/azure) oder folgen Sie der Dokumentation [Python und SDK installieren](https://docs.microsoft.com/azure/python/python-sdk-azure-install), um das SDK zu installieren. 
+- Verwenden Sie den [Python Package Index](https://pypi.python.org/pypi/azure) oder folgen Sie der Dokumentation [Python und SDK installieren](/azure/python/python-sdk-azure-install), um das SDK zu installieren. 
 - [Das Azure SDK für Python Developer Center](https://azure.microsoft.com/develop/python/) bietet umfassende Unterstützung durch Tutorials: von der Installation bis hin zur Dokumentation.  Hier einige Highlights:  
 - Anleitungen:
   - [Speicher-Blob](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  

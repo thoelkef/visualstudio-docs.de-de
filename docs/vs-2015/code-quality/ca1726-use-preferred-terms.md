@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671564"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918228"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Bevorzugte Begriffe verwenden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1726: bevorzugte Begriffe verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1726: bevorzugte Begriffe verwenden](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
 |||
 |-|-|

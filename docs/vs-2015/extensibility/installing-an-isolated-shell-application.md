@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851711"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944265"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Anwendung der isolierten Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
   
 - Visual Studio SDK  
   
-- Die [Windows Installer XML-Toolsetversion](http://wix.sourceforge.net/) 3,6  
+- Die [Windows Installer XML-Toolsetversion](https://documentation.help/WiX-Toolset/index.html/) 3,6  
   
   Das Beispiel erfordert auch das Microsoft-Visualisierungs-und Modellierungs-SDK, das nicht für alle Shells erforderlich ist.  
   
@@ -54,7 +54,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
 2. Bearbeiten Sie für jedes Projekt, das ein VSIX-Manifest enthält, die Buildaufgaben, um den Inhalt an den Speicherort auszugeben, von dem die MSI-Datei installiert wird. Schließen Sie das VSIX-Manifest in die Buildausgabe ein, erstellen Sie jedoch keine vsix-Datei.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Erstellen einer MSI für Ihre Shell  
- Zum Erstellen des MSI-Pakets wird empfohlen, dass Sie das [Windows Installer XML-Toolset](http://wix.sourceforge.net/) verwenden, da es größere Flexibilität bietet als ein Standard-Setup-Projekt.  
+ Zum Erstellen des MSI-Pakets wird empfohlen, dass Sie das [Windows Installer XML-Toolset](https://documentation.help/WiX-Toolset/index.html) verwenden, da es größere Flexibilität bietet als ein Standard-Setup-Projekt.  
   
  Legen Sie in der Datei "Product. wxs" Erkennungs Blöcke und das Layout von Shellkomponenten fest.  
   

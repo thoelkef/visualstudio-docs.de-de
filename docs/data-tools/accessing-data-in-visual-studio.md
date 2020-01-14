@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587094"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916716"
 ---
 # <a name="access-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
 
@@ -108,7 +108,7 @@ Es ist nicht erforderlich, eine dieser Technologien zu verwenden. In einigen Sze
 
 ## <a name="native-c"></a>Systemeigenes C++
 
-C++Anwendungen, die eine Verbindung mit SQL Server herstellen, sollten in den meisten Fällen den [Microsoft® ODBC-Treiber 13,1 für SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) verwenden. Wenn die Server verknüpft sind, ist OLE DB erforderlich, damit Sie die [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)verwenden können. Sie können auf andere Datenbanken zugreifen, indem Sie [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) oder OLE DB Treiber direkt verwenden. ODBC ist die aktuelle Standarddaten bankschnittstelle, aber die meisten Datenbanksysteme bieten benutzerdefinierte Funktionen, auf die über die ODBC-Schnittstelle nicht zugegriffen werden kann. OLE DB ist eine veraltete com-Datenzugriffs Technologie, die weiterhin unterstützt wird, aber für neue Anwendungen nicht empfohlen wird. Weitere Informationen finden Sie unter [Datenzugriff in Visual C++ ](/cpp/data/data-access-in-cpp).
+C++Anwendungen, die eine Verbindung mit SQL Server herstellen, sollten in den meisten Fällen den [Microsoft® ODBC-Treiber 13,1 für SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) verwenden. Wenn die Server verknüpft sind, ist OLE DB erforderlich, damit Sie die [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)verwenden können. Sie können auf andere Datenbanken zugreifen, indem Sie [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) oder OLE DB Treiber direkt verwenden. ODBC ist die aktuelle Standarddaten bankschnittstelle, aber die meisten Datenbanksysteme bieten benutzerdefinierte Funktionen, auf die über die ODBC-Schnittstelle nicht zugegriffen werden kann. OLE DB ist eine veraltete com-Datenzugriffs Technologie, die weiterhin unterstützt wird, aber für neue Anwendungen nicht empfohlen wird. Weitere Informationen finden Sie unter [Datenzugriff in Visual C++ ](/cpp/data/data-access-in-cpp).
 
 C++Programme, die Rest-Dienste nutzen, können das [ C++ Rest-SDK](https://github.com/Microsoft/cpprestsdk)verwenden.
 
