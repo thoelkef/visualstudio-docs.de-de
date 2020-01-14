@@ -3,17 +3,17 @@ title: XSLT-Stylesheets debuggen
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604610"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592476"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets
 
@@ -26,7 +26,7 @@ Um diese exemplarische Vorgehensweise vorzubereiten, kopieren Sie zunächst die 
 
 ## <a name="start-debugging"></a>Debugging starten
 
-1. Wählen Sie im Menü **Datei** die Option  > **Datei** **Öffnen** aus.
+1. Wählen Sie im Menü **Datei** die Option > **Datei** **Öffnen** aus.
 
 2. Suchen Sie die Datei *below-average. xsl* , und wählen Sie **Öffnen**aus.
 
@@ -44,11 +44,11 @@ Um diese exemplarische Vorgehensweise vorzubereiten, kopieren Sie zunächst die 
 
    - Klicken Sie in Zeile 12 auf eine beliebige Stelle, und drücken Sie **F9**.
 
-   - Klicken Sie mit der rechten Maustaste auf das `xsl:if` Starttag, und wählen Sie dann halte **Punkt**  >  halte**Punkt einfügen**aus.
+   - Klicken Sie mit der rechten Maustaste auf das `xsl:if` Starttag, und wählen Sie dann halte **Punkt** > halte **Punkt einfügen**aus.
 
       ![Haltepunkt in XSL-Datei in Visual Studio einfügen](media/insert-breakpoint.PNG)
 
-6. Wählen Sie in der Menüleiste die Option **XML**  > **XSLT-Debuggen starten** aus (oder drücken Sie **alt** +**F5**).
+6. Wählen Sie in der Menüleiste die Option **XML** > **XSLT-Debuggen starten** aus (oder drücken Sie **alt**+**F5**).
 
    Der Debugprozess wird gestartet.
 
@@ -60,7 +60,7 @@ Um diese exemplarische Vorgehensweise vorzubereiten, kopieren Sie zunächst die 
 
 Wir fügen dem Fenster "über **Wachen 1** " zwei Variablen hinzu, damit wir Ihre Werte untersuchen können, wenn die Eingabedatei verarbeitet wird. (Sie können auch das Fenster "lokal" verwenden, um Werte zu überprüfen, **Wenn die zu** überwachenden Variablen bereits vorhanden sind.)
 
-1. Wählen Sie im Menü **Debuggen** die Option **Windows**  > **Überwachung**  > **ansehen 1**aus.
+1. Wählen Sie im Menü **Debuggen** die Option **Windows** > **Überwachung** > **ansehen 1**aus.
 
    Das Fenster über **Wachen 1** wird sichtbar.
 
@@ -72,7 +72,7 @@ Wir fügen dem Fenster "über **Wachen 1** " zwei Variablen hinzu, damit wir Ihr
 
    `self::node()` ist ein XPath-Ausdruck, der den aktuellen Kontext Knoten ergibt. Der Wert des `self::node()`-XPath-Ausdrucks ist der erste book-Knoten. Dieser ändert sich im Laufe der Transformation.
 
-4. Erweitern Sie den Knoten `self::node()`, und erweitern Sie dann den Knoten, der den Wert `price` hat.
+4. Erweitern Sie den Knoten `self::node()`, und erweitern Sie dann den Knoten, der den Wert `price`hat.
 
    ![Überwachungsfenster während des XSLT-Debuggens in Visual Studio](media/xslt-debugging-watch-window.png)
 

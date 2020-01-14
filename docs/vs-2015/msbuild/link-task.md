@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295877"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850998"
 ---
 # <a name="link-task"></a>Link-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Gibt Attribute an, die in den `dependency`-Abschnitt der Manifestdatei eingefügt werden.  
   
-   Weitere Informationen finden Sie unter [/MANIFESTDEPENDENCY (Angeben von Manifestabhängigkeiten)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Siehe auch „Publisher Configuration Files“ auf der [MSDN](https://go.microsoft.com/fwlink/?LinkId=737)-Website.  
+   Weitere Informationen finden Sie unter [/MANIFESTDEPENDENCY (Angeben von Manifestabhängigkeiten)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Siehe auch „Publisher Configuration Files“ auf der [MSDN](https://msdn.microsoft.com/)-Website.  
   
 - **AdditionalOptions**  
   
@@ -610,7 +610,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 - **PreprocessOutput**  
   
-   Optionaler `ITaskItem[]` -Parameter.  
+   Optionaler `ITaskItem[]`-Parameter.  
   
    Definiert ein Array von Präprozessor-Ausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
