@@ -51,7 +51,7 @@ Sie können die exemplarische Vorgehensweise nur ausführen, wenn Sie .NET Frame
 
 #### <a name="to-create-the-minimal-application"></a>So erstellen Sie die minimale Anwendung
 
-1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\\* oder *\Desktop\\* .
+1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\* oder *\Desktop\\* .
 
 2. Geben Sie **md HelloWorld** ein, um den Unterordner *\HelloWorld\\* zu erstellen.
 
