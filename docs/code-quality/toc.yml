@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: 'CA3147: Verbhandler mit ValidateAntiForgeryToken markieren.'
                   href: ca3147.md
+                - name: 'CA5358: Verwenden Sie keine unsicheren Verschlüsselungsmodi.'
+                  href: ca5358.md
                 - name: 'CA5361: Deaktivieren Sie Schannel nicht. Verwenden Sie starke Kryptografie.'
                   href: ca5361.md
                 - name: 'CA5363: Deaktivieren Sie die Anforderungsüberprüfung nicht.'
