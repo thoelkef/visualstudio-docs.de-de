@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777459"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915968"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
 
 Visual Studio-Tools für KI sind Erweiterungen für das Erstellen, Testen und Bereitstellen von Deep Learning- bzw. KI-Lösungen. Diese bieten eine nahtlose Integration in Azure Machine Learning für robuste Experimentierfunktionen, unter anderem einschließlich der transparenten Übermittlung der Datenvorbereitung und der Modelltrainigsaufträge an andere Computeziele. Darüber hinaus unterstützen diese benutzerdefinierte Metriken und die Nachverfolgung des Ausführungsverlaufs, wodurch die Reproduzierbarkeit und Überwachung von Data Science ermöglicht wird. Durch die für Unternehmen optimierte Kollaborationstools wird das sichere Arbeiten an einem Projekt mit anderen Personen zusammen ermöglicht.
 
-Fangen Sie heute damit an, Deep Learning mithilfe von [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) oder anderen Deep Learning-Frameworks zu nutzen.
+Fangen Sie heute damit an, Deep Learning mithilfe von [Microsoft Cognitive Toolkit (CNTK)](/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) oder anderen Deep Learning-Frameworks zu nutzen.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Entwickeln, Debuggen und Bereitstellen von Deep Learning-Modellen und KI-Lösungen
 Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen zu beschleunigen. Verwenden Sie die integrierten Features des Code-Editors wie die Syntaxhervorhebung, IntelliSense und die automatische Textformatierung. Sie können Ihre Deep Learning-Anwendung interaktiv in Ihrer lokalen Umgebung testen, indem Sie das Debuggen in ausführlichen Schritten von lokalen Variablen und Modellen verwenden.

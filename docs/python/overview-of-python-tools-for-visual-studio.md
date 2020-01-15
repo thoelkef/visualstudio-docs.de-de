@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061163"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845668"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -305,17 +305,17 @@ Visual Studio 2015 und frühere Versionen sind unter [visualstudio.microsoft.com
 
 1. Git-Unterstützung für Visual Studio 2012 steht in der Erweiterung Visual Studio-Tools für Git zur Verfügung (verfügbar im [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)).
 
-1. Für die Bereitstellung auf der Azure-Website ist das [Azure SDK für .NET 2.1 – Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855) erforderlich. Höhere Versionen unterstützen Visual Studio 2010 nicht.
+1. Für die Bereitstellung auf der Azure-Website ist das [Azure SDK für .NET 2.1 – Visual Studio 2010 SP1](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VS2010SP1AzurePack.2E2.2E1.appids) erforderlich. Höhere Versionen unterstützen Visual Studio 2010 nicht.
 
-1. Für die Unterstützung von Azure-Webrollen und -Workerrollen ist das [Azure SDK für .NET 2.3 – VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) oder höher erforderlich.
+1. Für die Unterstützung von Azure-Webrollen und -Workerrollen ist das [Azure SDK für .NET 2.3 – VS 2012](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs11AzurePack.appids) oder höher erforderlich.
 
-1. Für die Unterstützung von Azure-Webrollen und -Workerrollen ist das [Azure SDK für .NET 2.3 – VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) oder höher erforderlich.
+1. Für die Unterstützung von Azure-Webrollen und -Workerrollen ist das [Azure SDK für .NET 2.3 – VS 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) oder höher erforderlich.
 
 1. Der Django-Vorlagen-Editor in Visual Studio 2013 weist einige bekannte Probleme auf, die durch die Installation von Update 2 gelöst werden.
 
-1. Erfordert mindestens Windows 8. Visual Studio 2013 Express für Web weist kein Dialogfeld **An den Prozess anhängen** auf. Remotedebuggen für Azure-Websites ist allerdings über den Befehl **Debugger anfügen (Python)** im **Server-Explorer** möglich. Für das Remotedebuggen ist das [Azure SDK für .NET 2.3 – Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) oder höher erforderlich.
+1. Erfordert mindestens Windows 8. Visual Studio 2013 Express für Web weist kein Dialogfeld **An den Prozess anhängen** auf. Remotedebuggen für Azure-Websites ist allerdings über den Befehl **Debugger anfügen (Python)** im **Server-Explorer** möglich. Für das Remotedebuggen ist das [Azure SDK für .NET 2.3 – Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) oder höher erforderlich.
 
-1. Erfordert mindestens Windows 8. Für den Befehl **Debugger anfügen (Python)** im **Server-Explorer** ist das [Azure SDK für .NET 2.3 – Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) oder höher erforderlich.
+1. Erfordert mindestens Windows 8. Für den Befehl **Debugger anfügen (Python)** im **Server-Explorer** ist das [Azure SDK für .NET 2.3 – Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) oder höher erforderlich.
 
 1. Erfordert mindestens Windows 8.
 ::: moniker-end

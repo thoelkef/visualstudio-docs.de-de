@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie sich die maximale Anzahl zugewiesener Abonnements im Visual Studio-Verwaltungsportal anzeigen lassen können.
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491720"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852341"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements
 Mithilfe eines neuen Features im Verwaltungsportal für Visual Studio-Abonnements haben Sie immer im Blick, wie viele Abonnements Sie erworben und zugewiesen haben, und wissen, wie viele Abonnements auf jeder Stufe Sie sowohl während des vergangenen Jahres als auch über die gesamte Dauer Ihrer Vereinbarung hinweg maximal zugewiesen hatten. 
@@ -42,7 +42,7 @@ In der Tabelle oben können Sie z.B. sehen, dass am 13.12.2018 von den 123 im Ra
 Antwort:  Die Informationen in der Übersicht zeigen die *aktuellen* Zuweisungen und die verfügbaren Abonnements für jede Abonnementebene an.  Diese Zahlen können stark von der maximalen Anzahl von Abonnements abweichen, die dem Abonnement während des laufenden Jahres oder während der Laufzeit der Vereinbarung zugewiesen werden.  Mithilfe des Features „Maximale Nutzung“ können Sie sich anzeigen lassen, wann diese Höchstwerte für Zuweisungen erreicht wurden, und wie hoch diese waren.  Dieser Unterschied ist entscheidend, da die Abrechnung für Abonnements während des Abgleichs auf der maximalen Zahl von Abonnements basiert, die zu einem beliebigen Zeitpunkt im Jahr zugewiesen waren. 
 
 ## <a name="resources"></a>Ressourcen
-- [Whitepaper zur Lizenzierung von Visual Studio](https://aka.ms/vslicensing)
+- [Whitepaper zur Lizenzierung von Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

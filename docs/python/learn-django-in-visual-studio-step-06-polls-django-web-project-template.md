@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254381"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755574"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Django-Webprojektvorlage für Umfragen
 
@@ -160,7 +160,7 @@ Um die Auswirkungen anzuzeigen, führen Sie zuerst die App aus, um sich davon zu
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Frage: Ist es möglich, die Datenbank mithilfe des Django-Verwaltungsprogramms zu initialisieren?
 
-Antwort: Ja, Sie können den Befehl [django-admin-loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) verwenden, um die gleiche Aufgabe durchzuführen wie die Seeding-Seite in der App. Wenn Sie mit einer vollständigen Web-App arbeiten, verwenden Sie möglicherweise eine Kombination der beiden Methoden: Sie initialisieren eine Datenbank über die Befehlszeile und wandeln dann die Seed-Seite hier in eine API um, der Sie jedes andere beliebige JSON-Objekt senden können, anstatt sich auf eine hartcodierte Datei zu stützen.
+Antwort: Ja, Sie können den Befehl [django-admin-loaddata](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata) verwenden, um die gleiche Aufgabe durchzuführen wie die Seeding-Seite in der App. Wenn Sie mit einer vollständigen Web-App arbeiten, verwenden Sie möglicherweise eine Kombination der beiden Methoden: Sie initialisieren eine Datenbank über die Befehlszeile und wandeln dann die Seed-Seite hier in eine API um, der Sie jedes andere beliebige JSON-Objekt senden können, anstatt sich auf eine hartcodierte Datei zu stützen.
 
 ## <a name="step-6-3-use-migrations"></a>Schritt 6.3: Verwenden von Migrationen
 
@@ -194,7 +194,7 @@ Das Migrationsfeature von Django bedeutet auch, dass Sie Ihr Datenbankschema nie
 
 Antwort: Wenn die Modelle nicht mit dem Inhalt der Datenbank übereinstimmen, schlägt Django zur Laufzeit mit den entsprechenden Ausnahmen fehl. Wenn Sie vergessen, die im vorherigen Abschnitt gezeigte Modelländerung zu migrieren, wird der Fehler **no such column: app_poll.author** (keine solche Spalte: app_poll.author) angezeigt:
 
-![Fehler, der angezeigt wird, wenn eine Modelländerung nicht migriert wurde](media/django/step06-exception-when-forgetting-to-migrate.png)sein.
+![Fehler, der angezeigt wird, wenn eine Modelländerung nicht migriert wurde](media/django/step06-exception-when-forgetting-to-migrate.png).
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Frage: Weshalb zeigt der Projektmappen-Explorer neu generierte Skripts nicht an, nachdem der Befehl zur Durchführung von Django-Migrationen (Django Make Migrations) ausgeführt wurde?
 

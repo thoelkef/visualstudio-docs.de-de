@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594538"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845908"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -30,7 +30,7 @@ Wenn Sie sich anmelden, haben Sie im vollen Umfang Zugang zu den Funktionen von 
 
 Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
-- **Zugang zum Visual Studio Dev Essentials-Programm:** Dieses Programm umfasst u.a. kostenlose Softwareangebote und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+- **Zugang zum Visual Studio Dev Essentials-Programm:** Dieses Programm umfasst u.a. kostenlose Softwareangebote und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 - **Synchronisation der Visual Studio-Einstellungen:** Von Ihnen angepasste Einstellungen, beispielsweise Tastenzuordnung, Fensterlayout und Farbdesign, werden sofort übernommen, wenn Sie sich auf einem beliebigen Gerät bei Visual Studio anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491265"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851407"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
@@ -37,7 +37,7 @@ Antwort: Sie können am einfachsten feststellen, ob Sie über die erforderlichen
 Sie müssen ein Azure-Abonnement (also ein Rechnungskonto) aus der angezeigten Liste der Azure-Abonnements auswählen, die derzeit mit Ihrem Konto verknüpft sind.
 Da der Name des Azure-Abonnements standardmäßig der Art des Rechnungskontos (Nutzungsbasierte Bezahlung, Enterprise Agreement usw.) entspricht, ist oft eindeutig, ob das Azure-Abonnement Teil von Enterprise Agreement ist.
 
-Ein weiterer Ansatz besteht darin, das [Azure Enterprise Portal](https://ea.azure.com) zu besuchen.  Wenn Sie dieses erfolgreich aufrufen können, besitzen Sie entweder die Rolle „Unternehmensadministrator“ oder „Kontobesitzer“. Nur Kontobesitzer können neue Azure-Rechnungskonten in Enterprise Agreement einrichten. Wenn Sie auf das Azure Enterprise Portal nicht zugreifen können, finden Sie heraus, wer der Unternehmensadministrator Ihrer Organisation ist. Bitten Sie diese Person anschließend darum, Sie als Kontobesitzer im Azure Enterprise Portal hinzuzufügen.  Wenn Sie diese Person nicht finden können, können Sie ein [Supportticket übermitteln](https://aka.ms/AzureEntSupport) und die Kontaktinformationen anfordern.  Sie benötigen den Namen Ihrer Organisation und Ihre Enterprise Agreement-Registrierungsnummer für das Supportticket.
+Ein weiterer Ansatz besteht darin, das [Azure Enterprise Portal](https://ea.azure.com) zu besuchen.  Wenn Sie dieses erfolgreich aufrufen können, besitzen Sie entweder die Rolle „Unternehmensadministrator“ oder „Kontobesitzer“. Nur Kontobesitzer können neue Azure-Rechnungskonten in Enterprise Agreement einrichten. Wenn Sie auf das Azure Enterprise Portal nicht zugreifen können, finden Sie heraus, wer der Unternehmensadministrator Ihrer Organisation ist. Bitten Sie diese Person anschließend darum, Sie als Kontobesitzer im Azure Enterprise Portal hinzuzufügen.  Wenn Sie diese Person nicht finden können, können Sie ein [Supportticket übermitteln](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c) und die Kontaktinformationen anfordern.  Sie benötigen den Namen Ihrer Organisation und Ihre Enterprise Agreement-Registrierungsnummer für das Supportticket.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Frage: Kann ich Azure-Zahlungsverpflichtungen von meinem Enterprise Agreement verwenden, um Visual Studio-Cloudabonnements zu kaufen?
 Antwort: Nein, diese im Voraus bezahlten Beträge können nicht zum Kaufen von Visual Studio-Cloudabonnements verwendet werden. Wenn Sie ein Azure-Abonnement auswählen, das für Enterprise Agreement für den Kauf von Visual Studio-Cloudabonnements erstellt wurde, werden die Gebühren in der nächsten Rechnung für Überschreitungen aufgeführt. Diese wird üblicherweise monatlich ausgestellt. Für einige Enterprise Agreement-Kunden können jedoch ältere Regeln gelten, sodass die Rechnung für Überschreitungen möglicherweise mehrere Monate lang nicht ausgestellt wird. Wenden Sie sich bezüglich Enterprise Agreement an einen Lizenzierungsexperten, wenn Sie wissen möchten, ab welchem Betrag für zusätzliche Käufe (Käufe, für die Azure-Zahlungsverpflichtungen nicht verwendet werden können) eine Rechnung für Überschreitungen ausgestellt wird.

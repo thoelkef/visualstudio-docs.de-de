@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188721"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846947"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Anzeigen und Diagnostizieren von Containern und Images in Visual Studio
 
 Mithilfe des Fensters **Container** können Sie anzeigen, was in den Containern passiert, die Ihre App hosten. Wenn Sie gewohnt sind, die Eingabeaufforderung zum Ausführen von Docker-Befehlen zu verwenden, um die Vorgänge in Ihren Containern anzuzeigen und zu diagnostizieren, wird sich dieses Fenster als praktischere Möglichkeit zum Überwachen Ihrer Container erweisen, ohne dass Sie die Visual Studio-IDE verlassen müssen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019, Version 16.4, Vorschauversion 2](https://visualstudio.microsoft.com/downloads) oder höher. Wenn Sie eine frühere Version von Visual Studio 2019 verwenden, installieren Sie die Fenstererweiterung [Container](https://aka.ms/vscontainerspreview).
+- [Visual Studio 2019, Version 16.4, Vorschauversion 2](https://visualstudio.microsoft.com/downloads) oder höher. Wenn Sie eine frühere Version von Visual Studio 2019 verwenden, installieren Sie die Fenstererweiterung [Container](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
 
 ## <a name="view-information-about-your-containers"></a>Anzeigen von Informationen zu den Containern
 

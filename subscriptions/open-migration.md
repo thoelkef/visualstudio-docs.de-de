@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Partner Visual Studio-Abonnements für ihre Kunden verwalten.
-ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000900"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850559"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Von Partnern verwaltete Visual Studio-Abonnements für Kunden
 Partner und Kunden müssen zuerst einige Schritte ausführen, bevor sie Abonnements im [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) verwalten können. Der Prozess sieht folgendermaßen aus:
@@ -50,7 +50,7 @@ Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellung
 > Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
 
 ## <a name="resources"></a>Ressourcen
-- [Whitepaper zur Visual Studio-Lizenzierung](https://aka.ms/vslicensing)
+- [Whitepaper zur Visual Studio-Lizenzierung](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

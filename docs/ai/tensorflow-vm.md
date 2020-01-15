@@ -10,20 +10,20 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427575"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915829"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Trainieren eines TensorFlow-Modells in der Cloud
 
-In diesem Tutorial wird ein TensorFlow-Modell mithilfe des [MNIST-Datasets](http://yann.lecun.com/exdb/mnist/) auf einem virtuellen Azure-Computer mit [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) trainiert.
+In diesem Tutorial wird ein TensorFlow-Modell mithilfe des [MNIST-Datasets](http://yann.lecun.com/exdb/mnist/) auf einem virtuellen Azure-Computer mit [Deep Learning](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) trainiert.
 
 Die MNIST-Datenbank enthält 60.000 Trainingsbeispiele und 10.000 Testbeispiele für handgeschriebene Ziffern.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 Stellen Sie vor Beginn sicher, dass Sie Folgendes installiert und konfiguriert haben:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Einrichten des virtuellen Azure-Computers mit Deep Learning
@@ -31,7 +31,7 @@ Stellen Sie vor Beginn sicher, dass Sie Folgendes installiert und konfiguriert h
 > [!NOTE]
 > Legen Sie den **Betriebssystemtyp** auf „Linux“ fest.
 
-Weitere Anweisungen zum Einrichten eines virtuellen Computers mit Deep Learning finden Sie [hier](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
+Weitere Anweisungen zum Einrichten eines virtuellen Computers mit Deep Learning finden Sie [hier](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Entfernen des Kommentars in Klammern
 

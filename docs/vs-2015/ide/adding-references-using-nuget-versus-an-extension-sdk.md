@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9cdc597bcbdb79c7040f040084493fe015ee1c08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852227"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917349"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Referenzen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der NuGet-Erweiterung für Visual Studio oder mit einem Software Development Kit (SDK) bereitstellen. In diesem Thema werden die Ähnlichkeiten und Unterschiede zwischen den beiden Vorgehensweisen beschrieben. So können Sie die für Sie geeignete Methode ermitteln.
 
-- NuGet ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in eine Projektmappe vereinfacht. Weitere Informationen finden Sie im Abschnitt zur [NuGet-Übersicht](https://docs.microsoft.com/nuget/what-is-nuget).
+- NuGet ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in eine Projektmappe vereinfacht. Weitere Informationen finden Sie im Abschnitt zur [NuGet-Übersicht](/nuget/what-is-nuget).
 
 - Ein SDK ist eine Auflistung von Dateien, die von Visual Studio als einzelnes Referenzelement behandelt werden. Das Dialogfeld **Verweis-Manager** führt alle SDKs auf, die für das Projekt relevant sind, das beim Anzeigen des Dialogfelds geöffnet ist. Wenn Sie einem Projekt ein SDK hinzufügen, können Sie auf den Inhalt dieses SDK über IntelliSense, **Toolbox**, Designer, den **Objektkatalog**, MSBuild, Bereitstellung, Debuggen und Verpacken zugreifen. Weitere Informationen zu SDKs finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md).
 

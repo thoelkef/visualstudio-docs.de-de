@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 107e39e147c62f73c5656f3a398fbca231620c67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423977"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843742"
 ---
 # <a name="rtvs-current-version"></a>Aktuelle Version von RTVS
 
@@ -23,8 +23,8 @@ Sie können die Version überprüfen, indem Sie in Visual Studio auf **Hilfe** >
 
 Um Ihre Version von RTVS in Visual Studio 2017 zu aktualisieren, öffnen Sie den Visual Studio-Installer, und klicken Sie auf die Schaltfläche **Aktualisieren**.
 
-Für Visual Studio 2015 steht der neueste Installer unter [aka.ms/rtvs-current](https://aka.ms/rtvs-current) bereit (direkter Download).
+Für Visual Studio 2015 steht der neueste Installer unter [aka.ms/rtvs-current](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) bereit (direkter Download).
 
 Informationen zu Visual Studio- und Windows-Anforderungen finden Sie unter [Installation](installing-r-tools-for-visual-studio.md).
 
-Updates zu Microsoft R Open und Microsoft Machine Learning Server (früher Microsoft R Server) finden Sie unter: [Microsoft R-Produkte](https://aka.ms/rtvs-msft-r).
+Updates zu Microsoft R Open und Microsoft Machine Learning Server (früher Microsoft R Server) finden Sie unter: [Microsoft R-Produkte](https://azure.microsoft.com/?ocid=cloudplat_hp).

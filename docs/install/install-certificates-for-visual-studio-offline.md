@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db5de36e9982ac3d708f8826f441751c2fd0891
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 840ea8f701bbc602292bd7c0cf602a24944ed74a
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594070"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918528"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -50,7 +50,7 @@ Wenn Sie ein Netzwerklayout erstellen, werden die erforderlichen Zertifikate in 
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Option 2: Verteilen von vertrauenswürdigen Stammzertifikaten in einer Unternehmensumgebung
 
-Administratoren können für Unternehmen mit Offlinecomputern, die nicht über die aktuellsten Stammzertifikate verfügen, mit den Anweisungen auf der seite [Konfigurieren vertrauenswürdiger Stämme und unzulässiger Zertifikate](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) die Aktualisierungen durchführen.
+Administratoren können für Unternehmen mit Offlinecomputern, die nicht über die aktuellsten Stammzertifikate verfügen, mit den Anweisungen auf der seite [Konfigurieren vertrauenswürdiger Stämme und unzulässiger Zertifikate](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) die Aktualisierungen durchführen.
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Option 3: Installieren von Zertifikaten als Teil einer skriptgesteuerten Bereitstellung von Visual Studio
 

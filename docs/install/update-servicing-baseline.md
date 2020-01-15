@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590955"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776175"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung
 
@@ -62,7 +62,7 @@ Eine weitere Möglichkeit zur Steuerung von Updates auf einem Client besteht dar
 
 Wenn ein Update für eine Baseline für die Wartung zur Verfügung steht, werden für das Wartungsupdate über [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0) Bootstrapperdateien für eine bestimmte Version zur Verfügung gestellt.
 
-Administratoren, die die Bereitstellung über die Netzwerklayoutinstallation durchführen, sollten den [Layoutspeicherort](update-a-network-installation-of-visual-studio.md) aktualisieren. Clients, die vom Speicherort aus installiert wurden, erhalten Updatebenachrichtigungen. Wenn das Update auf Clients bereitgestellt werden muss, folgen Sie [diesen Anweisungen](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Wenn Sie die Datei „response.json“ für ein Update ändern, fügen Sie keine zusätzlichen Workloads, Komponenten oder Sprachen hinzu. Die Verwaltung dieser Einstellungen muss nach dem Aktualisieren des Produkts als modify-Bereitstellung erfolgen.
+Administratoren, die die Bereitstellung über die Netzwerklayoutinstallation durchführen, sollten den [Layoutspeicherort](update-a-network-installation-of-visual-studio.md) aktualisieren. Clients, die vom Speicherort aus installiert wurden, erhalten Updatebenachrichtigungen. Wenn das Update auf Clients bereitgestellt werden muss, folgen Sie [diesen Anweisungen](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). Wenn Sie die Datei „response.json“ für ein Update ändern, fügen Sie keine zusätzlichen Workloads, Komponenten oder Sprachen hinzu. Die Verwaltung dieser Einstellungen muss nach dem Aktualisieren des Produkts als modify-Bereitstellung erfolgen.
 
 Bei einer internetbasierten Installation führen Sie den neuen Bootstrapper für eine bestimmte Version mit dem Parameter `--channelUri` aus, der auf ein nicht vorhandenes Kanalmanifest auf dem Client verweist. Wenn das Update im stillen oder passiven Modus bereitgestellt wird, verwenden Sie zwei separate Befehle:
 

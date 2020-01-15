@@ -12,18 +12,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 25bd88886b6bed447ec7d091543fccdb478db9c5
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588881"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916482"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Installieren der plattformübergreifenden mobile Entwicklung mit C++
 
 Sie können C++ in Visual Studio verwenden, um Windows-Desktop-Apps, Apps der Universellen Windows-Plattform (UWP), Linux-Apps und jetzt auch Apps für Android und iOS zu erstellen. Die Workload **Mobile-Entwicklung mit C++** ist eine Reihe von Komponenten, die in Visual Studio installiert werden kann und plattformübergreifende Visual Studio-Vorlagen für iOS, Android und UWP enthält. Sie installiert die plattformübergreifenden Tools und SDKs für den Schnelleinstieg, ohne dass Sie diese suchen, herunterladen und selbst konfigurieren müssen. Mit diesen Tools in Visual Studio können Sie mühelos plattformübergreifende Projekte erstellen, bearbeiten, debuggen und testen. In diesem Artikel wird beschrieben, wie Sie die Tools und Drittanbietersoftware installieren, die zum Entwickeln plattformübergreifender Apps in C++ mit Visual Studio benötigt werden. Einen Überblick finden Sie unter [Visual C++ – Plattformübergreifende Mobile-Entwicklung](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/).
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 ::: moniker range="vs-2017"
 
@@ -98,7 +98,7 @@ Wenn Sie bei der Installation der Workload **Mobile-Entwicklung mit C++** (oder 
 
 Sie können die SDK Manager-App im Android SDK-Verzeichnis erneut ausführen, um das SDK zu aktualisieren und die optionalen Tools und zusätzliche API-Ebenen zu installieren. Updates können möglicherweise nicht installiert werden, wenn Sie zum Ausführen der SDK-Manager-App nicht die Option **Als Administrator ausführen** verwenden. Wenn Sie Probleme beim Erstellen einer Android-App haben, überprüfen Sie den SDK-Manager auf Updates für Ihre installierten SDKs.
 
-Um einige der Android-Emulatoren im Android SDK verwenden zu können, müssen Sie möglicherweise die Hardwarebeschleunigung einrichten. Weitere Informationen finden Sie unter [Hardwarebeschleunigung für verbesserte Leistung des Emulators (Hyper-V und HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+Um einige der Android-Emulatoren im Android SDK verwenden zu können, müssen Sie möglicherweise die Hardwarebeschleunigung einrichten. Weitere Informationen finden Sie unter [Hardwarebeschleunigung für verbesserte Leistung des Emulators (Hyper-V und HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 In den meisten Fällen kann Visual Studio die Konfigurationen für die von Ihnen installierte Drittanbietersoftware erkennen und verwaltet die Installationspfade in internen Umgebungsvariablen. Sie können die Standardpfade dieser plattformübergreifenden Entwicklungstools in der Visual Studio-IDE außer Kraft setzen.
 
@@ -117,4 +117,4 @@ In den meisten Fällen kann Visual Studio die Konfigurationen für die von Ihnen
 ## <a name="see-also"></a>Siehe auch
 
 - [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](install-and-configure-tools-to-build-using-ios.md)
-- [Visual C++ cross-platform mobile (Visual Studio C++ – Plattformübergreifende Mobile-Entwicklung)](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Visual C++ cross-platform mobile (Visual Studio C++ – Plattformübergreifende Mobile-Entwicklung)](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
