@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594486"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849592"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern
 
@@ -127,11 +127,11 @@ Weitere Informationen zur Problembehandlung bei einer [Netzwerkinstallation](cre
 
 Setupprotokolle sind zum Beheben der meisten Installationsprobleme nicht erforderlich. Wenn Sie ein Problem mit [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md) im Visual Studio-Installer melden, werden diese Protokolle automatisch in Ihren Bericht einbezogen.
 
-Wenn Sie sich an den Microsoft-Support wenden, müssen Sie möglicherweise diese Setupprotokolle mit dem [Protokollerfassungstool für Microsoft Visual Studio und .NET Framework](https://aka.ms/vscollect) bereitstellen. Das Protokollerfassungstool erfasst Setupprotokolle aller von Visual Studio installierten Komponenten einschließlich .NET Framework, Windows SDK und SQL Server. Es erfasst auch Computerinformationen, einen Windows Installer-Bestand und Windows-Ereignisprotokollinformationen für Visual Studio-Installer, Windows Installer und Systemwiederherstellung.
+Wenn Sie sich an den Microsoft-Support wenden, müssen Sie möglicherweise diese Setupprotokolle mit dem [Protokollerfassungstool für Microsoft Visual Studio und .NET Framework](https://www.microsoft.com/download/details.aspx?id=12493) bereitstellen. Das Protokollerfassungstool erfasst Setupprotokolle aller von Visual Studio installierten Komponenten einschließlich .NET Framework, Windows SDK und SQL Server. Es erfasst auch Computerinformationen, einen Windows Installer-Bestand und Windows-Ereignisprotokollinformationen für Visual Studio-Installer, Windows Installer und Systemwiederherstellung.
 
 So erfassen Sie die Protokolle:
 
-1. [Laden Sie das Tool herunter](https://aka.ms/vscollect).
+1. [Laden Sie das Tool herunter](https://www.microsoft.com/download/details.aspx?id=12493).
 2. Öffnen Sie eine Eingabeaufforderung als Administrator.
 3. Führen Sie `Collect.exe` aus dem Verzeichnis aus, in dem Sie das Tool gespeichert haben.
 4. Suchen Sie die sich daraus ergebende `vslogs.zip`-Datei in Ihrem `%TEMP%`-Verzeichnis, z.B. `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`.

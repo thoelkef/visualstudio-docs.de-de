@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über die Aufgaben eines Administrators beim Verwalten von Abonnements für große Teams und externe Vertragspartner.
-ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491697"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850050"
 ---
 # <a name="large-teams-and-external-contractors"></a>Große Teams und externe Auftragnehmer
 Administratoren für Visual Studio-Abonnements sind dafür verantwortlich, sicherzustellen, dass jeder Benutzer, der mit lizenzierter Visual Studio-Software interagiert, angemessen für sein Visual Studio-Abonnement lizenziert ist.
@@ -29,7 +29,7 @@ Natürlich ist jede Organisation anders aufgebaut, aber eine Liste der Teams, di
 Externe Vertragspartner verfügen möglicherweise über Lizenzen, die mit Ihrer für lizenzierten Visual Studio-Umgebung übereinstimmen. Microsoft Certified Partners erhalten möglicherweise einige Gratisabonnements für Visual Studio für die interne Nutzung. Diese Abonnements beinhalten allerdings keine Aktivitäten, die Umsatz einbringen, wie das Entwickeln von benutzerdefinierter Software für einen Kunden. Bitten Sie Ihre Partner, Ihnen einen zertifizierten Brief zukommen zu lassen, in dem erläutert wird, welche Lizenzen sie bereitstellen und welche noch beschafft werden müssen.
 
 ## <a name="resources"></a>Ressourcen
-- [Whitepaper zur Lizenzierung von Visual Studio](https://aka.ms/vslicensing)
+- [Whitepaper zur Lizenzierung von Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

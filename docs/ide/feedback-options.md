@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853489"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847464"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio-Feedbackoptionen
 
@@ -70,17 +70,17 @@ Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://deve
 
 Es gibt zwei Möglichkeiten, wie Sie uns bei der Verbesserung der Dokumentation helfen können:
 
-* Nutzen Sie rechts oben auf einer beliebigen Dokumentationsseite das Antworttool **Ist diese Seite hilfreich?**.
+* Nutzen Sie rechts oben auf einer beliebigen Dokumentationsseite das Antworttool **Ist diese Seite hilfreich?** .
 * Verwenden Sie Ihr GitHub-Konto, um Feedback zu einer beliebigen Visual Studio-Seite auf [docs.microsoft.com](/visualstudio/) zu geben. Wählen Sie dazu unten auf einer beliebigen Dokumentationsseite die Schaltfläche **Feedback senden über** > **Diese Seite** aus.
 
 ## <a name="contact-microsoft-support"></a>Kontakt zum Microsoft Support
 
-Weitere Visual Studio-Supportinformationen finden Sie unter [Product life cycle and servicing (Produktlebenszyklus und Wartung)](/visualstudio/releases/2019/servicing/). Onlinehilfe zu anderen Microsoft-Produkten und -Diensten finden Sie unter [Microsoft-Support](https://go.microsoft.com/fwlink/?LinkID=99019).
+Weitere Visual Studio-Supportinformationen finden Sie unter [Product life cycle and servicing (Produktlebenszyklus und Wartung)](/visualstudio/releases/2019/servicing/). Onlinehilfe zu anderen Microsoft-Produkten und -Diensten finden Sie unter [Microsoft-Support](https://support.microsoft.com/).
 
 > [!NOTE]
 > Die Unterstützung außerhalb der USA und Kanada kann variieren. Eine Liste internationaler Kontakte finden Sie unter [Microsoft Worldwide Sites](https://www.microsoft.com/worldwide/).
 
-Für größere Organisationen, die verwaltete Unterstützung direkt von Microsoft benötigen, stehen Verträge über verschiedene Enterprise-Supportangebote zur Verfügung. Weitere Informationen finden Sie unter [Microsoft Enterprise-Supportlösungen](https://go.microsoft.com/fwlink/?LinkId=258223).
+Für größere Organisationen, die verwaltete Unterstützung direkt von Microsoft benötigen, stehen Verträge über verschiedene Enterprise-Supportangebote zur Verfügung. Weitere Informationen finden Sie unter [Microsoft Enterprise-Supportlösungen](https://www.microsoft.com/industry/services/support).
 
 Wenn das Produkt auf einem neuen Computer oder einem Gerät installiert geliefert wurde, erhalten Sie technischen Support und Hilfe für diese Software vom Hardwarehersteller. Wenden Sie sich für Unterstützung direkt an den Hersteller.
 

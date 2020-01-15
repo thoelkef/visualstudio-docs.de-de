@@ -12,23 +12,23 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588873"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846906"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installieren und Konfigurieren von Tools zum Erstellen mit iOS
 
-Sie können Visual Studio mit den Tools für die plattformübergreifende **mobile Entwicklung mit C++** verwenden, um iOS-Code im iOS-Simulator oder auf einem iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzierungseinschränkungen muss der Code jedoch remote auf einem Mac erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.
+Sie können Visual Studio mit den Tools für die plattformübergreifende **mobile Entwicklung mit C++** verwenden, um iOS-Code im iOS-Simulator oder auf einem iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzierungseinschränkungen muss der Code jedoch remote auf einem Mac erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://www.npmjs.com/package/vcremote)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.
 
 > [!NOTE]
 > Informationen zur Verwendung von in der Cloud gehosteten Mac-Diensten anstelle eines Macs finden Sie unter [Konfigurieren von Visual Studio zum Herstellen der Verbindung zu Ihrem in der Cloud gehosteten Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Die Anweisungen gelten für das Erstellen mit Visual Studio Tools for Apache Cordova. Um die Anweisungen für den Build mit C++ zu verwenden, müssen Sie `vcremote` durch `remotebuild` ersetzen.
 
 Lesen Sie nach der Installation der Tools zum Entwickeln mit iOS in diesem Artikel nach, wie Sie den Remote-Agent schnell für die iOS-Entwicklung in Visual Studio und auf Ihrem Mac konfigurieren und aktualisieren können.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verwenden zu können, benötigen Sie folgende Komponenten:
 
@@ -68,7 +68,7 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
 ## <a name="Install"></a> Installieren des Remote-Agents für iOS
 
-Wenn Sie die Workload „Mobile Entwicklung mit C++“ installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.
+Wenn Sie die Workload „Mobile Entwicklung mit C++“ installieren, kann Visual Studio mit [vcremote](https://www.npmjs.com/package/vcremote)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.
 
 Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderlichen Komponenten](#prerequisites) vorhanden sind und Sie die Schritte unter [Installieren der plattformübergreifenden mobilen Entwicklung mit C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) ausgeführt haben.
 

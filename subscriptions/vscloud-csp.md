@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden.
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787747"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851403"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 Partner im [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)-Programm (CSP) können Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements für ihre Kunden kaufen.
@@ -21,7 +21,7 @@ Partner im [Cloud Solution Provider](https://partner.microsoft.com/cloud-solutio
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 Sie müssen Ihren Kundenmandanten zunächst im Partner Center einrichten und ein Azure-Abonnement für diesen Mandanten erstellen.
 
 [Weitere Informationen](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -103,5 +103,5 @@ Diese Rabatte werden in den Preisdaten in [Partner Center](https://partnercenter
 Antwort:  Nein, bei den Preisen für Visual Studio-Abonnements handelt es sich um Pauschalpreise. Es gilt der gleiche Preis für neue und laufende Abonnements.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Frage: Gibt es Azure Dev/Test-Preisoptionen für CSPs?
-Antwort: Derzeit nicht. Ihre Kunden können die [Azure Dev/Test-Preise](https://aka.ms/azuredevtestpricing) nutzen, es gibt jedoch keine speziellen Angebote für CSPs.
+Antwort: Derzeit nicht. Ihre Kunden können die [Azure Dev/Test-Preise](https://azure.microsoft.com/pricing/dev-test/) nutzen, es gibt jedoch keine speziellen Angebote für CSPs.
 
