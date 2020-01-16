@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748539"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115201"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können dem Benutzer im Diagramm und im sprach-Explorer angezeigt werden, und Sie können über Programmcode darauf zugreifen. Eigenschaften unterscheiden sich jedoch in der Art und Weise, in der ihre Werte gespeichert werden.
@@ -25,8 +25,8 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
 |Art der Domänen Eigenschaft|Beschreibung|
 |-|-|
 |**Standard** (Standard)|Eine Domänen Eigenschaft, die im *Speicher* gespeichert und in eine Datei serialisiert wird.|
-|**Angelegt**|Eine schreibgeschützte Domänen Eigenschaft, die nicht im Speicher gespeichert wird, sondern aus anderen Werten berechnet wird.<br /><br /> Beispielsweise können `Person.Age` aus `Person.BirthDate` berechnet werden.<br /><br /> Sie müssen den Code bereitstellen, der die Berechnung ausführt. In der Regel berechnen Sie den Wert aus anderen Domänen Eigenschaften. Sie können jedoch auch externe Ressourcen verwenden.|
-|**Benutzerdefinierter Speicher**|Eine Domänen Eigenschaft, die nicht direkt im Speicher gespeichert wird, sondern sowohl Get als auch festgelegt werden kann.<br /><br /> Sie müssen die Methoden bereitstellen, mit denen der Wert erhalten und festgelegt wird.<br /><br /> Beispielsweise können `Person.FullAddress` in `Person.StreetAddress`, `Person.City` und `Person.PostalCode` gespeichert werden.<br /><br /> Sie können auch auf externe Ressourcen zugreifen, z. b. um Werte aus einer Datenbank zu erhalten und festzulegen.<br /><br /> Der Code sollte keine Werte im Speicher festlegen, wenn `Store.InUndoRedoOrRollback` true ist. Weitere Informationen finden Sie unter [Transaktionen und benutzerdefinierte Setter](#setters).|
+|**Angelegt**|Eine schreibgeschützte Domänen Eigenschaft, die nicht im Speicher gespeichert wird, sondern aus anderen Werten berechnet wird.<br /><br /> Beispielsweise können `Person.Age` aus `Person.BirthDate`berechnet werden.<br /><br /> Sie müssen den Code bereitstellen, der die Berechnung ausführt. In der Regel berechnen Sie den Wert aus anderen Domänen Eigenschaften. Sie können jedoch auch externe Ressourcen verwenden.|
+|**Benutzerdefinierter Speicher**|Eine Domänen Eigenschaft, die nicht direkt im Speicher gespeichert wird, sondern sowohl Get als auch festgelegt werden kann.<br /><br /> Sie müssen die Methoden bereitstellen, mit denen der Wert erhalten und festgelegt wird.<br /><br /> Beispielsweise können `Person.FullAddress` in `Person.StreetAddress`, `Person.City`und `Person.PostalCode`gespeichert werden.<br /><br /> Sie können auch auf externe Ressourcen zugreifen, z. b. um Werte aus einer Datenbank zu erhalten und festzulegen.<br /><br /> Der Code sollte keine Werte im Speicher festlegen, wenn `Store.InUndoRedoOrRollback` true ist. Weitere Informationen finden Sie unter [Transaktionen und benutzerdefinierte Setter](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Bereitstellen des Codes für eine berechnete oder benutzerdefinierte Speicher Eigenschaft
  Wenn Sie den Typ einer Domänen Eigenschaft auf einen berechneten oder einen benutzerdefinierten Speicher festgelegt haben, müssen Sie Zugriffsmethoden bereitstellen. Wenn Sie die Projekt Mappe erstellen, werden Sie in einem Fehlerbericht darüber informiert, was erforderlich ist.
@@ -52,7 +52,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
     > [!NOTE]
     > Diese Datei wird aus "DslDefinition. DSL" generiert. Wenn Sie diese Datei bearbeiten, gehen Ihre Änderungen beim nächsten Klicken auf **alle Vorlagen transformieren**verloren. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.
 
-6. Erstellen oder öffnen Sie eine Klassendatei in einem separaten Ordner, z. b. customcode \\*yourdomainclass*. cs.
+6. Erstellen oder öffnen Sie eine Klassendatei in einem separaten Ordner, z. b. customcode\\*yourdomainclass*. cs.
 
      Stellen Sie sicher, dass der Namespace mit dem des generierten Codes identisch ist.
 

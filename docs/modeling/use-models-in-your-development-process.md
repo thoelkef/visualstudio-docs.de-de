@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986283"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115054"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -96,7 +96,7 @@ Definieren Sie vor Beginn jeder Iteration mithilfe von Modellen, was am Ende der
 
 Bestimmen Sie nach dem Anforderungsworkshop die Details des Anforderungsmodells, und verknüpfen Sie das Modell mit Entwicklungsaufgaben. Hierzu können Sie Arbeitselemente in Team Foundation mit Elementen im Modell verknüpfen.
 
-Sie können jedes Element mit Arbeitsaufgaben verknüpfen, die zweckmäßigsten Elemente lauten jedoch wie folgt:
+Sie können jedes Element mit Arbeitselemente verknüpfen, die zweckmäßigsten Elemente lauten jedoch wie folgt:
 
 - Kommentare, die Geschäftsregeln oder Servicequalitätsanforderungen beschreiben. Weitere Informationen finden Sie unter [Modell Benutzeranforderungen](../modeling/model-user-requirements.md).
 

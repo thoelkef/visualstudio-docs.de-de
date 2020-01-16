@@ -2,17 +2,17 @@
 title: Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747409"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111359"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
 Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollständige DSL-Definition erstellen, die Sie in eine andere DSL importieren können. Auf diese Weise können Sie allgemeine Teile von ähnlichen Modellen berücksichtigen.
@@ -31,7 +31,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollst
 
      Um eine Beziehung zu definieren, die Importierer verwenden kann, erstellen Sie zwei Domänen Klassen, und erstellen Sie die Beziehung zwischen Ihnen.
 
-     Legen Sie den **Vererbungsmodifizierer** der Domänen Klassen auf `Abstract` fest.
+     Legen Sie den **Vererbungsmodifizierer** der Domänen Klassen auf `Abstract`fest.
 
 3. Sie können Elemente hinzufügen, die Sie im DSL-Explorer definieren, z. b. Verbindungs-Generatoren.
 
@@ -41,7 +41,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollst
 
 6. Erstellen Sie das Projekt.
 
-7. Wenn Sie die DSL für andere zu verwendende Personen verteilen, müssen Sie sowohl die kompilierte Assembly (dll) als auch die Datei `DslDefinition.dsl` bereitstellen. Sie finden die kompilierte Assembly in einem Ordner unter `Dsl\bin\*`
+7. Wenn Sie die DSL für andere zu verwendende Personen verteilen, müssen Sie sowohl die kompilierte Assembly (dll) als auch die Datei `DslDefinition.dsl`bereitstellen. Sie finden die kompilierte Assembly in einem Ordner unter `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek
 
@@ -53,7 +53,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollst
 
 3. Sie können die importierten Klassen als Basisklassen verwenden. Erstellen Sie eine Domänen Klasse in der importierten DSL, und legen Sie in der Eigenschaftenfenster **Basisklasse** auf eine importierte Klasse fest.
 
-4. Klicken Sie auf alle Vorlagen transformieren.
+4. Klicken Sie auf Alle Vorlagen transformieren.
 
 5. Fügen Sie dem DSL-Projekt einen Verweis auf die Assembly (dll) hinzu, die vom DSL-Bibliotheksprojekt erstellt wurde.
 

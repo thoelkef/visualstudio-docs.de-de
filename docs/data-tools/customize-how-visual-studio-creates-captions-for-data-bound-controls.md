@@ -8,17 +8,17 @@ helpviewer_keywords:
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 932d50d44fbfaa810225ef90c2f5361bc26d9b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648569"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113661"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 
@@ -26,13 +26,13 @@ Wenn Sie Elemente aus dem [Datenquellen Fenster](add-new-data-sources.md#data-so
 
 ::: moniker range="vs-2017"
 
-Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte " **SmartCaptionExpression**", " **smartcaptionreplace**" und " **SmartCaptionSuffix** " im HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0 festlegen.  **\Data Designers** -Registrierungsschlüssel.
+Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte " **SmartCaptionExpression**", " **smartcaptionreplace**" und " **SmartCaptionSuffix** " im Registrierungsschlüssel " **HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\Data Designers** " festlegen.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte " **SmartCaptionExpression**", " **smartcaptionreplace**" und " **SmartCaptionSuffix** " im HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0 festlegen.  **\Data Designers** -Registrierungsschlüssel.
+Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte " **SmartCaptionExpression**", " **smartcaptionreplace**" und " **SmartCaptionSuffix** " im Registrierungsschlüssel " **HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\Data Designers** " festlegen.
 
 ::: moniker-end
 
@@ -55,10 +55,10 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Entspricht einem Kleinbuchstaben, gefolgt von einem Großbuchstaben oder einem Unterstrich.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** stellt alle Zeichen dar, die in den ersten Klammern des Ausdrucks übereinstimmen, und **$2** stellt alle Zeichen dar, die in den zweiten Klammern übereinstimmen. Die Ersetzung ist die erste Übereinstimmung, ein Leerzeichen und dann die zweite Entsprechung.|
-|**SmartCaptionSuffix**|**:**|Stellt ein an die zurückgegebene Zeichenfolge angefügtes Zeichen dar. Wenn die Beschriftung z. b. `Company Name` ist, wird Sie durch das Suffix `Company Name:`|
+|**SmartCaptionSuffix**|**:**|Stellt ein an die zurückgegebene Zeichenfolge angefügtes Zeichen dar. Wenn die Beschriftung z. b. `Company Name`ist, wird Sie durch das Suffix `Company Name:`|
 
 > [!CAUTION]
-> Gehen Sie sehr vorsichtig vor, wenn Sie im Registrierungs-Editor etwas tun. Sichern Sie die Registrierung, bevor Sie Sie bearbeiten. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können Sie schwerwiegende Probleme verursachen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich machen. Microsoft garantiert nicht, dass Probleme, die Sie durch die Verwendung des Registrierungs-Editors verursacht haben, nicht ordnungsgemäß aufgelöst werden können. Verwenden Sie den Registrierungs-Editor auf eigene Gefahr.
+> Gehen Sie sehr vorsichtig vor, wenn Sie im Registrierungs-Editor etwas tun. Sichern Sie die Registrierung, bevor Sie Sie bearbeiten. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können Sie schwerwiegende Probleme verursachen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich machen. Microsoft garantiert nicht, dass Probleme, die Sie durch die Verwendung des Registrierungs-Editors verursacht haben, nicht ordnungsgemäß aufgelöst werden können. Die Verwendung des Registrierungs-Editors erfolgt auf eigene Gefahr.
 >
 > Informationen zum Sichern, bearbeiten und Wiederherstellen der Registrierung finden Sie unter [Windows-Registrierungsinformationen für fortgeschrittene Benutzer](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
@@ -68,7 +68,7 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
 2. Geben Sie im Dialogfeld **Ausführen** `regedit` ein, und klicken Sie auf **OK**.
 
-3. Erweitern Sie den Knoten **HKEY_CURRENT_USER**  > **Software**  >  Knoten**Microsoft**  > **VisualStudio** .
+3. Erweitern Sie den Knoten **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
 2. Geben Sie im Dialogfeld **Ausführen** `regedit` ein, und klicken Sie auf **OK**.
 
-3. Erweitern Sie den Knoten **HKEY_CURRENT_USER**  > **Software**  >  Knoten**Microsoft**  > **VisualStudio** .
+3. Erweitern Sie den Knoten **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 

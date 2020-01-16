@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650429"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111436"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision-Aktivitätsdesigner
 
@@ -27,7 +27,7 @@ Verwenden Sie <xref:System.Activities.Statements.FlowDecision>, wenn der Verlauf
 
 ### <a name="using-the-flowdecision-designer"></a>Verwenden des FlowDecision-Designers
 
-Der **FlowDecision** -Designer befindet sich in der Kategorie **Flussdiagramm** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** +**alt** +**X**drücken.
+Der **FlowDecision** -Designer befindet sich in der Kategorie **Flussdiagramm** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG**+**alt**+**X**drücken.
 
 Der **FlowDecision** -Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer Oberfläche innerhalb eines **Flowchart** -Aktivitäts Designers abgelegt werden. Dadurch wird eine <xref:System.Activities.Statements.FlowDecision> mit der Bezeichnung " **Decision** " innerhalb der <xref:System.Activities.Statements.Flowchart> Aktivität erstellt. Bewegen Sie den Mauszeiger über den Designer, und die quadratischen Handles **true** und **false** für die beiden Verzweigungen werden angezeigt.
 
@@ -39,11 +39,11 @@ Der Ausdruck, der angibt, dass die <xref:System.Activities.Statements.FlowDecisi
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.FlowDecision>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder in der Designeroberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftsname|Erforderlich|Verwendungs-|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Die Bedingung, die bestimmt, welchen Pfad die Flusssteuerung einschlägt.|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Der von der Flusssteuerung eingeschlagene Pfad, wenn die <xref:System.Activities.Statements.FlowDecision.Condition%2A>-Bedingung erfüllt wird.|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Der von der Flusssteuerung eingeschlagene Pfad, wenn die <xref:System.Activities.Statements.FlowDecision.Condition%2A>-Bedingung nicht erfüllt wird.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|Falsch|Der von der Flusssteuerung eingeschlagene Pfad, wenn die <xref:System.Activities.Statements.FlowDecision.Condition%2A>-Bedingung erfüllt wird.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|Falsch|Der von der Flusssteuerung eingeschlagene Pfad, wenn die <xref:System.Activities.Statements.FlowDecision.Condition%2A>-Bedingung nicht erfüllt wird.|
 
 ## <a name="see-also"></a>Siehe auch
 
