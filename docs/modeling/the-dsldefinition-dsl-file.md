@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605992"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114921"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 
@@ -26,9 +26,9 @@ Die Beispiele in diesem Thema stammen aus der Projektmappenvorlage für Komponen
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Abschnitte in der Datei "DslDefinition.dsl"
 
-Das Stamm Element ist \<Dsl >, und seine Attribute geben den Namen der domänenspezifischen Sprache, den Namespace sowie die Haupt-und neben Versionsnummern für die Versionsverwaltung an. Das Schema `DslDefinitionModel` definiert Inhalt und Struktur einer gültigen DslDefinition.dsl-Datei.
+Das Stamm Element ist \<DSL >, und seine Attribute geben den Namen der domänenspezifischen Sprache, den Namespace sowie die Haupt-und neben Versionsnummern für die Versionsverwaltung an. Das Schema `DslDefinitionModel` definiert Inhalt und Struktur einer gültigen DslDefinition.dsl-Datei.
 
-Die untergeordneten Elemente des \<Dsl > root-Elements lauten wie folgt:
+Die untergeordneten Elemente des \<DSL-> Stamm Elements lauten wie folgt:
 
 ### <a name="classes"></a>Klassen
 
@@ -40,7 +40,7 @@ In diesem Abschnitt wird jede Beziehung im Modell definiert. Quelle und Ziel ste
 
 ### <a name="types"></a>Typen
 
-In diesem Abschnitt wird jeder Typ und dessen Namespace definiert. Domäneneigenschaften haben zwei Typen. `DomainEnumerations` werden im Modell definiert und erzeugen Typen in "DomainModel.cs". `ExternalTypes` beziehen sich auf Typen, die an anderer Stelle definiert werden (z. B. `String` oder `Int32`), und generieren nichts.
+In diesem Abschnitt wird jeder Typ und dessen Namespace definiert. Domäneneigenschaften haben zwei Typen. `DomainEnumerations` werden im Modell definiert und generieren Typen in DomainModel.cs. `ExternalTypes` auf Typen verweisen, die an anderer Stelle definiert werden (z. b. `String` oder `Int32`) und keine Elemente generieren.
 
 ### <a name="shapes"></a>Formen
 
@@ -66,7 +66,7 @@ Dieser Abschnitt definiert einen Verbindungsgenerator für jedes Verbindungstool
 
 In diesem Abschnitt wird ein Diagramm definiert, und hier legen Sie Eigenschaften wie Hintergrundfarbe und Stammklasse fest. (Bei der Stamm Klasse handelt es sich um die Domänen Klasse, die durch das Diagramm als Ganzes dargestellt wird.) Der Diagramm Abschnitt enthält auch shapemap-und connectormap-Elemente, die die Form oder den Connector angeben, die die einzelnen Domänen Klassen oder-Beziehungen darstellen.
 
-### <a name="designer"></a>Designer
+### <a name="designer"></a>-Designer
 
 In diesem Abschnitt wird ein Designer (-Editor) definiert, der eine **Toolbox**, Validierungs Einstellungen, ein Diagramm und ein Serialisierungsschema vereint. Im Abschnitt "Designer" wird auch die Stammklasse des Modells definiert, die in der Regel auch die Stammklasse des Diagramms ist.
 
@@ -148,7 +148,7 @@ Jede Klasse hat eine Reihe von Eigenschaften und kann eine Basisklasse besitzen.
 </DomainClass>
 ```
 
-`NamedElement` ist die Basis einiger anderer Klassen wie z. B. `Component`, die neben der `Name`-Eigenschaft, die es von `NamedElement` geerbt hat, über eigene Eigenschaften verfügt. Der untergeordnete Knoten "BaseClass" enthält einen Monikerverweis. Da sich die referenzierte Klasse im gleichen Namespace befindet, muss im Moniker nur ihr Name angegeben werden:
+`NamedElement` ist die Grundlage mehrerer der anderen Klassen, z. b. `Component`, die neben der Eigenschaft `Name`, die Sie von `NamedElement`geerbt hat, über eigene Eigenschaften verfügt. Der untergeordnete Knoten "BaseClass" enthält einen Monikerverweis. Da sich die referenzierte Klasse im gleichen Namespace befindet, muss im Moniker nur ihr Name angegeben werden:
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -170,11 +170,11 @@ Jede Domänenklasse (einschließlich Beziehungen, Formen, Konnektoren und Diagra
 
 - **Name und Namespace.** Diese Attribute geben den Namen und den Namespace der Klasse im generierten Code an. Gemeinsam müssen sie innerhalb der domänenspezifischen Sprache eindeutig sein.
 
-- **InheritanceModifier.** Dieses Attribut ist "abstract", "Sealed" oder "None".
+- **InheritanceModifier.** Dieses Attribut ist "abstrakt", "versiegelt" oder leer.
 
 - **Display Name.** Dieses Attribut ist der Name, der im **Eigenschaften** Fenster angezeigt wird. Das DisplayName-Attribut kann Leerzeichen und Interpunktionszeichen enthalten.
 
-- **Generatesdoubleabgeleitet.** Wenn dieses Attribut auf true festgelegt ist, werden zwei Klassen generiert, und eine ist eine Unterklasse der anderen. Alle generierten Methoden sind in der Basisklassen enthalten, während die Konstruktoren in der Unterklasse enthalten sind. Durch Festlegen dieses Attributs können Sie jede generierte Methode im benutzerdefinierten Code außer Kraft setzen.
+- **GeneratesDoubleDerived.** Wenn dieses Attribut auf "true" festgelegt ist, werden zwei Klassen generiert, von denen die eine eine Unterklasse der anderen ist. Alle generierten Methoden sind in der Basisklassen enthalten, während die Konstruktoren in der Unterklasse enthalten sind. Durch Festlegen dieses Attributs können Sie jede generierte Methode im benutzerdefinierten Code außer Kraft setzen.
 
 - **Hascustomconstructor**. Wenn dieses Attribut auf "true" festgelegt ist, wird der Konstruktor aus dem generierten Code weggelassen, sodass Sie Ihre eigene Version schreiben können.
 
@@ -206,13 +206,13 @@ Jede Domäneneigenschaft kann auch die folgenden Attribute haben:
 
 - **IsBrowsable**. Dieses Attribut bestimmt, ob die Eigenschaft im **Eigenschaften** Fenster angezeigt wird, wenn der Benutzer auf ein Objekt der übergeordneten Klasse klickt.
 
-- **Isuiread only**. Dieses Attribut bestimmt, ob der Benutzer die Eigenschaft im **Eigenschaften** Fenster oder in einem Decorator, in dem die Eigenschaft dargestellt wird, ändern kann.
+- **IsUIReadOnly**. Dieses Attribut bestimmt, ob der Benutzer die Eigenschaft im **Eigenschaften** Fenster oder in einem Decorator, in dem die Eigenschaft dargestellt wird, ändern kann.
 
-- **Art**. Sie können dieses Attribut auf "Normal", "Calculated" oder "CustomStorage" festlegen. Wenn Sie dieses Attribut auf "Calculated" festlegen, müssen Sie benutzerdefinierten Code bereitstellen, der den Wert bestimmt, und die Eigenschaft ist schreibgeschützt. Wenn Sie dieses Attribut auf "CustomStorage" festlegen, müssen Sie Code bereitstellen, mit dem Werte sowohl abgerufen als auch festgelegt werden.
+- **Kind**. Sie können dieses Attribut auf "Normal", "Calculated" oder "CustomStorage" festlegen. Wenn Sie dieses Attribut auf "Calculated" festlegen, müssen Sie benutzerdefinierten Code bereitstellen, der den Wert bestimmt, und die Eigenschaft ist schreibgeschützt. Wenn Sie dieses Attribut auf "CustomStorage" festlegen, müssen Sie Code bereitstellen, mit dem Werte sowohl abgerufen als auch festgelegt werden.
 
 - **IsElementName**. Wird dieses Attribut auf "true" festgelegt, wird sein Wert automatisch auf einen eindeutigen Wert eingestellt, wenn eine Instanz der übergeordneten Klasse erstellt wird. Dieses Attribut kann nur für eine Eigenschaft in jeder Klasse, die vom Typ Zeichenfolge sein muss, auf "true" festgelegt werden. Im Komponentendiagramm-Beispiel ist `Name` der `NamedElement`-Eigenschaft in `IsElementName` auf "true" festgelegt. Wenn ein Benutzer ein `Component`-Element (das von `NamedElement` erbt) erstellt, wird der Name automatisch auf einen Wert wie "Component6" initialisiert.
 
-- `DefaultValue` Wenn Sie dieses Attribut angegeben haben, wird der festgelegte Wert diesem Attribut für neue Instanzen dieser Klasse zugewiesen. Wenn `IsElementName` festgelegt wird, gibt das DefaultValue-Attribut den ersten Teil der neuen Zeichenfolge an.
+- `DefaultValue`. Wenn Sie dieses Attribut angegeben haben, wird der festgelegte Wert diesem Attribut für neue Instanzen dieser Klasse zugewiesen. Wenn `IsElementName` festgelegt wird, gibt das DefaultValue-Attribut den ersten Teil der neuen Zeichenfolge an.
 
 - **Kategorie** ist die Kopfzeile, unter der die Eigenschaft im **Eigenschaften** Fenster angezeigt wird.
 
@@ -498,7 +498,7 @@ Die Datei "DslDefinition.dsl" selbst ist eine serialisierte Datei und entspricht
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators ist die einbettende Beziehung zwischen `Connector` und `Decorator`. `UseFullForm` wurde so festgelegt, dass der Name der Beziehung mit der Liste von Eigenschaften für jeden Link aus dem Connector-Objekt angezeigt wird. `OmitElement` wurde jedoch ebenfalls festgelegt, sodass kein `RoleElementName` die Links einschließt, die in `Connector` eingebettet sind:
+- ConnectorHasDecorators ist die einbettende Beziehung zwischen `Connector` und `Decorator`. `UseFullForm` wurde so festgelegt, dass der Name der Beziehung mit der Liste der Eigenschaften für die einzelnen Links aus dem Connector-Objekt angezeigt wird. `OmitElement` wurde jedoch ebenfalls festgelegt, sodass kein `RoleElementName` die Links einschließt, die in `Connector` eingebettet sind:
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -519,7 +519,7 @@ Definitionen von Formen und Konnektoren erben neben Folgendem auch Attribute und
 
 - **Exposesfillcolorasproperty** und mehrere ähnliche Attribute. Dank dieser Booleschen Attribute kann die entsprechende Eigenschaft vom Benutzer variiert werden. Wenn ein Benutzer einer Sprache auf eine Form im Diagramm klickt, werden im Allgemeinen die Eigenschaften, die im **Eigenschaften** Fenster angezeigt werden, die Eigenschaften der Domänen Klasseninstanz, der die Form zugeordnet ist, angezeigt. Wenn `ExposesFillColorAsProperty` auf "true" festgelegt ist, wird auch eine Eigenschaft der Form selbst angezeigt.
 
-- **Shapehasdecorators**. Eine Instanz dieses Attribut tritt für jeden Text-, Symbol- oder Erweitern/Reduzieren-Decorator auf. (In der Datei "DslDefinition.dsl" ist `ShapeHasDecorators` eine Beziehung, wobei `UseFullForm` auf "true" festgelegt ist.)
+- **ShapeHasDecorators**. Eine Instanz dieses Attribut tritt für jeden Text-, Symbol- oder Erweitern/Reduzieren-Decorator auf. (In der Datei "DslDefinition.dsl" ist `ShapeHasDecorators` eine Beziehung, wobei `UseFullForm` auf "true" festgelegt ist.)
 
 ## <a name="shape-maps"></a>Formzuordnungen
 

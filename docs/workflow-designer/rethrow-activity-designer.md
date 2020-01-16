@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d015ad500537a17cfc2c48c8076df43a38534ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650008"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114752"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow-Aktivitätsdesigner
 
@@ -33,9 +33,9 @@ Greifen Sie in der Kategorie **Fehlerbehandlung** der **Toolbox**auf den **Rethr
 
 In der folgenden Tabelle sind die <xref:System.Activities.Statements.Rethrow> Eigenschaften aufgeführt, und es wird beschrieben, wie Sie im Designer verwendet werden:
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftsname|Erforderlich|Verwendungs-|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Rethrow>-Aktivität an. Der Standardwert lautet Rethrow.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Rethrow>-Aktivität an. Der Standardwert lautet Rethrow.|
 
 ## <a name="see-also"></a>Siehe auch
 

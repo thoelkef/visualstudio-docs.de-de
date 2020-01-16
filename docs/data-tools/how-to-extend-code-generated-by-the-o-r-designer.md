@@ -3,17 +3,17 @@ title: 'Vorgehensweise: Erweitern von durch den O/R-Designer erstellten Code'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e89410d224adf0980e51c691dbf581655cc2ff3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 588eb0f61dbc16fb1625752417ac5257bf48320f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648356"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113681"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Vorgehensweise: Erweitern von durch den O/R-Designer erstellten Code
 Vom **O/R-Designer** generierter Code wird erneut generiert, wenn Änderungen an den Entitäts Klassen und anderen Objekten auf der Designer Oberfläche vorgenommen werden. Aufgrund dieser erneuten Codegenerierung wird in der Regel jeglicher Code, der zum generierten Code hinzugefügt wurde, überschrieben, sobald vom Designer neuer Code generiert wird. Der **O/R-Designer** bietet die Möglichkeit, partielle Klassendateien zu generieren, in denen Sie Code hinzufügen können, der nicht überschrieben wird. Ein Beispiel für das Hinzufügen Ihres eigenen Codes zu dem vom **O/R-Designer** generierten Code ist das Hinzufügen der Datenvalidierung zu LINQ to SQL (Entitäts Klassen). Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Validierungen zu Entitäts Klassen](../data-tools/how-to-add-validation-to-entity-classes.md).

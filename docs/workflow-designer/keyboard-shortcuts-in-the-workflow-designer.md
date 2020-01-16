@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36e8b6d67d2405fbc74c0b1bf854b3a3baaf4da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650158"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115387"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 
@@ -29,7 +29,7 @@ In Visual Studio gelten die globalen Verknüpfungen und debugkombinationen für 
 
 In der folgenden Tabelle werden die Standard Tastenkombinationen zusammengefasst, die Workflow-Designer Befehlen zugewiesen sind.
 
-|Verknüpfung|Zweck|
+|Shortcut|Zweck|
 |-|-------------|
 |STRG+E, A|Argument-Designer anzeigen oder ausblenden.|
 |STRG+E, C|Die ausgewählte Aktivität direkt reduzieren.|
@@ -82,8 +82,8 @@ Standardmäßig gelten die Standard Tastenkombinationen für die Visual Basic Te
   - Ausschneiden
   - Kopieren
   - Einfügen
-  - Alles auswählen
-  - undo
+  - Alle auswählen
+  - Rückgängig machen
   - Wiederholen
 
 - Um die Tastenkombinationen für Befehle zur Ausdrucks Bearbeitung innerhalb Workflow-Designer in Visual Studio neu zuzuordnen, bearbeiten Sie die Verknüpfungen im Workflow-Designer Bereich. Im Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.

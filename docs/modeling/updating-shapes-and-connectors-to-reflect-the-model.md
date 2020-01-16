@@ -2,17 +2,17 @@
 title: Aktualisieren von Formen und Konnektoren zur Darstellung des Modells
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663794"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115028"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Connectors zur Darstellung des Modells
 
@@ -37,7 +37,7 @@ Die Form verfügt jetzt über eine Domänen Eigenschaft, die Sie im Programmcode
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Wenn Sie die Eigenschaften Variable nur unter der Programmsteuerung und nicht vom Benutzer erstellen möchten, wählen Sie im DSL-Definitions Diagramm die neue Domänen Eigenschaft aus, z. b. **Füllfarbe** . Legen **Sie dann** im Eigenschaftenfenster die Einstellung für "durchsuchbar" auf "`true` **`false`" fest**
+Wenn Sie die Eigenschaften Variable nur unter der Programmsteuerung und nicht vom Benutzer erstellen möchten, wählen Sie im DSL-Definitions Diagramm die neue Domänen Eigenschaft aus, z. b. **Füllfarbe** . Legen **Sie dann** im Eigenschaftenfenster die Einstellung für "durchsuchbar" auf "`true`**`false`" fest**
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definieren von Änderungs Regeln, um die Farbe, den Stil oder den Speicherort von Modellelement Eigenschaften abhängig zu machen
  Sie können Regeln definieren, mit denen die Darstellung der Form von anderen Teilen des Modells abhängig ist. Beispielsweise können Sie eine Änderungs Regel für ein Modellelement definieren, die die Farbe der Form aktualisiert, die von den Eigenschaften des Modell Elements abhängig ist. Weitere Informationen zu Änderungs Regeln finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
@@ -112,7 +112,7 @@ Diese Methode kann sowohl für Domänen Eigenschaften als auch für nicht-Speich
 
 Für einige Funktionen einer Form, z. b. ob Sie einen Schatten oder den Pfeil Stil eines Verbindungs Diensts aufweist, gibt es keine integrierte Methode, die Funktion als Domänen Eigenschaft verfügbar zu machen.  Änderungen an solchen Features unterliegen nicht der Kontrolle des Transaktions Systems. Daher ist es nicht angebracht, Sie mithilfe von Regeln zu aktualisieren, da Regeln nicht aufgerufen werden, wenn der Benutzer den Befehl "Rückgängig" ausführt.
 
-Stattdessen können Sie diese Features mithilfe <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> aktualisieren. Im folgenden Beispiel wird der Pfeil Stil eines Connector durch einen Wert einer Domänen Eigenschaft in der Beziehung gesteuert, die der Connector anzeigt:
+Stattdessen können Sie diese Features mithilfe <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>aktualisieren. Im folgenden Beispiel wird der Pfeil Stil eines Connector durch einen Wert einer Domänen Eigenschaft in der Beziehung gesteuert, die der Connector anzeigt:
 
 ```csharp
 public partial class ArrowConnector // My connector class.

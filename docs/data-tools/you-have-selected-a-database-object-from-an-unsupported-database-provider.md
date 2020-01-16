@@ -3,17 +3,17 @@ title: Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanb
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1dd14c428b90b87e665aa41681b5a9e68eb00e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b7e24604f965a7f518ee7802e2eeb6a84e74ddb
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648018"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113275"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanbieter ausgewählt.
 
@@ -22,7 +22,7 @@ Der **O/R-Designer** unterstützt nur die .NET Framework Datenanbieter für SQL 
 > [!NOTE]
 > Es werden nur Datenverbindungen unterstützt, die den .NET Framework-Datenanbieter für SQL Server verwenden.
 
-## <a name="options"></a>Optionen
+## <a name="options"></a>Options
 
 - Klicken Sie auf **OK**, um mit dem Entwerfen der Entitätsklassen fortzufahren, die der Verbindung mit dem nicht unterstützten Datenbankanbieter zugeordnet sind. Es kann unerwartetes Verhalten auftreten, wenn nicht unterstützte Datenbankanbieter verwendet werden.
 

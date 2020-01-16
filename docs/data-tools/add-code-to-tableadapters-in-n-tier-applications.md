@@ -9,17 +9,17 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 246ba595cf1da7e4713e0ddc03ea015eeb61eb64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648934"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113322"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen
 Sie können die Funktionalität eines TableAdapters erweitern, indem Sie eine partielle Klassendatei für den TableAdapter erstellen und diesem Code hinzufügen (anstatt der Datei " *DatasetName. DataSet. Designer* " Code hinzuzufügen). Partielle Klassen ermöglichen das Aufteilen von Code für eine bestimmte Klasse in mehrere physische Dateien. Weitere Informationen finden Sie unter [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) oder [Partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -48,7 +48,7 @@ Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis s
 
 4. Fügen Sie Code in der Deklaration der partiellen Klasse hinzu
 
-5. Im folgenden Beispiel wird gezeigt, wo der `CustomersTableAdapter` in der `NorthwindDataSet` Code hinzugefügt wird:
+5. Im folgenden Beispiel wird gezeigt, wo der `CustomersTableAdapter` in der `NorthwindDataSet`Code hinzugefügt wird:
 
     ```vb
     Partial Public Class CustomersTableAdapter
