@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913315"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405000"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -118,9 +118,9 @@ Sie können Delegate mit den Methoden `Run`, `Map` und `Use` in `IApplicationBui
 
 Die `Configure`-Methode der vorgefertigten Vorlage wurde speziell für einige bestimmte Aktionen entwickelt. Zunächst konfiguriert sie eine Seite zur Behandlung von Ausnahmen, die während der Entwicklung verwendet werden kann. Danach sendet sie eine Antwort an die anfragende Webseite, die einfach „Hello World“ enthält.
 
-Dieses einfache „Hello World“-Projekt kann nun ausgeführt werden, ohne das zusätzlicher Code hinzugefügt werden muss. Um die App auszuführen und in Ihrem Browser anzuzeigen, klicken Sie auf die Schaltfläche „Wiedergabe“ (Dreieck) in der Symbolleiste:
+Dieses einfache „Hello World“-Projekt kann nun ausgeführt werden, ohne das zusätzlicher Code hinzugefügt werden muss. Sie können zum Ausführen der App entweder über die Dropdownliste rechts neben der Wiedergabeschaltfläche auswählen, in welchem Browser Sie die App ausführen möchten, oder einfach die (dreieckige) Wiedergabeschaltfläche drücken, um Ihren Standardbrowser zu verwenden:
 
-![Ausführen der App](media/asp-net-core-2019-run-debug.png)
+![Browserausführung](media/asp-net-web-picker.png)
 
 Visual Studio für Mac verwendet einen zufälligen Port, um Ihr Webprojekt zu starten. Um herauszufinden um welche Port es sich dabei handelt, öffnen Sie die Anwendungsausgabe, die sich unter **Ansicht > Pads** befindet. Dort sollten Sie eine Ausgabe wie die folgende sehen:
 

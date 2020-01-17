@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950720"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588745"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Schritt 2: Ausführen Ihrer Picture Viewer-App
 
@@ -32,12 +32,12 @@ Im Folgenden wird erläutert, wie Sie Ihre App ausführen können.
     - Klicken Sie in der Symbolleiste auf **Debugging starten**, die wie folgt aussieht:
 
       ![Symbolleistenschaltfläche „Debugging starten“](../ide/media/express_icondebug.png)<br>
-      *Symbolleistenschaltfläche* ***Debugging starten***
+      ***Symbolleistenschaltfläche*** *„Debugging starten“*
 
 1. Visual Studio führt Ihre App aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Screenshot wird die App gezeigt, die Sie soeben erstellt haben. Die App wird ausgeführt, und Sie werden sie schon bald erweitern.
 
      ![Ausgeführte Windows Forms-App](../ide/media/express_firstrun.png)<br>
-***Windows Forms-App*** *wird ausgeführt*
+***Windows Forms-App****wird ausgeführt*
 
 1. Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und sehen Sie sich die neue Symbolleiste an. Wenn Sie eine Anwendung ausführen, werden weitere Schaltflächen in der Symbolleiste angezeigt. Mit diesen Schaltflächen können Sie Aktionen durchführen, wie z. B. die App beenden und starten. Außerdem helfen sie Ihnen bei der Ermittlung von Fehlern. In diesem Beispiel verwenden Sie die Symbolleiste lediglich zum Starten und Beenden der App.
 

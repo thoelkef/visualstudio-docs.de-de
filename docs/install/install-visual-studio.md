@@ -2,7 +2,7 @@
 title: Installieren von Visual Studio
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018856"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590123"
 ---
 # <a name="install-visual-studio"></a>Installieren von Visual Studio
 
@@ -131,7 +131,7 @@ Führen Sie die Bootstrapperdatei aus, um den Visual Studio-Installer zu install
 
 2. Sie werden gebeten, die Microsoft-[Lizenzbedingungen](https://visualstudio.microsoft.com/license-terms/) und die Microsoft-[Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) zu akzeptieren. Klicken Sie auf **Weiter**.
 
-   ![Lizenzbedingungen und Datenschutzbestimmungen](media/privacy-and-license-terms.png "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")
+   ![Lizenzbedingungen und Datenschutzbestimmungen](media/privacy-and-license-terms.png "Microsoft-Lizenzbedingungen und -Datenschutzbestimmungen")
 
 ## <a name="step-4---choose-workloads"></a>Schritt 4: Auswählen von Workloads
 
@@ -139,7 +139,7 @@ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Insta
 
  ::: moniker range="vs-2017"
 
-1. Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.
+1. Suchen Sie die gewünschten Workloads im **Visual Studio-Installer**.
 
    ![Visual Studio 2017: Workload installieren](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Insta
 
 ::: moniker range="vs-2019"
 
-1. Nachdem die neuen Arbeitsauslastungen und Komponenten installiert wurden, wählen Sie **Starten**.
+1. Suchen Sie die gewünschten Workloads im **Visual Studio-Installer**.
 
    ![Visual Studio 2019: Workload installieren](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -174,13 +174,13 @@ Wenn Sie nicht das Feature für Workloads verwenden möchten, um Ihre Visual Stu
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs-installer-installing-components.png "Installieren einzelner Visual Studio-Komponenten")
+  ![Visual Studio 2017 – Installieren einzelner Komponenten](media/vs-installer-installing-components.png "Installieren einzelner Komponenten von Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019: Installieren einzelner Komponenten](media/vs-2019/vs-installer-individual-components.png "Installieren einzelner Visual Studio-Komponenten")
+  ![Visual Studio 2019 – Installieren einzelner Komponenten](media/vs-2019/vs-installer-individual-components.png "Installieren einzelner Komponenten von Visual Studio")
 
 ::: moniker-end
 
@@ -190,7 +190,7 @@ Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung di
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - Installieren von Language Packs](media/vs-installer-installing-language-packs.png "Installieren von Visual Studio-Language Packs")
+  ![Visual Studio 2017 – Installieren von Sprachpaketen](media/vs-installer-installing-language-packs.png "Installieren von Visual Studio-Sprachpaketen")
 
 ::: moniker-end
 
@@ -210,7 +210,7 @@ Eine andere Möglichkeit zum Ändern der Standardsprache ist die Ausführung des
 
 **Neues in 15.7:** Der Installationsspeicherbedarf für Visual Studio auf dem Systemlaufwerk kann reduziert werden. Sie können den Downloadcache, freigegebene Komponenten, SDKs und Tools auf andere Datenträger verschieben, und Visual Studio dort belassen, wo es am schnellsten ausgeführt werden kann.
 
-  ![Visual Studio 2017: Ändern des Installationspfads](media/installation-options-by-location.png "Ändern des Installationspfads")
+  ![Visual Studio 2017 – Ändern der Installationspfade](media/installation-options-by-location.png "Ändern des Installationspfads")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Eine andere Möglichkeit zum Ändern der Standardsprache ist die Ausführung des
 
 Sie können den Speicherbedarf für die Installation von Visual Studio auf Ihrem Systemlaufwerk reduzieren. Sie können den Downloadcache, freigegebene Komponenten, SDKs und Tools auf andere Datenträger verschieben, und Visual Studio dort belassen, wo es am schnellsten ausgeführt werden kann.
 
-  ![Visual Studio 2019: Auswählen des Installationspfads](media/vs-2019/vs-installer-installation-locations.png "Auswählen des Installationspfads")
+  ![Visual Studio 2019 – Auswählen der Installationspfade](media/vs-2019/vs-installer-installation-locations.png "Auswählen des Installationspfads")
 
 ::: moniker-end
 

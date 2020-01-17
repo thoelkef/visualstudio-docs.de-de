@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631120"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585430"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 
@@ -36,7 +36,7 @@ Der Textwert des **Assembly**-Elements entspricht entweder dem benutzerfreundlic
 </Assembly>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Reference-Element](../ide/code-snippets-schema-reference.md#reference-element)|Enthält Informationen über die für den Codeausschnitt erforderlichen Assemblyverweise.|
 
@@ -52,7 +52,7 @@ Gibt den Namen des Autors des Codeausschnitts an. Der **Codeausschnitt-Manager**
 </Author>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Enthält allgemeine Informationen über den Codeausschnitt.|
 
@@ -110,7 +110,7 @@ Für dieses Codeelement sind drei Attribute verfügbar:
 
 - **Sprache** - _erforderlich:_ ein Attribut, das die Sprache des Codeausschnitts angibt. Der Wert kann in folgenden Formen vorliegen:
 
-   |Wert|BESCHREIBUNG|
+   |Wert|Beschreibung|
    |-----|-----------|
    |`VB`|Bezeichnet einen Visual Basic-Codeausschnitt.|
    |`CSharp`|Bezeichnet einen C#-Codeausschnitt.|
@@ -123,7 +123,7 @@ Für dieses Codeelement sind drei Attribute verfügbar:
 
 - **Kind**: _optionales_ Attribut, das angibt, welche Art von Code der Codeausschnitt enthält. Der Wert kann in folgenden Formen vorliegen:
 
-   |Wert|BESCHREIBUNG|
+   |Wert|Beschreibung|
    |-----|-----------|
    |`method body`|Gibt an, dass der Codeausschnitt einen Methodenrumpf darstellt und daher innerhalb einer Methodendeklaration eingefügt werden muss.|
    |`method decl`|Gibt an, dass der Codeausschnitt eine Methode ist und daher innerhalb eine Klasse oder eines Moduls eingefügt werden muss.|
@@ -135,7 +135,7 @@ Für dieses Codeelement sind drei Attribute verfügbar:
 
 ### <a name="parent-element"></a>Übergeordnetes Element
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet-element)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|
 
@@ -150,16 +150,16 @@ Ermöglicht die Angabe einer Überschrift und mehrerer IntelliSense-Codeausschni
 </CodeSnippet>
 ```
 
-|Attribut|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Format`|Erforderliches Attribut. Gibt die Schemaversion des Codeausschnitts an. Das Formatattribut muss eine Zeichenfolge mit der Syntax "x.x.x" sein, wobei jedes "x" einen numerischen Wert der Versionsnummer darstellt. Visual Studio ignoriert Codeausschnitte mit `Format`-Attributen, die nicht verstanden werden.|
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Erforderliches Element. Enthält allgemeine Informationen über den Codeausschnitt. Es muss genau ein `Header`-Element in einem Codeausschnitt vorhanden sein.|
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet-element)|Erforderliches Element. Enthält den Code, der von Visual Studio eingefügt wird. Es muss genau ein `Snippet`-Element in einem Codeausschnitt vorhanden sein.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[CodeSnippets-Element](../ide/code-snippets-schema-reference.md#codesnippets-element)|Stammelement des XML-Schemas für den Codeausschnitt.|
 
@@ -173,7 +173,7 @@ Gruppiert [CodeSnippet-Elemente](../ide/code-snippets-schema-reference.md#codesn
 </CodeSnippets>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Optionales Element. Übergeordnetes Element für alle Codeausschnittdaten. Es kann keine oder mehrere `CodeSnippet`-Elemente in einem `CodeSnippets`-Element geben.|
 
@@ -188,12 +188,12 @@ Gibt die Literale und Objekte an, die die bearbeitbaren Teile eines Codeausschni
 </Declarations>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Literal-Element](../ide/code-snippets-schema-reference.md#literal-element)|Optionales Element. Definiert die bearbeitbaren Literale des Codeausschnitts an. Es kann keine oder mehrere `Literal`-Elemente in einem `Declarations`-Element geben.|
 |[Object-Element](../ide/code-snippets-schema-reference.md#object-element)|Optionales Element. Definiert die Objekte des Codeausschnitts an, die bearbeitet werden können. Es kann keine oder mehrere `Object`-Elemente in einem `Declarations`-Element geben.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet-element)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|
 
@@ -207,7 +207,7 @@ Gibt den Standardwert des Literals oder Objekts für einen IntelliSense-Codeauss
 </Default>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Literal-Element](../ide/code-snippets-schema-reference.md#literal-element)|Definiert die Literalfelder des Codeausschnitts, die Sie bearbeiten können.|
 |[Object-Element](../ide/code-snippets-schema-reference.md#object-element)|Definiert die Objektfelder des Codeausschnitts, die Sie bearbeiten können.|
@@ -224,7 +224,7 @@ Bezeichnet beschreibende Informationen über den Inhalt eines IntelliSense-Codea
 </Description>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Enthält allgemeine Informationen über den Codeausschnitt.|
 
@@ -243,7 +243,7 @@ Gibt eine Funktion an, die ausgeführt wird, wenn das Literal oder Objekt in Vis
 </Function>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Literal-Element](../ide/code-snippets-schema-reference.md#literal-element)|Definiert die Literalfelder des Codeausschnitts, die Sie bearbeiten können.|
 |[Object-Element](../ide/code-snippets-schema-reference.md#object-element)|Definiert die Objektfelder des Codeausschnitts, die Sie bearbeiten können.|
@@ -266,7 +266,7 @@ Gibt allgemeine Informationen über den IntelliSense-Codeausschnitt an.
 </Header>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Author-Element](../ide/code-snippets-schema-reference.md#author-element)|Optionales Element. Der Name der Person oder der Firma, die den Codeausschnitt erstellt hat. Ein `Author`-Element kann kein oder ein `Header`-Element enthalten.|
 |[Description-Element](../ide/code-snippets-schema-reference.md#description-element)|Optionales Element. Eine Beschreibung des Codeausschnitts. Ein `Description`-Element kann kein oder ein `Header`-Element enthalten.|
@@ -276,7 +276,7 @@ Gibt allgemeine Informationen über den IntelliSense-Codeausschnitt an.
 |[SnippetTypes-Element](../ide/code-snippets-schema-reference.md#snippettypes-element)|Optionales Element. Gruppiert `SnippetType`-Elemente. Ein `SnippetTypes`-Element kann kein oder ein `Header`-Element enthalten. Wenn keine `SnippetTypes`-Elemente verfügbar sind, ist der Codeausschnitt immer gültig.|
 |[Title-Element](../ide/code-snippets-schema-reference.md#title-element)|Erforderliches Element. Der benutzerfreundliche Name des Codeausschnitts. Es muss genau ein `Title`-Element in einem `Header`-Element vorhanden sein.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Übergeordnetes Element für alle Codeausschnittdaten.|
 
@@ -293,7 +293,7 @@ Gibt eine URL zu weiteren Informationen über einen Codeausschnitt an.
 </HelpUrl>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Enthält allgemeine Informationen über den Codeausschnitt.|
 
@@ -309,7 +309,7 @@ Gibt einen eindeutigen Bezeichner für ein `Literal`-Element oder ein `Object`-E
 </ID>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Literal-Element](../ide/code-snippets-schema-reference.md#literal-element)|Definiert die Literalfelder des Codeausschnitts, die Sie bearbeiten können.|
 |[Object-Element](../ide/code-snippets-schema-reference.md#object-element)|Definiert die Objektfelder des Codeausschnitts, die Sie bearbeiten können.|
@@ -326,11 +326,11 @@ Gibt die importierten Namespaces an, die von einem IntelliSense-Codeausschnitt v
 </Import>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Namespace-Element](../ide/code-snippets-schema-reference.md#namespace-element)|Erforderliches Element. Gibt den vom Codeausschnitt verwendeten Namespace an. Es muss genau ein `Namespace`-Element in einem `Import`-Element vorhanden sein.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Imports-Element](../ide/code-snippets-schema-reference.md#imports-element)|Gruppierungselement für **Import**-Elemente.|
 
@@ -344,11 +344,11 @@ Gruppiert einzelne `Import`-Elemente.
 </Imports>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Import-Element](../ide/code-snippets-schema-reference.md#import-element)|Optionales Element. Enthält die importierten Namespaces für den Codeausschnitt. Ein `Imports`-Element kann keine oder mehrere **Import**-Elemente enthalten.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet-element)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|
 
@@ -362,7 +362,7 @@ Gibt ein benutzerdefiniertes Schlüsselwort für den Codeausschnitt an. Die Schl
 </Keyword>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Keywords-Element](../ide/code-snippets-schema-reference.md#keywords-element)|Gruppiert einzelne `Keyword`-Elemente.|
 
@@ -379,11 +379,11 @@ Gruppiert einzelne `Keyword`-Elemente. Die Schlüsselwörter des Codeausschnitts
 </Keywords>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Keyword-Element](../ide/code-snippets-schema-reference.md#keyword-element)|Optionales Element. Enthält einzelne Schlüsselwörter für den Codeausschnitt. Es kann keine oder mehrere `Keyword`-Elemente in einem `Keywords`-Element geben.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Enthält allgemeine Informationen über den Codeausschnitt.|
 
@@ -402,18 +402,18 @@ Literale und Objekte können kein **ID**-Element mit dem Wert „selected“ ode
 </Literal>
 ```
 
-|Attribut|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Editable`|Optionales `Boolean`-Attribut. Gibt an, ob das Literal bearbeitet werden kann, nachdem der Codeausschnitt eingefügt wurde. Der Standardwert dieses Attributs ist `true`.|
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Default-Element](../ide/code-snippets-schema-reference.md#default-element)|Erforderliches Element. Gibt den Standardwert des Literals an, wenn Sie den Codeausschnitt einfügen. Es muss genau ein `Default`-Element in einem `Literal`-Element vorhanden sein.|
 |[Function-Element](../ide/code-snippets-schema-reference.md#function-element)|Optionales Element. Gibt eine Funktion an, die ausgeführt werden soll, wenn das Literal in Visual Studio den Fokus erhält. Ein `Function`-Element kann kein oder ein `Literal`-Element enthalten.|
 |[ID-Element](../ide/code-snippets-schema-reference.md#id-element)|Erforderliches Element. Gibt einen eindeutigen Bezeichner für das Literal an. Es muss genau ein `ID`-Element in einem `Literal`-Element vorhanden sein.|
 |[ToolTip-Element](../ide/code-snippets-schema-reference.md#tooltip-element)|Optionales Element. Beschreibt den erwarteten Wert sowie die Verwendungsweise des Literals. Es kann kein oder ein **Tooltip**-Element in einem `Literal` enthalten sein.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations-element)|Enthält die Literale und Objekte eines Codeausschnitts, die Sie bearbeiten können.|
 
@@ -427,7 +427,7 @@ Gibt den Namespace an, der für die Kompilierung und Ausführung des Codeausschn
 </Namespace>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Import-Element](../ide/code-snippets-schema-reference.md#import-element)|Importiert den angegebenen Namespace.|
 
@@ -447,11 +447,11 @@ Definiert die Objekte des Codeausschnitts an, die bearbeitet werden können. Das
 </Object>
 ```
 
-|Attribut|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Editable`|Optionales `Boolean`-Attribut. Gibt an, ob das Literal bearbeitet werden kann, nachdem der Codeausschnitt eingefügt wurde. Der Standardwert dieses Attributs ist `true`.|
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Default-Element](../ide/code-snippets-schema-reference.md#default-element)|Erforderliches Element. Gibt den Standardwert des Literals an, wenn Sie den Codeausschnitt einfügen. Es muss genau ein `Default`-Element in einem `Literal`-Element vorhanden sein.|
 |[Function-Element](../ide/code-snippets-schema-reference.md#function-element)|Optionales Element. Gibt eine Funktion an, die ausgeführt werden soll, wenn das Literal in Visual Studio den Fokus erhält. Ein `Function`-Element kann kein oder ein `Literal`-Element enthalten.|
@@ -459,7 +459,7 @@ Definiert die Objekte des Codeausschnitts an, die bearbeitet werden können. Das
 |[ToolTip-Element](../ide/code-snippets-schema-reference.md#tooltip-element)|Optionales Element. Beschreibt den erwarteten Wert sowie die Verwendungsweise des Literals. Es kann kein oder ein **Tooltip**-Element in einem `Literal` enthalten sein.|
 |[Type-Element](../ide/code-snippets-schema-reference.md#type-element)|Erforderliches Element. Gibt den Typ des Objekts an. Es muss genau ein `Type`-Element in einem `Object`-Element vorhanden sein.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations-element)|Enthält die Literale und Objekte eines Codeausschnitts, die Sie bearbeiten können.|
 
@@ -474,12 +474,12 @@ Bezeichnet Informationen über die für den Codeausschnitt erforderlichen Assemb
 </Reference>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Assembly-Element](../ide/code-snippets-schema-reference.md#assembly-element)|Erforderliches Element. Enthält den Namen der Assembly, auf die vom Codeausschnitt verwiesen wird. Es muss genau ein `Assembly`-Element in einem `Reference`-Element vorhanden sein.|
 |[URL-Element](../ide/code-snippets-schema-reference.md#url-element)|Optionales Element. Enthält eine URL, die weitere Informationen über die Assembly bereitstellt, auf die verwiesen wird. Ein `Url`-Element kann kein oder ein `Reference`-Element enthalten.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[References-Element](../ide/code-snippets-schema-reference.md#references-element)|Gruppierungselement für `Reference`-Elemente.|
 
@@ -493,20 +493,20 @@ Gruppiert einzelne `Reference`-Elemente.
 </References>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Reference-Element](../ide/code-snippets-schema-reference.md#reference-element)|Optionales Element. Enthält Informationen zu Assemblyverweisen für den Codeausschnitt. Es kann keine oder mehrere `Reference`-Elemente in einem `References`-Element geben.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet-element)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|
 
 ## <a name="shortcut-element"></a>Shortcut-Element
 
-Gibt den Verknüpfungstext an, der zum Einfügen des Codeausschnitts verwendet wird. Der Textwert eines `Shortcut`-Elements kann nur alphanumerische Zeichen, Bindestriche ( - ) und Unterstriche ( _ ) enthalten.
+Gibt den Verknüpfungstext an, der zum Einfügen des Codeausschnitts verwendet wird. Der Textwert eines `Shortcut`-Elements kann nur alphanumerische Zeichen und Unterstriche ( _ ) enthalten.
 
 > [!CAUTION]
-> Die Zeichen „_“ und „-“ werden in C++-Ausschnittsverknüpfungen nicht unterstützt.
+> Der Unterstrich (_) ist kein unterstütztes Zeichen in C++-Ausschnittsverknüpfungen.
 
 ```xml
 <Shortcut>
@@ -514,7 +514,7 @@ Gibt den Verknüpfungstext an, der zum Einfügen des Codeausschnitts verwendet w
 </Shortcut>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Enthält allgemeine Informationen über den Codeausschnitt.|
 
@@ -533,14 +533,14 @@ Gibt die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt a
 </Snippet>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[Code-Element](../ide/code-snippets-schema-reference.md#code-element)|Erforderliches Element. Gibt den Code an, den Sie in eine Dokumentationsdatei einfügen möchten. Es muss genau ein `Code`-Element in einem `Snippet`-Element vorhanden sein.|
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations-element)|Optionales Element. Gibt die Literale und Objekte an, die die bearbeitbaren Teile eines Codeausschnitts darstellen. Ein `Declarations`-Element kann kein oder ein `Snippet`-Element enthalten.|
 |[Imports-Element](../ide/code-snippets-schema-reference.md#imports-element)|Optionales Element. Gruppiert einzelne `Import`-Elemente. Ein `Imports`-Element kann kein oder ein `Snippet`-Element enthalten.|
 |[References-Element](../ide/code-snippets-schema-reference.md#references-element)|Optionales Element. Gruppiert einzelne `Reference`-Elemente. Ein `References`-Element kann kein oder ein `Snippet`-Element enthalten.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Ermöglicht die Angabe einer Überschrift und mehrerer IntelliSense-Codeausschnitte, die Sie in Visual Studio Codedateien einfügen können.|
 
@@ -554,7 +554,7 @@ Gibt an, wie Visual Studio den Codeausschnitt einfügt.
 </SnippetType>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[SnippetTypes-Element](../ide/code-snippets-schema-reference.md#snippettypes-element)|Gruppiert `SnippetType`-Elemente.|
 
@@ -577,11 +577,11 @@ Gruppiert einzelne `SnippetType`-Elemente. Wenn das `SnippetTypes`-Element nicht
 </SnippetTypes>
 ```
 
-|Untergeordnetes Element|BESCHREIBUNG|
+|Untergeordnetes Element|Beschreibung|
 |-------------------|-----------------|
 |[SnippetType-Element](../ide/code-snippets-schema-reference.md#snippettype-element)|Optionales Element. Gibt an, wie Visual Studio den Codeausschnitt im Code einfügt. Es kann keine oder mehrere `SnippetType`-Elemente in einem `SnippetTypes`-Element geben.|
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Bezeichnet allgemeine Informationen über den Codeausschnitt.|
 
@@ -595,7 +595,7 @@ Gibt den Titel für den Codeausschnitt an. Der im `Title`-Element des Codeaussch
 </Title>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Header-Element](../ide/code-snippets-schema-reference.md#header-element)|Bezeichnet allgemeine Informationen über den Codeausschnitt.|
 
@@ -611,7 +611,7 @@ Beschreibt den erwarteten Wert und die erwartete Verwendung eines Literals oder 
 </ToolTip>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Literal-Element](../ide/code-snippets-schema-reference.md#literal-element)|Definiert die Literalfelder des Codeausschnitts, die Sie bearbeiten können.|
 |[Object-Element](../ide/code-snippets-schema-reference.md#object-element)|Definiert die Objektfelder des Codeausschnitts, die Sie bearbeiten können.|
@@ -628,11 +628,11 @@ Gibt den Typ des Objekts an. Das `Object`-Element wird zur Kennzeichnung eines v
 </Type>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Object-Element](../ide/code-snippets-schema-reference.md#object-element)|Definiert die Objektfelder des Codeausschnitts, die Sie bearbeiten können.|
 
-Ein Textwert ist erforderlich. Dieser Text gibt den Typ des Objekts an. Beispiel:
+Ein Textwert ist erforderlich. Dieser Text gibt den Typ des Objekts an. Zum Beispiel:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>
@@ -651,7 +651,7 @@ Gibt eine URL an, die weitere Informationen über die referenzierte Assembly bie
 </Url>
 ```
 
-|Übergeordnetes Element|BESCHREIBUNG|
+|Übergeordnetes Element|Beschreibung|
 | - |-----------------|
 |[Reference-Element](../ide/code-snippets-schema-reference.md#reference-element)|Gibt die vom Codeausschnitt benötigten Assemblyverweise an.|
 

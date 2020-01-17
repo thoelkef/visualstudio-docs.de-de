@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e039e862040036f3d96729c3bdf48caafe092136
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "71126052"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75400862"
 ---
 # <a name="container-tools-launch-settings"></a>Starteinstellungen für Containertools
 
@@ -49,21 +49,37 @@ Im Ordner *Eigenschaften* in einem ASP.NET Core-Projekt finden Sie die Datei „
 Die Einstellung „commandName“ gibt an, dass dieser Abschnitt für Container Tools gilt. In der folgenden Tabelle sind die Eigenschaften aufgeführt, die in diesem Abschnitt festgelegt werden können:
 
 ::: moniker range="vs-2017"
-|Einstellungsname|Beispiel|BESCHREIBUNG|
+
+|Einstellungsname|Version|Beispiel|Beschreibung|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Gibt an, ob der Browser nach dem erfolgreichen Starten des Projekts gestartet werden soll.|
 |launchUrl|Visual Studio 2017|"launchUrl": "\<scheme>://\<serviceHost>:\<servicePort>"|Diese URL wird beim Start des Browsers verwendet.  Für diese Zeichenfolge werden folgende Ersetzungstoken unterstützt:<br>   \<scheme> – Wird entweder durch „http“ oder „https“ ersetzt, je nachdem, ob SSL verwendet wird.<br>   \<serviceHost> – Wird normalerweise durch „localhost“ ersetzt. Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch die IP-Adresse des Containers ersetzt.<br>   \<servicePort> – Wird normalerweise entweder durch sslPort oder httpPort ersetzt, je nachdem, ob SSL verwendet wird.  Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch „443“ oder „80“ ersetzt, je nachdem, ob SSL verwendet wird.|
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-|Einstellungsname|Beispiel|BESCHREIBUNG|
-|------------|-------|-------|---------------|
-|commandLineArgs|"commandLineArgs": "--mysetting myvalue"|Diese Befehlszeilenargumente werden verwendet, wenn Sie das Projekt im Container starten.|
-|EnvironmentVariables|"environmentVariables": {<br>    "ASPNETCORE_URLS": "https://+:443; http://+:80",<br>    "ASPNETCORE_HTTPS_PORT": "44381"<br>}|Diese Umgebungsvariablenwerte werden beim Starten im Container an den Prozess übermittelt.|
-|httpPort|"httpPort": 24051|Dieser Port auf dem Host wird dem Port 80 des Containers zugeordnet, wenn der Container gestartet wird.  Wenn keine Angabe erfolgt, wird der Wert aus dem „iisSettings“-Wert entnommen.|
-|launchBrowser|"launchBrowser": true|Gibt an, ob der Browser nach dem erfolgreichen Starten des Projekts gestartet werden soll.|
-|launchUrl|"launchUrl": "\<scheme>://\<serviceHost>:\<servicePort>"|Diese URL wird beim Start des Browsers verwendet.  Für diese Zeichenfolge werden folgende Ersetzungstoken unterstützt:<br>   \<scheme> – Wird entweder durch „http“ oder „https“ ersetzt, je nachdem, ob SSL verwendet wird.<br>   \<serviceHost> – Wird normalerweise durch „localhost“ ersetzt. Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch die IP-Adresse des Containers ersetzt.<br>   \<servicePort> – Wird normalerweise entweder durch sslPort oder httpPort ersetzt, je nachdem, ob SSL verwendet wird.  Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch „443“ oder „80“ ersetzt, je nachdem, ob SSL verwendet wird.|
-|sslPort|"sslPort": 44381|Dieser Port auf dem Host wird dem Port 443 des Containers zugeordnet, wenn der Container gestartet wird.  Wenn keine Angabe erfolgt, wird der Wert aus dem „iisSettings“-Wert entnommen.|
-|useSSL|"useSSL": true|Gibt an, ob beim Starten des Projekts SSL verwendet werden soll.  Wenn useSSL nicht angegeben ist, wird SSL bei sslPort > 0 verwendet.
+
+| Einstellungsname         | Beispiel                                               | Beschreibung                                                                                                             |
+| -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Diese Befehlszeilenargumente werden verwendet, wenn Sie das Projekt im Container starten.                                     |
+| EnvironmentVariables | "environmentVariables": {                             | Diese Umgebungsvariablenwerte werden beim Starten im Container an den Prozess übermittelt.                       |
+|                      | "ASPNETCORE_URLS": "https://+:443; http://+:80",       |                                                                                                                         |
+|                      | "ASPNETCORE_HTTPS_PORT": "44381"                      |                                                                                                                         |
+|                      | }                                                     |                                                                                                                         |
+| httpPort             | "httpPort": 24051                                     | Dieser Port auf dem Host wird dem Port 80 des Containers zugeordnet, wenn der Container gestartet wird.                                |
+|                      |                                                       | Wenn keine Angabe erfolgt, wird der Wert aus dem „iisSettings“-Wert entnommen.                                                          |
+| launchBrowser        | "launchBrowser": true                                 | Gibt an, ob der Browser nach dem erfolgreichen Starten des Projekts gestartet werden soll.                                       |
+| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | Diese URL wird beim Start des Browsers verwendet. Für diese Zeichenfolge werden folgende Ersetzungstoken unterstützt:                          |
+|                      |                                                       | - <scheme> – Wird entweder durch „http“ oder „https“ ersetzt, je nachdem, ob SSL verwendet wird.                                   |
+|                      |                                                       | - <serviceHost> – Wird normalerweise durch „localhost“ ersetzt.                                                                    |
+|                      |                                                       | Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch die IP-Adresse des Containers ersetzt.           |
+|                      |                                                       | - <servicePort> – Wird normalerweise entweder durch sslPort oder httpPort ersetzt, je nachdem, ob SSL verwendet wird.                   |
+|                      |                                                       | Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch „443“ oder „80“ ersetzt.         |
+|                      |                                                       | Dies ist davon abhängig, ob SSL verwendet wird.                                                                                       |
+| sslPort              | "sslPort": 44381                                      | Dieser Port auf dem Host wird dem Port 443 des Containers zugeordnet, wenn der Container gestartet wird.                               |
+|                      |                                                       | Wenn keine Angabe erfolgt, wird der Wert aus dem „iisSettings“-Wert entnommen.                                                          |
+| useSSL               | "useSSL": true                                        | Gibt an, ob beim Starten des Projekts SSL verwendet werden soll. Wenn useSSL nicht angegeben ist, wird SSL bei sslPort > 0 verwendet. |
+
 ::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte

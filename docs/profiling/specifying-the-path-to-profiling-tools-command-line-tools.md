@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 087407f511c038a369694beca8a9fe4ecc2ff7b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771574"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406299"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Angeben des Pfads zu Befehlszeilentools für Profilerstellungstools
 
@@ -22,9 +22,7 @@ Der Pfad der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/v
 
 ## <a name="32-bit-computers"></a>32-Bit-Computer
 
-::: moniker range="vs-2017"
- Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
-::: moniker-end
+Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
 
  Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Diese DLL befindet sich im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
@@ -32,12 +30,14 @@ Der Pfad der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/v
 
 Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest.
 
-::: moniker range="vs-2017"
 - Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
-     (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+     (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
+     
+     (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
-     (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
-::: moniker-end
+     (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+
+     (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

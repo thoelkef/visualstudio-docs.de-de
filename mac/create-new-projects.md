@@ -5,23 +5,23 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: dbfc0d951524bb9ffbbd4a2366679cfc6ae41925
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693062"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678887"
 ---
-# <a name="creating-a-new-project"></a>Erstellen eines neuen Projekts
+# <a name="create-a-new-project"></a>Erstellen eines neues Projekts
 
 ## <a name="opening-the-project-creation-dialog"></a>Öffnen des Dialogfelds für die Projekterstellung
 
-Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio für Mac zu erstellen. Wenn Sie Visual Studio für Mac erstmalig öffnen, wird die Willkommensseite angezeigt. Hier können Sie die Option **Neu** auswählen. Anschließend gelangen Sie zum Bildschirm für die Projekterstellung.
+Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio für Mac zu erstellen. Wenn Sie Visual Studio für Mac erstmalig öffnen, wird das Startfenster angezeigt. Hier können Sie die Option **Neu** auswählen, wodurch Sie zum Bildschirm für die Projekterstellung gelangen.
 
 > [!TIP]
-> Darüber hinaus können Sie auf der Willkommensseite auch aktuelle Projekte und Projektmappen öffnen und nach ihnen suchen. Sie können auch aktuelle Projekte öffnen, indem Sie in der Menüleiste **Datei > Aktuelle Projektmappen** wählen.
+> Darüber hinaus können Sie im Startfenster auch aktuelle Projekte und Projektmappen öffnen und nach ihnen suchen. Sie können auch aktuelle Projekte öffnen, indem Sie in der Menüleiste **Datei > Aktuelle Projektmappen** wählen.
 
-![Willkommensseite mit der Option zum Erstellen eines neuen Projekts](media/first-run-project.png)
+![Startfenster mit „Neues Projekt erstellen“](media/first-run-project.png)
 
 Wenn Visual Studio für Mac bereits mit einer geladenen Lösung geöffnet ist, können Sie eine neue Projektmappe erstellen, indem Sie in der Menüleiste **Datei > Neue Projektmappe** auswählen. Wenn Sie auf diese Weise eine neue Projektmappe erstellen, wird die bereits geladene geschlossen.
 

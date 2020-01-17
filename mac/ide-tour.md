@@ -3,15 +3,15 @@ title: 'Visual Studio für Mac: Überblick'
 description: Visual Studio für Mac bietet eine integrierte Entwicklungsumgebung zum Erstellen von .NET-Anwendungen unter macOS. Dazu gehören ASP.NET Core-Websites und Xamarin-Projekte für iOS, Android, Mac und Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984703"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405817"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 für Mac: Überblick
 
@@ -123,7 +123,7 @@ Visual Studio für Mac bietet zwei praktische Möglichkeiten zum Umgestalten Ihr
 
 ## <a name="debugging"></a>Debuggen
 
-Visual Studio für Mac besitzt einen nativen Debugger, der das Debuggen für Xamarin.iOS-, Xamarin.Mac- und Xamarin.Android-Anwendungen unterstützt. Visual Studio für Mac verwendet den Soft-Debugger von Mono, der in die Mono-Laufzeit integriert wird und es Visual Studio für Mac ermöglicht, verwalteten Code für alle Plattformen zu debuggen. Weitere Informationen zum Debuggen finden Sie im Artikel [Debuggen mit Xamarin](/visualstudio/mac/debugging).
+Visual Studio für Mac verfügt über Debugger mit Unterstützung für .NET Core-, .NET Framework-, Unity- und Xamarin-Projekte. Visual Studio für Mac verwendet den .NET Core-Debugger und den Soft-Debugger von Mono, wodurch die IDE verwalteten Code plattformübergreifend debuggen kann. Weitere Informationen zum Debuggen finden Sie im Artikel [Debuggen mit Xamarin](/visualstudio/mac/debugging).
 
 Der Debugger enthält umfangreiche Schnellansichten für besondere Typen wie Zeichenfolgen, Farben und URLs sowie Größen, Koordinaten und Bézierkurven.
 

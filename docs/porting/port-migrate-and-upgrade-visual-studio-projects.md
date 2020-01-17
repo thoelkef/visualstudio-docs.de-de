@@ -1,7 +1,7 @@
 ---
 title: Portieren, Migrieren und Aktualisieren von Projekten
 description: Eine Referenz für die Unterstützung von Projekten, die in aktuellen und früheren Versionen von Visual Studio erstellt wurden.
-ms.date: 10/17/2019
+ms.date: 11/26/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9bc0436eac0460071d2393f8ff43178d49e8f7de
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912016"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406352"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Projektmigration und Upgradereferenz für Visual Studio
 
@@ -112,14 +112,15 @@ In den folgenden Artikeln finden Sie weitere Erläuterungen:
 
 ::: moniker range="vs-2019"
 
-Jede neue Version von Visual Studio unterstützt im Allgemeinen die meisten vorherigen Typen von Projekten, Dateien und anderen Objekten. Sie können [wie gewohnt](../ide/solutions-and-projects-in-visual-studio.md) mit ihnen arbeiten, vorausgesetzt, Sie sind nicht von neueren Features abhängig. Visual Studio versucht, Abwärtskompatibilität mit vorherigen Versionen wie Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 und Visual Studio 2012 beizubehalten. Informationen dazu, welche Features für welche Versionen spezifisch sind, finden Sie in den [Anmerkungen zu dieser Version](/visualstudio/releases/2019/release-notes/).
+Jede neue Version von Visual Studio unterstützt die meisten Typen von Projekten, Dateien und anderen Objekten. Sie können mit ihnen [wie gewohnt](../ide/solutions-and-projects-in-visual-studio.md) arbeiten, vorausgesetzt, dass Sie nicht auf neuere Features angewiesen sind.
 
-Die Unterstützung einiger Projekttypen ändert sich im Laufe der Zeit. Möglicherweise unterstützt eine neuere Version von Visual Studio bestimmte Projekte nicht mehr oder setzt Updates für Projekte voraus, sodass sie nicht mehr abwärtskompatibel sind. Informationen zum aktuellen Status von Problemen bei der Migration finden Sie auf der [Website der Visual Studio Developer Community](https://developercommunity.visualstudio.com).
+Wir versuchen, die Abwärtskompatibilität mit früheren Versionen, wie Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 und Visual Studio 2012, zu erhalten. Die Unterstützung einiger Projekttypen ändert sich jedoch im Laufe der Zeit. Möglicherweise unterstützt eine neuere Version von Visual Studio bestimmte Projekte nicht oder sie erfordert von Ihnen möglicherweise, dass Sie ein Projekt aktualisieren, sodass es nicht mehr abwärtskompatibel ist. 
 
-In diesem Artikel werden Einzelheiten zu den Projekttypen aufgeführt, die von Visual Studio 2019 migriert werden können. Außerdem werden Informationen zu Projekttypen aufgeführt, die in Visual Studio 2019 veraltet sind oder bald als veraltet gelten. Projekttypen, die in Visual Studio 2019 nicht mehr unterstützt werden und daher nicht migriert werden können, werden aus diesem Artikel ausgeschlossen. Außerdem werden auch unterstützte Projekttypen ausgeschlossen, die keine Migrationsprobleme aufweisen. Eine Liste finden Sie unter [Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility).
+> [!NOTE]
+> Informationen zum aktuellen Status von Problemen bei der Migration finden Sie auf der [Website der Visual Studio Developer Community](https://developercommunity.visualstudio.com). Weitere Informationen darüber, welche Features für welche Visual Studio-Version spezifisch sind, finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes/).
 
 > [!IMPORTANT]
-> Für bestimmte Projekttypen ist erforderlich, dass Sie bestimmte Workloads über den Visual Studio-Installer installieren. Wenn die Workload nicht installiert ist, meldet Visual Studio einen unbekannten oder nicht kompatiblen Projekttyp. Überprüfen Sie in einem solchen Fall Ihre Installationsoptionen, und versuchen Sie es dann erneut. Ausführliche Informationen zur Projektunterstützung in Visual Studio 2019 finden Sie im Artikel [Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility).
+> Einige Projekttypen erfordern bestimmte Workloads. Wenn die Workload nicht installiert ist, meldet Visual Studio einen unbekannten oder nicht kompatiblen Projekttyp. Überprüfen Sie in einem solchen Fall Ihre [Installationsoptionen im Visual Studio-Installer](../install/modify-visual-studio.md), und versuchen Sie es dann erneut. Weitere Informationen zur Projektunterstützung in Visual Studio 2019 finden Sie auf der Seite [Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility).
 
 ## <a name="project-types"></a>Projekttypen
 
@@ -167,11 +168,11 @@ Wenn Sie ein Projekt oder einen Dateityp, der hier aufgeführt sein sollte, nich
 | Windows Store-Apps | JavaScript Universal Windows-Projekte werden in Visual Studio 2019 nicht unterstützt. Verwenden Sie Visual Studio 2017 zum Verwalten dieser Projekte. <br/><br/>Windows 10 SDKs, die vor dem Windows 10 Fall Creators Update (Build 16299) erstellt wurden, wurden aus dem Visual Studio 2019-Installer entfernt. Sie können die älteren SDKs manuell herunterladen, oder Sie weisen Ihre Projekte neueren SDKs zu.<br/><br/>Universelle Windows-Projekte, die „project.json“ verwenden, werden nicht unterstützt. Es wird empfohlen, diese Projekte zu aktualisieren, sodass sie Paketverweise nutzen. Alternativ können Sie einen Verweis auf Version 16.0.0.0 von Microsoft.NET.Test.Sdk in die Datei „project.json“ einfügen.<br/><br/>Projekte für Windows Store 8.1 und 8.0 werden in Visual Studio 2019 nicht unterstützt. Um diese Apps zu verwalten, verwenden Sie weiterhin Visual Studio 2015. |
 | Xamarin | Die Xamarin Live Player-Erweiterung für Visual Studio und Visual Studio für Mac wurde entfernt. Damit werden die Anzeige für die Kopplung und all ihre Integrationen entfernt. Verwenden Sie stattdessen die integrierte Xamarin.Forms-Vorschau.<br/><br/>Der Visual Studio-Emulator für Android wurde aus dem Visual Studio-Installer entfernt. Verwenden Sie stattdessen die neue Hyper-V-Unterstützung im Google Android-Emulator. |
 
-## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Wie Visual Studio über den Zeitpunkt der Migration eines Projekts entscheidet
+## <a name="migrate-a-project"></a>Migrieren eines Projekts
 
-Jede neue Version von Visual Studio versucht in der Regel die Kompatibilität mit früheren Versionen zu erhalten, sodass dasselbe Projekt geöffnet, geändert und in den verschiedenen Versionen erstellt werden kann. Es gibt jedoch im Laufe der Zeit unvermeidliche Änderungen, sodass einige Projekttypen möglicherweise nicht mehr unterstützt werden. (Unter [Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility) erfahren Sie, welche Projekttypen in Visual Studio 2019 unterstützt werden.) In diesen Fällen lädt eine neuere Version von Visual Studio das Projekt nicht und bietet keinen Migrationspfad an. Sie müssen das Projekt in einer früheren Version von Visual Studio verwalten, die es unterstützt.
+Während wir versuchen, die Kompatibilität mit früheren Versionen aufrechtzuerhalten, kann es Änderungen geben, die mit früheren Versionen nicht kompatibel sind. (Unter [Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility) erfahren Sie, welche Projekttypen in Visual Studio 2019 unterstützt werden.) In diesem Fall wird eine neuere Version von Visual Studio das Projekt nicht laden oder einen Migrationspfad anbieten. Möglicherweise müssen Sie dieses Projekt in einer früheren Version von Visual Studio bearbeiten.
 
-In anderen Fällen kann die neuere Version von Visual Studio ein Projekt öffnen. Das Projekt muss jedoch aktualisiert oder migriert werden, sodass es mit früheren Versionen inkompatibel werden kann. Visual Studio verwendet eine Reihe von Kriterien, um zu bestimmen, ob diese Migration erforderlich ist:
+Manchmal kann die neuere Version von Visual Studio ein Projekt öffnen. Das Projekt muss jedoch aktualisiert oder migriert werden, sodass es mit früheren Versionen inkompatibel werden kann. Visual Studio verwendet eine Reihe von Kriterien, um zu bestimmen, ob diese Migration erforderlich ist:
 
 - Kompatibilität mit den Zielversionen der Plattformen, bis zu Visual Studio 2013 RTM.
 
@@ -179,15 +180,15 @@ In anderen Fällen kann die neuere Version von Visual Studio ein Projekt öffnen
 
 - Ob die neuen Entwurfszeitassets die Kompatibilität mit vorherigen Versionen bis Visual Studio 2013 RTM & Update 5 beeinträchtigen.
 
-Der Entwicklungsbesitzer des betreffenden Projekttyps prüft diese Kriterien und führt den Aufruf für Support, Kompatibilität und Migration durch. Visual Studio versucht, wenn möglich, eine transparente Kompatibilität zwischen verschiedenen Versionen von Visual Studio beizubehalten. Dies bedeutet, dass Projekte in einer Version von Visual Studio erstellt und geändert werden können und in anderen Versionen genauso funktionieren.
+Das Entwicklungsteam, das Besitzer des betreffenden Projekttyps ist, prüft diese Kriterien und führt den Aufruf für Support, Kompatibilität und Migration durch. Auch hier versuchen wir, die Kompatibilität zwischen den Visual Studio-Versionen aufrechtzuerhalten, sodass beim Erstellen und Ändern von Projekten in einer Version von Visual Studio, es nur in anderen Versionen funktioniert.
 
-Wenn eine solche Kompatibilität nicht möglich ist, wie es für einige in diesem Artikel beschriebenen Projekttypen der Fall ist, öffnet Visual Studio den Upgrade-Assistenten, um die erforderlichen unidirektionalen Änderungen vorzunehmen.
+Manchmal ist eine Kompatibilität nicht möglich. Anschließend öffnet Visual Studio den Upgrade-Assistenten, um die erforderlichen unidirektionalen Änderungen vorzunehmen. Diese unidirektionalen Änderungen umfassen möglicherweise die Änderung der `ToolsVersion`-Eigenschaft in der Projektdatei. Diese kennzeichnet exakt, welche Version von MSBuild den Quellcode des Projekts nicht in ausführbare und bereitstellbare Elemente konvertieren kann, die Sie benötigen. 
 
-Solche unidirektionalen Änderungen umfassen möglicherweise die Änderung der `ToolsVersion`-Eigenschaft in der Projektdatei. Diese kennzeichnet exakt, welche Version von MSBuild den Quellcode des Projekts nicht in ausführbare und bereitstellbare Elemente konvertieren kann, die Sie letztlich benötigen. Das heißt, dass ein Projekt aufgrund der *MSBuild*-Version gemäß `ToolsVersion` und nicht aufgrund der *Visual Studio*-Version nicht mit früheren Versionen von Visual Studio kompatibel ist. Solange Ihre Version von Visual Studio über die MSBuild-Toolkette verfügt, die `ToolsVersion` in einem Projekt entspricht, kann Visual Studio diese Toolkette anschließend zum Erstellen des Projekts aufrufen.
+Ein Projekt ist aufgrund der *MSBuild*-Version gemäß `ToolsVersion` und nicht aufgrund der *Visual Studio*-Version nicht mit früheren Versionen von Visual Studio kompatibel. Wenn Ihre Version von Visual Studio über die MSBuild-Toolkette verfügt, die `ToolsVersion` in einem Projekt entspricht, kann Visual Studio diese Toolkette anschließend zum Erstellen des Projekts aufrufen.
 
-Um maximale Kompatibilität mit den in früheren Versionen erstellten Projekten zu gewährleisten, enthält Visual Studio 2019 die erforderlichen MSBuild-Toolketten zur Unterstützung der `ToolsVersion` 15, 14, 12 und 4. Projekte, die diese `ToolsVersion`-Werte verwenden, sollten zu einem erfolgreichen Build führen. (Wieder abhängig von der Tatsache, ob Visual Studio 2019 den Projekttyp überhaupt unterstützt, wie in [ Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility) beschrieben.)
+Um Kompatibilität mit den in früheren Versionen erstellten Projekten zu gewährleisten, enthält Visual Studio 2019 die erforderlichen MSBuild-Toolketten zur Unterstützung der `ToolsVersion` 15, 14, 12 und 4. Projekte, die diese `ToolsVersion`-Werte verwenden, sollten zu einem erfolgreichen Build führen. (Wieder abhängig von der Tatsache, ob Visual Studio 2019 den Projekttyp unterstützt, wie in [ Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility) beschrieben.)
 
-In diesem Kontext stellt sich natürlich die Frage, ob versucht werden soll, ein Projekt manuell auf einen neueren `ToolsVersion`-Wert zu aktualisieren oder zu migrieren. Eine solche Änderung ist nicht erforderlich und erzeugt wahrscheinlich viele Fehler und Warnungen, die Sie beheben müssten, damit das Projekt erneut erstellt werden kann. Wenn Visual Studio darüber hinaus die Unterstützung für eine bestimmte `ToolsVersion` in Zukunft beendet, löst das Öffnen des Projekts den Migrationsvorgang des Projekts aus, da der `ToolsVersion`-Wert geändert werden muss. In einem solchen Fall weiß das Subsystem für diesen bestimmten Projekttyp genau, was geändert werden muss, und kann diese Änderungen automatisch durchführen, wie weiter oben in diesem Artikel beschrieben wurde.
+Sie könnten versucht sein, ein Projekt manuell auf einen neueren `ToolsVersion`-Wert zu aktualisieren oder zu migrieren. Eine solche Änderung ist nicht erforderlich und erzeugt wahrscheinlich viele Fehler und Warnungen, die Sie beheben müssten, damit das Projekt erneut erstellt werden kann. Auch wenn Visual Studio in Zukunft keine bestimmte `ToolsVersion` unterstützt, löst das Projekt beim Öffnen den Migrationsvorgang aus, da sein `ToolsVersion`-Wert geändert werden muss.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

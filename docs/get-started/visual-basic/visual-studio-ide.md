@@ -4,19 +4,19 @@ ms.date: 11/15/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554311f7b7af5c104b48f5a4901677595d60ab41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647829"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596046"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -277,7 +277,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie auf der Visual Studio-Menüleiste **Datei** > **Neues Projekt** aus.
+1. Wählen Sie auf der Visual Studio-Menüleiste **Datei** > **Neues Projekt** aus.
 
    ![„Datei“ > „Neu“ > „Projekt“ in der Menüleiste](media/file-new-project-menu.png)
 
@@ -341,7 +341,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
 ::: moniker range=">=vs-2019"
 
-1. Wählen Sie auf der Visual Studio-Menüleiste **Datei** > **Neues Projekt** aus.
+1. Wählen Sie auf der Visual Studio-Menüleiste **Datei** > **Neues Projekt** aus.
 
    ![„Datei“ > „Neu“ > „Projekt“ in der Menüleiste](media/vs-2019/file-new-project.png)
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start Page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a415c8a61e360ed1bcc323214d4144b2875cc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652553"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567215"
 ---
 # <a name="customize-startup"></a>Anpassen des Programmstarts
 
@@ -32,7 +32,7 @@ Sie können eine benutzerdefinierte Startseite anzeigen. Dies ist eine Windows P
 
 ## <a name="to-change-the-startup-item"></a>So ändern Sie das Startelement
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 

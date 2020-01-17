@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654214"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594408"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Verwalten von Erweiterungen für Visual Studio
 
@@ -57,7 +57,7 @@ So installieren Sie Erweiterungen innerhalb von Visual Studio:
 
 1. Suchen Sie in **Tools** > **Erweiterungen und Updates** nach der Erweiterung, die Sie installieren möchten. Wenn Sie den Namen der Erweiterung oder einen Teil des Namens kennen, können Sie im Fenster **Suche** nach ihr suchen.
 
-2. Wählen Sie **Herunterladen** aus.
+2. Wählen Sie **Download** aus.
 
    Die Erweiterung wird der Warteschlange für die Installation hinzugefügt. Die Erweiterung wird installiert, sobald alle Instanzen von Visual Studio geschlossen wurden.
 
@@ -188,7 +188,7 @@ Im Dialogfeld **Tools** > **Erweiterungen und Updates** können Sie diese beispi
 
 ::: moniker range=">=vs-2019"
 
-Im Dialogfeld **Tools** > **Erweiterungen und Updates** können Sie diese beispielbezogenen Aufgaben ausführen:
+Im Dialogfeld **Erweiterungen** > **Erweiterungen verwalten** können Sie diese beispielbezogenen Aufgaben ausführen:
 
 ::: moniker-end
 

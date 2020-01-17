@@ -9,17 +9,17 @@ helpviewer_keywords:
 - MSBuild, extending Visual Studio builds
 - MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 995bf368d367d51a3d38e02dbab2d6e55ff4ab13
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913181"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75575925"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Vorgehensweise: Erweitern des Visual Studio-Buildprozesses
 Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Buildprozess wird durch eine Reihe von *TARGETS*-Dateien von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] definiert, die in die Projektdatei importiert werden. Eine dieser importierten Dateien (*Microsoft.Common.targets*) kann erweitert werden, um Ihnen das Ausführen benutzerdefinierter Aufgaben in unterschiedlichen Phasen während des Buildprozesses zu ermöglichen. In diesem Artikel werden die zwei Methoden erläutert, mit denen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Buildprozess erweitert werden kann:
@@ -38,7 +38,7 @@ Die allgemeinen Ziele enthalten vordefinierte, leere Ziele, die vor und nach ein
 
 1. Identifizieren Sie ein vordefiniertes Ziel in den allgemeinen Zielen, das Sie überschreiben möchten. In der Tabelle unten finden Sie die vollständige Liste der Ziele, die Sie bedenkenlos überschreiben können.
 
-2. Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Beispiel:
+2. Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Zum Beispiel:
 
     ```xml
     <Project>
@@ -56,7 +56,7 @@ Die allgemeinen Ziele enthalten vordefinierte, leere Ziele, die vor und nach ein
 
 In der folgenden Tabelle werden alle Ziele in den allgemeinen Zielen aufgeführt, die Sie bedenkenlos überschreiben können.
 
-|Zielname|BESCHREIBUNG|
+|Zielname|Beschreibung|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden vor oder nach Abschluss der Kompilierung ausgeführt. Die meisten Anpassungen werden in einem dieser beiden Ziele ausgeführt.|
 |`BeforeBuild`, `AfterBuild`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem alles Weitere erstellt wurde. **Hinweis**:  Die Ziele `BeforeBuild` und `AfterBuild` wurden bereits in Kommentaren am Ende der meisten Projektdateien definiert. Dadurch können Sie ohne großen Aufwand Pre- und Postbuildereignisse zu Ihrer Projektdatei hinzufügen.|
@@ -87,7 +87,7 @@ Dieser XML-Codeausschnitt gibt an, dass vor der Ausführung des `Build`-Ziels al
 </PropertyGroup>
 ```
 
-Sie können diesen Eigenschaftswert überschreiben, indem Sie eine andere Eigenschaft mit dem Namen `BuildDependsOn` am Ende der Projektdatei deklarieren. Durch Einschließen der vorherigen `BuildDependsOn`-Eigenschaft in die neue Eigenschaft können Sie neue Ziele am Anfang und Ende der Zielliste hinzufügen. Beispiel:
+Sie können diesen Eigenschaftswert überschreiben, indem Sie eine andere Eigenschaft mit dem Namen `BuildDependsOn` am Ende der Projektdatei deklarieren. Durch Einschließen der vorherigen `BuildDependsOn`-Eigenschaft in die neue Eigenschaft können Sie neue Ziele am Anfang und Ende der Zielliste hinzufügen. Zum Beispiel:
 
 ```xml
 <PropertyGroup>
@@ -120,7 +120,7 @@ Projekte, in die Ihre Projektdateien importiert werden, können diese Eigenschaf
 
 ### <a name="commonly-overridden-dependson-properties"></a>Häufig überschriebene DependsOn-Eigenschaften
 
-|Name der Eigenschaft|BESCHREIBUNG|
+|Name der Eigenschaft|Beschreibung|
 |-------------------|-----------------|
 |`BuildDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie benutzerdefinierte Ziele vor oder nach dem gesamten Buildprozess einfügen möchten|
 |`CleanDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie die Ausgabe Ihres benutzerdefinierten Buildprozesses bereinigen möchten|

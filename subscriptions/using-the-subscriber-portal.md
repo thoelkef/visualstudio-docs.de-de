@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über sämtliche Vorteile, die Sie im Portal für Visual Studio-Abonnements nutzen können.
-ms.openlocfilehash: 7f1d3654aa49b53a1bb8543c28f6edb517c265bf
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
+ms.sourcegitcommit: 36e874928f2933762d2fc6888a46236e376455d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74705827"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546225"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Verwenden des Abonnentenportals – „my.visualstudio.com“
 
 Das Visual Studio-Abonnementportal [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ist Ihre All-in-One-Ressource, um das gesamte Spektrum der Vorteile zu nutzen, die Ihr Visual Studio-Abonnement bietet.
 
-Um das Portal zu nutzen, melden sich mit der Identität an, die dem Abonnement zugeordnet ist.  Dies kann Ihr Microsoft Konto (Managed Service Account, MSA, verwaltetes Dienstkonto) oder eine E-Mail-Adresse sein, die Sie von einer Organisation wie z.B. Ihrem Arbeitgeber oder Ihrer Schule erhalten haben.  Hier erfahren Sie mehr über das [Anmelden](signing-in.md).
+Um das Portal zu nutzen, melden sich mit der Identität an, die dem Abonnement zugeordnet ist.  Dies kann Ihr Microsoft Konto (Managed Service Account, MSA, verwaltetes Dienstkonto) oder eine E-Mail-Adresse sein, die Sie von einer Organisation wie z. B. Ihrem Arbeitgeber oder Ihrer Schule erhalten haben.  Hier erfahren Sie mehr über das [Anmelden](signing-in.md).
 
 Das Portal ist in sechs Seiten unterteilt.  Jede Seite bietet Ihnen Zugriff auf andere Produkte oder Dienste, die in Ihrem Abonnement enthalten sind.  Die sechs Seiten heißen „Vorteile“, „Downloads“, „Product Keys“, „Abonnements“, „Support“ und „Marketplace“.
 

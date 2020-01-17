@@ -3,17 +3,17 @@ title: 'Exemplarische Vorgehensweise: Erstellen einer Anwendung'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647177"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594148"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -154,7 +154,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
      Die Buildinformationen umfassen die Uhrzeit, zu der der Build gestartet wurde (am Anfang), und die Reihenfolge, in der die Dateien verarbeitet wurden. Diese Informationen umfassen auch die von Visual Studio beim Build ausgeführt Compeliersyntax.
 
-     Im C#-Build führt die Option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) z.B. den von Ihnen zuvor in diesem Thema angegebenen Warnungscode **1762** zusammen mit drei weiteren Warnungen auf.
+     Im C#-Build führt die Option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) z. B. den von Ihnen zuvor in diesem Thema angegebenen Warnungscode **0168** zusammen mit drei weiteren Warnungen auf.
 
      Im Visual Basic-Build umfasst [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) keine bestimmten auszuschließenden Warnungen, sodass keine Warnungen angezeigt werden.
 

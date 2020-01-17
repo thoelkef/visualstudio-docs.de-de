@@ -4,12 +4,12 @@ description: Informationen zur Verwendung von IntelliSense in Visual Studio für
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026569"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405809"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -26,7 +26,7 @@ Das Vervollständigungsfenster bietet auch Unterstützung für das Filtern der e
 | Symbol                         | name          | Stichwort    | Hotkey |
 | -----------------------------|---------------| -----------|--------|
 | ![Symbol „Klassen“](media/classes-icon.png)  | class         | `class`    |  ⌥C
-| ![Symbol "Konstante"](media/constant-icon.png) | Konstante      | `const`    |  ⌥O
+| ![Symbol "Konstante"](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Symbol „Delegieren“](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
 | ![Symbol „Enumeration“](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![Symbol „Ereignis“](media/event-icon.png)    | event         |            |  ⌥V
@@ -36,22 +36,12 @@ Das Vervollständigungsfenster bietet auch Unterstützung für das Filtern der e
 | ![Symbol „Methode“](media/method-icon.png)   | Methode        |            |  ⌥M
 | ![Symbol „Namespace“](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
 | ![Symbol „Eigenschaften“](media/props-icon.png)    | property      |            |  ⌥P
-| ![Symbol „Ausschnitt“](media/snippet-icon.png)  | snippet       | `class`    |  ⌥S
+| ![Symbol „Ausschnitt“](media/snippet-icon.png)  | Codeausschnitt       | `class`    |  ⌥S
 | ![Symbol „Struktur“](media/struct-icon.png)   | Struktur     | `struct`   |  ⌥S
 
 Wenn Sie auf eines der Symbole klicken oder die entsprechenden Hotkeys drücken, wird die Vervollständigungsliste auf die vom Filtersatz definierten Typen beschränkt.  
 
 ![Filtern nach Typen mit IntelliSense](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>Anzeigen von Importelementen
-
-Standardmäßig zeigt die IntelliSense-Vervollständigung nur Vervollständigungen aus Bibliotheken an, die in Ihr Projekt importiert wurden. Wenn Sie z. B. `System.Collections.Generic` nicht über `using` importiert haben, ist keine Vervollständigung für `List<>` vorhanden. Sie müssen **Show Import Items** (Importelemente anzeigen) in den Einstellungen für Visual Studio für Mac aktivieren, um Vervollständigungen aus nicht importierten Bibliotheken anzuzeigen. Diese Einstellung befindet sich unter **Einstellungen > Text-Editor > IntelliSense**:
-
-![Anzeigen von Importelementen mit IntelliSense](media/intellisense-showimport.png)
-
-Wenn die Option **Show Import Items** (Importelemente anzeigen) aktiviert ist, schließt die Vervollständigungsliste die noch nicht importierten Vervollständigungen ein. Wenn Sie ein Element auswählen, das einer nicht deklarierten Bibliothek entspricht, wird die `using`-Anweisung für diese Bibliothek dem Header der Codedatei automatisch hinzugefügt. Der Name der Bibliothek, zu der die Vervollständigung gehört, wird zusammen mit eben dieser aufgeführt.
-
-![Anzeigen der Liste der Importelemente](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>Parameterfenster
 

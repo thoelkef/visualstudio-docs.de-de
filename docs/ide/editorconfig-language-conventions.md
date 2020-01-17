@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588628"
 ---
 # <a name="language-conventions"></a>Sprachkonventionen
 
@@ -119,7 +119,7 @@ Die Formatregeln in diesem Abschnitt gelten für C# und für Visual Basic.
 
 ### <a name="this-and-me"></a>Die Qualifizierer „This.“ und „Me.“
 
-Diese Formatregel kann auf Felder, Eigenschaften, Methoden oder Ereignisse angewendet werden. Wenn **TRUE** festgelegt ist, wird dem Codesymbol in C# bevorzugt `this.` oder in Visual Basic `Me.` vorangestellt. Wenn **FALSE** festgelegt ist, wird dem Codeelement bevorzugt _nicht_ `this.` oder `Me.` vorangestellt.
+Diese Formatregel kann auf Felder, Eigenschaften, Methoden oder Ereignisse angewendet werden. Wenn **TRUE** festgelegt ist, wird dem Codesymbol in C# bevorzugt `this.` oder in Visual Basic `Me.` vorangestellt. Wenn **FALSE** festgelegt ist, wird dem Codeelement bevorzugt _nicht_`this.` oder `Me.` vorangestellt.
 
 Diese Regeln werden in einer *EDITORCONFIG-Datei* z.B. folgendermaßen angezeigt:
 
@@ -139,7 +139,7 @@ dotnet_style_qualification_for_event = false:suggestion
 | **Regelname** | dotnet_style_qualification_for_field |
 | **Regel-ID** | IDE0003 und IDE0009 |
 | **Gültige Sprachen** | C# und Visual Basic |
-| **Werte** | `true` – Feldern in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Feldern bevorzugt _nicht_ `this.` oder `Me.` voranstellen. |
+| **Werte** | `true` – Feldern in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Feldern bevorzugt _nicht_`this.` oder `Me.` voranstellen. |
 | **Visual Studio-Standard** | `false:silent` |
 
 Codebeispiele:
@@ -167,7 +167,7 @@ capacity = 0
 | **Regelname** | dotnet_style_qualification_for_property |
 | **Regel-ID** | IDE0003 und IDE0009 |
 | **Gültige Sprachen** | C# und Visual Basic |
-| **Werte** | `true` – Eigenschaften in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Eigenschaften bevorzugt _nicht_ `this.` oder `Me.` voranstellen. |
+| **Werte** | `true` – Eigenschaften in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Eigenschaften bevorzugt _nicht_`this.` oder `Me.` voranstellen. |
 | **Visual Studio-Standard** | `false:silent` |
 
 Codebeispiele:
@@ -195,7 +195,7 @@ ID = 0
 | **Regelname** | dotnet_style_qualification_for_method |
 | **Regel-ID** | IDE0003 und IDE0009 |
 | **Gültige Sprachen** | C# und Visual Basic |
-| **Werte** | `true` – Methoden in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Methoden bevorzugt _nicht_ `this.` oder `Me.` voranstellen. |
+| **Werte** | `true` – Methoden in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Methoden bevorzugt _nicht_`this.` oder `Me.` voranstellen. |
 | **Visual Studio-Standard** | `false:silent` |
 
 Codebeispiele:
@@ -223,7 +223,7 @@ Display()
 | **Regelname** | dotnet_style_qualification_for_event |
 | **Regel-ID** | IDE0003 und IDE0009 |
 | **Gültige Sprachen** | C# und Visual Basic |
-| **Werte** | `true` – Ereignissen in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Ereignissen bevorzugt _nicht_ `this.` oder `Me.` voranstellen. |
+| **Werte** | `true` – Ereignissen in C# bevorzugt `this.` oder in Visual Basic bevorzugt `Me.` voranstellen.<br /><br />`false` – Ereignissen bevorzugt _nicht_`this.` oder `Me.` voranstellen. |
 | **Visual Studio-Standard** | `false:silent` |
 
 Codebeispiele:

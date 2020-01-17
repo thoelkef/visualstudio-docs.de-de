@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645879"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591046"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen
 
@@ -106,9 +106,9 @@ Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzuf
 
 1. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** >**Projekt**aus.
+1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
 
-   Die Kategorie **HelloWorld** wird im Dialogfeld **Neues Projekt** unter **Installiert**>**Visual C#** angezeigt.
+   Die Kategorie **HelloWorld** wird im Dialogfeld **Neues Projekt** unter **Installiert** > **Visual C#** angezeigt.
 
 ### <a name="create-new-user-item-template-categories"></a>Erstellen neuer Kategorien für Benutzerelementvorlagen
 
@@ -120,7 +120,7 @@ Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzuf
 
 1. Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt. Klicken Sie dann im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-   Die Kategorie **HelloWorld** wird im Dialogfeld **Neues Element hinzufügen** unter **Installiert**>**Visual C#-Elemente** angezeigt.
+   Die Kategorie **HelloWorld** wird im Dialogfeld **Neues Element hinzufügen** unter **Installiert** > **Visual C#-Elemente** angezeigt.
 
 ### <a name="display-templates-in-parent-categories"></a>Anzeigen von Vorlagen in übergeordneten Kategorien
 
@@ -146,7 +146,7 @@ Sie können in Unterkategorien enthaltene Vorlagen in den übergeordneten Katego
 
 1. Speichern und schließen Sie die *VSTEMPLATE*-Datei.
 
-1. Klicken Sie mit der rechten Maustaste auf die Dateien in der Vorlage, die Sie auswählen möchten, und klicken Sie anschließend auf **Senden an**>**ZIP-komprimierter Ordner**.
+1. Klicken Sie mit der rechten Maustaste auf die Dateien in der Vorlage, die Sie auswählen möchten, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**.
 
    Die Dateien werden in eine *ZIP*-Datei komprimiert.
 

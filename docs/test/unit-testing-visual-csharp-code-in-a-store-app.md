@@ -2,17 +2,17 @@
 title: Komponententests in Visual C#-Code
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659841"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590864"
 ---
 # <a name="unit-test-c-code"></a>Komponententest von C#-Code
 
@@ -24,7 +24,7 @@ Dieser Artikel veranschaulicht die *testgesteuerte Entwicklung*. Bei dieser Vorg
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Erstellen Sie die Projektmappe und das Komponententestprojekt.
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus.
 
 2. Suchen Sie die Projektvorlage **Leere App (universelles Windows)** , und wählen Sie sie aus.
 
@@ -52,7 +52,7 @@ Dieser Artikel veranschaulicht die *testgesteuerte Entwicklung*. Bei dieser Vorg
 
 ::: moniker range="vs-2017"
 
-2. Klicken Sie im Menü **Test** auf **Ausführen** >  **Alle Tests**.
+2. Klicken Sie im Menü **Test** auf **Alle Tests** > **ausführen**.
 
 ::: moniker-end
 

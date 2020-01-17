@@ -11,17 +11,17 @@ helpviewer_keywords:
 - reserved properties
 - project files, referencing
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574781"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Vorgehensweise: Verweisen auf den Namen oder Speicherort der Projektdatei
 Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwenden, selbst ohne eine eigene Eigenschaft erstellt zu haben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt reservierte Eigenschaften zur Verfügung, die auf die Projektdateinamen sowie andere Eigenschaften verweisen, die zum Projekt gehören. Weitere Informationen zu reservierten Eigenschaften finden Sie unter [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
@@ -31,7 +31,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 
 #### <a name="to-use-the-project-properties"></a>So verwenden Sie die Projekteigenschaften
 
-- Verweisen Sie die Eigenschaft in der Projektdatei mit der $()-Notation genau so, wie Sie es mit anderen Eigenschaften machen würden. Beispiel:
+- Verweisen Sie die Eigenschaft in der Projektdatei mit der $()-Notation genau so, wie Sie es mit anderen Eigenschaften machen würden. Zum Beispiel:
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -40,6 +40,8 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
   ```
 
   Ein Vorteil der Verwendung einer reservierten Eigenschaft ist, dass alle Änderungen am Projektdateinamen automatisch integriert sind. Das nächste Mal, wenn Sie das Projekt erstellen, wird die Ausgabedatei den neuen Namen haben, ohne dass von Ihnen Handlungsbedarf besteht.
+
+  Weitere Informationen zur Verwendung von Sonderzeichen in Datei- oder Projektverweisen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).
 
 > [!NOTE]
 > Reservierte Eigenschaften können nicht in der Projektdatei neu definiert werden.

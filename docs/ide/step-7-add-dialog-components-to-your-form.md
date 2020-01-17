@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ba7fd495d3ab3bdfd53752cb20d6a45d10892
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589954"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular
 
@@ -32,7 +32,7 @@ Eine Komponente ist in gewisser Hinsicht mit einem Steuerelement vergleichbar. Z
 
 1. Doppelklicken Sie auf **OpenFileDialog**, um dem Formular eine Komponente mit dem Namen **openFileDialog1** hinzuzufügen. Doppelklicken Sie in der **Toolbox** auf **ColorDialog**, um dem Formular eine Komponente mit dem Namen **colorDialog1** hinzuzufügen. (Sie verwenden diese Komponente im nächsten Lernprogrammschritt.) Unten im **Windows Forms-Designer** sollte ein Bereich angezeigt werden (unterhalb des Formulars **Picture Viewer**), das wie im folgenden Bild gezeigt ein Symbol für jede der beiden hinzugefügten Dialogfeldkomponenten enthält.
 
-     ![Dialogfeldkomponenten](../ide/media/express_dialogsadded.png)<br>***Dialogfeld****komponenten*
+     ![Dialogfeldkomponenten](../ide/media/express_dialogsadded.png)<br>***Dialog****feldkomponenten*
 
 1. Wählen Sie das Symbol **openFileDialog1** im unteren Bereich des **Windows Forms-Designers** aus. Legen Sie zwei Eigenschaften fest:
 

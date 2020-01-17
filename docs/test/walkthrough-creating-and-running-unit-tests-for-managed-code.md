@@ -8,17 +8,17 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659658"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590708"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -30,7 +30,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
 1. Öffnen Sie Visual Studio.
 
-2. Wählen Sie im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
+2. Wählen Sie im Menü **Datei** die Option **Neues** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -151,7 +151,7 @@ Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in die
 
 3. Wählen Sie in der Liste der Vorlagen **MSTest Test Project (.NET Core)** aus.
 
-4. Geben Sie im Feld **Name** `BankTests` ein, und klicken Sie dann auf die Schaltfläche **OK**.
+4. Geben Sie im Feld **Name**`BankTests` ein, und klicken Sie dann auf die Schaltfläche **OK**.
 
    Das Projekt **BankTests** wird der Projektmappe **Bank** hinzugefügt.
 

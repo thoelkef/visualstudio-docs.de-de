@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516780"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597398"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular
 
@@ -25,7 +25,7 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
 1. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **Visual C#** oder **Visual Basic** aus, und klicken Sie dann auf **Windows-Desktop**.
 

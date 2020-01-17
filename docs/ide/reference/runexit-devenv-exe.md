@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /RunExit switch
 - /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 295d4999437248cc9221631378c2beffd80094d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655520"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593602"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -41,9 +41,9 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  Optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
+  Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter minimiert die IDE, während das Projekt oder die Projektmappe ausgeführt wird. Er schließt die IDE, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.
 

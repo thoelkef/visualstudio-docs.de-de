@@ -13,17 +13,17 @@ helpviewer_keywords:
 - UsingTask element [MSBuild]
 - <UsingTask> element [MSBuild]
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962914"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565265"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
 Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzierten Task der Assembly zu, die die Taskimplementierung enthält.
@@ -57,18 +57,18 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Der Satz an Parametern, die in der Aufgabe angezeigt werden, welche durch die angegebene `TaskFactory` generiert wurde.|
 |[Aufgabe](../msbuild/task-element-msbuild.md)|Die `TaskFactory` weitergegebenen Daten zum Generieren einer Instanz der Aufgabe.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-| Element | BESCHREIBUNG |
+| Element | Beschreibung |
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Auf Umgebungsvariablen, Befehlszeileneigenschaften sowie auf Eigenschaften und Elemente auf Projektebene kann in den `UsingTask`-Elementen, die in der Projektdatei enthalten sind, entweder direkt oder über eine importierte Projektdatei verwiesen werden. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]

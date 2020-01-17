@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589980"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 
@@ -33,7 +33,7 @@ Das Formular enthält vier Schaltflächen, und die IDE hat ihnen folgende Namen 
 
 1. Wählen Sie im Formular die Schaltfläche **Schließen** aus. (Wenn alle Schaltflächen noch ausgewählt sind, drücken Sie die **ESC-TASTE**, um die Auswahl aufzuheben.) Scrollen Sie im Fenster **Eigenschaften**, bis Sie die Eigenschaft **(Name)** sehen. (Die Eigenschaft **(Name)** befindet sich oben in der Liste, wenn die Eigenschaften alphabetisch sortiert sind.) Ändern Sie den Namen wie im folgenden Screenshot gezeigt in **closeButton**.
 
-    ![Eigenschaftenfenster mit closeButton-Name](../ide/media/express_setnameproperty.png)<br>***Eigenschaftenfenster*** *mit dem* *Namen* ***closeButton***
+    ![Eigenschaftenfenster mit closeButton-Name](../ide/media/express_setnameproperty.png)<br>***Eigenschaftenfenster*** *mit dem* ***Namen*** *closeButton*
 
     > [!NOTE]
     > Versuchen Sie, den Namen der Schaltfläche in **close Button** (Schaltfläche schließen) zu ändern, sodass ein Leerzeichen zwischen den Wörtern „close“ und „Button“ steht. Daraufhin zeigt die IDE eine Fehlermeldung an: „Der Eigenschaftswert ist ungültig.“ Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.

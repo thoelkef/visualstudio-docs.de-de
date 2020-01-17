@@ -2,17 +2,17 @@
 title: Anpassen der Code Coverage-Analyse
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665060"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918650"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -51,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um Code Coverage anzupassen:
 
 ::: moniker range="vs-2017"
 
-Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test**  > **Testeinstellungen**.
+Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test** > **Testeinstellungen**.
 
 ![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei in Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -116,7 +116,7 @@ In der folgenden Tabelle werden die verschiedenen Methoden aufgeführt, mit dene
 
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke
 
-Include- und exclude-Knoten verwenden reguläre Ausdrücke, die nicht mit Platzhaltern identisch sind. Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet. Hier einige Beispiele:
+Include- und exclude-Knoten verwenden reguläre Ausdrücke, die nicht mit Platzhaltern identisch sind. Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet. Beispiele:
 
 - **.\*** entspricht einer Zeichenfolge beliebiger Zeichen
 
@@ -197,7 +197,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--
 About include/exclude lists:
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.
-Each element in the list is a regular expression (ECMAScript syntax). See https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio.
+Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio.
 An item must first match at least one entry in the include list to be included.
 Included items must then not match any entries in the exclude list to remain included.
 -->
