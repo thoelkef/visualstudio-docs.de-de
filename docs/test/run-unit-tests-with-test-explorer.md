@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646641"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585443"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -139,7 +139,7 @@ Klicken Sie zum Ändern der Testunterteilung den neben der Schaltfläche **Grupp
 ![Tests im Test-Explorer nach Kategorie gruppieren](../test/media/ute_groupbycategory.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Im Test-Explorer können Sie Tests in eine Hierarchie gruppieren. Die Standardhierarchiegruppierung ist **Projekt**, **Namespace** und dann **Klasse**. Klicken Sie zum Ändern der Testunterteilung auf die Schaltfläche **Gruppieren nach** ![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png), und wählen Sie anschließend neue Gruppierungskriterien aus.
+Im Test-Explorer können Sie Tests in eine Hierarchie gruppieren. Die Standardhierarchiegruppierung ist **Projekt**, **Namespace** und dann **Klasse**. Klicken Sie zum Ändern der Testunterteilung auf die Schaltfläche **Gruppieren nach**![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png), und wählen Sie anschließend neue Gruppierungskriterien aus.
 
 ![Tests im Test-Explorer nach Kategorie gruppieren](../test/media/vs-2019/test-explorer-groupby-162.png)
 
@@ -151,7 +151,7 @@ Sie können Ihre eigenen Hierarchie- und Gruppenebenen nach **Zustand** und dann
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
 
 ::: moniker range="vs-2017"
-|Gruppieren|BESCHREIBUNG|
+|Gruppieren|Beschreibung|
 |-|-----------------|
 |**Dauer**|Tests werden anhand der Ausführungszeit gruppiert: **Schnell**, **Mittel** und **Langsam**.|
 |**Ergebnis**|Tests werden anhand der Ausführungsergebnisse gruppiert: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
@@ -159,7 +159,7 @@ Sie können Ihre eigenen Hierarchie- und Gruppenebenen nach **Zustand** und dann
 |**Projekt**|Gruppiert Tests nach den Namen der Projekte.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Gruppieren|BESCHREIBUNG|
+|Gruppieren|Beschreibung|
 |-|-----------------|
 |**Dauer**|Gruppiert Tests nach Ausführungszeit: **Schnell**, **Mittel** und **Langsam**.|
 |**Zustand**|Tests werden anhand der Ausführungsergebnisse gruppiert: **Fehlgeschlagene Tests**, **Übersprungene Tests**, **Bestandene Tests** und **Nicht ausführen**|
@@ -177,7 +177,7 @@ In der Regel handelt es sich bei Merkmalen um Kategoriename/Wert-Paare, ein Merk
 
 Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> -Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:
 
-|Merkmal|BESCHREIBUNG|
+|Merkmal|Beschreibung|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Die Kategorie "Besitzer" wird vom Komponententest-Framework definiert. Sie müssen einen Zeichenfolgenwert für den Besitzer angeben.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Die Kategorie "Priorität" wird vom Komponententest-Framework definiert. Sie müssen einen ganzzahligen Wert für die Priorität angeben.|
@@ -200,7 +200,7 @@ Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mi
 
 Wählen Sie zum**Hinzufügen von Tests zu einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Wählen Sie im Kontextmenü **Zu Wiedergabeliste hinzufügen** und anschließend die Wiedergabeliste aus, der die Tests hinzugefügt werden sollen.
 
-Wählen Sie zum **Öffnen einer Wiedergabeliste** im Visual Studio-Menü **Test** > **Wiedergabeliste** aus. Anschließend können Sie entweder aus der Liste der zuletzt verwendeten Wiedergabelisten oder die Option **Wiedergabelistendatei öffnen** auswählen, um den Namen und Speicherort der Wiedergabeliste anzugeben.
+**Wählen Sie zum Öffnen einer Wiedergabeliste** im Visual Studio-Menü **Test** > **Wiedergabeliste** aus. Anschließend können Sie entweder aus der Liste der zuletzt verwendeten Wiedergabelisten oder die Option **Wiedergabelistendatei öffnen** auswählen, um den Namen und Speicherort der Wiedergabeliste anzugeben.
 
 Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 ::: moniker-end
@@ -266,7 +266,7 @@ Filtern nach einem anderen Kriterium:
 > Bei Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet, und die angegebene Zeichenfolge kann einem die oft ausgegebene Befehlszeilen  Teil des Kriteriumswerts entsprechen.
 
 ::: moniker range="vs-2017"
-|Qualifizierer|BESCHREIBUNG|
+|Qualifizierer|Beschreibung|
 |-|-----------------|
 |**Merkmal**|Durchsucht sowohl die Merkmalskategorie als auch den Wert nach Übereinstimmungen. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|
 |**Projekt**|Durchsucht die Testprojektnamen nach Übereinstimmungen.|
@@ -277,7 +277,7 @@ Filtern nach einem anderen Kriterium:
 |**Ergebnis**|Sucht in den Kategorienamen des Test-Explorers nach Übereinstimmungen: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Qualifizierer|BESCHREIBUNG|
+|Qualifizierer|Beschreibung|
 |-|-----------------|
 |**Zustand**|Sucht in den Kategorienamen des Test-Explorers nach Übereinstimmungen: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
 |**Merkmale**|Durchsucht sowohl die Merkmalskategorie als auch den Wert nach Übereinstimmungen. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|

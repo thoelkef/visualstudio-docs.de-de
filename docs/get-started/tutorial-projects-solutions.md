@@ -4,17 +4,17 @@ ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caa8fde228d83cbb14b911965573e78648133b81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c130f7f55409bd24520dd55e949d20e8d5bbb97
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647823"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567267"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Erfahren Sie mehr über Projekte und Projektmappen
 

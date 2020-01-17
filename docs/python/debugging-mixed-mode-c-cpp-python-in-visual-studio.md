@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962670"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678999"
 ---
 # <a name="debug-python-and-c-together"></a>Gleichzeitiges Debuggen von Python und C++
 
@@ -38,7 +38,7 @@ Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel besch
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie im Video [Deep Dive: Create Native Modules (Ausführliche Erläuterungen: Erstellen nativer Module)](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
+| ![Symbol für Filmkamera für das Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie im Video [Deep Dive: Create Native Modules (Ausführliche Erläuterungen: Erstellen nativer Module)](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Aktivieren des Debuggens im gemischten Modus in einem Python-Projekt
 
@@ -69,6 +69,9 @@ Visual Studio (2017, Version 15.5 und höher) unterstützt das Debuggen im gemis
 1. Klicken Sie auf die Registerkarte **Debuggen**, wählen Sie aus dem Debugger **Python-/Natives Debuggen** unter **Zu startender Debugger** aus, und klicken Sie auf **OK**.
 
     ![Auswählen von „Python-/Natives Debuggen“ in einem C/C++-Projekt](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+> [!Note]
+> Wenn Sie nicht die Möglichkeit haben, **Python/Natives Debuggen** auszuwählen, müssen Sie zunächst die **nativen Python-Entwicklungstools** mit dem VS-Installationsprogramm installieren. Sie finden es als Option unter der Python-Entwicklungsworkload. Weitere Informationen finden Sie unter [Installieren von Python-Unterstützung für Visual Studio unter Windows](installing-python-support-in-visual-studio.md).
 
 Beachten Sie bei Verwendung dieser Methode, dass Sie das Startprogramm *py.exe* selbst nicht debuggen können, da dieses einen untergeordneten *python.exe*-Prozess erzeugt, an den der Debugger nicht angehängt wird. Wenn Sie *python.exe* direkt mit Argumenten starten möchten, ändern Sie die Option **Befehl** in den Eigenschaften **Python-/Natives Debuggen** (in der vorherigen Abbildung dargestellt), um den vollständigen Pfad zu *python.exe* anzugeben. Geben Sie anschließend Argumente unter **Befehlsargumente** an.
 

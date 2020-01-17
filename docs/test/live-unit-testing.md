@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f020de0c08d8869a8ee9e6f807201303a46b2a0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653000"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588888"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Konfigurieren und Verwenden von Live Unit Testing
 
@@ -79,7 +79,7 @@ Die konfigurierbaren Optionen umfassen Folgendes:
 
 ## <a name="start-pause-and-stop"></a>Starten, Anhalten und Beenden
 
-Um Live Unit Testing zu aktivieren, klicken Sie im obersten Visual Studio-Menü auf **Test** > **Live Unit Testing** > **Starten**. Wenn Live Unit Testing aktiviert ist, ändern sich die verfügbaren Optionen im **Live Unit Testing**-Menü von dem einzelnen Element **Starten** zu **Anhalten**, **Beenden** und **Bereinigt zurücksetzen**:
+Um Live Unit Testing zu aktivieren, klicken Sie im obersten Visual Studio-Menü auf **Test** > **Live Unit Testing** > **Starten**. Wenn Live Unit Testing aktiviert ist, ändern sich die verfügbaren Optionen im **Live Unit Testing**-Menü von dem einzelnen Element **Starten** zu **Anhalten** und **Beenden**:
 
 - **Anhalten**: Unterbricht Live Unit Testing vorübergehend.
 
@@ -87,10 +87,8 @@ Um Live Unit Testing zu aktivieren, klicken Sie im obersten Visual Studio-Menü 
 
 - **Beenden**: Beendet Live Unit Testing vollständig. Live Unit Testing verwirft alle Daten, die gesammelt wurden.
 
-- **Bereinigt zurücksetzen**: Beendet Live Unit Testing, löscht persistente Daten und startet Live Unit Testing neu.
-
 > [!NOTE]
-> Wenn Sie Live Unit Testing in einer Projektmappe starten, die kein Komponententestprojekt enthält, erscheinen zwar die Optionen **Pause**, **Beenden**, und **Bereinigt zurücksetzen** im **Live Unit Testing**-Menü, Live Unit Testing wird jedoch nicht gestartet. Das **Ausgabe**-Fenster zeigt eine Nachricht, die mit „No supported test adapters are referenced by this solution...“ (Diese Projektmappe bezieht sich auf keine unterstützten Testadapter...) beginnt.
+> Wenn Sie Live Unit Testing in einer Projektmappe starten, die kein Komponententestprojekt enthält, erscheinen zwar die Optionen **Anhalten** und **Beenden** im **Live Unit Testing**-Menü, Live Unit Testing wird jedoch nicht gestartet. Das **Ausgabe**-Fenster zeigt eine Nachricht, die mit „No supported test adapters are referenced by this solution...“ (Diese Projektmappe bezieht sich auf keine unterstützten Testadapter...) beginnt.
 
 Sie können Live Unit Testing jederzeit vorübergehend anhalten oder vollständig beenden. Sie könnten sich beispielsweise dann dazu entschließen, wenn Sie gerade ein Refactoring ausführen und wissen, dass die Tests für eine Weile gestört sind.
 
@@ -156,7 +154,7 @@ Es gibt einige Unterschiede zwischen dem automatischen Ausführen und Aktualisie
 Wenn Ihre Projektmappe über mindestens 10 Projekte verfügt, zeigt Visual Studio das folgende Dialogfeld an, wenn Sie Folgendes ausführen:
 
 - Starten von Live Unit Testing, ohne dass persistente Daten vorhanden sind
-- Auswählen von **Test** > **Live Unit Testing** > **Bereinigt zurücksetzen**
+- Auswählen von **Tools** > **Optionen** > **Live Unit Testing** > **Beibehaltene Daten löschen**
 
 ![Live Unit Testing-Dialogfeld für große Projekte](media/lut-large-project.png)
 

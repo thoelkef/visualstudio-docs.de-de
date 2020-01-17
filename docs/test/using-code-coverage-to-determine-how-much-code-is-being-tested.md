@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659800"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585599"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -32,7 +32,7 @@ Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Expl
 
 ::: moniker-end
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 Das Code Coverage-Feature ist nur in der Visual Studio Enterprise-Edition verfügbar.
 
@@ -54,7 +54,7 @@ Das Code Coverage-Feature ist nur in der Visual Studio Enterprise-Edition verfü
 
 ::: moniker-end
 
-2. Klicken Sie nach der Ausführung der Tests im Fenster **Code Coverage-Ergebnisse** auf ![Symbol „Code Coverage-Färbung anzeigen“](../test/media/codecoverage-showcoloringicon.png) **Code Coverage-Färbung anzeigen**. Der von Tests abgedeckte Code wird standardmäßig hellblau hervorgehoben.
+2. Wählen Sie nach der Ausführung der Tests im Fenster **Code Coverage-Ergebnisse** das ![Symbol „Code Coverage-Färbung anzeigen“](../test/media/codecoverage-showcoloringicon.png) **Code Coverage-Färbung anzeigen** aus. Der von Tests abgedeckte Code wird standardmäßig hellblau hervorgehoben.
 
    > [!TIP]
    > Zum Ändern der Farben oder zum Verwenden von Fettdruck wählen Sie **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben** > **Einstellungen anzeigen für: Text-Editor** aus. Passen Sie unter **Elemente anzeigen** die Einstellungen der Elemente für „Coverage“ an, z. B. **Von Code Coverage nicht verwendeter Bereich**.
@@ -105,7 +105,7 @@ In einigen Situationen werden abhängig von den Testdaten andere Blöcke im Code
 
 Bei einem Test mit der Eingabe "2 " stellen Sie beispielsweise fest, dass 50 % einer bestimmten Funktion abgedeckt werden. Wenn Sie den Test ein zweites Mal mit der Eingabe „-2“ ausführen, sehen Sie in der Ansicht der Code Coverage-Färbung, dass die anderen 50 % der Funktion abgedeckt werden. Führen Sie nun die Ergebnisse aus den zwei Testläufen zusammen. Die Berichtsansicht und die Ansicht der Abdeckungsfärbung zeigen nun an, dass 100 % der Funktion ausgeführt wurden.
 
-Klicken Sie hierzu auf ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Code Coverage“](../test/media/codecoverage-mergeicon.png) **Code Coverage-Ergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
+Verwenden Sie dazu ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Code Coverage“](../test/media/codecoverage-mergeicon.png) **Code Coverage-Ergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
 
 Speichern Sie die Ergebnisse eines Zusammenführungsvorgangs mithilfe der Option **Export Code Coverage Results** (Codeabdeckungsergebnisse exportieren).
 
@@ -124,7 +124,7 @@ Sie können bestimmte Elemente im Code aus den Abdeckungsergebnissen ausschließ
 > [!TIP]
 > Durch das Ausschließen einer Klasse werden deren abgeleitete Klassen nicht ausgeschlossen.
 
-Beispiel:
+Zum Beispiel:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -282,13 +282,13 @@ Verwenden Sie *vstest.console.exe*, um Tests über die Befehlszeile auszuführen
 
    ::: moniker range="vs-2017"
 
-   Wählen Sie im Windows-**Startmenü** **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Developer-Eingabeaufforderung für VS 2017) aus.
+   Wählen Sie im Windows **Startmenü** **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Eingabeaufforderung für Entwickler für VS 2017) aus.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Wählen Sie im Windows-**Startmenü** **Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Developer-Eingabeaufforderung für VS 2019) aus.
+   Wählen Sie im Windows **Startmenü** **Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Eingabeaufforderung für Entwickler für VS 2019) aus.
 
    ::: moniker-end
 

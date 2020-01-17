@@ -5,21 +5,21 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650903"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588602"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
-Namenskonventionen beziehen sich auf die Benennung von Codeelementen wie z.B. Klassen, Eigenschaften und Methoden. Sie können beispielsweise angeben, dass öffentliche Member großgeschrieben oder asynchrone Methoden mit „Async“ enden müssen. Sie können diese Regeln erzwingen, indem Sie sie in einer [.editorconfig](../ide/create-portable-custom-editor-options.md)-Datei angeben. Verletzungen von Namensregeln erscheinen entweder in der **Fehlerliste** oder als Vorschlag unter dem Namen, je nachdem, welchen Schweregrad Sie für Ihre Regel wählen. Es besteht keine Notwendigkeit, einen Build des Projekts zu erstellen, um Verstöße zu erkennen.
+Namenskonventionen beziehen sich auf die Benennung von Codeelementen wie z.B. Klassen, Eigenschaften und Methoden. Sie können beispielsweise angeben, dass öffentliche Mitglieder großgeschrieben werden oder dass private Felder mit `_` beginnen müssen. Sie können diese Regeln erzwingen, indem Sie sie in einer [.editorconfig](../ide/create-portable-custom-editor-options.md)-Datei angeben. Verletzungen von Namensregeln erscheinen entweder in der **Fehlerliste** oder als Vorschlag unter dem Namen, je nachdem, welchen Schweregrad Sie für Ihre Regel wählen. Es besteht keine Notwendigkeit, einen Build des Projekts zu erstellen, um Verstöße zu erkennen.
 
 Bei jeder Namenskonvention müssen Sie die Symbole, für die sie gilt, einen Benennungsstil und einen Schweregrad zum Erzwingen der Konvention mithilfe der nachstehend beschriebenen Eigenschaften angeben. Die Reihenfolge der Eigenschaften ist ohne Bedeutung.
 

@@ -9,19 +9,19 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea0651ee1cfde14d5ef7b422095707d8f81cb2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974348"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590149"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Auswählen der Installationspfade in Visual Studio
 
@@ -46,18 +46,18 @@ Sind Sie bereit? Gehen Sie folgendermaßen vor:
 
 1. Klicken Sie beim Installieren von Visual Studio auf die Registerkarte **Installationspfade**.
 
-   ![Visual Studio 2017: Auswählen des Installationspfads](media/vs-installation-locations.png "Auswählen des Installationspfads")
+   ![Visual Studio 2017 – Auswählen des Installationspfads](media/vs-installation-locations.png "Wählen Sie den Installationspfad aus.")
 
 1. Übernehmen Sie im Abschnitt **Visual Studio-IDE** die Standardeinstellungen. Visual Studio installiert das Hauptprodukt sowie die Dateien, die in der spezifischen Version von Visual Studio enthalten sind.
 
-   ![Visual Studio-IDE-Abschnitt der Registerkarte „Installationspfade“](media/vs-installation-locations-ide.png "Akzeptieren des Standardpfads für den Abschnitt „Visual Studio-IDE“ der Registerkarte „Installationspfade“")
+   ![Visual Studio-IDE-Abschnitt der Registerkarte „Installationspfade“](media/vs-installation-locations-ide.png "Akzeptieren Sie den Standardpfad für den Abschnitt „Visual Studio-IDE“ der Registerkarte „Installationspfade“.")
 
    > [!TIP]
    > Wenn es sich bei Ihrem Systemlaufwerk um ein SSD (Solid State Drive) handelt, wird empfohlen, dass Sie den Standardpfad auf Ihrem Systemlaufwerk akzeptieren. Begründung: Bei der Entwicklung mit Visual Studio werden mehrere Dateien gelesen und in diese geschrieben, wodurch die E/A-Aktivität des Datenträgers erhöht wird. Sie sollten daher ihr schnellstes Laufwerk auswählen, um diese Auslastung zu bewältigen.
 
 1. Wählen Sie im Abschnitt **Downloadcache** aus, ob der Downloadcache beibehalten werden soll, und wählen Sie dann aus, wo dessen Dateien gespeichert werden sollen.
 
-     ![Abschnitt „Downloadcache“ der Registerkarte „Installationspfade“](media/vs-installation-locations-cache.png "Auswählen, ob der Downloadcache nach der Installation beibehalten werden soll, und Festlegen des Laufwerks, auf dem Dateien gespeichert werden sollen")
+     ![Abschnitt „Downloadcache“ der Registerkarte „Installationspfade“](media/vs-installation-locations-cache.png "Wählen Sie aus, ob der Downloadcache nach der Installation beibehalten werden soll, und geben Sie dann das Laufwerk an, auf dem Dateien gespeichert werden sollen.")
 
     1. Aktivieren oder deaktivieren Sie die Option **Downloadcache nach der Installation beibehalten**.
 
@@ -72,7 +72,7 @@ Sind Sie bereit? Gehen Sie folgendermaßen vor:
 
 1. Geben Sie im Abschnitt **Freigegebene Komponenten, Tools und SDKs** das Laufwerk an, auf dem Sie Dateien speichern möchten, die von parallelen Installationen von Visual Studio freigegeben werden. SDKs und Tools werden ebenfalls in diesem Verzeichnis gespeichert.
 
-   ![Abschnitt „Freigegebene Komponenten, Tools und SDKs“ der Registerkarte „Installationspfade“](media/vs-installation-locations-shared.png "Festlegen des Speicherorts, in dem freigegebene Komponenten, Tools und SDKs gespeichert werden sollen")
+   ![Abschnitt „Gemeinsam genutzte Komponenten, Tools und SDKs“ der Registerkarte „Installationspfad“](media/vs-installation-locations-shared.png "Geben Sie den Speicherort an, an dem Sie gemeinsam genutzte Komponenten, Tools und SDKs speichern möchten.")
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Sind Sie bereit? Gehen Sie folgendermaßen vor:
 
 1. Klicken Sie beim Installieren von Visual Studio auf die Registerkarte **Installationspfade**.
 
-   ![Visual Studio 2019: Auswählen des Installationspfads](media/vs-2019/vs-installer-installation-locations.png "Auswählen des Installationspfads")
+   ![Visual Studio 2019 – Auswählen des Installationspfads](media/vs-2019/vs-installer-installation-locations.png "Wählen Sie den Installationspfad aus.")
 
 1. Übernehmen Sie im Abschnitt **Visual Studio-IDE** die Standardeinstellungen. Visual Studio installiert das Hauptprodukt sowie die Dateien, die in der spezifischen Version von Visual Studio enthalten sind.
 

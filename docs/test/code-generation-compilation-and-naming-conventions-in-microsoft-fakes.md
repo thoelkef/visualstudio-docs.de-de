@@ -2,17 +2,17 @@
 title: 'Microsoft Fakes: Generieren und Kompilieren von Code; Namenskonventionen'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665250"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589330"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 
@@ -134,7 +134,7 @@ Das Fakes-Framework verwendet den gleichen Schlüssel, um alle generierten Assem
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Sie können einen anderen öffentlichen Schlüssel für die Fakes-Assembly angeben, beispielsweise einen Schlüssel, den Sie für die Shim-Assembly erstellt haben, indem Sie den vollständigen Pfad der *SNK*-Datei angeben, die den alternativen Schlüssel als `KeyFile`-Attributwert im `Fakes`\\`Compilation`-Element der *FAKES*-Datei enthält. Beispiel:
+Sie können einen anderen öffentlichen Schlüssel für die Fakes-Assembly angeben, beispielsweise einen Schlüssel, den Sie für die Shim-Assembly erstellt haben, indem Sie den vollständigen Pfad der *SNK*-Datei angeben, die den alternativen Schlüssel als `KeyFile`-Attributwert im `Fakes`\\`Compilation`-Element der *FAKES*-Datei enthält. Zum Beispiel:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -257,7 +257,7 @@ attribute of the Assembly element in the .fakes:
 |-|-|
 |Ein **Typ**`T`|T<br /><br /> Der Namespace, die geschachtelte Struktur und die generischen Tics werden verworfen.|
 |Ein **out-Parameter**`out T`|`TOut`|
-|Ein **ref-Parameter**`ref T`|`TRef`|
+|Ein **ref-Parameter** `ref T`|`TRef`|
 |Ein **Arraytyp** `T[]`|`TArray`|
 |Ein **mehrdimensionales Array**, Typ `T[ , , ]`|`T3`|
 |Ein **Zeiger**, Typ `T*`|`TPtr`|

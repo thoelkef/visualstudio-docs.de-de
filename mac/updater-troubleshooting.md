@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984406"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405479"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Problembehandlung: Updater enthält Fehler, die beim Abrufen von Informationen auftreten
 
@@ -24,4 +24,5 @@ In seltenen Fällen kann die Fehlermeldung „Fehler beim Abrufen von Updateinfo
 - Wenn diese Fehlermeldung weiterhin angezeigt wird, können Sie auch eine Aktualisierung mithilfe des Installers versuchen, falls sich die **.dmg**-Datei noch auf Ihrem Computer befindet. Sie können ihn aber auch von [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/) herunterladen.
   - Mit dem Installer werden alle installierten Komponenten auf Ihrem Computer aktualisiert.
   - Durch erneutes Ausführen des Installers können Sie auch fehlende Komponenten installieren, die zuvor nicht installiert waren.
-- Sie können auch versuchen, zwischengespeicherte Downloads zu löschen, indem Sie diese Datei löschen: `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml`.
+- Sie können auch versuchen, zwischengespeicherte Downloads zu löschen, indem Sie diese Datei löschen: `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml`.
+- Wenn Sie mit einer älteren Version von Visual Studio für Mac arbeiten, befinden sich unter dem Verzeichnis `VisualStudio` möglicherweise andere Versionsnummern. Löschen Sie die Datei `index.xml` in diesen Pfaden ebenfalls.

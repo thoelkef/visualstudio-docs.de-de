@@ -2,22 +2,22 @@
 title: Visual Studio-Buildnummern und -Veröffentlichungstermine
 titleSuffix: ''
 description: Eine Liste der nach Datum sortierten veröffentlichten Versionen von und Buildnummern für Visual Studio.
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.date: 12/10/2019
+ms.date: 12/17/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 752e1a73686a5932682642555089988f49c0eb1a
-ms.sourcegitcommit: 2485f597d909e8176622af25678bc3764fcd860c
+ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000263"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590894"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.2 | Freigabe | 17. Dezember 2019 | 16.4.29613.14 |
 | 16.4.1 | Freigabe | 10. Dezember 2019 | 16.4.29609.76 |
 | 16.0.10 | Freigabe | 10. Dezember 2019 | 16.0.28803.631 |
 | 16.5.0 | Vorschauversion 1 | 3\. Dezember 2019 | 16.5.29521.150 |
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 | 16.0.9 | Freigabe | 15. Oktober 2019 | 16.0.28803.598 |
 | 16.3.4 | Freigabe | 10. Oktober 2019 | 16.3.29409.12 |
 | 16.3.3 | Freigabe | 8\. Oktober 2019 | 16.3.29403.142 |
-| 16.3.2 | Freigabe | 1\. Oktober 2019 | 16.3.29326.143 |
+| 16.3.2 | Freigabe | 1\. Oktober 2019 | 16.3.29326.143 |
 | 16.3.1 | Freigabe | 25. September 2019 | 16.3.29324.140 |
 | 16.4.0 | Vorschauversion 1 | 23. September 2019 | 16.4.29319.158 |
 | 16.3.0 | Freigabe | 23. September 2019 | 16.3.29318.209 |
@@ -63,7 +64,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 | 16.2.1 | Freigabe | 6\. August 2019 | 16.2.29201.188 |
 | 16.2.0 | Freigabe | 24. Juli 2019 | 16.2.29123.88 |
 | 16.3.0 | Vorschauversion 1 | 24. Juli 2019 | 16.3.29123.89 |
-| 16.2.0 | Preview 4 | 16. Juli 2019 | 16.2.29111.141 |
+| 16.2.0 | Preview 4 | 16. Juli 2019 | 16.2.29111.141 |
 | 16.1.6 | Freigabe | 9\. Juli 2019 | 16.1.29102.190 |
 | 16.0.6 | Freigabe | 9\. Juli 2019 | 16.0.28803.540 |
 | 16.1.5 | Freigabe | 2\. Juli 2019 | 16.1.29025.244 |
@@ -118,6 +119,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.0.28 | Freigabe | 11. Dezember 2019 | 15.0.26228.102 |
 | 15.9.18 | Freigabe | 10. Dezember 2019 | 15.9.28307.960 |
 | 15.9.17 | Freigabe | 15. Oktober 2019 | 15.9.28307.905 |
 | 15.9.16 | Freigabe | 10. September 2019 | 15.9.28307.858 |

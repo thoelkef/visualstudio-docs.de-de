@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717272"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398292"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Erstellen von ASP.NET Core-Anwendungen in Visual Studio für Mac
 
@@ -25,7 +25,7 @@ In diesem Lab erstellen und untersuchen Sie eine ASP.NET Core-Anwendung mit Visu
 > * Untersuchen von ASP.NET Core-Hosting, der Konfiguration und des Middlewaremodells
 > * Debuggen einer ASP.NET Core-Web-App
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - [Visual Studio für Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
@@ -73,9 +73,9 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![](media/netcore-image8.png)
 
-7. Es gibt auch verschiedene Konfigurationsdateien, mit denen Projekte einschließlich der Pakete und die Anwendung zur Laufzeit verwaltet werden können. Die [Standardkonfiguration](/aspnet/core/fundamentals/configuration) der Anwendung befindet sich z.B. in der Datei **appsettings.json**. Sie können jedoch einige bzw. alle diese Einstellungen umgebungsabhängig überschreiben, d.h. beispielsweise die Datei **appSettings.Development.json** für die Umgebung **Entwicklung** bereitstellen.
+7. Es gibt auch verschiedene Konfigurationsdateien, mit denen Projekte einschließlich der Pakete und die Anwendung zur Laufzeit verwaltet werden können. Die [Standardkonfiguration](/aspnet/core/fundamentals/configuration) der Anwendung befindet sich z.B. in der Datei **appsettings.json**. Unterhalb der Datei „appsettings.json“ ist die Datei **appsettings.development.json** geschachtelt. Hier können Sie einige bzw. alle diese Einstellungen umgebungsbasiert außer Kraft setzen. Visual Studio für Mac schachtelt Dateien auf diese Weise mit derselben Logik wie Visual Studio für Windows, sodass Dateien, auf die Sie öfter zugreifen müssen, im Vordergrund stehen. 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Aufgabe 3: Verstehen, wie die Anwendung gehostet wird
 

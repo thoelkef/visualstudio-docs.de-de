@@ -1,21 +1,21 @@
 ---
-title: Debuggen mit Xamarin
+title: Debuggen mit Visual Studio für Mac
 description: Das Debuggen ist ein üblicher und notwendiger Teil des Programmierens. Da Visual Studio für Mac eine ausgereifte IDE ist, enthält es eine Reihe von Features, die das Debuggen vereinfachen. Dieser Artikel erläutert vom sicheren Debuggen bis hin zur Datenvisualisierung, wie das volle Potenzial des Debuggens in Visual Studio für Mac genutzt werden kann.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716964"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397936"
 ---
-# <a name="debugging-with-xamarin"></a>Debuggen mit Xamarin
+# <a name="debugging-with-visual-studio-for-mac"></a>Debuggen mit Visual Studio für Mac
 
-Visual Studio für Mac besitzt einen nativen Debugger, der das Debuggen für Xamarin.iOS-, Xamarin.Mac- und Xamarin.Android-Anwendungen unterstützt.
+Visual Studio für Mac verfügt über Debugger mit Unterstützung für .NET Core-, .NET Framework-, Unity- und Xamarin-Anwendungen.
 
 Visual Studio für Mac verwendet den [*Soft-Debugger von Mono*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), der in die Mono-Laufzeit integriert wird und es Visual Studio für Mac ermöglicht, verwalteten Code für alle Plattformen zu debuggen.
 
@@ -24,6 +24,8 @@ Visual Studio für Mac verwendet den [*Soft-Debugger von Mono*](https://www.mono
 Visual Studio für Mac verwendet den Soft-Debugger von Mono, um verwalteten Code (C# oder F#) für alle Xamarin-Anwendungen zu debuggen. Der Soft-Debugger von Mono unterscheidet sich insofern von gewöhnlichen Debuggern, dass es sich um einen kooperativen und in die Mono-Laufzeit integrierten Debugger handelt. Der generierte Code und die Mono-Laufzeit kooperieren mit der IDE, um für ein benutzerfreundliches Debuggen zu sorgen. Die Mono-Laufzeit stellt die Debugfunktion über ein Versandprotokoll zur Verfügung. Weitere Informationen dazu finden Sie [in der Mono-Dokumentation](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Hard-Debugger, zum Beispiel [LLDB]( http://lldb.llvm.org/index.html) oder [GDB]( https://www.gnu.org/software/gdb/), steuern ein Programm ohne das Wissen oder die Kooperation des gedebuggten Programms. Diese können aber dennoch beim Debuggen von Xamarin-Anwendungen hilfreich sein, falls Sie nativen iOS- oder Android-Code debuggen müssen.
+
+Für .NET Core und ASP.NET Core-Anwendungen verwendet Visual Studio für Mac den .NET Core-Debugger. Dieser Debugger ist ebenfalls ein kooperativer Debugger und arbeitet mit der .NET-Runtime.
 
 ## <a name="using-the-debugger"></a>Verwenden des Debuggers
 
@@ -43,9 +45,10 @@ Sie können alle gesetzten Haltepunkte in Ihrem Code anzeigen lassen, indem Sie 
 
 ## <a name="start-debugging"></a>Debugging starten
 
-Wählen Sie zum Starten des Debuggens das Zielgerät (oder ähnliches) oder den Emulator in Ihrer IDE:
+Wählen Sie zum Starten des Debuggens den Zielbrowser, das Gerät bzw. den Simulator/Emulator aus:
 
-![Auswählen des Zielgeräts](media/debugging-image1.png)
+![Debugkonfiguration](media/debugging-image_0.png)
+![Zielgerät auswählen](media/debugging-image1.png)
 
 Stellen Sie Ihre Anwendung dann bereit, indem Sie auf die Schaltfläche **Wiedergabe** klicken oder **STRG + EINGABETASTE** drücken. Wenn Sie einen Haltepunkt erreichen, wird der Code gelb hervorgehoben:
 
@@ -90,9 +93,9 @@ Xamarin-Produkte enthalten den Quellcode für die Mono-Klassenbibliotheken, die 
 
 Da dieses Feature während des Debuggens mehr Arbeitsspeicher benötigt, ist es standardmäßig deaktiviert.
 
-Navigieren Sie zu **Visual Studio for Mac > Preferences > Debugger** (Visual Studio für Mac > Einstellungen > Debugger), um dieses Feature zu aktivieren und versichern Sie sich, dass die Option „**Debug project code only; do not step into framework code.** “ („Nur Projektcode debuggen, keinen Einzelschritt in Frameworkcode ausführen.“) wie unten dargestellt **nicht ausgewählt** ist.
+Navigieren Sie zu **Visual Studio for Mac > Preferences > Debugger** (Visual Studio für Mac > Einstellungen > Debugger), um dieses Feature zu aktivieren und versichern Sie sich, dass die Option **Step into external code** (Schritt in externen Code) **aktiviert** ist, wie unten dargestellt:
 
-![Option „Keinen Einzelschritt in Frameworkcode ausführen“](media/debugging-image8.png)
+![Option „Step into External Code“ (In externen Code springen)](media/debugging-image8.png)
 
 ## <a name="see-also"></a>Siehe auch
 

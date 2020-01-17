@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416420"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596527"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
 
@@ -67,7 +67,7 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>So erstellen Sie nur das Startprojekt und seine Abhängigkeiten
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Klappen Sie im Dialogfeld **Optionen** den Knoten **Projekte und Projektmappen** auf, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
 
@@ -87,13 +87,13 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
 Wählen Sie ein [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekt aus, und wählen Sie dann auf der Menüleiste **Erstellen** > **Nur Projekt** und einen der folgenden Befehle aus:
 
-- **Nur** *Projektname erstellen*
+- **Projektname** *nur erstellen*
 
-- **Nur** *Projektname neu erstellen*
+- **Projektname** *nur neu erstellen*
 
-- **Nur** *Projektname bereinigen*
+- **Projektname** *nur bereinigen*
 
-- **Nur** *Projektname bereinigen*
+- **Projektname** *nur verknüpfen*
 
 Diese Befehle betreffen nur das ausgewählte [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekt, d.h. Projektabhängigkeiten oder Projektmappendateien werden nicht erstellt, neu erstellt, bereinigt oder gelinkt. Abhängig von Ihrer Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] enthält das Untermenü **Nur Projekt** möglicherweise noch weitere Befehle.
 

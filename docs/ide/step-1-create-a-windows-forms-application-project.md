@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516694"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588784"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Schritt 1: Erstellen eines Windows Forms-App-Projekts
 
@@ -25,7 +25,7 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
 
 ## <a name="open-visual-studio-2017"></a>Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Das Dialogfeld sollte in etwa wie auf dem folgenden Screenshot dargestellt aussehen.
+1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus. Das Dialogfeld sollte in etwa wie auf dem folgenden Screenshot dargestellt aussehen.
 
      ![Dialogfeld „Neues Projekt“](../ide/media/newprojectdialogcallouts.png)<br/>*Dialogfeld* ***Neues Projekt***
 

@@ -1,7 +1,7 @@
 ---
 title: Steigern Ihrer Produktivität für die .NET-Entwicklung
 description: Überblick über die Navigation, die Codeanalyse, Unittests und andere Funktionen, um schneller besseren .NET Code zu schreiben
-author: mikadumont
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/21/2019
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567501"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivitätsleitfaden für Visual Studio für C#-Entwickler
 
@@ -41,7 +41,7 @@ Einige Erweiterungen bieten auch Tastaturschemas an:
 
 Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 
-| Tastenkombination (Alle Profile) | Befehl | BESCHREIBUNG |
+| Tastenkombination (Alle Profile) | Befehl | Beschreibung |
 |-|-|-|
 | **STRG**+**T** | Gehe zu allen | Navigieren zu einer beliebigen Datei-/Typ-/Member-/Symboldeklaration |
 | **F12** (oder **Strg**+**Klicken**) | Gehe zu Definition | Navigieren zum Ort, an dem ein Symbol definiert ist |

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810044"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405316"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -23,19 +23,23 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
    > [!div class="mx-imgBorder"]
    > ![Azure-Kachel](_img/vs-azure/vs-azure-tile.png)
 
-3. Wenn Sie kein Azure-Abonnement haben, füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen. Aktivieren Sie dann das Kontrollkästchen, um die Geschäftsbedingungen zu akzeptieren, und klicken Sie dann auf **Registrieren**:
+3. Wenn Sie kein Azure-Abonnement haben, füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen.  Der erste Schritt besteht darin, Ihre persönlichen Daten anzugeben und dann auf **Weiter** zu klicken.
    > [!div class="mx-imgBorder"]
-   > ![Azure-Registrierung](_img/vs-azure/vs-azure-sign-up-cropped.png). Wenn Sie über ein vorhandenes Abonnement verfügen, aktivieren Sie das Kontrollkästchen, um die Vereinbarung zu akzeptieren, und klicken Sie dann auf **Registrieren**.
+   > ![Azure-Registrierung](_img/vs-azure/vs-azure-about-you.png)
 
-4. Wenn Ihr Konto verwendet werden kann, können Sie sich für einen Azure-Supportplan entscheiden, der separat erworben werden kann, oder erste Schritte mit Ihrem Azure-Abonnement durchführen.
+4. Als nächstes müssen Sie Ihre Identität mit einem einfachen Überprüfungscode verifizieren. Geben Sie Ihre Telefonnummer an, und wählen Sie, ob Sie den Code per SMS oder Telefon erhalten möchten.  Geben Sie den empfangenen Code ein, und klicken Sie auf **Code überprüfen**.   
    > [!div class="mx-imgBorder"]
-   > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Das Schnellstartcenter für das Azure-Dashboard wird geladen.  
+5. Klicken Sie für den letzten Schritt auf das Kontrollkästchen, um die Bedingungen zu akzeptieren, und klicken Sie dann auf **Registrieren**.  Das ist schon alles!
    > [!div class="mx-imgBorder"]
-   > ![Azure-Dashboard](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-agreement.png)
 
-6. Fügen Sie ein Lesezeichen für das [Azure-Portal](https://portal.azure.com) zu, damit Sie darauf immer leicht und schnell zugreifen können.
+0. Das Schnellstartcenter für das Azure-Dashboard wird geladen.  
+   > [!div class="mx-imgBorder"]
+   > ![Azure-Dashboard](_img/vs-azure/vs-azure-quick-start.png) 
+
+0. Fügen Sie ein Lesezeichen für das [Azure-Portal](https://portal.azure.com) zu, damit Sie darauf immer leicht und schnell zugreifen können.
 
 
 ## <a name="eligibility"></a>Berechtigung

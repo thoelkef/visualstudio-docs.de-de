@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919121"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589785"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -25,7 +25,7 @@ EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschl
 Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt in Visual Studio hinzufügen, werden neue Codezeilen gemäß der EditorConfig-Einstellungen formatiert. Die Formatierung von vorhandenem Code wird nicht geändert, es sei denn, Sie führen einen der folgenden Befehle aus:
 
  - [Codebereinigung](../ide/code-styles-and-code-cleanup.md) (**STRG**+**K**, **STRG**+**E**): wendet die Leerzeicheneinstellungen, z. B. das Einzugsformat, und ausgewählte Codeformatierungseinstellungen an, z. B. die Sortierung von `using`-Anweisungen.
- - **Bearbeiten** > **Erweitert** > **Dokument formatieren** (**STRG**+**K**, **STRG**+**D** im Standardprofil): wendet nur die Leerzeicheneinstellungen an, z. B. das Einzugsformat.
+ - **Bearbeiten** > **Erweitert** > **Dokument formatieren** (oder **STRG**+**K**, **STRG**+**D** im Standardprofil): wendet nur die Leerzeicheneinstellungen an, z. B. das Einzugsformat.
 
  ::: moniker-end
 
@@ -104,7 +104,7 @@ Es gibt mehrere Möglichkeiten, wie Sie Ihrem Projekt eine EditorConfig-Datei hi
 
 - Das [Coderückschluss-Feature](/visualstudio/intellicode/code-style-inference) von IntelliCode für Visual Studio leitet Codeformate aus vorhandenem Code ab. Dann erstellt das Feature eine nicht leere EditorConfig-Datei, in der Ihre bevorzugten Codeformate bereits definiert sind.
 
-- Ab Visual Studio 2019 können Sie in **Extras** > **Optionen** [eine EditorConfig-Datei basierend auf Ihren Codeformateinstellungen generieren](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files).
+- Ab Visual Studio 2019 können Sie in **Extras** > **Optionen**[eine EditorConfig-Datei basierend auf Ihren Codeformateinstellungen generieren](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files).
 
 ## <a name="file-hierarchy-and-precedence"></a>Dateihierarchie und Rangfolge
 
@@ -114,7 +114,7 @@ Fügen Sie zur Außerkraftsetzung einiger oder aller EditorConfig-Einstellungen 
 
 ![EditorConfig-Hierarchie](../ide/media/vside_editorconfig_hierarchy.png)
 
-Wenn einige, aber nicht alle Einstellungen außer Kraft gesetzt werden sollen, geben Sie nur diese Einstellungen in der *EDITORCONFIG*-Datei an. Nur die Eigenschaften, die Sie explizit in der Datei auf der niedrigsten Ebene auflisten, werden außer Kraft gesetzt. Andere Einstellungen aus *EDITORCONFIG*-Dateien auf höheren Ebenen werden weiterhin angewendet. Wenn Sie sicherstellen möchten, dass die _Nein_-Einstellungen von _beliebigen_ *EDITORCONFIG*-Dateien auf höheren Ebenen auf diesen Teil der Codebasis angewendet werden, fügen Sie die ```root=true```-Eigenschaft zu der *EDITORCONFIG*-Datei auf niedrigerer Ebene hinzu:
+Wenn einige, aber nicht alle Einstellungen außer Kraft gesetzt werden sollen, geben Sie nur diese Einstellungen in der *EDITORCONFIG*-Datei an. Nur die Eigenschaften, die Sie explizit in der Datei auf der niedrigsten Ebene auflisten, werden außer Kraft gesetzt. Andere Einstellungen aus *EDITORCONFIG*-Dateien auf höheren Ebenen werden weiterhin angewendet. Wenn Sie sicherstellen möchten, dass die _Nein_-Einstellungen von _beliebigen_*EDITORCONFIG*-Dateien auf höheren Ebenen auf diesen Teil der Codebasis angewendet werden, fügen Sie die ```root=true```-Eigenschaft zu der *EDITORCONFIG*-Datei auf niedrigerer Ebene hinzu:
 
 ```ini
 # top-most EditorConfig file

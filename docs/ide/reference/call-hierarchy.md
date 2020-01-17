@@ -6,17 +6,17 @@ f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a03a286d8b097fbd208a828411728aaa7a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668209"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595799"
 ---
 # <a name="view-call-hierarchy"></a>Anzeigen der Aufrufhierarchie
 
@@ -63,7 +63,7 @@ Wenn Sie im Strukturansichtsbereich **Aufrufhierarchie** einen untergeordneten M
 
 In der folgenden Tabelle werden einige Kontextmenüoptionen beschrieben, auf die Sie zugreifen können, wenn Sie mit der rechten Maustaste auf einen Knoten im Strukturansichtsbereich klicken.
 
-|Kontextmenüelement|BESCHREIBUNG|
+|Kontextmenüelement|Beschreibung|
 | - |-----------------|
 |**Als neuen Stamm hinzufügen**|Fügt dem Strukturansichtsbereich den ausgewählten Knoten als neuen Stammknoten hinzu. Dadurch können Sie sich auf eine bestimmte Unterstruktur konzentrieren.|
 |**Stamm entfernen**|Entfernt den ausgewählten Stammknoten aus dem Strukturansichtsbereich. Diese Option ist nur in einem Stammknoten verfügbar.<br /><br /> Sie können außerdem die Symbolleistenschaltfläche **Stamm entfernen** verwenden, um den ausgewählten Stammknoten zu entfernen.|

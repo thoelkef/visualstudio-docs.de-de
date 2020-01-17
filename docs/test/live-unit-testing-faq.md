@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653039"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591540"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – FAQ (Häufig gestellte Fragen)
 
@@ -85,15 +85,26 @@ Möglicherweise gibt es z.B. ein Ziel, das NuGet-Pakete während eines reguläre
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>Fehlermeldungen mit \<OutputPath> oder \<OutDir>
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>Fehlermeldungen mit \<OutputPath>, \<OutDir> oder \<IntermediateOutputPath>
 
 **Wenn Live Unit Testing versucht, meine Projektmappe zu erstellen, warum wird dann folgende Fehlermeldung angezeigt: „`<OutputPath>` oder `<OutDir>` werden scheinbar ohne Bedingungen festgelegt, und Live Unit Testing führt keine Tests der Ausgabeassembly aus“?**
 
-Dieser Fehler kann auftreten, wenn der Buildvorgang für Ihre Projektmappe bedingungslos `<OutputPath>` oder `<OutDir>` überschreibt, sodass diese Elemente kein Unterverzeichnis von `<BaseOutputPath>` sind. In solchen Fällen funktioniert Live Unit Testing nicht, da von der Funktion diese Werte auch überschrieben werden, um sicherzustellen, dass Buildartefakte in einem Ordner unter `<BaseOutputPath>` abgelegt werden. Wenn Sie den Speicherort überschreiben müssen, in dem Ihre Buildartefakte in einem regulären Build abgelegt werden, überschreiben Sie `<OutputPath>` bedingt basierend auf `<BaseOutputPath>`.
+Sie können diesen Fehler erhalten, wenn der Buildprozess für Ihre Lösung über eine benutzerdefinierte Logik verfügt, die angibt, wo Binärdateien generiert werden sollen. Standardmäßig hängt der Speicherort Ihrer Binärdateien von `<OutputPath>`, `<OutDir>` oder `<IntermediateOutputPath>` sowie von `<BaseOutputPath>` oder `<BaseIntermediateOutputPath>` ab.
 
-Beispiel: Ihr Build überschreibt `<OutputPath>`, wie unten dargestellt:
+Live Unit Testing überschreibt diese Variablen, um sicherzustellen, dass Buildartefakte in einem Ordner für „Live Unit Testing-Artefakte“ abgelegt werden und zu einem Fehler führen, wenn Ihr Buildprozess diese Variablen ebenfalls überschreibt.
 
-```xml 
+Es gibt zwei Hauptansätze, um Live Unit Testing erfolgreich zu gestalten. Für einfachere Buildkonfigurationen können Sie Ihre Ausgabepfade auf `<BaseIntermediateOutputPath>` basieren lassen. Für komplexere Konfigurationen können Sie Ihre Ausgabepfade auf `<LiveUnitTestingBuildRootPath>` basieren lassen.
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>Überschreiben von `<OutputPath>`/`<IntermediateOutputPath>`, bedingt basierend auf `<BaseOutputPath>`/ `<BaseIntermediateOutputPath>`.
+
+> [!NOTE]
+> Um diesen Ansatz nutzen zu können, muss jedes Projekt in der Lage sein, den Buildvorgang unabhängig voneinander durchzuführen. Verwenden Sie während des Builds kein Projektverweisartefakte aus einem anderen Projekt. Verwenden Sie kein Projekt, das Assemblys während der Laufzeit dynamisch aus einem anderen Projekt lädt (z. B. `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")`).
+
+Während des Buildvorgangs überschreibt Live Unit Testing automatisch die `<BaseOutputPath>`/`<BaseIntermediateOutputPath>`-Variablen, um den Ordner für Live Unit Testing-Artefakte als Ziel festzulegen.
+
+Beispiel: Ihr Build überschreibt <OutputPath>, wie unten dargestellt:
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ Beispiel: Ihr Build überschreibt `<OutputPath>`, wie unten dargestellt:
 
 Dann können Sie ihn durch folgende XML ersetzen:
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ Dann können Sie ihn durch folgende XML ersetzen:
 Dadurch wird sichergestellt, dass sich `<OutputPath>` im Ordner `<BaseOutputPath>` befindet.
 
 Überschreiben Sie `<OutDir>` nicht direkt im Buildvorgang. Überschreiben Sie stattdessen `<OutputPath>`, um Buildartefakte an einem bestimmten Speicherort abzulegen.
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>Überschreiben Ihrer Eigenschaften auf Grundlage der `<LiveUnitTestingBuildRootPath>`-Eigenschaft.
+
+> [!NOTE]
+> Bei dieser Vorgehensweise müssen Sie auf die Dateien achten, die unter dem Artefaktordner hinzugefügt und nicht während des Builds generiert werden. Das folgende Beispiel zeigt, wie Sie vorgehen müssen, wenn Sie den Ordner „packages“ unter „artifacts“ ablegen. Da der Inhalt dieses Ordners während des Builds nicht generiert wird, sollte die MSBuild-Eigenschaft **nicht geändert werden**.
+
+Während eines Live Unit Testing-Builds wird die Eigenschaft `<LiveUnitTestingBuildRootPath>` auf den Speicherort des Ordners für Live Unit Testing-Artefakte festgelegt.
+
+Nehmen Sie z. B. an, dass das Projekt die hier gezeigte Struktur aufweist.
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+Während des Live Unit Testing-Builds wird die Eigenschaft `<LiveUnitTestingBuildRootPath>` auf den vollständigen Pfad von `.vs\...\lut\0\b` festgelegt. Wenn das Projekt die Eigenschaft `<ArtifactsRoot>` definiert, die dem Projektmappenverzeichnis zugeordnet ist, können Sie das MSBuild-Projekt wie folgt aktualisieren:
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>Erstellen eines Artefaktspeicherorts
 
@@ -133,8 +184,6 @@ Es gibt mehrere Unterschiede:
 - Live Unit Testing erstellt keine neue Anwendungsdomäne zum Ausführen von Tests. Tests, die im Fenster **Test-Explorer** ausgeführt werden, erstellen dagegen eine neue Anwendungsdomäne.
 
 - Live Unit Testing führt Tests in allen Testassemblys nacheinander aus. Im **Test-Explorer** können Sie auswählen, mehrere Tests parallel auszuführen.
-
-- Für die Ermittlung und Ausführung von Tests in Live Unit Testing wird Version 2 von `TestPlatform` verwendet, während im Fenster **Test-Explorer** Version 1 verwendet wird. In den meisten Fällen sollten Sie allerdings keinen Unterschied feststellen.
 
 - **Test-Explorer** führt Tests standardmäßig in einem Singlethread-Apartment (STA) aus, während Live Unit Testing Tests in einem Multithread-Apartment (MTA) ausführt. Um MSTest-Tests in STA in Live Unit Testing auszuführen, versehen Sie die Testmethode oder die enthaltende Klasse mit dem `<STATestMethod>`- oder dem `<STATestClass>`-Attribut, das im NuGet-Paket `MSTest.STAExtensions 1.0.3-beta` enthalten ist. Ergänzen Sie für NUnit die Testmethode mit dem `<RequiresThread(ApartmentState.STA)>`-Attribut, und für xUnit mit dem `<STAFact>`-Attribut.
 

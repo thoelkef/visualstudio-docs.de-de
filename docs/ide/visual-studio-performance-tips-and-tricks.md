@@ -2,17 +2,17 @@
 title: Tipps zum Verbessern der Leistung
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647150"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590669"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -107,13 +107,13 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 
    ::: moniker range="vs-2017"
 
-    Um Erweiterungen zu deaktivieren, deaktivieren Sie unter **Tools** > **Erweiterungen und Updates** eine bestimmte Erweiterung.
+    Um Erweiterungen zu deaktivieren, wechseln Sie zu **Tools** > **Erweiterungen und Updates**, und deaktivieren eine bestimmte Erweiterung.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Um Erweiterungen zu deaktivieren, deaktivieren Sie unter **Erweiterungen** > **Erweiterungen und Updates** eine bestimmte Erweiterung.
+    Um Erweiterungen zu deaktivieren, deaktivieren Sie unter **Erweiterungen** > **Erweiterungen verwalten** eine bestimmte Erweiterung.
 
    ::: moniker-end
 

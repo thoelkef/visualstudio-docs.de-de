@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958183"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678986"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -59,7 +59,7 @@ Verwenden Sie eine der Methoden, und erstellen Sie eine App mit dem Namen „Hel
 | **tests.py** | Python-Datei, die die grundlegende Struktur der Komponententests enthält. |
 | **views.py** | Ansichten sind das, was Sie normalerweise für Webseiten halten. Sie erhalten HTTP-Anforderungen und geben eine HTTP-Antwort zurück. Ansichten werden in der Regel als HTML gerendert, das Webbrowser anzeigen können, aber eine Ansicht muss nicht notwendigerweise sichtbar sein (z.B. ein vorläufiges Formular). Eine Ansicht wird durch eine Python-Funktion definiert, die dafür verantwortlich ist, das HTML zu rendern und an den Browser zu senden. Die Datei *views.py* ist ein Standard-Ausgangspunkt für die Erstellung von Ansichten und enthält zunächst nur die Anweisung `from django.shortcuts import render`. |
 
-Der Inhalt der Datei *app.py* sieht wie folgt aus, wenn Sie den Namen „HelloDjangoApp“ verwenden:
+Der Inhalt der Datei *apps.py* sieht wie folgt aus, wenn Sie den Namen „HelloDjangoApp“ verwenden:
 
 ```python
 from django.apps import AppConfig
@@ -101,7 +101,7 @@ Wenn Sie an diesem Punkt das Projekt in Visual Studio erneut ausführen (über d
 
     Jedes URL-Muster beschreibt die Ansichten, an die Django bestimmte websitebezogene URLs weiterleitet (d.h. der Teil, der auf „`https://www.domain.com/`“ folgt). Der erste Eintrag in `urlPatterns`, der mit dem regulären Ausdruck `^$` beginnt, ist das Routing für das Stammverzeichnis der Website, "/". Der zweite Eintrag, `^home$`, leitet "/ home"weiter. Eine beliebige Anzahl von Routings zu derselben Ansicht ist möglich.
 
-1. Führen Sie das Projekt erneut aus, um die Meldung **Hello, Django!**, wie in der Ansicht definiert, zu sehen. Stoppen Sie den Server, wenn Sie fertig sind.
+1. Führen Sie das Projekt erneut aus, um die Meldung **Hello, Django!** , wie in der Ansicht definiert, zu sehen. Stoppen Sie den Server, wenn Sie fertig sind.
 
 ### <a name="commit-to-source-control"></a>Ausführen eines Commits für die Quellcodeverwaltung
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 9e8e306aea1615649223c96f0c5a7041574f844d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516687"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588849"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
 
@@ -30,7 +30,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
 1. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **Visual C#** oder **Visual Basic** aus, und klicken Sie dann auf **Windows-Desktop**.
 

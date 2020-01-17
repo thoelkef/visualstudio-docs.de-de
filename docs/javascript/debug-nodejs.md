@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777932"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678973"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -44,7 +44,7 @@ Sie können mithilfe von Visual Studio JavaScript- und TypeScript-Code debuggen.
 ## <a name="debug-client-side-script"></a>Debuggen von clientseitigen Skripts
 
 ::: moniker range=">=vs-2019"
-Visual Studio unterstützt das clientseitige Debuggen nur für Chrome und Microsoft Edge (Chromium). In einigen Szenarios erreicht der Debugger automatisch Breakpoints in JavaScript- und TypeScript-Code sowie in Skripts, die in HTML-Dateien eingebettet sind. Informationen zum Debuggen von clientseitigen Skripts in ASP.NET-Apps finden Sie im Blogbeitrag zum [Debuggen von JavaScript in Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) und in [diesem Beitrag zu Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+Visual Studio unterstützt das clientseitige Debuggen nur für Chrome und Microsoft Edge (Chromium). In einigen Szenarios erreicht der Debugger automatisch Breakpoints in JavaScript- und TypeScript-Code sowie in Skripts, die in HTML-Dateien eingebettet sind. Informationen zum Debuggen von clientseitigen Skripts in ASP.NET-Apps finden Sie im Blogbeitrag zum [Debuggen von JavaScript in Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) und in [diesem Beitrag zu Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome). Weitere Informationen zum Debuggen von TypeScript in ASP.NET Core finden Sie auch unter [Erstellen einer ASP.NET Core-App mit TypeScript](tutorial-aspnet-with-typescript.md).
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio unterstützt das clientseitige Debuggen nur für Chrome und Internet Explorer. In einigen Szenarios erreicht der Debugger automatisch Breakpoints in JavaScript- und TypeScript-Code sowie in Skripts, die in HTML-Dateien eingebettet sind. Informationen zum Debuggen von clientseitigen Skripts in ASP.NET-Apps finden Sie im Blogbeitrag [Client-seitiges Debuggen von ASP.NET-Projekten in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
@@ -86,7 +86,7 @@ Verwenden Sie Chrome für dieses Szenario.
 
     `msedge --remote-debugging-port=9222`
 
-    oder
+    -oder-
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end

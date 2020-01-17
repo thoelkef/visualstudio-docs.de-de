@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589746"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -88,11 +88,11 @@ Sie können auch leere Projektmappen ohne Projekt erstellen. Dies erweist sich u
 
 ### <a name="to-create-an-empty-solution"></a>So erstellen Sie eine leere Projektmappe
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
 ::: moniker range="vs-2017"
 
-2. Klicken Sie im linken Bereich in der erweiterten Liste (**Vorlagen**) auf **Andere Projekttypen** > **Visual Studio-Projektmappen**.
+2. Klicken Sie im linken Bereich (**Vorlagen**) auf **Andere Projekttypen** > **Visual Studio-Projektmappen** in der erweiterten Liste.
 
 3. Wählen Sie im mittleren Bereich die Option **Leere Projektmappe** aus.
 

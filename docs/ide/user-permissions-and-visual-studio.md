@@ -1,36 +1,36 @@
 ---
 title: Als Administrator ausführen
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
 - user permissions
 - administrative privileges
 - permissions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647345"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75718635"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 
-Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutzer ausführen.
+Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als typischer Benutzer ausführen.
 
 > [!WARNING]
 > Sie sollten auch sicherstellen, dass Sie keine Visual Studio-Projektmappe kompilieren, starten oder debuggen, die nicht von einer vertrauenswürdigen Person oder einem vertrauenswürdigen Speicherort stammt.
 
-Sie können fast jeden Vorgang in der Visual Studio-IDE als normaler Benutzer durchführen. Sie benötigen Administratorberechtigungen, um folgende Aufgaben durchzuführen:
+Sie können fast jeden Vorgang in der Visual Studio-IDE als typischer Benutzer durchführen. Sie benötigen Administratorberechtigungen, um folgende Aufgaben durchzuführen:
 
 |Bereich|Aufgabe|Weitere Informationen|
 |----------|----------| - |
-|Installation|Installieren von Visual Studio.|[Installieren von Visual Studio](../install/install-visual-studio.md)|
+|Installation|Installieren oder ändern Sie Visual Studio.|[Installieren von Visual Studio](../install/install-visual-studio.md), [Ändern von Visual Studio](../install/modify-visual-studio.md)|
 ||Installieren, Aktualisieren oder Entfernen von lokalen Hilfeinhalten.|[Installieren und Verwalten von lokalen Hilfeinhalten](../help-viewer/install-manage-local-content.md)|
 |Werkzeugkasten|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Werkzeugkasten](../ide/reference/toolbox.md)|
 |Erstellung|Verwenden von Postbuildereignissen, die eine Komponente registrieren.|[Grundlagen benutzerdefinierter Buildschritte und Buildereignisse](/cpp/build/understanding-custom-build-steps-and-build-events)|

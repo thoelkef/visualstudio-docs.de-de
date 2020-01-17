@@ -7,16 +7,16 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bdad856a6ea0ec6cca8292bc3095f51c500bcb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970717"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591670"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask-Basisklasse
 
@@ -32,8 +32,8 @@ In der folgenden Tabelle werden die Parameter der **VCToolTask**-Basisklasse bes
 |**AdditionalOptions**|Optionaler **string**-Parameter|
 |**EffectiveWorkingDirectory**|Optionaler **string**-Parameter|
 |**EnableErrorListRegex**|Optionaler **bool**-Parameter<br/><br/>Der Standardwert ist `true`.|
-|**ErrorListRegex**|Optionaler **ITaskItem[]**-Parameter.|
-|**ErrorListListExclusion**|Optionaler **ITaskItem[]**-Parameter.|
+|**ErrorListRegex**|Optionaler **ITaskItem[]** -Parameter.|
+|**ErrorListListExclusion**|Optionaler **ITaskItem[]** -Parameter.|
 |**GenerateCommandLine**|Optionaler **string**-Parameter<br/><br/>Verwendet die Werte **CommandLineFormat** *format* [Standardwert = CommandLineFormat.ForBuildLog] und **EscapeFormat** *escapeFormat* [Standardwert = EscapeFormat.Default].|
 |**GenerateCommandLineExceptSwitches**|Optionaler **string**-Parameter<br/><br/>Verwendet die Werte **string[]** *switchesToRemove*, **CommandLineFormat** *format* [Standardwert = CommandLineFormat.ForBuildLog] und **EscapeFormat** *escapeFormat* [Standardwert = EscapeFormat.Default].|
 

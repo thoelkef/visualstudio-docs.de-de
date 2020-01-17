@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118995"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589967"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Schritt 5: Hinzufügen von Steuerelementen zum Formular
 
@@ -43,7 +43,7 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref
 
 1. Wählen Sie im Formular **TableLayoutPanel** aus, und fügen Sie dem Formular anschließend ein CheckBox-Steuerelement hinzu. Doppelklicken Sie in der **Toolbox** auf das Element **CheckBox**, um der nächsten freien Zelle in der Tabelle ein neues CheckBox-Steuerelement hinzuzufügen. Da ein PictureBox-Steuerelement die ersten beiden Zellen im TableLayoutPanel einnimmt, wird das CheckBox-Steuerelement der linken unteren Zelle hinzugefügt. Wählen Sie die Eigenschaft **Text** aus, und geben Sie wie in der folgenden Abbildung dargestellt das Wort **Stretch** ein.
 
-    ![TextBox-Steuerelement mit Stretch-Eigenschaft](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox***-*Steuerelement mit* ***Stretch***-*Eigenschaft*
+    ![TextBox-Steuerelement mit Stretch-Eigenschaft](../ide/media/express_pictureviewercheckbox.png)<br/>***Steuerelement*** *TextBox* mit ***Stretch***-*Eigenschaft*
 
 1. Wählen Sie das Steuerelement **TableLayoutPanel** im Formular aus, und wechseln Sie dann zur Gruppe **Container** in der **Toolbox** (wo Sie das TableLayoutPanel-Steuerelement abgerufen haben). Doppelklicken Sie auf das Element **FlowLayoutPanel**, um der letzten Zelle (unten rechts) ein neues Steuerelement hinzuzufügen. Docken Sie dann das FlowLayoutPanel-Element im TableLayoutPanel-Steuerelement an. Hierzu klicken Sie entweder in der Aufgabenliste des FlowLayoutPanel-Elements auf **In übergeordnetem Container andocken** oder legen die **Dock**-Eigenschaft des Steuerelements auf **Fill** fest.
 

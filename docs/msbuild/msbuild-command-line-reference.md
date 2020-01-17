@@ -12,17 +12,17 @@ helpviewer_keywords:
 - MSBuild, command line reference
 - msbuild.exe
 ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a23a82afcc484cbbe71bf167ecd0884f399e656
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: e8cd04d16f35ae2cc1edaf43ae9f8803c3e424ba
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252647"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589252"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild-Befehlszeilenreferenz
 Wenn Sie mithilfe von *MSBuild.exe* ein Projekt oder eine Projektmappendatei erstellen, können Sie diverse Optionen verwenden, um verschiedene Aspekte des Prozesses festzulegen.
@@ -37,13 +37,13 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ## <a name="arguments"></a>Argumente
 
-|Argument|BESCHREIBUNG|
+|Argument|Beschreibung|
 |--------------|-----------------|
 |`ProjectFile`|Erstellt die Ziele in der von Ihnen angegebenen Projektdatei. Wenn Sie keine Projektdatei angeben, durchsucht MSBuild das aktuelle Arbeitsverzeichnis nach einer Erweiterung, die mit *proj* endet, und verwendet diese. Sie können hier auch eine Visual Studio-Projektmappendatei als Argument angeben.|
 
 ## <a name="switches"></a>Schalter
 
-|Schalter|Kurzform|BESCHREIBUNG|
+|Schalter|Kurzform|Beschreibung|
 |------------|----------------|-----------------|
 |-help|/? oder -h|Zeigt Nutzungsinformationen an. Der folgende Befehl ist ein Beispiel:<br /><br /> `msbuild.exe -?`|
 |-detailedsummary|-ds|Zeigt am Ende des Buildprotokolls ausführliche Informationen zu den erstellten Konfigurationen und deren Planung in Knoten an.|
@@ -64,7 +64,7 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ### <a name="switches-for-loggers"></a>Optionen für Protokollierungen
 
-|Schalter|Kurzform|BESCHREIBUNG|
+|Schalter|Kurzform|Beschreibung|
 |------------|----------------|-----------------|
 |-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Übergibt die angegebenen Parameter an die Konsolenprotokollierung, die Buildinformationen im Konsolenfenster anzeigt. Sie können die folgenden Parameter angeben:<br /><br /> -   **PerformanceSummary**. Zeigt die Zeitdauer bei der Arbeit an Aufgaben, Zielen und Projekten an<br />-   **Summary**. Zeigt am Ende eine Zusammenfassung zu aufgetretenen Fehlern und Warnungen an.<br />-   **NoSummary**. Am Ende wird keine Zusammenfassung zu aufgetretenen Fehlern und Warnungen angezeigt.<br />-   **ErrorsOnly**. Nur Fehler werden angezeigt.<br />-   **WarningsOnly**. Nur Warnungen werden angezeigt.<br />-   **NoItemAndPropertyList**. Unterdrückt die Anzeige der Liste von Elementen und Eigenschaften, die zu Beginn jedes Projekts angezeigt wird, wenn der Ausführlichkeitsgrad auf `diagnostic` festgelegt ist.<br />-   **ShowCommandLine**. Zeigt `TaskCommandLineEvent`-Meldungen an.<br />-   **ShowTimestamp**. Stellt jeder Meldung den zugehörigen Zeitstempel voran.<br />-   **ShowEventId**. Zeigt zu jedem Ereignis vom Typ "Gestartet" und "Abgeschlossen" sowie zu jeder Meldung die Ereignis-ID an.<br />-   **ForceNoAlign**. Hierbei wird der Text nicht der Größe des Konsolenpuffers angeglichen.<br />-   **DisableConsoleColor**. Verwendet bei allen Protokollierungsmeldungen die Standardkonsolenfarben.<br />-   **DisableMPLogging**. Deaktiviert bei Ausführung im Einzelprozessormodus das Multiprozessor-Protokollierungsformat der Ausgabe.<br />-   **EnableMPLogging**. Aktiviert das Multiprozessor-Protokollierungsformat auch bei Ausführung im Einzelprozessormodus. Dieses Protokollierungsformat ist standardmäßig aktiviert.<br />-   **Verbosity**. Überschreibt die Einstellung **-verbosity** für diese Protokollierung.<br /><br /> Mehrere Parameter sind mit einem Semikolon zu trennen, wie im folgenden Beispiel gezeigt:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
 |-distributedFileLogger|-dfl|Protokolliert die Buildausgabe jedes MSBuild-Knotens in dessen eigene Datei. In der Standardeinstellung werden diese Dateien im aktuellen Verzeichnis gespeichert. Die Namen der Dateien lauten standardmäßig *MSBuild\<NodeId>.log*. Sie können den Schalter **-fileLoggerParameters** verwenden, um den Speicherort der Dateien und andere Parameter für „fileLogger“ anzugeben.<br /><br /> Wenn Sie eine Protokolldatei mithilfe des Schalters **-fileLoggerParameters** benennen, wird die verteilte Protokollierung diesen Namen als Vorlage verwenden und die Knoten-ID an ihn anfügen, wenn sie eine Protokolldatei für jeden Knoten erstellt.|

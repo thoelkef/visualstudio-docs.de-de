@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 02/21/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ce6e98e2d068cd569247c4c4ea869c4280101d47
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126088"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75399754"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Erstellen einer App mit mehreren Containern mit Docker Compose
 
 In diesem Tutorial erfahren Sie, wie Sie mehrere Container verwalten und zwischen ihnen kommunizieren können, wenn Sie Containertools in Visual Studio verwenden.  Für die Verwaltung mehrerer Container sind die *Containerorchestrierung* und ein Orchestrator wie Docker Compose, Kubernetes oder Service Fabric erforderlich. In diesem Tutorial wird Docker Compose verwendet. Docker Compose eignet sich bestens für das lokale Debuggen und Testen während des Entwicklungszyklus.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -28,6 +28,7 @@ In diesem Tutorial erfahren Sie, wie Sie mehrere Container verwalten und zwische
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit installierten Workloads für **Webentwicklung**, **Azure-Tools** und/oder **plattformübergreifende .NET Core-Entwicklung**
 * [.NET Core 2.2-Entwicklungstools](https://dotnet.microsoft.com/download/dotnet-core/2.2) zur Entwicklung mit .NET Core 2.2
+* [.NET Core 3-Entwicklungstools](https://dotnet.microsoft.com/download/dotnet-core/3.1) zur Entwicklung mit .NET Core 3.1
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Erstellen eines Webanwendungsprojekts
@@ -54,7 +55,7 @@ Klicken Sie nicht auf **Docker-Unterstützung aktivieren**. Die Docker-Unterstü
 
 ## <a name="create-a-web-api-project"></a>Erstellen eines Web-API-Projekts
 
-Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWebAPI*. Wählen Sie **API** als Projekttyp aus, und deaktivieren Sie das Kontrollkästchen **Für HTTPS konfigurieren**. Bei diesem Entwurf wird SSL nur für die Kommunikation mit dem Client verwendet und nicht für die Kommunikation zwischen Containern in derselben Webanwendung. Nur `WebFrontEnd` erfordert HTTPS.
+Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWebAPI*. Wählen Sie **API** als Projekttyp aus, und deaktivieren Sie das Kontrollkästchen **Für HTTPS konfigurieren**. Bei diesem Entwurf wird SSL nur für die Kommunikation mit dem Client verwendet und nicht für die Kommunikation zwischen Containern in derselben Webanwendung. Nur `WebFrontEnd` erfordert HTTPS und der Code in den Beispielen geht davon aus, dass Sie dieses Kontrollkästchen deaktiviert haben.
 
 ::: moniker range="vs-2017"
    ![Screenshot: Erstellen des Web-API-Projekts](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -76,12 +77,15 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
        {
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
-          request.RequestUri = new Uri("http://mywebapi/api/values/1");
+          // request.RequestUri = new Uri("http://mywebapi/WeatherForecast"); // ASP.NET 3 (VS 2019 only)
+          request.RequestUri = new Uri("http://mywebapi/api/values/1"); // ASP.NET 2.x
           var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }
    ```
+
+   Für .NET Core 3.1 in Visual Studio 2019 oder höher verwendet die Web-API-Vorlage eine WeatherForecast-API, also kommentieren Sie diese Zeile nicht aus. Kommentieren Sie stattdessen die Zeile für ASP.NET 2.x aus.
 
 1. Fügen Sie der Datei *Index.cshtml* eine Zeile hinzu, um `ViewData["Message"]` so anzuzeigen, dass die Datei wie der folgende Code aussieht:
     
@@ -99,7 +103,7 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
       </div>
       ```
 
-1. Fügen Sie nun im Web-API-Projekt Code zum Controller „Values“ hinzu, um die von der API zurückgegebene Nachricht für den Aufruf anzupassen, den Sie über *webfrontend* hinzugefügt haben.
+1. (Nur ASP.NET 2.x) Fügen Sie nun im Web-API-Projekt Code zum Controller „Values“ hinzu, um die von der API zurückgegebene Nachricht für den Aufruf anzupassen, den Sie über *webfrontend* hinzugefügt haben.
     
       ```csharp
         // GET api/values/5
@@ -109,6 +113,12 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
             return "webapi (with value " + id + ")";
         }
       ```
+
+    Mit .NET Core 3.1 ist dies nicht erforderlich, da Sie die bereits vorhandene WeatherForecast-API verwenden können. Allerdings müssen Sie den Aufruf von `UseHttpsRedirections` in der Methode `Configure` in *Startup.cs* auskommentieren, da dieser Code HTTP und nicht HTTPS zum Aufrufen der Web-API verwendet.
+
+    ```csharp
+                //app.UseHttpsRedirection();
+    ```
 
 1. Klicken Sie im `WebFrontEnd`-Projekt auf **Hinzufügen > Unterstützung für Containerorchestrator**. Daraufhin wird das Dialogfeld **Docker-Supportoptionen** geöffnet.
 
@@ -163,15 +173,17 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. Führen Sie die Website jetzt lokal aus (F5 oder STRG + F5), um zu überprüfen, ob sie wie erwartet funktioniert. Wenn alles ordnungsgemäß konfiguriert ist, erhalten Sie die Meldung „Hello from webfrontend and webapi (with value 1).“ (Hallo vom webfrontend und der webapi (mit Wert 1)).
+1. Führen Sie die Website jetzt lokal aus (F5 oder STRG + F5), um zu überprüfen, ob sie wie erwartet funktioniert. Wenn alles ordnungsgemäß mit der Version .NET Core 2.x konfiguriert ist, erhalten Sie die Meldung „Hello from webfrontend and webapi (with value 1).“ (Hallo vom webfrontend und der webapi (mit Wert 1)).  Mit .NET Core 3 werden die Daten der Wettervorhersage angezeigt.
 
    Das erste Projekt, das Sie beim Hinzufügen der Containerorchestrierung verwenden, ist so eingerichtet, dass es gestartet wird, wenn Sie die Ausführung oder das Debuggen starten. Sie können die Startaktion in den **Projekteigenschaften** des Projekts „docker-compose“ konfigurieren.  Klicken Sie mit der rechten Maustaste auf den Projektknoten „docker-compose“, um das Kontextmenü zu öffnen, und wählen Sie dann **Eigenschaften** aus, oder drücken Sie ALT + ENTER.  Im folgenden Screenshot werden die Eigenschaften gezeigt, die Sie für die Projektmappe verwenden sollten.  Sie können beispielsweise die geladene Seite ändern, indem Sie die Eigenschaft **Dienst-URL** anpassen.
 
    ![Screenshot: „docker-compose“-Projekteigenschaften](media/tutorial-multicontainer/launch-action.png)
 
-   Folgendes wird beim Start angezeigt:
+   Hier sehen Sie, was beim Start (der Version .NET Core 2.x) angezeigt wird:
 
    ![Screenshot der ausgeführten Web-App](media/tutorial-multicontainer/webfrontend.png)
+
+   Die Web-App für .NET 3.1 zeigt die Wetterdaten im JSON-Format an.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

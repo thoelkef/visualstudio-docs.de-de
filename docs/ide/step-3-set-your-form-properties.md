@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591748"
 ---
 # <a name="step-3-set-your-form-properties"></a>Schritt 3: Festlegen der Formulareigenschaften
 
@@ -56,7 +56,7 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
    - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen starten** aus, die wie folgt aussieht.
 
       ![Symbolleistenschaltfläche „Debugging starten“](../ide/media/express_icondebug.png)<br>
-     *Symbolleistenschaltfläche* ***Debugging starten***
+     ***Symbolleistenschaltfläche*** *„Debugging starten“*
 
      Wie bereits zuvor geschehen, erstellt die IDE die App und führt sie aus, und ein Fenster wird angezeigt.
 
