@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590669"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944207"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -63,7 +63,7 @@ Wenn Sie in der Regel während des Debuggens von Sitzungen über nicht ausreiche
 
     Legen Sie die Optionen auf **Nur angegebene Module** anstelle von **Alle Module** fest, und geben Sie die Module an, die geladen werden sollen. Während des Debuggens können Sie im Fenster **Module** auch mit der rechten Maustaste auf bestimmte Module klicken, um ein Modul in den Symbolladeborgang explizit aufzunehmen. (Wählen Sie zum Öffnen des Fensters während des Debuggens **Debuggen** > **Windows** > **Module** aus.)
 
-    Weitere Informationen finden Sie unter [Understand symbol files (Grundlegendes zu Symboldateien)](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Weitere Informationen finden Sie unter [Understand symbol files (Grundlegendes zu Symboldateien)](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019).
 
 - **Deaktivieren von Diagnosetools**
 

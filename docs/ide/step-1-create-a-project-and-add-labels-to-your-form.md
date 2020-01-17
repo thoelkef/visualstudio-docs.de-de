@@ -10,21 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e8e306aea1615649223c96f0c5a7041574f844d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c0fa7afc7262a1a78b356104f8cc206e8898f22e
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588849"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776134"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
 
 Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projekt und fügen einem Formular Bezeichnungen, eine Schaltfläche und weitere Steuerelemente hinzu. Außerdem legen Sie Eigenschaften für jedes Steuerelement fest, das Sie hinzufügen. Das Projekt enthält das Formular, die Steuerelemente und (später im Lernprogramm) den Code. Das Quiz wird mit der Schaltfläche gestartet, die Bezeichnungen stellen die Quizaufgaben dar und die anderen Steuerelemente zeigen die Quizantworten und die Zeit an, die bis zum Abschluss des Quiz verbleibt.
 
 > [!NOTE]
-> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. 
-> - Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md). 
-> - Informationen zum Herunterladen einer vollständigen Version des Codes finden Sie unter [Tutorialbeispiel des vollständigen Mathequiz](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-for-a-form"></a>So erstellen Sie ein Projekt für ein Formular
 
