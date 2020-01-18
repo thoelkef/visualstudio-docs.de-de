@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316488"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269064"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Gewusst wie: Erstellen von mit Visual Studio 2017 und Visual Studio 2015 kompatiblen Erweiterungen
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Gewusst wie: Erstellen von mit Visual Studio 2019/2017 und Visual Studio 2015 kompatiblen Erweiterungen
 
-In diesem Dokument wird erläutert, wie Sie den Roundtrip von Erweiterbarkeits Projekten zwischen Visual Studio 2015 und Visual Studio 2017 durchführen können. Nach Abschluss dieses Upgrades kann ein Projekt in Visual Studio 2015 und Visual Studio 2017 geöffnet, erstellt, installiert und ausgeführt werden. Als Referenz finden Sie einige Erweiterungen, die einen Roundtrip zwischen Visual Studio 2015 und Visual Studio 2017 durchgehen können, finden Sie unter Beispiele für die [vs SDK-Erweiterbarkeit](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+In diesem Dokument wird erläutert, wie Sie den Roundtrip von Erweiterbarkeits Projekten zwischen Visual Studio 2015 und Visual Studio 2019 oder Visual Studio 2017 durchführen können. Nach Abschluss dieses Upgrades kann ein Projekt sowohl in Visual Studio 2015 als auch in Visual Studio 2019 oder 2017 geöffnet, erstellt, installiert und ausgeführt werden. Als Referenz finden Sie einige Erweiterungen, die einen Roundtrip zwischen Visual Studio 2015 und Visual Studio 2019 oder 2017 durchgehen können, finden Sie unter Visual Studio [SDK-Erweiterbarkeits Beispiele](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-Wenn Sie nur in Visual Studio 2017 erstellen möchten, aber die Ausgabe-VSIX sowohl in Visual Studio 2015 als auch in Visual Studio 2017 ausgeführt werden sollen, lesen Sie das [Dokument zur Erweiterungs Migration](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Wenn Sie nur in Visual Studio 2019/2017 erstellen möchten, aber die Ausgabe-VSIX sowohl in Visual Studio 2015 als auch in Visual Studio 2019/2017 ausgeführt werden sollen, lesen Sie das [Dokument zur Erweiterungs Migration](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 > [!NOTE]
 > Aufgrund von Änderungen in Visual Studio Zwischenversionen funktionieren einige Dinge, die in einer Version funktionieren, nicht in einer anderen Version. Stellen Sie sicher, dass die Features, auf die Sie zugreifen möchten, in beiden Versionen verfügbar sind oder dass die Erweiterung unerwartete Ergebnisse hat.
@@ -32,22 +32,22 @@ Im folgenden finden Sie einen Überblick über die Schritte, die Sie in diesem D
     * Erforderliche Komponenten
 3. Aktualisieren Sie csproj:
     * Aktualisieren Sie `<MinimumVisualStudioVersion>`.
-    * Fügen Sie die `<VsixType>`-Eigenschaft hinzu.
+    * Hinzufügen der `<VsixType>`-Eigenschaft
     * Fügen Sie die Debugeigenschaft `($DevEnvDir)` 3 Mal hinzu.
     * Fügen Sie Bedingungen zum Importieren von Buildtools und Zielen hinzu.
 
-4. Build und Test
+4. Kompilieren und testen
 
-## <a name="environment-setup"></a>Einrichten der Umgebung
+## <a name="environment-setup"></a>Umgebungseinrichtung
 
 In diesem Dokument wird davon ausgegangen, dass Sie Folgendes auf Ihrem Computer installiert haben:
 
 * Visual Studio 2015 mit installiertem vs SDK
-* Visual Studio 2017 mit installierter Erweiterbarkeits Arbeitsauslastung
+* Visual Studio 2019 oder 2017 mit installierter Erweiterbarkeits Arbeitsauslastung
 
 ## <a name="recommended-approach"></a>Empfohlener Ansatz
 
-Es wird dringend empfohlen, dieses Upgrade mit Visual Studio 2015 anstelle von Visual Studio 2017 zu starten. Der Hauptvorteil der Entwicklung in Visual Studio 2015 besteht darin, sicherzustellen, dass Sie nicht auf Assemblys verweisen, die in Visual Studio 2015 nicht verfügbar sind. Wenn Sie in Visual Studio 2017 entwickeln, besteht das Risiko, dass Sie eine Abhängigkeit von einer Assembly einführen, die nur in Visual Studio 2017 vorhanden ist.
+Es wird dringend empfohlen, dieses Upgrade mit Visual Studio 2015 anstelle von Visual Studio 2019 oder 2017 zu starten. Der Hauptvorteil der Entwicklung in Visual Studio 2015 besteht darin, sicherzustellen, dass Sie nicht auf Assemblys verweisen, die in Visual Studio 2015 nicht verfügbar sind. Wenn Sie in Visual Studio 2019 oder 2017 entwickeln, besteht das Risiko, dass Sie eine Abhängigkeit von einer Assembly einführen, die nur in Visual Studio 2019 oder 2017 vorhanden ist.
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Stellen Sie sicher, dass kein Verweis auf Project. JSON vorhanden ist.
 
@@ -67,12 +67,12 @@ Wenn das Projekt eine *Project. JSON* -Datei enthält:
 
 Wir müssen die Buildtools hinzufügen, mit denen wir entsprechend erstellen und Debuggen können. Microsoft hat eine Assembly für den Namen Microsoft. VisualStudio. SDK. BuildTasks erstellt.
 
-Zum Erstellen und Bereitstellen eines VSIXv3 in Visual Studio 2015 und 2017 benötigen Sie die folgenden nuget-Pakete:
+Zum Erstellen und Bereitstellen eines VSIXv3 in Visual Studio 2015 und 2019/2017 benötigen Sie die folgenden nuget-Pakete:
 
 Version | Integrierte Tools
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2019 oder 2017 | Microsoft.VSSDK.BuildTool
 
 Gehen Sie hierzu wie folgt vor:
 
@@ -112,7 +112,7 @@ Gehen Sie hierzu wie folgt vor:
 * Speichern und schließen Sie die Datei.
 
 > [!NOTE]
-> Möglicherweise müssen Sie die erforderliche Version manuell bearbeiten, um sicherzustellen, dass Sie mit allen Versionen von Visual Studio 2017 kompatibel ist. Dies liegt daran, dass der Designer die Mindestversion in die aktuelle Version von Visual Studio einfügt (z. b. 15.0.26208.0). Da andere Benutzer jedoch möglicherweise über eine frühere Version verfügen, empfiehlt es sich, diese manuell in 15,0 zu bearbeiten.
+> Möglicherweise müssen Sie die erforderliche Version manuell bearbeiten, um sicherzustellen, dass Sie mit allen Versionen von Visual Studio 2019 oder 2017 kompatibel ist. Dies liegt daran, dass der Designer die Mindestversion in die aktuelle Version von Visual Studio einfügt (z. b. 15.0.26208.0). Da andere Benutzer jedoch möglicherweise über eine frühere Version verfügen, empfiehlt es sich, diese manuell in 15,0 zu bearbeiten.
 
 An diesem Punkt sollte die Manifestressource in etwa wie folgt aussehen:
 
@@ -195,9 +195,10 @@ Beispiel:
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* Speichern Sie die CSPROJ-Datei, und schließen Sie Sie.
+* Speichern Sie die CSPROJ-Datei, und schließen Sie Sie. 
+  * Beachten Sie Folgendes: Wenn Sie mehr als ein Projekt in der Projekt Mappe verwenden, legen Sie dieses Projekt als Startprojekt fest, indem Sie im Kontextmenü des Projekts die Option "als Startprojekt festlegen" verwenden.) Dadurch wird sichergestellt, dass Visual Studio das Projekt nach dem Entladen erneut öffnet.
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Testen der Erweiterungs Installationen in Visual Studio 2015 und Visual Studio 2017
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>Testen der Erweiterungs Installationen in Visual Studio 2015 und Visual Studio 2019 oder 2017
 
 An diesem Punkt sollte Ihr Projekt bereit sein, ein VSIXv3 zu erstellen, das sowohl in Visual Studio 2015 als auch in Visual Studio 2017 installiert werden kann.
 
@@ -205,7 +206,7 @@ An diesem Punkt sollte Ihr Projekt bereit sein, ein VSIXv3 zu erstellen, das sow
 * Erstellen Sie das Projekt, und bestätigen Sie in der Ausgabe, dass eine VSIX ordnungsgemäß erstellt wird.
 * Navigieren Sie zu Ihrem Projektverzeichnis.
 * Öffnen Sie den Ordner *\bin\debug* .
-* Doppelklicken Sie auf die vsix-Datei, und installieren Sie die Erweiterung in Visual Studio 2015 und Visual Studio 2017.
+* Doppelklicken Sie auf die vsix-Datei, und installieren Sie die Erweiterung in Visual Studio 2015 und Visual Studio 2019/2017.
 * Stellen Sie sicher, dass die **Erweiterung unter Extras > ** **Erweiterungen und Updates** im Abschnitt **installiert** angezeigt wird.
 * Versuchen Sie, die Erweiterung auszuführen, und überprüfen Sie, ob die Erweiterung funktioniert.
 

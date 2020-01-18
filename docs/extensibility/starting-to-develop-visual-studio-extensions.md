@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 63fa0db72a01ddf1f6e1003fc27cf6a28128e036
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188863"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269130"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Beginnen mit der Entwicklung von Visual Studio-Erweiterungen
 
 Wenn Sie noch nie eine Visual Studio-Erweiterung geschrieben haben, haben Sie wahrscheinlich einige Fragen. Wir haben hier einige der gängigsten aufgelistet. Wenn Ihnen die gesuchten Informationen nicht angezeigt werden, verwenden Sie die Feedback Schaltflächen (**war diese Seite hilfreich?** am unteren Bildschirmrand), um zu Fragen, was Sie möchten.
 
 > [!NOTE]
-> Dieser Artikel bezieht sich auf Visual Studio unter Windows. Visual Studio für Mac finden Sie unter [Erweitern von Visual Studio für Mac](/visualstudio/mac/extending-visual-studio-mac).
+> Dieser Artikel bezieht sich auf Visual Studio unter Windows. Visual Studio für Mac finden Sie unter [Erweitern von Visual Studio für Mac](/visualstudio/mac/extending-visual-studio-mac). Visual Studio Code finden Sie unter [Visual Studio Code Extension-API](https://code.visualstudio.com/api).
 
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Welche Software benötige ich zum Entwickeln von Visual Studio-Erweiterungen?
 
@@ -96,3 +96,4 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die die meisten Benut
 ## <a name="see-also"></a>Siehe auch
 
 - [Extending Visual Studio for Mac (Erweitern von Visual Studio für Mac)](/visualstudio/mac/extending-visual-studio-mac)
+- [Erweitern von Visual Studio Code](https://code.visualstudio.com/api)

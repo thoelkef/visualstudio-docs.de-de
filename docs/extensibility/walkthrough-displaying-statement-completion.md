@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632513"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269070"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anweisungs Vervollständigung anzeigen
 Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, indem Sie die Bezeichner definieren, für die Sie den Abschluss bereitstellen möchten, und dann eine Beendigungs Sitzung auslösen. Sie können die Anweisungs Vervollständigung im Kontext eines sprach diensdienstanbieter definieren, eine eigene Dateinamenerweiterung und einen Inhaltstyp definieren und dann den Abschluss nur für diesen Typ anzeigen. Oder Sie können den Abschluss für einen vorhandenen Inhaltstyp, z. –. "Klartext", auslassen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Anweisungs Vervollständigung für den Inhaltstyp "Klartext", der den Inhaltstyp von Textdateien darstellt, auslöst. Der Inhaltstyp "Text" ist der Vorgänger aller anderen Inhaltstypen, einschließlich Code-und XML-Dateien.
@@ -27,7 +27,7 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
 
  In dieser exemplarischen Vorgehensweise wird gezeigt, wie die Anweisungs Vervollständigung für einen hart codierten Satz von bezeichern implementiert wird. In vollständigen Implementierungen sind der Sprachdienst und die Sprachdokumentation für die Bereitstellung dieses Inhalts verantwortlich.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
@@ -40,19 +40,19 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
 
 3. Löschen Sie die vorhandenen Klassendateien.
 
-4. Fügen Sie dem Projekt die folgenden Verweise hinzu, und stellen Sie sicher, dass **CopyLocal** auf `false` festgelegt ist:
+4. Fügen Sie dem Projekt die folgenden Verweise hinzu, und stellen Sie sicher, dass **CopyLocal** auf `false`festgelegt ist:
 
-     Microsoft. VisualStudio. Editor
+     Microsoft.VisualStudio.Editor
 
      Microsoft.VisualStudio.Language.Intellisense
 
      Microsoft.VisualStudio.OLE.Interop
 
-     Microsoft. VisualStudio. Shell. 14,0
+     Microsoft. VisualStudio. Shell. 15,0
 
-     Microsoft. VisualStudio. Shell. immutable. 10.0
+     Microsoft.VisualStudio.Shell.Immutable.10.0
 
-     Microsoft. VisualStudio. Text Manager. Interop
+     Microsoft.VisualStudio.TextManager.Interop
 
 ## <a name="implement-the-completion-source"></a>Implementieren der Vervollständigungs Quelle
  Die Vervollständigungs Quelle ist für das Erfassen der Gruppe von Bezeichnern und das Hinzufügen des Inhalts zum Vervollständigungs Fenster verantwortlich, wenn ein Benutzer einen Vervollständigungs-, z. b. die ersten Buchstaben eines Bezeichners, eingibt. In diesem Beispiel sind die Bezeichner und ihre Beschreibungen in der <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>-Methode hart codiert. In der Praxis verwenden Sie den Parser der Programmiersprache, um die Token zum Auffüllen der Vervollständigungsliste zu erhalten.
@@ -66,7 +66,7 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
      [!code-csharp[VSSDKCompletionTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_1.cs)]
      [!code-vb[VSSDKCompletionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_1.vb)]
 
-3. Ändern Sie die Klassen Deklaration für `TestCompletionSource`, damit Sie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> implementiert:
+3. Ändern Sie die Klassen Deklaration für `TestCompletionSource`, damit Sie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>implementiert:
 
      [!code-csharp[VSSDKCompletionTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_2.cs)]
      [!code-vb[VSSDKCompletionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_2.vb)]
@@ -101,7 +101,7 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
 
 ### <a name="to-implement-the-completion-source-provider"></a>So implementieren Sie den Vervollständigungs Quellen Anbieter
 
-1. Fügen Sie eine Klasse mit dem Namen `TestCompletionSourceProvider` hinzu, die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> implementiert. Exportieren Sie diese Klasse mit der <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Klartext" und der <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "Test Vervollständigung".
+1. Fügen Sie eine Klasse mit dem Namen `TestCompletionSourceProvider` hinzu, die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>implementiert. Exportieren Sie diese Klasse mit der <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Klartext" und der <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "Test Vervollständigung".
 
      [!code-csharp[VSSDKCompletionTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_8.cs)]
      [!code-vb[VSSDKCompletionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_8.vb)]
@@ -117,23 +117,23 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
      [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]
 
 ## <a name="implement-the-completion-command-handler-provider"></a>Implementieren des Vervollständigungs Befehls Handler-Anbieters
- Der Vervollständigungs Befehls Handler-Anbieter wird von einem <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> abgeleitet, der auf ein Text Ansichts Erstellungs Ereignis lauscht und die Ansicht von einem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> konvertiert – das das Hinzufügen des Befehls zur Befehlskette der Visual Studio-Shell – zu einem <xref:Microsoft.VisualStudio.Text.Editor.ITextView> ermöglicht. Da diese Klasse ein MEF-Export ist, können Sie Sie auch verwenden, um die Dienste zu importieren, die für den Befehls Handler selbst erforderlich sind.
+ Der Vervollständigungs Befehls Handler-Anbieter wird von einem <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>abgeleitet, der auf ein Text Ansichts Erstellungs Ereignis lauscht und die Ansicht von einem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>konvertiert – das das Hinzufügen des Befehls zur Befehlskette der Visual Studio-Shell – zu einem <xref:Microsoft.VisualStudio.Text.Editor.ITextView>ermöglicht. Da diese Klasse ein MEF-Export ist, können Sie Sie auch verwenden, um die Dienste zu importieren, die für den Befehls Handler selbst erforderlich sind.
 
 #### <a name="to-implement-the-completion-command-handler-provider"></a>So implementieren Sie den Vervollständigungs Befehls Handler-Anbieter
 
-1. Fügen Sie eine Datei mit dem Namen `TestCompletionCommandHandler` hinzu.
+1. Fügen Sie eine Datei mit dem Namen `TestCompletionCommandHandler`hinzu.
 
 2. Diese using-Direktiven hinzufügen:
 
      [!code-csharp[VSSDKCompletionTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_11.cs)]
      [!code-vb[VSSDKCompletionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_11.vb)]
 
-3. Fügen Sie eine Klasse mit dem Namen `TestCompletionHandlerProvider` hinzu, die <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> implementiert. Exportieren Sie diese Klasse mit einem <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "tokenvervollständigungs Handler", einer <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Klartext" und einer <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
+3. Fügen Sie eine Klasse mit dem Namen `TestCompletionHandlerProvider` hinzu, die <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>implementiert. Exportieren Sie diese Klasse mit einem <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "tokenvervollständigungs Handler", einer <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Klartext" und einer <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
 
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Importieren Sie den <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, der die Konvertierung von einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> in eine <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, eine <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> und eine <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> ermöglicht, die den Zugriff auf standardmäßige Visual Studio-Dienste ermöglicht.
+4. Importieren Sie den <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, der die Konvertierung von einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> in eine <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, eine <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>und eine <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> ermöglicht, die den Zugriff auf standardmäßige Visual Studio-Dienste ermöglicht.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
@@ -148,7 +148,7 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
 
 #### <a name="to-implement-the-completion-command-handler"></a>So implementieren Sie den Vervollständigungs Befehls Handler
 
-1. Fügen Sie eine Klasse mit dem Namen `TestCompletionCommandHandler` hinzu, die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementiert:
+1. Fügen Sie eine Klasse mit dem Namen `TestCompletionCommandHandler` hinzu, die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>implementiert:
 
     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]
