@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 54c2ec423653d1649e7bac9dd302c5f272731477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594057"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845810"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen
 
@@ -54,7 +54,7 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | Wird nicht unterstützt. |
 | Chrome<br /><br /> Firefox | Die Aufzeichnung von Aktionsschritten wird nicht unterstützt. Coded UI-Tests können auf den Browsern Chrome und Firefox mit Visual Studio 2012 Update 4 oder höher wiedergegeben werden. Klicken Sie [hier](using-different-web-browsers-with-coded-ui-tests.md) , um weitere Informationen zu erhalten. |
 | Opera<br /><br /> Safari | Wird nicht unterstützt. |
-| Silverlight | Wird nicht unterstützt.<br /><br /> Für Visual Studo 2013 können Sie jedoch das [Microsoft Visual Studio 2013 Coded UI Test Plugin for Silverlight](https://go.microsoft.com/fwlink/?LinkId=691026) aus der Visual Studio Gallery herunterladen. |
+| Silverlight | Wird nicht unterstützt.<br /><br /> Für Visual Studo 2013 können Sie jedoch das [Microsoft Visual Studio 2013 Coded UI Test Plugin for Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) aus der Visual Studio Gallery herunterladen. |
 | Flash/Java | Wird nicht unterstützt. |
 | Windows Forms 2.0 und höher | Vollständige Unterstützung **Hinweis**:  NetFx-Steuerelemente werden vollständig unterstützt, dies gilt jedoch nicht für alle Steuerelemente von Drittanbietern. |
 | WPF 3.5 und höher | Vollständige Unterstützung<br /><br /> **Hinweis** NetFx-Steuerelemente werden vollständig unterstützt, dies gilt jedoch nicht für alle Steuerelemente von Drittanbietern. |
