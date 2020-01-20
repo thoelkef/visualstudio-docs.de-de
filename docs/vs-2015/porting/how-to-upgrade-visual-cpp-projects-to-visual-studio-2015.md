@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 83794267cbd13b0bde0b1ba6217d08275fe12e05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850336"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918803"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Vorgehensweise: Upgrade von Visual C++-Projekten auf Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [Visual C++-Handbuch: Portieren und Aktualisieren](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
+Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [Visual C++-Handbuch: Portieren und Aktualisieren](/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 Beim ersten Öffnen eines Visual C++-Projekts, das in einer früheren Version von Visual Studio erstellt wurde, werden Sie evtl. aufgefordert, das Projekt zu aktualisieren. Sie werden mit einer Meldung gefragt, ob Sie auf die neueste Version des Visual C++-Compilers und der Bibliotheken aktualisieren möchten. Welche Optionen zum Aktualisieren verfügbar sind, hängt davon ab, welche Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zum Erstellen des Projekts verwendet wurde.
 
@@ -54,4 +54,4 @@ Beim ersten Öffnen eines Visual C++-Projekts, das in einer früheren Version vo
  Wenn Sie weiterhin ein benutzerdefiniertes PlatformToolset in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]verwenden möchten, muss das Toolset unter %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ auf einem x86-Computer oder unter %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ auf einem x64-Computer gespeichert sein. Informationen zum Erstellen eines benutzerdefinierten PlatformToolset finden Sie im Visual C++-Teamblog im Beitrag zur [systemeigenen Festlegung von Zielversionen in C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) .
 
 ## <a name="see-also"></a>Siehe auch
- [Visuelles C++ portieren und Upgraden des Handbuchs](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [portieren, migrieren und Aktualisieren von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++-Handbuch: Portieren und Upgraden](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
