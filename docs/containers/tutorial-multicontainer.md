@@ -3,15 +3,15 @@ title: Tutorial zu mehreren Containern mit Docker Compose & ASP.NET Core
 author: ghogen
 description: Erfahren Sie, wie Sie mehrere Container mit Docker Compose verwenden.
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75399754"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916514"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Erstellen einer App mit mehreren Containern mit Docker Compose
 
@@ -98,7 +98,7 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
     
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
-          <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+          <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
           <p>@ViewData["Message"]</p>
       </div>
       ```
@@ -114,7 +114,7 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
         }
       ```
 
-    Mit .NET Core 3.1 ist dies nicht erforderlich, da Sie die bereits vorhandene WeatherForecast-API verwenden können. Allerdings müssen Sie den Aufruf von `UseHttpsRedirections` in der Methode `Configure` in *Startup.cs* auskommentieren, da dieser Code HTTP und nicht HTTPS zum Aufrufen der Web-API verwendet.
+    Mit .NET Core 3.1 ist dies nicht erforderlich, da Sie die bereits vorhandene WeatherForecast-API verwenden können. Allerdings müssen Sie den Aufruf von <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> in der `Configure`-Methode in *Startup.cs* auskommentieren, da dieser Code zum Aufrufen der Web-API HTTP verwendet, nicht HTTPS.
 
     ```csharp
                 //app.UseHttpsRedirection();

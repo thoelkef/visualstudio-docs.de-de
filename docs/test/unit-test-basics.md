@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590500"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846932"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -91,13 +91,16 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
 
    ::: moniker range="vs-2017"
    ![Im Editorfenster das Kontextmenü anzeigen](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![Im Editorfenster das Kontextmenü anzeigen](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für das .NET Framework (aber nicht für .NET Core) zur Verfügung.
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Im Editorfenster das Kontextmenü anzeigen](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code zur Verfügung.
+   ::: moniker-end
 
 2. Klicken Sie auf **OK**, um die Komponententests mit den Standardeinstellungen erstellen. Sie können die Werte zum Erstellen und Benennen des Komponententestprojekts und der Komponententests jedoch ändern. Sie können den Code auswählen, der den Komponententestmethoden standardmäßig hinzugefügt wird.
 
