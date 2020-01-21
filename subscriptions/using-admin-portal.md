@@ -6,18 +6,18 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-Abonnements Ihrer Organisation mit dem Verwaltungsportal für Abonnements verwalten.
-ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879307"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850543"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Übersicht über das Verwaltungsportal für Visual Studio-Abonnements
 
 Das Portal für die Verwaltung von Visual Studio-Abonnements bietet Ihnen die Tools zum Verwalten der Abonnements Ihrer Organisation an einem zentralen Ort. 
 
-## <a name="important-considerations"></a>Wichtige Hinweise
+## <a name="important-considerations"></a>Wichtige Überlegungen
 Beachten Sie beim Verwenden des Portals zur Verwaltung von Visual Studio-Abonnements Folgendes:
 - **Visual Studio-Abonnements werden pro Benutzer lizenziert.** Die einzelnen Abonnenten können die Software zu Entwicklungs- und Testzwecken auf so vielen Computer wie nötig installieren.
 - **Weisen Sie jedem Abonnenten nur eine Abonnementstufe zu**, entsprechend dem vom Unternehmen erworbenen Visual Studio-Abonnement. Wenn bei Ihnen Abonnenten vorhanden sind, denen mehrere Abonnementstufen zugewiesen sind, bearbeiten Sie die Einstellungen, sodass ihnen nur noch eine Stufe zugewiesen ist.
@@ -47,7 +47,7 @@ Weitere Informationen zu der Vereinbarung, die Ihnen gerade angezeigt wird, erha
 > ![Details-Seite des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>Ressourcen
-- [Whitepaper zur Visual Studio-Lizenzierung](https://aka.ms/vslicensing)
+- [Whitepaper zur Visual Studio-Lizenzierung](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Vergleich von Abonnementoptionen und -preisen](https://visualstudio.microsoft.com/vs/pricing)
 - [Vergleich von Visual Studio-IDE-Features](https://visualstudio.microsoft.com/vs/compare)
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34ceb2ec7cc923f6642977cf4c70fbfae07bf523
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429653"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848423"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Auswählen einer Python-Umgebung für ein Projekt
 
@@ -42,7 +42,7 @@ Das Kontextmenü des Knotens **Python-Umgebungen** stellt ebenfalls zusätzliche
 | --- | --- |
 | **Virtuelle Umgebung hinzufügen** | Startet den Prozess zum Erstellen einer neuen virtuellen Umgebung im Projekt Weitere Informationen finden Sie unter [Create a virtual environment (Erstellen einer virtuellen Umgebung)](#create-a-virtual-environment). |
 | **Vorhandene virtuelle Umgebung hinzufügen** | Fordert Sie dazu auf, einen Ordner auszuwählen, der eine virtuelle Umgebung enthält, und fügt diese der Liste unter **Python-Umgebungen** hinzu, ohne diese zu aktivieren Weitere Informationen finden Sie unter [Aktivieren einer vorhandenen virtuellen Umgebung](#activate-an-existing-virtual-environment). |
-| **Erstellen einer Conda-Umgebung** | Wechselt zum **Fenster** *Python-Umgebungen*, in dem Sie einen Namen für die Umgebung eingeben und deren Basisinterpreter angeben Weitere Informationen finden Sie unter [Conda-Umgebungen](managing-python-environments-in-visual-studio.md#conda-environments). |
+| **Erstellen einer Conda-Umgebung** | Wechselt zum *Fenster* **Python-Umgebungen**, in dem Sie einen Namen für die Umgebung eingeben und deren Basisinterpreter angeben. Weitere Informationen finden Sie unter [Conda-Umgebungen](managing-python-environments-in-visual-studio.md#conda-environments). |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -169,7 +169,7 @@ Hinweis: Die angezeigten Einträge sind nicht immer unbedingt richtig, und eine 
 Beachten Sie auch, dass Visual Studio die Verwendung von `conda` zum Installieren von Paketen in einer Conda-Umgebung derzeit nicht unterstützt. Verwenden Sie stattdessen `conda` über die Befehlszeile.
 
 > [!Tip]
-> Eine gängige Situation, in der pip ein Paket nicht installieren kann, liegt vor, wenn das Paket Quellcode für native Komponenten in *\*.pyd*-Dateien enthält. Wenn die erforderliche Version von Visual Studio nicht installiert ist, kann pip diese Komponenten nicht kompilieren. Die Fehlermeldung, die in derartigen Situationen angezeigt wird, ist **error: Unable to find vcvarsall.bat** (Fehler: vcvarsall.bat wurde nicht gefunden). `easy_install` kann häufig vorkompilierte Binärdateien herunterladen, und Sie können einen geeigneten Compiler für ältere Python-Versionen von [https://aka.ms/VCPython27](https://aka.ms/VCPython27) herunterladen. Weitere Informationen finden Sie unter [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Umgang mit der Fehlermeldung, dass vcvarsallbat nicht gefunden werden konnte) im Teamblog zu Python-Tools.
+> Eine gängige Situation, in der pip ein Paket nicht installieren kann, liegt vor, wenn das Paket Quellcode für native Komponenten in *\*.pyd*-Dateien enthält. Wenn die erforderliche Version von Visual Studio nicht installiert ist, kann pip diese Komponenten nicht kompilieren. Die Fehlermeldung, die in derartigen Situationen angezeigt wird, ist **error: Unable to find vcvarsall.bat** (Fehler: vcvarsall.bat wurde nicht gefunden). `easy_install` kann häufig vorkompilierte Binärdateien herunterladen, und Sie können einen geeigneten Compiler für ältere Python-Versionen von [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) herunterladen. Weitere Informationen finden Sie unter [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Umgang mit der Fehlermeldung, dass vcvarsallbat nicht gefunden werden konnte) im Teamblog zu Python-Tools.
 
 ## <a name="see-also"></a>Siehe auch
 

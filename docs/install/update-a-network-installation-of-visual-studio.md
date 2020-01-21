@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren einer netzwerkbasierten Installation
 description: Erfahren Sie, wie Sie eine netzwerkbasierte Installation von Visual Studio mit dem Befehl „--layout“ aktualisieren.
-ms.date: 10/07/2019
+ms.date: 01/08/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 774e189306345187ac6a0c29b7060cb5537e8adb
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594434"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776172"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualisieren einer netzwerkbasierten Installation von Visual Studio
 
@@ -28,17 +28,20 @@ Es ist möglich, ein Layout für die Netzwerkinstallation von Visual Studio mit 
 
 ## <a name="how-to-update-a-network-layout"></a>Gewusst wie: Aktualisieren eines Netzwerklayouts
 
+> [!IMPORTANT]
+> Bei diesen Anweisungen wird vorausgesetzt, dass Sie zuvor ein Layout für die Netzwerkinstallation erstellt haben. Weitere Informationen hierzu finden Sie auf der Seite [Erstellen einer Netzwerkinstallation von Visual Studio](create-a-network-installation-of-visual-studio.md).
+
 Wenn Sie die Netzwerkinstallationsfreigabe mit den neuesten Updates aktualisieren möchten, führen Sie den Befehl `--layout` aus, um aktualisierte Pakete schrittweise herunterzuladen.
 
 ::: moniker range="vs-2017"
 
-**Neues in 15.3:** Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt haben, werden diese Einstellungen gespeichert. Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben. Wenn Sie jedoch ein Layout einer früheren Version verwenden, sollten Sie dieselben Befehlszeilenparameter verwenden, die Sie beim ersten Erstellen des Layouts für die Netzwerkinstallation verwendet haben (d.h. dieselben Workloads und Sprachen), um den Inhalt zu aktualisieren.
+**Neues in 15.3:** Wenn Sie [beim Erstellen des Netzwerklayouts](create-a-network-installation-of-visual-studio.md) ein Teillayout ausgewählt haben, werden diese Einstellungen gespeichert. Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben. Wenn Sie jedoch ein Layout einer früheren Version verwenden, sollten Sie dieselben Befehlszeilenparameter verwenden, die Sie beim ersten Erstellen des Layouts für die Netzwerkinstallation verwendet haben (d.h. dieselben Workloads und Sprachen), um den Inhalt zu aktualisieren.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt haben, werden diese Einstellungen gespeichert. Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben.
+Wenn Sie [beim Erstellen des Netzwerklayouts](create-a-network-installation-of-visual-studio.md) ein Teillayout ausgewählt haben, werden diese Einstellungen gespeichert. Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben.
 
 ::: moniker-end
 
@@ -81,7 +84,7 @@ Hier finden Sie einige ausführliche Beispiele für das Erstellen und Aktualisie
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="how-to-deploy-an-update-to-client-machines"></a>Gewusst wie: Bereitstellen eines Updates auf Clientcomputern
+## <a name="deploy-an-update-to-client-machines"></a>Bereitstellen eines Updates auf Clientcomputern
 
 Je nach Konfiguration Ihrer Netzwerkumgebung kann ein Update entweder von einem Unternehmensadministrator bereitgestellt oder auf einem Clientcomputer ausgelöst werden.
 
@@ -111,7 +114,7 @@ Je nach Konfiguration Ihrer Netzwerkumgebung kann ein Update entweder von einem 
 > [!TIP]
 > Weitere Informationen dazu, wie Sie steuern, wann Updatebenachrichtigungen Benutzern angezeigt werden, finden Sie unter [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).
 
-## <a name="how-to-verify-a-layout"></a>Überprüfen eines Layouts
+## <a name="verify-a-layout"></a>Überprüfen eines Layouts
 
 Verwenden Sie `--verify`, um für den angegebenen Offlinecache eine Überprüfung auszuführen. Dabei wird überprüft, ob Paketdateien fehlen oder ungültig sind. Am Ende der Überprüfung wird die Liste der fehlenden und ungültigen Dateien ausgegeben.
 
@@ -129,7 +132,7 @@ Microsoft liefert in regelmäßigen Abständen Updates für Visual Studio. Ihr n
 > [!NOTE]
 > Die Überprüfung funktioniert nur mit der neuesten Version einer bestimmten Nebenversion von Visual Studio. Sobald eine neue Version veröffentlicht wird, funktioniert die Überprüfung für frühere Patchlevel-Releases der gleichen Nebenversion nicht mehr.
 
-## <a name="how-to-fix-a-layout"></a>Beheben von Problemen mit Layouts
+## <a name="fix-a-layout"></a>Korrigieren eines Layouts
 
 Verwenden Sie `--fix`, um die gleiche Überprüfung wie mit `--verify` durchzuführen, und versuchen Sie außerdem, die identifizierten Probleme zu beheben. Der `--fix`-Prozess benötigt eine Internetverbindung, also stellen Sie sicher, dass Ihr Computer mit dem Internet verbunden ist, bevor Sie `--fix` aufrufen.
 
@@ -139,7 +142,7 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 Die Datei „vs_enterprise.exe“ kann innerhalb von „layoutDir“ aufgerufen werden.
 
-## <a name="how-to-remove-older-versions-from-a-layout"></a>Entfernen älterer Versionen aus einem Layout
+## <a name="remove-older-versions-from-a-layout"></a>Entfernen älterer Versionen aus einem Layout
 
 Nach dem Ausführen von Layoutupdates für einen Offlinecache enthält der Layoutcacheordner möglicherweise einige veraltete Pakete, die für die neueste Visual Studio-Installation nicht mehr gebraucht werden. Sie können die Option `--clean` verwenden, um veraltete Pakete aus einem Offlinecacheordner zu entfernen.
 
@@ -165,7 +168,13 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 Wenn Sie diesen Befehl ausführen, analysiert das Setup Ihren Offlinecacheordner, um die Liste der Dateien zu suchen, die entfernt werden. Sie haben dann die Gelegenheit, die Dateien, die gelöscht werden sollen, zu überprüfen und den Löschvorgang zu bestätigen.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+## <a name="get-support-for-your-offline-installer"></a>Anfordern von Support für Ihr Offlineinstallationsprogramm
+
+Wenn ein Problem mit der Offlineinstallation auftritt, möchten wir dies erfahren. Die beste Möglichkeit, uns zu informieren, ist die Verwendung des [Problem melden](../ide/how-to-report-a-problem-with-visual-studio.md)-Tools. Wenn Sie dieses Tool verwenden, können Sie uns die Telemetriedaten und Protokolle senden, die wir benötigen, um uns Diagnose und Behebung des Problems zu erleichtern.
+
+Für installationsbezogene Probleme wird außerdem ein [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous) (nur auf Englisch) als Supportoption angeboten.
+
+Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer [Feedback](../ide/feedback-options.md)-Seite.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072723"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916932"
 ---
 # <a name="docker-compose-build-properties"></a>Buildeigenschaften von Docker Compose
 
@@ -33,10 +33,10 @@ Sie können die Eigenschaftseinstellung einem vorhandenen `PropertyGroup`-Elemen
 
 In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für Docker Compose-Projekte verfügbar sind.
 
-| Name der Eigenschaft | Speicherort | BESCHREIBUNG | Standardwert  |
+| Name der Eigenschaft | Speicherort | Beschreibung | Standardwert  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|dcproj|Gibt zusätzliche Compose-Dateien in einer durch Semikolons getrennten Liste an, die an „docker-compose.exe“ für alle Befehle gesendet werden sollen. Relative Pfade aus der docker-compose-Projektdatei (DCPROJ-Datei) sind zulässig.|-|
-|DockerComposeBaseFilePath|dcproj|Gibt den ersten Teil der Dateinamen der docker-compose-Dateien ohne die Erweiterung *.yml* an. Beispiel: <br>1.  DockerComposeBaseFilePath = NULL/nicht definiert: Verwenden Sie den Basisdateipfad *docker-compose*. Dateien werden dann als *docker-compose.yml* und *docker-compose.override.yml* benannt.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: Dateien werden als *mydockercompose.yml* und *mydockercompose.override.yml* benannt.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: Dateien werden eine Ebene nach oben verlagert. |docker-compose|
+|AdditionalComposeFilePaths|dcproj|Gibt zusätzliche Compose-Dateien in einer durch Semikolons getrennten Liste an, die an „docker-compose.exe“ für alle Befehle gesendet werden sollen. Relative Pfade aus der docker-compose-Projektdatei (DCPROJ-Datei) sind zulässig.|-|
+|DockerComposeBaseFilePath|dcproj|Gibt den ersten Teil der Dateinamen der docker-compose-Dateien ohne die Erweiterung *.yml* an. Zum Beispiel: <br>1.  DockerComposeBaseFilePath = NULL/nicht definiert: Verwenden Sie den Basisdateipfad *docker-compose*. Dateien werden dann als *docker-compose.yml* und *docker-compose.override.yml* benannt.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: Dateien werden als *mydockercompose.yml* und *mydockercompose.override.yml* benannt.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: Dateien werden eine Ebene nach oben verlagert. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose build` übergeben werden sollen. Beispiel: `--parallel --pull` |
 |DockerComposeDownArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose down` übergeben werden sollen. Beispiel: `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj oder vbproj|Der relative Pfad zur Docker Compose-Projektdatei (mit der DCPROJ-Erweiterung). Legen Sie diese Eigenschaft fest, wenn Sie das Dienstprojekt veröffentlichen, damit die zugeordneten Imagebuildeinstellungen in der Datei „docker-compose.yml“ gefunden werden.|-|
@@ -103,7 +103,7 @@ services:
 
 Setzen Sie wie im vorherigen Beispiel die Werte in doppelte Anführungszeichen, und verwenden Sie den umgekehrten Schrägstrich als Escapezeichen für umgekehrte Schrägstriche in Pfaden.
 
-|Bezeichnungsname|BESCHREIBUNG|
+|Bezeichnungsname|Beschreibung|
 |----------|-----------|
 |com.microsoft.visualstudio.debuggee.arguments|Die Argumente, die zu Beginn des Debuggens dem Programm übergeben werden. Bei .NET Core-Apps sind diese Argumente in der Regel zusätzliche Suchpfade für NuGet-Pakete, auf die der Pfad zur Ausgabeassembly des Projekts folgt.|
 |com.microsoft.visualstudio.debuggee.killprogram|Mit diesem Befehl wird ggf. das Programm der zu debuggenden Komponente beendet, das im Container ausgeführt wird.|

@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254547"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846806"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 ::: moniker range=">=vs-2019"
 
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Wo befindet sich die Gruppierung nach Merkmalen in Visual Studio 2019?
-Diese Gruppierung ist nun eine Spalte. Durch die mehrschichtige und anpassbare Hierarchie in Visual Studio 2019 Version 16.2 haben wir beschlossen, dass die Gruppierung nach Merkmalen zu einer unnötig komplexen Darstellung führt. Wir sind auf Ihr Feedback zu diesem Design gespannt! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+Diese Gruppierung ist nun eine Spalte. Durch die mehrschichtige und anpassbare Hierarchie in Visual Studio 2019 Version 16.2 haben wir beschlossen, dass die Gruppierung nach Merkmalen zu einer unnötig komplexen Darstellung führt. Wir sind auf Ihr Feedback zu diesem Design gespannt! [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
 
 Aktuell können Sie mit der rechten Maustaste auf die Spalte im Test-Explorer und dann auf „Spalten“ klicken. Wenn Sie das Kontrollkästchen neben „Merkmal“ aktivieren, wird diese Spalte im Test-Explorer angezeigt. Sie können diese Spalte nun nach den für Sie relevanten Merkmalen filtern.
 
@@ -41,9 +41,9 @@ Aktuell können Sie mit der rechten Maustaste auf die Spalte im Test-Explorer un
 Erstellen Sie das Projekt, um assemblybasierte Ermittlung auszuführen.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Erstellen Sie das Projekt, und vergewissern Sie sich, dass in **Extras** > **Optionen** > **Test**t die assemblybasierte Ermittlung aktiviert ist.
+Erstellen Sie das Projekt, und vergewissern Sie sich, dass unter **Extras** > **Optionen** > **Test** die assemblybasierte Ermittlung aktiviert ist.
 ::: moniker-end
-Bei der [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) handelt es sich um eine quellenbasierte Testermittlung. Sie kann keine Tests ermitteln, die z. B. Theorien, benutzerdefinierte Adapter und Merkmale oder `#ifdef`-Anweisungen verwenden, da diese zur Laufzeit definiert werden. Ein Build ist erforderlich, damit diese Tests korrekt gefunden werden können. In Visual Studio 2017 Version 15.6 und höher wird die assemblybasierte Ermittlung (die übliche Ermittlung) erst nach Builds ausgeführt. Mit dieser Einstellung wird festgelegt, dass die Testermittlung in Echtzeit während der Bearbeitung so viele Tests wie möglich findet und die assemblybasierte Ermittlung das Anzeigen von dynamisch definierten Tests nach einem Build ermöglicht. Testermittlung in Echtzeit verbessert die Reaktionsfähigkeit, ermöglicht Ihnen aber dennoch, vollständige und genaue Ergebnisse nach einem Build zu erhalten.
+Bei der [Testermittlung in Echtzeit](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) handelt es sich um eine quellenbasierte Testermittlung. Sie kann keine Tests ermitteln, die z. B. Theorien, benutzerdefinierte Adapter und Merkmale oder `#ifdef`-Anweisungen verwenden, da diese zur Laufzeit definiert werden. Ein Build ist erforderlich, damit diese Tests korrekt gefunden werden können. In Visual Studio 2017 Version 15.6 und höher wird die assemblybasierte Ermittlung (die übliche Ermittlung) erst nach Builds ausgeführt. Mit dieser Einstellung wird festgelegt, dass die Testermittlung in Echtzeit während der Bearbeitung so viele Tests wie möglich findet und die assemblybasierte Ermittlung das Anzeigen von dynamisch definierten Tests nach einem Build ermöglicht. Testermittlung in Echtzeit verbessert die Reaktionsfähigkeit, ermöglicht Ihnen aber dennoch, vollständige und genaue Ergebnisse nach einem Build zu erhalten.
 
 ## <a name="test-explorer--plus-symbol"></a>Pluszeichen (+) im Test-Explorer
 
@@ -58,7 +58,7 @@ Das Symbol „+“ (Pluszeichen) gibt an, dass mehr Tests nach einem Build ermit
 
 **Die assemblybasierte Ermittlung funktioniert bei meinem Projekt nicht mehr. Wie kann ich sie wieder aktivieren?**
 
-Navigieren Sie zu **Extras** > **Optionen** > **Test**, und aktivieren Sie das Kontrollkästchen **Nach der Builderstellung zusätzliche Tests aus erstellten Assemblys ermitteln**.
+Wechseln Sie zu **Extras** > **Optionen** > **Test**, und aktivieren Sie das Kontrollkästchen für **Nach der Builderstellung zusätzliche Tests aus erstellten Assemblys ermitteln**.
 
 ![Assemblybasierte Option](media/testex-toolsoptions.png)
 ::: moniker-end
@@ -67,13 +67,13 @@ Navigieren Sie zu **Extras** > **Optionen** > **Test**, und aktivieren Sie das K
 
 **Tests werden jetzt im Test-Explorer angezeigt, während ich schreibe, ohne dass ich mein Projekt erstellen muss. Was hat sich geändert?**
 
-Dieses Feature wird als [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) bezeichnet. Dabei wird ein Roslyn-Analysetool verwendet, um Tests zu suchen und den Test-Explorer in Echtzeit aufzufüllen, ohne dass Sie Ihr Projekt erstellen müssen. Weitere Informationen zum Verhalten der Testermittlung bei dynamisch definierten Tests wie Theorien oder benutzerdefinierten Merkmalen finden Sie unter [Dynamische Testermittlung](#dynamic-test-discovery).
+Dieses Feature wird als [Testermittlung in Echtzeit](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) bezeichnet. Dabei wird ein Roslyn-Analysetool verwendet, um Tests zu suchen und den Test-Explorer in Echtzeit aufzufüllen, ohne dass Sie Ihr Projekt erstellen müssen. Weitere Informationen zum Verhalten der Testermittlung bei dynamisch definierten Tests wie Theorien oder benutzerdefinierten Merkmalen finden Sie unter [Dynamische Testermittlung](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Konformität der Testermittlung in Echtzeit
 
 **In welchen Sprachen und Testframeworks kann die Testermittlung in Echtzeit verwendet werden?**
 
-Die [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) funktioniert nur für die verwalteten Sprachen (C# und Visual Basic), da sie mit dem Roslyn-Compiler erstellt wird. Derzeit funktioniert Testermittlung in Echtzeit nur für xUnit-, NUnit- und MSTest-Framework.
+Die [Testermittlung in Echtzeit](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) funktioniert nur für die verwalteten Sprachen (C# und Visual Basic), da sie mit dem Roslyn-Compiler erstellt wird. Derzeit funktioniert Testermittlung in Echtzeit nur für xUnit-, NUnit- und MSTest-Framework.
 
 ## <a name="test-explorer-logs"></a>Test-Explorer-Protokolle
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815469"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916808"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systemvoraussetzungen für den Visual Studio-Emulator für Android
 
@@ -71,7 +71,7 @@ Hyper-V-Anforderungen
 
 Zum Überprüfen der Anforderungen an RAM und Windows wählen Sie in der Systemsteuerung die System- und Sicherheitseinstellungen, und anschließend System.
 
-![Überprüfung der Systemanforderungen](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
+![Screenshot der Seite „System“](../cross-platform/media/android_emu_system_requirements.png "Systemvoraussetzungen_Android_Emu")
 
 ## <a name="network-requirements"></a>Netzwerkanforderungen
 
@@ -107,7 +107,7 @@ Wenn Ihr Computer und die BIOS-Einstellungen bereits zur Unterstützung von Hype
 
 |Anforderung|Überprüfen und Aktivieren dieser Anforderung|
 |-----------------|----------------------------------------------|
-|Hyper-V muss installiert sein|Befolgen Sie dieselben Anweisungen wie zum [Aktivieren von Hyper-V für den Windows Phone Emulator](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Überprüfen des Status des **Hyper-V-Verwaltung für virtuelle Computer** -Diensts im Dienste-Snap-In.|
+|Hyper-V muss installiert sein|Befolgen Sie dieselben Anweisungen wie zum [Aktivieren von Hyper-V für den Windows Phone Emulator](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Überprüfen des Status des **Hyper-V-Verwaltung für virtuelle Computer** -Diensts im Dienste-Snap-In.|
 |Hyper-V muss ausgeführt werden|Weitere Informationen zum Verwalten von Diensten finden Sie unter den folgenden Themen:<br /><br /> -   [Starten, Beenden, Anhalten, Fortsetzen oder Neustarten eines Diensts](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Konfigurieren der Startmethode für einen Dienst](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Sie müssen ein Mitglied der lokalen Administratorengruppe von Hyper-V sein.
@@ -119,7 +119,7 @@ Wenn Ihr Computer und die BIOS-Einstellungen bereits zur Unterstützung von Hype
 > [!IMPORTANT]
 > Nachdem Sie der Gruppe beigetreten sind, melden Sie sich ab und starten Sie den Computer neu, damit die Änderung wirksam wird.
 
- ![Beitritt zur Hyper&#45;V-Administratorsicherheitsgruppe](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Beitritt zur Sicherheitsgruppe „Hyper-V-Administratoren“](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen.
 

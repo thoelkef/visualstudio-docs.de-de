@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777468"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915811"
 ---
 # <a name="installation"></a>Installation
 
@@ -24,7 +24,7 @@ Visual Studio-Tools für Künstliche Intelligenz (KI) können auf 64-Bit-Windows
 
 Diese Erweiterung gilt für Visual Studio 2015 und Visual Studio 2017 in der Community Edition oder höher.
 
-Sie können die Tools aus [Visual Studio Marketplace](https://aka.ms/vstoolsforai) oder direkt in Visual Studio herunterladen:
+Sie können die Tools aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) oder direkt in Visual Studio herunterladen:
 
 1. Wählen Sie **Tools** > **Erweiterungen und Updates** aus.
 
@@ -137,7 +137,7 @@ Das [Microsoft Cognitive Toolkit](https://cntk.ai) ist ein einheitliches Deep Le
 > [!NOTE]
 > Derzeit wird macOS von CNTK nicht unterstützt.
 
-Informationen zur Installation des Python-Pakets für CNTK finden Sie unter [Installation von CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
+Informationen zur Installation des Python-Pakets für CNTK finden Sie unter [Installation von CNTK](/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
@@ -156,7 +156,7 @@ Gehen Sie auf diesen [Link](https://caffe2.ai/docs/getting-started.html), um Que
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (Incubating)](https://mxnet.incubator.apache.org/) ist ein Deep Learning-Framework, das im Hinblick auf Effizienz und Flexibilität konzipiert wurde. Mithilfe dieses Frameworks können Sie die [symbolische mit der imperativen Programmierung](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) **vermischen**, um die Effizienz und Produktivität zu maximieren.
+[Apache MXNet (Incubating)](https://mxnet.incubator.apache.org/) ist ein Deep Learning-Framework, das im Hinblick auf Effizienz und Flexibilität konzipiert wurde. Mithilfe dieses Frameworks können Sie [symbolische und imperative Programmierung](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) miteinander **vermischen**, um größtmögliche Effizienz und Produktivität zu erreichen.
 
 Führen Sie den folgenden Befehl über ein Terminal aus, um MXNet zu installieren:
 
