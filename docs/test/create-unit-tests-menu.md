@@ -9,19 +9,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c562d6f750db7096e37b863c46d6330eb484912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588823"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844315"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
 
 Mit dem Befehl **Komponententests erstellen** werden Stubs für Komponententestmethoden erstellt. Diese Funktion ermöglicht die leichte Konfiguration von Testprojekten, Testklassen und des darin enthaltenen Testmethodenstubs.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für .NET Framework (aber nicht für .NET Core) zur Verfügung.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Der Menübefehl **Komponententests erstellen** ist nur für verwalteten Code verfügbar.
+::: moniker-end
 
 Der Menübefehl **Komponententests erstellen** ist erweiterbar und kann zum Generieren von Tests für MSTest, MSTest V2, NUnit und xUnit verwendet werden.
 

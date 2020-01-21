@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189412"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929250"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -38,7 +38,7 @@ Das Fenster **Diagnosetools** ist häufig die bevorzugte Methode für die App-Pr
 
 ## <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
-Mit dem CPU-Auslastungstool können Sie die Analyse der Leistung Ihrer App starten. So erfahren Sie mehr über die CPU-Ressourcen, die Ihre App in Anspruch nimmt. Eine ausführlichere Anleitung für die CPU-Auslastung, finden Sie unter [Beginner's Guide to Performance Profiling (Leitfaden für Einsteiger zur Leistungsprofilerstellung)](../profiling/beginners-guide-to-performance-profiling.md).
+Mit dem CPU-Auslastungstool können Sie die Analyse der Leistung Ihrer App starten. So erfahren Sie mehr über die CPU-Ressourcen, die Ihre App in Anspruch nimmt. Eine ausführlichere exemplarische Vorgehensweise zum Tool CPU-Auslastung finden Sie unter [Messen der Anwendungsleistung durch Analyse der CPU-Auslastung](../profiling/beginners-guide-to-performance-profiling.md).
 
 Wählen Sie aus der Ansicht **Zusammenfassung** der Diagnosetools **CPU-Profilerstellung aktivieren** aus. (Sie müssen in einer Debugsitzung sein.)
 

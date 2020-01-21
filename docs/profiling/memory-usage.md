@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254615"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929233"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Messen der Speicherauslastung in Visual Studio
 
@@ -22,7 +22,7 @@ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des
 
 Das folgende Bild zeigt das Fenster **Diagnosetools** (verfügbar in Visual Studio 2015 Update 1 und höheren Versionen):
 
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Diagnosetools-Update1](../profiling/media/diagnostictools-update1.png "Diagnosetools-Update1")
 
 Obwohl Sie Speichermomentaufnahmen des Arbeitsspeichers zu jedem beliebigen Zeitpunkt im **Speicherauslastungstool** erfassen können, können Sie mit dem Visual Studio-Debugger kontrollieren, wie Ihre Anwendung die Ausführung vornimmt, und dabei Leistungsprobleme untersuchen. Festlegen von Haltepunkten, schrittweises Ausführen, alles unterbrechen und andere Debugger-Aktionen können Ihnen helfen, Ihre Leistungsuntersuchungen auf die relevantesten Codepfade zu fokussieren. Durch die Ausführung dieser Aktionen, während Ihre App ausgeführt wird, kann das Rauschen, das Sie nicht interessiert, vom Code entfernt werden, wodurch sich der Zeitaufwand, den Sie zur Diagnose eines Problems benötigen, maßgeblich verringert.
 
@@ -54,13 +54,13 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 4. Wählen Sie **Speicherauslastung** mit der Einstellung **Auswahltools** auf der Symbolleiste aus.
 
-     ![Anzeigen von Diagnosetools](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
+     ![Fenster „Diagnosetools“](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5. Klicken Sie auf **Debuggen / Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
 
      Wenn das Laden der Anwendung abgeschlossen ist, wird die Zusammenfassungsansicht der Diagnosetools angezeigt.
 
-     ![Zusammenfassung Diagnosetools](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ![Registerkarte „Zusammenfassung“ der Diagnosetools](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      > Da das Erfassen von Speicherdaten die Debugleistung Ihrer systemeigenen Apps oder Ihrer Apps mit gemischtem Modus beeinträchtigen kann, sind Speichermomentaufnahmen standardmäßig deaktiviert. Starten Sie eine Debugsitzung, um Momentaufnahmen in nativen Apps oder in Apps im gemischten Modus zu aktivieren. Nutzen Sie dazu die Tastenkombination **F5**. Wenn das Fenster **Diagnosetools** angezeigt wird, wählen Sie die Registerkarte **Speicherauslastung** und dann **Heapprofilerstellung** aus.
@@ -71,7 +71,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 6. Um eine Momentaufnahme zu Beginn der Debugsitzung zu erstellen, wählen Sie auf der Übersichtssymbolleiste **Speicherauslastung** die Option **Momentaufnahme erstellen** aus. (Es kann hilfreich sein, auch hier einen Haltepunkt festzulegen.)
 
-    ![Momentaufnahme](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+    ![Schaltfläche „Momentaufnahme erstellen“](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      > Um eine Basislinie für Speichervergleiche zu erstellen, sollten Sie zu Beginn Ihrer Debugsitzung eine Momentaufnahme erstellen.
@@ -89,7 +89,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 ## <a name="analyze-memory-usage-data"></a>Analysieren der Speicherauslastungsdaten
 Die Zeilen der Speicherauslastungs-Übersichtstabelle führt die Momentaufnahmen auf, die Sie während der Debugsitzung erstellt haben, und bietet Links zu detaillierteren Ansichten.
 
-![Speicherzusammenfassungs-Tabelle](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Tabelle mit zusammengefassten Informationen zum Speicher](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  Der Name der Spalten ist abhängig von dem Debugmodus, den Sie in den Projekteigenschaften gewählt haben: .NET, nativ oder gemischt (sowohl .NET als auch nativ).
 
@@ -101,7 +101,7 @@ Wenn Sie mehrere Momentaufnahmen erstellt haben, beinhalten die Zellen der Über
 
 Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein detaillierter Bericht der Speicherauslastung wird geöffnet:
 
-- Um die Details des Unterschiedes zwischen aktueller Momentaufnahme und vorheriger Momentaufnahme anzuzeigen, wählen Sie die Änderungsverknüpfung links des Pfeils aus (![Zunahme der Speicherauslastung](../profiling/media/prof-tour-mem-usage-up-arrow.png "Zunahme der Speicherauslastung")). Ein roter Pfeil zeigt eine Zunahme der Speicherauslastung und ein grüner Pfeil die Abnahme der Speicherauslastung.
+- Wählen Sie die Änderungsverknüpfung links des Pfeils aus (![Zunahme der Speicherauslastung](../profiling/media/prof-tour-mem-usage-up-arrow.png "Zunahme der Speicherauslastung")), um sich die Details des Unterschiedes zwischen aktueller Momentaufnahme und vorheriger Momentaufnahme anzeigen zu lassen. Ein roter Pfeil zeigt eine Zunahme der Speicherauslastung und ein grüner Pfeil die Abnahme der Speicherauslastung.
 
 > [!TIP]
 > Um Speicherprobleme schnell auszumachen, werden die Unterschiedsberichte nach Objekttypen sortiert, deren Anzahl sich am stärksten erhöht hat (klicken Sie auf die Änderungsverknüpfung in der Spalte **Objekte (Diff.)** ) oder deren gesamte Heapgröße sich am signifikantesten erhöht hat (klicken Sie auf die Änderungsverknüpfung in der Spalte **Heapgröße (Diff.)** ).
@@ -113,34 +113,34 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
 ### <a name="managed-types-reports"></a>Berichte zu den verwalteten Typen
  Wählen Sie die aktuelle Verknüpfung einer **Objekte (Diff.)** - oder **Zuweisungen (Diff.)** -Zelle in der Übersichtstabelle der Speicherauslastung aus.
 
- ![Bericht über vom Debugger verwaltete Typen &#45; Pfade zum Stamm](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ![Debugger; Berichte zu den verwalteten Typen; Pfade zum Stamm](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
  Im oberen Bereich werden Anzahl und Größe der Typen in der Momentaufnahme angezeigt, einschließlich der Größe aller Objekte, auf die der Typ verweist (**Umfassende Größe**).
 
  Die Baumstruktur **Pfade zum Stamm** im unteren Bereich zeigt die Objekte an, die auf den im oberen Bereich ausgewählten Typ verweisen. Der .NET Framework-Garbage Collector bereinigt den Speicher für ein Objekt nur, wenn der letzte Typ, der darauf verweist, freigegeben wurde.
 
- Die Baumstruktur **Referenzierte Typen** enthält die Verweise, die von dem Typ, der im oberen Bereich ausgewählt ist, gehalten werden.
+ Die Baumstruktur **Referenzierte Objekte** enthält die Verweise, die vom im oberen Bereich ausgewählten Typ gehalten werden.
 
- ![Bericht über verwaltete referenzierte Typen](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Berichtsansicht für verwaltete referenzierte Objekte](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- Um die Instanzen eines ausgewählten Typs im oberen Bereich anzuzeigen, wählen Sie das ![Instanzsymbol](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").
+ Klicken Sie auf das Symbol ![Instanzsymbol](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon"), um die Instanzen eines ausgewählten Typs im oberen Bereich anzuzeigen.
 
- ![Instanzenansicht](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Ansicht „Instanzen“](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  Die Ansicht **Instanzen** zeigt die Instanzen des ausgewählten Objekts in der Momentaufnahme des oberen Bereichs an. Die Bereiche **Pfade zum Stamm** und **Referenzierte Objekte** zeigen die Objekte an, die auf die ausgewählte Instanz verweisen, sowie die Typen, auf die die ausgewählte Instanz verweist. Wenn der Debugger zu dem Zeitpunkt beendet wird, an dem die Momentaufnahme erstellt wurde, können Sie auf die Zelle **Wert** zeigen, um die Werte des Objekts in einer QuickInfo anzuzeigen.
 
 ### <a name="native-type-reports"></a>Berichte zu den systemeigenen Typen
  Wählen Sie die aktuelle Verknüpfung einer Zelle **Zuordnungen (Diff.)** oder **Heapgröße (Diff.)** aus der Speicherauslastungs-Übersichtstabelle des Fensters **Diagnosetools** aus.
 
- ![Ansicht des nativen Typs](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
+ ![Ansicht der nativen Typen](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
 
  Die **Typenansicht** zeigt die Anzahl und Größe der Typen in der Momentaufnahme an.
 
-- Wählen Sie das Instanzensymbol (![das Instanzensymbol in der Spalte „Objekttyp“](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) eines ausgewählten Typs, um Informationen zum Objekt des ausgewählten Typs in der Momentaufnahme anzuzeigen.
+- Wählen Sie das Instanzensymbol (![Instanzensymbol in der Spalte „Objekttyp“](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) eines ausgewählten Typs aus, um sich Informationen zu Objekten des ausgewählten Typs in der Momentaufnahme anzeigen zu lassen.
 
      Die Ansicht **Instanzen** zeigt jede Instanz des ausgewählten Typs an. Durch Auswahl einer Instanz wird die Aufrufliste angezeigt, welche die Erstellung der Instanz im Bereich **Belegungsaufrufliste** bewirkt hat.
 
-     ![Instanzenansicht](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Ansicht „Instanzen“](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Wählen Sie **Stapelansicht** im **Ansichtsmodus** , um den Zuweisungsstapel für den ausgewählten Typ anzuzeigen.
 
@@ -150,15 +150,15 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
 
 - Wählen Sie die Änderungsverknüpfung in einer Zelle der Übersichtstabelle der Registerkarte **Speicherauslastung** im Fenster **Diagnosetools** aus.
 
-   ![Wählen Sie eine Änderung &#40;diff&#41; Bericht](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Änderungs bzw. Unterschiedsbericht auswählen](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Wählen Sie eine Momentaufnahme aus der Liste **Vergleichen mit** Liste eines verwalteten oder systemeigenen Berichts aus.
 
-   ![Wählen Sie eine Momentaufnahme aus der Liste „Vergleichen mit“](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
+   ![Auswählen einer Momentaufnahme aus der Liste „Vergleichen mit“](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
 Der Änderungsbericht fügt dem Basisbericht Spalten (durch **(Diff)** gekennzeichnet) hinzu, die den Unterschied zwischen der Basismomentaufnahme und der Vergleichsmomentaufnahme anzeigen. So könnte ein Unterschiedsbericht der Ansicht mit nativen Typen aussehen:
 
-![Diff-Ansicht nativer Typen](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Ansicht „Unterschiede bei nativen Typen“](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Blogs und Videos
 

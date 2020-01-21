@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596267"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775894"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -81,7 +81,7 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
   - Dumpdatei
 
 > [!NOTE]
-> Protokolldateien, Screenshots und Aufzeichnungsdaten werden nur an Microsoft gesendet, wenn Sie die Berechtigung erteilen, indem Sie den Fehlerbericht einreichen, in dem sie enthalten sind. Die enthaltenen Dateien können Sie im Schritt „Zusammenfassung“ des Fensters „Problem melden“ sehen (siehe Screenshot). Die gesammelten Protokolle und Dateien werden im Ordner „%temp%“ gespeichert und regelmäßig sowie nach jedem Upload bereinigt. Wenn Sie kein Protokoll in Ihrem Problembericht einschließen möchten, löschen Sie die Datei aus dem Order „%temp%“, bevor Sie den Bericht einreichen.
+> Wenn Sie Microsoft Protokolldateien, Screenshots und Aufzeichnungsdaten senden, können wir Ihr Problem schneller nachvollziehen und Ihnen bei der Behebung helfen.  Deshalb sollten Sie solche Daten immer anhängen. Aus Datenschutzgründen werden Protokolldateien, Screenshots und Aufzeichnungsdaten nur dann an Microsoft gesendet, wenn Sie die Berechtigung dazu erteilen. Das tun Sie automatisch, wenn Sie den Fehlerbericht übermitteln, in dem sie enthalten sind. Im Schritt „Zusammenfassung“ des Fensters „Problem melden“ können Sie vor der Übermittlung des Berichts sehen, welche Daten gesendet werden. Sie können Systemprotokolldateien aus dem Bericht ausschließen, indem Sie im Schritt „Zusammenfassung“ den Haken aus dem Kontrollkästchen „Systemprotokolle anfügen“ entfernen. So sieht die Seite „Zusammenfassung“ aus. 
   > ![Problem melden: Zusammenfassung gesammelter Protokolle](media/report-a-problem-logs-collected.png)
 
 

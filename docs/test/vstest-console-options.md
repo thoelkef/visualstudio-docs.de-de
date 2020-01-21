@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590422"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919021"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -25,6 +25,8 @@ ms.locfileid: "75590422"
 > Der MSTest-Adapter in Visual Studio funktioniert aus Kompatibilitätsgründen auch im Legacymodus (entspricht dem Ausführen von Tests mit *mstest.exe*). Im Legacymodus kann er die TestCaseFilter-Funktion nicht nutzen. Der Adapter kann in den Legacymodus wechseln, wenn eine *TESTSETTINGS*-Datei angegeben wird, **forcelegacymode** in einer *RUNSETTINGS*-Datei auf **TRUE** festgelegt ist oder Attribute wie **HostType** verwendet werden.
 >
 > Sie müssen *VSTest.Console.exe* für die Durchführung automatisierter Tests auf einem auf der ARM-Architektur basierenden Computer verwenden.
+
+Öffnen Sie eine [Developer-Eingabeaufforderung](/dotnet/framework/tools/developer-command-prompt-for-vs), um das Befehlszeilentool zu verwenden. Sie können es aber auch über den Pfad *%Program Files(x86)%\Microsoft Visual Studio\\<version\>\\<edition\>\common7\ide\CommonExtensions\\<Platform | Microsoft>* öffnen.
 
 ## <a name="general-command-line-options"></a>Allgemeine Befehlszeilenoptionen
 
@@ -44,7 +46,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/Framework: [*Frameworkversion*]**|.NET-Zielversion, die für die Testausführung verwendet werden soll.<br />Beispielwerte: `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />Wenn als Zielframework **Framework35** angegeben ist, werden die Tests in CLR 4.0 im „Kompatibilitätsmodus“ ausgeführt.<br />Ein Beispiel: `/Framework:framework40`|
 |**/TestCaseFilter:[*Ausdruck*]**|Führt Tests aus, die mit dem angegebenen Ausdruck übereinstimmen.<br /><Expression\> ist vom Format <property\>=<value\>[\|<Expression\>].<br />Ein Beispiel: `/TestCaseFilter:"Priority=1"`<br />Ein Beispiel: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Die Befehlszeilenoption **/TestsCaseFilter** kann nicht zusammen mit der Befehlszeilenoption **/Tests** verwendet werden. <br />Informationen zum Erstellen und Verwenden von Ausdrücken finden Sie unter [TestCase-Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zeigt Nutzungsinformationen an.|
-|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Verwenden Sie zum Protokollieren von Ergebnissen in einer Visual Studio-Testergebnisdatei (TRX) **/Logger:trx**.<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Projekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Projektname\>;**<br />**[;Platform=\<Standardwert: Any CPU>]**<br />**[;Flavor=\<Standardwert: Debug>]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Wenn die Ergebnisse in einer TRX-Datei (Visual Studio Text Results) protokolliert werden sollen, geben Sie Folgendes an:<br />**/Logger: TRX**<br />**[; LogFileName =\<der Standardwert ist der eindeutige Dateiname >]**<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Projekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Projektname\>;**<br />**[;Platform=\<Standardwert: Any CPU>]**<br />**[;Flavor=\<Standardwert: Debug>]**<br />**[;RunTitle=<title\>]**<br />Hinweis: Die TfsPublisher-Protokollierung gilt in Visual Studio 2017 als veraltet und wird in neueren Versionen von Visual Studio nicht mehr unterstützt. Verwenden Sie für diese Szenarios stattdessen eine benutzerdefinierte Protokollierung. Diese Protokollierung schaltet die Protokollierung in den Legacymodus um.|
 |**/ListTests:[*Dateiname*]**|Listet gefundene Tests aus dem angegebenen Testcontainer auf.|
 |**/ListDiscoverers**|Listet alle installierten Test-Discoverer auf.|
 |**/ListExecutors**|Listet alle installierten Test-Executors auf.|
@@ -55,7 +57,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/ResultsDirectory:[*path*]**|Das Verzeichnis mit den Testergebnissen wird am angegebenen Pfad erstellt, falls es noch nicht vorhanden ist.<br />Ein Beispiel: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|Prozess-ID des übergeordneten Prozesses, der für den Start des aktuellen Prozesses verantwortlich ist.|
 |**/Port:[*port*]**|Der Port für die Socketverbindung und den Empfang der Ereignismeldungen.|
-|**/Collect:[*dataCollector friendlyName*]**|Aktiviert den Datensammler für den Testlauf. [Weitere Informationen](https://aka.ms/vstest-collect).|
+|**/Collect:[*dataCollector friendlyName*]**|Aktiviert den Datensammler für den Testlauf. [Weitere Informationen](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > Bei den Optionen und Werten muss die Groß-/Kleinschreibung nicht beachtet werden.

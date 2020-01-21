@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516440"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916750"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Schnellstart: Verwenden von Docker mit einer React-App mit einer einzigen Seite in Visual Studio
 
 Mit Visual Studio können Sie ASP.NET Core-Container-Apps mühelos erstellen, debuggen und ausführen (einschließlich Apps mit clientseitigem JavaScript, z.B. React.js-Apps mit einer einzigen Seite). Anschließend können Sie sie in Azure Container Registry (ACR), Docker Hub, Azure App Service oder Ihrer eigenen Containerregistrierung veröffentlichen. In diesem Artikel wird die Veröffentlichung in ACR veranschaulicht.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -49,7 +49,7 @@ Lesen Sie vor der Installation von Docker zunächst [Docker Desktop for Windows:
 
 1. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen** > **Docker-Unterstützung** aus, um Ihrem Projekt ein Dockerfile hinzufügen.
 
-   ![Hinzufügen der Docker-Unterstützung](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Hinzufügen von Docker-Unterstützung](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Wählen Sie den Containertyp aus, und klicken Sie auf **OK**.
 ::: moniker-end
@@ -61,7 +61,7 @@ Lesen Sie vor der Installation von Docker zunächst [Docker Desktop for Windows:
 
 1. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen** > **Docker-Unterstützung** aus, um Ihrem Projekt ein Dockerfile hinzufügen.
 
-   ![Hinzufügen der Docker-Unterstützung](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Hinzufügen von Docker-Unterstützung](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Wählen Sie den Containertyp aus.
 ::: moniker-end
@@ -222,12 +222,12 @@ Sobald der Entwicklungs- und Debugzyklus der App abgeschlossen ist, können Sie 
 1. Klicken Sie auf **Neue Azure Container Registry-Instanz erstellen**, und klicken Sie dann auf **Veröffentlichen**.
 1. Geben Sie die gewünschten Werte im Feld **Neue Azure-Containerregistrierung erstellen** ein.
 
-    | Einstellung      | Empfohlener Wert  | BESCHREIBUNG                                |
+    | Einstellung      | Empfohlener Wert  | Beschreibung                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS-Präfix** | Global eindeutiger Name | Name, der Ihre Containerregistrierung eindeutig identifiziert. |
     | **Abonnement** | Auswählen Ihres Abonnements | Das zu verwendende Azure-Abonnement. |
     | **[Ressourcengruppe](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Name der Ressourcengruppe, in der die Containerregistrierung erstellt werden soll. Wählen Sie **Neu** aus, um eine neue Ressourcengruppe zu erstellen.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Dienstebene der Containerregistrierung  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Dienstebene der Containerregistrierung  |
     | **Registrierungsstandort** | Ein Standort in Ihrer Nähe | Wählen Sie einen Standort in einer [Region](https://azure.microsoft.com/regions/) in Ihrer Nähe oder in der Nähe anderer Dienste aus, die Ihre Containerregistrierung verwenden werden. |
 
     ![Visual Studio-Dialogfeld zum Erstellen einer Azure-Containerregistrierung][0]

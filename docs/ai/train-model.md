@@ -9,16 +9,16 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f69d978f7257398e1518828cd0bbe7ed1ff0e66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dec70c9e9aeb9c916b511241a74b550354aff175
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563890"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915775"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trainieren von KI-Modellen in Azure Batch AI
 
-Azure Batch AI ist ein verwalteter Dienst, mit dem Datenanalysten und KI-Forscher KI und andere Machine Learning-Modelle in Clustern von virtuellen Azure-Computern trainieren können (inkl. VMs mit GPU-Unterstützung). Sie müssen nur beschreiben, welche Anforderungen für den Auftrag bestehen und wo die Eingaben zu finden sind sowie die Ausgaben speichern, und Batch AI übernimmt den Rest. [Weitere Informationen zu Azure Batch AI](https://docs.microsoft.com/azure/batch-ai/overview)
+Azure Batch AI ist ein verwalteter Dienst, mit dem Datenanalysten und KI-Forscher KI und andere Machine Learning-Modelle in Clustern von virtuellen Azure-Computern trainieren können (inkl. VMs mit GPU-Unterstützung). Sie müssen nur beschreiben, welche Anforderungen für den Auftrag bestehen und wo die Eingaben zu finden sind sowie die Ausgaben speichern, und Batch AI übernimmt den Rest. [Weitere Informationen zu Azure Batch AI](/azure/batch-ai/overview)
 
 Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Trainingsmodelle in Azure dynamisch horizontal hochskalieren.  Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, lässt sich anhand der Anleitungen im Azure Machine Learning-Beispielkatalog ganz einfach ein neues Python-Projekt erstellen.
 
@@ -30,7 +30,7 @@ Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Tra
 
     ![Beispielkatalog](media/train-model/batchai.png)
 
-3. Klicken Sie auf **Ansicht > Team Explorer...**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure DevOps herstellen oder ein Repository klonen.
+3. Klicken Sie auf **Ansicht > Team Explorer...** , um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure DevOps herstellen oder ein Repository klonen.
 
     ![Das Team Explorer-Fenster zeigt Azure DevOps, GitHub und das Klonen eines Repositorys an.](media/train-model/team-explorer-devops.png)
 

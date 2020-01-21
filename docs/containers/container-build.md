@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706794"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916943"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Wie Visual Studio Containeranwendungen erstellt
 
@@ -76,7 +76,7 @@ docker build -f Dockerfile ..
 
 Dockerfiles, die von Visual Studio für .NET Framework-Projekte (und für .NET Core-Projekte, die mit älteren Versionen als Update 4 von Visual Studio 2017 erstellt wurden) erstellt werden, entsprechen nicht dem Multistagetyp.  Mit den Schritten in diesen Dockerfiles wird der Code nicht kompiliert.  Wenn Visual Studio ein .NET Framework-Dockerfile erstellt, kompiliert die IDE stattdessen zuerst das Projekt mithilfe von MSBuild.  Wenn dieser Vorgang erfolgreich ist, erstellt Visual Studio anschließend das Dockerfile, wodurch einfach die Buildausgabe von MSBuild in das resultierende Docker-Image kopiert wird.  Da die Schritte zum Kompilieren des Codes nicht im Dockerfile enthalten sind, können Sie .NET Framework-Dockerfiles nicht mithilfe von `docker build` über die Befehlszeile erstellen. Sie sollten MSBuild verwenden, um diese Projekte zu erstellen.
 
-Zum Erstellen eines Images für ein einzelnes Docker-Containerprojekt können Sie MSBuild mit der Befehlsoption `/t:ContainerBuild` verwenden. Beispiel:
+Zum Erstellen eines Images für ein einzelnes Docker-Containerprojekt können Sie MSBuild mit der Befehlsoption `/t:ContainerBuild` verwenden. Zum Beispiel:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
@@ -103,7 +103,7 @@ Die Aufwärmphase findet nur im Modus **Schnell** statt, sodass für den aktiven
 
 ## <a name="volume-mapping"></a>Volumezuordnung
 
-Damit das Debuggen in Containern funktioniert, verwendet Visual Studio die Volumezuordnung, um den Debugger und die NuGet-Ordner vom Hostcomputer zuzuordnen. Hier sind die Volumes, die in Ihrem Container bereitgestellt werden:
+Damit das Debuggen in Containern funktioniert, verwendet Visual Studio die Volumezuordnung, um den Debugger und die NuGet-Ordner vom Hostcomputer zuzuordnen. Die Volumezuordnung ist in der [Dokumentation zu Docker](https://docs.docker.com/storage/volumes/) beschrieben. Hier sind die Volumes, die in Ihrem Container bereitgestellt werden:
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ Für ASP.NET Core-Web-Apps kann es zwei zusätzliche Ordner für das SSL-Zertifi
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>SSL-fähige ASP.NET Core-Apps
 
-Containertools in Visual Studio unterstützen das Debuggen einer SSL-fähigen ASP.NET Core-App mit einem Entwicklungszertifikat, so wie Sie es auch ohne Container erwarten würden. Um dies zu erreichen, fügt Visual Studio einige weitere Schritte hinzu, um das Zertifikat zu exportieren und dem Container zur Verfügung zu stellen. Der Ablauf ist wie folgt:
+Containertools in Visual Studio unterstützen das Debuggen einer SSL-fähigen ASP.NET Core-App mit einem Entwicklungszertifikat, so wie Sie es auch ohne Container erwarten würden. Um dies zu erreichen, fügt Visual Studio einige weitere Schritte hinzu, um das Zertifikat zu exportieren und dem Container zur Verfügung zu stellen. Visual Studio erledigt beim Debuggen im Container Folgendes für Sie:
 
-1. Stellen Sie mit dem Tool `dev-certs` sicher, dass das lokale Entwicklungszertifikat auf dem Hostcomputer vorhanden und vertrauenswürdig ist.
-2. Exportieren Sie das Zertifikat in %APPDATA%\ASP.NET\Https mit einem sicheren Kennwort, das im Speicher für Benutzergeheimnisse für diese bestimmte App gespeichert ist.
-3. Verwenden Sie für das Bereitstellen von Volumes die folgenden Verzeichnisse:
+1. Stellt mit dem Tool `dev-certs` sicher, dass das lokale Entwicklungszertifikat auf dem Hostcomputer vorhanden und vertrauenswürdig ist
+2. Exportiert das Zertifikat nach %APPDATA%\ASP.NET\Https und versieht es mit einem sicheren Kennwort, das im Speicher für Benutzergeheimnisse dieser bestimmten App gespeichert ist
+3. Stellt die folgenden Verzeichnisse als Volumes bereit:
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,7 +140,9 @@ ASP.NET Core sucht nach einem Zertifikat, das dem Assemblynamen im Ordner *Https
 }
 ```
 
-Weitere Informationen zur Verwendung von SSL mit ASP.NET Core-Apps in Containern finden Sie unter [Hosten von ASP.NET Core-Images mit Docker über HTTPS](https://docs.microsoft.com/aspnet/core/security/docker-https).
+Wenn Ihre Konfiguration sowohl containerisierte als auch nicht in Containern enthaltene Builds unterstützt, sollten Sie die Umgebungsvariablen verwenden, da die Pfade spezifisch für die Container Umgebung sind.
+
+Weitere Informationen zur Verwendung von SSL mit ASP.NET Core-Apps in Containern finden Sie unter [Hosten von ASP.NET Core-Images mit Docker über HTTPS](/aspnet/core/security/docker-https).
 
 ## <a name="debugging"></a>Debuggen
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954814"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917383"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -37,7 +37,7 @@ Alle anderen Vorlagen basieren auf dem Web-Frameworks Bottle, Flask oder Django 
 
 ### <a name="blank-group"></a>Leere Gruppe
 
-Alle Vorlagen für **leere \<Framework> Webprojekte** erstellen ein Projekt mit mehr oder weniger gering gehaltenen Codebausteinen und den erforderlichen Abhängigkeiten, die in einer *requirements.txt.*-Datei deklariert sind.
+Alle Vorlagen für **leere \<Framework> Webprojekte** erstellen ein Projekt mit mehr oder weniger gering gehaltenen Codebausteinen und den erforderlichen Abhängigkeiten, die in einer *requirements.txt.* -Datei deklariert sind.
 
 | Vorlage | Beschreibung |
 | --- | --- |
@@ -75,7 +75,7 @@ Wenn Sie ein Projekt über eine frameworkspezifische Vorlage erstellen, wird ein
 
 Wenn Sie die Quellcodeverwaltung verwenden, lassen Sie in der Regel den Ordner für virtuelle Umgebungen aus, da diese Umgebung mithilfe von *requirements.txt* wiederhergestellt werden kann. Der beste Weg zum Auslassen des Ordners ist, zunächst **Ich führe die Installation selbst durch** in der oben gezeigt Eingabeaufforderung auszuwählen und dann den automatischen Commit zu deaktivieren, bevor Sie die virtuelle Umgebung erstellen. Ausführliche Informationen finden Sie im [Django-Tutorial: Schritte 1-2 und 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) und unter [Flask-Tutorial: Schritte 1-2 und 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-Wählen Sie bei der Bereitstellung in Microsoft Azure App Service eine Version von Python als [Websiteerweiterung](https://aka.ms/PythonOnAppService), und installieren Sie Pakete manuell. Da Pakete in Azure App Service bei Bereitstellung über Visual Studio **nicht** automatisch anhand einer *requirements.txt*-Datei installiert werden, befolgen Sie außerdem die Konfigurationsdetails unter [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
+Wählen Sie bei der Bereitstellung in Microsoft Azure App Service eine Version von Python als [Websiteerweiterung](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019), und installieren Sie Pakete manuell. Da Pakete in Azure App Service bei Bereitstellung über Visual Studio **nicht** automatisch anhand einer *requirements.txt*-Datei installiert werden, befolgen Sie außerdem die Konfigurationsdetails unter [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md).
 
 Die Datei *requirements.txt* hingegen *wird* in Microsoft Azure Cloud Services unterstützt. Ausführliche Informationen finden Sie unter [Projekte für Azure-Clouddienste](python-azure-cloud-service-project-template.md).
 
@@ -93,7 +93,7 @@ Gruppe **Debuggen**:
 
 Durch die Eigenschaften in den Gruppen **Serverbefehl ausführen** und **Debugserverbefehl** (letzterer befindet sich weiter unten und wird in der Abbildung nicht gezeigt) wird festgelegt, wie der Webserver gestartet wird. Da für viele Frameworks die Verwendung eines Skripts außerhalb des aktuellen Projekts erforderlich ist, kann das Skript hier konfiguriert und der Name des Startmoduls als Parameter übergeben werden.
 
-- **Befehl**: Hierbei kann es sich um ein Python-Skript (*\*.py*-Datei), einen Modulnamen (wie in `python.exe -m module_name`) oder eine einzelne Codezeile (wie in `python.exe -c "code"`) handeln. Der Wert in der Dropdownliste gibt an, welcher dieser Typen beabsichtigt ist.
+- **Befehl**: Hierbei kann es sich um ein Python-Skript ( *\*.py*-Datei), einen Modulnamen (wie in `python.exe -m module_name`) oder eine einzelne Codezeile (wie in `python.exe -c "code"`) handeln. Der Wert in der Dropdownliste gibt an, welcher dieser Typen beabsichtigt ist.
 - **Argumente**: Diese Argumente werden in der Befehlszeile nach dem Befehl übergeben.
 - **Umgebung**: eine durch Zeilenumbrüche getrennte Liste von \<NAME>=\<VALUE>-Paaren, durch die die Umgebungsvariablen angegeben werden. Diese Variablen werden nach allen Eigenschaften festgelegt, durch die die Umgebung möglicherweise modifiziert wird (z.B. Portnummer und Suchpfade), und können daher diese Werte überschreiben.
 
