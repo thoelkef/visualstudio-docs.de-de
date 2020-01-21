@@ -1,6 +1,6 @@
 ---
-title: Debuggen von ASP.NET
-description: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
+title: Debuggen von ASP.NET Core
+description: Debuggen von ASP.NET Core mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679259"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847875"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET Core mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
@@ -31,7 +31,7 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
     Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie **Vorlagen** und dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Web** aus, und wählen Sie dann im mittleren Bereich **ASP.NET Core-Webanwendung** aus. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Web** aus, und wählen Sie dann im mittleren Bereich **ASP.NET Core-Webanwendung** aus. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
 
     Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **Webanwendung** aus, und klicken Sie dann auf **OK**.
 
@@ -127,7 +127,7 @@ Wenn Sie in einer Debugsitzung eine Änderung feststellen, die Sie in Ihrem Code
 
 1. Drücken Sie wiederholt **F10** (oder klicken Sie auf **Debuggen > Prozedurschritt**), um den Debugger fortzusetzen und den bearbeiteten Code auszuführen.
 
-    ![Bearbeiten und fortfahren](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Edit and continue")
+    ![Bearbeiten und Fortfahren](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Bearbeiten und Fortfahren")
 
     Wenn Sie **F10** drücken, führt der Debugger jeweils nur eine Anweisung aus, überspringt Funktionen aber, anstatt diese schrittweise auszuführen (der Code, den Sie überspringen, wird weiter ausgeführt).
 
