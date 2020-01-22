@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: f9af5a3e8796af3aeaefae569d61e78a1039d84e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516624"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115096"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
@@ -46,7 +46,7 @@ Anschließend sollte Ihre App in etwa wie in der folgenden Abbildung aussehen:
 
 ## <a name="tutorial-links"></a>Tutoriallinks
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Windows Forms-App-Projekts](../ide/step-1-create-a-windows-forms-application-project.md)|Erstellen Sie zunächst ein Windows Forms-App-Projekt.|
 |[Schritt 2: Ausführen Ihrer Picture Viewer-App](../ide/step-2-run-your-program.md)|Führen Sie das Windows Forms-App-Projekt aus, das Sie im vorherigen Schritt erstellt haben.|
