@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test, results graph
 - load test results, graphs
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b589e45fe32aff1ce0eea338675d42c3e3ea944a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644362"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115177"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen in Auslastungstestergebnissen
 
@@ -71,11 +71,11 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft 
 
 5. Um die Leistungsindikatordaten aus dem Diagramm zu entfernen, klicken Sie in der Spalte **Indikator** der Legende mit der rechten Maustaste auf den Leistungsindikator, und klicken Sie auf **Löschen**.
 
-     \- oder –
+     \- oder -
 
      Klicken Sie mit der rechten Maustaste auf die Datenlinie im Diagramm, und klicken Sie auf **Löschen**.
 
-     \- oder –
+     \- oder -
 
      Klicken Sie in der Spalte **Indikator** der Legende oder in der Datenzeile im Diagramm auf den Leistungsindikator, und drücken Sie die **ENTF-TASTE**.
 

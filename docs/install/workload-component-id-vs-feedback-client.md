@@ -3,8 +3,8 @@ title: Workload- und Komponenten-IDs in Visual Studio Feedback Client
 titleSuffix: ''
 description: Verwenden von Workload- und Komponenten-IDs in Visual Studio, um umfangreiches Feedback für Azure DevOps Services oder Team Foundation Server zu geben
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960748"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113849"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Visual Studio Feedback Client: Komponentenverzeichnis
 
