@@ -6,16 +6,16 @@ manager: lank
 ms.date: 01/06/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie das WhiteSource Bolt-Abonnement aktivieren, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 8db777135e9f78321ccbc7cc9d40bf657da97589
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75866165"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114325"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt in Visual Studio-Abonnements
 
-Bestimmen und schließen Sie Schwachstellen in Open-Source-Komponenten, und erzeugen Sie umfassende Bestands- und Lizenzberichte zu allen Open-Source-Komponenten in Ihrem Build. 
+Bestimmen und schließen Sie Schwachstellen in Open-Source-Komponenten, und erzeugen Sie umfassende Bestands- und Lizenzberichte zu allen Open-Source-Komponenten in Ihrem Build. Für Visual Studio Enterprise-Abonnements ist sechs Monate lang eine unbegrenzte Anzahl von Scans verfügbar.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
