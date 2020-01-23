@@ -3,19 +3,19 @@ title: Workload- und Komponenten-IDs in Visual Studio Community 2019
 titleSuffix: ''
 description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: bd8ad7e3b26ddbf026c5cee096a62984b3cf816a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3bafad677cbbd3371d928fba140940384ccea71c
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795965"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159290"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Visual Studio-Kern-Editor (in Visual Studio Community 2019 enthalten)
 
@@ -92,7 +92,7 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | Entwicklungstools für .NET
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS-Runtime | 16.4.29519.181 | Empfohlen
 Microsoft.VisualStudio.Component.AspNet45 | Erweiterte ASP.NET-Features | 16.0.28315.86 | Empfohlen
 Microsoft.VisualStudio.Component.Azure.Kubernetes.Tools | Visual Studio-Tools für Kubernetes | 16.0.28625.61 | Empfohlen
-Microsoft.VisualStudio.Component.Azure.Powershell | Azure Powershell | 16.4.29429.68 | Empfohlen
+Microsoft.VisualStudio.Component.Azure.Powershell | Azure PowerShell | 16.4.29429.68 | Empfohlen
 Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Azure Resource Manager-Kerntools | 16.4.29409.204 | Empfohlen
 Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Service Fabric-Tools | 16.4.29313.120 | Empfohlen
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services-Kerntools | 16.4.29409.204 | Empfohlen
