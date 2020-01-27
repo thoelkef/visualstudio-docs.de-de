@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 995508380fd551af33d98ebd48ab02a8287d0284
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a46967d5f46c4f495a07d80e5f73cfc9f9d60c1a
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637952"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542632"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C\#
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in C# eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Diese einfache Zeichenfolgen-Schnellansicht ist an sich nicht sehr nützlich, doch wird an ihrem Beispiel die grundlegende Vorgehensweise für das Erstellen besser geeigneter Schnellansichten für andere Datentypen gezeigt.
 
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
 
 Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen wird. Deshalb müssen Sie als Erstes ein Klassenbibliotheksprojekt für die DLL erstellen.
 
@@ -38,10 +38,10 @@ Führen Sie die folgenden Aufgaben aus, um eine Schnellansicht zu erstellen.
 1. Erstellen Sie ein neues Klassenbibliotheksprojekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Class Library**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann **Create a New Class Library (.NET Standard)** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Class Library**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann **Create a New Class Library (.NET Framework)** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialog Felds **Neues Projekt** unter **Visual C#**  **.NET Standard**aus, und klicken Sie dann im mittleren Bereich auf **Klassenbibliothek (.NET Standard)** .
+    Klicken Sie auf der Menüleiste oben auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialog Felds **Neues Projekt** unter **Visual C#**  **.NET Framework**aus, und klicken Sie dann im mittleren Bereich auf **Klassenbibliothek (.NET Framework)** .
     ::: moniker-end
 
 2. Geben Sie einen geeigneten Namen für die Klassenbibliothek ein, z. b. `MyFirstVisualizer`, und klicken Sie dann auf **Erstellen** oder **OK**.
@@ -135,7 +135,7 @@ Führen Sie die folgenden Aufgaben aus, um eine Schnellansicht zu erstellen.
 
 ### <a name="to-add-the-debuggee-side-code"></a>So fügen Sie den Code für die zu debuggende Seite hinzu
 
-1. Fügen Sie den folgenden Attribut Code zu DebuggerSide.cs nach den `using` Direktiven, jedoch vor `namespace MyFirstVisualizer` hinzu:
+1. Fügen Sie den folgenden Attribut Code zu DebuggerSide.cs nach den `using` Direktiven, jedoch vor `namespace MyFirstVisualizer`hinzu:
 
    ```csharp
    [assembly:System.Diagnostics.DebuggerVisualizer(
@@ -173,7 +173,7 @@ Führen Sie die folgenden Aufgaben aus, um eine Schnellansicht zu erstellen.
     Geben Sie im Suchfeld Konsolen- **App**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann **neue Konsolen-app erstellen (.NET Framework)** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
+    Klicken Sie auf der Menüleiste oben auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
     ::: moniker-end
 
 2. Geben Sie einen geeigneten Namen für die Klassenbibliothek ein, z. b. `MyTestConsole`, und klicken Sie dann auf **Erstellen** oder **OK**.
@@ -242,7 +242,7 @@ Zuerst müssen Sie ein neues Klassenbibliotheksprojekt erstellen.
 
 1. Klicken Sie im Menü **Datei** auf **Neu > Projekt**.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Visual C#** den **.NET Standard**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Visual C#** den **.NET Framework**aus.
 
 3. Wählen Sie im mittleren Bereich die Option **Klassenbibliothek**aus.
 

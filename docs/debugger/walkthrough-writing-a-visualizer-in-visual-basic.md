@@ -1,5 +1,5 @@
 ---
-title: Schreiben eine Schnellansicht in Visual Basic | Microsoft-Dokumentation
+title: Schreiben einer Schnellansicht in Visual Basic | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 04/12/2019
 ms.topic: conceptual
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408360"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542606"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Nach dem Muster dieser einfachen Zeichenfolgen-Schnellansicht können Sie auch Schnellansichten für andere Datentypen erstellen, die Sie in Ihren Projekten benötigen.
 
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Importieren und Exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Importieren und Exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
 
 Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom Debugger gelesen wird. Deshalb besteht der erste Schritt darin, ein Klassenbibliotheksprojekt für die DLL zu erstellen.
 
@@ -39,13 +39,13 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 1. Erstellen Sie ein neues Klassenbibliotheksprojekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Visual Basic**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen Sie eine neue Klassenbibliothek ((.NET Standard)**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Visual Basic**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann **neue Klassenbibliothek erstellen (.NET Framework)** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Im linken Bereich die **neues Projekt** Dialogfeld **Visual Basic**, wählen Sie **.NET Standard**, und wählen Sie dann im mittleren Bereich **Klasse (Bibliothek für .NET Standard)**.
+    Klicken Sie auf der Menüleiste oben auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialog Felds **Neues Projekt** unter **Visual Basic** **.NET Standard**aus, und wählen Sie dann im mittleren Bereich die Option **Klassenbibliothek (.NET Standard)** aus.
     ::: moniker-end
 
-2. Geben Sie einen geeigneten Namen für die Klassenbibliothek, z. B. `MyFirstVisualizer`, und klicken Sie dann auf **erstellen** oder **OK**.
+2. Geben Sie einen geeigneten Namen für die Klassenbibliothek ein, z. b. `MyFirstVisualizer`, und klicken Sie dann auf **Erstellen** oder **OK**.
 
    Wenn Sie die Klassenbibliothek erstellt haben, müssen Sie einen Verweis auf Microsoft.VisualStudio.DebuggerVisualizers.DLL hinzufügen, damit die dort definierten Klassen verwendet werden können. Geben Sie dem Projekt zunächst jedoch einen aussagekräftigen Namen.
 
@@ -56,13 +56,13 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 2. Ändern Sie den Namen von Class1.vb in einen aussagekräftigeren Namen, zum Beispiel DebuggerSide.vb.
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in DebuggerSide.vb automatisch an den neuen Dateinamen an.
+   > die Klassen Deklaration in DebuggerSide. vb wird von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatisch so geändert, dass Sie mit dem neuen Dateinamen identisch ist.
 
 3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyFirstVisualizer**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.
 
-4. In der **Verweis hinzufügen** Dialogfeld auf die **Durchsuchen** Registerkarte **Durchsuchen** und suchen Sie die Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+4. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Durchsuchen** die Option **Durchsuchen** aus, und suchen Sie die Datei Microsoft. VisualStudio. DebuggerVisualizers. dll.
 
-    Sie finden die DLL im  *\<Visual Studio-Installationsverzeichnis > \Common7\IDE\PublicAssemblies* Unterverzeichnis des Visual Studio-Installationsverzeichnis.
+    Sie finden die dll in *\<Visual Studio-Installationsverzeichnis > \common7\ide\publicassemblies* Unterverzeichnis des Installationsverzeichnisses von Visual Studio.
 
 5. Klicken Sie auf **OK**.
 
@@ -108,9 +108,9 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.
 
-2. In der **Verweis hinzufügen** Dialogfeld auf die **Durchsuchen** Registerkarte **Durchsuchen**, und suchen Sie die "System.Windows.Forms.dll".
+2. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Durchsuchen** die Option **Durchsuchen**aus, und suchen Sie die System. Windows. Forms. dll.
 
-    Sie finden die DLL im *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
+    Sie finden die dll in *C:\WINDOWS\Microsoft.Net\Framework\v4.0.30319*.
 
 3. Klicken Sie auf **OK**.
 
@@ -168,16 +168,16 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>So fügen Sie der Projektmappe ein Konsolenanwendungsprojekt hinzu
 
-1. Klicken Sie im Projektmappen-Explorer mit der Maustaste der lösungs, wählen Sie **hinzufügen**, und klicken Sie dann auf **neues Projekt**.
+1. Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf die Projekt Mappe, und wählen Sie **Hinzufügen**und dann **Neues Projekt**aus.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in das Suchfeld **Visual Basic**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen eine neue Konsolenanwendung ((.NET Framework)**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Geben Sie im Suchfeld als Suchbegriff **Visual Basic**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann **neue Konsolen-app erstellen (.NET Framework)** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual Basic** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
+    Klicken Sie auf der Menüleiste oben auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual Basic****Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
     ::: moniker-end
 
-2. Geben Sie einen geeigneten Namen für die Klassenbibliothek, z. B. `MyTestConsole`, und klicken Sie dann auf **erstellen** oder **OK**.
+2. Geben Sie einen geeigneten Namen für die Klassenbibliothek ein, z. b. `MyTestConsole`, und klicken Sie dann auf **Erstellen** oder **OK**.
 
    Jetzt müssen Sie die notwendigen Verweise hinzufügen, damit MyFirstVisualizer von MyTestConsole aufgerufen werden kann.
 
@@ -185,7 +185,7 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.
 
-2. In der **Verweis hinzufügen** Dialogfeld auf die **Durchsuchen** Registerkarte, klicken Sie auf "Microsoft.VisualStudio.DebuggerVisualizers" hinzu.
+2. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Durchsuchen** auf Microsoft. VisualStudio. DebuggerVisualizers.
 
 3. Klicken Sie auf **OK**.
 
@@ -206,7 +206,7 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in TestConsole.vb automatisch an den neuen Dateinamen an.
 
-3. In TestConsole.vb. VB, fügen Sie die folgenden `Imports` Anweisung:
+3. In Test Console. Fügen Sie die folgende `Imports`-Anweisung hinzu:
 
    ```vb
    Imports MyFirstVisualizer
@@ -231,10 +231,10 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
    Herzlichen Glückwunsch! Sie haben soeben Ihre erste Schnellansicht erstellt und getestet.
 
-   Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).
+   Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Gewusst wie: Installieren einer](../debugger/how-to-install-a-visualizer.md)Schnellansicht.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)
-- [Vorgehensweise: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).
+- [Gewusst wie: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)
