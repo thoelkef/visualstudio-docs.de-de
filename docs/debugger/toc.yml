@@ -52,6 +52,8 @@
       items:
         - name: Überprüfen von Daten in Debuggerfenstern
           href: debugger-windows.md
+        - name: Überprüfen von Ausnahmen
+          href: exception-helper.md
         - name: Variablen überprüfen
           href: autos-and-locals-windows.md
         - name: Beachten der Variablen
