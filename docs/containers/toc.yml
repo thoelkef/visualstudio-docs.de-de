@@ -7,7 +7,7 @@
     - name: Schnellstart
       expanded: true
       items:
-        - name: ASP.NET Core-App in einem Container
+        - name: ASP.NET-App in einem Container
           href: container-tools.md
         - name: React.js-Single-Page-App in einem Container
           href: container-tools-react.md
