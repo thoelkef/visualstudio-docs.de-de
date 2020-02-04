@@ -25,7 +25,7 @@ ms.locfileid: "75585638"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Testen Ihres Codes mit dem Test der programmierten UI
 
-Die Anwendung wird mit Tests der programmierten UI (Coded UI Tests, CUITs) über die Benutzeroberfläche (User Interface, UI) gesteuert. Zu diesen Tests gehören Funktionstests der Benutzeroberflächen-Steuerelemente. Mithilfe dieser Tests können Sie überprüfen, ob die gesamte Anwendung einschließlich der Benutzeroberfläche ordnungsgemäß funktioniert. Tests der programmierten UI unterstützen Sie bei der Überprüfung oder einer anderen Logik der Benutzeroberfläche, beispielsweise einer Webseite. Außerdem werden sie häufig zum Automatisieren eines vorhandenen manuellen Tests verwendet.
+Die Anwendung wird mit Tests der programmierten UI (Coded UI Tests, CUITs) über die Benutzeroberfläche (User Interface, UI) gesteuert. Zu diesen Tests gehören Funktionstests der UI-Steuerelemente. Mithilfe dieser Tests können Sie überprüfen, ob die gesamte Anwendung einschließlich der Benutzeroberfläche ordnungsgemäß funktioniert. Tests der programmierten UI unterstützen Sie bei der Überprüfung oder einer anderen Logik der Benutzeroberfläche, beispielsweise einer Webseite. Außerdem werden sie häufig zum Automatisieren eines vorhandenen manuellen Tests verwendet.
 
 Tests der programmierten UI in Visual Studio können ganz einfach erstellt werden. Sie können den Test einfach manuell durchführen, während der **Generator für Tests der programmierten UI** im Hintergrund ausgeführt wird. Sie können außerdem angeben, welche Werte in bestimmten Feldern angezeigt werden sollen. Der **Generator für Tests der programmierten UI** zeichnet Ihre Aktionen auf und generiert entsprechenden Code. Nach dem Erstellen des Tests können Sie diesen in einem spezialisierten Editor bearbeiten und die Sequenz der Aktionen ändern.
 
@@ -92,7 +92,7 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
 
      Wählen Sie zum **Generieren von Code**, der Ihre Aktionen repliziert, das Symbol **Code generieren** aus, und geben Sie einen Namen und eine Beschreibung für Ihre Testmethode für programmierte UI ein.
 
-4. Überprüfen Sie die Werte in Benutzeroberflächenfeldern wie z.B. Textfeldern.
+4. Überprüfen Sie die Werte in Benutzeroberflächenfeldern wie z. B. Textfeldern.
 
      Wählen Sie im **Test-Generator der programmierten UI** **Assertionen hinzufügen** und anschließend in der ausgeführten Anwendung ein UI-Steuerelement aus. Wählen Sie in der angezeigten Eigenschaftenliste eine Eigenschaft, beispielsweise **Text** in einem Textfeld, aus. Wählen Sie im Kontextmenü **Assertion hinzufügen** aus. Wählen Sie im Dialogfeld den Vergleichsoperator, den Vergleichswert und die Fehlermeldung aus.
 
@@ -146,7 +146,7 @@ Ein ausführlicheres Beispiel finden Sie unter [Exemplarische Vorgehensweise: Er
 
 ## <a name="start-and-stop-the-application-under-test"></a>Starten und Beenden der getesteten Anwendung
 
-Wenn Sie die Anwendung, den Browser oder die Datenbank nicht für jeden Test separat Starten und Beenden möchten, befolgen Sie einer der folgenden Anweisungen:
+Wenn Sie die Anwendung, den Browser oder die Datenbank nicht für jeden Test separat starten und beenden möchten, befolgen Sie eine der folgenden Anweisungen:
 
 - Wenn Sie die Aktionen zum Starten der getesteten Anwendung nicht aufzeichnen möchten, müssen Sie die Anwendung starten, bevor Sie auf das **Aufzeichnungssymbol** klicken.
 
@@ -171,7 +171,7 @@ Außerdem können Sie zu einem bestimmten Steuerelement navigieren, indem Sie de
 ![Testeigenschaften für codierte UI](../test/media/codedui_2.png)
 
 > [!TIP]
-> Wenn beim Auswählen eines Steuerelements in Ihrer Anwendung keine Eigenschaften oder keine Steuerelemente in der UI-Steuerelementzuordnung angezeigt werden, stellen Sie sicher, dass das Steuerelement im Anwendungscode über eine eindeutige ID verfügt. Diese eindeutige ID kann ein HTML-ID-Attribut oder eine WPF-UId sein.
+> Wenn beim Auswählen eines Steuerelements in Ihrer Anwendung keine Eigenschaften oder keine Steuerelemente in der UI-Steuerelementzuordnung angezeigt werden, stellen Sie sicher, dass das Steuerelement im Anwendungscode über eine eindeutige ID verfügt. Diese eindeutige ID kann ein HTML-ID-Attribut oder eine WPF-UID sein.
 
 Öffnen Sie als nächstes das Kontextmenü der Eigenschaft für das UI-Steuerelement, das Sie überprüfen möchten, und zeigen Sie dann auf **Assertion hinzufügen**. Wählen Sie im Dialogfeld **Assertion hinzufügen** den **Vergleichsoperator** für die Assertion aus, z.B. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, und geben Sie unter **Vergleichswert** den Wert für die Assertion ein.
 
@@ -213,7 +213,7 @@ Wählen Sie **Code generieren** aus, um den Code für die Assertionen zu generie
 
 Vorgehensweise, wenn das Steuerelement den Fokus verliert und nicht mehr angezeigt wird, wenn Sie das Tool **Assertionen hinzufügen** über den **Test-Generator der programmierten UI** auswählen:
 
-Beim Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften müssen Sie manchmal die Tastatur verwendet werden. Wenn Sie beispielsweise versuchen, einen Test der programmierten UI aufzuzeichnen, der ein Kontextmenüsteuerelement verwendet, verliert die Liste der Menüelemente im Steuerelement den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, im **Test-Generator der programmierten UI** das Tool **Add Assertions** (Assertionen hinzufügen) auszuwählen. Dieser Vorgang wird in der folgenden Abbildung veranschaulicht. Das Kontextmenü in Internet Explorer verliert den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, es mit **Add Assertions** (Assertionen hinzufügen) auszuwählen.
+Beim Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften müssen Sie manchmal die Tastatur verwenden. Wenn Sie beispielsweise versuchen, einen Test der programmierten UI aufzuzeichnen, der ein Kontextmenüsteuerelement verwendet, verliert die Liste der Menüelemente im Steuerelement den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, im **Test-Generator der programmierten UI** das Tool **Add Assertions** (Assertionen hinzufügen) auszuwählen. Dieser Vorgang wird in der folgenden Abbildung veranschaulicht. Das Kontextmenü in Internet Explorer verliert den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, es mit **Add Assertions** (Assertionen hinzufügen) auszuwählen.
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
@@ -262,7 +262,7 @@ Zum Ändern der Tastaturbelegung müssen Sie die folgende Konfigurationsdatei ä
 
 Vorgehensweise, wenn beim Aufzeichnen von Mauszeigerbewegungen Probleme auftreten:
 
-Auf vielen Websites wird ein Steuerelement erweitert, wenn Sie auf es zeigen, und es werden weitere Details angezeigt. Im Allgemeinen entspricht dieses Verhalten Menüs in Desktopanwendungen. Da dies ein allgemeines Muster ist, werden in Tests der programmierten UI implizite Bewegungen des Mauszeigers für Webbrowser aktiviert. Wenn Sie beispielsweise Mauszeigerbewegungen in Internet Explorer aufzeichnen, wird ein Ereignis ausgelöst. Diese Ereignisse können zur Aufzeichnung redundanter Mauszeigerbewegungen führen. Daher wird für das Aufzeichnen impliziter Mauszeigerbewegungen `ContinueOnError` in der UI-Testkonfigurationsdatei auf `true` festgelegt. Auf diese Weise kann die Wiedergabe fortgesetzt werden, wenn bei einem Mauszeiger-Bewegungsereignis ein Fehler auftritt.
+Auf vielen Websites wird ein Steuerelement erweitert, wenn Sie darauf zeigen, und es werden weitere Details angezeigt. Im Allgemeinen entspricht dieses Verhalten Menüs in Desktopanwendungen. Da dies ein allgemeines Muster ist, werden in Tests der programmierten UI implizite Bewegungen des Mauszeigers für Webbrowser aktiviert. Wenn Sie beispielsweise Mauszeigerbewegungen in Internet Explorer aufzeichnen, wird ein Ereignis ausgelöst. Diese Ereignisse können zur Aufzeichnung redundanter Mauszeigerbewegungen führen. Daher wird für das Aufzeichnen impliziter Mauszeigerbewegungen `ContinueOnError` in der UI-Testkonfigurationsdatei auf `true` festgelegt. Auf diese Weise kann die Wiedergabe fortgesetzt werden, wenn bei einem Mauszeiger-Bewegungsereignis ein Fehler auftritt.
 
 Öffnen Sie zum Aktivieren der Aufzeichnung impliziter Mauszeigerbewegungen in einem Webbrowser die Konfigurationsdatei:
 
@@ -322,7 +322,7 @@ Wenn Sie **Code generieren** auswählen, werden mehrere Codeelemente erstellt:
     }
     ```
 
-     Mit einem Rechtsklick können Sie in dieser Methode weitere aufgezeichnete Aktionen und Überprüfungen hinzuzufügen. Sie können diese auch manuell bearbeiten, um den Code zu erweitern oder zu ändern. Sie können beispielsweise einen Teil des Codes in einer Schleife einschließen.
+     Mit einem Rechtsklick können Sie in dieser Methode weitere aufgezeichnete Aktionen und Überprüfungen hinzuzufügen. Sie können diese auch manuell bearbeiten, um den Code zu erweitern oder zu ändern. Sie können beispielsweise einen Teil des Codes in eine Schleife einschließen.
 
      Außerdem können Sie neue Testmethoden und auf die gleiche Weise auch Code hinzufügen. Jede Testmethode muss das `[TestMethod]`-Attribut aufweisen.
 
@@ -398,7 +398,7 @@ Um für UI-Steuerelemente bestimmte Eigenschaftswerte abzurufen und festzulegen,
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> gibt ein Objekt zurück, das anschließend in das entsprechende <xref:System.Type>-Objekt umgewandelt werden kann. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> akzeptiert ein Objekt für den Wert der Eigenschaft.
 
-### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>So rufen Sie Eigenschaften von UI-Teststeuerelementen ab oder legen sie fest
+### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>So können Sie Eigenschaften von UI-Teststeuerelementen direkt abrufen oder festlegen
 
 Mit Steuerelementen, die von <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> abgeleitet werden (z.B. [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) oder [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)), können Sie die jeweiligen Eigenschaftswerte direkt abrufen oder festlegen. Der folgende Code zeigt einige Beispiele:
 
