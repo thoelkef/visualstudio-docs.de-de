@@ -1,18 +1,18 @@
 ---
 title: Einfügen von XML-Dokumentationskommentaren
-ms.date: 01/26/2018
+ms.date: 01/22/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad29957cc31247c16ca38038ad4880ea75a85182
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595578"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892134"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Vorgehensweise: Einfügen von XML-Kommentaren für die Generierung der Dokumentation
 
@@ -30,7 +30,7 @@ Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly vert
 
 1. Platzieren Sie den Textcursor oberhalb des zu dokumentierenden Elements, z.B. einer Methode.
 
-1. Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie einen der folgenden Schritte aus:
 
    - Geben Sie `///` in C# oder `'''` in Visual Basic ein
 
@@ -44,9 +44,13 @@ Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly vert
 
    ![XML-Kommentarvorlage – Visual Basic](media/doc-preview-vb.png)
 
-1. Geben Sie Beschreibungen für jedes XML-Element an, um das Codeelement vollständig zu dokumentieren.
+3. Geben Sie Beschreibungen für jedes XML-Element an, um das Codeelement vollständig zu dokumentieren.
 
    ![Vervollständigter Kommentar](media/doc-result-cs.png)
+
+Sie können in XML-Kommentaren Stile verwenden, die beim Zeigen auf das Element in der QuickInfo gerendert werden. Zu diesen Stilen zählen z. B. die Kursiv- oder Fettformatierung, Aufzählungslisten und klickbare Links.
+
+   ![Vervollständigter Kommentar](media/doc-styles-cs.png) 
 
 > [!NOTE]
 > Es gibt eine [Option](../../ide/reference/options-text-editor-csharp-advanced.md) zum Ein- und Ausblenden von XML-Dokumentationskommentaren nach der Eingabe von `///` in C# oder `'''` in Visual Basic. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus, um das Dialogfeld **Optionen** zu öffnen. Navigieren Sie dann zu **Text-Editor** > **C#** oder **Basic** > **Advanced** (Basic > Erweitert). Suchen Sie im Abschnitt **Editor-Hilfe** nach der Option **XML-Dokumentationskommentare generieren**.
@@ -55,7 +59,7 @@ Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly vert
 
 - [XML-Dokumentationskommentare (C#-Programmierhandbuch)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documenting your code with XML comments (C# Guide) (Dokumentieren von Code mit XML-Kommentaren (C#-Handbuch))](/dotnet/csharp/codedoc)
-- [Vorgehensweise: How to: Create XML documentation (Visual Basic) (Vorgehensweise: Erstellen von XML-Dokumentation in Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [How to: How to: Create XML documentation (Visual Basic) (Vorgehensweise: Erstellen von XML-Dokumentation in Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [C++-Kommentare](/cpp/cpp/comments-cpp)
 - [XML-Dokumentation (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [Codegenerierung](../code-generation-in-visual-studio.md)

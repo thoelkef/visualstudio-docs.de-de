@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596189"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027633"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
@@ -83,6 +83,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | OptionExplicit | Ein boolescher Wert, der angibt, dass Variablen im Quellcode explizit deklariert werden müssen, wenn er auf `true` festgelegt ist. Diese Eigenschaft entspricht dem `/optionexplicit`-Compilerschalter. |
 | OptionInfer | Ein boolescher Wert, der den Typrückschluss von Variablen aktiviert, wenn er auf `true` festgelegt ist. Diese Eigenschaft entspricht dem `/optioninfer`-Compilerschalter. |
 | OptionStrict | Ein boolescher Wert, bei dessen Festlegung auf `true` von der Buildaufgabe eine strikte Typsemantik erzwungen wird, um implizite Typkonvertierungen einzuschränken. Diese Eigenschaft entspricht der `/optionstrict`-Option des Compilers *vbc.exe*. |
+| OutDir | Gibt den endgültigen Ausgabespeicherort des Projekts oder der Projektmappe an. Beim Entwickeln einer Lösung lassen sich mit OutDir mehrere Projektausgaben an einem Speicherort erfassen. Außerdem ist OutDir in der Eigenschaft „AssemblySearchPaths“ enthalten, die zum Auflösen von Verweisen verwendet wird. Beispiel: *bin\Debug*. |
 | OutputPath | Gibt den Pfad zum Ausgabeverzeichnis relativ zum Projektverzeichnis an, zum Beispiel *bin\Debug*. |
 | OutputType | Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann einen der folgenden Werte aufweisen:<br /><br /> – Library. Erstellt eine Codebibliothek. (Standardwert)<br />– Exe. Erstellt eine Konsolenanwendung.<br />– Module. Erstellt ein Modul.<br />– Winexe. Erstellt ein Windows-Programm.<br /><br /> Diese Eigenschaft entspricht der `/target`-Option des Compilers *vbc.exe*. |
 | OverwriteReadOnlyFiles | Ein boolescher Wert, der angibt, ob schreibgeschützte Dateien vom Build überschrieben werden sollen oder ob ein Fehler ausgelöst werden soll. |

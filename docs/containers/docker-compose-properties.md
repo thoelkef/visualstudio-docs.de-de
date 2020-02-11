@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916932"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826457"
 ---
 # <a name="docker-compose-build-properties"></a>Buildeigenschaften von Docker Compose
 
@@ -109,6 +109,20 @@ Setzen Sie wie im vorherigen Beispiel die Werte in doppelte Anführungszeichen, 
 |com.microsoft.visualstudio.debuggee.killprogram|Mit diesem Befehl wird ggf. das Programm der zu debuggenden Komponente beendet, das im Container ausgeführt wird.|
 |com.microsoft.visualstudio.debuggee.program|Das Programm, das zu Beginn des Debuggens gestartet wird. Bei .NET Core-Apps ist für diese Einstellung in der Regel **dotnet** festgelegt.|
 |com.microsoft.visualstudio.debuggee.workingdirectory|Das Verzeichnis, das zu Beginn des Debuggens als Startverzeichnis verwendet wird. Bei Linux-Containern ist für diese Einstellung üblicherweise */app* festgelegt, bei Windows-Containern *C:\app*.|
+
+## <a name="customize-the-app-startup-process"></a>Anpassen des App-Startvorgangs
+
+Sie können einen Befehl oder ein benutzerdefiniertes Skript vor dem App-Start ausführen, indem Sie es mithilfe der `entrypoint`-Einstellung von der Konfiguration abhängig machen. Wenn Sie ein Zertifikat durch Ausführen von `update-ca-certificates` z. B. nur für den **Debugmodus**, aber nicht für den **Releasemodus** einrichten müssen, fügen Sie den folgenden Code nur in der Datei *docker-compose.vs.debug.yml* hinzu:
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+Wenn Sie die Datei *docker-compose.vs.release.yml* oder *docker-compose.vs.debug.yml* weglassen, dann generiert Visual Studio anhand der Standardeinstellungen selbst eine.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

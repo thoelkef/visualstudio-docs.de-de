@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596865"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923265"
 ---
 # <a name="build-page-project-designer-c"></a>Seite "Erstellen", Projekt-Designer (C#)
 
@@ -65,6 +65,12 @@ Definiert TRACE als Symbol in allen Quellcodedateien Ihrer App. Die Auswahl dies
 Gibt den Prozessor an, für den die Ausgabedatei konfiguriert ist. Wählen Sie für jeden Intel-kompatiblen 32-Bit-Prozessor **x86**, für jeden Intel-kompatiblen 64-Bit-Prozessor **x64** und für ARM-Prozessoren **ARM** aus, oder wählen Sie **Any CPU**, um anzugeben, dass jeder Prozessor zulässig ist. **Any CPU** (Beliebige CPU) ist der Standardwert für Projekte, da die Anwendung hiermit auf möglichst vielen Geräten ausgeführt werden kann.
 
 Weitere Informationen finden Sie unter [/platform (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**NULL zulassen**
+
+Gibt projektübergreifend den C#-Nullable-Kontext an. Diese UI-Option wurde in Visual Studio 16.5 eingeführt und ist nur in Projekten verfügbar, die C# 8.0 oder höher verwenden.
+
+Weitere Informationen finden Sie unter [Nullwerte zulassende Verweistypen – Nullable-Kontexte](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **32-Bit bevorzugen**
 

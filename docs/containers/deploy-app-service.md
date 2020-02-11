@@ -6,14 +6,14 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188791"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027288"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Bereitstellen eines ASP.NET Core-Containers in Azure App Service mit Visual Studio
 
@@ -21,7 +21,7 @@ Dieses Tutorial führt Sie durch die Verwendung von Visual Studio zum Veröffent
 
 Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) erstellen, bevor Sie beginnen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Zum Abschließen dieses Tutorials benötigen Sie Folgendes:
 
@@ -29,7 +29,7 @@ Zum Abschließen dieses Tutorials benötigen Sie Folgendes:
 - Installieren der neuesten Version von [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) mit der Workload „ASP.NET und Webentwicklung“
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit der Workload *ASP.NET und Webentwicklung*
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit der Workload *ASP.NET- und Webentwicklung*
 ::: moniker-end
 - Installation von [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
@@ -53,13 +53,13 @@ Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET 
 1. Wählen Sie eine **Webanwendung** aus.
 1. Wählen Sie im Kontrollkästchen **Für HTTPS konfigurieren** aus, ob Sie SSL unterstützen möchten.
 1. Aktivieren Sie das Kontrollkästchen **Docker-Unterstützung aktivieren**.
-1. Wählen Sie den Containertyp **Linux** aus, und klicken Sie auf **Erstellen**. Windows-Container werden nicht für die Bereitstellung in Azure App Service unterstützt.
+1. Wählen Sie den Containertyp aus, und klicken Sie auf **Erstellen**. Windows-Container werden nicht für die Bereitstellung in Azure App Service unterstützt.
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>Bereitstellen des Containers in Azure
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Veröffentlichen**.
-1. Wählen Sie im Dialogfeld „Veröffentlichungsziel“ die Option **App Service Linux** aus.
+1. Wählen Sie im Dialogfeld „Veröffentlichungsziel“ eine der Option **App Service Linux** oder **App Service** aus. Dabei handelt es sich um das Betriebssystem, das den Webserver hostet.
 1. Sie können nur in App Service veröffentlichen oder sowohl in App Service als auch in Azure Container Registry (ACR) veröffentlichen. Wählen Sie **Create new App Service for containers** (Neue App Service-Instanz für Container erstellen) aus, und klicken Sie auf **Veröffentlichen**, um den Container in einer ACR-Instanz zu veröffentlichen.
 
    ![Screenshot: Dialogfeld „Veröffentlichen“](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,7 +79,18 @@ Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET 
    ![Screenshot: Webanwendung](media/deploy-app-service/web-application-running.png)
 
 1. Das Veröffentlichungsprofil wird mit allen ausgewählten Details gespeichert, z. B. die Ressourcengruppe und Containerregistrierung.
+
 1. Sie können erneut eine Bereitstellung mit demselben Veröffentlichungsprofil durchführen, indem Sie auf **Veröffentlichen** oder im Fenster **Webveröffentlichungsaktivität** auf **Veröffentlichen** klicken oder indem Sie mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer** klicken und im Kontextmenü die Option **Veröffentlichen** auswählen.
+
+## <a name="view-container-settings"></a>Anzeigen von Containereinstellungen
+
+Im [Azure-Portal](https://portal.azure.com) können Sie Ihre App Service-Bereitstellung öffnen.
+
+Sie können sich Einstellungen für Ihre App Service-Bereitstellung ansehen, indem Sie das Menü **Containereinstellungen* öffnen. Dies ist in Version 16.4 und höheren Versionen von Visual Studio 2019 möglich.
+
+![Screenshot des Menüs „Containereinstellungen“ im Azure-Portal](media/deploy-app-service/container-settings-menu.png)
+
+In diesem Menü können Sie sich Containerinformationen ansehen, Protokolle anzeigen oder herunterladen, oder Continuous Deployment einrichten. Weitere Informationen erhalten Sie im Artikel [Continuous Deployment mit Web-App für Container](/azure/app-service/containers/app-service-linux-ci-cd).
 
 ## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
 
@@ -89,7 +100,7 @@ Klicken Sie im Azure-Portal auf **Ressourcengruppen**, und wählen Sie dann die 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Richten Sie Continuous Integration und Continuous Delivery (CI/CD) mit [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops) ein.
+Weitere Informationen finden Sie im Artikel [Einführung in Azure App Service unter Linux](/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="see-also"></a>Siehe auch
 

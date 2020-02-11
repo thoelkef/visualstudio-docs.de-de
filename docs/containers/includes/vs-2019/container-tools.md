@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Tools für Docker mit ASP.NET Core
+title: Visual Studio-Tools für Docker mit ASP.NET
 author: ghogen
 description: Erfahren Sie mehr über die Verwendung von Visual Studio 2019-Tools und Docker für Windows.
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927797"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922994"
 ---
 Mit Visual Studio können Sie .NET-, ASP.NET- und ASP.NET Core-Apps in Containern mühelos erstellen, debuggen, ausführen und anschließend in Azure Container Registry (ACR), Docker Hub, Azure App Service oder Ihrer eigenen Containerregistrierung veröffentlichen. In diesem Artikel veröffentlichen wir eine ASP.NET Core-App in ACR.
 
@@ -20,7 +20,7 @@ Mit Visual Studio können Sie .NET-, ASP.NET- und ASP.NET Core-Apps in Container
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit installierten Workloads für **Webentwicklung**, **Azure-Tools** und/oder **plattformübergreifende .NET Core-Entwicklung**
-* [.NET Core 2.2-Entwicklungstools](https://dotnet.microsoft.com/download/dotnet-core/2.2) zur Entwicklung mit .NET Core 2.2
+* [.NET Core-Entwicklungstools](https://dotnet.microsoft.com/download/dotnet-core/) für die Entwicklung mit .NET Core
 * Zum Veröffentlichen in Azure Container Registry ist ein Azure-Abonnement erforderlich. [Registrieren Sie sich für eine kostenlose Testversion.](https://azure.microsoft.com/offers/ms-azr-0044p/)
 
 ## <a name="installation-and-setup"></a>Installation und Einrichtung
@@ -29,10 +29,12 @@ Lesen Sie vor der Installation von Docker zunächst [Docker Desktop for Windows:
 
 ## <a name="add-a-project-to-a-docker-container"></a>Hinzufügen eines Projekts zu einem Docker-Container
 
-1. Erstellen Sie ein neues Projekt über die Vorlage **ASP.NET Core-Webanwendung**.
+1. Erstellen Sie mithilfe der Vorlage **ASP.NET Core-Webanwendung** ein neues Projekt. Wenn Sie statt .NET Core lieber .NET Framework verwenden möchten, wählen Sie **ASP.NET Web Application (.NET Framework)** (ASP.NET-Webanwendung [.NET Framework]) aus.
 1. Klicken Sie auf **Webanwendung**, und stellen Sie sicher, dass das Kontrollkästchen neben **Docker-Unterstützung aktivieren** aktiviert ist.
 
    ![Kontrollkästchen „Enable Docker Support“ (Docker-Unterstützung aktivieren)](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   Im Screenshot wird .NET Core verwendet. Mit .NET Framework sieht der Bildschirm etwas anders aus.
 
 1. Wählen Sie den gewünschten Containertyp aus (Windows oder Linux), und klicken Sie auf **Erstellen**.
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Das obige *Dockerfile* basiert auf dem Image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) und enthält Anweisungen zum Anpassen des Basisimages durch Erstellen Ihres Projekts und anschließendem Hinzufügen zum Container.
+Das obige *Dockerfile* basiert auf dem Image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) und enthält Anweisungen zum Anpassen des Basisimages durch Erstellen Ihres Projekts und anschließendem Hinzufügen zum Container. Wenn Sie .NET Framework verwenden, unterscheidet sich das Basisimage.
 
 Wenn im neuen Projektdialogfeld das Kontrollkästchen **Configure for HTTPS** (Für HTTPS konfigurieren) aktiviert ist, werden durch die *Dockerfile*-Datei zwei Ports verfügbar gemacht. Ein Port wird für den HTTP-Datenverkehr, der andere für HTTPS verwendet. Wenn dieses Kontrollkästchen nicht aktiviert ist, wird nur der Port 80 für den HTTP-Datenverkehr verfügbar gemacht.
 
@@ -71,7 +73,7 @@ Wenn im neuen Projektdialogfeld das Kontrollkästchen **Configure for HTTPS** (F
 
 Wählen Sie in der Symbolleiste im Dropdownmenü „Debuggen“ die Option **Docker** aus, und starten Sie das Debuggen der Anwendung. Möglicherweise wird eine Meldung mit einer Eingabeaufforderung zum Vertrauen eines Zertifikats angezeigt. Vertrauen Sie dem Zertifikat, um fortzufahren.
 
-Die Option **Containertools** im Fenster **Ausgabe** zeigt, welche Aktionen ausgeführt werden.
+Die Option **Containertools** im Fenster **Ausgabe** zeigt, welche Aktionen ausgeführt werden. Beim ersten Mal kann der Download des Basisimages einige Zeit dauern. Bei nachfolgenden Ausführungen geht es aber deutlich schneller.
 
 ## <a name="containers-window"></a>Fenster „Container“
 

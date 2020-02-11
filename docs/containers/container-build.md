@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916943"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027259"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Wie Visual Studio Containeranwendungen erstellt
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-In den ersten Dockerfile-Zeilen wird das Nano Server-Image in der Microsoft-Containerregistrierung (mcr.microsoft.com) angegeben. Außerdem wird das temporäre Image `base` erstellt, das die Ports 80 und 443 verfügbar macht und das Arbeitsverzeichnis auf `/app` festlegt.
+Die Zeilen der Dockerfile beginnen mit dem Debian-Image aus Azure Container Registry (mcr.microsoft.com) und erstellen eine Zwischen-Image-`base`, die die Ports 80 und 443 verfügbar macht und das Arbeitsverzeichnis auf `/app` festlegt.
 
 Die nächste Stage ist `build` und sieht wie folgt aus:
 

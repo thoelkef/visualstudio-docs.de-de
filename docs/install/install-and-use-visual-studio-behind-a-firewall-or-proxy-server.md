@@ -1,7 +1,7 @@
 ---
 title: Installation und Verwendung hinter einer Firewall oder einem Proxy
 description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Zulassungsliste setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
-ms.date: 05/22/2019
+ms.date: 02/01/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 474042f88b0bee90f2bdd61298e09c5fabfa122c
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114941"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027562"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -53,6 +53,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 | dl.xamarin.com | Einrichten des Speicherorts für den Paketdownload |
 | xamarin-downloads.azureedge.net | Liste herunterladbarer Android SDK-Pakete |
 | marketplace.visualstudio.com | Speicherort des Downloads der Visual Studio-Erweiterungen |
+| \*.gallerycdn.vsassets.io  | Speicherort des Downloads der Visual Studio-Erweiterungen |
 | visualstudio.microsoft.com | Speicherort der Dokumentation |
 | docs.microsoft.com | Speicherort der Dokumentation |
 | msdn.microsoft.com | Speicherort der Dokumentation |
@@ -76,6 +77,10 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 | www\.incredibuild.com | Spieleentwicklung mit C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Spieleentwicklung mit C++ (IncrediBuild) |
 | www\.python.org | Python-Entwicklung (Python) <br /><br />Data Science und analytische Anwendungen (Python) |
+| developerservices2.apple.com | Xamarin.iOS-Bereitstellung |
+| developer.apple.com | Xamarin.iOS-Bereitstellung |
+| appstoreconnect.apple.com | Xamarin.iOS-Bereitstellung |
+| idmsa.apple.com | Xamarin.iOS-Bereitstellung |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Verwenden von Visual Studio und Azure-Diensten
@@ -88,24 +93,24 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | - | - | - | - | - |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | | Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden. |
 | Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite (nur in Visual Studio 2017). |
-| Ziel-<br> benachrichtigungs- <br>Dienst | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Dient zum Filtern einer globalen Liste mit Benachrichtigungen in eine Liste, die nur für bestimmte Computertypen/Verwendungsszenarien gilt. |
+| Ziel-<br> benachrichtigungs- <br>Dienst | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | | 443<br><br>443 | Dient zum Filtern einer globalen Liste mit Benachrichtigungen in eine Liste, die nur für bestimmte Computertypen/Verwendungsszenarien gilt. |
 | Erweiterung <br>auf Update überprüfen | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Dient zum Bereitstellen von Benachrichtigungen wenn für eine installierte Erweiterung ein Update verfügbar ist. <br><br> Wird als Anmeldestandort verwendet. |
 | AI-Projekt <br>Integration | az861674.vo.msecnd.net | | 443<br> | Wird zum Konfigurieren neuer Projekte und zum Senden von Nutzungsdaten an Ihr registriertes Application Insights-Konto verwendet. |
 | Code Lens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | | 443 | Wird verwendet, um im Editor Informationen anzuzeigen: letzte Aktualisierung einer Datei, Zeitachse der Änderungen, von den Änderungen betroffene Arbeitselemente, Autoren usw. |
 | Experimentell <br>Featureaktivierung | visualstudio-devdiv-c2s.msedge.net | | 80 | Wird zum Aktivieren experimenteller neuer Features oder Featureänderungen verwendet. |
-| Identitätsbadge <br>(Benutzername und Avatar)<br>und <br>Roamingeinstellungen | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | Wird verwendet, um den Benutzernamen und Avatar in der IDE anzuzeigen. <br><br> Stellt sicher, dass Einstellungsänderungen von Computer zu Computer übernommen werden. |
+| Identitätsbadge <br>(Benutzername und Avatar)<br>und <br>Roamingeinstellungen | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | | 443 | Wird verwendet, um den Benutzernamen und Avatar in der IDE anzuzeigen. <br><br> Stellt sicher, dass Einstellungsänderungen von Computer zu Computer übernommen werden. |
 | Remoteeinstellungen | az700632.vo.msecnd.net | | 443 | Dient dem Deaktivieren von Erweiterungen, die bekanntermaßen Probleme in Visual Studio verursachen. |
 | Windows-Tools | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https | 443 | Wird für Windows-App Store-Szenarien verwendet. |
 | JSON-Schema <br>Suche <br><br>JSON-Schema <br>Definition<br><br>JSON-Schema <br>Unterstützung für <br>Azure-Ressourcen | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http<br>https<br><br>http<br><br>https | 80<br>443 <br><br> 443<br><br>443 | Wird zum Ermitteln und Herunterladen von JSON-Schemas verwendet, die der Benutzer beim Bearbeiten von JSON-Dokumenten möglicherweise verwendet. <br><br>Dient dem Abruf des Schemas zur Metavalidierung für JSON.<br><br>Wird zum Abrufen des aktuellen Schemas für Azure Resource Manager-Bereitstellungsvorlagen verwendet. |
 | NPM-Paket <br>Erkennung | Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io | https<br><br>http/s<br><br>https | 443<br><br>80/443<br><br>443 | Wird zur Suche nach NPM-Paketen benötigt und zur clientseitigen Skriptpaketinstallation in Webprojekten verwendet. |
 | Bower-Paket<br> Symbole<br><br>Bower-Paket <br>search | Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http<br><br>https<br>http<br>https | 80<br><br>443<br>80<br>443 | Stellt das standardmäßige Bower-Paketsymbol bereit.  <br><br>Ermöglicht die Suche nach Bower-Paketen. |
-| NuGet<br><br>NuGet-Paket<br> Erkennung | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | Dient der Überprüfung von signierten NuGet-Paketen.<br><br>Erforderlich für die Suche nach NuGet-Paketen und -Versionen. |
+| NuGet<br><br>NuGet-Paket<br> Erkennung | api.nuget.org <br>www.nuget.org <br>nuget.org <br>azuresearch-usnc.nuget.org <br>azuresearch-ussc.nuget.org <br>licenses.nuget.org <br>nuget.cdn.azure.cn <br>azuresearch-ea.nuget.org <br>azuresearch-sea.nuget.org <br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | Dient der Überprüfung von signierten NuGet-Paketen.<br><br>Erforderlich für die Suche nach NuGet-Paketen und -Versionen. |
 | GitHub-Repositoryinformationen | api.github.com | https | 443 | Erforderlich zum Abrufen zusätzlicher Informationen zu Bower-Paketen. |
 | Weblinter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>Explorer-Vorlage<br>Erkennung <br><br>Cookiecutter <br>Explorer-Projekt<br> Erstellung | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Wird zum Ermitteln von Onlinevorlagen im empfohlenen Feed sowie in GitHub-Repositorys verwendet. <br><br>Dient zum Erstellen eines Projekts aus einer Cookiecutter-Vorlage, die eine einmalige Installation eines Cookiecutter-Python-Pakets aus dem Python-Paketindex (PyPI) erfordert. |
 | Python-Paket <br>Erkennung<br><br>Python-Paket <br>Verwaltung<br><br>Neu <br>Python <br> Projekt <br>Vorlagen | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Ermöglicht die Suche nach PIP-Paketen.<br><br>Installiert PIP automatisch, sofern nicht vorhanden. <br><br>Wird zum Auflösen der folgenden neuen Python-Projektvorlagen für Cookiecutter-Vorlagen-URLs verwendet:<br> – Klassifiziererprojekt<br>– Clusteringprojekt <br> – Regressionsprojekt <br> – PyGame unter Verwendung von PyKinect <br> – Pyvot-Projekt |
 | Office Web <br>Add-In <br> Manifest <br>Überprüfung <br>Dienst | verificationservice.osi.office.net | https | 443 | Wird zum Validieren von Manifesten für Office Web-Add-Ins verwendet. |
-| SharePoint- und <br>Office-Add-ins | sharepoint.com | https | 443 | Wird zum Veröffentlichen und Testen von SharePoint- und Office-Add-Ins in SharePoint Online verwendet. |
+| SharePoint- und <br>Office-Add-ins | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https | 443 | Wird zum Veröffentlichen und Testen von SharePoint- und Office-Add-Ins in SharePoint Online und Office 365 verwendet |
 | Workflow-Manager- <br>Testdienst-<br> Host | | http | 12292 | Eine Firewall, die zum Testen von SharePoint-Add-Ins mit Workflows automatisch erstellt wird. |
 | Automatisch gesammelte <br>Zuverlässigkeitsstatistiken <br>und weitere Daten des <br>Programms zur Verbesserung <br>der Benutzerfreundlichkeit<br> für Azure SDK und <br>SQL-Tools <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https | 443 | Wird zum Senden von Zuverlässigkeitsstatistiken (Daten zu Abstürzen/Stillständen) vom Benutzer an Microsoft verwendet. Die eigentlichen Abbilder zu Abstürzen/Stillständen werden weiterhin hochgeladen, wenn die Windows-Fehlerberichterstattung aktiviert ist. Es werden lediglich statistische Informationen unterdrückt. <br>Wird verwendet, um anonyme Nutzungsmuster der Azure-Tools SDK-Erweiterung sowie Nutzungsmuster der SQL-Tools für Visual Studio offenzulegen. |
 | Visual Studio <br> Programm zur Verbesserung <br>der Benutzerfreundlichkeit (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https | 443 | Dient zum Sammeln von anonymen Nutzungsmustern und Fehlerprotokollen. <br><br>Hiermit werden Probleme mit einer nicht reagierenden Benutzeroberfläche nachverfolgt. |
@@ -124,6 +129,16 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
 | Paketerstellungsdienst | [account].visualstudio.com <br/> [Konto].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen \*.npmjs.org, \*.nuget.org und \*.nodejs.org sind nur für bestimmte Buildtaskszenarios erforderlich (z. B.: NuGet-Toolinstaller, Node Tool-Installationsprogramm) oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Wird zum Herstellen einer Verbindung mit Azure DevOps Services verwendet. |
+| Entwicklercommunity | sendvsfeedback2.azurewebsites.net/api | https | 443 | Wird zum Aufrufen von Developer Community Feedback Tool-APIs verwendet (Meine Probleme, Suchen, Abstimmungen, Kommentare, gegebenes Feedback, Uploads, Lebenslauf) |
+| Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https | 443 | Wird zum Aufrufen von Intellicode-APIs verwendet |
+| Live Share | \*.liveshare.vsengsaas.visualstudio.com| https | 443 | Wird zum Aufrufen von Live Share-APIs verwendet |
+| Visual Studio Online | \*.online.visualstudio.com | https | 443 | Wird zum Aufrufen von Visual Studio Online-APIs verwendet |
+| Automatische Typerfassung für JavaScript | registry.npmjs.org | https | 443 | Wird verwendet zum Installieren von TypeScript-Typdefinitionen, um IntelliSense für häufig verwendete JavaScript-Bibliotheken zur Verfügung zu stellen |
+| Lizenzierungsdienst für Visual Studio-Abonnements | app.vssps.visualstudio.com/apis/Licensing/ClientRights | https | 443 | Lizenzierung für Online-Aktivierung |
+| Debugger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.commsdl.microsoft.com/download/symbols | https | 443 | 1. <br>Wird zum Herunterladen von Debuggerbits für das .NET Core-Debuggen unter Unix/macOS über SSH verwendet <br><br>2. <br>Wird zum Herunterladen von Debuggerbits für das Debuggen von Docker für Windows-Remotecontainer verwendet<br><br> 3. Wird für das Durchlaufen des .NET Framework-Quellcodes verwendet <br><br> 4. <br>(Bei Benutzeranmeldung) Wird für das Herunterladen von Symbolen verwendet, die für NuGet.org-Symbolserver veröffentlicht wurden<br><br> 5. (Bei Benutzeranmeldung) Wird für das Herunterladen von Microsoft-Symbolen und Binärdateien verwendet, und möglicherweise für das Debuggen von verwaltetem Code in Speicherabbildern |
+| Visual Studio Online| \*.online.visualstudio.com | https | 443 | Wird zum Aufrufen von Visual Studio Online-APIs verwendet |
+| Veröffentlichen von Xamarin Android-Apps | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https | 443 | Wird für die Interaktion mit dem Google Play Store-Dienst zum Veröffentlichen/Hochladen von Xamarin Android-Anwendungen direkt in Visual Studio verwendet |
+| Azure Container Registry | *.azurecr.io | https | 443 | Zugriff für auf Azure gehostete Containerregistrierungen für die Konfiguration von CI/CD-Pipelines |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Behandlung netzwerkbezogener Fehler
