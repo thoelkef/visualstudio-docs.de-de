@@ -1,18 +1,18 @@
 ---
 title: Verwenden von CTest für C++
-ms.date: 05/01/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: cc0ced6205444e1436ffbffa73ba647a6b682c5c
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 78759a017575916bce3b3fff643cbce8ff303fd6
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720549"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826522"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Verwenden von CTest für C++ in Visual Studio 2017 und höher
 
@@ -20,7 +20,7 @@ CMake (einschließlich CTest) ist standardmäßig als Komponente der Workload **
 
 ## <a name="to-write-tests"></a>Schreiben von Tests
 
-Die CMake-Unterstützung in Visual Studio umfasst nicht das Visual Studio-Projektsystem. Aus diesem Grund können Sie CTest-Tests auf dieselbe Weise wie in einer CMake-Umgebung schreiben und konfigurieren. Verwenden Sie den Befehl `enable_testing()`, um Tests zu aktivieren, und den Befehl `add_test()`, um einen neuen Test hinzuzufügen. Weitere Informationen zu CTest finden Sie in der [CMake-Dokumentation](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
+Die CMake-Unterstützung in Visual Studio umfasst nicht das Visual Studio-Projektsystem. Aus diesem Grund können Sie CTest-Tests auf dieselbe Weise wie in einer CMake-Umgebung schreiben und konfigurieren. Verwenden Sie den Befehl `enable_testing()`, um Tests zu aktivieren, und den Befehl `add_test()` oder `gtest_discover_tests()`, um einen neuen Test hinzuzufügen. Weitere Informationen zu CTest finden Sie in der [CMake-Dokumentation](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
 
 Weitere Informationen zu CMake in Visual Studio finden Sie unter [CMake-Projekte in Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 

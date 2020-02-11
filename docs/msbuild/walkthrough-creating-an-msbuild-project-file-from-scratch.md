@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7b79347416df5fd0790baf7ebe6495c739f7c4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 891b0f1197ad178a705de5d64026beebc62615dd
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565967"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826496"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum Beschreiben und Steuern des Anwendungsbuildprozesses. Wenn Sie in Visual Studio eine MSBuild-Projektdatei erstellen, wird der Datei automatisch das entsprechende XML hinzugefügt. Ein Grundverständnis der Organisation des XML und der Änderungsmöglichkeiten zum Steuern eines Builds ist jedoch empfehlenswert.
@@ -44,12 +44,10 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 
 In dieser exemplarischen Vorgehensweise werden das Erstellen des Projekts an der Eingabeaufforderung und das Untersuchen der Ergebnisse veranschaulicht. Weitere Informationen zu MSBuild und zum Ausführen von MSBuild an der Eingabeaufforderung finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-Sie können die exemplarische Vorgehensweise nur ausführen, wenn Sie .NET Framework (Version 2.0, 3.5, 4.0 oder 4.5) installiert haben, da darin MSBuild und der Visual C#-Compiler enthalten sind, die für die exemplarische Vorgehensweise erforderlich sind.
+Sie können die exemplarische Vorgehensweise nur abschließen, wenn Sie .NET Framework (Version 2.0, 3.5, 4.0, 4.5 oder später) installiert haben. .NET Framework enthält MSBuild und den Visual C#-Compiler, und Sie benötigen beide Komponenten für diese exemplarische Vorgehensweise.
 
 ## <a name="create-a-minimal-application"></a>Erstellen einer minimalen Anwendung
- Dieser Abschnitt veranschaulicht das Erstellen einer minimalen Visual C#-Anwendungsquelldatei mit einem Texteditor.
-
-#### <a name="to-create-the-minimal-application"></a>So erstellen Sie die minimale Anwendung
+ In diesem Abschnitt wird veranschaulicht, wie Sie eine minimale Visual C#-Anwendungsquelldatei mithilfe eines Text-Editors erstellen.
 
 1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\* oder *\Desktop\\* .
 
@@ -98,7 +96,7 @@ Sie können die exemplarische Vorgehensweise nur ausführen, wenn Sie .NET Frame
 
 - Ein `Task`-Element, mit dem der Visual C#-Compiler für den Build der Anwendung gestartet wird.
 
-#### <a name="to-create-a-minimal-msbuild-project-file"></a>So erstellen Sie eine minimale MSBuild-Projektdatei
+### <a name="to-create-a-minimal-msbuild-project-file"></a>So erstellen Sie eine minimale MSBuild-Projektdatei
 
 1. Ersetzen Sie im Texteditor den vorhandenen Text durch die beiden folgenden Zeilen:
 
@@ -157,20 +155,17 @@ Aufgaben im Build-Ziel werden sequenziell ausgeführt. In diesem Fall bildet die
 > Die Verwendung von Platzhalterzeichen wird jedoch nicht empfohlen, da Debugging und selektive Zielauswahl erschwert werden, wenn Quelldateien hinzugefügt oder gelöscht werden.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>Erweitern des Pfads zum Einbeziehen von MSBuild
- Auf MSBuild können Sie erst zugreifen, wenn Sie die PATH-Umgebungsvariable um den .NET Framework-Ordner erweitert haben.
 
-#### <a name="to-add-msbuild-to-your-path"></a>So fügen Sie MSBuild zum Pfad hinzu
+Auf MSBuild können Sie erst zugreifen, wenn Sie die PATH-Umgebungsvariable um den .NET Framework-Ordner erweitert haben.
 
-- Ab Visual Studio 2013 ist die Datei *MSBuild.exe* im MSBuild-Ordner zu finden ( *%ProgramFiles%\MSBuild* in einem 32-Bit-Betriebssystem oder *%ProgramFiles(x86)%\MSBuild* in einem 64-Bit-Betriebssystem).
+Ab Visual Studio 2013 ist die Datei *MSBuild.exe* im Ordner „MSBuild“ zu finden ( *%ProgramFiles%\MSBuild* in einem 32-Bit-Betriebssystem oder *%ProgramFiles(x86)%\MSBuild* in einem 64-Bit-Betriebssystem).
 
-     Geben Sie an der Befehlszeile **set PATH=%PATH%;%ProgramFiles%\MSBuild** oder **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild** ein.
+Geben Sie an der Befehlszeile **set PATH=%PATH%;%ProgramFiles%\MSBuild** oder **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild** ein.
 
-     Wenn Sie Visual Studio installiert haben, können Sie auch die **Visual Studio-Eingabeaufforderung** verwenden, deren Pfad den *MSBuild*-Ordner einschließt.
+Wenn Sie Visual Studio installiert haben, können Sie auch die **Developer-Eingabeaufforderung für Visual Studio** verwenden. Einer ihrer Pfade enthält den Ordner *MSBuild*.
 
-## <a name="use-the-project-file-to-build-the-application"></a>Erstellen der Anwendung mit der Projektdatei
+## <a name="build-the-application"></a>Erstellen der Anwendung
  Für den Build der Anwendung verwenden Sie nun die Projektdatei, die Sie eben erstellt haben.
-
-#### <a name="to-build-the-application"></a>So erstellen Sie die Anwendung
 
 1. Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj -t:Build** ein.
 
@@ -192,7 +187,7 @@ Aufgaben im Build-Ziel werden sequenziell ausgeführt. In diesem Fall bildet die
 
 - Eine `OutputPath`-Eigenschaft, mit der ein Ordner für die Anwendung angegeben wird
 
-#### <a name="to-add-build-properties"></a>So fügen Sie Buildeigenschaften hinzu
+### <a name="to-add-build-properties"></a>So fügen Sie Buildeigenschaften hinzu
 
 1. Löschen Sie die vorhandene Anwendung, indem Sie an der Eingabeaufforderung **del helloworld.exe** eingeben.
 
@@ -257,8 +252,6 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 ## <a name="test-the-build-properties"></a>Testen der Buildeigenschaften
  Nun können Sie die Anwendung mithilfe der Projektdatei erstellen, in der Sie über Buildeigenschaften den Ausgabeordner und den Anwendungsnamen angegeben haben.
 
-#### <a name="to-test-the-build-properties"></a>So testen Sie die Buildeigenschaften
-
 1. Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj -t:Build** ein.
 
      Damit wird der Ordner *\Bin\\* erstellt und anschließend der Visual C#-Compiler aufgerufen, um die Anwendung *MSBuildSample* zu erstellen und im Ordner *\Bin\\* einzufügen.
@@ -278,7 +271,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
 Da Sie nun über mehrere Ziele verfügen, können Sie das Build-Ziel als Standardziel festlegen.
 
-#### <a name="to-add-build-targets"></a>So fügen Sie Build-Ziele hinzu
+### <a name="to-add-build-targets"></a>So fügen Sie Build-Ziele hinzu
 
 1. Fügen Sie in der Projektdatei direkt nach dem Build-Ziel die folgenden beiden Ziele hinzu:
 
@@ -332,7 +325,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
 - Löschen der Anwendung, ohne eine andere Anwendung zu erstellen
 
-#### <a name="to-test-the-build-targets"></a>So testen Sie die Build-Ziele
+### <a name="to-test-the-build-targets"></a>So testen Sie die Build-Ziele
 
 1. Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj -p:AssemblyName=Greetings** ein.
 
@@ -363,7 +356,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 ## <a name="build-incrementally"></a>Inkrementelles Erstellen
  Sie können MSBuild anweisen, ein Ziel nur zu erstellen, wenn die Quelldateien oder Zieldateien, von denen das Ziel abhängig ist, geändert wurden. MSBuild bestimmt anhand des Zeitstempels einer Datei, ob diese geändert wurde.
 
-#### <a name="to-build-incrementally"></a>So nehmen Sie einen inkrementellen Build vor
+### <a name="to-build-incrementally"></a>So nehmen Sie einen inkrementellen Build vor
 
 1. Fügen Sie in der Projektdatei dem ersten Build-Ziel die folgenden Attribute hinzu:
 
@@ -398,10 +391,9 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
      MSBuild überspringt das Build-Ziel, da seit dem letzten Build der Anwendung keine der Quelldateien geändert wurde.
 
-## <a name="example"></a>Beispiel
+## <a name="c-example"></a>Beispiel für C#
 
-### <a name="description"></a>Beschreibung
- Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.
+Das folgende Beispiel enthält eine Projektdatei, durch die eine C#-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.
 
 ### <a name="code"></a>Code
 
@@ -436,10 +428,9 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 </Project>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="visual-basic-example"></a>Beispiel für Visual Basic
 
-### <a name="description"></a>Beschreibung
- Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.
+Das folgende Beispiel enthält eine Projektdatei, durch die eine Visual Basic-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.
 
 ### <a name="code"></a>Code
 
@@ -478,5 +469,6 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
  Visual Studio kann einen großen Teil der in dieser exemplarischen Vorgehensweise gezeigten Aktionen automatisch übernehmen. Informationen zum Erstellen und Bearbeiten sowie zum Build und zu Tests von MSBuild-Projektdateien in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Übersicht über MSBuild](../msbuild/msbuild.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

@@ -9,14 +9,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
-ms.date: 10/13/2017
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "71125956"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027281"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Problembehandlung bei der Entwicklung von Visual Studio mit Docker
 
@@ -80,6 +80,18 @@ net localgroup docker-users DOMAIN\username /add
 ```
 
 Verwenden Sie in PowerShell die Funktion [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember).
+
+## <a name="low-disk-space"></a>Wenig freier Speicherplatz
+
+Standardmäßig werden Images in Docker im Ordner *%ProgramData%/Docker/* gespeichert. Dieser befindet sich in der Regel auf dem Systemlaufwerk unter *C:\ProgramData\Docker\*. Damit Images keinen wichtigen Speicherplatz auf dem Systemlaufwerk beanspruchen, können Sie den Ordner zum Speichern von Images ändern.  Öffnen Sie über das Docker-Symbol in der Taskleiste die Docker-Einstellungen, klicken Sie auf **Daemon**, und ändern Sie **Einfach** in **Erweitert**. Fügen Sie im Bearbeitungsbereich die `graph`-Eigenschaft hinzu, und legen Sie einen Wert für den für Docker-Images gewünschten Speicherort fest:
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Screenshot für das Festlegen eines Speicherorts für Docker-Images](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+Klicken Sie auf **Anwenden**, damit Docker neu gestartet wird. Durch diese Schritte wird die Konfigurationsdatei unter *%ProgramData%\docker\config\daemon.json* geändert. Bereits erstellte Images werden nicht verschoben.
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub-Repository
 

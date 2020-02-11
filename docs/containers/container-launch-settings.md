@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400862"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542593"
 ---
 # <a name="container-tools-launch-settings"></a>Starteinstellungen für Containertools
 
@@ -53,7 +53,7 @@ Die Einstellung „commandName“ gibt an, dass dieser Abschnitt für Container 
 |Einstellungsname|Version|Beispiel|Beschreibung|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Gibt an, ob der Browser nach dem erfolgreichen Starten des Projekts gestartet werden soll.|
-|launchUrl|Visual Studio 2017|"launchUrl": "\<scheme>://\<serviceHost>:\<servicePort>"|Diese URL wird beim Start des Browsers verwendet.  Für diese Zeichenfolge werden folgende Ersetzungstoken unterstützt:<br>   \<scheme> – Wird entweder durch „http“ oder „https“ ersetzt, je nachdem, ob SSL verwendet wird.<br>   \<serviceHost> – Wird normalerweise durch „localhost“ ersetzt. Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch die IP-Adresse des Containers ersetzt.<br>   \<servicePort> – Wird normalerweise entweder durch sslPort oder httpPort ersetzt, je nachdem, ob SSL verwendet wird.  Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch „443“ oder „80“ ersetzt, je nachdem, ob SSL verwendet wird.|
+|launchUrl|Visual Studio 2017|"launchUrl": "{Schema}://{DienstHost}:{DienstPort}"|Diese URL wird beim Start des Browsers verwendet.  Für diese Zeichenfolge werden folgende Ersetzungstoken unterstützt:<br>   {Schema} – wird je nachdem, ob SSL verwendet wird, entweder durch „http“ oder „https“ ersetzt.<br>   {DienstHost} – wird üblicherweise durch „localhost“ ersetzt. Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch die IP-Adresse des Containers ersetzt.<br>   {DienstPort} – wird normalerweise entweder durch „sslPort“ oder „httpPort“ ersetzt, je nachdem, ob SSL verwendet wird.  Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch „443“ oder „80“ ersetzt, je nachdem, ob SSL verwendet wird.|
 
 ::: moniker-end
 
@@ -69,11 +69,11 @@ Die Einstellung „commandName“ gibt an, dass dieser Abschnitt für Container 
 | httpPort             | "httpPort": 24051                                     | Dieser Port auf dem Host wird dem Port 80 des Containers zugeordnet, wenn der Container gestartet wird.                                |
 |                      |                                                       | Wenn keine Angabe erfolgt, wird der Wert aus dem „iisSettings“-Wert entnommen.                                                          |
 | launchBrowser        | "launchBrowser": true                                 | Gibt an, ob der Browser nach dem erfolgreichen Starten des Projekts gestartet werden soll.                                       |
-| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | Diese URL wird beim Start des Browsers verwendet. Für diese Zeichenfolge werden folgende Ersetzungstoken unterstützt:                          |
-|                      |                                                       | - <scheme> – Wird entweder durch „http“ oder „https“ ersetzt, je nachdem, ob SSL verwendet wird.                                   |
-|                      |                                                       | - <serviceHost> – Wird normalerweise durch „localhost“ ersetzt.                                                                    |
+| launchUrl            | "launchUrl": "{Schema}://{DienstHost}:{DienstPort}" | Diese URL wird beim Start des Browsers verwendet. Für diese Zeichenfolge werden folgende Ersetzungstoken unterstützt:                          |
+|                      |                                                       | – {Schema} – wird je nachdem, ob SSL verwendet wird, entweder durch „http“ oder „https“ ersetzt.                                   |
+|                      |                                                       | – {DienstHost} – wird üblicherweise durch „localhost“ ersetzt.                                                                    |
 |                      |                                                       | Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch die IP-Adresse des Containers ersetzt.           |
-|                      |                                                       | - <servicePort> – Wird normalerweise entweder durch sslPort oder httpPort ersetzt, je nachdem, ob SSL verwendet wird.                   |
+|                      |                                                       | – {DienstPort} – wird normalerweise entweder durch „sslPort“ oder „httpPort“ ersetzt, je nachdem, ob SSL verwendet wird.                   |
 |                      |                                                       | Wenn Windows-Container unter Windows 10 RS3 oder älter als Ziel verwendet werden, wird sie jedoch durch „443“ oder „80“ ersetzt.         |
 |                      |                                                       | Dies ist davon abhängig, ob SSL verwendet wird.                                                                                       |
 | sslPort              | "sslPort": 44381                                      | Dieser Port auf dem Host wird dem Port 443 des Containers zugeordnet, wenn der Container gestartet wird.                               |

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405211"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091781"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Erstellen benutzerdefinierter Ansichten C++ von Objekten im Debugger mit dem natvis-Framework
 
@@ -224,7 +224,7 @@ Sie können auf Vorlagen Parameter im Visualisierungs Eintrag verweisen, indem S
 Wenn ein Visualisierungs Eintrag nicht überprüft werden kann, wird die nächste verfügbare Visualisierung verwendet.
 
 #### <a name="inheritable-attribute"></a>Inheritable-Attribut
-Das optionale `Inheritable`-Attribut gibt an, ob eine Visualisierung nur auf einen Basistyp oder auf einen Basistyp und alle abgeleiteten Typen angewendet wird. Der Standardwert von `Inheritable` ist `true`.
+Das optionale `Inheritable`-Attribut gibt an, ob eine Visualisierung nur auf einen Basistyp oder auf einen Basistyp und alle abgeleiteten Typen angewendet wird. Der Standardwert von `Inheritable` lautet `true`.
 
 Im folgenden Beispiel gilt die Visualisierung nur für den `BaseClass`-Typ:
 
@@ -236,7 +236,7 @@ Im folgenden Beispiel gilt die Visualisierung nur für den `BaseClass`-Typ:
 
 #### <a name="priority-attribute"></a>Priority-Attribut
 
-Das optionale `Priority`-Attribut gibt die Reihenfolge an, in der Alternative Definitionen verwendet werden sollen, wenn eine Definition nicht analysiert werden kann. Die möglichen Werte `Priority` lauten: `Low`, `MediumLow`,`Medium`, `MediumHigh`und `High`. Der Standardwert ist `Medium`sein. Das `Priority`-Attribut unterscheidet nur zwischenprioritäten in derselben *natvis* -Datei.
+Das optionale `Priority`-Attribut gibt die Reihenfolge an, in der Alternative Definitionen verwendet werden sollen, wenn eine Definition nicht analysiert werden kann. Die möglichen Werte `Priority` lauten: `Low`, `MediumLow`,`Medium`, `MediumHigh`und `High`. Standardwert: `Medium`. Das `Priority`-Attribut unterscheidet nur zwischenprioritäten in derselben *natvis* -Datei.
 
 Im folgenden Beispiel wird zunächst der Eintrag analysiert, der mit 2015 STL übereinstimmt. Wenn dies nicht analysiert werden kann, wird der Alternative Eintrag für die Version 2013 von STL verwendet:
 
@@ -690,3 +690,9 @@ Jeder Typ, der in der *natvis* -Datei definiert ist, muss explizit alle Benutzer
 Es ist viel mehr Arbeit, eine benutzerdefinierte Schnellansicht zu schreiben, als eine XML-natvis-Definition, aber es gibt keine Einschränkungen hinsichtlich der Art und Weise, die natvis nicht unterstützt. Benutzerdefinierte Visualisierungen haben Zugriff auf den vollständigen Satz von Debugger-Erweiterbarkeits-APIs, mit denen der zu debuggende Prozess abgefragt und geändert werden kann oder mit anderen Teilen von Visual Studio kommuniziert werden kann.
 
  Sie können die Attribute "`Condition`", "`IncludeView`" und "`ExcludeView`" für `CustomVisualizer` Elemente verwenden.
+
+ ## <a name="limitations"></a>Einschränkungen
+
+Natvis-Anpassungen arbeiten mit Klassen und Strukturen, jedoch nicht mit Typedefs.
+
+Natvis unterstützt keine Visualisierungen für primitive Typen (z. b. `int``bool`) oder für Zeiger auf primitive Typen. In diesem Szenario besteht eine Möglichkeit darin, den [Format](../debugger/format-specifiers-in-cpp.md) Bezeichner zu verwenden, der für Ihren Anwendungsfall geeignet ist. Wenn Sie z. b. `double* mydoublearray` in Ihrem Code verwenden, können Sie einen Array Format Bezeichner im **Überwachungs** Fenster des Debuggers verwenden, z. b. den Ausdruck `mydoublearray, [100]`, in dem die ersten 100 Elemente angezeigt werden.

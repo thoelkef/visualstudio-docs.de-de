@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588628"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542658"
 ---
 # <a name="language-conventions"></a>Sprachkonventionen
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **Regelname** | csharp_prefer_braces |
 | **Regel-ID** | IDE0011 |
 | **Gültige Sprachen** | C# |
-| **Werte** | `true` – geschweifte Klammern auch für eine Codezeile bevorzugen.<br /><br />`false` – keine geschweiften Klammern bevorzugen, wenn zulässig. |
+| **Werte** | `true` – geschweifte Klammern auch für eine Codezeile bevorzugen.<br /><br />`false` – keine geschweiften Klammern bevorzugen, wenn zulässig.<br /><br />`when_multiline` – bei mehreren Zeilen geschweifte Klammern bevorzugen |
 | **Visual Studio-Standard** | `true:silent` |
 
 Codebeispiele:

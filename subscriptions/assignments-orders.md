@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortung von Administratoren hinsichtlich des Nachverfolgens von Benutzerzuweisungen und des Verarbeitens von Aufträgen.
-ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
+ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491605"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76967337"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Nachverfolgen der Benutzerzuweisungen und der Verarbeitung von Aufträgen
 Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie die Nutzung von Visual Studio und die Verarbeitung von Aufträgen nachverfolgen und darauf achten, ob die Nutzung im Vergleich zu dem Zeitplan angestiegen ist, der in der Volumenlizenzierungsvereinbarung oder der Microsoft Produkt- und Servicevereinbarung festgelegt wurde. Das neue Administrationsportal für Visual Studio-Abonnements hat zur Vereinfachung dieser Aufgabe einen einfachen, hilfreichen Tracker implementiert, der die verfügbaren und bereits verwendeten Lizenzen anzeigt.
@@ -30,11 +30,11 @@ Die Verpflichtung zum Kauf wird anhand der maximalen Anzahl an Abonnements festg
     > Dafür müssen sie zunächst das bereits vorhandene Abonnement entfernen und ein neues hinzufügen, um zu vermeiden, dass die maximale Nutzungsebene künstlich in die Höhe getrieben wird. 
 - Der Bericht [Maximale Auslastung](maximum-usage.md) im [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) bietet Unterstützung beim Überwachen der maximalen Auslastung Ihrer Organisation. 
 
-## <a name="cloud-subscriptions-open-license-or-open-value"></a>Cloud-Abonnements, Open License oder Open Value
-Ihre Abonnements werden Ihnen möglicherweise über Programme wie Microsoft Cloud-Abonnements, Open License oder Open Value zugewiesen. Wenn dies der Fall ist, müssen Sie Ihre Bestellung für zusätzliche Benutzer in dem Monat verarbeiten, in dem diese (Mitarbeiter oder externe Vertragspartner) mit der Interaktion mit lizenzierter Visual Studio-Software beginnen.
+## <a name="monthly-subscriptions-open-license-or-open-value"></a>Monatsabonnements, Open License oder Open Value
+Möglicherweise weisen Sie Abonnements monatlich über Programme wie „Open License“ und „Open Value“ oder über den Visual Studio Marketplace zu. Wenn dies der Fall ist, müssen Sie Ihre Bestellung für zusätzliche Benutzer in dem Monat verarbeiten, in dem diese (Mitarbeiter oder externe Vertragspartner) mit der Interaktion mit lizenzierter Visual Studio-Software beginnen.
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise, MPSA und ausgewählte Vereinbarungen
-Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihnen Flexibilität im Hinblick auf die Verwendung und Lizenzierung von Visual Studio-Software über einen gewissen Zeitraum hinweg. Administratoren für Visual Studio-Abonnements müssen eine jährliche True Up-Bestellung aufgeben, um ihre Softwarelizenzen bis zum hohen Auslastungsgrenzwert auszuschöpfen, der für die Dauer der Vereinbarung festgelegt wurde.
+Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihnen Flexibilität im Hinblick auf die Verwendung und Lizenzierung von Visual Studio-Software über einen gewissen Zeitraum hinweg. Visual Studio-Administratoren müssen eine jährliche True Up-Bestellung aufgeben, um die Anzahl ihrer Softwarelizenzen entsprechend dem maximalen Nutzungswert aufzustocken, der für die Dauer der Vereinbarung festgelegt wurde.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:
@@ -42,3 +42,8 @@ Weitere Informationen zu den Aufgaben von Administratoren:
 - [Inventory of pre-production environment (Inventur der Präproduktionsumgebung)](admin-inventory.md)
 - [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
 - Verwenden der [maximalen Auslastung](maximum-usage.md) zum Nachverfolgen von Kaufverpflichtungen
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Azure-Dokumentation](/azure/)
+- [Azure DevOps](/azure/devops/)

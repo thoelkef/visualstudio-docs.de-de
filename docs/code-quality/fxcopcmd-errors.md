@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: jillfra
+ms.author: mikejo
 author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5916121a555531672cf70280051f02a889f611ac
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649562"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091768"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Fehler des FxCopCmd-Tools
 
@@ -36,7 +36,7 @@ In der folgenden Tabelle werden die von FxCopCmd zurückgegebenen Fehlercodes be
 |Fehler beim Wechseln der Befehlszeile.|0x80|
 |Initialisierungsfehler|0x100|
 |Assemblyverweifehler|0x200|
-|Buildbreakingmessage|0x400|
+|BuildBreakingMessage|0x400|
 |Unbekannter Fehler.|0x1000000|
 
 Bei schwerwiegenden Fehlern wird ein **Analysefehler** zurückgegeben. Gibt an, dass die Analyse nicht abgeschlossen werden konnte. Der Fehlercode enthält ggf. auch die zugrunde liegende Ursache des schwerwiegenden Fehlers. Die folgenden Bedingungen generieren schwerwiegende Fehler:
@@ -52,6 +52,6 @@ Bei schwerwiegenden Fehlern wird ein **Analysefehler** zurückgegeben. Gibt an, 
 > [!NOTE]
 > Der FxCopCmd-Rückgabetyp verweist darauf, dass der **Fehler** 0x200 allein eine Warnung und kein Fehler ist. Dieser Rückgabecode gibt an, dass indirekte Verweise fehlen, aber von FxCopCmd verarbeitet werden konnte. Die Warnung bedeutet, dass es möglich ist, dass einige Analyseergebnisse kompromittiert wurden. **Fehler** beim Behandeln von Assemblyverweisen als Fehler, wenn er mit einem anderen Rückgabecode kombiniert wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anwendungsfehler bei der Codeanalyse](../code-quality/code-analysis-application-errors.md)
