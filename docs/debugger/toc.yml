@@ -268,6 +268,10 @@
                   href: visualizer-api-reference.md
         - name: Wiederherstellen von ausgeblendeten Debuggerbefehlen
           href: how-to-restore-hidden-debugger-commands.md
+    - name: Quellcode
+      items:
+        - name: Dekompilieren von .NET-Assemblys
+          href: decompilation.md
     - name: Remotedebuggen
       items:
         - name: Remotedebuggen
