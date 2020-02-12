@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091873"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144786"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Quellcode aus .NET-Assemblys beim Debuggen generieren
 
@@ -80,8 +80,27 @@ Beim dekompilieren von Code, der aus einer Assembly dekompiliert wurde, die mith
 - Haltepunkte werden möglicherweise nicht immer an den entsprechenden Sourcing-Speicherort gebunden.
 - Beim schrittweisen Ausführen des Schritts wird möglicherweise nicht immer der richtige Speicherort
 - Lokale Variablen weisen möglicherweise keine genauen Namen auf.
+- Einige Variablen sind möglicherweise nicht für die Auswertung verfügbar.
 
 Weitere Informationen finden Sie im GitHub-Problem: [ichsarpcompiler. Decompiler-Integration in VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="decompilation-reliability"></a>Zuverlässigkeit der Kompilierung
+
+Ein relativ kleiner Prozentsatz der aufkompilierungs Versuche kann zu einem Fehler führen. Dies liegt an einem Sequenz Punkt-NULL-Verweis-Fehler in ilspy.  Wir haben den Fehler verringert, indem wir diese Probleme abgefangen und den dekompilierungs Versuch ordnungsgemäß durchgeführt haben.
+
+Weitere Informationen finden Sie im GitHub-Problem: [ichsarpcompiler. Decompiler-Integration in VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="limitations-with-async-code"></a>Einschränkungen bei Async-Code
+
+Die Ergebnisse der Dekompilierung von Modulen mit Async/Erwartungs Code-Mustern sind möglicherweise unvollständig oder können vollständig ausfallen. Die ilspy-Implementierung von Async/Erwartung und Yield State-Machines ist nur teilweise implementiert. 
+
+Weitere Informationen finden Sie im GitHub-Problem: [Status des PDB-Generators](https://github.com/icsharpcode/ILSpy/issues/1422).
+
+### <a name="just-my-code"></a>Nur eigenen Code
+
+Mit den Einstellungen für die [nur eigenen Code (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) kann Visual Studio System-, Framework-, Bibliotheks-und andere Nichtbenutzer Aufrufe überspringen. Während einer Debugsitzung zeigt das Fenster **Module** an, welche Code Module der Debugger als eigenen Code behandelt (Benutzercode).
+
+Die Dekompilierung von optimierten oder releasemodulen erzeugt Nichtbenutzer Code. Wenn der Debugger im dekompilierten Nichtbenutzer Code unterbrochen wird, wird beispielsweise das Fenster **keine Quelle** angezeigt. Um **nur eigenen Code zu deaktivieren** , navigieren Sie zu Extras > **Optionen** (oder **Debuggen** > **Optionen**) > **Debuggen** > **Allgemein**aus, und deaktivieren Sie dann **nur eigenen Code aktivieren**.
 
 ### <a name="extracted-sources"></a>Extrahierte Quellen
 
