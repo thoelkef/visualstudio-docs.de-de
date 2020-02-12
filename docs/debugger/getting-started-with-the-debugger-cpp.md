@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027388"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091807"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C++-Code mit Visual Studio
 
@@ -74,9 +74,11 @@ Zunächst müssen Sie ein Projekt für die C++-Konsolenanwendung erstellen. Der 
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C++** , und klicken Sie dann auf **Windows Desktop**. Wählen Sie im mittleren Bereich die Option **Windows-Konsolenanwendung** aus. Nennen Sie das Projekt *get-started-debugging*.
 
-     Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**.
+     Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
-     Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
+4. Klicken Sie auf **OK**.
+
+   Visual Studio öffnet Ihr neues Projekt.
 
 ::: moniker-end
 
@@ -178,13 +180,13 @@ Zunächst müssen Sie ein Projekt für die C++-Konsolenanwendung erstellen. Der 
 
      Wenn die App noch nicht ausgeführt wird, kann der Debugger durch Drücken der Taste **F5** gestartet werden und hält am ersten Haltepunkt an. Andernfalls wird durch Drücken der Taste **F5** die Ausführung der App bis zum nächsten Haltepunkt fortgesetzt.
 
-    Breakpoints sind eine nützliche Funktion, wenn Ihnen die Codezeile oder der Codeabschnitt bekannt ist, die bzw. den Sie genauer untersuchen möchten. Informationen zu den verschiedenen verfügbaren Typen von Haltepunkten, z. B. bedingte Haltepunkte, finden Sie unter [Verwenden von Haltepunkten im Visual Studio-Debugger](../debugger/using-breakpoints.md).
+    Breakpoints sind eine nützliche Funktion, wenn Ihnen die Codezeile oder der Codeabschnitt bekannt ist, die bzw. den Sie genauer untersuchen möchten. Informationen zu den verschiedenen verfügbaren Typen von Haltepunkten, wie z. B. bedingte Haltepunkte, finden Sie unter [Verwenden von Haltepunkten im Visual Studio-Debugger](../debugger/using-breakpoints.md).
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navigieren durch Code im Debugger mithilfe von Schrittbefehlen
 
 In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese Weise eine schnelle Ausführung Ihrer App im Debugger möglich ist (entsprechende Befehle, wie z.B. Menübefehle, werden in Klammern angezeigt).
 
-1. Drücken Sie zweimal **F11** oder klicken Sie auf **Debuggen > Schrittweise ausführen**, während der Debugger in der `for`-Schleife der `main`-Methode pausiert, damit der Debugger beim `SendMessage`-Methodenaufruf weiter ausgeführt wird.
+1. Drücken Sie zweimal **F11**, oder klicken Sie auf **Debuggen > Schrittweise ausführen**, während der Debugger in der `for`-Schleife der `main`-Methode pausiert, damit der Debugger beim `SendMessage`-Methodenaufruf weiter ausgeführt wird.
 
      Nachdem Sie zweimal **F11** gedrückt haben, sollten Sie sich in dieser Codezeile befinden:
 

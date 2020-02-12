@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587276"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144772"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Übersicht über Quellcode-Analysetools
 
@@ -28,7 +28,7 @@ Analysetools der .NET Compiler Platform („Roslyn“) analysieren Ihren C#- ode
 - Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren. Zum Beispiel:
 
   - [FxCop-Analysetools](../code-quality/install-fxcop-analyzers.md), die von Microsoft empfohlenen Analysetools für die Qualitätsanalyse des Codes
-  - Analysetools von Drittanbietern wie [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) und [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - Analysetools von Drittanbietern wie [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) und [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 Wenn ein Analysetool Regelverstöße findet, werden sie im Code-Editor (als *Wellenlinie* unter dem fehlerhaften Code) und im Fenster „Fehlerliste“ angezeigt.
 
