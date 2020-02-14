@@ -7,14 +7,14 @@ helpviewer_keywords:
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebd779ed2c78f48c75d29297fba862ffda142e23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659635"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091846"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen
 
@@ -24,7 +24,7 @@ Mit dem Diagramm für Aktivitäten virtueller Benutzer können die Aktivitäten 
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Visual Studio Enterprise
 
@@ -107,6 +107,6 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 - [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
-- [Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [How to: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

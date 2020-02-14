@@ -1,48 +1,52 @@
 ---
-title: Office 365-Vorteil | Microsoft-Dokumentation
+title: Office 365 Pro Plus-Vorteil | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
-description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: b9834411c4b951fb7cdb09ac48dad651d109d618
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+description: Erfahren Sie mehr über den Office 365 Pro Plus-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
+ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967341"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036731"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 in Visual Studio-Abonnements
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus in Visual Studio-Abonnements
 
-Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access (Publisher und Access nur auf dem PC verfügbar) enthält. Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
+Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 Pro Plus ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
 
 > [!NOTE]
-> Ihr Visual Studio-Abonnement berechtigt Sie für die Verwendung von Office 365 in der Produktion.  
+> Ihr Visual Studio-Abonnement berechtigt Sie für die Verwendung von Office 365 Pro Plus in der Produktion.  
 
-## <a name="getting-started-with-office-365"></a>Erste Schritte mit Office 365 
+> [!IMPORTANT]
+> Wir wurden über ein Problem mit dem Abrufen von Product Keys für Office 365 Pro Plus informiert.  Wir arbeiten an einer Lösung und werden ein Update bereitstellen, sobald das Problem behoben ist. 
 
-Führen Sie die folgenden Schritte aus, um Office 365 herunterzuladen und zu aktivieren:
+
+## <a name="getting-started-with-office-365-pro-plus"></a>Erste Schritte mit Office 365 Pro Plus
+
+Führen Sie die folgenden Schritte aus, um Office 365 Pro Plus herunterzuladen und zu aktivieren:
 1. Melden Sie sich bei Ihrem Visual Studio Enterprise-Abonnement an.
 2. Klicken Sie auf die Registerkarte **Downloads**.
-3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Office-Liste die Option **Office 365** aus.
+3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Office-Liste die Option **Office 365 Pro Plus** aus.
    > [!div class="mx-imgBorder"]
-   > ![Office 365-Downloads](_img/vs-office365/vs-office365-downloads.png)
-0. Um Office 365 installieren zu können, benötigen Sie einen Product Key.  Klicken Sie unter der Office 365-Auflistung auf den Link **Schlüssel abrufen**.
+   > ![Office 365 Pro Plus – Downloads](_img/vs-office365/vs-office365-downloads.png)
+0. Um Office 365 Pro Plus installieren zu können, benötigen Sie einen Product Key.  Klicken Sie unter dem Listing für Office 365 Pro Plus auf den Link **Schlüssel abrufen**.
    > [!div class="mx-imgBorder"]
-   > ![Office 365-Product Key abrufen](_img/vs-office365/vs-office365-get-key.png)
+   > ![Office 365 Pro Plus – Product Key abrufen](_img/vs-office365/vs-office365-get-key.png)
 0. In einem Flyoutfenster werden alle bereits von Ihnen abgerufenen Schlüssel sowie die Schlüssel angezeigt, die für Sie verfügbar sind.  Klicken Sie unter der Auflistung **Office Professional Plus 2019** auf **Schlüssel anfordern**, um einen neuen Schlüssel abzurufen.
    > [!div class="mx-imgBorder"]
-   > ![Office 365-Product Key anfordern](_img/vs-office365/vs-office365-claim-key.png)
+   > ![Office 365 Pro Plus – Product Key anfordern](_img/vs-office365/vs-office365-claim-key.png)
 0. Notieren Sie sich den Schlüssel, den Sie soeben angefordert haben. (Sie können jederzeit zu dieser Liste zurückkehren, um ihn erneut anzuzeigen.)
 0. Schließen Sie das Flyoutfenster.
 0. Klicken Sie auf die Schaltfläche **Herunterladen**:
    > [!div class="mx-imgBorder"]
-   > ![Office 365-Download starten](_img/vs-office365/vs-office365-download-button.png)
+   > ![Office 365 Pro Plus – Download starten](_img/vs-office365/vs-office365-download-button.png)
 0. Melden Sie sich mit Ihrem Microsoft-Konto an. (Wenn Sie bereits angemeldet sind, klicken Sie auf **Weiter**.)
 0. Geben Sie Ihren Product Key, das Land oder die Region und die Sprache ein, und klicken Sie dann auf **Weiter**.
    > [!div class="mx-imgBorder"]
-   > ![Office 365-Product Key eingeben](_img/vs-office365/vs-office365-enter-key.png)
+   > ![Office 365 Pro Plus – Product Key eingeben](_img/vs-office365/vs-office365-enter-key.png)
 0. Klicken Sie erneut auf **Weiter**.
 0. Klicken Sie auf **Installieren**, um die Office-Anwendungen zu installieren.
 
@@ -77,3 +81,9 @@ Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visu
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Einzelguthaben für Azure DevTest](vs-azure.md), wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](vs-office-dev.md) aktivieren.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)

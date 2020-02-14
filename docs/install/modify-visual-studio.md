@@ -2,7 +2,7 @@
 title: Ändern von Visual Studio 2017
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern.
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922875"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125350"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
@@ -123,6 +123,9 @@ Gehen Sie folgendermaßen vor:
 ::: moniker range="vs-2019"
 
  Arbeitsauslastungen enthalten die Features, die Sie für die verwendete Programmiersprache oder Plattform benötigen. Verwenden Sie Arbeitsauslastungen, um Visual Studio so zu ändern, dass die Arbeit, die Sie ausführen möchten zum gewünschten Zeitpunkt unterstützt werden.
+
+ > [!TIP]
+>Weitere Informationen zu den Tools und Komponentenpaketen, die Sie für die Entwicklung benötigen, finden Sie unter [Visual Studio-Workloads](https://visualstudio.microsoft.com/vs/#workloads).
 
 1. Wählen Sie im Visual Studio-Installer die Registerkarte **Workloads** und dann die gewünschten Workloads aus oder heben Sie die Auswahl bestimmter Workloads auf.
 

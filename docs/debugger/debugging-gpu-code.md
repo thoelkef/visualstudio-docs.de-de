@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911571"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144798"
 ---
 # <a name="debugging-gpu-code"></a>Debuggen von GPU-Code
 Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit, GPU) ausgeführt wird. Die GPU-Debugunterstützung in Visual Studio umfasst die Raceerkennung, das Starten von Prozessen bzw. Anfügen an Prozesse sowie die Integration in die Debugfenster.
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
- Debugging wird unter [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] und [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] unterstützt. Für das Debuggen im Softwareemulator ist [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] erforderlich. Für das Debuggen auf der Hardware müssen Sie die Treiber für Ihre Grafikkarte installieren. Nicht alle Hardwarehersteller implementieren sämtliche Debuggerfunktionen. Weitere Informationen zu Einschränkungen finden Sie in der Dokumentation des Herstellers.
+ Das Debuggen wird auf [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10, [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] und Windows Server 2016 unterstützt. Für das Debuggen im Software Emulator, [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10 oder [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)], ist Windows Server 2016 erforderlich. Für das Debuggen auf der Hardware müssen Sie die Treiber für Ihre Grafikkarte installieren. Nicht alle Hardwarehersteller implementieren sämtliche Debuggerfunktionen. Weitere Informationen zu Einschränkungen finden Sie in der Dokumentation des Herstellers.
 
 > [!NOTE]
 > Unabhängige Hardwareanbieter, die GPU-Debugging in Visual Studio unterstützen möchten, müssen eine DLL erstellen, mit der die VSD3DDebug-Schnittstelle implementiert wird und die auf ihre eigenen Treiber ausgerichtet ist.
@@ -47,7 +47,7 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 2. Mit dem Befehl **Aktuelle Kachel bis zum Cursor ausführen** wird die App ausgeführt, bis alle Threads in der aktuellen Kachel die Cursorposition erreichen und dann angehalten werden.
 
 ## <a name="debugging-windows"></a>Debugfenster
- Wenn Sie bestimmte Debugfenster verwenden, können Sie GPU-Threads überprüfen, kennzeichnen und einfrieren. Weitere Informationen finden Sie unter:
+ Wenn Sie bestimmte Debugfenster verwenden, können Sie GPU-Threads überprüfen, kennzeichnen und einfrieren. Weitere Informationen finden Sie unter
 
 - [Verwenden des Fensters "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)
 
@@ -65,7 +65,7 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 ## <a name="troubleshooting"></a>Problembehandlung
 
 ### <a name="specifying-an-accelerator"></a>Festlegen einer Zugriffstaste
- Haltepunkte im GPU-Code werden nur erreicht, wenn der Code auf der REF-Zugriffstaste [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) ausgeführt wird. Wenn Sie keine Zugriffstaste im Code angeben, wird die REF-Zugriffstaste automatisch als **Debuggingbeschleunigungstyp** in den Projekteigenschaften ausgewählt. Wenn der Code explizit eine Zugriffstaste auswählt, wird die REF-Zugriffstaste nicht beim Debuggen verwendet und die Haltepunkte werden nicht erreicht, es sei denn, die GPU-Hardware verfügt über Debugunterstützung. Um dieses Problem zu beheben, schreiben Sie den Code so, dass die REF-Zugriffstaste beim Debuggen verwendet wird. Weitere Informationen finden Sie Unterprojekt Eigenschaften und [Verwenden von Accelerator-und accelerator_view-Objekten](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) und [Projekt C++ Einstellungen für eine Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Haltepunkte im GPU-Code werden nur erreicht, wenn der Code auf der REF-Zugriffstaste [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) ausgeführt wird. Wenn Sie keine Zugriffstaste im Code angeben, wird die REF-Zugriffstaste automatisch als **Debuggingbeschleunigungstyp** in den Projekteigenschaften ausgewählt. Wenn der Code explizit eine Zugriffstaste auswählt, wird die REF-Zugriffstaste nicht beim Debuggen verwendet und die Haltepunkte werden nicht erreicht, es sei denn, die GPU-Hardware verfügt über Debugunterstützung. Um dieses Problem zu beheben, schreiben Sie den Code so, dass die REF-Zugriffstaste beim Debuggen verwendet wird. Weitere Informationen finden Sie Unterprojekt Eigenschaften und Verwenden von Zugriffstasten und [accelerator_view Objekten](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) und [Projekteinstellungen C++ für eine Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Bedingte Haltepunkte
  Bedingte Haltepunkte im GPU-Code werden unterstützt, jedoch kann nicht jeder Ausdruck auf dem Gerät ausgewertet werden. Wenn ein Ausdruck nicht auf dem Gerät ausgewertet werden kann, wird er im Debugger ausgewertet. Der Debugger wird wahrscheinlich langsamer ausgeführt als das Gerät.
@@ -79,7 +79,7 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Fehler: Auf der Remotesite muss TDR (Timeout Detection and Recovery) deaktiviert sein.
  Es ist möglich, dass die C++ AMP-Berechnungen das Standardzeitintervall überschreiten, das durch den Windows-TDR-Prozess (Timeout Detection and Recovery) festgelegt wird. Wenn dies geschieht, wird die Berechnung abgebrochen und die Daten gehen verloren. Weitere Informationen finden Sie unter [Behandlung von TDRs in C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Start GPU Debugging in Visual Studio](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/) (Starten von GPU-Debugging in Visual Studio)

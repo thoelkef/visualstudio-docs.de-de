@@ -380,8 +380,10 @@
                   href: ide/reference/intellisense-completion-unimported-types.md
                 - name: Invertieren von bedingten Ausdrücken und logischen Operationen
                   href: ide/reference/invert-conditional-logical.md
-                - name: Invertieren von if-Anweisungen
+                - name: Umkehren von if-Anweisungen
                   href: ide/reference/invert-if-statement.md
+                - name: Refactoringoptionen für statische lokale Funktionen
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Verschieben der Deklaration in Verweisnähe
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Verschieben eines Typs in passende Datei
