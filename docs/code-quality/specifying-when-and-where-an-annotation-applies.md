@@ -26,14 +26,14 @@ Wenn eine Anmerkung bedingt ist, sind möglicherweise andere Anmerkungen erforde
 ## <a name="structural-annotations"></a>Strukturelle Anmerkungen
 Verwenden Sie die folgenden strukturellen Anmerkungen, um zu steuern, wann und wo Anmerkungen angewendet werden.
 
-|Anmerkung|BESCHREIBUNG|
+|Annotation|Beschreibung|
 |----------------|-----------------|
 |`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list`wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in der Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der nach Bedingung interpretiert wird.|
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list`wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der Post-Bedingung interpretiert wird.<br /><br /> `iter` ist der Name einer Variablen, die auf die Anmerkung (einschließlich `anno-list`) festgelegt ist. `iter` hat einen impliziten Typ `long`. Identisch benannte Variablen in jedem einschließenden Bereich werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|
 |`_Group_(anno-list)`|Die Anmerkungen in `anno-list` werden alle als Qualifizierer betrachtet, die auf die Gruppen Anmerkung angewendet werden, die auf jede Anmerkung angewendet wird.|
 |`_When_(expr, anno-list)`|`expr` ist ein Ausdruck, der in `bool`konvertiert werden kann. Wenn der Wert ungleich 0 (null) (`true`) ist, gelten die Anmerkungen, die in `anno-list` angegeben sind, als anwendbar.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list``expr` als Verwendung der Eingabewerte interpretiert, wenn die Anmerkung eine Vorbedingung ist, und als die Ausgabewerte verwendet werden, wenn die Anmerkung eine nach Bedingung ist. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` intrinsisch verwenden, wenn Sie eine nach Bedingung auswerten, um anzugeben, dass die Eingabewerte verwendet werden sollen. **Hinweis:**  Verschiedene Anmerkungen können aufgrund der Verwendung von `_When_` aktiviert werden, wenn ein änderbarer Wert – z. b. `*pLength`– beteiligt ist, da das ausgewertete Ergebnis von `expr` in der Vorbedingung möglicherweise von dem ausgewerteten Ergebnis in der nach Bedingung abweicht.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Einführung in SAL](../code-quality/understanding-sal.md)

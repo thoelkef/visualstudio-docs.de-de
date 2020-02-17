@@ -37,7 +37,7 @@ ms.locfileid: "77277652"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
@@ -65,7 +65,7 @@ ms.locfileid: "77277652"
 
     Zurzeit können Sie Farmlösungsprofile erstellen. Weitere Informationen zu Sandkasten Lösungen im Vergleich zu Farm Lösungen finden Sie unter [Überlegungen zu Sandkasten](../sharepoint/sandboxed-solution-considerations.md)Lösungen.
 
-7. Klicken Sie auf die Schaltfläche **Fertig stellen** . Das Projekt wird in **Projektmappen-Explorer**angezeigt.
+7. Klicken Sie auf die Schaltfläche **Fertig stellen**. Das Projekt wird in **Projektmappen-Explorer**angezeigt.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Hinzufügen eines Features und Funktions Ereignis Empfängers
  Fügen Sie dem Projekt als Nächstes eine Funktion zusammen mit dem Ereignisempfänger für die Funktion hinzu. Dieser Ereignisempfänger enthält den Code, für den das Profil erstellt wird.
@@ -272,7 +272,7 @@ ms.locfileid: "77277652"
 
      Die Funktion sollte nun weitaus schneller aktiviert werden, da der Aufruf der Leerlaufschleife beseitigt wurde. Im Beispiel-Profilerstellungsbericht wird dies berücksichtigt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
 - [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)
 - [Auffinden von Anwendungs Engpässen mit Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
