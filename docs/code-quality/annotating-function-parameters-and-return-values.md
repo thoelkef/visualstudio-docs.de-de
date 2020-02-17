@@ -123,17 +123,17 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 18de1a42a72172d137215d27d9af3a9a409e9086
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879268"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271088"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 In diesem Artikel werden typische Verwendungsmöglichkeiten von Anmerkungen für einfache Funktionsparameter – skalare und Zeiger auf Strukturen und Klassen – und die meisten Puffer Typen beschrieben.  Dieser Artikel zeigt auch gängige Verwendungs Muster für Anmerkungen. Weitere Anmerkungen, die sich auf Funktionen beziehen, finden Sie unter [kommentieren von Funktionsverhalten](../code-quality/annotating-function-behavior.md).
@@ -524,7 +524,7 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
 
      `min(pM->nSize, sizeof(MyStruct))`
 
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 [Blog des Code Analyseteams](https://blogs.msdn.microsoft.com/codeanalysis/)
 

@@ -3,21 +3,21 @@ title: Einführung in SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807089"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271821"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 
-Die Microsoft-Quell Code Anmerkung (Source-Code Anmerkung Language, SAL) stellt eine Reihe von Anmerkungen bereit, mit denen Sie beschreiben können, wie eine Funktion Ihre Parameter verwendet, die Annahmen, die Sie für Sie vornimmt, und die Garantien, die Sie nach dem Abschluss trifft. Die Anmerkungen werden in der Header Datei `<sal.h>` definiert. Die Visual Studio-Code C++ Analyse für verwendet SAL-Anmerkungen, um die Analyse von Funktionen zu ändern. Weitere Informationen zu SAL 2,0 für die Windows-Treiberentwicklung finden Sie unter [SAL 2,0-Anmerkungen für Windows-Treiber](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
+Die Microsoft-Quell Code Anmerkung (Source-Code Anmerkung Language, SAL) stellt eine Reihe von Anmerkungen bereit, mit denen Sie beschreiben können, wie eine Funktion Ihre Parameter verwendet, die Annahmen, die Sie für Sie vornimmt, und die Garantien, die Sie nach dem Abschluss trifft. Die Anmerkungen werden in der Header Datei `<sal.h>`definiert. Die Visual Studio-Code C++ Analyse für verwendet SAL-Anmerkungen, um die Analyse von Funktionen zu ändern. Weitere Informationen zu SAL 2,0 für die Windows-Treiberentwicklung finden Sie unter [SAL 2,0-Anmerkungen für Windows-Treiber](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
 
 Nativ, C und C++ bieten nur eingeschränkte Möglichkeiten für Entwickler, Absicht und Invarianz konsistent auszudrücken. Mithilfe von Sal-Anmerkungen können Sie Ihre Funktionen ausführlicher beschreiben, damit Entwickler, die Sie nutzen, besser verstehen können, wie Sie verwendet werden.
 
@@ -27,7 +27,7 @@ Einfach ausgedrückt ist SAL eine kostengünstige Möglichkeit, um dem Compiler 
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL steigert den Wert des Codes
 
-SAL kann Ihnen helfen, den Code Entwurf verständlicher zu machen, sowohl für Benutzer als auch für Code Analysetools. Sehen Sie sich dieses Beispiel an, das die C-Lauf Zeitfunktion `memcpy` zeigt
+SAL kann Ihnen helfen, den Code Entwurf verständlicher zu machen, sowohl für Benutzer als auch für Code Analysetools. Sehen Sie sich dieses Beispiel an, das die C-Lauf Zeitfunktion `memcpy`zeigt
 
 ```cpp
 
@@ -49,7 +49,7 @@ Die Dokumentation enthält einige Informationen, die vorschlagen, dass Ihr Code 
 
 - Der Ziel Puffer muss mindestens so groß sein wie der Quell Puffer.
 
-Der Compiler kann die Dokumentation oder informelle Kommentare jedoch nicht lesen. Es ist nicht bekannt, dass zwischen den beiden Puffern und `count` eine Beziehung besteht, und es ist auch nicht möglich, eine Beziehung zu erraten. SAL könnte mehr Klarheit über die Eigenschaften und die Implementierung der Funktion bieten, wie hier gezeigt:
+Der Compiler kann die Dokumentation oder informelle Kommentare jedoch nicht lesen. Es ist nicht bekannt, dass zwischen den beiden Puffern und `count`eine Beziehung besteht, und es ist auch nicht möglich, eine Beziehung zu erraten. SAL könnte mehr Klarheit über die Eigenschaften und die Implementierung der Funktion bieten, wie hier gezeigt:
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-Beachten Sie, dass diese Anmerkungen den Informationen in der MSDN-Dokumentation ähneln, aber präziser sind und einem semantischen Muster folgen. Wenn Sie diesen Code lesen, können Sie sich schnell mit den Eigenschaften dieser Funktion vertraut machen und verhindern, dass Sicherheitsprobleme mit Pufferüberlauf vermieden werden. Noch besser ist, dass die von Sal bereitgestellten Semantik Muster die Effizienz und Effektivität automatisierter Code Analysetools bei der frühen Ermittlung potenzieller Fehler verbessern können. Stellen Sie sich vor, dass jemand diese fehlerhafte Implementierung von `wmemcpy` schreibt:
+Beachten Sie, dass diese Anmerkungen den Informationen in der MSDN-Dokumentation ähneln, aber präziser sind und einem semantischen Muster folgen. Wenn Sie diesen Code lesen, können Sie sich schnell mit den Eigenschaften dieser Funktion vertraut machen und verhindern, dass Sicherheitsprobleme mit Pufferüberlauf vermieden werden. Noch besser ist, dass die von Sal bereitgestellten Semantik Muster die Effizienz und Effektivität automatisierter Code Analysetools bei der frühen Ermittlung potenzieller Fehler verbessern können. Stellen Sie sich vor, dass jemand diese fehlerhafte Implementierung von `wmemcpy`schreibt:
 
 ```cpp
 
@@ -82,7 +82,7 @@ Diese Implementierung enthält einen allgemeinen Fehler, der von einem Fehler au
 ### <a name="sal-basics"></a>Grundlagen von SAL
 SAL definiert vier grundlegende Arten von Parametern, die nach Verwendungs Mustern kategorisiert werden.
 
-|Kategorie|Parameter Anmerkung|Beschreibung|
+|Category|Parameter Anmerkung|BESCHREIBUNG|
 |--------------|--------------------------|-----------------|
 |**Eingabe in aufgerufene Funktion**|`_In_`|Daten werden an die aufgerufene Funktion weitergegeben und als schreibgeschützt behandelt.|
 |**Eingabe in aufgerufene Funktion und Ausgabe an Aufrufer**|`_Inout_`|Verwendbare Daten werden an die Funktion geleitet und potenziell geändert.|
@@ -154,7 +154,7 @@ void BadInCaller()
 }
 ```
 
-Wenn Sie in diesem Beispiel Visual Studio Code Analyse verwenden, wird überprüft, ob die Aufrufer einen nicht-NULL-Zeiger auf einen initialisierten Puffer für `pInt` übergeben. In diesem Fall kann `pInt` Zeiger nicht NULL sein.
+Wenn Sie in diesem Beispiel Visual Studio Code Analyse verwenden, wird überprüft, ob die Aufrufer einen nicht-NULL-Zeiger auf einen initialisierten Puffer für `pInt`übergeben. In diesem Fall kann `pInt` Zeiger nicht NULL sein.
 
 ### <a name="example-the-_in_opt_-annotation"></a>Beispiel: der \_in\_opt\_-Anmerkung
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code Analyse überprüft, ob Aufrufer einen nicht-NULL-Zeiger an einen initialisierten Puffer für `pInt` übergeben, und dass `pInt` vor der Rückgabe noch nicht NULL ist und der Puffer initialisiert wird.
+Visual Studio Code Analyse überprüft, ob Aufrufer einen nicht-NULL-Zeiger an einen initialisierten Puffer für `pInt`übergeben, und dass `pInt` vor der Rückgabe noch nicht NULL ist und der Puffer initialisiert wird.
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Beispiel: der \_INOUT-\_opt\_ Anmerkung
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code Analyse überprüft, ob der Aufrufer einen nicht-NULL-Zeiger für `*pInt` übergibt, und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.
+Visual Studio Code Analyse überprüft, ob der Aufrufer einen nicht-NULL-Zeiger für `*pInt`übergibt, und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>Beispiel: der \_outptr\_opt\_ Anmerkung
 
@@ -400,11 +400,11 @@ Im folgenden finden Sie einige Richtlinien:
 
 Oder Sie können alle Parameter mit Anmerkungen versehen, um die Absicht zu vereinfachen und zu überprüfen, ob Anmerkungen durchgeführt wurden.
 
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 [Blog des Code Analyseteams](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)

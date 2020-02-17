@@ -30,15 +30,15 @@ f1_keywords:
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850162"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271590"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Si
 |`_Interlocked_operand_`|Der mit Anmerkungen versehene Funktionsparameter ist der Ziel Operand einer der verschiedenen Interlocked-Funktionen.  Diese Operanden müssen über bestimmte zusätzliche Eigenschaften verfügen.|  
 |`_Write_guarded_by_(expr)`|Kommentiert eine Variable und gibt an, dass bei jeder Änderung der Variablen die Sperrenanzahl des Sperr Objekts, das von `expr` benannt ist, mindestens eins ist.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  Grundlegendes zu [SAL](../code-quality/understanding-sal.md)   
  Hinzufügen von [Anmerkungen zu Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)   

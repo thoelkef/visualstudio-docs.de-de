@@ -13,17 +13,17 @@ helpviewer_keywords:
 - native code analysis
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efcb6c5aeb60062dea75906969b71e65ac4912bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7b7de6eb7a46f849437f7917509c4b191043d320
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745979"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271204"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Codeanalyse für C/C++-Warnungen
 In diesem Abschnitt werden dieC++ C/Code-Analyse Warnungen aufgeführt, ausgenommen diejenigen, die von den [ C++ kernrichtlinienchecker](code-analysis-for-cpp-corecheck.md)ausgelöst werden. Weitere Informationen zur Code Analyse finden Sie unter [/analyze (Code Analyse)](/cpp/build/reference/analyze-code-analysis) und [Schnellstart: Code Analyse für CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).

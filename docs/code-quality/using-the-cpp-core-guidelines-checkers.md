@@ -2,17 +2,17 @@
 title: Verwenden der Überprüfungen für C++ Core Guidelines
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 95b3af7db7fc0e4c71d78716714031fd07dbdab5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807076"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271772"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
 
@@ -59,7 +59,7 @@ In diesem Beispiel werden einige der Warnungen veranschaulicht, die C++ die grun
 
 - C26485 ist Regel Begrenzungen. 3: kein Array-zu-Zeiger-Zerfall.
 
-- C26481 ist Regel Begrenzungen. 1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span` .
+- C26481 ist Regel Begrenzungen. 1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span`.
 
 Wenn die C++ Code Analyse-Regelsätze der Kern Überprüfung installiert und aktiviert sind, wenn Sie diesen Code kompilieren, werden die ersten beiden Warnungen ausgegeben, das dritte wird jedoch unterdrückt. Dies ist die Buildausgabe des Beispielcodes:
 
@@ -80,7 +80,7 @@ Wenn der C++ kernrichtlinienprüfung neue Regeln hinzugefügt werden, kann sich 
 Referenz Themen zu den meisten Regeln finden [Sie unter C++ Referenz zu Visual Studio Core-Überprüfung](code-analysis-for-cpp-corecheck.md).
 
 Ab Visual Studio 2017 Version 15,3 sind folgende Regelsätze unterstützt:
-- **Besitzer Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen im Zusammenhang mit Besitzer \<T > aus C++ den grundlegenden Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Besitzer Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen im Zusammenhang mit Besitzer-\<t- C++ > aus den grundlegenden Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - Mit **Konstanten Regeln** werden über [Prüfungen C++ der Kern Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)durchgeführt.
 
@@ -161,9 +161,9 @@ Anstelle #Pragmas können Sie die Befehlszeilenoptionen auf der Eigenschaften Se
 
 2. **Eigenschaften auswählen | C/C++| Befehlszeile**
 
-3. Fügen Sie im Fenster **zusätzliche Optionen** `/wd26400` hinzu.
+3. Fügen Sie im Fenster **zusätzliche Optionen** `/wd26400`hinzu.
 
-Sie können die Befehlszeilenoption verwenden, um die gesamte Code Analyse für eine Datei temporär zu deaktivieren, indem Sie `/analyze-` angeben. Dies erzeugt eine Warnung *D9025 Überschreiben von "/Analyze" mit "/Analyze-"* , wodurch Sie daran erinnert werden, die Code Analyse später erneut zu aktivieren.
+Sie können die Befehlszeilenoption verwenden, um die gesamte Code Analyse für eine Datei temporär zu deaktivieren, indem Sie `/analyze-`angeben. Dies erzeugt eine Warnung *D9025 Überschreiben von "/Analyze" mit "/Analyze-"* , wodurch Sie daran erinnert werden, die Code Analyse später erneut zu aktivieren.
 
 ## <a name="corecheck_per_file"></a>Aktivieren der C++ grundlegenden Richtlinien Prüfung für bestimmte Projektdateien
 

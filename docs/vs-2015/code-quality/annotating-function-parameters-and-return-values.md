@@ -123,15 +123,15 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: bd9107bed68b9b5b6f88a239b3b155440b0e654c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271617"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -492,10 +492,10 @@ In diesem Artikel werden typische Verwendungsmöglichkeiten von Anmerkungen für
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
-## <a name="related-resources"></a>Verwandte Ressourcen  
+## <a name="related-resources"></a>Zugehörige Ressourcen  
  [Blog des Code Analyseteams](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  Grundlegendes zu [SAL](../code-quality/understanding-sal.md)   
  Hinzufügen einer [Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   

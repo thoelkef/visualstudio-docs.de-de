@@ -8,17 +8,17 @@ f1_keywords:
 - _When_
 - _At_buffer_
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ccf20ab4348a8abed4b052f512477c8b2a8cd0b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f6efcc158ea0b5b2e44a5b9d0750bc897e442994
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271836"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Angeben, wann und wo eine Anmerkung gültig ist
 Wenn eine Anmerkung bedingt ist, sind möglicherweise andere Anmerkungen erforderlich, um dies für den Analyzer anzugeben.  Wenn eine Funktion z. b. eine Variable aufweist, die entweder synchron oder asynchron sein kann, verhält sich die Funktion wie folgt: im synchronen Fall ist Sie immer schließlich erfolgreich, aber im asynchronen Fall meldet Sie einen Fehler, wenn Sie nicht sofort ausgeführt werden kann. Wenn die Funktion synchron aufgerufen wird, stellt die Überprüfung des Ergebnis Werts keinen Wert für den Code Analyse Wert dar, da er nicht zurückgegeben hätte.  Wenn die Funktion jedoch asynchron aufgerufen wird und das Ergebnis der Funktion nicht aktiviert ist, kann ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in der Sie die `_When_` Annotation – weiter unten in diesem Artikel – verwenden können, um die Überprüfung zu aktivieren.
@@ -26,14 +26,14 @@ Wenn eine Anmerkung bedingt ist, sind möglicherweise andere Anmerkungen erforde
 ## <a name="structural-annotations"></a>Strukturelle Anmerkungen
 Verwenden Sie die folgenden strukturellen Anmerkungen, um zu steuern, wann und wo Anmerkungen angewendet werden.
 
-|Anmerkung|Beschreibung|
+|Anmerkung|BESCHREIBUNG|
 |----------------|-----------------|
-|`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr` benannt wird. Für jede Anmerkung in `anno-list` wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in der Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der nach Bedingung interpretiert wird.|
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr` benannt wird. Für jede Anmerkung in `anno-list` wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der Post-Bedingung interpretiert wird.<br /><br /> `iter` ist der Name einer Variablen, die auf die Anmerkung (einschließlich `anno-list`) festgelegt ist. `iter` hat einen impliziten Typ `long`. Identisch benannte Variablen in jedem einschließenden Bereich werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|
+|`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list`wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in der Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der nach Bedingung interpretiert wird.|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list`wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der Post-Bedingung interpretiert wird.<br /><br /> `iter` ist der Name einer Variablen, die auf die Anmerkung (einschließlich `anno-list`) festgelegt ist. `iter` hat einen impliziten Typ `long`. Identisch benannte Variablen in jedem einschließenden Bereich werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|
 |`_Group_(anno-list)`|Die Anmerkungen in `anno-list` werden alle als Qualifizierer betrachtet, die auf die Gruppen Anmerkung angewendet werden, die auf jede Anmerkung angewendet wird.|
-|`_When_(expr, anno-list)`|`expr` ist ein Ausdruck, der in `bool` konvertiert werden kann. Wenn der Wert ungleich 0 (null) (`true`) ist, gelten die Anmerkungen, die in `anno-list` angegeben sind, als anwendbar.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list` `expr` als Verwendung der Eingabewerte interpretiert, wenn die Anmerkung eine Vorbedingung ist, und als die Ausgabewerte verwendet werden, wenn die Anmerkung eine nach Bedingung ist. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` intrinsisch verwenden, wenn Sie eine nach Bedingung auswerten, um anzugeben, dass die Eingabewerte verwendet werden sollen. **Hinweis:**  Verschiedene Anmerkungen können aufgrund der Verwendung von `_When_` aktiviert werden, wenn ein änderbarer Wert – z. b. `*pLength` – beteiligt ist, da das ausgewertete Ergebnis von `expr` in der Vorbedingung möglicherweise von dem ausgewerteten Ergebnis in der nach Bedingung abweicht.|
+|`_When_(expr, anno-list)`|`expr` ist ein Ausdruck, der in `bool`konvertiert werden kann. Wenn der Wert ungleich 0 (null) (`true`) ist, gelten die Anmerkungen, die in `anno-list` angegeben sind, als anwendbar.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list``expr` als Verwendung der Eingabewerte interpretiert, wenn die Anmerkung eine Vorbedingung ist, und als die Ausgabewerte verwendet werden, wenn die Anmerkung eine nach Bedingung ist. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` intrinsisch verwenden, wenn Sie eine nach Bedingung auswerten, um anzugeben, dass die Eingabewerte verwendet werden sollen. **Hinweis:**  Verschiedene Anmerkungen können aufgrund der Verwendung von `_When_` aktiviert werden, wenn ein änderbarer Wert – z. b. `*pLength`– beteiligt ist, da das ausgewertete Ergebnis von `expr` in der Vorbedingung möglicherweise von dem ausgewerteten Ergebnis in der nach Bedingung abweicht.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Einführung in SAL](../code-quality/understanding-sal.md)

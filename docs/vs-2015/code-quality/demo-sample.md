@@ -1,5 +1,5 @@
 ---
-title: Beispiel-Demo | Microsoft-Dokumentation
+title: Demo Beispiel | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201438"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277887"
 ---
 # <a name="demo-sample"></a>Demobeispiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Mithilfe dieser Prozeduren wird Folgendes erstellt:  
+In den folgenden Verfahren wird gezeigt, wie Sie das Beispiel für Exemplarische Vorgehensweise [:C++ Analysieren von C/Code auf Fehler](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)erstellen. Mithilfe dieser Prozeduren wird Folgendes erstellt:  
   
-- Ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung, die mit dem Namen CppDemo.  
+- Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt Mappe mit dem Namen CppDemo.  
   
 - Ein statisches Bibliotheksprojekt namens „CodeDefects“  
   
 - Ein statisches Bibliotheksprojekt namens „Annotations“  
   
-  Die Verfahren bieten auch den Code für die Header und CPP-Dateien für die statischen Bibliotheken.  
+  Die Prozeduren stellen auch den Code für die Header-und CPP-Dateien für die statischen Bibliotheken bereit.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Erstellen der CppDemo-Projektmappe und des CodeDefects-Projekts  
   
@@ -66,7 +66,7 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 3. Geben Sie im Feld **Name** die Bezeichnung **Bug.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
   
-4. Kopieren Sie den folgenden Code ein, und fügen Sie ihn in das **Bug.cpp** Datei die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
+4. Kopieren Sie den folgenden Code, und fügen Sie ihn in die Datei " **Bug. cpp** " im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Editor ein.  
   
     ```  
     #include <windows.h>  
@@ -94,7 +94,7 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 7. Geben Sie im Feld **Name** die Bezeichnung **Bug.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
   
-8. Kopieren Sie den folgenden Code ein, und fügen Sie ihn in die Datei "Bug.h" in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
+8. Kopieren Sie den folgenden Code, und fügen Sie ihn in die Datei "Bug. h" im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Editor ein.  
   
     ```  
     #include <stdlib.h>  
@@ -180,7 +180,7 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 3. Geben Sie im Feld **Name** den **annotations.h** ein, und klicken Sie dann auf **Hinzufügen**.  
   
-4. Kopieren Sie den folgenden Code ein, und fügen Sie ihn in das **annotations.h** Datei die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
+4. Kopieren Sie den folgenden Code, und fügen Sie ihn in die Datei " **Annotations. h** " im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Editor ein.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -203,7 +203,7 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 7. Geben Sie im Feld **Name** den **annotations.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
   
-8. Kopieren Sie den folgenden Code ein, und fügen Sie ihn in das **annotations.cpp** Datei die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
+8. Kopieren Sie den folgenden Code, und fügen Sie ihn in die Datei " **Annotations. cpp** " im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Editor ein.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
