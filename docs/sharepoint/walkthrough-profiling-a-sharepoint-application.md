@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189127"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277652"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Mit dem Visual Studio-Profiler können Sie den teuersten (langsamsten) Teil des Projekts suchen und eliminieren, auch bekannt als Langsamster *Pfad*.
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
-- [Addg ein Feature und Funktions Ereignis Empfänger](#add-a-feature-and-feature-event-receiver).
+- [Fügen Sie eine Funktion und einen Funktions Ereignis Empfänger hinzu](#add-a-feature-and-feature-event-receiver).
 
 - [Konfigurieren und Bereitstellen der SharePoint-Anwendung](#configure-and-deploy-the-sharepoint-application).
 
@@ -37,19 +37,19 @@ ms.locfileid: "73189127"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [https://login.microsoftonline.com/consumers/]([!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]).
 
 ## <a name="create-a-sharepoint-project"></a>Erstellen eines SharePoint-Projekts
  Erstellen Sie zunächst eine SharePoint-Projekt.
 
 ### <a name="to-create-a-sharepoint-project"></a>So erstellen Sie ein SharePoint-Projekt
 
-1. Wählen Sie in der Menüleiste **Datei**  > **neue**  > **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
+1. Wählen Sie in der Menüleiste **Datei** > **neue** > **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
 
 2. Erweitern Sie den **SharePoint** -Knoten entweder unter  **C# Visual** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
 
@@ -65,7 +65,7 @@ ms.locfileid: "73189127"
 
     Zurzeit können Sie Farmlösungsprofile erstellen. Weitere Informationen zu Sandkasten Lösungen im Vergleich zu Farm Lösungen finden Sie unter [Überlegungen zu Sandkasten](../sharepoint/sandboxed-solution-considerations.md)Lösungen.
 
-7. Wählen Sie die Schaltfläche **Fertig** stellen. Das Projekt wird in **Projektmappen-Explorer**angezeigt.
+7. Klicken Sie auf die Schaltfläche **Fertig stellen** . Das Projekt wird in **Projektmappen-Explorer**angezeigt.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Hinzufügen eines Features und Funktions Ereignis Empfängers
  Fügen Sie dem Projekt als Nächstes eine Funktion zusammen mit dem Ereignisempfänger für die Funktion hinzu. Dieser Ereignisempfänger enthält den Code, für den das Profil erstellt wird.
@@ -272,8 +272,7 @@ ms.locfileid: "73189127"
 
      Die Funktion sollte nun weitaus schneller aktiviert werden, da der Aufruf der Leerlaufschleife beseitigt wurde. Im Beispiel-Profilerstellungsbericht wird dies berücksichtigt.
 
-## <a name="see-also"></a>Siehe auch
-- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
 - [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)
 - [Auffinden von Anwendungs Engpässen mit Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
