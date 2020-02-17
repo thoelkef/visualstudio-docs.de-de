@@ -28,7 +28,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 - Behandeln Sie die Warnung als Fehler.
 - Kommentieren Sie den Quellcode, um die Code Fehleranalyse zu verbessern.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - Eine Kopie des [Demo](../code-quality/demo-sample.md)Beispiels.
 - Grundlegendes Verständnis von CC++/.
@@ -169,7 +169,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
      Das Projekt wird jetzt ohne Warnungen oder Fehler erstellt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 Exemplarische Vorgehensweise [: Analysieren von verwaltetem Code auf Code Fehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [CodeC++ Analyse für C/](../code-quality/code-analysis-for-c-cpp-overview.md)
