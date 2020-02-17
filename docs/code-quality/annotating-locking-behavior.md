@@ -27,17 +27,17 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: ae15230557ee0c415082f981a7ad3588694eadea
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75402032"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265132"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Sie immer eine angemessene Sperr Disziplin, und verwenden Sie SAL-Anmerkungen.
@@ -64,7 +64,7 @@ Einige Thread Besitz Regeln, die berücksichtigt werden sollten:
 ## <a name="locking-annotations"></a>Sperren von Anmerkungen
 In der folgenden Tabelle sind die Sperr Anmerkungen aufgeführt.
 
-|Annotation|Beschreibung|
+|Anmerkung|BESCHREIBUNG|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine exklusive Sperrenanzahl des Sperr Objekts erhöht wird, das durch `expr`benannt wird.|
 |`_Acquires_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um einen Schritt um die Sperrenanzahl des Sperr Objekts erhöht wird, das durch `expr`benannt wird.|
@@ -88,7 +88,7 @@ In der folgenden Tabelle sind die Sperr Anmerkungen aufgeführt.
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Systeminterne SAL-Funktionen für nicht verfügbare Sperrobjekte
 Bestimmte Sperrobjekte werden von der Implementierung der zugehörigen Sperr Funktionen nicht verfügbar gemacht.  In der folgenden Tabelle werden die systeminternen SAL-Variablen aufgelistet, die Anmerkungen für Funktionen ermöglichen, die für diese nicht verfügbar gemachten Sperrobjekte verwendet werden.
 
-|Annotation|Beschreibung|
+|Anmerkung|BESCHREIBUNG|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|Beschreibt die Abbruch Drehsperre.|
 |`_Global_critical_region_`|Beschreibt den kritischen Bereich.|
@@ -98,7 +98,7 @@ Bestimmte Sperrobjekte werden von der Implementierung der zugehörigen Sperr Fun
 ## <a name="shared-data-access-annotations"></a>Anmerkungen zum freigegebenen Datenzugriff
 In der folgenden Tabelle sind die Anmerkungen für den Zugriff auf freigegebene Daten aufgeführt.
 
-|Annotation|Beschreibung|
+|Anmerkung|BESCHREIBUNG|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|Kommentiert eine Variable und gibt an, dass bei jedem Zugriff auf die Variable die Sperrenanzahl des Sperr Objekts, das von `expr` benannt wird, mindestens eins ist.|
 |`_Interlocked_`|Kommentiert eine Variable und entspricht `_Guarded_by_(_Global_interlock_)`.|
@@ -108,7 +108,7 @@ In der folgenden Tabelle sind die Anmerkungen für den Zugriff auf freigegebene 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock-und RAII-Anmerkungen
 Smart Locks wrappen in der Regel Native Sperren und verwalten ihre Lebensdauer. In der folgenden Tabelle werden Anmerkungen aufgelistet, die mit intelligenten Sperren und RAII-Codierungs Mustern mit Unterstützung für `move` Semantik verwendet werden können.
 
-|Annotation|Beschreibung|
+|Anmerkung|BESCHREIBUNG|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Weist den Analyzer an, zu übernehmen, dass eine Smart Lock abgerufen wurde. Diese Anmerkung erwartet einen verweissperrentyp als Parameter.|
 |`_Analysis_assume_smart_lock_released_`|Weist den Analyzer an, zu übernehmen, dass eine Smart Lock freigegeben wurde. Diese Anmerkung erwartet einen verweissperrentyp als Parameter.|
@@ -117,7 +117,7 @@ Smart Locks wrappen in der Regel Native Sperren und verwalten ihre Lebensdauer. 
 |`_Swaps_locks_(left, right)`|Beschreibt das Standard `swap` Verhalten, bei dem davon ausgegangen wird, dass-Objekte `left` und `right` ihren Zustand austauschen. Der ausgetauschte Status umfasst ggf. Sperr Anzahl und Aliasing-Ziel. Aliase, die auf die `left` und `right` Objekte zeigen, bleiben unverändert.|
 |`_Detaches_lock_(detached, lock)`|Beschreibt ein Szenario, in dem ein Lock Wrapper Type die Trennung der enthaltenen Ressource zulässt. Dies ähnelt der Funktionsweise von `std::unique_ptr` mit dem internen Zeiger: Sie ermöglicht es Programmierern, den Zeiger zu extrahieren und den intelligenten Zeiger Container in einem sauberen Zustand zu belassen. Eine ähnliche Logik wird von `std::unique_lock` unterstützt und kann in benutzerdefinierten sperrwrappern implementiert werden. Die getrennte Sperre behält ihren Zustand (sofern vorhanden) bei, während der Wrapper zurückgesetzt wird, sodass er keine Sperr Anzahl und kein Alias Ziel enthält, während seine eigenen Aliase beibehalten werden. Es gibt keinen Vorgang für Sperr Zählungen (freigeben und erwerben). Diese Anmerkung verhält sich genau wie `_Moves_lock_`, mit der Ausnahme, dass das getrennte Argument `return` und nicht `this`sein sollte.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Einführung in SAL](../code-quality/understanding-sal.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 74a878b8c64955927357e45c668c4d100007d373
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75401024"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271811"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
 
@@ -28,7 +28,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 - Behandeln Sie die Warnung als Fehler.
 - Kommentieren Sie den Quellcode, um die Code Fehleranalyse zu verbessern.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Eine Kopie des [Demo](../code-quality/demo-sample.md)Beispiels.
 - Grundlegendes Verständnis von CC++/.
@@ -169,7 +169,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
 
      Das Projekt wird jetzt ohne Warnungen oder Fehler erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 Exemplarische Vorgehensweise [: Analysieren von verwaltetem Code auf Code Fehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [CodeC++ Analyse für C/](../code-quality/code-analysis-for-c-cpp-overview.md)

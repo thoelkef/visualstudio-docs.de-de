@@ -1,5 +1,5 @@
 ---
-title: Codeanalyse für C / C++-Warnungen | Microsoft-Dokumentation
+title: Code Analyse für C-C++ Warnungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,22 +16,22 @@ helpviewer_keywords:
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
 caps.latest.revision: 43
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8b41d30e40bfa0bb796bab6a36b30997ef0f2db6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c377d72a06fcf7c8d555dc2767c0077f0b71c73c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693291"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275334"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Codeanalyse für C/C++-Warnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Abschnitt werden die C/C++-Codeanalysewarnungen aufgelistet. Weitere Informationen zur Codeanalyse finden Sie unter [/ analyze (Codeanalyse)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08) und [Quick Start: Codeanalyse für C/C++-](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
+In diesem Abschnitt werden die C/C++-Codeanalysewarnungen aufgelistet. Weitere Informationen zur Code Analyse finden Sie unter [/analyze (Code Analyse)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08) und [Schnellstart: Code Analyse für CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Richtlinien zum Schreiben von sicherem Code](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   
- [Analysieren der Qualität von C/C++-Code mit der Codeanalyse](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Richtlinien für das Schreiben von sicherem Code](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   
+ [Analysieren der CC++ /Code-Qualität mithilfe der Code Analyse](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)   
  [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

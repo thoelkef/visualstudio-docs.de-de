@@ -1,5 +1,5 @@
 ---
-title: Datenzugriff und-Tools
+title: Arbeiten mit Daten in Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916716"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272088"
 ---
-# <a name="access-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
+# <a name="work-with-data-in-visual-studio"></a>Arbeiten mit Daten in Visual Studio
 
 In Visual Studio können Sie Anwendungen erstellen, die eine Verbindung mit Daten in praktisch allen Datenbankprodukten oder-Diensten in beliebiger Form herstellen – auf einem lokalen Computer, in einem lokalen Netzwerk oder in einem öffentlichen, privaten oder Hybrid Cloud.
 
 Für Anwendungen in JavaScript, Python, PHP, Ruby oder C++können Sie eine Verbindung mit Daten herstellen, wie Sie nichts anderes tun, indem Sie Bibliotheken abrufen und Code schreiben. Für .NET-Anwendungen stellt Visual Studio Tools bereit, die Sie zum Durchsuchen von Datenquellen, zum Erstellen von Objekt Modellen zum Speichern und Bearbeiten von Daten im Arbeitsspeicher und zum Binden von Daten an die Benutzeroberfläche verwenden können. Microsoft Azure bietet sdjs für .net, Java, Node. js, PHP, Python, Ruby und Mobile Apps sowie Tools in Visual Studio zum Herstellen einer Verbindung mit Azure Storage.
 
+::: moniker range="vs-2017"
 Die folgenden Listen enthalten nur einige der vielen Daten Bank-und Speichersysteme, die in Visual Studio verwendet werden können. Die [Microsoft Azure](https://azure.microsoft.com/) Angebote sind Datendienste, die die gesamte Bereitstellung und Verwaltung des zugrunde liegenden Datenspeicher beinhalten. Mit der Arbeitsauslastung für die **Azure-Entwicklung** in [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) können Sie direkt in Visual Studio mit Azure-Daten speichern arbeiten.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Die folgenden Listen enthalten nur einige der vielen Daten Bank-und Speichersysteme, die in Visual Studio verwendet werden können. Die [Microsoft Azure](https://azure.microsoft.com/) Angebote sind Datendienste, die die gesamte Bereitstellung und Verwaltung des zugrunde liegenden Datenspeicher beinhalten. Mit der Arbeitsauslastung für die **Azure-Entwicklung** in [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) können Sie direkt in Visual Studio mit Azure-Daten speichern arbeiten.
+::: moniker-end
 
 ![Workload „Azure-Entwicklung“](media/azure-development-workload.png)
 
@@ -39,7 +44,7 @@ Die meisten anderen in diesem Abschnitt aufgeführten SQL-und nosql-Daten Bankpr
 - SQL Data Warehouse
 - SQL Server Stretch Database
 - StorSimple
-- Und mehr...
+- Und vieles mehr...
 
 **SQL**
 
@@ -50,7 +55,7 @@ Die meisten anderen in diesem Abschnitt aufgeführten SQL-und nosql-Daten Bankpr
 - Oracle
 - PostgreSQL
 - SQLite
-- Und mehr...
+- Und vieles mehr...
 
 **NoSQL**
 
@@ -61,7 +66,7 @@ Die meisten anderen in diesem Abschnitt aufgeführten SQL-und nosql-Daten Bankpr
 - OrientDB|
 - RavenDB
 - VelocityDB
-- Und mehr...
+- Und vieles mehr...
 
 ::: moniker range="vs-2017"
 

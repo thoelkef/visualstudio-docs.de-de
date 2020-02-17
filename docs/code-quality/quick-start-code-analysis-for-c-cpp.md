@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445635"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272317"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
 
@@ -36,7 +36,7 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
 
 Visual Studio enthält zwei Standardregelsätze für systemeigenen Code:
 
-|Regelsatz|Beschreibung|
+|Regelsatz|BESCHREIBUNG|
 |--------------|-----------------|
 |Von Microsoft empfohlene Mindestregeln für eigene Projekte|Dieser Regelsatz zielt auf die kritischsten Probleme in Ihrem nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.|
 |Von Microsoft empfohlene Regeln für eigene Projekte|Dieser Regelsatz umfasst eine Vielzahl von Problemen. Sie enthält alle Regeln in den von Microsoft empfohlenen Mindestregeln für eigene Projekte|
@@ -87,7 +87,7 @@ So unterdrücken Sie eine Warnung
 
 ## <a name="create-work-items-for-code-analysis-warnings"></a>Erstellen von Arbeitsaufgaben für Code Analyse Warnungen
 
-Funktionen für die Arbeitsaufgabenverfolgung können Sie in Visual Studio protokollieren. Um diese Funktion verwenden zu können, müssen Sie sich mit einer Instanz von Team Foundation Server verbinden.
+Funktionen für die Arbeitselementeverfolgung können Sie in Visual Studio protokollieren. Um diese Funktion verwenden zu können, müssen Sie sich mit einer Instanz von Team Foundation Server verbinden.
 
 **So erstellen Sie ein Arbeits Element für mindestens eine C/C++ Code-Warnung**
 
@@ -107,6 +107,6 @@ Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektm
 
 - So **Filtern Sie Warnungen nach Schweregrad**: Standardmäßig wird Code Analyse Nachrichten der Schweregrad " **Warnung**" zugewiesen. Sie können den Schweregrad von mindestens einer Nachricht als **Fehler** in einem benutzerdefinierten Regelsatz zuweisen. Wählen Sie in der Spalte **Schweregrad** des **Fehlerliste**den Dropdown Pfeil und dann das Filter Symbol aus. Wählen Sie **Warnung** oder **Fehler** aus, um nur die Nachrichten anzuzeigen, die dem jeweiligen Schweregrad zugewiesen sind. Wählen Sie **Alle auswählen** aus, um alle Meldungen anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Code Analyse für C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

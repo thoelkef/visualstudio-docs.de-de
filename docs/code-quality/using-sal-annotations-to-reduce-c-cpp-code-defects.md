@@ -7,17 +7,17 @@ helpviewer_keywords:
 - SAL annotations
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 506e8516c7a7bbc0ccc610b843763017ae90f547
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4d227ca8c88770548a1d53a4f40eb1ce62d5919c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807061"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271738"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 SAL ist die Sprache der Microsoft-Quell Code Anmerkung. Mithilfe von Quell Code Anmerkungen können Sie die Absicht hinter dem Code explizit machen. Diese Anmerkungen ermöglichen auch automatisierte statische Analysetools, um Ihren Code genauer zu analysieren, mit deutlich weniger falsch positiven und falschen negativen Werten.
@@ -56,8 +56,8 @@ In den Artikeln in diesem Abschnitt der Dokumentation werden Aspekte von Sal er�
 
      Enthält Beispiele, die zeigen, wie SAL-Anmerkungen verwendet werden. Erläutert auch gängige Fehler.
 
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 [Blog des Code Analyseteams](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 [SAL 2,0-Anmerkungen für Windows-Treiber](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)
