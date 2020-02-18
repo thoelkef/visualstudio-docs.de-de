@@ -109,7 +109,7 @@ Hinweise für dieses Beispiel:
 - `_Field_range_` für `bufferSize` gibt an, dass der Wert von `bufferSize` innerhalb von 1 und `MaxBufferSize` (beide inklusiv) liegen muss.
 - Die Endergebnisse der `_Struct_size_bytes_` und `_Field_size_` Anmerkungen sind gleichwertig. Für Strukturen oder Klassen, die über ein ähnliches Layout verfügen, ist `_Field_size_` leichter zu lesen und zu verwalten, da es weniger Verweise und Berechnungen als die entsprechende `_Struct_size_bytes_` Anmerkung aufweist. `_Field_size_` müssen nicht in die Bytegröße konvertiert werden. Wenn die Byte Größe die einzige Option ist, z. b. für ein void-Zeiger Feld, können `_Field_size_bytes_` verwendet werden. Wenn sowohl `_Struct_size_bytes_` als auch `_Field_size_` vorhanden sind, sind beide für Tools verfügbar. Es liegt an dem Tool, was zu tun ist, wenn die zwei Anmerkungen nicht übereinstimmen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Einführung in SAL](../code-quality/understanding-sal.md)

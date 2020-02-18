@@ -217,5 +217,5 @@ Die folgenden Warnungen in einer frühen experimentelle Regelsatz von Core Richt
 - 26425 ASSIGNING_TO_STATIC
 - 26499 NO_LIFETIME_TRACKING
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 [Verwenden der C++ wichtigsten Leitfäden](using-the-cpp-core-guidelines-checkers.md)

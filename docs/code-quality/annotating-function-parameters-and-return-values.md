@@ -528,7 +528,7 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
 
 [Blog des Code Analyseteams](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Einführung in SAL](../code-quality/understanding-sal.md)

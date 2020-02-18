@@ -120,7 +120,7 @@ Diese Makros entsprechen den Regelsätzen und werden in eine durch Leerzeichen g
 #pragma warning(default: CPPCORECHECK_CONST_WARNINGS)
 ```
 
-## <a name="attributes"></a>Attribute
+## <a name="attributes"></a>Attributes
 
 Der Microsoft C++ -Compiler bietet eingeschränkte Unterstützung für das gsl-Unterbrechungs Attribut. Sie kann verwendet werden, um Warnungen für Ausdrucks-und Block Anweisungen innerhalb einer Funktion zu unterdrücken.
 
