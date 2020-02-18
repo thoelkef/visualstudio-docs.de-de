@@ -2,7 +2,7 @@
 title: Weitere Informationen zum Debuggen von Multithreadanwendungen
 description: Debuggen mithilfe paralleler Stapel und paralleler Überwachungs Fenster in Visual Studio
 ms.custom: ''
-ms.date: 11/16/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e21d5174c9a909e9ad8031dfb7585abc52a7e78
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091794"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416406"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Einstieg in das Debuggen vonC#Multithreadanwendungen C++(, Visual Basic,)
 
@@ -42,7 +42,7 @@ Sie benötigen zunächst ein Multithread-Anwendungsprojekt. Ein Beispiel folgt.
 
    ::: moniker range=">=vs-2019"
 
-   Wenn das Startfenster nicht geöffnet ist, wählen Sie **Datei** > **Fenster Start**aus.
+   Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**.
 
    Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
@@ -67,7 +67,7 @@ Sie benötigen zunächst ein Multithread-Anwendungsprojekt. Ein Beispiel folgt.
 
    Geben Sie dann einen Namen wie " *mythleswalkyghapp* " ein, und klicken Sie auf **OK**.
 
-   Klicken Sie auf **OK**.
+   Wählen Sie **OK**.
    ::: moniker-end
 
    Ein neues Konsolenprojekt wird angezeigt. Nachdem das Projekt erstellt wurde, wird eine Quelldatei angezeigt. Abhängig von der Sprache, die Sie ausgewählt haben, kann die Quelldatei " *Program.cs*", " *mythleswalkyghapp. cpp*" oder " *Module1. vb*" genannt werden.
@@ -360,7 +360,7 @@ Sie können Breakpoints für verschiedene Bedingungen festlegen, z. b. den Threa
     > [!NOTE]
     > Wenn Sie den Debugger fortsetzen, werden alle Threads ausgeführt. Der Debugger unterbricht jedoch keinen Code in anderen Threads, es sei denn, einer der anderen Threads erreicht einen Haltepunkt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)

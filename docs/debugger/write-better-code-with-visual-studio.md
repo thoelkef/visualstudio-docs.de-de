@@ -4,7 +4,7 @@ description: Schreiben Sie mit weniger Fehlern besseren Code, indem Sie Visual S
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 01/24/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000176"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416385"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debuggingtechniken und-Tools, mit denen Sie besseren Code schreiben
 
@@ -40,16 +40,28 @@ Um diese Aufgaben zu veranschaulichen, zeigen wir einige der gängigsten Arten v
 
 Der folgende Code enthält einige Fehler, die Sie mithilfe der Visual Studio-IDE beheben können. Bei der App handelt es sich um eine einfache APP, die das Abrufen von JSON-Daten aus einem Vorgang simuliert, die Daten in ein Objekt deserialisiert und eine einfache Liste mit den neuen Daten aktualisiert.
 
-So erstellen Sie die App:
+Gehen Sie wie folgt vor, um die App zu erstellen:
 
-1. Öffnen Sie Visual Studio, und wählen Sie **Datei** > **Neues** > **Projekt**aus. Wählen **Sie C#unter Visualisierung** die Option **Windows-Desktop** oder **.net Core**aus, und wählen Sie dann im mittleren Bereich eine **Konsolen-App**aus.
+1. Sie müssen Visual Studio installiert haben und entweder die **plattformübergreifende .net Core-Entwicklung** oder die Arbeitsauslastung für die **.net-Desktop Entwicklung** , je nachdem, welcher App-Typ Sie erstellen möchten.
 
-    > [!NOTE]
-    > Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
-2. Geben Sie im Feld **Name** **Console_Parse_JSON** ein, und klicken Sie auf **OK**. Visual Studio erstellt daraufhin das Projekt.
+    Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...** . Der Visual Studio-Installer wird gestartet. Wählen Sie die Platt **Form übergreifende .net Core-Entwicklung** oder **.net-Desktop Entwicklung** aus, und wählen Sie dann **ändern**aus.
 
-3. Ersetzen Sie den Standard Code in der *Program.cs* -Datei des Projekts durch den unten stehenden Beispielcode.
+1. Öffnen Sie Visual Studio.
+
+    ::: moniker range=">=vs-2019"
+    Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Geben Sie **Console** in das Suchfeld ein, und wählen Sie dann entweder **Konsolen-app (.net Core)** oder **Konsolen-app (.NET Framework)** aus. Klicken Sie auf **Weiter**. Geben Sie einen Projektnamen wie **Console_Parse_JSON** ein, und klicken Sie auf **Erstellen**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Klicken Sie im linken Bereich des Dialog Felds **Neues Projekt** unter **Visual C#** auf Konsolen- **App**, und wählen Sie dann im mittleren Bereich entweder **Konsolen-app (.net Core)** oder **Konsolen-app (.NET Framework)** aus. Geben Sie einen Namen wie **Console_Parse_JSON** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
+
+    Wenn die Projektvorlage **Konsolen-app (.net Core)** oder **Konsolen-app (.NET Framework)** nicht angezeigt **wird, navigieren Sie zu Extras** > **Tools und Features**anzeigen, die die Visual Studio-Installer öffnen. Wählen Sie entweder die **plattformübergreifende .net Core-Entwicklung** oder die Arbeitsauslastung der **.net-Desktop Entwicklung** , und wählen Sie dann **ändern**.
+
+    Visual Studio erstellt das Konsolenprojekt, das im Projektmappen-Explorer (rechter Bereich) angezeigt wird.
+
+1. Ersetzen Sie den Standard Code in der *Program.cs* -Datei des Projekts durch den unten stehenden Beispielcode.
 
 ```csharp
 using System;
@@ -209,7 +221,7 @@ Um diesen Fehler zu beheben, ändern Sie den `points`-Member der `User`-Klasse v
 internal string points;
 ```
 
-in:
+Und zwar in diesen Code:
 
 ```csharp
 [DataMember]
@@ -241,7 +253,7 @@ Die grüne Wellenlinie wird entfernt.
 
 Wenn Sie alle roten Wellenlinien korrigiert und behoben oder zumindest untersucht haben (alle grünen Wellenlinien), können Sie den Debugger starten und die app ausführen.
 
-Drücken Sie die Taste **F5** (**Debuggen > Debuggen starten**), oder klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging").
+Drücken Sie **F5** (**Debuggen > Debugging starten**), oder klicken Sie auf der Symbolleiste Debuggen auf die Schaltfläche **Debugging starten** ![](../debugger/media/dbg-tour-start-debugging.png "Starten des Debuggens")
 
 An diesem Punkt löst die Beispiel-App eine `SerializationException` Ausnahme aus (ein Laufzeitfehler). Das heißt, die APP wählt die Daten aus, die Sie serialisieren möchten. Da Sie die APP im Debugmodus (Debugger angefügt) gestartet haben, führt die Ausnahme Unterstützung des Debuggers Sie direkt zu dem Code, der die Ausnahme ausgelöst hat, und gibt Ihnen eine hilfreiche Fehlermeldung.
 
@@ -251,7 +263,7 @@ Die Fehlermeldung weist Sie darauf hin, dass der Wert `4o` nicht als ganze Zahl 
 
 Wenn Sie auf eine Ausnahme reagieren, müssen Sie eine Reihe von Fragen stellen (und beantworten):
 
-* Handelt es sich bei dieser Ausnahme um einen Fehler, den Sie beheben können? Oder:
+* Handelt es sich bei dieser Ausnahme um einen Fehler, den Sie beheben können? Oder
 
 * Ist diese Ausnahme etwas, das Ihre Benutzer möglicherweise bemerken?
 
@@ -261,7 +273,7 @@ Wenn dies der erste ist, beheben Sie den Fehler. (In der Beispiel-App bedeutet d
 users = ser.ReadObject(ms) as User[];
 ```
 
-durch den folgenden:
+durch diesen Code:
 
 ```csharp
 try
@@ -300,7 +312,7 @@ Korrigieren Sie für die Beispiel-APP die `SerializationException` in der `GetJs
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Verdeutlichen Sie Ihre Code Absicht mithilfe von Assert.
 
-Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**). Dadurch wird die app in weniger Schritten neu gestartet. Im Konsolenfenster wird die folgende Ausgabe angezeigt.
+Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**). Dadurch wird die app in weniger Schritten neu gestartet. Im Konsolenfenster wird die folgende Ausgabe angezeigt.
 
 ![NULL-Wert in Ausgabe](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -336,7 +348,7 @@ Wenn Sie den Funktionen während des Entwicklungsprozesses `assert`-Anweisungen 
 
 Durch die Angabe der Absicht auf diese Weise erzwingen Sie Ihre Anforderungen. Dies ist eine einfache und praktische Methode, die Sie verwenden können, um während der Entwicklung Fehler zu beheben. (`assert`-Anweisungen werden auch als Hauptelement in Komponententests verwendet.)
 
-Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
+Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
 
 > [!NOTE]
 > Der `assert` Code ist nur in einem Debugbuild aktiv.
@@ -358,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-durch den folgenden:
+durch diesen Code:
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)
