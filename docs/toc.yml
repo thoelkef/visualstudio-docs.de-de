@@ -360,8 +360,10 @@
                   href: ide/reference/convert-get-method-to-property.md
                 - name: Konvertieren von lokalen Funktionen in Methoden
                   href: ide/reference/convert-local-function-method.md
-                - name: Konvertieren von foreach-Schleifen in LINQ
+                - name: Konvertieren von ForEach-Schleifen in LINQ
                   href: ide/reference/convert-foreach-linq.md
+                - name: Konvertieren der if-Anweisung in eine switch-Anweisung
+                  href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: Konvertieren einer LINQ-Abfrage in eine foreach-Anweisung
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: Konvertieren einer switch-Anweisung in einen switch-Ausdruck
@@ -398,7 +400,9 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: Umbenennen
                   href: ide/reference/rename.md
-                - name: Sortieren von Usings
+                - name: Vereinfachen der Zeichenfolgeninterpolation
+                  href: ide/reference/simplify-string-interpolation.md
+                - name: Using-Direktiven sortieren
                   href: ide/reference/sort-usings.md
                 - name: Teilen oder Zusammenführen von if-Anweisungen
                   href: ide/reference/split-or-merge-if-statement.md

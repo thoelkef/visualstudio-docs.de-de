@@ -27,7 +27,7 @@
 ### Tools
 #### [Einzelguthaben für Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Azure Pay-As-You-Go](vs-azure-payg.md)
+#### [Azure DevTest: nutzungsbasierte Zahlung](vs-azure-payg.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
@@ -84,7 +84,7 @@
 ### [Überlastungen](handle-overclaimed-license.md)
 ### [Maximale Nutzung](maximum-usage.md)
 ### [Abgelaufene Abonnements](handle-expired-license.md)
-### [Abonnenten mit Aliasen](aliasing.md)
+### [Anmeldeszenarios für Abonnenten](aliasing.md)
 ### [Abonnenten mit Anmeldungen über private E-Mail-Adressen](personal-email-sign-ins.md)
 ### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
 # Ressourcen
