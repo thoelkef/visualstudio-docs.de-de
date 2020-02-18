@@ -29,7 +29,7 @@ Wenn eine Anmerkung bedingt ist, sind möglicherweise andere Anmerkungen erforde
 ## <a name="structural-annotations"></a>Strukturelle Anmerkungen  
  Verwenden Sie die folgenden strukturellen Anmerkungen, um zu steuern, wann und wo Anmerkungen angewendet werden.  
   
-|Anmerkung|BESCHREIBUNG|  
+|Annotation|Beschreibung|  
 |----------------|-----------------|  
 |`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list`wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in der Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der nach Bedingung interpretiert wird.|  
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list`wird `expr` in der Vorbedingung interpretiert, wenn die Anmerkung in Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der Post-Bedingung interpretiert wird.<br /><br /> `iter` ist der Name einer Variablen, die auf die Anmerkung (einschließlich `anno-list`) festgelegt ist. `iter` hat einen impliziten Typ `long`. Identisch benannte Variablen in jedem einschließenden Bereich werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|  

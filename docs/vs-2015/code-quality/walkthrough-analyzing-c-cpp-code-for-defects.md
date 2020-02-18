@@ -38,7 +38,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
 - Kommentieren Sie den Quellcode, um die Code Fehleranalyse zu verbessern.  
   
-## <a name="prerequisites"></a>Voraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   

@@ -64,7 +64,7 @@ Möglicherweise möchten Sie festlegen, dass beim Quellcode-Check-In stets besti
 
 Sie können die in das Buildsystem integrierten Funktionen verwenden, um das Codeanalysetool im Rahmen des [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]-Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnellstart: Code Analyse für C/C++](quick-start-code-analysis-for-c-cpp.md)
 - [Exemplarische Vorgehensweise: analysierenC++ von C/Code auf Fehler](walkthrough-analyzing-c-cpp-code-for-defects.md)
