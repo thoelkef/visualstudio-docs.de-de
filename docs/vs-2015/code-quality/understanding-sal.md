@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Grundlagen von SAL  
  SAL definiert vier grundlegende Arten von Parametern, die nach Verwendungs Mustern kategorisiert werden.  
   
-|Category|Parameter Anmerkung|BESCHREIBUNG|  
+|Kategorie|Parameter Anmerkung|Beschreibung|  
 |--------------|--------------------------|-----------------|  
 |**Eingabe in aufgerufene Funktion**|`_In_`|Daten werden an die aufgerufene Funktion weitergegeben und als schreibgeschützt behandelt.|  
 |**Eingabe in aufgerufene Funktion und Ausgabe an Aufrufer**|`_Inout_`|Verwendbare Daten werden an die Funktion geleitet und potenziell geändert.|  

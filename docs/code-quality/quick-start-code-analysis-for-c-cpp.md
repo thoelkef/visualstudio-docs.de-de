@@ -36,7 +36,7 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
 
 Visual Studio enthält zwei Standardregelsätze für systemeigenen Code:
 
-|Regelsatz|BESCHREIBUNG|
+|Regelsatz|Beschreibung|
 |--------------|-----------------|
 |Von Microsoft empfohlene Mindestregeln für eigene Projekte|Dieser Regelsatz zielt auf die kritischsten Probleme in Ihrem nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.|
 |Von Microsoft empfohlene Regeln für eigene Projekte|Dieser Regelsatz umfasst eine Vielzahl von Problemen. Sie enthält alle Regeln in den von Microsoft empfohlenen Mindestregeln für eigene Projekte|
@@ -107,6 +107,6 @@ Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektm
 
 - So **Filtern Sie Warnungen nach Schweregrad**: Standardmäßig wird Code Analyse Nachrichten der Schweregrad " **Warnung**" zugewiesen. Sie können den Schweregrad von mindestens einer Nachricht als **Fehler** in einem benutzerdefinierten Regelsatz zuweisen. Wählen Sie in der Spalte **Schweregrad** des **Fehlerliste**den Dropdown Pfeil und dann das Filter Symbol aus. Wählen Sie **Warnung** oder **Fehler** aus, um nur die Nachrichten anzuzeigen, die dem jeweiligen Schweregrad zugewiesen sind. Wählen Sie **Alle auswählen** aus, um alle Meldungen anzuzeigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Code Analyse für C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

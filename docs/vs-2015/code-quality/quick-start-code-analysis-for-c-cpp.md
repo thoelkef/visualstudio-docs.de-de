@@ -66,7 +66,7 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
 ### <a name="standard-cc-rule-sets"></a>Standard-C/C++-Regelsätze  
  Visual Studio enthält zwei Standardregelsätze für systemeigenen Code:  
   
-|Regelsatz|BESCHREIBUNG|  
+|Regelsatz|Beschreibung|  
 |--------------|-----------------|  
 |Von Microsoft empfohlene Mindestregeln für eigene Projekte|Dieser Regelsatz zielt auf die kritischsten Probleme in Ihrem nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.|  
 |Von Microsoft empfohlene Regeln für eigene Projekte|Dieser Regelsatz umfasst eine Vielzahl von Problemen. Sie enthält alle Regeln in den von Microsoft empfohlenen Mindestregeln für eigene Projekte|  
