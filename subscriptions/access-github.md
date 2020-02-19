@@ -3,15 +3,15 @@ title: 'Angebot: Visual Studio kombiniert mit GitHub | Microsoft-Dokumentation'
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: Lernen Sie unser neues Angebot für Visual Studio in Kombination mit GitHub kennen.
-ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d8507667f214430513ba2ad84bbe787e5a042899
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238147"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439139"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
 
@@ -79,3 +79,10 @@ Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein volls
 
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie mit GitHub noch nicht vertraut sind, sehen Sie sich das [GitHub Learning Lab](https://lab.github.com/) an, das Sie durch eine Reihe lehrreicher und praktischer Projekte führt und dabei hilfreiches Feedback an Sie weitergibt.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
+
