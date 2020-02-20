@@ -9,41 +9,41 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: feae3dbc18f0b009b88872c05d43e9a6c280aef5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d590bf618693a5ced1aa17969b888c0fff130c4c
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656170"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476960"
 ---
 # <a name="schema-cache"></a>Schemacache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas bereit. Der Schemacache ist global für alle Benutzer auf dem Computer und enthält XML-Standardschemata, die für IntelliSense und die Validierung von XML-Dokumenten verwendet werden.
+Der XML-Editor stellt einen Schemacache im Verzeichnis {1}%InstallRoot%\Xml\Schemas{2} bereit. Der Schemacache ist global für alle Benutzer auf dem Computer und enthält XML-Standardschemata, die für IntelliSense und die Validierung von XML-Dokumenten verwendet werden.
 
  Der XML-Editor kann auch Schemas suchen, die sich in der Projekt Mappe befinden, Schemas, die im Feld **Schemas** des Dokument **Eigenschaften** Fensters angegeben sind, und Schemas, die durch die Attribute `xsi:schemaLocation` und `xsi:noNamespaceSchemaLocation` identifiziert werden.
 
  In der folgenden Tabelle werden die mit dem XML-Editor installierten Schemata beschrieben.
 
-|     Dateiname      |                                                      Beschreibung                                                      |
+|     Dateiname      |                                                      BESCHREIBUNG                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    catalog.xsd    |             Schema für Schemakatalogdateien des XML-Editors. Weitere Informationen zu den Schemakatalogen finden Sie weiter unten.             |
-| DotNetConfig.xsd  |                 Schema für Web. config-Dateien, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>".                 |
-|    msbuild.xsd    |              Schema für die MSBuild Make-Dateien, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
-|    msdata.xsd     | Schema für XSD-Anmerkungen, die von der <xref:System.Data.DataSet>-Klasse hinzugefügt werden, "urn:schemas-microsoft-com:xml-msdata". |
-|     msxsl.xsd     |                  Schema für Microsoft XSLT-Skriptblockerweiterungen, urn:schemas-microsoft-com:xslt.                   |
-| SnippetFormat.xsd |                 Schema für die XML-Dateien von Codeausschnitten. Beispiele finden Sie unter %InstallDir%\VC#\Expansions.                 |
-|    Soap1.1.xsd    |            Schema für SOAP (Simple Object Access Protocol) 1,1, http://schemas.xmlsoap.org/soap/envelope/.            |
+| DotNetConfig.xsd  |                 Schema für Web. config-Dateien, `http://schemas.microsoft.com/.NETConfiguration/v2.0`.                 |
+|    msbuild.xsd    |              Schema für die MSBuild-Dateien zum Erstellen von Dateien, `http://schemas.microsoft.com/developer/msbuild/2003`.              |
+|    msdata.xsd     | Schema für XSD-Anmerkungen, die von der <xref:System.Data.DataSet>-Klasse hinzugefügt werden, {2}"urn:schemas-microsoft-com:xml-msdata"{3}. |
+|     msxsl.xsd     |                  Schema für Microsoft XSLT-Skriptblockerweiterungen, {1}urn:schemas-microsoft-com:xslt{2}.                   |
+| SnippetFormat.xsd |                 Schema für die XML-Dateien von Codeausschnitten. Beispiele finden Sie unter {1}%InstallDir%\VC#\Expansions{2}.                 |
+|    Soap1.1.xsd    |            Schema für SOAP (Simple Object Access Protocol) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`.            |
 |    Soap1.2.xsd    |                                     Schema für Simple Object Access Protocol 1.2.                                     |
-| SiteMapSchema.xsd |            Schema für die ASP.net-Sitemap-XML-Datei, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>".             |
-|     wsdl.xsd      |                    Schema für die Webdienst-Beschreibungssprache, http://schemas.xmlsoap.org/wsdl/.                     |
-|     xenc.xsd      |                            Schema für die XML-Verschlüsselung, http://www.w3.org/2000/09/xmldsig#.                             |
-|     xhtml.xsd     |                                    Schema für XHTML- http://www.w3.org/1999/xhtml.                                     |
-|     xlink.xsd     |                                  Schema für XLink 1.0, http://www.w3.org/1999/xlink.                                   |
-|      xml.xsd      |              Schema, das XML: Space-und XML: lang-Attribute beschreibt, http://www.w3.org/XML/1998/namespace.               |
-|    xmlsig.xsd     |                        Schema für digitale XML-Signaturen, http://www.w3.org/2000/09/xmldsig#.                         |
-|   xsdschema.xsd   |                            Schema, das XSD selbst beschreibt, http://www.w3.org/2001/XMLSchema.                            |
-|     xslt.xsd      |                           Schema für XML-Transformationen, http://www.w3.org/1999/XSL/Transform.                            |
+| SiteMapSchema.xsd |            Schema für die ASP.net-Sitemap-XML-Datei, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`.             |
+|     wsdl.xsd      |                    Schema für die Webdienst-Beschreibungssprache, `http://schemas.xmlsoap.org/wsdl/`.                     |
+|     xenc.xsd      |                            Schema für die XML-Verschlüsselung, `http://www.w3.org/2000/09/xmldsig#`.                             |
+|     xhtml.xsd     |                                    Schema für XHTML-`http://www.w3.org/1999/xhtml`.                                     |
+|     xlink.xsd     |                                  Schema für XLink 1.0, `http://www.w3.org/1999/xlink`.                                   |
+|      xml.xsd      |              Schema, das XML: Space-und XML: lang-Attribute beschreibt, `http://www.w3.org/XML/1998/namespace`.               |
+|    xmlsig.xsd     |                        Schema für digitale XML-Signaturen, `http://www.w3.org/2000/09/xmldsig#`.                         |
+|   xsdschema.xsd   |                            Schema, das XSD selbst beschreibt, `http://www.w3.org/2001/XMLSchema`.                            |
+|     xslt.xsd      |                           Schema für XML-Transformationen, `http://www.w3.org/1999/XSL/Transform`.                            |
 
 ## <a name="updating-schemas-in-the-cache"></a>Aktualisieren von Schemata im Cache
  Der Editor lädt das Verzeichnis des Schemacache beim Laden des XML-Editorpakets und überwacht während der Ausführung alle Änderungen. Wenn ein Schema hinzugefügt wurde, wird es automatisch in einen Index bekannter Schemata im Speicher geladen. Wenn ein Schema entfernt wurde, wird es automatisch vom Index im Speicher entfernt. Wenn ein Schema aktualisiert wurde, wird es automatisch im speicherinternen Cache dieses Schemas für ungültig erklärt.
@@ -51,7 +51,7 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 > [!NOTE]
 > Da das Verzeichnis des Schemacaches für Ihren Computer global ist, sollten Sie hier nur standardmäßige Schemas hinzufügen, die für alle auf dem Computer erstellten Visual Studio-Projekte nützlich sind.
 
- Der XML-Editor unterstützt eine beliebige Anzahl von Schemakatalogdateien im Verzeichnis des Schemacaches. Schemakataloge können auf andere Speicherorte von Schemata zeigen, die dem Editor immer bekannt sein sollen. Die Datei catalog.xsd definiert das Format für die Katalogdatei und befindet sich im Verzeichnis des Schemacaches. Die Datei catalog.xml ist der Standardkatalog und enthält Links zu anderen Schemas in %InstallDir%. Nachfolgend finden Sie ein Beispiel für die Datei catalog.xml.
+ Der XML-Editor unterstützt eine beliebige Anzahl von Schemakatalogdateien im Verzeichnis des Schemacaches. Schemakataloge können auf andere Speicherorte von Schemata zeigen, die dem Editor immer bekannt sein sollen. Die Datei {1}catalog.xsd{2} definiert das Format für die Katalogdatei und befindet sich im Verzeichnis des Schemacaches. Die Datei {1}catalog.xml{2} ist der Standardkatalog und enthält Links zu anderen Schemas in {3}%InstallDir%.{4} Nachfolgend finden Sie ein Beispiel für die Datei {1}catalog.xml{2}.
 
 ```
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -69,7 +69,7 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 
 - ProgramFiles
 
-- Programs
+- Programme
 
 - CommonProgramFiles
 
@@ -85,18 +85,18 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>
 ```
 
- Der Katalog kann auch steuern, wie die Schemata den XML-Dokumenten mithilfe des speziellen `Association`-Elements zugeordnet werden. Dieses Element ordnet Schemas, die über keinen Zielnamespace verfügen, eine bestimmte Dateierweiterung zu. Dies ist nützlich, da der XML-Editor keine automatische Zuordnung für Schemas ausführt, die kein `targetNamespace`-Attribut aufweisen. Im folgenden Beispiel ordnet das `Association`-Element allen Dateien das dotNetConfig-Schema zu, die die config-Dateierweiterung aufweisen:
+ Der Katalog kann auch steuern, wie die Schemata den XML-Dokumenten mithilfe des speziellen `Association`-Elements zugeordnet werden. Dieses Element ordnet Schemas, die über keinen Zielnamespace verfügen, eine bestimmte Dateierweiterung zu. Dies ist nützlich, da der XML-Editor keine automatische Zuordnung für Schemas ausführt, die kein `targetNamespace`-Attribut aufweisen. Im folgenden Beispiel ordnet das `Association`-Element allen Dateien das {2}dotNetConfig{3}-Schema zu, die die {4}config{5}-Dateierweiterung aufweisen:
 
 ```
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>
 ```
 
 ## <a name="localized-schemas"></a>Lokalisierte Schemas
- In vielen Fällen enthält die Datei catalog.xml keine Einträge für lokalisierte Schemas. Sie können der Datei catalog.xml weitere Einträge hinzufügen, die auf das Verzeichnis der lokalisierten Schemas verweisen.
+ In vielen Fällen enthält die Datei {1}catalog.xml{2} keine Einträge für lokalisierte Schemas. Sie können der Datei {1}catalog.xml{2} weitere Einträge hinzufügen, die auf das Verzeichnis der lokalisierten Schemas verweisen.
 
  Im folgenden Beispiel wurde ein neues `Schema`-Element erstellt, das mithilfe der %LCID%-Variable auf das lokalisierte Schema verweist.
 
-```
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>
 ```
@@ -109,7 +109,7 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 
 #### <a name="to-change-the-schema-cache-location"></a>So ändern Sie den Speicherort für den Schemacache
 
-1. Wählen Sie **im Menü** Extras die **Option Optionen**aus.
+1. Wählen Sie **Optionen** im Menü **Extras**aus.
 
 2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und klicken Sie dann auf **Verschiedenes**.
 
@@ -119,7 +119,7 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>So fügen Sie ein anderes Verzeichnis für häufig verwendete Schemata hinzu
 
-1. Bearbeiten Sie die Datei catalog.xml im Verzeichnis des Schemacaches des XML-Editors.
+1. Bearbeiten Sie die Datei {1}catalog.xml{2} im Verzeichnis des Schemacaches des XML-Editors.
 
 2. Fügen Sie ein neues `<Catalog href="…"/>`-Element hinzu, das auf das Verzeichnis der zusätzlichen Schemata zeigt.
 
@@ -127,5 +127,5 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 
      Der Katalog wird automatisch neu geladen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Editor](../xml-tools/xml-editor.md)

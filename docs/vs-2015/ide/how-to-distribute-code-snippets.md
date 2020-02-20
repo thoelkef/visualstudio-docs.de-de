@@ -11,19 +11,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667962"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476986"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Gewusst wie: Verteilen von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die Ausschnitte mithilfe des Codeausschnitt-Managers auf ihren Computern installieren. Wenn Sie jedoch viele Ausschnitte verteilen möchten oder eine breitere Verteilung erforderlich ist, fügen Sie die Ausschnittdatei in eine Visual Studio-Erweiterung ein, die Benutzer von Visual Studio installieren können.
 
- Sie müssen das Visual Studio SDK installieren, um Visual Studio-Erweiterungen zu erstellen. Suchen Sie die Version von VSSDK, die Ihrer Visual Studio-Installation unter [Visual Studio 2015-Downloads](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)entspricht.
+ Sie müssen das Visual Studio SDK installieren, um Visual Studio-Erweiterungen zu erstellen. Suchen Sie die Version von VSSDK, die Ihrer Visual Studio-Installation unter [Visual Studio 2015-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/)entspricht.
 
 ## <a name="setting-up-the-extension"></a>Einrichten der Erweiterung
  In diesem Verfahren verwenden wir den „Hello World“-Codeausschnitt aus [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Wir stellen den SNIPPET-Text zur Verfügung, damit Sie ihn nicht selbst erstellen müssen.
@@ -64,7 +64,7 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
 
 3. Wählen Sie die .snippet-Datei im Projektmappen-Explorer aus, und stellen Sie sicher, dass im Fenster **Eigenschaften** für die Eigenschaft **Buildvorgang** die Einstellung **Inhalt** ausgewählt ist, für die Eigenschaft **In Ausgabeverzeichnis kopieren** die Einstellung **Immer kopieren** und für die Eigenschaft **Include in VSIX** die Einstellung **TRUE**.
 
-#### <a name="adding-the-pkgdef-file"></a>Hinzufügen der PKGDEF-Datei
+#### <a name="adding-the-pkgdef-file"></a>Hinzufügen der PKGDEF-Datei 
 
 1. Fügen Sie dem Ordner **HelloWorldVB** eine Textdatei hinzu, und nennen Sie sie **HelloWorldVB.pkgdef**. Diese Datei wird verwendet, um der Registrierung bestimmte Schlüssel hinzufügen. In diesem Fall fügt er unter folgendem Pfad einen neuen Schlüssel hinzu:
 
@@ -102,5 +102,5 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Codeausschnitte](../ide/code-snippets.md)

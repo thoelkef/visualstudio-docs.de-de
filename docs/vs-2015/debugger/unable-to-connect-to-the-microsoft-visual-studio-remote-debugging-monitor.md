@@ -1,5 +1,5 @@
 ---
-title: Keine Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor | Microsoft-Dokumentation
+title: Es kann keine Verbindung mit dem Microsoft Visual Studio Remotedebugmonitor hergestellt werden | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684834"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477064"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65684834"
 Diese Fehlermeldung wird angezeigt, wenn Sie im Dialogfeld **An den Prozess anhängen** einen ungültigen Namen des Visual Studio-Remotedebugmonitors eingeben. Der Remotedebugmonitor-Name entspricht gewöhnlich dem Namen des Computers, zu dem Sie für das Remotedebuggen eine Verbindung herstellen möchten. Diese Fehlermeldung kann verschiedene Ursachen haben: Entweder der Remotecomputer ist im Netzwerk nicht vorhanden, der Remotedebugmonitor ist auf dem Remotecomputer nicht ordnungsgemäß eingerichtet, oder auf den Remotecomputer kann aufgrund von Netzwerkproblemen bzw. wegen einer Firewall nicht zugegriffen werden.  
   
 > [!IMPORTANT]
-> Wenn Sie der Ansicht sind, dass Sie diese Meldung aufgrund eines Produktfehlers erhalten haben, melden Sie das Problem bitte an Visual Studio [Lächeln senden](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Wenn Sie weitere Hilfe benötigen, erfahren Sie unter [Talk to Us](../ide/talk-to-us.md) , wie Sie Kontakt mit Microsoft aufnehmen.  
+> Wenn Sie weitere Hilfe benötigen, erfahren Sie unter [Talk to Us](../ide/talk-to-us.md) , wie Sie Kontakt mit Microsoft aufnehmen.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Ich habe diese Meldung beim lokalen Debuggen erhalten  
  Wenn Sie diese Meldung beim lokalen Debuggen erhalten, kann dies an Ihrer Antivirussoftware oder einer Drittanbieter-Firewall liegen. Visual Studio ist eine 32-Bit-Anwendung, die zum Debuggen von 64-Bit-Anwendungen die 64-Bit-Version des Remotedebuggers verwendet. Die beiden Prozesse kommunizieren über das lokale Netzwerk innerhalb des lokalen Computers. Kein Netzwerkdatenverkehr verlässt den Computer, aber es ist möglich, dass Drittanbieter-Sicherheitssoftware die Kommunikation blockiert.  
@@ -38,7 +38,7 @@ Diese Fehlermeldung wird angezeigt, wenn Sie im Dialogfeld **An den Prozess anh�
   
 ## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Stellen Sie sicher, dass der Visual Studio-Remotedebugmonitor auf dem Remotecomputer installiert ist und ausgeführt wird. Weitere Informationen zu den Remotedebugger und zur Installation, finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).  
+- Stellen Sie sicher, dass der Visual Studio-Remotedebugmonitor auf dem Remotecomputer installiert ist und ausgeführt wird. Weitere Informationen zum Remote Debugger und dessen Installation finden Sie unter [Remote Debugging](../debugger/remote-debugging.md).  
   
 - Zeigen Sie in Visual Studio die Projekteigenschaften an (**Projekt / Eigenschaften / Debugging**). Stellen Sie sicher, dass der **Remoteservername** richtig ist.  
   
@@ -48,9 +48,10 @@ Diese Fehlermeldung wird angezeigt, wenn Sie im Dialogfeld **An den Prozess anh�
  Versuchen Sie, eine [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) -Anforderung an den Remotecomputer zu senden. Wenn Sie keine Antwort auf die ping-Anforderung erhalten, können auch die Remotetools keine Verbindung herstellen. Versuchen Sie, den Remotecomputer neu zu starten, und stellen Sie sicher, dass er ordnungsgemäß im Netzwerk konfiguriert ist.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Die Version des Remotedebuggers stimmt nicht mit der Version von Visual Studio überein  
- Die lokal ausgeführte Version von Visual Studio muss mit der Version des Remotedebugmonitors übereinstimmen, der auf dem Remotecomputer ausgeführt wird. Um dieses Problem zu beheben, laden Sie die passende Version des Remotedebugmonitors herunter, und installieren Sie sie. Wechseln Sie zum [Download Center](http://www.microsoft.com/download) , um die richtige Version des Remotedebuggers zu finden.  
-  
+ Die lokal ausgeführte Version von Visual Studio muss mit der Version des Remotedebugmonitors übereinstimmen, der auf dem Remotecomputer ausgeführt wird. Um dieses Problem zu beheben, laden Sie die passende Version des Remotedebugmonitors herunter, und installieren Sie sie. Wechseln Sie zu [Visual Studio-Abonnements](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) , um die richtige Version des Remote Debuggers für Ihre Version von Visual Studio zu finden.
+
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Der lokale Computer und der Remotecomputer weisen unterschiedliche Authentifizierungsmodi auf  
+
  Der lokale Computer und der Remotecomputer müssen den gleichen Authentifizierungsmodus verwenden. Um dieses Problem zu beheben, müssen Sie sicherstellen, dass beide Computer den gleichen Authentifizierungsmodus verwenden. Sie können den Authentifizierungsmodus für den Remotedebugger im Dialogfeld **Extras / Optionen** ändern.  
   
  Weitere Informationen zu den Authentifizierungsmodi finden Sie unter [Übersicht über die Windows-Authentifizierung](https://technet.microsoft.com/library/hh831472.aspx).  
@@ -83,5 +84,5 @@ Diese Fehlermeldung wird angezeigt, wenn Sie im Dialogfeld **An den Prozess anh�
   
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
-## <a name="see-also"></a>Siehe auch  
- [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Remotedebuggen](../debugger/remote-debugging.md)

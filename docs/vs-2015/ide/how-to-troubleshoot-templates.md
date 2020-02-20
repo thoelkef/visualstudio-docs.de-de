@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670604"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477081"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Gewusst wie: Problembehandlung bei Vorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Wenn keine Vorlage in der Entwicklungsumgebung geladen werden kann, gibt es eini
 5. Stellen Sie sicher, dass das XML-Format der VSTEMPLATE-Datei dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Vorlagenschema folgt. Weitere Informationen zum VSTEMPLATE-Schema finden Sie in der [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Fügen Sie dem `VSTemplate`-Element ein `xmlns`-Attribut hinzu, und weisen Sie diesem den Wert http://schemas.microsoft.com/developer/vstemplate/2005 zu, um die IntelliSense-Unterstützung während der Erstellung der VSTEMPLATE-Datei zu nutzen.
+    > Fügen Sie dem `xmlns`-Element ein `VSTemplate`-Attribut hinzu, und weisen Sie diesem den Wert `http://schemas.microsoft.com/developer/vstemplate/2005` zu, um die IntelliSense-Unterstützung während der Erstellung der VSTEMPLATE-Datei zu nutzen.
 
 6. Speichern und schließen Sie die VSTEMPLATE-Datei.
 
@@ -58,9 +58,9 @@ Wenn keine Vorlage in der Entwicklungsumgebung geladen werden kann, gibt es eini
 
 2. Klicken Sie im linken Bereich auf **Anwendung**.
 
-3. Suchen Sie mit dem **Quellwert** `Visual Studio - VsTemplate` nach Ereignissen.
+3. Suchen Sie mit dem **Quellwert**`Visual Studio - VsTemplate` nach Ereignissen.
 
 4. Doppelklicken Sie auf ein Vorlagenereignis, um den Fehler anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md) [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) [Schema Referenz zu Visual Studio](../extensibility/visual-studio-template-schema-reference.md) -Vorlagen
