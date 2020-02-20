@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: C++-App debuggen
       href: quickstart-debug-with-cplusplus.md
-    - name: Debuggen einer ASP.NET-App
+    - name: Debuggen einer ASP.NET Core-App
       href: quickstart-debug-aspnet.md
 - name: Tutorials
   items:
