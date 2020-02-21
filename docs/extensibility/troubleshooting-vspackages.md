@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718712"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506397"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSPackage und Tipps zum Beheben der Probleme haben.
@@ -27,7 +27,7 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
 
    Wenn Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus starten möchten, geben Sie an einer Eingabeaufforderung **devenv. exe/safemode**ein.
 
-   Während dieses Vorgangs werden keine VSPackages geladen, außer den VSPackages, die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] enthalten sind.
+   Während dieses Vorgangs werden keine VSPackages geladen, außer den VSPackages, die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]enthalten sind.
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>So beheben Sie Probleme mit einem VSPackage, das nicht geladen wird
 
@@ -35,7 +35,7 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
 
     Weitere Informationen finden Sie in [der experimentellen Instanz](../extensibility/the-experimental-instance.md).
 
-2. Wenn das VSPackage für die Ausführung im experimentellen Registrierungs Stamm bestimmt ist, stellen Sie sicher, dass Sie die experimentelle Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausführen.
+2. Wenn das VSPackage für die Ausführung im experimentellen Registrierungs Stamm bestimmt ist, stellen Sie sicher, dass Sie die experimentelle Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ausführen.
 
     Um die experimentelle Version auszuführen, geben Sie Folgendes in einem Befehlsfenster ein: **devenv/rootsuffix Exp**.
 
@@ -66,7 +66,7 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
 
    1. Suchen Sie im Abschnitt "Pakete" der Registrierung nach der CLSID des VSPackage:
 
-        Hklm\software\microsoft\visual Studio \\ *\<version >* \packages
+        Hklm\software\microsoft\visual Studio\\ *\<Version >* \packages
 
    2. Überprüfen Sie, ob der durch den Unterschlüssel satellitedll angegebene Pfad richtig ist.
 
@@ -99,7 +99,7 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
 
     2. Fügen Sie den **Speicherort der Symbol Datei (PDB-Datei)** hinzu:
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. Geben Sie zum Verbessern der Leistung einen Symbol Cache Ordner an, z. b.:
 
@@ -119,9 +119,9 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
 
 2. Für nicht verwalteten Code suchen Sie die CLSID des VSPackage im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID-Registrierungs Knoten:
 
-    Hklm\software\microsoft\visual Studio \\ *\<version >* \CLSID
+    Hklm\software\microsoft\visual Studio\\ *\<Version >* \CLSID
 
    Stellen Sie sicher, dass der InprocServer32-Eintrag über den richtigen Pfad der VSPackage-dll verfügt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSPackages](../extensibility/internals/vspackages.md)

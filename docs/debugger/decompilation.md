@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144786"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506512"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Quellcode aus .NET-Assemblys beim Debuggen generieren
 
@@ -82,13 +82,13 @@ Beim dekompilieren von Code, der aus einer Assembly dekompiliert wurde, die mith
 - Lokale Variablen weisen möglicherweise keine genauen Namen auf.
 - Einige Variablen sind möglicherweise nicht für die Auswertung verfügbar.
 
-Weitere Informationen finden Sie im GitHub-Problem: [ichsarpcompiler. Decompiler-Integration in VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+Weitere Informationen finden Sie im GitHub-Problem: [icsharpcode. Decompiler-Integration in VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="decompilation-reliability"></a>Zuverlässigkeit der Kompilierung
 
 Ein relativ kleiner Prozentsatz der aufkompilierungs Versuche kann zu einem Fehler führen. Dies liegt an einem Sequenz Punkt-NULL-Verweis-Fehler in ilspy.  Wir haben den Fehler verringert, indem wir diese Probleme abgefangen und den dekompilierungs Versuch ordnungsgemäß durchgeführt haben.
 
-Weitere Informationen finden Sie im GitHub-Problem: [ichsarpcompiler. Decompiler-Integration in VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+Weitere Informationen finden Sie im GitHub-Problem: [icsharpcode. Decompiler-Integration in VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="limitations-with-async-code"></a>Einschränkungen bei Async-Code
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetSymbolPath | Microsoft-Dokumentation
+title: 'IDebugEngine3:: setsymbolpath | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da2318e9e2e30ea4cf0dce4bef6abd03aef2b0d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0fe3000804971c8bd8cbf896a592bd11b875bfa8
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352475"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506388"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Legt fest, den Pfad oder die Pfade, die für das Debuggen von Symbolen durchsucht werden.
+Legt den Pfad oder die Pfade fest, die nach Debugsymbolen durchsucht werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,28 +46,28 @@ int SetSymbolPath(
 ## <a name="parameters"></a>Parameter
 
 `szSymbolSearchPath`\
-[in] Eine Zeichenfolge mit den Symbolsuchpfad oder die Pfade. Einzelheiten finden Sie unter "Hinweise". Darf nicht NULL sein.
+in Zeichenfolge, die den Pfad oder die Pfade der Symbol Suche enthält. Weitere Informationen finden Sie unter "Hinweise". Lässt keine NULL-Werte zu.
 
 `szSymbolCachePath`\
-[in] Eine Zeichenfolge mit den lokalen Pfad, in dem Symbole zwischengespeichert werden können. Darf nicht NULL sein.
+in Zeichenfolge, die den lokalen Pfad enthält, in dem Symbole zwischengespeichert werden können Lässt keine NULL-Werte zu.
 
 `Flags`\
-[in] Nicht verwendet. immer auf 0 festgelegt.
+in Nicht verwendet; immer auf 0 festgelegt.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Zeichenfolge `szSymbolSearchPath` ist eine Liste von einem oder mehreren Pfaden, getrennt durch ein Semikolon nach Symbolen sucht. Diese Pfade können es sich um einen lokalen Pfad, einen UNC-Format-Pfad oder eine URL sein. Diese Pfade können auch eine Mischung verschiedener Domänentypen sein. Wenn der Pfad UNC ist (z. B. \\\Symserver\Symbols), und klicken Sie dann die Debug-Engine bestimmt werden soll, wenn der Pfad auf einem Symbolserver und sollte in der Lage, laden Symbole von diesem Server, und speichern Sie sie in der Pfadangabe von `szSymbolCachePath`.
+## <a name="remarks"></a>Bemerkungen
+ Die Zeichenfolge `szSymbolSearchPath` ist eine Liste mit einem oder mehreren durch Semikolons getrennten Pfaden, um nach Symbolen zu suchen. Diese Pfade können ein lokaler Pfad, ein UNC-Pfad oder eine URL sein. Diese Pfade können auch eine Mischung verschiedener Typen sein. Wenn der Pfad UNC ist (z. b. \\\symserver\symbols), sollte die Debug-Engine bestimmen, ob der Pfad zu einem Symbol Server ist, und dass Sie in der Lage sein soll, Symbole von diesem Server zu laden und diese im durch `szSymbolCachePath`angegebenen Pfad zwischenzuspeichern.
 
- Der Symbolpfad kann auch eine oder mehrere cachespeicherorte enthalten. Caches sind in der Reihenfolge ihrer Priorität, mit der höchsten Priorität Cache zuerst aufgeführt und getrennt von * Symbole. Zum Beispiel:
+ Der Symbol Pfad kann auch einen oder mehrere Cache Speicherorte enthalten. Caches werden in der Prioritäts Reihenfolge aufgelistet, wobei der Cache mit der höchsten Priorität zuerst und durch * Symbole getrennt ist. Beispiel:
 
 ```
-\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com
+\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com
 ```
 
- Die [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) Methode führt die tatsächliche Last der Symbole.
+ Die [loadsymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) -Methode führt die tatsächliche Auslastung der Symbole aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
