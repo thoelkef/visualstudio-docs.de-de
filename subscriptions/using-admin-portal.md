@@ -33,7 +33,7 @@ Sobald Sie Abonnements zugewiesen haben, erhalten Sie auf der Registerkarte „A
 - Das Ablaufdatum des Abonnements
 - Eine optionale Beschreibung in Textform
 - Ein Hinweis, ob „Downloads für Abonnenten“ aktiviert oder deaktiviert wurde
-- Das Land, in dem der Benutzer sich befindet
+- Das Land/die Region, in dem/der der Benutzer sich befindet
 - Die Sprache, in der der Benutzer die durch das Verwaltungsportal versendete Zuweisungs-E-Mail erhalten möchte
 - Ein optionales Feld für eine weitere E-Mail-Adresse, die zur E-Mail-Kommunikation, aber nicht zum Einloggen genutzt wird
 

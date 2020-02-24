@@ -27,7 +27,7 @@ Ein CODE Magazine-Abonnement einzurichten ist einfach.  Führen Sie folgende Sch
 3. Es wird eine Meldung angezeigt, dass Ihr Code abgerufen wurde.  Klicken Sie zum Fortfahren auf **Activate** (Aktivieren).  (Wenn Sie noch nicht dazu bereit sind, ist das kein Problem.  Sie können jederzeit zu der Kachel zurückkehren, um den Code zu aktivieren.  Nachdem Sie den Code abgerufen haben, wird anstelle des Links „Code abrufen“ die Schaltfläche „Aktivieren“ angezeigt.)
    > [!div class="mx-imgBorder"]
    > ![CODE Magazine – abgerufener Code](_img/vs-code-magazine/vs-code-magazine-success.png "Code erfolgreich abgerufen")
-4. Sie werden auf die Angebotsseite des CODE Magazine umgeleitet. Wählen Sie Ihr Land aus und die Form, in der Sie das Magazin erhalten möchten. 
+4. Sie werden auf die Angebotsseite des CODE Magazine umgeleitet. Wählen Sie Ihr Land/Ihre Region aus und die Form, in der Sie das Magazin erhalten möchten. 
    > [!NOTE]
    > Visual Studio Dev Essentials-Mitglieder haben nur Zugriff auf das digitale Abonnement. 
 5. Je nach getroffener Auswahl wird ein Hinweis mit dem Preis Ihres Abonnements sowie dem Betrag des angewendeten Gutscheins angezeigt.

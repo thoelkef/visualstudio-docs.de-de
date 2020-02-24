@@ -38,7 +38,7 @@ Beschreibungen auf Produktebene: Erweitern Sie **Nicht verfügbare Supportpläne
 2. Dadurch wird eine Chatsitzung mit einem Mitarbeiter gestartet, der Ihre **Vertrags-ID** und Ihre **Zugriffs-ID** erstellen und diese für Ihre Unterlagen per E-Mail bereitstellen kann.
 
 3. Sie müssen dem Mitarbeiter Folgendes angeben, um den Vorgang abzuschließen:
-   - Ihr Land
+   - Ihr Land/Ihre Region
    - Firmenname
    - Ihr vollständiger Name
    - Die E-Mail Adresse, die Sie für die Anmeldung bei Ihrem Abonnement verwenden.
@@ -51,7 +51,7 @@ Beschreibungen auf Produktebene: Erweitern Sie **Nicht verfügbare Supportpläne
 4. Nach diesem Prozess erhalten Sie eine E-Mail mit Ihrer **Vertrags-ID** und **Zugriffs-ID**, die Sie verwenden können, wenn Sie ein Support-Incident erstellen möchten.  Außerdem werden Anweisungen für die Übermittlung von Supportfällen mithilfe ihrer neuen Zugriffs- und Vertrags-ID bereitgestellt. 
 
 > [!NOTE]
-> Wählen Sie Ihr Land aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.
+> Wählen Sie Ihr Land/Ihre Region aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Einreichen eines Incidents mithilfe Ihres Vorteils
 Sobald Ihre **Vertrags-ID** und **Zugriffs-ID** eingerichtet wurden, können Sie diese verwenden, um [online](https://support.microsoft.com/oas/) einen technischen Support-Incident einzureichen (Anmeldung erforderlich), oder über das [Azure-Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview), oder, indem Sie die Nummer des technischen Supports für Ihr Land anrufen. Wenn Sie einen Incident online einreichen, kann Sie ein Microsoft-Support-Experte anrufen.
