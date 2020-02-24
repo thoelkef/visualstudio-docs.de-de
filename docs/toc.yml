@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Hinzufügen eines Parameters zur Methode
                   href: ide/reference/add-parameter.md
+                - name: Generieren eines privaten Felds aus einem Konstruktor
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: Generieren einer Überschreibung
                   href: ide/reference/generate-override.md
                 - name: Generieren von Equals- und GetHashCode-Methodenüberschreibungen
@@ -374,7 +376,9 @@
                   href: ide/reference/extract-interface.md
                 - name: Methode extrahieren
                   href: ide/reference/extract-method.md
-                - name: Generieren des Parameters
+                - name: Extrahieren einer lokalen Funktion
+                  href: ide/reference/extract-local-function.md
+                - name: Parameter generieren
                   href: ide/reference/generate-parameter.md
                 - name: Einbetten einer temporären Variablen
                   href: ide/reference/inline-temporary-variable.md
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: Refactoringoptionen für statische lokale Funktionen
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: Festlegen eines Members als statisch
+                  href: ide/reference/make-member-static.md
                 - name: Verschieben der Deklaration in Verweisnähe
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Verschieben eines Typs in passende Datei
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 'Nicht verwendete Wertzuweisungen, Variablen und Parameter'
                   href: ide/reference/unused-values-parameters.md
-                - name: Umschließen und Ausrichten von Aufrufketten
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 'Umschließen, Einziehen und Ausrichten von Parametern'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 'Umschließen, Einziehen und Ausrichten von Refactorings'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 'Exemplarische Vorgehensweise: Generieren von Code aus Verwendung'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
