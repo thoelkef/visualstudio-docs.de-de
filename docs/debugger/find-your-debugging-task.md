@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599292"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578767"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Suchen Ihres debugtasks in Visual Studio
 
@@ -75,7 +75,7 @@ Dies können Sie erreichen, indem Sie [im Fenster Disassembly einen Haltepunkt f
 
 Weitere Informationen finden Sie unter [Navigieren im Code mit dem Debugger](navigating-through-code-with-the-debugger.md).
 
-## <a name="inspect-data"></a>Untersuchen von Daten
+## <a name="inspect-data"></a>Überprüfen von Daten
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Überprüfen Sie beim Ausführen der APP den Wert der Variablen.
 
@@ -101,7 +101,7 @@ Verwenden Sie C++für Native das [natvis-Framework](create-custom-views-of-nativ
 
 Informationen zum Konfigurieren von Debuggeroptionen und debuggerprojekteinstellungen finden Sie unter [Debugger-Einstellungen und-Vorbereitung](debugger-settings-and-preparation.md).
 
-## <a name="additional-tasks"></a>Weitere Aufgaben
+## <a name="additional-tasks"></a>Zusätzliche Aufgaben
 
 ### <a name="fix-an-exception"></a>Beheben einer Ausnahme
 
@@ -130,3 +130,7 @@ Siehe [Anfügen an einen laufenden Prozess](attach-to-running-processes-with-the
 ### <a name="debug-multithreaded-applications"></a>Debuggen von Multithreadanwendungen
 
 Siehe [Debuggen von Multithreadanwendungen](debug-multithreaded-applications-in-visual-studio.md).
+
+### <a name="fix-performance-issues"></a>Beheben der Leistungsprobleme
+
+Siehe [erster Einblick in die Profil](../profiling/profiling-feature-tour.md) Erstellungs Tools
