@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b53a71a0a8215ae6bc9af47f9fe2a0ff911b5
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b1d2512c14c0630d2268adfa465e092555150943
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806877"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557866"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und die Bereitstellung einen Dateityp enthält, den Windows nicht erkennt (z. b. eine Microsoft Word-Datei), lehnt IIS die Übertragung dieser Datei ab, und die Bereitstellung kann nicht erfolgreich ausgeführt werden.
@@ -49,7 +49,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce und Proxy Authentifizierung
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Unterstützung für die integrierte Windows-Proxy Authentifizierung ab .NET Framework 3,5. Bestimmte Machine. config-Direktiven sind nicht erforderlich. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet keine Unterstützung für andere Authentifizierungsprotokolle, wie z. b. Basic oder Digest.
 
- Sie können auch einen Hotfix auf .NET Framework 2,0 anwenden, um dieses Feature zu aktivieren. Weitere Informationen finden Sie unter http://go.microsoft.com/fwlink/?LinkId=158730.
+ Sie können auch einen Hotfix auf .NET Framework 2,0 anwenden, um dieses Feature zu aktivieren. Weitere Informationen finden Sie unter [Fix: Fehlermeldung beim Versuch, eine ClickOnce-Anwendung zu installieren, die Sie im .NET Framework 2,0 auf einem Client Computer erstellt haben, der für die Verwendung eines Proxy Servers konfiguriert ist: "Proxy Authentifizierung erforderlich"](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that).
 
  Weitere Informationen finden Sie unter [\<defaultProxy >-Element (Netzwerkeinstellungen)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
@@ -75,7 +75,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ```
 
 > [!NOTE]
-> Sie können die NTLM-Authentifizierung (NT Challenge-Response) aktivieren, wenn der Standort andere Anmelde Informationen als die Standard Anmelde Informationen anfordert, und Sie im Dialogfeld Sicherheit auf **OK** klicken, wenn Sie dazu aufgefordert werden, die angegebenen Anmelde Informationen zu speichern. zukünftige Sitzungen. Diese Problem Umgehung funktioniert jedoch nicht bei der Standard Authentifizierung.
+> Sie können die NTLM-Authentifizierung (NT Challenge-Response) aktivieren, wenn die Website zur Eingabe von Anmelde Informationen verwendet, die nicht Ihren Standard Anmelde Informationen entsprechen, und Sie im Dialogfeld Sicherheit auf **OK** klicken, wenn Sie dazu aufgefordert werden, die angegebenen Anmelde Informationen für zukünftige Sitzungen zu speichern. Diese Problem Umgehung funktioniert jedoch nicht bei der Standard Authentifizierung.
 
 ## <a name="use-third-party-web-servers"></a>Verwenden von Drittanbieter-Webservern
  Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung von einem anderen Webserver als IIS bereitstellen, tritt möglicherweise ein Problem auf, wenn der Server den falschen Inhaltstyp für Schlüssel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien zurückgibt, wie z. b. das Bereitstellungs Manifest und das Anwendungs Manifest. Um dieses Problem zu beheben, finden Sie in der Hilfe Dokumentation Ihres Webservers Informationen zum Hinzufügen neuer Inhaltstypen zum Server, und stellen Sie sicher, dass alle in der folgenden Tabelle aufgeführten Dateinamen-Erweiterungs Zuordnungen vorhanden sind.
@@ -94,7 +94,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll wird für die Installation von Anwendungen nicht unterstützt
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] unterstützt die Installation von Anwendungen von einem beliebigen HTTP 1,1-Webserver oder-Dateiserver. FTP, die Dateiübertragungsprotokoll, wird für die Installation von Anwendungen nicht unterstützt. Sie können FTP nur zum Veröffentlichen von Anwendungen verwenden. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:
 
-| URL-Typ | Beschreibung |
+| URL-Typ | BESCHREIBUNG |
 |----------| - |
 | ftp:// | Sie können eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mithilfe dieses Protokolls veröffentlichen. |
 | http:// | Mithilfe dieses Protokolls können Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung installieren. |
@@ -118,7 +118,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 
 - Wenn Sie einen MIME-Typ mit der Erweiterung "<em>" und dem MIME-Typ "Application/Octett-Stream" erstellen, können Dateien des nicht blockierten Dateityps heruntergeladen werden. (Blockierte Dateitypen wie "*. aspx</em> " und " *. asmx* " können jedoch nicht heruntergeladen werden.)
 
-  Spezifische Anweisungen zum Konfigurieren von MIME-Typen unter Windows Server finden Sie im Microsoft Knowledge Base-Artikel KB326965, "IIS 6,0 bedient keine unbekannten MIME-Typen" unter [http://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
+  Spezifische Anweisungen zum Konfigurieren von MIME-Typen unter Windows Server finden [Sie unter Hinzufügen eines MIME-Typs zu einer Website oder Anwendung](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).
 
 ## <a name="content-type-mappings"></a>Inhaltstyp Zuordnungen
  Beim Veröffentlichen über HTTP sollte der Inhaltstyp (auch als MIME-Typ bezeichnet) für die *Anwendungs* Datei "application/x-ms-application" lauten. Wenn Sie .NET Framework 2,0 auf dem Server installiert haben, wird dieser automatisch für Sie festgelegt. Wenn dies nicht installiert ist, müssen Sie eine MIME-Typzuordnung für den [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Application vroot (oder den gesamten Server) erstellen.
@@ -132,7 +132,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 
  Ausführliche Anweisungen für IIS finden Sie unter [Angeben zusätzlicher Dokumenttypen für die HTTP-Komprimierung](https://support.microsoft.com/help/234497).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)

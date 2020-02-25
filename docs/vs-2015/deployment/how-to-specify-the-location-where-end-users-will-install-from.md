@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476907"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557984"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Gewusst wie: Angeben des Speicherorts für die Installation durch Endbenutzer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Wenn Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung v
   
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3. Geben Sie im Feld Installations-URL den Installations Speicherort mithilfe einer voll qualifizierten URL im Format https://www.microsoft.com/ApplicationNameein, oder verwenden Sie einen UNC-Pfad im Format \\\server\applicationname.  
+3. Geben Sie im Feld Installations-URL den Installations Speicherort mithilfe einer voll qualifizierten URL im Format `https://www.contoso.com/ApplicationName`ein, oder verwenden Sie einen UNC-Pfad mit dem Format `\\Server\ApplicationName`.  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Vorgehensweise: Angeben des Speicherorts, an den Visual Studio die Dateien kopiert](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

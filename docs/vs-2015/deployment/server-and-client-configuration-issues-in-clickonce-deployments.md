@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f8e5054b4da0122c40c3ad62cfebcace973f7b20
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918812"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558010"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
   
 - APPLICATION  
   
-- MANIFEST  
+- .manifest  
   
 - DEPLOY  
   
@@ -52,7 +52,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce und Proxy Authentifizierung  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bietet Unterstützung für die integrierte Windows-Proxy Authentifizierung ab .NET Framework 3,5. Bestimmte Machine. config-Direktiven sind nicht erforderlich. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bietet keine Unterstützung für andere Authentifizierungsprotokolle, wie z. b. Basic oder Digest.  
   
- Sie können auch einen Hotfix auf .NET Framework 2,0 anwenden, um dieses Feature zu aktivieren. Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Sie können auch einen Hotfix auf .NET Framework 2,0 anwenden, um dieses Feature zu aktivieren. Weitere Informationen finden Sie unter [Fix: Fehlermeldung beim Versuch, eine ClickOnce-Anwendung zu installieren, die Sie im .NET Framework 2,0 auf einem Client Computer erstellt haben, der für die Verwendung eines Proxy Servers konfiguriert ist: "Proxy Authentifizierung erforderlich"](https://support.microsoft.com/en-in/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that). 
   
  Weitere Informationen finden Sie unter [\<defaultProxy >-Element (Netzwerkeinstellungen)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
@@ -83,7 +83,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ## <a name="using-third-party-web-servers"></a>Verwenden von Drittanbieter-Webservern  
  Wenn Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung von einem anderen Webserver als IIS bereitstellen, tritt möglicherweise ein Problem auf, wenn der Server den falschen Inhaltstyp für Schlüssel [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Dateien zurückgibt, wie z. b. das Bereitstellungs Manifest und das Anwendungs Manifest. Um dieses Problem zu beheben, finden Sie in der Hilfe Dokumentation Ihres Webservers Informationen zum Hinzufügen neuer Inhaltstypen zum Server, und stellen Sie sicher, dass alle in der folgenden Tabelle aufgeführten Dateinamen-Erweiterungs Zuordnungen vorhanden sind.  
   
-|Dateinamenerweiterung|Art des Inhalts|  
+|Dateinamenerweiterung|Inhaltstyp|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -97,7 +97,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll wird für die Installation von Anwendungen nicht unterstützt  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] unterstützt die Installation von Anwendungen von einem beliebigen HTTP 1,1-Webserver oder-Dateiserver. FTP, die Dateiübertragungsprotokoll, wird für die Installation von Anwendungen nicht unterstützt. Sie können FTP nur zum Veröffentlichen von Anwendungen verwenden. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:  
   
-|URL-Typ|Beschreibung|  
+|URL-Typ|BESCHREIBUNG|  
 |--------------|-----------------|  
 |ftp://|Sie können eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung mithilfe dieses Protokolls veröffentlichen.|  
 |http://|Mithilfe dieses Protokolls können Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installieren.|  
@@ -121,7 +121,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
   
 - Wenn Sie einen MIME-Typ mit der Erweiterung "*" und dem MIME-Typ "Application/Octett-Stream" erstellen, können Dateien vom Typ "nicht blockierter Dateityp" heruntergeladen werden. (Blockierte Dateitypen wie ASPX und ASMX können jedoch nicht heruntergeladen werden.)  
   
-  Spezifische Anweisungen zum Konfigurieren von MIME-Typen unter Windows Server finden Sie im Microsoft Knowledge Base-Artikel KB326965, "IIS 6,0 bedient keine unbekannten MIME-Typen" unter [https://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Spezifische Anweisungen zum Konfigurieren von MIME-Typen unter Windows Server finden [Sie unter Hinzufügen eines MIME-Typs zu einer Website oder Anwendung](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).  
   
 ## <a name="content-type-mappings"></a>Inhaltstyp Zuordnungen  
  Beim Veröffentlichen über HTTP sollte der Inhaltstyp (auch als MIME-Typ bezeichnet) für die Anwendungsdatei "application/x-ms-application" lauten. Wenn Sie [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] auf dem Server installiert haben, wird dieser automatisch für Sie festgelegt. Wenn dies nicht installiert ist, müssen Sie eine MIME-Typzuordnung für den [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Application vroot (oder den gesamten Server) erstellen.  
@@ -133,7 +133,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
   
  Wenn Sie IIS verwenden, können Sie die HTTP-Komprimierung problemlos aktivieren. Wenn Sie die HTTP-Komprimierung aktivieren, ist Sie jedoch nur für bestimmte Dateitypen aktiviert – HTML-und Textdateien. Um die Komprimierung für Assemblys (. dll), XML (XML), Bereitstellungs Manifeste (. Application) und Anwendungs Manifeste (. manifest) zu aktivieren, müssen Sie diese Dateitypen der Liste der Typen hinzufügen, die von IIS komprimiert werden sollen. Bis Sie die Dateitypen der Bereitstellung hinzufügen, werden nur Text-und HTML-Dateien komprimiert.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Problembehandlung bei ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) -bereit Stellungen   
  [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189173"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557846"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.
@@ -40,12 +40,12 @@ ms.locfileid: "73189173"
 > [!NOTE]
 > Eine Reihe von Beispiel Workflows finden Sie unter [Beispiele für SharePoint-Workflows](/sharepoint/dev/general-development/sharepoint-workflow-samples).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:
 
 - Unterstützte Editionen von Microsoft Windows, SharePoint und [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-- Die [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. In dieser exemplarischen Vorgehensweise wird die **VSIX-Projekt** Vorlage im SDK verwendet, um ein VSIX-Paket zum Bereitstellen des Projekt Elements zu erstellen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Das [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. In dieser exemplarischen Vorgehensweise wird die **VSIX-Projekt** Vorlage im SDK verwendet, um ein VSIX-Paket zum Bereitstellen des Projekt Elements zu erstellen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   Kenntnisse des folgenden Konzepts sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
@@ -68,7 +68,7 @@ ms.locfileid: "73189173"
 
 1. Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+2. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 3. Stellen Sie oben im Dialogfeld **Neues Projekt** sicher, dass **.NET Framework 4,5** in der Liste der .NET Framework Versionen ausgewählt ist.
 
@@ -431,7 +431,7 @@ ms.locfileid: "73189173"
 
    - Fügt die `ProjectItem`-Elemente für alle Dateien hinzu, die in den einzelnen Projektinstanzen enthalten sind.
 
-   - Verwendet den Namespace "<http://schemas.microsoft.com/developer/vstemplate/2005>". Andere Projektdateien in dieser Projekt Mappe verwenden den Namespace "<http://schemas.microsoft.com/developer/msbuild/2003>". Daher werden XML-Schema-Warnmeldungen generiert, die Sie aber bei dieser exemplarischen Vorgehensweise ignorieren können.
+   - Verwendet den Namespace `http://schemas.microsoft.com/developer/vstemplate/2005`. Andere Projektdateien in dieser Projekt Mappe verwenden den `http://schemas.microsoft.com/developer/msbuild/2003`-Namespace. Daher werden XML-Schema-Warnmeldungen generiert, die Sie aber bei dieser exemplarischen Vorgehensweise ignorieren können.
 
      Weitere Informationen zum Inhalt von *VSTEMPLATE* -Dateien finden Sie unter [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -752,7 +752,7 @@ ms.locfileid: "73189173"
 ## <a name="next-steps"></a>Nächste Schritte
  Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie der Projektvorlage einen Assistenten hinzufügen. Beim Erstellen eines Websitespaltenprojekts wird der Benutzer vom Assistenten aufgefordert, die URL der Website anzugeben, die zum Debuggen verwendet werden soll. Darüber hinaus muss vom Benutzer angegeben werden, ob die neue Projektmappe als Sandkastenlösung bereitgestellt wird. Anschließend wird das Projekt vom Assistenten mit diesen Informationen konfiguriert. Der Assistent sammelt außerdem Informationen über die Spalte (z. b. den Basistyp und die Gruppe, in der die Spalte in der Website Spalten Galerie aufgeführt werden soll) und fügt diese Informationen der Datei " *Elements. XML* " im neuen Projekt hinzu. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)

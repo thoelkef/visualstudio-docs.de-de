@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476993"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557972"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
     1. Suchen Sie im Abschnitt "Pakete" der Registrierung nach der CLSID des VSPackage:  
   
-         Hklm\software\microsoft\visual Studio\\*\<Version >* \packages  
+         Hklm\software\microsoft\visual Studio\\ *\<Version >* \packages  
   
     2. Überprüfen Sie, ob der durch den Unterschlüssel satellitedll angegebene Pfad richtig ist.  
   
@@ -101,13 +101,11 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
     2. Fügen Sie den **Speicherort der Symbol Datei (PDB-Datei)** hinzu:  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. Geben Sie zum Verbessern der Leistung einen Symbol Cache Ordner an, z. b.:  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>So beheben Sie ein fehlendes VSPackage oder eine seiner Abhängigkeiten  
   
@@ -117,11 +115,11 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
    2. Wählen Sie im Dialogfeld **Eigenschaften Seiten** die Registerkarte **Verweise** aus, und stellen Sie sicher, dass alle Pfade korrekt sind. Alternativ können Sie den **Objektkatalog** verwenden, um nach den referenzierten Objekten zu suchen.  
   
-        Bei verwaltetem Code können Sie die [Datei "Fuslogvw. exe" (Assemblybindungs-Protokoll Anzeige)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) verwenden, um die Details der fehlerhaften assemblyladungen anzuzeigen.  
+        Bei verwaltetem Code können Sie die [Datei "Fuslogvw. exe" (Assemblybindungs-Protokoll Anzeige)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) verwenden, um die Details der fehlerhaften assemblyladungen anzuzeigen.  
   
 2. Für nicht verwalteten Code suchen Sie die CLSID des VSPackage im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID-Registrierungs Knoten:  
   
-    Hklm\software\microsoft\visual Studio\\*\<Version >* \CLSID  
+    Hklm\software\microsoft\visual Studio\\ *\<Version >* \CLSID  
   
    Stellen Sie sicher, dass der InprocServer32-Eintrag über den richtigen Pfad der VSPackage-dll verfügt.  
   

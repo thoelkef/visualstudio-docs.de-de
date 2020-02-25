@@ -8,22 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735685"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557916"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdiagnose vor. Anschließend erfassen Sie Frames aus einer Direct3D-App und untersuchen diese in der Grafikanalyse.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Um Grafikdiagnose in Visual Studio verwenden zu können, müssen Sie Visual Studio Enterprise, Visual Studio Professional oder Visual Studio Community verwenden.  Diese Funktion ist in anderen Editionen, einschließlich Visual Studio Code, nicht enthalten.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
-### <a name="windows-10-prerequisites"></a>Erforderliche Komponenten für Windows 10
+### <a name="windows-10-prerequisites"></a>Voraussetzungen für Windows 10
  Die optionale Windows-Funktion *Grafiktools* stellt die Infrastruktur für die Erfassung und Wiedergabe bereit, die für die Grafikdiagnose in Windows 10 erforderlich ist.
 
  Informationen zum Installieren von Grafiktools finden Sie unter [Installieren von Grafiktools für Windows 10](#InstallGraphicsTools).
@@ -35,11 +35,11 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 
 1. Geben Sie im Suchfeld **apps und Features** ein, und öffnen Sie dann die Einstellungen für **Apps & Features** .
 
-2. Wählen Sie auf der rechten Seite des Dialog Felds **Apps & Features** die **Option optionale Features verwalten** (unter **Apps & Features**) aus.
+2. Wählen Sie auf der rechten Seite der Einstellungen für **Apps & Features** die **Option optionale Features** (unter **Apps & Features**) aus.
 
-   Das Dialogfeld **Optionale Features verwalten** wird angezeigt.
+   Die **optionalen Funktions** Einstellungen werden angezeigt.
 
-3. Wählen Sie im Dialogfeld **Optionale Features verwalten** die Option **Feature hinzufügen** aus. Eine Liste der optionalen Funktionen, die Sie installieren können, wird angezeigt.
+3. Wählen Sie in den **optionalen Funktions** Einstellungen die Option **Feature hinzufügen**aus. Eine Liste der optionalen Funktionen, die Sie installieren können, wird angezeigt.
 
 4. Wählen Sie in der Liste der Funktionen **Grafiktools** und dann **Installieren** aus.
 
@@ -49,7 +49,7 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 > Die optionale Grafiktools-Funktion von Windows 10 bietet einfache Funktionen für die Erfassung und Wiedergabe, z. B. das Befehlszeilenerfassungsprogramm **dxcap.exe**, das für Support-, Test- und Diagnoseszenarios auf Computern verwendet werden kann, auf denen Entwicklertools nicht installiert sind. Weitere Informationen finden Sie im Artikel [Command-Line Capture Tool (Befehlszeilenerfassungstool)](command-line-capture-tool.md).
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Erstmaliges Verwenden der Grafikdiagnose
- Nun, da Sie alles haben, was Sie brauchen, können Sie mit der Verwendung der Grafikdiagnose beginnen. Führen Sie folgende Schritte aus:
+ Nun, da Sie alles haben, was Sie brauchen, können Sie mit der Verwendung der Grafikdiagnose beginnen. Führen Sie einfach die folgenden Schritte aus:
 
 ### <a name="1---create-a-direct3d-app"></a>1\. Erstellen einer Direct3D-App
  Wenn Sie bereits über eine eigene Direct3D-App verfügen, mit der Sie Grafikdiagnose erkunden können, ist das gut! Verwenden Sie andernfalls eine der folgenden Aktionen:
@@ -87,5 +87,5 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 
  Weitere Informationen zur gemeinsamen Verwendung der grafikanalyse Tools finden Sie in den [Beispielen](graphics-diagnostics-examples.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Direct3D 12-Grafiken](/windows/desktop/direct3d12/direct3d-12-graphics)

@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
+title: Veröffentlichungs-Assistent (Office-Entwicklung in Visual Studio)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,50 +18,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447066"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558173"
 ---
-# <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
-  Verwenden der **Veröffentlichungs-Assistenten** um Projektmappendateien an einen bestimmten Speicherort zu kopieren, Erstellen der Manifestdateien sowie ein Setupprogramm erstellen.
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungs-Assistent (Office-Entwicklung in Visual Studio)
+  Verwenden Sie den **Veröffentlichungs-Assistenten** , um Projektmappendateien an einen angegebenen Speicherort zu kopieren, die Manifest-Dateien zu erstellen und ein Setup Programm zu erstellen.
 
- Mit diesem Assistenten für den Zugriff auf die **erstellen** Menü wählen **veröffentlichen** *SolutionName*. Sie können auch Zugriff auf die **Veröffentlichungs-Assistenten** aus **Projektmappen-Explorer**. Öffnen Sie das Kontextmenü für den Projektknoten, und wählen Sie dann **veröffentlichen**.
+ Um auf diesen Assistenten zuzugreifen, wählen Sie im Menü **Erstellen** die Option " *SolutionName* **veröffentlichen** " aus. Sie können auch über **Projektmappen-Explorer**auf den **Veröffentlichungs-Assistenten** zugreifen. Öffnen Sie das Kontextmenü für den Projekt Knoten, und wählen Sie dann **veröffentlichen**aus.
 
- Einzelnen Abschnitten unten wird eine Seite des Assistenten beschrieben.
+ In jedem Abschnitt unten wird eine Seite des Assistenten beschrieben.
 
 ## <a name="where-do-you-want-to-publish-the-application"></a>Wo möchten Sie die Anwendung veröffentlichen?
- **Geben Sie den Speicherort zum Veröffentlichen dieser Anwendung** erforderlich sind. Ort der Veröffentlichung wird das Verzeichnis, in denen die **Veröffentlichungs-Assistenten** kopiert die Projektmappendateien, z. B. die Manifeste, Assemblys, temporäre Zertifikate und andere Dateien aus dem Build. Sie benötigen Schreibzugriff auf dieses Verzeichnis.
+ **Geben Sie den Speicherort für die Veröffentlichung dieser Anwendung an** . Erforderlich. Der Speicherort für die Veröffentlichung ist das Verzeichnis, in dem der **Veröffentlichungs-Assistent** die Projektmappendateien kopiert, z. b. die Manifeste, Assemblys, das temporäre Zertifikat und andere Dateien Sie benötigen Schreibzugriff auf dieses Verzeichnis.
 
- Geben Sie den Speicherort als Datenträgerpfad, Dateifreigaben, FTP-Site oder Website-URL ein, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um den Speicherort zu suchen. Der Pfad kann in diesen Formaten sein:
+ Geben Sie den Speicherort als Datenträger Pfad, Dateifreigabe, FTP-Site oder Website-URL ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach dem Speicherort zu suchen. Der Pfad kann die folgenden Formate aufweisen:
 
-- Ein relativer oder absoluter Pfad im Standard Windows format, z. B. *C:\Deploy\MyApplication* oder *\MyApplication*.
+- Ein relativer oder absoluter Pfad im standardmäßigen Windows-Format, z. b. " *c:\Deploy\MyApplication* " oder " *\MyApplication*".
 
-- Ein Universal Naming Convention (UNC)-Pfad, z. B.  *\\\ServerName\MyApplication\\* .
+- Ein Universal Naming Convention Pfad (UNC-Pfad), z. b. *\\\servername\myapplication\\* .
 
-- Eine URL einer Web site, z. B. http://www.microsoft.com/MyApplication.
+- Eine URL einer Website, z. b. `http://www.contoso.com/MyApplication`.
 
-  Standardmäßig ist der Ort der Veröffentlichung *http://localhost/projectname/* Wenn IIS installiert, oder das Verzeichnis "publish\" verwendet, wenn Sie dies tun nicht IIS installiert haben.
+  Standardmäßig wird der Veröffentlichungs Speicherort *http://localhost/projectname/* , wenn IIS installiert ist, oder das Verzeichnis "Publish \", wenn IIS nicht installiert ist.
 
 > [!NOTE]
-> Es sind weitere Überlegungen, wenn es sich bei dem Ziel-PC Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer mit der Option für lokale Veröffentlichung sein. Darüber hinaus ist der Standardspeicherort immer das *veröffentlichen\\*  Verzeichnis, unabhängig davon, ob IIS installiert ist.
+> Es gibt weitere Überlegungen, wenn auf dem Bereitstellungs Zielcomputer Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer sein, um die lokale Veröffentlichungs Option zu verwenden. Außerdem ist der Standard Speicherort immer das *Veröffentlichungs\\* Verzeichnis, unabhängig davon, ob IIS installiert ist.
 
-## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Was ist der Standardpfad für die Installation auf Computern von Endbenutzern?
- Der Installationspfad ist optional. Sie können den Installationspfad später festlegen, falls gewünscht. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Installationspfads einer Office-Projektmappe](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Was ist der Standard Installationspfad auf Endbenutzer Computern?
+ Der Installationspfad ist optional. Sie können den Installationspfad später festlegen, wenn Sie dies bevorzugen. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Installations Pfads einer Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)-Projekt Mappe.
 
- Der Installationspfad ist das Verzeichnis, aus dem der Endbenutzer die Anpassung installiert. Hierbei handelt es sich ebenfalls um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird. Die **Veröffentlichungs-Assistenten** wird nicht an diesem Speicherort, die Lösung bereitgestellt, es sei denn, der Pfad identisch mit der Sie eingegeben, in haben der **Geben Sie den Speicherort zum Veröffentlichen dieser Anwendung** Feld auf der vorherigen Seite.
+ Der Installationspfad ist das Verzeichnis, in dem der Endbenutzer die Anpassung installiert. Hierbei handelt es sich ebenfalls um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird. Die Projekt Mappe wird vom **Veröffentlichungs-Assistenten** nicht an diesem Speicherort bereitgestellt, es sei denn, der Pfad ist identisch mit dem Pfad, den Sie im Feld **Geben Sie den Speicherort für die Veröffentlichung dieser Anwendung** eingegeben auf der vorherigen Seite eingegeben haben.
 
- **Von einer Website** Geben Sie die URL, die Endbenutzer folgen werden, um die Lösung installieren.
+ **Von einer Website** Geben Sie die URL an, die Endbenutzer befolgen, um die Lösung zu installieren.
 
- **Von einem UNC-Pfad oder Dateifreigabe** Geben Sie den UNC-Pfad, die Endbenutzer folgen werden, um die Lösung installieren.
+ **Von einem UNC-Pfad oder einer Dateifreigabe** Geben Sie den UNC-Pfad an, nach dem die Endbenutzer die Lösung installieren.
 
- **Von einer CD-ROM oder DVD-ROM-** diese Option erfordert keinen Installationspfad aus.
+ **Von einer CD-ROM oder DVD-ROM** Diese Option erfordert keinen Installationspfad.
 
- Visual Studio ist nicht auf der CD oder DVD brennen. Sie müssen die Ausgabe auf eine CD oder DVD manuell kopieren.
+ Visual Studio verbrennt die CD oder DVD nicht. Sie müssen die Ausgabe manuell auf eine CD oder DVD kopieren.
 
-## <a name="see-also"></a>Siehe auch
-- [Bereitstellen einer Office-Projektmappe mit ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Veröffentlichungsseite, Projekt-Designer &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Seite "veröffentlichen", &#40;Projekt-Designer-Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)

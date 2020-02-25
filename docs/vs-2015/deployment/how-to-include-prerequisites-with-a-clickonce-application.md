@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft-Dokumentation'
+title: 'Vorgehensweise: einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,20 +9,20 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697660"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557672"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Gewusst wie: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen. Wenn Sie eine Anwendung veröffentlichen, und wählen Sie **erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**, wird ein Fehler auftreten, wenn die Installationspakete nicht im der **Pakete** Ordner.  
+Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen. Wenn Sie eine Anwendung veröffentlichen und die Option erforderliche Komponenten **von demselben Speicherort wie meine Anwendung herunterladen**auswählen, tritt ein Fehler auf, wenn die Installer-Pakete nicht im Ordner **Pakete** vorhanden sind.  
   
 > [!NOTE]
-> Zum Hinzufügen eines Installationspakets für .NET Framework finden Sie unter [Handbuch für die Bereitstellung von .NET Framework für Entwickler](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+> Informationen zum Hinzufügen eines Installationspakets für die .NET Framework finden Sie im [.NET Framework Bereitstellungs Handbuch für Entwickler](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
 ## <a name="Package"></a> So fügen Sie mit „Package.xml“ ein Installationspaket hinzu  
   
@@ -34,10 +34,10 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../include
   
 3. Öffnen Sie im Editor die Datei **Package.xml**.  
   
-4. Suchen Sie die **Namen** -Element mit **http://go.microsoft.com/fwlink** , und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
+4. Suchen Sie das **Name** -Element, das `http://go.microsoft.com/fwlink`enthält, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
   
     > [!NOTE]
-    > Wenn kein **Namen** Element enthält **http://go.microsoft.com/fwlink** öffnen die **Product.xml** Datei im Stammordner für die erforderliche Komponente, und suchen Sie die **Fwlink** Zeichenfolge.  
+    > Wenn kein **Name** -Element `http://go.microsoft.com/fwlink`enthält, öffnen Sie die **Product. XML** -Datei im Stamm Ordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink** .  
   
     > [!IMPORTANT]
     > Einige erforderliche Komponenten haben mehrere Installationspakete (z. B. für 32-Bit- oder 64-Bit-Systeme). Wenn mehrere **Name**-Elemente **fwlink** enthalten, müssen Sie die verbleibenden Schritte für jedes dieser Elemente überprüfen.  
@@ -52,5 +52,5 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../include
   
      Sie können das Installationspaket jetzt mit der Anwendung verteilen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
