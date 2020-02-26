@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112532"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275439"
 ---
 # <a name="warnings-and-errors"></a>Warnungen und Fehler
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112532"
 * **Auflösen von Einschränkung**
   * [Die Lösung kann nicht konkretisiert werden](#cannot-concretize-solution)
 
-* **Domänen**
+* **Domänen oder Runtime**
   * [Benötigen Sie Hilfe bei der Objekterstellung?](#help-construct)
   * [Benötigen Sie Hilfe beim Suchen von Typen?](#help-types)
   * [Verwendbaren Typ erraten](#usable-type-guessed)
@@ -254,7 +254,7 @@ Sie können IntelliTest helfen, indem Sie auf mindestens einen Typ zeigen, der d
 
 IntelliTest [generiert Testeingaben](input-generation.md) für jeden .NET-Typen. Wenn ein Typ abstrakt oder eine Schnittstelle ist, muss IntelliTest eine bestimmte Implementierung des Typs auswählen. Um diese Wahl treffen zu können, muss es wissen, welche Typen existieren.
 
-Wenn diese Warnung angezeigt wird, gibt dies an, das IntelliTest sich einige der verwiesenen Assemblys angeschaut hat und einen Implementierungstyp gefunden hat, sich aber nicht sicher ist, ob es diesen Typen verwenden soll oder ob es an anderer Stelle besser passende Typen gibt. IntelliTest hat einfach einen vielversprechenden Typen ausgewählt.
+Wenn diese Warnung angezeigt wird, gibt dies an, dass sich IntelliTest einige der Assemblys angesehen hat, auf die verwiesen wird, und einen Implementierungstyp gefunden hat, sich aber nicht sicher ist, ob es diesen Typen verwenden soll oder ob es an anderer Stelle besser passende Typen gibt. IntelliTest hat einfach einen vielversprechenden Typen ausgewählt.
 
 Um diese Warnung zu vermeiden, können Sie entweder die Typwahl von IntelliTest akzeptieren oder IntelliTest beim Verwenden anderer Typen helfen, indem Sie einen entsprechenden [PexUseType](attribute-glossary.md#pexusetype) hinzufügen.
 

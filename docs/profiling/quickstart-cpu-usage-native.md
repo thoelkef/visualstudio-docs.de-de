@@ -1,7 +1,7 @@
 ---
 title: Analysieren der CPU-Auslastungsdaten (C++)
 description: Messen der App-Leistung in C++ mithilfe des Diagnosetools für die CPU-Auslastung
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128183"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279222"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
 
@@ -30,17 +30,34 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
-1. Klicken Sie in Visual Studio auf **Datei** > **Neues Projekt**.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
-2. Klicken Sie unter **Visual C++** auf **Windows-Desktop** und dann im mittleren Bereich auf **Windows-Konsolenanwendung**.
+   ::: moniker range="vs-2017"
+   Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-    Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++** , und klicken Sie dann auf **Ändern**.
+   Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C++** , und klicken Sie dann auf **Windows Desktop**. Wählen Sie im mittleren Bereich die Option **Windows-Konsolenanwendung** aus. Nennen Sie das Projekt dann *Diagnostics_Get_Started_Native*.
 
-3. Geben Sie einen Namen wie **Diagnostics_Get_Started_Native** ein, und klicken Sie auf **OK**.
+   Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++** aus, und klicken Sie dann auf **Ändern**.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**.
 
-    Visual Studio erstellt daraufhin das Projekt.
+   Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-4. Ersetzen Sie in *MyDbgApp.cpp* folgenden Code
+   Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C++** und dann in der Liste der Plattformen **Windows** aus.
+
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App**aus und klicken dann auf **Weiter**.
+
+   > [!NOTE]
+   > Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, können Sie sie im Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **Desktopentwicklung mit C++** aus.
+
+   Geben Sie anschließend im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** den Name *Diagnostics_Get_Started_Native* ein. Wählen Sie anschließend **Erstellen** aus.
+
+   ::: moniker-end
+
+   Visual Studio öffnet Ihr neues Projekt.
+
+1. Ersetzen Sie in *Diagnostics_Get_Started_Native* den folgenden Code.
 
     ```c++
     int main()
@@ -123,7 +140,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 2. Legen Sie als Nächstes einen weiteren Haltepunkt auf die schließende Klammer am Ende der `main`-Funktion fest:
 
-     ![Haltepunkte für die Profilerstellung festlegen](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Set breakpoints for profiling")
+     ![Festlegen von Haltepunkten für die Profilerstellung](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Haltepunkte für die Profilerstellung festlegen")
 
     > [!TIP]
     > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
@@ -136,7 +153,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 5. Aktivieren Sie, während der Debugger angehalten ist, die Sammlung von CPU-Auslastungsdaten, indem Sie auf **CPU-Profilerstellung aufzeichnen** klicken. Öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
 
-     ![Diagnosetools ermöglichen die CPU-Profilerstellung](../profiling/media/quickstart-cpu-usage-summary.png "Diagnostics Tools Enable CPU Profiling")
+     ![Diagnosetools ermöglichen die CPU-Profilerstellung](../profiling/media/quickstart-cpu-usage-summary.png "Diagnosetools ermöglichen die CPU-Profilerstellung")
 
      Wenn die Datensammlung aktiviert ist, zeigt die Schaltfläche für das Aufzeichnen einen roten Kreis an.
 
@@ -158,7 +175,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 1. Untersuchen Sie in der Liste der Funktionen die Funktionen, die am meisten Aufgaben ausführen.
 
-     ![Diagnosetools Registerkarte CPU-Auslastung](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
+     ![Registerkarte „CPU-Auslastung“ der Diagnosetools](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
 
     > [!TIP]
     > Die Auflistung der Funktionen beginnt mit der Funktion, die die meisten Aufgaben ausführt (sie sind nicht in der Reihenfolge der Aufrufe gelistet). Dadurch können Sie schnell feststellen, welche Funktionen am längsten ausgeführt werden.
@@ -167,7 +184,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
     Dabei wird die Ansicht **Aufrufer/Aufgerufener** im linken Bereich geöffnet.
 
-    ![Diagnosetools Ansicht Aufrufer-Aufgerufener](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
+    ![Ansicht „Aufrufer/Aufgerufener“ der Diagnosetools](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
     In dieser Ansicht wird die ausgewählte Funktion in der Überschrift und im Feld **Aktuelle Funktion** angezeigt (in diesem Beispiel `getNumber`). Die Funktion, die die aktuelle Funktion aufgerufen hat, wird links unter **Calling Function** (Aufrufende Funktion) angezeigt, und alle Funktionen, die von der aktuellen Funktion aufgerufen wurden werden im Feld **Called Functions** (Aufgerufene Funktionen) auf der rechten Seite angezeigt. (Sie können beide Felder auswählen, um die aktuelle Funktion zu ändern.)
 

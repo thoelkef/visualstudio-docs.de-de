@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74707002"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192415"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -60,15 +60,15 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 |          Visual Studio Enterprise mit GitHub Enterprise          | VL  |   6 Monate    | Ja<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 Monate    | Ja<sup>2</sup> |
 |         Visual Studio Professional mit GitHub Enterprise          | VL  |   3 Monate    | Ja<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 Monate    | Ja<sup>2</sup>  |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 Monate    | Ja<sup>2</sup>  |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Nicht verfügbar    | NA  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Nicht verfügbar    | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) |       Azure       | Nicht verfügbar |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Program      | Nicht verfügbar |       NA       |
 ||
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *Der Pluralsight-Vorteil wird in ausgewählten Visual Studio-Abonnements gemeinsam mit dem Abonnement verlängert. Wenn Sie beispielsweise ein Jahresabonnement abgeschlossen haben, das jährlich verlängert wird, profitieren Sie so lange von diesem Vorteil, bis das Abonnement gekündigt wird. Wenn Sie ein Abonnement mit einer Laufzeit von mehreren Jahren abgeschlossen haben, ist der Pluralsight-Vorteil so lange verfügbar, wie das Abonnement besteht.  Wenn dieses Abonnement verlängert wird, können Sie auch weiter von dem Vorteil profitieren.*
+<sup>2</sup> *Der Pluralsight-Vorteil wird in ausgewählten Visual Studio-Abonnements gemeinsam mit dem Abonnement verlängert. Wenn Sie beispielsweise ein Jahresabonnement abgeschlossen haben, das jährlich verlängert wird, profitieren Sie so lange von diesem Vorteil, bis das Abonnement gekündigt wird. Wenn Sie ein Abonnement mit einer Laufzeit von mehreren Jahren abgeschlossen haben, ist der Pluralsight-Vorteil so lange verfügbar, wie das Abonnement besteht.  Wenn dieses Abonnement verlängert wird, können Sie auch weiter von dem Vorteil profitieren.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

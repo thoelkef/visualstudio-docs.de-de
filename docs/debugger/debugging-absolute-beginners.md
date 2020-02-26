@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Code für Einsteiger
 description: Wenn Sie den Debugger zum ersten Mal verwenden, sollten Sie sich mit einigen Grundsätzen auseinandersetzen, die beim Ausführen Ihrer App im Debugmodus mit Visual Studio nützlich sind.
-ms.date: 07/06/2018
+ms.date: 02/14/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5cfe112aff36910ca4b4861d3a65cc7ea61655
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679386"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416394"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -64,7 +64,7 @@ Wenn Sie eine App ausführen, sehen Sie Fehler und falsche Ergebnisse normalerwe
 
 Das Ausführen einer App in einem Debugger (auch als *Debugmodus* bezeichnet) bedeutet, dass der Debugger alle Vorgänge während der Ausführung des Programms überwacht. Sie können die App zudem jederzeit pausieren, um ihren Zustand zu überprüfen, und den Code anschließend schrittweise durchlaufen, um jedes Detail in Echtzeit zu beobachten.
 
-In Visual Studio starten Sie den Debugmodus, indem Sie **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an. Weitere Informationen zum Behandeln von Ausnahmen in Ihrem Code finden Sie unter [Debugging techniques and tools (Debugverfahren und Tools)](../debugger/write-better-code-with-visual-studio.md).
+In Visual Studio starten Sie den Debugmodus, indem Sie **F5** drücken, den Menübefehl **Debuggen**  >  **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an. Weitere Informationen zum Behandeln von Ausnahmen in Ihrem Code finden Sie unter [Debugging techniques and tools (Debugverfahren und Tools)](../debugger/write-better-code-with-visual-studio.md).
 
 Wenn keine Ausnahme ausgelöst wurde, haben Sie möglicherweise dennoch eine Idee, an welcher Stelle im Code Sie nach dem Problem suchen müssen. Hierfür verwenden Sie *Breakpoints* mit dem Debugger, damit Sie den Code gründlicher untersuchen können. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Breakpoint gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie die Werte von Variablen, das Verhalten des Arbeitsspeichers oder die Sequenz, in der der Code ausgeführt wird, überprüfen.
 
@@ -80,18 +80,18 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
-    Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
+    Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...** . Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 
 1. Öffnen Sie Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Geben Sie im Suchfeld den Begriff **Konsole** ein, und wählen Sie dann entweder **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus. Wählen Sie **Weiter** aus. Geben Sie einen Projektnamen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **Erstellen**.
+    Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Geben Sie im Suchfeld den Begriff **Konsole** ein, und wählen Sie dann entweder **Konsolen-App (.NET Core)** oder **Konsolen-App (.NET Framework)** aus. Wählen Sie **Weiter** aus. Geben Sie einen Projektnamen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Konsolen-App** und dann im mittleren Bereich wahlweise **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus. Geben Sie einen Namen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **OK**.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Konsolen-App** und dann im mittleren Bereich wahlweise **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus. Geben Sie einen Namen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **OK**.
     ::: moniker-end
 
-    Wenn die Projektvorlage **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Get Tools and Features** (Tools und Features abrufen), wodurch der Visual Studio-Installer geöffnet wird. Wählen Sie die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
+    Wenn die Projektvorlage **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Get Tools and Features** (Tools und Features abrufen), wodurch der Visual Studio-Installer geöffnet wird. Wählen Sie entweder die Workload **Plattformübergreifende .NET Core-Entwicklung** oder die Workload **.NET-Desktopentwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
     Visual Studio erstellt das Konsolenprojekt, das im Projektmappen-Explorer (rechter Bereich) angezeigt wird.
 
@@ -182,7 +182,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 ### <a name="run-the-app"></a>Ausführen der App
 
-1. Drücken Sie die Taste **F5**, oder klicken Sie in der Symbolleiste „Debuggen“ (über dem Code-Editor) auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging").
+1. Drücken Sie die Taste **F5**, oder klicken Sie in der Symbolleiste „Debuggen“ (über dem Code-Editor) auf die Schaltfläche **Debuggen starten**![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten").
 
     Die App wird gestartet, und der Debugger zeigt keine Ausnahmen an. Die Ausgabe im Konsolenfenster entspricht jedoch nicht Ihren Erwartungen. Folgende Ausgabe wird erwartet:
 
@@ -223,7 +223,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
     Da ein Problem in der Ausgabe erkennbar ist, sollten Sie mit dem Debuggen im vorangehenden Code beginnen, der die Ausgabe im Debugger festlegt.
 
-1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
+1. Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
 
     Die App hält an dem von Ihnen festgelegten Breakpoint an. Die gelbe Markierung gibt an, wo der Debugger angehalten wird (die gelbe Codezeile wurde noch nicht ausgeführt).
 
@@ -255,7 +255,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     public GType GalaxyType { get; set; }
     ```
 
-1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um den Code neu zu kompilieren und zu starten.
+1. Klicken Sie in der Symbolleiste „Debuggen“ auf **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG**  +  **UMSCHALT**  +  **F5**), um den Code erneut zu kompilieren und neu zu starten.
 
     Wenn der Debugger nun bei `Console.WriteLine` anhält, können Sie auf `theGalaxy.GalaxyType.MyGType` zeigen und werden feststellen, dass der Wert ordnungsgemäß festgelegt wurde.
 
@@ -280,7 +280,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
     In diesem Code wird der Galaxietyp festgelegt, deshalb sollten Sie sich diesen genauer ansehen.
 
-1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um die App neu zu starten.
+1. Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG**  +  **UMSCHALT**  +  **F5**), um den Code neu zu starten.
 
     Der Debugger hält in der Codezeile an, in der Sie den Breakpoint festgelegt haben.
 

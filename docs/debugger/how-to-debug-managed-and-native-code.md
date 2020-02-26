@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342381"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416359"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
@@ -38,7 +38,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Erreichen eines Breakpoints in der verwalteten App
 > * Schrittweise Ausführung des nativen Codes
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Visual Studio muss in den folgenden Workloads installiert sein:
 - **Desktopentwicklung mit C++**
@@ -55,21 +55,15 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Leeres Projekt** ein, wählen Sie **Vorlagen** und dann **Neues leeres Projekt erstellen** für C++ aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Drücken Sie **STRG+Q**, um das Suchfeld zu öffnen, geben Sie **Leeres Projekt** ein, wählen Sie **Vorlagen** und dann **Leeres Projekt** für C++ aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Andere** aus, und wählen Sie dann im mittleren Bereich **Leeres Projekt** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Andere** aus, und wählen Sie dann im mittleren Bereich **Leeres Projekt** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
     ::: moniker-end
 
     Wenn die Projektvorlage **Leeres Projekt** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++** , und klicken Sie dann auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
-
-1. Klicken Sie im Dialogfeld **Neues Projekt** unter **Visual C++** auf **Sonstiges**, und wählen Sie **Leeres Projekt** in der Mitte der Ansicht.
-
-1. Geben Sie im Feld **Name** **Mixed_Mode_Debugging** ein, und klicken Sie dann auf **OK**.
-
-   Visual Studio erstellt das leere Projekt und zeigt es im **Projektmappen-Explorer** an.
 
 1. Wählen Sie im **Projektmappen-Explorer** **Quelldateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Quelldateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus.
 
@@ -132,12 +126,12 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Framework) erstellen** für C# aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, und klicken Sie auf **Vorlagen**, und wählen Sie dann **Konsolen-App (.NET Core)** oder **Konsolen-App (.NET Framework)** für C# aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
     Geben Sie dann einen Namen wie **Anruf_App_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus.
 
     Geben Sie dann einen Namen wie **Anruf_App_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
     ::: moniker-end

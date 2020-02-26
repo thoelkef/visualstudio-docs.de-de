@@ -1,8 +1,8 @@
 ---
-title: Analysieren der CPU-Auslastungsdaten (ASP.NET)
-description: Messen der App-Leistung in ASP.NET-Apps mithilfe des Diagnosetools für die CPU-Auslastung
+title: Analysieren der CPU-Auslastungsdaten (ASP.NET Core)
+description: Messen der App-Leistung in ASP.NET Core-Apps mithilfe des Diagnosetools für die CPU-Auslastung
 ms.custom: mvc
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 367d789513e8ac220566cb4e451bcea015ec5a2a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128162"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275081"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (ASP.NET Core)
 
 Visual Studio enthält viele leistungsstarke Features, mit denen Sie Leistungsprobleme in Ihrer Anwendung besser analysieren können. In diesem Thema werden einige der grundlegenden Funktionen erläutert. Außerdem betrachten wir ein Tool, mit dem Leistungsengpässe aufgrund hoher CPU-Auslastung erkannt werden können. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
 
@@ -29,17 +29,37 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
-1. Klicken Sie in Visual Studio auf **Datei** > **Neues Projekt**.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
-1. Klicken Sie unter **Visual C#** auf **Web** und dann im mittleren Bereich auf **ASP.NET-Webanwendung (.NET Framework)** .
+   ::: moniker range="vs-2017"
+   Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-    Wenn Ihnen die Projektvorlage **ASP.NET-Webanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
+   Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C#** , und klicken Sie auf **Web**. Klicken Sie im mittleren Bereich auf **ASP.NET-Web-Anwendung (.NET Core)** . Benennen Sie das Projekt dann mit *MyProfilingApp_MVC*.
 
-1. Geben Sie einen Namen wie **MyProfilingApp_MVC** ein, und klicken Sie auf **OK**.
+   > [!NOTE]
+   > Wenn Ihnen die Projektvorlage **ASP.NET-Webanwendung (.NET Core)** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung** und anschließend auf **Ändern**.
 
-1. Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **MVC** aus, und klicken Sie dann auf **OK**.
+   Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **MVC** aus, und klicken Sie dann auf **OK**.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**.
 
-    Visual Studio erstellt daraufhin das Projekt. Der Projektmappen-Explorer (rechter Bereich) zeigt Ihre Projektdateien an.
+   Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+   Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *ASP.NET* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus.
+
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **ASP.NET-Webanwendung (.NET Core)** und dann **Weiter** aus.
+
+   > [!NOTE]
+   > Wenn Sie die Vorlage **ASP.NET-Webanwendung (.NET Core)** nicht sehen, können Sie sie über das Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **ASP.NET- und Webentwicklung** aus.
+
+   Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyProfilingApp_MVC* ein. Wählen Sie anschließend **Erstellen** aus.
+
+   Wählen Sie im Fenster, das angezeigt wird, die Option **Webanwendung (Model-View-Controller)** aus, und klicken Sie dann auf **Erstellen**.
+
+   ::: moniker-end
+
+   Visual Studio öffnet Ihr neues Projekt.
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Ordner „Models“ (Modelle) und anschließend auf **Hinzufügen** > **Klasse**.
 
@@ -131,6 +151,8 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 1. Öffnen Sie im Projektmappen-Explorer *Controller/HomeControllers.cs*, und ersetzen Sie den folgenden Code:
 
+   ::: moniker range="vs-2017"
+
     ```csharp
     public ActionResult About()
     {
@@ -153,6 +175,30 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
     }
     ```
 
+    ::: moniker-end
+    ::: moniker range="vs-2019"
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        return View();
+    }
+    ```
+
+    durch den folgenden:
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        Models.Simple s = new Models.Simple();
+
+        return View(s.GetData());
+    }
+    ```
+
+    ::: moniker-end
+
+
 ## <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
 
 1. Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile im `Simple`-Konstruktor fest:
@@ -172,7 +218,14 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 1. Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
 
-1. Wenn die Anwendung geladen wurde, klicken Sie auf den Link **About** (Info) oben auf der Webseite, um den neuen Code auszuführen.
+1. Wenn die Anwendung geladen wurde, klicken Sie oben auf der Webseite auf den entsprechenden Link, um den neuen Code auszuführen.
+
+   ::: moniker range="vs-2017"
+   Klicken Sie in Visual Studio 2017 auf den **Info**-Link, um den Code auszuführen.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Klicken Sie in Visual Studio 2019 auf den **Datenschutz**-Link, um den Code auszuführen.
+   ::: moniker-end
 
 1. Sehen Sie sich die Ansicht **Zusammenfassung** der Diagnosetools an.
 

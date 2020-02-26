@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit Unittests
-ms.date: 04/01/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596475"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279330"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
@@ -26,16 +26,18 @@ In diesem Abschnitt wird genauestens beschrieben, wie Sie ein Komponententestpro
 
 1. Öffnen Sie das Projekt, das Sie in Visual Studio testen möchten.
 
-   In diesem Artikel wird ein einfaches „Hallo Welt“-Projekt getestet, um einen Beispielkomponententest zu demonstrieren. Der Beispielcode für ein solches Projekt lautet wie folgt:
+   In diesem Artikel wird ein einfaches „Hallo Welt“-Projekt namens **HelloWorldCore** getestet, um einen Beispielkomponententest zu demonstrieren. Der Beispielcode für ein solches Projekt lautet wie folgt:
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. Wählen Sie im **Projektmappen-Explorer** den Projektmappenknoten aus. Wählen Sie dann in der oberen Menüleiste **Datei** > **Hinzufügen** > **Neues Projekt** aus.
@@ -70,14 +72,48 @@ In diesem Abschnitt wird genauestens beschrieben, wie Sie ein Komponententestpro
 
 1. Fügen Sie der Komponententestmethode Code hinzu.
 
-   ![Screenshot: Hinzufügen von Code zu Ihrer Komponententestmethode in Visual Studio](media/vs-2019/unit-test-method.png)
+   Für ein MSTest- oder NUnit-Testprojekt könnten Sie beispielsweise den folgenden Code verwenden.
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
 > Eine ausführlichere exemplarische Vorgehensweise zum Erstellen von Komponententest finden Sie unter [Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Komponententests ausführen
 
-1. Öffnen Sie den [Test-Explorer](../test/run-unit-tests-with-test-explorer.md), indem Sie in der oberen Menüleiste **Testen** > **Windows** > **Test-Explorer** auswählen.
+1. Öffnen Sie den [Test-Explorer](../test/run-unit-tests-with-test-explorer.md).
+
+   ::: moniker range=">=vs-2019"
+   Klicken Sie oben in der Menüleiste auf **Test** > **Test-Explorer**, um den Test-Explorer zu öffnen.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Klicken Sie oben in der Menüleiste auf **Test** > **Windows** > **Test-Explorer**, um den Test-Explorer zu öffnen.
+   ::: moniker-end
 
 1. Die Komponententests führen Sie aus, indem Sie auf **Alle ausführen** klicken.
 

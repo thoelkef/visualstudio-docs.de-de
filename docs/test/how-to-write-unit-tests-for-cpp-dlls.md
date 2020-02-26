@@ -2,17 +2,17 @@
 title: Schreiben von Komponententests für C++-DLLs
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926665"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279275"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
@@ -58,13 +58,13 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
       ::: moniker range="vs-2019"
 
-      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++**  > **Test** > **C++-Komponententestprojekt**.
 
       ::: moniker-end
 
@@ -90,13 +90,13 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
       ::: moniker range="vs-2019"
 
-      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++**  > **Test** > **C++-Komponententestprojekt**.
 
       ::: moniker-end
 
@@ -141,7 +141,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
 1. Fügen Sie in jeder Komponententestcodedatei eine `#include`-Anweisung für die Header des zu testenden Projekts hinzu.
 
-2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Beispiel:
+2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Zum Beispiel:
 
     ```cpp
     #include "stdafx.h"
@@ -174,6 +174,6 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 - [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 - [Referenz für die API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-- [Walkthrough: Creating and using a dynamic link library (C++) (Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++))](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Exemplarische Vorgehensweise: Creating and using a dynamic link library (C++) (Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++))](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importieren und Exportieren](/cpp/build/importing-and-exporting)
 - [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)

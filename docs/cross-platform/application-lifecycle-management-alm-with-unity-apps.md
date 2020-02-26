@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8d6cbdee57d2f1edf7d696ad9a4053ddcb08bce3
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777737"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272265"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps mit Unity-Apps
 
@@ -105,7 +105,7 @@ Referenzlink: **[Improve code quality (Verbessern der Codequalität)](../test/im
 |[Analysieren der Qualität von verwaltetem Code](../code-quality/code-analysis-for-managed-code-overview.md)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|
 |[Suchen von doppeltem Code mit der Codeklonerkennung](https://msdn.microsoft.com/library/hh205279.aspx)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|
 |[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/code-metrics-values.md)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Verwenden des [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (Unity-Website).|
+|[Leistungstools](../profiling/performance-explorer.md)|Nein|Verwenden des [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (Unity-Website).|
 |[Analysieren von .NET Framework-Arbeitsspeicherproblemen](https://msdn.microsoft.com/library/dn342825.aspx)|Nein|Visual Studio-Tools haben keinen Zugriff auf das Mono-Framework (wie von Unity verwendet) für die Profilerstellung. Verwenden des [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity-Dokumentation).|
 
 ## <a name="release-management"></a>Release Management:

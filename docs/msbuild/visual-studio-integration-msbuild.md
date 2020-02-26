@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a48725c0877110e969a98deb8c03b3181d31153
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594421"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277700"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration in Visual Studio (MSBuild)
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.
@@ -111,6 +111,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 </ItemGroup>
 ```
 
+> [!NOTE]
+> Die `Visible`-Metadaten werden vom **Projektmappen-Explorer** für C++-Projekte ignoriert. Elemente werden immer angezeigt, selbst wenn für `Visible` FALSE festgelegt ist.
+
  Die Elemente, die in den in das Projekt importierten Dateien deklariert sind, werden standardmäßig nicht angezeigt. Die während des Buildprozesses erstellten Elemente werden nie im **Projektmappen-Explorer** angezeigt.
 
 ## <a name="conditions-on-items-and-properties"></a>Bedingungen für Elemente und Eigenschaften
@@ -181,7 +184,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Für reguläre Builds in Visual Studio trifft die schnelle Überprüfung auf Updates nicht zu, und das Projekt wird erstellt, als ob Sie den Build an der Eingabeaufforderung aufgerufen hätten.
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erweitern des Visual Studio-Buildprozesses](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+- [How to: Erweitern des Visual Studio-Buildprozesses](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [Erstellen eines Builds von der IDE aus](../msbuild/starting-a-build-from-within-the-ide.md)
 - [Registrieren von .NET Framework-Erweiterungen](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

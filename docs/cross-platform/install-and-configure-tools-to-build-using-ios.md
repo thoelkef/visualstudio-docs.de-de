@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 37ef83cc968276fb29ae5380544ee9c27ffd485d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846906"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272283"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installieren und Konfigurieren von Tools zum Erstellen mit iOS
 
@@ -62,9 +62,9 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
    Wenn Sie manuell signieren möchten, müssen Sie für Ihre App ein Bereitstellungsprofil erstellen. Ausführliche Informationen zum Erstellen von Bereitstellungsprofilen finden Sie unter [Create a development provisioning profile](https://help.apple.com/developer-account/#/devf2eb157f8) (Erstellen eines Bereitstellungs-Entwicklungsprofils) in der iOS Developer Library. 
 
-- [Node.js](https://nodejs.org/), Version 8.11.3, und npm, Version 5.6.0
+- [Node.js](https://nodejs.org/), Version 12.14.1, und npm, Version 6.13.4
 
-   Installieren Sie Node.js-Version 8.11.3 auf Ihrem Mac. Wenn Sie das Node.js-Paket installieren, sollte es die npm-Version 5.6.0 aufweisen. Andere Versionen von Node.js und npm unterstützen möglicherweise einige im Remote-Agent `vcremote` verwendete Module nicht, was zu einem Fehler bei der `vcremote`-Installation führen kann.
+   Installieren Sie die Node.js-Version 12.14.1 auf Ihrem Mac. Wenn Sie das Node.js-Paket installieren, sollte es die npm-Version 6.13.4 aufweisen. Andere Versionen von Node.js und npm unterstützen möglicherweise einige im Remote-Agent `vcremote` verwendete Module nicht, was zu einem Fehler bei der `vcremote`-Installation führen kann. Sie sollten Node.js mithilfe eines Paket-Managers wie [Node Version Manager](https://nodejs.org/en/download/package-manager/#nvm) installieren. Vermeiden Sie es, den Befehl `sudo` zum Installieren von Node.js zu verwenden, da dieser in einigen Modulen zu Fehlern bei der Installation führt, wenn `sudo` verwendet wird.
 
 ## <a name="Install"></a> Installieren des Remote-Agents für iOS
 
@@ -74,11 +74,17 @@ Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderli
 
 ### <a name="DownloadInstall"></a> Herunterladen und Installieren des Remote-Agenten
 
-- Geben Sie über die Terminal-App auf Ihrem Mac Folgendes ein:
+- Überprüfen Sie in der Terminal-App Ihres Mac, ob die aktuell verwendete Node.js-Version die erforderliche Version 12.14.1 ist. Führen Sie den folgenden Befehl aus, um die Version zu ermitteln:
 
-   `sudo npm install -g --unsafe-perm vcremote`
+  `node -v`
+  
+  Wenn nicht die richtige Version verwendet wird, können Sie in den Voraussetzungen der Installationsanleitung für Node.js folgen. Starten Sie dann Node.js neu.
 
-   Der Schalter für die globale Installation ( **-g**) wird empfohlen, ist jedoch nicht zwingend erforderlich.
+- Nachdem Sie überprüft haben, ob die erforderliche Node.js-Version verwendet wird, führen Sie diesen Befehl aus, um vcremote unter dieser Node.js-Version zu installieren:
+
+   `npm install -g --unsafe-perm vcremote`
+
+   Es empfiehlt sich, eine switch-Anweisung für eine globale Installation ( **-g**) auszuführen. Dies ist jedoch nicht erforderlich. Wenn Sie sich nicht für die Ausführung einer switch-Anweisung für eine globale Installation entscheiden, wird vcremote unter dem aktuell in der Terminal-App aktiven Pfad installiert.
 
    Während der Installation werden `vcremote` installiert und der Entwicklermodus auf Ihrem Mac aktiviert. [Homebrew](https://brew.sh/) und zwei npm-Pakete, `vcremote-lib` und `vcremote-utils`, werden ebenfalls installiert. Nach Abschluss der Installation ist es sicher, alle Warnungen über übersprungene optionale Abhängigkeiten zu ignorieren.
 

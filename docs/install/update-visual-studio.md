@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115079"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453394"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualisieren von Visual Studio auf die neueste Version
 
@@ -166,7 +166,7 @@ Wenn Sie eine Benachrichtigung ignorieren, wird diese von Visual Studio nicht me
 
 Sie sollten ein Update auf das [aktuelle Release](/visualstudio/releases/2019/release-notes/) von Visual Studio 2019 ausführen, damit Sie immer die neuesten Features, Fehlerbehebungen und Verbesserungen erhalten.
 
-Und wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen.
+Wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen. Wenn Sie aktuell eine andere Version von Visual Studio verwenden, können Sie entweder die Möglichkeit zur [Parallelen Installation mehrerer Visual Studio-Versionen](../install/install-visual-studio-versions-side-by-side.md) oder zum [Deinstallieren von Visual Studio](../install/uninstall-visual-studio.md) verwenden.
 
 > [!IMPORTANT]
 > Zum Installieren, Aktualisieren und Anpassen von Visual Studio müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt. Weitere Informationen finden Sie unter [Benutzerberechtigungen und Visual Studio](../ide/user-permissions-and-visual-studio.md).
