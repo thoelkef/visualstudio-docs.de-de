@@ -3,15 +3,15 @@ title: Anonymisierung von Daten der Visual Studio-Abonnenten | Microsoft-Dokumen
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Abonnentendaten anonymisiert werden, wenn der Zugriff auf Abonnements verloren gegangen ist.
-ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
-ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
+ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936910"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77520838"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisierung von Informationen der Visual Studio-Abonnenten
 Wenn ein Ereignis eintritt, durch das die Verwendung eines Abonnements durch einen Abonnenten blockiert wird, z.B. der Ablauf eines Abonnements oder die Löschung des Anmeldekontos eines Abonnenten, werden die persönlichen Informationen des Benutzers wie Name und Anmeldekonto so verschlüsselt, dass sie unbrauchbar werden.  Dies geschieht, um die persönlichen Informationen des Abonnenten zu schützen.
@@ -42,4 +42,10 @@ Antwort:  Es gibt zwei Möglichkeiten, das Problem zu verhindern:
 - Ordnen Sie die AAD- und MSA-Identitäten über den Mandanten zu. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-Erfahren Sie, wie Sie die Anonymisierung durch [Verbinden von MSA- und AAD-Identitäten](/azure/active-directory/b2b/add-users-administrator) verhindern.
+Erfahren Sie, wie Sie die Anonymisierung durch [Verbinden von MSA- und AAD-Identitäten](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator) verhindern.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
