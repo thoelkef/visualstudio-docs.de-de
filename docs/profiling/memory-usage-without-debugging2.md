@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910346"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578341"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analysieren der Speicherauslastung ohne den Debugger
 
 Das **Speicherauslastungstool** überwacht die Speicherauslastung Ihrer App. Mithilfe des Tools können Sie in Echtzeit überwachen, welche Auswirkungen die Szenarios haben, die Sie aktiv in Visual Studio entwickeln. Sie können detaillierte Momentaufnahmen des Speicherzustands der App machen und diese miteinander vergleichen, um die Grundursachen für Speicherprobleme zu bestimmen.
 
 Das **Speicherauslastungstool** kann mit oder ohne Debugger ausgeführt werden. Die folgenden Anweisungen zeigen, wie Sie das **Speicherauslastungstool** ohne den Debugger mit dem Visual Studio-**Leistungsprofiler** verwenden.
-
->[!NOTE]
->- Damit Sie die Speicherauslastung für eine .NET Core-Anwendung messen können, müssen Sie das **Speicherauslastungstool** mit dem Debugger verwenden. Weitere Informationen finden Sie unter [Profilerstellung zur Speicherauslastung in Visual Studio](memory-usage.md).
->- Verwenden Sie zum Analysieren der Speicherauslastung in JavaScript- oder HTML UWP-Apps das [JavaScript-Speichertool](../profiling/javascript-memory.md) im **Leistungsprofiler**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Diagnosesitzungen zur Speicherauslastung
 

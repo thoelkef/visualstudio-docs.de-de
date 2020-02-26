@@ -14,17 +14,17 @@ helpviewer_keywords:
 - localizing XAML elements [WPF MSBuild], managing UIDs
 - checking UIDs when localizing XAML elements [WPF MSBuild]
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4e8c5ccae37aba0f287e2c2f9e29ab36371846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 312e174b1bbe0a21d155e4e6b5050e6f41dd8352
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938659"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579547"
 ---
 # <a name="uidmanager-task"></a>UidManager-Aufgabe
 Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisiert oder entfernt eindeutige Bezeichner (UIDs), um alle [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Elemente zu lokalisieren, die in den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Quelldateien enthalten sind.
@@ -34,7 +34,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisie
 | Parameter | Beschreibung |
 |-------------------------| - |
 | `IntermediateDirectory` | Optionaler **String**-Parameter.<br /><br /> Gibt das Verzeichnis an, das zur Sicherung der Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet wird, die vom **MarkupFiles**-Parameter angegeben werden. |
-| `MarkupFiles` | Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt die Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien an, die für UID-Überprüfung, -Aktualisierung oder -Entfernung einbezogen werden. |
+| `MarkupFiles` | Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt die Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien an, die für UID-Überprüfung, -Aktualisierung oder -Entfernung einbezogen werden. |
 | `Task` | Erforderlicher **String**-Parameter.<br /><br /> Gibt die UID-Verwaltungsaufgabe an, die Sie ausführen möchten. Gültige Optionen sind **Check**, **Update** oder **Remove**. |
 
 ## <a name="example"></a>Beispiel
@@ -60,4 +60,4 @@ Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisie
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
-- [Vorgehensweise: Lokalisieren einer Anwendung](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+- [How to: Lokalisieren einer Anwendung](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

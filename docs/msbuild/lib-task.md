@@ -20,17 +20,17 @@ helpviewer_keywords:
 - MSBuild (C++), LIB task
 - LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748092"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578540"
 ---
 # <a name="lib-task"></a>LIB-Aufgabe
 Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung (*lib.exe*). Der Bibliothek-Manager erstellt und verwaltet eine Bibliothek mit Objektdateien im Common Object File Format (COFF). Der Bibliothek-Manager kann darüber hinaus Exportdateien und Importbibliotheken erstellen, um auf exportierte Definitionen zu verweisen. Weitere Informationen finden Sie unter [LIB-Referenz](/cpp/build/reference/lib-reference) und [Ausführen von LIB](/cpp/build/reference/running-lib).
@@ -38,7 +38,7 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung (*lib.exe*).
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der **LIB**-Aufgabe beschrieben. Die meisten Aufgabenparameter entsprechen einer Befehlszeilenoption.
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |**AdditionalDependencies**|Optionaler **String[]** -Parameter.<br /><br /> Gibt zusätzliche Elemente an, die zur Befehlszeile hinzugefügt werden.|
 |**AdditionalLibraryDirectories**|Optionaler **String[]** -Parameter.<br /><br /> Überschreibt den Bibliothekspfad der Umgebung. Geben Sie einen Verzeichnisnamen an.<br /><br /> Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](/cpp/build/reference/libpath-additional-libpath).|
@@ -47,10 +47,10 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung (*lib.exe*).
 |**ErrorReporting**|Optionaler **String**-Parameter.<br /><br /> Gibt an, wie interne Fehlerinformationen an Microsoft gesendet werden, wenn *lib.exe* zur Laufzeit fehlschlägt.<br /><br /> Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.<br /><br /> -   **NoErrorReport** -  **/ERRORREPORT:NONE**<br />-   **PromptImmediately** -  **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** -  **/ERRORREPORT:SEND**<br /><br /> Weitere Informationen finden Sie bei der **/ERRORREPORT**-Befehlszeilenoption unter [Ausführen von LIB](/cpp/build/reference/running-lib).|
 |**ExportNamedFunctions**|Optionaler **String[]** -Parameter.<br /><br /> Gibt eine oder mehrere zu exportierende Funktionen an.<br /><br /> Dieser Parameter entspricht der Option **/EXPORT:** von *lib.exe*.|
 |**ForceSymbolReferences**|Optionaler **String**-Parameter.<br /><br /> Erzwingt, dass *lib.exe* einen Verweis auf das angegebene Symbol einschließt.<br /><br /> Dieser Parameter entspricht der Option **/INCLUDE:** von *lib.exe*.|
-|**IgnoreAllDefaultLibraries**|Optionaler `Boolean` -Parameter.<br /><br /> Bei `true` werden alle Standardbibliotheken aus der Liste der Bibliotheken entfernt, die *lib.exe* beim Auflösen externer Verweise durchsucht.<br /><br /> Dieser Parameter entspricht der parameterlosen Form der Option **/NODEFAULTLIB** von *lib.exe*.|
+|**IgnoreAllDefaultLibraries**|Optionaler `Boolean`-Parameter.<br /><br /> Bei `true` werden alle Standardbibliotheken aus der Liste der Bibliotheken entfernt, die *lib.exe* beim Auflösen externer Verweise durchsucht.<br /><br /> Dieser Parameter entspricht der parameterlosen Form der Option **/NODEFAULTLIB** von *lib.exe*.|
 |**IgnoreSpecificDefaultLibraries**|Optionaler **String[]** -Parameter.<br /><br /> Entfernt die angegebenen Bibliotheken aus der Liste der Bibliotheken, die *lib.exe* beim Auflösen externer Verweise durchsucht.<br /><br /> Dieser Parameter entspricht der Option **/NODEFAULTLIB** von *lib.exe*, die ein `library`-Argument verwendet.|
-|**LinkLibraryDependencies**|Optionaler `Boolean` -Parameter.<br /><br /> `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.|
-|**LinkTimeCodeGeneration**|Optionaler `Boolean` -Parameter.<br /><br /> Gibt bei `true` die Link-Zeitcodegenerierung an.<br /><br /> Dieser Parameter entspricht der Option **/LCTG** von *lib.exe*.|
+|**LinkLibraryDependencies**|Optionaler `Boolean`-Parameter.<br /><br /> `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.|
+|**LinkTimeCodeGeneration**|Optionaler `Boolean`-Parameter.<br /><br /> Gibt bei `true` die Link-Zeitcodegenerierung an.<br /><br /> Dieser Parameter entspricht der Option **/LCTG** von *lib.exe*.|
 |**MinimumRequiredVersion**|Optionaler **String**-Parameter.<br /><br /> Gibt die mindestens erforderliche Version des Subsystems an. Geben Sie eine durch Kommas getrennte Liste von Dezimalzahlen im Bereich von 0 bis 65535 an.|
 |**ModuleDefinitionFile**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Moduldefinitionsdatei (*DEF*) an.<br /><br /> Dieser Parameter entspricht der Option **/DEF** von *lib.exe*, die ein `filename`-Argument verwendet.|
 |**Name**|Optionaler **String**-Parameter.<br /><br /> Gibt beim Erstellen einer Importbibliothek den Namen der DLL an, für welche die Importbibliothek erstellt wird.<br /><br /> Dieser Parameter entspricht der Option **/NAME** von *lib.exe*, die ein `filename`-Argument verwendet.|

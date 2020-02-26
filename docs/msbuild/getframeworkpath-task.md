@@ -13,17 +13,17 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747554"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579642"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
 Ruft den Pfad zu den .NET Framework-Assemblys ab.
@@ -40,7 +40,7 @@ In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe be
 |`FrameworkVersion40Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den Assemblys der Framework-Version 4.0, sofern vorhanden. Andernfalls wird `null` zurückgegeben.|
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den neuesten Frameworkassemblys, sofern diese verfügbar sind. Andernfalls wird `null` zurückgegeben.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Wenn mehrere Versionen von .NET Framework installiert sind, gibt dieser Task die Version zurück, in der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt werden soll.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).

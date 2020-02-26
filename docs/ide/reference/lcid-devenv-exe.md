@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595526"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557935"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -53,13 +53,18 @@ In der folgenden Tabelle sind die LCIDs der von Visual Studio unterstützten Spr
 |--------------|----------|
 |Chinesisch (vereinfacht)|2052|
 |Chinesisch (traditionell)|1028|
+|Tschechisch|1029|
 |Englisch|1033|
 |Französisch|1036|
 |Deutsch|1031|
 |Italienisch|1040|
 |Japanisch|1041|
 |Koreanisch|1042|
+|Polnisch|1045|
+|Portugiesisch (Brasilien)|1046|
+|Russisch|1049|
 |Spanisch|3082|
+|Türkisch|1055
 
 ## <a name="example"></a>Beispiel
 

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588615"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476868"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -78,7 +78,7 @@ Visual Studio enthält mehrere integrierte [.NET Compiler Platform-Analysetools]
 
 ### <a name="c-code-analysis"></a>C++-Codeanalyse
 
-Führen Sie zum Analysieren von C++-Code die [statische Codeanalyse](../code-quality/quick-start-code-analysis-for-c-cpp.md) aus. Sie sollten sich angewöhnen, sie auszuführen, nachdem Sie offensichtliche Fehler behoben haben, die ein erfolgreiches Erstellen verhindern würden. Es lohnt sich, sich die Zeit für die Warnungen zu nehmen. Sie vermeiden so, dass zu einem späteren Zeitpunkt Probleme auftreten, und lernen ggf. etwas über Stiltechniken beim Programmieren.
+Führen Sie zum Analysieren von C++-Code die [statische Codeanalyse](/cpp/code-quality/quick-start-code-analysis-for-c-cpp) aus. Sie sollten sich angewöhnen, sie auszuführen, nachdem Sie offensichtliche Fehler behoben haben, die ein erfolgreiches Erstellen verhindern würden. Es lohnt sich, sich die Zeit für die Warnungen zu nehmen. Sie vermeiden so, dass zu einem späteren Zeitpunkt Probleme auftreten, und lernen ggf. etwas über Stiltechniken beim Programmieren.
 
 Drücken Sie **ALT**+**F11** (oder wählen Sie im oberen Menü **Analysieren** > **Codeanalyse für Projektmappe ausführen** aus), um die statische Codeanalyse zu starten.
 

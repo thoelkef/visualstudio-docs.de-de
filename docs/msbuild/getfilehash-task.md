@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - GetFileHash task [MSBuild]
 - MSBuild, GetFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977502"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578651"
 ---
 # <a name="getfilehash-task"></a>GetFileHash-Aufgabe
 
@@ -37,9 +37,9 @@ Diese Aufgabe wurde in Version 15.8 hinzugefügt, für die Verwendung für MSBui
 |`Files`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br />Die Dateien, die gehasht werden sollen.|
 |`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]`-Ausgabeparameter.<br /><br />Die `Files`-Eingabe mit zusätzlichen Metadaten für den Dateihash.|
 |`Hash`|`String`-Ausgabeparameter.<br /><br />Der Hash der Datei. Diese Ausgabe wird nur festgelegt, wenn genau ein Element übergeben wurde.|
-|`Algorithm`|Optionaler `String` -Parameter.<br /><br />Der Algorithmus. Zulässige Werte: `SHA256`, `SHA384` und `SHA512`. Standard = `SHA256`.|
-|`MetadataName`|Optionaler `String` -Parameter.<br /><br />Der Name der Metadaten, in denen der Hash in jedem Element gespeichert ist. Wird standardmäßig auf `FileHash` festgelegt.|
-|`HashEncoding`|Optionaler `String` -Parameter.<br /><br />Die Codierung für die generierten Hashes. Wird standardmäßig auf `hex` festgelegt. Zulässige Werte: `hex` und `base64`.|
+|`Algorithm`|Optionaler `String`-Parameter.<br /><br />Der Algorithmus. Zulässige Werte: `SHA256`, `SHA384` und `SHA512`. Standard = `SHA256`.|
+|`MetadataName`|Optionaler `String`-Parameter.<br /><br />Der Name der Metadaten, in denen der Hash in jedem Element gespeichert ist. Wird standardmäßig auf `FileHash` festgelegt.|
+|`HashEncoding`|Optionaler `String`-Parameter.<br /><br />Die Codierung für die generierten Hashes. Wird standardmäßig auf `hex` festgelegt. Zulässige Werte: `hex` und `base64`.|
 
 ## <a name="example"></a>Beispiel
 

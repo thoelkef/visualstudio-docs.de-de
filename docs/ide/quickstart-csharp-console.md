@@ -8,19 +8,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e7a0917a07a3e36ec46b0f9e530dd55728e4ee
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180115"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579493"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Schnellstart: Erstellen Ihrer ersten C#-Konsolenanwendung mit Visual Studio
 
@@ -87,7 +87,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 

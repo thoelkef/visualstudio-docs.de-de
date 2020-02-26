@@ -6,20 +6,20 @@ ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
-ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
+ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753962"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579964"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -53,7 +53,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 1. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **.NET Core** aus. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Web-App**. <br/><br/>Benennen Sie Ihre Datei anschließend mit `HelloWorld` und wählen Sie **OK**.
 
@@ -106,7 +106,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 

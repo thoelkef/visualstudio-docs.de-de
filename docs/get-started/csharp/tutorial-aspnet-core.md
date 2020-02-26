@@ -8,20 +8,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252458"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580048"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Erste Schritte mit C# und ASP.NET Core in Visual Studio
 
@@ -59,7 +59,7 @@ Zunächst erstellen Sie ein ASP.NET Core-Projekt. Schon bevor Sie mit der Bearbe
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C#** und anschließend **Web**, und klicken Sie auf **.NET Core**. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Web-App**. Nennen Sie die Datei *MyCoreApp*, und klicken Sie auf **OK**.
 
@@ -125,7 +125,7 @@ Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, fügen Sie ei
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Speichern Sie Ihre Arbeit, wenn Sie dazu aufgefordert werden. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyCoreApp* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***MyCoreApp* ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „MyCoreApp“](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 

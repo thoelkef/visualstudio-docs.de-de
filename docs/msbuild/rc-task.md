@@ -17,17 +17,17 @@ helpviewer_keywords:
 - RC task (MSBuild (C++))
 - MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a0b19487551e7f132ea921eacdbcdb051104f9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912052"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578485"
 ---
 # <a name="rc-task"></a>RC-Aufgabe
 Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-Aufgabe kompiliert Ressourcen in eine *RES*-Datei, z.B. Cursor, Symbole, Bitmaps, Dialogfelder und Schriftarten. Weitere Informationen finden Sie unter [Ressourcencompiler](/windows/desktop/menurc/resource-compiler).
@@ -35,7 +35,7 @@ Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der RC-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Optionaler **String[]** -Parameter.<br /><br /> Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die nach Includedateien durchsucht werden.<br /><br /> Weitere Informationen finden Sie unter der **/I**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Liste der Befehlszeilenoptionen, z.B. /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen **RC**-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie unter den Optionen im Artikel [Verwenden von RC (RC-Befehlszeile)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
