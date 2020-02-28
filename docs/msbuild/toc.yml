@@ -1,10 +1,10 @@
 - name: MSBuild
   items:
-    - name: MsBuild
+    - name: MSBuild
       href: msbuild.md
-    - name: Neues in MSBuild 16.0
+    - name: Neuerungen in MSBuild 16.0
       href: whats-new-msbuild-16-0.md
-    - name: Neues in MSBuild 15.0
+    - name: Neuigkeiten in MSBuild 15.0
       href: what-s-new-in-msbuild-15-0.md
     - name: MSBuild-Grundlagen
       items:
@@ -29,7 +29,7 @@
               href: msbuild-items.md
             - name: Auswählen von Dateien für den Buildvorgang
               href: how-to-select-the-files-to-build.md
-            - name: Ausschließen von Dateien aus den Buildvorgang
+            - name: Ausschließen von Dateien aus dem Buildvorgang
               href: how-to-exclude-files-from-the-build.md
             - name: Anzeigen einer durch Trennzeichen getrennten Elementliste
               href: how-to-display-an-item-list-separated-with-commas.md
@@ -55,7 +55,7 @@
               href: how-to-build-incrementally.md
             - name: Bereinigen eines Builds
               href: how-to-clean-a-build.md
-            - name: Verweisen auf ein MSBuild-Projekt-SDK
+            - name: Verweisen auf ein MSBuild-Projekt SDK
               href: how-to-use-project-sdk.md
         - name: Aufgaben
           items:
@@ -73,7 +73,7 @@
                   href: msbuild-inline-tasks.md
                 - name: 'Exemplarische Vorgehensweise: Erstellen eines Inlinetasks'
                   href: walkthrough-creating-an-inline-task.md
-            - name: MSBuild-Inlinetasks mit RoslynCodeTaskFactory
+            - name: MSBuild-Inlineaufgaben mit RoslynCodeTaskFactory
               href: msbuild-roslyncodetaskfactory.md
         - name: Vergleich von Eigenschaften und Elementen
           href: comparing-properties-and-items.md
@@ -85,7 +85,7 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Verwenden reservierter XML-Zeichen in Projektdateien
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Weiterführende Konzepte
+    - name: Erweiterte Konzepte
       items:
         - name: Weiterführende MSBuild-Konzepte
           href: msbuild-advanced-concepts.md
@@ -99,11 +99,11 @@
               href: item-metadata-in-target-batching.md
         - name: MSBuild-Transformationen
           href: msbuild-transforms.md
-        - name: Integration von Visual Studio
+        - name: Visual Studio-Integration
           items:
-            - name: Integration von Visual Studio (MSBuild)
+            - name: Integration in Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
-            - name: Erweitern des Visual Studio-Buildvorgangs
+            - name: Erweitern des Visual Studio-Buildprozesses
               href: how-to-extend-the-visual-studio-build-process.md
             - name: Erstellen eines Builds von der IDE aus
               href: starting-a-build-from-within-the-ide.md
@@ -173,7 +173,7 @@
         - name: Übersicht
           displayName: logging
           href: logging-in-msbuild.md
-        - name: Erhalten von Buildprotokollen mit MSBuild
+        - name: Abrufen von Buildprotokollen mit MSBuild
           href: obtaining-build-logs-with-msbuild.md
         - name: Buildprotokollierungen
           href: build-loggers.md
@@ -207,7 +207,7 @@
               href: item-element-msbuild.md
             - name: ItemDefinitionGroup-Element
               href: itemdefinitiongroup-element-msbuild.md
-            - name: ItemGroup-Elemente
+            - name: ItemGroup-Element
               href: itemgroup-element-msbuild.md
             - name: ItemMetadata-Element
               href: itemmetadata-element-msbuild.md
@@ -244,7 +244,7 @@
         - name: Aufgabenreferenz
           items:
             - name: Übersicht
-              displayName: Task Reference
+              displayName: task reference
               href: msbuild-task-reference.md
             - name: Spezifische Aufgaben für C++
               items:
@@ -299,9 +299,9 @@
               href: taskextension-base-class.md
             - name: ToolTaskExtension-Basisklasse
               href: tooltaskextension-base-class.md
-            - name: Diagnostizieren von Aufgabenfehlern
+            - name: Diagnostizieren von Taskfehlern
               href: diagnosing-task-failures.md
-            - name: AL (Assembly Linker)-Aufgabe
+            - name: AL-Aufgabe (Assembly Linker)
               href: al-assembly-linker-task.md
             - name: AspNetCompiler-Aufgabe
               href: aspnetcompiler-task.md
@@ -331,9 +331,9 @@
               href: csc-task.md
             - name: Delete-Aufgabe
               href: delete-task.md
-            - name: DownloadFile-Task
+            - name: DownloadFile-Aufgabe
               href: downloadfile-task.md
-            - name: Error-Aufgabe
+            - name: Fehleraufgabe
               href: error-task.md
             - name: Exec-Aufgabe
               href: exec-task.md
@@ -359,7 +359,7 @@
               href: generatetrustinfo-task.md
             - name: GetAssemblyIdentity-Aufgabe
               href: getassemblyidentity-task.md
-            - name: GetFileHash-Task
+            - name: GetFileHash-Aufgabe
               href: getfilehash-task.md
             - name: GetFrameworkPath-Aufgabe
               href: getframeworkpath-task.md
@@ -371,9 +371,9 @@
               href: lc-task.md
             - name: MakeDir-Aufgabe
               href: makedir-task.md
-            - name: Message-Aufgabe
+            - name: Meldungsaufgabe
               href: message-task.md
-            - name: Move-Task
+            - name: Move-Aufgabe
               href: move-task.md
             - name: MSBuild-Aufgabe
               href: msbuild-task.md
@@ -407,15 +407,15 @@
               href: touch-task.md
             - name: UnregisterAssembly-Aufgabe
               href: unregisterassembly-task.md
-            - name: Unzip-Task
+            - name: Unzip-Aufgabe
               href: unzip-task.md
             - name: UpdateManifest-Aufgabe
               href: updatemanifest-task.md
             - name: Vbc-Aufgabe
               href: vbc-task.md
-            - name: VerifyFileHash-Task
+            - name: VerifyFileHash-Aufgabe
               href: verifyfilehash-task.md
-            - name: Warning-Aufgabe
+            - name: Warnungsaufgabe
               href: warning-task.md
             - name: WriteCodeFragment-Aufgabe
               href: writecodefragment-task.md
@@ -427,11 +427,11 @@
               href: xmlpoke-task.md
             - name: XslTransformation-Aufgabe
               href: xsltransformation-task.md
-            - name: ZipDirectory-Task
+            - name: ZipDirectory-Aufgabe
               href: zipdirectory-task.md
         - name: MSBuild-Bedingungen
           href: msbuild-conditions.md
-        - name: MSBuild Conditional Constructs
+        - name: Bedingte Konstrukte in MSBuild
           href: msbuild-conditional-constructs.md
         - name: Reservierte und bekannte Eigenschaften für MSBuild
           href: msbuild-reserved-and-well-known-properties.md
@@ -441,23 +441,23 @@
           href: common-msbuild-project-items.md
         - name: MSBuild-Befehlszeilenreferenz
           href: msbuild-command-line-reference.md
-        - name: .Targets-Dateien von MSBuild
+        - name: TARGETS-Dateien von MSBuild
           href: msbuild-dot-targets-files.md
-        - name: MSBuild bekannte Elementmetadaten
+        - name: Bekannte MSBuild-Elementmetadaten
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild-Antwortdateien
           href: msbuild-response-files.md
         - name: WPF-Referenz
           items:
             - name: Übersicht
-              displayName: WPF MSBuild Reference
+              displayName: WPF MSBuild reference
               href: wpf-msbuild-reference.md
-            - name: .Targets-Dateien von WPF
+            - name: TARGETS-Dateien von WPF
               href: wpf-dot-targets-files.md
             - name: WPF-Taskreferenz
               items:
                 - name: Übersicht
-                  displayName: WPF MSBuild Task Reference
+                  displayName: WPF MSBuild task reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier-Aufgabe
                   href: fileclassifier-task.md
@@ -482,7 +482,7 @@
     - name: Programmgesteuertes Verwenden von MSBuild
       items:
         - name: Übersicht
-          displayName: Use MSBuild Programmatically
+          displayName: Use MSBuild programmatically
           href: msbuild-api.md
         - name: Update auf MSBuild 15
           href: updating-an-existing-application.md

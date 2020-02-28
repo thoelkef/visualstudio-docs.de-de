@@ -487,7 +487,7 @@
                   href: ide/editorconfig-language-conventions.md
                 - name: Formatierungskonventionen
                   href: ide/editorconfig-formatting-conventions.md
-                - name: Namenskonventionen
+                - name: 'Namenskonventionen '
                   href: ide/editorconfig-naming-conventions.md
         - name: Anpassen der Scrollleiste
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
@@ -866,7 +866,7 @@
   href: deployment/index.yml
 - name: Erweitern von Visual Studio >>
   displayName: Visual Studio SDK
-  href: extensibility/visual-studio-sdk.md
+  href: extensibility/index.yml
 - name: Analysieren und Modellieren der Architektur >>
   href: modeling/analyze-and-model-your-architecture.md
 - name: Personalisieren von Visual Studio
