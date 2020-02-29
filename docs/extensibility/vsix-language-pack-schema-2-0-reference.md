@@ -11,12 +11,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: zorio
 author: zoeyr
 manager: jillfra
-ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739328"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169338"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX-Sprachpaket Schema 2,0 Referenz
 
@@ -24,21 +24,21 @@ Das VSIX-Sprachpaket Schema enthält lokalisierte Installationsinformationen fü
 
 ## <a name="language-pack-schema"></a>Sprachpaket Schema
 
-Das Stamm Element der Language Pack-Datei ist `<PackageLanguagePackManifest>`mit dem- `Version`Attribut, das die Version des Sprachpaket Formats ist. In diesem Artikel wird die Version 2,0 des Sprachpaket Formats beschrieben, das im Manifest angegeben ist, indem `Version` das-Attribut auf `Version="2.0.0"`den Wert festgelegt wird. Das root-Element enthält genau ein `<Metadata>` untergeordnetes Element.
+Das Stamm Element der Language Pack-Datei ist `<PackageLanguagePackManifest>`mit dem Attribut `Version`, das die Version des Sprachpaket Formats ist. In diesem Artikel wird die Version 2,0 des Sprachpaket Formats beschrieben, das im Manifest angegeben ist, indem das `Version`-Attribut auf den Wert `Version="2.0.0"`festgelegt wird. Das root-Element enthält genau ein untergeordnetes `<Metadata>` Element.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Packagelanguagepackmanifest-Element
 
-Innerhalb des `<PackageLanguagePackManifest>` -Elements muss das folgende-Element vorhanden sein:
+Innerhalb des `<PackageLanguagePackManifest>` Elements muss das folgende Element vorhanden sein:
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |`<Metadata>`| Das enthaltende Element für alle lokalisierten Paket Metadaten.
 
 ### <a name="metadata-element"></a>Metadata-Element
 
-Innerhalb des `<Metadata>` -Elements können Sie über die folgenden Elemente verfügen:
+Innerhalb des `<Metadata>`-Elements können Sie über die folgenden Elemente verfügen:
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |`<DisplayName>`|Der lokalisierte Name der zu installierenden Erweiterung.|
 |`<Description>`|Die lokalisierte Beschreibung der zu installierenden Erweiterung.|
@@ -53,7 +53,7 @@ Innerhalb des `<Metadata>` -Elements können Sie über die folgenden Elemente ve
 <?xml version="1.0" encoding="utf-8"?>
 <PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <DisplayName>Arbol de Familia</LocalizedName>
+    <DisplayName>Arbol de Familia</DisplayName>
     <Description> Esta extensión pone control personalizado en la caja de herramientas por manejar información de familia.</Description>
     <MoreInfo> http://www.contoso.com/products/es/ArbolDeFamilia.htm</MoreInfo>
     <License>Eula.rtf</License>
@@ -63,9 +63,9 @@ Innerhalb des `<Metadata>` -Elements können Sie über die folgenden Elemente ve
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)|Zeigt, wie Sie eine lokalisierte Installationsunterstützung für ein VSIX-Paket bereitstellen.|
 |[VSIX-Erweiterungs Schema 2,0-Referenz](../extensibility/vsix-extension-schema-2-0-reference.md)|Ein VSIX-Manifest beschreibt den Inhalt einer *VSIX* -Bereitstellungs Datei. Mithilfe der Bereitstellungs Datei können Sie eine Visual Studio-Erweiterung im Dialogfeld **Erweiterungen und Updates** installieren.|

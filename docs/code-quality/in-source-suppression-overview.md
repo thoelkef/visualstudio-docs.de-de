@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587445"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167623"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Code Analyse Warnungen unterdrücken
 
@@ -78,7 +78,7 @@ Zu den Eigenschaften des-Attributs gehören:
 
 - **Bereich** : das Ziel, für das die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es auf das Ziel des Attributs festgelegt. Folgende [Bereiche](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) werden unterstützt:
 
-  - `module`: dieser Bereich unterdrückt Warnungen für eine Assembly. Es handelt sich um eine globale Unterdrückung, die für das gesamte Projekt gilt.
+  - [`module`](#module-suppression-scope) : dieser Bereich unterdrückt Warnungen für eine Assembly. Es handelt sich um eine globale Unterdrückung, die für das gesamte Projekt gilt.
 
   - `resource` (nur[Legacy FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) ) dieser Bereich unterdrückt Warnungen in Diagnoseinformationen, die in Ressourcen Dateien geschrieben werden, die Teil des Moduls (Assembly) sind. Dieser Bereich wird in C#/VB-Compilern für die Roslyn Analyzer-Diagnose, die nur Quelldateien analysiert, nicht gelesen/beachtet.
 
@@ -174,11 +174,19 @@ Unterdrückungen auf globaler Ebene sind die einzige Möglichkeit, Nachrichten z
 > [!NOTE]
 > `Target` enthält immer den voll qualifizierten Elementnamen.
 
-## <a name="global-suppression-file"></a>Globale Unterdrückungs Datei
+### <a name="global-suppression-file"></a>Globale Unterdrückungs Datei
 
 Die globale Unterdrückungs Datei verwaltet Unterdrückungen, bei denen es sich entweder um Unterdrückungen auf globaler Ebene oder um Unterdrückungen handelt, die kein Ziel angeben. Beispielsweise werden Unterdrückungen für Verstöße auf Assemblyebene in dieser Datei gespeichert. Außerdem werden einige ASP.net Unterdrückungen in dieser Datei gespeichert, da Einstellungen auf Projektebene für Code hinter einem Formular nicht verfügbar sind. Eine globale Unterdrückungs Datei wird erstellt und dem Projekt hinzugefügt, wenn Sie zum ersten Mal die Option **in Project Unterdrückungs Datei** des Befehls unter **drücken** im Fenster **Fehlerliste** auswählen.
 
-## <a name="see-also"></a>Siehe auch
+### <a name="module-suppression-scope"></a>Modul Unterdrückungs Bereich
+
+Sie können Code Qualitäts Verletzungen für die gesamte Assembly unterdrücken, indem Sie den **Modul** Bereich verwenden.
+
+Beispielsweise unterdrückt das folgende Attribut in der _globalsuppressive_ -Projektdatei den Konfigurations Wiederholungs Verstoß für ein ASP.net Core Projekt:
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

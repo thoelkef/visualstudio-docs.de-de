@@ -14,24 +14,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec257d67530692fc885d971e21136c10e7a271f6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587679"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167793"
 ---
 # <a name="design-warnings"></a>Entwurfswarnungen
 
-Entwurfs Warnungen unterstützen die Einhaltung der [.net-Entwurfs Richtlinien](/dotnet/standard/design-guidelines/).
+Entwurfs Warnungen unterstützen die Einhaltung der [.NET Framework Entwurfs Richtlinien](/dotnet/standard/design-guidelines/).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-| Regel | Beschreibung |
+| Regel | BESCHREIBUNG |
 | - | - |
 | [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000.md) | Wenn ein statischer Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. In diesen beiden Fällen ist die Syntax zum Angeben des Typarguments unterschiedlich und leicht zu verwechseln. |
 | [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](../code-quality/ca1001.md) | Eine Klasse deklariert und implementiert ein Instanzfeld, das ein System. iverwerfbarer Typ ist, und die Klasse implementiert iverwerfnicht. Eine Klasse, die ein IDisposable-Feld deklariert, besitzt indirekt eine nicht verwaltete Ressource und sollte die IDisposable-Schnittstelle implementieren. |
-| [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002.md) | System.Collections.Generic.List < (der \<(T >) >) ist eine generische Auflistung, die für die Leistung und nicht Vererbung entwickelt wurde. Daher enthält List keine virtuellen Member. Stattdessen sollten die generischen Auflistungen, die im Hinblick auf die Vererbung entworfen wurden, verfügbar gemacht werden. |
+| [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002.md) | System. Collections. Generic. List < (of \<(t >) >) ist eine generische Sammlung, die für Leistung und nicht Vererbung konzipiert ist. Daher enthält List keine virtuellen Member. Stattdessen sollten die generischen Auflistungen, die im Hinblick auf die Vererbung entworfen wurden, verfügbar gemacht werden. |
 | [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003.md) | Ein Typ enthält einen Delegaten, der "void" zurückgibt, dessen Signatur zwei Parameter enthält (das erste Objekt und das zweite einen Typ, der EventArgs zugewiesen werden kann), und die enthaltende Assembly ist .NET Framework 2,0. |
 | [CA1004: Generische Methoden müssen den Typparameter angeben](../code-quality/ca1004.md) | Mithilfe eines Rückschlusses wird das Typargument einer generischen Methode nach dem Typ des an die Methode übergebenen Arguments festgelegt, anstatt nach der expliziten Spezifikation des Typarguments. Um den Rückschluss zu aktivieren, muss die Parametersignatur einer generischen Methode einen Parameter einschließen, der vom selben Typ wie der Typparameter für die Methode ist. In diesem Fall muss das Typargument nicht angegeben werden. Wenn Sie den Rückschluss für alle Typparameter verwenden, ist die Syntax zum Aufrufen von generischen und nicht generischen Instanzmethoden identisch. Dies vereinfacht die Verwendbarkeit generischer Methoden. |
 | [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005.md) | Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen. Es ist in der Regel mit einem Typparameter offensichtlich, wie in List\<t >, und in bestimmten Fällen mit zwei Typparametern, wie in Dictionary\<TKey, TValue >. Mehr als zwei Typparameter hingegen bereiten den meisten Benutzern Schwierigkeiten. |
@@ -88,7 +88,7 @@ Entwurfs Warnungen unterstützen die Einhaltung der [.net-Entwurfs Richtlinien](
 | [CA1061: Basisklassenmethoden nicht ausblenden](../code-quality/ca1061.md) | Eine Methode in einem Basistyp wird durch eine Methode mit identischem Namen in einem abgeleiteten Typ verdeckt, wenn die Parametersignatur der abgeleiteten Methode sich nur hinsichtlich der Typen unterscheidet, die schwächer abgeleitet sind als die entsprechenden Typen in der Parametersignatur der Basismethode. |
 | [CA1062: Argumente von öffentlichen Methoden validieren](../code-quality/ca1062.md) | Alle an extern sichtbare Methoden übergebenen Verweisargumente sollten auf NULL überprüft werden. |
 | [CA1063: IDisposable korrekt implementieren](../code-quality/ca1063.md) | Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren. |
-| [CA1064: Ausnahmen sollten öffentlich sein](../code-quality/ca1064.md) | Eine interne Ausnahme ist nur innerhalb ihres eigenen internen Bereichs sichtbar. Nachdem die Ausnahme den internen Bereich verlassen hat, kann nur die Basisausnahme zum Abfangen der Ausnahme verwendet werden. Wenn die interne Ausnahme von geerbt wird <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, oder <xref:System.ApplicationException?displayProperty=fullName>, der externe Code müssen nicht über genügend Informationen zur Vorgehensweise mit der Ausnahme. |
+| [CA1064: Ausnahmen sollten öffentlich sein](../code-quality/ca1064.md) | Eine interne Ausnahme ist nur innerhalb ihres eigenen internen Bereichs sichtbar. Nachdem die Ausnahme den internen Bereich verlassen hat, kann nur die Basisausnahme zum Abfangen der Ausnahme verwendet werden. Wenn die interne Ausnahme von <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>oder <xref:System.ApplicationException?displayProperty=fullName>geerbt wird, verfügt der externe Code nicht über genügend Informationen, um zu wissen, was mit der Ausnahme zu tun ist. |
 | [CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen](../code-quality/ca1065.md) | Eine Methode, von der das Auslösen von Ausnahmen nicht erwartet wird, löst eine Ausnahme aus. |
 | [CA1068: CancellationToken-Parameter müssen zuletzt angezeigt werden.](../code-quality/ca1068.md) | Eine Methode verfügt über einen CancellationToken-Parameter, der nicht der letzte Parameter ist. |
 | [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210.md) | Der starke Name schützt Clients vor dem versehentlichen Laden einer manipulierten Assembly. Assemblys ohne starke Namen sollten nur in ganz bestimmten Szenarien bereitgestellt werden. Wenn Sie nicht einwandfrei signierte Assemblys freigeben oder verteilen, kann die Assembly manipuliert werden, die Common Language Runtime lädt die Assembly unter Umständen nicht, oder der Benutzer muss die Überprüfung auf dem Computer deaktivieren. |

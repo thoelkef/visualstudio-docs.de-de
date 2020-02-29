@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a41667592b6965497f9b87514719f7d8a5a442
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
+ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75775977"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181118"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wurde, wählen Sie **Debuggen** , > **an den Prozess anhängen** , oder drücken Sie **STRG**+**alt**+**P** in Visual Studio, und fügen Sie den Debugger mit dem Dialogfeld an den Prozess **Anhängen** an den Prozess an.
@@ -149,9 +149,13 @@ Ausführlichere Anweisungen zum Debuggen von ASP.NET-Anwendungen, die in IIS ber
 
 In einigen Fällen werden beim Debuggen in einer Remotedesktop Sitzung (Terminal Dienste) in der Liste **Verfügbare Prozesse** nicht alle verfügbaren Prozesse angezeigt. Wenn Sie Visual Studio als Benutzer mit eingeschränktem Benutzerkonto ausführen, werden in der Liste **Verfügbare Prozesse** keine Prozesse angezeigt, die in Sitzung 0 ausgeführt werden. Sitzung 0 wird für Dienste und andere Server Prozesse einschließlich *w3wp. exe*verwendet. Sie können dieses Problem beheben, indem Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unter einem Administratorkonto oder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] an der Serverkonsole und nicht in einer Terminaldienstesitzung ausführen.
 
-Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit den Prozess anfügen, indem Sie `vsjitdebugger.exe -p <ProcessId>` in der Windows-Befehlszeile ausführen. Die Prozess-ID kann mit *tlist. exe*ermittelt werden. Laden Sie die Debugtools für Windows unter [WDK and WinDbg downloads (Herunterladen von WDK und WinDbg)](/windows-hardware/drivers/download-the-wdk) herunter, um *tlist.exe* abzurufen.
+Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit den Prozess anfügen, indem Sie `vsjitdebugger.exe -p <ProcessId>` in der Windows-Befehlszeile ausführen. Die Prozess-ID kann mit *tlist. exe*ermittelt werden. Laden Sie die Debugtools für Windows unter *WDK and WinDbg downloads (Herunterladen von WDK und WinDbg)* herunter, um [tlist.exe](/windows-hardware/drivers/download-the-wdk) abzurufen.
 
 ::: moniker range=">= vs-2019"
+
+## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Anfügen an einen .net Core-Prozess unter Linux mithilfe von SSH
+
+Weitere Informationen finden Sie unter [Remote Debuggen von .net Core unter Linux mithilfe von SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
 ## <a name="BKMK_Docker_Attach"></a>Anfügen an einen Prozess, der in einem Linux docker-Container ausgeführt wird
 
@@ -221,14 +225,15 @@ Wenn Sie schnell einen laufenden Prozess auswählen möchten, der angefügt werd
 |Szenario|Debug-Methode|Prozessname|Hinweise und Links|
 |-|-|-|-|
 |Remote Debuggen ASP.NET 4 oder 4,5 auf einem IIS-Server|Remote Tools verwenden und **an den Prozess anhängen**|*w3wp.exe*|Weitere Informationen finden Sie [unter Remote Debugging ASP.net auf einem Remote Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remote Debuggen ASP.net Core auf einem IIS-Server|Remote Tools verwenden und **an den Prozess anhängen**|*dotnet.exe*|Informationen zur Bereitstellung von apps finden [Sie unter Veröffentlichen in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Informationen zum Debuggen finden Sie [unter Remote Debugging ASP.net Core auf einem IIS-Remote Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) .|
+|Remote Debuggen ASP.net Core auf einem IIS-Server|Remote Tools verwenden und **an den Prozess anhängen**|" *dotnet. exe* " oder " *appname. exe* "|Informationen zur Bereitstellung von apps finden [Sie unter Veröffentlichen in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Informationen zum Debuggen finden Sie [unter Remote Debugging ASP.net Core auf einem IIS-Remote Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) .|
 |Debuggen des Client seitigen Skripts auf einem lokalen IIS-Server für unterstützte App-Typen |" **An den Prozess anhängen** " verwenden|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Skript Debugging muss aktiviert sein. Für Chrome müssen Sie auch Chrome im Debugmodus ausführen und im Feld **Anfügen an** den **WebKit-Code** auswählen.|
 |Debuggen einer C#-, C++ Visual Basic-oder-App auf dem lokalen Computer|Standard Debuggen (**F5**) oder **an Prozess anhängen** verwenden|*\<appname>.exe*|Verwenden Sie in den meisten Szenarien standardmäßige Debuggen und nicht **an den Prozess anhängen**.|
-|Remote Debuggen einer Windows-Desktop-App|Remotetools|Nicht zutreffend| [Remote Debuggen C# einer](../debugger/remote-debugging-csharp.md) [ C++ App](../debugger/remote-debugging-cpp.md) oder einer Visual Basic-App|
+|Remote Debuggen einer Windows-Desktop-App|Remotetools|–| [Remote Debuggen C# einer](../debugger/remote-debugging-csharp.md) [ C++ App](../debugger/remote-debugging-cpp.md) oder einer Visual Basic-App|
+|Debuggen von .net Core unter Linux|" **An den Prozess anhängen** " verwenden|*dotnet.exe*|Informationen zur Verwendung von SSH finden Sie unter [Remote Debuggen von .net Core unter Linux mithilfe von SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Informationen zur Verwendung eines Linux docker-Containers finden Sie unter [Anfügen an einen Prozess, der in einem Linux docker-Container ausgeführt](#BKMK_Docker_Attach)wird.|
 |Debuggen einer ASP.net-App auf dem lokalen Computer, nachdem Sie die APP ohne den Debugger gestartet haben|" **An den Prozess anhängen** " verwenden|*iiexpress.exe*|Dies kann hilfreich sein, damit die APP schneller geladen wird, z. b. bei der Profilerstellung (z. b.). |
 |Andere unterstützte App-Typen auf einem Server Prozess Debuggen|Wenn der Server Remote ist, Remote Tools verwenden und **an den Prozess anhängen**|*Chrome. exe*, *iexplore. exe*oder andere Prozesse|Verwenden Sie bei Bedarf Ressourcenmonitor, um den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote debugging (Remotedebuggen)](../debugger/remote-debugging.md).|
-|Remote Debuggen einer universellen Windows-app (UWP), onecore, hololens oder IOT-App|Installiertes App-Paket debuggen|Nicht zutreffend|Siehe [Debuggen eines installierten App-Pakets](debug-installed-app-package.md) anstelle von " **an den Prozess anhängen** "|
-|Debuggen Sie eine universelle Windows-app (UWP), onecore, hololens oder IOT-APP, die Sie nicht von Visual Studio aus gestartet haben.|Installiertes App-Paket debuggen|Nicht zutreffend|Siehe [Debuggen eines installierten App-Pakets](debug-installed-app-package.md) anstelle von " **an den Prozess anhängen** "|
+|Remote Debuggen einer universellen Windows-app (UWP), onecore, hololens oder IOT-App|Installiertes App-Paket debuggen|–|Siehe [Debuggen eines installierten App-Pakets](debug-installed-app-package.md) anstelle von " **an den Prozess anhängen** "|
+|Debuggen Sie eine universelle Windows-app (UWP), onecore, hololens oder IOT-APP, die Sie nicht von Visual Studio aus gestartet haben.|Installiertes App-Paket debuggen|–|Siehe [Debuggen eines installierten App-Pakets](debug-installed-app-package.md) anstelle von " **an den Prozess anhängen** "|
 
 ## <a name="use-debugger-features"></a>Verwenden von Debugger-Funktionen
 
@@ -257,7 +262,7 @@ In einigen lokalen debuggingszenarien können Sie in Visual Studio ohne Zugriff 
 
     1. Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** den entsprechenden Prozess aus.
 
-    2. Wählen Sie **Auswählen** aus.
+    2. Wählen Sie **Auswählen**.
 
     3. Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie anschließend den Codetyp aus, der nicht angefügt werden konnte. Deaktivieren Sie die anderen Codetypen.
 
@@ -267,7 +272,7 @@ In einigen lokalen debuggingszenarien können Sie in Visual Studio ohne Zugriff 
 
     Dieses Mal schlägt das Anfügen komplett fehl, und Sie erhalten eine spezifische Fehlermeldung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Debuggen mehrerer Prozesse](../debugger/debug-multiple-processes.md)
 - [Just-In-Time debugging (Just-In-Time-Debuggen)](../debugger/just-in-time-debugging-in-visual-studio.md)
