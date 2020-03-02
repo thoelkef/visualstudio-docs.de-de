@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778725"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476892"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile
 Zum Anzeigen von Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern benötigt das VSPerfReport-Befehlszeilentool Zugriff auf die Symboldateien (*PDB*) der profilierten Komponenten und die Windows-Systemdateien. Symboldateien werden erstellt, wenn eine Komponente kompiliert wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sucht automatisch in den folgenden Speicherorten nach Symboldateien:
@@ -46,9 +46,9 @@ Zum Anzeigen von Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern 
 
 2. Verwenden Sie die folgende Syntax zum Festlegen der **_NT_SYMBOL_PATH**-Umgebungsvariable oder die VSPerfReport /SymbolPath-Option:
 
-    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
+    `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    wobei *LocalStore* der Pfad des lokalen Verzeichnisses ist, das Sie erstellt haben.
+    *<LocalStore>* steht hier für den Pfad des lokalen Verzeichnisses, das Sie erstellt haben.
 
 ## <a name="specify-component-symbol-files"></a>Angeben von Komponentensymboldateien
  Profilerstellungstools suchen nach den *PDB-Dateien* der Komponenten, die Sie in ihren ursprünglichen Speicherorten erstellen möchten, die in den Komponenten oder in den Ordnern mit der Profilerstellungsdatendatei gespeichert werden. Sie können andere Speicherorte zum Suchen angeben, indem Sie eine oder mehrere Pfade zu **_NT_SYMBOL_PATH** oder der **/SymbolPath**-Option hinzufügen. Separate Pfade mit Semikolons.
@@ -56,8 +56,10 @@ Zum Anzeigen von Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern 
 ## <a name="example"></a>Beispiel
  Die folgende Befehlszeile legt die **_NT_SYMBOL_PATH**-Umgebungsvariable auf den Windows-Symbolserver und das lokale Verzeichnis auf **C:\Symbols**.
 
- **set _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
+ ```cmd
+  set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
+ ```
 
  Die folgende VSPerfReport-Befehlszeile fügt mithilfe der **/SymbolPath**-Option das Verzeichnis *C:\Projects\Symbols* zum Suchpfad hinzu.
 
- **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport***MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

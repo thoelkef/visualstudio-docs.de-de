@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275493"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557887"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
@@ -68,6 +68,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | FileAlignment | Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter. |
 | FrameworkPathOverride | Gibt den Speicherort von *mscorlib.dll* und *microsoft.visualbasic.dll* an. Dieser Parameter entspricht der `/sdkpath`-Option des Compilers *vbc.exe*. |
 | GenerateDocumentation | (C#, Visual Basic) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer *XML*-Datei gespeichert. |
+| GenerateFullPaths | (C#) Mit dieser Eigenschaft werden vollständige Pfade für Dateinamen in der Ausgabe mithilfe der Compileroption [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) generiert. |
 | GenerateSerializationAssemblies | Gibt an, ob das XML-Serialisierungsassemblys durch *SGen.exe* generiert werden soll. Die Ausführung kann automatisiert, aktiviert oder deaktiviert werden. Diese Eigenschaft wird für Assemblys verwendet, deren Ziel nur das .NET Framework ist. Zum Generieren von XML-Serialisierungsassemblys für .NET Standard oder .NET Core-Assemblys verweisen Sie auf das NuGet-Paket *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: *\obj\debug\\* . |
 | KeyContainerName | Der Name des Containers mit dem Schlüssel für einen starken Namen. |

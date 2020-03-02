@@ -8,21 +8,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98382cdcde1e8413d7b6592b52aaee09e6c4274c
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 5ddb082bf2451759be239d5c16404e82bcd84733
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923339"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578161"
 ---
 # <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
-Verwenden Sie das Diagnosetool für die **Speicherauslastung** mit integriertem Debugger, um Arbeitsspeicherverluste und nicht effiziente Speicherauslastung zu ermitteln. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und systemeigenen Momentaufnahme-Heaps machen. Sie können Momentaufnahmen von .NET-Apps, ASP.NET-Apps, nativen Apps und Apps im gemischten Modus (.NET und nativ) erfassen.
 
-- Sie können eine einzelne Momentaufnahme analysieren, um die relativen Auswirkungen der Objekttypen auf die Arbeitsspeichernutzung zu verstehen und Code in der App zu suchen, die Arbeitsspeicher auf ineffiziente Weise verwendet.
+Zum Ermitteln von Arbeitsspeicherverlusten und ineffizienter Arbeitsspeichernutzung können Sie Tools wie das im Debugger integrierte Speicherauslastungs-Diagnosetool oder die Tools im Leistungs-Profiler verwenden, z. B. das .NET-Objektzuordnungstool und das Speicherauslastungs-Nachbereitungstool. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und systemeigenen Momentaufnahme-Heaps machen. Sie können Momentaufnahmen von .NET-Apps, ASP.NET-Apps, nativen Apps und Apps im gemischten Modus (.NET und nativ) erfassen. 
 
-- Sie können auch einen Vergleich zweier Momentaufnahmen einer App vornehmen, um Bereiche im Code aufzuspüren, die dazu führen, dass die Arbeitsspeichernutzung im Zeitverlauf zunimmt.
+Das **Speicherauslastungstool** kann für ein geöffnetes Visual Studio-Projekt oder eine installierte Microsoft Store-App ausgeführt oder an eine ausgeführte App bzw. einen Prozess angefügt werden. Sie können das Tool auf lokalen Computern oder Remotecomputern sowie auf einem Simulator oder Emulator ausführen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Weitere Informationen finden Sie im Tutorial [Analysieren der Speicherauslastung](../profiling/memory-usage.md).  Um den Speicherverbrauch für eine.NET Core-Anwendung zu messen, müssen Sie derzeit das Tool mit dem angefügten Debugger verwenden. Für andere verwaltete und native Apps können Sie das Tool entweder mit oder ohne angefügten Debugger verwenden.
+Sie können das **Speicherauslastungstool** mit oder ohne Debuggen ausführen. Im Debugger können Sie die Arbeitsspeicher-Profilerstellung aktivieren bzw. deaktivieren und eine objektspezifische Aufschlüsselung der Arbeitsspeicherauslastung anzeigen. Sie können die Ergebnisse der Arbeitsspeicherauslastung anzeigen, wenn die Ausführung pausiert ist, z. B. an einem Breakpoint.
+
+Das **.NET-Tool für die Objektzuordnung** kann nur zur Nachbereitung ausgeführt werden.
+
+Ausführliche Anweisungen zur Verwendung der Arbeitsspeicheranalyse-Tools finden Sie im Tutorial [Analysieren der Arbeitsspeicherauslastung](../profiling/memory-usage.md) und im Artikel [Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung](../profiling/dotnet-alloc-tool.md).
 
 Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 

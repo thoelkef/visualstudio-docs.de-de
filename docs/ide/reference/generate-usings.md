@@ -11,12 +11,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
+ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610888"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544546"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Hinzufügen fehlender using-Anweisungen in Visual Studio
 
@@ -26,7 +26,7 @@ Diese Codegenerierung gilt für:
 
 **Beschreibung:** Ermöglicht Ihnen das sofortige Hinzufügen erforderlicher Import- oder [Using-Anweisungen](/dotnet/csharp/language-reference/keywords/using-directive) für kopierten und eingefügten Code.
 
-**Hintergrund:** Es ist üblich, Code aus anderen Dateien in Ihrem Projekt oder anderen Quellen zu kopieren und in neuen Code einzufügen. Diese Schnellaktion findet fehlende Import-Anweisungen für Code, der kopiert und eingefügt wurde, und fordert Sie dann dazu auf, sie hinzuzufügen.
+**Hintergrund:** Es ist üblich, Code aus anderen Dateien in Ihrem Projekt oder anderen Quellen zu kopieren und in neuen Code einzufügen. Diese Schnellaktion findet fehlende Import-Anweisungen für Code, der kopiert und eingefügt wurde, und fordert Sie dann dazu auf, sie hinzuzufügen. Diese Codekorrektur kann auch Verweise von einem Projekt auf ein anderes Projekt hinzufügen.
 
 **Vorteile**: Da die Schnellaktion erforderliche Import-Anweisungen automatisch hinzufügt, müssen Sie die in Ihrem Code erforderlichen `using`-Anweisungen nicht manuell kopieren.
 

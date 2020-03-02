@@ -15,19 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def9edb232a37bc58a56ffd1ec9a16bcb1b75092
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4a0ef3fc6fe446ccda5479c95301d71efa84be4
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590318"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557803"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenz zum MSBuild-Projektdateischema
+
 Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sowie ihren verfügbaren Attributen und untergeordneten Elementen.
 
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet Projektdateien, um der Build-Engine anzuzeigen, was wie erstellt werden soll. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien sind XML-Dateien, für die das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-XML-Schema gilt. Dieser Abschnitt beschreibt die XML-Schemadefinitionsdatei (*XSD*) für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
+Der Schemalink ist in MSBuild-Projektdateien ab Visual Studio 2017 nicht erforderlich. Wenn er vorhanden ist, sollte er unabhängig der Version von Visual Studio ` http://schemas.microsoft.com/developer/msbuild/2003` sein.
+
 ## <a name="msbuild-xml-schema-elements"></a>XML-Schemaelemente von MSBuild
+
  Die folgende Tabelle enthält alle XML-Schemaelemente von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sowie die untergeordneten Elemente und Attribute.
 
 |Element|Untergeordnete Elemente|Attribute|
@@ -56,6 +60,7 @@ Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](
 |[When-Element (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|Bedingung|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

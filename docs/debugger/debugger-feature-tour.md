@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599302"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578954"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -33,7 +33,7 @@ Wenn Sie eine Datei im Code-Editor geöffnet haben, können Sie einen Breakpoint
 
 ![Haltepunkt festlegen](../debugger/media/dbg-tour-set-a-breakpoint.gif "Haltepunkt festlegen")
 
-Drücken Sie die Taste **F5** (**Debuggen > Debuggen starten**), oder klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Der Debugger wird anschließend bis zum ersten Haltepunkt ausgeführt. Wenn die App noch nicht ausgeführt wird, kann der Debugger durch Drücken der Taste F5 gestartet werden und hält am ersten Breakpoint an.
+Drücken Sie die Taste **F5** (**Debuggen > Debuggen starten**), oder klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Debuggen starten**![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Der Debugger wird anschließend bis zum ersten Haltepunkt ausgeführt. Wenn die App noch nicht ausgeführt wird, kann der Debugger durch Drücken der Taste F5 gestartet werden und hält am ersten Breakpoint an.
 
 Breakpoints sind eine nützliche Funktion, wenn Ihnen die Codezeile oder der Codeabschnitt bekannt ist, die bzw. den Sie genauer untersuchen möchten.
 
@@ -93,7 +93,7 @@ Mit diesem Befehl wird die Ausführung der App so lange fortgesetzt (und der Deb
 
 ## <a name="run-to-cursor"></a>Ausführen bis Cursor
 
-Beenden Sie den Debugger, indem Sie auf die rote Schaltfläche **Debuggen beenden** ![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Debuggen beenden") klicken oder die Tastenkombination **UMSCHALTTASTE** + **F5** verwenden.
+Beenden Sie den Debugger, indem Sie auf die rote Schaltfläche **Debuggen beenden**![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Debuggen beenden") klicken oder die Tastenkombination **UMSCHALTTASTE** + **F5** verwenden.
 
 Klicken Sie mit der rechten Maustaste auf eine Codezeile in Ihrer App, und wählen Sie **Ausführen bis Cursor** aus. Dadurch wird das Debuggen gestartet und ein temporärer Breakpoint in der aktuellen Codezeile festgelegt.
 
@@ -110,7 +110,7 @@ Dieser Befehl ist nützlich, wenn Sie Code bearbeiten und schnell einen temporä
 
 ## <a name="restart-your-app-quickly"></a>Schnelles Neustarten Ihrer App
 
-Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "App neu starten") (**STRG+UMSCHALTTASTE+F5**).
+Klicken Sie in der Symbolleiste „Debuggen“ auf **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "App neu starten") (**STRG + UMSCHALT + F5**).
 
 Durch das Klicken auf **Neu starten** sparen Sie im Vergleich zum Beenden der App und dem erneuten Starten des Debuggers Zeit. Der Debugger hält am ersten Breakpoint an, der bei der Codeausführung erreicht wird.
 
@@ -229,6 +229,10 @@ Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die S
 ![Schaltflächen „Schritt zurück“ und „Schritt vorwärts“](../debugger/media/intellitrace-step-back-icons-description.png  "Schaltflächen „Schritt zurück“ und „Schritt vorwärts“")
 
 Weitere Informationen finden Sie auf der Seite [Inspect previous app states using IntelliTrace (Untersuchen vorheriger App-Zustände mithilfe von IntelliTrace)](../debugger/view-historical-application-state.md).
+
+## <a name="debug-performance-issues"></a>Debuggen von Leistungsproblemen
+
+Wenn Ihre App langsam ausgeführt wird oder zu viel Arbeitsspeicher nutzt, müssen Sie Ihre App möglicherweise frühzeitig mit den Profilerstellungstools testen. Weitere Informationen über Profilerstellungstools wie das CPU-Auslastungstool und des Arbeitsspeicheranalyzer finden Sie in der [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

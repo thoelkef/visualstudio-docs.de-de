@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593251"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557949"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -256,7 +256,7 @@ Das **RunConfiguration**-Element kann folgende Elemente enthalten:
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Ein oder mehrere Pfade zu dem Verzeichnis, in dem die Testadapter gespeichert sind.|
-|**MaxCpuCount**|1|Durch diese Einstellung wird der Umfang der parallelen Ausführung gesteuert, wenn Komponententests ausgeführt werden, bei denen die auf dem Computer verfügbaren Kerne verwendet werden. Die Testausführungs-Engine startet für jeden verfügbaren Kern einen eigenständigen Prozess und übergibt an jeden Kern einen Container mit auszuführenden Tests. Ein Container kann eine Assembly, eine DLL oder ein relevantes Artefakt sein. Der Testcontainer ist die Planungseinheit. In jedem Container werden die Tests entsprechend dem Testframework ausgeführt. Gibt es viele Container, werden Prozesse, sobald das Ausführen ihrer Tests in einem Container abgeschlossen ist, an den nächsten verfügbaren Container übergeben.<br /><br />MaxCpuCount kann Folgendes sein:<br /><br />n, wobei 1 < = n < = Anzahl von Kernen: bis zu n Prozesse werden gestartet.<br /><br />n, wobei n = beliebiger anderer Wert: die Anzahl von gestarteten Prozessen kann bis zur Anzahl der verfügbaren Kerne betragen.|
+|**MaxCpuCount**|1|Durch diese Einstellung wird der Umfang der parallelen Ausführung gesteuert, wenn Komponententests ausgeführt werden, bei denen die auf dem Computer verfügbaren Kerne verwendet werden. Die Testausführungs-Engine startet für jeden verfügbaren Kern einen eigenständigen Prozess und übergibt an jeden Kern einen Container mit auszuführenden Tests. Ein Container kann eine Assembly, eine DLL oder ein relevantes Artefakt sein. Der Testcontainer ist die Planungseinheit. In jedem Container werden die Tests entsprechend dem Testframework ausgeführt. Gibt es viele Container, werden Prozesse, sobald das Ausführen ihrer Tests in einem Container abgeschlossen ist, an den nächsten verfügbaren Container übergeben.<br /><br />MaxCpuCount kann Folgendes sein:<br /><br />n, wobei 1 < = n < = Anzahl von Kernen: bis zu n Prozesse werden gestartet.<br /><br />n, wobei n = beliebiger anderer Wert: die Anzahl von gestarteten Prozessen kann maximal der Anzahl der verfügbaren Kerne entsprechen. Legen Sie beispielsweise n = 0 fest, damit die Plattform automatisch die optimale Anzahl der zu startenden Prozesse anhand der Umgebung ermittelt.|
 |**TestSessionTimeout**||Ermöglicht Benutzern, eine Testsitzung zu beenden, wenn sie ein angegebenes Timeout überschreitet. Die Einstellung eines Timeouts stellt sicher, dass die Ressourcen gut ausgenutzt werden und Testsitzungen auf einen bestimmten Zeitraum beschränkt bleiben. Diese Einstellung ist in **Visual Studio 2017 Version 15.5** und höher verfügbar.|
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adapter für diagnostische Daten (Datensammler)

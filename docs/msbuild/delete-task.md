@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567462"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557967"
 ---
 # <a name="delete-task"></a>Delete-Aufgabe
 Löscht die angegebene Datei.
@@ -39,6 +39,9 @@ In der folgenden Tabelle werden die Parameter der `Delete` -Aufgabe beschrieben.
 
 ## <a name="remarks"></a>Hinweise
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
+
+> [!WARNING]
+> Seien Sie vorsichtig, wenn Sie Platzhalter mit dem `Delete`-Task verwenden. Es kann schnell passieren, dass Sie mit Ausdrücken wie `$(SomeProperty)\**\*.*` oder `$(SomeProperty)/**/*.*` die falschen Dateien löschen, insbesondere dann, wenn die Eigenschaft als leere Zeichenfolge ausgewertet wird. In diesem Fall kann der `Files`-Parameter in das Stammverzeichnis Ihres Laufwerks ausgewertet werden, was dazu führen kann, dass deutlich mehr gelöscht wird als gewünscht.
 
 ## <a name="example"></a>Beispiel
 Im folgenden Beispiel wird die Datei *MyApp.pdb* gelöscht.

@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Remotedebuggen von ASP.NET auf einem Computer mit IIS
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Remotedebuggen von ASP.NET in Azure
+        - name: Remotedebuggen von ASP.NET Core in Azure
           href: remote-debugging-azure.md
         - name: 'Remotedebuggen eines C#- oder Visual Basic-Projekts'
           href: remote-debugging-csharp.md
         - name: Remotedebuggen eines C++-Projekts
           href: remote-debugging-cpp.md
+        - name: Remotedebuggen von .NET Core unter Linux
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Remotedebugger – Portzuweisungen
           href: remote-debugger-port-assignments.md
         - name: Konfigurieren der Windows-Firewall für das Remotedebuggen

@@ -7,19 +7,19 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186833"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580000"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Erstellen Ihrer ersten Anwendung für die Universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -39,7 +39,7 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
 ::: moniker range="vs-2017"
 1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie auf der Menüleiste oben auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 1. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **Universelles Windows** aus. Wählen Sie im mittleren Bereich **Leere App (universelles Windows)** aus. Benennen Sie das Projekt mit *HalloWelt*, und wählen Sie **OK**.
 
@@ -166,7 +166,7 @@ Jetzt können wir die UWP-App „Hallo Welt“ erstellen, bereitstellen und star
 
    ![Klicken Sie auf lokaler Computer, um Ihre UWP-App zu starten und zu debuggen.](media/uwp-start-or-debug.png)
 
-   (Alternativ können Sie zum Starten Ihrer App auf der Menüleiste **Debuggen** > **Debugging starten** auswählen oder F5 drücken.)
+   (Alternativ können Sie zum Starten Ihrer App in der Menüleiste auf **Debuggen** > **Debugging starten** klicken oder F5 drücken.)
 
 1. Sehen Sie sich Ihre App an, die gleich nach der Anzeige eines Begrüßungsbildschirms angezeigt wird. Die App sollte ungefähr folgendermaßen aussehen:
 
@@ -186,7 +186,7 @@ Jetzt können wir die UWP-App „Hallo Welt“ erstellen, bereitstellen und star
 
    ![Klicken Sie auf lokaler Computer, um Ihre UWP-App zu starten und zu debuggen.](media/uwp-start-or-debug.png)
 
-   (Alternativ können Sie zum Starten Ihrer App auf der Menüleiste **Debuggen** > **Debugging starten** auswählen oder F5 drücken.)
+   (Alternativ können Sie zum Starten Ihrer App in der Menüleiste auf **Debuggen** > **Debugging starten** klicken oder F5 drücken.)
 
 1. Sehen Sie sich Ihre App an, die gleich nach der Anzeige eines Begrüßungsbildschirms angezeigt wird. Die App sollte ungefähr folgendermaßen aussehen:
 

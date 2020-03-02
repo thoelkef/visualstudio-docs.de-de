@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632454"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590704"
 ---
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
@@ -168,7 +168,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
 1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
    ![„Datei“ > „Neu“ > „Projekt“ in der Menüleiste](../media/file-new-project-menu.png)
 
@@ -218,7 +218,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Führen Sie die App erneut aus, indem Sie **Debuggen** > **Ohne Debuggen starten** auswählen oder **STRG**+**F5** drücken.
+1. Führen Sie die App noch mal aus, indem Sie auf **Debuggen** > **Ohne Debuggen starten** klicken oder **STRG**+**F5** drücken.
 
    Visual Studio erstellt die App neu, und Sie werden im nun geöffneten Konsolenfenster zur Eingabe Ihres Namens aufgefordert.
 
@@ -287,7 +287,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Führen Sie die App erneut aus, indem Sie **Debuggen** > **Ohne Debuggen starten** auswählen oder **STRG**+**F5** drücken.
+1. Führen Sie die App noch mal aus, indem Sie auf **Debuggen** > **Ohne Debuggen starten** klicken oder **STRG**+**F5** drücken.
 
    Visual Studio erstellt die App neu, und Sie werden im nun geöffneten Konsolenfenster zur Eingabe Ihres Namens aufgefordert.
 
@@ -333,7 +333,7 @@ Benennen Sie zunächst die Variable `name` um:
 
 ::: moniker-end
 
-4. Im Folgenden wird IntelliSense näher erläutert. Geben Sie unterhalb der Zeile `Console.WriteLine($"\nHello {username}!");` `DateTime now = DateTime.` ein.
+4. Im Folgenden wird IntelliSense näher erläutert. Geben Sie unterhalb der Zeile `Console.WriteLine($"\nHello {username}!");``DateTime now = DateTime.` ein.
 
    Ein Feld zeigt die Members der Klasse <xref:System.DateTime> an. Darüber hinaus wird die Beschreibung des aktuell ausgewählten Members in einem separaten Feld angezeigt.
 
@@ -413,7 +413,7 @@ Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispi
 
 ::: moniker range="vs-2017"
 
-2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und wählen Sie anschließend **OK** aus.
+2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
    Das Farbdesign wird für die gesamte IDE in **Dunkel** geändert.
 
@@ -423,7 +423,7 @@ Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispi
 
 ::: moniker range=">=vs-2019"
 
-2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und wählen Sie anschließend **OK** aus.
+2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
    Das Farbdesign wird für die gesamte IDE in **Dunkel** geändert.
 

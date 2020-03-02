@@ -7,17 +7,17 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3611a98a55d25e1ac31b8c8e0370a68b858441c9
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443137"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579474"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Schreiben von multiprozessorfähigen Protokollierungen
 Die Fähigkeit von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], mehrere Prozessoren zu verwenden, kann die Dauer der Projekterstellung deutlich verringern, jedoch auch die Komplexität der Buildereignisprotokollierung erhöhen. In einer Umgebung mit nur einem Prozessor gehen Ereignisse, Meldungen, Warnungen und Fehler auf vorhersehbare, geordnete Weise bei der Protokollierung ein. In einer Umgebung mit mehreren Prozessoren können jedoch Ereignisse aus verschiedenen Quellen gleichzeitig und ungeordnet eintreffen. Um diese verarbeiten zu können, bietet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] eine neue multiprozessorfähige Protokollierung und ein neues Protokollierungsmodell. Außerdem können Sie benutzerdefinierte „Weiterleitungsprotokollierungen“ erstellen.

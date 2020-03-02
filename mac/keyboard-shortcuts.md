@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984565"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567971"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Standardtastenkombinationen in Visual Studio für Mac
 
@@ -20,6 +20,13 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 
 > [!TIP]
 > Für die in diesem Dokument angegebenen Tastenkombinationen sowie für die Voreinstellungen der Tastenzuordnung in Visual Studio für Mac werden die gängigen macOS-Symbole verwendet. Sollten Sie sich bei einem Symbol nicht sicher sein, sehen Sie sich die [Tabelle mit den macOS-Tastensymbolen](#macos-key-symbols-lookup) an.
+
+## <a name="downloadable-quick-ref-pdfs"></a>Herunterladbare PDF-Dateien mit Kurzreferenzen
+
+In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwendeten und nützlichsten Tastenkombinationen zusammengefasst. Es stehen zwei Versionen zur Auswahl: eine für Tastenkombinationen in Visual Studio für Mac, und eine Version mit Visual Studio-Tastenkombinationen für Benutzer, die beide Versionen parallel verwenden und bereits mit Visual Studio unter Windows vertraut sind.
+
+ - [Kurzreferenz: Standardtastenkombinationen in Visual Studio für Mac](https://aka.ms/vsm-keys)
+ - [Kurzreferenz: Standardtastenkombinationen in Visual Studio und Visual Studio für Mac](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>Codenavigation
 

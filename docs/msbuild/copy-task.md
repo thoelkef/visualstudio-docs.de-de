@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed57982fb177a49ed89bbe601d753fe155aba22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596085"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558169"
 ---
 # <a name="copy-task"></a>Copy-Aufgabe
 Kopiert Dateien an einen neuen Speicherort im Dateisystem.
@@ -36,7 +36,7 @@ In der folgenden Tabelle werden die Parameter der `Copy` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`CopiedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Elemente, die erfolgreich kopiert wurden.|
+|`CopiedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Elemente, die erfolgreich kopiert wurden, *einschließlich* derer, die nicht tatsächlich kopiert sondern übersprungen wurden, weil sie bereits auf dem neuesten Stand sind und `SkipUnchangedFiles` den Wert `true` aufweist.|
 |`DestinationFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Liste der Dateien an, in die die Quelldateien kopiert werden sollen. Diese Liste soll der im `SourceFiles`-Parameter angegebenen Liste eins zu eins entsprechen. Das heißt, die erste in `SourceFiles` angegebene Datei wird an den ersten in `DestinationFiles` angegebenen Speicherort kopiert usw.|
 |`DestinationFolder`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt das Verzeichnis an, in das die Dateien kopieren werden sollen. Es muss sich um ein Verzeichnis handeln, nicht um eine Datei. Wenn das Verzeichnis nicht vorhanden ist, wird es automatisch erstellt.|
 |`OverwriteReadOnlyFiles`|Optionaler `Boolean`-Parameter.<br /><br /> Überschreibt Dateien, auch wenn diese als schreibgeschützte gekennzeichnet sind|
