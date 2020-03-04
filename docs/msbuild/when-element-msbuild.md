@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 481be1f0e9c5444e56c95b13e938cda1d541af71
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566896"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630924"
 ---
 # <a name="when-element-msbuild"></a>When-Element (MSBuild)
+
 Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 
  \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
@@ -41,6 +42,7 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -64,11 +66,13 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 |[Choose-Element (MSBuild)](../msbuild/choose-element-msbuild.md)|Wertet untergeordnete Elemente aus, um einen auszuführenden Codeabschnitt auszuwählen.|
 
 ## <a name="remarks"></a>Hinweise
+
  Wenn das `Condition`-Attribut TRUE ergibt, werden die untergeordneten Elemente `ItemGroup` und `PropertyGroup` des `When`-Elements ausgeführt, und alle nachfolgenden `When`-Elemente werden übersprungen.
 
  Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [Conditional Constructs (Bedingte Konstrukte)](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Beispiel
+
  Das folgende Projekt verwendet das `Choose`-Element, um auszuwählen, welche Gruppe von Eigenschaftswerten in den `When`-Elementen festgelegt werden soll. Wenn die `Condition`-Attribute beider `When`-Elemente `false` ergeben, werden die Eigenschaftswerte im `Otherwise`-Element festgelegt.
 
 ```xml
@@ -117,5 +121,6 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Bedingte Konstrukte](../msbuild/msbuild-conditional-constructs.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

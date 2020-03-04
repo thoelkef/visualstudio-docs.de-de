@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594799"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634057"
 ---
 # <a name="generateresource-task"></a>GenerateResource-Aufgabe
+
 Konvertiert zwischen *TXT-* und *RESX*-Dateien (im XML-basierten Ressourcenformat) und binären *RESOURCES*-Dateien der Common Language Runtime, die in eine ausführbare Laufzeitbinärdatei eingebettet oder in Satellitenassemblys kompiliert werden können. Diese Aufgabe dient normalerweise zum Konvertieren von *TXT*- oder *RESX*-Dateien in *RESOURCES*-Dateien. Die `GenerateResource`-Aufgabe ist funktional identisch mit [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
 ## <a name="parameters"></a>Parameter
+
 In der folgenden Tabelle werden die Parameter der `GenerateResource` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -61,6 +63,7 @@ In der folgenden Tabelle werden die Parameter der `GenerateResource` -Aufgabe be
 |`UseSourcePath`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wird angegeben, dass das Verzeichnis der Eingabedatei zum Auflösen relativer Dateipfade verwendet werden soll.|
 
 ## <a name="remarks"></a>Hinweise
+
 Da *RESX*-Dateien Links zu anderen Ressourcendateien enthalten können, ist es nicht ausreichend, nur die Zeitstempel von *RESX*- und *RESOURCES*-Dateien zu vergleichen, um festzustellen, ob die Ausgaben aktuell sind. Stattdessen folgt die `GenerateResource`-Aufgabe den Links in den *RESX*-Dateien und prüft ebenfalls die Zeitstempel der verknüpften Dateien. Dies bedeutet, dass Sie `Inputs`- und `Outputs`-Attribute nicht allgemein für das Ziel verwenden sollten, das die `GenerateResource`-Aufgabe enthält, da dies dazu führen könnte, dass es übersprungen wird, wenn es tatsächlich ausgeführt werden sollte.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
@@ -68,6 +71,7 @@ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter vo
 Bei der Verwendung von MSBuild 4.0 für .NET 3.5-Projekte könnte bei der Ausführung des Builds auf x86-Ressourcen ein Fehler auftreten. Um dieses Problem zu umgehen, können Sie das Ziel als AnyCPU-Assembly erstellen.
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird die `GenerateResource`-Aufgabe verwendet, um *RESOURCES*-Dateien aus den Dateien zu generieren, die von der `Resx`-Elementsammlung angegeben werden.
 
 ```xml
@@ -95,5 +99,6 @@ Unter der Voraussetzung, dass die Assembly „myAssembly“ genannt wird, generi
 Ohne die \<LogicalName>-Metadaten würde die Ressource den Namen *myAssembly.myResource.resources* erhalten.  Dieses Beispiel gilt nur für den Visual Basic- und Visual C#-Buildprozess.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

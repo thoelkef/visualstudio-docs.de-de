@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e3526f130a8717dec2dafeef794375ceffc37c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579618"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633979"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths-Aufgabe
+
 Gibt den Verweisassemblypfad der verschiedenen Frameworks zurück
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `GetReferenceAssemblyPaths` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -36,8 +38,10 @@ Gibt den Verweisassemblypfad der verschiedenen Frameworks zurück
 |`TargetFrameworkMonikerDisplayName`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Ziel-Frameworklinkpfad an|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

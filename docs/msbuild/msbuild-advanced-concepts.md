@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592125"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633446"
 ---
 # <a name="msbuild-advanced-concepts"></a>Weiterführende MSBuild-Konzepte
+
 Die Dokumente in diesem Abschnitt wird beschrieben, wie erweiterte Techniken zum Verbessern der Builds verwendet werden, die Sie mithilfe von MSBuild ausführen.
 
 ## <a name="related-topics"></a>Verwandte Themen
@@ -32,5 +33,6 @@ Die Dokumente in diesem Abschnitt wird beschrieben, wie erweiterte Techniken zum
 |[Bewährte Methoden](../msbuild/msbuild-best-practices.md)|Empfiehlt bewährte Methoden zum Schreiben von MSBuild-Skripts.|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
 - [Protokollierung in MSBuild](../msbuild/logging-in-msbuild.md)

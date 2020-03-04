@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596124"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634408"
 ---
 # <a name="compare-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
+
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.
 
 - Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md).
@@ -25,9 +26,11 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
 - Elemente sind Objekte, die in der Regel Dateien darstellen. Elementobjekten können Metadatensammlungen zugeordnet sein. Metadaten sind Name/Wert-Paare. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
 ## <a name="scalars-and-vectors"></a>Skalare und Vektoren
+
 Da MSBuild-Eigenschaften Name/Wert-Paare sind, die nur einen Zeichenfolgenwert aufweisen, werden sie häufig als *Skalar* bezeichnet. Da MSBuild-Elementtypen Listen von Elementen sind, werden sie häufig als *Vektor* bezeichnet. In der Praxis können Eigenschaften jedoch mehrere Werte darstellen, und Elementtypen können null oder ein Element aufweisen.
 
 ### <a name="target-dependency-injection"></a>Zielabhängigkeitsinjektion
+
 Um zu verstehen, wie Eigenschaften mehrere Werte darstellen können, können Sie sich ein häufiges Verwendungsmuster für das Hinzufügen eines Ziels zu einer zu erstellenden Liste von Zielen vorstellen. Diese Liste wird in der Regel durch einen Eigenschaftswert dargestellt, wobei die Zielnamen durch Semikolons getrennt sind.
 
 ```xml
@@ -56,6 +59,7 @@ Der obige Code fügt das Ziel CustomBuild zur Zielliste hinzu, wodurch `BuildDep
 Ab MSBuild 4.0 ist die Zielabhängigkeitsinjektion veraltet. Verwenden Sie stattdessen die Attribute `AfterTargets` und `BeforeTargets`. Weitere Informationen finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).
 
 ### <a name="conversions-between-strings-and-item-lists"></a>Konvertierungen zwischen Zeichenfolgen und Elementlisten
+
 MSBuild führt nach Bedarf Konvertierungen von und nach Elementtypen und Zeichenfolgenwerten durch. Um zu verstehen, wie eine Elementliste zu einem Zeichenfolgenwert werden kann, können Sie sich vorstellen, was geschieht, wenn ein Elementtyp als Wert einer MSBuild-Eigenschaft verwendet wird:
 
 ```xml
@@ -70,6 +74,7 @@ MSBuild führt nach Bedarf Konvertierungen von und nach Elementtypen und Zeichen
 Der Elementtyp OutputDir hat ein `Include`-Attribut mit dem Wert „KeyFiles\\;Certificates\\“. MSBuild analysiert diese Zeichenfolge, und es resultieren die beiden Elemente: KeyFiles\ und Certificates\\. Wenn der Elementtyp OutputDir als Wert der Eigenschaft OutputDirList verwendet wird, konvertiert („vereinfacht“) MSBuild den Elementtyp in die durch Semikolons getrennte Zeichenfolge „KeyFiles\\;Certificates\\“.
 
 ## <a name="properties-and-items-in-tasks"></a>Eigenschaften und Elemente in Aufgaben
+
 Eigenschaften und Elemente werden als Ein- und Ausgaben für MSBuild-Aufgaben verwendet. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
 Eigenschaften werden als Attribute an Aufgaben übergeben. Innerhalb der Aufgabe wird eine MSBuild-Eigenschaft durch einen Eigenschaftentyp dargestellt, dessen Wert in und aus einer Zeichenfolge konvertiert werden kann. Die unterstützten Eigenschaftentypen umfassen `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` und alle Typen, die <xref:System.Convert.ChangeType%2A> verarbeiten kann.
@@ -79,6 +84,7 @@ Elemente werden als <xref:Microsoft.Build.Framework.ITaskItem>-Objekte an Aufgab
 Die Elementliste eines Elementtyps kann als Array von `ITaskItem`-Objekten übergeben werden. Ab .NET Framework 3.5 können Elemente mithilfe des `Remove`-Attributs aus einer Elementliste in einem Ziel entfernt werden. Da Elemente aus einer Elementliste entfernt werden können, kann ein Elementtyp über 0 (null) Elemente verfügen. Wenn eine Elementliste an eine Aufgabe übergeben wird, muss der Code in der Aufgabe diese Möglichkeit überprüfen.
 
 ## <a name="property-and-item-evaluation-order"></a>Auswertungsreihenfolge von Eigenschaften und Elementen
+
 Während der Auswertungsphase eines Builds werden importierte Dateien in der Reihenfolge in den Build integriert, in der sie vorkommen. Eigenschaften und Elemente werden in drei Durchläufen in der folgenden Reihenfolge definiert:
 
 - Eigenschaften werden in der Reihenfolge definiert und geändert, in der sie vorkommen.
@@ -104,6 +110,7 @@ Das stimmt allerdings nicht ganz. Wenn eine Eigenschaft, eine Elementdefinition 
   - Eigenschaften und Elemente, die in Zielen definiert sind, werden zusammen in der Reihenfolge ausgewertet, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt, und Eigenschaftswerte werden in Ausdrücken erweitert. Elementwerte und Elementtransformationen werden ebenfalls erweitert. Die Eigenschaftswerte, Elementtypwerte und Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Geringfügige Auswirkungen der Auswertungsreihenfolge
+
 In der Auswertungsphase eines Builds erfolgt die Auswertung von Eigenschaften vor der Auswertung von Elementen. Trotzdem können Eigenschaften Werte besitzen, die scheinbar von Elementwerten abhängen. Sehen Sie sich das folgende Skript an.
 
 ```xml
@@ -179,4 +186,5 @@ KeyFileVersion: 1.0.0.3
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md)

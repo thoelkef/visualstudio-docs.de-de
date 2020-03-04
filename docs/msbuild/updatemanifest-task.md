@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 215092d7fbcee8ec30210dd8332bc6ae5b7ad412
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578278"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631341"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest-Aufgabe
+
 Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Signieren erneut aus.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `UpdateManifest` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -37,8 +39,10 @@ Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Si
 |`OutputManifest`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Ausgabeparameter.<br /><br /> Gibt das Manifest an, das geupdatete Eigenschaften enthält|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

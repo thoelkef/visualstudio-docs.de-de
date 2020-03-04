@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 417c4536f13aa90505ec5e69b2719219af0d7e81
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 64b76b31e96947914c9a641ed4ceb23c7761eb85
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595162"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632679"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference-Aufgabe
+
 Löst native Verweise auf. Implementiert die <xref:Microsoft.Build.Tasks.ResolveNativeReference>-Klasse. Diese Klasse unterstützt die .NET Framework-Infrastruktur, die nicht für eine direkte Verwendung im Code vorgesehen ist.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
  In der folgenden Tabelle werden die Parameter der `ResolveNativeReference` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -43,8 +45,10 @@ Löst native Verweise auf. Implementiert die <xref:Microsoft.Build.Tasks.Resolve
 |`NativeReferences`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Ruft die systemeigenen Win32-Assemblyverweise ab oder legt diese fest.|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebbc2a036700c26ccd6ca3bec7b235722432e9f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2628f06ac4eafc7d57123460771793005597b039
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595175"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632692"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles-Aufgabe
+
 Löst folgende Elemente im Buildprozess in Dateien für die Manifestgenerierung auf: erstellte Elemente, Abhängigkeiten, Satelliten, Inhalte, Debugsymbole und Dokumentationen
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `ResolveManifestFiles` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -47,8 +49,10 @@ Löst folgende Elemente im Buildprozess in Dateien für die Manifestgenerierung 
 |`TargetFrameworkVersion`|Optionaler `String`-Parameter.<br /><br /> Gibt die .NET Framework-Zielversion an|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

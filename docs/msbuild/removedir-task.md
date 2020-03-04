@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0827e05b2c295df2922c5f58d6a47d52e9a50e3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595994"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632796"
 ---
 # <a name="removedir-task"></a>RemoveDir-Aufgabe
+
 Entfernt die angegebenen Verzeichnisse und alle enthaltenen Dateien und Unterverzeichnisse
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `RemoveDir` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -37,9 +39,11 @@ Entfernt die angegebenen Verzeichnisse und alle enthaltenen Dateien und Unterver
 |`RemovedDirectories`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Verzeichnisse, die erfolgreich gelöscht wurden|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel werden die von den Eigenschaften `OutputDirectory` und `DebugDirectory` angegebenen Verzeichnisse entfernt. Diese Pfade werden als relativ zum Projektverzeichnis behandelt.
 
 ```xml
@@ -59,5 +63,6 @@ Entfernt die angegebenen Verzeichnisse und alle enthaltenen Dateien und Unterver
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

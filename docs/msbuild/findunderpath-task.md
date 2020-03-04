@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33912df490b148c91c2a0d152f979bd6149d8ae3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566071"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634135"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath-Aufgabe
+
 Bestimmt, welche Elemente in der angegebenen Elementauflistung über Pfade im oder unter dem angegebenen Ordner verfügen
 
 ## <a name="parameters"></a>Parameter
+
 In der folgenden Tabelle werden die Parameter der `FindUnderPath` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -40,9 +42,11 @@ In der folgenden Tabelle werden die Parameter der `FindUnderPath` -Aufgabe besch
 |`UpdateToAbsolutePaths`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn TRUE, werden die Pfade der Ausgabeelemente als absolute Pfade aktualisiert.|
 
 ## <a name="remarks"></a>Hinweise
+
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird die `FindUnderPath`-Aufgabe verwendet um zu bestimmen, ob die im `MyFiles`-Element enthaltenen Dateien über Pfade verfügen, die unter dem Pfad existieren, der von der `SearchPath`-Eigenschaft angegeben wird. Nach Abschluss der Aufgabe enthält das Element `FilesNotFoundInPath` die Datei *File1.txt*. Das Element `FilesFoundInPath` enthält die Datei *File2.txt*.
 
 ```xml
@@ -73,6 +77,7 @@ Im folgenden Beispiel wird die `FindUnderPath`-Aufgabe verwendet um zu bestimmen
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

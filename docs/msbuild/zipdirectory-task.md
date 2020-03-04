@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4bf72509610e9d397e4b208294112fcc0975b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588329"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630638"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory-Aufgabe
+
 Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 
 >[!NOTE]
 >Die `ZipDirectory`-Aufgabe ist nur in MSBuild 15.8 und höher verfügbar.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `ZipDirectory` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -45,9 +47,11 @@ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 |`SourceDirectory`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Legt das Verzeichnis fest, aus dem ein *ZIP*-Archiv erstellt werden soll.|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel wird nach dem Erstellen des Projekts ein *ZIP*-Archiv aus dem Ausgabeverzeichnis erstellt.
 
 ```xml
@@ -63,5 +67,6 @@ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

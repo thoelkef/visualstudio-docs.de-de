@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c45f22011c32378af0690c9aee226877faf903bd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593355"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634460"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
+
 Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).
 
 ## <a name="parameters"></a>Parameter
+
  Im Folgenden werden die Parameter der **CL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 - **AdditionalIncludeDirectories**
@@ -801,4 +803,5 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
    Weitere Informationen finden Sie unter den Parametern **TLogReadFiles** und **TLogWriteFiles** in dieser Tabelle.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

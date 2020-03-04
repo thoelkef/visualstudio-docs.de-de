@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e37c57119f74b9ab5f3157c6b88f9405799a2e82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 32ce6fcad3897443f178c45d84e16f4cff44ab03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596098"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634382"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath-Aufgabe
+
 Konvertiert einen relativen Pfad oder einen Verweis in einen absoluten Pfad
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
  In der folgenden Tabelle werden die Parameter der `ConvertToAbsolutePath` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -37,8 +39,10 @@ Konvertiert einen relativen Pfad oder einen Verweis in einen absoluten Pfad
 |`AbsolutePaths`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Die Liste mit absoluten Pfaden für die Elemente, die übergeben wurden|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

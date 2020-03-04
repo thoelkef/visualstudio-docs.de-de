@@ -1,6 +1,6 @@
 ---
 title: Ausdrücke im Debugger | Microsoft-Dokumentation
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736212"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235002"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Ausdrücke im Visual Studio-Debugger
 Der Visual Studio-Debugger beinhaltet eine Ausdrucksauswertung, die aktiv wird, wenn Sie einen Ausdruck in das Dialogfeld **Schnellüberwachung** , in das Fenster **Überwachen** oder in das Fenster **Direkt** eingeben. Die Ausdruckauswertung ist auch im Fenster **Haltepunkte** sowie an vielen anderen Stellen im Debugger aktiv.
@@ -101,10 +101,10 @@ Systeminterne Debugger-Funktionen:
 |----------|-------------------------|
 |**Zeichenfolgenlänge**|strlen, wcslen, strnlen, wcsnlen|
 |**Zeichenfolgenvergleich**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Zeichenfolgensuche**|strchr, wcschr, strstr, wcsstr|
-|**Win32**|GetLastError(), TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Für diese Funktionen muss der Prozess, der debuggt wird, auf Windows. 8 ausgeführt werden. Das Debuggen von Dumpdateien, die von einem Windows 8-Gerät generiert werden, erfordert auch, dass auf dem Visual Studio-Computer Windows 8 ausgeführt wird. Wenn Sie für ein Windows 8-Gerät Remotedebuggen durchführen, kann auf dem Visual Studio-Computer Windows 7 ausgeführt werden.|
-|**Sonstiges**|__log2<br /><br /> Gibt die Protokollbasis 2 einer angegebenen ganzen Zahl auf die nächste kleinere ganze Zahl gerundet zurück.|
+|**Zeichenfolgensuche**|Straume, wcschr, memchr, wmemchr, straul, wcsstr|
+|**Win32**|GetLastError, TlsGetValue|
+|**Windows 8**|Windowsgetstringlen, windowsgetstringrawbuffer<br /><br /> Für diese Funktionen muss der Prozess, der debuggt wird, auf Windows. 8 ausgeführt werden. Das Debuggen von Dumpdateien, die von einem Windows 8-Gerät generiert werden, erfordert auch, dass auf dem Visual Studio-Computer Windows 8 ausgeführt wird. Wenn Sie für ein Windows 8-Gerät Remotedebuggen durchführen, kann auf dem Visual Studio-Computer Windows 7 ausgeführt werden.|
+|**Verschiedenes**|__log2//gibt die Protokoll Basis 2 einer angegebenen ganzen Zahl zurück, gerundet auf die nächstgelegene untere Ganzzahl.<br /><br />__findNonNull, decodehstring, windowscomparestringordinal, roinspectcapturedstackbacktrace, codecodeproxy, getenvblocklength, decodewinrtrestrictedexception, dynamicmembership Lookup, decodepointer, dynamiccast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//parallelcurrency:: Array < >:: Operator [Index < >] und Operator (Index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//parallelcurrency:: Array < >:: Operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//parallelcurrency:: Array < >:: Operator [tiled_index < >] und Operator (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Parallelität:: array_view < >:: Operator [Index < >] und Operator (Index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Parallelitäts:: array_view < >:: Operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Parallelität:: array_view < >:: Operator [tiled_index < >] und Operator (tiled_index < >)<br /><br />TreeTraverse_Init//Initialisiert einen neuen Baum Durchlauf.<br /><br />TreeTraverse_Next//gibt Knoten in einer Struktur zurück.<br /><br />TreeTraverse_Skip//überspringt Knoten in einem ausstehenden Struktur Durchlauf "|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI – Nicht unterstützte Ausdrücke
 
@@ -204,7 +204,7 @@ Neue Variablen können in Debuggerfenstern nicht explizit deklariert werden. All
 
 - Schlüsselwörter der Namespace- oder Modulebene, wie `End Sub` oder `Module`.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)
 - [Kontextoperator (C++)](../debugger/context-operator-cpp.md)
 - [Formatbezeichner in C#](../debugger/format-specifiers-in-csharp.md)

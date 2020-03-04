@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593654"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633316"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
+
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
  Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Dies vereinfacht das Nachverfolgen von Quellcode und das Bereitstellen der Aufgabe. Der Quellcode ist im Skript integriert.
 
  In MSBuild 15.8 wurde [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) hinzugefügt, womit plattformübergreifende .NET Standard-Inlineaufgaben erstellt werden können.  Wenn Sie Inlineaufgaben in .NET Core verwenden müssen, müssen Sie RoslynCodeTaskFactory verwenden.
 ## <a name="the-structure-of-an-inline-task"></a>Struktur von Inlineaufgaben
+
  Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
 
 ```xml
@@ -68,6 +70,7 @@ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineau
 > Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.
 
 ### <a name="code-element"></a>Codeelement
+
  Als letztes untergeordnetes Element wird im `Task`-Element das `Code`-Element angegeben. Das `Code`-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten. Welche Elemente Sie im `Code`-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.
 
  Das `Language`-Attribut gibt die Sprache an, in die der Code geschrieben ist. Zulässige Werte sind `cs` für C# und `vb` für Visual Basic.
@@ -88,6 +91,7 @@ Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über
 > Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.
 
 ## <a name="helloworld"></a>HelloWorld
+
  Im Folgenden finden Sie eine robustere Inlineaufgabe. Die HalloWelt-Aufgabe gibt „Hallo, Welt!“ auf dem Standardgerät für die Fehlerprotokollierung aus. In der Regel handelt es sich dabei um die Systemkonsole oder das Fenster **Ausgabe** in Visual Studio. Das `Reference`-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Eingabe- und Ausgabeparameter
+
  Inlineaufgabenparameter bilden untergeordnete Elemente eines `ParameterGroup`-Elements. Jeder Parameter akzeptiert den Namen des Elements, das von ihm definiert wird. Im folgenden Code wird der Parameter `Text` definiert.
 
 ```xml
@@ -162,6 +167,7 @@ definiert die folgenden drei Parameter:
 Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.
 
 ## <a name="example"></a>Beispiel
+
  Mit der folgenden Inlineaufgabe wird jedes Vorkommen eines Tokens in der angegebenen Datei durch den angegebenen Wert ersetzt.
 
 ```xml
@@ -190,5 +196,6 @@ File.WriteAllText(Path, content);
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Exemplarische Vorgehensweise: Erstellen eines Inlinetasks](../msbuild/walkthrough-creating-an-inline-task.md)

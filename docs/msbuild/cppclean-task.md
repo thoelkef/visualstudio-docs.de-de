@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596072"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634343"
 ---
 # <a name="cppclean-task"></a>CPPClean-Aufgabe
+
 Löscht die temporären Dateien, die MSBuild erstellt, wenn ein C++-Projekt erstellt wird. Das Löschen von Builddateien wird *Bereinigen* genannt.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der **CPPClean**-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -41,4 +43,5 @@ Löscht die temporären Dateien, die MSBuild erstellt, wenn ein C++-Projekt erst
 |**FoldersToClean**|Erforderlicher `String` -Parameter.<br /><br /> Gibt eine durch ein Semikolon getrennte Liste von Verzeichnissen an, die bereinigt werden sollen. Sie können einen vollständigen oder einen relativen Pfad angeben, und der relative Pfad kann ein Platzhaltersymbol (*) enthalten.|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

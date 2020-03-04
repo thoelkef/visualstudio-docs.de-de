@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578540"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633589"
 ---
 # <a name="lib-task"></a>LIB-Aufgabe
+
 Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung (*lib.exe*). Der Bibliothek-Manager erstellt und verwaltet eine Bibliothek mit Objektdateien im Common Object File Format (COFF). Der Bibliothek-Manager kann darüber hinaus Exportdateien und Importbibliotheken erstellen, um auf exportierte Definitionen zu verweisen. Weitere Informationen finden Sie unter [LIB-Referenz](/cpp/build/reference/lib-reference) und [Ausführen von LIB](/cpp/build/reference/running-lib).
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der **LIB**-Aufgabe beschrieben. Die meisten Aufgabenparameter entsprechen einer Befehlszeilenoption.
 
 |Parameter|Beschreibung|
@@ -66,4 +68,5 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung (*lib.exe*).
 |**Verbose**|Optionaler **Boolean**-Parameter.<br /><br /> Bei `true` werden Details zum Fortschritt der Sitzung angezeigt. Dies schließt die Namen der hinzuzufügenden *OBJ*-Dateien ein. Die Informationen werden an die Standardausgabe gesendet und können in eine Datei umgeleitet werden.<br /><br /> Weitere Informationen finden Sie bei der Option **/VERBOSE** unter [Ausführen von LIB](/cpp/build/reference/running-lib).|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

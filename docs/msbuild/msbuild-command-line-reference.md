@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb95da599e6362ad32c0ef94dcf9c184269ddedf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278400"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633407"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild-Befehlszeilenreferenz
 
@@ -85,6 +85,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noConsoleLogger|-noconlog|Deaktiviert die standardmäßige Konsolenprotokollierung und protokolliert keine Ereignisse in der Konsole.|
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel wird das `rebuild`-Ziel des Projekts *MyProject.proj* erstellt.
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>Beispiel
+
  Mit *MSBuild.exe* sind auch komplexere Builds möglich. So können Sie das Tool zum Beispiel verwenden, um bestimmte Ziele von bestimmten Projekten in einer Projektmappe zu erstellen. Im folgenden Beispiel wird das Projekt `NotInSolutionFolder` neu erstellt, und das Projekt `InSolutionFolder`, das sich im Projektmappenordner *NewFolder* befindet, wird gelöscht.
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)
 - [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)

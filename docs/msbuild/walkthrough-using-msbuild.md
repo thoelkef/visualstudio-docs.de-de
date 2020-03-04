@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567293"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631080"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 
@@ -192,6 +192,7 @@ Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Einga
  später in der Projektdatei oder in einer später in die Projektdatei importierten Datei angegeben ist, nimmt TargetFrameworkVersion den neuen Wert "v3.5" an.
 
 ## <a name="examine-a-property-value"></a>Untersuchen eines Eigenschaftswerts
+
  Den Wert einer Eigenschaft rufen Sie mit der folgenden Syntax ab, wobei PropertyName den Namen der Eigenschaft darstellt:
 
 ```xml
@@ -411,6 +412,7 @@ Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie 
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude und Platzhalter
+
  Sie können mit dem Include-Attribut die Platzhalter „*“, „\*\*“ und „?“ verwenden, um einem Elementtyp Elemente hinzuzufügen. Ein auf ein Objekt angewendeter
 
 ```xml
@@ -486,6 +488,7 @@ In diesem Beispiel wird die Datei *Form1.cs*, die im vorherigen Elementelement h
     ```
 
 ## <a name="item-metadata"></a>Elementmetadaten
+
  Zusätzlich zu den Informationen aus dem Include-Attribut und dem Exclude-Attribut können Elemente Metadaten enthalten. Diese Metadaten können von Aufgaben verwendet werden, die neben dem Elementwert weitere Informationen zu den Elementen erfordern.
 
  Elementmetadaten werden in der Projektdatei deklariert, indem ein Element mit dem Namen der Metadaten als untergeordnetes Element des Elements erstellt wird. Ein Element kann über 0 (null) oder mehr Metadatenwerte verfügen. Das folgende CSFile-Element weist z. B. Culture-Metadaten mit dem Wert "Fr" auf:

@@ -3,15 +3,15 @@ title: Superadministrator- und Administratorrolle im Verwaltungsportal
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Superadministrator- und Administratorrolle und das Zuweisen von Administratoren.
-ms.openlocfilehash: 1beda505008815b87a0de98ee597d7b5ec97693d
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000940"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234824"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Superadministratoren und Administratoren für Visual Studio-Abonnementverträge
 
@@ -39,6 +39,13 @@ So weisen Sie neue Administratoren zu:
 
 ## <a name="resources"></a>Ressourcen
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Erfahren Sie, wie Sie [Abonnements zuweisen](assign-license.md).

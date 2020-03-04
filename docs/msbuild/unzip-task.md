@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b02108e2ee47a31ced196643bf917b3b63c1c6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594902"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631509"
 ---
 # <a name="unzip-task"></a>Unzip-Aufgabe
+
 Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
 
 >[!NOTE]
 >Die `Unzip`-Aufgabe ist nur in MSBuild 15.8 und höher verfügbar.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `Unzip` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -46,9 +48,11 @@ Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
 |`SourceFiles`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt eine oder mehrere zu entzippende Dateien an. Wenn mehrere Dateien angegeben werden, werden diese der Reihenfolge nach im selben Ordner entzippt.|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel wird ein Archiv entzippt, und alle schreibgeschützten Dateien werden überschrieben.
 
 ```xml
@@ -66,5 +70,6 @@ Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

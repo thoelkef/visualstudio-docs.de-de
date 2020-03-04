@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22be291184ebf02ae0455f5b4656b1dec976dc89
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578285"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631496"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly-Aufgabe
+
 Hebt die Registrierung der angegebenen Assemblys für COM-Interop-Zwecke auf Führt den umgekehrten Vorgang der [RegisterAssembly-Aufgabe](../msbuild/registerassembly-task.md) aus
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `UnregisterAssembly` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -38,11 +40,13 @@ Hebt die Registrierung der angegebenen Assemblys für COM-Interop-Zwecke auf Fü
 |`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Hebt die angegebene Typbibliothek in der angegebenen Assembly auf. **Hinweis**:  Dieser Parameter ist nur erforderlich, wenn der Name der Typbibliotheksdatei und der Name der Assembly sich unterscheiden.|
 
 ## <a name="remarks"></a>Hinweise
+
  Zum erfolgreichen Ausführen der Aufgabe muss die Assembly nicht vorhanden sein. Wenn Sie versuchen, die Registrierung einer Assembly aufzuheben, die nicht vorhanden ist, wird die Aufgabe mit einer Warnung abgeschlossen. Dies liegt daran, dass die Aufgabe dafür verantwortlich ist, die Assemblyregistrierung aus der Registrierung zu entfernen. Wenn die Assembly nicht vorhanden ist, befindet sie sich nicht in der Registrierung, und der Task wird erfolgreich abgeschlossen.
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension>-Klasse, die selbst von der <xref:System.MarshalByRefObject>-Klasse erbt. Die Klasse `MarshalByRefObject` stellt die gleichen Funktionen wie die Klasse <xref:Microsoft.Build.Utilities.Task> bereit, kann aber in ihrer eigenen Anwendungsdomäne instanziiert werden.
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel wird die `UnregisterAssembly`-Aufgabe verwendet, um die Registrierung der Assembly unter dem von den Eigenschaften `OutputPath` und `FileName` festgelegten Pfad (falls vorhanden) aufzuheben.
 
 ```xml
@@ -61,6 +65,7 @@ Hebt die Registrierung der angegebenen Assemblys für COM-Interop-Zwecke auf Fü
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [RegisterAssembly-Aufgabe](../msbuild/registerassembly-task.md)
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

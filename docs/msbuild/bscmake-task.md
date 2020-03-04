@@ -20,20 +20,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0c95c37e24f8c51453a849159073baff8dca0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593420"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634512"
 ---
 # <a name="bscmake-task"></a>BscMake-Aufgabe
+
 > [!IMPORTANT]
 > BscMake wird nicht mehr von der Visual Studio-IDE verwendet werden. Seit Visual Studio 2008 werden Browseinformationen automatisch in einer *SDF*-Datei im *Projektmappenordner* gespeichert.
 
  Führt das Microsoft-Wartungshilfsprogramm zum Durchsuchen von Informationen aus (*bscmake.exe*).  Das Tool *bscmake.exe* erstellt eine Browseinformationsdatei ( *.bsc*) von Quellbrowserdateien ( *.sbr*), die während der Kompilierung erstellt werden. Verwenden Sie den **Objektkatalog**, um eine *BSC*-Datei anzuzeigen. Weitere Informationen finden Sie unter [BSCMAKE-Referenz](/cpp/build/reference/bscmake-reference).
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der **BscMake**-Aufgabe beschrieben. Die meisten Aufgabenparameter entsprechen einer Befehlszeilenoption.
 
 |Parameter|Beschreibung|
@@ -46,4 +48,5 @@ ms.locfileid: "75593420"
 |**TrackerLogDirectory**|Optionaler **String**-Parameter.<br /><br /> Gibt das Verzeichnis für das Nachverfolgungsprotokoll an.|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

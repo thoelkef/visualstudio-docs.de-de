@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a52e0d770a535b0fa7d29a379a7f6aba63e62d78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 533f87eba9032efa7dc60ac682bbe400cb640727
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593342"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634434"
 ---
 # <a name="combinepath-task"></a>CombinePath-Aufgabe
-Kombiniert die angegebenen Pfade zu einem einzigen Pfad.
 
+Kombiniert die angegebenen Pfade zu einem einzigen Pfad.
 ## <a name="task-parameters"></a>Aufgabenparameter
+
  In der folgenden Tabelle werden die Parameter der [CombinePath-Aufgabe](../msbuild/combinepath-task.md) beschrieben.
+
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -36,8 +38,10 @@ Kombiniert die angegebenen Pfade zu einem einzigen Pfad.
 |`CombinedPaths`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Der kombinierte Pfad, der durch diese Aufgabe erstellt wurde|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

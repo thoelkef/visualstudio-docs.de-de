@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c0793cc6d9f11cd1074c5cd0091687b154c069
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: cf34ff63b00cf523ba9ef704f4417be4d5cdbf77
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579462"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630704"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
+
 Schreibt Protokolldateien für den aktuellen Kontext
 
 ## <a name="syntax"></a>Syntax
@@ -32,6 +33,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ```
 
 #### <a name="parameters"></a>Parameter
+
 [in] `intermediateDirectory`
 
  Das Verzeichnis, in dem das Nachverfolgungsprotokoll gespeichert werden soll
@@ -41,10 +43,13 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  Der Stammname des Namens der Protoktolldatei
 
 ## <a name="return-value"></a>Rückgabewert
+
  Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext erstellt wurde
 
 ## <a name="requirements"></a>Anforderungen
+
  **Header:** *FileTracker.h*
 
 ## <a name="see-also"></a>Siehe auch
+
 - [WriteAllTLogs](../msbuild/writealltlogs.md)

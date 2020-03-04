@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892134"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706392"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Vorgehensweise: Einfügen von XML-Kommentaren für die Generierung der Dokumentation
 
@@ -50,7 +50,7 @@ Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly vert
 
 Sie können in XML-Kommentaren Stile verwenden, die beim Zeigen auf das Element in der QuickInfo gerendert werden. Zu diesen Stilen zählen z. B. die Kursiv- oder Fettformatierung, Aufzählungslisten und klickbare Links.
 
-   ![Vervollständigter Kommentar](media/doc-styles-cs.png) 
+   ![Vervollständigter Kommentar](media/doc-style-cs.png) 
 
 > [!NOTE]
 > Es gibt eine [Option](../../ide/reference/options-text-editor-csharp-advanced.md) zum Ein- und Ausblenden von XML-Dokumentationskommentaren nach der Eingabe von `///` in C# oder `'''` in Visual Basic. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus, um das Dialogfeld **Optionen** zu öffnen. Navigieren Sie dann zu **Text-Editor** > **C#** oder **Basic** > **Advanced** (Basic > Erweitert). Suchen Sie im Abschnitt **Editor-Hilfe** nach der Option **XML-Dokumentationskommentare generieren**.

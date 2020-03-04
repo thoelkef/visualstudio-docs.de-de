@@ -9,17 +9,19 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: be8b4a6845e8fd14a0649f4134bcc26d8e1ad08e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574950"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633823"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Vorgehensweise: Ignorieren von Fehlern in Aufgaben
+
 Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist. Wenn diese nicht kritischen Aufgaben fehlschlagen, soll der Buildvorgang fortgesetzt werden, da er immer noch die gewünschte Ausgabe erzeugen kann. Wenn z.B. ein Projekt eine Aufgabe `SendMail` zum Senden einer E-Mail-Nachricht verwendet, nachdem jede Komponente erzeugt wurde, sollte der Build bis zum Abschluss weiterarbeiten, selbst wenn der Mailserver nicht verfügbar ist und die Statusnachricht nicht gesendet werden kann. Oder wenn beispielsweise temporäre Dateien während des Buildvorgangs normalerweise gelöscht werden, sollte der Build auch bis zum Abschluss weiterarbeiten, selbst wenn diese Dateien nicht gelöscht werden können.
 
 ## <a name="use-the-continueonerror-attribute"></a>Verwenden des ContinueOnError-Attributs
+
 Das Attribut `ContinueOnError` des Elements `Task` steuert, ob ein Build beendet oder fortgesetzt wird, wenn eine Aufgabe fehlschlägt. Dieses Attribut steuert auch, ob Fehler als Fehler oder Warnungen behandelt werden, wenn der Buildvorgang fortgesetzt wird.
 
 Das Attribut `ContinueOnError` kann einen oder mehrere der folgenden Werte enthalten:
@@ -43,6 +45,7 @@ Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Zum Beispiel:
 ```
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Codebeispiel wird veranschaulicht, dass das `Build`-Ziel weiter ausgeführt wird und der Build als erfolgreich betrachtet wird, selbst wenn die Aufgabe `Delete` fehlschlägt.
 
 ```xml
@@ -62,6 +65,7 @@ Im folgenden Codebeispiel wird veranschaulicht, dass das `Build`-Ziel weiter aus
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Aufgaben](../msbuild/msbuild-tasks.md)

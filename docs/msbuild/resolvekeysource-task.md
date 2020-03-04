@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b3917e1c67014a780d11e2ae9a944844e63e25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3aa4e2454a0216e697ed12404091eb0ef16416cb
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595188"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632705"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource-Aufgabe
+
 Bestimmt die Schlüsselquelle mit starkem Namen
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
  In der folgenden Tabelle werden die Parameter der `ResolveKeySource` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -45,8 +47,10 @@ Bestimmt die Schlüsselquelle mit starkem Namen
 |`SuppressAutoClosePasswordPrompt`|Optionaler `Boolean`-Parameter.<br /><br /> Dient zum Abrufen oder Festlegen eines booleschen Werts, der angibt, ob das Dialogfeld mit der Eingabeaufforderung für das Kennwort nicht automatisch geschlossen werden soll.|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

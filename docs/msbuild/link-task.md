@@ -30,17 +30,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592203"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633576"
 ---
 # <a name="link-task"></a>Link-Aufgabe
+
 Umschließt das Microsoft C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool, das Objektdateien und Bibliotheken im COFF-Format (Common Object File Format) miteinander verbindet, um eine ausführbare Datei ( *.exe*) oder eine DLL (Dynamic Link Library) zu erstellen. Weitere Informationen finden Sie unter [Linkeroptionen](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Parameter
+
  Im Folgenden werden die Parameter der **Link**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 - **AdditionalDependencies**
@@ -924,4 +926,5 @@ Umschließt das Microsoft C++-Linkertool (*link.exe*). Das Linkertool ist ein To
   Weitere Informationen finden Sie unter [/VERSION (Versionsinformationen)](/cpp/build/reference/version-version-information).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

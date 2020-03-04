@@ -19,22 +19,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578121"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630651"
 ---
 # <a name="xdcmake-task"></a>XDCMake-Aufgabe
+
 Umschließt das XML-Dokumentationstool (*xdcmake.exe*), das die XML-Dokument-Kommentardateien ( *.xdc*) in einer *XML*-Datei zusammengeführt.
 
  Es wird eine *XDC*-Datei erstellt, wenn Sie Dokumentationskommentare in Ihren C++-Quellcode eingeben und mithilfe der Compileroption [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) kompilieren. Weitere Informationen finden Sie unter [XDCMake-Verweis](/cpp/build/reference/xdcmake-reference), [Eigenschaftenseiten für das Tool XML-Dokument-Generator](/cpp/build/reference/xml-document-generator-tool-property-pages) und unter der Befehlszeilenhilfe-Option ( **/?** ) für *xdcmake.exe*.
 
 ## <a name="remarks"></a>Hinweise
+
  Standardmäßig unterstützt das *xdcmake.exe*-Tool einige Befehlszeilenoptionen. Zusätzliche Optionen werden bei der Angabe der **/old**-Befehlszeilenoption unterstützt.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der **XDCMake**-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -50,4 +53,5 @@ Umschließt das XML-Dokumentationstool (*xdcmake.exe*), das die XML-Dokument-Kom
 |**TrackerLogDirectory**|Optionaler **String**-Parameter.<br /><br /> Gibt das Verzeichnis für das Nachverfolgungsprotokoll an.|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

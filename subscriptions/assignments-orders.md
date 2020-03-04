@@ -3,15 +3,15 @@ title: Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen| V
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortung von Administratoren hinsichtlich des Nachverfolgens von Benutzerzuweisungen und des Verarbeitens von Aufträgen.
-ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967337"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235224"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Nachverfolgen der Benutzerzuweisungen und der Verarbeitung von Aufträgen
 Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie die Nutzung von Visual Studio und die Verarbeitung von Aufträgen nachverfolgen und darauf achten, ob die Nutzung im Vergleich zu dem Zeitplan angestiegen ist, der in der Volumenlizenzierungsvereinbarung oder der Microsoft Produkt- und Servicevereinbarung festgelegt wurde. Das neue Administrationsportal für Visual Studio-Abonnements hat zur Vereinfachung dieser Aufgabe einen einfachen, hilfreichen Tracker implementiert, der die verfügbaren und bereits verwendeten Lizenzen anzeigt.
@@ -36,6 +36,12 @@ Möglicherweise weisen Sie Abonnements monatlich über Programme wie „Open Lic
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise, MPSA und ausgewählte Vereinbarungen
 Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihnen Flexibilität im Hinblick auf die Verwendung und Lizenzierung von Visual Studio-Software über einen gewissen Zeitraum hinweg. Visual Studio-Administratoren müssen eine jährliche True Up-Bestellung aufgeben, um die Anzahl ihrer Softwarelizenzen entsprechend dem maximalen Nutzungswert aufzustocken, der für die Dauer der Vereinbarung festgelegt wurde.
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:
 - [Administratoraufgaben](admin-responsibilities.md)
@@ -43,7 +49,3 @@ Weitere Informationen zu den Aufgaben von Administratoren:
 - [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
 - Verwenden der [maximalen Auslastung](maximum-usage.md) zum Nachverfolgen von Kaufverpflichtungen
 
-## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](/visualstudio/)
-- [Azure-Dokumentation](/azure/)
-- [Azure DevOps](/azure/devops/)

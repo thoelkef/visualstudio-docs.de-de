@@ -26,17 +26,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592151"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633472"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
+
 Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *midl.exe*. Weitere Informationen finden Sie unter [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference).
 
 ## <a name="parameters"></a>Parameter
+
  Im Folgenden werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 - **AdditionalIncludeDirectories**
@@ -416,4 +418,5 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
      Weitere Informationen finden Sie unter der Option **/W** in der [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference). Siehe auch den Parameter **WarningLevel** in dieser Tabelle.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

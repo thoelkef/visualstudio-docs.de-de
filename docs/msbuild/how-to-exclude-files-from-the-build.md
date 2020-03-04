@@ -12,17 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576055"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633862"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang
+
 Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in einem Verzeichnis oder einer geschachtelten Gruppe von Verzeichnissen als Eingaben für einen Buildvorgang einzuschließen. Möglicherweise gibt es jedoch eine Datei im Verzeichnis oder ein Verzeichnis in einer geschachtelten Gruppe von Verzeichnissen, die nicht als Eingabe für einen Buildvorgang eingeschlossen werden sollen. Sie können diese Datei oder dieses Verzeichnis explizit aus der Liste der Eingaben ausschließen. Vielleicht gibt es auch eine Datei in einem Projekt, das Sie nur unter bestimmten Umständen miteinbeziehen wollen. Sie können die Bedingungen explizit deklarieren, unter denen eine Datei in einem Buildvorgang enthalten ist.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Ausschließen einer Datei oder eines Verzeichnisses aus den Eingaben für einen Buildvorgang
+
  Elementlisten sind die Eingabedateien für einen Buildvorgang. Die Elemente, die Sie einschließen möchten, werden entweder einzeln oder als Gruppe mithilfe des Attributs `Include` deklariert. Zum Beispiel:
 
 ```xml
@@ -76,6 +78,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
     > Sie müssen den Pfad für beide Attribute angeben. Wenn Sie einen absoluten Pfad zum Angeben von Dateispeicherorten im Attribut `Include` verwenden, müssen Sie auch einen absoluten Pfad im Attribut `Exclude` verwenden. Verwenden Sie einen relativen Pfad im Attribut `Include`, müssen Sie auch einen relativen Pfad im Attribut `Exclude` verwenden.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Verwenden von Bedingungen zum Ausschließen einer Datei oder eines Verzeichnisses aus den Eingaben für einen Buildvorgang
+
  Wenn es Elemente gibt, die Sie einschließen möchten, z.B. in einem Debugebuild, aber nicht in einem Releasebuild, können Sie das Element `Condition` verwenden, um die Bedingungen anzugeben, unter denen Sie das Element einschließen möchten.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>So schließen Sie die *Formula.vb*-Datei nur in Releasebuilds ein
@@ -89,6 +92,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
     ```
 
 ## <a name="example"></a>Beispiel
+
  Das folgende Codebeispiel erstellt ein Projekt mit allen *CS*-Dateien im Verzeichnis, außer *Form2.cs*.
 
 ```xml
@@ -123,6 +127,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Elemente](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md)
+- [How to: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md)

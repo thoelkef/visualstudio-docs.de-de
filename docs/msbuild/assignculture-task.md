@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393077d6391a5c1f5f4088773013538efbedc9f7
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578709"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634564"
 ---
 # <a name="assignculture-task"></a>AssignCulture-Aufgabe
+
 Diese Aufgabe akzeptiert eine Liste von Elementen, die eine gültige .NET-Kulturbezeichnerzeichenfolge als Teil des Dateinamens enthalten kann, und erzeugt Elemente, die Metadaten mit dem Namen `Culture` aufweisen, die die entsprechenden Kulturbezeichner enthalten. Der Dateiname *Form1.fr-fr.resx* enthält beispielsweise den eingebetteten Kulturbezeichner „fr-fr“, damit diese Aufgabe ein Element erstellt, das den gleichen Dateinamen mit Metadaten aufweist, bei denen `Culture` gleich `fr-fr` ist. Die Aufgabe erstellt auch eine Liste von Dateinamen ohne Kultur.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
 In der folgenden Tabelle werden die Parameter der `AssignCulture` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -40,9 +42,11 @@ In der folgenden Tabelle werden die Parameter der `AssignCulture` -Aufgabe besch
 |`Files`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Liste der Dateien mit eingebetteten Kulturnamen an, denen eine Kultur zugewiesen werden soll|
 
 ## <a name="remarks"></a>Hinweise
+
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel wird die `AssignCulture`-Aufgabe mit der `ResourceFiles`-Elementauflistung ausgeführt.
 
 ```xml
@@ -78,5 +82,6 @@ In der folgenden Tabelle wird der Wert der Ausgabeelemente nach der Ausführung 
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (keine zusätzlichen Metadaten)|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

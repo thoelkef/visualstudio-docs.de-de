@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86525b2c4ddcf36ca85feee31f89f0003f1f9775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590825"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633602"
 ---
 # <a name="lc-task"></a>LC-Aufgabe
+
 Umschließt *LC.exe*, wodurch eine *LICENSE*-Datei aus einer *LICX*-Datei generiert wird. Weitere Informationen zu *LC.exe* finden Sie unter [LC.exe (Lizenzcompiler)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>Parameter
+
 In der folgenden Tabelle werden die Parameter für die `LC`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -44,6 +46,7 @@ In der folgenden Tabelle werden die Parameter für die `LC`-Aufgabe beschrieben.
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird die `LC`-Aufgabe zum Kompilieren von Lizenzen verwendet.
 
 ```xml
@@ -67,5 +70,6 @@ Im folgenden Beispiel wird die `LC`-Aufgabe zum Kompilieren von Lizenzen verwend
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

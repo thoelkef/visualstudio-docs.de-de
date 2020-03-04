@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8adfa75964959e2cce61779914a52f03319ed314
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 05b9f83fa7c80769ea3c584e2885c8fb1db24176
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592138"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633459"
 ---
 # <a name="move-task"></a>Move-Aufgabe
+
 Verschiebt Dateien in einen neuen Speicherort.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter des `Move`-Tasks beschrieben.
 
 |Parameter|Beschreibung|
@@ -38,6 +40,7 @@ Verschiebt Dateien in einen neuen Speicherort.
 |`SourceFiles`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu verschiebenden Dateien an.|
 
 ## <a name="remarks"></a>Hinweise
+
  Es muss entweder der `DestinationFolder`-Parameter oder der `DestinationFiles`-Parameter angegeben werden, jedoch nicht beide. Wenn beide angegeben werden, schlägt der Task fehl, und ein Fehler wird protokolliert.
 
  Der `Move`-Task erstellt Ordner, die für die gewünschten Zieldateien benötigt werden.
@@ -45,5 +48,6 @@ Verschiebt Dateien in einen neuen Speicherort.
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

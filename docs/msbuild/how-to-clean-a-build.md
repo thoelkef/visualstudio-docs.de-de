@@ -13,20 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585218"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633914"
 ---
 # <a name="how-to-clean-a-build"></a>Vorgehensweise: Bereinigen eines Builds
-Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. Die Bibliothek mit allgemeinen Aufgaben, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt wird, enthält eine [Exec](../msbuild/exec-task.md)-Aufgabe, die Sie für das Ausführen von Systembefehlen verwenden können. Weitere Informationen zur Aufgabenbibliothek finden Sie in der [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md).
+
+Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. 
 
 ## <a name="create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente
+
  Standardmäßig wird die beim Kompilieren eines Projekts erstellte *EXE*-Datei im selben Verzeichnis wie das Projekt und die Quelldateien platziert. Die Ausgabeelemente werden jedoch üblicherweise in einem separaten Verzeichnis erstellt.
 
-#### <a name="to-create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente
+### <a name="to-create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente
 
 1. Verwenden Sie das `Property`-Element, um den Speicherort und den Namen des Verzeichnisses zu definieren. Erstellen Sie beispielsweise ein Verzeichnis namens *BuiltApp* in dem Verzeichnis, das das Projekt und die Quelldateien enthält:
 
@@ -40,6 +42,7 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
      ```
 
 ## <a name="remove-the-output-items"></a>Entfernen der Ausgabeelemente
+
  Bevor Sie neue Instanzen der Zwischen- und Ausgabedateien erstellen, sollten Sie alle vorherigen Instanzen der Zwischen- und Ausgabedateien löschen. Verwenden Sie die [RemoveDir](../msbuild/removedir-task.md)-Aufgabe, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse vom Datenträger zu löschen.
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Entfernen eines Verzeichnisses und aller enthaltenen Dateien
@@ -49,6 +52,7 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Beispiel
+
  Das folgende Codebeispielprojekt enthält ein neues Ziel, `Clean`, das die `RemoveDir`-Aufgabe verwendet, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse zu löschen. In diesem Beispiel erstellt `Compile` ebenfalls ein separates Verzeichnis für die Ausgabeelemente, die gelöscht werden, wenn der Build bereinigt wird.
 
  `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **-target**, um ein anderes Ziel anzugeben. Zum Beispiel:
@@ -100,7 +104,7 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Exec-Aufgabe](../msbuild/exec-task.md)
+
 - [MakeDir-Aufgabe](../msbuild/makedir-task.md)
 - [RemoveDir-Aufgabe](../msbuild/removedir-task.md)
 - [Csc-Aufgabe](../msbuild/csc-task.md)

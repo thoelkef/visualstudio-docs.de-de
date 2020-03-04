@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59523e3f6b12eb5921235efcf15d7937a14e7247
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5df538e7eb86a20dfc06e6e6558bded577ba3d2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595097"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632380"
 ---
 # <a name="setenv-task"></a>SetEnv-Aufgabe
+
 Legt den Wert einer bestimmten Umgebungsvariable fest oder löscht ihn.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der **SetEnv**-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -41,4 +43,5 @@ Legt den Wert einer bestimmten Umgebungsvariable fest oder löscht ihn.
 |**Wert**|Optionaler **String**-Parameter.<br /><br /> Der Wert, der der Umgebungsvariablen zugewiesen ist, die durch den Parameter **Name** angegeben wird. Die Variable wird gelöscht wenn **Value** leer und die Variable vorhanden ist. Wenn die Variable vorhanden ist, tritt kein Fehler auf, obwohl der Vorgang nicht ausgeführt werden kann.<br /><br /> Weitere Informationen finden Sie unter [Environment::SetEnvironmentVariable-Methode](xref:System.Environment.SetEnvironmentVariable%2A).|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

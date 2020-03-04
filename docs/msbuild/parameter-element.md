@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1351f47ec8acc5aa5a510ede9c2284ec97c248
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590461"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263100"
 ---
 # <a name="parameter-element"></a>Parameter-Element
+
 Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die von einer `UsingTask` `TaskFactory` generiert wird.  Der Name des Elements ist der Name des Parameters.  Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
@@ -38,6 +39,7 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -49,6 +51,7 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
 |`Required`|Optionales boolesches Attribut.<br /><br /> Wenn `true`, ist dieser Parameter ein erforderlicher Parameter für die Aufgabe. In der Standardeinstellung ist der Wert `false`.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
+
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -58,6 +61,7 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Enthält eine optionale Liste von Parametern, die für die Aufgabe vorhanden sein werden, die von `UsingTask` `TaskFactory` generiert wird.|
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel wird die Verwendung des `Parameter`-Elements veranschaulicht.
 
 ```xml
@@ -67,13 +71,14 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
              ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

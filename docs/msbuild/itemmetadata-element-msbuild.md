@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589369"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633615"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata-Element (MSBuild)
+
 Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementmetadatenwert enthält. Ein Element kann über eine beliebige Anzahl von Metadaten-Schlüssel-Wert-Paaren verfügen.
 
  \<Project> \<ItemGroup> \<Item>
@@ -35,6 +36,7 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -44,6 +46,7 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
+
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -53,11 +56,13 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 |[Item](../msbuild/item-element-msbuild.md)|Ein benutzerdefiniertes Element, das die Eingaben für den Buildprozess definiert.|
 
 ## <a name="text-value"></a>Textwert
+
  Ein Textwert ist optional.
 
  Dieser Text legt den Elementmetadatenwert fest, der im Text- oder XML-Format vorhanden sein kann.
 
 ## <a name="example"></a>Beispiel
+
  Das folgende Codebeispiel veranschaulicht das Hinzufügen von `Culture`-Metadaten mit dem Wert `fr` zum Element `CSFile`.
 
 ```xml
@@ -69,5 +74,6 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elemente](../msbuild/msbuild-items.md)

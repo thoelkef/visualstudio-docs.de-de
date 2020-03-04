@@ -24,17 +24,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595029"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633056"
 ---
 # <a name="mt-task"></a>MT-Aufgabe
+
 Umschließt das Microsoft-Manifesttool *mt.exe*. Weitere Informationen finden Sie unter [Mt.exe](/windows/desktop/SbsCs/mt-exe).
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der **MT**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 > [!NOTE]
@@ -69,4 +71,5 @@ Umschließt das Microsoft-Manifesttool *mt.exe*. Weitere Informationen finden Si
 |**VerboseOutput**|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, werden ausführliche Debuginformationen angezeigt.<br /><br /> Weitere Informationen finden Sie unter der Option **/verbose** in [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

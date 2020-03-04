@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579681"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634187"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier-Aufgabe
+
 Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine Gruppe von Quellressourcen als diejenigen, die in eine Assembly eingebettet werden. Wenn eine Ressource nicht lokalisierbar ist, wird sie in die Hauptanwendungsassembly eingebettet; andernfalls wird sie in eine Satellitenassembly eingebettet.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
@@ -41,9 +42,11 @@ Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine 
 |`SourceFiles`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt die Liste der zu klassifizierenden Dateien an.|
 
 ## <a name="remarks"></a>Hinweise
+
 Wenn der **Culture**-Parameter nicht festgelegt ist, sind alle mit dem **SourceFiles**-Parameter angegebenen Ressourcen nicht lokalisierbar; andernfalls sind sie lokalisierbar, es sei denn, sie sind mit einem **Localizable**-Attribut verknüpft, das auf **false** festgelegt ist.
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird eine einzelne Quelldatei als Ressource klassifiziert und dann in eine Satellitenassembly für die Kultur kanadisches Französisch (fr-CA) eingebettet.
 
 ```xml
@@ -64,6 +67,7 @@ Im folgenden Beispiel wird eine einzelne Quelldatei als Ressource klassifiziert 
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

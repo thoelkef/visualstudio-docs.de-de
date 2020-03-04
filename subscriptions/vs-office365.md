@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Office 365 Pro Plus-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036731"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904151"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus in Visual Studio-Abonnements
 
@@ -76,14 +76,15 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
 Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Einzelguthaben für Azure DevTest](vs-azure.md), wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](vs-office-dev.md) aktivieren.
 
-## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](/visualstudio/)
-- [Dokumentation zu Azure DevOps](/azure/devops/)
-- [Azure-Dokumentation](/azure/)
-- [Dokumentation zu Microsoft 365](/microsoft-365/)

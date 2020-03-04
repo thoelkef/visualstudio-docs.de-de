@@ -22,17 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578485"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632913"
 ---
 # <a name="rc-task"></a>RC-Aufgabe
+
 Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-Aufgabe kompiliert Ressourcen in eine *RES*-Datei, z.B. Cursor, Symbole, Bitmaps, Dialogfelder und Schriftarten. Weitere Informationen finden Sie unter [Ressourcencompiler](/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der RC-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 |Parameter|Beschreibung|
@@ -51,4 +53,5 @@ Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-
 |**UndefinePreprocessorDefinitions**|Hebt ein Präprozessorsymbol auf.<br /><br /> Weitere Informationen finden Sie unter der **/u**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](/windows/win32/menurc/using-rc-the-rc-command-line-). Weitere Informationen finden Sie ebenfalls unter **PreprocessorDefinitions** in dieser Tabelle.|
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
