@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: f2f00cde0c2ea3fad79c0f5ef75f3c33ad7afc22
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181118"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257188"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wurde, wählen Sie **Debuggen** , > **an den Prozess anhängen** , oder drücken Sie **STRG**+**alt**+**P** in Visual Studio, und fügen Sie den Debugger mit dem Dialogfeld an den Prozess **Anhängen** an den Prozess an.
@@ -229,7 +229,7 @@ Wenn Sie schnell einen laufenden Prozess auswählen möchten, der angefügt werd
 |Debuggen des Client seitigen Skripts auf einem lokalen IIS-Server für unterstützte App-Typen |" **An den Prozess anhängen** " verwenden|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Skript Debugging muss aktiviert sein. Für Chrome müssen Sie auch Chrome im Debugmodus ausführen und im Feld **Anfügen an** den **WebKit-Code** auswählen.|
 |Debuggen einer C#-, C++ Visual Basic-oder-App auf dem lokalen Computer|Standard Debuggen (**F5**) oder **an Prozess anhängen** verwenden|*\<appname>.exe*|Verwenden Sie in den meisten Szenarien standardmäßige Debuggen und nicht **an den Prozess anhängen**.|
 |Remote Debuggen einer Windows-Desktop-App|Remotetools|–| [Remote Debuggen C# einer](../debugger/remote-debugging-csharp.md) [ C++ App](../debugger/remote-debugging-cpp.md) oder einer Visual Basic-App|
-|Debuggen von .net Core unter Linux|" **An den Prozess anhängen** " verwenden|*dotnet.exe*|Informationen zur Verwendung von SSH finden Sie unter [Remote Debuggen von .net Core unter Linux mithilfe von SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Informationen zur Verwendung eines Linux docker-Containers finden Sie unter [Anfügen an einen Prozess, der in einem Linux docker-Container ausgeführt](#BKMK_Docker_Attach)wird.|
+|Debuggen von .net Core unter Linux|" **An den Prozess anhängen** " verwenden|*dotnet.exe*|Informationen zur Verwendung von SSH finden Sie unter [Remote Debuggen von .net Core unter Linux mithilfe von SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |
 |Debuggen einer ASP.net-App auf dem lokalen Computer, nachdem Sie die APP ohne den Debugger gestartet haben|" **An den Prozess anhängen** " verwenden|*iiexpress.exe*|Dies kann hilfreich sein, damit die APP schneller geladen wird, z. b. bei der Profilerstellung (z. b.). |
 |Andere unterstützte App-Typen auf einem Server Prozess Debuggen|Wenn der Server Remote ist, Remote Tools verwenden und **an den Prozess anhängen**|*Chrome. exe*, *iexplore. exe*oder andere Prozesse|Verwenden Sie bei Bedarf Ressourcenmonitor, um den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote debugging (Remotedebuggen)](../debugger/remote-debugging.md).|
 |Remote Debuggen einer universellen Windows-app (UWP), onecore, hololens oder IOT-App|Installiertes App-Paket debuggen|–|Siehe [Debuggen eines installierten App-Pakets](debug-installed-app-package.md) anstelle von " **an den Prozess anhängen** "|
