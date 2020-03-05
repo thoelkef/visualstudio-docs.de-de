@@ -233,9 +233,9 @@
               href: sdk-element-msbuild.md
             - name: Target-Element
               href: target-element-msbuild.md
-            - name: Task-Element
+            - name: Task-Element von Target
               href: task-element-msbuild.md
-            - name: TaskBody-Element
+            - name: Task-Element von UsingTask
               href: taskbody-element-msbuild.md
             - name: UsingTask-Element
               href: usingtask-element-msbuild.md
