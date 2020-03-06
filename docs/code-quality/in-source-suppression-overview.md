@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167623"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408723"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Code Analyse Warnungen unterdrücken
 
@@ -92,6 +92,8 @@ Zu den Eigenschaften des-Attributs gehören:
 
 - **Target** : ein Bezeichner, der verwendet wird, um das Ziel anzugeben, auf dem die Warnung unterdrückt wird. Er muss einen voll qualifizierten Elementnamen enthalten.
 
+Wenn in Visual Studio Warnungen angezeigt werden, können Sie Beispiele für `SuppressMessage` anzeigen, indem Sie [der globalen Unterdrückungs Datei eine Unterdrückung hinzufügen](../code-quality/use-roslyn-analyzers.md#suppress-violations). Das Unterdrückungs Attribut und die erforderlichen Eigenschaften werden in einem Vorschaufenster angezeigt.
+
 ## <a name="suppressmessage-usage"></a>SuppressMessage-Verwendung
 
 Code Analyse Warnungen werden auf der Ebene unterdrückt, auf die das <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>-Attribut angewendet wird. Das-Attribut kann z. b. auf Assembly-, Modul-, Typ-, Element-oder Parameter Ebene angewendet werden. Dies dient dazu, die Unterdrückungs Informationen eng mit dem Code zu verknüpfen, in dem die Verletzung auftritt.
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>Generierter code
-
-Compiler verwalteter Code und einige Tools von Drittanbietern generieren Code, um eine schnelle Code Entwicklung zu ermöglichen. Vom Compiler generierter Code, der in Quelldateien angezeigt wird, ist in der Regel mit dem `GeneratedCodeAttribute`-Attribut gekennzeichnet.
-
-Sie können auswählen, ob Warnungen und Fehler bei der Code Analyse für generierten Code unterdrückt werden sollen. Informationen dazu, wie Sie Warnungen und Fehler unterdrücken, finden Sie unter Gewusst [wie: Unterdrücken von Warnungen für generierten Code](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
-
-> [!NOTE]
-> Bei der Code Analyse werden `GeneratedCodeAttribute` ignoriert, wenn Sie entweder auf eine gesamte Assembly oder einen einzelnen Parameter angewendet wird.
-
 ## <a name="global-level-suppressions"></a>Unterdrückungen auf globaler Ebene
 
 Das Tool für die Analyse von verwaltetem Code untersucht `SuppressMessage` Attribute, die auf Assembly-, Modul-, Typ-, Element-oder Parameter Ebene angewendet werden. Außerdem werden Verstöße gegen Ressourcen und Namespaces ausgelöst. Diese Verstöße müssen auf globaler Ebene angewendet werden und sind auf einen Bereich beschränkt. Beispielsweise wird durch die folgende Meldung eine Namespace Verletzung unterdrückt:
@@ -185,6 +178,22 @@ Sie können Code Qualitäts Verletzungen für die gesamte Assembly unterdrücken
 Beispielsweise unterdrückt das folgende Attribut in der _globalsuppressive_ -Projektdatei den Konfigurations Wiederholungs Verstoß für ein ASP.net Core Projekt:
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>Generierter code
+
+Compiler verwalteter Code und einige Tools von Drittanbietern generieren Code, um eine schnelle Code Entwicklung zu ermöglichen. Vom Compiler generierter Code, der in Quelldateien angezeigt wird, ist in der Regel mit dem `GeneratedCodeAttribute`-Attribut gekennzeichnet.
+
+Bei der Quell Code Analyse (FxCop-Analyzers) können Sie Nachrichten in generiertem Code unterdrücken, indem Sie die [Editor config](../code-quality/configure-fxcop-analyzers.md) -Datei im Stammverzeichnis des Projekts oder der Projekt Mappe verwenden. Verwenden Sie ein Dateimuster, um den generierten Code abzugleichen. Um z. b. CS1591-Warnungen in * *. Designer.cs* -Dateien auszuschließen, verwenden Sie diese in der Konfigurationsdatei.
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+Bei der Legacy Code Analyse können Sie auswählen, ob die Code Analyse Warnungen und Fehler für generierten Code unterdrückt werden sollen. Informationen dazu, wie Sie Warnungen und Fehler unterdrücken, finden Sie unter Gewusst [wie: Unterdrücken von Warnungen für generierten Code](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+
+> [!NOTE]
+> Bei der Code Analyse werden `GeneratedCodeAttribute` ignoriert, wenn Sie entweder auf eine gesamte Assembly oder einen einzelnen Parameter angewendet wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 
