@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158496"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78406326"
 ---
 # <a name="expressions-in-the-debugger"></a>Ausdrücke im Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,14 +107,14 @@ int main()
   
   Mit systeminternen Debugger-Funktionen kann die Auswertung von Ausdrücken bequemer werden. Beispielsweise ist `strncmp(str, “asd”)` viel einfacher in einer Haltepunktbedingung zu schreiben als `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
-|Bereich|Systeminterne Funktionen|  
+|Fläche|Systeminterne Funktionen|  
 |----------|-------------------------|  
 |**Zeichenfolgenlänge**|strlen, wcslen, strnlen, wcsnlen|  
 |**Zeichenfolgenvergleich**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
 |**Zeichenfolgensuche**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Für diese Funktionen muss der Prozess, der debuggt wird, auf Windows. 8 ausgeführt werden. Das Debuggen von Dumpdateien, die von einem Windows 8-Gerät generiert werden, erfordert auch, dass auf dem Visual Studio-Computer Windows 8 ausgeführt wird. Wenn Sie für ein Windows 8-Gerät Remotedebuggen durchführen, kann auf dem Visual Studio-Computer Windows 7 ausgeführt werden.|  
-|**Sonstiges**|__log2<br /><br /> Gibt die Protokollbasis 2 einer angegebenen ganzen Zahl auf die nächste kleinere ganze Zahl gerundet zurück.|  
+|**Verschiedenes**|__log2<br /><br /> Gibt die Protokollbasis 2 einer angegebenen ganzen Zahl auf die nächste kleinere ganze Zahl gerundet zurück.|  
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI – Nicht unterstützte Ausdrücke  
   
@@ -214,7 +214,7 @@ int main()
   
 - Schlüsselwörter der Namespace- oder Modulebene, wie `End Sub` oder `Module`.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Formatspezifizierer in C++](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Formatspezifizierer in C#](../debugger/format-specifiers-in-csharp.md)   

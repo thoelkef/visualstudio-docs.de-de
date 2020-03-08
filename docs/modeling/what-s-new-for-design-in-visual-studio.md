@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593498"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409013"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Neuerungen beim Entwurf in Visual Studio 2017
 
@@ -30,7 +30,7 @@ Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Bestandteil der verwal
 
 Die Erstellungs Funktion wurde geändert, damit die Abhängigkeits Überprüfung leichter erkennbar und leichter zugänglich ist. Die Terminologie wurde von "ebenendiagramm" in "Abhängigkeits Diagramm" geändert.
 
-Die **Architektur** enthält einen Befehl aus, um direkt zu einem Abhängigkeitsdiagramm erstellen:
+Das Menü **Architektur** enthält jetzt einen Befehl, mit dem Sie direkt ein Abhängigkeits Diagramm erstellen können:
 
 ![Liveüberprüfung von Abhängigkeiten-Element, auf das Menü "Architektur"](media/dep-validation-whatsnew-02.png)
 
@@ -40,7 +40,7 @@ Ebeneneigenschaftennamen und Beschreibungen wurden geändert, um Sie aussagekrä
 
 Wenn Sie das Diagramm speichern, sehen Sie sofort die Auswirkung Ihrer Änderungen in den Analyseergebnissen auf den aktuellen Code in der Projekt Mappe. Sie müssen nicht auf den Abschluss des Befehls " **Abhängigkeiten** überprüfen" warten.
 
-Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Weitere Informationen finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>UML-Designern wurden entfernt.
 
@@ -61,17 +61,17 @@ Unterstützung für die Visualisierung der Architektur von .net C++ und Code ist
 
 Wenn Sie eine erhebliche UML-Designern verwenden, können Sie weiterhin Visual Studio 2015 oder früher verwenden, während Sie möchten eine alternative Tool für Ihre Anforderungen UML.
 
-Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Weitere Informationen finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Edition-Unterstützung für Architektur- und Modellierungstools
+## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a>Unterstützung der <a name="VersionSupport" />Edition für Architektur-und Modellierungstools
 
 Visual Studio ist in verschiedenen Editionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
 
-|**Funktion**|**Enterprise edition**|**Professional-edition**|**Community-edition**|
+|**Feature**|**Enterprise Edition**|**Professional Edition**|**Community-Edition**|
 |-|-|-|-|
 |**Codezuordnungen**|Ja|Nur ordnet unterstützt das Lesen von Code Maps, Code zu filtern, Hinzufügen neuer allgemeiner Knoten und das Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.|-|
-|**Abhängigkeitsdiagramme**|Ja|Unterstützt Sie nur das Lesen von Abhängigkeitsdiagrammen.|Unterstützt Sie nur das Lesen von Abhängigkeitsdiagrammen.|
-|**Gerichtete Diagramme** (DGML-Diagramme)|Ja|Ja|Ja|
+|**Abhängigkeits Diagramme**|Ja|Unterstützt Sie nur das Lesen von Abhängigkeitsdiagrammen.|Unterstützt Sie nur das Lesen von Abhängigkeitsdiagrammen.|
+|**Gesteuerte Diagramme** (dgml-Diagramme)|Ja|Ja|Ja|
 |**Codeklon**|Ja|-|-|

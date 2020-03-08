@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915586"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410057"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -37,7 +37,7 @@ Informationen zu den zugrunde liegenden Schemas für die Dienstdefinition und di
 
 Legt fest, welche `ServiceConfiguration.*.cscfg`-Datei von Änderungen betroffen ist. Standardmäßig sind lokale Varianten und Cloudvarianten vorhanden, und Sie können den Befehl **... verwalten** verwenden, um Konfigurationsdateien zu kopieren, umzubenennen und zu entfernen. Diese Dateien werden Ihrem Clouddienstprojekt hinzugefügt und im **Projektmappen-Explorer** angezeigt. Das Umbenennen oder Entfernen von Konfigurationen kann jedoch nur über dieses Steuerelement erfolgen.
 
-### <a name="instances"></a>-Instanzen
+### <a name="instances"></a>Instanzen
 
 Legen Sie die Eigenschaft **Instanzenanzahl** auf die Anzahl der Instanzen fest, die der Dienst für diese Rolle ausführen soll.
 
@@ -55,7 +55,7 @@ Wenn Sie bereits einen HTTPS-Endpunkt hinzugefügt haben, ist die Option „HTTP
 
 Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche ( **…** ), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Seite „Einstellungen“
+## <a name="settings-page"></a>Seite "Einstellungen"
 
 Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. In der Rolle ausgeführter Code kann die Werte der Konfigurationseinstellungen zur Laufzeit anhand von Klassen lesen, die von der [verwalteten Azure-Bibliothek](/previous-versions/azure/dn602775(v=azure.11)) bereitgestellt werden, insbesondere die Methode [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)).
 

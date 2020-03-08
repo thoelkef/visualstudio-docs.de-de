@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692084"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410067"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -96,7 +96,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Wählen Sie die Registerkarte **Einstellungen** aus.
 
-    ![Registerkarte "Einstellungen"](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
+    ![Registerkarte „Einstellungen“](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
 1. Wählen Sie in der Liste **Dienstkonfiguration** die Dienstkonfiguration aus, die Sie aktualisieren möchten.
 
@@ -116,9 +116,9 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Wählen Sie im Dialogfeld **Verbindungszeichenfolge für den Speicher erstellen** eine Option für **Herstellen einer Verbindung mit** aus. Befolgen Sie dann die Anweisungen für die ausgewählte Option:
 
-    - **Microsoft Azure-Speicheremulator**: Wenn Sie diese Option auswählen, werden die restlichen Einstellungen im Dialogfeld deaktiviert, da sie nur für Azure gelten. Klicken Sie auf **OK**.
-    - **Ihr Abonnement**: Wenn Sie diese Option auswählen, verwenden Sie entweder die Dropdownliste, um ein Microsoft-Konto auszuwählen und sich anzumelden, oder fügen Sie ein Microsoft-Konto hinzu. Wählen Sie ein Azure-Abonnement- und -Speicherkonto aus. Klicken Sie auf **OK**.
-    - **Manuell eingegebene Anmeldeinformationen**: Geben Sie den Speicherkontonamen und dann entweder den primären oder den sekundären Schlüssel ein. Wählen Sie eine Option für **Verbindung** aus (HTTPS wird für die meisten Szenarien empfohlen.) Klicken Sie auf **OK**.
+    - **Microsoft Azure-Speicheremulator**: Wenn Sie diese Option auswählen, werden die restlichen Einstellungen im Dialogfeld deaktiviert, da sie nur für Azure gelten. Wählen Sie **OK**.
+    - **Ihr Abonnement**: Wenn Sie diese Option auswählen, verwenden Sie entweder die Dropdownliste, um ein Microsoft-Konto auszuwählen und sich anzumelden, oder fügen Sie ein Microsoft-Konto hinzu. Wählen Sie ein Azure-Abonnement- und -Speicherkonto aus. Wählen Sie **OK**.
+    - **Manuell eingegebene Anmeldeinformationen**: Geben Sie den Speicherkontonamen und dann entweder den primären oder den sekundären Schlüssel ein. Wählen Sie eine Option für die **Verbindung** aus (HTTPS wird in den meisten Szenarien empfohlen). Wählen Sie **OK**aus.
 
 1. Um eine Verbindungszeichenfolge zu löschen, wählen Sie die Verbindungszeichenfolge aus, und wählen Sie dann **Einstellung entfernen** aus.
 
@@ -158,7 +158,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Wählen Sie die Registerkarte **Einstellungen** aus.
 
-    ![Registerkarte "Einstellungen"](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
+    ![Registerkarte „Einstellungen“](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
 1. Wählen Sie in der Liste **Dienstkonfiguration** die Dienstkonfiguration aus, die Sie aktualisieren möchten.
 

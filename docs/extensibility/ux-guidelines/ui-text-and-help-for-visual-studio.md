@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c0477a0e1994e9c3b94df13ace4c1f3b4df51039
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748971"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409123"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächen Text und-Hilfe für Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a>UI-Text und-Terminologie
@@ -155,7 +155,7 @@ ms.locfileid: "72748971"
 
 ### <a name="common-terminology"></a>Allgemeine Terminologie
 
-|Begriff|Erklärung|Kommentar|
+|Begriff|Erklärung|Anmerkungen|
 |----------|-----------------|-------------|
 |Anmelden/Abmelden|Verben verwendeten Synonym mit dem Web zum Darstellen der Authentifizierung in einer webeigenschaft. Innerhalb von Clients verwenden wir dies einmal als Konzept der obersten Ebene für die Anmeldung und aus der IDE-Benutzer Verbindung, die eine Identität der obersten Ebene darstellt, die Funktionen auf höherer Ebene bereitstellt, z. b. Roaming und Lizenzierung, die nicht mit allen anderen Verbindungen verfügbar sind.|Der IDE-Benutzer ist die einzige Funktion, die ein Verb für das Anmelden/Abmelden darstellen sollte, da Sie den IDE-Benutzer der obersten Ebene darstellt.|
 |Verbindung herstellen/trennen|Verwenden Sie an Orten, an denen eine Funktion eine einzelne Verbindung mit einem Onlinedienst beibehält.|Server-Explorer, in dem Sie jeweils nur eine aktive Azure-Verbindung haben können, ist ein Beispiel für Connect/Disconnect.|
@@ -253,9 +253,9 @@ ms.locfileid: "72748971"
 
 ### <a name="error-message-examples"></a>Beispiele für Fehlermeldungen
 
-|Gut|Schlechtem|
+|Gut|Schlecht|
 |----------|---------|
-|"Die gewählte Zahl ist nicht mehr im Dienst. Überprüfen Sie die Zahl, und wählen Sie erneut aus, oder wählen Sie 0 für den Operator aus. "|-"Fehler (449): ungültige Zahl"<br />-"Dieser Fehler bei nicht behandelten Ausnahmen weist darauf hin, dass der Vorgang erfolgreich abgeschlossen wurde."<br /><br /> ![Ungültige Fehlermeldung in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog ")|
+|"Die gewählte Zahl ist nicht mehr im Dienst. Überprüfen Sie die Zahl, und wählen Sie erneut aus, oder wählen Sie 0 für den Operator aus. "|-"Fehler (449): ungültige Zahl"<br />-"Dieser Fehler bei nicht behandelten Ausnahmen weist darauf hin, dass der Vorgang erfolgreich abgeschlossen wurde."<br /><br /> ![Ungültige Fehlermeldung in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>Zugreifen auf die Hilfe
 
@@ -300,9 +300,9 @@ ms.locfileid: "72748971"
 ##### <a name="dialogs-created-through-the-environment"></a>Durch die Umgebung erstellte Dialoge
  Viele shelldialogfelder werden über die **vbdialogboxparam** -Funktion erstellt. Diese freigegebene Funktion wurde aktualisiert, um das Verschieben der **Hilfe** Schaltfläche aus dem Dialogfeld in zu unterstützen **?** , während eine Architektur beibehalten wird, die abwärts kompatibel und erweiterbar ist.
 
- Insbesondere sucht die **vbdialogboxparam** -Funktion in der Dialogfeld Vorlage nach einer Schaltfläche mit der ID **IDHELP** (9) oder der Bezeichnung " **Hilfe** " oder **& Hilfe**. Wenn eine Hilfe Schaltfläche gefunden wird, wird Sie ausgeblendet, und der **WS_EX_CONTEXTHELP** -Stil **wird dem Dialog** Feld hinzugefügt. Schaltfläche in der Titelleiste des Dialog Felds.
+ Insbesondere sucht die **vbdialogboxparam** -Funktion in der Dialogfeld Vorlage nach einer Schaltfläche mit der ID **IDHELP** (9) oder der Bezeichnung " **Hilfe** " oder **& Hilfe**. Wenn eine Hilfe Schaltfläche gefunden wird, wird Sie ausgeblendet, und der **WS_EX_CONTEXTHELP** Stil **wird dem Dialog** Feld hinzugefügt. Schaltfläche in der Titelleiste des Dialog Felds.
 
- Wenn das Dialogfeld erstellt wird, wird das Dialogfeld proc auf einen Stapel übertragen und das Dialogfeld mit einem Vorverarbeitungs **Dialogfeld mit dem Namen dialogpreproc**aufgerufen. Wenn **?** auf die Schaltfläche wird geklickt, Sie sendet eine **WM_SYSCOMMAND** of **SC_CONTEXTHELP** an den Dialog. Der **dialogpreproc** erfasst diesen Befehl und ändert ihn in eine **WM_HELP** -Nachricht, die an die ursprüngliche Dialogfeld Prozedur übergeben wird.
+ Wenn das Dialogfeld erstellt wird, wird das Dialogfeld proc auf einen Stapel übertragen und das Dialogfeld mit einem Vorverarbeitungs **Dialogfeld mit dem Namen dialogpreproc**aufgerufen. Wenn **?** auf die Schaltfläche wird geklickt, es wird eine **WM_SYSCOMMAND** **SC_CONTEXTHELP** an den Dialog gesendet. Der **dialogpreproc** erfasst diesen Befehl und ändert ihn in eine **WM_HELP** Nachricht, die an die ursprüngliche Dialogfeld Prozedur übergeben wird.
 
  Die meisten von der Umgebung erstellten Dialogfelder haben eine Schaltfläche "Hilfe" im Dialogfeld. Wenn das Dialogfeld angezeigt wird, wird die Schaltfläche Hilfe automatisch ausgeblendet, und nur die Schaltfläche **?** die Schaltfläche funktioniert. Wenn **?** Wenn die Schaltfläche in Windows entfernt oder geändert wird, können Sie mit dieser Lösung schnell zu den ursprünglichen Hilfe Schaltflächen zurück wechseln.
 
@@ -376,7 +376,7 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 ```
 
 ##### <a name="help-buttons-in-managed-code"></a>Hilfe Schaltflächen in verwaltetem Code
- Das Standardverhalten der Hilfe Schaltfläche der Fenstertitelleiste wird in verwaltetem Code einfach überschrieben. Im folgenden finden Sie eine umfassende Demoanwendung, die dieses Verhalten veranschaulicht. Im Wesentlichen müssen Sie die **WndProc** -Methode Ihres Formulars überschreiben und dann F1-Hilfe Anforderungen auslösen, wenn eine **SC_CONTEXTHELP** -Nachricht abgefangen wird.
+ Das Standardverhalten der Hilfe Schaltfläche der Fenstertitelleiste wird in verwaltetem Code einfach überschrieben. Im folgenden finden Sie eine umfassende Demoanwendung, die dieses Verhalten veranschaulicht. Im Wesentlichen müssen Sie die **WndProc** -Methode Ihres Formulars überschreiben und dann F1-Hilfe Anforderungen auslösen, wenn eine **SC_CONTEXTHELP** Nachricht abgefangen wird.
 
 ```
 using System;

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568968"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408999"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -89,7 +89,7 @@ Manchmal empfiehlt es sich, den Endbenutzern das Anpassen Ihrer Benutzeroberflä
 
 Visual Studio stellt einen Umgebungs Farb Dienst bereit, der auch als vscolor-Dienst oder shellfarbdienst bezeichnet wird. Dieser Dienst ermöglicht es Ihnen, die Farbwerte der Benutzeroberflächen Elemente an einen Name-Wert-Farbsatz zu binden, der Farben für jedes Design enthält. Der vscolor-Dienst muss für alle Elemente der Benutzeroberfläche verwendet werden, sodass Farben automatisch geändert werden, um das aktuelle vom Benutzer ausgewählte Design widerzuspiegeln, und damit die Benutzeroberfläche, die an den Umgebungs Farb Dienst gebunden ist, in zukünftigen Versionen von Visual Studio in neue Designs integriert werden kann.
 
-### <a name="how-the-service-works"></a>Funktionsweise des Dienstanbieter
+### <a name="how-the-service-works"></a>Funktionsweise des Diensts
 
 Der Umgebungs Farb Dienst liest vscolors, die in der pkgdef-Datei für die Benutzeroberflächen Komponente definiert sind. Auf diese vscolors wird in XAML-Markup oder-Code verwiesen, und Sie werden entweder über die `IVsUIShell5.GetThemedColor` oder eine `DynamicResource` Zuordnung geladen.
 
@@ -303,7 +303,7 @@ Beispiele für die Editor-Oberfläche im Design "Blue":
 
 ![Editor in hoher Kontrast #1 Design](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303-d_EditorHC1")<br />Editor in hoher Kontrast #1 Design
 
-### <a name="usage-patterns"></a>Verwendungs Muster
+### <a name="usage-patterns"></a>Verwendungsmuster
 
 Viele allgemeine Benutzeroberflächen Elemente haben bereits hoher Kontrast Farben definiert. Sie können auf diese Verwendungs Muster verweisen, wenn Sie Ihre eigenen System Farbnamen auswählen, damit die Elemente der Benutzeroberfläche mit ähnlichen Komponenten konsistent sind.
 
@@ -328,7 +328,7 @@ Viele allgemeine Benutzeroberflächen Elemente haben bereits hoher Kontrast Farb
 | Bildlaufleiste | -Bild Lauf Leiste und Pfeil Hintergrund der Bild Lauf Leiste, alle Zustände |
 | Fenster | -Automatisches Ausblenden des Registerkarten Hintergrunds<br />-Menüleiste und Befehls Regal Hintergrund<br />-Ohne Fokus oder nicht ausgewähltes Dokument Fenster Registerkarte Hintergrund und Dokument Rahmen, für offene und vorläufige Registerkarten<br />-Der Titelleisten Hintergrund des Tool Fensters ohne Fokus<br />-Tool Fenster-Registerkarten Hintergrund, sowohl ausgewählt als auch nicht ausgewählt |
 | WindowFrame | -IDE-Rahmen |
-| Windowtext | -Automatische Ausblenden der Registerkarte im Vordergrund<br />-Ausgewählte Tool Fenster-Registerkarte im Vordergrund<br />-Nicht fokussierte Dokument Fenster Registerkarte und ohne Fokus oder nicht ausgewählte vorläufige Registerkarten Vordergrund<br />-Strukturansicht Standard Vordergrund und Mauszeiger auf nicht ausgewähltes Symbol<br />-Tool Fenster hat Registerkarten Rahmen ausgewählt<br />: Hintergrund, Rahmen und Symbol der Bild Lauf Leiste |
+| WindowText | -Automatische Ausblenden der Registerkarte im Vordergrund<br />-Ausgewählte Tool Fenster-Registerkarte im Vordergrund<br />-Nicht fokussierte Dokument Fenster Registerkarte und ohne Fokus oder nicht ausgewählte vorläufige Registerkarten Vordergrund<br />-Strukturansicht Standard Vordergrund und Mauszeiger auf nicht ausgewähltes Symbol<br />-Tool Fenster hat Registerkarten Rahmen ausgewählt<br />: Hintergrund, Rahmen und Symbol der Bild Lauf Leiste |
 
 ## <a name="BKMK_ExposingColorsForEndUsers"></a>Verfügbar machen von Farben für Endbenutzer
 
@@ -358,10 +358,10 @@ Erstellen Sie einen besonderen Typ von kategorieregistrierungs Eintrag unter `[H
 
 Füllen Sie die Registrierung mit zwei Werten auf:
 
-| -Name | Geben Sie Folgendes ein: | Daten | Beschreibung |
+| Name | Typ | Daten | Beschreibung |
 | --- | --- | --- | --- |
 | Kategorie | REG_SZ | GUID | Eine GUID, die zur Identifizierung der Kategorie erstellt wurde. |
-| Package | REG_SZ | GUID | Die GUID des VSPackage-Dienstanbieter, der die Kategorie unterstützt. |
+| Paket | REG_SZ | GUID | Die GUID des VSPackage-Dienstanbieter, der die Kategorie unterstützt. |
 
  Der in der Registrierung angegebene Dienst muss eine Implementierung von [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) für die entsprechende Kategorie bereitstellen.
 
@@ -371,14 +371,14 @@ Erstellen Sie einen besonderen Typ von kategorieregistrierungs Eintrag unter `[H
 
 Füllen Sie die Registrierung mit zwei Werten auf:
 
-| -Name | Geben Sie Folgendes ein: | Daten | Beschreibung |
+| Name | Typ | Daten | Beschreibung |
 |--- | --- | --- | --- |
 | Kategorie | REG_SZ | GUID | Eine GUID, die zur Identifizierung der Kategorie erstellt wurde. |
-| Package | REG_SZ | GUID | Die GUID des VSPackage-Dienstanbieter, der die Kategorie unterstützt. |
+| Paket | REG_SZ | GUID | Die GUID des VSPackage-Dienstanbieter, der die Kategorie unterstützt. |
 
 Der in der Registrierung angegebene Dienst muss eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> für die zugehörige Gruppe bereitstellen.
 
-![Implementierung von IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Implementierung von `IVsFontAndColorGroup`.
+![Implementierung von IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Implementierung von `IVsFontAndColorGroup`
 
 ### <a name="to-implement-ide-support"></a>So implementieren Sie IDE-Unterstützung
 
@@ -421,7 +421,7 @@ Zu diesem Zweck muss ein VSPackage folgende Aktionen ausführen:
 
 - **behandeln Sie von IDE generierte Ereignisse** , indem Sie die [ivsfontandcolorevents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) -Schnittstelle implementieren. Die IDE Ruft die entsprechende Methode auf, die auf die Benutzer Änderungen der Seite Schriftarten und Farben folgt. Beispielsweise wird die [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) -Methode aufgerufen, wenn eine neue Schriftart ausgewählt wird.
 
-  **ODER**
+  **OR**
 
 - **Abfragen der IDE auf Änderungen**. Dies kann über die vom System implementierte [ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) -Schnittstelle durchgeführt werden. Obwohl die [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) -Methode in erster Linie zur Unterstützung der Persistenz dient, kann Sie Schriftart-und Farbinformationen für Anzeigeelemente abrufen. Weitere Informationen zu Schriftart-und Farbeinstellungen finden Sie im MSDN-Artikel [zugreifen auf gespeicherte Schriftart-und Farbeinstellungen](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
 
