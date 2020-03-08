@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586626"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408763"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen von Datasets mit TableAdapters
 
@@ -35,7 +35,7 @@ Eine TableAdapter-Komponente füllt ein DataSet mit Daten aus der Datenbank auf 
 
 Ausführliche Informationen zu TableAdapter-Vorgängen finden Sie direkt in einem der folgenden Themen:
 
-|Topic|Beschreibung|
+|Thema|BESCHREIBUNG|
 |-----------|-----------------|
 |[Erstellen und Konfigurieren eines TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Verwenden der Designer zum Erstellen und Konfigurieren von TableAdapters|
 |[Erstellen von parametrisierten TableAdapter-Abfragen](../data-tools/create-parameterized-tableadapter-queries.md)|So ermöglichen Sie Benutzern das Bereitstellen von Argumenten für TableAdapter-Prozeduren oder-Abfragen|
@@ -89,7 +89,7 @@ Die TableAdapter-Klasse ist kein .NET-Typ. Dies bedeutet, dass Sie Sie nicht in 
 
 Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften von TableAdapters:
 
-|Member|Beschreibung|
+|Member|BESCHREIBUNG|
 |------------|-----------------|
 |`TableAdapter.Fill`|Füllt die zugeordnete Datentabelle des TableAdapter mit den Ergebnissen des `SELECT` Befehls des TableAdapter auf.|
 |`TableAdapter.Update`|Sendet Änderungen an die Datenbank zurück und gibt eine ganze Zahl zurück, die die Anzahl der von der Aktualisierung betroffenen Zeilen darstellt. Weitere Informationen finden Sie unter [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -104,39 +104,39 @@ TableAdapters verwenden zum Lesen und Schreiben in Datenbanken Datenbefehle. Ver
 Wenn Sie einen TableAdapter verwenden, führt er effektiv dieselben Vorgänge mit den Befehlen aus, die Sie normalerweise ausführen würden. Wenn Sie z. b. die `Fill`-Methode des Adapters aufzurufen, führt der Adapter den Daten Befehl in seiner `SelectCommand`-Eigenschaft aus und verwendet einen Daten Reader (z. b. <xref:System.Data.SqlClient.SqlDataReader>), um das Resultset in die Datentabelle zu laden. Wenn Sie die `Update`-Methode des Adapters aufzurufen, führt Sie entsprechend den entsprechenden Befehl (in den Eigenschaften `UpdateCommand`, `InsertCommand`und `DeleteCommand`) für jeden geänderten Datensatz in der Datentabelle aus.
 
 > [!NOTE]
-> Wenn die Hauptabfrage genügend Informationen enthält, werden beim Generieren des TableAdapter standardmäßig die Befehle `InsertCommand`, `UpdateCommand` und `DeleteCommand` erstellt. If the TableAdapter's main query is more than a single table `SELECT` statement, it's possible the designer won't be able to generate `InsertCommand`, `UpdateCommand`, and `DeleteCommand`. If these commands aren't generated, you might receive an error when running the `TableAdapter.Update` method.
+> Wenn die Hauptabfrage genügend Informationen enthält, werden beim Generieren des TableAdapter standardmäßig die Befehle `InsertCommand`, `UpdateCommand` und `DeleteCommand` erstellt. Wenn die Haupt Abfrage des TableAdapters mehr als eine einzige Tabelle `SELECT`-Anweisung ist, kann der Designer möglicherweise keine `InsertCommand`, `UpdateCommand`und `DeleteCommand`generieren. Wenn diese Befehle nicht generiert werden, erhalten Sie möglicherweise eine Fehlermeldung, wenn Sie die `TableAdapter.Update`-Methode ausführen.
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 
-In addition to `InsertCommand`, `UpdateCommand`, and `DeleteCommand`, TableAdapters are created with methods that you can run directly against the database. You can call these methods (`TableAdapter.Insert`, `TableAdapter.Update`, and `TableAdapter.Delete`) directly to manipulate data in the database. This means you can call these individual methods from your code instead of calling `TableAdapter.Update` to handle the inserts, updates, and deletes that are pending for the associated data table.
+Zusätzlich zu `InsertCommand`, `UpdateCommand`und `DeleteCommand`werden TableAdapters mit Methoden erstellt, die Sie direkt für die Datenbank ausführen können. Sie können diese Methoden (`TableAdapter.Insert`, `TableAdapter.Update`und `TableAdapter.Delete`) direkt zum Bearbeiten von Daten in der Datenbank aufzurufen. Dies bedeutet, dass Sie diese einzelnen Methoden aus Ihrem Code aufrufen können, statt `TableAdapter.Update` zu verwenden, um die Einfügungen, Updates und Löschvorgänge zu verarbeiten, die für die zugeordnete Datentabelle ausstehen.
 
-If you don't want to create these direct methods, set the TableAdapter's **GenerateDbDirectMethods** property to `false` (in the **Properties** window). Additional queries that are added to the TableAdapter are standalone queries — they don't generate these methods.
+Wenn Sie diese direkten Methoden nicht erstellen möchten, legen Sie die **GenerateDBDirectMethods** -Eigenschaft des TableAdapter auf `false` (im **Eigenschaften** Fenster) fest. Zusätzliche Abfragen, die dem TableAdapter hinzugefügt werden, sind eigenständige Abfragen – Sie generieren diese Methoden nicht.
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter-Unterstützung für Typen mit Nullwert
 
-TableAdapters support nullable types `Nullable(Of T)` and `T?`. Weitere Informationen zu Nullable-Typen in Visual Basic finden Sie unter [Auf NULL festlegbare Werttypen](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). For more information about nullable types in C#, see [Use nullable types](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
+TableAdapters unterstützen Typen, die NULL-Werte zulassen `Nullable(Of T)` und `T?`. Weitere Informationen zu Nullable-Typen in Visual Basic finden Sie unter [Auf NULL festlegbare Werttypen](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Weitere Informationen zu Typen C#, die NULL-Werte zulassen, finden Sie unter Verwenden von [Werte zulässt-Typen](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
 <a name="tableadaptermanager-reference"></a>
 
-## <a name="tableadaptermanager-reference"></a>TableAdapterManager reference
+## <a name="tableadaptermanager-reference"></a>TableAdapterManager-Referenz
 
-By default, a TableAdapterManager class generates when you create a dataset that contains related tables. To prevent the class from being generated, change the value of the `Hierarchical Update` property of the dataset to false. When you drag a table that has a relation onto the design surface of a Windows Form or WPF page, Visual Studio declares a member variable of the class. If you don't use databinding, you have to manually declare the variable.
+Standardmäßig generiert eine TableAdapterManager-Klasse, wenn Sie ein Dataset erstellen, das verknüpfte Tabellen enthält. Um zu verhindern, dass die Klasse generiert wird, ändern Sie den Wert der `Hierarchical Update`-Eigenschaft des Datasets in false. Wenn Sie eine Tabelle, die eine Beziehung aufweist, auf die Entwurfs Oberfläche einer Windows Forms-oder WPF-Seite ziehen, deklariert Visual Studio eine Member-Variable der-Klasse. Wenn Sie DataBinding nicht verwenden, müssen Sie die Variable manuell deklarieren.
 
-The TableAdapterManager class is not a .NET type. Therefore, you cannot look it up in the documentation. It's created at design time as part of the dataset creation process.
+Bei der TableAdapterManager-Klasse handelt es sich nicht um einen .NET-Typ. Daher können Sie Sie nicht in der Dokumentation nachschlagen. Sie wird zur Entwurfszeit im Rahmen des dataseterstellungs Prozesses erstellt.
 
-The following are the frequently used methods and properties of the `TableAdapterManager` class:
+Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der `TableAdapterManager`-Klasse:
 
-|Member|Beschreibung|
+|Member|BESCHREIBUNG|
 |------------|-----------------|
-|`UpdateAll`-Methode|Saves all data from all data tables.|
-|`BackUpDataSetBeforeUpdate` -Eigenschaft|Determines whether to create a backup copy of the dataset before executing the `TableAdapterManager.UpdateAll` method.Boolean.|
-|*tableName* `TableAdapter` property|Stellt einen TableAdapter dar. The generated TableAdapterManager contains a property for each `TableAdapter` it manages. For example, a dataset with a Customers and Orders table generates with a TableAdapterManager that contains `CustomersTableAdapter` and `OrdersTableAdapter` properties.|
-|`UpdateOrder` -Eigenschaft|Controls the order of the individual insert, update, and delete commands. Set this to one of the values in the `TableAdapterManager.UpdateOrderOption` enumeration.<br /><br /> By default, the `UpdateOrder` is set to **InsertUpdateDelete**. This means that inserts, then updates, and then deletes are performed for all tables in the dataset.|
+|`UpdateAll` -Methode|Speichert alle Daten aus allen Datentabellen.|
+|`BackUpDataSetBeforeUpdate`-Eigenschaft|Bestimmt, ob vor dem Ausführen der `TableAdapterManager.UpdateAll` Methode eine Sicherungskopie des Datasets erstellt wird. Booleschen.|
+|*TableName* `TableAdapter` Eigenschaft|Stellt einen TableAdapter dar. Der generierte TableAdapterManager enthält eine Eigenschaft für jede `TableAdapter`, die er verwaltet. Beispielsweise generiert ein DataSet mit einer Customers-und Orders-Tabelle mit einem TableAdapterManager, der `CustomersTableAdapter`-und `OrdersTableAdapter`-Eigenschaften enthält.|
+|`UpdateOrder`-Eigenschaft|Steuert die Reihenfolge der einzelnen INSERT-, Update-und DELETE-Befehle. Legen Sie diesen Wert auf einen der Werte in der `TableAdapterManager.UpdateOrderOption`-Enumeration fest.<br /><br /> Standardmäßig ist der `UpdateOrder` auf **InsertUpdateDelete**festgelegt. Dies bedeutet, dass Einfügungen, Updates und Löschungen für alle Tabellen im DataSet durchgeführt werden.|
 
 ## <a name="security"></a>Sicherheit
 
-When you use data commands with a CommandType property set to <xref:System.Data.CommandType.Text>, carefully check information that is sent from a client before passing it to your database. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Before you transfer user input to a database, always verify that the information is valid. A best practice is to always use parameterized queries or stored procedures when possible.
+Wenn Sie Daten Befehle verwenden, bei denen eine CommandType-Eigenschaft auf <xref:System.Data.CommandType.Text>festgelegt ist, sollten Sie vor der Übergabe an die Datenbank sorgfältig Informationen überprüfen, die von einem Client gesendet werden. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in eine Datenbank übertragen, sollten Sie stets überprüfen, ob die Informationen gültig sind. Es wird empfohlen, nach Möglichkeit immer parametrisierte Abfragen oder gespeicherte Prozeduren zu verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Datasettools](../data-tools/dataset-tools-in-visual-studio.md)

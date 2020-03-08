@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587588"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408598"
 ---
 # <a name="fxcop-rule-port-status"></a>Port Status der FxCop-Regel
 
@@ -27,7 +27,7 @@ Die [Seite für die automatisch generierte Dokumentation](https://github.com/dot
 
 Die Liste der FxCop-Regeln, die zu den [FxCop-Analyzern](install-fxcop-analyzers.md) portiert wurden, entspricht dem Datum auf dieser Seite:
 
-Regel-ID | Title
+Regel-ID | Titel
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | Statische Member nicht in generischen Typen deklarieren.
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Typen, die löschbare Felder besitzen, müssen gelöscht werden können.
@@ -178,7 +178,7 @@ CA3061 | Schema nicht nach URL hinzufügen
 [CA3147](ca3147.md) | Markieren von Verb Handlern mit Token zum Überprüfen der Antifälschung
 [CA5350](ca5350.md) | Keine schwachen Kryptografiealgorithmen verwenden.
 [CA5351](ca5351.md) | Verwenden Sie keine unterbrochenen Kryptografiealgorithmen.
-CA5358 | Unsichere Chiffre Modi nicht verwenden
+CA5358 | Verwenden Sie keine unsicheren Verschlüsselungsmodi.
 CA5359 | Zertifikat Überprüfung nicht deaktivieren
 CA5360 | Keine gefährlichen Methoden bei der Deserialisierung aufzurufen
 CA5361 | Die SChannel-Verwendung der starken Kryptografie nicht deaktivieren
@@ -344,6 +344,6 @@ Die folgenden veralteten FxCop-Analyse Regeln sind veraltet und werden nicht als
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Microsoft. Code Analysis. fxcopanalyzers-Regeln](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

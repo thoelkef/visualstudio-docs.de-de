@@ -1,5 +1,5 @@
 ---
-title: Starten einer Debugsitzung für Store-Apps (VB, C#, C++ und XAML) | Microsoft-Dokumentation
+title: Starten einer Debugsitzung für eine Store-App ( C#vb C++ , und XAML) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -35,21 +35,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f12d6cde30dec9062dd67a18558bd0571e6fe6b1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685211"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409706"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Starten einer Debugsitzung für eine Store-App in Visual Studio (VB, C#, C++ und XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content. png "windows_and_phone_content")
 
  In diesem Thema wird beschrieben, wie eine Debugsitzung für Store-Apps ausgeführt wird, die in XAML und Visual C++, Visual C# oder Visual Basic programmiert sind. Das Debuggen einer Anwendung umfasst sowohl das Konfigurieren der Debugsitzung als auch die Auswahl der Methode für den Anwendungsstart.
 
 > [!NOTE]
-> In JavaScript und HTML geschriebene apps finden Sie unter [Starten einer Debugsitzung (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> Informationen zu in JavaScript und HTML geschriebenen apps finden Sie unter [Starten einer Debugsitzung (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> In diesem Thema
  [Die einfache Methode zum Starten des Debuggings](#BKMK_The_easy_way_to_start_debugging)
@@ -90,9 +90,9 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
 1. Öffnen Sie in Visual Studio die Anwendungsprojektmappe.
 
-2. Wählen Sie F5.
+2. Drücken Sie F5.
 
-   In Visual Studio wird die Anwendung mit dem angefügten Debugger erstellt und gestartet. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine unbehandelte Ausnahme auftritt, oder bis die Anwendung beendet ist. Weitere Informationen finden Sie unter [Navigieren in einer Debugsitzung (Xaml und c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
+   In Visual Studio wird die Anwendung mit dem angefügten Debugger erstellt und gestartet. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine unbehandelte Ausnahme auftritt, oder bis die Anwendung beendet ist. Weitere Informationen finden Sie unter [Navigieren in einer Debugsitzung (XAML und C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
 
 ## <a name="BKMK_Configure_the_debugging_session"></a> Konfigurieren der Debugsitzung
 
@@ -104,11 +104,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
     - Wählen Sie für Visual C#- und Visual Basic-Anwendungen **Debuggen**aus.
 
-         ![C&#35; &#47; Debugeigenschaftenseite für VB-Projekts](../debugger/media/dbg-csvb-debugpropertypage.png "DBG_CsVb_DebugPropertyPage")
+         ![Debug&#35; &#47; -Eigenschaften Seite für C VB-Projekt](../debugger/media/dbg-csvb-debugpropertypage.png "DBG_CsVb_DebugPropertyPage")
 
     - Erweitern Sie für Visual C++-Anwendungen den Knoten **Konfigurationseigenschaften**  , und wählen Sie dann **Debugging**aus.
 
-         ![C&#43; &#43; Windows Store-app, die debugging-Eigenschaftsseite](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
+         ![&#43; &#43; Eigenschaften Seite "Debuggen von Windows Store-Apps"](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
 
 ### <a name="BKMK_Choose_the_build_configuration_options"></a> Wählen Sie die Buildkonfigurationsoptionen aus.
 
@@ -117,7 +117,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 2. Wählen Sie in der Liste **Plattform** die Zielplattform aus, in der der Build erfolgen soll. In den meisten Fällen ist **Any CPU** (**Alle Plattformen** in Visual C++) die beste Wahl.
 
 ### <a name="BKMK_Choose_the_deployment_target"></a> Auswählen des Bereitstellungsziels
- ![Gilt nur für Windows](../debugger/media/windows-only-content.png "Windows_only_content")
+ ![Gilt nur für Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  Sie können eine Windows Store-App auf dem Visual Studio-Computer, im Visual Studio-Simulator auf dem lokalen Computer oder auf einem Remotegerät bereitstellen und debuggen.
 
@@ -125,13 +125,13 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
 - Wählen Sie auf der Eigenschaftenseite **Debuggen** für C++-Apps das Ziel in der Liste **Zu startender Debugger** aus.
 
-  Wählen Sie eine der folgenden Optionen aus:
+  Wählen Sie eine der Optionen aus:
 
 |||
 |-|-|
-|**Lokaler Computer**|Debuggen Sie die Anwendung in der aktuellen Sitzung auf dem lokalen Computer. Finden Sie unter [Run Windows Store-apps auf dem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md).|
-|**Simulator**|Debuggen Sie die Anwendung im Visual Studio-Simulator für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps. Der Simulator ist ein Desktopfenster mit dem Sie Gerätefunktionen wie z. B. die Fingereingabe und Gerätedrehung debuggen können, die nicht auf dem lokalen Computer verfügbar sind. Finden Sie unter [Run Windows Store-apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|
-|**Remotecomputer**|Debuggen Sie die Anwendung auf einem Gerät, das mit dem lokalen Computer über ein Intranet oder direkt über ein Ethernetkabel verbunden ist. Zum Remotedebuggen müssen die Visual Studio-Remotetools installiert sein und auf dem Remotegerät ausgeführt werden. Finden Sie unter [Run Windows Store-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).|
+|**Lokaler Computer**|Debuggen Sie die Anwendung in der aktuellen Sitzung auf dem lokalen Computer. Siehe [Ausführen von Windows Store-Apps auf dem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md).|
+|**Simulator**|Debuggen Sie die Anwendung im Visual Studio-Simulator für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps. Der Simulator ist ein Desktopfenster mit dem Sie Gerätefunktionen wie z. B. die Fingereingabe und Gerätedrehung debuggen können, die nicht auf dem lokalen Computer verfügbar sind. Weitere Informationen finden Sie [unter Ausführen von Windows Store-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|
+|**Remotecomputer**|Debuggen Sie die Anwendung auf einem Gerät, das mit dem lokalen Computer über ein Intranet oder direkt über ein Ethernetkabel verbunden ist. Zum Remotedebuggen müssen die Visual Studio-Remotetools installiert sein und auf dem Remotegerät ausgeführt werden. Siehe [Ausführen von Windows Store-Apps auf einem Remote Computer](../debugger/run-windows-store-apps-on-a-remote-machine.md).|
 
  Wenn Sie **Remotecomputer**auswählen, geben Sie den Namen oder die IP-Adresse des Remotecomputers auf eine der folgenden Weisen an:
 
@@ -147,14 +147,14 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
   - Wählen Sie für C#- und Visual Basic-Anwendungen **Suchen**aus.
 
-  - Für C++-apps wählen Sie den Pfeil nach unten in der **Computername** und  **\<suchen... >**.
+  - Wählen C++ Sie für apps den Pfeil nach unten im Feld **Computer Name** aus, und wählen Sie **\<suchen... >** .
 
-    ![Select Remotedebuggerverbindung Dialogfeld](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
+    ![Dialogfeld "remotedebuggerverbindung auswählen"](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
   > Durch das Dialogfeld **Remotedebuggerverbindung auswählen** werden Computer auf dem Subnetz des lokalen Netzwerks sowie solche Computer angezeigt, die direkt mit dem Visual Studio-Computer durch ein Ethernetkabel verbunden sind. Um einen anderen Computer anzugeben, geben Sie den Namen im Feld **Computername** ein.
 
-  ![Gilt nur für Windows Phone](../debugger/media/phone-only-content.png "Phone_only_content")
+  ![Gilt nur für Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
   Sie können Windows Phone Store-Apps auf einem Gerät oder einem der Visual Studio Phone Emulatoren bereitstellen und debuggen. Wählen Sie das Gerät oder den Emulator aus der Liste der **Zielgeräte** .
 
@@ -177,7 +177,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |**Gemischt (verwaltet und systemeigen)**|Für das Debuggen des systemeigenen C/C++- und des verwalteten Codes der Anwendung. JavaScript-Code wird ignoriert.|
 |**Nur GPU**|Debuggen von systemeigenem C++-Code, der auf einer Grafikverarbeitungseinheit (GPU) ausgeführt wird.|
 
- ![Gilt nur für Windows Phone](../debugger/media/phone-only-content.png "Phone_only_content")
+ ![Gilt nur für Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
  Für Windows Phone Store-Apps können Sie den Debugger für Hintergrundprozesse auch aus dem **Hintergrundaufgabenprozess**wählen.
 
@@ -191,7 +191,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 - Wählen Sie für Visual C++-Apps auf der Eigenschaftenseite **Debuggen** in der Liste **Anwendung starten** die Option **Ja** aus.
 
 ### <a name="BKMK__Optional__Disable_network_loopbacks"></a> (Optional) Netzwerkloopbacks deaktivieren
- ![Gilt nur für Windows](../debugger/media/windows-only-content.png "Windows_only_content")
+ ![Gilt nur für Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  Aus Sicherheitsgründen wird einer im Standardverfahren installierten Windows Store-App nicht erlaubt, Netzwerkaufrufe an das Gerät auszuführen, auf dem sie installiert wurde. Standardmäßig wird durch die Visual Studio-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an Windows Store senden, sollten Sie die App ohne die Ausnahme testen.
 
@@ -205,7 +205,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Um Probleme zu bestimmen, die mit der Installation und Erstkonfiguration der Visual C#- oder Visual Basic-App zusammenhängen, wählen Sie auf der Eigenschaftenseite **Debuggen** die Option **Paket deinstallieren und anschließend neu installieren**  aus, um eine ursprüngliche Installation beim Debugstart neu zu erstellen. Diese Option ist nicht für Visual C++-Projekte verfügbar.
 
 ### <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> (Optional) Deaktivieren Sie zum Starten des Remotedebuggers die Authentifizierungsanforderung.
- ![Gilt nur für Windows](../debugger/media/windows-only-content.png "Windows_only_content")
+ ![Gilt nur für Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  Standardmäßig müssen Sie zum Auszuführen des Remotedebuggers Anmeldeinformationen angeben.
 
@@ -218,12 +218,12 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
 2. Bei Visual C++-Apps wählen Sie auf der Eigenschaftenseite **Debuggen** in der Liste **Authentifizierung erforderlich** den Eintrag **Nein** aus.
 
-   [Inhalt](#BKMK_In_this_topic)
+   [In diesem Thema](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Start_the_debugging_session"></a> Starten der Debugsitzung
 
 ### <a name="BKMK_Start_debugging__F5_"></a> Debuggen starten (F5)
- Bei der Auswahl **Debuggen starten** (Tastatur: F5) auf die **Debuggen** Menü wird Visual Studio die app mit dem angefügten Debugger gestartet. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine Ausnahme auftritt, oder bis die Anwendung beendet ist.
+ Wenn Sie im Menü **Debuggen** die Option **Debuggen starten** (Tastatur: F5) auswählen, startet Visual Studio die APP mit dem angefügten Debugger. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine Ausnahme auftritt, oder bis die Anwendung beendet ist.
 
 ### <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Starten des Debuggens (F5) jedoch verzögerter Anwendungsstart
  Sie können die App so einrichten, dass sie im Debugmodus ausgeführt wird, sie aber mit einer anderen Methode als dem Debugger starten. Beispielsweise, um den über das Startmenü ausgeführten Start der App zu debuggen, oder um einen Hintergrundprozess aus der App zu debuggen, ohne sie zu starten. Um den App-Start zu verzögern, gehen Sie folgendermaßen vor:
@@ -234,18 +234,18 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
   - Wählen Sie für Visual C++-Anwendungen in der Liste **Anwendung starten** die Option **Ja** aus.
 
-- Wählen Sie **Debuggen starten** auf die **Debuggen** Menü (Tastatur: F5) aus.
+- Wählen Sie im Menü **Debuggen** die Option **Debuggen starten** (Tastatur: F5).
 
 - Starten Sie die Anwendung vom Startmenü aus, über einen Ausführungsvertrag oder von einer anderen Prozedur.
 
   Die Anwendung wird im Debugmodus gestartet. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine unbehandelte Ausnahme auftritt, oder bis die Anwendung beendet ist.
 
-  sein. Weitere Informationen zum Debuggen von Hintergrundaufgaben finden Sie unter [Trigger anhalten, fortsetzen und hintergrundereignissen für Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
+  erforderlich. Weitere Informationen zum Debuggen von Hintergrundaufgaben finden Sie unter Triggern, fortsetzen [und Hintergrundereignisse für Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
 ### <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Starten einer installierten App im Debugger
  Wenn Sie das Debugging mit F5 beginnen, erstellt Visual Studio die App, stellt sie bereit, aktiviert den Debugmodus für die App und startet sie. Um eine App zu starten, die bereits auf dem Gerät installiert ist, verwenden Sie das Dialogfeld "Installiertes App-Paket debuggen". Diese Prozedur ist nützlich, wenn Sie eine App debuggen müssen, die aus dem Windows Store installiert wurde, oder wenn Sie zwar über die Quelldateien der App, nicht jedoch über ein Visual Studio-Projekt für die App verfügen. So kann beispielsweise ein benutzerdefiniertes Buildsystem vorhanden sein, das keine Visual Studio-Projekte oder -Projektmappen verwendet.
 
- Die App kann auf dem lokalen Gerät oder einem Remotegerät installiert sein.  Sie können die App sofort starten oder festlegen, dass sie im Debugger ausgeführt wird, wenn ein anderer Prozess oder eine andere Methode sie startet, z. B. das Startmenü oder ein Aktivierungskontrakt. Auch um einen Hintergrundprozess zu debuggen, können Sie festlegen, dass die App im Debugmodus ausgeführt wird. Weitere Informationen finden Sie unter [Trigger anhalten, fortsetzen und hintergrundereignissen für Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
+ Die App kann auf dem lokalen Gerät oder einem Remotegerät installiert sein.  Sie können die App sofort starten oder festlegen, dass sie im Debugger ausgeführt wird, wenn ein anderer Prozess oder eine andere Methode sie startet, z. B. das Startmenü oder ein Aktivierungskontrakt. Auch um einen Hintergrundprozess zu debuggen, können Sie festlegen, dass die App im Debugmodus ausgeführt wird. Weitere Informationen finden Sie unter [aussetzen von Triggern, fortsetzen und Hintergrund Ereignissen für Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
  Um festzulegen, dass die App im Debugmodus ausgeführt wird, gehen sie folgendermaßen vor:
 
@@ -258,15 +258,15 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **Lokaler Computer**  |                                                                                                                Debuggen Sie die Anwendung in der aktuellen Sitzung auf dem lokalen Computer. Finden Sie unter [Run Windows Store-apps auf dem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
-   |   **Simulator**    | Debuggen Sie die Anwendung im Visual Studio-Simulator für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps. Der Simulator ist ein Desktopfenster mit dem Sie Gerätefunktionen wie z. B. die Fingereingabe und Gerätedrehung debuggen können, die nicht auf dem lokalen Computer verfügbar sind. Finden Sie unter [Run Windows Store-apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md). |
-   | **Remotecomputer** |                          Debuggen Sie die Anwendung auf einem Gerät, das mit dem lokalen Computer über ein Intranet oder direkt über ein Ethernetkabel verbunden ist. Zum Remotedebuggen müssen die Visual Studio-Remotetools installiert sein und auf dem Remotegerät ausgeführt werden. Finden Sie unter [Run Windows Store-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
+   | **Lokaler Computer**  |                                                                                                                Debuggen Sie die Anwendung in der aktuellen Sitzung auf dem lokalen Computer. Siehe [Ausführen von Windows Store-Apps auf dem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
+   |   **Simulator**    | Debuggen Sie die Anwendung im Visual Studio-Simulator für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps. Der Simulator ist ein Desktopfenster mit dem Sie Gerätefunktionen wie z. B. die Fingereingabe und Gerätedrehung debuggen können, die nicht auf dem lokalen Computer verfügbar sind. Weitere Informationen finden Sie [unter Ausführen von Windows Store-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md). |
+   | **Remotecomputer** |                          Debuggen Sie die Anwendung auf einem Gerät, das mit dem lokalen Computer über ein Intranet oder direkt über ein Ethernetkabel verbunden ist. Zum Remotedebuggen müssen die Visual Studio-Remotetools installiert sein und auf dem Remotegerät ausgeführt werden. Siehe [Ausführen von Windows Store-Apps auf einem Remote Computer](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
 
 3. Wählen Sie die App aus der Liste **Installierte App-Pakete** .
 
 4. Wählen Sie die Debug-Engine aus der Liste **Diesen Codetyp debuggen** .
 
-5. (Optional) Wählen Sie **Eigenen Code zunächst nicht starten sondern debuggen** , um die App zu debuggen, wenn Sie von einer anderen Methode gestartet wird, oder um einen Hintergrundprozess zu debuggen.
+5. (Optional). Wählen Sie **Eigenen Code zunächst nicht starten sondern debuggen** , um die App zu debuggen, wenn Sie von einer anderen Methode gestartet wird, oder um einen Hintergrundprozess zu debuggen.
 
    Wenn Sie auf **Starten**&gt; klicken, wird die App gestartet oder festgelegt, dass sie im Debugmodus ausgeführt werden soll.
 
@@ -279,7 +279,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
 1. Legen Sie die Ausführung der Anwendung im Debugmodus fest. Dies muss erfolgen, wenn die Anwendung nicht ausgeführt wird.
 
-2. Starten Sie die Anwendung. Sie können die App über den Startbildschirm, einen Ausführungsvertrag oder eine andere Methode starten.
+2. Starten Sie die App. Sie können die App über den Startbildschirm, einen Ausführungsvertrag oder eine andere Methode starten.
 
 3. Fügen Sie den Debugger an die ausgeführte Anwendung an.
 
@@ -293,7 +293,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
 3. Um das Debuggen einer Anwendung zu aktivieren, müssen Sie den PackageFullName-Bezeichner der App angeben. Um eine Liste aller Apps anzuzeigen, die PackageFullName enthält, geben Sie an der PowerShell-Eingabeaufforderung `Get-AppxPackage` ein.
 
-4. Geben Sie an der PowerShell-Eingabeaufforderung `Enable-AppxDebug` *PackageFullName* ein, wobei *PackageFullName* der PackageFullName-Bezeichner der App ist.
+4. Geben Sie an der PowerShell-Eingabeaufforderung `Enable-AppxDebug` *packagefullname* ein, wobei *packagefullname* der packagefullname-Bezeichner der APP ist.
 
 #### <a name="BKMK_Attach_the_debugger"></a> Fügen Sie den Debugger an.
  So fügen Sie den Debugger an
@@ -302,7 +302,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
     Das Dialogfeld **An den Prozess anhängen** wird angezeigt.
 
-2. Um an eine Anwendung auf einem Remotegerät anzufügen, geben Sie das Remotegerät im Feld **Qualifizierer** an. Sie haben folgende Möglichkeiten:
+2. Um an eine Anwendung auf einem Remotegerät anzufügen, geben Sie das Remotegerät im Feld **Qualifizierer** an. Ihre Möglichkeiten:
 
    - Geben Sie im Feld **Qualifizierer** den gewünschten Anzeigenamen ein.
 
@@ -324,7 +324,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
    Der Debugger wird in Visual Studio an den Prozess angefügt. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine unbehandelte Ausnahme auftritt, oder bis die Anwendung beendet ist.
 
-   [Inhalt](#BKMK_In_this_topic)
+   [In diesem Thema](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Siehe auch
- [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [Navigieren in einer Debugsitzung (Xaml und C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Debuggen von apps in Visual Studio Navigieren in](../debugger/debug-store-apps-in-visual-studio.md) [einer Debugsitzung C#(XAML und)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)
