@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592476"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410117"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets
 
@@ -24,7 +24,7 @@ Um diese exemplarische Vorgehensweise vorzubereiten, kopieren Sie zunächst die 
 > [!NOTE]
 > Der XSLT-Debugger ist nur in der Enterprise Edition von Visual Studio verfügbar.
 
-## <a name="start-debugging"></a>Debugging starten
+## <a name="start-debugging"></a>Starten des Debugvorgangs
 
 1. Wählen Sie im Menü **Datei** die Option > **Datei** **Öffnen** aus.
 
@@ -70,7 +70,7 @@ Wir fügen dem Fenster "über **Wachen 1** " zwei Variablen hinzu, damit wir Ihr
 
 3. Geben Sie in der nächsten Zeile `self::node()` in das Feld **Name** ein, und drücken **Sie**dann die EINGABETASTE.
 
-   `self::node()` ist ein XPath-Ausdruck, der den aktuellen Kontext Knoten ergibt. Der Wert des `self::node()`-XPath-Ausdrucks ist der erste book-Knoten. Dieser ändert sich im Laufe der Transformation.
+   `self::node()` ist ein XPath-Ausdruck, der den aktuellen Kontext Knoten ergibt. Der Wert des `self::node()`-XPath-Ausdrucks ist der erste {2}book{3}-Knoten. Dieser ändert sich im Laufe der Transformation.
 
 4. Erweitern Sie den Knoten `self::node()`, und erweitern Sie dann den Knoten, der den Wert `price`hat.
 

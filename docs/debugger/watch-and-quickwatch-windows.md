@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904045"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409338"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Überwachen von Variablen mit Überwachungs Fenstern und schnell Überwachung
 
@@ -122,7 +122,7 @@ Wenn ein Ausdruck ausgewertet wird, wird möglicherweise ein Aktualisierungs Sym
 
 Um den Wert zu aktualisieren, wählen Sie das Aktualisierungs Symbol aus, oder drücken Sie die Leertaste. Der Debugger versucht, den Ausdruck neu auszuwerten. Abhängig davon, warum der Wert nicht ausgewertet wurde, ist es jedoch möglicherweise nicht möglich, den Ausdruck neu auszuwerten.
 
-Zeigen Sie auf das Aktualisierungs Symbol, oder sehen Sie sich die Spalte **Wert** an, warum der Ausdruck nicht ausgewertet wurde. Dies kann u.a. folgende Gründe haben:
+Zeigen Sie auf das Aktualisierungs Symbol, oder sehen Sie sich die Spalte **Wert** an, warum der Ausdruck nicht ausgewertet wurde. Hierfür kann es folgende Gründe geben:
 
 - Beim Auswerten des Ausdrucks ist ein Fehler aufgetreten, wie im vorherigen Beispiel gezeigt. Möglicherweise tritt ein Timeout auf, oder eine Variable kann außerhalb des gültigen Bereichs liegen.
 
@@ -303,7 +303,7 @@ Um die `a` Variable zu beobachten,
 1. Debuggen fortsetzen. Sie können die Variable im Fenster über **Wachen** beobachten.
 
 ## <a name="see-also"></a>Siehe auch
-- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
+- [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)
 - [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
 - [Erster Einblick in das Debuggen](../debugger/debugger-feature-tour.md)
 - [Debuggerfenster](../debugger/debugger-windows.md)
