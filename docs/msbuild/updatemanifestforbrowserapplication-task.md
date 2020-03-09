@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a78add284a5cea966d1176645649eed19017addd
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579535"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631327"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication-Aufgabe
-Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Task wird ausgeführt, um das **\<hostInBrowser />** -Element dem Anwendungsmanifest ( *\<projectname>.exe.manifest*) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]-Projekt erstellt wird.
+
+Die Aufgabe <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> wird ausgeführt, um dem Anwendungsmanifest ( *\<Projektname>.exe.manifest*) das Element **\<hostInBrowser />** hinzuzufügen, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
@@ -36,7 +37,8 @@ Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Tas
 |`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />** -Element einzufügen. Wenn **true**, dann ist ein neues **\<hostInBrowser />** -Element im **\<entryPoint />** -Element enthalten. Der Einschluss von Elementen ist kumulativ: Wenn ein **\<hostInBrowser />** -Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />** -Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|
 
 ## <a name="remarks"></a>Hinweise
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] werden mithilfe der [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)]-Bereitstellung ausgeführt und müssen aus diesem Grund mit unterstützenden Bereitstellungs- und Anwendungsmanifesten veröffentlicht werden. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] verwendet die [GenerateApplicationManifest](generateapplicationmanifest-task.md)-Aufgabe zum Generieren eines Anwendungsmanifests.
+
+ XBAPs werden mithilfe der ClickOnce-Bereitstellung ausgeführt und müssen aus diesem Grund mit unterstützenden Bereitstellungs- und Anwendungsmanifesten veröffentlicht werden. MSBuild verwendet die [GenerateApplicationManifest](generateapplicationmanifest-task.md)-Aufgabe zum Generieren eines Anwendungsmanifests.
 
  Anschließend muss ein zusätzliches Element, **\<hostInBrowser />** , dem Anwendungsmanifest hinzugefügt werden, um eine Anwendung zu konfigurieren, die von einem Browser gehostet wird, wie im folgenden Beispiel gezeigt:
 
@@ -54,9 +56,10 @@ Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Tas
 />
 ```
 
- Die <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Aufgabe wird ausgeführt, wenn ein [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)] Projekt erstellt wird, um das `<hostInBrowser />` Element hinzuzufügen.
+ Die Aufgabe <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> wird ausgeführt, wenn ein XBAP-Projekt erstellt wird, um das `<hostInBrowser />`-Element hinzuzufügen.
 
 ## <a name="example"></a>Beispiel
+
  Das folgende Beispiel zeigt, wie Sie sicherstellen, dass das `<hostInBrowser />`-Element in eine Anwendungsmanifestdatei eingefügt wird.
 
 ```xml
@@ -73,6 +76,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Tas
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

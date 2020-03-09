@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916878"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234981"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende Mobile-Entwicklung in Visual Studio
 
@@ -60,7 +60,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
  Wenn Sie nicht Xamarin.Forms verwenden und stattdessen für jede Plattform einzeln entwickeln möchten, können Sie den größten Teil Ihres nicht für die Benutzeroberfläche selbst entwickelten Codes für alle Plattformprojekte (Android, iOS und Windows) verwenden. Dies umfasst beliebige Geschäftslogiken, Cloud-Integrationen, Datenbankzugriffe oder weitere Codes, die auf .NET Framework abzielen. Der einzige Code, den Sie nicht freigeben können, ist jener Code, der auf eine bestimmte Plattform abzielt.
 
- ![Freigeben von Code zwischen Benutzeroberflächen von Windows, iOS und Android](../cross-platform/media/sharecode.png "ShareCode")
+ ![Freigeben von Code zwischen Windows-, iOS- und Android-Benutzeroberflächen](../cross-platform/media/sharecode.png "ShareCode")
 
  Sie können Ihren Code mithilfe eines freigegebenen Projekts, eines Portable Class Library-Projekts oder mithilfe von beidem freigeben. Sie stellen unter Umständen fest, dass ein bestimmter Code sich am besten für ein freigegebenes Projekt eignet, während es bei einem anderen Code sinnvoller ist, diesen innerhalb eines Portable Class Library-Projekts anzuwenden.
 
@@ -140,12 +140,12 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
 |**Weitere Informationen**|
 |--------------------|
-|[Herunterladen von Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Installieren der plattformübergreifenden mobilen Entwicklung mit C++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Herunterladen von Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
+|[Installieren der plattformübergreifenden mobilen Entwicklung mit C++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[Weitere Informationen zum Verwenden von C++ für mehrere Plattformen](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Installieren der erforderlichen Tools und anschließendes Erstellen einer Anwendung mit nativer Aktivität für Android](create-an-android-native-activity-app.md)|
+|[Installieren der erforderlichen Tools und anschließendes Erstellen einer C++-Anwendung mit nativer Aktivität für Android](/cpp/cross-platform/create-an-android-native-activity-app)|
 |[Weitere Informationen zum Freigeben von C++-Code mit Android- und Windows-Apps](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Beispiele für die plattformübergreifende mobile Entwicklung für C++](cross-platform-mobile-development-examples.md)|
+|[Beispiele für die plattformübergreifende mobile Entwicklung für C++](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 

@@ -3,110 +3,105 @@ title: Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendu
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/14/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
-ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77276624"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235129"
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
+# <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet.
 
 ## <a name="what-is-aliasing"></a>Was ist Aliasing?
 Der Begriff „Aliasing“ bezieht sich auf Benutzer, die über verschiedene Identitäten für die Anmeldung bei Windows (oder Ihrem Active Directory) und den Zugriff auf E-Mails verfügen.
 
-Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online-Dienst für die Verzeichnisanmeldung verfügt (z. B. olivia@contoso.com), aber Benutzer auf ihre E-Mail-Konten über Aliase oder Anzeigenamen (z. B. OliviaG@contoso.com) zugreifen. Sorgen Sie dafür, dass sich Ihre Benutzer mithilfe der Anmelde-E-Mail-Adresse anmelden, um auf ihre Abonnements zuzugreifen. Die Adressen sind im Verwaltungsportal für Visual Studio-Abonnements unter https://manage.visualstudio.com aufgeführt.
+Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online-Dienst für die Verzeichnisanmeldung verfügt (z. B. JohnD@contoso.com), aber Benutzer auf ihre E-Mail-Konten über Aliase oder Anzeigenamen (z. B. John.Doe@contoso.com) zugreifen. Für viele Kunden, die ihre Abonnements über das Volume Licensing Service Center (VLSC) verwalten, kann dies zu einer erfolglosen Anmeldung führen. Das liegt daran, dass die angegebene E-Mail-Adresse (John.Doe@contoso.com) nicht mit der Verzeichnisadresse (JohnD@contoso.com) übereinstimmt, die für eine erfolgreiche Authentifizierung über die Option „Geschäfts-, Schul- oder Unikonto“ erforderlich ist.  Sorgen Sie dafür, dass sich Ihre Benutzer die Anmelde-E-Mail-Adressen verwenden, um auf ihre Abonnements zuzugreifen. Diese Adressen sind im Verwaltungsportal unter https://manage.visualstudio.com aufgeführt. 
 
-## <a name="as-an-administrator-what-options-do-i-have"></a>Welche Möglichkeiten habe ich als Administrator?
+## <a name="what-are-the-potential-issues"></a>Welche möglichen Probleme können auftreten?
 
-Je nach Kontotyp des Abonnenten finden Sie unten die entsprechende Lösung:
+Je nach Kontotyp des Abonnenten kann eines von zwei Problemen auftreten. 
 
-### <a name="work-or-school-account-upn-mismatch-issue"></a>Fehler bei fehlender Übereinstimmung des UPN von Geschäfts-, Schul- oder Unikonto
+### <a name="work-or-school-account-upn-mismatch-issue"></a>Fehler bei fehlender Übereinstimmung des UPN von Geschäfts-, Schul- oder Unikonto 
+Wenn in einem Unternehmen Active Directory eingerichtet ist und der Benutzerprinzipalname (UPN) nicht mit der primären SMTP-Adresse identisch ist, kann es zu einem UPN-Konflikt kommen. 
 
-Eine fehlende Übereinstimmung des Benutzerprinzipalnamens (UPN) kann auftreten, wenn in einem Unternehmen Active Directory eingerichtet ist und der UPN nicht identisch mit der primären SMTP-Adresse ist. 
+#### <a name="how-to-detect-if-your-sign-in-address-is-impacted-by-a-upn-mismatch"></a>So können Sie feststellen, ob für Ihre Anmeldeadresse ein UPN-Konflikt vorliegt 
 
-#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>Erkennen, ob es für die Anmeldeadresse eines Benutzers keine UPN-Übereinstimmung gibt
+1. Melden Sie sich unter Verwendung der Anmelde-E-Mail-Adresse bei https://my.visualstudio.com/subscriptions an, die in der E-Mail mit Ihrer Abonnementzuweisung genannt ist.
 
-Sorgen Sie dafür, dass der Benutzer die folgenden Schritte ausführt:
+2. Stellen Sie sicher, dass die Anmelde-E-Mail-Adresse oben rechts auf der Seite mit der Adresse übereinstimmt, die Sie zur Anmeldung verwendet haben.  Andernfalls liegt ein UPN-Konflikt vor, und Sie sind nicht in der Lage, Ihr Abonnement anzuzeigen. 
 
-1. Der Benutzer muss sich mithilfe der Anmeldeadresse bei https://my.visualstudio.com anmelden, die er in der Abonnementzuweisungs-E-Mail findet.  
+> [!div class="mx-imgBorder"]
+> ![Anmelde-E-Mail-Adresse](_img//aliasing/sign-in-email.png)
 
-    > [!NOTE]
-    > Wenn er seine Abonnementzuweisungs-E-Mail nicht zur Hand hat, können Sie ihm diese E-Mail über das Verwaltungsportal erneut senden.  
-
-2. Klicken Sie auf die Registerkarte **Abonnements**.
-3. Der Benutzer muss überprüfen, ob die E-Mail-Adresse, die oben rechts unter „Sie sind angemeldet als…“ angezeigt wird, identisch mit der Anmelde-E-Mail-Adresse ist, die er in der Abonnementzuweisungs-E-Mail findet.  Ist dies nicht der Fall, können Benutzer nicht auf ihre Abonnementsvorteile zugreifen. 
-
-   > [!div class="mx-imgBorder"]
-   > ![Abonnementsseite](_img/aliasing/aliasing-subscriptions-page.png)
-
-#### <a name="how-to-correct-the-upn-mismatch"></a>Korrigieren der fehlenden Übereinstimmung des UPN
+#### <a name="how-to-fix-a-upn-mismatch"></a>Beheben eines UPN-Konflikts
 
 1. Greifen Sie auf das Verwaltungsportal für Visual Studio unter https://manage.visualstudio.com zu. 
 
-2. Suchen Sie nach dem Benutzer, bei dem das Problem der fehlenden UPN-Übereinstimmung aufgetreten ist.  Das [Filterfeature](search-license.md) erleichtert Ihnen den Prozess, wenn es sehr viele Abonnements gibt. 
+2. Suchen Sie nach dem Abonnenten, für den der UPN-Konflikt vorliegt. (Das [Filter](search-license.md)-Feature kann die Suche nach einem Abonnenten vereinfachen.)
 
-3. Ändern Sie die Anmelde-E-Mail-Adresse in den UPN des Benutzers.
+3. Ändern Sie die Anmelde-E-Mail-Adresse in den UPN des Abonnenten. 
 
-4. Speichern der Änderungen 
+0. Speichern der Änderungen 
 
-5. Bitten Sie den Benutzer, sich im Abonnentenportal abzumelden, und sich mit dem UPN erneut anzumelden.   
+0. Informieren Sie den Abonnenten, sich vom Abonnentenportal abzumelden und sich unter Verwendung des Benutzerprinzipalnamens erneut anzumelden. 
 
 ### <a name="personal-account-aliasing-issue"></a>Aliasingprobleme bei persönlichen Konten
 
-Aliasingprobleme können auch persönliche Konten betreffen. 
+Bei persönlichen Abonnementkonten können ebenfalls Probleme auftreten, wenn die zur Anmeldung beim Visual Studio-Abonnementportal verwendete E-Mail-Adresse nicht mit der E-Mail-Adresse übereinstimmt, die mit dem Abonnement verknüpft ist. 
 
-#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>Erkennen, ob bei einem persönlichen Konto ein Aliasingproblem auftritt
+#### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>So stellen Sie fest, ob Ihr persönliches Abonnementkonto von einem Aliasingproblem betroffen ist
 
-1. Melden Sie sich unter https://my.visualstudio.com an.
+1. Melden Sie sich bei https://my.visualstudio.com/subscriptions an.
 
-2. Klicken Sie auf die Registerkarte **Abonnements**, und überprüfen Sie die Adresse, mit der Sie angemeldet sind. 
+0. Stellen Sie sicher, dass die Anmelde-E-Mail-Adresse oben rechts auf der Seite mit der Adresse übereinstimmt, die Sie zur Anmeldung verwendet haben.  Wenn die E-Mail-Adresse, mit der Sie angemeldet sind, nicht identisch mit der E-Mail-Adresse ist, mit der auf die Website zugegriffen wurde, kommt es zu einem Konflikt zwischen Ihrem Konto und dem Alias.
 
-3. Wenn die E-Mail-Adresse, mit der Sie angemeldet sind, nicht identisch mit der E-Mail-Adresse ist, mit der auf die Website zugegriffen wurde, kommt es zu einem Konflikt zwischen Ihrem Konto und dem Alias. 
+#### <a name="how-to-fix-an-alias-issue"></a>Beheben eines Aliasproblems
 
-#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>Beheben eines Aliasingproblems bei einem persönlichen Konto
+Die Visual Studio-Plattform priorisiert den primären Alias, um Abonnementdetails anzuzeigen. 
 
-Die Plattform mit Visual Studio-Abonnements priorisiert den primären Alias so, dass Abonnementdetails angezeigt werden.  Wenn Sie das Problem beheben möchten, müssen Sie einen anderen E-Mail-Alias zum primären Alias machen, um sich anzumelden. 
+1. Navigieren Sie zu **Anmeldung bei Microsoft verwalten**. Melden Sie sich in Ihrem Microsoft-Konto an, wenn Sie dazu aufgefordert werden. 
 
-1. Navigieren Sie zu [Anmeldung bei Microsoft verwalten](https://go.microsoft.com/fwlink/p/?linkid=842796).
-2. Melden Sie sich in Ihrem Microsoft-Konto an, wenn Sie dazu aufgefordert werden. 
-3. Klicken Sie unter Kontoaliase neben der E-Mail-Adresse, die für die Zuweisung des Abonnements verwendet wurde, auf die Option **Als primär festlegen**. 
-4. Klicken Sie unter Kontoaliase neben der E-Mail-Adresse, die für die Zuweisung des Abonnements verwendet wurde, auf die Option „Als primär festlegen“. 
-5. Melden Sie sich vom Visual Studio-Portal für Abonnenten ab (https://my.visualstudio.com). 
-6. Greifen Sie mit dem neuen primären Alias erneut auf das Portal zu. 
+2. Klicken Sie unter Kontoaliase neben der E-Mail-Adresse, die für die Zuweisung des Abonnements verwendet wurde, auf die Option **Als primär festlegen**. 
 
-### <a name="ensure-a-successful-experience-for-your-users"></a>Garantieren einer problemlosen Anmeldung für Ihre Benutzer
+> [!div class="mx-imgBorder"]
+> ![Festlegen der primären E-Mail-Adresse](_img//aliasing/account-aliases.png)
 
-Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die Anmeldung Ihrer Abonnenten bei https://my.visualstudio.com problemlos möglich ist. 
+3. Melden Sie sich vom Visual Studio-Abonnementportal ab (https://my.visualstudio.com). 
 
-- Die erste Option (empfohlen) ist die Verwendung des Verzeichniskontos als Adresse für die Anmeldung bei https://manage.visualstudio.com.
-- Die zweite Option ist weniger sicher, und besteht darin, Abonnenten die Möglichkeit zu geben, sich mit einer anderen E-Mail-Adresse als ihrer Verzeichnis-E-Mailadresse anzumelden.
+4. Melden Sie sich erneut an. Verwenden Sie hierbei das Konto, das für die Zuweisung des Abonnements verwendet wurde und nun als primärer Alias konfiguriert werden soll. 
 
-Beide Option werden im Administratorportal konfiguriert, indem die folgenden Schritte ausgeführt werden:
+## <a name="preventing-aliasing-issues"></a>Verhindern von Aliasingproblemen
 
+Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die Anmeldung Ihrer Abonnenten bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) erfolgreich ist.
+- Die erste Option (empfohlen) ist die Verwendung des Verzeichniskontos zur Anmeldung beim Visual Studio-Abonnementportal unter https://my.visualstudio.com.  
+- Die zweite Option (weniger sicher) besteht darin, Abonnenten die Anmeldung mit einer anderen E-Mail-Adresse als ihrer Verzeichnis-E-Mailadresse zu gestatten.
+
+Beide Option werden im Administratorportal konfiguriert, indem die folgenden Schritte ausgeführt werden:  
 1. Melden Sie sich bei https://manage.visualstudio.com an. 
 
-2. Wenn Sie Änderungen für einen einzelnen Benutzer vornehmen möchten, wählen Sie diesen Benutzer in der Tabelle aus, und klicken Sie für das Bearbeiten mit der rechten Maustaste auf ihn. Dadurch wird ein Panel geöffnet, in dem Sie die E-Mail-Adresse für die Anmeldung ändern können.  
+0. Wenn Sie Änderungen für einen einzelnen Benutzer vornehmen möchten, wählen Sie diesen Benutzer in der Tabelle aus, und klicken Sie für das Bearbeiten mit der rechten Maustaste auf ihn. Dadurch wird ein Panel geöffnet, in dem Sie die E-Mail-Adresse für die Anmeldung ändern können. Nehmen Sie im Feld für die E-Mail-Adresse für die Anmeldung die erforderlichen Änderungen vor. Klicken Sie auf „Speichern“, und die Änderungen werden umgesetzt.  
 
-3. Nehmen Sie im Feld für die E-Mail-Adresse für die Anmeldung die erforderlichen Änderungen vor. 
+0. Wenn Sie Änderungen an mehreren Benutzern gleichzeitig vornehmen möchten, können Sie das Feature für die Massenbearbeitung verwenden. Weitere Informationen erhalten Sie im Artikel [Bearbeiten mehrerer Abonnenten mithilfe der Massenbearbeitung](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit).
 
-4. Klicken Sie auf „Speichern“, und die Änderungen werden umgesetzt.  
-Wenn Sie Änderungen an mehreren Benutzern gleichzeitig vornehmen möchten, können Sie das Feature für die Massenbearbeitung verwenden. Lesen Sie den Abschnitt **Bearbeiten mehrerer Abonnenten mithilfe der Massenbearbeitung** im Artikel „Bearbeiten von Visual Studio-Abonnementzuweisungen“ ([Edit subscriptions]](edit-license.md)), um weitere Informationen zu diesem Prozess zu erhalten.  
+> [!NOTE]
+> Sowohl bei Einzel- als auch bei Massenänderungen werden die Abonnenten per E-Mail darüber informiert, dass sich ihre Anmelde-E-Mail-Adresse geändert hat und sie sich mit der aktualisierten E-Mail-Adresse anmelden müssen. Beachten Sie außerdem Folgendes: Hat der Abonnent zuvor Vorteile mit der anderen Anmeldeadresse aktiviert, muss er zum Zugriff auf diese weiterhin die andere Anmeldeadresse verwenden.  
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements.
 - [Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements](assign-license.md)
 - [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
 - [Bearbeiten von Abonnements](edit-license.md)
-- [Löschen von Abonnements](delete-license.md)
 - [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)
 
-## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](/visualstudio/)
-- [Dokumentation zu Azure DevOps](/azure/devops/)
-- [Azure-Dokumentation](/azure/)
-- [Dokumentation zu Microsoft 365](/microsoft-365/)
+

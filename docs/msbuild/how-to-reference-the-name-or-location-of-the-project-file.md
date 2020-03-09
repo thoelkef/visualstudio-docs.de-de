@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574781"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633836"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Vorgehensweise: Verweisen auf den Namen oder Speicherort der Projektdatei
-Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwenden, selbst ohne eine eigene Eigenschaft erstellt zu haben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt reservierte Eigenschaften zur Verfügung, die auf die Projektdateinamen sowie andere Eigenschaften verweisen, die zum Projekt gehören. Weitere Informationen zu reservierten Eigenschaften finden Sie unter [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+
+Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwenden, selbst ohne eine eigene Eigenschaft erstellt zu haben. MSBuild stellt reservierte Eigenschaften zur Verfügung, die auf die Projektdateinamen sowie andere Eigenschaften verweisen, die zum Projekt gehören. Weitere Informationen zu reservierten Eigenschaften finden Sie unter [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Verwenden der Projekteigenschaften
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt einige reservierten Eigenschaften bereit, die Sie in den Projektdateien verwenden können, ohne sie jedes Mal zu definieren. Beispiel: Die reservierte Eigenschaft `MSBuildProjectName` stellt einen Verweis zum Projektdateinamen bereit. Die reservierte Eigenschaft `MSBuildProjectDirectory` stellt einen Verweis zum Speicherort der Projektdatei bereit.
+
+ MSBuild stellt einige reservierte Eigenschaften bereit, die Sie in den Projektdateien verwenden können, ohne diese jedes Mal zu definieren. Beispiel: Die reservierte Eigenschaft `MSBuildProjectName` stellt einen Verweis zum Projektdateinamen bereit. Die reservierte Eigenschaft `MSBuildProjectDirectory` stellt einen Verweis zum Speicherort der Projektdatei bereit.
 
 #### <a name="to-use-the-project-properties"></a>So verwenden Sie die Projekteigenschaften
 
@@ -47,6 +49,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 > Reservierte Eigenschaften können nicht in der Projektdatei neu definiert werden.
 
 ## <a name="example"></a>Beispiel
+
  Die folgende Beispiel-Projektdatei verweist den Projektnamen als reservierte Eigenschaft, um den Namen für die Ausgabe anzugeben.
 
 ```xml
@@ -75,6 +78,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 ```
 
 ## <a name="example"></a>Beispiel
+
  Die folgende Beispielprojektdatei verwendet die reservierte Eigenschaft `MSBuildProjectDirectory`, um den vollständigen Pfad zu einer Datei im Speicherort der Projektdatei zu erstellen.
 
 ```xml
@@ -87,6 +91,9 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 </Project>
 ```
 
+Das Beispiel verwendet die Syntax der [Eigenschaftenfunktion](property-functions.md), um die statische .NET Framework-Methode <xref:System.IO.Path.Combine*?displayProperty=fullName> aufzurufen.
+
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

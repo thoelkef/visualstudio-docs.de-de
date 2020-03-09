@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fef5a84285afdaa429606937f3e537863b060ec8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595071"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632160"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
+
 Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie verwenden können, um ein Anwendungsprojekt zu erstellen. MSBuild umfasst ein Standardtoolset, Sie können jedoch auch benutzerdefinierte Toolsets erstellen. Informationen zum Angeben eines Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="standard-toolset-configurations"></a>Standard-Toolsetkonfigurationen
@@ -59,6 +60,7 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**.NET Framework 4-Installationspfad**|
 
 ### <a name="sub-toolsets"></a>Unter-Toolsets
+
  Wenn der Registrierungsschlüssel in der vorherigen Tabelle über einen Unterschlüssel verfügt, verwendet MSBuild diesen, um den Pfad eines Untertoolsets zu bestimmen, der den Pfad im übergeordneten Toolset überschreibt. Der folgende Unterschlüssel ist ein Beispiel:
 
  **\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0**
@@ -71,7 +73,8 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
 > Es wird empfohlen, diese Einstellungen nicht zu ändern. Sie können jedoch auch eigene Einstellungen hinzufügen und computerübergreifende benutzerdefinierte Toolsetdefinitionen festlegen, wie im nächsten Abschnitt beschrieben.
 
 ## <a name="custom-toolset-definitions"></a>Benutzerdefinierte Toolsetdefinitionen
- Wenn ein Standardtoolset die Buildanforderungen nicht erfüllt, können Sie ein benutzerdefiniertes Toolset erstellen. Angenommen, Sie haben ein Buildlaborszenario, in dem Sie ein eigenes System zum Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten benötigen. Mit einem benutzerdefinierten Toolset können Sie dem `ToolsVersion`-Attribut beim Erstellen von Projekten oder Ausführen von *MSBuild.exe* benutzerdefinierte Werte zuweisen. Auf diese Weise können Sie die `$(MSBuildToolsPath)`-Eigenschaft verwenden, um *TARGETS*-Dateien von diesem Verzeichnis zu importieren, sowie benutzerdefinierte Toolseteigenschaften definieren, die für jedes Projekt verwendet werden können, das dieses Toolset verwendet.
+
+ Wenn ein Standardtoolset die Buildanforderungen nicht erfüllt, können Sie ein benutzerdefiniertes Toolset erstellen. Angenommen, Sie haben ein Buildlaborszenario, in dem Sie ein eigenes System zum Erstellen von C++-Projekten benötigen. Mit einem benutzerdefinierten Toolset können Sie dem `ToolsVersion`-Attribut beim Erstellen von Projekten oder Ausführen von *MSBuild.exe* benutzerdefinierte Werte zuweisen. Auf diese Weise können Sie die `$(MSBuildToolsPath)`-Eigenschaft verwenden, um *TARGETS*-Dateien von diesem Verzeichnis zu importieren, sowie benutzerdefinierte Toolseteigenschaften definieren, die für jedes Projekt verwendet werden können, das dieses Toolset verwendet.
 
  Geben Sie ein benutzerdefiniertes Toolset in der Konfigurationsdatei für *MSBuild.exe* an (oder für das benutzerdefinierte Tool, das die MSBuild-Engine hostet, wenn dies bei Ihnen zutrifft). Beispielsweise kann die Konfigurationsdatei für *MSBuild.exe* die folgende Toolsetdefinition enthalten, wenn Sie ein Toolset mit dem Namen *MyCustomToolset* definieren möchten.
 
@@ -99,7 +102,7 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
 > [!NOTE]
 > Richtig gelesen ist `<configSections>` der erste Unterabschnitt im Abschnitt `<configuration>`.
 
- `ToolsetConfigurationSection` ist ein benutzerdefinierter Konfigurationsabschnitt, der von jedem MSBuild-Host für die benutzerdefinierte Konfiguration verwendet werden kann. Wenn Sie ein benutzerdefiniertes Toolset verwenden, muss ein Host keine Aktionen durchführen, um die Build-Engine zu initialisieren, sondern nur die Einträge in der Konfigurationsdatei zur Verfügung stellen. Indem Sie Einträge in der Registrierung definieren, können Sie computerübergreifende Toolsets angeben, die für *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und alle Hosts von MSBuild angewendet werden können.
+ `ToolsetConfigurationSection` ist ein benutzerdefinierter Konfigurationsabschnitt, der von jedem MSBuild-Host für die benutzerdefinierte Konfiguration verwendet werden kann. Wenn Sie ein benutzerdefiniertes Toolset verwenden, muss ein Host keine Aktionen durchführen, um die Build-Engine zu initialisieren, sondern nur die Einträge in der Konfigurationsdatei zur Verfügung stellen. Indem Sie Einträge in der Registrierung definieren, können Sie computerübergreifende Toolsets angeben, die für *MSBuild.exe*, Visual Studio und alle Hosts von MSBuild angewendet werden können.
 
 > [!NOTE]
 > Wenn in einer Konfigurationsdatei die Einstellungen für eine `ToolsVersion` definiert werden, die bereits in der Registrierung definiert ist, werden diese beiden Definitionen nicht zusammengeführt. Die Definition in der Konfigurationsdatei hat Priorität, und die Einstellungen in der Registrierung für diese `ToolsVersion` werden ignoriert.
@@ -113,4 +116,5 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
   Sie können auch benutzerdefinierte, Toolsversion-spezifische Eigenschaften zur Konfigurationsdatei hinzufügen, indem Sie die gleiche Syntax verwenden wie zum Hinzufügen der MSBuildToolsPath-Eigenschaft. Damit diese benutzerdefinierten Eigenschaften der Projektdatei zur Verfügung stehen, müssen Sie den gleichen Namen wie der des in der Konfigurationsdatei angegebenen Werts verwenden. In der Konfigurationsdatei können Sie Toolsets, nicht jedoch Unter-Toolsets definieren.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

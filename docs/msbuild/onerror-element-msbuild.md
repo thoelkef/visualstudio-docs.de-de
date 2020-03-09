@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2ddf970225d96291f76935838a743ba358eff0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594876"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633082"
 ---
 # <a name="onerror-element-msbuild"></a>OnError-Element (MSBuild)
+
 Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-Attribut für eine Aufgabe, bei der ein Fehler aufgetreten ist, `false` ist.
 
  \<Project> \<Target> \<OnError>
@@ -38,6 +39,7 @@ Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-A
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -48,21 +50,24 @@ Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-A
 |`ExecuteTargets`|Erforderliches Attribut.<br /><br /> Die Ziele, die ausgeführt werden, wenn bei einer Aufgabe ein Fehler auftritt. Trennen Sie mehrere Ziele durch Semikolons. Mehrere Ziele werden in der angegebenen Reihenfolge ausgeführt.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
+
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 | Element | Beschreibung |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | Containerelement für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben. |
+| [Target](../msbuild/target-element-msbuild.md) | Containerelement für MSBuild-Aufgaben. |
 
 ## <a name="remarks"></a>Hinweise
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] führt das `OnError`-Element aus, wenn bei einer der Aufgaben des `Target`-Elements ein Fehler auftritt, wenn der `ContinueOnError`-Attributsatz auf `ErrorAndStop` (oder `false`) festgelegt ist. Wenn bei der Aufgabe ein Fehler auftritt, werden die im `ExecuteTargets`-Attribut festgelegten Ziele ausgeführt. Wenn das Ziel mehrere `OnError`-Elemente enthält, werden die `OnError`-Elemente sequenziell ausgeführt, wenn bei der Aufgabe ein Fehler auftritt.
+
+ MSBuild führt das `OnError`-Element aus, wenn eine der Aufgaben des `Target`-Elements bei Festlegung des `ContinueOnError`-Attributs auf `ErrorAndStop` (oder `false`) nicht erfolgreich ist. Wenn bei der Aufgabe ein Fehler auftritt, werden die im `ExecuteTargets`-Attribut festgelegten Ziele ausgeführt. Wenn das Ziel mehrere `OnError`-Elemente enthält, werden die `OnError`-Elemente sequenziell ausgeführt, wenn bei der Aufgabe ein Fehler auftritt.
 
  Weitere Informationen zu den `ContinueOnError`-Attributen finden Sie unter [Aufgabenelement (MSBuild)](../msbuild/task-element-msbuild.md). Informationen zu Zielen finden Sie unter [Targets](../msbuild/msbuild-targets.md).
 
 ## <a name="example"></a>Beispiel
- Der folgende Code führt die `TaskOne`- und `TaskTwo`-Aufgabe aus. Wenn bei `TaskOne` ein Fehler auftritt, wertet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] das `OnError`-Element aus und führt das `OtherTarget`-Ziel aus.
+
+ Der folgende Code führt die `TaskOne`- und `TaskTwo`-Aufgabe aus. Wenn es bei `TaskOne` zu einem Fehler kommt, wertet MSBuild das `OnError`-Element aus und führt das `OtherTarget`-Ziel aus.
 
 ```xml
 <Target Name="ThisTarget">
@@ -75,5 +80,6 @@ Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-A
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [Ziele](../msbuild/msbuild-targets.md)

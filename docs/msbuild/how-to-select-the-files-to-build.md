@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574612"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633810"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
+
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.
 
 ## <a name="specify-inputs"></a>Angeben von Eingaben
+
 Elemente stellen die Eingaben für einen Build dar. Weitere Informationen zu Elementen finden Sie unter [Items (Elemente)](../msbuild/msbuild-items.md).
 
-Damit Dateien für einen Build eingeschlossen werden können, müssen sie in einer Elementliste in der Projektdatei [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aufgeführt sein. Es können mehrere Dateien einer Elementliste hinzugefügt werden, indem die Dateien entweder einzeln oder mithilfe von Platzhaltern eingefügt werden, mit denen viele Dateien gleichzeitig eingefügt werden können.
+Damit Dateien für einen Build eingeschlossen werden können, müssen sie in einer Elementliste in der MSBuild-Projektdatei aufgeführt sein. Es können mehrere Dateien einer Elementliste hinzugefügt werden, indem die Dateien entweder einzeln oder mithilfe von Platzhaltern eingefügt werden, mit denen viele Dateien gleichzeitig eingefügt werden können.
 
 #### <a name="to-declare-items-individually"></a>So deklarieren Sie Elemente einzeln
 
@@ -51,6 +53,7 @@ Damit Dateien für einen Build eingeschlossen werden können, müssen sie in ein
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Angeben von Eingaben mit Platzhaltern
+
 Sie können auch Platzhalter verwenden, um rekursiv alle Dateien oder nur bestimmte Dateien aus Unterverzeichnissen als Eingaben für einen Build einzufügen. Weitere Informationen zu Elementen finden Sie unter [Items (Elemente)](../msbuild/msbuild-items.md).
 
 Die folgenden Beispiele basieren auf einem Projekt, das Grafikdateien in den folgenden Verzeichnissen und Unterverzeichnissen enthält, wobei sich die Projektdatei im Verzeichnis *Project* befindet:
@@ -84,6 +87,7 @@ Die folgenden Beispiele basieren auf einem Projekt, das Grafikdateien in den fol
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Übergeben von Elementen an eine Aufgabe
+
 Sie können in einer Projektdatei die Notation „@()“ in Aufgaben verwenden, um eine gesamte Elementliste als Eingabe für einen Build anzugeben. Sie können diese Notation verwenden, egal ob Sie alle Dateien einzeln auflisten oder Platzhalter verwenden.
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>So verwenden Sie alle Visual C#- oder Visual Basic-Dateien als Eingabe
@@ -97,11 +101,12 @@ Sie können in einer Projektdatei die Notation „@()“ in Aufgaben verwenden, 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> Sie müssen Platzhalter mit Elementen verwenden, um die Eingaben für einen Build anzugeben. Sie können keine Eingaben mithilfe des `Sources`-Attributs in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben verwenden, wie z.B. [Ccs](../msbuild/csc-task.md) oder [Vbc](../msbuild/vbc-task.md). Das folgende Beispiel ist in einer Projektdatei nicht gültig:
+> Sie müssen Platzhalter mit Elementen verwenden, um die Eingaben für einen Build anzugeben. Sie können keine Eingaben mithilfe des `Sources`-Attributs in MSBuild-Aufgaben verwenden, wie z. B. [Ccs](../msbuild/csc-task.md) oder [Vbc](../msbuild/vbc-task.md). Das folgende Beispiel ist in einer Projektdatei nicht gültig:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Beispiel
+
 Das folgende Codebeispiel zeigt ein Projekt, das alle Eingabedateien separat einschließt.
 
 ```xml
@@ -136,6 +141,7 @@ Das folgende Codebeispiel zeigt ein Projekt, das alle Eingabedateien separat ein
 ```
 
 ## <a name="example"></a>Beispiel
+
 Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS*-Dateien einzuschließen.
 
 ```xml
@@ -170,5 +176,6 @@ Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS*-Dateien einz
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).
+
+- [How to: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).
 - [Elemente](../msbuild/msbuild-items.md)

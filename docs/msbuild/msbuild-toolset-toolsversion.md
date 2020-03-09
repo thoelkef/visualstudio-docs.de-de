@@ -13,18 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af4816440c2eb285a0f30db50e18108ce79265f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593806"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633121"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 
 MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben (*microsoft.common.tasks*), eine Datei mit allgemeinen Zielen (*microsoft.common.targets*) und Compiler wie *csc.exe* und *vbc.exe*. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion-Attribut
+
 ::: moniker range=">=vs-2019"
  Geben Sie das Toolset im Attribut `ToolsVersion` des [Project](../msbuild/project-element-msbuild.md)-Elements in der Projektdatei an. Das folgende Beispiel gibt an, dass das Projekt mit dem MSBuild-Toolset „Current“ erstellt werden soll.
 

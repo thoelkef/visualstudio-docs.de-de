@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
-ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
+ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622571"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235092"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -66,7 +66,7 @@ Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann 
     Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
     ::: moniker-end
 
-    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
     ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
 
@@ -74,7 +74,9 @@ Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann 
 
     Dieses Tutorial wurde mit der Version 10.16.0 getestet.
 
-    Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
+    Sofern nicht bereits geschehen, empfehlen wir Ihnen, die LTS-Version von der [Node.js](https://nodejs.org/en/download/)-Website zu installieren, um optimale Kompatibilität mit externen Frameworks und Bibliotheken zu gewährleisten. Node.js wurde für 32-Bit- und 64-Bit-Architekturen entwickelt. Die Node.js-Tools in Visual Studio, die in der Node.js-Workload enthalten sind, unterstützen beide Versionen. Es wird nur eine Version benötigt, und das Node.js-Installationsprogramm unterstützt zu jedem Zeitpunkt nur jeweils eine Installation.
+    
+    Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Runtime nicht erkannt, können Sie das Projekt so konfigurieren, dass auf der Eigenschaftenseite auf die installierte Runtime verwiesen wird (klicken Sie hierzu nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, wählen Sie **Eigenschaften** aus, und legen Sie den **Node.exe-Pfad** fest). Sie können eine globale Installation von Node.js verwenden oder in jedem Ihrer Node.js-Projekte den Pfad zu einem lokalen Interpreter angeben. 
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
@@ -466,7 +468,7 @@ Verwenden Sie Chrome für dieses Szenario.
     },
     ```
 
-    Dies ist eine reine Entwicklungseinstellung, die das Debuggen in Visual Studio aktiviert. Mit dieser Einstellung können Sie die generierten Verweise in der Quellzuordnungsdatei (*app-bundle.js.map*) beim Erstellen der App überschreiben. Webpack-Verweise in der Quellzuordnungsdatei enthalten standardmäßig das Präfix *webpack:///*, das Visual Studio daran hindert, die Quelldatei *app.tsx* zu finden. Wenn Sie diese spezifische Änderung vornehmen, wird der Verweis auf die Quelldatei *app.tsx* von *webpack:///./app.tsx* in *./app.tsx* geändert, wodurch das Debuggen ermöglicht wird.
+    Dies ist eine reine Entwicklungseinstellung, die das Debuggen in Visual Studio aktiviert. Mit dieser Einstellung können Sie die generierten Verweise in der Quellzuordnungsdatei (*app-bundle.js.map*) beim Erstellen der App überschreiben. Webpack-Verweise in der Quellzuordnungsdatei enthalten standardmäßig das Präfix *webpack:///* , das Visual Studio daran hindert, die Quelldatei *app.tsx* zu finden. Wenn Sie diese spezifische Änderung vornehmen, wird der Verweis auf die Quelldatei *app.tsx* von *webpack:///./app.tsx* in *./app.tsx* geändert, wodurch das Debuggen ermöglicht wird.
 
 3. Wählen Sie Ihren Zielbrowser in Visual Studio als Debugziel aus, und drücken Sie dann **STRG**+**F5** (oder klicken Sie auf **Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
 
@@ -484,7 +486,7 @@ Verwenden Sie Chrome für dieses Szenario.
 5. Im Dialogfeld **An Prozess anhängen** finden Sie eine gefilterte Liste der Browserinstanzen, an die Sie anfügen können.
 
     ::: moniker range=">=vs-2019"
-    Wählen Sie in Visual Studio 2019 im Feld **Anfügen an** den entsprechenden Debugger für Ihren Zielbrowser aus, **JavaScript (Chrome)** oder **JavaScript (Microsoft Edge (Chromium))**, und geben Sie **chrome** oder **edge** in das Filterfeld ein, um die Suchergebnisse zu filtern.
+    Wählen Sie in Visual Studio 2019 im Feld **Anfügen an** den entsprechenden Debugger für Ihren Zielbrowser aus, **JavaScript (Chrome)** oder **JavaScript (Microsoft Edge (Chromium))** , und geben Sie **chrome** oder **edge** in das Filterfeld ein, um die Suchergebnisse zu filtern.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Wählen Sie in Visual Studio 2017 im Feld **Anfügen an** die Option **Webkit-Code** aus, und geben Sie **chrome** in das Filterfeld ein, um die Suchergebnisse zu filtern.

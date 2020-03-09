@@ -18,17 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579642"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634005"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
+
+Ruft den Pfad zu den .NET Framework-Assemblys ab.
 Ruft den Pfad zu den .NET Framework-Assemblys ab.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
 In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -41,11 +44,13 @@ In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe be
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den neuesten Frameworkassemblys, sofern diese verfügbar sind. Andernfalls wird `null` zurückgegeben.|
 
 ## <a name="remarks"></a>Hinweise
-Wenn mehrere Versionen von .NET Framework installiert sind, gibt dieser Task die Version zurück, in der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt werden soll.
+
+Wenn mehrere Versionen von .NET Framework installiert sind, gibt diese Aufgabe die Version zurück, mit der MSBuild ausgeführt werden soll.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird mit dem Task `GetFrameworkPath` der Pfad zu .NET Framework in der `FrameworkPath`-Eigenschaft gespeichert.
 
 ```xml
@@ -61,5 +66,6 @@ Im folgenden Beispiel wird mit dem Task `GetFrameworkPath` der Pfad zu .NET Fram
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

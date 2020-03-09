@@ -12,14 +12,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917811"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634499"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Paralleles Erstellen von mehreren Projekten mit MSBuild
+
 Sie können MSBuild verwenden, um mehrere Projekte schneller zu erstellen, indem Sie sie parallel ausführen. Um Builds parallel auszuführen, verwenden Sie die folgenden Einstellungen auf einem Mehrkern- oder Mehrprozessorcomputer:
 
 - den Schalter `-maxcpucount` in einer Eingabeaufforderung
@@ -30,6 +31,7 @@ Sie können MSBuild verwenden, um mehrere Projekte schneller zu erstellen, indem
 > Der Schalter **-verbosity** ( **-v**) in einer Befehlszeile kann die Buildleistung ebenfalls beeinflussen. Die Buildleistung verringert sich möglicherweise, wenn die Ausführlichkeit der Buildprotokollinformationen auf die Einstellung "Detailliert" oder "Diagnose" festgelegt ist, die beide für die Problembehandlung verwendet werden. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) und [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount-Schalter
+
 Wenn Sie den Schalter `-maxcpucount` oder die kurze Form `-m` verwenden, kann MSBuild die angegebene Anzahl von *MSBuild.exe*-Prozessen erstellen, die parallel ausgeführt werden können. Diese Prozesse werden auch als "Arbeitsprozesse" bezeichnet. Jeder Arbeitsprozess verwendet einen anderen Kern oder Prozessor, soweit verfügbar, um ein Projekt zu der gleichen Zeit zu erstellen wie andere verfügbare Prozessoren. Wenn Sie zum Beispiel diesen Schalter auf den Wert "4" festlegen, erstellt MSBuild vier Arbeitsprozesse zum Erstellen des Projekts.
 
 Wenn Sie den Schalter `-maxcpucount` verwenden, ohne einen Wert anzugeben, verwendet MSBuild alle Prozessoren des Computers.
@@ -43,7 +45,8 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>Aufgabenparameter „BuildInParallel“
-`BuildInParallel` ist ein optionaler boolescher Parameter für eine [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe. Wenn `BuildInParallel` auf `true` (der Standardwert ist `true`) festgelegt ist, werden mehrere Arbeitsprozesse zum gleichzeitigen Erstellen so vieler Projekte wie möglich erzeugt. Damit dies ordnungsgemäß funktioniert, muss der `-maxcpucount`-Schalter auf einen Wert größer 1 festgelegt sein, und das System muss mindestens ein Dualcore-System sein oder über mindestens zwei Prozessoren verfügen.
+
+`BuildInParallel` ist ein optionaler boolescher Parameter für eine MSBuild-Aufgabe. Wenn `BuildInParallel` auf `true` (der Standardwert ist `true`) festgelegt ist, werden mehrere Arbeitsprozesse zum gleichzeitigen Erstellen so vieler Projekte wie möglich erzeugt. Damit dies ordnungsgemäß funktioniert, muss der `-maxcpucount`-Schalter auf einen Wert größer 1 festgelegt sein, und das System muss mindestens ein Dualcore-System sein oder über mindestens zwei Prozessoren verfügen.
 
 Nachfolgend ist ein Beispiel aus *microsoft.common.targets* aufgeführt, das veranschaulicht, wie der `BuildInParallel`-Parameter festgelegt wird.
 
@@ -70,6 +73,7 @@ Nachfolgend ist ein Beispiel aus *microsoft.common.targets* aufgeführt, das ver
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Verwenden mehrerer Prozessoren für die Erstellung von Projekten](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Schreiben von multiprozessorfähigen Protokollierungen](../msbuild/writing-multi-processor-aware-loggers.md)
 - [Blog zum Optimieren der C++-Buildparallelität](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/)

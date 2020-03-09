@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597086"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409151"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Entwickeln von Apps mit dem Workflow-Designer
 
@@ -39,10 +39,10 @@ Wenn Sie Workflow Projektvorlagen in Visual Studio verwenden möchten, installie
 
    ![Windows Workflow Foundation Komponente für Visual Studio](media/windows-workflow-foundation-component.png)
 
-1. Klicken Sie auf **Ändern**.
+1. Wählen Sie **Ändern** aus.
 
    Visual Studio installiert die **Windows Workflow Foundation** Komponente.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

@@ -10,15 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573780"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633706"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mit dem [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Element. Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.
+
+MSBuild 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mithilfe des Elements [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In MSBuild 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.
 
 Das *ItemDefinitionGroup*-Element wird unmittelbar nach dem [Project](../msbuild/project-element-msbuild.md)-Element der Projektdatei angezeigt. Elementdefinitionen bieten die folgenden Funktionen:
 
@@ -33,6 +34,7 @@ Das *ItemDefinitionGroup*-Element wird unmittelbar nach dem [Project](../msbuild
 - Bedingungen können verwendet werden, um das Einschließen der Metadaten zu steuern.
 
 ## <a name="item-metadata-default-values"></a>Standardwerte von Elementmetadaten
+
 Elementmetadaten, die in ItemDefinitionGroup definiert werden, sind nur eine Deklaration der Standardmetadaten. Die Metadaten finden nur dann Anwendung, wenn Sie ein Element definieren, das zum Einschließen der Metadatenwerte ItemGroup verwendet.
 
 > [!NOTE]
@@ -61,6 +63,7 @@ In diesem Beispiel wird das Standardmetadatum "m" auf das Element "i" angewendet
 > Bei XML-Elementen und XML-Parameternamen muss die Groß\-/Kleinschreibung beachtet werden. Bei Elementmetadaten und Element\//Eigenschaftennamen muss die Groß\-/Kleinschreibung nicht beachtet werden. Daher sollten ItemDefinitionGroup-Elemente, deren Namen sich nur durch die Groß-/Kleinschreibung unterscheiden, als gleiches ItemGroup behandelt werden.
 
 ## <a name="value-sources"></a>Wertquellen
+
 Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschiedenen Quellen stammen:
 
 - PropertyGroup-Eigenschaft
@@ -83,6 +86,7 @@ Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschied
 > Elementmetadaten aus ItemGroup sind in einer ItemDefinitionGroup-Metadatendeklaration nicht nützlich, da ItemDefinitionGroup-Elemente vor ItemGroup-Elementen verarbeitet werden.
 
 ## <a name="additive-and-multiple-definitions"></a>Additive und mehrfache Definitionen
+
 Wenn Sie Definitionen hinzufügen oder mehrere ItemDefinitionGroups verwenden, beachten Sie Folgendes:
 
 - Dem Typ werden zusätzliche Metadatenspezifikationen hinzugefügt.
@@ -143,6 +147,7 @@ Wenn Sie die bereits definierten Metadaten überschreiben, hat die letzte Spezif
 ```
 
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Verwenden von Bedingungen in ItemDefinitionGroup
+
 Sie können Bedingungen in ItemDefinitionGroup verwenden, um das Einschließen von Metadaten zu steuern. Zum Beispiel:
 
 ```xml
@@ -189,7 +194,8 @@ Im obigen Beispiel verweist Element „i“ auf das Element „test“ in seiner
 Im Beispiel oben würde für „m“ der Wert „m1“ festgelegt, da die Bedingung auf den Metadatenwert des Elements „i“ für Element „yes“ verweist.
 
 ## <a name="override-and-delete-metadata"></a>Außerkraftsetzen und Löschen von Metadaten
-In einem ItemDefinitionGroup-Element definierte Metadaten können in einem späteren ItemDefinitionGroup-Element überschrieben werden, indem der Metadatenwert leer gelassen wird. Sie können ein Metadatenelement auch löschen, indem Sie es auf einen leeren Wert festlegen. Zum Beispiel:
+
+In einem ItemDefinitionGroup-Element definierte Metadaten können in einem späteren ItemDefinitionGroup-Element überschrieben werden, indem der Metadatenwert auf einen anderen Wert festgelegt wird. Sie können ein Metadatenelement auch löschen, indem Sie es auf einen leeren Wert festlegen. Zum Beispiel:
 
 ```xml
 <ItemDefinitionGroup>
@@ -207,6 +213,7 @@ In einem ItemDefinitionGroup-Element definierte Metadaten können in einem spät
 Das Element "i" enthält immer noch die Metadaten "m", sein Wert ist jetzt jedoch leer.
 
 ## <a name="scope-of-metadata"></a>Umfang der Metadaten
+
 ItemDefinitionGroup weist einen globalen Gültigkeitsbereich für definierte und globale Eigenschaften auf, unabhängig davon, wo sie definiert sind. Standardmäßige Metadatendefinitionen in ItemDefinitionGroup können auf sich selbst verweisen. Nachfolgend wird beispielsweise ein einfacher Metadatenverweis verwendet:
 
 ```xml
@@ -240,7 +247,7 @@ Folgendes ist jedoch nicht gültig:
 </ItemDefinitionGroup>
 ```
 
-Ab [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 kann ItemGroup auch auf sich selbst verweisen. Zum Beispiel:
+Ab MSBuild 3.5 kann ItemGroup auch auf sich selbst verweisen. Zum Beispiel:
 
 ```xml
 <ItemGroup>
@@ -252,4 +259,5 @@ Ab [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Batchverarbeitung](../msbuild/msbuild-batching.md)

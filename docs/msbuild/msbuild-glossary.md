@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593667"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633342"
 ---
 # <a name="msbuild-glossary"></a>MSBuild-Glossar
 
@@ -161,7 +161,7 @@ targets file\
 Eine TARGETS-Datei ist eine Projektdatei, die vor allem Ziele und Aufgaben zur Steuerung des Builds enthält. Konventionsgemäß besitzen solche Dateien die Erweiterung *.targets*. TARGETS-Dateien werden meist am Ende zugeordneter Projektdateien importiert.
 
 task\
-Aufgaben sind Einheiten ausführbaren Codes, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten zum Ausführen von Buildvorgängen verwendet werden. Eine Aufgabe kann beispielsweise Eingabedateien kompilieren oder ein externes Tool ausführen. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
+Aufgaben sind Einheiten ausführbaren Codes, die in MSBuild-Projekten zum Ausführen von Buildvorgängen verwendet werden. Eine Aufgabe kann beispielsweise Eingabedateien kompilieren oder ein externes Tool ausführen. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
 transform\
 Eine Transformation ist eine 1:1-Konvertierung von einer Elementauflistung in eine andere. Über Transformationen können nicht nur Elementauflistungen in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md).

@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579601"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632510"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator-Aufgabe
-Der <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>-Task bettet mindestens eine Ressource (*JPG*, *ICO*, *BMP*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] im Binärformat und andere Erweiterungstypen) in eine *RESOURCES*-Datei ein.
+
+Die <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>-Aufgabe bettet mindestens eine Ressource (*JPG*, *ICO*, *BMP*, XAML im Binärformat und andere Erweiterungstypen) in eine *RESOURCES*-Datei ein.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
@@ -36,6 +37,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>-Task bettet mindeste
 |`ResourcesFiles`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt eine oder mehrere Ressourcen zum Einbetten in die generierte *RESOURCES*-Datei an.|
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel wird eine *RESOURCES*-Datei mit einer einzelnen *BMP*-Ressource generiert. Die *BMP*-Ressource wird in einem Verzeichnis generiert, das relativ zum Stammverzeichnis des Projekts ist.
 
 ```xml
@@ -53,6 +55,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>-Task bettet mindeste
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

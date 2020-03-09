@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592177"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633485"
 ---
 # <a name="message-task"></a>Meldungsaufgabe
+
 Protokolliert eine Meldung während eines Builds
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `Message` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -37,7 +39,8 @@ Protokolliert eine Meldung während eines Builds
 |`Text`|Optionaler `String`-Parameter.<br /><br /> Der zu protokollierende Fehlertext.|
 
 ## <a name="remarks"></a>Hinweise
- Aufgrund der `Message`-Aufgabe können [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekte in verschiedenen Schritten des Buildprozesses Nachrichten an die Protokollierungen senden.
+
+ Die Aufgabe `Message` ermöglicht es MSBuild-Projekten, in verschiedenen Schritten des Buildprozesses Nachrichten an die Protokollierungen auszugeben.
 
  Wenn der `Condition`-Parameter `true` ergibt, wird der Wert des `Text`-Parameters protokolliert und der Build weiter ausgeführt. Wenn kein `Condition`-Parameter vorhanden ist, wird der Nachrichtentext protokolliert. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -46,6 +49,7 @@ Protokolliert eine Meldung während eines Builds
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Codebeispiel werden Nachrichten in allen registrierten Protokollierungen protokolliert.
 
 ```xml
@@ -59,5 +63,6 @@ Protokolliert eine Meldung während eines Builds
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)

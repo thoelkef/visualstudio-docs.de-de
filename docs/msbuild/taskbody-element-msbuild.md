@@ -1,5 +1,5 @@
 ---
-title: TaskBody-Element (MSBuild) | Microsoft-Dokumentation
+title: Task-Element von „UsingTask“ (MSBuild) | Microsoft-Dokumentation
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -8,33 +8,35 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- TaskBody element [MSBuild]
-- <TaskBody> element [MSBuild]
+- Task element [MSBuild]
+- <Task> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac4e04c1a75fe7afdebc984381e17d7e55913fd4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594980"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263187"
 ---
-# <a name="taskbody-element-msbuild"></a>TaskBody-Element (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>Task-Element von „UsingTask“ (MSBuild)
+
 Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<TaskBody>
+ \<Project> \<UsingTask> \<Task>
 
 ## <a name="syntax"></a>Syntax
 
 ```xml
-<TaskBody Evaluate="true/false" />
+<Task Evaluate="true/false" />
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -47,16 +49,17 @@ Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere 
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|Daten|Der Text zwischen den `TaskBody`-Tags wird wörtlich an `TaskFactory` gesendet.|
+|Daten|Der Text zwischen den `Task`-Tags wird wörtlich an `TaskFactory` gesendet.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 | Element | Beschreibung |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Bietet eine Möglichkeit, Aufgaben in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Bietet eine Möglichkeit, Aufgaben in MSBuild zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird die Verwendung des Elements `TaskBody` mit dem Attribut `Evaluate` gezeigt.
+
+ Im folgenden Beispiel wird die Verwendung des Elements `Task` mit dem Attribut `Evaluate` gezeigt.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -65,13 +68,14 @@ Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere 
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

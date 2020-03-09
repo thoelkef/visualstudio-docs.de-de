@@ -11,18 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a4b756e0f0926e6c0ccd1a68ab44b7bc13e25c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574057"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633758"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien
-Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien autorisiert haben, haben Sie möglicherweise festgestellt, dass Sie die gleichen Aufgaben und Ziele in verschiedenen Projektdateien verwenden müssen. Statt die vollständige Beschreibung dieser Aufgaben oder Ziele in jede Projektdatei einzuschließen, können Sie ein Ziel in einer separaten Projektdatei speichern und dieses Projekt anschließend in einem beliebigen anderen Projekt importieren, in dem das Ziel verwendet werden muss.
 
+Wenn Sie mehrere MSBuild-Projektdateien erstellt haben, ist Ihnen wahrscheinlich aufgefallen, dass Sie die gleichen Aufgaben und Ziele in verschiedenen Projektdateien verwenden müssen. Statt die vollständige Beschreibung dieser Aufgaben oder Ziele in jede Projektdatei einzuschließen, können Sie ein Ziel in einer separaten Projektdatei speichern und dieses Projekt anschließend in einem beliebigen anderen Projekt importieren, in dem das Ziel verwendet werden muss.
 ## <a name="use-the-import-element"></a>Verwenden des Import-Elements
- Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projektdatei einzufügen. Die Projektdatei, die importiert wird, muss eine gültige [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei sein, die wohlgeformtes XML enthält. Das Attribut `Project` gibt den Pfad zur importierten Projektdatei an. Weitere Informationen zu dem `Import`-Element finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).
+
+ Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projektdatei einzufügen. Die importierte Projektdatei muss eine gültige MSBuild-Projektdatei sein, die wohlgeformtes XML enthält. Das Attribut `Project` gibt den Pfad zur importierten Projektdatei an. Weitere Informationen zu dem `Import`-Element finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).
+Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projektdatei einzufügen. Die importierte Projektdatei muss eine gültige MSBuild-Projektdatei sein, die wohlgeformtes XML enthält. Das Attribut `Project` gibt den Pfad zur importierten Projektdatei an. Weitere Informationen zu dem `Import`-Element finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>So importieren Sie ein Projekt
 
@@ -35,7 +37,8 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 3. Definieren Sie nach dem `Import`-Element alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.
 
 ## <a name="order-of-evaluation"></a>Reihenfolge der Auswertung
- Wenn [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ein `Import`-Element erreicht, wird das importierte Projekt effektiv in das importierte Projekt an den Speicherort des `Import`-Elements eingefügt. Aus diesem Grund kann der Speicherort des `Import`-Elements Auswirkungen auf die Werte der Eigenschaften und Elemente haben. Die Eigenschaften und Elemente, die durch das importierte Projekt festgelegt wurden, und die Eigenschaften und Elemente, die vom importierten Projekt verwendet werden, müssen bekannt sein.
+
+ Wenn MSBuild ein `Import`-Element erreicht, wird das importierte Projekt effektiv an der Stelle des `Import`-Elements in das importierende Projekt eingefügt. Aus diesem Grund kann der Speicherort des `Import`-Elements Auswirkungen auf die Werte der Eigenschaften und Elemente haben. Die Eigenschaften und Elemente, die durch das importierte Projekt festgelegt wurden, und die Eigenschaften und Elemente, die vom importierten Projekt verwendet werden, müssen bekannt sein.
 
  Wenn das Projekt erstellt wird, werden zunächst alle Eigenschaften ausgewertet, gefolgt von den Elementen. Folgendes XML definiert z.B. die importierte Projektdatei *MyCommon.targets*:
 
@@ -81,6 +84,7 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 3. Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Codebeispiel wird die Datei *MyCommon.targets* dargestellt, die im zweiten Codebeispiel importiert wird. Die *TARGETS*-Datei wertet Eigenschaften des importierten Projekts für die Konfiguration des Builds aus.
 
 ```xml
@@ -99,6 +103,7 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 ```
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Codebeispiel wird die Datei *MyCommon.targets* importiert.
 
 ```xml
@@ -112,5 +117,6 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md)
 - [Ziele](../msbuild/msbuild-targets.md)

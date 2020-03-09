@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbe0dbda58a0c57cacd64c40b66cc640b779bca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593316"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633992"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath-Aufgabe
-Ruft den Pfad zu [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] ab
 
+Ruft den Pfad zum Windows Software Development Kit (SDK) ab.
 ## <a name="task-parameters"></a>Aufgabenparameter
+
+In der folgenden Tabelle werden die Parameter der `GetFrameworkSdkPath` -Aufgabe beschrieben.
 In der folgenden Tabelle werden die Parameter der `GetFrameworkSdkPath` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -39,10 +41,12 @@ In der folgenden Tabelle werden die Parameter der `GetFrameworkSdkPath` -Aufgabe
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zum neuesten .NET SDK, wenn eine Version vorhanden ist. Andernfalls wird `String.Empty` zurückgegeben.|
 
 ## <a name="remarks"></a>Hinweise
+
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
-Im folgenden Beispiel wird mit der Aufgabe `GetFrameworkSdkPath` der Pfad zu [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] in der `SdkPath`-Eigenschaft gespeichert.
+
+Im folgenden Beispiel wird mit der Aufgabe `GetFrameworkSdkPath` der Pfad zum Windows SDK in der `SdkPath`-Eigenschaft gespeichert.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -58,5 +62,6 @@ Im folgenden Beispiel wird mit der Aufgabe `GetFrameworkSdkPath` der Pfad zu [!I
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 730e7d317ffa3fd5a450978f35659df3fe5629f3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573663"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169351"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
-Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup` Elements angegeben werden.
+
+Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes Element, das in einem MSBuild-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -33,14 +34,14 @@ Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes E
 ```xml
 <Item Include="*.cs"
         Exclude="MyFile.cs"
-        Remove="RemoveFile.cs"
-        Condition="'String A'=='String B'" >
+        Condition="'String A'=='String B'">
     <ItemMetadata1>...</ItemMetadata1>
     <ItemMetadata2>...</ItemMetadata2>
 </Item>
 ```
 
 ## <a name="specify-metadata-as-attributes"></a>Metadaten als Attribute angeben
+
 In MSBuild 15.1 oder höher können Metadaten mit einem Namen, der der aktuellen Liste der Attribute nicht widerspricht, optional als Attribut ausgedrückt werden.
 
 Um beispielsweise eine Liste von NuGet-Paketen anzugeben, würden Sie normalerweise etwas wie die folgende Syntax verwenden.
@@ -62,6 +63,7 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -90,13 +92,15 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Grouping-Element für Elemente.|
 
 ## <a name="remarks"></a>Hinweise
+
 `Item`-Elemente definieren Eingaben ins Buildsystem und sind basierend auf ihren benutzerdefinierten Auflistungsnamen in Elementauflistungen gruppiert. Diese Elementtypen können als Parameter für [Aufgaben](../msbuild/msbuild-tasks.md) verwendet werden, die mithilfe der einzelnen Elemente in den Auflistungen die Schritte des Buildprozesses ausführen. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
 Mithilfe der Notation @(\<myType>) kann eine Auflistung von Elementen vom Typ \<myType> in eine durch Semikolons getrennte Liste von Zeichenfolgen erweitert und an einen Parameter übergeben werden. Wenn der Parameter vom Typ `string` ist, entspricht der Wert des Parameters der Liste der Elemente, die durch Semikolons getrennt sind. Wenn der Parameter ein Array von Zeichenfolgen ist (`string[]`), werden die einzelnen Elemente ins Array basierend auf der Position der Semikolons eingefügt. Ist der Task-Parameter vom Typ <xref:Microsoft.Build.Framework.ITaskItem>`[]`, entspricht der Wert dem Inhalt der Elementauflistung einschließlich ggf. angefügter Metadaten. Um Elemente mit einem anderen Zeichen als einem Semikolon voneinander zu trennen, verwenden Sie die Syntax @(\<myType>, '\<separator>').
 
-Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine kann Platzhalter wie `*` und `?` sowie rekursive Platzhalter wie */\*\*/\*.cs* auswerten. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
+Die MSBuild-Engine kann Platzhalter wie `*` und `?` sowie rekursive Platzhalter wie */\*\*/\*.cs* auswerten. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Beispiele
+
 Im folgenden Codebeispiel wird veranschaulicht, wie zwei Elemente vom Typ `CSFile` deklariert werden. Das zweite deklarierte Element enthält Metadaten, für die `MyMetadata` auf `HelloWorld` festgelegt ist.
 
 ```xml
@@ -119,6 +123,7 @@ Das folgende Codebeispiel zeigt, wie Sie das `Update`-Attribut verwenden, um die
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Elemente](../msbuild/msbuild-items.md)
 - [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
 - [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)

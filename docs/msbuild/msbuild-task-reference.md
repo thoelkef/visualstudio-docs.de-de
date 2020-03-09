@@ -15,22 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593875"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633160"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Tasks
 
-Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Die Aufgaben in der folgenden Liste sind in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten. Wenn [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] installiert wird, sind zusätzliche Aufgaben verfügbar, die für das Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten verwendet werden. Weitere Informationen finden Sie unter [C++-Aufgaben](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Die Aufgaben in der folgenden Liste sind in MSBuild enthalten. Wenn die C++-Workload installiert wurde, sind zusätzliche Aufgaben verfügbar, die für das Erstellen von C++-Projekten verwendet werden. Weitere Informationen finden Sie unter [C++-Aufgaben](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt sind, verfügt jeder Task ebenfalls über folgende Parameter:
 
 | Parameter | Beschreibung |
 |-------------------| - |
-| `Condition` | Optionaler `String`-Parameter.<br /><br /> Ein `Boolean`-Ausdruck, den die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine verwendet, um zu bestimmen, ob diese Aufgabe ausgeführt wird. Informationen zu den Bedingungen, die von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] unterstützt werden, finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md). |
+| `Condition` | Optionaler `String`-Parameter.<br /><br /> Ein `Boolean`-Ausdruck, mit dem die MSBuild-Engine bestimmt, ob diese Aufgabe ausgeführt wird. Informationen zu den von MSBuild unterstützten Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
@@ -85,7 +85,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [CreateCSharpManifestResourceName-Aufgabe](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Erstellt einen Manifestnamen im [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
+ Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
 
 - [CreateItem-Aufgabe](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [CreateVisualBasicManifestResourceName-Aufgabe](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Erstellt einen Manifestnamen im [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
+ Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
 
 - [Csc-Aufgabe](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md)
 
- Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest oder ein systemeigenes Manifest.
+ Generiert ein ClickOnce-Anwendungsmanifest oder ein natives Manifest.
 
 - [GenerateBootstrapper-Aufgabe](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)
 
- Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellungsmanifest.
+ Generiert ein ClickOnce-Bereitstellungsmanifest.
 
 - [GenerateResource-Aufgabe](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [GetFrameworkSdkPath-Aufgabe](../msbuild/getframeworksdkpath-task.md)
 
- Ruft den Pfad zu [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] ab
+ Ruft den Pfad zum Windows Software Development Kit (SDK) ab.
 
 - [GetReferenceAssemblyPaths-Aufgabe](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -197,7 +197,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [MSBuild-Aufgabe](../msbuild/msbuild-task.md)
 
- Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekte aus einem anderen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.
+ Erstellt MSBuild-Projekte aus einem anderen MSBuild-Projekt.
 
 - [ReadLinesFromFile-Aufgabe](../msbuild/readlinesfromfile-task.md)
 

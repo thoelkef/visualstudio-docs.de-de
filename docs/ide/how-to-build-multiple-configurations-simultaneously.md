@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416760"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904086"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Vorgehensweise: Gleichzeitiges Erstellen mehrerer Konfigurationen
 
@@ -24,11 +24,13 @@ ms.locfileid: "68416760"
 
 2. Für Visual Basic-Projekte.
 
+Wenn eine Projektmappe ein beliebiges Projekt dieser zwei Projekttypen enthält, steht **Batch erstellen** für diese Projektmappe nicht zur Verfügung. In diesem Fall wird der Befehl nicht im Menü **Erstellen** angezeigt.
+
    Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Erstellen eines Projekts in mehreren Buildkonfigurationen
 
-1. Klicken Sie in der Menüleiste auf **Erstellen** > **Batch erstellen**.
+1. Klicken Sie in der Menüleiste auf **Erstellen** > **Batch erstellen**. Alternativ können Sie **STRG**+**Q** drücken, um das Suchfeld zu öffnen und nach `Batch Build` zu suchen.
 
 2. Aktivieren Sie in der Spalte **Erstellen** die Kontrollkästchen für die Konfigurationen, in denen Sie ein Projekt erstellen möchten.
 
@@ -39,6 +41,6 @@ ms.locfileid: "68416760"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
+- [How to: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
 - [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
 - [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

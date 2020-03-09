@@ -11,18 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677278d08e3223f759afc64692481311bfba3356
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596332"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633901"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste
-Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.
+
+Beim Arbeiten mit dem Elementlisten in der Microsoft-Build-Engine (MSBuild) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Trennen von Elementen in einer Liste mit Kommas
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet standardmäßig Semikolons zum Trennen von Elementen in einer Liste. Sehen Sie sich beispielsweise das `Message`-Element mit dem folgenden Wert an:
+
+MSBuild verwendet standardmäßig Semikolons zum Trennen von Elementen in einer Liste. Sehen Sie sich beispielsweise das `Message`-Element mit dem folgenden Wert an:
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
@@ -43,6 +45,7 @@ Das Trennzeichen kann ein einzelnes Zeichen oder eine Zeichenfolge sein und muss
     `@(TXTFile, ', ')`
 
 ## <a name="example"></a>Beispiel
+
 In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei *Phrases.txt* zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **-c:** gekennzeichnet. Das Elementtrennzeichen `-c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.
 
 In diesem Beispiel lautet die entsprechende Befehlszeile:
@@ -67,5 +70,6 @@ In diesem Beispiel lautet die entsprechende Befehlszeile:
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)
 - [Elemente](../msbuild/msbuild-items.md)

@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75bcb41bb2df2afcb6e71b0fdaf58d0d7429e974
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e008e3181cd7c633179f35e7639265a2495fafe2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574625"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633797"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Vorgehensweise: Angeben des zuerst zu erstellenden Ziels
-Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definieren, wie das Projekt erstellt wird. Die [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)])-Engine erstellt das erste Projekt, das sie findet, sowie alle Abhängigkeiten, es sei denn, die Projektdatei enthält ein `DefaultTargets`-Attribut, ein `InitialTargets`-Attribut oder ein Ziel, das in der Befehlszeile unter Verwendung des Schalters **-target** angegeben ist.
 
+Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definieren, wie das Projekt erstellt wird. Die Microsoft-Build-Engine (MSBuild) erstellt das erste gefundene Projekt sowie alle Abhängigkeiten – es sei denn, die Projektdatei enthält ein `DefaultTargets`-Attribut, ein `InitialTargets`-Attribut oder ein Ziel, das an der Befehlszeile unter Verwendung des Schalters **-target** angegeben wurde.
 ## <a name="use-the-initialtargets-attribute"></a>Verwenden des InitialTargets-Attributs
+
  Das `InitialTargets`-Attribut des `Project`-Elements gibt ein Ziel an, das zuerst ausgeführt wird, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.
+Das `InitialTargets`-Attribut des `Project`-Elements gibt ein Ziel an, das zuerst ausgeführt wird, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.
 
 #### <a name="to-specify-one-initial-target"></a>Angeben eines ersten Ziels
 
@@ -40,7 +42,8 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
      `<Project InitialTargets="Clean;Compile">`
 
 ## <a name="use-the-defaulttargets-attribute"></a>Verwenden des DefaultTargets-Attributs
- Das `DefaultTargets`-Attribut des `Project`-Elements gibt das Ziel bzw. die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird. Wenn Ziele jeweils in `InitialTargets` und `DefaultTargets`-Attributen angegeben sind und kein Ziel in der Befehlszeile angegeben ist, führt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] die im `InitialTargets`-Attribut angegebenen Ziele aus, gefolgt von den Zielen, die im `DefaultTargets`-Attribut angegeben sind.
+
+ Das `DefaultTargets`-Attribut des `Project`-Elements gibt das Ziel bzw. die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird. Wenn sowohl im Attribut `InitialTargets` als auch im Attribut `DefaultTargets` Ziele angegeben sind und kein Ziel über die Befehlszeile angegeben wurde, führt MSBuild die im `InitialTargets`-Attribut angegebenen Ziele aus, gefolgt von den Zielen, die im `DefaultTargets`-Attribut angegeben sind.
 
 #### <a name="to-specify-one-default-target"></a>Ein Standardziel angeben
 
@@ -57,6 +60,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>Verwenden des Schalters -target
+
  Wenn kein Standardziel in der Projektdatei definiert ist oder Sie das Standardziel nicht verwenden möchten, können Sie den Befehlszeilenschalter **-target** verwenden, um ein anderes Ziel anzugeben. Das Ziel oder die Ziele, die mit dem Schalter **-target** angegeben werden, werden anstelle der durch das `DefaultTargets`-Attribut angegebenen Ziele ausgeführt. Die im `InitialTargets`-Attribut angegebenen Ziele werden immer zuerst ausgeführt.
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Zuerst ein anderen Ziels und nicht das Standardziel verwenden
@@ -72,6 +76,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Ziele](../msbuild/msbuild-targets.md)
-- [Vorgehensweise: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)
+- [How to: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)

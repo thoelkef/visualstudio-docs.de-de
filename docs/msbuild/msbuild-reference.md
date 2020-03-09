@@ -15,33 +15,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d8db803dd6e20a9a1d954847b63d3a02ddd257
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826535"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633264"
 ---
 # <a name="msbuild-reference"></a>MSBuild-Referenz
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist das Buildsystem für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Die folgenden Links verweisen auf [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Referenzinformationen.
+MSBuild ist das Buildsystem für Visual Studio. Die folgenden Links verweisen auf MSBuild-Referenzinformationen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)\
- Beschreibt die XML-Elemente, aus denen das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Dateiformat besteht.
+ Beschreibt die XML-Elemente, aus denen das MSBuild-Dateiformat besteht.
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)\
- Beschreibt einige der typischen Aufgaben, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verfügbar sind.
+ Beschreibt einige der typischen Aufgaben, die in MSBuild verfügbar sind.
 
 - [Conditions](../msbuild/msbuild-conditions.md)\ (MSBuild-Bedingungen)
- Beschreibt die Bedingungen, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Dateien verfügbar sind.
+ Beschreibt die Bedingungen, die in MSBuild-Dateien verfügbar sind.
 
 - [Conditional Constructs (Bedingte Konstrukte)](../msbuild/msbuild-conditional-constructs.md)\
  Beschreibt, wie die Elemente `Choose`, `When` und `Otherwise` zu verwenden sind.
 
 - [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)\
- Beschreibt die reservierten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften.
+ Beschreibt die reservierten MSBuild-Eigenschaften.
 
 - [Häufige Eigenschaften von MSBuild-Projekten](../msbuild/common-msbuild-project-properties.md)\
  Beschreibt Projekteigenschaften, die für alle Projekttypen gelten, sowie Eigenschaften, die von bestimmten Projekttypen häufig verwendet werden.
@@ -50,10 +50,10 @@ ms.locfileid: "76826535"
  Beschreibt Projektelemente, die für alle Projekttypen gelten, sowie Elemente, die von bestimmten Projekttypen häufig verwendet werden.
 
 - [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)\
- Beschreibt die Argumente und Schalter, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe verwendet werden können.
+ Beschreibt die Argumente und Schalter, die mit „MSBuild.exe“ verwendet werden können.
 
 - [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md)\
- Beschreibt die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verfügbare *TARGETS*-Datei.
+ Beschreibt die in MSBuild verfügbare *TARGETS*-Datei.
 
 - [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md)\
  Listet die Metadaten auf, die zusammen mit den einzelnen Elementen erstellt werden.
@@ -62,10 +62,10 @@ ms.locfileid: "76826535"
  Erläutert die *RSP*-Dateien, die Befehlszeilenschalter enthalten.
 
 - [Zusätzliche Ressourcen](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
- Enthält Links zu Websites und Newsgroups von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Enthält Links zu Websites und Newsgroups von MSBuild.
 
 - [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)\
- Enthält eine Ziele- und Aufgabenreferenz von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] für Windows Presentation Foundation (WPF).
+ Enthält eine Ziele- und Aufgabenreferenz von MSBuild für Windows Presentation Foundation (WPF).
 
 - [Sonderzeichen, die auskommentiert werden müssen](../msbuild/special-characters-to-escape.md)\
  Listet Zeichen auf, die möglicherweise mit Escapezeichen versehen werden müssen, damit sie richtig interpretiert werden können. Eine Escapesequenz besteht aus einer Reihe von Zeichen, die angibt, dass eine alternative Interpretation folgt.

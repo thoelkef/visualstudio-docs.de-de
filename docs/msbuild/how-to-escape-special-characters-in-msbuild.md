@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595006"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633875"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Vorgehensweise: Escapesonderzeichen in MSBuild
 
-Bestimmte Zeichen haben in Projektdateien [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] eine besondere Bedeutung. Beispiele für die Zeichen sind Semikolons (`;`) und Sternchen (`*`). Eine vollständige Liste dieser Sonderzeichen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).
+Bestimmte Zeichen haben in MSBuild-Projektdateien eine besondere Bedeutung. Beispiele für die Zeichen sind Semikolons (`;`) und Sternchen (`*`). Eine vollständige Liste dieser Sonderzeichen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).
 
 Um diese Sonderzeichen als Literale in einer Projektdatei zu verwenden, müssen sie mit der Syntax `%<xx>` angegeben werden, wobei `<xx>` den ASCII-Hexadezimalwert des Zeichens darstellt.
 
@@ -34,7 +34,7 @@ Ein Beispiel, in dem Sonderzeichen verwendet werden, ist im Attribut `Include` v
 <Compile Include="MyFile.cs;MyClass.cs"/>
 ```
 
-Wenn Sie ein Element deklarieren möchten, das ein Semikolon im Namen enthält, müssen Sie die Syntax `%<xx>` verwenden, um das Semikolon zu umgehen und um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] daran zu hindern, zwei separate Elemente zu deklarieren. Das folgende Element umgeht beispielsweise den Semikolon und deklariert ein Element mit dem Namen `MyFile.cs;MyClass.cs`.
+Wenn Sie ein Element deklarieren möchten, das ein Semikolon im Namen enthält, müssen Sie die Syntax `%<xx>` verwenden, um das Semikolon zu umgehen und um MSBuild daran zu hindern, zwei separate Elemente zu deklarieren. Das folgende Element umgeht beispielsweise den Semikolon und deklariert ein Element mit dem Namen `MyFile.cs;MyClass.cs`.
 
 ```xml
 <Compile Include="MyFile.cs%3BMyClass.cs"/>

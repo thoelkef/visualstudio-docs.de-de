@@ -19,15 +19,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb7c49e4f3dc86594c8a3211bacb538d3f10c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: df9eff3e941cc21aaa71c2779a72084e12e8e590
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597437"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632978"
 ---
 # <a name="project-element-msbuild"></a>Project-Element (MSBuild)
-Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.
+
+Erforderliches Stammelement einer MSBuild-Projektdatei.
 
 ## <a name="syntax"></a>Syntax
 
@@ -50,13 +51,14 @@ Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/inter
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
 
 | Attribut | Beschreibung |
 |------------------------| - |
-| `DefaultTargets` | Optionales Attribut.<br /><br /> Das Standardziel oder die Standardziele, die zum Einstiegspunkt des Builds werden, wenn kein Ziel angegeben wurde. Mehrere Ziele werden durch Semikolons (;) getrennt.<br /><br /> Wenn kein Standardziel im `DefaultTargets`-Attribut oder der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Befehlszeile angegeben ist, führt die Engine das erste Ziel in der Projektdatei aus, nachdem die [Import](../msbuild/import-element-msbuild.md)-Elemente ausgewertet wurden. |
+| `DefaultTargets` | Optionales Attribut.<br /><br /> Das Standardziel oder die Standardziele, die zum Einstiegspunkt des Builds werden, wenn kein Ziel angegeben wurde. Mehrere Ziele werden durch Semikolons (;) getrennt.<br /><br /> Wenn kein Standardziel im `DefaultTargets`-Attribut oder über die MSBuild-Befehlszeile angegeben wurde, führt die Engine das erste Ziel in der Projektdatei aus, nachdem die [Import](../msbuild/import-element-msbuild.md)-Elemente ausgewertet wurden. |
 | `InitialTargets` | Optionales Attribut.<br /><br /> Die anfänglichen Ziele werden ausgeführt bevor die Ziele im `DefaultTargets`-Attribut oder in der Befehlszeile angegeben werden . Mehrere Ziele werden durch ein Semikolon (`;`) getrennt. Wenn mehrere importierte Dateien `InitialTargets` definieren, werden alle aufgeführten Ziele in der Reihenfolge ausgeführt, in der die Importe ermittelt werden. |
 | `Sdk` | Optionales Attribut. <br /><br /> Der SDK-Name und optional die Version, mit denen implizite Importanweisungen, die der PROJ-Datei hinzugefügt werden, erstellt werden. Wenn keine Version angegeben wird, versucht MSBuild eine Standardversion aufzulösen.  Beispielsweise `<Project Sdk="Microsoft.NET.Sdk" />` oder `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Optionales Attribut.<br /><br /> Die Version des Toolsets, das MSBuild verwendet, um die Werte für $(MSBuildBinPath) und (MSBuildToolsPath) zu bestimmen. |
@@ -72,17 +74,19 @@ Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/inter
 | [ImportGroup](../msbuild/importgroup-element.md) | Optionales Element.<br /><br /> Enthält eine Sammlung von `Import`-Elementen, die unter einer optionalen Bedingung gruppiert sind. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Optionales Element.<br /><br /> Ein Gruppierungselement für einzelne Elemente. Elemente werden mit dem [Item](../msbuild/item-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `ItemGroup`-Elemente in einem Projekt geben. |
 | [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) | Optionales Element.<br /><br /> Mit diesem Element können Sie Elementdefinitionen festlegen, die Metadatenwerte sind, die standardmäßig auf alle Elemente im Projekt angewandt werden. Mit ItemDefinitionGroup ist die Verwendung der `CreateItem`-Aufgabe und der `CreateProperty`-Aufgabe überflüssig. |
-| [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Optionales Element.<br /><br /> Bietet eine Möglichkeit, die nicht-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Informationen in einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei beizubehalten. Es kann kein oder mehrere `ProjectExtensions`-Elemente in einem Projekt geben. |
+| [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Optionales Element.<br /><br /> Bietet eine Möglichkeit, Nicht-MSBuild-Informationen in einer MSBuild-Projektdatei beizubehalten. Es kann kein oder mehrere `ProjectExtensions`-Elemente in einem Projekt geben. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Optionales Element.<br /><br /> Ein Gruppierungselement für einzelne Eigenschaften. Eigenschaften werden mit dem [Property](../msbuild/property-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `PropertyGroup`-Elemente in einem Projekt geben. |
-| [Sdk](../msbuild/sdk-element-msbuild.md) | Optionales Element.<br /><br /> Verweist auf ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt-SDK.  Dieses Element kann alternativ zum Sdk-Attribut verwendet werden. |
-| [Target](../msbuild/target-element-msbuild.md) | Optionales Element.<br /><br /> Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sequenziell ausführt. Aufgaben werden mit dem [Aufgaben](../msbuild/task-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `Target`-Elemente in einem Projekt geben. |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Optionales Element.<br /><br /> Bietet eine Möglichkeit, Aufgaben in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
+| [Sdk](../msbuild/sdk-element-msbuild.md) | Optionales Element.<br /><br /> Verweist auf ein MSBuild-Projekt SDK.  Dieses Element kann alternativ zum Sdk-Attribut verwendet werden. |
+| [Target](../msbuild/target-element-msbuild.md) | Optionales Element.<br /><br /> Enthält eine Reihe von Aufgaben, die MSBuild sequenziell ausführt. Aufgaben werden mit dem [Aufgaben](../msbuild/task-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `Target`-Elemente in einem Projekt geben. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Optionales Element.<br /><br /> Bietet eine Möglichkeit, Aufgaben in MSBuild zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
+
  Keine
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)
+
+- [How to: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)
 - [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

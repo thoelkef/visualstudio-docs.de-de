@@ -15,20 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b10768d5ab291981dc77af650de61eb9496dfda5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596150"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634447"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
-In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei *Microsoft.Build.CommonTypes.xsd* definiert.
 
+In MSBuild ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in Visual Studio haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei *Microsoft.Build.CommonTypes.xsd* definiert.
 ## <a name="common-items"></a>Gemeinsame Elemente
+
  In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
+In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="reference"></a>Referenz
+
  Stellt einen Assemblyverweis (verwaltet) im Projekt dar.
 
 |Elementmetadatenname|Beschreibung|
@@ -41,6 +44,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Private|Optionaler boolescher Wert. Gibt an, ob der Verweis in den Ausgabeordner kopiert werden soll. Dieses Attribut entspricht der Eigenschaft **Lokale Kopie** des Verweises in der Visual Studio-IDE.|
 
 ### <a name="comreference"></a>COMReference
+
  Stellt einen COM-Komponentenverweis (nicht verwaltet) im Projekt dar. Dieses Element gilt nur für .NET-Projekte.
 
 |Elementmetadatenname|Beschreibung|
@@ -54,6 +58,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Isolated|Optionaler boolescher Wert. Gibt an, ob die Komponente eine registrierungsfreie Komponente ist.|
 
 ### <a name="comfilereference"></a>COMFileReference
+
  Stellt eine Liste von Typbibliotheken dar, die an den Parameter `TypeLibFiles` des [ResolvedComreference](resolvecomreference-task.md)-Ziels übertragen werden. Dieses Element gilt nur für .NET-Projekte.
 
 |Elementmetadatenname|Beschreibung|
@@ -61,6 +66,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |WrapperTool|Optionale Zeichenfolge. Der Name des Wrappertools, das auf die Komponente angewendet wird, z. B. "tlbimp".|
 
 ### <a name="nativereference"></a>NativeReference
+
  Stellt eine systemeigene Manifestdatei oder einen Verweis auf eine solche Datei dar.
 
 |Elementmetadatenname|Beschreibung|
@@ -69,6 +75,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |HintPath|Erforderliche Zeichenfolge. Der relative Pfad der Manifestdatei.|
 
 ### <a name="projectreference"></a>ProjectReference
+
  Stellt einen Verweis auf ein anderes Projekt dar.
 
 |Elementmetadatenname|Beschreibung|
@@ -79,17 +86,19 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |ReferenceOutputAssembly|Optionaler boolescher Wert. Bei Festlegung auf `false` ist die Ausgabe des referenzierten Projekts als [Verweis](#reference) dieses Projekts nicht eingeschlossen, aber dennoch wird sichergestellt, dass das andere Projekt vor diesem Projekt erstellt wird. Wird standardmäßig auf `true` festgelegt.|
 
 ### <a name="compile"></a>Compile
+
  Stellt die Quelldateien für den Compiler dar.
 
 | Elementmetadatenname | Beschreibung |
 |-----------------------| - |
 | DependentUpon | Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren. |
-| AutoGen | Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwicklungsumgebung (IDE) generiert wurde. |
+| AutoGen | Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten Visual Studio-Entwicklungsumgebung (IDE) generiert wurde. |
 | Link | Optionale Zeichenfolge. Der anzuzeigende Notationspfad, wenn sich die Datei physisch außerhalb des Einflusses der Projektdatei befindet. |
-| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt wird. |
+| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in Visual Studio angezeigt wird. |
 | CopyToOutputDirectory | Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
+
  Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.
 
 | Elementmetadatenname | Beschreibung |
@@ -99,11 +108,12 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | LastGenOutput | Erforderliche Zeichenfolge. Der Name der Datei, die von einem die oft ausgegebene Befehlszeilen  Datei-Generator erstellt wurde, der über diesem Element ausgeführt wurde. |
 | CustomToolNamespace | Erforderliche Zeichenfolge. Der Namespace, in dem ein beliebiger Datei-Generator, der über diesem Element ausgeführt wird, Code erstellen sollte. |
 | Link | Optionale Zeichenfolge. Der Notationspfad wird angezeigt, wenn sich die Datei physisch außerhalb des Einflusses des Projekts befindet. |
-| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt wird. |
+| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in Visual Studio angezeigt wird. |
 | CopyToOutputDirectory | Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest |
 | LogicalName | Erforderliche Zeichenfolge. Der logische Name der eingebetteten Ressource. |
 
 ### <a name="content"></a>Inhalt
+
  Stellt Dateien dar, die zwar nicht in das Projekt kompiliert werden, jedoch möglicherweise mit dem Projekt eingebettet oder veröffentlicht werden.
 
 | Elementmetadatenname | Beschreibung |
@@ -115,10 +125,11 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | Link | Optionale Zeichenfolge. Der anzuzeigende Notationspfad, wenn sich die Datei physisch außerhalb des Einflusses des Projekts befindet. |
 | PublishState | Erforderliche Zeichenfolge. Der Inhalt kann einen der folgenden Veröffentlichungszustände aufweisen:<br /><br /> –  Default (Standard)<br />–   Included (Enthalten)<br />–   Excluded (Ausgeschlossen)<br />–   DataFile<br />–   Prerequisite (Voraussetzung) |
 | IsAssembly | Optionaler boolescher Wert. Gibt an, ob die Datei eine Assembly ist. |
-| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt wird. |
+| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in Visual Studio angezeigt wird. |
 | CopyToOutputDirectory | Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest |
 
 ### <a name="none"></a>Keine
+
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.
 
 | Elementmetadatenname | Beschreibung |
@@ -128,10 +139,11 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | LastGenOutput | Erforderliche Zeichenfolge. Der Name der Datei, die von einem die oft ausgegebene Befehlszeilen  Datei-Generator erstellt wurde, der über diesem Element ausgeführt wurde. |
 | CustomToolNamespace | Erforderliche Zeichenfolge. Der Namespace, in dem ein beliebiger Datei-Generator, der über diesem Element ausgeführt wird, Code erstellen sollte. |
 | Link | Optionale Zeichenfolge. Der anzuzeigende Notationspfad, wenn sich die Datei physisch außerhalb des Einflusses des Projekts befindet. |
-| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt wird. |
+| Sichtbar | Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in Visual Studio angezeigt wird. |
 | CopyToOutputDirectory | Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest |
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
+
  Stellt Assemblyattribute dar, die als `[AssemblyMetadata(key, value)]` generiert werden sollen.
 
 | Elementmetadatenname | Beschreibung |
@@ -143,13 +155,17 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 > Dies gilt nur für Projekte, die das .NET Core SDK verwenden.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
- Stellt das Basisanwendungsmanifest für den Build dar und enthält Sicherheitsinformationen für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung.
+
+ Stellt das Basisanwendungsmanifest für den Build dar und enthält Sicherheitsinformationen für die ClickOnce-Bereitstellung.
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
+
  Stellt das zu importierende FxCop-Projekt dar.
 
 ### <a name="import"></a>Importieren
- Stellt Assemblys dar, deren Namespaces vom [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler importiert werden sollen.
+
+ Stellt Assemblys dar, deren Namespaces vom Visual Basic-Compiler importiert werden sollen.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)

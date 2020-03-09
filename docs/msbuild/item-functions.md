@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573793"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633680"
 ---
 # <a name="item-functions"></a>Elementfunktionen
-Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Informationen zu den Elementen des Projekts zu erhalten. Diese Funktionen vereinfachen das Abrufen von Distinct()-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente.
+
+Code in Aufgaben und Zielen kann Elementfunktionen aufrufen, um Informationen zu den Elementen im Projekt zu erhalten (MSBuild 4.0 und höher). Diese Funktionen vereinfachen das Abrufen von distinct-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente.
 
 ## <a name="string-item-functions"></a>Zeichenfolgenelementfunktionen
+
 Sie können Zeichenfolgenmethoden und -eigenschaften in .NET Framework für jeden Elementwert verwenden. Geben Sie für <xref:System.String>-Methoden den Methodennamen an. Geben Sie für <xref:System.String>-Eigenschaften den Eigenschaftennamen hinter „get_“ an.
 
 Für Elemente mit mehreren Zeichenfolgen wird die Zeichenfolgenmethode oder -eigenschaft für jede Zeichenfolge ausgeführt.
@@ -49,6 +51,7 @@ Das folgende Beispiel veranschaulicht die Verwendung dieser Zeichenfolgenelement
 ```
 
 ## <a name="intrinsic-item-functions"></a>Intrinsische Elementfunktionen
+
 In der unten stehenden Tabelle werden die systeminternen Funktionen aufgelistet, die für Elemente zur Verfügung stehen.
 
 |Funktion|Beispiel|Beschreibung|
@@ -100,4 +103,5 @@ In folgendem Beispiel wird veranschaulicht, wie Sie systeminterne Elementfunktio
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Elemente](../msbuild/msbuild-items.md)

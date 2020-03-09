@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592190"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633550"
 ---
 # <a name="logging-in-msbuild"></a>Protokollierung in MSBuild
+
 Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die Protokollierung erfasst Buildereignisse, Benachrichtigungen, Warnungen und Fehler in einer Protokolldatei.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
+
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- Beschreibt die verschiedenen Aspekte der Protokollierung in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Beschreibt die verschiedenen Aspekte der Protokollierung in MSBuild.
 
 - [Buildprotokollierungen](../msbuild/build-loggers.md)
 
@@ -42,4 +44,5 @@ Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die
  Erläutert, wie Sie benutzerdefinierte Weiterleitungsprotokollierungen erstellen.
 
 ## <a name="see-also"></a>Siehe auch
+
 - Unter [Paralleles Erstellen von mehreren Projekten mit MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) wird beschrieben, wie mehrere Projekte schneller erstellt werden können, indem Sie sie parallel ausführen.

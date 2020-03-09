@@ -3,20 +3,21 @@ title: CAST Highlight-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumenta
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist
-ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 7b06800bd53e2843015f3f3509a4a2c7e0eae671
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983735"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257175"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements
-Entwickler benötigen bei der Migration zur Cloud wichtige Einblicke in ihre Software. Mit CAST Highlight können Abonnenten von Visual Studio Enterprise ihren Anwendungsquellcode schnell überprüfen, um die Cloudbereitschaft ihrer Anwendungen für die Migration zu Azure zu ermitteln und den Fortschritt ihrer App während und nach der Migration zu überwachen.
+Entwickler benötigen bei der Migration zur Cloud wichtige Einblicke in ihre Software. Mit CAST Highlight können Abonnenten von Visual Studio ihren Anwendungsquellcode schnell überprüfen, um die Cloudbereitschaft ihrer Anwendungen für die Migration zu Azure zu ermitteln und den Fortschritt ihrer App während und nach der Migration zu überwachen.
 
-Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abonnent ein kostenloses einmonatiges Abonnement von CAST Highlight mit vollem Funktionsumfang.
+- Visual Studio Enterprise-Abonnenten können ein kostenloses, voll funktionsfähiges CAST Highlight-Abonnement für drei Monate erhalten, mit dem Benutzer bis zu fünf Apps bewerten können.
+- Visual Studio Professional-Abonnenten können ein ähnliches Abonnement erhalten, das die Bewertung einer App für drei Monate ermöglicht.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
@@ -26,7 +27,7 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
    > [!div class="mx-imgBorder"]
    > ![Kachel für den CAST Highlight-Vorteil](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. Ihnen wird eine Meldung angezeigt, die bestätigt, dass Ihr Code erfolgreich abgerufen wurde.  Klicken Sie auf **Aktivieren**. Dadurch werden Sie auf die CAST Highlight-Seite weitergeleitet, auf der Sie mit der Aktivierung fortfahren können.  (Wenn Sie die Aktivierung noch nicht durchführen möchten, können Sie diese jederzeit über die CAST Highlight-Kachel im Abonnementportal durchführen.  Der Link „Get Code“ (Code abrufen) ändert sich in „Aktivieren“. Wenn Sie darauf klicken, gelangen Sie zum nächsten Schritt im Aktivierungsprozess.)
+0. Ihnen wird eine Meldung angezeigt, die bestätigt, dass Ihr Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren). (Wenn Sie die Aktivierung noch nicht durchführen möchten, können Sie diese jederzeit über die CAST Highlight-Kachel im Abonnementportal durchführen.  Der Link „Get Code“ (Code abrufen) ändert sich in „Aktivieren“. Wenn Sie darauf klicken, gelangen Sie zum nächsten Schritt im Aktivierungsprozess.)
 
 0. Sie werden zur CAST Highlight-Seite umgeleitet, auf der Sie die Features Ihres Abonnements erkunden können.  Wenn Sie für die Erstellung Ihres Kontos bereit sind, geben Sie einfach Ihre Kontaktdaten in das Webformular ein, und klicken Sie auf **Senden**.
 
@@ -40,7 +41,7 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
 
 0. Der CAST-Team werte Ihre Anforderung aus und kontaktiert Sie, um die Erstellung Ihres Kontos abzuschließen.
 
-0. Darüber hinaus erhalten Sie eine E-Mail wie die folgende von CAST, in der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.
+0. Darüber hinaus erhalten Sie eine E-Mail wie die folgende von CAST, in der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.  (Dieses Beispiel zeigt die E-Mail, die Enterprise-Abonnenten erhalten.)
 
    > *Vielen Dank für Ihre Anforderung zur Aktivierung des 30-tägigen Zugriffs auf CAST Highlight, einem exklusiven Angebot für Kunden von Microsoft Visual Studio Enterprise!*
    >
@@ -75,16 +76,16 @@ Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der d
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Bewerten der 5 Apps für 30 Tage|  Nein.  Nur für neue Abonnenten verfügbar          |
-| Visual Studio Enterprise mit GitHub Enterprise  | VL | Bewerten der 5 Apps für 30 Tage|  Nein.  Nur für neue Abonnenten verfügbar          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                             |  Nicht zutreffend          |
-| Visual Studio Professional mit GitHub Enterprise | VL                                       | Nicht verfügbar                                                             |  Nicht zutreffend          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Bewertung von 5 Apps für 3 Monate|  Nein.  Nur für neue Abonnenten verfügbar          |
+| Visual Studio Enterprise mit GitHub Enterprise  | VL | Bewertung von 5 Apps für 3 Monate|  Nein.  Nur für neue Abonnenten verfügbar          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Bewertung von 1 App für 3 Monate                                                             |  Nein.  Nur für neue Abonnenten verfügbar                  |
+| Visual Studio Professional mit GitHub Enterprise | VL                                       | Bewertung von 1 App für 3 Monate                                                            |  Nein.  Nur für neue Abonnenten verfügbar                  |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
@@ -98,6 +99,12 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie den Azure DevTest-Einzelguthabenvorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihr Einzelguthaben für Azure DevTest zu erhalten.

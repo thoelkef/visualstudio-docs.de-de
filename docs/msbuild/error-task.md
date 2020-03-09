@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596358"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634226"
 ---
 # <a name="error-task"></a>Fehleraufgabe
+
 Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewerteten Bedingungsanweisung.
 
 ## <a name="parameters"></a>Parameter
+
 In der folgenden Tabelle werden die Parameter der `Error` -Aufgabe beschrieben.
 
 | Parameter | Beschreibung |
@@ -36,16 +38,18 @@ In der folgenden Tabelle werden die Parameter der `Error` -Aufgabe beschrieben.
 | `Code` | Optionaler `String`-Parameter.<br /><br /> Der dem Fehler zuzuordnende Fehlercode. |
 | `File` | Optionaler `String`-Parameter.<br /><br /> Der Name der Datei, die den Fehler enthält. Wenn kein Dateiname angegeben wird, wird die Datei verwendet, die die Error-Aufgabe enthält. |
 | `HelpKeyword` | Optionaler `String`-Parameter.<br /><br /> Das dem Fehler zuzuordnende Hilfeschlüsselwort. |
-| `Text` | Optionaler `String`-Parameter.<br /><br /> Der Fehlertext, den [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolliert, wenn die `Condition`-Parameter `true` ergeben. |
+| `Text` | Optionaler `String`-Parameter.<br /><br /> Der Fehlertext, den MSBuild protokolliert, wenn der `Condition`-Parameter als `true` ausgewertet wird. |
 
 ## <a name="remarks"></a>Hinweise
-Die `Error`-Aufgabe ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten, Fehlertexte an Protokollierungen herauszugeben und die Buildausführung zu beenden.
+
+Die `Error`-Aufgabe ermöglicht es, das MSBuild-Projekte Fehlertext an Protokollierungen ausgeben und die Buildausführung beenden.
 
 Wenn der `Condition`-Parameter `true` entspricht wird der Build beendet und ein Fehler protokolliert. Wenn kein `Condition`-Parameter vorhanden ist, wird der Fehler Protokolliert und die Buildausführung wird beendet. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Codebeispiel wird überprüft, ob alle erforderlichen Eigenschaften festgelegt sind. Wenn sie nicht festgelegt sind, löst das Projekt ein Fehlerereignis aus, und protokolliert den Wert des `Text`-Parameters der `Error`-Aufgabe.
 
 ```xml
@@ -63,5 +67,6 @@ Im folgenden Codebeispiel wird überprüft, ob alle erforderlichen Eigenschaften
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
