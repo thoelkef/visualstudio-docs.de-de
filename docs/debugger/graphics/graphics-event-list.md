@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911489"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409330"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.
@@ -32,7 +32,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 ### <a name="color-coded-events-in-direct3d-12"></a>Farbcodierte Ereignisse in Direct3D 12
  Direct3D 12 stellt mehrere Warteschlangen zur Verfügung, die unterschiedlicher Hardwarefunktionalitäten entsprechen. Zur Identifizierung von mit einem bestimmen Grafikereignis in Direct3D 12 verknüpfter Warteschlange werden die Ereignisse entsprechend der zugehörigen Warteschlange in der Ereignisliste farblich gekennzeichnet, wenn Sie mit einer Dircet3D 12-App-Erfassung arbeiten.
 
-|Direct3D 12-Warteschlange|Farbe|
+|Direct3D 12-Warteschlange|Color|
 |-----------------------|-----------|
 |Rendern der Warteschlange|Grün|
 |Berechnen der Warteschlange|Gelb|
@@ -105,13 +105,13 @@ Visual Studio 2017 und höher enthalten das Fenster " **Ressourcen Verlauf** ". 
 
 In diesem Fenster können Sie den Verlauf des ausgewählten Elements in der Ereignisliste anzeigen.  Die Dropdown Liste oben kann verwendet werden, um andere Elemente zum Anzeigen des Verlaufs auszuwählen.  Die obere Hälfte des Fensters enthält die **Frame-Setup-Ereignisse**.  Dabei handelt es sich um Ereignisse, die in die Kategorie " *Create* Type" fallen, und um Aufrufe, die die Ressource in der Regel initialisieren und erstellen.  Die untere Hälfte des Fensters enthält den Abschnitt **Frame-Ereignisse** .  Dabei handelt es sich um die normalen Lese-und Schreib Ereignisse, die während der Verwendung der Ressource auftreten.
 
-| Spalte | Beschreibung |
+| Column | BESCHREIBUNG |
 |-----------| - |
-| **Type** | Zeigt den Typ des Eintrags an (in der Regel *Erstellen*, *Lesen* und *Schreiben*). |
+| **Typ** | Zeigt den Typ des Eintrags an (in der Regel *Erstellen*, *Lesen* und *Schreiben*). |
 | **Ansicht** | Zeigt eine Miniaturansicht der Ressource zu diesem Zeitpunkt an.  Doppelklicken Sie auf die Miniaturansicht, um zu diesem Zeitpunkt eine Detailansicht der Ressource zu öffnen. |
 | **Event** | Zeigt den Methoden Aufruf, der aufgetreten ist, der das Ereignis generiert hat.  Alle zusätzlichen Verläufe für einzelne Elemente können angezeigt werden, indem Sie das Überwachungs Symbol ![Überwachungs Symbol](media/gfx_watch.png) in der entsprechenden Zeile auswählen.  Außerdem können alle Elemente, die in blauem Text gezeichnet werden (z. b. `m_commandList` im obigen Screenshot) ausgewählt werden, um weitere Informationen zu erhalten. |
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus](walkthrough-missing-objects-due-to-device-state.md)

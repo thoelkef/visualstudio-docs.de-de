@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590084"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408820"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -42,7 +42,7 @@ Wenn Sie eine App oder eine Website in Visual Studio erstellen, beginnen Sie mit
 
 Visual Studio verwendet [MSBuild](../msbuild/msbuild.md), um ein Projekt in einer Projektmappe zu erstellen. Jedes Projekt enthält eine MSBuild-Projektdatei. Die Dateierweiterung zeigt den Projekttyp an, wobei z. B. C#- (.csproj), Visual Basic- (.vbproj) oder Datenbankprojekte (.dbproj) verfügbar sind. Die Projektdatei ist ein XML-Dokument, das alle Informationen und Anweisungen enthält, die MSBuild zur Erstellung des Projekts benötigt. Dazu zählen der Inhalt, Plattformanforderungen, Versionsinformationen, Einstellungen für den Web- oder Datenbankserver und die Aufgaben, die ausgeführt werden sollen.
 
-Projektdateien basieren auf dem [MSBuild-XML-Schema](../msbuild/msbuild-project-file-schema-reference.md). Klicken Sie in Visual Studio im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend auf **\<Projektname\> bearbeiten**, um sich den Inhalt neuer [Projektdateien im SDK-Format](../msbuild/how-to-use-project-sdk.md) anzeigen zu lassen. Wenn Sie sich den Inhalt von .NET Framework-Projekten und anderen Projekten in diesem Format anzeigen lassen möchten, müssen Sie zuerst das Projekt entladen. Klicken Sie dazu im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend auf **Projekt entladen**. Klicken Sie dann mit der rechten Maustaste auf das Projekt und auf **\<Projektname\> bearbeiten**.
+Projektdateien basieren auf dem [MSBuild-XML-Schema](../msbuild/msbuild-project-file-schema-reference.md). Klicken Sie in Visual Studio im [Projektmappen-Explorer](../msbuild/how-to-use-project-sdk.md) mit der rechten Maustaste auf den Projektknoten und anschließend aufProjektname **bearbeiten\<, um sich den Inhalt neuer \>Projektdateien im SDK-Format** anzeigen zu lassen. Wenn Sie sich den Inhalt von .NET Framework-Projekten und anderen Projekten in diesem Format anzeigen lassen möchten, müssen Sie zuerst das Projekt entladen. Klicken Sie dazu im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend auf **Projekt entladen**. Klicken Sie dann mit der rechten Maustaste auf das Projekt und auf **\<Projektname\> bearbeiten**.
 
 > [!NOTE]
 > Der Code muss in Visual Studio nicht mithilfe von Projektmappen oder Projekten bearbeitet, erstellt und debuggt werden. Zum Debuggen öffnen Sie einfach in Visual Studio den Ordner, der die Quelldateien enthält, und beginnen mit dem Bearbeiten. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -53,7 +53,7 @@ Projekte befinden sich in *Projektmappen*. Trotz der englischen Bezeichnung „S
 
 Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (*SLN* und *SUO*):
 
-|Erweiterung|name|Beschreibung|
+|Erweiterung|Name|Beschreibung|
 |---------------|----------|-----------------|
 |.sln|Visual Studio-Projektmappe|Organisiert Projekte, Projektelemente und Projektmappenelemente in einer Projektmappe.|
 |.suo|Benutzeroptionen bei Projektmappen|Speichert Einstellungen und Anpassungen (z.B. Breakpoints) auf Benutzerebene.|
