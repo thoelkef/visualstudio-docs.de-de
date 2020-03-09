@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730321"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409400"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Remote Debuggen eines C++ Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer installieren und führen Sie die Remote Tools auf dem Computer aus, auf dem Sie die APP bereitstellen möchten, konfigurieren Sie das Projekt für die Verbindung mit dem Remote Computer über Visual Studio, und stellen Sie die APP bereit, und führen Sie Sie aus.
@@ -31,7 +31,7 @@ Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer installier
 
 Weitere Informationen zum Remote Debuggen von universellen Windows-Apps (UWP) finden Sie unter [Debuggen eines installierten App-Pakets](debug-installed-app-package.md).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Windows Server-Versionen ab Windows Server 2008 Service Pack 2 unterstützt. Eine umfassende Liste der Anforderungen finden Sie unter [Anforderungen](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -45,7 +45,7 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 > [!TIP]
 > In einigen Szenarien kann es am effizientesten sein, den Remote Debugger von einer Dateifreigabe aus auszuführen. Weitere Informationen finden Sie unter [Ausführen des Remote Debuggers aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
 
-## <a name="BKMK_setup"></a>Einrichten des Remotedebuggers
+## <a name="BKMK_setup"></a> Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -67,7 +67,7 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 
 5. Nehmen Sie die folgenden Änderungen an den Eigenschaften vor:
 
-   |Einstellung|Wert|
+   |Einstellung|value|
    |-|-|
    |Remote-Befehl|C:\remotetemp\mymfc.exe|
    |Arbeitsverzeichnis|C:\remotetemp|
@@ -106,10 +106,10 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Konfigurieren der Windows-Firewall für das Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Remotedebugger - Portzuweisungen](../debugger/remote-debugger-port-assignments.md)
+- [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md)
 - [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)
