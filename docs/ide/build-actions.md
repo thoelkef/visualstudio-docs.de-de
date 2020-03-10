@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254428"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408817"
 ---
 # <a name="build-actions"></a>Buildvorgänge
 
@@ -32,7 +32,7 @@ Sämtliche Dateien in einem Projekt von Visual Studio verfügen über einen Buil
 
 Einige der gängigeren Buildprozesse für C# und Visual Basic-Projektdateien sind die folgenden:
 
-|Buildvorgang | Projekttypen | BESCHREIBUNG |
+|Buildvorgang | Projekttypen | Beschreibung |
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Eine Textdatei, die keine Quelldatei ist, die an den C#- oder Visual Basic-Compiler als Eingabe übergeben wird. Dieser Buildprozess wird hauptsächlich zum Bereitstellen von Eingaben für [Analysetools](../code-quality/roslyn-analyzers-overview.md) verwendet, auf die ein Projekt verweist, um die Codequalität zu überprüfen. Weitere Informationen finden Sie in der GitHub-Übersicht zum [Verwenden zusätzlicher Dateien](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
 | **ApplicationDefinition** | WPF | Die Datei, die Ihre Anwendung definiert. Wenn Sie ein Projekt erstmalig erstellen, ist dies *App.XAML*. |
