@@ -10,9 +10,9 @@
         - name: Übersicht
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
-        - name: Installation
+        - name: Installieren von Quellcodeanalysetools
           href: install-roslyn-analyzers.md
-        - name: Konfiguration
+        - name: Konfigurieren von Quellcodeanalysetools
           href: use-roslyn-analyzers.md
         - name: Deaktivieren der Codeanalyse
           href: disable-code-analysis.md
@@ -22,27 +22,24 @@
           href: analyzers-faq.md
         - name: FxCop-Analysetools
           items:
-            - name: Übersicht
-              displayName: fxcop analyzers
-              href: fxcop-analyzers.yml
-            - name: Installation
+            - name: Installieren von FxCop-Analysetools
               href: install-fxcop-analyzers.md
-            - name: Konfiguration
+            - name: Migration zu FxCop-Analysetools
               items:
-                - name: Übersicht
+                - name: Migrieren von der Legacyanalyse zu FxCop-Analysetools
+                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
+                - name: FAQ
+                  href: fxcop-analyzers-faq.md
+                - name: Portierte Regeln
+                  href: fxcop-rule-port-status.md
+            - name: Konfigurieren von FxCop-Analysetools
+              items:
+                - name: Konfigurieren von Regeln und Projekten
                   href: configure-fxcop-analyzers.md
                 - name: Bereichsoptionen
                   href: fxcop-analyzer-options.md
                 - name: Aktivieren der Regelkategorie
                   href: analyzer-rule-sets.md
-            - name: FAQ
-              href: fxcop-analyzers-faq.md
-        - name: Migrieren von der Legacyanalyse zu FxCop-Analysetools
-          items:
-            - name: Übersicht
-              href: fxcop-analyzers.yml
-            - name: Portierte Regeln
-              href: fxcop-rule-port-status.md
     - name: Legacyanalyse
       items:
         - name: Übersicht
@@ -50,8 +47,8 @@
           href: static-code-analysis-for-managed-code-overview.md
         - name: Exemplarische Vorgehensweise für eine Legacyanalyse
           href: walkthrough-analyzing-managed-code-for-code-defects.md
-        - name: Migration
-          href: fxcop-analyzers.yml
+        - name: Migration zu FxCop-Analysetools
+          href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Manuelles Ausführen der Legacyanalyse
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Konfiguration
