@@ -62,4 +62,4 @@ Zum Anzeigen von Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern 
 
  Die folgende VSPerfReport-Befehlszeile fügt mithilfe der **/SymbolPath**-Option das Verzeichnis *C:\Projects\Symbols* zum Suchpfad hinzu.
 
- **VSPerfReport***MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport** *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
