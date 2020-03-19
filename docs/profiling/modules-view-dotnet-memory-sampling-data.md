@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772726"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modulansicht: .NET-Speichersamplingdaten
@@ -23,7 +23,7 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 
  Die Quelldatei-Zeilennummern von Anweisungen, die Speicher belegen, sind unter dem Funktionsknoten aufgeführt. Die Adressen der Anweisungen, die die Zuordnung vornehmen, sind unter dem Zeilenknoten aufgeführt. Die inklusiven und exklusiven Werte für Zeilen- und Anweisungsdaten sind immer identisch.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Name**|Der Name des Moduls, der Funktion, der Zeilennummer oder der Anweisungsadresse.|
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
@@ -42,7 +42,7 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 |**Exklusive Bytes in %**|Der Prozentsatz aller während der Profilerstellung zugeordneten Bytes, die exklusive Bytes des Moduls, der Funktion, der Zeile oder der Anweisung waren.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Modulansicht: .NET-Speicherinstrumentierungsdaten](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Modulansicht](../profiling/modules-view-sampling-data.md)
 - [Modulansicht](../profiling/modules-view-instrumentation-data.md)

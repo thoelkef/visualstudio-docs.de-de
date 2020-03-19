@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594122"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307328"
 ---
 # <a name="framework-targeting-overview"></a>Übersicht über Frameworkziele
 
@@ -124,4 +124,4 @@ Wenn Sie .NET Framework 3.5 oder eine höhere Version als Ziel verwenden, werde
 
 - [Zielframeworks](/dotnet/standard/frameworks)
 - [Projekte für mehrere Zielframeworkversionen (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Vorgehensweise: How to: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [How to: How to: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

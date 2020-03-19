@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114557"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
@@ -113,11 +113,11 @@ Führen Sie einen der folgenden Schritte aus:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [How to: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
 - [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
-- [Vorgehensweise: Set debug and release configurations (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen)](../debugger/how-to-set-debug-and-release-configurations.md)
+- [How to: Set debug and release configurations (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen)](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Referenz zur C/C++-Erstellung](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)
 - [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)

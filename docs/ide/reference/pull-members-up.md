@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969167"
 ---
 # <a name="pull-members-up"></a>Hochstufen von Membern in der Hierarchie
@@ -34,7 +34,7 @@ Dieses Refactoring gilt für:
 ## <a name="how-to"></a>Vorgehensweise
 
 1. Platzieren Sie Ihren Cursor auf einem beliebigen Member einer implementierten Schnittstelle.
-2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
 
    ![Hochstufen von Membern in der Hierarchie](media/pull-members-up.png)
 

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778595"
 ---
 # <a name="lines-view---contention-data"></a>Zeilenansicht: Konfliktdaten
@@ -39,7 +39,7 @@ In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweis
 
   In der folgenden Tabelle werden die Spalten des Zeilenansichtsberichts beschrieben.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Exklusive blockierte Zeit**|Die Zeitspanne, während der diese Anweisung bei der Ausführung eines Codes in der Anweisung aufgrund eines Konfliktereignisses blockiert wurde. Blockierte Zeit in Funktionen, die von der Anweisung aufgerufen wurden, ist nicht enthalten.|
 |**Exklusive blockierte Zeit %**|Der Prozentsatz der gesamten blockierten Zeit im Prozess, die exklusive blockierte Zeit der Anweisung war.|
@@ -64,7 +64,7 @@ In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweis
 |**Quellendzeile**|Die Zeilennummer in der Quelldatei, bei der die Anweisung endet.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Zeilenansicht](../profiling/lines-view.md)
 - [Zeilenansicht: Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Zeilenansicht](../profiling/lines-view-sampling-data.md)

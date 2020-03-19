@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74706786"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
@@ -214,7 +214,7 @@ Veröffentlicht am 21. Mai 2019
 
   - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Nur referenzierte Pakete (durch Verwendung von „manifest.json“ im Ordner `Packages`) und lokale Pakete (im Ordner `Packages` integriert) werden angezeigt.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Beibehalten externer Eigenschaften bei Verarbeitung der Projektmappendatei.
 
@@ -270,7 +270,7 @@ Veröffentlichung: 31. Januar 2019
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Die Compilerwarnungen `CS0649` und `IDE0051` in Unity-Projekten, die diese Nachrichten erstellt haben, werden nun automatisch unterdrückt.
 
@@ -406,7 +406,7 @@ am 13. November 2018 veröffentlicht
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
 
@@ -464,7 +464,7 @@ Veröffentlichung: 24. Juli 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - (Aus 3.9.0.0 bereitgestellt) Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
 
@@ -474,7 +474,7 @@ Veröffentlichung: 7. Juli 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
 
@@ -514,7 +514,7 @@ Veröffentlichung: 30. Mai 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Konvertieren Sie keine portablen PDB-Dateien mehr in MDB-Dateien, wenn Sie die neue Unity-Runtime verwenden.
 
@@ -554,7 +554,7 @@ Veröffentlichung: 7. Mai 2018
 
   - Verwendung der Ausnahmeeinstellungen wurde behoben
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Der Paket-Manager wird aus der Kompilierung von Einheiten aus der Generierung ausgeschlossen.
 
@@ -564,7 +564,7 @@ Veröffentlichung: 13. März 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Es wurde Unterstützung für den neuen Projektgenerator in Unity 2018.1 hinzugefügt.
 
@@ -584,7 +584,7 @@ Veröffentlichung: 5. März 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Erkennung von Mono-Version korrigiert.
 
@@ -598,13 +598,13 @@ Veröffentlichung: 23. Februar 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Unterstützung für .NET Standard wurde hinzugefügt.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Erkennung von Unity-Zielframework korrigiert.
 
@@ -646,7 +646,7 @@ Veröffentlichung: 10. Januar 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Unterstützung für 2018.1-MonoIsland-Referenzmodell hinzugefügt.
 
@@ -664,7 +664,7 @@ Veröffentlichung: 10. Januar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Projekt-GUID-Berechnung für Playerprojekte korrigiert.
 
@@ -710,7 +710,7 @@ Veröffentlichung: 4. Dezember 2017
 
   - Korrigiert: Das API-Hilfemenü in Unity wird nicht angezeigt.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrigiert: Player-Projekterstellung bei der Arbeit an einem UWP-Spiel mit IL2CPP/.NET 4.6 als Back-End.
 
@@ -726,7 +726,7 @@ Veröffentlichung: 19. September 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - assembly.json-Kompilierungseinheiten werden nun unterstützt.
 
@@ -748,7 +748,7 @@ Veröffentlichung: 19. September 2017
 
   - Vom Compiler generierte fehlerhafte Elemente mit lokalen Variablen wurden behoben.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Fehlerhafter Verweis auf Microsoft.CSharp für API-Ebene wurde in Unity 4.6 behoben.
 
@@ -758,7 +758,7 @@ Veröffentlichung: 15. August 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrigiert: Die Visual Studio-Projektmappengenerierung in Unity 5.5 und vorherigen Versionen.
 
@@ -820,7 +820,7 @@ Veröffentlichung: 7. April 2017
 
   - Zusätzliche Unterstützung für die neue Unity-Laufzeit (mit .NET 4.6 / C# 6-Kompatibilität).
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Zusätzliche Unterstützung für .NET 4.6-Profil.
 
@@ -836,7 +836,7 @@ Veröffentlichung: 7. April 2017
 
   - Feste Position der Einfügemarke nach dem Einfügen der Methode mit der automatischen Vervollständigung.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Entfernte Assemblyversion nach der Verarbeitung.
 
@@ -870,7 +870,7 @@ Veröffentlichung: 23. Januar 2017
 
   - Hinzufügung einer Warnung für den Fall eines nicht bindbaren Haltepunkts (wenn kein zugehöriger Quellort gefunden wird).
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrektur der csproj-Generierung mit speziellen/lokalisierten Zeichen.
 
@@ -915,7 +915,7 @@ Veröffentlichung: 17. November 2016
 
   - Hinzufügung besserer Fehlermeldungen, wenn ein Typ erwartet oder nicht gefunden wird.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Entfernung des CSharp-Suffixes aus den Projektnamen.
 
@@ -943,7 +943,7 @@ Veröffentlichung: 17. November 2016
 
   - Korrektur der Unterstützung für das Debugging von Iteratorrahmen mit dem neuen C#-Compiler.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Behebung eines Problems, das beim Adressieren des Unity Web-Players eine Kompilierung verhinderte.
 

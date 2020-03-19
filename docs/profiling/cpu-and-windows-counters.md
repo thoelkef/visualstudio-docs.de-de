@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779548"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
@@ -96,7 +96,7 @@ Zum Auflisten der verfügbaren Indikatoren auf einem Computer in der Visual Stud
 
       **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Samplingkonfiguration zurückzukehren.
 
-     Oder
+     - oder -
 
    - Wählen Sie **CPU-Indikatoren** und anschließend **CPU-Indikatoren auflisten** aus. Die CPU-Indikatoren werden unter **Verfügbare Indikatoren** aufgeführt.
 

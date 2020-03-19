@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778816"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs
@@ -37,7 +37,7 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 
 7. Wählen Sie aus der Liste **Zielprojekt hinzufügen** das ausführbare Projekt aus, das Sie zum Ausführen der DLL verwenden möchten.
 
-     Optional. Sie können alle DLL-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.
+     Dies ist optional. Sie können alle DLL-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.
 
 8. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und deaktivieren Sie das Kontrollkästchen **Instrumentieren**, um die Datensammlung für ein zusätzliches Projekt zu verhindern.
 
@@ -55,7 +55,7 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 
     - Geben Sie im **Pfad der ausführbaren Datei** den Pfad und den Namen der ausführbaren Datei ( *.exe*) an, die in der *DLL*-Datei ausgeführt wird. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Zu startende ausführbare Datei** zu suchen.
 
-    - Optional. Geben Sie in **Befehlszeilenargumente** Befehlszeilenargumente an, die an die ausführbare Datei übergeben werden sollen. Geben Sie ggf. in **Arbeitsverzeichnis** das Arbeitsverzeichnis für die Anwendung an.
+    - Dies ist optional. Geben Sie in **Befehlszeilenargumente** Befehlszeilenargumente an, die an die ausführbare Datei übergeben werden sollen. Geben Sie ggf. in **Arbeitsverzeichnis** das Arbeitsverzeichnis für die Anwendung an.
 
     - Klicken Sie auf **Weiter**.
 
@@ -63,7 +63,7 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 
 6. Klicken Sie auf **Fertig stellen**, um den Assistenten zu beenden und um im Fenster **Leistungs-Explorer** die neue Leistungssitzung anzuzeigen.
 
-7. Optional. Klicken Sie mit der rechten Maustaste auf **Ziele**, und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere *DLL*-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.
+7. Dies ist optional. Klicken Sie mit der rechten Maustaste auf **Ziele**, und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere *DLL*-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.
 
     > [!NOTE]
     > Geben Sie nicht die ausführbare Datei ( *.exe*) an, die die DLLs ausführt.

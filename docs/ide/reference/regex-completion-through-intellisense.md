@@ -1,26 +1,29 @@
 ---
 title: Vervollständigung regulärer Ausdrücke über das Menü „IntelliSense“
-ms.date: 06/10/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75110432f9bba35ce02588032b9a41dece01056b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033421"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093861"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>RegEx-Vervollständigung über das Menü „IntelliSense“
 
 Dieses Refactoring gilt für:
 
 - C#
+
+- Visual Basic
 
 **Beschreibung:** Vervollständigung regulärer Ausdrücke über das Menü „IntelliSense“
 

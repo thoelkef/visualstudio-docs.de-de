@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771542"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
@@ -277,7 +277,7 @@ Veröffentlichung: 20. März 2019
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Beibehalten externer Eigenschaften bei Verarbeitung der Projektmappendatei.
   
@@ -309,7 +309,7 @@ Veröffentlichung: 5. März 2019
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Die Compilerwarnungen `CS0649` und `IDE0051` in Unity-Projekten, die diese Nachrichten erstellt haben, werden nun automatisch unterdrückt.
 
@@ -430,7 +430,7 @@ Veröffentlichung: 26. Juli 2018
 
   - Ein Schreibfehler in der OnApplicationFocus-Meldung wurde korrigiert.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
 
@@ -474,7 +474,7 @@ Veröffentlichung: 5. März 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Es wurde Unterstützung für den neuen Projektgenerator in Unity 2018.1 hinzugefügt.
 
@@ -488,7 +488,7 @@ Veröffentlichung: 24. Januar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Erkennung von Mono-Version korrigiert.
 
@@ -514,7 +514,7 @@ Veröffentlichung: 13. Dezember 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Unterstützung für .NET Standard wurde hinzugefügt.
 
@@ -562,7 +562,7 @@ Veröffentlichung: 23. Oktober 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrigiert: Eine zusätzliche DLL-Erweiterung wird dem Assemblydateinamen fälschlicherweise hinzugefügt.
 
@@ -574,7 +574,7 @@ Veröffentlichung: 23. Oktober 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Zusätzliche Unterstützung für .NET 4.6-Profil.
 
@@ -588,7 +588,7 @@ Veröffentlichung: 8. August 2017
 
   - Starten Sie das Dialogfeld „An den Prozess anhängen“, wenn Sie nicht sicher sind, an welche Unity-Version angehängt werden soll.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Aktivieren Sie immer den unsafe-Kompilierungsschalter, wenn Unity 5.6 verwendet wird.
 
@@ -612,7 +612,7 @@ Veröffentlichung: 12. Juli 2017
 
   - Es wurde Unterstützung für das Anhängen an Player und Editors über das Fenster „An den Prozess anhängen“ hinzugefügt.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Fehlerhafte Assembly-Namensverweise bei mcs.rsp Dateien behoben.
 

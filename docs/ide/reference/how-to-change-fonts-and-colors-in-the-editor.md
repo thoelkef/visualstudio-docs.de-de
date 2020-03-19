@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595565"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Vorgehensweise: Ändern der im Editor in Visual Studio verwendeten Schriftarten und Farben
@@ -49,4 +49,4 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 ## <a name="see-also"></a>Siehe auch
 
 - [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [How to: Ändern von Schriftarten und Farben in Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

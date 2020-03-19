@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254216"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307148"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -41,7 +41,7 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Vertiefung: Use source control with Python projects (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Minuten und 55 Sekunden). |
+| ![Symbol für Filmkamera für das Video](../install/media/video-icon.png "Video ansehen") | [Vertiefung: Use source control with Python projects (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Minuten und 55 Sekunden). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 
@@ -77,7 +77,7 @@ Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-P
 
 Die folgende Tabelle fasst die in Visual Studio 2017 und höher verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
-| Vorlage | BESCHREIBUNG |
+| Vorlage | Beschreibung |
 | --- | --- |
 | [**Aus vorhandenem Python-Code**](#create-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
 | **Python-Anwendung** | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](selecting-a-python-environment-for-a-project.md) ändern können. |

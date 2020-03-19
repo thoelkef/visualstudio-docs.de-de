@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822392"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307112"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -25,7 +25,7 @@ Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fe
 
 Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
-| REPL | BESCHREIBUNG | Bearbeiten | Debuggen | Bilder |
+| REPL | Beschreibung | Bearbeiten | Debuggen | Bilder |
 | --- | --- | --- | --- | --- |
 | Standard | Standard-REPL, kommuniziert direkt mit Python | Standardbearbeitung (mehrzeilig usw.) | Ja, über `$attach` | Nein |
 | Debug | Standard-REPL, kommuniziert mit gedebuggtem Python-Prozess | Standardbearbeitung | Nur Debuggen | Nein |
@@ -73,7 +73,7 @@ Eine Ausnahme besteht, wenn zusätzliche Codezeilen benötigt werden, um eine vo
 
 <a name="meta-commands"></a> Das **interaktive** Fenster unterstützt auch mehrere Metabefehle. Alle Metabefehle beginnen mit `$`, und Sie können `$help` eingeben, um eine Liste der Metabefehle abzurufen, und `$help <command>`, um nähere Informationen zur Verwendung eines bestimmten Befehls zu erhalten.
 
-| Metabefehl | BESCHREIBUNG |
+| Metabefehl | Beschreibung |
 | --- | --- |
 | `$$` | Fügt einen Kommentar ein, was das Kommentieren von Code während der gesamten Sitzung erleichtert. |
 | `$attach` | Fügt den Visual Studio-Debugger dem REPL-Fensterprozess an, um das Debuggen zu aktivieren. |

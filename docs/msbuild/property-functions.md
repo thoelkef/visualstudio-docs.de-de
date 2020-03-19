@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597385"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307190"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
-In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Auswertung von MSBuild-Skripts verwendet werden. Eigenschaftenfunktionen können immer dann verwendet werden, wenn Eigenschaften vorhanden sind. Im Gegensatz zu Aufgaben können Eigenschaftenfunktionen außerhalb von Zielen verwendet werden, und sie werden ausgewertet, bevor Ziele ausgeführt werden.
+Eigenschaftenfunktionen sind Aufrufe von .NET Framework-Methoden, die in MSBuild-Eigenschaftsdefinitionen erscheinen. Im Gegensatz zu Aufgaben können Eigenschaftenfunktionen außerhalb von Zielen verwendet werden, und sie werden ausgewertet, bevor Ziele ausgeführt werden.
 
- Sie können die Systemzeit lesen, Zeichenfolgen vergleichen, reguläre Ausdrücke abgleichen und viele weitere Aktionen im Buildskript ausführen, ohne MSBuild-Aufgaben zu verwenden. MSBuild versucht, eine Zeichenfolge in eine Zahl und eine Zahl in eine Zeichenfolge zu konvertieren und nimmt je nach Bedarf andere Konvertierungen vor.
- 
+Sie können die Systemzeit lesen, Zeichenfolgen vergleichen, reguläre Ausdrücke abgleichen und viele weitere Aktionen im Buildskript ausführen, ohne MSBuild-Aufgaben zu verwenden. MSBuild versucht, eine Zeichenfolge in eine Zahl und eine Zahl in eine Zeichenfolge zu konvertieren und nimmt je nach Bedarf andere Konvertierungen vor.
+
 Zeichenfolgenwerte, die von Eigenschaftsfunktionen zurückgegeben werden, haben als [Sonderzeichen](msbuild-special-characters.md) ein Escapezeichen. Wenn Sie möchten, dass der Wert so behandelt wird, als wäre er direkt in der Projektdatei platziert, verwenden Sie `$([MSBuild]::Unescape())`, um die Sonderzeichen zu entfernen.
+
+Eigenschaftenfunktionen sind in .NET Framework 4 und höher verfügbar.
 
 ## <a name="property-function-syntax"></a>Syntax einer Eigenschaftenfunktion
 
@@ -37,7 +39,7 @@ Nachfolgend sehen Sie drei Arten von Eigenschaftenfunktionen; jede Funktion hat 
 
 Alle Buildeigenschaftswerte sind lediglich Zeichenfolgenwerte. Sie können Zeichenfolgen-(Instanz-)Methoden für beliebige Eigenschaftswerte verwenden. Sie können beispielsweise mithilfe des folgendes Codes den Laufwerksnamen (die ersten drei Buchstaben) aus einer Buildeigenschaft extrahieren, die einen vollständigen Pfad darstellt:
 
-```fundamental
+```
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
@@ -45,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 In Ihrem Buildskript können Sie auf die statischen Eigenschaften und Methoden vieler Systemklassen zugreifen. Um den Wert einer statischen Eigenschaft abzurufen, verwenden Sie die folgende Syntax, wobei \<Class> der Name der Systemklasse und \<Property> der Name der Eigenschaft ist.
 
-```fundamental
+```
 $([Class]::Property)
 ```
 
@@ -57,7 +59,7 @@ Sie können beispielsweise den folgenden Code verwenden, um eine Buildeigenschaf
 
 Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei \<Class> der Name der Systemklasse, \<Method> der Name der Methode und (\<Parameters>) die Parameterliste für die Methode ist:
 
-```fundamental
+```
 $([Class]::Method(Parameters))
 ```
 
@@ -121,7 +123,7 @@ Außerdem können Sie die folgenden statischen Methoden und Eigenschaften verwen
 
 Wenn Sie auf eine statische Eigenschaft zugreifen, die eine Objektinstanz zurückgibt, können Sie die Instanzmethoden dieses Objekts aufrufen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei \<Class> der Name der Systemklasse, \<Property> der Name der Eigenschaft, \<Method> der Name der Methode und (\<Parameters>) die Parameterliste für die Methode ist:
 
-```fundamental
+```
 $([Class]::Property.Method(Parameters))
 ```
 
@@ -137,13 +139,13 @@ Sie können beispielsweise den folgenden Code verwenden, um eine Buildeigenschaf
 
 In Ihrem Build kann auf mehrere statische Methoden zugegriffen werden, um Unterstützung für arithmetische, bitweise logische und Escapezeichen bereitzustellen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei \<Method> der Name der Methode und (\<Parameters>) die Parameterliste für die Methode ist.
 
-```fundamental
+```
 $([MSBuild]::Method(Parameters))
 ```
 
 Um beispielsweise zwei Eigenschaften mit numerischen Werten zu addieren, verwenden Sie den folgenden Code.
 
-```fundamental
+```
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
@@ -172,8 +174,8 @@ Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:
 |string NormalizePath(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Pfads ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem enthält.|
 |string NormalizeDirectory(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Verzeichnisses ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem und einen nachstehenden Schrägstrich enthält.|
 |string EnsureTrailingSlash(string path)|Wenn der angegebene Pfad keinen nachgestellten Schrägstrich besitzt, fügen Sie einen hinzu. Wenn der Pfad eine leere Zeichenfolge ist, ändern Sie diesen nicht.|
-|string GetPathOfFileAbove(string file, string startingDirectory)|Sucht basierend auf dem Speicherort der aktuellen Builddatei, oder, sofern angegeben, auf `startingDirectory`, nach einer Datei.|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Suchen Sie eine Datei entweder im angegebenen Verzeichnis oder an einem Speicherort in der Verzeichnisstruktur oberhalb dieses Verzeichnisses.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Sucht in der Verzeichnisstruktur oberhalb des Speicherorts der aktuellen Builddatei oder basierend auf `startingDirectory` (sofern angegeben) nach einer Datei und gibt den vollständigen Pfad zu dieser Datei zurück.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Sucht entweder im angegebenen Verzeichnis oder an einem Speicherort in der Verzeichnisstruktur oberhalb dieses Verzeichnisses nach dem Verzeichnis einer Datei und gibt dieses zurück.|
 |string MakeRelative(string basePath, string path)|Macht `path` relativ zu `basePath`. Bei `basePath` muss es sich um ein absolutes Verzeichnis handeln. Wenn `path` nicht relativ gemacht werden kann, wird dieses wörtlich zurückgegeben. Vergleichbar zu `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Geben Sie die Zeichenfolge im Parameter „DefaultValue“ nur zurück, wenn der Parameter „ConditionValue“ leer ist. Geben Sie ansonsten ist den Wert ConditionValue zurück.|
 
@@ -181,7 +183,7 @@ Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:
 
 Sie können Eigenschaftenfunktionen kombinieren, um komplexere Funktionen zu erstellen, wie das folgende Beispiel zeigt.
 
-```fundamental
+```
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
@@ -195,7 +197,7 @@ Die `DoesTaskHostExist`-Eigenschaftenfunktion in MSBuild gibt zurück, ob derzei
 
 Diese Eigenschaftenfunktion hat die folgende Syntax:
 
-```fundamental
+```
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
@@ -205,7 +207,7 @@ Die `EnsureTrailingSlash`-Eigenschaftenfunktion in MSBuild fügt einen nachgeste
 
 Diese Eigenschaftenfunktion hat die folgende Syntax:
 
-```fundamental
+```
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```
 
@@ -215,7 +217,7 @@ Die `GetDirectoryNameOfFileAbove`-Eigenschaftenfunktion in MSBuild sucht in den 
 
  Diese Eigenschaftenfunktion hat die folgende Syntax:
 
-```fundamental
+```
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```
 
@@ -227,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-Die `GetPathOfFileAbove`-Eigenschaftenfunktion in MSBuild gibt den Pfad der Datei unmittelbar vor diesem zurück. Sie ist zum Aufruf funktional äquivalent.
+Die `GetPathOfFileAbove`-Eigenschaftenfunktion in MSBuild gibt den Pfad der angegebenen Datei zurück, wenn sie sich in der Verzeichnisstruktur oberhalb des aktuellen Verzeichnisses befindet. Sie ist zum Aufruf funktional äquivalent.
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -235,7 +237,7 @@ Die `GetPathOfFileAbove`-Eigenschaftenfunktion in MSBuild gibt den Pfad der Date
 
 Diese Eigenschaftenfunktion hat die folgende Syntax:
 
-```fundamental
+```
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
@@ -245,7 +247,7 @@ Die `GetRegistryValue`-Eigenschaftenfunktion in MSBuild gibt den Wert eines Regi
 
 In den folgenden Beispielen wird veranschaulicht, wie diese Funktion verwendet wird:
 
-```fundamental
+```
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
@@ -257,7 +259,7 @@ Die `GetRegistryValueFromView`-Eigenschaftenfunktion in MSBuild ruft Systemregis
 
 Die Syntax für diese Eigenschaftenfunktion ist wie folgt:
 
-```fundamental
+```
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
@@ -275,7 +277,7 @@ Die folgenden Registrierungsansichten sind verfügbar:
 
 Nachfolgend finden Sie ein Beispiel:
 
- ```fundamental
+ ```
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
@@ -287,7 +289,7 @@ Die `MakeRelative`-Eigenschaftenfunktion in MSBuild gibt den relativen Pfad des 
 
 Diese Eigenschaftenfunktion hat die folgende Syntax:
 
-```fundamental
+```
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```
 

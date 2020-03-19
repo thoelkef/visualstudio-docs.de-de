@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779219"
 ---
 # <a name="functions-view---instrumentation-data"></a>Funktionsansicht: Instrumentierungsdaten
@@ -24,7 +24,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 ## <a name="general"></a>Allgemein
  Die allgemeinen Spalten bezeichnen die Funktion in einer Ansichtszeile.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Funktionsname**|Der Name der Funktion.|
 |**Funktionsadresse**|Die Adresse der Funktion.|
@@ -41,7 +41,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 ## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit in Funktionen, die von der Funktion aufgerufen wurden, und die Zeit, die für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen benötigt wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Verstrichene inklusive Zeit**|Die insgesamt verstrichene inklusive Zeit aller Aufrufe dieser Funktion.|
 |**Verstrichene inklusive Zeit %**|Der Prozentsatz der gesamten verstrichenen inklusiven Zeit, die innerhalb der verstrichenen inklusiven Zeit dieser Funktion auf die Profilerstellung entfällt.|
@@ -52,7 +52,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 ## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit
  Werte für die verstrichene inklusive Zeit geben an, wie lange ein Code im Text einer Funktion ausgeführt wurde, sprich, wie lange sich die Funktion ganz oben in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit, die mit Aufrufen an das Betriebssystem verbracht wurde, wie z.B. Kontextwechsel oder Eingabe-/Ausgabeoperationen; sie beinhaltet jedoch nicht die Zeit, die in Funktionen verbracht wurde, die von der Funktion aufgerufen wurden.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Verstrichene exklusive Zeit**|Die insgesamt verstrichene exklusive Zeit aller Aufrufe dieser Funktion.|
 |**Verstrichene exklusive Zeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen exklusiven Zeit, die sich auf die insgesamt verstrichene exklusive Zeit dieser Funktion bezieht.|
@@ -63,7 +63,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 ## <a name="application-inclusive-values"></a>Werte für inklusive Anwendungszeit
  Werte für die inklusive Anwendungszeit geben die Zeit an, die sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst nicht die Zeit, die mit Aufrufen an das Betriebssystem verbracht wurde, wie z.B. Kontextwechsel oder Eingabe-/Ausgabeoperationen; sie beinhaltet jedoch die Zeit, die in Funktionen verbracht wurde, die von der Funktion aufgerufen wurden.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Inklusive Anwendungszeit**|Die insgesamt verstrichene inklusive Zeit aller Aufrufe dieser Funktion.|
 |**Inklusive Anwendungszeit %**|Der Prozentsatz der insgesamt verstrichenen inklusiven Zeit, die innerhalb der gesamten inklusiven Anwendungszeit dieser Funktion auf die Profilerstellung entfällt.|
@@ -74,7 +74,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 ## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit
  Werte für exklusive Anwendungszeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Die Zeit umfasst nicht die Zeit, die mit Aufrufen an das Betriebssystem verbracht wurde, wie z.B. Kontextwechsel oder Eingabe-/Ausgabeoperationen; sie beinhaltet auch nicht die Zeit, die in Funktionen verbracht wurde, die von der Funktion aufgerufen wurden.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Exklusive Anwendungszeit**|Die gesamte exklusive Anwendungszeit aller Aufrufe dieser Funktion.|
 |**Exklusive Anwendungszeit %**|Der Prozentsatz der gesamten verstrichenen exklusiven Zeit, die innerhalb der exklusiven Gesamtanwendungszeit dieser Funktion auf die Profilerstellung entfällt.|
@@ -83,7 +83,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 |**Minimale exklusive Anwendungszeit**|Die exklusive Mindestanwendungszeit für einen Aufruf dieser Funktion.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Funktionsansicht](../profiling/functions-view-sampling-data.md)
 - [Funktionsansicht: Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Funktionsansicht: Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

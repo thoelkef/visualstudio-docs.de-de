@@ -7,10 +7,10 @@ ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71950688"
 ---
 # <a name="container-tools-build-properties"></a>Buildeigenschaften für Containertools
@@ -29,7 +29,7 @@ Sie können die Eigenschaftseinstellung einem vorhandenen `PropertyGroup`-Elemen
 
 In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für Containerprojekte verfügbar sind. Die NuGet-Paketversion gilt für[Microsoft.VisualStudio.Azure.Containers.Tools.Targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
 
-| Name der Eigenschaft | BESCHREIBUNG | Standardwert  | NuGet-Paketversion|
+| Name der Eigenschaft | Beschreibung | Standardwert  | NuGet-Paketversion|
 |---------------|-------------|----------------|----------------------|
 | ContainerDevelopmentMode | Steuert, ob die Optimierung „build-on-host“ (Debugging im schnellen Modus) aktiviert ist.  Zulässige Werte sind: **Fast** (Schnell) und **Regular** (Normal). | Fast |1.0.1872750 oder höher|
 | ContainerVsDbgPath | Der Pfad für den VSDBG-Debugger. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 oder höher|

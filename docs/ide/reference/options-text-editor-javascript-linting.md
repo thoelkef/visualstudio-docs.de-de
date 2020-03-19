@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605971"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Dialogfeld „Optionen“: Text-Editor \> JavaScript/TypeScript \> Linting
@@ -30,7 +30,7 @@ Mit diesen Optionen können Sie die statische JavaScript- TypeScript-Codeanalyse
 
 ### <a name="uielement-list"></a>UIElement-Liste
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**ESLint aktivieren**|Wenn diese Option ausgewählt ist, ermöglicht der Code-Editor eine statische Analyse des Codes.|
 |**Lint für alle (auch geschlossene) Dateien im Projekt durchführen**|Wenn diese Option ausgewählt ist, werden geschlossene Dateien analysiert, es sei denn, es wird eine Diagnose nur für offene Dateien gemeldet.|

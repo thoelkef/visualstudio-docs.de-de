@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74780051"
 ---
 # <a name="functions-view---contention-data"></a>Funktionsansicht: Konfliktdaten
@@ -23,7 +23,7 @@ Die Funktionsberichtansicht der Konfliktdatenlisten der Funktionen in der Profil
 
  In der folgenden Tabelle werden die Werte erklärt, die in der Funktionsansicht einer Profilerstellungsdatendatei angezeigt werden, die anhand der Parallelitätsmethode erstellt wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Exklusive blockierte Zeit %**|Der Zeitraum, in dem diese Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.|
 |**Exklusive blockierte Zeit %**|Der Prozentsatz der gesamten blockierten Zeit in der Profilerstellung, für die nur diese Funktion blockiert wurde.|
@@ -43,7 +43,7 @@ Die Funktionsberichtansicht der Konfliktdatenlisten der Funktionen in der Profil
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Funktionsansicht](../profiling/functions-view.md)
 - [Funktionsansicht: Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [Funktionsansicht: Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773308"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten
@@ -29,7 +29,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden .NET-Speicherdaten einer Profilerst
 
  Doppelklicken Sie auf eine Zeile einer Aufrufer- oder Aufgerufener-Funktion, um diese Zeile zur aktuellen Funktion zu machen.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
 |**Prozessname**|Der Prozessname.|
@@ -51,7 +51,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden .NET-Speicherdaten einer Profilerst
 |**Exklusive Bytes %**|Der Prozentsatz aller Bytes des Arbeitsspeichers, die während der Profilerstellung belegt wurden und exklusive Belegungen dieser Funktion waren.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Aufrufer-/Aufgerufener-Ansicht: Samplingdaten](../profiling/caller-callee-view-sampling-data.md)
 - [Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten](../profiling/caller-callee-view-instrumentation-data.md)

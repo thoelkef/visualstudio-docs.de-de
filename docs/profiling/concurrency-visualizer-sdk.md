@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911196"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
@@ -121,7 +121,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 ## <a name="see-also"></a>Siehe auch
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|
 |[C-Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|

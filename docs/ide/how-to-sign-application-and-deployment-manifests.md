@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596163"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
@@ -114,6 +114,6 @@ Standardmäßig werden durch ClickOnce automatisch signierte Manifeste generiert
 ## <a name="see-also"></a>Siehe auch
 
 - [Assemblys mit starken Namen](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [How to: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Seite „Signierung“, Projekt-Designer](../ide/reference/signing-page-project-designer.md)
 - [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)

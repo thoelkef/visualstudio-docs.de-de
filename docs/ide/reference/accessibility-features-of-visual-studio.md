@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113790"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Barrierefreiheitsfeatures in Visual Studio
@@ -40,15 +40,15 @@ Neben den Eingabehilfen und Dienstprogrammen in Windows erleichtern die folgende
 
 Weitere Informationen finden Sie unter den folgenden Themen:
 
-- [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [How to: Festlegen von IDE-Barrierefreiheitsoptionen](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [How to: Ausschließliches Verwenden der Tastatur](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 - [Tipps und Tricks zur Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [How to: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
 > Die Informationen auf dieser Seite gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/accessibility/) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen lassen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der auf dieser Seite beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über die Barrierefreiheit sind auch in anderen Sprachen verfügbar.

@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661942"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307160"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -157,7 +157,7 @@ Eine Conda-Umgebung ist eine mit dem `conda`-Tool oder der in Visual Studio 2017
 
 1. Konfigurieren Sie die folgenden Felder:
 
-    | Feld | BESCHREIBUNG |
+    | Feld | Beschreibung |
     | --- | --- |
     | Projekt | Das Projekt, in dem die Umgebung erstellt werden soll (falls eine Visual Studio-Projektmappe mehrere Projekte enthält) |
     | name | Der Name für die Conda-Umgebung |

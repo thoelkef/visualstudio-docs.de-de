@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6629f41657a546ffb5fb48e0b6efb5f4f0dd50cb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596878"
 ---
 # <a name="build-events-page-project-designer-c"></a>Seite "Buildereignisse", Projekt-Designer (C#)
@@ -98,7 +98,7 @@ Verwenden Sie für ein Ereignis nach dem Buildvorgang den Namen `PostBuild`, und
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [How to: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [How to: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)
 - [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)

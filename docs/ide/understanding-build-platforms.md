@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115066"
 ---
 # <a name="understand-build-platforms"></a>Grundlagen zu Buildplattformen
@@ -30,10 +30,10 @@ Sie können verschiedene Versionen von Projektmappen- und Projekteigenschaften s
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-[Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)\
+[How to: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)\
 Erläutert, wie ein Projekt für eine bestimmte Zielplattform konfiguriert wird.
 
-[Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[How to: Konfigurieren von Projekten für mehrere Zielplattformen](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Erläutert, wie ein Projekt für mehrere Zielplattformen konfiguriert wird.
 
 ## <a name="see-also"></a>Siehe auch

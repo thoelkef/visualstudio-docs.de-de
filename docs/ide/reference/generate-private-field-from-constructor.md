@@ -1,26 +1,29 @@
 ---
 title: Generieren eines privaten Felds aus einem Konstruktor
-ms.date: 02/19/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef4188216b669b30b7af9bd725ec432bcd0a774
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529413"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094028"
 ---
 # <a name="generate-private-field-from-constructor"></a>Generieren eines privaten Felds aus einem Konstruktor
 
 Dieses Refactoring gilt für: 
 
 - C# 
+
+- Visual Basic
 
 **Beschreibung:** Dieses Refactoring dient zum Generieren eines privaten Felds aus einem Konstruktor. 
 

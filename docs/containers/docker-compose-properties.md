@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 3d4392eb75cab353b99a043ae2cd5e934ac8cb14
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826457"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431253"
 ---
 # <a name="docker-compose-build-properties"></a>Buildeigenschaften von Docker Compose
 
@@ -36,6 +36,7 @@ In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für 
 | Name der Eigenschaft | Speicherort | Beschreibung | Standardwert  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|Gibt zusätzliche Compose-Dateien in einer durch Semikolons getrennten Liste an, die an „docker-compose.exe“ für alle Befehle gesendet werden sollen. Relative Pfade aus der docker-compose-Projektdatei (DCPROJ-Datei) sind zulässig.|-|
+|ContainerDevelopmentMode|dcproj| Steuert, ob die Optimierung „build-on-host“ (Debugging im schnellen Modus) aktiviert ist.  Zulässige Werte sind: **Fast** (Schnell) und **Regular** (Normal). | Fast |
 |DockerComposeBaseFilePath|dcproj|Gibt den ersten Teil der Dateinamen der docker-compose-Dateien ohne die Erweiterung *.yml* an. Zum Beispiel: <br>1.  DockerComposeBaseFilePath = NULL/nicht definiert: Verwenden Sie den Basisdateipfad *docker-compose*. Dateien werden dann als *docker-compose.yml* und *docker-compose.override.yml* benannt.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: Dateien werden als *mydockercompose.yml* und *mydockercompose.override.yml* benannt.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: Dateien werden eine Ebene nach oben verlagert. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose build` übergeben werden sollen. Beispiel: `--parallel --pull` |
 |DockerComposeDownArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose down` übergeben werden sollen. Beispiel: `--timeout 500`|-|  

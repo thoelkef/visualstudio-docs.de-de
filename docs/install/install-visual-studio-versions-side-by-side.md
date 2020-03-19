@@ -12,10 +12,10 @@ author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114646"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
@@ -61,7 +61,7 @@ Sprachspezifische Informationen finden Sie im entsprechenden Thema in der folgen
 | Visual Basic | [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Entwickeln mit Visual F# in Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Vorgehensweise: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/). |
+|C++ | [How to: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/). |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -80,7 +80,7 @@ Sprachspezifische Informationen finden Sie im entsprechenden Thema in der folgen
 | Visual Basic | [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Entwickeln mit Visual F# in Visual Studio](../ide/fsharp-visual-studio.md) |
-| C++ | [Vorgehensweise: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/). |
+| C++ | [How to: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/). |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911207"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
@@ -38,7 +38,7 @@ Sie können das Befehlszeilenprogramm für die Parallelitätsschnellansicht (*CV
 
  **CVCollectionCmd**
 
-|Option|BESCHREIBUNG|Parameter|Rückgabewert|
+|Option|Beschreibung|Parameter|Rückgabewerte|
 |------------|-----------------|----------------|-------------------|
 |Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keine|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](/dotnet/framework/wcf/samples/etw-tracing)-Sitzungen bereit aktiviert ist.|
 |Starten|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|
@@ -61,7 +61,7 @@ Sie können das Befehlszeilenprogramm für die Parallelitätsschnellansicht (*CV
 ### <a name="configuration-file-tags"></a>Tags der Konfigurationsdatei
  Die Konfigurationsdatei ist XML-basiert. Hier sind die gültigen Tags und Werte:
 
-| Tag | BESCHREIBUNG | Werte |
+| Tag | Beschreibung | Werte |
 |-------------------------| - | - |
 | Konfigurationen | Grenzt die gesamte Config-Datei ab. | Muss folgende Elemente enthalten:<br /><br /> - MinorVersion<br />- MajorVersion |
 | MajorVersion | Gibt die Hauptversion der Konfigurationsdatei an. | Muss 1 sein für [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] -Projekte. Wenn nicht 1, dann funktioniert das Dienstprogramm nicht. |
