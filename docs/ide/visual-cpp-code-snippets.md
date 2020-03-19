@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77277828"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
@@ -30,7 +30,7 @@ Sie können einen Codeausschnitt an einer bestimmten Stelle im Code hinzufügen 
 
 - Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Ausschnitt einfügen** aus.
 
-- Verwenden Sie folgenden Tastaturbefehl: **STRG**+**K**+**X**
+- Verwenden Sie folgenden Tastaturbefehl: **STRG**+**K**+**X**.
 
 Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt werden. Bei der Auswahl von **#if** sollte der folgende Code in die Datei eingefügt werden:
 
@@ -50,7 +50,7 @@ Um einen Codeausschnitt zum Umschließen des ausgewählten Codes zu verwenden, w
 
 - Wählen Sie im Menü **Bearbeiten** > **IntelliSense** die Option **Umschließen mit** aus.
 
-- Drücken Sie auf der Tastatur die Tasten: **STRG**+**K**+**S**
+- Drücken Sie auf der Tastatur die Tasten**STRG**+**K**+**S**.
 
 Wählen Sie **#if** aus. Folgendes sollte angezeigt werden:
 
@@ -170,6 +170,6 @@ Wenn Sie versuchen, den Destruktor-Ausschnitt außerhalb einer Klasse einzufüge
 {
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codeausschnitte](../ide/code-snippets.md)

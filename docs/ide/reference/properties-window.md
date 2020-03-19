@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565707"
 ---
 # <a name="properties-window"></a>Eigenschaftenfenster
@@ -36,10 +36,10 @@ Je nach den Erfordernissen der einzelnen Eigenschaften werden im **Eigenschaften
 ## <a name="uielement-list"></a>UIElement-Liste
 
 Objektname\
-Listet die momentan ausgewählten Objekte auf. Es werden nur die Objekte im aktiven Editor bzw. Designer angezeigt. Wenn Sie mehrere Objekte auswählen, werden nur die Eigenschaften aufgeführt, über die alle ausgewählten Objekte verfügen.
+Führt das aktuell ausgewählte Objekt bzw. die aktuell ausgewählten Objekte auf. Es werden nur die Objekte im aktiven Editor bzw. Designer angezeigt. Wenn Sie mehrere Objekte auswählen, werden nur die Eigenschaften aufgeführt, über die alle ausgewählten Objekte verfügen.
 
 Nach Kategorien\
-Listet alle Eigenschaften und Eigenschaftswerte für das ausgewählte Objekt nach Kategorie sortiert auf. Kategorien können reduziert werden, um die Anzahl von sichtbaren Eigenschaften zu verringern. Wenn Sie eine Kategorie erweitern oder reduzieren, wird links neben dem Kategorienamen ein Pluszeichen (+) oder ein Minuszeichen (-) angezeigt. Die Kategorien werden in alphabetischer Reihenfolge aufgeführt.
+Führt alle Eigenschaften und Eigenschaftswerte für das ausgewählte Objekt nach Kategorie auf. Kategorien können reduziert werden, um die Anzahl von sichtbaren Eigenschaften zu verringern. Wenn Sie eine Kategorie reduzieren oder erweitern, wird ein Pluszeichen (+) bzw. ein Minuszeichen (-) auf der linken Seite des Kategorienamens angezeigt. Kategorien sind in alphabetischer Reihenfolge aufgelistet.
 
 Alphabetisch\
 Sortiert alle Entwurfszeit-Eigenschaften und -Ereignisse ausgewählter Objekte in alphabetischer Reihenfolge. Zum Bearbeiten einer nicht abgeblendeten Eigenschaft klicken Sie auf die Zelle rechts neben der Eigenschaft und nehmen die Änderungen vor.
@@ -48,7 +48,7 @@ Eigenschaftenseiten\
 Zeigt das Dialogfeld **Eigenschaftenseiten** oder **Projekt-Designer** für das ausgewählte Element an. Unter **Eigenschaftenseiten** wird entweder eine Teilmenge, dieselbe Menge oder eine Obermenge der im Eigenschaftenfenster verfügbaren Eigenschaften angezeigt. Über diese Schaltfläche werden die Eigenschaften angezeigt und bearbeitet, die sich auf die aktive Konfiguration des Projekts beziehen.
 
 Eigenschaften\
-Zeigt die Eigenschaften eines Objekts an. Viele Objekte verfügen außerdem über Ereignisse, die im**Eigenschaftenfenster** angezeigt werden können.
+Zeigt die Eigenschaften für ein Objekt an. Viele Objekte verfügen außerdem über Ereignisse, die im**Eigenschaftenfenster** angezeigt werden können.
 
 Nach Eigenschaftsquelle sortieren\
 Gruppiert Eigenschaften nach Quelle, z. B. Vererbung, geltende Formate und Bindungen. Nur verfügbar, wenn XAML-Dateien im Designer bearbeitet werden.
@@ -63,13 +63,13 @@ Meldungen\
 Führt alle Windows-Meldungen auf. Ermöglicht das Hinzufügen oder Löschen bestimmter Handlerfunktionen für die Nachrichten, die für die ausgewählte Klasse gelten.
 
 > [!NOTE]
-> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.
+> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines **-Projekts die** Klassenansicht[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] das aktive Fenster ist.
 
 Überschreibungen\
 Führt alle virtuellen Funktionen für die ausgewählte Klasse auf und ermöglicht das Hinzufügen oder Löschen überschreibender Funktionen.
 
 > [!NOTE]
-> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.
+> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines **-Projekts die** Klassenansicht[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] das aktive Fenster ist.
 
 Beschreibungsbereich\
 Zeigt den Eigenschaftentyp und eine Kurzbeschreibung der Eigenschaft an. Mithilfe des Befehls "Beschreibung" im Kontextmenü können Sie die Beschreibung der Eigenschaft ein- und ausblenden.
@@ -83,7 +83,7 @@ Zeigt beim Bearbeiten von XAML-Dateien im Designer eine visuelle Darstellung des
 Suchen\
 Stellt eine Suchfunktion für Eigenschaften und Ereignisse bereit, wenn XAML-Dateien im Designer bearbeitet werden. Das Suchfeld reagiert auf die Suche nach Wortteilen. Die Suchergebnisse werden bei der Eingabe aktualisiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)
 - [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

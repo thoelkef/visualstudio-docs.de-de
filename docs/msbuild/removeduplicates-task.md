@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632783"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates-Aufgabe
@@ -31,14 +31,14 @@ Entfernt doppelte Elemente aus der angegebenen Elementauflistung
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `RemoveDuplicates` -Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `RemoveDuplicates`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |`Filtered`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält eine Elementauflistung, aus der alle doppelten Elemente entfernt wurden Die Eingabereihenfolge der Elemente wird beibehalten, wobei die erste Instanz jedes doppelten Elements beibehalten wird.|
 |`Inputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Die Elementauflistung, aus der doppelte Elemente entfernt werden sollen|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  Bei dieser Aufgabe wird die Groß- und Kleinschreibung beachtet, und Elementmetadaten werden beim Ermitteln von Duplikaten nicht verglichen.
 
@@ -93,8 +93,8 @@ Entfernt doppelte Elemente aus der angegebenen Elementauflistung
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)

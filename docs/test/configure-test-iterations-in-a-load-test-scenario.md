@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590981"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurieren von Testiterationen in einem Auslastungstestszenario
@@ -62,7 +62,7 @@ Die Eigenschaft **Maximale Anzahl von Testiterationen** ist für eine Vielzahl v
     > [!NOTE]
     > Wenn Sie für die Eigenschaft **Maximale Anzahl von Testiterationen** den Wert 0 verwenden, wird keine maximale Anzahl von Iterationen angegeben.
 
-6. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf die Option **Speichern**. Anschließend können Sie den Auslastungstest mit dem neuen Wert für **Maximale Anzahl von Testiterationen** ausführen.
+6. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, wählen Sie im Menü **Datei** die Option **Speichern** aus. Anschließend können Sie den Auslastungstest mit dem neuen Wert für **Maximale Anzahl von Testiterationen** ausführen.
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Angeben von Reaktionszeiten zwischen Testiterationen in einem Szenario
 
@@ -87,9 +87,9 @@ Mit der Eigenschaft **Reaktionszeit zwischen Testiterationen** wird die Wartezei
 
 4. Geben Sie im Wert für die Eigenschaft **Reaktionszeit zwischen Testiterationen** eine Zahl ein, die die Anzahl von Sekunden vor dem Starten der nächsten Testiteration darstellt.
 
-5. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf die Option **Speichern**. Sie können den Auslastungstest anschließend mit dem neuen Wert für **Reaktionszeit zwischen Testiterationen** ausführen.
+5. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, wählen Sie im Menü **Datei** die Option **Speichern** aus. Sie können den Auslastungstest anschließend mit dem neuen Wert für **Reaktionszeit zwischen Testiterationen** ausführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Configure test agents and test controllers for load tests (Konfigurieren von Test-Agents und Testcontrollern für Auslastungstests)](../test/configure-test-agents-and-controllers-for-load-tests.md)

@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779193"
 ---
 # <a name="functions-view"></a>Funktionsansicht
@@ -28,11 +28,11 @@ In der Funktionsansicht werden die Funktionen aufgelistet, die während der Prof
 
  Funktionen werden in der Regel nach Namen aufgeführt. Um Funktionen nach Modulen zu sortieren, klicken Sie mit der rechten Maustaste in das Fenster „Funktionsansicht“, und klicken Sie anschließend auf **In Modulansicht anzeigen**. So wird in die Modulansicht gewechselt.
 
- Um Spalten hinzuzufügen oder zu entfernen, klicken Sie mit der rechten Maustaste in das Berichtsfenster, und klicken Sie dann auf **Spalten hinzufügen/entfernen**. Zusätzlich können Sie die Daten durch Klicken auf einen Spaltennamen sortieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md).
+ Um Spalten hinzuzufügen oder zu entfernen, klicken Sie mit der rechten Maustaste in das Berichtsfenster, und klicken Sie dann auf **Spalten hinzufügen/entfernen**. Zusätzlich können Sie die Daten durch Klicken auf einen Spaltennamen sortieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md).
 
  Welche Spalten in der Funktionsansicht verfügbar sind, ist abhängig von der Profilerstellungsmethode (Sampling oder Instrumentierung), die zum Sammeln der Daten verwendet wurde, und davon, ob in der Profilerstellungsausführung .NET-Arbeitsspeicherdaten gesammelt wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Funktionsansicht](../profiling/functions-view-sampling-data.md)
 - [Funktionsansicht](../profiling/functions-view-instrumentation-data.md)
 - [Funktionsansicht: Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

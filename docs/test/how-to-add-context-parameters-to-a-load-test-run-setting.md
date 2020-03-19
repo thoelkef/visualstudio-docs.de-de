@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584477"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Vorgehensweise: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstestlauf
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Vorgehensweise: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstest
 
 Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Szenarioeigenschaften mit dem **Auslastungstest-Editor** entsprechend Ihren Testanforderungen und -zielen ändern.
 
@@ -36,9 +36,9 @@ Wenn Sie `http://CorporateStagingWebServer` den Wert des Kontextparameters „We
 
 Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführen, indem Sie einem Kontextparameter andere Werte zuweisen, indem Sie den gleichen Namen in verschiedenen Auslastungstestlauf-Einstellungen verwenden:
 
-- Ausführungseinstellung für Unternehmens-Stagingwebserver: Der Kontextparameter namens `WebServer1=http://CorporateStagingWebServer`
+- Testlaufeinstellung für Unternehmens-Stagingwebserver: Kontextparameter namens `WebServer1=http://CorporateStagingWebServer`
 
-- Ausführungseinstellung „Corporate Production Web Server“: Der Kontextparameter namens `WebServer1=http://CorporateProductionWebServer`
+- Testlaufeinstellung für Unternehmens-Produktionswebserver: Kontextparameter namens `WebServer1=http://CorporateProductionWebServer`
 
   **Changing the Run Setting from the Command Line (Ändern der Laufzeiteinstellung über die Befehlszeile)**
 
@@ -60,7 +60,7 @@ Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführe
 
      Dem Ordner **Kontextparameter** im Ordner **Laufzeiteinstellungen** in der Auslastungsteststruktur wird ein neuer Kontextparameter hinzugefügt.
 
-     - oder -
+     \- oder -
 
      Wenn die Laufzeiteinstellung bereits einen **Kontextparameter**-Ordner enthält, können Sie mit der rechten Maustaste darauf klicken und dann auf **Kontextparameter hinzufügen** klicken.
 
@@ -70,6 +70,6 @@ Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführe
 
 6. Wählen Sie aus, welche Ausführungseinstellungen aktiv sein sollen. Öffnen Sie das Kontextmenü in den Laufzeiteinstellungen, und wählen Sie **Als aktiv festlegen** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md)

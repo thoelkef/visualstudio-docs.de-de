@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114802"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Vorgehensweise: Ausschließen von Projekten aus einem Build
@@ -67,7 +67,7 @@ Im Bereich **Build** des Fensters **Ausgabe** meldet Visual Studio die Anzahl de
 
 Wenn Sie herausfinden möchten, warum ein Projekt übersprungen wurde, notieren Sie sich die aktive Konfiguration (`Debug x86` im vorherigen Beispiel), und wählen Sie **Build** > **Konfigurations-Manager** aus. Sie können anzeigen oder ändern, welche Projekte für jede Konfiguration übersprungen werden, wie in diesem Artikel erläutert wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
 - [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)

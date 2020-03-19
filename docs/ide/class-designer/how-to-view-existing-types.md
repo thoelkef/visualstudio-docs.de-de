@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von vorhandenen Typen (Klassen-Designer)'
+title: 'Gewusst wie: Anzeigen von vorhandenen Typen (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04b109bfa5741a5d4349f2d503bd1c821e19029d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588706"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Vorgehensweise: Anzeigen von vorhandenen Typen im Klassen-Designer
@@ -27,11 +27,11 @@ Um einen vorhandenen Typ und die zugehörigen Member anzuzeigen, fügen Sie sein
 
 Es werden lokale und referenzierte Typen angezeigt. Ein lokaler Typ ist im aktuell geöffneten Projekt vorhanden und kann sowohl gelesen als auch geschrieben werden. Ein Typ, auf den verwiesen wird, ist in einem anderen Projekt oder einer Assembly, auf die verwiesen wird, enthalten und ist schreibgeschützt.
 
-Informationen zum Entwerfen neuer Typen in Klassendiagrammen finden Sie unter [Vorgehensweise: Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer](how-to-create-types.md).
+Informationen zum Erstellen neuer Typen in Klassendiagrammen finden Sie unter [Vorgehensweise: Erstellen von Typen im Klassen-Designer](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>So zeigen Sie Typen aus einem Projekt in einem Klassendiagramm an
 
-1. Öffnen Sie in einem Projekt im **Projektmappen-Explorer** eine Klassendiagrammdatei (CD-Datei). Falls kein Klassendiagramm vorhanden ist, fügen Sie dem Projekt ein neues Klassendiagramm hinzu. Weitere Informationen finden Sie unter [How to: Add Class Diagrams to Projects (Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten)](how-to-add-class-diagrams-to-projects.md).
+1. Öffnen Sie in einem Projekt im **Projektmappen-Explorer** eine Klassendiagrammdatei (CD-Datei). Falls kein Klassendiagramm vorhanden ist, fügen Sie dem Projekt ein neues Klassendiagramm hinzu. Informationen hierzu finden Sie unter [How to: Add Class Diagrams to Projects (Class Designer) (Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer))](how-to-add-class-diagrams-to-projects.md).
 
 2. Ziehen Sie vom Projekt im **Projektmappen-Explorer** eine Quellcodedatei in das Klassendiagramm.
 
@@ -61,8 +61,8 @@ Wenn Sie einen Typ in einem Diagramm zum ersten Mal anzeigen, wird die Form stan
 
 Klicken Sie im **Projektmappen-Explorer** oder in der **Klassenansicht** mit der rechten Maustaste auf das Projekt, und wählen Sie **Anzeigen** und anschließend **Klassendiagramm anzeigen** aus. Daraufhin wird ein automatisch ausgefülltes Klassendiagramm erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: How to: View Inheritance Between Types (Vorgehensweise: Anzeigen einer Vererbung zwischen Typen)](how-to-view-inheritance-between-types.md)
+- [Vorgehensweise: Anzeigen der Vererbung zwischen Typen](how-to-view-inheritance-between-types.md)
 - [Vorgehensweise: Anpassen von Klassendiagrammen](how-to-customize-class-diagrams.md)
 - [Anzeigen von Typen und Beziehungen](designing-and-viewing-classes-and-types.md)

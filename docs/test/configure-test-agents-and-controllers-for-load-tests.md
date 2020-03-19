@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597346"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Übersicht von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
@@ -37,7 +37,7 @@ Diese Architektur bietet die folgenden Vorteile:
 
 - Die Möglichkeit, die Auslastungsgenerierung durch Hinzufügen zusätzlicher Test-Agents zu einem Testcontroller horizontal zu skalieren
 
-- Flexibilität für die Installation der Client-, Testcontroller- und Test-Agent-Software auf den gleichen oder anderen Computern. Zum Beispiel:
+- Flexibilität für die Installation der Client-, Testcontroller- und Test-Agent-Software auf den gleichen oder anderen Computern. Beispiel:
 
    **Lokale Konfiguration:**
 
@@ -89,6 +89,6 @@ Wichtige Informationen zu Hardware- und Softwareanforderungen für Testcontrolle
 
 Nachdem Sie einen Testcontroller und mindestens einen Agent installiert haben, können Sie in der Testeinstellung für die Ausführung der Auslastungstests festlegen, ob eine Remoteausführung mit dem Testcontroller erfolgen soll. Darüber hinaus können Sie in der Testeinstellung die Daten- und Diagnoseadapter angeben, die mit der den Agents zugeordneten Rolle verwendet werden sollen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568684"
 ---
 # <a name="list-registers-command"></a>Befehl "Registrierungen auflisten"
@@ -35,11 +35,11 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Schalter
 /Display [{`register`|`registerGroup`}...]
 
-Zeigt die Werte des angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Zum Beispiel:
+Zeigt die Werte des angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Beispiel:
 
 `Debug.ListRegisters /Display eax`
 
-für die folgende Syntax:
+entspricht
 
 `Debug.ListRegisters eax`
 
@@ -55,7 +55,7 @@ Fügt der Liste einen oder mehrere `register`- oder `registerGroup`-Werte hinzu
 
 Entfernt einen oder mehrere `register`- oder `registerGroup`-Werte aus der Liste
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 Der Alias `r` kann anstelle von `Debug.ListRegisters` verwendet werden.
 
 ## <a name="example"></a>Beispiel
@@ -65,8 +65,8 @@ In diesem Beispiel wird das `Debug.ListRegisters`-Alias `r` verwendet, um die We
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
-- [Debuggrundlagen: Registerfenster](../../debugger/debugging-basics-registers-window.md)
-- [Vorgehensweise: Verwenden des Fensters „Register“](../../debugger/how-to-use-the-registers-window.md)
+- [Grundlagen des Debuggens: Fenster "Register"](../../debugger/debugging-basics-registers-window.md)
+- [Gewusst wie: Verwenden des Fensters "Register"](../../debugger/how-to-use-the-registers-window.md)

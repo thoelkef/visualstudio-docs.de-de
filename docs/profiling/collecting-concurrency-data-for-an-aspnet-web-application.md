@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779661"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Sammeln von Parallelitätsdaten für eine ASP.NET-Webanwendung über die Profiler-Befehlszeile
@@ -24,18 +24,18 @@ Die Parallelitätsmethode der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
-|Anfügen des Profilers an eine aktive ASP.NET-Anwendung|-   [Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Parallelitätsdaten](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
+|Anfügen des Profilers an eine aktive ASP.NET-Anwendung|-   [Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Parallelitätsdaten über die Befehlszeile](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
 - [Referenz zu Profilerstellungstools für die Befehlszeile](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
 ### <a name="profile-aspnet-applications"></a>Profilerstellung für ASP.NET-Anwendungen
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung mit der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Profilerstellung mit der Instrumentationsmethode**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
@@ -43,7 +43,7 @@ Die Parallelitätsmethode der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 
 ### <a name="profile-concurrency-issues"></a>Parallelitätsprobleme bei der Profilerstellung
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln von Parallelitätsdaten](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Profilerstellung für Dienste**|-   [Sammeln von Parallelitätsdaten](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
@@ -51,7 +51,7 @@ Die Parallelitätsmethode der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Analysieren von Ansichten und Berichten zu Parallelitätsdaten
 - [Ansichten für Ressourcenkonfliktdaten](../profiling/resource-contention-data-views.md)
 
-- [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)
+- [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
 - [Referenz zu Profilerstellungstools für die Befehlszeile](../profiling/command-line-profiling-tools-reference.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588563"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Konfigurieren von Visual Studio als Ausnahme-App von WIP
@@ -34,6 +34,6 @@ Da Visual Studio mehrere Binärdateien enthält, müssen Sie eine [AppLocker-Ric
 
 Führen Sie die folgenden [Schritte aus, um zu definieren, wo Ihre geschützten Apps Unternehmensdaten finden und senden können](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data), wenn Sie angeben möchten, wo Visual Studio in Ihrem Netzwerk auf Unternehmensdaten zugreifen kann. Stellen Sie sicher, dass die Zeichenfolge /\*AppCompat\*/ zur Einstellung hinzugefügt wird, wenn Windows keine Verbindungen zu Cloudressourcen über eine IP-Adresse mehr blockieren soll.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [App-Verhalten mit WIP](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

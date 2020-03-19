@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847292"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
@@ -75,13 +75,13 @@ Es gibt zwei Lab-Umgebungstypen, die Sie mit Visual Studio Lab Management erstel
 
 **SCVMM-Umgebungen**: Diese können nur virtuelle Computer enthalten, die von SCVMM (System Center Virtual Machine Manager) verwaltet werden, sodass die virtuellen Computer in SCVMM-Umgebungen nur auf dem Hyper-V-Virtualisierungsframework ausgeführt werden können. SCVMM-Umgebungen stellen jedoch die folgenden Automatisierungs- und Verwaltungsfunktionen bereit, die in Standardumgebungen nicht verfügbar sind:
 
-- **Umgebungsmomentaufnahmen:** Diese enthalten den Status einer Laborumgebung, sodass Sie schnell eine Umgebung im Grundzustand wiederherstellen oder den Status einer geänderten Umgebung speichern können. Sie können auch einen Workflow zum Erstellen, Bereitstellen und Testen verwenden, um den Vorgang der Speicherung und Wiederherstellung von Umgebungsmomentaufnahmen zu automatisieren.
+- **Umgebungsmomentaufnahmen**: Diese enthalten den Status einer Lab-Umgebung, sodass Sie schnell eine Umgebung im Grundzustand wiederherstellen oder den Status einer geänderten Umgebung speichern können. Sie können auch einen Workflow zum Erstellen, Bereitstellen und Testen verwenden, um den Vorgang der Speicherung und Wiederherstellung von Umgebungsmomentaufnahmen zu automatisieren.
 
-- **Gespeicherte Umgebungen:** Sie können eine Kopie einer SCVMM-Umgebung speichern und anschließend mehrere Kopien dieser Umgebung bereitstellen.
+- **Gespeicherte Umgebungen**: Sie können eine Kopie einer SCVMM-Umgebung speichern und anschließend mehrere Kopien dieser Umgebung bereitstellen.
 
-- **Netzwerkisolation:** Die Netzwerkisolation ermöglicht Ihnen, gleichzeitig mehrere identische Kopien einer SCVMM-Umgebung ohne Computernamenskonflikte auszuführen.
+- **Netzwerkisolation**: Diese ermöglicht Ihnen, gleichzeitig mehrere identische Kopien einer SCVMM-Umgebung ohne Computernamenkonflikte auszuführen.
 
-- **Vorlagen für virtuelle Computer:** Eine Vorlage für virtuelle Computer ist ein virtueller Computer, dessen Name sowie andere Bezeichner entfernt wurden. Wenn eine Vorlage für virtuelle Computer in einer SCVMM-Umgebung bereitgestellt wird, generiert neue IDs. Dadurch können Sie mehrere Kopien eines virtuellen Computers in derselben Umgebung oder in mehrere Umgebungen bereitstellen und die virtuellen Computer anschließend gleichzeitig ausführen.
+- **Vorlagen für virtuelle Computer**: Eine Vorlage für virtuelle Computer ist ein virtueller Computer, bei dem der Name und andere IDs entfernt wurden. Wenn eine Vorlage für virtuelle Computer in einer SCVMM-Umgebung bereitgestellt wird, generiert neue IDs. Dadurch können Sie mehrere Kopien eines virtuellen Computers in derselben Umgebung oder in mehrere Umgebungen bereitstellen und die virtuellen Computer anschließend gleichzeitig ausführen.
 
 - **Gespeicherte virtuelle Computer:** ein in Ihrer Projektbibliothek gespeicherter virtueller Computer, der eindeutige Bezeichner umfasst.
 
@@ -137,7 +137,7 @@ Weitere Informationen zur Einrichtung von Umgebungen finden Sie unter:
 * [(Virtuelle) SCVMM-Umgebungen](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Erstellen und Verwenden einer netzwerkisolierten Umgebung](https://msdn.microsoft.com/library/ee518924.aspx)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Installieren und Konfigurieren von Test-Agents](../../test/lab-management/install-configure-test-agents.md)
 * [Handbuch zu Visual Studio Lab Management](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)

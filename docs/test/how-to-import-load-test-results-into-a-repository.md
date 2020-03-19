@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Importieren von Auslastungstestergebnissen in ein Repository'
+title: 'Gewusst wie: Importieren von Auslastungstestergebnissen in ein Repository'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbc8c352c7bf3cda0524f07aa82b6ccbe70602b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589031"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Vorgehensweise: Importieren von Auslastungstestergebnissen in ein Repository
@@ -44,7 +44,7 @@ Sie können Auslastungstestergebnisse aus dem Auslastungstest-Editor im Dialogfe
 
 5. Geben Sie im Feld **Dateiname** den Namen einer archivierten Testergebnisdatei ein, und klicken Sie dann auf **Öffnen**.
 
-     \- oder -
+     \- oder –
 
      Navigieren Sie zur Datei, und klicken Sie dann auf **Öffnen**.
 
@@ -53,7 +53,7 @@ Sie können Auslastungstestergebnisse aus dem Auslastungstest-Editor im Dialogfe
 
      Die Ergebnisse werden importiert und in der Liste **Auslastungstestergebnisse** angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

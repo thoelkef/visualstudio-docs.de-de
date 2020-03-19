@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589863"
 ---
 # <a name="work-with-textures-and-images"></a>Arbeiten mit Texturen und Bildern
@@ -52,5 +52,5 @@ Cubemaps können unterschiedliche Arten von Daten enthalten – wie etwa Farben 
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
+|[Bildbearbeitung](../designers/image-editor.md)|Beschreibt die Verwendung der Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
 |[Beispiele für die Bildbearbeitung](../designers/how-to-create-a-basic-texture.md)|Enthält Links zu Themen, in denen die Verwendung der Bildbearbeitung für das Ausführen häufiger Aufgaben der Bildverarbeitung veranschaulicht wird.|

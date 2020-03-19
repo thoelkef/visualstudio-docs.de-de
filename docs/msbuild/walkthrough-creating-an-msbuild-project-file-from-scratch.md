@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263135"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
@@ -51,7 +51,7 @@ Sie können die exemplarische Vorgehensweise nur abschließen, wenn Sie .NET Fra
 
  In diesem Abschnitt wird veranschaulicht, wie Sie eine minimale Visual C#-Anwendungsquelldatei mithilfe eines Text-Editors erstellen.
 
-1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\* oder *\Desktop\\* .
+1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\\* oder *\Desktop\\* .
 
 2. Geben Sie **md HelloWorld** ein, um den Unterordner *\HelloWorld\\* zu erstellen.
 
@@ -392,7 +392,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
      **Das Ziel „Build“ wird übersprungen, da alle Ausgabedateien hinsichtlich der Eingabedateien aktuell sind.**
 
-     **en: HelloWorld.cs**
+     **Eingabedateien: HelloWorld.cs**
 
      **Ausgabedateien: BinMSBuildSample.exe**
 
@@ -476,7 +476,7 @@ Das folgende Beispiel enthält eine Projektdatei, durch die eine Visual Basic-An
 
  Visual Studio kann einen großen Teil der in dieser exemplarischen Vorgehensweise gezeigten Aktionen automatisch übernehmen. Informationen zum Erstellen und Bearbeiten sowie zum Build und zu Tests von MSBuild-Projektdateien in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über MSBuild](../msbuild/msbuild.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

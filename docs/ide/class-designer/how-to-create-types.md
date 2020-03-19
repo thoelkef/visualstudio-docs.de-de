@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer'
+title: 'Gewusst wie: Erstellen von Typen mit dem Klassen-Designer'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590175"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer
 
-Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie sie in einem Klassendiagramm. Vorhandene Typen finden Sie unter [Vorgehensweise: Anzeigen von vorhandenen Typen](how-to-view-existing-types.md).
+Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie sie in einem Klassendiagramm. Vorhandene Typen finden Sie unter [How to: View Existing Types (Class Designer) (Vorgehensweise: Anzeigen von vorhandenen Typen (Klassen-Designer))](how-to-view-existing-types.md).
 
 ## <a name="CreateType"></a> Erstellen eines neuen Typs
 
@@ -62,7 +62,7 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
     |Klassen, abstrakte Klassen, Strukturen oder Structs|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode), Destruktoren (Methode) und Konstanten, die den Typ definieren|
     |Enumerationen|Feldwerte, die die Enumeration bilden|
     |Schnittstellen|Methoden, Eigenschaften und Ereignisse, die die Schnittstelle bilden|
-    |delegate|Parameter, die den Delegaten definieren|
+    |Delegate|Parameter, die den Delegaten definieren|
     |Modul|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode) und Konstanten, die das Modul definieren|
 
      Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
@@ -87,9 +87,9 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
    Die benutzerdefinierten Attribute werden auf den Typ angewendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: How to: Create Inheritance Between Types (Vorgehensweise: Erstellen einer Vererbung zwischen Typen)](how-to-create-inheritance-between-types.md)
-- [Vorgehensweise: How to: Create associations between types (Vorgehensweise: Erstellen von Zuordnungen zwischen Typen)](how-to-create-associations-between-types.md)
+- [Vorgehensweise: Erstellen einer Vererbungsbeziehung zwischen Typen](how-to-create-inheritance-between-types.md)
+- [Vorgehensweise: Erstellen von Zuordnungen zwischen Typen](how-to-create-associations-between-types.md)
 - [Erstellen und Konfigurieren von Typmembern](creating-and-configuring-type-members.md)
 - [Entwerfen von Klassen und Typen](designing-and-viewing-classes-and-types.md)

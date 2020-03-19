@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594863"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306842"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Willkommen in der Visual Studio-IDE | C\#
 
@@ -48,7 +48,7 @@ Informationen zu weiteren Features von Visual Studio finden Sie in den folgenden
 > [!div class="nextstepaction"]
 > [Erfahren Sie mehr über Projekte und Projektmappen](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - Entdecken Sie [weitere Visual Studio-Features](../../ide/advanced-feature-overview.md).
 - Besuche Sie [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).

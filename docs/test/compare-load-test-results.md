@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589343"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse
@@ -42,8 +42,8 @@ Zudem kann das Arbeitsblatt für Projektbeteiligte freigegeben werden, damit die
 |Aufgaben|Verwandte Themen|
 |-|-|
 |**Erstellen eines Leistungs- und Belastungsberichts:** Sie können mit Microsoft Excel Berichte für die Auslastungs- und Webleistungstests erstellen.|- [Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word:** Sie können manuell Berichte für Auslastungs- und Webleistungstests erstellen, indem Sie die Zusammenfassung, die Tabelle und Diagrammdaten kopieren und in ein Microsoft Word-Dokument einfügen.|- [Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Manuelles Erstellen eines Leistungs- und Belastungsberichts mithilfe von Microsoft Word:** Sie können manuell Berichte für Auslastungs- und Webleistungstests erstellen, indem Sie die Zusammenfassung, die Tabelle und Diagrammdaten kopieren und in ein Microsoft Word-Dokument einfügen.|- [Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

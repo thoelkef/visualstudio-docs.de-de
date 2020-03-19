@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595630"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generieren einer Klasse oder eines Typs in Visual Studio
@@ -27,9 +27,9 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung:** Hiermit können Sie sofort den Code für eine Klasse oder einen Typ generieren.
+**Beschreibung**: Hiermit können Sie sofort den Code für eine Klasse oder einen Typ generieren.
 
-**Hintergrund:** Sie führen eine neue Klasse oder einen neuen Typ ein, die bzw. der ordnungsgemäß automatisch deklariert werden soll.
+**Hintergrund**: Sie führen eine neue Klasse oder einen neuen Typ ein, die bzw. der ordnungsgemäß automatisch deklariert werden soll.
 
 **Vorteile**: Sie können die Klasse oder den Typ vor der Verwendung zwar deklarieren, bei diesem Feature wird die Klasse bzw. der Typ jedoch automatisch generiert.
 
@@ -74,7 +74,7 @@ Diese Codegenerierung gilt für:
    --- | ---
    Zugriff | Legen Sie den Zugriffstyp auf *Standard*, *Intern* oder *Öffentlich* fest.
    Art | Dieses Element kann auf *Klasse* oder *Struktur* festgelegt werden.
-   name | Dies ist der Name, den Sie bereits eingegeben haben, und kann nicht geändert werden.
+   Name | Dies ist der Name, den Sie bereits eingegeben haben, und kann nicht geändert werden.
    Projekt | Wenn mehrere Projekte in Ihrer Projektmappe vorhanden sind, können Sie festlegen, in welchem Projekt die Klasse bzw. Struktur verwendet werden soll.
    Dateiname | Sie können eine neue Datei erstellen oder den Typ zu einer vorhandenen Datei hinzufügen.
 
@@ -88,7 +88,7 @@ Die Klasse oder die Struktur wird erstellt. Für C# wird auch ein Konstruktor er
 
    ![Ergebnis der Generierung einer Klasse in Visual Basic](media/class-result-vb.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

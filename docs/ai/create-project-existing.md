@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0981a276a21e1b3f816c6a182df29f1c4adb0d1c
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72777446"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Erstellen eines KI-Projekts aus vorhandenem Code
@@ -40,6 +40,6 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 > [!div class="nextstepaction"]
 > [Tutorial: Arbeiten mit Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Manuelles Identifizieren einer vorhandenen Python-Umgebung](../python/managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

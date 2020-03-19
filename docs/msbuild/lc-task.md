@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633602"
 ---
 # <a name="lc-task"></a>LC-Aufgabe
@@ -35,7 +35,7 @@ In der folgenden Tabelle werden die Parameter für die `LC`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`LicenseTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die ausführbare Datei an, für die die *LICENSES*-Dateien generiert werden.|
+|`LicenseTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt die ausführbare Datei an, für die die *LICENSES*-Dateien generiert werden.|
 |`NoLogo`|Optionaler `Boolean`-Parameter.<br /><br /> Unterdrückt die Anzeige des Startbanners von Microsoft.|
 |`OutputDirectory`|Optionaler `String`-Parameter.<br /><br /> Gibt das Verzeichnis an, in dem die *LICENSES*-Ausgabedateien gespeichert werden sollen.|
 |`OutputLicense`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Ausgabeparameter.<br /><br /> Gibt den Namen der *LICENSES*-Datei an. Wenn Sie keinen Namen angeben, wird der Name der *LICX*-Datei verwendet, und die *LICENSES*-Datei wird in dem Verzeichnis gespeichert, das die *LICX*-Datei enthält.|
@@ -69,7 +69,7 @@ Im folgenden Beispiel wird die `LC`-Aufgabe zum Kompilieren von Lizenzen verwend
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

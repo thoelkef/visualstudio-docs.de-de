@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2066959578987e358f8c1c91dcbda1eeb6f79f26
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773596"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Aufrufstrukturansicht: Instrumentierungsdaten des .NET-Arbeitsspeichers
@@ -24,7 +24,7 @@ Die Aufrufstrukturansicht von .NET-Profilerstellungsdaten zur Speicherreservieru
  Die Werte in der Aufrufstrukturansicht beziehen sich auf die Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurden. Prozentwerte werden berechnet, indem der Funktionsinstanzwert mit der Gesamtanzahl oder Größe der Zuordnungen bei der Profilerstellung verglichen wird.
 
 ## <a name="highlight-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads
- Die Aufrufstrukturansicht kann erweitert werden und den Ausführungspfad des Prozesses oder der Funktion hervorheben, für die die größten oder meisten Arbeitsspeicherobjekte erstellt wurden. Klicken Sie mit der rechten Maustaste auf den Prozess oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den Pfad mit der höchsten Aktivität anzuzeigen.
+ Die Aufrufstrukturansicht kann erweitert werden und den Ausführungspfad des Prozesses oder der Funktion hervorheben, für die die größten oder meisten Arbeitsspeicherobjekte erstellt wurden. Klicken Sie mit der rechten Maustaste auf den Prozess oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den aktivsten Pfad anzuzeigen.
 
 ## <a name="set-the-call-tree-root-node"></a>Festlegen des Stammknotens der Aufrufstruktur
  Jeder Prozess in der Profilerstellung wird als Stammknoten angezeigt. Sie können den Startknoten der Aufrufstrukturansicht festlegen, indem Sie mit der rechten Maustaste auf den Knoten klicken, der als Startknoten festgelegt werden soll, und dann auf **Stamm festlegen** klicken.
@@ -33,7 +33,7 @@ Die Aufrufstrukturansicht von .NET-Profilerstellungsdaten zur Speicherreservieru
 
 ## <a name="general"></a>Allgemein
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Funktionsname**|Der Name der Funktion.|
 |**Funktionsadresse**|Die Adresse der Funktion.|
@@ -46,7 +46,7 @@ Die Aufrufstrukturansicht von .NET-Profilerstellungsdaten zur Speicherreservieru
 |**Prozessname**|Der Name, der dem Prozess zugewiesen ist.|
 |**Exklusive Zeit der Restkapazität für Überprüfungen**|Der von der Instrumentierung verursachte zusätzliche Zeitaufwand für diese Funktion. Der zusätzliche Testaufwand wurde von allen exklusiven Zeiten subtrahiert.|
 |**Inklusive Zeit der Restkapazität für Überprüfungen**|Der von der Instrumentierung verursachte zusätzliche Zeitaufwand für diese Funktion und ihre untergeordneten Funktionen. Der zusätzliche Testaufwand wurde von allen inklusiven Zeiten subtrahiert.|
-|**Type**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|
+|**Typ**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|
 |**Name der Stammfunktion**|Der Name der aktuellen Funktion. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|
 
 ## <a name="net-memory-values"></a>.NET-Arbeitsspeicherwerte
@@ -54,31 +54,31 @@ Die Aufrufstrukturansicht von .NET-Profilerstellungsdaten zur Speicherreservieru
 
  Die exklusiven Arbeitsspeicherwerte geben die Anzahl und die Größe der Objekte an, die durch Code im Funktionsrumpf, nicht jedoch von den Funktionen erstellt wurden, die von der Funktion aufgerufen wurden.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Inklusive Speicherbelegungen**|Die Anzahl von Objekten, die von den Instanzen dieser Funktion zugeordnet wurden, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurden. Diese Zahl beinhaltet Zuordnungen, die von untergeordneten Funktion erstellt wurden.|
-|**Inklusive Speicherbelegungen in %**|Der Anteil aller Objekte, die bei der Profilerstellung erstellt wurden und vollständige Zuordnungen der Funktionsinstanzen beinhalten, die von der übergeordneten Funktion in der Aufrufansicht aufgerufen wurden.|
+|**Inklusive Zuordnungen in %**|Der Anteil aller Objekte, die bei der Profilerstellung erstellt wurden und vollständige Zuordnungen der Funktionsinstanzen beinhalten, die von der übergeordneten Funktion in der Aufrufansicht aufgerufen wurden.|
 |**Exklusive Speicherbelegungen**|Die Anzahl von Objekten, die von den Instanzen dieser Funktion zugeordnet wurden, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurden. Diese Zahl beinhaltet keine Zuordnungen, die von untergeordneten Funktionen erstellt wurden.|
 |**Exklusive Zuordnungen %**|Der Anteil aller Objekte, die bei der Profilerstellung erstellt wurden und keine Zuordnungen der Funktionsinstanzen beinhalten, die von der übergeordneten Funktion in der Aufrufansicht aufgerufen wurden.|
 
 ## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die von den Funktionen, die von der Funktion aufgerufen wurden, beanspruchte Zeit und die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**verstrichene inklusive Zeit**|Die insgesamt bei den Aufrufen dieser Funktion verstrichene inklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
-|**verstrichene inklusive Zeit %**|Der Anteil der gesamten bei der Profilerstellung verstrichenen inklusiven Zeit, die innerhalb der gesamten verstrichenen inklusiven Zeit dieser Funktion aufgewendet wurde, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
+|**Verstrichene inklusive Zeit**|Die insgesamt bei den Aufrufen dieser Funktion verstrichene inklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
+|**Verstrichene inklusive Zeit %**|Der Anteil der gesamten bei der Profilerstellung verstrichenen inklusiven Zeit, die innerhalb der gesamten verstrichenen inklusiven Zeit dieser Funktion aufgewendet wurde, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Durchschnittliche verstrichene inklusive Zeit**|Die durchschnittlich bei den Aufrufen dieser Funktion verstrichene inklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Maximal verstrichene inklusive Zeit**|Die maximal bei den Aufrufen dieser Funktion verstrichene inklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Mindestens verstrichene inklusive Zeit**|Die mindestens bei den Aufrufen dieser Funktion verstrichene inklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 
 ## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit
- Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Die Zeit beinhaltet die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Dies umfasst nicht die Zeit, die in von der Funktion aufgerufenen Funktionen aufgewendet wurde.
+ Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle in der Aufrufliste ausgeführt wurde. Die Zeit beinhaltet die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Dies umfasst nicht die Zeit, die in von der Funktion aufgerufenen Funktionen aufgewendet wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**verstrichene exklusive Zeit**|Die insgesamt bei den Aufrufen dieser Funktion verstrichene exklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
-|**verstrichene exklusive Zeit %**|Der Anteil der insgesamt bei der Profilerstellung verstrichenen exklusiven Zeit, die innerhalb der gesamten verstrichenen exklusiven Zeit dieser Funktion aufgewendet wurde, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
+|**Verstrichene exklusive Zeit**|Die insgesamt bei den Aufrufen dieser Funktion verstrichene exklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
+|**Verstrichene exklusive Zeit %**|Der Anteil der insgesamt bei der Profilerstellung verstrichenen exklusiven Zeit, die innerhalb der gesamten verstrichenen exklusiven Zeit dieser Funktion aufgewendet wurde, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Durchschnittlich verstrichene exklusive Zeit**|Die durchschnittlich bei den Aufrufen dieser Funktion verstrichene exklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Maximal verstrichene exklusive Zeit**|Die maximal bei den Aufrufen dieser Funktion verstrichene exklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Mindestens verstrichene exklusive Zeit**|Die mindestens bei den Aufrufen dieser Funktion verstrichene exklusive Zeit, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
@@ -86,10 +86,10 @@ Die Aufrufstrukturansicht von .NET-Profilerstellungsdaten zur Speicherreservieru
 ## <a name="application-inclusive-values"></a>Werte für inklusive Anwendungszeit
  Werte für die inklusive Anwendungszeit geben die Zeit an, die sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Die Zeit umfasst nicht die Zeit, die in von der Funktion aufgerufenen untergeordneten Funktionen aufgewendet wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**inklusive Anwendungszeit**|Die gesamte inklusive Anwendungszeit aller Aufrufe dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
-|**inklusive Anwendungszeit %**|Der Anteil der insgesamt bei der Profilerstellung verstrichenen inklusiven Zeit, die innerhalb der inklusiven Gesamtanwendungszeit dieser Funktion in diesem Kontext aufgewendet wurde, als die Funktion in der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
+|**Inklusive Anwendungszeit**|Die gesamte inklusive Anwendungszeit aller Aufrufe dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
+|**Inklusive Anwendungszeit %**|Der Anteil der insgesamt bei der Profilerstellung verstrichenen inklusiven Zeit, die innerhalb der inklusiven Gesamtanwendungszeit dieser Funktion in diesem Kontext aufgewendet wurde, als die Funktion in der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Durchschnittliche inklusive Anwendungszeit**|Die durchschnittliche inklusive Anwendungszeit eines Aufrufs dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Maximale inklusive Anwendungszeit**|Die maximale inklusive Anwendungszeit eines Aufrufs dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Minimale inklusive Anwendungszeit**|Die minimale inklusive Anwendungszeit eines Aufrufs dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
@@ -97,9 +97,9 @@ Die Aufrufstrukturansicht von .NET-Profilerstellungsdaten zur Speicherreservieru
 ## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit
  Werte für die exklusive Anwendungszeit geben die Zeit an, die für die Funktion aufgewendet wurde, jedoch ohne die Zeit, die für untergeordnete Funktionen aufgewendet wurde, die von der Funktion aufgerufen wurden. Die Zeit schließt außerdem Aufrufe des Betriebssystems aus (z. B. Kontextwechsel oder Eingabe-/Ausgabevorgänge).
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**exklusive Anwendungszeit**|Die exklusive Gesamtanwendungszeit aller Aufrufe dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
+|**Exklusive Anwendungszeit**|Die exklusive Gesamtanwendungszeit aller Aufrufe dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**exklusive Anwendungszeit %**|Der Anteil der insgesamt bei der Profilerstellung verstrichenen exklusiven Zeit, die innerhalb der exklusiven Gesamtanwendungszeit dieser Funktion aufgewendet wurde, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Durchschnittliche exklusive Anwendungszeit**|Die durchschnittliche exklusive Anwendungszeit eines Aufrufs dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|
 |**Maximale exklusive Anwendungszeit**|Die maximale exklusive Anwendungszeit eines Aufrufs dieser Funktion, als diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|

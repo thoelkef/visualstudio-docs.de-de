@@ -9,10 +9,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585534"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Verwenden von Shims zum Isolieren der Anwendung für Unittests
@@ -23,7 +23,7 @@ Verwenden Sie *Shims*, um Ihren Code von Assemblys zu isolieren, die nicht Teil 
 
 Eine Übersicht und eine Schnellstartanleitung finden Sie unter [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Anforderungen**
+**Voraussetzungen**
 
 - Visual Studio Enterprise
 - Ein .NET Framework-Projekt
@@ -92,7 +92,7 @@ Es ist wichtig, jeden Shimkontext ordnungsgemäß zu löschen. Als Faustregel gi
 
 ### <a name="write-a-test-with-shims"></a>Einen Test mit Shims schreiben
 
-Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Zum Beispiel:
+Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Beispiel:
 
 ```csharp
 [TestClass]
@@ -446,7 +446,7 @@ ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
 
 ## <a name="detect-environment-accesses"></a>Erkennen von Umgebungszugriffen
 
-Es ist möglich, ein Verhalten an alle Member (einschließlich statische Methoden) eines bestimmten Typs anzufügen, indem der statischen `Behavior`-Eigenschaft des entsprechenden Shimtyps das `ShimsBehaviors.NotImplemented`-Verhalten zugewiesen wird:
+Es ist möglich, ein Verhalten an alle Member (einschließlich statische Methoden) eines bestimmten Typs anzufügen, indem der statischen `ShimsBehaviors.NotImplemented`-Eigenschaft des entsprechenden Shimtyps das `Behavior`-Verhalten zugewiesen wird:
 
 ```csharp
 // unit test code
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Fügen Sie den folgenden Inhalt in die Datei „mscorlib.fakes“ nach dem **Assembly**-Element ein, um einen Shim für <xref:System.Environment?displayProperty=fullName> zu erstellen:
+Fügen Sie den folgenden Inhalt in die Datei „mscorlib.fakes“ nach dem <xref:System.Environment?displayProperty=fullName>Assembly **-Element ein, um einen Shim für**  zu erstellen:
 
 ```xml
 <ShimGeneration>
@@ -521,8 +521,8 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 Shims können nicht für alle Typen in der .NET-Basisklassenbibliothek **mscorlib** und **System** verwendet werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost's blog: Visual Studio 2012 shims (Blog von Peter Provost: Shims in Visual Studio 2012)](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Peter Provost’s blog: Visual Studio 2012 Shims (Peter Provosts Blog: Visual Studio 2012-Shims)](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
 - [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012 (Testen von nicht-testbarem Code mithilfe von Fakes in Visual Studio 2012)](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

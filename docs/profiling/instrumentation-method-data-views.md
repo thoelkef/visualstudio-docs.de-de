@@ -13,21 +13,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774162"
 ---
 # <a name="instrumentation-method-data-views"></a>Instrumentierungsmethoden-Datenansichten
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Instrumentierungsmethode generiert werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Zusammenfassungsansicht](../profiling/summary-view-instrumentation-data.md)
+- [Summary View (Zusammenfassungsansicht)](../profiling/summary-view-instrumentation-data.md)
 
  Führt die Funktionen auf, die die meiste Zeit in Anspruch genommen bzw. die meiste individuelle Arbeit ausgeführt haben.
 
-- [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)
+- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view-instrumentation-data.md)
 
  Zeigt die Ausführungspfade von Funktionen in einer hierarchischen Struktur an.
 
@@ -43,7 +43,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Führt Profilerstellungsdaten nach Funktion auf.
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
 - [Funktionsdetailansicht](../profiling/function-details-view.md)
 
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.
@@ -65,5 +65,5 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Threadkonfliktmethode generiert wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)

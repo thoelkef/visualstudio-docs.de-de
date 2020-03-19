@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113424"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Verwalten von Indikatorensätzen mithilfe des Auslastungstest-Editors
@@ -60,7 +60,7 @@ Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die 
 
 6. Klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
 - [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

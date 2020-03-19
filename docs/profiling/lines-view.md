@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773980"
 ---
 # <a name="lines-view"></a>Zeilenansicht
@@ -43,7 +43,7 @@ Die Zeilenansicht ist nur für Profilerdaten verfügbar, die mit der Samplingmet
 
 - Das Zeichen in der Quellzeile, an dem die Anweisung endet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zeilenansicht](../profiling/lines-view-sampling-data.md)
 - [Zeilenansicht: Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Zeilenansicht](../profiling/lines-view-contention-data.md)

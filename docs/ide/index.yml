@@ -1,80 +1,74 @@
 ### YamlMime:Landing
 title: Dokumentation zur Visual Studio-IDE
-summary: Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um eine funktionsreiche Anwendung, die für viele Aspekte der Softwareentwicklung verwendet werden kann. Die Visual Studio-IDE erleichtert das Bearbeiten, Debuggen, Erstellen und Veröffentlichen Ihrer App.
+summary: 'Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um eine funktionsreiche Anwendung, die für viele Aspekte der Softwareentwicklung verwendet werden kann. Die Visual Studio-IDE erleichtert das Bearbeiten, Debuggen, Erstellen und Veröffentlichen Ihrer App.'
 metadata:
   title: Dokumentation zur Visual Studio-IDE
   titleSuffix: ''
-  description: Navigieren Sie zu verschiedenen Seiten, die Ihnen helfen, sich mit der interaktiven Entwicklungsumgebung von Visual Studio vertraut zu machen.
+  description: 'Navigieren Sie zu verschiedenen Seiten, die Ihnen helfen, sich mit der interaktiven Entwicklungsumgebung von Visual Studio vertraut zu machen.'
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
   author: jillre
   ms.author: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
-  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
-  ms.translationtype: HT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/22/2019
-  ms.locfileid: "74316422"
 landingContent:
-- title: Erste Schritte
-  linkLists:
-  - linkListType: download
-    links:
-    - text: Herunterladen von Visual Studio
-      url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
-  - linkListType: get-started
-    links:
-    - text: Installieren von Visual Studio
-      url: ../install/install-visual-studio.md
-  - linkListType: overview
-    links:
-    - text: Übersicht über Visual Studio
-      url: ../get-started/visual-studio-ide.md
-- title: Verwenden von Visual Studio
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Verwenden des Code-Editors
-      url: ../get-started/tutorial-editor.md
-    - text: Kompilieren und Erstellen
-      url: ../ide/compiling-and-building-in-visual-studio.md
-    - text: Debuggen von Code
-      url: ../debugger/debugger-feature-tour.md
-    - text: Schreiben von Tests
-      url: ../test/getting-started-with-unit-testing.md
-    - text: Analysieren der Codequalität
-      url: ../code-quality/roslyn-analyzers-overview.md
-    - text: Veröffentlichen einer Website
-      url: ../deployment/quickstart-deploy-to-a-web-site.md
-    - text: Zugriff auf Daten
-      url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
-    - text: Personalisieren der IDE
-      url: ../ide/quickstart-personalize-the-ide.md
-    - text: Features zur Steigerung der Produktivität
-      url: ../ide/productivity-features.md
-- title: Entwickeln in Ihrer Sprache
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: C#
-      url: ../get-started/csharp/tutorial-console.md
-    - text: C++
-      url: /cpp/get-started/tutorial-console-cpp
-    - text: Visual Basic
-      url: ../get-started/visual-basic/tutorial-console.md
-    - text: Python
-      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - text: JavaScript
-      url: /visualstudio/javascript/tutorial-nodejs
-    - text: F#
-      url: /dotnet/fsharp/get-started/get-started-visual-studio
-- title: Entdecken Sie die neuesten Features
-  linkLists:
-  - linkListType: whats-new
-    links:
-    - text: Neues in Visual Studio 2019
-      url: ../ide/whats-new-visual-studio-2019.md
-    - text: Neues in Visual Studio 2017
-      url: ../ide/whats-new-visual-studio-2017.md
+  - title: Erste Schritte
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Herunterladen von Visual Studio
+            url: 'https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019'
+      - linkListType: get-started
+        links:
+          - text: Installieren von Visual Studio
+            url: ../install/install-visual-studio.md
+      - linkListType: overview
+        links:
+          - text: Übersicht über Visual Studio
+            url: ../get-started/visual-studio-ide.md
+  - title: Verwenden von Visual Studio
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Codeeditor verwenden
+            url: ../get-started/tutorial-editor.md
+          - text: Kompilieren und Erstellen
+            url: ../ide/compiling-and-building-in-visual-studio.md
+          - text: Debuggen von Code
+            url: ../debugger/debugger-feature-tour.md
+          - text: Schreiben von Tests
+            url: ../test/getting-started-with-unit-testing.md
+          - text: Analysieren der Codequalität
+            url: ../code-quality/roslyn-analyzers-overview.md
+          - text: Veröffentlichen einer Website
+            url: ../deployment/quickstart-deploy-to-a-web-site.md
+          - text: Zugreifen auf Daten
+            url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
+          - text: Personalisieren der IDE
+            url: ../ide/quickstart-personalize-the-ide.md
+          - text: Features zur Steigerung der Produktivität
+            url: ../ide/productivity-features.md
+  - title: Entwickeln in Ihrer Sprache
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 'C#'
+            url: ../get-started/csharp/tutorial-console.md
+          - text: C++
+            url: /cpp/get-started/tutorial-console-cpp
+          - text: Visual Basic
+            url: ../get-started/visual-basic/tutorial-console.md
+          - text: Python
+            url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+          - text: JavaScript
+            url: /visualstudio/javascript/tutorial-nodejs
+          - text: 'F#'
+            url: /dotnet/fsharp/get-started/get-started-visual-studio
+  - title: Entdecken Sie die neuesten Features
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Neues in Visual Studio 2019
+            url: ../ide/whats-new-visual-studio-2019.md
+          - text: Neues in Visual Studio 2017
+            url: ../ide/whats-new-visual-studio-2017.md

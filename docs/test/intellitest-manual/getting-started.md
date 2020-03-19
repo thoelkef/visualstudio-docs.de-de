@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 113233c985053cfe838f385a36ec59cc211bfcb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591657"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Erste Schritte mit Microsoft IntelliTest
@@ -72,6 +72,6 @@ void StaticHelpers(Foo target) {
 }
 ```
 
-## <a name="got-feedback"></a>Sie möchten Feedback geben?
+## <a name="got-feedback"></a>Sie haben Fragen oder Anmerkungen?
 
 Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778465"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
@@ -74,6 +74,6 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
 ## <a name="generate-a-report-of-the-results"></a>Erstellen eines Berichts mit den Ergebnissen
  Sie können die Zeilen jeder Leistungsberichtansicht in E-Mails und Kalkulationstabellen einfügen, und Sie können Berichte erstellen, die Daten für eine oder mehrere Ansichten enthalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersichten](../profiling/overviews-performance-tools.md)
 - [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](beginners-guide-to-cpu-sampling.md)

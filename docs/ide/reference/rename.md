@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565460"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring des Umbenennens eines Codesymbols
@@ -27,11 +27,11 @@ Dieses Refactoring gilt für:
 
 - Visual Basic
 
-**Beschreibung:** Hiermit können Sie Bezeichner für Codesymbole (z. B. Felder, lokale Variablen, Methoden, Namespaces, Eigenschaften und Typen) umbenennen.
+**Beschreibung**: Hiermit können Sie Bezeichner für Codesymbole (z.B. Felder, lokale Variablen, Methoden, Namespaces, Eigenschaften und Typen) umbenennen.
 
-**Hintergrund:** Sie möchten ein Element sicher umbenennen, ohne alle Instanzen suchen und den neuen Namen kopieren und einfügen zu müssen.
+**Hintergrund**: Sie möchten ein Element sicher umbenennen, ohne alle Instanzen suchen und den neuen Namen kopieren und einfügen zu müssen.
 
-**Vorteile**: Das Kopieren und Einfügen des neuen Namens in ein ganzes Projekt würde wahrscheinlich zu Fehlern führen. Dieses Refactoringtool führt die Umbenennungsaktion ordnungsgemäß durch.
+**Vorteile**: Das Kopieren und Einfügen des neuen Namens in ein ganzes Projekt würde aller Wahrscheinlichkeit nach zu Fehlern führen. Dieses Refactoringtool führt die Umbenennungsaktion ordnungsgemäß durch.
 
 ## <a name="how-to"></a>Vorgehensweise
 
@@ -68,7 +68,7 @@ Dieses Refactoring gilt für:
 
 4. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Wenn Sie ab Visual Studio 2019 Version 16.3 einen Typ umbenennen, der mit dem Namen der Datei übereinstimmt, in der er sich befindet, wird ein Kontrollkästchen angezeigt, mit dem Sie die Datei zur gleichen Zeit umbenennen können. Diese Option wird angezeigt, wenn Sie eine Klasse, eine Schnittstelle oder eine Enumeration umbenennen. Diese Option wird für partielle Typen mit mehreren Definitionen nicht unterstützt.
 
@@ -80,7 +80,7 @@ Dieses Refactoring gilt für:
 
 - Eine andere Möglichkeit zum Umbenennen eines Symbols besteht darin, den Namen des Symbols im Editor zu ändern. Wenn sich der Cursor auf dem Symbolnamen befindet, drücken Sie **STRG**+ **.** Alternativ dazu können Sie auch einfach das Menü mit dem Glühbirnensymbol erweitern, und **Umbenennen von \<alter Name> zu \<neuer Name>** auswählen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

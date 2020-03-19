@@ -15,10 +15,10 @@ ms.workload:
 - uwp
 monikerRange: vs-2017
 ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73144735"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analysieren des Energieverbrauchs in UWP-Apps
@@ -104,7 +104,7 @@ if (performance && performance.mark) {
 
      ![Datensammlung beenden](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
-     Visual Studio analysiert die gesammelten Daten und zeigt die Ergebnisse an.
+     Visual Studio analysiert die erfassten Daten und zeigt die Ergebnisse an.
 
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>Sammeln von Energieprofildaten für eine installierte App
  Das Energieverbrauchstool kann nur für UWP-Apps ausgeführt werden, die von einer Visual Studio-Projektmappe gestartet oder vom Microsoft Store installiert werden. Wenn eine Projektmappe in Visual Studio geöffnet ist, lautet das Standardziel **Startprojekt**. So verwenden Sie eine installierte App als Ziel
@@ -156,7 +156,7 @@ if (performance && performance.mark) {
 
 - Mit den Tools für die **CPU-Auslastung** können Sie die CPU-Last reduzieren, wenn diese von ineffizienten Funktionen verursacht wird. Weitere Informationen finden Sie unter [Profilerstellung für die Anwendungsleistung in Visual Studio](../profiling/beginners-guide-to-performance-profiling.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

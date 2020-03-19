@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585521"
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
@@ -30,7 +30,7 @@ Die Abschnitte in diesem Thema enthalten einige der häufig vorkommenden **Schne
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Richtige falsch geschriebenes Symbol oder Schlüsselwort
 
-Wenn Sie versehentlich einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion diesen Fehler für Sie. Diese Elemente werden im Fehlerbehebungsmenü als **„Change '\<misspelled word>' to '\<correct word>'“** („'<Falsch geschriebenes Wort>' in '<richtiges Wort>' ändern“) angezeigt. Zum Beispiel:
+Wenn Sie versehentlich einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion diesen Fehler für Sie. Diese Elemente werden im Fehlerbehebungsmenü als **„Change '\<misspelled word>' to '\<correct word>'“** („'<Falsch geschriebenes Wort>' in '<richtiges Wort>' ändern“) angezeigt. Beispiel:
 
 ```csharp
 // Before
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# und Visual Basic | Visual Studio 2017 und höher |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnelle Aktionen](../ide/quick-actions.md)

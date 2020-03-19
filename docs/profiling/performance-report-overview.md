@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772231"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
@@ -94,6 +94,6 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
 
 - **Exportieren**: speichert den aktuellen Bericht im CVS-Format oder als XML-formatierte Datei mit Optionen, die verschiedenen Ansichten zu speichern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
 - [Leistungsberichtansichten](../profiling/performance-report-views.md)

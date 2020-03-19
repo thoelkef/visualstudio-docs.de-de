@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778478"
 ---
 # <a name="performance-explorer"></a>Leistungs-Explorer
@@ -32,11 +32,11 @@ Um weitere Informationen zu aktuellen und weiterführenden Themen in Bezug auf L
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Techniken für Windows 8 und höher**|[Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
 |**Verständnis der Profilerstellungskonzepte:** Informationen zu den Konzepten und Begriffen, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden.|[Übersichten](../profiling/overviews-performance-tools.md)|
-|**Erste Schritte:** Informationen zu den grundlegenden Prozeduren, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden. Probieren Sie es mit einer praktischen exemplarischen Vorgehensweise aus.|[Erste Schritte](../profiling/getting-started-with-performance-tools.md)|
+|**Erste Schritte:** Informationen zu den grundlegenden Vorgehensweisen, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden. Probieren Sie es mit einer praktischen exemplarischen Vorgehensweise aus.|[Erste Schritte](../profiling/getting-started-with-performance-tools.md)|
 |**Konfigurieren einer Profilerstellungssitzung:** Informationen zu komplexeren Verfahren zum Angeben der Projekte oder Binärdateien für die Profilerstellung, zum Auswählen einer Profilerstellungsmethode, zum Auswählen der zu sammelnden Leistungsdaten und zum Festlegen anderer Optionen für die Profilerstellungssitzung.|[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)|
 |**Steuern der Daten, die vom Profiler gesammelt werden:** Informationen zum Verwenden der Leistungssitzungseigenschaften und interaktiven Verfahren zum Starten und Beenden der Profilerstellung und zum Beschränken der gesammelten Leistungsdaten auf die gewünschten Informationen.|[Steuerung der Datensammlung](../profiling/controlling-data-collection.md)|
 |**Ermitteln von Leistungsproblemen:** Informationen zum Anzeigen und Analysieren der gesammelten Leistungsdaten im Berichtsansichtsfenster der Profilerstellungstools.|[Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)|
@@ -46,6 +46,6 @@ Um weitere Informationen zu aktuellen und weiterführenden Themen in Bezug auf L
 |**Programmgesteuertes Steuern der Profilerstellung:** Informationen zum Verwenden der verwalteten und nativen APIs der Profilerstellungstools zur direkten Steuerung der Datensammlung im Quellcode.|[APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md)|
 |**Problembehandlung bei der Profilerstellung**|[Problembehandlung bei Leistungstools](../profiling/troubleshooting-performance-tools-issues.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

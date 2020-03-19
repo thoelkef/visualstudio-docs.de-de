@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634408"
 ---
 # <a name="compare-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
@@ -71,7 +71,7 @@ MSBuild führt nach Bedarf Konvertierungen von und nach Elementtypen und Zeichen
 </PropertyGroup>
 ```
 
-Der Elementtyp OutputDir hat ein `Include`-Attribut mit dem Wert „KeyFiles\\;Certificates\\“. MSBuild analysiert diese Zeichenfolge, und es resultieren die beiden Elemente: KeyFiles\ und Certificates\\. Wenn der Elementtyp OutputDir als Wert der Eigenschaft OutputDirList verwendet wird, konvertiert („vereinfacht“) MSBuild den Elementtyp in die durch Semikolons getrennte Zeichenfolge „KeyFiles\\;Certificates\\“.
+Der Elementtyp OutputDir hat ein `Include`-Attribut mit dem Wert „KeyFiles\\;Certificates\\“. MSBuild analysiert diese Zeichenfolge, und es resultieren die beiden Elemente KeyFiles\ und Certificates\\. Wenn der Elementtyp OutputDir als Wert der Eigenschaft OutputDirList verwendet wird, konvertiert („vereinfacht“) MSBuild den Elementtyp in die durch Semikolons getrennte Zeichenfolge „KeyFiles\\;Certificates\\“.
 
 ## <a name="properties-and-items-in-tasks"></a>Eigenschaften und Elemente in Aufgaben
 
@@ -185,6 +185,6 @@ Der Wert von `KeyFileVersion` wird auf „1.0.0.3“ und nicht auf „\@(Schlüs
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Sammeln von Leistungsdaten für eine Website | Microsoft-Dokumentation'
+title: 'Gewusst wie: Sammeln von Leistungsdaten für eine Website | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74779037"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307184"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 
@@ -100,7 +100,7 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
 
      Der Profiler generiert die Datendatei und zeigt die Zusammenfassungsansicht der Daten im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hauptfenster.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)

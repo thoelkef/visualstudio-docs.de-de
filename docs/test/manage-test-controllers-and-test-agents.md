@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584412"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
@@ -43,7 +43,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
 
 2. Ihnen werden zwei Optionen für die Ausführung des Test-Agents angezeigt:
 
-   - **Dienst:** Wenn Sie keine automatisierten Tests ausführen müssen, die mit dem Desktop interagieren (z. B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie unter **Test-Agent ausführen als** die Option **Dienst** aus. Der Test-Agent wird als Dienst gestartet. Wählen Sie **Weiter** aus.
+   - **Dienst:** Wenn Sie keine automatisierten Tests ausführen müssen, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie unter **Test-Agent ausführen als** die Option **Dienst** aus. Der Test-Agent wird als Dienst gestartet. Wählen Sie **Weiter** aus.
 
       Wenn der Test-Agent als Dienst gestartet wird, können Sie jetzt die Details zum Benutzer eingeben.
 
@@ -58,7 +58,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
         |– Wenn der Agent-Benutzername nicht im Agent-Dienst vorhanden ist, wird er hinzugefügt. Dafür sind Berechtigungen für den Testcontroller erforderlich.|
         |– Der Benutzer, der den Testcontroller verwenden möchte, muss im Benutzerkonto des Testcontrollers angemeldet sein. Andernfalls können die Tests nicht anhand des Controllers ausgeführt werden.|
 
-   - **Interaktiver Prozess:** Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren (z. B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie **Interaktiver Prozess** aus. Der Test-Agent wird nicht als Dienst, sondern als interaktiver Prozess gestartet.
+   - **Interaktiver Prozess:** Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie **Interaktiver Prozess** aus. Der Test-Agent wird nicht als Dienst, sondern als interaktiver Prozess gestartet.
 
       Wenn der Test-Agent als Prozess gestartet wird, können Sie auf der nächsten Seite die Details zum Benutzer eingeben und weitere Optionen festlegen.
 
@@ -143,8 +143,8 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 |Test-Agent-Eigenschaft|Beschreibung|
 |-|-----------------|
 |**Gewichtung**|Wird bei Verwendung von Test-Agents mit unterschiedlicher Leistungsfähigkeit zum Verteilen der Last verwendet. Ein Test-Agent mit einer Gewichtung von 100 erhält beispielsweise doppelt so viel Last wie ein Test-Agent mit einer Gewichtung von 50.|
-|**IP-Wechsel**|Wird zum Konfigurieren des IP-Wechsels verwendet. Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert.<br /><br /> IP-Wechsel ist wichtig, wenn der Auslastungstest auf eine Webfarm zugreift. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver über die IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, stellen Sie sicher, dass die Anfragen von mehreren IP-Adressen kommen. **Hinweis**:  Sie können entweder einen Netzwerkadapter angeben oder **(Keine zugewiesen)** verwenden, um automatisch einen derzeit nicht verwendeten Adapter auszuwählen. <br /><br /> Sie können die IP-Wechselfunktion nur verwenden, wenn der Visual Studio Test Agent-Dienst als Benutzer in der Administratorengruppe für diesen Agent-Computer ausgeführt wird. Dieser Benutzername wird während des Agent-Setups ausgewählt, kann jedoch durch Ändern der Diensteigenschaften und erneutes Starten des Diensts geändert werden.<br /><br /> Wenn Sie die ordnungsgemäße Funktion des IP-Wechsels überprüfen möchten, aktivieren Sie die IIS-Protokollierung auf dem Webserver, und überprüfen Sie mit der IIS-Protokollfunktion, ob die Anforderungen von den konfigurierten IP-Adressen kommen.|
-|**Attribute**|Satz von Name-Wert-Paaren, die bei der Auswahl von Test-Agents verwendet werden können. Beispielsweise könnte ein Test ein bestimmtes Betriebssystem (OS) erfordern. Sie können Attribute auf der Registerkarte **Rollen** der Testeinstellungsdatei hinzufügen und sie verwenden, um einen Test-Agent auswählen, der über entsprechenden Attribute verfügt. Wenn Sie einen Test auf mehreren Computern ausführen möchten, erstellen Sie ein Attribut in der Testeinstellungsrolle, die konfiguriert wird, um die Tests auszuführen, und konfigurieren Sie anschließend ein entsprechendes Attribut für jeden Test-Agent, den Sie in dieser Rolle verwendet möchten. **Hinweis**:  Diese Einstellung ist nur für Test-Agents verfügbar, die bei einem Testcontroller registriert wurden, der bei keinem Projekt registriert ist, da diese Attribute nur in Testeinstellungen für Visual Studio verwendet werden.|
+|**IP-Wechsel**|Wird zum Konfigurieren des IP-Wechsels verwendet. Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert.<br /><br /> IP-Wechsel ist wichtig, wenn der Auslastungstest auf eine Webfarm zugreift. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver über die IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, stellen Sie sicher, dass die Anfragen von mehreren IP-Adressen kommen. **Hinweis:** Sie können entweder einen Netzwerkadapter angeben oder **(Keine zugewiesen)** verwenden, um automatisch einen derzeit nicht verwendeten Adapter auszuwählen. <br /><br /> Sie können die IP-Wechselfunktion nur verwenden, wenn der Visual Studio Test Agent-Dienst als Benutzer in der Administratorengruppe für diesen Agent-Computer ausgeführt wird. Dieser Benutzername wird während des Agent-Setups ausgewählt, kann jedoch durch Ändern der Diensteigenschaften und erneutes Starten des Diensts geändert werden.<br /><br /> Wenn Sie die ordnungsgemäße Funktion des IP-Wechsels überprüfen möchten, aktivieren Sie die IIS-Protokollierung auf dem Webserver, und überprüfen Sie mit der IIS-Protokollfunktion, ob die Anforderungen von den konfigurierten IP-Adressen kommen.|
+|**Attribute**|Satz von Name-Wert-Paaren, die bei der Auswahl von Test-Agents verwendet werden können. Beispielsweise könnte ein Test ein bestimmtes Betriebssystem (OS) erfordern. Sie können Attribute auf der Registerkarte **Rollen** der Testeinstellungsdatei hinzufügen und sie verwenden, um einen Test-Agent auswählen, der über entsprechenden Attribute verfügt. Wenn Sie einen Test auf mehreren Computern ausführen möchten, erstellen Sie ein Attribut in der Testeinstellungsrolle, die konfiguriert wird, um die Tests auszuführen, und konfigurieren Sie anschließend ein entsprechendes Attribut für jeden Test-Agent, den Sie in dieser Rolle verwendet möchten. **Hinweis:** Diese Einstellung ist nur für Test-Agents verfügbar, die bei einem Testcontroller registriert wurden, der bei keinem Projekt registriert ist, da diese Attribute nur in Testeinstellungen für Visual Studio verwendet werden.|
 
 Änderungen der Test-Agent-Gewichtung und der Test-Agent-Attribute werden sofort wirksam, haben jedoch keine Auswirkungen auf laufende Tests. Änderungen des IP-Adressbereichs werden nach einem Neustart des Testcontrollers wirksam.
 
@@ -218,6 +218,6 @@ Aktivieren Sie die verzögert signierte Überprüfung nach dem Testlauf mit dem 
 
 Es wird empfohlen, die Signaturüberprüfung mithilfe der *SN.exe*-Befehle in den Skripts zu deaktivieren und dann wieder zu aktivieren. Sie können die Überprüfung beispielsweise in einem Setupskript deaktivieren und in einem Bereinigungsskript wieder aktivieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)

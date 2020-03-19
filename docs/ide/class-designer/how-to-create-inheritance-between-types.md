@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen der Vererbung zwischen Typen (Klassen-Designer)'
+title: 'Gewusst wie: Erstellen der Vererbung zwischen Typen (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590370"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Erstellen der Vererbung zwischen Typen im Klassen-Designer
@@ -28,7 +28,7 @@ Verbinden Sie den Basistyp mit seinem abgeleiteten Typ bzw. seinen abgeleiteten 
 
 1. Öffnen Sie vom Projekt im **Projektmappen-Explorer** aus eine Klassendiagrammdatei (CD-Datei).
 
-     Wenn Sie noch nicht über ein Klassendiagramm verfügen, erstellen Sie eines. Weitere Informationen finden Sie unter [How to: Add Class Diagrams to Projects (Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten)](how-to-add-class-diagrams-to-projects.md).
+     Wenn Sie noch nicht über ein Klassendiagramm verfügen, erstellen Sie eines. Informationen hierzu finden Sie unter [How to: Add Class Diagrams to Projects (Class Designer) (Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer))](how-to-add-class-diagrams-to-projects.md).
 
 2. Klicken Sie in der **Toolbox** unter **Klassen-Designer** auf **Vererbung**.
 
@@ -47,9 +47,9 @@ Verbinden Sie den Basistyp mit seinem abgeleiteten Typ bzw. seinen abgeleiteten 
     >
     >  Sie können vorhandene generische Typen zwar visualisieren, Sie können jedoch keine neuen generischen Typen erstellen. Es ist auch nicht möglich, die Typparameter für vorhandene generische Typen zu ändern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vererbung](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Grundlagen der Vererbung](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Vorgehensweise: How to: View Inheritance Between Types (Vorgehensweise: Anzeigen einer Vererbung zwischen Typen)](how-to-view-inheritance-between-types.md)
+- [Vorgehensweise: Anzeigen der Vererbung zwischen Typen](how-to-view-inheritance-between-types.md)
 - [Visual C++-Klassen im Klassen-Designer](visual-cpp-classes.md)

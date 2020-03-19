@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778374"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilerstellung und Sicherheit in Windows Vista
@@ -45,8 +45,8 @@ Sie können eine Liste der Prozesse ansehen, die durch Festlegen der Sichtbarkei
 
   Wenn diese Option nicht ausgewählt ist, zeigt die Liste Prozesse in der aktuellen Sitzung an. Andernfalls zeigt die Liste Prozesse in allen Sitzungen an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersichten](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Vorgehensweise: Anfügen an einen laufenden Prozess](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))
+- [How to: Attach to a running process (Vorgehensweise: Anfügen an einen laufenden Prozess)](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779427"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Speicherintensive CompareTo-Funktionen
@@ -27,8 +27,8 @@ ms.locfileid: "74779427"
 |-|-|
 |Regel-ID|DA0011|
 |Kategorie|.NET Framework-Verwendung|
-|Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|
-|Meldung|CompareTo-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der CompareTo-Funktionen.|
+|Profilerstellungsmethoden|Stichproben<br /><br /> .NET-Arbeitsspeicher|
+|Nachricht|CompareTo-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der CompareTo-Funktionen.|
 |Regeltyp|Warnung|
 
 ## <a name="cause"></a>Ursache

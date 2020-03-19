@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588966"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren
@@ -75,6 +75,6 @@ Gehen Sie wie folgt vor, um Agents einzurichten, die einer Rolle zugewiesen sind
 
    Wenn der Testcontroller für diesen Test-Agent bei Team Foundation Server registriert ist, wird der Status eines Test-Agents, der als interaktiver Prozess ausgeführt wird, in der Ansicht **Controller** im **Lab-Center** für Microsoft Test Manager angezeigt. Er wird mit einem vorangestellten Sternchen gekennzeichnet, das angibt, dass er als interaktiver Prozess ausgeführt wird. Verwenden Sie zum Neustarten dieses Test-Agents das Tool, das auf dem Computer mit dem Test-Agent ausgeführt wird, und nicht die Ansicht **Controller**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)

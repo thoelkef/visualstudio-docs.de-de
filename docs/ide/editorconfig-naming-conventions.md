@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588602"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
@@ -42,17 +42,17 @@ Um die Art der Symbole zu beschreiben, für die die Namensregel gelten soll, geb
 In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen.
 
 - \* (verwenden Sie diesen Wert, um alle Symbole anzugeben)
-- namespace
-- class
+- Namespace
+- Klasse
 - struct
 - interface
 - enum
-- property
-- Methode
-- Feld
+- Eigenschaft
+- method
+- -Feld
 - event
-- delegate
-- -Parameter von
+- -Delegat
+- parameter
 - type_parameter
 - Lokal
 - local_function
@@ -155,7 +155,7 @@ Folgende Werte sind für diese Eigenschaft zulässig:
 > [!NOTE]
 > Sie müssen im Rahmen Ihres Benennungsstils einen Stil für die Groß-/Kleinschreibung angeben. Andernfalls wird Ihr Benennungsstil möglicherweise ignoriert.
 
-## <a name="severity"></a>Schweregrad
+## <a name="severity"></a>severity
 
 Um den Schweregrad eines Verstoßes gegen Ihre Benennungsregel zu beschreiben, geben Sie eine Eigenschaft im folgenden Format an:
 
@@ -163,11 +163,11 @@ Um den Schweregrad eines Verstoßes gegen Ihre Benennungsregel zu beschreiben, g
 
 Die folgende Tabelle zeigt die zulässigen Schweregrade und ihre Bedeutung:
 
-Schweregrad | Effekt
+severity | Effekt
 ------------ | -------------
-Keine | Die Regel wird vollständig unterdrückt.
+none | Die Regel wird vollständig unterdrückt.
 Refactoring oder unbeaufsichtigt | Wenn dieses Format nicht befolgt wird, wird der Benutzer nicht benachrichtigt. Automatisch generierter Code folgt jedoch diesem Format.
-Vorschlag | Wenn dieses Format nicht eingehalten wird, dies dem Benutzer als Vorschlag (zwei unterlegte Punkte bei den ersten beiden Zeichen) anzeigen. Dies hat zur Kompilierzeit keine Auswirkungen.
+Vorschlag | Wenn dieses Format nicht eingehalten wird, dies dem Benutzer als Vorschlag (zwei unterlegte Punkte bei den ersten beiden Zeichen) anzeigen. Dies hat keine Auswirkungen auf die Kompilierzeit.
 warning | Wenn dieses Format nicht eingehalten wird, eine Compilerwarnung in der **Fehlerliste** anzeigen.
 error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler in der **Fehlerliste** anzeigen.
 
@@ -230,10 +230,10 @@ Wenn Sie Ihre Codedatei schließen und wieder öffnen, sehen Sie statt des Vorsc
 
 ![Namensregelwarnung](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sprachkonventionen](editorconfig-language-conventions.md)
 - [Formatierungskonventionen](editorconfig-formatting-conventions.md)
 - [Roslyn-Namenskonventionen](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [Erstellen portierbarer benutzerdefinierter Editor-Optionen](../ide/create-portable-custom-editor-options.md)
+- [Erstellen von portablen, benutzerdefinierten Editor-Optionen](../ide/create-portable-custom-editor-options.md)
 - [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](editorconfig-code-style-settings-reference.md)

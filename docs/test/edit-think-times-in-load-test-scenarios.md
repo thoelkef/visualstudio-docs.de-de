@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590032"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites
@@ -50,12 +50,12 @@ Reaktionszeiten werden verwendet, variieren jedoch im Rahmen einer Normalverteil
 
 1. Öffnen Sie im Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
 
-2. Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Fenster **Eigenschaften** angezeigt. Drücken Sie **F4**, um das Fenster **Eigenschaften** anzuzeigen.
+2. Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Fenster **Eigenschaften** angezeigt. Drücken Sie **F4**, um das **Eigenschaftenfenster** anzuzeigen.
 
 3. Ändern Sie die Eigenschaft **Reaktionsprofil** im Fenster **Eigenschaften**.
 
 4. Nachdem die Änderungen der Eigenschaften abgeschlossen sind, klicken Sie im Menü **Datei** auf **Speichern**. Anschließend können Sie den Auslastungstest mit dem neuen Reaktionsprofil ausführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)

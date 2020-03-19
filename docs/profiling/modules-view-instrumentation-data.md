@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778530"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modulansicht: Instrumentierungsdaten
@@ -24,7 +24,7 @@ In der Modulansicht werden die Leistungsdaten nach den in den Profilerstellungsd
 ## <a name="general"></a>Allgemein
  Die allgemeinen Spalten bezeichnen die Funktion in einer Ansichtszeile.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Name**|Der Name der Funktion oder des Moduls.|
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|
@@ -40,21 +40,21 @@ In der Modulansicht werden die Leistungsdaten nach den in den Profilerstellungsd
 ## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst den zeitlichen Aufwand für untergeordnete Funktionen und Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen).
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**verstrichene inklusive Zeit**|- Bei einer Funktion die für die Funktion aufgewendete Zeit. Die Zeit umfasst die aufgewendete Zeit für untergeordnete Funktionen und für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen).<br />- Bei einem Modul die Zeit, in der sich mindestens eine Funktion im Modul auf der Aufrufliste befunden hat.|
-|**verstrichene inklusive Zeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen inklusiven Zeit, die sich auf die insgesamt verstrichene inklusive Zeit dieses Moduls oder dieser Funktion bezieht.|
+|**Verstrichene inklusive Zeit**|- Bei einer Funktion die für die Funktion aufgewendete Zeit. Die Zeit umfasst die aufgewendete Zeit für untergeordnete Funktionen und für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen).<br />- Bei einem Modul die Zeit, in der sich mindestens eine Funktion im Modul auf der Aufrufliste befunden hat.|
+|**Verstrichene inklusive Zeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen inklusiven Zeit, die sich auf die insgesamt verstrichene inklusive Zeit dieses Moduls oder dieser Funktion bezieht.|
 |**Durchschnittliche verstrichene inklusive Zeit**|- Bei einer Funktion die im Durchschnitt für einen Aufruf dieser Funktion verstrichene inklusive Zeit.<br />- Bei einem Modul die im Durchschnitt für alle Aufrufe von Funktionen in diesem Modul verstrichene inklusive Zeit.|
 |**Maximal verstrichene inklusive Zeit**|- Bei einer Funktion die für einen Aufruf dieser Funktion maximal verstrichene inklusive Zeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul maximal verstrichene inklusive Zeit.|
 |**Mindestens verstrichene inklusive Zeit**|- Bei einer Funktion die für einen Aufruf dieses Moduls oder dieser Funktion mindestens verstrichene inklusive Zeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul mindestens verstrichene inklusive Zeit.|
 
 ## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit
- Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.
+ Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle in der Aufrufliste ausgeführt wurde. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**verstrichene exklusive Zeit**|- Bei einer Funktion die für das Modul oder die Funktion aufgewendete Zeit. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.<br />- Bei einem Modul die insgesamt verstrichene exklusive Zeit der Funktionen im Modul.|
-|**verstrichene exklusive Zeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen exklusiven Zeit, die sich auf die insgesamt verstrichene exklusive Zeit dieses Moduls oder dieser Funktion bezieht.|
+|**Verstrichene exklusive Zeit**|- Bei einer Funktion die für das Modul oder die Funktion aufgewendete Zeit. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.<br />- Bei einem Modul die insgesamt verstrichene exklusive Zeit der Funktionen im Modul.|
+|**Verstrichene exklusive Zeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen exklusiven Zeit, die sich auf die insgesamt verstrichene exklusive Zeit dieses Moduls oder dieser Funktion bezieht.|
 |**Durchschnittlich verstrichene exklusive Zeit**|- Bei einer Funktion die im Durchschnitt für einen Aufruf dieser Funktion verstrichene exklusive Zeit.<br />- Bei einem Modul die im Durchschnitt für alle Aufrufe von Funktionen in diesem Modul verstrichene exklusive Zeit.|
 |**Maximal verstrichene exklusive Zeit**|- Bei einer Funktion die für einen Aufruf dieser Funktion maximal verstrichene exklusive Zeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul maximal verstrichene exklusive Zeit.|
 |**Mindestens verstrichene exklusive Zeit**|- Bei einer Funktion die für einen Aufruf dieses Moduls oder dieser Funktion mindestens verstrichene exklusive Zeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul mindestens verstrichene exklusive Zeit.|
@@ -62,26 +62,26 @@ In der Modulansicht werden die Leistungsdaten nach den in den Profilerstellungsd
 ## <a name="application-inclusive-values"></a>Werte für inklusive Anwendungszeit
  Werte für die inklusive Anwendungszeit geben die Zeit an, die sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst nicht den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen), sondern nur die Zeit, die für untergeordnete Funktionen aufgewendet wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**inklusive Anwendungszeit**|- Bei einer Funktion die für Aufrufe der Funktion aufgewendete Zeit. Sie umfasst nur den zeitlichen Aufwand für untergeordnete Funktionen, aber nicht die Zeit, die für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen) aufgewendet wurde.<br />- Bei einem Modul die Zeit, in der sich mindestens eine Funktion im Modul auf der Aufrufliste befunden hat. Berücksichtigt keine Zeit, die für Aufrufe des Betriebssystems aufgewendet wurde.|
-|**inklusive Anwendungszeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen inklusiven Zeit, die sich auf die inklusive Anwendungszeit dieses Moduls oder dieser Funktion bezieht.|
+|**Inklusive Anwendungszeit**|- Bei einer Funktion die für Aufrufe der Funktion aufgewendete Zeit. Sie umfasst nur den zeitlichen Aufwand für untergeordnete Funktionen, aber nicht die Zeit, die für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen) aufgewendet wurde.<br />- Bei einem Modul die Zeit, in der sich mindestens eine Funktion im Modul auf der Aufrufliste befunden hat. Berücksichtigt keine Zeit, die für Aufrufe des Betriebssystems aufgewendet wurde.|
+|**Inklusive Anwendungszeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen inklusiven Zeit, die sich auf die inklusive Anwendungszeit dieses Moduls oder dieser Funktion bezieht.|
 |**Durchschnittliche inklusive Anwendungszeit**|- Bei einer Funktion die im Durchschnitt für einen Aufruf dieser Funktion aufgewendete inklusive Anwendungszeit.<br />- Bei einem Modul die im Durchschnitt für alle Aufrufe von Funktionen in diesem Modul aufgewendete inklusive Anwendungszeit.|
 |**Maximale inklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieser Funktion maximal aufgewendete inklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul maximal aufgewendete inklusive Anwendungszeit.|
 |**Minimale inklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieses Moduls oder dieser Funktion mindestens aufgewendete inklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul mindestens aufgewendete inklusive Anwendungszeit.|
 
 ## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit
- Werte für die exklusive Anwendungszeit geben die Zeit an, die im Modul oder in der Funktion verbracht wurde. Sie umfasst weder den zeitlichen Aufwand für untergeordnete Funktionen noch die Zeit, die für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen) aufgewendet wurde.
+ Werte für die exklusive Anwendungszeit geben die Zeit an, die im Modul oder in der Funktion verbracht wurde. Sie umfassen weder den zeitlichen Aufwand für untergeordnete Funktionen noch die Zeit, die für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe-/Ausgabeoperationen) aufgewendet wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**exklusive Anwendungszeit**|Die für alle Aufrufe von diesem Modul oder dieser Funktion aufgewendete exklusive Anwendungszeit.|
+|**Exklusive Anwendungszeit**|Die für alle Aufrufe von diesem Modul oder dieser Funktion aufgewendete exklusive Anwendungszeit.|
 |**exklusive Anwendungszeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen exklusiven Zeit, die sich auf die exklusive Anwendungszeit dieses Moduls oder dieser Funktion bezieht.|
 |**Durchschnittliche exklusive Anwendungszeit**|- Bei einer Funktion die im Durchschnitt für einen Aufruf dieser Funktion aufgewendete exklusive Anwendungszeit.<br />- Bei einem Modul die im Durchschnitt für alle Aufrufe von Funktionen in diesem Modul aufgewendete exklusive Anwendungszeit.|
 |**Maximale exklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieser Funktion maximal aufgewendete exklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul maximal aufgewendete exklusive Anwendungszeit.|
 |**Minimale exklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieses Moduls oder dieser Funktion mindestens aufgewendete exklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul mindestens aufgewendete exklusive Anwendungszeit.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Modulansicht](../profiling/modules-view-sampling-data.md)
 - [Modulansicht: .NET-Speicherinstrumentierungsdaten](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Modulansicht: Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)

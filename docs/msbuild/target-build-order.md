@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585456"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 
 Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Sie können diese Attribute verwenden, um die Reihenfolge anzugeben, in der Ziele ausgeführt werden:
 
-- `InitialTargets` Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.
+- `InitialTargets`. Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.
 
-- `DefaultTargets` Das `Project`-Attribut gibt an, welche Ziele ausgeführt werden, wenn in der Befehlszeile kein Ziel explizit angegeben ist.
+- `DefaultTargets`. Das `Project`-Attribut gibt an, welche Ziele ausgeführt werden, wenn in der Befehlszeile kein Ziel explizit angegeben ist.
 
-- `DependsOnTargets` Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.
+- `DependsOnTargets`. Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.
 
 - `BeforeTargets` und `AfterTargets`. Diese `Target`-Attribute geben an, dass das Ziel vor oder nach den angegebenen Zielen ausgeführt werden soll (MSBuild 4.0).
 
@@ -85,7 +85,7 @@ informiert MSBuild, dass das `Serve`-Ziel vom `Chop`-Ziel und dem `Cook`-Ziel ab
 
 In MSBuild 4.0 können Sie die Reihenfolge der Ziele mithilfe der `BeforeTargets`- und `AfterTargets`-Attribute angeben.
 
-Betrachten Sie folgendes Skript.
+Sehen Sie sich das folgende Skript an.
 
 ```xml
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -130,6 +130,6 @@ MSBuild bestimmt die Buildreihenfolge für Ziele wie folgt:
 
 7. Nachdem das Ziel ausgeführt oder übersprungen wurde, wird jedes andere Ziel ausgeführt, das es in einem `AfterTargets`-Attribut auflistet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ziele](../msbuild/msbuild-targets.md)

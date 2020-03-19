@@ -10,10 +10,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633823"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Vorgehensweise: Ignorieren von Fehlern in Aufgaben
@@ -38,7 +38,7 @@ Der Standardwert von `ContinueOnError` ist `ErrorAndStop`. Wenn Sie das Attribut
 
 #### <a name="to-ignore-an-error-in-a-task"></a>So ignorieren Sie Fehler in einer Aufgabe
 
-Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Zum Beispiel:
+Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Beispiel:
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
@@ -64,8 +64,8 @@ Im folgenden Codebeispiel wird veranschaulicht, dass das `Build`-Ziel weiter aus
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)

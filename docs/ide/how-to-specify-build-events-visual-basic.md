@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Angeben von Buildereignissen (Visual Basic)'
+title: 'Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115110"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Angeben von Buildereignissen (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)
 
 Buildereignisse in Visual Basic können für das Ausführen von Skripts, Makros oder anderen Aktionen als Teil des Kompilierungsprozesses verwendet werden. Präbuildereignisse treten vor der Kompilierung auf, während Postbuildereignisse nach der Kompilierung auftreten.
 
@@ -44,7 +44,7 @@ Buildereignisse werden im Dialogfeld **Buildereignisse** angegeben, das über di
 4. Geben Sie die Befehlszeilenargumente für Ihre Prä- oder Postbuildaktion ein, und klicken Sie dann auf **OK**.
 
     > [!NOTE]
-    > Fügen Sie allen Postbuildbefehlen, die *BAT*-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Fügen Sie allen Postbuildbefehlen, die `call`BAT *-Dateien ausführen, eine* -Anweisung hinzu. Zum Beispiel: `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Wenn Ihr Prä- oder Postbuildereignis nicht erfolgreich abgeschlossen wird, können Sie den Build abschließen, indem Sie Ihre Ereignisaktion mit einem Code, der nicht 0 (null) ist, beenden. Dies gibt eine erfolgreiche Aktion an.
@@ -63,9 +63,9 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>So erstellen Sie einen EXE-Befehl zum Ändern des Anwendungsmanifests
 
-1. Erstellen Sie eine Konsolenanwendung für den Befehl. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
+1. Erstellen Sie eine Konsolenanwendung für den Befehl. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows**, und wählen Sie dann die Vorlage **Konsolenanwendung** aus. Benennen Sie das Projekt mit `ChangeOSVersionVB`.
+2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows**, und wählen Sie dann die Vorlage **Konsolenanwendung** aus. Geben Sie dem Projekt den Namen `ChangeOSVersionVB`.
 
 3. Fügen Sie in *Module1.vb* die folgende Zeile in die anderen `Imports`-Anweisungen am Anfang der Datei ein:
 
@@ -126,9 +126,9 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aufrufen eines Postbuildereignisses zum Ändern des Anwendungsmanifests
 
-1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
+1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
+2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Geben Sie dem Projekt den Namen `VBWinApp`.
 3. Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
 
 4. Navigieren Sie im **Projekt-Designer** zu der Seite **Veröffentlichen**, und legen Sie den **Veröffentlichungsort** auf *C:\TEMP* fest.
@@ -163,7 +163,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Seite „Kompilieren“, Projekt-Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Seite „Veröffentlichen“, Projekt-Designer](../ide/reference/publish-page-project-designer.md)

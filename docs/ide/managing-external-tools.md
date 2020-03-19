@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591293"
 ---
 # <a name="manage-external-tools"></a>Verwalten externer Tools
@@ -57,11 +57,11 @@ Sie können ein externes Tool hinzufügen, das im Menü **Extras** angezeigt wir
 
    * Argumente: `/root, "$(ItemDir)"`
 
-   ![Dialogfeld „Externe Tools“](media/external-tools-dialog.png)
+   ![Externe Tools (Dialogfeld)](media/external-tools-dialog.png)
 
 Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, wenn Sie ein externes Tool definieren:
 
-|name|Argument|Beschreibung|
+|Name|Argument|Beschreibung|
 |----------|--------------|-----------------|
 |Elementpfad|$(ItemPath)|Der vollständige Dateiname der aktuellen Datei (Laufwerk + Pfad + Dateiname).|
 |Elementverzeichnis|$(ItemDir)|Das Verzeichnisses der aktuellen Datei (Laufwerk + Pfad).|
@@ -69,7 +69,7 @@ Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, 
 |Elementerweiterung|$(ItemExt)|Die Dateinamenerweiterung der aktuellen Datei.|
 |Aktuelle Zeile|&(CurLine)|Die aktuelle Zeilenposition des Cursors im Codefenster.|
 |Aktuelle Spalte|&(CurCol)|Die aktuelle Spaltenposition des Cursors im Codefenster.|
-|Aktueller Text|&(CurText)|Der ausgewählte Text.|
+|Aktueller Text|$(CurText)|Der ausgewählte Text.|
 |Zielpfad|$(TargetPath)|Der vollständige Dateiname des zu erstellenden Elements (Laufwerk + Pfad + Dateiname).|
 |Target Directory|$(TargetDir)|Das Verzeichnis des zu erstellenden Elements.|
 |Target Name|$(TargetName)|Der Dateiname des zu erstellenden Elements.|
@@ -83,6 +83,6 @@ Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, 
 > [!NOTE]
 > In der IDE-Statusleiste werden die Variablen **Aktuelle Zeile** und **Aktuelle Spalte** angezeigt, um die Position der Einfügemarke im aktiven **Code-Editor** anzuzeigen. Die Variable **Aktueller Text** gibt den ausgewählten Text oder Code an dieser Stelle zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [C/C++-Buildtools](/cpp/build/reference/c-cpp-build-tools)

@@ -13,10 +13,10 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78234955"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
@@ -260,7 +260,7 @@ Weitere Informationen zur Erstellung von `.d.ts`-Deklarationsdateien [ finden Si
 Da der neue Sprachdienst nicht auf einer Ausführungs-Engine, sondern auf einer statischen Analyse basiert (weitere Informationen zu den Unterschieden finden Sie in [diesem Thema](https://github.com/Microsoft/TypeScript/issues/4789)), gibt es einige JavaScript-Muster, die nicht mehr erkannt werden.
 Das bekannteste Muster ist das „Expando“-Muster.
 Derzeit kann der Sprachdienst IntelliSense nicht für Objekte bereitstellen, denen nach der Deklaration Eigenschaften zugewiesen werden.
-Zum Beispiel:
+Beispiel:
 
 ```js
 var obj = {};

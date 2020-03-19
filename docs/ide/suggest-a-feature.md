@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853515"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Vorschlagen eines Features für Visual Studio
@@ -35,7 +35,7 @@ Die Seite „Benutzerfeedback“ ist nun schreibgeschützt. Sie können sich dor
 
 Wir haben eine anfängliche Sammlung von Ideen aus dem Benutzerfeedback-Forum in die Entwicklercommunity migriert. Die Migration erfolgte auf der Grundlage der Auswirkungen des Feedbacks auf die Community und der Prioritäten unserer Produktroadmap. Wenn Sie erwartet haben, hier einen Vorschlag zu sehen, den wir vielleicht verpasst haben, sollten Sie ihn unbedingt der Entwicklercommunity hinzufügen.
 
-## <a name="votes"></a>Abstimmungen
+## <a name="votes"></a>Votes
 
 Das Abstimmungsverfahren in der Entwicklercommunity unterscheidet sich von dem des Benutzerfeedbacks. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Abstimmungsergebnisse zu vermeiden, zeigen wir die Benutzerfeedback-Stimmenanzahl deutlich als Tag neben jedem Featurevorschlag an. Während Sie weiterhin über Vorschläge in der erweiterten Entwicklercommunity abstimmen, werden Ihre neuen Stimmenzählungen getrennt von den Benutzerfeedback-Stimmenzählungen angezeigt.
 
@@ -127,6 +127,6 @@ Wir sind sehr daran interessiert, Ihre Featurevorschläge zu hören und Maßnahm
 
 Die Reaktionszeit hängt von dem Status ab, in dem sich Ihr Feedback befindet. Lesen Sie die Erklärungen zum Status in diesem Dokument, um die Antwortzeiten zu verstehen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Einführung von „Feature vorschlagen“ in der Entwicklercommunity (Visual Studio-Blog)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

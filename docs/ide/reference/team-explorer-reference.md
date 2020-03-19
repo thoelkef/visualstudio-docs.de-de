@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74538578"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer-Referenz
@@ -98,7 +98,7 @@ Thema
 - [Install continuous delivery (CD) tools for Visual Studio (Installieren von Continuous Delivery-Tools für Visual Studio)](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [Configure and execute continuous delivery (CD) for your app (Konfigurieren und Ausführen von Continuous Delivery für Ihre App)](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>Seite „Einstellungen“
+## <a name="settings-page"></a>Seite "Einstellungen"
 
 Auf der Seite **Einstellungen** können Sie Verwaltungsfunktionen entweder für ein Teamprojekt oder eine Teamprojektsammlung konfigurieren. Weitere Informationen finden Sie in den folgenden Artikeln:
 
@@ -106,6 +106,6 @@ Auf der Seite **Einstellungen** können Sie Verwaltungsfunktionen entweder für 
 | - | - | - |
 | [Security, Group Membership (Sicherheit: Gruppenmitgliedschaft)](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Security, Source Control (TFVC) (Sicherheit: Quellcodeverwaltung (TFVC))](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Work Item Areas (Arbeitselementbereiche)](/azure/devops/organizations/settings/set-area-paths)<br/>[Work Item Iterations (Arbeitselementiterationen)](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Portal Settings (Portaleinstellungen)](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Project Alerts (Projektwarnungen)](/azure/devops/notifications/howto-manage-team-notifications) | [Security, Group Membership (Sicherheit: Gruppenmitgliedschaft)](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Source Control (TFVC) (Quellcodeverwaltung (TFVC))](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Process Template Manager (Prozessvorlagen-Manager)](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git Global Settings (Globale Git-Einstellungen)](/azure/devops/repos/git/git-config)<br/>[Git Repository Settings (Git-Repositoryeinstellungen)](/azure/devops/repos/git/git-config) |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Connect to projects in Team Explorer (Herstellen einer Verbindung mit Projekten in Team Explorer)](../../ide/connect-team-project.md)

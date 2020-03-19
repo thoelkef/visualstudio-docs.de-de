@@ -11,10 +11,10 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72650840"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Gefilterte Projektmappen in Visual Studio
@@ -102,7 +102,7 @@ Nachdem Sie eine Projektmappen-Filterdatei erstellt haben, wird diese für den l
 
 ![„Zuletzt verwendete öffnen“ in Visual Studio](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen der Dateischachtelung im Projektmappen-Explorer](file-nesting-solution-explorer.md)
 - [Optimieren der Leistung von Visual Studio](optimize-visual-studio-performance.md)

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169403"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer
@@ -29,7 +29,7 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des **Diagramms für Akti
 
 2. Nach dem Ausführen des Auslastungstests wird die Zusammenfassungsseite mit den Testergebnissen angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Benutzerdetails**.
 
-     - oder -
+     \- oder -
 
      Öffnen Sie die Diagrammansicht, indem Sie auf der Symbolleiste auf die Schaltfläche **Diagramme** klicken. Klicken Sie mit der rechten Maustaste auf ein Diagramm, und wählen Sie dann **Zu Benutzerdetail wechseln** aus.
 
@@ -103,7 +103,7 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des **Diagramms für Akti
 
      Das **Diagramm für Aktivitäten virtueller Benutzer** wird entsprechend aktualisiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

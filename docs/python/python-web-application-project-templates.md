@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917383"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307106"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -43,7 +43,7 @@ Alle Vorlagen für **leere \<Framework> Webprojekte** erstellen ein Projekt mit 
 | --- | --- |
 | **Leeres Bottle-Webprojekt** | Generiert eine minimale App in *app.py* mit einer Homepage für `/` und einer `/hello/<name>`-Seite, die `<name>` mithilfe einer sehr kurzen Vorlage für eine Inline-Seite zurückgibt. |
 | **Leeres Django-Webprojekt** | Generiert ein Django-Projekt mit der grundlegenden Django-Websitestruktur, aber ohne Django-Apps. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und im [Django Tutorial (Schritt 1)](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Leeres Flask-Webprojekt** | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt der, die anhand der Schritte in folgendem Artikel erstellten wurde: [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Weitere Informationen finden Sie im [Flask-Tutorial (Schritt 1)](learn-flask-visual-studio-step-01-project-solution.md).
+| **Leeres Flask-Webprojekt** | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt dem Ergebnis der detaillierten exemplarischen Vorgehensweise unter [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Weitere Informationen finden Sie im [Flask-Tutorial (Schritt 1)](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Web-Gruppe
 
@@ -58,7 +58,7 @@ Alle Vorlagen für **\<Framework>-Webprojekte** erstellen eine Web-App mit einem
 
 ### <a name="polls-group"></a>Umfragen-Gruppe
 
-Die Vorlagen **Framework>-Webprojekt für** Umfragen\< erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von **Webprojektvorlagen** auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer *samples.json*-Datei lädt.
+Die Vorlagen **Framework>-Webprojekt für \<Umfragen** erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von **Webprojektvorlagen** auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer *samples.json*-Datei lädt.
 
 | Vorlage | Beschreibung |
 | --- | --- |
@@ -79,7 +79,7 @@ Wählen Sie bei der Bereitstellung in Microsoft Azure App Service eine Version v
 
 Die Datei *requirements.txt* hingegen *wird* in Microsoft Azure Cloud Services unterstützt. Ausführliche Informationen finden Sie unter [Projekte für Azure-Clouddienste](python-azure-cloud-service-project-template.md).
 
-## <a name="debugging"></a>Debuggen
+## <a name="debugging"></a>Debugging
 
 Wenn ein Webprojekt zum Debuggen gestartet wird, startet Visual Studio den lokalen Webserver auf einem zufälligen Port und öffnet Ihren Standardbrowser mit dieser Adresse und diesem Port. Um zusätzliche Optionen anzugeben, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften** aus, und wählen Sie dann die Registerkarte **Webstartprogramm** aus:
 
@@ -122,7 +122,7 @@ Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debu
 Pyramid-Apps werden derzeit am besten über das `pcreate`-Befehlszeilentool erstellt. Nachdem eine App erstellt wurde, kann sie mithilfe der Vorlage [**Aus vorhandenem Python-Code**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) importiert werden. Wählen Sie danach die Anpassung **Generisches Webprojekt**, um die Optionen zu konfigurieren. Bei diesen Einstellungen wird davon ausgegangen, dass Pyramid in einer virtuellen Umgebung unter `..\env` installiert ist.
 
 - Gruppe **Debuggen**:
-  - **Serverport:** 6543 (bzw. entsprechend der Konfiguration in den *INI*-Dateien)
+  - **Serverport**: 6543 (bzw. entsprechend der Konfiguration in den *.ini*-Dateien)
 
 - Gruppe **Serverbefehl ausführen**:
   - Befehl: `..\env\scripts\pserve-script.py` (Skript)
@@ -145,7 +145,7 @@ Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbil
 
 ![Befehl „In Microsoft Azure Cloud Services-Projekt konvertieren“](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Python item templates reference (Referenz für Python-Elementvorlagen)](python-item-templates.md)
 - [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

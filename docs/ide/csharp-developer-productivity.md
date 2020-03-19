@@ -11,10 +11,10 @@ helpviewer_keywords:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567501"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivitätsleitfaden für Visual Studio für C#-Entwickler
@@ -52,7 +52,7 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 | **STRG**+**D** | Zeile duplizieren | Die Codezeile, in der sich der Cursor befindet, wird dupliziert (verfügbar in **Visual Studio 2017 Version 15.6** und höher) |
 | **UMSCHALT**+**ALT**+ **+** / **-** | Erweitern/Reduzieren | Erweitert oder reduziert die aktuelle Auswahl im Editor (verfügbar in **Visual Studio 2017 Version 15.5** und höher) |
 | **UMSCHALTTASTE** + **ALT-TASTE** +  **.** | Nächste übereinstimmende Einfügemarken einfügen | Fügt eine Auswahl und die Einfügemarke an der nächsten Position ein, die der aktuellen Auswahl entspricht (verfügbar in **Visual Studio 2017-Version 15.8** und höher) |
-| **Strg**+**Q** | Suchen | Durchsuchen aller Visual Studio-Einstellungen |
+| **STRG**+**Q** | Suchen, | Durchsuchen aller Visual Studio-Einstellungen |
 | **F5** | Debugging starten | Debugging der Anwendung starten |
 | **Strg**+**F5** | Ohne Debuggen ausführen | Anwendung lokal ausführen, ohne Debuggen |
 | **Strg**+**K**,**D** (Standardprofil) oder **Strg**+**E**,**D** (C#-Profil) | Dokument formatieren | Bereinigt Formatierungsverstöße in Ihrer Datei anhand Ihrer Einstellungen für Zeilenumbruch, Abstand und Einzug |
@@ -154,14 +154,14 @@ Mehrere Communitymitglieder haben kostenlose Erweiterungen geschrieben, die zus�
 
 Visual Studio weist viele Features zum Suchen und [Navigieren in Ihrer Codebasis](../ide/navigating-code.md) auf.
 
-| Feature | Verknüpfung | Details oder Verbesserungen |
+| Feature | Tastenkombination | Details oder Verbesserungen |
 |- | - | -|
 | Alle Verweise suchen | **Umschalt**+**F12**| Ergebnisse werden farbig hervorgehoben und können nach Projekt, Definition und Verweistyp (z.B. „read“ (Lesen) oder „write“ (Schreiben)) gruppiert werden. Sie können Ergebnisse auch „sperren“. |
 | Gehe zu Implementierung | **Strg**+**F12** | Mit „Gehe zu Definition“ für das Schlüsselwort `override` können Sie zum überschriebenen Member navigieren. |
 | Gehe zu Definition | **F12** oder **Strg**+**Klicken**| Klicken Sie bei gedrückter **STRG**-Taste, um zur Definition zu navigieren. |
 | Peek-Definition | **ALT**+**F12** | Inlineansicht einer Definition |
 | Strukturschnellansicht | Graue, gepunktete Linien zwischen geschweiften Klammern | Zeigen Sie darauf, um Ihre Codestruktur anzuzeigen. |
-| Navigation zu dekompilierten Assemblys | **F12** oder **Strg**+**Klicken** | Navigieren Sie zur externen Quelle (mit ILSpy dekompiliert), indem Sie das Feature aktivieren: **Extras** > **Optionen** > **Text-Editor** > **C#**  > **Erweitert** > **Navigation zu dekompilierten Quellen aktivieren**. |
+| Navigation zu dekompilierten Assemblys | **F12** oder **Strg**+**Klicken** | Navigieren Sie zur externen Quelle (mit ILSpy dekompiliert), indem Sie folgendes Feature aktivieren: **Extras** > **Optionen** > **Text-Editor** > **C#**  > **Erweitert** > **Navigation zu dekompilierten Quellen aktivieren**. |
 
 ![„Gehe zu allen“ und „Alle Verweise suchen“](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -181,7 +181,7 @@ Ab Visual Studio 2017 gibt es zahlreiche Verbesserungen im Bereich der Funktione
 
 - [Live Unit Testing](../test/live-unit-testing.md) führt laufend Tests aus, die durch Ihre Codeänderungen beeinflusst werden, und aktualisiert Inline-Editor-Symbole, um Sie über den Status Ihres Tests zu informieren. Schließen Sie bestimmte Tests oder Testprojekte in Ihren aktiven Testsatz ein oder von diesem aus. (Nur Visual Studio Enterprise-Edition)
 
-## <a name="debugging"></a>Debuggen
+## <a name="debugging"></a>Debugging
 
 Funktionen zum Debuggen in Visual Studio:
 
@@ -189,7 +189,7 @@ Funktionen zum Debuggen in Visual Studio:
 
 - In den Fenstern **Überwachung**, **Auto** und **Lokal** kann nach einer Zeichenfolge gesucht werden.
 - Durch *Run to click* (Ausführung bis Klick) können Sie auf eine Stelle neben einer Codezeile zeigen, auf das angezeigte grüne Wiedergabesymbol klicken und das Programm ausführen, bis es diese Zeile erreicht.
-- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `NullReferenceException` als `null` festgelegt ist.
+- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `null` als `NullReferenceException` festgelegt ist.
 - Durch Debuggen mit der Funktion [Schritt zurück](../debugger/view-historical-application-state.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
 - Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer aktiven Webanwendung bei Auslösung einer Ausnahme (muss in Azure erfolgen) untersuchen.
 
@@ -198,7 +198,7 @@ Funktionen zum Debuggen in Visual Studio:
 ::: moniker range="vs-2017"
 
 - Durch *Run to click* (Ausführung bis Klick) können Sie auf eine Stelle neben einer Codezeile zeigen, auf das angezeigte grüne Wiedergabesymbol klicken und das Programm ausführen, bis es diese Zeile erreicht.
-- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `NullReferenceException` als `null` festgelegt ist.
+- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `null` als `NullReferenceException` festgelegt ist.
 - Durch Debuggen mit der Funktion [Schritt zurück](../debugger/view-historical-application-state.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
 - Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer aktiven Webanwendung bei Auslösung einer Ausnahme (muss in Azure erfolgen) untersuchen.
 

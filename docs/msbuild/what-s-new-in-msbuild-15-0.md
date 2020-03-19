@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
 ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631028"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Neues in MSBuild 15
@@ -52,6 +52,6 @@ MSBuild ist jetzt als Teil des [.NET Core SDK](https://www.microsoft.com/net/dow
 - `NormalizeDirectory` kombiniert Pfadelemente, sorgt für die Verwendung eines nachgestellten Schrägstrichs und stellt sicher, dass die ausgegebene Zeichenfolge die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem aufweist.
 - `GetPathOfFileAbove` gibt den Pfad der unmittelbar vorangehenden Datei zurück. Dies ist zum Aufruf von `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />` funktional äquivalent.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild](../msbuild/msbuild.md)

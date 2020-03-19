@@ -7,10 +7,10 @@ ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027259"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Wie Visual Studio Containeranwendungen erstellt
@@ -76,7 +76,7 @@ docker build -f Dockerfile ..
 
 Dockerfiles, die von Visual Studio für .NET Framework-Projekte (und für .NET Core-Projekte, die mit älteren Versionen als Update 4 von Visual Studio 2017 erstellt wurden) erstellt werden, entsprechen nicht dem Multistagetyp.  Mit den Schritten in diesen Dockerfiles wird der Code nicht kompiliert.  Wenn Visual Studio ein .NET Framework-Dockerfile erstellt, kompiliert die IDE stattdessen zuerst das Projekt mithilfe von MSBuild.  Wenn dieser Vorgang erfolgreich ist, erstellt Visual Studio anschließend das Dockerfile, wodurch einfach die Buildausgabe von MSBuild in das resultierende Docker-Image kopiert wird.  Da die Schritte zum Kompilieren des Codes nicht im Dockerfile enthalten sind, können Sie .NET Framework-Dockerfiles nicht mithilfe von `docker build` über die Befehlszeile erstellen. Sie sollten MSBuild verwenden, um diese Projekte zu erstellen.
 
-Zum Erstellen eines Images für ein einzelnes Docker-Containerprojekt können Sie MSBuild mit der Befehlsoption `/t:ContainerBuild` verwenden. Zum Beispiel:
+Zum Erstellen eines Images für ein einzelnes Docker-Containerprojekt können Sie MSBuild mit der Befehlsoption `/t:ContainerBuild` verwenden. Beispiel:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
@@ -144,7 +144,7 @@ Wenn Ihre Konfiguration sowohl containerisierte als auch nicht in Containern ent
 
 Weitere Informationen zur Verwendung von SSL mit ASP.NET Core-Apps in Containern finden Sie unter [Hosten von ASP.NET Core-Images mit Docker über HTTPS](/aspnet/core/security/docker-https).
 
-## <a name="debugging"></a>Debuggen
+## <a name="debugging"></a>Debugging
 
 Beim Erstellen von Builds in der Konfiguration **Debuggen** führt Visual Studio mehrere Optimierungen durch, um die Leistung des Buildprozesses für Containerprojekte zu erhöhen. Der Buildprozess für Container-Apps ist komplexer, sodass nicht einfach die in der Dockerfile beschriebenen Schritte ausgeführt werden können. Ein Build in einem Container ist deutlich langsamer als ein Build auf einem lokalen Computer.  Wenn Sie also für den Build die **Debugkonfiguration** nutzen, erstellt Visual Studio Ihre Projekte auf dem lokalen Computer und gibt den Ausgabeordner dann für den Container frei, indem das Volume eingebunden wird. Ein Build mit dieser Optimierung wird auch als *Schnellmodusbuild* bezeichnet.
 
@@ -189,7 +189,7 @@ Der Containereinstiegspunkt kann nur in Docker-Compose-Projekten, nicht in Einze
 
 Erfahren Sie, wie Sie Ihre Builds weiter anpassen, indem Sie zusätzliche MSBuild-Eigenschaften in Ihren Projektdateien festlegen. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften für Containerprojekte](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [MSBuild](../msbuild/msbuild.md)
 [Dockerfile unter Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

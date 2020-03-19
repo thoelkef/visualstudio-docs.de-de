@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272394"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems-Aufgabe
@@ -34,7 +34,7 @@ In der folgenden Tabelle werden die Parameter der **GetOutOfDateItems-Aufgabe** 
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|**CheckForInterdependencies**|Optionaler **bool**-Parameter|
+|**CheckForInterdependencies**|Optionaler **bool**-Parameter.|
 |**CommandMetadataName**|Optionaler **string**-Parameter|
 |**DependenciesMetadataName**|Optionaler **string**-Parameter|
 |**HasInterdependencies**|Optionaler **bool**-Ausgabeparameter|
@@ -44,6 +44,6 @@ In der folgenden Tabelle werden die Parameter der **GetOutOfDateItems-Aufgabe** 
 |**TLogDirectory**|Erforderlicher **String**-Parameter.|
 |**TLogNamePrefix**|Erforderlicher **String**-Parameter.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

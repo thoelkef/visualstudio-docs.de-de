@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779908"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
@@ -65,7 +65,7 @@ VSPerfCmd /Attach:MyService.exe
 
 Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Instrumentierungsprofilerstellung:
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**TraceOn**|Aktiviert die Profilerstellung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Profilerstellung für die Speicherreservierung oder die Sammlung von Objektlebensdauerdaten.|
 |**TraceGC**|Aktiviert die Profilerstellung für die Speicherreservierung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|
@@ -75,7 +75,7 @@ Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Instrumentierungs
 
 Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Sampling-Profilerstellung:
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**SampleOn**|Aktiviert die Profilerstellung mithilfe der Samplingmethode. Aktiviert nicht die Profilerstellung für die Speicherreservierung oder die Sammlung von Objektlebensdauerdaten.|
 |**SampleGC**|Aktiviert die Profilerstellung für die Speicherreservierung mithilfe der Samplingmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|
@@ -86,7 +86,7 @@ Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Sampling-Profiler
 
 Um die Profilerstellung für einen verwalteten Dienst wie die ASP.NET-Webanwendung auszuführen, die vom Betriebssystem anstatt vom Benutzer gestartet wird, verwenden Sie Optionen für die globale Profilerstellung der VSPerfCLREnv-Optionen. Die folgende Tabelle beschreibt die globalen Versionen der VSPerfCLREnv-Optionen. Diese Optionen legen die geeigneten Umgebungsvariablen bei der Registrierung fest.
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**GlobalTraceOn**|Aktiviert die globale Profilerstellung mithilfe der Instrumentierungsmethode. Sammelt keine Speicherreservierungsereignisse oder Objektlebensdauerdaten.|
 |**GlobalTraceGC**|Aktiviert die globale Profilerstellung für die Speicherreservierung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|
@@ -99,17 +99,17 @@ Um die Profilerstellung für einen verwalteten Dienst wie die ASP.NET-Webanwendu
 
  Wenn Sie mit der Profilerstellung für die verwaltete Anwendung fertig sind, verwenden Sie eine der folgenden Optionen zum Löschen der Umgebungsvariablen, die von VSPerfCLREnv hinzugefügt wurden. In der folgenden Tabelle wird beschrieben, wie sowohl Standard- als auch globale Umgebungsvariablen gelöscht werden:
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**Off**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|
 |**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET-Profilerstellung. Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem anstatt vom Profiler gestartet wurde.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
 
 Diese Optionen sind für die Profilerstellung einer verwalteten Anwendung nicht erforderlich, wenn die Anwendung mithilfe des Leistungs-Explorers in der IDE gestartet wurde. Der Leistungs-Explorer legt alle erforderlichen Umgebungseinstellungen für Sie fest.
 
 Wenn während der Profilerstellung nicht die richtige Umgebung festgelegt wurde, wird während der Analyse eine Warnung ausgegeben und die Namen der verwalteten Funktionen werden nicht ordnungsgemäß aufgelöst.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

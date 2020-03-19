@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306860"
 ---
 # <a name="language-conventions"></a>Sprachkonventionen
 
@@ -50,7 +50,7 @@ Für jede Sprachkonvention geben Sie einen Wert an, der definiert, ob oder wann 
 
 Der Schweregrad einer Sprachkonvention gibt an, auf welcher Ebene das Format erzwungen werden soll. In der folgenden Tabelle werden die möglichen Schweregrade und die zugehörigen Auswirkungen aufgeführt:
 
-Schweregrad | Effekt
+severity | Effekt
 :------- | ------
 `error` | Zeigen Sie einen Compilerfehler an, wenn gegen diese Formatregel verstoßen wird.
 `warning` | Zeigen Sie eine Compilerwarnung an, wenn gegen diese Formatregel verstoßen wird.
@@ -1885,7 +1885,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Formatierungskonventionen](editorconfig-formatting-conventions.md)
 - [Namenskonventionen](editorconfig-naming-conventions.md)

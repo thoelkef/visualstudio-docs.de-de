@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915811"
 ---
 # <a name="installation"></a>Installation
@@ -156,7 +156,7 @@ Gehen Sie auf diesen [Link](https://caffe2.ai/docs/getting-started.html), um Que
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (Incubating)](https://mxnet.incubator.apache.org/) ist ein Deep Learning-Framework, das im Hinblick auf Effizienz und Flexibilität konzipiert wurde. Mithilfe dieses Frameworks können Sie [symbolische und imperative Programmierung](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) miteinander **vermischen**, um größtmögliche Effizienz und Produktivität zu erreichen.
+[Apache MXNet (Incubating)](https://mxnet.incubator.apache.org/) ist ein Deep Learning-Framework, das im Hinblick auf Effizienz und Flexibilität konzipiert wurde. Mithilfe dieses Frameworks können Sie **symbolische und imperative Programmierung** miteinander [vermischen](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts), um größtmögliche Effizienz und Produktivität zu erreichen.
 
 Führen Sie den folgenden Befehl über ein Terminal aus, um MXNet zu installieren:
 

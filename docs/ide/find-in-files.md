@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595474"
 ---
 # <a name="find-in-files"></a>Suchen in Dateien
@@ -52,7 +52,7 @@ Um eine neue Zeichenfolge oder einen neuen Ausdruck zu suchen, geben Sie die Zei
 
 ## <a name="look-in"></a>Suchen in
 
-Die in der Dropdownliste **Suchen in** ausgewählte Option bestimmt, ob mit der Option **Suchen in Dateien** nur die derzeit aktiven Dateien oder alle Dateien in bestimmten Ordnern durchsucht werden. Wählen Sie einen Suchbereich aus der Liste aus, oder klicken Sie auf die Schaltfläche **Durchsuchen (...)** , um das Dialogfeld **Suchordner auswählen** aufzurufen und Ihre eigene Gruppe von Verzeichnissen anzugeben. Sie können auch direkt im Feld **Suchen in** einen Pfad eingeben.
+Über die aus der Dropdownliste **Suchen in** ausgewählte Option legen Sie fest, ob die Funktion **In Dateien suchen** nur in den zurzeit aktiven Dateien oder in allen in bestimmten Ordnern gespeicherten Dateien sucht. Wählen Sie einen Suchbereich aus der Liste aus, oder klicken Sie auf die Schaltfläche **Durchsuchen (...)** , um das Dialogfeld **Suchordner auswählen** aufzurufen und Ihre eigene Gruppe von Verzeichnissen anzugeben. Sie können auch direkt im Feld **Suchen in** einen Pfad eingeben.
 
 > [!WARNING]
 > Mit den Optionen **Gesamte Projektmappe** oder **Aktuelles Projekt** werden Projekt- und Projektmappendateien nicht durchsucht. Wenn Sie die Projektdateien durchsuchen möchten, wählen Sie einen Suchordner aus.
@@ -106,7 +106,7 @@ Zeigt eine Liste mit Dateien an, in denen die gefundenen Übereinstimmungen enth
 
 Fügt die Ergebnisse der Suche den Ergebnissen der vorherigen Suche hinzu.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)
 - [Ersetzen in Dateien](../ide/replace-in-files.md)

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307016"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Steuern, wo R-Code mit Arbeitsbereichen ausgeführt wird
 
@@ -35,7 +35,7 @@ Mit dem Befehl **R Tools** > **Sitzung** > **Zurücksetzen** und über die Symbo
 
 Die Liste lokaler Arbeitsbereiche führt alle R-Interpreter auf, die auf Ihrem Computer installiert sind.
 
-RTVS versucht, automatisch alle installierten Versionen von R zu erkennen, indem der **HKEY_LOCAL_MACHINE\Software\R-Core\\**-Registrierungsschlüssel beim Start von Visual Studio durchsucht wird. Da diese Überprüfung nur beim Start ausgeführt wird, müssen Sie Visual Studio neu starten, wenn Sie einen neuen R-Interpreter installieren.
+RTVS versucht, automatisch alle installierten Versionen von R zu erkennen, indem der **HKEY_LOCAL_MACHINE\Software\R-Core\\** -Registrierungsschlüssel beim Start von Visual Studio durchsucht wird. Da diese Überprüfung nur beim Start ausgeführt wird, müssen Sie Visual Studio neu starten, wenn Sie einen neuen R-Interpreter installieren.
 
 RTVS erkennt möglicherweise keine R-Interpreter, die auf nicht standardmäßige Weise installiert wurden (z.B. durch Kopieren von Dateien in einen Ordner statt eines Installationsprogramms). Erstellen Sie in diesem Fall wie folgt einen neuen lokalen R-Arbeitsbereich:
 
@@ -124,7 +124,7 @@ Dateien werden wie folgt auf den Remoteserver kopiert:
 > [!Note]
 > Da RTVS nicht alle R-Funktionsaufrufe zuverlässig abfangen kann, werden Dateien durch das Aufrufen von Funktionen wie `source()` oder `runApp()` (für Shiny-Anwendungen) über das interaktive Fenster *nicht* in den Remotearbeitsbereich kopiert.
 
-Ob RTVS bei der Ausführung eines Projekts Dateien kopiert, und welche Dateien kopiert werden, wird über die [Projekteigenschaften](r-projects-in-visual-studio.md#project-properties) gesteuert. Wählen Sie zum Öffnen dieser Seite den Menübefehl **Projekt** > **(Name) Eigenschaften** aus, oder klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf das Projekt, und wählen Sie **Eigenschaften** aus.
+Ob RTVS bei der Ausführung eines Projekts Dateien kopiert, und welche Dateien kopiert werden, wird über die [Projekteigenschaften](r-projects-in-visual-studio.md#project-properties) gesteuert. Wählen Sie zum Öffnen dieser Seite den Menübefehl **Projekt** >  **(Name) Eigenschaften** aus, oder klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf das Projekt, und wählen Sie **Eigenschaften** aus.
 
 ![Ausführungsregisterkarte der Projekteigenschaften mit den Einstellungen für die Übertragung von Dateien](media/workspaces-remote-file-transfer-filter-settings.png)
 

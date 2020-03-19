@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771447"
 ---
 # <a name="summary-view---resource-contention-view"></a>Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte
@@ -31,7 +31,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
 
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jede Ressource.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Name**|Der Name der Ressource.|
 |**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte für die Ressource waren.|
@@ -41,7 +41,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
 
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jeden Thread.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**ID**|Der Threadbezeichner.|
 |**Name**|Der Name des Prozesses, der den Thread besitzt.|

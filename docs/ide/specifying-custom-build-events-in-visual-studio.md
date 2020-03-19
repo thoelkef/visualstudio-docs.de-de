@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115339"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Festlegen von benutzerdefinierten Buildereignissen in Visual Studio
@@ -24,9 +24,9 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
 
 Spezifische Informationen zu den verwendeten Programmiersprachen finden Sie in den folgenden Themen:
 
-- Visual Basic: [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- Visual Basic: [Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C# und F#: [Vorgehensweise: Angeben von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md)
+- C# und F#: [Vorgehensweise: Festlegen von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++: [Festlegen von Buildereignissen](/cpp/build/specifying-build-events).
 
@@ -36,7 +36,7 @@ Buildereignisse folgen derselben Syntax wie DOS-Befehle, Sie können aber außer
 
 Um optimale Ergebnisse zu erhalten, befolgen Sie diese Tipps zur Formatierung:
 
-- Fügen Sie allen Buildereignissen, die *BAT-Dateien* ausführen, eine `call`-Anweisung hinzu.
+- Fügen Sie allen Buildereignissen, die `call`BAT-Dateien*ausführen, eine*-Anweisung hinzu.
 
    Ein Beispiel: `call C:\MyFile.bat`
 
@@ -55,7 +55,7 @@ Um optimale Ergebnisse zu erhalten, befolgen Sie diese Tipps zur Formatierung:
   > [!NOTE]
   > `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
 - [Pre-build Event/Post-build Event command line dialog box (Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

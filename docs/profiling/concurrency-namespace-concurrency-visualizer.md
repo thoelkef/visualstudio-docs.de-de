@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001082"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency-Namespace (Parallelitätsschnellansicht)
@@ -28,16 +28,16 @@ Der `Concurrency`-Namespace stellt Klassen und Funktionen bereit, die Ihnen den 
 namespace Concurrency;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 
 ### <a name="namespaces"></a>Namespaces
 
-|name|Beschreibung|
+|Name|Beschreibung|
 |----------|-----------------|
 |[diagnostic-Namespace](../profiling/diagnostic-namespace.md)|Der `diagnostics`-Namespace stellt Funktionen zum Ausgeben von Markern für Nebenläufigkeitsschnellansichten bereit.|
 
 ## <a name="requirements"></a>Anforderungen
  **Header:** cvmarkersobj.h
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [C-Bibliotheksreferenz](../profiling/c-library-reference.md)

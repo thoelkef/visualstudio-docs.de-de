@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633771"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Vorgehensweise: Verwenden reservierter XML-Zeichen in Projektdateien
@@ -73,7 +73,7 @@ Wenn Sie Projektdateien erstellen, müssen Sie reservierte XML-Zeichen verwenden
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

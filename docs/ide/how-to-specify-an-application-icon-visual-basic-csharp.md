@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Angeben eines Anwendungssymbols (Visual Basic, C#)'
+title: 'Vorgehensweise: Festlegen eines Anwendungssymbols (Visual Basic, C#)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596137"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Vorgehensweise: Angeben eines Anwendungssymbols (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Vorgehensweise: Festlegen eines Anwendungssymbols (Visual Basic, C#)
 
 Die `Icon`-Eigenschaft für ein Projekt gibt die Symboldatei ( *.ico*) an, die für die kompilierte Anwendung im **Datei-Explorer** und in der Windows-Taskleiste angezeigt wird.
 
@@ -31,7 +31,7 @@ Auf die `Icon`-Eigenschaft können Sie im **Projekt-Designer** über den Bereich
 
 1. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe**) aus.
 
-1. Klicken Sie in der Menüleiste auf **Projekt** > **Eigenschaften**.
+1. Wählen Sie in der Menüleiste **Projekt** > **Eigenschaften** aus.
 
 1. Wählen Sie, wenn der **Projekt-Designer** angezeigt wird, die Registerkarte **Anwendung** aus.
 
@@ -39,7 +39,7 @@ Auf die `Icon`-Eigenschaft können Sie im **Projekt-Designer** über den Bereich
 
     **C#** &mdash; Wählen Sie neben der Liste **Symbol** die Schaltfläche **\<Durchsuchen...>** aus, und navigieren Sie zum Speicherort der gewünschten Symboldatei.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)

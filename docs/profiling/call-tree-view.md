@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773334"
 ---
 # <a name="call-tree-view"></a>Aufrufstrukturansicht
@@ -49,7 +49,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 
 - [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Leistungsberichtansichten](../profiling/performance-report-views.md)
 - [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

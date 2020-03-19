@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773898"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Speichern und Exportieren von Daten aus Leistungstools
@@ -88,8 +88,8 @@ In diesem Artikel wird das Speichern und Exportieren von Leistungsdatendateien b
 
      Jede Berichtsansicht wird in einer separaten Datei mit dem Namen \<Präfix>_\<Berichtsansichtsname>.\<csv|xml> gespeichert.
 
-## <a name="see-also"></a>Siehe auch
-- [Leistungs-Explorer](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
 - [Vergleichen von Leistungsdatendateien](../profiling/comparing-performance-data-files.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772666"
 ---
 # <a name="overviews-performance-tools"></a>Übersichten (Leistungstools)
@@ -56,7 +56,7 @@ Dieser Abschnitt enthält konzeptionelle und terminologische Übersichten für [
 
  Informationen zu Problemen und den erforderlichen Schritte zum Sammeln von Beispieldaten und zum Erstellen von sitzungsübergreifenden Profilen für Anwendungen auf [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erste Schritte](../profiling/getting-started-with-performance-tools.md)
-- [Leistungs-Explorer](../profiling/performance-explorer.md)
+- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)

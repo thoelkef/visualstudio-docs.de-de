@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adcb50d2c6800c5ce64ab2b7cf16ce9d2a25aaaa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584503"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest
@@ -38,16 +38,16 @@ Sie können dem Auslastungstest weitere Testlaufeinstellungen mit anderen Eigens
 
      Das Fenster **Eigenschaften** wird mit den Eigenschaften für die ausgewählte Testlaufeinstellung angezeigt.
 
-5. Verwenden Sie im Fenster **Eigenschaften** das Textfeld für die Eigenschaft **Name**, um der neuen Laufzeiteinstellung einen Namen zu geben, der die Absicht der Laufzeiteinstellung beschreibt, z. B. **Laufzeiteinstellung: fünfminütiger Testlauf**.
+5. Verwenden Sie im Fenster **Eigenschaften** das Textfeld für die Eigenschaft **Name**, um der neuen Testlaufeinstellung einen Namen zu geben, der die Absicht der Testlaufeinstellung beschreibt, z.B. **Testlaufeinstellung: Fünfminütiger Testlauf**.
 
 6. Verwenden Sie Fenster **Eigenschaften**, um die Laufzeiteinstellungen zu ändern. Ändern Sie beispielsweise die Testlaufdauer in **00:05:00**, um den Test fünf Minuten lang auszuführen.
 
     > [!NOTE]
     > Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
 
-     Sie können jetzt angeben, dass Sie die hinzugefügte Testlaufeinstellung verwenden möchten, indem Sie sie als aktiv markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Sie können jetzt angeben, dass Sie die hinzugefügte Testlaufeinstellung verwenden möchten, indem Sie sie als aktiv markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen der aktiven Laufzeiteinstellung für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md)
 - [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

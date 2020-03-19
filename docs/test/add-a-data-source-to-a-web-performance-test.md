@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565408"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
@@ -156,9 +156,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 ## <a name="q--a"></a>Fragen und Antworten
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Frage: Welche Datenbanken kann ich als Datenquelle verwenden?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>F: Welche Datenbanken kann ich als Datenquelle verwenden?
 
-**Antwort:** Es stehen Ihnen folgende Möglichkeiten zur Verfügung:
+**A:** Es stehen Ihnen folgende Möglichkeiten zur Verfügung:
 
 - Microsoft SQL Azure.
 
@@ -172,9 +172,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 - Oracle 7.3, 8i, 9i oder 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Frage: Wie verwende ich eine CSV-Textdatei (Comma Separated Value) als Datenquelle?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>F: Wie verwende ich eine CSV-Textdatei (Comma Separated Value) als Datenquelle?
 
-**Antwort:** Gehen Sie dabei folgendermaßen vor:
+**A:** Gehen Sie folgendermaßen vor:
 
 1. Erstellen Sie einen Ordner zur Organisation der Projektdatenbankartefakte, und fügen Sie ein Element hinzu.
 
@@ -196,9 +196,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
      ![Namen eingeben und CSV-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Frage: Was muss ich tun, wenn die vorhandene CSV-Datei keine Spaltenheader enthält?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>F: Was muss ich tun, wenn die vorhandene CSV-Datei keine Spaltenüberschriften enthält?
 
-**Antwort:** Wenn Sie keine Spaltenheader hinzufügen können, können Sie eine Schemabeschreibungsdatei verwenden und die CSV-Datei wie eine Datenbank behandeln.
+**A:** Wenn Sie keine Spaltenüberschriften hinzufügen können, können Sie eine Schemabeschreibungsdatei verwenden und die CSV-Datei wie eine Datenbank behandeln.
 
 1. Fügen Sie eine neue Textdatei namens *schema.ini* hinzu.
 
@@ -247,9 +247,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
      ![Zum Test hinzugefügte Datenquelle](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Frage: Wie verwende ich eine XML-Datei als Datenquelle?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>F: Wie verwende ich eine XML-Datei als Datenquelle?
 
-**Antwort:** Ja.
+**A:** Ja.
 
 1. Erstellen Sie einen Ordner zur Organisation der Projektdatenbankartefakte, und fügen Sie ein Element hinzu.
 
@@ -279,9 +279,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
      ![Namen eingeben und XML-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Frage: Kann ich einer Webdienstanforderung, die SOAP verwendet, eine Datenbindung hinzufügen?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>F: Kann ich einer Webdienstanforderung, die SOAP verwendet, eine Datenbindung hinzufügen?
 
-**Antwort:** Ja; Sie müssen den SOAP-XML-Code manuell ändern.
+**A:** Ja; Sie müssen den SOAP-XML-Code manuell ändern.
 
 1. Wählen Sie in der Anforderungsstruktur die Webdienstanforderung und im Fenster "Eigenschaften" die Auslassungszeichen (...) in der Eigenschaft "Zeichenfolgentext".
 

@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772160"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Datenansichten der Profiler-Samplingmethode
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Samplingmethode generiert werden.
 
 > [!NOTE]
-> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Informationen hierzu finden Sie unter [Performance Tools on Windows 8 and Windows Server 2012 applications (Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen)](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Zusammenfassungsansicht](../profiling/summary-view-sampling-data.md)
@@ -54,7 +54,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Führt die Quellcodezeilen auf, die bei der Sammlung von Samplings ausgeführt wurden.
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
 - [Prozessansicht](../profiling/process-view.md)
 
  Führt Start- und Endzeiten von Prozessen und Threads auf.
@@ -68,7 +68,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
+- [Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Instrumentierungsmethode generiert werden.
 
@@ -76,5 +76,5 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die .NET-Speicherdaten enthalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

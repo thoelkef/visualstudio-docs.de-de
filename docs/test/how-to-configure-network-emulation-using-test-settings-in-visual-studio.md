@@ -9,13 +9,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589213"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren der Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
 
 Sie können den Adapter für diagnostische Daten für das Testen einer Anwendung in verschiedenen Netzwerkumgebungen von Visual Studio konfigurieren. Er kann auch so konfiguriert werden, dass eine künstliche Netzwerklast oder ein Engpass beim Ausführen der Tests getestet wird.
 
@@ -76,14 +76,14 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 4. Wenn Sie den Adapter für diagnostische Daten für die Netzwerkemulation in die Testeinstellungen einschließen und beabsichtigen, den Adapter auf dem lokalen Computer zu verwenden, müssen Sie auch den Netzwerkemulationstreiber an einen Netzwerkadapter des Computers binden. Der Netzwerkemulationstreiber ist erforderlich, damit der Adapter für diagnostische Daten für die Netzwerkemulation funktioniert. Sie haben zwei Möglichkeiten, den Netzwerkemulationstreiber zu installieren und an den Adapter zu binden:
 
-    - **Netzwerkemulationstreiber, die mit dem Test-Agent von Microsoft Visual Studio installiert wurden:** Der Test-Agent von Microsoft Visual Studio kann auf Remotecomputern und lokalen Computern verwendet werden. Wenn Sie Visual Studio Test Agent installieren, schließt der Installationsvorgang einen Konfigurationsschritt ein, bei dem der Netzwerkemulationstreiber an die Netzwerkkarte gebunden wird. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
+    - **Installation des Netzwerkemulationstreibers mit Microsoft Visual Studio Test Agent**: Microsoft Visual Studio Test Agent kann sowohl auf Remotecomputern als auch auf dem lokalen Computer verwendet werden. Wenn Sie Visual Studio Test Agent installieren, schließt der Installationsvorgang einen Konfigurationsschritt ein, bei dem der Netzwerkemulationstreiber an die Netzwerkkarte gebunden wird. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
 
-    - **Netzwerkemulationstreiber, die mit Microsoft Visual Studio Test Professional installiert wurden:** Wenn Sie die Netzwerkemulation zum ersten Mal verwenden, werden Sie aufgefordert, den Netzwerkemulationstreiber mit einer Netzwerkkarte zu verbinden.
+    - **Installation des Netzwerkemulationstreibers mit Microsoft Visual Studio Test Professional**: Wenn Sie die Netzwerkemulation zum ersten Mal verwenden, werden Sie aufgefordert, den Netzwerkemulationstreiber an eine Netzwerkkarte zu binden.
 
     > [!TIP]
-    > Sie können den Netzwerkemulationstreiber auch über die Befehlszeile auf dem lokalen Computer installieren, ohne den Visual Studio-Test-Agent zu installieren. Verwenden Sie hierzu folgenden Befehl: **VSTestConfig NETWORKEMULATION /install**
+    > Sie können den Netzwerkemulationstreiber auch über die Befehlszeile auf dem lokalen Computer installieren, ohne Visual Studio Test Agent zu installieren. Verwenden Sie hierzu folgenden Befehl: **VSTestConfig NETWORKEMULATION /install**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
 - [Ausführen manueller Tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

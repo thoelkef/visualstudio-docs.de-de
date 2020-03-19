@@ -26,25 +26,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595617"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
 Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras** > **Optionen** klicken und dann **Umgebung** > **Schriftarten und Farben** auswählen.
 
-Änderungen am Farbschema gelten noch nicht für die Sitzung, in der Sie die Änderungen vorgenommen haben. Sie können Farbänderungen auswerten, indem Sie eine weitere Instanz von Visual Studio öffnen und die Bedingungen erzeugen, unter denen die Änderungen gelten sollen.
+Änderungen am Farbschema werden nicht in der Sitzung wirksam, in der Sie sie vornehmen. Sie können Farbänderungen auswerten, indem Sie eine weitere Instanz von Visual Studio öffnen und die Bedingungen erzeugen, unter denen die Änderungen gelten sollen.
 
 **Einstellungen anzeigen für**
 
-Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach Auswahl eines Elements in dieser Liste können Sie die Farbeinstellungen für das in **Elemente anzeigen** ausgewählte Element anpassen.
+Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach dem Auswählen eines Elements aus der Liste können Sie die Farbeinstellungen für das ausgewählten Element unter **Elemente anzeigen**anpassen.
 
 - **Text-Editor**
 
-     Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Text-Editor“ beeinflussen die Darstellung von Text in Ihrem Standard-Text-Editor. Dokumente, die in einem Text-Editor außerhalb der IDE geöffnet werden, sind von diesen Einstellungen nicht betroffen.
+     Änderungen an den Anzeigeeinstellungen für Schriftart, Größe und Farbe für den Text-Editor wirken sich auf die Darstellung von Text in Ihrem Standard-Text-Editor aus. Dokumente, die in einem Text-Editor außerhalb der IDE geöffnet werden, sind von diesen Einstellungen nicht betroffen.
 
 - **Drucker**
 
@@ -110,7 +110,7 @@ Hier einige Anzeigeelemente:
 |**Textmarke**|Zeilen mit Lesezeichen. **Textmarke** ist nur bei deaktiviertem Indikatorrand sichtbar.|
 |**Zugehörige Klammer (Hervorhebung)**|Hervorhebung, i. d. R. Fettformatierung zugehöriger geschweifter Klammern.|
 |**Zugehörige Klammer (Rechteck)**|Hervorhebung, i. d. R. ein graues Rechteck im Hintergrund.|
-|**Haltepunkt (deaktiviert)**|Nicht verwendet.|
+|**Haltepunkt (deaktiviert)**|Wird nicht verwendet.|
 |**Haltepunkt (aktiviert)**|Gibt die Hervorhebungsfarbe für Anweisungen oder Zeilen mit einfachen Haltepunkten an. Diese Option ist nur anwendbar, wenn Haltepunkte auf Anweisungsebene aktiv sind, oder wenn die Option **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren** im [Dialogfeld „Optionen“ unter „Allgemein“, „Debuggen“](../../debugger/general-debugging-options-dialog-box.md) aktiviert ist.|
 |**Haltepunkt (Fehler)**|Gibt die Hervorhebungsfarbe für Anweisungen oder Zeilen mit Haltepunkten an, die einen Fehlerzustand aufweisen. Diese Option ist nur anwendbar, wenn Haltepunkte auf Anweisungsebene aktiv sind, oder wenn die Option **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren** im [Dialogfeld „Optionen“ unter „Allgemein“, „Debuggen“](../../debugger/general-debugging-options-dialog-box.md) aktiviert ist.|
 |**Haltepunkt (Warnung)**|Gibt die Hervorhebungsfarbe für Anweisungen oder Zeilen mit Haltepunkten an, die einen Warnungszustand aufweisen. Diese Option ist nur anwendbar, wenn Haltepunkte auf Anweisungsebene aktiv sind, oder wenn die Option **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren** im [Dialogfeld „Optionen“ unter „Allgemein“, „Debuggen“](../../debugger/general-debugging-options-dialog-box.md) aktiviert ist.|
@@ -132,7 +132,7 @@ Hier einige Anzeigeelemente:
 |**Von Codeabdeckung nicht verwendeter Bereich**|Code, der nicht von einem Komponententest abgedeckt wurde.|
 |**Von Codeabdeckung teilweise verwendeter Bereich**|Code, der teilweise von einem Komponententest abgedeckt wurde.|
 |**Von Codeabdeckung verwendeter Bereich**|Code, der vollständig von einem Komponententest abgedeckt wurde.|
-|**CSS-Kommentar**|Ein Kommentar in Cascading Stylesheets (CSS). Zum Beispiel:<br /><br /> /* comment \*/|
+|**CSS-Kommentar**|Ein Kommentar in Cascading Stylesheets (CSS). Beispiel:<br /><br /> /* comment \*/|
 |**CSS-Schlüsselwort**|Schlüsselwörter im Cascading Style Sheet (CSS).|
 |**CSS-Eigenschaftenname**|Der Name einer Eigenschaft, z. B. „Background“.|
 |**CSS-Eigenschaftenwert**|Der einer Eigenschaft zugewiesene Wert, z. B. „blue“.|
@@ -168,10 +168,10 @@ Hier einige Anzeigeelemente:
 |**SQL-DML-Marker**|Gilt für den Transact-SQL-Editor. DML-Anweisungen in diesem Editor werden standardmäßig mit einem blauen Rahmen gekennzeichnet.|
 |**Veralteter Code**|Abgelöster Code, für den ein Update erwartet wird. In einigen Fällen können Codeänderungen beim Bearbeiten und Fortfahren nicht sofort angewendet werden; sie werden später angewendet, wenn Sie mit dem Debuggen fortfahren. Dies geschieht, wenn Sie eine Funktion bearbeiten, die die aktuell ausgeführte Funktion aufrufen muss, oder wenn Sie einer in der Aufrufliste wartenden Funktion neue Variablen mit einer Größe von mehr als 64 Bytes hinzufügen. In diesem Fall zeigt der Debugger das Dialogfeld „Warnung: Veralteter Code“ an, und der abgelöste Code wird weiterhin ausgeführt, bis die betreffende Funktion beendet und erneut aufgerufen wird. Bearbeiten und Fortfahren wendet die Codeänderungen zu diesem Zeitpunkt an.|
 |**String**|Zeichenfolgenliterale.|
-|**Zeichenfolge (C# @ Verbatim)**|Zeichenfolgenliterale in C#, die wörtlich interpretiert werden. Zum Beispiel:<br /><br /> @"x"|
+|**Zeichenfolge (C# @ Verbatim)**|Zeichenfolgenliterale in C#, die wörtlich interpretiert werden. Beispiel:<br /><br /> @"x"|
 |**Syntaxfehler**|Analysefehler.|
 |**Verknüpfung für Aufgabenliste**|Wenn einer Zeile eine Verknüpfung zu einer **Aufgabenliste** hinzugefügt wird und der Indikatorrand deaktiviert ist, wird die Zeile hervorgehoben.|
-|**Ablaufverfolgungspunkt (Deaktiviert)**|Nicht verwendet.|
+|**Ablaufverfolgungspunkt (Deaktiviert)**|Wird nicht verwendet.|
 |**Ablaufverfolgungspunkt (Aktiviert)**|Gibt die Hervorhebungsfarbe für Anweisungen oder Zeilen mit einfachen Ablaufverfolgungspunkten an. Diese Option ist nur anwendbar, wenn Ablaufverfolgungspunkte auf Anweisungsebene aktiv sind, oder wenn die Option **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren** im [Dialogfeld „Optionen“ unter „Allgemein“, „Debuggen“](../../debugger/general-debugging-options-dialog-box.md) aktiviert ist.|
 |**Ablaufverfolgungspunkt (Fehler)**|Gibt die Hervorhebungsfarbe für Anweisungen oder Zeilen mit Ablaufverfolgungspunkten an, die einen Fehlerzustand aufweisen. Diese Option ist nur anwendbar, wenn Ablaufverfolgungspunkte auf Anweisungsebene aktiv sind, oder wenn die Option **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren** im [Dialogfeld „Optionen“ unter „Allgemein“, „Debuggen“](../../debugger/general-debugging-options-dialog-box.md) aktiviert ist.|
 |**Ablaufverfolgungspunkt (Warnung)**|Gibt die Hervorhebungsfarbe für Anweisungen oder Zeilen mit Ablaufverfolgungspunkten an, die einen Warnzustand aufweisen. Diese Option ist nur anwendbar, wenn Ablaufverfolgungspunkte auf Anweisungsebene aktiv sind, oder wenn die Option **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren** im [Dialogfeld „Optionen“ unter „Allgemein“, „Debuggen“](../../debugger/general-debugging-options-dialog-box.md) aktiviert ist.|
@@ -210,7 +210,7 @@ Hier einige Anzeigeelemente:
 
 **Elementvordergrund**
 
-Listet die verfügbaren Farben auf, die für den Vordergrund des im Feld **Elemente anzeigen** ausgewählten Elements gewählt werden können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Vordergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
+Führt die verfügbaren Farben auf, die Sie für den Vordergrund des unter **Elemente anzeigen**ausgewählten Elements auswählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Vordergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
 
 **Automatisch**
 
@@ -229,7 +229,7 @@ Zeigt das Dialogfeld „Farbe“ an, in dem Sie eine benutzerdefinierte Farbe f�
 
 **Elementhintergrund**
 
-Bietet eine Farbpalette, aus der Sie eine Hintergrundfarbe für das im Feld **Elemente anzeigen** ausgewählte Element wählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Hintergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
+Stellt eine Farbpalette bereit, aus der Sie für das in der Liste **Elemente anzeigen**ausgewählte Element eine Hintergrundfarbe auswählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Hintergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
 
 **Automatisch**
 
@@ -251,7 +251,7 @@ Wählen Sie diese Option aus, um den Text von im Feld **Elemente anzeigen** ausg
 
 Zeigt ein Beispiel für den Schriftschnitt und -grad sowie das Farbschema für die in den Feldern **Einstellungen anzeigen für** und **Elemente anzeigen** ausgewählten Elemente an. Sie können dieses Feld verwenden, um eine Vorschau der Ergebnisse anzuzeigen, während Sie mit verschiedenen Formatierungsoptionen experimentieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Optionen (Dialogfeld)](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

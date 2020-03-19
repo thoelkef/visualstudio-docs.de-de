@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 51e16dcaa48a08ae97bc80be1d33163c6f3af875
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590448"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Festlegen einer eindeutigen Automatisierungseigenschaft für UWP-Steuerelemente für Tests
@@ -60,7 +60,7 @@ Klicken Sie auf **Extras** > **Interaktive Elemente benennen**, um vorhandenen S
 
 ![„Interaktive Elemente benennen“ in Blend für Visual Studio](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-Um neu hinzugefügten Steuerelementen automatisch eindeutige Namen zuzuordnen, klicken Sie auf **Extras** > **Optionen**, um das Dialogfeld **Optionen** zu öffnen. Klicken Sie auf **XAML-Designer**, und wählen Sie dann **Interaktive Elemente beim Erstellen automatisch benennen** aus. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
+Um neu hinzugefügten Steuerelementen automatisch eindeutige Namen zuzuordnen, klicken Sie auf **Extras** > **Optionen**, um das Dialogfeld **Optionen** zu öffnen. Klicken Sie auf **XAML-Designer**, und wählen Sie dann **Interaktive Elemente beim Erstellen automatisch benennen** aus. Wählen Sie **OK** aus, um das Dialogfeld zu schließen.
 
 ## <a name="use-a-data-template"></a>Verwenden einer Datenvorlage
 
@@ -163,6 +163,6 @@ private void CreateCheckBox(string txt, StackPanel panel)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Testen von UWP-Apps mit Tests der programmierten UI](../test/test-uwp-app-with-coded-ui-test.md)

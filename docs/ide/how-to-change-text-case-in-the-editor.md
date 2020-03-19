@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588719"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung im Editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung von Text im Editor
 
 Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Kleinschreibung von ausgewähltem Text in nur Großbuchstaben oder nur Kleinbuchstaben zu ändern.
 
@@ -36,6 +36,6 @@ Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Klein
 > [!TIP]
 > Wenn Sie die Formatierung der Groß-/Kleinschreibung vor diesen Änderungen wiederherstellen möchten, wählen Sie im Menü **Bearbeiten** **Rückgängig** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

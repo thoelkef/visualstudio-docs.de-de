@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569022"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Vorgehensweise: Ausschließliches Verwenden der Tastatur
@@ -37,7 +37,7 @@ Eine vollständige Liste der Tastenkombinationen für Befehle in Visual Studio f
 ::: moniker-end
 
 > [!NOTE]
-> Abhängig von Ihren Einstellungen oder der verwendeten Edition von Visual Studio weichen die Dialogfelder und Menübefehle, die Ihnen angezeigt werden, möglicherweise von den in der Hilfe beschriebenen ab. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../environment-settings.md#reset-settings).
+> Abhängig von Ihren Einstellungen oder der verwendeten Edition von Visual Studio weichen die Dialogfelder und Menübefehle, die Ihnen angezeigt werden, möglicherweise von den in der Hilfe beschriebenen ab. Um Ihre Einstellungen zu ändern, wählen Sie **Einstellungen importieren und exportieren** im Menü **Extras** aus. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Toolbox-Steuerelemente
 
@@ -97,7 +97,7 @@ So wechseln Sie in einem Dialogfeld zwischen den Optionen und ändern die Einste
 
    Das Toolfenster springt zur neuen angedockten Stelle.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Tipps und Tricks zur Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)

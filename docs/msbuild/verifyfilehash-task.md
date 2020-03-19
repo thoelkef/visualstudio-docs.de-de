@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579522"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash-Aufgabe
@@ -30,12 +30,12 @@ Diese Aufgabe wurde in Version 15.8 hinzugefügt, für die Verwendung für MSBui
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
- In der folgenden Tabelle werden die Parameter der `VerifyFileHash` -Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `VerifyFileHash`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`File`|Erforderlicher `String` -Parameter.<br /><br />Die Datei, für die Hashes generiert werden sollen und die überprüft werden soll.|
-|`Hash`|Erforderlicher `String` -Parameter.<br /><br />Der erwartete Hash der Datei.|
+|`File`|Erforderlicher `String`-Parameter.<br /><br />Die Datei, für die Hashes generiert werden sollen und die überprüft werden soll.|
+|`Hash`|Erforderlicher `String`-Parameter.<br /><br />Der erwartete Hash der Datei.|
 |`Algorithm`|Optionaler `String`-Parameter.<br /><br />Der Algorithmus. Zulässige Werte: `SHA256`, `SHA384` und `SHA512`. Standard = `SHA256`.|
 |`HashEncoding`|Optionaler `String`-Parameter.<br /><br />Die Codierung für die generierten Hashes. Wird standardmäßig auf `hex` festgelegt. Zulässige Werte: `hex` und `base64`.|
 
@@ -85,7 +85,7 @@ Bei MSBuild 16.5 und höheren Versionen können Sie die Warnung mithilfe des fo
   </Target>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

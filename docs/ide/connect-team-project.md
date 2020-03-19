@@ -6,10 +6,10 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585482"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Herstellen einer Verbindung mit Projekten in Team Explorer
@@ -40,7 +40,7 @@ So stellen Sie eine Verbindung mit einem Projekt her:
 > [!TIP]
 > Informationen dazu, wie Sie ein neues Projekt erstellen oder Benutzer zu einem Projekt hinzufügen, finden Sie unter [Create a project (Azure DevOps) (Erstellen eines Projekts in Azure DevOps)](/azure/devops/organizations/projects/create-project) und [Add users to a project or team (Azure DevOps) (Hinzufügen von Benutzern zu einem Projekt oder Team)](/azure/devops/organizations/security/add-users-team-project).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Team Explorer reference (Referenz für Team Explorer)](reference/team-explorer-reference.md)
 - [Connect to a project (Azure DevOps) (Herstellen einer Verbindung mit einem Projekt in Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)'
+title: 'Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)'
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588836"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten
@@ -51,7 +51,7 @@ Wenn Sie die Komponente **Klassen-Designer** nicht installiert haben, befolgen S
    > [!NOTE]
    > Wenn Sie die Vorlage **Klassendiagramm** nicht sehen, [befolgen Sie diese Schritte](#install-the-class-designer-component), um die Komponente **Klassen-Designer** für Visual Studio zu installieren.
 
-   Das Klassendiagramm wird im Klassen-Designer geöffnet. Im **Projektmappen-Explorer** wird es als Datei mit der Erweiterung *.cd* angezeigt. Sie können Formen und Linien aus der **Toolbox** in das Diagramm ziehen.
+   Das Klassendiagramm wird im Klassen-Designer geöffnet. Im *Projektmappen-Explorer* wird es als Datei mit der Erweiterung **.cd** angezeigt. Sie können Formen und Linien aus der **Toolbox** in das Diagramm ziehen.
 
 Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.
 
@@ -59,7 +59,7 @@ Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.
 
 Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü der Klassendatei (durch Rechtsklick), und klicken Sie anschließend auf **Klassendiagramm anzeigen**.
 
-- oder -
+\- oder -
 
 Öffnen Sie in **Klassenansicht** das Kontextmenü für den Namespace oder Typ, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.
 
@@ -75,7 +75,7 @@ Daraufhin wird ein automatisch aufgefülltes Klassendiagramm erstellt.
 > [!NOTE]
 > Der Klassen-Designer ist in .NET Core-Projekten nicht verfügbar.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer](how-to-create-types.md)
 - [Vorgehensweise: Anzeigen von vorhandenen Typen](how-to-view-existing-types.md)

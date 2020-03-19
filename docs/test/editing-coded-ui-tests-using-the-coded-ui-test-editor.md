@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589655"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
@@ -24,7 +24,7 @@ Mit dem Editor für Tests der programmierten UI können Sie Tests der programmie
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Anforderungen**
+**Voraussetzungen**
 
 - Visual Studio Enterprise
 - Komponente „Test der programmierten UI“
@@ -35,7 +35,7 @@ Mit dem Editor für Tests der programmierten UI sind Sie schneller und effizient
 
 ![Editor für Tests der UI](../test/media/uitesteditor.png)
 
-1. Mit [Suchen](../ide/finding-and-replacing-text.md) können Sie nach UI-Aktionen und -Steuerelementen suchen.
+1. Mit[Suchen](../ide/finding-and-replacing-text.md) können Sie nach UI-Aktionen und -Steuerelementen suchen.
 
 2. Mit**Löschen** können Sie unerwünschte UI-Aktionen entfernen.
 
@@ -125,7 +125,7 @@ Wenn Sie die Aufteilung der Methode abgeschlossen haben, speichern Sie die Ände
 
 - Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich **UI-Aktionen** aus, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI aus.
 
-   - oder -
+   \- oder -
 
    Öffnen Sie das Kontextmenü für die neue Testmethode, und wählen Sie **Umbenennen**.
 
@@ -190,7 +190,7 @@ Wenn Sie das Einfügen der Verzögerung abgeschlossen haben, speichern Sie die �
 
 Wenn ein bestimmtes Steuerelement vor einer UI-Aktion verfügbar sein muss, sollten Sie mit der entsprechenden UITestControl.WaitForControlXXX-Methode ggf. benutzerdefinierten Code zur Testmethode hinzufügen. Weitere Informationen finden Sie unter [Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md)

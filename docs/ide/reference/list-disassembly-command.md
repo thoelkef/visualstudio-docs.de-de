@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747924"
 ---
 # <a name="list-disassembly-command"></a>Befehl "Disassemblierung auflisten"
@@ -36,27 +36,27 @@ Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufg
 
 /count: `number` [oder] /c: `number` [oder] /length: `number` [oder] /l: `number`
 
-Optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.
+Dies ist optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.
 
 /endaddress: `expression` [oder] /e: `expression`
 
-Optional. Adresse, an der die Disassemblierung beendet wird.
+Dies ist optional. Adresse, an der die Disassemblierung beendet wird.
 
 /codebytes:`yes`|`no` [oder] /bytes:`yes`|`no` [oder] /b:`yes`|`no`
 
-Optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`sein.
+Dies ist optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert lautet `no`.
 
 /source:`yes`|`no` [oder] /s:`yes`|`no`
 
-Optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert ist `no`sein.
+Dies ist optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert lautet `no`.
 
 /symbolnames:`yes`|`no` [oder] /names:`yes`|`no` [oder] /n:`yes`|`no`
 
-Optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Dies ist optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert lautet `yes`.
 
  [/linenumbers:`yes`|`no`]
 
-Optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.
+Dies ist optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.
 
 ## <a name="example"></a>Beispiel
 
@@ -64,11 +64,11 @@ Optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern.
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Befehl "Aufrufliste auflisten"](../../ide/reference/list-call-stack-command.md)
-- [Befehl "Threads auflisten"](../../ide/reference/list-threads-command.md)
+- [Threads auflisten (Befehl)](../../ide/reference/list-threads-command.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

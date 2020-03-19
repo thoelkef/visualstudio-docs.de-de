@@ -1,62 +1,56 @@
 ### YamlMime:Landing
 title: Messen der Leistung einer App in Visual Studio
-summary: Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Leistungsdaten sammeln, während Sie Ihre Anwendung ausführen.
+summary: 'Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Leistungsdaten sammeln, während Sie Ihre Anwendung ausführen.'
 metadata:
   title: Messen der Leistung in Visual Studio
-  description: Erfahren Sie, wie Sie mithilfe von Visual Studio die Leistung mit Profilerstellungstools messen.
+  description: 'Erfahren Sie, wie Sie mithilfe von Visual Studio die Leistung mit Profilerstellungstools messen.'
   ms.topic: landing-page
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
-  ms.openlocfilehash: 668d0b5837bb13dd7bcf7367a2734a9ed019bd9c
-  ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
-  ms.translationtype: HT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 02/25/2020
-  ms.locfileid: "77578150"
 landingContent:
-- title: Grundlegendes zur Profilerstellung
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Einführung in Profilerstellungstools
-      url: profiling-feature-tour.md
-  - linkListType: concept
-    links:
-    - text: Möglichkeiten zum Ausführen von Profilerstellungstools
-      url: running-profiling-tools-with-or-without-the-debugger.md
-- title: Erste Schritte
-  linkLists:
-  - linkListType: quickstart
-    links:
-    - text: Analysieren der CPU-Auslastung (C#, Visual Basic)
-      url: quickstart-cpu-usage-managed.md
-    - text: Analysieren der CPU-Auslastung (C++)
-      url: quickstart-cpu-usage-native.md
-    - text: Analysieren der CPU-Auslastung (ASP.NET)
-      url: quickstart-cpu-usage-aspnet.md
-  - linkListType: tutorial
-    links:
-    - text: Erste Schritte beim Analysieren der CPU-Auslastung
-      url: beginners-guide-to-performance-profiling.md
-    - text: Erste Schritte beim Messen der Arbeitsspeicherauslastung
-      url: memory-usage.md
-- title: Weitere Leistungstools
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Messen der CPU-Auslastung über die Befehlszeile
-      url: profile-apps-from-command-line.md
-    - text: Messen der Speicherauslastung für .NET-Objekte
-      url: dotnet-alloc-tool.md
-    - text: PerfTips
-      url: perftips.md
-    - text: Analysieren des Ressourcenverbrauchs (XAML)
-      url: application-timeline.md
-    - text: Analysieren der GPU-Auslastung (Direct3D)
-      url: gpu-usage.md
-    - text: Analysieren der Netzwerkverwendung (UWP)
-      url: network-usage.md
-    - text: Analysieren des Energieverbrauchs (UWP)
-      url: analyze-energy-use-in-store-apps.md
+  - title: Grundlegendes zur Profilerstellung
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Einführung in Profilerstellungstools
+            url: profiling-feature-tour.md
+      - linkListType: concept
+        links:
+          - text: Möglichkeiten zum Ausführen von Profilerstellungstools
+            url: running-profiling-tools-with-or-without-the-debugger.md
+  - title: Erste Schritte
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: 'Analysieren der CPU-Auslastung (C#, Visual Basic)'
+            url: quickstart-cpu-usage-managed.md
+          - text: Analysieren der CPU-Auslastung (C++)
+            url: quickstart-cpu-usage-native.md
+          - text: Analysieren der CPU-Auslastung (ASP.NET)
+            url: quickstart-cpu-usage-aspnet.md
+      - linkListType: tutorial
+        links:
+          - text: Erste Schritte beim Analysieren der CPU-Auslastung
+            url: beginners-guide-to-performance-profiling.md
+          - text: Erste Schritte beim Messen der Arbeitsspeicherauslastung
+            url: memory-usage.md
+  - title: Weitere Leistungstools
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Messen der CPU-Auslastung über die Befehlszeile
+            url: profile-apps-from-command-line.md
+          - text: Messen der Speicherauslastung für .NET-Objekte
+            url: dotnet-alloc-tool.md
+          - text: PerfTips
+            url: perftips.md
+          - text: Analysieren des Ressourcenverbrauchs (XAML)
+            url: application-timeline.md
+          - text: Analysieren der GPU-Auslastung (Direct3D)
+            url: gpu-usage.md
+          - text: Analysieren der Netzwerkverwendung (UWP)
+            url: network-usage.md
+          - text: Analysieren des Energieverbrauchs (UWP)
+            url: analyze-energy-use-in-store-apps.md

@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778829"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Vorgehensweise: Manuelles Erstellen von Leistungssitzungen
@@ -33,10 +33,10 @@ Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Pr
 
 2. Klicken Sie mit der rechten Maustaste auf **Ziele**, und klicken Sie anschließend auf **Zielbinärdatei hinzufügen** aus.
 
-3. Wählen im Dialogfeld **Zielbinärdatei hinzufügen** den Dateinamen aus, und klicken Sie anschließend auf **Öffnen**.
+3. Wählen Sie im Dialogfeld **Zielbinärdatei hinzufügen** den Dateinamen aus und klicken Sie anschließend auf **Öffnen**.
 
      Es wird eine neue Binärdatei hinzugefügt.
 
-## <a name="see-also"></a>Siehe auch
-- [Leistungs-Explorer](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
 - [Erste Schritte](../profiling/getting-started-with-performance-tools.md)

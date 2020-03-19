@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107840"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
@@ -40,7 +40,7 @@ Erfahren Sie mehr über Technologien, die die Barrierefreiheit unterstützen. Hi
 
 ## <a name="windows-applications"></a>Windows-Anwendungen
 
-* **[Exemplarische Vorgehensweise: Creating an accessible Windows-based application (Exemplarische Vorgehensweise: Erstellen von barrierefreien Windows-basierten Anwendungen)](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Dieser Artikel enthält ausführliche Anweisungen zu den fünf Anforderungen an Barrierefreiheit, die eine Windows-Beispielanwendung erfüllen muss, um das Certified for Windows-Logo zu erhalten.
+* **[Walkthrough: Creating an Accessible Windows-based Application (Exemplarische Vorgehensweise: Erstellen von barrierefreien Windows-basierten Anwendungen)](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Dieser Artikel enthält ausführliche Anweisungen zu den fünf Anforderungen an Barrierefreiheit, die eine Windows-Beispielanwendung erfüllen muss, um das Certified for Windows-Logo zu erhalten.
 
 * **Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche** In diesem technischen Artikel wird das Entwerfen einer Windows-Anwendung beschrieben, die über die Tastatur gesteuert werden kann. Weitere Informationen finden Sie unter [Guidelines for Keyboard User Interface Design (Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche)](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
@@ -48,7 +48,7 @@ Erfahren Sie mehr über Technologien, die die Barrierefreiheit unterstützen. Hi
 
 ## <a name="websites"></a>Websites
 
-- [Exemplarische Vorgehensweise: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack (Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack)](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieser Artikel enthält eine ausführliche Anleitung zum Einfügen barrierefreier Steuerelemente in eine Beispielwebseite. Außerdem gibt es darin einige Tipps für den barrierefreien Entwurf für das Web.
+- [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieser Artikel enthält eine ausführliche Anleitung zum Einfügen barrierefreier Steuerelemente in eine Beispielwebseite. Außerdem gibt es darin einige Tipps für den barrierefreien Entwurf für das Web.
 
 - **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [Creating Accessible Web Pages With DHTML (Erstellen barrierefreier Webseiten mit DHTML)](https://msdn.microsoft.com/library/ms528445.aspx).
 
@@ -56,7 +56,7 @@ Erfahren Sie mehr über Technologien, die die Barrierefreiheit unterstützen. Hi
 
 - **Web Accessibility Initiative des World Wide Web Consortium (W3C)** Diese Website enthält Richtlinien und Techniken für die Entwicklung barrierefreier Websites. Weitere Informationen finden Sie unter [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Barrierefreiheit für Visual Studio für Mac](/visualstudio/mac/accessibility/)

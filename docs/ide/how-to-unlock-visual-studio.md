@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027577"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Erweitern einer Testversion oder Aktualisieren einer Lizenz
@@ -68,14 +68,14 @@ Wenn Sie Ihre Anmeldeinformationen nicht erneut eingeben, beginnt der Ablaufzeit
 
 Wenn Ihr Abonnement abgelaufen ist und Sie keine Zugriffsrechte mehr für Visual Studio besitzen, müssen Sie Ihr Abonnement erneuern oder ein anderes Konto hinzufügen, das über ein Abonnement verfügt. Wechseln Sie zu **Datei** > **Kontoeinstellungen**, um weitere Informationen über die verwendete Lizenz zu erhalten. Die Lizenzinformationen werden auf der rechten Seite des Dialogfelds angezeigt. Wenn Sie über ein weiteres Abonnement verfügen, das mit einem anderen Konto verknüpft ist, fügen Sie dieses Konto zur Liste **Alle Konten** auf der linken Seite des Dialogfelds hinzu, indem Sie auf den Link **Konto hinzufügen** klicken.
 
-## <a name="get-support"></a>Support aufrufen
+## <a name="get-support"></a>Support
 
 Manchmal geht etwas schief. Wenn Sie ein Problem haben, finden Sie hier einige Supportoptionen:
 
 * Melden Sie Produktprobleme mit dem Tool [Problem melden](how-to-report-a-problem-with-visual-studio.md).
 * Hier finden Sie Antworten auf Fragen zu Abonnements, Konten und Abrechnung auf der Seite zu den [Häufig gestellten Fragen (FAQ) zum Support für Abonnements](https://visualstudio.microsoft.com/subscriptions/support/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md)
 * [Vergleichen von Visual Studio-Editionen](https://visualstudio.microsoft.com/vs/compare/)

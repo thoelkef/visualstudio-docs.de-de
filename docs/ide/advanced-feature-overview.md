@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78235198"
 ---
 # <a name="features-of-visual-studio"></a>Features von Visual Studio
@@ -136,7 +136,7 @@ Suchen Sie nach [vorhandenen Erweiterungen](https://marketplace.visualstudio.com
 
 Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweitern der Visual Studio-IDE](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Neuerungen in Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)

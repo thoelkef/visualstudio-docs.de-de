@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77578341"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analysieren der Speicherauslastung ohne den Debugger
@@ -129,13 +129,13 @@ Eine **Verwalteter Heap**-Struktur in einem Bericht mit Momentaufnahmedetails we
 |||
 |-|-|
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|
-|**Anzahl**|Die Anzahl der Objektinstanzen des Typs. Für eine Instanz ist die **Anzahl** stets 1.|
+|**Count**|Die Anzahl der Objektinstanzen des Typs. Für eine Instanz ist die **Anzahl** stets 1.|
 |**Größe (Byte)**|Für Typen: die Größe aller Instanzen des Typs in der Momentaufnahme, ohne die Größe der in den Instanzen enthaltenen Objekte.<br /><br /> Für Instanzen: die Größe des Objekts, ohne die Größe der in der Instanz enthaltenen Objekte. |
 |**Inklusive Größe (Bytes)**|Die Größe der Instanzen des Typs oder einer einzelnen Instanz, einschließlich der Größe der enthaltenen Objekte.|
 |**Modul**|Das Modul, das dieses Objekt enthält.|
 
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> „Pfade zum Stamm“-Struktur (Berichte mit Momentaufnahmedetails)
-Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
+Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
 
 Bei einer **Pfade zum Stamm**-Struktur wird die Anzahl der Objekte mit Verweisen auf diesen Typ in der Spalte **Verweisanzahl** angezeigt.
 
@@ -175,7 +175,7 @@ Eine **Verwalteter Heap**-Struktur in einem Vergleichsbericht bei Momentaufnahme
 |||
 |-|-|
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|
-|**Anzahl**|Die Zahl der Instanzen eines Typs in der primären Momentaufnahme. Für eine Instanz ist die **Anzahl** stets 1.|
+|**Count**|Die Zahl der Instanzen eines Typs in der primären Momentaufnahme. Für eine Instanz ist die **Anzahl** stets 1.|
 |**Differenz der Anzahl**|Für Typen: Der Unterschied zwischen der Anzahl der Instanzen des Typs in der primären Momentaufnahme und der vorhergehenden Momentaufnahme. Für Instanzen ist das Feld leer.|
 |**Größe (Byte)**|Die Größe der Objekte in der primären Momentaufnahme abzüglich der Größe der in den Objekten enthaltenen Objekte. Für Typen sind **Größe (Bytes)** und **Inklusive Größe (Bytes)** die Gesamtgrößen der Typinstanzen.|
 |**Unterschied der Gesamtgrößen (Bytes)**|Für Typen: der Unterschied in der Gesamtgröße der Typinstanzen zwischen der primären und der vorherigen Momentaufnahme, ohne die Größe der in den Instanzen enthaltenen Objekte. Für Instanzen ist das Feld leer.|
@@ -185,7 +185,7 @@ Eine **Verwalteter Heap**-Struktur in einem Vergleichsbericht bei Momentaufnahme
 
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> „Pfade zum Stamm“-Struktur (Momentaufnahmenvergleichsberichte)
 
-Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
+Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
 
 Bei einer **Pfade zum Stamm**-Struktur wird die Anzahl der Objekte mit Verweisen auf diesen Typ in der Spalte **Verweisanzahl** angezeigt. Die Veränderungen der Anzahl im Vergleich zur vorherigen Momentaufnahme werden in der Spalte **Reference Diff** (Verweisunterschied) aufgeführt.
 
@@ -210,7 +210,7 @@ Eine **Verweistypen**-Struktur in einem Momentaufnahmenvergleichsbericht weist d
 |**Unterschied der inklusiven Größen (Bytes)**|Für Typen: der Unterschied in der Größe aller Typinstanzen zwischen der primären Momentaufnahme und der vorhergehenden Momentaufnahme, einschließlich der Größe der in den Objekten enthaltenen Objekte.|
 |**Modul**|Das Modul, das dieses Objekt enthält.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)
 - [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

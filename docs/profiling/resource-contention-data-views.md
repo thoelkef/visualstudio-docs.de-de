@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771529"
 ---
 # <a name="resource-contention-data-views"></a>Ansichten für Ressourcenkonfliktdaten
@@ -27,7 +27,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Zeigt eine grafische Zeitachse für Profilerstellungsdaten an und listet die Funktionen und Ressourcen auf, die bei den meisten blockierenden Ereignissen beteiligt waren.
 
-- [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)
+- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view-contention-data.md)
 
  Zeigt eine hierarchische Struktur an, die die Ausführungspfade und Ressourcenkonfliktdaten von Funktionen während der Profilerstellung darstellt.
 
@@ -67,7 +67,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Listet Ressourcenkonflikte nach Prozess und Thread auf.
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
 - [Funktionsdetailansicht](../profiling/function-details-view.md)
 
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.

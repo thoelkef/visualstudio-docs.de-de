@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77453394"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualisieren von Visual Studio auf die neueste Version
@@ -50,7 +50,7 @@ Wenn ein Update vorhanden ist, wird ein entsprechendes Benachrichtigungsflag in 
 
 1. Klicken Sie auf das Benachrichtigungsflag, um den **Benachrichtigungshub** zu öffnen, und wählen Sie dann das Update aus, das Sie installieren möchten.
 
-   ![Aktualisieren von Visual Studio 2017 mithilfe des Notification Hubs](media/vs-install-notifications-hub-15dot6.png "Notifications Hub in Visual Studio 2017")
+   ![Aktualisieren von Visual Studio 2017 mithilfe des Notifications Hubs](media/vs-install-notifications-hub-15dot6.png "Notifications Hub in Visual Studio 2017")
 
       > [!TIP]
       > Da ein Update für eine Edition von Visual Studio 2017 kumulativ ist, wählen Sie immer das mit der aktuellsten Versionsnummer zur Installation aus.
@@ -249,7 +249,7 @@ Sie können nach einem Update suchen und es dann von der Menüleiste oder dem Su
 
 1. Wählen Sie das Benachrichtigungssymbol in der unteren rechten Ecke der Visual Studio-IDE aus, um den **Benachrichtigungshub** zu öffnen.
 
-   ![Benachrichtigungssymbol in der Visual Studio-IDE](media/vs-2019/notification-bar.png "Benachrichtigungssymbol in der Visual Studio-IDE")
+   ![Das Benachrichtigungssymbol in der Visual Studio-IDE](media/vs-2019/notification-bar.png "Das Benachrichtigungssymbol in der Visual Studio-IDE")
 
 1. Wählen Sie im **Benachrichtigungshub** das Update, das Sie installieren möchten, und dann **Details anzeigen** aus.
 
@@ -287,7 +287,7 @@ Gehen Sie dabei folgendermaßen vor:
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Parallele Installation mehrerer Visual Studio-Versionen](install-visual-studio-versions-side-by-side.md)
 * [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)

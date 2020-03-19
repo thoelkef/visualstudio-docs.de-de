@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588641"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testcontroller- und Test-Agent-Anforderungen für Auslastungstests
@@ -59,6 +59,6 @@ Zur Vermeidung von Verwechslungen und zur Vereinfachung des Betriebs sollten ein
 
 Sie können Agent-Computer überwachen, um ihre Ressourcenanforderungen zu bestimmen, indem Sie die *QTAgent\*.exe*-Prozesse überwachen, die in Tests ausgeführt und skaliert werden. Der häufigste Engpass von *QTAgent\*.exe*-Prozessen liegt in der CPU-Auslastung. Wenn sich die CPU-Auslastung konsistent im hohen neunziger Bereich befindet, ist dies ein Anzeichen dafür, dass der Agent stark beansprucht wird. Der nächste Engpass betriff die Arbeitsspeicherauslastung. Bei anspruchsvollen Tests kann die Überwachung dieser Ressourcen dabei helfen zu bestimmen, ob Sie die Ressourcen der Computer erhöhen oder Ihre Tests anders verteilen sollten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)

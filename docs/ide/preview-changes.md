@@ -10,10 +10,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585768"
 ---
 # <a name="preview-changes-window"></a>Fenster „Vorschau der Änderungen“
@@ -28,7 +28,7 @@ In der unteren Fensterhälfte wird der formatierte zu ändernde Code mit hervorg
 
 Klicken Sie nach dem Überprüfen der Änderungen auf die Schaltfläche **Übernehmen**, um diese Änderungen zu committen, oder klicken Sie auf **Abbrechen**, um den Code ungeändert zu lassen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring in Visual Studio](../ide/refactoring-in-visual-studio.md)
 - [Schnelle Aktionen](../ide/quick-actions.md)

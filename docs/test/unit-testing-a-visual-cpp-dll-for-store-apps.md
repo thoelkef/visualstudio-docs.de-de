@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: corob-msft
 ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77274455"
 ---
 # <a name="how-to-test-a-c-dll"></a>Testen einer C++-DLL
@@ -26,7 +26,7 @@ In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separat
 
 ::: moniker range="vs-2019"
 
-Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Geben Sie im Dialogfeld **Neues Projekt erstellen** „test“ in das Suchfeld ein, und legen Sie dann **Sprache** auf C++ fest. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
+Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Geben Sie im Dialogfeld **Neues Projekt erstellen** „test“ in das Suchfeld ein, und legen Sie dann **Sprache** auf C++ fest. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
 
    ![Erstellen eines neuen UWP-Testprojekts](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,7 +34,7 @@ Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **
 
 ::: moniker range="vs-2017"
 
-Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert** > **Visual C++** , und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
+Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert** > **Visual C++** , und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
 
 ::: moniker-end
 

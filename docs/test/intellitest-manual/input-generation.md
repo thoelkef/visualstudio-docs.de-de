@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591599"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306992"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
 
@@ -22,7 +22,7 @@ IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md
 
 Die Schritte der Schleife sind wie folgt:
 
-1. IntelliTest bestimmt Eingaben `i` mit einem [Einschränkungs-Solver](#constraint-solver), sodass `q(i)=false` ist. Aufgrund der Konstruktion nimmt die Eingabe `i` einen neuen Ausführungspfad. Zunächst bedeutet dies, dass `i` jede Eingabe sein kann, weil noch kein Ausführungspfad gefunden wurde.
+1. IntelliTest bestimmt Eingaben `i` mit einem `q(i)=false`Einschränkungs-Solver[, sodass ](#constraint-solver) ist. Aufgrund der Konstruktion nimmt die Eingabe `i` einen neuen Ausführungspfad. Zunächst bedeutet dies, dass `i` jede Eingabe sein kann, weil noch kein Ausführungspfad gefunden wurde.
 
 1. IntelliTest führt den Test mit der ausgewählten Eingabe `i` aus und überwacht die Ausführung des Test sowie das getestete Programm.
 
@@ -129,7 +129,7 @@ IntelliTest versucht, die Größe der Arrays und der Zeichenfolgen zu senken, di
 
 Die statische Klasse [PexChoose](static-helper-classes.md#pexchoose) kann verwendet werden, um zusätzliche Eingaben für einen Test abzurufen. Zudem kann sie verwendet werden, um [parametrisierte Pseudoobjekte](#parameterized-mocks) zu implementieren.
 
-## <a name="got-feedback"></a>Sie möchten Feedback geben?
+## <a name="got-feedback"></a>Sie haben Fragen oder Anmerkungen?
 
 Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 

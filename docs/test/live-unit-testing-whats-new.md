@@ -12,10 +12,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114271"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Neuerungen in Live Unit Testing für Visual Studio 2017
@@ -34,11 +34,11 @@ Ab Visual Studio 2017 Version 15.4 umfasst Live Unit Testing Verbesserungen und 
 
 - **Integration mit Taskcenter-Benachrichtigungen** Die Visual Studio-IDE zeigt im Taskcenter jetzt eine Benachrichtigung für die Verarbeitung im Hintergrund für Live Unit Testing an, damit Benutzer einfach nachvollziehen können, was passiert, wenn Live Unit Testing aktiviert ist. Dadurch wird das Hauptproblem beim Starten von Live Unit Testing in einer großen Projektmappe angegangen. Zuvor konnten Benutzer für ein paar Minuten (bis die Abdeckungssymbole angezeigt werden) nicht sehen, ob Live Unit Testing wirklich aktiviert und funktionstüchtig war. Das hat sich geändert.
 
-- **Unterstützung für das MSTest-Framework, Version 1**: Live Unit Testing unterstützt drei beliebte Unit Testing-Frameworks: xUnit, NUnit und MSTest. Zuvor hat Live Unit Testing nur funktioniert, wenn Komponententestprojekte für MSTest die Version 2 von MSTest verwendet haben. Ab Visual Studio 2017 Version 15.4 wird auch MSTest Version 1 unterstützt.
+- **Unterstützung für das MSTest-Framework Version 1:** Live Unit Testing unterstützt drei beliebte Unit Testing-Frameworks: xUnit, NUnit und MSTest. Zuvor hat Live Unit Testing nur funktioniert, wenn Komponententestprojekte für MSTest die Version 2 von MSTest verwendet haben. Ab Visual Studio 2017 Version 15.4 wird auch MSTest Version 1 unterstützt.
 
-- **Zuverlässigkeit und Leistung**: Live Unit Testing gewährleistet nun, dass das System darauf aufmerksam wird, wenn Projekte den Ladevorgang nicht komplett abgeschlossen haben, und verhindert das Abstürzen von Live Unit Testing. Durch Verbesserungen der Buildleistung wird außerdem vermieden, dass MSBuild-Projekte erneut ausgewertet werden, wenn das System nicht darüber informiert ist, dass Änderungen an der Projektdatei vorgenommen wurden.
+- **Zuverlässigkeit und Leistung:** Live Unit Testing gewährleistet nun, dass das System darauf aufmerksam wird, wenn Projekte den Ladevorgang nicht komplett abgeschlossen haben, und verhindert das Abstürzen von Live Unit Testing. Durch Verbesserungen der Buildleistung wird außerdem vermieden, dass MSBuild-Projekte erneut ausgewertet werden, wenn das System nicht darüber informiert ist, dass Änderungen an der Projektdatei vorgenommen wurden.
 
-- **Verschiedene Verbesserungen der Benutzeroberfläche**:  Die verwirrende Option **Live Test Set – Include/Exclude** (Live Test Set – Einschließen/Ausschließen), die über die rechte Maustaste aufgerufen wird, wurde in **Live Unit Testing Include/Exclude** (Live Unit Testing: Einschließen/Ausschließen) umbenannt. Die Option **Reset clean** (Bereinigung zurücksetzen) im Menü **Test** > **Live Unit Testing** wurde entfernt. Sie kann nun über **Extras** > **Optionen** > **Live Unit Testing** > **Delete Persisted Data** (Persistente Daten löschen) aufgerufen werden.
+- **Verschiedene Verbesserungen der Benutzeroberfläche:** Die verwirrende Option **Live Test Set – Include/Exclude** (Live Test Set – Einschließen/Ausschließen), die über die rechte Maustaste aufgerufen wird, wurde in **Live Unit Testing Include/Exclude** (Live Unit Testing: Einschließen/Ausschließen) umbenannt. Die Option **Reset clean** (Bereinigung zurücksetzen) im Menü **Test** > **Live Unit Testing** wurde entfernt. Sie kann nun über **Extras** > **Optionen** > **Live Unit Testing** > **Delete Persisted Data** (Persistente Daten löschen) aufgerufen werden.
 
 ## <a name="version-153"></a>Version 15.3
 
@@ -64,7 +64,7 @@ Neben diesen wichtigen Ergänzungen enthält Live Unit Testing außerdem die fol
   - Für NUnit: `[Category("SkipWhenLiveUnitTesting")]`
   - Für MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Einführung von Live Unit Testing](live-unit-testing-intro.md)
 - [Live Unit Testing mit Visual Studio 2017](live-unit-testing.md)

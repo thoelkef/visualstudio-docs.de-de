@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114220"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Seite "My-Erweiterungen", Projekt-Designer (Visual Basic)
@@ -40,7 +40,7 @@ Klicken Sie auf diese Schaltfläche, um Ihrem Projekt eine installierte `My`-Nam
 
 Wählen Sie mindestens einen Verweis in der Liste **My-Namespaceerweiterungen** aus, und klicken Sie dann auf diese Schaltfläche, um die `My`-Namespaceerweiterung aus dem Projekt zu entfernen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Extending the My Namespace in Visual Basic (Erweitern des Namespaces „My“ in Visual Basic)](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Packen und Bereitstellen von benutzerdefinierten My-Erweiterungen](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

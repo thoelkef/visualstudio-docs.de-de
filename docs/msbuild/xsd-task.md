@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630781"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
@@ -40,13 +40,13 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **AdditionalOptions**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.
 
 - **GenerateFromSchema**
 
-  Optionaler **String**-Parameter.
+  Optionaler **String** -Parameter.
 
   Gibt die Typen an, die aus dem angegebenen Schema generiert werden.
 
@@ -58,7 +58,7 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **Sprache**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Gibt die Programmiersprache an, die für den generierten Code verwendet werden soll.
 
@@ -66,13 +66,13 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **Namespace**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Gibt den Laufzeitnamespace für die generierten Typen an.
 
 - **Sources**
 
-     Erforderlicher `ITaskItem[]` -Parameter.
+     Erforderlicher `ITaskItem[]`-Parameter.
 
      Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.
 
@@ -84,10 +84,10 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **TrackerLogDirectory**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Gibt das Verzeichnis für das Nachverfolgungsprotokoll an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

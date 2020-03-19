@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633316"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
@@ -195,7 +195,7 @@ File.WriteAllText(Path, content);
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Aufgaben](../msbuild/msbuild-tasks.md)
-- [Exemplarische Vorgehensweise: Erstellen eines Inlinetasks](../msbuild/walkthrough-creating-an-inline-task.md)
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe](../msbuild/walkthrough-creating-an-inline-task.md)

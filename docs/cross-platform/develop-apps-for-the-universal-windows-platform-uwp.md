@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75587146"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
@@ -68,6 +68,6 @@ Wenn Sie über Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual St
 
 Nachdem Sie die universelle Windows-App erstellt haben, müssen Sie Ihre App packen, um sie auf einem Windows 10-Gerät zu installieren oder an den Windows Store zu übermitteln. Weitere Informationen finden Sie unter [Packaging apps (Packen von Apps)](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Plattformübergreifende Mobile-Entwicklung in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

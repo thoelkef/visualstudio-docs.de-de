@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568827"
 ---
 # <a name="import-and-export-settings-command"></a>Befehl Einstellungen importieren und exportieren
@@ -44,7 +44,7 @@ Dies ist optional. Importiert die aktuellen Einstellungen in eine angegebene Dat
 
 Dies ist optional. Setzt die aktuellen Einstellungen zurück
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie diesen Befehl ohne Schalter ausführen, wird der Assistent **Einstellungen importieren und exportieren** geöffnet. Weitere Informationen finden Sie unter [Synchronisieren der Einstellungen](../synchronized-settings-in-visual-studio.md) und [Umgebungseinstellungen](../environment-settings.md).
 
@@ -56,7 +56,7 @@ Der folgende Befehl exportiert die aktuellen Einstellungen in die Datei `MyFile.
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Umgebungseinstellungen](../../ide/environment-settings.md)
 - [Synchronisieren der Einstellungen](../../ide/synchronized-settings-in-visual-studio.md)

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779258"
 ---
 # <a name="function-details-view"></a>Funktionsdetailansicht
@@ -71,9 +71,9 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
 ## <a name="function-performance-details"></a>Funktionsleistungsdetails
  Die Tabelle „Funktionsleistungsdetails“ enthält Zusammenfassungsdaten zu den Leistungsmetriken der ausgewählten Funktion. Sowohl der Wert als auch der Prozentsatz werden angezeigt. In der Liste **Leistungsmetriken** können Sie die Profilerstellungsdaten eingeben, die im Diagramm und in der Detailtabelle angezeigt werden.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
-|**Exklusiv**|– Der Betrag der Leistungsmetrik, die bei der Ausführung des Funktionsrumpfs aufgetreten ist.|
+|**Exclusive**|– Der Betrag der Leistungsmetrik, die bei der Ausführung des Funktionsrumpfs aufgetreten ist.|
 |**In Aufrufen**|– Der Betrag der Leistungsmetrik, die in Funktionen aufgetreten ist, die von der ausgewählten Funktion aufgerufen wurden.|
 |**Inklusive insgesamt**|– Der Gesamtbetrag der Werte **Exklusiv** und **In Aufrufen**.|
 
@@ -82,7 +82,7 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
 
 ## <a name="cost-distribution-bar-chart-values"></a>Werte des Balkendiagramms zur Kostenverteilung
 
-### <a name="sampling"></a>Sampling
+### <a name="sampling"></a>Stichproben
  In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der Samplingmethode erfasst wurden.
 
 |||

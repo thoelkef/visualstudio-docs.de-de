@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594213"
 ---
 # <a name="visual-c-intellisense-features"></a>IntelliSense-Features für Visual C++
@@ -104,7 +104,7 @@ Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisc
 
 ![Dialogfeld „Tools“ > „Optionen“](../ide/media/sintellisensecpptoolsoptions.PNG)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von IntelliSense](../ide/using-intellisense.md)
 - [Konfigurieren eines C++-Projekts für IntelliSense](visual-cpp-intellisense-configuration.md)

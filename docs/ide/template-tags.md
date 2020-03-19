@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189550"
 ---
 # <a name="add-tags-to-project-templates"></a>Hinzufügen von Tags zu Projektvorlagen
@@ -56,7 +56,7 @@ Möglicherweise möchten Sie Tags zur *.vstemplate*-XML-Datei Ihrer Projektvorla
 
 In erweiterten Benutzerszenarien können die folgenden optionalen Attribute verwendet werden:
 
-|Attribut|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Package`|Eine GUID, die die Visual Studio-Paket-ID angibt.|
 |`ID`|Gibt die Visual Studio-Ressourcen-ID an.|
@@ -73,11 +73,11 @@ Syntax:
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine
+Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Erforderlich) Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
@@ -145,7 +145,7 @@ Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage einer Visual 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](creating-project-and-item-templates.md)

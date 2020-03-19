@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62815007"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Arbeiten mit dem R Interactive-Fenster
@@ -52,7 +52,7 @@ Die meisten Symbolleistenbefehle, die unten aufgeführt sind, haben Tastaturents
 
 | Schaltfläche | Befehl | Tastenkombination | Beschreibung |
 | --- | --- | --- | --- |
-| ![Schaltfläche „Zurücksetzen“](media/repl-toolbar-01-reset.png) | Zurücksetzen | **STRG**+**UMSCHALT**+**F10** | Setzt die Sitzung des interaktiven Fensters zurück und löscht alle Variablen sowie die Versionsgeschichte. |
+| ![Schaltfläche „Zurücksetzen“](media/repl-toolbar-01-reset.png) | Reset | **STRG**+**UMSCHALT**+**F10** | Setzt die Sitzung des interaktiven Fensters zurück und löscht alle Variablen sowie die Versionsgeschichte. |
 | ![Schaltfläche „Löschen“](media/repl-toolbar-02-clear.png) | Clear | **STRG**+**L** | Löscht die Ausgabe, die im interaktiven Fenster angezeigt wird. Beeinträchtigt keine Sitzungsvariablen oder die Versionsgeschichte. |
 | ![Schaltflächen zur Versionsgeschichte](media/repl-toolbar-03-history.png) | Vorheriger History-Befehl<br/>Nächster History-Befehl | **Nach oben**, **Nach unten**<br/>**Alt**+**Nach oben**, **Alt**+**Nach unten** | Führt einen Bildlauf durch die Versionsgeschichte mit bestimmten Verhalten für mehrzeilige Codeblöcke aus. Weitere Informationen finden Sie unter [Versionsgeschichte](#history). |
 | ![Schaltfläche „Arbeitsbereich laden“](media/repl-toolbar-04-load-workspace.png) | Arbeitsbereich laden | n/v | Lädt einen zuvor gespeicherten Arbeitsbereich (siehe [Arbeitsbereiche und Sitzungen](#workspaces-and-sessions)). |
@@ -62,7 +62,7 @@ Die meisten Symbolleistenbefehle, die unten aufgeführt sind, haben Tastaturents
 | ![Schaltfläche „Interrupt-R“](media/repl-toolbar-08-interrupt-r.png)| Interrupt-R | **ESC** | Hält den ausgeführten Code im interaktiven Fenster an, so wie die `while`-Schleife, die im Screenshot am Anfang dieses Abschnitts dargestellt wird. |
 | ![Schaltfläche „Debugger anfügen“](media/repl-toolbar-09b-attach-debugger.png)| Debugger anfügen | n/v | Auch mithilfe des Befehls **Debuggen** > **An R Interactive anfügen** verfügbar. |
 | ![Schaltfläche „Arbeitsverzeichnis auf Quelldateispeicherort festlegen“](media/repl-toolbar-10-set-working-directory-source.png)| Arbeitsverzeichnis auf Quelldateispeicherort festlegen | **STRG**+**UMSCHALT**+**E** | Legt das Arbeitsverzeichnis auf die zuletzt eingebundene Datei fest, die in das interaktive Fenster geladen wurde (mithilfe von `source`). Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
-| ![Schaltfläche „Arbeitsverzeichnis auf Projektspeicherort festlegen“](media/repl-toolbar-11-set-working-directory-to-project.png) | Arbeitsverzeichnis auf Projektspeicherort festlegen | **STRG**+**UMSCHALT**+**P** | Legt das Arbeitsverzeichnis auf den Stamm des zuletzt geladenen Projekts in Visual Studio fest. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
+| ![Schaltfläche „Arbeitsverzeichnis auf Projektspeicherort festlegen“](media/repl-toolbar-11-set-working-directory-to-project.png) | Arbeitsverzeichnis auf Projektspeicherort festlegen | **STRG**+**UMSCHALTTASTE**+**P** | Legt das Arbeitsverzeichnis auf den Stamm des zuletzt geladenen Projekts in Visual Studio fest. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 | (Textfeld) | Arbeitsverzeichnis auswählen | n/v | Direktes Eingabefeld für das Arbeitsverzeichnis. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Arbeitsbereiche und Sitzungen

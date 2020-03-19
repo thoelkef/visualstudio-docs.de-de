@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772076"
 ---
 # <a name="profiling-tools-apis"></a>APIs für Profilerstellungstools
@@ -38,6 +38,6 @@ In diesem ausführlichen Beispiel erhalten Sie Informationen zur Verwendung der 
 
 [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Leistungs-Explorer](../profiling/performance-explorer.md)
+- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)

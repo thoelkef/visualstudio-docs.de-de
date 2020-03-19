@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279311"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurieren eines C++-Projekts für IntelliSense
@@ -76,7 +76,7 @@ Tagparserfehler werden im Fenster **Fehlerliste** angezeigt.
 
 Um zu überprüfen, ob der IntelliSense-Compiler die richtigen Compileroptionen verwendet (einschließlich der Include-Pfade und Präprozessormakros), aktivieren Sie die Diagnoseprotokollierung von IntelliSense-Befehlszeilen unter **Extras > Optionen > Text-Editor > C/C++ > Erweitert > Diagnoseprotokollierung**. Legen Sie **Protokollierung aktivieren** auf TRUE, den **Protokolliergrad** auf 5 (ausführlichste Protokollierung) und den **Protokollierungsfilter** auf 8 (IntelliSense-Protokollierung) fest.
 
-Das Ausgabefenster zeigt nun die Befehlszeilen an, die an den IntelliSense-Compiler übergeben werden. Dies ist eine Beispielausgabe:
+Das Ausgabefenster zeigt nun die Befehlszeilen an, die an den IntelliSense-Compiler übergeben werden. Hier ist eine Beispielausgabe:
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32
@@ -120,6 +120,6 @@ Wenn Sie die Umgebungsvariable TRACEDESIGNTIME auf TRUE festlegen und Visual Stu
 
 Weitere Informationen zur Umgebungsvariablen TRACEDESIGNTIME finden Sie unter [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) und [Gemeinsames Projektsystem](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Die Informationen in diesen Artikeln sind für C++-Projekte relevant.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

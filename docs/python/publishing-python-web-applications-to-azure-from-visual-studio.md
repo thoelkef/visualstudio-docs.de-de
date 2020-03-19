@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784114"
 ---
 # <a name="publish-to-azure-app-service"></a>Veröffentlichen in Azure App Service
@@ -33,7 +33,7 @@ Zurzeit wird Python unter Azure App Service für Linux unterstützt, und Sie kö
 
 Weitere Informationen finden Sie in den folgenden Artikeln in der Azure-Dokumentation:
 
-- [Schnellstart: Erstellen einer Python-Web-App in Azure App Service unter Linux (Vorschau)](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) bietet eine kurze exemplarische Vorgehensweise für den Git-Bereitstellungsvorgang mit einer einfachen Flask-App und der Bereitstellung aus einem lokalen Git-Repository.
+- [Schnellstart: Erstellen einer Python-Web-App in App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) bietet eine kurze exemplarische Vorgehensweise für den Git-Bereitstellungsvorgang mit einer einfachen Flask-App und der Bereitstellung aus einem lokalen Git-Repository.
 - [Vorgehensweise: Konfigurieren von Python](/azure/app-service/containers/how-to-configure-python) beschreibt die Merkmale des App Service unter Linux-Containers und das Anpassen des Gunicorn-Startbefehls für Ihre App.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Veröffentlichen in App Service unter Linux mit Containern

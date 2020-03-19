@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
 ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278809"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Behandeln von MSBuild-Problemen und Erstellen von Protokollen
@@ -69,7 +69,7 @@ Der Wert von „MyMetadata“ für das Element „MyFile.txt“ wird zur Buildze
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>Beim inkrementellen Build wird mehr erstellt als erwartet
 
-Wenn MSBuild ein Projekt oder ein Projektelement unnötigerweise neu generiert, erstellen Sie ein detailliertes oder ein binäres Buildprotokoll. Sie können das Protokoll nach der Datei durchsuchen, die unnötigerweise erstellt oder kompiliert wurde. Die Ausgabe sieht in etwa folgendermaßen aus:
+Wenn MSBuild ein Projekt oder ein Projektelement unnötigerweise neu generiert, erstellen Sie ein detailliertes oder ein binäres Buildprotokoll. Sie können das Protokoll nach der Datei durchsuchen, die unnötigerweise erstellt oder kompiliert wurde. Die Ausgabe sieht in etwa wie folgt aus:
 
 ```output
   Task "CL"

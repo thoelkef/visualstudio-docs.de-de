@@ -16,11 +16,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115376"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307316"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -70,7 +70,7 @@ Weitere unterstützte Bootstrapper sind [vs_teamexplorer.exe](https://download.v
 
 ## <a name="create-an-offline-installation-folder"></a>Erstellen eines Offlineinstallationsordners
 
-Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein. Um eine Offlineinstallation mit allen Sprachen und allen Funktionen zu erstellen, verwenden Sie einen Befehl, der denen in den folgenden Beispielen ähnelt.
+Für diesen Schritt benötigen Sie eine Internetverbindung. Um eine Offlineinstallation mit allen Sprachen und allen Funktionen zu erstellen, verwenden Sie einen Befehl, der denen in den folgenden Beispielen ähnelt.
 
    > [!IMPORTANT]
    > Ein vollständiges Visual Studio-Layout erfordert mindestens 35 GB Speicherplatz, und der Download kann einige Zeit in Anspruch nehmen. Im Abschnitt [Anpassen des Netzwerklayouts](#customize-the-network-layout) finden Sie weitere Informationen zum Erstellen eines Layouts, das nur die Komponenten enthält, die Sie installieren möchten.
@@ -284,7 +284,7 @@ Für installationsbezogene Probleme wird außerdem ein [**Livechat**](https://vi
 
 Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer [Feedback](../ide/feedback-options.md)-Seite.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 - [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)

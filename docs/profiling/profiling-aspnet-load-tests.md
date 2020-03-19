@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772132"
 ---
 # <a name="profile-aspnet-load-tests"></a>Profilerstellung für ASP.NET-Auslastungstests
@@ -21,9 +21,9 @@ Sie können Profilerstellungsdaten von automatisierten [!INCLUDE[TCMext](../misc
 
 - [(NIB) Vorgehensweise: Erstellen einer Leistungssitzung für eine Webanwendung aus dem Webleistungstest-Editor](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
 
-- [Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen in Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
+- [Gewusst wie: Konfigurieren von ASP.NET-Profiler für Auslastungstests mit Testeinstellungen in Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
 - [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)
 - [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
