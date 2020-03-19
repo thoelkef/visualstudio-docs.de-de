@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75844315"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
@@ -26,7 +26,7 @@ Mit dem Befehl **Komponententests erstellen** werden Stubs für Komponententestm
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Der Menübefehl **Komponententests erstellen** ist nur für verwalteten Code verfügbar.
+> Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code zur Verfügung.
 ::: moniker-end
 
 Der Menübefehl **Komponententests erstellen** ist erweiterbar und kann zum Generieren von Tests für MSTest, MSTest V2, NUnit und xUnit verwendet werden.
@@ -56,7 +56,7 @@ Verwenden Sie dieses Feature, wenn Sie Komponententests erstellen müssen, insbe
 
 Dieses Feature kann jedoch auch angewendet werden, wenn ein Entwickler Code schreibt und diesen anschließend nutzt, um Bootstraps für Komponententests auszuführen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Komponententestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Creating unit test method stubs with "Create Unit Tests" (Erstellen von Stubs für Unittestmethoden mit "Unittests erstellen")](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Blogbeiträge zu Komponententests](https://devblogs.microsoft.com/devops/?s=unit+testing)

@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594928"
 ---
 # <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask-Basisklasse
@@ -28,12 +28,12 @@ In der folgenden Tabelle werden die Parameter der **TrackedVCToolTask**-Basiskla
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|**DeleteOutputOnExecute**|Optionaler **bool**-Parameter|
-|**EnableExecuteTool**|Optionaler **bool**-Parameter|
+|**DeleteOutputOnExecute**|Optionaler **bool**-Parameter.|
+|**EnableExecuteTool**|Optionaler **bool**-Parameter.|
 |**ExcludedInputPaths**|Optionaler **ITaskItem[]** -Parameter.|
-|**MinimalRebuildFromTracking**|Optionaler **bool**-Parameter|
+|**MinimalRebuildFromTracking**|Optionaler **bool**-Parameter.|
 |**PathOverride**|Optionaler **string**-Parameter|
-|**PostBuildTrackingCleanup**|Optionaler **bool**-Parameter|
+|**PostBuildTrackingCleanup**|Optionaler **bool**-Parameter.|
 |**RootSource**|Optionaler **string**-Parameter|
 |**SkippedExecution**|Optionaler **bool**-Ausgabeparameter|
 |**SourcesCompiled**|Optionaler **ITaskItem[]** -Ausgabeparameter.|
@@ -41,14 +41,14 @@ In der folgenden Tabelle werden die Parameter der **TrackedVCToolTask**-Basiskla
 |**TLogReadFiles**|Optionaler **ITaskItem[]** -Parameter.|
 |**TLogWriteFiles**|Optionaler **ITaskItem[]** -Parameter.|
 |**ToolArchitecture**|Optionaler **string**-Parameter|
-|**TrackCommandLines**|Optionaler **bool**-Parameter|
-|**TrackFileAccess**|Optionaler **bool**-Parameter|
+|**TrackCommandLines**|Optionaler **bool**-Parameter.|
+|**TrackFileAccess**|Optionaler **bool**-Parameter.|
 |**TrackedInputFilesToIgnore**|Optionaler **ITaskItem[]** -Parameter.|
 |**TrackedOutputFilesToIgnore**|Optionaler **ITaskItem[]** -Parameter.|
 |**TrackerFrameworkPath**|Optionaler **string**-Parameter|
 |**TrackerSdkPath**|Optionaler **string**-Parameter|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)<br/>
-[Aufgaben](../msbuild/msbuild-tasks.md)
+[Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)

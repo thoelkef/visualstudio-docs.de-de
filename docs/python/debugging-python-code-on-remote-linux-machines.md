@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62962532"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
@@ -25,7 +25,7 @@ Beim Verwenden von ptvsd hostet der Python-Code, für den das Debuggen ausgefüh
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Thema „Remotedebuggen“ erhalten Sie im Video [Deep Dive: Cross-platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung zum Remotedebuggen sehen Sie in diesem Video: [Deep Dive: Cross-Platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Einrichten eines Linux-Computers
 
@@ -65,7 +65,7 @@ Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Az
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Installieren Sie mithilfe von `pip3 install ptvsd` das `ptvsd`-Paket in Ihrer Umgebung.
+1. Installieren Sie mithilfe von `ptvsd` das `pip3 install ptvsd`-Paket in Ihrer Umgebung.
    >[!NOTE]
    >Es empfiehlt sich, die Version von ptvsd zu erfassen, die installiert wird, falls Sie diese für die Problembehandlung benötigen. Die [ptvsd-Liste](https://pypi.python.org/pypi/ptvsd) enthält die verfügbaren Versionen.
 

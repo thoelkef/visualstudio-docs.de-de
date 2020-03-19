@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275439"
 ---
 # <a name="warnings-and-errors"></a>Warnungen und Fehler
@@ -41,7 +41,7 @@ ms.locfileid: "77275439"
   * [Unerwarteter Fehler während der Durchsuchung](#unexpected-exploration)
   * [TargetInvocationException](#targetinvocationexception)
 
-* **Instrumentierung**
+* **Instrumentation**
   * [Nicht instrumentierte aufgerufene Methode](#uninstrumented-method-called)
   * [Externe aufgerufene Methode](#external-method-called)
   * [Nicht instrumentierbare aufgerufene Methode](#uninstrumentable-method-called)
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-Sie können die Option **MaxConditions** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). Zum Beispiel:
+Sie können die Option **MaxConditions** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). Beispiel:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -342,6 +342,6 @@ In einigen Situationen ist das Ändern eines statischen Feld akzeptabel:
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>Sie möchten Feedback geben?
+## <a name="got-feedback"></a>Sie haben Fragen oder Anmerkungen?
 
 Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

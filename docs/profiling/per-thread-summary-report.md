@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62794325"
 ---
 # <a name="per-thread-summary-report"></a>Zusammenfassungsbericht pro Thread
 Dieses Balkendiagramm zeigt den Anteil der Zeit, die die einzelnen eingeblendeten Threads in jeder Aktivitätskategorie während des derzeit sichtbaren Zeitraums verbringen. „Ausführung“ bedeutet, dass der Thread ausgeführt wird. Alle anderen Kategorien bedeuten, dass der Thread auf etwas wartet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Ausführungszeit (Threadansicht)](../profiling/execution-time-threads-view.md)
 - [E/A-Zeit (Threadansicht)](../profiling/i-o-time-threads-view.md)
 - [Speicherverwaltungszeit](../profiling/memory-management-time.md)

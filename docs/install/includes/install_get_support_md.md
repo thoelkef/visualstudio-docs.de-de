@@ -7,13 +7,13 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: a2a8a5bc03baf51f684777f39f0815699c6c77af
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76158878"
 ---
-## <a name="get-support"></a>Support aufrufen
+## <a name="get-support"></a>Support
 
 Manchmal kann etwas schiefgehen. Wenn es bei der Installation von Visual Studio zu einem Fehler kommt, finden Sie ausführliche Informationen im Artikel [Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern](../troubleshooting-installation-issues.md).
 

@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115044"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Tools zum Erkennen und Verwalten von Visual Studio-Instanzen
@@ -32,8 +32,8 @@ Es gibt mehrere Tools, die Sie zum Erkennen und Verwalten von Visual Studio-Inst
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten können:
 
 * [vswhere](https://github.com/microsoft/vswhere): eine ausführbare Datei, die entweder in Visual Studio integriert oder zur separaten Verteilung verfügbar ist und Ihnen dabei hilft, die Speicherorte aller Visual Studio-Instanzen auf einem bestimmten Computer zu finden.
-* [vssetup.powershell:](https://github.com/microsoft/vssetup.powershell) PowerShell-Skripts, die mithilfe der Setupkonfigurations-API installierte Visual Studio-Instanzen ermitteln.
-* [vs-setup-samples:](https://github.com/microsoft/vs-setup-samples) C#- und C++-Beispiele, die veranschaulichen, wie Sie eine vorhandene Installation mit der Setupkonfigurations-API abfragen.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): PowerShell-Skripts, die die Setupkonfigurations-API zum Identifizieren der installierten Instanzen von Visual Studio verwenden.
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): C#- und C++-Beispiele, die veranschaulichen, wie Sie die Setupkonfigurations-API zum Abfragen einer vorhandene Installation verwenden.
 
 Darüber hinaus stellt die [Setupkonfigurations-API](<xref:Microsoft.VisualStudio.Setup.Configuration>) Schnittstellen für Entwickler bereit, die eigene Hilfsprogramme zum Abfragen von Visual Studio-Instanzen erstellen möchten.
 
@@ -64,7 +64,7 @@ Da diese Einträge nicht in der globalen Registrierung gespeichert werden, gibt 
 
 1. Wählen Sie den Knoten `HKEY_LOCAL_MACHINE` aus.
 
-1. Wählen Sie im Hauptmenü des Registrierungs-Editors **Datei** > **Struktur laden...** und dann die private Registrierungsdatei aus, die im Ordner **AppData\Local** gespeichert ist. Zum Beispiel:
+1. Wählen Sie im Hauptmenü des Registrierungs-Editors **Datei** > **Struktur laden...** und dann die private Registrierungsdatei aus, die im Ordner **AppData\Local** gespeichert ist. Beispiel:
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
@@ -80,6 +80,6 @@ Sie werden aufgefordert, einen Strukturnamen anzugeben, der zum Namen Ihrer isol
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)

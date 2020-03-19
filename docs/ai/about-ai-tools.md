@@ -11,13 +11,13 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915968"
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
+# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools für KI
 
 Visual Studio-Tools für KI sind Erweiterungen für das Erstellen, Testen und Bereitstellen von Deep Learning- bzw. KI-Lösungen. Diese bieten eine nahtlose Integration in Azure Machine Learning für robuste Experimentierfunktionen, unter anderem einschließlich der transparenten Übermittlung der Datenvorbereitung und der Modelltrainigsaufträge an andere Computeziele. Darüber hinaus unterstützen diese benutzerdefinierte Metriken und die Nachverfolgung des Ausführungsverlaufs, wodurch die Reproduzierbarkeit und Überwachung von Data Science ermöglicht wird. Durch die für Unternehmen optimierte Kollaborationstools wird das sichere Arbeiten an einem Projekt mit anderen Personen zusammen ermöglicht.
 
@@ -45,5 +45,5 @@ Diese Erweiterung vereinfacht das Trainieren von Modellen auf Ihrem lokalen Comp
 ## <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme
 Derzeit unterstützt diese Erweiterung Windows 64-Bit-Betriebssysteme.
 
-## <a name="support"></a>Support
+## <a name="support"></a>Unterstützung
 Die Unterstützung für diese Erweiterung wird auf dem [GitHub Issue Tracker](https://github.com/Microsoft/vs-tools-for-ai/issues) bereitgestellt. Sie können einen Fehlerbericht oder einen Vorschlag für ein Feature übermitteln oder an Diskussionen teilnehmen.

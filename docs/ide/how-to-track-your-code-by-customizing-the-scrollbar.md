@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22436c221813ec4c3701d208fc74a96b403fff9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591397"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Vorgehensweise: Anpassen der Scrollleiste
@@ -67,6 +67,6 @@ Die folgende Abbildung zeigt die Option **Vorschau-QuickInfo anzeigen**:
 
 ![Visual Studio-Scrollleiste mit QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

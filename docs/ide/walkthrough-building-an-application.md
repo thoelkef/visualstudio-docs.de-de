@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115408"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
@@ -25,7 +25,7 @@ Laden Sie das Beispiel [Introduction to Building WPF Applications (Einführung i
 
 ## <a name="create-a-custom-build-configuration"></a>Erstellen einer benutzerdefinierten Buildkonfiguration
 
-Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md).
+Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds **Konfigurations-Manager** ändern oder erstellen. In dieser Prozedur erstellen Sie eine Buildkonfiguration zum Testen.
 
@@ -63,7 +63,7 @@ Sie können die aktive Projektmappenkonfiguration schnell überprüfen oder änd
 
 Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfiguration.
 
-### <a name="build-the-solution"></a>Erstellen der Projektmappe
+### <a name="build-the-solution"></a>Erstellen Sie die Lösung.
 
 - Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen**, oder drücken Sie **STRG**+**UMSCHALT**+**B**.
 
@@ -75,7 +75,7 @@ Als Nächstes wird Code eingeführt, der eine Warnung auslöst und vom Compiler 
 
 1. Öffnen Sie die Datei *ExpenseReportPage.xaml.cs* im C#-Projekt. Fügen Sie folgenden Code in die **ExpenseReportPage**-Methode ein: `int i;`.
 
-    ODER
+    oder
 
     Öffnen Sie im Visual Basic-Projekt die Datei *ExpenseReportPage.xaml.vb*. Fügen Sie im benutzerdefinierten Konstruktor **Public Sub New** den folgenden Code hinzu: `Dim i`.
 
@@ -129,7 +129,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
    ![Ausgabefenster, Visual Basic-Buildwarnungen](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compilerwarnungen](../ide/how-to-suppress-compiler-warnings.md).
+   Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compiler-Warnungen](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Anzeigen zusätzlicher Builddetails im Ausgabefenster
 
@@ -221,7 +221,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 Herzlichen Glückwunsch! Sie haben diese exemplarische Vorgehensweise erfolgreich abgeschlossen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten](/previous-versions/aspnet/aa983464\(v\=vs.110\))

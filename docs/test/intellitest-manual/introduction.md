@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591595"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Überblick über Microsoft IntelliTest
@@ -46,7 +46,7 @@ Wenn Sie Folgendes testen möchten:
 
 ## <a name="the-hello-world-of-intellitest"></a>„Hello World“ von IntelliTest
 
-IntelliTest findet für das getestete Programm relevante Eingaben. Dies bedeutet, dass Sie es verwenden können, um die bekannte **Hello World!** - Zeichenfolge zu generieren. Dabei wird davon ausgegangen, dass Sie ein MSTest-basiertes C#-Projekt erstellt und einen Verweis auf **Microsoft.Pex.Framework** hinzugefügt haben. Wenn Sie ein anderes Testframework verwenden, erstellen Sie eine C#-Klassenbibliothek, und konsultieren Sie die Dokumentation zum Testframework, um zu erfahren, wie Sie ein Projekt einrichten.
+IntelliTest findet für das getestete Programm relevante Eingaben. Dies bedeutet, dass Sie es verwenden können, um die bekannte **Hello World!** - string. Dabei wird davon ausgegangen, dass Sie ein MSTest-basiertes C#-Projekt erstellt und einen Verweis auf **Microsoft.Pex.Framework** hinzugefügt haben. Wenn Sie ein anderes Testframework verwenden, erstellen Sie eine C#-Klassenbibliothek, und konsultieren Sie die Dokumentation zum Testframework, um zu erfahren, wie Sie ein Projekt einrichten.
 
 Im folgenden Beispiel werden zwei Einschränkungen in einem Parameter mit dem Namen **value** erstellt, sodass IntelliTest die erforderliche Zeichenfolge erzeugt:
 
@@ -100,7 +100,7 @@ So einfach ist das!
 In diesem Abschnitt werden die Einschränkungen von IntelliTest beschrieben:
 
 * [Nichtdeterminiertheit](#nondeterminism)
-* [Parallelität](#concurrency)
+* [Concurrency](#concurrency)
 * [Nativer .NET-Code](#native-code)
 * [Plattform](#platform)
 * [Sprache](#language)

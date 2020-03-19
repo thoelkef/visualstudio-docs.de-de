@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114609"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installieren von Build Tools in einem Container
@@ -192,7 +192,7 @@ Wenn Sie dieses Image für Ihren CI/CD-Workflow verwenden möchten, können Sie 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Erweitertes Beispiel für Container](advanced-build-tools-container.md)
 * [Bekannte Probleme für Container](build-tools-container-issues.md)

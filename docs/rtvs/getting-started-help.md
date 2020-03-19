@@ -1,6 +1,6 @@
 ---
 title: Hilfefenster für R
-description: Die Hilfe für R ist in Form des Befehls „?“ direkt in das interaktive Fenster in Visual Studio integriert .
+description: Die Hilfe für R ist in Form des Befehls „?“ direkt in das interaktive Fenster in Visual Studio integriert ausführen.
 ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950601"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Hilfe in R Tools für Visual Studio

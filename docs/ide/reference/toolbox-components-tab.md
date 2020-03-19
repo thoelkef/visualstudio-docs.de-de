@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597307"
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
@@ -68,7 +68,7 @@ Erstellt eine <xref:System.Messaging.MessageQueue>-Komponenteninstanz, mit der S
 
 Erstellt eine <xref:System.Diagnostics.PerformanceCounter>-Komponenteninstanz, mit der sie mit Windows-Leistungsindikatoren interagieren und unter anderem neue Kategorien und Instanzen erstellen, Werte von Leistungsindikatoren lesen und Berechnungen zu Indikatorendaten durchführen können.
 
-**Process**
+**Prozess**
 
 Erstellt eine <xref:System.Diagnostics.Process>-Komponenteninstanz, mit der Sie die Daten von Prozessen auf Ihrem System beenden, starten und bearbeiten können.
 
@@ -87,8 +87,8 @@ Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie 
 > [!NOTE]
 > Es gibt auch eine systembasierte <xref:System.Timers.Timer>, die Sie zur **Toolbox** hinzufügen können. Diese <xref:System.Timers.Timer> ist für Serveranwendungen optimiert, und die <xref:System.Windows.Forms.Timer> eignet sich am besten für die Verwendung in Windows Forms.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Controls to use on Windows Forms (Steuerelemente für Windows Forms)](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Toolboxelemente auswählen, WPF-Komponenten](choose-toolbox-items-wpf-components.md)
-- [Werkzeugkasten](../../ide/reference/toolbox.md)
+- [Werkzeugpalette](../../ide/reference/toolbox.md)

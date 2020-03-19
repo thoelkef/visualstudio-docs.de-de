@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594759"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Vorgehensweise: Angeben von Zeitüberschreitungszeiträumen für Testcontroller und Test-Agents
 
 Sowohl der Testcontroller als auch der Test-Agent verfügen über mehrere Timeouteinstellungen, die angeben, wie lange sie auf Antworten voneinander oder von einer Datenquelle warten, bevor ein Fehler ausgegeben wird. Unter bestimmten Umständen kann es notwendig sein, die Timeoutwerte entsprechend den Anforderungen der Topologie oder anderer Umgebungsprobleme zu bearbeiten. Um die Timeoutwerte zu ändern, bearbeiten Sie die XML-Konfigurationsdatei für den Testcontroller oder den Test-Agent wie in den folgenden Prozeduren beschrieben.
 
@@ -32,17 +32,17 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Die Anzahl von Sekunden, während der auf eine Pinganforderung des Agents gewartet wird, bevor die Verbindung als unterbrochen gilt.|"n" Sekunden.|
     |AgentSyncTimeoutInSeconds|Beim Starten eines synchronisierenden Testlaufs die Anzahl von Sekunden, während der auf die Synchronisierung aller Agents gewartet wird, bevor der Testlauf abgebrochen wird.|"n" Sekunden.|
-    |AgentInitializeTimeout|Die Anzahl von Sekunden, während der am Anfang eines Testlaufs auf die Initialisierung aller Agents und der zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standard: "120" (zwei Minuten)|
-    |AgentCleanupTimeout|Die Anzahl von Sekunden, während der vor dem Abschließen des Testlaufs auf die Bereinigung aller Agents und zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standard: "120" (zwei Minuten)|
+    |AgentInitializeTimeout|Die Anzahl von Sekunden, während der am Anfang eines Testlaufs auf die Initialisierung aller Agents und der zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standard: "120 (zwei Minuten)".|
+    |AgentCleanupTimeout|Die Anzahl von Sekunden, während der vor dem Abschließen des Testlaufs auf die Bereinigung aller Agents und zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standard: "120 (zwei Minuten)".|
 
 - Test-Agent: *QTAgentService.exe.config*
 
     |Schlüsselname|Beschreibung|Wert|
     |-|-----------------|-|
-    |ControllerConnectionPeriodInSeconds|Die Anzahl von Sekunden zwischen Verbindungsversuchen mit dem Controller.|"n" Sekunden. Standard: "30" (dreißig Sekunden)|
-    |RemotingTimeoutSeconds|Die maximale Dauer eines Remotingaufrufs in Sekunden.|"n" Sekunden. Standard: "600" (zehn Minuten)|
-    |StopTestRunCallTimeoutInSeconds|Die Anzahl von Sekunden, während der auf den Aufruf zum Beenden des Testlaufs gewartet wird.|"n" Sekunden. Standard: "120" (zwei Minuten)|
-    |GetCollectorDataTimeout|Die Anzahl von Sekunden, während der auf den Datensammler gewartet wird.|"n" Sekunden. Standard: "300" (fünf Minuten)|
+    |ControllerConnectionPeriodInSeconds|Die Anzahl von Sekunden zwischen Verbindungsversuchen mit dem Controller.|"n" Sekunden. Standard: "30 (dreißig Sekunden)".|
+    |RemotingTimeoutSeconds|Die maximale Dauer eines Remotingaufrufs in Sekunden.|"n" Sekunden. Standard: "600 (zehn Minuten)".|
+    |StopTestRunCallTimeoutInSeconds|Die Anzahl von Sekunden, während der auf den Aufruf zum Beenden des Testlaufs gewartet wird.|"n" Sekunden. Standard: "120 (zwei Minuten)".|
+    |GetCollectorDataTimeout|Die Anzahl von Sekunden, während der auf den Datensammler gewartet wird.|"n" Sekunden. Standard: "300 (fünf Minuten)".|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>So geben Sie Agent-Timeoutoptionen für einen Testcontroller an
 
@@ -68,7 +68,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    - oder -
+    \- oder -
 
     Fügen Sie einen zusätzlichen Schlüssel hinzu, und geben Sie einen Timeoutwert an. Sie können z. B. den `AgentInitializeTimeout`-Schlüssel im Abschnitt `<appSettings>` hinzufügen und einen Wert von fünf Minuten angeben:
 
@@ -102,7 +102,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    - oder -
+    \- oder -
 
     Fügen Sie einen zusätzlichen Schlüssel hinzu, und geben Sie einen Timeoutwert an. Sie können z. B. den `RemotingTimeoutSeconds`-Schlüssel im Abschnitt `<appSettings>` hinzufügen und einen Wert von 15 Minuten angeben:
 
@@ -112,7 +112,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     </appSettings>
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)

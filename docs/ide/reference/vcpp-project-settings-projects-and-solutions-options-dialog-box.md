@@ -19,10 +19,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68918883"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
@@ -41,7 +41,7 @@ In diesem Dialogfeld können Sie Build- und Projekteinstellungen für C++ defini
 
   Aktiviert die Generierung der Buildprotokolldatei. Durch diese Option wird die Datei "BuildLog.htm" generiert, die sich im Zwischendateiverzeichnis des Projekts befindet. Durch jedes neue Build wird die vorherige Datei "BuildLog.htm" überschrieben.
 
- **No**
+ **Nein**
 
   Deaktiviert die Generierung der Buildprotokolldatei.
 
@@ -51,7 +51,7 @@ In diesem Dialogfeld können Sie Build- und Projekteinstellungen für C++ defini
 
 Listet Umgebungsvariablen in der Buildprotokolldatei auf. Diese Option gibt an, dass während der Erstellung von C++-Projekten alle Umgebungsvariablen als Echo in die Buildprotokolldatei aufgenommen werden.
 
- **No**
+ **Nein**
 
 Schließt Umgebungsvariablen aus der Buildprotokolldatei aus.
 
@@ -61,7 +61,7 @@ Schließt Umgebungsvariablen aus der Buildprotokolldatei aus.
 
   Aktiviert die Zeitnahme für das Build. Wenn diese Option ausgewählt ist, wird die Dauer der Builderstellung im Ausgabefenster ausgegeben. Weitere Informationen finden Sie im [Ausgabefenster](../../ide/reference/output-window.md).
 
- **No**
+ **Nein**
 
 Deaktiviert die Zeitnahme für das Build.
 
@@ -97,11 +97,11 @@ Konfiguriert den **Projektmappen-Explorer** so, dass Dateien im Projekt und Date
 
 Ermöglicht das Zwischenspeichern von Projektdaten in Visual Studio, damit die zwischengespeicherten Daten beim nächsten Öffnen des Projekts abrufen werden können und Sie sie nicht erneut aus den Projektdateien berechnen müssen. Durch zwischengespeicherte Daten kann die Projektladezeit deutlich verringert werden.
 
-**No**
+**Nein**
 
 Kein Verwenden von zwischengespeicherten Projektdaten. Analysieren Sie die Projektdateien jedes Mal, wenn das Projekt geladen wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von C/C++-Programmen](/cpp/build/projects-and-build-systems-cpp)
 - [Referenz zur C/C++-Erstellung](/cpp/build/reference/c-cpp-building-reference)

@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589642"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Korrigieren von nicht erkennbaren dynamischen Parametern in einem Webleistungstest
@@ -118,7 +118,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 13. Speichern Sie das Projekt.
 
-14. Legen Sie im **Projektmappen-Explorer** *Querystring.aspx* als Startseite fest.
+14. Legen Sie im **Projektmappen-Explorer***Querystring.aspx* als Startseite fest.
 
      ![Startseite auf Querystring.aspx festlegen](../test/media/web_test_dynamicparameter_setstartpage.png)
 
@@ -237,7 +237,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
      ![Text mit dem Parameter ersetzen](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Der QueryString-Parameter unter der *JScriptQuery.aspx*-Anforderung wird mit dem neuen Kontextparameter aktualisiert:  CustomQueryString=jScriptQueryString___{{Param0}}.
+     Der QueryString-Parameter unter der *JScriptQuery.aspx*-Anforderung wird mit dem neuen Kontextparameter aktualisiert: CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Auf QueryString angewendeter Parameter](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,9 +249,9 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 ## <a name="qa"></a>Fragen und Antworten
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Frage: Kann ich die Erkennung dynamischer Parameter erneut überprüfen, wenn meine Web-App geändert wurde?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>F: Kann ich die Erkennung dynamischer Parameter erneut überprüfen, wenn meine Web-App geändert wurde?
 
-**Antwort:** Ja, gehen Sie dazu wie folgt vor:
+**A:** Ja, nach folgendem Verfahren:
 
 1. Wählen Sie auf der Symbolleiste die Schaltfläche **Dynamische Parameter auf Webtestparameter hochstufen** aus.
 
@@ -263,6 +263,6 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 2. Aktivieren oder deaktivieren Sie das Kontrollkästchen neben den dynamischen Parametern, die Sie gern automatisch in Zusammenhang setzen möchten. Standardmäßig werden alle dynamischen Parameter überprüft.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Frage: Muss ich Visual Studio konfigurieren, damit dynamische Parameter erkannt werden?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>F: Muss ich Visual Studio konfigurieren, damit dynamische Parameter erkannt werden?
 
-**Antwort:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die Erkennung dynamischer Parameter weiterhin über den Webleistungstest-Editor ausführen.
+**A:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die Erkennung dynamischer Parameter weiterhin über den Webleistungstest-Editor ausführen.

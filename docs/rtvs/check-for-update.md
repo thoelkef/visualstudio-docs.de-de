@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75843742"
 ---
 # <a name="rtvs-current-version"></a>Aktuelle Version von RTVS
@@ -27,4 +27,4 @@ Für Visual Studio 2015 steht der neueste Installer unter [aka.ms/rtvs-current](
 
 Informationen zu Visual Studio- und Windows-Anforderungen finden Sie unter [Installation](installing-r-tools-for-visual-studio.md).
 
-Updates zu Microsoft R Open und Microsoft Machine Learning Server (früher Microsoft R Server) finden Sie unter: [Microsoft R-Produkte](https://azure.microsoft.com/?ocid=cloudplat_hp).
+Updates zu Microsoft R Open und Microsoft Machine Learning Server (früher Microsoft R Server) finden Sie unter [Microsoft R-Produkte](https://azure.microsoft.com/?ocid=cloudplat_hp).

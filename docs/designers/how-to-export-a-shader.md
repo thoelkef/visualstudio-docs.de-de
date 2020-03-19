@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Exportieren eines Shaders'
+title: 'Gewusst wie: Exportieren eines Shaders'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589434"
 ---
 # <a name="how-to-export-a-shader"></a>Vorgehensweise: Exportieren eines Shaders
@@ -25,7 +25,7 @@ Nachdem Sie einen Shader mithilfe des Shader-Designers erstellt haben, und bevor
 
 1. Öffnen Sie in Visual Studio eine DGSL-Datei vom Typ **visuelles Shaderdiagramm**.
 
-     Wenn keine **DGSL**-Datei (Visual Shader Graph) zum Öffnen vorhanden ist, erstellen Sie eine. Gehen Sie hierzu vor, wie unter [Vorgehensweise: Erstellen eines einfachen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) beschrieben.
+     Wenn Sie keine **DGSL**-Datei (Visual Shader Graph) zum Öffnen haben, erstellen Sie eine, wie es unter [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) beschrieben wird.
 
 2. Klicken Sie auf der Symbolleiste des **Shader-Designers** auf **Erweitert** > **Exportieren** > **Exportieren als**. Das Dialogfeld **Shader exportieren** wird angezeigt.
 
@@ -41,7 +41,7 @@ Nachdem Sie einen Shader mithilfe des Shader-Designers erstellt haben, und bevor
 
 4. Geben Sie im Kombinationsfeld **Dateiname** einen Namen für den exportierten Shader an, und klicken Sie auf die Schaltfläche **Speichern**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Erstellen eines einfachen Farbshaders](../designers/how-to-create-a-basic-color-shader.md)
 - [Shader-Designer](../designers/shader-designer.md)

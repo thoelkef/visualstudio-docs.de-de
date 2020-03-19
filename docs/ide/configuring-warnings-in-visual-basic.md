@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114733"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
@@ -32,7 +32,7 @@ Sie können Warnungen auf zwei Arten konfigurieren: Mit dem **Projekt-Designer**
 
 Im **Projekt-Designer** können Sie Warnungen auf der Registerkarte **Kompilieren** aktivieren und deaktivieren. Wenn Sie alle Warnungen deaktivieren möchten, aktivieren Sie das Kontrollkästchen **Alle Warnungen deaktivieren**. Wenn alle Warnungen als Fehler behandelt werden sollen, aktivieren Sie das Kontrollkästchen **Alle Warnungen als Fehler behandeln**. Einige Warnungen können in der angezeigten Tabelle je nach Bedarf als Fehler oder als Warnungen konfiguriert werden.
 
-Wenn **Option Strict** auf **Off** festgelegt ist, können Warnungen im Zusammenhang mit **Option Strict** nicht unabhängig voneinander behandelt werden. Wenn **Option Strict** auf **On** festgelegt ist, werden die zugeordneten Warnungen unabhängig von deren Status als Fehler behandelt. Wenn **Option Strict** durch Angabe von `/optionstrict:custom` im Befehlszeilencompiler auf **Custom** festgelegt ist, können **Option Strict**-Warnungen unabhängig voneinander aktiviert bzw. deaktiviert werden.
+Wenn **Option Strict** auf **Off** festgelegt ist, können Warnungen im Zusammenhang mit **Option Strict** nicht unabhängig voneinander behandelt werden. Wenn **Option Strict** auf **On** festgelegt ist, werden die zugeordneten Warnungen unabhängig von deren Status als Fehler behandelt. Wenn **Option Strict** durch Angabe von **im Befehlszeilencompiler auf**Custom`/optionstrict:custom` festgelegt ist, können **Option Strict**-Warnungen unabhängig voneinander aktiviert bzw. deaktiviert werden.
 
 Mithilfe der Befehlszeilenoption **/warnaserror** des Compilers kann ebenfalls festgelegt werden, ob Warnungen als Fehler behandelt werden. Sie können bei dieser Option mit den Zeichen + bzw. - in einer durch Trennzeichen getrennten Liste angeben, welche Warnungen als Fehler behandelt werden sollen. In der folgenden Tabelle werden die möglichen Optionen aufgeführt.
 
@@ -117,7 +117,7 @@ Wird generiert, wenn ein `Catch`-Block durch dessen Beziehung zu anderen definie
 
 ID: 42029, 42031
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Fehlertypen](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Try...Catch...Finally-Anweisung](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633719"
 ---
 # <a name="incremental-builds"></a>Inkrementelle Builds
@@ -78,6 +78,6 @@ Aufgrund des Ausgaberückschlusses müssen Sie einem Ziel eine `CreateProperty`-
 
 Wenn das Ziel ausgeführt wird, erstellt dieser Code die Eigenschaft „CompileRan“ und weist ihr den Wert `true` zu. Wenn das Ziel übersprungen wird, wird CompileRan nicht erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ziele](../msbuild/msbuild-targets.md)

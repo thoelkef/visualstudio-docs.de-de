@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62535957"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Einrichten einer Python-Umgebung in Azure App Service (Windows)
@@ -154,7 +154,7 @@ Die an dieser Stelle definierten `<appSettings>` sind für Ihre Anwendung als Um
 - `WSGI_HANDLER` muss auf eine durch Ihre App importierbare WSGI-Anwendung verweisen.
 - `WSGI_LOG` ist optional, wird jedoch zum Debuggen Ihrer App empfohlen.
 
-Zusätzliche Informationen zu *web.config*-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter [Veröffentlichen in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Zusätzliche Informationen zu [web.config](publishing-python-web-applications-to-azure-from-visual-studio.md)-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter *Veröffentlichen in Azure*.
 
 ## <a name="install-packages"></a>Installieren von Paketen
 

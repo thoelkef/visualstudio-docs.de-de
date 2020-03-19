@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592047"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Verwenden von Assert-Klassen für Komponententests
@@ -47,6 +47,6 @@ Wenn Sie eine neue Assert-Ausnahmeklasse schreiben, kann die Ausnahme leichter a
 
 Um zu überprüfen, ob eine Ausnahme tatsächlich wie erwartet durch eine Methode in Ihrem Anwendungscode ausgelöst wird, verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>-Methode.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)

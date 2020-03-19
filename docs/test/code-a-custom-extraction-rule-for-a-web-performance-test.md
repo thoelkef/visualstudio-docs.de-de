@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591176"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest
@@ -206,7 +206,7 @@ End Namespace
 
 Die <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*>-Methode enthält die Basisfunktionalität einer Extraktionsregel. An die <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*>-Methode im vorherigen Beispiel wird <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> übergeben, worin die Antwort der Anforderung zurückgegeben wird, auf die diese Extraktionsregel angewendet wird. Die Antwort beinhaltet ein <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>, das alle Tags aus der Antwort enthält. Eingabetags werden dabei aus dem <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> herausgefiltert. Jedes Eingabetag wird auf ein `name`-Attribut geprüft, dessen Wert mit der vom Benutzer bereitgestellten `Name`-Eigenschaft übereinstimmt. Wenn ein Tag mit diesem übereinstimmenden Attribut gefunden wird, wird versucht, einen im `value`-Attribut enthaltenen Wert zu extrahieren, sofern ein value-Attribut vorhanden ist. Ist dieses Attribut ebenfalls vorhanden, werden Name und Wert des Tags extrahiert und dem Webleistungstestkontext hinzugefügt. Die Extraktionsregel wurde damit erfolgreich ausgeführt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

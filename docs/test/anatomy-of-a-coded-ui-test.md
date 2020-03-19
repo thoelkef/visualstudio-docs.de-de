@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591202"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Aufbau eines Tests der programmierten UI
@@ -34,7 +34,7 @@ Wenn Sie einen Test der programmierten UI erstellen, erstellt der **Test-Generat
 |[UIMap.uitest](#UIMapuitest)|Die XML-Zuordnung der Benutzeroberfläche für den Test.|Nein|
 
 ### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs
-Diese Datei enthält Code, der beim Erstellen eines Tests automatisch vom **Test-Generator der programmiertenUI** erstellt wird. Diese Datei wird jedes Mal neu erstellt, wenn ein Test geändert wird. In dieser Datei kann daher kein Code hinzugefügt oder geändert werden.
+Diese Datei enthält Code, der beim Erstellen eines Tests automatisch vom **Test-Generator der programmierten**{3}UI{4} erstellt wird. Diese Datei wird jedes Mal neu erstellt, wenn ein Test geändert wird. In dieser Datei kann daher kein Code hinzugefügt oder geändert werden.
 
 #### <a name="declarations-section"></a>Deklarationsabschnitt
 Dieser Abschnitt enthält die folgenden Deklarationen für eine Windows-Benutzeroberfläche.
@@ -266,7 +266,7 @@ Dies ist eine XML-Datei, die die Struktur der Aufzeichnung des Tests der program
 
 Die *UIMap.uitest*-Datei kann nicht direkt bearbeitet werden. Sie können den Test jedoch mit dem Generator für programmierte UI bearbeiten, wodurch die Dateien *UIMap.uitest* und [*UIMap.Designer.cs*](#UIMapDesignerFile) automatisch geändert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>
@@ -282,4 +282,4 @@ Die *UIMap.uitest*-Datei kann nicht direkt bearbeitet werden. Sie können den Te
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md)
 - [Bewährte Methoden für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
 - [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Supported Configurations and Platforms for Coded UI Tests and Action Recordings (Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen)](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

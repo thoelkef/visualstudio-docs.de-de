@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594161"
 ---
 # <a name="c-code-snippets"></a>C#-Codeausschnitte
@@ -44,7 +44,7 @@ Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enth
 |do|Erstellt eine [do](/dotnet/csharp/language-reference/keywords/do) `while`-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |else|Erstellt einen [else](/dotnet/csharp/language-reference/keywords/if-else)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |enum|Erstellt eine [enum](/dotnet/csharp/language-reference/keywords/enum)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
-|equals|Erstellt eine Methodendeklaration, die die in der <xref:System.Object>-Klasse definierte <xref:System.Object.Equals%2A>-Methode außer Kraft setzt.|Innerhalb einer Klasse oder Struktur.|
+|ist gleich|Erstellt eine Methodendeklaration, die die in der <xref:System.Object.Equals%2A>-Klasse definierte <xref:System.Object>-Methode außer Kraft setzt.|Innerhalb einer Klasse oder Struktur.|
 |exception|Erstellt eine Deklaration für eine Klasse, die von einer Ausnahme abgeleitet wird (standardmäßig <xref:System.Exception>).|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
 |for|Erstellt eine [for](/dotnet/csharp/language-reference/keywords/for)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |foreach|Erstellt eine [foreach](/dotnet/csharp/language-reference/keywords/foreach-in)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
@@ -57,7 +57,7 @@ Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enth
 |iterindex|Erstellt ein „benanntes“ Iterator-/Indexerpaar unter Verwendung einer geschachtelten Klasse.|Innerhalb einer Klasse oder Struktur.|
 |lock|Erstellt einen [lock](/dotnet/csharp/language-reference/keywords/lock-statement)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |mbox|Erstellt einen Aufruf an <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Sie müssen möglicherweise einen Verweis auf *System.Windows.Forms.dll* hinzufügen.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|namespace|Erstellt eine [namespace](/dotnet/csharp/language-reference/keywords/namespace)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|
+|Namespace|Erstellt eine [namespace](/dotnet/csharp/language-reference/keywords/namespace)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|
 |prop|Erstellt eine Deklaration mit [automatisch implementierter Eigenschaft](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Innerhalb einer Klasse oder Struktur.|
 |propfull|Erstellt eine Eigenschaftendeklaration mit `get`-Accessor und `set`-Accessor.|Innerhalb einer Klasse oder Struktur.|
 |propg|Erstellt eine schreibgeschützte [automatisch implementierte Eigenschaft](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) mit einem privaten `set`-Accessor.|Innerhalb einer Klasse oder Struktur.|
@@ -65,14 +65,14 @@ Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enth
 |struct|Erstellt eine [struct](/dotnet/csharp/language-reference/keywords/struct)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
 |svm|Erstellt eine Deklaration der Main-Methode mit [static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void).|Innerhalb einer Klasse oder Struktur.|
 |switch|Erstellt einen [switch](/dotnet/csharp/language-reference/keywords/switch)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|try|Erstellt einen [try-catch](/dotnet/csharp/language-reference/keywords/try-catch)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
+|Versuch|Erstellt einen [try-catch](/dotnet/csharp/language-reference/keywords/try-catch)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |tryf|Erstellt einen [try-finally](/dotnet/csharp/language-reference/keywords/try-finally)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |unchecked|Erstellt einen [unchecked](/dotnet/csharp/language-reference/keywords/unchecked)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |unsafe|Erstellt einen [unsafe](/dotnet/csharp/language-reference/keywords/unsafe)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|Verwenden|Erstellt eine [using](/dotnet/csharp/language-reference/keywords/using-directive)-Direktive.|In einem Namespace (einschließlich des globalen Namespaces).|
+|Mithilfe von|Erstellt eine [using](/dotnet/csharp/language-reference/keywords/using-directive)-Direktive.|In einem Namespace (einschließlich des globalen Namespaces).|
 |while|Erstellt eine [while](/dotnet/csharp/language-reference/keywords/while)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codeausschnittfunktionen](../ide/code-snippet-functions.md)
 - [Codeausschnitte](../ide/code-snippets.md)

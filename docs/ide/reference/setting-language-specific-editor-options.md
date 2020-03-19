@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590838"
 ---
 # <a name="set-language-specific-editor-options"></a>Festlegen von sprachspezifischen Editoroptionen
@@ -45,7 +45,7 @@ Beschreibt Einstellungen, mit denen das Verhalten der IntelliSense-Vervollständ
 [Optionen, Text-Editor, XAML, Formatierung](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Beschreibt Einstellungen für die Anordnung von Elementen und Attributen in XAML-Dokumenten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen des Editors](../how-to-change-text-case-in-the-editor.md)
 - [Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit EditorConfig](../../ide/create-portable-custom-editor-options.md)

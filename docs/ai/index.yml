@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Visual Studio-Tools für KI
+title: Visual Studio Tools für KI
 metadata:
   document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
   title: Visual Studio Tools for AI | Microsoft-Dokumentation
@@ -33,7 +33,7 @@ sections:
         style: ordered
         items:
           - html: <a href="/visualstudio/ai/tensorflow-vm">Trainieren eines TensorFlow-Modells in der Cloud</a>
-  - title: Proben
+  - title: Beispiele
     items:
       - type: list
         style: unordered

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75678999"
 ---
 # <a name="debug-python-and-c-together"></a>Gleichzeitiges Debuggen von Python und C++
@@ -38,7 +38,7 @@ Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel besch
 
 |   |   |
 |---|---|
-| ![Symbol für Filmkamera für das Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie im Video [Deep Dive: Create Native Modules (Ausführliche Erläuterungen: Erstellen nativer Module)](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie in diesem Video: [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Ausführliche Erläuterungen: Erstellen nativer Module) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Aktivieren des Debuggens im gemischten Modus in einem Python-Projekt
 
@@ -47,7 +47,7 @@ Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel besch
     ![Aktivieren des Debuggens von nativem Code](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > Wenn Sie das Debuggen von nativem Code aktivieren, kann das Python-Ausgabefenster möglicherweise sofort verschwinden, wenn das Programm ohne die übliche Pause **Drücken Sie eine beliebige Taste, um fortzufahren...** abgeschlossen wurde. Um eine Pause zu erzwingen, fügen Sie die `-i`-Option dem Feld **Ausführen** > **Interpreterargumente** auf der Registerkarte **Debuggen** hinzu, wenn Sie das Debuggen von nativem Code aktivieren. Durch dieses Argument wird der Python-Interpreter in den interaktiven Modus versetzt, nachdem der Code beendet wurde. Zu diesem Zeitpunkt wartet er darauf, dass Sie zum Beenden **STRG**+**Z** > **EINGABETASTE** drücken.
+    > Wenn Sie das Debuggen von nativem Code aktivieren, kann das Python-Ausgabefenster möglicherweise sofort verschwinden, wenn das Programm ohne die übliche Pause **Drücken Sie eine beliebige Taste, um fortzufahren...** abgeschlossen wurde. Um eine Pause zu erzwingen, fügen Sie die `-i`-Option dem Feld **Ausführen** > **Interpreterargumente** auf der Registerkarte **Debuggen** hinzu, wenn Sie das Debuggen von nativem Code aktivieren. Dieses Argument den Python-Interpreter in den interaktiven Modus versetzt, nach dem Code abgeschlossen ist, die zu diesem Zeitpunkt wartet er Sie drücken **STRG**+**Z** > **EINGABETASTE**  zu beenden.
 
 1. Wenn Sie den Debugger für den gemischten Modus an einen vorhandenen Prozess anhängen (**Debuggen** > **An den Prozess anhängen**), klicken Sie auf die Schaltfläche **Auswählen**, um das Dialogfeld **Codetyp auswählen** zu öffnen. Wählen Sie die Option **Diese Codetypen debuggen** aus, und wählen Sie in der Liste sowohl **Nativ** als auch **Python** aus:
 
@@ -139,7 +139,7 @@ C-Typen, die **[Python-Ansicht]** -Knoten anzeigen (sofern aktiviert):
 
 Bei Python 2.x allerdings deklariert jeder Objekttyp seinen Header üblicherweise als Auflistung von Inlinefeldern, und es gibt keine Verknüpfung auf Typsystemebene im C/C++-Code zwischen benutzerdefiniert erstellten Typen und `PyObject`. Um **[Python-Ansicht]** -Knoten für solche benutzerdefinierten Typen zu aktivieren, bearbeiten Sie die Datei *PythonDkm.natvis* im [Installationsverzeichnis für Python Tools](installing-python-support-in-visual-studio.md#install-locations), und fügen Sie im XML-Code ein weiteres Element für Ihre C-Struktur oder C++-Klasse hinzu.
 
-Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3123](https://www.python.org/dev/peps/pep-3123/) zu folgen und statt `PyObject_HEAD` ein explizites `PyObject ob_base;`-Feld zu verwenden. Allerdings ist dieses Vorgehen aus Gründen der Abwärtskompatibilität nicht immer möglich.
+Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3123](https://www.python.org/dev/peps/pep-3123/) zu folgen und statt `PyObject ob_base;` ein explizites `PyObject_HEAD`-Feld zu verwenden. Allerdings ist dieses Vorgehen aus Gründen der Abwärtskompatibilität nicht immer möglich.
 
 ### <a name="native-values-view-in-python-code"></a>Ansicht der nativen Werte im Python-Code
 
@@ -171,8 +171,8 @@ Der Debugger für den gemischten Modus unterscheidet sich vom [Python-Standardde
 
 - Nicht unterstützte Funktionen: Bedingte Haltepunkte, **Fenster zum interaktiven Debuggen** und plattformübergreifendes Remotedebuggen.
 - **Direktfenster**: Ist verfügbar, allerdings mit eingeschränkter Funktionalität – einschließlich aller hier aufgeführten Einschränkungen.
-- Unterstützte Python-Versionen: Nur CPython 2.7 und 3.3 (und höher)
-- Visual Studio Shell: Wenn Sie Python mit Visual Studio Shell (wenn Sie Python beispielsweise mithilfe des integrierten Installationsprogramms installiert haben) verwenden, kann Visual Studio keine C++-Projekte öffnen, und für C++-Dateien stehen nur die Bearbeitungsfunktionen eines einfachen Text-Editors zur Verfügung. Das C/C++-Debuggen und das Debuggen im gemischten Modus werden in Shell jedoch vollständig unterstützt, einschließlich Quellcode, Einzelschrittausführung im nativen Code und C++-Ausdrucksauswertung in Debuggerfenstern.
+- Unterstützte Python-Versionen: Nur CPython 2.7 und 3.3+.
+- Visual Studio Shell: Bei Verwendung von Python mit Visual Studio Shell (wenn Sie Python beispielsweise mithilfe des integrierten Installationsprogramms installiert haben) kann Visual Studio keine C++-Projekte öffnen, und für C++-Dateien stehen nur die Bearbeitungsfunktionen eines einfachen Text-Editors zur Verfügung. Das C/C++-Debuggen und das Debuggen im gemischten Modus werden in Shell jedoch vollständig unterstützt, einschließlich Quellcode, Einzelschrittausführung im nativen Code und C++-Ausdrucksauswertung in Debuggerfenstern.
 - Anzeigen und Erweitern von Objekten: Beim Anzeigen von Python-Objekten in den Toolfenstern **Lokal** und **Überwachung** des Debuggers zeigt der Debugger im gemischten Modus nur die Struktur der Objekte an. Es werden weder automatisch Eigenschaften ausgewertet noch berechnete Attribute angezeigt. Bei Auflistungen werden nur Elemente für integrierte Auflistungstypen angezeigt (`tuple`, `list`, `dict`, `set`). Benutzerdefinierte Auflistungstypen werden nur dann als Auflistungen visualisiert, wenn sie von einem integrierten Auflistungstyp vererbt werden.
 - Ausdrucksauswertung: Siehe oben.
 

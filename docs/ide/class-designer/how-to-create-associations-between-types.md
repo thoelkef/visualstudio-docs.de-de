@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)'
+title: 'Gewusst wie: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590383"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Vorgehensweise: Erstellen von Zuordnungen zwischen Typen im Klassen-Designer
@@ -54,6 +54,6 @@ Führen Sie alternativ die folgenden Schritte aus:
 
    Der Name wird im Fenster **Klassendetails**, auf der Assoziationslinie, im **Eigenschaftenfenster** und im Code aktualisiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Wechseln zwischen Member- und Zuordnungsnotation](how-to-change-between-member-notation-and-association-notation.md)

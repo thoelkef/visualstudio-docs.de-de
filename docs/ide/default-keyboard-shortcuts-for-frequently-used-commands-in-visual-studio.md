@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596722"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Beliebte Tastenkombinationen für Visual Studio
@@ -32,7 +32,7 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |Build.Compile|**STRG+F7** [Global]|
 |Build.RunCodeAnalysisonSolution|**ALT+F11** [Global]|
 
-## <a name="debug"></a>Debug
+## <a name="debug"></a>Debuggen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |
@@ -169,7 +169,7 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |Window.NextDocumentWindowNav|**STRG+TAB** [Global]|
 |Window.NextSplitPane|**F6** [Global]|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Alle Tastenkombinationen in Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

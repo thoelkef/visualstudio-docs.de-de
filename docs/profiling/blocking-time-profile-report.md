@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926313"
 ---
 # <a name="blocking-time-profile-report"></a>Blockierungszeit-Profilbericht
@@ -31,14 +31,14 @@ Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische 
 ## <a name="blocking-time-report-columns"></a>Spalten des Blockierungszeitberichts
  Die folgende Tabelle zeigt die Spalten für die einzelnen Blockierungszeitberichte.
 
-|Spaltenname|BESCHREIBUNG|
+|Spaltenname|Beschreibung|
 |-----------------|-----------------|
 |**Name**|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|
 |**Instanzen**|Die Anzahl der Instanzen des blockierenden Aufrufs für den sichtbaren Zeitraum.|
 |**Inklusive Blockierungszeit**|Die Gesamtblockierungszeit, die für alle Stapel angefallen ist, für die bis zu dieser Ebene der Aufruflistenstruktur ein Rollup ausgeführt wird. Die inklusive Zahl ist die Summe aus der exklusiven Blockierungszeit für diese Funktion und der exklusiven Blockierungszeit für alle untergeordneten Knoten.|
 |**Exklusive Blockierungszeit**|Die aufgewendete Gesamtblockierungszeit, während der sich diese Funktion auf der untersten Ebene der Aufrufliste befand. Ein eindeutiger Eintrag in der Aufrufliste, der eine hohe exklusive Blockierungszeit aufweist, kann eine interessante Funktion sein.|
 |**API-/Warte-Kategorie**|Wird nur für Funktionen auf der untersten Ebene der Aufrufliste angezeigt. Wenn die Signatur des blockierenden Aufrufs erkannt wird, wird der Name der blockierenden API angezeigt. Wird die Signatur nicht erkannt, werden vom Kernel gemeldete Informationen bereitgestellt.|
-|**Details**|Vollqualifizierter Name der Funktion. Dies umfasst die Zeilenanzahl, sofern verfügbar.|
+|**Details**|Der vollqualifizierte Name der Funktion. Dies umfasst die Zeilenanzahl, sofern verfügbar.|
 
 ### <a name="synchronization"></a>Synchronisierung
  Der Synchronisierungsbericht enthält die Aufrufe, die für bei der Synchronisierung blockierte Segmente verantwortlich sind, und die Gesamtblockierungszeit der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Synchronisierungszeit](../profiling/synchronization-time.md).
@@ -58,5 +58,5 @@ Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische 
 ### <a name="ui-processing"></a>Benutzeroberflächenverarbeitung
  Der E/A-Verarbeitungsbericht enthält die Aufrufe, die für bei der Benutzeroberflächenverwaltung blockierte Segmente verantwortlich sind, und die Gesamtblockierungszeit der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Benutzeroberflächenverarbeitungszeit](../profiling/ui-processing-time.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Threadansicht](../profiling/threads-view-parallel-performance.md)

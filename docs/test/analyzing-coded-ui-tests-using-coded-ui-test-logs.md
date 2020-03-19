@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591215"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
@@ -20,7 +20,7 @@ Testprotokolle für codierte UI filtern wichtige Informationen zum ausgeführten
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Schritt 1: Protokollierung aktivieren
+## <a name="step-1-enable-logging"></a>Schritt 1: Aktivieren der Protokollierung
 
 Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des Protokolls:
 
@@ -87,7 +87,7 @@ Wenn Sie einen Test der programmierten UI mit der modifizierten Datei *QTAgent\*
 
      ![Protokolldatei aus Test der codierten UI](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Vorgehensweise: Ausführen von Tests in Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

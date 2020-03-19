@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591332"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
@@ -43,7 +43,7 @@ Wenn eine Tastenkombinationen einem Befehl im *globalen* Kontext und in keinem a
 
 ## <a name="identify-a-keyboard-shortcut"></a>Nachschlagen einer Tastenkombination
 
-1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
@@ -63,7 +63,7 @@ Wenn eine Tastenkombinationen einem Befehl im *globalen* Kontext und in keinem a
 
 ## <a name="customize-a-keyboard-shortcut"></a>Anpassen einer Tastenkombination
 
-1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
@@ -147,6 +147,6 @@ Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner *%USERPR
 
    ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

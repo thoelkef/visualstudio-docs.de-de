@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595487"
 ---
 # <a name="list-threads-command"></a>Befehl "Threads auflisten"
@@ -35,7 +35,7 @@ Debug.ListThreads [index]
 
 Dies ist optional. Wählt einen Thread nach seinem Index als aktuellen Thread aus
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 Wenn angegeben, kennzeichnet das `index`-Argument den angegebenen Thread als aktuellen Thread. Ein Sternchen (*) wird in der Liste neben dem aktuellen Thread angezeigt.
 
 ## <a name="example"></a>Beispiel
@@ -44,11 +44,11 @@ Wenn angegeben, kennzeichnet das `index`-Argument den angegebenen Thread als akt
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Befehl "Aufrufliste auflisten"](../../ide/reference/list-call-stack-command.md)
-- [Befehl "Disassemblierung auflisten"](../../ide/reference/list-disassembly-command.md)
+- [Disassembly auflisten (Befehl)](../../ide/reference/list-disassembly-command.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

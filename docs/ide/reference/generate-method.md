@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f166c31a1615c951170367223a5b19ab93811b5d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595591"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generieren einer Methode in Visual Studio
@@ -22,9 +22,9 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung:** Hiermit können Sie sofort eine Methode zu einer Klasse hinzufügen.
+**Beschreibung**: Hiermit können Sie sofort eine Methode zu einer Klasse hinzufügen.
 
-**Hintergrund:** Sie führen eine neue Methode ein, die ordnungsgemäß automatisch deklariert werden soll.
+**Hintergrund**: Sie führen eine neue Methode ein, die ordnungsgemäß automatisch deklariert werden soll.
 
 **Vorteile**: Sie können die Methode und Parameter vor der Verwendung zwar deklarieren, bei diesem Feature wird die Deklaration jedoch automatisch generiert.
 
@@ -66,7 +66,7 @@ Diese Codegenerierung gilt für:
 
        ![Ergebnis der Methodengenerierung in Visual Basic](media/method-result-vb.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

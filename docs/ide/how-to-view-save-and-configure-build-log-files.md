@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114468"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
@@ -46,7 +46,7 @@ Sie können auch Protokolle generieren, indem Sie MSBuild direkt von der Befehls
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Ändern der Informationsmenge im Buildprotokoll
 
-1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 2. Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen**.
 
@@ -69,7 +69,7 @@ Sie können auch Protokolle generieren, indem Sie MSBuild direkt von der Befehls
 
 Binärprotokolle sind ein optionales Feature für .NET-Projekte, mit dem das Suchen von Informationen in umfangreichen Protokollen benutzerfreundlicher und einfacher wird. Um Binärprotokolle zu verwenden, installieren Sie die [Projektsystemtools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Weitere Informationen finden Sie unter [https://msbuildlog.com](https://msbuildlog.com) und [Binary Log](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md) (Binärprotokoll).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)

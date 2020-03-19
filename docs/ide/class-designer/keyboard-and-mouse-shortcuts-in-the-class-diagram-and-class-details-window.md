@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590760"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“
@@ -63,8 +63,8 @@ Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 |**UMSCHALT**+**Pfeiltasten**|In Typformen|Erstellen einer fortlaufenden Auswahl, die aus Formelementen wie Member, geschachtelte Typen oder Depots besteht. Diese Tastenkombinationen unterstützen kein Umschließen.|
 |**Home**|In Typformen|Navigiert zum Titel der Form der obersten Ebene.|
 |**Home**|Formen der obersten Ebene|Navigiert zur ersten Form im Diagramm.|
-|**ENDE**|In Typformen|Navigiert zum letzten sichtbaren Element in der Form.|
-|**ENDE**|Formen der obersten Ebene|Navigiert zur letzten Form im Diagramm.|
+|**Ende**|In Typformen|Navigiert zum letzten sichtbaren Element in der Form.|
+|**Ende**|Formen der obersten Ebene|Navigiert zur letzten Form im Diagramm.|
 |**UMSCHALT**+**POS1**|In Typform|Wählt Elemente innerhalb der Form aus, beginnend mit dem aktuellen Element und endend mit dem obersten Element in derselben Form.|
 |**UMSCHALT**+**Ende**|In Typform|Identisch mit **UMSCHALT**+**POS1**, aber in Von-oben-nach-unten-Richtung.|
 |**EINGABETASTE**|Alle Kontexte|Ruft die Standardaktion für die Form auf, die auch durch Doppelklicken verfügbar ist. In den meisten Fällen ist dies "Code anzeigen", aber für einige Elemente ist das unterschiedlich definiert (Lollipops, Depot-Header, Lollipop Bezeichnungen).|
@@ -100,7 +100,7 @@ Verwenden Sie die folgenden Tasten, um im Fenster **Klassendetails** zu navigier
 |**NACH-LINKS-TASTE**|Befindet sich der Cursor in der Spalte "Name", bewirkt ein Drücken der NACH-LINKS-TASTE, dass der aktuelle Knoten in der Hierarchie reduziert wird (falls er geöffnet ist).|
 |**NACH-RECHTS-TASTE**|Befindet sich der Cursor in der Spalte „Name“, bewirkt ein Drücken der NACH-RECHTS-TASTE, dass der aktuelle Knoten in der Hierarchie erweitert wird (falls er reduziert ist).|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen und Konfigurieren von Typmembern](creating-and-configuring-type-members.md)
 - [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../reference/how-to-use-the-keyboard-exclusively.md)

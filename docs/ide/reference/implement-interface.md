@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595552"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementieren einer Schnittstelle in Visual Studio
@@ -22,9 +22,9 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung:** Hiermit können Sie sofort den für die Implementierung einer Schnittstelle erforderlichen Code generieren.
+**Beschreibung**: Hiermit können Sie sofort den für die Implementierung einer Schnittstelle erforderlichen Code generieren.
 
-**Hintergrund:** Sie möchten von einer Schnittstelle erben.
+**Hintergrund**: Sie möchten von einer Schnittstelle erben.
 
 **Vorteile**: Sie könnten nacheinander alle Schnittstellen manuell implementieren, doch bei diesem Feature werden alle Methodensignaturen automatisch generiert.
 
@@ -72,7 +72,7 @@ Diese Codegenerierung gilt für:
    >
    > ![Schnittstelle explizit implementieren – Ergebnis](media/interface-explicitresult-cs.png);
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

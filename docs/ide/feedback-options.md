@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847464"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio-Feedbackoptionen
@@ -54,7 +54,7 @@ Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://deve
 
 Wenn Sie eine Idee oder einen Vorschlag zur Verbesserung von Visual Studio haben, lassen Sie es uns wissen, indem Sie das Tool **Feature vorschlagen** verwenden. Wählen Sie in Visual Studio das Feedbacksymbol in der oberen rechten Ecke aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Feature vorschlagen**.
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Vorschlagen eines Features](suggest-a-feature.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Übersicht: Vorschlagen einer Features](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://deve
 
 Wenn Sie eine Idee oder einen Vorschlag zur Verbesserung von Visual Studio haben, lassen Sie es uns wissen, indem Sie das Tool **Vorschlag senden** verwenden. Wählen Sie in Visual Studio das Feedbacksymbol neben dem Suchfeld aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Vorschlag senden**.
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Vorschlagen eines Features](suggest-a-feature.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Übersicht: Vorschlagen einer Features](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Wenn Sie die Fragen und Antworten mit anderen Entwicklern teilen möchten, erwä
 
 Sie können auch Code anderer Entwickler anzeigen und Ihre eigenen Beispiele auf der Seite [Codebeispiele durchsuchen](/samples/browse/) freigeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Behandlung von Installationsproblemen oder Problemen beim Upgrade](../install/troubleshooting-installation-issues.md)
 * [Developer Community data privacy (Datenschutz in der Entwicklercommunity)](developer-community-privacy.md)

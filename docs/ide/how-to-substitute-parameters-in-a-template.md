@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591410"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Vorgehensweise: Ersetzen von Parametern in einer Vorlage
@@ -26,7 +26,7 @@ Im folgenden Abschnitt wird erläutert, wie Sie eine Vorlage ändern, um den Nam
 
 ## <a name="example---namespace-name"></a>Beispiel: Namespacename
 
-1. Fügen Sie den Parameter in eine oder mehrere Codedateien in der Vorlage ein. Zum Beispiel:
+1. Fügen Sie den Parameter in eine oder mehrere Codedateien in der Vorlage ein. Beispiel:
 
     ```csharp
     namespace $safeprojectname$
@@ -34,13 +34,13 @@ Im folgenden Abschnitt wird erläutert, wie Sie eine Vorlage ändern, um den Nam
 
 1. Suchen Sie in der *VSTEMPLATE*-Datei der Vorlage nach dem `ProjectItem`-Element, in dem diese Datei enthalten ist.
 
-1. Legen Sie das `ReplaceParameters`-Attribut für das `ProjectItem`-Element auf `true` fest:
+1. Legen Sie das `ReplaceParameters`-Attribut für das `true`-Element auf `ProjectItem` fest:
 
     ```xml
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
