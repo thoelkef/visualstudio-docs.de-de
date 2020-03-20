@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72777429"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Lokales Trainieren eines TensorFlow-Modells
@@ -23,7 +23,7 @@ In diesem Schnellstart trainieren Sie ein TensorFlow-Modell mit einem [MNIST](ht
 
 Die MNIST-Datenbank enthält 60.000 Trainingsbeispiele und 10.000 Testbeispiele für handgeschriebene Ziffern.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Stellen Sie vor Beginn sicher, dass Sie Folgendes installiert haben:
 
@@ -38,7 +38,7 @@ C:\>pip.exe install tensorflow
 ### <a name="numpy-and-scipy"></a>NumPy und SciPy
 Installieren Sie [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) und [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
-### <a name="download-sample-code"></a>Herunterladen von Beispielcode
+### <a name="download-sample-code"></a>Beispielcode herunterladen
 Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai) herunter, das Beispiele für die ersten Schritte mit Deep Learning in TensorFlow, CNTK, Theano usw. enthält.
 
 ## <a name="open-solution-and-train-model"></a>Öffnen einer Projektmappe und Trainieren eines Modells

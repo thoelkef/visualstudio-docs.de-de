@@ -15,17 +15,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579964"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
 In dieser 5-10-minütigen Einführung in die Bedienung von Visual Studio erstellen Sie eine einfache Hallo-Welt-Web-App unter Verwendung einer ASP.NET-Projektvorlage und der Programmiersprache C#.
 
-## <a name="before-you-begin"></a>Vorbereitungen
+## <a name="before-you-begin"></a>Voraussetzungen
 
 ### <a name="install-visual-studio"></a>Installieren von Visual Studio
 
@@ -53,7 +53,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 1. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **.NET Core** aus. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Web-App**. <br/><br/>Benennen Sie Ihre Datei anschließend mit `HelloWorld` und wählen Sie **OK**.
 
@@ -87,7 +87,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *ASP.NET* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus.
 
@@ -104,9 +104,9 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
    >
    > ![Workload „ASP.NET Core-Webanwendung“ im Visual Studio-Installer](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise „[Projekt erstellen](#create-a-project)“ zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld *Projektname***HalloWelt** ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
@@ -134,7 +134,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![HTML-Code für den Bereich „Weitere Informationen“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Ändern Sie den Text "„Weitere Informationen“ in „**Hallo Welt!** “.
+1. Ändern Sie den Text "„Weitere Informationen“ in „**Hallo Welt!**“.
 
    ![Ändern des standardmäßigen HTML-Codes für den Bereich „Weitere Informationen“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -146,7 +146,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![C#-Code für die Anwendung im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. Ändern Sie den Text „Anwendungsbeschreibung“ in „**Wie lautet meine Nachricht?** “.
+1. Ändern Sie den Text „Anwendungsbeschreibung“ in „**Wie lautet meine Nachricht?**“.
 
    ![Ändern des Standardnachrichtentexts im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
@@ -187,7 +187,7 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
    ![Der HTML-Code in der Datei „Index.cshtml“ für die Startseite im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. Ändern Sie den Text „Welcome“ in „**Hello World!** “.
+1. Ändern Sie den Text „Welcome“ in „**Hello World!**“.
 
    ![Ändern des HTML-Standardcodes, der „Welcome“ lautet, in „Hello World“ im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
@@ -208,11 +208,11 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie für weitere Informationen mit dem folgenden Tutorial fort:
+Fahren Sie mit dem folgenden Tutorial fort, um weitere Informationen zu erhalten:
 
 > [!div class="nextstepaction"]
 > [Erste Schritte mit C# und ASP.NET in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Veröffentlichen Ihrer Web-App in Azure App Service mit Visual Studio](../deployment/quickstart-deploy-to-azure.md)

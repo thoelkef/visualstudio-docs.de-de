@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596969"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Ein erster Blick auf die Visual Studio-IDE
 
 In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio unternehmen wir eine Tour durch einige der Fenster, Menüs und andere Funktionen der Benutzeroberfläche.
 
@@ -67,7 +67,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 ::: moniker range="vs-2017"
 
-1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt** **Konsole** ein, um die Liste der Projekttypen nach denen zu filtern, die „Konsole“ im Namen enthalten.
+1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt****Konsole** ein, um die Liste der Projekttypen nach denen zu filtern, die „Konsole“ im Namen enthalten.
 
    ![Suchen von Projektvorlagen auf der Visual Studio-Startseite](media/start-page-search-templates.png)
 
@@ -127,7 +127,7 @@ Die **Fehlerliste** zeigt Fehler, Warnungen und Meldungen zum aktuellen Zustand 
 
 ![Fehlerliste in Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Ausgabefenster
+## <a name="output-window"></a>Fenster „Ausgabe“
 
 Im **Ausgabefenster** werden Ausgabemeldungen von der Erstellung Ihres Projekts sowie vom Anbieter der Quellcodeverwaltung angezeigt.
 
@@ -197,7 +197,7 @@ Wir haben uns nur einige der Features von Visual Studio angesehen, um uns mit de
 > [!div class="nextstepaction"]
 > [Erfahren Sie mehr über Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht der Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Features von Visual Studio](../ide/advanced-feature-overview.md)

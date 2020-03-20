@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62429761"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
 Wenn Sie die [Python-Unterstützung in Visual Studio installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz einfach ein neues Python-Projekt mithilfe einer Vielzahl von Vorlagen erstellen. In diesem Schnellstart erstellen Sie eine einfache Flask-Anwendung mit einer Vorlage. Das entstehende Projekt ist so ähnlich wie das Projekt, dass Sie unter [Schnellstart: Erstellen einer Web-App mit Flask](../ide/quickstart-python.md) erstellt haben.
 
-1. Starten Sie Visual Studio.
+1. Starten Sie Visual Studio.
 
 1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**, suchen Sie anschließend im Dialogfeld **Neues Projekt** nach „leeres flask“, wählen Sie dann die Vorlage **Leeres Flask-Webprojekt** aus der mittleren Liste aus, benennen Sie das Projekt, und klicken Sie dann auf **OK**:
 
@@ -77,7 +77,7 @@ Wenn Sie die [Python-Unterstützung in Visual Studio installiert haben](installi
 
 **Frage: Welche anderen Python-Vorlagen werden von Visual Studio bereitgestellt?**
 
-**Antwort:** Wenn die Python-Workload installiert ist, stellt Visual Studio verschiedenste Projektvorlagen bereit, darunter Vorlagen für [die Webframeworks Flask, Bottle und Django](../python/python-web-application-project-templates.md), für Azure-Clouddienste, unterschiedliche Machine Learning-Szenarios und eine Vorlage zum Erstellen eines Projekts mit einer bereits vorhandenen Ordnerstruktur, die eine Python-App enthält. Auf diese Vorlagen können Sie über **Datei** > **Neu** > **Projekt** zugreifen. Klicken Sie dafür auf den Knoten für **Python**, und wählen Sie untergeordnete Knoten aus.
+**Antwort:** Wenn die Python-Workload installiert ist, stellt Visual Studio verschiedenste Projektvorlagen bereit, darunter Vorlagen für [die Webframeworks Flask, Bottle und Django](../python/python-web-application-project-templates.md), für Azure-Clouddienste, unterschiedliche Machine Learning-Szenarios und sogar eine Vorlage zum Erstellen eines Projekts mit einer bereits vorhandenen Ordnerstruktur, die eine Python-App enthält. Auf diese Vorlagen können Sie über **Datei** > **Neu** > **Projekt** zugreifen. Klicken Sie dafür auf den Knoten für **Python**, und wählen Sie untergeordnete Knoten aus.
 
 Visual Studio bietet auch unterschiedliche Datei- und *Elementvorlagen* zum schnellen Erstellen einer Python-Klasse, eines Python-Pakets, eines Python-Komponententest, von *web.config*-Dateien usw. Wenn Sie ein Python-Projekt geöffnet haben, können Sie über den Menübefehl **Projekt** > **Neues Element hinzufügen** auf Elementvorlagen zugreifen. Weitere Informationen finden Sie in der [Referenz für Python-Elementvorlagen](python-item-templates.md).
 
@@ -85,14 +85,14 @@ Durch das Verwenden von Vorlagen sparen Sie deutlich Zeit, wenn Sie mit einem Pr
 
 **Frage: Kann ich auch Cookiecutter-Vorlagen verwenden?**
 
-**Antwort:** Ja. Cookiecutter-Vorlagen sind sogar direkt in Visual Studio integriert. Informationen dazu finden Sie unter [Quickstart: Create a project from a Cookiecutter template (Schnellstart: Erstellen eines Python-Projekts aus einer Cookiecutter-Vorlage)](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Antwort**: Ja! Cookiecutter-Vorlagen sind sogar direkt in Visual Studio integriert. Informationen dazu finden Sie unter [Quickstart: Create a project from a Cookiecutter template (Schnellstart: Erstellen eines Projekts mit einer Cookiecutter-Vorlage)](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
 > [Tutorial: Arbeiten mit Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Manuelles Identifizieren eines vorhandenen Python-Interpreters](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installing-python-support-in-visual-studio.md)

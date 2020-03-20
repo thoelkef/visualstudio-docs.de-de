@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279222"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
@@ -33,9 +33,9 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
    ::: moniker range="vs-2017"
-   Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+   Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-   Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C++** , und klicken Sie dann auf **Windows Desktop**. Wählen Sie im mittleren Bereich die Option **Windows-Konsolenanwendung** aus. Nennen Sie das Projekt dann *Diagnostics_Get_Started_Native*.
+   Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C++**, und klicken Sie dann auf **Windows Desktop**. Wählen Sie im mittleren Bereich die Option **Windows-Konsolenanwendung** aus. Nennen Sie das Projekt dann *Diagnostics_Get_Started_Native*.
 
    Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++** aus, und klicken Sie dann auf **Ändern**.
    ::: moniker-end
@@ -51,7 +51,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
    > [!NOTE]
    > Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, können Sie sie im Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **Desktopentwicklung mit C++** aus.
 
-   Geben Sie anschließend im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** den Name *Diagnostics_Get_Started_Native* ein. Wählen Sie anschließend **Erstellen** aus.
+   Geben Sie anschließend im Fenster **Neues Projekt konfigurieren** im Feld *Projektname* den Name **Diagnostics_Get_Started_Native** ein. Wählen Sie anschließend **Erstellen** aus.
 
    ::: moniker-end
 
@@ -201,7 +201,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 - [Analysieren der CPU-Auslastung](../profiling/cpu-usage.md) für weitere Informationen zum CPU-Auslastungs-Tool
 - Analysieren der CPU-Auslastung, auch ohne Debugger oder dass eine ausgeführte App als Ziel gesetzt wird: Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten ohne das Debuggen](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

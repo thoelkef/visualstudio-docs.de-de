@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154894"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Flask-Webprojektvorlage für Umfragen
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
 
-**Vorheriger Schritt: [Verwenden der vollständigen Vorlage „Flask-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Vorheriger Schritt:[ Verwenden der vollständigen Vorlage „Flask-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Nachdem Sie sich erfolgreich mit der Vorlage „Flask-Webprojekt“ befasst haben, können Sie nun die dritte Flask-Vorlage („Fragt ein Flask-Webprojekt ab“) betrachten, die auf der gleichen Codebasis aufbaut.
 
@@ -34,7 +34,7 @@ In diesem Schritt wird Folgendes erläutert:
 
 Visual Studio bietet ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“, die eine identische App erzeugt, aber die Jade-Erweiterung für die Jinja-Vorlagen-Engine verwendet. Weitere Informationen finden Sie unter [Schritt 4 – Die Vorlage „Flask/Jade-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>Schritt 5.1: Erstellen eines Projekts
+## <a name="step-5-1-create-the-project"></a>Schritt 5–1: Erstellen des Projekts
 
 1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningFlask**, die Sie in diesem Tutorial bereits erstellt haben, und klicken Sie auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
 
@@ -74,7 +74,7 @@ Visual Studio bietet ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojekt ab
 
 Wie bereits erwähnt. Viele Bestandteile eines auf der Grundlage der Vorlage „Fragt ein Flask-Webprojekt ab“ (und „Fragt ein Flask/Jade-Webprojekt ab“) erstellten Projekts sollten Ihnen bekannt vorkommen, wenn Sie die anderen Projektvorlagen in Visual Studio kennen. Die zusätzlichen Schritte in diesem Artikel fassen die wichtigeren Änderungen und Hinzufügungen zusammen: Datenmodelle und zusätzliche Ansichten.
 
-## <a name="step-5-2-understand-the-data-models"></a>Schritt 5.2: Grundlegendes zu Datenmodellen
+## <a name="step-5-2-understand-the-data-models"></a>Schritt 5-2: Grundlegendes zu Datenmodellen
 
 Die Datenmodelle für die App sind Python-Klassen namens „Poll“ (Umfrage) und „Choice“ (Auswahl). Diese werden in *models/\_\_init\_\_.py* definiert. Eine Poll-Klasse stellt eine Frage dar, und mehrere Choice-Instanzen stellen die verfügbaren Antworten dar. Eine Poll-Klasse verwaltet ebenfalls die Gesamtanzahl der Stimmen (für jede Option) und eine Methode, um Statistiken zu berechnen, die zum Generieren von Ansichten verwendet werden:
 
@@ -110,7 +110,7 @@ class Choice(object):
 
 Diese Datenmodelle sind generische Abstraktionen, durch die ermöglicht wird, dass die Ansichten der App für mehrere verschiedene Arten von Sicherungsdatenspeichern funktionieren. Diese werden im nächsten Schritt beschrieben.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>Schritt 5.3: Grundlegendes zu Sicherungsdatenspeichern
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Schritt 5–3: Grundlegendes zu den Sicherungsdatenspeichern
 
 Die App, die von der Vorlage „Fragt ein Flask-Webprojekt“ erstellt wurde, kann für einen Datenspeicher im Arbeitsspeicher, im Azure-Tabellenspeicher oder in einer MongoDB-Datenbank ausgeführt werden.
 
@@ -236,7 +236,7 @@ Sobald dieser Vorgang abgeschlossen ist, navigiert die `redirect('/')`-Anweisung
 
 Antwort: Die App enthält in der Form, in der sie von der Projektvorlage bereitgestellt wird, keine Möglichkeit zum Hinzufügen oder Bearbeiten von Umfragen. Sie können *models\samples.json* ändern, um neue Initialisierungsdaten zu erstellen. Dadurch wird jedoch der Datenspeicher zurückgesetzt. Wenn Sie Bearbeitungsfeatures implementieren möchten, müssen Sie die Schnittstelle der Klasse `Repository` mit Methoden erweitern, um die erforderlichen Instanzen von `Choice` und `Poll` zu erstellen. Anschließend wird eine Benutzeroberfläche in zusätzliche Seiten implementiert, die diese Methoden verwenden.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Schritt 5.4: Grundlegendes zu Umfragedetails und Ergebnisansichten
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Schritt 5–4: Grundlegendes zu Umfragedetails und Ergebnisansichten
 
 Die meisten der von den Vorlagen „Fragt ein Flask-Webprojekt ab“ und „Fragt ein Flask/Jade-Webprojekt ab“ generierten Ansichten, z.B. die Ansichten für die Seiten „Info“ und „Kontakt“, sind den von der Vorlage „Flask-Webprojekt“ (oder Flask/Jade-Webprojekt) erstellten Ansichten sehr ähnlich, mit denen Sie am Anfang des Tutorials gearbeitet haben. Im vorherigen Abschnitt haben Sie bereits gelernt, wie die Startseite implementiert wird, um die Schaltfläche zur Initialisierung oder die Liste der Umfragen anzuzeigen.
 
@@ -346,7 +346,7 @@ Die Vorlage *results.html* durchläuft die Optionen der Umfrage und generiert ei
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!Note]
-> Wenn Sie im Laufe des Tutorials einen Commit der Visual Studio-Projektmappe an die Quellcodeverwaltung ausgeführt haben, ist nun ein guter Zeitpunkt für einen weiteren Commit gekommen. Ihre Lösung sollte mit dem Tutorialquellcode auf GitHub übereinstimmen: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+> Wenn Sie im Laufe des Tutorials einen Commit der Visual Studio-Projektmappe an die Quellcodeverwaltung ausgeführt haben, ist nun ein guter Zeitpunkt für einen weiteren Commit gekommen. Ihre Projektmappe sollte mit dem Tutorial-Quellcode auf GitHub übereinstimmen: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
 Sie haben jetzt sämtliche Vorlagen („Leeres Flask-Webprojekt“, „Flask(/Jade) Webprojekt“ und „Fragt ein Flask(/Jade)-Webprojekt ab“) eingehend in Visual Studio kennengelernt. Sie haben die Grundlagen von Flask erlernt, z.B. das Verwenden von Ansichten, Vorlagen und Routing, und wissen nun, wie Sicherungsdatenspeicher verwendet werden. Sie sollten nun damit beginnen können, selbst eine Web-App mit allen Ansichten und Modellen zu erstellen, die Sie benötigen.
 

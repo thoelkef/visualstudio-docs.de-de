@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75915829"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Trainieren eines TensorFlow-Modells in der Cloud
@@ -39,7 +39,7 @@ Weitere Anweisungen zum Einrichten eines virtuellen Computers mit Deep Learning 
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Herunterladen von Beispielcode
+### <a name="download-sample-code"></a>Beispielcode herunterladen
 
 Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai) herunter, das Beispiele für die ersten Schritte mit Deep Learning in TensorFlow, CNTK, Theano usw. enthält.
 
@@ -51,7 +51,7 @@ Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai
 
    ![Öffnen des Projekts](media/tensorflow-local/open-project.png)
 
-   ![Öffnen der Projektmappe](media/tensorflow-local/open-solution.png)
+   ![Projektmappe öffnen](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Hinzufügen eines virtuellen Azure-Remotecomputers
 
@@ -70,7 +70,7 @@ Führen Sie im Übermittlungsfenster Folgendes aus:
 
 - Geben Sie einen **Auftragsnamen** ein.
 
-- Klicken Sie auf **Senden**.
+- Klicken Sie auf **Submit**(Senden).
 
 ## <a name="check-status-of-job"></a>Überprüfen des Auftragsstatus
 Erweitern Sie den virtuellen Computer im **Server-Explorer**, dem Sie den Auftrag übermittelt haben, um den Status und die Details des Auftrags anzuzeigen. Doppelklicken Sie auf **Aufträge**.

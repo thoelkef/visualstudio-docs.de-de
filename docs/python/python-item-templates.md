@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430333"
 ---
 # <a name="python-item-templates"></a>Python-Elementvorlagen
@@ -46,7 +46,7 @@ Die folgende Tabelle erklärt kurz die Auswirkung jeder Elementvorlage in einem 
 | **„web.config“ für statische Azure-Dateien** | -*web.config*Datei, die in der Regel einem *static*-Ordner (oder einem anderen Ordner, der statische Elemente enthält) hinzugefügt wird, um die Python-Verarbeitung für diesen Ordner zu deaktivieren. Diese Konfigurationsdatei funktioniert in Verbindung mit einer der oben genannten FastCGI- oder HttpPlatformHandler-Konfigurationsdateien. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
 | **„web.config“ für das Remotedebuggen in Azure** | Veraltet (wurde für das Remotedebuggen unter Azure App Service für Windows verwendet, das nicht mehr unterstützt wird). |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Python-Projekten – Projektvorlagen](managing-python-projects-in-visual-studio.md#project-templates)
 - [Python-Webprojektvorlagen](python-web-application-project-templates.md)

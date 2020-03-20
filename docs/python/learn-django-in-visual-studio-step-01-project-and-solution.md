@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62962162"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Django-Webframework in Visual Studio
 
 [Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. In diesem Tutorial wird das Django-Framework im Zusammenhang mit Visual Studio-Projektvorlagen beschrieben, die die Erstellung von Django-basierten Web-Apps optimieren sollen.
 
-In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
+In diesem Tutorial lernen Sie Folgendes:
 
 > [!div class="checklist"]
 > - Erstellen eines Django-Basisprojekts in einem Git-Repository mithilfe der Vorlage „Leeres Django-Webprojekt“ (Schritt 1)
@@ -32,7 +32,7 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 > - Authentifizieren von Benutzern (Schritt 5)
 > - Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“ zum Erstellen einer App, die Modelle, Datenbankmigrationen und Anpassungen der Verwaltungsschnittstelle verwendet (Schritt 6)
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Visual Studio 2017 oder höher unter Windows mit den folgenden Optionen:
   - Die Workload **Python-Entwicklung** (Registerkarte **Workload** im Installationsprogramm). Eine Anleitung finden Sie unter [Installieren der Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md).
@@ -64,8 +64,8 @@ Beim Arbeiten mit Django über die Befehlszeile wird ein Projekt in der Regel du
     - **Speicherort**: Geben Sie einen Speicherort an, an dem die Visual Studio-Projektmappe und das -Projekt erstellt werden sollen.
     - **Projektmappe**: Behalten Sie die Standardoption **Neue Projektmappe erstellen** bei.
     - **Projektmappenname**: Legen Sie den Namen auf **LearningDjango** fest, da er sich für die Projektmappe als Container für mehrere Projekte in diesem Tutorial eignet.
-    - **Projektmappenverzeichnis erstellen:** Übernehmen Sie die Einstellungen (den Standardwert).
-    - **Neues Git-Repository erstellen:** Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
+    - **Projektmappenverzeichnis erstellen**: Behalten Sie die Standardaktivierung bei.
+    - **Neues Git-Repository erstellen**: Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten****Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
 
 1. Nach kurzer Zeit wird Ihnen von Visual Studio das Dialogfeld **Dieses Projekt erfordert externe Pakete** angezeigt (siehe unten). Dieses Dialogfeld wird angezeigt, da die Vorlage eine *requirements.txt*-Datei enthält, die auf das neueste Django-Paket 1.x verweist. (Wählen Sie die Option **Show required packages (Erforderliche Pakete anzeigen)** aus, um die genauen Abhängigkeiten anzuzeigen.)
 
@@ -73,7 +73,7 @@ Beim Arbeiten mit Django über die Befehlszeile wird ein Projekt in der Regel du
 
 1. Wählen Sie die Option **I will install them myself (Ich führe die Installation selbst durch)** aus. In einem nächsten Schritt werden Sie die virtuelle Umgebung erstellen, damit sie auch sicher aus der Quellcodeverwaltung ausgeschlossen ist. (Die Umgebung kann immer aus *requirements.txt* erstellt werden.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Schritt 1.2: Überprüfen der Git-Steuerelemente und Veröffentlichen in einem Remoterepository
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Schritt 1-2: Überprüfen der Git-Steuerelemente und Veröffentlichen in einem Remoterepository
 
 Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstellen** ausgewählt haben, wird für das Projekt bereits ein Commit für die lokale Quellcodeverwaltung ausgeführt, sobald der Erstellungsvorgang abgeschlossen ist. In diesem Schritt können Sie sich mit den Git-Steuerelementen in Visual Studio und dem **Team Explorer**-Fenster vertraut machen, in dem Sie an der Quellcodeverwaltung arbeiten werden.
 
@@ -111,13 +111,13 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 
 Antwort: Zunächst erhalten Sie durch die Verwendung der Quellcodeverwaltung von Beginn an eine regelmäßige externe Sicherung Ihres Projekts, insbesondere bei gleichzeitiger Verwendung eines Remoterepositorys. Im Gegensatz zur Verwaltung eines Projekts nur in einem lokalen Dateisystem bietet die Quellcodeverwaltung auch einen vollständigen Änderungsverlauf und die einfache Möglichkeit, eine einzelne Datei oder das gesamte Projekt in einem früheren Zustand wiederherzustellen. Über den Änderungsverlauf kann die Ursache von Regressionen (fehlgeschlagenen Tests) ermittelt werden. Bei der Mitarbeit von mehreren Personen an einem Projekt ist die Quellcodeverwaltung zudem wichtig für die Verwaltung von Überschreibungen und bei der Konfliktauflösung. Und schließlich ermöglicht die Quellcodeverwaltung, die im Grunde eine Form der Automatisierung darstellt, die Automatisierung von Builds, Tests sowie der Releaseverwaltung. Sie stellt den ersten Schritt bei der Verwendung von DevOps für ein Projekt dar. Und da die Einstiegsbarrieren so niedrig sind, gibt es keinen Grund, die Quellcodeverwaltung nicht von Beginn an zu verwenden.
 
-Weitere Informationen zu automatisierter Quellcodeverwaltung finden Sie unter [The Source of Truth: The Role of Repositories in DevOps (Die Quelle der Wahrheit: Die Rolle von Repositorys in DevOps)](https://msdn.microsoft.com/magazine/mt763232), einem Artikel im MSDN-Magazin, in dem mobile Apps behandelt werden. Der Inhalt des Artikels gilt jedoch auch für Web-Apps.
+Weitere Erläuterungen zur Automatisierung durch die Quellcodeverwaltung finden Sie unter [The Source of Truth: The Role of Repositories in DevOps (Die Quelle der Wahrheit: Die Rolle von Repositorys in DevOps)](https://msdn.microsoft.com/magazine/mt763232), einem MSDN Magazine-Artikel für mobile Apps, der auch für Web-Apps gilt.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Frage: Kann ich verhindern, dass Visual Studio für ein neues Projekt automatisch einen Commit ausführt?
 
 Antwort: Ja. Wenn Sie die automatische Ausführung eines Commits deaktivieren möchten, wechseln Sie im **Team Explorer** zur Seite **Einstellungen**, und klicken Sie auf **Git** > **Globale Einstellungen**. Deaktivieren Sie die Option **Änderungen nach Mergevorgängen standardmäßig committen**, und klicken Sie anschließend auf **Aktualisieren**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Schritt 1.3: Erstellen der virtuellen Umgebung und Ausschließen aus der Quellcodeverwaltung
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Schritt 1-3: Erstellen der virtuellen Umgebung und Ausschließen aus der Quellcodeverwaltung
 
 Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können Sie die virtuelle Umgebung erstellen, die die für das Projekt erforderlichen Django-Pakete enthält. Anschließend können Sie im **Team Explorer** den Umgebungsordner aus der Quellcodeverwaltung ausschließen.
 
@@ -151,11 +151,11 @@ Antwort: Eine virtuelle Umgebung ist eine hervorragende Möglichkeit, die genaue
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Frage: Wie entferne ich eine virtuelle Umgebung, für die bereits ein Commit für die Quellcodeverwaltung ausgeführt wurde?
 
-Antwort: Bearbeiten Sie zuerst die *GITIGNORE*-Datei, um den Ordner auszuschließen. Suchen Sie dazu den Abschnitt am Ende mit dem Kommentar `# Python Tools for Visual Studio (PTVS)`, und fügen Sie eine neue Zeile für den Ordner der virtuellen Umgebung hinzu, z. B. `/BasicProject/env`. (Da die Datei im **Projektmappen-Explorer** in Visual Studio nicht angezeigt wird, öffnen Sie sie direkt über den Menübefehl **Datei** > **Öffnen** > **Datei**. Sie können die Datei auch über den **Team Explorer** öffnen: Klicken Sie dazu auf der Seite **Einstellungen** auf die Option **Repositoryeinstellungen**, und wechseln Sie zum Abschnitt **Ignore- und Attributdateien**. Klicken Sie anschließend auf den Link **Bearbeiten** neben **.gitignore**.)
+Antwort: Bearbeiten Sie zuerst die *.gitignore*-Datei, um den Ordner auszuschließen. Suchen Sie dazu den Abschnitt am Ende mit dem Kommentar `# Python Tools for Visual Studio (PTVS)`, und fügen Sie eine neue Zeile für den Ordner der virtuellen Umgebung hinzu, z.B. `/BasicProject/env`. (Da die Datei im **Projektmappen-Explorer** in Visual Studio nicht angezeigt wird, öffnen Sie sie direkt über den Menübefehl **Datei** > **Öffnen** > **Datei**. Sie können die Datei auch über den **Team Explorer** öffnen: Klicken Sie dazu auf der Seite **Einstellungen** auf die Option **Repositoryeinstellungen**, und wechseln Sie zum Abschnitt **Ignore- und Attributdateien**. Klicken Sie anschließend auf den Link **Bearbeiten** neben **.gitignore**.)
 
 Öffnen Sie nun ein Befehlsfenster. Navigieren Sie zum Ordner (z.B. *BasicProject*), der den Ordner für die virtuelle Umgebung enthält (z.B. *env*), und führen Sie `git rm -r env` aus. Führen Sie dann für diese Änderungen einen Commit von der Befehlszeile (`git commit -m 'Remove venv'`) oder von der Seite **Änderungen** im **Team Explorer** aus.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Schritt 1.4: Überprüfen der Codebausteine
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Schritt 1-4: Überprüfen der Codebausteine
 
 Überprüfen Sie nach Abschluss der Projekterstellung die Codebausteine des Django-Projekts (die auch hier wieder über den CLI-Befehl `django-admin startproject <project_name>` generiert werden können).
 
@@ -178,7 +178,7 @@ Antwort: Bearbeiten Sie zuerst die *GITIGNORE*-Datei, um den Ordner auszuschlie�
 
 Antwort: Ja. Erweitern Sie den Knoten **Python-Umgebungen**, klicken Sie mit der rechten Maustaste auf die virtuelle Umgebung, und klicken Sie auf den Befehl **„requirements.txt“ generieren**. Verwenden Sie diesen Befehl am besten in regelmäßigen Abständen, wenn Sie die Umgebung ändern und einen Commit der Änderungen für *requirements.txt* in der Quellcodeverwaltung ausführen sowie andere Codeänderungen committen, die von dieser Umgebung abhängen. Wenn Sie Continuous Integration auf einem Buildserver eingerichtet haben, sollten Sie bei jeder Änderung der Umgebung die Datei generieren und einen Commit der Änderungen ausführen.
 
-## <a name="step-1-5-run-the-empty-django-project"></a>Schritt 1.5: Ausführen des leeren Django-Projekts
+## <a name="step-1-5-run-the-empty-django-project"></a>Schritt 1-5: Ausführen des leeren Django-Projekts
 
 1. Wählen Sie in Visual Studio die Option **Debuggen** > **Debuggen starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste (der bei Ihnen angezeigte Browser kann ein anderer sein):
 
@@ -211,4 +211,4 @@ Noch enthält das Django-Basisprojekt keine Apps. Im nächsten Schritt erfahren 
 
 - Django-Projektcode: [Writing your first Django app, part 1 (Erstellen Ihrer ersten Django-App – Teil 1)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Verwaltungsprogramm: [django-admin and manage.py („django-admin“ und „manage.py“)](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
