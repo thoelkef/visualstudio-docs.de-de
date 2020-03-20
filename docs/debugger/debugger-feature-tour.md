@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77578954"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
@@ -37,7 +37,7 @@ Drücken Sie die Taste **F5** (**Debuggen > Debuggen starten**), oder klicken Si
 
 Breakpoints sind eine nützliche Funktion, wenn Ihnen die Codezeile oder der Codeabschnitt bekannt ist, die bzw. den Sie genauer untersuchen möchten.
 
-## <a name="navigate"></a> Navigieren durch Code im Debugger mithilfe von Schrittbefehlen
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> Navigieren durch Code im Debugger mithilfe von Schrittbefehlen
 
 Für die meisten Befehle gibt es Tastenkombinationen, da Sie mit diesen schneller durch den Code Ihrer App navigieren können. (Die entsprechenden Befehle, z.B. Menübefehle, werden in Klammern angegeben.)
 
@@ -185,7 +185,7 @@ Sie können auf eine Codezeile doppelklicken, um den Quellcode anzuzeigen. Dadur
 
 Sie können auch über die Kontextmenüs im Fenster **Aufrufliste** weitere Aktionen ausführen. So können Sie beispielsweise Breakpoints in bestimmte Funktionen einfügen, Ihre App mithilfe von **Ausführen bis Cursor** neu starten und Quellcode untersuchen. Weitere Informationen finden Sie unter [How to: Examine the Call Stack (Vorgehensweise: Untersuchen der Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="exception"></a> Untersuchen einer Ausnahme
+## <a name="examine-an-exception"></a><a name="exception"></a> Untersuchen einer Ausnahme
 
 Wenn Ihre App eine Ausnahme auslöst, springt der Debugger in die Codezeile, die diese verursacht hat.
 

@@ -1,12 +1,12 @@
 ---
 ms.openlocfilehash: 6c2065eee7663b627623bf7c68a4a94027c9be57
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70197133"
 ---
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 ::: moniker range=">=vs-2019"
 
@@ -18,8 +18,8 @@ ms.locfileid: "70197133"
   * ASP.NET: **ASP.NET und Webentwicklung**
 ::: moniker-end
 
-* Ein Azure-Abonnement. [Registrieren Sie sich kostenlos](https://azure.microsoft.com/free/dotnet/), wenn Sie noch nicht über ein Abonnement verfügen. Dabei werden Ihnen für 30 Tage und 12 Monate für beliebte kostenlose Dienste 200 USD gutgeschrieben.
+* ein Azure-Abonnement [Registrieren Sie sich kostenlos](https://azure.microsoft.com/free/dotnet/), wenn Sie noch nicht über ein Abonnement verfügen. Dabei werden Ihnen für 30 Tage und 12 Monate für beliebte kostenlose Dienste 200 USD gutgeschrieben.
 
-* Ein ASP.NET Core-Projekt. Wenn Sie über keins verfügen. führen Sie die Anweisungen unter [Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App](../../ide/quickstart-aspnet-core.md) aus, oder klicken Sie unter **Datei** > **Neues Projekt** auf **Visual C#**  >  **.NET Core**, und wählen Sie dann **ASP.NET Core-Webanwendung** aus. Wenn Sie dazu aufgefordert werden, klicken Sie auf die Vorlage **Webanwendung (Model View Controller)** , vergewissern Sie sich, dass **No Authentication** (Keine Authentifizierung) ausgewählt ist, und klicken Sie anschließend auf **OK**.
+* Ein ASP.NET Core-Projekt. Wenn Sie noch nicht über ein ASP.NET Core-Projekt verfügen, führen Sie die unter [Schnellstart: Erstellen Ihrer ersten ASP.NET Core-Web-App mithilfe von Visual Studio](../../ide/quickstart-aspnet-core.md) beschriebenen Schritte aus, oder klicken Sie auf **Datei** > **Neues Projekt**, und wählen Sie **Visual C#** > **.NET Core** und anschließend **ASP.NET Core-Webanwendung** aus. Wenn Sie dazu aufgefordert werden, klicken Sie auf die Vorlage **Webanwendung (Model View Controller)**, vergewissern Sie sich, dass **No Authentication** (Keine Authentifizierung) ausgewählt ist, und klicken Sie anschließend auf **OK**.
 
 * Erstellen Sie das Projekt über den Menübefehl **Erstellen > Projektmappe erstellen**, bevor Sie mit der Bereitstellung beginnen.

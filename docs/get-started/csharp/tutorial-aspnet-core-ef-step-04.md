@@ -17,10 +17,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580040"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Schritt 4: Bereitstellen einer Web-API von Ihrer ASP.NET Core-App aus

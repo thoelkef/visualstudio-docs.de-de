@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579901"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features

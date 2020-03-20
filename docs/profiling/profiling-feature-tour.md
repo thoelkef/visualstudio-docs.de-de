@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77578081"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
@@ -81,7 +81,7 @@ Die gleichen Ereignisse werden auch im Code-Editor angezeigt, den Sie als PerfTi
 
 ![Profilerstellungstour „PerfTips“](../profiling/media/prof-tour-perf-tips.png "Profilerstellungstour „PerfTips“")
 
-## <a name="post_mortem"></a> Profilerstellung für Releasebuilds ohne den Debugger
+## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Profilerstellung für Releasebuilds ohne den Debugger
 
 Profilerstellungstools wie die CPU-Auslastung und Speicherauslastung können mit dem Debugger verwendet werden (siehe frühere Abschnitte), oder Sie führen die Profilerstellungstools post mortem mithilfe des Leistungsprofilers aus, der Analysen für **Release**builds erstellen soll. Im Leistungsprofiler können Sie Diagnoseinformationen sammeln, während die App ausgeführt wird, und anschließend die gesammelten Informationen überprüfen, nachdem die App angehalten wird. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Zusätzliche Tools wie das [.NET-Tool für die Objektzuordnung](../profiling/dotnet-alloc-tool.md) stehen ebenfalls im Leistungs-Profiler zur Verfügung.
 

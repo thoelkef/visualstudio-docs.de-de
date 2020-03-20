@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71685529"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Erstellen einer Windows Forms-App in Visual Studio mit C#
@@ -47,11 +47,11 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 1. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C#** , und klicken Sie dann auf **Windows-Desktop**. Klicken Sie im mittleren Bereich auf **Windows Forms-App (.NET Framework)** . Nennen Sie die Datei `HelloWorld`.
 
-     Wenn Ihnen die Projektvorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der oberen Menüleiste auf **Extras** > **Tools und Features abrufen**. Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
+     Wenn Ihnen die Projektvorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der oberen Menüleiste auf **Extras** > **Get Tools and Features** (Tools und Features abrufen). Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
      ![Die Workload „.NET Core“ im Visual Studio-Installer](../ide/media/install-dot-net-desktop-env.png)
 
@@ -82,7 +82,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-winform-project-helloworld.png)
 
