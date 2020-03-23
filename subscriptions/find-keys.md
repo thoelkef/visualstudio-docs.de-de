@@ -3,21 +3,21 @@ title: Suchen und Beanspruchen von Product Keys in Visual Studio-Abonnements | M
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Suchen, Beanspruchen und Exportieren Ihrer Product Keys in Visual Studio-Abonnements.
-ms.openlocfilehash: 4efdc118961b6e773e33eb16e40c6e0f09a13dc7
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378010"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78937494"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Suchen und Beanspruchen von Product Keys in Visual Studio-Abonnements
 In diesem Artikel wird das Suchen, Beanspruchen und Exportieren von Product Keys über https://my.visualstudio.com/productkeys erläutert.  Weitere Informationen zum Aktivieren eines Produkts mit einem Product Key, den Einzelhandels- und Volumenlizenzversionen von Product Keys und den Anspruchseinschränkungen für Product Keys pro Tag finden Sie in der [Übersicht über Product Keys](product-keys.md).
 
 ## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
-Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
+Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite **Downloads** auf den blauen Link [Schlüssel abrufen](https://my.visualstudio.com/downloads) für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 > [!div class="mx-imgBorder"]
 > ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
 
@@ -64,6 +64,12 @@ Sie können eine Liste mit allen in Anspruch genommenen Schlüsseln exportieren,
 > Wenn Ihr Abonnement abgelaufen ist, können Sie keine neuen Schlüssel mehr in Anspruch nehmen oder Ihre in Anspruch genommenen Schlüssel exportieren.
 
 Klicken Sie zum Exportieren Ihrer Schlüssel einfach ganz rechts auf der Seite „Product Keys“ auf den Link **Alle Schlüssel exportieren**.  Es wird eine XML-Datei mit dem Namen „KeysExport.xml“ erstellt, die Sie öffnen oder speichern können.  Sie müssen die Datei mit einer Anwendung öffnen, die XML-Dateien verarbeiten kann.  Sie können die Datei beispielsweise als schreibgeschützte Arbeitsmappe in Excel öffnen.
+
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie bereit sind, die Software herunterzuladen und Schlüssel zu verwenden, rufen Sie https://my.visualstudio.com/downloads auf.  Weitere Informationen zum Herunterladen von Software finden Sie in der [Übersicht über Downloads](download-software.md).

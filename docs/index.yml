@@ -15,10 +15,10 @@ metadata:
   monikerRange: '>=vs-2017'
   hide_bc: true
   ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/15/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74118948"
 productDirectory:
   items:
@@ -30,9 +30,9 @@ productDirectory:
     - url: /visualstudio/windows?view=vs-2017
       text: Visual Studio 2017
     - url: https://docs.microsoft.com/previous-versions/visualstudio/
-      text: Frühere Versionen
+      text: Vorgängerversionen
     - url: https://docs.microsoft.com/visualstudio/releases/2019/release-notes
-      text: Anmerkungen zu diesem Release
+      text: Versionshinweise
     - url: https://visualstudio.microsoft.com/
       text: Produktseite
   - title: Visual Studio für Mac
@@ -43,7 +43,7 @@ productDirectory:
     - url: https://docs.microsoft.com/visualstudio/mac/?view=vsmac-2017
       text: Visual Studio 2017 für Mac
     - url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
-      text: Anmerkungen zu diesem Release
+      text: Versionshinweise
     - url: https://visualstudio.microsoft.com/vs/mac/
       text: Produktseite
   - title: Visual Studio Code
@@ -52,7 +52,7 @@ productDirectory:
     - url: https://code.visualstudio.com/docs
       text: Dokumentation
     - url: https://code.visualstudio.com/updates
-      text: Anmerkungen zu diesem Release
+      text: Versionshinweise
     - url: https://code.visualstudio.com
       text: Produktseite
   - title: Visual Studio App Center
@@ -72,4 +72,4 @@ productDirectory:
     - url: https://my.visualstudio.com
       text: Portal
     - url: https://manage.visualstudio.com
-      text: verwaltung
+      text: Verwaltung

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984862"
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
@@ -18,9 +18,9 @@ Visual Studio für Mac bietet zwei Möglichkeit zum Hinzufügen von zusätzliche
 
 ![Projektverweise](media/projects-and-solutions-image10.png)
 
-Diese lauten wie folgt:
+Dies sind:
 
-* Verweise
+* References
 * NuGets (hinzufügbar über den Ordner „Pakete“)
 
 Darüber hinaus können zu jedem Projekt auch Webverweise und native Verweise hinzufügt werden.
@@ -43,7 +43,7 @@ Klicken Sie dazu mit der rechten Maustaste auf den Ordner **Pakete** im Projektm
 
 Weitere Informationen zur Verwendung eines NuGet-Pakets finden Sie in der exemplarischen Vorgehensweise [Including a NuGet package in your Project (Einfügen eines NuGet-Pakets in Ihr Projekt)](nuget-walkthrough.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Verweisen (Visual Studio unter Windows)](/visualstudio/ide/managing-references-in-a-project)
 - [Hinzufügen von Verweisen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung (Visual Studio unter Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

@@ -164,7 +164,7 @@
           href: migration-activity-designers.md
         - name: Interop-Aktivitätsdesigner
           href: interop-activity-designer.md
-- name: Debug
+- name: Debuggen
   items:
     - name: Debuggen von Workflows
       href: debugging-workflows-with-the-workflow-designer.md

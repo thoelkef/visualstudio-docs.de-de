@@ -88,7 +88,7 @@ sections:
             html: '<p>Debuggen von Clouddiensten, lokal und in Azure</p>'
             image:
               src: 'https://docs.microsoft.com//media/common/i_debug.svg'
-            title: Debug
+            title: Debuggen
           - href: vs-azure-tools-performance-profiling-cloud-services.md
             html: <p>Verwenden der Visual Studio-Profilerstellung</p>
             image:
@@ -117,12 +117,12 @@ sections:
             html: <p>Access Azure-Speicherkonten in Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
-            title: Speicher
+            title: Storage
           - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
             html: <p>Zugreifen auf virtuelle Computer über Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: Virtuelle Computer
+            title: Virtual Machines
   - title: Andere Azure-Entwicklungsressourcen
     items:
       - type: paragraph

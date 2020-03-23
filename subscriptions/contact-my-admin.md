@@ -3,15 +3,15 @@ title: Kontaktieren des Abonnementadministrators über das Abonnentenportal
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihren Abonnementadministrator bei Fragen oder Problemen kontaktieren können.
-ms.openlocfilehash: eb0720718f8ed5ccd0033456f887f638c0f3e395
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491578"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78937538"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Anfordern von Unterstützung durch einen Abonnementadministrator
 Wenn Ihr Visual Studio-Abonnement von einem Unternehmen, einer Schule oder einer Universität bereitgestellt wurde, hat Ihnen dieses Abonnement vermutlich ein Abonnementadministrator zugewiesen.  Administratoren können Abonnements zuweisen oder diese Zuweisung rückgängig machen, die E-Mail-Adressen für Anmeldungen ändern, feststellen, ob Sie Software herunterladen können, und weitere abonnementbezogene Funktionen ausführen.
@@ -33,6 +33,12 @@ Angesichts der Größe und Komplexität vieler Organisationen wissen Sie möglic
 
 ## <a name="resources"></a>Ressourcen
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Es wird empfohlen, die folgenden Tools zu aktivieren, um das Visual Studio-Abonnement optimal nutzen zu können:

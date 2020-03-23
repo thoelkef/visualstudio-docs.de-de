@@ -7,10 +7,10 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Azure-Community-Support-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
 ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "73983755"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Azure-Community-Support-Forum in Visual Studio-Abonnements
@@ -57,7 +57,7 @@ Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargeste
 |                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Ein Jahr    |    Ja     |
 | Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud), NFR<sup>1</sup> |        Alle        | Nicht verfügbar |     Nein     |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

@@ -120,7 +120,7 @@
               items:
                 - name: Bedarfsgesteuertes Herunterladen von Assemblys mit der ClickOnce-Bereitstellungs-API über den Designer
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-                - name: Bedarfsgesteuertes Herunterladen von Assemblys mit der ClickOnce-Bereitstellungs-API
+                - name: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: Bedarfsgesteuertes Herunterladen von Satellitenassemblys mit der ClickOnce-Bereitstellungs-API über den Designer
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md

@@ -512,9 +512,9 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Verwalten von parallelen Dateizuordnungen
               href: managing-side-by-side-file-associations.md
-- name: Archiv
+- name: Archivieren
   items:
-    - name: Archiv
+    - name: Archivieren
       href: archive.md
     - name: Legacyschnittstellen im Editor
       items:
@@ -706,7 +706,7 @@
               href: usedcommands-element.md
             - name: UsedCommand-Element
               href: usedcommand-element.md
-        - name: Parent-Element
+        - name: Übergeordnetes Element
           href: parent-element.md
         - name: Icon-Element
           href: icon-element.md
@@ -846,7 +846,7 @@
               href: enumerators.md
             - name: Befehlscode
               href: command-code-enumerator.md
-            - name: Meldung
+            - name: '`Message`'
               href: message-enumerator.md
             - name: Dateistatuscode
               href: file-status-code-enumerator.md
@@ -880,9 +880,9 @@
           href: adding-command-line-switches.md
     - name: Fehlerbehandlung und Rückgabewerte
       href: error-handling-and-return-values.md
-    - name: erzwingen
+    - name: Objekte
       items:
-        - name: erzwingen
+        - name: Objekte
           href: objects.md
         - name: VSCodeWindow-Objekt
           href: vscodewindow-object.md

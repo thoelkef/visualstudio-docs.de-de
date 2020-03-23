@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985238"
 ---
-# <a name="refactoring"></a>Umgestaltung
+# <a name="refactoring"></a>Refactoring
 
 Das Umgestalten von Code ist eine Möglichkeit, vorhandenen Code neu anzuordnen, neu zu strukturieren und zu verdeutlichen, wobei sichergestellt wird, dass das Gesamtverhalten des Codes nicht verändert wird.
 
@@ -111,7 +111,7 @@ Wenn Sie auf den Kreis oben klicken, können Sie jeden einzelnen Vorschlag durch
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnellaktionen (Visual Studio unter Windows)](/visualstudio/ide/quick-actions)
 - [Umgestalten von Code (Visual Studio unter Windows)](/visualstudio/ide/refactoring-in-visual-studio)

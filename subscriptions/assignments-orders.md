@@ -7,10 +7,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortung von Administratoren hinsichtlich des Nachverfolgens von Benutzerzuweisungen und des Verarbeitens von Aufträgen.
 ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235224"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Nachverfolgen der Benutzerzuweisungen und der Verarbeitung von Aufträgen
@@ -36,7 +36,7 @@ Möglicherweise weisen Sie Abonnements monatlich über Programme wie „Open Lic
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise, MPSA und ausgewählte Vereinbarungen
 Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihnen Flexibilität im Hinblick auf die Verwendung und Lizenzierung von Visual Studio-Software über einen gewissen Zeitraum hinweg. Visual Studio-Administratoren müssen eine jährliche True Up-Bestellung aufgeben, um die Anzahl ihrer Softwarelizenzen entsprechend dem maximalen Nutzungswert aufzustocken, der für die Dauer der Vereinbarung festgelegt wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)
@@ -47,5 +47,5 @@ Weitere Informationen zu den Aufgaben von Administratoren:
 - [Administratoraufgaben](admin-responsibilities.md)
 - [Inventory of pre-production environment (Inventur der Präproduktionsumgebung)](admin-inventory.md)
 - [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
-- Verwenden der [maximalen Auslastung](maximum-usage.md) zum Nachverfolgen von Kaufverpflichtungen
+- Verwenden des Berichts [Maximum Usage](maximum-usage.md) (Maximale Auslastung) zum Nachverfolgen von Kaufverpflichtungen
 

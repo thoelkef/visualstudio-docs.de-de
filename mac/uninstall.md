@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.openlocfilehash: 348a6ad1bde58c17b2bbb1ef4868fcfa6835ef9f
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "76892167"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
@@ -243,6 +243,6 @@ Mit dem folgenden Befehl können Sie auch die PLIST-Datei der Vorschauversion en
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Deinstallieren von Visual Studio (unter Windows)](/visualstudio/install/uninstall-visual-studio)

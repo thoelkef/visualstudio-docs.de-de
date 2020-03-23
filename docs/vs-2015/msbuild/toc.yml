@@ -20,9 +20,9 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Eigenschaftenfunktionen
               href: property-functions.md
-        - name: Elemente
+        - name: Items
           items:
-            - name: Elemente
+            - name: Items
               href: msbuild-items.md
             - name: Auswählen von Dateien für den Buildvorgang
               href: how-to-select-the-files-to-build.md
@@ -84,9 +84,9 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: 'Erstellen eines Projekts, das über Ressourcen verfügt'
               href: how-to-build-a-project-that-has-resources.md
-            - name: Inlinetasks
+            - name: Inlineaufgaben
               items:
-                - name: Inlinetasks
+                - name: Inlineaufgaben
                   href: msbuild-inline-tasks.md
                 - name: Erstellen eines Inlinetasks
                   href: walkthrough-creating-an-inline-task.md
@@ -104,9 +104,9 @@
       items:
         - name: Weiterführende Konzepte
           href: msbuild-advanced-concepts.md
-        - name: Batchverarbeitung
+        - name: Batching
           items:
-            - name: Batchverarbeitung
+            - name: Batching
               href: msbuild-batching.md
             - name: Elementmetadaten bei der Batchverarbeitung von Aufgaben
               href: item-metadata-in-task-batching.md
@@ -114,9 +114,9 @@
               href: item-metadata-in-target-batching.md
         - name: Transformationen
           href: msbuild-transforms.md
-        - name: Visual Studio-Integration
+        - name: Integration in Visual Studio
           items:
-            - name: Visual Studio-Integration
+            - name: Integration in Visual Studio
               href: visual-studio-integration-msbuild.md
             - name: Erweitern des Visual Studio-Buildvorgangs
               href: how-to-extend-the-visual-studio-build-process.md
@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrieren von .NET Framework-Erweiterungen
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Paralleles Erstellen mehrerer Projekte
+        - name: Paralleles Erstellen von mehreren Projekten
           items:
-            - name: Paralleles Erstellen mehrerer Projekte
+            - name: Paralleles Erstellen von mehreren Projekten
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Verwenden mehrerer Prozessoren für die Erstellung von Projekten
               href: using-multiple-processors-to-build-projects.md
@@ -162,7 +162,7 @@
       items:
         - name: Protokollierung in MSBuild
           href: logging-in-msbuild.md
-        - name: Abrufen von Buildprotokollen
+        - name: Erhalten von Buildprotokollen
           href: obtaining-build-logs-with-msbuild.md
         - name: Buildprotokollierungen
           href: build-loggers.md
@@ -180,9 +180,9 @@
       items:
         - name: MSBuild-Referenz
           href: msbuild-reference.md
-        - name: Projektdatei-Schemareferenz
+        - name: Referenz zum Projektdateischema
           items:
-            - name: Projektdatei-Schemareferenz
+            - name: Referenz zum Projektdateischema
               href: msbuild-project-file-schema-reference.md
             - name: Choose-Element (MSBuild)
               href: choose-element-msbuild.md
@@ -226,13 +226,13 @@
               href: usingtask-element-msbuild.md
             - name: When-Element (MSBuild)
               href: when-element-msbuild.md
-        - name: Taskreferenz
+        - name: Aufgabenreferenz
           items:
-            - name: Taskreferenz
+            - name: Aufgabenreferenz
               href: msbuild-task-reference.md
-            - name: Visual C++-Tasks
+            - name: Aufgaben für Visual C'++
               items:
-                - name: Visual C++-Tasks
+                - name: Aufgaben für Visual C'++
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake-Aufgabe
                   href: bscmake-task.md
@@ -384,7 +384,7 @@
               href: xsltransformation-task.md
         - name: Bedingungen
           href: msbuild-conditions.md
-        - name: Bedingte Konstrukte
+        - name: Conditional Constructs
           href: msbuild-conditional-constructs.md
         - name: Reservierte und bekannte Eigenschaften
           href: msbuild-reserved-and-well-known-properties.md
@@ -394,23 +394,23 @@
           href: common-msbuild-project-items.md
         - name: Befehlszeilenreferenz
           href: msbuild-command-line-reference.md
-        - name: TARGETS-Dateien
+        - name: .Targets-Dateien
           href: msbuild-dot-targets-files.md
         - name: Bekannte Elementmetadaten
           href: msbuild-well-known-item-metadata.md
         - name: Antwortdateien
           href: msbuild-response-files.md
-        - name: Zusätzliche Ressourcen
+        - name: Weitere Ressourcen
           href: additional-resources-for-msbuild.md
         - name: WPF-MSBuild-Referenz
           items:
             - name: WPF-MSBuild-Referenz
               href: wpf-msbuild-reference.md
-            - name: TARGETS-Dateien
+            - name: .Targets-Dateien
               href: wpf-dot-targets-files.md
-            - name: Taskreferenz
+            - name: Aufgabenreferenz
               items:
-                - name: Taskreferenz
+                - name: Aufgabenreferenz
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md
@@ -434,5 +434,5 @@
           href: special-characters-to-escape.md
     - name: Glossar
       href: msbuild-glossary1.md
-    - name: Zusätzliche Ressourcen
+    - name: Weitere Ressourcen
       href: additional-msbuild-resources.md

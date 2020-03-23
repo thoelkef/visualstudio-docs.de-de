@@ -12,17 +12,17 @@ ms.custom: video
 ms.workload:
 - azure
 ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70222734"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Veröffentlichen einer Web-App in Azure App Service mit Visual Studio für Mac
 
 Sie können das Tool zum Veröffentlichen verwenden, um ASP.NET Core-Apps in Azure App Service zu veröffentlichen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - [Visual Studio 2019 für Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installiert mit aktiviertem ASP.NET Core.
 - Ein Azure-Abonnement. [Registrieren Sie sich kostenlos](https://azure.microsoft.com/free/dotnet/), wenn Sie noch nicht über ein Abonnement verfügen. Dabei werden Ihnen für 30 Tage und 12 Monate für beliebte kostenlose Dienste 200 USD gutgeschrieben.

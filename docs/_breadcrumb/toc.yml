@@ -45,7 +45,7 @@
                 - name: Profilerstellung
                   tocHref: /visualstudio/profiling/
                   topicHref: /visualstudio/profiling/index
-                - name: Test
+                - name: Testen
                   tocHref: /visualstudio/test/
                   topicHref: /visualstudio/test/improve-code-quality
                 - name: Workflow-Designer
@@ -63,7 +63,7 @@
                 - name: Erste Schritte mit Visual Basic
                   tocHref: /visualstudio/get-started/visual-basic/
                   topicHref: /visualstudio/get-started/visual-basic/
-            - name: Erweiterungen
+            - name: Erweiterbarkeit
               tocHref: /visualstudio/extensibility/
               topicHref: /visualstudio/extensibility/index
               items:
@@ -74,7 +74,7 @@
                   tocHref: /visualstudio/extensibility/debugger/
                   topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
                   items:
-                    - name: Referenz
+                    - name: Verweis
                       tocHref: /visualstudio/extensibility/debugger/reference/
                       topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
                 - name: Richtlinien zur Benutzerfreundlichkeit

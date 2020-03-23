@@ -84,9 +84,9 @@
               href: how-to-write-a-run-time-error-reporting-function.md
             - name: Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek
               href: using-run-time-checks-without-the-c-run-time-library.md
-    - name: Anfügen an laufende Prozesse
+    - name: Anhängen an laufende Prozesse
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Angeben von Symboldateien (PDB) und Quelldateien
+    - name: Angeben von Symbol(PDB)- und Quelldateien
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Debuggen von 64-Bit-Anwendungen
       href: debug-64-bit-applications.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: Wiederherstellen von ausgeblendeten Debuggerbefehlen
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: Remotedebugging
   items:
-    - name: Remote Debugging
+    - name: Remotedebugging
       href: remote-debugging.md
     - name: Konfigurieren der Windows-Firewall für das Remotedebuggen
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -246,7 +246,7 @@
           href: remote-debugging-errors-and-troubleshooting.md
         - name: 'Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer verfügt nicht über die Berechtigung, eine Verbindung mit diesem Computer herzustellen'
           href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
-        - name: Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Der Zugriff wird verweigert.
+        - name: Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Zugriff verweigert.“
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer wird als anderer Benutzer ausgeführt
           href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -404,13 +404,13 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Debuggen von XAML in Blend für Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Navigieren in einer Debugsitzung (XAML und C#)'
+            - name: 'Navigieren in einer Debugsitzung (Xaml und C#)'
               items:
-                - name: 'Navigieren in einer Debugsitzung (XAML und C#)'
+                - name: 'Navigieren in einer Debugsitzung (Xaml und C#)'
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'Beispielcode für die Navigation im Debugger (Xaml und C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: 'Auslösen von Anhalten-, Fortsetzen- und Hintergrundereignissen (für Windows Store)'
+            - name: 'Auslösen von Anhalte-, Fortsetzungs- und Hintergrundereignissen für Windows Store'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Vorabrufen von Inhalt für Windows Store-Apps
           href: prefetch-content-for-windows-store-apps.md
@@ -424,7 +424,7 @@
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: Empfohlene Eigenschafteneinstellungen
               href: managed-debugging-recommended-property-settings.md
-            - name: Windows Forms-Anwendungen
+            - name: "Windows\_Forms-Anwendungen"
               href: debugging-preparation-windows-forms-applications.md
             - name: Windows-Dienste
               href: debugging-preparation-windows-services.md
@@ -592,7 +592,7 @@
               href: bc-texture-compression-variant.md
         - name: Ereignisliste
           href: graphics-event-list.md
-        - name: Zustand
+        - name: State
           href: graphics-state.md
         - name: Pipelinestufen
           href: graphics-pipeline-stages.md
@@ -628,9 +628,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: Verwenden der Grafikdiagnose mit einem ARM-Gerät
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: Referenz
+        - name: Verweis
           items:
-            - name: Referenz
+            - name: Verweis
               href: reference-programmatic-capture.md
             - name: VsgDbg-Klasse
               items:

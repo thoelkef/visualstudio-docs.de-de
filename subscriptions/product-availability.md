@@ -3,15 +3,15 @@ title: Produktverfügbarkeit für Softwaredownloads in Visual Studio-Abonnements
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informationen zur Produktverfügbarkeit in Softwaredownloads für Visual Studio-Abonnements
-ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706814"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947101"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Produktverfügbarkeit für Softwaredownloads in Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.
@@ -36,6 +36,12 @@ Es hängt von Ihrer Abonnementstufe und den Programmmitgliedschaften ab, wie vie
 > Wenn Sie über mehrere Abonnements verfügen, die der gleichen E-Mail-Adresse zugeordnet sind, werden die für Sie verfügbaren Softwaretitel durch Ihre **höchste** Abonnementebene bestimmt.  Wenn Sie beispielsweise über ein Visual Studio Enterprise- und ein Visual Studio Test Professional-Abonnement verfügen, haben Sie Zugriff auf die im Visual Studio Enterprise-Abonnement enthaltenen Softwaretitel, unabhängig davon, welches Abonnement zurzeit im Abonnementportal verwendet wird. 
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
+
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Für einige Softwaredownloads ist zum Installieren und Aktivieren ein Product Key erforderlich.  Weitere Informationen zum Abrufen und Verwalten von [Product Keys](product-keys.md) finden Sie im Artikel zu Product Keys. 

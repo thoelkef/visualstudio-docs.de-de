@@ -3,15 +3,15 @@ title: Visual Studio-Abonnements für Partner in Microsoft Partner Network (MPN)
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Einzelheiten zu den angebotenen Abonnements, geltenden Regeln und der Anzahl der in MPN angebotenen Abonnements
-ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281697"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947040"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio-Abonnements für Partner in Microsoft Partner Network (MPN)
 
@@ -74,6 +74,13 @@ Bei Visual Studio-Abonnements, die über MPN angeboten werden, muss der lizenzie
 - [MPN Program Administrator Guide (MPN-Programmleitfaden für Administratoren):](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) Enthält Anweisungen zum Zuweisen von Visual Studio-Abonnements zu MPN-Mitarbeitern.
 - [Assign Visual Studio subscriptions to MPN employees (Zuweisen von Visual Studio-Abonnements zu MPN-Mitarbeitern)](manage-mpn-subscriptions.md)
 - [Nutzungsbedingungen:](https://www.microsoft.com/useterms/) Visual Studio-Abonnements, die über MPN angeboten werden, unterliegen den Lizenzbedingungen für nicht zum Weiterverkauf bestimmte Visual Studio-Abonnements.
+
+
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

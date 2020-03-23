@@ -3,15 +3,15 @@ title: Von Partnern verwaltete Visual Studio-Abonnements für Kunden | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Partner Visual Studio-Abonnements für ihre Kunden verwalten.
-ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850559"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947075"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Von Partnern verwaltete Visual Studio-Abonnements für Kunden
 Partner und Kunden müssen zuerst einige Schritte ausführen, bevor sie Abonnements im [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) verwalten können. Der Prozess sieht folgendermaßen aus:
@@ -41,7 +41,7 @@ Dies gilt für neue Partner, die neue Open License-Bestellungen aufgeben und sic
 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Neue Partner, die das Verwaltungsportal für Visual Studio-Abonnements direkt besuchen
-Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellungen aufgegeben haben, sich aber nicht beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) registriert haben und direkt zum [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) wechseln.  Führen Sie folgende Schritte aus:
+Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellungen aufgegeben haben, sich aber nicht beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) registriert haben und direkt zum [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) wechseln.  Folgen Sie diesen Schritten:
 - Besuchen Sie https://manage.visualstudio.com.
 - Eine Fehlermeldung weist darauf hin, dass Sie kein bekannter Benutzer sind.
 - Wählen Sie die Registrierungsoption **OLP-Partner** aus, geben Sie die bei der Bestellung verwendete Autorisierungsnummer, Lizenznummer und E-Mail-Adresse des Kunden ein, aktivieren Sie das Kontrollkästchen, und klicken Sie auf **Senden**.
@@ -54,6 +54,12 @@ Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellung
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
 - Besuchen Sie das [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com), um Abonnements zu verwalten.
-- Benötigen Sie Hilfe? Wenden Sie sich an den [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Sie brauchen Hilfe? Wenden Sie sich an den [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs).

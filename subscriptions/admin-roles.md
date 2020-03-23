@@ -7,10 +7,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Superadministrator- und Administratorrolle und das Zuweisen von Administratoren.
 ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78234824"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Superadministratoren und Administratoren für Visual Studio-Abonnementverträge

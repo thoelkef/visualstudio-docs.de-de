@@ -7,10 +7,10 @@ ms.date: 07/20/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortlichkeiten von Abonnementadministratoren.
 ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235157"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Übersicht über die Verantwortlichkeiten des Administrators
@@ -35,7 +35,7 @@ Visual Studio-Abonnements ermöglichen Teammitgliedern die Installation und Verw
 | Erneutes Zuweisen von Lizenzen                     | Wenn ein Benutzer das Team verlässt und daher für ihn keine Lizenz mehr benötigt wird, können Sie die Lizenz nach 90 Tagen erneut zuweisen. Wenn Sie eine Lizenz erneut zuweisen, werden Product Keys, die bereits verwendet wurden, nicht ersetzt und sind noch immer verfügbar. Für Organisationen mit Enterprise Agreements (EA) werden jegliche Vorteile zurückgesetzt, die der ursprüngliche Benutzer genutzt hat, wie z.B. Pluralsight-Schulung.                                                                                                                                                                                                                                                 |
 | Ausnahme für Benutzer                  | Wenn ein Projekt zur Softwareentwicklung abgeschlossen wird, prüfen die Benutzer in der Regel die Anwendung und legen fest, ob sie den für das Release erforderlichen Kriterien entspricht. Dieser Prozess wird „Benutzerakzeptanztest“ genannt. Teammitglieder wie Geschäfts-, Sponsoren- oder Produktmanager können als Vertreter der Benutzer fungieren. Benutzer ohne Visual Studio-Abonnement können auf die Software im Rahmen von Benutzerakzeptanztests zugreifen, wenn die Verwendung der Software mit den Lizenzierungsbedingungen für Visual Studio kompatibel ist. Eine Person, deren Hauptaufgabe das Entwerfen, Entwickeln und Testen der Software ist, wird nur selten als „Benutzer“ berücksichtigt. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)

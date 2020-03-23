@@ -29,7 +29,7 @@
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: Erstellen eines Projekts aus einer Cookiecutter-Vorlage
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
-- name: Tutorials
+- name: Lernprogramme
   items:
     - name: Python in Visual Studio
       items:
@@ -57,7 +57,7 @@
           href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
         - name: '4: Verwenden Sie die Vorlage „Django-Webprojekt“.'
           href: learn-django-in-visual-studio-step-04-full-django-project-template.md
-        - name: '5: Authentifizieren Sie Benutzer.'
+        - name: '5: Authentifizieren von Benutzern'
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: '6: Verwenden Sie die Vorlage „Fragt ein Django-Webprojekt ab“.'
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
@@ -85,9 +85,9 @@
           href: python-django-web-application-project-template.md
         - name: Azure-Clouddienstvorlage
           href: python-azure-cloud-service-project-template.md
-    - name: Azure-SDK für Python
+    - name: Azure SDK für Python
       href: /python/azure/?view=azure-python
-- name: Anleitungen
+- name: Gewusst-wie-Anleitungen
   items:
     - name: Verwalten von Python-Umgebungen
       items:
@@ -139,13 +139,13 @@
           href: debugging-symbols-for-mixed-mode-c-cpp-python.md
     - name: Profilerstellung
       href: profiling-python-code-in-visual-studio.md
-    - name: Komponententest
+    - name: Komponententests
       href: unit-testing-python-in-visual-studio.md
     - name: Verwenden der Cookiecutter-Erweiterung
       href: using-python-cookiecutter-templates.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Elementvorlagen
       href: python-item-templates.md
-    - name: Optionen
+    - name: Tastatur
       href: python-support-options-and-settings-in-visual-studio.md

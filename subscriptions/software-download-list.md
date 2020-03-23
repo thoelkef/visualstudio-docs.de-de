@@ -3,22 +3,22 @@ title: Welche Software ist zum Herunterladen verfügbar? | Microsoft-Dokumentati
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/28/2017
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Suchen Sie nach einer Liste der Softwaredownloads, die in Ihrem Visual Studio-Abonnement enthalten sind.
-ms.openlocfilehash: e7c64b7718a0446e16cb562d30ddc607cb4ea1dc
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: e4349e67c08ad424d0e06cb91c2b89620a44b741
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706771"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508722"
 ---
 # <a name="what-software-is-available-for-download"></a>Welche Software ist zum Herunterladen verfügbar?
 
 Die für Sie verfügbare [Liste der Softwaredownloads](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) richtet sich nach dem Abonnement, das Sie verwenden.  Wenn Sie über mehrere Abonnements verfügen, die derselben Anmeldeadresse zugeordnet sind, sehen Sie die Downloads, die im Abonnement der höchsten Ebene enthalten ist, unabhängig davon, welches Abonnement Sie anzeigen.  Wenn Sie z. B. über ein Visual Studio Enterprise-Standardabonnement und ein Visual Studio Professional-Abonnement verfügen, sehen Sie die vollständige Liste der mit Ihrem Enterprise-Abonnement verfügbaren Downloads.  Eine Liste Ihrer Abonnements finden Sie unter [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
 
 Wenn Sie bereits über ein Visual Studio-Abonnement verfügen:
-1. Wechseln Sie zu [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+1. Gehe zu[https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 2. Melden Sie sich bei Ihrem Abonnement an. (Weitere Informationen zur Anmeldung mit Ihrem [Microsoft-Konto](sign-in-msa.md), [Geschäfts-, Schul- oder Unikonto](sign-in-work.md) oder [GitHub-Konto](sign-in-github.md))
 3. Nach der erfolgreichen Anmeldung können Sie nach den gewünschten Downloads suchen.  Sie sehen auch eine Liste beliebter Downloads, die nach mehreren Kriterien sortiert werden können.
 
@@ -28,6 +28,12 @@ Um Produkte schnell zu suchen, verwenden Sie die Funktion „Suchen“ am oberen
 > Wenn Sie Ihre Product Keys suchen, klicken Sie oben auf der Seite auf die Registerkarte **Product Keys**.
 
 Sie können auch eine Excel-Tabelle herunterladen, die eine umfassende Liste von [verfügbaren Softwaretiteln](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) für jeden Abonnementtyp enthält.
+
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Lesen Sie mehr über das [Herunterladen von Software](download-software.md) und über das Abrufen und Verwalten von [Product Keys](product-keys.md).

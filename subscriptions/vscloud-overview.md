@@ -7,10 +7,10 @@ ms.date: 07/28/2019
 ms.topic: conceptual
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
 ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "71962946"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
@@ -59,7 +59,7 @@ Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verw
 > [!div class="mx-imgBorder"]
 > ![Anzeigen von Abonnements](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
-## <a name="manage-subscriptions"></a>Abbrechen der Erneuerungen von erworbenen Cloudabonnements
+## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Abbrechen der Erneuerungen von erworbenen Cloudabonnements
 
 * So ändern Sie die Anzahl der erworbenen Abonnements:
 

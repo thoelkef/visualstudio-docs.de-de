@@ -10,10 +10,10 @@ metadata:
   ms.date: 09/18/2019
   ms.topic: hub-page
   ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
-  ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/10/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74985046"
 highlightedContent:
   items:
@@ -67,7 +67,7 @@ productDirectory:
     - url: https://docs.microsoft.com/xamarin/get-started/quickstarts/single-page?pivots=macos
       text: Erste Schritte mit Xamarin
 tools:
-  title: Sprachen
+  title: Languages
   summary: Mit Visual Studio für Mac können Sie in C#, F#, Razor, HTML5, CSS, Javascript und Typescript, XAML, and XML schreiben.
   items:
   - title: C#
@@ -146,16 +146,16 @@ additionalContent:
   sections:
   - title: Aufgaben
     items:
-    - title: Entwicklung
+    - title: Entwickeln
       summary: IntelliSense, Refactoring und Syntaxhervorhebung für Ihre bevorzugte Sprache.
       url: ~/source-editor.md
-    - title: Build
+    - title: Entwickeln
       summary: Konfigurieren Sie Ihren Compiler, und erstellen Sie Ihre App.
       url: ~/compiling-and-building.md
-    - title: Debug
+    - title: Debuggen
       summary: Führen Sie Ihre App im Debugger aus, um Probleme zu untersuchen.
       url: ~/debugging.md
-    - title: Quellcodeverwaltung
+    - title: Versionskontrolle
       summary: Geben Sie Code mit Versionskontrolltechnologien wie Git und Subversion frei.
       url: ~/version-control.md
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [Problem melden](~/report-a-problem.md) - [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=41)'

@@ -50,13 +50,13 @@
   items:
     - name: Grafikdiagnosebeispiele
       href: graphics-diagnostics-examples.md
-    - name: 'Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen'
+    - name: 'Exemplarische Vorgehensweise: Erfassen von Grafikinformationen'
       href: walkthrough-capturing-graphics-information.md
     - name: 'Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen'
       href: walkthrough-capturing-graphics-information-programmatically.md
     - name: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus'
       href: walkthrough-missing-objects-due-to-device-state.md
-    - name: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading'
+    - name: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexschattierung'
       href: walkthrough-missing-objects-due-to-vertex-shading.md
     - name: 'Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
@@ -64,7 +64,7 @@
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
     - name: 'Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 'Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers'
+    - name: 'Gewusst wie: Ändern des Grafikdiagnose-Wiedergabecomputers'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Verweis (Programmgesteuerte Aufzeichnung)
   items:

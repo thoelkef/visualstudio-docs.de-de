@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.openlocfilehash: 7d95c73b8d745826b256d515f161194ee9dbb587
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692386"
 ---
 # <a name="set-up-a-subversion-repository"></a>Einrichten eines Subversion-Repositorys
@@ -56,6 +56,6 @@ Sobald Sie Subversion auf Ihrem Computer installiert haben, führen Sie die folg
 
 8. Alle verfügbaren Befehle der Versionskontrolle sollten nun im Menü „Versionskontrolle“ sichtbar sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Working with Subversion (Arbeiten mit Subversion)](working-with-subversion.md)

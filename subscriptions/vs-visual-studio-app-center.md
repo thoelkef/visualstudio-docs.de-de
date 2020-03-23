@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Visual Studio App Center-Vorteil, der in Visual Studio-Abonnements enthalten ist.
 ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74161918"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center in Visual Studio-Abonnements
@@ -49,7 +49,7 @@ Der Einstieg in Visual Studio App Center ist ganz einfach.
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Included                                                            |Ja |
 ||
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

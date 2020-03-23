@@ -4,7 +4,7 @@
   href: installing-the-visual-studio-sdk.md
 - name: Beginnen mit dem Entwickeln von Visual Studio-Erweiterungen
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Erstellen Ihrer ersten Erweiterung: Hello World'
+- name: 'Erstellen der ersten Erweiterung: Hello World'
   href: extensibility-hello-world.md
 - name: Neuigkeiten im Visual Studio 2019 SDK
   items:
@@ -24,7 +24,7 @@
       href: set-install-root.md
     - name: Migrieren der Debugger-COM-Registrierung
       href: migrate-debugger-com-registration.md
-    - name: Häufig gestellte Fragen (FAQs)
+    - name: Häufig gestellte Fragen
       href: faq-2017.md
 - name: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
   href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
@@ -44,11 +44,11 @@
       href: workspaces.md
     - name: Dateikontexte
       href: workspace-file-contexts.md
-    - name: Indizieren
+    - name: Indizierung
       href: workspace-indexing.md
     - name: Sprachdienste
       href: workspace-language-services.md
-    - name: Build
+    - name: Entwickeln
       href: workspace-build.md
 - name: Erweitern von Menüs und Befehlen
   items:
@@ -138,15 +138,15 @@
           href: editor-imports.md
         - name: Unterstützung von EditorConfig
           href: supporting-editorconfig.md
-        - name: 'Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung'
+        - name: 'Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung'
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
         - name: 'Exemplarische Vorgehensweise: Erstellen einer Randglyphe'
           href: walkthrough-creating-a-margin-glyph.md
         - name: 'Exemplarische Vorgehensweise: Anpassen der Textansicht'
           href: walkthrough-customizing-the-text-view.md
-        - name: 'Exemplarische Vorgehensweise: Erstellen von Randsteuerelementen für eine Ansicht, Befehlen und Einstellungen (Spaltenführungslinien)'
+        - name: 'Exemplarische Vorgehensweise: Erstellen von Randsteuerelementen für eine Ansicht, Befehlen und Einstellungen (Satzspiegel)'
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: 'Exemplarische Vorgehensweise: Hervorheben von Text'
+        - name: 'Exemplarische Vorgehensweise: Markieren von Text'
           href: walkthrough-highlighting-text.md
         - name: 'Exemplarische Vorgehensweise: Gliedern'
           href: walkthrough-outlining.md
@@ -156,7 +156,7 @@
           href: walkthrough-displaying-quickinfo-tooltips.md
         - name: 'Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe'
           href: walkthrough-displaying-signature-help.md
-        - name: 'Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigungen'
+        - name: 'Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung'
           href: walkthrough-displaying-statement-completion.md
         - name: 'Exemplarische Vorgehensweise: Implementieren von Codeausschnitten'
           href: walkthrough-implementing-code-snippets.md
@@ -634,7 +634,7 @@
               href: usedcommands-element.md
             - name: UsedCommand-Element
               href: usedcommand-element.md
-        - name: Parent-Element
+        - name: Übergeordnetes Element
           href: parent-element.md
         - name: Icon-Element
           href: icon-element.md
@@ -808,9 +808,9 @@
           href: adding-command-line-switches.md
     - name: Fehlerbehandlung und Rückgabewerte
       href: error-handling-and-return-values.md
-    - name: erzwingen
+    - name: Objekte
       items:
-        - name: erzwingen
+        - name: Objekte
           href: objects.md
         - name: VSCodeWindow-Objekt
           href: vscodewindow-object.md

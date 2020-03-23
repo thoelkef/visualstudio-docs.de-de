@@ -3,21 +3,21 @@ title: Probleme beim Anmelden bei Visual Studio-Abonnements | Microsoft-Dokument
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: In diesem Artikel erfahren Sie etwas über Probleme, die bei der Anmeldung bei Visual Studio-Abonnements auftreten können.
-ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 8175a1d8d2c79aecad25952eebdf734e0a9d29d2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706856"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509017"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Probleme beim Anmelden bei Visual Studio-Abonnements
 Um Ihr Visual Studio-Abonnement zu nutzen, müssen Sie sich zuerst anmelden.  Je nach Abonnement haben Sie es entweder mit einem Microsoft-Konto (MSA) oder einer Azure Active Directory-Identität (AAD) eingerichtet.  In diesem Artikel werden einige der Probleme besprochen, die beim Anmelden bei Ihrem Abonnement auftreten können.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>Microsoft-Konten (MSA) können nicht mit Geschäfts-, Schul- oder Uni-E-Mail-Adressen erstellt werden
-Ein neues persönliches Microsoft-Konto (MSA) mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse zu erstellen, ist nicht länger zulässig, wenn die E-Mail-Domäne in Azure AD konfiguriert wurde. Was bedeutet das? Wenn Ihre Organisation Office 365 oder andere Unternehmensdienste von Microsoft verwendet, die auf Azure AD basieren, und Sie einen Domänennamen zu Ihrem Azure AD-Mandanten hinzugefügt haben, können Benutzer kein neues persönliches Microsoft-Konto mit einer E-Mail-Adresse in Ihrer Domäne mehr erstellen.
+Ein neues persönliches Microsoft-Konto (MSA) mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse zu erstellen, ist nicht länger zulässig, wenn die E-Mail-Domäne in Azure AD konfiguriert wurde. Was bedeutet dies? Wenn Ihre Organisation Office 365 oder andere Unternehmensdienste von Microsoft verwendet, die auf Azure AD basieren, und Sie einen Domänennamen zu Ihrem Azure AD-Mandanten hinzugefügt haben, können Benutzer kein neues persönliches Microsoft-Konto mit einer E-Mail-Adresse in Ihrer Domäne mehr erstellen.
 
 ### <a name="why-was-this-change-made"></a>Warum wurde diese Änderung vorgenommen?
 Über ein persönliches Microsoft-Konto mit einer Arbeitsadresse als Benutzername zu verfügen, stellt sowohl Endbenutzer als auch IT-Abteilungen vor Probleme. Beispiel:
@@ -61,6 +61,12 @@ Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Servi
 
 ### <a name="what-options-do-i-have"></a>Welche Optionen stehen mir zur Verfügung?
 Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit dem Identitätskonfiguration für Ihr Unternehmen vertraut zu machen. Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen von seinem Verwaltungsportal aus aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Firmen-E-Mail-Adresse erstellen. Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder Probleme bei der Durchführung dieser Aktion. 
+
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Weitere Informationen zum Verknüpfen von MSA- und AAD-Konten innerhalb von AAD finden Sie unter [Hinzufügen von Azure Active Directory B2B-Zusammenarbeitsbenutzern über das Azure-Portal](/azure/active-directory/b2b/add-users-administrator).

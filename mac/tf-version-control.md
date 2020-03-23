@@ -7,10 +7,10 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714515"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Unterstützt Visual Studio für Mac die Team Foundation-Versionskontrolle?
@@ -32,11 +32,11 @@ Obwohl Visual Studio für Mac TFVC offiziell nicht unterstützt, finden Sie im R
 * Option 1. [ Verwenden von Visual Studio Code und der Azure Repos-Erweiterung für eine grafische Benutzeroberfläche](#use-visual-studio-code-and-the-azure-repos-extension)
 * Option 2. [Verbinden mit Ihrem Repository über den Team Explorer Everywhere Command Line Client (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### Option 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Verwenden von Visual Studio Code und der Azure Repos-Erweiterung
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Option 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Verwenden von Visual Studio Code und der Azure Repos-Erweiterung
 
 Wenn Sie mit einer grafischen Oberfläche arbeiten möchten, um Ihre Dateien in der Versionskontrolle zu verwalten, dann bietet die Azure Repos-Erweiterung für Visual Studio Code eine unterstützte Lösung von Microsoft. Um zu beginnen, laden Sie [Visual Studio Code](https://code.visualstudio.com) herunter, und erfahren Sie dann, wie Sie [die Azure Repos-Erweiterung konfigurieren](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-### Option 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Verbinden über den Team Explorer Everywhere Command Line Client
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Option 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Verbinden über den Team Explorer Everywhere Command Line Client
 
 > [!IMPORTANT]
 > Gemäß der README-Datei von Team Explorer Everywhere wird dieses Projekt [nicht mehr gewartet](https://github.com/microsoft/team-explorer-everywhere).
@@ -106,6 +106,6 @@ Um mehr über die hier genannten oder andere Befehle zu erfahren, können Sie de
 
 `tf help`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Entwickeln und Freigeben von Code in TFVC mit Visual Studio (unter Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

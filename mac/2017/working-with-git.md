@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983571"
 ---
 # <a name="working-with-git"></a>Arbeiten mit Git
@@ -101,6 +101,6 @@ Nachdem Sie die Änderungen committet haben, pushen Sie sie an das Remotereposit
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Freigeben Ihres Codes mit Visual Studio 2017 und dem Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

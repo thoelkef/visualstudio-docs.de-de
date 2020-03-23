@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983450"
 ---
 # <a name="customizing-the-build-system"></a>Anpassen des Buildsystems
@@ -78,7 +78,7 @@ Die Eigenschaftengruppe einer einfachen Konsolenanwendung kann z.B. wie die folg
 
 Auf Eigenschaften kann von Ausdrücken aus mit `$()`-Syntax verwiesen werden. `$(Foo)` wird z.B. als Wert der `Foo`-Eigenschaft bewertet. Wenn die Eigenschaft nicht festgelegt wurde, wird sie als leere Zeichenfolge bewertet, ohne dass ein Fehler auftritt.
 
-#### <a name="items"></a>Elemente
+#### <a name="items"></a>Items
 
 Elemente bieten eine Möglichkeit zum Verarbeiten von Eingaben in einem Buildsystem als Listen oder Mengen und stellen normalerweise Dateien dar. Jedes Element hat einen *Elementtyp*, eine *Elementspezifikation* und optionale willkürliche *Metadaten*. Beachten Sie, dass MSBuild keine einzelnen Elemente verarbeitet, sondern alle Elemente eines angegebenen Typs akzeptiert: Dies wird als *Elementmenge* bezeichnet.
 

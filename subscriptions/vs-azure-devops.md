@@ -7,11 +7,11 @@ ms.date: 07/30/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
 ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983688"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79306740"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in Azure DevOps, die als Vorteil in Ihrem Abonnement enthalten sind. Sie können diese Features in jeder Azure DevOps-Organisation verwenden, bei dem Sie Mitglied sind. Dabei spielt es keine Rolle, ob Sie die Organisation erstellt haben oder von jemandem hinzugefügt wurden.
@@ -32,7 +32,7 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
 ||
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
 
 
 > [!NOTE]

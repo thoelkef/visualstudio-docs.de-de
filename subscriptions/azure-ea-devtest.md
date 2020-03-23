@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: In diesem Artikel erfahren Sie, wie Sie von den besonderen Azure DevTest-Preisen für Kunden mit Enterprise Agreement profitieren.
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580115"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78410431"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise Agreement-DevTest-Angebot
 
@@ -25,7 +25,7 @@ In einem [Tutorialvideo](https://channel9.msdn.com/blogs/EA.Azure.com/Enabling-a
 
 ## <a name="enable-offers-in-the-ea-portal"></a>Aktivieren von Angeboten im Enterprise Agreement-Portal
 So werden die Angebote aktiviert:
-1. Melden Sie sich bei https://ea.azure.com/manage an.
+1. Melden Sie sich bei [https://ea.azure.com/manage](https://ea.azure.com/manage) an.
 0. Klicken Sie auf das Menü **Konto**.
 0. Suchen Sie das Konto, für das Sie Angebote aktivieren möchten.  Wenn Sie über mehrere Konten verfügen, können Sie die **Suche** verwenden, um das gewünschte Konto schnell zu finden. 
 0. Ziegen Sie auf den Namen des Kontos. 
@@ -35,7 +35,7 @@ So werden die Angebote aktiviert:
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Erstellen Sie einzelne Abonnements im Konto.
 Jeder Abonnent im Konto kann anhand der folgenden Schritte ein Abonnement erstellen:
-1. Melden Sie sich bei https://account.windowsazure.com/signup?showCatalogs=True an.
+1. Melden Sie sich bei [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True) an.
 0. Wählen Sie das Angebot **Enterprise Dev/Test** aus.
 0. Aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass das Abonnement dem Enterprise Agreement unterliegt. 
 0. Klicken Sie auf **Kaufen**.  (Bei diesem Angebot wird nichts gekauft.)

@@ -10,21 +10,21 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75591618"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest-Referenzhandbuch
 
-## <a name="contents"></a>Inhalt
+## <a name="contents"></a>Contents
 
 * **[Übersicht über IntelliTest](introduction.md)**
   - [Das „Hello World“ von IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Einschränkungen](introduction.md#limitations)
     * [Nichtdeterminiertheit](introduction.md#nondeterminism)
-    * [Parallelität](introduction.md#concurrency)
+    * [Concurrency](introduction.md#concurrency)
     * [Nativer Code](introduction.md#native-code)
     * [Plattform](introduction.md#platform)
     * [Sprache](introduction.md#language)
@@ -123,6 +123,6 @@ ms.locfileid: "75591618"
   - [Erkannter Aufrufkonflikt](warnings-and-errors.md#observed-call-mismatch)
   - [Im Feld „static“ gespeicherten Wert](warnings-and-errors.md#value-static-field)
 
-## <a name="got-feedback"></a>Sie möchten Feedback geben?
+## <a name="got-feedback"></a>Sie haben Fragen oder Anmerkungen?
 
 Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

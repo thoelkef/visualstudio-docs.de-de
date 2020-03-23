@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual Studio-Abonnements enthalten ist
 ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74161951"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
@@ -71,7 +71,7 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
 | Visual Studio Enterprise (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                  |NA|
 ||
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, Imagine.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

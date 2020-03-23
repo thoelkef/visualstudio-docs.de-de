@@ -7,10 +7,10 @@ ms.date: 02/12/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
 ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "77278846"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements

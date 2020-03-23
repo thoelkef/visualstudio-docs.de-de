@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985093"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Tastaturnavigation in Visual Studio für Mac
@@ -36,20 +36,20 @@ Visual Studio für Mac bietet eine Reihe von Tastenkombinationen für verschiede
 
 1. Klicken Sie auf **Tastenzuordnung**, und geben Sie eine Tastenkombination ein.
 
-1. Klicken Sie auf **Übernehmen**.
+1. Wählen Sie **Übernehmen**.
 
 > [!TIP]
 > Sie können aus einer Liste mit Schemas für Tastenzuordnungen dasjenige Schema auswählen, das Ihre Anforderungen am besten erfüllt, wenn Sie mit anderen gängigen Tastenkombinationen vertraut sind (beispielsweise mit Visual Studio in Windows).
 
 ## <a name="useful-keyboard-shortcuts"></a>Nützliche Tastenkombinationen
 
-|Feature         |BESCHREIBUNG                                   |Verknüpfung         |
+|Funktion         |BESCHREIBUNG                                   |Tastenkombination         |
 |----------------|----------------------------------------------|-----------------|
 |Navigieren auf der Benutzeroberfläche   |Durchlaufen aller Elemente der Benutzeroberfläche               |**⇥**, **⇧⇥**    |
 |Interagieren        |Auswählen des Steuerelements, auf dem sich der Fokus befindet         |**␣**            |
 |Interagieren        |Auswählen des Standardsteuerelements auf dem Bildschirm oder im Dialogfeld |**⏎**            |
 |Wechseln zwischen Registerkarten     |Wechseln zwischen offenen Dateien                      |**⌘⇧[** , **⌘⇧]** |
-|Debug           |Beginnen Sie mit dem Debuggen.                               |**⌘⏎**           |
+|Debuggen           |Beginnen Sie mit dem Debuggen.                               |**⌘⏎**           |
 
 > [!TIP]
 > Eine umfassende Liste mit Tastaturbefehlen finden Sie unter [Tastenkombinationen](keyboard-shortcuts.md).

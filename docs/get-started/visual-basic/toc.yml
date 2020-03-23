@@ -10,10 +10,10 @@
       href: tutorial-projects-solutions.md
     - name: Weitere Visual Studio-Features
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-- name: Erstellen Sie eine App
+- name: Erstellen einer App
   expanded: true
   items:
-    - name: Erstellen einer Konsolenanwendung
+    - name: Erstellen einer Konsolen-App
       href: tutorial-console.md
     - name: Erstellen einer UWP-App
       href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
@@ -34,9 +34,9 @@
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Debuggen Ihres Codes
       href: ../visual-basic/tutorial-debugger.md
-    - name: Komponententest
+    - name: Komponententests
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Bereitstellen des Projekts
       href: ../../deployment/index.yml
-    - name: Zugriff auf Daten
+    - name: Zugreifen auf Daten
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json

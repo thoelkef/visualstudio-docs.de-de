@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75439049"
 ---
 # <a name="multi-caret-editing"></a>Bearbeiten mit mehreren Caretzeichen
@@ -21,7 +21,7 @@ Das Bearbeiten mit mehreren Caretzeichen gestattet es Ihnen, _n_ Einfügemarken 
 
 Der Modus für mehrere Caretzeichen kann auf verschiedene Weise über die Tastatur aktiviert werden. In der folgenden Tabelle finden Sie die verfügbaren Tastenkombinationen zur Eingabe bestimmter Modi der Bearbeitung mit mehreren Caretzeichen:
 
-| Hotkey  | Aktion                        | 
+| Hotkey  | Action                        | 
 |---------| ------------------------------|
 |  ⌥⇧.   | Nächstes übereinstimmendes Caretzeichen einfügen    | 
 |  ⌥⇧;   | Caretzeichen an allen übereinstimmenden Positionen einfügen | 
@@ -40,7 +40,7 @@ Um mit der Maus mehrere Caretzeichen einzufügen, müssen Sie ⌘⌥ gedrückt h
 
 ![Maus mit mehrerer Caretzeichen](media/multi-caret-mouse.gif)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnellaktionen (Visual Studio unter Windows)](/visualstudio/ide/quick-actions)
 - [Umgestalten von Code (Visual Studio unter Windows)](/visualstudio/ide/refactoring-in-visual-studio)

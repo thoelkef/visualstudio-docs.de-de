@@ -7,10 +7,10 @@ ms.date: 10/13/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über den CODE Magazine-Vorteil, der in Ihrem Visual Studio-Abonnement enthalten ist.
 ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74491655"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine in Visual Studio-Abonnements
@@ -56,7 +56,7 @@ Nachdem Sie die Bestellung aufgegeben haben, wird eine Bestätigungsseite mit ei
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Nein          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, Imagine Premium.  Umfasst nicht: Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services Developer, MCT Software & Services, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, Imagine Premium.  Umfasst nicht: Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services Developer, MCT Software & Services, Imagine.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

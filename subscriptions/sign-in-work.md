@@ -3,15 +3,15 @@ title: Anmelden bei Visual Studio-Abonnements mit dem Geschäfts-, Schul- oder U
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: fdad16a95c3686d738bd3ef77eb199549082b766
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315341"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508991"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit dem Geschäfts-, Schul- oder Unikonto 
 
@@ -69,6 +69,12 @@ Antwort:  Viele Benutzer verfügen über mehr als ein Abonnement.  Es gibt zwei 
 2. Sie verfügen über mehrere Abonnements, die derselben E-Mail-Adresse zugeordnet sind.  Besuchen Sie https://my.visualstudio.com/subscriptions, und wählen Sie das Abonnement aus, das Sie verwenden möchten, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugeordnet sind. 
 
 Wenden Sie sich bei anhaltenden Problemen bei der Anmeldung für Unterstützung an das [Supportteam für Abonnements](https://visualstudio.microsoft.com/subscriptions/support/).  
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und die Tools, Dienste und Angebote zu entdecken, die Ihnen zur Verfügung stehen.  

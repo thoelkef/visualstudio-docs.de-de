@@ -14,7 +14,7 @@ metadata:
 abstract:
   description: 'Visual Studio Tools for AI sind eine integrierte Entwicklungsumgebung für das Erstellen, Testen und Bereitstellen von Deep Learning-Lösungen. Erfahren Sie anhand von unseren Schnellstarts, Tutorials und Beispielen, wie Sie KI-Tools verwenden können.'
 sections:
-  - title: 5-minütige Schnellstarts
+  - title: Fünfminütige Schnellstarts
     items:
       - type: paragraph
         text: 'Erfahren Sie, wie Sie die Deep Learning-Lösung mit folgenden Methoden ausführen können:'

@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-Abonnement aktivieren, das in Ihrem Visual Studio-Abonnement enthalten ist.
 ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74161930"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
@@ -81,7 +81,7 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 ||
 
-<sup>1</sup> *Umfasst: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Enthält: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

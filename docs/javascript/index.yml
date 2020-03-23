@@ -9,46 +9,52 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
+  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75678947"
 landingContent:
-  - title: Erste Schritte
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: JavaScript und TypeScript in Visual Studio
-            url: javascript-in-vs-2019.md
-      - linkListType: how-to-guide
-        links:
-          - text: Installieren von Visual Studio
-            url: ../install/install-visual-studio.md
-      - linkListType: get-started
-        links:
-          - text: Einführung beginnen
-            url: quickstart-ide-orientation-js.md
-  - title: Erstellen von JavaScript- und TypeScript-Apps
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Erstellen einer Web-App mit Node.js und Express
-            url: tutorial-nodejs.md
-          - text: Erstellen einer Web-App mit Node.js und React
-            url: tutorial-nodejs-with-react-and-jsx.md
-          - text: Erstellen einer Web-App mit Node.js und Vue.js
-            url: quickstart-vuejs-with-nodejs.md
-          - text: Erstellen einer ASP.NET Core-App mit TypeScript
-            url: tutorial-aspnet-with-typescript.md
-  - title: Kennenlernen von Visual Studio
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Schreiben und Bearbeiten von Code
-            url: write-and-edit-code.md
-          - text: Verwalten von npm-Paketen
-            url: npm-package-management.md
-          - text: Verwenden der interaktiven Node.js-REPL
-            url: nodejs-interactive-repl.md
-          - text: Debuggen Ihres Codes
-            url: debug-nodejs.md
-          - text: Entwickeln von Code ohne Projekte oder Projektmappen
-            url: develop-javascript-code-without-solutions-projects.md
-          - text: Schreiben und Ausführen von Komponententests
-            url: unit-testing-javascript-with-visual-studio.md
+- title: Erste Schritte
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: JavaScript und TypeScript in Visual Studio
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Installieren von Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Einführung beginnen
+      url: quickstart-ide-orientation-js.md
+- title: Erstellen von JavaScript- und TypeScript-Apps
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Erstellen einer Web-App mit Node.js und Express
+      url: tutorial-nodejs.md
+    - text: Erstellen einer Web-App mit Node.js und React
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Erstellen einer Web-App mit Node.js und Vue.js
+      url: quickstart-vuejs-with-nodejs.md
+    - text: Erstellen einer ASP.NET Core-App mit TypeScript
+      url: tutorial-aspnet-with-typescript.md
+- title: Kennenlernen von Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Schreiben und Bearbeiten von Code
+      url: write-and-edit-code.md
+    - text: Verwalten von npm-Paketen
+      url: npm-package-management.md
+    - text: Verwenden der interaktiven Node.js-REPL
+      url: nodejs-interactive-repl.md
+    - text: Debuggen Ihres Codes
+      url: debug-nodejs.md
+    - text: Entwickeln von Code ohne Projekte oder Projektmappen
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: Schreiben und Ausführen von Komponententests
+      url: unit-testing-javascript-with-visual-studio.md

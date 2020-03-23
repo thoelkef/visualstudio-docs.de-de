@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "73189240"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Arbeiten mit R in Visual Studio
@@ -31,7 +31,7 @@ Gehen Sie folgendermaßen vor, um mit R in Visual Studio zu arbeiten:
 
 Folgen Sie anschließend den unten stehenden Links, um mehr über R-Features sowie über die allgemeinen Features von Visual Studio zu erfahren.
 
-| Feature | BESCHREIBUNG | Allgemeine Visual Studio-Dokumentation |
+| Feature | Beschreibung | Allgemeine Visual Studio-Dokumentation |
 | --- | --- | --- |
 | [Visual Studio-Projektsystem](r-projects-in-visual-studio.md) | Organisieren und verwalten Sie verknüpfte Dateien in einer praktischen Struktur, und profitieren Sie von nützlichen Vorlagen für Elemente wie R-Code, R-Dokumentation, R Markdown, SQL-Abfragen und gespeicherte Prozeduren. Nutzen Sie zudem den [Paket-Manager](r-package-manager-in-visual-studio.md) und die [SQL Server-Integration](integrating-sql-server-with-r.md).  | [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Arbeitsbereich](r-workspaces-in-visual-studio.md) | RTVS kann in lokale und Remotearbeitsbereiche eingebunden werden – so können Sie R-Code lokal mit kleineren Datasets entwickeln, den Code dann auf leistungsfähigeren cloudbasierten Computern mit wesentlich größeren Datasets ausführen. | n/v |
@@ -47,7 +47,7 @@ Weitere Informationen finden Sie auch unter [Häufig gestellte Fragen](faq.md).
 
 |   |   |
 |---|---|
-| ![Symbol für Filmkamera für das Video](../install/media/video-icon.png "Ansehen eines Videos") | [Im Video (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) finden Sie eine Übersicht zu R-Tools für Visual Studio (12 Minuten 36 Sekunden). Informationen finden Sie auch in [weiteren Videos über R-Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
+| ![Symbol für Filmkamera für das Video](../install/media/video-icon.png "Video ansehen") | [Im Video (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) finden Sie eine Übersicht zu R-Tools für Visual Studio (12 Minuten 36 Sekunden). Informationen finden Sie auch in [weiteren Videos über R-Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
 ## <a name="send-us-your-feedback"></a>Senden Sie uns Ihr Feedback!
 

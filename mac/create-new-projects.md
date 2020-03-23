@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75678887"
 ---
 # <a name="create-a-new-project"></a>Erstellen eines neues Projekts
@@ -51,6 +51,6 @@ Wenn Sie ein neues Projekt hinzufügen, werden Sie durch die Erstellung eines ne
 
 Wenn Sie ein vorhandenes Projekt hinzufügen möchten, können Sie auf Ihrem Computer nach einem bestehenden Projekt suchen und es der Projektmappe hinzufügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Projektmappen und Projekten (Visual Studio unter Windows)](/visualstudio/ide/creating-solutions-and-projects)

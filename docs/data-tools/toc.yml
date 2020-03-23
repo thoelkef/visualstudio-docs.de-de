@@ -1,6 +1,6 @@
 - name: Übersicht
   href: accessing-data-in-visual-studio.md
-- name: Tutorials
+- name: Lernprogramme
   items:
     - name: Erstellen einer einfachen Daten-App mit ADO.NET
       href: create-a-simple-data-application-by-using-adonet.md
@@ -34,7 +34,7 @@
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
     - name: Übersicht über n-schichtige Datenanwendungen
       href: n-tier-data-applications-overview.md
-- name: Anleitungen
+- name: Gewusst-wie-Anleitungen
   items:
     - name: Erstellen einer Datenbank
       href: create-a-sql-database-by-using-a-designer.md
@@ -120,7 +120,7 @@
               items:
                 - name: Speichern von Daten mithilfe von Transaktionen
                   href: save-data-by-using-a-transaction.md
-                - name: 'Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion'
+                - name: 'Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion'
                   href: save-data-in-a-transaction.md
             - name: Speichern von Daten in einer Datenbank (mehrere Tabellen)
               href: save-data-to-a-database-multiple-tables.md
@@ -142,7 +142,7 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: Separieren von DataSets und TableAdapters in verschiedene Projekte
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Steuerelemente
+    - name: Kontrollen
       items:
         - name: Binden von Steuerelementen an Datenquellen
           href: bind-controls-to-data-in-visual-studio.md
@@ -164,7 +164,7 @@
               href: display-related-data-in-wpf-applications.md
             - name: Binden von Steuerelementen an Bilder aus einer Datenbank
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Windows Forms-Steuerelemente
+        - name: "Steuerelemente für Windows\_Forms"
           items:
             - name: Binden von Windows Forms-Steuerelementen an Daten
               href: bind-windows-forms-controls-to-data-in-visual-studio.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Beheben von Datenzugriffsfehlern
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Referenz
+- name: Verweis
   items:
     - name: O/R-Designer (Linq to SQL)
       items:

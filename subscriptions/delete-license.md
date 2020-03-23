@@ -7,10 +7,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Abonnementzuweisungen löschen können.
 ms.openlocfilehash: 6ed64f5c05f77bea7f157eee9e29bbb05aa8730d
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78263244"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Löschen von Zuweisungen in Visual Studio-Abonnements

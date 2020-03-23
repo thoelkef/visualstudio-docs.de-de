@@ -1,8 +1,8 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Containertools in Visual Studio
 metadata:
   title: 'Dokumentation: Docker-Containerentwicklungstools'
-  description: 'Erfahren Sie, wie Sie containerbasierte Apps und Dienste erstellen und verwalten. Rufen Sie die Dokumentation, den Beispielcode, Tutorial und noch viel mehr ab.'
+  description: Erfahren Sie, wie Sie containerbasierte Apps und Dienste erstellen und verwalten. Rufen Sie die Dokumentation, den Beispielcode, Tutorial und noch viel mehr ab.
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -10,62 +10,68 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
+  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75400725"
 landingContent:
-  - title: Containertools
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Containertools in Visual Studio
-            url: overview.md
-  - title: Erste Schritte
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Docker in Visual Studio
-            url: container-tools.md
-          - text: Ausführen von Build-Tools in einem Container
-            url: /visualstudio/install/build-tools-container
-          - text: Visual Studio-Tools für Kubernetes
-            url: tutorial-kubernetes-tools.md
-  - title: Entwickeln von Container-Apps
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Multicontainer-App mit Docker Compose
-            url: tutorial-multicontainer.md
-          - text: React.js-App in einem Container
-            url: container-tools-react.md
-          - text: Debuggen von Docker-Apps
-            url: edit-and-refresh.md
-  - title: Bereitstellen von Docker-Containern
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Bereitstellung in Azure Container Registry
-            url: hosting-web-apps-in-docker.md
-          - text: Bereitstellen in Azure App Service
-            url: deploy-app-service.md
-          - text: Bereitstellen in Docker Hub
-            url: deploy-docker-hub.md
-  - title: Containerentwicklungstasks
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: 'Vorgehensweise: Konfigurieren der Erstellungs- und Debugumgebung'
-            url: container-build.md
-          - text: 'Vorgehensweise: Anzeigen und Diagnostizieren von Containern'
-            url: view-and-diagnose-containers.md
-          - text: 'Vorgehensweise: Problembehandlung für Containerentwicklungstools'
-            url: troubleshooting-docker-errors.md
-  - title: Einstellungen für Containertools
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Containerstarteinstellungen
-            url: container-launch-settings.md
-          - text: MSBuild-Eigenschaften für Container
-            url: container-msbuild-properties.md
-          - text: MSBuild-Eigenschaften für Docker Compose
-            url: docker-compose-properties.md
-          - text: Konfigurieren von Containertools
-            url: container-tools-configure.md
+- title: Containertools
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Containertools in Visual Studio
+      url: overview.md
+- title: Erste Schritte
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Docker in Visual Studio
+      url: container-tools.md
+    - text: Ausführen von Build-Tools in einem Container
+      url: /visualstudio/install/build-tools-container
+    - text: Visual Studio-Tools für Kubernetes
+      url: tutorial-kubernetes-tools.md
+- title: Entwickeln von Container-Apps
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Multicontainer-App mit Docker Compose
+      url: tutorial-multicontainer.md
+    - text: React.js-App in einem Container
+      url: container-tools-react.md
+    - text: Debuggen von Docker-Apps
+      url: edit-and-refresh.md
+- title: Bereitstellen von Docker-Containern
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Bereitstellung in Azure Container Registry
+      url: hosting-web-apps-in-docker.md
+    - text: Bereitstellen in Azure App Service
+      url: deploy-app-service.md
+    - text: Bereitstellen in Docker Hub
+      url: deploy-docker-hub.md
+- title: Containerentwicklungstasks
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 'Vorgehensweise: Konfigurieren der Erstellungs- und Debugumgebung'
+      url: container-build.md
+    - text: 'Vorgehensweise: Anzeigen und Diagnostizieren von Containern'
+      url: view-and-diagnose-containers.md
+    - text: 'Vorgehensweise: Problembehandlung für Containerentwicklungstools'
+      url: troubleshooting-docker-errors.md
+- title: Einstellungen für Containertools
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Containerstarteinstellungen
+      url: container-launch-settings.md
+    - text: MSBuild-Eigenschaften für Container
+      url: container-msbuild-properties.md
+    - text: MSBuild-Eigenschaften für Docker Compose
+      url: docker-compose-properties.md
+    - text: Konfigurieren von Containertools
+      url: container-tools-configure.md

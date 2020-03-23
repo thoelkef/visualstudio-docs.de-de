@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Hinzufügen eines Parameters zur Methode
                   href: ide/reference/add-parameter.md
+                - name: Parameter generieren
+                  href: ide/reference/generate-parameter.md
                 - name: Generieren eines privaten Felds aus einem Konstruktor
                   href: ide/reference/generate-private-field-from-constructor.md
                 - name: Generieren einer Überschreibung
@@ -350,6 +352,8 @@
                 - name: Übersicht
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: Hinzufügen von Überprüfungen auf NULL für alle Parameter
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: Ändern der Methodensignatur
                   href: ide/reference/change-method-signature.md
                 - name: Konvertieren eines anonymen Typs in eine Klasse
@@ -378,8 +382,6 @@
                   href: ide/reference/extract-method.md
                 - name: Extrahieren einer lokalen Funktion
                   href: ide/reference/extract-local-function.md
-                - name: Parameter generieren
-                  href: ide/reference/generate-parameter.md
                 - name: Einbetten einer temporären Variablen
                   href: ide/reference/inline-temporary-variable.md
                 - name: IntelliSense-Vervollständigung für nicht importierte Typen
@@ -487,7 +489,7 @@
                   href: ide/editorconfig-language-conventions.md
                 - name: Formatierungskonventionen
                   href: ide/editorconfig-formatting-conventions.md
-                - name: 'Namenskonventionen '
+                - name: Namenskonventionen
                   href: ide/editorconfig-naming-conventions.md
         - name: Anpassen der Scrollleiste
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md

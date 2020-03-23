@@ -3,15 +3,15 @@ title: Verwenden von Product Keys | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/20/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
-ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 3cd4992a89f5cdd12e85d83e3ac8b525bd2fe7d4
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377689"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947123"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -36,14 +36,14 @@ Microsoft ist bestrebt, die Integrität des Visual Studio-Abonnementprogramms so
 
 Der Grenzwert für die Inanspruchnahme von Product Keys liegt für alle Visual Studio-Abonnements (einschließlich derjenigen, die über MPN, BizSpark, MCT Software & Services und MCT angeboten werden) bei 10. Ausgenommen ist Visual Studio Professional (MPN), für das täglich maximal 7 Product Keys in Anspruch genommen werden können.
 
-Hinweis: Die Grenzen für die Inanspruchnahme von Product Keys unterliegen Änderungen. Hier finden Sie die jeweils aktuellen Grenzwerte.
+Hinweis: Die Grenzwerte für die Inanspruchnahme von Product Keys können sich ändern. Hier finden Sie die jeweils aktuellen Grenzwerte.
 
 Wenn Sie die maximale Anzahl von Product Keys in Anspruch genommen haben, die Ihnen für Ihr Abonnement in einem Zeitraum von 24 Stunden zur Verfügung stehen, wird Ihnen eine Fehlermeldung angezeigt, in der Ihnen mitgeteilt wird, dass Sie den Grenzwert erreicht haben. Der Grenzwert wird alle 24 Stunden zurückgesetzt, beginnend um 00:01 Pacific Time.
 
 Unsere Untersuchungen zeigen, dass für die meisten Abonnenten die in ihrem Abonnement enthaltene Anzahl von Product Keys ausreicht. Wenn Sie zusätzliche Product Keys benötigen, können Sie diese über den [Kundendienst für Visual Studio-Abonnements](https://visualstudio.microsoft.com/subscriptions/support/) anfordern. Der Antrag wird fallweise auf Genehmigung geprüft.
 
 ## <a name="accessing-product-keys"></a>Zugriff auf Product Keys
-Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
+Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite **Downloads** auf den blauen Link [Schlüssel abrufen](https://my.visualstudio.com/downloads) für ein bestimmtes Produkt klicken.  Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
@@ -74,6 +74,12 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 |
 
 Sie können einen Schlüssel von der Downloadseite des Produkts anfordern. Alternativ können Sie auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) nach dem erforderlichen Schlüssel suchen.
+
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Rufen Sie https://my.visualstudio.com/productkeys auf, um Schlüssel zu beanspruchen.  

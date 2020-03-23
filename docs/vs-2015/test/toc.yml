@@ -72,15 +72,15 @@
               href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
             - name: Anpassen der Code Coverage-Analyse
               href: customizing-code-coverage-analysis.md
-            - name: Analysieren von Codeabdeckung in Buildüberprüfungstests
+            - name: Analysieren von Code Coverage in Buildüberprüfungstests
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Problembehandlung bei der Code Coverage
               href: troubleshooting-code-coverage.md
-        - name: Verwenden von Emulatoren zum Isolieren von SharePoint 2010-Komponententests
+        - name: Verwenden Emulatoren zum Insolieren von SharePoint 2010-Komponententests
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
-    - name: 'Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes '
+    - name: Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes
       items:
-        - name: 'Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes '
+        - name: Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes
           href: use-ui-automation-to-test-your-code.md
         - name: 'Erstellen, Bearbeiten und Verwalten eines Tests der programmierten Benutzeroberfläche'
           href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
@@ -126,15 +126,15 @@
               items:
                 - name: Beispielerweiterung für Tests der programmierten Benutzeroberfläche für Excel
                   href: sample-coded-ui-test-extension-for-excel.md
-                - name: ExtensionPackage-Klasse
+                - name: ExtensionPackage Class
                   href: sample-excel-extension-extensionpackage-class.md
-                - name: TechnologyManager-Klasse
+                - name: TechnologyManager Class
                   href: sample-excel-extension-technologymanager-class.md
                 - name: PropertyProvider-Klasse
                   href: sample-excel-extension-propertyprovider-class.md
                 - name: Elementklassen
                   href: sample-excel-extension-element-classes.md
-                - name: ActionFilter-Klasse
+                - name: ActionFilter Class
                   href: sample-excel-extension-actionfilter-class.md
         - name: Upgrade der Tests der programmierten UI von Visual Studio 2010
           href: upgrading-coded-ui-tests-from-visual-studio-2010.md
@@ -156,7 +156,7 @@
           items:
             - name: Erstellen und Ausführen von Komponententests
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
-            - name: Komponententests für eine C++-DLL
+            - name: Komponententest bei einer C++-DLL
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
             - name: 'Komponententest von C#-Code'
               href: unit-testing-visual-csharp-code-in-a-store-app.md

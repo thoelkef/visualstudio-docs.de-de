@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
 ms.openlocfilehash: e5a9dd8120dd312bfc3e1c8905a725a58cca0e92
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983520"
 ---
 # <a name="working-with-subversion"></a>Arbeiten mit Subversion
@@ -54,6 +54,6 @@ Um eine Datei für ein Remoterepository zu committen, klicken Sie auf „Commit.
 
 Damit werden die Änderungen an das Repository gesendet, in dem die neue Revision mit allen Änderungen erstellt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Einrichten eines Subversion-Repositorys](set-up-subversion-repository.md)

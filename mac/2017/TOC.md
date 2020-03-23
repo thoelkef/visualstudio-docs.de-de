@@ -22,7 +22,7 @@
 ## [Verwalten von Verweisen in einem Projekt](/visualstudio/mac/managing-references-in-a-project)
 ### [Walkthrough - Including a NuGet package in your project (Exemplarische Vorgehensweise: Einschließen eines NuGet-Pakets in Ihr Projekt)](/visualstudio/mac/nuget-walkthrough)
 ## [Managing App Resources (Verwalten von App-Ressourcen)](/visualstudio/mac/managing-app-resources)
-## [Vorgehensweise: Öffnen mehrerer Projektmappen oder Instanzen](/visualstudio/mac/open-multiple-solutions)
+## [How to: Öffnen mehrerer Projektmappen oder Instanzen](/visualstudio/mac/open-multiple-solutions)
 
 # [Source Editor (Quellcode-Editor)](/visualstudio/mac/source-editor)
 ## [Refactoring](/visualstudio/mac/refactoring)

@@ -7,10 +7,10 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984981"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 für Mac: Überblick
@@ -52,7 +52,7 @@ Die Wilkommensseite enthält folgende Abschnitte:
 - **Zuletzt verwendete Projektmappen**: bietet schnellen Zugriff auf zuletzt geöffnete Projektmappen sowie praktische Schaltflächen zum Öffnen und Erstellen von Projekten.
 - **Neuigkeiten für Entwickler**: Ein Newsfeed, mit dem Sie immer auf dem neuesten Stand sind, was Informationen für Microsoft-Entwickler angeht.
 
-## <a name="solutions-and-projects"></a>Projektmappen und Projekte
+## <a name="solutions-and-projects"></a>Lösungen und Projekte
 
 Das folgende Bild zeigt Visual Studio für Mac mit einer geladenen Anwendung:
 
@@ -94,7 +94,7 @@ Um Ihrer Anwendung eine Abhängigkeit hinzuzufügen, klicken Sie mit der rechten
 
 Informationen zum Verwenden eines NuGet-Pakets in einer Anwendung finden Sie im Artikel [Einschließen eines NuGet-Pakets in Ihr Projekt](/visualstudio/mac/nuget-walkthrough).
 
-## <a name="refactoring"></a>Umgestaltung
+## <a name="refactoring"></a>Refactoring
 
 Visual Studio für Mac bietet zwei praktische Möglichkeiten zum Umgestalten Ihres Codes: Kontextaktionen und Quellanalysen. Weitere Informationen finden Sie im Artikel [Umgestaltung](/visualstudio/mac/refactoring).
 
@@ -106,7 +106,7 @@ Der Debugger enthält umfangreiche Schnellansichten für besondere Typen wie Zei
 
 Weitere Informationen zu den Datenschnellansichten des Debuggers finden Sie im Artikel [Datenvisualisierungen](/visualstudio/mac/data-visualizations).
 
-## <a name="version-control"></a>Quellcodeverwaltung
+## <a name="version-control"></a>Versionskontrolle
 
 Visual Studio für Mac kann in die Quellcodeverwaltungs-Systeme Git und Subversion integriert werden. Projekte unter Quellcodeverwaltung werden mit dem Branch bezeichnet, der neben dem Namen der Projektmappe angezeigt wird:
 
@@ -122,6 +122,6 @@ Weitere Informationen zum Verwenden der Versionskontrolle in Visual Studio finde
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-IDE (unter Windows)](/visualstudio/ide/visual-studio-ide)

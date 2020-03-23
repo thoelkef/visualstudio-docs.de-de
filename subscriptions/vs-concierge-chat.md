@@ -7,10 +7,10 @@ ms.date: 11/13/2019
 ms.topic: conceptual
 description: Weitere Informationen zum Concierge Chat-Vorteil, der in Visual Studio-Abonnements enthalten ist.
 ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74099581"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat in Visual Studio-Abonnements
@@ -45,7 +45,7 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Ja          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Umfasst nicht:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Umfasst nicht:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

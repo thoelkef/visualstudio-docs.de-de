@@ -8,15 +8,15 @@
   items:
     - name: Installation
       href: installing-r-tools-for-visual-studio.md
-    - name: Hilfe zu weiteren Fragen
+    - name: Hilfe
       href: getting-started-help.md
-- name: Tutorials
+- name: Lernprogramme
   items:
     - name: Erste Schritte mit R
       href: getting-started-with-r.md
-- name: Proben
+- name: Beispiele
   href: getting-started-samples.md
-- name: Anleitungen
+- name: Gewusst-wie-Anleitungen
   items:
     - name: R-Projekte
       items:
@@ -56,9 +56,9 @@
       href: variable-explorer.md
     - name: Debuggen
       href: debugging-r-in-visual-studio.md
-- name: Referenz
+- name: Verweis
   items:
-    - name: Optionen
+    - name: Tastatur
       href: options-for-r-tools-in-visual-studio.md
     - name: Häufig gestellte Fragen (FAQs)
       href: faq.md

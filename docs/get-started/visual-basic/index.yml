@@ -13,49 +13,55 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-acquisition
   dev_langs:
-    - VB
+  - VB
+  ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "74188615"
 landingContent:
-  - title: Erste Schritte
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Installieren von Visual Studio
-            url: ../../install/install-visual-studio.md
-      - linkListType: get-started
-        links:
-          - text: Einführung beginnen
-            url: visual-studio-ide.md
-      - linkListType: quickstart
-        links:
-          - text: Erstellen einer Hallo Welt-Konsolen-App
-            url: ../../ide/quickstart-visual-basic-console.md
-  - title: Erstellen von Visual Basic-Apps
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Erstellen einer Konsolenanwendung
-            url: tutorial-console.md
-          - text: Erstellen einer Windows-Desktop-App
-            url: tutorial-wpf.md
-          - text: Erstellen einer Windows Forms-App
-            url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
-          - text: "Informationen zur Visual\_Basic-Programmiersprache"
-            url: /dotnet/visual-basic/developing-apps/programming/
-  - title: Kennenlernen von Visual Studio
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Öffnen von Code aus einem Repository
-            url: ../tutorial-open-project-from-repo.md
-          - text: Schreiben und Bearbeiten von Code
-            url: tutorial-editor.md
-          - text: Kompilieren und Erstellen
-            url: ../../ide/compiling-and-building-in-visual-studio.md
-          - text: Debuggen Ihres Codes
-            url: ../csharp/tutorial-debugger.md
-          - text: Testen des Codes
-            url: ../../test/getting-started-with-unit-testing.md
-      - linkListType: how-to-guide
-        links:
-          - text: Zugreifen auf Daten
-            url: ../../data-tools/create-a-sql-database-by-using-a-designer.md
+- title: Erste Schritte
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Installieren von Visual Studio
+      url: ../../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Einführung beginnen
+      url: visual-studio-ide.md
+  - linkListType: quickstart
+    links:
+    - text: Erstellen einer Hallo Welt-Konsolen-App
+      url: ../../ide/quickstart-visual-basic-console.md
+- title: Erstellen von Visual Basic-Apps
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Erstellen einer Konsolen-App
+      url: tutorial-console.md
+    - text: Erstellen einer Windows-Desktop-App
+      url: tutorial-wpf.md
+    - text: Erstellen einer Windows Forms-App
+      url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
+    - text: Informationen zur Visual Basic-Programmiersprache
+      url: /dotnet/visual-basic/developing-apps/programming/
+- title: Kennenlernen von Visual Studio
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Öffnen von Code aus einem Repository
+      url: ../tutorial-open-project-from-repo.md
+    - text: Schreiben und Bearbeiten von Code
+      url: tutorial-editor.md
+    - text: Kompilieren und Erstellen
+      url: ../../ide/compiling-and-building-in-visual-studio.md
+    - text: Debuggen Ihres Codes
+      url: ../csharp/tutorial-debugger.md
+    - text: Testen Ihres Codes
+      url: ../../test/getting-started-with-unit-testing.md
+  - linkListType: how-to-guide
+    links:
+    - text: Zugreifen auf Daten
+      url: ../../data-tools/create-a-sql-database-by-using-a-designer.md
