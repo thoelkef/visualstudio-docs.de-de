@@ -1,5 +1,5 @@
 ---
-title: Navigieren durch den Code mit dem Debugger | Microsoft-Dokumentation
+title: Navigieren von Code mit dem Debugger | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/12/2018
 ms.topic: conceptual
@@ -16,44 +16,44 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409314"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301092"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren durch Code mit dem Visual Studio-Debugger
 
-Mit dem Visual Studio-Debugger können Sie durch den Code navigieren, um den Zustand einer APP zu überprüfen und den Ausführungs Fluss anzuzeigen. Sie können Tastenkombinationen, Debug-Befehle, Breakpoints und andere Features verwenden, um schnell zu dem Code zu gelangen, den Sie untersuchen möchten. Vertrautheit mit Debugger-Navigations Befehlen und-Verknüpfungen ermöglicht es, App-Probleme schneller und leichter zu finden und zu beheben.  Wenn Sie den Code zum ersten Mal debuggen möchten, sollten Sie vor dem Durcharbeiten dieses Artikels das [Debuggen für absolute Einsteiger](../debugger/debugging-absolute-beginners.md) und [Debuggingtechniken und-Tools](../debugger/write-better-code-with-visual-studio.md) lesen.
+Der Visual Studio-Debugger kann Ihnen beim Navigieren durch Code helfen, um den Status einer App zu überprüfen und ihren Ausführungsfluss anzuzeigen. Sie können Tastenkombinationen, Debugbefehle, Haltepunkte und andere Features verwenden, um schnell zu dem Code zu gelangen, den Sie untersuchen möchten. Die Vertrautheit mit Debugger-Navigationsbefehlen und Verknüpfungen macht es schneller und einfacher, App-Probleme zu finden und zu beheben.  Wenn Sie zum ersten Mal versucht haben, Code zu debuggen, sollten Sie [Debugging für absolute Anfänger](../debugger/debugging-absolute-beginners.md) und [Debugging-Techniken und -Tools](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
 
-## <a name="get-into-break-mode"></a>Wechseln Sie in den "Break-Modus".
+## <a name="get-into-break-mode"></a>In den "Break-Modus"
 
-Im *unterschreibmodus*wird die Ausführung der APP angehalten, während Funktionen, Variablen und Objekte im Arbeitsspeicher verbleiben. Sobald sich der Debugger im Break-Modus befindet, können Sie durch den Code navigieren. Die gängigsten Möglichkeiten, sich schnell in den Unterbrechung zu bewegen, sind folgende:
+Im *Unterbrechungsmodus*wird die App-Ausführung angehalten, während Funktionen, Variablen und Objekte im Arbeitsspeicher verbleiben. Sobald sich der Debugger im Unterbrechungsmodus befindet, können Sie durch ihren Code navigieren. Die häufigste Möglichkeit, schnell in den Pausenmodus zu gelangen, ist entweder:
 
-- Beginnen Sie den Code schrittweise, indem Sie **F10** oder **F11**drücken. Auf diese Weise können Sie schnell den Einstiegspunkt ihrer App finden. Sie können dann mit dem Drücken von Schritt Befehlen fortfahren, um den Code zu navigieren.
+- Beginnen Sie das Schrittschritt-Code, indem Sie **F10** oder **F11**drücken. Auf diese Weise können Sie schnell den Einstiegspunkt Ihrer App finden, dann können Sie weiter Schrittbefehle drücken, um code zu navigieren.
 
-- [Führen Sie an einem bestimmten Speicherort oder einer bestimmten Funktion](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)aus, indem Sie beispielsweise [einen Haltepunkt festlegen](using-breakpoints.md) und die app starten.
+- [Führen Sie an einem bestimmten Speicherort oder einer bestimmten Funktion](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)aus, z. B. indem Sie einen [Haltepunkt festlegen](using-breakpoints.md) und Ihre App starten.
 
-   Beispielsweise können Sie im Code-Editor in Visual Studio den Befehl **Ausführen bis Cursor** verwenden, um die APP, den Debugger anzufügen und in den Break-Modus zu starten, und **F11** , um den Code zu navigieren.
+   Beispielsweise können Sie im Code-Editor in Visual Studio den Befehl **"Auf Cursor ausführen"** verwenden, um die App zu starten, den Debugger anzuhängen und in den Unterbrechungsmodus zu wechseln, und dann **F11,** um code zu navigieren.
 
-   ![Ausführen bis Cursor und Ausführen von Code in Einzelschritten](../debugger/media/navigate-code-code-stepping.gif "Ausführen bis Cursor und Ausführen von Code in Einzelschritten")
+   ![Führen Sie den Cursor aus und treten Sie in den Code ein](../debugger/media/navigate-code-code-stepping.gif "Führen Sie den Cursor aus und treten Sie in den Code ein")
 
-Im Break-Modus können Sie eine Vielzahl von Befehlen verwenden, um durch den Code zu navigieren. Im Break-Modus können Sie die Werte von Variablen überprüfen, um nach Verstößen oder Fehlern zu suchen. Bei einigen Projekttypen können Sie auch Anpassungen an der APP vornehmen, während Sie sich im Break-Modus befinden.
+Einmal im Unterbrechungsmodus, können Sie eine Vielzahl von Befehlen verwenden, um durch Ihren Code zu navigieren. Im Unterbrechungsmodus können Sie die Werte von Variablen untersuchen, um nach Verletzungen oder Fehlern zu suchen. Bei einigen Projekttypen können Sie auch Anpassungen an der App vornehmen, während Sie sich im Unterbrechungsmodus befinden.
 
-Die meisten Debuggerfenster, wie z. b. die **Module** und die **Überwachungs** Fenster, sind nur verfügbar, wenn der Debugger an Ihre APP angefügt ist. Einige Debuggerfunktionen, z. b. das Anzeigen von Variablen Werten **im Fenster "** lokal" oder das Auswerten von Ausdrücken im Fenster "über **Wachen** ", sind nur verfügbar, wenn der Debugger angehalten ist (d. h. im Break-Modus).
+Die meisten Debuggerfenster, wie die **Modules** und **Watch-Fenster,** sind nur verfügbar, wenn der Debugger an Ihre App angefügt ist. Einige Debugger-Features, z. B. das Anzeigen von Variablenwerten im **Fenster Locals** oder das Auswerten von Ausdrücken im **Überwachungsfenster,** sind nur verfügbar, während der Debugger angehalten wird (d. h. im Unterbrechungsmodus).
 
 > [!NOTE]
-> Wenn Sie in Code unterbrechen, der keine Quell-oder Symbol Dateien (*PDB*-Dateien) geladen hat, zeigt der Debugger die Seite **Quelldateien nicht gefunden** oder Symbol **nicht gefunden** an, mit der Sie die Dateien suchen und laden können. Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie die Symbol-oder Quelldateien nicht laden können, können Sie dennoch die Assemblyanweisungen im Disassemblyfenster Debuggen.
+> Wenn Sie in Code aufbrechen, bei dem keine Quell- oder Symboldateien (*.pdb*) geladen sind, zeigt der Debugger eine Seite **"Quelldateien nicht gefunden"** oder **"Symbole nicht gefunden"** an, die Ihnen helfen kann, die Dateien zu finden und zu laden. Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie die Symbol- oder Quelldateien nicht laden können, können Sie die Baugruppenanweisungen weiterhin im **Fenster Demontage** debuggen.
 
 ## <a name="step-through-code"></a>Schritt-für-Schritt-Ausführung des Codes
 
-Mithilfe der Befehle zum Debuggerschritt untersuchen Sie den App-Status, oder erfahren Sie mehr über den Ausführungs Fluss.
+Die Debuggerschrittbefehle helfen Ihnen, den App-Status zu überprüfen oder mehr über den Ausführungsfluss zu erfahren.
 
-### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Schrittweises Ausführen von Code in Einzelschritten
+### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a>Schritt in Codezeile für Zeile
 
-Um beim Debuggen für jede Anweisung anzuhalten, verwenden Sie **Debug** > Einzel **Schritt**, oder drücken Sie **F11**.
+Um jede Anweisung während des Debuggens zu beenden, verwenden Sie **Debug** > **Step Into**, oder drücken Sie **F11**.
 
-Der Debugger schrittweise durch Code Anweisungen, nicht durch physische Zeilen. Beispielsweise kann eine `if`-Klausel in eine Zeile geschrieben werden:
+Der Debugger führt Codeanweisungen durch, nicht physische Zeilen. Beispielsweise kann eine `if`-Klausel in eine Zeile geschrieben werden:
 
   ```csharp
   int x = 42;
@@ -67,123 +67,123 @@ Der Debugger schrittweise durch Code Anweisungen, nicht durch physische Zeilen. 
   If x = 42 Then s = "Answered!"
   ```
 
-Wenn Sie jedoch in diese Zeile eintreten, behandelt der Debugger die Bedingung als einen Schritt und die Folge als eine andere. Im vorherigen Beispiel lautet die Bedingung "true".
+Wenn Sie jedoch in diese Zeile einsteigen, behandelt der Debugger die Bedingung als einen Schritt und die Folge als einen anderen. Im vorherigen Beispiel ist die Bedingung wahr.
 
-Bei einem geschachtelten Funktionsaufruf führt **Einzelschritt** die am tiefsten geschachtelte Funktion in Einzelschritten aus. Wenn Sie z. b. Einzel **Schritt** für einen-Befehl wie `Func1(Func2())`verwenden, führt der Debugger die Funktion `Func2`aus.
+Bei einem geschachtelten Funktionsaufruf führt **Einzelschritt** die am tiefsten geschachtelte Funktion in Einzelschritten aus. Wenn Sie z. B. **Step** `Func1(Func2())`Into für einen Aufruf `Func2`wie verwenden, wird der Debugger in die Funktion einschritten.
 
 >[!TIP]
->Wenn Sie jede Codezeile ausführen, können Sie mit dem Mauszeiger auf Variablen zeigen, um deren Werte anzuzeigen, oder Sie können mit den Fenstern "lokal [" und "](autos-and-locals-windows.md) über [Wachen](watch-and-quickwatch-windows.md) " die Werte ändern. Sie können die- [aufrufsstapel](how-to-use-the-call-stack-window.md) auch während der Schritt-für-Schritt-Funktion in (Informationen zu Visual Studio Enterprise finden Sie unter [map-Methoden in der aufrufsstapel beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
+>Wenn Sie jede Codezeile ausführen, können Sie mit der Maus auf Variablen zeigen, um deren Werte anzuzeigen, oder die [Fenster Locals](autos-and-locals-windows.md) und [Watch](watch-and-quickwatch-windows.md) verwenden, um zu beobachten, wie sich die Werte ändern. Sie können die [Aufrufliste](how-to-use-the-call-stack-window.md) auch visuell verfolgen, während Sie in Funktionen eintreten. (Nur für Visual Studio Enterprise siehe [Zuordnungsmethoden auf der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
-### <a name="BKMK_Step_over_Step_out"></a>Schrittweises Durchlaufen von Code und überspringen einiger Funktionen
+### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a>Schritt durch Code und Überspringen einiger Funktionen
 
-Beim Debuggen ist es möglicherweise nicht wichtig, dass eine Funktion funktioniert, oder Sie wissen, wie gut getesteter Bibliotheks Code funktioniert. Sie können die folgenden Befehle verwenden, um Code zu überspringen, während die Code überschrittes Die Funktionen werden weiterhin ausgeführt, aber der Debugger überspringt Sie.
+Möglicherweise ist eine Funktion beim Debuggen nicht wichtig, oder Sie wissen, dass sie funktioniert, wie gut getesteter Bibliothekscode. Sie können die folgenden Befehle verwenden, um Code während des Codeschritts zu überspringen. Die Funktionen werden weiterhin ausgeführt, aber der Debugger überspringt sie.
 
-|Tastatur Befehl|Menübefehle für das Debuggen|BESCHREIBUNG|
+|Tastaturbefehl|Menübefehle für das Debuggen|Beschreibung|
 |----------------------|------------------|-----------------|
-|**F10**|**Überspringen**|Wenn die aktuelle Zeile einen Funktionsaufruf enthält, führt "Prozedur **Schritt** " den Code aus und hält dann die Ausführung in der ersten Codezeile an, nachdem die aufgerufene Funktion zurückgegeben hat.|
-|**UMSCHALT**+**F11**|**Rücksprung**|**Step out** setzt das Ausführen von Code fort und hält die Ausführung an, wenn die aktuelle Funktion zurückgibt. Der Debugger überspringt die aktuelle Funktion.|
+|**F10**|**Prozedurschritt**|Wenn die aktuelle Zeile einen Funktionsaufruf enthält, führt **Step Over** den Code aus und setzt die Ausführung in der ersten Codezeile aus, nachdem die aufgerufene Funktion zurückgegeben wurde.|
+|**Shift**+**F11**|**Step Out**|**Step Out** führt weiterhin Code aus und setzt die Ausführung aus, wenn die aktuelle Funktion zurückkehrt. Der Debugger überspringt die aktuelle Funktion.|
 
-## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>An einem bestimmten Speicherort oder einer bestimmten Funktion ausführen
+## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Ausführen an einem bestimmten Ort oder einer bestimmten Funktion
 
-Wenn Sie genau wissen, welchen Code Sie überprüfen möchten, können Sie es vorziehen, direkt an einem bestimmten Speicherort oder einer bestimmten Funktion auszuführen, oder Sie wissen, wo Sie mit dem Debuggen beginnen möchten.
+Sie können es vorziehen, direkt an einem bestimmten Speicherort oder einer bestimmten Funktion auszuführen, wenn Sie genau wissen, welchen Code Sie überprüfen möchten, oder wenn Sie wissen, wo Sie mit dem Debuggen beginnen möchten.
 
-### <a name="run-to-a-breakpoint-in-code"></a>Ausführen bis zu einem Breakpoint im Code
+### <a name="run-to-a-breakpoint-in-code"></a>Ausführen zu einem Haltepunkt im Code
 
-Um einen einfachen Haltepunkt im Code festzulegen, klicken Sie auf den äußersten linken Rand neben der Codezeile, in der Sie die Ausführung unterbrechen möchten. Sie können auch die Zeile auswählen und **F9**drücken, **Debuggen** > halte **Punkt umschalten**auswählen oder mit der rechten Maustaste klicken und halte **Punkt** > halte **Punkt einfügen**auswählen. Der Haltepunkt wird als roter Punkt im linken Rand neben der Codezeile angezeigt. Der Debugger hält die Ausführung an, kurz bevor die Zeile ausgeführt wird.
+Um einen einfachen Haltepunkt im Code festzulegen, klicken Sie auf den linken Rand neben der Codezeile, an der Sie die Ausführung anhalten möchten. Sie können auch die Zeile auswählen und **F9**drücken,**Breakpoint** **debugen** > auswählen oder mit der rechten Maustaste klicken und **Haltepunkt** > **einfügen Breakpoint**auswählen. Der Haltepunkt wird als roter Punkt am linken Rand neben der Codezeile angezeigt. Der Debugger unterbricht die Ausführung kurz vor der Ausführung der Zeile.
 
-![Festlegen eines Breakpoints](../debugger/media/dbg_basics_setbreakpoint.png "Haltepunkt festlegen")
+![Festlegen eines Haltepunkts](../debugger/media/dbg_basics_setbreakpoint.png "Haltepunkt festlegen")
 
-Haltepunkte in Visual Studio bieten einen umfangreichen Satz von zusätzlichen Funktionen, wie z. B. bedingte Haltepunkte und Ablaufverfolgungspunkte. Weitere Informationen finden [Sie unter Verwenden von Breakpoints](../debugger/using-breakpoints.md).
+Haltepunkte in Visual Studio bieten einen umfangreichen Satz von zusätzlichen Funktionen, wie z. B. bedingte Haltepunkte und Ablaufverfolgungspunkte. Weitere Informationen finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).
 
-### <a name="run-to-a-function-breakpoint"></a>Ausführen bis zu einem Funktions Breakpoint
+### <a name="run-to-a-function-breakpoint"></a>Ausführen zu einem Funktionshaltepunkt
 
-Sie können den Debugger so anweisen, dass er ausgeführt wird, bis er eine angegebene Funktion erreicht. Sie können die Funktion anhand ihres Namens angeben oder in der Aufrufliste auswählen.
+Sie können den Debugger anweisen, ausgeführt zu werden, bis er eine angegebene Funktion erreicht. Sie können die Funktion anhand ihres Namens angeben oder in der Aufrufliste auswählen.
 
-**So geben Sie einen Funktions Haltepunkt anhand des Namens an**
+**So geben Sie einen Funktionshaltepunkt nach Namen an**
 
-1. Wählen Sie **Debuggen** > **Neuer Haltepunkt** > **Funktions Breakpoint** aus.
+1. **Wählen Sie Debug** > **New Breakpoint** > **Function Breakpoint**
 
-1. Geben Sie im Dialogfeld **neuer Funktions Breakpunkt** den Namen der Funktion ein, und wählen Sie die zugehörige Sprache aus.
+1. Geben Sie im Dialogfeld **"Neuer Funktionshaltepunkt"** den Namen der Funktion ein, und wählen Sie deren Sprache aus.
 
-   ![Dialogfeld "neuer Funktions Haltepunkt"](../debugger/media/dbg_execution_newbreakpoint.png "Neuer Funktions Breakpoint")
+   ![Neues Dialogfeld "Funktionshaltepunkt"](../debugger/media/dbg_execution_newbreakpoint.png "Neuer Funktions-Breakpoint")
 
-1. Klicken Sie auf **OK**.
+1. Wählen Sie **OK** aus.
 
-Wenn die Funktion überladen ist oder sich in mehreren Namespaces befindet, können Sie im Fenster **Breakpoints** den gewünschten Wert auswählen.
+Wenn die Funktion überladen ist oder in mehr als einem Namespace ist, können Sie im Fenster **Haltepunkte** den gewünschten auswählen.
 
-![Überladene Funktions Breakpoints](../debugger/media/dbg_execution_overloadedbreakpoints.png "Überladene Funktions Breakpoints")
+![Überladene Funktionshaltepunkte](../debugger/media/dbg_execution_overloadedbreakpoints.png "Überladene Funktionshaltepunkte")
 
-**So wählen Sie einen Funktions Haltepunkt aus der aufrufsstapel aus**
+**So wählen Sie einen Funktionshaltepunkt aus der Aufrufliste aus**
 
-1. Öffnen Sie beim Debuggen das Fenster " **aufrufsstapel** ", indem Sie auf **Debuggen** > **Windows** > 
+1. Öffnen Sie während des Debuggens das **Fenster Aufrufliste,** indem Sie**Windows** > **Call Stack** **debuggen** > auswählen.
 
-1. Klicken Sie im Fenster " **CallStack** " mit der rechten Maustaste auf eine Funktion, und wählen Sie **Ausführen bis Cursor**aus, oder drücken Sie **STRG**+**F10**.
+1. Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf eine Funktion, und wählen Sie **Auf Cursor ausführen**aus, oder drücken Sie **Strg**+**F10**.
 
-Informationen zur visuellen Ablauf Verfolgung der-aufrufsliste finden Sie unter [map Methods in the callstack while Debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+Informationen zum visuellen Nachverfolgen der Aufrufliste finden Sie [unter Zuordnen von Methoden in der Aufrufliste während des Debuggens](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-### <a name="run-to-a-cursor-location"></a>Ausführen bis zu einer Cursorposition
+### <a name="run-to-a-cursor-location"></a>Ausführen zu einer Cursorposition
 
-Zum Ausführen bis zur Cursorposition wählen Sie im Quellcode oder im **Fenster "Fenster" die Zeile** aus, bei der Sie unterbrechen möchten, klicken Sie mit der rechten Maustaste, und wählen Sie **Ausführen bis Cursor**aus, oder drücken Sie **STRG**+**F10**. **Die Auswahl von "Ausführen bis Cursor** " ähnelt dem Festlegen eines temporären halte Punkts.
+Um zur Cursorposition, im Quellcode oder im **Fenster Aufrufliste** auszuführen, wählen Sie die Zeile aus, an der Sie mit der rechten Maustaste klicken möchten, und wählen Sie **Auf Cursor ausführen**aus, oder drücken Sie **Strg**+**F10**. Die Auswahl **von Run To Cursor** ist wie das Festlegen eines temporären Haltepunkts.
 
 ### <a name="run-to-click"></a>Ausführung bis Klick
 
-Während Sie im Debugger angehalten wurde, können Sie auf eine-Anweisung im Quellcode oder im Fenster **Disassembly** zeigen und dann auf das Symbol **Ausführung bis zu** diesem grünen Pfeil ausführen klicken. Wenn **Sie auf Ausführen klicken,** entfällt die Notwendigkeit, einen temporären Haltepunkt festzulegen.
+Während Sie im Debugger angehalten haben, können Sie mit der Maus auf eine Anweisung im Quellcode oder im **Disassemblierungsfenster** zeigen und das Symbol Ausführung ausführen auswählen, um hier ein grünes Pfeilsymbol **anzuzeigen.** Wenn Sie **Run to Click** verwenden, müssen Sie keinen temporären Haltepunkt festlegen.
 
 ![Run to Click](../debugger/media/dbg-run-to-click.png "Ausführung bis Klick") (Ausführen bis Klick)
 
 > [!NOTE]
-> Das **Ausführen bis Klick** ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]verfügbar.
+> **Run to Click** ist [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]ab verfügbar.
 
 ### <a name="manually-break-into-code"></a>Manuelles Unterbrechen im Code
 
-Wenn Sie in der nächsten verfügbaren Codezeile in einer ausgelaufenden APP **unterbrechen möchten**, wählen Sie **Debuggen** aus, > alle unter **brechen**, oder drücken Sie **STRG**+**alt** ,+
+Um die nächste verfügbare Codezeile in einer laufenden App zu unterbrechen, wählen Sie Alle > **debuggen**aus , oder drücken Sie **Strg**+ **Debug****Alt-Pause****Alt**+.
 
-## <a name="BKMK_Set_the_next_statement_to_execute"></a>Bewegen Sie den Zeiger, um den Ausführungs Fluss zu ändern.
+## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a>Bewegen Sie den Zeiger, um den Ausführungsfluss zu ändern
 
-Während der Debugger angehalten wird, kennzeichnet eine gelbe Pfeilspitze am Rand des Quellcodes oder Disassemblyfensters den Speicherort der nächsten auszuführenden Anweisung. Sie können die nächste auszuführende Anweisung ändern, indem Sie diese Pfeilspitze verschieben. Sie können einen Teil des Codes überspringen oder zu einer vorherigen Zeile zurückkehren. Das Verschieben des Zeigers ist hilfreich für Situationen wie das Überspringen eines Code Abschnitts, der einen bekannten Fehler enthält.
+Während der Debugger angehalten wird, markiert eine gelbe Pfeilspitze am Rand des Quellcodes oder des **Disassemblierungsfensters** den Speicherort der nächsten auszuführenden Anweisung. Sie können die nächste auszuführende Anweisung ändern, indem Sie diese Pfeilspitze verschieben. Sie können einen Teil des Codes überspringen oder zu einer vorherigen Zeile zurückkehren. Das Verschieben des Zeigers ist nützlich für Situationen wie das Überspringen eines Codeabschnitts, der einen bekannten Fehler enthält.
 
- ![Zeiger verschieben](../debugger/media/dbg_basics_example3.gif "Zeiger verschieben")
+ ![Bewegen Sie den Zeiger](../debugger/media/dbg_basics_example3.gif "Bewegen Sie den Zeiger")
 
-Um die nächste auszuführende Anweisung zu ändern, muss sich der Debugger im unterbrechen Modus befinden. Ziehen Sie im Quellcode oder Disassemblierungsfenster die gelbe Pfeilspitze in eine andere Zeile, oder klicken Sie mit der rechten Maustaste auf die Zeile, die Sie als nächstes ausführen möchten, und wählen Sie **nächste Anweisung festlegen**aus.
+Um die nächste auszuführende Anweisung zu ändern, muss sich der Debugger im Unterbrechungsmodus befinden. Ziehen Sie im Quellcode- oder **Demontagefenster** die gelbe Pfeilspitze in eine andere Zeile, oder klicken Sie mit der rechten Maustaste auf die Zeile, die Sie als nächstes ausführen möchten, und wählen Sie **Nächste Anweisung festlegen**aus.
 
-Der Programm-Counter springt direkt zum neuen Speicherort, und die Anweisungen zwischen den alten und neuen Ausführungs Punkten werden nicht ausgeführt. Wenn Sie jedoch den Ausführungs Punkt rückwärts verschieben, werden die dazwischenliegenden Anweisungen nicht rückgängig gemacht.
+Der Programmzähler springt direkt an die neue Position, und Anweisungen zwischen den alten und neuen Ausführungspunkten werden nicht ausgeführt. Wenn Sie jedoch den Ausführungspunkt nach hinten verschieben, werden die dazwischen liegenden Anweisungen nicht rückgängig gemacht.
 
 >[!CAUTION]
 >- Wenn Sie die nächste Anweisung in eine andere Funktion oder in einen anderen Gültigkeitsbereich verschieben, wird i. d. R. die Aufrufliste beeinträchtigt, wodurch ein Laufzeitfehler oder eine Ausnahme ausgelöst wird. Wenn Sie versuchen, die nächste Anweisung in einen anderen Gültigkeitsbereich zu verschieben, wird ein Dialogfenster mit einer Warnung geöffnet, in dem Sie den Vorgang abbrechen können.
 >- In Visual Basic können Sie die nächste Anweisung nicht in einen anderen Bereich oder in eine andere Funktion verlegen.
 >- In systemeigenem C++-Code kann das Festlegen der nächsten Anweisung bei aktivierter Laufzeitprüfung dazu führen, dass am Ende der Methode eine Ausnahme ausgelöst wird.
->- Wenn die Funktion "Bearbeiten und Fortfahren" aktiviert ist, schlägt das Ausführen der Option **Nächste Anweisung festlegen** fehl, wenn Sie Änderungen vorgenommen haben, die von "Bearbeiten und Fortfahren" nicht sofort neu zugeordnet werden können. Dies kann auftreten, wenn Sie z. B. Code in einem catch-Block bearbeitet haben. In diesem Fall werden Sie in einer Fehlermeldung darauf hingewiesen, dass der Vorgang nicht unterstützt wird.
->- In verwaltetem Code können Sie die nächste Anweisung nicht verschieben, wenn Folgendes der folgenden ist:
+>- Wenn die Funktion "Bearbeiten und Fortfahren" aktiviert ist, schlägt das Ausführen der Option **Nächste Anweisung festlegen** fehl, wenn Sie Änderungen vorgenommen haben, die von "Bearbeiten und Fortfahren" nicht sofort neu zugeordnet werden können. Dies kann auftreten, wenn Sie z. B. Code in einem catch-Block bearbeitet haben. In diesem Fall wird eine Fehlermeldung angezeigt, dass der Vorgang nicht unterstützt wird.
+>- Im verwalteten Code können Sie die nächste Anweisung nicht verschieben, wenn:
 >   - Die nächste Anweisung und die aktuelle Anweisung befinden sich in verschiedenen Methoden.
->   - Das Debuggen wurde durch Just-in-Time-Debugging gestartet.
->   - Eine aufrureleasestapel Entladung wird ausgeführt.
+>   - Das Debuggen wurde durch Just-In-Time-Debugging gestartet.
+>   - Eine Aufrufliste wird abwickeln.
 >   - Eine System.StackOverflowException oder eine System.Threading.ThreadAbortException wurden ausgelöst.
 
-## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Debuggen von Nichtbenutzer Code
+## <a name="debug-non-user-code"></a><a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Debuggen von Nicht-Benutzercode
 
-Standardmäßig versucht der Debugger, nur Ihren app-Code zu debuggen, indem er eine Einstellung namens " *nur eigenen Code*" aktiviert. Weitere Informationen über die Funktionsweise dieses Features für verschiedene Projekttypen und Sprachen und deren Anpassung finden Sie unter [nur eigenen Code](../debugger/just-my-code.md).
+Standardmäßig versucht der Debugger, nur Ihren App-Code zu debuggen, indem er eine Einstellung namens *Just My Code*aktiviert. Weitere Informationen dazu, wie diese Funktion für verschiedene Projekttypen und Sprachen funktioniert und wie Sie sie anpassen können, finden Sie unter [Nur mein Code](../debugger/just-my-code.md).
 
-Zum Überprüfen von Frameworkcode, Bibliotheks Code von Drittanbietern oder Systemaufrufen während des Debuggens können Sie nur eigenen Code deaktivieren. Deaktivieren **Sie unter Extras (oder** **Debuggen**) > **Optionen** > **Debuggen**das Kontrollkästchen **nur eigenen Code aktivieren** . Wenn nur eigenen Code deaktiviert ist, wird Nichtbenutzer Code in den Debuggerfenstern angezeigt, und der Debugger kann den Nichtbenutzer Code schrittweise ausführen.
+Um frameworkcode, bibliothekscode oder Systemaufrufe während des Debuggens zu betrachten, können Sie Just My Code deaktivieren. Deaktivieren **Sie** unter Tools (oder **Debug)**> **Options** > **Debugging**das Kontrollkästchen **Nur meinen Code aktivieren.** Wenn Nur mein Code deaktiviert ist, wird nicht benutzergebundener Code in den Debuggerfenstern angezeigt, und der Debugger kann in den Nichtbenutzercode eindringen.
 
 > [!NOTE]
 > Nur mein Code wird in Geräteprojekten nicht unterstützt.
 
-### <a name="debug-system-code"></a>Systemcode Debuggen
+### <a name="debug-system-code"></a>Debugsystemcode
 
-Wenn Sie Debugsymbole für den Microsoft-Systemcode geladen und nur eigenen Code deaktiviert haben, können Sie wie bei jedem anderen-Vorgang einen System Aufrufvorgang ausführen.
+Wenn Sie Debugsymbole für Microsoft-Systemcode geladen und Just My Code deaktiviert haben, können Sie wie bei jedem anderen Aufruf in einen Systemaufruf einsteigen.
 
-Informationen zum Laden von Microsoft-Symbolen finden Sie unter [Konfigurieren von Symbol Positionen und Laden von Optionen](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-symbol-locations-and-loading-options).
+Informationen zum Laden von Microsoft-Symbolen finden Sie unter Konfigurieren von [Symbolpositionen und Ladeoptionen](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-symbol-locations-and-loading-options).
 
 **So laden Sie Symbole für eine bestimmte Systemkomponente:**
 
-1. Wenn Sie Debuggen, öffnen Sie das Fenster " **Module** ", indem Sie **Debuggen** > **Windows** > **Module**auswählen oder **STRG**+**alt**+**U**drücken.
+1. Öffnen Sie während des Debuggens das Fenster **Module,** indem Sie > **Windows** > **Windows-Module** **debuggen**auswählen oder **Strg**+**Alt**+**U**drücken.
 
-1. Im Fenster **Module** können Sie feststellen, in welchen Modulen Symbole in der Spalte **Symbol Status** geladen sind. Klicken Sie mit der rechten Maustaste auf das Modul, für das Sie Symbole laden möchten, und wählen Sie **Symbole laden**aus.
+1. Im Fenster **Module** können Sie feststellen, welche Module Symbole in der Spalte **Symbolstatus** geladen haben. Klicken Sie mit der rechten Maustaste auf das Modul, für das Sie Symbole laden möchten, und wählen Sie **Symbole laden**aus.
 
-## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code
- Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Wählen Sie > **Optionen** **Debuggen** . Deaktivieren Sie auf der Seite **Debuggen** > **Allgemein** das Kontrollkästchen **Eigenschaften und Operatoren überspringen (nur verwaltet)** .
+## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code
+ Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Um das Eintreten in Eigenschaften oder Operatoren zu aktivieren, wählen Sie > **Debugoptionen**aus. **Debug** Deaktivieren Sie auf der Seite > **"Allgemeines** **Debuggen"** das Kontrollkästchen **Schritt über Eigenschaften und Operatoren (nur verwaltet).**
 
 ## <a name="see-also"></a>Weitere Informationen
-- [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)
-- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
-- [Erster Einblick in das Debuggen](../debugger/debugger-feature-tour.md)
+- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
+- [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md)
+- [Erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)

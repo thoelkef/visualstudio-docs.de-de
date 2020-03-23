@@ -1,5 +1,5 @@
 ---
-title: '&#39;Neues beim Entwurf'
+title: Was&#39;ist neu für Design
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,23 +14,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659246"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301284"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Neues beim Entwurf in Visual Studio in Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Neuerungen für das Design in Visual Studio in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Diese Version von Visual Studio bietet die folgenden Verbesserungen, sodass Sie Code besser verstehen und entwerfen können.
 
- **Code Maps und Abhängigkeitsdiagramme**
+ **Codezuordnungen und Abhängigkeitsdiagramme**
 
  Zum Verstehen bestimmter Abhängigkeiten im Code in Visual Studio Enterprise können Sie diese visuell darstellen, indem Sie Codezuordnungen erstellen. Sie können dann diese Beziehungen mithilfe der Zuordnung navigieren, die neben dem Code angezeigt wird. Anhand der Codezuordnungen können Sie außerdem die Position im Code beim Arbeiten oder Debuggen von Code nachverfolgen, sodass Sie beim Analysieren des Codeaufbaus weniger lesen müssen.
 
  In der RTM-Version haben wir die Kontextmenüs für Codeelemente und Links benutzerfreundlicher gestaltet, indem wir die Befehle hinsichtlich Auswählen, Bearbeiten, Verwalten von Gruppen und Ändern des Layouts des Gruppeninhalts in Abschnitte eingeteilt haben. Beachten Sie außerdem, dass Testprojekte in einem anderen Format als andere Projekte angezeigt werden und die Symbole für Elemente in der Zuordnung passender gestaltet wurden.
 
- ![Ausgewählte Elemente auf einem neuen Code Map anzeigen](../ide/media/codemapsshowonnewmap.png "Codemapsshowonnewmap")
+ ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  Zu den weiteren Verbesserungen gehören:
 
@@ -56,26 +56,26 @@ Diese Version von Visual Studio bietet die folgenden Verbesserungen, sodass Sie 
 
   Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-  **Andere Entwurfs- und Modellierungsänderungen in diesem Release:**
+  **Andere Entwurfs- und Modellierungsänderungen in dieser Version:**
 
-- **Ebenendiagramme**. Aktualisieren Sie diese Diagramme mit der Klassenansicht und dem Objektbrowser. Mithilfe von Ebenendiagrammen können Sie die gewünschten Abhängigkeiten für Ihre Software beschreiben, um die Software-Entwicklungsanforderungen zu erfüllen. Halten Sie den Code anhand dieses Aufbaus konsistent, indem Sie Code finden, der diese Einschränkungen nicht erfüllt und zukünftigen Code anhand dieser Baseline zu validieren.
+- **Layer-Diagramme**. Aktualisieren Sie diese Diagramme mit der Klassenansicht und dem Objektbrowser. Mithilfe von Ebenendiagrammen können Sie die gewünschten Abhängigkeiten für Ihre Software beschreiben, um die Software-Entwicklungsanforderungen zu erfüllen. Halten Sie den Code anhand dieses Aufbaus konsistent, indem Sie Code finden, der diese Einschränkungen nicht erfüllt und zukünftigen Code anhand dieser Baseline zu validieren.
 
 - **UML-Diagramme**. Es ist nicht mehr möglich, UML-Klassendiagramme und Sequenzdiagramme im Code zu erstellen. Sie können dieses Diagramm jedoch weiterhin mithilfe der neuen UML-Elemente erstellen.
 
 - **Architektur-Explorer**. Sie können den Architektur-Explorer nicht mehr zum Erstellen von Diagrammen verwenden. Aber Sie können weiterhin den Projektmappen-Explorer verwenden.
 
-## <a name="VersionSupport"></a>Editions Unterstützung für Architektur-und Modellierungstools
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>Edition-Unterstützung für Architektur- und Modellierungstools
 
-Visual Studio 2015 ist in verschiedenen Editionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur-und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
+Visual Studio 2015 ist in mehreren Editionen verfügbar. Nicht alle bieten Unterstützung für die Architektur und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
 
-|**Funktion**|**Fangen**|**Fachliche**|**Community**|**Drückt**|
+|**Feature**|**Enterprise**|**Professionell**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Codezuordnungen**|Ja|Unterstützt nur das Lesen und Filtern von Code Maps, das Hinzufügen neuer generischer Knoten und das Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.|-|-|
+|**Codezuordnungen**|Ja|Unterstützt nur das Lesen und Filtern von Codezuordnungen, das Hinzufügen neuer generischer Knoten und das Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.|-|-|
 |**UML-Klassendiagramme**|Ja|-|-|-|
 |**UML-Sequenzdiagramme**|Ja|-|-|-|
-|**UML-Anwendungsfall Diagramme**|Ja|-|-|-|
+|**UML-Anwendungsfalldiagramme**|Ja|-|-|-|
 |**UML-Aktivitätsdiagramme**|Ja|-|-|-|
-|**UML-Komponenten Diagramme**|Ja|-|-|-|
+|**UML-Komponentendiagramme**|Ja|-|-|-|
 |**Ebenendiagramme**|Ja|-|-|-|
-|**Gesteuerte Diagramme** (dgml-Diagramme)|Ja|Ja|-|-|
+|**Gerichtete Graphen** (DGML-Diagramme)|Ja|Ja|-|-|
 |**Codeklon**|Ja|-|-|-|

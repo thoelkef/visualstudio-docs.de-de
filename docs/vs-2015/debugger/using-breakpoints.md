@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Haltepunkten | Microsoft-Dokumentation
+title: Verwenden von Haltepunkten | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,17 +42,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684461"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301368"
 ---
 # <a name="using-breakpoints"></a>Verwenden von Haltepunkten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppen möchten, um möglicherweise den Status der Codevariablen oder die Aufrufliste anzuzeigen. Sie sind eine der wichtigsten Debugverfahren in der Toolbox eines Entwicklers.
   
-## <a name="BKMK_Overview"></a> Festlegen eines Funktionshaltepunkts im Quellcode  
+## <a name="setting-a-function-breakpoint-in-source-code"></a><a name="BKMK_Overview"></a> Festlegen eines Funktionshaltepunkts im Quellcode  
  Sie legen im Quellcode einen Funktionshaltepunkt fest, indem Sie in den linken Bereich einer Quellcodedatei klicken oder den Cursor in einer Codezeile platzieren und dann F9 drücken. Der Haltepunkt wird als roter Punkt im linken Bereich angezeigt, und die Codezeile wird ebenfalls eingefärbt:  
   
  ![Festlegen eines Haltepunkts](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -63,15 +63,15 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
  An dieser Stelle lautet der Wert von `testInt` immer noch 1.  
   
- Sie können den aktuellen Status der Anwendung anzeigen, dazu gehören auch die Variablenwerte und die Aufrufliste. Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md).  
+ Sie können den aktuellen Status der Anwendung anzeigen, dazu gehören auch die Variablenwerte und die Aufrufliste. Weitere Informationen zur Aufrufliste finden Sie unter [Gewusst wie: Verwenden des Aufruflistenfensters](../debugger/how-to-use-the-call-stack-window.md).  
   
  Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Im weiter oben aufgeführten C#-Code können Sie einen Haltepunkt zu der Variablendeklaration festlegen, die `for` -Schleife oder Code innerhalb der `for` -Schleifen, Sie können jedoch keinen Haltepunkt zu dem Namespace oder den Klassendeklarationen oder der Methodensignatur festlegen.  
   
-## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Festlegen anderer Arten von Haltepunkten  
+## <a name="setting-other-kinds-of-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Festlegen anderer Arten von Haltepunkten  
  Sie können auch Haltepunkte in der Aufrufliste, im Disassemblyfenster und in systemeigenem C++-Code zu einer Datenbedingung oder einer Speicheradresse festlegen.  
   
-## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Festlegen eines Haltepunkts im Aufruflistenfenster  
- Sie können die Ausführung bei der Anweisung oder in der Zeile unterbrechen, zu der eine aufrufende Funktion zurückkehrt, indem Sie im Fenster **Aufrufliste** einen Haltepunkt festlegen. Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md). Der Debugger muss die Ausführung beendet haben.  
+## <a name="setting-a-breakpoint-in-the-call-stack-window"></a><a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Festlegen eines Haltepunkts im Aufruflistenfenster  
+ Sie können die Ausführung bei der Anweisung oder in der Zeile unterbrechen, zu der eine aufrufende Funktion zurückkehrt, indem Sie im Fenster **Aufrufliste** einen Haltepunkt festlegen. Weitere Informationen zur Aufrufliste finden Sie unter [Gewusst wie: Verwenden des Aufruflistenfensters](../debugger/how-to-use-the-call-stack-window.md). Der Debugger muss die Ausführung beendet haben.  
   
 1. Starten Sie das Debuggen der Anwendung, und warten Sie bis die Ausführung gestoppt wurde (z. B. an einem Haltepunkt). Öffnen Sie das Fenster **Aufrufliste** (**Debug / Windows / Aufrufliste**, oder drücken Sie **STRG + ALT + C**).  
   
@@ -81,7 +81,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
    Im Fenster **Haltepunkte** wird der Aufruflistenhaltepunkt als Adresse mit Speicherort angezeigt, der der nächsten ausführbaren Anweisung der Funktion entspricht. Der Debugger unterbricht die Ausführung an der Anweisung.  
   
-   Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+   Informationen zum visuellen Ablaufen von Haltepunkten während der Codeausführung finden Sie [unter Zuordnen von Methoden in der Aufrufliste während des Debuggens](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Festlegen eines Haltepunkts im Disassemblyfenster  
  Um einen Haltepunkt in einer Assemblyanweisung festzulegen, muss sich der Debugger im Unterbrechungsmodus befinden.  
@@ -90,7 +90,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
 2. Klicken Sie links in den Rand bei der Anweisung, bei der Sie halten möchten, oder positionieren Sie Ihren Cursor über der Anweisung und drücken Sie **F9**.  
   
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Festlegen eines Datenhaltepunkts (nur systemeigener C++)  
+## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Festlegen eines Datenhaltepunkts (nur natives C++)  
  Datenhaltepunkte unterbrechen die Ausführung, wenn sich ein Wert ändert, der in einer bestimmten Speicheradresse gespeichert ist. Wenn der Wert ausgelesen jedoch nicht geändert wird, wird die Ausführung nicht unterbrochen. Zum Festlegen von Datenhaltepunkten muss sich der Debugger im Unterbrechungsmodus befinden.  
   
 1. Starten Sie das Debuggen der Anwendung, und warten Sie, bis ein Haltepunkt erreicht wird. Klicken Sie im Menü **Debuggen** auf **Neuer Haltepunkt / Datenhaltepunkt** (oder öffnen Sie das Fenster **Haltepunkte** , und klicken Sie dann auf **Neu / Datenhaltepunkt**.  
@@ -114,7 +114,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
 - Der Speicherort wird innerhalb des Kernels aktualisiert. Wenn Speicher beispielsweise an eine 32-Bit Windows `ReadFile` -Funktion übergeben wird, wird der Speicher aus dem Kernelmodus aktualisiert und der Debugger unterbricht den Speicherschreibvorgang nicht.  
   
 ## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Festlegen eines Haltepunkts mit einer Speicheradresse (nur systemeigenes C++)  
- Sie können auch die Adresse eines Objekts verwenden, um einen Haltepunkt für eine Methode zu setzen, die in einer bestimmten Instanz aufgerufen wird.  Im Folgenden ein Beispiel:  
+ Sie können auch die Adresse eines Objekts verwenden, um einen Haltepunkt für eine Methode zu setzen, die in einer bestimmten Instanz aufgerufen wird.  Hier sehen Sie ein Beispiel:  
   
  Bei einem Objekt vom Typ `my_class` mit der Adresse können Sie einen Funktionshaltepunkt für eine Methode namens `my_method` festlegen, die von dieser Instanz aufgerufen wird.  
   
@@ -130,14 +130,14 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Verwalten von Haltepunkten  
+## <a name="managing-breakpoints"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Verwalten von Haltepunkten  
  Sie können das Fenster **Haltepunkte** (**Debuggen / Windows / Haltepunkte**(oder **STRG + ALT + B**) verwenden, um alle Haltepunkte anzuzeigen, die Sie in der Projektmappe festgelegt haben:  
   
- ![Fenster "Breakpoints"](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
+ ![Breakpoints-Fenster](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
  Das Fenster **Haltepunkte** ist ein zentraler Ort zum Verwalten aller Haltepunkte, der besonders bei großen Projektmappen oder komplexen Debugszenarios hilfreich sein kann, bei denen Haltepunkte wichtig sind. Wenn Sie den Zustand und den Speicherort eines Satzes Haltepunkte speichern oder freigeben müssen, können Sie Haltepunktdateien nur vom Fenster **Haltepunkte** aus speichern und importieren.  
   
-## <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Erweiterte Haltepunkte  
+## <a name="advanced-breakpoints"></a><a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Erweiterte Haltepunkte  
   
 ## <a name="breakpoint-conditions"></a>Haltepunktbedingungen  
  Sie können steuern, wann und wo ein Haltepunkt ausgeführt wird, indem Sie Bedingungen festlegen.  
@@ -150,11 +150,11 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
    Beim Überprüfen des Felds **Bedingungen** wird das Fenster erweitert, um die verschiedenen Arten von Bedingungen anzuzeigen.  
   
-   **Bedingter Ausdruck:** Wenn Sie Bedingungsausdruck auswählen, können Sie anschließend zwei Bedingungen auswählen: **Ist "true"** und **Änderung**. Wählen Sie **Ist „true“ (wahr)** aus, um die Ausführung zu unterbrechen, wenn der Ausdruck erfüllt ist. Wenn Sie **Hat sich geändert** auswählen, wird die Ausführung unterbrochen, wenn sich der Wert des Ausdrucks geändert hat.  
+   **Bedingungsausdruck:** Wenn Sie Bedingungsausdruck auswählen, können Sie anschließend zwei Bedingungen auswählen: **true** und **Bei Änderung**. Wählen Sie **Ist „true“ (wahr)** aus, um die Ausführung zu unterbrechen, wenn der Ausdruck erfüllt ist. Wenn Sie **Hat sich geändert** auswählen, wird die Ausführung unterbrochen, wenn sich der Wert des Ausdrucks geändert hat.  
   
-   Im folgenden Beispiel legen wir den Haltepunkt fest, der nur erreicht wird, wenn der Wert von `testInt` **4**lautet:  
+   Im folgenden Beispiel legen wir den Haltepunkt fest, der nur erreicht wird, wenn der Wert von `testInt`**4**lautet:  
   
-   ![Haltepunktbedingung wahr ist](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+   ![Haltepunktbedingung lautet "true"](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
    Im folgenden Beispiel legen wir den Haltepunkt fest, der nur erreicht wird, wenn sich der Wert `testInt` ändert:  
   
@@ -162,18 +162,18 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
    Das Verhalten des Feld „Änderungszeitpunkt“ unterscheidet sich von dem der übrigen Programmiersprachen. Wenn Sie **Hat sich geändert** für systemeigenen Code auswählen, wird die erste Auswertung der Bedingung vom Debugger nicht als Änderung betrachtet. Der Haltepunkt wird also bei der ersten Auswertung nicht erreicht. Wenn Sie **Hat sich geändert** für verwalteten Code auswählen, wird der Haltepunkt bei der ersten Auswertung nach Auswählen von **Hat sich geändert** erreicht.  
   
-   Wenn Sie eine Haltepunktbedingung mit ungültiger Syntax festlegen, wird sofort eine Warnmeldung angezeigt. Wenn Sie eine Haltepunktbedingung mit gültiger Syntax aber ungültiger Semantik angeben, wird beim ersten Erreichen des Haltepunkts eine Warnmeldung angezeigt. In beiden Fällen unterbricht der Debugger die Ausführung beim Erreichen des ungültigen Haltepunkts. Der Haltepunkt wird nur übersprungen, wenn die Bedingung gültig ist mit `false`bewertet wird.  
+   Wenn Sie eine Haltepunktbedingung mit ungültiger Syntax festlegen, wird sofort eine Warnmeldung angezeigt. Wenn Sie eine Haltepunktbedingung mit gültiger Syntax aber ungültiger Semantik angeben, wird beim ersten Erreichen des Haltepunkts eine Warnmeldung angezeigt. In jedem Fall unterbricht der Debugger die Ausführung, wenn der ungültige Breakpoint erreicht wird. Der Haltepunkt wird nur übersprungen, wenn die Bedingung gültig ist mit `false`bewertet wird.  
   
-   Die Bedingung kann ein beliebiger gültiger Ausdruck sein, der vom Debugger erkannt wird. Weitere Informationen zu gültigen Ausdrücken finden Sie unter [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
+   Die Bedingung kann ein beliebiger gültiger Ausdruck sein, der vom Debugger erkannt wird. Weitere Informationen zu gültigen Ausdrücken finden Sie [unter Ausdrücke im Debugger](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Verwenden von Objekt-IDs in Haltepunktbedingungen (C# und F#)  
- Manchmal möchten Sie das Verhalten eines bestimmten Objekts beobachten. Sie möchten z. B. herausfinden, warum ein Objekt mehr als einmal in eine Auflistung eingefügt wurde. In C# und F# können Sie Objekt-IDs für bestimmte Instanzen von [Verweistypen](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) erstellen und in Haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  Um eine Objekt-ID zu erstellen, führen Sie folgende Schritte aus:  
+ Manchmal möchten Sie das Verhalten eines bestimmten Objekts beobachten. Sie möchten z. B. herausfinden, warum ein Objekt mehr als einmal in eine Auflistung eingefügt wurde. Sie können Objekt-IDs für bestimmte Instanzen von [Verweistypen](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) erstellen und in Breakpoint-Bedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  Um eine Objekt-ID zu erstellen, führen Sie folgende Schritte aus:  
   
 1. Legen Sie im Code nach der Erstellung des Objekts einen Haltepunkt fest.  
   
 2. Starten Sie das Debugging, und suchen Sie den Haltepunkt, wenn die Ausführung im Haltepunkt anhält, im **Lokalfenster** , klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Objekt-ID erstellen**aus.  
   
-    Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Dies ist die Objekt-ID.  
+    Im Fenster **$** **"Locals"** sollte eine Pluszahl angezeigt werden. Dies ist die Objekt-ID.  
   
 3. Fügen Sie einen neuen bedingten Haltepunkt, an dem Punkt hinzu, der untersucht werden soll, z. B., wenn das Objekt der Auflistung hinzugefügt werden soll.  
   
@@ -190,9 +190,9 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
  Setzen Sie im Fenster **Haltepunkteinstellungen** die Bedingung auf **Trefferanzahl**. Anschließend können Sie die Iterationsanzahl angeben. Im folgenden Beispiel legen wir den Haltepunkt fest, der bei jeder Iteration erreicht werden soll:  
   
- ![Trefferanzahl für Haltepunkt](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
+ ![Punkttrefferanzahl](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
-## <a name="filter"></a>Filter  
+## <a name="filter"></a>Filtern  
  Sie können einen Haltepunkt so einschränken, dass dieser nur auf bestimmten Geräten oder in angegebenen Prozesse und Threads aktiviert wird.  
   
  Setzten Sie im Fenster **Haltepunkteinstellung**die Bedingung auf den Wert **Filter**. Geben Sie einen oder mehrere der folgenden Ausdrücke ein:  
@@ -209,7 +209,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
   Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können Klauseln mit `&` (AND), `||` (OR), `!` (NOT), und Klammern kombinieren.  
   
-## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Haltepunktaktionen und Ablaufverfolgungspunkte  
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Haltepunktaktionen und Ablaufverfolgungspunkte  
  Beim Ablaufverfolgungspunkt handelt es sich um einen Haltepunkt, der im Fenster „Ausgabe“eine Meldung ausgibt. Ein Ablaufverfolgungspunkt kann wie eine temporäre Trace-Anweisung in der Programmiersprache reagieren.  
   
  Aktivieren Sie im Fenster **Haltepunkteinstellungen** das Kontrollkästchen **Aktionen** . Wählen Sie in der Gruppe **Aktion** die Option **Meldung im Ausgabe-Fenster protokollieren** aus. Sie können eine allgemeine Zeichenfolge drucken, z. B. **das ist ein Test**. Um den Wert einer Variablen oder eines Ausdrucks einzuschließen, schließen Sie ihn mit geschweiften Klammern ein.  
@@ -231,7 +231,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
 |**$TICK**||  
 |**$TNAME**||  
   
-## <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Haltepunktbezeichnungen  
+## <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Haltepunktbezeichnungen  
  Haltepunktbezeichnungen werden nur im Fenster **Haltepunkte** verwendet, um die Liste der Haltepunkte zu sortieren und zu filtern. Um eine Bezeichnung einem Haltepunkt hinzuzufügen, wählen Sie die Zeile mit Haltepunkten aus, und klicken Sie dann im Kontextmenü auf **Bezeichnung** .  
   
 ## <a name="export-and-import-breakpoints"></a>Exportieren und Importieren von Haltepunkten  
@@ -250,7 +250,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
 2. Sie können den Haltepunkt auch an die Quelldatei binden. Wählen Sie den Haltepunkt aus, und klicken Sie im Kontextmenü auf **Bedingungen** . Aktivieren Sie im Fenster **Haltepunkteinstellungen** das Kontrollkästchen **Unterschiede zwischen Quellcode und Originalversion zulassen** .  
   
 ### <a name="breakpoints-dont-work-in-a-dll"></a>Haltepunkte funktionieren nicht in einer DLL-Datei  
- In einer Quelldatei kann kein Haltepunkt festgelegt werden, wenn die erforderlichen Debuginformationen für das Modul, in dem sich der Code befindet, nicht vom Debugger geladen wurden. Zu den Symptomen gehören u. a. Meldungen wie **Der Haltepunkt kann nicht festgelegt werden**. An der Haltepunktposition wird das Haltepunkt-Warnsymbol angezeigt. Sobald der Code geladen wurde, werden die Warnungsmeldungen des Haltepunkts zu tatsächlichen Haltepunkten. Weitere Informationen zum Laden von Symbolen finden Sie unter [angeben von Symbol (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ In einer Quelldatei kann kein Haltepunkt festgelegt werden, wenn die erforderlichen Debuginformationen für das Modul, in dem sich der Code befindet, nicht vom Debugger geladen wurden. Zu den Symptomen gehören u. a. Meldungen wie **Der Haltepunkt kann nicht festgelegt werden**. An der Haltepunktposition wird das Haltepunkt-Warnsymbol angezeigt. Sobald der Code geladen wurde, werden die Warnungsmeldungen des Haltepunkts zu tatsächlichen Haltepunkten. Weitere Informationen zum Laden von Symbolen finden Sie unter [Symbol (.pdb) und Quelldateien angeben](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Navigieren durch Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)

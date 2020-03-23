@@ -1,5 +1,5 @@
 ---
-title: Grafik Ereignisliste | Microsoft-Dokumentation
+title: Grafikereignisliste | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409330"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301098"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.
 
  Dies ist die Ereignisliste:
 
- ![Eine Liste von Ereignissen mit "index" im Namen.](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
+ ![Eine Liste von Ereignissen mit "Index" im Namen.](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
 
 ## <a name="using-the-event-list"></a>Verwenden der Ereignisliste
  Wenn Sie ein Ereignis in der Ereignisliste auswählen, wird dieses in den Informationen wiedergegeben, die von anderen Grafikanalysetools angezeigt werden. Wenn Sie die Ereignisliste in Verbindung mit diesen anderen Tools verwenden, können Sie ein eventuelles Renderingproblem detailliert untersuchen, um seine Ursache zu ermitteln. Mehr Informationen über die Lösung von Renderingproblemen durch Verwendung der Ereignisliste in Verbindung mit anderen Grafikanalysetools finden Sie unter [Beispiele](graphics-diagnostics-examples.md).
@@ -41,15 +41,15 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
  In Direct3D 11 sind mehrere Warteschlangen nicht zulässig, sodass Ereignisse in der Ereignisliste nicht farblich gekennzeichnet werden, wenn Sie mit einer Direct3D 11-App-Erfassung arbeiten.
 
 ### <a name="event-list-views"></a>Ereignislistenansichten
- Die Ereignisliste bietet zwei verschiedene Ansichten zur Organisation von Grafikereignissen in verschiedener Weise, um Ihren Workflow und Ihre Präferenzen zu unterstützen. Die erste Ansicht ist die *GPU-Arbeitsansicht* , die Ereignisse und ihren zugeordneten Zustand hierarchisch organisiert. Die zweite Ansicht ist die Ansicht *Zeitachse* , in der Ereignisse chronologisch in einer flachen Liste organisiert werden.
+ Die Ereignisliste bietet zwei verschiedene Ansichten zur Organisation von Grafikereignissen in verschiedener Weise, um Ihren Workflow und Ihre Präferenzen zu unterstützen. Die erste Ansicht ist die *GPU-Arbeitsansicht,* die Ereignisse und den zugehörigen Status hierarchisch organisiert. Die zweite Ansicht ist die Ansicht *Zeitachse* , in der Ereignisse chronologisch in einer flachen Liste organisiert werden.
 
- Die **GPU-Arbeits** Ansicht zeigt erfasste Ereignisse und ihren Status in einer Hierarchie an. Die oberste Ebene der Hierarchie besteht aus Ereignissen wie Zeichnen-Befehlen, gelöschten und d vorhandenen Ereignissen und solchen, die mit Ansichten zu tun haben. In der Ereignisliste können Sie Zeichnen-Befehle erweitern, um den Gerätestatus zum Zeitpunkt des Zeichnen-Befehls anzuzeigen, und jede Art von Status noch weiter erweitern, um die Ereignisse zu zeigen, die deren Werte festlegen. Auf dieser Ebene können Sie auch feststellen, ob ein bestimmter Status in einem vorherigen Frame festgelegt wurde oder ob er seit dem letzten Zeichnen-Befehl mehr als einmal festgelegt wurde.
+ In der **GPU-Arbeitsansicht** werden erfasste Ereignisse und deren Status in einer Hierarchie angezeigt. Die oberste Ebene der Hierarchie besteht aus Ereignissen wie Zeichnen-Befehlen, gelöschten und d vorhandenen Ereignissen und solchen, die mit Ansichten zu tun haben. In der Ereignisliste können Sie Zeichnen-Befehle erweitern, um den Gerätestatus zum Zeitpunkt des Zeichnen-Befehls anzuzeigen, und jede Art von Status noch weiter erweitern, um die Ereignisse zu zeigen, die deren Werte festlegen. Auf dieser Ebene können Sie auch feststellen, ob ein bestimmter Status in einem vorherigen Frame festgelegt wurde oder ob er seit dem letzten Zeichnen-Befehl mehr als einmal festgelegt wurde.
 
- In der **Zeit** Achsen Ansicht werden alle aufgezeichneten Ereignisse in chronologischer Reihenfolge angezeigt. Diese Art, die Ereignisliste zu organisieren, ist dieselbe wie in vorherigen Versionen von Visual Studio.
+ In der **Zeitleistenansicht** werden jedes erfasste Ereignis in chronologischer Reihenfolge angezeigt. Diese Art, die Ereignisliste zu organisieren, ist dieselbe wie in vorherigen Versionen von Visual Studio.
 
 ##### <a name="to-change-the-event-list-view-mode"></a>So ändern Sie den Ansichtsmodus der Ereignisliste
 
-- Suchen Sie im Fenster **Grafik Ereignisliste** über der Liste der Ereignisse nach der Dropdown Liste **Ansicht** , und wählen Sie entweder die Ansicht **Zeitachse** oder die **GPU-Arbeits** Ansicht aus.
+- Suchen Sie im Fenster **Grafikereignisliste** oberhalb der Ereignisliste die Dropdownliste **Ansicht** und wählen Sie entweder die **Zeitachsenansicht** oder die **GPU-Arbeitsansicht** aus.
 
 ### <a name="filtering-events"></a>Filtern von Ereignissen
  Sie können mithilfe des Feldes "Suchen" in der oberen rechten Ecke des Fensters **Grafikereignisliste** die Ereignisliste so filtern, dass sie nur Ereignisse enthält, in deren Namen bestimmte Schlüsselwörter vorkommen. Sie können einzelne Schlüsselwörter wie `Vertex`(s. Abbildung oben) oder mehrere Schlüsselwörter angeben, indem Sie eine durch Semikola getrennte Liste wie z.B. `Draw;Primitive`erstellen. Diese findet alle Ereignisse, in deren Namen entweder `Draw` oder `Primitive` vorkommt. Suchen sind leerzeichenspezifisch -– `VSSet` und `VS Set` sind z.B. verschiedene Suchvorgänge. Stellen Sie daher sicher, dass Sie Ihre Suchen sorgfältig ausführen.
@@ -66,9 +66,9 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 |Symbol|Ereignisbeschreibung|
 |----------|-----------------------|
 |(kein Symbol)|Allgemeines Ereignis<br /> Ein Ereignis, das kein benutzerdefiniertes Ereignis, keine benutzerdefinierte Ereignisgruppe und kein Zeichnen-Ereignis ist.|
-|![Das Zeichnungs Ereignis Symbol](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Zeichnen-Ereignis<br /> Markiert ein Zeichnen-Ereignis, das während des erfassten Frames aufgetreten ist.|
-|![Symbol für&#45;benutzerdefiniertes Ereignis Marker](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Benutzerdefinierte Ereignisgruppe<br /> Gruppiert verwandte Ereignisse auf von der App definierte Art.|
-|![Symbol für&#45;benutzerdefiniertes Ereignis Marker](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Benutzerdefinierter Ereignismarker<br /> Markiert einen bestimmten Speicherort auf von der App definierte Art.|
+|![Symbol für Draw-Ereignis](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Zeichnen-Ereignis<br /> Markiert ein Zeichnen-Ereignis, das während des erfassten Frames aufgetreten ist.|
+|![Das&#45;definierte Ereignismarkierungssymbol](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Benutzerdefinierte Ereignisgruppe<br /> Gruppiert verwandte Ereignisse auf von der App definierte Art.|
+|![Das&#45;definierte Ereignismarkierungssymbol](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Benutzerdefinierter Ereignismarker<br /> Markiert einen bestimmten Speicherort auf von der App definierte Art.|
 
 ## <a name="marking-user-defined-events-in-your-app"></a>Markieren von benutzerdefinierten Ereignissen in Ihrer App
  Benutzerdefinierte Ereignisse sind spezifisch für Ihre App. Sie können sie verwenden, um wichtige Ereignisse zuzuordnen, die in Ihrer App mit Ereignissen in der Grafikereignisliste auftreten. Sie können z. B. benutzerdefinierte Ereignisgruppen erstellen, um verwandte Ereignisse in Gruppen oder Hierarchien zu organisieren – z. B. diejenigen, die Ihre Benutzeroberfläche rendern –, sodass Sie die Ereignisliste leichter durchsuchen können, oder Sie können Marker erstellen, wenn eine bestimmte Art von Objekten gezeichnet wird, sodass Sie leicht die entsprechenden Grafikereignisse in der Ereignisliste finden können.
@@ -99,17 +99,17 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Ressourcenverlauf
-Visual Studio 2017 und höher enthalten das Fenster " **Ressourcen Verlauf** ".  Wenn Sie das Überwachungs Symbol ![Überwachungs Symbol](media/gfx_watch.png) neben einem Eintrag im Fenster **Ereignisliste** auswählen, wird das unten gezeigte Fenster **Ressourcen Verlauf** angezeigt:
+Visual Studio 2017 und höher enthalten das Fenster **Ressourcenverlauf.**  Wenn Sie ![das](media/gfx_watch.png) Symbol für die Uhrnebenangezeigt neben einem Eintrag im **Fenster Ereignisliste** auswählen, wird das unten gezeigte Fenster **Ressourcenverlauf** angezeigt:
 
 ![Ressourcenverlauf](media/gfx_diag_resource_history.png)
 
-In diesem Fenster können Sie den Verlauf des ausgewählten Elements in der Ereignisliste anzeigen.  Die Dropdown Liste oben kann verwendet werden, um andere Elemente zum Anzeigen des Verlaufs auszuwählen.  Die obere Hälfte des Fensters enthält die **Frame-Setup-Ereignisse**.  Dabei handelt es sich um Ereignisse, die in die Kategorie " *Create* Type" fallen, und um Aufrufe, die die Ressource in der Regel initialisieren und erstellen.  Die untere Hälfte des Fensters enthält den Abschnitt **Frame-Ereignisse** .  Dabei handelt es sich um die normalen Lese-und Schreib Ereignisse, die während der Verwendung der Ressource auftreten.
+In diesem Fenster können Sie den Verlauf des ausgewählten Elements in der Ereignisliste anzeigen.  Die Dropdown-Liste oben kann verwendet werden, um andere Elemente auszuwählen, für die der Verlauf angezeigt werden soll.  Die obere Hälfte des Fensters enthält die **Frame-Setup-Ereignisse**.  Dies sind die Ereignisse, die in die Kategorie *Typ erstellen* fallen und Aufrufe sind, die in der Regel initialisieren und die Ressource erstellen.  Die untere Hälfte des Fensters enthält den Abschnitt **Rahmenereignisse.**  Dies sind die normalen Lese- und Schreibereignisse, die während der Verwendung der Ressource auftreten.
 
-| Column | BESCHREIBUNG |
+| Column | Beschreibung |
 |-----------| - |
-| **Typ** | Zeigt den Typ des Eintrags an (in der Regel *Erstellen*, *Lesen* und *Schreiben*). |
-| **Ansicht** | Zeigt eine Miniaturansicht der Ressource zu diesem Zeitpunkt an.  Doppelklicken Sie auf die Miniaturansicht, um zu diesem Zeitpunkt eine Detailansicht der Ressource zu öffnen. |
-| **Event** | Zeigt den Methoden Aufruf, der aufgetreten ist, der das Ereignis generiert hat.  Alle zusätzlichen Verläufe für einzelne Elemente können angezeigt werden, indem Sie das Überwachungs Symbol ![Überwachungs Symbol](media/gfx_watch.png) in der entsprechenden Zeile auswählen.  Außerdem können alle Elemente, die in blauem Text gezeichnet werden (z. b. `m_commandList` im obigen Screenshot) ausgewählt werden, um weitere Informationen zu erhalten. |
+| **Typ** | Zeigt den Typ des Eintrags an, in der Regel *Erstellen*, *Lesen* und *Schreiben*. |
+| **Ansicht** | Zeigt zu diesem Zeitpunkt eine Miniaturansicht der Ressource an.  Doppelklicken Sie auf die Miniaturansicht, um eine Detailansicht der Ressource zu diesem Zeitpunkt zu öffnen. |
+| **Ereignis** | Zeigt den Methodenaufruf an, der aufgetreten ist und der das Ereignis generiert hat.  Jede zusätzliche Historie für einzelne Elemente kann ![angezeigt](media/gfx_watch.png) werden, indem Sie das Symbol der Uhruhr in der entsprechenden Zeile auswählen.  Außerdem kann jedes Element, das in `m_commandList` blauem Text gezeichnet wird, wie im Screenshot oben, für weitere Details ausgewählt werden. |
 
 <!-- /VERSIONLESS -->
 

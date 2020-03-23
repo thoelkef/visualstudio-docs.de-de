@@ -1,5 +1,5 @@
 ---
-title: Erweitern von UML-Modellen und-Diagrammen | Microsoft-Dokumentation
+title: ERWEITERN von UML-Modellen und -Diagrammen | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849805"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301248"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Erweitern von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Das Fabrikam-Team für Tools erstellt eine Reihe von Erweiterungen, um die Entwicklungsteams zu unterstützen. In den folgenden Abschnitten werden die verschiedenen Arten von Erweiterungen beschrieben, die Sie definieren können. Sie können mehrere dieser Techniken in einer Visual Studio-Erweiterung kombinieren.
 
- Weitere Informationen finden Sie in diesem Video: ![Link to Video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How do I Series: UML Tools and Extensibility](https://msdn.microsoft.com/vstudio/ff859492).
+ Weitere Informationen finden Sie in diesem Video: ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I Series: UML Tools and Extensibility](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a> Anforderungen
+## <a name="requirements"></a><a name="Requirements"></a>Anforderungen
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-- [Modellierungs-SDK für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
+- [Modellierung von SDK für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Profile
  Mithilfe von Profilen können Sie Stereotype und zusätzliche Eigenschaften für UML-Elemente definieren.
@@ -48,44 +48,44 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 ## <a name="custom-toolbox-items"></a>Benutzerdefinierte Toolboxelemente
  Ein benutzerdefiniertes Toolboxelement erstellt ein Element oder eine Gruppe von Elementen aus einem Prototyp, den Sie in einem Diagramm definieren. Sie können z. B. ein Tool erstellen, das Anwendungsfälle in einer bestimmten Farbe oder mit einem bestimmten Stereotyp erstellt, oder eine Gruppe von Klassen und Zuordnungen, die ein Entwurfsmuster darstellt. Sie können diese Toolboxelemente Visual Studio-Erweiterungen hinzufügen und an andere Benutzer verteilen.
 
- Weitere Informationen finden Sie unter [Definieren eines benutzerdefinierten Modellierungs Toolbox Elements](../modeling/define-a-custom-modeling-toolbox-item.md).
+ Weitere Informationen finden Sie unter [Definieren eines benutzerdefinierten Modellisierungs-Toolboxelements](../modeling/define-a-custom-modeling-toolbox-item.md).
 
-## <a name="validation"></a>Validation
+## <a name="validation"></a>Überprüfen
  Sie können Regeln definieren, um sicherzustellen, dass ein UML-Modell angegebene Einschränkungen erfüllt.
 
  Die Toolentwickler von Fabrikam definieren Regeln, um Teammitglieder dabei zu unterstützen, einfache Fehler in Bezug auf die Modelle zur Gepäckbeförderung zu vermeiden. Ein Check-in-Schalter kann zum Beispiel nicht direkt mit einem Aufbewahrungsbehälter verbunden sein. Es muss mindestens ein Fließband zwischengeschaltet sein.
 
- Weitere Informationen finden Sie unter [Definieren von Validierungs Einschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md).
+ Weitere Informationen finden Sie unter [Definieren von Validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md).
 
 ## <a name="menu-commands"></a>Menübefehle
  Sie können Befehle definieren, die Benutzer aufrufen können, indem sie mit der rechten Maustaste auf Elemente in einem UML-Diagramm klicken. Mit den Befehlen können das Modell und die Diagramme aktualisiert oder andere Vorgänge in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]ausgeführt werden.
 
  Fabrikam definiert Menübefehle, um häufig ausgeführte Vorgänge zu automatisieren, z. B. das Erstellen eines Check-in-Schalters und das Verbinden mit einem bestimmten Fließband oder das Anpassen eines Diagramms an die Layoutregeln des Unternehmens.
 
- Weitere Informationen finden Sie [unter Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ Weitere Informationen finden Sie unter [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ## <a name="gestures"></a>Gesten
  Sie können Befehle definieren, die Benutzer per Doppelklick auf ein Diagrammelement oder durch das Ziehen in ein Diagramm oder ein Element des Diagramms initiieren können. Sie können Befehle definieren, die mit Elementen arbeiten können, die aus anderen UML-Diagrammen, anderen Teilen von Visual Studio oder anderen Anwendungen oder Windows-Explorer (oder Datei-Explorer) gezogen werden.
 
  Mitglieder des Fabrikam-Teams können eine Datei, z. B. eine Spezifikation, jedem Modellelement zuordnen, indem sie diese vom Windows-Desktop ziehen. Die Toolentwickler haben ein Stereotyp definiert, das jedes Element mit einer Dateipfadeigenschaft ausstattet, und eine Geste, die das Stereotyp und den Dateipfad festlegt, wenn eine Datei auf einem Element abgelegt wird.
 
- Weitere Informationen finden Sie unter [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).
+ Weitere Informationen finden Sie unter [Definieren eines Gestenhandlers für ein Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).
 
 ## <a name="responding-to-changes"></a>Reagieren auf Änderungen
  Sie können Code schreiben, der auf Änderungen im Modell reagiert, die durch Benutzeraktionen oder anderen Programmcode verursacht wurden.
 
  Fabrikams Entwickler erstellen Code, in dem die Farbe eines Elements automatisch abhängig von seinem Stereotyp festgelegt wird. Dies erleichtert es den Benutzern, die verschiedenen Rollen der in den Modellen enthaltenen Elemente zu unterscheiden.
 
- Weitere Informationen finden Sie unter Gewusst [wie: reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md).
+ Weitere Informationen finden Sie unter [Gewusst wie: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md).
 
 ## <a name="model-bus"></a>ModelBus (Modellbus)
  Mit ModelBus können Sie auf ein Diagramm oder Modell aus einem anderen Diagramm oder einer anderen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung zugreifen. Unter anderem können Sie Informationen auf diese Weise über mehr als ein Modell verteilen, damit mehrere Personen gleichzeitig am kombinierten Modell arbeiten können.
 
  Fabrikam verwendet Elemente in Aktivitätsdiagrammen, um Gepäckbeförderungsausrüstung darzustellen. Jedes Element der Ausrüstung kann über eine ausführlichere Spezifikation in einem anderen Diagramm verfügen, das sich in einem anderen Modell befinden kann. Die Validierungseinschränkungen für das Gepäckflussdiagramm können relevante Eigenschaften der Ausrüstung aus den anderen Diagrammen abrufen. Die Verweise auf die anderen Diagramme werden in zusätzlichen Eigenschaften gespeichert, die in Stereotypen definiert sind.
 
- Weitere Informationen finden Sie unter [integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+ Weitere Informationen finden Sie unter [Integrieren von UML-Modellen mit anderen Modellen und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Generierung
+## <a name="generation"></a>Generation
  Über ein Modell können Sie Programmcode, Skripts, Konfigurationen, Dokumente, neue Modelle oder andere Artefakte generieren.
 
  In den Gepäcksystemen, die Fabrikam entwirft, weist der Programmcode von Projekt zu Projekt viele Übereinstimmungen auf. Der Hauptaspekt, der jeweils am stärksten variiert, ist der Plan des Gepäckflusses auf dem jeweiligen Flughafen. Nachdem das Entwurfsteam bei den ersten Projekten Erfahrungen sammeln konnte, erstellen die Toolentwickler eine Vorlage, die über das Gepäckflussmodell einen Großteil des variablen Programmcodes und die anderen Dateien erstellt, z. B. Benutzerdokumente. Die Entwicklungszeit und die Fehlerhäufigkeit kann so für jedes neue Projekt erheblich reduziert werden.
@@ -97,7 +97,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Die Toolentwickler von Fabrikam schreiben ein Tool, das für jedes Flughafenprojekt einen Arbeitsplan generiert. Die Arbeitselemente im Zeitplan sind mit den Modellelementen verknüpft.
 
- Weitere Informationen finden Sie unter [Definieren eines Link Handlers für Arbeitselemente](../modeling/define-a-work-item-link-handler.md).
+ Weitere Informationen finden Sie unter [Definieren eines Arbeitsaufgabenverknüpfungshandlers](../modeling/define-a-work-item-link-handler.md).
 
 ## <a name="tools-that-update-models"></a>Tools zur Aktualisierung von Modellen
  Sie können eigenständige Anwendungen und Visual Studio-Erweiterungen erstellen, die UML-Modelle laden können.
@@ -107,16 +107,16 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
  Weitere Informationen finden Sie unter [Lesen eines UML-Modells im Programmcode](../modeling/read-a-uml-model-in-program-code.md).
 
 ## <a name="domain-specific-languages"></a>Domänenspezifische Sprachen
- Wenn Sie einen bestimmten Modelltyp häufig verwenden, kann es sinnvoll sein, eine domänenspezifische Sprache zu erstellen. Dadurch kann ein UML-Modell genauer auf die Geschäftsanforderungen ausgerichtet werden, die Erstellung und Pflege sind jedoch aufwändiger. Weitere Informationen finden Sie unter [Modellierungs-SDK für Visual Studio-domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
+ Wenn Sie einen bestimmten Modelltyp häufig verwenden, kann es sinnvoll sein, eine domänenspezifische Sprache zu erstellen. Dadurch kann ein UML-Modell genauer auf die Geschäftsanforderungen ausgerichtet werden, die Erstellung und Pflege sind jedoch aufwändiger. Weitere Informationen finden Sie unter [Modellierung von SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML mit Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: UML Tools and Extensibility](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![Link zu VideoKanal](../data-tools/media/playvideo.gif "PlayVideo") [9: UML mit Visual Studio](https://channel9.msdn.com/posts/clinted/)|
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Siehe auch
- [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md) - [API-Referenz für UML-Modellierungs Erweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Erstellen von Modellen für Ihre App-API-Referenz](../modeling/create-models-for-your-app.md) [für DIE UML-Modellierungserweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md)
