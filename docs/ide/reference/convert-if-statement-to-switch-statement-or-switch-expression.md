@@ -1,6 +1,6 @@
 ---
 title: Konvertieren der if-Anweisung in eine switch-Anweisung
-ms.date: 02/12/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb0c06fe0493f973ea9cf0a566ffda45a49eeeff
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77283460"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094134"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Konvertieren der if-Anweisung in eine switch-Anweisung
 
@@ -32,9 +32,15 @@ Dieses Refactoring gilt für:
 
 1. Platzieren Sie Ihren Cursor im Schlüsselwort `if`.
 2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
-3. Klicken Sie auf **In switch-Anweisung konvertieren**.
+3. Wählen Sie eine der folgenden beiden Optionen aus: 
 
-   ![Konvertieren der if-Anweisung in eine switch-Anweisung](media/convert-if-statement-to-switch-statement-or-switch-expression.png) 
+    Klicken Sie auf **In switch-Anweisung konvertieren**.
+
+   ![Konvertieren von if-Anweisung in switch-Anweisung](media/convert-if-to-switch-statement.png) 
+
+    Klicken Sie auf **In switch-Ausdruck konvertieren**. 
+
+    ![Konvertieren von if-Anweisung in switch-Ausdruck](media/convert-if-to-switch-expression.png) 
 
 ## <a name="see-also"></a>Siehe auch
 

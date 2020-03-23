@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128291"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
@@ -58,7 +58,7 @@ Im Folgenden finden Sie die grundlegenden Schritte:
 
    Visual Studio analysiert die gesammelten Daten und zeigt die Ergebnisse an.
 
-   ![Zeitachsenprofiler-Bericht](../profiling/media/timeline_base.png "TIMELINE_Base")
+   ![Bericht zu Zeitachsenprofiler](../profiling/media/timeline_base.png "TIMELINE_Base")
 
 ## <a name="analyze-timeline-profiling-data"></a>Analysieren von Zeitachsen-Profilerstellungsdaten
 
@@ -68,31 +68,31 @@ Nachdem Sie die Profilerstellungsdaten gesammelt haben, können Sie diese Schrit
 
 2. Überprüfen Sie anhand der Informationen in den Diagrammen **Auslastung des UI-Threads** bzw. **Visueller Durchsatz (FPS)** die Details in der Ansicht **Zeitachsendetails**, um mögliche Ursachen für eine scheinbar mangelhafte Reaktionsfähigkeit zu finden.
 
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> Berichtsszenarien, Kategorien und Ereignisse
+### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a> Berichtsszenarien, Kategorien und Ereignisse
 
 Das Tool **Anwendungszeitachse** zeigt zeitbezogene Daten zu Szenarien, Kategorien und Ereignissen im Zusammenhang mit der XAML-Leistung.
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> Zeitachse der Diagnosesitzung
+### <a name="diagnostic-session-timeline"></a><a name="BKMK_Diagnostic_session_timeline"></a> Zeitachse der Diagnosesitzung
 
-![Leistungs- und Diagnosezeitachse](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
+![Zeitachse für Leistung und Diagnose](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
 Das Lineal oben auf der Seite zeigt die Zeitachse für die Profilerstellungsinformationen an. Diese Zeitachse gilt sowohl für das Diagramm **Auslastung des UI-Threads** als auch für das Diagramm **Visueller Durchsatz** . Sie können den Bereich des Berichtes eingrenzen, indem Sie die Navigationsleisten auf der Zeitachse ziehen, um ein Segment der Zeitachse auszuwählen.
 
 Die Zeitachse zeigt auch alle Benutzermarkierungen an, die Sie eingefügt haben, sowie die Ereignisse des Aktivierungslebenszyklus der App.
 
-### <a name="BKMK_UI_thread_utilization_graph"></a> Diagramm der Auslastung des UI-Threads
+### <a name="ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a> Diagramm der Auslastung des UI-Threads
 
 ![CPU-Auslastungsdiagramm](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
 Das Diagramm **Auslastung des UI-Threads (%)** ist ein Balkendiagramm, in dem für den Verlauf einer Datensammlung die relative Dauer in der jeweiligen Kategorie angezeigt wird.
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> Diagramm des visuellen Durchsatzes (FPS)
+### <a name="visual-throughput-fps-graph"></a><a name="BKMK_Visual_throughput_FPS_graph"></a> Diagramm des visuellen Durchsatzes (FPS)
 
 ![Diagramm des visuellen Durchsatzes](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
 Das Liniendiagramm **Visueller Durchsatz (FPS)** zeigt die Bilder pro Sekunde (FPS) auf der UI und dem Kompositionsthread für die App an.
 
-### <a name="BKMK_Timeline_details_"></a> Zeitachse
+### <a name="timeline-details"></a><a name="BKMK_Timeline_details_"></a> Zeitachse
 
 Die Detailansicht benötigen Sie am häufigsten, um den Bericht zu analysieren. Sie zeigt die CPU-Auslastung Ihrer Anwendung kategorisiert nach dem UI-Frameworksubsystem oder der Systemkomponente an, das/die die CPU verbraucht hat.
 
@@ -110,16 +110,16 @@ Die folgenden Ereignisse werden unterstützt:
 > [!TIP]
 > Wählen Sie das Tool **CPU-Auslastung** zusammen mit dem Tool **Anwendungszeitachse** aus, wenn Sie mit der Profilerstellung beginnen, um App-Methoden anzuzeigen, die im UI-Thread ausgeführt werden. Durch das Verlagern von App-Code mit langer Ausführungsdauer in einen Hintergrundthread kann die UI-Reaktionsfähigkeit verbessert werden.
 
-#### <a name="BKMK_Customizing_Timeline_details_"></a> Anpassen von Zeitachsendetails
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> Anpassen von Zeitachsendetails
 
 Verwenden Sie die Symbolleiste **Zeitachsendetails** zum Sortieren, Filtern und Angeben der Anmerkungen zu Einträgen in der Ansicht **Zeitachsendetails** .
 
 |||
 |-|-|
 |**Sortieren nach**|Sortieren Sie nach Startzeit oder Ereignisdauer.|
-|![Ereignisse nach Frame gruppieren](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dient zum Hinzufügen oder Entfernen einer Kategorie **Frame** der obersten Ebene, die Ereignisse nach Frame gruppiert.|
-|![Filtern der Zeitachsendetails-Liste](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtert die Liste anhand ausgewählter Kategorien und der Dauer von Ereignissen.|
-|![Information zu Zeitachsendetails anpassen](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Ermöglicht die Angabe von Anmerkungen zu Ereignissen.|
+|![Gruppieren von Ereignissen nach Frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dient zum Hinzufügen oder Entfernen einer Kategorie **Frame** der obersten Ebene, die Ereignisse nach Frame gruppiert.|
+|![Filtern der Liste der Zeitachsendetails](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtert die Liste anhand ausgewählter Kategorien und der Dauer von Ereignissen.|
+|![Anpassen von Informationen zu Zeitachsendetails](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Ermöglicht die Angabe von Anmerkungen zu Ereignissen.|
 
 ## <a name="see-also"></a>Siehe auch
 

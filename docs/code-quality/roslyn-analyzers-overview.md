@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 78a47cb2a5aefd7d20e0b8087f5f3ad735716175
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144772"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79431279"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Übersicht über Quellcode-Analysetools
 
@@ -44,7 +44,7 @@ Wenn Verstöße bei der Quellcodeanalyse gefunden werden, werden diese ähnlich 
 
 ![Wellenlinien im Code-Editor in Visual Studio](media/diagnostics-severity-colors.png)
 
-Wie bei der Legacyanalyse (sofern aktiviert) wird Code von Codeanalysetools sowohl zur Buildzeit als auch live während der Eingabe analysiert. Wenn Sie die [vollständige Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#toggle-full-solution-analysis) aktivieren, stellen Codeanalysetools auch Entwurfszeitanalysen von Codedateien bereit, die nicht im Editor geöffnet sind.
+Wie bei der Legacyanalyse (sofern aktiviert) wird Code von Codeanalysetools sowohl zur Buildzeit als auch live während der Eingabe analysiert. Sie können den Bereich der Livecodeanalyse konfigurieren, um die Ausführung nur auf das aktuelle Dokument, alle geöffneten Dokumente oder die gesamte Projektmappe zu beschränken. Weitere Informationen finden Sie unter [How to: Configure the scope of live code analysis (Vorgehensweise: Konfigurieren des Bereichs der Livecodeanalyse)](./configure-live-code-analysis-scope-managed-code.md).
 
 > [!TIP]
 > Buildfehler und Warnungen von Codeanalysetools werden nur angezeigt, wenn die Analysetools als NuGet-Paket installiert wurden. Die integrierten Analysetools wie IDE0067 und IDE0068 werden nie während des Buildvorgangs ausgeführt.
@@ -52,7 +52,7 @@ Wie bei der Legacyanalyse (sofern aktiviert) wird Code von Codeanalysetools sowo
 Roslyn-Codeanalysetools melden nicht nur die gleichen Problemtypen wie die Legacyanalyse, sie ermöglichen Ihnen auch die einfache Behebung eines oder aller Vorkommnisse von Verstößen in Ihrer Datei oder Ihrem Projekt. Diese Aktionen werden als *Codefixe* bezeichnet. Codekorrekturen sind IDE-spezifisch. In Visual Studio werden sie als [schnelle Aktionen](../ide/quick-actions.md) implementiert. Nicht allen Diagnoseanalysetools ist ein Codefix zugeordnet.
 
 > [!NOTE]
-> Die Menüoption **Analysieren** > **Codeanalyse ausführen** wird nur für die Legacyanalyse angewandt.
+> Vor dem Release von Visual Studio 2019 16.5 wurde eine Legacyanalyse über die Menüoption **Analyse** > **Codeanalyse ausführen** ausgeführt. Ab Visual Studio 2019 16.5 werden auf Roslyn basierende Analysetools über die Menüoption **Codeanalyse ausführen** für das ausgewählte Projekt oder die Projektmappe ausgeführt.
 
 Sehen Sie sich die Spalte **Tool** an, um zwischen Verstößen durch Codeanalysetools und Verstößen durch Legacyanalyse in der Fehlerliste zu unterscheiden. Wenn der Tool-Wert mit einer der Assemblys des Analysetools im **Projektmappen-Explorer** übereinstimmt, z.B. **Microsoft.CodeQuality.Analyzers**, stammt der Verstoß von einem Codeanalysetool. Andernfalls stammt der Verstoß von einer Legacyanalyse.
 

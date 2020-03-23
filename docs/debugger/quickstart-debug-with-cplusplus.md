@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: b619b2b6c93da8be399b2fc35d81ffe226f408ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679413"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit C++ mithilfe des Visual Studio-Debuggers
@@ -31,7 +31,7 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
     Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **C++** ein, und wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Windows Desktop** und dann im mittleren Bereich **Windows-Konsolenanwendung** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++****Windows Desktop** und dann im mittleren Bereich **Windows-Konsolenanwendung** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
     ::: moniker-end
 
     Wenn die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
@@ -82,11 +82,11 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 1. Wenn Sie einen Breakpoint festlegen möchten, klicken Sie im Bundsteg auf den Bereich links neben dem Funktionsaufruf `doWork`. Alternativ können Sie aber auch die Codezeile auswählen und **F9** drücken.
 
-    ![Breakpoint festlegen](../debugger/media/dbg-qs-set-breakpoint.png "Set a breakpoint")
+    ![Festlegen eines Breakpoints](../debugger/media/dbg-qs-set-breakpoint.png "Haltepunkt festlegen")
 
 2. Drücken Sie dann **F5**, oder klicken Sie auf **Debuggen > Debuggen starten**.
 
-    ![Breakpoint treffen](../debugger/media/dbg-qs-hit-breakpoint.png "Hit a breakpoint")
+    ![Erreichen eines Breakpoints](../debugger/media/dbg-qs-hit-breakpoint.png "Treffen eines Haltepunkts")
 
     Der Debugger hält an dem Breakpoint an, den Sie festlegen. Der gelbe Pfeil deutet auf die Anweisung, bei der der Debugger und die App-Ausführung ausgesetzt werden. Die Zeile mit dem Funktionsaufruf `doWork` wurde noch nicht ausgeführt.
 
@@ -99,9 +99,9 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der ab Visual Studio 2017 verfügbar ist.
 
-Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c1.push_back(20)`, bis die Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png "Run to Click") angezeigt wird, und klicken Sie diese an.
+Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c1.push_back(20)`, bis die grüne Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird, und klicken Sie dann auf diese.
 
-![Ausführen bis Klick](../debugger/media/dbg-qs-run-to-click.png "Run to Click")
+![Ausführen bis Klick](../debugger/media/dbg-qs-run-to-click.png "Ausführen bis Klick")
 
 Dann wird die App weiter ausgeführt, ruft `doWork` auf, und wird bei der Codezeile ausgesetzt, bei der Sie die Schaltfläche angeklickt haben.
 
@@ -109,9 +109,9 @@ Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchz
 
 ## <a name="inspect-variables-in-a-datatip"></a>Untersuchen von Variablen in einem Datentipp
 
-1. Zeigen Sie in der aktuellen Codezeile (zu erkennen an dem Ausführungszeiger in gelb) mit der Maus auf das `c1`-Objekt, um Datentipps anzuzeigen.
+1. Zeigen Sie in der aktuellen Codezeile (zu erkennen an dem gelben Ausführungszeiger) mit der Maus auf das `c1`-Objekt, um Datentipps anzuzeigen.
 
-    ![Datentipp anzeigen](../debugger/media/dbg-qs-data-tip.png "View a datatip")
+    ![Anzeigen eines Datentipps](../debugger/media/dbg-qs-data-tip.png "Anzeigen eines Datentipps")
 
     Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
 
@@ -127,7 +127,7 @@ Wenn Sie in einer Debugsitzung eine Änderung feststellen, die Sie in Ihrem Code
 
 2. Drücken Sie wiederholt **F10** (oder klicken Sie auf **Debuggen > Prozedurschritt**), um den Debugger fortzusetzen und den bearbeiteten Code auszuführen.
 
-    ![Bearbeiten und fortfahren](../debugger/media/dbg-qs-edit-and-continue.gif "Edit and continue")
+    ![Bearbeiten und Fortfahren](../debugger/media/dbg-qs-edit-and-continue.gif "Bearbeiten und Fortfahren")
 
     Wenn Sie **F10** drücken, führt der Debugger jeweils nur eine Anweisung aus, überspringt Funktionen aber, anstatt diese schrittweise auszuführen (der Code, den Sie überspringen, wird weiter ausgeführt).
 

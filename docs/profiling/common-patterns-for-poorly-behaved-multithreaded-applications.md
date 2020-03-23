@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62788908"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
@@ -24,7 +24,7 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
 
 ## <a name="lock-contention-and-serialized-execution"></a>Sperrkonflikte und serialisierte Ausführung
 
-![Sperrkonflikte, die zu serialisierter Ausführung führen](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
+![Sperrkonflikt, der zu serialisierter Ausführung führt](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
 
 Eine parallelisierte Anwendung wird manchmal weiter seriell ausgeführt, obwohl mehrere Threads vorhanden sind und der Computer über eine ausreichende Anzahl von logischen Kernen verfügt. Das erste Symptom ist eine schlechte Multithreadleistung – unter Umständen sogar noch etwas schlechter als bei der seriellen Implementierung. In der Threadansicht werden keine parallel ausgeführten Threads angezeigt. Stattdessen sehen Sie, dass immer nur ein einzelner Thread ausgeführt wird. Wenn Sie an diesem Punkt in einem Thread auf ein Synchronisierungssegment klicken, werden eine Aufrufliste für den blockierten Thread (Aufrufliste für Blockierungen) sowie der Thread angezeigt, von dem die Blockierbedingung entfernt wurde (Aufrufliste für Blockierungsaufhebungen). Wenn die Aufrufliste für die Blockierungsaufhebung Teil des zu analysierenden Prozesses ist, wird auch ein threadkompatibler Konnektor angezeigt. Von hier können Sie zum Code der Aufruflisten für die Blockierung und für die Blockierungsaufhebung navigieren, um die Ursache der Serialisierung genauer zu untersuchen.
 
@@ -32,7 +32,7 @@ Wie in der folgenden Abbildung gezeigt, kann die Parallelitätsschnellansicht di
 
 Weitere Informationen finden Sie im Abschnitt „Start with the problem (Beim Problem beginnen)“ im MSDN Magazine-Artikel [Thread Performance – Resource Contention Concurrency Profiling in Visual Studio 2010 (Threadleistung – Parallelitätsprofilerstellung für Ressourcenkonflikte in Visual Studio 2010)](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
-![Sperrenkonflikte](../profiling/media/lockcontention_2.png "LockContention_2")
+![Sperrkonflikt](../profiling/media/lockcontention_2.png "LockContention_2")
 
 ## <a name="uneven-workload-distribution"></a>Ungleiche Arbeitslastverteilung
 
@@ -42,7 +42,7 @@ Bei einer unregelmäßigen Verteilung der Arbeitslast auf mehrere parallele Thre
 
 Wie in der folgenden Abbildung gezeigt wird, kann dieses Symptom von der Parallelitätsschnellansicht auch als graduelle Abstufung der CPU-Nutzung in der CPU-Auslastungsansicht dargestellt werden.
 
-![Ungleiche Arbeitsauslastung](../profiling/media/unevenworkload_2.png "UnevenWorkLoad_2")
+![Ungleiche Arbeitsauslastung](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
 
 ## <a name="oversubscription"></a>Überzeichnung
 
@@ -58,7 +58,7 @@ Beachten Sie beim Auswerten dieses Problems Folgendes:
 
 ## <a name="inefficient-io"></a>Ineffizienter E/A
 
-![Ineffizienter E&#47;A](../profiling/media/inefficient_io.png "Inefficient_IO")
+![Ineffizienter E/A](../profiling/media/inefficient_io.png "Inefficient_IO")
 
 Die übermäßige oder missbräuchliche E/A-Verwendung ist ein häufiger Grund für Ineffizienz in Anwendungen. Sehen Sie sich die obige Abbildung an. Laut sichtbarem Zeitachsenprofil entfallen 44 Prozent der sichtbaren Threadzeit auf E/A-Vorgänge. Die Zeitachse zeigt umfangreiche E/A an, die angeben, dass die profilierte Anwendung häufig durch E/A blockiert wird. Detaillierte Informationen zu den E/A-Arten und zu Blockierungen im Programm erhalten Sie durch Vergrößern der problematischen Bereiche, Untersuchen des sichtbaren Zeitachsenprofils und Klicken auf einen bestimmten E/A-Block, um aktuelle Aufruflisten anzuzeigen.
 

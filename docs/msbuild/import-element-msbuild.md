@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 044c531432de987fc7f3d34ce5344ad0374bcd00
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633745"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094496"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 
@@ -67,7 +67,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
  Gemäß Konvention werden freigegebene importierte Projektdateien als *TARGETS*-Dateien gespeichert, es handelt sich jedoch um MSBuild-Standardprojektdateien. MSBuild hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung aufweist. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung *TARGETS* zu verwenden.
 
- Relative Pfade in importierten Projekten werden relativ zum Verzeichnis des importierenden Projekts interpretiert. Wenn eine Projektdatei in verschiedene Projektdateien an unterschiedliche Speicherorte importiert wird, werden daher die relativen Pfade in der importierten Projektdatei unterschiedlich für jedes importierte Projekt interpretiert.
+ Relative Pfade in importierten Projekten werden relativ zum Verzeichnis des importierenden Projekts interpretiert (mit einigen wenigen Ausnahmen, die weiter unten beschrieben werden). Wenn eine Projektdatei in verschiedene Projektdateien an unterschiedliche Speicherorte importiert wird, werden daher die relativen Pfade in der importierten Projektdatei unterschiedlich für jedes importierte Projekt interpretiert. Dazu gibt es zwei Ausnahmen: In `Import`-Elementen wird der Pfad immer relativ zum Projekt interpretiert, das das `Import`-Element enthält. `UsingTask` interpretiert den relativen Pfad für das `AssemblyFile`-Attribut immer relativ zur Datei, die das `UsingTask`-Element enthält.
 
  Allen für MSBuild reservierten Eigenschaften, die sich auf die Projektdatei beziehen, z. B. `MSBuildProjectDirectory` und `MSBuildProjectFile`, und auf die in einem importierten Projekt verwiesen wird, werden basierend auf der importierenden Projektdatei Werte zugewiesen.
 

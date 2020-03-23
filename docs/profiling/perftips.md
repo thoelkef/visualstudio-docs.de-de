@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128305"
 ---
 # <a name="perftips"></a>PerfTips
@@ -30,7 +30,7 @@ Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnos
 
  Folgende Abbildung zeigt das Fenster **Diagnosetools** in Visual Studio 2015 Update 1:
 
- ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+ ![Diagnosetools-Update1](../profiling/media/diagnostictools-update1.png "Diagnosetools-Update1")
 
 - Die **Haltepunkt** -Zeitachse kennzeichnet die Haltepunkte, die während der Debugsitzung ermittelt wurden. Klicken Sie auf ein Ereignis, um die **Debugger** -Detailliste auszuwählen.
 

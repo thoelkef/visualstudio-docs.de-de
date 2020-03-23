@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633186"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093603"
 ---
 # <a name="msbuild-targets"></a>MSBuild-Ziele
 
@@ -42,7 +42,7 @@ Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der B
 </Target>
 ```
 
- Wenn AfterBuild ausgeführt wird, wird nur „Second occurrence“ (Zweites Vorkommen) angezeigt.
+ Wird `AfterBuild` ausgeführt, wird nur das „zweite Vorkommen“ angezeigt, da die zweite Definition von `AfterBuild` die erste ausblendet.
 
  MSBuild ist von der Importreihenfolge abhängig, sodass die letzte Definition eines Ziels die verwendete Definition ist.
 

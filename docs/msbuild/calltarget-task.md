@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831153a734fa88c045f7b8397db0a033e53862c7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634486"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094557"
 ---
 # <a name="calltarget-task"></a>CallTarget-Aufgabe
 
@@ -43,6 +43,8 @@ Ruft die angegebenen Ziele in der Projektdatei ab.
  Wenn ein in `Targets` angegebenes Ziel fehlschlägt und `RunEachTargetSeparately``true` ist, fährt die Aufgabe mit dem Erstellen der verbleibenden Ziele fort.
 
  Wenn Sie die Standardziele erstellen möchten, verwenden Sie die [MSBuild-Aufgabe](../msbuild/msbuild-task.md), und legen Sie den `Projects`-Parameter auf `$(MSBuildProjectFile)` fest.
+
+Bei Verwendung von `CallTarget` wertet MSBuild das aufgerufene Ziel in einem neuen Bereich aus und nicht in dem Bereich, aus dem es aufgerufen wurde. Das bedeutet, dass alle Änderungen an Elementen und Eigenschaften im aufgerufenen Ziel für das aufrufende Ziel nicht sichtbar sind.  Verwenden Sie zur Übergabe von Informationen an das aufrufende Ziel den Ausgabeparameter `TargetOutputs`.
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 

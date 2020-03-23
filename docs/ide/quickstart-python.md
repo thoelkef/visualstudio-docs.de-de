@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180345"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
@@ -46,7 +46,7 @@ In den folgenden Schritten wird ein leeres Projekt erstellt, das als Container f
 
     ![Dialogfeld „Neues Projekt“ mit der Auswahl „Python-Webprojekt“](media/quickstart-python-00-web-project.png)
 
-    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, wählen Sie **More** > **Modify** (Mehr > Ändern), die Workload **Python-Entwicklung** und dann **Modify** (Ändern) aus.
+    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, klicken Sie auf **Mehr** > **Ändern**, wählen Sie die Workload **Python-Entwicklung** aus, und klicken Sie dann auf **Ändern**.
 
     ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](../python/media/installation-python-workload.png)
 
@@ -62,7 +62,7 @@ In den folgenden Schritten wird ein leeres Projekt erstellt, das als Container f
 
     ![Anzeige „Neues Projekt erstellen“ mit der Auswahl „Python-Webprojekt“](media/quickstart-python-00-web-project-2019a.png)
 
-    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, wählen Sie **More** > **Modify** (Mehr > Ändern), die Workload **Python-Entwicklung** und dann **Modify** (Ändern) aus.
+    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, klicken Sie auf **Mehr** > **Ändern**, wählen Sie die Workload **Python-Entwicklung** aus, und klicken Sie dann auf **Ändern**.
 
     ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](../python/media/installation-python-workload.png)
 
@@ -105,7 +105,7 @@ Hier verwenden Sie folgende Schritte, um die Flask-Bibliothek in der „globalen
 
     ![Projektmappen-Explorer mit der Standardumgebung](media/quickstart-python-02-default-environment-2019.png)
 
-2. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Pakete verwalten...** . Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete (PyPI)** .
+2. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Pakete verwalten...**. Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete (PyPI)**.
 
 3. Geben Sie in das Suchfeld „flask“ ein. Wenn unterhalb des Suchfelds **Flask** angezeigt wird, können Sie diesen Schritt überspringen. Wählen Sie andernfalls **Run command: pip install flask** (Ausführungsbefehl: pip install flask) aus. Akzeptieren Sie die Aufforderungen zu Administratorberechtigungen, und beobachten Sie den Fortschritt im Fenster **Ausgabe** in Visual Studio. (Eine Aufforderung zur Erhöhung der Rechte wird angezeigt, wenn der Ordner „Pakete“ für die globale Umgebung sich in einem geschützten Bereich wie *C:\Programme* befindet.)
 

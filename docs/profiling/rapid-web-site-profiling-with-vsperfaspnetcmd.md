@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771691"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Schnelle Websiteprofilerstellung mit VSPerfASPNETCmd
@@ -40,7 +40,7 @@ Geben Sie zum Profilen einer [!INCLUDE[vstecasp](../code-quality/includes/vsteca
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Zum Sammeln von Anwendungsstatistiken mithilfe der Samplingmethode
  Das Sampling ist die standardmäßige Profilerstellungsmethode des Tools **VSPerfASPNETCmd** und muss nicht in der Befehlszeile angegeben werden. Mit der folgenden Befehlszeile werden Anwendungsstatistiken über die angegebene Webanwendung gesammelt:
 
- **vsperfaspnetcmd**  *websiteUrl*
+ **vsperfaspnetcmd** *websiteUrl*
 
  Ein Beispiel für eine auf einem lokalen Server gehostete *websiteurl* ist *http://localhost/MySite/default.aspx* . Ein Beispiel für eine externe Website ist *http://www.contoso.com* . Weitere Informationen finden Sie in den Beispiel-URLs in [Profilerstellung für eine Website ohne das Öffnen eines Projekts in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
@@ -48,7 +48,7 @@ Geben Sie zum Profilen einer [!INCLUDE[vstecasp](../code-quality/includes/vsteca
 
 Verwenden Sie die folgende Befehlszeile zum Sammeln ausführlicher Zeitsteuerungsdaten über eine dynamisch kompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung:
 
-**vsperfaspnetcmd /trace**  *websiteUrl*
+**vsperfaspnetcmd /trace** *websiteUrl*
 
 Wenn Sie statisch kompilierte *DLL*-Dateien in Ihrer Webanwendung profilen möchten, müssen Sie die Dateien mithilfe des Befehlszeilentools [VSInstr](../profiling/vsinstr.md) instrumentieren. Der Vsperfaspnetcmd/Trace-Befehl wird Daten aus den instrumentierten Dateien enthalten.
 
@@ -101,7 +101,7 @@ So beenden Sie die Profilerstellung:
 
 Sie können eine der folgenden Optionen zu den weiter oben in diesem Abschnitt aufgelisteten Befehlen hinzufügen, mit Ausnahme des Befehls **vsperfaspnetcmd/shutdown**.
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**/Output:** `VspFile`|Standardmäßig wird die Profilerstellungsdatendatei (*VSP*) im aktuellen Verzeichnis mit dem Dateinamen **PerformanceReport.vsp** erstellt. Verwenden Sie die Option /Output, um einen anderen Speicherort, Dateinamen oder beides anzugeben.|
 |**/PackSymbols:Off**|Standardmäßig bettet VsPerfASPNETCmd Symbole (Funktionsnamen, Parameternamen usw.) in die *VSP*-Datei ein. Das Einbetten der Symbole kann die Profilerstellungsdatendatei sehr groß werden lassen. Wenn Sie auf die *PDB*-Dateien zugreifen können, die die Symbole enthalten, wenn Sie die Daten analysieren, verwenden Sie die Option „/packsymbols:off“, um die Einbettung der Symbole zu deaktivieren.|

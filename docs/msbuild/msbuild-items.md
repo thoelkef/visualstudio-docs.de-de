@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7ea464695faeaf6651f645a39ce2b41d255108
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633303"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093975"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 
@@ -44,6 +44,8 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
     <Compile Include = "file1.cs;file2.cs"/>
 </ItemGroup>
 ```
+
+Das `Include`-Attribut ist ein Pfad, der relativ zum Ordner der Projektdatei „$(MSBuildProjectPath)“ interpretiert wird. Dies gilt auch dann, wenn sich das Element in einer importierten Datei, wie etwa einer *TARGETS*-Datei, befindet.
 
 ## <a name="create-items-during-execution"></a>Erstellen von Elementen während der Ausführung
 
@@ -122,7 +124,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 
  Ein Element kann über 0 (null) oder mehr Metadatenwerte verfügen. Metadaten lassen sich immer ändern. Wenn Sie Metadaten auf einen leeren Wert festlegen, entfernen Sie sie unwiderruflich aus dem Build.
 
-### <a name="BKMK_ReferencingItemMetadata"></a> Verweisen auf Elementmetadaten in einer Projektdatei
+### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> Verweisen auf Elementmetadaten in einer Projektdatei
 
  Mithilfe der Syntax %(\<ItemMetadataName>) kann in der gesamten Projektdatei auf Elementmetadaten verwiesen werden. Bei Mehrdeutigkeiten können Sie mit dem Namen des Elementtyps einen Verweis qualifizieren. Sie können z.B. %(\<ItemType.ItemMetaDataName>). angeben. Im folgenden Beispiel erfolgt die Batchverarbeitung der Meldungsaufgabe mithilfe der Anzeige von Metadaten. Weitere Informationen zur Verwendung von Elementmetadaten für die Batchverarbeitung finden Sie unter [Item Metadata in Task Batching (Elementmetadaten bei der Batchverarbeitung von Aufgaben)](../msbuild/item-metadata-in-task-batching.md).
 
@@ -142,11 +144,11 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 </Project>
 ```
 
-### <a name="BKMK_WellKnownItemMetadata"></a> Bekannte Elementmetadaten
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Bekannte Elementmetadaten
 
  Wenn einem Elementtypen ein Element hinzugefügt wird, werden diesem Element bekannte Metadaten zugewiesen. So verfügen z. B. alle Elemente über die bekannten Metadaten %(\<Dateiname>), deren Wert dem Dateinamen des Elements entspricht (ohne Erweiterung). Weitere Informationen finden Sie unter [Well-known Item Metadata (Bekannte Elementmetadaten)](../msbuild/msbuild-well-known-item-metadata.md).
 
-### <a name="BKMK_Transforming"></a> Umwandeln von Elementtypen mithilfe von Metadaten
+### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Umwandeln von Elementtypen mithilfe von Metadaten
 
  Elementlisten können mithilfe von Metadaten in neue Elementlisten umgewandelt werden. Sie können z.B. mit dem Ausdruck `@(CppFiles -> '%(Filename).obj')` einen `CppFiles`-Elementtyp, der über Elemente in Form von *CPP*-Dateien verfügt, in eine entsprechende Liste von *OBJ*-Dateien umwandeln.
 
@@ -189,7 +191,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 
  Ab .NET Framework 3.5 enthalten `Target`-Elemente möglicherweise [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elemente, die Item-Elemente enthalten. Die Attribute in diesem Abschnitt sind gültig, wenn sie für ein Element in einem `ItemGroup` angegeben werden, das ein `Target` ist.
 
-### <a name="BKMK_RemoveAttribute"></a> Entfernen des Attributs
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> Entfernen des Attributs
 
  Das `Remove`-Attribut entfernt bestimmte Elemente (Dateien) aus dem Elementtyp. Dieses Attribut wurde in .NET Framework 3.5 eingeführt (nur von Zielen innerhalb). Sowohl die Ziele innerhalb als auch außerhalb werden ab MSBuild 15.0 unterstützt.
 
@@ -203,7 +205,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 </Target>
 ```
 
-### <a name="BKMK_KeepMetadata"></a>KeepMetadata-Attribut
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a>KeepMetadata-Attribut
 
  Wenn ein Element in einem Ziel erstellt wird, enthält das Item-Element möglicherweise das `KeepMetadata`-Attribut. Wenn dieses Attribut angegeben wird, werden nur die Metadaten aus dem Quellelement in das Zielelement übertragen, die in der durch Semikolons getrennten Liste von Namen angegeben sind. Wird für dieses Attribut ein leerer Wert angegeben, ist dies, als wäre nichts angegeben worden. Das `KeepMetadata`-Attribut wurde in .NET Framework 4.5 eingeführt.
 
@@ -246,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_RemoveMetadata"></a> RemoveMetadata-Attribut
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> RemoveMetadata-Attribut
 
  Wenn ein Element in einem Ziel erstellt wird, enthält das Item-Element möglicherweise das `RemoveMetadata`-Attribut. Wenn dieses Attribut angegeben wird, werden alle Metadaten aus dem Quellelement in das Zielelement übertragen. Davon ausgenommen sind Metadaten, deren Namen in der durch Semikolons getrennten Liste von Namen enthalten sind. Wird für dieses Attribut ein leerer Wert angegeben, ist dies, als wäre nichts angegeben worden. Das `RemoveMetadata`-Attribut wurde in .NET Framework 4.5 eingeführt.
 
@@ -296,7 +298,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_KeepDuplicates"></a> KeepDuplicates-Attribut
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> KeepDuplicates-Attribut
 
  Wenn ein Element in einem Ziel erstellt wird, enthält das Item-Element möglicherweise das `KeepDuplicates`-Attribut. `KeepDuplicates` ist ein `Boolean`-Attribut, das angibt, ob ein Element der Zielgruppe hinzugefügt werden soll, wenn es sich um ein exaktes Duplikat eines bereits vorhandenen Elements handelt.
 

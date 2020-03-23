@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d38aed17d7fdaa694c8c5753705b28b0390dedfc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652145"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
@@ -79,4 +79,4 @@ Mithilfe von in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gehosteten DSL-Tool
  Wenn Sie die Projektmappe für die DSL-Tools in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellen und ausführen, zeigt Ihnen eine zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], wie Ihre domänenspezifische Sprache für den Benutzer aussieht. Wenn Sie überprüft haben, dass alles einwandfrei funktioniert, können Sie die `.vsix`-Datei verteilen, die um Buildordner des DslPackage-Projekts enthalten ist. Diese Datei kann auf anderen Computern als [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung für die Installation der DSL-Tools verwendet werden.  Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Die experimentelle Instanz](../extensibility/the-experimental-instance.md) [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Die experimentelle Instanz](../extensibility/the-experimental-instance.md) [Glossar für DSL-Tools](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

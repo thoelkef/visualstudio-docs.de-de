@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76124503"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431487"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -26,9 +26,9 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
 
 ## <a name="analysis"></a>Analyse
 
-- Vollständige Projektmappenanalyse aktivieren
+- Bereich für Livecodeanalyse oder Hintergrundanalyse
 
-   Aktiviert die Codeanalyse nicht nur für geöffnete Codedateien, sondern für alle Dateien in der Projektmappe. Weitere Informationen finden Sie unter [Full solution analysis (Analyse der gesamten Projektmappe)](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+   Konfigurieren des Bereichs für die Hintergrundanalyse für verwalteten Code. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren des Bereichs für die Liveanalyse für verwalteten Code](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Using-Direktiven
 
@@ -128,7 +128,7 @@ Aktivieren Sie diese Kontrollkästchen, um gestrichelte vertikale Linien zwische
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Einfügen von XML-Kommentaren für die Generierung der Dokumentation](../../ide/reference/generate-xml-documentation-comments.md)
+- [How to: Einfügen von XML-Kommentaren für die Generierung der Dokumentation](../../ide/reference/generate-xml-documentation-comments.md)
 - [XML-Dokumentationskommentare (C#-Programmierhandbuch)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Dokumentieren von Code mit XML-Kommentaren (C#-Leitfaden)](/dotnet/csharp/codedoc)
 - [Festlegen von sprachspezifischen Editoroptionen](../../ide/reference/setting-language-specific-editor-options.md)

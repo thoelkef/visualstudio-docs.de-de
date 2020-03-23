@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bffb1f7fe6449f078c21c14b0a070cbd23db539
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652125"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
@@ -51,4 +51,4 @@ Wenn Sie zum ersten Mal eine Projektmappe für DSL-Tools (Domain-Specific Langua
 |Formzuordnungen|Eine Formzuordnung wird im Domänenmodelldiagramm in Form einer Linie dargestellt, die eine Form mit der angezeigten Domänenklasse oder einen Connector mit der angezeigten Domänenbeziehung verbindet.|
 
 ## <a name="see-also"></a>Siehe auch
- [Übersicht über domänenspezifische Sprachtools](../modeling/overview-of-domain-specific-language-tools.md) [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ [Übersicht über domänenspezifische Sprachtools](../modeling/overview-of-domain-specific-language-tools.md) [Glossar für DSL-Tools](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)

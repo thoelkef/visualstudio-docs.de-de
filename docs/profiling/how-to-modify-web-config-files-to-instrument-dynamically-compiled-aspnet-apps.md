@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775401"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
@@ -73,7 +73,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
    |**version**|**10.0.0.0**|
    |**href**|`PathToASPNetHelperDll`|
 
-    `PathToASPNetHelperDll` ist die Datei-URL von Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] am Standardspeicherort installiert ist, sollte der Wert **href** `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL` entsprechen
+    `PathToASPNetHelperDll` ist die Datei-URL von Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] am Standardspeicherort installiert ist, sollte der Wert **href**`C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL` entsprechen
 
 ```xml
     <configuration>
@@ -221,5 +221,5 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von ausführlichen Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
-- [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+- [How to: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von ausführlichen Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [How to: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

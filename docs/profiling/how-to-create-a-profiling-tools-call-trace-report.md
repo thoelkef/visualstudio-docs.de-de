@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778985"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Vorgehensweise: Erstellen eines Aufrufablaufverfolgungsberichts für Profilerstellungstools
@@ -31,7 +31,7 @@ Im *Aufrufablaufverfolgungsbericht* für die [!INCLUDE[vsprvs](../code-quality/i
 
 2. Geben Sie an der Eingabeaufforderung folgenden Befehl ein:
 
-     *ToolsPath* **VSPerfReport** *VSPFile* **/CallTrace [/Xml]**
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
     |||
     |-|-|
@@ -40,5 +40,5 @@ Im *Aufrufablaufverfolgungsbericht* für die [!INCLUDE[vsprvs](../code-quality/i
     |Xml|Generiert einen Bericht im XML-Format.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+- [How to: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67825529"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Untersuchen von vorherigen App-Zuständen mithilfe des IntelliTrace-Features „Schritt zurück“ in Visual Studio (Visual Studio Enterprise)
@@ -38,7 +38,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     Ab Visual Studio 2017 Enterprise Version 15.9 Preview 2 lautet diese Option **IntelliTrace snapshots** (IntelliTrace-Momentaufnahmen) (verwaltet und nativ).
 
-    ![Aktivieren des Modus für IntelliTrace-Ereignissen und des Momentaufnahmen](../debugger/media/intellitrace-enable-snapshots.png "Enable IntelliTrace Events and Snapshots mode")
+    ![Aktivieren von IntelliTrace-Ereignissen und des Momentaufnahmenmodus](../debugger/media/intellitrace-enable-snapshots.png "Aktivieren von IntelliTrace-Ereignissen und des Momentaufnahmenmodus")
 
 1. Wenn Sie Optionen zum Anzeigen von Momentaufnahmen bei Ausnahmen konfigurieren möchten, wählen Sie **IntelliTrace** > **Erweitert** über das Dialogfeld **Optionen** aus.
 
@@ -67,7 +67,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden. Wenn Sie mit „Schritt zurück“ oder „Schritt vorwärts“ zu einem Ereignis navigieren, wird das [verlaufsbezogene Debuggen](../debugger/historical-debugging.md) für das ausgewählte Ereignis automatisch aktiviert.
 
-    ![Schaltflächen „Schritt zurück“ und „Schritt vorwärts“](../debugger/media/intellitrace-step-back-icons-description.png "Step Backward and Step Forward buttons")
+    ![Schaltflächen „Schritt zurück“ und „Schritt vorwärts“](../debugger/media/intellitrace-step-back-icons-description.png "Schaltflächen „Schritt zurück“ und „Schritt vorwärts“")
 
     Wenn Sie einen Schritt zurück oder vorwärts gehen, wird Visual Studio in den Modus „Verlaufsbezogenes Debugging“ versetzt. In diesem Modus wechselt der Kontext des Debuggers in den Zeitraum, als das ausgewählte Ereignis aufgezeichnet wurde. Visual Studio verschiebt auch den Zeiger auf die entsprechende Codezeile im Quellcodefenster.
 
@@ -75,17 +75,17 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     Wenn Sie beispielsweise einen Breakpoint erreicht haben und einen Schritt durchgeführt haben (**F10**), wird Visual Studio über die Schaltfläche **Schritt vorwärts** entsprechend dem Breakpoint in der Codezeile in den verlaufsbezogenen Modus versetzt.
 
-    ![Aktivieren des verlaufsbezogenen Modus für ein Ereignis mit einer Momentaufnahme](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Activating historical mode on an event with a snapshot")
+    ![Aktivieren des verlaufsbezogenen Modus für ein Ereignis mit einer Momentaufnahme](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Aktivieren des verlaufsbezogenen Modus für ein Ereignis mit einer Momentaufnahme")
 
 2. Klicken Sie auf **Weiter (F5)** oder auf den Link **Zurück zum Livedebugging** in der Infoleiste, um zur Liveausführung zurückzukehren.
 
 3. Sie können ebenso eine Momentaufnahme über die Registerkarte **Ereignisse** anzeigen. Wählen Sie dazu ein Ereignis mit einer Momentaufnahme aus, und klicken Sie auf **Verlaufsbezogenes Debugging aktivieren**.
 
-    ![Verlaufsbezogenes Debugging auf einem Ereignis aktivieren](../debugger/media/intellitrace-activate-historical-debugging.png "Activate Historical Debugging on an event")
+    ![Aktivieren des verlaufsbezogenen Debuggens für ein Ereignis](../debugger/media/intellitrace-activate-historical-debugging.png "Aktivieren des verlaufsbezogenen Debuggens für ein Ereignis")
 
     Anders als beim Befehl **Nächste Anweisung festlegen** wird Ihr Code durch das Anzeigen einer Momentaufnahme nicht erneut ausgeführt. Stattdessen erhalten Sie eine statische Ansicht des Anwendungszustands zu einem Zeitpunkt, der in der Vergangenheit liegt.
 
-    ![Übersicht von „Schritt zurück“ in IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Overview of IntelliTrace Step-back")
+    ![Übersicht über die Funktion „Schritt zurück“ von IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Übersicht über die Funktion „Schritt zurück“ von IntelliTrace")
 
     Weitere Informationen zum Untersuchen von Variablen in Visual Studio finden Sie unter [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 

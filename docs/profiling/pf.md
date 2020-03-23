@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778413"
 ---
 # <a name="pf"></a>PF
-Die *VSPerfCmd.exe*-Option **PF** legt das Profilerstellungsereignis fest, das auf Seitenfehler gesampelt wird, und ändert optional die Anzahl der Zyklen in einem Samplingintervall vom Standard 10 auf einen anderen Wert.
+Die *VSPerfCmd.exe*-Option **PF** legt das Profilerstellungsereignis fest, für das Stichproben für Seitenfehler durchgeführt werden, und ändert optional die Anzahl der Seitenfehler in einem Samplingintervall vom Standardwert 10 in einen anderen Wert geändert.
 
 > [!NOTE]
 > **PF** kann nicht in 64-Bit-Systemen verwendet werden.
@@ -51,7 +51,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 
  **Sys**[ **:** `Events`]: legt das Samplingereignis auf Aufrufe von der Anwendung mit Profil auf den Betriebssystemkernel (syscalls) und das Samplingintervall optional auf `Events` fest. Das standardmäßige Sys-Intervall beträgt 10.
 
- **Counter:** `Name`[`,Reload`[`,FriendlyName`]]: legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator und das Samplingintervall auf `Reload` fest.
+ **Counter:** `Name`[`,Reload`[`,FriendlyName`]] legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator und das Samplingintervall auf `Reload` fest.
 
  **GC**[ **:** {**Allocation**&#124;**Lifetime**}]: erfasst .NET-Arbeitsspeicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.
 

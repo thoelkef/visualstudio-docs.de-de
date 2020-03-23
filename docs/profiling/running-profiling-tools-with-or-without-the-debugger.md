@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999372"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
@@ -33,11 +33,11 @@ Berücksichtigen Sie bei der Entscheidung, welche Tools und Ergebnisse Sie nutze
 - Der Debugger selbst ändert Leistungszeiten, während er erforderliche Debuggervorgänge durchführt, wie z.B. das Abfangen von Ausnahmen- und Modullastereignissen.
 - Leistungsangaben zu Releasebuilds in den **Leistungsprofilertools** sind am präzisesten und genauesten. In den Debugger integrierte Toolergebnisse sind besonders nützlich, wenn es um den Vergleich mit anderen debuggingbezogenen Messungen geht.
 
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens
 
 Wenn Sie mit dem Debuggen in Visual Studio beginnen, indem Sie **Debuggen** > **Debuggen starten** wählen oder **F5** drücken, wird das Fenster **Diagnosetools** standardmäßig angezeigt. Klicken Sie auf **Debuggen** > **Fenster** > **Diagnosetools anzeigen**, um dieses Fenster manuell zu öffnen. Das Fenster **Diagnosetools** enthält Informationen über Ereignisse, den Prozessarbeitsspeicher und die CPU-Auslastung.
 
-![Diagnosetools](../profiling/media/diagnostictools-update1.png "Diagnostic Tools")
+![Diagnosetools](../profiling/media/diagnostictools-update1.png "Diagnosetools")
 
 - Klicken Sie auf das Symbol für **Einstellungen** in der Symbolleiste, um die **Arbeitsspeicherauslastung**, die **UI-Analyse**, und die **CPU-Auslastung** zu anzuzeigen.
 
@@ -57,11 +57,11 @@ Während einer Debugsitzung werden die auftretenden Diagnoseereignisse auf der R
 
 Verwenden Sie in der Dropdownliste **Filter**, um Ereignisse anzuzeigen oder auszublenden, indem Sie bestimmte Ereigniskategorien auswählen oder abwählen.
 
-![Diagnoseereignisfilter](../profiling/media/diagnosticeventfilter.png "Diagnostic Event Filter")
+![Filtern von Diagnoseereignissen](../profiling/media/diagnosticeventfilter.png "Filtern von Diagnoseereignissen")
 
 Verwenden Sie das Suchfeld, um eine bestimmte Zeichenfolge in der Ereignisliste zu suchen. Dies sind die Suchergebnisse für die Zeichenfolge „Name“, die mit vier Ereignissen übereinstimmt:
 
-![Diagnoseereignissuche](../profiling/media/diagnosticseventsearch.png "Diagnostic Event Search")
+![Suchen nach Diagnoseereignissen](../profiling/media/diagnosticseventsearch.png "Suchen nach Diagnoseereignissen")
 
 Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
@@ -73,13 +73,13 @@ Sie können zum Erfassen von Leistungsdaten ohne Debuggen **Leistungsprofilertoo
 
 1. Wählen Sie auf der Diagnosestartseite mindestens ein Tools aus, das ausgeführt werden soll. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wählen Sie **Alle Tools anzeigen**, um auch Tools anzuzeigen, die für diese Diagnosesitzung deaktiviert sind. Für eine C#-UWP-App kann die Auswahl zum Beispiel folgendermaßen aussehen:
 
-   ![Diagnosetools auswählen](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
+   ![Auswählen von Diagnosetools](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
 
 1. Klicken Sie zum Starten der Diagnosesitzung auf **Start**.
 
    Während Sie die Sitzung ausführen, zeigen einige Tools Diagramme mit Echtzeitdaten auf der Seite der Diagnosetools an.
 
-    ![Daten auf der Seite „Leistung und Diagnose“ erfassen](../profiling/media/pdhub_collectdata.png "Hub-Datenerfassung")
+    ![Sammeln von Daten im Leistungs- und Diagnosehub](../profiling/media/pdhub_collectdata.png "Sammeln von Daten im Hub")
 
 1. Klicken Sie zum Beenden der Diagnosesitzung auf **Sammlung beenden**.
 
@@ -90,7 +90,7 @@ Sie können die Berichte auch speichern und über die Liste der **zuletzt geöff
 ![Öffnen einer gespeicherten Diagnosesitzungsdatei](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
 ### <a name="the-profiling-report"></a>Der Profilerstellungsbericht
- ![Diagnosetools-Bericht](../profiling/media/diag_report.png "DIAG_Report")
+ ![Bericht zu Diagnosetools](../profiling/media/diag_report.png "DIAG_Report")
 
 |||
 |-|-|
@@ -98,14 +98,14 @@ Sie können die Berichte auch speichern und über die Liste der **zuletzt geöff
 |![Schritt 2](../profiling/media/procguid_2.png "ProcGuid_2")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|
 |![Schritt 3](../profiling/media/procguid_3.png "ProcGuid_3")|Jedes Diagnosetool zeigt mindestens ein Hauptdiagramm an. Wenn Ihre Diagnosesitzung mehr als ein Tool vorweist, werden alle ihre Hauptdiagramme angezeigt.|
 |![Schritt 4](../profiling/media/procguid_4.png "ProcGuid_4")|Sie können die einzelnen Diagramme jedes Tools auf- und zuklappen.|
-|![Schritt 5](../profiling/media/procguid_6.png "ProcGuid_6")|Wenn die Daten aus mehr als einem Tool stammen, werden die Tooldetails in Registerkarten gesammelt.|
-|![Schritt 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Die untere Hälfte des Berichts zeigt mindestens eine Detailansicht für jedes Tool an. Sie können die Ansicht filtern, indem Sie die Bereiche auf der Zeitachse auswählen.|
+|![Schritt 5](../profiling/media/procguid_6.png "ProcGuid_6")|Wenn die Daten aus mehr als einem Tool stammen, werden die Tooldetails in Registerkarten gesammelt.|
+|![Schritt 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Die untere Hälfte des Berichts zeigt mindestens eine Detailansicht für jedes Tool an. Sie können die Ansicht filtern, indem Sie die Bereiche auf der Zeitachse auswählen.|
 
 ## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Ausführen von Diagnosesitzungen in installierten oder ausgeführten Apps
 
  Sie können nicht nur Ihre App im Visual Studio-Projekt starten, sondern auch Diagnosesitzungen auf alternativen Zielen ausführen. Beispielsweise empfiehlt es sich, die Diagnose von Leistungsproblemen in einer App durchzuführen, die über den Windows App Store installiert wurde.
 
- ![Analyseziel für Diagnosetools auswählen](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+ ![Auswählen des Analyseziels für Diagnosetools](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
 
  Sie können Apps starten, die bereits installiert sind, oder Sie können die Diagnosetools an Apps und Prozesse anfügen, die bereits ausgeführt werden. Wenn Sie **Ausgeführte App** oder **Installierte App** auswählen, können Sie die App aus einer Liste aller gefundenen Apps im angegebenen Bereitstellungsziel auswählen. Dieses Ziel kann ein lokaler oder ein Remotecomputer sein.
 

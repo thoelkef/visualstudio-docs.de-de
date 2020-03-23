@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: f44213bf7356d499f852b53335698c701bf03eb7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779154"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Parallelitätsdaten über die Befehlszeile
@@ -39,7 +39,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:concurrency** verwenden.
 
-    |Option|BESCHREIBUNG|
+    |Option|Beschreibung|
     |------------|-----------------|
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen.|
     |[/automark](../profiling/automark.md) **:** `Interval`|Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.|
@@ -55,7 +55,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
     - [/lineoff](../profiling/lineoff.md) deaktiviert die Erfassung der Zeilennummerndaten.
 
-    - [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Optional.
+    - [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Runtimeversionen geladen wurden. Dies ist optional.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
  Während die Zielanwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit Option *VSPerfCmd.exe* starten und beenden. Durch die Steuerung der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
@@ -64,7 +64,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
 - Mit den folgenden *VSPerfCmd.exe*-Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
-    |Option|BESCHREIBUNG|
+    |Option|Beschreibung|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|
@@ -79,7 +79,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
     - Geben Sie **VSPerfCmd /detach** ein.
 
-         Oder
+         - oder -
 
     - Schließen Sie die Zielanwendung.
 

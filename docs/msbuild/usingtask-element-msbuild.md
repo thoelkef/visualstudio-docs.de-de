@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263122"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431448"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
 
@@ -78,6 +78,8 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
 > Eigenschaften und Elemente auf Projektebene haben keine Bedeutung, wenn das `UsingTask`-Element aus einer der *TASKS*-Dateien stammt, die global in der MSBuild-Engine registriert sind. Werte auf Projektebene sind in MSBuild nicht global.
 
  In MSBuild 4.0 kann das Laden mithilfe von Aufgaben aus *OVERRIDETASK*-Dateien erfolgen.
+
+Die Assembly mit der benutzerdefinierten Aufgabe wird bei der ersten Verwendung von `Task` geladen.
 
 ## <a name="example"></a>Beispiel
 

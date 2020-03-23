@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71127932"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Veröffentlichen einer Web-App auf einer Website mithilfe von Visual Studio
@@ -30,23 +30,23 @@ Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Co
 
 1. Klicken Sie im Projektmappen-Explorer erst mit der rechten Maustaste auf das Projekt und anschließend mit der linken auf **Veröffentlichen**. Alternativ können Sie auch das Menüelement **Erstellen** > **Veröffentlichen** verwenden.
 
-    ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "Auswahl der Option „Veröffentlichen“")
+    ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "„Veröffentlichen“ auswählen")
 
 1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Klicken Sie auf **Neues Profil erstellen**.
 
 1. Vergewissern Sie sich im Dialogfeld **Pick a publish target** (Veröffentlichungsziel auswählen), dass **IIS, FTP usw.** ausgewählt ist.
 
-    ![IIS, FTP usw. auswählen](../deployment/media/quickstart-publish-iis-ftp.png "Choose IIS, FTP, etc.")
+    ![Auswählen von IIS, FTP, usw.](../deployment/media/quickstart-publish-iis-ftp.png "Auswählen von IIS, FTP, usw.")
 
 1. Wählen Sie **Veröffentlichen**. Das Dialogfeld „Profile Publish Settings“ (Profilveröffentlichungseinstellungen) wird geöffnet.
 
-    ![Ordner wählen](../deployment/media/quickstart-publish-settings-web.png "Choose Folder")
+    ![Auswählen eines Ordners](../deployment/media/quickstart-publish-settings-web.png "Auswählen eines Ordners")
 
 1. Geben Sie im Feld **Veröffentlichungsmethode** eine Methode wie z.B. **Web Deploy** oder **FTP** an. Die Einstellungen, die als Nächstes angezeigt werden, entsprechen der Veröffentlichungsmethode. Web Deploy vereinfacht die Bereitstellung von Web-Apps und Websites auf IIS-Servern und muss auf dem Server als Anwendung installiert werden. Verwenden Sie den [Webplattform-Installer](https://www.microsoft.com/web/downloads/platform.aspx) zur Installation.
 
 1. Konfigurieren Sie die erforderlichen Einstellungen für die Veröffentlichungsmethode, und klicken Sie auf **Validate Connection** (Verbindung überprüfen). Wenn der Server oder das Ziel verfügbar sind und Ihre Einstellungen korrekt sind, wird eine Meldung angezeigt, dass die Verbindung überprüft wurde. Dann können Sie veröffentlichen.
 
-    ![Verbindung überprüfen](../deployment/media/quickstart-publish-web-deploy.png "Validate your connection")
+    ![Überprüfen der Verbindung](../deployment/media/quickstart-publish-web-deploy.png "Überprüfen der Verbindung")
 
 1. Klicken Sie auf **Einstellungen**, um andere Bereitstellungseinstellungen vorzunehmen, z.B. ob eine Debug- oder Releasekonfiguration bereitgestellt werden soll, und klicken Sie anschließend auf **Speichern**. Wenn Sie remote debuggen, ist die Debugkonfiguration erforderlich.
 

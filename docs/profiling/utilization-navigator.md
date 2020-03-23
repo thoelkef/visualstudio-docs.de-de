@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62823483"
 ---
 # <a name="utilization-navigator"></a>Auslastungsnavigator
 Mit dem Auslastungsnavigator können Sie in der Nebenläufigkeitsschnellansicht ein Zeitintervall in einer Ablaufverfolgung auswählen. In der Nebenläufigkeitsschnellansicht wird die Auslastung der CPU-Kerne durch den Zielprozess im Verlauf der Zeit angezeigt. Damit lassen sich CPU-Auslastungsmuster leichter erkennen. Zudem können die Auslastungsdaten mit den Daten in anderen Ansichten verglichen werden. Der Auslastungsnavigator wird in der Nebenläufigkeitsschnellansicht in allen Ansichten im oberen Bereich angezeigt. Der Auslastungsnavigator ist in der folgenden Abbildung dargestellt.
 
- ![Auslastungsnavigator zeigt den ausgewählten Zeitrahmen an](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator") Der Auslastungsnavigator mit einem ausgewählten Zeitrahmen
+ ![Auslastungsnavigator zeigt ausgewählten Zeitrahmen an](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator") Der Auslastungsnavigator mit einem ausgewählten Zeitrahmen
 
  In der Abbildung ist zu sehen, dass das ausgewählte Intervall durch ein rotes Rechteck definiert wird. Dies wird als *Thumb* bezeichnet.
 

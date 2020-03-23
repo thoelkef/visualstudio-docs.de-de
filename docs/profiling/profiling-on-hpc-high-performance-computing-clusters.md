@@ -21,17 +21,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772119"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern (High Performance Computing)
 
 Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die Visual Studio-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) auf der Microsoft-Website.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgendes ausführen:
 
@@ -125,7 +125,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften
 
-|Eigenschaft|BESCHREIBUNG|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Hauptknoten**|Gibt den Computer an, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält.|
 |**Anzahl der Prozesse**|Gibt die Anzahl der Instanzen der Anwendung an, die in der Anwendung mit der Profilerstellung ausgeführt werden.|
@@ -136,7 +136,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften
 
-| Eigenschaft | BESCHREIBUNG |
+| Eigenschaft | Beschreibung |
 |---------------------------------------| - |
 | **Projektname** | Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung. |
 | **Bereinigen beim Beenden des Profilers** | Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden. |

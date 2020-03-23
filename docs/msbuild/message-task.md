@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633485"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865361"
 ---
 # <a name="message-task"></a>Meldungsaufgabe
 
@@ -44,7 +44,7 @@ Protokolliert eine Meldung während eines Builds
 
  Wenn der `Condition`-Parameter `true` ergibt, wird der Wert des `Text`-Parameters protokolliert und der Build weiter ausgeführt. Wenn kein `Condition`-Parameter vorhanden ist, wird der Nachrichtentext protokolliert. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Die Nachricht wird in der Regel an die MSBuild-Konsolenprotokollierung gesendet. Sie können diese Einstellung ändern, indem Sie den <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>-Parameter festlegen. Die Protokollierung interpretiert den `Importance` Parameter. Normalerweise wird eine Nachricht gesendet, die auf `high` gesetzt ist, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` oder höher eingestellt ist. Es wird eine Nachricht gesendet, die auf `low` gesetzt ist, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` eingestellt ist.
+ Standardmäßig wird die Nachricht an alle registrierten Protokollierungen gesendet. Die Protokollierung interpretiert den `Importance` Parameter. In der Regel wird eine Nachricht, die auf den Wert `high` festgelegt ist, gesendet, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Minimal` festgelegt ist. oder höher. Eine Nachricht mit dem Wert `low` wird gesendet, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Detailed` festgelegt ist.
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 

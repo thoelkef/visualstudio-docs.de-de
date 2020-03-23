@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 77dc73b0be050e5108f73d38dfbbaa763d236995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957604"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installieren von Debugsymbolen für Python-Interpreter
@@ -40,7 +40,7 @@ Visual Studio fordert Sie möglicherweise zur Eingabe auf, wenn diese Symbole be
 - Python 3.4.x und frühere Versionen: Symbole sind als herunterladbare *ZIP*-Dateien aus [Offizielle Distributionen](#official-distributions) oder [Enthought Canopy](#enthought-canopy) verfügbar. Extrahieren Sie nach dem Download die Dateien in einen lokalen Ordner, z.B. in den Ordner *Symbols* (Symbole) im Python-Ordner.
 
     > [!Important]
-    > Symbole unterscheiden sich zwischen kleineren Builds von Python sowie zwischen 32-Bit- und 64-Bit-Builds, weshalb die Versionen genau übereinstimmen sollten. Erweitern Sie den *Knoten* **Python-Umgebungen** Ihres Projekts im **Projektmappen-Explorer**, und beachten Sie den Umgebungsnamen. Wechseln Sie dann zum *Fenster* **Python-Umgebungen**, und beachten Sie den Speicherort für die Installation. Öffnen Sie anschließend ein Befehlsfenster an diesem Speicherort, und starten Sie *python.exe*, wodurch die genaue Version angezeigt wird sowie ob es sich um einen 32-Bit- oder 64-Bit-Build handelt.
+    > Symbole unterscheiden sich zwischen kleineren Builds von Python sowie zwischen 32-Bit- und 64-Bit-Builds, weshalb die Versionen genau übereinstimmen sollten. Erweitern Sie zur Überprüfung des verwendeten Interpreters im **Projektmappen-Explorer** den *Knoten* **Python-Umgebungen** Ihres Projekts, und notieren Sie sich den Umgebungsnamen. Wechseln Sie dann zum *Fenster* **Python-Umgebungen**, und notieren Sie sich den Installationsspeicherort. Öffnen Sie anschließend ein Befehlsfenster an diesem Speicherort, und starten Sie *python.exe*, wodurch die genaue Version angezeigt wird sowie ob es sich um einen 32-Bit- oder 64-Bit-Build handelt.
 
 - Bei jeder anderen Python-Distribution eines Drittanbieters wie z.B. ActiveState Python müssen Sie sich an die Autoren dieser Distribution wenden und sie um die Symbole bitten. WinPython dagegen enthält den Python-Standardinterpreter in unveränderter Form. Verwenden Sie dafür also die Symbole der offiziellen Distribution für die entsprechende Versionsnummer.
 

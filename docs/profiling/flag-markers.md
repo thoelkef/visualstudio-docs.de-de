@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969950"
 ---
 # <a name="flag-markers"></a>Flag-Marker
@@ -23,12 +23,12 @@ Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in ei
 ## <a name="flag-importance"></a>Wichtigkeit der Flags
  Je nach ihrer Wichtigkeit werden Flags in unterschiedlichen Größen angezeigt. Wie bei allen Markern kann die Wichtigkeit niedrig, normal, hoch oder kritisch sein.  Diese Abbildung zeigt die Darstellung der Marker nach ihrer Wichtigkeit geordnet:
 
- ![Marker nach ihrer Wichtigkeit geordnet: Niedrig, Normal, Hoch und Kritisch](../profiling/media/cvmarkerimportance.png "CVMarkerImportance") Marker mit Wichtigkeit des Flags
+ ![Marker nach ihrer Wichtigkeit geordnet: Niedrig, Normal, Hoch und Kritisch](../profiling/media/cvmarkerimportance.png "CVMarkerImportance") Marker mit der Wichtigkeit der Flags
 
 ## <a name="flag-category"></a>Flag-Kategorie
  Je nach Kategorie wird ein Flag in einer dieser fünf Farben angezeigt. Die Farben werden wiederverwendet, wenn mehr als fünf Kategorien vorhanden sind. Sie können die Farbe nicht auswählen. Wie bei Markern kann die Kategorie jede beliebige Ganzzahl sein. Die folgende Abbildung zeigt die Farben der ersten fünf Kategorien an.
 
- ![Die Fünf Farben der Kategoriemarker](../profiling/media/cvmarkercategory.png "CVMarkerCategory") Marker mit Kategorien
+ ![Die fünf Farben der Kategoriemarker](../profiling/media/cvmarkercategory.png "CVMarkerCategory") Marker mit Kategorien
 
 ## <a name="alerts"></a>Benachrichtigungen
  Eine Warnung ist ein rotfarbiges Flag, das ein wichtiges Anwendungsereignis wie etwa eine Ausnahme angibt.  So sieht eine Warnung aus:
@@ -40,7 +40,7 @@ Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in ei
 
  Aggregationsflags werden in unterschiedlichen Größen gezeichnet. Die Größe hängt von der Wichtigkeit des wichtigsten Flags in der Aggregation ab. Die folgende Abbildung zeigt die Aggregationsflags in aufsteigender Reihenfolge nach ihrer Wichtigkeit.
 
- ![Aggregationsflags zeigen vier Wichtigkeitsstufen an](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") Aggregationsflags sortiert nach Wichtigkeit
+ ![Aggregationsflags mit vier Wichtigkeitsstufen](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") Aggregationsflags nach Wichtigkeitsstufen
 
 ## <a name="see-also"></a>Siehe auch
 - [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)

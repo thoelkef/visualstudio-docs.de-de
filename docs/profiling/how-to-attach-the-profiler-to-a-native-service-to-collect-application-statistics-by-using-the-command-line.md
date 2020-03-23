@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 00f0d3cedf2ef1875d93f7706f7cfa48a8b6b274
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779089"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an einen nativen Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile
@@ -39,7 +39,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools 
 
 3. Starten Sie den Profiler. Typ:
 
-    **VSPerfCmd /start:sample** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
+    **VSPerfCmd /start:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
    - Mit der Option **/start:sample** wird der Profiler initialisiert.
 
@@ -50,7 +50,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools 
    > [!NOTE]
    > Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.
 
-   | Option | BESCHREIBUNG |
+   | Option | Beschreibung |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des profilierten Prozesses ist. Diese Option ist nur erforderlich, wenn der Prozess als Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte „Prozesse“ in der Spalte „Benutzername“ des Windows Task-Managers aufgeführt. |
    | [/crosssession](../profiling/crosssession.md) | Aktiviert die Profilerstellung für Prozesse in anderen Sitzungen. Diese Option ist erforderlich, wenn die Anwendung in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte „Prozesse“ in der Spalte „Sitzungs-ID“ des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. |
@@ -66,7 +66,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools 
 
     Standardmäßig wird alle 10.000.000 nicht angehaltene Prozessortaktzyklen ein Sampling der Leistungsdaten durchgeführt. Dies entspricht ca. 10 Sekunden auf einem 1-GHz-Prozessor. Sie können eine der folgenden Optionen angeben, um das Taktzyklusintervall zu ändern oder ein anderes Samplingereignis anzugeben.
 
-   |Samplingereignis|BESCHREIBUNG|
+   |Samplingereignis|Beschreibung|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Ändert das Samplingintervall in die Anzahl der mit `Interval` angegebenen nicht angehaltenen Taktzyklen.|
    |[/pf](../profiling/pf.md)[ **:** `Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|
@@ -80,14 +80,14 @@ In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools 
 
 - Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
-    |Option|BESCHREIBUNG|
+    |Option|Beschreibung|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der Prozess-ID oder des Prozessnamens angegeben ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein Prozess angegeben ist) beendet.|
 
 ## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
- Um eine Profilerstellungssitzung zu beenden, muss der Profiler vom Dienst getrennt und dann explizit beendet werden. Sie können einen nativen Dienst trennen, für den mithilfe der Samplingmethode ein Profil erstellt wurde, indem Sie den Dienst beenden oder indem Sie die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.
+ Um eine Profilerstellungssitzung zu beenden, muss der Profiler vom Dienst getrennt und dann explizit beendet werden. Sie können einen nativen Dienst trennen, für den mithilfe der Samplingmethode ein Profil erstellt wurde, indem Sie den Dienst beenden oder indem Sie die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die **VSPerfCmd**-Option [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
@@ -95,7 +95,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools 
 
     - Beenden Sie den Dienst.
 
-         Oder
+         - oder -
 
     - Geben Sie **VSPerfCmd /detach** ein.
 

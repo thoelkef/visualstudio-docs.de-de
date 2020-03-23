@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128213"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Bereitstellen einer App in einem lokalen Ordner mithilfe von Visual Studio
@@ -30,7 +30,7 @@ Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Co
 
 1. Klicken Sie im Projektmappen-Explorer erst mit der rechten Maustaste auf das Projekt und anschließend mit der linken auf **Veröffentlichen**. Alternativ können Sie auch das Menüelement **Erstellen** > **Veröffentlichen** verwenden.
 
-    ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "Auswahl der Option „Veröffentlichen“")
+    ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "„Veröffentlichen“ auswählen")
 
 1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Klicken Sie auf **Neues Profil erstellen**.
 
@@ -46,7 +46,7 @@ Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Co
 
 1. Wenn Sie Bereitstellungseinstellungen konfigurieren möchten, klicken Sie in der Profilübersicht erst auf **Konfigurieren** und anschließend auf die Registerkarte **Einstellungen**.
 
-    ![Profileinstellungen](../deployment/media/quickstart-profile-settings.png "Profile settings")
+    ![Profileinstellungen](../deployment/media/quickstart-profile-settings.png "Profileinstellungen")
 
 1. Konfigurieren Sie die Optionen, und legen Sie z.B. fest, ob eine Debug- oder Releasekonfiguration bereitgestellt werden soll, und klicken Sie anschließend auf **Speichern**.
 

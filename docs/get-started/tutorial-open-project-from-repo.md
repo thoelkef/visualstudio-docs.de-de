@@ -15,10 +15,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180440"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Öffnen eines Projekts von einem Repository aus
@@ -43,7 +43,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Wählen Sie auf der oberen Menüleiste **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen** aus.
+1. Klicken Sie in der oberen Menüleiste auf **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen**.
 
    Der Bereich **Team Explorer – Verbinden** wird geöffnet.
 
@@ -101,7 +101,7 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Wählen Sie auf der oberen Menüleiste **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen** aus.
+1. Klicken Sie in der oberen Menüleiste auf **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen**.
 
    Der Bereich **Team Explorer – Verbinden** wird geöffnet.
 
@@ -177,9 +177,9 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 Wenn Sie mit dem Codieren mit Visual Studio loslegen möchten, können Sie sich die ausführlichen Informationen in einem der folgenden sprachspezifischen Tutorials ansehen:
 
-- [Visual Studio-Tutorials | **C#** ](./csharp/index.yml)
+- [Visual Studio-Tutorials | **C#**](./csharp/index.yml)
 - [Visual Studio-Tutorials | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
+- [Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio | **Python**](/visualstudio/python/)
 - [Visual Studio | **JavaScript**, **TypeScript** und **Node.js**](/visualstudio/javascript/)
 

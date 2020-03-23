@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630638"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094577"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory-Aufgabe
 
@@ -52,7 +52,7 @@ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 
 ## <a name="example"></a>Beispiel
 
- Im folgenden Beispiel wird nach dem Erstellen des Projekts ein *ZIP*-Archiv aus dem Ausgabeverzeichnis erstellt.
+ Im folgenden Beispiel (sofern es als importierte *TARGETS*-Datei verwendet wird) wird nach dem Erstellen des Projekts ein *ZIP*-Archiv aus dem Ausgabeverzeichnis erstellt. Normalerweise würde die `$(OutputPath)`-Eigenschaft in einer MSBuild-Projektdatei definiert werden. Daher erzeugt eine Projektdatei, die die folgende Datei importiert, das ZIP-Archiv `output.zip`:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

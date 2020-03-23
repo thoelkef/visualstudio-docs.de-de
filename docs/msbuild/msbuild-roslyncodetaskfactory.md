@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633225"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865374"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>MSBuild-Inlineaufgaben mit RoslynCodeTaskFactory
 
 Ähnlich wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) verwendet RoslynCodeTaskFactory die plattformübergeifenden Roslyn-Compiler, um In-Memory-Taskassemblys für die Verwendung als Inlinetasks zu generieren.  RoslynCodeTaskFactory-Tasks sind für .NET Standard vorgesehen und funktionieren ebenfalls mit .NET Framework- und .NET Core-Runtimes sowie auf anderen Plattformen wie Linux und macOS.
 
 >[!NOTE]
->Der RoslynCodeTaskFactory-Task ist nur in MSBuild 15.8 und höher verfügbar.
+>Der RoslynCodeTaskFactory-Task ist nur in MSBuild 15.8 und höher verfügbar. MSBuild-Versionen folgen den Versionen von Visual Studio. Daher ist RoslynCodeTaskFactory in Visual Studio ab Version 15.8 verfügbar.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Die Struktur einer Inlineaufgabe mit RoslynCodeTaskFactory
 
@@ -164,7 +164,7 @@ definiert die folgenden drei Parameter:
 
 - `Tally` ist ein Ausgabeparameter vom Typ System.Int32.
 
-Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.
+Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt.  Wenn in RoslynCodeTaskFactory das `Code`-Element über das `Type`-Attribut von `Class` verfügt, müssen Sie `ParameterGroup` nicht angeben, da es aus dem Quellcode abgeleitet wird (darin besteht ein Unterschied zu `CodeTaskFactory`). Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.
 
 ## <a name="example"></a>Beispiel
 
