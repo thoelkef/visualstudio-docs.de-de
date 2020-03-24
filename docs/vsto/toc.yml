@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Bereitstellen einer Office-Lösung mithilfe von Windows Installer
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: Bereitstellen einer Office-Projektmappe mithilfe von Visual Studio-Setupprojekten
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: Problembehandlung bei der Office-Projektmappenbereitstellung
               items:
                 - name: Problembehandlung bei der Office-Projektmappenbereitstellung

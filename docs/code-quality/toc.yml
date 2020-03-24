@@ -14,10 +14,12 @@
           href: install-roslyn-analyzers.md
         - name: Konfigurieren von Quellcodeanalysetools
           href: use-roslyn-analyzers.md
+        - name: Umfang der Livecodeanalyse
+          href: configure-live-code-analysis-scope-managed-code.md
+        - name: Manuelles Ausführen der Codeanalyse
+          href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Deaktivieren der Codeanalyse
           href: disable-code-analysis.md
-        - name: Vollständige Projektmappenanalyse aktivieren
-          href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: FAQ
           href: analyzers-faq.md
         - name: FxCop-Analysetools
@@ -50,7 +52,7 @@
         - name: Migration zu FxCop-Analysetools
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Manuelles Ausführen der Legacyanalyse
-          href: how-to-run-code-analysis-manually-for-managed-code.md
+          href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
         - name: Konfiguration
           items:
             - name: Konfigurieren der Legacyanalyse
