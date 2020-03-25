@@ -3,15 +3,16 @@ title: Visual Studio- und GitHub Enterprise-Angebot | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/03/2020
+ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: Verwalten von Abonnements im Visual Studio- und GitHub Enterprise-Angebot
-ms.openlocfilehash: e48b047862daa80452e1b2128dc74fee8bd1039e
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: d7100c2b9cfdd12579419927fd0bf8885038048b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263330"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509004"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Verwalten von Visual Studio-Abonnements mit GitHub Enterprise
 Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnement zu erwerben, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist die einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
@@ -36,7 +37,7 @@ Weitere Informationen zum Verwalten von Abonnements finden Sie in diesen Themen:
 ## <a name="manage-github-enterprise-subscriptions"></a>Verwalten von GitHub Enterprise-Abonnements
 Beim Kauf von GitHub Enterprise-Abonnements geht GitHub eine Partnerschaft mit den Kunden ein, um beim Erstellen und Konfigurieren der Organisationen zu helfen, die auf GitHub zugreifen werden, sowie beim Identifizieren der Administratoren.  Diese Administratoren erhalten dann eine Benachrichtigung, dass sie als Administratoren eingerichtet wurden.  
 
-Da dieser Prozess komplexer ist, kann es mehrere Tage nach dem Kauf von Abonnements dauern, bis die Organisationen und Administratoren vollständig eingerichtet sind.
+Da dieser Prozess komplex ist, kann es nach dem Kauf von Abonnements mehrere Tage dauern, bis die Organisationen und Administratoren vollständig eingerichtet sind.
 
 GitHub ist entweder als cloudbasierte „GitHub.com“ oder als lokaler GitHub Enterprise Server verfügbar.  Die Prozesse zum Verwalten der beiden Versionen unterscheiden sich.  GitHub bietet eine Vielzahl von Hilfethemen und Administratoranleitungen für die Verwaltung von GitHub Enterprise-Abonnements.  Im Folgenden stellen wir Links zu ausgewählten Themen bereit.  
 

@@ -3,15 +3,16 @@ title: Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendu
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
-ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235129"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509056"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet.
@@ -19,7 +20,7 @@ Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnem
 ## <a name="what-is-aliasing"></a>Was ist Aliasing?
 Der Begriff „Aliasing“ bezieht sich auf Benutzer, die über verschiedene Identitäten für die Anmeldung bei Windows (oder Ihrem Active Directory) und den Zugriff auf E-Mails verfügen.
 
-Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online-Dienst für die Verzeichnisanmeldung verfügt (z. B. JohnD@contoso.com), aber Benutzer auf ihre E-Mail-Konten über Aliase oder Anzeigenamen (z. B. John.Doe@contoso.com) zugreifen. Für viele Kunden, die ihre Abonnements über das Volume Licensing Service Center (VLSC) verwalten, kann dies zu einer erfolglosen Anmeldung führen. Das liegt daran, dass die angegebene E-Mail-Adresse (John.Doe@contoso.com) nicht mit der Verzeichnisadresse (JohnD@contoso.com) übereinstimmt, die für eine erfolgreiche Authentifizierung über die Option „Geschäfts-, Schul- oder Unikonto“ erforderlich ist.  Sorgen Sie dafür, dass sich Ihre Benutzer die Anmelde-E-Mail-Adressen verwenden, um auf ihre Abonnements zuzugreifen. Diese Adressen sind im Verwaltungsportal unter https://manage.visualstudio.com aufgeführt. 
+Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online-Dienst für die Verzeichnisanmeldung verfügt (z. B. JohnD@contoso.com), aber Benutzer auf ihre E-Mail-Konten über Aliase oder Anzeigenamen (z. B. John.Doe@contoso.com) zugreifen. Sorgen Sie dafür, dass sich Ihre Benutzer die Anmelde-E-Mail-Adressen verwenden, um auf ihre Abonnements zuzugreifen. Diese Adressen sind im Verwaltungsportal unter https://manage.visualstudio.com aufgeführt. 
 
 ## <a name="what-are-the-potential-issues"></a>Welche möglichen Probleme können auftreten?
 
@@ -39,7 +40,7 @@ Wenn in einem Unternehmen Active Directory eingerichtet ist und der Benutzerprin
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Beheben eines UPN-Konflikts
 
-1. Greifen Sie auf das Verwaltungsportal für Visual Studio unter https://manage.visualstudio.com zu. 
+1. Rufen Sie das Visual Studio-Verwaltungsportal ([https://manage.visualstudio.com](https://manage.visualstudio.com)) auf. 
 
 2. Suchen Sie nach dem Abonnenten, für den der UPN-Konflikt vorliegt. (Das [Filter](search-license.md)-Feature kann die Suche nach einem Abonnenten vereinfachen.)
 
@@ -55,7 +56,7 @@ Bei persönlichen Abonnementkonten können ebenfalls Probleme auftreten, wenn di
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>So stellen Sie fest, ob Ihr persönliches Abonnementkonto von einem Aliasingproblem betroffen ist
 
-1. Melden Sie sich bei https://my.visualstudio.com/subscriptions an.
+1. Melden Sie sich bei [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions) an.
 
 0. Stellen Sie sicher, dass die Anmelde-E-Mail-Adresse oben rechts auf der Seite mit der Adresse übereinstimmt, die Sie zur Anmeldung verwendet haben.  Wenn die E-Mail-Adresse, mit der Sie angemeldet sind, nicht identisch mit der E-Mail-Adresse ist, mit der auf die Website zugegriffen wurde, kommt es zu einem Konflikt zwischen Ihrem Konto und dem Alias.
 
@@ -81,7 +82,7 @@ Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die An
 - Die zweite Option (weniger sicher) besteht darin, Abonnenten die Anmeldung mit einer anderen E-Mail-Adresse als ihrer Verzeichnis-E-Mailadresse zu gestatten.
 
 Beide Option werden im Administratorportal konfiguriert, indem die folgenden Schritte ausgeführt werden:  
-1. Melden Sie sich bei https://manage.visualstudio.com an. 
+1. Melden Sie sich bei [https://manage.visualstudio.com](https://manage.visualstudio.com) an. 
 
 0. Wenn Sie Änderungen für einen einzelnen Benutzer vornehmen möchten, wählen Sie diesen Benutzer in der Tabelle aus, und klicken Sie für das Bearbeiten mit der rechten Maustaste auf ihn. Dadurch wird ein Panel geöffnet, in dem Sie die E-Mail-Adresse für die Anmeldung ändern können. Nehmen Sie im Feld für die E-Mail-Adresse für die Anmeldung die erforderlichen Änderungen vor. Klicken Sie auf „Speichern“, und die Änderungen werden umgesetzt.  
 

@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
 ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74706983"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
@@ -120,9 +120,9 @@ Sie müssen Ihre Vertrags-ID und Ihre Zugriffs-ID mit Ihrem Azure-Abonnement ver
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 ||
 
-<sup>1</sup> *Umfasst: Imagine Premium, BizSpark. Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup> *Umfasst: Imagine Premium, BizSpark. Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
-<sup>2</sup> *Umfasst: Imagine Standard*
+<sup>2</sup> *Umfasst: Imagine Standard*
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
