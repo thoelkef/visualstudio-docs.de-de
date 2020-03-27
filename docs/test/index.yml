@@ -1,0 +1,64 @@
+### YamlMime:Landing
+title: Testtools in Visual Studio
+summary: Die Visual Studio-Testtools können Sie und Ihr Team dabei unterstützen, hochwertigen Code zu entwickeln und diesen Standard einzuhalten.
+metadata:
+  title: Testtools in Visual Studio
+  description: Hier erfahren Sie, wie Sie Visual Studio verwenden, um Ihren Code zu testen.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 03/23/2020
+  ms.openlocfilehash: cb29c5219cb3ad73cf8a3efeecaf344c7af81968
+  ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/25/2020
+  ms.locfileid: "80256401"
+landingContent:
+- title: Informationen zu Testtools
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Grundlegende Informationen zu Testtools
+      url: improve-code-quality.md
+    - text: Übersicht über Tools für Komponententests
+      url: unit-test-your-code.md
+    - text: Übersicht über Live Unit Testing
+      url: live-unit-testing-intro.md
+- title: Komponententest
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Erste Schritte mit Unittests
+      url: getting-started-with-unit-testing.md
+    - text: Erstellen und Ausführen von Komponententests für verwalteten Code
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - text: Ausführen von Komponententests mit dem Test-Explorer
+      url: run-unit-tests-with-test-explorer.md
+    - text: Erste Schritte mit Live Unit Testing
+      url: live-unit-testing-start.md
+    - text: Generieren von Komponententests (IntelliTest)
+      url: generate-unit-tests-for-your-code-with-intellitest.md
+- title: Weitere Testtools
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - text: Isolieren von getestetem Code mithilfe von Microsoft Fakes
+      url: isolating-code-under-test-with-microsoft-fakes.md
+    - text: Codierte Benutzeroberfläche (veraltet)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Auslastungstest (veraltet)
+      url: quickstart-create-a-load-test-project.md
+- title: Ähnliche Tools (Azure DevOps)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Explorative und manuelle Tests (Azure Test Plans)
+      url: /azure/devops/test/overview?view=azure-devops
+    - text: Auslastungstests (Azure Test Plans)
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+    - text: Fortlaufende Tests (Azure Test Plans)
+      url: /azure/devops/pipelines/?view=azure-devops

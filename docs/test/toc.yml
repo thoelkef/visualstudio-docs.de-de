@@ -1,5 +1,9 @@
 - name: Testtools in Visual Studio
-  href: improve-code-quality.md
+  href: index.yml
+- name: Übersicht
+  items:
+    - name: Grundlegende Informationen zu Testtools
+      href: improve-code-quality.md
 - name: Komponententest
   items:
     - name: Übersicht über Tools für Komponententests
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: Übersicht
+          href: intellitest-manual/index.md
         - name: 'Vorgehensweise: Generieren von Unittests mit IntelliTest'
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: Übersicht
-          href: intellitest-manual/introduction.md
-        - name: Erste Schritte
-          href: intellitest-manual/getting-started.md
-        - name: Index zu den Abschnitten
-          href: intellitest-manual/index.md
         - name: Testerzeugung
           href: intellitest-manual/test-generation.md
         - name: Dynamische symbolische Ausführung
