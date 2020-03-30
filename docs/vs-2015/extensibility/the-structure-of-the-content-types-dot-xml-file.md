@@ -1,5 +1,5 @@
 ---
-title: Die Struktur der Content_Types]. XML-Datei | Microsoft-Dokumentation
+title: Die Struktur der datei Content_types].xml | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,80 +13,80 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2d6eca44c08cf35e7b2075965c1b6139e7fb95bc
+ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846369"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80395356"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Die Struktur der Content_types].xml-Datei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Studio verwendet die Datei [Content_Types]. XML, um das Paket zu installieren, aber die Datei selbst wird nicht installiert.  
+Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Studio verwendet die Datei [Content_Types].xml, um das Paket zu installieren, aber es installiert die Datei nicht selbst.  
   
 > [!NOTE]
-> Obwohl sich dieses Thema nur auf [content_type]. XML-Dateien bezieht, die in VSIX-Paketen verwendet werden, ist der Dateityp [Content_Types]. XML Teil des OPC-Standards *(Open Packaging Conventions)* . Weitere Informationen finden Sie unter [OPC: ein neuer Standard zum Verpacken Ihrer Daten](https://msdn.microsoft.com/magazine/cc163372.aspx) auf der MSDN-Website.  
+> Obwohl dieses Thema nur für [Content_Type].xml-Dateien gilt, die in VSIX-Paketen verwendet werden, ist der Dateityp [Content_Types].xml Teil des *OPC-Standards (Open Packaging Conventions).* Weitere Informationen finden Sie unter [OPC: A New Standard For Packaging Your Data](https://msdn.microsoft.com/magazine/cc163372.aspx) auf der MSDN-Website.  
   
 ## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden das root-Element und seine Attribute und untergeordneten Elemente beschrieben.  
+ In den folgenden Abschnitten werden das Stammelement und seine Attribute und untergeordneten Elemente beschrieben.  
   
-### <a name="root-element"></a>Stammelement  
+### <a name="root-element"></a>Root-Element  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|`Types`|Enthält untergeordnete Elemente, die die Dateitypen im VSIX-Paket auflisten.|  
+|`Types`|Enthält untergeordnete Elemente, die die Dateitypen im VSIX-Paket aufzählen.|  
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribute|Beschreibung|  
+|Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Xmlns`|(Erforderlich) Der Speicherort des Schemas, das für diese [Content_Types]. XML-Datei verwendet wird.|  
+|`Xmlns`|(Erforderlich.) Der Speicherort des Schemas, das für diese [Content_Types].xml-Datei verwendet wird.|  
   
-### <a name="attribute-name-attribute"></a>{Attribut Name} Versehen  
+### <a name="attribute-name-attribute"></a>"Attributname" Attribut  
   
-|                           {2&gt;Wert&lt;2}                           |                Beschreibung                |
+|                           Wert                           |                Beschreibung                |
 |-----------------------------------------------------------|-------------------------------------------|
-| http://schemas.openformats.org/package/2006/content-types | Der Speicherort des Inhaltstypen Schemas. |
+| `http://schemas.openformats.org/package/2006/content-types` | Der Speicherort des Inhaltstypenschemas. |
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Das `Types`-Element kann eine beliebige Anzahl von `Default`-Elementen enthalten.  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|`Default`|Beschreibt einen Inhaltstyp im VSIX-Paket. Jeder Dateityp im Paket muss über ein eigenes `Default`-Element verfügen.|  
+|`Default`|Beschreibt einen Inhaltstyp im VSIX-Paket. Jeder Dateityp im Paket muss `Default` ein eigenes Element haben.|  
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribute|Beschreibung|  
+|Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Extension`|Die Dateinamenerweiterung einer Datei im VSIX-Paket.|  
 |`ContentType`|Beschreibt die Art des Inhalts, der der Dateinamenerweiterung zugeordnet ist.|  
   
-### <a name="attribute-name-attribute"></a>{Attribut Name} Versehen  
- Visual Studio erkennt die folgenden `ContentType` Werte für die zugeordneten `Extension` Typen.  
+### <a name="attribute-name-attribute"></a>"Attributname" Attribut  
+ Visual Studio erkennt `ContentType` die folgenden `Extension` Werte für die zugeordneten Typen.  
   
-|Erweiterung|ContentType|  
+|Durchwahl|ContentType|  
 |---------------|-----------------|  
 |txt|text/plain|  
 |pkgdef|text/plain|  
-|xml|Text/XML|  
-|vsixmanifest|Text/XML|  
-|htm oder HTML|text/html|  
-|rtf|Anwendung/RTF|  
+|Xml|text/xml|  
+|Extension.vsixmanifest|text/xml|  
+|htm oder html|text/html|  
+|Rtf|Anwendung/rtf|  
 |pdf|application/pdf|  
-|gif|image/gif|  
-|JPG oder JPEG|Bild/jpg|  
+|GIF|image/gif|  
+|jpg oder jpg|bild/jpg|  
 |tiff|image/tiff|  
 |VSIX|application/zip|  
 |zip|application/zip|  
-|dll|application/octet-stream|  
+|DLL-Datei|application/octet-stream|  
 |alle anderen Dateitypen|application/octet-stream|  
   
 ## <a name="example"></a>Beispiel  
   
 ### <a name="description"></a>Beschreibung  
- In der folgenden [Content_Types]. XML-Datei wird ein typisches VSIX-Paket beschrieben.  
+ Die folgende Datei [Content_Types].xml beschreibt ein typisches VSIX-Paket.  
   
 ### <a name="code"></a>Code  
   
@@ -103,5 +103,5 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
   
 ## <a name="see-also"></a>Siehe auch  
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX-Erweiterungs Schema 1,0 Verweis](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: ein neuer Standard zum Verpacken von Daten](https://msdn.microsoft.com/magazine/cc163372.aspx)
+ [VSIX-Erweiterungsschema 1.0-Referenz](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC: Ein neuer Standard für die Verpackung Ihrer Daten](https://msdn.microsoft.com/magazine/cc163372.aspx)
