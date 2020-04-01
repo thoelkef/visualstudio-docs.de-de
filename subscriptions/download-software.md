@@ -3,15 +3,16 @@ title: Herunterladen von Softwaretiteln in Visual Studio-Abonnements | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Informationen zum Suchen und Herunterladen von Microsoft-Softwaretiteln in Visual Studio-Abonnements
-ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 4196d8bcf256a624f34ae0b66e11f536e3c2c2ec
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476821"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232610"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Herunterladen von Softwaretiteln in Visual Studio-Abonnements
 Je nachdem, über welches Visual Studio-Abonnement Sie verfügen, können Sie auf eine Vielzahl von Softwaretiteln zurückgreifen.  In diesem Artikel wird erläutert, wie Sie die benötigte Software suchen und finden, um Ihr Abonnement optimal zu nutzen. 
@@ -50,14 +51,22 @@ Sie können auf den blauen Schlüssel **Schlüssel abrufen** klicken, um einen P
 > [!div class="mx-imgBorder"]
 > ![Anfordern von Product Keys für Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
 
-## <a name="next-steps"></a>Nächste Schritte
-Weitere Informationen zum Suchen, Anfordern und Exportieren von Product Keys finden Sie in unserer Product Key-Dokumentation:
-- [Übersicht über Product Keys](product-keys.md)
-- [Suchen und Anfordern von Schlüsseln](find-keys.md)
-
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)
 - [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Nächste Schritte
+Weitere Informationen zum Suchen, Anfordern und Exportieren von Product Keys finden Sie in unserer Product Key-Dokumentation:
+- [Übersicht über Product Keys](product-keys.md)
+- [Suchen und Anfordern von Schlüsseln](find-keys.md)
+
+Hier finden Sie Informationen zu weiteren nützlichen Vorteilen:
+- [Einzelguthaben für Azure DevTest](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Visual Studio-IDE](vs-ide-benefit.md)
+
+
+
 

@@ -3,24 +3,29 @@ title: Umgang mit zu viel zugewiesenen Lizenzen | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren mit zu viel zugewiesenen Abonnements umgehen.
-ms.openlocfilehash: 924f6fb2c513d70aefd28c1d4ff18d1af62178c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605505"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232454"
 ---
 # <a name="overallocated-subscriptions"></a>Zu viel zugewiesene Abonnements
-Teilweise werden Bestellungen geändert, obwohl bereits Abonnenten hinzugefügt wurden, wodurch es dazu kommen kann, dass mehr Abonnements zugewiesen wurden als Lizenzen für Ihr Unternehmen vorhanden sind. Dies wird als „Überbelegung“ bezeichnet.  Wenn dies der Fall ist, wird in der Registerkarte „Abonnenten“ eine Warnung mit zusätzlichen Informationen zur Anzahl der zu viel zugewiesenen Abonnements angezeigt.
+Teilweise werden Bestellungen geändert, obwohl bereits Abonnenten hinzugefügt wurden, wodurch es dazu kommen kann, dass mehr Abonnements zugewiesen wurden als Lizenzen für Ihr Unternehmen vorhanden sind. Dies wird als „Überbelegung“ bezeichnet.  
+
+Klicken Sie auf das Symbol oben links, um den Zuweisungsbereich zu öffnen und Abonnementzuweisungen anzuzeigen.  
 
 > [!NOTE]
 > Überbelegungen sind in Open License-Programmen nicht zulässig.  Außerdem werden diese Informationen im Portal möglicherweise von anderen Programmen unterschiedlich angezeigt.
 >
 > [!div class="mx-imgBorder"]
 > ![Benachrichtigung über zu häufig in Anspruch genommene Abonnements](_img/over-claimed/over-claimed-alert.png)
+
+Überbelegte Abonnements werden mit einem diagonal gestreiften Balken dargestellt.  Die Anzahl der überbelegten Abonnements für alle Abonnementtypen wird oben im Bereich „Übersicht“ angegeben. Zudem zeigt jede Abonnementstufe einen eigenen Zuweisungsstatus an.  
 
 ## <a name="resolve-overallocated-subscriptions"></a>Beheben von Abonnementüberbelegungen
 Es gibt mehrere Möglichkeiten, Überbelegungen zu beheben:
@@ -35,6 +40,12 @@ Wenn Ihre Organisation über ein Enterprise Agreement (EA) verfügt, können Adm
 > Wenn Visual Studio-Abonnements mit GitHub Enterprise von Visual Studio-Abonnementadministratoren zugewiesen werden und nie ein Kauf dieser Abonnements stattgefunden hat, werden diese GitHub Enterprise-Administratoren innerhalb der Organisation nicht angezeigt. Um sicherzustellen, dass GitHub Enterprise-Abonnements sichtbar sind, sollte ein Kauf einschließlich **mindestens eines** Visual Studio Professional- mit GitHub Enterprise-Abonnements oder eines Visual Studio Enterprise- mit GitHub Enterprise-Abonnements getätigt werden, wenn die Abonnements zum ersten Mal zugewiesen werden.
 >
 > Es liegt in der Verantwortung des Kunden sicherzustellen, dass für jedes zugewiesene GitHub-Abonnement ein entsprechendes Visual Studio- mit GitHub-Abonnement im Verwaltungsportal zugewiesen ist, damit die Lizenzierungsanforderungen für dieses Abonnement erfüllt sind.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Weitere Informationen zur Verwaltung von [Visual Studio-Abonnements mit GitHub Enterprise](assign-github.md).

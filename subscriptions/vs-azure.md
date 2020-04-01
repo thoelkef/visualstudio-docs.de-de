@@ -3,15 +3,16 @@ title: Microsoft Azure-Vorteil | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
+ms.date: 03/18/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 01c31d96b7ee3e696f941725bbcb314c5f0e0e60
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542671"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232036"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -91,9 +92,7 @@ Führen Sie einen der folgenden Schritte aus, um Ihre Visual Studio Einzelguthab
 
 Wenn jemand in Ihrem Team oder Ihrer Organisation Abonnements in Ihrem Namen erwirbt, wenden Sie sich an den Visual Studio-Administrator Ihrer Organisation, und fordern Sie ein Visual Studio-Abonnement an, das Sie zu dem von Ihnen benötigten Einzelguthaben für Azure DevTest berechtigt.   Fordern Sie den Administrator auf, das neue Abonnement derselben Benutzer-ID zuzuweisen, der Ihr vorheriges Abonnement zugewiesen wurde, damit Sie sich nicht um die Übertragung Ihres Azure-Abonnements kümmern müssen.
 
-Wenn Sie ein Abonnement direkt erwerben können, gehen Sie wie folgt vor:
-1. Erwerben Sie ein jährliches Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)- oder [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)-Cloudabonnement über den Visual Studio Marketplace.
-2. Profitieren Sie von einem Rabatt von 50% oder mehr, indem Sie Ihr aktuelles Abonnement über den [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) verlängern.
+Wenn Sie ein Abonnement direkt erwerben können, profitieren Sie von einem Rabatt, indem Sie Ihr aktuelles Abonnement über den [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) verlängern.
 
 Vergleichen Sie alle [Abonnements und ihre Vorteile](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -113,6 +112,12 @@ Wenn Sie der Meinung sind, dass Sie diese E-Mail irrtümlich erhalten haben, wen
   - [Azure-Tipps und -Tricks](https://microsoft.github.io/AzureTipsAndTricks/ "Azure-Tipps und -Tricks") 
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu Microsoft-Tools und -Diensten finden Sie in der Dokumentation zu:

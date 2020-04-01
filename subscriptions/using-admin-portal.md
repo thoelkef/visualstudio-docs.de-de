@@ -1,17 +1,18 @@
 ---
 title: Erste Schritte im Verwaltungsportal für Abonnements | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/07/2019
+ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-Abonnements Ihrer Organisation mit dem Verwaltungsportal für Abonnements verwalten.
-ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850543"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233166"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Übersicht über das Verwaltungsportal für Visual Studio-Abonnements
 
@@ -25,7 +26,7 @@ Beachten Sie beim Verwenden des Portals zur Verwaltung von Visual Studio-Abonnem
 - **Weisen Sie ein Abonnement nicht mehreren Abonnenten zu.** Abonnements müssen benannten Personen zugewiesen werden.  Die Zuweisung von Abonnements zu Teams ist nicht zulässig.  Sie müssen jeder Person, die alle oder einige der Abonnementvorteile nutzt (Software für Entwicklung und Tests, Microsoft Azure, E-Learning usw.), ein Abonnement zuweisen.
 
 ## <a name="the-subscribers-page"></a>Die Seite „Abonnenten“
-Sobald Sie Abonnements zugewiesen haben, erhalten Sie auf der Registerkarte „Abonnenten“ ausführliche Informationen zu Ihren Abonnenten, z.B.:
+Sobald Sie Abonnements zugewiesen haben, können Sie auf der Registerkarte „Manage subscribers“ (Abonnenten verwalten) folgende ausführliche Informationen zu Ihren Abonnenten einsehen:
 - Die Vor- und Nachnamen der einzelnen Abonnenten
 - Die E-Mail-Adresse dieses Benutzers
 - Die Abonnementstufe, die ihm zugewiesen wurde
@@ -37,12 +38,14 @@ Sobald Sie Abonnements zugewiesen haben, erhalten Sie auf der Registerkarte „A
 - Die Sprache, in der der Benutzer die durch das Verwaltungsportal versendete Zuweisungs-E-Mail erhalten möchte
 - Ein optionales Feld für eine weitere E-Mail-Adresse, die zur E-Mail-Kommunikation, aber nicht zum Einloggen genutzt wird
 
-Auf dieser Seite können Sie links zusätzliche Informationen zur Anzahl der in Ihrer Organisation für jede Vereinbarung erworbenen, zugewiesenen und noch verfügbaren Abonnementlizenzen einsehen.
+Oben links auf der Seite sind mehrere Symbole vorhanden, auf die Sie klicken können, um die Übersicht über die Abonnementzuweisungen, die Vereinbarungsdetails und den Bericht zur maximalen Auslastung anzuzeigen.
+
+Sie können zusätzliche Informationen zur Anzahl der in Ihrer Organisation für jede Vereinbarung erworbenen, zugewiesenen und noch verfügbaren Abonnementlizenzen einsehen, indem Sie auf das Symbol ganz oben klicken, damit der entsprechende Bereich eingeblendet wird.
 > [!div class="mx-imgBorder"]
 > ![Seite „Abonnenten“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>Die Seite „Details“
-Weitere Informationen zu der Vereinbarung, die Ihnen gerade angezeigt wird, erhalten Sie auf der Registerkarte „Details“. Dort werden Vereinbarungsstatus, Einkaufskonto, Organisationsdetails, Superadministratoren und weitere relevante Informationen angezeigt.
+Klicken Sie für weitere Informationen zu der Vereinbarung, die Ihnen gerade angezeigt wird, auf das zweite Symbol, damit die Registerkarte „Vereinbarungsdetails“ angezeigt wird. In diesem einblendbaren Bereich sind der Vereinbarungsstatus, das Einkaufskonto, die Organisationsdetails, die Superadministratoren und weitere relevante Informationen enthalten.
 > [!div class="mx-imgBorder"]
 > ![Details-Seite des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
 
@@ -52,6 +55,12 @@ Weitere Informationen zu der Vereinbarung, die Ihnen gerade angezeigt wird, erha
 - [Vergleich von Visual Studio-IDE-Features](https://visualstudio.microsoft.com/vs/compare)
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:
 - [Übersicht über die Aufgaben eines Administrators](admin-responsibilities.md)
@@ -59,3 +68,4 @@ Weitere Informationen zu den Aufgaben von Administratoren:
 - [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
 - [Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen](assignments-orders.md)
 - Verwenden des Berichts [Maximum Usage](maximum-usage.md) (Maximale Auslastung) zum Nachverfolgen von Kaufverpflichtungen
+

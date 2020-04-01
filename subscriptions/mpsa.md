@@ -3,15 +3,16 @@ title: Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte u
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
-ms.openlocfilehash: f87a77cdc19244ca24da1685c0b05372f6cc76d7
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605846"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232200"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
 Wenn Sie Visual Studio-Abonnements über das MPSA-Programm erworben haben, müssen Sie einige Dinge beachten, bevor Sie ein Administrator von Visual Studio-Abonnements werden und Abonnements für Ihre Benutzer zuweisen können. Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements wechseln.
@@ -43,7 +44,12 @@ Sobald Sie die oben genannten Kriterien erfüllen, können Sie damit fortfahren,
 4. Wählen Sie Ihren **Mandanten** aus (z.B. „contoso.onmicrosoft.com“).
 5. Klicken Sie auf **Domäne zuordnen**.
 
-Nach der Zuordnung werden alle Benutzer, die die Kriterien erfüllen, in der Regel innerhalb weniger Minuten als Administratoren für Visual Studio Abonnements bereitgestellt. Manchmal kann es allerdings bis zu 24 Stunden dauern. Nach der Bereitstellung des Mandanten können Sie auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen. Wenn es länger als 24 Stunden dauert, wenden Sie sich an den MPSA-Support.
+Nach der Zuordnung werden alle Benutzer, die die Kriterien erfüllen, in der Regel innerhalb weniger Minuten als Administratoren für Visual Studio Abonnements bereitgestellt. Manchmal kann es allerdings bis zu 24 Stunden dauern. Nach der Bereitstellung des Mandanten können Sie auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen. Wenden Sie sich folgendermaßen an den MPSA-Support, wenn der Vorgang länger als 24 Stunden dauert:
+1. Rufen Sie https://www.microsoft.com/licensing/mpsa/default auf.
+2. Klicken Sie oben auf der Seite auf die das Menü **Mehr**. 
+3. Klicken Sie auf **Hilfe**.
+4. Wählen Sie die Option für **Hilfe bei der Lizenzierung** aus.
+5. Wählen Sie nun die Hilfeoption aus, die Ihren Anforderungen am besten entspricht: 
 
 > [!NOTE]
 > Wenn es sich um neue Benutzer handelt, die (nach der Zuweisung) die Kriterien in den Schritten 2 und 5 erfüllen, müssen Sie sich an den MPSA-Support wenden. Der MPSA-Support bietet Unterstützung für die Bereitstellung der neuen Administratoren für Visual Studio-Abonnements.
@@ -51,7 +57,21 @@ Nach der Zuordnung werden alle Benutzer, die die Kriterien erfüllen, in der Reg
 ## <a name="tenant-association-unmanaged"></a>Mandantenzuordnung (nicht verwaltet)
 Wenn Sie sich beim Business Center mit einer E-Mail-Adresse registriert haben, die kein Geschäftskonto war (nicht in Azure Active Directory registriert), wie oben erläutert, verläuft die Mandantenzuordnung etwas anders. Sie müssen eine sogenannte „Domänenübernahme“ ausführen. Während dieses Vorgangs machen Sie sich selbst zum globalen Administrator. Dadurch wird Ihr Mandant von einem nicht verwalteten zu einem verwalteten.
 
-Eine ausführlichere Erläuterung dieses Prozesses finden Sie in den [Schnellstartanleitungen](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Laden Sie das Handbuch *Setup and Use Your Online Services* (Einrichten und Verwenden Ihrer Onlinedienste) herunter, das Ihnen bei der Domänenübernahme hilft. Anschließend wird Ihr Einkaufskonto Ihrem Mandanten zugeordnet.
+Eine ausführlichere Erläuterung dieses Prozesses finden Sie in den [Schnellstartanleitungen](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx). Laden Sie das Handbuch *Setup and Use Your Online Services* (Einrichten und Verwenden Ihrer Onlinedienste) herunter, das Ihnen bei der Domänenübernahme hilft. Anschließend wird Ihr Einkaufskonto Ihrem Mandanten zugeordnet.
 
 > [!NOTE]
 > Nach der Domänenübernahme müssen Sie die Kriterien aus den fünf Schritten im Abschnitt „Vorabzuordnung des Mandanten (verwalteter Mandant)“ befolgen. Wenn die Kriterien erfüllt sind, müssen Sie sich nur an den MPSA-Support wenden, um weitere Administratoren für Visual Studio-Abonnements bereitzustellen.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Nächste Schritte
+In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements.
+- [Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements](assign-license.md)
+- [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
+- [Bearbeiten von Abonnements](edit-license.md)
+- [Löschen von Abonnements](delete-license.md)
+- [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)

@@ -3,15 +3,16 @@ title: Verwalten von Visual Studio-Abonnements
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706967"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232356"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -112,3 +113,17 @@ Antwort: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gesp
 > [!NOTE]
 > - Wenn Sie Ihr Microsoft-Konto oder Azure AD schließen, werden Ihre personenbezogenen Daten sofort anonymisiert.
 > - Wenn Sie über aktive Abonnements verfügen, werden Ihre personenbezogenen Daten nicht vollständig entfernt.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Nächste Schritte
+Verwalten Sie Abonnements für Ihre Organisation?  In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements:
+- [Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements](assign-license.md)
+- [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
+- [Bearbeiten von Abonnements](edit-license.md)
+- [Löschen von Abonnements](delete-license.md)
+- [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)

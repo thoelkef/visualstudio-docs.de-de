@@ -3,15 +3,16 @@ title: Verwenden von Product Keys zur Unterstützung von Internetdemonstrationen
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informationen zum Verwenden von Product Keys zur Unterstützung von Internetdemonstrationen über Terminaldienste und zum Aktivieren des RDS-Zugriffs
-ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493384"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232438"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Internetdemonstrationen über Terminaldienste
 Mit einem Visual Studio-Abonnement sind Sie berechtigt, Benutzern den Zugriff auf Internetdemonstrationen Ihrer Programme über Terminaldienste (Windows Server 2003 oder Windows Server 2008) oder Remotedesktopdienste (Windows Server 2008 R2 und höher) zu ermöglichen. So können bis zu 200 anonyme Benutzer gleichzeitig auf Ihre Demonstration zugreifen. In Ihrer Demonstration dürfen keine Produktionsdaten verwendet werden. Visual Studio-Abonnenten sind berechtigt, Benutzern ihre Anwendungen zu demonstrieren. Allerdings können bei dieser Internetdemonstration Benutzer ohne Visual Studio-Abonnement nur über Terminaldienste (Terminal Services, TS) oder Remotedesktopdienste (Remote Desktop Services, RDS) mit der Demonstrationsanwendung interagieren, solange die Software mittels Visual Studio-Abonnements lizenziert ist.
@@ -33,6 +34,13 @@ Benutzer können über RDS auf Anwendungen zugreifen, wenn die folgenden Bedingu
 - Verbindungen müssen über das Internet erfolgen.
 - Für Demonstrationen der Anwendung sind bis zu 200 gleichzeitige Verbindungen möglich.
 - Die Product Keys zum Aktivieren von Benutzerverbindungen müssen von einem Visual Studio-Abonnenten abgerufen werden.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Windows Server](https://docs.microsoft.com/windows-server/)
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Besuchen Sie über https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf die mehrteilige Blogserie zur **RDS 2012-Sitzungsbereitstellung (Remote Desktop Services, Remotedesktopdienste)** für Anleitungen zur Bereitstellung von RDS. 
