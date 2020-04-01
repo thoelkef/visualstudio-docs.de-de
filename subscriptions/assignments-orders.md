@@ -3,15 +3,16 @@ title: Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen| V
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortung von Administratoren hinsichtlich des Nachverfolgens von Benutzerzuweisungen und des Verarbeitens von Aufträgen.
-ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78235224"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232701"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Nachverfolgen der Benutzerzuweisungen und der Verarbeitung von Aufträgen
 Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie die Nutzung von Visual Studio und die Verarbeitung von Aufträgen nachverfolgen und darauf achten, ob die Nutzung im Vergleich zu dem Zeitplan angestiegen ist, der in der Volumenlizenzierungsvereinbarung oder der Microsoft Produkt- und Servicevereinbarung festgelegt wurde. Das neue Administrationsportal für Visual Studio-Abonnements hat zur Vereinfachung dieser Aufgabe einen einfachen, hilfreichen Tracker implementiert, der die verfügbaren und bereits verwendeten Lizenzen anzeigt.

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235092"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550029"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -402,10 +402,6 @@ Verwenden Sie Chrome für dieses Szenario.
 1. Schließen Sie alle Fenster des Zielbrowsers.
 
    Andere Browserinstanzen können das Öffnen des Browsers bei aktiviertem Debuggen verhindern. (Möglicherweise werden Browsererweiterungen ausgeführt, die den vollständigen Debugmodus verhindern. Wenn dies der Fall ist, müssen Sie den Task-Manager öffnen, um unerwartete Chrome-Instanzen zu finden.)
-
-   ::: moniker range=">=vs-2019"
-   Beenden Sie auch alle Instanzen von Chrome, wenn Sie Microsoft Edge (Chromium) verwenden. Da beide Browser die Chromium-Codebase nutzen, führt dies zu den besten Ergebnissen.
-   ::: moniker-end
 
    ::: moniker range=">=vs-2019"
    Beenden Sie auch alle Instanzen von Chrome, wenn Sie Microsoft Edge (Chromium) verwenden. Da beide Browser die Chromium-Codebase nutzen, führt dies zu den besten Ergebnissen.

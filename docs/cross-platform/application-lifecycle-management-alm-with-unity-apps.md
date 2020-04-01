@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77272265"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232949"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps mit Unity-Apps
 
@@ -93,7 +93,7 @@ Referenzlink: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 |Manuelle Tests|Ja||
 |Test-Manager (Aufzeichnung und Wiedergabe von Tests)|Nur Windows-Geräte und Android-Emulatoren||
 |Codeabdeckung|n/v|Nicht zutreffend, da Komponententests in Unity und nicht in Visual Studio erfolgen (siehe unten).|
-|[Ausführen von Komponententests für Code](../test/unit-test-your-code.md)|In Unity, nicht in Visual Studio|Unity bietet ein eigenes Komponententest-Framework als Teil der [Unity-Testtools](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). Unit-Testergebnisse werden in Unity gemeldet und nicht in Visual Studio angezeigt.|
+|[Ausführen von Komponententests für Code](../test/unit-test-your-code.md)|In Unity, nicht in Visual Studio|Unity bietet ein eigenes Komponententest-Framework als Teil der [Unity-Testtools](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store). Unit-Testergebnisse werden in Unity gemeldet und nicht in Visual Studio angezeigt.|
 |[Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nein|Tests der programmieren UI basieren auf lesbaren Steuerelementen in der App-Benutzeroberfläche. Unity-Apps sind grafischer Art, sodass Inhalte nicht von den Tools für Tests der programmierten UI gelesen werden können.|
 
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität
@@ -124,4 +124,4 @@ Verweislink: **[Überwachen mit HockeyApp](https://www.hockeyapp.net/features/)*
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
-|Absturzanalysen, Telemetrie und Betaverteilung|Ja|HockeyApp wird hauptsächlich für das Verarbeiten und Abrufen Absturzberichte verwendet.<br /><br /> Für die Telemetrie von C#-Skripts kann ein Analytics-Framework verwendet werden, vorausgesetzt, dass es auf der von Unity verwendeten Version von .NET ausgeführt wird. Dies ermöglicht allerdings lediglich Analysen in Spieleskripts und nicht tiefer in der Unity-Engine. Im Moment gibt es kein Plug-In für Application Insights; es stehen jedoch Plug-Ins für andere Analyselösungen wie etwa [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) und [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) zur Verfügung. Dienste wie Unity Analytics, die die Art eines Unity-Projekts verstehen, liefern natürlich deutlich aussagekräftigere Analysen als generische Frameworks.|
+|Absturzanalysen, Telemetrie und Betaverteilung|Ja|HockeyApp wird hauptsächlich für das Verarbeiten und Abrufen Absturzberichte verwendet.<br /><br /> Für die Telemetrie von C#-Skripts kann ein Analytics-Framework verwendet werden, vorausgesetzt, dass es auf der von Unity verwendeten Version von .NET ausgeführt wird. Dies ermöglicht allerdings lediglich Analysen in Spieleskripts und nicht tiefer in der Unity-Engine. Im Moment gibt es kein Plug-In für Application Insights; es stehen jedoch Plug-Ins für andere Analyselösungen wie etwa [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) und [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) zur Verfügung. Dienste wie Unity Analytics, die die Art eines Unity-Projekts verstehen, liefern natürlich deutlich aussagekräftigere Analysen als generische Frameworks.|

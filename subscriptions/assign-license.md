@@ -3,15 +3,16 @@ title: Zuweisen von Lizenzen für Visual Studio-Abonnements | Microsoft-Dokument
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.openlocfilehash: 3d444f930d1fab166d437911b5609caf75cad09e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 87334251532dbaa127d4def8c33a9814c28d42e1
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263309"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232707"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements
 Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.

@@ -3,15 +3,16 @@ title: Anmelden bei Visual Studio-Abonnements mit einem GitHub-Konto | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie sich mit einem GitHub-Konto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: a0a2f69ab3cbab3fdf6c35d9407a59a7c7d49eb1
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947081"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233227"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit einem GitHub-Konto 
 

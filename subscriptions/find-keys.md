@@ -3,15 +3,16 @@ title: Suchen und Beanspruchen von Product Keys in Visual Studio-Abonnements | M
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Suchen, Beanspruchen und Exportieren Ihrer Product Keys in Visual Studio-Abonnements.
-ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937494"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232487"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Suchen und Beanspruchen von Product Keys in Visual Studio-Abonnements
 In diesem Artikel wird das Suchen, Beanspruchen und Exportieren von Product Keys über https://my.visualstudio.com/productkeys erläutert.  Weitere Informationen zum Aktivieren eines Produkts mit einem Product Key, den Einzelhandels- und Volumenlizenzversionen von Product Keys und den Anspruchseinschränkungen für Product Keys pro Tag finden Sie in der [Übersicht über Product Keys](product-keys.md).

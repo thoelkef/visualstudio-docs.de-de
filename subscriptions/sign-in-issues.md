@@ -3,15 +3,16 @@ title: Probleme beim Anmelden bei Visual Studio-Abonnements | Microsoft-Dokument
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: In diesem Artikel erfahren Sie etwas über Probleme, die bei der Anmeldung bei Visual Studio-Abonnements auftreten können.
-ms.openlocfilehash: 8175a1d8d2c79aecad25952eebdf734e0a9d29d2
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509017"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233247"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Probleme beim Anmelden bei Visual Studio-Abonnements
 Um Ihr Visual Studio-Abonnement zu nutzen, müssen Sie sich zuerst anmelden.  Je nach Abonnement haben Sie es entweder mit einem Microsoft-Konto (MSA) oder einer Azure Active Directory-Identität (AAD) eingerichtet.  In diesem Artikel werden einige der Probleme besprochen, die beim Anmelden bei Ihrem Abonnement auftreten können.

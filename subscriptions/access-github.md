@@ -3,15 +3,16 @@ title: 'Angebot: Visual Studio kombiniert mit GitHub | Microsoft-Dokumentation'
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Lernen Sie unser neues Angebot für Visual Studio in Kombination mit GitHub kennen.
-ms.openlocfilehash: f8cfe09d6c9dc7608684ccf80238db4ac066fc20
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: d2d4e3d3bef5b4e9c6f7cb4ba93f8b62cc13275a
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78894386"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232786"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
 
