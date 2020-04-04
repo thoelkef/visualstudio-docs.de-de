@@ -1,20 +1,21 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Visual Studio Tools für KI
+title: Visual Studio-Tools für KI
 metadata:
   document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
   title: Visual Studio Tools for AI | Microsoft-Dokumentation
   ms.prod: visual-studio-windows
   ms.technology: vs-ai-tools
-  author: lisawong19
-  ms.author: liwong
-  manager: routlaw
+  author: jillre
+  ms.author: jillfra
+  manager: jillfra
+  monikerRange: vs-2017
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
   description: 'Visual Studio Tools for AI sind eine integrierte Entwicklungsumgebung für das Erstellen, Testen und Bereitstellen von Deep Learning-Lösungen. Erfahren Sie anhand von unseren Schnellstarts, Tutorials und Beispielen, wie Sie KI-Tools verwenden können.'
 sections:
-  - title: Fünfminütige Schnellstarts
+  - title: 5-minütige Schnellstarts
     items:
       - type: paragraph
         text: 'Erfahren Sie, wie Sie die Deep Learning-Lösung mit folgenden Methoden ausführen können:'
@@ -33,7 +34,7 @@ sections:
         style: ordered
         items:
           - html: <a href="/visualstudio/ai/tensorflow-vm">Trainieren eines TensorFlow-Modells in der Cloud</a>
-  - title: Beispiele
+  - title: Proben
     items:
       - type: list
         style: unordered

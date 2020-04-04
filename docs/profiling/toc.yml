@@ -12,7 +12,7 @@
       href: quickstart-cpu-usage-native.md
     - name: Analysieren der CPU-Auslastung (ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Profilerstellung für die Anwendungsleistung in Visual Studio
       href: beginners-guide-to-performance-profiling.md
@@ -22,22 +22,22 @@
   items:
     - name: Ausführen von Profilerstellungstools mit oder ohne Debugger
       href: running-profiling-tools-with-or-without-the-debugger.md
-- name: Gewusst-wie-Anleitungen
+- name: Anleitungen
   items:
-    - name: CPU-Auslastung
-      href: cpu-usage.md
     - name: Verwenden von PerfTips
       href: perftips.md
+    - name: CPU-Auslastung
+      href: cpu-usage.md
     - name: Speicherauslastung
       items:
         - name: Analysieren der Speicherauslastung
           href: analyze-memory-usage.md
         - name: Analysieren der Speicherauslastung für .NET-Objekte
           href: dotnet-alloc-tool.md
-        - name: Ereignisse für benutzerdefinierte native ETW-Heaps
-          href: custom-native-etw-heap-events.md
         - name: Speicherauslastung ohne Debuggen
           href: memory-usage-without-debugging2.md
+        - name: Ereignisse für benutzerdefinierte native ETW-Heaps
+          href: custom-native-etw-heap-events.md
     - name: Messen der Leistung über die Befehlszeile
       href: profile-apps-from-command-line.md
     - name: Analysieren der GPU-Nutzung
@@ -188,11 +188,11 @@
                           href: dotnet-framework-usage-performance-rules.md
                         - name: 'DA0001: StringBuilder für Verkettungen verwenden'
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: Häufige GC2-Auflistung'
+                        - name: 'DA0005: Häufige GC2-Auflistungen'
                           href: da0005-frequent-gc2-collections.md
                         - name: 'DA0006: Equals() für Werttypen überschreiben'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung'
+                        - name: 'DA0007: Vermeiden der Verwendung von Ausnahmen für die Ablaufsteuerung'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
                         - name: 'DA0010: Speicherintensive GetHashCode-Funktionen'
                           href: da0010-expensive-gethashcode.md
@@ -202,7 +202,7 @@
                           href: da0012-significant-amount-of-reflection.md
                         - name: 'DA0013: Umfangreiche Verwendung von String.Split oder String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt'
+                        - name: 'DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt.'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
                         - name: 'DA0021: Hohes Maß an Garbage Collections der Generation 1'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
@@ -210,11 +210,11 @@
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
                         - name: 'DA0023: Hohe GC-CPU-Zeit'
                           href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024: Übermäßige GC-CPU-Zeit'
+                        - name: 'DA0024: Übermäßige GC-CPU-Zeit.'
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: Hohes Maß an Sperrkonflikten'
+                        - name: 'DA0038: Hohes Maß an Sperrkonflikten.'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: Sehr hohes Maß an Sperrkonflikten'
+                        - name: 'DA0039: Sehr hohes Maß an Sperrkonflikten.'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Leistungsregeln für Speicher und Auslagerung
                       items:
@@ -228,7 +228,7 @@
                       items:
                         - name: Übersicht über Verwendungsregeln für Profilerstellungstools
                           href: profiling-tools-usage-rules.md
-                        - name: 'DA0002: VSPerfCorProf.dll fehlt'
+                        - name: 'DA0002: „VSPerfCorProf.dll“ fehlt'
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: 'DA0003: Zahlreiche Kernelbeispiele'
                           href: da0003-many-kernel-samples.md
@@ -238,7 +238,7 @@
                           href: da0008-few-samples-collected.md
                         - name: 'DA0026: Übermäßige CPU-Zeit für die Kernelverarbeitung'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: Nicht unterstützte CLR-Version'
+                        - name: 'DA0029: Nicht unterstützte CLR-Version.'
                           href: da0029-unsupported-clr-version.md
                         - name: 'DA0030: Sammeln Sie Ebeneninteraktions-Messdaten für Datenbankprojekte.'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
@@ -246,17 +246,17 @@
                       items:
                         - name: Übersicht über Leistungsregeln für die Ressourcenüberwachung
                           href: resource-monitoring-performance-rules.md
-                        - name: 'DA0501: Durchschnittliche CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird'
+                        - name: 'DA0501: Durchschnittliche CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird.'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: Maximale CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird'
+                        - name: 'DA0502: Maximale CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird.'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: Durchschnittliche Arbeitsseite in Bytes für den Prozess, für den die Profilerstellung ausgeführt wird'
+                        - name: 'DA0503: Durchschnittliche Arbeitsseite in Bytes für den Prozess, für den die Profilerstellung ausgeführt wird.'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0504: Maximale Arbeitsseite in Bytes für den Prozess, für den die Profilerstellung ausgeführt wird'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0505: Durchschnittliche private Bytes, die für den Prozess zugeordnet sind, für den die Profilerstellung ausgeführt wird'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: Maximale private Bytes, die für den Prozess zugeordnet sind, für den die Profilerstellung ausgeführt wird'
+                        - name: 'DA0506: Höchstwert für „Private Bytes“, der dem Prozess, für den die Profilerstellung ausgeführt wird, zugeordnet ist'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Leistungsberichtansichten
               items:
@@ -382,7 +382,7 @@
                   items:
                     - name: Übersicht über Ebeneninteraktionsansichten
                       href: tier-interaction-views.md
-                    - name: Ansicht "Ebeneninteraktionen"
+                    - name: Ebeneninteraktionen (Ansicht)
                       href: tier-interactions-view.md
             - name: Anpassen von Ansichten
               items:
@@ -572,7 +572,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Start
+                    - name: Starten
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
@@ -580,7 +580,7 @@
                       href: output.md
                     - name: WinCounter
                       href: wincounter.md
-                    - name: Leistungsindikator
+                    - name: Zähler
                       href: counter.md
                     - name: WaitStart
                       href: waitstart.md
@@ -604,13 +604,13 @@
                       href: gc-vsperfcmd.md
                     - name: Starten
                       href: launch.md
-                    - name: Attach
+                    - name: Anfügen
                       href: attach.md
                     - name: Args
                       href: args.md
                     - name: Mark
                       href: mark.md
-                    - name: Detach
+                    - name: Trennen
                       href: detach.md
                     - name: PF
                       href: pf.md
@@ -668,7 +668,7 @@
           href: profiling-aspnet-load-tests.md
         - name: Problembehandlung bei Leistungstools
           href: troubleshooting-performance-tools-issues.md
-    - name: Concurrency Visualizer
+    - name: Parallelitätsschnellansicht
       items:
         - name: Übersicht über die Parallelitätsschnellansicht
           href: concurrency-visualizer.md
