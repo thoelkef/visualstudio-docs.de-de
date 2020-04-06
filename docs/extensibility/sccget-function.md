@@ -1,5 +1,5 @@
 ---
-title: SccGet-Funktion | Microsoft-Dokumentation
+title: SccGet-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ad087af24723c6ccbf901280c7db748e2af461a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332121"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700890"
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
-Diese Funktion ruft eine Kopie einer oder mehreren Dateien für das Anzeigen von und zu kompilieren, aber nicht zur Bearbeitung ab. In den meisten Systemen werden die Dateien als schreibgeschützt markiert.
+Diese Funktion ruft eine Kopie einer oder mehrerer Dateien zum Anzeigen und Kompilieren, aber nicht zum Bearbeiten ab. In den meisten Systemen werden die Dateien als schreibgeschützt markiert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,74 +38,74 @@ SCCRTN SccGet(
 ### <a name="parameters"></a>Parameter
  pvContext
 
-[in] Die Context-Struktur, der das Quellcodeverwaltungs-Plug-in.
+[in] Die Kontextstruktur des Quellcodeverwaltungs-Plug-Ins.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
 
  nFiles
 
-[in] Anzahl der angegebenen Dateien in die `lpFileNames` Array.
+[in] Anzahl der im `lpFileNames` Array angegebenen Dateien.
 
  lpFileNames
 
-[in] Array von vollqualifizierten Namen der Dateien abgerufen werden sollen.
+[in] Array voll qualifizierter Namen von Dateien, die abgerufen werden sollen.
 
- Bestanden
+ Foptions
 
-[in] Befehl Flags (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).
+[in] Befehlsflags`SCC_GET_ALL` `SCC_GET_RECURSIVE`( , ).
 
  pvOptions
 
-[in] Quellcodeverwaltungs-plug-in spezifischen Optionen.
+[in] Quellcodeverwaltung Plug-in-spezifische Optionen.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Erfolg des Vorgangs zum Abrufen.|
-|SCC_E_FILENOTCONTROLLED|Die Datei ist nicht unter quellcodeverwaltung.|
-|SCC_E_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem wird dieser Vorgang nicht unterstützt.|
-|SCC_E_FILEISCHECKEDOUT|Die Datei, die der Benutzer zurzeit ausgecheckt hat, kann nicht abgerufen werden.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
-|SCC_E_NOSPECIFIEDVERSION|Eine ungültige Version oder Datum/Uhrzeit angegeben.|
-|SCC_E_NONSPECIFICERROR|Unspezifischen Fehlers; Datei wurde nicht synchronisiert.|
-|SCC_I_OPERATIONCANCELED|Der Vorgang abgebrochen, vor dem Abschluss.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht autorisiert, um diesen Vorgang auszuführen.|
+|SCC_OK|Erfolg des Betriebs.|
+|SCC_E_FILENOTCONTROLLED|Die Datei befindet sich nicht unter Quellcodeverwaltung.|
+|SCC_E_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem unterstützt diesen Vorgang nicht.|
+|SCC_E_FILEISCHECKEDOUT|Die Datei, die der Benutzer derzeit ausgecheckt hat, kann nicht abbekommen.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quellcodeverwaltungssystem ist ein Problem auftritt, wahrscheinlich aufgrund von Netzwerk- oder Konfliktproblemen. Es wird ein Wiederholungsversuch empfohlen.|
+|SCC_E_NOSPECIFIEDVERSION|Es wurde eine ungültige Version oder ein Datum/eine Uhrzeit angegeben.|
+|SCC_E_NONSPECIFICERROR|Unspezifisches Versagen; Datei wurde nicht synchronisiert.|
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor Abschluss abgebrochen.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diese Operation auszuführen.|
 
-## <a name="remarks"></a>Hinweise
- Diese Funktion wird mit einem Zähler und ein Array von Namen der Dateien abgerufen werden sollen, aufgerufen. Wenn die IDE das Flag übergibt `SCC_GET_ALL`, dies bedeutet, dass die Elemente in `lpFileNames` sind keine Dateien jedoch Verzeichnisse und dass alle Dateien unter quellcodeverwaltung in die angegebenen Verzeichnisse abgerufen werden sollen.
+## <a name="remarks"></a>Bemerkungen
+ Diese Funktion wird mit einer Anzahl und einem Array von Namen der abzurufenden Dateien aufgerufen. Wenn die IDE `SCC_GET_ALL`das Flag überschreitet, `lpFileNames` bedeutet dies, dass es sich bei den darin enthaltenen Elementen nicht um Dateien, sondern um Verzeichnisse handelt und dass alle Dateien, die unter Quellcodeverwaltung in den angegebenen Verzeichnissen stehen, abgerufen werden sollen.
 
- Die `SCC_GET_ALL` Flag kombiniert werden können, mit der `SCC_GET_RECURSIVE` Flag, um alle Dateien in den angegebenen Verzeichnissen und auch alle Unterverzeichnisse abzurufen.
+ Das `SCC_GET_ALL` Flag kann mit `SCC_GET_RECURSIVE` dem Flag kombiniert werden, um alle Dateien in den angegebenen Verzeichnissen und allen Unterverzeichnissen abzurufen.
 
 > [!NOTE]
-> `SCC_GET_RECURSIVE` sollte nie übergeben werden, ohne `SCC_GET_ALL`. Beachten Sie, dass bei Verzeichnissen *C:\A* und *C:\A\B* werden bei einem rekursiven Get übergeben *C:\A\B* und allen seinen Unterverzeichnisse tatsächlich zweimal abgerufen werden soll. Es obliegt der IDE – und nicht den Quellcode-Plug-ins, um sicherzustellen, dass Duplikate, wie diese aus dem Array gespeichert werden.
+> `SCC_GET_RECURSIVE`sollte nie ohne `SCC_GET_ALL`übergeben werden. Beachten Sie außerdem, dass, wenn die Verzeichnisse *C:-A* und *C:-A-B* für einen rekursiven Abruf übergeben werden, *C:-A-B* und alle unterverzeichnisse tatsächlich zweimal abgerufen werden. Es liegt in der Verantwortung der IDE – und nicht der Quellsteuerungs-Plug-Ins –, sicherzustellen, dass Duplikate wie diese aus dem Array herausgehalten werden.
 
- Schließlich auch, wenn ein Quellcode-Plug-in angegebene die `SCC_CAP_GET_NOUI` Flag bei der Initialisierung, der angibt, dass er verfügt nicht über eine Benutzeroberfläche für einen Get-Befehl, der diese Funktion kann noch von der IDE zum Abrufen von Dateien aufgerufen werden. Das Flag bedeutet einfach, dass die IDE wird ein Get-Menüelement nicht angezeigt, dass das plug-in nicht erwartet, dass keine Benutzeroberfläche bereitstellt.
+ Selbst wenn ein Quellcodeverwaltungs-Plug-In `SCC_CAP_GET_NOUI` das Flag bei der Initialisierung angegeben hat, was darauf hinweist, dass es keine Benutzeroberfläche für einen Get-Befehl hat, kann diese Funktion weiterhin von der IDE aufgerufen werden, um Dateien abzurufen. Das Flag bedeutet einfach, dass die IDE kein Menüelement Abrufen anzeigt und dass vom Plug-In keine Benutzeroberfläche erwartet wird.
 
 ## <a name="rename-files-and-sccget"></a>Umbenennen von Dateien und SccGet
- Problem: ein Benutzer checkt eine Datei, z. B. *a.txt*, und ändert diese. Vor dem *a.txt* eingecheckt werden kann, wird ein zweiter Benutzer *a.txt* zu *"b.txt"* in der Quellcode-Verwaltungsdatenbank checkt *"b.txt"* , macht Einige Änderungen an der Datei, und die Datei eingecheckt. Der erste Benutzer sollen die Änderungen, die von der zweite Benutzer vorgenommen werden, damit der erste Benutzer ihre lokalen Version von benennt *a.txt* Datei *"b.txt"* und führt einen Get für die Datei. Allerdings der lokale Cache, das verfolgt Versionsnummern weiterhin davon aus der ersten Version von *a.txt* lokal gespeichert und daher der quellcodeverwaltung nicht die Unterschiede auflösen kann.
+ Situation: Ein Benutzer checkt eine Datei aus, z. B. *a.txt*, und ändert sie. Bevor *a.txt* eingecheckt werden kann, benennt ein zweiter Benutzer *a.txt* in *b.txt* in der Quellcodeverwaltungsdatenbank um, checkt *b.txt*aus, nimmt einige Änderungen an der Datei vor und checkt die Datei ein. Der erste Benutzer möchte, dass die vom zweiten Benutzer vorgenommenen Änderungen vorgenommen werden, damit der erste Benutzer seine lokale Version der *datei a.txt* in *b.txt* umbenennt und die Datei abholt. Der lokale Cache, der Versionsnummern nachverfolgt, ist jedoch weiterhin der Ansicht, dass die erste Version von *a.txt* lokal gespeichert ist, sodass die Quellcodeverwaltung die Unterschiede nicht beheben kann.
 
- Es gibt zwei Möglichkeiten, dieses Problem zu beheben, in denen der lokale Cache von Source-Control-Versionen mit der Datenbank synchronisiert wird:
+ Es gibt zwei Möglichkeiten, diese Situation zu beheben, in der der lokale Cache von Quellcodeverwaltungsversionen nicht mehr mit der Quellcodeverwaltungsdatenbank synchronisiert ist:
 
-1. Lassen Sie Umbenennen einer Datei im Quellcode-Verwaltungsdatenbank, die derzeit ausgecheckt ist zu, nicht.
+1. Erlauben Sie nicht, eine Datei in der derzeit ausgecheckten Quellcodeverwaltungsdatenbank umzubenennen.
 
-2. Führen Sie die Entsprechung von "Löschen alte" gefolgt von "Neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.
+2. Machen Sie das Äquivalent von "alt löschen" gefolgt von "neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.
 
-    1. Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über die Umbenennung *a.txt* zu *"b.txt"* im Quellcode-Verwaltungsdatenbank.
+    1. Rufen Sie die [SccQueryChanges-Funktion](../extensibility/sccquerychanges-function.md) auf, um mehr über die Umbenennung von *a.txt* in *b.txt* in der Quellcodeverwaltungsdatenbank zu erfahren.
 
-    2. Benennen Sie die lokale *a.txt* zu *"b.txt"* .
+    2. Benennen Sie die lokale *dateia.txt* in *b.txt*um.
 
-    3. Rufen Sie die `SccGet` -Funktion für beide *a.txt* und *"b.txt"* .
+    3. Rufen `SccGet` Sie die Funktion sowohl für *a.txt* als auch für *b.txt*auf.
 
-    4. Da *a.txt* existiert nicht in der Quellcode-Verwaltungsdatenbank wird der lokalen Cache des fehlenden gelöscht *a.txt* Versionsinformationen.
+    4. Da *a.txt* in der Quellcodeverwaltungsdatenbank nicht vorhanden ist, wird der lokale Versionscache der fehlenden *a.txt-Versionsinformationen* gelöscht.
 
-    5. Die *"b.txt"* ausgecheckten Datei wird zusammengeführt, mit dem Inhalt der lokalen *"b.txt"* Datei.
+    5. Die ausgecheckte *b.txt-Datei* wird mit dem Inhalt der lokalen *b.txt-Datei* zusammengeführt.
 
-    6. Die aktualisierte *"b.txt"* Datei jetzt eingecheckt werden kann.
+    6. Die aktualisierte *b.txt-Datei* kann nun eingecheckt werden.
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
-- [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [Bitflags, die von bestimmten Befehlen verwendet werden](../extensibility/bitflags-used-by-specific-commands.md)

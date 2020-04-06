@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Microsoft-Dokumentation
+title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9da7b995826b905af7faf6cac3fa0fc3d5ceba5e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316203"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713395"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
-Gibt an, welche Informationen über einen Thread abgerufen werden sollen.
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
+Gibt an, welche Informationen zu einem Thread abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,41 +54,41 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
 ## <a name="fields"></a>Felder
  `TPF_ID`\
- Initialisieren und Verwenden der `dwThreadId` Feld der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur.
+ Initialisieren/verwenden `dwThreadId` Sie das Feld der [THREADPROPERTIES-Struktur.](../../../extensibility/debugger/reference/threadproperties.md)
 
  `TPF_SUSPENDCOUNT`\
- Initialisieren und Verwenden der `dwSuspendCount` Feld der `THREADPROPERTIE`S-Struktur.
+ Initialisieren/verwenden `dwSuspendCount` Sie das `THREADPROPERTIE`Feld der S-Struktur.
 
  `TPF_STATE`\
- Initialisieren und Verwenden der `dwThreadState` Feld der `THREADPROPERTIE`S-Struktur.
+ Initialisieren/verwenden `dwThreadState` Sie das `THREADPROPERTIE`Feld der S-Struktur.
 
  `TPF_PRIORITY`\
- Initialisieren und Verwenden der `bstrPriority` Feld der `THREADPROPERTIE`S-Struktur.
+ Initialisieren/verwenden `bstrPriority` Sie das `THREADPROPERTIE`Feld der S-Struktur.
 
  `TPF_NAME`\
- Initialisieren und Verwenden der `bstrName` Feld der `THREADPROPERTIE`S-Struktur.
+ Initialisieren/verwenden `bstrName` Sie das `THREADPROPERTIE`Feld der S-Struktur.
 
  `TPF_LOCATION`\
- Initialisieren und Verwenden der `bstrLocation` Feld der `THREADPROPERTIE`S-Struktur.
+ Initialisieren/verwenden `bstrLocation` Sie das `THREADPROPERTIE`Feld der S-Struktur.
 
  `TPF_ALLFIELDS`\
  Gibt alle Felder an.
 
-## <a name="remarks"></a>Hinweise
- Diese Werte werden übergeben, als Argument an die [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Methode, um die Felder anzugeben der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) sind, dass die Struktur initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+ Diese Werte werden als Argument an die [GetThreadProperties-Methode](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) übergeben, um anzugeben, welche Felder der [THREADPROPERTIES-Struktur](../../../extensibility/debugger/reference/threadproperties.md) initialisiert werden sollen.
 
- Diese Werte werden auch in verwendet `dwFields` Mitglied der `THREADPROPERTIES` Struktur, um anzugeben, welche Felder verwendet und gültig sind.
+ Diese Werte werden `dwFields` auch in `THREADPROPERTIES` Member der Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
 
- Diese Flags können kombiniert werden, mit einer bitweisen `OR`.
+ Diese Flags können mit einem `OR`bitwise kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

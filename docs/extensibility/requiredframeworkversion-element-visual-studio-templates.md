@@ -1,5 +1,5 @@
 ---
-title: RequiredFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: RequiredFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744759"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701502"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion-Element (Visual Studio-Vorlagen)
 
-Gibt die Mindestversion von .NET Framework, die von der Vorlage erforderlich ist. Es bewirkt, dass die **Framework-Zielversion** Dropdownliste aus, um die anzuzeigende der **neues Projekt** Dialogfeld. Die `RequiredFrameworkVersion` Element bestimmt außerdem, den niedrigsten Wert in der Dropdownliste verfügbar.
+Gibt die Mindestversion von .NET Framework an, die für die Vorlage erforderlich ist. Dadurch wird die Dropdown-Liste **Zielframeworkversion** im Dialogfeld **Neues Projekt** angezeigt. Das `RequiredFrameworkVersion` Element bestimmt auch den niedrigsten in der Dropdown-Liste verfügbaren Wert.
 
 > [!IMPORTANT]
-> Ab Visual Studio 2017 Version 15.6, die **Framework-Zielversion** Dropdown ist nicht mehr als einen Filter für die angezeigten Vorlagen in die **Vorlagen** Teil der **neues Projekt** Dialogfeld. Stattdessen fungiert der Dropdown-Liste als eine Framework-Auswahl für die ausgewählte Vorlage ein.
+> Ab Visual Studio 2017 Version 15.6 ist die Dropdownliste **Zielframeworkversion** kein Filter mehr für angezeigte Vorlagen im Abschnitt **Vorlagen** des Dialogfelds **Neues Projekt.** Stattdessen fungiert die Dropdown-Liste als Frameworkauswahl für die ausgewählte Vorlage.
 
- \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
+ \<VSTemplate \<> TemplateData> \<RequiredFrameworkVersion>
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,29 +38,29 @@ Gibt die Mindestversion von .NET Framework, die von der Vorlage erforderlich ist
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie sie entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld Neues **Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss die kleinstmögliche Versionsnummer des .NET Framework, die für die Vorlage erforderlich ist.
+ Der Text muss die Mindestversionsnummer von .NET Framework sein, die für die Vorlage erforderlich ist.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-`RequiredFrameworkVersion` ist ein optionales Element. Verwenden Sie dieses Element nur dann, wenn die Vorlage unterstützt, eine bestimmte mindestens erforderliche Version (und höher, sofern vorhanden) von .NET Framework. Bei Angabe der `RequiredFrameworkVersion` Element und die Vorlage eine bestimmte mindestens erforderliche Version von .NET Framework unterstützt nicht die **Zielframework-Version** Dropdownliste angezeigt wird, wenn sie nicht anwendbar ist.
+`RequiredFrameworkVersion` ist ein optionales Element. Verwenden Sie dieses Element nur, wenn die Vorlage eine bestimmte Mindestversion (und ggf. spätere Versionen) von .NET Framework unterstützt. Wenn Sie `RequiredFrameworkVersion` das Element angeben und Ihre Vorlage keine bestimmte Mindestversion von .NET Framework unterstützt, wird die Dropdown-Liste **Target Framework Version** angezeigt, wenn sie nicht anwendbar ist.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt die Metadaten für die Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] -Klassenvorlage.
+Im folgenden Beispiel werden die [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Metadaten für eine Standardklassenvorlage veranschaulicht.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,10 +80,10 @@ Das folgende Beispiel zeigt die Metadaten für die Standard [!INCLUDE[csprcs](..
 </VSTemplate>
 ```
 
-In diesem Beispiel ist die Mindestversion von .NET Framework, die von der Vorlage erforderlich ist, der durch dargestellt `RequiredFrameworkVersion`, 3.0 ist. Ein Projekt mit dieser Vorlage erstellt wurde, kann .NET Framework-Versionen 3.0 beginnend abzielen.
+In diesem Beispiel ist die Mindestversion von .NET Framework, `RequiredFrameworkVersion`die für die Vorlage erforderlich ist, dargestellt durch , 3.0. Ein mit dieser Vorlage erstelltes Projekt kann auf .NET Framework-Versionen ab 3.0 abzielen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Übersicht über .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md)

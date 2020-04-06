@@ -1,34 +1,34 @@
 ---
-title: Laden von VSPackages | Microsoft-Dokumentation
+title: VSPackages laden | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7c2a558abc928524813419df6b7848d34f0f3e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309573"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702963"
 ---
-# <a name="load-vspackages"></a>Laden von VSPackages
-VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität erforderlich ist. Beispielsweise wird eine VSPackage geladen, wenn Visual Studio verwendet eine Projektzuordnungsinstanz oder ein Dienst, den das VSPackage implementiert. Dieses Feature heißt verzögertes Laden, die nach Möglichkeit zur Verbesserung der Leistung verwendet wird.
+# <a name="load-vspackages"></a>VSPackages laden
+VSPackages werden nur dann in Visual Studio geladen, wenn ihre Funktionalität erforderlich ist. Beispielsweise wird ein VSPackage geladen, wenn Visual Studio eine Projektfactory oder einen Dienst verwendet, den das VSPackage implementiert. Diese Funktion wird als verzögertes Laden bezeichnet, das nach Möglichkeit zur Verbesserung der Leistung verwendet wird.
 
 > [!NOTE]
-> Visual Studio kann bestimmte VSPackage-Informationen, z. B. der Befehle bestimmen, die eine VSPackage bietet, ohne Sie zu das VSPackage zu laden.
+> Visual Studio kann bestimmte VSPackage-Informationen ermitteln, z. B. die Befehle, die ein VSPackage bietet, ohne das VSPackage zu laden.
 
- VSPackages kann z. B. Automatisches Laden, in einem bestimmten Benutzerkontext von Benutzeroberfläche (UI) festgelegt werden, wenn eine Projektmappe geöffnet ist. Die <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> -Attribut wird von diesem Kontext.
+ VSPackages kann so eingestellt werden, dass es in einem bestimmten Benutzeroberflächenkontext automatisch geladen wird, z. B. wenn eine Lösung geöffnet ist. Das <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Attribut legt diesen Kontext fest.
 
-### <a name="autoload-a-vspackage-in-a-specific-context"></a>Automatisches Laden eines VSPackages in einem bestimmten Kontext
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>Automatisches Laden eines VSPackage in einem bestimmten Kontext
 
-- Hinzufügen der `ProvideAutoLoad` -Attribut auf die VSPackage-Attribute:
+- Fügen `ProvideAutoLoad` Sie das Attribut den VSPackage-Attributen hinzu:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -39,22 +39,22 @@ VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität 
     {. . .}
     ```
 
-     Finden Sie unter den aufgelisteten Felder <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> für eine Liste mit den Benutzeroberfläche-Kontexte und die GUID-Werte.
+     Eine Liste der UI-Kontexte und deren GUID-Werte finden Sie in den aufgezählten Feldern. <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>
 
-- Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.
+- Legen Sie einen <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Haltepunkt in der Methode fest.
 
-- Das VSPackage zu erstellen und mit dem Debuggen beginnen.
+- Erstellen Sie das VSPackage, und beginnen Sie mit dem Debuggen.
 
-- Laden Sie eine Projektmappe, oder erstellen.
+- Laden Sie eine Lösung, oder erstellen Sie eine.
 
-     Das VSPackage lädt, und die Ausführung am Haltepunkt beendet.
+     Das VSPackage wird geladen und stoppt am Haltepunkt.
 
-## <a name="force-a-vspackage-to-load"></a>Erzwingen eines VSPackage geladen
- Unter bestimmten Umständen möglicherweise eine VSPackage Erzwingen von einem anderen VSPackage geladen werden. Eine einfache VSPackage kann z. B. eine größeren VSPackage in einem Kontext laden, die nicht als eine CMDUIContext verfügbar ist.
+## <a name="force-a-vspackage-to-load"></a>Erzwingen des Ladens eines VSPackage
+ Unter bestimmten Umständen muss ein VSPackage das Laden eines anderen VSPackage erzwingen. Beispielsweise kann ein leichtes VSPackage ein größeres VSPackage in einem Kontext laden, der nicht als CMDUIContext verfügbar ist.
 
- Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> -Methode zum Erzwingen eines VSPackages zu laden.
+ Sie können <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> die Methode verwenden, um das Laden eines VSPackage zu erzwingen.
 
-- Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode des VSPackages, die erzwingt, einem anderen VSPackage dass zu laden:
+- Fügen Sie diesen <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Code in die Methode des VSPackage ein, die das Laden eines anderen VSPackage erzwingt:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;
@@ -67,9 +67,9 @@ VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität 
 
     ```
 
-     Bei der Initialisierung des VSPackages wird gezwungen `PackageToBeLoaded` geladen.
+     Wenn das VSPackage initialisiert wird, wird das Laden erzwingen. `PackageToBeLoaded`
 
-     -Force-Loading sollte nicht für die VSPackage-Kommunikation verwendet werden. Verwendung [verwenden und Dienste bereitstellen](../extensibility/using-and-providing-services.md) stattdessen.
+     Das Laden von Kraft sollte nicht für die VSPackage-Kommunikation verwendet werden. Verwenden Sie stattdessen [Use and provide services.](../extensibility/using-and-providing-services.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSPackages](../extensibility/internals/vspackages.md)

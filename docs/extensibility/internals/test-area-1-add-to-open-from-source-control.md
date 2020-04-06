@@ -1,87 +1,87 @@
 ---
-title: 'Test Bereich 1: Hinzufügen zu-öffnen aus der Quell Code Verwaltung | Microsoft-Dokumentation'
+title: 'Testbereich 1: Hinzufügen von To-Open von der Quellcodeverwaltung | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ea7cd49ee371ce78e71a311ed0184b8f7259365
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6ac7b8e5a60fe25ac22272cc28fc3ed6f903b058
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722717"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704677"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Test Bereich 1: Hinzufügen zu/öffnen aus der Quell Code Verwaltung
-Dieser Testbereich der Quell Code Verwaltung umfasst das Platzieren von Projektmappen oder Projekten in der Quell Code Verwaltung und das Abrufen von Projektmappen aus der Quell Code Verwaltung.
+# <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Hinzufügen zu/Öffnen von der Quellcodeverwaltung
+Dieser Quellcodeverwaltungs-Plug-In-Testbereich umfasst das Platzieren von Lösungen oder Projekten unter Quellcodeverwaltung und deren Abrufen aus der Quellcodeverwaltung.
 
-## <a name="command-menu-access"></a>Befehlsmenü Zugriff
- Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Menü Pfade der Entwicklungsumgebung werden in den Testfällen verwendet:
+## <a name="command-menu-access"></a>Befehlsmenüzugriff
+ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Testfällen werden die folgenden integrierten Menüpfade für entwicklungsumgebungverwendet:
 
-- Öffnen Sie [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] aus der Quell Code Verwaltung: Datei **, öffnen**, Projekt **/** **Projekt** **Mappe**; sehen Sie sich den [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Speicherort an.
+- Für [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]öffnen sie aus der Quellcodeverwaltung: **Datei**, **Öffnen**,**Projektmappe** **Project**/; in der [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Position suchen.
 
-- Öffnen Sie für andere Quellcodeverwaltungs-Plug-ins aus der Quell Code Verwaltung: **Datei**, **Quell**Code Verwaltung, **aus Quell**Code Verwaltung öffnen.
+- Für andere Quellcodeverwaltungs-Plug-Ins, öffnen Sie von der Quellcodeverwaltung: **Datei**, **Quellcodeverwaltung**, **Von Der Quellcodeverwaltung geöffnet**.
 
-- Zur Quell Code Verwaltung hinzufügen: **Datei**, **Quell**Code Verwaltung, Projekt **Mappe zur Quell Code Verwaltung hinzufügen**, **Quell**Code Verwaltung, **Ausgewählte Projekte zur Quell Code Verwaltung hinzufügen**.
+- Zur Quellcodeverwaltung hinzufügen: **Datei**, **Quellcodeverwaltung**, **Lösung zur Quellcodeverwaltungsdatei hinzufügen**, **Quellcodeverwaltung**, **Ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**.
 
-- Kontextmenü (Projekt/Projekt Mappe), Projekt Mappe **zur Quell Code Verwaltung hinzufügen**.
+- Shortcut-Menü (Projekt/Projektmappe), **Lösung zur Quellcodeverwaltung hinzufügen**.
 
-- Aus Quell Code Verwaltung hinzufügen: **Datei**, **Quell**Code Verwaltung, **Projekt aus Quell Code Verwaltung hinzufügen**.
+- Aus der Quellcodeverwaltung hinzufügen: **Datei**, **Quellcodeverwaltung**, **Projekt aus der Quellcodeverwaltung hinzufügen**.
 
-- Für [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ist auch "aus Quell Code Verwaltung hinzufügen" über **Datei**, **Hinzufügen**, **vorhandenes Projekt**verfügbar. sehen Sie sich den [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Speicherort an.
+- Für [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]ist add from source control auch unter **Datei**, **Hinzufügen**, **Vorhandenes Projekt**verfügbar . in der [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Position suchen.
 
   > [!NOTE]
-  > Der Pfad einer lokalen Datei oder eines lokalen IIS-Servers (Webserver) kann in diesem Test verwendet werden.
+  > In diesem Test kann ein Pfad einer lokalen Datei oder eines lokalen IIS (Webserver) verwendet werden.
 
 ## <a name="expected-behavior"></a>Erwartetes Verhalten
 
-- Für jeden unterstützten Projekttyp sollte ein Benutzer in der Lage sein, die Quell Code Verwaltung "hinzufügen" und "aus" zu öffnen.
+- Für jeden unterstützten Projekttyp sollte ein Benutzer in der Lage sein, die Quellcodeverwaltung "Hinzufügen" und "Öffnen von" zu erstellen.
 
-- Wenn ein Projekt zur Quell Code Verwaltung hinzugefügt wird, wird ein entsprechender \<*ProjectName*>. vspscc-Datei (Projekt Hinweis Datei) erstellt. Sie enthält die Liste der Ausschluss Dateien und Verbindungsinformationen. Löschen Sie diese Datei nicht, da Sie Informationen enthält, die für das projektspezifisch sind.
+- Wenn ein Projekt zur Quellcodeverwaltung \<hinzugefügt wird, wird eine entsprechende *ProjectName*>.vspscc-Datei (Projekt-Hinweisdatei) erstellt. Sie enthält Ausschlussdateilisten und Verbindungsinformationen. Löschen Sie diese Datei nicht, da sie projektspezifische Informationen enthält.
 
-- Wenn eine Projekt Mappe zur Quell Code Verwaltung hinzugefügt wird, wird eine entsprechende \< Datei "*SolutionName*>. vssscc (Triple S)" erstellt. Die Textdatei enthält die Verbindungsinformationen und eine Ausschluss Datei Liste, ähnlich der Projekt Hinweis Datei. Diese Datei ist temporär und nur in der Quellcode-Verwaltungs Datenbank vorhanden.
+- Wenn eine Lösung zur Quellcodeverwaltung \<hinzugefügt wird, wird eine entsprechende *SolutionName-datei*>.vssscc (Triple S) erstellt. Die Textdatei enthält Verbindungsinformationen und eine Ausschlussdateiliste, ähnlich der Projekthinweisdatei. Diese Datei ist temporär und nur in der Quellcodeverwaltungsdatenbank vorhanden.
 
-- Wenn eine Projekt Mappe aus der Quell Code Verwaltung geöffnet wird, wird eine \< Projektmappenname >. vsscc (Double S), die nur in der Quellcode-Verwaltungs Datenbank vorhanden ist, lokal in einer temporären Datei erstellt. Diese Datei enthält den Pfad aus dem projektmappenverbindungs-Ordner zur Projektmappendatei. Diese Datei ist temporär, und die lokale Kopie wird gelöscht, wenn der Vorgang "aus Quell Code Verwaltung öffnen" abgeschlossen wurde.
+- Wenn eine Lösung aus der \<Quellcodeverwaltung geöffnet wird, wird eine *SolutionName*>.vsscc-Datei (doppelteS) Datei, die nur in der Quellcodeverwaltungsdatenbank vorhanden ist, lokal in einer temporären Datei erstellt. Diese Datei enthält den Pfad aus dem Lösungsverbindungsordner zur Projektmappendatei. Diese Datei ist temporär und die lokale Kopie wird gelöscht, wenn der Vorgang "Öffnen aus der Quellcodeverwaltung" abgeschlossen ist.
 
-- Nachdem ein Projekt zur Quell Code Verwaltung hinzugefügt wurde, können Sie sämtliche Quell Code Verwaltungs Aktionen ausführen (Auschecken, Get usw.).
+- Nachdem ein Projekt der Quellcodeverwaltung hinzugefügt wurde, können Sie alle Quellcodeverwaltungsaktionen darauf ausführen (Auschecken, Abrufen usw.).
 
 ## <a name="test-cases"></a>Testfälle
- Im folgenden werden bestimmte Testfälle für den Testbereich zum Hinzufügen zu/öffnen aus der Quell Code Verwaltung angezeigt.
+ Im Folgenden finden Sie spezifische Testfälle für den Testbereich "Hinzufügen zu/Öffnen von Der Quellcodeverwaltung".
 
-### <a name="case-1a-add-solution-to-source-control"></a>Fall 1a: Hinzufügen einer Projekt Mappe zur Quell Code Verwaltung
- Dieser Testfall konzentriert sich auf das Hinzufügen von Lösungen zur Quell Code Verwaltung.
+### <a name="case-1a-add-solution-to-source-control"></a>Fall 1a: Hinzufügen einer Lösung zur Quellcodeverwaltung
+ Dieser Testfall konzentriert sich auf das Hinzufügen von Lösungen zur Quellcodeverwaltung.
 
-|Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
+|Aktion|Testschritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
-|Projekt Mappe mit einem Client Projekt zur Quell Code Verwaltung hinzufügen|1. Erstellen Sie ein Client Projekt.<br />2. Fügen Sie die Projekt Mappe zur Quell Code Verwaltung hinzu (**Datei**, **Quell**Code Verwaltung, Projekt Mappe zur Quell Code Verwaltung **Hinzufügen**).|Projekt Mappe/Projekt wurde der Quell Code Verwaltung hinzugefügt.|
-|Projekt Mappe mit einem Datei System oder einem lokalen IIS-Webprojekt zur Quell Code Verwaltung hinzufügen|1. Erstellen Sie ein Datei System oder ein lokales IIS-Webprojekt (verwenden Sie die Schaltfläche Durchsuchen, um auf den Speicherort des Projekts zu zeigen. der Pfad bestimmt, welcher Typ von Webprojekt erstellt wird).<br />2. Fügen Sie die Projekt Mappe zur Quell Code Verwaltung hinzu (**Datei**, **Quell**Code Verwaltung, Projekt Mappe zur Quell Code Verwaltung **Hinzufügen**).|Projekt Mappe/Projekt wurde der Quell Code Verwaltung hinzugefügt.|
-|Projekt Mappe mit einem Remote-Website-Webprojekt zur Quell Code Verwaltung hinzufügen|1. Erstellen Sie ein Remote Website-Webprojekt.<br />2. Fügen Sie die Projekt Mappe zur Quell Code Verwaltung hinzu (**Datei**, **Quell**Code Verwaltung, Projekt Mappe zur Quell Code Verwaltung **Hinzufügen**).<br />3. Klicken Sie im Dialogfeld FrontPage-Zugriffs Warnung auf **OK** .|Die Projekt Mappe wurde der Quell Code Verwaltung hinzugefügt.<br /><br /> Das Remote Standortprojekt befindet sich nicht in der Quell Code Verwaltung. (Remote Standort Projekte müssen von einem eigenen IIS-Server gesteuert werden.)|
-|Fügen Sie der Quell Code Verwaltung eine einzelne Projekt Mappe hinzu, indem **Sie ausgewählte Projekte zur Quell Code Verwaltung hinzufügen**.|1. Erstellen Sie eine einzelne Projekt Mappe.<br />2. Fügen Sie der Quell Code Verwaltung nur eine Projekt Mappe als Auswahl hinzu (**Datei**, **Quell**Code Verwaltung, **Ausgewählte Projekte zur Quell Code Verwaltung hinzufügen**). Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Fügen Sie der Quell Code Verwaltung ein Projekt als Auswahl hinzu (**Datei**, **Quell**Code Verwaltung, der Quell Code Verwaltung **Ausgewählte Projekte hinzufügen**).<br />4. Klicken Sie auf " **Ja** ", um das Projekt dem gleichen Speicherort hinzuzufügen.<br />5. Klicken Sie auf **Auschecken** im Dialogfeld **zum Bearbeiten** Auschecken.|`Result from Step 2:`<br /><br /> Das Projekt und alle Dateien im Projekt verfügen über einen ausgecheckten Quell Code Verwaltungs Indikator, und in einer QuickInfo wird "nicht unter Quell Code Verwaltung" angezeigt.<br /><br /> `Result from Step 5:`<br /><br /> Die Projekt-und Projektmappendatei befinden sich im selben Ordner in der Quell Code Verwaltung.|
-|Hinzufügen einer Projekt Mappe zur Quell Code Verwaltung Abbrechen|1. Erstellen Sie eine einzelne Projekt Mappe.<br />2. versuchen Sie, der Quell Code Verwaltung ein Projekt und eine Projekt Mappe hinzuzufügen. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Abbrechen, nachdem Sie sich im Quell Code Verwaltungssystem befinden.|`Result from Step 2:`<br /><br /> Das Dialogfeld Quell Code Verwaltung für Projekt Speicherort festlegen wird nur einmal angezeigt.<br /><br /> `Result from Step 3:`<br /><br /> Das Hinzufügen des Projekts wurde abgebrochen, das Projekt/die Projekt Mappe befindet sich nicht unter Quell Code Verwaltung, und alle Menüs zur Quell Code Verwaltung|
+|Hinzufügen einer Projektmappe, die ein Clientprojekt zur Quellcodeverwaltung enthält|1. Erstellen Sie ein Clientprojekt.<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Lösung zur Quellcodeverwaltung hinzufügen**).|Projektmappe/Projekt wurde der Quellcodeverwaltung hinzugefügt.|
+|Hinzufügen einer Projektmappe, die ein Dateisystem oder ein lokales IIS-Webprojekt zur Quellcodeverwaltung enthält|1. Erstellen Sie ein Dateisystem oder ein lokales IIS-Webprojekt (verwenden Sie die Schaltfläche Durchsuchen, um auf den Speicherort des Projekts zu zeigen; der Pfad bestimmt, welcher Typ des Webprojekts erstellt wird).<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Lösung zur Quellcodeverwaltung hinzufügen**).|Projektmappe/Projekt wurde der Quellcodeverwaltung hinzugefügt.|
+|Hinzufügen einer Projektmappe, die ein Remotesite-Webprojekt zur Quellcodeverwaltung enthält|1. Erstellen Sie ein Remotesite-Webprojekt.<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Lösung zur Quellcodeverwaltung hinzufügen**).<br />3. Klicken Sie im Warndialogfeld FrontPage Access auf **OK.**|Die Lösung wurde der Quellcodeverwaltung hinzugefügt.<br /><br /> Remote Site-Projekt ist NICHT unter Quellcodeverwaltung. (Remotestandortprojekte müssen von ihrem eigenen IIS-Server aus gesteuert werden.)|
+|Fügen Sie der Quellcodeverwaltung mithilfe ausgewählte **Projekte zur Quellcodeverwaltung**hinzufügen hinzu.|1. Erstellen Sie eine einzelne Projektmappe.<br />2. Fügen Sie der Quellcodeverwaltung als Auswahl nur eine Lösung hinzu (**Datei**, **Quellcodeverwaltung**, **Ausgewählte Projekte zur Quellcodeverwaltung**hinzufügen ). Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Fügen Sie Projekt zur Quellcodeverwaltung als Auswahl hinzu (**Datei**, **Quellcodeverwaltung**, **Ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**).<br />4. Klicken Sie auf **Ja,** um das Projekt am selben Speicherort hinzuzufügen.<br />5. Klicken Sie im Dialogfeld **Auschecken für Bearbeiten** auf **Auschecken.**|`Result from Step 2:`<br /><br /> Das Projekt und alle Dateien innerhalb des Projekts verfügen über eine ausgecheckte Quellcodeverwaltungsanzeige, und ein ToolTip zeigt "Nicht unter Quellcodeverwaltung" an.<br /><br /> `Result from Step 5:`<br /><br /> Projekt- und Projektmappendatei befinden sich im gleichen Ordner in der Quellcodeverwaltung.|
+|Abbrechen des Hinzufügens einer Lösung zur Quellcodeverwaltung|1. Erstellen Sie eine einzelne Projektmappe.<br />2. Versuchen Sie, Projekt und Projektmappe zur Quellcodeverwaltung hinzuzufügen. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Abbrechen, nachdem Sie sich im Quellcodeverwaltungssystem befinden.|`Result from Step 2:`<br /><br /> Das Dialogfeld Projektstandortsteuerung festlegen wird nur einmal angezeigt.<br /><br /> `Result from Step 3:`<br /><br /> Projekt-Add abgebrochen, Projekt/Lösung ist NICHT unter Quellcodeverwaltung und alle Menüs zur Quellcodeverwaltung hinzufügen sind weiterhin verfügbar.|
 
-### <a name="case-1b-open-solution-from-source-control"></a>Fall 1B. Projekt Mappe aus Quell Code Verwaltung öffnen
- Dieser Testfall konzentriert sich auf das Öffnen von Lösungen aus der Quell Code Verwaltung.
+### <a name="case-1b-open-solution-from-source-control"></a>Fall 1b. Open Solution von Source Control
+ Dieser Testfall konzentriert sich auf das Öffnen von Lösungen aus der Quellcodeverwaltung.
 
-|Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
+|Aktion|Testschritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
-|Öffnen einer Projekt Mappe, die ein Client Projekt aus der Quell Code Verwaltung enthält|1. Erstellen Sie ein Client Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Öffnen Sie die Projekt Mappe aus der Quell Code Verwaltung an einem neuen Speicherort.|Projekt Mappe/Projekt in der Quell Code Verwaltung geöffnet.|
-|Öffnen einer Projekt Mappe, die ein lokales oder IIS-Webprojekt aus der Quell Code Verwaltung enthält|1. Erstellen Sie ein lokales oder IIS-Webprojekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Öffnen Sie die Projekt Mappe aus der Quell Code Verwaltung an einem neuen Speicherort.|Projekt Mappe/Projekt in der Quell Code Verwaltung geöffnet.|
-|Öffnen einer Projekt Mappe, die ein Remoteweb Projekt aus der Quell Code Verwaltung enthält|1. Erstellen Sie ein Remote Website-Webprojekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Schließen Sie die Projekt Mappe.<br />4. Öffnen Sie die Projekt Mappe aus der Quell Code Verwaltung an einem neuen Speicherort.|`Result from Step 2:`<br /><br /> Das Web für Remote Websites befindet sich nicht unter Quell Code Verwaltung.<br /><br /> `Result from Step 4:`<br /><br /> Die Lösung wurde über die Quell Code Verwaltung geöffnet.<br /><br /> Das Remote Standortprojekt wird geladen, aber es befindet sich nicht unter Quell Code Verwaltung.|
+|Öffnen einer Projektmappe, die ein Clientprojekt aus der Quellcodeverwaltung enthält|1. Erstellen Sie ein Clientprojekt.<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu.<br />3. Schließen Sie die Lösung.<br />4. Öffnen Sie die Lösung von der Quellcodeverwaltung zu einem neuen Speicherort.|Projektmappe/Projekt, das von der Quellcodeverwaltung aus geöffnet wurde.|
+|Öffnen einer Projektmappe, die ein lokales oder IIS-Webprojekt aus der Quellcodeverwaltung enthält|1. Erstellen Sie ein lokales oder IIS-Webprojekt.<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu.<br />3. Schließen Sie die Lösung.<br />4. Öffnen Sie die Lösung von der Quellcodeverwaltung zu einem neuen Speicherort.|Projektmappe/Projekt, das von der Quellcodeverwaltung aus geöffnet wurde.|
+|Öffnen einer Projektmappe, die ein Remote site-Webprojekt aus der Quellcodeverwaltung enthält|1. Erstellen Sie ein Remotesite-Webprojekt.<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Schließen Sie die Lösung.<br />4. Öffnen Sie die Lösung von der Quellcodeverwaltung zu einem neuen Speicherort.|`Result from Step 2:`<br /><br /> Remote Site Web ist NICHT unter Quellcodeverwaltung.<br /><br /> `Result from Step 4:`<br /><br /> Lösung, die von der Quellcodeverwaltung aus geöffnet wurde.<br /><br /> Remote Site-Projekt wird geladen, ist aber NICHT unter Quellcodeverwaltung.|
 
-### <a name="case-1c-add-solution-from-source-control"></a>Fall 1C: Hinzufügen einer Projekt Mappe aus der Quell Code Verwaltung
- Bei diesem Testfall werden Lösungen aus der Quell Code Verwaltung hinzugefügt.
+### <a name="case-1c-add-solution-from-source-control"></a>Fall 1c: Hinzufügen einer Lösung aus der Quellcodeverwaltung
+ Dieser Testfall konzentriert sich auf das Hinzufügen von Lösungen aus der Quellcodeverwaltung.
 
-|Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
+|Aktion|Testschritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
-|Zu leerer Projekt Mappe hinzufügen – eine einzelne Projekt Mappe|1. Erstellen Sie eine einzelne Projekt Mappe.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Erstellen Sie eine zweite leere Projekt Mappe.<br />5. Fügen Sie die zuvor gesteuerte Projekt Mappe aus der Quell Code Verwaltung hinzu (**Datei**, **Quell**Code Verwaltung, **Projekt aus Quell Code Verwaltung hinzufügen**).|Das hinzugefügte Projekt wird in **Projektmappen-Explorer** angezeigt und ist eingeglichen.|
-|Zur Projekt Mappe mit einem einzelnen Projekt hinzufügen – einzelnes Projekt|1. Erstellen Sie eine Projekt Mappe mit einem einzelnen Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Erstellen Sie eine zweite leere Projekt Mappe.<br />5. Fügen Sie die zuvor gesteuerte Projekt Mappe aus der Quell Code Verwaltung hinzu (**Datei**, **Quell**Code Verwaltung, **Projekt aus Quell Code Verwaltung hinzufügen**).|Das hinzugefügte Projekt wird in **Projektmappen-Explorer** angezeigt und ist eingeglichen.|
-|Zu Projekt Mappe hinzufügen – Projekt Mappe durch Auswahl zur Quell Code Verwaltung hinzugefügt|1. Erstellen Sie eine Projekt Mappe mit einem Projekt.<br />2. Fügen Sie der Quell Code Verwaltung nur eine Projekt Mappe als Auswahl hinzu. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Schließen Sie die Projekt Mappe.<br />4. Erstellen Sie eine neue Projekt Mappe.<br />5. Fügen Sie die zuvor gesteuerte Projekt Mappe aus der Quell Code Verwaltung hinzu (**Datei**, **Quell**Code Verwaltung, **Projekt aus Quell Code Verwaltung hinzufügen**).|`Result from Step 2:`<br /><br /> Das Projekt befindet sich nicht in der Quell Code Verwaltung.<br /><br /> `Result from Step 5:`<br /><br /> Wenn die erste Projekt Mappe Projektmappenelemente enthielt, können Sie nicht aus der Quell Code Verwaltung hinzugefügt werden, sodass Sie nicht angezeigt werden.<br /><br /> Das Projekt aus der ersten Projekt Mappe erscheint als nicht verfügbar.|
+|Hinzufügen zu Empty-Projektmappe – eine einzelne Projektmappe|1. Erstellen Sie eine einzelne Projektmappe.<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu.<br />3. Schließen Sie die Lösung.<br />4. Erstellen Sie eine zweite leere Lösung.<br />5. Fügen Sie die zuvor gesteuerte Lösung aus der Quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Projekt aus der Quellcodeverwaltung hinzufügen**).|Das hinzugefügte Projekt wird im **Projektmappen-Explorer** angezeigt und eingecheckt.|
+|Hinzufügen zur Projektmappe mit einem einzelnen Projekt — einzelprojekt|1. Erstellen Sie eine Projektmappe mit einem einzelnen Projekt.<br />2. Fügen Sie die Lösung zur Quellcodeverwaltung hinzu.<br />3. Schließen Sie die Lösung.<br />4. Erstellen Sie eine zweite leere Lösung.<br />5. Fügen Sie die zuvor gesteuerte Lösung aus der Quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Projekt aus der Quellcodeverwaltung hinzufügen**).|Das hinzugefügte Projekt wird im **Projektmappen-Explorer** angezeigt und eingecheckt.|
+|Zur Lösung hinzufügen – Lösung, die der Quellcodeverwaltung nach Auswahl hinzugefügt wird|1. Erstellen Sie eine Projektmappe mit einem Projekt.<br />2. Fügen Sie der Quellcodeverwaltung als Auswahl nur eine Lösung hinzu. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />3. Schließen Sie die Lösung.<br />4. Erstellen Sie eine neue Lösung.<br />5. Fügen Sie die zuvor gesteuerte Lösung aus der Quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Projekt aus der Quellcodeverwaltung hinzufügen**).|`Result from Step 2:`<br /><br /> Project befindet sich nicht unter Quellcodeverwaltung.<br /><br /> `Result from Step 5:`<br /><br /> Wenn die erste Lösung Lösungselemente hatte, können sie nicht aus der Quellcodeverwaltung hinzugefügt werden, sodass sie nicht angezeigt werden.<br /><br /> Project von der ersten Projektmappe wird als nicht verfügbar angezeigt.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

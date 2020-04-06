@@ -1,5 +1,5 @@
 ---
-title: Namen von Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Namenselement (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b0365740f5ea8ab20ed79d077134afd32356bcc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344719"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702460"
 ---
-# <a name="name-element-visual-studio-templates"></a>Name-Element (Visual Studio-Vorlagen)
-Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.
+# <a name="name-element-visual-studio-templates"></a>Namenselement (Visual Studio-Vorlagen)
+Gibt den Namen der Vorlage an, wie sie im Dialogfeld **Neues Projekt** oder Neues **Element hinzufügen** angezeigt wird.
 
- \<VSTemplate> \<TemplateData> \<Name>
+ \<VSTemplate \<> TemplateData> \<Name>
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,26 +40,26 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|
-|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|
+|`Package`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
+|`ID`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
- Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.
+ Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.
 
- Der Text gibt den Namen der Vorlage.
+ Der Text gibt den Namen der Vorlage an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `Name` ist ein erforderliches untergeordnetes Element von `TemplateData`.
 
 ## <a name="example"></a>Beispiel
@@ -89,6 +89,6 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

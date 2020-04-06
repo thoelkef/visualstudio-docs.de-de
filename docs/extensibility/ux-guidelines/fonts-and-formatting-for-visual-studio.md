@@ -3,17 +3,17 @@ title: Schriftarten und Formatierung enertalieren für Visual Studio | Microsoft
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: bf1550026fb5c9d9395d931f21d48bc4739ea8c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301542"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698582"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierung für Visual Studio
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Die Umgebungsschriftart
@@ -424,7 +424,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Syntax:**<br /><br /> - Größere Überschrift in Signaturdialogen<br />- Hauptberichtsüberschrift<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie immer geringes Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Verwendung für andere Benutzeroberfläche als Signatur-UI wie Startseite<br />- Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 28 pt Segoe UI Light<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für 310 % Umgebungsschrift art &#43; Light-Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Verwendung:**<br /><br /> - Größere Überschrift in Signaturdialogen<br />- Hauptberichtsüberschrift<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie immer geringes Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Verwendung für andere Benutzeroberfläche als Signatur-UI wie Startseite<br />- Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 28 pt Segoe UI Light<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für 310 % Umgebungsschrift art &#43; Light-Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -432,7 +432,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Syntax:**<br /><br /> - Größere Überschrift in Signaturdialogen<br />- Hauptberichtsüberschrift<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie immer geringes Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Verwendung für andere Benutzeroberfläche als Signatur-UI<br />- Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 28 pt Segoe UI Light<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für 310 % Umgebungsschrift art &#43; Light-Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Verwendung:**<br /><br /> - Größere Überschrift in Signaturdialogen<br />- Hauptberichtsüberschrift<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie immer geringes Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Verwendung für andere Benutzeroberfläche als Signatur-UI<br />- Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 28 pt Segoe UI Light<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für 310 % Umgebungsschrift art &#43; Light-Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -440,31 +440,31 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Syntax:**<br /><br /> - Unterpositionen<br />- Titel in kleinen und mittleren Dialogen<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie immer Semilight-Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 18 pt Segoe UI Semillight<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für 200% Umgebungsschrift art &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**Verwendung:**<br /><br /> - Unterpositionen<br />- Titel in kleinen und mittleren Dialogen<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie immer Semilight-Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 18 pt Segoe UI Semillight<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für 200% Umgebungsschrift art &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% Umgebungsschriftart
 
 |||
 |-|-|
-|**Syntax:**<br /><br /> - Abschnittsüberschriften in Dokument gut UI<br />- Berichte<br /><br /> **Tun Sie:** Verwenden des Satzfalls<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 14 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 155 %, Überschrift](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
+|**Verwendung:**<br /><br /> - Abschnittsüberschriften in Dokument gut UI<br />- Berichte<br /><br /> **Tun Sie:** Verwenden des Satzfalls<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 14 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 155 %, Überschrift](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>133% Umgebungsschriftart
 
 |||
 |-|-|
-|**Syntax:**<br /><br /> - Kleinere Unterpositionen in Signaturdialogen<br />- Kleinere Unterpositionen in Dokument gut UI<br /><br /> **Tun Sie:** Verwenden des Satzfalls<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 12 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Beispiel für Umgebungsschriftart mit 133 %, Überschrift](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
+|**Verwendung:**<br /><br /> - Kleinere Unterpositionen in Signaturdialogen<br />- Kleinere Unterpositionen in Dokument gut UI<br /><br /> **Tun Sie:** Verwenden des Satzfalls<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 12 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Beispiel für Umgebungsschriftart mit 133 %, Überschrift](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>122% Umgebungsschriftart
 
 |||
 |-|-|
-|**Syntax:**<br /><br /> - Abschnittsüberschriften in Signaturdialogen<br />- Top-Knoten in der Baumansicht<br />- Vertikale Tab-Navigation<br /><br /> **Tun Sie:** Verwenden des Satzfalls<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 11 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Beispiel für Umgebungsschriftart mit 122 %, Überschrift](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
+|**Verwendung:**<br /><br /> - Abschnittsüberschriften in Signaturdialogen<br />- Top-Knoten in der Baumansicht<br />- Vertikale Tab-Navigation<br /><br /> **Tun Sie:** Verwenden des Satzfalls<br /><br /> **Tue nicht:**<br /><br /> - Fett, kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** 11 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Beispiel für Umgebungsschriftart mit 122 %, Überschrift](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
 #### <a name="environment-font--bold"></a>Umgebungsschriftart + fett
 
 |||
 |-|-|
-|**Syntax:**<br /><br /> - Etiketten und Unterköpfe in Signaturdialogen<br />- Etiketten und Unterköpfe in Berichten<br />- Etiketten und Unterköpfe in Dokument gut UI<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie fettes Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** fett gedruckt 9 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart &#43; Bold-Überschrift](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+|**Verwendung:**<br /><br /> - Etiketten und Unterköpfe in Signaturdialogen<br />- Etiketten und Unterköpfe in Berichten<br />- Etiketten und Unterköpfe in Dokument gut UI<br /><br /> **tun:**<br /><br /> - Verwenden Sie satzfall<br />- Verwenden Sie fettes Gewicht<br /><br /> **Tue nicht:**<br /><br /> - Kursiv oder fett kursiv<br />- Verwendung für Textkörper<br />- Verwendung in Standard Visual Studio-Steuerelementen<br />- Verwendung in Werkzeugfenstern|**Erscheint als:** fett gedruckt 9 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart &#43; Bold-Überschrift](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>Umgebungsschriftart
 

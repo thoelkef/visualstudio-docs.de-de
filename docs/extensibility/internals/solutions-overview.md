@@ -5,47 +5,47 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9405177e193349eeb6e7767b70af0ef82208cc4c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 767db749d953855cd5c6f81f356a195c830aa838
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322593"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705301"
 ---
 # <a name="solutions-overview"></a>Übersicht über Lösungen
 
-Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten. Projekt- und Status Informationen zu der Projektmappe werden in zwei verschiedenen Projektmappendateien gespeichert. Die [Projektmappendatei (.sln)](solution-dot-sln-file.md) textbasiert ist und unter quellcodeverwaltung gestellt und von Benutzern gemeinsam genutzt werden können. Die [Lösung Benutzeroptionsdatei (.suo)](solution-user-options-dot-suo-file.md) ist binär. Daher wird die SUO-Datei kann nicht unter quellcodeverwaltung platziert werden und benutzerspezifische Informationen enthält.
+Eine Projektmappe ist eine Gruppierung eines oder mehrerer Projekte, die zusammenarbeiten, um eine Anwendung zu erstellen. Die Projekt- und Statusinformationen zur Projektmappe werden in zwei verschiedenen Projektmappendateien gespeichert. Die [Lösungsdatei (.sln)](solution-dot-sln-file.md) ist textbasiert und kann unter Quellcodeverwaltung platziert und von Benutzern gemeinsam genutzt werden. Die [Lösungsbenutzeroption (.suo)](solution-user-options-dot-suo-file.md) Datei ist binär. Daher kann die .suo-Datei nicht unter Quellcodeverwaltung gestellt werden und enthält benutzerspezifische Informationen.
 
-Jedem VSPackage kann in beide Arten von Projektmappendatei schreiben. Aufgrund der Natur der Dateien es gibt zwei unterschiedliche Schnittstellen implementiert, um in diese schreiben. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Schnittstelle schreibt Textinformationen in der SLN-Datei und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> Schnittstelle binäre Datenströmen in der SUO-Datei geschrieben.
+Jedes VSPackage kann in beide Lösungsdateien schreiben. Aufgrund der Art der Dateien gibt es zwei verschiedene Schnittstellen implementiert, um sie zu schreiben. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Schnittstelle schreibt Textinformationen in die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> .sln-Datei und die Schnittstelle schreibt binäre Streams in die .suo-Datei.
 
 > [!NOTE]
-> Ein Projekt muss nicht explizit Schreiben eines Eintrags für sich selbst in die Projektmappendatei; die Umgebung, die für das Projekt behandelt werden. Aus diesem Grund, es sei denn, Sie speziell für die Projektmappendatei Weitere Inhalte hinzufügen möchten, nicht müssen Sie das VSPackage auf diese Weise zu registrieren.
+> Ein Projekt muss nicht explizit einen Eintrag für sich selbst in die Projektmappendatei schreiben. die Umgebung verarbeitet dies für das Projekt. Daher müssen Sie Ihr VSPackage nicht auf diese Weise registrieren, es sei denn, Sie möchten der Lösungsdatei zusätzliche Inhalte speziell hinzufügen.
 
-Jedes VSPackage Unterstützung der Persistenz der Lösung verwendet drei Schnittstellen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> -Schnittstelle, die von der Umgebung implementiert und vom VSPackage aufgerufen, und `IVsPersistSolutionProps` und `IVsPersistSolutionOpts`, sind beide implementiert vom VSPackage. Die `IVsPersistSolutionOpts` Schnittstelle nur implementiert werden, wenn private Informationen vom VSPackage in der SUO-Datei geschrieben werden muss.
+Jede VSPackage-unterstützende Lösungpersistenz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> verwendet drei Schnittstellen, die Schnittstelle, die von `IVsPersistSolutionProps` der `IVsPersistSolutionOpts`Umgebung implementiert und vom VSPackage aufgerufen wird, und und , die beide vom VSPackage implementiert werden. Die `IVsPersistSolutionOpts` Schnittstelle muss nur implementiert werden, wenn private Informationen vom VSPackage in die .suo-Datei geschrieben werden sollen.
 
-Wenn eine Projektmappe geöffnet ist, findet der folgende Prozess statt.
+Wenn eine Lösung geöffnet wird, findet der folgende Prozess statt.
 
 1. Die Umgebung liest die Lösung.
 
-2. Wenn die Umgebung sucht nach einer `CLSID`, lädt er die entsprechenden VSPackage.
+2. Wenn die Umgebung `CLSID`eine findet, lädt sie das entsprechende VSPackage.
 
-3. Wenn eine VSPackage geladen wurde, ist die Umgebung ruft `QueryInterface` für <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> Schnittstelle für die Schnittstelle, die das VSPackage ist erforderlich.
+3. Wenn ein VSPackage geladen wird, ruft `QueryInterface` die Umgebung die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> Schnittstelle für die Schnittstelle auf, die das VSPackage benötigt.
 
-   - Wenn von einer sln-Datei lesen, um die Umgebung ruft `QueryInterface` für `IVsPersistSolutionProps`.
+   - Beim Lesen aus einer .sln-Datei ruft `QueryInterface` die Umgebung `IVsPersistSolutionProps`nach .
 
-   - Wenn Sie aus einer SUO-Datei zu lesen, um die Umgebung ruft `QueryInterface` für `IVsPersistSolutionOpts`.
+   - Beim Lesen aus einer .suo-Datei ruft `QueryInterface` die Umgebung `IVsPersistSolutionOpts`nach .
 
-   Spezifische Informationen im Zusammenhang mit der Verwendung dieser Dateien finden Sie in [Lösung (. Sln) Datei](../../extensibility/internals/solution-dot-sln-file.md) und [Benutzeroptionen bei Projektmappen (. Suo)-Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md).
+   Spezifische Informationen zur Verwendung dieser Dateien finden Sie in [Solution (. Sln) Datei-](../../extensibility/internals/solution-dot-sln-file.md) und [Lösungsbenutzeroptionen (. Suo) Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md).
 
 > [!NOTE]
-> Wenn Sie eine neue Projektmappenkonfiguration bestehend aus zwei Projekten Konfigurationen und Ausschließen von einer dritten aus dem Build erstellen möchten, müssen Sie die Seiten-UI-Eigenschaft oder die Automatisierung zu verwenden. Sie nicht der Projektmappenbuild-Konfigurationen-Manager und deren Eigenschaften direkt ändern, aber Sie können mithilfe der projektmappenbuildmanager Bearbeiten der `SolutionBuild` Klasse von DTE im Automatisierungsmodell. Weitere Informationen zum Konfigurieren von Lösungen finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).
+> Wenn Sie eine neue Projektmappenkonfiguration erstellen möchten, die aus den Konfigurationen von zwei Projekten besteht und ein Drittel vom Build ausschließt, müssen Sie die Benutzeroberfläche oder Automatisierung von Eigenschaftenseiten verwenden. Sie können die Lösungsbuild-Manager-Konfigurationen und deren Eigenschaften nicht direkt `SolutionBuild` ändern, aber Sie können den Lösungsbuild-Manager mithilfe der Klasse von DTE im Automatisierungsmodell bearbeiten. Weitere Informationen zum Konfigurieren von Lösungen finden Sie unter [Lösungskonfiguration](../../extensibility/internals/solution-configuration.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>

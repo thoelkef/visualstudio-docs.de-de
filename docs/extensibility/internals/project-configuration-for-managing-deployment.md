@@ -1,43 +1,43 @@
 ---
-title: Projekt Konfiguration zum Verwalten der Bereitstellung | Microsoft-Dokumentation
+title: Projektkonfiguration für die Verwaltung der Bereitstellung | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ffa661d8bf33219a3a2956cef3e456c9b5f1146
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 62f7bf6535a89e46799ade88fe8976974b3019c5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726022"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706710"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Projektkonfiguration für die Verwaltung der Bereitstellung
-Die Bereitstellung ist das physische Verschieben der Ausgabe Elemente aus einem Buildprozess an den erwarteten Speicherort zum Debuggen und installieren. Beispielsweise könnte eine Webanwendung auf einem lokalen Computer erstellt und dann auf dem Server platziert werden.
+Bei der Bereitstellung werden die Ausgabeelemente physisch von einem Buildprozess an den erwarteten Speicherort für das Debuggen und Installieren bewegt. Beispielsweise kann eine Webanwendung auf einem lokalen Computer erstellt und dann auf dem Server platziert werden.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Methoden, mit denen Projekte an der Bereitstellung beteiligt sein können:
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützt zwei Möglichkeiten, wie Projekte in die Bereitstellung einbezogen werden können:
 
-- Als Gegenstand des Bereitstellungs Prozesses.
+- Als Thema des Bereitstellungsprozesses.
 
-- Als Manager des Bereitstellungs Prozesses.
+- Als Manager des Bereitstellungsprozesses.
 
-  Bevor Lösungen bereitgestellt werden können, müssen Sie zunächst ein Bereitstellungs Projekt hinzufügen, um die Bereitstellungs Optionen zu konfigurieren. Wenn das Bereitstellungs Projekt nicht bereits vorhanden ist, werden Sie gefragt, ob Sie ein Projekt erstellen möchten, **Wenn Sie im** Menü **Erstellen** die Option Projekt Mappe bereitstellen auswählen oder mit der rechten Maustaste auf die Lösung klicken. Wenn Sie auf **Ja** klicken, wird das Dialogfeld **Neues Projekt hinzufügen** mit ausgewähltem Remote Bereitstellungs- **Assistenten** geöffnet
+  Bevor Lösungen bereitgestellt werden können, müssen Sie zunächst ein Bereitstellungsprojekt hinzufügen, um Bereitstellungsoptionen zu konfigurieren. Wenn das Bereitstellungsprojekt noch nicht vorhanden ist, werden Sie gefragt, ob Sie eine Lösung erstellen möchten, wenn Sie im Menü **Build** die Option **Lösung bereitstellen** auswählen oder mit der rechten Maustaste auf die Projektmappe klicken. Wenn Sie auf **Ja** klicken, wird das Dialogfeld **Neues Projekt hinzufügen** geöffnet, in dem das Projekt des **Remotebereitstellungs-Assistenten** ausgewählt ist.
 
-  Der Assistent für die Remote Bereitstellung fragt Sie nach dem Anwendungstyp (Windows oder Web), den einzuschließenden Projekt Ausgabegruppen, zusätzlichen Dateien, die Sie einschließen möchten, und dem Remote Computer, auf dem Sie die Bereitstellung durchzuführen. Auf der letzten Seite des Assistenten wird eine Zusammenfassung der ausgewählten Optionen angezeigt.
+  Der Remotebereitstellungs-Assistent fragt Sie nach dem Anwendungstyp (Windows oder Web), den einzuschließenden Projektausgabegruppen, allen zusätzlichen Dateien, die Sie einschließen möchten, und dem Remotecomputer, auf dem Sie bereitstellen möchten. Auf der letzten Seite des Assistenten wird eine Zusammenfassung der ausgewählten Optionen angezeigt.
 
-  Bei Projekten, bei denen es sich um einen Bereitstellungs Prozess handelt, werden Ausgabe Elemente erzeugt, die in eine Alternative Umgebung verschoben werden müssen. Diese Ausgabe Elemente werden als Parameter für die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>-Schnittstelle beschrieben, deren Hauptzweck darin besteht, dass Projekte Ausgaben gruppieren können. Weitere Informationen zur Implementierung von `IVsProjectCfg2` finden Sie unter [Projekt Konfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md).
+  Projekte, die Gegenstand eines Bereitstellungsprozesses sind, erzeugen Ausgabeelemente, die in eine alternative Umgebung verschoben werden müssen. Diese Ausgabeelemente werden als <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Parameter für die Schnittstelle beschrieben, deren Hauptzweck, wenn Projekte Ausgaben gruppieren können. Weitere Informationen zur Implementierung `IVsProjectCfg2`von finden Sie unter [Projektkonfiguration für Ausgabe](../../extensibility/internals/project-configuration-for-output.md).
 
-  Bereitstellungs Projekte, die den Bereitstellungs Prozess verwalten, aktivieren den Befehl bereitstellen und reagieren, wenn dieser Befehl ausgewählt ist. Bei Bereitstellungs Projekten wird die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>-Schnittstelle implementiert, um die Bereitstellung auszuführen und Aufrufe an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> Schnittstelle zum Melden von Status Ereignissen zu senden.
+  Bereitstellungsprojekte, die den Bereitstellungsprozess verwalten, aktivieren den Befehl Bereitstellen und reagieren, wenn dieser Befehl ausgewählt ist. Bereitstellungsprojekte <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> implementieren die Schnittstelle, um die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> Bereitstellung auszuführen und Aufrufe an die Schnittstelle auszuführen, um Bereitstellungsstatusereignisse zu melden.
 
-  Konfigurationen können Abhängigkeiten angeben, die sich auf Ihre Build-oder Bereitstellungs Vorgänge auswirken. Abhängigkeiten erstellen oder bereitstellen sind Projekte, die entweder erstellt oder bereitgestellt werden müssen, bevor oder nachdem die Konfigurationen selbst erstellt oder bereitgestellt wurden. Buildabhängigkeiten zwischen Projekten werden mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>-Schnittstelle beschrieben und stellen Abhängigkeiten mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> Schnittstelle bereit. Weitere Informationen finden Sie unter [Project Configuration for Building](../../extensibility/internals/project-configuration-for-building.md).
+  Konfigurationen können Abhängigkeiten angeben, die sich auf ihre Build- oder Bereitstellungsvorgänge auswirken. Build- oder Bereitstellungsabhängigkeiten sind Projekte, die entweder erstellt oder bereitgestellt werden müssen, bevor oder nachdem die Konfigurationen selbst erstellt oder bereitgestellt wurden. Buildabhängigkeiten zwischen Projekten werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> mit der Schnittstelle beschrieben <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> und stellen Abhängigkeiten mit der Schnittstelle bereit. Weitere Informationen finden Sie unter [Projektkonfiguration für Das Erstellen](../../extensibility/internals/project-configuration-for-building.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)
 - [Projektkonfiguration beim Erstellen](../../extensibility/internals/project-configuration-for-building.md)
 - [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md)

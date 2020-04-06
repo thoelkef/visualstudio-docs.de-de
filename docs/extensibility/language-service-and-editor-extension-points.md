@@ -1,36 +1,36 @@
 ---
-title: Sprachdienst und Erweiterungspunkte-Editor | Microsoft-Dokumentation
+title: Sprachdienst- und Editorerweiterungspunkte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 394ae909121bc2e80dee14506b3c0399956d1b4d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28bb086eb99e4b8128c04f62f9b370eb2eab8fa3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309588"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703058"
 ---
-# <a name="language-service-and-editor-extension-points"></a>Language-Dienst und -Editor-Erweiterungspunkte
-Der Editor stellt Erweiterungspunkte, die Sie als Managed Extensibility Framework (MEF) Komponenten, einschließlich der meisten Language Service-Features erweitern können. Dies sind die haupterweiterung zeigen Kategorien:
+# <a name="language-service-and-editor-extension-points"></a>Sprachdienst- und Editorerweiterungspunkte
+Der Editor stellt Erweiterungspunkte bereit, die Sie als MEF-Komponenten (Managed Extensibility Framework) erweitern können, einschließlich der meisten Sprachdienstfunktionen. Dies sind die wichtigsten Erweiterungspunktkategorien:
 
 - Inhaltstypen
 
-- Klassifizierungstypen und Klassifizierung-Formate
+- Klassifizierungstypen und Klassifizierungsformate
 
-- Rändern und Bildlaufleisten
+- Ränder und Bildlaufleisten
 
-- Tags
+- `Tags`
 
-- Zusatzelemente
+- Verzierungen
 
-- Maus-Prozessoren
+- Mausprozessoren
 
 - Drop-Handler
 
@@ -38,16 +38,16 @@ Der Editor stellt Erweiterungspunkte, die Sie als Managed Extensibility Framewor
 
 - IntelliSense
 
-## <a name="extend-content-types"></a>Erweitern Sie die Inhaltstypen
- Inhaltstypen sind die Definitionen für die Arten von behandelten vom Editor, z. B. Text, "Text", "Code" oder "CSharp". Sie definieren einen neuen Inhaltstyp durch Deklarieren einer Variablen des Typs <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> und dem neuen Inhaltstyp einen eindeutigen Namen. Um den Inhaltstyp für den Editor zu registrieren, exportieren Sie es zusammen mit den folgenden Attributen:
+## <a name="extend-content-types"></a>Erweitern von Inhaltstypen
+ Inhaltstypen sind die Definitionen der Vom Editor behandelten Texttypen, z. B. "text", "code" oder "CSharp". Sie definieren einen neuen Inhaltstyp, indem <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> Sie eine Variable des Typs deklarieren und dem neuen Inhaltstyp einen eindeutigen Namen zuweisen. Um den Inhaltstyp im Editor zu registrieren, exportieren Sie ihn zusammen mit den folgenden Attributen:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute> ist der Name des Inhaltstyps.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>ist der Name des Inhaltstyps.
 
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> ist der Name des Inhaltstyps von dem dieser Inhaltstyp abgeleitet ist. Ein Inhaltstyp möglicherweise von mehreren anderen Inhaltstypen erben.
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>ist der Name des Inhaltstyps, von dem dieser Inhaltstyp abgeleitet wird. Ein Inhaltstyp kann von mehreren anderen Inhaltstypen erben.
 
-  Da die <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> Klasse versiegelt ist, können Sie es mit keinen Typparameter exportieren.
+  Da <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> die Klasse versiegelt ist, können Sie sie ohne Typparameter exportieren.
 
-  Das folgende Beispiel zeigt die ExportAttribute auf eine Content-Type-Definition.
+  Das folgende Beispiel zeigt Exportattribute für eine Inhaltstypdefinition.
 
 ```
 [Export]
@@ -57,27 +57,27 @@ Der Editor stellt Erweiterungspunkte, die Sie als Managed Extensibility Framewor
 internal static ContentTypeDefinition TestContentTypeDefinition;
 ```
 
- Content-Arten können auf NULL oder mehr vorhandene Inhaltstypen basieren. Dies sind die integrierten Typen:
+ Inhaltstypen können auf null oder mehr bereits vorhandenen Inhaltstypen basieren. Dies sind die integrierten Typen:
 
-- Alle: der grundlegenden Inhaltstyp. Übergeordnete Element aller anderen Inhaltstypen.
+- Beeinen: der grundlegende Inhaltstyp. Übergeordnetes Element aller anderen Inhaltstypen.
 
-- Text: der Basistyp für den Inhalt von nicht-Projektion. Erbt von "any".
+- Text: der grundlegende Typ für Nichtprojektionsinhalte. Erbt von "any".
 
-- Nur-Text: für Text, ohne Code. Erbt von "Text".
+- Klartext: für Nicht-Code-Text. Erbt von "Text".
 
-- Code: Code aller Art. Erbt von "Text".
+- Code: für Code aller Art. Erbt von "Text".
 
-- Inertem: Schließt den Text aus jeder Art von Verarbeitung aus. Text dieses Inhaltstyps müssen nie eine beliebige Erweiterung angewendet wird.
+- Inert: schließt den Text von jeder Art der Handhabung aus. Für Text dieses Inhaltstyps wird nie eine Erweiterung angewendet.
 
-- Projektion: für die Inhalte der Projektionspuffer. Erbt von "any".
+- Projektion: für den Inhalt von Projektionspuffern. Erbt von "any".
 
-- IntelliSense: für den Inhalt von IntelliSense. Erbt von "Text".
+- Intellisense: für den Inhalt von IntelliSense. Erbt von "Text".
 
-- Sighelp: Signaturhilfe zu. Erbt von "Intellisense".
+- Sighelp: Unterschrift Hilfe. Erbt von "intellisense".
 
-- Sighelp-Doc: Signatur-Hilfedokumentation. Erbt von "Intellisense".
+- Sighelp-doc: Signaturhilfedokumentation. Erbt von "intellisense".
 
-  Dies sind einige der Inhaltstypen, die von Visual Studio definiert sind und andere Sprachen, die in Visual Studio gehostet werden:
+  Dies sind einige der Inhaltstypen, die von Visual Studio definiert werden, und einige der Sprachen, die in Visual Studio gehostet werden:
 
 - Standard
 
@@ -89,7 +89,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
 - CSS
 
-- ENC
+- Enc
 
 - FindResults
 
@@ -103,27 +103,27 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
 - XML
 
-  Um die Liste der verfügbaren Inhaltstypen zu ermitteln, importieren die <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>, der die Auflistung von Inhaltstypen für den Editor verwaltet. Der folgende Code wird dieser Dienst als Eigenschaft importiert.
+  Um die Liste der verfügbaren Inhaltstypen zu ermitteln, importieren Sie die <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>, die die Auflistung der Inhaltstypen für den Editor verwaltet. Der folgende Code importiert diesen Dienst als Eigenschaft.
 
 ```
 [Import]
 internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 ```
 
- Verwenden Sie zum Zuordnen eines Inhaltstyps mit einer Dateinamenerweiterung <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.
+ Um einen Inhaltstyp einer Dateinamenerweiterung <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>zuzuordnen, verwenden Sie .
 
 > [!NOTE]
-> In Visual Studio Dateinamenerweiterungen Weitere Erweiterungen registriert sind, mithilfe der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> auf ein Sprachpaket für den Dienst. Die <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ordnet einen MEF-Inhaltstyp eine Dateinamenerweiterung, die auf diese Weise registriert wurde.
+> In Visual Studio werden Dateinamenerweiterungen <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> mithilfe des für ein Sprachdienstpaket registriert. Der <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ordnet einen MEF-Inhaltstyp einer Dateinamenerweiterung zu, die auf diese Weise registriert wurde.
 
- Um die Dateinamenerweiterung der Content-Type-Definition exportieren, müssen Sie die folgenden Attribute einschließen:
+ Um die Dateinamenerweiterung in die Inhaltstypdefinition zu exportieren, müssen Sie die folgenden Attribute einschließen:
 
-- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: Gibt die Dateierweiterung an.
+- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: Gibt die Dateinamenerweiterung an.
 
 - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: Gibt den Inhaltstyp an.
 
-  Da die <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> Klasse versiegelt ist, können Sie es mit keinen Typparameter exportieren.
+  Da <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> die Klasse versiegelt ist, können Sie sie ohne Typparameter exportieren.
 
-  Das folgende Beispiel zeigt die ExportAttribute auf eine Dateinamenerweiterung eine Content-Type-Definition.
+  Das folgende Beispiel zeigt Exportattribute für eine Dateinamenerweiterung in eine Inhaltstypdefinition.
 
 ```
 [Export]
@@ -132,20 +132,20 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition;
 ```
 
- Die <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService> verwaltet die Zuordnungen zwischen Dateierweiterungen und Inhaltstypen.
+ Der <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService> verwaltet die Zuordnungen zwischen Dateinamenerweiterungen und Inhaltstypen.
 
-## <a name="extend-classification-types-and-classification-formats"></a>Erweitern Sie Klassifizierungstypen und Klassifizierung Formate
- Sie können die Klassifizierungstypen verwenden, um die Arten von Text zu definieren, für die Sie anderen Verarbeitung (z. B. die Farben der Text "Schlüsselwort" Blau und den Text "Kommentar" Grün) bereitstellen möchten. Definieren Sie einen neuen Klassifizierungstyp durch Deklarieren einer Variablen vom Typ <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> und ihm einen eindeutigen Namen.
+## <a name="extend-classification-types-and-classification-formats"></a>Erweitern von Klassifizierungstypen und Klassifizierungsformaten
+ Sie können Klassifizierungstypen verwenden, um die Texttypen zu definieren, für die Sie eine unterschiedliche Verarbeitung bereitstellen möchten (z. B. Das Farbn der "Schlüsselwort"-Textblau und der "Kommentar"-Text grün). Definieren Sie einen neuen Klassifizierungstyp, <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> indem Sie eine Variable des Typs deklarieren und ihr einen eindeutigen Namen zuweisen.
 
- Um den Klassifizierungstyp in einem Editor zu registrieren, exportieren Sie es zusammen mit den folgenden Attributen:
+ Um den Klassifizierungstyp beim Editor zu registrieren, exportieren Sie ihn zusammen mit den folgenden Attributen:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name des Klassifizierungstyps.
 
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>: der Name des Klassifizierungstyps, von dem dieser Klassifizierungstyp erbt. Alle Klassifizierungstypen erben von "Text" ggf., und ein Klassifizierungstyp in mehrere andere Klassifizierungstypen.
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>: der Name des Klassifizierungstyps, von dem dieser Klassifizierungstyp erbt. Alle Klassifizierungstypen erben von "Text", und ein Klassifizierungstyp kann von mehreren anderen Klassifizierungstypen erben.
 
-  Da die <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> Klasse versiegelt ist, können Sie es mit keinen Typparameter exportieren.
+  Da <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> die Klasse versiegelt ist, können Sie sie ohne Typparameter exportieren.
 
-  Das folgende Beispiel zeigt ExportAttribute auf eine Typdefinition für die Klassifizierung an.
+  Das folgende Beispiel zeigt Exportattribute für eine Klassifizierungstypdefinition.
 
 ```
 [Export]
@@ -154,50 +154,50 @@ internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition
 internal static ClassificationTypeDefinition CSharpTestDefinition;
 ```
 
- Die <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService> ermöglicht den Zugriff auf die standard-Klassifizierungen. Integrierte Typen gehören:
+ Der <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService> bietet Zugriff auf Standardklassifizierungen. Zu den integrierten Klassifizierungstypen gehören:
 
-- „Text“
+- "text"
 
-- "Natural Language" (abgeleitet von "Text")
+- "natürliche Sprache" (ableitet von "Text")
 
-- "formalen Sprache" (abgeleitet von "Text")
+- "formale Sprache" (ableitet von "Text")
 
-- "String" (abgeleitet von "Literal")
+- "string" (leitet von "literal")
 
-- 'Character' (abgeleitet von "Literal")
+- "character" (leitet von "literal")
 
-- "numerische" (abgeleitet von "Literal")
+- "numerisch" (leitet von "literal" ab)
 
-  Eine Anzahl verschiedener Fehlerarten erben <xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition>. Dazu gehören die folgenden Fehlertypen:
+  Eine Gruppe verschiedener Fehlertypen <xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition>erben von . Sie enthalten die folgenden Fehlertypen:
 
 - "Syntaxfehler"
 
-- "Compiler Error"
+- "Compilerfehler"
 
-- "andere Fehler"
+- "anderer Fehler"
 
 - "Warnung"
 
-  Um die Liste der verfügbaren Klassifizierungstypen zu ermitteln, importieren die <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>, der die Auflistung der Klassifizierungstypen für den Editor verwaltet. Der folgende Code wird dieser Dienst als Eigenschaft importiert.
+  Um die Liste der verfügbaren Klassifizierungstypen zu ermitteln, importieren Sie die <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>, die die Auflistung der Klassifizierungstypen für den Editor verwaltet. Der folgende Code importiert diesen Dienst als Eigenschaft.
 
 ```
 [Import]
 internal IClassificationTypeRegistryService ClassificationTypeRegistryService { get; set; }
 ```
 
- Sie können eine Klassifizierung Formatdefinition für Ihre neue Klassifizierungstyp definieren. Leiten Sie eine Klasse von <xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition> und exportieren Sie es mit dem Typ <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>zusammen mit den folgenden Attributen:
+ Sie können eine Klassifizierungsformatdefinition für Ihren neuen Klassifizierungstyp definieren. Leiten Sie eine <xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition> Klasse von dem <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>Typ ab, und exportieren Sie sie mit dem Typ :
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name des Formats.
 
-- <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: der Anzeigename des Formats.
+- <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: den Anzeigenamen des Formats.
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Gibt an, ob das Format wird angezeigt, auf die **Schriftarten und Farben** auf der Seite die **Optionen** Dialogfeld.
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Gibt an, ob das Format auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** angezeigt wird.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Priorität des Formats. Gültige Werte reichen von <xref:Microsoft.VisualStudio.Text.Classification.Priority>.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Priorität des Formats. Gültige Werte <xref:Microsoft.VisualStudio.Text.Classification.Priority>stammen von .
 
-- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: Geben Sie der Namen der Klassifizierung, dem dieses Format zugeordnet wird.
+- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: der Name des Klassifizierungstyps, dem dieses Format zugeordnet ist.
 
-  Das folgende Beispiel zeigt ExportAttribute, auf die Definition einer Klassifizierung-Format.
+  Das folgende Beispiel zeigt Exportattribute für eine Klassifizierungsformatdefinition.
 
 ```
 [Export(typeof(EditorFormatDefinition))]
@@ -209,7 +209,7 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
 internal sealed class TestFormat : ClassificationFormatDefinition
 ```
 
- Um die Liste der verfügbaren Formate zu ermitteln, importieren die <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>, der die Auflistung der Formate für den Editor verwaltet. Der folgende Code wird dieser Dienst als Eigenschaft importiert.
+ Um die Liste der verfügbaren <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>Formate zu ermitteln, importieren Sie die , die die Sammlung von Formaten für den Editor verwaltet. Der folgende Code importiert diesen Dienst als Eigenschaft.
 
 ```
 [Import]
@@ -217,31 +217,31 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
 ## <a name="extend-margins-and-scrollbars"></a>Erweitern von Rändern und Bildlaufleisten
- Sind die Hauptansicht-Elemente des Editors neben der Textansicht an sich selbst, Rändern und Bildlaufleisten. Sie können eine beliebige Anzahl von Rändern zusätzlich zu den standardmäßigen Ränder angeben, die rund um die Textansicht angezeigt werden.
+ Ränder und Bildlaufleisten sind neben der Textansicht selbst die Hauptansichtselemente des Editors. Zusätzlich zu den Standardrändern, die in der Textansicht angezeigt werden, können Sie eine beliebige Anzahl von Rändern angeben.
 
- Implementieren einer <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> Schnittstelle, um einen Rand zu definieren. Sie müssen auch implementieren, die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> Schnittstelle, um den Rand zu erstellen.
+ Implementieren <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> Sie eine Schnittstelle, um einen Rand zu definieren. Sie müssen auch <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> die Schnittstelle implementieren, um den Rand zu erstellen.
 
- Um den Margin-Anbieter in einem Editor zu registrieren, müssen Sie den Anbieter zusammen mit den folgenden Attributen exportieren:
+ Um den Margin-Anbieter beim Editor zu registrieren, müssen Sie den Anbieter zusammen mit den folgenden Attributen exportieren:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name des Rands.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in dem der Rand angezeigt, relativ zu den anderen Rändern wird.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in der die Marge erscheint, relativ zu den anderen Rändern.
 
    Dies sind die integrierten Ränder:
 
-  - "Wpf Horizontal Scrollbar"
+  - "Wpf Horizontal Escrollbar"
 
-  - "Wpf vertikale Bildlaufleiste"
+  - "Wpf Vertikale Scrollbar"
 
-  - "WPF-Rand mit Zeilennummern"
+  - "Wpf-Liniennummernrand"
 
-    Horizontale Ränder, die ein Order-Attribut des `After="Wpf Horizontal Scrollbar"` werden angezeigt, unter dem integrierten Rand und horizontal Ränder, die ein Order-Attribut des `Before ="Wpf Horizontal Scrollbar"` , die über den integrierten Rand angezeigt werden. Vertikale Ränder, die ein Order-Attribut des rechten `After="Wpf Vertical Scrollbar"` werden rechts neben die Bildlaufleiste angezeigt. Vertikale Ränder, die ein Order-Attribut des Links `After="Wpf Line Number Margin"` links neben der Rand mit Zeilennummern angezeigt werden, (wenn es sichtbar ist).
+    Horizontale Ränder mit einem `After="Wpf Horizontal Scrollbar"` Orderattribut von werden unterhalb des integrierten Rands `Before ="Wpf Horizontal Scrollbar"` und horizontale Ränder mit einem Orderattribut von über dem integrierten Rand angezeigt. Rechts vertikale Ränder mit einem `After="Wpf Vertical Scrollbar"` Order-Attribut von werden rechts neben der Bildlaufleiste angezeigt. Linke vertikale Ränder mit einem `After="Wpf Line Number Margin"` Order-Attribut von erscheinen links vom Zeilennummernrand (falls sichtbar).
 
 - <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: die Art des Rands (links, rechts, oben oder unten).
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die für die Ihre Rand gültig ist.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "Code"), für den Ihre Marge gültig ist.
 
-  Das folgende Beispiel zeigt die ExportAttribute eine Margin-Anbieter für einen Rand, der rechts neben der Rand mit Zeilennummern angezeigt wird.
+  Das folgende Beispiel zeigt Exportattribute auf einem Margin-Anbieter für eine Marge, die rechts neben der Zeilennummernmarge angezeigt wird.
 
 ```
 [Export(typeof(IWpfTextViewMarginProvider))]
@@ -251,49 +251,49 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 [ContentType("text")]
 ```
 
-## <a name="extend-tags"></a>Erweitern von tags
- Tags sind eine Möglichkeit, Zuordnen von Daten mit verschiedenen Arten von Text. In vielen Fällen die zugehörigen Daten werden als eines visuellen Effekts angezeigt, aber nicht alle Tags sind eine visuelle Darstellung. Sie können Ihre eigene Art von Tags definieren, durch die Implementierung <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Sie müssen auch implementieren, <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> , die Tags für eine bestimmte Anzahl von Textspannen, bereitzustellen und eine <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> den Tagger bereitstellen. Sie müssen den Tagger Anbieter zusammen mit den folgenden Attributen exportieren:
+## <a name="extend-tags"></a>Erweitern von Tags
+ Tags sind eine Möglichkeit, Daten verschiedenen Textarten zuzuordnen. In vielen Fällen werden die zugehörigen Daten als visueller Effekt angezeigt, aber nicht alle Tags verfügen über eine visuelle Darstellung. Sie können Ihre eigene Art <xref:Microsoft.VisualStudio.Text.Tagging.ITag>von Tag definieren, indem Sie . Sie müssen <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> auch implementieren, um die Tags für einen <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> bestimmten Satz von Textspannen und eine bereitzustellen, um den Tagger bereitzustellen. Sie müssen den Tagger-Anbieter zusammen mit den folgenden Attributen exportieren:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die für die Ihr Tag gültig ist.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "Code"), für den Ihr Tag gültig ist.
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: die Art des Tags.
 
-  Das folgende Beispiel zeigt die ExportAttribute für einen Tagger-Anbieter.
+  Das folgende Beispiel zeigt Exportattribute für einen Tagger-Anbieter.
 
-\<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> die folgenden Arten von Tag integriert sind:
+\<CodeContentPlaceHolder></CodeContentPlaceHolder> 8 Die folgenden Arten von Tags sind integriert:
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: zugeordnete ein <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>.
+- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: zugeordnet <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>mit einer .
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: Error-Typen zugeordnet.
+- <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: mit Fehlertypen verknüpft.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: ein Zusatzelement zugeordnet.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: mit einer Verzierung verknüpft.
 
   > [!NOTE]
-  > Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, finden Sie unter der Definition HighlightWordTag in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).
+  > Ein Beispiel für <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>ein finden Sie in der HighlightWordTag-Definition in [der exemplarischen Vorgehensweise: Hervorheben von Text](../extensibility/walkthrough-highlighting-text.md).
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: zugeordneten Regionen, die erweitert oder reduziert werden, in der Gliederung werden können.
+- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: zugeordnet mit Regionen, die in der Gliederung erweitert oder zusammengeklappt werden können.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: definiert den Speicherplatz ein Zusatzelement befindet sich in einer Textansicht. Weitere Informationen zu Zusatzelemente mit Platzausgleich finden Sie im folgenden Abschnitt.
+- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: Definiert den Raum, den eine Verzierung in einer Textansicht einnimmt. Weitere Informationen zu Raumverzierungen finden Sie im folgenden Abschnitt.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: bietet automatischen Abstand und größenanpassung für das Zusatzelement.
+- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: bietet automatische Abstände und Größengrößen für die Verzierung.
 
-  Zum Suchen und Verwenden von Tags für Puffer und Ansichten, importieren die <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> oder <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>, die erhalten Sie eine <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> des angeforderten Typs. Der folgende Code wird dieser Dienst als Eigenschaft importiert.
+  Um Tags für Puffer und Ansichten zu <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> suchen <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>und zu <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> verwenden, importieren Sie die oder die , die Ihnen einen vom angeforderten Typ geben. Der folgende Code importiert diesen Dienst als Eigenschaft.
 
 ```
 [Import]
 internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get; set; }
 ```
 
-#### <a name="tags-and-markerformatdefinitions"></a>Tags und MarkerFormatDefinitions
- Sie können die erweitern die <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> Klasse, um die Darstellung eines Tags zu definieren. Sie müssen die Klasse exportieren (als eine <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>) mit den folgenden Attributen:
+#### <a name="tags-and-markerformatdefinitions"></a>Tags und MarkerFormatDefinitionen
+ Sie können <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> die Klasse erweitern, um die Darstellung eines Tags zu definieren. Sie müssen Ihre Klasse <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>(als )mit den folgenden Attributen exportieren:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name verwendet, um dieses Format zu verweisen.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name, der verwendet wird, um auf dieses Format zu verweisen
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Dies führt dazu, dass das Format, das in der Benutzeroberfläche angezeigt werden.
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Dies bewirkt, dass das Format in der Benutzeroberfläche angezeigt wird
 
-  Im Konstruktor definieren Sie den Anzeigenamen und die Darstellung des Tags. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> definiert die Füllfarbe und <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> definiert die Farbe des Rahmens. Die <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> der lokalisierbare Namen des in der Formatdefinition ist.
+  Im Konstruktor definieren Sie den Anzeigenamen und die Darstellung des Tags. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>definiert die Füllfarbe <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> und definiert die Rahmenfarbe. Der <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> ist der lokalisierbare Name der Formatdefinition.
 
-  Im folgenden finden ein Beispiel für eine Formatdefinition:
+  Im Folgenden finden Sie ein Beispiel für eine Formatdefinition:
 
 ```
 [Export(typeof(EditorFormatDefinition))]
@@ -312,21 +312,21 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 
 ```
 
- Verweisen auf den Namen, die, den Sie in das Name-Attribut der Klasse (nicht den Anzeigenamen) festlegen, zum Anwenden dieser Formatdefinition, die ein Tag.
+ Um diese Formatdefinition auf ein Tag anzuwenden, verweisen Sie auf den Namen, den Sie im Namensattribut der Klasse festgelegt haben (nicht den Anzeigenamen).
 
 > [!NOTE]
-> Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, finden Sie unter der HighlightWordFormatDefinition-Klasse in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).
+> Ein Beispiel für <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>ein finden Sie in der HighlightWordFormatDefinition-Klasse in [der exemplarischen Vorgehensweise: Hervorheben von Text](../extensibility/walkthrough-highlighting-text.md).
 
-## <a name="extend-adornments"></a>Erweitern Sie die Zusatzelemente
- Zusatzelemente definieren die visuelle Effekte, die hinzugefügt werden können entweder auf den Text, der in einer Textansicht angezeigt wird, oder zeigen Sie auf den Text selbst. Sie können Ihre eigenen Zusatzelement definieren, als jede Art von <xref:System.Windows.UIElement>.
+## <a name="extend-adornments"></a>Erweitern von Verzierungen
+ Verzierungen definieren visuelle Effekte, die entweder dem Text, der in einer Textansicht angezeigt wird, oder der Textansicht selbst hinzugefügt werden können. Sie können Ihre eigene Verzierung <xref:System.Windows.UIElement>als jede Art von definieren.
 
- Sie müssen in Ihrer Klasse Zusatzelement deklarieren eine <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>. Informationen zum Registrieren Ihrer Zusatzelementebene exportieren Sie es zusammen mit den folgenden Attributen:
+ In Ihrer Verzierungsklasse <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>müssen Sie eine deklarieren. Um Den Verzierungs-Layer zu registrieren, exportieren Sie ihn zusammen mit den folgenden Attributen:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name des Zusatzelements ab.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name der Verzierung.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge des Zusatzelements in Bezug auf andere Ebenen des Zusatzelements ab. Die Klasse <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> vier Standardfolien definiert: Auswahl, Gliederung, Einfügemarke und Text.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge der Verzierung in Bezug auf andere Verzierungsschichten. Die <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> Klasse definiert vier Standard-Layer: Auswahl, Gliederung, Caret und Text.
 
-  Das folgende Beispiel zeigt die ExportAttribute auf eine Definition einer Ebene Zusatzelements ab.
+  Das folgende Beispiel zeigt Exportattribute für eine Adornment-Layer-Definition.
 
 ```
 [Export]
@@ -335,13 +335,13 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 internal AdornmentLayerDefinition testLayerDefinition;
 ```
 
- Müssen Sie eine zweite Klasse, die implementiert erstellen <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> und behandelt die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Ereignis durch Instanziieren des Zusatzelements ab. Sie müssen diese Klasse zusammen mit den folgenden Attributen exportieren:
+ Sie müssen eine zweite Klasse <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> erstellen, <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> die ihr Ereignis implementiert und verarbeitet, indem Sie die Verzierung instanziieren. Sie müssen diese Klasse zusammen mit den folgenden Attributen exportieren:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die für die das Zusatzelement gültig ist.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "Code"), für den die Verzierung gültig ist.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: die Art der Textansicht, für den diesem Zusatzelement gültig ist. Die Klasse <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> hat den Satz von vordefinierten Textansichtsrollen. Z. B. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> wird hauptsächlich für Textansichten von Dateien. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> wird für Textansichten verwendet, dass ein Benutzer bearbeiten kann, oder navigieren Sie mithilfe einer Tastatur und Maus. Beispiele für <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> Ansichten sind die Text-Editor-Ansicht und die **Ausgabe** Fenster.
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: die Art der Textansicht, für die diese Verzierung gültig ist. Die <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> Klasse verfügt über den Satz vordefinierter Textansichtsrollen. Beispielsweise <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> wird in erster Linie für Textansichten von Dateien verwendet. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>wird für Textansichten verwendet, die ein Benutzer mit einer Maus und einer Tastatur bearbeiten oder navigieren kann. Beispiele <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> für Ansichten sind die Editor-Textansicht und das **Ausgabefenster.**
 
-  Das folgende Beispiel zeigt die ExportAttribute für den Anbieter des Zusatzelements ab.
+  Das folgende Beispiel zeigt Exportattribute auf dem Verzierungsanbieter.
 
 ```
 [Export(typeof(IWpfTextViewCreationListener))]
@@ -350,9 +350,9 @@ internal AdornmentLayerDefinition testLayerDefinition;
 internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 ```
 
- Ein Zusatzelement mit Platzausgleich ist ein, der belegt Speicherplatz auf der gleichen Ebene wie der Text. Um diese Art von Zusatzelement erstellen zu können, müssen Sie eine Tag-Klasse, die von erbt definieren <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, definiert die Menge des Speicherplatzes, der das Zusatzelement belegt.
+ Eine Raum-Verhandeln-Verzierung ist eine, die Platz auf der gleichen Ebene wie der Text einnimmt. Um diese Art von Verzierung zu erstellen, müssen <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>Sie eine Tag-Klasse definieren, die von erbt, die den Raum definiert, den die Verzierung einnimmt.
 
- Wie bei der alle Zusatzelemente, müssen Sie die Zusatzelement Layer-Definition exportieren.
+ Wie bei allen Verzierungen müssen Sie die Definition des Verzierungs-Layers exportieren.
 
 ```
 [Export]
@@ -361,17 +361,17 @@ internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 internal AdornmentLayerDefinition testAdornmentLayer;
 ```
 
- Um das Zusatzelement mit Platzausgleich zu instanziieren, müssen Sie eine Klasse, die implementiert erstellen <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>, zusätzlich zu der Klasse, die implementiert <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> (wie bei anderen Arten von Zusatzelemente).
+ Um die Raumverzierung zu instanziieren, müssen Sie <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>eine Klasse erstellen, die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> zusätzlich zu der Klasse implementiert, die implementiert (wie bei anderen Arten von Verzierungen).
 
- Um den Tagger-Anbieter zu registrieren, müssen Sie es zusammen mit den folgenden Attributen exportieren:
+ Um den Tagger-Anbieter zu registrieren, müssen Sie ihn zusammen mit den folgenden Attributen exportieren:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die für die Ihre Zusatzelement gültig ist.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "Code"), für den Ihre Verzierung gültig ist.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: die Art der Textansicht, für die dieses Tag oder Zusatzelement ist gültig. Die Klasse <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> hat den Satz von vordefinierten Textansichtsrollen. Z. B. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> wird hauptsächlich für Textansichten von Dateien. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> wird für Textansichten verwendet, dass ein Benutzer bearbeiten kann, oder navigieren Sie mithilfe einer Tastatur und Maus. Beispiele für <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> Ansichten sind die Text-Editor-Ansicht und die **Ausgabe** Fenster.
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: die Art der Textansicht, für die dieses Tag oder diese Verzierung gültig ist. Die <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> Klasse verfügt über den Satz vordefinierter Textansichtsrollen. Beispielsweise <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> wird in erster Linie für Textansichten von Dateien verwendet. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>wird für Textansichten verwendet, die ein Benutzer mit einer Maus und einer Tastatur bearbeiten oder navigieren kann. Beispiele <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> für Ansichten sind die Editor-Textansicht und das **Ausgabefenster.**
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: die Art der Tag oder Zusatzelement, die Sie definiert haben. Sie müssen ein zweites hinzufügen <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> für <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: die Art des Tags oder der Verzierung, die Sie definiert haben. Sie müssen eine <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>Sekunde für hinzufügen.
 
-  Das folgende Beispiel zeigt die ExportAttribute für den Anbieter Tagger für Tags Zusatzelement mit Platzausgleich.
+  Das folgende Beispiel zeigt Exportattribute auf dem Tagger-Anbieter für ein Space-Negotiating-Adornment-Tag.
 
 ```
 [Export(typeof(ITaggerProvider))]
@@ -382,10 +382,10 @@ internal AdornmentLayerDefinition testAdornmentLayer;
 internal sealed class TestTaggerProvider : ITaggerProvider
 ```
 
-## <a name="extending-mouse-processors"></a>Erweitern Sie die Maus-Prozessoren
- Sie können spezielle Behandlung für die Mauseingabe hinzufügen. Erstellen Sie eine Klasse, die von erbt <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> und überschreiben Sie die Mausereignisse für die Eingabe, die Sie behandeln möchten. Sie müssen auch implementieren <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> in eine zweite Klasse und exportieren Sie es zusammen mit den <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> , die angibt, dass der Art des Inhalts (z. B. "Text" oder "code"), die für den Maushandler für Ihre gültig ist.
+## <a name="extending-mouse-processors"></a>Erweitern von Mausprozessoren
+ Sie können eine spezielle Handhabung für die Mauseingabe hinzufügen. Erstellen Sie eine Klasse, <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> die die Mausereignisse für die Eingabe, die Sie verarbeiten möchten, erbt und überschreibt diese. Sie müssen <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> auch in einer zweiten Klasse <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> implementieren und sie zusammen mit dem exportieren, der die Art des Inhalts (z. B. "Text" oder "Code") angibt, für den der Maushandler gültig ist.
 
- Das folgende Beispiel zeigt die ExportAttribute für einen Anbieter der Maus-Prozessor.
+ Das folgende Beispiel zeigt Exportattribute auf einem Mausprozessoranbieter.
 
 ```
 [Export(typeof(IMouseProcessorProvider))]
@@ -395,20 +395,20 @@ internal sealed class TestTaggerProvider : ITaggerProvider
 internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 ```
 
-## <a name="extend-drop-handlers"></a>Erweitern Sie die Drop-Handler
- Sie können das Verhalten des Drop-Handler für bestimmte Arten von Text anpassen, indem Sie eine Klasse erstellen, implementiert <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> und eine zweite Klasse, die implementiert <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> der Drop-Handlers erstellen. Sie müssen die Drop-Handlers zusammen mit den folgenden Attributen exportieren:
+## <a name="extend-drop-handlers"></a>Erweitern von Drop-Handlern
+ Sie können das Verhalten von Drophandlern für bestimmte Texttypen <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> anpassen, indem Sie <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> eine Klasse erstellen, die implementiert, und eine zweite Klasse, die zum Erstellen des Drophandlers implementiert wird. Sie müssen den Drophandler zusammen mit den folgenden Attributen exportieren:
 
-- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: der Text-Format für den dieser Ablagehandler gültig ist. Die folgenden Formate werden in der Reihenfolge ihrer Priorität von der höchsten zur niedrigsten behandelt:
+- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: das Textformat, für das dieser Ablagehandler gültig ist. Die folgenden Formate werden in der Prioritätsreihenfolge von der höchsten bis zur niedrigsten Formate behandelt:
 
-  1. Alle benutzerdefinierten format
+  1. Jedes benutzerdefinierte Format
 
-  2. FileDrop
+  2. Filedrop
 
   3. EnhancedMetafile
 
-  4. WaveAudio
+  4. Waveaudio
 
-  5. RIFF
+  5. Riff
 
   6. Dif
 
@@ -418,7 +418,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   9. PenData
 
-  10. Serialisierbare
+  10. Serialisierbar
 
   11. SymbolicLink
 
@@ -430,7 +430,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   15. Bitmap
 
-  16. DIB
+  16. Dib
 
   17. MetafilePicture
 
@@ -440,7 +440,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   20. HTML-Format
 
-  21. UnicodeText
+  21. Unicodetext
 
   22. OEMText
 
@@ -448,9 +448,9 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name des Drop-Handlers.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge der Drop-Handlers vor oder nach dem Standardhandler für die Drop. Der Drop-Standardhandler für Visual Studio heißt "DefaultFileDropHandler".
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge des Drop-Handlers vor oder nach dem Standard-Drop-Handler. Der Standard-Drophandler für Visual Studio heißt "DefaultFileDropHandler".
 
-  Das folgende Beispiel zeigt die ExportAttribute für einen Anbieter der Drop-Handler.
+  Das folgende Beispiel zeigt Exportattribute auf einem Drophandleranbieter.
 
 ```
 [Export(typeof(IDropHandlerProvider))]
@@ -460,10 +460,10 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 internal class TestDropHandlerProvider : IDropHandlerProvider
 ```
 
-## <a name="extending-editor-options"></a>Erweitern Sie die Editor-Optionen
- Sie können Optionen gültig ist nur in einen bestimmten Bereich, z. B. in einer Textansicht definieren. Der Editor stellt dieser Satz von vordefinierten Optionen:-Editor-Optionen, Optionen und Optionen für Windows Presentation Foundation (WPF). Diese Optionen finden Sie im <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions>, <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions>, und <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions>.
+## <a name="extending-editor-options"></a>Erweitern der Editoroptionen
+ Sie können Optionen definieren, die nur in einem bestimmten Bereich gültig sind, z. B. in einer Textansicht. Der Editor stellt diesen Satz vordefinierter Optionen bereit: Editoroptionen, Ansichtsoptionen und Windows Presentation Foundation (WPF)-Ansichtsoptionen. Diese Optionen finden <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions>Sie <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions>unter <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions>, und .
 
- Um eine neue Option hinzuzufügen, leiten Sie eine Klasse von einer der folgenden Option Definition Klassen:
+ Um eine neue Option hinzuzufügen, leiten Sie eine Klasse aus einer der folgenden Optionsdefinitionsklassen ab:
 
 - <xref:Microsoft.VisualStudio.Text.Editor.EditorOptionDefinition%601>
 
@@ -471,7 +471,7 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.WpfViewOptionDefinition%601>
 
-  Das folgende Beispiel zeigt, wie Sie eine Optionsdefinition exportieren, die einen booleschen Wert aufweist.
+  Das folgende Beispiel zeigt, wie eine Optionsdefinition mit einem booleschen Wert exportiert wird.
 
 ```
 [Export(typeof(EditorOptionDefinition))]
@@ -479,24 +479,24 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ```
 
 ## <a name="extend-intellisense"></a>Erweitern von IntelliSense
- IntelliSense ist ein allgemeiner Begriff für eine Gruppe von Funktionen, die Informationen zu strukturiertem Text bereitstellen, und die Anweisungsvervollständigung für sie. Zu diesen Funktionen gehören die Anweisungsvervollständigung, Signaturhilfe, QuickInfos und Glühbirnen. Anweisungsvervollständigung hilft Benutzern, die ein Sprachenname-Schlüsselwort oder Member korrekt eingeben. Signaturhilfe zeigt die Signatur oder die Signaturen für die Methode, die der Benutzer nur eingegeben hat. QuickInfo zeigt eine vollständige Signatur für den Namen eines Typs oder Members an, wenn die Maus darauf zeigt. Glühbirne bieten zusätzliche Aktionen für bestimmte Bezeichner in bestimmten Kontexten, z. B. alle Vorkommen einer Variable umbenennen, nachdem ein Vorkommen umbenannt wurde.
+ IntelliSense ist ein allgemeiner Begriff für eine Gruppe von Features, die Informationen über strukturierten Text und die Abschlusserklärung von Ausweisen für diesen Text bereitstellen. Zu diesen Funktionen gehören die Anweisungsvervollständigung, Signaturhilfe, Quick Info und Glühbirnen. Mit der Anweisungsvervollständigung können Benutzer ein Sprachschlüsselwort oder einen Membernamen richtig eingeben. Die Signaturhilfe zeigt die Signatur oder Signaturen für die Methode an, die der Benutzer gerade eingegeben hat. Quick Info zeigt eine vollständige Signatur für einen Typ oder Elementnamen an, wenn die Maus darauf ruht. Glühbirne bietet zusätzliche Aktionen für bestimmte Bezeichner in bestimmten Kontexten, z. B. das Umbenennen aller Vorkommen einer Variablen, nachdem ein Vorkommen umbenannt wurde.
 
- Der Entwurf einer IntelliSense-Funktion ist ähnlich in allen Fällen:
+ Das Design einer IntelliSense-Funktion ist in allen Fällen identisch:
 
-- Eine von IntelliSense *Broker* ist verantwortlich für den gesamten Prozess.
+- Ein *IntelliSense-Broker* ist für den gesamten Prozess verantwortlich.
 
-- Eine von IntelliSense *Sitzung* die Abfolge der Ereignisse, die zwischen der auslösenden der Presenter und Commits oder Abbruch der Auswahl darstellt. Die Sitzung wird in der Regel durch eine Benutzeraktion ausgelöst.
+- Eine IntelliSense-Sitzung stellt die Abfolge von Ereignissen zwischen dem Auslösen des Referenten und dem Committal oder Abbruch der Auswahl dar. *session* Die Sitzung wird in der Regel durch eine Benutzergeste ausgelöst.
 
-- Eine von IntelliSense *Controller* ist verantwortlich für die Entscheidung, wenn die Sitzung beginnen und enden soll. Es legt außerdem fest, wenn die Informationen ein Commit ausgeführt werden soll, und wenn die Sitzung abgebrochen werden soll.
+- Ein IntelliSense-Controller ist für die Entscheidung verantwortlich, wann die Sitzung beginnen und enden soll. *controller* Er entscheidet auch, wann die Informationen gebunden werden sollen und wann die Sitzung abgebrochen werden soll.
 
-- Eine von IntelliSense *Quelle* enthält die Inhalte und entscheidet, die beste Übereinstimmung.
+- Eine IntelliSense-Quelle stellt den Inhalt bereit und entscheidet über die beste Übereinstimmung. *source*
 
-- Eine von IntelliSense *Presenter* dient zum Anzeigen des Inhalts.
+- Ein *IntelliSense-Moderator* ist für die Anzeige des Inhalts verantwortlich.
 
-  In den meisten Fällen wird empfohlen, dass Sie mindestens eine Quelle und eines Controllers angeben. Sie können auch einen Presenter angeben, wenn Sie die Anzeige anpassen möchten.
+  In den meisten Fällen wird empfohlen, mindestens eine Quelle und einen Controller bereitzustellen. Sie können auch einen Referenten bereitstellen, wenn Sie die Anzeige anpassen möchten.
 
-### <a name="implement-an-intellisense-source"></a>Implementieren Sie eine IntelliSense-Quelle
- Wenn eine Quelle anpassen möchten, müssen Sie (mindestens) der folgenden Quellschnittstellen implementieren:
+### <a name="implement-an-intellisense-source"></a>Implementieren einer IntelliSense-Quelle
+ Um eine Quelle anzupassen, müssen Sie eine (oder mehrere) der folgenden Quellschnittstellen implementieren:
 
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
@@ -507,7 +507,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>wurde zugunsten von <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>abgestellt.
 
  Darüber hinaus müssen Sie einen Anbieter der gleichen Art implementieren:
 
@@ -520,17 +520,17 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>wurde zugunsten von <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>abgestellt.
 
  Sie müssen den Anbieter zusammen mit den folgenden Attributen exportieren:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name der Quelle.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die auf die die Quelle angewendet wird.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "Code"), auf den die Quelle angewendet wird.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in der die Quelle angezeigt (in Bezug auf andere Quellen werden soll).
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in der die Quelle erscheinen soll (in Bezug auf andere Quellen).
 
-- Das folgende Beispiel zeigt ExportAttribute auf einen Vervollständigungsanbieter für die Datenquelle an.
+- Das folgende Beispiel zeigt Exportattribute auf einem Abschlussquellenanbieter.
 
 ```
 Export(typeof(ICompletionSourceProvider))]
@@ -540,24 +540,24 @@ Export(typeof(ICompletionSourceProvider))]
 internal class TestCompletionSourceProvider : ICompletionSourceProvider
 ```
 
- Weitere Informationen zum Implementieren von IntelliSense-Datenquellen finden Sie in den folgenden exemplarischen Vorgehensweisen:
+ Weitere Informationen zum Implementieren von IntelliSense-Quellen finden Sie in den folgenden exemplarischen Vorgehensweisen:
 
-- [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [Exemplarische Vorgehensweise: QuickInfo-Tooltips anzeigen](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
 
 - [Exemplarische Vorgehensweise: Signaturhilfe anzeigen](../extensibility/walkthrough-displaying-signature-help.md)
 
 - [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)
 
-### <a name="implement-an-intellisense-controller"></a>Implementieren Sie einen IntelliSense-controller
- Wenn einen Controller anpassen möchten, müssen Sie implementieren die <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> Schnittstelle. Darüber hinaus müssen Sie einen Controller-Anbieter zusammen mit den folgenden Attributen implementieren:
+### <a name="implement-an-intellisense-controller"></a>Implementieren eines IntelliSense-Controllers
+ Um einen Controller anzupassen, <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> müssen Sie die Schnittstelle implementieren. Darüber hinaus müssen Sie einen Controlleranbieter zusammen mit den folgenden Attributen implementieren:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name des Controllers.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die für die der Controller gilt.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "Code"), auf den der für die Verarbeitung Verantwortliche angewendet wird.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in der der Controller (in Bezug auf andere Controller) angezeigt werden soll.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in der der Controller erscheinen soll (in Bezug auf andere Controller).
 
-  Das folgende Beispiel zeigt die ExportAttribute auf einen Vervollständigungsanbieter für den Controller.
+  Das folgende Beispiel zeigt Exportattribute auf einem Abschlusscontrolleranbieter.
 
 ```
 Export(typeof(IIntellisenseControllerProvider))]
@@ -567,6 +567,6 @@ Export(typeof(IIntellisenseControllerProvider))]
 internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvider
 ```
 
- Weitere Informationen zur Verwendung von IntelliSense-Controller finden Sie in den folgenden exemplarischen Vorgehensweisen:
+ Weitere Informationen zur Verwendung von IntelliSense-Controllern finden Sie in den folgenden exemplarischen Vorgehensweisen:
 
-- [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [Exemplarische Vorgehensweise: QuickInfo-Tooltips anzeigen](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

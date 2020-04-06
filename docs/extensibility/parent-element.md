@@ -1,25 +1,25 @@
 ---
-title: Übergeordnetes Element | Microsoft-Dokumentation
+title: Übergeordnetes Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f64c99f030fa436eb250531ddd5c2f11bcd2bac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316936"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702220"
 ---
 # <a name="parent-element"></a>Übergeordnetes Element
-Das übergeordnete Element eines Felds Schaltfläche oder ein Kombinationsfeld kann nur eine Gruppe sein. Das übergeordnete Element eines Menü oder einer Gruppe kann einem anderen Menü oder einer Gruppe sein. In einem [CommandPlacement-Element](../extensibility/commandplacement-element.md), dieses Element ist erforderlich; in allen anderen Fällen ist er optional. Wenn dieses Element nicht angegeben ist, das übergeordnete Element des `Group_Undefined:0` wird abgeleitet werden.
+Das übergeordnete Element einer Schaltfläche oder eines Kombinationsfelds darf nur eine Gruppe sein. Das übergeordnete Element eines Menüs oder einer Gruppe kann ein anderes Menü oder eine andere Gruppe sein. In einem [CommandPlacement-Element](../extensibility/commandplacement-element.md)ist dieses Element erforderlich. in allen anderen Instanzen ist es optional. Wenn dieses Element weggelassen `Group_Undefined:0` wird, wird das übergeordnete Element von impliziert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,22 +32,22 @@ Das übergeordnete Element eines Felds Schaltfläche oder ein Kombinationsfeld k
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|guid|Erforderlich. GUID der GUID/ID Befehlsbezeichner.|
-|id|Erforderlich. ID des GUID/ID Befehlsbezeichner.|
+|guid|Erforderlich. GUID des GUID/ID-Befehlsbezeichners.|
+|id|Erforderlich. ID des GUID/ID-Befehlsbezeichners.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keiner
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CommandTable-element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle, die eine VSPackage bietet die integrierte Entwicklungsumgebung (IDE) darstellen. Beispielsweise Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern.|
-|[Buttons-element](../extensibility/buttons-element.md)|Gruppen [Schaltflächenelement](../extensibility/button-element.md) Elemente.|
-|[Menus-element](../extensibility/menus-element.md)|Definiert die Menüs aus, denen eine VSPackage implementiert.|
-|[Groups-element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, die ein VSPackage für die integrierte Entwicklungsumgebung (IDE) bereitstellt. Beispielsweise Menüelemente, Menüs, Symbolleisten und Kombinationsfelder.|
+|[Buttons-Element](../extensibility/buttons-element.md)|[Gruppen-Schaltflächenelementelemente.](../extensibility/button-element.md)|
+|[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die ein VSPackage implementiert.|
+|[Gruppenelement](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|
 
-## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

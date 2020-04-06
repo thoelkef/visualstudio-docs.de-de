@@ -1,54 +1,54 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Verwenden eines Shell-Befehls mit einer Editorerweiterung | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c3acb26fe6eed1918dd1f9bb9e84b260defa5e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 52b151b09c1bb7306b4270f9408d0f04a7600aa2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632491"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697170"
 ---
-# <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung
-Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einer Textansicht im Editor ein Zusatzelement hinzugefügt wird, indem ein Menübefehl aufgerufen wird.
+# <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editorerweiterung
+In einem VSPackage können Sie dem Editor Funktionen wie Menübefehle hinzufügen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einer Textansicht im Editor eine Verzierung hinzufügen, indem Sie einen Menübefehl aufrufen.
 
- In dieser exemplarischen Vorgehensweise wird die Verwendung eines VSPackages zusammen mit einem Managed Extensibility Framework Komponenten Teil (MEF) veranschaulicht. Sie müssen ein VSPackage verwenden, um den Menübefehl in der Visual Studio-Shell zu registrieren. Und Sie können den-Befehl verwenden, um auf den MEF-Komponenten Teil zuzugreifen.
+ In dieser exemplarischen Vorgehensweise wird die Verwendung eines VSPackage zusammen mit einem MEF-Komponententeil (Managed Extensibility Framework) veranschaulicht. Sie müssen ein VSPackage verwenden, um den Menübefehl bei der Visual Studio-Shell zu registrieren. Und Sie können den Befehl verwenden, um auf das MEF-Komponententeil zuzugreifen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Voraussetzungen
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl
- Erstellen Sie ein VSPackage, das einen Menübefehl mit dem Namen **Zusatzelement hinzufügen** **im Menü Extras** einfügt.
+ Erstellen Sie ein VSPackage, das einen Menübefehl mit dem Namen **Adornment hinzufügen** im Menü **Extras** abgibt.
 
-1. Erstellen Sie C# ein VSIX-Projekt mit dem Namen `MenuCommandTest`, und fügen Sie einen benutzerdefinierten Befehls Element-Vorlagen Namen **addadornment**hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein Projekt `MenuCommandTest`mit dem Namen , und fügen Sie einen benutzerdefinierten Befehlselementvorlagennamen **AddAdornment**hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Eine Projekt Mappe mit dem Namen menucommandtest wird geöffnet. Die menucommandtestpackage-Datei enthält den Code, der den Menübefehl erstellt und ihn im **Menü Extras** einfügt. An diesem Punkt bewirkt der Befehl lediglich, dass ein Meldungs Feld angezeigt wird. In den nachfolgende Schritten wird gezeigt, wie Sie diesen Wert ändern, um das Kommentar Zusatzelement anzuzeigen.
+2. Eine Lösung mit dem Namen MenuCommandTest wird geöffnet. Die MenuCommandTestPackage-Datei hat den Code, der den Menübefehl erstellt und im Menü **Extras** ablegt. An diesem Punkt bewirkt der Befehl nur, dass ein Meldungsfeld angezeigt wird. In späteren Schritten wird angezeigt, wie Sie dies ändern, um die Kommentarverzierung anzuzeigen.
 
-3. Öffnen Sie im VSIX-Manifest-Editor die Datei " *Source. Extension. vsixmanifest* ". Die Registerkarte "`Assets`" sollte eine Zeile für ein Microsoft. VisualStudio. VSPackage mit dem Namen "menucommandtest" aufweisen.
+3. Öffnen Sie die Datei *source.extension.vsixmanifest* im VSIX-Manifest-Editor. Die `Assets` Registerkarte sollte eine Zeile für ein Microsoft.VisualStudio.VsPackage mit dem Namen MenuCommandTest haben.
 
-4. Speichern und schließen Sie die Datei " *Source. Extension. vsixmanifest* ".
+4. Speichern und schließen Sie die Datei *source.extension.vsixmanifest.*
 
-## <a name="add-a-mef-extension-to-the-command-extension"></a>Fügen Sie der Befehls Erweiterung eine MEF-Erweiterung hinzu.
+## <a name="add-a-mef-extension-to-the-command-extension"></a>Hinzufügen einer MEF-Erweiterung zur Befehlserweiterung
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, klicken Sie auf **Hinzufügen**und dann auf **Neues Projekt**. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** unter **Visual C#** und **dann auf** **VSIX Project**. Benennen Sie das Projekt mit `CommentAdornmentTest`.
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, klicken Sie auf **Hinzufügen**, und dann auf **Neues Projekt**. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf **Erweiterbarkeit** unter **Visual C,** dann **auf VSIX Project**. Geben Sie dem Projekt den Namen `CommentAdornmentTest`.
 
-2. Da dieses Projekt mit der Assembly mit starkem Namen VSPackage interagieren wird, müssen Sie die Assembly signieren. Sie können die Schlüsseldatei wieder verwenden, die bereits für die VSPackage-Assembly erstellt wurde.
+2. Da dieses Projekt mit der VSPackage-Assembly mit starkem Namen interagiert, müssen Sie die Assembly signieren. Sie können die Schlüsseldatei wiederverwenden, die bereits für die VSPackage-Assembly erstellt wurde.
 
-    1. Öffnen Sie die Projekteigenschaften, und wählen Sie die Registerkarte **Signierung** .
+    1. Öffnen Sie die Projekteigenschaften, und wählen Sie die Registerkarte **Signieren** aus.
 
-    2. Wählen Sie **Assembly signieren**aus.
+    2. Wählen Sie **Baugruppe signieren**aus.
 
-    3. Wählen Sie unter **Schlüsseldatei mit starkem Namen auswählen**die *Key. snk* -Datei aus, die für die menucommandtest-Assembly generiert wurde.
+    3. Wählen Sie unter **Schlüsseldatei mit starkem Namen**die *Key.snk-Datei* aus, die für die MenuCommandTest-Assembly generiert wurde.
 
-## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>Weitere Informationen finden Sie in der MEF-Erweiterung im VSPackage-Projekt.
+## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>Siehe die MEF-Erweiterung im VSPackage-Projekt
  Da Sie dem VSPackage eine MEF-Komponente hinzufügen, müssen Sie beide Arten von Assets im Manifest angeben.
 
 > [!NOTE]
@@ -56,40 +56,40 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>So verweisen Sie auf die MEF-Komponente im VSPackage-Projekt
 
-1. Öffnen Sie im menucommandtest-Projekt im VSIX-Manifest-Editor die Datei " *Source. Extension. vsixmanifest* ".
+1. Öffnen Sie im MenuCommandTest-Projekt die Datei *source.extension.vsixmanifest* im VSIX-Manifest-Editor.
 
-2. Klicken Sie auf der Registerkarte **Objekte** auf **neu**.
+2. Klicken Sie auf der Registerkarte **Assets** auf **Neu**.
 
-3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent**aus.
+3. Wählen Sie in der **Liste Typ** **Microsoft.VisualStudio.MefComponent**aus.
 
-4. Wählen Sie in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+4. Wählen Sie in der **Liste Quelle** die Option Ein Projekt in der **aktuellen Projektmappe**aus.
 
-5. Wählen Sie in der Liste **Projekt** die Option **commentadornmenttest**aus.
+5. Wählen Sie in der **Projektliste** **CommentAdornmentTest**aus.
 
-6. Speichern und schließen Sie die Datei " *Source. Extension. vsixmanifest* ".
+6. Speichern und schließen Sie die Datei *source.extension.vsixmanifest.*
 
-7. Stellen Sie sicher, dass das menucommandtest-Projekt einen Verweis auf das commentadornmenttest-Projekt enthält.
+7. Stellen Sie sicher, dass das MenuCommandTest-Projekt über einen Verweis auf das CommentAdornmentTest-Projekt verfügt.
 
-8. Legen Sie im commentadornmenttest-Projekt fest, dass das Projekt eine Assembly erzeugt. Wählen Sie im **Projektmappen-Explorer**das Projekt aus, und suchen Sie im **Eigenschaften** Fenster nach der Eigenschaft **Build-Ausgabe in OutputDirectory kopieren** , und legen Sie Sie auf **true**fest.
+8. Legen Sie im CommentAdornmentTest-Projekt fest, dass das Projekt eine Baugruppe erzeugt. Wählen Sie im **Projektmappen-Explorer**das Projekt aus, und suchen Sie im **Eigenschaftenfenster** nach der Eigenschaft **Buildausgabe in OutputDirectory kopieren,** und legen Sie es auf **true**fest.
 
-## <a name="define-a-comment-adornment"></a>Definieren eines Kommentar Zusatz Elements
- Das Kommentar Zusatzelement selbst besteht aus einer <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, die den markierten Text nachverfolgt, und einigen Zeichen folgen, die den Autor und die Beschreibung des Texts darstellen.
+## <a name="define-a-comment-adornment"></a>Definieren einer Kommentarverzierung
+ Die Kommentarverzierung selbst <xref:Microsoft.VisualStudio.Text.ITrackingSpan> besteht aus einer, die den markierten Text nachverfolgt, und aus einigen Zeichenfolgen, die den Autor und die Beschreibung des Textes darstellen.
 
-#### <a name="to-define-a-comment-adornment"></a>So definieren Sie ein Kommentar Zusatzelement
+#### <a name="to-define-a-comment-adornment"></a>So definieren Sie eine Kommentarverzierung
 
-1. Fügen Sie im commentadornmenttest-Projekt eine neue Klassendatei hinzu, und benennen Sie Sie `CommentAdornment`.
+1. Fügen Sie im CommentAdornmentTest-Projekt eine neue `CommentAdornment`Klassendatei hinzu, und benennen Sie sie .
 
 2. Fügen Sie die folgenden Verweise hinzu:
 
-    1. Microsoft. VisualStudio. coreutility
+    1. Microsoft.VisualStudio.CoreUtility
 
-    2. Microsoft. VisualStudio. Text. Data
+    2. Microsoft.VisualStudio.Text.Data
 
-    3. Microsoft. VisualStudio. Text. Logic
+    3. Microsoft.VisualStudio.Text.Logic
 
-    4. Microsoft. VisualStudio. Text. UI
+    4. Microsoft.VisualStudio.Text.UI
 
-    5. Microsoft. VisualStudio. Text. UI. WPF
+    5. Microsoft.VisualStudio.Text.UI.Wpf
 
     6. System.ComponentModel.Composition
 
@@ -99,19 +99,19 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
 
     9. WindowsBase
 
-3. Fügen Sie die folgende `using`-Direktive hinzu.
+3. Fügen Sie `using` die folgende Direktive hinzu.
 
     ```csharp
     using Microsoft.VisualStudio.Text;
     ```
 
-4. Die Datei sollte eine Klasse mit dem Namen `CommentAdornment` enthalten.
+4. Die Datei sollte eine `CommentAdornment`Klasse mit dem Namen enthalten.
 
     ```csharp
     internal class CommentAdornment
     ```
 
-5. Fügen Sie der `CommentAdornment`-Klasse für die <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, den Autor und die Beschreibung drei Felder hinzu.
+5. Fügen Sie der `CommentAdornment` Klasse <xref:Microsoft.VisualStudio.Text.ITrackingSpan>für die , den Autor und die Beschreibung drei Felder hinzu.
 
     ```csharp
     public readonly ITrackingSpan Span;
@@ -130,12 +130,12 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-## <a name="create-a-visual-element-for-the-adornment"></a>Erstellen eines visuellen Elements für das Zusatzelement
- Definieren Sie ein visuelles Element für das Zusatzelement. Definieren Sie für diese exemplarische Vorgehensweise ein Steuerelement, das von der Windows Presentation Foundation (WPF)-Klasse <xref:System.Windows.Controls.Canvas> erbt.
+## <a name="create-a-visual-element-for-the-adornment"></a>Erstellen eines visuellen Elements für die Verzierung
+ Definieren Sie ein visuelles Element für Ihre Verzierung. Definieren Sie für diese exemplarische Vorgehensweise ein Steuerelement, das von <xref:System.Windows.Controls.Canvas>der Windows Presentation Foundation (WPF)-Klasse erbt.
 
-1. Erstellen Sie im commentadornmenttest-Projekt eine Klasse, und benennen Sie Sie `CommentBlock`.
+1. Erstellen Sie eine Klasse im CommentAdornmentTest-Projekt, und benennen Sie sie `CommentBlock`.
 
-2. Fügen Sie die folgenden `using` Direktiven hinzu.
+2. Fügen Sie `using` die folgenden Direktiven hinzu.
 
     ```csharp
     using Microsoft.VisualStudio.Text;
@@ -149,14 +149,14 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     using Microsoft.VisualStudio.Utilities;
     ```
 
-3. Erbt die `CommentBlock` Klasse von <xref:System.Windows.Controls.Canvas>.
+3. Lassen `CommentBlock` Sie die Klasse <xref:System.Windows.Controls.Canvas>von erben.
 
     ```csharp
     internal class CommentBlock : Canvas
     { }
     ```
 
-4. Fügen Sie einige private Felder hinzu, um die visuellen Aspekte des Zusatz Elements zu definieren.
+4. Fügen Sie einige private Felder hinzu, um die visuellen Aspekte der Verzierung zu definieren.
 
     ```csharp
     private Geometry textGeometry;
@@ -166,7 +166,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     private static Pen dashPen;
     ```
 
-5. Fügen Sie einen Konstruktor hinzu, der das Kommentar Zusatzelement definiert, und fügen Sie den relevanten Text hinzu.
+5. Fügen Sie einen Konstruktor hinzu, der die Kommentarverzierung definiert und den entsprechenden Text hinzufügt.
 
     ```csharp
     public CommentBlock(double textRightEdge, double viewRightEdge,
@@ -235,7 +235,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-6. Implementieren Sie außerdem einen <xref:System.Windows.Controls.Panel.OnRender%2A> Ereignishandler, der das Zusatzelement zeichnet.
+6. Implementieren Sie <xref:System.Windows.Controls.Panel.OnRender%2A> auch einen Ereignishandler, der die Verzierung zeichnet.
 
     ```csharp
     protected override void OnRender(DrawingContext dc)
@@ -254,12 +254,12 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-## <a name="add-an-iwpftextviewcreationlistener"></a>Hinzufügen eines iwpftextviewkreationlistener
- Der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> ist ein MEF-Komponenten Teil, den Sie verwenden können, um auf Ansichts Erstellungs Ereignisse zu lauschen.
+## <a name="add-an-iwpftextviewcreationlistener"></a>Hinzufügen eines IWpfTextViewCreationListeners
+ Der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> ist ein MEF-Komponententeil, mit dem Sie Erstellungsereignisse anhören können.
 
-1. Fügen Sie dem commentadornmenttest-Projekt eine Klassendatei hinzu, und benennen Sie Sie `Connector`.
+1. Fügen Sie dem CommentAdornmentTest-Projekt eine `Connector`Klassendatei hinzu, und benennen Sie sie .
 
-2. Fügen Sie die folgenden `using` Direktiven hinzu.
+2. Fügen Sie `using` die folgenden Direktiven hinzu.
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -267,12 +267,12 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     using Microsoft.VisualStudio.Utilities;
     ```
 
-3. Deklarieren Sie eine Klasse, die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> implementiert, und exportieren Sie Sie mit einer <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> von "Text" und einer <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. Das Inhaltstyp Attribut gibt die Art des Inhalts an, auf den die Komponente angewendet wird. Der Texttyp ist der Basistyp für alle nicht binären Dateitypen. Daher ist fast jede Textansicht, die erstellt wird, von diesem Typ. Das Attribut "Text Ansichts Rolle" gibt die Art der Textansicht an, auf die die Komponente angewendet wird. In Dokument Text Ansichts Rollen wird normalerweise Text angezeigt, der aus Zeilen besteht und in einer Datei gespeichert ist.
+3. Deklarieren Sie <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>eine Klasse, die <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> implementiert, und <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> exportieren <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>Sie sie mit einem von "text" und a von . Das Inhaltstypattribut gibt die Art des Inhalts an, auf den die Komponente angewendet wird. Der Texttyp ist der Basistyp für alle nicht binären Dateitypen. Daher wird fast jede Textansicht, die erstellt wird, von diesem Typ sein. Das Textansichtsrollenattribut gibt die Art der Textansicht an, auf die die Komponente angewendet wird. Dokumenttextansichtsrollen zeigen im Allgemeinen Text an, der aus Zeilen besteht und in einer Datei gespeichert wird.
 
      [!code-vb[VSSDKMenuCommandTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb)]
      [!code-csharp[VSSDKMenuCommandTest#11](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]
 
-4. Implementieren Sie die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>-Methode, sodass Sie das statische `Create()`-Ereignis der `CommentAdornmentManager` aufruft.
+4. Implementieren <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Sie die Methode so, dass sie das statische `Create()` Ereignis der aufruft. `CommentAdornmentManager`
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -281,7 +281,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-5. Fügen Sie eine Methode hinzu, mit der Sie den Befehl ausführen können.
+5. Fügen Sie eine Methode hinzu, die Sie zum Ausführen des Befehls verwenden können.
 
     ```csharp
     static public void Execute(IWpfTextViewHost host)
@@ -303,12 +303,12 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-## <a name="define-an-adornment-layer"></a>Definieren einer Zusatzelement-Ebene
- Um ein neues Zusatzelement hinzuzufügen, müssen Sie eine Zusatzelement-Ebene definieren.
+## <a name="define-an-adornment-layer"></a>Definieren einer Verzierungsebene
+ Um eine neue Verzierung hinzuzufügen, müssen Sie einen Verzierungs-Layer definieren.
 
-### <a name="to-define-an-adornment-layer"></a>So definieren Sie eine Zusatzelement-Ebene
+### <a name="to-define-an-adornment-layer"></a>So definieren Sie eine Verzierungsebene
 
-1. Deklarieren Sie in der `Connector`-Klasse ein öffentliches Feld vom Typ <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>, und exportieren Sie es mit einem <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, das einen eindeutigen Namen für die Zusatzelement Ebene und eine <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> angibt, die die Z-Reihenfolge Beziehung dieser Zusatzelement Ebene zu anderen Text Ansichts Ebenen definiert (Text , Caretzeichen und Auswahl).
+1. Deklarieren Sie in `Connector` der <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>Klasse ein öffentliches <xref:Microsoft.VisualStudio.Utilities.NameAttribute> Feld vom Typ , und exportieren <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> Sie es mit einem, der einen eindeutigen Namen für den Verzierungs-Layer und einen angibt, der die Z-Order-Beziehung dieser Verzierungsebene zu den anderen Textansichtsebenen (Text, Einserung und Auswahl) definiert.
 
     ```csharp
     [Export(typeof(AdornmentLayerDefinition))]
@@ -318,12 +318,12 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
 
     ```
 
-## <a name="provide-comment-adornments"></a>Bereitstellen von Kommentar Zusatzelementen
- Wenn Sie ein Zusatzelement definieren, implementieren Sie auch einen Kommentar Zusatz Anbieter und einen Kommentar Zusatz-Manager. Der Kommentar Zusatzelement-Anbieter speichert eine Liste von Kommentar Zusatzelementen, lauscht auf <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> Ereignisse im zugrunde liegenden Text Puffer und löscht Kommentar Zusatzelemente, wenn der zugrunde liegende Text gelöscht wird.
+## <a name="provide-comment-adornments"></a>Kommentierenvonzieren
+ Wenn Sie eine Verzierung definieren, implementieren Sie auch einen Kommentarverzierungsanbieter und einen Kommentarverzierungs-Manager. Der Kommentarverzierungsanbieter führt eine Liste von <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> Kommentarverzierungen, hört Ereignisse im zugrunde liegenden Textpuffer ab und löscht Kommentarverzierungen, wenn der zugrunde liegende Text gelöscht wird.
 
-1. Fügen Sie dem commentadornmenttest-Projekt eine neue Klassendatei hinzu, und benennen Sie Sie `CommentAdornmentProvider`.
+1. Fügen Sie dem CommentAdornmentTest-Projekt eine `CommentAdornmentProvider`neue Klassendatei hinzu, und benennen Sie sie .
 
-2. Fügen Sie die folgenden `using` Direktiven hinzu.
+2. Fügen Sie `using` die folgenden Direktiven hinzu.
 
     ```csharp
     using System;
@@ -333,7 +333,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     using Microsoft.VisualStudio.Text.Editor;
     ```
 
-3. Fügen Sie eine Klasse mit dem Namen `CommentAdornmentProvider` hinzu.
+3. Fügen Sie eine Klasse namens `CommentAdornmentProvider`hinzu.
 
     ```csharp
     internal class CommentAdornmentProvider
@@ -341,7 +341,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-4. Fügen Sie private Felder für den Text Puffer und die Liste der Kommentar Zusatzelemente hinzu, die mit dem Puffer verknüpft sind.
+4. Fügen Sie private Felder für den Textpuffer und die Liste der Kommentarverzierungen hinzu, die sich auf den Puffer beziehen.
 
     ```csharp
     private ITextBuffer buffer;
@@ -349,7 +349,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
 
     ```
 
-5. Fügen Sie einen Konstruktor für `CommentAdornmentProvider` hinzu. Dieser Konstruktor sollte privaten Zugriff haben, da der Anbieter durch die `Create()`-Methode instanziiert wird. Der-Konstruktor fügt dem <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>-Ereignis den `OnBufferChanged` Ereignishandler hinzu.
+5. Fügen Sie einen `CommentAdornmentProvider`Konstruktor für hinzu. Dieser Konstruktor sollte über privaten Zugriff verfügen, da `Create()` der Anbieter von der Methode instanziiert wird. Der Konstruktor `OnBufferChanged` fügt dem <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> Ereignis den Ereignishandler hinzu.
 
     ```csharp
     private CommentAdornmentProvider(ITextBuffer buffer)
@@ -385,18 +385,18 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-8. Fügen Sie den `OnBufferChanged`-Ereignishandler hinzu.
+8. Fügen `OnBufferChanged` Sie den Ereignishandler hinzu.
 
      [!code-csharp[VSSDKMenuCommandTest#21](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs)]
      [!code-vb[VSSDKMenuCommandTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]
 
-9. Fügen Sie eine Deklaration für ein `CommentsChanged` Ereignis hinzu.
+9. Fügen Sie eine `CommentsChanged` Deklaration für ein Ereignis hinzu.
 
     ```csharp
     public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
     ```
 
-10. Erstellen Sie eine `Add()`-Methode, um das Zusatzelement hinzuzufügen.
+10. Erstellen `Add()` Sie eine Methode, um die Verzierung hinzuzufügen.
 
     ```csharp
     public void Add(SnapshotSpan span, string author, string text)
@@ -422,7 +422,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
 
     ```
 
-11. Fügen Sie eine `RemoveComments()`-Methode hinzu.
+11. Fügen `RemoveComments()` Sie eine Methode hinzu.
 
     ```csharp
     public void RemoveComments(SnapshotSpan span)
@@ -449,7 +449,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-12. Fügen Sie eine `GetComments()` Methode hinzu, die alle Kommentare in einer bestimmten Momentaufnahme Spanne zurückgibt.
+12. Fügen `GetComments()` Sie eine Methode hinzu, die alle Kommentare in einer bestimmten Momentaufnahmespanne zurückgibt.
 
     ```csharp
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)
@@ -465,7 +465,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-13. Fügen Sie wie folgt eine Klasse mit dem Namen `CommentsChangedEventArgs` hinzu.
+13. Fügen Sie `CommentsChangedEventArgs`eine Klasse mit dem Namen , wie folgt hinzu.
 
     ```csharp
     internal class CommentsChangedEventArgs : EventArgs
@@ -482,12 +482,12 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-## <a name="manage-comment-adornments"></a>Kommentar Zusatzelemente verwalten
- Der Kommentar Zusatz-Manager erstellt das Zusatzelement und fügt es der Zusatzelement-Ebene hinzu. Die Ereignisse werden auf die Ereignisse "<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>" und "<xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>" überwacht, damit Sie das Zusatzelement verschieben oder löschen können. Außerdem wird auf das `CommentsChanged` Ereignis gelauscht, das vom Kommentar Zusatz Anbieter ausgelöst wird, wenn Kommentare hinzugefügt oder entfernt werden.
+## <a name="manage-comment-adornments"></a>Verwalten von Kommentarverzierungen
+ Der Kommentarverzierungs-Manager erstellt die Verzierung und fügt sie der Verzierungsebene hinzu. Es hört die <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> und Ereignisse, so dass es die Verzierung verschieben oder löschen kann. Es überwacht auch `CommentsChanged` das Ereignis, das vom Kommentarverzierungsanbieter ausgelöst wird, wenn Kommentare hinzugefügt oder entfernt werden.
 
-1. Fügen Sie dem commentadornmenttest-Projekt eine Klassendatei hinzu, und benennen Sie Sie `CommentAdornmentManager`.
+1. Fügen Sie dem CommentAdornmentTest-Projekt eine `CommentAdornmentManager`Klassendatei hinzu, und benennen Sie sie .
 
-2. Fügen Sie die folgenden `using` Direktiven hinzu.
+2. Fügen Sie `using` die folgenden Direktiven hinzu.
 
     ```csharp
     using System;
@@ -498,7 +498,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     using Microsoft.VisualStudio.Text.Formatting;
     ```
 
-3. Fügen Sie eine Klasse mit dem Namen `CommentAdornmentManager` hinzu.
+3. Fügen Sie eine Klasse namens `CommentAdornmentManager`hinzu.
 
     ```csharp
     internal class CommentAdornmentManager
@@ -514,7 +514,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     private readonly CommentAdornmentProvider provider;
     ```
 
-5. Fügen Sie einen Konstruktor hinzu, der den Manager für die <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>-und <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> Ereignisse und auch für das `CommentsChanged` Ereignis abonniert. Der Konstruktor ist privat, da der Manager von der statischen `Create()`-Methode instanziiert wird.
+5. Fügen Sie einen Konstruktor hinzu, <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> der den Manager `CommentsChanged` für die und für die Ereignisse und auch für das Ereignis abonniert. Der Konstruktor ist privat, da der Manager `Create()` durch die statische Methode instanziiert wird.
 
     ```csharp
     private CommentAdornmentManager(IWpfTextView view)
@@ -530,7 +530,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-6. Fügen Sie die `Create()` Methode hinzu, die einen Anbieter abruft, oder erstellen Sie bei Bedarf eine.
+6. Fügen `Create()` Sie die Methode hinzu, die einen Anbieter abruft oder bei Bedarf einen erstellt.
 
     ```csharp
     public static CommentAdornmentManager Create(IWpfTextView view)
@@ -539,7 +539,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-7. Fügen Sie den `CommentsChanged`-Handler hinzu.
+7. Fügen `CommentsChanged` Sie den Handler hinzu.
 
     ```csharp
     private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
@@ -554,7 +554,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-8. Fügen Sie den <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>-Handler hinzu.
+8. Fügen <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> Sie den Handler hinzu.
 
     ```csharp
     private void OnClosed(object sender, EventArgs e)
@@ -565,7 +565,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-9. Fügen Sie den <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>-Handler hinzu.
+9. Fügen <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> Sie den Handler hinzu.
 
     ```csharp
     private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
@@ -601,18 +601,18 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
      [!code-csharp[VSSDKMenuCommandTest#35](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_3.cs)]
      [!code-vb[VSSDKMenuCommandTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_3.vb)]
 
-## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>Verwenden Sie den Menübefehl, um das Kommentar Zusatzelement hinzuzufügen.
- Sie können den Menübefehl verwenden, um ein Kommentar Zusatzelement zu erstellen, indem Sie die `MenuItemCallback`-Methode des VSPackage implementieren.
+## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>Verwenden Sie den Menübefehl, um die Kommentarverzierung hinzuzufügen
+ Sie können den Menübefehl verwenden, um eine `MenuItemCallback` Kommentarverzierung zu erstellen, indem Sie die Methode des VSPackage implementieren.
 
-1. Fügen Sie dem menucommandtest-Projekt die folgenden Verweise hinzu:
+1. Fügen Sie die folgenden Verweise zum MenuCommandTest-Projekt hinzu:
 
-    - Microsoft. VisualStudio. Text Manager. Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    - Microsoft. VisualStudio. Editor
+    - Microsoft.VisualStudio.Editor
 
-    - Microsoft. VisualStudio. Text. UI. WPF
+    - Microsoft.VisualStudio.Text.UI.Wpf
 
-2. Öffnen Sie die Datei *AddAdornment.cs* , und fügen Sie die folgenden `using` Direktiven hinzu.
+2. Öffnen Sie die *AddAdornment.cs* `using` Datei, und fügen Sie die folgenden Direktiven hinzu.
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;
@@ -621,7 +621,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     using CommentAdornmentTest;
     ```
 
-3. Löschen Sie die `Execute()`-Methode, und fügen Sie den folgenden Befehls Handler hinzu.
+3. Löschen `Execute()` Sie die Methode, und fügen Sie den folgenden Befehlshandler hinzu.
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -629,7 +629,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-4. Fügen Sie Code hinzu, um die aktive Ansicht zu erhalten. Sie müssen die `SVsTextManager` der Visual Studio-Shell erhalten, um die aktive `IVsTextView` zu erhalten.
+4. Fügen Sie Code hinzu, um die aktive Ansicht abzuzeigen. Sie müssen `SVsTextManager` die Visual Studio-Shell abrufen, um die aktive `IVsTextView`zu erhalten.
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -641,7 +641,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-5. Handelt es sich bei dieser Textansicht um eine Instanz einer Editor-Textansicht, können Sie Sie in die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>-Schnittstelle umwandeln und dann die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> und die zugehörigen <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> erhalten. Verwenden Sie die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>, um die `Connector.Execute()`-Methode aufzurufen, die den Kommentar Zusatz Anbieter abruft und das Zusatzelement hinzufügt. Der Befehls Handler sollte nun wie der folgende Code aussehen:
+5. Wenn es sich bei dieser Textansicht um eine Instanz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> einer Editortextansicht <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> handelt, <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>können Sie sie in die Benutzeroberfläche umstellen und dann die und die zugehörige abrufen. Verwenden <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Sie die `Connector.Execute()` , um die Methode aufzurufen, die den Kommentarverzierungsanbieter abruft und die Verzierung hinzufügt. Der Befehlshandler sollte nun wie folgt aussehen:
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -665,7 +665,7 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
     }
     ```
 
-6. Legen Sie die addadornmenthandler-Methode als Handler für den addadornment-Befehl im addadornment-Konstruktor fest.
+6. Legen Sie die AddAdornmentHandler-Methode als Handler für den AddAdornment-Befehl im AddAdornment-Konstruktor fest.
 
     ```csharp
     private AddAdornment(AsyncPackage package, OleMenuCommandService commandService)
@@ -685,11 +685,11 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
 
 2. Erstellen einer Textdatei Geben Sie Text ein, und wählen Sie ihn aus.
 
-3. Klicken Sie **im Menü Extras** auf die Option **Zusatzelement hinzufügen**. Eine Sprechblase sollte auf der rechten Seite des Text Fensters angezeigt werden und sollte Text enthalten, der dem folgenden Text ähnelt.
+3. Klicken Sie im Menü **Extras** auf **Adornment hinzufügen**auf . Eine Sprechblase sollte auf der rechten Seite des Textfensters angezeigt werden und Text enthalten, der dem folgenden Text ähnelt.
 
-     IhrBenutzername
+     YourUserName
 
-     Vierscore...
+     Fourscore...
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

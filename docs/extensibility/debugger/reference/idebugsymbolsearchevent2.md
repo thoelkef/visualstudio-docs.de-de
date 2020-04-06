@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2 | Microsoft-Dokumentation
+title: IDebugSymbolSearchEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7108c9e1349b01115bed8a6b2a77a3eaa71f45
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbe99422e506fb86b0a7e1d9d3242783f3258e6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320389"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718785"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
-Diese Schnittstelle wird von der Debug-Engine (DE) gesendet, um anzugeben, dass die Debugsymbole für ein Modul, das im Debugmodus befindlichen geladen wurden.
+Diese Schnittstelle wird vom Debugmodul (DE) gesendet, um anzuzeigen, dass die Debugsymbole für ein zu debuggendes Modul geladen wurden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,31 +29,31 @@ IDebugSymbolSearchEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle, um zu melden, dass es sich bei einem Modul die Symbole geladen wurden. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.
+ Die DE implementiert diese Schnittstelle, um zu melden, dass die Symbole eines Moduls geladen wurden. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss für dasselbe Objekt wie diese Schnittstelle implementiert werden. Das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die `IDebugEvent2` Schnittstelle zuzugreifen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die DE erstellt und sendet dieses Ereignisobjekt zum Berichten des Moduls Symbole geladen wurden. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, um zu melden, dass die Symbole eines Moduls geladen wurden. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die `IDebugSymbolSearchEvent2` Schnittstelle verfügbar macht, die folgende Methode.
+ Die `IDebugSymbolSearchEvent2` Schnittstelle macht die folgende Methode verfügbar.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Ruft Informationen zu den Ergebnissen einer Suche Symbol ab.|
+|[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Ruft Informationen zu den Ergebnissen einer Symbolsuche ab.|
 
-## <a name="remarks"></a>Hinweise
- Dieses Ereignis wird gesendet werden, auch wenn die Symbole konnte nicht geladen werden. Aufrufen von `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` , kann der Handler, der dieses Ereignis, um zu bestimmen, ob das Modul tatsächlich keine Symbole.
+## <a name="remarks"></a>Bemerkungen
+ Dieses Ereignis wird auch dann gesendet, wenn die Symbole nicht geladen werden konnten. Durch `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` aufrufen kann der Handler dieses Ereignisses ermitteln, ob das Modul tatsächlich Symbole enthält.
 
- Visual Studio verwendet dieses Ereignis in der Regel beim Aktualisieren des Status der geladenen Symbole in der **Module** Fenster.
+ Visual Studio verwendet dieses Ereignis in der Regel, um den Status der geladenen Symbole im **Modulfenster** zu aktualisieren.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

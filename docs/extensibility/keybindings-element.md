@@ -1,5 +1,5 @@
 ---
-title: KeyBindings-Element | Microsoft-Dokumentation
+title: KeyBindings Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d970497dd8f80d66bdbdac8809103582104a2636
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352581"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703130"
 ---
-# <a name="keybindings-element"></a>KeyBindings-element
-KeyBindings-Element gruppiert KeyBinding-Elementen und anderen KeyBindings Gruppierungen.
+# <a name="keybindings-element"></a>KeyBindings-Element
+Das KeyBindings-Element gruppiert KeyBinding-Elemente und andere KeyBindings-Gruppierungen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,22 +37,22 @@ KeyBindings-Element gruppiert KeyBinding-Elementen und anderen KeyBindings Grupp
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[KeyBinding-element](../extensibility/keybinding-element.md)|Gibt an, die Tastenkombinationen für Befehle.|
-|[KeyBindings](../extensibility/keybindings-element.md)|Gruppen KeyBinding-Elementen und anderen KeyBindings Gruppierungen.|
+|[KeyBinding-Element](../extensibility/keybinding-element.md)|Gibt Tastenkombinationen für die Befehle an.|
+|[KeyBindings](../extensibility/keybindings-element.md)|Gruppiert KeyBinding-Elemente und andere KeyBindings-Gruppierungen.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CommandTable-element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle darstellen.|
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen.|
 
 ## <a name="example"></a>Beispiel
 
@@ -65,6 +65,6 @@ KeyBindings-Element gruppiert KeyBinding-Elementen und anderen KeyBindings Grupp
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [KeyBinding-element](../extensibility/keybinding-element.md)
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [KeyBinding-Element](../extensibility/keybinding-element.md)
+- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,29 +1,29 @@
 ---
-title: RequiredPlatformVersion-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: RequiredPlatformVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd166e41588ee440d9e0a1e90494aaa8f5091909
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334153"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701496"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion-Element (Visual Studio-Vorlagen)
 Gibt die Mindestversion des Betriebssystems an, die vorliegen muss, damit die Projektvorlage ordnungsgemäß funktioniert. Dieses Element wird für Projektvorlagen verwendet, die [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Apps erstellen.
 
- Der Wert `RequiredPlatformVersion` wird unmittelbar mit der Version des Betriebssystems verglichen. Wenn die `RequiredPlatformVersion` ist höher als die Version des Betriebssystems, die Vorlage wird nicht angezeigt, der **neues Projekt** Dialogfeld. Um eine Vorlage für [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher anzugeben, legen Sie `RequiredPlatformVersion` auf 6.2.0 fest. Zum Angeben einer Vorlage für [!INCLUDE[win81](../debugger/includes/win81_md.md)] oder höher, legen `RequiredPlatformVersion` auf 6.3.0 fest.
+ Der Wert `RequiredPlatformVersion` wird unmittelbar mit der Version des Betriebssystems verglichen. Wenn `RequiredPlatformVersion` die höher als die Betriebssystemversion ist, wird die Vorlage nicht im Dialogfeld **Neues Projekt** angezeigt. Um eine Vorlage für [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher anzugeben, legen Sie `RequiredPlatformVersion` auf 6.2.0 fest. Um eine Vorlage [!INCLUDE[win81](../debugger/includes/win81_md.md)] für oder `RequiredPlatformVersion` höher anzugeben, setzen Sie auf 6.3.0.
 
  Vorlagen, die `RequiredPlatformVersion`=8 angeben, sind mit früheren [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Kundenvorlagen kompatibel.
 
- VSTemplate TemplateData .....TargetPlatformName RequiredPlatformVersion
+ VSTemplate TemplateData ..... TargetPlatformName RequiredPlatformVersion
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,24 +32,24 @@ Gibt die Mindestversion des Betriebssystems an, die vorliegen muss, damit die Pr
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
- Keine
+ Keine.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Gibt die Plattform an, auf die die Projektvorlage abzielt.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Dieser Text gibt die Mindestversion des Betriebssystems an, die für die Vorlage erforderlich ist.
 
 ## <a name="example"></a>Beispiel
@@ -68,7 +68,7 @@ Gibt die Mindestversion des Betriebssystems an, die vorliegen muss, damit die Pr
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [TargetPlatformName-Element (Visual Studio-Vorlagen)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)

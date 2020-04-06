@@ -1,41 +1,41 @@
 ---
-title: Projekt Modellierung | Microsoft-Dokumentation
+title: Projektmodellierung | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42e810a36478e49a578c6713d20f1bfc6be98309
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725561"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706553"
 ---
 # <a name="project-modeling"></a>Projektmodellierung
-Der nächste Schritt bei der Bereitstellung der Automatisierung für Ihr Projekt besteht darin, die Standard Projekt Objekte zu implementieren: die <xref:EnvDTE.Projects>-und `ProjectItems` Auflistungen. Das `Project`-Objekt und das <xref:EnvDTE.ProjectItem>-Objekt. und die restlichen Objekte, die für Ihre Implementierung eindeutig sind. Diese Standardobjekte sind in der Datei "Dteinternal. h" definiert. Eine Implementierung der Standardobjekte wird im bscprj-Beispiel bereitgestellt. Diese Klassen können als Modelle verwendet werden, um eigene Standard Projekt Objekte zu erstellen, die gleichzeitig mit Projekt Objekten von anderen Projekttypen nebeneinander stehen.
+Der nächste Schritt bei der Bereitstellung von Automatisierung für <xref:EnvDTE.Projects> Ihr `ProjectItems` Projekt besteht darin, die Standardprojektobjekte zu implementieren: die und Sammlungen; die `Project` <xref:EnvDTE.ProjectItem> und Objekte; und die verbleibenden Objekte, die für Ihre Implementierung eindeutig sind. Diese Standardobjekte sind in der Datei Dteinternal.h definiert. Eine Implementierung der Standardobjekte wird im BscPrj-Beispiel bereitgestellt. Sie können diese Klassen als Modelle verwenden, um eigene Standardprojektobjekte zu erstellen, die Seite an Seite mit Projektobjekten aus anderen Projekttypen stehen.
 
- Ein automatisierungsconsumer nimmt an, <xref:EnvDTE.Solution> ("`<UniqueProjName>")` und <xref:EnvDTE.ProjectItems> (`n`) aufzurufen, wobei" n "eine Indexnummer zum Abrufen eines bestimmten Projekts in der Lösung ist. Durch diesen Automatisierungs-Befehl ruft die Umgebung <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> in der entsprechenden Projekt Hierarchie auf, wobei VSITEMID_ROOT als Itemid-Parameter und VSHPROPID_ExtObject als vshpropid-Parameter übergeben wird. `IVsHierarchy::GetProperty` gibt einen `IDispatch` Zeiger auf das Automatisierungs Objekt zurück, das die Kern `Project` Schnittstelle bereitstellt, die Sie implementiert haben.
+ Ein Automatisierungsverbraucher geht davon aus,`<UniqueProjName>")` dass <xref:EnvDTE.ProjectItems> `n`er (" und ( ) anrufen <xref:EnvDTE.Solution>kann, wobei n eine Indexnummer zum Abrufen eines bestimmten Projekts in der Projektmappe ist. Wenn Sie diesen Automatisierungsaufruf <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> tätigen, ruft die Umgebung die entsprechende Projekthierarchie auf, übergibt VSITEMID_ROOT als ItemID-Parameter und VSHPROPID_ExtObject als VSHPROPID-Parameter. `IVsHierarchy::GetProperty`gibt `IDispatch` einen Zeiger auf das Automatisierungsobjekt zurück, das die von Ihnen implementierte Kernschnittstelle `Project` bereitstellt.
 
- Im folgenden finden Sie die Syntax von `IVsHierarchy::GetProperty`.
+ Im Folgenden finden `IVsHierarchy::GetProperty`Sie die Syntax von .
 
  `HRESULT GetProperty (`
 
- `VSITEMID` `itemid`
+ `VSITEMID` `itemid`,
 
- `VSHPROPID` `propid`
+ `VSHPROPID` `propid`,
 
  `VARIANT` `*pvar`
 
  `);`
 
- Projekte ermöglichen das Schachteln und Verwenden von Auflistungen zum Erstellen von Gruppen von Projekt Elementen. Die Hierarchie sieht wie folgt aus.
+ Projekte enthalten Verschachtelung und verwenden Auflistungen, um Gruppen von Projektelementen zu erstellen. Die Hierarchie sieht so aus.
 
 ```
 Projects
@@ -44,15 +44,15 @@ Projects
           |- ProjectItem (single object) or ProjectItems (another collection)
 ```
 
- Schachtelung bedeutet, dass ein <xref:EnvDTE.ProjectItem> Objekt gleichzeitig <xref:EnvDTE.ProjectItems> Auflistung sein kann, da eine `ProjectItems` Auflistung die geschachtelten Objekte enthalten kann. Das grundlegende Projektbeispiel demonstriert diese Schachtelung nicht. Wenn Sie das `Project`-Objekt implementieren, nehmen Sie an der Struktur ähnlichen Struktur Teil, die den Entwurf des gesamten Automatisierungs Modells kennzeichnet.
+ Verschachteln bedeutet, dass ein <xref:EnvDTE.ProjectItem> Objekt gleichzeitig aufgenommen werden <xref:EnvDTE.ProjectItems> kann, da eine `ProjectItems` Auflistung die verschachtelten Objekte enthalten kann. Im Beispiel "Basisprojekt" wird diese Verschachtelung nicht veranschaulicht. Durch die `Project` Implementierung des Objekts nehmen Sie an der baumähnlichen Struktur teil, die den Entwurf des gesamten Automatisierungsmodells charakterisiert.
 
  Die Projektautomatisierung folgt dem Pfad im folgenden Diagramm.
 
- ![Visual Studio-Projekt Objekte](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") Projektautomatisierung
+ ![Visual Studio-Projektobjekte](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") Projektautomatisierung
 
- Wenn Sie kein `Project` Objekt implementieren, gibt die Umgebung immer noch ein generisches `Project` Objekt zurück, das nur den Namen des Projekts enthält.
+ Wenn Sie kein `Project` Objekt implementieren, gibt die `Project` Umgebung weiterhin ein generisches Objekt zurück, das nur den Namen des Projekts enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:EnvDTE.Projects>
 - <xref:EnvDTE.ProjectItem>
 - <xref:EnvDTE.ProjectItems>

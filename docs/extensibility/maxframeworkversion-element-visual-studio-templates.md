@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: MaxFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a00e174e3454dcb054c13252ef699a7cbc87df8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318591"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702622"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion-Element (Visual Studio-Vorlagen)
 
-Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich sind. Bestimmt den höchsten Wert, der zur Verfügung, in der **Zielframeworkversion** Dropdown-Menü des der **neues Projekt** Dialogfeld. Sie müssen auch angeben, damit Benutzer eine Framework-Version auswählen können, [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) als die Mindestversion von .NET Framework für die Vorlage.
+Gibt die maximale Version von .NET Framework an, die für die Vorlage erforderlich ist. Er bestimmt den höchsten verfügbaren Wert in der Dropdownliste **Zielframeworkversion** des Dialogfelds **Neues Projekt.** Damit Benutzer eine Frameworkversion auswählen können, müssen Sie [requiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) auch als Mindestversion von .NET Framework für die Vorlage angeben.
 
 > [!IMPORTANT]
-> Ab Visual Studio 2017 Version 15.6, die **Framework-Zielversion** Dropdown ist nicht mehr als einen Filter für die angezeigten Vorlagen in die **Vorlagen** Teil der **neues Projekt** Dialogfeld. Stattdessen die **Zielframeworkversion** Dropdownliste fungiert als eine Framework-Auswahl für die ausgewählte Vorlage.
+> Ab Visual Studio 2017 Version 15.6 ist die Dropdownliste **Zielframeworkversion** kein Filter mehr für angezeigte Vorlagen im Abschnitt **Vorlagen** des Dialogfelds **Neues Projekt.** Stattdessen fungiert die Dropdown-Liste **Zielframeworkversion** als Frameworkauswahl für die ausgewählte Vorlage.
 
- \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
+ \<VSTemplate \<> TemplateData> \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,29 +38,29 @@ Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich s
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie sie entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld Neues **Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss die höchste Versionsnummer von .NET Framework, die von der Vorlage zulässig ist.
+ Der Text muss die höchste Versionsnummer von .NET Framework sein, die von der Vorlage zugelassen wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-`MaxFrameworkVersion` ist ein optionales Element. Die `MaxFrameworkVersion` Element sollte ausgelassen werden, es sei denn, es erforderlich, damit nicht versehentlich die unterstützten Bereich von .NET Framework-Versionen für die Vorlage beschränkt ist. Es sollte auch weggelassen werden, wenn .NET Framework nicht auf die Vorlage anwendbar ist.
+`MaxFrameworkVersion` ist ein optionales Element. Das `MaxFrameworkVersion` Element sollte weggelassen werden, es sei denn, es ist erforderlich, um den unterstützten Bereich von .NET Framework-Versionen für die Vorlage nicht versehentlich einzuschränken. Sie sollte auch weggelassen werden, wenn .NET Framework nicht auf die Vorlage anwendbar ist.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt die Metadaten für die Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] -Klassenvorlage.
+Im folgenden Beispiel werden die [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Metadaten für eine Standardklassenvorlage veranschaulicht.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,9 +80,9 @@ Das folgende Beispiel zeigt die Metadaten für die Standard [!INCLUDE[csprcs](..
 </VSTemplate>
 ```
 
-In diesem Beispiel ist die maximale Version des .NET Framework, die von der Vorlage erforderlich ist, der durch dargestellt `MaxFrameworkVersion`, 4.7.1 ist. Ein Projekt mit dieser Vorlage erstellt wurde, kann .NET Framework-Versionen bis 4.7.1 abzielen.
+In diesem Beispiel ist die maximale Version von .NET Framework, `MaxFrameworkVersion`die für die Vorlage erforderlich ist, dargestellt durch , 4.7.1. Ein mit dieser Vorlage erstelltes Projekt kann auf .NET Framework-Versionen bis 4.7.1 abzielen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

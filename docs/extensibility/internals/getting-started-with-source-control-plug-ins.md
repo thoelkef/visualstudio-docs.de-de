@@ -1,46 +1,46 @@
 ---
-title: Erste Schritte mit Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
+title: Erste Schritte mit Quellcodeverwaltungs-Plug-Ins | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting started
 - getting started, source control plug-ins
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71645c7e5334b24c294265a60581cc4a00eec8aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328935"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708345"
 ---
-# <a name="get-started-with-source-control-plug-ins"></a>Erste Schritte mit Quellcodeverwaltungs-Plug-ins
-Um ein Quellcodeverwaltungs-Plug-in erstellen, müssen Sie eine DLL, die in der Quelle-Plug-in-API, definierten Funktionen implementiert, erstellen und dann zum Registrieren der DLL mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um es in der quellcodeverwaltung Code-Version für die Verwendung verfügbar zu machen.
+# <a name="get-started-with-source-control-plug-ins"></a>Erste Schritte mit Quellcodeverwaltungs-Plug-Ins
+Um ein Quellcodeverwaltungs-Plug-In zu erstellen, müssen Sie eine DLL erstellen, die die in der Quellcodeverwaltungs-Plug-In-API definierten Funktionen implementiert, und dann die DLL mit registrieren, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um sie für die Verwendung in der Quellcodeversionssteuerung verfügbar zu machen.
 
- Es sind drei Versionen der Source-Plug-in-API (Versionen 1.1, 1.2 und 1.3) für Quellcodeverwaltungs-Plug-ins verfügbar. Die Source-Plug-in-API finden Sie hier ist die Version 1.3. Es wurde entworfen, um vollständig kompatibel mit Quellcodeverwaltungs-Plug-ins unterstützt die Versionen 1.1 und 1.2. Die [Neuigkeiten in der Quelle Steuerelement-Plug-in-API-Version 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) Abschnitt werden die neuen Features in der neuesten Version von der Quell-Plug-in-API unterstützt.
+ Für Quellcodeverwaltungs-Plug-Ins (Versionen 1.1, 1.2 und 1.3) stehen drei Versionen der Quellcodeverwaltungs-Plug-Ins zur Verfügung. Die hier dokumentierte Quellcodeverwaltungs-Plug-In-API ist Version 1.3. Es wurde entwickelt, um vollständig kompatibel mit Quellcodeverwaltung Plug-Ins unterstützen Versionen 1.1 und 1.2. Der Abschnitt Neuerungen im Abschnitt [Source Control Plug-in API Version 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) enthält Details zu den neuen Funktionen, die in der neuesten Version der Quellcodeverwaltungs-Plug-In-API unterstützt werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 
- Beschreibt, wie Sie die Registrierungseinträge, die erforderlich sind, ein Datenquellen-Steuerelement DLL einbinden.
+ Beschreibt, wie die Registrierungseinträge erstellt werden, die zum Anschließen einer Quellcodeverwaltungs-DLL erforderlich sind.
 
-- [Neuerungen in der Quelle Steuerelement-Plug-in-API-Version 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)
+- [Neuerungen in der Quellcodeverwaltungs-Plug-In-API Version 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)
 
- Bietet eine kurze Übersicht über die Änderungen, die an die Source-Plug-in-API in Version 1.3 vorgenommen wurden.
+ Bietet einen kurzen Überblick über die Änderungen, die an der Quellcodeverwaltungs-Plug-In-API in Version 1.3 vorgenommen wurden.
 
-- [Neuerungen in der Quelle Steuerelement-Plug-in-API-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [Neuerungen in der Quellcodeverwaltungs-Plug-In-API Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
 
- Bietet eine kurze Übersicht über die Änderungen, die an die Source-Plug-in-API in Version 1.2 vorgenommen wurden.
+ Bietet einen kurzen Überblick über die Änderungen, die an der Quellcodeverwaltungs-Plug-In-API in Version 1.2 vorgenommen wurden.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Quellcodeverwaltungs-Plug-ins](../../extensibility/source-control-plug-ins.md)
+- [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)
 
- Enthält eine vollständige Liste aller Elemente in der Quelle-Plug-in-API.
+ Stellt eine vollständige Auflistung aller Elemente in der Quellcodeverwaltungs-Plug-In-API bereit.
 
-- [Erstellen eines Quellcodeverwaltungs-Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+- [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- Die Source-Steuerelement-Plug-in SDK definiert und beschreibt die Ressourcen enthalten.
+ Definiert das Quellcodeverwaltungs-Plug-In-SDK und beschreibt die enthaltenen Ressourcen.

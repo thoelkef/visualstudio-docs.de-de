@@ -1,5 +1,5 @@
 ---
-title: Project-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Projektelement (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 843ba7935dbddb95c9a3043deff534db9157f15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336053"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702001"
 ---
-# <a name="project-element-visual-studio-templates"></a>Project-Element (Visual Studio-Vorlagen)
-Gibt an, die Dateien oder Verzeichnisse dem Projekt hinzu.
+# <a name="project-element-visual-studio-templates"></a>Projektelement (Visual Studio-Vorlagen)
+Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden sollen.
 
- \<VSTemplate > \<TemplateContent > \<Projekt >
+ \<VSTemplate \<> TemplateContent> \<Project>
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,34 +43,34 @@ Gibt an, die Dateien oder Verzeichnisse dem Projekt hinzu.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`File`|Erforderliches Attribut.<br /><br /> Gibt den Namen der Projektdatei in der Vorlage *ZIP* Datei.|
-|`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob die Projektdatei Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein.|
+|`File`|Erforderliches Attribut.<br /><br /> Gibt den Namen der Projektdatei in der *.zip-Datei* der Vorlage an.|
+|`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob die Projektdatei Parameterwerte enthält, die ersetzt werden müssen, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`.|
 |`TargetFileName`|Optionales Attribut.<br /><br /> Gibt den Namen der Projektdatei an, wenn ein Projekt aus der Vorlage erstellt wird.|
-|`IgnoreProjectParameter`|Optionales Attribut.<br /><br /> Gibt an, ob das Projekt der aktuellen Projektmappe hinzugefügt werden soll. Wenn der Wert der benutzerdefinierten Parameter "$*MyCustomParameter*$" vorhanden ist in der Parameterdatei ersetzen, das Projekt erstellt werden, jedoch nicht als Teil der aktuell geöffneten Projektmappe hinzugefügt.|
+|`IgnoreProjectParameter`|Optionales Attribut.<br /><br /> Gibt an, ob das Projekt der aktuellen Projektmappe hinzugefügt werden soll. Wenn in der Parameterersatzdatei der Wert des benutzerdefinierten Parameters "-*myCustomParameter"* vorhanden ist, wird das Projekt erstellt, aber nicht als Teil der aktuell geöffneten Projektmappe hinzugefügt.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Ordner](../extensibility/folder-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt einen Ordner auf dem Projekt hinzugefügt.|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt eine Datei zu einem Projekt hinzufügen.|
+|[Ordner](../extensibility/folder-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt einen Ordner an, der dem Projekt hinzugefügt werden soll.|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt eine Datei an, die einem Projekt hinzugefügt werden soll.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `Project` ist ein optionales untergeordnetes Element von `TemplateContent`.
 
- Die `Project` Element wird zum Festlegen ein Projekts verwendet werden soll, und aus diesem Grund ist nur gültig, in-Projektvorlagen.
+ Das `Project` Element wird zum Spezifizieren eines Projekts verwendet und ist daher nur in Projektvorlagen gültig.
 
- `Project` Elemente können besitzen [Ordner](../extensibility/folder-element-visual-studio-project-templates.md) untergeordnete Elemente oder [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) untergeordnete Elemente, aber nicht auf einer Kombination dieser beiden `Folder` und `ProjectItem` untergeordneten Elemente.
+ `Project`Elemente können [untergeordnete Ordnerelemente](../extensibility/folder-element-visual-studio-project-templates.md) oder [ProjectItem-Elemente](../extensibility/projectitem-element-visual-studio-project-templates.md) enthalten, `Folder` `ProjectItem` jedoch keine Mischung aus beiden und untergeordneten Elementen.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Benennt automatisch auf Grundlage des Namens eingegeben haben, vom Benutzer im Namen der Projektdatei die **neues Projekt** Dialogfeld. Verwenden der `TargetFileName` Attribut, wenn Sie einen alternativer Dateiname für Projektdateien, die mit der Vorlage erstellte bereitstellen möchten.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Benennt den Projektdateinamen automatisch basierend auf dem Namen, den der Benutzer im Dialogfeld **Neues Projekt** eingegeben hat. Verwenden `TargetFileName` Sie das Attribut, wenn Sie einen alternativen Dateinamen für Projektdateien angeben möchten, die mit der Vorlage erstellt wurden.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.
@@ -99,8 +99,8 @@ Gibt an, die Dateien oder Verzeichnisse dem Projekt hinzu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [ProjectItem-Element (Visual Studio-Projektvorlagen)](../extensibility/projectitem-element-visual-studio-project-templates.md)
-- [Folder-Element (Visual Studio-Projektvorlagen)](../extensibility/folder-element-visual-studio-project-templates.md)
+- [Ordnerelement (Visual Studio-Projektvorlagen)](../extensibility/folder-element-visual-studio-project-templates.md)

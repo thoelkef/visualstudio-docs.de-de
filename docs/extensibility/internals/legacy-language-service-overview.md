@@ -1,35 +1,35 @@
 ---
-title: Übersicht über den Legacy Sprachdienst | Microsoft-Dokumentation
+title: Übersicht über den Legacy-Sprachdienst | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dfec9cc8b57dfb12b3977cc04e2e62ecc0dea96
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726861"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707361"
 ---
 # <a name="legacy-language-service-overview"></a>Übersicht über Legacysprachdienste
-Ein Sprachdienst bietet Editor Unterstützung, mit der bestimmte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Features implementiert werden können. Die Dienst Klassen für das Managed Package Framework (MPF) bieten vollständige Unterstützung für häufig verwendete Features und partielle Unterstützung für andere Funktionen.
+Ein Sprachdienst bietet Editorunterstützung, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit der Sie bestimmte Funktionen implementieren können. Die MPF-Sprachdienstklassen (Managed Package Framework) bieten vollständige Unterstützung für häufig verwendete Features und teilweise Unterstützung für andere Features.
 
-## <a name="fully-supported-features-in-the-mpf"></a>Vollständig unterstützte Funktionen in MPF
- Die MPF-Sprachdienst Klassen unterstützen die folgenden Funktionen:
+## <a name="fully-supported-features-in-the-mpf"></a>Vollständig unterstützte Funktionen im MPF
+ Die MPF-Sprachdienstklassen unterstützen die folgenden Funktionen:
 
 - Syntaxhervorhebung
 
 - Gliedern
 
-- Kommentieren von Code Blöcken
+- Kommentieren von Codeblöcken
 
-- Klammer Zuordnung
+- Klammernabgleich (zugehörige Klammer)
 
 - Codeausschnitte
 
@@ -37,25 +37,25 @@ Ein Sprachdienst bietet Editor Unterstützung, mit der bestimmte [!INCLUDE[vsprv
 
 - IntelliSense-Parameterinformationen
 
-- IntelliSense-QuickInfo
+- IntelliSense Quick Info
 
-- IntelliSense-Element Abschluss
+- Abschluss des IntelliSense-Mitglieds
 
 - IntelliSense-Wortvervollständigung
 
-## <a name="partially-supported-features-in-the-mpf"></a>Teilweise unterstützte Funktionen in MPF
- Der MPF bietet nur eine partielle Unterstützung für die folgenden Features. Dies bedeutet, dass Sie die Methoden implementieren müssen, die von MPF aufgerufen werden.
+## <a name="partially-supported-features-in-the-mpf"></a>Teilweise unterstützte Funktionen im MPF
+ Die MPF bietet nur teilweise Unterstützung für die folgenden Funktionen. Dies bedeutet, dass Sie die Methoden implementieren müssen, die von der MPF aufgerufen werden.
 
-- Neuformatierung von Code. Sie stellen den Code bereit, der die Neuformatierung implementiert.
+- Neuformatieren von Code. Sie geben den Code an, der die Neuformatierung implementiert.
 
-- Validieren von Haltepunkten durch Identifizierung gültiger Code spannen. Sie stellen den Code bereit, mit dem die Code spannen identifiziert werden.
+- Überprüfen von Haltepunkten durch Identifizieren gültiger Codespannen. Sie geben den Code an, der die Codespannen identifiziert.
 
-- Unterstützen des **debuggerauto** -Fensters zum Anzeigen von Variablen. Sie stellen den Code bereit, der bestimmt, was im Fenster angezeigt werden soll.
+- Unterstützt das Fenster "Debugger **Autos"** zum Anzeigen von Variablen. Sie geben den Code an, der bestimmt, was im Fenster angezeigt werden soll.
 
-- Unterstützen der **Navigationsleiste** für die schnelle Navigation zwischen Typen und Membern. Sie implementieren eine Hilfsklasse, die die Listen in den Kombinations Feldern der **Navigationsleiste** auffüllt, und geben Sie zurück.
+- Unterstützung der **Navigationsleiste** für die schnelle Navigation zwischen Typen und Membern. Sie implementieren und geben eine Hilfsklasse zurück, die die Listen in den **Kombinationsfeldern der Navigationsleiste** auffüllt.
 
 ## <a name="implementation"></a>Implementierung
- Sie müssen mehrere Schritte ausführen, um den Sprachdienst selbst und die Sprachdienst Funktionen zu implementieren, die Sie für Ihre Sprache unterstützen möchten. Diese Schritte werden in den folgenden Themen erläutert:
+ Sie müssen mehrere Schritte ausführen, um den Sprachdienst selbst und die Sprachdienstfeatures zu implementieren, die Sie für Ihre Sprache unterstützen möchten. Diese Schritte werden in den folgenden Themen erläutert:
 
 - [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
@@ -89,6 +89,6 @@ Ein Sprachdienst bietet Editor Unterstützung, mit der bestimmte [!INCLUDE[vsprv
 
 - [Überprüfen von Haltepunkten in einem Legacysprachdienst](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Erweiterbarkeit von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)

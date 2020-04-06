@@ -1,46 +1,46 @@
 ---
-title: Installieren von außerhalb des Ordners für Erweiterungen mit VSIX v3 | Microsoft-Dokumentation
+title: Installieren außerhalb des Erweiterungsordners mit VSIX v3 | Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: aa2c7d97dda9bba139ec613b367eedbc6307848a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852202"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700179"
 ---
 # <a name="install-outside-the-extensions-folder"></a>Installieren außerhalb des Ordners für Erweiterungen
 
-Ab Visual Studio 2017 und VSIX v3 (Version 3), Erweiterung Assets kann außerhalb der Ordner "Extensions" installiert werden. Derzeit werden die folgenden Speicherorte als gültige Installationsorte aktiviert (wobei die [INSTALLDIR] zum Installationsverzeichnis von Visual Studio-Instanz zugeordnet ist):
+Ab Visual Studio 2017 und VSIX v3 (Version 3) können Erweiterungselemente außerhalb des Erweiterungsordners installiert werden. Derzeit sind die folgenden Speicherorte als gültige Installationsspeicherorte aktiviert (wobei [INSTALLDIR] dem Installationsverzeichnis der Visual Studio-Instanz zugeordnet ist):
 
-* [INSTALLDIR] \MSBuild
-* [INSTALLDIR]\Xml\Schemas
-* [INSTALLDIR]\Common7\IDE\PublicAssemblies
-* [INSTALLDIR] \Licenses
-* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
-* [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR] \Common7\IDE\VC\VCTargets (nur für Visual Studio 2017; veraltete Elemente für Visual Studio-2019 und höher unterstützt)
+* [INSTALLDIR]-MSBuild
+* [INSTALLDIR]-Xml-Schemas
+* [INSTALLDIR]
+* [INSTALLDIR]-Lizenzen
+* [INSTALLDIR]
+* [INSTALLDIR]-Common7-IDE-RemoteDebugger
+* [INSTALLDIR]-Common7-IDE-VC-VCTargets (nur für Visual Studio 2017 unterstützt; für Visual Studio 2019 und höher veraltet)
 
 > [!NOTE]
-> Das VSIX-Format kann nicht außerhalb der Ordnerstruktur des Visual Studio-Installation installieren. 
+> Das VSIX-Format ermöglicht es Ihnen nicht, außerhalb der Visual Studio-Installationsordnerstruktur zu installieren. 
 
-Um auf diese Verzeichnisse installieren zu unterstützen, muss die VSIX-Datei installiert sein "pro pro-Computer-Instanz". Dies kann durch Aktivieren des Kontrollkästchens "alle Benutzer" im Designer "Extension.vsixmanifest" aktiviert werden:
+Um die Installation in diesen Verzeichnissen zu unterstützen, muss der VSIX "pro Instanz pro Computer" installiert werden. Dies kann aktiviert werden, indem Sie das Kontrollkästchen "All-Users" im Erweiterungsmanifest-Designer aktivieren:
 
 ![Überprüfen Sie alle Benutzer](media/check-all-users.png)
 
-## <a name="how-to-set-the-installroot"></a>Gewusst wie: Festlegen der InstallRoot
+## <a name="how-to-set-the-installroot"></a>So legen Sie den InstallRoot fest
 
-Um den Installationsverzeichnissen festzulegen, können Sie die **Eigenschaften** Fenster in Visual Studio. Sie können z. B. Festlegen der `InstallRoot` Eigenschaft einen Projektverweis auf einen der oben genannten Standorte:
+Zum Festlegen der Installationsverzeichnisse können Sie das **Eigenschaftenfenster** in Visual Studio verwenden. Sie können z. `InstallRoot` B. die Eigenschaft eines Projektverweises auf einen der oben genannten Positionen festlegen:
 
-![Installieren Sie die Root-Eigenschaften](media/install-root-properties.png)
+![Installieren von Root-Eigenschaften](media/install-root-properties.png)
 
-Dadurch werden einige Metadaten hinzugefügt, mit der entsprechenden `ProjectReference` Eigenschaft innerhalb des VSIX-Projekts CSPROJ-Datei:
+Dadurch werden der entsprechenden `ProjectReference` Eigenschaft innerhalb der .csproj-Datei des VSIX-Projekts einige Metadaten hinzugefügt:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -51,15 +51,15 @@ Dadurch werden einige Metadaten hinzugefügt, mit der entsprechenden `ProjectRef
 ```
 
 > [!NOTE]
-> Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
+> Sie können die .csproj-Datei direkt bearbeiten, wenn Sie es vorziehen.
 
-## <a name="how-to-set-a-subpath-under-the-installroot"></a>Wie Sie einen Unterpfad unter dem InstallRoot festlegen
+## <a name="how-to-set-a-subpath-under-the-installroot"></a>So legen Sie einen Unterpfad unter InstallRoot fest
 
-Wenn Sie, um einen Unterpfad unter installieren möchten der `InstallRoot`, dazu können Sie festlegen der `VsixSubPath` Eigenschaft wie die `InstallRoot` Eigenschaft. Angenommen, wir möchten unsere Projektverweis-Ausgabe zu installieren "[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0". Dies ganz einfach mit dem Designer für die Eigenschaft ist möglich:
+Wenn Sie in einem Unterpfad unterhalb `InstallRoot`des installieren möchten, können `VsixSubPath` Sie dies tun, indem Sie die Eigenschaft genau wie die `InstallRoot` Eigenschaft festlegen. Angenommen, die Ausgabe unserer Projektreferenz soll in '[INSTALLDIR]'MSBuild'MyCompany'MySDK'1.0' installiert werden. Wir können dies ganz einfach mit dem Immobiliendesigner tun:
 
 ![Set-Unterpfad](media/set-subpath.png)
 
-Die entsprechenden csproj-Änderungen werden wie folgt aussehen:
+Die entsprechenden .csproj-Änderungen sehen wie folgt aus:
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -72,4 +72,4 @@ Die entsprechenden csproj-Änderungen werden wie folgt aussehen:
 
 ## <a name="extra-information"></a>Zusätzliche Informationen
 
-Der Designer Änderung der Eigenschaft gelten für mehr als nur-Projekt-verweisen. Sie können festlegen, die `InstallRoot` Metadaten für Elemente in Ihrem Projekt auch (mit der gleichen oben beschriebenen Methoden).
+Die Eigenschaftendesigneränderungen gelten für mehr als nur Projektverweise. Sie können `InstallRoot` die Metadaten auch für Elemente innerhalb Des Projekts festlegen (mit den oben beschriebenen Methoden).

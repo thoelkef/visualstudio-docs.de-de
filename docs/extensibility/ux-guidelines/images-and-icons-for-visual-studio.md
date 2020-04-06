@@ -3,17 +3,17 @@ title: Bilder und Symbole für Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e449fb30bd95319a46d1db50da63778f6800a70
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: dfef803d2bffb19cc54974465c7892b4d68ff3d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301596"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699050"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Bildverwendung in Visual Studio
@@ -258,7 +258,7 @@ ms.locfileid: "79301596"
 
 - um Elemente innerhalb von IntelliSense zu unterscheiden
 
-### <a name="accessibility"></a>Barrierefreiheit
+### <a name="accessibility"></a>Zugriff
  Visual Studio-Konformitätsrichtlinien schreiben vor, dass alle in das Produkt eingecheckten Symbole die Barrierefreiheitsanforderungen für Farbe und Kontrast erfüllen. Farben in der visuellen Sprachpalette wurden getestet und erfüllen diese Anforderungen.
 
 #### <a name="color-inversion-for-dark-themes"></a>Farbumkehr für dunkle Themen
@@ -269,7 +269,7 @@ ms.locfileid: "79301596"
 ### <a name="base-palette"></a>Basispalette
  Alle Standardsymbole enthalten drei Grundfarben. Symbole enthalten keine Farbverläufe oder Schlagschatten, mit einer oder zwei Ausnahmen für 3D-Werkzeugsymbole.
 
-|Verwendung|Name|Wert (Lichtdesign)|Swatch|Beispiel|
+|Verwendung|name|Wert (Lichtdesign)|Swatch|Beispiel|
 |-----------|----------|---------------------------|------------|-------------|
 |Hintergrund/Dunkel|VS BG|424242 / 66,66,66|![Muster 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Beispiel für Basispalette](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Vordergrund/Licht|VS FG|F0EFF1 / 240,239,241|![Muster F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -282,7 +282,7 @@ ms.locfileid: "79301596"
 #### <a name="action-modifiers"></a>Aktionsmodifikatoren
  Die folgenden vier Farben geben die Arten von Aktionen an, die von Aktionsmodifikatoren benötigt werden:
 
-|Verwendung|Name|Wert (alle Themen)|Swatch|
+|Verwendung|name|Wert (alle Themen)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Positiv|VS Action Green|388A34 / 56,138,52|![Muster 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negativ|VS Aktion Rot|A1260D / 161,38,13|![Muster A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -325,14 +325,14 @@ ms.locfileid: "79301596"
 
 #### <a name="folder"></a>Ordner
 
-|Verwendung|Name|Wert (alle Themen)|Swatch|Beispiel|
+|Verwendung|name|Wert (alle Themen)|Swatch|Beispiel|
 |-----------|----------|--------------------------|------------|-------------|
 |Ordner|Ordner|DCB67A / 220,182,122|![Muster DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Symbol "Ordnerfarbe"](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio-Sprachen
  Jede der in Visual Studio verfügbaren allgemeinen Sprachen oder Plattformen hat eine zugeordnete Farbe. Diese Farben werden auf dem Basissymbol oder auf Sprachmodifikatoren verwendet, die in der oberen rechten Ecke von zusammengesetzten Symbolen angezeigt werden.
 
-|Verwendung|Name|Wert (alle Themen)|Swatch|
+|Verwendung|name|Wert (alle Themen)|Swatch|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF Blau|0095D7 / 0,149,215|![Muster 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP Lila|9B4F96 / 155,79,150|![Muster 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -354,7 +354,7 @@ ms.locfileid: "79301596"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense-Symbole verwenden eine exklusive Farbpalette. Diese Farben werden verwendet, um Benutzern zu helfen, schnell zwischen den verschiedenen Elementen in der IntelliSense-Popupliste zu unterscheiden.
 
-|Verwendung|Name|Wert (alle Themen)|Swatch|
+|Verwendung|name|Wert (alle Themen)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Klasse, Ereignis|VS Aktion Orange|C27D1A / 194,125,26|![Muster C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Erweiterungsmethode, Methode, Modul, Delegat|VS Action Purple|652D90 / 101,45,144|![Muster 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -372,7 +372,7 @@ ms.locfileid: "79301596"
 ### <a name="notifications"></a>Benachrichtigungen
  Benachrichtigungen in Visual Studio werden verwendet, um den Status anzuzeigen. Die Benachrichtigungspalette verwendet die folgenden vier Farben sowie Optionen für die Ausfüllung des Vordergrunds in Schwarz oder Weiß, um Benachrichtigungen mit den folgenden Statusebenen zu definieren.
 
-|Verwendung|Name|Wert (alle Themen)|Swatch|
+|Verwendung|name|Wert (alle Themen)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Status: neutral|Benachrichtigung Blau (VS Blau)|1BA1E2 / 27,161,226|![Muster 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Status: positiv|Benachrichtigung Grün (VS Grün)|339933 / 51,153,51|![Muster 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -390,7 +390,7 @@ ms.locfileid: "79301596"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  Im Allgemeinen besteht Visual Studio Online aus Features, die in einem Browser gehostet werden. Die Farbe variiert in verschiedenen Umgebungen, aber der Stil bleibt gleich.
 
-|Group|Verwendung|Name|Wert (alle Themen)|Swatch|
+|Group|Verwendung|name|Wert (alle Themen)|Swatch|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Hintergrund|TFSO BG|656565/ 101, 101, 101|![Muster 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|Outline|TFSO OUT|FFFFFF / 255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|

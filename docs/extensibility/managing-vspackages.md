@@ -1,5 +1,5 @@
 ---
-title: Verwalten von VSPackages | Microsoft-Dokumentation
+title: Verwalten von VSPackages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,41 +8,41 @@ helpviewer_keywords:
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b622901ce90187ff8230a8e23a11110e0795b0b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340498"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702651"
 ---
 # <a name="manage-vspackages"></a>Verwalten von VSPackages
-In den meisten Fällen müssen Sie nicht kümmern, VSPackages, Verwaltung, da die Projekt- und Elementvorlagen zu registrieren, und Laden Sie das Paket automatisch. In einigen Fällen müssen Sie jedoch etwas mehr erfahren, um das Paket zu verwalten.
+In den meisten Fällen müssen Sie sich keine Gedanken über die Verwaltung von VSPackages machen, da sich die Projekt- und Elementvorlagen registrieren und das Paket automatisch laden. Unter bestimmten Umständen müssen Sie jedoch möglicherweise etwas mehr lernen, um Ihr Paket zu verwalten.
 
-## <a name="use-the-experimental-instance"></a>Verwenden Sie die experimentelle Instanz
- Weitere Informationen zu der experimentellen Instanz finden Sie unter [der experimentellen Instanz](../extensibility/the-experimental-instance.md).
+## <a name="use-the-experimental-instance"></a>Verwenden der experimentellen Instanz
+ Weitere Informationen zur experimentellen Instanz finden Sie unter [Die experimentelle Instanz](../extensibility/the-experimental-instance.md).
 
-## <a name="register-and-unregister-vspackages"></a>An- und Abmelden von VSPackages
- Erfahren Sie, wie zum Registrieren und Aufheben der Registrierung von VSPackages und anderen Typen der Erweiterung finden Sie unter [an- und Abmelden von VSPackages](../extensibility/registering-and-unregistering-vspackages.md).
+## <a name="register-and-unregister-vspackages"></a>VSPackages registrieren und abmelden
+ Informationen zum Registrieren und Aufheben der Registrierung von VSPackages und anderen Erweiterungstypen finden Sie unter [Registrieren und Aufheben der Registrierung](../extensibility/registering-and-unregistering-vspackages.md)von VSPackages .
 
-## <a name="load-a-vspackage"></a>Laden Sie eine VSPackage
- VSPackages kann Automatisches Laden, wenn eine bestimmte festgelegt werden, die CMDUICONTEXT GUID aktiviert ist. Weitere Informationen finden Sie unter [Load VSPackages](../extensibility/loading-vspackages.md).
+## <a name="load-a-vspackage"></a>VsPackage laden
+ VSPackages kann auf autoload eingestellt werden, wenn eine bestimmte CMDUICONTEXT GUID aktiviert ist. Weitere Informationen finden Sie unter Laden von [VSPackages](../extensibility/loading-vspackages.md).
 
 ## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund
- Die `AsyncPackage` Klasse ermöglicht das Laden des Pakets in einem Hintergrundthread für bessere Reaktionsfähigkeit der Benutzeroberfläche in Visual Studio. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).
+ Die `AsyncPackage` Klasse ermöglicht das Laden von Paketen in einem Hintergrundthread für eine bessere Benutzeroberflächenreaktion in Visual Studio. Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von AsyncPackage zum Laden](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)von VSPackages im Hintergrund .
 
-## <a name="rule-based-ui-context-for-extensions"></a>Regel-basierte Benutzeroberfläche-Kontext für Erweiterungen
- Benutzeroberflächen-Kontexten regelbasierten können Ersteller von Erweiterungen zum Definieren der präzisen Bedingungen, unter dem einen UI-Kontext aktiviert ist, und zugeordnete VSPackages geladen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).
+## <a name="rule-based-ui-context-for-extensions"></a>Regelbasierter UI-Kontext für Erweiterungen
+ Regelbasierte UI-Kontexte ermöglichen es Erweiterungsautoren, die genauen Bedingungen zu definieren, unter denen ein UI-Kontext aktiviert und zugeordnete VSPackages geladen werden. Weitere Informationen finden Sie unter [Gewusst wie: Verwenden des regelbasierten UI-Kontexts für Visual Studio-Erweiterungen](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).
 
 ## <a name="diagnose-extension-performance"></a>Leistung der Diagnoseerweiterung
-Erweiterungen können die Leistung beim Start und -Lösung laden auswirken. Erfahren Sie, wie Visual Studio-Erweiterung Auswirkungen berechnet wird und wie sie lokal analysiert werden zum Testen, ob eine Erweiterung als eine Leistung, die Auswirkungen auf die Erweiterung angezeigt werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Leistung der diagnoseerweiterung](how-to-diagnose-extension-performance.md).
+Erweiterungen können sich auf die Start- und Lösungslastleistung auswirken. Erfahren Sie, wie die Auswirkungen der Visual Studio-Erweiterung berechnet werden und wie sie lokal analysiert werden kann, um zu testen, ob eine Erweiterung als leistungsbeeinflussende Erweiterung angezeigt werden kann. Weitere Informationen finden Sie unter [Gewusst wie: Diagnose der Erweiterungsleistung](how-to-diagnose-extension-performance.md).
 
-## <a name="troubleshoot-vspackages"></a>Problembehandlung bei VSPackages
- Ermitteln Sie die Techniken für die Problembehandlung bei VSPackages, die nicht geladen oder Fehler auftreten: [Problembehandlung bei VSPackages](../extensibility/troubleshooting-vspackages.md)
+## <a name="troubleshoot-vspackages"></a>Fehlerbehebung bei VSPackages
+ Finden Sie heraus, welche Techniken zur Fehlerbehebung von VSPackages, die nicht geladen werden oder Fehler aufweisen, gefunden werden: [Problembehandlung vsPackages](../extensibility/troubleshooting-vspackages.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSPackages](../extensibility/internals/vspackages.md)

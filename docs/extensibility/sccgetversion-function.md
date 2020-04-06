@@ -1,5 +1,5 @@
 ---
-title: Sccgetversion-Funktion | Microsoft-Dokumentation
+title: SccGetVersion-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetVersion function
 ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69078200743f30c4ecfedce8e9be05ef9e7ce20b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a563a7d1d65dc4c6564abd4e337242eea1aa9924
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721482"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700679"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion-Funktion
-Diese Funktion Ruft die Versionsnummer der Quellcodeverwaltungs-Plug-in-API ab, die vom Quellcodeverwaltungs-Plug-in unterstützt wird.
+Diese Funktion ruft die Versionsnummer der Quellcodeverwaltungs-Plug-In-API ab, die vom Quellcodeverwaltungs-Plug-In unterstützt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,18 +29,18 @@ LONG SccGetVersion(void);
 ```
 
 #### <a name="parameters"></a>Parameter
- Keine
+ Keine.
 
 ## <a name="return-value"></a>Rückgabewert
- Ein `LONG` Datentyp, der die Versionsnummer der unterstützten Quellcodeverwaltungs-Plug-in-API enthält:
+ Ein `LONG` Datentyp, der die Versionsnummer der unterstützten Quellcodeverwaltungs-Plug-In-API enthält:
 
-|WORD|Beschreibung|
+|WORD|BESCHREIBUNG|
 |----------|-----------------|
 |HIWORD|Hauptversion|
-|LOWORD|Neben Version|
+|LOWORD|Nebenversion|
 
-## <a name="remarks"></a>Hinweise
- Wenn ein Quellcodeverwaltungs-Plug-in z. b. Version 1,3 der Quellcodeverwaltungs-Plug-in-API unterstützt, würde diese Funktion 0x0103 zurückgeben.
+## <a name="remarks"></a>Bemerkungen
+ Wenn z. B. ein Quellcodeverwaltungs-Plug-In Version 1.3 der Quellcodeverwaltungs-Plug-In-API unterstützt, würde diese Funktion 0x0103 zurückgeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: SccBeginBatch-Funktion | Microsoft-Dokumentation
+title: SccBeginBatch-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bb145358184117046e14b7b598ce6d4bb4586b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333887"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701196"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch-Funktion
-Diese Funktion wird eine Batch-Sequenz von Quellcodeverwaltungsvorgänge gestartet. Die [SccEndBatch](../extensibility/sccendbatch-function.md) wird aufgerufen, um den Batch beenden. Diese Batches können nicht geschachtelt werden.
+Diese Funktion startet eine Batchsequenz von Quellcodeverwaltungsvorgängen. Der [SccEndBatch](../extensibility/sccendbatch-function.md) wird aufgerufen, um den Batch zu beenden. Diese Batches sind möglicherweise nicht geschachtelt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,21 +29,21 @@ SCCRTN SccBeginBatch(void);
 ```
 
 ### <a name="parameters"></a>Parameter
- Keine
+ Keine.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Batches von Vorgängen wurde erfolgreich gestartet.|
-|SCC_E_UNKNOWNERROR|Nicht spezifischen Fehler.|
+|SCC_OK|Batch von Vorgängen erfolgreich gestartet.|
+|SCC_E_UNKNOWNERROR|Unspezifischer Fehler.|
 
-## <a name="remarks"></a>Hinweise
- Source-Control-Batches werden verwendet, um die gleichen Vorgänge über mehrere Projekte oder mehrere Kontexte auszuführen. Batches können verwendet werden, um redundante projektbezogene Dialogfeldern auf die Benutzeroberfläche während eines Vorgangs im Batchmodus zu vermeiden. Die `SccBeginBatch` Funktion und die [SccEndBatch](../extensibility/sccendbatch-function.md) dienen als Funktionspaar Anfang und Ende eines Vorgangs an. Sie sind nicht schachtelbar. `SccBeginBatch` Legt ein Flag, der angibt, dass ein Batchvorgang ausgeführt wird.
+## <a name="remarks"></a>Bemerkungen
+ Quellcodeverwaltungsbatches werden verwendet, um dieselben Vorgänge über mehrere Projekte oder mehrere Kontexte auszuführen. Batches können verwendet werden, um redundante Dialogfelder pro Projekt während eines Batchvorgangs aus der Benutzererfahrung zu entfernen. Die `SccBeginBatch` Funktion und der [SccEndBatch](../extensibility/sccendbatch-function.md) werden als Funktionspaar verwendet, um den Anfang und das Ende eines Vorgangs anzugeben. Sie können nicht verschachtelt werden. `SccBeginBatch`setzt ein Flag, das angibt, dass ein Stapelvorgang ausgeführt wird.
 
- Während ein Batchvorgangs aktiviert ist, sollte das Quellcodeverwaltungs-Plug-in höchstens ein Dialogfeld für Fragen an den Benutzer vorhanden und die Antwort in diesem Dialogfeld auf alle nachfolgenden Operationen anwenden.
+ Während ein Stapelvorgang ausgeführt wird, sollte das Quellcodeverwaltungs-Plug-In dem Benutzer höchstens ein Dialogfeld für jede Frage vorsehen und die Antwort aus diesem Dialogfeld auf alle nachfolgenden Vorgänge anwenden.
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

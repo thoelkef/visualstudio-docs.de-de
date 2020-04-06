@@ -3,17 +3,17 @@ title: Anwendungsmuster für Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55044df3898b452e87ec877f9ae10dd12a2b1110
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301590"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698594"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Fensterinteraktionen
@@ -132,7 +132,7 @@ Beispiele für navigierbare Listentoolfenster sind der Projektmappen-Explorer un
 
 | Werkzeugfenster | Funktion |
 | --- | --- |
-| Toolbox | Das Werkzeugfenster zum Speichern von Elementen, die auf Entwurfsflächen abgelegt werden, bietet eine konsistente Ziehquelle für alle Designer. |
+| Werkzeugkasten | Das Werkzeugfenster zum Speichern von Elementen, die auf Entwurfsflächen abgelegt werden, bietet eine konsistente Ziehquelle für alle Designer. |
 | Startseite | Das Benutzerportal zu Visual Studio mit Zugriff auf Feeds von Entwicklernews, Visual Studio-Hilfe und aktuelle Projekte. Benutzer können auch benutzerdefinierte Startseiten erstellen, indem sie die Datei StartPage.xaml aus dem Programmdateiverzeichnis "Common7-IDE-StartPages\" Visual Studio" in den Ordner StartPages im Visual Studio-Dokumentverzeichnis kopieren und dann das XAML entweder von Hand bearbeiten oder in Visual Studio oder einem anderen Codeeditor öffnen. |
 
 ::: moniker-end
@@ -141,7 +141,7 @@ Beispiele für navigierbare Listentoolfenster sind der Projektmappen-Explorer un
 
 | Werkzeugfenster | Funktion |
 | --- | --- |
-| Toolbox | Das Werkzeugfenster zum Speichern von Elementen, die auf Entwurfsflächen abgelegt werden, bietet eine konsistente Ziehquelle für alle Designer. |
+| Werkzeugkasten | Das Werkzeugfenster zum Speichern von Elementen, die auf Entwurfsflächen abgelegt werden, bietet eine konsistente Ziehquelle für alle Designer. |
 
 ::: moniker-end
 
@@ -359,7 +359,7 @@ Um mit Ihren Dialogfeldern ein optimales Design und eine optimale Funktionalitä
 
 Layoutspezifische Richtlinien finden Sie unter [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="size"></a>Size
+#### <a name="size"></a>Größe
 Dialoge sollten innerhalb einer Bildschirmauflösung von mindestens 1024x768 passen, und die anfängliche Dialogfeldgröße sollte 900x700 Pixel nicht überschreiten. Dialoge können in der Geänderten Datei geändert werden, sind jedoch keine Voraussetzung.
 
 Es gibt zwei Empfehlungen für änderungsbare Dialoge:
@@ -475,7 +475,7 @@ Projekte sollten auch konsistente Interaktionsmodelle beibehalten für:
 - Drag-and-Drop-Vorgänge
 
 ### <a name="drag-and-drop-interaction-model"></a>Drag-and-Drop-Interaktionsmodell
-Projekte klassifizieren sich in der Regel als referenzbasiert (in der Lage, nur Verweise auf Projektelemente im Speicher beizubehalten), verzeichnisbasiert (nur Projektelemente, die physisch in der Hierarchie eines Projekts gespeichert sind) oder gemischt (in der Lage, Verweise beizubehalten). oder physische Gegenstände). Die IDE berücksichtigt alle drei Projekttypen gleichzeitig im **Projektmappen-Explorer**.
+Projekte klassifizieren sich in der Regel als referenzbasiert (in der Lage, nur Verweise auf Projektelemente im Speicher beizubehalten), verzeichnisbasiert (nur Projektelemente, die physisch in der Hierarchie eines Projekts gespeichert sind) oder gemischt (in der Lage, Verweise oder physische Elemente beizubehalten). Die IDE berücksichtigt alle drei Projekttypen gleichzeitig im **Projektmappen-Explorer**.
 
 Aus Drag-and-Drop-Perspektive sollten die folgenden Merkmale für jeden Projekttyp im **Projektmappen-Explorer**gelten:
 
@@ -507,7 +507,7 @@ Das Ziehen von Projektelementen über Instanzen von Visual Studio (z. B. von ein
 
 Der Benutzer sollte immer in der Lage sein, die Auswirkungen eines Drag-and-Drop-Vorgangs zu bestimmen, indem er ein Element auswählt, es an die Zielposition zieht und beobachtet, welche der folgenden Mauszeiger angezeigt werden, bevor das Element gelöscht wird:
 
-| Mauszeiger | Get-Help | Beschreibung |
+| Mauszeiger | Get-Help | BESCHREIBUNG |
 | :---: | --- | --- |
 | ![Symbol „Keine Ablage“ für Maus](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Kein Tropfen | Das Element kann nicht an den angegebenen Speicherort gelöscht werden. |
 | ![Symbol "Kopieren" für Maus](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Kopieren | Das Element wird an den Zielspeicherort kopiert. |

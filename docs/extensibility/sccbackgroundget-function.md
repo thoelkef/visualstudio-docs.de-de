@@ -1,5 +1,5 @@
 ---
-title: SccBackgroundGet-Funktion | Microsoft-Dokumentation
+title: SccBackgroundGet-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0805e91f5386f101917ee988e9e0d23d066f48d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334022"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701230"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet-Funktion
-Diese Funktion ruft aus der quellcodeverwaltung jeder der angegebenen Dateien ohne Benutzerinteraktion ab.
+Diese Funktion ruft aus der Quellcodeverwaltung jede der angegebenen Dateien ohne Benutzerinteraktion ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,43 +35,43 @@ SCCRTN SccBackgroundGet(
 ```
 
 ### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+[in] Der Kontextzeiger für die Quellcodeverwaltung.
 
  nFiles
 
-[in] Anzahl der angegebenen Dateien in die `lpFileNames` Array.
+[in] Anzahl der im `lpFileNames` Array angegebenen Dateien.
 
  lpFileNames
 
-[in, out] Array der Namen von Dateien abgerufen werden sollen.
+[in, out] Array von Namen von Dateien, die abgerufen werden sollen.
 
 > [!NOTE]
-> Die Namen müssen vollständig qualifizierten lokalen Dateinamen sein.
+> Die Namen müssen vollqualifizierte lokale Dateinamen sein.
 
  dwFlags
 
-[in] Befehl Flags (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).
+[in] Befehlsflags`SCC_GET_ALL` `SCC_GET_RECURSIVE`( , ).
 
  dwBackgroundOperationID
 
-[in] Ein eindeutiger Wert, der diesen Vorgang zugeordnet ist.
+[in] Ein eindeutiger Wert, der diesem Vorgang zugeordnet ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Der Vorgang erfolgreich abgeschlossen wurde.|
-|SCC_E_BACKGROUNDGETINPROGRESS|Hintergrund Abruf wird bereits ausgeführt (das Quellcodeverwaltungs-Plug-in sollte dies nur zurück, wenn es keine gleichzeitigen Batchvorgänge unterstützt).|
-|SCC_I_OPERATIONCANCELED|Vorgang wurde abgebrochen, bevor Sie abgeschlossen wird.|
+|SCC_OK|Operation erfolgreich abgeschlossen.|
+|SCC_E_BACKGROUNDGETINPROGRESS|Ein Hintergrundabruf ist bereits im Gange (das Quellcodeverwaltungs-Plug-In sollte dies nur zurückgeben, wenn es keine gleichzeitigen Batchvorgänge unterstützt).|
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde abgebrochen, bevor er abgeschlossen wurde.|
 
-## <a name="remarks"></a>Hinweise
- Diese Funktion wird immer in einem anderen Thread aufgerufen, die das Quellcodeverwaltungs-Plug-In geladen wird. Diese Funktion wird nicht erwartet, zurückgegeben werden, bis er abgeschlossen ist; Allerdings kann es mehrere Male mit mehreren Listen von Dateien, alle gleichzeitig aufgerufen werden.
+## <a name="remarks"></a>Bemerkungen
+ Diese Funktion wird immer für einen Thread aufgerufen, der sich von dem entfernt hat, mit dem das Quellcodeverwaltungs-Plug-In geladen wurde. Es wird nicht erwartet, dass diese Funktion zurückkehrt, bis sie abgeschlossen ist. Es kann jedoch mehrmals mit mehreren Listen von Dateien aufgerufen werden, alle zur gleichen Zeit.
 
- Die Verwendung der `dwFlags` Argument ist identisch mit der [SccGet](../extensibility/sccget-function.md).
+ Die Verwendung `dwFlags` des Arguments ist die gleiche wie die [von SccGet](../extensibility/sccget-function.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

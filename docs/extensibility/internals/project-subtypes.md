@@ -1,28 +1,28 @@
 ---
-title: Projektuntertypen | Microsoft-Dokumentation
+title: Projektuntertypen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aede76a39506f74c39d9ec63ed4bb4a410d1013c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71dab4767c806b44cbd1f9638738b4a13d6b2bcb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328103"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706408"
 ---
 # <a name="project-subtypes"></a>Projektuntertypen
-Projektuntertypen ermöglichen das Anpassen oder das Verhalten der Projektsysteme von flavor [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Anpassungen beinhalten das Speichern von zusätzlicher Daten in der Projektdatei, hinzufügen oder Filtern von Elementen in der **neues Element hinzufügen** Dialogfeld steuern, wie Assemblys debuggt und bereitgestellt, und erweitern das Projekt **Eigenschaft Seiten** Dialogfeld. VSPackages implementieren Projektuntertypen mit COM-Aggregation.
+Mit Projektuntertypen können Sie das Verhalten der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Projektsysteme von anpassen oder anpassen. Zu den Anpassungen gehören das Speichern zusätzlicher Daten in der Projektdatei, das Hinzufügen oder Filtern von Elementen im Dialogfeld **Neues Element hinzufügen,** das Steuern, wie Assemblys gedebuggen und bereitgestellt werden, und das Erweitern des Dialogfelds **Eigenschaftenseiten** des Projekts. VSPackages implementieren Projektuntertypen mithilfe der COM-Aggregation.
 
 > [!NOTE]
-> Das Visual C++-Projektsystem unterstützt Projektuntertypen nicht. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projektuntertypen verwendet SQL Server und Smart Device-Projekte umsetzen.
+> Das Visual C++-Projektsystem unterstützt keine Projektuntertypen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]selbst verwendet Projektuntertypen, um SQL Server- und Smart Device-Projekte zu implementieren.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Entwurf von Projektuntertypen](../../extensibility/internals/project-subtypes-design.md)
@@ -31,41 +31,41 @@ Projektuntertypen ermöglichen das Anpassen oder das Verhalten der Projektsystem
 
 - [Initialisierungssequenz von Projektuntertypen](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)
 
- Beschreibt die programmgesteuerte Projekt Untertyp-Initialisierungssequenz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung.
+ Beschreibt die programmgesteuerte Projektsubtypinitialisierungssequenz nach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung.
 
 - [Eigenschaften und Methoden, die von Projektuntertypen erweitert werden](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
 
- Ausführliche Beschreibungen der Funktionen und Methoden, die am häufigsten mithilfe von Projektuntertypen erweitert.
+ Enthält detaillierte Beschreibungen der Features und Methoden, die am häufigsten durch die Verwendung von Projektuntertypen erweitert werden.
 
 - [Beibehalten von Daten in der MSBuild-Projektdatei](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
 
- Beschreibt, wie Daten in einer Projektdatei beibehalten werden und wie Sie mit <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> die Daten in der Projektdatei für die Aggregationsebenen des Projekt-Untertyp beibehalten.
+ Beschreibt, wie Daten in einer Projektdatei <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> beibehalten werden und wie die Daten in der Projektdatei über die Aggregationsebenen des Projektsubtyps hinweg verwaltet werden.
 
 - [Benutzeroberfläche für Projekteigenschaften](../../extensibility/internals/project-property-user-interface.md)
 
- Beschreibt, wie Projektuntertypen für das Projekt ändern, können **Eigenschaftenseiten** Dialogfeld.
+ Beschreibt, wie Projektuntertypen das Dialogfeld **Eigenschaftenseiten** des Projekts ändern können.
 
 - [Erweitern des Objektmodells des Basisprojekts](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)
 
- Enthält Informationen zur Verwendung von Projektuntertypen Automatisierungsextender das Automatisierungsobjektmodell zu erweitern.
+ Enthält Informationen dazu, wie Projektuntertypen Automation Extender verwenden können, um das Automatisierungsobjektmodell zu erweitern.
 
 - [Mitwirken am Dialogfeld „Neues Element hinzufügen“](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
 
- Beschreibt das Hinzufügen von Elementen, die **neues Element hinzufügen** Dialogfeld.
+ Beschreibt das Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzufügen.**
 
 - [Speichern von Daten in Projektdateien](../../extensibility/saving-data-in-project-files.md)
 
- Erläutert, wie einem Projektuntertyp speichern und untertypspezifischen Daten in der Projektdatei mithilfe des Managed Package Framework (MPF) abrufen kann.
+ Erläutert, wie ein Projektuntertyp subtypspezifische Daten in der Projektdatei mithilfe des Managed Package Framework (MPF) speichern und abrufen kann.
 
 - [Behandlung einer speziellen Bereitstellung](../../extensibility/internals/handling-specialized-deployment.md)
 
- Erläutert, wie Projektuntertypen spezielle bereitstellungsverhalten durch die Implementierung bereitstellen können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle.
+ Erläutert, wie Projektuntertypen durch Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> der Schnittstelle ein spezielles Bereitstellungsverhalten bereitstellen können.
 
 - [Hinzufügen und Entfernen von Eigenschaftenseiten](../../extensibility/adding-and-removing-property-pages.md)
 
- Beschreibt, hinzufügen und Entfernen von Eigenschaftenseiten im Projekt-Designer.
+ Beschreibt das Hinzufügen und Entfernen von Eigenschaftenseiten im Projekt-Designer.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Projekttypen](../../extensibility/internals/project-types.md)
 
- Enthält Links zu Themen, die mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekte.
+ Enthält Links zu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Themen, in denen Projekte detailliert beschrieben werden.

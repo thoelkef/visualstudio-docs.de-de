@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft-Dokumentation
+title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetMethodFromAddress
 - GetMethodFromAddress
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89a110886837c793d45842db6ed80690626dd9d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335167"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718944"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Ruft Informationen über die Methode an der angegebenen Debug-Adresse ab.
+Ruft Informationen über die Methode an der angegebenen Debugadresse ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -52,28 +52,28 @@ int GetMethodFromAddress(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Debuggen Sie die Adresse, die durch dargestellt wird die [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
+[in] Debugadresse, die durch die [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) dargestellt wird.
 
 `pGuid`\
 [out] Eindeutiger Bezeichner des Moduls.
 
 `pAppID`\
-[out] Der Bezeichner der Anwendungsdomäne.
+[out] Bezeichner der Anwendungsdomäne.
 
 `pTokenClass`\
-[out] Token, die die enthaltende Klasse darstellt.
+[out] Token, der die enthaltende Klasse darstellt.
 
 `pTokenMethod`\
-[out] Token, die das Modul darstellt.
+[out] Token, das das Modul darstellt.
 
 `pdwOffset`\
-[out] Ein Offset in Bytes vom Anfang der `pAddress` Parameter.
+[out] Ein Offset in Bytes vom `pAddress` Anfang des Parameters.
 
 `pdwVersion`\
-[out] Die Versionsnummer der Methode.
+[out] Versionsnummer der Methode.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

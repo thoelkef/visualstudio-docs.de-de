@@ -1,28 +1,28 @@
 ---
-title: 'Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von Registrierungseinstellungen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwalten einer privaten Galerie mithilfe von Registrierungseinstellungen | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b4f33f7ecf974fe527f814b9febdc861101f1ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a2630fc71bea40a4d05e616ae336759ba62431a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318494"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710933"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von registrierungseinstellungen
-Wenn Sie ein Administrator oder Entwickler einer Isolated Shell-Erweiterung sind, können Sie den Zugriff auf den Steuerelementen, Vorlagen und Tools in Visual Studio Gallery, die Samples Gallery oder private Kataloge steuern. Um einen Katalog verfügbar oder nicht verfügbar machen, erstellen eine *PKGDEF* -Datei, die die geänderte Registrierungsschlüssel und ihre Werte beschreibt.
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Gewusst wie: Verwalten einer privaten Galerie mithilfe von Registrierungseinstellungen
+Wenn Sie Administrator oder Entwickler einer isolierten Shell-Erweiterung sind, können Sie den Zugriff auf die Steuerelemente, Vorlagen und Tools in der Visual Studio-Galerie, im Beispielkatalog oder in privaten Galerien steuern. Um einen Katalog verfügbar oder nicht verfügbar zu machen, erstellen Sie eine *.pkgdef-Datei,* die die geänderten Registrierungsschlüssel und ihre Werte beschreibt.
 
-## <a name="manage-private-galleries"></a>Verwalten Sie private Kataloge
- Sie erstellen eine *PKGDEF* Datei zum Steuern des Zugriffs für Kataloge auf mehreren Computern. Diese Datei muss das folgende Format haben.
+## <a name="manage-private-galleries"></a>Verwalten privater Galerien
+ Sie können eine *.pkgdef-Datei* erstellen, um den Zugriff auf Galerien auf mehreren Computern zu steuern. Diese Datei muss das folgende Format haben.
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -36,22 +36,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- Die `Repositories` Schlüssel verweist auf den Katalog aktiviert bzw. deaktiviert werden soll. Verwenden das folgende Repository GUIDs, die Visual Studio Gallery und die Samples Gallery:
+ Der `Repositories` Schlüssel bezieht sich auf die Galerie, die aktiviert oder deaktiviert werden soll. Die Visual Studio-Galerie und die Beispielgalerie verwenden die folgenden Repository-GUIDs:
 
-- Visual Studio-Katalog: 0F45E408-7995-4375-9485-86B8DB553DC9
+- Visual Studio Galerie : 0F45E408-7995-4375-9485-86B8DB553DC9
 
-- Beispielkatalog: AEB9CB40-D8E6-4615-B52C-27E307F8506C
+- Bilder Galerie : AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
-  Die `Disabled` Wert ist optional. Standardmäßig wird ein Katalog aktiviert.
+  Der `Disabled` Wert ist optional. Standardmäßig ist ein Katalog aktiviert.
 
-  Die `Priority` Wert bestimmt die Reihenfolge, in der die Kataloge, in aufgeführt sind, der **Optionen** Dialogfeld. Visual Studio Gallery hat Priorität 10, und die Samples Gallery hat Priorität 20. Private Kataloge mit Priorität 100 beginnen. Wenn mehrere Kataloge denselben Prioritätswert aufweisen, ist die Reihenfolge, in der sie angezeigt werden, nach den Werten ihrer lokalisierten bestimmt `DisplayName` Attribute.
+  Der `Priority` Wert bestimmt die Reihenfolge, in der die Galerien im Dialogfeld **Optionen** aufgeführt sind. Visual Studio Gallery hat Priorität 10 und die Samples Gallery hat Priorität 20. Private Galerien beginnen bei Priorität 100. Wenn mehrere Galerien denselben Prioritätswert haben, wird die Reihenfolge, in `DisplayName` der sie angezeigt werden, durch die Werte ihrer lokalisierten Attribute bestimmt.
 
-  Die `Protocol` für Atom- oder SharePoint-basierten Katalogen ist erforderlich.
+  Der `Protocol` Wert ist für Atom- oder SharePoint-basierte Galerien erforderlich.
 
-  Entweder `DisplayName`, oder beides `DisplayNameResourceID` und `DisplayNamePackageGuid`, muss angegeben werden. Wenn all angegeben werden, und klicken Sie dann die `DisplayNameResourceID` und `DisplayNamePackageGuid` -Paar wird verwendet.
+  Entweder `DisplayName`muss `DisplayNameResourceID` entweder `DisplayNamePackageGuid`, oder beide und angegeben werden. Wenn alle angegeben sind, wird das `DisplayNameResourceID` und-Paar `DisplayNamePackageGuid` verwendet.
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deaktivieren Sie eine PKGDEF-Datei mit Visual Studio Gallery
- Sie können einen Katalog im Deaktivieren einer *PKGDEF* Datei. Der folgende Eintrag wird der Visual Studio Gallery deaktiviert:
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deaktivieren der Visual Studio-Galerie mithilfe einer .pkgdef-Datei
+ Sie können einen Katalog in einer *.pkgdef-Datei* deaktivieren. Der folgende Eintrag deaktiviert die Visual Studio-Galerie:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -59,7 +59,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- Der folgende Eintrag deaktiviert die Samples Gallery:
+ Der folgende Eintrag deaktiviert den Beispielkatalog:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
@@ -67,5 +67,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Private Kataloge](../extensibility/private-galleries.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Private Galerien](../extensibility/private-galleries.md)

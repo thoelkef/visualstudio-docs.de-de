@@ -1,5 +1,5 @@
 ---
-title: VSTemplate-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: VSTemplate-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - VSTemplate element [Visual Studio project templates]
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdcbde9ab8e49d439ab909b4cd5563d6b8ec3afa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322865"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697869"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate-Element (Visual Studio-Vorlagen)
-Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.
+Enthält alle Metadaten zur Projektvorlage, Elementvorlage oder zum Startkit.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,25 +38,25 @@ Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.
 
 ### <a name="attributes"></a>Attribute
 
-| Attribut | Beschreibung |
+| attribute | BESCHREIBUNG |
 |-----------| - |
-| `Type` | Gibt die Vorlage als eine Projektvorlage oder eine Elementvorlage. Dieses Attribut kann den Wert der haben `Project` oder `Item`. |
-| `Version` | Gibt eine Versionsnummer für die Vorlage an. Vorlagen in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] haben eine `Version` -Attributwert `3.0.0`. |
+| `Type` | Identifiziert die Vorlage als Projektvorlage oder Elementvorlage. Dieses Attribut kann den `Project` `Item`Wert oder haben. |
+| `Version` | Gibt eine Versionsnummer für die Vorlage an. Vorlagen in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] und `Version` haben den `3.0.0`Attributwert von . |
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt an, Daten, die kategorisiert die Vorlage und definiert, wie es in angezeigt. die **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Inhalt der Vorlage.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Gibt Daten an, die die Vorlage kategorisieren, und definiert, wie sie im Dialogfeld **Neues Projekt** oder Neues **Element** hinzufügen angezeigt wird.|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Gibt den Inhalt der Vorlage an.|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Optionales Element.|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Optionales Element.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
- Keine
+ Keine.
 
-## <a name="remarks"></a>Hinweise
- Die `VSTemplate` Element ist das Stammelement der *VSTEMPLATE* Dateien.
+## <a name="remarks"></a>Bemerkungen
+ Das `VSTemplate` Element ist das Stammelement von *.vstemplate-Dateien.*
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.
@@ -85,6 +85,6 @@ Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
