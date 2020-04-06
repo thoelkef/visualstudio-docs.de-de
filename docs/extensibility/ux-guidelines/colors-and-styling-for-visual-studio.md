@@ -3,17 +3,17 @@ title: Farben und Styling für Visual Studio | Microsoft Docs
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301560"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699851"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -358,7 +358,7 @@ Erstellen Sie einen speziellen Kategorieregistrierungseintragunter, unter `[HKLM
 
 Füllen Sie die Registrierung mit zwei Werten aus:
 
-| Name | type | Daten | Beschreibung |
+| Name | type | Daten | BESCHREIBUNG |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | Eine GUID, die erstellt wurde, um die Kategorie zu identifizieren |
 | Paket | REG_SZ | GUID | Die GUID des VSPackage-Dienstes, der die Kategorie |
@@ -371,7 +371,7 @@ Erstellen Sie einen speziellen Kategorieregistrierungseintragunter, unter `[HKLM
 
 Füllen Sie die Registrierung mit zwei Werten aus:
 
-| Name | type | Daten | Beschreibung |
+| Name | type | Daten | BESCHREIBUNG |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | Eine GUID, die erstellt wurde, um die Kategorie zu identifizieren |
 | Paket | REG_SZ | GUID | Die GUID des VSPackage-Dienstes, der die Kategorie |

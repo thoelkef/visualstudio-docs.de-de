@@ -1,46 +1,46 @@
 ---
-title: Registrieren von Verben für Dateierweiterungen | Microsoft-Dokumentation
+title: Registrieren von Verben für Dateinamenerweiterungen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86781f771ec5516e212ba3df8fdf945cd8d6d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334216"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701533"
 ---
-# <a name="register-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateierweiterungen
-Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzugte Maßnahme, die auftritt, wenn ein Benutzer eine Datei doppelklickt. Dies wird bevorzugt, dass die Aktion mit einem Verb, z. B. geöffnet ist, verknüpft ist, die die Aktion entspricht.
+# <a name="register-verbs-for-file-name-extensions"></a>Register verbs für Dateinamenerweiterungen
+Die Zuordnung einer Dateinamenerweiterung mit einer Anwendung weist im Allgemeinen eine bevorzugte Aktion auf, die auftritt, wenn ein Benutzer auf eine Datei doppelklickt. Diese bevorzugte Aktion ist mit einem Verb verknüpft, z. B. offen, das der Aktion entspricht.
 
- Sie können die Verben, die ein programmatischer Bezeichner (ProgID) zugeordnet sind, wenn eine Erweiterung mit dem Shell-Schlüssel im Pfad registrieren **HKEY_CLASSES_ROOT\{progid} \shell**. Weitere Informationen finden Sie unter [Dateitypen](/windows/desktop/shell/fa-file-types).
+ Sie können Verben, die einem programmgesteuerten Bezeichner (ProgID) zugeordnet sind, für eine Erweiterung registrieren, indem Sie den Shell-Schlüssel verwenden, der sich unter **HKEY_CLASSES_ROOT\{progid-shell**befindet. Weitere Informationen finden Sie unter [Dateitypen](/windows/desktop/shell/fa-file-types).
 
-## <a name="register-standard-verbs"></a>Registrieren Sie die standard-Verben
- Das Betriebssystem erkennt die folgenden standard-Verben:
+## <a name="register-standard-verbs"></a>Standardverben registrieren
+ Das Betriebssystem erkennt die folgenden Standardverben:
 
 - Öffnen
 
-- Bearbeiten
+- Edit (Bearbeiten)
 
-- Wiedergabe
+- Abspielen
 
-- Print
+- print
 
 - Vorschau
 
-  Wann immer möglich, registrieren Sie ein standard-Verb. Die Wahl üblicherweise ist das Open-Verb. Verwenden Sie das Edit-Verb, nur, wenn Sie ein klaren Unterschied zwischen dem Öffnen der Datei, und Bearbeiten der Datei vorhanden ist. Z. B. Öffnen einer *.htm* Datei zeigt es im Browser ein, während der Bearbeitung einer *.htm* -Datei startet einen HTML-Editor. Standard-Verben sind mit dem Gebietsschema des Betriebssystems lokalisiert.
+  Registrieren Sie nach Möglichkeit ein Standardverb. Die häufigste Wahl ist das Open Verb. Verwenden Sie das Verb Bearbeiten nur, wenn es einen klaren Unterschied zwischen dem Öffnen der Datei und dem Bearbeiten der Datei gibt. Wenn Sie z. B. eine *HTM-Datei* öffnen, wird sie im Browser angezeigt, während durch bearbeiten einer *HTM-Datei* ein HTML-Editor gestartet wird. Standardverben werden mit dem Betriebssystemgebietsschema lokalisiert.
 
 > [!NOTE]
-> Wenn Standardverben registrieren zu können, der Standardwert für den geöffneten Schlüssel nicht festgelegt werden. Standardmäßig ist der Wert enthält die Zeichenfolge für die Sie im Menü. Das Betriebssystem stellt diese Zeichenfolge für Standardverben bereit.
+> Legen Sie beim Registrieren von Standardverben nicht den Standardwert für den Open-Schlüssel fest. Der Standardwert enthält die Anzeigezeichenfolge im Menü. Das Betriebssystem stellt diese Zeichenfolge für Standardverben zur Verfügung.
 
- Projektdateien registriert werden soll, um eine neue Instanz der starten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Wenn ein Benutzer öffnet die Datei. Das folgende Beispiel veranschaulicht eine standard-Verb-Registrierung für ein [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Projekt.
+ Projektdateien sollten registriert werden, um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine neue Instanz zu starten, wenn ein Benutzer die Datei öffnet. Das folgende Beispiel veranschaulicht eine Standardverbregistrierung für ein [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Projekt.
 
 ```
 [HKEY_CLASSES_ROOT\.csproj]
@@ -71,7 +71,7 @@ Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzug
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- Zum Öffnen einer Datei in eine vorhandene Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], registrieren Sie einen Schlüssel DDEEXEC. Das folgende Beispiel veranschaulicht eine standard-Verb-Registrierung für ein [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *cs* Datei.
+ Um eine Datei in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]vorhandenen Instanz von zu öffnen, registrieren Sie einen DDEEXEC-Schlüssel. Das folgende Beispiel veranschaulicht eine Standardverbregistrierung für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs-Datei.*
 
 ```
 [HKEY_CLASSES_ROOT\.cs]
@@ -105,11 +105,11 @@ Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzug
 @="system"
 ```
 
-## <a name="set-the-default-verb"></a>Legen Sie das Standard-verb
- Das Standard-Verb ist die Aktion, die ausgeführt wird, wenn ein Benutzer eine Datei in Windows Explorer doppelklickt. Das Standardverb ist das Verb, angegeben als den Standardwert für die **HKEY_CLASSES_ROOT\\*progid*\Shell** Schlüssel. Wenn kein Wert angegeben ist, wird das Standardverb das erste Verb angegeben, der **HKEY_CLASSES_ROOT\\*progid*\Shell** Schlüsselliste.
+## <a name="set-the-default-verb"></a>Festlegen des Standardverbs
+ Das Standardverb ist die Aktion, die ausgeführt wird, wenn ein Benutzer im Windows Explorer auf eine Datei doppelklickt. Das Standardverb ist das Verb, das als Standardwert für den **HKEY_CLASSES_ROOT\\*progid-Shell-Taste*** angegeben ist. Wenn kein Wert angegeben ist, ist das Standardverb das erste Verb, das in der **HKEY_CLASSES_ROOT\\progid-Shell-Schlüsselliste*progid*** angegeben ist.
 
 > [!NOTE]
-> Wenn Sie das Standard-Verb für eine Erweiterung in einer Bereitstellung für die Seite-an-Seite ändern möchten, sollten Sie die Auswirkungen auf die Installation und Deinstallation. Während der Installation wird der ursprüngliche Standardwert überschrieben.
+> Wenn Sie das Standardverb für eine Erweiterung in einer Side-by-Side-Bereitstellung ändern möchten, sollten Sie die Auswirkungen auf die Installation und Entfernung berücksichtigen. Während der Installation wird der ursprüngliche Standardwert überschrieben.
 
-## <a name="see-also"></a>Siehe auch
-- [Seite-an-Seite dateizuordnungen verwalten](../extensibility/managing-side-by-side-file-associations.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Verwalten von seitenebenigen Dateizuordnungen](../extensibility/managing-side-by-side-file-associations.md)

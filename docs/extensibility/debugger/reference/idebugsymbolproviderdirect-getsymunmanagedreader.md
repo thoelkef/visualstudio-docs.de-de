@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft-Dokumentation
+title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetSymUnmanagedReader
 - IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2fb5a2fd5d8ba34112e01da07fc1f41177e8e9f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbac2e234cfc991f27e08dc33bdc895c22d501fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320410"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718947"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
-Ruft einen Symbolreader für nicht verwalteten Code ab.
+Ruft einen Symbolleser für nicht verwalteten Code ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,16 +44,16 @@ int GetSymUnmanagedReader (
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Der Bezeichner der Anwendungsdomäne.
+[in] Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
 [in] Eindeutiger Bezeichner des Moduls.
 
 `ppSymUnmanagedReader`\
-[out] Gibt ein Objekt, das den Symbolreader für nicht verwalteten Code darstellt.
+[out] Gibt ein Objekt zurück, das den Symbolleser für nicht verwalteten Code darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

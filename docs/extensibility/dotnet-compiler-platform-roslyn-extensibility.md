@@ -1,24 +1,24 @@
 ---
-title: .NET Compiler Platform (&quot;Roslyn&quot;) Erweiterbarkeit | Microsoft-Dokumentation
+title: .NET Compilerplattform&quot;(&quot;Roslyn ) Erweiterbarkeit | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b910d1eb8dcbbe6696c447a7c3a94db533dbbcb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62ceac6e2be8a0a84d82f6b86b685c7c8b20a182
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347902"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712079"
 ---
-# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET Compiler Platform (&quot;Roslyn&quot;) Erweiterbarkeit
-Der Kernaufgabe von der .NET Compiler Platform ("Roslyn") öffnen Sie die C#- und Visual Basic-Compiler und Tools ermöglichen, und Entwickler in den Compilern umfassende Informationen gemeinsam nutzen müssen Informationen zu Programmen. Tool zur Codeanalyse Verbessern der Codequalität, und code-Generatoren Hilfsmittel bei der Erstellung der Anwendung. Intelligentere Tools erhalten müssen sie Zugriff auf Weitere deep Code wissen, die nur von Compilern besitzen. Anstatt von nicht transparenten Übersetzer (Quellcode und Objektcode out) bieten die Roslyn-Compiler-APIs, die Sie für Aufgaben im Zusammenhang mit Code in Ihren Tools und Anwendungen verwenden können.
+# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET Compiler&quot;Platform (&quot;Roslyn ) Erweiterbarkeit
+Die Kernaufgabe der .NET Compiler Platform ("Roslyn") besteht darin, die Compiler von C- und Visual Basic zu öffnen und Tools und Entwicklern die gemeinsame Nutzung der umfangreichen Informationen zu ermöglichen, die Compiler über Programme haben. Codeanalysetools verbessern die Codequalität, und Codegeneratoren unterstützen die Anwendungserstellung. Wenn Tools intelligenter werden, benötigen sie Zugriff auf immer mehr des tiefen Codewissens, über das nur Compiler verfügen. Anstatt undurchsichtige Übersetzer zu sein (Quellcode in und Objektcode aus), bieten die Roslyn-Compiler APIs, die Sie für codebezogene Aufgaben in Ihren Tools und Anwendungen verwenden können.
 
- Das beste daran ist, dass die Roslyn-Compiler, ihre APIs, Beispiele und exemplarische Vorgehensweisen und die echten Tools baut auf den diese APIs sind alle vollständig quelloffen auf [github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn). Wechseln Sie zu der OSS-Website, um weitere Informationen und erste Schritte mit Roslyn. Sehen Sie Links auf die neueste Version anzuzeigen C# und Visual Basic-Features, mit denen Sie als ein Endbenutzer als auch Links können als ein Tool-Generator nutzt die Roslyn-APIs beginnen.
+ Das Beste daran ist, dass die Roslyn-Compiler, ihre APIs, Beispiele und exemplarischen Vorgehensweisen sowie die auf diesen APIs basierenden echten Tools alle vollständig Open Source bei [github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn)sind. Bitte gehen Sie auf die OSS-Website, um mehr zu erfahren und beginnen Sie mit Roslyn. Sie finden Links, um die neuesten Funktionen von C- und Visual Basic zu erhalten, die Sie als Endbenutzer verwenden können, sowie Links, um als Werkzeugbauer zu beginnen, der die Roslyn-APIs nutzt.
 
-## <a name="see-also"></a>Siehe auch
-- [Erste Schritte mit Roslyn-Analysetools](../extensibility/getting-started-with-roslyn-analyzers.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Erste Schritte mit Roslyn-Analysatoren](../extensibility/getting-started-with-roslyn-analyzers.md)

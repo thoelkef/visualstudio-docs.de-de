@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Microsoft-Dokumentation
+title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - Bind method
 - IDebugPendingBreakpoint2::Bind method
 ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba30628c426bd7031d750838491f9bcc70c14a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 83d48e8df847620716b0f581be65ded48e2e5a13
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350736"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725987"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-Wird dieser ausstehenden Haltepunkt an einem oder mehreren Code-Speicherorten gebunden.
+Bindet diesen ausstehenden Haltepunkt an einen oder mehrere Codespeicherorte.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,14 +39,14 @@ int Bind();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
 
-## <a name="remarks"></a>Hinweise
- Wenn diese Methode aufgerufen wird, sollten eine Debug-Engine (DE) versuchen, diese ausstehenden Haltepunkt auf alle Speicherorte von Code zu binden, die mit übereinstimmen.
+## <a name="remarks"></a>Bemerkungen
+ Wenn diese Methode aufgerufen wird, sollte ein Debugmodul (DE) versuchen, diesen ausstehenden Haltepunkt an alle übereinstimmenden Codespeicherorte zu binden.
 
- Nach der Rückgabe dieser Methode benötigt der Aufrufer Ereignisse, die angibt, dass der ausstehenden Haltepunkt gebunden wurde oder fehlerhaft. bevor die Annahme getroffen ist, die Aufrufe zu warten, bis die [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) oder [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)-Methoden aller Haltepunkte gebunden oder Fehler, bzw. Listet.
+ Nachdem diese Methode zurückgegeben wurde, muss der Aufrufer auf Ereignisse warten, die darauf hinweisen, dass der ausstehende Haltepunkt gebunden ist oder fehlerhaft ist, bevor angenommen wird, dass Aufrufe der [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) oder [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods alle gebundenen bzw. Fehlerhaltepunkte aufzählen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
 - [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)

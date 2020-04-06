@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetProcessId | Microsoft-Dokumentation
+title: IDebugProcess2::GetProcessId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetProcessId
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1759563f9f379a878f987662df2cd380ec0532c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 12e575979e5bd1527dfa0d8e15b290d6b78e36ff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309510"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723907"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 Ruft die GUID für diesen Prozess ab.
@@ -44,10 +44,10 @@ int GetProcessId(
 [out] Gibt die GUID für diesen Prozess zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die GUID (GLOBALLY Unique IDentifier) identifiziert, diesen Prozess für alle anderen Prozesse im System ausgeführt wird.
+## <a name="remarks"></a>Bemerkungen
+ Der Globally Unique IDentifier (GUID) identifiziert diesen Prozess aus allen anderen Prozessen, die im System ausgeführt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

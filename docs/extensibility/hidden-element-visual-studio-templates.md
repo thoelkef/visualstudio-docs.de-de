@@ -1,5 +1,5 @@
 ---
-title: Ausgeblendet-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Ausgeblendetes Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341041"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711111"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden-Element (Visual Studio-Vorlagen)
+# <a name="hidden-element-visual-studio-templates"></a>Ausgeblendetes Element (Visual Studio-Vorlagen)
 
-Gibt an, ob die Vorlage wird entweder in das neue Projekt angezeigt oder **neues Element hinzufügen** Dialogfelder.
+Gibt an, ob die Vorlage entweder im neuen Projekt oder in den Dialogfeldern **Neues Element hinzufügen** angezeigt wird.
 
 ```xml
 <VSTemplate>
@@ -43,33 +43,33 @@ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeor
 
 ### <a name="attributes"></a>Attribute
 
-Keine
+Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine
+Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich.
 
-Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob die Vorlage angezeigt wird, in der **neues Projekt** oder **neues Element hinzufügen** Dialogfelder.
+Der Text muss `true` `false`entweder oder sein, was angibt, ob die Vorlage in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 `Hidden` ist ein optionales Element.
 
-Wenn angegeben, keine anderen untergeordneten Elementen der `TemplateData` Element sind erforderlich.
+Falls angegeben, sind keine `TemplateData` anderen untergeordneten Elemente des Elements erforderlich.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt die Metadaten für eine C# Vorlage.
+Im folgenden Beispiel werden die Metadaten für eine C-Vorlage veranschaulicht.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,7 +96,7 @@ Das folgende Beispiel zeigt die Metadaten für eine C# Vorlage.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Vorlagenschemaverweis](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

@@ -1,42 +1,42 @@
 ---
-title: Schnittstellen (Visual Studio-Debugging) | Microsoft-Dokumentation
+title: Schnittstellen (Visual Studio Debugging) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0359ffc4ce634a6bf22759265c92ea7c299cc30
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350227"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715078"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Schnittstellen (Visual Studio-Debugging)
-Methoden sind unter jeder Schnittstelle in der Tabelle des Inhalts, und klicken Sie auf der Seite der Benutzeroberfläche in Vtable-Reihenfolge alphabetisch aufgeführt.
+Methoden werden unter jeder Schnittstelle im Inhaltsverzeichnis und auf der Schnittstellenseite in Vtable-Reihenfolge alphabetisch aufgelistet.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 
- Beschreibt die Schnittstellen, die in der Debug-Engine verwendet.
+ Beschreibt die im Debugmodul verwendeten Schnittstellen.
 
-- [Schnittstellen für die Ausdrucksauswertung](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 
- Beschreibt die Schnittstellen, die für das Auswerten von Ausdrücken in einer Aufrufliste im Unterbrechungsmodus.
+ Beschreibt die Schnittstellen, die Ausdrücke in einer Aufrufliste während des Unterbrechungsmodus auswerten.
 
-- [Symbolanbieterschnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 
- Beschreibt die Schnittstellen, die ein symbolanbieter implementiert werden, um Typen zu IDs zu verknüpfen.
+ Beschreibt die Schnittstellen, die ein Symbolanbieter implementiert, um Typen Bezeichnern zuzuordnen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
- Enthält die Dokumentation für die Schnittstellen, Enumeratoren und Strukturen von der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging-SDK.
+ Enthält Dokumentation für die Schnittstellen, Enumeratoren [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] und Strukturen des Debugging SDK.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetServer | Microsoft-Dokumentation
+title: IDebugDefaultPort2::GetServer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetServer
 ms.assetid: cacb4b74-0f39-471c-af38-54b73f5b2868
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c959c84335023a3d187808d754b44b4a0d2b950
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3dbe6d813b85865b0fdbc20296473684203a3f1e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351740"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732382"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
-Diese Methode ruft eine Schnittstelle mit dem Server, dem auf diesen Port ist.
+Diese Methode ruft eine Schnittstelle zum Server ab, auf dem sich dieser Port befindet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetServer(
 
 ## <a name="parameters"></a>Parameter
 `ppServer`\
-[out] Gibt ein Objekt, das die [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) Schnittstelle.
+[out] Gibt ein Objekt zurück, das die [IDebugCoreServer3-Schnittstelle](../../../extensibility/debugger/reference/idebugcoreserver3.md) implementiert.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) wird von Visual Studio implementiert und steht für den Server, der der Port auf befindet.
+## <a name="remarks"></a>Bemerkungen
+ Der [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) wird von Visual Studio implementiert und stellt den Server dar, auf dem sich der Port befindet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

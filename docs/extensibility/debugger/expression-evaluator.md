@@ -1,5 +1,5 @@
 ---
-title: Ausdrucksauswertung | Microsoft-Dokumentation
+title: Ausdrucksauswertung | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,38 +7,38 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f990225cbff539281122d21d4773f6611f694f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353767"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738687"
 ---
 # <a name="expression-evaluator"></a>Ausdrucksauswertung
-Ausdrucksauswertungen (EE) überprüfen die Syntax einer Sprache zum Analysieren und Auswerten von Variablen und Ausdrücke zur Laufzeit, sodass sie vom Benutzer angezeigt werden, wenn die IDE im Unterbrechungsmodus befindet.
+Ausdrucksauswertungen (EE) untersuchen die Syntax einer Sprache, um Variablen und Ausdrücke zur Laufzeit zu analysieren und auszuwerten, sodass sie vom Benutzer angezeigt werden können, wenn sich die IDE im Unterbrechungsmodus befindet.
 
-## <a name="use-expression-evaluators"></a>Ausdrucksauswertungen verwenden
- Ausdrücke werden erstellt, mit der [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) -Methode wie folgt:
+## <a name="use-expression-evaluators"></a>Verwenden von Ausdrucksauswertungen
+ Ausdrücke werden wie folgt mit der [ParseText-Methode](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) erstellt:
 
-1. Die Debug-Engine (DE) implementiert die [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstelle.
+1. Das Debugmodul (DE) implementiert die [IDebugExpressionContext2-Schnittstelle.](../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 
-2. Ruft ab, das debugpaket ein `IDebugExpressionContext2` -Objekt aus einer [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) -Schnittstelle und ruft dann die `IDebugStackFrame2::ParseText` Methode darauf, um die erste ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt.
+2. Das Debugpaket `IDebugExpressionContext2` ruft ein Objekt von einer [IDebugStackFrame2-Schnittstelle](../../extensibility/debugger/reference/idebugstackframe2.md) ab und ruft dann die `IDebugStackFrame2::ParseText` Methode auf, um ein [IDebugExpression2-Objekt](../../extensibility/debugger/reference/idebugexpression2.md) abzubekommen.
 
-3. Ruft die Debug-Paket der [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) Methode oder der [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) Methode, um den Wert des Ausdrucks zu erhalten. `IDebugExpression2::EvaluateAsync` wird vom Befehl/Direktfenster aufgerufen. Alle anderen UI-Komponenten aufrufen `IDebugExpression2::EvaluateSync`.
+3. Das Debugpaket ruft die [EvaluateSync-Methode](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder die [EvaluateAsync-Methode](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) auf, um den Wert des Ausdrucks abzubekommen. `IDebugExpression2::EvaluateAsync`wird aus dem Fenster Befehl/Sofort aufgerufen. Alle anderen UI-Komponenten rufen auf `IDebugExpression2::EvaluateSync`.
 
-4. Das Ergebnis der Auswertung des Ausdrucks ist ein [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Objekt, das die Namen, Typ und Wert das Ergebnis der Auswertung des Ausdrucks enthält.
+4. Das Ergebnis der Ausdrucksauswertung ist ein [IDebugProperty2-Objekt,](../../extensibility/debugger/reference/idebugproperty2.md) das den Namen, den Typ und den Wert des Ergebnisses der Ausdrucksauswertung enthält.
 
-   Beim Auswerten des Ausdrucks erfordert die EE Informationen aus der Symbol-Anbieter-Komponente. Der symbolanbieter stellt die symbolische Informationen zum Identifizieren und Grundlegendes zu den analysierten Ausdruck.
+   Bei der Ausdrucksauswertung benötigt der EE Informationen von der Symbolanbieterkomponente. Der Symbolanbieter stellt die symbolischen Informationen zur Verfügung, die zum Identifizieren und Verstehen des analysierten Ausdrucks verwendet werden.
 
-   Wenn asynchrone ausdrucksauswertung abgeschlossen ist, wird ein asynchrones Ereignis per die DE über die sitzungsbasierter Debug-Manager (SDM) der IDE benachrichtigt, dass die Auswertung des Ausdrucks abgeschlossen ist. Und das Ergebnis der Auswertung wird dann zurückgegeben, durch den Aufruf der `IDebugExpression2::EvaluateSync` Methode.
+   Wenn die asynchrone Ausdrucksauswertung abgeschlossen ist, wird ein asynchrones Ereignis von der DE über den Sitzungsdebug-Manager (SDM) gesendet, um die IDE zu benachrichtigen, dass die Ausdrucksauswertung abgeschlossen ist. Und das Ergebnis der Auswertung wird dann vom `IDebugExpression2::EvaluateSync` Aufruf an die Methode zurückgegeben.
 
 ## <a name="implementation-notes"></a>Hinweise zur Implementierung
- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debug-Engines für die Kommunikation mit der Auswertung eines Ausdrucks mithilfe der Common Language Runtime (CLR)-Schnittstellen zu erwarten. Daher eine ausdrucksauswertung, die funktioniert mit den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debug-Engines müssen die CLR unterstützt (eine vollständige Liste der alle CLR-Debugschnittstellen befinden sich debugref.doc, gehört der der [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugmodule erwarten, dass sie mit dem Ausdrucksevaluator über CLR-Schnittstellen (Common Language Runtime) sprechen. Daher muss ein Ausdrucksauswertungsgeber, der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit den Debugmodulen arbeitet, die CLR unterstützen (eine vollständige Liste aller CLR-Debugging-Schnittstellen finden Sie in debugref.doc, das Teil der [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]ist).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)

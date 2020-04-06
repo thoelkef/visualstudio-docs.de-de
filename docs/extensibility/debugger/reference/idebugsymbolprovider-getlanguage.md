@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft-Dokumentation
+title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dfa11a1df6460c08431d7b23fabe5d94674baad2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347601"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719238"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Diese Methode ruft die Sprache, die zum Kompilieren des Codes an der debugadresse verwendet wurde.
+Diese Methode ruft die Sprache ab, die zum Kompilieren des Codes an der Debugadresse verwendet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,20 +45,20 @@ int GetLanguage(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Durch dargestellt wird ein Adressobjekt ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
+[in] Ein Adressobjekt, das durch eine [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) dargestellt wird.
 
 `pguidLanguage`\
-[out] Gibt eine `GUID` , der die Sprache angibt.
+[out] Gibt `GUID` eine zurück, die die Sprache angibt.
 
 `pguidLanguageVendor`\
-[out] Gibt eine `GUID` , die den Compilerhersteller angibt.
+[out] Gibt `GUID` eine zurück, die den Sprachanbieter angibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Debug-Engine ruft diese Methode zum Abrufen der Informationen, die Auswahl die richtigen ausdrucksauswertung erforderlich.
+## <a name="remarks"></a>Bemerkungen
+ Das Debugmodul ruft diese Methode auf, um die Informationen abzuerhalten, die es benötigt, um den richtigen Ausdrucksevaluator auszuwählen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

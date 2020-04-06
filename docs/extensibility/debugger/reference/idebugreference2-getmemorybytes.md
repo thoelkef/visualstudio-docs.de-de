@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes | Microsoft-Dokumentation
+title: IDebugReference2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryBytes
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 100b04f8cd81ecbc470c85e76f08b45ed46d8de9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329881"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720597"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-Ruft ab, die Arbeitsspeicher-Bytes, die physisch auf den Wert eines Verweises enthalten. Für zukünftige Verwendung reserviert.
+Ruft die Speicherbytes ab, die physisch den Wert eines Verweises enthalten. Für die zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,11 +41,11 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>Parameter
 `ppMemoryBytes`\
-[out] Gibt eine [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt, das verwendet werden kann, um den Arbeitsspeicher abzurufen, die den Wert des Verweises enthält.
+[out] Gibt ein [IDebugMemoryBytes2-Objekt](../../../extensibility/debugger/reference/idebugmemorybytes2.md) zurück, das zum Abrufen des Speichers verwendet werden kann, der den Wert des Verweises enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

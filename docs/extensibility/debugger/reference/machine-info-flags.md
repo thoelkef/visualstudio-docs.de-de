@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS | Microsoft-Dokumentation
+title: MACHINE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FLAGS enumeration
 ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77d2c9af733f192526970d08d0ae3d24d2a5bf3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339234"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714519"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
-Dient zum Beschreiben eines Computers.
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
+Wird verwendet, um eine Maschine zu beschreiben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,16 +44,16 @@ public enum enum_MACHINE_INFO_FLAGS { 
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
  Gibt an, dass Terminaldienste verfügbar sind.
 
-## <a name="remarks"></a>Hinweise
- Verwendet als die `Flags` Mitglied der [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) Struktur.
+## <a name="remarks"></a>Bemerkungen
+ Wird als `Flags` Element der [MACHINE_INFO-Struktur](../../../extensibility/debugger/reference/machine-info.md) verwendet.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)

@@ -1,5 +1,5 @@
 ---
-title: SccGetProjPath-Funktion | Microsoft-Dokumentation
+title: SccGetProjPath-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b31a17e89003967aef6a423dda87572b4a07c387
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353678"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700705"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath-Funktion
-Diese Funktion fordert den Benutzer einen Projektpfad, d. h. eine Zeichenfolge, die nur für das Quellcodeverwaltungs-Plug-in von Bedeutung ist. Wird aufgerufen, wenn der Benutzer ist:
+Diese Funktion fordert den Benutzer zur Eingabe eines Projektpfads auf, bei dem es sich um eine Zeichenfolge handelt, die nur für das Quellcodeverwaltungs-Plug-In sinnvoll ist. Es wird aufgerufen, wenn der Benutzer:
 
 - Erstellen eines neuen Projekts
 
 - Hinzufügen eines vorhandenen Projekts zur Versionskontrolle
 
-- Es wird versucht, eine vorhandene Versionskontrollprojekt suchen
+- Versuch, ein vorhandenes Versionskontrollprojekt zu finden
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,73 +46,73 @@ SCCRTN SccGetProjPath (
 ### <a name="parameters"></a>Parameter
  pvContext
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+[in] Die Quellcodeverwaltungs-Plug-In-Kontextstruktur.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
 
  lpUser
 
-[in, out] Den Benutzernamen (nicht zu überschreiten SCC_USER_SIZE, einschließlich des NULL-Abschlusszeichens)
+[in, out] Der Benutzername (nicht mehr als SCC_USER_SIZE, einschließlich des NULL-Terminators)
 
  lpProjName
 
-[in, out] Der Name des IDE-Projekt, Projektarbeitsbereich oder Makefile (nicht zu überschreiten SCC_PRJPATH_SIZE, einschließlich des NULL-Abschlusszeichens).
+[in, out] Der Name des IDE-Projekts, des Projektarbeitsbereichs oder der Makefile (nicht mehr als SCC_PRJPATH_SIZE, einschließlich des NULL-Terminators).
 
  lpLocalPath
 
-[in, out] Der Pfad des Projekts arbeiten. Wenn `bAllowChangePath` ist `TRUE`, das Quellcodeverwaltungs-Plug-in kann diese Zeichenfolge (nicht zu, überschreitet _MAX_PATH, einschließlich des Null-Abschlusszeichens) ändern.
+[in, out] Der Arbeitsweg des Projekts. Wenn `bAllowChangePath` `TRUE`dies der Fall ist, kann das Quellcodeverwaltungs-Plug-In diese Zeichenfolge ändern (nicht über _MAX_PATH, einschließlich des NULL-Terminators).
 
  lpAuxProjPath
 
-[in, out] Ein Puffer für den zurückgegebenen Projektpfad (nicht zu überschreiten SCC_PRJPATH_SIZE, einschließlich des NULL-Abschlusszeichens).
+[in, out] Ein Puffer für den zurückgegebenen Projektpfad (nicht mehr als SCC_PRJPATH_SIZE, einschließlich des NULL-Terminators).
 
  bAllowChangePath
 
-[in] Ist dies `TRUE`, das Quellcodeverwaltungs-Plug-In können Sie zur Eingabe auffordern und Ändern der `lpLocalPath` Zeichenfolge.
+[in] Wenn dies der Grundist ist, `TRUE`kann das `lpLocalPath` Quellcodeverwaltungs-Plug-In die Zeichenfolge auffordern und ändern.
 
- pbNew
+ pbNeu
 
-[in, out] Eingehenden Wert gibt an, ob ein neues Projekt erstellen. Zurückgegebene Wert gibt Erfolg zum Erstellen eines Projekts:
+[in, out] Der eintreffende Wert gibt an, ob ein neues Projekt erstellt werden soll. Der zurückgegebene Wert gibt den Erfolg beim Erstellen eines Projekts an:
 
 |Eingehend|Interpretation|
 |--------------|--------------------|
-|true|Der Benutzer darf es sich um ein neues Projekt erstellen.|
-|false|Der Benutzer kann ein neues Projekt nicht erstellt werden.|
+|TRUE|Der Benutzer kann ein neues Projekt erstellen.|
+|FALSE|Der Benutzer erstellt möglicherweise kein neues Projekt.|
 
 |Ausgehend|Interpretation|
 |--------------|--------------------|
-|true|Ein neues Projekt erstellt wurde.|
-|false|Es wurde ein vorhandenes Projekt ausgewählt.|
+|TRUE|Ein neues Projekt wurde erstellt.|
+|FALSE|Ein vorhandenes Projekt wurde ausgewählt.|
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Das Projekt wurde erfolgreich erstellt oder abgerufen.|
 |SCC_I_OPERATIONCANCELED|Der Vorgang wurde abgebrochen.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen.|
-|SCC_E_CONNECTIONFAILURE|Es wurde ein Problem, das Quellcodeverwaltungssystem eine Verbindung herstellen möchten.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quellcodeverwaltungssystem ist ein Problem auftritt, wahrscheinlich aufgrund von Netzwerk- oder Konfliktproblemen.|
+|SCC_E_CONNECTIONFAILURE|Beim Herstellen einer Verbindung mit dem Quellcodeverwaltungssystem ist ein Problem aufgetreten.|
 |SCC_E_NONSPECIFICERROR|Es ist ein unbekannter Fehler aufgetreten.|
 
-## <a name="remarks"></a>Hinweise
- Der Zweck dieser Funktion ist für die IDE, die Parameter abzurufen `lpProjName` und `lpAuxProjPath`. Nachdem das Quellcodeverwaltungs-Plug-Ins die Benutzer diese Informationen aufgefordert wird, übergibt sie diese beiden Zeichenfolgen zurück zur IDE. Diese Zeichenfolgen in der Projektmappendatei beibehalten und übergibt sie an die IDE die [SccOpenProject](../extensibility/sccopenproject-function.md) jedes Mal, wenn der Benutzer dieses Projekt öffnet. Diese Zeichenfolgen aktivieren Sie das plug-in zum Nachverfolgen von Informationen, die mit einem Projekt verknüpft sind.
+## <a name="remarks"></a>Bemerkungen
+ Der Zweck dieser Funktion besteht darin, `lpProjName` dass `lpAuxProjPath`die IDE die Parameter und . Nachdem das Quellcodeverwaltungs-Plug-In den Benutzer zur Eingabe dieser Informationen aufgefordert hat, werden diese beiden Zeichenfolgen an die IDE zurückübergibt. Die IDE behält diese Zeichenfolgen in ihrer Projektmappendatei bei und übergibt sie an das [SccOpenProject,](../extensibility/sccopenproject-function.md) wenn der Benutzer dieses Projekt öffnet. Diese Zeichenfolgen ermöglichen es dem Plug-In, Informationen zu verfolgen, die einem Projekt zugeordnet sind.
 
- Wenn die Funktion zuerst aufgerufen wird, `lpAuxProjPath` auf eine leere Zeichenfolge festgelegt ist. `lProjName` kann auch leer sein, oder sie enthält den IDE-Projektnamen, die das Quellcodeverwaltungs-Plug-in verwenden oder ignorieren können. Wenn die Funktion erfolgreich zurückgegeben wird, gibt das plug-in die beiden entsprechenden Zeichenfolgen. Die IDE keine Annahmen über diese Zeichenfolgen, werden nicht dazu verwendet werden und lässt sich nicht auf den Benutzer, sie zu ändern. Wenn der Benutzer die Einstellungen zu ändern möchte, ruft die IDE `SccGetProjPath` Übergabe in den gleichen Werten in diesem Fall wurden empfangen der letzten Ausführung. Dadurch werden die-Plug-in vollständige Kontrolle über diese zwei Zeichenfolgen.
+ Wenn die Funktion zum `lpAuxProjPath` ersten Mal aufgerufen wird, wird auf eine leere Zeichenfolge festgelegt. `lProjName`kann auch leer sein, oder es kann den IDE-Projektnamen enthalten, den das Quellcodeverwaltungs-Plug-In verwenden oder ignorieren kann. Wenn die Funktion erfolgreich zurückgegeben wird, gibt das Plug-In die beiden entsprechenden Zeichenfolgen zurück. Die IDE macht keine Annahmen über diese Zeichenfolgen, verwendet sie nicht und erlaubt dem Benutzer nicht, sie zu ändern. Wenn der Benutzer die Einstellungen ändern möchte, ruft die IDE erneut auf `SccGetProjPath` und gibt dieselben Werte ein, die sie beim vorherigen Mal erhalten hatte. Dadurch erhält das Plug-In die vollständige Kontrolle über diese beiden Zeichenfolgen.
 
- Für `lpUser`, die IDE möglicherweise übergeben Sie einen Benutzernamen ein, oder es möglicherweise einfach übergeben eines Zeigers auf eine leere Zeichenfolge. Ist ein Benutzername, sollte das Quellcodeverwaltungs-Plug-in als Standard verwenden. Allerdings, wenn kein Name übergeben wurde, oder wenn Fehler bei der Anmeldung mit dem angegebenen Namen, den-Plug-in sollte den Benutzer auffordern für eine Anmeldung und übergeben Sie der Namen wieder `lpUser` gültigen Anmeldeinformationen empfängt. Da das plug-in dieser Zeichenfolge ändern kann, die IDE wird immer ein Puffer der Größe (`SCC_USER_LEN`+ 1).
+ Für `lpUser`kann die IDE einen Benutzernamen übergeben oder einfach in einem Zeiger an eine leere Zeichenfolge übergeben werden. Wenn ein Benutzername vorhanden ist, sollte das Quellcodeverwaltungs-Plug-In ihn als Standard verwenden. Wenn jedoch kein Name übergeben wurde oder die Anmeldung mit dem angegebenen Namen fehlgeschlagen ist, sollte das `lpUser` Plug-In den Benutzer zur Anmeldung auffordern und den Namen zurückgeben, wenn er eine gültige Anmeldung erhält. Da das Plug-In diese Zeichenfolge ändern kann, weist die`SCC_USER_LEN`IDE immer einen Puffer der Größe ( +1) zu.
 
 > [!NOTE]
-> Die erste Aktion, die die IDE führt möglicherweise ein Aufruf der `SccOpenProject` Funktion oder die `SccGetProjPath` Funktion. Daher haben beide eine identische `lpUser` -Parameter, der das Quellcodeverwaltungs-Plug-in, um die Benutzer entweder zum Zeitpunkt ermöglicht. Auch wenn die Rückgabe der Funktion ein Fehler weist darauf hin, müssen die-Plug-in dieser Zeichenfolge durch einen gültigen Anmeldenamen ausfüllen.
+> Die erste Aktion, die die IDE ausführt, kann ein Aufruf der `SccOpenProject` Funktion oder der `SccGetProjPath` Funktion sein. Daher haben beide einen `lpUser` identischen Parameter, der es dem Quellcodeverwaltungs-Plug-In ermöglicht, den Benutzer zu einem der beiden Zeiten anzumelden. Auch wenn die Rückgabe von der Funktion auf einen Fehler hinweist, muss das Plug-In diese Zeichenfolge mit einem gültigen Anmeldenamen füllen.
 
- `lpLocalPath` ist das Verzeichnis, in dem sich der Benutzer auf das Projekt zeigt. Es kann keine leere Zeichenfolge sein. Wenn kein Verzeichnis, die aktuell definiert (wie im Falle eines Benutzers, bei dem Versuch, ein Projekt aus dem Quellcodeverwaltungssystem herunterladen) vorhanden ist und `bAllowChangePath` ist `TRUE`, das Quellcodeverwaltungs-Plug-in kann Benutzer zur Eingabe auffordern oder eine andere Methode zum Platzieren der Zeichenfolge in Besitz `lpLocalPath`. Wenn `bAllowChangePath` ist `FALSE`, das plug-in sollte nicht ändern Sie die Zeichenfolge, da der Benutzer bereits im angegebenen Verzeichnis arbeitet.
+ `lpLocalPath`ist das Verzeichnis, in dem der Benutzer das Projekt aufführt. Möglicherweise handelt es sich um eine leere Zeichenfolge. Wenn derzeit kein Verzeichnis definiert ist (wie im Fall eines Benutzers, der versucht, `bAllowChangePath` `TRUE`ein Projekt aus dem Quellcodeverwaltungssystem herunterzuladen) und wenn dies der `lpLocalPath`Fall ist, kann das Quellcodeverwaltungs-Plug-In den Benutzer zur Eingabe auffordern oder eine andere Methode verwenden, um eine eigene Zeichenfolge in zu platzieren. Wenn `bAllowChangePath` `FALSE`dies der Fall ist, sollte das Plug-In die Zeichenfolge nicht ändern, da der Benutzer bereits im angegebenen Verzeichnis arbeitet.
 
- Wenn der Benutzer ein neues Projekt unter quellcodeverwaltung gestellt werden erstellt, das Quellcodeverwaltungs-Plug-in möglicherweise nicht tatsächlich erstellt es in das Quellcodeverwaltungssystem zum Zeitpunkt `SccGetProjPath` aufgerufen wird. Stattdessen werden wieder die Zeichenfolge zusammen mit einem Wert ungleich NULL für `pbNew`, gibt an, dass das Projekt in das Quellcodeverwaltungssystem erstellt wird.
+ Wenn der Benutzer ein neues Projekt erstellt, das unter Quellcodeverwaltung gestellt werden soll, wird es `SccGetProjPath` das Quellcodeverwaltungs-Plug-In möglicherweise nicht tatsächlich im Quellcodeverwaltungssystem erstellt. Stattdessen wird die Zeichenfolge zusammen mit einem `pbNew`Wert ungleich Null für zurückübergibt, was darauf hinweist, dass das Projekt im Quellcodeverwaltungssystem erstellt wird.
 
- Beispielsweise wenn ein Benutzer in der **neues Projekt** -Assistenten in Visual Studio fügt seinem eigenen Projekt zur quellcodeverwaltung, ruft diese Funktion von Visual Studio und das plug-in bestimmt, ob es Ordnung ist, erstellen ein neues Projekt in das Quellcodeverwaltungssystem zu enthalten Sie die Visual Studio-Projekt. Wenn der Benutzer klickt **Abbrechen** vor dem Fertigstellen des Assistenten für das Projekt wird nicht erstellt. Wenn der Benutzer klickt **OK**, ruft Visual Studio `SccOpenProject`, und übergeben Sie `SCC_OPT_CREATEIFNEW`, und das Projekt unter quellcodeverwaltung zu diesem Zeitpunkt erstellt wird.
+ Wenn z. B. ein Benutzer im Assistenten für **neues Projekt** in Visual Studio sein Projekt zur Quellcodeverwaltung hinzufügt, ruft Visual Studio diese Funktion auf, und das Plug-In bestimmt, ob es in Ordnung ist, ein neues Projekt im Quellcodeverwaltungssystem zu erstellen, das das Visual Studio-Projekt enthält. Wenn der Benutzer vor Abschluss des Assistenten auf **Abbrechen** klickt, wird das Projekt nie erstellt. Wenn der Benutzer auf **OK** `SccOpenProject`klickt, `SCC_OPT_CREATEIFNEW`ruft Visual Studio , gibt ein , und das quellgesteuerte Projekt wird zu diesem Zeitpunkt erstellt.
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

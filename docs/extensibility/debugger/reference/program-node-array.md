@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY | Microsoft-Dokumentation
+title: PROGRAM_NODE_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROGRAM_NODE_ARRAY structure
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4b2cbda4bce24c08297734e9b50a004ea9a67dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce84fec7a0d9223575828da105e46f43cc6cab09
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309256"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713802"
 ---
-# <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
-Enthält ein Array von Objekten, die beschreiben, Programme von Interesse sind.
+# <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
+Enthält ein Array von Objekten, die Programme von Interesse beschreiben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,23 +43,23 @@ public struct tagPROGRAM_NODE_ARRAY {
 
 ## <a name="members"></a>Member
  `dwCount`\
- Anzahl der Objekte in der `Members` Array.
+ Anzahl der Objekte `Members` im Array.
 
  `Members`\
- Ein Array von [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekten, die die angeforderten Programme beschreiben.
+ Ein Array von [IDebugProgramNode2-Objekten,](../../../extensibility/debugger/reference/idebugprogramnode2.md) die die angeforderten Programme beschreiben.
 
-## <a name="remarks"></a>Hinweise
- Diese Struktur ist Teil der [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur, die wiederum von einem Aufruf von, in gefüllt ist der [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Diese Struktur ist Teil der [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur, die wiederum durch einen Aufruf der [GetProviderProcessData-Methode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) ausgefüllt wird.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints | Microsoft-Dokumentation
+title: IDebugPendingBreakpoint2::EnumErrorBreakpoints | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints method
 - EnumErrorBreakpoints method
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba93cf1e254f428261c2eaf2e144ad5dff4780ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11caf8c2af92a14e001d7403f2457f0fc66ff3ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333734"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725860"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
-Ruft eine Liste aller Fehler Haltepunkte, die von diesem ausstehender Haltepunkt geführt haben.
+Ruft eine Liste aller Fehlerhaltepunkte ab, die aus diesem ausstehenden Haltepunkt resultierten.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,16 +44,16 @@ int EnumErrorBreakpoints( 
 
 ## <a name="parameters"></a>Parameter
 `bpErrorType`\
-[in] Eine Kombination von Werten aus der [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) -Enumeration, die wählt den Typ von Fehlern, die aufgelistet werden.
+[in] Eine Kombination von [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) Werten aus der BP_ERROR_TYPE-Enumeration, die den Typ der aufzuzählenden Fehler auswählt.
 
 `ppEnum`\
-[out] Gibt eine [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) -Objekt, das eine Liste der enthält [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekte.
+[out] Gibt ein [IEnumDebugErrorBreakpoints2-Objekt](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) zurück, das eine Liste von [IDebugErrorBreakpoint2-Objekten](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.
+ Das folgende Beispiel zeigt, wie diese `CPendingBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugPendingBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) verfügbar macht.
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
@@ -127,7 +127,7 @@ HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

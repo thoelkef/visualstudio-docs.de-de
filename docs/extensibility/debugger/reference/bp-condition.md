@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Microsoft-Dokumentation
+title: BP_CONDITION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337426"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738104"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
+# <a name="bp_condition"></a>BP_CONDITION
 Beschreibt die Bedingungen, unter denen ein Haltepunkt ausgelöst wird.
 
 ## <a name="syntax"></a>Syntax
@@ -49,34 +49,34 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>Member
 `pThread`\
-Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den aktiven Thread für die Anwendung darstellt, die den Haltepunkt enthält.
+Das [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den aktiven Thread für die Anwendung darstellt, die den Haltepunkt enthält.
 
 `styleCondition`\
-Ein Wert aus der [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) Enumeration, der dieser Bedingung für Haltepunkt beschreibt.
+Ein Wert [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) aus der BP_COND_STYLE-Enumeration, der den Stil dieser Haltepunktbedingung beschreibt.
 
 `bstrContext`\
 Die Position des Haltepunkts.
 
 `bstrCondition`\
-Die Bedingung der Auslösung des Haltepunkts.
+Der Brennzustand des Haltepunkts.
 
 `nRadix`\
-Die Basis zum Auswerten von numerische Informationen verwendet werden.
+Radix zur Auswertung numerischer Informationen.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Mitglied der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.
 
-Diese Struktur wird ebenfalls übergeben, als Parameter an die [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) und [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) Methoden.
+Diese Struktur wird auch als Parameter an die [SetCondition-](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) und [SetCondition-Methoden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) übergeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
 - [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)

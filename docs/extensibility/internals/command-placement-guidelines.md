@@ -1,5 +1,5 @@
 ---
-title: Richtlinien zur Befehlsplatzierung Befehl | Microsoft-Dokumentation
+title: Richtlinien für die Befehlsplatzierung | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,54 +7,54 @@ helpviewer_keywords:
 - small command sets
 - command sets
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4cc3dfa8aaeba01709ae74ca9a1d9d54f3c1743
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342116"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709569"
 ---
-# <a name="command-placement-guidelines"></a>Richtlinien zur befehlsplatzierung
-Bewährte Methoden für die Positionierung von Befehlen in der integrierten Entwicklungsumgebung (IDE) von Visual Studio variieren je nach Größe für den Befehlssatz. Befehle definiert sind, und entsprechend den Informationen in positioniert *VSCT* Dateien.
+# <a name="command-placement-guidelines"></a>Richtlinien für die Befehlsplatzierung
+Bewährte Methoden für das Positionieren von Befehlen in der integrierten Visual Studio-Entwicklungsumgebung (IDE) hängen von der Größe des Befehlssatzes ab. Befehle werden entsprechend den Informationen in *.vsct-Dateien* definiert und positioniert.
 
 ## <a name="best-practices-for-all-command-sets"></a>Bewährte Methoden für alle Befehlssätze
- Gelten Sie für jeden Satz von Befehlen folgende Richtlinien:
+ Befolgen Sie für jeden Befehlssatz die folgenden Richtlinien:
 
-- Ein Diagramm mit der Befehlsstruktur im Voraus vorbereiten. Identifizieren Sie die Befehle, Kombinationsfelder, Befehlsgruppen und Kontextmenüs, die in mehreren Speicherorten verwendet werden.
+- Bereiten Sie ein Diagramm der Befehlsstruktur im Voraus vor. Identifizieren Sie die Befehle, Kombinationsfelder, Befehlsgruppen und Kontextmenüs, die an mehr als einer Position verwendet werden.
 
-- Befehle, die in der gleichen Gruppe angezeigt werden sollte verknüpft sein.
+- Befehle, die in derselben Gruppe angezeigt werden, sollten miteinander verknüpft sein.
 
-- Gruppen, die nur einen Befehl enthalten sind zulässig.
+- Gruppen, die nur einen Befehl enthalten, sind akzeptabel.
 
-- Pakete sollten viele der Befehle nicht vorhandenen Visual Studio-Menüs hinzufügen. Stattdessen sollten sie Menüs oder Untermenüs zum Hosten der neuen Befehle erstellen.
+- Pakete sollten nicht viele Befehle zu vorhandenen Visual Studio-Menüs hinzufügen. Stattdessen sollten sie Menüs oder Untermenüs erstellen, um die neuen Befehle zu hosten.
 
-- Wenn Sie einen Befehl auf einem vorhandenen Menü, Name, den Befehl Einfügen, damit ihr Zweck klar ist und es nicht mit vorhandenen Befehlen verwechselt werden wird.
+- Wenn Sie einen Befehl in einem vorhandenen Menü eingeben, benennen Sie den Befehl so, dass sein Zweck klar ist und er nicht mit vorhandenen Befehlen verwechselt wird.
 
 ## <a name="best-practices-for-small-command-sets"></a>Bewährte Methoden für kleine Befehlssätze
- Wenn Sie eine VSPackage, die nur wenige Befehle enthalten sind entwickeln, beachten Sie auch Folgendes:
+ Wenn Sie ein VSPackage mit nur wenigen Befehlen entwickeln, befolgen Sie auch die folgenden Richtlinien:
 
-- Verwenden Sie nach Möglichkeit die [übergeordneten](../../extensibility/parent-element.md) Element ein, Kombinationsfeld, Gruppe oder eines untergeordneten Menüs, es in die entsprechende Gruppe zu platzieren.
+- Verwenden Sie nach Möglichkeit das [übergeordnete](../../extensibility/parent-element.md) Element eines Befehls,Kombifelds, einer Gruppe oder eines untergeordneten Menüs, um es in die entsprechende Gruppe einzuteilen.
 
-- Weisen Sie diese Gruppen zu Menüs angezeigt, die vom VSPackage ein.
+- Weisen Sie diese Gruppen Menüs zu, die vom VSPackage angezeigt werden.
 
-- Das übergeordnete Element eines untergeordneten Menüs oder einen Befehl muss eine [Gruppe](../../extensibility/group-element.md) Element. Befehle und Menüs von untergeordneten Gruppen zuweisen, und klicken Sie dann die Gruppen übergeordneten Menüs zuweisen.
+- Das übergeordnete Element eines untergeordneten Menüs oder eines Befehls muss ein [Group-Element](../../extensibility/group-element.md) sein. Weisen Sie Gruppen Befehle und untergeordnete Menüs zu, und weisen Sie die Gruppen dann übergeordneten Menüs zu.
 
-- Sie können einen Befehl in weiteren Gruppen einfügen, durch das Hinzufügen einer [CommandPlacements](../../extensibility/commandplacements-element.md) -Elementabschnitt nach der Definition des Befehls, und klicken Sie dann zum Hinzufügen der `CommandPlacements` Element eine [CommandPlacement](../../extensibility/commandplacement-element.md) Element für jede weitere Gruppe.
+- Sie können einen Befehl in zusätzliche Gruppen eingeben, indem Sie nach der Definition des `CommandPlacements` Befehls einen [CommandPlacements-Elementabschnitt](../../extensibility/commandplacements-element.md) hinzufügen und dem Element dann ein [CommandPlacement-Element](../../extensibility/commandplacement-element.md) für jede weitere Gruppe hinzufügen.
 
 ## <a name="best-practices-for-large-command-sets"></a>Bewährte Methoden für große Befehlssätze
- Richtlinien Sie Wenn Ihr VSPackage für viele Befehle sind, die in mehreren Kontexten angezeigt werden, auch die folgenden:
+ Wenn Ihr VSPackage über viele Befehle verfügt, die in mehreren Kontexten angezeigt werden, befolgen Sie auch die folgenden Richtlinien:
 
-- Stellen Sie die Menüs, Gruppen und Befehle überordnen von selbst. D.h., weisen Sie keine `Parent` Element in der Definition des Elements.
+- Erstellen Sie Menüs, Gruppen und Befehle zur Selbsterziehung. Das heißt, weisen `Parent` Sie kein Element in der Definition des Elements zu.
 
-- Verwendung `CommandPlacement` Element Einträge in der `CommandPlacements` -Elementabschnitt, Menüs, Gruppen und Befehle in ihrer übergeordneten Menüs und Gruppen zu platzieren.
+- Verwenden `CommandPlacement` Sie Elementeinträge im `CommandPlacements` Elementabschnitt, um Menüs, Gruppen und Befehle in die übergeordneten Menüs und Gruppen einzuteilen.
 
-- In der `CommandPlacements` werden im Elementabschnitt, der Einträge, die Werte eines beliebigen Menüs oder einer Gruppe nebeneinander an. Dies unterstützt die Lesbarkeit und macht die `Priority` Rangfolgen erheblich einfacher ermitteln.
+- Im `CommandPlacements` Elementabschnitt sollten die Einträge, die ein bestimmtes Menü oder eine bestimmte Gruppe auffüllen, nebeneinander liegen. Dies erleichtert die `Priority` Lesbarkeit und erleichtert die Ermittlung der Rankings.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio-Befehlstabellendateien (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

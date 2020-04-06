@@ -1,28 +1,28 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft-Dokumentation
+title: IDebugfunctionObject2::CreateStringObjectWithLength | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce0fdafc6835fdccc87638e17d3bbd01a1415abb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 937d325f8637a3260121def189d472dcfb3e1309
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313510"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728467"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Erstellt ein String-Objekt, das die angegebene Länge aufweist.
+Erstellt ein Zeichenfolgenobjekt mit der angegebenen Länge.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,16 +44,16 @@ int CreateStringObjectWithLength (
 
 ## <a name="parameters"></a>Parameter
 `pcstrString`\
-[in] Der Zeichenfolgenwert für den String-Objekt.
+[in] Der Zeichenfolgenwert für das Zeichenfolgenobjekt.
 
 `uiLength`\
 [in] Die Länge der Zeichenfolge in Bytes.
 
 `ppObject`\
-[out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, das neu erstellte String-Objekt darstellt.
+[out] Gibt ein [IDebugObject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) zurück, das das neu erstellte Zeichenfolgenobjekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

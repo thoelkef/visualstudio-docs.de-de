@@ -1,27 +1,27 @@
 ---
-title: EnableEditOfLocationField-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: EnableEditOfLocationField-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82a65115ce5df0f57ad9e6ea18a5637e035fed66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334536"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711994"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField-Element (Visual Studio-Vorlagen)
 Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 
- \<VSTemplate> \<TemplateData> \<EnableEditOfLocationField>
+ \<VSTemplate \<> TemplateData> \<EnableEditOfLocationField>
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,26 +33,26 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keiner
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keiner
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob der Benutzer bearbeiten kann die **Speicherort** Textfeld auf die **neues Projekt** im Dialogfeld.
+ Der Text muss `true` `false`entweder oder sein, was angibt, ob der Benutzer das Textfeld **Position** im Dialogfeld **Neues Projekt** bearbeiten kann.
 
-## <a name="remarks"></a>Hinweise
- `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert ist `true`, dadurch kann der Benutzer so bearbeiten Sie den Wert in der **Speicherort** Textfeld in die **neues Projekt** Dialogfeld.
+## <a name="remarks"></a>Bemerkungen
+ `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert `true`ist , mit dem der Benutzer den Wert im Textfeld **Standort** im Dialogfeld **Neues Projekt** bearbeiten kann.
 
- In der **neues Projekt** im Dialogfeld die **Speicherort** Textfeld gibt das Verzeichnis, in dem ein neues Projekt gespeichert ist.
+ Im Dialogfeld **Neues Projekt** gibt das Textfeld **Speicherort** das Verzeichnis an, in dem ein neues Projekt gespeichert wird.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine Windows-Anwendung in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.
@@ -83,6 +83,6 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

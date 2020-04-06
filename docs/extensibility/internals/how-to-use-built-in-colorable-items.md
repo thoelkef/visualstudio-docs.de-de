@@ -1,40 +1,40 @@
 ---
-title: 'Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden von integrierten farbbaren Elementen | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1c327c14ed2b349ee02566c5cdfd38b9a07859
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34e07894c3306f544396e53001990f7b9a2df5a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311969"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707789"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente
-Bevor Sie die integrierten kolorierbaren Elemente verwenden, Sie müssen zuerst signalisieren die integrierte Entwicklungsumgebung (IDE), dass Sie nicht Ihre eigenen benutzerdefinierten kolorierbaren Elemente bereitstellen, die in diesem Fall würde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Objekte. Dazu müssen Sie einen Registrierungseintrag für den Sprachdienst festlegen.
+# <a name="how-to-use-built-in-colorable-items"></a>Gewusst wie: Verwenden Sie integrierte farbbare Elemente
+Bevor Sie die integrierten befärbbaren Elemente verwenden, müssen Sie der integrierten Entwicklungsumgebung (IDE) zunächst signalisieren, dass <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Sie keine eigenen benutzerdefinierten befärbbaren Elemente bereitstellen, die in diesem Fall Objekte wären. Dazu legen Sie einen Registrierungseintrag für den Sprachdienst fest.
 
-## <a name="to-use-built-in-colorable-items"></a>Verwenden von integrierten einfärbbaren Elementen
+## <a name="to-use-built-in-colorable-items"></a>So verwenden Sie integrierte farbbare Elemente
 
-1. Klicken Sie unter **HKEY_LOCAL_MACHINE\VisualStudio\\< X.Y > \Languages\Language Services\\< Sprachenname\>** , wobei \<X.Y > ist eine Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und \<Sprachenname > ist der Name der Sprache, erstellen Sie einen DWORD-Registrierungswert Eintrag namens **RequestStockColors**.
+1. Erstellen Sie unter **HKEY_LOCAL_MACHINE-VisualStudio-<\\ X.Y->-Sprachen-Sprachdienste\\<Sprachnamen\>**, wobei \<X.Y> eine Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist und \<Language Name> der Name Ihrer Sprache ist, einen DWORD-Registrierungseintragswert namens **RequestStockColors**.
 
-2. Legen Sie die **RequestStockColors** registrierungseintragswert zu *1*.
+2. Legen Sie den **Registrierungseintragswert RequestStockColors** auf *1*fest.
 
-    Nach der Erstellung des Registrierungseintrags, Ihre Farbauswahl des <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode können die Mitglieder der <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> Enumeration das Array von Farbattributen, die für die Verwendung durch den Editor eingeben.
+    Nachdem Sie den Registrierungseintrag erstellt haben, kann die Methode des Colorizers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> die Member der <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> Enumeration verwenden, um das Array von Farbattributen für die Verwendung durch den Editor auszufüllen.
 
    > [!NOTE]
-   > Legen Sie dieses Registrierungseintrags nicht, wenn Sie eine benutzerdefinierte kolorierbare Elemente bereitstellen. Weitere Informationen finden Sie unter [benutzerdefinierten kolorierbaren Elemente](../../extensibility/internals/custom-colorable-items.md).
+   > Legen Sie diesen Registrierungseintrag nicht fest, wenn Sie benutzerdefinierte befärbbare Elemente bereitstellen. Weitere Informationen finden Sie unter [Benutzerdefinierte befärbbare Elemente](../../extensibility/internals/custom-colorable-items.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Syntaxfarben in benutzerdefinierten Editoren](../../extensibility/syntax-coloring-in-custom-editors.md)
-- [Syntaxfarben in einem legacysprachdiensten](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-- [Implementieren von Syntaxfarben](../../extensibility/internals/implementing-syntax-coloring.md)
-- [Benutzerdefinierte kolorierbare Elemente](../../extensibility/internals/custom-colorable-items.md)
-- [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service2.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Syntaxfärbung in benutzerdefinierten Editoren](../../extensibility/syntax-coloring-in-custom-editors.md)
+- [Syntaxfarben in einem älteren Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+- [Implementieren der Syntaxfärbung](../../extensibility/internals/implementing-syntax-coloring.md)
+- [Benutzerdefinierte farbbare Artikel](../../extensibility/internals/custom-colorable-items.md)
+- [Registrieren eines älteren Sprachdienstes](../../extensibility/internals/registering-a-legacy-language-service2.md)

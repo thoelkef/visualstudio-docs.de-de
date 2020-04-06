@@ -1,27 +1,27 @@
 ---
-title: 'Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek | Microsoft-Dokumentation'
+title: 'Gewusst wie: Identifizieren von Symbolen in einer Bibliothek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 550bd16fec0dde508642a362835cde1e2d1637d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fe920fabd05a875b336467fbba16e4229fa9613
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328704"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708004"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek
-Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbolen. Die Symbole darstellen, Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente.
+# <a name="how-to-identify-symbols-in-a-library"></a>Gewusst wie: Identifizieren von Symbolen in einer Bibliothek
+Symbol-Browsing-Tools zeigen hierarchische Ansichten von Symbolen an. Die Symbole stellen Namespaces, Objekte, Klassen, Klassenmember und andere Sprachelemente dar.
 
- Jedes Symbol in der Hierarchie identifiziert werden kann, durch die Navigationsinformationen durch die Symbolbibliothek zum Übergeben der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager über die folgenden Schnittstellen:
+ Jedes Symbol in der Hierarchie kann durch die Navigationsinformationen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] identifiziert werden, die von der Symbolbibliothek über die folgenden Schnittstellen an den Objekt-Manager übergeben werden:
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>
 
@@ -29,11 +29,11 @@ Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbole
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.
 
- Der Speicherort des Symbols in der Hierarchie unterscheidet es sich um ein Symbol. Sie können die Tools zum Durchsuchen von Symbol, um auf ein bestimmtes Symbol zu navigieren. Die eindeutige, vollqualifizierte Pfad zur symbolspeicherfreigabe bestimmt den Speicherort an. Jedes Element im Pfad ist ein Knoten. Der Pfad mit den obersten Knoten beginnt und endet mit dem spezifischen Symbol. Wenn die Methode M1 ein Element der C1-Klasse ist, und C1 befindet sich im N1-Namespace, lautet der vollständige Pfad der Methode M1 N1. C1. M1. Dieser Pfad enthält drei Knoten: N1 "," C1 "und" M1 ".
+ Die Position des Symbols in der Hierarchie unterscheidet ein Symbol. Es ermöglicht Symbol-Browsing-Tools zu einem bestimmten Symbol zu navigieren. Der eindeutige, vollqualifizierte Pfad zum Symbol bestimmt die Position. Jedes Element im Pfad ist ein Knoten. Der Pfad beginnt mit dem Knoten der obersten Ebene und endet mit dem spezifischen Symbol. Wenn die M1-Methode beispielsweise ein Member der C1-Klasse ist und C1 sich im N1-Namespace befindet, lautet der vollständige Pfad der M1-Methode N1. C1. M1. Dieser Pfad enthält drei Knoten: N1, C1 und M1.
 
- Mit diesen Navigationsinformationen können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager suchen, wählen Sie aus, und behalten ausgewählten Symbole in der Hierarchie. Es ermöglicht das Navigieren von einem Browsingtool in einen anderen. Bei der Verwendung von **Objektkatalog** zum Durchsuchen von Symbolen in einer [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] -Projekt können Sie mit der rechten Maustaste einer Methode und Starten der **Aufrufbrowser** Tool, um die Methode in einem Aufrufdiagramm anzeigen.
+ Die Navigationsinformationen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ermöglichen es dem Objekt-Manager, die Ausgewählten Symbole in der Hierarchie zu suchen, auszuwählen und zu behalten. Es ermöglicht das Navigieren von einem Browser-Tool zu einem anderen. Wenn Sie **den Objektbrowser** [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] zum Durchsuchen von Symbolen in einem Projekt verwenden, können Sie mit der rechten Maustaste auf eine Methode klicken und das Werkzeug **Browser aufrufen** starten, um die Methode in einem Aufrufdiagramm anzuzeigen.
 
- Zwei Arten beschreiben den Symbolspeicherort. Die kanonische Form basiert auf den vollqualifizierten Pfad des Symbols. Es stellt eine eindeutige Position des Symbols in der Hierarchie dar. Er ist unabhängig von dem Tool zum Durchsuchen von Symbolen. Die kanonische Formularinformationen abgerufen, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager-Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> Methode. Die Präsentationsformat beschreibt den Speicherort des Symbols in einer bestimmten symbolsuchtool. Die Position des Symbols ist relativ zur Position der andere Symbole in der Hierarchie. Ein bestimmtes Symbol möglicherweise mehrere Presentation-Pfade, aber nur einen kanonischen Pfad. Wenn C1-Klasse aus der C2-Klasse geerbt wird, und beide Klassen befinden sich im N1-Namespace, z. B. die **Objektkatalog** der folgende hierarchische Struktur angezeigt:
+ Zwei Formulare beschreiben die Symbolposition. Die kanonische Form basiert auf dem vollqualifizierten Pfad des Symbols. Es stellt eine eindeutige Position des Symbols in der Hierarchie dar. Es ist unabhängig vom Symbol-Browsing-Tool. Um die kanonischen Formularinformationen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] abzuerhalten, ruft der Objekt-Manager die Methode auf. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> Das Präsentationsformular beschreibt die Position des Symbols in einem bestimmten Symbol-Browsing-Tool. Die Position des Symbols ist relativ zur Position anderer Symbole in der Hierarchie. Ein bestimmtes Symbol kann mehrere Präsentationspfade haben, aber nur einen kanonischen Pfad. Wenn z. B. die C1-Klasse von der C2-Klasse geerbt wird und sich beide Klassen im N1-Namespace befinden, zeigt der **Objektbrowser** die folgende hierarchische Struktur an:
 
 ```
 N1
@@ -46,15 +46,15 @@ N1
 
 ```
 
- Die kanonische Pfad des C2-Klasse, in diesem Beispiel ist N1 + C2. Präsentationspfad des C2 enthält Knoten "C1" und "Basen und Schnittstellen": N1 + C1 + "Basen und Schnittstellen" + C2.
+ Der kanonische Pfad der C2-Klasse ist in diesem Beispiel N1 + C2. Der Präsentationspfad von C2 umfasst C1- und "Bases and Interfaces"-Knoten: N1 + C1 + "Basen und Schnittstellen" + C2.
 
- Zum Abrufen von Informationen der Präsentation Form, der die Objekt-Manager ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> Methode.
+ Um die Präsentationsformularinformationen abzuerhalten, ruft der Objekt-Manager die Methode auf. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>
 
-## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Kanonische abrufen und Presentation forms-Informationen
+## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Informationen zu kanonischen und Präsentationsformularen
 
 1. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>-Methode.
 
-     Der Objekt-Manager ruft diese Methode zum Abrufen der Liste von Knoten im kanonischen Pfad des Symbols enthalten sind.
+     Der Objekt-Manager ruft diese Methode auf, um die Liste der Knoten abzufragen, die im kanonischen Pfad des Symbols enthalten sind.
 
     ```vb
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer
@@ -77,9 +77,9 @@ N1
 
 2. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>-Methode.
 
-     Der Objekt-Manager ruft diese Methode zum Abrufen der Liste von Knoten im Präsentationspfad des Symbols enthalten sind.
+     Der Objekt-Manager ruft diese Methode auf, um die Liste der Knoten abzuholen, die im Präsentationspfad des Symbols enthalten sind.
 
-## <a name="see-also"></a>Siehe auch
-- [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt werden, um dem Objekt-manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Unterstützung von Symbol-Browsing-Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [Gewusst wie: Registrieren einer Bibliothek beim Objektmanager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Gewusst wie: Listen mit Symbolen, die von der Bibliothek bereitgestellt werden, für den Objektmanager verfügbar machen](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

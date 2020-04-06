@@ -1,53 +1,53 @@
 ---
-title: Erstellen eines Windows Installer Pakets | Microsoft-Dokumentation
+title: Erstellen eines Windows Installer-Pakets | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa967b5f23ff9f4e5afa67b9b1cb4e83707616c6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982230"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710038"
 ---
-# <a name="author-a-windows-installer-package"></a>Erstellen eines Windows Installer Pakets
-Daten steuern das Windows Installer Modell. Anstatt ein prozedurales Skript zum Kopieren von Dateien und zum Schreiben von Registrierungs Einträgen zu schreiben, schreiben Sie z. b. Zeilen und Spalten in Datenbanktabellen, die Datei-und Registrierungsdaten enthalten.
+# <a name="author-a-windows-installer-package"></a>Erstellen eines Windows Installer-Pakets
+Daten werden für das Windows Installer-Modell verwendet. Anstatt beispielsweise ein prozedurales Skript zum Kopieren von Dateien und Schreiben von Registrierungseinträgen zu schreiben, erstellen Sie Zeilen und Spalten in Datenbanktabellen, die Datei- und Registrierungsdaten enthalten.
 
 ## <a name="database-entries"></a>Datenbankeinträge
-Um ein VSPackage zu installieren, muss ein Windows Installer Paketdaten Bank Einträge enthalten, um die folgenden Aufgaben auszuführen:
+Um ein VSPackage zu installieren, muss ein Windows Installer-Paket Datenbankeinträge enthalten, um die folgenden Aufgaben ausführen zu können:
 
-- Durchsuchen Sie das System, um die Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], die das VSPackage unterstützt (mithilfe Windows Installer Tabellen, die AppSearch, complocator, reglocator, drlocator und Signature enthalten) zu suchen.
+- Durchsuchen Sie das System, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um die Versionen Ihrer VSPackage-Unterstützung zu finden (mit Windows Installer-Tabellen, die AppSearch, CompLocator, RegLocator, DrLocator und Signature enthalten).
 
-- Brechen Sie die Installation ab, wenn keine unterstützte Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] installiert ist oder eine andere System Anforderung des VSPackage nicht erfüllt wird (mithilfe der LaunchCondition-Tabelle).
+- Brechen Sie die Installation [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ab, wenn keine unterstützte Version von installiert ist oder wenn eine andere Systemanforderung des VSPackage nicht erfüllt ist (mit der Tabelle LaunchCondition).
 
-- Installieren Sie das VSPackage und abhängige Dateien (mithilfe der Verzeichnis-, Komponenten-und Datei Tabellen).
+- Installieren Sie das VSPackage und die abhängigen Dateien (mit den Verzeichnis-, Komponenten- und Dateitabellen).
 
-- Fügen Sie die entsprechenden Informationen für das VSPackage zur Registrierung hinzu (mithilfe der Registrierungs Tabelle).
+- Fügen Sie der Registrierung (mit der Registrierungstabelle) geeignete Informationen für das VSPackage hinzu.
 
-- Integrieren Sie das VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], indem Sie " **devenv. exe/Setup** " aufrufen (mithilfe der Tabelle "CustomAction").
+- Integrieren Sie das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage in, indem Sie **devenv.exe /setup** aufrufen (mit der Tabelle CustomAction).
 
 Weitere Informationen finden Sie unter [Windows Installer](/windows/desktop/Msi/windows-installer-portal).
 
-## <a name="setup-tools"></a>Setup Tools
-Eine Reihe von Setup Tools von Drittanbietern bieten eine Entwicklungsumgebung für Windows Installer Pakete. Die folgenden kostenlosen Tools sind verfügbar:
+## <a name="setup-tools"></a>Setup-Tools
+Eine Vielzahl von Setup-Tools von Drittanbietern stellen eine Entwicklungsumgebung für Windows Installer-Pakete bereit. Folgende kostenlose Tools stehen zur Verfügung:
 
 - InstallShield Limited Edition
 
-   Sie können eine begrenzte Version von InstallShield über das Visual Studio-Dialogfeld " **Neues Projekt** " erhalten. Erweitern Sie **andere Projekttypen** , und wählen Sie dann **Setup und Bereitstellung**aus. Wählen Sie die Vorlage InstallShield aus.
+   Sie können eine eingeschränkte Version von InstallShield über das Dialogfeld Visual Studio **New Project** abrufen. Erweitern **Sie andere Projekttypen,** und wählen Sie dann **Setup und Bereitstellung**aus. Wählen Sie die InstallShield-Vorlage aus.
 
 - Windows Installer XML-Toolset
 
-   Das WiX-Toolset (Windows Installer XML) erstellt Windows Installer Pakete aus XML-Quelldateien. Das WiX-Toolset ist ein Microsoft-Open-Source-Projekt. Sie können den Quellcode und ausführbare Dateien aus dem [WiX-Toolset](https://sourceforge.net/projects/wix/)herunterladen.
+   Das Windows Installer XML (WiX)-Toolset erstellt Windows Installer-Pakete aus XML-Quelldateien. Das WiX-Toolset ist ein Open-Source-Projekt von Microsoft. Sie können den Quellcode und die ausführbaren Dateien von [Wix Toolset](https://sourceforge.net/projects/wix/)herunterladen.
 
-   Informationen zu kommerziellen Produkten, die mithilfe des [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integriert werden, finden Sie unter [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+   Für kommerzielle Produkte, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]mithilfe der integriert werden, finden Sie unter [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

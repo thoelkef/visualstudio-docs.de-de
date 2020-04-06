@@ -1,5 +1,5 @@
 ---
-title: TemplateGroupID-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: TemplateGroupID-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718657"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699078"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID-Element (Visual Studio-Vorlagen)
-Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses Element ist wichtig, wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf `false` festgelegt ist. Wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf `true` festgelegt ist, ist eine Element Vorlage in allen Projekttypen verfügbar.
+Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses Element ist wichtig, wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf `false`festgelegt ist. Wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf `true`festgelegt ist, ist eine Elementvorlage in allen Projekttypen verfügbar.
 
- \<VSTemplate > \<TemplateData > \<TemplateGroupID >
+ \<VSTemplate \<> TemplateData> \<TemplateGroupID>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,14 +36,14 @@ Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses E
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
@@ -52,10 +52,10 @@ Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses E
 
  Der Text gibt einen Bezeichner für eine Kategorie von Elementvorlagen an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `TemplateGroupID` ist ein Element.
 
- Der Wert des `TemplateGroupID`-Elements wird zusammen mit der Projekt Systemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version Number >* \projects \\) zum Filtern von Vorlagen verwendet, die im **neuen Element hinzufügen angezeigt werden.** (Dialogfeld).
+ Der Wert `TemplateGroupID` des Elements wird zusammen mit der Projektsystemregistrierung (HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-Versionsnummer\\*\<>*-Projekten\\) verwendet, um Vorlagen zu filtern, die im Dialogfeld **Neues Element** hinzufügen angezeigt werden.
 
 |Visual C++-Wert|Bedeutung|
 |------------------------|-------------|
@@ -69,6 +69,6 @@ Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses E
 |WinRT-systemeigen|Für Windows 8.0-Store-Projekte verwendet.|
 |VC-Android|Für Android-Projekte verwendet.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

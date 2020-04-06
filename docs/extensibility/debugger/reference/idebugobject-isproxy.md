@@ -1,28 +1,28 @@
 ---
-title: IDebugObject::IsProxy | Microsoft-Dokumentation
+title: IDebugObject::IsProxy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugObject::IsProxy
 - IsProxy
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e72df4bd42df8d060ffab5f5ba5a2f44cbc06f9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6cab0d0d0f5f1c2e491c9aa0fe9efd26b39e51df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323421"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726473"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
-Bestimmt, ob das Objekt über einen transparenten Proxy ist.
+Bestimmt, ob es sich bei dem Objekt um einen transparenten Proxy handelt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,13 +40,13 @@ int IsProxy (
 
 ## <a name="parameters"></a>Parameter
 `pfIsProxy`\
-[out] `TRUE` ist das Objekt einen transparenten Proxy ist; andernfalls `FALSE`.
+[out] `TRUE` wenn es sich bei dem Objekt um einen transparenten Proxy handelt; andernfalls `FALSE`.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird von der standardmäßigen C++-Debug-Engine implementiert.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird vom standardmäßigen C++-Debugmodul implementiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Seek | Microsoft-Dokumentation
+title: IDebugDisassemblyStream2::Suchen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e97da5b4b65b18c9d4c745dea2cb5f0915862731
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4954b3b278b3c7a6b798a4ffda3856ab8bb200c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310366"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732081"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
-Verschiebt des lesezeigers im Disassemblyfenster Stream einer bestimmten Anzahl von Anweisungen, die relativ zur angegebenen Position.
+Verschiebt den Lesezeiger im Demontagestream um eine bestimmte Anzahl von Anweisungen relativ zu einer angegebenen Position.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,24 +47,24 @@ int Seek( 
 
 ## <a name="parameters"></a>Parameter
 `dwSeekStart`\
-[in] Ein Wert aus der [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) Enumeration, der angibt, der die relative Position, um die Suche zu starten.
+[in] Ein Wert [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) aus der SEEK_START-Enumeration, der die relative Position angibt, um den Suchprozess zu beginnen.
 
 `pCodeContext`\
-[in] Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das den Codekontext, der der Suchvorgang relativ ist darstellt. Dieser Parameter wird verwendet, nur dann, wenn `dwSeekStart`  =  `SEEK_START_CODECONTEXT`ist, andernfalls dieser Parameter wird ignoriert, und kann ein null-Wert sein.
+[in] Das [IDebugCodeContext2-Objekt,](../../../extensibility/debugger/reference/idebugcodecontext2.md) das den Codekontext darstellt, zu dem der Suchvorgang relativ ist. Dieser Parameter wird `dwSeekStart`  =  `SEEK_START_CODECONTEXT`nur verwendet, wenn ; Andernfalls wird dieser Parameter ignoriert und kann ein NULL-Wert sein.
 
 `uCodeLocationId`\
-[in] Der Bezeichner der Code-Speicherort, dem der Suchvorgang relativ ist. Dieser Parameter wird verwendet, wenn `dwSeekStart`  =  `SEEK_START_CODELOCID`ist, andernfalls dieser Parameter wird ignoriert, und kann auf 0 festgelegt werden. Finden Sie im Abschnitt "Hinweise" der [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) -Methode für eine Beschreibung der Codebezeichner Speicherort.
+[in] Der Codepositionsbezeichner, zu dem der Suchvorgang relativ ist. Dieser Parameter wird `dwSeekStart`  =  `SEEK_START_CODELOCID`verwendet, wenn ; Andernfalls wird dieser Parameter ignoriert und kann auf 0 gesetzt werden. Eine Beschreibung eines Codepositionsbezeichners finden Sie im Abschnitt "Hinweise" für die [GetCodeLocationId-Methode.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
 
 `iInstructions`\
-[in] Die Anzahl der Anweisungen zum Verschieben von relativ zur Position im angegebenen `dwSeekStart`. Dieser Wert kann negativ, zurückzugehen sein.
+[in] Die Anzahl der Anweisungen, die relativ `dwSeekStart`zu der in angegebenen Position verschoben werden sollen. Dieser Wert kann negativ sein, um rückwärts zu bewegen.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` war die Suchposition an eine Stelle außerhalb der Liste der verfügbaren Anweisungen. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn die Suchposition an einen Punkt lag, der über die Liste der verfügbaren Anweisungen hinausging. Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- War das an eine Position vor dem Anfang der Liste, ist die erste Anweisung in der Liste die Leseposition fest. Wenn eine Position nach dem Ende der Liste der finden Sie unter war, wird die Leseposition bis zum letzten Anweisung in der Liste festgelegt.
+## <a name="remarks"></a>Bemerkungen
+ Wenn die Suche an einer Position vor dem Anfang der Liste war, wird die Leseposition auf die erste Anweisung in der Liste festgelegt. Wenn sich die Anzeige nach dem Ende der Liste an einer Position befand, wird die Leseposition auf die letzte Anweisung in der Liste festgelegt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

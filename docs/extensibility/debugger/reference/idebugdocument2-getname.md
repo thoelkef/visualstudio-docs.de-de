@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Microsoft-Dokumentation
+title: IDebugDocument2::GetName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310277"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731970"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
-Ruft den Namen des Dokuments in einem von mehreren Formaten.
+Ruft den Namen des Dokuments in einem von mehreren Formularen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,17 +43,17 @@ int GetName( 
 
 ## <a name="parameters"></a>Parameter
 `gnType`\
-[in] Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) -Enumeration, den Typ des Namens zurückzugebenden bestimmt.
+[in] Ein Wert [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) aus der GETNAME_TYPE-Enumeration, der den zurückzugebenden Namentyp bestimmt.
 
 `pbstrFileName`\
-[out] Gibt eine Zeichenfolge, die den Namen des Dokuments enthält.
+[out] Gibt eine Zeichenfolge zurück, die den Dokumentnamen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode kann z. B. den Namen des Dokuments als einen Titel oder als ein Dateiname oder sogar einen Dateinamen zurück.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode kann z. B. den Namen des Dokuments als Titel oder als Dateinamen oder sogar als Teil eines Dateinamens zurückgeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

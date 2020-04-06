@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Resume | Microsoft-Dokumentation
+title: IDebugThread2::Resume | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a312b18fead71b343fd1b9beafcf36c904bf1b24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320134"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718675"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
-Setzt die Ausführung eines Threads.
+Setzt die Ausführung eines Threads fort.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ int Resume ( 
 
 ## <a name="parameters"></a>Parameter
 `pdwSuspendCount`\
-[out] Gibt den Unterbrechungszähler nach der Wiederaufnahme des Vorgangs zurück.
+[out] Gibt die Suspend-Anzahl nach dem Wiederaufnahmevorgang zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Jeder Aufruf von verringert diese Methode den Unterbrechungszähler bis zu diesem Zeitpunkt 0 erreicht, wird tatsächlich Ausführung fortgesetzt. Diese Unterbrechungszähler wird angezeigt, der **Threads** Debug-Fenster.
+## <a name="remarks"></a>Bemerkungen
+ Jeder Aufruf dieser Methode dekrementiert die Suspend-Anzahl, bis sie 0 erreicht, zu welchem Zeitpunkt die Ausführung tatsächlich fortgesetzt wird. Diese Suspend-Anzahl wird **Threads** im Thread-Debugfenster angezeigt.
 
- Bei jedem Aufruf dieser Methode, muss ein vorherigen Aufruf der [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) Methode. Der Unterbrechungszähler bestimmt, wie oft die `IDebugThread2::Suspend` bisher Methode aufgerufen wurde.
+ Für jeden Aufruf dieser Methode muss ein vorheriger Aufruf der [Suspend-Methode](../../../extensibility/debugger/reference/idebugthread2-suspend.md) vorhanden sein. Die Suspend-Anzahl bestimmt, `IDebugThread2::Suspend` wie oft die Methode bisher aufgerufen wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+- [Angehalten](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

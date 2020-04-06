@@ -1,25 +1,25 @@
 ---
-title: Image-Service-Tools | Microsoft-Dokumentation
+title: Image Service-Tools | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41b280581daa9ca54370429ae75eaab5c8551b7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f5f1ff7cd573ff2524d35afc268858855540526
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315686"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707707"
 ---
 # <a name="image-service-tools"></a>Tools für Bilddienste
-Das VS-SDK enthält mehrere Tools, mit denen Erweiterung-Generatoren, die den Visual Studio-Image-Dienst verwenden.
+Das VS SDK enthält mehrere Tools, mit denen Erweiterungsbuilder den Visual Studio-Imagedienst verwenden können.
 
-- Die [Manifest aus Ressourcen](../../extensibility/internals/manifest-from-resources.md) Tool akzeptiert eine Liste von Bildressourcen (PNG oder XAML-Dateien) und eine Image-Manifestdatei generiert.
+- Das Werkzeug ["Manifest aus Ressourcen"](../../extensibility/internals/manifest-from-resources.md) erstellt eine Liste der Bildressourcen (.png- oder .xaml-Dateien) und generiert eine Bildmanifestdatei.
 
-- Die [Manifest für Code](../../extensibility/internals/manifest-to-code.md) Tool nimmt eine Image-manifest-Datei und generiert eine Wrapperdatei in C++, c#, VB oder VSCT-Dateien verwenden.
+- Das Werkzeug [Manifest zu Code](../../extensibility/internals/manifest-to-code.md) nimmt eine Bildmanifestdatei und generiert eine Wrapperdatei, die in C++-, C-, VB- oder .vsct-Dateien verwendet werden soll.
 
-- Die [Bildbibliotheks-Viewer](../../extensibility/internals/image-library-viewer.md) laden, bearbeiten und bildmanifesten suchen können.
+- Der [Bildbibliotheks-Viewer](../../extensibility/internals/image-library-viewer.md) kann Bildmanifeste laden, bearbeiten und durchsuchen.

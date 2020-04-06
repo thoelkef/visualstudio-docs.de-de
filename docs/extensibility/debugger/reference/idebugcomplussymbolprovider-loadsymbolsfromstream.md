@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Microsoft-Dokumentation
+title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
 ms.assetid: 1de272f0-24f4-4548-8b70-a205cddd4727
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10b7eb21bd075e27aebb2b96e07b88363bc0f862
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d208f8ce04e884c9dfb3b8b272271e686e3b2762
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352792"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733613"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-Lädt Debugsymbole ab, der den Datenstrom angegeben ist.
+Lädt Debugsymbole, die dem Datenstrom gegeben sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,25 +48,25 @@ int LoadSymbolsFromStream(
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Der Bezeichner der Anwendungsdomäne.
+[in] Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
 [in] Eindeutiger Bezeichner des Moduls.
 
 `baseAddress`\
-[in] Basis Speicheradresse.
+[in] Basisspeicheradresse.
 
 `pUnkMetadataImport`\
-[in] Objekt, das die Symbol-Metadaten enthält.
+[in] Objekt, das die Symbolmetadaten enthält.
 
 `pStream`\
-[in] Datenstrom mit den Symbolen.
+[in] Datenstrom, der die Symbole enthält.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle. Ruft die Methode die [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) Methode.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht. Die Methode ruft die [LoadSymbolsFromStreamWithCorModule-Methode](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) auf.
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
@@ -81,5 +81,5 @@ HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

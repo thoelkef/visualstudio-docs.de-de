@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetDebugReason
 ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b398fb09d63a76732a7299932458da8bf0d4d744
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2fa12b74b44761761a08e232a9f3efa845fa73a7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723669"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
-Diese Methode gibt den Grund, dass der Prozess zum Debuggen gestartet wurde.
+Diese Methode gibt den Grund zurück, warum der Prozess zum Debuggen gestartet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,11 +41,11 @@ int GetDebugReason(
 
 ## <a name="parameters"></a>Parameter
 `pReason`\
-[out] Gibt einen Wert aus der [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) Enumeration.
+[out] Gibt einen Wert [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) aus der DEBUG_REASON-Enumeration zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md)

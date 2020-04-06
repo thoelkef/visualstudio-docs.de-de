@@ -1,25 +1,25 @@
 ---
-title: GuidSymbol-Element | Microsoft-Dokumentation
+title: GuidSymbol Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bebcec561f915bd8223d0adc183293a1760c261d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342212"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711125"
 ---
-# <a name="guidsymbol-element"></a>GuidSymbol-element
-Die `GuidSymbol` Element enthält die GUID des das GUID: ID-Paar, das ein Menü, Gruppe oder den Befehl darstellt. Die ID stammt aus einer `IDSymbol` Element in der `GuidSymbol` Element. Die `GuidSymbol` Element verfügt über eine `name` -Attribut, das einen Anzeigenamen für die GUID, der in enthalten ist, enthält die `value` Attribut.
+# <a name="guidsymbol-element"></a>GuidSymbol-Element
+Das `GuidSymbol` Element enthält die GUID des GUID:ID-Paares, das ein Menü, eine Gruppe oder einen Befehl darstellt. Die ID stammt `IDSymbol` von `GuidSymbol` einem Element im Element. Das `GuidSymbol` Element `name` verfügt über ein Attribut, das einen Anzeigenamen `value` für die GUID bereitstellt, der im Attribut enthalten ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,25 +35,25 @@ Die `GuidSymbol` Element enthält die GUID des das GUID: ID-Paar, das ein Menü,
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|Name|Erforderlich. Der Name des dem GUID-Symbol.|
-|Wert|Erforderlich. GUID der GUID-Symbol.|
+|name|Erforderlich. Name des GUID-Symbols.|
+|value|Erforderlich. GUID des GUID-Symbols.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[IDSymbol-element](../extensibility/idsymbol-element.md)|Enthält die ID der dem GUID: ID-Paar, die ein Menü, Gruppe oder den Befehl darstellt.|
+|[IDSymbol-Element](../extensibility/idsymbol-element.md)|Enthält die ID des GUID:ID-Paares, das ein Menü, eine Gruppe oder einen Befehl darstellt.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Symbols-element](../extensibility/symbols-element.md)|Gruppen `GuidSymbol` Elemente in einem *VSCT* Datei.|
+|[Symbols-Element](../extensibility/symbols-element.md)|Gruppiert `GuidSymbol` Elemente in einer *.vsct-Datei.*|
 
-## <a name="remarks"></a>Hinweise
- In der Regel eine *VSCT* -Datei enthält drei `GuidSymbol` Elemente in der `Symbols` Abschnitt, der für das Paket selbst, der für den Befehlssatz (die Sammlung von Menüs, Gruppen und Befehle, die das Paket zur Verfügung stellt), und eine für die Bitmaps, die Symbole für die Schaltflächen und anderen visuellen Komponenten bereitstellen. Jede `IDSymbol` Element in einer angegebenen `GuidSymbol` -Element muss einen eindeutigen besitzen `value`. Allerdings `IDSymbol` Elemente, die identische Werte aufweisen können in einem Paket vorhanden, solange sie die verschiedene übergeordneten Elementen verfügen.
+## <a name="remarks"></a>Bemerkungen
+ In der Regel enthält eine `GuidSymbol` `Symbols` *.vsct-Datei* drei Elemente in ihrem Abschnitt, eines für das Paket selbst, eines für den Befehlssatz (die Sammlung von Menüs, Gruppen und Befehlen, die das Paket zur Verfügung stellt) und eines für die Bitmaps, die Symbole für Schaltflächen und andere visuelle Komponenten bereitstellen. Jedes `IDSymbol` Element in `GuidSymbol` einem bestimmten `value`Element muss über eine eindeutige verfügen. Elemente `IDSymbol` mit identischen Werten können jedoch in einem Paket vorhanden sein, solange sie unterschiedliche Eltern haben.
 
-## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

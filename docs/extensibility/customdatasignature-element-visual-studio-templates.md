@@ -1,5 +1,5 @@
 ---
-title: CustomDataSignature-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: CustomDataSignature-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,22 +7,22 @@ helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2b4d089495245d1a37469df1dc43a19be31866
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351976"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739444"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature-Element (Visual Studio-Vorlagen)
-Gibt die Textsignatur "um die benutzerdefinierten Daten zu suchen.
+Gibt die Textsignatur an, um die benutzerdefinierten Daten zu suchen.
 
- \<VSTemplate> \<TemplateData> \<CustomDataSignature>
+ \<VSTemplate \<> TemplateData> \<CustomDataSignature>
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,25 +34,25 @@ Gibt die Textsignatur "um die benutzerdefinierten Daten zu suchen.
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie sie entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld Neues **Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text ist eine Zeichenfolge, die Signatur des Texts, die erforderlich sind enthält, um die benutzerdefinierten Daten zu suchen.
+ Der Text ist eine Zeichenfolge mit der Textsignatur, die zum Suchen der benutzerdefinierten Daten erforderlich ist.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `CustomDataSignature` ist ein optionales Element.
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

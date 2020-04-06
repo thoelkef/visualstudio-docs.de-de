@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::GetCount | Microsoft-Dokumentation
+title: IEnumDebugFields::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::GetCount method
 ms.assetid: 3f471b40-4db3-49f7-b504-58b2476eef74
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb0c28f72b88822d87af928b9e0ce689cf0f3a7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5109e3f515b98cf8d89babb7a66ec28e7849d3ca
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350453"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716925"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
-Diese Methode gibt die Anzahl der Elemente in der Enumeration.
+Diese Methode gibt die Anzahl der Elemente in der Enumeration zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,10 +44,10 @@ int GetCount(
 [out] Gibt die Anzahl der Elemente in der Enumeration zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode ist nicht Teil der übliche COM-Enumerationsschnittstelle gibt an, dass nur weiter, Klonen, überspringen und Zurücksetzen der implementiert werden müssen.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode ist nicht Teil der üblichen COM-Enumerationsschnittstelle, die angibt, dass nur Next, Clone, Skip und Reset implementiert werden müssen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

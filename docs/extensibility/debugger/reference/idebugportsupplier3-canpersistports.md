@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Microsoft-Dokumentation
+title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11bc6e21e8b70a5bd95c001f4173a7da3f3fe4be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340070"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724465"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Diese Methode bestimmt, ob die anschlusslieferant Ports gespeichert werden kann (indem sie auf den Datenträger geschrieben werden müssen) zwischen den Aufrufen des Debuggers.
+Diese Methode bestimmt, ob der Portlieferant Ports zwischen Aufrufen des Debuggers beibehalten kann (durch Schreiben auf den Datenträger).
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,13 +36,13 @@ int CanPersistPorts();
 ```
 
 ## <a name="parameters"></a>Parameter
- Keine
+ Keine.
 
 ## <a name="return-value"></a>Rückgabewert
- `S_OK` Wenn Ports beibehalten werden können, oder `S_FALSE` um anzugeben, dass die Ports nicht beibehalten werden können.
+ `S_OK`, wenn Ports beibehalten `S_FALSE` werden können, oder um anzuzeigen, dass Ports nicht beibehalten werden können.
 
-## <a name="remarks"></a>Hinweise
- Wenn Anschlusslieferanten Ports beibehalten kann, muss Sie tun, wenn es zerstört wird und Laden sie dann erneut, wenn er erneut instanziiert wird.
+## <a name="remarks"></a>Bemerkungen
+ Wenn der Portlieferant Ports beibehalten kann, sollte er dies tun, wenn er zerstört wird, und sie dann erneut laden, wenn er erneut instanziiert wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

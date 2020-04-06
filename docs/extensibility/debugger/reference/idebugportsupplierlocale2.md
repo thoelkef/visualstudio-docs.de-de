@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierLocale2 | Microsoft-Dokumentation
+title: IDebugPortSupplierLocale2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f691bba978243e75511996caee38df09baa3c3e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353302"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724297"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Stellt die Gebietsschema-Unterstützung für eines portanbieters bereit.
+Bietet Gebietsschemaunterstützung für einen Portlieferanten.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,23 +27,23 @@ IDebugPortSupplierLocale2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle, um das Gebietsschema festlegen.
+ Ein benutzerdefinierter Portlieferant implementiert diese Schnittstelle, um das Gebietsschema festzulegen.
 
 ## <a name="methods"></a>Methoden
- Die folgende Tabelle zeigt die Methoden der **IDebugPortSupplierLocale2**.
+ Die folgende Tabelle zeigt die Methoden von **IDebugPortSupplierLocale2**.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebietsschema für den Anschlusslieferanten fest.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebietsschema für den Portlieferanten fest.|
 
-## <a name="requirements"></a>Anforderungen
- Header: Portpriv.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: Portpriv.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

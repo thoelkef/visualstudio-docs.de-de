@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2 | Microsoft-Dokumentation
+title: IDebugProcess2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bea73c1bce5367d9686e835bb58dd99a83cc818
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c72659491ec6718397a4fbb494175eea0896c7f7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314141"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723796"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
-Diese Schnittstelle stellt einen Prozess auf einem Port ausgeführt wird. Wenn der Port der lokale Port, dann ist `IDebugProcess2` in der Regel einen physischen Prozess auf dem lokalen Computer darstellt.
+Diese Schnittstelle stellt einen Prozess dar, der auf einem Port ausgeführt wird. Wenn der Port der lokale `IDebugProcess2` Port ist, stellt er in der Regel einen physischen Prozess auf dem lokalen Computer dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,52 +29,52 @@ IDebugProcess2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle wird von einem benutzerdefinierten Port Lieferanten zum Verwalten von Programmen als Gruppe implementiert. Diese Schnittstelle muss von den Anschlusslieferanten implementiert werden.
+ Diese Schnittstelle wird von einem benutzerdefinierten Portanbieter implementiert, um Programme als Gruppe zu verwalten. Diese Schnittstelle muss vom Portlieferanten implementiert werden.
 
- Ein Debugmodul implementiert diese Schnittstelle auch, falls dies unterstützt das Starten eines Programms durch [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
+ Ein Debugmodul implementiert diese Schnittstelle auch, wenn es das Starten eines Programms über [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)unterstützt.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Diese Schnittstelle ist in erster Linie durch die sitzungsbasierter Debug-Manager (SDM) aufgerufen, um die Interaktion mit einer Gruppe von Programmen, die in diesem Prozess identifiziert.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Diese Schnittstelle wird in erster Linie vom Sitzungsdebug-Manager (SDM) aufgerufen, um mit einer Gruppe von Programmen zu interagieren, die in diesem Prozess identifiziert wurden.
 
- Rufen Sie [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md) oder [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md) auf dieser Schnittstelle abzurufen. Diese Schnittstelle wird auch zurückgegeben, durch den Aufruf `IDebugEngineLaunch2::LaunchSuspended`.
+ Rufen Sie [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md) oder [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md) auf, um diese Schnittstelle abzurufen. Diese Schnittstelle wird auch `IDebugEngineLaunch2::LaunchSuspended`durch Aufrufen zurückgegeben.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugProcess2`.
+ Die folgende Tabelle zeigt `IDebugProcess2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|Ruft eine Beschreibung des Prozesses.|
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Listet die Programme, die in diesem Prozess enthalten sind.|
-|[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Ruft ab, der Titel, der Anzeigename oder der Dateiname des Prozesses.|
-|[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Ruft die Instanz von einem Computer, Server, die, den diesen Prozess ausgeführt wird.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|Ruft eine Beschreibung des Prozesses ab.|
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Zählt die Programme auf, die in diesem Prozess enthalten sind.|
+|[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Ruft den Titel, den Anzeigenamen oder den Dateinamen des Prozesses ab.|
+|[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Ruft die Instanz eines Computerservers ab, auf dem dieser Prozess ausgeführt wird.|
 |[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Beendet den Prozess.|
-|[Anfügen](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Fügt an den Prozess.|
+|[Anfügen](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Fügt an den Prozess an.|
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|Bestimmt, ob das SDM den Prozess trennen kann.|
-|[Trennen](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Trennt den Debugger aus dem Prozess.|
-|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Ruft die System-Prozess-ID ab.|
+|[Trennen](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Trennt den Debugger vom Prozess.|
+|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Ruft den Systemprozessbezeichner ab.|
 |[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Ruft einen global eindeutigen Bezeichner für diesen Prozess ab.|
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung, die Debuggen des Prozesses.<br /><br /> [DEPRECATED. SOLLTEN SIE IMMER RÜCKGABE `E_NOTIMPL`.]|
-|[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Listet die Threads im Prozess ausgeführt wird.|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Fordert an, die das nächste Programm, das Ausführen von Code in diesem Prozess beenden.|
-|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Ruft ab, der Port, den diesem Prozess ausgeführt wird.|
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung ab, die den Prozess debugg.<br /><br /> [VERALTET. SOLLTE IMMER `E_NOTIMPL`ZURÜCKGEBEN .]|
+|[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Zählt die Threads auf, die im Prozess ausgeführt werden.|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Fordert an, dass das nächste Programm, das Code in diesem Prozess ausführt, beendet wird.|
+|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Ruft den Port ab, auf dem dieser Prozess ausgeführt wird.|
 
-## <a name="remarks"></a>Hinweise
- Ein `IDebugProcess2` enthält ein oder mehrere [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstellen.
+## <a name="remarks"></a>Bemerkungen
+ Ein `IDebugProcess2` enthält eine oder mehrere [IDebugProgram2-Schnittstellen.](../../../extensibility/debugger/reference/idebugprogram2.md)
 
-## <a name="requirements"></a>Anforderungen
- Header: Msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
-- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [Getprocess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
-- [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
-- [Nächste](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)
-- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
+- [Getprocess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+- [Weiter](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)
+- [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,5 +1,5 @@
 ---
-title: CustomParameter-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: CustomParameter-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf76edec01cce52768f36dc534d50b580b64230
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322265"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739432"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter-Element (Visual Studio-Vorlagen)
-Enthält eine benutzerdefinierte Parametername und der Wert, der verwendet wird, wenn ein Projekt oder Element aus der Vorlage erstellt wird.
+Enthält einen benutzerdefinierten Parameternamen und -wert, der verwendet werden soll, wenn ein Projekt oder Element aus der Vorlage erstellt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,25 +34,25 @@ Enthält eine benutzerdefinierte Parametername und der Wert, der verwendet wird,
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`Name`|Erforderlich. Der Name des Parameters. Das Format für Parameter lautet $*Namen*$.|
-|`Value`|Erforderlich. Der Ersatzwert für den Parameter.|
+|`Name`|Erforderlich. Der Name des Parameters. Das Format für Parameter ist der*Name*.|
+|`Value`|Erforderlich. Der Ersetzungswert für den Parameter.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Gruppiert die benutzerdefinierten Parameter ab, die Vorlagen-Assistenten übergeben werden, wenn der Assistent Parameter Ersetzungen vornimmt.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Gruppiert die benutzerdefinierten Parameter, die an den Vorlagenassistenten übergeben werden sollen, wenn der Assistent Parameterersetzungen vornimmt.|
 
-## <a name="remarks"></a>Hinweise
- Wenn eine Vorlage enthält `CustomParameter` Elementen wird jede Instanz der `Name` Attribut wird durch ersetzt die `Value` -Attribut in die erstellten Projekt oder Element-Dateien.
+## <a name="remarks"></a>Bemerkungen
+ Wenn eine `CustomParameter` Vorlage Elemente enthält, wird jede Instanz, die das `Name` Attribut ersetzt, durch das `Value` Attribut in den erstellten Projekt- oder Elementdateien ersetzt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie Sie mehrere benutzerdefinierte Parameter in einer Vorlage zu verwenden. Wenn ein Projekt oder Element aus einer Vorlage mit den folgenden benutzerdefinierten Parametern, alle Instanzen der erstellt wird `$color1$` und `$color2$` in der Vorlage die Dateien ersetzt werden, mit `Red` und `Blue`bzw.
+ Das folgende Beispiel zeigt, wie mehrere benutzerdefinierte Parameter in einer Vorlage verwendet werden. Wenn ein Projekt oder Element aus einer Vorlage mit den `$color1$` `$color2$` folgenden benutzerdefinierten Parametern `Red` erstellt `Blue`wird, werden alle Instanzen und in den Vorlagendateien durch bzw. ersetzt.
 
 ```
 <CustomParameters>
@@ -61,7 +61,7 @@ Enthält eine benutzerdefinierte Parametername und der Wert, der verwendet wird,
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [CustomParameters-Element (Visual Studio-Vorlagen)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)

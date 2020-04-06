@@ -6,23 +6,23 @@ helpviewer_keywords:
 - GetFormalTypeParams
 - IDebugGenericFieldDefinition::GetFormalTypeParams
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 164bb5c3f74dec9a56ce3146c5e7ec62d6eb46b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313175"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728248"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
-Ruft die Typparameter in Anbetracht der Anzahl von Parametern ab.
+Ruft die Typparameter mit der Anzahl der Parameter ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,19 +44,19 @@ int GetFormalTypeParams(
 
 ## <a name="parameters"></a>Parameter
 `cParams`\
-[in] Anzahl von Parametern.
+[in] Anzahl der Parameter.
 
 `ppParams`\
-[out] Ein Array von Typparametern.
+[out] Array von Typparametern.
 
 `pcParams`\
-[in, out] Anzahl von Parametern in der `ppParams` Array.
+[in, out] Anzahl der Parameter `ppParams` im Array.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Geben Sie die Typparametern in einer Reihenfolge von links nach rechts. Z. B. Wörterbücher\<K, V > IDebugFormalGenericParameters {K, V} zurückgibt.
+## <a name="remarks"></a>Bemerkungen
+ Geben Sie die Typparameter in der Reihenfolge von links nach rechts zurück. Beispielsweise gibt\<Wörterbuch K,V> IDebugFormalGenericParameters zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

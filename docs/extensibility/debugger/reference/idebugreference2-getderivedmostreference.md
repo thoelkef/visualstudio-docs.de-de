@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetDerivedMostReference | Microsoft-Dokumentation
+title: IDebugReference2::GetDerivedMostReferenz | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetDerivedMostReference
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8775087b9ec212f7e7d7e1547d01a5f175c4dc22
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15e98884d040cfb2ebf1b33a56c7edea331fbff0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329825"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720618"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-Ruft den am stärksten abgeleitete-Verweis, der einen Verweis ab. Für zukünftige Verwendung reserviert.
+Ruft den abgeleiteten Referenzpunkt eines Verweises ab. Für die zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetDerivedMostReference( 
 
 ## <a name="parameters"></a>Parameter
 `ppDerivedMost`\
-[out] Gibt eine [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Objekt, das die am stärksten abgeleitete Eigenschaft darstellt.
+[out] Gibt ein [IDebugReference2-Objekt](../../../extensibility/debugger/reference/idebugreference2.md) zurück, das die am weitesten abgeleitete Eigenschaft darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.
 
-## <a name="remarks"></a>Hinweise
- Z. B., wenn diese Eigenschaft auf ein Objekt beschreibt, die implementiert `ClassRoot` , aber dies ist tatsächlich eine Instanziierung von `ClassDerived` abgeleitete `ClassRoot`, gibt diese Methode eine [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt Ein Verweis auf die `ClassDerived` Objekt.
+## <a name="remarks"></a>Bemerkungen
+ Wenn diese Eigenschaft beispielsweise ein Objekt `ClassRoot` beschreibt, das implementiert, aber `ClassDerived` tatsächlich eine `ClassRoot`Instanziierung davon ist, die von abgeleitet `ClassDerived` wird, gibt diese Methode ein [IDebugReference2-Objekt](../../../extensibility/debugger/reference/idebugreference2.md) zurück, das einen Verweis auf das Objekt darstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

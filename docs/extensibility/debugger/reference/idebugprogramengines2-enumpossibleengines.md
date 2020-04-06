@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft-Dokumentation
+title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 532486c66b6feb5c397b9167e2b1cd6197513fa8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343397"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722435"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-Gibt zurück, die GUIDs für alle der möglichen Debug-Engines (DE), die das Programm debuggen können.
+Gibt die GUIDs für alle möglichen Debug-Engines (DE) zurück, die dieses Programm debuggen können.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,19 +45,19 @@ int EnumPossibleEngines( 
 
 ## <a name="parameters"></a>Parameter
 `celtBuffer`\
-[in] Die Anzahl der DE-GUIDs, die zurückgegeben werden soll. Hiermit wird die maximale Größe der auch die `rgguidEngines` Array.
+[in] Die Anzahl der zurückzurückzugebenden DE-GUIDs. Dadurch wird auch die maximale `rgguidEngines` Größe des Arrays angegeben.
 
 `rgguidEngines`\
-[in, out] Ein Array von DE-GUIDs gefüllt werden soll.
+[in, out] Ein Array von DE-GUIDs, die ausgefüllt werden sollen.
 
 `pceltEngines`\
-[out] Gibt die tatsächliche Anzahl von DE-GUIDs, die zurückgegeben werden.
+[out] Gibt die tatsächliche Anzahl der zurückgegebenen DE-GUIDs zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` oder [C#] 0x8007007A, wenn der Puffer nicht groß genug ist.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` oder [C'] 0x8007007A zurück, wenn der Puffer nicht groß genug ist.
 
-## <a name="remarks"></a>Hinweise
- Um zu bestimmen, wie viele Module vorhanden sind, rufen diese Methode einmal mit der `celtBuffer` -Parameter auf 0 festgelegt und die `rgguidEngines` -Parameter auf einen null-Wert festgelegt. Dies gibt `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A für C#-Code), und die `pceltEngines` Parameter gibt die erforderliche Größe des Puffers zurück.
+## <a name="remarks"></a>Bemerkungen
+ Um zu bestimmen, wie viele Module vorhanden sind, rufen Sie diese Methode einmal auf, wobei der `celtBuffer` Parameter auf 0 und der `rgguidEngines` Parameter auf einen Nullwert festgelegt ist. Dadurch `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` wird die erforderliche Größe des Puffers zurückgegeben (0x8007007A für C-Code), und der `pceltEngines` Parameter gibt die erforderliche Größe des Puffers zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

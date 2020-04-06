@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Microsoft-Dokumentation
+title: IDebugBinder::Bind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00d7e63b8a521ee25d2c7d378aeb82d064358ec9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344495"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736015"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Diese Methode ruft den Arbeitsspeicher-Kontext oder das Objekt, das das Symbol für den aktuellen Wert enthält.
+Diese Methode ruft den Speicherkontext oder das Objekt ab, das den aktuellen Wert des Symbols enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,18 +45,18 @@ int Bind(
 
 ## <a name="parameters"></a>Parameter
 `pContainer`\
-[in] Die [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , enthält das untergeordnete Element verweist `pField`.
+[in] Das [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) das das `pField`untergeordnete Element enthält, auf das von verwiesen wird.
 
 `pField`\
-[in] Die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , das das Symbol darstellt.
+[in] Das [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) das das Symbol darstellt.
 
 `ppObject`\
-[out] Gibt die `IDebugObject` , die die Instanz des Symbols darstellt.
+[out] Gibt `IDebugObject` die zurück, die die Instanz des Symbols darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

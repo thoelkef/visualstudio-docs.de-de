@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS | Microsoft-Dokumentation
+title: PROVIDER_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329369"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713791"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
-Gibt Eigenschaften, die mit einem Programm Anbieter verknüpft sind.
+# <a name="provider_fields"></a>PROVIDER_FIELDS
+Gibt Eigenschaften an, die einem Programmanbieter zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,23 +44,23 @@ public enum enum_PROVIDER_FIELDS {
 
 ## <a name="fields"></a>Felder
  `PFIELD_PROGRAM_NODES`\
- Die `ProgramNodes` Feld ist gültig.
+ Das `ProgramNodes` Feld ist gültig.
 
  `PFIELD_IS_DEBUGGER_PRESENT`\
- Die `fIsDebuggerPresent` Feld ist gültig.
+ Das `fIsDebuggerPresent` Feld ist gültig.
 
-## <a name="remarks"></a>Hinweise
- Diese Werte werden zurückgegeben, der `Fields` Mitglied der [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur, um anzugeben, welche Felder der Struktur explizit ausgefüllt wurden.
+## <a name="remarks"></a>Bemerkungen
+ Diese Werte werden `Fields` im Element der [PROVIDER_PROCESS_DATA-Struktur](../../../extensibility/debugger/reference/provider-process-data.md) zurückgegeben, um anzugeben, welche Felder der Struktur explizit ausgefüllt wurden.
 
- Diese Werte können kombiniert werden, mit einer bitweisen `OR`.
+ Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
