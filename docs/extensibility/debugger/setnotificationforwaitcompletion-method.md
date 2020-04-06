@@ -1,28 +1,28 @@
 ---
-title: SetNotificationForWaitCompletion-Methode | Microsoft-Dokumentation
+title: SetNotificationForWaitCompletion-Methode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d9bee2579cc3a93f657291551955f0c9b7565b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348585"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712864"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion-Methode
-Legt fest oder löscht das TASK_STATE_WAIT_COMPLETION_NOTIFICATION Zustand Bit.
+Legt das TASK_STATE_WAIT_COMPLETION_NOTIFICATION-Statusbit fest oder löscht es.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
+ **Baugruppe:** mscorlib (in *mscorlib.dll*)
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,14 +33,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>Parameter
  `enabled`
 
- `true` Das Bit festgelegt `false` um die Festlegung der Bit.
+ `true`, um das Bit festzulegen; `false` , um das Bit zu unterlassen.
 
 ## <a name="exceptions"></a>Ausnahmen
 
-## <a name="remarks"></a>Hinweise
- Der Debugger wird dieses Bit zur schrittweisen aus Text eine Async-Methode. Wenn `enabled` ist `true`, diese Methode muss aufgerufen werden, nur für eine Aufgabe, die noch nicht abgeschlossen wurde. Wenn `enabled` ist `false`, diese Methode für abgeschlossene Aufgaben aufgerufen werden kann. In jedem Fall sollten sie nur für Vorgänge des Promise-Stil verwendet werden.
+## <a name="remarks"></a>Bemerkungen
+ Der Debugger legt dieses Bit so fest, dass er aus einem asynchronen Methodentext herausspringt. Wenn `enabled` `true`dies der Fall ist, muss diese Methode nur für eine Aufgabe aufgerufen werden, die noch nicht abgeschlossen wurde. Wenn `enabled` `false`dies der Zeitpunkt ist, kann diese Methode für abgeschlossene Aufgaben aufgerufen werden. In beiden Fall sollte es nur für Aufgaben im Versprechenstil verwendet werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
-## <a name="see-also"></a>Siehe auch
-- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

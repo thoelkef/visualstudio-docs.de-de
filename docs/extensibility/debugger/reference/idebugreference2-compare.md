@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare | Microsoft-Dokumentation
+title: IDebugReference2::Vergleichen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::Compare
 ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81398c79289786d2c63fa6f37725c295b690d905
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0d293fcb89c92a19acc4f5a3910015914ef4231a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327552"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720639"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-Vergleicht einen Verweis auf einen anderen. Für zukünftige Verwendung reserviert.
+Vergleicht einen Verweis mit einem anderen. Für die zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,14 +43,14 @@ int Compare ( 
 
 ## <a name="parameters"></a>Parameter
 `dwCompare`\
-[in] Ein Wert aus der [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) -Enumeration, die Vergleichsoperation, z. B. größer oder gleich, kleiner als angibt.
+[in] Ein Wert [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) aus der REFERENCE_COMPARE-Enumeration, der den Vergleichsvorgang angibt, z. B. gleich, kleiner als oder größer als.
 
 `pReference`\
-[in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das den Verweis auf die zu vergleichenden darstellt.
+[in] Ein [IDebugReference2-Objekt,](../../../extensibility/debugger/reference/idebugreference2.md) das den zu vergleichenden Verweis darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)

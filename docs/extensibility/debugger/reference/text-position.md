@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION | Microsoft-Dokumentation
+title: TEXT_POSITION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f53cb7a0dacc58a0d4a8109ea6dd3ca3ab710e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336296"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713412"
 ---
-# <a name="textposition"></a>TEXT_POSITION
-Beschreibt den Zeilen- und Spaltennummer Speicherort im angegebenen Text.
+# <a name="text_position"></a>TEXT_POSITION
+Beschreibt die Zeilen- und Spaltenposition im angegebenen Text.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,16 +44,16 @@ public struct TEXT_POSITION { 
 ## <a name="members"></a>Member
 
 `dwLine`\
-Index der Zeile in der Quelldatei.
+Zeilenindex in der Quelldatei.
 
 `dwColumn`\
-Zeichen Offset in Zeile.
+Zeichenversatz in Zeile.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Struktur wird verwendet, der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) und [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Strukturen.
+Diese Struktur wird in den [Strukturen CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) und [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) verwendet.
 
-Diese Struktur wird durch einen Aufruf für die folgenden Methoden ausgefüllt:
+Diese Struktur wird durch einen Aufruf der folgenden Methoden ausgefüllt:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -75,17 +75,17 @@ Diese Struktur wird als Parameter an die folgenden Methoden übergeben:
 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
- Header: msdbg.h
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

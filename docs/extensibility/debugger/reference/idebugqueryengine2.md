@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2 | Microsoft-Dokumentation
+title: IDebugQueryEngine2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2 interface
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad823c2aab4d2ca17b95c989925b8ffe16b1504d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 31b1784055c54c9243237c81edb708e13de9bc5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339846"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720655"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
-Diese Schnittstelle kann die Sitzung mit dem Debug-Manager (SDM) rufen Sie eine Schnittstelle, die die Debug-Engine (DE) darstellt.
+Mit dieser Schnittstelle kann der Sitzungsdebug-Manager (SDM) eine Schnittstelle abrufen, die das Debugmodul (DE) darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IDebugQueryEngine2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle für die Objekte, die die am häufigsten verwendeten DE-Schnittstellen zu implementieren (z. B. [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), und [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) in Auftrag Zugriff auf die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle des DE selbst.
+ Die DE implementiert diese Schnittstelle für die Objekte, die die gängigsten DE-Schnittstellen implementieren (z. B. [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)und [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)), um den Zugriff auf die [IDebugEngine2-Schnittstelle](../../../extensibility/debugger/reference/idebugengine2.md) der DE selbst zu ermöglichen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Rufen Sie [QueryInterface](/cpp/atl/queryinterface) an einer typischen DE-Schnittstelle, um diese Schnittstelle zu erhalten.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf einer typischen DE-Schnittstelle auf, um diese Schnittstelle zu erhalten.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugQueryEngine2`.
+ Die folgende Tabelle zeigt `IDebugQueryEngine2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Ruft einen benutzerdefinierten Debug-Engine (DE)-Schnittstelle ab.|
+|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Ruft eine benutzerdefinierte Debug-Engine(DE)-Schnittstelle ab.|
 
-## <a name="remarks"></a>Hinweise
- Diese Schnittstelle wird in der Regel implementiert, in das Objekt, implementiert die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle zur Unterstützung von Kausalität geordnete Durchlaufen von Funktionen, d. h., wenn der Debugger aus einer Funktion, schrittweise Ausführung ist die die Next-Funktion zum Ausführen der previous-Funktion auf dem Stapel jedoch eine Funktion in einem anderen Thread vollständig möglicherweise nicht. Eine Definition von "Kausalität" finden Sie in der [Visual Studio-Debugger-Glossar](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
+## <a name="remarks"></a>Bemerkungen
+ Diese Schnittstelle wird in der Regel in dem Objekt implementiert, das die [IDebugProgram2-Schnittstelle](../../../extensibility/debugger/reference/idebugprogram2.md) implementiert, um kausalitätsbeordierte Strittfunktionen zu unterstützen. Das heißt, wenn der Debugger aus einer Funktion heraustritt, ist die nächste auszuführende Funktion möglicherweise nicht die vorherige Funktion auf dem Stapel, sondern eine Funktion in einem anderen Thread insgesamt. Eine Definition von "Kausalität" finden Sie im [Visual Studio Debugger Glossary](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

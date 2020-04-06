@@ -1,36 +1,36 @@
 ---
-title: Bereitstellen von Automatisierung für Code | Microsoft-Dokumentation
+title: Bereitstellen von Automatisierung für Code | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 874446aa6bf2e40a120aac49e7d91fd3d861d1d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724959"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705996"
 ---
 # <a name="providing-automation-for-code"></a>Bereitstellen von Automatisierung für Code
-Das Erstellen eines Automatisierungs Modells für Ihren Code ist nicht erforderlich. Das Umgebungs-SDK bietet hierfür kein Beispiel. Einen Einblick in Code Modelle finden Sie im <xref:EnvDTE.CodeModel>-Objekt.
+Das Erstellen eines Automatisierungsmodells für Ihren Code ist nicht erforderlich. Das Environment SDK stellt dafür kein Beispiel bereit. Informationen zu Codemodellen finden <xref:EnvDTE.CodeModel> Sie im Objekt.
 
- Zum Implementieren eines Code Modells müssen Sie alle Schnittstellen implementieren, die von der internen Datenstruktur bestimmt werden. Die Objekte müssen von der `IDispatch` Klasse abgeleitet werden.
+ Um ein Codemodell zu implementieren, müssen Sie alle Schnittstellen implementieren, die von Ihrer internen Datenstruktur bestimmt werden. Die Objekte müssen von `IDispatch` der Klasse abgeleitet werden.
 
- Die-Objekte, die Sie erweitern, <xref:EnvDTE.CodeModel> und <xref:EnvDTE.FileCodeModel>, sind über das <xref:EnvDTE.Project>-Objekt verfügbar und sehen wie folgt aus:
+ Die Objekte, die <xref:EnvDTE.CodeModel> <xref:EnvDTE.FileCodeModel>Sie erweitern und <xref:EnvDTE.Project> , sind im Objekt verfügbar und sehen wie folgt aus:
 
 - <xref:EnvDTE.Project.CodeModel%2A>
 
 - <xref:EnvDTE.ProjectItem.FileCodeModel%2A>
 
- Sie können auswählen, dass Sie nur die `CodeModel` oder die `FileCodeModel` Schnittstelle in dem Objekt implementieren, das Sie aus dem `Project` und <xref:EnvDTE.ProjectItem> Objekten zurückgeben. Stellen Sie eine beliebige Funktionalität von dieser Schnittstelle bereit, die für Ihr Projekt System geeignet ist.
+ Sie können wählen, `CodeModel` ob `FileCodeModel` Sie nur die oder `Project` die <xref:EnvDTE.ProjectItem> Schnittstelle in dem Objekt implementieren möchten, das Sie von Ihrem und Ihren Objekten zurückgeben. Stellen Sie alle Funktionen dieser Schnittstelle bereit, die für Ihr Projektsystem geeignet sind.
 
- Wenn Sie Funktionen hinzufügen möchten, z. b. Methoden oder Eigenschaften, die nicht über die standardmäßigen `CodeModel` und `FileCodeModel` Schnittstellen verfügbar sind, erstellen Sie eine eigene Schnittstelle, die vom Standard erbt. Stellen Sie sicher, dass Sie Sie mit Ihrem Projekt System dokumentieren, damit Endbenutzer darauf achten können. Sie geben die Standardschnittstelle zurück, aber der Benutzer kann die `QueryInterface`-Methode oder eine Umwandlung in die-Schnittstelle durchsetzen, wenn bekannt ist, dass Sie vorhanden ist.
+ Wenn Sie Features hinzufügen möchten, z. B. Methoden oder `CodeModel` `FileCodeModel` Eigenschaften, die nicht über den Standard und Schnittstellen verfügbar sind, erstellen Sie eine eigene Schnittstelle, die vom Standard erbt. Dokumentieren Sie dies mit Ihrem Projektsystem, damit die Endbenutzer wissen, dass sie danach suchen. Sie geben die Standardschnittstelle zurück, `QueryInterface` aber der Benutzer kann die Methode aufrufen oder auf die Schnittstelle umwerfen, wenn bekannt ist, dass sie vorhanden ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über das Automatisierungsmodell](../../extensibility/internals/automation-model-overview.md)

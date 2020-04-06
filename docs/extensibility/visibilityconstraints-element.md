@@ -1,5 +1,5 @@
 ---
-title: VisibilityConstraints-Element | Microsoft-Dokumentation
+title: VisibilityConstraints-Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, VisibilityConstraints
 - VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee64b4b8ccebe6e63b5c558df68e0a5625b37884
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1aaa9573b883910ac6fa5d921a9bc79ce1c1cf3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310670"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698194"
 ---
-# <a name="visibilityconstraints-element"></a>VisibilityConstraints-element
-VisibilityConstraints-Element bestimmt die statische Sichtbarkeit von Gruppen von Befehle und Symbolleisten. Die Sichtbarkeit wird zuerst gesteuert, von der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) ohne das VSPackage zu laden.
+# <a name="visibilityconstraints-element"></a>VisibilityConstraints-Element
+Das VisibilityConstraints-Element bestimmt die statische Sichtbarkeit von Befehls- und Symbolleistengruppen. Die Sichtbarkeit wird zunächst [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] durch die integrierte Entwicklungsumgebung (IDE) gesteuert, ohne das VSPackage zu laden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,22 +37,22 @@ VisibilityConstraints-Element bestimmt die statische Sichtbarkeit von Gruppen vo
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[VisibilityItem-element](../extensibility/visibilityitem-element.md)|Bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten.|
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Bestimmt die statische Sichtbarkeit von Gruppen von Befehle und Symbolleisten.|
+|[VisibilityItem-Element](../extensibility/visibilityitem-element.md)|Bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten.|
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Bestimmt die statische Sichtbarkeit von Befehlsgruppen und Symbolleistengruppen.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CommandTable-element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern) darstellen, die eine VSPackage für der IDE bereitstellt.|
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die die Befehle darstellen (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfelder), die ein VSPackage für die IDE bereitstellt.|
 
 ## <a name="example"></a>Beispiel
 
@@ -63,6 +63,6 @@ VisibilityConstraints-Element bestimmt die statische Sichtbarkeit von Gruppen vo
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [VisibilityItem-element](../extensibility/visibilityitem-element.md)
-- [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [VisibilityItem-Element](../extensibility/visibilityitem-element.md)
+- [Visual Studio-Befehlstabelle (. Vsct)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

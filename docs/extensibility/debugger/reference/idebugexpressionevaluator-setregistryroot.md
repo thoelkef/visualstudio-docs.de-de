@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft-Dokumentation
+title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetRegistryRoot method
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2f64272b38b6a41e8637e884f19da62d2fd1a1e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325611"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729415"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Diese Methode legt den Registrierungsstamm. Zum Debuggen von Seite-an-Seite verwendet.
+Diese Methode legt den Registrierungsstamm fest. Wird für das side-by-side-Debugging verwendet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,10 +44,10 @@ int SetRegistryRoot(
 [in] Der neue Registrierungsstamm.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Der angegebene Registrierungsstamm ist in der Regel festgelegt werden, wenn die ausdrucksauswertung zuerst instanziiert und verweist auf den Registrierungsschlüssel für eine bestimmte Version von Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , wobei *X.Y* ist eine Versionsnummer).
+## <a name="remarks"></a>Bemerkungen
+ Der angegebene Registrierungsstamm wird in der Regel festgelegt, wenn der Ausdrucksauswertungswert zuerst instanziiert wird und auf den\\Registrierungsschlüssel für eine bestimmte Version von Visual Studio verweist (HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio*X.Y*, wobei *X.Y* eine Versionsnummer ist).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

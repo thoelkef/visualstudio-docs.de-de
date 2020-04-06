@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Dateien mit dem Befehl Open File | Microsoft-Dokumentation
+title: Anzeigen von Dateien mithilfe des Befehls "Datei öffnen" | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,52 +7,52 @@ helpviewer_keywords:
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19fda87f0e2692d30b9a99777ca11edd7b3906f0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324340"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708600"
 ---
-# <a name="display-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mithilfe des Befehls Öffnen von Dateien
-Die folgenden Schritte beschreiben, wie verarbeitet die IDE die **geöffnete Datei** Befehl, der verfügbar ist. die **Datei** im Menü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Schritte beschreiben außerdem, wie Projekte auf Aufrufe, die von diesem Befehl stammen, reagieren soll.
+# <a name="display-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mithilfe des Befehls Datei öffnen
+Die folgenden Schritte beschreiben, wie die IDE den Befehl **Datei** öffnen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verarbeitet, der im Menü **Datei** in verfügbar ist. In den Schritten wird auch beschrieben, wie Projekte auf Aufrufe reagieren sollen, die von diesem Befehl stammen.
 
- Klickt ein Benutzer die **geöffnete Datei** Befehl die **Datei** im Menü und wählt aus einer Datei aus der **geöffnete Datei** im Dialogfeld der folgende Prozess durchgeführt:
+ Wenn ein Benutzer im Menü **Datei** auf den Befehl **Datei** öffnen klickt und eine Datei aus dem Dialogfeld **Datei öffnen** auswählt, tritt der folgende Vorgang auf:
 
-1. Mithilfe der ausgeführten Dokumententabelle, bestimmt die IDE an, ob die Datei bereits in einem Projekt geöffnet ist.
+1. Anhand der laufenden Dokumenttabelle bestimmt die IDE, ob die Datei bereits in einem Projekt geöffnet ist.
 
-    - Wenn die Datei geöffnet ist, auftritt die IDE das Fenster an.
+    - Wenn die Datei geöffnet ist, wird das Fenster von der IDE erneut angezeigt.
 
-    - Wenn die Datei nicht geöffnet ist, ruft die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Abfragen jedes Projekt, um zu bestimmen, welches Projekt die Datei öffnen kann.
+    - Wenn die Datei nicht geöffnet <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> ist, ruft die IDE jedes Projekt auf, um zu bestimmen, welches Projekt die Datei öffnen kann.
 
         > [!NOTE]
-        > In der Projekt-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, geben Sie einen Prioritätswert, der die Stufe gibt an, an dem das Projekt die Datei geöffnet. Priority-Werte finden Sie in der <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration.
+        > Geben Sie in <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>der Projektimplementierung von einen Prioritätswert an, der die Ebene angibt, auf der das Projekt die Datei öffnet. Prioritätswerte werden <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> in der Enumeration bereitgestellt.
 
-2. Jedes Projekt gibt eine Prioritätsstufe, die die Wichtigkeit gibt an, es wird auf das Projekt die Datei geöffnet wird.
+2. Jedes Projekt antwortet mit einer Prioritätsstufe, die angibt, wie wichtig es ist, das Projekt zum Öffnen der Datei zu sein.
 
-3. Die IDE verwendet die folgenden Kriterien, um zu bestimmen, welches Projekt die Datei geöffnet wird:
+3. Die IDE verwendet die folgenden Kriterien, um zu bestimmen, welches Projekt die Datei öffnet:
 
-    - Das Projekt, das mit der höchsten Priorität reagiert (`DP_Intrinsic`) wird die Datei geöffnet. Wenn mehr als ein Projekt mit dieser Priorität antwortet, wird das erste Projekt, reagieren die Datei geöffnet.
+    - Das Projekt, das mit der`DP_Intrinsic`höchsten Priorität ( ) antwortet, öffnet die Datei. Wenn mehr als ein Projekt mit dieser Priorität antwortet, öffnet das erste zu beantwortende Projekt die Datei.
 
-    - Wenn kein Projekt mit der höchsten Priorität antwortet (`DP_Intrinsic`), aber alle Projekte mit der gleichen, niedriger Priorität, das aktive Projekt öffnet die Datei. Wenn kein Projekt aktiv ist, wird das erste Projekt, reagieren die Datei geöffnet.
+    - Wenn kein Projekt mit der`DP_Intrinsic`höchsten Priorität ( ) antwortet, aber alle Projekte mit der gleichen, niedrigeren Priorität antworten, öffnet das aktive Projekt die Datei. Wenn kein Projekt aktiv ist, wird die Datei vom ersten zu beantwortenden Projekt geöffnet.
 
-    - Wenn kein Projekt mit den Besitz der Datei Ansprüche (`DP_Unsupported`), das Projekt verschiedene Dateien öffnet die Datei.
+    - Wenn kein Projekt den Besitz`DP_Unsupported`der Datei ( beansprucht , öffnet das Projekt Verschiedene Dateien die Datei.
 
-         Wenn eine Instanz des Projekts sonstige Dateien erstellt wird, wird das Projekt immer mit dem Wert antwortet `DP_CanAddAsExternal`. Dieser Wert gibt an, dass das Projekt die Datei öffnen kann. Dieses Projekt werden geöffnete Dateien enthalten, die nicht in anderen Projekten enthalten sind. Die Liste der Elemente in diesem Projekt wird nicht beibehalten; Dieses Projekt werden in **Projektmappen-Explorer** nur wenn er verwendet wird, eine Datei zu öffnen.
+         Wenn eine Instanz des Projekts Verschiedene Dateien erstellt wird, antwortet das `DP_CanAddAsExternal`Projekt immer mit dem Wert . Dieser Wert gibt an, dass das Projekt die Datei öffnen kann. Dieses Projekt wird verwendet, um offene Dateien zu speichern, die sich in keinem anderen Projekt befinden. Die Liste der Elemente in diesem Projekt wird nicht beibehalten. Dieses Projekt ist im **Projektmappen-Explorer** nur sichtbar, wenn es zum Öffnen einer Datei verwendet wird.
 
-         Wenn das Projekt verschiedene Dateien nicht angegeben ist, dass die Datei geöffnet werden können, wurde eine Instanz des Projekts nicht erstellt. In diesem Fall wird die IDE erstellt eine Instanz des Projekts sonstige Dateien, und teilt dem Projekt die Datei geöffnet.
+         Wenn das Projekt Verschiedene Dateien nicht darauf hinweist, dass es die Datei öffnen kann, wurde keine Instanz des Projekts erstellt. In diesem Fall erstellt die IDE eine Instanz des Projekts Verschiedene Dateien und weist das Projekt an, die Datei zu öffnen.
 
-4. Sobald die IDE stellt fest, welches Projekt die Datei geöffnet wird, ruft der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Methode für das Projekt.
+4. Sobald die IDE bestimmt, welches Projekt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Datei öffnet, ruft sie die Methode für dieses Projekt auf.
 
-5. Das Projekt enthält dann die Möglichkeit, die Datei über einen projektspezifischen Editor oder einem standard-Editor zu öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md) und [Vorgehensweise: Öffnen Sie die standard-Editoren](../../extensibility/how-to-open-standard-editors.md)bzw.
+5. Das Projekt hat dann die Möglichkeit, die Datei mit einem projektspezifischen Editor oder einem Standardeditor zu öffnen. Weitere Informationen finden Sie unter [Gewusst wie: Öffnen projektspezifischer Editoren](../../extensibility/how-to-open-project-specific-editors.md) [bzw. How to: Open standard editors.](../../extensibility/how-to-open-standard-editors.md)
 
-## <a name="see-also"></a>Siehe auch
-- [Anzeigen von Dateien mithilfe des Befehls Öffnen mit](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Anzeigen von Dateien mithilfe des Befehls "Mit öffnen"](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)
-- [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)
-- [Vorgehensweise: Open-standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+- [Gewusst wie: Öffnen sie projektspezifische Editoren](../../extensibility/how-to-open-project-specific-editors.md)
+- [Gewusst wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)

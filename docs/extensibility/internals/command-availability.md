@@ -1,59 +1,59 @@
 ---
-title: Befehl Verfügbarkeit | Microsoft-Dokumentation
+title: Befehlsverfügbarkeit | Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5087e5f7958f9abe46e0caeb2eb03e21285e4da7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338595"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709697"
 ---
 # <a name="command-availability"></a>Befehlsverfügbarkeit
 
-Der Visual Studio-Kontext wird bestimmt, welche Befehle verfügbar sind. Je nach dem aktuellen Projekt, den aktuellen Editor, die VSPackages, die geladen werden und andere Aspekte der integrierten Entwicklungsumgebung (IDE) kann den Kontext zu ändern.
+Der Visual Studio-Kontext bestimmt, welche Befehle verfügbar sind. Der Kontext kann sich je nach aktuellem Projekt, dem aktuellen Editor, den geladenen VSPackages und anderen Aspekten der integrierten Entwicklungsumgebung (IDE) ändern.
 
 ## <a name="command-contexts"></a>Befehlskontexte
 
-Die folgenden Befehl Kontexten, die die häufigsten Ursachen sind:
+Die folgenden Befehlskontexte sind die häufigsten:
 
-- IDE-GERÄTE: Befehle, die von der IDE bereitgestellt sind immer verfügbar.
+- IDE: Befehle, die von der IDE bereitgestellt werden, sind immer verfügbar.
 
-- VSPackage: VSPackages können definieren, wenn Befehle sind, angezeigt oder ausgeblendet werden.
+- VSPackage: VSPackages kann definieren, wann Befehle angezeigt oder ausgeblendet werden sollen.
 
-- Projekt: Projektbefehle werden nur für das aktuell ausgewählte Projekt.
+- Projekt: Projektbefehle werden nur für das aktuell ausgewählte Projekt angezeigt.
 
-- Editor: Nur ein Editor kann jeweils aktiv sein. Befehle vom aktiven Editor zur Verfügung. Ein Editor arbeitet eng mit einem Sprachdienst. Der Sprachdienst muss die Befehle im Kontext des zugeordneten Editor verarbeiten.
+- Editor: Es kann jeweils nur ein Editor aktiv sein. Befehle aus dem aktiven Editor sind verfügbar. Ein Redakteur arbeitet eng mit einem Sprachdienst zusammen. Der Sprachdienst muss seine Befehle im Kontext des zugehörigen Editors verarbeiten.
 
-- Dateityp: Ein Editor kann mehr als eine Art von Datei geladen werden. Die verfügbaren Befehle können je nach Dateityp ändern.
+- Dateityp: Ein Editor kann mehr als einen Dateityp laden. Die verfügbaren Befehle können sich je nach Dateityp ändern.
 
-- Aktive Fenster: Die letzte aktive Fenster wird den Benutzerkontext für die Benutzeroberfläche (UI) für tastenzuordnungen. Ein Toolfenster, das eine Tabelle von Schlüssel-Bindung verfügt, die den internen Webbrowser ähnelt jedoch festlegen auch den UI-Kontext. Jede Registerkarte hat mit mehreren Registerkarten Dokumentfenster wie z. B. der HTML-Editor einen anderen Befehlskontext-GUID. Nach dem Registrieren eines Toolfensters ist es immer verfügbar, auf die **Ansicht** Menü.
+- Aktives Fenster: Das letzte aktive Dokumentfenster legt den Kontext der Benutzeroberfläche für Schlüsselbindungen fest. Ein Toolfenster mit einer Schlüsselbindungstabelle, die dem internen Webbrowser ähnelt, kann jedoch auch den UI-Kontext festlegen. Für Dokumentfenster mit mehreren Tab-Betten, z. B. den HTML-Editor, verfügt jede Registerkarte über eine andere Befehlskontext-GUID. Nachdem ein Toolfenster registriert wurde, ist es immer im Menü **Ansicht** verfügbar.
 
-- UI-Kontext: Benutzeroberfläche-Kontexte werden durch die Werte der identifiziert die <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> Klasse, z. B. <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> , wenn die Projektmappe erstellt wird, oder <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> Wenn der Debugger aktiv ist. Mehrere UI-Kontext können gleichzeitig aktiv sein.
+- UI-Kontext: UI-Kontexte werden durch <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> die Werte <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> der Klasse identifiziert, z. B. wenn die Lösung erstellt wird oder <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> wenn der Debugger aktiv ist. Mehrere UI-Kontexte können gleichzeitig aktiv sein.
 
-## <a name="define-custom-context-guids"></a>Definieren von benutzerdefinierten Kontext-GUIDs
+## <a name="define-custom-context-guids"></a>Definieren benutzerdefinierter Kontext-GUIDs
 
-Wenn einen entsprechenden Befehl-Kontext, den GUID noch nicht definiert ist, können Sie eine solche im VSPackage definieren, und klicken Sie dann Programmieren zu aktiven oder inaktiven nach Bedarf, um die Sichtbarkeit Ihrer Befehle zu steuern:
+Wenn eine entsprechende Befehlskontext-GUID noch nicht definiert ist, können Sie eine in Ihrem VSPackage definieren und sie dann so programmieren, dass sie aktiv oder inaktiv ist, um die Sichtbarkeit Ihrer Befehle zu steuern:
 
-1. Registrieren Sie die Kontext-GUIDs durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode.
+1. Registrieren Sie Kontext-GUIDs, indem Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode aufrufen.
 
-2. Rufen Sie den Status der Kontext-GUID durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode.
+2. Rufen Sie den Status einer Kontext-GUID ab, indem Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode aufrufen.
 
-3. Aktivieren Sie das Kontext-GUIDs und deaktivieren durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode.
+3. Aktivieren und deaktivieren Sie Kontext-GUIDs, indem Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode aufrufen.
 
 > [!CAUTION]
-> Stellen Sie sicher, dass Ihr VSPackage keine vorhandenen Kontext GUIDs auswirkt, da es sich bei anderen VSPackages möglicherweise von ihnen abhängig sind.
+> Stellen Sie sicher, dass Ihr VSPackage keine vorhandenen Kontext-GUIDs beeinflusst, da andere VSPackages möglicherweise davon abhängen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)
 - [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

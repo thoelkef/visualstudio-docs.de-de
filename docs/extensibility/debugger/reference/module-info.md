@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Microsoft-Dokumentation
+title: MODULE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db67710fd7ee71cddf1e7dbee030cb208a1de86c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339120"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714310"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
-Beschreibt ein bestimmtes Modul (DLL, EXE-Datei oder Assembly).
+# <a name="module_info"></a>MODULE_INFO
+Beschreibt ein bestimmtes Modul (DLL, EXE oder Assembly).
 
 ## <a name="syntax"></a>Syntax
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>Member
  `dwValidFields`\
- Eine Kombination von Flags aus der [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Enumeration, der angibt, welche Felder ausgefüllt sind.
+ Eine Kombination von [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Flags aus der MODULE_INFO_FIELDS-Enumeration, die angibt, welche Felder ausgefüllt werden.
 
  `m_bstrName`\
  Der Modulname.
@@ -75,7 +75,7 @@ public struct MODULE_INFO { 
  Die Modulversion.
 
  `m_bstrDebugMessage`\
- Eine optionale Nachricht, die über das Modul, z. B. "Symbole geladen werden nicht möglich."
+ Eine optionale Meldung zum Modul, z. B. "Symbole können nicht geladen werden."
 
  `m_addrLoadAddress`\
  Die Ladeadresse des Moduls.
@@ -87,31 +87,31 @@ public struct MODULE_INFO { 
  Die Modulgröße.
 
  `m_dwLoadOrder`\
- Die Modul-Load-Reihenfolge.
+ Die Modulladereihenfolge.
 
  `m_TimeStamp`\
- Die Zeit, die Symboldatei zuletzt geändert wurde.
+ Der Zeitpunkt, zu dem die Symboldatei zuletzt geändert wurde.
 
  `m_bstrUrlSymbolLocation`\
- Der Speicherort der Symboldatei (z. B. ".\\") im Modul angegeben. Zum Suchen von Symbolen für ein Modul als einen Startort anzugeben.
+ Der Speicherort der Symboldatei (z.\\B. ". ") im Modul angegeben. Wird als Startposition verwendet, um Symbole für ein Modul zu finden.
 
  `m_dwModuleFlags`\
- Eine Kombination von Flags aus der [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) -Enumeration, die diesem Modul erläutert.
+ Eine Kombination von [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) Flags aus der MODULE_FLAGS-Enumeration, die das Modul beschreibt.
 
-## <a name="remarks"></a>Hinweise
- Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) Methode, in denen es ausgefüllt wird.
+## <a name="remarks"></a>Bemerkungen
+ Diese Struktur wird an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) übergeben, bei der sie ausgefüllt wird.
 
- Jedes Modul aufgeführt, die dieser Struktur entspricht dem **Module** Fenster.
+ Diese Struktur entspricht jedem Modul, das im **Fenster Module aufgeführt** ist.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

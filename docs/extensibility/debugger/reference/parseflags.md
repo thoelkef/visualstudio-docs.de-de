@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Microsoft-Dokumentation
+title: PARSEFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6123c6438defff596351fff3d1ba31ea52a19f28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc70fdd9fe1279e4d419a422b970eb3d3b07c65
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349940"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714117"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Gibt an, wie einen Ausdruck zu analysieren.
+Gibt an, wie ein Ausdruck analysiert wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,22 +49,22 @@ public enum enum_PARSEFLAGS { 
  Gibt an, dass der Ausdruck keine Anweisung ist.
 
  `PARSE_FUNCTION_AS_ADDRESS`\
- Gibt an, dass der Ausdruck analysiert (und später ausgewertet werden) als eine Adresse.
+ Gibt an, dass der Ausdruck als Adresse analysiert (und später ausgewertet) werden soll.
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- Gibt an, dass während der Entwurfszeit der Ausdruck analysiert wird (d. h. bei ein Designer geöffnet ist).
+ Gibt an, dass der Ausdruck während der Entwurfszeit analysiert wird (d. h., wenn ein Designer geöffnet ist).
 
-## <a name="remarks"></a>Hinweise
- Übergeben als Parameter an die [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) und [analysieren](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) Methoden.
+## <a name="remarks"></a>Bemerkungen
+ Wird als Parameter an die [ParseText-](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) und [Parse-Methoden](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) übergeben.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
-- [Auslesen](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+- [Analysieren](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

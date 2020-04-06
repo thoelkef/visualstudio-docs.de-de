@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPorts2 | Microsoft-Dokumentation
+title: IEnumDebugPorts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c24edcd5ef47408cd4c11b3d0548ad34516702a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f3cc46ef8abb6ef1fbb8f072d97b0fc4a537af1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326502"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716105"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
-Diese Schnittstelle Listet die Ports von einem Computer oder Port-Lieferanten.
+Diese Schnittstelle zählt die Ports einer Maschine oder eines Portlieferanten auf.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,35 +29,35 @@ IEnumDebugPorts2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle, um eine Liste der Ports, die von den Lieferanten erstellten darstellen. Visual Studio implementiert diese Schnittstelle zur Unterstützung von eigenen portbereitstellers.
+ Ein benutzerdefinierter Portlieferant implementiert diese Schnittstelle, um eine Liste der vom Lieferanten erstellten Ports darzustellen. Visual Studio implementiert diese Schnittstelle zur Unterstützung des eigenen Portanbieters.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Rufen Sie [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) beim Abrufen der diese Schnittstelle, die eine Liste der Ports, die von den Anschlusslieferanten erstellt darstellt. Rufen Sie [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) , rufen Sie diese Schnittstelle stellt eine Liste von Ports, die gespeichert wurden auf dem Datenträger.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Rufen Sie [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) auf, um diese Schnittstelle abzurufen, die eine Liste der vom Portlieferanten erstellten Ports darstellt. Rufen Sie [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) auf, um diese Schnittstelle abzurufen, die eine Liste der Ports darstellt, die auf dem Datenträger gespeichert wurden.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IEnumDebugPorts2`.
+ Die folgende Tabelle zeigt `IEnumDebugPorts2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Nächste](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Ruft eine angegebene Anzahl von Ports in einer Enumerationsfolge ab.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Überspringt eine angegebene Anzahl von Ports in einer Enumerationsfolge.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Ruft die Anzahl der Ports in einen Enumerator ab.|
+|[Weiter](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Ruft eine angegebene Anzahl von Ports in einer Enumerationssequenz ab.|
+|[Überspringen](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Überspringt eine angegebene Anzahl von Ports in einer Enumerationssequenz.|
+|[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
+|[Klon](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Erstellt einen Enumerator, der denselben Enumerationsstatus wie der aktuelle Enumerator enthält.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Ruft die Anzahl der Ports in einem Enumerator ab.|
 
-## <a name="remarks"></a>Hinweise
- Visual Studio verwendet diese Schnittstelle können Sie eine Liste der Ports, die zum Anhängen an Prozesse aufzufüllen.
+## <a name="remarks"></a>Bemerkungen
+ Visual Studio verwendet diese Schnittstelle, um eine Liste der Ports aufzufüllen, die zum Anfügen an Prozesse verwendet werden.
 
- Eine Debug-Engine verwendet diese Schnittstelle in der Regel nicht.
+ Ein Debugmodul verwendet diese Schnittstelle in der Regel nicht.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)

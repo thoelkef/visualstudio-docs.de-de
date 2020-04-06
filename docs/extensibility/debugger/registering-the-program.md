@@ -1,44 +1,44 @@
 ---
-title: Registrieren des Programms | Microsoft-Dokumentation
+title: Registrieren des Programms | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60bc94efb9d3b2026de31c6018b466d432bf98f8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315957"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713171"
 ---
-# <a name="register-the-program"></a>Registrieren Sie das Programm
-Nachdem die Debug-Engine einen Port erworben hat, dargestellt durch ein [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle, im nächsten Schritt aktivieren das Programm debuggt werden wird, um ihn mit dem Port zu registrieren. Nach der Registrierung kann das Programm debuggen, indem Sie eine der folgenden Methoden:
+# <a name="register-the-program"></a>Registrieren des Programms
+Nachdem das Debugmodul einen Port erworben hat, der durch eine [IDebugPort2-Schnittstelle](../../extensibility/debugger/reference/idebugport2.md) dargestellt wird, besteht der nächste Schritt, um das zu debuggende Programm zu ermöglichen, darin, ihn beim Port zu registrieren. Nach der Registrierung steht das Programm für das Debuggen auf eine der folgenden Arten zur Verfügung:
 
-- Der Prozess anfügen, der mit dem Debugger ermöglicht, die vollständige debugging Kontrolle einer ausgeführten Anwendung zu erhalten.
+- Der Prozess des Anfügens, der es dem Debugger ermöglicht, die vollständige Debugsteuerung einer ausgeführten Anwendung zu erhalten.
 
-- Just-in-Time (JIT) Debuggen, was nach der dem Ereignis Debuggen eines Programms, das unabhängig von einem Debugger ausgeführt wird. Wenn die Architektur für die Laufzeit einen Fehler abfängt, wird der Debugger vor dem Betriebssystem benachrichtigt oder Laufzeitumgebung frei, die Arbeitsspeicher- und Ressourcen des fehlerhaften Programms.
+- Just-in-Time (JIT)-Debugging, das das nachdemmalige Debuggen eines Programms ermöglicht, das unabhängig von einem Debugger ausgeführt wird. Wenn die Laufzeitarchitektur einen Fehler abfängt, wird der Debugger benachrichtigt, bevor das Betriebssystem oder die Laufzeitumgebung den Speicher und die Ressourcen des fehlerhaften Programms freigibt.
 
-## <a name="registering-procedure"></a>Registrieren die Prozedur
+## <a name="registering-procedure"></a>Registrierungsverfahren
 
-### <a name="to-register-your-program"></a>Registrieren Sie Ihr Programm
+### <a name="to-register-your-program"></a>So registrieren Sie Ihr Programm
 
-1. Rufen Sie die [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) Methode, die vom Port implementiert.
+1. Rufen Sie die [AddProgramNode-Methode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) auf, die vom Port implementiert wurde.
 
-     `IDebugPortNotify2::AddProgramNode` erfordert einen Zeiger auf ein [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.
+     `IDebugPortNotify2::AddProgramNode`erfordert einen Zeiger auf eine [IDebugProgramNode2-Schnittstelle.](../../extensibility/debugger/reference/idebugprogramnode2.md)
 
-     Wenn das Betriebssystem oder die Laufzeitumgebung ein Programm geladen wird, erstellt es in der Regel der Programm-Knoten. Wenn die Debug-Engine (DE) gestellt wird, um die Anwendung zu laden, wird die DE erstellt und registriert den Programm-Knoten.
+     Wenn das Betriebssystem oder die Laufzeitumgebung ein Programm lädt, wird normalerweise der Programmknoten erstellt. Wenn das Debugmodul (DE) aufgefordert wird, das Programm zu laden, erstellt und registriert die DE den Programmknoten.
 
-     Das folgende Beispiel zeigt die Debug-Engine, das Programm gestartet und mit einem Port zu registrieren.
+     Das folgende Beispiel zeigt, wie das Debugmodul das Programm startet und bei einem Port registriert.
 
     > [!NOTE]
-    > Dieses Codebeispiel ist nicht die einzige Möglichkeit zum Starten und Fortsetzen eines Prozesses; Dieser Code ist in erster Linie ein Beispiel für ein Programm mit einem Port zu registrieren.
+    > Dieses Codebeispiel ist nicht die einzige Möglichkeit, einen Prozess zu starten und fortzusetzen. Dieser Code ist hauptsächlich ein Beispiel für die Registrierung eines Programms bei einem Port.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -104,6 +104,6 @@ Nachdem die Debug-Engine einen Port erworben hat, dargestellt durch ein [IDebugP
 
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Abrufen eines Ports](../../extensibility/debugger/getting-a-port.md)
-- [Aktivieren eines Programms, die debuggt werden](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Debuggen eines Programms](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

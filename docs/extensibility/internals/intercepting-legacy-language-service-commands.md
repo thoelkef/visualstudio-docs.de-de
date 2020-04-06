@@ -1,39 +1,39 @@
 ---
-title: Abfangen von Befehlen von Legacysprachdiensten | Microsoft-Dokumentation
+title: Abfangen von Legacy Language Service-Befehlen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, intercepting language service
 - language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3716f02b076bd5ea7ef63135133acffc823a7703
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314947"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707451"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Abfangen von Befehlen von Legacysprachdiensten
-Mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], dass die Konstante Glied Befehlen von legacysprachdiensten, die andernfalls von die Textansicht behandelt würden. Dies ist nützlich für die sprachspezifisches Verhalten, die nicht die Textansicht verwaltet. Sie können diese Befehle abfangen, durch das Hinzufügen von ein oder mehrere-Befehlsfilter der Textansicht aus den Sprachdienst.
+Mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]können Sie den Sprachdienst Befehle abfangen lassen, die die Textansicht andernfalls verarbeiten würde. Dies ist nützlich für sprachspezifisches Verhalten, das in der Textansicht nicht verwaltet wird. Sie können diese Befehle abfangen, indem Sie der Textansicht aus dem Sprachdienst einen oder mehrere Befehlsfilter hinzufügen.
 
-## <a name="getting-and-routing-the-command"></a>Abrufen und den Befehl Routing
- Ein Befehlsfilter ist ein <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Objekt, das bestimmte Zeichenfolgen oder die wichtigsten Befehle überwacht. Sie können mehr als ein Befehlsfilter mit einer einzelnen Textansicht zuordnen. Jede Textansicht verwaltet eine Befehlsketten-Filter. Nachdem Sie einen neuen Befehlsfilter erstellen, fügen Sie den Filter auf die Kette für die Ansicht entsprechenden Text hinzu.
+## <a name="getting-and-routing-the-command"></a>Abrufen und Routing des Befehls
+ Ein Befehlsfilter <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ist ein Objekt, das bestimmte Zeichensequenzen oder Tastenbefehle überwacht. Sie können mehr als einen Befehlsfilter einer einzelnen Textansicht zuordnen. Jede Textansicht verwaltet eine Kette von Befehlsfiltern. Nachdem Sie einen neuen Befehlsfilter erstellt haben, fügen Sie den Filter der Kette für die entsprechende Textansicht hinzu.
 
- Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Befehlsfilter der Kette hinzu. Beim Aufruf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gibt einen anderen Befehl Filtern, können Sie die Befehle, die Ihre Befehlsfilter nicht behandelt wird übergeben.
+ Rufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Methode auf der auf, um den Befehlsfilter zur Kette hinzuzufügen. Wenn Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aufrufen, gibt ein weiterer Befehlsfilter zurück, an den Sie die Befehle übergeben können, die der Befehlsfilter nicht verarbeitet.
 
- Sie haben die folgenden Optionen für die Behandlung von Befehlen aus:
+ Sie haben die folgenden Optionen für die Befehlsbehandlung:
 
-- Behandeln Sie den Befehl aus, und klicken Sie dann übergeben Sie den Befehl an den nächsten Befehlsfilter, in der Kette.
+- Behandeln Sie den Befehl, und übergeben Sie den Befehl dann an den nächsten Befehlsfilter in der Kette.
 
-- Behandeln Sie den Befehl aus, und übergeben Sie den Befehl an den nächsten Befehlsfilter nicht.
+- Behandeln Sie den Befehl, und übergeben Sie den Befehl nicht an den nächsten Befehlsfilter.
 
-- Behandeln Sie den Befehl nicht, aber übergeben Sie den Befehl an den nächsten Befehlsfilter.
+- Behandeln Sie den Befehl nicht, übergeben Sie den Befehl jedoch an den nächsten Befehlsfilter.
 
-- Ignorieren Sie den Befehl. Nicht im aktuellen Filter behandelt, und übergeben Sie ihn nicht an den nächsten Filter.
+- Ignorieren Sie den Befehl. Behandeln Sie sie nicht im aktuellen Filter, und geben Sie sie nicht an den nächsten Filter weiter.
 
-  Informationen über die Befehle der Sprachdienst behandeln sollten, finden Sie unter [wichtige Befehle für Sprachdienstfilter](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Informationen zu den Befehlen, die Ihr Sprachdienst verarbeiten soll, finden Sie unter [Wichtige Befehle für Sprachdienstfilter](../../extensibility/internals/important-commands-for-language-service-filters.md).

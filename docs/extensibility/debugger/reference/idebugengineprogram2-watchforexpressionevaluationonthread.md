@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft-Dokumentation
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e72292f403b28c66cddbcee623f27ddfcbe5c3aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730363"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Hiermit (zugelassen oder verweigert) Auswertung von Ausdrücken für den angegebenen Thread ausgeführt wird, auch wenn die Anwendung beendet wurde.
+Ermöglicht die Auswertung (oder Nichtzugerstifsagung) von Ausdrücken für den angegebenen Thread, auch wenn das Programm beendet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,29 +49,29 @@ int WatchForExpressionEvaluationOnThread( 
 
 ## <a name="parameters"></a>Parameter
 `pOriginatingProgram`\
-[in] Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das das Programm, das Auswerten eines Ausdrucks darstellt.
+[in] Ein [IDebugProgram2-Objekt,](../../../extensibility/debugger/reference/idebugprogram2.md) das das Programm darstellt, das einen Ausdruck auswertet.
 
 `dwTid`\
-[in] Gibt den Bezeichner des Threads.
+[in] Gibt den Bezeichner des Threads an.
 
 `dwEvalFlags`\
-[in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die angeben, wie die Auswertung ausgeführt werden.
+[in] Eine Kombination von Flags aus der EVALFLAGS-Enumeration, die angeben, wie die Auswertung ausgeführt werden soll. [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 
 `pExprCallback`\
-[in] Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Objekt, das zum Senden von Debug-Ereignisse, die auftreten, während der Auswertung des Ausdrucks verwendet werden.
+[in] Ein [IDebugEventCallback2-Objekt,](../../../extensibility/debugger/reference/idebugeventcallback2.md) das zum Senden von Debugereignissen verwendet werden soll, die während der Ausdrucksauswertung auftreten.
 
 `fWatch`\
-[in] Wenn ungleich 0 (`TRUE`), ermöglicht die Auswertung von Ausdrücken für den Thread identifizierte `dwTid`ist, andernfalls 0 (null) (`FALSE`) lässt keine Auswertung des Ausdrucks in diesem Thread.
+[in] Wenn ungleich`TRUE`Null ( ), ermöglicht Die `dwTid`Ausdrucksauswertung für den Thread, der durch identifiziert wird; Andernfalls lässt`FALSE`Null ( ) die Ausdrucksauswertung für diesen Thread nicht zu.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Wenn die sitzungsbasierter Debug-Manager (SDM) fordert ein Programm, das identifizierte die `pOriginatingProgram` Parameter, die zum Auswerten eines Ausdrucks, benachrichtigt er alle anderen angefügten Programme durch Aufrufen dieser Methode.
+## <a name="remarks"></a>Bemerkungen
+ Wenn der Sitzungsdebug-Manager (SDM) ein `pOriginatingProgram` Programm, das durch den Parameter identifiziert wird, auffordert, einen Ausdruck auszuwerten, benachrichtigt er alle anderen angehängten Programme, indem er diese Methode aufruft.
 
- Auswertung des Ausdrucks in einem Programm kann dazu führen, dass Code zur Ausführung in einer anderen, aufgrund der funktionsauswertung oder Auswertung aller `IDispatch` Eigenschaften. Aus diesem Grund kann dieser Methode die Auswertung des Ausdrucks ausgeführt und abgeschlossen werden, auch wenn der Thread in diesem Programm beendet werden kann.
+ Die Ausdrucksauswertung in einem Programm kann dazu führen, dass `IDispatch` Code in einem anderen Programm ausgeführt wird, da die Funktion auswertet oder Eigenschaften ausgewertet werden. Aus diesem Grund ermöglicht diese Methode die Ausführung und Vervollständigung der Ausdrucksauswertung, auch wenn der Thread in diesem Programm angehalten werden kann.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

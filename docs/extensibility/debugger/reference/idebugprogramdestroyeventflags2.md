@@ -1,24 +1,24 @@
 ---
-title: IDebugProgramDestroyEventFlags2 | Microsoft-Dokumentation
+title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1b131679a287fb555fcf2a78a803c77457d47ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343512"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722503"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-Ermöglicht es eine Debug-Engine, um das Standardverhalten überschreiben die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche, wenn Sie eine Debugsitzung zu beenden.
+Ermöglicht einem Debugmodul, das Standardverhalten [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] der Benutzeroberfläche zu überschreiben, wenn Sie eine Debugsitzung beenden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,20 +27,20 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle wird von Debug-Engines implementiert. Es ist nützlich für Hosts, die möglicherweise zu erstellen und Zerstören von mehreren Programmen während der Lebensdauer eines Prozesses.
+ Diese Schnittstelle wird von Debug-Engines implementiert. Es ist nützlich für Hosts, die mehrere Programme während der Lebensdauer eines Prozesses erstellen und zerstören können.
 
 ## <a name="methods"></a>Methoden
- Die folgende Tabelle zeigt die Methoden der `IDebugProgramDestroyEventFlags2`.
+ Die folgende Tabelle zeigt `IDebugProgramDestroyEventFlags2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Ruft ab, die Anwendung Zerstören von Flags.|
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Ruft das Programm zum Zerstören von Flags ab.|
 
-## <a name="remarks"></a>Hinweise
- Das Standardverhalten der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche ist in den Entwurfsmodus zurückkehren, nachdem alle Programme, ein Programm gesendet haben Ereignis zerstört. Diese Schnittstelle ermöglicht eine Debug-Engine, um dieses Verhalten zu ändern.
+## <a name="remarks"></a>Bemerkungen
+ Das Standardverhalten [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] der Benutzeroberfläche besteht darin, in den Entwurfsmodus zurückzukehren, nachdem alle Programme ein Programm-Zerstörungsereignis gesendet haben. Diese Schnittstelle ermöglicht es einem Debugmodul, dieses Verhalten zu ändern.
 
-## <a name="requirements"></a>Anforderungen
- Header: Msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 

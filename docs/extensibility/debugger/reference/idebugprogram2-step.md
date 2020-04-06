@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Step | Microsoft-Dokumentation
+title: IDebugProgram2::Schritt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8030bd45850a2b81e3cfb03a83497bba77c4515c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 194e72eba5a3f137e4650752a090d91ad7c402fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325282"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722761"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Führt einen Schritt aus.
 
 > [!NOTE]
-> Diese Methode ist veraltet. Verwenden der [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode stattdessen.
+> Diese Methode ist als veraltet markiert. Verwenden [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) Sie stattdessen die Step-Methode.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,24 +48,24 @@ int Step( 
 
 ## <a name="parameters"></a>Parameter
 `pThread`\
-[in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread wird abgestuften darstellt.
+[in] Ein [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den gestuften Thread darstellt.
 
 `sk`\
-[in] Ein Wert aus der [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) -Enumeration, der den Typ des Schritts angibt.
+[in] Ein Wert [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) aus der STEPKIND-Enumeration, der die Art des Schritts angibt.
 
 `step`\
-[in] Ein Wert aus der [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) Enumeration, die die Einheit des Schritts (beispielsweise von einer Anweisung oder der Anweisung) angibt.
+[in] Ein Wert [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) aus der STEPUNIT-Enumeration, der die Schritteinheit angibt (z. B. durch Anweisung oder Anweisung).
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Für den Fall, dass alle Threadsynchronisierung oder die Kommunikation zwischen Threads vorhanden ist, sollten andere Threads im Programm ausführen, wird ein Prozedurschritt ein bestimmter Thread ausgeführt.
+## <a name="remarks"></a>Bemerkungen
+ Falls eine Threadsynchronisierung oder -kommunikation zwischen Threads besteht, sollten andere Threads im Programm ausgeführt werden, wenn ein bestimmter Thread schritt.
 
 > [!WARNING]
-> Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.
+> Senden Sie während der Verarbeitung dieses Aufrufs kein Beenden- oder ein sofortiges (synchrones) Ereignis an [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls kann der Debugger hängen bleiben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

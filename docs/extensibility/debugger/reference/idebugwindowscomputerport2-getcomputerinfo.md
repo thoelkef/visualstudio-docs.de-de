@@ -6,23 +6,23 @@ helpviewer_keywords:
 - GetComputerInfo
 - IDebugWindowsComputerPort2::GetComputerInfo
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52b68bc9014e2dea7a221a48ae0b0281d98f3d15
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 420e963b70846b4d7251c3f1b6c7f5b224c9fdb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335750"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718257"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
-Ruft Informationen über den Computer, auf denen der Debugger in ausgeführt wird.
+Ruft Informationen über den Computer ab, auf dem der Debugger ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,8 +43,8 @@ public int GetComputerInfo(
 [out] Verweis auf eine Struktur, die die Computerinformationen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)
 - [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Microsoft-Dokumentation
+title: IDebugObject::SetValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e4652eb3c77a1871063dfa71b464fb1f7c43f94
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318950"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726368"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Legt den Wert des Objekts aus eine aufeinanderfolgende Reihe von Bytes fest.
+Legt den Wert des Objekts aus einer aufeinanderfolgenden Reihe von Bytes fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,17 +43,17 @@ int SetValue(
 
 ## <a name="parameters"></a>Parameter
 `pValue`\
-[in] Ein Array von Bytes, die den neuen Wert darstellt.
+[in] Ein Array von Bytes, die den neuen Wert darstellen.
 
 `nSize`\
 [in] Die Größe des Werts in Bytes.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Werte im Array werden in diese kopiert [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, und Ersetzen Sie dabei alle vorhandenen Werte. Die Größe des neuen Werts kann größer oder kleiner als der vorhandene Wert sein. Dies `IDebugObject` ein null-Verweis nicht möglich.
+## <a name="remarks"></a>Bemerkungen
+ Die Werte im Array werden in dieses [IDebugObject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) kopiert und ersetzen alle vorhandenen Werte. Die Größe des neuen Werts kann größer oder kleiner als der vorhandene Wert sein. Dies `IDebugObject` kann kein Nullverweis sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

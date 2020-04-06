@@ -1,5 +1,5 @@
 ---
-title: Sccgetuseroption-Funktion | Microsoft-Dokumentation
+title: SccGetUserOption-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721441"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700689"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption-Funktion
-Diese Funktion Ruft eine Vielzahl Benutzer spezifischer Optionen ab.
+Diese Funktion ruft eine Vielzahl von benutzerspezifischen Optionen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,32 +35,32 @@ SCCRTN SccGetUserOption(
 #### <a name="parameters"></a>Parameter
  pContext
 
-in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
+[in] Der Kontextzeiger für die Quellcodeverwaltung.
 
- noption
+ nOption
 
-in Die abzurufende Option (siehe Hinweise zu möglichen Optionen).
+[in] Option zum Abrufen (siehe Hinweise zu möglichen Optionen).
 
- lpval
+ lpVal
 
-vorgenommen Wert, der Option zugeordnet ist.
+[out] Wert, der der Option zugeordnet ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Die Option wurde erfolgreich abgerufen.|
-|SCC_E_OPNOTSUPPORTED|Die Option wird nicht unterstützt.|
+|SCC_E_OPNOTSUPPORTED|Option wird nicht unterstützt.|
 |SCC_E_NONSPECIFICERROR|Es ist ein unbekannter Fehler aufgetreten.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Die folgenden Optionen werden von diesem Befehl unterstützt:
 
-|Benutzer Option|Beschreibung|
+|Benutzeroption|BESCHREIBUNG|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer eine lokale Version der Dateien auschecken möchte. `lpVal` wird `SCC_USEROPT_COLV_YES` zugewiesen (der Benutzer möchte lokale Dateien Auschecken) oder `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer die lokale Version von Dateien auschecken möchte. `lpVal`zugewiesen `SCC_USEROPT_COLV_YES` (Benutzer möchte lokale Dateien auschecken) oder `SCC_USEROPT_COLV_NO`.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
 - [Fehlercodes](../extensibility/error-codes.md)

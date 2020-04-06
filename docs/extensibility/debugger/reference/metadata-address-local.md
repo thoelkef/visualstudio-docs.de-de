@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Microsoft-Dokumentation
+title: METADATA_ADDRESS_LOCAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8500d7ad1e03e08fa852afe9b8b77e49562f355
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345635"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714479"
 ---
-# <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
+# <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
-Diese Struktur stellt die Adresse einer lokalen Variablen in einem Gültigkeitsbereich (in der Regel eine Funktion oder Methode) dar.
+Diese Struktur stellt die Adresse einer lokalen Variablen innerhalb eines Bereichs (in der Regel eine Funktion oder Methode) dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,22 +47,22 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>Member
 
 `tokMethod`\
-Die ID der Methode oder der Funktion ist die lokale Variable Teil.
+Die ID der Methode oder Funktion, zu der die lokale Variable gehört.
 
-[C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.
+[C++] `_mdToken` ist `typedef` ein für eine `int`32-Bit .
 
 `pLocal`\
-Das Token, dessen Adresse dieser Struktur darstellt.
+Das Token, dessen Adresse diese Struktur darstellt.
 
 `dwIndex`\
-Der Index dieser lokalen Variablen in der Methode oder Funktion oder einen anderen Wert (sprachspezifischen) kann sein.
+Kann der Index dieser lokalen Variable in der Methode oder Funktion oder ein anderer Wert (sprachspezifisch) sein.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_LOCAL` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).
+Diese Struktur ist Teil der Union in `dwKind` der `DEBUG_ADDRESS_UNION` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, `ADDRESS_KIND_LOCAL` wenn das Feld der Struktur auf (ein Wert aus der ADDRESS_KIND-Enumeration) festgelegt ist. [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
 
 > [!WARNING]
-> [C++ nur] Wenn `pLocal` nicht null ist, dann Sie aufrufen müssen `Release` für den token auf (`addr` ist ein Feld in der [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur):
+> [Nur C++ Wenn `pLocal` nicht null, dann `Release` müssen Sie auf`addr` den Tokenzeiger aufrufen (ist ein Feld in der [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -71,17 +71,17 @@ Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensib
 > }
 > ```
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
-Header: sh.h
+Kopfzeile: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

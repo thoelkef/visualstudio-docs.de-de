@@ -1,5 +1,5 @@
 ---
-title: Projekt "sonstige Dateien" | Microsoft-Dokumentation
+title: Projekt für verschiedene Dateien | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,34 +8,34 @@ helpviewer_keywords:
 - Solution Items folder
 - files, opening with Miscellaneous Files project
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c46126507ef9bb293bd0fa6771f53343ad6206f7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726678"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707100"
 ---
 # <a name="miscellaneous-files-project"></a>Verschiedene Projektdateien
-Wenn ein Benutzer Projekt Elemente öffnet, weist die IDE dem Projekt "sonstige Dateien" alle Elemente zu, die keine Mitglieder einer Projekt Mappe sind.
+Wenn ein Benutzer Projektelemente öffnet, weist die IDE dem Projekt Verschiedene Dateien alle Elemente zu, die nicht Mitglieder von Projekten in einer Projektmappe sind.
 
- Projekte spielen eine bedeutende Rolle beim bestimmen, welcher Editor verwendet wird, wenn ein Benutzer ein Projekt Element öffnet. Ein Projekt kann so entworfen werden, dass bestimmte Dateien mit einem projektspezifischen Editor oder einem Standard Editor geöffnet werden.
+ Projekte spielen eine wichtige Rolle bei der Bestimmung, welcher Editor verwendet wird, wenn ein Benutzer ein Projektelement öffnet. Ein Projekt kann entworfen werden, um bestimmte Dateien mithilfe eines projektspezifischen Editors oder eines Standardeditors zu öffnen.
 
- Für einen projektspezifischen Editor ist es in der Regel erforderlich, dass der Benutzer über besondere Kenntnisse verfügt oder besondere Schnittstellen aus dem Projekt verwendet. Weitere Informationen finden Sie unter Gewusst [wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md).
+ Ein projektspezifischer Editor erfordert in der Regel, dass der Benutzer über spezielle Kenntnisse verfügt oder spezielle Schnittstellen aus dem Projekt verwendet. Weitere Informationen finden Sie unter [Gewusst wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md).
 
- Mit einem Standard-Editor kann eine beliebige Datei einer bestimmten Erweiterung in jedem Projekt geöffnet werden. Der Benutzer kann einige Standard-Editoren, z. b. den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Text-Editor, für Projekte anpassen, behält aber weiterhin sein öffentliches Zeichen bei. Standard-Editoren werden mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>-Methode erstellt.
+ Ein Standardeditor kann jede Datei einer bestimmten Erweiterung in jedem Projekt öffnen. Der Benutzer kann einige Standardeditoren, z. B. den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Texteditor, für Projekte anpassen, aber dennoch ihren öffentlichen Charakter beibehalten. Standard-Editoren werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> mit der Methode erstellt.
 
- Wenn kein Projekt in der Projekt Mappe antwortet, dass ein Projekt Element geöffnet werden kann, stellt die IDE ein spezielles Projekt namens "sonstige Dateien" bereit, mit dem eine beliebige Datei geöffnet wird.
+ Wenn kein Projekt in der Projektmappe darauf reagiert, dass ein Projektelement geöffnet werden kann, stellt die IDE ein spezielles Projekt namens "Verschiedene Dateien" bereit, das eine beliebige Datei öffnet.
 
- Dieses spezielle Projekt ermöglicht das Öffnen einer Datei außerhalb des Kontexts eines Projekts. Während der Verarbeitung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A>-Methode antwortet das Projekt "sonstige Dateien" immer mit einer sehr niedrigen Priorität. Aus diesem Grund ergibt das Projekt "sonstige Dateien" immer alle Projekte mit höherer Priorität, die Dateien öffnen können.
+ Dieses spezielle Projekt sieht das Öffnen einer Datei außerhalb des Kontexts eines Projekts vor. Während der Verarbeitung <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> der Methode reagiert das Projekt Verschiedene Dateien immer mit sehr geringer Priorität. Daher gibt das Projekt Verschiedene Dateien immer jedem Projekt mit höherer Priorität nach, das Dateien öffnen kann.
 
- Das Projekt "sonstige Dateien" erfordert nicht, dass der Benutzer es explizit mit dem Dialogfeld " **Neues Projekt** " erstellt. Außerdem verwaltet das Projekt "sonstige Dateien" eine Liste von Projekt Membern nicht dauerhaft. Es wird ein optionales Feature verwendet, um eine Liste der zuletzt verwendeten Dateien für jeden Benutzer aufzuzeichnen.
+ Das Projekt Verschiedene Dateien erfordert nicht, dass der Benutzer es explizit mit dem Dialogfeld **Neues Projekt** erstellt. Außerdem verwaltet das Projekt Verschiedene Dateien keine Liste von Projektmitgliedern dauerhaft. Es verwendet eine optionale Funktion, um eine Liste der zuletzt verwendeten Dateien für jeden Benutzer aufzuzeichnen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

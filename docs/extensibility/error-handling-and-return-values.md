@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehandlung und Rückgabewerte | Microsoft-Dokumentation
+title: Fehlerbehandlung und Rückgabewerte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,54 +7,54 @@ helpviewer_keywords:
 - error handling
 - return values
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3120302de007c9d2b454a0ba7cb5c58e7c7db7b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309881"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711937"
 ---
-# <a name="error-handling-and-return-values"></a>Fehlerbehandlung und Rückgabewerte
-VSPackages und COM-verwenden die gleiche Architektur auf Fehler. Die `SetErrorInfo` und `GetErrorInfo` Funktionen sind Teil der Win32-Anwendungsprogrammierschnittstelle (API). Jedem VSPackage in der integrierten Entwicklungsumgebung (IDE) kann diese globale Win32-APIs, um aussagekräftige Fehlerinformationen Datensatz aufrufen, wenn Sie empfangen eine Fehlermeldung angezeigt. Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] interop-Assemblys zum Verwalten von Fehlerinformationen enthält.
+# <a name="error-handling-and-return-values"></a>Fehlerbehandlung und Rückgabevonwerte
+VSPackages und COM verwenden dieselbe Architektur für Fehler. Die `SetErrorInfo` `GetErrorInfo` und Funktionen sind Teil der Win32 Application Programming Interface (API). Jedes VSPackage in der integrierten Entwicklungsumgebung (IDE) kann diese globalen Win32-APIs aufrufen, um umfangreiche Fehlerinformationen aufzuzeichnen, wenn eine Fehlerbenachrichtigung empfangen wird. Der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] stellt Interopassemblys zum Verwalten von Fehlerinformationen bereit.
 
 ## <a name="interop-methods"></a>Interop-Methoden
- Zur Vereinfachung die IDE bietet eine Methode, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>, um anstelle der Win32-APIs zu verwenden. In verwaltetem Code verwenden <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>. Wenn ein Fehler `HRESULT` eingeht, auf der Ebene, in dem die Fehlermeldung angezeigt werden soll (Dies ist häufig das Objekt implementieren eine <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Befehlshandler), die IDE verwendet eine andere Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>, um das entsprechende Meldung anzuzeigen. Verwalteter Code verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> Methode.
+ Als Annehmlichkeit stellt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>IDE eine Methode bereit, die verwendet werden soll, anstatt die Win32-APIs aufzurufen. Verwenden Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>in verwaltetem Code . Wenn ein `HRESULT` Fehler auf der Ebene eintrifft, auf der die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Fehlermeldung angezeigt werden soll (dies ist häufig das Objekt, das einen Befehlshandler implementiert), verwendet die IDE eine andere Methode, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>um das entsprechende Meldungsfeld anzuzeigen. Verwenden Sie in <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> verwaltetem Code die Methode.
 
- Als ein VSPackage-Implementierung, die COM-Objekte normalerweise implementieren `ISupportErrorInfo`. Die `ISupportErrorInfo` Schnittstelle stellt sicher, dass ausführliche Fehlerinformationen der Aufrufkette vertikal verschoben werden kann. Objekte, die auf die Prozesse oder Threads verwendet werden können müssen unterstützen `ISupportErrorInfo` um sicherzustellen, dass die aussagekräftige Fehlerinformationen ordnungsgemäß an den Aufrufer gemarshallt wird.
+ Als VSPackage-Implementierer implementieren `ISupportErrorInfo`Ihre COM-Objekte normalerweise . Die `ISupportErrorInfo` Schnittstelle stellt sicher, dass umfangreiche Fehlerinformationen vertikal in der Aufrufkette nach oben verschoben werden können. Objekte, die prozess- oder über `ISupportErrorInfo` Threads hinweg verwendet werden können, müssen unterstützen, um sicherzustellen, dass die umfangreichen Fehlerinformationen ordnungsgemäß an den Aufrufer zurückgemarshallt werden.
 
- Alle Objekte, beziehen sich auf VSPackages und sind beteiligt, Erweitern der IDE, z. B. editorfactorys, Editoren, Hierarchien, und die angebotenen Dienste, sollte ausführliche Fehlerinformationen unterstützen. Während die IDE nicht zum Implementieren dieser VSPackage-Objekten erfordert `ISupportErrorInfo`, es wird immer empfohlen.
+ Alle Objekte, die sich auf VSPackages beziehen und an der Erweiterung der IDE beteiligt sind, einschließlich Editorfactorys, Editoren, Hierarchien und angebotenen Diensten, sollten umfangreiche Fehlerinformationen unterstützen. Während die IDE diese VSPackage-Objekte `ISupportErrorInfo`nicht implementieren muss, wird sie immer empfohlen.
 
- Die IDE ist verantwortlich für Fehlerinformationen reporting und zu einem Benutzer der Anzeige [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] immer ein `HRESULT` an der IDE weitergegeben wird. Die IDE ist auch der Mechanismus zum Erstellen von `ErrorInfo` Objekte.
+ Die IDE ist dafür verantwortlich, Fehlerinformationen zu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] melden `HRESULT` und sie einem Benutzer anzuzeigen, wenn ein an die IDE weitergegeben wird. Die IDE ist auch `ErrorInfo` der Mechanismus zum Erstellen von Objekten.
 
 ## <a name="general-guidelines"></a>Allgemeine Richtlinien
- Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> Methoden zum Festlegen und Fehlermeldungen angezeigt werden, die für Ihr VSPackage-Implementierung auch intern sind. Allerdings als in der Regel die folgenden Richtlinien Sie für die Behandlung von Fehlermeldungen in das VSPackage:
+ Sie können <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> und Methoden verwenden, um Fehler festzulegen und zu melden, die auch intern in Ihrer VSPackage-Implementierung sind. Befolgen Sie jedoch in der Regel die folgenden Richtlinien für die Behandlung von Fehlermeldungen in Ihrem VSPackage:
 
-- Implementieren `ISupportErrorInfo` in den VSPackage-COM-Objekten.
+- Implementieren `ISupportErrorInfo` Sie in Ihren VSPackage COM-Objekten.
 
-- Erstellen Sie einen Fehlerberichtmechanismus Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> -Methode in der Objekte, implementieren <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+- Erstellen Sie einen Fehlerberichterstattungsmechanismus, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Methode in Objekten aufruft, die implementieren. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 
-- Lassen Sie die Fehler anzuzeigen, die für Benutzer über die IDE die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> Methode.
+- Lassen Sie die IDE Fehler <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> für Benutzer über die Methode anzeigen.
 
 ## <a name="error-information-in-the-ide"></a>Fehlerinformationen in der IDE
- Die folgenden Regeln anzugeben, das Durchführen von Fehlerinformationen in die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE:
+ Die folgenden Regeln geben an, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wie Fehlerinformationen in der IDE behandelt werden:
 
-- Wie eine Schutzstrategie, um sicherzustellen, dass veraltete Fehlerinformationen nicht an Benutzer gemeldet werden Funktionen dieser Aufruf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> Methodenaufruf sollten zunächst die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Methode. Übergeben Sie `null` zwischengespeicherte Fehlermeldungen zu löschen, vor dem Aufrufen von allen Elementen, die neue Fehlerinformationen festgelegt werden kann.
+- Als defensive Strategie, um sicherzustellen, dass veraltete Fehlerinformationen nicht <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> an Benutzer <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> gemeldet werden, sollten Funktionen, die die Methode aufrufen, zuerst die Methode aufrufen. Übergeben `null` Sie die Zwischenrufe, bevor Sie irgendetwas aufrufen, das möglicherweise neue Fehlerinformationen setzt.
 
-- Funktionen, die Fehlermeldungen nicht direkt Berichten dürfen nur zum Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Methode, wenn sie einen Fehler zurückgeben `HRESULT`. Es ist zulässig, deaktivieren Sie die `ErrorInfo` auf den Eintrag für eine Funktion oder beim Zurückgeben der <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Die einzige Ausnahme dieser Regel wird beim Aufruf einen Fehler zurückgegeben `HRESULT` von dem die empfangende Partei kann explizit wiederherstellen oder ignorieren.
+- Funktionen, die Fehlermeldungen nicht direkt melden, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> dürfen die Methode `HRESULT`nur aufrufen, wenn sie einen Fehler zurückgeben. Es ist zulässig, `ErrorInfo` die auf dem Eintrag <xref:Microsoft.VisualStudio.VSConstants.S_OK>zu einer Funktion oder bei der Rückkehr zu löschen. Die einzige Ausnahme von dieser Regel ist, wenn ein Aufruf einen Fehler `HRESULT` zurückgibt, von dem die empfangende Partei explizit wiederherstellen oder sicher ignorieren kann.
 
-- Jede Partei, die explizit einen Fehler ignoriert `HRESULT` aufrufen, müssen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> -Methode mit <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Andernfalls die `ErrorInfo` Objekt möglicherweise versehentlich erneut verwendet werden, wenn eine andere Partei einen Fehler generiert, ohne ihre eigenen `ErrorInfo`.
+- Jede Partei, die einen `HRESULT` Fehler <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> explizit <xref:Microsoft.VisualStudio.VSConstants.S_OK>ignoriert, muss die Methode mit aufrufen. Andernfalls kann `ErrorInfo` das Objekt versehentlich verwendet werden, wenn eine `ErrorInfo`andere Partei einen Fehler generiert, ohne eine eigene bereitzustellen.
 
-- Alle Methoden, die einen Fehler stammen `HRESULT` wird empfohlen, rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Methode, um aussagekräftige Fehlerinformationen bereitzustellen. Wenn das zurückgegebene `HRESULT` ist ein spezieller `FACILITY_ITF` Fehler, und klicken Sie dann auf die Methode ist erforderlich, um eine ordnungsgemäße bieten `ErrorInfo`Objekt. Der zurückgegebene Fehler ist ein standard-Systemfehler (z. B. <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>, <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>, <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>, usw.) es akzeptabel ist, die den Fehlercode zurück, ohne den expliziten Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Methode. Als eine defensive Programmierung-Strategie, wenn einen Fehler aus `HRESULT` (einschließlich Systemfehler), rufen Sie immer die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Methode entweder mit `ErrorInfo` fehlerbeschreibung detaillierter oder `null`.
+- Alle Methoden, die `HRESULT` einen Fehler <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> auslösen, werden empfohlen, die Methode aufzurufen, um umfangreiche Fehlerinformationen bereitzustellen. Wenn es `HRESULT` sich `FACILITY_ITF` bei der zurückgegebenen Datei um `ErrorInfo`einen speziellen Fehler handelt, ist die Methode erforderlich, um ein richtiges Objekt bereitzustellen. Wenn es sich bei dem zurückgegebenen <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>Fehler <xref:Microsoft.VisualStudio.VSConstants.E_ABORT> <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>um <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>einen Standardsystemfehler handelt (z. B. , <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> , , , usw.), ist es akzeptabel, den Fehlercode zurückzugeben, ohne die Methode explizit aufzurufen. `HRESULT` Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Methode beim Ursprung eines Fehlers (einschließlich Systemfehlern) als defensive Codierungsstrategie auf, entweder mit `ErrorInfo` einer detaillierteren Beschreibung des Fehlers oder `null`.
 
-- Rufen Sie alle Funktionen, die zurückgeben, ein Fehler verursacht wurde durch einen anderen Aufruf muss auf den Informationen, die von der fehlerhaften empfangen wurde übergeben, in der `HRESULT` ohne Änderung der `ErrorInfo` Objekt.
+- Alle Funktionen, die einen Fehler zurückgeben, der von einem anderen Aufruf `HRESULT` verursacht wurde, `ErrorInfo` müssen die Informationen weitergeben, die vom fehlerhaften Aufruf im empfangen wurden, ohne das Objekt zu ändern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
-- [SetErrorInfo (Component Automation)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
+- [SetErrorInfo (Komponentenautomatisierung)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
 - [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)
 - [ISupportErrorInfo-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)

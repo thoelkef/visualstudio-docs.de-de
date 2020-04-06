@@ -1,5 +1,5 @@
 ---
-title: Bestimmen, welcher Editor eine Datei in einem Projekt öffnet | Microsoft-Dokumentation
+title: Bestimmen, welcher Editor eine Datei in einem Projekt öffnet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,38 +8,38 @@ helpviewer_keywords:
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e54a922cfa36aad8c8c7e68e87012926a8ab715
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351594"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708661"
 ---
-# <a name="determine-which-editor-opens-a-file-in-a-project"></a>Bestimmen Sie, welcher Editor eine Datei in einem Projekt öffnet
-Wenn ein Benutzer eine Datei in einem Projekt geöffnet wird, durchläuft die Umgebung einen Abruf-Prozess, und öffnen schließlich die geeigneten Editor oder Designer für diese Datei. Das erste Verfahren eingesetzt, die von der Umgebung ist für Standard- und benutzerdefinierte Editoren identisch. Die Umgebung verwendet eine Vielzahl von Kriterien aus, wenn der Editor zum Öffnen einer Datei abrufen und das VSPackage mit der Umgebung koordinieren muss, während dieses Vorgangs.
+# <a name="determine-which-editor-opens-a-file-in-a-project"></a>Bestimmen, welcher Editor eine Datei in einem Projekt öffnet
+Wenn ein Benutzer eine Datei in einem Projekt öffnet, durchläuft die Umgebung einen Abrufvorgang und öffnet schließlich den entsprechenden Editor oder Designer für diese Datei. Das anfängliche Verfahren, das von der Umgebung verwendet wird, ist für Standard- und benutzerdefinierte Editoren identisch. Die Umgebung verwendet beim Abrufen des Editors, der zum Öffnen einer Datei verwendet werden soll, eine Vielzahl von Kriterien, und das VSPackage muss sich während dieses Vorgangs mit der Umgebung abstimmen.
 
- Wählt z. B. wenn ein Benutzer die **öffnen** Befehl der **Datei** Menü und wählt dann *filename.rtf* (oder eine andere Datei mit einer *RTF*Erweiterung), die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Implementierung für jedes Projekt, und schließlich werden alle Instanzen von Project in der Lösung durchlaufen. Projekte zurückzugeben, einen Satz von Flags, die Ansprüche in einem Dokument nach Priorität zu identifizieren. Verwenden die höchste Priorität, die Umgebung Ruft die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Methode. Weitere Informationen zu den Prozess abrufen, finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).
+ Wenn ein Benutzer beispielsweise den Befehl **Öffnen** aus dem Menü **Datei** auswählt und dann *filename.rtf* (oder eine andere <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Datei mit einer *.rtf-Erweiterung)* auswählt, ruft die Umgebung die Implementierung für jedes Projekt auf und durchfährt schließlich alle Projektinstanzen in der Projektmappe. Projekte geben eine Reihe von Flags zurück, die Ansprüche für ein Dokument nach Priorität identifizieren. Unter Verwendung der höchsten Priorität <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> ruft die Umgebung die entsprechende Methode auf. Weitere Informationen zum Abrufvorgang finden Sie unter Hinzufügen von [Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
- Das Projekt verschiedene Dateien Ansprüche werden alle Dateien, die nicht von anderen Projekten in Anspruch genommen werden. Auf diese Weise können benutzerdefinierte Editoren Dokumente öffnen, bevor sie standard-Editoren zu öffnen. Wenn ein Projekt verschiedene Dateien auf eine Datei Ansprüche, die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, um die Datei mit einem standard-Editor zu öffnen. Die Umgebung überprüft ihre interne Liste der registrierten Editoren für eine, die behandelt *RTF* Dateien. Diese Liste befindet sich in der Registrierung unter folgendem Schlüssel:
+ Das Projekt Verschiedene Dateien beansprucht alle Dateien, die nicht von anderen Projekten beansprucht werden. Auf diese Weise können benutzerdefinierte Editoren Dokumente öffnen, bevor Standardeditoren sie öffnen. Wenn ein Projekt "Verschiedene Dateien" eine Datei beansprucht, ruft die Umgebung die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode auf, die Datei mit einem Standardeditor zu öffnen. Die Umgebung überprüft ihre interne Liste der registrierten Editoren auf einen, der *.rtf-Dateien* verarbeitet. Diese Liste befindet sich in der Registrierung unter folgendem Schlüssel:
 
- **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\\<Version > \Editors\\\<Editorfactory-Guid > \Extensions**
+ **\\\<HKEY_LOCAL_MACHINE-Software-Version,Microsoft-VisualStudio-Version\\\<>-Editors-Editor-Factory-Guid->-Erweiterungen**
 
- Die Umgebung überprüft auch die Klassenbezeichner der **HKEY_CLASSES_ROOT\CLSID** Schlüssel für alle Objekte, die über einen Unterschlüssel **DocObject**. Wenn die Dateierweiterung dort gefunden wird, wird eine eingebettete Version von der Anwendung, z.B. Microsoft Word ein direktes in Visual Studio erstellt. Diese Dokumentobjekte müssen compound-Dateien, die implementiert werden die <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> -Schnittstelle, oder das Objekt muss implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> Schnittstelle.
+ Die Umgebung überprüft auch die Klassenbezeichner im **HKEY_CLASSES_ROOT-CLSID-Schlüssel** für alle Objekte, die über einen Unterschlüssel **DocObject**verfügen. Wenn die Dateierweiterung dort gefunden wird, wird eine eingebettete Version der Anwendung, z. B. Microsoft Word, in Visual Studio an Ort und Stelle erstellt. Bei diesen Dokumentobjekten muss es <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> sich um zusammengesetzte <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> Dateien handelt, die die Schnittstelle implementieren, oder das Objekt muss die Schnittstelle implementieren.
 
- Es ist keine Editor-Factory für *RTF* Dateien in der Registrierung, und klicken Sie dann die Umgebung in sucht der **HKEY_CLASSES_ROOT\\RTF** gedrückt, und die dort angegebenen Editor geöffnet. Wenn die Dateierweiterung nicht, im gefunden wird **HKEY_CLASSES_ROOT**, und klicken Sie dann die Umgebung der Visual Studio-Kern-Text-Editor verwendet, um die Datei zu öffnen, wenn es sich um eine Textdatei ist.
+ Wenn keine Editorfactory für *.rtf-Dateien* in der Registrierung vorhanden ist, sucht die Umgebung im **\\HKEY_CLASSES_ROOT .rtf-Taste** und öffnet den dort angegebenen Editor. Wenn die Dateierweiterung in **HKEY_CLASSES_ROOT**nicht gefunden wird, verwendet die Umgebung den Visual Studio-Kerntexteditor, um die Datei zu öffnen, wenn es sich um eine Textdatei handelt.
 
- Wenn der kerntext-Editors ein Fehler auftritt, tritt auf, die, wenn die Datei nicht um eine Textdatei ist, klicken Sie dann die Umgebung der binären-Editor für die Datei verwendet.
+ Wenn der Kerntexteditor fehlschlägt, was auftritt, wenn es sich bei der Datei nicht um eine Textdatei handelt, verwendet die Umgebung den Binäreditor für die Datei.
 
- Wenn die Umgebung für einen Editor findet die *RTF* Erweiterung in der Registrierung, lädt er das VSPackage, das dieser Editorfactory implementiert. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Methode für das VSPackage, neue. Die VSPackage-Aufrufe `QueryService` für `SID_SVsRegistorEditor`unter Verwendung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> Methode, um die Editor-Factory mit der Umgebung zu registrieren.
+ Wenn die Umgebung einen Editor für die *Erweiterung .rtf* in ihrer Registrierung findet, lädt sie das VSPackage, das diese Editorfactory implementiert. Die Umgebung <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> ruft die Methode für das neue VSPackage auf. Das VSPackage `QueryService` `SID_SVsRegistorEditor`ruft nach <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> auf, mit der Methode, die Editorfactory bei der Umgebung zu registrieren.
 
- Die Umgebung jetzt wurden seine interne Liste der registrierten-Editoren, suchen die neu registrierte Editorfactory für *RTF* Dateien. Die Umgebung ruft Ihre Implementierung von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> Methode und übergeben den Dateityp Namen und die Ansicht zu erstellen.
+ Die Umgebung überprüft nun ihre interne Liste der registrierten Editoren, um die neu registrierte Editorfactory für *.rtf-Dateien* zu finden. Die Umgebung ruft Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> Implementierung der Methode auf und übergibt den zu erstellenden Dateinamen und Ansichtstyp.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>
 - <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>

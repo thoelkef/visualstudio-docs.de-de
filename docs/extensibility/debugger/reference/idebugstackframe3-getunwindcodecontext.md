@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft-Dokumentation
+title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::GetUnwindCodeContext method
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a63883b8c2f1f7e09070173281f5e9eeda528352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352091"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719500"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Gibt zurück, der Codekontext, eine Position darstellt, wenn ein Stapel zu, Vorgang Entladen aufgetreten ist.
+Gibt den Codekontext zurück, der einen Speicherort darstellt, wenn ein Stapelabspulenvorgang aufgetreten ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>Parameter
 `ppCodeContext`\
-[out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das Kontext codespeicherort darstellt, wenn eine stapelentladung aufgetreten ist.
+[out] Gibt ein [IDebugCodeContext2-Objekt](../../../extensibility/debugger/reference/idebugcodecontext2.md) zurück, das den Codekontextspeicherort darstellt, wenn die Abspulung eines Stapels erfolgt ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Auch wenn diese Methode einen Codekontext für den Speicherort nach einer stapelentladung zurückgeben kann, bedeutet dies nicht unbedingt, dass der stapelentladung tatsächlich in den aktuellen Stapelrahmen auftreten kann.
+## <a name="remarks"></a>Bemerkungen
+ Auch wenn diese Methode möglicherweise einen Codekontext für den Speicherort nach dem Abwickeln eines Stapels zurückgibt, bedeutet dies nicht notwendigerweise, dass die Stapelabladung tatsächlich im aktuellen Stapelrahmen auftreten kann.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

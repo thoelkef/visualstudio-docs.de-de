@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Microsoft-Dokumentation
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311374"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714330"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Gibt die Flags für die Debuginformationen für das Modul an.
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
+Gibt die Flags für die Debugmodulinformationen an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -66,59 +66,59 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Felder
  `MIF_NONE`\
- Verwenden Sie Initialize/keines der Felder in der Struktur.
+ Initialisieren/Verwenden von keinem der Felder in der Struktur.
 
  `MIF_NAME`\
- Initialisieren und Verwenden der `m_bstrName` -Feld in der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur.
+ Initialisieren/verwenden `m_bstrName` Sie das Feld in der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur.
 
  `MIF_URL`\
- Initialisieren und Verwenden der `m_bstrUrl` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_bstrUrl` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_VERSION`\
- Initialisieren und Verwenden der `m_bstrVersion` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_bstrVersion` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_DEBUGMESSAGE`\
- Initialisieren und Verwenden der `m_bstrDebugMessage` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_bstrDebugMessage` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_LOADADDRESS`\
- Initialisieren und Verwenden der `m_addrLoadAddress` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_addrLoadAddress` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_PREFFEREDADDRESS`\
- Initialisieren und Verwenden der `m_addrPreferredLoadAddress` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_addrPreferredLoadAddress` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_SIZE`\
- Initialisieren und Verwenden der `m_dwSize` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_dwSize` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_LOADORDER`\
- Initialisieren und Verwenden der `m_dwLoadOrder` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_dwLoadOrder` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_TIMESTAMP`\
- Initialisieren und Verwenden der `m_TimeStamp` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_TimeStamp` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_URLSYMBOLLOCATION`\
- Initialisieren und Verwenden der `m_bstrUrlSymbolLocation` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_bstrUrlSymbolLocation` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_FLAGS`\
- Initialisieren und Verwenden der `m_dwModuleFlags` -Feld in der `MODULE_INFO` Struktur.
+ Initialisieren/verwenden `m_dwModuleFlags` Sie das `MODULE_INFO` Feld in der Struktur.
 
  `MIF_ALLFIELDS`\
- Initialize/verwenden alle Felder in der `MODULE_INFO` Struktur.
+ Initialisieren/Verwenden aller Felder in `MODULE_INFO` der Struktur.
 
-## <a name="remarks"></a>Hinweise
- Diese Werte werden übergeben, als Argument an die [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) Methode, um die Felder anzugeben der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) sind, dass die Struktur initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+ Diese Werte werden als Argument an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) übergeben, um anzugeben, welche Felder der [MODULE_INFO-Struktur](../../../extensibility/debugger/reference/module-info.md) initialisiert werden sollen.
 
- Diese Werte werden auch verwendet, der `MODULE_INFO` Struktur, um anzugeben, welche Felder verwendet und gültig sind.
+ Diese Werte werden auch `MODULE_INFO` in der Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
 
- Diese Flags können kombiniert werden, mit einer bitweisen `OR`.
+ Diese Flags können mit einem `OR`bitwise kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

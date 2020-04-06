@@ -1,31 +1,31 @@
 ---
-title: Erweitern im Ausgabefenster | Microsoft-Dokumentation
+title: Erweitern des Ausgabefensters | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd02ce74f2fee8255d92c47149a46f1003b02011
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311024"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711642"
 ---
-# <a name="extend-the-output-window"></a>Erweitern Sie im Ausgabefenster
-Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff. Visual Studio verfügt über diesen integrierten Bereichen: **Erstellen Sie**, Nachrichten zu Builds, welche Projekte kommunizieren und **allgemeine**, in dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Nachrichten über die IDE kommuniziert. Projekte Abrufen eines Verweises auf die **erstellen** Bereich automatisch über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> Schnittstellenmethoden und Visual Studio bietet direkten Zugriff auf die **allgemeine** Bereich über die <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> -Dienst. Zusätzlich zu den integrierten Bereichen können Sie erstellen und verwalten Ihre eigenen benutzerdefinierten Bereiche.
+# <a name="extend-the-output-window"></a>Erweitern des Ausgabefensters
+Das **Ausgabefenster** ist ein Satz von Lese-/Schreibtextbereichen. Visual Studio verfügt über die folgenden integrierten Bereiche: **Build**, in dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekte Nachrichten zu Builds kommunizieren, und **Allgemein**, in dem Nachrichten über die IDE kommuniziert werden. Projekte erhalten automatisch über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> Schnittstellenmethoden einen Verweis auf den **Buildbereich,** und <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Visual Studio bietet über den Dienst direkten Zugriff auf den **Bereich Allgemein.** Zusätzlich zu den integrierten Bereichen können Sie eigene benutzerdefinierte Bereiche erstellen und verwalten.
 
- Sie können steuern, die **Ausgabe** Fenster direkt über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstellen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> -Schnittstelle, die von angeboten wird die <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> service, definiert Methoden zum Erstellen, abrufen und Zerstören von **Ausgabe** Fensterbereichen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstelle definiert Methoden für die Bereiche einblenden, Ausblenden von Bereichen und Bearbeiten von ihrem Text. Eine alternative Möglichkeit zum Steuern der **Ausgabe** Fenster ist über die <xref:EnvDTE.OutputWindow> und <xref:EnvDTE.OutputWindowPane> Objekte im Objektmodell Visual Studio-Automatisierung. Diese Objekte zu kapseln, fast alle Funktionen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstellen. Darüber hinaus die <xref:EnvDTE.OutputWindow> und <xref:EnvDTE.OutputWindowPane> Objekte hinzufügen, einige auf höherer Ebene Funktionen zum Auflisten von erleichtern die **Ausgabe** Fensterbereiche und zum Abrufen von Text aus den Bereichen.
+ Sie können das **Ausgabefenster** <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> direkt <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> über die und Schnittstellen steuern. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Schnittstelle, die vom <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> Dienst angeboten wird, definiert Methoden zum Erstellen, Abrufen und Zerstören von **Ausgabefensterfenstern.** Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstelle definiert Methoden zum Anzeigen von Bereichen, Ausblenden von Bereichen und Bearbeiten ihres Textes. Eine alternative Möglichkeit zum Steuern des <xref:EnvDTE.OutputWindow> <xref:EnvDTE.OutputWindowPane> **Ausgabefensters** ist die und Objekte im Visual Studio Automation-Objektmodell. Diese Objekte kapseln fast die gesamte <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Funktionalität <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> der und Schnittstellen. Darüber hinaus <xref:EnvDTE.OutputWindow> fügen <xref:EnvDTE.OutputWindowPane> die und-Objekte einige Funktionen auf höherer Ebene hinzu, um das Aufzählen der **Ausgabefensterbereiche** und das Abrufen von Text aus den Bereichen zu vereinfachen.
 
-## <a name="create-an-extension-that-uses-the-output-pane"></a>Erstellen Sie eine Erweiterung, die den Ausgabebereich verwendet.
+## <a name="create-an-extension-that-uses-the-output-pane"></a>Erstellen einer Erweiterung, die den Ausgabebereich verwendet
  Sie können eine Erweiterung erstellen, die verschiedene Aspekte des Ausgabebereichs ausführt.
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TestOutput` mit einem Menübefehl mit dem Namen **TestOutput**. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein `TestOutput` VSIX-Projekt mit dem Namen mit einem Menübefehl mit dem Namen **TestOutput**. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 2. Fügen Sie die folgenden Verweise hinzu:
 
@@ -33,14 +33,14 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
 
     2. EnvDTE80
 
-3. In *TestOutput.cs*, fügen Sie die folgenden using-Anweisung:
+3. Fügen Sie in *TestOutput.cs*die folgende Usingsanweisung hinzu:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. In *TestOutput.cs*, löschen Sie die `ShowMessageBox` Methode. Fügen Sie den folgenden Methodenstub hinzu:
+4. Löschen *Sie*in `ShowMessageBox` TestOutput.cs die Methode. Fügen Sie den folgenden Methodenstub hinzu:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
     }
     ```
 
-5. Ändern Sie im Konstruktor TestOutput der Befehlshandler in OutputCommandHandler ein. Hier ist das Teil, das die Befehle hinzugefügt:
+5. Ändern Sie im TestOutput-Konstruktor den Befehlshandler in OutputCommandHandler. Hier ist der Teil, der die Befehle hinzufügt:
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
     }
     ```
 
-6. In den folgenden Abschnitten haben verschiedene Methoden, die verschiedene Methoden zum Umgang mit den Ausgabebereich anzeigen. Sie können Text, der diese Methoden Aufrufen der `OutputCommandHandler()` Methode. Beispielsweise der folgende Code fügt die `CreatePane()` -Methode anhand der Angaben im nächsten Abschnitt.
+6. Die folgenden Abschnitte haben verschiedene Methoden, die verschiedene Methoden für den Umgang mit dem Ausgabebereich aufzeigen. Sie können diese Methoden als `OutputCommandHandler()` Text der Methode aufrufen. Der folgende Code fügt `CreatePane()` z. B. die im nächsten Abschnitt angegebene Methode hinzu.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -70,8 +70,8 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
     }
     ```
 
-## <a name="create-an-output-window-with-ivsoutputwindow"></a>Erstellen Sie ein Fenster "Ausgabe" mit IVsOutputWindow
- In diesem Beispiel wird gezeigt, wie zum Erstellen eines neuen **Ausgabe** Fensterbereich mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Schnittstelle.
+## <a name="create-an-output-window-with-ivsoutputwindow"></a>Erstellen eines Ausgabefensters mit IVsOutputWindow
+ In diesem Beispiel wird gezeigt, wie Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> mithilfe der Schnittstelle einen neuen **Ausgabefensterbereich** erstellen.
 
 ```csharp
 void CreatePane(Guid paneGuid, string title,
@@ -95,10 +95,10 @@ void CreatePane(Guid paneGuid, string title,
 }
 ```
 
- Wenn Sie diese Methode, um die Erweiterung, die im vorherigen Abschnitt angegeben wird hinzufügen, wenn Sie auf die **aufrufen TestOutput** Befehl sollte die **Ausgabe** Fenster mit einem Header, die besagt, **Ausgabe anzeigen Von: CreatedPane** und die Wörter **Dies ist der Bereich erstellt** im Bereich selbst.
+ Wenn Sie diese Methode der im vorherigen Abschnitt angegebenen Erweiterung hinzufügen, sollten Sie beim Klicken auf den Befehl **TestOutput aufrufen** das **Ausgabefenster** mit einer Kopfzeile anzeigen sehen, die **Ausgabe anzeigen aus: CreatedPane** und den **Wörtern Dies ist der erstellte Bereich** im Bereich selbst.
 
-## <a name="create-an-output-window-with-outputwindow"></a>Erstellen Sie ein Fenster "Ausgabe" mit OutputWindow
- Dieses Beispiel zeigt, wie Sie erstellen eine **Ausgabe** Fensterbereich mit der <xref:EnvDTE.OutputWindow> Objekt.
+## <a name="create-an-output-window-with-outputwindow"></a>Erstellen eines Ausgabefensters mit OutputWindow
+ In diesem Beispiel wird gezeigt, wie <xref:EnvDTE.OutputWindow> Sie mithilfe des Objekts einen **Ausgabefensterbereich** erstellen.
 
 ```csharp
 void CreatePane(string title)
@@ -120,12 +120,12 @@ void CreatePane(string title)
 }
 ```
 
- Obwohl die <xref:EnvDTE.OutputWindowPanes> Auflistung können Sie Abrufen einer **Ausgabe** Fensterbereich anhand von dessen Titel, Bereich Titel werden nicht unbedingt eindeutig sein. Wenn Sie die Eindeutigkeit eines Titels bezweifle, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> Methode, um den richtigen Bereich durch ihre GUID abzurufen.
+ Obwohl <xref:EnvDTE.OutputWindowPanes> Sie mit der Auflistung einen **Ausgabefensterbereich** anhand ihres Titels abrufen können, sind Bereichstitel nicht garantiert eindeutig. Wenn Sie die Eindeutigkeit eines Titels bezweifeln, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> Methode, um den richtigen Bereich über seine GUID abzurufen.
 
- Wenn Sie diese Methode, um die Erweiterung, die im vorherigen Abschnitt angegeben wird hinzufügen, wenn Sie auf die **aufrufen TestOutput** Befehl sollte im Ausgabefenster mit einem Header, die besagt, **Ausgabe anzeigen von: DTEPane** und die Wörter **DTE-Bereich hinzugefügt** im Bereich selbst.
+ Wenn Sie diese Methode der im vorherigen Abschnitt angegebenen Erweiterung hinzufügen, sollten Sie beim Klicken auf den Befehl **TestOutput aufrufen** das Ausgabefenster mit einer Kopfzeile anzeigen sehen, die **Ausgabe anzeigen aus: DTEPane** und den Wörtern **Hinzugefügter DTE-Bereich** im Bereich selbst angibt.
 
-## <a name="delete-an-output-window"></a>Löschen Sie ein Fenster "Ausgabe"
- Dieses Beispiel zeigt, wie Sie löschen eine **Ausgabe** Fensterbereich.
+## <a name="delete-an-output-window"></a>Löschen eines Ausgabefensters
+ In diesem Beispiel wird gezeigt, wie Sie einen **Ausgabefensterbereich** löschen.
 
 ```csharp
 void DeletePane(Guid paneGuid)
@@ -147,10 +147,10 @@ void DeletePane(Guid paneGuid)
 }
 ```
 
- Wenn Sie diese Methode, um die Erweiterung, die im vorherigen Abschnitt angegeben wird hinzufügen, wenn Sie auf die **aufrufen TestOutput** Befehl sollte im Ausgabefenster mit einem Header, die besagt, **Ausgabe anzeigen von: Neuer Bereich** und die Wörter **erstellten Bereich hinzugefügt** im Bereich selbst. Wenn Sie auf die **aufrufen TestOutput** erneut den Befehl im Bereich wird gelöscht.
+ Wenn Sie diese Methode der im vorherigen Abschnitt angegebenen Erweiterung hinzufügen, sollten Sie beim Klicken auf den Befehl **TestOutput aufrufen** das Ausgabefenster mit einer Kopfzeile anzeigen sehen, die **Ausgabe anzeigen aus: Neuer Bereich** und den Wörtern **"Erstellter Bereich hinzugefügt"** im Bereich selbst anzeigt. Wenn Sie erneut auf den Befehl **TestOutput aufrufen** klicken, wird der Bereich gelöscht.
 
-## <a name="get-the-general-pane-of-the-output-window"></a>Bereich "Allgemein" des Ausgabefensters abrufen
- Dieses Beispiel zeigt, wie Sie die integrierte abrufen **allgemeine** im Bereich der **Ausgabe** Fenster.
+## <a name="get-the-general-pane-of-the-output-window"></a>Abrufen des Fensters Allgemein des Ausgabefensters
+ In diesem Beispiel wird gezeigt, wie Sie den integrierten **Bereich Allgemein** des **Ausgabefensters** abrufen.
 
 ```csharp
 IVsOutputWindowPane GetGeneralPane()
@@ -160,10 +160,10 @@ IVsOutputWindowPane GetGeneralPane()
 }
 ```
 
- Wenn Sie diese Methode, um die Erweiterung, die im vorherigen Abschnitt angegeben wird hinzufügen, wenn Sie auf die **TestOutput Aufrufen** Befehl sollte angezeigt werden, die **Ausgabe** Fenster zeigt die Wörter **allgemeine gefunden Bereich** im Bereich.
+ Wenn Sie diese Methode der im vorherigen Abschnitt angegebenen Erweiterung hinzufügen, sollten Sie beim Klicken auf den Befehl **TestOutput aufrufen** sehen, dass im **Ausgabefenster** die Wörter **"Erster Allgemein"** im Bereich angezeigt werden.
 
-## <a name="get-the-build-pane-of-the-output-window"></a>Erhalten Sie im Bereich "Build" des Ausgabefensters
- Dieses Beispiel zeigt, wie Sie die **erstellen** Bereich, und in ihn schreiben. Da die **erstellen** Bereich ist nicht standardmäßig aktiviert, er es ebenfalls aktiviert.
+## <a name="get-the-build-pane-of-the-output-window"></a>Abrufen des Buildfensters des Ausgabefensters
+ In diesem Beispiel wird gezeigt, wie Sie den **Buildbereich** finden und darauf schreiben. Da der **Buildbereich** nicht standardmäßig aktiviert ist, wird er ebenfalls aktiviert.
 
 ```csharp
 void OutputTaskItemStringExExample(string buildMessage)

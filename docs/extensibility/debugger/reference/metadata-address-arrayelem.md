@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_ARRAYELEM | Microsoft-Dokumentation
+title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_ARRAYELEM structure
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0b5e24447c1f55242af6a6b549c5317f37818b2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 67e39eb8b03dd6f75ac39155bd744e03084beb0b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339171"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714541"
 ---
-# <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+# <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
-Diese Struktur stellt ein Arrayelement in einem Array dar.
+Diese Struktur stellt ein Arrayelement innerhalb eines Arrays dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,25 +45,25 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="members"></a>Member
 
 `tokMethod`\
-Die ID des Arrays ist dieses Element Teil.
+Die ID des Arrays, zu dem dieses Element gehört.
 
-[C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.
+[C++] `_mdToken` ist `typedef` ein für eine `int`32-Bit .
 
 `dwIndex`\
 Der Index dieses Elements innerhalb des Arrays.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_ARRAYELEM` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur ist Teil der Union in `dwKind` der `DEBUG_ADDRESS_UNION` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, `ADDRESS_KIND_ARRAYELEM` wenn das Feld der Struktur auf (ein Wert aus der ADDRESS_KIND-Enumeration) festgelegt ist. [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
 
-## <a name="requirements"></a>Anforderungen
-Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

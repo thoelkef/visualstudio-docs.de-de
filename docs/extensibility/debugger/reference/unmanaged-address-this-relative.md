@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft-Dokumentation
+title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30a70f33edbe3cf817ebe4ad383c54bc02275a72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316101"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713259"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-Diese Struktur stellt eine Adresse, die relativ zu einem `this` Zeiger (`Me` in Visual Basic).
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+Diese Struktur stellt eine Adresse `this` dar,`Me` die relativ zu einem Zeiger (in Visual Basic) ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,24 +45,24 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>Member
  `dwOffset`\
- Byte-offset von einer Basisklasse Position (z. B. Anfang eine Klassen-Vtable).
+ Byteoffset von einer Basisposition (z. B. Start einer Klasse vtable).
 
  `dwBitOffset`\
- Der Offset in Bits, die von einer Basisklasse Position (immer 0, wenn auf ein Bitfeld).
+ Versatz in Bits von einer Basisposition (immer 0, es sei denn, es wird auf ein Bitfeld verwiesen).
 
  `dwBitLength`\
- Anzahl der Bits, die die Adresse (immer 0, wenn auf ein Bitfeld).
+ Anzahl der Bits, die die Adresse darstellen (immer 0, es sei denn, sie beziehen sich auf ein Bitfeld).
 
-## <a name="remarks"></a>Hinweise
- Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).
+## <a name="remarks"></a>Bemerkungen
+ Diese Struktur ist Teil der Union in `dwKind` der `DEBUG_ADDRESS_UNION` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` wenn das Feld der Struktur auf (ein Wert aus der ADDRESS_KIND-Enumeration) festgelegt ist. [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
 
-## <a name="requirements"></a>Anforderungen
- Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

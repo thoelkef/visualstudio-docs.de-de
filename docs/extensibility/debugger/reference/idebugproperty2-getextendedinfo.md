@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetExtendedInfo | Microsoft-Dokumentation
+title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: acf070d6f00dcb4e775662a6fdc8c4c3d589ae85
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343180"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721486"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
-Ruft Informationen für die Eigenschaft erweitert werden.
+Ruft erweiterte Informationen für die Eigenschaft ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,28 +43,28 @@ int GetExtendedInfo ( 
 
 ## <a name="parameters"></a>Parameter
 `guidExtendedInfo`\
-[in] GUID, der bestimmt, den Typ des erweiterten Informationen abgerufen werden sollen. Einzelheiten finden Sie unter "Hinweise".
+[in] GUID, die den Typ der erweiterten Informationen bestimmt, die abgerufen werden sollen. Einzelheiten finden Sie in den Hinweisen.
 
 `pExtendedInfo`\
-[out] Gibt eine `VARIANT` (C++) oder ein Objekt (C#), die zum Abrufen der Informationen der erweiterten Eigenschaft verwendet werden kann. Dieser Parameter möglicherweise zurück, z. B. eine `IUnknown` -Schnittstelle, die abgefragt werden kann ein [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle. Einzelheiten finden Sie unter "Hinweise".
+[out] Gibt `VARIANT` ein (C++) oder Objekt (C') zurück, das zum Abrufen der erweiterten Eigenschafteninformationen verwendet werden kann. Dieser Parameter kann z. `IUnknown` B. eine Schnittstelle zurückgeben, die für eine [IDebugDocumentText2-Schnittstelle](../../../extensibility/debugger/reference/idebugdocumenttext2.md) abgefragt werden kann. Einzelheiten finden Sie in den Hinweisen.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` , wenn es keine erweiterten Informationen gibt abrufen.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` zurück, wenn keine erweiterten Informationen abgerufen werden sollen.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode gibt es zum Abrufen von Informationen, die nicht alleine als komponententestbar ist an abgerufen wird, durch den Aufruf der [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode ist zum Abrufen von Informationen vorhanden, die nicht zum Abrufen durch Aufrufen der [GetPropertyInfo-Methode](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) geeignet sind.
 
- Die folgenden GUIDs werden in der Regel von dieser Methode erkannt (die GUID-Werte sind für C#-Code angegeben, da der Name nicht in einer beliebigen Assembly verfügbar ist). Zusätzliche GUIDs können für die interne Verwendung erstellt werden.
+ Die folgenden GUIDs werden in der Regel von dieser Methode erkannt (die GUID-Werte werden für C- angegeben, da der Name in keiner Assembly verfügbar ist). Für den internen Gebrauch können zusätzliche GUIDs erstellt werden.
 
-|Name|GUID|Beschreibung|
+|name|GUID|BESCHREIBUNG|
 |----------|----------|-----------------|
-|guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Gibt eine `IUnknown` Schnittstelle, um das Dokument. In der Regel die [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle erhalten Sie von dieser `IUnknown` Schnittstelle.|
-|guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Gibt eine `IUnknown` Schnittstelle, um den Dokumentenkontext. In der Regel die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle erhalten Sie von dieser `IUnknown` Schnittstelle.|
-|guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|Gibt eine Zeichenfolge, die mit der CLSID der ein benutzerdefinierter Viewer, die in der Regel von einer ausdrucksauswertung implementiert.|
-|guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Gibt eine 32-Bit-Zahl, die die gewünschten Slotnummer darstellt, wenn diese Eigenschaft auf eine lokale Adresse von verwaltetem Code darstellt.|
-|guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Gibt eine Zeichenfolge, die die Signatur der Property-Objekt zugeordneten Variablen enthält.|
+|guidDokument|3f98de84-fee9-11d0-b47f-00a0244a1dd2|Gibt `IUnknown` eine Schnittstelle an das Dokument zurück. In der Regel kann die [IDebugDocumentText2-Schnittstelle](../../../extensibility/debugger/reference/idebugdocumenttext2.md) über diese `IUnknown` Schnittstelle abgerufen werden.|
+|guidCodeContext|E2fc65e-56ce-11d1-b528-00aax004a8797|Gibt `IUnknown` eine Schnittstelle an den Dokumentkontext zurück. In der Regel kann die [IDebugDocumentContext2-Schnittstelle](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) über diese `IUnknown` Schnittstelle abgerufen werden.|
+|guidCustomViewerUnterstützt|D9c9da31-ffbe-4eeb-9186-23121e3c088c|Gibt eine Zeichenfolge zurück, die die CLSID eines benutzerdefinierten Viewers enthält, die in der Regel von einem Ausdrucksevaluator implementiert wird.|
+|guidExtendedInfoSlot|6df235ad-82c6-4292-9c97-7389770bc42f|Gibt eine 32-Bit-Nummer zurück, die die gewünschte Steckplatznummer darstellt, wenn diese Eigenschaft eine lokale Adresse für verwalteten Code darstellt.|
+|guidExtendedInfoSignature|B5fb6d46-f805-417f-96a3-8ba737073ffd|Gibt eine Zeichenfolge zurück, die die Signatur der Variablen enthält, die dem Eigenschaftsobjekt zugeordnet ist.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -1,5 +1,5 @@
 ---
-title: SEEK_START | Microsoft-Dokumentation
+title: SEEK_START | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de4aa0214ab97c330ddfb689076a2c378c4d227a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329298"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713592"
 ---
-# <a name="seekstart"></a>SEEK_START
-Gibt die Position, ab dem mit dem Sie suchen, die in einem Stream Disassembly.
+# <a name="seek_start"></a>SEEK_START
+Gibt die Position an, von der aus in einem Demontagestrom gesucht werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -50,31 +50,31 @@ public enum enum_SEEK_START { 
 
 ## <a name="fields"></a>Felder
  `SEEK_START_BEGIN`\
- Beginnt die Suche am Anfang des aktuellen Dokuments.
+ Beginnt mit der Suche am Anfang des aktuellen Dokuments.
 
  `SEEK_START_END`\
- Beginnt die Suche am Ende des aktuellen Dokuments.
+ Beginnt mit der Suche am Ende des aktuellen Dokuments.
 
  `SEEK_START_CURRENT`\
- Beginnt die Suche an der aktuellen Position des aktuellen Dokuments.
+ Beginnt mit der Suche an der aktuellen Position des aktuellen Dokuments.
 
  `SEEK_START_CODECONTEXT`\
- Startet die Suchvorgänge in den angegebenen Code-Kontext des aktuellen Dokuments.
+ Beginnt mit der Suche im angegebenen Codekontext des aktuellen Dokuments.
 
  `SEEK_START_CODELOCID`\
- Wird gestartet, an der angegebenen Code Standortbezeichner suchen. Speicherort der Codebezeichner erhalten Sie durch Aufrufen von [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ Beginnt mit der Suche an der angegebenen Codepositionskennung. Codepositionsbezeichner werden durch Aufrufen von [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)abgerufen.
 
-## <a name="remarks"></a>Hinweise
- Übergeben als Argument an die [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Übergeben als Argument [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) an die Seek-Methode.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 - [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

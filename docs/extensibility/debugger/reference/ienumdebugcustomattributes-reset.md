@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Reset | Microsoft-Dokumentation
+title: IEnumDebugCustomAttributes::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Reset
 ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 154bdf66c989b9cb2bb82b39a65f0d29b54acf0a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 061d67e628974b001f74d81675d8dcba45968678
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321507"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717207"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 Setzt die Enumerationsfolge auf den Anfang zurück.
@@ -36,11 +36,11 @@ int Reset();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Nachdem diese Methode aufgerufen wird, wird beim nächsten Aufruf von der [Weiter](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) Methode gibt das erste Element der Enumeration.
+## <a name="remarks"></a>Bemerkungen
+ Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf der [Next-Methode](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) das erste Element der Enumeration zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
-- [Nächste](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)
+- [Weiter](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)

@@ -1,27 +1,27 @@
 ---
-title: Description-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Beschreibung Element (Visual Studio Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68b9df33051de1c4b4bb70321e0caff7df2e91f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348116"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712258"
 ---
-# <a name="description-element-visual-studio-templates"></a>Description-Element (Visual Studio-Vorlagen)
-Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.
+# <a name="description-element-visual-studio-templates"></a>Beschreibungselement (Visual Studio-Vorlagen)
+Gibt die Beschreibung der Vorlage an, wie sie im Dialogfeld **Neues Projekt** oder Neues **Element hinzufügen** angezeigt wird.
 
- \<VSTemplate > \<TemplateData > \<Beschreibung >
+ \<VSTemplate \<> TemplateData> \<Beschreibung>
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,27 +40,27 @@ Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|
-|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|
+|`Package`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
+|`ID`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
- Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.
+ Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.
 
- Der Text stellt eine Beschreibung der Vorlage bereit.
+ Der Text enthält eine Beschreibung der Vorlage.
 
-## <a name="remarks"></a>Hinweise
- `Description` ist ein erforderliches untergeordnetes Element des `TemplateData`-Elements.
+## <a name="remarks"></a>Bemerkungen
+ `Description`ist ein erforderliches `TemplateData` untergeordnetes Element des Elements.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.
@@ -89,6 +89,6 @@ Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

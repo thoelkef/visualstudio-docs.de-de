@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly | Microsoft-Dokumentation
+title: IDebugObject::IsReadOnly | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsReadOnly method
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21c8a21f3cc85247f1cef4131768984f99fff764
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 19546550f916e9d42adf634b0d85958ce9697d28
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349955"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726415"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 Bestimmt, ob dieses Objekt schreibgeschützt ist.
@@ -41,13 +41,13 @@ int IsReadOnly(
 
 ## <a name="parameters"></a>Parameter
 `pfIsReadOnly`\
-[out] Ungleich NULL zurück (`TRUE`) Wenn dieses Objekt schreibgeschützt ist; andernfalls ist, gibt NULL zurück (`FALSE`).
+[out] Gibt einen Wert`TRUE`ungleich Null zurück ( ), wenn dieses Objekt schreibgeschützt ist; Andernfalls wird Null`FALSE`zurückgegeben ( ).
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Ein schreibgeschütztes Objekt kann nicht haben, dessen Wert sich ändert, nachdem es erstellt wurde.
+## <a name="remarks"></a>Bemerkungen
+ Ein schreibgeschütztes Objekt kann seinen Wert nicht ändern, nachdem es erstellt wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

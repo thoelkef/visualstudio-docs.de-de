@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgramNode | Microsoft-Dokumentation
+title: IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b0611b723b649fd8d899af427c6b41fb5db1e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343289"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721668"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
-Stellt einen Knoten für die Anwendung zur Verfügung für die Verwendung von Debug-Engines (DEs) und die Sitzung Debug-Manager (SDM).
+Stellt einen Programmknoten für die Verwendung durch Debugmodule (DEs) und den Sitzungsdebug-Manager (SDM) zur Verfügung.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,17 +41,17 @@ int PublishProgramNode(
 
 ## <a name="parameters"></a>Parameter
 `pProgramNode`\
-[in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das den Programm-Knoten zur Verfügung stellen darstellt.
+[in] Ein [IDebugProgramNode2-Objekt,](../../../extensibility/debugger/reference/idebugprogramnode2.md) das den Programmknoten darstellt, der verfügbar gemacht werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode ermöglicht die Programme, die Informationen, bevor Sie auswählen, und starten sie zum Debuggen von abgefragt werden.
+## <a name="remarks"></a>Bemerkungen
+ Mit dieser Methode können Programme nach Informationen abgefragt werden, bevor sie zum Debuggen ausgewählt und gestartet werden.
 
- Rufen Sie zum Entfernen eines Knotens Programm von der Verfügbarkeit der [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) Methode.
+ Um einen Programmknoten aus der Verfügbarkeit zu entfernen, rufen Sie die [UnpublishProgramNode-Methode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) auf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)

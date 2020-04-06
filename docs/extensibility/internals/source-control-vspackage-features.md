@@ -1,43 +1,43 @@
 ---
-title: Source Control VSPackage-Funktionen | Microsoft-Dokumentation
+title: Quellcodeverwaltung VSPackage-Funktionen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, features
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 513f43787040075ea0904c97b1aca9866359520a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322493"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705018"
 ---
 # <a name="source-control-vspackage-features"></a>Funktionen von Quellcodeverwaltungs-VSPackages
-Dieser Abschnitt beschreibt die verschiedenen Funktionen eines Quellcodeverwaltungs-VSPackage. Es wird beschrieben, die Registrierung und Auswahl für diese ein VSPackage und drei der Hauptquelle Steuerelement-bezogenen Funktionen erläutert: Behandeln von Ereignissen, Symbol ersetzt und benutzerdefinierte Benutzeroberfläche (UI) für das Datenquellen-Steuerelement Abfragebearbeitung Abfrage speichern (QEQS.) -Funktionen.
+In diesem Abschnitt werden die verschiedenen Funktionen eines Quellcodeverwaltungs-VSPackage beschrieben. Es beschreibt die Registrierungs- und Auswahldetails für ein solches VSPackage und erläutert drei der wichtigsten Quellcodeverwaltungsfunktionen: Die Behandlung von QEQS-Ereignissen (Query-Edit Query-Save), die Symbolersetzung und die benutzerdefinierte Benutzeroberfläche (UI) für die Quellcodeverwaltungsfunktionen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
 
- Beschreibt die Paket-Registrierung und Auswahl-Mechanismen.
+ Beschreibt die Paketregistrierungs- und -auswahlmechanismen.
 
 - [QueryEditQuerySave](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- Erläutert die Rolle Abfragebearbeitung Abfrage speichern und wie sie durch das Quellcodeverwaltungs-VSPackage behandelt werden.
+ Erläutert die Rolle von Query-Edit Query-Save-Ereignissen und deren Verarbeitung durch die Quellcodeverwaltung VSPackage.
 
 - [Glyphensteuerung](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 
- Werden die Ebenen der glyphensteuerung und deren Implementierung beschrieben.
+ Beschreibt die Ebenen der Glyphensteuerung und deren Implementierung.
 
 - [Benutzerdefinierte Benutzeroberfläche](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)
 
- Beschreibt die Elemente der Benutzeroberfläche, die ein Quellcodeverwaltungs-VSPackage angeben können.
+ Umreißt die UI-Elemente, die ein Quellcodeverwaltungssteuerelement, das VSPackage angeben kann, angeben kann.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Erläutert, wie ein Quellcodeverwaltungs-VSPackage zu erstellen, die nicht nur Quellcodeverwaltungsfunktionen bereitstellt, sondern dienen zum Anpassen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Datenquellen-Steuerelement-Benutzeroberfläche.
+ Erläutert, wie ein Quellcodeverwaltungs-VSPackage erstellt wird, das nicht nur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Quellcodeverwaltungsfunktionen bereitstellt, sondern auch zum Anpassen der Quellcodeverwaltungsbenutzeroberfläche verwendet werden kann.

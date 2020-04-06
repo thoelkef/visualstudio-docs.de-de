@@ -1,5 +1,5 @@
 ---
-title: Befehle und Menüs, die Interop-Assemblys verwenden | Microsoft-Dokumentation
+title: Befehle und Menüs, die Interop-Assemblys verwenden | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,55 +8,55 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14625d38a8eae594d1ba63aa1f628c2482be8f30
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342017"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709491"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>Befehle und Menüs, die Interop-Assemblys verwenden.
-Eine VSPackage, die Menü-und Symbolleistenbefehle implementiert werden, mithilfe von Interop-Assemblys muss Schritte ausführen:
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>Befehle und Menüs, die Interop-Assemblys verwenden
+Ein VSPackage, das Menü- und Symbolleistenbefehle mithilfe von Interop-Assemblys implementiert, muss:
 
-- Informieren Sie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) über die unterstützten Befehle und gibt an, ob sie derzeit aktiviert sind.
+- Informieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Sie die integrierte Entwicklungsumgebung (IDE) über die unterstützten Befehle und darüber, ob sie derzeit aktiviert sind.
 
-- Beachten Sie die Regeln, (Vertrag) für die Behandlung von Befehlen.
+- Halten Sie sich an die Regeln (Vertrag) für die Handhabung von Befehlen.
 
-- Befehlsbehandlung explizit implementieren, indem Sie entweder die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle.
+- Implementieren Sie die Befehlsbehandlung explizit mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oder-Schnittstelle. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 
-  Im folgende Abschnitt wird beschrieben, wie Sie diese Aufgaben durchführen.
+  Im folgenden Abschnitt wird beschrieben, wie diese Aufgaben ausgeführt werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Bestimmen des Befehlsstatus mithilfe von Interop-Assemblys](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
- Beschreibt, wie eine VSPackage für die IDE benachrichtigt dazu, welche Befehle sie unterstützt und gibt an, ob sie derzeit aktiviert sind.
+ Beschreibt, wie ein VSPackage die IDE darüber benachrichtigt, welche Befehle es unterstützt und ob sie derzeit aktiviert sind.
 
 - [Befehlsverträge in Interop-Assemblys](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
 
- Stellt eine Definition des Vertrags einfachen Befehl, die von allen VSPackages Implementieren von Befehlen, die mithilfe von Interop-Assemblys verwendet.
+ Stellt eine Definition des grundlegenden Befehlsvertrags bereit, der von allen VSPackages-Implementierungsbefehlen mithilfe von Interop-Assemblys verwendet wird.
 
 - [Befehlsimplementierung](../../extensibility/internals/command-implementation.md)
 
- Bietet einen Überblick darüber, wie eine VSPackage einen Befehl implementiert.
+ Bietet einen Überblick darüber, wie ein VSPackage einen Befehl implementiert.
 
-- [Registrieren der Befehlshandler von Interop-assembly](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
+- [Interop-Assemblybefehlshandler registrieren](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
 
- Beschreibt die Registrierungseinträge erforderlich, um der IDE benachrichtigt, dass eine VSPackage einen Befehlshandler bereitstellt.
+ Beschreibt die Registrierungseinträge, die erforderlich sind, um die IDE zu benachrichtigen, dass ein VSPackage einen Befehlshandler bereitstellt.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Befehlsverfügbarkeit](../../extensibility/internals/command-availability.md)
 
- Beschreibt die Kriterien, die von der IDE verwendet werden, um zu bestimmen, welche VSPackage-Befehle verfügbar sind und welches Objekt sie verarbeitet.
+ Beschreibt Kriterien, die von der IDE verwendet werden, um zu bestimmen, welche VSPackage-Befehle verfügbar sind und welches Objekt sie verarbeitet.
 
 - [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- Enthält Details dazu, wie Sie eine Benutzeroberfläche erstellen, verwendet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Befehl unterstützen.
+ Enthält Details zum Erstellen einer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche, die Befehlsunterstützung verwendet.
 
 - [Befehlsrouting in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
 
- Eine Übersicht über den Prozess verwendet, um ein Objekt mit den richtigen befehlsanforderung verknüpfen.
+ Eine Übersicht über den Prozess, der verwendet wird, um ein Objekt mit der richtigen Befehlsanforderung zu verknüpfen.

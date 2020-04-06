@@ -1,31 +1,31 @@
 ---
-title: Registrieren von einzelnen Datei Generatoren | Microsoft-Dokumentation
+title: Registrieren von Einzelnen Dateigeneratoren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9026da08272d69bac246f98ae741a47527d627f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724563"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705811"
 ---
 # <a name="registering-single-file-generators"></a>Registrieren von Generatoren einzelner Dateien
-Um ein benutzerdefiniertes Tool in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verfügbar zu machen, müssen Sie es registrieren, damit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es instanziieren und einem bestimmten Projekttyp zuordnen kann.
+Um ein benutzerdefiniertes [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Tool in verfügbar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zu machen, müssen Sie es registrieren, damit es instanziiert und einem bestimmten Projekttyp zugeordnet werden kann.
 
 ### <a name="to-register-a-custom-tool"></a>So registrieren Sie ein benutzerdefiniertes Tool
 
-1. Registrieren Sie die benutzerdefinierte Tool-DLL entweder in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lokalen Registrierung oder in der Systemregistrierung unter HKEY_CLASSES_ROOT.
+1. Registrieren Sie die benutzerdefinierte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tool-DLL entweder in der lokalen Registrierung oder in der Systemregistrierung unter HKEY_CLASSES_ROOT.
 
-    Hier sind z. b. die Registrierungsinformationen für das verwaltete MSDataSetGenerator-Tool, das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält:
+    Hier sind z. B. die Registrierungsinformationen für das benutzerdefinierte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Tool MSDataSetGenerator, das mit folgt:
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]
@@ -36,24 +36,24 @@ Um ein benutzerdefiniertes Tool in [!INCLUDE[vsprvs](../../code-quality/includes
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Erstellen Sie einen Registrierungsschlüssel in der gewünschten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive unter Generatoren \\*GUID* , wobei *GUID* die GUID ist, die durch das Projekt System oder den Dienst der jeweiligen Sprache definiert ist. Der Name des Schlüssels wird zum programmgesteuerten Namen Ihres benutzerdefinierten Tools. Der benutzerdefinierte Tool Schlüssel weist die folgenden Werte auf:
+2. Erstellen Sie einen Registrierungsschlüssel in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der\\gewünschten Struktur unter Generators*GUID,* wobei *GUID* die GUID ist, die durch das Projektsystem oder den Dienst der jeweiligen Sprache definiert wird. Der Name des Schlüssels wird zum programmgesteuerten Namen Ihres benutzerdefinierten Tools. Der benutzerdefinierte Werkzeugschlüssel hat die folgenden Werte:
 
-   - (Standard)
+   - (Standardwert)
 
-        Dies ist optional. Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, wird jedoch empfohlen.
+        Optional. Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, wird jedoch empfohlen.
 
    - CLSID
 
-        Erforderlich. Gibt den Bezeichner der Klassenbibliothek der COM-Komponente an, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> implementiert.
+        Erforderlich. Gibt den Bezeichner der Klassenbibliothek der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>COM-Komponente an, die implementiert.
 
-   - Generatesdesigntimesource
+   - GeneratesDesignTimeSource
 
-        Erforderlich. Gibt an, ob Typen aus Dateien, die von diesem benutzerdefinierten Tool erstellt werden, visuellen Designern zur Verfügung gestellt werden. Der Wert dieses Parameters muss (0) 0 (null) für Typen sein, die für visuelle Designer nicht verfügbar sind, oder (1) 1 für Typen, die visuellen Designern zur Verfügung stehen.
+        Erforderlich. Gibt an, ob Typen aus Dateien, die von diesem benutzerdefinierten Tool erstellt wurden, visuellen Designern zur Verfügung gestellt werden. Der Wert dieses Parameters muss (Null) 0 für Typen sein, die für visuelle Designer nicht verfügbar sind, oder (eins) 1 für Typen, die visuellen Designern zur Verfügung stehen.
 
    > [!NOTE]
-   > Sie müssen das benutzerdefinierte Tool separat für jede Sprache registrieren, für die das benutzerdefinierte Tool verfügbar sein soll.
+   > Sie müssen das benutzerdefinierte Tool für jede Sprache, für die das benutzerdefinierte Tool verfügbar sein soll, separat registrieren.
 
-    Der MSDataSetGenerator registriert sich z. b. einmal für jede Sprache:
+    Der MSDataSetGenerator registriert sich z. B. einmal für jede Sprache:
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]
@@ -67,7 +67,7 @@ Um ein benutzerdefiniertes Tool in [!INCLUDE[vsprvs](../../code-quality/includes
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementieren von Generatoren einzelner Dateien](../../extensibility/internals/implementing-single-file-generators.md)
 - [Verfügbarmachen von Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)

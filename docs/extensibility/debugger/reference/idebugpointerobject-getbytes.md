@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Microsoft-Dokumentation
+title: IDebugPointerObject::GetBytes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308867"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725519"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Ruft den Wert als eine Reihe von aufeinander folgenden Bytes gezeigt wird.
+Ruft den Wert ab, auf den als eine Reihe aufeinander folgender Bytes verwiesen wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,23 +47,23 @@ int GetBytes(
 
 ## <a name="parameters"></a>Parameter
 `dwStart`\
-[in] Ein Offset in Bytes vom Beginn des Objekts auf den verwiesen wird.
+[in] Ein Offset in Bytes vom Anfang des Objekts, auf das verwiesen wird.
 
 `dwCount`\
 [in] Die Anzahl der abzurufenden Bytes.
 
 `pBytes`\
-[in, out] Ein Array, das mit dem Wert als eine Reihe von aufeinander folgenden Bytes gefüllt ist, auf die am angegebenen Offset aus dem Objekt ab.
+[in, out] Ein Array, das mit dem Wert als eine Reihe aufeinander folgender Bytes ausgefüllt wird, beginnend mit dem angegebenen Offset vom Objekt, auf das verwiesen wird.
 
 `pdwBytes`\
-[out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
+[out] Gibt die Anzahl der tatsächlich abgerufenen Bytes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird verwendet, wenn der Zeiger, dargestellt durch diese [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) verweist auf einen primitiven Typ oder einem einfachen Array primitiver Typen (d. h. ein Array, das durch eine einfache Folge von Bytes dargestellt werden können).
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird verwendet, wenn der Zeiger, wie er durch dieses [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) dargestellt wird, auf einen primitiven Typ oder ein einfaches Array primitiver Typen (d. h. ein Array, das durch eine einfache Sequenz von Bytes dargestellt werden kann) verweist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
+- [Setbytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

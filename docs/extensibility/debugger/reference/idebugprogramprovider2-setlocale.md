@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::SetLocale | Microsoft-Dokumentation
+title: IDebugProgramProvider2::SetLocale | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 716ac7155c7e9885088a7197ac78f0834758dafe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324951"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721774"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-Erstellt ein Gebietsschema für gebietsschemaspezifische Ressourcen verwendet werden.
+Erstellt ein Gebietsschema, das für alle gebietsschemaspezifischen Ressourcen verwendet werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int SetLocale(
 
 ## <a name="parameters"></a>Parameter
 `wLangID`\
-[in] Sprach-ID herstellen. Beispiel: 1033 für Englisch.
+[in] Sprach-ID, die erstellt werden soll. Beispiel: 1033 für Englisch.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

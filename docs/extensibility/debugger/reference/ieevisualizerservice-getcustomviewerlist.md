@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList | Microsoft-Dokumentation
+title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350170"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718020"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-Diese Methode gibt eine Liste der Typ-Schnellansichten, denen diesen Dienst bekannt sind.
+Diese Methode gibt eine Liste der Typvisualisierungen zurück, die diesem Dienst bekannt sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,26 +47,26 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parameter
 `celtSkip`\
-[in] Die Anzahl von Schnellansichten, zu überspringen.
+[in] Anzahl der zu überspringenden Visualisierungen.
 
 `celRequested`\
-[in] Anzahl von Schnellansichten abrufen (gibt auch die Größe der an die `rgViewers` Array).
+[in] Anzahl der abzurufenden Visualisierungen (gibt `rgViewers` auch die Größe des Arrays an).
 
 `rgViewers`\
-[in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen gefüllt werden soll.
+[in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen auszufüllen.
 
 `pceltFetched`\
-[out] Die Anzahl von Schnellansichten, die tatsächlich abgerufen.
+[out] Anzahl der tatsächlich abgerufenen Visualizer.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) übergibt die Anforderung an diese Methode als Teil der Unterstützung für Typ-Schnellansichten. Wenn die ausdrucksauswertung auch benutzerdefinierten Viewer für den gleichen Typ bereitstellt, können sie entsprechend ausgefüllte Anfügen [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen für diesen benutzerdefinierten Viewer zur Liste. Stellen Sie sicher, dass [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) diese zusätzliche Viewer widerspiegelt.
+## <a name="remarks"></a>Bemerkungen
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) übergibt die Anforderung an diese Methode als Teil ihrer Unterstützung für Typvisualisierer. Wenn der Ausdrucksauswertungsor auch benutzerdefinierte Viewer für denselben Typ bereitstellt, kann er entsprechend ausgefüllte [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen für diese benutzerdefinierten Viewer an die Liste anhängen. Stellen Sie sicher, dass [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) diese zusätzlichen Viewer widerspiegelt.
 
- Finden Sie unter [Typschnellansicht und benutzerdefinierte Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Weitere Informationen zu den Unterschieden zwischen Schnellansichten und -Viewer.
+ Weitere Informationen zu den Unterschieden zwischen Visualizern und Betrachtern finden Sie unter [Typvisualisierung und benutzerdefinierter Viewer.](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)

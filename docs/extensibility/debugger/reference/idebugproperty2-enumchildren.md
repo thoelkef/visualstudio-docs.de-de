@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren | Microsoft-Dokumentation
+title: IDebugProperty2::EnumChildren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::EnumChildren
 ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4aa7bbad1361053d86c59fabb58027c955856222
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343119"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721513"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-Ruft eine Liste der untergeordneten Elemente der Eigenschaft.
+Ruft eine Liste der untergeordneten Elemente der Eigenschaft ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,30 +53,30 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, der angibt, welche Felder in den aufgelisteten [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen sind gefüllt werden soll.
+[in] Eine Kombination von Flags aus der DEBUGPROP_INFO_FLAGS-Enumeration, die angibt, welche Felder in den aufgezählten [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen ausgefüllt werden sollen. [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 
 `dwRadix`\
-[in] Gibt an, die Basis bei der Formatierung von numerischen Informationen verwendet werden.
+[in] Gibt den Radix an, der beim Formatieren numerischer Informationen verwendet werden soll.
 
 `guidFilter`\
-[in] GUID des Filters verwendet wird, mit der `dwAttribFilter` und `pszNameFilter` Parameter auswählen, welche `DEBUG_PROPERTY_INFO` untergeordnet sind, aufgelistet werden sollen. Z. B. `guidFilterLocals` Filter für lokale Variablen.
+[in] GUID des Filters, `dwAttribFilter` der `pszNameFilter` mit dem `DEBUG_PROPERTY_INFO` und Parametern verwendet wird, um auszuwählen, welche untergeordneten Elemente aufgezählt werden sollen. `guidFilterLocals` Filtert beispielsweise nach lokalen Variablen.
 
 `dwAttribFilter`\
-[in] Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Enumeration, der angibt, welche Objekttypen aufgelistet, z. B. `DBG_ATTRIB_METHOD` für alle Methoden, die untergeordneten Elemente dieser Eigenschaft sein können. In Kombination mit verwendet die `guidFilter` und `pszNameFilter` Parameter.
+[in] Eine Kombination von Flags aus der DBG_ATTRIB_FLAGS-Enumeration, die angibt, `DBG_ATTRIB_METHOD` welcher Objekttyp aufgezählt werden soll, z. B. für alle Methoden, die untergeordnete Methoden dieser Eigenschaft sein könnten. [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Wird in Kombination `guidFilter` `pszNameFilter` mit den und Parametern verwendet.
 
 `pszNameFilter`\
-[in] Der Name des Filters verwendet wird, mit der `guidFilter` und `dwAttribFilter` Parameter auswählen, welche `DEBUG_PROPERTY_INFO` untergeordnet sind, aufgelistet werden sollen. Dieser Parameter z. B. festlegen "MyX" Filter, für alle untergeordneten Elemente mit dem Namen "MyX."
+[in] Der Name des Filters, `guidFilter` `dwAttribFilter` der mit `DEBUG_PROPERTY_INFO` dem und den Parametern verwendet wird, um auszuwählen, welche untergeordneten Elemente aufgezählt werden sollen. Wenn Sie diesen Parameter beispielsweise auf "MyX"-Filter für alle untergeordneten Elemente mit dem Namen "MyX" festlegen.
 
 `dwTimeout`\
-[in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung `INFINITE` für Warten ohne Timeout.
+[in] Gibt die maximale Wartezeit in Millisekunden an, bevor von dieser Methode zurückgegeben wird. Verwenden `INFINITE` Sie diese Verwendung, um auf unbestimmte Zeit zu warten.
 
 `ppEnum`\
-[out] Gibt eine [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) -Objekt, das eine Liste der untergeordneten Eigenschaften enthält.
+[out] Gibt ein [IEnumDebugPropertyInfo2-Objekt](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) zurück, das eine Liste der untergeordneten Eigenschaften enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

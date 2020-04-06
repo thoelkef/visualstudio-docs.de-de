@@ -1,5 +1,5 @@
 ---
-title: In Visual Studio SDK | Microsoft-Dokumentation
+title: Innerhalb des Visual Studio SDK | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,123 +7,123 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05736ebc8ce242120b49b59ef6d6caf4c4992573
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349835"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707573"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
 
-Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiterungen, einschließlich Visual Studio-Architektur, Komponenten, Dienste, Schemas, Hilfsprogramme und ähnliches.
+Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiterungen, einschließlich Visual Studio-Architektur, Komponenten, Diensten, Schemas, Dienstprogrammen und dergleichen.
 
-## <a name="extensibility-architecture"></a>Architektur der Erweiterbarkeit
- Die folgende Abbildung zeigt die Architektur der Visual Studio-Erweiterbarkeit. VSPackages bieten die Funktionalität der Anwendung, die in der IDE als Dienste gemeinsam verwendet wird. Die standard-IDE bietet außerdem eine Vielzahl von Diensten, wie z. B. <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, die Zugriff auf die IDE-Windowing-Funktionen bereitstellen.
+## <a name="extensibility-architecture"></a>Erweiterbarkeitsarchitektur
+ Die folgende Abbildung zeigt die Visual Studio-Erweiterbarkeitsarchitektur. VSPackages stellen Anwendungsfunktionen bereit, die in der IDE als Dienste gemeinsam genutzt werden. Die Standard-IDE bietet auch eine breite <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>Palette von Diensten, z. B. , die Zugriff auf die IDE-Fensterfunktionalität bieten.
 
- ![Grafik zur Umgebungsarchitektur](../../extensibility/internals/media/environment.gif "Umgebung") generalisiert Überblick über die Architektur der Visual Studio
+ ![Grafik "Umweltarchitektur"](../../extensibility/internals/media/environment.gif "Environment") Allgemeine Ansicht der Visual Studio-Architektur
 
 ## <a name="vspackages"></a>VSPackages
- VSPackages sind Softwaremodule, die Visual Studio um Benutzeroberflächenelemente, Dienste, Projekte, Editoren und Designer erweitern. VSPackages sind die zentrale architektonische Einheit von Visual Studio. Weitere Informationen finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md).
+ VSPackages sind Softwaremodule, die Visual Studio um Benutzeroberflächenelemente, Dienste, Projekte, Editoren und Designer erweitern. VSPackages sind die zentrale Architektureinheit von Visual Studio. Weitere Informationen finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
- Die Visual Studio-Shell stellt grundlegende Funktionalität bereit und unterstützt als auch die Kommunikation zwischen der Erweiterungen der VSPackages und MEF-Komponente. Weitere Informationen finden Sie unter [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
+ Die Visual Studio-Shell bietet grundlegende Funktionen und unterstützt die Querkommunikation zwischen den Komponenten VSPackages und MEF-Erweiterungen. Weitere Informationen finden Sie unter [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit
- Wenn Sie beabsichtigen, neuen Features für Visual Studio entwickeln, sollten Sie diese Richtlinien für Design und benutzerfreundlichkeit Tipps ansehen: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Wenn Sie neue Features für Visual Studio entwerfen möchten, sollten Sie sich die folgenden Richtlinien für Entwurfs- und Benutzerfreundlichkeitstipps ansehen: [Visual Studio-Benutzererfahrungsrichtlinien](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Befehle
  Befehle sind Funktionen, mit denen Aufgaben wie das Drucken eines Dokuments, das Aktualisieren einer Ansicht oder das Erstellen einer neuen Datei ausgeführt werden können.
 
- Wenn Sie Visual Studio erweitern, können Sie Befehle erstellen und registrieren sie mit der Visual Studio-Shell. Sie können angeben, wie diese Befehle in der IDE, z. B. in einem Menü oder Symbolleiste angezeigt werden. In der Regel ein benutzerdefinierter Befehl angezeigt wird, auf die **Tools** Menü und einen Befehl zum Anzeigen eines Toolfensters würde angezeigt, die **andere Windows** Untermenü die **Ansicht** Menü.
+ Wenn Sie Visual Studio erweitern, können Sie Befehle erstellen und sie bei der Visual Studio-Shell registrieren. Sie können angeben, wie diese Befehle in der IDE angezeigt werden, z. B. in einem Menü oder einer Symbolleiste. In der Regel wird ein benutzerdefinierter Befehl im Menü **Extras** angezeigt, und ein Befehl zum Anzeigen eines Toolfensters wird im Untermenü **Andere Windows** im Menü **Ansicht** angezeigt.
 
- Wenn Sie einen Befehl erstellen, müssen Sie auch einen Ereignishandler für ihn erstellen. Der Ereignishandler bestimmt, wenn der Befehl angezeigt oder aktiviert, können Sie die zugehörigen Text zu ändern, und stellt sicher, dass der Befehl entsprechend reagiert, wenn es aktiviert ist. In den meisten Fällen verarbeitet die IDE Befehle mit den <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Befehle in Visual Studio erfolgt, beginnend mit dem innersten Befehlskontext, basierend auf der lokalen Auswahl, und Sie den Vorgang fortsetzen, bis zum äußersten Kontext, basierend auf der globalen Auswahl. Befehle, die dem Hauptmenü hinzugefügt werden, sind sofort für die Skripterstellung verfügbar.
+ Wenn Sie einen Befehl erstellen, müssen Sie auch einen Ereignishandler dafür erstellen. Der Ereignishandler bestimmt, wann der Befehl sichtbar oder aktiviert ist, ermöglicht es Ihnen, seinen Text zu ändern, und garantiert, dass der Befehl entsprechend reagiert, wenn er aktiviert wird. In den meisten Fällen verarbeitet die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> IDE Befehle mithilfe der Schnittstelle. Befehle in Visual Studio werden behandelt, beginnend mit dem innersten Befehlskontext, basierend auf der lokalen Auswahl, und dem äußersten Kontext, basierend auf der globalen Auswahl. Befehle, die dem Hauptmenü hinzugefügt werden, sind sofort für die Skripterstellung verfügbar.
 
  Weitere Informationen finden Sie unter [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menüs und Symbolleisten
- Bieten eine Möglichkeit für Benutzer zum Aufrufen der Befehle, Menüs und Symbolleisten. Menüs sind Zeilen oder Spalten von Befehlen, die in der Regel als einzelne Elemente am Anfang eines Toolfensters angezeigt werden. Untermenüs werden sekundäre Menüs, die angezeigt werden, wenn ein Benutzer Befehle klickt, die einen kleinen Pfeil enthalten. Kontextmenüs angezeigt werden, wenn ein Benutzer auf bestimmte Elemente der Benutzeroberfläche klickt. Einige allgemeine Menünamen sind **Datei**, **bearbeiten**, **Ansicht**, und **Fenster**. Weitere Informationen finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
+ Menüs und Symbolleisten bieten Benutzern die Möglichkeit, Befehle aufzurufen. Menüs sind Zeilen oder Spalten von Befehlen, die in der Regel als einzelne Textelemente oben in einem Werkzeugfenster angezeigt werden. Untermenüs sind sekundäre Menüs, die angezeigt werden, wenn ein Benutzer auf Befehle klickt, die einen kleinen Pfeil enthalten. Kontextmenüs werden angezeigt, wenn ein Benutzer mit der rechten Maustaste auf bestimmte UI-Elemente klickt. Einige häufige Menünamen sind **Datei**, **Bearbeiten**, **Ansicht**und **Fenster**. Weitere Informationen finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
 
- Symbolleisten sind Zeilen oder Spalten mit Schaltflächen und andere Steuerelemente wie Kombinationsfelder, Listenfelder und Textfelder. Symbolleistenschaltflächen weisen normalerweise Symbolbilder, z. B. ein Ordnersymbol für eine **geöffnete Datei** Befehl oder einen Drucker für eine **Drucken** Befehl. Alle Symbolleistenelemente sind Befehle zugeordnet. Wenn Sie eine Symbolleisten-Schaltfläche klicken, wird der zugeordnete Befehl ausgeführt. Im Fall einer Dropdown-Steuerelement für jedes Element in der Dropdownliste einen anderen Befehl zugeordnet ist. Eine Symbolleisten-Steuerelemente, z. B. einem Splittersteuerelement, sind eine Mischung. Eine Seite des Steuerelements eine Symbolleistenschaltfläche und die andere Seite wird ein Pfeil nach unten, in dem mehrere Befehle angezeigt, wenn darauf geklickt wird.
+ Symbolleisten sind Zeilen oder Spalten von Schaltflächen und anderen Steuerelementen, z. B. Kombinationsfelder, Listenfelder und Textfelder. Symbolleistenschaltflächen verfügen in der Regel über Symbolbilder, z. B. ein Ordnersymbol für einen Befehl **"Datei öffnen"** oder einen Drucker für einen **Druckbefehl.** Alle Symbolleistenelemente sind Befehlen zugeordnet. Wenn Sie auf eine Symbolleistenschaltfläche klicken, wird der zugehörige Befehl ausgeführt. Bei einem Dropdown-Steuerelement ist jedes Element in der Dropdownliste einem anderen Befehl zugeordnet. Einige Symbolleistensteuerelemente, z. B. ein Splittersteuerelement, sind Hybriden. Eine Seite des Steuerelements ist eine Symbolleistenschaltfläche und die andere Seite ist ein Pfeil nach unten, der mehrere Befehle anzeigt, wenn darauf geklickt wird.
 
 ## <a name="tool-windows"></a>Toolfenster
- Toolfenster werden in der IDE verwendet, um Informationen anzuzeigen. **Toolbox**, **Projektmappen-Explorer**, **Eigenschaften** Fenster und **Webbrowser** sind Beispiele für Toolfenster.
+ Toolfenster werden in der IDE verwendet, um Informationen anzuzeigen. **Toolbox**, **Projektmappen-Explorer**, **Eigenschaftenfenster** und **Webbrowser** sind Beispiele für Toolfenster.
 
- Toolfenster bieten in der Regel verschiedene Steuerelemente, mit denen der Benutzer interagieren kann. Z. B. die **Eigenschaften** Fenster ermöglicht dem Benutzer, die Eigenschaften der Objekte, die einen bestimmten Zweck dienen, festgelegt. Die **Eigenschaften** Fenster ist in diesem Sinne spezialisierte, aber auch allgemeine, da es in vielen unterschiedlichen Situationen verwendet werden kann. Auf ähnliche Weise die **Ausgabe** Fenster ist darauf spezialisiert, da sie textbasierte Ausgabe ist jedoch Allgemein bietet, da es sich bei vielen Subsystemen in Visual Studio verwenden können, um Ausgabe für Visual Studio-Benutzer bereitzustellen.
+ Toolfenster bieten in der Regel verschiedene Steuerelemente, mit denen der Benutzer interagieren kann. Im Fenster **Eigenschaften** kann der Benutzer z. B. Eigenschaften von Objekten festlegen, die einem bestimmten Zweck dienen. Das **Eigenschaftenfenster** ist in diesem Sinne spezialisiert, aber auch allgemein, da es in vielen verschiedenen Situationen verwendet werden kann. Ebenso ist das **Ausgabefenster** spezialisiert, da es textbasierte Ausgabe bereitstellt, aber allgemein, da viele Subsysteme in Visual Studio es verwenden können, um dem Visual Studio-Benutzer ausgabegemäß zu sein.
 
- Betrachten Sie das folgende Bild von Visual Studio, die mehrere Toolfenster enthält:
+ Betrachten Sie das folgende Bild von Visual Studio, das mehrere Toolfenster enthält:
 
  ![Screenshot](../../extensibility/internals/media/t1gui.png "T1gui")
 
- Einige Toolfenster sind zusammen auf einem einzelnen Bereich angedockt, die zeigt das Toolfenster des Projektmappen-Explorer an und blendet Sie aus der andere Toolfenster, jedoch stellt sie durch Klicken auf die Registerkarten zur Verfügung. Die Abbildung zeigt zwei andere Toolfenster, die **Fehlerliste** und **Ausgabe** auf einem zentralen Fensterbereich zusammen angedockten Fenster.
+ Einige der Toolfenster sind an einem einzelnen Fenster angedockt, in dem das Werkzeugfenster des Projektmappen-Explorers angezeigt wird und die anderen Toolfenster ausgeblendet werden, sie jedoch durch Klicken auf Registerkarten verfügbar machen. Das Bild zeigt zwei weitere Toolfenster, das **Fenster Fehlerliste** und **Ausgabe,** das an einem einzigen Fenster angedockt ist.
 
- Außerdem wird dargestellt im Hauptabschnitt des Dokuments Bereich mehrere-Editor-Fenster angezeigt. Obwohl Toolfenster in der Regel nur eine Instanz haben (Sie können z. B. Öffnen nur eine **Projektmappen-Explorer**),-Editor-Fenster können mehrere Instanzen, von denen jeder wird verwendet, um ein separates Dokument zu bearbeiten, aber alle angedockt werden haben der gleiche Bereich. Die Abbildung zeigt einen Dokument Bereich mit zwei-Editor-Fenster, ein Formular-Designer-Fenster. Alle Fenster in den Aufgabenbereich durch Klicken auf die Registerkarten verfügbar sind, aber im Editor-Fenster, das EditorPane.cs-Datei enthält ist sichtbar und aktiv.
+ Ebenfalls gezeigt wird der Hauptdokumentbereich, in dem mehrere Editorfenster angezeigt werden. Obwohl Toolfenster in der Regel nur über eine Instanz verfügen (z. B. können Sie nur einen **Projektmappen-Explorer**öffnen), können Editorfenster mehrere Instanzen haben, von denen jede zum Bearbeiten eines separaten Dokuments verwendet wird, aber alle im selben Bereich angedockt sind. Das Bild zeigt einen Dokumentbereich mit zwei Editorfenstern, einem Formular-Designerfenster. Alle Fenster im Dokumentbereich sind durch Klicken auf Registerkarten verfügbar, aber das Editorfenster, das EditorPane.cs Datei enthält, ist sichtbar und aktiv.
 
- Wenn Sie Visual Studio erweitern, können Sie die Tool-Fenster, mit denen Visual Studio-Benutzer interagieren mit der Erweiterung erstellen. Sie können auch Ihren eigenen Editor erstellen, mit denen Sie Visual Studio-Benutzer, die Dokumente bearbeiten können. Da Ihr Toolfenster und Editoren in Visual Studio integriert werden, müssen Sie keinen programmieren, andocken oder ordnungsgemäß auf einer Registerkarte angezeigt werden. Wenn sie in Visual Studio ordnungsgemäß registriert sind, müssen sie den üblichen Features von Toolfenstern und Dokumentfenstern in Visual Studio automatisch. Weitere Informationen finden Sie unter [erweitern und Anpassen von Tool Windows](../../extensibility/extending-and-customizing-tool-windows.md).
+ Wenn Sie Visual Studio erweitern, können Sie Toolfenster erstellen, mit denen Visual Studio-Benutzer mit Ihrer Erweiterung interagieren können. Sie können auch eigene Editoren erstellen, mit denen Visual Studio-Benutzer Dokumente bearbeiten können. Da Ihre Toolfenster und -editoren in Visual Studio integriert werden, müssen Sie sie nicht zum Andocken oder Korrekterscheinen auf einer Registerkarte programmieren. Wenn sie ordnungsgemäß in Visual Studio registriert sind, verfügen sie automatisch über die typischen Features von Toolfenstern und Dokumentfenstern in Visual Studio. Weitere Informationen finden Sie unter [Erweitern und Anpassen von Tool Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 
 ## <a name="document-windows"></a>Dokumentfenster
- Ein Dokumentfenster wird ein gerahmter untergeordnete Fenster eines Fensters Multiple Document Interface (MDI). Dokumentfenster in der Regel werden verwendet, um Text-Editoren, Formular-Editoren (auch bekannt als "Designer") oder Steuerelemente zu hosten, aber sie können auch andere funktionale Typen hosten. Die **neue Datei** Dialogfeld enthält Beispiele von Dokumentfenstern, die Visual Studio bereitstellt.
+ Ein Dokumentfenster ist ein gerahmtes untergeordnetes Fenster eines MDI-Fensters (Multiple Document Interface). Dokumentfenster werden in der Regel zum Hosten von Texteditoren, Formulareditoren (auch als Designer bezeichnet) oder zum Bearbeiten von Steuerelementen verwendet, sie können jedoch auch andere Funktionstypen hosten. Das Dialogfeld **Neue Datei** enthält Beispiele für Dokumentfenster, die Visual Studio bereitstellt.
 
- Die meisten Editoren beziehen sich auf einer Programmiersprache oder in einen Dateityp, z. B. HTML-Seiten, Framesets, C++-Dateien oder Headerdateien. Durch Auswahl einer Vorlage in der **neue Datei** im Dialogfeld Benutzer dynamisch erstellt ein Dokumentfenster für den Editor für den Dateityp, der mit der Vorlage zugeordnet ist. Ein Dokumentfenster wird auch erstellt, wenn ein Benutzer eine vorhandene Datei geöffnet wird.
+ Die meisten Editoren sind spezifisch für eine Programmiersprache oder einen Dateityp, z. B. HTML-Seiten, Framesets, C++-Dateien oder Headerdateien. Durch Auswählen einer Vorlage im Dialogfeld **Neue Datei** erstellt ein Benutzer dynamisch ein Dokumentfenster für den Editor für den Dateityp, der der Vorlage zugeordnet ist. Ein Dokumentfenster wird auch erstellt, wenn ein Benutzer eine vorhandene Datei öffnet.
 
- Dokumentfenster sind auf der MDI-Client-Bereich beschränkt. Jedes Dokumentfenster verfügt über eine Registerkarte am oberen Rand und Tab-Reihenfolge zu anderen Fenstern, die im Bereich MDI Öffnen möglicherweise verknüpft ist. Mit der rechten Maustaste in der Registerkarte im Dokumentfenster zeigt ein Kontextmenü aufrufen, die den MDI-Bereich in mehrere horizontale oder vertikale Registerkartengruppen unterteilen enthält. Aufteilen des MDI-Bereichs können mehrere Dateien gleichzeitig angezeigt werden. Weitere Informationen finden Sie unter [Dokument Windows](../../extensibility/internals/document-windows.md).
+ Dokumentfenster sind auf den MDI-Clientbereich beschränkt. Jedes Dokumentfenster verfügt über eine Registerkarte oben, und die Registerkartenreihenfolge ist mit anderen Fenstern verknüpft, die möglicherweise im MDI-Bereich geöffnet sind. Wenn Sie mit der rechten Maustaste auf die Registerkarte eines Dokumentfensters klicken, wird ein Kontextmenü angezeigt, das Optionen zum Aufteilen des MDI-Bereichs in mehrere horizontale oder vertikale Registerkartengruppen enthält. Durch das Aufteilen des MDI-Bereichs können mehrere Dateien gleichzeitig angezeigt werden. Weitere Informationen finden Sie unter [Dokument Windows](../../extensibility/internals/document-windows.md).
 
 ## <a name="editors"></a>Editoren
- Visual Studio-Editor können Sie anpassen und verwenden sie für Ihre eigene Art von Inhalt über das Managed Extensibility Framework (MEF). In vielen Fällen müssen Sie sich nicht um ein VSPackage zum Erweitern des Editors zu erstellen, auch wenn Sie Folgendes: Wenn Sie Features aus der Shell (z. B. einen Menübefehl oder eine Tastenkombination) zählen möchten, können Sie eine MEF-Erweiterung mit einem VSPackage kombinieren.
+ Mit dem Visual Studio-Editor können Sie ihn anpassen und mithilfe des Managed Extensibility Framework (MEF) für Ihren eigenen Inhaltstyp verwenden. In vielen Fällen müssen Sie kein VSPackage erstellen, um den Editor zu erweitern, obwohl Sie eine MEF-Erweiterung mit einem VSPackage kombinieren können, wenn Sie Features aus der Shell einschließen möchten (z. B. einen Menübefehl oder eine Tastenkombination).
 
- Sie können auch einen benutzerdefinierten Editor, z. B. erstellen, wenn Sie möchten, lesen und Schreiben in einer Datenbank oder einen Designer verwenden möchten. Sie können auch einen externen Editor wie Editor oder WordPad von Microsoft verwenden. Weitere Informationen finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).
+ Sie können auch einen benutzerdefinierten Editor erstellen, z. B. wenn Sie in einer Datenbank lesen und schreiben möchten oder wenn Sie einen Designer verwenden möchten. Sie können auch einen externen Editor wie Notepad oder Microsoft WordPad verwenden. Weitere Informationen finden Sie unter [Editor- und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).
 
 ## <a name="language-services"></a>Sprachdienste
- Wenn Sie Visual Studio-Editor zur Unterstützung von neuen Programmiersprachen-Schlüsselwörter oder sogar eine neue Programmiersprache möchten, erstellen Sie einen Sprachdienst. Jeder Sprachdienst kann bestimmte-Editor-Funktionen vollständig, teilweise oder überhaupt nicht implementieren. Je nachdem, wie es konfiguriert ist kann der Sprachdienst syntaxhervorhebung, zugehörige Klammern, IntelliSense-Unterstützung und andere Funktionen im Editor bereitstellen.
+ Wenn der Visual Studio-Editor neue Programmierschlüsselwörter oder sogar eine neue Programmiersprache unterstützen soll, erstellen Sie einen Sprachdienst. Jeder Sprachdienst kann bestimmte Editorfunktionen vollständig, teilweise oder gar nicht implementieren. Je nachdem, wie er konfiguriert ist, kann der Sprachdienst Syntaxhervorhebung, Klammerabgleich, IntelliSense-Unterstützung und andere Funktionen im Editor bereitstellen.
 
- Das Herzstück von einem Sprachdienst sind ein Parser und Scanner. Scanner (oder Lexer) teilt eine Quelldatei in Elemente, die als Token bezeichnet werden, und ein Parser stellt die Beziehungen zwischen diesen Token her. Wenn Sie einen Sprachdienst erstellen, müssen Sie der Parser und die Überprüfung implementieren, damit Visual Studio die Token und die Grammatik der Sprache verstehen können. Sie können die Dienste für verwalteten oder nicht verwalteten Sprachen erstellen. Weitere Informationen finden Sie unter [Erweiterbarkeit von Legacysprachdiensten Legacy](../../extensibility/internals/legacy-language-service-extensibility.md).
+ Im Mittelpunkt eines Sprachdienstes stehen ein Parser und ein Scanner. Ein Scanner (oder Lexer) unterteilt eine Quelldatei in Elemente, die als Token bezeichnet werden, und ein Parser stellt die Beziehungen zwischen diesen Token her. Wenn Sie einen Sprachdienst erstellen, müssen Sie den Parser und den Scanner implementieren, damit Visual Studio die Token und Grammatik der Sprache verstehen kann. Sie können verwaltete oder nicht verwaltete Sprachdienste erstellen. Weitere Informationen finden Sie unter [Legacy Language Service Extensibility](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projekte
 
-In Visual Studio sind Projekte die Container, mit denen Entwickler zum Organisieren und den Quellcode und weitere Ressourcen zu erstellen. Lassen Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode-Projekte, Verweise auf Webdienste und Datenbanken und andere Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, indem Projekttypen, Projektuntertypen und benutzerdefinierte Tools.
+In Visual Studio sind Projekte die Container, die Entwickler zum Organisieren und Erstellen des Quellcodes und anderer Ressourcen verwenden. Mit Projekten können Sie Quellcode, Verweise auf Webdienste und Datenbanken und andere Ressourcen organisieren, erstellen, debuggen und bereitstellen. VSPackages kann das Visual Studio-Projektsystem erweitern, indem Projekttypen, Projektuntertypen und benutzerdefinierte Tools bereitstellen werden.
 
-Projekte können auch gesammelt werden eine *Lösung*, dies ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten. Informationen zum Projekt und zum Status, die der Projektmappe gehört befindet sich in zwei Projektmappendateien, die dem textbasierten [Projektmappendatei (.sln)](solution-dot-sln-file.md) und den binären [Lösung Benutzeroptionsdatei (.suo)](solution-user-options-dot-suo-file.md). Diese Dateien sind ähnlich wie die (vbg)-Gruppendateien, die in früheren Versionen von Visual Basic und den Arbeitsbereich (.dsw) verwendet wurden und die Benutzer-Optionen (.opt)-Dateien, die in früheren Versionen von C++ verwendet wurden.
+Projekte können auch in einer *Projektmappe*zusammengefasst werden, bei der es sich um eine Gruppierung eines oder mehrerer Projekte handelt, die zusammenarbeiten, um eine Anwendung zu erstellen. Projekt- und Statusinformationen, die sich auf die Projektmappe beziehen, werden in zwei Lösungsdateien gespeichert, der textbasierten [Lösungsdatei (.sln)](solution-dot-sln-file.md) und der Benutzeroption für binäre [Lösungen (.suo).](solution-user-options-dot-suo-file.md) Diese Dateien ähneln den Gruppendateien (.vbg), die in früheren Versionen von Visual Basic verwendet wurden, sowie den Arbeitsbereichsdateien (.dsw) und Benutzeroptionen (.opt), die in früheren Versionen von C++ verwendet wurden.
 
 Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Lösungen](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
- Visual Studio enthält die vordefinierten Projektvorlagen und Projektelementvorlagen. Sie können stellen Sie außerdem Ihre eigenen Vorlagen oder Vorlagen aus der Community erhalten und diese dann in Visual Studio integrieren. Die [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) ist die Anlaufstelle für Vorlagen und Erweiterungen.
+ Visual Studio enthält vordefinierte Projektvorlagen und Projektelementvorlagen. Sie können auch eigene Vorlagen erstellen oder Vorlagen aus der Community erwerben und diese dann in Visual Studio integrieren. Die [MSDN-Codegalerie](https://code.msdn.microsoft.com/site/search?query=visual%20studio) ist der Ort, an dem Sie Vorlagen und Erweiterungen verwenden können.
 
- Vorlagen enthalten die Projektstruktur und den grundlegenden Dateien, die erforderlich sind, um eine bestimmte Art von Anwendung "," Steuerelement ","-Bibliothek "oder"-Klasse zu erstellen. Wenn Sie Software entwickeln, die eine der Vorlagen gleicht möchten, erstellen Sie ein Projekt, das in der Vorlage basiert, und ändern Sie dann die Dateien in diesem Projekt.
+ Vorlagen enthalten die Projektstruktur und grundlegende Dateien, die zum Erstellen einer bestimmten Art von Anwendung, Steuerelement, Bibliothek oder Klasse erforderlich sind. Wenn Sie Software entwickeln möchten, die einer der Vorlagen ähnelt, erstellen Sie ein Projekt, das auf der Vorlage basiert, und ändern Sie dann die Dateien in diesem Projekt.
 
 > [!NOTE]
-> Diese Architektur wird nicht unterstützt, für die [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte.
+> Diese Vorlagenarchitektur wird [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] für Projekte nicht unterstützt.
 
  Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Eigenschaften und Optionen
- Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehrere ausgewählte Elemente: [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md) Optionsseiten enthalten Gruppen von Optionen, die eine bestimmte Komponente, z. B. einer Programmiersprache oder ein VSPackage betreffen: [Optionen und Optionsseiten](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im allgemeinen UI-bezogene Features, die nicht importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).
+ Das **Fenster Eigenschaften** zeigt die Eigenschaften einzelner oder mehrerer ausgewählter Elemente an: Seiten für [Eigenschaftenoptionen](../../extensibility/internals/extending-properties.md) zum Erweitern von Eigenschaften enthalten Gruppen von Optionen, die sich auf eine bestimmte Komponente beziehen, z. B. eine Programmiersprache oder ein VSPackage: Optionen und [Optionsseiten](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im Allgemeinen UI-bezogene Features, die importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).
 
-## <a name="visual-studio-services"></a>Visual Studio-Diensten
- Ein Dienst stellt einen bestimmten Satz von Schnittstellen für die Komponenten nutzen. Visual Studio bietet eine Reihe von Diensten, die von der alle Komponenten, einschließlich der Erweiterungen verwendet werden kann. Visual Studio-Diensten ermöglichen z. B. Toolfenster angezeigt oder ausgeblendet dynamisch Aktivieren des Zugriffs auf Hilfe, Statusleiste oder UI-Ereignisse. Visual Studio-Editor bietet auch Dienste, die durch Erweiterungen des Editors importiert werden können. Weitere Informationen finden Sie unter [verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md).
+## <a name="visual-studio-services"></a>Visual Studio-Dienste
+ Ein Dienst stellt einen bestimmten Satz von Schnittstellen bereit, die Komponenten verbrauchen können. Visual Studio stellt eine Reihe von Diensten bereit, die von allen Komponenten, einschließlich Erweiterungen, verwendet werden können. Visual Studio-Dienste ermöglichen beispielsweise das dynamische Anzeigen oder Aussehen von Toolfenstern, das Aktivieren des Zugriffs auf Hilfe-, Statusleisten- oder UI-Ereignisse. Der Visual Studio-Editor stellt auch Dienste bereit, die von Editorerweiterungen importiert werden können. Weitere Informationen finden Sie unter [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>Debugger
- Der Debugger ist die Benutzeroberfläche an den sprachspezifischen Komponenten. Wenn Sie einen neuer Sprachdienst erstellt haben, müssen Sie zum Erstellen einer bestimmten Debug-Engine an den Debugger zu verknüpfen. Weitere Informationen finden Sie unter [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
+ Der Debugger ist die Benutzeroberfläche für die sprachspezifischen Debugkomponenten. Wenn Sie einen neuen Sprachdienst erstellt haben, müssen Sie ein bestimmtes Debugmodul erstellen, das sich an den Debugger anhängt. Weitere Informationen finden Sie unter [Visual Studio Debugger Extensibility](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
 
 ## <a name="source-control"></a>Quellcodeverwaltung
- Informationen zum Implementieren einer Datenquellen-Steuerelement-Plug-in oder das VSPackage, finden Sie unter [Quellcodeverwaltung](../../extensibility/internals/source-control.md).
+ Informationen zum Implementieren eines Quellcodeverwaltungs-Plug-Ins oder VSPackage finden Sie unter [Quellcodeverwaltung](../../extensibility/internals/source-control.md).
 
 ## <a name="wizards"></a>Assistenten
- Sie können einen Assistenten in Verbindung mit der ein neuer Projekttyp erstellen, damit der Assistent hilft Ihnen stellen Ihre Benutzer die richtigen Entscheidungen zu, wenn sie ein neues Projekt des Typs erstellen. Weitere Informationen finden Sie unter [Assistenten](../../extensibility/internals/wizards.md).
+ Sie können einen Assistenten in Verbindung mit einem neuen Projekttyp erstellen, damit der Assistent den Benutzern helfen kann, die richtigen Entscheidungen zu treffen, wenn sie ein neues Projekt dieses Typs erstellen. Weitere Informationen finden Sie unter [Assistenten](../../extensibility/internals/wizards.md).
 
 ## <a name="custom-tools"></a>Benutzerdefinierte Tools
- Benutzerdefinierte Tools können Sie ein Tool mit einem Element in einem Projekt verknüpfen, und das Tool ausführen, wenn die Datei gespeichert wird. Weitere Informationen finden Sie unter [benutzerdefinierte Tools](../../extensibility/internals/custom-tools.md).
+ Mit benutzerdefinierten Tools können Sie ein Werkzeug einem Element in einem Projekt zuordnen und dieses Tool ausführen, wenn die Datei gespeichert wird. Weitere Informationen finden Sie unter [Benutzerdefinierte Tools](../../extensibility/internals/custom-tools.md).
 
 ## <a name="vssdk-utilities"></a>VSSDK-Hilfsprogramme
- Das VS SDK umfasst eine Reihe von Dienstprogrammen, die Sie für die Arbeit mit verschiedenen Aspekten von VSPackages müssen. Weitere Informationen finden Sie unter [VSSDK-Hilfsprogramme](../../extensibility/internals/vssdk-utilities.md).
+ Das VSSDK enthält eine Reihe von Dienstprogrammen, die Sie möglicherweise benötigen, um mit verschiedenen Aspekten von VSPackages zu arbeiten. Weitere Informationen finden Sie unter [VSSDK Utilities](../../extensibility/internals/vssdk-utilities.md).
 
-## <a name="using-windows-installer"></a>Mithilfe von Windows Installer
- In einigen Fällen müssen Sie möglicherweise das VSIX-Installationsprogramm, anstelle der Windows Installer verwenden: Sie möchten z. B. in der Registrierung zu schreiben. Weitere Informationen zur Verwendung von Windows Installer mit Ihren Erweiterungen finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+## <a name="using-windows-installer"></a>Verwenden von Windows Installer
+ In einigen Fällen müssen Sie möglicherweise den Windows Installer anstelle des VSIX-Installationsprogramms verwenden: Sie müssen z. B. in die Registrierung schreiben. Informationen zur Verwendung von Windows Installer mit Ihren Erweiterungen finden Sie unter [Installieren von VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ## <a name="help-viewer"></a>Help Viewer
- Sie können Ihre eigenen Hilfe und die F1-Seiten in Help Viewer integrieren. Weitere Informationen finden Sie unter [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).
+ Sie können Ihre eigene Hilfe und F1-Seiten in den Help Viewer integrieren. Weitere Informationen finden Sie unter [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).

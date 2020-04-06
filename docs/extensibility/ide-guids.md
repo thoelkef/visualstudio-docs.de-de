@@ -1,28 +1,28 @@
 ---
-title: IDE-GUIDs | Microsoft-Dokumentation
+title: IDE-GUIDs | Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2cdd5a292de0413845da0ce2d7e8b4678cf895
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 41f9931b8e36dcb363624ecbc67e186bd3f5f71c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311173"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710489"
 ---
 # <a name="ide-guids"></a>IDE-GUIDs
 
-Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der integrierten Entwicklungsumgebung (IDE) veröffentlicht, wie in der folgenden Tabelle aufgeführt.
+Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs einiger Teile der integrierten Entwicklungsumgebung (IDE), wie in der folgenden Tabelle aufgeführt.
 
-## <a name="core-systems"></a>Core-Systeme
+## <a name="core-systems"></a>Kernsysteme
 
 |Konstante|GUID|
 |--------------|----------|
@@ -35,7 +35,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>Allgemein sichtbaren Komponenten
+## <a name="broadly-visible-components"></a>Allgemein sichtbare Komponenten
 
 |Konstante|GUID|
 |--------------|----------|
@@ -44,7 +44,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dateien, virtuellen und physischen Ordner und seine Unterprojekte
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dateien, virtuelle und physische Ordner und SubProjekte
 
 |Konstante|GUID|
 |--------------|----------|
@@ -53,7 +53,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.SubProject_guid>|EA6618E8-6E24-4528-94BE-6889FE16485C|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.VirtualFolder_guid>|6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c|
 
-## <a name="ui-contexts"></a>Benutzeroberflächen-Kontexten
+## <a name="ui-contexts"></a>UI-Kontexte
 
 |Konstante|GUID|
 |--------------|----------|
@@ -80,20 +80,20 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="command-sets-and-properties"></a>Befehl legt Eigenschaften und
+## <a name="command-sets-and-properties"></a>Befehlssätze und Eigenschaften
 
 |Konstante|GUID|
 |--------------|----------|
-|Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
+|Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA0573819|
 |Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
 |Konstante|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|000000000-0000-0000-C000-0000000000046|
 
-## <a name="task-list-guids"></a>Aufgabenliste für GUIDs
+## <a name="task-list-guids"></a>Aufgabenlisten-GUIDs
 
 |Konstante|GUID|
 |--------------|----------|
@@ -109,7 +109,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>Komponenten-wählseite GUIDs
+## <a name="component-selector-page-guids"></a>Komponentenauswahlseite-GUIDs
 
 |Konstanten|GUID|
 |---------------|----------|
@@ -117,7 +117,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>Sonstige Shell-GUIDs
+## <a name="miscellaneous-shell-guids"></a>Verschiedene Shell-GUIDs
 
 |Konstanten|GUID|
 |---------------|----------|
@@ -125,8 +125,8 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [COM-Konstanten in verwaltetem code](../extensibility/com-constants-in-managed-code.md)
+- [COM-Konstanten im verwalteten Code](../extensibility/com-constants-in-managed-code.md)
 - [IDE-Konstanten](../extensibility/ide-constants.md)
-- [IDE-definierte Befehle zum Projekt s Ystems erweitern](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [IDE-definierte Befehle zum Erweitern von Projektstämmen](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

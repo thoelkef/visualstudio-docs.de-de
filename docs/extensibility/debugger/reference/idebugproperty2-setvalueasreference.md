@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Microsoft-Dokumentation
+title: IDebugProperty2::SetValueAsReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsReference method
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f9e98465f16f58f734ef6fd58b66494b4aaf0b65
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 73d00ccedc6985061448170735e9ebcaac42f530
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314611"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721255"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises.
+Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,27 +47,27 @@ int SetValueAsReference(
 
 ## <a name="parameters"></a>Parameter
 `rgpArgs`\
-[in] Ein Array von Argumenten, die an den Eigenschaftensetter für verwalteten Code übergeben werden sollen. Wenn Setter für die Eigenschaft über keine Argumente akzeptiert, oder wenn diese [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt verweist nicht auf solche einen Eigenschaften-Setter `rgpArgs` sollte ein null-Wert sein. Dieser Parameter ist in der Regel einen null-Wert.
+[in] Ein Array von Argumenten, die an den verwalteten Codeeigenschaftensetter übergeben werden sollen. Wenn der Eigenschaftensetter keine Argumente annimmt oder wenn dieses [IDebugProperty2-Objekt](../../../extensibility/debugger/reference/idebugproperty2.md) nicht auf einen solchen Eigenschaftensetter verweist, `rgpArgs` sollte es sich um einen NULL-Wert handelt. Dieser Parameter ist in der Regel ein NULL-Wert.
 
 `dwArgCount`\
-[in] Die Anzahl der Argumente in der `rgpArgs` Array.
+[in] Die Anzahl der `rgpArgs` Argumente im Array.
 
 `pValue`\
-[in] Ein Verweis in Form einer [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das den Wert, der zum Festlegen dieser Eigenschaft.
+[in] Ein Verweis in Form eines [IDebugReference2-Objekts](../../../extensibility/debugger/reference/idebugreference2.md) auf den Wert, der zum Festlegen dieser Eigenschaft verwendet werden soll.
 
 `dwTimeout`\
-[in] Wie lange ausführen, um den Wert in Millisekunden festgelegt. Ein typischer Wert `INFINITE`. Dies wirkt sich auf die Länge der Zeit, die alle möglichen Auswertung aus.
+[in] Wie lange dauert, um den Wert in Millisekunden festzulegen. Ein typischer `INFINITE`Wert ist . Dies wirkt sich auf die Dauer der möglichen Auswertung aus.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; andernfalls ein Fehler code wird zurückgegeben, in der Regel eine der folgenden:
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird andernfalls ein Fehlercode zurückgegeben, in der Regel einer der folgenden:
 
-|Fehler|Beschreibung|
+|Fehler|BESCHREIBUNG|
 |-----------|-----------------|
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Festlegen des Werts aus einem Verweis wird nicht unterstützt.|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Der Wert kann nicht festgelegt werden, wie diese Eigenschaft auf eine Methode verweist.|
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Das Festlegen des Werts aus einem Verweis wird nicht unterstützt.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Der Wert kann nicht festgelegt werden, da diese Eigenschaft auf eine Methode verweist.|
 |`E_SETVALUE_VALUE_IS_READONLY`|Der Wert ist schreibgeschützt und kann nicht festgelegt werden.|
 |`E_NOTIMPL`|Die Methode ist nicht implementiert.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
