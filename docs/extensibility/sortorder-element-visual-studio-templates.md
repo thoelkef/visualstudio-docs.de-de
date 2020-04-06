@@ -1,5 +1,5 @@
 ---
-title: Sortor der-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: SortOrder-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SortOrder element [Visual Studio Templates]
 - <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2875bcb4583c1d2ec47a935d1a8bb4f0de109a92
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719926"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699953"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder-Element (Visual Studio-Vorlagen)
-Gibt einen Wert an, der verwendet wird, um die Vorlage neben anderen Vorlagen in derselben Kategorie anzuordnen, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
+Gibt einen Wert an, der zum Anordnen der Vorlage unter anderen Vorlagen in derselben Kategorie verwendet wird, wie er im Dialogfeld **Neues Projekt** oder Neues **Element hinzufügen** angezeigt wird.
 
- \<VSTemplate > \<TemplateData > \<SortOrder >
+ \<VSTemplate \<> TemplateData> \<SortOrder>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,31 +36,31 @@ Gibt einen Wert an, der verwendet wird, um die Vorlage neben anderen Vorlagen in
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Ein-`integer`, der den Sortierreihen folgen Wert darstellt.
+ Ein, `integer` der den Sortierauftragswert darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `SortOrder` ist ein optionales Element. Der Standardwert ist 100, und alle Werte müssen ein Vielfaches von 10 sein.
 
- Das `SortOrder`-Element wird für vom Benutzer erstellte Vorlagen ignoriert. Alle vom Benutzer erstellten Vorlagen sind alphabetisch sortiert.
+ Das `SortOrder` Element wird für vom Benutzer erstellte Vorlagen ignoriert. Alle vom Benutzer erstellten Vorlagen werden alphabetisch sortiert.
 
- Vorlagen mit niedrigen Sortierreihenfolge-Werten werden im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** vor Vorlagen mit Werten für hohe Sortierreihenfolge angezeigt.
+ Vorlagen mit niedrigen Sortierreihenfolgewerten werden entweder im Dialogfeld **Neues Projekt** oder Neues **Element hinzufügen** vor Vorlagen mit hohen Sortierreihenfolgewerten angezeigt.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden die Metadaten für eine Standard-[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Klassen Vorlage veranschaulicht.
+ Im folgenden Beispiel werden die [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Metadaten für eine Standardklassenvorlage veranschaulicht.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,8 +79,8 @@ Gibt einen Wert an, der verwendet wird, um die Vorlage neben anderen Vorlagen in
 </VSTemplate>
 ```
 
- In diesem Beispiel ist das `SortOrder` Element relativ hoch. Es ist wahrscheinlich, dass andere Vorlagen für [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Elemente einen `SortOrder` Wert aufweisen, der kleiner als `290` ist und vor dieser Vorlage im Dialogfeld **Neues Element** angezeigt wird.
+ In diesem Beispiel `SortOrder` ist das Element relativ hoch. Es [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ist wahrscheinlich, dass andere `SortOrder` Elementvorlagen `290` einen niedrigeren Wert als diese Vorlage im Dialogfeld **Neues Element** haben und vor dieser Vorlage angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

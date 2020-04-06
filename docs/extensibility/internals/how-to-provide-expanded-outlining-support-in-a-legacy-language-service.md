@@ -1,5 +1,5 @@
 ---
-title: Geben Sie die Unterstützung in einem Sprachdienst | Microsoft-Dokumentation
+title: Bereitstellen von Umrissunterstützung in einem Sprachdienst | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,50 +7,50 @@ helpviewer_keywords:
 - language services, supporting outlining
 - outlining, supporting
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13bfa8abacbd8f9bd4b604c5a2389981c192b86e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37deafa92477289a2124ecee101dd254e68ef01d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312131"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707968"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Vorgehensweise: Geben Sie die Unterstützung für erweiterten Gliederungen in einem legacy-Sprachdienst
-Es gibt zwei Optionen zum Erweitern der Gliederung Unterstützung für Ihre Sprache zu unterstützen, die **reduzieren auf Definitionen** Befehl. Sie können editorgesteuert Gliederungsbereiche hinzufügen und Hinzufügen von Client-gesteuerten Gliederungsbereiche.
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Gewusst wie: Erweiterte Umrissunterstützung in einem legacy Sprachdienst bereitstellen
+Es gibt zwei Möglichkeiten, die Umrissunterstützung für Ihre Sprache über die Unterstützung des **Befehls "Auf Definitionen reduzieren"** hinaus zu erweitern. Sie können editorgesteuerte Gliederungsbereiche und clientgesteuerte Gliederungsbereiche hinzufügen.
 
-## <a name="adding-editor-controlled-outline-regions"></a>Hinzufügen von editorgesteuert Gliederungsbereiche
- Verwenden Sie diesen Ansatz, um einen Gliederungsbereich erstellen, und lassen Sie den Editor zu verarbeiten, ob der Bereich erweitert wird, reduziert, und so weiter. Diese Option ist der beiden Optionen für die Bereitstellung Gliederung Support die am wenigsten robuste. Bei dieser Option erstellen Sie ein neuen Gliederungsbereichs über eine angegebene Spanne von Text mit <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>. Nachdem dieser Region erstellt wird, wird das Verhalten vom Editor gesteuert. Verwenden Sie das folgende Verfahren, um editorgesteuert Gliederungsbereiche zu implementieren.
+## <a name="adding-editor-controlled-outline-regions"></a>Hinzufügen von editorgesteuerten Gliederungsbereichen
+ Verwenden Sie diesen Ansatz, um einen Gliederungsbereich zu erstellen, und lassen Sie dann dem Editor zu, ob die Region erweitert, reduziert usw. ist. Von den beiden Optionen für die Bereitstellung von Unterstützung ist diese Option die am wenigsten robuste. Für diese Option erstellen Sie einen neuen Gliederungsbereich über einen angegebenen Textbereich mit <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>. Nachdem dieser Bereich erstellt wurde, wird sein Verhalten vom Editor gesteuert. Verwenden Sie das folgende Verfahren, um editorgesteuerte Gliederungsbereiche zu implementieren.
 
-### <a name="to-implement-an-editor-controlled-outline-region"></a>Um einen editorgesteuert Gliederungsbereich zu implementieren.
+### <a name="to-implement-an-editor-controlled-outline-region"></a>So implementieren Sie eine editorgesteuerte Gliederungsregion
 
-1. Rufen Sie `QueryService` für <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Call `QueryService` for<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
-     Gibt einen Zeiger auf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.
+     Dadurch wird ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>Zeiger auf zurückgegeben.
 
-2. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, und übergeben Sie einen Zeiger für einen angegebenen Textpuffer. Gibt einen Zeiger auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Objekt für den Puffer.
+2. Rufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>Sie auf, und übergeben Sie einen Zeiger für einen bestimmten Textpuffer. Dadurch wird ein Zeiger <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> auf das Objekt für den Puffer zurückgegeben.
 
-3. Rufen Sie <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> auf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> für einen Zeiger auf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>.
+3. Rufen Sie <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> einen Zeiger <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>auf an. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>
 
-4. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> auf ein oder mehrere neue Regionen zu einem Zeitpunkt beschrieben.
+4. Rufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> Sie auf, um jeweils eine oder mehrere neue Gliederungsbereiche hinzuzufügen.
 
-     Diese Methode ermöglicht Ihnen die Angabe der Textabschnitt, Gliederung, gibt an, ob vorhandene Gliederungsbereiche entfernt oder beibehalten werden, und gibt an, ob die Gliederungsbereich erweitert oder wird, wird standardmäßig reduziert der.
+     Mit dieser Methode können Sie die zu umreißende Textspanne angeben, ob vorhandene Gliederungsbereiche entfernt oder beibehalten werden und ob der Gliederungsbereich standardmäßig erweitert oder reduziert wird.
 
-## <a name="add-client-controlled-outline-regions"></a>Fügen Sie die Client-gesteuerten Gliederungsbereiche
- Dieser Ansatz zu implementieren, die Client-gesteuert (oder klug) zu gliedern, die von verwendet, z. B. Verwenden der [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Sprachdienste. Ein Sprachdienst, der verwaltet einen eigenen Gliederung überwacht den Textinhalt der Puffer, um alte Gliederungsbereiche zerstört, wenn sie ungültig werden und neue Gliederungsbereiche nach Bedarf erstellen.
+## <a name="add-client-controlled-outline-regions"></a>Hinzufügen von clientgesteuerten Gliederungsbereichen
+ Verwenden Sie diesen Ansatz, um clientgesteuerte (oder intelligente) Gliederungen wie die von den [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Sprachdiensten verwendeten zu implementieren. Ein Sprachdienst, der seine eigene Gliederung verwaltet, überwacht den Textpufferinhalt, um alte Gliederungsbereiche zu zerstören, wenn sie ungültig werden, und um bei Bedarf neue Gliederungsbereiche zu erstellen.
 
-### <a name="to-implement-a-client-controlled-outline-region"></a>Um einen Client gesteuerter Gliederungsbereich zu implementieren.
+### <a name="to-implement-a-client-controlled-outline-region"></a>So implementieren Sie eine clientgesteuerte Gliederungsregion
 
-1. Rufen Sie `QueryService` für <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>. Gibt einen Zeiger auf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.
+1. Rufen `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>Sie nach . Dadurch wird ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>Zeiger auf zurückgegeben.
 
-2. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, und übergeben Sie einen Zeiger für einen angegebenen Textpuffer. Dadurch wird bestimmt, ob bereits eine Sitzung des ausgeblendeten Textes für den Puffer vorhanden ist.
+2. Rufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>Sie auf, und übergeben Sie einen Zeiger für einen bestimmten Textpuffer. Dadurch wird bestimmt, ob bereits eine ausgeblendete Textsitzung für den Puffer vorhanden ist.
 
-3. Wenn eine Sitzung des Textes bereits vorhanden ist, Sie müssen nicht zum Erstellen einer und einen Zeiger auf die vorhandene <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Objekt zurückgegeben. Verwenden Sie diesen Zeiger, auflisten und erstellen Gliederungsbereiche. Rufen Sie andernfalls <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> um eine Sitzung des ausgeblendeten Textes für den Puffer zu erstellen. Ein Zeiger auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Objekt zurückgegeben.
+3. Wenn bereits eine Textsitzung vorhanden ist, müssen Sie keine Textsitzung <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> erstellen, und es wird ein Zeiger auf das vorhandene Objekt zurückgegeben. Verwenden Sie diesen Zeiger, um Gliederungsbereiche aufzuzählen und zu erstellen. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> andernfalls auf, um eine ausgeblendete Textsitzung für den Puffer zu erstellen. Ein Zeiger auf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> das Objekt wird zurückgegeben.
 
     > [!NOTE]
-    > Beim Aufruf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, Sie können einen ausgeblendeten textclient angeben (d. h. eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> Objekt). Dieser Client benachrichtigt, wenn eine ausgeblendeten Text oder Gliederungsbereich erweitert oder reduziert wird, durch den Benutzer.
+    > Wenn Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>aufrufen, können Sie einen versteckten <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> Textclient (d. h. ein Objekt) angeben. Dieser Client benachrichtigt Sie, wenn ein ausgeblendeter Text oder Gliederungsbereich vom Benutzer erweitert oder reduziert wird.
 
-4. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> Struktur) Parameter: Geben Sie den Wert <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> in die `iType` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur, um anzugeben, dass Sie einen Gliederungsbereich, anstatt einen ausgeblendeten Bereich erstellen. Gibt an, ob der Bereich ist die Client-gesteuert oder Editor gesteuert werden, in der `dwBehavior` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur. Die intelligente Gliederung Implementierung kann eine Mischung aus und Client-editorgesteuert Gliederungsbereiche enthalten. Geben Sie den Bannertext, der angezeigt wird, wenn Ihre Gliederungsbereich, z. B. "...", in reduziert ist die `pszBanner` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur. Die Anmerkung der Redaktion Banner Standardtext für einen ausgeblendeten Bereich ist "...".
+4. Parameter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> Aufrufstruktur): Geben Sie <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> einen `iType` Wert <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> von im Element der Struktur an, um anzugeben, dass Sie einen Gliederungsbereich anstelle eines ausgeblendeten Bereichs erstellen. Geben Sie an, ob die Region im `dwBehavior` Element <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> der Struktur clientgesteuert oder editorgesteuert ist. Ihre smartoutline-Implementierung kann eine Mischung aus Editor- und clientgesteuerten Gliederungsbereichen enthalten. Geben Sie den Bannertext an, der `pszBanner` angezeigt wird, wenn der Gliederungsbereich im Element der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur reduziert wird, z. B. "...". Der Standardbannertext des Editors für einen ausgeblendeten Bereich ist "...".

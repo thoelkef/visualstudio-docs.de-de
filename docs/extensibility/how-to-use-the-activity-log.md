@@ -1,32 +1,32 @@
 ---
-title: 'Vorgehensweise: Verwenden des Aktivitätsprotokolls | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden des Aktivitätsprotokolls | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309352"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710583"
 ---
-# <a name="how-to-use-the-activity-log"></a>Vorgehensweise: Verwenden des Aktivitätsprotokolls
-VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses Feature ist besonders nützlich zum Debuggen von VSPackages im Einzelhandel-Umgebungen.
+# <a name="how-to-use-the-activity-log"></a>Gewusst wie: Verwenden des Aktivitätsprotokolls
+VSPackages kann Nachrichten in das Aktivitätsprotokoll schreiben. Diese Funktion ist besonders nützlich für das Debuggen von VSPackages in Einzelhandelsumgebungen.
 
 > [!TIP]
-> Das Aktivitätsprotokoll ist immer aktiviert. Visual Studio behält einen kontinuierlichen Puffer, der die letzten 100 Einträge sowie die ersten 10 Einträge, die allgemeine Konfigurationsinformationen haben.
+> Das Aktivitätsprotokoll ist immer aktiviert. Visual Studio speichert einen rollierenden Puffer der letzten 100 Einträge sowie der ersten 10 Einträge, die allgemeine Konfigurationsinformationen enthalten.
 
-## <a name="to-write-an-entry-to-the-activity-log"></a>Zum Schreiben eines Eintrags im Aktivitätsprotokoll
+## <a name="to-write-an-entry-to-the-activity-log"></a>So schreiben Sie einen Eintrag in das Aktivitätsprotokoll
 
-1. Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode oder in eine andere Methode, mit Ausnahme der VSPackage-Konstruktor:
+1. Fügen Sie diesen <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Code in die Methode oder in eine andere Methode mit Ausnahme des VSPackage-Konstruktors ein:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,19 +38,19 @@ VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses 
         "Called for: {0}", this.ToString()));
     ```
 
-     Dieser Code Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service auf und wandelt ihn um ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> Schnittstelle. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> Schreibt einen Informationseintrag in das Aktivitätsprotokoll, die unter Verwendung des Kontexts der aktuellen Kultur.
+     Dieser Code <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> ruft den Dienst ab <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> und gibt ihn in eine Schnittstelle um. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>schreibt einen Informationseintrag in das Aktivitätsprotokoll unter Verwendung des aktuellen kulturellen Kontexts.
 
-2. Wenn das VSPackage geladen wird (in der Regel, wenn ein Befehl aufgerufen wird, oder ein Fenster geöffnet ist), wird der Text in das Aktivitätsprotokoll geschrieben.
+2. Wenn das VSPackage geladen wird (normalerweise, wenn ein Befehl aufgerufen oder ein Fenster geöffnet wird), wird der Text in das Aktivitätsprotokoll geschrieben.
 
-## <a name="to-examine-the-activity-log"></a>Das Aktivitätsprotokoll untersuchen
+## <a name="to-examine-the-activity-log"></a>So untersuchen Sie das Aktivitätsprotokoll
 
-1. Führen Sie Visual Studio mit der [/Log](../ide/reference/log-devenv-exe.md) Befehlszeilenschalter ActivityLog.xml während einer Sitzung auf dem Datenträger zu schreiben.
+1. Führen Sie Visual Studio mit dem Befehlszeilenschalter [/Log](../ide/reference/log-devenv-exe.md) aus, um ActivityLog.xml während der Sitzung auf den Datenträger zu schreiben.
 
-2. Suchen Sie nach dem Schließen von Visual Studio, das Aktivitätsprotokoll im Unterordner für Visual Studio-Daten:
+2. Suchen Sie nach dem Schließen von Visual Studio das Aktivitätsprotokoll im Unterordner für Visual Studio-Daten:
 
-   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%AppData%</em>, Microsoft-VisualStudio-Version\\\<>.*
 
-3. Öffnen Sie das Aktivitätsprotokoll mit einem beliebigen Texteditor ein. Hier ist ein typischer Eintrag ein:
+3. Öffnen Sie das Aktivitätsprotokoll mit einem beliebigen Texteditor. Hier ist ein typischer Eintrag:
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
@@ -58,11 +58,11 @@ VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses 
 
 ## <a name="robust-programming"></a>Stabile Programmierung
 
-Da das Aktivitätsprotokoll auf einen Dienst handelt, ist das Aktivitätsprotokoll in der VSPackage-Konstruktor nicht verfügbar.
+Da es sich bei dem Aktivitätsprotokoll um einen Dienst handelt, ist das Aktivitätsprotokoll im VSPackage-Konstruktor nicht verfügbar.
 
-Sie sollten das Aktivitätsprotokoll abrufen, unmittelbar vor der in den sie schreiben. Zwischenspeichern Sie und speichern Sie das Aktivitätsprotokoll für die zukünftige Verwendung nicht.
+Sie sollten das Aktivitätsprotokoll kurz vor dem Schreiben abrufen. Cachen oder Speichern Sie das Aktivitätsprotokoll nicht für die zukünftige Verwendung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>

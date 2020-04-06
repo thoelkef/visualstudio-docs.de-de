@@ -1,47 +1,47 @@
 ---
-title: Unterstützen mehrerer Versionen von Visual Studio | Microsoft-Dokumentation
+title: Unterstützung mehrerer Versionen von Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, supporting multiple versions
 - VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7212445cd507a0d7d185bbd73fa2292e5b783f4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745993"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699475"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Unterstützen mehrerer Versionen von Visual Studio
-Der Begriff *Seite-an-Seite* bedeutet, dass Sie installieren und mehrere Versionen eines Produkts auf dem gleichen Computer verwalten können. Für VSPackages bedeutet, dass an, dass ein Benutzer mehrere Versionen von Visual Studio auf demselben Computer installiert haben kann. Allerdings möglich keine Seite-an-Seite Ihre VSPackages Laden in eine einzelne Version von Visual Studio-Versionen.
+Der Begriff *side-by-side* bedeutet, dass Sie mehrere Versionen eines Produkts auf demselben Computer installieren und verwalten können. Für VSPackages bedeutet dies, dass ein Benutzer mehrere Visual Studio-Versionen auf demselben Computer installiert haben kann. Es können Sie jedoch keine nebeneinander stehenden Versionen Ihrer VSPackages in eine einzelne Version von Visual Studio laden.
 
- Bevor Sie Ihr VSPackage in die Seite-an-Seite-Versionen von Visual Studio geladen werden können vornehmen, berücksichtigen Sie Folgendes:
+ Bevor Sie Ihr VSPackage in side-by-side-Versionen von Visual Studio laden können, sollten Sie Folgendes beachten:
 
-- Sie müssen bestimmen, welche Seite-an-Seite Implementierungsstrategie für die Sie ausführen möchten.
+- Sie müssen festlegen, welche Side-by-Side-Implementierungsstrategie Sie verfolgen möchten.
 
-   Weitere Informationen finden Sie unter [auswählen zwischen freigegebenen "und" mit versionsverwaltung durch das VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
+   Weitere Informationen finden Sie unter [Auswählen zwischen freigegebenen und versionierten VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
-- Ihre Dateiformate Projektmappen- und Projektdateien müssen Ihre Strategie für die Implementierung passen.
+- Ihre Projektmappen- und Projektdateiformate müssen zu Ihrer Implementierungsstrategie passen.
 
-   Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekten](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) und [Registrieren von Dateierweiterungen für Seite-an-Seite Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
+   Weitere Informationen finden Sie unter [Aktualisieren benutzerdefinierter Projekte](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) und [Registrieren von Dateinamenerweiterungen für Side-By-Side-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
-- Das Installationsprogramm muss Ihre Strategie für die Implementierung behandeln, sodass mit versionsverwaltung durch das Komponenten sowie alle Versionen, gemeinsam genutzte Komponenten ordnungsgemäß installiert und registriert werden.
+- Ihr Installationsprogramm muss Ihre Implementierungsstrategie behandeln, damit versionierte Komponenten sowie Komponenten, die für alle Versionen freigegeben sind, ordnungsgemäß installiert und registriert werden.
 
-   Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) sowie [Komponentenverwaltung](../extensibility/internals/component-management.md).
+   Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) und auch [Komponentenverwaltung](../extensibility/internals/component-management.md).
 
   > [!NOTE]
-  > Installieren einer Version von Visual Studio wird auch eine entsprechende Version von .NET Framework installiert. Beispielsweise installiert Visual Studio 2010 und Visual Studio 2012 installieren, auf dem gleichen Computer auch Versionen 4.0 und .NET Framework 4.5 bzw.
+  > Durch die Installation einer Version von Visual Studio wird auch eine entsprechende Version von .NET Framework installiert. Wenn Sie beispielsweise Visual Studio 2010 und Visual Studio 2012 auf demselben Computer installieren, werden auch die Versionen 4.0 bzw. 4.5 von .NET Framework installiert.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Auswählen zwischen freigegebenen "und" mit versionsverwaltung durch das VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md) wird erläutert, wie Seite-an-Seite Probleme in Ihrem VSPackage zu beheben.
+- [Auswählen zwischen freigegebenen und versionierten VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md) Erläutert, wie Sie Nebeneinander auftretende Probleme in Ihrem VSPackage beheben können.
 
-- [Registrieren von Dateierweiterungen für Seite-an-Seite Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) wird beschrieben, wie Ihr VSPackage dateizuordnungen in einem Seite-an-Seite-Szenario registrieren kann.
+- [Registrieren von Dateinamenerweiterungen für Side-By-Side-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) Beschreibt, wie Ihr VSPackage Dateizuordnungen in einem nebeneinander-szenario registrieren kann.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)

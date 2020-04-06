@@ -1,63 +1,63 @@
 ---
-title: Zeitpunkt der Erstellung von Projekttypen | Microsoft-Dokumentation
+title: Wann werden Projekttypen erstellt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff29843965c220c505266a9cd973e5695c0b9dab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 861250dac25288f353cbd5c57f510bf67dadce70
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721553"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703431"
 ---
 # <a name="when-to-create-project-types"></a>Gründe für das Erstellen von Projekttypen
-Das Erstellen eines neuen Projekt Typs bietet eine Grundlage für die Anpassung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Ihre Benutzer. Es ist jedoch nicht erforderlich, einen neuen Projekttyp für alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Anpassungen zu erstellen. Die folgenden Richtlinien sollen Ihnen dabei helfen zu bestimmen, ob ein neuer Projekttyp für Ihr Szenario erforderlich ist.
+Das Erstellen eines neuen Projekttyps [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet eine Grundlage für das Anpassen für Ihre Benutzer. Das Erstellen eines neuen Projekttyps [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist jedoch nicht für alle Anpassungen erforderlich. Anhand der folgenden Richtlinien können Sie ermitteln, ob ein neuer Projekttyp für Ihr Szenario erforderlich ist.
 
-## <a name="create-a-new-project-type"></a>Neuen Projekttyp erstellen
- Sie müssen einen Projekttyp erstellen, wenn Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] so anpassen möchten, dass er auf eine oder mehrere der folgenden Arten reagiert:
+## <a name="create-a-new-project-type"></a>Erstellen eines neuen Projekttyps
+ Sie müssen einen Projekttyp erstellen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wenn Sie anpassen möchten, um auf eine oder mehrere der folgenden Arten zu handeln:
 
-- Nehmen Sie an Build, Bereitstellung, Konfigurationen und Quell Code Verwaltung Teil.
+- Nehmen Sie an Build, Bereitstellung, Konfigurationen und Quellcodeverwaltung teil.
 
-- Bietet Debugunterstützung.
+- Bieten Sie Debugging-Unterstützung an.
 
-- Zeigen Sie Projekt Elemente in **Projektmappen-Explorer**an.
+- Projektelemente im **Projektmappen-Explorer**anzeigen .
 
-- Verwenden Sie das Dialogfeld **Projekt öffnen** oder **Neues Projekt** .
+- Verwenden Sie das Dialogfeld **Projekt** öffnen oder **neues Projekt.**
 
-- Unterstützung der Projekt Schachtelung
+- Unterstützen Sie die Verschachtelung von Projekten.
 
-## <a name="extend-an-existing-project-type"></a>Erweitern eines vorhandenen Projekt Typs
- Möglicherweise möchten Sie einen neuen Projekttyp erstellen, der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auf folgende Weise verwenden kann, um das Verhalten eines vorhandenen Projekt Typs zu ändern oder zu erweitern, z. b. zum Ändern des Buildprozesses für [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte:
+## <a name="extend-an-existing-project-type"></a>Erweitern eines vorhandenen Projekttyps
+ Sie können einen neuen Projekttyp erstellen, der auf folgende Weise verwendet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] werden kann, um das Verhalten eines [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vorhandenen Projekttyps zu ändern oder zu erweitern, z. B. den Buildprozess für Projekte zu ändern:
 
-- Arbeiten Sie mit mehreren Dateien als einzelne Einheit.
+- Arbeiten Sie mit mehreren Dateien als eine Einheit.
 
-- Zeigt eine einzelne Datei als Hierarchie von unter Elementen an.
+- Zeigen Sie eine einzelne Datei als Hierarchie von Unterelementen an.
 
-- Anzeigen eines Befehls Kontexts um Editoren.
+- Zeigen Sie einen Befehlskontext um Editoren an.
 
-- Zeigen Sie einen Dienst Kontext für Editoren an.
+- Zeigen Sie einen Dienstkontext für Editoren an.
 
-## <a name="use-an-existing-project-type"></a>Vorhandenen Projekttyp verwenden
- Das Erstellen eines neuen Projekts ist manchmal nicht erforderlich. In der folgenden Tabelle sind die Tasks aufgeführt, für die Sie keinen Projekttyp erstellen müssen.
+## <a name="use-an-existing-project-type"></a>Verwenden eines vorhandenen Projekttyps
+ Das Erstellen eines neuen Projekts ist manchmal nicht erforderlich. Die folgende Tabelle zeigt die Vorgänge, für die Sie keinen Projekttyp erstellen müssen.
 
-|Aufgabe|Beschreibung|
+|Aufgabe|BESCHREIBUNG|
 |----------|-----------------|
-|Verarbeiten von Befehlen|Alle VSPackage können Befehle verarbeiten.|
-|Aufbauen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Fenster und Editoren](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
-|Besitzende Fenster|Sie können sowohl Tool-als auch Dokument Fenster erstellen, ohne einen neuen Projekttyp hinzuzufügen.|
-|Verfügbar machen von Eigenschaften im Eigenschaftenfenster|Alle-Objekte können Eigenschaften verfügbar machen.|
+|Umgang mit Befehlen|Jedes VSPackage kann Befehle verarbeiten.|
+|Erstellen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Windows und Editoren](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
+|Besitzen von Fenstern|Sie können sowohl Werkzeug- als auch Dokumentfenster erstellen, ohne einen neuen Projekttyp hinzuzufügen.|
+|Offenlegen von Eigenschaften im Fenster Eigenschaften|Alle Objekte können Eigenschaften verfügbar machen.|
 
-## <a name="create-a-project-subtype"></a>Erstellen eines Projekt unter Typs
- Mithilfe von Projekt Untertypen können Sie einen verwalteten Projekttyp erweitern, ohne einen neuen Projekttyp erstellen zu müssen. Projekt Untertypen verwenden com-Aggregation, um verwaltete Projekte zu erweitern, die in Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] geschrieben wurden. Mit com-Aggregation können Sie einen Großteil der Implementierung des verwalteten Projekt Systems wieder verwenden und dennoch für ein bestimmtes Szenario durch Aggregation und die Verwendung von unterstützenden Schnittstellen anpassen. Weitere Informationen zu Projekt Untertypen finden Sie unter [Projekt Untertypen](../../extensibility/internals/project-subtypes.md).
+## <a name="create-a-project-subtype"></a>Erstellen eines Projektuntertyps
+ Sie können Projektuntertypen verwenden, um einen verwalteten Projekttyp zu erweitern, ohne einen neuen Projekttyp erstellen zu müssen. Projektuntertypen verwenden COM-Aggregation, um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] verwaltete Projekte zu erweitern, die in Microsoft oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]geschrieben wurden. Mit der COM-Aggregation können Sie einen Großteil der verwalteten Projektsystemimplementierung wiederverwenden und dennoch für ein bestimmtes Szenario durch Aggregation und die Verwendung unterstützender Schnittstellen anpassen. Weitere Informationen zu Projektuntertypen finden Sie unter [Projektuntertypen](../../extensibility/internals/project-subtypes.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Dokument Fenster und-Editoren](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+## <a name="see-also"></a>Weitere Informationen
+- [Dokumentieren von Windows und Editoren](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
