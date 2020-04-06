@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE | Microsoft-Dokumentation
+title: BP_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350566"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737790"
 ---
-# <a name="bptype"></a>BP_TYPE
-Gibt an, ob der Haltepunkt an einem codespeicherort ist, einen Speicherort, oder eine andere Art von Haltepunkt.
+# <a name="bp_type"></a>BP_TYPE
+Gibt an, ob sich der Haltepunkt an einem Codespeicherort befindet, ein Datenspeicherort oder ein anderer Haltepunkttyp ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,28 +48,28 @@ public enum enum_BP_TYPE {
 
 ## <a name="fields"></a>Felder
 `BPT_NONE`\
-Gibt an, keinen Haltepunkttyp.
+Gibt keinen Haltepunkttyp an.
 
 `BPT_CODE`\
-Gibt einen codehaltepunkt an.
+Gibt einen Code-Haltepunkt an.
 
 `BPT_DATA`\
-Gibt einen Datenhaltepunkt.
+Gibt einen Datenhaltepunkt an.
 
 `BPT_SPECIAL`\
-Gibt an, einen Haltepunkt an, der weder Code noch einen Datentyp ist. Dieser Typ ist veraltet und sollte nicht verwendet werden.
+Gibt einen Haltepunkt an, der weder ein Code noch ein Datentyp ist. Dieser Typ ist veraltet und sollte nicht verwendet werden.
 
-## <a name="remarks"></a>Hinweise
-Übergeben als Parameter an die [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) und [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) Methoden.
+## <a name="remarks"></a>Bemerkungen
+Wird als Parameter an die [Methoden GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) und [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) übergeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

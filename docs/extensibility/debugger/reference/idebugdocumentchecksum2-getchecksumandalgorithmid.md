@@ -1,28 +1,28 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft-Dokumentation
+title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20cf33743d222e160458afcdcf186022a7405fa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350080"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731941"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Ruft die Prüfsumme und Algorithmus Dokumentbezeichner erhalten die maximale Anzahl von Bytes, die ab.
+Ruft die Dokumentprüfsumme und den Algorithmusbezeichner anhand der maximal zu verwendenden Anzahl von Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,19 +49,19 @@ public int GetChecksumAndAlgorithmId(
 [out] Eindeutiger Bezeichner für den Prüfsummenalgorithmus.
 
 `cMaxBytes`\
-[in] Maximale Anzahl von Bytes, die für die Prüfsumme verwendet werden.
+[in] Maximale Anzahl von Bytes, die für die Prüfsumme verwendet werden sollen.
 
 `pChecksum`\
-[out] Der Wert der Prüfsumme.
+[out] Wert der Prüfsumme.
 
 `pcNumBytes`\
-[out] Tatsächliche Anzahl von Bytes, die für die Prüfsumme verwendet.
+[out] Tatsächliche Anzahl der Bytes, die für die Prüfsumme verwendet werden.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Im folgenden Beispiel wird diese Methode, um die Prüfsumme und den Algorithmus für ein Dokument abzurufen.
+Im folgenden Beispiel wird diese Methode verwendet, um die Prüfsumme und den Algorithmus für ein Dokument abzubekommen.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)
@@ -126,5 +126,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

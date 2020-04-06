@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution | Microsoft-Dokumentation
+title: IDebugBoundBreakpoint2::GetBreakpointResolution | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - GetBreakpointResolution method
 - IDebugBoundBreakpoint2::GetBreakpointResolution method
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b4532d6d59679b5268007540a3842e681d829ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320545"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735580"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Ruft die haltepunktauflösung, die diesem Breakpoint beschreibt.
+Ruft die Haltepunktauflösung ab, die diesen Haltepunkt beschreibt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,20 +42,20 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>Parameter
 `ppBPResolution`\
-[out] Gibt die [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) Schnittstelle, die einen der folgenden darstellt:
+[out] Gibt die [IDebugBreakpointResolution2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) zurück, die eine der folgenden Stellt:
 
-- Der Haltepunkt Auflösung-Objekt, das die Position im Code wird beschrieben, in denen ein codehaltepunkt gebunden wurde.
+- Das Breakpoint-Auflösungsobjekt, das die Position im Code beschreibt, an die ein Codehaltepunkt gebunden wurde.
 
-- Der Speicherort, in denen ein Datenhaltepunkt gebunden ist.
+- Der Datenspeicherort, an dem ein Datenhaltepunkt gebunden ist.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Status des `BPS_DELETED` gebundenen Haltepunktobjekts auf (Teil der BP_STATE-Enumeration) festgelegt ist. [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
 
-## <a name="remarks"></a>Hinweise
-Rufen Sie die [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) Methode, um zu bestimmen, ob es sich bei der haltepunktauflösung für Code- oder Datenmenge ist.
+## <a name="remarks"></a>Bemerkungen
+Rufen Sie die [GetBreakpointType-Methode](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) auf, um zu bestimmen, ob die Breakpoint-Auflösung für Code oder Daten bestimmt ist.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese `CBoundBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugBoundBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) verfügbar macht.
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(
@@ -88,7 +88,7 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

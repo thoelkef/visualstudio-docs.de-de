@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Microsoft-Dokumentation
+title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337443"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735462"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Legt fest oder ändert die Bedingung, die dieser gebundene Haltepunkt zugeordnet.
+Legt die Bedingung fest, die diesem gebundenen Haltepunkt zugeordnet ist, oder ändert sie.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,15 +42,15 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Parameter
 `bpCondition`\
-[in] Ein Wert aus der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Enumeration, die die Bedingung beschreibt.
+[in] Ein Wert [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) aus der BP_CONDITION-Enumeration, die die Bedingung beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Status des `BPS_DELETED` gebundenen Haltepunktobjekts auf (Teil der BP_STATE-Enumeration) festgelegt ist. [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
 
-## <a name="remarks"></a>Hinweise
- Jede Bedingung, die zuvor dieser Haltepunkt zugeordnet war, geht verloren.
+## <a name="remarks"></a>Bemerkungen
+ Jede Bedingung, die zuvor diesem Haltepunkt zugeordnet war, geht verloren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

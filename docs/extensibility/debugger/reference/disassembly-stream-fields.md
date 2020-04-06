@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Microsoft-Dokumentation
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318258"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737366"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-Gibt an, welche Informationen Sie über ein Feld für die Disassembly abzurufen.
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
+Gibt an, welche Informationen zu einem Demontagefeld abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -66,60 +66,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Felder
 `DSF_ADDRESS`\
-Initialisieren und Verwenden der `bstrAddress` Feld.
+Initialisieren/verwenden `bstrAddress` Sie das Feld.
 
 `DSF_ADDRESSOFFSET`\
-Initialisieren und Verwenden der `bstrAddressOffset` Feld.
+Initialisieren/verwenden `bstrAddressOffset` Sie das Feld.
 
 `DSF_CODEBYTES`\
-Initialisieren und Verwenden der `bstrCodeBytes` Feld.
+Initialisieren/verwenden `bstrCodeBytes` Sie das Feld.
 
 `DSF_OPCODE`\
-Initialisieren und Verwenden der `bstrOpCode` Feld.
+Initialisieren/verwenden `bstrOpCode` Sie das Feld.
 
 `DSF_OPERANDS`\
-Initialisieren und Verwenden der `bstrOperands` Feld.
+Initialisieren/verwenden `bstrOperands` Sie das Feld.
 
 `DSF_SYMBOL`\
-Initialisieren und Verwenden der `bstrSymbol` Feld.
+Initialisieren/verwenden `bstrSymbol` Sie das Feld.
 
 `DSF_CODELOCATIONID`\
-Initialisieren und Verwenden der `uCodeLocationId` Feld.
+Initialisieren/verwenden `uCodeLocationId` Sie das Feld.
 
 `DSF_POSITION`\
-Initialisieren und Verwenden der `posBeg` und `posEnd` Felder.
+Initialisieren/verwenden `posBeg` Sie `posEnd` die Felder und.
 
 `DSF_DOCUMENTURL`\
-Initialisieren und Verwenden der `bstrDocumentUrl` Feld.
+Initialisieren/verwenden `bstrDocumentUrl` Sie das Feld.
 
 `DSF_BYTEOFFSET`\
-Initialisieren und Verwenden der `dwByteOffset` Feld.
+Initialisieren/verwenden `dwByteOffset` Sie das Feld.
 
 `DSF_FLAGS`\
-Initialisieren und Verwenden der `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) Feld.
+Initialisieren/verwenden `dwFlags` Sie das Feld ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Symbolnamen in umfassen die `bstrOperands` Feld.
+Fügen Sie Symbolnamen in das Feld ein. `bstrOperands`
 
 `DSF_ALL`\
-Gibt alle Felder für den Disassembly-Stream an.
+Gibt alle Felder für den Demontagestream an.
 
-## <a name="remarks"></a>Hinweise
-Übergeben als Parameter an die [lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) Methode, um die Felder anzugeben der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) sind, dass die Struktur initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+Wird als Parameter an die [Read-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) übergeben, um anzugeben, welche Felder der [DisassemblyData-Struktur](../../../extensibility/debugger/reference/disassemblydata.md) initialisiert werden sollen.
 
-Verwendet für die `dwFields` Mitglied der `DisassemblyData` Struktur, um anzugeben, welche Felder sind gültig und verwendet, wenn die Struktur zurückgegeben wird.
+Wird für `dwFields` das `DisassemblyData` Element der Struktur verwendet, um anzugeben, welche Felder verwendet werden und gültig sind, wenn die Struktur zurückgegeben wird.
 
-Diese Werte können kombiniert werden, mit einer bitweisen `OR`.
+Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

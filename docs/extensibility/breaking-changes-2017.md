@@ -1,74 +1,74 @@
 ---
-title: Wichtige Änderungen in Visual Studio 2017-Erweiterbarkeit
+title: Brechen von Änderungen in Visual Studio 2017-Erweiterbarkeit
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1a12470530589c8d19a088428bc265c530b55f0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252318"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739968"
 ---
-# <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
+# <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017 Erweiterbarkeit
 
-Visual Studio 2017 bietet eine [schnellere Visual Studio-Installations](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) Darstellung, die die Auswirkungen von Visual Studio auf Benutzer Systeme verringert und gleichzeitig den Benutzern mehr Möglichkeiten für die installierten Workloads und Features bietet. Zur Unterstützung dieser Verbesserungen haben wir Änderungen am Erweiterbarkeits Modell vorgenommen, einschließlich einiger grundlegende Änderungen. In diesem Artikel werden die technischen Details dieser Änderungen und deren Behandlung beschrieben.
+Visual Studio 2017 bietet eine [schnellere, leichtere Visual Studio-Installationsumgebung,](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) die die Auswirkungen von Visual Studio auf Benutzersysteme reduziert und den Benutzern eine größere Auswahl an Workloads und Features bietet, die installiert sind. Um diese Verbesserungen zu unterstützen, haben wir Änderungen am Erweiterbarkeitsmodell vorgenommen, einschließlich einiger brechender Änderungen. In diesem Artikel werden die technischen Details dieser Änderungen beschrieben und was getan werden kann, um sie zu beheben.
 
 > [!NOTE]
-> Einige Informationen sind Zeit Punkt Implementierungsdetails und können später geändert werden.
+> Einige Informationen sind Point-in-Time-Implementierungsdetails und können später geändert werden.
 
-## <a name="changes-affecting-vsix-format-and-installation"></a>Änderungen, die das VSIX-Format und die Installation beeinträchtigen
+## <a name="changes-affecting-vsix-format-and-installation"></a>Änderungen im VSIX-Format und bei der Installation
 
-Visual Studio 2017 hat das VSIX v3-Format (Version 3) zur Unterstützung der Lightweight-Installation eingeführt.
+Visual Studio 2017 führte das VSIX v3-Format (Version 3) ein, um die einfache Installation zu unterstützen.
 
-Änderungen am VSIX-Format umfassen Folgendes:
+Zu den Änderungen am VSIX-Format gehören:
 
-* Deklaration der Setup Voraussetzungen. Um die Zusage einer vereinfachten, schnellen Installation von Visual Studio zu gewährleisten, bietet das Installationsprogramm jetzt mehr Konfigurationsoptionen für Benutzer. Daher müssen Erweiterungen ihre Abhängigkeiten deklarieren, um sicherzustellen, dass die für eine Erweiterung benötigten Features und Komponenten installiert sind.
+* Deklaration der Setup-Voraussetzungen. Um das Versprechen eines leichten, schnell installierenden Visual Studio zu erfüllen, bietet das Installationsprogramm benutzern jetzt mehr Konfigurationsoptionen. Um sicherzustellen, dass die für eine Erweiterung erforderlichen Features und Komponenten installiert sind, müssen Erweiterungen daher ihre Abhängigkeiten deklarieren.
 
-  * Das Visual Studio 2017-Installationsprogramm bietet automatisch die erforderlichen Komponenten für den Benutzer als Teil der Installation der Erweiterung.
-  * Benutzer werden ebenfalls gewarnt, wenn Sie versuchen, eine Erweiterung zu installieren, die nicht mit dem neuen VSIX v3-Format erstellt wurde, auch wenn Sie in ihrem Manifest als Zielversion 15,0 gekennzeichnet wurden.
+  * Das Visual Studio 2017-Installationsprogramm bietet automatisch an, die erforderlichen Komponenten für den Benutzer im Rahmen der Installation der Erweiterung zu erwerben und zu installieren.
+  * Benutzer werden auch gewarnt, wenn sie versuchen, eine Erweiterung zu installieren, die nicht mit dem neuen VSIX v3-Format erstellt wurde, auch wenn sie in ihrem Manifest als Zielversion 15.0 markiert wurden.
 
-* Erweiterte Funktionen für das VSIX-Format. Zur Bereitstellung einer Installation von Visual Studio mit [geringen Auswirkungen](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) , die auch parallele Installationen unterstützt, werden die meisten Konfigurationsdaten nicht mehr in der Systemregistrierung gespeichert, und die Visual Studio-spezifischen Assemblys wurden aus dem GAC verschoben. Wir haben auch die Funktionen des VSIX-Formats und der VSIX-Installations-Engine erweitert, sodass Sie es anstelle einer MSI-oder exe-Datei verwenden können, um die Erweiterungen für einige Installationstypen zu installieren.
+* Erweiterte Funktionen für das VSIX-Format. Um eine [installation](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) mit geringen Auswirkungen von Visual Studio durchzuführen, die auch nebeneinander installierte Installationen unterstützt, speichern wir die meisten Konfigurationsdaten nicht mehr in der Systemregistrierung und haben Visual Studio-spezifische Assemblys aus dem GAC verschoben. Außerdem haben wir die Funktionen des VSIX-Formats und der VSIX-Installations-Engine erweitert, sodass Sie es anstelle eines MSI oder EXE verwenden können, um Ihre Erweiterungen für einige Installationstypen zu installieren.
 
 Zu den neuen Funktionen gehören:
 
-* Registrierung bei der angegebenen Visual Studio-Instanz.
-* Installation außerhalb des [Ordners "Erweiterungen](set-install-root.md)".
-* Erkennen der Prozessorarchitektur.
-* Abhängigkeit von sprach getrennten Sprachpaketen.
-* Installation mit [ngen-Unterstützung](ngen-support.md).
+* Registrierung in der angegebenen Visual Studio-Instanz.
+* Installation außerhalb des [Erweiterungsordners](set-install-root.md).
+* Erkennung der Prozessorarchitektur.
+* Abhängigkeit von sprachgetrennten Sprachpaketen.
+* Installation mit [NGEN-Unterstützung](ngen-support.md).
 
 ## <a name="build-an-extension-for-visual-studio-2017"></a>Erstellen einer Erweiterung für Visual Studio 2017
 
-Designer Werkzeuge zum Erstellen des neuen VSIX V3-Manifest-Formats sind in Visual Studio 2017 verfügbar. Weitere Informationen finden Sie [im begleitenden Dokument: Migrieren von Erweiterungs Projekten zu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) , um ausführliche Informationen zur Verwendung der Designer Tools oder zum vornehmen manueller Aktualisierungen für das Projekt und das Manifest für die Entwicklung von VSIX V3-Erweiterungen zu erhalten.
+Designer-Tools zum Erstellen des neuen VSIX v3-Manifestformats sind in Visual Studio 2017 verfügbar. Weitere Informationen zur Verwendung der Designertools oder zum Erstellen manueller Aktualisierungen des Projekts und des Manifests zum Entwickeln von VSIX v3-Erweiterungen finden Sie im Begleitdokument [Gewusst wie: Migrieren von Erweiterbarkeitsprojekten zu Visual Studio 2017.](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 
-## <a name="change-visual-studio-user-data-path"></a>Klima Benutzerdaten Pfad von Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Änderung: Visual Studio-Benutzerdatenpfad
 
-Bisher konnte auf jedem Computer nur eine Installation der einzelnen Hauptversionen von Visual Studio vorhanden sein. Zur Unterstützung paralleler Installationen von Visual Studio 2017 sind möglicherweise mehrere Benutzerdaten Pfade für Visual Studio auf dem Computer des Benutzers vorhanden.
+Bisher konnte nur eine Installation jeder Hauptversion von Visual Studio auf jedem Computer vorhanden sein. Um nebeneinander installierte Visual Studio 2017 zu unterstützen, sind möglicherweise mehrere Benutzerdatenpfade für Visual Studio auf dem Computer des Benutzers vorhanden.
 
-Code, der innerhalb des Visual Studio-Prozesses ausgeführt wird, sollte aktualisiert werden, damit der Visual Studio-Einstellungs-Manager verwendet Code, der außerhalb des Visual Studio-Prozesses ausgeführt wird, kann den Benutzer Pfad einer bestimmten Visual Studio-Installation ermitteln, [indem Sie die Anleitungen hier befolgen](locating-visual-studio.md).
+Code, der im Visual Studio-Prozess ausgeführt wird, sollte aktualisiert werden, um den Visual Studio-Einstellungs-Manager zu verwenden. Code, der außerhalb des Visual Studio-Prozesses ausgeführt wird, kann den Benutzerpfad einer bestimmten Visual Studio-Installation finden, indem Sie [den Anweisungen hier](locating-visual-studio.md)folgen.
 
-## <a name="change-global-assembly-cache-gac"></a>Klima Globaler Assemblycache (GAC)
+## <a name="change-global-assembly-cache-gac"></a>Änderung: Globaler Assemblycache (GAC)
 
-Die meisten Visual Studio-Kernassemblys werden nicht mehr im GAC installiert. Die folgenden Änderungen wurden vorgenommen, damit Code, der in Visual Studio ausgeführt wird, weiterhin erforderliche Assemblys zur Laufzeit finden kann.
+Die meisten Visual Studio-Kernassemblys werden nicht mehr im GAC installiert. Die folgenden Änderungen wurden vorgenommen, damit Code, der im Visual Studio-Prozess ausgeführt wird, zur Laufzeit weiterhin erforderliche Assemblys finden kann.
 
 > [!NOTE]
-> [INSTALLDIR] unten bezieht sich auf das Installations Stammverzeichnis von Visual Studio. *Vsixinstaller. exe* füllt dies automatisch, aber um benutzerdefinierten Bereitstellungs Code zu schreiben, lesen Sie suchen von [Visual Studio](locating-visual-studio.md).
+> [INSTALLDIR] unten bezieht sich auf das Installationsstammverzeichnis von Visual Studio. *VSIXInstaller.exe* wird dies automatisch auffüllen, aber um benutzerdefinierten Bereitstellungscode zu schreiben, lesen Sie bitte [Visual Studio .](locating-visual-studio.md)
 
 * Assemblys, die nur im GAC installiert wurden:
 
-  Diese Assemblys sind nun unter <em>[INSTALLDIR]\*\Common7\IDE, * [INSTALLDIR] \common7\ide\publicassemblies</em> oder *[INSTALLDIR] \common7\ide\privateassemblys*installiert. Diese Ordner sind Teil der Überprüfungs Pfade des Visual Studio-Prozesses.
+  Diese Assemblys werden jetzt unter <em>\*[INSTALLDIR]-Common7-IDE , *[INSTALLDIR]-Common7-IDE-PublicAssemblies</em> oder *[INSTALLDIR]-Common7-IDE-PrivateAssemblies*installiert. Diese Ordner sind Teil der Suchpfade des Visual Studio-Prozesses.
 
-* Assemblys, die in einen nicht zu testende Pfad und in den GAC installiert wurden:
+* Assemblys, die in einem Nicht-Sondierungspfad und im GAC installiert wurden:
 
   * Die Kopie im GAC wurde aus dem Setup entfernt.
-  * Eine *pkgdef* -Datei wurde hinzugefügt, um einen Code Basiseintrag für die Assembly anzugeben.
+  * Eine *.pkgdef-Datei* wurde hinzugefügt, um einen Codebasiseintrag für die Assembly anzugeben.
 
     Beispiel:
 
@@ -80,42 +80,42 @@ Die meisten Visual Studio-Kernassemblys werden nicht mehr im GAC installiert. Di
     "version"=15.0.0.0
     ```
 
-    Zur Laufzeit führt das Visual Studio pkgdef-Subsystem diese Einträge in der Lauf Zeit Konfigurationsdatei des Visual Studio-Prozesses (unter *[vsappdata] \devenv.exe.config*) als [`<codeBase>`](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Elemente zusammen. Dies ist die empfohlene Vorgehensweise, damit der Visual Studio-Prozess Ihre Assembly finden kann, da Sie das Durchsuchen von Suchpfaden vermeidet.
+    Zur Laufzeit führt das Visual Studio-Subsystem pkgdef diese Einträge in der Laufzeitkonfigurationsdatei des Visual Studio-Prozesses (unter *[VSAPPDATA]-devenv.exe.config*) als [`<codeBase>`](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Elemente zusammen. Dies ist die empfohlene Methode, damit der Visual Studio-Prozess Ihre Assembly finden kann, da die Suche nach Suchpfaden vermieden wird.
 
-### <a name="reacting-to-this-breaking-change"></a>Reaktion auf dieses Breaking Change
+### <a name="reacting-to-this-breaking-change"></a>Reaktion auf diesen brechenden Wandel
 
-* Wenn die Erweiterung innerhalb des Visual Studio-Prozesses ausgeführt wird:
+* Wenn Ihre Erweiterung im Visual Studio-Prozess ausgeführt wird:
 
-  * Der Code wird in der Lage sein, Visual Studio-Kernassemblys zu finden.
-  * Verwenden Sie ggf. eine *pkgdef* -Datei, um einen Pfad zu den Assemblys anzugeben.
+  * Ihr Code kann Visual Studio-Kernassemblys finden.
+  * Erwägen Sie die Verwendung einer *.pkgdef-Datei,* um bei Bedarf einen Pfad zu Ihren Assemblys anzugeben.
 
 * Wenn Ihre Erweiterung außerhalb des Visual Studio-Prozesses ausgeführt wird:
 
-  Sie sollten Visual Studio-Kernassemblys unter <em>[INSTALLDIR]\*\Common7\IDE, * [INSTALLDIR] \common7\ide\publicassemblies</em> oder *[INSTALLDIR] \common7\ide\privateassemblys* mithilfe der Konfigurationsdatei oder Assembly suchen. Konflikt Löser.
+  Erwägen Sie, Visual Studio-Kernassemblys unter <em>[INSTALLDIR]-Common7-IDE\*, *[INSTALLDIR]-Common7-IDE-PublicAssemblies</em> oder *[INSTALLDIR]* zu suchen, die eine Konfigurationsdatei oder einen Assembly-Resolver verwenden.
 
-## <a name="change-reduce-registry-impact"></a>Klima Verringerung der Auswirkung der Registrierung
+## <a name="change-reduce-registry-impact"></a>Änderung: Reduzieren der Auswirkungen auf die Registrierung
 
-### <a name="global-com-registration"></a>Globale com-Registrierung
+### <a name="global-com-registration"></a>Globale COM-Registrierung
 
-* Zuvor hat Visual Studio viele Registrierungsschlüssel in den HKEY_CLASSES_ROOT-und HKEY_LOCAL_MACHINE-Strukturen installiert, um die Native COM-Registrierung zu unterstützen. Um diese Auswirkung auszuschließen, verwendet Visual Studio jetzt die [Registrierungs freie Aktivierung für COM-Komponenten](https://msdn.microsoft.com/library/ms973913.aspx).
-* Folglich werden die meisten TLB/OLB/dll-Dateien unter% Program Files (x86)% \ Common Files\Microsoft shared\msenv nicht mehr standardmäßig von Visual Studio installiert. Diese Dateien werden jetzt unter [INSTALLDIR] mit den entsprechenden Registrierungs freien com-Manifesten installiert, die vom Visual Studio-Host Prozess verwendet werden.
-* Folglich findet externer Code, der auf der globalen com-Registrierung für Visual Studio-com-Schnittstellen basiert, diese Registrierungen nicht mehr. Im Code, der in Visual Studio ausgeführt wird, wird kein Unterschied angezeigt.
+* Zuvor hat Visual Studio viele Registrierungsschlüssel in den HKEY_CLASSES_ROOT installiert und HKEY_LOCAL_MACHINE Aufarbeitungen zur Unterstützung der systemeigenen COM-Registrierung. Um diese Auswirkungen zu vermeiden, verwendet Visual Studio jetzt [registrierungsfreie Aktivierung für COM-Komponenten](https://msdn.microsoft.com/library/ms973913.aspx).
+* Daher werden die meisten TLB /OLB / DLL-Dateien unter %ProgramFiles(x86)%-Common Files-Microsoft Shared-MSEnv standardmäßig nicht mehr von Visual Studio installiert. Diese Dateien werden nun unter [INSTALLDIR] mit entsprechenden registrierungsfreien COM-Manifesten installiert, die vom Visual Studio-Hostprozess verwendet werden.
+* Daher findet externer Code, der auf der globalen COM-Registrierung für Visual Studio COM-Schnittstellen basiert, diese Registrierungen nicht mehr. Code, der im Visual Studio-Prozess ausgeführt wird, sieht keinen Unterschied.
 
 ### <a name="visual-studio-registry"></a>Visual Studio-Registrierung
 
-* Zuvor hat Visual Studio viele Registrierungsschlüssel in den **HKEY_LOCAL_MACHINE** -und **HKEY_CURRENT_USER** -Strukturen des Systems unter einem Visual Studio-spezifischen Schlüssel installiert:
+* Zuvor hat Visual Studio viele Registrierungsschlüssel in den **HKEY_LOCAL_MACHINE** und **HKEY_CURRENT_USER-Strukturen** des Systems unter einem Visual Studio-spezifischen Schlüssel installiert:
 
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}** : Registrierungsschlüssel, die von MSI-Installationsprogrammen und Erweiterungen pro Computer erstellt werden.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}** : Registrierungsschlüssel, die von Visual Studio erstellt wurden, um benutzerspezifische Einstellungen zu speichern.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Eine Kopie des obigen Visual Studio-HKLM-Schlüssels sowie die Registrierungsschlüssel, die von *pkgdef* -Dateien durch Erweiterungen zusammengeführt werden.
+  * **HKLM-Software-Microsoft-VisualStudio-Version:\{** Registrierungsschlüssel, die von MSI-Installationsprogrammen und Pro-Computer-Erweiterungen erstellt wurden.
+  * **HKCU-Software-Microsoft-VisualStudio-Version:\{** Registrierungsschlüssel, die von Visual Studio zum Speichern benutzerspezifischer Einstellungen erstellt wurden.
+  * **HKCU-Software-Microsoft-VisualStudio-Version\{_Config**: Eine Kopie des Visual Studio HKLM-Schlüssels oben sowie die Registrierungsschlüssel, die von *.pkgdef-Dateien* durch Erweiterungen zusammengeführt werden.
 
-* Um die Auswirkungen auf die Registrierung zu reduzieren, verwendet Visual Studio jetzt die [regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) -Funktion, um Registrierungsschlüssel in einer privaten Binärdatei unter *[vsappdata] \privateregistry.bin*zu speichern. In der Systemregistrierung verbleiben nur eine sehr geringe Anzahl von Visual Studio-spezifischen Schlüsseln.
-* Vorhandener Code, der innerhalb des Visual Studio-Prozesses ausgeführt wird, ist nicht betroffen. Visual Studio leitet alle Registrierungs Vorgänge unter dem Visual Studio-spezifischen HKCU-Schlüssel in die private Registrierung um. Beim Lesen und Schreiben in andere Registrierungs Speicherorte wird die Systemregistrierung weiterhin verwendet.
-* Für Visual Studio-Registrierungseinträge muss externer Code geladen und aus dieser Datei gelesen werden.
+* Um die Auswirkungen auf die Registrierung zu reduzieren, verwendet Visual Studio jetzt die [RegLoadAppKey-Funktion,](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) um Registrierungsschlüssel in einer privaten Binärdatei unter *[VSAPPDATA] zu speichern.* Nur eine sehr kleine Anzahl von Visual Studio-spezifischen Schlüsseln verbleibt in der Systemregistrierung.
+* Vorhandener Code, der im Visual Studio-Prozess ausgeführt wird, hat keine Auswirkungen darauf. Visual Studio leitet alle Registrierungsvorgänge unter dem HKCU Visual Studio-spezifischen Schlüssel an die private Registrierung um. Das Lesen und Schreiben an andere Registrierungsspeicherorte wird weiterhin in der Systemregistrierung verwendet.
+* Externer Code muss diese Datei für Visual Studio-Registrierungseinträge laden und aus dieser Datei lesen.
 
-### <a name="react-to-this-breaking-change"></a>Auf diese Breaking Change reagieren
+### <a name="react-to-this-breaking-change"></a>Reagieren Sie auf diese brechende Veränderung
 
-* Externer Code sollte konvertiert werden, um auch die Aktivierung der Registrierungskosten für COM-Komponenten zu verwenden.
-* Externe Komponenten finden den Visual Studio-Speicherort, [indem Sie die Anleitungen hier befolgen](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
+* Externer Code sollte konvertiert werden, um die registrierungsfreie Aktivierung auch für COM-Komponenten zu verwenden.
+* Externe Komponenten können den Visual Studio-Speicherort finden, indem Sie [die Anleitung hier befolgen.](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)
 * Es wird empfohlen, dass externe Komponenten den [externen Einstellungs-Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) verwenden, anstatt direkt in Visual Studio-Registrierungsschlüssel zu lesen/schreiben.
-* Überprüfen Sie, ob die von ihrer Erweiterung verwendeten Komponenten möglicherweise eine andere Methode für die Registrierung implementiert haben. Debugger-Erweiterungen können z. b. die neue [msvsmon JSON-Datei-com-Registrierung](migrate-debugger-COM-registration.md)nutzen.
+* Überprüfen Sie, ob die Komponenten, die Ihre Erweiterung verwendet, möglicherweise eine andere Technik für die Registrierung implementiert haben. Beispielsweise können Debuggererweiterungen die neue [MSvsmon JSON-Datei COM-Registrierung](migrate-debugger-COM-registration.md)nutzen.

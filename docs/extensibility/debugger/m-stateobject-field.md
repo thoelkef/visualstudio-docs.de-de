@@ -1,30 +1,30 @@
 ---
-title: M_stateObject-Feld | Microsoft-Dokumentation
+title: m_stateObject Feld | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95947a1367ea1ddf4aa88689f731971d5c7d0a6c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330833"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738371"
 ---
-# <a name="mstateobject-field"></a>M_stateObject-Feld
-Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.
+# <a name="m_stateobject-field"></a>m_stateObject Feld
+Ein Objekt, das Daten darstellt, die von der Aktion verwendet werden.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
+ **Baugruppe:** mscorlib (in *mscorlib.dll*)
 
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
+ Da Sie über .NET Framework nicht auf dieses interne Element zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,8 +32,8 @@ Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.
 .field assembly object m_stateObject
 ```
 
-## <a name="remarks"></a>Hinweise
- Dies ist die `state` Parameter in der <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor. Es ist auch das dahinter liegende Feld für die <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Eigenschaft.
+## <a name="remarks"></a>Bemerkungen
+ Dies `state` ist der <xref:System.Threading.Tasks.Task.%23ctor%2A> Parameter im Konstruktor. Es ist auch das <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Sicherungsfeld für die Eigenschaft.
 
-## <a name="see-also"></a>Siehe auch
-- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
