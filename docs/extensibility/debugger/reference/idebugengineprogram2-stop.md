@@ -1,5 +1,5 @@
 ---
-title: 'IDebugEngineProgram2:: stoppt | Microsoft-Dokumentation'
+title: IDebugEngineProgram2::Stopp | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d7213dcd2484ba69caf51fdc21f52bba5bb3361
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506447"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730483"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 Beendet alle Threads, die in diesem Programm ausgeführt werden.
@@ -41,9 +41,9 @@ int Stop();
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird aufgerufen, wenn dieses Programm in einer Umgebung mit mehreren Programmen deentschlgt wird. Wenn ein anhalteereignis von einem anderen Programm empfangen wird, wird diese Methode für dieses Programm aufgerufen. Die Implementierung dieser Methode muss asynchron sein. Das heißt, dass nicht alle Threads beendet werden müssen, bevor diese Methode zurückgegeben wird. Die Implementierung dieser Methode kann so einfach wie das Aufrufen der [causetbreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) -Methode für dieses Programm sein.
+ Diese Methode wird aufgerufen, wenn dieses Programm in einer Umgebung mit mehreren Programmen gedebuggen wird. Wenn ein Stoppereignis von einem anderen Programm empfangen wird, wird diese Methode in diesem Programm aufgerufen. Die Implementierung dieser Methode sollte asynchron sein. Das heißt, nicht alle Threads sollten angehalten werden müssen, bevor diese Methode zurückgegeben wird. Die Implementierung dieser Methode kann so einfach sein wie das Aufrufen der [CauseBreak-Methode](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) für dieses Programm.
 
- Implementierer sollten eine [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) senden, wenn das Programm beendet wird.
+ Implementierer sollten ein [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) senden, wenn das Programm beendet wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

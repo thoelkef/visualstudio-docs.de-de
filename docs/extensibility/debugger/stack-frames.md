@@ -1,5 +1,5 @@
 ---
-title: Stapelrahmen | Microsoft-Dokumentation
+title: Stapel Rahmen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de3a0267d366f926fa5705c7455b237cafe4820a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348508"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712842"
 ---
 # <a name="stack-frames"></a>Stapelrahmen
-Architektur der Debugger eine *Stapelrahmen*:
+In der Debuggerarchitektur wird ein *Stackframe*:
 
-- Ist eine Abstraktion eines Stapels, der den Ausführungskontext eines Threads bereitstellt. Ein Thread wird immer innerhalb einer Funktion ausgeführt. Ein Stapelrahmen werden die lokalen Variablen der Funktion und die Argumente, enthält. Um mit Visual Studio zu debuggen, muss die Sprache oder Umgebung, die im Debugmodus befindlichen Stapelrahmen unterstützen.
+- Eine Abstraktion eines Stapels, die den Ausführungskontext eines Threads bereitstellt. Ein Thread wird immer innerhalb einer Funktion ausgeführt. Ein Stapelrahmen enthält die lokalen Variablen der Funktion und die Argumente dazu. Zum Debuggen mit Visual Studio muss die zu debuggende Sprache oder Umgebung Stackframes unterstützen.
 
-- Kann sowohl zu identifizieren und selbst beschreiben und können den zugeordneten Thread zurück. Ein Stapelrahmen kann der Codekontext, der den aktuellen Anweisungszeiger und die zugehörige Dokumentation darstellt und ausdruckskontexten-Auswertung zurückgegeben werden.
+- Kann sich selbst identifizieren und beschreiben und den zugeordneten Thread zurückgeben. Ein Stapelrahmen kann auch den Codekontext zurückgeben, der den aktuellen Anweisungszeiger und die zugehörigen Dokumentations- und Ausdrucksauswertungskontexte darstellt.
 
-- Verfügt über Eigenschaften, die den Namen, Typ und Wert der lokalen Variablen und Argumente, die beschreiben, und die in verschiedene IDE-Debug-Fenster angezeigt werden.
+- Verfügt über Eigenschaften, die den Namen, typ und den Wert lokaler Variablen und Argumente beschreiben und in verschiedenen IDE-Debugfenstern angezeigt werden.
 
-- Wird durch dargestellt eine [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) Schnittstelle, die in der Regel von einem Debug-Engine (DE) oder den virtuellen Computer als Folge eines Threads erstellt.
+- Wird durch eine [IDebugStackFrame2-Schnittstelle](../../extensibility/debugger/reference/idebugstackframe2.md) dargestellt, die in der Regel von einem Debugmodul (DE) oder einer virtuellen Maschine als Folge der Ausführung eines Threads erstellt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)
 - [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)
-- [Debug-engine](../../extensibility/debugger/debug-engine.md)
+- [Debug-Engine](../../extensibility/debugger/debug-engine.md)
 - [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

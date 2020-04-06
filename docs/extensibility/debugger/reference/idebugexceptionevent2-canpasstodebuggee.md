@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee | Microsoft-Dokumentation
+title: IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c27ac3239fd6621a824f626a141a357241b03b1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab57f599214cfbd7a1f5fcca15fa104b072d1d48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310575"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729870"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-Bestimmt, ob die Debug-Engine (DE) die Möglichkeit unterstützt, übergeben diese Ausnahme an die Anwendung gedebuggt wird, wenn die Ausführung fortsetzt.
+Legt fest, ob das Debugmodul (DE) die Option unterstützt, diese Ausnahme an das zu debuggende Programm zu übergeben, wenn die Ausführung fortgesetzt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,11 +38,11 @@ int CanPassToDebuggee();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt `S_OK` (die Ausnahme kann an das Programm übergeben werden) oder `S_FALSE` (die Ausnahme kann nicht auf übergeben werden).
+ Gibt `S_OK` entweder (die Ausnahme kann an `S_FALSE` das Programm übergeben werden) oder (die Ausnahme kann nicht übergeben werden).
 
-## <a name="remarks"></a>Hinweise
- Die DE muss es sich um eine Standardaktion für die Übergabe an die zu debuggende Komponente verfügen. Die IDE wird möglicherweise die [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) Ereignis, und rufen die [Weiter](../../../extensibility/debugger/reference/idebugprocess3-continue.md) -Methode ohne Aufruf der `CanPassToDebuggee` Methode. Aus diesem Grund müssen die DE Standardfall übergeben Sie die Ausnahme auf, oder nicht.
+## <a name="remarks"></a>Bemerkungen
+ Die DE muss über eine Standardaktion für die Übergabe an das Debuggee verfügen. Die IDE kann das [IDebugExceptionEvent2-Ereignis](../../../extensibility/debugger/reference/idebugexceptionevent2.md) empfangen und `CanPassToDebuggee` die [Continue-Methode](../../../extensibility/debugger/reference/idebugprocess3-continue.md) aufrufen, ohne die Methode aufzurufen. Daher sollte die DE eine Standard-Groß-/Kleinschreibung für die Weitergabe der Ausnahme haben oder nicht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

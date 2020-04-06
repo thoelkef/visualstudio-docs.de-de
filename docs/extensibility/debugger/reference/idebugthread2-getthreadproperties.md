@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties | Microsoft-Dokumentation
+title: IDebugThread2::GetThreadEigenschaften | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a325e8798f54d8ec78ad0ec5318e9162b16774b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320113"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718692"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
-Ruft die Eigenschaften, die diesen Thread zu beschreiben.
+Ruft die Eigenschaften ab, die diesen Thread beschreiben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,19 +43,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) -Enumeration, der bestimmt, welche Felder der `ptp` in ausgefüllt werden.
+[in] Eine Kombination von Flags aus der THREADPROPERTY_FIELDS-Enumeration, die bestimmt, welche [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) `ptp` Felder ausgefüllt werden sollen.
 
 `ptp`\
-[in, out] Ein [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) -Struktur, die mit den Eigenschaften des Threads gefüllt wird.
+[in, out] Eine [THREADPROPERTIES-Struktur,](../../../extensibility/debugger/reference/threadproperties.md) die mit den Eigenschaften des Threads ausgefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Die Informationen, die von dieser Methode zurückgegebene werden in der Regel angezeigt, der **Threads** Debug-Fenster.
+## <a name="remarks"></a>Bemerkungen
+Die von dieser Methode zurückgegebenen Informationen werden in der Regel im **Debugfenster Threads** angezeigt.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CProgram` Objekt, das implementiert die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese `CProgram` Methode für ein einfaches Objekt implementiert wird, das die [IDebugThread2-Schnittstelle](../../../extensibility/debugger/reference/idebugthread2.md) implementiert.
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
@@ -93,7 +93,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

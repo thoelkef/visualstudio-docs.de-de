@@ -1,27 +1,27 @@
 ---
-title: IDebugGenericParamField::GetOwner | Microsoft-Dokumentation
+title: IDebugGenericParamField::GetOwner | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9752dfa90250bd427cb7a3d18e6e73775f25efb9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 040b8cf21cda1a0634c1c423516109b1ef214f01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330292"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727876"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
-Ruft den Typ oder Methode Besitzer dieses generischen Parameters ab.
+Ruft den Typ oder Methodenbesitzer dieses generischen Parameters ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,13 +39,13 @@ int GetOwner(
 
 ## <a name="parameters"></a>Parameter
 `ppOwner`\
-[out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das dieser generischen Parameter besitzt.
+[out] Gibt das [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) zurück, das diesen generischen Parameter besitzt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugGenericParamFieldType-Objekt** implementiert wird, das die [IDebugGenericParamField-Schnittstelle](../../../extensibility/debugger/reference/idebuggenericparamfield.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)
@@ -95,5 +95,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

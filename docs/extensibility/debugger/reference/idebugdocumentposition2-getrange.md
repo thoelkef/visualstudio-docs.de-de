@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetRange | Microsoft-Dokumentation
+title: IDebugDocumentPosition2::GetRange | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c67828e2d9e1cb0c75d272b57e7c6b610a84fdd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a923691afdfe145931ab31d0e9bbc6142e7c8d1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326469"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731661"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
-Ruft den Bereich für dieses Dokumentposition ab.
+Ruft den Bereich für diese Dokumentposition ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,24 +43,24 @@ int GetRange( 
 
 ## <a name="parameters"></a>Parameter
 `pBegPosition`\
-[in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit die Position gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.
+[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Startposition ausgefüllt wird. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
 
 `pEndPosition`\
-[in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.
+[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Endposition ausgefüllt wird. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- In einen Dokumentposition für einen Positionshaltepunkt angegebene Bereich wird nun für eine Anweisung zu suchen, die tatsächlich beitragen von Code von der Debug-Engine (DE) verwendet. Beachten Sie z. B. folgenden Code:
+## <a name="remarks"></a>Bemerkungen
+ Der in einer Dokumentposition für einen Positionshaltepunkt angegebene Bereich wird von der Debug-Engine (DE) verwendet, um im Voraus nach einer Anweisung zu suchen, die tatsächlich Code beisteuert. Beachten Sie z. B. folgenden Code:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- Zeile 5 unterstützt kein Code vorhanden, das derzeit debuggte Programm. Wenn der Debugger, der den Haltepunkt in Zeile 5 festlegt will die DE, um eine bestimmte Menge für die erste Zeile vorwärts zu suchen, die Code beteiligt sind, würde der Debugger einen Bereich angeben, der weitere Kandidat Zeilen enthält, in denen ein Haltepunkt ordnungsgemäß eingefügt werden kann. Die DE würde dann vorwärts durch diese Zeilen suchen, bis er eine Zeile gefunden, die einen Haltepunkt akzeptieren konnte.
+ Zeile 5 trägt keinen Code zum zu debuggenden Programm bei. Wenn der Debugger, der den Haltepunkt in Zeile 5 festlegt, möchte, dass die DE einen bestimmten Betrag für die erste Zeile, die Code beisteuert, vorwärts sucht, gibt der Debugger einen Bereich an, der zusätzliche Kandidatenzeilen enthält, in denen ein Haltepunkt ordnungsgemäß platziert werden kann. Die DE durchsuchte dann diese Zeilen, bis sie eine Linie fand, die einen Haltepunkt akzeptieren konnte.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

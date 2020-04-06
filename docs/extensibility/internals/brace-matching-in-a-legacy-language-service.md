@@ -1,56 +1,56 @@
 ---
-title: Zuordnung von geschweiften Klammern in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Brace Matching in einem Legacy-Sprachdienst | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a535fc479fe5cc398d09d7aa9e47a3c91fa97f38
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309185"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709817"
 ---
-# <a name="brace-matching-in-a-legacy-language-service"></a>Zuordnung von geschweiften Klammern in einem legacy-Sprachdienst
-Klammer hilft den Entwickler, die Language-Elemente zu verfolgen, die zusammen, wie z. B. Klammern und geschweifte Klammern enthalten sein müssen. Wenn ein Entwickler eine schließende geschweifte Klammer eingibt, wird der öffnenden geschweiften Klammer hervorgehoben.
+# <a name="brace-matching-in-a-legacy-language-service"></a>Brace-Matching in einem älteren Sprachdienst
+Beim Brace-Abgleich kann der Entwickler Sprachelemente nachverfolgen, die zusammen auftreten müssen, z. B. Klammern und geschweifte Klammern. Wenn ein Entwickler eine schließende geschweifte Klammer eingibt, wird die öffnende geschweifte Klammer hervorgehoben.
 
- Sie können zwei oder drei gemeinsam auftretende Elemente, die sogenannten-Paare und Tripeln zuordnen. Tripeln werden drei gemeinsam auftretende Elemente. Zum Beispiel in c# die `foreach` Anweisung bildet ein Tripel: `foreach()`, `{`, und `}`. Alle drei Elemente werden hervorgehoben, wenn die schließende geschweifte Klammer eingegeben wird.
+ Sie können zwei oder drei mitvorkommende Elemente, die als Paare und Triples bezeichnet werden, übereinstimmen. Triples sind Sätze von drei gemeinsam vorkommenden Elementen. `foreach` Die Anweisung bildet z. B. in `foreach()` `{`C' `}`ein Triple: , , und . Alle drei Elemente werden hervorgehoben, wenn die schließende geschweifte Klammer eingegeben wird.
 
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren der Zuordnung von geschweiften Klammern zu suchen, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen, die passende Klammern](../../extensibility/walkthrough-displaying-matching-braces.md).
+ Ältere Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Möglichkeit zum Implementieren von Sprachdienstfunktionen besteht darin, MEF-Erweiterungen zu verwenden. Weitere Informationen zur neuen Möglichkeit zum Implementieren von Klammerabgleich finden Sie unter [Walkthrough: Passende geschweifte Klammern](../../extensibility/walkthrough-displaying-matching-braces.md)anzeigen .
 
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
+> Es wird empfohlen, die neue Editor-API so schnell wie möglich zu verwenden. Dadurch wird die Leistung Ihres Sprachdienstes verbessert und Sie können die neuen Editorfunktionen nutzen.
 
- Die <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasse unterstützt beide-Paare und mit Tripeln der <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> und <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> Methoden.
+ Die <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasse unterstützt sowohl Paare <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> als <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> auch Triples mit den Methoden.
 
 ## <a name="implementation"></a>Implementierung
- Identifizieren alle übereinstimmenden Elemente in der Sprache, und suchen Sie dann auf alle übereinstimmenden Paare muss der Sprachdienst. Dies erfolgt in der Regel durch die Implementierung <xref:Microsoft.VisualStudio.Package.IScanner> erkennen Sie eine passende Sprache, und klicken Sie dann mit der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode, um die Elemente übereinstimmen.
+ Der Sprachdienst muss alle übereinstimmenden Elemente in der Sprache identifizieren und dann alle übereinstimmenden Paare suchen. Dies wird in <xref:Microsoft.VisualStudio.Package.IScanner> der Regel durch Implementieren <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> zum Erkennen einer übereinstimmenden Sprache und anschließende Verwendung der Methode zum Abgleichen der Elemente erreicht.
 
- Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methodenaufrufe für die Überprüfung, um die Zeile mit Token zu versehen und das Token vor der Einfügemarke zurückzugeben. Die Überprüfung gibt an, dass ein Paar der Language-Element gefunden wurde, indem Sie token Trigger Wert <xref:Microsoft.VisualStudio.Package.TokenTriggers> auf das aktuelle Token. Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> -Methode, die wiederum ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> -Methode mit der Analyse-Grund-Wert des <xref:Microsoft.VisualStudio.Package.ParseReason> zum Suchen des Elements der entsprechenden Sprache. Wenn das entsprechende Language-Element gefunden wird, werden beide Elemente hervorgehoben.
+ Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methode ruft den Scanner auf, um die Leitung zu tokenisieren und das Token kurz vor der Einserseinung zurückzugeben. Der Scanner gibt an, dass ein Sprachelementpaar gefunden <xref:Microsoft.VisualStudio.Package.TokenTriggers> wurde, indem ein Token-Triggerwert von für das aktuelle Token gesetzt wurde. Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methode <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> ruft die Methode <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> auf, die wiederum die <xref:Microsoft.VisualStudio.Package.ParseReason> Methode mit dem Wert "Analysegrund" aufruft, um das passende Sprachelement zu suchen. Wenn das passende Sprachelement gefunden wird, werden beide Elemente hervorgehoben.
 
- Eine vollständige Beschreibung der wie eine geschweifte Klammer eingeben löst die geschweifte Klammer hervorheben, finden Sie unter den *Beispiel Analysevorgang* Abschnitt des Artikels [Legacy-sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+ Eine vollständige Beschreibung, wie die Eingabe einer geschweiften Klammer die Hervorhebung der geschweiften Klammern auslöst, finden Sie im Abschnitt *Beispielanalyseoperation* im Artikel [Legacy language service parser and scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
-## <a name="enable-support-for-brace-matching"></a>Aktivieren der Unterstützung für die Erkennung von zugehörigen Klammern
- Die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Attributsatz kann die **MatchBraces**, **MatchBracesAtCaret**, und **ShowMatchingBrace** Registrierungseinträge, die die entsprechenden Eigenschaften festgelegt von der <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Language-Einstellung-Eigenschaften können auch vom Benutzer festgelegt werden.
+## <a name="enable-support-for-brace-matching"></a>Unterstützung für Klammerabgleich aktivieren
+ Das <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Attribut kann die Registrierungseinträge **MatchBraces**, **MatchBracesAtCaret**und **ShowMatchingBrace** festlegen, die die entsprechenden Eigenschaften der <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse festlegen. Spracheinstellungseigenschaften können auch vom Benutzer festgelegt werden.
 
-|Registrierungseintrag|Eigenschaft|Beschreibung|
+|Registrierungseintrag|Eigenschaft|BESCHREIBUNG|
 |--------------------|--------------|-----------------|
-|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Ermöglicht das zugehörige Klammer.|
-|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Klammer ermöglicht, als die Einfügemarke verschoben wird.|
-|ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Hebt die übereinstimmende Klammer hervor.|
+|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Aktiviert den Korsettab.|
+|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Aktiviert den Korsettab, wenn sich die Einserrütze bewegt.|
+|ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Hebt die zugehörige Klammer hervor.|
 
-## <a name="match-conditional-statements"></a>Bedingte Anweisungen entspricht
- Sie können bedingte Anweisungen, wie z. B. zuordnen `if`, `else if`, und `else`, oder `#if`, `#elif`, `#else`, `#endif`, auf die gleiche Weise als Trennzeichen. Sie können eine Unterklasse der <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasse, und geben Sie eine Methode, die Text hinzufügen kann und die Trennzeichen, die das interne Array von übereinstimmenden Elementen umfasst.
+## <a name="match-conditional-statements"></a>Abgleichen bedingter Anweisungen
+ Sie können bedingte Anweisungen `if`wie `else if`, `else`und `#if` `#elif`, `#else` `#endif`oder , , , , auf die gleiche Weise wie übereinstimmende Trennzeichen abgleichen. Sie können die <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasse unterklassen und eine Methode bereitstellen, die dem internen Array übereinstimmender Elemente Textspannen sowie Trennzeichen hinzufügen kann.
 
-## <a name="set-the-trigger"></a>Legen Sie den trigger
- Das folgende Beispiel zeigt, wie Sie übereinstimmende Klammern, geschweiften und eckigen Klammern und den Trigger für die sie festlegen, in die Überprüfung zu ermitteln. Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse den Trigger erkennt und ruft der Parser, um das entsprechende Paar zu finden (finden Sie unter der *Auffinden der Übereinstimmung* Abschnitt in diesem Artikel). In diesem Beispiel ist nur zur Veranschaulichung. Es wird davon ausgegangen, dass Ihre Überprüfung eine Methode enthält `GetNextToken` identifiziert und gibt die Token von einer Textzeile zurück.
+## <a name="set-the-trigger"></a>Festlegen des Triggers
+ Das folgende Beispiel zeigt, wie übereinstimmende Klammern, geschweifte Klammern und quadratische Klammern erkannt und der Auslöser dafür im Scanner gesetzt werden. Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methode <xref:Microsoft.VisualStudio.Package.Source> für die Klasse erkennt den Trigger und ruft den Parser auf, um das passende Paar zu finden (siehe Abschnitt *Suchen der Übereinstimmung* in diesem Artikel). Dieses Beispiel dient nur zur Veranschaulichung. Es wird davon ausgegangen, `GetNextToken` dass Ihr Scanner eine Methode enthält, die Token aus einer Textzeile identifiziert und zurückgibt.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -84,8 +84,8 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="match-the-braces"></a>Entsprechen Sie die geschweiften Klammern
- Hier ist ein vereinfachtes Beispiel für den Abgleich der Sprachelemente `{ }`, `( )`, und `[ ]`, und das Hinzufügen zu ihren Spannen der <xref:Microsoft.VisualStudio.Package.AuthoringSink> Objekt. Dieser Ansatz ist nicht die empfohlene Ansatz zum Analysieren von Quellcode; Es ist nur zur Veranschaulichung.
+## <a name="match-the-braces"></a>Passen Sie die Geschweifklammern
+ Hier ist ein vereinfachtes Beispiel `{ }` `( )`für `[ ]`das Abgleichen der Sprachelemente , und , und das Hinzufügen ihrer Spannen zum <xref:Microsoft.VisualStudio.Package.AuthoringSink> Objekt. Dieser Ansatz ist kein empfohlener Ansatz zum Analysieren von Quellcode. es dient nur zur Veranschaulichung.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -135,6 +135,6 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)
-- [Ältere sprachdienstparser und -Überprüfung](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Legacy-Sprachdienstfunktionen](../../extensibility/internals/legacy-language-service-features1.md)
+- [Legacy-Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
