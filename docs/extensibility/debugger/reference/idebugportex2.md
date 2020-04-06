@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2 | Microsoft-Dokumentation
+title: IDebugPortEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2 interface
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bed6cd047af4ba57a1880d87e30a990dcf83efac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5789681b0da70f46dadac1e29d0d6bb9dc905d1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340432"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724998"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
-Diese Schnittstelle kann die Sitzung, die für das Debuggen von Manager (SDM)-Steuerelement, Programme und Prozesse, die auf einem Port ausgeführt wird.
+Mit dieser Schnittstelle kann der Session-Debug-Manager (SDM) die Programme und Prozesse steuern, die auf einem Port ausgeführt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,35 +29,35 @@ IDebugPortEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle für das gleiche Objekt, das implementiert [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md).
+ Ein benutzerdefinierter Portlieferant implementiert diese Schnittstelle für dasselbe Objekt, das [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)implementiert.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die SDM-Aufrufe [QueryInterface](/cpp/atl/queryinterface) auf die `IDebugPort2` Schnittstelle, um diese Schnittstelle zu erhalten.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Das SDM ruft [QueryInterface](/cpp/atl/queryinterface) auf der `IDebugPort2` Schnittstelle auf, um diese Schnittstelle zu erhalten.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugPortEx2`.
+ Die folgende Tabelle zeigt `IDebugPortEx2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)|Wird eine ausführbare Datei gestartet.|
-|[ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)|Setzt die Ausführung eines Prozesses.|
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)|Startet eine ausführbare Datei.|
+|[ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)|Setzt die Ausführung eines Prozesses fort.|
 |[CanTerminateProcess](../../../extensibility/debugger/reference/idebugportex2-canterminateprocess.md)|Bestimmt, ob ein Prozess beendet werden kann.|
-|[TerminateProcess](../../../extensibility/debugger/reference/idebugportex2-terminateprocess.md)|Beendet einen Prozess an.|
+|[TerminateProcess](../../../extensibility/debugger/reference/idebugportex2-terminateprocess.md)|Beendet einen Prozess.|
 |[GetPortProcessId](../../../extensibility/debugger/reference/idebugportex2-getportprocessid.md)|Ruft die Prozess-ID des Ports selbst ab.|
-|[GetProgram](../../../extensibility/debugger/reference/idebugportex2-getprogram.md)|Ruft ein Programm mit einem Programm-Knoten verknüpft ist.|
+|[GetProgram](../../../extensibility/debugger/reference/idebugportex2-getprogram.md)|Ruft ein Programm ab, das einem Programmknoten zugeordnet ist.|
 
-## <a name="remarks"></a>Hinweise
- Diese Schnittstelle ist normalerweise privat zwischen den SDM und den benutzerdefinierten Port Lieferanten.
+## <a name="remarks"></a>Bemerkungen
+ Diese Schnittstelle ist normalerweise privat zwischen dem SDM und dem benutzerdefinierten Portanbieter.
 
- Falls gewünscht, kann eine Debug-Engine (DE) für diese Schnittstelle auf Suchen der [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle zu übergeben, um [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) und [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) auf das Programm zu starten. Dies ist nicht zwingend erforderlich, allerdings und eine bereitgestellten Kompatibilitätsrichtlinie möglich, was sie tun, um das Programm für die Anforderung zu starten muss.
+ Falls gewünscht, kann ein Debugmodul (DE) nach dieser Schnittstelle auf der [IDebugPort2-Schnittstelle](../../../extensibility/debugger/reference/idebugport2.md) suchen, die an [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) übergeben wird, und [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) verwenden, um das Programm zu starten. Dies ist jedoch keine Anforderung, und eine DE kann alles tun, was sie tun muss, um das Anforderungsprogramm zu starten.
 
-## <a name="requirements"></a>Anforderungen
- Header: portpriv.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: portpriv.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

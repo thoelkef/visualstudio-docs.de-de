@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2 | Microsoft-Dokumentation
+title: IDebugProgramHost2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2 interface
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7a3222b2fab85657eea1eb0203f8c8da7dd5dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64db456e0c438f8665f122c3cd1b079c2ad1cea1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351216"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722209"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
-Diese Schnittstelle bietet (Process)-Hostinformationen zu einem Programm.
+Diese Schnittstelle stellt Hostinformationen (Prozess) zu einem Programm bereit.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,27 +29,27 @@ IDebugProgramHost2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die Debug-Engine diese Schnittstelle implementiert, auf das gleiche Objekt wie die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle, um Informationen über den Hostprozess bereitzustellen. Dies ist eine optionale Schnittstelle.
+ Das Debugmodul implementiert diese Schnittstelle auf demselben Objekt wie die [IDebugProgram2-Schnittstelle,](../../../extensibility/debugger/reference/idebugprogram2.md) um Informationen über den Hostingprozess bereitzustellen. Dies ist eine optionale Schnittstelle.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf eine `IDebugProgram2` Schnittstelle, um diese Schnittstelle zu erhalten.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf einer `IDebugProgram2` Schnittstelle auf, um diese Schnittstelle zu erhalten.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugProgramHost2`.
+ Die folgende Tabelle zeigt `IDebugProgramHost2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Ruft ab, der Titel, Anzeigename oder der Dateiname des Hostprozesses dieses Programms.|
-|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Ruft die Prozess-ID des Hostprozesses dieses Programms ab.|
-|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Ruft den Namen des Computers, auf der Hostprozess dieses Programms ausgeführt wird.|
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Ruft den Titel, den Anzeigenamen oder den Dateinamen des Hostingprozesses dieses Programms ab.|
+|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Ruft den Prozessbezeichner des Hostingprozesses dieses Programms ab.|
+|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Ruft den Namen des Computers ab, auf dem der Hostingprozess dieses Programms ausgeführt wird.|
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft-Dokumentation
+title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 452cfb7758b110621ead9bc9e7e71f9bfab1e924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338847"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734158"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-Bestimmt, ob die Debugsymbole für das angegebene Modul mit dem angegebenen Bezeichner der Anwendungsdomäne geladen wurden.
+Bestimmt, ob die Debugsymbole für das angegebene Modul geladen werden, das den Anwendungsdomänenbezeichner erhält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,16 +42,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Der Bezeichner für die Anwendungsdomäne.
+[in] Bezeichner für die Anwendungsdomäne.
 
 `guidModule`\
 [in] Eindeutiger Bezeichner für das Modul.
 
 ## <a name="return-value"></a>Rückgabewert
-Gibt zurück, wenn die Debugsymbole geladen sind, `S_OK`ist, andernfalls gibt `S_FALSE`.
+Wenn die Debugsymbole geladen `S_OK`werden, gibt zurück ; Andernfalls kehrt `S_FALSE`zurück .
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(
@@ -73,5 +73,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

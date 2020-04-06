@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_CODE | Microsoft-Dokumentation
+title: BP_RESOLUTION_CODE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_CODE structure
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ffa96e6114ad741e3d3cfd3c19e69af7785af60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbfd16025d338b54bec8e2e4276de62c8d00477e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350624"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737855"
 ---
-# <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-Beschreibt den Speicherort eines Haltepunkts Code.
+# <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
+Beschreibt den Speicherort eines Code-Breakpoints.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,20 +41,20 @@ public struct BP_RESOLUTION_CODE {
 
 ## <a name="members"></a>Member
 `pCodeContext`\
-Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das die Position des Breakpoints im Code identifiziert.
+Das [IDebugCodeContext2-Objekt,](../../../extensibility/debugger/reference/idebugcodecontext2.md) das die Position des Haltepunkts im Code identifiziert.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur ist ein Mitglied der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) -Struktur, die in ein Mitglied zu aktivieren ist die [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) vom zurückgegebene Struktur der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)Methode.
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur ist ein [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Element der BP_RESOLUTION_LOCATION-Struktur, die wiederum ein Member der [BP_RESOLUTION_INFO-Struktur](../../../extensibility/debugger/reference/bp-resolution-info.md) ist, die von der [GetResolutionInfo-Methode](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) zurückgegeben wird.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

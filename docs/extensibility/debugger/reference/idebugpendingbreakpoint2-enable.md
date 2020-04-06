@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Microsoft-Dokumentation
+title: IDebugPendingBreakpoint2::Aktivieren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311681"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725888"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Schaltet den aktivierten Zustand des ausstehenden Haltepunkts.
+Schaltet den aktivierten Status des ausstehenden Haltepunkts um.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,18 +42,18 @@ int Enable(
 
 ## <a name="parameters"></a>Parameter
 `fEnable`\
-[in] Festlegen der zu ungleich Null (`TRUE`) um ein ausstehender Haltepunkt zu aktivieren, oder 0 (null) (`FALSE`) deaktivieren.
+[in] Legen Sie einen`TRUE`Wert ungleich Null ( )`FALSE`fest, um einen ausstehenden Haltepunkt zu aktivieren, oder auf Null ( ) zum Deaktivieren.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
 
-## <a name="remarks"></a>Hinweise
-Wenn ein ausstehender Haltepunkt aktiviert oder deaktiviert ist, werden alle Breakpoints, die von ihm gebunden mit demselben Status festgelegt.
+## <a name="remarks"></a>Bemerkungen
+Wenn ein ausstehender Haltepunkt aktiviert oder deaktiviert ist, werden alle von ihm gebundenen Haltepunkte auf denselben Zustand festgelegt.
 
-Diese Methode kann aufgerufen werden, so oft wie erforderlich, selbst wenn der Haltepunkt bereits aktiviert oder deaktiviert ist.
+Diese Methode kann so oft wie nötig aufgerufen werden, auch wenn der Haltepunkt bereits aktiviert oder deaktiviert ist.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese `CPendingBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugPendingBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) verfügbar macht.
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
@@ -85,5 +85,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

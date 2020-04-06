@@ -1,5 +1,5 @@
 ---
-title: Abrufen von lokalen Werten | Microsoft-Dokumentation
+title: Abrufen lokaler Werte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,36 +7,36 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ce7e8417f0b05375f1285aac24f7abb0cbab6d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75cc530f13de22a994eff70492f340059d2a5839
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319204"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738608"
 ---
-# <a name="get-local-values"></a>Lokale Werte zu erhalten
+# <a name="get-local-values"></a>Lokale Werte abrufen
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Rufen Sie den Wert einer lokalen Visual Studio ruft [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) für diese lokale. In dieser Implementierung der Klasse `CFieldProperty` implementiert die Schnittstelle IDebugProperty2 für jede lokale.
+Um den Wert eines lokalen Ortes abzubekommen, ruft Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) für diesen lokalen Aufpreis auf. In dieser Implementierung `CFieldProperty` implementiert die Klasse die IDebugProperty2-Schnittstelle für jeden lokalen.
 
-Diese Implementierung der `IDebugProperty2::GetPropertyInfo` führt die folgenden Aufgaben:
+Diese Implementierung `IDebugProperty2::GetPropertyInfo` von führt die folgenden Aufgaben aus:
 
-1. Ruft den lokalen Namen, Eigenschaft und Attribute aus der [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) Struktur ausgefüllt, wenn die Klasse instanziiert und initialisiert wurde.
+1. Ruft den Namen, die Eigenschaft und die Attribute des Lokalen aus der [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) Struktur ab, die ausgefüllt wurde, als die Klasse instanziiert und initialisiert wurde.
 
-2. Ruft den lokalen Typ aus der [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt.
+2. Ruft den lokalen Typ aus dem [IDebugField-Objekt](../../extensibility/debugger/reference/idebugfield.md) ab.
 
-3. Ruft den lokalen Wert aus der `IDebugField` Objekt. Dieses Feld gebunden ist, auf die Speicheradresse der lokalen mithilfe der [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) Objekt und der Wert abgerufen wird, aus dem sich ergebenden [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.
+3. Ruft den Wert des `IDebugField` lokalen Objekts ab. Dieses Feld ist mit dem [IDebugBinder-Objekt](../../extensibility/debugger/reference/idebugbinder.md) an den Speicherort des lokalen Feldes gebunden, und der Wert wird aus dem resultierenden [IDebugObject-Objekt](../../extensibility/debugger/reference/idebugobject.md) abgerufen.
 
-4. Gibt alle angeforderte Eigenschaften in einem [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) Struktur.
+4. Gibt alle angeforderten Eigenschaften in einer [DEBUG_PROPERTY_INFO-Struktur](../../extensibility/debugger/reference/debug-property-info.md) zurück.
 
 ## <a name="managed-code"></a>Verwalteter Code
-Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode den lokalen, in verwaltetem Code. Es zeigt auch eine Hilfsmethode, `Field.GetType`, d. h. verwendet, um das Feld vom Typ abzurufen. `Field.GetValue` sehen Sie in [auswerten "lokal"](../../extensibility/debugger/evaluating-locals.md). Die Hilfsfunktion `Field.MapModifiersToAttributes` (nicht dargestellt) einfach konvertiert eines Felds [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) Werte.
+Dieses Beispiel zeigt `IDebugProperty2::GetPropertyInfo` eine Implementierung von für den lokalen Code einer Methode im verwalteten Code. Außerdem wird eine Hilfsfunktion `Field.GetType`angezeigt, die zum Abrufen des Feldtyps verwendet wird. `Field.GetValue`wird unter [Lokale bewerten](../../extensibility/debugger/evaluating-locals.md)angezeigt. Die Hilfsfunktion `Field.MapModifiersToAttributes` (nicht angezeigt) konvertiert einfach die [FIELD_MODIFIERS-Flags](../../extensibility/debugger/reference/field-modifiers.md) eines Felds in [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) Werte.
 
 ```csharp
 namespace EEMC
@@ -175,8 +175,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>Nicht verwalteter code
- Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode den lokalen, in nicht verwaltetem Code. Darüber hinaus wird gezeigt, zwei Hilfsfunktionen, `FieldGetType` und `FieldGetValue` , werden verwendet, um Typ und Wert des Felds zu erhalten. Die `VARIANT`s für den Wert des Felds verwendet werden, und geben Sie als eine `VARIANT` kann eine Vielzahl von Werttypen behandelt. In dieser Implementierung `FieldGetValue` gibt ein [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt, das höher ist auf einen Wert in einem Aufruf konvertiert `FieldGetPrimitiveValue` (wie im [auswerten "lokal"](../../extensibility/debugger/evaluating-locals.md)).
+## <a name="unmanaged-code"></a>Nicht verwalteter Code
+ Dieses Beispiel zeigt `IDebugProperty2::GetPropertyInfo` eine Implementierung von für den lokalen Code einer Methode in nicht verwaltetem Code. Außerdem werden zwei Hilfsfunktionen `FieldGetType` `FieldGetValue` angezeigt, die zum Abrufen des Feldtyps bzw. des Werts verwendet werden. Die `VARIANT`s werden für den Wert und `VARIANT` den Typ des Felds verwendet, da ein eine Vielzahl von Werttypen verarbeiten kann. Gibt in `FieldGetValue` dieser Implementierung ein [IDebugField-Objekt](../../extensibility/debugger/reference/idebugfield.md) zurück, das `FieldGetPrimitiveValue` später in einen Wert in einem Aufruf an konvertiert wird (der unter [Lokale auswerten](../../extensibility/debugger/evaluating-locals.md)angezeigt wird).
 
 ```cpp
 STDMETHODIMP CFieldProperty::GetPropertyInfo(
@@ -438,7 +438,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Beispielimplementierung von lokalen Elementen](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [Abrufen von lokalen Eigenschaften](../../extensibility/debugger/getting-local-properties.md)
-- [Auswertungskontext](../../extensibility/debugger/evaluation-context.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Beispielimplementierung von Locals](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Lokale Eigenschaften abrufen](../../extensibility/debugger/getting-local-properties.md)
+- [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md)

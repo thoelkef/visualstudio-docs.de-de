@@ -1,29 +1,29 @@
 ---
-title: Informationen zu Dateierweiterungen | Microsoft-Dokumentation
+title: Informationen zu Dateinamenerweiterungen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313719"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740344"
 ---
-# <a name="about-file-name-extensions"></a>Informationen zu Dateierweiterungen
-Beim Registrieren einer Dateierweiterung aus einem VSPackage ordnen Sie es mit einer Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dies ist wichtig, wenn mehr als eine Version der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf einem Computer installiert ist.
+# <a name="about-file-name-extensions"></a>Informationen zu Dateinamenerweiterungen
+Wenn Sie eine Dateierweiterung eines VSPackage registrieren, ordnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Sie sie einer Version von zu. Dies ist wichtig, wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mehr als eine Version von auf einem Computer installiert ist.
 
- Dateierweiterungen für VSPackages registriert sind, klicken Sie unter **HKEY_CLASSES_ROOT** Schlüssel mit einem Standardwert, der auf den zugeordneten Programmbezeichner (ProgID) verweist.
+ Dateierweiterungen für VSPackages werden unter **HKEY_CLASSES_ROOT** Schlüssel mit einem Standardwert registriert, der auf den zugeordneten programmatischen Bezeichner (ProgID) verweist.
 
- Das folgende Beispiel zeigt Informationen zur Registrierung der *.vcproj* Dateierweiterung:
+ Das folgende Beispiel zeigt Registrierungsinformationen für die *Dateierweiterung .vcproj:*
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- Mit verknüpften Dateien [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] müssen mit versionsverwaltung durch das ProgID, z. B. `VisualStudio.vcproj.8.0`. Eine ProgID mit Versionsangabe ermöglicht Seite-an-Seite-Installationen des Produkts zu Zuordnungen zwischen Produktversionen von Dateierweiterungen zu verwalten. Eine bestimmte Version ProgID auch können Sie standard-Verben wie öffnen, bearbeiten und so weiter, ohne überschreiben oder überschrieben wird, indem Sie andere Anwendungen oder Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Dateien, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] die einer versionierten ProgID `VisualStudio.vcproj.8.0`zugeordnet sind, z. B. . Eine versionierte ProgID ermöglicht die nebeneinander liegenden Installation des Produkts, um Dateierweiterungszuordnungen zwischen Produktversionen beizubehalten. Mit einer versionsspezifischen ProgID können Sie auch Standardverben wie Öffnen, Bearbeiten usw. verwenden, ohne dass sie von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]anderen Anwendungen oder Versionen von überschrieben werden müssen.
 
- In bestimmten Fällen sollte die Programm-ID verknüpft ist, mit der Dateierweiterung nicht geändert werden. Z. B. die ProgID für die *.htm* Dateierweiterung (progid Htmlfile =) in eine Anzahl von Stellen in das Betriebssystem ist hartcodiert und ist allgemein bekannt und verwendet eine Verknüpfung mit *.htm* und *.html* Dateien.
+ In bestimmten Fällen sollte die ProgID, die einer Dateierweiterung zugeordnet ist, nicht geändert werden. Beispielsweise ist die ProgID für die *.htm-Dateierweiterung* (progid = htmlfile) an mehreren Stellen im Betriebssystem hartcodiert und weithin bekannt und wird in Verbindung mit *.htm-* und *HTML-Dateien* verwendet.
 
-## <a name="see-also"></a>Siehe auch
-- [Registrieren von Dateierweiterungen für Seite-an-Seite-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [Angeben von dateihandlern für Dateierweiterungen](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Registrieren von Dateinamenerweiterungen für side-by-side-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [Dateihandler für Dateinamenerweiterungen angeben](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

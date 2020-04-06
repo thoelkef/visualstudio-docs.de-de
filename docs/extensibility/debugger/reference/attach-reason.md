@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Microsoft-Dokumentation
+title: ATTACH_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca871d9dac2b6f37018af925eece5c1a6f3d1585
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351848"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738124"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
-Gibt den Grund für die Debug-Engine (DE) Verbindung mit einem Programm-Knoten.
+# <a name="attach_reason"></a>ATTACH_REASON
+Gibt den Grund für das Anfügen des Debugmoduls (DE) an einen Programmknoten an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,25 +46,25 @@ public enum enum_ATTACH_REASON {
 
 ## <a name="fields"></a>Felder
 `ATTACH_REASON_AUTO`\
-Angefügt werden, da der Prozess derzeit im Debugmodus befindet.
+Fügen Sie an, da sich der Prozess derzeit im Debugmodus befindet.
 
 `ATTACH_REASON_LAUNCH`\
-Angefügt werden, da der Prozess gestartet wurde.
+Anfügen, da der Prozess gestartet wurde.
 
 `ATTACH_REASON_USER`\
-Fügen Sie aufgrund einer benutzeranforderung.
+Anfügen aufgrund einer Benutzeranforderung.
 
-## <a name="remarks"></a>Hinweise
-Diese Werte werden verwendet, als Parameter an die [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) und [Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) Methoden.
+## <a name="remarks"></a>Bemerkungen
+Diese Werte werden als Parameter für die [Attach-](../../../extensibility/debugger/reference/idebugengine2-attach.md) und [Attach-Methoden](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) verwendet.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

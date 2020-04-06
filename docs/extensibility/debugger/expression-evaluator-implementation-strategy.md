@@ -1,34 +1,34 @@
 ---
-title: Implementierungsstrategie für die Ausdrucksauswertung | Microsoft-Dokumentation
+title: Implementierungsstrategie für Ausdrucksevaluator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee0842f8375faeca7e715d4b20c73ca13598dbc3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3922689c20c839b3c0c2b2440bc9fefd5d25c80a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353738"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738671"
 ---
-# <a name="expression-evaluator-implementation-strategy"></a>Implementierungsstrategie für die ausdrucksauswertung
+# <a name="expression-evaluator-implementation-strategy"></a>Implementierungsstrategie für Ausdrucksevaluator
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ein Ansatz zum schnellen Erstellen einer ausdrucksauswertung (EE) ist, implementieren Sie zunächst den Code mindestens erforderlich ist, zum Anzeigen von lokaler Variablen in der **"lokal"** Fenster. Es empfiehlt sich Folgendes beachtet werden: jede Zeile in der **"lokal"** Fenster zeigt die Namen, Typ und Wert einer lokalen Variablen, und alle drei durch dargestellt eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Objekt. Der Name, Typ und Wert einer lokalen Variablen aus einer eine `IDebugProperty2` -Objekt durch Aufrufen der [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) Methode. Weitere Informationen zur Vorgehensweise beim Anzeigen von lokaler Variablen in der **"lokal"** Fenster finden Sie unter [anzeigen "lokal"](../../extensibility/debugger/displaying-locals.md).
+ Ein Ansatz zum schnellen Erstellen eines Ausdrucksevaluators (EE) besteht darin, zunächst den Minimalcode zu implementieren, der erforderlich ist, um lokale Variablen im **Locals-Fenster** anzuzeigen. Es ist nützlich zu erkennen, dass jede Zeile im **Fenster Locals** den Namen, typ und Denwert einer lokalen Variablen anzeigt und dass alle drei durch ein [IDebugProperty2-Objekt](../../extensibility/debugger/reference/idebugproperty2.md) dargestellt werden. Der Name, der Typ und der Wert `IDebugProperty2` einer lokalen Variablen werden von einem Objekt abgerufen, indem die [GetPropertyInfo-Methode](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) aufgerufen wird. Weitere Informationen zum Anzeigen lokaler Variablen im Fenster **Locals** finden Sie unter [Anzeigen von Locals](../../extensibility/debugger/displaying-locals.md).
 
 ## <a name="discussion"></a>Diskussion
- Eine mögliche Implementierung Sequenz beginnt bei der Implementierung von [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). Die [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) und [von GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) Methoden implementiert werden müssen, um lokale Variablen anzuzeigen. Aufrufen von `IDebugExpressionEvaluator::GetMethodProperty` gibt ein `IDebugProperty2` -Objekt, das eine Methode darstellt:, also eine [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) Objekt. Methoden selbst werden nicht angezeigt, der **"lokal"** Fenster.
+ Eine mögliche Implementierungssequenz beginnt mit der Implementierung von [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). Die [Methoden Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) und [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) müssen implementiert werden, um Locals anzuzeigen. Beim `IDebugExpressionEvaluator::GetMethodProperty` Aufrufen `IDebugProperty2` wird ein Objekt zurückgegeben, das eine Methode darstellt, d. h. ein [IDebugMethodField-Objekt.](../../extensibility/debugger/reference/idebugmethodfield.md) Methoden selbst werden im **Fenster "Locals"** nicht angezeigt.
 
- Die [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) Methode sollte als Nächstes implementiert werden. Die Debug-Engine (DE) ruft diese Methode zum Abrufen von einer Liste von lokalen Variablen und Argumenten übergeben `IDebugProperty2::EnumChildren` eine `guidFilter` Argument `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren` Aufrufe [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) und [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), kombinieren die Ergebnisse in einer einzelnen Enumeration. Finden Sie unter ["lokal" zeigt](../../extensibility/debugger/displaying-locals.md) Weitere Details.
+ Die [EnumChildren-Methode](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) sollte als Nächstes implementiert werden. Das Debugmodul (DE) ruft diese Methode auf, um `IDebugProperty2::EnumChildren` eine `guidFilter` Liste `guidFilterLocalsPlusArgs`lokaler Variablen und Argumente abzudateien, indem ein Argument von übergeben wird. `IDebugProperty2::EnumChildren`ruft [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) und [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)auf, die die Ergebnisse in einer einzigen Enumeration kombinieren. Weitere Informationen finden Sie unter [Lokale anzeigen.](../../extensibility/debugger/displaying-locals.md)
 
-## <a name="see-also"></a>Siehe auch
-- [Implementieren einer ausdrucksauswertung](../../extensibility/debugger/implementing-an-expression-evaluator.md)
-- [Anzeige "lokal"](../../extensibility/debugger/displaying-locals.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Implementieren eines Ausdrucksevaluators](../../extensibility/debugger/implementing-an-expression-evaluator.md)
+- [Lokale anzeigen](../../extensibility/debugger/displaying-locals.md)

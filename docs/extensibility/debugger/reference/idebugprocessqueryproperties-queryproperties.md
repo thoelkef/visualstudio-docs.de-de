@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Microsoft-Dokumentation
+title: IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a26cbb1781561b6fb4d54da3cfaea9a9fbae7699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311581"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723317"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Diese Methodenabfragen für eine angegebene Eigenschaftenwerte des des Debugvorgangs zur Verfügung.
+Diese Methode fragt nach einem angegebenen Eigenschaftswert des Debugvorgangs.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int QueryProperties(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Die Größe der Arrays, die die Definitionen von Eigenschaften und Eigenschaftswerte enthält.
+[in] Größe der Arrays, die die Eigenschaftsdefinitionen und Eigenschaftswerte enthalten.
 
 `dwPropType`\
-[in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte sind:
+[in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -53,13 +53,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[out] Ein Array mit den Eigenschaftswerten.
+[out] Ein Array, das die Eigenschaftswerte enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird nur selten verwendet.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird selten verwendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

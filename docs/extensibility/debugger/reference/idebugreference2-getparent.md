@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetParent | Microsoft-Dokumentation
+title: IDebugReference2::GetParent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetParent
 ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ddef1d78d64f0e034aed9d48b59bf3e46ccba24f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8af5f08ae0b06e508794851ff0fff238f19519b4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339812"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720440"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
-Ruft ab, der übergeordnete Verweis eines Verweises. Für zukünftige Verwendung reserviert.
+Ruft den übergeordneten Verweis eines Verweises ab. Für die zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int GetParent ( 
 
 ## <a name="parameters"></a>Parameter
 `ppParent`\
-[out] Gibt eine [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Objekt, das das übergeordnete Element dieser Eigenschaft darstellt.
+[out] Gibt ein [IDebugReference2-Objekt](../../../extensibility/debugger/reference/idebugreference2.md) zurück, das das übergeordnete Element dieser Eigenschaft darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

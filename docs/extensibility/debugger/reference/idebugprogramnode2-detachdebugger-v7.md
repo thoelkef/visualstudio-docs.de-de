@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft-Dokumentation
+title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger
 - IDebugProgramNode2::DetachDebugger_V7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 241db5db55897932120b3253ff5185cb852ea77b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351207"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722109"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> ALS VERALTET MARKIERT. VERWENDEN SIE NICHT.
+> Veraltet. NICHT VERWENDEN.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>Rückgabewert
 
-Eine Implementierung sollte immer zurückgeben `E_NOTIMPL`.
+Eine Implementierung sollte `E_NOTIMPL`immer zurückgegeben werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 > [!WARNING]
-> Ab Visual Studio 2005, diese Methode wird nicht mehr verwendet und sollte immer zurückgeben `E_NOTIMPL`.
+> Ab Visual Studio 2005 wird diese Methode nicht `E_NOTIMPL`mehr verwendet und sollte immer zurückgegeben werden.
 
-Diese Methode wird aufgerufen, wenn der Debugger unerwartet beendet wird. Wenn diese Methode aufgerufen wird, sollte die DE das Programm fortgesetzt, als ob der Benutzer von ihm getrennt. Keine weiteren Debuggingereignisse gesendet werden soll. Das Programm sollte sich in einem Zustand, in denen es anfügbaren Member aus einer anderen Instanz des Debuggers ist.
+Diese Methode wird aufgerufen, wenn der Debugger unerwartet beendet wird. Wenn diese Methode aufgerufen wird, sollte die DE das Programm so fortsetzen, als ob sich der Benutzer von ihr getrennt hätte. Es sollten keine weiteren Debugereignisse gesendet werden. Das Programm sollte sich in einem Zustand befinden, in dem es von einer anderen Instanz des Debuggers anhängen kann.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

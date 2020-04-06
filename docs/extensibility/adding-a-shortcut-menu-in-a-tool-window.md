@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen eines Kontextmenüs in einem Tool Fenster | Microsoft-Dokumentation
+title: Hinzufügen eines Shortcut-Menüs in einem Toolfenster | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,38 +8,38 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef3ba3e9a59ac1289803260b5894b05927205a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5b5b79721aa910c46e2580228d3f3a7836f70d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633430"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740283"
 ---
-# <a name="add-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Tool Fenster
-Diese exemplarische Vorgehensweise enthält ein Kontextmenü in einem Tool Fenster. Ein Kontextmenü ist ein Menü, das angezeigt wird, wenn ein Benutzer mit der rechten Maustaste auf eine Schaltfläche, ein Textfeld oder einen Fenster Hintergrund klickt. Befehle in einem Kontextmenü Verhalten sich genauso wie Befehle in anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben Sie es in der *vsct* -Datei an, und zeigen Sie es als Antwort auf das Klicken mit der rechten Maustaste an.
+# <a name="add-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
+In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster angezeigt. Ein Kontextmenü ist ein Menü, das angezeigt wird, wenn ein Benutzer mit der rechten Maustaste auf eine Schaltfläche, ein Textfeld oder einen Fensterhintergrund klickt. Befehle in einem Kontextmenü verhalten sich wie Befehle in anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben Sie es in der *.vsct-Datei* an und zeigen Sie es als Antwort auf den rechtsklickenden Mausklick an.
 
-Ein Tool Fenster besteht aus einem WPF-Benutzer Steuerelement in einer benutzerdefinierten Tool Fenster Klasse, die von <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> erbt.
+Ein Toolfenster besteht aus einem WPF-Benutzersteuerelement in einer <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>benutzerdefinierten Toolfensterklasse, die von erbt.
 
-In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein Kontextmenü als Visual Studio-Menü erstellen, indem Sie Menü Elemente in der *vsct* -Datei deklarieren und dann das verwaltete Paket Framework verwenden, um Sie in der Klasse zu implementieren, die das Tool Fenster definiert. Dieser Ansatz ermöglicht den Zugriff auf Visual Studio-Befehle, Benutzeroberflächen Elemente und das Automatisierungs Objektmodell.
+In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein Kontextmenü als Visual Studio-Menü erstellen, Menüelemente in der *.vsct-Datei* deklarieren und dann das Managed Package Framework verwenden, um sie in der Klasse zu implementieren, die das Toolfenster definiert. Dieser Ansatz erleichtert den Zugriff auf Visual Studio-Befehle, UI-Elemente und das Automatisierungsobjektmodell.
 
-Wenn das Kontextmenü nicht auf die Visual Studio-Funktionalität zugreifen kann, können Sie alternativ die <xref:System.Windows.FrameworkElement.ContextMenu%2A>-Eigenschaft eines XAML-Elements im Benutzer Steuerelement verwenden. Weitere Informationen finden Sie unter [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
+Wenn das Kontextmenü nicht auf die Visual Studio-Funktionalität <xref:System.Windows.FrameworkElement.ContextMenu%2A> zugreift, können Sie auch die Eigenschaft eines XAML-Elements im Benutzersteuerelement verwenden. Weitere Informationen finden Sie unter [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Voraussetzungen
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-the-tool-window-shortcut-menu-package"></a>Erstellen des Kontextmenü Pakets für das Tool Fenster
+## <a name="create-the-tool-window-shortcut-menu-package"></a>Erstellen des Kontextmenüpakets für das Toolfenster
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TWShortcutMenu`, und fügen Sie ihm eine Tool Fenster Vorlage mit dem Namen **ShortcutMenu** hinzu. Weitere Informationen zum Erstellen eines Tool Fensters finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Erstellen Sie ein `TWShortcutMenu` VSIX-Projekt mit dem Namen, und fügen Sie ihr eine Toolfenstervorlage mit dem Namen **ShortcutMenu** hinzu. Weitere Informationen zum Erstellen eines Toolfensters finden Sie unter [Erstellen einer Erweiterung mit einem Werkzeugfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="specifying-the-shortcut-menu"></a>Angeben des Kontextmenüs
-Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigten Kontextmenü, kann der Benutzer aus einer Liste von Farben auswählen, die zum Ausfüllen des Hintergrunds des Tool Fensters verwendet werden.
+Mit einem Kontextmenü, wie es in dieser exemplarischen Vorgehensweise angezeigt wird, kann der Benutzer aus einer Liste von Farben auswählen, die zum Ausfüllen des Hintergrunds des Toolfensters verwendet werden.
 
-1. Suchen Sie in *shortcutmenupackage. vsct*im guidsymbol-Element namens guidshortcutmenupackagecmdset, und deklarieren Sie das Kontextmenü, die Kontextmenü Gruppe und Menü Optionen. Das guidsymbol-Element sollte nun wie folgt aussehen:
+1. Suchen Sie in *ShortcutMenuPackage.vsct*im GuidSymbol-Element mit dem Namen guidShortcutMenuPackageCmdSet, und deklarieren Sie das Kontextmenü, die Kontextmenügruppe und die Menüoptionen. Das GuidSymbol-Element sollte nun wie folgt aussehen:
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -52,7 +52,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     </GuidSymbol>
     ```
 
-2. Erstellen Sie direkt vor dem Buttons-Element ein Menüs-Element, und definieren Sie dann das Kontextmenü.
+2. Erstellen Sie direkt vor dem Buttons-Element ein Menus-Element, und definieren Sie dann das Kontextmenü darin.
 
     ```vb
     <Menus>
@@ -65,9 +65,9 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     </Menus>
     ```
 
-    Ein Kontextmenü weist kein übergeordnetes Element auf, da es nicht Teil eines Menüs oder einer Symbolleiste ist.
+    Ein Kontextmenü verfügt nicht über ein übergeordnetes Menü, da es nicht Teil eines Menüs oder einer Symbolleiste ist.
 
-3. Erstellen Sie ein groups-Element mit einem Group-Element, das die Kontextmenü Elemente enthält, und verknüpfen Sie die Gruppe mit dem Kontextmenü.
+3. Erstellen Sie ein Groups-Element mit einem Gruppenelement, das die Verknüpfungsmenüelemente enthält, und ordnen Sie die Gruppe dem Kontextmenü zu.
 
     ```xml
     <Groups>
@@ -77,7 +77,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     </Groups>
     ```
 
-4. Definieren Sie im Element Buttons die einzelnen Befehle, die im Kontextmenü angezeigt werden. Das Buttons-Element sollte wie folgt aussehen:
+4. Definieren Sie im Buttons-Element die einzelnen Befehle, die im Kontextmenü angezeigt werden. Das Buttons-Element sollte wie folgt aussehen:
 
     ```xml
     <Buttons>
@@ -112,7 +112,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     </Buttons>
     ```
 
-5. Fügen Sie in *ShortcutMenuCommand.cs*die Definitionen für die Befehlssatz-GUID, das Kontextmenü und die Menü Elemente hinzu.
+5. Fügen Sie in *ShortcutMenuCommand.cs*die Definitionen für die Befehlssatz-GUID, das Kontextmenü und die Menüelemente hinzu.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -122,21 +122,21 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     public const int cmdidBlue = 0x104;
     ```
 
-    Dabei handelt es sich um dieselben Befehls-IDs, die im Abschnitt "Symbole" der Datei " *shortcutmenupackage. vsct* " definiert sind. Die Kontext Gruppe ist hier nicht enthalten, da Sie nur in der *vsct* -Datei erforderlich ist.
+    Dies sind die gleichen Befehls-IDs, die im Abschnitt Symbole der *Datei ShortcutMenuPackage.vsct* definiert sind. Die Kontextgruppe ist hier nicht enthalten, da sie nur in der *.vsct-Datei* erforderlich ist.
 
 ## <a name="implementing-the-shortcut-menu"></a>Implementieren des Kontextmenüs
  In diesem Abschnitt werden das Kontextmenü und seine Befehle implementiert.
 
-1. In *ShortcutMenu.cs*kann das Tool Fenster den Menübefehls Dienst erhalten, aber das Steuerelement, das darin enthalten ist, ist nicht möglich. Die folgenden Schritte zeigen, wie Sie den Menübefehls Dienst dem Benutzer Steuerelement zur Verfügung stellen.
+1. In *ShortcutMenu.cs*kann das Toolfenster den Menübefehlsdienst abrufen, aber das darin enthaltene Steuerelement kann nicht. Die folgenden Schritte zeigen, wie Sie den Menübefehlsdienst für das Benutzersteuerelement verfügbar machen.
 
-2. Fügen Sie in *ShortcutMenu.cs*die folgenden using-Direktiven hinzu:
+2. Fügen Sie in *ShortcutMenu.cs*die folgenden Anweisungen mithilfe von Direktiven hinzu:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
     using System.ComponentModel.Design;
     ```
 
-3. Überschreiben Sie die Initialize ()-Methode des Tool Fensters, um den Menübefehls Dienst zu erhalten und das Steuerelement hinzuzufügen. übergeben Sie dabei den Menübefehls Dienst an den Konstruktor:
+3. Überschreiben Sie die Initialize()-Methode des Toolfensters, um den Menübefehlsdienst abzurufen und das Steuerelement hinzuzufügen, indem Sie den Menübefehlsdienst an den Konstruktor übergeben:
 
     ```csharp
     protected override void Initialize()
@@ -146,7 +146,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     }
     ```
 
-4. Entfernen Sie im ShortcutMenu-Tool Fenster-Konstruktor die Zeile, in der das Steuerelement hinzugefügt wird. Der Konstruktor sollte nun wie folgt aussehen:
+4. Entfernen Sie im ShortcutMenu-Werkzeugfensterkonstruktor die Zeile, die das Steuerelement hinzufügt. Der Konstruktor sollte nun wie folgt aussehen:
 
     ```csharp
     public ShortcutMenu() : base(null)
@@ -157,7 +157,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     }
     ```
 
-5. Fügen Sie in *ShortcutMenuControl.XAML.cs*ein privates Feld für den Menübefehls Dienst hinzu, und ändern Sie den Steuerelement-Konstruktor, sodass er den Menübefehls Dienst übernimmt. Verwenden Sie dann den Menübefehls Dienst, um die Kontextmenü Befehle hinzuzufügen. Der shortcutmenucontrol-Konstruktor sollte jetzt wie der folgende Code aussehen. Der Befehls Handler wird später definiert.
+5. Fügen Sie in *ShortcutMenuControl.xaml.cs*ein privates Feld für den Menübefehlsdienst hinzu, und ändern Sie den Steuerelementkonstruktor, um den Menübefehlsdienst zu übernehmen. Verwenden Sie dann den Menübefehlsdienst, um die Kontextmenübefehle hinzuzufügen. Der ShortcutMenuControl-Konstruktor sollte nun wie der folgende Code aussehen. Der Befehlshandler wird später definiert.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +183,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     }
     ```
 
-6. Fügen Sie in *shortcutmenucontrol. XAML*dem Element der obersten Ebene <xref:System.Windows.Controls.UserControl> ein <xref:System.Windows.UIElement.MouseRightButtonDown> Ereignis hinzu. Die XAML-Datei sollte nun wie folgt aussehen:
+6. Fügen Sie in *ShortcutMenuControl.xaml*dem <xref:System.Windows.Controls.UserControl> Element der obersten Ebene ein <xref:System.Windows.UIElement.MouseRightButtonDown> Ereignis hinzu. Die XAML-Datei sollte nun wie folgt aussehen:
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -205,7 +205,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     </UserControl>
     ```
 
-7. Fügen Sie in *ShortcutMenuControl.XAML.cs*einen Stub für den Ereignishandler hinzu.
+7. Fügen Sie in *ShortcutMenuControl.xaml.cs*einen Stub für den Ereignishandler hinzu.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -214,7 +214,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     }
     ```
 
-8. Fügen Sie der gleichen Datei die folgenden using-Direktiven hinzu:
+8. Fügen Sie der gleichen Datei Folgendes mithilfe von Direktiven hinzu:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -224,7 +224,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     using System.Windows.Media;
     ```
 
-9. Implementieren Sie das `MyToolWindowMouseRightButtonDown`-Ereignis wie folgt.
+9. Implementieren `MyToolWindowMouseRightButtonDown` Sie das Ereignis wie folgt.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -240,9 +240,9 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     }
     ```
 
-    Dadurch wird ein <xref:System.ComponentModel.Design.CommandID> Objekt für das Kontextmenü erstellt, die Position des Mausklicks identifiziert und das Kontextmenü an dieser Stelle mithilfe der Methode <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> geöffnet.
+    Dadurch wird <xref:System.ComponentModel.Design.CommandID> ein Objekt für das Kontextmenü erstellt, der Speicherort des Mausklicks <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> identifiziert und das Kontextmenü an dieser Position mithilfe der Methode geöffnet.
 
-10. Implementieren Sie den Befehls Handler.
+10. Implementieren Sie den Befehlshandler.
 
     ```csharp
     private void ChangeColor(object sender, EventArgs e)
@@ -264,18 +264,18 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
     }
     ```
 
-    In diesem Fall behandelt nur eine Methode Ereignisse für alle Menü Elemente, indem die <xref:System.ComponentModel.Design.CommandID> identifiziert und die Hintergrundfarbe entsprechend festgelegt wird. Wenn die Menü Elemente nicht verknüpfte Befehle enthielt, haben Sie für jeden Befehl einen separaten Ereignishandler erstellt.
+    In diesem Fall behandelt nur eine Methode Ereignisse für alle <xref:System.ComponentModel.Design.CommandID> Menüelemente, indem die Hintergrundfarbe entsprechend identifiziert und angepasst wird. Wenn die Menüelemente nicht verwandte Befehle enthalten hätten, hätten Sie für jeden Befehl einen separaten Ereignishandler erstellt.
 
-## <a name="test-the-tool-window-features"></a>Testen der Tool Fenster Funktionen
+## <a name="test-the-tool-window-features"></a>Testen der Toolfenster-Features
 
 1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
 
-2. Klicken Sie in der experimentellen Instanz auf Ansicht > **Weitere Fenster**, und klicken Sie dann auf **ShortcutMenu**. Dadurch sollte das Tool Fenster angezeigt werden.
+2. Klicken Sie in der experimentellen Instanz auf **Ansicht / Andere Windows**, und dann auf **ShortcutMenu**. Auf diese Weise sollte Ihr Toolfenster angezeigt werden.
 
-3. Klicken Sie mit der rechten Maustaste in den Text des Tool Fensters. Ein Kontextmenü mit einer Liste von Farben sollte angezeigt werden.
+3. Klicken Sie mit der rechten Maustaste in den Textkörper des Werkzeugfensters. Ein Kontextmenü mit einer Liste von Farben sollte angezeigt werden.
 
-4. Klicken Sie im Kontextmenü auf eine Farbe. Die Hintergrundfarbe des Tool Fensters sollte in die ausgewählte Farbe geändert werden.
+4. Klicken Sie im Kontextmenü auf eine Farbe. Die Hintergrundfarbe des Werkzeugfensters sollte in die ausgewählte Farbe geändert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
-- [Verwenden von und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)
+- [Nutzung und Erbringung von Dienstleistungen](../extensibility/using-and-providing-services.md)

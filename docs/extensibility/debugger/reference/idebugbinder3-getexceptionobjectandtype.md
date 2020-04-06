@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft-Dokumentation
+title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetExceptionObjectAndType method
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29aa44bdd67234dec4b560ad41be8c677e4356e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327079"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735754"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
-Diese Methode ruft die Ausnahme, die einem Objekt zugeordneten ab, sofern vorhanden.
+Diese Methode ruft ggf. die einem Objekt zugeordnete Ausnahme ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetExceptionObjectAndType(
 
 ## <a name="parameters"></a>Parameter
 `ppException`\
-[out] Gibt das Objekt, das die Ausnahme darstellt.
+[out] Gibt das Objekt zurück, das die Ausnahme darstellt.
 
 `ppField`\
-[out] Gibt das Objekt, das ein bestimmtes Feld, das die Ausnahme verursacht haben kann (Dies kann ein null-Wert sein) darstellt.
+[out] Gibt das Objekt zurück, das ein bestimmtes Feld darstellt, das möglicherweise die Ausnahme verursacht hat (dies kann ein NULL-Wert sein).
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Um zu überprüfen, ob eine Ausnahme auftritt, überprüfen Sie den Rückgabewert von `ppException`: Wenn sie einen null-Wert, wird keine Ausnahme, die diesem Objekt zugeordnet ist.
+> Um zu überprüfen, ob es eine `ppException`Ausnahme gibt, überprüfen Sie den Wert, der von zurückgegeben wird: wenn es sich um einen NULL-Wert handelt, dann ist diesem Objekt keine Ausnahme zugeordnet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

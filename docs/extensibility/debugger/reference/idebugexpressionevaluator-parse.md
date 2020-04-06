@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::Parse | Microsoft-Dokumentation
+title: IDebugExpressionEvaluator::Parse | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::Parse method
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b732369aa5cf5a828dfad512c643f109346abcb7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729494"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Diese Methode konvertiert eine Ausdruckszeichenfolge in einen analysierten Ausdruck.
@@ -51,30 +51,30 @@ int Parse(
 
 ## <a name="parameters"></a>Parameter
 `upstrExpression`\
-[in] Die Ausdruckszeichenfolge analysiert werden.
+[in] Die zu analysierende Ausdruckszeichenfolge.
 
 `dwFlags`\
-[in] Eine Auflistung von [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) Konstanten, die bestimmen, wie der Ausdruck ist, die analysiert werden.
+[in] Eine Auflistung von [PARSEFLAGS-Konstanten,](../../../extensibility/debugger/reference/parseflags.md) die bestimmen, wie der Ausdruck analysiert werden soll.
 
 `nRadix`\
-[in] Die Basis, die verwendet werden, um alle numerischen Informationen interpretieren.
+[in] Radix zur Interpretation numerischer Informationen.
 
 `pbstrError`\
-[out] Gibt den Fehler als Klartext zurück.
+[out] Gibt den Fehler als lesbaren Text zurück.
 
 `pichError`\
-[out] Gibt die Zeichenposition des Starts des Fehlers in der Ausdruckszeichenfolge zurück.
+[out] Gibt die Zeichenposition des Anfangs des Fehlers in der Ausdruckszeichenfolge zurück.
 
 `ppParsedExpression`\
-[out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.
+[out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression-Objekt](../../../extensibility/debugger/reference/idebugparsedexpression.md) zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode erzeugt einen analysierten Ausdruck, der nicht auf einen tatsächlichen Wert. Ein analysierten Ausdruck kann ausgewertet werden, d. h. in einen Wert konvertiert.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode erzeugt einen analysierten Ausdruck und keinen tatsächlichen Wert. Ein analysierter Ausdruck kann ausgewertet werden, d. h. in einen Wert konvertiert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

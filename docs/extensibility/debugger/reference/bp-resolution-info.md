@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Microsoft-Dokumentation
+title: BP_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_INFO structure
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e07110a4ab4aae014f6134130a92dfcb8a31289
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350601"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737823"
 ---
-# <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-Beschreibt die gebundene Haltepunkt-Informationen für einen codehaltepunkt oder eines Haltepunkts für Daten.
+# <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
+Beschreibt die gebundenen Haltepunktinformationen für einen Code-Breakpoint oder einen Datenhaltepunkt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,29 +47,29 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>Member
 `dwFields`\
-Eine Auflistung von Flags aus der [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Enumerationen, der angibt, welche Felder ausgefüllt wurden.
+Eine Auflistung von [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Flags aus der BPRESI_FIELDS-Enumerationen an, die angibt, welche Felder ausgefüllt werden.
 
 `bpResLocation`\
-Die [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Struktur, die den Ort des Breakpoints im Code oder Daten angibt.
+Die [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Struktur, die die Position des Haltepunkts in Code oder Daten angibt.
 
 `pProgram`\
-Die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das die Anwendung darstellt, in dem der haltepunktfehler aufgetreten ist.
+Das [IDebugProgram2-Objekt,](../../../extensibility/debugger/reference/idebugprogram2.md) das die Anwendung darstellt, in der der Haltepunktfehler aufgetreten ist.
 
 `pThread`\
-Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem die Anwendung mit dem haltepunktfehler ausgeführt wird.
+Das [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den Thread darstellt, in dem die Anwendung ausgeführt wird, die den Haltepunktfehler enthält.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur wird zurückgegeben, indem [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur wird von [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)

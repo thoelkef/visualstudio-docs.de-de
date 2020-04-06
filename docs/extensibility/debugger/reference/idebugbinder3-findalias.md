@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias | Microsoft-Dokumentation
+title: IDebugBinder3::FindAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8387a3302395d6e25c2b00dd360286e533531168
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344422"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735864"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Diese Methode sucht einen Alias, erhält einen Namen an. Alle Aliase Suchen in der Anwendung.
+Diese Methode sucht einen Alias mit einem Namen. Dadurch werden alle Aliase im Programm durchsucht.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,17 +43,17 @@ int FindAlias(
 
 ## <a name="parameters"></a>Parameter
 `pcstrName`\
-[in] Der Name des Alias gefunden.
+[in] Name des zu suchenden Alias.
 
 `ppAlias`\
-[out] Alias gefunden (sofern vorhanden) dargestellt, durch die [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) Schnittstelle.
+[out] Alias gefunden (falls vorhanden), dargestellt durch die [IDebugAlias-Schnittstelle.](../../../extensibility/debugger/reference/idebugalias.md)
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` (wenn der Alias nicht gefunden wird) oder ein Fehlercode.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird `S_FALSE` zurückgegeben (wenn kein Alias gefunden wird) oder ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode initialisiert das Zielobjekt, vor dem Aufruf null; testet dann null-Werte anschließend, um zu bestimmen, und zwar unabhängig davon, ob der Alias gefunden wurde.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode initialisiert das Zielobjekt vor dem Aufruf auf NULL. anschließend wird nach einem Nullwert getestet, um festzustellen, ob der Alias gefunden wurde oder nicht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

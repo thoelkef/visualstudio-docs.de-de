@@ -1,5 +1,5 @@
 ---
-title: Haltepunktfehler | Microsoft-Dokumentation
+title: Haltepunktfehler | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,30 +7,30 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint errors
 - errors [Debugging SDK]
 ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31eabde4ae19ae7342188a5d2a16374b9c94afc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332559"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739216"
 ---
-# <a name="breakpoint-errors"></a>Haltepunktfehler
-Die folgenden beschreibt den Prozess aus, wenn ein Haltepunkt zum Binden an Code versucht jedoch ein Fehler auftritt.
+# <a name="breakpoint-errors"></a>Breakpoint-Fehler
+Im Folgenden wird der Prozess beschrieben, wenn ein Haltepunkt versucht, eine Bindung an Code zu binden, aber fehlschlägt.
 
-## <a name="troubleshoot-a-breakpoint-error"></a>Problembehandlung bei der ein haltepunktfehler
+## <a name="troubleshoot-a-breakpoint-error"></a>Beheben eines Haltepunktfehlers
 
-1. Die Debug-Engine (DE) sendet ein [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) für die Sitzung Debug-Manager (SDM).
+1. Das Debugmodul (DE) sendet einen [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) an den Session Debug Manager (SDM).
 
-2. Die SDM-Aufrufe [IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 ** `ppErrorBP`) um den Haltepunkt Fehler zu erhalten.
+2. Das SDM ruft [IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2** `ppErrorBP`) auf, um den Fehlerhaltepunkt abzubekommen.
 
-3. Die SDM-Aufrufe [IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) abzurufenden den ausstehenden Haltepunkt, von dem der Haltepunkt Fehler verursacht wurde.
+3. Das SDM ruft [IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) auf, um den ausstehenden Haltepunkt abzubekommen, von dem der Fehlerhaltepunkt stammt.
 
-4. Die SDM-Aufrufe [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) abzurufenden den Grund, warum der Haltepunkt Fehler beim Binden Fehler.
+4. Das SDM ruft [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) auf, um den Grund zu ermitteln, warum der Fehlerhaltepunkt nicht gebunden werden konnte.
 
-## <a name="see-also"></a>Siehe auch
-- [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Microsoft-Dokumentation
+title: MACHINE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO structure
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e50fe4901ebcbf008bf191226502ccac8ec4cf5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339225"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714556"
 ---
-# <a name="machineinfo"></a>MACHINE_INFO
-Beschreibt einen bestimmten Computer an.
+# <a name="machine_info"></a>MACHINE_INFO
+Beschreibt einen bestimmten Computer.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,25 +45,25 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>Member
  `Fields`\
- Eine Kombination von Flags aus der [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) -Enumeration, die angeben, welche Felder der Struktur initialisiert werden.
+ Eine Kombination von [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) Flags aus der MACHINE_INFO_FIELDS-Enumeration, die angeben, welche Felder der Struktur initialisiert werden.
 
  `bstrName`\
- Der Name des Computers. Entspricht dem Aufruf von [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
+ Der Computername Entspricht dem Aufruf von [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
 
  `Flags`\
- Eine Kombination von Flags aus der [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) Enumeration, die die Computerattribute beschreibt.
+ Eine Kombination von [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) Flags aus der MACHINE_INFO_FLAGS-Enumeration, die die Computerattribute beschreibt.
 
-## <a name="remarks"></a>Hinweise
- Diese Struktur wird zurückgegeben, durch einen Aufruf der [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Diese Struktur wird durch einen Aufruf der [GetMachineInfo-Methode](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

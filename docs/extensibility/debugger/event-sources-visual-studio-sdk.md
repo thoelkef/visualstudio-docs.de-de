@@ -1,27 +1,27 @@
 ---
-title: Ereignisquellen (Visual Studio SDK) | Microsoft-Dokumentation
+title: Ereignisquellen (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ab4fc69cab50bc5554d626d9c2ac86d49283f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315307"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738774"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Ereignisquellen (Visual Studio SDK)
-Es gibt zwei Quellen von Ereignissen: die Debug-Engine (DE) und die Sitzung Debug-Manager (SDM). Aus einer bereitgestellten Kompatibilitätsrichtlinie gesendete Ereignisse verfügen über eine nicht-NULL-Engine, Ereignissen ab, das SDM eine NULL-Engine.
+Es gibt zwei Ereignisquellen: das Debugmodul (DE) und den Session Debug Manager (SDM). Ereignisse, die von einem DE gesendet werden, haben ein Nicht-NULL-Modul, während Ereignisse, die vom SDM gesendet werden, über ein NULL-Modul verfügen.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie senden die **IDebugProgramCreateEvent2** aus dem DE, das SDM.
+Das folgende Beispiel zeigt, wie Das **IDebugProgramCreateEvent2** von der DE an das SDM gesendet wird.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
@@ -72,5 +72,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)

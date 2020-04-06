@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS | Microsoft-Dokumentation
+title: BPREQI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 757b8bfeeed2a7d75f3a0b4203b80b464e5b39fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350509"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737748"
 ---
-# <a name="bpreqifields"></a>BPREQI_FIELDS
-Gibt die Informationen über eine Haltepunkt-Anforderung abgerufen werden sollen.
+# <a name="bpreqi_fields"></a>BPREQI_FIELDS
+Gibt die Informationen an, die zu einer Haltepunktanforderung abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -68,62 +68,62 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>Felder
 `BPREQI_BPLOCATION`\
-Initialisieren und Verwenden der `bpLocation` Feld (Haltepunkt Speicherort) der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.
+Initialisieren/verwenden `bpLocation` Sie das Feld (Haltepunktposition) der [BP_REQUEST_INFO-](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2-Struktur.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
 `BPREQI_LANGUAGE`\
-Initialisieren und Verwenden der `guidLanguage` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `guidLanguage` Sie das `BP_REQUEST_INFO` `BP_REQUEST_INFO2` Feld der oder-Struktur.
 
 `BPREQI_PROGRAM`\
-Initialisieren und Verwenden der `pProgram` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `pProgram` Sie das `BP_REQUEST_INFO` `BP_REQUEST_INFO2` Feld der oder-Struktur.
 
 `BPREQI_PROGRAMNAME`\
-Initialisieren und Verwenden der `bstrProgramName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `bstrProgramName` Sie das `BP_REQUEST_INFO` `BP_REQUEST_INFO2` Feld der oder-Struktur.
 
 `BPREQI_THREAD`\
-Initialisieren und Verwenden der `pThread` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `pThread` Sie das `BP_REQUEST_INFO` `BP_REQUEST_INFO2` Feld der oder-Struktur.
 
 `BPREQI_THREADNAME`\
-Initialisieren und Verwenden der `bstrThreadName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `bstrThreadName` Sie das `BP_REQUEST_INFO` `BP_REQUEST_INFO2` Feld der oder-Struktur.
 
 `BPREQI_PASSCOUNT`\
-Initialisieren und Verwenden der `bpPassCount` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `bpPassCount` Sie das `BP_REQUEST_INFO` `BP_REQUEST_INFO2` Feld der oder-Struktur.
 
 `BPREQI_CONDITION`\
-Initialisieren und Verwenden der `bpCondition` (Bedingung für Haltepunkt) Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `bpCondition` des Feldes (Breakpoint-Bedingung) der `BP_REQUEST_INFO` oder-Struktur. `BP_REQUEST_INFO2`
 
 `BPREQI_FLAGS`\
-Initialisieren und Verwenden der `dwFlags` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `dwFlags` Sie das `BP_REQUEST_INFO` `BP_REQUEST_INFO2` Feld der oder-Struktur.
 
 `BPREQI_ALLOLDFIELDS`\
-Initialize/verwenden alle Felder für die von der `BP_REQUEST_INFO` Struktur.
+Initialisieren/Verwenden Sie alle Felder `BP_REQUEST_INFO` für die Struktur.
 
 `BPREQI_VENDOR`\
-Initialisieren und Verwenden der `guidVendor` Feld `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `guidVendor` des `BP_REQUEST_INFO2` Strukturfelds.
 
 `BPREQI_CONSTRAINT`\
-Initialisieren und Verwenden der `bstrConstraint` Feld `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `bstrConstraint` des `BP_REQUEST_INFO2` Strukturfelds.
 
 `BPREQI_TRACEPOINT`\
-Initialisieren und Verwenden der `bstrTracepoint` Feld `BP_REQUEST_INFO2` Struktur.
+Initialisieren/Verwenden `bstrTracepoint` des `BP_REQUEST_INFO2` Strukturfelds.
 
 `BPREQI_ALLFIELDS`\
-Gibt an, alle Felder für die `BP_REQUEST_INFO2` Struktur.
+Gibt alle Felder `BP_REQUEST_INFO2` für die Struktur an.
 
-## <a name="remarks"></a>Hinweise
-Übergeben als Argument an die [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) und [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Methoden, um die Felder der anzugeben, die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen sind, initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+Übergeben als Argument an die [GetRequestInfo-](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) und [BP_REQUEST_INFO-Methoden,](../../../extensibility/debugger/reference/bp-request-info.md) um anzugeben, welche Felder der [BP_REQUEST_INFO-](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2-Strukturen](../../../extensibility/debugger/reference/bp-request-info2.md) initialisiert werden sollen.
 
-Diese Flags werden auch verwendet, welche Felder der an die `BP_REQUEST_INFO` und `BP_REQUEST_INFO2` Strukturen verwendet und gültig sind, wenn jede Struktur zurückgegeben wird.
+Diese Flags werden auch verwendet, `BP_REQUEST_INFO` um `BP_REQUEST_INFO2` anzugeben, welche Felder der und Strukturen verwendet werden und gültig sind, wenn jede Struktur zurückgegeben wird.
 
-Diese Werte können kombiniert werden, mit einer bitweisen `OR`.
+Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

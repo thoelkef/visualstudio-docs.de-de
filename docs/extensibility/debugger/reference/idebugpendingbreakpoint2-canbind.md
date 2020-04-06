@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Microsoft-Dokumentation
+title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::CanBind method
 - CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9325d8a0c8ee39aec6f8ceccb5bbb894eef2163
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07625f7249092e2de3d3dccaaef31a2869755e36
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311732"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725978"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-Bestimmt, ob diese ausstehende Haltepunkt an einen Speicherort gebunden werden kann.
+Bestimmt, ob dieser ausstehende Haltepunkt an einen Codespeicherort gebunden werden kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,16 +42,16 @@ int CanBind ( 
 
 ## <a name="parameters"></a>Parameter
 `ppErrorEnum`\
-[out] Gibt eine [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) -Objekt, das eine Liste der enthält [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekte an, wenn es möglicherweise Fehler.
+[out] Gibt ein [IEnumDebugErrorBreakpoints2-Objekt](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) zurück, das eine Liste von [IDebugErrorBreakpoint2-Objekten](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) enthält, wenn Fehler auftreten könnten.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK.` gibt `S_FALSE` Wenn der Haltepunkt nicht gebunden werden kann, in diesem Fall die Fehler werden zurückgegeben von der `ppErrorEnum` Parameter. Andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.
+ Wenn erfolgreich, `S_OK.` `S_FALSE` gibt zurück, wenn der Haltepunkt nicht binden `ppErrorEnum` kann. In diesem Fall werden die Fehler vom Parameter zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird aufgerufen, um zu bestimmen, was passieren würde, wenn diese ausstehenden Haltepunkt gebunden wurde. Rufen Sie die [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) Methode, um den ausstehenden Haltepunkt tatsächlich zu binden.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird aufgerufen, um zu bestimmen, was passieren würde, wenn dieser ausstehende Haltepunkt gebunden wäre. Rufen Sie die [Bind-Methode](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) auf, um den ausstehenden Haltepunkt tatsächlich zu binden.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.
+ Das folgende Beispiel zeigt, wie diese `CPendingBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugPendingBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) verfügbar macht.
 
 ```cpp
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
@@ -138,8 +138,8 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
-- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

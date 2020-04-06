@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines grundlegenden Projektsystems, Teil 2 | Microsoft-Dokumentation
+title: Erstellen eines basisgegrundlegenden Projektsystems, Teil 2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,46 +7,46 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7823dc949e78cc6d22514a1ba93476fd5f42d076
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337002"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739710"
 ---
-# <a name="create-a-basic-project-system-part-2"></a>Erstellen eines grundlegenden Projektsystems, Teil 2
-Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), wird das Erstellen eines grundlegenden Projektsystems veranschaulicht. In dieser exemplarischen Vorgehensweise baut auf dem Projektsystem für die basic-eine Visual Studio-Vorlage auf einer Eigenschaftenseite und andere Funktionen. Sie müssen die erste exemplarischen Vorgehensweise abschließen, bevor Sie mit dieser beginnen.
+# <a name="create-a-basic-project-system-part-2"></a>Erstellen eines basisgegrundlegenden Projektsystems, Teil 2
+Die erste exemplarische Vorgehensweise in dieser Reihe, [Erstellen eines grundlegenden Projektsystems, Teil 1 ,](../extensibility/creating-a-basic-project-system-part-1.md)zeigt, wie ein grundlegendes Projektsystem erstellt wird. Diese exemplarische Vorgehensweise basiert auf dem grundlegenden Projektsystem, indem eine Visual Studio-Vorlage, eine Eigenschaftenseite und andere Features hinzugefügt werden. Sie müssen die erste exemplarische Vorgehensweise abschließen, bevor Sie diese exemplarische Vorgehensweise starten.
 
-In dieser exemplarischen Vorgehensweise erfahren, wie Sie ein Projekt zu erstellen, die die Projekt-Dateinamenerweiterung *.myproj*. Um die exemplarische Vorgehensweise abzuschließen, müssen Sie nicht Ihre eigene Sprache erstellt werden, weil die exemplarischen Vorgehensweise aus dem vorhandenen Visual C#-Projektsystem nutzt Teile.
+In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Projekttyp mit der Projektdateinamenerweiterung *.myproj*erstellen. Um die exemplarische Vorgehensweise abzuschließen, müssen Sie keine eigene Sprache erstellen, da die exemplarische Vorgehensweise aus dem vorhandenen Visual C-Projektsystem entlehnt ist.
 
-In dieser exemplarischen Vorgehensweise erfahren, wie diese Aufgaben auszuführen:
+In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie diese Aufgaben ausführen:
 
 - Erstellen Sie eine Visual Studio-Vorlage.
 
-- Bereitstellen einer Visual Studio-Vorlage.
+- Stellen Sie eine Visual Studio-Vorlage bereit.
 
-- Erstellen Sie eine untergeordnete Projekttypknoten in der **neues Projekt** Dialogfeld.
+- Erstellen Sie einen untergeordneten Projekttypknoten im Dialogfeld **Neues Projekt.**
 
-- Aktivieren Sie die parameterersetzung in der Visual Studio-Vorlage.
+- Aktivieren Sie die Parameterersetzung in der Visual Studio-Vorlage.
 
-- Erstellen Sie eine Eigenschaftenseite des Projekts.
+- Erstellen Sie eine Projekteigenschaftsseite.
 
 > [!NOTE]
-> Die Schritte in dieser exemplarischen Vorgehensweise basiert auf einem C#-Projekt. Jedoch mit Ausnahme von Details wie z. B. Dateinamenerweiterungen und Code können die gleichen Schritte für ein Visual Basic-Projekt Sie.
+> Die Schritte in dieser exemplarischen Vorgehensweise basieren auf einem C-Projekt. Mit Ausnahme von Details wie Dateinamenerweiterungen und Code können Sie jedoch dieselben Schritte für ein Visual Basic-Projekt verwenden.
 
-## <a name="create-a-visual-studio-template"></a>Erstellen Sie eine Visual Studio-Vorlage
-- [Erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md) veranschaulicht das Erstellen einer grundlegenden Projektvorlage und an das Projektsystem hinzufügen. Darüber hinaus erfahren Sie, wie diese Vorlage mit Visual Studio registrieren mit dem <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> -Attribut, das den vollständigen Pfad der schreibt die *\\Templates\Projects\SimpleProject\\* Ordner im System die Registrierung.
+## <a name="create-a-visual-studio-template"></a>Erstellen einer Visual Studio-Vorlage
+- [Erstellen Sie ein grundlegendes Projektsystem, Teil 1 zeigt,](../extensibility/creating-a-basic-project-system-part-1.md) wie Sie eine grundlegende Projektvorlage erstellen und dem Projektsystem hinzufügen. Außerdem wird gezeigt, wie diese Vorlage mithilfe <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> des Attributs bei Visual Studio registriert wird, das den vollständigen Pfad des * \\Ordners "Vorlagen- und Projekte- SimpleProject"\\ * in der Systemregistrierung schreibt.
 
-Mithilfe von Visual Studio-Vorlage (*VSTEMPLATE* Datei) statt einer basic-Projektvorlage, können Sie steuern, wie die Vorlage wird die **neues Projekt** Dialogfeld und wie bei Vorlagenparametern wird ersetzt. Ein *VSTEMPLATE* Datei ist eine XML-Datei, die beschreibt, wie Quelldateien enthalten sein, wenn ein Projekt mithilfe der Projektvorlage für das System erstellt wird. Das Projektsystem selbst wird erstellt, indem Sie das Sammeln von der *VSTEMPLATE* -Datei und die Quelldateien in eine *ZIP* Datei, und die Bereitstellung durch Kopieren der *ZIP* Datei an einem Speicherort, der Visual Studio bekannt. Dieser Prozess wird weiter unten in dieser exemplarischen Vorgehensweise ausführlicher erläutert.
+Mithilfe einer Visual Studio-Vorlage *(.vstemplate-Datei)* anstelle einer grundlegenden Projektvorlage können Sie steuern, wie die Vorlage im Dialogfeld **Neues Projekt** angezeigt und Vorlagenparameter ersetzt werden. Eine *.vstemplate-Datei* ist eine XML-Datei, die beschreibt, wie Quelldateien eingeschlossen werden sollen, wenn ein Projekt mithilfe der Projektsystemvorlage erstellt wird. Das Projektsystem selbst wird durch Das Sammeln der *.vstemplate-Datei* und der Quelldateien in einer *ZIP-Datei* erstellt und durch Kopieren der *ZIP-Datei* an einen Speicherort bereitgestellt, der Visual Studio bekannt ist. Dieser Prozess wird später in dieser exemplarischen Vorgehensweise ausführlicher erläutert.
 
-1. In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], öffnen Sie die SimpleProject-Projektmappe, die Sie, indem Sie die folgenden erstellt [erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md).
+1. Öffnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Sie in die SimpleProject-Projektmappe, die Sie erstellt haben, indem Sie einem [grundlegenden Projektsystem, Teil 1,](../extensibility/creating-a-basic-project-system-part-1.md)folgen.
 
-2. In der *SimpleProjectPackage.cs* Datei, suchen Sie das ProvideProjectFactory-Attribut. Ersetzen Sie durch den zweiten Parameter (Projektname) mit Null, und der vierte Parameter (der Pfad des Vorlagenordners Projekt) ". \\\NullPath "wie folgt.
+2. Suchen Sie in der *Datei SimpleProjectPackage.cs* das ProvideProjectFactory-Attribut. Ersetzen Sie den zweiten Parameter (den Projektnamen) durch null und den vierten Parameter (den Pfad zum Projektvorlagenordner) durch ". \\"NullPath", wie folgt.
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -55,9 +55,9 @@ Mithilfe von Visual Studio-Vorlage (*VSTEMPLATE* Datei) statt einer basic-Projek
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. Fügen Sie eine XML-Datei mit dem Namen *SimpleProject.vstemplate* auf die *\\Templates\Projects\SimpleProject\\* Ordner.
+3. Fügen Sie eine XML-Datei mit dem Namen *SimpleProject.vstemplate* zum Ordner * \\"Vorlagen- und Projekt-SimpleProject"\\ * hinzu.
 
-4. Ersetzen Sie den Inhalt der *SimpleProject.vstemplate* durch den folgenden Code.
+4. Ersetzen Sie den Inhalt von *SimpleProject.vstemplate* durch den folgenden Code.
 
     ```xml
     <VSTemplate Version="2.0.0" Type="Project"
@@ -83,24 +83,24 @@ Mithilfe von Visual Studio-Vorlage (*VSTEMPLATE* Datei) statt einer basic-Projek
     </VSTemplate>
     ```
 
-5. In der **Eigenschaften** wählen Sie im Fenster alle fünf Dateien in die *\\Templates\Projects\SimpleProject\\* Ordner und legen die **Buildvorgang** um **ZipProject**.
+5. Wählen Sie im **Fenster Eigenschaften** alle fünf Dateien im Ordner * \\"Vorlagen- und Projekte" aus,\\ * und legen Sie die **Buildaktion** auf **ZipProject**fest.
 
-    ![Einfachen-Projektordner](../extensibility/media/simpproj2.png "SimpProj2")
+    ![Einfacher Projektordner](../extensibility/media/simpproj2.png "SimpProj2")
 
-    Die \<TemplateData > Abschnitt bestimmt den Speicherort und die Darstellung des Projekttyps SimpleProject in die **neues Projekt** Dialogfeld wie folgt:
+    Der \<Abschnitt TemplateData> bestimmt den Speicherort und die Darstellung des SimpleProject-Projekttyps im Dialogfeld **Neues Projekt** wie folgt:
 
-- Die \<Name >-Element benennt die Projektvorlage SimpleProject Anwendung sein.
+- Der \<Name>-Element benennt die Projektvorlage als SimpleProject-Anwendung.
 
-- Die \<Beschreibung >-Element enthält die Beschreibung, die in angezeigt wird der **neues Projekt** im Dialogfeld, wenn die Projektvorlage ausgewählt ist.
+- Das \<Element Beschreibung> enthält die Beschreibung, die im Dialogfeld **Neues Projekt** angezeigt wird, wenn die Projektvorlage ausgewählt ist.
 
-- Die \<Symbol >-Element gibt an, das Symbol, das zusammen mit den Projekttyp SimpleProject angezeigt wird.
+- Das \<Element Icon> gibt das Symbol an, das zusammen mit dem SimpleProject-Projekttyp angezeigt wird.
 
-- Die \<ProjectType >-Element benennt den Projekttyp in der **neues Projekt** Dialogfeld. Dieser Name wird den Projekt-Name-Parameter des Attributs ProvideProjectFactory ersetzt.
+- Das \<ProjectType->-Element benennt den Projekttyp im Dialogfeld **Neues Projekt.** Dieser Name ersetzt den Projektnamenparameter des ProvideProjectFactory-Attributs.
 
   > [!NOTE]
-  > Die \<ProjectType > Element muss übereinstimmen der `LanguageVsTemplate` Argument der `ProvideProjectFactory` Attribut in der Datei SimpleProjectPackage.cs.
+  > Das \<ProjectType>-Element `LanguageVsTemplate` muss `ProvideProjectFactory` mit dem Argument des Attributs in der SimpleProjectPackage.cs-Datei übereinstimmen.
 
-  Die \<TemplateContent > Abschnitt wird beschrieben, diese Dateien, die generiert werden, wenn ein neues Projekt erstellt wird:
+  Im \<Abschnitt TemplateContent> werden die folgenden Dateien beschrieben, die beim Erstellen eines neuen Projekts generiert werden:
 
 - *SimpleProject.myproj*
 
@@ -108,19 +108,19 @@ Mithilfe von Visual Studio-Vorlage (*VSTEMPLATE* Datei) statt einer basic-Projek
 
 - *AssemblyInfo.cs*
 
-  Alle drei Dateien `ReplaceParameters` auf True festgelegt, die parameterersetzung ermöglicht. Die *"Program.cs"* Datei `OpenInEditor` auf True festgelegt, wodurch die Datei im Code-Editor geöffnet werden, wenn ein Projekt erstellt wird.
+  Alle drei `ReplaceParameters` Dateien haben auf true gesetzt, was die Parameterersetzung ermöglicht. Die *Program.cs* `OpenInEditor` Datei auf true festgelegt hat, wodurch die Datei beim Erstellen eines Projekts im Code-Editor geöffnet wird.
 
-  Weitere Informationen zu den Elementen im Visual Studio-Vorlage Schema finden Sie unter den [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
+  Weitere Informationen zu den Elementen im Visual Studio-Vorlagenschema finden Sie im [Visual Studio-Vorlagenschemaverweis](../extensibility/visual-studio-template-schema-reference.md).
 
 > [!NOTE]
-> Wenn ein Projekt mehrere Visual Studio-Vorlagen enthält, ist jede Vorlage, in einem separaten Ordner. Jede Datei in diesem Ordner müssen die **Buildvorgang** festgelegt **ZipProject**.
+> Wenn ein Projekt über mehr als eine Visual Studio-Vorlage verfügt, befindet sich jede Vorlage in einem separaten Ordner. Für jede Datei in diesem Ordner muss die **Buildaktion** auf **ZipProject**festgelegt sein.
 
-## <a name="adding-a-minimal-vsct-file"></a>Hinzufügen einer minimalen VSCT-Datei
- Visual Studio muss im Modus der Installation eine neue oder geänderte Visual Studio-Vorlage erkennt ausgeführt werden. Setupmodus erfordert, dass eine *VSCT* Datei vorhanden sein. Aus diesem Grund müssen Sie eine minimale hinzufügen *VSCT* Datei zum Projekt.
+## <a name="adding-a-minimal-vsct-file"></a>Hinzufügen einer minimalen .vsct-Datei
+ Visual Studio muss im Setupmodus ausgeführt werden, um eine neue oder geänderte Visual Studio-Vorlage zu erkennen. Im Setup-Modus muss eine *.vsct-Datei* vorhanden sein. Daher müssen Sie dem Projekt eine minimale *.vsct-Datei* hinzufügen.
 
-1. Fügen Sie eine XML-Datei mit dem Namen *SimpleProject.vsct* dem SimpleProject-Projekt.
+1. Fügen Sie dem SimpleProject-Projekt eine XML-Datei mit dem Namen *SimpleProject.vsct* hinzu.
 
-2. Ersetzen Sie den Inhalt von der *SimpleProject.vsct* -Datei mit den folgenden Code.
+2. Ersetzen Sie den Inhalt der *Datei SimpleProject.vsct* durch den folgenden Code.
 
     ```
     <?xml version="1.0" encoding="utf-8" ?>
@@ -129,38 +129,38 @@ Mithilfe von Visual Studio-Vorlage (*VSTEMPLATE* Datei) statt einer basic-Projek
     </CommandTable>
     ```
 
-3. Legen Sie die **Buildvorgang** dieser Datei auf **VSCTCompile**. Hierzu können Sie nur in der *csproj* Datei nicht in der **Eigenschaften** Fenster. Stellen Sie sicher, dass die **Buildvorgang** dieser Datei nastaven NA hodnotu **keine** an diesem Punkt.
+3. Legen Sie die **Buildaktion** dieser Datei auf **VSCTCompile**fest. Sie können dies nur in der *.csproj-Datei* tun, nicht im **Eigenschaftenfenster.** Stellen Sie sicher, dass die **Buildaktion** dieser Datei zu diesem Zeitpunkt auf **Keine** festgelegt ist.
 
-    1. Mit der rechten Maustaste des SimpleProject-Knotens, und klicken Sie dann auf **bearbeiten SimpleProject.csproj**.
+    1. Klicken Sie mit der rechten Maustaste auf den SimpleProject-Knoten, und klicken Sie dann auf **SimpleProject.csproj bearbeiten**.
 
-    2. In der *csproj* Datei, suchen Sie nach der *SimpleProject.vsct* Element.
+    2. Suchen Sie in der *.csproj-Datei* das *Element SimpleProject.vsct.*
 
         ```
         <None Include="SimpleProject.vsct" />
         ```
 
-    3. Ändern Sie den Buildvorgang auf **VSCTCompile**.
+    3. Ändern Sie die Buildaktion in **VSCTCompile**.
 
         ```
         <VSCTCompile Include="SimpleProject.vsct" />
         ```
 
-    4. die Projektdatei und schließen Sie den Editor.
+    4. Projektdatei und schließen Sie den Editor.
 
-    5. Speichern Sie den Knoten SimpleProject und dann in der **Projektmappen-Explorer** klicken Sie auf **Projekt erneut laden**.
+    5. Speichern Sie den SimpleProject-Knoten, und klicken Sie dann im **Projektmappen-Explorer** auf **Projekt neu laden**.
 
-## <a name="examine-the-visual-studio-template-build-steps"></a>Überprüfen Sie die Schritte im Buildprozess Visual Studio-Vorlage
- Das Buildsystem für VSPackage-Projekt wird Visual Studio in der Regel im Setupmodus ausgeführt bei der *VSTEMPLATE* Datei geändert wird, oder das Projekt, enthält die *VSTEMPLATE* neu erstellt wird. Sie können durch Festlegen den Ausführlichkeitsgrad der MSBuild, Normal oder höher folgen.
+## <a name="examine-the-visual-studio-template-build-steps"></a>Untersuchen der Erstellungsschritte der Visual Studio-Vorlage
+ Das VSPackage-Projektbuildsystem führt Visual Studio in der Regel im Setupmodus aus, wenn die *.vstemplate-Datei* geändert oder das Projekt, das die *.vstemplate-Datei* enthält, neu erstellt wird. Sie können die ausführlichen Ebenen von MSBuild auf Normal oder höher festlegen.
 
 1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2. Erweitern Sie die **Projekte und Projektmappen** Knoten, und wählen Sie dann **erstellen und ausführen**.
+2. Erweitern Sie den Knoten **Projekte und Lösungen,** und wählen Sie dann **Build and Run**aus.
 
-3. Legen Sie **MSBuild Projektbuildausgabe** zu **Normal**. Klicken Sie auf **OK**.
+3. Legen Sie **MSBuild-Projektbuildausgabeausführlichität** auf **Normal**fest. Klicken Sie auf **OK**.
 
 4. Erstellen Sie das SimpleProject-Projekt neu.
 
-    Vom Schritt zum Erstellen der *ZIP* Projektdatei sollte im folgende Beispiel ähneln.
+    Der Buildschritt zum *.zip* Erstellen der ZIP-Projektdatei sollte dem folgenden Beispiel ähneln.
 
 ```
 ZipProjects:
@@ -175,55 +175,55 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>Bereitstellen einer Visual Studio-Vorlage
-Visual Studio-Vorlagen enthalten keine Pfadinformationen. Aus diesem Grund die Vorlage *ZIP* Datei muss bereitgestellt werden, an einem Speicherort an, das Visual Studio bekannt ist. Der Speicherort des Ordners ProjectTemplates ist in der Regel *< % LocalAppData% > \Microsoft\VisualStudio\14.0Exp\ProjectTemplates*.
+Visual Studio-Vorlagen enthalten keine Pfadinformationen. Daher muss *.zip* die ZIP-Vorlagedatei an einem Speicherort bereitgestellt werden, der Visual Studio bekannt ist. Der Speicherort des ProjectTemplates-Ordners ist in der Regel *<%LOCALAPPDATA%>.*
 
-Zum Bereitstellen Ihrer Projektfactory muss das Installationsprogramm über Administratorrechte verfügen. Vorlagen unter dem Knoten für Visual Studio-Installation bereitgestellt: *...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates*.
+Um Ihre Projektfactory bereitzustellen, muss das Installationsprogramm über Administratorrechte verfügen. Es stellt Vorlagen unter dem Visual Studio-Installationsknoten bereit: ... . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *. . . . . . . . . . . . . . . . . . . .*. . . . . . . .
 
-## <a name="test-a-visual-studio-template"></a>Testen Sie Visual Studio-Vorlage
-Testen Sie Ihr Projekt-Factory, um festzustellen, ob es sich bei eine Projekthierarchie mithilfe der Visual Studio-Vorlage erstellt.
+## <a name="test-a-visual-studio-template"></a>Testen einer Visual Studio-Vorlage
+Testen Sie die Projektfactory, um mithilfe der Visual Studio-Vorlage festzustellen, ob eine Projekthierarchie erstellt wird.
 
-1. Zurücksetzen der experimentellen Instanz von Visual Studio SDK.
+1. Setzen Sie die experimentelle Instanz des Visual Studio SDK zurück.
 
-    Auf [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Auf der **starten** Menü finden Sie die **Microsoft Visual Studio und Microsoft Visual Studio SDK/Tools** Ordner, und wählen Sie dann **Microsoft Visual Studio-experimentelle Instanz vonZurücksetzen**.
+    Unter [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Suchen Sie im **Startmenü** den Ordner **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools,** und wählen Sie dann **Microsoft Visual Studio Experimental-Instanz zurücksetzen**aus.
 
-    In höheren Versionen von Windows: Auf der **starten** geben **Microsoft Visual Studio zurücksetzen \<Version > experimentelle Instanz**.
+    Bei späteren Versionen von Windows: Geben Sie auf dem **Startbildschirm** **die Microsoft Visual Studio-Version \<> Experimental Instance**zurück.
 
-2. Ein Eingabeaufforderungsfenster wird angezeigt. Wenn Sie sehen, die Wörter **drücken Sie eine beliebige Taste, um den Vorgang fortzusetzen**, klicken Sie auf **EINGABETASTE**. Wenn das Fenster geschlossen wurde, öffnen Sie Visual Studio.
+2. Ein Eingabeaufforderungsfenster wird angezeigt. Wenn die Wörter **Drücken Sie eine beliebige Taste drücken, um fortzufahren,** klicken Sie auf **ENTER**. Öffnen Sie Visual Studio, nachdem das Fenster geschlossen wurde.
 
-3. Das SimpleProject-Projekt neu erstellen und mit dem Debuggen beginnen. Die experimentelle Instanz angezeigt wird.
+3. Erstellen Sie das SimpleProject-Projekt neu, und starten Sie das Debuggen. Die experimentelle Instanz wird angezeigt.
 
-4. Erstellen Sie in der experimentellen Instanz ein SimpleProject-Projekt ein. In der **neues Projekt** wählen Sie im Dialogfeld **SimpleProject**.
+4. Erstellen Sie in der experimentellen Instanz ein SimpleProject-Projekt. Wählen Sie im Dialogfeld **Neues Projekt** **SimpleProject**aus.
 
-5. Eine neue Instanz der SimpleProject sollte angezeigt werden.
+5. Es sollte eine neue Instanz von SimpleProject angezeigt werden.
 
-    ![Einfaches Projekt neue Instanz](../extensibility/media/simpproj2_newproj.png "SimpProj2_NewProj")
+    ![Einfache projektneue Instanz](../extensibility/media/simpproj2_newproj.png "SimpProj2_NewProj")
 
-    ![Meine neuen Projektinstanz](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")
+    ![Meine neue Projektinstanz](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")
 
-## <a name="create-a-project-type-child-node"></a>Erstellen Sie einen Projekt Typ untergeordneter Knoten
-Sie können eine Projekttypknoten in einen untergeordneten Knoten hinzufügen der **neues Projekt** Dialogfeld. Für den Projekttyp SimpleProject, könnten Sie z. B. untergeordneten Knoten für konsolenanwendungen, Fenster-Anwendungen, Webanwendungen und So weiter verfügen.
+## <a name="create-a-project-type-child-node"></a>Erstellen eines untergeordneten Projekttypknotens
+Sie können einem Projekttypknoten im Dialogfeld **Neues Projekt** einen untergeordneten Knoten hinzufügen. Für den SimpleProject-Projekttyp können Sie beispielsweise untergeordnete Knoten für Konsolenanwendungen, Fensteranwendungen, Webanwendungen usw. verwenden.
 
-Untergeordnete Knoten werden erstellt, indem Sie die Projektdatei ändern und hinzufügen \<OutputSubPath > untergeordneten Elemente für die \<ZipProject > Elemente. Wenn während der Erstellung oder Bereitstellung eine Vorlage kopiert wird, wird jedem untergeordneten Knoten einen Unterordner des Projektordners Vorlagen.
+Untergeordnete Knoten werden erstellt, indem die \<Projektdatei geändert und \<der ZipProject> Elementen von OutputSubPath> untergeordneteElemente hinzugefügt werden. Wenn eine Vorlage während des Builds oder der Bereitstellung kopiert wird, wird jeder untergeordnete Knoten zu einem Unterordner des Projektvorlagenordners.
 
-In diesem Abschnitt zeigt, wie mit einen Konsole untergeordneter Knoten für den Projekttyp SimpleProject erstellt wird.
+In diesem Abschnitt wird gezeigt, wie Sie einen untergeordneten Konsolenknoten für den SimpleProject-Projekttyp erstellen.
 
-1. Benennen Sie die *\\Templates\Projects\SimpleProject\\* Ordner  *\\Templates\Projects\ConsoleApp\\* .
+1. Benennen Sie den * \\Ordner "Vorlagen" ,,Projekte" und "SimpleProject"\\ * in * \\"Vorlagen" und "Projekte" um.\\*
 
-2. In der **Eigenschaften** wählen Sie im Fenster alle fünf Dateien in die *\\Templates\Projects\ConsoleApp\\* Ordner, und stellen Sie sicher, dass die **Buildvorgang**nastaven NA hodnotu **ZipProject**.
+2. Wählen Sie im **Eigenschaftenfenster** alle fünf Dateien im Ordner * \\Vorlagen-Projekte-KonsoleApp\\ * aus, und stellen Sie sicher, dass die **Buildaktion** auf **ZipProject**festgelegt ist.
 
-3. Fügen Sie in der Datei SimpleProject.vstemplate die folgende Zeile am Ende der \<TemplateData > Abschnitt unmittelbar vor dem schließenden Tag.
+3. Fügen Sie in der Datei SimpleProject.vstemplate die \<folgende Zeile am Ende des Abschnitts TemplateData> kurz vor dem schließenden Tag hinzu.
 
     ```
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     ```
 
-    Dies bewirkt, dass die Konsolenanwendung Vorlage angezeigt werden, sowohl in der Konsole untergeordnete Knoten als auch im SimpleProject übergeordneten Knoten, der eine Ebene über den untergeordneten Knoten ist.
+    Dadurch wird die Konsolenanwendungsvorlage sowohl im untergeordneten Knoten Konsole als auch im übergeordneten Knoten SimpleProject angezeigt, der eine Ebene über dem untergeordneten Knoten liegt.
 
-4. Speichern Sie die *SimpleProject.vstemplate* Datei.
+4. Speichern Sie die Datei *SimpleProject.vstemplate.*
 
-5. In der *csproj* hinzufügen \<OutputSubPath > auf die einzelnen Elemente der ZipProject. Entladen Sie das Projekt, wie zuvor, und Bearbeiten der Projektdatei.
+5. Fügen Sie \<in der *.csproj-Datei* OutputSubPath-> zu jedem ZipProject-Element hinzu. Entladen Sie das Projekt wie zuvor, und bearbeiten Sie die Projektdatei.
 
-6. Suchen Sie die \<ZipProject > Elemente. Auf die einzelnen \<ZipProject >-Element hinzufügen einer \<OutputSubPath > Element und weisen Sie ihm den Wert-Konsole. Die ZipProject
+6. Suchen \<Sie die ZipProject-> Elemente. Fügen \<Sie jedem ZipProject->-Element ein \<OutputSubPath->-Element hinzu, und geben Sie ihm den Wert Console. Das ZipProject
 
     ```
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">
@@ -243,7 +243,7 @@ In diesem Abschnitt zeigt, wie mit einen Konsole untergeordneter Knoten für den
     </ZipProject>
     ```
 
-7. Fügen Sie Folgendes \<PropertyGroup > an der Projektdatei:
+7. Fügen \<Sie der Projektdatei diese PropertyGroup-> hinzu:
 
     ```
     <PropertyGroup>
@@ -251,47 +251,47 @@ In diesem Abschnitt zeigt, wie mit einen Konsole untergeordneter Knoten für den
     </PropertyGroup>
     ```
 
-8. Speichern Sie die Projektdatei, und Laden Sie das Projekt.
+8. Speichern Sie die Projektdatei, und laden Sie das Projekt neu.
 
-## <a name="test-the-project-type-child-node"></a>Testen Sie den untergeordneten Projekttypknoten
-Testen Sie die geänderte Projektdatei, um festzustellen, ob die **Konsole** untergeordneten Knoten befindet sich im die **neues Projekt** Dialogfeld.
+## <a name="test-the-project-type-child-node"></a>Testen des untergeordneten Projekttypknotens
+Testen Sie die geänderte Projektdatei, um festzustellen, ob der untergeordnete **Knoten Konsole** im Dialogfeld **Neues Projekt** angezeigt wird.
 
-1. Führen Sie die **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz** Tool.
+1. Führen Sie das Tool **"Zurücksetzen" des Microsoft Visual Studio Experimental Instance-Tools** aus.
 
-2. Das SimpleProject-Projekt neu erstellen und mit dem Debuggen beginnen. Die experimentelle Instanz sollten angezeigt werden.
+2. Erstellen Sie das SimpleProject-Projekt neu, und starten Sie das Debuggen. Die experimentelle Instanz sollte angezeigt werden
 
-3. In der **neues Projekt** Dialogfeld klicken Sie auf die **SimpleProject** Knoten. Die **Konsolenanwendung** Vorlage sollte angezeigt werden, der **Vorlagen** Bereich.
+3. Klicken Sie im Dialogfeld **Neues Projekt** auf den **SimpleProject-Knoten.** Die **Vorlage für Konsolenanwendungen** sollte im Bereich **Vorlagen** angezeigt werden.
 
-4. Erweitern Sie die **SimpleProject** Knoten. Die **Konsole** untergeordneter Knoten sollte angezeigt werden. Die **SimpleProject Anwendung** Vorlage wird weiterhin angezeigt, in der **Vorlagen** Bereich.
+4. Erweitern Sie den **SimpleProject-Knoten.** Der untergeordnete **Konsolenknoten** sollte angezeigt werden. Die **SimpleProject-Anwendungsvorlage** wird weiterhin im Bereich **Vorlagen** angezeigt.
 
-5. Klicken Sie auf **Abbrechen** und das Debuggen beendet.
+5. Klicken Sie auf **Abbrechen** und beenden Sie das Debuggen.
 
-    ![Einfaches Projekt Rollup](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")
+    ![Einfaches ProjektRollup](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")
 
-    ![Einfaches Projekt-Konsolenknoten](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
+    ![Einfacher Projektkonsolenknoten](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
-## <a name="substitute-project-template-parameters"></a>Projekt-Vorlagenparameter ersetzen
-- [Erstellen eines grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md) wurde gezeigt, wie Sie überschreiben die `ProjectNode.AddFileFromTemplate` Methode, um eine einfache Art von Vorlage Parameter ersetzt werden. In diesem Abschnitt erfahren, wie Sie die Parameter der höher entwickelten Visual Studio-Vorlage zu verwenden.
+## <a name="substitute-project-template-parameters"></a>Ersetzen von Projektvorlagenparametern
+- [Bei der Erstellung eines grundlegenden Projektsystems](../extensibility/creating-a-basic-project-system-part-1.md) wurde `ProjectNode.AddFileFromTemplate` in Teil 1 gezeigt, wie die Methode überschrieben wird, um eine grundlegende Art der Vorlagenparameterersetzung zu erstellen. In diesem Abschnitt wird erläutert, wie Sie die anspruchsvolleren Visual Studio-Vorlagenparameter verwenden.
 
-Bei der Erstellung eines Projekts mit Visual Studio-Vorlage in der **neues Projekt** Dialogfeld Vorlage, die durch Parameter ersetzt werden Zeichenfolgen, um das Projekt anpassen. Ein Template-Parameter ist ein spezieller Token, das beginnt und endet mit einem Dollarzeichen, z. B. $time$. Die folgenden beiden Parameter sind besonders nützlich zum Aktivieren der Anpassung in Projekten, die in der Vorlage basieren:
+Wenn Sie ein Projekt mithilfe einer Visual Studio-Vorlage im Dialogfeld **Neues Projekt** erstellen, werden Vorlagenparameter durch Zeichenfolgen ersetzt, um das Projekt anzupassen. Ein Vorlagenparameter ist ein spezielles Token, das mit einem Dollarzeichen beginnt und endet, z. B. $time. Die folgenden beiden Parameter sind besonders nützlich, um die Anpassung in Projekten zu aktivieren, die auf der Vorlage basieren:
 
-- $GUID [1-10] $ wird durch eine neue Guid ersetzt. Sie können bis zu 10 eindeutige GUIDs, z. B. $guid1$ angeben.
+- $GUID[1-10]" wird durch eine neue Guid ersetzt. Sie können bis zu 10 eindeutige GUIDs angeben, z. B. $guid1.
 
-- $safeprojectname$ wird von einem Benutzer in der bereitgestellte Name der **neues Projekt** Dialogfeld geändert, um alle unsicheren Zeichen sowie Leerzeichen zu entfernen.
+- $safeprojectname b ist der Name, der von einem Benutzer im Dialogfeld **Neues Projekt** angegeben wird, der so geändert wird, dass alle unsicheren Zeichen und Leerzeichen entfernt werden.
 
   Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).
 
-### <a name="to-substitute-project-template-parameters"></a>Projekt-Vorlagenparameter ersetzen
+### <a name="to-substitute-project-template-parameters"></a>So ersetzen Sie Projektvorlagenparameter
 
-1. In der *SimpleProjectNode.cs* Datei, entfernen Sie die `AddFileFromTemplate` Methode.
+1. Entfernen *Sie* die `AddFileFromTemplate` Methode in der Datei SimpleProjectNode.cs.
 
-2. In der  *\\Templates\Projects\ConsoleApp\SimpleProject.myproj* Datei, suchen Sie nach der \<RootNamespace >-Eigenschaft und ändern Sie seinen Wert $safeprojectname $.
+2. Suchen Sie in der \< * \\Datei Templates-Projects-ConsoleApp-SimpleProject.myproj* die RootNamespace-Eigenschaft> und ändern Sie ihren Wert in $safeprojectname.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. In der  *\\Templates\Projects\SimpleProject\Program.cs* Datei, ersetzen Sie den Inhalt der Datei mit dem folgenden Code:
+3. Ersetzen Sie in der * \\Datei Templates-Projects-SimpleProject-Program.cs* den Inhalt der Datei durch den folgenden Code:
 
     ```
     using System;
@@ -313,11 +313,11 @@ Bei der Erstellung eines Projekts mit Visual Studio-Vorlage in der **neues Proje
     }
     ```
 
-4. Das SimpleProject-Projekt neu erstellen und mit dem Debuggen beginnen. Die experimentelle Instanz sollten angezeigt werden.
+4. Erstellen Sie das SimpleProject-Projekt neu, und starten Sie das Debuggen. Die experimentelle Instanz sollte angezeigt werden.
 
-5. Erstellen Sie eine neue SimpleProject-Konsolenanwendung. (In der **Projekttypen** wählen Sie im Bereich **SimpleProject**. Unter **Visual Studio installierte Vorlagen**Option **Konsolenanwendung**.)
+5. Erstellen Sie eine neue SimpleProject Console-Anwendung. (Wählen Sie im Bereich **Projekttypen** **SimpleProject**aus. Wählen Sie unter **Visual Studio installierte Vorlagen** **Konsolenanwendung**aus.)
 
-6. Öffnen Sie in das neu erstellte Projekt, *"Program.cs"* . Es sollte in etwa wie folgt aussehen (GUID-Werte in der Datei variieren.):
+6. Öffnen Sie im neu erstellten Projekt *Program.cs*. Es sollte etwa wie folgt aussehen (GUID-Werte in Ihrer Datei unterscheiden sich.):
 
     ```csharp
     using System;
@@ -339,29 +339,29 @@ Bei der Erstellung eines Projekts mit Visual Studio-Vorlage in der **neues Proje
     }
     ```
 
-## <a name="create-a-project-property-page"></a>Erstellen Sie eine Projekt-Eigenschaftenseite
-Sie können eine Eigenschaftenseite für den Projekttyp erstellen, sodass Benutzer anzeigen und Ändern der Eigenschaften in Projekten, die basierend auf der Vorlage basieren können. In diesem Abschnitt erfahren Sie, wie Sie eine Konfiguration unabhängig Eigenschaftenseite zu erstellen. Diese grundlegende Eigenschaft verwendet ein Eigenschaftenraster zum Anzeigen der öffentlichen Eigenschaften, die Sie in der Eigenschaft Page-Klasse verfügbar machen.
+## <a name="create-a-project-property-page"></a>Erstellen einer Projekteigenschaftsseite
+Sie können eine Eigenschaftenseite für Ihren Projekttyp erstellen, damit Benutzer Eigenschaften in Projekten anzeigen und ändern können, die auf Ihrer Vorlage basieren. In diesem Abschnitt erfahren Sie, wie Sie eine konfigurationsunabhängige Eigenschaftenseite erstellen. Diese grundlegende Eigenschaftenseite verwendet ein Eigenschaftenraster, um die öffentlichen Eigenschaften anzuzeigen, die Sie in Ihrer Eigenschaftenseitenklasse verfügbar machen.
 
-Leiten Sie die Eigenschaft-Seite-Klasse aus der `SettingsPage` Basisklasse. Das Eigenschaftenraster bereitgestellt, die von der `SettingsPage` Klasse kennt den meisten primitiven Datentypen und weiß, wie sie angezeigt. Darüber hinaus die `SettingsPage` Klasse weiß, wie Eigenschaftswerte, zu der Projektdatei beibehalten werden.
+Leiten Sie ihre Eigenschaftenseitenklasse von der `SettingsPage` Basisklasse ab. Das von der `SettingsPage` Klasse bereitgestellte Eigenschaftenraster kennt die meisten primitiven Datentypen und weiß, wie sie angezeigt werden. Darüber hinaus `SettingsPage` weiß die Klasse, wie Eigenschaftswerte in der Projektdatei beibehalten werden.
 
-Die Eigenschaftenseite, die Sie in diesem Abschnitt erstellen, können Sie die ändern und speichern diese Eigenschaften des Projekts:
+Auf der Eigenschaftenseite, die Sie in diesem Abschnitt erstellen, können Sie die folgenden Projekteigenschaften ändern und speichern:
 
 - AssemblyName
 
 - OutputType
 
-- RootNamespace.
+- Rootnamespace.
 
-1. In der *SimpleProjectPackage.cs* hinzufügen. dies `ProvideObject` -Attribut auf die `SimpleProjectPackage` Klasse:
+1. Fügen Sie in der `ProvideObject` datei `SimpleProjectPackage` *SimpleProjectPackage.cs* dieses Attribut der Klasse hinzu:
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-    Auf diese Weise die Eigenschaftenseitenklasse registriert `GeneralPropertyPage` mit COM.
+    Dadurch wird die Eigenschaftenseitenklasse `GeneralPropertyPage` bei COM registriert.
 
-2. In der *SimpleProjectNode.cs* hinzufügen. diese beiden überschriebenen Methoden, die `SimpleProjectNode` Klasse:
+2. Fügen *SimpleProjectNode.cs* Sie in `SimpleProjectNode` der datei SimpleProjectNode.cs der Klasse die beiden überschriebenen Methoden hinzu:
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -378,11 +378,11 @@ Die Eigenschaftenseite, die Sie in diesem Abschnitt erstellen, können Sie die �
     }
     ```
 
-    Beide Methoden geben ein Array von GUIDs (Eigenschaftenseite) zurück. Die GeneralPropertyPage-GUID ist das einzige Element im Array, sodass die **Eigenschaftenseiten** Dialogfeld wird nur eine Seite angezeigt.
+    Beide Methoden geben ein Array von Eigenschaftenseiten-GUIDs zurück. Die GeneralPropertyPage-GUID ist das einzige Element im Array, sodass im Dialogfeld **Eigenschaftenseiten** nur eine Seite angezeigt wird.
 
-3. Fügen Sie eine Klassendatei mit dem Namen *GeneralPropertyPage.cs* dem SimpleProject-Projekt.
+3. Fügen Sie dem SimpleProject-Projekt eine Klassendatei mit dem Namen *GeneralPropertyPage.cs* hinzu.
 
-4. Ersetzen Sie den Inhalt dieser Datei, mit dem folgenden Code:
+4. Ersetzen Sie den Inhalt dieser Datei durch den folgenden Code:
 
     ```csharp
     using System;
@@ -452,36 +452,36 @@ Die Eigenschaftenseite, die Sie in diesem Abschnitt erstellen, können Sie die �
     }
     ```
 
-    Die `GeneralPropertyPage` Klasse verfügbar macht, die drei öffentlichen Eigenschaften OutputType, AssemblyName und RootNamespace. Da der AssemblyName keine Set-Methode besitzt, wird er als nur-Lese Eigenschaft angezeigt. OutputType ist eine Enumerationskonstante, damit es als Dropdownliste angezeigt wird.
+    Die `GeneralPropertyPage` Klasse macht die drei öffentlichen Eigenschaften AssemblyName, OutputType und RootNamespace verfügbar. Da AssemblyName über keine set-Methode verfügt, wird sie als schreibgeschützte Eigenschaft angezeigt. OutputType ist eine aufgezählte Konstante, daher wird sie als Dropdownliste angezeigt.
 
-    Die `SettingsPage` -Basisklasse stellt `ProjectMgr` Eigenschaften beibehalten werden. Die `BindProperties` -Methode verwendet `ProjectMgr` persistenten Werte abgerufen und die entsprechenden Eigenschaften festgelegt. Die `ApplyChanges` -Methode verwendet `ProjectMgr` rufen Sie die Werte der Eigenschaften, und speichern sie an der Projektdatei. Die Methode wird der Eigenschaftensatz `IsDirty` auf true festlegen, um anzugeben, dass die Eigenschaften beibehalten werden müssen. Dauerhaftigkeit tritt auf, wenn Sie das Projekt oder Projektmappe speichern.
+    Die `SettingsPage` Basisklasse `ProjectMgr` bietet, dass die Eigenschaften beibehalten werden. Die `BindProperties` Methode `ProjectMgr` verwendet, um die persistenten Eigenschaftswerte abzurufen und die entsprechenden Eigenschaften festzulegen. Die `ApplyChanges` Methode `ProjectMgr` verwendet, um die Werte der Eigenschaften abzuspeichern und sie in der Projektdatei beizubehalten. Die Eigenschaftssatzmethode legt `IsDirty` auf true fest, um anzugeben, dass die Eigenschaften beibehalten werden müssen. Persistenz tritt auf, wenn Sie das Projekt oder die Projektmappe speichern.
 
-5. Erstellen Sie die Projektmappe SimpleProject neu, und mit dem Debuggen beginnen. Die experimentelle Instanz sollten angezeigt werden.
+5. Erstellen Sie die SimpleProject-Lösung neu, und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.
 
-6. Erstellen Sie eine neue SimpleProject-Anwendung, in der experimentellen Instanz.
+6. Erstellen Sie in der experimentellen Instanz eine neue SimpleProject-Anwendung.
 
-7. Visual Studio ruft die Projekt-Factory zum Erstellen eines Projekts mit Visual Studio-Vorlage. Die neue *"Program.cs"* Datei wird im Code-Editor geöffnet.
+7. Visual Studio ruft Ihre Projektfactory auf, um ein Projekt mithilfe der Visual Studio-Vorlage zu erstellen. Die neue *Program.cs* Datei wird im Code-Editor geöffnet.
 
-8. Mit der rechten Maustaste des Projektknoten im **Projektmappen-Explorer**, und klicken Sie dann auf **Eigenschaften**. Das Dialogfeld **Eigenschaftenseiten** wird angezeigt.
+8. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten , und klicken Sie dann auf **Eigenschaften**. Das Dialogfeld **Eigenschaftenseiten** wird angezeigt.
 
-    ![Einfaches Projekt-Eigenschaftenseite](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
+    ![Einfache Projekteigenschaftsseite](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
 
-## <a name="test-the-project-property-page"></a>Testen Sie die Eigenschaftenseite des Projekts
-Sie können nun testen, ob Sie ändern und Eigenschaftswerte ändern können.
+## <a name="test-the-project-property-page"></a>Testen der Projekteigenschaftsseite
+Jetzt können Sie testen, ob Sie Eigenschaftswerte ändern und ändern können.
 
-1. In der **MyConsoleApplication Eigenschaftenseiten** im Dialogfeld die **DefaultNamespace** zu **MyApplication**.
+1. Ändern Sie im Dialogfeld **MyConsoleApplication-Eigenschaftenseiten** den **DefaultNamespace** in **MyApplication**.
 
-2. Wählen Sie die **OutputType** -Eigenschaft, und wählen Sie dann **Klassenbibliothek**.
+2. Wählen Sie die **OutputType-Eigenschaft** aus, und wählen Sie dann **Klassenbibliothek**aus.
 
-3. Klicken Sie auf **übernehmen**, und klicken Sie dann auf **OK**.
+3. Klicken Sie auf **Übernehmen**, und klicken Sie anschließend auf **OK**.
 
-4. Öffnen Sie erneut die **Eigenschaftenseiten** Dialogfeld ein, und stellen Sie sicher, dass Ihre Änderungen erhalten geblieben sind.
+4. Öffnen Sie das Dialogfeld **Eigenschaftenseiten erneut,** und stellen Sie sicher, dass Ihre Änderungen beibehalten wurden.
 
 5. Schließen Sie die experimentelle Instanz von Visual Studio.
 
 6. Öffnen Sie die experimentelle Instanz erneut.
 
-7. Öffnen Sie erneut die **Eigenschaftenseiten** Dialogfeld ein, und stellen Sie sicher, dass Ihre Änderungen erhalten geblieben sind.
+7. Öffnen Sie das Dialogfeld **Eigenschaftenseiten erneut,** und stellen Sie sicher, dass Ihre Änderungen beibehalten wurden.
 
 8. Schließen Sie die experimentelle Instanz von Visual Studio.
-    ![Schließen Sie die experimentelle Instanz](../extensibility/media/simpproj2_proppage2.png "SimpProj2_PropPage2")
+    ![Schließen der experimentellen Instanz](../extensibility/media/simpproj2_proppage2.png "SimpProj2_PropPage2")

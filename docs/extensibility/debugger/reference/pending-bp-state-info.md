@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_INFO | Microsoft-Dokumentation
+title: PENDING_BP_STATE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_INFO structure
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306f3f6ac5f12d2a26da958d50fae87c6e174355
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d66ecc63e133a75148f06b59b8f1ccf61fe2658d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349881"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714078"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
-Enthält Informationen über den Zustand eines Haltepunkts an, die an einen Speicherort gebunden werden kann.
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
+Enthält Informationen über den Status eines Haltepunkts, der an einen Codespeicherort gebunden werden kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,23 +43,23 @@ public struct PENDING_BP_STATE_INFO { 
 
 ## <a name="members"></a>Member
  `state`\
- Ein Wert aus der [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) -Enumeration, die den Status des ausstehenden Haltepunkts angibt.
+ Ein Wert [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) aus der PENDING_BP_STATE-Enumeration, der den Status des ausstehenden Haltepunkts angibt.
 
  `flags`\
- Eine Kombination von Flags aus der [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) -Enumeration, der angibt, ob der Breakpoint virtualisiert wird.
+ Eine Kombination von [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) Flags aus der PENDING_BP_STATE_FLAGS-Enumeration, die angibt, ob der Haltepunkt virtualisiert ist.
 
-## <a name="remarks"></a>Hinweise
- Diese Struktur wird zum Übergeben der [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) Methode, in denen es ausgefüllt wird.
+## <a name="remarks"></a>Bemerkungen
+ Diese Struktur wird an die [GetState-Methode](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) übergeben, wo sie ausgefüllt wird.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)
 - [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)
 - [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)

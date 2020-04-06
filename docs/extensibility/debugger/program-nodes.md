@@ -1,5 +1,5 @@
 ---
-title: Programmieren von Knoten | Microsoft-Dokumentation
+title: Programmknoten | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 084a386cc7d7f9c6d606e7015e593a4075ba53a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351430"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738218"
 ---
 # <a name="program-nodes"></a>Programmknoten
-Architektur der Debugger eine *Programm Knoten*:
+In der Debuggerarchitektur wird ein *Programmknoten*:
 
-- Ist eine einfache Beschreibung eines Programms.
+- Ist eine leichte Beschreibung eines Programms.
 
-- Erkennen sich selbst und den Prozess, den er ausgeführt wird. Ein Programm-Knoten kann von getrennt, und beschreiben die Debug-Engine (DE), die sie erstellt haben, wenn alle angefügt werden.
+- Kann sich selbst und den Prozess identifizieren, in dem es ausgeführt wird. Ein Programmknoten kann angefügt werden, von dem er getrennt werden kann, und das Debugmodul (DE) beschreiben, das ihn erstellt hat.
 
-- Wird durch dargestellt eine [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle, die in der Regel von einem DE oder Port erstellt. Programmknoten an einen Port hinzugefügt werden, indem [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Wenn ein Programm-Knoten zu einem Port hinzugefügt wird, wird er hinzugefügt, an den Prozess mit dem Programm, das dieses Programm-Knoten darstellt.
+- Wird durch eine [IDebugProgramNode2-Schnittstelle](../../extensibility/debugger/reference/idebugprogramnode2.md) dargestellt, die in der Regel von einem DE oder Port erstellt wird. Programmknoten werden einem Port durch Aufrufen von [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)hinzugefügt. Wenn ein Programmknoten zu einem Port hinzugefügt wird, wird er dem Prozess hinzugefügt, der das Programm enthält, das dieser Programmknoten darstellt.
 
-  Einige Zeit nach eine Debugsitzung, je nach Implementierung des debugpakets gestartet wird programmknoten dienen zum entsprechenden Programme erstellen. Wenn ein Prozess für seinen Programmen abgefragt wird, werden die Programme aufgelistet, eine für jeden Knoten des Programms.
+  Je nach Dem Start einer Debugsitzung werden je nach Implementierung des Debugpakets Programmknoten verwendet, um entsprechende Programme zu erstellen. Wenn ein Prozess für seine Programme abgefragt wird, werden die Programme aufgezählt, eines für jeden Programmknoten.
 
-  Bevor Sie ein Programm angefügt ist, benötigt die IDE nur eine einfache Beschreibung des Programms an. Diese Informationen kann vom Programm Knoten abgerufen werden. Sobald die Anwendung angefügt ist, zeigt die IDE Weitere ausführliche Informationen, z. B. eine Liste aller Threads im Programm ausgeführt wird. Diese Informationen werden vom Programm selbst abgerufen.
+  Bevor ein Programm angefügt wird, benötigt die IDE nur eine einfache Beschreibung des Programms. Diese Informationen können vom Programmknoten abgerufen werden. Sobald das Programm angefügt ist, zeigt die IDE detailliertere Informationen an, z. B. eine Liste aller Threads, die im Programm ausgeführt werden. Diese Informationen werden aus dem Programm selbst abgerufen.
 
-## <a name="see-also"></a>Siehe auch
-- [Programme](../../extensibility/debugger/programs.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Programs](../../extensibility/debugger/programs.md)
 - [Prozesse](../../extensibility/debugger/processes.md)
-- [Debug-engine](../../extensibility/debugger/debug-engine.md)
+- [Debug-Engine](../../extensibility/debugger/debug-engine.md)
 - [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

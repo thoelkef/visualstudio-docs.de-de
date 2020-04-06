@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Microsoft-Dokumentation
+title: EXCEPTION_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337691"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736960"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
-Gibt den Ausnahmezustand.
+# <a name="exception_state"></a>EXCEPTION_STATE
+Gibt den Ausnahmestatus an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -78,65 +78,65 @@ public enum enum_EXCEPTION_STATE {
 
 ## <a name="fields"></a>Felder
 `EXCEPTION_NONE`\
-Beenden Sie nicht an der Ausnahme.
+Beenden Sie nicht die Ausnahme.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Beenden Sie am ersten Auslösen der Ausnahme. Wenn Sie einem Ausnahmeereignis zu beschreiben, gibt dieses Flag an, dass die Ausnahmeereignis ein Ereignis für die Ausnahme der ersten Chance ist.
+Beenden Sie beim ersten Auslösen der Ausnahme. Beim Beschreiben eines Ausnahmeereignisses gibt dieses Flag an, dass es sich bei dem Ausnahmeereignis um ein Ausnahmeereignis der ersten Chance handelt.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-Beenden Sie am zweiten Auslösung der Ausnahme. Wenn Sie einem Ausnahmeereignis beschreiben zu können, gibt an, dass das Ausnahmeereignis eine zweite Chance Ausnahmeereignisses.
+Stoppen Sie beim zweiten Auslösen der Ausnahme. Wenn Sie ein Ausnahmeereignis beschreiben, gibt dies an, dass das Ausnahmeereignis ein Ausnahmeereignis der zweiten Chance ist.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Beenden Sie am ersten Auslösen einer Ausnahme des User-Modus. Wenn Sie einem Ausnahmeereignis beschreiben zu können, gibt an, dass das Ausnahmeereignis ein Ereignis für nicht abgefangene Ausnahme.
+Beenden Sie beim ersten Auslösen einer Benutzermodusausnahme. Wenn Sie ein Ausnahmeereignis beschreiben, gibt dies an, dass das Ausnahmeereignis ein Benutzerausnahmeereignis der ersten Chance ist.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Beendet, wenn eine Benutzer-Modus-Ausnahme nicht abgefangen wird. Wenn Sie einem Ausnahmeereignis beschreiben zu können, gibt an, dass das Ausnahmeereignis eine nicht abgefangene Benutzerereignis Modus Ausnahme.
+Beenden, wenn eine Benutzermodusausnahme nicht abgefangen wird. Wenn Sie ein Ausnahmeereignis beschreiben, gibt dies an, dass es sich bei dem Ausnahmeereignis um ein Nicht abgefangenes Ausnahmeereignis im Benutzermodus handelt.
 
 `EXCEPTION_STOP_ALL`\
-Bei jeder Ausnahme beendet. Nicht verwendet, wenn Sie ein Ausnahmeereignis beschreiben.
+Beenden Sie bei jeder Ausnahme. Wird nicht verwendet, wenn ein Ausnahmeereignis beschrieben wird.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-Wenn Sie einem Ausnahmeereignis zu beschreiben, gibt Sie an, dass über die Ausnahme fortgesetzt werden kann nicht.
+Wenn Sie ein Ausnahmeereignis beschreiben, gibt dies an, dass die Ausnahme nicht fortgesetzt werden kann.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Gibt an, dass die Ausnahme unterstützen Code verfügt. Bei der Anzeige einer Ausnahme verwendet
+Gibt an, dass die Ausnahme Code unterstützt. Wird beim Anzeigen einer Ausnahme verwendet
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Gibt an, dass der Ausnahmecode im Hexadezimalformat angezeigt werden soll. Bei der Anzeige einer Ausnahme verwendet.
+Gibt an, dass der Ausnahmecode in hexadezimal angezeigt werden soll. Wird zum Anzeigen einer Ausnahme verwendet.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Gibt an, dass der Ausnahmecode JustMyCode unterstützt. Bei der Anzeige einer Ausnahme verwendet.
+Gibt an, dass der Ausnahmecode JustMyCode unterstützt. Wird zum Anzeigen einer Ausnahme verwendet.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Gibt an, dass der Debugger für verwalteten Code Ausnahmen verarbeiten soll. Wenn dies nicht festgelegt ist, der Standarddebugger behandelt die Ausnahmen. Diese wird zum Übergeben der [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) Methode und nicht in verwendet die [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur.
+Gibt an, dass der Debugger für verwalteten Code Ausnahmen behandeln soll. Wenn nicht festgelegt, behandelt der Standarddebugger die Ausnahmen. Dies wird an die [SetAllExceptions-Methode](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) übergeben und nicht in der [EXCEPTION_INFO-Struktur](../../../extensibility/debugger/reference/exception-info.md) verwendet.
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-VERALTET, VERWENDEN SIE NICHT.
+VERALTET, NICHT VERWENDEN.
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-VERALTET, VERWENDEN SIE NICHT.
+VERALTET, NICHT VERWENDEN.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-VERALTET, VERWENDEN SIE NICHT.
+VERALTET, NICHT VERWENDEN.
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-VERALTET, VERWENDEN SIE NICHT.
+VERALTET, NICHT VERWENDEN.
 
-## <a name="remarks"></a>Hinweise
-Verwendet als die `dwState` Mitglied der [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur geben den Zustand der Ausnahme und wozu dazu verwendet werden können.
+## <a name="remarks"></a>Bemerkungen
+Wird als `dwState` Member der [EXCEPTION_INFO-Struktur](../../../extensibility/debugger/reference/exception-info.md) verwendet, um den Zustand der Ausnahme anzugeben und anzugeben, was dagegen getan werden kann.
 
-Diese Werte werden auch zum Übergeben der [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) Methode zum Festlegen des Status für alle Ausnahmen.
+Diese Werte werden auch an die [SetAllExceptions-Methode](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) übergeben, um den Status aller Ausnahmen festzulegen.
 
-Diese Flags können mit einem bitweisen OR kombiniert werden.
+Diese Flags können mit einem bitweisen ODER kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
 - [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft-Dokumentation
+title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineName_V7
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03b2566d2c93181439ddecb9d87c5da59b6e6090
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351144"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722081"
 ---
-# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+# <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> ALS VERALTET MARKIERT. VERWENDEN SIE NICHT.
+> Veraltet. NICHT VERWENDEN.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,17 +44,17 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>Parameter
 
 `pbstrHostMachineName`\
-[out] Gibt den Namen des Computers in der das Programm ausgeführt wird.
+[out] Gibt den Namen des Computers zurück, auf dem das Programm ausgeführt wird.
 
 ## <a name="return-value"></a>Rückgabewert
 
-Eine Implementierung sollte immer zurückgeben `E_NOTIMPL`.
+Eine Implementierung sollte `E_NOTIMPL`immer zurückgegeben werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 > [!WARNING]
-> Ab Visual Studio 2005, diese Methode wird nicht mehr verwendet und sollte immer zurückgeben `E_NOTIMPL`.
+> Ab Visual Studio 2005 wird diese Methode nicht `E_NOTIMPL`mehr verwendet und sollte immer zurückgegeben werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2 | Microsoft-Dokumentation
+title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94adbbefc6307d18906c3c88de3c8a68e74d04a3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351288"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734628"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
-Diese Schnittstelle weist den sitzungsbasierter Debug-Manager (SDM), ein gebundener Haltepunkt eine geladene Anwendung aufgehoben wurde.
+Diese Schnittstelle teilt dem Sitzungsdebug-Manager (SDM) mit, dass ein gebundener Haltepunkt von einem geladenen Programm nicht gebunden wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,30 +29,30 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die Debug-Engine (DE) implementiert diese Schnittstelle als Teil der Unterstützung für Haltepunkte an. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden (wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).
+ Das Debug-Modul (DE) implementiert diese Schnittstelle als Teil ihrer Unterstützung für Haltepunkte. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden `IDebugEvent2` (das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die Schnittstelle zuzugreifen).
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die DE erstellt und sendet dieses Ereignisobjekt, wenn für ein gebundener Haltepunkt aufgehoben wurde. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM angegeben wird, wenn diese an die zu debuggende Programm wird angefügt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, wenn ein gebundener Haltepunkt ungebunden ist. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugBreakpointUnboundEvent2`.
+ Die folgende Tabelle zeigt `IDebugBreakpointUnboundEvent2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Ruft ab, die nicht gebundene Haltepunkt.|
-|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Ruft den Grund ab, die, den der Haltepunkt aufgehoben wurde.|
+|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Ruft den Haltepunkt ab, der ungebunden wurde.|
+|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Ruft den Grund ab, warum der Haltepunkt ungebunden war.|
 
-## <a name="remarks"></a>Hinweise
- Bei eine Debug-Engine-DLL oder Klasse entladen wird, muss alle Breakpoints, die an Code in diesem Modul gebunden wurden die zu debuggende Programm wird aufgehoben. Ein `IDebugBreakpointUnboundEvent2` wird für jeden nicht gebundenen Haltepunkt gesendet.
+## <a name="remarks"></a>Bemerkungen
+ Wenn eine Debugmodul-DLL oder Klassen entlädt wird, müssen alle Haltepunkte, die an Code in diesem Modul gebunden waren, vom zu debuggenden Programm ungebunden sein. Für `IDebugBreakpointUnboundEvent2` jeden ungebundenen Haltepunkt wird ein gesendet.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

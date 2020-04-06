@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Microsoft-Dokumentation
+title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SetHitCount method
 - IDebugBoundBreakpoint2::SetHitCount method
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8e59fadb019124cca111f23e99220b77df2a88d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314472"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735416"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Legt die Trefferanzahl für den gebundenen Haltepunkt fest.
@@ -42,16 +42,16 @@ int SetHitCount( 
 
 ## <a name="parameters"></a>Parameter
 `dwHitCount`\
-[in] Die Trefferanzahl festgelegt.
+[in] Die zu setzende Trefferanzahl.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Status des `BPS_DELETED` gebundenen Haltepunktobjekts auf (Teil der BP_STATE-Enumeration) festgelegt ist. [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
 
-## <a name="remarks"></a>Hinweise
- Die Trefferanzahl ist die Anzahl wie oft dieser Haltepunkt bei der aktuellen Ausführung der Sitzung ausgelöst wurde.
+## <a name="remarks"></a>Bemerkungen
+ Die Trefferanzahl gibt an, wie oft dieser Haltepunkt während des aktuellen Ablaufs der Sitzung ausgelöst wurde.
 
- Diese Methode wird von der Debug-Engine aktualisiert die aktuelle Trefferanzahl an diesem Haltepunkt in der Regel aufgerufen werden.
+ Diese Methode wird in der Regel vom Debugmodul aufgerufen, um die aktuelle Trefferanzahl auf diesem Haltepunkt zu aktualisieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Microsoft-Dokumentation
+title: BPRESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350483"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737722"
 ---
-# <a name="bpresifields"></a>BPRESI_FIELDS
-Gibt die Informationen über die erfolgreiche Auflösung eines Haltepunkts abgerufen werden sollen.
+# <a name="bpresi_fields"></a>BPRESI_FIELDS
+Gibt die Informationen an, die über die erfolgreiche Auflösung eines Haltepunkts abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,32 +48,32 @@ public enum enum_BPRESI_FIELDS {
 
 ## <a name="fields"></a>Felder
 `BPRESI_BPRESLOCATION`\
-Initialisieren und Verwenden der `bpResLocation` (Position des Haltepunkts Auflösung) Feld der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur.
+Initialisieren/verwenden `bpResLocation` Sie das Feld (Breakpoint-Auflösungsposition) der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur.
 
 `BPRESI_PROGRAM`\
-Initialisieren und Verwenden der `pProgram` Feld der `BP_RESOLUTION_INFO` Struktur.
+Initialisieren/verwenden `pProgram` Sie das `BP_RESOLUTION_INFO` Feld der Struktur.
 
 `BPRESI_THREAD`\
-Initialisieren und Verwenden der `pThread` Feld der `BP_RESOLUTION_INFO` Struktur.
+Initialisieren/verwenden `pThread` Sie das `BP_RESOLUTION_INFO` Feld der Struktur.
 
 `BPRESI_ALLFIELDS`\
 Gibt alle Felder an.
 
-## <a name="remarks"></a>Hinweise
-Übergeben der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) Methode an, welche Felder der der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) sind, dass die Struktur initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+Wird an die [GetResolutionInfo-Methode](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) übergeben, um anzugeben, welche Felder der [BP_RESOLUTION_INFO-Struktur](../../../extensibility/debugger/reference/bp-resolution-info.md) initialisiert werden sollen.
 
-Diese Flags werden auch verwendet, welche Felder der an die `BP_RESOLUTION_INFO` -Struktur sind gültig und verwendet, wenn dieser Struktur zurückgegeben wird.
+Diese Flags werden auch verwendet, `BP_RESOLUTION_INFO` um anzugeben, welche Felder der Struktur verwendet werden und gültig sind, wenn diese Struktur zurückgegeben wird.
 
-Diese Werte können kombiniert werden, mit einer bitweisen `OR`.
+Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

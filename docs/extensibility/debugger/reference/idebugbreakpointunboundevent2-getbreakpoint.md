@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetBreakpoint | Microsoft-Dokumentation
+title: IDebugBreakpointUnboundEvent2::GetBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetBreakpoint
 ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db0042e3c7d6f4c8ce7eabeef6e488d18cd0ad27
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6db69becfb16ebabbab782485e170bc761fd4577
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352812"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734728"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
-Ruft ab, die nicht gebundene Haltepunkt.
+Ruft den Haltepunkt ab, der ungebunden wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetBreakpoint(
 
 ## <a name="parameters"></a>Parameter
 `ppBP`\
-[out] Gibt eine [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Objekt, das den Haltepunkt darstellt, die aufgehoben wurden.
+[out] Gibt ein [IDebugBoundBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) zurück, das den Haltepunkt darstellt, der ungebunden wurde.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CBreakpointUnboundDebugEventBase** -Objekt, das macht die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CBreakpointUnboundDebugEventBase-Objekt** implementiert wird, das die [IDebugBreakpointUnboundEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) verfügbar macht.
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(
@@ -76,6 +76,6 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

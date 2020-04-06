@@ -1,51 +1,51 @@
 ---
-title: Debuggerkonzepte | Microsoft-Dokumentation
+title: Debuggerkonzepte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d9905281c83287b8b54f57a233c2056462226f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345933"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738984"
 ---
 # <a name="debugger-concepts"></a>Debuggerkonzepte
-Um auf das Visual Studio-Debug-Paket zu erstellen, müssen Sie mit der Architekturen, in das Entwerfen des Pakets verwendet Konzepten vertraut sein.
+Um auf dem Visual Studio-Debugpaket aufzubauen, müssen Sie mit den beim Entwerfen des Pakets verwendeten Architekturkonzepten vertraut sein.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Debugsitzung](../../extensibility/debugger/debug-session.md) erläutert die Rolle einer Sitzung in der debugging-Architektur.
+ [Debugsitzung](../../extensibility/debugger/debug-session.md) Erläutert die Rolle einer Sitzung in der Debugarchitektur.
 
- [Server](../../extensibility/debugger/servers-visual-studio-sdk.md) definiert, welche ein Server, die im Hinblick auf die Debuggen-Architektur, sowohl physische als auch abstrakte ausgedrückt ist.
+ [Server](../../extensibility/debugger/servers-visual-studio-sdk.md) Definiert, was ein Server in Bezug auf die Debug-Architektur ist, sowohl in abstrakten als auch in physischen Begriffen.
 
- [Portieren von Lieferanten](../../extensibility/debugger/port-suppliers.md) definiert, welche ein portanbieters ist im Hinblick auf die Architektur zu debuggen.
+ [Hafenlieferanten](../../extensibility/debugger/port-suppliers.md) Definiert, was ein Portlieferant in Bezug auf die Debug-Architektur ist.
 
- [Ports](../../extensibility/debugger/ports.md) definiert, welche ein Port ist, im Hinblick auf die Architektur zu debuggen.
+ [Häfen](../../extensibility/debugger/ports.md) Definiert, was ein Port in Bezug auf die Debug-Architektur ist.
 
- [Prozesse](../../extensibility/debugger/processes.md) definiert, welche ein Prozess ist, im Hinblick auf die Architektur zu debuggen.
+ [Prozesse](../../extensibility/debugger/processes.md) Definiert, was ein Prozess in Bezug auf die Debug-Architektur ist.
 
- [Programmieren von Knoten](../../extensibility/debugger/program-nodes.md) definiert einen Programm-Knoten im Hinblick auf die Debuggen-Architektur, einschließlich, wie er sich selbst und der Prozess in läuft identifizieren kann.
+ [Programmknoten](../../extensibility/debugger/program-nodes.md) Definiert einen Programmknoten in Bezug auf die Debug-Architektur, einschließlich der Art und Weise, wie er sich selbst identifizieren kann und in welchen Prozess er ausgeführt wird.
 
- [Programme](../../extensibility/debugger/programs.md) definiert ein Programm im Hinblick auf die Architektur zu debuggen.
+ [Programme](../../extensibility/debugger/programs.md) Definiert ein Programm in Bezug auf die Debug-Architektur.
 
- [Threads](../../extensibility/debugger/threads.md) definiert die Merkmale des Threads im Hinblick auf die Architektur zu debuggen.
+ [Threads](../../extensibility/debugger/threads.md) Definiert die Eigenschaften von Threads in Bezug auf die Debug-Architektur.
 
- [Stapelrahmen](../../extensibility/debugger/stack-frames.md) definiert ein Stapelrahmen entspricht im Hinblick auf die Architektur zu debuggen. Ein Stapelrahmen ist eine Abstraktion eines Stapels, der den Ausführungskontext eines Threads bereitstellt.
+ [Stapelrahmen](../../extensibility/debugger/stack-frames.md) Definiert einen Stapelrahmen in Bezug auf die Debug-Architektur. Ein Stapelrahmen ist eine Abstraktion eines Stapels, die den Ausführungskontext eines Threads bereitstellt.
 
- [Module](../../extensibility/debugger/modules.md) definiert ein Modul, in Bezug auf die Architektur als physische Container für Code, z. B. eine ausführbare Datei oder eine DLL debuggen.
+ [Module](../../extensibility/debugger/modules.md) Definiert ein Modul in Bezug auf die Debug-Architektur als physischen Codecontainer, z. B. eine ausführbare Datei oder eine DLL.
 
- [Haltepunkte](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) definiert die drei Typen von Haltepunkten, Ausstehend "," gebunden und Fehler – in Bezug auf die Architektur zu debuggen.
+ [Haltepunkte](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Definiert die drei Arten von Haltepunkten – ausstehend, gebunden und fehlerfrei – in Bezug auf die Debug-Architektur.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md) wird erläutert, wie die Debug-Engine (DE) gleichzeitig innerhalb von Code, Dokumentationen und Ausdruck Auswertung Kontexten ausgeführt wird. Beschreibt, für jede der drei Kontexten, Speicherort, Position oder Auswertung, die für sie relevant.
+ [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert, wie das Debugmodul (DE) gleichzeitig in Code-, Dokumentations- und Ausdrucksauswertungskontexten arbeitet. Beschreibt für jeden der drei Kontexte den Standort, die Position oder die Bewertung, die für ihn relevant sind.
 
- [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md) bietet eine Übersicht über die Debuggen in Visual Studio-Komponenten, die die Debug-Engine (DE), die ausdrucksauswertung (EE) und die Symbol-Handler (SH) enthalten.
+ [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md) Bietet eine Übersicht über die Visual Studio-Debuggingkomponenten, zu denen das Debugmodul (DE), der Ausdrucksevaluator (EE) und der Symbolhandler (SH) gehören.
 
- [Debugtasks](../../extensibility/debugger/debugging-tasks.md) enthält Links zu verschiedenen Debuggingaufgaben ausführen, z. B. Starten eines Programms und Auswerten von Ausdrücken.
+ [Debug-Aufgaben](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debugaufgaben, z. B. zum Starten eines Programms und Auswerten von Ausdrücken.

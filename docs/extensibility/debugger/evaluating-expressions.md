@@ -1,5 +1,5 @@
 ---
-title: Auswerten von Ausdrücken | Microsoft-Dokumentation
+title: Auswerten von Ausdrücken | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b2af1cdf299b3e3f2c714fa569fa295a4e1d4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315427"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738830"
 ---
-# <a name="evaluate-expressions"></a>Auswerten von Ausdrücken
-Ausdrücke werden von Zeichenfolgen, die vom übergebenen erstellt die **"Auto"** , **Watch**, **Schnellüberwachung**, oder **direkt** Windows. Wenn ein Ausdruck ausgewertet wird, generiert er eine druckbare Zeichenfolge, die den Namen und Typ der Variablen "oder" Argument "und" den Wert enthält. Diese Zeichenfolge wird in den zugehörigen IDE-Fenster angezeigt.
+# <a name="evaluate-expressions"></a>Ausdrücken auswerten
+Ausdrücke werden aus Zeichenfolgen erstellt, die aus den Fenstern **Autos**, **Watch**, **QuickWatch**oder **Immediate** übergeben werden. Wenn ein Ausdruck ausgewertet wird, generiert er eine druckbare Zeichenfolge, die den Namen und Typ der Variablen oder des Arguments und ihren Wert enthält. Diese Zeichenfolge wird im entsprechenden IDE-Fenster angezeigt.
 
 ## <a name="implementation"></a>Implementierung
- Ausdrücke werden ausgewertet, wenn ein Programm an einem Haltepunkt beendet wurde. Der Ausdruck selbst wird durch dargestellt eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle, die einen analysierten Ausdruck darstellt, die für die Bindung und der Auswertung innerhalb des Kontexts des angegebenen Ausdrucks Auswertung bereit ist. Bestimmt Kontexts für die ausdrucksauswertung, die die Debug-Engine (DE) durch die Implementierung bereitstellt, der Stapelrahmen der [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstelle.
+ Ausdrücke werden ausgewertet, wenn ein Programm an einem Haltepunkt angehalten wurde. Der Ausdruck selbst wird durch eine [IDebugExpression2-Schnittstelle](../../extensibility/debugger/reference/idebugexpression2.md) dargestellt, die einen analysierten Ausdruck darstellt, der für die Bindung und Auswertung innerhalb des angegebenen Ausdrucksauswertungskontexts bereit ist. Der Stapelrahmen bestimmt den Ausdrucksauswertungskontext, den das Debugmodul (DE) durch Implementieren der [IDebugExpressionContext2-Schnittstelle](../../extensibility/debugger/reference/idebugexpressioncontext2.md) bereitstellt.
 
- Erhalten eine Benutzerzeichenfolge und ein [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle, eine Debug-Engine (DE) erhalten eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Schnittstelle, übergeben Sie die Benutzerzeichenfolge, die die [ IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Methode. Die IDebugExpression2-Schnittstelle, die zurückgegeben wird, enthält den analysierten Ausdruck bereit, für die Evaluierung.
+ Bei einer Benutzerzeichenfolge und einer [IDebugExpressionContext2-Schnittstelle](../../extensibility/debugger/reference/idebugexpressioncontext2.md) kann ein Debugmodul (DE) eine [IDebugExpression2-Schnittstelle](../../extensibility/debugger/reference/idebugexpression2.md) abrufen, indem es die Benutzerzeichenfolge an die [IDebugExpressionContext2::ParseText-Methode](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) übergibt. Die zurückgegebene IDebugExpression2-Schnittstelle enthält den analysierten Ausdruck, der für die Auswertung bereit ist.
 
- Mit der `IDebugExpression2` -Schnittstelle, die DE erhalten den Wert des Ausdrucks durch synchrone oder asynchrone ausdrucksauswertung mit [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Dieser Wert zusammen mit dem Namen und Typ der Variablen oder des Arguments, wird für die Anzeige der IDE gesendet. Der Wert, Name und Typ werden durch dargestellt eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle.
+ Mit `IDebugExpression2` der Schnittstelle kann die DE den Wert des Ausdrucks durch synchrone oder asynchrone Ausdrucksauswertung mithilfe von [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)abrufen. Dieser Wert wird zusammen mit dem Namen und Typ der Variablen oder des Arguments zur Anzeige an die IDE gesendet. Der Wert, der Name und der Typ werden durch eine [IDebugProperty2-Schnittstelle](../../extensibility/debugger/reference/idebugproperty2.md) dargestellt.
 
- Um die Auswertung des Ausdrucks zu aktivieren, muss eine bereitgestellten Kompatibilitätsrichtlinie implementieren die [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) und [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstellen. Synchrone und asynchrone Auswertung erfordern die Implementierung der [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) Methode.
+ Um die Ausdrucksauswertung zu aktivieren, muss eine DE die Schnittstellen [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) und [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) implementieren. Sowohl die synchrone als auch die asynchrone Auswertung erfordern die Implementierung der [IDebugProperty2::GetPropertyInfo-Methode.](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Stapelrahmen](../../extensibility/debugger/stack-frames.md)
-- [Ausdrucksauswertungskontext](../../extensibility/debugger/expression-evaluation-context.md)
-- [Tasks zum Debuggen](../../extensibility/debugger/debugging-tasks.md)
+- [Ausdrucksbewertungskontext](../../extensibility/debugger/expression-evaluation-context.md)
+- [Debug-Aufgaben](../../extensibility/debugger/debugging-tasks.md)

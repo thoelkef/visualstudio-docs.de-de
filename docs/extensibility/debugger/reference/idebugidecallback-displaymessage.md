@@ -1,27 +1,27 @@
 ---
-title: IDebugIDECallback::DisplayMessage | Microsoft-Dokumentation
+title: IDebugIDECallback::DisplayMessage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback::DisplayMessage
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a80fbc6e621e4cf1619aa310e5f7cd8beba47d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7073cc3d142d0faabe145b775780c177fbf0d732
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349068"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727856"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-Sendet die angegebenen Meldungszeichenfolge Ausgabefenster des Debuggers.
+Sendet die angegebene Nachrichtenzeichenfolge an das Ausgabefenster des Debuggers.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,10 +39,10 @@ int DisplayMessage (
 
 ## <a name="parameters"></a>Parameter
 `szMessage`\
-[in] Zeichenfolge im Ausgabefenster des Debuggers angezeigt.
+[in] Nachrichtenzeichenfolge, die im Ausgabefenster des Debuggers angezeigt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

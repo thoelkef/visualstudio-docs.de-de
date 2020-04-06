@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakEvent2 | Microsoft-Dokumentation
+title: IDebugBreakEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c500c6a54cc63dbcb8c7c6ad23c92d2105b9842
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314402"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735391"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-Diese Schnittstelle weist den sitzungsbasierter Debug-Manager (SDM), dass eine asynchrone Unterbrechung erfolgreich abgeschlossen wurde.
+Diese Schnittstelle teilt dem Sitzungsdebug-Manager (SDM) mit, dass ein asynchroner Unterbrechungsfehler erfolgreich abgeschlossen wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,22 +29,22 @@ IDebugBreakEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle, um Unterbrechungen für Benutzer in einem Programm zu unterstützen. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden (wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).
+ Die DE implementiert diese Schnittstelle, um Benutzerunterbrechungen in einem Programm zu unterstützen. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden `IDebugEvent2` (das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die Schnittstelle zuzugreifen).
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die SDM-Aufrufe [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) Wenn der Benutzer hat angefordert, die zu debuggende Programm wird zum angehalten werden. Wenn die Anwendung wurde erfolgreich angehalten wurde, sendet der DE der `IDebugBreakEvent2` Ereignis. Dieses Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM angegeben wird, wenn diese an die zu debuggende Programm wird angefügt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Das SDM ruft [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) auf, wenn der Benutzer angefordert hat, dass das zu debuggende Programm angehalten wird. Wenn das Programm erfolgreich angehalten wurde, `IDebugBreakEvent2` sendet die DE das Ereignis. Dieses Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
-## <a name="remarks"></a>Hinweise
- Ein Benutzer kann auswählen, z. B. die **alle unterbrechen** Befehl die **Debuggen** Menü, um ein Programm verlassen, der eine unendliche Schleife ausgeführt wird. Das SDM teilt dem Programm beenden durch Aufrufen von [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). Der DE sendet `IDebugBreakEvent2` , die Anwendung schließlich nicht mehr.
+## <a name="remarks"></a>Bemerkungen
+ Beispielsweise kann ein Benutzer im **Debug-Menü** den Befehl **Alle unterbrechen** auswählen, um aus einem Programm auszubrechen, das eine Endlosschleife ausführt. Das SDM weist das Programm an, durch Aufrufen von [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)aufzuhören. Die DE `IDebugBreakEvent2` sendet, wenn das Programm endlich beendet wird.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

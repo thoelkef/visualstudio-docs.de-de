@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointErrorEvent2::GetErrorBreakpoint | Microsoft-Dokumentation
+title: IDebugBreakpointErrorEvent2::GetErrorBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 629dbfcd86a1401ed8d5ebf64d4e06723fa82398
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe22f18d4574ffde48cea975bff8d8f5801ca465
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352979"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735075"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
-Ruft eine [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) -Objekt, das den Grund beschreibt, warum ein Haltepunkt wurde nicht gebunden.
+Ruft ein [IDebugErrorBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) ab, das den Grund beschreibt, warum ein Haltepunkt nicht gebunden wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ int GetErrorBreakpoint( 
 
 ## <a name="parameters"></a>Parameter
 `ppErrorBP`\
-[out] Gibt eine [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekt, das die Warnung oder den Fehler beschreibt.
+[out] Gibt ein [IDebugErrorBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) zurück, das die Warnung oder den Fehler beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Nach der `IDebugErrorBreakpoint2` Schnittstelle abgerufen wird, rufen Sie die [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) -Methode zum Abrufen einer [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) Objekt. Die [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) Methode kann verwendet werden, um zu bestimmen, einen ungültigen Speicherort, ein ungültiger Ausdruck oder Gründe, warum der ausstehenden Haltepunkt nicht gebunden wurde, wie z. B. Code, der noch nicht geladen, und so weiter.
+## <a name="remarks"></a>Bemerkungen
+Nachdem `IDebugErrorBreakpoint2` die Schnittstelle abgerufen wurde, rufen Sie die [GetBreakpointResolution-Methode](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) auf, um ein [IDebugErrorBreakpointResolution2-Objekt](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) abzurufen. Anschließend kann die [GetResolutionInfo-Methode](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) verwendet werden, um einen ungültigen Speicherort, einen ungültigen Ausdruck oder Gründe zu ermitteln, warum der ausstehende Haltepunkt nicht gebunden wurde, z. B. Code, der noch nicht geladen wurde, usw.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CBreakpointSetDebugEventBase** -Objekt, das macht die [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CBreakpointSetDebugEventBase-Objekt** implementiert wird, das die [IDebugBreakpointErrorEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) verfügbar macht.
 
 ```cpp
 STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(
@@ -78,7 +78,7 @@ STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

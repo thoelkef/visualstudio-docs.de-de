@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Microsoft-Dokumentation
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346523"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737645"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Gibt an, das Protokoll für die Kommunikation zwischen einem debugserver und das debugpaket (DE) verwendet wird.
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
+Gibt das Protokoll an, das für die Kommunikation zwischen einem Debugserver und dem Debugpaket (DE) verwendet wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,36 +53,36 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Felder
 `CONNECTION_NONE`\
-Auf einem Server hat keine Verbindung hergestellt wurde.
+Es wurde keine Verbindung zu einem Server hergestellt.
 
 `CONNECTION_UNKNOWN`\
-Eine Verbindung hergestellt wurde, aber es weist einen unbekannten Typ.
+Es wurde eine Verbindung hergestellt, die jedoch von einem unbekannten Typ ist.
 
 `CONNECTION_LOCAL`\
-Verbindung ist mit einem lokalen Server.
+Die Verbindung erfolgt mit einem lokalen Server.
 
 `CONNECTION_PIPE`\
-Verbindung wird über eine named Pipe.
+Die Verbindung erfolgt über eine named pipe.
 
 `CONNECTION_TCPIP`\
-Verbindung wird die TCP/IP verwendet.
+Die Verbindung verwendet TCP/IP.
 
 `CONNECTION_HTTP`\
-Verbindung wird HTTP (über einen Webserver) verwendet.
+Die Verbindung verwendet HTTP (über einen Webserver).
 
 `CONNECTION_OTHER`\
-Eine andere Art von Verbindung eingerichtet wurde (dieser Wert wird derzeit nicht verwendet).
+Es wurde ein anderer Verbindungstyp eingerichtet (dieser Wert wird derzeit nicht verwendet).
 
-## <a name="remarks"></a>Hinweise
-Diese Werte werden zurückgegeben, aus der [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Diese Werte werden von der [GetConnectionProtocol-Methode](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

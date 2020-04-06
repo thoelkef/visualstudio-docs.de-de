@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2 | Microsoft-Dokumentation
+title: IDebugEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2 interface
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87184481c5d01e74d284b175078b67f6f2612d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310598"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729911"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-Diese Schnittstelle wird verwendet, für die Kommunikation sowohl sehr wichtige Debuginformationen, z. B. an einem Haltepunkt beendet und nicht kritische Informationen, z. B. eine Debugmeldung.
+Diese Schnittstelle wird verwendet, um sowohl wichtige Debuginformationen, z. B. das Anhalten an einem Haltepunkt, als auch nicht kritische Informationen, z. B. eine Debugnachricht, zu kommunizieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IDebugEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die Debug-Engine (DE) und benutzerdefinierte anschlusslieferant implementieren diese Schnittstelle auf dasselbe Objekt wie alle anderen Event-Schnittstellen.
+ Das Debugmodul (DE) und der benutzerdefinierte Portlieferant implementieren diese Schnittstelle auf demselben Objekt wie alle anderen Ereignisschnittstellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Mithilfe der Benutzeroberfläche-ID (IID)-Argument übergeben, um [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) oder [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md), ruft die Sitzungs-Debug-Manager (SDM) [QueryInterface](/cpp/atl/queryinterface) auf die `IDebugEvent2` Schnittstelle zum Abrufen die entsprechende Schnittstelle.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Mithilfe des IID-Arguments (Interface ID), das [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) oder [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md)angegeben wird, ruft der Sitzungsdebug-Manager (SDM) [QueryInterface](/cpp/atl/queryinterface) auf der `IDebugEvent2` Schnittstelle auf, um die entsprechende Ereignisschnittstelle abzufragen.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugEvent2`.
+ Die folgende Tabelle zeigt `IDebugEvent2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Ruft die Attribute für dieses Ereignis Debuggen.|
+|[Getattributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Ruft die Attribute für dieses Debugereignis ab.|
 
-## <a name="remarks"></a>Hinweise
- Schnittstellen für das spezifische Ereignis, z. B. [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), leiten Sie nicht über die IDebugEvent2-Schnittstelle, sondern werden stattdessen als eine separate Schnittstelle auf dasselbe Objekt wie implementiert `IDebugEvent2`.
+## <a name="remarks"></a>Bemerkungen
+ Die spezifischeren Ereignisschnittstellen, z. B. [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), leiten sich nicht von der IDebugEvent2-Schnittstelle `IDebugEvent2`ab, sondern werden stattdessen als separate Schnittstelle für dasselbe Objekt wie implementiert.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
-- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md)
+- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

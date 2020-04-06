@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Microsoft-Dokumentation
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324494"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736859"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-Gibt die Modifizierer für ein Feld an.
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
+Gibt Modifikatoren für einen Feldtyp an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -106,96 +106,96 @@ public enum enum_FIELD_MODIFIERS {
 
 ## <a name="fields"></a>Felder
 `FIELD_MOD_ACCESS_TYPE`\
-Gibt an, dass das Feld nicht zugegriffen werden kann.
+Gibt an, dass auf das Feld nicht zugegriffen werden kann.
 
 `FIELD_MOD_ACCESS_PUBLIC`\
-Gibt an, dass das Feld über öffentlichen Zugriff hat.
+Gibt an, dass das Feld öffentlichen Zugriff hat.
 
 `FIELD_MOD_ACCESS_PROTECTED`\
-Gibt an, dass das Feld Zugriff geschützt ist.
+Gibt an, dass das Feld über geschützten Zugriff verfügt.
 
 `FIELD_MOD_ACCESS_PRIVATE`\
-Gibt an, dass das Feld privaten Zugriff hat.
+Gibt an, dass das Feld über privaten Zugriff verfügt.
 
 `FIELD_MOD_NOMODIFIERS`\
-Gibt an, dass das Feld keine Modifizierer verfügt.
+Gibt an, dass das Feld keine Modifikatoren enthält.
 
 `FIELD_MOD_STATIC`\
 Gibt an, dass das Feld statisch ist.
 
 `FIELD_MOD_CONSTANT`\
-Gibt an, dass das Feld eine Konstante ist.
+Gibt an, dass es sich bei dem Feld um eine Konstante handelt.
 
 `FIELD_MOD_TRANSIENT`\
 Gibt an, dass das Feld vorübergehend ist.
 
 `FIELD_MOD_VOLATILE`\
-Gibt an, dass das Feld "volatile" ist.
+Gibt an, dass das Feld flüchtig ist.
 
 `FIELD_MOD_ABSTRACT`\
 Gibt an, dass das Feld abstrakt ist.
 
 `FIELD_MOD_NATIVE`\
-Gibt an, dass das Feld native.
+Gibt an, dass das Feld nativ ist.
 
 `FIELD_MOD_SYNCHRONIZED`\
-Gibt an, dass das Feld synchronisiert wird.
+Gibt an, dass das Feld synchronisiert ist.
 
 `FIELD_MOD_VIRTUAL`\
 Gibt an, dass das Feld virtuell ist.
 
 `FIELD_MOD_INTERFACE`\
-Gibt an, dass das Feld eine Schnittstelle.
+Gibt an, dass es sich bei dem Feld um eine Schnittstelle handelt.
 
 `FIELD_MOD_FINAL`\
-Gibt an, dass das Feld Ihrem endgültigen Zustand vorliegt.
+Gibt an, dass das Feld endgültig ist.
 
 `FIELD_MOD_SENTINEL`\
-Gibt an, dass das Feld Sentinel.
+Gibt an, dass es sich bei dem Feld um einen Sentinel handelt.
 
 `FIELD_MOD_INNERCLASS`\
-Gibt an, dass das Feld einer inneren Klasse.
+Gibt an, dass es sich bei dem Feld um eine innere Klasse handelt.
 
 `FIELD_TYPE_OPTIONAL`\
 Gibt an, dass das Feld optional ist.
 
 `FIELD_MOD_BYREF`\
-Gibt an, dass das Feld mit einem Verweisargument ist. Dies ist insbesondere für Methodenargumente.
+Gibt an, dass es sich bei dem Feld um ein Referenzargument handelt. Dies ist speziell für Methodenargumente vorgesehen.
 
 `FIELD_MOD_HIDDEN`\
-Gibt an, dass das Feld in einem anderen Kontext angezeigt oder ausgeblendet werden muss. z. B. [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statischen lokalen Variablen.
+Gibt an, dass das Feld ausgeblendet oder in einem anderen Kontext angezeigt werden muss. z. [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] B. statische Locals.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Gibt an, dass das Feld repräsentiert den ein Objekt mit einer `IUnknown` Schnittstelle.
+Gibt an, dass das `IUnknown` Feld ein Objekt mit einer Schnittstelle darstellt.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Gibt an, dass das Feld einen speziellen Namen, z. B. `.ctor` für einen Konstruktor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).
+Gibt an, dass das Feld einen `.ctor` speziellen Namen[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] hat, z. B. für einen Konstruktor (nur).
 
 `FIELD_MOD_HIDEBYSIG`\
-Gibt an, dass das Feld enthält den `Overloads` Schlüsselwort angewendet wird ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).
+Gibt an, dass `Overloads` auf das[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] Feld das Schlüsselwort angewendet wurde (nur).
 
 `FIELD_MOD_WRITEONLY`\
-Gibt an, dass das Feld schreibgeschützt ist. Dieser Wert befindet sich nicht im `FIELD_MOD_ALL`, da nur mit diesen Feldern nur Schreibzugriff für die funktionsauswertung ist. Ein Benutzer muss explizit anfordern `FIELD_MOD_WRITEONLY` Felder.
+Gibt an, dass das Feld schreibgeschützt ist. Dieser Wert ist `FIELD_MOD_ALL`nicht in enthalten, da die einzige Verwendung solcher Schreibfelder für die Funktionsauswertung gilt. Ein Benutzer muss `FIELD_MOD_WRITEONLY` explizit nach Feldern fragen.
 
 `FIELD_MOD_ACCESS_MASK`\
 Gibt eine Maske für den Feldzugriff an.
 
 `FIELD_MOD_MASK`\
-Gibt eine Maske für feldmodifizierern an.
+Gibt eine Maske für Feldmodifikatoren an.
 
-## <a name="remarks"></a>Hinweise
-Verwendet für die `dwModifiers` Mitglied der [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.
+## <a name="remarks"></a>Bemerkungen
+Wird für `dwModifiers` das Element der [FIELD_INFO-Struktur](../../../extensibility/debugger/reference/field-info.md) verwendet.
 
-Diese Werte werden auch zum Übergeben der [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) Methode zum Filtern nach bestimmten Feldern.
+Diese Werte werden auch an die [EnumFields-Methode](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) übergeben, um nach bestimmten Feldern zu filtern.
 
-## <a name="requirements"></a>Anforderungen
-Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 - [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)

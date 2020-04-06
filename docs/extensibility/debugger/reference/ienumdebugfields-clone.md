@@ -1,5 +1,5 @@
 ---
-title: 'Ienumentbugfields:: Clone | Microsoft-Dokumentation'
+title: IEnumDebugFields::Klonen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Clone method
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5657e5db99bd062fa16aae9f9d8516bdbabc99f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1120e62d5dbed45f11b43ea0e131ee3173c1751c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727700"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716914"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Diese Methode gibt eine Kopie der aktuellen Enumeration als separates Objekt zurück.
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-vorgenommen Gibt eine Kopie dieser Enumeration als separates Objekt zurück.
+[out] Gibt eine Kopie dieser Enumeration als ein separates Objekt zurück.
 
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
- Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Kopie der-Enumeration hat denselben Zustand wie die ursprüngliche, wenn diese Methode aufgerufen wird. Allerdings sind die Status der Kopier-und ursprünglichen Zustände getrennt und können einzeln geändert werden.
+## <a name="remarks"></a>Bemerkungen
+ Die Kopie der Enumeration hat den gleichen Status wie das Original zum Zeitpunkt des Aufrufs dieser Methode. Die Zustände der Kopie und des Originals sind jedoch getrennt und können einzeln geändert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

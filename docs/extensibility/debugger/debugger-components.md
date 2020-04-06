@@ -1,5 +1,5 @@
 ---
-title: Debugger-Komponenten | Microsoft-Dokumentation
+title: Debuggerkomponenten | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,60 +7,60 @@ helpviewer_keywords:
 - components [Visual Studio SDK], debugging
 - debugging [Debugging SDK], components
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28afdd7f12e7d83b042f5c705c85fa567fdbb979
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345891"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739013"
 ---
 # <a name="debugger-components"></a>Debugger-Komponenten
-Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger wird als ein VSPackage implementiert und verwaltet die gesamte Debugsitzung. Die Debugsitzung umfasst die folgenden Elemente:
+Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger wird als VSPackage implementiert und verwaltet die gesamte Debugsitzung. Die Debugsitzung umfasst die folgenden Elemente:
 
-- **Debug-Paket:** Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Debugger bietet die gleiche Benutzeroberfläche unabhängig davon, was im Debugmodus befindet.
+- **Debugpaket:** Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger stellt die gleiche Benutzeroberfläche bereit, unabhängig davon, was gedebugft wird.
 
-- **Sitzungsbasierter Debug-Manager (SDM):** Bietet eine konsistente programmatische Benutzeroberfläche für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger für die Verwaltung einer Vielzahl von Debug-Engines. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- **Sitzungsdebug-Manager (SDM):** Stellt eine konsistente programmgesteuerte Schnittstelle zum [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger für die Verwaltung einer Vielzahl von Debugmodulen bereit. Es wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]von implementiert.
 
-- **Prozessbasierter Debug-Manager (PDM):** Verwaltet werden, für alle ausgeführten Instanzen des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], eine Liste aller Programme, die möglich, oder werden gedebuggt wird. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- **Prozess-Debug-Manager (PDM):** Verwaltet für alle ausgeführten Instanzen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], eine Liste aller Programme, die gedebuggt werden können oder werden. Es wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]von implementiert.
 
-- **Debug-Engine (DE):** Ist verantwortlich für die Überwachung einer zu debuggenden Programms kommuniziert den Status des ausgeführten Programms, das SDM und das PDM und interagieren mit der ausdrucksauswertung und symbolanbieter Echtzeitanalysen des Zustands eines Programms Speicher bereitzustellen und Variablen. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (für die Sprachen unterstützt) und von Drittanbietern, die ihre eigenen zur Laufzeit unterstützen möchten.
+- **Debug-Engine (DE):** Ist verantwortlich für die Überwachung eines zu debuggenden Programms, die Kommunikation des Status des laufenden Programms an das SDM und das PDM und die Interaktion mit dem Ausdrucksevaluator und Symbolanbieter, um eine Echtzeitanalyse des Zustands des Speichers und der Variablen eines Programms bereitzustellen. Es wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] von (für die Sprachen, die es unterstützt) und Drittanbietern implementiert, die ihre eigene Laufzeit unterstützen möchten.
 
-- **Ausdrucksauswertung (EE):** Bietet Unterstützung für dynamisch Auswerten von Variablen und Ausdrücke, die vom Benutzer bereitgestellt werden, wenn ein Programm zu einem bestimmten Zeitpunkt beendet wurde. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (für die Sprachen unterstützt) und von Drittanbietern, die ihre eigenen Sprachen unterstützen möchten.
+- **Ausdrucksevaluator (EE):** Bietet Unterstützung für die dynamische Auswertung von Variablen und Ausdrücken, die vom Benutzer bereitgestellt werden, wenn ein Programm an einem bestimmten Punkt angehalten wurde. Es wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] von (für die Sprachen, die es unterstützt) und Drittanbietern implementiert, die ihre eigenen Sprachen unterstützen möchten.
 
-- **Symbol-Dienstanbieter (SP):** So genannte ordnet Handler für ein Symbol, die Debugsymbole eines Programms mit einer ausgeführten Instanz des Programms, damit sinnvolle Informationen (z. B. auf der Source-Code zu debuggen, und klicken Sie mit der Auswertung des Ausdrucks) bereitgestellt werden kann. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (für die Common Language Runtime [CLR] Symbole und die Programmdatenbank-[PDB-Datei] symbol-Dateiformat) und von Drittanbietern, die ihre eigenen proprietären Methode zum Speichern von Debuginformationen zu haben.
+- **Symbolanbieter (SP):** Auch als Symbolhandler bezeichnet, ordnet die Debugsymbole eines Programms einer laufenden Instanz des Programms zu, sodass aussagekräftige Informationen bereitgestellt werden können (z. B. Debugging auf Quellcodeebene und Ausdrucksauswertung). Es wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] von (für die Common Language Runtime [CLR] Symbole und das Program DataBase [PDB] Symboldateiformat) und von Drittanbietern implementiert, die ihre eigene proprietäre Methode zum Speichern von Debugging-Informationen haben.
 
-  Das folgende Diagramm zeigt die Beziehung zwischen diesen Elementen der Visual Studio-Debugger.
+  Das folgende Diagramm zeigt die Beziehung zwischen diesen Elementen des Visual Studio-Debuggers.
 
-  ![Übersicht über die Komponenten Debuggen](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
+  ![Übersicht über das Debuggen von Komponenten](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Debuggen des Pakets](../../extensibility/debugger/debug-package.md) wird erläutert, das debugpaket, der ausgeführt, in wird der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell und behandelt die gesamte Benutzeroberfläche.
+ [Debug-Paket](../../extensibility/debugger/debug-package.md) Erläutert das Debugpaket, das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in der Shell ausgeführt wird und die gesamte Benutzeroberfläche verarbeitet.
 
- [Prozessbasierter Debug-Manager](../../extensibility/debugger/process-debug-manager.md) bietet eine Übersicht über die Funktionen von der PDM, wird der Prozess-Manager, die debuggt werden kann.
+ [Prozess-Debug-Manager](../../extensibility/debugger/process-debug-manager.md) Bietet einen Überblick über die Funktionen des PDM, der der Manager der Prozesse ist, die gedebuggt werden können.
 
- [Sitzungsbasierter Debug-Manager](../../extensibility/debugger/session-debug-manager.md) definiert, das SDM, für der IDE bietet eine einheitliche Ansicht der Debugsitzung. Das SDM verwaltet die DE.
+ [Sitzungsdebug-Manager](../../extensibility/debugger/session-debug-manager.md) Definiert das SDM, das der IDE eine einheitliche Ansicht der Debugsitzung bietet. Das SDM verwaltet die DE.
 
- [Debug-Engine](../../extensibility/debugger/debug-engine.md) beschreibt die Debuggen von Diensten, die die DE bereitstellt.
+ [Debug-Engine](../../extensibility/debugger/debug-engine.md) Dokumentiert die von der DE-Dienstdienstleiste angebotenen Debugdienst.
 
- [Betriebsmodi](../../extensibility/debugger/operational-modes.md) bietet einen Überblick über die in der IDE arbeiten kann drei Modi: Entwurfsmodus, Ausführungsmodus, und im Unterbrechungsmodus. Übergangsmechanismen werden ebenfalls erläutert.
+ [Betriebsmodi](../../extensibility/debugger/operational-modes.md) Bietet einen Überblick über die drei Modi, in denen die IDE betrieben werden kann: Entwurfsmodus, Ausführungsmodus und Unterbrechungsmodus. Übergangsmechanismen werden ebenfalls diskutiert.
 
- [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluator.md) erläutert den Zweck der EE zur Laufzeit.
+ [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluator.md) Erläutert den Zweck der EE zur Laufzeit.
 
- [Symbolanbieter](../../extensibility/debugger/symbol-provider.md) wird erläutert, wie zur Implementierung der symbolanbieter Variablen und Ausdrücke ausgewertet wird.
+ [Symbolanbieter](../../extensibility/debugger/symbol-provider.md) Erläutert, wie der Symbolanbieter bei der Implementierung Variablen und Ausdrücke auswertet.
 
- [Typ der Schnellansicht und den benutzerdefinierten Viewer](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) erläutert, welche eine typschnellansicht und benutzerdefinierter Viewer sind und welche Rolle spielt die ausdrucksauswertung unterstützt beide.
+ [Typvisualisierung und benutzerdefinierter Viewer](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Erläutert, was eine Typvisualisierung und ein benutzerdefinierter Viewer sind und welche Rolle der Ausdrucksauswertungswert bei der Unterstützung beider spielt.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) beschreibt die wichtigsten Konzepte für das Debuggen Architektur.
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
 
- [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md) wird erläutert, wie die DE gleichzeitig innerhalb von Code, Dokumentationen und Ausdruck Auswertung Kontexten ausgeführt wird. Beschreibt, für jede der drei Kontexten, Speicherort, Position oder Auswertung, die für sie relevant.
+ [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert, wie die DE gleichzeitig in Code-, Dokumentations- und Ausdrucksauswertungskontexten arbeitet. Beschreibt für jeden der drei Kontexte den Standort, die Position oder die Bewertung, die für ihn relevant sind.
 
- [Debugtasks](../../extensibility/debugger/debugging-tasks.md) enthält Links zu verschiedenen Debuggingaufgaben ausführen, z. B. Starten eines Programms und Auswerten von Ausdrücken.
+ [Debug-Aufgaben](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debugaufgaben, z. B. zum Starten eines Programms und Auswerten von Ausdrücken.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erste Schritte](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

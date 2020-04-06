@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints | Microsoft-Dokumentation
+title: IDebugBreakpointEvent2::EnumBreakpoints | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a74e726951297802b2e47c3501c083ac83ffa2a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352919"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735033"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Erstellt einen Enumerator für alle Breakpoints, die an der aktuellen Codeposition ausgelöst hat.
+Erstellt einen Enumerator für alle Haltepunkte, die am aktuellen Codespeicherort ausgelöst wurden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int EnumBreakpoints(
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt eine [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) -Objekt, das Listet alle Breakpoints, die dem aktuellen codespeicherort zugeordnet.
+[out] Gibt ein [IEnumDebugBoundBreakpoints2-Objekt](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) zurück, das alle Haltepunkte aufzählt, die dem aktuellen Codespeicherort zugeordnet sind.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Nicht alle Haltepunkte an einem bestimmten Standort möglicherweise zu einem bestimmten Zeitpunkt ausgelöst (z. B. ein Haltepunkt mit einer Bedingung wird nicht ausgelöst, bis diese Bedingung erfüllt wird).
+## <a name="remarks"></a>Bemerkungen
+ Nicht alle Haltepunkte an einem bestimmten Ort können zu einem bestimmten Zeitpunkt ausgelöst werden (z. B. wird ein Haltepunkt mit einer Bedingung erst ausgelöst, wenn diese Bedingung erfüllt ist).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

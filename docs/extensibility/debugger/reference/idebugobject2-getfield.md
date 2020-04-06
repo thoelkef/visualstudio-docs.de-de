@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField | Microsoft-Dokumentation
+title: IDebugObject2::GetField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetField method
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e491d98219f1cbb105af653dee15f25bb246c2d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317322"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726220"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Ruft den Typ dieses Objekts.
+Ruft den Typ dieses Objekts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetField(
 
 ## <a name="parameters"></a>Parameter
 `ppField`\
-[out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, andernfalls ein null-Wert.
+[out] Gibt ein [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) zurück, wenn kein NULL-Wert.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Ein Feld beschreibt den Typ des Objekts.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | Microsoft-Dokumentation
+title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc25fb53db918486029e931a06a9e2de37f81c5a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe778ba3ed80930a4cd7b4fa1170f286b3ccf6ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346313"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737522"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
+# <a name="debug_address"></a>DEBUG_ADDRESS
 Diese Struktur stellt eine Adresse dar.
 
 ## <a name="syntax"></a>Syntax
@@ -53,20 +53,20 @@ Die Prozess-ID.
 Die GUID des Moduls, das diese Adresse enthält.
 
 `tokClass`\
-Das Token identifiziert die Klasse oder eines Typs dieser Adresse.
+Das Token, das die Klasse oder den Typ dieser Adresse identifiziert.
 
 > [!NOTE]
-> Dieser Wert richtet sich nach einem symbolanbieter und hat daher keine allgemein Bedeutung außer als Bezeichner für einen Klassentyp.
+> Dieser Wert ist spezifisch für einen Symbolanbieter und hat daher keine andere allgemeine Bedeutung als als Bezeichner für einen Klassentyp.
 
 `addr`\
-Ein [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, die eine Vereinigung von Strukturen enthält, in denen einzelne Adresse beschrieben. Der Wert `addr`.`dwKind` stammt aus dem [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) -Enumeration, die erläutert, wie die Union zu interpretieren.
+Eine [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, die eine Vereinigung von Strukturen enthält, die die einzelnen Adresstypen beschreiben. Der `addr`Wert .`dwKind` stammt aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Aufzählung, in der erklärt wird, wie die Gewerkschaft zu interpretieren ist.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur wird zum Übergeben der [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) Methode gefüllt werden soll.
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur wird an die [GetAddress-Methode](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) übergeben, die ausgefüllt werden soll.
 
-**Warnung [C++ nur]**
+**Warnung [nur C++**
 
-Wenn `addr.dwKind` ist `ADDRESS_KIND_METADATA_LOCAL` und, wenn `addr.addr.addrLocal.pLocal` nicht ist ein null-Wert, wird Sie aufrufen müssen `Release` für den token auf:
+Wenn `addr.dwKind` `ADDRESS_KIND_METADATA_LOCAL` dies `addr.addr.addrLocal.pLocal` der Fall ist und wenn `Release` es sich nicht um einen Nullwert handelt, müssen Sie den Tokenzeiger aufrufen:
 
 ```
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -75,15 +75,15 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 }
 ```
 
-## <a name="requirements"></a>Anforderungen
-Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

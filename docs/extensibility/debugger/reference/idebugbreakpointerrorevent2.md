@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointErrorEvent2 | Microsoft-Dokumentation
+title: IDebugBreakpointErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bae4a63ef03ca3b8d3fa642f7333ff2357084b47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352934"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735040"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
-Diese Schnittstelle weist den sitzungsbasierter Debug-Manager (SDM), dass ein ausstehender Haltepunkt nicht kann, können Sie mit einem geladenen Programm entweder aufgrund einer Warnung oder einen Fehler gebunden werden.
+Diese Schnittstelle teilt dem Sitzungsdebug-Manager (SDM) mit, dass ein ausstehender Haltepunkt aufgrund einer Warnung oder eines Fehlers nicht an ein geladenes Programm gebunden werden konnte.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,31 +29,31 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle als Teil der Unterstützung für Haltepunkte an. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden (wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).
+ Die DE implementiert diese Schnittstelle als Teil ihrer Unterstützung für Haltepunkte. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden `IDebugEvent2` (das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die Schnittstelle zuzugreifen).
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die DE erstellt und sendet dieses Ereignisobjekt, wenn ein ausstehender Haltepunkt nicht gebunden werden kann, das derzeit debuggte Programm. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM angegeben wird, wenn diese an die zu debuggende Programm wird angefügt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, wenn ein ausstehender Haltepunkt nicht an das zu debuggende Programm gebunden werden kann. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugBreakpointErrorEvent2`.
+ Die folgende Tabelle zeigt `IDebugBreakpointErrorEvent2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Ruft die [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Schnittstelle, die die Warnung oder den Fehler beschreibt.|
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Ruft die [IDebugErrorBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) ab, die die Warnung oder den Fehler beschreibt.|
 
-## <a name="remarks"></a>Hinweise
- Wenn ein Haltepunkt gebunden ist, wird ein Ereignis, das SDM gesendet. Wenn der Haltepunkt nicht gebunden werden kann, eine `IDebugBreakpointErrorEvent2` gesendet wird; andernfalls, eine [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) gesendet wird.
+## <a name="remarks"></a>Bemerkungen
+ Immer wenn ein Haltepunkt gebunden ist, wird ein Ereignis an das SDM gesendet. Wenn der Haltepunkt nicht `IDebugBreakpointErrorEvent2` gebunden werden kann, wird eine gesendet. Andernfalls wird ein [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) gesendet.
 
- Z. B. wenn die Bedingung mit dem ausstehenden Haltepunkt verknüpften nicht analysiert oder ausgewertet, wird eine Warnung gesendet, dass der ausstehenden Haltepunkt zu diesem Zeitpunkt nicht gebunden werden kann. Dies kann auftreten, wenn der Code für den Haltepunkt noch nicht geladen wurde.
+ Wenn z. B. die dem ausstehenden Haltepunkt zugeordnete Bedingung nicht analysiert oder ausgewertet werden kann, wird eine Warnung gesendet, dass der ausstehende Haltepunkt derzeit nicht gebunden werden kann. Dies kann auftreten, wenn der Code für den Haltepunkt noch nicht geladen wurde.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

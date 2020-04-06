@@ -1,32 +1,32 @@
 ---
-title: Module | Microsoft-Dokumentation
+title: Module | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - modules
 - debugging [Debugging SDK], modules
 ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b231ee1eb84f41115a0892cda42a8b7e781e5e53
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: abdf76c7f5f031d2ef7f3bcac2bae8a2c508b783
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350675"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738345"
 ---
 # <a name="modules"></a>Module
-Im Hinblick auf die Debugger-Architektur eine *Modul*:
+In Bezug auf die Debugger-Architektur, ein *Modul*:
 
-- Ist ein physischer Container von Code, z.B. eine ausführbare Datei oder eine DLL-Datei.
+- Ein physischer Codecontainer, z. B. eine ausführbare Datei oder eine DLL.
 
-- Laden die Symbole und selbst beschreiben können. Modulbeschreibungen werden im Fenster "Module" von der IDE angezeigt.
+- Kann seine Symbole neu laden und sich selbst beschreiben. Modulbeschreibungen werden im Modulfenster der IDE angezeigt.
 
-- Wird durch dargestellt eine [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) Schnittstelle, die von einer Debug-Engine, um das Modul beschreiben erstellt.
+- Wird durch eine [IDebugModule2-Schnittstelle](../../extensibility/debugger/reference/idebugmodule2.md) dargestellt, die von einem Debugmodul erstellt wird, um das Modul zu beschreiben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

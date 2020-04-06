@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract | Microsoft-Dokumentation
+title: IDebugMemoryContext2::Subtrahieren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - Subtract method
 - IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a320b7c67cd2603dfea11983d2d62c344f347ab4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347016"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727439"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-Subtrahiert den angegebenen Wert aus dem aktuellen Kontext aus, und gibt Sie einen neuen Kontext zurück.
+Subtrahiert den angegebenen Wert vom aktuellen Kontext und gibt einen neuen Kontext zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,18 +44,18 @@ int Subtract(
 
 ## <a name="parameters"></a>Parameter
 `dwCount`\
-[in] Die Anzahl der Bytes von Arbeitsspeicher zu verringern.
+[in] Die Anzahl der Speicherbytes, die dekrementieren sollen.
 
 `ppMemCxt`\
-[out] Gibt eine neue [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt.
+[out] Gibt ein neues [IDebugMemoryContext2-Objekt](../../../extensibility/debugger/reference/idebugmemorycontext2.md) zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Ein Arbeitsspeicher-Kontext ist eine Adresse an, damit subtrahiert einen Wert aus einer Adresse generiert eine neue Adresse, die eine neue Kontextschnittstelle erforderlich sind.
+## <a name="remarks"></a>Bemerkungen
+ Ein Speicherkontext ist eine Adresse, sodass das Subtrahieren eines Werts von einer Adresse eine neue Adresse erzeugt, die eine neue Kontextschnittstelle erfordert.
 
- Diese Methode muss immer einen neuen Kontext, erzeugen, auch wenn die resultierende Adresse außerhalb des Speicherbereichs, der diesem Kontext zugeordnet ist. Die einzige Ausnahme hierbei ist, wenn kein Arbeitsspeicher kann, für den neuen Kontext belegt werden oder `ppMemCxt` ist ein null-Wert (der ein Fehler ist).
+ Diese Methode muss immer einen neuen Kontext erzeugen, auch wenn sich die resultierende Adresse außerhalb des speicherbereichs befindet, der diesem Kontext zugeordnet ist. Die einzige Ausnahme besteht darin, dass für den neuen `ppMemCxt` Kontext kein Speicher reserviert werden kann oder wenn es sich um einen NULL-Wert handelt (ein Fehler).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

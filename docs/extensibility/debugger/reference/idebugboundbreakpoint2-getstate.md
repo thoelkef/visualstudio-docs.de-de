@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetState | Microsoft-Dokumentation
+title: IDebugBoundBreakpoint2::GetState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - GetState method
 - IDebugBoundBreakpoint2::GetState method
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d930b1a68b97548c02edd35fa48ef8f3a1935181
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30e36880fda8b94eefcbe8b3110685b2114476a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314489"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735472"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
-Ruft den Zustand dieser gebundene Haltepunkt ab.
+Ruft den Status dieses gebundenen Haltepunkts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,13 +42,13 @@ int GetState( 
 
 ## <a name="parameters"></a>Parameter
 `pState`\
-[out] Gibt einen Wert aus der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) -Enumeration, die den Zustand des Haltepunkts beschreibt.
+[out] Gibt einen Wert [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) aus der BP_STATE-Enumeration zurück, die den Status des Haltepunkts beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese `CBoundBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugBoundBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) verfügbar macht.
 
 ```
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
@@ -70,6 +70,6 @@ HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

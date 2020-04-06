@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Microsoft-Dokumentation
+title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318368"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737392"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Gibt an, welche Informationen Sie über ein Debug-Verweis-Objekt abzurufen.
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
+Gibt an, welche Informationen zu einem Debugreferenzobjekt abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,25 +58,25 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Felder
 `DEBUGREF_INFO_NAME`\
-Initialisieren und Verwenden der `bstrName` Feld in der Struktur.
+Initialisieren/verwenden `bstrName` Sie das Feld in der Struktur.
 
 `DEBUGREF_INFO_TYPE`\
-Initialisieren und Verwenden der `bstrType` Feld in der Struktur.
+Initialisieren/verwenden `bstrType` Sie das Feld in der Struktur.
 
 `DEBUGREF_INFO_VALUE`\
-Initialisieren und Verwenden der `bstrValue` Feld in der Struktur.
+Initialisieren/verwenden `bstrValue` Sie das Feld in der Struktur.
 
 `DEBUGREF_INFO_ATTRIB`\
-Initialisieren und Verwenden der `dwAttrib` Feld in der Struktur.
+Initialisieren/verwenden `dwAttrib` Sie das Feld in der Struktur.
 
 `DEBUGREF_INFO_REFTYPE`\
-Initialisieren und Verwenden der `dwRefType` Feld in der Struktur.
+Initialisieren/verwenden `dwRefType` Sie das Feld in der Struktur.
 
 `DEBUGREF_INFO_REF`\
-Initialisieren und Verwenden der `pReference` Feld in der Struktur.
+Initialisieren/verwenden `pReference` Sie das Feld in der Struktur.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-Feld mit dem Wert sollte den Wert automatisch erweitert, für diesen Objekttyp enthalten.
+Das Wertfeld sollte den automatisch erweiterten Wert für diesen Objekttyp enthalten, sofern verfügbar.
 
 `DEBUGREF_INFO_NONE`\
 Gibt an, dass keine Flags festgelegt sind.
@@ -84,21 +84,21 @@ Gibt an, dass keine Flags festgelegt sind.
 `DEBUGREF_INFO_ALL`\
 Gibt eine Maske der Flags an.
 
-## <a name="remarks"></a>Hinweise
-Diese Flags werden an übergeben der [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) und [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) Methoden zum Erkennen der Felder der [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) sind, dass die Struktur initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+Diese Flags werden an die [EnumChildren-](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) und [GetReferenceInfo-Methoden](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) übergeben, um anzugeben, welche Felder der [DEBUG_REFERENCE_INFO-Struktur](../../../extensibility/debugger/reference/debug-reference-info.md) initialisiert werden sollen.
 
-Verwendet für die `dwFields` Mitglied der `DEBUG_REFERENCE_INFO` Struktur, um anzugeben, welche Felder sind gültig und verwendet, wenn die Struktur zurückgegeben wird.
+Wird für `dwFields` das `DEBUG_REFERENCE_INFO` Element der Struktur verwendet, um anzugeben, welche Felder verwendet werden und gültig sind, wenn die Struktur zurückgegeben wird.
 
-Diese Werte können kombiniert werden, mit einer bitweisen `OR`.
+Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)

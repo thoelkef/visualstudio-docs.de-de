@@ -1,29 +1,29 @@
 ---
-title: Debugsitzung | Microsoft-Dokumentation
+title: Debugsitzung | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sessions
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f539fe73263e6f58b96e63da1f766d372b11e57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 664bcc4790d642ec5ea006cc42b3cf29885e9018
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336513"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738996"
 ---
 # <a name="debug-session"></a>Debugsitzung
-Im Hinblick auf die Debugger-Architektur eine *Sitzung*:
+In Bezug auf die Debuggerarchitektur, eine *Sitzung*:
 
-- Ist der Satz aller Prozesse, verwandte oder, die gestartet oder aus einer einzelnen Instanz der IDE angefügt wurden.
+- Der Satz aller Prozesse, die von einer einzelnen Instanz der IDE gestartet oder angefügt wurden.
 
-- Wird durch ein sitzungsbasierter Debug-Manager (SDM) implementiert. Weitere Informationen finden Sie unter [Debuggen Sitzungs-Manager](../../extensibility/debugger/session-debug-manager.md).
+- Wird von einem Session-Debug-Manager (SDM) implementiert. Weitere Informationen finden Sie unter [Sitzungsdebug-Manager](../../extensibility/debugger/session-debug-manager.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Sitzungsbasierter Debug-manager](../../extensibility/debugger/session-debug-manager.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Sitzungsdebug-Manager](../../extensibility/debugger/session-debug-manager.md)
 - [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)

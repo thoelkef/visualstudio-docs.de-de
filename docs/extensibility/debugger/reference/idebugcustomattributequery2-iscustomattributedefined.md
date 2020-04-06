@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft-Dokumentation
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e2ecd70eeeddb4b61d8ed8d307bd579c68ef519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7be649a5d65f88d8263bbe8950fda1a157855ed2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335830"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732535"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 Bestimmt, ob ein benutzerdefiniertes Attribut nach Namen vorhanden ist.
@@ -41,13 +41,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parameter
 `pszCustomAttributeName`\
-[in] Eine Zeichenfolge, die mit dem Namen des zu suchenden benutzerdefinierten Attributs.
+[in] Eine Zeichenfolge, die den Namen des zu suchenden benutzerdefinierten Attributs enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt zurück, S_OK Wenn das benutzerdefinierte Attribut für dieses Feld definiert ist, andernfalls S_FALSE zurückgegeben.
+ Gibt S_OK zurück, wenn das benutzerdefinierte Attribut für dieses Feld definiert ist, andernfalls wird S_FALSE zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Rufen Sie zum Abrufen der Attribut-Bytes, die mit dem benutzerdefinierten Attribut für die [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Um die Attributbytes zu erhalten, die dem benutzerdefinierten Attribut zugeordnet sind, rufen Sie die [GetCustomAttributeByName-Methode](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) auf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

@@ -1,27 +1,27 @@
 ---
-title: BP_FLAGS90 | Microsoft-Dokumentation
+title: BP_FLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c423b8ecf0e4591913be5ef875057a947f42614
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319160"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738048"
 ---
-# <a name="bpflags90"></a>BP_FLAGS90
-Listet die gültigen Werte für optionale Kennzeichen. Die optionalen Kennzeichen können verwendet werden, um zusätzliche Informationen angeben, wenn Sie einen Haltepunkt festlegen. Diese Enumeration erweitert die [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Enumeration.
+# <a name="bp_flags90"></a>BP_FLAGS90
+Zählt gültige Werte für optionale Flags auf. Die optionalen Flags können verwendet werden, um zusätzliche Informationen anzugeben, wenn Sie einen Haltepunkt festlegen. Diese Enumeration erweitert [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) die BP_FLAGS-Enumeration.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,23 +54,23 @@ public enum enum_BP_FLAGS90
 
 ## <a name="fields"></a>Felder
 `BP90_FLAG_NONE`\
-Gibt kein Flag Haltepunkt an.
+Gibt kein Haltepunktflag an.
 
 `BP90_FLAG_MAP_DOCPOSITION`\
-Gibt an, dass den Haltepunkt mit die Dokumentposition die Debug-Engine (DE) zugeordnet werden sollen. Dies gilt nur für Haltepunkte, die in den Skript-orientierten Quelldateien wie z. B. Active Server Pages (ASP).
+Gibt an, dass das Debugmodul (DE) den Haltepunkt mithilfe der Dokumentposition zuordnen soll. Dies gilt nur für Haltepunkte, die in skriptorientierten Quelldateien wie Active Server Pages (ASP) festgelegt sind.
 
 `BP90_FLAG_DONT_STOP`\
-Gibt an, dass der Haltepunkt von der Debug-Engine verarbeitet werden sollen, aber die Debug-Engine letztlich nicht es beendet werden soll. d. h. eine [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Ereignisobjekt nicht gesendet werden soll. Dieses Flag dient in erster Linie mit Punkten der Ablaufverfolgung verwendet werden.
+Gibt an, dass der Haltepunkt vom Debugmodul verarbeitet werden soll, dass das Debugmodul jedoch nicht dort anhalten sollte. Das heißt, ein [IDebugBreakpointEvent2-Ereignisobjekt](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) sollte nicht gesendet werden. Dieses Flag ist so konzipiert, dass es hauptsächlich mit Ablaufverfolgungspunkten verwendet werden kann.
 
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
-Durch die systemeigenen Debug-Engine verwendet, um festzustellen, ob es sich bei der schrittweisen Ausführung Zustand gelöscht werden sollen. Es unterscheidet sich von BP90_FLAG_DONT_STOP BP90_FLAG_DONT_STOP nicht festgelegt ist, wenn der Ablaufverfolgungspunkt ein Makro ausgeführt wird.
+Wird vom systemeigenen Debugmodul verwendet, um zu bestimmen, ob der Schrittstatus gelöscht werden soll. Sie unterscheidet sich von BP90_FLAG_DONT_STOP, da BP90_FLAG_DONT_STOP nicht festgelegt ist, wenn der Ablaufverfolgungspunkt ein Makro ausführt.
 
-## <a name="requirements"></a>Anforderungen
-Header: Msdbg90.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: Msdbg90.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

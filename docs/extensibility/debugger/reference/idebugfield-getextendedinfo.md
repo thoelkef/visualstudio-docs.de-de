@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ddae4ea7ecc58d67279ae638d19bf95ec2cc591
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352652"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728876"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-Diese Methode ruft Informationen über ein Feld erweitert.
+Diese Methode erhält erweiterte Informationen zu einem Feld.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,24 +45,24 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>Parameter
 `guidExtendedInfo`\
-[in] Wählt die Informationen zurückgegeben werden. Gültige Werte sind:
+[in] Wählt die zurückzugebenden Informationen aus. Gültige Werte sind:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|`guidConstantValue`|Der Wert als eine Folge von Bytes.|
-|`guidConstantType`|Der Typ als eine Typsignatur.|
+|`guidConstantValue`|Der Wert als eine Sequenz von Bytes.|
+|`guidConstantType`|Der Typ als Typsignatur.|
 
 `prgBuffer`\
-[out] Gibt den erweiterten Informationen zurück.
+[out] Gibt die erweiterten Informationen zurück.
 
 `pdwLen`\
-[in, out] Gibt die Größe der erweiterten Informationen, in Bytes zurück.
+[in, out] Gibt die Größe der erweiterten Informationen in Bytes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Derzeit gibt diese Methode auf, nur den Typ oder Wert einer Konstante. Der Aufrufer muss im zurückgegebenen Puffers freigeben `prgBuffer` durch Aufrufen von COM `CoTaskMemFree` Funktion (C++) oder <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).
+## <a name="remarks"></a>Bemerkungen
+ Derzeit gibt diese Methode nur den Typ oder Wert einer Konstante zurück. Der Aufrufer muss den `prgBuffer` zurückgegebenen Puffer `CoTaskMemFree` durch Aufrufen der COM-Funktion (C++) oder <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C- freizugeben).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

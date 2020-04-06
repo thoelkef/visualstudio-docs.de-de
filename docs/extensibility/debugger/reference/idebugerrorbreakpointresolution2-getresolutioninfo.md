@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fefea5081278800b330dac665862a360b4a0c15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327821"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730026"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-Ruft den Haltepunkt auflösen Fehlerinformationen ab.
+Ruft die Informationen zur Fehlerauflösung des Haltepunkts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) Enumeration, die bestimmen, welche Felder der `pErrorResolutionInfo` ausgefüllt werden müssen.
+[in] Eine Kombination von Flags aus der BPERESI_FIELDS-Enumeration, die bestimmen, welche [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) `pErrorResolutionInfo` Felder ausgefüllt werden sollen.
 
 `pErrorResolutionInfo`\
-[in, out] Die [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) -Struktur, die mit der Beschreibung der haltepunktauflösung gefüllt wird.
+[in, out] Die [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur, die mit der Beschreibung der Haltepunktauflösung ausgefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel implementiert diese Methode für eine einfache `CDebugErrorBreakpointResolution` -Objekt, das macht die [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) Schnittstelle.
+Im folgenden Beispiel wird diese `CDebugErrorBreakpointResolution` Methode für ein einfaches Objekt implementiert, das die [IDebugErrorBreakpointResolution2-Schnittstelle](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(
@@ -152,7 +152,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)

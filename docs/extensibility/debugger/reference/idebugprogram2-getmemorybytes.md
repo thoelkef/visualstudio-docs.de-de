@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetMemoryBytes | Microsoft-Dokumentation
+title: IDebugProgram2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetMemoryBytes
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca06bd4593401544155e53c21315499d85edc07a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cc0be42ace78dbd46fd64ce42f446a9449998b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319432"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722811"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
-Ruft das Byte Arbeitsspeicher durch das Programm ab.
+Ruft die vom Programm belegten Speicherbytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetMemoryBytes( 
 
 ## <a name="parameters"></a>Parameter
 `ppMemoryBytes`\
-[out] Gibt eine [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt, das die Bytes der Arbeitsspeicher des Programms darstellt.
+[out] Gibt ein [IDebugMemoryBytes2-Objekt](../../../extensibility/debugger/reference/idebugmemorybytes2.md) zurück, das die Speicherbytes des Programms darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Der Speicher-Bytes dargestellt durch die [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) Objekt ist für das Programm Bild im Arbeitsspeicher und keinen Arbeitsspeicher, der belegt wurde, wenn das Programm ausgeführt wurde.
+## <a name="remarks"></a>Bemerkungen
+ Die Speicherbytes, die vom [IDebugMemoryBytes2-Objekt](../../../extensibility/debugger/reference/idebugmemorybytes2.md) dargestellt werden, sind für das Abbild des Programms im Speicher und nicht für Speicher, der bei der Ausführung des Programms reserviert wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

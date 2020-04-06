@@ -1,24 +1,24 @@
 ---
-title: IDebugStopCompleteEvent2 | Microsoft-Dokumentation
+title: IDebugStopCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080b3073ffc13b90870b40a16a353634f4aa0cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352010"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719445"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
-Die Debug-Engine (DE) kann dieses optionale Ereignis für die Sitzung Debug-Manager (SDM) senden, wenn ein Programm beendet wurde.
+Das Debugmodul (DE) kann dieses optionale Ereignis an den Sitzungsdebug-Manager (SDM) senden, wenn ein Programm beendet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -28,15 +28,15 @@ IDebugStopCompleteEvent2 : IUnknown
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
 
-Diese Schnittstelle wurde mit Visual Studio 2005 eingeführt. Asynchrones beenden wurde von frühere Versionen nicht unterstützt.
+Diese Schnittstelle wurde mit Visual Studio 2005 eingeführt. Frühere Versionen unterstützten kein asynchrones Beenden.
 
-- [Beenden Sie](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) wird aufgerufen, durch die SDM mit mehreren Prozessen oder mit mehreren Programm Szenarios. Wenn ein Programm eine Beenden-Ereignis, das SDM sendet, fordert das SDM andere Programme zu beenden.
+- [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) wird vom SDM in Multiprozess- oder Multi-Programm-Szenarien aufgerufen. Wenn ein Programm ein Beenden-Ereignis an das SDM sendet, fordert das SDM auch andere Programme auf, die beendet werden.
 
-Beenden wird verwendet, um asynchron die SDM zu informieren, die ein Programm beendet wurde. Informiert das SDM eignet sich für ein Interpreter-Debug-Engine, dem manchmal innerhalb der debuggten kein Code ausgeführt wird programmieren, also [beenden](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) nicht synchron abgeschlossen werden kann. Wenn eine Debug-Engine diese asynchrone Benachrichtigung einsetzen will, muss es zurückgeben `S_ASYNC_STOP` aus [beenden](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
+Stop wird verwendet, um das SDM asynchron darüber zu informieren, dass ein Programm beendet wurde. Die Information des SDM ist nützlich für ein Interpreter-Debugmodul, bei dem manchmal kein Code innerhalb des debuggen Programms ausgeführt wird, sodass [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) nicht synchron abgeschlossen werden kann. Wenn ein Debugmodul diese asynchrone Benachrichtigung verwenden `S_ASYNC_STOP` möchte, muss es von [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)zurückgegeben werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
-Header: msdbg.h
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 

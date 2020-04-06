@@ -1,26 +1,26 @@
 ---
-title: Erweitern von Projektmappen | Microsoft-Dokumentation
+title: Erweiterung von Lösungen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fd58ea0f898f1840d63a436b4fe28787e89e613
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40a9591418dd3d2fb53bee29dfb8192a368e4047
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313020"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711722"
 ---
-# <a name="extend-solutions"></a>Lösungen erweitern
-Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten.
+# <a name="extend-solutions"></a>Erweitern von Lösungen
+Eine Projektmappe ist eine Gruppierung eines oder mehrerer Projekte, die zusammenarbeiten, um eine Anwendung zu erstellen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- Die folgenden exemplarischen Vorgehensweisen zeigen einige Möglichkeiten, die in denen Sie Lösungen erweitern können.
+ Die folgenden exemplarischen Vorgehensweisen zeigen einige Möglichkeiten zum Erweitern von Lösungen.
 
-1. [Erweitern Sie den Projektmappen-Explorer-Filter](../extensibility/extending-the-solution-explorer-filter.md) wird erläutert, wie filtern, das im Projektmappen-Explorer angezeigt.
+1. [Der Filter Projektmappen-Explorer](../extensibility/extending-the-solution-explorer-filter.md) wird erweitert, um zu filtern, wie der Projektmappen-Explorer angezeigt wird.
 
-2. [Verwalten des Ladens von Projekten in einer Projektmappe](../extensibility/managing-project-loading-in-a-solution.md) wird erläutert, wie zum Verwalten des Ladens von Projekten zur Verbesserung der Leistung, wenn ein Benutzer eine Projektmappe geladen werden.
+2. [Beim Verwalten des Projektladens in einer Projektmappe](../extensibility/managing-project-loading-in-a-solution.md) wird erläutert, wie die Projektladung verwaltet wird, um die Leistung beim Laden einer Projektmappe durch einen Benutzer zu verbessern.

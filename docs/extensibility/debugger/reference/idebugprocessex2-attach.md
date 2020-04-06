@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Microsoft-Dokumentation
+title: IDebugProcessEx2::Attach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5932535810f28e6f5da96ab69457f7364563d622
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d70da2530a1677367a22968436a17eba809fd24a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325343"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723382"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Diese Methode informiert dem Prozess, dass eine Sitzung jetzt Debuggen des Prozesses ist.
+Diese Methode informiert den Prozess, dass eine Sitzung den Prozess jetzt debuggen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int Attach(
 
 ## <a name="parameters"></a>Parameter
 `pSession`\
-[in] Ein Wert, der die Sitzung, Anfügen an diesen Prozess eindeutig identifiziert.
+[in] Ein Wert, der die Sitzung, die an diesen Prozess angefügt wird, eindeutig identifiziert.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig den Anfügen an diesen Prozess; sitzungsbasierter Debug-Manager keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.
+## <a name="remarks"></a>Bemerkungen
+ Die übergebene `pSession` Schnittstelle ist nur als Cookie zu behandeln, ein Wert, der den Sitzungsdebug-Manager eindeutig identifiziert, der an diesen Prozess angefügt wird. keine der Methoden auf der mitgelieferten Schnittstelle funktionsfähig sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

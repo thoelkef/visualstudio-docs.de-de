@@ -1,27 +1,27 @@
 ---
-title: GUID_ARRAY | Microsoft-Dokumentation
+title: GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d53413ee56700fe39470d3bbc3229f4b8b668373
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317532"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736645"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
-Ein Array von eindeutigen Bezeichnern für verfügbare Debug-Engines beschreibt.
+# <a name="guid_array"></a>GUID_ARRAY
+Beschreibt ein Array eindeutiger Bezeichner für verfügbare Debugmodule.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,21 +43,21 @@ public struct GUID_ARRAY
 
 ## <a name="members"></a>Member
 `dwCount`\
-Die Anzahl von eindeutigen Bezeichnern im Array.
+Anzahl der eindeutigen Bezeichner im Array.
 
 `Members`\
 Array, das eindeutige Bezeichner enthält.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur wird zurückgegeben, durch die [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur wird von der [GetEngineFilter-Methode](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: Msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: Msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

@@ -1,41 +1,41 @@
 ---
-title: Anzeigen von lokalen Variablen | Microsoft-Dokumentation
+title: Anzeigen von Locals | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, displaying locals
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a8a73fb8ab95602538be56f18834233dbad7132
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345786"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738933"
 ---
-# <a name="display-locals"></a>Anzeige "lokal"
+# <a name="display-locals"></a>Lokale anzeigen
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ausführung immer findet im Kontext einer Methode, auch bekannt als der enthaltenden Methode oder die aktuelle Methode. Wenn die Ausführung angehalten wird, ruft Visual Studio die Debug-Engine (DE), um eine Liste der lokalen Variablen abzurufen und Argumente bezeichnen die lokalen Variablen der Methode. Visual Studio zeigt an, diese lokalen Variablen und deren Werte in der **"lokal"** Fenster.
+ Die Ausführung erfolgt immer im Kontext einer Methode, die auch als enthaltende Methode oder aktuelle Methode bezeichnet wird. Wenn die Ausführung angehalten wird, ruft Visual Studio das Debugmodul (DE) auf, um eine Liste lokaler Variablen und Argumente abzudateien, die gemeinsam als Locals der Methode bezeichnet werden. Visual Studio zeigt diese Locals und ihre Werte im Fenster **Locals** an.
 
- Um lokal zu anzuzeigen, die DE Ruft die [von GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) Methode die EE und weist ihm ein Evaluierungskontext wird, das ist, ein symbolanbieter (SP), die aktuelle Ausführung-Adresse und ein binderobjekt. Weitere Informationen finden Sie unter [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md). Wenn der Aufruf erfolgreich ist, die `IDebugExpressionEvaluator::GetMethodProperty` Methode gibt ein [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Objekt, das die Methode darstellt, die die aktuelle Ausführung Adresse enthält.
+ Um Locals anzuzeigen, ruft die DE die [GetMethodProperty-Methode](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) auf, die zum EE gehört, und gibt ihr einen Evaluierungskontext, d. h. einen Symbolanbieter (SP), die aktuelle Ausführungsadresse und ein Binderobjekt. Weitere Informationen finden Sie unter [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md). Wenn der Aufruf erfolgreich `IDebugExpressionEvaluator::GetMethodProperty` ist, gibt die Methode ein [IDebugProperty2-Objekt](../../extensibility/debugger/reference/idebugproperty2.md) zurück, das die Methode darstellt, die die aktuelle Ausführungsadresse enthält.
 
- Die DE-Aufrufe [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) zum Abrufen einer [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) Objekt, das gefiltert, damit nur lokale Variablen zurückgegeben wird, und aufgelistet, um eine Liste der [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)Strukturen. Jede Struktur enthält die Namen, Typ und Wert eines lokalen Elements. Der Typ und Wert werden als geeignet für die Anzeige formatierte Zeichenfolgen gespeichert. Der Name, Typ und Wert sind in der Regel zusammen in einer einzigen Codezeile angezeigt der **"lokal"** Fenster.
+ Die DE ruft [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) auf, um ein [IEnumDebugPropertyInfo2-Objekt](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) abzuruft, das gefiltert wird, um nur Locals zurückzugeben und aufzuzählen, um eine Liste [von DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) Strukturen zu erstellen. Jede Struktur enthält den Namen, den Typ und den Wert eines lokalen Orts. Der Typ und der Wert werden als formatierte Zeichenfolgen gespeichert, die für die Anzeige geeignet sind. Name, Typ und Wert werden in der Regel zusammen in einer Zeile des **Fensters "Locals"** angezeigt.
 
 > [!NOTE]
-> Die **Schnellüberwachung** und **Watch** Windows auch Variablen mit dem gleichen Format der Namen, Wert und Typ angezeigt. Allerdings werden diese Werte durch den Aufruf abgerufen [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) anstelle von `IDebugProperty2::EnumChildren`.
+> In den **Fenstern QuickWatch** und **Watch** werden auch Variablen mit demselben Format von Name, Wert und Typ angezeigt. Diese Werte werden jedoch durch Aufrufen von `IDebugProperty2::EnumChildren` [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) anstelle von ermittelt.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Beispiel für die Implementierung der lokalen Variablen](../../extensibility/debugger/sample-implementation-of-locals.md) werden Beispiele verwendet, um den Prozess der Implementierung von "lokal" zu durchlaufen.
+ [Beispielimplementierung von Locals](../../extensibility/debugger/sample-implementation-of-locals.md) Verwendet Beispiele, um den Prozess der Implementierung von Locals zu durchlaufen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md) wird erklärt, dass wenn die Debug-Engine (DE) die ausdrucksauswertung (EE) aufruft, er drei Argumente übergibt.
+ [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md) Erläutert, dass das Debugmodul (DE) beim Aufrufen des Ausdrucksevaluators (EE) drei Argumente übergibt.
 
-## <a name="see-also"></a>Siehe auch
- [Schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Schreiben eines CLR-Ausdrucksevaluators](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

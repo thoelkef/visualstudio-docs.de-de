@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElements | Microsoft-Dokumentation
+title: IDebugArrayObject::GetElements | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElements method
 ms.assetid: f6a6262f-5183-46ce-8a45-33ef46088b98
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 915724fa5790c6b8c9fde2706b1222db239cb4ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: be06acbef93d8858557fea5bd7563168be2d28aa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351796"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736240"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 Ruft einen Enumerator aller Elemente des Arrays ab.
@@ -41,13 +41,13 @@ int GetElements(
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt eine [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) Objekt, das ermöglicht, über alle Elemente auflisten.
+[out] Gibt ein [IEnumDebugObjects-Objekt](../../../extensibility/debugger/reference/ienumdebugobjects.md) zurück, mit dem alle Elemente aufgezählt werden können.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Verwenden Sie alternativ die [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) und [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) Methoden zum Durchlaufen der Elemente.
+## <a name="remarks"></a>Bemerkungen
+ Alternativ verwenden Sie die [GetCount-](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) und [GetElement-Methoden,](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) um die Elemente zu durchlaufen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

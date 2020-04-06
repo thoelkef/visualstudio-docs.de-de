@@ -1,49 +1,49 @@
 ---
-title: Properties Window Fields and Interfaces | Microsoft-Dokumentation
+title: Eigenschaften Fensterfelder und Schnittstellen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 379eaa6e154b77d10463514a63978708bf2b89d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347881"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706166"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Felder und Schnittstellen des Eigenschaftenfensters
-Das Modell für die Auswahl, um zu bestimmen, welche Informationen angezeigt werden, in der **Eigenschaften** Fenster basiert darauf, dass das Fenster, das Fokus, in der IDE besitzt. Alle Fenster und Objekt in das ausgewählte Fenster, haben die Auswahl Context-Objekt, die per Push an den globalen Auswahlkontext. Die Umgebung aktualisiert den Kontext für die globale Auswahl mit Werten aus einem Fensterrahmen, wenn das Fenster den Fokus hat. Wenn der Fokus geändert wird, steigt auch die Auswahlkontext.
+Das Modell für die Auswahl, um zu bestimmen, welche Informationen im **Eigenschaftenfenster** angezeigt werden, basiert auf dem Fenster, das den Fokus in der IDE hat. In jedem Fenster und Objekt innerhalb des ausgewählten Fensters kann das Auswahlkontextobjekt in den globalen Auswahlkontext verschoben werden. Die Umgebung aktualisiert den globalen Auswahlkontext mit Werten aus einem Fensterrahmen, wenn dieses Fenster den Fokus hat. Wenn sich der Fokus ändert, ändert sich auch der Auswahlkontext.
 
-## <a name="tracking-selection-in-the-ide"></a>Nachverfolgen der Auswahl in der IDE
- Der Fensterrahmen oder einem Standort im Besitz von der IDE bietet einen Dienst namens <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. Die folgenden Schritte zeigen wie eine Änderung in einer auswahlanweisung, zurückzuführen, dass der Benutzer den Fokus zu einem anderen geöffneten Fenster ändern, oder wählen Sie ein anderes Projekt-Element in **Projektmappen-Explorer**, implementiert, um den Inhalt der Ändern **Eigenschaften** Fenster.
+## <a name="tracking-selection-in-the-ide"></a>Nachverfolgungsauswahl in der IDE
+ Der Fensterrahmen oder die Website, die der <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>IDE gehört, verfügt über einen Dienst namens . Die folgenden Schritte zeigen, wie eine Änderung in einer Auswahl implementiert wird, die dadurch verursacht wird, dass der Benutzer den Fokus entweder auf ein anderes geöffnetes Fenster ändert oder ein anderes Projektelement im **Projektmappen-Explorer**auswählt, um den im **Eigenschaftenfenster** angezeigten Inhalt zu ändern.
 
-1. Das Objekt durch das VSPackage, die in den ausgewählten Fensters aufrufen positioniert wird, erstellt <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> damit <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
+1. Das von Ihrem VSPackage erstellte Objekt, das <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> in <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>den ausgewählten Fensteraufrufen mit aufgerufen wird, um aufgerufen zu haben.
 
-2. Der Auswahlcontainer, angegeben durch das ausgewählte Fenster, erstellt eine eigene <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> Objekt. Wenn die Auswahl geändert wird, für das VSPackage aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> benachrichtigt alle Listener in der Umgebung, einschließlich der **Eigenschaften** Fenster der Änderung. Darüber hinaus den Zugriff auf die Hierarchie und Element-Informationen, die im Zusammenhang mit der neuen Auswahl.
+2. Der Auswahlcontainer, der vom ausgewählten Fenster <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> bereitgestellt wird, erstellt ein eigenes Objekt. Wenn sich die Auswahl ändert, ruft das VSPackage alle Listener in der Umgebung, einschließlich des <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> **Eigenschaftenfensters,** auf, um alle Listener in der Umgebung über die Änderung zu benachrichtigen. Es bietet auch Zugriff auf Hierarchie- und Elementinformationen im Zusammenhang mit der neuen Auswahl.
 
-3. Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> und an Sie übergeben die Elemente der ausgewählten Hierarchie in der `VSHPROPID_BrowseObject` -Parameter auffüllt der <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> Objekt.
+3. Wenn <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> die ausgewählten Hierarchieelemente im `VSHPROPID_BrowseObject` Parameter aufgerufen und <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> übergeben werden, wird das Objekt aufgewirft.
 
-4. Ein Objekt, abgeleitet aus den [IDispatch-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) wird zurückgegeben, für die [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) für das Element angefordert hat, und die Umgebung ihn in umschließt ein <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (Siehe den folgenden Schritt). Wenn der Aufruf fehlschlägt, wird die Umgebung einen zweiten Aufruf von `IVsHierarchy::GetProperty`, und übergeben sie den Auswahlcontainer [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) , dass das Hierarchieelement oder die Elemente angeben.
+4. Ein von der [IDispatch-Schnittstelle abgeleitetes](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) Objekt wird für [__VSHPROPID zurückgegeben. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) für das angeforderte Element, und <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> die Umgebung umschließt es in einen (siehe folgenden Schritt). Wenn der Aufruf fehlschlägt, ruft `IVsHierarchy::GetProperty`die Umgebung einen zweiten Aufruf von an , der den Auswahlcontainer [__VSHPROPID. VSHPROPID_SelContainer,](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) die das Hierarchieelement oder die Artikel bereitstellen.
 
-    Das Projekt, das VSPackage keine erstellt <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> da, die sie der Umgebung bereitgestellten Fenster VSPackage implementiert (z. B. **Projektmappen-Explorer**) erstellt <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> in dessen Auftrag aufzubauen.
+    Ihr Projekt VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird nicht erstellt, da das von der Umgebung bereitgestellte Fenster <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> VSPackage, das es implementiert (z. B. **Projektmappen-Explorer**), in seinem Namen erstellt wird.
 
-5. Die Umgebung Ruft die Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> zum Abrufen der Objekte, die auf der Grundlage der `IDispatch` Schnittstelle zum Füllen der **Eigenschaften** Fenster.
+5. Die Umgebung ruft die <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> Methoden auf, um `IDispatch` die Objekte basierend auf der Schnittstelle abzurufen, die im **Eigenschaftenfenster** ausgefüllt werden soll.
 
-   Wenn ein Wert in der **Eigenschaften** Fenster geändert wird, die VSPackages implementieren, `IVsTrackSelectionEx::OnElementValueChangeEx` und `IVsTrackSelectionEx::OnSelectionChangeEx` , die Änderung an den Wert des Elements zu melden. Die Umgebung ruft dann <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> oder <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> im angezeigten Informationen zu den **Eigenschaften** Fenster mit den Eigenschaftswerten synchronisiert. Weitere Informationen finden Sie unter [Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster](#updating-property-values-in-the-properties-window).
+   Wenn ein Wert im **Eigenschaftenfenster** geändert `IVsTrackSelectionEx::OnElementValueChangeEx` wird, implementieren und `IVsTrackSelectionEx::OnSelectionChangeEx` melden VSPackages die Änderung an den Elementwert. Die Umgebung ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> dann die im **Eigenschaftenfenster** angezeigten Informationen auf oder hält sie mit den Eigenschaftswerten synchronisiert. Weitere Informationen finden Sie unter [Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster](#updating-property-values-in-the-properties-window).
 
-   Zusätzlich zur Auswahl einer anderen Projektelement **Projektmappen-Explorer** zum Anzeigen von Eigenschaften in Bezug auf das Element, Sie können auch ein anderes Objekt aus, in einem Formular oder Dokument-Fenster, die mithilfe der Dropdown-Liste auf der **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Objektliste des Eigenschaftenfensters](../../extensibility/internals/properties-window-object-list.md).
+   Zusätzlich zur Auswahl eines anderen Projektelements im **Projektmappen-Explorer** zum Anzeigen von Eigenschaften, die sich auf dieses Element beziehen, können Sie auch ein anderes Objekt in einem Formular- oder Dokumentfenster auswählen, indem Sie die Dropdownliste verwenden, die im **Fenster Eigenschaften** verfügbar ist. Weitere Informationen finden Sie unter [Eigenschaftenfensterobjektliste](../../extensibility/internals/properties-window-object-list.md).
 
-   Sie können ändern, dass die Möglichkeit, die Informationen, in angezeigt werden der **Eigenschaften** Raster von alphabetisch in eine Kategoriespalte, und, falls verfügbar, können Sie eine Eigenschaftenseite für ein ausgewähltes Objekt auch öffnen, indem Sie auf die entsprechenden Schaltflächen auf der  **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Schaltflächen des Eigenschaftenfensters](../../extensibility/internals/properties-window-buttons.md) und [Eigenschaftenseiten](../../extensibility/internals/property-pages.md).
+   Sie können die Anzeige von Informationen im **Fensterraster Eigenschaften** von alphabetisch in kategorial ändern, und wenn verfügbar, können Sie auch eine Eigenschaftenseite für ein ausgewähltes Objekt öffnen, indem Sie auf die entsprechenden Schaltflächen im **Eigenschaftenfenster** klicken. Weitere Informationen finden Sie unter [Eigenschaftenfensterschaltflächen](../../extensibility/internals/properties-window-buttons.md) und [Eigenschaftenseiten](../../extensibility/internals/property-pages.md).
 
-   Zum Schluss den unteren Rand der **Eigenschaften** Fenster enthält auch eine Beschreibung des Felds im ausgewählten der **Eigenschaften** Raster. Weitere Informationen finden Sie unter [Abrufen von Feldbeschreibungen im Eigenschaftenfenster](#getting-field-descriptions-from-the-properties-window).
+   Schließlich enthält der untere Rand des **Eigenschaftenfensters** auch eine Beschreibung des feldes, das im **Fensterraster Eigenschaften** ausgewählt wurde. Weitere Informationen finden Sie unter [Abrufen von Feldbeschreibungen aus dem Eigenschaftenfenster](#getting-field-descriptions-from-the-properties-window).
 
-## <a name="updating-property-values-in-the-properties-window"></a> Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster
+## <a name="updating-property-values-in-the-properties-window"></a><a name="updating-property-values-in-the-properties-window"></a>Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster
 Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderungen von Eigenschaftswerten zu synchronisieren. Die erste besteht darin, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>-Schnittstelle aufzurufen, die Zugriff auf die grundlegende Fensterverwaltungsfunktionalität bietet, einschließlich Zugriff auf und Erstellung von Tool- und Dokumentfenstern, die von der Umgebung bereitgestellt werden. In den folgenden Schritten ist dieser Synchronisierungsprozess beschrieben.
 
 ### <a name="updating-property-values-using-ivsuishell"></a>Aktualisieren von Eigenschaftswerten über IVsUIShell
@@ -52,7 +52,7 @@ Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderu
 
 1. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (über den <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>-Dienst) jedes Mal auf, wenn VSPackages, Projekte oder Editoren Tool- oder Dokumentfenster erstellen oder durchlaufen müssen.
 
-2. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zu der **Eigenschaften** Fensters mit eigenschaftsänderungen für ein Projekt (oder ein anderes Objekt durchsucht werden, indem die **Eigenschaften** Fenster) ohne die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> und das Auslösen von <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> Ereignisse.
+2. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> Sie, um das **Eigenschaftenfenster** mit Eigenschaftenänderungen für ein Projekt (oder ein anderes <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> ausgewähltes <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> Objekt, das vom **Eigenschaftenfenster** durchsucht wird) zu synchronisieren, ohne Ereignisse zu implementieren und zu auslösen.
 
 3. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>-Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>, um Clientbenachrichtigung zu Hierarchieereignissen einzurichten bzw. zu deaktivieren, ohne dass für die Hierarchie <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> implementiert werden muss.
 
@@ -69,12 +69,12 @@ Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderu
 
 4. Ein Client kann die `IConnection`-Schnittstelle aufrufen, um Zugriff auf ein Enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle zu erhalten. Die <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle kann dann aufgerufen werden, um Verbindungspunkte für jede Ausgangsschnittstellen-ID (IID) zu durchlaufen.
 
-5. `IConnection` kann auch aufgerufen werden, um mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle Zugriff auf Verbindungspunktunterobjekte für jede ausgehende IID zu erhalten. Über die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle, startet oder beendet ein Client eine Empfehlungsschleife mit dem verbindungsfähigen Objekt und der Synchronisierung des Clients. Der Client kann auch die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle aufrufen, um ein Enumeratorobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections>-Schnittstelle abzurufen, damit er die ihm bekannten Verbindungen durchlaufen kann.
+5. `IConnection` kann auch aufgerufen werden, um mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle Zugriff auf Verbindungspunktunterobjekte für jede ausgehende IID zu erhalten. Über <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> die Schnittstelle startet oder beendet ein Client eine Beratungsschleife mit dem anschließbaren Objekt und der eigenen Synchronisierung des Clients. Der Client kann <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> auch die Schnittstelle aufrufen, um ein <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> Enumeratorobjekt mit der Schnittstelle zu erhalten, um die Verbindungen aufzuzählen, die er kennt.
 
-## <a name="getting-field-descriptions-from-the-properties-window"></a> Abrufen von Feldbeschreibungen im Eigenschaftenfenster
+## <a name="getting-field-descriptions-from-the-properties-window"></a><a name="getting-field-descriptions-from-the-properties-window"></a>Abrufen von Feldbeschreibungen aus dem Eigenschaftenfenster
 Am unteren Rand des Fensters **Eigenschaften** werden in einem Beschreibungsbereich Informationen angezeigt, die zu dem ausgewählten Eigenschaftenfeld gehören. Diese Funktion ist standardmäßig aktiviert. Wenn Sie das Beschreibungsfeld ausblenden möchten, klicken Sie mit der rechten Maustaste in das Fenster **Eigenschaften** , und klicken Sie auf **Beschreibung**. Dies bewirkt auch, dass das Häkchen neben dem Titel **Beschreibung** im Menüfenster entfernt wird. Sie können das Feld wieder anzeigen, indem die gleichen Schritte ausführen, um **Beschreibung** erneut zu aktivieren.
 
- Die Informationen im Beschreibungsfeld stammen aus <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Jede Methode, Schnittstelle, Co-Klasse usw. kann ein nicht lokalisiertes `helpstring` Attribut in der Typbibliothek haben. Die **Eigenschaften** Fenster Ruft die Zeichenfolge aus <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.
+ Die Informationen im Beschreibungsfeld stammen aus <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Jede Methode, Schnittstelle, Co-Klasse usw. kann ein nicht lokalisiertes `helpstring` Attribut in der Typbibliothek haben. Das **Eigenschaftenfenster** ruft die <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>Zeichenfolge aus ab.
 
 ### <a name="to-specify-localized-help-strings"></a>So geben Sie lokalisierte Hilfetexte (Hilfezeichenfolgen) an
 
@@ -87,7 +87,7 @@ Am unteren Rand des Fensters **Eigenschaften** werden in einem Beschreibungsbere
 
     Diese Attribute unterscheiden sich von den Attributen `helpfile` und `helpcontext` , die in den jeweiligen Hilfethemen in CHM-Datei enthalten sind.
 
-   Zum Abrufen der Beschreibungsinformationen für den markierten Eigenschaftennamen angezeigt werden soll die **Eigenschaften** Fenster Aufrufe <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> für die Eigenschaft, die ausgewählt ist, wobei Sie das gewünschte `lcid` -Attribut für die Ausgabezeichenfolge. Intern findet <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> die DLL-Datei, die im `helpstringdll`-Attribut angegeben ist, und ruft `DLLGetDocumentation` für diese DLL-Datei mit dem angegebenen Kontext und `lcid`-Attribut auf.
+   Um die Beschreibungsinformationen abzurufen, die für den <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> markierten Eigenschaftsnamen angezeigt werden `lcid` sollen, ruft das **Eigenschaftenfenster** die ausgewählte Eigenschaft auf und gibt das gewünschte Attribut für die Ausgabezeichenfolge an. Intern findet <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> die DLL-Datei, die im `helpstringdll`-Attribut angegeben ist, und ruft `DLLGetDocumentation` für diese DLL-Datei mit dem angegebenen Kontext und `lcid`-Attribut auf.
 
    Die Signatur und die Implementierung von `DLLGetDocumentation` sind:
 
@@ -114,6 +114,6 @@ STDAPI DLLGetDocumentation
 
  Eine weitere Möglichkeit zum Abrufen des lokalisierten Namens und der lokalisierten Beschreibung einer Eigenschaft besteht darin, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A> zu implementieren. Weitere Informationen über die Implementierung dieser Methode finden Sie unter [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)

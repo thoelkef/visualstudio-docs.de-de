@@ -1,40 +1,40 @@
 ---
-title: Schaltflächen für Eigenschaften Fenster | Microsoft-Dokumentation
+title: Eigenschaften Fenster-Schaltflächen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f2a41917a58a6fc5780b62c2c9e3db8aa52d407
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725262"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706175"
 ---
 # <a name="properties-window-buttons"></a>Schaltflächen des Eigenschaftenfensters
-Abhängig von der Entwicklungssprache und dem Produkttyp werden standardmäßig bestimmte Schaltflächen auf der Symbolleiste für das **Eigenschaften** Fenster angezeigt. In allen Fällen werden die Schaltflächen **kategorisiert**, **alphabetisch**, **Eigenschaften und Eigenschaften** **Seiten** angezeigt. In Visual C# und Visual Basic wird auch die Schaltfläche **Ereignisse** angezeigt. In bestimmten visuellen C++ Projekten werden die Schaltflächen " **VC + +** " und " **VC Overrides** " angezeigt. Für andere Projekttypen können zusätzliche Schaltflächen angezeigt werden. Weitere Informationen zu Schaltflächen im **Eigenschaften** Fenster finden Sie unter [Eigenschaften Fenster](../../ide/reference/properties-window.md).
+Abhängig von der Entwicklungssprache und dem Produkttyp werden bestimmte Schaltflächen standardmäßig auf der Symbolleiste für das **Eigenschaftenfenster** angezeigt. In allen Fällen werden die Schaltflächen **Categorized**, **Alphabetized**, **Properties**und **Property Pages** angezeigt. In Visual C- und Visual Basic wird auch die Schaltfläche **Ereignisse** angezeigt. In bestimmten Visual C++-Projekten werden die **Schaltflächen VC++ Messages** und **VC Overrides** angezeigt. Für andere Projekttypen werden möglicherweise zusätzliche Schaltflächen angezeigt. Weitere Informationen zu Schaltflächen im **Eigenschaftenfenster** finden Sie unter [Eigenschaftenfenster](../../ide/reference/properties-window.md).
 
-## <a name="implementation-of-properties-window-buttons"></a>Implementierung von Eigenschaften Fenster Schaltflächen
- Wenn Sie auf die Schaltfläche **kategorisieren** klicken, ruft Visual Studio die <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>-Schnittstelle für das Objekt auf, das den Fokus besitzt, um die Eigenschaften nach Kategorie zu sortieren <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> ist für das `IDispatch` Objekt implementiert, das dem **Eigenschaften** Fenster angezeigt wird.
+## <a name="implementation-of-properties-window-buttons"></a>Implementierung von Eigenschaftenfensterschaltflächen
+ Wenn Sie auf die Schaltfläche **Kategorisiert** klicken, ruft Visual Studio die <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> Schnittstelle für das Objekt auf, das den Fokus hat, um seine Eigenschaften nach Kategorie zu sortieren. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>wird für `IDispatch` das Objekt implementiert, das im **Eigenschaftenfenster** angezeigt wird.
 
- Es gibt 11 vordefinierte Eigenschaften Kategorien, die negative Werte aufweisen. Sie können benutzerdefinierte Kategorien definieren, aber es wird empfohlen, dass Sie Ihnen positive Werte zuweisen, um Sie von den vordefinierten Kategorien zu unterscheiden.
+ Es gibt 11 vordefinierte Eigenschaftskategorien, die negative Werte haben. Sie können benutzerdefinierte Kategorien definieren, aber wir empfehlen, ihnen positive Werte zuzuweisen, um sie von den vordefinierten Kategorien zu unterscheiden.
 
- Die <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A>-Methode gibt den entsprechenden Wert der Eigenschafts Kategorie für die angegebene Eigenschaft zurück. Die <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A>-Methode gibt eine Zeichenfolge zurück, die den Kategorien Amen enthält. Sie müssen nur Unterstützung für benutzerdefinierte Kategoriewerte bereitstellen, da Visual Studio die Standardwerte für die Eigenschaften Kategorie kennt.
+ Die <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A> Methode gibt den entsprechenden Eigenschaftskategoriewert für die angegebene Eigenschaft zurück. Die <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A> Methode gibt eine Zeichenfolge zurück, die den Kategorienamen enthält. Sie müssen nur Unterstützung für benutzerdefinierte Kategoriewerte bereitstellen, da Visual Studio die Standardeigenschaftskategoriewerte kennt.
 
- Wenn Sie auf die Schaltfläche " **alphabetisch** " klicken, werden die Eigenschaften in alphabetischer Reihenfolge nach Name angezeigt. Die Namen werden von `IDispatch` gemäß einem lokalisierten Sortieralgorithmus abgerufen.
+ Wenn Sie auf die Schaltfläche **Alphabetisiert** klicken, werden die Eigenschaften in alphabetischer Reihenfolge nach Namen angezeigt. Die Namen werden `IDispatch` nach einem lokalisierten Sortieralgorithmus abgerufen.
 
- Wenn das Fenster **Eigenschaften** geöffnet ist, wird die Schaltfläche **Eigenschaften** automatisch als ausgewählt angezeigt. In anderen Teilen der Umgebung wird dieselbe Schaltfläche angezeigt, und Sie können darauf klicken, um das Fenster **Eigenschaften** anzuzeigen.
+ Wenn das **Eigenschaftenfenster** geöffnet ist, wird die **Schaltfläche Eigenschaften** automatisch als ausgewählt angezeigt. In anderen Teilen der Umgebung wird dieselbe Schaltfläche angezeigt, auf die Sie klicken können, um das **Eigenschaftenfenster** anzuzeigen.
 
- Die Schaltfläche " **Eigenschaften Seiten** " ist nicht verfügbar, wenn `ISpecifyPropertyPages` für das ausgewählte Objekt nicht implementiert ist. Eigenschaften Seiten zeigen Konfigurations abhängige Eigenschaften an, die in der Regel mit Projektmappen und Projekten verknüpft sind. Sie können jedoch auch Projekt Elementen (z. b. C++in Visual) zugeordnet werden.
+ Die Schaltfläche **Eigenschaftenseiten** `ISpecifyPropertyPages` ist nicht verfügbar, wenn sie nicht für das ausgewählte Objekt implementiert ist. Eigenschaftenseiten zeigen konfigurationsabhängige Eigenschaften an, die in der Regel Projektlösungen und Projekten zugeordnet sind, aber auch Projektelementen zugeordnet werden können (z. B. in Visual C++).
 
 > [!NOTE]
-> Mithilfe von nicht verwaltetem Code können Sie dem **Eigenschaften** Fenster keine Symbolleisten-Schaltflächen hinzufügen. Zum Hinzufügen einer Symbolleisten-Schaltfläche müssen Sie ein verwaltetes Objekt erstellen, das von <xref:System.Windows.Forms.Design.PropertyTab> abgeleitet ist.
+> Sie können dem **Eigenschaftenfenster** keine Symbolleistenschaltflächen hinzufügen, indem Sie nicht verwalteten Code verwenden. Um eine Symbolleistenschaltfläche hinzuzufügen, müssen Sie ein verwaltetes Objekt erstellen, das von abstammt. <xref:System.Windows.Forms.Design.PropertyTab>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)

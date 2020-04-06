@@ -1,42 +1,42 @@
 ---
-title: Programme | Microsoft-Dokumentation
+title: Programme | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e70a970aad250a30e19fd27ac3a47732952b3bf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d3fd1db5add74d2d94467e1f369916feb5f30d4a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351409"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738208"
 ---
-# <a name="programs"></a>Programs
-Architektur der Debugger eine *Programm*:
+# <a name="programs"></a>Programme
+In der Debuggerarchitektur wird ein *Programm*:
 
-- Ist ein Container für eine Reihe von Threads und einem Satz von Modulen. Ein Programm hat keine einzelne Analogie in das Windows-Betriebssystem.
+- Ein Container für einen Threadsatz und einen Satz von Modulen. Ein Programm hat keine einzige Analogie im Windows-Betriebssystem.
 
-     Ein Programm ist eine Art von Unterprozess. Wenn Sie eine Website Debuggen, kann z. B. ein Skript als Programm angezeigt werden. Wenn ein Skript im Skript-Engine-Prozess ausgeführt wird, verfügt über unabhängig von anderen Skripts, es auch einen eigenen Satz von Threads. Fügt an eine Debug-Engine (DE) an ein Programm und nicht für einen Prozess oder einen Thread.
+     Ein Programm ist eine Art Unterprozess. Wenn Sie beispielsweise eine Website debuggen, kann ein Skript als Programm betrachtet werden. Während ein Skript im Skriptmodulprozess ausgeführt wird, unabhängig von anderen Skripts, hat es auch einen eigenen Satz von Threads. Ein Debugmodul (DE) wird an ein Programm angefügt und nicht an einen Prozess oder einen Thread.
 
-- Erkennen sich selbst und den Prozess, den er ausgeführt wird. Ein Programm kann von getrennt, und beschreiben die DE, die sie erstellt haben, wenn alle angefügt werden. Ein Programm kann auch ausführen, beenden, fortsetzen und werden beendet.
+- Kann sich selbst und den Prozess identifizieren, in dem es ausgeführt wird. Ein Programm kann angefügt werden, von dem es getrennt werden kann, und die DE beschreiben, die es erstellt hat, falls vorhanden. Ein Programm kann auch ausgeführt, angehalten, fortgesetzt und beendet werden.
 
-- Können alle Threads auflisten. Ein Programm kann auch einen eigenen Stream erhält Disassembly angeben und kann die Codekontexte einer angegebenen Dokument Position auflisten.
+- Kann alle Threads aufzählen. Ein Programm kann auch einen eigenen Demontagestrom bereitstellen und alle Codekontexte einer bestimmten Dokumentposition aufzählen.
 
-- Wird durch dargestellt eine [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle, bevor das Programm angefügt ist, oder als Teil der anfügungsprozess, je nach Implementierung erstellt. Wenn Sie ein Port eines Prozesses Programme aufgezählt wird, wird jedes Programm in Übereinstimmung mit einer entsprechenden erstellt [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle zu übergeben, als Argument an [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Während der Debug-Engines auch erstellen `IDebugProgram2` Schnittstellen zum Darstellen der Programme, die diese Programme werden nicht in Übereinstimmung mit einem Programm-Knoten erstellt. Die `IDebugProgramNode2` Schnittstellen, die von einer bereitgestellten Kompatibilitätsrichtlinie erstellt werden zum tatsächlichen zu debuggen, während denen durch einen Port verwendet werden, nur für die Ermittlung, welche Programme in einem Prozess ausgeführt werden.
+- Wird durch eine [IDebugProgram2-Schnittstelle](../../extensibility/debugger/reference/idebugprogram2.md) dargestellt, die erstellt wurde, bevor das Programm angefügt wird, oder als Teil des Anfügeprozesses, abhängig von der Implementierung. Wenn ein Port die Programme eines Prozesses aufzählt, wird jedes Programm in Übereinstimmung mit einer entsprechenden [IDebugProgramNode2-Schnittstelle](../../extensibility/debugger/reference/idebugprogramnode2.md) erstellt, die als Argument an [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)übergeben wird. Während Debug-Engines `IDebugProgram2` auch Schnittstellen erstellen, um Programme darzustellen, werden diese Programme nicht in Übereinstimmung mit einem Programmknoten erstellt. Die `IDebugProgramNode2` von einem DE erstellten Schnittstellen werden für das eigentliche Debuggen verwendet, während die von einem Port erstellten Schnittstellen nur verwendet werden, um herauszufinden, welche Programme in einem Prozess ausgeführt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Prozesse](../../extensibility/debugger/processes.md)
 - [Programmknoten](../../extensibility/debugger/program-nodes.md)
 - [Module](../../extensibility/debugger/modules.md)
 - [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)
-- [Debug-engine](../../extensibility/debugger/debug-engine.md)
+- [Debug-Engine](../../extensibility/debugger/debug-engine.md)
 - [Dokumentposition](../../extensibility/debugger/document-position.md)
 - [Codekontext](../../extensibility/debugger/code-context.md)
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)

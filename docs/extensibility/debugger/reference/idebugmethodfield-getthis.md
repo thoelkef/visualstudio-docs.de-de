@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetThis | Microsoft-Dokumentation
+title: IDebugMethodField::GetThis | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetThis method
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 426fc0c74b44b1f137752814f9b6aaeff150baa8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324065"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727162"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
-Ruft die `this` (`Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) Zeiger, der das Objekt, das die Methode enthält.
+Ruft `this` den`Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]Zeiger ( in ) des Objekts ab, das die Methode enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetThis(
 
 ## <a name="parameters"></a>Parameter
 `ppClass`\
-[out] Gibt eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt, das die "this"-Zeigers darstellt.
+[out] Gibt ein [IDebugClassField-Objekt](../../../extensibility/debugger/reference/idebugclassfield.md) zurück, das den "this"-Zeiger darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- In objektorientierten Sprachen ist in der Regel ein impliziter Zeiger auf die aktuelle Instanziierung einer Klasse. Dies bezeichnet man als `this` in C#-/ C++ und als `Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].
+## <a name="remarks"></a>Bemerkungen
+ In objektorientierten Sprachen gibt es in der Regel einen impliziten Zeiger auf die aktuelle Instanziierung einer Klasse. Dies wird `this` als in C-/C++ und als in `Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]bezeichnet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

@@ -1,77 +1,77 @@
 ---
-title: 'Vorgehensweise: Debuggen eine benutzerdefinierten Debug-Engine | Microsoft-Dokumentation'
+title: 'Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c79790bfc9c9cd3767a453258b8c2d340f64d029
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334827"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738584"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Vorgehensweise: Debuggen einer benutzerdefinierten Debug-engine
-Ein Projekt startet die Debug-Engine (DE) aus der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode. Dies bedeutet, dass die DE, unter der Kontrolle der Instanz von gestartet wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] steuern den Projekttyp. Aber diese Instanz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kann nicht debuggen, die DE. Nachfolgend werden die Schritte, mit die Sie Ihre benutzerdefinierten DE Debuggen können.
+# <a name="how-to-debug-a-custom-debug-engine"></a>Gewusst wie: Debuggen eines benutzerdefinierten Debugmoduls
+Ein Projekttyp startet das Debugmodul (DE) von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode aus. Dies bedeutet, dass die DE unter [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der Kontrolle der Instanz der Steuerung des Projekttyps gestartet wird. Diese Instanz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kann die DE jedoch nicht debuggen. Im Folgenden sind die Schritte, mit denen Sie Ihre benutzerdefinierte DE debuggen können.
 
 > [!NOTE]
-> :     In der Prozedur "Debuggen eine benutzerdefinierten Debug-Engine" müssen Sie warten, für das DE zum Starten, bevor Sie sie anfügen können. Wenn Sie ein Meldungsfeld nahe am Anfang Ihrer DE, die beim Start der DE angezeigt wird platzieren, können zu diesem Zeitpunkt Anfügen und deaktivieren Sie dann im Meldungsfeld, um den Vorgang fortzusetzen. Auf diese Weise können abfangen, alle DE-Ereignisse.
+> : Im Verfahren "Debug a custom debug engine" müssen Sie warten, bis die DE gestartet wird, bevor Sie sie anfügen können. Wenn Sie ein Meldungsfeld am Anfang Ihrer DE platzieren, das beim Start der DE angezeigt wird, können Sie an diesem Punkt anfügen und dann das Meldungsfeld löschen, um fortzufahren. Auf diese Weise können Sie alle DE-Ereignisse abfangen.
 
 > [!WARNING]
-> Benötigen Sie, ob Sie Remotedebuggen installiert, bevor Sie, die folgenden Verfahren versuchen. Finden Sie unter [Remotedebuggen](../../debugger/remote-debugging.md) Details.
+> Sie müssen Remote-Debugging installiert haben, bevor Sie die folgenden Verfahren versuchen. Weitere Informationen finden Sie unter [Remote-Debugging.](../../debugger/remote-debugging.md)
 
-## <a name="debug-a-custom-debug-engine"></a>Debuggen einer benutzerdefinierten Debug-engine
+## <a name="debug-a-custom-debug-engine"></a>Debuggen eines benutzerdefinierten Debugmoduls
 
-1. Starten Sie *msvsmon.exe*, Remote Debug Monitor.
+1. Starten Sie *msvsmon.exe*, den Remote-Debugmonitor.
 
-2. Aus der **Tools** im Menü *msvsmon.exe*wählen **Optionen** zum Öffnen der **Optionen** im Dialogfeld.
+2. Wählen Sie im Menü **Extras** in *msvsmon.exe* **Optionen** aus, um das Dialogfeld **Optionen** zu öffnen.
 
-3. Wählen Sie die Option "keine Authentifizierung", und klicken Sie auf **OK**.
+3. Wählen Sie die Option "Keine Authentifizierung" und klicken Sie auf **OK**.
 
-4. Starten einer Instanz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und öffnen Sie das benutzerdefinierte DE-Projekt.
+4. Starten Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] eine Instanz von, und öffnen Sie Ihr benutzerdefiniertes DE-Projekt.
 
-5. Starten Sie eine zweite Instanz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und öffnen Sie das benutzerdefinierte Projekt, das die DE startet (für die Entwicklung, dies ist in der Regel in der experimentellen Registrierungsstruktur, die bei der Installation von VSIP eingerichtet ist).
+5. Starten Sie eine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zweite Instanz von, und öffnen Sie Ihr benutzerdefiniertes Projekt, das die DE startet (für die Entwicklung ist dies in der Regel in der experimentellen Registrierungsstruktur, die eingerichtet wird, wenn VSIP installiert wird).
 
-6. In diesem zweiten Instanz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], laden Sie eine Quelldatei aus Ihrem benutzerdefinierten Projekt, und starten Sie das Programm debuggt werden. Warten Sie einige Minuten, bis Sie ermöglichen die DE zu laden, oder warten Sie, bis ein Haltepunkt erreicht wird.
+6. Laden Sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dieser zweiten Instanz eine Quelldatei aus Ihrem benutzerdefinierten Projekt, und starten Sie das zu debuggende Programm. Warten Sie einige Augenblicke, bis die DE geladen werden kann, oder warten Sie, bis ein Haltepunkt erreicht wird.
 
-7. In der ersten Instanz des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (mit dem DE-Projekt), wählen Sie **an den Prozess anhängen** aus der **Debuggen** Menü.
+7. Wählen Sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der ersten Instanz (mit Ihrem DE-Projekt) im **Menü Debug** die Option **An Prozess anfügen** aus.
 
-8. In der **an den Prozess anhängen** im Dialogfeld die **Transport** zu **Remote (nativ ohne Authentifizierung)** .
+8. Ändern Sie im Dialogfeld **An Prozess anfügen** den **Transport** in **Remote (nur nativ ohne Authentifizierung)**.
 
-9. Ändern der **Qualifizierer** auf den Namen des Computers (Hinweis: ein Verlauf der Einträge, vorhanden ist, damit Sie diesen Namen nur einmal eingeben müssen).
+9. Ändern Sie den **Qualifizierer** in den Namen Ihres Computers (Hinweis: Es gibt eine Historie von Einträgen, daher müssen Sie diesen Namen nur einmal eingeben).
 
-10. In der **verfügbare Prozesse** wählen Sie die Instanz von Ihr DE, die ausgeführt wird, und klicken Sie auf die **Anfügen** Schaltfläche.
+10. Wählen Sie in der Liste **Verfügbare Prozesse** die Instanz Ihrer DE aus, die ausgeführt wird, und klicken Sie auf die Schaltfläche **Anfügen.**
 
-11. Nachdem die Symbole in Ihre DE geladen haben, fügen Sie Haltepunkte in Ihrem Code DE.
+11. Nachdem die Symbole in De geladen haben, platzieren Sie Haltepunkte in Ihrem DE-Code.
 
-12. Jedes Mal, wenn Sie zu beenden und neu starten des Debugvorgangs zur Verfügung, wiederholen Sie die Schritte 6 bis 10.
+12. Wiederholen Sie jedes Mal, wenn Sie den Debugvorgang beenden und dann neu starten, die Schritte 6 bis 10.
 
 ## <a name="debug-a-custom-project-type"></a>Debuggen eines benutzerdefinierten Projekttyps
 
-1. Starten Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in den normalen Registrierungsstruktur und die Auslastung geben Sie Ihr Projekt Projekt (Dies ist die Quelle, die Art Ihres Projekts, keine Instanziierung von der Art Ihres Projekts).
+1. Beginnen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Sie in der normalen Registrierungsstruktur, und laden Sie das Projekttypprojekt (dies ist die Quelle für den Projekttyp, keine Instanziierung des Projekttyps).
 
-2. Öffnen Sie die Projekteigenschaften, und wechseln Sie zu der **Debuggen** Seite. Für die **Befehl**, geben Sie den Pfad zu der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (Standardmäßig ist dies *[Laufwerk]* \Programme\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
+2. Öffnen Sie die Project-Eigenschaften, und wechseln Sie zur **Seite Debuggen.** Geben **Command**Sie für den Befehl [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Pfad zur IDE ein (standardmäßig ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dies *[Laufwerk]*,,Programmdateien» ,,Microsoft 8'Common7'IDE'devenv.exe').
 
-3. Für die **Befehlsargumente**, Typ `/rootsuffix exp` für die experimentelle Registrierungsstruktur (erstellt als VSIP installiert wurde).
+3. Geben Sie für `/rootsuffix exp` die **Befehlsargumente**ein, geben Sie für die experimentelle Registrierungsstruktur ein (erstellt, als VSIP installiert wurde).
 
-4. Klicken Sie auf **OK** um die Änderungen zu übernehmen.
+4. Klicken Sie auf **OK** , um die Änderungen zu übernehmen.
 
-5. Starten Sie Ihren Projekttyp durch Drücken von **F5**. Dadurch wird eine zweite Instanz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+5. Starten Sie Ihren Projekttyp, indem Sie **F5**drücken. Dadurch wird eine zweite [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Instanz von gestartet.
 
-6. An diesem Punkt können Sie Haltepunkte in Ihrem Projekt Typ Quellcode platzieren.
+6. An diesem Punkt können Sie Haltepunkte in Ihrem Projekttypquellcode platzieren.
 
-7. In der zweiten Instanz des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], laden oder erstellen Sie eine neue Instanz der Art Ihres Projekts. Während der laden oder erstellen können die festgelegten Haltepunkte anzusteuern sein.
+7. Laden oder erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Sie in der zweiten Instanz von eine neue Instanz Ihres Projekttyps. Während der Last oder Erstellung können Ihre Haltepunkte getroffen werden.
 
 8. Debuggen Sie Ihren Projekttyp.
 
-9. Wenn Sie den Prozess starten einer bereitgestellten Kompatibilitätsrichtlinie debuggen möchten, können Sie die Schritte ausführen, in der Prozedur "Debuggen eine benutzerdefinierten Debug-Engine" Verbindung mit Ihrem DE, nachdem es gestartet wird. Dadurch erhalten Sie drei Instanzen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ausgeführt wird: eine für Ihr Projekt die Quelle, einen zweiten für Ihren Projekttyp der instanziierten, und klicken Sie auf eine dritte auf Ihre DE angefügt.
+9. Wenn Sie den Prozess zum Starten einer DE debuggen, können Sie die Schritte in der Prozedur "Debug a custom debug engine" ausführen, um sie nach dem Start an Ihre DE anzuhängen. Dadurch erhalten Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] drei Instanzen der Ausführung: eine für Ihre Projekttypquelle, eine Zweite für Ihren instanziierten Projekttyp und eine dritte, die an Ihre DE angefügt ist.
 
-## <a name="see-also"></a>Siehe auch
-- [Erstellen einer benutzerdefinierten Debug-engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Erstellen eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER | Microsoft-Dokumentation
+title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba4af7ef465a4d98f78eccc9f7dce7dd4fa43aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346189"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737544"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-Eine Struktur, die einen benutzerdefinierten Viewer identifiziert, oder geben Sie die Schnellansicht.
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
+Eine Struktur, die einen benutzerdefinierten Viewer oder eine Typvisualisierung identifiziert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,34 +51,34 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>Member
 `dwID`\
-Eine ID, mehrere Viewer oder Schnellansichten, die von einer Implementierung zu unterscheiden `GUID`.
+Eine ID zum Unterscheiden mehrerer Viewer oder `GUID`Visualisierer, die von einem implementiert werden.
 
 `bstrMenuName`\
 Der Text, der im Dropdown-Menü angezeigt wird.
 
 `bstrDescription`\
-Eine Beschreibung der benutzerdefinierten Viewer oder typschnellansicht (muss ein null-Wert sein, wenn nicht verwendet).
+Eine Beschreibung des benutzerdefinierten Viewers oder Typvisualizers (muss ein NULL-Wert sein, wenn er nicht verwendet wird).
 
 `guidLang`\
-Sprache für die ausdrucksauswertung bereitstellt.
+Sprache des liefernden Ausdrucksevaluators.
 
 `guidVendor`\
-Hersteller, der die ausdrucksauswertung bereitstellt.
+Anbieter des bereitstellenden Ausdrucksevaluators.
 
 `bstrMetric`\
-Metrik unter dem die benutzerdefinierten Viewer oder typschnellansicht `CLSID` wird gespeichert.
+Metrik, unter der der `CLSID` benutzerdefinierte Viewer oder die Typvisualisierung gespeichert wird.
 
-## <a name="remarks"></a>Hinweise
-Eine Liste dieser Struktur wird zurückgegeben, durch einen Aufruf der [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) Methode (und durch Erweiterung, die [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) Methode).
+## <a name="remarks"></a>Bemerkungen
+Eine Liste dieser Struktur wird durch einen Aufruf der [GetCustomViewerList-Methode](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) (und damit der [GetCustomViewerList-Methode)](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

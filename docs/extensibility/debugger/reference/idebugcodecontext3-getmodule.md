@@ -1,27 +1,27 @@
 ---
-title: IDebugCodeContext3::GetModule | Microsoft-Dokumentation
+title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fa2cbc3f7902e3f3cd7674cf9e2d3effb80942e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20e4bbc32aef11c91e4f5c642bb48acb26633fe1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338870"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734197"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
-Ruft einen Verweis auf die Schnittstelle von der Debug-Modul ab.
+Ruft einen Verweis auf die Schnittstelle des Debugmoduls ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,13 +39,13 @@ public int GetModule(
 
 ## <a name="parameters"></a>Parameter
 `ppModule`\
-[out] Verweis auf die Debug-Modul-Schnittstelle.
+[out] Verweis auf die Debugmodulschnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugCodeContext** -Objekt, das macht die [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugCodeContext-Objekt** implementiert wird, das die [IDebugBeforeSymbolSearchEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)
@@ -65,5 +65,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

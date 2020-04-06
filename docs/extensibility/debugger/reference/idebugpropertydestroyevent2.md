@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyDestroyEvent2 | Microsoft-Dokumentation
+title: IDebugPropertyDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2 interface
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a52e9a1a3723566dd7a2dbdfc3cfe1a4d41261ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce15f389f22513e08b06c0d097cdac4aec3c35bf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322745"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720905"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
-Diese Schnittstelle wird von der Debug-Engine (DE) gesendet, für die Sitzung Debug-Manager (SDM), wenn eine Eigenschaft, die einem bestimmten Dokument zugeordnet ist gerade zerstört werden.
+Diese Schnittstelle wird vom Debugmodul (DE) an den Sitzungsdebug-Manager (SDM) gesendet, wenn eine Eigenschaft, die einem bestimmten Dokument zugeordnet ist, zerstört werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle, um zu melden, dass eine Eigenschaft zerstört wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle. Diese Schnittstelle wird implementiert, wenn die DE eine Eigenschaft, mit einem Skript zuvor erstellt wurde; zerstören die Eigenschaft, entfernt das zugeordnete Skript aus der IDE.
+ Die DE implementiert diese Schnittstelle, um zu melden, dass eine Eigenschaft zerstört wurde. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss für dasselbe Objekt wie diese Schnittstelle implementiert werden. Das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die `IDebugEvent2` Schnittstelle zuzugreifen. Diese Schnittstelle wird implementiert, wenn die DE zuvor eine Eigenschaft erstellt hat, die einem Skript zugeordnet ist. Durch das Zerstören der Eigenschaft wird das zugehörige Skript aus der IDE entfernt.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die DE erstellt und sendet dieses Ereignisobjekt zum Bericht, die eine Eigenschaft zerstört wurde. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn es um das derzeit debuggte Programm angefügt wird.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, um zu melden, dass eine Eigenschaft zerstört wurde. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methode der `IDebugPropertyDestroyEvent2`.
+ Die folgende Tabelle zeigt `IDebugPropertyDestroyEvent2`die Methode von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Ruft die Eigenschaft gelöscht werden.|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Ruft die zu zerstörende Eigenschaft ab.|
 
-## <a name="remarks"></a>Hinweise
- Finden Sie unter den Hinweisen zu [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) Einzelheiten darüber, warum diese Ereignisse werden verwendet.
+## <a name="remarks"></a>Bemerkungen
+ Weitere Informationen zur Verwendung dieser Ereignisse finden Sie in den Anmerkungen zu [IDebugPropertyCreateEvent2.](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

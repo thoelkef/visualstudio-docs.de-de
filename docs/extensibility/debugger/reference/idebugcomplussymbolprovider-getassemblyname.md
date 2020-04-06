@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft-Dokumentation
+title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
 ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbb3ca2fa998cfdb362c985edb7406ca623e2f89
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad546e3cde5106a966ce4533ee059f0ba1e2565d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336973"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733974"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-Ruft den Namen der Assembly bei Angabe der Modul- und Domäne ab.
+Ruft den Namen der Assembly mit dem Modul und der Anwendungsdomäne ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,19 +44,19 @@ int GetAssemblyName(
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Der Bezeichner für die Anwendungsdomäne.
+[in] Bezeichner für die Anwendungsdomäne.
 
 `guidModule`\
 [in] Eindeutiger Bezeichner für das Modul.
 
 `pbstrName`\
-[out] Gibt den Namen der Assembly.
+[out] Gibt den Namen der Assembly zurück.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAssemblyName(
@@ -84,5 +84,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,30 +1,30 @@
 ---
-title: M_taskId-Feld | Microsoft-Dokumentation
+title: m_taskId Feld | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskId field, Task class [.NET Framework debug engines]
 ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 511a9e51c9612db30efe122d940ae458f1850a08
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c031d225010c6e1e6d8a7c681e47699efe56ed9c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351552"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738357"
 ---
-# <a name="mtaskid-field"></a>M_taskId-Feld
-Das dahinter liegende Feld für die <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> Eigenschaft.
+# <a name="m_taskid-field"></a>m_taskId Feld
+Das Sicherungsfeld <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> für die Eigenschaft.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
+ **Baugruppe:** mscorlib (in *mscorlib.dll*)
 
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
+ Da Sie über .NET Framework nicht auf dieses interne Element zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,7 +32,7 @@ Das dahinter liegende Feld für die <xref:System.Threading.Tasks.Task.Id%2A?disp
 .field private int32 m_taskId
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-## <a name="see-also"></a>Siehe auch
-- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

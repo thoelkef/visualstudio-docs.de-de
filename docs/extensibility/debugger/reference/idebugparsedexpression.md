@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression | Microsoft-Dokumentation
+title: IDebugParsedExpression | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression interface
 ms.assetid: be6486ed-b070-4898-95b1-58581bcb4447
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56c0547d348c4fb3de387ac0ffce465b7bf5e90
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 22069b8eedb06d67eafaf7333f379a057c1b6f23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311777"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725995"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Expressionsevaluatoren finden Sie unter [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Diese Schnittstelle stellt einen analysierten Ausdruck zur Auswertung bereiter dar.
+ Diese Schnittstelle stellt einen analysierten Ausdruck dar, der ausgewertet werden kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,29 +32,29 @@ IDebugParsedExpression : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Eine ausdrucksauswertung implementiert diese Schnittstelle einen analysierten Ausdruck darstellt, der für die Evaluierung bereit ist.
+ Ein Ausdrucksauswertungswert implementiert diese Schnittstelle, um einen analysierten Ausdruck darzustellen, der für die Auswertung bereit ist.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Ein Aufruf von [analysieren](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) dieser Schnittstelle zurück.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Ein Aufruf von [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) gibt diese Schnittstelle zurück.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methode der `IDebugParsedExpression`.
+ Die folgende Tabelle zeigt `IDebugParsedExpression`die Methode von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|Wertet den analysierten Ausdruck.|
+|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|Wertet den analysierten Ausdruck aus.|
 
-## <a name="remarks"></a>Hinweise
- Wenn der Aufrufer zum Auswerten des Ausdrucks bereit ist, ruft er [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) zurückzugebenden ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , die das Ergebnis der Auswertung enthält. Dieser Ansatz mit dem zweiteiligen Auswertung, analysieren und dann auswerten, können den analysierten Ausdruck mehrmals ausgewertet werden soll, die zeitaufwändig Analysieren des Ausdrucks zu umgehen.
+## <a name="remarks"></a>Bemerkungen
+ Wenn der Aufrufer bereit ist, den Ausdruck auszuwerten, ruft er [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) auf, um eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) zurückzugeben, die das Ergebnis der Auswertung enthält. Dieser zweiteilige Ansatz für die Auswertung und anschließende Auswertung ermöglicht die mehrfache Auswertung des analysierten Ausdrucks, wodurch der zeitaufwändige Prozess der Analyse des Ausdrucks umgangen wird.
 
-## <a name="requirements"></a>Anforderungen
- Header: ee.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: ee.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Auslesen](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Analysieren](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

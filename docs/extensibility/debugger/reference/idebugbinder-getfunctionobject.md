@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetFunctionObject | Microsoft-Dokumentation
+title: IDebugBinder::GetFunctionObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetFunctionObject method
 ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03078a09de94b886a659059192a5b67430cb5137
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 01d501367f47e520e9170118da8b6fdfcb326137
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337664"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736012"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
-Diese Methode ruft eine [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Objekt verwendet, um Funktionsparameter zu erstellen.
+Diese Methode ruft ein [IDebugFunctionObject-Objekt](../../../extensibility/debugger/reference/idebugfunctionobject.md) ab, das zum Erstellen von Funktionsparametern verwendet wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,11 +41,11 @@ int GetFunctionObject(
 
 ## <a name="parameters"></a>Parameter
 `ppFunction`\
-[out] Gibt die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Schnittstelle, die verwendet wird, um Funktionsparameter zu erstellen.
+[out] Gibt die [IDebugFunctionObject-Schnittstelle](../../../extensibility/debugger/reference/idebugfunctionobject.md) zurück, die zum Erstellen von Funktionsparametern verwendet wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

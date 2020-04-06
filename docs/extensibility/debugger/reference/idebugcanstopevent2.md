@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2 | Microsoft-Dokumentation
+title: IDebugCanStopEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab364b426005c838072fabc1a3c7ed2f7d64ac6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337340"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734511"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-Diese Schnittstelle wird verwendet, die sitzungsbasierter Debug-Manager (SDM) an, ob an der aktuellen Codeposition beendet bitten.
+Diese Schnittstelle wird verwendet, um den Sitzungsdebug-Manager (SDM) zu fragen, ob er am aktuellen Codespeicherort anhalten soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,33 +29,33 @@ IDebugCanStopEvent2 : IUknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die Debug-Engine (DE) implementiert diese Schnittstelle, um die Unterstützung der Source-Code schrittweise durchlaufen. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden (wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).
+ Das Debug-Modul (DE) implementiert diese Schnittstelle, um das Durchlaufen des Quellcodes zu unterstützen. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden `IDebugEvent2` (das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die Schnittstelle zuzugreifen).
 
- Die Implementierung dieser Schnittstelle muss das SDM Aufruf kommunizieren [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) an die Debug-Engine. Z. B. dazu mit der Meldung an die Debug-Engine-Meldungsbehandlung Thread gesendet oder das Objekt, das diese Schnittstelle implementiert, enthalten einen Verweis auf die Debug-Engine und einen Rückruf in die Debug-Engine mit dem übergebenen Kennzeichen konnte `IDebugCanStopEvent2::CanStop`.
+ Die Implementierung dieser Schnittstelle muss den Aufruf von [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) durch das SDM an das Debugmodul übermitteln. Dies kann z. B. mit einer Nachricht erfolgen, die an den Nachrichtenbehandlungsthread des Debugmoduls gesendet wird, oder das Objekt, das diese Schnittstelle implementiert, kann einen Verweis auf das Debugmodul enthalten und mit dem an `IDebugCanStopEvent2::CanStop`übergebenen Flag in das Debugmodul zurückrufen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Diese Methode jedes Mal, wenn die DE aufgefordert, Ausführung und die DE weiterhin den Code durchlaufen werden kann die DE senden. Dieses Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM angegeben wird, wenn diese an die zu debuggende Programm wird angefügt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE kann diese Methode jedes Mal senden, wenn die DE aufgefordert wird, die Ausführung fortzusetzen, und die DE durch den Code tritt. Dieses Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugCanStopEvent2`.
+ Die folgende Tabelle zeigt `IDebugCanStopEvent2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Ruft den Grund für dieses Ereignis ab.|
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Gibt an, ob die zu debuggende Programm wird an der Position der dieses Ereignis (und das Senden eines Ereignisses, das den Grund für Beenden beschreibt) beendet werden soll, oder nur die Ausführung wird fortgesetzt.|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Ruft ab, der Dokumentenkontext, der den Speicherort der dieses Ereignis beschreibt.|
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Ruft ab, der Codekontext, der den Speicherort der dieses Ereignis beschreibt.|
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Gibt an, ob das gedebuggte Programm am Speicherort dieses Ereignisses beendet werden soll (und ein Ereignis sendet, das den Grund für das Beenden beschreibt) oder einfach die Ausführung fortsetzen soll.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Ruft den Dokumentkontext ab, der den Speicherort dieses Ereignisses beschreibt.|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Ruft den Codekontext ab, der den Speicherort dieses Ereignisses beschreibt.|
 
-## <a name="remarks"></a>Hinweise
- Die DE sendet diese Schnittstelle auf, wenn die Benutzer schrittweise eine Funktion und die DE findet keine Debuginformationen vorhanden oder Debuginformationen vorhanden ist, aber die DE weiß nicht, wenn der Quellcode für diesen Standort angezeigt werden kann.
+## <a name="remarks"></a>Bemerkungen
+ Die DE sendet diese Schnittstelle, wenn der Benutzer in eine Funktion einsteigt und die DE dort keine Debuginformationen findet oder Debuginformationen vorhanden sind, aber die DE weiß nicht, ob der Quellcode für diesen Speicherort angezeigt werden kann.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -1,25 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft-Dokumentation
+title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7aaff6ee7b770ce55a2ad08ff3d8f4f392375576
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 408aa2f373ab296394a0181014c16b1697fdf9ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336938"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733930"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Ruft die Klassen mit dem angegebenen Attribut in einem bestimmten Modul ab.
@@ -46,7 +46,7 @@ int GetAttributedClassesinModule (
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Der Bezeichner der Anwendungsdomäne.
+[in] Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
 [in] Eindeutiger Bezeichner des Moduls.
@@ -55,13 +55,13 @@ int GetAttributedClassesinModule (
 [in] Die Attributzeichenfolge.
 
 `ppEnum`\
-[out] Gibt eine Enumeration der attributierten Klassen.
+[out] Gibt eine Enumeration der attributierten Klassen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(
@@ -151,5 +151,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

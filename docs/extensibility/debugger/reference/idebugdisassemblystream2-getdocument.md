@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument | Microsoft-Dokumentation
+title: IDebugDisassemblyStream2::GetDocument | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a043d5462ad206395cb7d70d28152c19a7df6460
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf5d1a73e15ad38bf14d954718ce97c088b2e525
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310431"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732186"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
-Ruft das Quelldokument, das diesen Eingabedatenstrom zugeordnet.
+Ruft das Quelldokument ab, das diesem Eingabestream zugeordnet ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,17 +43,17 @@ int GetDocument( 
 
 ## <a name="parameters"></a>Parameter
 `bstrDocumentUrl`\
-[in] Die URL des Dokuments.
+[in] Die Dokument-URL.
 
 `ppDocument`\
-[out] Gibt eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Objekt, das das Dokument darstellt.
+[out] Gibt ein [IDebugDocument2-Objekt](../../../extensibility/debugger/reference/idebugdocument2.md) zurück, das das Dokument darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird von Debug-Engines implementiert, die Text-Dokumenten, die nicht in eine tatsächliche Datei gespeichert werden.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird von Debugmodulen implementiert, die Textdokumente enthalten, die nicht in einer tatsächlichen Datei gespeichert sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

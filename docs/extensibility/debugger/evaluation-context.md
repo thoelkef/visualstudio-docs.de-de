@@ -1,42 +1,42 @@
 ---
-title: Evaluierungskontext | Microsoft-Dokumentation
+title: Evaluierungskontext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, context
 ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6a3d74c26b6ca94e0a4052df4810e407313a6cd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315501"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738800"
 ---
 # <a name="evaluation-context"></a>Evaluierungskontext
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Wenn die Debug-Engine (DE) die ausdrucksauswertung (EE), drei Argumente, die aufgerufen werden übergeben [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) den Kontext für Suchen und Auswerten von Symbolen, zu bestimmen, wie in der folgenden Tabelle gezeigt.
+ Wenn das Debugmodul (DE) den Ausdrucksevaluator (EE) aufruft, bestimmen drei Argumente, die an [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) übergeben werden, den Kontext für das Suchen und Auswerten von Symbolen, wie in der folgenden Tabelle dargestellt.
 
 ## <a name="arguments"></a>Argumente
 
-|Argument|Beschreibung|
+|Argument|BESCHREIBUNG|
 |--------------|-----------------|
-|`pSymbolProvider`|Ein [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) Schnittstelle, die der Symbol-Handler (SH) gibt, verwendet werden soll, um das Symbol zu identifizieren.|
-|`pAddress`|Ein [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle, die dem aktuellen Zeitpunkt der Ausführung angibt. Diese Schnittstelle sucht die Methode, die den ausgeführten Code enthält.|
-|`pBinder`|Ein [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle, die den Wert und Typ eines Symbols mit dem angegebenen Namen gefunden.|
+|`pSymbolProvider`|Eine [IDebugSymbolProvider-Schnittstelle,](../../extensibility/debugger/reference/idebugsymbolprovider.md) die den Symbolhandler (SH) angibt, der zum Identifizieren des Symbols verwendet werden soll.|
+|`pAddress`|Eine [IDebugAddress-Schnittstelle,](../../extensibility/debugger/reference/idebugaddress.md) die den aktuellen Ausführungspunkt angibt. Diese Schnittstelle findet die Methode, die den ausgeführten Code enthält.|
+|`pBinder`|Eine [IDebugBinder-Schnittstelle,](../../extensibility/debugger/reference/idebugbinder.md) die den Wert und Typ eines Symbols mit dem Namen findet.|
 
- `IDebugParsedExpression::EvaluateSync` Gibt eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle, die den sich ergebenden Wert und seinen Typ darstellt.
+ `IDebugParsedExpression::EvaluateSync`gibt eine [IDebugProperty2-Schnittstelle](../../extensibility/debugger/reference/idebugproperty2.md) zurück, die den resultierenden Wert und seinen Typ darstellt.
 
-## <a name="see-also"></a>Siehe auch
-- [Wichtige Schnittstellen für die ausdrucksauswertung](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
-- [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Schlüsselausdrucksauswertungsschnittstellen](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
+- [Anzeigen von Einheimischen](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)
