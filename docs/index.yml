@@ -14,12 +14,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 157d3bc451829b0c91772a66222b563cd07a5eaf
+  ms.sourcegitcommit: 20049ffecc08fdfae45406c26190de900357eef6
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74118948"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80620636"
 productDirectory:
   items:
   - title: Visual Studio
@@ -30,9 +30,9 @@ productDirectory:
     - url: /visualstudio/windows?view=vs-2017
       text: Visual Studio 2017
     - url: https://docs.microsoft.com/previous-versions/visualstudio/
-      text: Vorgängerversionen
+      text: Frühere Versionen
     - url: https://docs.microsoft.com/visualstudio/releases/2019/release-notes
-      text: Versionshinweise
+      text: Anmerkungen zu diesem Release
     - url: https://visualstudio.microsoft.com/
       text: Produktseite
   - title: Visual Studio für Mac
@@ -43,7 +43,7 @@ productDirectory:
     - url: https://docs.microsoft.com/visualstudio/mac/?view=vsmac-2017
       text: Visual Studio 2017 für Mac
     - url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
-      text: Versionshinweise
+      text: Anmerkungen zu diesem Release
     - url: https://visualstudio.microsoft.com/vs/mac/
       text: Produktseite
   - title: Visual Studio Code
@@ -52,8 +52,17 @@ productDirectory:
     - url: https://code.visualstudio.com/docs
       text: Dokumentation
     - url: https://code.visualstudio.com/updates
-      text: Versionshinweise
+      text: Anmerkungen zu diesem Release
     - url: https://code.visualstudio.com
+      text: Produktseite
+  - title: Visual Studio Online
+    imageSrc: ./media/vs-ide-2019.svg
+    links:
+    - url: https://docs.microsoft.com/visualstudio/online/
+      text: Dokumentation
+    - url: https://code.visualstudio.com/docs/remote/vsonline
+      text: Verwendung mit Visual Studio Code
+    - url: https://visualstudio.microsoft.com/services/visual-studio-online/
       text: Produktseite
   - title: Visual Studio App Center
     imageSrc: ./media/vs-mobile-center.svg
@@ -72,4 +81,4 @@ productDirectory:
     - url: https://my.visualstudio.com
       text: Portal
     - url: https://manage.visualstudio.com
-      text: Verwaltung
+      text: verwaltung
