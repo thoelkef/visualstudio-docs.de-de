@@ -1,6 +1,6 @@
 ---
 title: Als Ziel festgelegte .NET Frameworks
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307328"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472735"
 ---
 # <a name="framework-targeting-overview"></a>Übersicht über Frameworkziele
 
 In Visual Studio können Sie die Version von .NET angeben, auf die Sie das Projekt ausrichten möchten. Durch Frameworkziele wird gewährleistet, dass die Anwendung nur diejenigen Funktionen verwendet, die in der angegebenen Frameworkversion verfügbar sind. Damit .NET Framework-Apps auf einem anderen Computer ausgeführt werden können, muss die Frameworkversion, auf die die Anwendung ausgerichtet ist, mit der Frameworkversion kompatibel sein, die auf dem Computer installiert ist.
 
-Eine Visual Studio-Projektmappe kann Projekte für verschiedene Versionen von .NET enthalten.
-
-Weitere Informationen zu Zielframeworks finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).
+Eine Visual Studio-Projektmappe kann Projekte für verschiedene Versionen von .NET enthalten.  Beachten Sie jedoch, dass Sie einen Build nur für eine einzelne Version von .NET erstellen können, indem Sie entweder auf Bedingungen für einen einzelnen Build verweisen oder verschiedene Binärdateien für jede Version rekursiv erstellen.  Weitere Informationen zu Zielframeworks finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).
 
 > [!TIP]
 > Sie können auch Anwendungen für unterschiedliche Plattformen als Ziel verwenden. Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multitargeting-overview.md) (Festlegen von Zielversionen).

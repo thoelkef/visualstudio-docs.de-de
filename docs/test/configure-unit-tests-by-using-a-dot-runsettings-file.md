@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557949"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233080"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -50,17 +50,18 @@ Die Datei wird im Menü „Test“ angezeigt, und Sie können sie auswählen ode
 
 Es gibt drei Möglichkeiten, in Visual Studio 2019, Version 16.4 und höher, eine Datei mit Laufzeiteinstellungen anzugeben:
 
-- Fügen Sie entweder über die Projektdatei oder eine Directory.Build.props-Datei eine Buildeigenschaft zu einem Projekt hinzu. Die Datei mit Laufzeiteinstellungen für ein Projekt wird durch die Eigenschaft **RunSettingsFilePath** angegeben. 
+- Fügen Sie entweder über die Projektdatei oder eine Directory.Build.props-Datei eine Buildeigenschaft zu einem Projekt hinzu. Die Datei mit Laufzeiteinstellungen für ein Projekt wird durch die Eigenschaft **RunSettingsFilePath** angegeben.
 
     - Laufzeiteinstellungen auf Projektebene werden zurzeit in C#-, VB-, C++- und F#-Projekten unterstützt.
     - Eine für ein Projekt angegebene Datei setzt alle anderen in der Projektmappe angegebenen Laufzeiteinstellungen außer Kraft.
+    - Mithilfe [dieser MSBuild-Eigenschaften](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) können Sie den Pfad zur RUNSETTINGS-Datei angeben. 
 
     Beispiel für die Angabe einer *RUNSETTINGS*-Datei für ein Projekt:
     
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
-        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+        <RunSettingsFilePath>$(MSBuildProjectDirectory)\example.runsettings</RunSettingsFilePath>
       </PropertyGroup>
       ...
     </Project>
@@ -258,6 +259,7 @@ Das **RunConfiguration**-Element kann folgende Elemente enthalten:
 |**TestAdaptersPaths**||Ein oder mehrere Pfade zu dem Verzeichnis, in dem die Testadapter gespeichert sind.|
 |**MaxCpuCount**|1|Durch diese Einstellung wird der Umfang der parallelen Ausführung gesteuert, wenn Komponententests ausgeführt werden, bei denen die auf dem Computer verfügbaren Kerne verwendet werden. Die Testausführungs-Engine startet für jeden verfügbaren Kern einen eigenständigen Prozess und übergibt an jeden Kern einen Container mit auszuführenden Tests. Ein Container kann eine Assembly, eine DLL oder ein relevantes Artefakt sein. Der Testcontainer ist die Planungseinheit. In jedem Container werden die Tests entsprechend dem Testframework ausgeführt. Gibt es viele Container, werden Prozesse, sobald das Ausführen ihrer Tests in einem Container abgeschlossen ist, an den nächsten verfügbaren Container übergeben.<br /><br />MaxCpuCount kann Folgendes sein:<br /><br />n, wobei 1 < = n < = Anzahl von Kernen: bis zu n Prozesse werden gestartet.<br /><br />n, wobei n = beliebiger anderer Wert: die Anzahl von gestarteten Prozessen kann maximal der Anzahl der verfügbaren Kerne entsprechen. Legen Sie beispielsweise n = 0 fest, damit die Plattform automatisch die optimale Anzahl der zu startenden Prozesse anhand der Umgebung ermittelt.|
 |**TestSessionTimeout**||Ermöglicht Benutzern, eine Testsitzung zu beenden, wenn sie ein angegebenes Timeout überschreitet. Die Einstellung eines Timeouts stellt sicher, dass die Ressourcen gut ausgenutzt werden und Testsitzungen auf einen bestimmten Zeitraum beschränkt bleiben. Diese Einstellung ist in **Visual Studio 2017 Version 15.5** und höher verfügbar.|
+|**DotnetHostPath**||Legen Sie einen benutzerdefinierten Pfad zum Dotnet-Host fest, der zum Ausführen des Testhosts verwendet wird. Dies ist hilfreich, wenn Sie Ihren eigenen Dotnet-Host erstellen, z. B. beim Erstellen des Repositorys „dotnet/runtime“. Wenn Sie diese Option festlegen, wird die Suche nach der Datei „testhost.exe“ übersprungen, und stattdessen wird die Datei „testhost.dll“ verwendet. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adapter für diagnostische Daten (Datensammler)
 
@@ -343,3 +345,4 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 - [Konfigurieren eines Testlaufs](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio-Testaufgabe (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+

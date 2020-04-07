@@ -10,23 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234955"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233067"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
 JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben von JavaScript-Code in der Visual Studio-IDE können Sie die meisten oder alle Standardbearbeitungshilfen (Codeausschnitte, IntelliSense, usw.) verwenden. Sie können JavaScript-Code für viele Arten von Anwendungen und Dienste schreiben.
 
 > [!NOTE]
-> In dem Bemühen, die [MDN-Webdokumentation](https://developer.mozilla.org/en-US/) als führende zentrale Entwicklungsressource zu etablieren, werden alle Verweise auf die JavaScript-API von Microsoft (über 500 Seiten) von „docs.microsoft.com“ zu den jeweiligen MDN-Entsprechungen umgeleitet. Weitere Einzelheiten finden Sie in dieser [Ankündigung](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> In dem Bemühen, die [MDN-Webdokumentation](https://developer.mozilla.org/en-US/) als führende zentrale Entwicklungsressource zu etablieren, werden alle Verweise auf die JavaScript-API von Microsoft (über 500 Seiten) von „docs.microsoft.com“ zu den jeweiligen MDN-Entsprechungen umgeleitet. Weitere Einzelheiten finden Sie in dieser [Ankündigung](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a> Unterstützung für ECMAScript 2015 (ES6) und höher
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Unterstützung für ECMAScript 2015 (ES6) und höher
 
 Visual Studio unterstützt nun die Syntax für ECMAScript-Updates wie ECMAScript 2015/2016.
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 JavaScript IntelliSense zeigt nun in [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] deutlich mehr Informationen zu Parametern und Memberlisten an. Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen. Weitere Informationen zu Neuerungen und zur Funktionsweise von IntelliSense finden Sie [hier](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Support für JSX-Syntax
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> Support für JSX-Syntax
 
 JavaScript in [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] bietet eine umfangreiche Unterstützung für die JSX-Syntax. JSX ist ein Syntaxset, das HTML-Tags in JavaScript-Dateien erlaubt.
 
@@ -260,7 +260,7 @@ Weitere Informationen zur Erstellung von `.d.ts`-Deklarationsdateien [ finden Si
 Da der neue Sprachdienst nicht auf einer Ausführungs-Engine, sondern auf einer statischen Analyse basiert (weitere Informationen zu den Unterschieden finden Sie in [diesem Thema](https://github.com/Microsoft/TypeScript/issues/4789)), gibt es einige JavaScript-Muster, die nicht mehr erkannt werden.
 Das bekannteste Muster ist das „Expando“-Muster.
 Derzeit kann der Sprachdienst IntelliSense nicht für Objekte bereitstellen, denen nach der Deklaration Eigenschaften zugewiesen werden.
-Beispiel:
+Zum Beispiel:
 
 ```js
 var obj = {};

@@ -3,15 +3,16 @@ title: Anmelden bei Visual Studio-Abonnements mit dem Geschäfts-, Schul- oder U
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508991"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233207"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit dem Geschäfts-, Schul- oder Unikonto 
 
@@ -77,4 +78,4 @@ Wenden Sie sich bei anhaltenden Problemen bei der Anmeldung für Unterstützung 
 - [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und die Tools, Dienste und Angebote zu entdecken, die Ihnen zur Verfügung stehen.  
+Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und sich einen Überblick über die Tools, Dienste und Angebote zu verschaffen, die Ihnen zur Verfügung stehen.  

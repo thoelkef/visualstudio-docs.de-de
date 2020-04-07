@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922994"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80502038"
 ---
 Mit Visual Studio können Sie .NET-, ASP.NET- und ASP.NET Core-Apps in Containern mühelos erstellen, debuggen, ausführen und anschließend in Azure Container Registry (ACR), Docker Hub, Azure App Service oder Ihrer eigenen Containerregistrierung veröffentlichen. In diesem Artikel veröffentlichen wir eine ASP.NET Core-App in ACR.
 
@@ -74,6 +74,9 @@ Wenn im neuen Projektdialogfeld das Kontrollkästchen **Configure for HTTPS** (F
 Wählen Sie in der Symbolleiste im Dropdownmenü „Debuggen“ die Option **Docker** aus, und starten Sie das Debuggen der Anwendung. Möglicherweise wird eine Meldung mit einer Eingabeaufforderung zum Vertrauen eines Zertifikats angezeigt. Vertrauen Sie dem Zertifikat, um fortzufahren.
 
 Die Option **Containertools** im Fenster **Ausgabe** zeigt, welche Aktionen ausgeführt werden. Beim ersten Mal kann der Download des Basisimages einige Zeit dauern. Bei nachfolgenden Ausführungen geht es aber deutlich schneller.
+
+>[!NOTE]
+> Wenn Sie die Ports zum Debuggen ändern müssen, können Sie diese Änderungen in der Datei *launchSettings.json* vornehmen. Weitere Informationen dazu finden Sie unter [Containerstarteinstellungen](../../container-launch-settings.md).
 
 ## <a name="containers-window"></a>Fenster „Container“
 

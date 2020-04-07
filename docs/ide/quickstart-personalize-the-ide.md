@@ -1,18 +1,18 @@
 ---
 title: Festlegen des Farbdesigns und der Schriftarten
-ms.date: 11/20/2017
+ms.date: 03/23/2020
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596943"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233148"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalisieren der Visual Studio-IDE und des Editors
 
@@ -52,8 +52,19 @@ Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio heißt **B
 
    ::: moniker-end
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > Sie können weitere vordefinierte Designs installieren, indem Sie den **Visual Studio Color Theme Editor** aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns in der **Farbdesign**-Dropdownliste angezeigt.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Sie können Ihre eigenen Designs erstellen, indem Sie **Visual Studio Color Theme Designer** aus dem [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner) installieren.
+
+::: moniker-end
 
 ## <a name="change-text-color"></a>Ändern der Textfarbe
 

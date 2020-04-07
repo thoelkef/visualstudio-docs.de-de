@@ -1,6 +1,6 @@
 ---
 title: JavaScript und TypeScript in Visual Studio 2019
-ms.date: 03/27/2019
+ms.date: 03/16/2020
 ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3412e1d27a365a6c6302c56ada865f33a436b639
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: df4630182e89dad08360794057bda856ff4d677b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888617"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549946"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript und TypeScript in Visual Studio 2019
 
@@ -35,10 +35,38 @@ Die Option der Wiederherstellung in den veralteten JavaScript-Sprachdienst ist n
 Visual Studio 2019 bietet mehrere Optionen zur Integration der TypeScript-Kompilierung in Ihr Projekt:
 
 * [Das TypeScript-NuGet-Paket](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Wenn das NuGet-Paket für TypeScript 3.2 oder höher in Ihrem Projekt installiert ist, wird die entsprechende Version des TypeScript-Sprachdienstes in den Editor geladen.
-* Das TypeScript SDK, das standardmäßig im Visual Studio-Installer verfügbar ist, sowie ein eigenständiger SDK-Download vom [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 * [Das TypeScript-npm-Paket](https://www.npmjs.com/package/typescript). Wenn das npm-Paket für TypeScript 2.1 oder höher in Ihrem Projekt installiert ist, wird die entsprechende Version des TypeScript-Sprachdienstes in den Editor geladen.
+* Das TypeScript SDK, das standardmäßig im Visual Studio-Installer verfügbar ist, sowie ein eigenständiger SDK-Download vom [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 
 Für Projekte, die in Visual Studio 2019 entwickelt wurden, empfehlen wir Ihnen, die TypeScript-NuGet- und -npm-Pakete für eine bessere Portabilität über verschiedene Plattformen und Umgebungen zu verwenden.
+
+Ein gängiger Anwendungsfall für das NuGet-Paket ist die Kompilierung von TypeScript mithilfe der .NET Core-CLI. Das NuGet-Paket ist die einzige Möglichkeit zum Aktivieren der TypeScript-Kompilierung mit .NET Core-CLI-Befehlen wie `dotnet build` und `dotnet publish`, es sei denn, Sie bearbeiten Ihre Projektdatei manuell, um Buildziele von einer Installation der TypeScript SDK zu importieren.
+
+## <a name="remove-default-imports-aspnet-core-projects"></a>Entfernen von Standardimporten (ASP.NET Core-Projekte)
+
+Bei älteren Projekten, die ein [Nicht-SDK-Format](https://docs.microsoft.com/nuget/resources/check-project-format) verwenden, müssen Sie einige Projektdateielemente möglicherweise entfernen.
+
+Wenn Sie das NuGet-Paket für MSBuild-Unterstützung in einem Projekt verwenden, darf die Projektdatei weder `Microsoft.TypeScript.Default.props` noch `Microsoft.TypeScript.targets` importieren. Die Dateien werden vom NuGet-Paket importiert, d. h., wenn Sie sie separat einfügen, kann ein unerwartetes Verhalten auftreten.
+
+1. Klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Projekt entladen** aus.
+
+1. Klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **\<*Projektdateiname*\> bearbeiten** aus.
+
+   Daraufhin wird die Projektdatei geöffnet.
+
+1. Entfernen Sie die Verweise auf `Microsoft.TypeScript.Default.props` und `Microsoft.TypeScript.targets`.
+
+   Die zu entfernenden Importe sehen etwa wie folgt aus:
+
+   ```xml
+   <Import
+      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props"
+      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+
+   <Import
+      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets"
+      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+   ```
 
 ## <a name="projects"></a>Projekte
 

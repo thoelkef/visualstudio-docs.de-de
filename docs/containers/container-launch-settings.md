@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 63cf881fdedf9608d5cb773bbcb6b969a0f51624
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542593"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472642"
 ---
 # <a name="container-tools-launch-settings"></a>Starteinstellungen für Containertools
 
@@ -61,7 +61,7 @@ Die Einstellung „commandName“ gibt an, dass dieser Abschnitt für Container 
 
 | Einstellungsname         | Beispiel                                               | Beschreibung                                                                                                             |
 | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Diese Befehlszeilenargumente werden verwendet, wenn Sie das Projekt im Container starten.                                     |
+| commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Diese Befehlszeilenargumente zum Starten Ihrer App werden verwendet, wenn Sie das Projekt im Container starten.                                     |
 | EnvironmentVariables | "environmentVariables": {                             | Diese Umgebungsvariablenwerte werden beim Starten im Container an den Prozess übermittelt.                       |
 |                      | "ASPNETCORE_URLS": "https://+:443; http://+:80",       |                                                                                                                         |
 |                      | "ASPNETCORE_HTTPS_PORT": "44381"                      |                                                                                                                         |

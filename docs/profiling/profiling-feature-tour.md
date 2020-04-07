@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578081"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412034"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -35,6 +35,21 @@ Das Fenster **Diagnosetools** ist häufig die bevorzugte Methode für die App-Pr
 
 > [!NOTE]
 > Sie können die Post-Mortem-Tools mit Windows 7 und höher verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
+
+## <a name="examine-performance-using-perftips"></a>Untersuchen der Leistung mit PerfTips
+
+In den meisten Fällen besteht die einfachste Methode zum Anzeigen von Leistungsinformationen darin, [PerfTips](../profiling/perftips.md) zu verwenden. Mit PerfTips können Sie Leistungsinformationen anzeigen, während Sie mit Ihrem Code interagieren. Sie können Informationen wie z.B. die Dauer des Ereignisses überprüfen (gemessen daran, wann der Debugger zuletzt angehalten wurde oder wann die App gestartet ist). Wenn Sie beispielsweise die Schritt-für-Schritt-Ausführung des Codes (F10, F11) verwenden, zeigt PerfTips Ihnen die App-Laufzeitdauer vom vorherigen Schritt zum nächsten Schritt an.
+
+![Profilerstellungstour „PerfTips“](../profiling/media/prof-tour-perf-tips.png "Profilerstellungstour „PerfTips“")
+
+Sie können PerfTips verwenden, um zu untersuchen, wie lange die Ausführung eines Codeblocks oder einer einzelnen Funktion dauert.
+
+PerfTips zeigt dieselben Ereignisse an, die auch in der Ansicht **Ereignisse** der Diagnosetools angezeigt werden. In der Ansicht **Ereignisse** können Sie verschiedene Ereignisse anzeigen, die beim Debuggen auftreten, z. B. das Festlegen eines Breakpoints oder einer Schritt-für-Schritt-Codeausführung.
+
+![Ansicht „Ereignisse“ in den Diagnosetools](../profiling/media/prof-tour-events.png "Diagnosetools: Ansicht „Ereignisse“")
+
+ > [!NOTE]
+ > Wenn Sie über Visual Studio Enterprise verfügen, sehen Sie auch [IntelliTrace-Ereignisse](../debugger/intellitrace.md) auf dieser Registerkarte.
 
 ## <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
@@ -56,9 +71,9 @@ Doppelklicken Sie auf eine Funktion, an der Sie interessiert sind. Ihnen wird ei
 
 ## <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
 
-Mit dem Fenster **Diagnosetools** können Sie auch die Speicherauslastung in Ihrer App bewerten. Beispielsweise können Sie die Anzahl und Größe der Objekte auf dem Heap anzeigen. Ausführlichere Anweisungen zum Analysieren von Speicher finden Sie unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Arbeitsspeicherauslastung).
+Im Fenster **Diagnosetools** können Sie auch das Tool **Speicherauslastung** verwenden, um die Arbeitsspeicherauslastung in Ihrer App auszuwerten. Beispielsweise können Sie die Anzahl und Größe der Objekte auf dem Heap anzeigen. Ausführlichere Anweisungen zum Analysieren von Speicher finden Sie unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Arbeitsspeicherauslastung). Ein anderes Arbeitsspeicheranalysetool, [.NET-Objektzuordnung](../profiling/dotnet-alloc-tool.md), unterstützt Sie beim Identifizieren von Speicherbelegungsmustern und Anomalien in Ihrem .NET-Code.
 
-Sie müssen mindestens eine Arbeitsspeichermomentaufnahme erstellen, um die Arbeitsspeicherauslastung während des Debuggens zu analysieren. Häufig ist es zum Analysieren von Arbeitsspeicher am Besten, wenn man zwei Momentaufnahmen macht, die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite Momentaufnahme direkt nach dem Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat.
+Sie müssen mindestens eine Arbeitsspeichermomentaufnahme erfassen, um die Arbeitsspeicherauslastung mit dem debuggerintegrierten Speicherauslastungstool zu analysieren. Häufig ist es zum Analysieren von Arbeitsspeicher am Besten, wenn man zwei Momentaufnahmen macht, die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite Momentaufnahme direkt nach dem Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat.
 
 ![Erstellen einer Momentaufnahme in den Diagnosetools](../profiling/media/prof-tour-take-snapshots.gif "Diagnosetools: Momentaufnahmen erstellen")
 
@@ -67,19 +82,6 @@ Wenn Sie auf einen der Pfeillinks klicken, erhalten Sie eine Differenzansicht de
 ![Differenzansicht „Heap“ in den Diagnosetools](../profiling/media/prof-tour-mem-usage-diff-heap.png "Diagnosetools: Differenzansicht „Heap“")
 
 Wenn Sie statt in der Ansicht **Speicherauslastung** auf den Link auf der linken Seite klicken, ist die Heapansicht nach der Objektanzahl organisiert. Die Objekte eines bestimmten Typs, der die Zahl am meisten erhöht hat, werden oben angezeigt (sortiert nach der Spalte **Anzahlunterschied**).
-
-## <a name="examine-performance-events"></a>Untersuchen der Leistungsereignisse
-
-Die Ansicht **Ereignisse** in den Diagnosetools zeigt verschiedene Ereignisse an, die während des Debuggens auftreten, z.B. die Einstellung eines Haltepunkts oder einer schrittweisen Ausführung von Code. Sie können Informationen wie z.B. die Dauer des Ereignisses überprüfen (gemessen daran, wann der Debugger zuletzt angehalten wurde oder wann die App gestartet ist). Wenn Sie den Code schrittweise ausführen (F10, F11), zeigt die **Ereignisse**-Ansicht die Dauer der App-Laufzeit aus dem vorherigen Schritt zum aktuellen Schritt.
-
-![Ansicht „Ereignisse“ in den Diagnosetools](../profiling/media/prof-tour-events.png "Diagnosetools: Ansicht „Ereignisse“")
-
- > [!NOTE]
- > Wenn Sie über Visual Studio Enterprise verfügen, sehen Sie auch [IntelliTrace-Ereignisse](../debugger/intellitrace.md) auf dieser Registerkarte.
-
-Die gleichen Ereignisse werden auch im Code-Editor angezeigt, den Sie als PerfTips anzeigen können.
-
-![Profilerstellungstour „PerfTips“](../profiling/media/prof-tour-perf-tips.png "Profilerstellungstour „PerfTips“")
 
 ## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Profilerstellung für Releasebuilds ohne den Debugger
 

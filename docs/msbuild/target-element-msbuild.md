@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631977"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375549"
 ---
 # <a name="target-element-msbuild"></a>Target-Element (MSBuild)
 
@@ -59,7 +59,7 @@ Enthält eine Reihe von Aufgaben, die MSBuild sequenziell ausführt.
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
-|`Name`|Erforderliches Attribut.<br /><br /> Der Name des Ziels.|
+|`Name`|Erforderliches Attribut.<br /><br /> Der Name des Ziels. Ein Zielname kann alle Zeichen außer `$@()%*?.` enthalten.|
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Ergibt die Bedingung `false`, führt das Ziel den Hauptteil des Ziels oder alle Ziele nicht aus, die im `DependsOnTargets`-Attribut festgelegt sind. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Optionales Attribut.<br /><br /> Die Dateien, die Eingaben in das Ziel bilden. Mehrere Dateien werden durch Semikolons getrennt. Der Zeitstempel der Dateien wird mit den Zeitstempeln von Dateien in `Outputs` verglichen, um festzustellen, ob die `Target` aktuell ist. Weitere Informationen finden Sie unter [Inkrementelle Builds](../msbuild/incremental-builds.md), [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md) und [Transformationen](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Optionales Attribut.<br /><br /> Die Dateien, die Ausgaben für dieses Ziel bilden. Mehrere Dateien werden durch Semikolons getrennt. Der Zeitstempel der Dateien wird mit den Zeitstempeln von Dateien in `Inputs` verglichen, um festzustellen, ob die `Target` aktuell ist. Weitere Informationen finden Sie unter [Inkrementelle Builds](../msbuild/incremental-builds.md), [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md) und [Transformationen](../msbuild/msbuild-transforms.md).|

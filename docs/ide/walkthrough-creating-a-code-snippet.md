@@ -1,6 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts'
-ms.date: 06/10/2019
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1bfadb4b8d1836d131b669ea43f28f522f3fbd8b
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597294"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472809"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
 
@@ -54,7 +54,7 @@ Der folgende XML-Code ist eine einfache Ausschnittvorlage:
 
 2. Geben Sie den Titel des Ausschnitts in das Element **Titel** ein. Verwenden Sie den Titel **Square Root**.
 
-3. Tragen Sie die Sprache des Ausschnitts in das **Sprachen**-Attribut des **Code**-Elements ein. Für C# verwenden Sie **CSharp**, für Visual Basic **VB**.
+3. Tragen Sie die Sprache des Ausschnitts in das **Sprachen**-Attribut des **Code**-Elements ein. Für C# verwenden Sie **CSharp**, für Visual Basic **VB** und für C++ **CPP**.
 
    > [!TIP]
    > Alle verfügbaren Sprachwerte finden Sie im Abschnitt der [Attribute](code-snippets-schema-reference.md#attributes) für Codeelemente auf der Seite [Schemareferenz für Codeausschnitte](code-snippets-schema-reference.md).
@@ -228,6 +228,6 @@ Der folgende XML-Code zeigt einen Codeausschnitt, der die Methode `File.Exists` 
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)

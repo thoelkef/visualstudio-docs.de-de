@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771542"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232918"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="2520"></a>2.5.2.0
+
+Veröffentlichung: 23. März 2020
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Debugger:**
+
+  - Die Registrierung von Threads bei Anfügung wurde behoben.
+
+## <a name="2510"></a>2.5.1.0
+
+Veröffentlichung: 3. März 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) hinzugefügt. Private Methoden, die mit Invoke, InvokeRepeating, StartCoroutine oder StopCoroutine verwendet werden, sollten nicht als nicht verwendet gekennzeichnet werden.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Die OnDrawGizmos/OnDrawGizmosSelected-Dokumentation wurde behoben.
+
+- **Auswertung:**
+
+  - Die Lambdaargumentuntersuchung wurde behoben.
+
+## <a name="2501"></a>2.5.0.1
+
+Veröffentlichung: 19. Februar 2020
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Ein Fehler wurde behoben, durch den die falsche Nachrichtensignatur bei der [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)-Diagnose überprüft wurde. Beim Untersuchen von Typen mit mehreren Vererbungsstufen kann diese Diagnose mit der folgenden Meldung fehlschlagen: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+
+## <a name="2500"></a>2.5.0.0
+
+Veröffentlichung: 22. Januar 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Die Unterstützung für HLSL-Dateien wurde hinzugefügt.
+  
+  - In der Benutzeroberfläche wird ein neues Dialogfeld für neue Ordner verwendet.
+  
+  - In den Einstellungen wird ein neues zugänglicheres Eigenschaftsraster verwendet.
+
+  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) hinzugefügt. Private Felder mit dem `SerializeField`-Attribut sollten nicht als nicht verwendet gekennzeichnet werden.
+
+  - Eine Unterdrückung wurde zu [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) hinzugefügt. Felder mit dem `SerializeField`-Attribut sollten nicht als nicht zugewiesen gekennzeichnet werden.  
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Die Projektgenerierung wurde behoben (`GenerateTargetFrameworkMonikerAttribute`-Ziel wurde nicht immer ordnungsgemäß ermittelt).
+
+- **Auswertung:**
+
+  - Die Zeichenfolgenauswertung wurde behoben (nicht mit ToString()-Aufrufen).
 
 ## <a name="2420"></a>2.4.2.0
 

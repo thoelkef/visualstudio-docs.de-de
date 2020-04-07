@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950688"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472668"
 ---
 # <a name="container-tools-build-properties"></a>Buildeigenschaften für Containertools
 
@@ -41,7 +41,7 @@ In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für 
 | DockerImageLabels | Die Standardbezeichnungen, die auf das Docker-Image angewendet werden. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 oder höher|
 | DockerFastModeProjectMountDirectory|Im **schnellen Modus** steuert diese Eigenschaft, wo das Volume des Projektausgabeverzeichnisses in den ausgeführten Container eingebunden wird.|C:\app (Windows) oder /app (Linux).|1.9.2 oder höher|
 | DockerfileBuildArguments | Zusätzliche Argumente, die an den Docker-Buildbefehl übergeben werden. | Nicht zutreffend. |1.0.1872750 oder höher|
-| DockerfileContext | Der Standardkontext, der beim Erstellen des Docker-Images verwendet wird. | Wird von Visual Studio festgelegt. |1.0.1872750 oder höher|
+| DockerfileContext | Hierbei handelt es sich um den Standardkontext, der beim Erstellen des Docker-Images als Pfad verwendet wird und relativ zum Dockerfile ist. | Wird von Visual Studio festgelegt. |1.0.1872750 oder höher|
 | DockerfileFastModeStage | Die Dockerfile-Phase (d. h. Ziel), die beim Erstellen des Images im Debugmodus verwendet werden soll. | Die erste Phase, die in der Dockerfile (Base) ermittelt wird. |
 | DockerfileFile | Beschreibt die standardmäßige Dockerfile, die zum Erstellen oder Ausführen des Containers für das Projekt verwendet wird. Hierfür kann auch ein Pfad angegeben werden. | Docker-Datei |1.0.1872750 oder höher|
 | DockerfileRunArguments | Zusätzliche Argumente, die an den Docker-Ausführungsbefehl übergeben werden. | Nicht zutreffend. |1.0.1872750 oder höher|
