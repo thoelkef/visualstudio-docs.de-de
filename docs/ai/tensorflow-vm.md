@@ -2,20 +2,21 @@
 title: Ausführen eines TensorFlow-Modells in der Cloud
 description: Ausführen eines TensorFlow-Modells auf einem virtuellen Azure-Computer für Deep Learning
 keywords: KI, Visual Studio, virtuelle Computer für Deep Learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75915829"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638754"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Trainieren eines TensorFlow-Modells in der Cloud
 

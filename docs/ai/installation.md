@@ -2,19 +2,20 @@
 title: Installieren von KI-Tools
 description: Beschreibt, wie Visual Studio Tools for AI installiert werden.
 keywords: KI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915811"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638575"
 ---
 # <a name="installation"></a>Installation
 
@@ -156,7 +157,7 @@ Gehen Sie auf diesen [Link](https://caffe2.ai/docs/getting-started.html), um Que
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (Incubating)](https://mxnet.incubator.apache.org/) ist ein Deep Learning-Framework, das im Hinblick auf Effizienz und Flexibilität konzipiert wurde. Mithilfe dieses Frameworks können Sie **symbolische und imperative Programmierung** miteinander [vermischen](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts), um größtmögliche Effizienz und Produktivität zu erreichen.
+[Apache MXNet (Incubating)](https://mxnet.incubator.apache.org/) ist ein Deep Learning-Framework, das im Hinblick auf Effizienz und Flexibilität konzipiert wurde. Mithilfe dieses Frameworks können Sie [symbolische und imperative Programmierung](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) miteinander **vermischen**, um größtmögliche Effizienz und Produktivität zu erreichen.
 
 Führen Sie den folgenden Befehl über ein Terminal aus, um MXNet zu installieren:
 

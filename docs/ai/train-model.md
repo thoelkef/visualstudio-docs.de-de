@@ -2,23 +2,24 @@
 title: Senden eines Auftrags zum Trainieren eines Modells in Azure Batch AI
 description: Training Model Cloud
 keywords: KI, Visual Studio, Modell trainieren, Cloud
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: dec70c9e9aeb9c916b511241a74b550354aff175
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 083b2cb191d627ced936ead6a90b363970a9e7e0
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915775"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638774"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trainieren von KI-Modellen in Azure Batch AI
 
-Batch AI ist ein verwalteter Dienst, mit dem Data Scientists und KI-Forscher KI-Modelle und andere Machine Learning-Modelle in Clustern mit virtuellen Azure-Computern, z.B. VMs mit GPU-Unterstützung, trainieren können. Sie müssen nur beschreiben, welche Anforderungen für den Auftrag bestehen und wo die Eingaben zu finden sind sowie die Ausgaben speichern, und Batch AI übernimmt den Rest. [Weitere Informationen zu Azure Batch AI](/azure/batch-ai/overview)
+Azure Batch AI ist ein verwalteter Dienst, mit dem Datenanalysten und KI-Forscher KI und andere Machine Learning-Modelle in Clustern von virtuellen Azure-Computern trainieren können (inkl. VMs mit GPU-Unterstützung). Sie müssen nur beschreiben, welche Anforderungen für den Auftrag bestehen und wo die Eingaben zu finden sind sowie die Ausgaben speichern, und Batch AI übernimmt den Rest. [Weitere Informationen zu Azure Batch AI](/azure/batch-ai/overview)
 
 Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Trainingsmodelle in Azure dynamisch horizontal hochskalieren.  Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, lässt sich anhand der Anleitungen im Azure Machine Learning-Beispielkatalog ganz einfach ein neues Python-Projekt erstellen.
 
@@ -34,7 +35,7 @@ Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Tra
 
     ![Das Team Explorer-Fenster zeigt Azure DevOps, GitHub und das Klonen eines Repositorys an.](media/train-model/team-explorer-devops.png)
 
-4. Geben Sie **im Feld „URL“ unter**Lokale Git-Repositorys`https://github.com/Microsoft/samples-for-ai` ein. Geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
+4. Geben Sie `https://github.com/Microsoft/samples-for-ai` im Feld „URL“ unter **Lokale Git-Repositorys** ein. Geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
 
     > [!Tip]
     > Der Ordner, den Sie in Team Explorer angeben, empfängt die geklonten Dateien. Im Gegensatz zum Befehl `git clone` wird beim Erstellen eines Klons in Team Explorer nicht automatisch ein Unterordner mit dem Namen des Repositorys erstellt.

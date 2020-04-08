@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806926"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543959"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -146,7 +146,7 @@ Sie können Azure Pipelines verwenden um Continuous Deployment (kontinuierliche 
 
 | App-Typ | Bereitstellungsszenario | Link |
 | --- | --- | --- |
-| **Office-App** | Sie können ein Add-In für Office aus Visual Studio veröffentlichen. | [Bereitstellen und Veröffentlichen Ihres Office-Add-Ins](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Office-App** | Sie können ein Add-In für Office aus Visual Studio veröffentlichen. | [Bereitstellen und Veröffentlichen Ihres Office-Add-Ins](/office/dev/add-ins/publish/publish) |
 | **WCF oder OData-Dienst** | Für andere Anwendungen können WCF RIA-Dienste verwendet werden, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch wird ab Visual Studio 2017 nicht mehr unterstützt, kann aber aus Visual Studio 2015 und niedrigeren Versionen immer noch bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

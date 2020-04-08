@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 03/02/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Superadministrator- und Administratorrolle und das Zuweisen von Administratoren.
-ms.openlocfilehash: ce76a2aaf970926d171086e65ba2d364e1526d61
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232754"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808375"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Superadministratoren und Administratoren für Visual Studio-Abonnementverträge
 
@@ -21,6 +21,8 @@ Im neuen Portal zur Verwaltung von Visual Studio-Abonnements für Kunden mit Vol
 **Superadministratoren:** Bei der Ersteinrichtung einer Organisation wird der Hauptkontakt standardmäßig zum Superadministrator. Der primäre Kontakt kann weitere Superadministratoren oder Administratoren zuweisen. Ein Superadministrator kann andere Administratoren sowie Abonnenten hinzufügen und entfernen. Wenn im System mehr als zwei Superadministratoren existieren, kann jeder Superadministrator alle anderen bis auf die letzten zwei löschen, da diese aus Sicherheitsgründen nicht gelöscht werden können.
 
 **Administratoren:** Administratoren können nur von einem Superadministrator zugewiesen werden. Ein Administrator kann ausschließlich Abonnenten innerhalb der Verträge verwalten, die der Superadministrator diesem zuweist.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>Zuweisen von Administratoren
 So weisen Sie neue Administratoren zu:

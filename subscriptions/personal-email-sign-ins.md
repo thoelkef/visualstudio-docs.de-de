@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550336"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808343"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio-Abonnements: Warum werden persönliche Konten für meine Abonnenten angezeigt?
 Nachdem Unternehmen vom Volume Licensing Service Center (VLSC) zum neuen [Abonnementverwaltungsportal](https://manage.visualstudio.com) von Visual Studio migriert haben, stellen Administratoren möglicherweise fest, dass als „Anmelde-E-Mail-Adresse“ für manche Abonnenten eine persönliche E-Mail-Adresse wie Hotmail oder Yahoo angezeigt wird.  Weitere Informationen finden Sie [in diesem Video](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
@@ -28,6 +28,9 @@ Während der Aktivierung des Abonnenten galt: Ein Microsoft-Konto (MSA) war zum 
 > Der moderne Abonnentenprozess in [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) unterstützt sowohl Geschäfts-, Uni- und Schul- als auch Microsoft-Kontoidentitätstypen (MSA).
 
 ## <a name="solution"></a>Lösung
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 Sie können das Problem beheben, indem Sie auf die Schaltfläche **Connect Emails** (E-Mail-Adressen verknüpfen) klicken. Das System versucht dann, die Konten mit MSAs den vorhandenen Benutzern in der Azure Active Directory-Instanz Ihrer Organisation nach Vor- und Nachname zuzuordnen. Wenn dabei ein Fehler auftritt, können Sie Übereinstimmungen entfernen, indem Sie rechts davon auf das **X** klicken.  
 
 > [!div class="mx-imgBorder"]
