@@ -75,7 +75,6 @@
 ### [Superadministratoren und Administratoren](admin-roles.md)
 ### [Festlegen von Vereinbarungseinstellungen](admin-prefs.md)
 ### [Übersicht](using-admin-portal.md)
-### [Videotutorial: Verwenden des Administratorportals](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Zuweisen von Abonnements
 #### [Hinzufügen einzelner Benutzer](assign-license.md)
 #### [Hinzufügen mehrerer Benutzer](assign-license-bulk.md)
