@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558124"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638690"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Messen der Anwendungsleistung über die Befehlszeile
 
@@ -29,9 +29,11 @@ In dem Beispiel, das in diesem Artikel beschrieben wird, sammeln Sie Leistungsin
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* Visual Studio 2019 Preview 3 oder höhere Versionen
+* Visual Studio 2019 oder höher
 
 * Kenntnisse im Umgang mit Befehlszeilentools
+
+* Installieren Sie die [Leistungstools für Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) auf dem Remotecomputer, um Leistungsinformationen auf einem Remotecomputer zu erfassen, auf dem Visual Studio nicht installiert ist. Die Version der Tools muss mit Ihrer Version von Visual Studio übereinstimmen.
 
 ## <a name="collect-performance-data"></a>Sammeln von Leistungsdaten
 
@@ -65,7 +67,7 @@ Bei der Profilerstellung mithilfe der CLI-Diagnosetools von Visual Studio wird d
 
 1. Wechseln Sie zur Dateiausgabe des vorherigen Befehls, und öffnen Sie sie in Visual Studio, um die gesammelten Informationen zu untersuchen.
 
-## <a name="config_file"></a> Agent-Konfigurationsdateien
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Agent-Konfigurationsdateien
 
 Sammlungs-Agents sind austauschbare Komponenten, die verschiedene Datentypen sammeln, je nachdem, was gemessen werden soll.
 

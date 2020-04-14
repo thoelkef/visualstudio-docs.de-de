@@ -1,21 +1,21 @@
 ---
 title: .NET-Namenskonventionen für EditorConfig-Dateien
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588602"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544006"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -42,20 +42,23 @@ Um die Art der Symbole zu beschreiben, für die die Namensregel gelten soll, geb
 In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen.
 
 - \* (verwenden Sie diesen Wert, um alle Symbole anzugeben)
-- Namespace
-- Klasse
+- namespace
+- class
 - struct
 - interface
 - enum
-- Eigenschaft
-- method
-- -Feld
+- property
+- Methode
+- Feld
 - event
-- -Delegat
-- parameter
+- delegate
+- -Parameter von
 - type_parameter
 - Lokal
 - local_function
+
+> [!NOTE] 
+> Tupelmember werden derzeit nicht unterstützt.
 
 ### <a name="accessibility-levels-of-symbols"></a>Zugriffsebenen von Symbolen
 
@@ -155,7 +158,7 @@ Folgende Werte sind für diese Eigenschaft zulässig:
 > [!NOTE]
 > Sie müssen im Rahmen Ihres Benennungsstils einen Stil für die Groß-/Kleinschreibung angeben. Andernfalls wird Ihr Benennungsstil möglicherweise ignoriert.
 
-## <a name="severity"></a>severity
+## <a name="severity"></a>Schweregrad
 
 Um den Schweregrad eines Verstoßes gegen Ihre Benennungsregel zu beschreiben, geben Sie eine Eigenschaft im folgenden Format an:
 
@@ -163,11 +166,11 @@ Um den Schweregrad eines Verstoßes gegen Ihre Benennungsregel zu beschreiben, g
 
 Die folgende Tabelle zeigt die zulässigen Schweregrade und ihre Bedeutung:
 
-severity | Effekt
+Schweregrad | Effekt
 ------------ | -------------
-none | Die Regel wird vollständig unterdrückt.
+Keine | Die Regel wird vollständig unterdrückt.
 Refactoring oder unbeaufsichtigt | Wenn dieses Format nicht befolgt wird, wird der Benutzer nicht benachrichtigt. Automatisch generierter Code folgt jedoch diesem Format.
-Vorschlag | Wenn dieses Format nicht eingehalten wird, dies dem Benutzer als Vorschlag (zwei unterlegte Punkte bei den ersten beiden Zeichen) anzeigen. Dies hat keine Auswirkungen auf die Kompilierzeit.
+Vorschlag | Wenn dieses Format nicht eingehalten wird, dies dem Benutzer als Vorschlag (zwei unterlegte Punkte bei den ersten beiden Zeichen) anzeigen. Dies hat zur Kompilierzeit keine Auswirkungen.
 warning | Wenn dieses Format nicht eingehalten wird, eine Compilerwarnung in der **Fehlerliste** anzeigen.
 error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler in der **Fehlerliste** anzeigen.
 
@@ -230,10 +233,10 @@ Wenn Sie Ihre Codedatei schließen und wieder öffnen, sehen Sie statt des Vorsc
 
 ![Namensregelwarnung](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Sprachkonventionen](editorconfig-language-conventions.md)
 - [Formatierungskonventionen](editorconfig-formatting-conventions.md)
 - [Roslyn-Namenskonventionen](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [Erstellen von portablen, benutzerdefinierten Editor-Optionen](../ide/create-portable-custom-editor-options.md)
+- [Erstellen portierbarer benutzerdefinierter Editor-Optionen](../ide/create-portable-custom-editor-options.md)
 - [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](editorconfig-code-style-settings-reference.md)

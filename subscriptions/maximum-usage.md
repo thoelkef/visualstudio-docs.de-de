@@ -4,18 +4,21 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 03/03/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie sich die maximale Anzahl zugewiesener Abonnements im Visual Studio-Verwaltungsportal anzeigen lassen können.
-ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232270"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808349"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements
 Mithilfe eines neuen Features im Verwaltungsportal für Visual Studio-Abonnements haben Sie immer im Blick, wie viele Abonnements Sie erworben und zugewiesen haben, und wissen, wie viele Abonnements auf jeder Stufe Sie sowohl während des vergangenen Jahres als auch über die gesamte Dauer Ihrer Vereinbarung hinweg maximal zugewiesen hatten. 
+
+## <a name="maximum-usage-overview"></a>Übersicht über die maximale Auslastung
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tdQK] 
 
 ## <a name="view-your-maximum-usage"></a>Anzeigen der maximalen Auslastung
 So können Sie sich die maximale Anzahl zugewiesener Abonnements für jede Vereinbarung und für jede Abonnementstufe anzeigen lassen:

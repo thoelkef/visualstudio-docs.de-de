@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580000"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543930"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Erstellen Ihrer ersten Anwendung für die Universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -42,6 +42,9 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
 1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 1. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **Universelles Windows** aus. Wählen Sie im mittleren Bereich **Leere App (universelles Windows)** aus. Benennen Sie das Projekt mit *HalloWelt*, und wählen Sie **OK**.
+
+   > [!NOTE]
+   > Stellen Sie sicher, dass es sich beim Speicherort des Quellprojekts um ein Laufwerk mit **NTFS-Formatierung (New Technology File System)** handelt, z. B. bei Ihrem Betriebssystemlaufwerk. Andernfalls können beim Erstellen und Ausführen Ihres Projekts Probleme auftreten. 
 
    ![Die Projektvorlage für universelles Windows im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](media/new-project-csharp-uwp-helloworld.png)
 

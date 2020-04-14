@@ -1,29 +1,27 @@
 ---
 title: Analysieren der Speicherauslastung
 ms.custom: seodec18
-ms.date: 01/02/2018
+ms.date: 03/30/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ddb082bf2451759be239d5c16404e82bcd84733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 21522ba32990a850a388bfcf69ab239232a2c23d
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578161"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638427"
 ---
 # <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
 
-Zum Ermitteln von Arbeitsspeicherverlusten und ineffizienter Arbeitsspeichernutzung können Sie Tools wie das im Debugger integrierte Speicherauslastungs-Diagnosetool oder die Tools im Leistungs-Profiler verwenden, z. B. das .NET-Objektzuordnungstool und das Speicherauslastungs-Nachbereitungstool. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und systemeigenen Momentaufnahme-Heaps machen. Sie können Momentaufnahmen von .NET-Apps, ASP.NET-Apps, nativen Apps und Apps im gemischten Modus (.NET und nativ) erfassen. 
+Zum Ermitteln von Arbeitsspeicherverlusten und ineffizienter Arbeitsspeichernutzung können Sie Tools wie das im Debugger integrierte Speicherauslastungs-Diagnosetool oder die Tools im Leistungs-Profiler verwenden, z. B. das .NET-Objektzuordnungstool und das Speicherauslastungs-Nachbereitungstool.
 
-Das **Speicherauslastungstool** kann für ein geöffnetes Visual Studio-Projekt oder eine installierte Microsoft Store-App ausgeführt oder an eine ausgeführte App bzw. einen Prozess angefügt werden. Sie können das Tool auf lokalen Computern oder Remotecomputern sowie auf einem Simulator oder Emulator ausführen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und systemeigenen Momentaufnahme-Heaps machen. Sie können Momentaufnahmen von .NET-Apps, ASP.NET-Apps, nativen Apps und Apps im gemischten Modus (.NET und nativ) erfassen. Das **Speicherauslastungstool** kann für ein geöffnetes Visual Studio-Projekt oder eine installierte Microsoft Store-App ausgeführt oder an eine ausgeführte App bzw. einen Prozess angefügt werden. Sie können das **Speicherauslastungstool** mit oder ohne Debuggen ausführen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Im Debugger können Sie die Arbeitsspeicher-Profilerstellung aktivieren bzw. deaktivieren und eine objektspezifische Aufschlüsselung der Arbeitsspeicherauslastung anzeigen. Sie können die Ergebnisse der Arbeitsspeicherauslastung anzeigen, wenn die Ausführung pausiert ist, z. B. an einem Breakpoint.
 
-Sie können das **Speicherauslastungstool** mit oder ohne Debuggen ausführen. Im Debugger können Sie die Arbeitsspeicher-Profilerstellung aktivieren bzw. deaktivieren und eine objektspezifische Aufschlüsselung der Arbeitsspeicherauslastung anzeigen. Sie können die Ergebnisse der Arbeitsspeicherauslastung anzeigen, wenn die Ausführung pausiert ist, z. B. an einem Breakpoint.
-
-Das **.NET-Tool für die Objektzuordnung** kann nur zur Nachbereitung ausgeführt werden.
+Das Tool **.NET-Objektzuordnung** unterstützt Sie beim Identifizieren von Speicherbelegungsmustern und Anomalien in Ihrem .NET-Code. Dieses Tool wird nur zur Nachbereitung ausgeführt. Sie können dieses Tool auf lokalen Computern oder Remotecomputern ausführen.
 
 Ausführliche Anweisungen zur Verwendung der Arbeitsspeicheranalyse-Tools finden Sie im Tutorial [Analysieren der Arbeitsspeicherauslastung](../profiling/memory-usage.md) und im Artikel [Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung](../profiling/dotnet-alloc-tool.md).
 

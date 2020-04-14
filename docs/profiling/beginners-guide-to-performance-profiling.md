@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128296"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638787"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 
-Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten.
+Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. In diesem Artikel wird die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools zum Abrufen von Leistungsdaten zu Ihrer App veranschaulicht.
 
 Wenn der Debugger angehalten wird, sammelt das Tool **CPU-Auslastung** Informationen zu den in der Anwendung ausgeführten Funktionen. Das Tool listet auch die Funktionen auf, die Aufgaben ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.
 
@@ -35,7 +35,7 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 > [!Important]
 > Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
 
-In diesem Artikel wird die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow behandelt. Sie können die CPU-Auslastung auch ohne Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel setzen. Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten während des Debuggens](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+In diesem Artikel wird die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow behandelt. Sie können die CPU-Auslastung auch ohne einen angefügten Debugger analysieren oder indem Sie eine ausgeführte App als Ziel festlegen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Sie können auch ein anderes debuggerintegriertes Profilerstellungstool namens [PerfTips](../profiling/perftips.md) verwenden, um die Schritt-für-Schritt-Ausführung von Code und die Ermittlung, wie viel Zeit bestimmte Funktionen oder Codeblöcke beanspruchen, zu nutzen.
 
 Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 
@@ -51,8 +51,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 2. Legen Sie einen zweiten Haltepunkt am Ende der Funktion oder des Codebereichs an, den Sie analysieren möchten.
 
-    > [!TIP]
-    > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
+    Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
 
 3. Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
@@ -95,6 +94,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
      ![Auswählen eines Zeitraums in den Diagnosetools](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      An diesem Punkt können Sie beginnen, die Daten zu analysieren.
+
+     > [!TIP]
+     >  Wenn Sie versuchen, Leistungsprobleme zu identifizieren, sollten Sie mehrere Messungen erfassen. Die Leistung variiert natürlich von Ausführung zu Ausführung, und Codepfade werden aufgrund der einmaligen Initialisierungslast bei der ersten Ausführung langsam ausgeführt, z. B. aufgrund des Ladens von DLL-Dateien, der Just-In-Time-Kompilierung von Methoden und der Initialisierung der Caches. Indem Sie mehrere Messungen erfassen, erhalten Sie einen besseren Überblick über die Spanne und den Durchschnitt der angezeigten Metriken, wodurch Sie die erste Ausführung mit der gleichmäßigen Leistung eines Codebereichs vergleichen können.
 
 ## <a name="step-2-analyze-cpu-usage-data"></a>Schritt 2: Analysieren der CPU-Auslastungsdaten
 

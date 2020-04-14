@@ -1,7 +1,7 @@
 ---
 title: Analysieren der CPU-Auslastung | Microsoft-Dokumentation
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553624"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638840"
 ---
 # <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
 Ein guter Ausgangspunkt für die Untersuchung von Leistungsproblemen in Ihrer App ist die CPU-Auslastung. Das Leistungstool für die **CPU-Auslastung** zeigt die CPU-Zeit und den prozentualen Anteil an, der für die Ausführung von Code in C++, C#/Visual Basic und JavaScript-Apps verwendet wird.
 
-Das Tool für die **CPU-Auslastung** kann auf einem geöffneten Visual Studio-Projekt oder auf einer installierten Microsoft Store-App ausgeführt oder an eine laufende App oder einen laufenden Prozess angefügt werden. Sie können das Tool auf lokalen Computern oder Remotecomputern sowie auf einem Simulator oder Emulator ausführen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Das Tool für die **CPU-Auslastung** kann auf einem geöffneten Visual Studio-Projekt oder auf einer installierten Microsoft Store-App ausgeführt oder an eine laufende App oder einen laufenden Prozess angefügt werden. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Sie können das Tool für die **CPU-Auslastung** mit oder ohne Debuggen ausführen. Im Debugger können Sie die CPU-Profilerstellung aktivieren bzw. deaktivieren sowie sich eine funktionsbezogene Aufschlüsselung der CPU-Auslastung ansehen. Sie können die Ergebnisse für die CPU-Auslastung anzeigen, wenn die Ausführung angehalten wurde, zum Beispiel an einem Breakpoint.
 
@@ -33,7 +33,7 @@ In der Regel repliziert der lokale Computer die Ausführung der installierten Ap
 
 ## <a name="collect-cpu-usage-data"></a>Erfassen von CPU-Auslastungsdaten
 
-1. Legen Sie im Visual Studio-Projekt die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Computer** aus.
+1. Legen Sie im Visual Studio-Projekt die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Windows-Debugger** (oder **Lokaler Computer**) aus.
 
     ![Auswählen von Release und lokalem Computer](../profiling/media/cpuuse_selectreleaselocalmachine.png "Auswählen von Release und lokalem Computer")
 

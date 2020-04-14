@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984882"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543756"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -29,7 +29,7 @@ ms.locfileid: "74984882"
 
 Dies öffnet das Dialogfeld „Neues Projekt“, über das Sie eine Vorlage zum Erstellen Ihrer Anwendung auswählen können.
 
-Es gibt einige Projekte, die eine vorgefertigte Vorlage zum Erstellen einer ASP.NET Core-Anwendung haben. Dies sind:
+Es gibt einige Projekte, die eine vorgefertigte Vorlage zum Erstellen einer ASP.NET Core-Anwendung haben. Diese lauten wie folgt:
 
 - **.NET Core > Leere ASP.NET Core-Webanwendung**
 - **.NET Core > ASP.NET Core-Webanwendung**
@@ -42,7 +42,7 @@ Klicken Sie auf die **leere ASP.NET Core-Webanwendung** und dann auf **Weiter**.
 
 ![Ansicht „Neue leere ASP.NET Core-Anwendung“](media/asp-net-core-image4.png)
 
-Mit „Leere ASP.NET Core-Webanwendung“ wird eine neue Webanwendung mit zwei Standarddateien erstellt: **program.cs** und **startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, wie z.B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
+Mit „Leere ASP.NET Core-Webanwendung“ wird eine neue Webanwendung mit zwei Standarddateien erstellt: **Program.cs** und **Startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, z. B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
 
 ![Anzeige des Projektmappenpads mit Abhängigkeiten](media/asp-net-core-image12.png)
 
@@ -66,10 +66,10 @@ public static void Main(string[] args)
 
 Eine ASP.NET Core-Anwendung erstellt in ihrer Hauptmethode einen Webserver, indem sie einen Host über eine Instanz von [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) konfiguriert und startet. Dieser Generator bietet Möglichkeiten zur Konfiguration des Hosts. In der Vorlagenanwendung werden die folgenden Konfigurationen verwendet:
 
-* `UseKestrel`: gibt an, dass der Kestrel-Server von der Anwendung verwendet wird
-* `UseContentRoot(Directory.GetCurrentDirectory())`: verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird
-* `.UseIISIntegration()`: gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
-* `.UseStartup<Startup>()`: gibt die Startup-Klasse an
+* `UseKestrel`: Gibt an, dass der Kestrel-Server von der Anwendung verwendet wird.
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird.
+* `.UseIISIntegration()`: Gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
+* `.UseStartup<Startup>()`: Gibt die Startup-Klasse an.
 
   Die Methoden zum Erstellen und Ausführen erstellen den IWebHost, der die App hostet und startet, während er auf eingehende HTTP-Anforderungen lauscht.
 
@@ -132,9 +132,9 @@ Visual Studio für Mac verwendet einen zufälligen Port, um Ihr Webprojekt zu st
 
 ASP.NET Core-Apps verwenden das Entwurfsmuster von Model-View-Controller (MVC), um eine logische Trennung zwischen den Verantwortlichkeiten der verschiedenen Teile der Anwendung zu gewährleisten. MVC besteht aus den folgenden Elementen:
 
-- **Model**: eine einfache Klasse, die die Daten darstellt
-- **View**: zeigt die Benutzeroberfläche der App an (wobei es sich häufig um die Modelldaten handelt)
-- **Controller**: eine Klasse, die Browseranforderungen verarbeitet und auf Benutzereingaben und -interaktionen reagiert
+- **Model**: Eine Klasse, die die Daten der App darstellt.
+- **Ansicht**: Zeigt die Benutzeroberfläche der App an (wobei es sich häufig um die Modelldaten handelt).
+- **Controller**: Eine Klasse, die Browseranforderungen verarbeitet und auf Benutzereingaben und -interaktionen reagiert.
 
 Weitere Informationen zum Verwenden von MVC finden Sie im Handbuch [Overview of ASP.NET Core MVC (Überblick über ASP.NET Core MVC)](/aspnet/core/mvc/overview).
 
@@ -192,7 +192,7 @@ Um einen Controller hinzuzufügen, führen Sie Folgendes durch:
 
     Wenn Sie den oben stehenden Codeausschnitte hinzufügen, sagen Sie der App damit, den `HelloWorld`-Controller und die `Index`-Aktionsmethode als Standard zu verwenden.
 
-6. Fügen Sie der `services.AddMvc();`-Methode den `ConfigureServices`-Aufruf hinzu, wie unten gezeigt:
+6. Fügen Sie der `ConfigureServices`-Methode den `services.AddMvc();`-Aufruf hinzu, wie unten gezeigt:
 
     ```csharp
     public void ConfigureServices(IServiceCollection services)
@@ -234,7 +234,7 @@ Achten Sie darauf, dass Sie alle vier Schritte erfolgreich abschließen, um sich
 
 Dieses Handbuch hat Sie in ASP.NET Core eingeführt. Nun wissen Sie, was ASP.NET Core ist und wofür und wie Sie es in Visual Studio für Mac verwenden können.
 Weiter Informationen zu weiteren Schritten finden Sie in den folgenden Handbüchern:
-- Dokumentation zu [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc)
+- Dokumentation zu [ASP.NET Core](/aspnet/core/)
 - [Creating Backend Services for Native Mobile Applications (Erstellen von Back-End-Diensten für native mobile Anwendungen)](/aspnet/core/mobile/native-mobile-backend), wo Sie erfahren, wie Sie einen REST-Dienst mit ASP.NET Core für eine Xamarin.Forms-App erstellen können.
 - [Praktische Übung zu ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
 
