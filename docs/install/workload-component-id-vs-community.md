@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75fcaf2b797e6a1592be6c6add484a60a1178704
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 21be6f1b9cd5eeecd96fccd055a5f56dd1e35edf
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437689"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276382"
 ---
 # <a name="visual-studio-community-component-directory"></a>Visual Studio Community: Komponentenverzeichnis
 
@@ -44,7 +45,7 @@ ms.locfileid: "79437689"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)

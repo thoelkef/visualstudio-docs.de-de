@@ -1,24 +1,24 @@
 ---
 title: .NET-Formatierungskonventionen für EditorConfig
-ms.date: 07/17/2019
+ms.date: 04/02/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 136744514e5e2e49ec92a443ac590eb5cc34418a
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589226"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892761"
 ---
 # <a name="formatting-conventions"></a>Formatierungskonventionen
 
@@ -65,7 +65,6 @@ dotnet_separate_import_directive_groups = true
 | **Gültige Sprachen** | C# und Visual Basic |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – System.* `using`-Direktiven alphabetisch sortieren und vor anderen using-Direktiven platzieren.<br /><br />`false` – System.* `using`-Direktiven nicht vor anderen `using`-Direktiven platzieren. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -89,7 +88,6 @@ using System.Threading.Tasks;
 | **Gültige Sprachen** | C# und Visual Basic |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.5 |
 | **Werte** | `true` – Leerzeile zwischen `using`-Direktivengruppen platzieren.<br /><br />`false` – keine Leerzeile zwischen `using`-Direktivengruppen platzieren. |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -151,6 +149,8 @@ Die Formatierungsregeln in diesem Abschnitt gelten nur für C#-Code.
 - [Umbruchoptionen](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [Optionen für using-Anweisungen](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>Optionen für „Neue Zeile“
 
@@ -180,7 +180,6 @@ Diese Regel bezieht sich auf die Frage, ob eine öffnende geschweifte Klammer `{
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `all` – geschweifte Klammern müssen für alle Ausdrücke in einer neuen Zeile stehen (Allman-Format).<br /><br />`none` – geschweifte Klammern müssen für alle Ausdrücke in der gleichen Zeile stehen („K&R“).<br /><br />`accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`, `lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` – geschweifte Klammern müssen für das angegebene Codeelement in einer neuen Zeile stehen (Allman-Format). |
-| **Visual Studio-Standard** | `all` |
 
 Codebeispiele:
 
@@ -210,7 +209,6 @@ void MyMethod() {
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – `else`-Anweisungen in einer neuen Zeile platzieren.<br /><br />`false` – `else`-Anweisungen in der gleichen Zeile platzieren. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -239,7 +237,6 @@ if (...) {
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – `catch`-Anweisungen in einer neuen Zeile platzieren.<br /><br />`false` – `catch`-Anweisungen in der gleichen Zeile platzieren. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -268,7 +265,6 @@ try {
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – `finally`-Anweisungen müssen nach der schließenden geschweiften Klammer in einer neuen Zeile stehen.<br /><br />`false` – `finally`-Anweisungen müssen nach der schließenden geschweiften Klammer in der gleichen Zeile stehen. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -302,7 +298,6 @@ try {
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – Member von Objektinitialisierern müssen in separaten Zeilen stehen.<br /><br />`false` – Member von Objektinitialisierern müssen in der gleichen Zeile stehen. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -329,7 +324,6 @@ var z = new B()
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – Member von anonymen Typen müssen in separaten Zeilen stehen.<br /><br />`false` – Member von anonymen Typen müssen in der gleichen Zeile stehen. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -356,7 +350,6 @@ var z = new
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – Elemente von Abfrageausdrucksklauseln müssen in separaten Zeilen stehen.<br /><br />`false` – Elemente von Abfrageausdrucksklauseln müssen in der gleichen Zeile stehen. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -396,7 +389,6 @@ csharp_indent_case_contents_when_block = true
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – „`switch` case“-Inhalte einrücken.<br /><br />`false` – „`switch` case“-Inhalte nicht einrücken. |
-| **Visual Studio-Standard** | `true` |
 
 - Wenn diese Regel auf **TRUE** festgelegt ist: i.
 - Wenn diese Regel auf **FALSE** festgelegt ist: d.
@@ -439,7 +431,6 @@ switch(c) {
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – `switch`-Bezeichnungen einrücken.<br /><br />`false` – `switch`-Bezeichner nicht einrücken. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -479,7 +470,6 @@ default:
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `flush_left` – Bezeichnungen werden in der Spalte ganz links angeordnet.<br /><br />`one_less_than_current` – Bezeichnungen werden mit einem um eine Einheit geringerem Einzug platziert als der aktuelle Kontext.<br /><br />`no_change` – Bezeichnungen werden mit dem gleichen Einzug platziert wie der aktuelle Kontext. |
-| **Visual Studio-Standard** | `no_change` |
 
 Codebeispiele:
 
@@ -531,7 +521,6 @@ class C
 | **Regelname** | csharp_indent_block_contents |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` - <br /><br />`false` -  |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -556,7 +545,6 @@ Console.WriteLine("Hello");
 | **Regelname** | csharp_indent_braces |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` - <br /><br />`false` -  |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -581,7 +569,6 @@ static void Hello()
 | **Regelname** | csharp_indent_case_contents_when_block |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` - <br /><br />`false` -  |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -642,7 +629,6 @@ csharp_space_between_square_brackets = false
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – Leerzeichen zwischen einer Umwandlung und dem Wert platzieren<br /><br />`false` – Leerzeichen zwischen einer Umwandlung und dem Wert entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -662,7 +648,6 @@ int y = (int)x;
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – Leerzeichen nach einem Schlüsselwort in einer Ablaufsteuerungsanweisung wie einer `for`-Schleife platzieren<br /><br />`false` – Leerzeichen nach einem Schlüsselwort in einer Ablaufsteuerungsanweisung wie einer `for`-Schleife entfernen |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -682,7 +667,6 @@ for(int i;i<x;i++) { ... }
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `control_flow_statements` – Leerzeichen zwischen Klammern von Ablaufsteuerungsanweisungen einfügen.<br /><br />`expressions` – Leerzeichen zwischen Klammern von Ausdrücken einfügen.<br /><br />`type_casts` – Leerzeichen zwischen Klammern in Typumwandlungen einfügen. |
-| **Visual Studio-Standard** | `false` |
 
 Wenn Sie diese Regel auslassen oder einen anderen Wert als `control_flow_statements`, `expressions` oder `type_casts` verwenden, wird die Einstellung nicht angewendet.
 
@@ -707,7 +691,6 @@ int y = ( int )x;
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
 | **Werte** | `true` – Leerzeichen vor dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration platzieren<br /><br />`false` – Leerzeichen vor dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration entfernen |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -743,7 +726,6 @@ class C: I
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
 | **Werte** | `true` – Leerzeichen nach dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration platzieren<br /><br />`false` – Leerzeichen nach dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration entfernen |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -779,7 +761,6 @@ class C :I
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
 | **Werte** | `before_and_after` – Leerzeichen vor und nach dem binären Operator einfügen.<br /><br />`none` – Leerzeichen vor und nach dem binären Operator entfernen.<br /><br />`ignore` – Leerzeichen um binäre Operatoren ignorieren. |
-| **Visual Studio-Standard** | `before_and_after` |
 
 Wenn Sie diese Regel auslassen oder einen anderen Wert als `before_and_after`, `none` oder `ignore` verwenden, wird die Einstellung nicht angewendet.
 
@@ -804,7 +785,6 @@ return x  *  (x-y);
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – hinter der öffnenden Klammer und vor der schließenden Klammer einer Parameterliste der Methodendeklaration ein Leerzeichen platzieren.<br /><br />`false` – Leerzeichen nach der öffnenden Klammer und vor der schließenden Klammer einer Parameterliste der Methodendeklaration entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -824,7 +804,6 @@ void Bark(int x) { ... }
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
 | **Werte** | `true` – bei einer Methodendeklaration innerhalb der Klammern für eine leere Parameterliste ein Leerzeichen einfügen.<br /><br />`false` – bei einer Methodendeklaration das Leerzeichen innerhalb der Klammern für eine leere Parameterliste entfernen. |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -859,7 +838,6 @@ void Goo(int x)
 | **Regelname** | csharp_space_between_method_declaration_name_and_open_parenthesis |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen zwischen dem Methodennamen und der öffnenden Klammer in der Methodendeklaration platzieren<br /><br />`false` – Leerzeichen zwischen dem Methodennamen und der öffnenden Klammer in der Methodendeklaration entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -879,7 +857,6 @@ void M() { }
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – hinter der öffnenden Klammer und vor der schließenden Klammer eines Methodenaufrufs ein Leerzeichen platzieren.<br /><br />`false` – Leerzeichen nach der öffnenden Klammer und vor der schließenden Klammer eines Methodenaufrufs entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -899,7 +876,6 @@ MyMethod(argument);
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
 | **Werte** | `true` – Leerzeichen zwischen Klammern um leere Argumentliste einfügen.<br /><br />`false` – Leerzeichen zwischen Klammern um leere Argumentliste entfernen. |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -935,7 +911,6 @@ void Goo(int x)
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
 | **Werte** | `true` – zwischen dem Namen des Methodenaufrufs und der öffnenden Klammer ein Leerzeichen einfügen.<br /><br />`false` – das Leerzeichen zwischen dem Namen des Methodenaufrufs und der öffnenden Klammer entfernen. |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -970,7 +945,6 @@ void Goo(int x)
 | **Regelname** | csharp_space_after_comma |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen nach einem Komma einfügen.<br /><br />`false` – Leerzeichen nach einem Komma entfernen. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -989,7 +963,6 @@ int[] x = new int[] { 1,2,3,4,5 }
 | **Regelname** | csharp_space_before_comma |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen vor einem Komma einfügen<br /><br />`false` – Leerzeichen vor einem Komma entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1008,7 +981,6 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 | **Regelname** | csharp_space_after_dot |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen nach einem Punkt einfügen.<br /><br />`false` – Leerzeichen nach einem Punkt entfernen. |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1027,7 +999,6 @@ this.Goo();
 | **Regelname** | csharp_space_before_dot |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen vor einem Punkt einfügen <br /><br />`false` – Leerzeichen vor einem Punkt entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1046,7 +1017,6 @@ this.Goo();
 | **Regelname** | csharp_space_after_semicolon_in_for_statement |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen nach jedem Semikolon in einer `for`-Anweisung einfügen<br /><br />`false` – Leerzeichen nach jedem Semikolon in einer `for`-Anweisung entfernen |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -1065,7 +1035,6 @@ for (int i = 0;i < x.Length;i++)
 | **Regelname** | csharp_space_before_semicolon_in_for_statement |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen vor jedem Semikolon in einer `for`-Anweisung einfügen <br /><br />`false` – Leerzeichen vor jedem Semikolon in einer `for`-Anweisung entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1084,7 +1053,6 @@ for (int i = 0; i < x.Length; i++)
 | **Regelname** | csharp_space_around_declaration_statements |
 | **Gültige Sprachen** | C# |
 | **Werte** | `ignore` – Keine zusätzlichen Leerzeichen in Deklarationsanweisungen entfernen<br /><br />`false` – Zusätzliche Leerzeichen in Deklarationsanweisungen entfernen |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1103,7 +1071,6 @@ int x = 0;
 | **Regelname** | csharp_space_before_open_square_brackets |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen vor öffnenden eckigen Klammern einfügen `[` <br /><br />`false` – Leerzeichen vor öffnenden eckigen Klammern entfernen `[` |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1122,7 +1089,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **Regelname** | csharp_space_between_empty_square_brackets |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen zwischen leeren eckigen Klammern einfügen `[ ]` <br /><br />`false` – Leerzeichen zwischen leeren eckigen Klammern entfernen `[]` |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1141,7 +1107,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **Regelname** | csharp_space_between_square_brackets |
 | **Gültige Sprachen** | C# |
 | **Werte** | `true` – Leerzeichen in nicht leeren eckigen Klammern einfügen `[ 0 ]` <br /><br />`false` – Leerzeichen aus nicht leeren eckigen Klammern entfernen `[0]` |
-| **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
 
@@ -1174,7 +1139,6 @@ csharp_preserve_single_line_blocks = true
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – Anweisungen und Memberdeklarationen in der gleichen Zeile belassen.<br /><br />`false` – Anweisungen und Memberdeklarationen in verschiedenen Zeilen belassen. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -1195,7 +1159,6 @@ string name = "John";
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
 | **Werte** | `true` – Codeblock in einzelner Zeile belassen.<br /><br />`false` – Codeblock in separaten Zeilen belassen. |
-| **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
 
@@ -1210,7 +1173,47 @@ public int MyProperty
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+### <a name="using-directive-options"></a>Optionen für using-Anweisungen
+
+Diese Formatierungsregel bezieht sich auf die Verwendung von using-Anweisungen, die innerhalb oder außerhalb eines Namespaces platziert wurden.
+
+*EDITORCONFIG-Beispieldatei:*
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **Regelname** | csharp_using_directive_placement |
+| **Gültige Sprachen** | C# |
+| **Eingeführt in Version** | Visual Studio 2019 Version 16.1 |
+| **Werte** | `outside_namespace`: Platzieren Sie using-Anweisungen bei diesem Wert außerhalb des Namespaces.<br /><br />`inside_namespace`: Platzieren Sie using-Anweisungen bei diesem Wert innerhalb des Namespaces. |
+
+Codebeispiele:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+}
+```
+
+## <a name="see-also"></a>Siehe auch
 
 - [Sprachkonventionen](editorconfig-language-conventions.md)
 - [Namenskonventionen](editorconfig-naming-conventions.md)

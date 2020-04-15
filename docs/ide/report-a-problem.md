@@ -4,17 +4,17 @@ description: Dieser Artikel bietet eine Übersicht über das Tool „Problem mel
 ms.date: 11/15/2018
 ms.custom: seodec18
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853502"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276474"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Problem melden: Status und häufig gestellte Fragen
 

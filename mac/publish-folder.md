@@ -8,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715908"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224497"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Veröffentlichen in einem Ordner mit Visual Studio für Mac
 
@@ -52,7 +52,7 @@ Mit Visual Studio für Mac können Sie Ihre .NET Core-Projekte mithilfe des Tool
 
 ## <a name="customize-publish-options"></a>Anpassen der Veröffentlichungsoptionen
 
-Wenn Sie den Namen des Veröffentlichungsprofils ändern möchten (dieses wird im Kontextmenü „Veröffentlichen“ angezeigt), können Sie die Veröffentlichungsprofildatei umbenennen. Achten Sie darauf, nicht die Erweiterung der Datei zu ändern (`.puxbml`).
+Wenn Sie den Namen des Veröffentlichungsprofils ändern möchten (dieses wird im Kontextmenü „Veröffentlichen“ angezeigt), können Sie die Veröffentlichungsprofildatei umbenennen. Achten Sie darauf, nicht die Erweiterung der Datei zu ändern (`.pubxml`).
 
 Wenn Sie den Pfad des Veröffentlichungsordner ändern möchten, öffnen Sie das Veröffentlichungsprofil, und bearbeiten Sie den Wert `publishUrl`.
 
