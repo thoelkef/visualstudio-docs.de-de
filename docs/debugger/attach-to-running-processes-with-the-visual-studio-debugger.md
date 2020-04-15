@@ -1,7 +1,7 @@
 ---
 title: Anlaufende Prozesse mit dem Debugger | Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/08/2019
+ms.date: 04/14/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5305be7615e426d7792d8dd3fefb2579e2ab6be
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233026"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385491"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wurde, wählen Sie > **Debug-Anschleifen an Prozess** aus, oder drücken Sie **Strg**+**Alt**+**P** in Visual Studio, und verwenden Sie das Dialogfeld **An Prozess anfügen,** um den Debugger an den Prozess anzuhängen. **Debug**
@@ -76,7 +76,7 @@ Informationen zum Debuggen eines .NET Core-Prozesses in einem Linux Docker-Conta
    1. Klicken Sie auf **Auswählen**.
    1. Wählen Sie im Dialogfeld **Codetyp auswählen** diese **Codetypen debuggen**aus.
    1. Wählen Sie die Codetypen aus, die Sie debuggen möchten.
-   1. Wählen Sie **OK** aus.
+   1. Klicken Sie auf **OK**.
 
 4. Wählen Sie **Anfügen** aus.
 
@@ -140,7 +140,7 @@ Weitere vollständige Anweisungen zum Debuggen ASP.NET Anwendungen, die auf IIS 
    1. Klicken Sie auf **Auswählen**.
    1. Wählen Sie im Dialogfeld **Codetyp auswählen** diese **Codetypen debuggen**aus.
    1. Wählen Sie die Codetypen aus, die Sie debuggen möchten.
-   1. Wählen Sie **OK** aus.
+   1. Klicken Sie auf **OK**.
 
 6. Wählen Sie **Anfügen** aus.
 
@@ -253,15 +253,15 @@ Bei einigen App-Typen, z. B. UWP-Apps (Universelle Windows-App), werden Sie nich
 
 Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute`ausgeben. Sie können dieses Attribut automatisch in den Code einfügen, indem Sie eine Verknüpfung über die [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) -Linkeroption herstellen.
 
-Für das clientseitige Skriptdebuggen muss das Skriptdebuggen im Browser aktiviert sein. Wählen Sie zum Debuggen von clientseitigem Skript in Chrome **Webkit** als Codetyp aus, und je nach App-Typ müssen `chrome.exe --remote-debugging-port=9222` Sie möglicherweise alle Chrome-Instanzen schließen und den Browser im Debugmodus starten (geben Sie über eine Befehlszeile ein).
+Für das clientseitige Skriptdebuggen muss das Skriptdebuggen im Browser aktiviert sein. Zum Debuggen von clientseitigem Skript in Chrome wählen Sie **JavaScript (Chrome)** oder **JavaScript (Microsoft Edge - Chromium)** als Codetyp, und je nach `chrome.exe --remote-debugging-port=9222` App-Typ müssen Sie möglicherweise alle Chrome-Instanzen schließen und den Browser im Debugmodus starten (Geben Sie über eine Befehlszeile ein). In früheren Versionen von Visual Studio war der Skriptdebugger für Chrome **Web kit**.
 
 Um schnell einen laufenden Prozess auszuwählen, an den sie angefügt werden soll, geben Sie in Visual Studio **Strg**+**Alt**+**P**ein, und geben Sie dann den ersten Buchstaben des Prozessnamens ein.
 
 |Szenario|Debug-Methode|Prozessname|Hinweise und Links|
 |-|-|-|-|
 |Remote-Debug-ASP.NET 4 oder 4.5 auf einem IIS-Server|Verwenden von Remote-Tools und **Anfügen an den Prozess**|*w3wp.exe*|Siehe [Remote-Debugging ASP.NET auf einem Remote-IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remote-Debug-ASP.NET Core auf einem IIS-Server|Verwenden von Remote-Tools und **Anfügen an den Prozess**|*dotnet.exe* oder *appname.exe*|Informationen zur App-Bereitstellung finden Sie unter [Veröffentlichen in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Informationen zum Debuggen finden Sie unter [Remotedebugging ASP.NET Core auf einem Remote-IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Debugen von clientseitigem Skript auf einem lokalen IIS-Server für unterstützte App-Typen |Verwenden **von Anfügen an den Prozess**|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Das Skriptdebuggen muss aktiviert sein. Für Chrome müssen Sie Chrome auch im Debugmodus ausführen und **Webkit-Code** im Feld **Anfügen** auswählen.|
+|Remote-Debug-ASP.NET Core auf einem IIS-Server|Verwenden von Remote-Tools und **Anfügen an den Prozess**|*w3wp.exe* oder *dotnet.exe*|Ab .NET Core 3 wird der *prozess "w3wp.exe"* für das standardmäßige [In-App-Hostingmodell](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)verwendet. Informationen zur App-Bereitstellung finden Sie unter [Veröffentlichen in IIS](/aspnet/core/host-and-deploy/iis/). Ausführlichere Informationen finden Sie unter [Remote-Debugging ASP.NET Core auf einem Remote-IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|Debugen von clientseitigem Skript auf einem lokalen IIS-Server für unterstützte App-Typen |Verwenden **von Anfügen an den Prozess**|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Das Skriptdebuggen muss aktiviert sein. Für Chrome müssen Sie Chrome auch im `chrome.exe --remote-debugging-port=9222` Debugmodus ausführen (geben Sie über eine Befehlszeile ein) und **JavaScript (Chrome)** im Feld **Anfügen** auswählen.|
 |Debuggen einer C-, Visual Basic- oder C++-App auf dem lokalen Computer|Verwenden Sie entweder Standard-Debugging (**F5**) oder **An Prozess anfügen**|*\<Appname>.exe*|Verwenden Sie in den meisten Szenarien das Standarddebugging und nicht **das Anfügen an den Prozess**.|
 |Remotedebug einer Windows-Desktop-App|Remotetools|–| Siehe [Remote-Debug-Debug-A- oder Visual Basic-App](../debugger/remote-debugging-csharp.md) oder [Remote-Debugeiner einer C++-App](../debugger/remote-debugging-cpp.md)|
 |Debuggen von .NET Core unter Linux|Verwenden **von Anfügen an den Prozess**|*dotnet.exe*|Informationen zur Verwendung von SSH finden Sie unter [Remote-Debug -.NET-Kern, das unter Linux mit SSH ausgeführt wird.](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md) |
@@ -297,18 +297,18 @@ In einigen lokalen Debugszenarios können Sie in Visual Studio ohne Zugriff auf 
 
     1. Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** den entsprechenden Prozess aus.
 
-    2. Wählen Sie **Auswählen**aus .
+    2. Wählen Sie **Auswählen**.
 
     3. Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie anschließend den Codetyp aus, der nicht angefügt werden konnte. Deaktivieren Sie die anderen Codetypen.
 
-    4. Wählen Sie **OK** aus.
+    4. Klicken Sie auf **OK**.
 
     5. Wählen Sie im Dialogfeld **An Prozess anfügen** die Option **Anfügen**aus.
 
     Dieses Mal schlägt das Anfügen komplett fehl, und Sie erhalten eine spezifische Fehlermeldung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Debug multiple processes (Debuggen mehrerer Prozesse)](../debugger/debug-multiple-processes.md)
 - [Just-In-Time-Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Remote-Debugging](../debugger/remote-debugging.md)
+- [Remotedebuggen](../debugger/remote-debugging.md)
