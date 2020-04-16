@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385400"
+ms.locfileid: "81397375"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
 Diese Meldung kann auftreten, weil der Remote-Debuggingmonitor auf dem Remotecomputer nicht ordnungsgemäß eingerichtet ist oder auf den Remotecomputer aufgrund von Netzwerkproblemen oder dem Vorhandensein einer Firewall nicht zugegriffen werden kann.
@@ -34,6 +34,7 @@ Die `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` 
 
 - [Der Debugger kann keine Verbindung mit dem Remotecomputer herstellen. Der Debugger konnte den angegebenen Computernamen nicht auflösen.](#cannot_connect)
 - [Die Verbindungsanforderung wurde vom Remotedebugger abgelehnt.](#rejected)
+- [Die Verbindung mit dem Remoteendpunkt wurde beendet.](#connection_terminated)
 - [Ungültiger Zugriff auf den Speicherort](#invalid_access)
 - [Es gibt keinen Server mit dem angegebenen Namen, der auf dem Remotecomputer ausgeführt wird.](#no_server)
 - [Der angeforderte Name war gültig, es wurden jedoch keine Daten des angeforderten Typs gefunden.](#valid_name)
@@ -67,17 +68,19 @@ Stellen Sie im Dialogfeld **"An Prozess anfügen"** oder in den Projekteigenscha
 
 Wenn diese Werte korrekt sind und die Meldung den **Windows-Authentifizierungsmodus** erwähnt, überprüfen Sie, ob sich der Remotedebugger im richtigen Authentifizierungsmodus befindet (**Tools > Options**).
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>Die Verbindung mit dem Remoteendpunkt wurde beendet.
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>Die Verbindung mit dem Remoteendpunkt wurde beendet.
 
 Wenn Sie eine Azure App Service-App debuggen, verwenden Sie den Befehl [Debugger anfügen](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service) aus Cloud Explorer oder Server Explorer anstelle von **Anfügen an den Prozess**.
 
 Wenn Sie **zum Debuggen an den Prozess anfügen** verwenden:
 
-1. Stellen Sie im Dialogfeld **"An Prozess anfügen"** oder in den Projekteigenschaften sicher, dass der Name des Remotecomputers und die Portnummer mit dem Namen und der Portnummer übereinstimmen, die im Remotedebuggerfenster angezeigt werden. Wenn falsch, beheben Sie, und versuchen Sie es erneut.
+- Stellen Sie im Dialogfeld **"An Prozess anfügen"** oder in den Projekteigenschaften sicher, dass der Name des Remotecomputers und die Portnummer mit dem Namen und der Portnummer übereinstimmen, die im Remotedebuggerfenster angezeigt werden. Wenn falsch, beheben Sie, und versuchen Sie es erneut.
 
-2. Überprüfen Sie das Anwendungsprotokoll auf dem Server (Ereignisanzeige unter Windows), um detailliertere Informationen zu erhalten, um das Problem zu beheben.
+- Wenn Sie versuchen, eine Verbindung mit einem Hostnamen herzustellen, versuchen Sie es stattdessen mit einer IP-Adresse.
 
-3. Versuchen Sie andernfalls, Visual Studio mit Administratorrechten neu zu starten, und versuchen Sie es dann erneut.
+- Überprüfen Sie das Anwendungsprotokoll auf dem Server (Ereignisanzeige unter Windows), um detailliertere Informationen zu erhalten, um das Problem zu beheben.
+
+- Versuchen Sie andernfalls, Visual Studio mit Administratorrechten neu zu starten, und versuchen Sie es dann erneut.
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>Ungültiger Zugriff auf den Speicherort
 

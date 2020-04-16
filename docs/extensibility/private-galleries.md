@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702040"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444647"
 ---
 # <a name="private-galleries"></a>Private Galerien
 Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, wie folgt in einem *privaten Katalog* im Intranet für Ihre Organisation freigeben:
@@ -32,7 +32,7 @@ Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, wie folg
 
 ### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>So fügen Sie Erweiterungen und Updates eine private Galerie hinzu
 
-1. Wählen Sie in der Menüleiste > **Extraoptionen**aus. **Tools**
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Wählen Sie im **Knoten Umgebung** **Erweiterungen und Updates**aus.
 
@@ -42,9 +42,9 @@ Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, wie folg
 
 5. Geben Sie im Feld **URL** die URL des Atom-Feeds oder der SharePoint-Website ein, auf der die private Galerie gehostet wird.
 
-    1. Wenn es sich bei dem Host um einen Atom-Feed handelt, der eine Verbindung mit der privaten Galerie herstellt, würde die URL diesem ähneln: http://www.mywebsite/mygallery/atom.xml.  Diese URL kann auf eine Datei oder einen Netzwerkpfad verweisen.
+    1. Wenn es sich bei dem Host um einen Atom-Feed handelt, der eine Verbindung mit der privaten Galerie herstellt, würde die URL diesem ähneln: `http://www.mywebsite/mygallery/atom.xml`.  Diese URL kann auf eine Datei oder einen Netzwerkpfad verweisen.
 
-    2. Wenn es sich bei dem Host um eine http://mysharepoint/sites/mygallery/forms/AllItems.aspxSharePoint-Website handelt, würde die URL dieser folgenden ähneln: .
+    2. Wenn es sich bei dem Host um eine `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`SharePoint-Website handelt, würde die URL dieser folgenden ähneln: .
 
 ### <a name="manage-private-galleries"></a>Verwalten privater Galerien
  Ein Administrator kann einen privaten Katalog mehreren Computern gleichzeitig zur Verfügung stellen, indem er die Systemregistrierung auf jedem Computer ändert. Um dies zu erreichen, erstellen Sie eine *.pkgdef-Datei,* die die neuen Registrierungsschlüssel und ihre Werte beschreibt.  Das Format dieser Datei ist wie folgt.

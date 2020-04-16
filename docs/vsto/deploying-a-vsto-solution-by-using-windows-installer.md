@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876781cb6967f5d10dddccd54a46e218170445ab
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432198"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444905"
 ---
 # <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Bereitstellen einer Visual Studio Tools for Office-Lösung mithilfe von Windows Installer
 
@@ -346,7 +346,7 @@ Weitere Informationen finden Sie unter [Typäquivalenz und Eingebettete Interop-
 |Microsoft Graph|Nr. 011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E|Nr. 52DA4B37-B8EB-4B7F-89C1-824654CE4C70|Nr. 24706F33-F0CE-4EB4-BC91-9E935394F510|-|-|
 |Smart Tag|Nr. 7102C98C-EF47-4F04-A227-FE33650BF954|Nr. 487A7921-EB3A-4262-BB5B-A5736B732486|Nr. 74EFC1F9-747D-4867-B951-EFCF29F51AF7|-|-|
 |Office Shared|Nr. 64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4|6A174BDB-0049-4D1C-86EF-3114CB0C4C4E|Nr. 76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05|Nr. 625F5772-C1B3-497E-8ABE-7254EDB00506|Nr. 625F5772-C1B3-497E-8ABE-7254EDB00506|
-|Project|Nr. 957A4EC0-E67B-4E86-A383-6AF7270B216A|Nr. 1C50E422-24FA-44A9-A120-E88280C8C341|Nr. 706D7F44-8231-489D-9B25-3025ADE9F114|Nr. 107BCD9A-F1DC-4004-A444-33706FC10058|Nr. 107BCD9A-F1DC-4004-A444-33706FC10058|
+|Projekt|Nr. 957A4EC0-E67B-4E86-A383-6AF7270B216A|Nr. 1C50E422-24FA-44A9-A120-E88280C8C341|Nr. 706D7F44-8231-489D-9B25-3025ADE9F114|Nr. 107BCD9A-F1DC-4004-A444-33706FC10058|Nr. 107BCD9A-F1DC-4004-A444-33706FC10058|
 
   ![Screenshot der Final-Startbedingungen](media/setup-project-figure-11.jpg)
 
@@ -593,7 +593,7 @@ s
 ## <a name="about-the-authors"></a>Über die Autoren
 
 Wouter van Vugt ist Microsoft MVP mit Office Open XML-Technologien und ein unabhängiger Berater, der sich auf die Erstellung von Office Business Applications (OBAs) mit SharePoint, Microsoft Office und verwandten .NET-Technologien konzentriert.
-Wouter ist ein häufiger Mitwirkender von Entwicklercommunity-Sites wie [OpenXmlDeveloper.org](http://openxmldeveloper.org/) und [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Er hat mehrere White Papers und Artikel sowie ein Buch veröffentlicht, das online mit dem Titel Open XML: Explained e-book verfügbar ist.
-Wouter ist Gründer von Code-Counsel, einem niederländischen Unternehmen, das sich auf die Bereitstellung modernster technischer Inhalte über eine Vielzahl von Kanälen konzentriert. Sie können mehr über Wouter erfahren, indem Sie seinen Blog lesen und die [Code-Counsel-Website](http://www.code-counsel.net/)besuchen.
+Wouter ist ein häufiger Mitwirkender auf Entwicklercommunity-Websites wie [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Er hat mehrere White Papers und Artikel sowie ein Buch veröffentlicht, das online mit dem Titel Open XML: Explained e-book verfügbar ist.
+Wouter ist Gründer von Code-Counsel, einem niederländischen Unternehmen, das sich auf die Bereitstellung modernster technischer Inhalte über eine Vielzahl von Kanälen konzentriert. Sie können mehr über Wouter erfahren, indem Sie seinen Blog lesen.
 
 Ted Pattison ist SharePoint MVP, Autor, Trainer und Gründer der Ted Pattison Group. Im Herbst 2005 wurde Ted von der Entwicklerplattform-Evangelism-Gruppe von Microsoft mit dem Erstellen des Ascend-Entwicklerschulungscurriculums für Windows SharePoint Services 3.0 und Microsoft Office SharePoint Server 2007 beauftragt. Seitdem konzentriert sich Ted ganz auf die Schulung professioneller Entwickler über SharePoint 2007-Technologien. Ted hat das Schreiben eines Buches für Microsoft Press mit dem Titel Inside Windows SharePoint Services 3.0 abgeschlossen, das sich auf die Verwendung von SharePoint als Entwicklungsplattform für die Erstellung von Geschäftslösungen konzentriert. Ted schreibt auch eine entwicklerorientierte Kolumne für das MSDN Magazine mit dem Titel Office Space.
