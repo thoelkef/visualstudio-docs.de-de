@@ -2,7 +2,7 @@
 # [Neuigkeiten](whats-new-in-subscriptions.md)
 # Abonnements
 ## Abonnements kaufen
-### [Einzelhandel](https://visualstudio.microsoft.com/vs/pricing)
+### [Einzelhandel](buy-activate-retail.md)
 ### Wolke 
 #### [Übersicht](vscloud-overview.md)
 #### [Abrechnung – Häufig gestellte Fragen](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Verwalten von Abonnements für MPN](manage-mpn-subscriptions.md)
 ### [Microsoft für Startups](program-startups.md)
 ## Anmelden 
-### [Aktivieren von Einzelhandelsabonnements](activate-store-subscriptions.md)
 ### [Anmelden mit Microsoft-Konten](sign-in-msa.md)
 ### [Anmelden mit einem Geschäfts-, Schul- oder Unikonto](sign-in-work.md)
 ### [Anmelden mit GitHub](sign-in-github.md)
