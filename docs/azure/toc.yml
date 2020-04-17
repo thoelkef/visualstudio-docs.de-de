@@ -1,7 +1,7 @@
 - name: Azure-Entwicklung mit Visual Studio
   href: index.yml
   expanded: true
-- name: Bereitstellung in Azure App Service
+- name: Bereitstellen in Azure App Service
   expanded: true
   items:
     - name: Bereitstellen einer ASP.NET Core-App in Azure
@@ -23,16 +23,6 @@
       href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Hinzufügen von Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Hinzufügen von Cognitive Services
-      items:
-        - name: Textanalyse
-          href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Bing-Suche
-          href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Gesichtserkennung
-          href: /azure/cognitive-services/face/vs-face-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Maschinelles Sehen
-          href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Azure Cloud Services-Entwicklung
   expanded: false
   items:
@@ -62,9 +52,9 @@
       items:
         - name: Debuggen eines Azure-Clouddiensts oder virtuellen Azure-Computers in Visual Studio
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Lernen Sie die verschiedenen Möglichkeiten zum Debuggen eines Azure-Clouddiensts kennen.
+        - name: Kennenlernen der verschiedenen Möglichkeiten zum Debuggen eines Azure-Clouddiensts
           href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: Einrichten der Diagnose für Azure Cloud Services und virtuelle Azure-Computer
+        - name: Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
         - name: Verwenden von Emulator Express zum Ausführen und Debuggen eines Azure-Clouddiensts auf einem lokalen Computer
           href: vs-azure-tools-emulator-express-debug-run.md
@@ -90,7 +80,7 @@
           href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
         - name: Verwalten von Dienstkonfigurationen und -profilen
           href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-        - name: Einrichten benannter Authentifizierungsanmeldeinformationen
+        - name: Einrichten von benannten Anmeldeinformationen zur Authentifizierung
           href: vs-azure-tools-setting-up-named-authentication-credentials.md
     - name: Arbeiten mit Azure Storage
       items:
@@ -104,9 +94,9 @@
           href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Verwenden von Storage-Explorer mit Azure File Storage
           href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Anmerkungen zu dieser Version vom Microsoft Azure Storage-Explorer
+        - name: Versionshinweise zu Microsoft Azure Storage-Explorer
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Barrierefreiheit des Speicher-Explorers
+        - name: Barrierefreiheit von Storage-Explorer
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud-Explorer
   items:
