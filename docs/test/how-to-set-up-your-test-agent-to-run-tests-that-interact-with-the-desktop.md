@@ -8,21 +8,28 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dc00598595ee3e3d958562682900bde9aad2a353
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588966"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880181"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren
 
+::: moniker range="vs-2017"
 Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren, müssen Sie den Agent für die Ausführung als Prozess statt als Dienst konfigurieren. Wenn Sie z. B. einen Test der codierten UI mithilfe eines Testcontrollers und eines Test-Agents remote ausführen möchten oder einen Test ausführen und während der Ausführung eine Videoaufzeichnung erfassen möchten, müssen Sie den Agent für die Ausführung als Prozess einrichten. Wenn Sie mit Microsoft Test Manager in den Testeinstellungen oder mit Visual Studio in der Umgebung Rollen Agents zuweisen, müssen Sie das Setup für alle Agents ändern, die Rollen zugewiesen sind, die mit dem Desktop interagieren.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren, müssen Sie den Agent für die Ausführung als Prozess statt als Dienst konfigurieren. Wenn Sie z. B. einen Test der codierten UI mithilfe eines Testcontrollers und eines Test-Agents remote ausführen möchten oder einen Test ausführen und während der Ausführung eine Videoaufzeichnung erfassen möchten, müssen Sie den Agent für die Ausführung als Prozess einrichten. Wenn Sie Agents in Ihren Testeinstellungen in Visual Studio Rollen zuweisen, müssen Sie die Einrichtung für alle Agents ändern, die Rollen zugewiesen sind, die mit dem Desktop interagieren müssen.
+::: moniker-end
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 > [!WARNING]
 > Wenn Sie Microsoft Test Manager zum Einrichten einer Laborumgebung verwenden, wird der Test-Agent installiert. Sie können im **Assistenten für die Umgebungserstellung** angeben, dass Sie eine der Rollen zur Ausführung von Tests der programmierten UI konfigurieren möchten.
+:::moniker-end
 
 > [!IMPORTANT]
 > Der Computer mit dem Agent, auf dem Sie Tests der codierten UI ausführen möchten, darf nicht gesperrt sein und über keinen aktiven Bildschirmschoner verfügen.
@@ -73,8 +80,10 @@ Gehen Sie wie folgt vor, um Agents einzurichten, die einer Rolle zugewiesen sind
    > [!NOTE]
    > Auf dem Computer wird ein Infobereichssymbol für einen als Prozess ausgeführten Test-Agent angezeigt. Es zeigt den Status des Test-Agents an. Sie können mit diesem Tool den Agent starten, beenden oder neu starten, wenn er als Prozess ausgeführt wird. Klicken sie zum Starten des Test-Agents als Prozess, wenn dieser nicht ausgeführt wird, auf **Start** > **Visual Studio** > **Microsoft Visual Studio Test Agent**.
 
+   ::: moniker range="vs-2017"
    Wenn der Testcontroller für diesen Test-Agent bei Team Foundation Server registriert ist, wird der Status eines Test-Agents, der als interaktiver Prozess ausgeführt wird, in der Ansicht **Controller** im **Lab-Center** für Microsoft Test Manager angezeigt. Er wird mit einem vorangestellten Sternchen gekennzeichnet, das angibt, dass er als interaktiver Prozess ausgeführt wird. Verwenden Sie zum Neustarten dieses Test-Agents das Tool, das auf dem Computer mit dem Test-Agent ausgeführt wird, und nicht die Ansicht **Controller**.
+   ::: moniker-end
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585638"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880363"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Testen Ihres Codes mit dem Test der programmierten UI
 
@@ -435,7 +435,12 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 ## <a name="whats-next"></a>Ausblick
 
+::: moniker range="vs-2017"
 **Weitere Optionen zum Ausführen von Tests der programmierten UI:** Sie können Tests der programmierten UI wie bereits beschrieben direkt in Visual Studio ausführen. Außerdem können Sie automatisierte Benutzeroberflächentests mit Microsoft Test Manager oder Azure Pipelines ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.
+::: moniker-end
+::: moniker range=">=vs-2019"
+**Weitere Optionen zum Ausführen von Tests der programmierten UI:** Sie können Tests der programmierten UI wie bereits beschrieben direkt in Visual Studio ausführen. Außerdem können Sie automatisierte Benutzeroberflächentests mit Azure Pipelines ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.
+::: moniker-end
 
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
 
@@ -449,7 +454,7 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 - [Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Weitere Informationen zu manuellen Tests finden Sie unter [Run manual tests with Microsoft Test Manager (Ausführen manueller Tests mit Microsoft Test Manager)](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Weitere Informationen zu automatisierten Tests finden Sie unter [Testtools in Visual Studio](../test/improve-code-quality.md).
+Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Weitere Informationen zu automatisierten Tests finden Sie unter [Testtools in Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Siehe auch
 

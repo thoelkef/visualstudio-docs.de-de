@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094683"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223670"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -43,7 +43,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
    Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Program.cs* wird geöffnet.
 
    > [!NOTE]
-   > Wenn die Datei *Program.cs* nicht im Editor geöffnet wird, doppelklicken Sie im *Projektmappen-Explorer* auf die Datei **Program.cs**, um diese zu öffnen.
+   > Wenn die Datei *Program.cs* nicht im Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Program.cs*, um diese zu öffnen.
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
    Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Program.cs* wird geöffnet.
 
    > [!NOTE]
-   > Wenn die Datei *Program.cs* nicht im Editor geöffnet wird, doppelklicken Sie im *Projektmappen-Explorer* auf die Datei **Program.cs**, um diese zu öffnen.
+   > Wenn die Datei *Program.cs* nicht im Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Program.cs*, um diese zu öffnen.
 
 ::: moniker-end
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Erneut testen, umschreiben und neu analysieren
 
-Wenn ein Fehler in der getesteten Methode vorliegt und die `Debit`-Methode keine <xref:System.ArgumentOutOfRangeException> auslöst, muss keine korrekte Meldung mit der Ausnahme ausgegeben werden. Derzeit ist die Testmethode nicht für diesen Fall ausgelegt. Wenn der `debitAmount`-Wert gültig ist (d. h. kleiner als das Guthaben, jedoch größer als 0 (null)), wird keine Ausnahme erfasst, sodass die Assertion nicht ausgelöst wird. Die Testmethode ist trotzdem erfolgreich. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
+Derzeit verarbeitet die Testmethode nicht alle Fälle, die sie verarbeiten sollte. Wenn die zu testende Methode, die `Debit`-Methode, keine <xref:System.ArgumentOutOfRangeException>-Ausnahme auslöst, wenn der `debitAmount`-Wert größer als der Saldo (oder unter null (0)) liegt, wird die Testmethode erfolgreich ausgeführt. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
 
 Dabei handelt es sich um einen Fehler der Testmethode. Um das Problem zu beheben, fügen Sie eine <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>-Assertion am Ende der Testmethode hinzu, um den Fall abzudecken, in dem keine Ausnahme ausgelöst wird.
 
@@ -462,13 +462,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-### <a name="conclusion"></a>Zusammenfassung
+### <a name="conclusion"></a>Schlussbemerkung
 
 Aufgrund der Verbesserungen des Testcodes wurden stabilere und informationsreichere Testmethoden erstellt. Aber noch wichtiger: es wurde auch der Code verbessert, der getestet werden soll.
 
 > [!TIP]
 > In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Der **Test-Explorer** kann außerdem Tests von Komponententestframeworks von Drittanbietern ausführen, die über Adapter für den **Test-Explorer** verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Befehlszeilenoptionen für VSTest.Console.exe](vstest-console-options.md).

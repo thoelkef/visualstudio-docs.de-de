@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 086601cb8cde00d63e3be85c028201922ebe5b76
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584412"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880194"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -20,7 +20,9 @@ Wenn Sie Visual Studio verwenden möchten, um Tests remote auszuführen, Verteil
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 Wenn Sie mit Microsoft Test Manager Tests in der Laborumgebung ausführen, verwalten Sie Testcontroller und deren Agents, indem Sie den **Testcontroller-Manager** im **Lab-Center** für Microsoft Test Manager verwenden. Dieses Thema gilt nur, wenn Sie Visual Studio verwenden, um Tests auszuführen.
+::: moniker-end
 
 Weitere Informationen darüber, wie Testcontroller und Test-Agents installiert und konfiguriert werden, um Tests in Visual Studio auszuführen, finden Sie unter [Configure test agents and controllers (Konfigurieren von Test-Agents und Testcontrollern)](../test/configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -43,7 +45,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
 
 2. Ihnen werden zwei Optionen für die Ausführung des Test-Agents angezeigt:
 
-   - **Dienst:** Wenn Sie keine automatisierten Tests ausführen müssen, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie unter **Test-Agent ausführen als** die Option **Dienst** aus. Der Test-Agent wird als Dienst gestartet. Wählen Sie **Weiter** aus.
+   - **Dienst:** Wenn Sie keine automatisierten Tests ausführen müssen, die mit dem Desktop interagieren (z. B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie unter **Test-Agent ausführen als** die Option **Dienst** aus. Der Test-Agent wird als Dienst gestartet. Wählen Sie **Weiter** aus.
 
       Wenn der Test-Agent als Dienst gestartet wird, können Sie jetzt die Details zum Benutzer eingeben.
 
@@ -58,7 +60,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
         |– Wenn der Agent-Benutzername nicht im Agent-Dienst vorhanden ist, wird er hinzugefügt. Dafür sind Berechtigungen für den Testcontroller erforderlich.|
         |– Der Benutzer, der den Testcontroller verwenden möchte, muss im Benutzerkonto des Testcontrollers angemeldet sein. Andernfalls können die Tests nicht anhand des Controllers ausgeführt werden.|
 
-   - **Interaktiver Prozess:** Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie **Interaktiver Prozess** aus. Der Test-Agent wird nicht als Dienst, sondern als interaktiver Prozess gestartet.
+   - **Interaktiver Prozess:** Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren (z. B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie **Interaktiver Prozess** aus. Der Test-Agent wird nicht als Dienst, sondern als interaktiver Prozess gestartet.
 
       Wenn der Test-Agent als Prozess gestartet wird, können Sie auf der nächsten Seite die Details zum Benutzer eingeben und weitere Optionen festlegen.
 
@@ -90,25 +92,36 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
 
 Test-Agents können nur entfernt werden, wenn sie sich im Offlinezustand befinden.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Diese Vorgehensweise können Sie nicht zum Entfernen von Agents verwenden, die als Teil einer Laborumgebung bei einem Controller registriert sind. Um diese Agents von einem Controller zu entfernen, müssen Sie die Umgebung mithilfe von Microsoft Test Manager entfernen.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Diese Vorgehensweise können Sie nicht zum Entfernen von Agents verwenden, die als Teil einer Laborumgebung bei einem Controller registriert sind.
+::: moniker-end
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>So entfernen Sie einen Test-Agent aus einem Testcontroller
 
-1. Wenn der Testcontroller bei keinem Projekt registriert ist, führen Sie die folgenden Schritte aus.
+::: moniker range=">=vs-2019"
+In Visual Studio 2019 können Sie einen Test-Agent nicht entfernen, wenn der Testcontroller bei einem Projekt registriert ist.
+::: moniker-end
+Wenn der Testcontroller bei keinem Projekt registriert ist, führen Sie die folgenden Schritte aus.
 
-    1. Öffnen Sie die Testeinstellungsdatei in Visual Studio für Ihr Testprojekt, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
+1. Öffnen Sie die Testeinstellungsdatei in Visual Studio für Ihr Testprojekt, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
 
-         Das Dialogfeld **Testcontroller verwalten** wird angezeigt.
+   Das Dialogfeld **Testcontroller verwalten** wird angezeigt.
 
-    2. Geben Sie in der Dropdownliste **Controller** den Namen des Computers ein, auf dem der Testcontroller eingerichtet wurde. Wenn Sie bereits einen bestimmten Testcontroller verwaltet haben, können Sie den Namen in der Liste auswählen.
+2. Geben Sie in der Dropdownliste **Controller** den Namen des Computers ein, auf dem der Testcontroller eingerichtet wurde. Wenn Sie bereits einen bestimmten Testcontroller verwaltet haben, können Sie den Namen in der Liste auswählen.
 
-    3. Wählen Sie im Bereich **Agents** den Namen des Test-Agents aus. Wenn der Agent noch immer online ist, klicken Sie auf **Offline**. Klicken Sie auf **Entfernen**, um ihn zu entfernen.
+3. Wählen Sie im Bereich **Agents** den Namen des Test-Agents aus. Wenn der Agent noch immer online ist, klicken Sie auf **Offline**. Klicken Sie auf **Entfernen**, um ihn zu entfernen.
 
-        > [!NOTE]
-        > Durch Entfernen eines Test-Agents wird nur die Zuordnung zum Testcontroller aufgehoben. Unter **Programme und Funktionen** auf dem Test-Agent-Computer können Sie den Test-Agent vollständig deinstallieren.
+   > [!NOTE]
+   > Durch Entfernen eines Test-Agents wird nur die Zuordnung zum Testcontroller aufgehoben. Unter **Programme und Funktionen** auf dem Test-Agent-Computer können Sie den Test-Agent vollständig deinstallieren.
 
-2. Wenn der Testcontroller bei einem Projekt registriert ist, entfernen Sie den Agent mithilfe von Microsoft Test Manager.
+::: moniker range="vs-2017"
+Wenn der Testcontroller bei einem Projekt registriert ist, entfernen Sie den Agent mithilfe von Microsoft Test Manager.
+::: moniker-end
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Ändern der Einstellungen für einen Test-Agent
 
@@ -125,8 +138,10 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>So ändern Sie die Einstellungen eines Test-Agents
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Wenn der Test-Agent bei einem Testcontroller registriert ist, der bei einem Projekt registriert ist, ändern Sie die Einstellungen in Microsoft Test Manager.
+::: moniker-end
 
 1. Wählen Sie zum Konfigurieren und Überwachen des Testcontrollers und der registrierten Agents für einen Auslastungstest das Menü **Auslastungstest** in Visual Studio aus, und klicken Sie dann auf **Testcontroller verwalten**. Öffnen Sie für andere Test die Testeinstellungsdatei für Ihr Testprojekt in Visual Studio, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
 
@@ -143,8 +158,8 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 |Test-Agent-Eigenschaft|Beschreibung|
 |-|-----------------|
 |**Gewichtung**|Wird bei Verwendung von Test-Agents mit unterschiedlicher Leistungsfähigkeit zum Verteilen der Last verwendet. Ein Test-Agent mit einer Gewichtung von 100 erhält beispielsweise doppelt so viel Last wie ein Test-Agent mit einer Gewichtung von 50.|
-|**IP-Wechsel**|Wird zum Konfigurieren des IP-Wechsels verwendet. Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert.<br /><br /> IP-Wechsel ist wichtig, wenn der Auslastungstest auf eine Webfarm zugreift. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver über die IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, stellen Sie sicher, dass die Anfragen von mehreren IP-Adressen kommen. **Hinweis:** Sie können entweder einen Netzwerkadapter angeben oder **(Keine zugewiesen)** verwenden, um automatisch einen derzeit nicht verwendeten Adapter auszuwählen. <br /><br /> Sie können die IP-Wechselfunktion nur verwenden, wenn der Visual Studio Test Agent-Dienst als Benutzer in der Administratorengruppe für diesen Agent-Computer ausgeführt wird. Dieser Benutzername wird während des Agent-Setups ausgewählt, kann jedoch durch Ändern der Diensteigenschaften und erneutes Starten des Diensts geändert werden.<br /><br /> Wenn Sie die ordnungsgemäße Funktion des IP-Wechsels überprüfen möchten, aktivieren Sie die IIS-Protokollierung auf dem Webserver, und überprüfen Sie mit der IIS-Protokollfunktion, ob die Anforderungen von den konfigurierten IP-Adressen kommen.|
-|**Attribute**|Satz von Name-Wert-Paaren, die bei der Auswahl von Test-Agents verwendet werden können. Beispielsweise könnte ein Test ein bestimmtes Betriebssystem (OS) erfordern. Sie können Attribute auf der Registerkarte **Rollen** der Testeinstellungsdatei hinzufügen und sie verwenden, um einen Test-Agent auswählen, der über entsprechenden Attribute verfügt. Wenn Sie einen Test auf mehreren Computern ausführen möchten, erstellen Sie ein Attribut in der Testeinstellungsrolle, die konfiguriert wird, um die Tests auszuführen, und konfigurieren Sie anschließend ein entsprechendes Attribut für jeden Test-Agent, den Sie in dieser Rolle verwendet möchten. **Hinweis:** Diese Einstellung ist nur für Test-Agents verfügbar, die bei einem Testcontroller registriert wurden, der bei keinem Projekt registriert ist, da diese Attribute nur in Testeinstellungen für Visual Studio verwendet werden.|
+|**IP-Wechsel**|Wird zum Konfigurieren des IP-Wechsels verwendet. Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert.<br /><br /> IP-Wechsel ist wichtig, wenn der Auslastungstest auf eine Webfarm zugreift. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver über die IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, stellen Sie sicher, dass die Anfragen von mehreren IP-Adressen kommen. **Hinweis**:  Sie können entweder einen Netzwerkadapter angeben oder **(Keine zugewiesen)** verwenden, um automatisch einen derzeit nicht verwendeten Adapter auszuwählen. <br /><br /> Sie können die IP-Wechselfunktion nur verwenden, wenn der Visual Studio Test Agent-Dienst als Benutzer in der Administratorengruppe für diesen Agent-Computer ausgeführt wird. Dieser Benutzername wird während des Agent-Setups ausgewählt, kann jedoch durch Ändern der Diensteigenschaften und erneutes Starten des Diensts geändert werden.<br /><br /> Wenn Sie die ordnungsgemäße Funktion des IP-Wechsels überprüfen möchten, aktivieren Sie die IIS-Protokollierung auf dem Webserver, und überprüfen Sie mit der IIS-Protokollfunktion, ob die Anforderungen von den konfigurierten IP-Adressen kommen.|
+|**Attribute**|Satz von Name-Wert-Paaren, die bei der Auswahl von Test-Agents verwendet werden können. Beispielsweise könnte ein Test ein bestimmtes Betriebssystem (OS) erfordern. Sie können Attribute auf der Registerkarte **Rollen** der Testeinstellungsdatei hinzufügen und sie verwenden, um einen Test-Agent auswählen, der über entsprechenden Attribute verfügt. Wenn Sie einen Test auf mehreren Computern ausführen möchten, erstellen Sie ein Attribut in der Testeinstellungsrolle, die konfiguriert wird, um die Tests auszuführen, und konfigurieren Sie anschließend ein entsprechendes Attribut für jeden Test-Agent, den Sie in dieser Rolle verwendet möchten. **Hinweis**:  Diese Einstellung ist nur für Test-Agents verfügbar, die bei einem Testcontroller registriert wurden, der bei keinem Projekt registriert ist, da diese Attribute nur in Testeinstellungen für Visual Studio verwendet werden.|
 
 Änderungen der Test-Agent-Gewichtung und der Test-Agent-Attribute werden sofort wirksam, haben jedoch keine Auswirkungen auf laufende Tests. Änderungen des IP-Adressbereichs werden nach einem Neustart des Testcontrollers wirksam.
 
@@ -218,6 +233,6 @@ Aktivieren Sie die verzögert signierte Überprüfung nach dem Testlauf mit dem 
 
 Es wird empfohlen, die Signaturüberprüfung mithilfe der *SN.exe*-Befehle in den Skripts zu deaktivieren und dann wieder zu aktivieren. Sie können die Überprüfung beispielsweise in einem Setupskript deaktivieren und in einem Bereinigungsskript wieder aktivieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)

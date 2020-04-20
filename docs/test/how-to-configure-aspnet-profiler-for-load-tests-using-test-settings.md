@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169390"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880233"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen in Visual Studio
 
@@ -22,7 +22,7 @@ Sie können den Adapter für diagnostische Daten des ASP.NET-Profilers verwenden
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Dieser Adapter für diagnostische Daten kann nicht für Tests verwendet werden, die mit Microsoft Test Manager ausgeführt werden. Der Diagnoseadapter des ASP.NET-Profilers kann nur für Auslastungstests mit Websites verwendet werden, für die Visual Studio Enterprise erforderlich ist.
+> Dieser Adapter für diagnostische Daten kann nicht für Tests verwendet werden, die mit Microsoft Test Manager ausgeführt werden (ab Visual Studio 2017 veraltet). Der Diagnoseadapter des ASP.NET-Profilers kann nur für Auslastungstests mit Websites verwendet werden, für die Visual Studio Enterprise erforderlich ist.
 
 Mit dem Adapter für diagnostische Daten des ASP.NET-Profilers können ASP.NET-Profilerdaten auf der Logikschicht gesammelt werden, wenn Sie einen Auslastungstest ausführen. Der Profiler sollte nicht für lange Auslastungstests verwendet werden (z. B. für Auslastungstests von mehr als einer Stunde). Die Profilerdatei kann bei einem solchen Test Hunderte von Megabyte groß werden. Führen Sie stattdessen kürzere Auslastungstests mit dem ASP.NET-Profiler aus. Diese bieten ebenfalls den Vorteil einer umfassenden Diagnose von Leistungsproblemen.
 
@@ -58,8 +58,8 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 Mit dem in der Testeinstellung konfigurierten Adapter für diagnostische Daten des ASP.NET-Profilers können Sie jetzt ASP.NET-Profilerstellungsdaten für die ASP.NET-Webanwendung erfassen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
-- [Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [How to: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)

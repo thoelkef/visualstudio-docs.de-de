@@ -3,17 +3,17 @@ title: Vorschlagen eines Features
 description: Beschreibt, welche Vorschläge in der Entwicklercommunity vorhanden sind, wie Sie einen Vorschlag einreichen können und wie Vorschläge von Microsoft in der Visual Studio-Roadmap verwendet werden.
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853515"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276487"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Vorschlagen eines Features für Visual Studio
 
@@ -35,7 +35,7 @@ Die Seite „Benutzerfeedback“ ist nun schreibgeschützt. Sie können sich dor
 
 Wir haben eine anfängliche Sammlung von Ideen aus dem Benutzerfeedback-Forum in die Entwicklercommunity migriert. Die Migration erfolgte auf der Grundlage der Auswirkungen des Feedbacks auf die Community und der Prioritäten unserer Produktroadmap. Wenn Sie erwartet haben, hier einen Vorschlag zu sehen, den wir vielleicht verpasst haben, sollten Sie ihn unbedingt der Entwicklercommunity hinzufügen.
 
-## <a name="votes"></a>Votes
+## <a name="votes"></a>Abstimmungen
 
 Das Abstimmungsverfahren in der Entwicklercommunity unterscheidet sich von dem des Benutzerfeedbacks. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Abstimmungsergebnisse zu vermeiden, zeigen wir die Benutzerfeedback-Stimmenanzahl deutlich als Tag neben jedem Featurevorschlag an. Während Sie weiterhin über Vorschläge in der erweiterten Entwicklercommunity abstimmen, werden Ihre neuen Stimmenzählungen getrennt von den Benutzerfeedback-Stimmenzählungen angezeigt.
 
@@ -83,7 +83,7 @@ Ein Featurevorschlag mit der Markierung **Weitere Informationen erforderlich** b
 
 ![Statusangabe „Geschlossen – nicht genügend Informationen“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Geschlossen – nicht genügend Informationen** gibt an, dass wir nach mehreren Versuchen nicht genügend Informationen zum vollständigen Verständnis Ihres Featurevorschlags erhalten haben. Wir müssen den Vorschlag für ein neues Feature schließen, da wir zum jetzigen Zeitpunkt keine weiteren Maßnahmen ergreifen können.
+**Geschlossen – nicht genügend Informationen** gibt an, dass wir nach mehreren Versuchen nicht genügend Informationen erhalten haben, um Ihren Featurevorschlag vollständig nachvollziehen zu können. Wir müssen den Vorschlag für ein neues Feature schließen, da wir zum jetzigen Zeitpunkt keine weiteren Maßnahmen ergreifen können.
 
 Haben Sie die Informationen gefunden, nach denen wir gesucht haben? Sie können die Reaktivierung des Tickets anfordern, wenn Sie über die zusätzlichen Informationen verfügen.
 
@@ -127,6 +127,6 @@ Wir sind sehr daran interessiert, Ihre Featurevorschläge zu hören und Maßnahm
 
 Die Reaktionszeit hängt von dem Status ab, in dem sich Ihr Feedback befindet. Lesen Sie die Erklärungen zum Status in diesem Dokument, um die Antwortzeiten zu verstehen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Einführung von „Feature vorschlagen“ in der Entwicklercommunity (Visual Studio-Blog)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

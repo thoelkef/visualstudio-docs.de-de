@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: adc77ee87bbbf07d04fd7c01a554c7c074e5bf7f
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594772"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880220"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
@@ -40,14 +40,24 @@ Die in der IntelliTrace-Datei gesammelten Daten können zur Erhöhung der Debugp
 > [!WARNING]
 > Die Funktionsweise des Adapters für diagnostische Daten besteht in der Instrumentierung eines verwalteten Prozesses, der nach dem Laden des ersten Tests für den Testlauf ausgeführt werden muss. Wenn der zu überwachende Prozess bereits gestartet wurde, werden keine IntelliTrace-Dateien gesammelt, da der Prozess bereits ausgeführt wird. Stellen Sie zur Vermeidung dieses Problems sicher, dass der Prozess beendet wird, bevor die Tests geladen werden. Starten Sie dann den Prozess nach dem Laden der Tests oder dem Starten des ersten Tests.
 
+::: moniker range="vs-2017"
 In der folgenden Prozedur ist beschrieben, wie Sie die zu sammelnden IntelliTrace-Daten konfigurieren. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und das Dialogfeld „Testeinstellungen“ in Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+In der folgenden Prozedur ist beschrieben, wie Sie die zu sammelnden IntelliTrace-Daten konfigurieren. Diese Schritte gelten für das Dialogfeld „Testeinstellungen“ in Visual Studio.
+::: moniker-end
 
 > [!NOTE]
 > Das Benutzerkonto für den Test-Agent, mit dem IntelliTrace-Daten gesammelt werden, muss Mitglied der Administratorgruppe sein. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Konfigurieren der zu sammelnden Daten mit dem IntelliTrace-Adapter für diagnostische Daten
 
+::: moniker range="vs-2017"
 Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Microsoft Test Manager oder Visual Studio öffnen und die Seite **Daten und Diagnose** auswählen.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Visual Studio und dann die Seite **Daten und Diagnose** öffnen.
+::: moniker-end
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>So konfigurieren Sie die zu sammelnden Daten mit dem IntelliTrace-Adapter für diagnostische Daten
 
@@ -103,10 +113,16 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
     > [!NOTE]
     > Wenn Sie die Größe der Aufzeichnung erhöhen, könnte ein Timeoutproblem auftreten, wenn Sie diese Aufzeichnung zusammen mit den Testergebnissen speichern.
 
-12. Wenn Sie Microsoft Test Manager verwenden, klicken Sie auf **Speichern**. Wenn Sie Visual Studio verwenden, klicken Sie auf **OK**. Die IntelliTrace-Einstellungen werden jetzt konfiguriert und für die Testeinstellungen gespeichert.
+12. Klicken Sie auf **Speichern**, wenn Sie Microsoft Test Manager verwenden (ab Visual Studio 2017 veraltet). Wenn Sie Visual Studio verwenden, klicken Sie auf **OK**. Die IntelliTrace-Einstellungen werden jetzt konfiguriert und für die Testeinstellungen gespeichert.
 
+    ::: moniker range="vs-2017"
     > [!NOTE]
     > Zum Zurücksetzen der Konfiguration dieses Adapters für diagnostische Daten, wählen Sie **Auf Standardkonfiguration zurücksetzen** für Visual Studio oder **Standard wiederherstellen** für Microsoft Test Manager aus.
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Klicken Sie in Visual Studio auf **Auf Standardkonfiguration zurücksetzen**, um die Konfiguration für diesen Adapter für diagnostische Daten zurückzusetzen.
+    ::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

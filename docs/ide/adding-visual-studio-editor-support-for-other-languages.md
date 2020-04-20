@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590877"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892774"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 
@@ -38,7 +38,7 @@ Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für 
 |||||||
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
+|Clojure|Gehe zu|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
@@ -56,7 +56,7 @@ Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für 
 
 - Visual Basic
 
-- Go
+- Gehe zu
 
 - Java
 
@@ -87,8 +87,10 @@ Unter Windows wird *%userprofile%* in den Pfad *C:\Benutzer\\\<Benutzername>* au
 
 Detailinformationen zum Erstellen von TextMate-Grammatiken finden Sie unter [TextMate – Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – Einführung in Sprachgrammatiken) und [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Anmerkungen zum Erstellen einer Sprachgrammatik und eines benutzerdefinierten Designs für ein TextMate-Paket).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen einer Erweiterung für das Sprachserverprotokoll](../extensibility/adding-an-lsp-extension.md)
-- [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
+- [Exemplarische Vorgehensweise: Create a code snippet (Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts)](../ide/walkthrough-creating-a-code-snippet.md)
 - [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Beispielcode: TextMate-Grammatik](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [Beispielcode: Benutzerdefinierte Sprachunterstützung](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

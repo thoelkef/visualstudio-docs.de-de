@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235079"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224523"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
 
@@ -56,7 +56,7 @@ NPM ist der Standardpaket-Manager für Node.js. Der Paket-Manager vereinfacht da
 
 ### <a name="what-is-express"></a>Was ist Express?
 
-Express ist ein Webanwendungsframework, das für Node.js als Serverframework zum Erstellen von Webanwendungen verwendet wird. Express ermöglicht die Verwendung von verschiedenen Front-End-Frameworks zum Erstellen einer Benutzeroberfläche, z.B. Pug (ehemals Jade). In diesem Tutorial wird Pug verwendet.
+Express ist ein Webanwendungsframework, das für Node.js als Serverframework zum Erstellen von Webanwendungen verwendet wird. Mit Express können Sie aus verschiedenen Front-End-Frameworks auswählen, um eine Benutzeroberfläche zu erstellen, z. B. Pug (ehemals Jade). In diesem Tutorial wird Pug verwendet.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

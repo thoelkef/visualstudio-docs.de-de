@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307238"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223657"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -147,7 +147,7 @@ Gelegentlich kann es zu netzwerk- oder proxybezogenen Fehlern kommen, wenn Sie V
 
 ## <a name="get-support"></a>Support aufrufen
 
-Für installationsbezogene Probleme wird außerdem ein [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous) (nur auf Englisch) als Supportoption angeboten.
+Für installationsbezogene Probleme wird eine [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous)-Supportoption angeboten (nur auf Englisch).
 
 Hier sind einige weitere Supportoptionen:
 

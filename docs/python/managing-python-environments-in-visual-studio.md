@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a47af0e87907608ec9f71de4e605772eb1caed8e
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307160"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224562"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
-Eine Python-*Umgebung* ist ein Kontext, in dem Sie Python-Code ausführen und der globale, virtuelle und Conda-Umgebungen umfasst. Eine Umgebung besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und mehreren installierten Paketen. Diese Komponenten bestimmen gemeinsam, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
+Eine **Python-Umgebung** ist ein Kontext, in dem Sie Python-Code ausführen und der globale, virtuelle und Conda-Umgebungen umfasst. Eine Umgebung besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und mehreren installierten Paketen. Diese Komponenten bestimmen gemeinsam, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
 
 In Visual Studio unter Windows verwenden Sie das Fenster **Python-Umgebungen** wie in diesem Artikel beschrieben zum Verwalten der Umgebungen und zum Auswählen einer Standardumgebung für neue Projekte. Andere Aspekte von Umgebungen werden in den folgenden Artikeln beschrieben:
 

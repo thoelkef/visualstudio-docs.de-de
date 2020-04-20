@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren entweder Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274062"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385513"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
@@ -73,8 +73,6 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 
 > [!IMPORTANT]
 >
-> Die Verwendung von Azure AD-Gruppen wird in Phasen aktiviert.  Das Feature ist in Ihren Abonnements möglicherweise nicht sofort verfügbar.
->
 > Für die Verwendung von Azure AD-Gruppen zum Hinzufügen von Abonnements gelten die folgenden Einschränkungen:
 > - Gruppen müssen mindestens ein Mitglied enthalten.  Leere Gruppen werden nicht unterstützt.
 > - Gruppen müssen weniger als 1.000 Benutzer enthalten. 
@@ -108,6 +106,7 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 > [!NOTE]
 > Wenn Sie Abonnements bereits einzeln Benutzern zugewiesen haben, die anschließend zu einer Azure-AD-Gruppe hinzugefügt werden, werden sie zur Gruppe hinzugefügt und nicht mehr einzeln aufgeführt. Wenn das individuelle Abonnement jedoch für eine andere Abonnements gilt, verfügen sie über zwei Abonnements.  Beispiel:  Wenn ein Benutzer über ein individuelles Visual Studio Professional-Abonnement verfügt und Mitglied einer Gruppe ist, der Sie Visual Studio Enterprise-Abonnements hinzufügen, verfügt er über beide Abonnements.  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

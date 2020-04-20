@@ -9,16 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566825"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880129"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Verwenden von Azure Test Plans anstelle von Lab Management für automatisierte Tests
 
 Wenn Sie Microsoft Test Manager und Lab Management für automatisierte Tests oder für automatisiertes Erstellen, Bereitstellen und Testen verwenden, erfahren Sie in diesem Artikel, wie Sie mit den [Build und Release](/azure/devops/pipelines/index?view=vsts)-Features in Azure Pipelines und Team Foundation Server (TFS) das gleiche Ergebnis erzielen können.
+
+> [!NOTE]
+> Microsoft Test Manager ist seit Visual Studio 2017 veraltet und wurde in Visual Studio 2019 entfernt.
 
 ## <a name="build-deploy-test-automation"></a>Automatisiertes Build-Bereitstellen-Testen
 
@@ -39,7 +42,7 @@ Nachfolgend werden einige der Vorteile aufgeführt, die eine Nutzung von Azure P
 * Sie erhalten eine umfangreichere Inline-Berichterstattung für die Tests, die in jedem Build oder Release ausgeführt werden.
 * Sie können nachverfolgen, welche Objekte (Release, Build, Arbeitselemente, Commits) derzeit bereitgestellt und in jeder Umgebung getestet werden.
 * Sie können die Automatisierung anpassen und erweitern, um sie ganz einfach für mehrere Testumgebungen und sogar die Produktion bereitzustellen.
-* Sie können die Automatisierung so planen, dass sie immer dann, wenn ein Check-In oder ein Commit auftritt oder täglich zu einem bestimmten Zeitpunkt durchgeführt wird.
+* Sie können die Automatisierung so planen, dass sie immer dann, wenn ein Check-In oder ein Commit auftritt, oder täglich zu einem bestimmten Zeitpunkt durchgeführt wird.
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Self-Service-Verwaltung von SCVMM-Umgebungen
 
