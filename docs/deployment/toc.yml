@@ -94,8 +94,6 @@
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
             - name: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen
-              href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
             - name: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten
