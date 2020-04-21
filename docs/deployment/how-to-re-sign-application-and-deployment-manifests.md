@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten | Microsoft-Dokumentation'
+title: 'Gewusst wie: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,34 +18,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc69ce1f79644d7f4b35fbb1c1e3a41691761390
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928358"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649187"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten
-Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen (Xbap) und Office-Projektmappen vornehmen, müssen Sie die Anwendung neu signieren und die Bereitstellungsmanifeste mit einem das Zertifikat. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
+Nachdem Sie Änderungen an Bereitstellungseigenschaften im Anwendungsmanifest für Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen (xbap) oder Office-Lösungen vorgenommen haben, müssen Sie sowohl das Anwendungs- als auch das Bereitstellungsmanifest mit einem Zertifikat neu signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
 
- Ein weiteres Szenario, in dem Sie das Manifest neu signieren können, ist, wenn Ihre Kunden, zum Signieren der Anwendung wünschen und die Bereitstellungsmanifeste mit einem eigenen Zertifikat.
+ Ein weiteres Szenario, in dem Sie die Manifeste erneut signieren können, ist, wenn Ihre Kunden die Anwendung und Bereitstellungsmanifeste mit ihrem eigenen Zertifikat signieren möchten.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Erneutes Signieren der Anwendungs- und Bereitstellungsmanifeste
- Dieses Verfahren setzt voraus, dass Sie bereits Ihre Datei für das Anwendungsmanifest geändert haben (*". manifest"*). Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie Bereitstellungseigenschaften](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
+ Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an der Anwendungsmanifestdatei (*.manifest*) vorgenommen haben. Weitere Informationen finden Sie unter [Gewusst wie: Ändern von Bereitstellungseigenschaften](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
 
-#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Um erneut signieren Sie die Anwendungs- und Bereitstellungsmanifeste mit Mage.exe
+#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>So signieren Sie die Anwendungs- und Bereitstellungsmanifeste erneut mit Mage.exe
 
-1. Öffnen einer **Visual Studio-Eingabeaufforderung** Fenster.
+1. Öffnen Sie ein **Visual Studio-Eingabeaufforderungsfenster.**
 
-2. Wechseln Sie zu dem Ordner, der die Manifesten-Dateien enthält, die Sie signieren möchten.
+2. Ändern Sie Verzeichnisse in den Ordner, der die Manifestdateien enthält, die Sie signieren möchten.
 
-3. Geben Sie den folgenden Befehl aus, um die Manifestdatei der Anwendung anmelden. Ersetzen Sie dies *ManifestFileName* durch den Namen der Manifestdatei mit der Erweiterung. Ersetzen Sie dies *Zertifikat* durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei und Ersetzen *Kennwort* durch das Kennwort für das Zertifikat.
+3. Geben Sie den folgenden Befehl ein, um die Anwendungsmanifestdatei zu signieren. Ersetzen Sie *ManifestFileName* durch den Namen Der Manifestdatei plus die Erweiterung. Ersetzen Sie *Zertifikat* durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei, und ersetzen Sie *Kennwort* durch das Kennwort für das Zertifikat.
 
     ```cmd
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     Beispielsweise können Sie den folgenden Befehl zum Signieren von einem Anwendungsmanifest für ein Add-in, eine Windows Forms-Anwendung oder einer Windows Presentation Foundation-Browseranwendung ausführen. Temporäre Zertifikate, die von Visual Studio erstellt werden für die Bereitstellung in produktionsumgebungen nicht empfohlen.
+     Sie können z. B. den folgenden Befehl ausführen, um ein Anwendungsmanifest für ein Add-In, eine Windows Form-Anwendung oder eine Windows Presentation Foundation-Browseranwendung zu signieren. Von Visual Studio erstellte temporäre Zertifikate werden für die Bereitstellung in Produktionsumgebungen nicht empfohlen.
 
     ```cmd
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -53,13 +53,13 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-4. Geben Sie den folgenden Befehl zum Aktualisieren und Signieren die Datei mit dem Bereitstellungsmanifest, und Ersetzen Sie dabei die Platzhalternamen wie im vorherigen Schritt.
+4. Geben Sie den folgenden Befehl ein, um die Bereitstellungsmanifestdatei zu aktualisieren und zu signieren, und ersetzen Sie die Platzhalternamen wie im vorherigen Schritt.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     Beispielsweise können Sie den folgenden Befehl zum Aktualisieren, und melden Sie ein Bereitstellungsmanifest für ein Excel-add-in, einer Windows Forms-Anwendung oder einer Windows Presentation Foundation-Browseranwendung ausführen.
+     Sie können z. B. den folgenden Befehl ausführen, um ein Bereitstellungsmanifest für ein Excel-Add-In, eine Windows Forms-Anwendung oder eine Windows Presentation Foundation-Browseranwendung zu aktualisieren und zu signieren.
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -67,26 +67,26 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Optional, kopieren Sie das Bereitstellungsmanifest für die master (*veröffentlichen\\\<Appname > .application*) in Ihrer Version Bereitstellungsverzeichnis (*Publish\Application Dateien\\ \<Appname > _\<Version >*).
+5. Kopieren Sie optional das Masterbereitstellungsmanifest (*Appname\\\<>.application veröffentlichen*) in Ihr Versionsbereitstellungsverzeichnis (*Appname\\\<\<>_ Version>veröffentlichen. *
 
-## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualisieren und erneut signieren der Anwendungs- und Bereitstellungsmanifesten
- Dieses Verfahren setzt voraus, dass Sie bereits Ihre Datei für das Anwendungsmanifest geändert haben (*". manifest"*), aber es gibt noch andere Dateien, die aktualisiert wurden. Bei der Dateien aktualisiert werden, muss auch der Hash, der die Datei repräsentiert aktualisiert werden.
+## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualisieren und erneutes Signieren der Anwendungs- und Bereitstellungsmanifeste
+ Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an der Anwendungsmanifestdatei (*.manifest*) vorgenommen haben, dass jedoch andere Dateien aktualisiert wurden. Wenn Dateien aktualisiert werden, muss auch der Hash, der die Datei darstellt, aktualisiert werden.
 
-#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Zum Aktualisieren und erneut signieren, die Anwendungs- und Bereitstellungsmanifeste mit Mage.exe
+#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>So aktualisieren und signieren Sie die Anwendungs- und Bereitstellungsmanifeste mit Mage.exe
 
-1. Öffnen einer **Visual Studio-Eingabeaufforderung** Fenster.
+1. Öffnen Sie ein **Visual Studio-Eingabeaufforderungsfenster.**
 
-2. Wechseln Sie zu dem Ordner, der die Manifesten-Dateien enthält, die Sie signieren möchten.
+2. Ändern Sie Verzeichnisse in den Ordner, der die Manifestdateien enthält, die Sie signieren möchten.
 
-3. Entfernen Sie die *".deploy"* Dateierweiterung aus den Dateien bei der Veröffentlichung Ausgabeordner.
+3. Entfernen Sie die *Dateierweiterung .deploy* aus den Dateien im Veröffentlichungsausgabeordner.
 
-4. Geben Sie den folgenden Befehl zum Aktualisieren das Anwendungsmanifest mit den neuen Hashes für die aktualisierten Dateien und die Manifestdatei der Anwendung anmelden. Ersetzen Sie dies *ManifestFileName* durch den Namen der Manifestdatei mit der Erweiterung. Ersetzen Sie dies *Zertifikat* durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei und Ersetzen *Kennwort* durch das Kennwort für das Zertifikat.
+4. Geben Sie den folgenden Befehl ein, um das Anwendungsmanifest mit den neuen Hashes für die aktualisierten Dateien zu aktualisieren und die Anwendungsmanifestdatei zu signieren. Ersetzen Sie *ManifestFileName* durch den Namen Der Manifestdatei plus die Erweiterung. Ersetzen Sie *Zertifikat* durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei, und ersetzen Sie *Kennwort* durch das Kennwort für das Zertifikat.
 
     ```cmd
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     Beispielsweise können Sie den folgenden Befehl zum Signieren von einem Anwendungsmanifest für ein Add-in, eine Windows Forms-Anwendung oder einer Windows Presentation Foundation-Browseranwendung ausführen. Temporäre Zertifikate, die von Visual Studio erstellt werden für die Bereitstellung in produktionsumgebungen nicht empfohlen.
+     Sie können z. B. den folgenden Befehl ausführen, um ein Anwendungsmanifest für ein Add-In, eine Windows Form-Anwendung oder eine Windows Presentation Foundation-Browseranwendung zu signieren. Von Visual Studio erstellte temporäre Zertifikate werden für die Bereitstellung in Produktionsumgebungen nicht empfohlen.
 
     ```cmd
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -94,13 +94,13 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Geben Sie den folgenden Befehl zum Aktualisieren und Signieren die Datei mit dem Bereitstellungsmanifest, und Ersetzen Sie dabei die Platzhalternamen wie im vorherigen Schritt.
+5. Geben Sie den folgenden Befehl ein, um die Bereitstellungsmanifestdatei zu aktualisieren und zu signieren, und ersetzen Sie die Platzhalternamen wie im vorherigen Schritt.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     Beispielsweise können Sie den folgenden Befehl zum Aktualisieren, und melden Sie ein Bereitstellungsmanifest für ein Excel-add-in, einer Windows Forms-Anwendung oder einer Windows Presentation Foundation-Browseranwendung ausführen.
+     Sie können z. B. den folgenden Befehl ausführen, um ein Bereitstellungsmanifest für ein Excel-Add-In, eine Windows Forms-Anwendung oder eine Windows Presentation Foundation-Browseranwendung zu aktualisieren und zu signieren.
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -108,18 +108,18 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-6. Hinzufügen der *".deploy"* Dateierweiterung an den Dateien, mit der Ausnahme von Dateien die Anwendungs- und Bereitstellungsmanifesten.
+6. Fügen Sie die *Dateierweiterung .deploy* wieder zu den Dateien hinzu, mit Ausnahme der Anwendungs- und Bereitstellungsmanifestdateien.
 
-7. Optional, kopieren Sie das Bereitstellungsmanifest für die master (*veröffentlichen\\\<Appname > .application*) in Ihrer Version Bereitstellungsverzeichnis (*Publish\Application Dateien\\ \<Appname > _\<Version >*).
+7. Kopieren Sie optional das Masterbereitstellungsmanifest (*Appname\\\<>.application veröffentlichen*) in Ihr Versionsbereitstellungsverzeichnis (*Appname\\\<\<>_ Version>veröffentlichen. *
 
 ## <a name="see-also"></a>Siehe auch
-- [Secure ClickOnce applications (Sichern von ClickOnce-Anwendungen)](../deployment/securing-clickonce-applications.md)
+- [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Trusted application deployment overview (Überblick: Bereitstellen vertrauenswürdiger Anwendungen)](../deployment/trusted-application-deployment-overview.md)
-- [Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren](../deployment/how-to-enable-clickonce-security-settings.md)
-- [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Vorgehensweise: Festlegen Sie benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
-- [Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+- [Übersicht über das Bereitstellen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
+- [Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Gewusst wie: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Vorgehensweise: Festlegen von benutzerdefinierten Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](securing-clickonce-applications.md)
+- [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [Gewusst wie: Konfigurieren des ClickOnce-Vertrauensaufforderungsverhaltens](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

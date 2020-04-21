@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7173bc1ebc5507eadf319c0374f4c878dea62857
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739778"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649368"
 ---
 # <a name="command-flag-eelement"></a>Befehlsflag Eelement
 Ändert das übergeordnete Element.
@@ -30,7 +30,7 @@ ms.locfileid: "80739778"
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  Im folgenden Abschnitt werden gültige Elementwerte beschrieben.
 
-### <a name="attributes"></a>Attribute
+### <a name="attributes"></a>Attributes
  Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -60,7 +60,6 @@ ms.locfileid: "80739778"
 |PostExec|Macht den Befehl nicht blockierend. Die Entwicklungsumgebung verschiebt die Ausführung, bis alle Vorverarbeitungsabfragen abgeschlossen sind.<br /><br /> Gültig für:`Button`|
 |RouteToDocs|Der Befehl wird an das aktive Dokument weitergeleitet.<br /><br /> Gültig für:`Button`|
 |StretchHorizontally|Wenn dieses Flag festgelegt ist, wird die Breite zur minimalen Breite für das Kombinationsfeld, und wenn auf der Symbolleiste Platz vorhanden ist, wird das Kombinationsfeld dehnt sich aus, um den verfügbaren Platz zu füllen. Dies tritt nur auf, wenn die Symbolleiste horizontal angedockt ist und nur ein Kombinationsfeld auf der Symbolleiste das Flag verwenden kann (das Flag wird auf allen außer dem ersten Kombinationsfeld ignoriert).<br /><br /> Gültig für:`Combo`|
-|TextMenuUseButton|Verwenden `ButtonText` Sie das Feld für Menüs. Das Standardfeld `MenuText` ist, wenn es angegeben ist.<br /><br /> Gültig für:`Button`|
 |TextÄnderungen|Der Befehl summiert sich zur Laufzeit, `QueryStatus` in der Regel über die Methode.<br /><br /> Gültig für: `Button`,`Menu`|
 |TextChangesButton|Gültig für:`Button`|
 |TextIsAnchorCommand|Bei einem Menücontroller wird der Text des Menüs dem Standardbefehl (Anker) entnommen. Ein Ankerbefehl ist der letzte ausgewählte oder gesperrte Befehl. Wenn dieses Flag nicht gesetzt ist, `MenuText` verwendet der Menücontroller ein eigenes Feld. Wenn Sie jedoch auf den Menücontroller klicken, wird weiterhin der zuletzt ausgewählte Befehl von diesem Controller aus aktiviert.<br /><br /> Es wird empfohlen, dieses `TextChanges` Flag mit dem Flag zu kombinieren.<br /><br /> Dieses Flag gilt nur für Menüs vom Typ MenuController oder MenuControllerLatched.<br /><br /> Gültig für:`Menu`|
@@ -75,5 +74,5 @@ ms.locfileid: "80739778"
 |[Buttons-Element](../extensibility/buttons-element.md)|Stellt eine Gruppe für [Button-Elementelemente](../extensibility/button-element.md) bereit.|
 |[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die ein VSPackage implementiert.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Visual Studio-Befehlstabelle (. Vsct) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
