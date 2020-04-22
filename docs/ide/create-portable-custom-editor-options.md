@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648528"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -104,7 +104,7 @@ Es gibt mehrere Möglichkeiten, wie Sie Ihrem Projekt eine EditorConfig-Datei hi
 
 - Das [Coderückschluss-Feature](/visualstudio/intellicode/code-style-inference) von IntelliCode für Visual Studio leitet Codeformate aus vorhandenem Code ab. Dann erstellt das Feature eine nicht leere EditorConfig-Datei, in der Ihre bevorzugten Codeformate bereits definiert sind.
 
-- Ab Visual Studio 2019 können Sie in **Extras** > **Optionen**[eine EditorConfig-Datei basierend auf Ihren Codeformateinstellungen generieren](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files).
+- Ab Visual Studio 2019 können Sie in **Extras** > **Optionen**[eine EditorConfig-Datei basierend auf Ihren Codeformateinstellungen generieren](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files).
 
 ## <a name="file-hierarchy-and-precedence"></a>Dateihierarchie und Rangfolge
 

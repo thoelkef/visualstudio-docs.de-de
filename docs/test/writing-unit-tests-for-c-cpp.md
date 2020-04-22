@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78937556"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649615"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -79,7 +79,7 @@ Fügen Sie im Testprojekt einen Verweis auf das Projekt hinzu, um den Zugriff au
 
 ### <a name="link-to-object-or-library-files"></a>Verknüpfen mit Objekt- oder Bibliotheksdateien
 
-Wenn der Testcode die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die OBJ- oder LIB-Ausgabedateien zu den Abhängigkeiten des Testprojekts hinzufügen. Weitere Informationen finden Sie unter [To link the tests to the object or library files](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files) (Verknüpfen des Tests mit Objekt- oder Bibliotheksdateien).
+Wenn der Testcode die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die OBJ- oder LIB-Ausgabedateien zu den Abhängigkeiten des Testprojekts hinzufügen. Weitere Informationen finden Sie unter [To link the tests to the object or library files](how-to-use-microsoft-test-framework-for-cpp.md#object_files) (Verknüpfen des Tests mit Objekt- oder Bibliotheksdateien).
 
 ### <a name="add-include-directives-for-header-files"></a>Hinzufügen von #include-Direktiven für Headerdateien
 

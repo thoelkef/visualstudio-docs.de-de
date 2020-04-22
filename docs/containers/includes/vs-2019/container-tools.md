@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80502038"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389957"
 ---
 Mit Visual Studio können Sie .NET-, ASP.NET- und ASP.NET Core-Apps in Containern mühelos erstellen, debuggen, ausführen und anschließend in Azure Container Registry (ACR), Docker Hub, Azure App Service oder Ihrer eigenen Containerregistrierung veröffentlichen. In diesem Artikel veröffentlichen wir eine ASP.NET Core-App in ACR.
 
@@ -21,7 +21,7 @@ Mit Visual Studio können Sie .NET-, ASP.NET- und ASP.NET Core-Apps in Container
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit installierten Workloads für **Webentwicklung**, **Azure-Tools** und/oder **plattformübergreifende .NET Core-Entwicklung**
 * [.NET Core-Entwicklungstools](https://dotnet.microsoft.com/download/dotnet-core/) für die Entwicklung mit .NET Core
-* Zum Veröffentlichen in Azure Container Registry ist ein Azure-Abonnement erforderlich. [Registrieren Sie sich für eine kostenlose Testversion.](https://azure.microsoft.com/offers/ms-azr-0044p/)
+* Zum Veröffentlichen in Azure Container Registry ist ein Azure-Abonnement erforderlich. [Registrieren Sie sich für eine kostenlose Testversion.](https://azure.microsoft.com/free/dotnet/)
 
 ## <a name="installation-and-setup"></a>Installation und Einrichtung
 

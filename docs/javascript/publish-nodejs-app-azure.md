@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74474013"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445011"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Veröffentlichen einer Node.js-Anwendung in Azure (Linux App Service)
 
@@ -173,7 +173,7 @@ So richten Sie GitHub für Visual Studio ein:
 ## <a name="troubleshooting"></a>Problembehandlung
 
 * Wenn der node.exe-Prozess stockt (d.h., wenn ein Ausnahmefehler auftritt), wird der Container neu gestartet.
-* Der Container durchläuft beim Starten verschiedene Heuristiken, um zu ermitteln, wie der Node.js-Prozess gestartet werden soll. Details zur Implementierung finden Sie unter [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
+* Der Container durchläuft beim Starten verschiedene Heuristiken, um zu ermitteln, wie der Node.js-Prozess gestartet werden soll. Details zur Implementierung finden Sie unter [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
 * Für Untersuchungen können Sie über SSH eine Verbindung mit dem aktiven Container herstellen. Hierzu können Sie einfach das Azure-Portal verwenden. Wählen Sie den App Service aus. Blättern Sie in der Liste der Tools nach unten bis zu **SSH** im Abschnitt **Entwicklungstools**.
 * Wechseln Sie zur Unterstützung bei der Problembehandlung zu den Einstellungen für **Diagnoseprotokolle** für den App Service. Ändern Sie die Einstellung **Protokollierung von Docker-Containern** von **Off** (Aus) in **Dateisystem**. Protokolle werden im Container unter */home/LogFiles/*_docker.log* erstellt. Sie können auf Ihrem Computer über SSH oder FTP(S) darauf zugreifen.
 * Anstelle der standardmäßig zugewiesenen *.azurewebsites.net-URL wird der Site möglicherweise ein benutzerdefinierter Domänenname zugewiesen. Weitere Informationen finden Sie im Thema [Map Custom Domain (Zuordnen von benutzerdefinierten Domänen)](/azure/app-service/app-service-web-tutorial-custom-domain).
