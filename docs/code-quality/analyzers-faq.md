@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300924"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760135"
 ---
 # <a name="code-analysis-faq"></a>Häufig gestellte Fragen zur Codeanalyse
 
@@ -88,7 +88,13 @@ Zusätzlich zu Regelsätzen und EditorConfig-Dateien werden einige Analysatoren 
      ...
      ```
 
+## <a name="code-analysis-solution-property-page"></a>Eigenschaftenseite der Codeanalyselösung
+
+**F**: Wo befindet sich die Eigenschaftenseite Codeanalyse für die Lösung?
+
+**A**: Die Eigenschaftenseite Codeanalyse auf Lösungsebene wurde zugunsten der zuverlässigeren gemeinsamen Eigenschaftsgruppe entfernt. Zum Verwalten der Codeanalyse auf Projektebene ist die Eigenschaftenseite Codeanalyse weiterhin verfügbar. (Für verwaltete Projekte wird auch empfohlen, von Regelsätzen zu EditorConfig für die Regelkonfiguration zu migrieren.)  Für die Gemeinsamenutzung von Regelsätzen für mehrere/alle Projekte in einer Projektmappe oder einem Repository wird empfohlen, eine Eigenschaftengruppe mit der CodeAnalysisRuleSet-Eigenschaft in einer freigegebenen Props/Targets-Datei oder der Datei Directory.props/Directory.targets zu definieren. Wenn Sie nicht über solche allgemeinen Requisiten oder Ziele verfügen, die alle Ihre Projekte importieren, sollten Sie [eine solche Eigenschaftengruppe zu einem Directory.props oder einem Directory.targets in einem Lösungsverzeichnis der obersten Ebene hinzufügen, das automatisch in alle im Verzeichnis oder seinen Unterverzeichnissen definierten Projektdateien importiert wird.](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)
+
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Analyzer-Übersicht](roslyn-analyzers-overview.md)
-- [.NET Codierungskonventionseinstellungen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
