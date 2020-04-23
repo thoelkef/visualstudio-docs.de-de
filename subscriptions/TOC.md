@@ -77,6 +77,7 @@
 ### Zuweisen von Abonnements
 #### [Hinzufügen einzelner Benutzer](assign-license.md)
 #### [Hinzufügen mehrerer Benutzer](assign-license-bulk.md)
+#### [Zuweisen bestimmter Abonnements](assign-guid.md)
 ### [Bearbeiten von Abonnements](edit-license.md)
 ### [Löschen von Abonnements](delete-license.md)
 ### [Suchen nach einem Abonnement](search-license.md)

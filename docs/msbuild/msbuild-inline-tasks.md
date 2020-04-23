@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633316"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638045"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 
@@ -52,7 +52,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
 
 - Nach dem `TaskFactory`-Attribut wird die Klasse benannt, die die Inlineaufgabenfactory implementiert.
 
-- Über das `AssemblyFile`-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben. Sie können auch mit dem `AssemblyName`-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory-Klasse angeben, die sich in der Regel im globalen Assemblycache (Global Assembly Cache, GAC) befindet.
+- Über das `AssemblyFile`-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben. Sie können auch mit dem `AssemblyName`-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory-Klasse angeben, die sich in der Regel in `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` befindet.
 
 Die verbleibenden Elemente der `DoNothing`-Aufgabe sind leer und werden bereitgestellt, um die Reihenfolge und Struktur einer Inlineaufgabe zu veranschaulichen. Ein robusteres Beispiel wird weiter unten in diesem Thema präsentiert.
 
@@ -195,7 +195,7 @@ File.WriteAllText(Path, content);
 </Project>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
-- [Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe](../msbuild/walkthrough-creating-an-inline-task.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Exemplarische Vorgehensweise: Erstellen eines Inlinetasks](../msbuild/walkthrough-creating-an-inline-task.md)

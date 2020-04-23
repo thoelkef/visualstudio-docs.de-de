@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer Node.js- und Express-App
 description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
-ms.date: 09/24/2018
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224523"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744890"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
 
@@ -109,13 +109,13 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
 
     (3) Der NPM-Knoten zeigt alle installierten NPM-Pakete an. Sie können mit der rechten Maustaste auf den NPM-Knoten klicken, um mithilfe eines Dialogfelds nach NPM-Paketen zu suchen und diese zu installieren.Sie können Pakete auch installieren oder aktualisieren, indem Sie die Einstellungen in *package.json* und die Optionen verwenden, die Sie über einen Rechtsklick auf den NPM-Knoten erreichen.
 
-    (4) *package.json* ist eine Datei, die von NPM zum Verwalten von Paketabhängigkeiten und Paketversionen von lokal installierten Paketen verwendet wird. Weitere Informationen zu dieser Datei finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
+    (4) *package.json* ist eine Datei, die von NPM zum Verwalten von Paketabhängigkeiten und Paketversionen von lokal installierten Paketen verwendet wird. Weitere Informationen finden Sie unter [Verwalten von npm-Paketen](../javascript/npm-package-management.md).
 
     (5) Projektdateien wie *app.js* werden unter dem Projektknoten angezeigt. *app.js* ist die Projektstartdatei. Deshalb wird Sie **fett** angezeigt. Sie können die Startdatei festlegen, indem Sie mit der rechten Maustaste auf eine Datei im Projekt klicken und **Als Node.js-Startdatei festlegen** auswählen.
 
 1. Öffnen Sie den **NPM**-Knoten, und stellen Sie sicher, dass alle erforderlichen NPM-Pakete vorhanden sind.
 
-    Wenn Pakete fehlen (Ausrufezeichensymbol), klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten, und wählen Sie **Fehlende NPM-Pakete installieren** aus.
+    Wenn Pakete fehlen (Ausrufezeichensymbol), klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten, und wählen Sie **NPM-Pakete installieren** aus.
 
 ## <a name="add-some-code"></a>Hinzufügen von Code
 
@@ -194,7 +194,7 @@ IntelliSense ist ein Visual Studio-Tool, das Ihnen beim Schreiben von Code hilft
 
     Die letzte Zeile dieser Meldung besagt, dass der JavaScript-Interpreter ein Komma erwartet (`,`).
 
-1. Klicken Sie im unteren Bereich auf die Registerkarte **Fehlerliste**.
+1. Klicken Sie im unteren Bereich auf die Registerkarte **Fehlerliste**, und wählen Sie **Build und IntelliSense** für die Art der gemeldeten Fehler aus.
 
     Hier finden Sie die Warnung und die Beschreibung sowie den Dateinamen und die Zeilennummer.
 
@@ -218,7 +218,7 @@ Als Nächstes führen Sie die App mit dem angefügten Visual Studio-Debugger aus
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-1. Wählen Sie in der Debug-Symbolleiste das Debugziel aus, z. B. Microsoft Edge oder Chrome.
+1. Wählen Sie in der Debug-Symbolleiste das Debugziel aus, z. B. **Webserver (Google Chrome)** oder **Webserver (Microsoft Edge)** .
 
     ::: moniker range=">=vs-2019"
     ![Debugziel auswählen](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)

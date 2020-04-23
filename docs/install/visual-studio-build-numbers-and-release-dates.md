@@ -5,18 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 04/16/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d41ccfc4092795cdf942d42910cfe0a33baa5593
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: c9021e2202701e01ee0e34fbf074f07fc1c1b8f0
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437622"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544353"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -28,6 +29,15 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Preview 3 | 16. April 2020 | 16.6.30014.187 |
+| 16.0.13 | Freigabe | 14. April 2020 | 16.0.28803.718 |
+| 16.4.7 | Freigabe | 14. April 2020 | 16.4.30011.19 |
+| 16.5.4 | Freigabe | 14. April 2020 | 16.5.30011.22 |
+| 16.5.3 | Freigabe | 7\. April 2020 | 16.5.30002.166 |
+| 16.6.0 | Preview 2.1 | 2\. April 2020 | 16.6.30001.183 |
+| 16.5.2 | Freigabe | 31. März 2020 | 16.5.29926.136 |
+| 16.6.0 | Vorschau 2 | 26. März 2020 | 16.6.29924.181 |
+| 16.5.1 | Freigabe | 24. März 2020 | 16.5.29920.165 |
 | 16.6.0 | Vorschauversion 1 | 16. März 2020 | 16.6.29911.98 |
 | 16.5.0 | Freigabe | 16. März 2020 | 16.5.29911.84 |
 | 16.4.6 | Freigabe | 10. März 2020  | 16.4.29905.134 |
@@ -130,6 +140,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.22 | Freigabe | 14. April 2020 | 15.9.28307.1093 |
 | 15.9.21 | Freigabe | 10. März 2020 | 15.9.28307.1064 |
 | 15.9.20 | Freigabe | 11. Februar 2020 | 15.9.28307.1033 |
 | 15.9.19 | Freigabe | 14. Januar 2020 | 15.9.28307.1000 |

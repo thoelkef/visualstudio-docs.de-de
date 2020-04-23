@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180345"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444946"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -105,7 +105,7 @@ Hier verwenden Sie folgende Schritte, um die Flask-Bibliothek in der „globalen
 
     ![Projektmappen-Explorer mit der Standardumgebung](media/quickstart-python-02-default-environment-2019.png)
 
-2. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Pakete verwalten...**. Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete (PyPI)**.
+2. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Pakete verwalten...** . Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete (PyPI)** .
 
 3. Geben Sie in das Suchfeld „flask“ ein. Wenn unterhalb des Suchfelds **Flask** angezeigt wird, können Sie diesen Schritt überspringen. Wählen Sie andernfalls **Run command: pip install flask** (Ausführungsbefehl: pip install flask) aus. Akzeptieren Sie die Aufforderungen zu Administratorberechtigungen, und beobachten Sie den Fortschritt im Fenster **Ausgabe** in Visual Studio. (Eine Aufforderung zur Erhöhung der Rechte wird angezeigt, wenn der Ordner „Pakete“ für die globale Umgebung sich in einem geschützten Bereich wie *C:\Programme* befindet.)
 
@@ -182,7 +182,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 
 3. Klicken Sie auf **Debuggen > Starten ohne Debugging** (**STRG**+**F5**). Dadurch werden Änderungen an Dateien gespeichert, und die App wird ausgeführt.
 
-4. Ein Befehlsfenster mit der Meldung „* Running in <https://localhost:4449/>“ wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ (Hallo, Python!) angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
+4. Ein Befehlsfenster mit der Meldung **Running in https:\//localhost:4449** wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
 
     Wenn kein Browser automatisch geöffnet wird, starten Sie Ihren bevorzugten Browser, und navigieren Sie zu `localhost:4449`.
 

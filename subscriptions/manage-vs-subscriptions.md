@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232356"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444873"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -52,7 +52,6 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 **Über Programme erworbene Abonnements:**  Wenn Sie Ihr Abonnement über ein Programm erwerben, ist dieses an Ihre Teilnahme am Programm gebunden. Wenden Sie sich für weitere Informationen an Ihre Programmkontakte.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ Antwort: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gesp
 |    Microsoft Business Center              |    180          |
 |    Microsoft Produkt- und Servicevertrag (MSPA)    |    180          |
 |    Visual Studio-Cloudabonnements                   |    180          |
-|    Programm (z.B. MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Programm (z. B. MCT, MPN, Imagine)          |    180          |
 |    Nicht zum Weiterverkauf bestimmt (z.B. MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 

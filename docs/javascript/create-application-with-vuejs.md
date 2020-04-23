@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70180266"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744914"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
@@ -51,7 +51,7 @@ Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual
 
     Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wenn eine installierte Runtime nicht erkannt wird, können Sie Ihr Projekt so konfigurieren, dass es auf der Eigenschaftenseite auf die installierte Runtime verweist. (Klicken Sie nach dem Erstellen eines Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus.)
 
-## <a name="create-a-vuejs-project-using-a-template"></a>Erstellen eines Vue.js-Projekts mit einer Vorlage
+## <a name="create-a-vuejs-project-using-nodejs"></a>Erstellen eines Vue.js-Projekts unter Verwendung von Node.js
 
 Ein neues Projekt können Sie mithilfe der neuen Vue.js-Vorlage erstellen. Die Verwendung der Vorlage ist die einfachste Möglichkeit für den Einstieg. Eine ausführliche Anleitung finden Sie unter [Use Visual Studio to create your first Vue.js app (Verwenden von Visual Studio zum Erstellen der ersten Vue.js-App)](../javascript/quickstart-vuejs-with-nodejs.md).
 
@@ -121,7 +121,7 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
 
 1. Wechseln Sie in Visual Studio zu **Projekt** > **Eigenschaften** > **Buildereignisse**.
 
-1. Geben Sie **in der**Befehlszeile für Präbuildereignis`npm --prefix ./client-app run build` ein.
+1. Geben Sie `npm --prefix ./client-app run build` in der **Befehlszeile für Präbuildereignis** ein.
 
 #### <a name="configure-webpacks-output-module-names"></a>Konfigurieren von Namen für Webpack-Ausgabemodule
 
@@ -196,7 +196,7 @@ cd ../
 
 * Der Befehl `npm run build` kann bei Verwendung von vue-cli 3.0 nicht als Präbuildereignis für die Projekteigenschaften ausgeführt werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erste Schritte – Leitfaden für Vue](https://vuejs.org/v2/guide).
 - [[Vue-CLI-Projekt]](https://github.com/vuejs/vue-cli)

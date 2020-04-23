@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544050"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649649"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Neuerungen in Visual Studio-Abonnements
 
@@ -39,6 +39,23 @@ Wenn Ihre Organisation Azure Active Directory verwendet, können Sie Abonnements
 Wir freuen uns, eine Erweiterung der Vorteile ankündigen zu dürfen, die unser Partner CAST Highlight anbietet. 
 - Die Länge des in Visual Studio Enterprise-Abonnements enthaltenen Vorteils wurde auf sechs Monate erweitert.  
 - Visual Studio Professional-Abonnenten können nun ein Abonnement erhalten, mit dem Sie eine Einzelanwendung drei Monate lang bewerten können. 
+
+## <a name="2020-q2-april-june"></a>2020 Q2 (April bis Juni)
+
+### <a name="visual-studio-subscriptions-portal"></a>Visual Studio-Abonnementportal
+
+Das Visual Studio-Abonnementportal wurde grundlegend verändert, um die Benutzerfreundlichkeit zu erhöhen.  
+
+- Die Größe der Vorteilskacheln wurde angepasst, sodass nun alle Kacheln im Fenster angezeigt werden und Sie keinen Bildlauf nach links oder rechts durchführen müssen, um alle Kacheln einer Kategorie zu sehen. 
+- Sie können alle verfügbaren Vorteile anzeigen oder über die Kategorieauswahl nur eine Kategorie auswählen, die angezeigt werden soll.
+   > [!div class="mx-imgBorder"]
+   > ![Die neue Kategorieauswahl für Vorteile](_img/whats-new/whats-new-category-picker.png)
+- Außerdem wurde die Abonnementauswahl aus der oberen rechten Ecke des Fensters an eine neue Position verschoben, damit besser darauf zugegriffen werden kann.
+   > [!div class="mx-imgBorder"]
+   > ![Die neue Abonnementauswahl](_img/whats-new/whats-new-sub-picker.png)
+- Wir haben oben in der Vorteilsliste einen „empfohlenen Vorteil“ hinzugefügt, um neue oder beliebte Vorteile hervorzuheben.  
+   > [!div class="mx-imgBorder"]
+   > ![Der neue empfohlene Vorteil](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Testen Sie die neue Benutzeroberfläche des [Portals zur Verwaltung von Abonnements](https://manage.visualstudio.com) und dessen neue Features.

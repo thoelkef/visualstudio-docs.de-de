@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: df4630182e89dad08360794057bda856ff4d677b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549946"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544288"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript und TypeScript in Visual Studio 2019
 
@@ -38,7 +38,8 @@ Visual Studio 2019 bietet mehrere Optionen zur Integration der TypeScript-Kompil
 * [Das TypeScript-npm-Paket](https://www.npmjs.com/package/typescript). Wenn das npm-Paket für TypeScript 2.1 oder höher in Ihrem Projekt installiert ist, wird die entsprechende Version des TypeScript-Sprachdienstes in den Editor geladen.
 * Das TypeScript SDK, das standardmäßig im Visual Studio-Installer verfügbar ist, sowie ein eigenständiger SDK-Download vom [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 
-Für Projekte, die in Visual Studio 2019 entwickelt wurden, empfehlen wir Ihnen, die TypeScript-NuGet- und -npm-Pakete für eine bessere Portabilität über verschiedene Plattformen und Umgebungen zu verwenden.
+> [!TIP]
+> Für Projekte, die in Visual Studio 2019 entwickelt wurden, empfehlen wir Ihnen, das TypeScript-NuGet- oder das TypeScript-npm-Paket für eine bessere Portabilität über verschiedene Plattformen und Umgebungen hinweg zu verwenden.
 
 Ein gängiger Anwendungsfall für das NuGet-Paket ist die Kompilierung von TypeScript mithilfe der .NET Core-CLI. Das NuGet-Paket ist die einzige Möglichkeit zum Aktivieren der TypeScript-Kompilierung mit .NET Core-CLI-Befehlen wie `dotnet build` und `dotnet publish`, es sei denn, Sie bearbeiten Ihre Projektdatei manuell, um Buildziele von einer Installation der TypeScript SDK zu importieren.
 

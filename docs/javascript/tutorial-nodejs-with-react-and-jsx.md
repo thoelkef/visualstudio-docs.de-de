@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Node.js- und Express-Apps
 description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
-ms.custom: mvc
-ms.date: 11/01/2019
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550029"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760125"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -72,7 +72,7 @@ Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann 
 
 * Die Node.js-Laufzeit muss installiert sein.
 
-    Dieses Tutorial wurde mit der Version 10.16.0 getestet.
+    Dieses Tutorial wurde mit der Version 12.6.2 getestet.
 
     Sofern nicht bereits geschehen, empfehlen wir Ihnen, die LTS-Version von der [Node.js](https://nodejs.org/en/download/)-Website zu installieren, um optimale Kompatibilität mit externen Frameworks und Bibliotheken zu gewährleisten. Node.js wurde für 32-Bit- und 64-Bit-Architekturen entwickelt. Die Node.js-Tools in Visual Studio, die in der Node.js-Workload enthalten sind, unterstützen beide Versionen. Es wird nur eine Version benötigt, und das Node.js-Installationsprogramm unterstützt zu jedem Zeitpunkt nur jeweils eine Installation.
     
@@ -106,7 +106,7 @@ Erstellen Sie zunächst ein Projekt für die Node.js-Webanwendung.
 
     (3) Der NPM-Knoten zeigt alle installierten NPM-Pakete an. Sie können mit der rechten Maustaste auf den NPM-Knoten klicken, um mithilfe eines Dialogfelds nach NPM-Paketen zu suchen und diese zu installieren.Sie können Pakete auch installieren oder aktualisieren, indem Sie die Einstellungen in *package.json* und die Optionen verwenden, die Sie über einen Rechtsklick auf den NPM-Knoten erreichen.
 
-    (4) *package.json* ist eine Datei, die von NPM zum Verwalten von Paketabhängigkeiten und Paketversionen von lokal installierten Paketen verwendet wird. Weitere Informationen zu dieser Datei finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
+    (4) *package.json* ist eine Datei, die von NPM zum Verwalten von Paketabhängigkeiten und Paketversionen von lokal installierten Paketen verwendet wird. Weitere Informationen finden Sie unter [Verwalten von npm-Paketen](../javascript/npm-package-management.md).
 
     (5) Projektdateien wie z.B. *server.js* werden unter dem Projektknoten angezeigt. *server.js* ist die Projektstartdatei. Deshalb wird Sie **fett** angezeigt. Sie können die Startdatei festlegen, indem Sie mit der rechten Maustaste auf eine Datei im Projekt klicken und **Als Node.js-Startdatei festlegen** auswählen.
 
@@ -125,11 +125,11 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
 
 1. Klicken Sie im Projektmappen-Explorer (rechter Bereich) mit der rechten Maustaste auf den **NPM**-Knoten im Projekt, und wählen Sie **Neue NPM-Pakete installieren** aus.
 
-    Wählen Sie im Dialogfeld **Neue NPM-Pakete installieren** die aktuellste Paketversion aus, oder geben Sie eine Version an, die Sie installieren möchten. Wenn Sie die aktuelle Version dieser Pakete installieren, jedoch zu einem späteren Zeitpunkt unerwartete Fehler auftreten, müssen Sie möglicherweise die weiter unten beschriebenen Paketversionen installieren.
+    Wählen Sie im Dialogfeld **Neue NPM-Pakete installieren** die aktuellste Paketversion aus, oder geben Sie eine Version an, die Sie installieren möchten. Wenn Sie die aktuelle Version dieser Pakete installieren, jedoch zu einem späteren Zeitpunkt unerwartete Fehler auftreten, sollten Sie die weiter unten beschriebenen Paketversionen installieren.
 
 1. Suchen Sie im Dialogfeld **Neue npm-Pakete installieren** das React-Paket, und klicken Sie auf **Paket installieren**, um es zu installieren.
 
-    ![NPM-Pakete installieren](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![NPM-Pakete installieren](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     Klicken Sie auf das **Ausgabefenster**, um den Fortschritt der Paketinstallation anzuzeigen (Wählen Sie **npm** im Feld **Ausgabe anzeigen von** aus). Nach dem Installieren wird das Paket unter dem **NPM**-Knoten angezeigt.
 
@@ -139,14 +139,14 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
 
     ```json
     "dependencies": {
-      "express": "~4.16.4",
+      "express": "~4.17.1",
       "path": "~0.12.7",
-      "react": "~16.6.0",
-      "react-dom": "~16.6.0",
-      "ts-loader": "~5.3.0",
-      "typescript": "~3.1.5",
-      "webpack": "~4.23.1",
-      "webpack-cli": "~3.1.2"
+      "react": "~16.13.1",
+      "react-dom": "~16.13.1",
+      "ts-loader": "~7.0.1",
+      "typescript": "~3.8.3",
+      "webpack": "~4.42.1",
+      "webpack-cli": "~3.3.11"
     }
     ```
 
@@ -154,13 +154,15 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
 
 1. Speichern Sie die Änderungen.
 
-1. Klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten im Projekt, und wählen Sie **NPM-Pakete aktualisieren** aus.
+1. Klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten in Ihrem Projekt, und wählen Sie **NPM-Pakete installieren** aus.
+
+    Dieser Befehl führt den npm-Installationsbefehl direkt aus.
 
     Klicken Sie im unteren Bereich auf das **Ausgabefenster**, um den Fortschritt der Installation der Pakete anzuzeigen. Die Installation kann einige Minuten dauern, und die Ergebnisse werden Ihnen möglicherweise nicht sofort angezeigt. Achten Sie zum Anzeigen der Ausgabe darauf, dass Sie im Fenster **Ausgabe** im Feld **Ausgabe anzeigen von** die Option **npm** ausgewählt haben.
 
     Die folgenden NPM-Module werden im Projektmappen-Explorer angezeigt, nachdem sie installiert wurden.
 
-    ![NPM-Pakete](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![NPM-Pakete](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > Wenn Sie NPM-Pakete über die Befehlszeile installieren möchten, klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Eingabeaufforderung hier öffnen**. Verwenden Sie die Node.js-Standardbefehle, um die Pakete zu installieren.
@@ -310,7 +312,7 @@ In den vorherigen Schritten haben Sie dem Projekt die Datei *webpack-config.js* 
 
     Das Ergebnis wird im Fenster „Eingabeaufforderung“ angezeigt.
 
-    ![Ausführen von Webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![Ausführen von Webpack](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     Werden anstatt der vorherigen Ausgabe Fehler angezeigt, müssen Sie diese beheben, damit Ihre App funktioniert. Wenn sich Ihre NPM-Paketversionen von den in diesem Tutorial verwendeten Versionen unterscheiden, kann dies eine der Fehlerursachen darstellen. Sie können die Fehler beheben, indem Sie exakt die in den vorherigen Schritten beschriebenen Versionen verwenden. Zudem müssen Sie möglicherweise zum Beheben der Fehler eine neuere Version installieren, wenn eine oder mehrere der Paketversionen als veraltet markiert wurden und zu einem Fehler führen. Informationen zur Verwendung von *package.json* zum Steuern von npm-Paketversionen finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
 
@@ -340,7 +342,7 @@ Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Ers
 
 ## <a name="run-the-app"></a>Ausführen der App
 
-1. Wählen Sie entweder Microsoft Edge oder Chrome als aktuelles Debugziel aus.
+1. Wählen Sie **Webserver (Google Chrome)** oder **Webserver (Microsoft Edge)** als aktuelles Debugziel aus.
 
     ::: moniker range=">=vs-2019"
     ![Auswählen von Chrome als Debugziel](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -349,12 +351,7 @@ Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Ers
     ![Auswählen von Chrome als Debugziel](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    Wenn Chrome auf Ihrem Computer verfügbar ist, aber nicht als Option angezeigt wird, wählen Sie in der Dropdownliste für Debugziele **Webbrowser (Browsername)** > **Webbrowser auswählen** aus, und wählen Sie dann **Chrome** als Standardbrowserziel aus.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Wenn Chrome auf Ihrem Computer verfügbar ist, aber nicht als Option angezeigt wird, wählen Sie in der Dropdownliste für Debugziele **Webbrowser (Browsername)** > **Google Chrome** aus, und wählen Sie dann **Chrome** als Standardbrowserziel aus.
-    ::: moniker-end
+    Wenn Chrome auf Ihrem Computer verfügbar ist, jedoch nicht als Option angezeigt wird, wählen Sie aus der Dropdownliste für das Debugziel **Browserauswahl** aus, und klicken Sie dann auf Chrome, um diesen Browser als Standardbrowser festzulegen (wählen Sie dazu **Als Standard festlegen** aus).
 
 1. Drücken Sie zum Ausführen der App **F5** (**Debuggen** > **Debuggen starten**), oder klicken Sie auf die Schaltfläche mit dem grünen Pfeil.
 
