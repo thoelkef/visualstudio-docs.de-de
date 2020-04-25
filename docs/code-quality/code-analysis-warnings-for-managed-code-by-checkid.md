@@ -106,6 +106,7 @@ f1_keywords:
 - CA1505
 - CA1506
 - CA1507
+- CA1508
 - CA1600
 - CA1601
 - CA1700
@@ -265,12 +266,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83ed654a6e0795e5930580f9d13198631b5d695e
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109493"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153012"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
 
@@ -375,7 +376,9 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA1502 | [CA1502: Übermäßige Komplexität vermeiden](../code-quality/ca1502.md) | Diese Regel ermöglicht Aussagen über die Anzahl linear unabhängiger Pfade in einer Methode, wobei die Anzahl der Pfade durch die Anzahl und Komplexität bedingter Branches bestimmt wird. |
 | CA1504 | [CA1504: Irreführende Feldnamen überprüfen](../code-quality/ca1504.md) | Der Name eines Instanzenfelds beginnt mit "s_", oder der Name eines static-Felds (Shared-Feld in Visual Basic) beginnt mit "m_". |
 | CA1505 | [CA1505: Nicht wartbaren Code vermeiden](../code-quality/ca1505.md) | Ein Typ oder eine Methode verfügt über einen niedrigen Wartbarkeitsindexwert. Ein niedriger Wartbarkeitsindex zeigt an, dass ein Typ oder eine Methode wahrscheinlich schwer zu verwalten ist und geeignet für einen Neuentwurf wäre. |
-| CA1506 |[CA1506: Übermäßige Klassenkopplungen vermeiden](../code-quality/ca1506.md) | Durch diese Regel wird die Klassenkopplung gemessen, indem die eindeutigen Typverweise, die ein Typ oder eine Methode enthält, gezählt werden. |
+| CA1506 | [CA1506: Übermäßige Klassenkopplungen vermeiden](../code-quality/ca1506.md) | Durch diese Regel wird die Klassenkopplung gemessen, indem die eindeutigen Typverweise, die ein Typ oder eine Methode enthält, gezählt werden. |
+| CA1507 | [CA1507: nameof anstelle der Zeichenfolge verwenden](../code-quality/ca1507.md) | Ein Zeichenfolgenliterals wird als Argument `nameof` verwendet, bei dem ein-Ausdruck verwendet werden kann. |
+| CA1508 | [CA1508: Vermeiden von unzustellbaren bedingten Code](../code-quality/ca1508.md) | Eine Methode verfügt über bedingten Code, der immer `true` zu `false` oder zur Laufzeit ausgewertet wird. Dies führt zu einem unzustellbaren `false` Code in der Verzweigung der Bedingung. |
 | CA1600 | [CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle"](../code-quality/ca1600.md) | Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse mit System.Diagnostics.ProcessPriorityClass.Idle beanspruchen die CPU, wenn diese sich eigentlich im Leerlauf befindet, und blockieren daher den Standbymodus. |
 | CA1601 | [CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern](../code-quality/ca1601.md) | Regelmäßige Aktivitäten mit einer höheren Frequenz belasten die CPU und beeinflussen energiesparende Leerlauftimer, mit denen die Anzeige sowie die Festplatten ausgeschaltet werden. |
 | CA1700 | [CA1700: Enumerationswerte nicht mit "Reserviert" benennen](../code-quality/ca1700.md) | Bei dieser Regel wird vorausgesetzt, dass Enumerationsmember mit einem Namen, der "reserved" enthält, derzeit nicht verwendet werden, sondern Platzhalter sind, die in einer künftigen Version umbenannt oder entfernt werden sollen. Das Umbenennen oder Entfernen eines Members ist eine unterbrechende Änderung. |

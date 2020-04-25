@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dad282bfc1c539216b55e41d77d7743808311d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fd7fe79665ac8de665116a6832d5ef9327fb356c
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587367"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82152992"
 ---
 # <a name="maintainability-warnings"></a>Verwaltbarkeitswarnungen
 
@@ -35,7 +35,8 @@ Wart barkeits Warnungen unterstützen die Verwaltung von Bibliotheken und Anwend
 | [CA1504: Irreführende Feldnamen überprüfen](../code-quality/ca1504.md) | Der Name eines Instanzfelds beginnt mit "S_", oder der Name eines statischen Felds (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) beginnt mit "M_". |
 | [CA1505: Nicht wartbaren Code vermeiden](../code-quality/ca1505.md) | Ein Typ oder eine Methode verfügt über einen niedrigen Wartbarkeitsindexwert. Ein niedriger Wartbarkeitsindex zeigt an, dass ein Typ oder eine Methode wahrscheinlich schwer zu verwalten ist und geeignet für einen Neuentwurf wäre. |
 | [CA1506: Übermäßige Klassenkopplungen vermeiden](../code-quality/ca1506.md) | Durch diese Regel wird die Klassenkopplung gemessen, indem die eindeutigen Typverweise, die ein Typ oder eine Methode enthält, gezählt werden. |
-| [CA1507: nameof anstelle der Zeichenfolge verwenden](../code-quality/ca1507.md) | Ein Zeichenfolgenliterals wird als Argument verwendet, bei dem ein `nameof` Ausdruck verwendet werden kann. |
+| [CA1507: nameof anstelle der Zeichenfolge verwenden](../code-quality/ca1507.md) | Ein Zeichenfolgenliterals wird als Argument `nameof` verwendet, bei dem ein-Ausdruck verwendet werden kann. |
+| [CA1508: Vermeiden von unzustellbaren bedingten Code](../code-quality/ca1508.md) | Eine Methode verfügt über bedingten Code, der immer `true` zu `false` oder zur Laufzeit ausgewertet wird. Dies führt zu einem unzustellbaren `false` Code in der Verzweigung der Bedingung. |
 
 ## <a name="see-also"></a>Siehe auch
 
