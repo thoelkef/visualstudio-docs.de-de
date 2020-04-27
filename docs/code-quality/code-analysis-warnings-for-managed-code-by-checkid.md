@@ -158,6 +158,10 @@ f1_keywords:
 - CA1823
 - CA1824
 - CA1825
+- CA1826
+- CA1827
+- CA1828
+- CA1829
 - CA1900
 - CA1901
 - CA1903
@@ -266,18 +270,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153012"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167383"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
 
 In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach dem CheckId-Bezeichner der Warnung aufgeführt.
 
-| CheckId | Warnung | Beschreibung |
+| CheckId | Warnung | BESCHREIBUNG |
 |---------| - | - |
 | CA2007 | [CA2007: nicht direkt auf eine Aufgabe warten](ca2007.md) | Eine asynchrone Methode [erwartet](/dotnet/csharp/language-reference/keywords/await) direkt <xref:System.Threading.Tasks.Task> ein. Wenn eine asynchrone Methode direkt auf <xref:System.Threading.Tasks.Task> einen wartet, erfolgt die Fortsetzung in dem Thread, der die Aufgabe erstellt hat. Dieses Verhalten kann sich in Bezug auf die Leistung als kostspielig erweisen und kann zu einem Deadlock im UI-Thread führen. Rufen <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> Sie auf, um ihre Absicht für die Fortsetzung zu signalisieren. |
 | CA1000 | [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000.md) | Wenn ein statischer Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. In diesen beiden Fällen ist die Syntax zum Angeben des Typarguments unterschiedlich und leicht zu verwechseln. |
@@ -424,6 +428,10 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA1823 | [CA1823: Nicht verwendete private Felder vermeiden](../code-quality/ca1823.md) | Es wurden private Felder erkannt, auf die in der Assembly anscheinend kein Zugriff erfolgt. |
 | CA1824 |[CA1824: Assemblys mit NeutralResourcesLanguageAttribute markieren](../code-quality/ca1824.md) | Das NeutralResourcesLanguage-Attribut informiert den Ressourcen-Manager über die Sprache, die zum Anzeigen der Ressourcen einer neutralen Kultur für eine Assembly verwendet wurde. Auf diese Weise wird die Suchleistung für die erste zu ladende Ressource verbessert und Ihr Workingset kann sich verkleinern. |
 | CA1825 |[CA1825: Array Zuordnungen der Länge 0 (null) vermeiden](../code-quality/ca1825.md) | Die Initialisierung eines Arrays der Länge 0 (null) führt zu einer unnötigen Speicher Belegung. Verwenden Sie stattdessen die statisch zugeordnete leere Array Instanz, indem <xref:System.Array.Empty%2A?displayProperty=nameWithType>Sie aufrufen. Die Speicher Belegung wird für alle Aufrufe dieser Methode freigegeben. |
+| CA1826 |[CA1826: Eigenschaft anstelle der LINQ-Enumerable-Methode verwenden](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>Die LINQ-Methode wurde für einen Typ verwendet, der eine äquivalente, effizientere Eigenschaft unterstützt. |
+| CA1827 |[CA1827: Verwenden Sie count/LongCount nicht, wenn ein beliebiges verwendet werden kann.](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>die <xref:System.Linq.Enumerable.LongCount%2A> -Methode oder die <xref:System.Linq.Enumerable.Any%2A> -Methode wurde verwendet, wenn die Methode effizienter wäre. |
+| CA1828 |[CA1828: Verwenden Sie "count Async/longcountrytasync" nicht, wenn "anyasync" verwendet werden kann.](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>die <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> -Methode oder die <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> -Methode wurde verwendet, wenn die Methode effizienter wäre. |
+| CA1829 |[CA1829: Verwenden Sie die length/Count-Eigenschaft anstelle der Enumerable. Count-Methode.](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Die LINQ-Methode wurde für einen Typ verwendet, der eine äquivalente `Length` , `Count` effizientere oder-Eigenschaft unterstützt. |
 | CA1900 | [CA1900: Werttypfelder sollten portabel sein](../code-quality/ca1900.md) | Anhand dieser Regel wird überprüft, ob die mit explizitem Layout deklarierten Strukturen korrekt ausgerichtet werden, wenn sie auf 64-Bit-Betriebssystemen an nicht verwalteten Code gemarshallt werden. |
 | CA1901 | [CA1901: Deklarationen von P-Invoke müssen portabel sein](../code-quality/ca1901.md) | Diese Regel wertet die Größe der einzelnen Parameter und den Rückgabewert einer P/Invoke-Deklaration aus und überprüft die zugehörige Größe der Parameter beim Marshallen an nicht verwalteten Code unter einem 32-Bit- oder 64-Bit-Betriebssystem. |
 | CA1903 | [CA1903: Nur API aus Zielframework verwenden](../code-quality/ca1903.md) | Ein Member oder Typ verwendet ein Member oder einen Typ, das bzw. der in einem Service Pack eingeführt wurde, das nicht im Zielframework des Projekts enthalten ist. |
