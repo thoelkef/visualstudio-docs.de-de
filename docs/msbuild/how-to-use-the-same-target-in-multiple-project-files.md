@@ -11,19 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633758"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255574"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien
 
 Wenn Sie mehrere MSBuild-Projektdateien erstellt haben, ist Ihnen wahrscheinlich aufgefallen, dass Sie die gleichen Aufgaben und Ziele in verschiedenen Projektdateien verwenden müssen. Statt die vollständige Beschreibung dieser Aufgaben oder Ziele in jede Projektdatei einzuschließen, können Sie ein Ziel in einer separaten Projektdatei speichern und dieses Projekt anschließend in einem beliebigen anderen Projekt importieren, in dem das Ziel verwendet werden muss.
+
 ## <a name="use-the-import-element"></a>Verwenden des Import-Elements
 
- Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projektdatei einzufügen. Die importierte Projektdatei muss eine gültige MSBuild-Projektdatei sein, die wohlgeformtes XML enthält. Das Attribut `Project` gibt den Pfad zur importierten Projektdatei an. Weitere Informationen zu dem `Import`-Element finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).
 Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projektdatei einzufügen. Die importierte Projektdatei muss eine gültige MSBuild-Projektdatei sein, die wohlgeformtes XML enthält. Das Attribut `Project` gibt den Pfad zur importierten Projektdatei an. Weitere Informationen zu dem `Import`-Element finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>So importieren Sie ein Projekt

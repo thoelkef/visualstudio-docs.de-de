@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588381"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072499"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke-Aufgabe
 
@@ -55,7 +55,7 @@ Dies ist ein einfach zu bearbeitender sample.xml-Code:
 </Package>
 ```
 
-Wenn Sie in diesem Beispiel `/Package/mp:PhoneIdentity/PhonePublisherId` ändern möchten, gehen Sie folgendermaßen vor:
+Wenn Sie in diesem Beispiel `/Package/mp:PhoneIdentity/PhoneProductId` ändern möchten, gehen Sie folgendermaßen vor:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

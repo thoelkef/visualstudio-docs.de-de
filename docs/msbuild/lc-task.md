@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633602"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167396"
 ---
 # <a name="lc-task"></a>LC-Aufgabe
 
@@ -35,7 +35,7 @@ In der folgenden Tabelle werden die Parameter für die `LC`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`LicenseTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt die ausführbare Datei an, für die die *LICENSES*-Dateien generiert werden.|
+|`LicenseTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die ausführbare Datei an, für die die *LICENSES*-Dateien generiert werden.|
 |`NoLogo`|Optionaler `Boolean`-Parameter.<br /><br /> Unterdrückt die Anzeige des Startbanners von Microsoft.|
 |`OutputDirectory`|Optionaler `String`-Parameter.<br /><br /> Gibt das Verzeichnis an, in dem die *LICENSES*-Ausgabedateien gespeichert werden sollen.|
 |`OutputLicense`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Ausgabeparameter.<br /><br /> Gibt den Namen der *LICENSES*-Datei an. Wenn Sie keinen Namen angeben, wird der Name der *LICX*-Datei verwendet, und die *LICENSES*-Datei wird in dem Verzeichnis gespeichert, das die *LICX*-Datei enthält.|
@@ -43,7 +43,7 @@ In der folgenden Tabelle werden die Parameter für die `LC`-Aufgabe beschrieben.
 |`SdkToolsPath`|Optionaler `String`-Parameter.<br /><br /> Legt den Pfad zu den SDK-Tools fest, wie z.B. *resgen.exe*.|
 |`Sources`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Elemente mit lizenzierten Komponenten an, die in die *LICENSES*-Datei aufgenommen werden sollen. Weitere Informationen finden Sie in der Dokumentation zum `/complist`-Schalter in [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler) (Lc.exe [Lizenzcompiler]).|
 
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Beispiel
 
@@ -69,7 +69,7 @@ Im folgenden Beispiel wird die `LC`-Aufgabe zum Kompilieren von Lizenzen verwend
 </Project>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

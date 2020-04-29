@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c88e5aaef9262d320cdf61564078246dee46b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634265"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167422"
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 
@@ -82,9 +82,7 @@ In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.
 | `Win32Manifest` | Optionaler `String`-Parameter.<br /><br /> Gibt das Win32-Manifest an, das eingeschlossen werden sollen. |
 | `Win32Resource` | Optionaler `String`-Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie unter [-win32res (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Hinweise
-
-Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der `Microsoft.Build.Tasks.ManagedCompiler`-Klasse, die selbst von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse erbt, welche wiederum von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Beispiel
 

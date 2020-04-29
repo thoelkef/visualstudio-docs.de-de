@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a1710336ebc73be707e962733e37376b5689e10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30f1a45c384495ccd02c624ea42f91a4379226df
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631236"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167449"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 
@@ -89,9 +89,7 @@ Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link 
 | `Win32Icon` | Optionaler `String`-Parameter.<br /><br /> Fügt der Assembly eine *ICO*-Datei hinzu, die der Ausgabedatei im **Datei-Explorer** das gewünschte Aussehen verleiht. Dieser Parameter entspricht der Option [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) des Compilers *vbc.exe*. |
 | `Win32Resources` | Optionaler `String`-Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Dieser Parameter entspricht der Option [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) des Compilers *vbc.exe*. |
 
-## <a name="remarks"></a>Hinweise
-
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Beispiel
 
