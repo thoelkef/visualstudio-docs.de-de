@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851005"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586805"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx).
+Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](https://docs.microsoft.com/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
 
 ## <a name="properties"></a>Eigenschaften
  Kennzeichen, Spannen und Meldungen verfügen über jeweils zwei Eigenschaften: Kategorie und Wichtigkeit. Im Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) können Sie diese Eigenschaften verwenden, um den Satz der angezeigten Marker zu filtern. Diese Eigenschaften beeinflussen außerdem die visuelle Darstellung der Marker. Die Größe der Kennzeichen beispielsweise gibt einen Hinweis auf die Wichtigkeit. Die Farbe weist auf die Kategorie hin.
@@ -31,9 +31,9 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 ### <a name="c-and-visual-basic"></a>C# und Visual Basic
 
-Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbieter, indem Sie Methoden in der [Marker](/previous-versions/hh694099(v=vs.140))-Klasse aufrufen. Es macht vier Methoden zum Generieren von Markern verfügbar: " [Write-Flag](/previous-versions/hh694185(v=vs.140))", " [enterspan](/previous-versions/hh694205(v=vs.140))", " [Write temess](/previous-versions/hh694161(v=vs.140))" und " [Write](/previous-versions/hh694180(v=vs.140))". Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
+Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbieter, indem Sie Methoden in der [Marker](/previous-versions/hh694099(v=vs.140))-Klasse aufrufen. Dadurch werden vier Methoden zum Generieren von Markern verfügbar: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)) und [WriteAlert](/previous-versions/hh694180(v=vs.140)). Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Hinzufügen der SDK- C# Unterstützung zu einem oder Visual Basic Projekt
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Hinzufügen der SDK-Unterstützung zu einem c#-oder Visual Basic Projekt
 
 1. Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.
 
@@ -104,7 +104,7 @@ Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbie
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>So verwenden Sie eine neue Markerserie in einem C++-Projekt
 
-1. Erstellen Sie ein `marker_series`-Objekt.  Sie können Ereignisse aus dieser neuen Serie generieren.
+1. Erstellen eines `marker_series`-Objekts  Sie können Ereignisse aus dieser neuen Serie generieren.
 
     ```scr
     marker_series series;
@@ -123,9 +123,9 @@ Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbie
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Title|Beschreibung|
+|Titel|Beschreibung|
 |-----------|-----------------|
-|[C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|
-|[C-Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
+|[C++-Bibliotheks Referenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|
+|[C Bibliotheksverweis](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
 |[Instrumentierung](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
-|[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.|
+|[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten|

@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852167"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586629"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,24 +26,24 @@ ms.locfileid: "75852167"
 Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellung des Verhaltens einer Multithreadanwendung. Dieses Tool enthält einen Katalog mit häufigen Mustern von Multithreadanwendungen mit unerwünschtem Verhalten. Der Katalog umfasst typische und erkennbare visuelle Muster, die durch das Tool sichtbar gemacht werden. Außerdem wird das Verhalten erläutert, das durch das jeweilige Muster dargestellt wird, und das wahrscheinliche Ergebnis des Verhaltens und der gängigste Ansatz zu seiner Lösung werden aufgezeigt.  
   
 ## <a name="lock-contention-and-serialized-execution"></a>Sperrenkonflikte und serialisierte Ausführung  
- ![Sperr Konflikt, der zu einer serialisierten Ausführung führt](../profiling/media/lockcontention-serialized.png "LockContention_Serialized")  
+ ![Konflikt bei Sperre, der zu serialisierter Ausführung führt](../profiling/media/lockcontention-serialized.png "LockContention_Serialized")  
   
  Eine parallelisierte Anwendung wird manchmal weiter seriell ausgeführt, obwohl mehrere Threads vorhanden sind und der Computer über eine ausreichende Anzahl von logischen Kernen verfügt. Das erste Symptom ist eine schlechte Multithreadleistung – unter Umständen sogar noch etwas schlechter als bei der seriellen Implementierung. In der Threadansicht werden keine parallel ausgeführten Threads angezeigt. Stattdessen sehen Sie, dass immer nur ein einzelner Thread ausgeführt wird. Wenn Sie an diesem Punkt in einem Thread auf ein Synchronisierungssegment klicken, werden eine Aufrufliste für den blockierten Thread (Aufrufliste für Blockierungen) sowie der Thread angezeigt, von dem die Blockierbedingung entfernt wurde (Aufrufliste für Blockierungsaufhebungen). Wenn die Aufrufliste für die Blockierungsaufhebung Teil des zu analysierenden Prozesses ist, wird auch ein threadkompatibler Konnektor angezeigt. Von hier können Sie zum Code der Aufruflisten für die Blockierung und für die Blockierungsaufhebung navigieren, um die Ursache der Serialisierung genauer zu untersuchen.  
   
  Wie in der folgenden Abbildung gezeigt, kann die Parallelitätsschnellansicht dieses Symptom auch in der CPU-Auslastungsansicht anzeigen, wo die Anwendung trotz mehrerer Threads nur einen logischen Kern nutzt.  
   
- Weitere Informationen finden Sie unter „Performance Pattern 1: Identifying Lock Contention“ (Verhaltensmuster 1: Identifizieren von Sperrenkonflikten) in Hazim Shafis Blog [Parallel Performance Tools For Windows](https://blogs.msdn.com/hshafi) auf der MSDN-Blogwebsite.  
+ Weitere Informationen finden Sie unter „Performance Pattern 1: Identifying Lock Contention“ (Verhaltensmuster 1: Identifizieren von Sperrenkonflikten) in Hazim Shafis Blog [Parallel Performance Tools For Windows](https://docs.microsoft.com/archive/blogs/hshafi/) auf der MSDN-Blogwebsite.  
   
- ![Sperr Konflikt](../profiling/media/lockcontention-2.png "LockContention_2")  
+ ![Sperrkonflikt](../profiling/media/lockcontention-2.png "LockContention_2")  
   
 ## <a name="uneven-workload-distribution"></a>Ungleiche Arbeitslastverteilung  
- ![Ungleichmäßige Arbeitsauslastung](../profiling/media/unevenworkload-1.png "UnevenWorkLoad_1")  
+ ![Ungleiche Arbeitsauslastung](../profiling/media/unevenworkload-1.png "UnevenWorkLoad_1")  
   
  Bei einer unregelmäßigen Verteilung der Arbeitslast auf mehrere parallele Threads in einer Anwendung tritt nach Abschluss der Ausführung der Threads ein typisches Treppenmuster auf. Dieses wird in der obigen Abbildung gezeigt. Die Parallelitätsschnellansicht zeigt in der Regel sehr nahe beieinander liegende Startzeiten für die einzelnen parallelen Threads an. Normalerweise werden diese Threads jedoch nicht gleichzeitig, sondern unregelmäßig beendet. Dieses Muster deutet auf eine unregelmäßige Verteilung der Arbeitslast in einer Gruppe paralleler Threads hin, was sich negativ auf die Leistung auswirken kann. Die beste Methode, dieses Problem zu beheben, besteht darin, den Algorithmus erneut auszuwerten, mit dem die Arbeitslast auf die parallelen Threads aufgeteilt wurde.  
   
  Wie in der folgenden Abbildung gezeigt wird, kann dieses Symptom von der Parallelitätsschnellansicht auch als graduelle Abstufung der CPU-Nutzung in der CPU-Auslastungsansicht dargestellt werden.  
   
- ![Ungleichmäßige Arbeitsauslastung](../profiling/media/unevenworkload-2.png "UnevenWorkload_2")  
+ ![Ungleiche Arbeitsauslastung](../profiling/media/unevenworkload-2.png "UnevenWorkload_2")  
   
 ## <a name="oversubscription"></a>Überzeichnung  
  ![Überzeichnung](../profiling/media/oversubscription.png "Überzeichnung")  
@@ -57,14 +57,14 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
 - Untersuchen Sie, wie die entsprechende Anzahl der Threads zur Ausführung in dieser Arbeitsphase vom Prozess ermittelt wird. Wenn der Prozess die Anzahl der aktiven parallelen Threads direkt berechnet, können Sie den Algorithmus ändern, um der Anzahl der verfügbaren logischen Kerne auf dem System besser Rechnung zu tragen. Bei Verwendung von Concurrency Runtime, Task Parallel Library oder PLINQ wird die Anzahl der Threads von diesen Bibliotheken berechnet.  
   
 ## <a name="inefficient-io"></a>Ineffizienter E/A  
- ![Ineffizient I&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  
+ ![Ineffiziente I-&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  
   
  Die übermäßige oder missbräuchliche E/A-Verwendung ist ein häufiger Grund für Ineffizienz in Anwendungen. Sehen Sie sich die obige Abbildung an. Laut sichtbarem Zeitachsenprofil entfallen 42 Prozent der sichtbaren Threadzeit auf E/A-Vorgänge. Die Zeitachse zeigt umfangreiche E/A an, die angeben, dass die profilierte Anwendung häufig durch E/A blockiert wird. Detaillierte Informationen zu den E/A-Arten und zu Blockierungen im Programm erhalten Sie durch Vergrößern der problematischen Bereiche, Untersuchen des sichtbaren Zeitachsenprofils und Klicken auf einen bestimmten E/A-Block, um aktuelle Aufruflisten anzuzeigen.  
   
 ## <a name="lock-convoys"></a>Kolonnensperren  
- ![Konvois Sperren](../profiling/media/lock-convoys.png "Lock_Convoys")  
+ ![Kolonnensperren](../profiling/media/lock-convoys.png "Lock_Convoys")  
   
  Kolonnensperren treten auf, wenn zum Abrufen die First-In-First-Out-Reihenfolge verwendet wird und die Ankunftsrate bei der Sperre höher ist als die Abrufrate. Aufgrund des Zusammentreffens dieser beiden Bedingungen laufen nach und nach Anforderungen der Sperre auf. Eine Möglichkeit, dieses Problem zu beheben, besteht darin, „unfaire“ Sperren oder Sperren zu verwenden, die Zugriff auf den ersten Thread ermöglichen, um den entsprechenden entsperrten Zustand zu finden. Die obige Abbildung zeigt dieses Kolonnenverhalten. Zum Beheben dieses Problems verringern Sie die Konflikte um die Synchronisierungsobjekte, verwenden Sie zudem unfaire Sperren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Threadansicht](../profiling/threads-view-parallel-performance.md)

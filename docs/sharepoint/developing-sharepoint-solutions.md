@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd8717d7e87453c047ce5d438a54c594f63cd5de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986361"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586894"
 ---
 # <a name="develop-sharepoint-solutions"></a>Entwickeln von SharePoint-Lösungen
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sind mehrere SharePoint-Projekttypvorlagen zum Erstellen von SharePoint-Websites und -Websiteelementen verfügbar. Eine Liste der verfügbaren Projekttypen finden Sie unter [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md). Im Folgenden finden Sie eine Beschreibung der Elemente und Eigenschaften eines SharePoint-Projekts.
 
- Informationen zu SharePoint 2013 und SharePoint-Add-Ins finden Sie unter [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) und [Erstellen von SharePoint-Add-Ins](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Informationen zu SharePoint 2013 und SharePoint-Add-Ins finden Sie unter [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) und [Erstellen von SharePoint-Add-Ins](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Elemente eines SharePoint-Projekts
  Die Knoten unter einem SharePoint-Projekt werden als *SharePoint-Elemente*bezeichnet. SharePoint-Elemente können auch eine oder mehrere Unterdateien enthalten, die als *SharePoint-Elementdateien*bezeichnet werden, z. B. [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Konfigurationsdateien, ASPX-Formulare usw.
@@ -36,7 +36,7 @@ ms.locfileid: "72986361"
  Jedes SharePoint-Projekt enthält zwei Knoten, die nicht umbenannt, gelöscht, ausgeschnitten, kopiert oder aus dem Projekt gezogen werden können. Diese Knoten lauten wie folgt:
 
 - Features
-- Package
+- Paket
 
   Beide Knoten werden in allen SharePoint-Projekten stets angezeigt, auch wenn keine Funktionen oder Pakete für das Projekt definiert werden.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72986361"
 
 ### <a name="project-properties"></a>Projekteigenschaften
 
-|Eigenschaftenname|Beschreibung|
+|Eigenschaftenname|BESCHREIBUNG|
 |-------------------|-----------------|
 |Aktive Bereitstellungskonfiguration|Gibt die Reihe von Schritten an, die während der Bereitstellung ausgeführt werden. Weitere Informationen finden Sie unter Gewusst [wie: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|
 |Assemblybereitstellungsziel|Bestimmt den Speicherort von *SharePoint-Anwendungsassemblys* . Gültige Werte für den Assemblyspeicherort sind *GlobalAssemblyCache* (Standard) oder *WebApplication*.<br /><br /> Wenn die Eigenschaft *Sandboxed Solution* auf **true**festgelegt ist, wird diese Eigenschaft deaktiviert.|
@@ -81,10 +81,10 @@ ms.locfileid: "72986361"
 
 ### <a name="project-item-properties"></a>Projekt Element Eigenschaften
 
-|Eigenschaftenname|Beschreibung|
+|Eigenschaftenname|BESCHREIBUNG|
 |-------------------|-----------------|
 |Bereitstellungskonfliktlösung|Gibt die zu ergreifende Maßnahme beim Bereitstellen eines Projektelements an, dessen Eigenschaften mit denen eines bereits auf dem Server vorhandenen Elements identisch sind. Weitere Informationen finden Sie unter [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|
-|Featureeigenschaften|Gibt einen Satz von Werten (gespeichert als Schlüssel-Wert-Paare) an, der beim Bereitstellen für SharePoint in eine Funktion eingeschlossen wird. Nach dem Bereitstellen der Funktion können Sie im Code auf die Eigenschaftswerte zugreifen. Weitere Informationen finden Sie unter [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
+|Funktionseigenschaften|Gibt einen Satz von Werten (gespeichert als Schlüssel-Wert-Paare) an, der beim Bereitstellen für SharePoint in eine Funktion eingeschlossen wird. Nach dem Bereitstellen der Funktion können Sie im Code auf die Eigenschaftswerte zugreifen. Weitere Informationen finden Sie unter [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |Funktionsempfänger|Stellt Code bereit, der ausgeführt wird, wenn für die Funktion, in der ein Projektelement enthalten ist, bestimmte Ereignisse auftreten. Weitere Informationen finden Sie unter [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |Ordnername|Der Name des SharePoint-Projektelementordners.|
 |Projektausgabeverweise|Gibt eine Abhängigkeit (z. B. eine Assembly) an, die zum Ausführen des Projektelements benötigt wird. Weitere Informationen finden Sie unter [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
@@ -92,22 +92,22 @@ ms.locfileid: "72986361"
 
 ### <a name="project-item-file-properties"></a>Eigenschaften von Projekt Element Dateien
 
-|Eigenschaftenname|Beschreibung|
+|Eigenschaftenname|BESCHREIBUNG|
 |-------------------|-----------------|
 |Buildvorgang|Gibt die Beziehung der Datei zu den Build- und Bereitstellungsvorgängen an. Weitere Informationen finden Sie unter [Dateieigenschaften](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
-|In Ausgabeverzeichnis kopieren|Gibt an, ob die Quelldatei bzw. die Quelldateien in das Ausgabeverzeichnis kopiert wird/werden. Kann einer der folgenden Werte sein:<br /><br /> -   *nicht kopieren*<br />-   *immer kopieren*<br />-   *kopieren, wenn neuer*<br /><br /> Weitere Informationen finden Sie unter [Dateieigenschaften](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
+|In Ausgabeverzeichnis kopieren|Gibt an, ob die Quelldatei bzw. die Quelldateien in das Ausgabeverzeichnis kopiert wird/werden. Es kann sich um einen der folgenden Werte handeln:<br /><br /> -   *Nicht kopieren*<br />-   *Immer kopieren*<br />-   *Kopieren, wenn neuer*<br /><br /> Weitere Informationen finden Sie unter [Dateieigenschaften](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Benutzerdefiniertes Tool|Gibt ggf. den Namen eines Tools an, das die Datei zur Entwurfszeit umwandelt und die Ausgabe der Umwandlung in einer anderen Datei platziert. Eine DataSet-Datei (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) enthält beispielsweise ein benutzerdefiniertes Standardtool. Weitere Informationen finden Sie unter [Dateieigenschaften](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Namespace des benutzerdefinierten Tools|Der Namespace, in den die Ausgabe des benutzerdefinierten Tools kopiert wird. Weitere Informationen finden Sie unter [Dateieigenschaften](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
-|Bereitstellungsspeicherort|Der vollqualifizierte Pfad der Datei auf dem SharePoint-Server. Dieser Pfad setzt sich aus den untergeordneten Bereitstellungsstamm- und Bereitstellungspfadeigenschaften zusammen.|
-|Bereitstellungspfad|Der relative Pfad der Datei in der SharePoint-Server Datei, z. b. Workflow1\\. Der vollqualifizierte Pfad für die Datei wird erstellt, indem der Wert *Deployment Path* mit dem Ende des Werts *Deployment Root* verkettet wird.<br /><br /> Wenn Sie den Wert *RootFile* für die Eigenschaft *Bereitstellungstyp* auswählen, wird die Eigenschaft für die *Bereitstellungs* Eigenschaft in \<SharePointRoot->\\geändert, was zu einem voll qualifizierten Pfad \<SharePointRoot > \Workflow1 führt @no_ _t_6_ . Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
-|Deployment Root|Zeichenfolge. Der Stammordner, in dem die Datei auf dem SharePoint-Server bereitgestellt wird. Beispielsweise \<SharePointRoot > \Template\Features\\\<Featurename >\\.<br /><br /> Der Wert der *Deployment Root* -Eigenschaft wird vom Wert der *Deployment Type* -Einstellung bestimmt.|
-|Deployment Type|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Kann einer der folgenden Werte sein:<br /><br /> Nodeployment: *\<kein Wert >*<br /><br /> Element Manifest: *\<SharePointRoot > \Template\Features\\\<Featurename >* \\<br /><br /> Element file: *\<SharePointRoot > \Template\Features\\\<Featurename >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \TEMPLATE\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> Globalresource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<classresourcepath->\\*<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Bereitstellungsort|Der vollqualifizierte Pfad der Datei auf dem SharePoint-Server. Dieser Pfad setzt sich aus den untergeordneten Bereitstellungsstamm- und Bereitstellungspfadeigenschaften zusammen.|
+|Bereitstellungspfad|Der relative Pfad der Datei in der SharePoint Server-Datei, z. b\\. Workflow1. Der vollqualifizierte Pfad für die Datei wird erstellt, indem der Wert *Deployment Path* mit dem Ende des Werts *Deployment Root* verkettet wird.<br /><br /> Wenn Sie \<den Wert *RootFile* für die *Eigenschaft Bereitstellungstyp* auswählen, wird die Stamm Eigenschaft der *Bereitstellung* in \\SharePointRoot>geändert, was zu \<einem voll qualifizierten Pfad von SharePointRoot\\> \Workflow1 führt. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
+|Deployment Root|Eine Zeichenfolge. Der Stammordner, in dem die Datei auf dem SharePoint-Server bereitgestellt wird. Beispiel: \<SharePointRoot> \Template\Features\\\<Featurename>\\.<br /><br /> Der Wert der *Deployment Root* -Eigenschaft wird vom Wert der *Deployment Type* -Einstellung bestimmt.|
+|Bereitstellungstyp|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Es kann sich um einen der folgenden Werte handeln:<br /><br /> Nodeployment: * \<kein Wert>*<br /><br /> Element Manifest: * \<SharePointRoot> \Template\Features\\\<Featurename>*\\<br /><br /> Element file: * \<SharePointRoot> \Template\Features\\\<Featurename>\\*<br /><br /> TemplateFile: * \<SharePointRoot> \TEMPLATE\\*<br /><br /> RootFile: * \<SharePointRoot->\\*<br /><br /> Globalresource: * \<SharePointRoot> \Resources\\*<br /><br /> ClassResource: * \<classresourcepath>\\*<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Dateiname|Der Name der Datei oder des Ordners für die Elementdatei.|
 |Vollständiger Pfad|Der Speicherort der Datei für das Element. (Schreibgeschützt.)|
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Vorlagen für SharePoint-Projekte und Projektelemente](../sharepoint/sharepoint-project-and-project-item-templates.md)|Beschreibt die in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verfügbaren Vorlagen für SharePoint-Projekte und Projektelemente.|
 |[Vorgehensweise: Hinzufügen von Elementen zu einem SharePoint-Projekt](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Beschreibt, wie einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projekt neue oder vorhandene Elemente hinzugefügt werden.|
@@ -126,10 +126,10 @@ ms.locfileid: "72986361"
 |[Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Beschreibt, wie dem Projekt zugeordnete Ordner hinzugefügt werden können, um den Zugriff auf SharePoint-Ressourcen zu erleichtern.|
 |[Überlegungen zu Sandkasten Lösungen](../sharepoint/sandboxed-solution-considerations.md)|Beschreibt die mit Sandkastenlösungen zusammenhängenden Probleme.|
 |[Sicherheit für SharePoint-Projektmappen](../sharepoint/security-for-sharepoint-solutions.md)|Erläutert Sicherheitsaspekte bei der Entwicklung von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[URL-Auswahl Dialogfeld &#40;für die SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Beschreibt ein Dialogfeld, mit dem Sie Pfadverweise auf Ressourcen im Projekt oder auf dem lokalen SharePoint-Server hinzufügen können.|
+|[URL-Auswahl Dialogfeld &#40;SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Beschreibt ein Dialogfeld, mit dem Sie Pfadverweise auf Ressourcen im Projekt oder auf dem lokalen SharePoint-Server hinzufügen können.|
 
-## <a name="see-also"></a>Siehe auch
-- [Einführung in &#40;die SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Beginnen Sie &#40;SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [Durchsuchen von SharePoint-Verbindungen mit Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

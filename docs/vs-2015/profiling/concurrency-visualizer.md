@@ -16,21 +16,21 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: becaa70d2eed862d77f4c666b0a408054eaf5926
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e7061acabbe5ce18ff6e1f210fe0003bdaf88980
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850949"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586812"
 ---
-# <a name="concurrency-visualizer"></a>Parallelitätsschnellansicht
+# <a name="concurrency-visualizer"></a>Concurrency Visualizer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
 > Concurrency Visualizer ist eine optionale Erweiterung für Visual Studio. Laden Sie Concurrency Visualizer und die Concurrency Visualizer Collection Tools unter folgenden Links herunter:  
 > 
 > - Laden Sie die Erweiterung              [Concurrency Visualizer](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) herunter.  
->   - Laden Sie              [Concurrency Visualizer Collection Tools für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103)herunter.  
+>   - Laden Sie die Tools für die Parallelitäts Schnellansicht [für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103)herunter.  
 > 
 >   Mit dem [Befehlszeilenprogramm für die Nebenläufigkeitsschnellansicht (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) können Sie die Ablaufverfolgung aus der Befehlszeile sammeln und diese in Concurrency Visualizer für Visual Studio 2015 anzeigen. Das Tool kann auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
   
@@ -43,16 +43,16 @@ HINWEIS]
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Title|Beschreibung|  
+|Titel|BESCHREIBUNG|  
 |-----------|-----------------|  
 |[Auslastungsansicht](../profiling/utilization-view.md)|Beschreibt, wie Systemaktivitäten über alle Prozessoren hinweg angezeigt und analysiert werden.|  
 |[Threadansicht](../profiling/threads-view-parallel-performance.md)|Beschreibt, wie die Interaktionen zwischen Threads in Ihrem Programm analysiert werden.|  
-|[Cores View (Kernansicht)](../profiling/cores-view.md)|Beschreibt, wie die Threadmigration über Kerne hinweg analysiert wird.|  
-|[Common Patterns for Poorly-Behaved Multithreaded Applications (Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten)](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Beschreibt einige allgemeine Muster und zeigt, wie diese in der Nebenläufigkeitsschnellansicht angezeigt werden.|  
-|[Parallele Entwicklung in Visual Studio (Blog)](https://blogs.msdn.com/b/visualizeparallel)|Bietet Tipps und empfohlene Vorgehensweisen für die Nebenläufigkeitsschnellansicht.|  
-|[Leistungsberichtansichten](../profiling/performance-report-views.md)|Enthält Referenzinformationen zu den Berichten und Ansichten der Visual Studio-Profilerstellungstools.|  
+|[Kernansicht](../profiling/cores-view.md)|Beschreibt, wie die Threadmigration über Kerne hinweg analysiert wird.|  
+|[Allgemeine Muster für nicht verhaltene Multithreadanwendungen](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Beschreibt einige allgemeine Muster und zeigt, wie diese in der Nebenläufigkeitsschnellansicht angezeigt werden.|  
+|[Parallele Entwicklung in Visual Studio (Blog)](https://docs.microsoft.com/archive/blogs/visualizeparallel/)|Bietet Tipps und empfohlene Vorgehensweisen für die Nebenläufigkeitsschnellansicht.|  
+|[Leistungs Berichts Ansichten](../profiling/performance-report-views.md)|Enthält Referenzinformationen zu den Berichten und Ansichten der Visual Studio-Profilerstellungstools.|  
 |[Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md)|Beschreibt, wie Sie Ihren Quellcode instrumentieren, um zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzuzeigen.|  
 |[Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Beschreibt, wie das Befehlszeilenprogramm der Nebenläufigkeitsschnellansicht (CVCollectionCmd.exe) verwendet wird, um Ablaufverfolgungen auf Computern zu erfassen und zu verarbeiten, auf denen kein Visual Studio installiert ist.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Profilerstellungstools](../profiling/profiling-tools.md)
