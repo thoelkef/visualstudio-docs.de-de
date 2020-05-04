@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: 'CA1508: Toten Bedingungscode vermeiden'
                   href: ca1508.md
+                - name: 'CA1509: Ungültiger Eintrag in der Konfigurationsdatei für die Codemetrik.'
+                  href: ca1509.md
             - name: Mobilitätswarnungen
               items:
                 - name: Übersicht
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007: Eine Aufgabe nicht direkt abwarten'
                   href: ca2007.md
+                - name: 'CA2009: „ToImmutableCollection“ nicht für einen ImmutableCollection-Wert aufrufen.'
+                  href: ca2009.md
             - name: Sicherheitswarnungen
               items:
                 - name: Übersicht
