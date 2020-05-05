@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633173"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072579"
 ---
 # <a name="msbuild-task"></a>MSBuild-Aufgabe
 
@@ -42,6 +42,7 @@ Erstellt MSBuild-Projekte aus einem anderen MSBuild-Projekt.
 | `RemoveProperties` | Optionaler `String`-Parameter.<br /><br /> Gibt die zu entfernenden globalen Eigenschaften an. |
 | `RunEachTargetSeparately` | Optionaler `Boolean`-Parameter.<br /><br /> Bei Festlegung auf `true` ruft die MSBuild-Aufgabe die einzelnen an MSBuild übergebenen Ziele in der Liste nicht gleichzeitig, sondern nacheinander auf. Wenn für diesen Parameter `true` eingestellt wird, ist gewährleistet, dass nachfolgende Ziele selbst dann aufgerufen werden, wenn zuvor aufgerufene Ziele nicht erfolgreich waren. Ansonsten würde ein Buildfehler den Aufruf aller nachfolgenden Ziele beenden. Der Standardwert ist `false`. |
 | `SkipNonexistentProjects` | Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, werden Projektdateien übersprungen, die sich nicht auf dem Datenträger befinden. Ansonsten verursachen Projekte dieser Art einen Fehler. |
+|`SkipNonexistentTargets`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn der Wert `true` ist, werden Projektdateien übersprungen, die vorhanden sind, aber nicht das benannte `Targets`-Element enthalten. Ansonsten verursachen Projekte dieser Art einen Fehler. Eingeführt in MSBuild 15.5.|
 | `StopOnFirstFailure` | Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wenn eines der Projekte nicht erstellt werden kann, werden keine weiteren Projekte erstellt. Dies wird zurzeit nicht unterstützt, wenn Sie gleichzeitig (mit mehreren Prozessoren) erstellen. |
 | `TargetAndPropertyListSeparators` | Optionaler `String[]`-Parameter.<br /><br /> Gibt eine Liste mit Zielen und Eigenschaften als `Project`-Elementmetadaten an. Bei Trennzeichen werden vor der Verarbeitung die Escapezeichen entfernt. So wird z.B. % 3 b (';' mit Escapezeichen) behandelt, als wäre es ein ';' ohne Escapezeichen. |
 | `TargetOutputs` | Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Ausgaben der erstellten Ziele von allen Projektdateien zurück. Es werden nur die Ausgaben der angegebenen Ziele zurückgegeben, jedoch keine Ausgaben, die möglicherweise für Ziele vorhanden sind, von denen diese Ziele abhängen.<br /><br /> Der `TargetOutputs`-Parameter enthält zudem die folgenden Metadaten:<br /><br /> -   `MSBuildSourceProjectFile`: Die MSBuild-Projektdatei, die das Ziel enthält, das die Ausgaben festlegt.<br />-   `MSBuildSourceTargetName`: Das Ziel, das die Ausgaben festlegt. **Hinweis**:  Wenn Sie die Ausgaben einzelner Projektdateien oder Ziele separat ermitteln möchten, führen Sie die `MSBuild`-Aufgabe für jede Projektdatei und jedes Ziel einzeln aus. Wenn Sie die `MSBuild`-Aufgabe zum Erstellen aller Projektdateien nur einmal ausführen, werden die Ausgaben aller Ziele in einem Array zusammengefasst. |

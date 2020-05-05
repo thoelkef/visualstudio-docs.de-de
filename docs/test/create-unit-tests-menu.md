@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Stubs für Komponententestmethoden
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75844315"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153002"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
 
@@ -22,11 +22,11 @@ Mit dem Befehl **Komponententests erstellen** werden Stubs für Komponententestm
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für .NET Framework (aber nicht für .NET Core) zur Verfügung.
+> Der Menübefehl **Komponententests erstellen** steht nur für C#-Code für .NET Framework (aber nicht für .NET Core) zur Verfügung.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code zur Verfügung.
+> Der Menübefehl **Komponententests erstellen** ist nur für C#-Code verfügbar.
 ::: moniker-end
 
 Der Menübefehl **Komponententests erstellen** ist erweiterbar und kann zum Generieren von Tests für MSTest, MSTest V2, NUnit und xUnit verwendet werden.
@@ -56,7 +56,7 @@ Verwenden Sie dieses Feature, wenn Sie Komponententests erstellen müssen, insbe
 
 Dieses Feature kann jedoch auch angewendet werden, wenn ein Entwickler Code schreibt und diesen anschließend nutzt, um Bootstraps für Komponententests auszuführen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Komponententestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Creating unit test method stubs with "Create Unit Tests" (Erstellen von Stubs für Unittestmethoden mit "Unittests erstellen")](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Blogbeiträge zu Komponententests](https://devblogs.microsoft.com/devops/?s=unit+testing)

@@ -2,7 +2,7 @@
 title: 'Tutorial: Debuggen von C#-Code'
 description: Erfahren Sie, wie Sie den Visual Studio-Debugger starten, den Code durchlaufen und Daten überprüfen.
 ms.custom: debug-experiment, seodec18, get-started
-ms.date: 01/31/2020
+ms.date: 04/23/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede47c9daf37011195d66c746498cdfc809d24b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77027254"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153061"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C#-Code mit Visual Studio
 
@@ -169,7 +169,7 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
 2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche**Debuggen starten**![Debuggen starten](../../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
 
-    ![Festlegen und Treffen eines Haltepunkts](../csharp/media/get-started-set-breakpoint.png)
+    ![Festlegen und Treffen eines Haltepunkts](../csharp/media/get-started-set-breakpoint.gif)
 
     Der gelbe Pfeil stellt die Anweisung dar, an der der Debugger angehalten hat. An der gleichen Stelle wird auch die Ausführung der App unterbrochen (diese Anweisung wurde noch nicht ausgeführt).
 
@@ -177,13 +177,35 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
     Breakpoints sind eine nützliche Funktion, wenn Ihnen die Codezeile oder der Codeabschnitt bekannt ist, die bzw. den Sie genauer untersuchen möchten. Informationen zu den verschiedenen verfügbaren Typen von Haltepunkten, wie z. B. bedingte Haltepunkte, finden Sie unter [Verwenden von Haltepunkten im Visual Studio-Debugger](../../debugger/using-breakpoints.md).
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navigieren durch Code im Debugger mithilfe von Schrittbefehlen
+## <a name="navigate-code-and-inspect-data-using-data-tips"></a>Navigieren im Code und Untersuchen von Daten mithilfe von Datentipps
 
 In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese Weise eine schnelle Ausführung Ihrer App im Debugger möglich ist (entsprechende Befehle, wie z.B. Menübefehle, werden in Klammern angezeigt).
 
-1. Drücken Sie zweimal **F11**, oder klicken Sie auf **Debuggen > Schrittweise ausführen**, während der Debugger in der `for`-Schleife der `Main`-Methode pausiert, damit der Debugger beim `SendMessage`-Methodenaufruf weiter ausgeführt wird.
+1. Wenn der Debugger bei der `name += letters[i]`-Anweisung angehalten wurde, zeigen Sie auf die `letters`-Variable. Daraufhin wird Ihnen der Standardwert der Variablen angezeigt, bei dem es sich um den Wert des ersten Elements im Array `char[10]` handelt.
 
-     Nachdem Sie zweimal **F11** gedrückt haben, sollten Sie sich in dieser Codezeile befinden:
+     Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlichsten Funktionen des Debuggers. Es gibt verschiedene Möglichkeiten, Variablen zu untersuchen. Beim Debuggen eines Problems wird häufig versucht herauszufinden, ob Variablen die Werte speichern, die diese zu einem bestimmten Zeitpunkt erwartungsgemäß aufweisen.
+
+1. Erweitern Sie die Variable `letters`, damit ihre Eigenschaften angezeigt werden. Dazu zählen auch alle in der Variable enthaltenen Elemente.
+
+     ![Einen Datentipp anzeigen](../csharp/media/get-started-view-data-tip.png "Einen Datentipp anzeigen")
+
+1. Zeigen Sie als Nächstes auf die `name`-Variable. Daraufhin wird Ihnen der aktuelle Variablenwert angezeigt: eine leere Zeichenfolge.
+
+1. Drücken Sie **F10**, oder wählen Sie **Debuggen > Prozedurschritt** aus, um mit dem Aufruf der `SendMessage`-Methode fortzufahren, und drücken Sie dann **F10** ein weiteres Mal.
+
+     Durch Drücken der Taste F10 fährt der Debugger mit der nächsten Anweisung in Ihrem App-Code fort, ohne dass Funktionen oder Methoden schrittweise ausgeführt werden (der Code wird weiterhin ausgeführt). Durch Drücken von F10 im `SendMessage`-Methodenaufruf wurde der Implementierungscode für `SendMessage` übersprungen (der für uns gerade möglicherweise nicht von Interesse ist).
+
+1. Drücken Sie mehrmals auf **F10** (oder **Debuggen** > **Prozedurschritt**), um mehrmals die `for`-Schleife zu durchlaufen. Dabei pausiert der Debugger jedes Mal am Breakpoint, sodass Sie auf die `name`-Variable zeigen und ihren Wert überprüfen können.
+
+     ![Einen Datentipp anzeigen](../csharp/media/get-started-data-tip.gif "Einen Datentipp anzeigen")
+
+     Der Wert der Variable ändert sich bei jeder Iteration der `for`-Schleife, von `f` in `fr` in `fre` usw. Damit der Debugger die Schleife in diesem Szenario schneller durchläuft, können Sie stattdessen **F5** drücken oder **Debuggen** > **Fortsetzen** auswählen, um zum nächsten Breakpoint anstatt zur nächsten Anweisung zu springen.
+
+     Beim Debuggen möchten Sie häufig Eigenschaftswerte von Variablen schnell überprüfen können, um zu sehen, ob sie die Werte speichern, die sie speichern möchten. Die Datentipps sind eine gute Möglichkeit dafür.
+
+1. Drücken Sie **F11**, oder klicken Sie auf **Debuggen > Einzelschritt**, während der Debugger noch in der `for`-Schleife der `Main`-Methode pausiert ist, bis Sie beim `SendMessage`-Methodenaufruf angelangt sind.
+
+     Sie sollten sich in der folgenden Codezeile befinden:
 
      `SendMessage(name, a[i]);`
 
@@ -193,7 +215,7 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
 
      ![Verwenden von F11 für schrittweise Codeausführung](../csharp/media/get-started-f11.png "Schrittweise ausführen (F10)")
 
-     Durch Drücken der Taste F11 wird der Befehl **Einzelschritt** ausgeführt, und die App wird Anweisung für Anweisung ausgeführt. Das Drücken der Taste F11 bietet eine gute Möglichkeit, den Ausführungsablauf am ausführlichsten zu überprüfen. (Wenn Sie den Code schneller durchlaufen möchten, zeigen wir Ihnen auch einige andere Optionen.) Standardmäßig überspringt der Debugger Nichtbenutzercode (weitere Einzelheiten hierzu finden Sie unter [Nur eigenen Code](../../debugger/just-my-code.md)).
+     Durch Drücken der Taste F11 wird der Befehl **Einzelschritt** ausgeführt, und die App wird Anweisung für Anweisung ausgeführt. Das Drücken der Taste F11 bietet eine gute Möglichkeit, den Ausführungsablauf am ausführlichsten zu überprüfen. Standardmäßig überspringt der Debugger Nichtbenutzercode (weitere Einzelheiten hierzu finden Sie unter [Nur eigenen Code](../../debugger/just-my-code.md)).
 
      Angenommen, Sie haben die Untersuchung der `SendMessage`-Methode abgeschlossen und möchten die Methode beenden, aber nicht den Debugger. Dies ist mit dem Befehl **Ausführen bis Rücksprung** möglich.
 
@@ -201,15 +223,7 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
 
      Mit diesem Befehl wird die Ausführung der App so lange fortgesetzt (und der Debugger weiter ausgeführt), bis die aktuelle Methode oder Funktion wieder ausgeführt wird.
 
-     Der Debugger befindet sich nun wieder in der `for`-Schleife der `Main`-Methode und wurde beim Methodenaufruf von `SendMessage` angehalten.
-
-1. Drücken Sie mehrmals auf **F11**, bis Sie noch mal zum Methodenaufruf von `SendMessage` gelangen.
-
-1. Während der Debugger beim Methodenaufruf angehalten wurde, drücken Sie einmal auf **F10** (oder klicken Sie auf **Debuggen > Überspringen**).
-
-     ![Verwenden von F10 für Prozedurschritt](../csharp/media/get-started-step-over.png "Prozedurschritt (F10)")
-
-     Beachten Sie, dass der Debugger dieses Mal die `SendMessage`-Methode nicht schrittweise ausführt. Durch Drücken der Taste **F10** fährt der Debugger in Ihrem App-Code fort, ohne dass Funktionen oder Methoden schrittweise ausgeführt werden (der Code wird immer noch ausgeführt). Durch Drücken von **F10** im `SendMessage`-Methodenaufruf (anstelle von **F11**) wurde der Implementierungscode für `SendMessage` übersprungen (der für uns gerade möglicherweise nicht von Interesse ist). Weitere Informationen zu den verschiedenen Möglichkeiten, durch den Code zu navigieren, finden Sie unter [Navigieren durch Code mit dem Visual Studio-Debugger](../../debugger/navigating-through-code-with-the-debugger.md).
+     Der Debugger befindet sich nun wieder in der `for`-Schleife der `Main`-Methode und wurde beim Methodenaufruf von `SendMessage` angehalten. Weitere Informationen zu den verschiedenen Möglichkeiten, durch den Code zu navigieren, finden Sie unter [Navigieren durch Code mit dem Visual Studio-Debugger](../../debugger/navigating-through-code-with-the-debugger.md).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navigieren durch Code mithilfe von „Ausführung bis Klick“
 
@@ -235,24 +249,6 @@ Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu star
 Durch das Klicken auf **Neu starten** sparen Sie im Vergleich zum Beenden der App und dem erneuten Starten des Debuggers Zeit. Der Debugger hält am ersten Breakpoint an, der bei der Codeausführung erreicht wird.
 
 Der Debugger hält wieder an dem von Ihnen zuvor in der `for`-Schleife festgelegten Haltepunkt an.
-
-## <a name="inspect-variables-with-data-tips"></a>Untersuchen von Variablen mithilfe von Datentipps
-
-Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlichsten Funktionen des Debuggers. Es gibt verschiedene Möglichkeiten, Variablen zu untersuchen. Beim Debuggen eines Problems wird häufig versucht herauszufinden, ob Variablen die Werte speichern, die diese zu einem bestimmten Zeitpunkt erwartungsgemäß aufweisen.
-
-1. Während der Debugger bei der `name += letters[i]`-Anweisung angehalten wurde, zeigen Sie auf die `letters`-Variable. Daraufhin wird Ihnen der Standardwert der Variablen angezeigt, bei dem es sich um den Wert des ersten Elements im Array `char[10]` handelt.
-
-1. Erweitern Sie die Variable `letters`, um ihre Eigenschaften anzuzeigen. Dazu zählen auch alle in der Variablen enthaltenen Elemente.
-
-1. Zeigen Sie als Nächstes auf die `name`-Variable. Daraufhin wird Ihnen der aktuelle Variablenwert angezeigt: eine leere Zeichenfolge.
-
-1. Drücken Sie mehrmals auf **F5** (oder **Debuggen** > **Weiter**), um mehrmals die `for`-Schleife zu durchlaufen. Dabei pausiert der Debugger jedes Mal am Haltepunkt, sodass Sie auf die `name`-Variable zeigen und ihren Wert überprüfen können.
-
-     ![Einen Datentipp anzeigen](../csharp/media/get-started-data-tip.gif "Einen Datentipp anzeigen")
-
-     Der Wert der Variable ändert sich bei jeder Iteration der `for`-Schleife, von `f` in `fr` in `fre` usw.
-
-     Beim Debuggen möchten Sie häufig Eigenschaftswerte von Variablen schnell überprüfen können, um zu sehen, ob sie die Werte speichern, die sie speichern möchten. Die Datentipps sind eine gute Möglichkeit dafür.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Untersuchen von Variablen über die Fenster „Auto“ und „Lokal“
 

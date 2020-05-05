@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189550"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153029"
 ---
 # <a name="add-tags-to-project-templates"></a>Hinzufügen von Tags zu Projektvorlagen
 
@@ -73,7 +73,7 @@ Syntax:
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine.
+Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -93,7 +93,7 @@ Visual Studio umfasst verschiedene integrierte Tags. Wenn Sie ein integriertes T
 
 Die folgende Liste zeigt die in Visual Studio verfügbaren integrierten Tags. Zugehörige Werte werden in Klammern angezeigt.
 
-| Sprache | Plattform | Projekttyp: |
+| Tag für Sprache | Tag für Plattform | Tag für Projekttyp |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Cloud (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Console (`console`) |
@@ -145,7 +145,7 @@ Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage einer Visual 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](creating-project-and-item-templates.md)
