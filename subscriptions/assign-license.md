@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.openlocfilehash: 87334251532dbaa127d4def8c33a9814c28d42e1
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232707"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564159"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements
 Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
@@ -25,6 +25,11 @@ Für Benutzergruppen haben Sie die Wahl, wie Sie Abonnements zuweisen.
 
 ## <a name="add-a-single-subscriber"></a>Einzelnen Abonnenten hinzufügen
 Im Folgenden wird erläutert, wie Sie einem neuen Benutzer ein Visual Studio-Abonnement zuweisen, damit dieser Zugriff auf die Abonnementvorteile hat.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vpPh]
+
 
 1. Melden Sie sich beim [Verwaltungsportal](https://manage.visualstudio.com) an.
 2. Um einem einzelnen Visual Studio-Abonnenten eine Lizenz zuzuweisen, wählen Sie im oberen Bereich der Tabelle die Option **Hinzufügen** aus und klicken auf **Einzelner Abonnent**.

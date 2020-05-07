@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Abonnementzuweisungen bearbeiten können.
-ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a0f72bf6a6561060fd4eddcf2fc11f0f4cf97f15
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232559"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564224"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 Als Abonnementadministrator können Sie Änderungen an den Abonnements vornehmen, die Personen innerhalb Ihrer Organisation zugewiesen sind.  Dieser Artikel beschreibt die Arten von Änderungen, die Sie vornehmen können, und enthält die notwendigen Schritte.
@@ -30,7 +30,13 @@ Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...)
 Sie können Vornamen, Nachnamen, Abonnementebene, E-Mail-Adresse, Land/Region, Sprache, Downloads und Referenz für den Abonnenten aktualisieren. Bearbeiten Sie die Informationen zum Abonnenten, und klicken Sie dann auf **Speichern**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Bearbeiten mehrerer Abonnenten mithilfe der Massenbearbeitung
+
+
 Sie können mehrere Abonnenten gleichzeitig bearbeiten, wenn Sie die Massenbearbeitung verwenden. Diese Funktion wird in erster Linie für Organisationen verwendet, wenn die geschäftlichen E-Mail-Adressen geändert werden, oder wenn eine Organisation sich dafür entschieden hat, den Zugriff auf Downloads zu beschränken.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
    > [!IMPORTANT]
    > Abonnementebenen (d. h. Enterprise, Professional usw.) und Abonnement-GUIDs können nicht über eine Massenbearbeitung geändert werden.  Wenn Sie Ihren Benutzern bestimmte Abonnement-GUIDs zuweisen müssen, verwenden Sie den Prozess zum Hinzufügen von Benutzern, indem Sie die Abonnement-ID auswählen. Wenn Sie versuchen, einen Upload auszuführen, bei dem diese Elemente in der Massenbearbeitungsvorlage geändert wurden, kommt es beim Upload zu einem Fehler.

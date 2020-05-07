@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren entweder Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385513"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564185"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
@@ -108,7 +108,7 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Frage: Kann ich für die Zuweisung mehrere Abonnementebenen innerhalb einer Azure AD-Gruppe auswählen? 

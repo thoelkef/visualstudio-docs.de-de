@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/10/2020
+ms.date: 04/28/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: b556b90cc0c4f0904cbd6e08a34ec782f044dfae
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224484"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564172"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -42,10 +42,9 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 
 0. Fügen Sie ein Lesezeichen für das [Azure-Portal](https://portal.azure.com) zu, damit Sie darauf immer leicht und schnell zugreifen können.
 
-## <a name="using-azure-without-a-visual-studio-subscription"></a>Verwenden von Azure ohne Visual Studio-Abonnement
-Wenn Ihr Visual Studio-Abonnement abgelaufen ist, sind alle Abonnementvorteile, einschließlich des Einzelguthabens für Azure DevTest, nicht mehr verfügbar. Sie müssen Ihr Abonnement verlängern, ein neues Abonnement erwerben oder den Azure-Vorteil an ein aktives Abonnement übertragen, das das Einzelguthaben für Azure DevTest umfasst, um Azure weiterhin mit einem monatlichen Guthaben zu verwenden.  Sie können Azure auch weiterhin ohne monatliches Guthaben verwenden, indem Sie Ihr aktuelles Azure-Abonnement auf nutzungsbasierte Bezahlung umstellen.
+## <a name="maintain-a-subscription-to-use-monthly-credits"></a>Verwalten eines Abonnements zur Verwendung monatlicher Gutschriften
+Wenn Ihr Visual Studio-Abonnement abläuft oder gekündigt wird, sind alle Abonnementvorteile, einschließlich individueller Gutschriften für Azure DevTest, nicht mehr verfügbar. Sie müssen Ihr Abonnement verlängern, ein neues Abonnement erwerben oder den Azure-Vorteil an ein aktives Abonnement übertragen, das das Einzelguthaben für Azure DevTest umfasst, um Azure weiterhin mit einem monatlichen Guthaben zu verwenden.  
 
-### <a name="continue-using-azure-with-a-monthly-credit"></a>Weiterverwenden von Azure mit einem monatlichen Guthaben
 > [!IMPORTANT]
 > Sie müssen Ihre Ressourcen in ein anderes Azure-Abonnement übertragen, bevor Ihr aktuelles Azure-Abonnement deaktiviert wird, da Sie sonst den Zugriff auf Ihre Daten verlieren.  
 
@@ -55,24 +54,16 @@ Es gibt mehrere Möglichkeiten, weiterhin ein monatliches Guthaben für Azure zu
 - **Wenn jemand in Ihrer Organisation für den Erwerb von Abonnements zuständig ist**, [wenden Sie sich an Ihren Administrator für Visual Studio-Abonnements](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin), und fordern Sie ein Abonnement an, das das gewünschte monatliche Guthaben bereitstellt.  
 - **Wenn Sie über ein anderes aktives Visual Studio-Abonnement mit derselben Abonnementstufe verfügen**, das mit einem anderen Microsoft-Konto verknüpft ist, können Sie den Azure-Vorteil möglicherweise auf ein anderes aktives Visual Studio-Abonnement übertragen, indem Sie im [Visual Studio-Abonnementportal](https://my.visualstudio.com/subscriptions) [ein alternatives Konto hinzufügen](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile).  
 
-Sie können die erforderliche Abonnementstufe anhand der Azure-Gutschrift bestimmen, die Sie ersetzen möchten.  
+Anhand der folgenden Tabelle „Berechtigung“ können Sie bestimmen, welche Gutschriften die einzelnen Abonnementtypen beinhalten.  
 
-| Visual Studio-Abonnementstufe | Monatliche Azure-Gutschrift |
-|----------------------------------|----------------------|
-| Visual Studio Enterprise         | 150 $                 |
-| Visual Studio Professional       | 50 $                  |
-| Visual Studio Test Professional  | 50 $                  |
-| MSDN Platforms*                  | $100                 |
 
-*Abonnenten mit MSDN Platforms müssen einen Administrator kontaktieren, um die Zuweisung eines neuen Abonnements zu beantragen. 
-
-### <a name="continue-using-azure-without-a-monthly-credit"></a>Weiterverwenden von Azure ohne monatliches Guthaben
+## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Umstellung Ihres Azure-Abonnements auf nutzungsbasierte Bezahlung
 
 Wenn Sie ein Visual Studio-Abonnement oder ein Guthaben nicht mehr benötigen, aber Ihre Azure-Ressourcen weiterhin verwenden möchten, [übertragen Sie Ihre Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) an ein anderes Azure-Abonnement, oder ändern Sie Ihr Azure-Abonnement, um die nutzungsbasierte Bezahlung zu verwenden, indem Sie [das Ausgabenlimit entfernen](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
 
 Wenn Sie keine dieser Aktionen durchführen, wird Ihr Azure-Abonnement deaktiviert und 30 Tage nach Empfang der E-Mail-Benachrichtigung gelöscht.  
 
-### <a name="have-a-question"></a>Haben Sie Fragen?
+## <a name="have-a-question"></a>Haben Sie Fragen?
 Wenn Sie Fragen zum Übertragen von Ressourcen, zum Entfernen von Ausgabenlimits oder zu anderen Azure-Themen haben, können Sie [eine Azure-Supportanfrage im Azure-Portal einreichen](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). 
 
 ## <a name="eligibility"></a>Berechtigung

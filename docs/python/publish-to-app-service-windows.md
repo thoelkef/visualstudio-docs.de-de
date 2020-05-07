@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784659"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586562"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Veröffentlichen in Azure App Service unter Windows
 
@@ -63,7 +63,7 @@ Erstellen Sie, wie im Folgenden beschrieben, über ein aktives Azure-Abonnement 
 
 Führen Sie die folgenden Schritte aus, um einen temporären App Service zu erstellen, ohne dass ein Azure-Abonnement erforderlich ist:
 
-1. Öffnen Sie in Ihrem Browser [try.azurewebsites.net](https://try.azurewebsites.net).
+1. Öffnen Sie Ihren Browser mit [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/).
 1. Wählen Sie **Web-App** als App-Typ und dann **Weiter**.
 1. Klicken Sie auf **Empty Site** (Leere Website) > **Erstellen**.
 1. Melden Sie sich mit den Anmeldedaten eines sozialen Netzwerks Ihrer Wahl an, und nach kurzer Zeit ist Ihre Website unter der angezeigten URL bereit.

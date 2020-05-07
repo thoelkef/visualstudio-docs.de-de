@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633680"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586881"
 ---
 # <a name="item-functions"></a>Elementfunktionen
 
@@ -101,6 +101,10 @@ In folgendem Beispiel wird veranschaulicht, wie Sie systeminterne Elementfunktio
     Reverse: third;second;first
   -->
 ```
+
+## <a name="msbuild-condition-functions"></a>MSBuild-Bedingungsfunktionen
+
+Die Funktionen `Exists` und `HasTrailingSlash` sind keine Elementfunktionen. Sie können mit dem `Condition`-Attribut verwendet werden. Weitere Informationen finden Sie unter [MSBuild-Bedingungen](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Siehe auch
 
