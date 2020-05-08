@@ -50,7 +50,7 @@ landingContent:
       url: using-breakpoints.md
     - text: Bearbeiten von Code und Fortsetzen des Debuggens
       url: edit-and-continue.md
-- title: Überprüfen von Daten
+- title: Untersuchen von Daten
   linkLists:
   - linkListType: how-to-guide
     links:
