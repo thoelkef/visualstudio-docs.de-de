@@ -1,5 +1,5 @@
----
-title: CreateExpInstance-Dienstprogramm | Microsoft Docs
+﻿﻿---
+title: CreateExpInstance-Hilfsprogramm | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -54,5 +54,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [VSPackages](../../extensibility/internals/vspackages.md)

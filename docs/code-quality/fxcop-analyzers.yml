@@ -1,0 +1,70 @@
+﻿### YamlMime:Landing
+title: Migration von der Legacy Analyse (FxCop) zur Quell Analyse (FxCop-Analyzers)
+summary: Erfahren Sie, wie Sie Code zum ersten Mal analysieren oder von FxCop (Binary Analysis) zur neuen Methode der Analyse von verwaltetem Code mithilfe der Quell Analyse (FxCop-Analyzers) migrieren.
+metadata:
+  title: Dokumentation zur FxCop-Migration
+  description: Erfahren Sie, wie Sie von der Legacy-Binär Analyse (FxCop) zur Quell Analyse (FxCop-Analyzers) wechseln, wenn Sie Code analysieren.
+  ms.prod: visual-studio-dev16
+  ms.technology: vs-ide-code-analysis
+  ms.topic: landing-page
+  f1_keywords:
+  - vs.projectpropertypages.codeanalysis
+  author: jillre
+  ms.author: jillfra
+  manager: jillfra
+  ms.date: 09/24/2019
+  ms.openlocfilehash: 5ee1fc570d60dd5ff6a8aaabb4d2443cd878bbac
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316392"
+landingContent:
+- title: Einführung in die Code Analyse
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Übersicht über Code Analysen
+      url: roslyn-analyzers-overview.md
+  - linkListType: download
+    links:
+    - text: Code Analysetools installieren
+      url: install-roslyn-analyzers.md
+  - linkListType: how-to-guide
+    links:
+    - text: Festlegen des schwere Grads und unterdrücken von Fehlern
+            html: '<p>Grundlegendes zu .NET-Analysetools</p>'
+    - text: Befehlszeilen Verwendung
+      url: use-roslyn-analyzers.md#command-line-usage
+- title: Migration von Legacy Analysen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Unterschiede
+      url: roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis
+  - linkListType: get-started
+    links:
+    - text: FAQ zu FxCop-Analyzern
+      url: fxcop-analyzers-faq.md
+  - linkListType: download
+    links:
+    - text: Installieren von FxCop-Analysetools
+      url: install-fxcop-analyzers.md
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurieren von FxCop-Analyzern
+      url: configure-fxcop-analyzers.md
+    - text: Verwenden von vordefinierten Regelsätzen
+      url: analyzer-rule-sets.md
+  - linkListType: reference
+    links:
+    - text: Portierte und nicht portierte Regeln
+      url: fxcop-rule-port-status.md
+- title: Andere Arten der Code Analyse
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: C++-Codeanalyse
+      url: code-analysis-for-c-cpp-overview.md
+    - text: Codemetrik
+      url: code-metrics-values.md
