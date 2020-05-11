@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62961684"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Django-Webprojekt“
 
-**Vorheriger Schritt: [Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Vorheriger Schritt: [Serve static files, add pages, and use template inheritance (Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung)](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 Nachdem Sie sich mit den grundlegenden Funktionen von Django vertraut gemacht und eine App auf Grundlage der Vorlage „Leeres Django-Webprojekt“ in Visual Studio erstellt haben, erhalten Sie nun weitere Informationen zu umfangreicheren Funktionen der App über die Vorlage „Django-Webprojekt“.
 
@@ -33,7 +33,7 @@ In diesem Schritt werden Sie Informationen zu folgenden Inhalten erhalten:
 
 Durch die Vorlage wird auch eine Standardauthentifizierung bereitgestellt, die in Schritt 5 beschrieben wird.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Schritt 4.1: Erstellen eines neuen Projekts aus der Vorlage
+## <a name="step-4-1-create-a-project-from-the-template"></a>Schritt 4-1: Erstellen eines Projekts aus der Vorlage
 
 1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningDjango**, die Sie in diesem Tutorial bereits erstellt haben. Klicken Sie anschließend auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
 
@@ -85,7 +85,7 @@ Wenn Sie dennoch eine vorhandene virtuelle Umgebung verwenden möchten, führen 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Python-Umgebungen**, und wählen Sie die Option **Vorhandene virtuelle Umgebung hinzufügen** aus.
 1. Navigieren Sie zum Ordner mit der virtuellen Umgebung, wählen Sie ihn aus, und klicken Sie anschließend auf **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Schritt 4.2: Grundlegendes zu den Ansichten und Seitenvorlagen, die von der Projektvorlage erstellt wurden
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Schritt 4-2: Informationen zu den Ansichten und Seitenvorlagen, die von der Projektvorlage erstellt wurden
 
 Wie Sie beim Ausführen des Projekts festgestellt haben, verfügt die App über drei Ansichten: „Startseite“, „Info“ und „Kontakt“. Der Code für diese Ansichten befindet sich im Ordner *app/views*. Jede Ansichtsfunktion ruft `django.shortcuts.render` mit dem Pfad zu einer Vorlage und einem einfachen Wörterbuchobjekt auf. Die Seite „Info“ wird beispielsweise von der `about`-Funktion behandelt:
 
@@ -161,13 +161,13 @@ Die einzelnen Seitenvorlagen *about.html*, *contact.html* und *index.html* erwei
 
 *index.html* und *contact.html* verwenden die gleiche Struktur. Außerdem ist ihr Inhalt im Block „content“ umfangreicher.
 
-Im Ordner *templates/app* befindet sich ebenso eine vierte Seite, *login.html* zusammen mit *loginpartial.html*, die über `{% include %}` in *layout.html* verschoben wird. Diese Vorlagendateien werden bei der Authentifizierung in Schritt 5 näher erläutert.
+Im Ordner *templates/app* befindet sich ebenso eine vierte Seite, *login.html* zusammen mit *loginpartial.html*, die über *in*layout.html`{% include %}` verschoben wird. Diese Vorlagendateien werden bei der Authentifizierung in Schritt 5 näher erläutert.
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Frage: Können {% block %} und {% endblock %} in der Django-Seitenvorlage eingerückt werden?
 
-Antwort: Ja, Django-Seitenvorlagen funktionieren problemlos mit eingerückten Blocktags, etwa zur Ausrichtung im entsprechenden übergeordneten Element. In den Seitenvorlagen, die von der Visual Studio-Projektvorlage erstellt wurden, werden die Blocktags nicht eingerückt, damit ihre Position deutlich zu erkennen ist.
+Antwort: Ja. Django-Seitenvorlagen funktionieren problemlos mit eingerückten Blocktags, etwa zur Ausrichtung im entsprechenden übergeordneten Element. In den Seitenvorlagen, die von der Visual Studio-Projektvorlage erstellt wurden, werden die Blocktags nicht eingerückt, damit ihre Position deutlich zu erkennen ist.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Schritt 4.3: Grundlegendes zum URL-Routing, das von der Vorlage erstellt wurde
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Schritt 4-3: Informationen zum URL-Routing, das von der Vorlage erstellt wurde
 
 Die Datei *urls.py* des Django-Projekts, die von der Vorlage „Django-Webprojekt“ erstellt wurde, enthält den folgenden Code:
 
@@ -219,4 +219,4 @@ Antwort: Das nachgestellte „$“ im regulären Ausdruck wurde in vielen Versio
 
 - [Bereitstellen der App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - forms and generic views (Erstellen Ihrer ersten Django-App – Teil 4: Formulare und allgemeine Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

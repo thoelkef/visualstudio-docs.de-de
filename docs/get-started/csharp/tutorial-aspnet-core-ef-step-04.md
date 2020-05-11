@@ -2,26 +2,26 @@
 title: 'Schritt 4: Bereitstellen einer Web-API von Ihrer ASP.NET Core-App aus'
 description: Fügen Sie Ihrer ASP.NET Core-Web-App mit diesem Videotutorial und schrittweisen Anweisungen eine Web-API hinzu.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 02/13/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553885"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77580040"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Schritt 4: Bereitstellen einer Web-API von Ihrer ASP.NET Core-App aus
 
@@ -187,7 +187,7 @@ Zum Schluss wird eine `[HttpDelete]`-Route mit einer ID verwendet, um einen Date
 
 ## <a name="adding-swagger"></a>Hinzufügen von Swagger
 
-Swagger ist ein API-Dokumentations- und Testtool, das als eine Reihe von Diensten und Middleware einer ASP.NET Core-App hinzugefügt werden kann. Klicken Sie hierzu mit der rechten Maustaste auf das Projekt, und wählen Sie **NuGet-Pakete verwalten** aus. Klicken Sie auf **Durchsuchen**, suchen Sie nach `Swashbuckle.AspNetCore`, und installieren Sie das entsprechende Paket.
+Swagger ist ein API-Dokumentations- und Testtool, das als eine Reihe von Diensten und Middleware einer ASP.NET Core-App hinzugefügt werden kann. Klicken Sie hierzu mit der rechten Maustaste auf das Projekt, und wählen Sie **NuGet-Pakete verwalten** aus. Klicken Sie dann auf **Durchsuchen**, suchen Sie nach `Swashbuckle.AspNetCore`, und installieren Sie die 4.0.1-Version.
 
 ![Visual Studio 2019 – Hinzufügen von Swashbuckle aus NuGet](media/vs-2019/vs2019-nuget-swashbuckle.png)
 

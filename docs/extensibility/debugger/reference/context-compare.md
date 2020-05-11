@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE | Microsoft-Dokumentation
+title: CONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346397"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737604"
 ---
-# <a name="contextcompare"></a>CONTEXT_COMPARE
-Gibt die Kriterien zum Vergleichen von zwei Speicher Kontexten.
+# <a name="context_compare"></a>CONTEXT_COMPARE
+Gibt die Kriterien für den Vergleich von zwei Speicherkontexten an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,44 +58,44 @@ public enum enum_CONTEXT_COMPARE {
 
 ## <a name="fields"></a>Felder
 `CONTEXT_EQUAL`\
-Finden Sie den Speicherkontext für ersten, in der Liste, die den Arbeitsspeicher Zielkontext entspricht.
+Suchen Sie den ersten Speicherkontext in der Liste, der dem Zielspeicherkontext entspricht.
 
 `CONTEXT_LESS_THAN`\
-Finden Sie den Speicherkontext für ersten, in der Liste, die kleiner als den Zielkontext der Arbeitsspeicher ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der kleiner als der Zielspeicherkontext ist.
 
 `CONTEXT_GREATER_THAN`\
-Finden Sie die ersten Arbeitsspeicher-Kontext, in der Liste aus, die den Zielkontext der Arbeitsspeicher größer ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der größer als der Zielspeicherkontext ist.
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-Finden Sie den ersten Arbeitsspeicher-Kontext, in der Liste, die kleiner als oder gleich den Zielkontext der Arbeitsspeicher ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der kleiner oder gleich dem Zielspeicherkontext ist.
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
-Finden Sie den Speicherkontext für ersten, in der Liste, die größer als oder gleich den Zielkontext der Arbeitsspeicher ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der größer oder gleich dem Zielspeicherkontext ist.
 
 `CONTEXT_SAME_SCOPE`\
-Finden Sie den Speicherkontext für ersten, in der Liste, die im gleichen Bereich wie den Zielkontext der Arbeitsspeicher ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der sich im gleichen Bereich wie der Zielspeicherkontext befindet.
 
 `CONTEXT_SAME_FUNCTION`\
-Finden Sie den Speicherkontext für ersten, in der Liste, die in die gleiche Funktion wie der Zielbereich für den Arbeitsspeicher ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der sich in derselben Funktion wie der Zielspeicherbereich befindet.
 
 `CONTEXT_SAME_MODULE`\
-Finden Sie den Speicherkontext für ersten, in der Liste, die im selben Modul wie den Zielkontext der Arbeitsspeicher ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der sich im selben Modul wie der Zielspeicherkontext befindet.
 
 `CONTEXT_SAME_PROCESS`\
-Finden Sie den Speicherkontext für ersten, in der Liste, die in demselben Prozess wie den Zielkontext der Arbeitsspeicher ist.
+Suchen Sie den ersten Speicherkontext in der Liste, der sich im gleichen Prozess wie der Zielspeicherkontext befindet.
 
-## <a name="remarks"></a>Hinweise
-Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Übergeben als Argument [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) an die Compare-Methode.
 
-Diese Werte werden zum ersten Arbeitsspeicher Kontext in einer Liste zu suchen, die die angegebenen Vergleichskriterien entspricht. Ein Kontext an Arbeitsspeicher erhält eine Liste von Kontexten, Speicher selbst vor über vergleichen die `IDebugMemoryContext2::Compare` Methode. Die erste Arbeitsspeicher-Kontext, in der Liste, die für die der Vergleichsoperator ist `true` wird zurückgegeben.
+Diese Werte werden verwendet, um den ersten Speicherkontext in einer Liste zu finden, die die angegebenen Vergleichskriterien erfüllt. Einem Speicherkontext wird eine Liste von Speicherkontexten `IDebugMemoryContext2::Compare` gegeben, mit denen er sich durch die Methode vergleichen kann. Der erste Speicherkontext in der Liste, `true` für den der Vergleichsoperator angezeigt wird, wird zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [Vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

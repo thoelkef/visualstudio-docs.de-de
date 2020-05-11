@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEvents2 | Microsoft-Dokumentation
+title: IDebugPortEvents2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5690108aaeede2cf15cc5fac927a3dc5ab3855ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326732"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725178"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
-Diese Schnittstelle informiert einen Listener Prozess und das Programm Erstellung und Zerstörung auf einem bestimmten Port (in der Regel die sitzungsbasierter Debug-Manager [SDM] oder einer Debug-Engine). Diese Informationen kann verwendet werden, um eine Echtzeitansicht der Prozesse und Programme, die an den Port zu präsentieren.
+Diese Schnittstelle benachrichtigt einen Listener (in der Regel den Sitzungsdebug-Manager [SDM] oder ein Debugmodul) über die Prozess- und Programmerstellung und -zerstörung auf einem bestimmten Port. Diese Informationen können verwendet werden, um eine Echtzeitansicht der Prozesse und Programme zu präsentieren, die auf dem Port ausgeführt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,30 +29,30 @@ IDebugPortEvents2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Visual Studio wird in der Regel implementiert diese Schnittstelle zum Empfangen von Benachrichtigungen über die Erstellung und Zerstörung. Ein Debugmodul kann auch diese Schnittstelle zum Überwachen von Ereignissen Port implementieren.
+ Visual Studio implementiert diese Schnittstelle in der Regel, um Benachrichtigungen über die Programmerstellung und -zerstörung zu erhalten. Ein Debugmodul kann diese Schnittstelle auch implementieren, um auf solche Portereignisse zu warten.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Alle [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstellen abgefragt werden können, für eine <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Schnittstelle. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A> -Methode für `IDebugPortEvents2` wird aufgerufen, der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> -Schnittstelle zum Abrufen einer <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Schnittstelle. Zum Schluss die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> -Methode in der die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Schnittstelle wird aufgerufen, um die Ereignisse durch Senden der [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md) Methode.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Alle [IDebugPort2-Schnittstellen](../../../extensibility/debugger/reference/idebugport2.md) können für <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> eine Schnittstelle abgefragt werden. Dann <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A> wird `IDebugPortEvents2` die Methode <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> für in <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> der Schnittstelle aufgerufen, um eine Schnittstelle zu erhalten. Schließlich wird <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Methode in der Schnittstelle aufgerufen, um die Ereignisse über die [Event-Methode](../../../extensibility/debugger/reference/idebugportevents2-event.md) zu senden.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methode der `IDebugPortEvents2`.
+ Die folgende Tabelle zeigt `IDebugPortEvents2`die Methode von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Sendet Ereignisse, die die Erstellung und Zerstörung von Prozessen und Programme auf dem Port zu beschreiben.|
+|[Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Sendet Ereignisse, die die Erstellung und Zerstörung von Prozessen und Programmen auf dem Port beschreiben.|
 
-## <a name="remarks"></a>Hinweise
- `IDebugPortEvents2` durch die SDM dient auch zum Debuggen von Programmen, die in einem Prozess ausgeführt werden, die bereits im Debugmodus befindet.
+## <a name="remarks"></a>Bemerkungen
+ `IDebugPortEvents2`wird auch vom SDM zum Debuggen von Programmen verwendet, die in einem Prozess ausgeführt werden, der bereits gedebuggen wird.
 
- Portereignisse werden an das SDM von dieser Schnittstelle übergeben.
+ Portereignisse werden über diese Schnittstelle an das SDM übergeben.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

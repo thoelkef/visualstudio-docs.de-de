@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 9e8d9fde00a2390793ae8efe05b684e73caca321
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773058"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Sammeln von Arbeitsspeicherdaten aus einer ASP.NET-Webanwendung über die Profiler-Befehlszeile
@@ -27,17 +27,17 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Anfügen des Profilers an eine aktive ASP.NET-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|
 |**Instrumentieren statisch kompilierter Binärdateien**|-   [Vorgehensweise: Instrumentieren einer statisch kompilierten ASP.NET-Anwendung und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|
-|**Instrumentieren dynamisch kompilierter Binärdateien**|-   [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|
+|**Instrumentieren dynamisch kompilierter Binärdateien**|-   [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profiler-Befehlszeile](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
 ### <a name="profile-aspnet-web-applications"></a>Profilerstellung für ASP.NET-Webanwendungen
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung mit der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Profilerstellung mit der Instrumentationsmethode**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
@@ -45,7 +45,7 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
 
 ### <a name="profile-net-framework-memory-data"></a>Profilerstellung für .NET Framework-Arbeitsspeicherdaten
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln von .NET Framework-Arbeitsspeicherdaten](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
 |**Profilerstellung für Dienste**|-   [Sammeln von .NET-Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
@@ -53,5 +53,5 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analysieren von Ansichten und Berichten für .NET-Arbeitsspeicherdaten
 - [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
 - [Referenz zu Profilerstellungstools für die Befehlszeile](../profiling/command-line-profiling-tools-reference.md)

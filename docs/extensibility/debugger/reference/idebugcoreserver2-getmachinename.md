@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineName | Microsoft-Dokumentation
+title: IDebugCoreServer2::GetMachineName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetName
 ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cff51d5cf394c7ff93cc0b0310a69d78a2a6a045
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 238088caa3229a0e57da90baeb0ee0f791c2908a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332346"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733131"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
-Ruft den Namen des Computers, auf der Server Core ausgeführt wird.
+Ruft den Namen des Computers ab, auf dem der Kernserver ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int GetName( 
 
 ## <a name="parameters"></a>Parameter
 `pbstrName`\
-[out] Gibt eine Zeichenfolge, die mit dem Namen des Computers.
+[out] Gibt eine Zeichenfolge zurück, die den Namen des Computers enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

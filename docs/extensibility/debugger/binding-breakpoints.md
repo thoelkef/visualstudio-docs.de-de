@@ -1,57 +1,57 @@
 ---
-title: Binden von Haltepunkten | Microsoft-Dokumentation
+title: Bindung spannen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f861875e15a9051ab05d1b7398ea5902189830b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 680cff398a43d1ebe9ccf061ad42781500c7cf01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332567"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739232"
 ---
 # <a name="bind-breakpoints"></a>Binden von Haltepunkten
-Wenn der Benutzer einen Haltepunkt, z. B. durch Drücken von **F9**, die IDE die Anforderung formuliert und werden aufgefordert, die Debugsitzung, um den Haltepunkt zu erstellen.
+Wenn der Benutzer einen Haltepunkt festlegt, z. B. durch Drücken von **F9**, formuliert die IDE die Anforderung und fordert die Debugsitzung auf, den Haltepunkt zu erstellen.
 
 ## <a name="set-a-breakpoint"></a>Haltepunkt festlegen
- Festlegen eines Haltepunkts ist ein zweistufiger Prozess, da der Code oder Daten, die vom Haltepunkt betroffenen noch möglicherweise nicht verfügbar. Zunächst muss der Haltepunkt beschrieben, und klicken Sie dann, wie Code oder Daten verfügbar ist, es muss gebunden sein Code oder Daten, wie folgt:
+ Das Festlegen eines Haltepunkts ist ein zweistufiger Prozess, da der vom Haltepunkt betroffene Code oder die vom Haltepunkt betroffenen Daten möglicherweise noch nicht verfügbar sind. Zuerst muss der Haltepunkt beschrieben werden, und dann, wenn Code oder Daten verfügbar werden, muss er wie folgt an diesen Code oder diese Daten gebunden sein:
 
-1. Der Haltepunkt wird angefordert, aus dem relevanten Debug-Engines (DEs), und klicken Sie dann wird der Haltepunkt Code oder an Daten gebunden, sobald diese verfügbar werden.
+1. Der Haltepunkt wird von den entsprechenden Debugmodulen (DEs) angefordert, und dann wird der Haltepunkt an den Code oder die Daten gebunden, sobald er verfügbar ist.
 
-2. Die Haltepunkt-Anforderung wird an die Debug-Sitzung gesendet, diese an alle relevanten DEs sendet. Alle, die auswählt, behandeln den Haltepunkt DE erstellt eine entsprechende ausstehender Haltepunkt.
+2. Die Haltepunktanforderung wird an die Debugsitzung gesendet, die sie an alle relevanten DEs sendet. Jede DE, die den Haltepunkt behandelt, erstellt einen entsprechenden ausstehenden Haltepunkt.
 
-3. Die Debugsitzung ausstehenden Haltepunkte sammelt und sendet sie an das debugpaket (der Komponente Debuggen von Visual Studio).
+3. Die Debugsitzung sammelt die ausstehenden Haltepunkte und sendet sie zurück an das Debugpaket (die Debugkomponente von Visual Studio).
 
-4. Das debugpaket fordert die Debugsitzung, um den ausstehenden Haltepunkt an Code oder Daten zu binden. Die Debugsitzung sendet diese Anforderung an alle relevanten DEs.
+4. Das Debugpaket fordert die Debugsitzung auf, den ausstehenden Haltepunkt an Code oder Daten zu binden. Die Debugsitzung sendet diese Anforderung an alle relevanten DEs.
 
-5. Wenn die DE können den Haltepunkt gebunden ist, sendet sie an, dass ein Haltepunkt-Ereignis an die Debug-Sitzung gebunden. Wenn dies nicht der Fall ist, sendet er stattdessen ein Haltepunkt-Error-Ereignis.
+5. Wenn die DE in der Lage ist, den Haltepunkt zu binden, sendet sie ein Haltepunktgebundenes Ereignis zurück an die Debugsitzung. Ist dies nicht der Fall, wird stattdessen ein Breakpoint-Fehlerereignis gesendet.
 
-## <a name="pending-breakpoints"></a>Ausstehenden Haltepunkte
- Ein ausstehender Haltepunkt kann an mehreren Standorten von Code binden. Beispielsweise kann eine Zeile des Quellcodes für eine C++-Vorlage an jede Codesequenz, die von der Vorlage generiert binden. Eine gebundene Haltepunktereignis können die Debugsitzung aufzählen die Codekontexte an einen Haltepunkt gebunden ist, zu dem Zeitpunkt, der das Ereignis gesendet wurde. Weitere Codekontexte können später gebunden werden, damit die DE senden kann, dass mehrere Haltepunkt Ereignisse für jede bindungsanforderung gebunden. Eine bereitgestellten Kompatibilitätsrichtlinie sollte jedoch nur eine Haltepunkt-Error-Ereignis pro bindungsanforderung senden.
+## <a name="pending-breakpoints"></a>Ausstehende Haltepunkte
+ Ein ausstehender Haltepunkt kann an mehrere Codespeicherorte gebunden werden. Beispielsweise kann eine Zeile mit Quellcode für eine C++-Vorlage an jede Codesequenz gebunden werden, die aus der Vorlage generiert wird. Die Debugsitzung kann ein Haltepunktgebundenes Ereignis verwenden, um die Codekontexte aufzuzählen, die zum Zeitpunkt der Sendezeit an einen Haltepunkt gebunden sind. Weitere Codekontexte können später gebunden werden, sodass die DE möglicherweise mehrere Haltepunktgebundene Ereignisse für jede Bindungsanforderung sendet. Eine DE sollte jedoch nur ein Breakpoint-Fehlerereignis pro Bindungsanforderung senden.
 
 ## <a name="implementation"></a>Implementierung
- Programmgesteuert, das debugpaket Sitzung Debug-Manager (SDM) aufgerufen, und weist ihm eine [IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) -Schnittstelle, die dient als Wrapper für eine [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) -Struktur, die beschreibt, die der Haltepunkt festgelegt werden. Obwohl Haltepunkte viele Formen aufweisen können, werden sie letztlich in einen Kontext Code- oder Datenmenge aufgelöst.
+ Programmgesteuert ruft das Debugpaket den Sitzungsdebug-Manager (SDM) auf und gibt ihm eine [IDebugBreakpointRequest2-Schnittstelle,](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) die eine [BP_REQUEST_INFO-Struktur](../../extensibility/debugger/reference/bp-request-info.md) umschließt, die den festzulegenden Haltepunkt beschreibt. Obwohl Haltepunkte von vielen Formen sein können, werden sie letztendlich in einen Code- oder Datenkontext aufgelöst.
 
- Das SDM übergibt diesen Aufruf auf jeden relevanten DE durch einen Aufruf der [CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) Methode. Die DE gewählt, die den Haltepunkt zu behandeln, erstellt und gibt eine [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle. Die SDM erfasst diese Schnittstellen und übergibt sie an das debugpaket als einzelnes `IDebugPendingBreakpoint2` Schnittstelle.
+ Das SDM übergibt diesen Aufruf an jede relevante DE, indem es seine [CreatePendingBreakpoint-Methode](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) aufruft. Wenn die DE den Haltepunkt verarbeitet, erstellt und gibt sie eine [IDebugPendingBreakpoint2-Schnittstelle](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) zurück. Das SDM sammelt diese Schnittstellen und übergibt sie als `IDebugPendingBreakpoint2` einzelne Schnittstelle an das Debugpaket zurück.
 
  Bisher wurden keine Ereignisse generiert.
 
- Das debugpaket anschließend versucht, den ausstehenden Haltepunkt auf Code oder Daten durch den Aufruf zu binden [binden](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md), die durch die DE implementiert wird.
+ Das Debugpaket versucht dann, den ausstehenden Haltepunkt an Code oder Daten zu binden, indem [Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)aufgerufen wird, das von der DE implementiert wird.
 
- Wenn der Haltepunkt gebunden ist, sendet der DE eine [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) Senkenereignis-Schnittstelle, um das debugpaket. Die Debug-Paket verwendet, die diese Schnittstelle zum Aufzählen von allen Code-Kontexten (oder der Datenkontext für die einzelnen) bis zum Haltepunkt gebunden sein, durch den Aufruf [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md), womit eine oder mehrere [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstellen. Die [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) -Schnittstelle gibt eine [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) -Schnittstelle und [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) gibt eine [BP_ RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) Union, die den Code- oder Datenmenge-Kontext.
+ Wenn der Haltepunkt gebunden ist, sendet die DE eine [IDebugBreakpointBoundEvent2-Ereignisschnittstelle](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) an das Debugpaket. Das Debugpaket verwendet diese Schnittstelle, um alle Codekontexte (oder den einzelnen Datenkontext) aufzuzählen, die an den Haltepunkt gebunden sind, indem [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)aufgerufen wird, wodurch eine oder mehrere [IDebugBoundBreakpoint2-Schnittstellen](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) zurückgegeben werden. Die [GetBreakpointResolution-Schnittstelle](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) gibt eine [IDebugBreakpointResolution2-Schnittstelle](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) zurück, und [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) gibt eine [BP_RESOLUTION_INFO-Union](../../extensibility/debugger/reference/bp-resolution-info.md) zurück, die den Code oder Datenkontext enthält.
 
- Wenn die DE kann nicht den Haltepunkt gebunden ist, sendet er eine einzelne [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) Senkenereignis-Schnittstelle, um das debugpaket. Das debugpaket Ruft den Fehlertyp (Fehler oder Warnung) und eine informative Meldung, die durch den Aufruf [GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md), gefolgt von [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) und [ GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md). Dies gibt eine [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur, die dem Fehlertyp und der Meldung enthält.
+ Wenn de den Haltepunkt nicht binden kann, sendet es eine einzelne [IDebugBreakpointErrorEvent2-Ereignisschnittstelle](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) an das Debugpaket. Das Debugpaket ruft den Fehlertyp (Fehler oder Warnung) und die Informationsmeldung ab, indem [GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)aufgerufen wird, gefolgt von [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) und [GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md). Dadurch wird eine [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur zurückgegeben, die den Fehlertyp und die Meldung enthält.
 
- Wenn eine bereitgestellten Kompatibilitätsrichtlinie einen Haltepunkt behandelt, aber es nicht werden gebunden kann, wird einen Fehler vom Typ `BPET_TYPE_ERROR`. Das debugpaket reagiert, indem ein Fehlerdialogfeld angezeigt, und die IDE fügt ein Ausrufezeichen-Symbol in das breakpointsymbol links von der Quellcodezeile.
+ Wenn eine DE einen Haltepunkt verarbeitet, ihn aber nicht `BPET_TYPE_ERROR`binden kann, gibt es einen Fehler vom Typ zurück. Das Debugpaket antwortet, indem ein Fehlerdialogfeld angezeigt wird, und die IDE platziert eine Ausrufezeichen-Glyphe innerhalb der Haltepunkt-Glyphe links neben der Quellcodezeile.
 
- Wenn eine bereitgestellten Kompatibilitätsrichtlinie behandelt einen Haltepunkt, kann nicht gebunden werden, sondern eine andere DE binden kann, dann wird eine Warnung zurückgegeben. Die IDE reagiert, indem Sie eine Frage-Symbol in das breakpointsymbol links von der Quellcodezeile zu platzieren.
+ Wenn ein DE einen Haltepunkt verarbeitet, ihn nicht binden kann, aber ein anderer DE ihn binden kann, gibt es eine Warnung zurück. Die IDE antwortet, indem sie eine Frage-Glyphe innerhalb der Haltepunkt-Glyphe links von der Quellcodezeile platziert.
 
-## <a name="see-also"></a>Siehe auch
-- [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Debuggen von Aufgaben](../../extensibility/debugger/debugging-tasks.md)

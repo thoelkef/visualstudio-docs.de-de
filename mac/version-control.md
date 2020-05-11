@@ -1,5 +1,5 @@
 ---
-title: Quellcodeverwaltung
+title: Versionskontrolle
 description: Verwenden von Git und Subversion in Visual Studio für Mac
 ms.topic: overview
 author: jmatthiesen
@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
 ms.openlocfilehash: 9206ab892ef125706ab16f9a739fe88a52f5c242
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70108098"
 ---
 # <a name="version-control"></a>Versionskontrolle
@@ -34,6 +34,6 @@ Visual Studio für Mac bietet Unterstützung für beide Versionskontrollsysteme 
 * [Setting Up a Subversion Repository (Einrichten eines Subversion-Repository)](set-up-subversion-repository.md)
 * [Working with Subversion (Arbeiten mit Subversion)](working-with-subversion.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Versionskontrolle in Visual Studio (unter Windows)](/visualstudio/version-control/)

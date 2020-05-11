@@ -1,5 +1,5 @@
 ---
-title: Icon-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Icon-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4068c192d7e01f4c9162e8006152a90b38aed05b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350141"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710530"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon-Element (Visual Studio-Vorlagen)
-Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder angezeigt wird, die **neues Projekt** oder **neues Element hinzufügen** im Dialogfeld für die Vorlage.
+Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld Neues **Element hinzufügen** für die Vorlage angezeigt wird.
 
- \<VSTemplate> \<TemplateData> \<Icon>
+ \<VSTemplate \<> TemplateData> \<Icon>
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,26 +42,26 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder an
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|
-|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|
+|`Package`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
+|`ID`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
- Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.
+ Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.
 
- Der Text gibt den Pfad und Dateiname des Vorlagensymbols, die in angezeigt werden die **neues Projekt** Dialogfeld.
+ Der Text enthält den Pfad und den Dateinamen des Vorlagensymbols, das im Dialogfeld **Neues Projekt** angezeigt wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `Icon` ist ein erforderliches untergeordnetes Element von `TemplateData`.
 
 ## <a name="example"></a>Beispiel
@@ -91,6 +91,6 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder an
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

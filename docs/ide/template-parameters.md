@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585885"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169364"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -61,7 +61,7 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |safeitemrootname|Wie in `safeitemname`.|
 |safeprojectname|Der vom Benutzer beim Erstellen des Projekts angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden.|
 |Uhrzeit|Die aktuelle Uhrzeit im Format TT/MM/JJJJ 00:00:00.|
-|specifiedSolutionName|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `specifiedSolutionName` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `specifiedSolutionName` leer.|
+|specifiedsolutionname|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `specifiedsolutionname` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `specifiedsolutionname` leer.|
 |userdomain|Die aktuelle Benutzerdomäne.|
 |username|Der aktuelle Benutzername.|
 |webnamespace|Der Name der aktuellen Website. Dieser Parameter wird in der Webformularvorlage verwendet und gewährleistet eindeutige Klassennamen. Wenn sich die Website im Stammverzeichnis des Webservers befindet, wird dieser Vorlagenparameter in das Stammverzeichnis des Webservers aufgelöst.|
@@ -119,7 +119,7 @@ Fügen Sie der *VSTEMPLATE*-Datei für die Projektvorlage das `ReplaceParameters
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](how-to-substitute-parameters-in-a-template.md)
+- [How to: Ersetzen von Parametern in einer Vorlage](how-to-substitute-parameters-in-a-template.md)
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
-- [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [How to: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

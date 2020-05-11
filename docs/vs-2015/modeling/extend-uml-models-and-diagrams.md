@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849805"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586730"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Erweitern von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Das Fabrikam-Team für Tools erstellt eine Reihe von Erweiterungen, um die Entwicklungsteams zu unterstützen. In den folgenden Abschnitten werden die verschiedenen Arten von Erweiterungen beschrieben, die Sie definieren können. Sie können mehrere dieser Techniken in einer Visual Studio-Erweiterung kombinieren.
 
- Weitere Informationen finden Sie in diesem Video: ![Link to Video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How do I Series: UML Tools and Extensibility](https://msdn.microsoft.com/vstudio/ff859492).
+ Weitere Informationen finden Sie in diesem Video: ![Link to Video](../data-tools/media/playvideo.gif "Wiedergeben")[MSDN How do I Series: UML Tools and Extensibility](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a> Anforderungen
+## <a name="requirements"></a><a name="Requirements"></a> Anforderungen
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
@@ -50,7 +50,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Weitere Informationen finden Sie unter [Definieren eines benutzerdefinierten Modellierungs Toolbox Elements](../modeling/define-a-custom-modeling-toolbox-item.md).
 
-## <a name="validation"></a>Validation
+## <a name="validation"></a>Überprüfen
  Sie können Regeln definieren, um sicherzustellen, dass ein UML-Modell angegebene Einschränkungen erfüllt.
 
  Die Toolentwickler von Fabrikam definieren Regeln, um Teammitglieder dabei zu unterstützen, einfache Fehler in Bezug auf die Modelle zur Gepäckbeförderung zu vermeiden. Ein Check-in-Schalter kann zum Beispiel nicht direkt mit einem Aufbewahrungsbehälter verbunden sein. Es muss mindestens ein Fließband zwischengeschaltet sein.
@@ -85,7 +85,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
  Weitere Informationen finden Sie unter [integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Generierung
+## <a name="generation"></a>Generation
  Über ein Modell können Sie Programmcode, Skripts, Konfigurationen, Dokumente, neue Modelle oder andere Artefakte generieren.
 
  In den Gepäcksystemen, die Fabrikam entwirft, weist der Programmcode von Projekt zu Projekt viele Übereinstimmungen auf. Der Hauptaspekt, der jeweils am stärksten variiert, ist der Plan des Gepäckflusses auf dem jeweiligen Flughafen. Nachdem das Entwurfsteam bei den ersten Projekten Erfahrungen sammeln konnte, erstellen die Toolentwickler eine Vorlage, die über das Gepäckflussmodell einen Großteil des variablen Programmcodes und die anderen Dateien erstellt, z. B. Benutzerdokumente. Die Entwicklungszeit und die Fehlerhäufigkeit kann so für jedes neue Projekt erheblich reduziert werden.
@@ -113,10 +113,10 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML mit Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [Channel 9: UML mit Visual Studio](https://channel9.msdn.com/posts/clinted/)|
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md) - [API-Referenz für UML-Modellierungs Erweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md)

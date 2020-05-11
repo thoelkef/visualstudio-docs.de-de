@@ -2,7 +2,7 @@
 title: Administratorhandbuch für Visual Studio
 titleSuffix: ''
 description: Erfahren Sie mehr zur Bereitstellung von Visual Studio in einer Unternehmensumgebung.
-ms.date: 06/02/2019
+ms.date: 03/09/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: bda9a73a7a1aabb2d288653ff4d7b20b1c40db8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114209"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79190278"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
@@ -115,6 +115,14 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md?view=vs-2019) können:
 
+## <a name="advanced-configuration"></a>Erweiterte Konfiguration
+
+Standardmäßig ist bei der Installation von Visual Studio die Einbeziehung von benutzerdefinierten Typen in die Bing-Suche anhand der F1-Fehlerliste und von Codelinks aktiviert. Sie können Visual Studio so konfigurieren, dass die Einbeziehung von benutzerdefinierten Benutzertypen in den Suchmechanismus deaktiviert wird. Ändern Sie hierzu den Wert des folgenden Registrierungsschlüssels nach Richtlinie:
+
+**„PutCustomTypeInBingSearch“ DWORD 0**
+
+Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verzeichnis *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\*. Anweisungen zum Öffnen der Registrierungsstruktur finden Sie unter [Bearbeiten der Registrierung einer Visual Studio-Instanz](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance).
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -153,6 +161,14 @@ Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Ins
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Schritt 5: (Optional) Verwenden von Visual Studio-Tools
 
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md?view=vs-2017) können:
+
+## <a name="advanced-configuration"></a>Erweiterte Konfiguration
+
+Standardmäßig ist bei der Installation von Visual Studio die Einbeziehung von benutzerdefinierten Typen in die Bing-Suche anhand der F1-Fehlerliste und von Codelinks aktiviert. Sie können Visual Studio so konfigurieren, dass die Einbeziehung von benutzerdefinierten Benutzertypen in den Suchmechanismus deaktiviert wird. Ändern Sie hierzu den Wert des folgenden Registrierungsschlüssels nach Richtlinie:
+
+**„PutCustomTypeInBingSearch“ DWORD 0**
+
+Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verzeichnis *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\*. Anweisungen zum Öffnen der Registrierungsstruktur finden Sie unter [Bearbeiten der Registrierung einer Visual Studio-Instanz](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 

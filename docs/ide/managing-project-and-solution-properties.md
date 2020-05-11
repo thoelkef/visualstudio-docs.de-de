@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591306"
 ---
 # <a name="manage-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
@@ -40,7 +40,7 @@ In C#-, Visual Basic- und F#-Projekten sind Eigenschaften im **Projekt-Designer*
 Informationen zu den einzelnen Eigenschaftsseiten im **Projekt-Designer** finden Sie unter [Project properties reference (Referenz zu Projekteigenschaften)](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
-> Projektmappen besitzen ebenso wie Projektelemente einige Eigenschaften. Auf diese Eigenschaften wird nicht über den **Projekt-Designer**, sondern über das [Eigenschaftenfenster](../ide/reference/properties-window.md) zugegriffen.
+> Projektmappen besitzen ebenso wie Projektelemente einige Eigenschaften. Auf diese Eigenschaften wird nicht über den [Projekt-Designer](../ide/reference/properties-window.md), sondern über das **Eigenschaftenfenster** zugegriffen.
 
 ### <a name="c-and-javascript-projects"></a>C++- und JavaScript-Projekte
 
@@ -50,11 +50,11 @@ C++- und JavaScript-Projekte haben eine andere Benutzeroberfläche zum Verwalten
 
 Informationen zu C++-Projekteigenschaften finden Sie unter [Arbeiten mit Projekteigenschaften (C++)](/cpp/build/working-with-project-properties). Weitere Informationen zu JavaScript-Eigenschaften finden Sie unter [Eigenschaftenseiten, JavaScript](../ide/reference/property-pages-javascript.md).
 
-## <a name="solution-properties"></a>Projektmappeneigenschaften
+## <a name="solution-properties"></a>Lösungseigenschaften
 
 Um auf Eigenschaften für die Projektmappe zuzugreifen, klicken Sie mit der rechten Maustaste auf den Projektmappenknoten im **Projektmappen-Explorer** und wählen **Eigenschaften** aus. In diesem Dialogfeld können Sie Projektkonfigurationen für **Debug-** oder **Releasebuilds** festlegen. Sie können auswählen, welche Projekte beim Drücken von **F5** als Startprojekt verwendet werden sollen, und Sie können Codeanalyseoptionen festlegen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 - [Verwalten von Projektmappen und Projekteigenschaften (Visual Studio für Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

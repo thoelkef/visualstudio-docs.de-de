@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft-Dokumentation
+title: IDebugProcessEx2::Detach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f016c078fcf19ec244fc4c0682d2caee81a2062
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311616"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723362"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-Diese Methode informiert dem Prozess, dass eine Sitzung nicht mehr Debuggen des Prozesses ist.
+Diese Methode informiert den Prozess, dass eine Sitzung den Prozess nicht mehr debuggen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>Parameter
 `pSession`\
-[in] Ein Wert, der die Sitzung, um diesen Prozess für trennen eindeutig identifiziert.
+[in] Ein Wert, der die Sitzung eindeutig identifiziert, von der dieser Prozess getrennt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Schnittstelle übergebenen `pSession` ist nur als Cookie behandelt werden soll, wird ein Wert, der Identifizierung der sitzungsbasierter Debug-Manager, die ursprünglich für diesen Prozess angefügt; keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.
+## <a name="remarks"></a>Bemerkungen
+ Die übergebene `pSession` Schnittstelle ist nur als Cookie zu behandeln, ein Wert, der den Sitzungsdebug-Manager, der ursprünglich an diesen Prozess angefügt wurde, eindeutig identifiziert. keine der Methoden auf der mitgelieferten Schnittstelle funktionsfähig sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -1,38 +1,38 @@
 ---
-title: Erstellen eines Toolfensters mit mehreren Instanzen | Microsoft-Dokumentation
+title: Erstellen eines Toolfensters mit mehreren Instanzen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c31f1c439db69b3795d789758b0604a539ef81
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33585f623f846e16200d430ad2c886fe0874b537
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341626"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739626"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Erstellen eines Toolfensters mit mehreren Instanzen
-Sie können ein Toolfenster programmieren, sodass sie mehrere Instanzen gleichzeitig geöffnet sein können. Standardmäßig haben die Toolfenster nur eine Instanz zu öffnen.
+Sie können ein Toolfenster so programmieren, dass mehrere Instanzen gleichzeitig geöffnet werden können. Standardmäßig kann in Toolfenstern nur eine Instanz geöffnet sein.
 
-Wenn Sie ein Mehrfachinstanz-Toolfenster verwenden, können Sie mehrere verwandte Informationsquellen zur gleichen Zeit anzeigen. Beispielsweise könnten Sie ein mehrzeiliges einfügen <xref:System.Windows.Forms.TextBox> Steuerelement in einem Toolfenster mit mehreren Instanzen, sodass mehrere Codeausschnitte während einer Sitzung Programmierung gleichzeitig zur Verfügung gestellt werden. Auch, z. B. Sie konnte sollen eine <xref:System.Windows.Forms.DataGrid> Steuerelement und ein Dropdown-Liste im Feld ein Mehrfachinstanz-Toolfenster, damit mehrere Echtzeit-Datenquellen gleichzeitig überwacht werden können.
+Wenn Sie ein Toolfenster mit mehreren Instanzen verwenden, können Sie mehrere verwandte Informationsquellen gleichzeitig anzeigen. Sie können z. B. <xref:System.Windows.Forms.TextBox> ein mehrzeiliges Steuerelement in einem Toolfenster mit mehreren Instanzen speichern, sodass mehrere Codeausschnitte während einer Programmiersitzung gleichzeitig verfügbar sind. Außerdem können Sie z. <xref:System.Windows.Forms.DataGrid> B. ein Steuerelement und ein Dropdown-Listenfeld in einem Toolfenster mit mehreren Instanzen speichern, sodass mehrere Echtzeitdatenquellen gleichzeitig nachverfolgt werden können.
 
-## <a name="create-a-basic-single-instance-tool-window"></a>Erstellen eines einfachen Toolfensters (Einzelinstanz)
+## <a name="create-a-basic-single-instance-tool-window"></a>Erstellen eines einfachen (eininstanzigen) Toolfensters
 
-1. Erstellen Sie ein Projekt mit dem Namen **MultiInstanceToolWindow** mithilfe der VSIX-Projektvorlage aus, und fügen Sie der Elementvorlage ein benutzerdefiniertes Tool-Fenster, der mit dem Namen **MIToolWindow**.
+1. Erstellen Sie ein Projekt mit dem Namen **MultiInstanceToolWindow** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Vorlagenvorlage für das Toolfenster mit dem Namen **MIToolWindow**hinzu.
 
     > [!NOTE]
-    > Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Weitere Informationen zum Erstellen einer Erweiterung mit einem Toolfenster finden Sie unter [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-## <a name="make-a-tool-window-multi-instance"></a>Stellen Sie ein Tool-Fenster mit mehreren Instanzen
+## <a name="make-a-tool-window-multi-instance"></a>Erstellen eines Werkzeugfensters mit mehreren Instanzen
 
-1. Öffnen der *MIToolWindowPackage.cs* Datei, und suchen die `ProvideToolWindow` Attribut. und die `MultiInstances=true` Parameter, wie im folgenden Beispiel gezeigt:
+1. Öffnen *MIToolWindowPackage.cs* Sie die MIToolWindowPackage.cs `ProvideToolWindow` Datei, und suchen Sie das Attribut. und `MultiInstances=true` den Parameter, wie im folgenden Beispiel gezeigt:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -44,15 +44,15 @@ Wenn Sie ein Mehrfachinstanz-Toolfenster verwenden, können Sie mehrere verwandt
     {. . .}
     ```
 
-2. In der *MIToolWindowCommand.cs* Datei, suchen die `ShowToolWindos()` Methode. Bei dieser Methode rufen die <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> Methode, und legen dessen `create` flag auf `false` , damit sie vorhandene Instanzen der Tool-Fenster erst einen verfügbaren durchlaufen wird `id` gefunden wird.
+2. Suchen Sie in der `ShowToolWindos()` Datei *MIToolWindowCommand.cs* die Methode. Rufen Sie in <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> dieser Methode `create` die `false` Methode auf, und legen Sie ihr Flag `id` so fest, dass sie durch vorhandene Toolfensterinstanzen iteriert, bis eine verfügbare gefunden wird.
 
-3. Rufen Sie zum Erstellen einer Instanz der Tool-Fenster die <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> Methode, und legen seine `id` auf einen verfügbaren Wert und die zugehörige `create` flag auf `true`.
+3. Um eine Toolfensterinstanz zu <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> erstellen, `id` rufen Sie die `create` Methode `true`auf, und legen Sie sie auf einen verfügbaren Wert und ihr Flag auf fest.
 
-    Standardmäßig wird der Wert des der `id` Parameter der <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> Methode ist `0`. Dieser Wert stellt ein Einzelinstanz-Toolfenster. Für mehr als eine Instanz gehostet werden, jede Instanz müssen eine eigene, eindeutige `id`.
+    Standardmäßig ist `id` `0`der Wert des <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> Parameters der Methode . Dieser Wert macht ein Toolfenster mit einer Instanz. Damit mehr als eine Instanz gehostet werden kann, `id`muss jede Instanz über eine eigene eindeutige Instanz verfügen.
 
-4. Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> Methode für die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> von zurückgegebene Objekt der <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> Eigenschaft der Tool-Fenster-Instanz.
+4. Rufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> Methode für das <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> Objekt auf, das von der Eigenschaft der Toolfensterinstanz zurückgegeben wird.
 
-5. In der Standardeinstellung die `ShowToolWindow` -Methode, die von der Elementvorlage der Tool-Fenster erstellt wird, erstellt ein Einzelinstanz-Toolfenster. Das folgende Beispiel zeigt die Vorgehensweise beim Ändern der `ShowToolWindow` Methode, um mehrere Instanzen erstellen.
+5. Standardmäßig erstellt `ShowToolWindow` die Methode, die von der Werkzeugfensterelementvorlage erstellt wird, ein Toolfenster mit einer Instanz. Das folgende Beispiel zeigt, `ShowToolWindow` wie Sie die Methode ändern, um mehrere Instanzen zu erstellen.
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

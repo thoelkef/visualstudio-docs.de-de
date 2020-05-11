@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Microsoft-Dokumentation
+title: IDebugProgramPublisher2::PublishProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d4f0b279bafe5291679237efdaada7907ddc515
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343375"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721684"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Auf diese Weise wird ein Programm für Debug-Engines (DEs) und sitzungsbasierter Debug-Manager.
+Diese Methode stellt ein Programm für Debugmodule (DEs) und den Sitzungsdebug-Manager zur Verfügung.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,20 +45,20 @@ int PublishProgram(
 
 ## <a name="parameters"></a>Parameter
 `Engines`\
-[in] Ein Array von GUIDs für DEs, die gestartet oder angehängt werden, um dieses Programm kann.
+[in] Ein Array von GUIDs für DEs, die dieses Programm starten oder anfügen können.
 
 `szFriendlyName`\
-[in] Der Anzeigename für das Programm (Dies wird in Menüs oder dem Benutzer angezeigten Dialogfelder angezeigt).
+[in] Freundlicher Name für das Programm (dies wird in Menüs oder Dialogfeldern angezeigt, die dem Benutzer präsentiert werden).
 
 `pDebuggeeInterface`\
-[in] `IUnknown` Schnittstelle für das Programm (dieser Wert wird als ein Cookie verwendet, um die Anwendung eindeutig zu identifizieren, der gleiche Wert wird verwendet, das Programm "Veröffentlichung")
+[in] `IUnknown` Schnittstelle für das Programm (dieser Wert wird als Cookie verwendet, um das Programm eindeutig zu identifizieren; derselbe Wert wird verwendet, um das Programm zu "entveröffentlichen")
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Um ein Programm nicht mehr für das Debuggen verfügbar machen, rufen Sie [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
+## <a name="remarks"></a>Bemerkungen
+ Um ein Programm nicht mehr für das Debuggen verfügbar zu machen, rufen Sie [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)auf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse'
+title: 'Gewusst wie: Auswählen eines Ergebnisrepositorys für Auslastungstests'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,13 +16,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589005"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse
+# <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests
 
 Sie sind nicht auf einen lokalen Ergebnisspeicher beschränkt. Häufig werden Auslastungstests auf einem Remotesatz von Agent-Computern ausgeführt. Agents können zusammen mit einem Controller eine größere simulierte Last generieren als jeder einzelne Computer. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -53,7 +53,7 @@ Testergebnisse von den Agents oder den lokalen Computern können auf einem belie
 
 8. Klicken Sie im Dialogfeld **Testcontroller verwalten** auf **Schließen** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)

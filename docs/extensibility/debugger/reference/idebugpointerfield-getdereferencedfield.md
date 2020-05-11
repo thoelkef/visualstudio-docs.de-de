@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Microsoft-Dokumentation
+title: IDebugPointerField::GetDereferencedField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField::GetDereferencedField method
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fef8ee4e584703338afd09e5303ac184f28b3a49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331611"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725623"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Diese Methode gibt den Typ des Objekts, die auf den dieser Zeiger-Objekt verweist.
+Diese Methode gibt den Objekttyp zurück, auf den dieses Zeigerobjekt verweist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Parameter
 `ppField`\
-[out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) beschreibt den Typ des Zielobjekts.
+[out] Gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Typ des Zielobjekts beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Wenn z. B. die [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) -Objekt verweist auf eine ganze Zahl, die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) von dieser Methode zurückgegebene Typ beschreibt, Integer-Datentyp.
+## <a name="remarks"></a>Bemerkungen
+ Wenn z. B. das [IDebugPointerField-Objekt](../../../extensibility/debugger/reference/idebugpointerfield.md) auf eine ganze Zahl verweist, beschreibt der von dieser Methode [zurückgegebene IDebugField-Typ](../../../extensibility/debugger/reference/idebugfield.md) diesen Ganzzahltyp.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

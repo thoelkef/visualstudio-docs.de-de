@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)'
+title: 'Gewusst wie: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592242"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Vorgehensweise: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Vorgehensweise: Kopieren von Elementen des Klassendiagramms in ein Microsoft Office-Dokument
 
 Sie können Formen aus einem .NET-Klassendiagramm (*CD*-Datei) in andere Dokumente kopieren. Entweder erhalten Sie eine Kopie der Form oder den zugrunde liegenden Code, basierend auf dem Typ des Dokuments, in das Sie sie eingefügt haben. Informationen zum Kopieren von Formen aus UML-Klassendiagrammen in ein Modellierungsprojekt finden Sie unter [Exportieren von Bildern eines Diagramms](../../modeling/export-diagrams-as-images.md).
 
@@ -40,7 +40,7 @@ Klicken Sie mit der rechten Maustaste auf die Form, und wählen Sie **Bild kopie
 
 Sie können auch **Kopieren** anstelle von **Bild kopieren** auswählen. Mit **Kopieren** wird das Bild als Standardbitmap kopiert. Mit **Bild kopieren** wird das Bild als vektorbasiertes Bild kopiert. Dies ist für die meisten Office-Anwendungen besser geeignet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Drucken von Klassendiagrammen](how-to-print-class-diagrams.md)
 - [Vorgehensweise: Exportieren von Klassendiagrammen als Bilder](how-to-export-class-diagrams-as-images.md)

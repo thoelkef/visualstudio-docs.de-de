@@ -1,5 +1,5 @@
 ---
-title: SccCheckout-Funktion | Microsoft-Dokumentation
+title: SccCheckout-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5160a2600a8eb3250702dd0836d812b668a3d1b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6ed809e33a80bf2903c88550e97b28b1e0178bcd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333876"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701104"
 ---
 # <a name="scccheckout-function"></a>SccCheckout-Funktion
-Wenn eine Liste der vollqualifizierten Dateinamen, checkt diese Funktion sie auf dem lokalen Laufwerk. Der Kommentar gilt für alle Dateien, die ausgecheckt werden. Das kommentarargument möglich einen `null` Zeichenfolge.
+Angesichts einer Liste vollqualifizierter Dateinamen werden diese mit dieser Funktion auf dem lokalen Laufwerk ausgecheckt. Der Kommentar gilt für alle ausgecheckten Dateien. Das Kommentarargument kann `null` eine Zeichenfolge sein.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,47 +39,47 @@ SCCRTN SccCheckout (
 ### <a name="parameters"></a>Parameter
  pvContext
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+[in] Die Quellcodeverwaltungs-Plug-In-Kontextstruktur.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
 
  nFiles
 
-[in] Anzahl der Dateien, die ausgecheckt werden sollen.
+[in] Anzahl der dateien, die ausgecheckt werden sollen.
 
  lpFileNames
 
-[in] Array der Namen von voll gekennzeichneter lokaler Pfad von Dateien, die ausgecheckt werden.
+[in] Array mit vollqualifizierten lokalen Pfadnamen von auszucheckenden Dateien.
 
  lpComment
 
-[in] Der Kommentar, der auf die einzelnen ausgewählten Dateien ausgecheckt wird, angewendet werden.
+[in] Kommentar, der auf jede der ausgewählten Dateien angewendet werden soll, die ausgecheckt werden.
 
- Bestanden
+ Foptions
 
-[in] Befehl Flags (finden Sie unter [von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)).
+[in] Befehlsflags (siehe [Bitflags, die von bestimmten Befehlen verwendet werden).](../extensibility/bitflags-used-by-specific-commands.md)
 
  pvOptions
 
-[in] Quellcodeverwaltungs-plug-in spezifischen Optionen.
+[in] Quellcodeverwaltung Plug-in-spezifische Optionen.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Sehen Sie sich war erfolgreich.|
-|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung befindet.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Die Datei wurde nicht ausgecheckt.|
-|SCC_E_ALREADYCHECKEDOUT|Der Benutzer hat bereits die Datei ausgecheckt haben.|
-|SCC_E_FILEISLOCKED|Die Datei ist gesperrt, verbietet die Erstellung neuer Versionen.|
-|SCC_E_FILEOUTEXCLUSIVE|Einem anderen Benutzer hat exklusiv ausgecheckt für diese Datei ausgeführt werden.|
+|SCC_OK|Der Check-out war erfolgreich.|
+|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei befindet sich nicht unter Quellcodeverwaltung.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quellcodeverwaltungssystem ist ein Problem auftritt, wahrscheinlich aufgrund von Netzwerk- oder Konfliktproblemen. Es wird ein Wiederholungsversuch empfohlen.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer darf diesen Vorgang nicht ausführen.|
+|SCC_E_NONSPECIFICERROR|Unspezifischer Fehler. Die Datei wurde nicht ausgecheckt.|
+|SCC_E_ALREADYCHECKEDOUT|Der Benutzer hat die Datei bereits ausgecheckt.|
+|SCC_E_FILEISLOCKED|Die Datei ist gesperrt, was die Erstellung neuer Versionen verhindert.|
+|SCC_E_FILEOUTEXCLUSIVE|Ein anderer Benutzer hat ein exklusives Auschecken für diese Datei durchgeführt.|
 |SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor Abschluss abgebrochen.|
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
-- [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [Bitflags, die von bestimmten Befehlen verwendet werden](../extensibility/bitflags-used-by-specific-commands.md)

@@ -2,25 +2,25 @@
 title: 'Tutorial: Erstellen einer einfachen C#-Konsolen-App'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie eine C#-Konsolen-App in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830009"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "78215432"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -46,7 +46,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
+2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
    (Alternativ können Sie die Tastenkombination **STRG**+**UMSCHALT**+**N** verwenden.)
 
 3. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **C#** auf, und wählen Sie **.NET Core** aus. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei ***Calculator***.
@@ -69,7 +69,7 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Verwenden der Menüleiste „Extras“
 
-1. Schließen Sie das Dialogfeld **Neues Projekt**, und wählen Sie in der oberen Menüleiste **Tools** > **Tools und Features abrufen** aus.
+1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der oberen Menüleiste auf **Tools** > **Tools und Features abrufen**.
 
 1. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
@@ -100,7 +100,7 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *Calculator* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***Calculator* ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „Calculator“](./media/vs-2019/csharp-name-your-calculator-project.png)
 
@@ -133,6 +133,9 @@ Beginnen Sie mit grundlegenden Berechnungen von Integern in C#.
     ```
 
     Beachten Sie dabei, dass Ihnen die IntelliSense-Funktion in Visual Studio die Möglichkeit bietet, den Eintrag automatisch zu vervollständigen.
+
+    > [!NOTE]
+    > In der folgenden Animation soll nicht der obige Code dargestellt werden. Sie dient lediglich zur Veranschaulichung des Features für die automatische Vervollständigung.
 
     ![Animation von Code zur Berechnung von Integern mit der IntelliSense-Funktion für die automatische Vervollständigung in der Visual Studio-IDE](./media/integer-math-intellisense.gif)
 
@@ -268,18 +271,21 @@ Die App gibt allerdings nur Dezimalzahlen als Ergebnis zurück. Gehen Sie daher 
 
 Sie haben nun bereits Ihre einfache App verbessert, allerdings fehlen noch Optionen zur Ausfallsicherheit, um Ausnahmen wie durch den Benutzer verursachte Eingabefehler zu verarbeiten.
 
-Wenn Sie beispielsweise versuchen, eine Zahl durch 0 zu dividieren oder einen Buchstaben eingeben, obwohl die App eine Zahl erwartet (oder umgekehrt), funktioniert die App nicht mehr und gibt einen Fehler zurück.
+Wenn Sie beispielsweise versuchen, eine Zahl durch 0 (null) zu dividieren oder einen Buchstaben eingeben, obwohl die App eine Zahl erwartet (oder umgekehrt), funktioniert die App möglicherweise nicht mehr, gibt einen Fehler zurück oder gibt ein unerwartetes, nicht numerisches Ergebnis zurück.
 
-Nachfolgend werden einige häufige durch den Benutzer verursachte Eingabefehler erläutert, und Sie erfahren, wie Sie diese im Debugger finden und im Code beheben.
+Nachfolgend werden einige häufige durch den Benutzer verursachte Eingabefehler erläutert, und Sie erfahren, wie Sie diese im Debugger finden und im Code beheben, wenn sie auftreten.
 
->[!TIP]
->Weitere Informationen zum Debugger und dessen Funktionsweise finden Sie auf der Seite [Ein erster Blick auf den Visual Studio-Debugger](../../debugger/debugger-feature-tour.md).
+> [!TIP]
+> Weitere Informationen zum Debugger und dessen Funktionsweise finden Sie auf der Seite [Ein erster Blick auf den Visual Studio-Debugger](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Beheben des Fehlers „Division durch Null“
 
-Wenn Sie versuchen, eine Zahl durch 0 zu dividieren, friert die Konsolen-App ein. Dann zeigt Ihnen Visual Studio an, welcher Fehler im Code-Editor aufgetreten ist.
+Wenn Sie versuchen, eine Zahl durch 0 (null) zu dividieren, reagiert die Konsolen-App möglicherweise nicht mehr und zeigt Ihnen dann im Code-Editor, welcher Fehler aufgetreten ist.
 
    ![Der Visual Studio-Code-Editor zeigt den Fehler „Division durch Null“ an](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> In manchen Fällen friert die App nicht ein, und der Debugger zeigt keinen Fehler für die Division durch 0 (null) an. Stattdessen gibt die App womöglich ein unerwartetes, nicht numerisches Ergebnis zurück, z. B. ein Unendlichkeitssymbol. Nichtsdestotrotz gilt die folgende Codekorrektur.
 
 Sie müssen den Code wie folgt bearbeiten, damit dieser Fehler verarbeitet werden kann.
 
@@ -323,15 +329,15 @@ Die `Calculator`-Klasse soll einen Großteil der Rechenarbeit übernehmen, währ
 
 Fangen wir also an.
 
-1. Löschen Sie sämtliche Eingaben *nach* dem folgenden Codeblock:
+1. Löschen Sie im `Calculator`-Namespace den gesamten Inhalt zwischen öffnender und schließender Klammer:
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. Gehen Sie dann wie folgt vor, um eine neue `Calculator`-Klasse hinzuzufügen:

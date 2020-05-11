@@ -1,6 +1,7 @@
 ---
 title: Systemanforderungen für den Visual Studio-Emulator für Android | Microsoft-Dokumentation
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916808"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77272050"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systemvoraussetzungen für den Visual Studio-Emulator für Android
 
@@ -124,7 +126,7 @@ Wenn Ihr Computer und die BIOS-Einstellungen bereits zur Unterstützung von Hype
  Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen.
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>Das Ausführen des Emulators von einer startbaren virtuellen Festplatte wird nicht unterstützt
- Wenn Sie versuchen, eine App im Visual Studio-Emulator für Android auszuführen, während Sie Windows von einer startbaren virtuellen Festplatte ausführen, dauert es in der Regel einige Minuten, bis der Emulator startet, oder beim Start einen Fehler ausgibt. Wenn der Emulator nicht gestartet werden kann, wird folgende Meldung angezeigt: Fehler bei App-Bereitstellung. Versuchen Sie es erneut.
+ Wenn Sie versuchen, eine App im Visual Studio-Emulator für Android auszuführen, während Sie Windows von einer startbaren virtuellen Festplatte ausführen, dauert es in der Regel einige Minuten, bis der Emulator startet, oder beim Start einen Fehler ausgibt. Wenn der Emulator nicht gestartet werden kann, wird folgende Meldung angezeigt: Fehler bei der Bereitstellung der App. Versuchen Sie es erneut.
 
  Diese Konfiguration wird nicht unterstützt. Informationen zu verwandten Problemen finden Sie unter [Fehlerbehebung beim Visual Studio-Emulator für Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
@@ -145,6 +147,6 @@ Im Dateisystem ReFS darf bei den virtuellen Festplattendateien nicht das Integri
 
 Damit der Emulator Aufrufe an die GPU simulieren kann, wie z. B. von OpenGL-ES, muss Ihr Computer eine DirectX-kompatible GPU besitzen und die entsprechenden DirectX-Treiber müssen installiert sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Fehlerbehebung beim Visual Studio-Emulator für Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

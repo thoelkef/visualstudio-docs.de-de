@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926236"
 ---
 # <a name="file-properties-javascript"></a>Dateieigenschaften, JavaScript
@@ -67,7 +67,7 @@ Zeigt den vollständigen Pfad als schreibgeschützten Wert an. Ziehen Sie den Pf
 ## <a name="reference-file-properties"></a>Eigenschaft „Verweisdatei“
 Dieser Abschnitt beschreibt die Eigenschaften, die Dateien gemeinsam haben, auf die von einer UWP-App verwiesen wird, die mit JavaScript erstellt wurde. Wenn Sie im Projektmappen-Explorer einen Verweis auswählen, z.B. eine WINMD-Datei, einen SDK-Verweis, einen Interprojektverweis oder einen Assemblyverweis, werden möglicherweise andere Eigenschaften entsprechend des Dateityps im Eigenschaftenfenster angezeigt.
 
-### <a name="culture"></a>Kultur
+### <a name="culture"></a>culture
 Zeigt die Sprache an, die dem Verweis zugeordnet ist.
 
 ### <a name="file-type"></a>Dateityp
@@ -94,6 +94,6 @@ Zeigt den URI an, der in den HTML- oder JavaScript-Dateien enthalten sein muss, 
 ### <a name="version"></a>Version
 Zeigt die Version des Verweises an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../../ide/managing-project-and-solution-properties.md)

@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115376"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759726"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -237,8 +237,11 @@ Administratoren können Visual Studio auf Clientarbeitsstationen als Teil eines 
 
 Bei der Installation eines Layout werden die installierten Inhalte aus dem Layout abgerufen. Wenn Sie allerdings eine Komponente auswählen, die im Layout fehlt, wird diese aus dem Internet abgerufen.  Falls Sie verhindern möchten, dass das Visual Studio-Setup alle Inhalte, die in Ihrem Layout fehlen, herunterlädt, verwenden Sie die Option `--noWeb`. Wenn `--noWeb` verwendet wird und das Layout nicht über alle Inhalte verfügt, die installiert werden sollen, tritt beim Setup ein Fehler auf.
 
+> [!TIP]
+> Wenn Sie die Installation über eine Offlinequelle oder einen Computer ohne Internetverbindung durchführen möchten, geben Sie die beiden Optionen `--noWeb` und `--noUpdateInstaller` an. Erstere verhindert den Download aktualisierter Workloads, Komponenten und so weiter. Letztere verhindert, dass das Installationsprogramm sich selbst über das Internet aktualisiert.
+
 > [!IMPORTANT]
-> Die `--noWeb`-Option verhindert nicht, dass das Visual Studio-Setup nach Updates sucht. Weitere Informationen finden Sie auf der Seite [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).
+> Die `--noWeb`-Option verhindert nicht, dass das Visual Studio-Setup auf Computern mit Internetverbindung nach Updates sucht. Weitere Informationen finden Sie auf der Seite [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Fehlercodes
 
@@ -280,7 +283,7 @@ Wenn Sie ein Layout für eine ältere Version von Visual Studio erstellen müsse
 
 Wenn ein Problem mit der Offlineinstallation auftritt, möchten wir dies erfahren. Die beste Möglichkeit, uns zu informieren, ist die Verwendung des [Problem melden](../ide/how-to-report-a-problem-with-visual-studio.md)-Tools. Wenn Sie dieses Tool verwenden, können Sie uns die Telemetriedaten und Protokolle senden, die wir benötigen, um uns Diagnose und Behebung des Problems zu erleichtern.
 
-Für installationsbezogene Probleme wird außerdem ein [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous) (nur auf Englisch) als Supportoption angeboten.
+Für installationsbezogene Probleme wird außerdem eine [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous)-Supportoption angeboten (nur auf Englisch).
 
 Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer [Feedback](../ide/feedback-options.md)-Seite.
 
@@ -294,3 +297,4 @@ Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer 
 - [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md)
 - [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
+- [Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate](install-certificates-for-visual-studio-offline.md)

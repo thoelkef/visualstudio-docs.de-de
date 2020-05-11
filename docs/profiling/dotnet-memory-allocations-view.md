@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777376"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
@@ -39,18 +39,18 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
 
 - Klicken Sie mit der rechten Maustaste auf den Typ oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den aktivsten Pfad anzuzeigen.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Name**|Der Name des zugeordneten Typs oder der zugeordneten Funktion.|
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
-|**Prozessname**|Der Prozessname.|
+|**Prozessname**|Der Name des Prozesses.|
 |**Modulname**|Der Name des Moduls, das den Typ oder die Funktion enthält.|
 |**Modulpfad**|Der Pfad des Moduls, das den Typ oder die Funktion enthält.|
 |**Quelldatei**|Die Quelldatei, die die Definition des Typs oder der Funktion enthält.|
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Typdefinition oder der Funktion in der Quelldatei.|
 |**Ebene**|Gibt an, ob die Daten für einen Typ oder eine Funktion gelten.|
 |**Inklusive Speicherbelegungen**|– Bei einer Funktion die Gesamtzahl von Objekten des übergeordneten Typs, die von der Funktion erstellt wurden. Diese Zahl schließt auch Objekte mit ein, die in untergeordneten Funktionen erstellt wurden.<br />– für einen Typ: die Gesamtzahl der Instanzen des Typs, die erstellt wurden.|
-|**Inklusive Speicherbelegungen in %**|– Bei einer Funktion der Anteil aller Objekte, die während der Profilerstellung erstellt wurden und inklusive Belegungen des übergeordneten Typs dieser Funktion waren.<br />– für einen Typ: der Anteil der Gesamtzahl der Objekte, die bei der Profilerstellung erstellt wurden und Instanzen dieses Typs sind.|
+|**Inklusive Zuordnungen in %**|– Bei einer Funktion der Anteil aller Objekte, die während der Profilerstellung erstellt wurden und inklusive Belegungen des übergeordneten Typs dieser Funktion waren.<br />– für einen Typ: der Anteil der Gesamtzahl der Objekte, die bei der Profilerstellung erstellt wurden und Instanzen dieses Typs sind.|
 |**Exklusive Speicherbelegungen**|– Bei einer Funktion die Anzahl von Objekten, die während der Ausführung der Funktion ab Anfang der Aufrufliste erstellt wurden. Diese Zahl schließt die Objekte nicht mit ein, die in untergeordneten Funktionen erstellt wurden.<br />– für einen Typ: die Gesamtzahl der Instanzen des Typs, die erstellt wurden.|
 |**Exklusive Zuordnungen %**|– Bei einer Funktion der Anteil aller Objekte, die während der Profilerstellung erstellt wurden und exklusive Belegungen des übergeordneten Typs dieser Funktion waren.<br />– für einen Typ: der Anteil der Gesamtzahl der Objekte, die bei der Profilerstellung erstellt wurden und Instanzen dieses Typs sind.|
 |**Inklusive Bytes in %**|– für eine Funktion: die Anzahl der Bytes im Arbeitsspeicher, die von der Funktion dem Objekt des übergeordneten Typs zugeordnet wurden. Diese Zahl schließt den Arbeitsspeicher mit ein, der von seinen untergeordneten Funktionen zugeordnet wurde.<br />– Bei einem Typ die Gesamtanzahl der Bytes, die der Profilerstellung für die Instanzen des Typs zugeordnet wurden.|

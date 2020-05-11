@@ -1,44 +1,44 @@
 ---
-title: Service Essentials | Microsoft-Dokumentation
+title: Service Essentials | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8817ca48ff0a3f44a973986a173e647ce89c662c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318690"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705500"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
-Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist selbst eine Auflistung von VSPackages, die Dienste für andere VSPackages bereitstellt.
+Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage stellt einen bestimmten Satz von Schnittstellen für ein anderes VSPackage bereit. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ist selbst eine Sammlung von VSPackages, die Dienste für andere VSPackages bereitstellt.
 
- Sie können z. B. der SVsActivityLog-Dienst verwenden, beim Abrufen einer IVsActivityLog-Schnittstelle, die Sie zum Schreiben in das Aktivitätsprotokoll verwenden können. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../../extensibility/how-to-use-the-activity-log.md).
+ Sie können z. B. den SVsActivityLog-Dienst verwenden, um eine IVsActivityLog-Schnittstelle abzusondern, mit der Sie in das Aktivitätsprotokoll schreiben können. Weitere Informationen finden Sie unter [Gewusst wie: Verwenden des Aktivitätsprotokolls](../../extensibility/how-to-use-the-activity-log.md).
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet außerdem einige integrierte Dienste, die nicht registriert sind. VSPackages können integrierte oder andere Dienste ersetzen Sie dies durch die Bereitstellung von einem Dienst außer Kraft setzen. Nur ein Dienst außer Kraft setzen, ist für jeden Dienst zulässig.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bietet auch einige integrierte Dienste, die nicht registriert sind. VSPackages kann integrierte oder andere Dienste durch die Bereitstellung einer Dienstüberschreibung ersetzen. Für jeden Dienst ist nur eine Dienstüberschreibung zulässig.
 
- Dienste verfügen über keine ermittelbarkeit. Aus diesem Grund benötigen Sie die Dienst-ID (SID) eines Diensts, die Sie nutzen möchten, und Sie müssen wissen, welche Schnittstellen es bietet. Die Referenzdokumentation für den Dienst stellt diese Informationen bereit.
+ Dienste sind nicht auffindbarkeitsfähig. Daher müssen Sie die Dienstkennung (SID) eines Dienstes kennen, den Sie nutzen möchten, und Sie müssen wissen, welche Schnittstellen er bereitstellt. Die Referenzdokumentation für den Dienst stellt diese Informationen bereit.
 
 - VSPackages, die Dienste bereitstellen, werden als Dienstanbieter bezeichnet.
 
-- Dienste, die anderen VSPackages bereitgestellt werden, werden als globale Dienste bezeichnet.
+- Dienste, die anderen VSPackages zur Verfügung gestellt werden, werden als globale Dienste bezeichnet.
 
-- Dienste, die nur für das VSPackage, das sie implementiert, oder auf ein beliebiges Objekt damit erstellten verfügbar sind, werden als lokale Dienste bezeichnet.
+- Dienste, die nur für das VSPackage, das sie implementiert, oder für ein beliebiges Objekt, das sie erstellt werden, verfügbar sind, werden als lokale Dienste bezeichnet.
 
-- Dienste, die integrierten Dienste oder Dienste von anderen Paketen zu ersetzen, werden als dienstüberschreibungen bezeichnet.
+- Dienste, die integrierte Dienste oder Dienste ersetzen, die von anderen Paketen bereitgestellt werden, werden als Dienstüberschreibungen bezeichnet.
 
-- Dienste oder dienstüberschreibungen, bei Bedarf geladen werden, die der Dienstanbieter ist, also geladen, wenn der bereitgestellte Dienst von einem anderen VSPackage angefordert wird.
+- Dienste oder Dienstüberschreibungen werden bei Bedarf geladen, d. h., der Dienstanbieter wird geladen, wenn der von ihm angebotene Dienst von einem anderen VSPackage angefordert wird.
 
-- Um das bedarfsgesteuerte Laden zu unterstützen, registriert ein Dienstanbieter seine globalen Dienste mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter [Vorgehensweise: Geben Sie einen Dienst](../../extensibility/how-to-provide-a-service.md).
+- Um das Laden auf Anforderung zu unterstützen, registriert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ein Dienstanbieter seine globalen Dienste bei . Weitere Informationen finden Sie unter [Gewusst wie: Bereitstellen eines Dienstes](../../extensibility/how-to-provide-a-service.md).
 
-- Verwenden Sie nach dem Erwerb eines Diensts [QueryInterface](/cpp/atl/queryinterface) (nicht verwaltetem Code) oder umwandeln (verwalteter Code), um die gewünschte Schnittstelle, z. B. zu erhalten:
+- Nachdem Sie einen Dienst erhalten haben, verwenden Sie [QueryInterface](/cpp/atl/queryinterface) (nicht verwalteter Code) oder eine Umwandlung (verwalteter Code), um die gewünschte Schnittstelle abzusuchen, z. B.:
 
   ```vb
   TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)
@@ -48,35 +48,35 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
   GetService(typeof(SVsActivityLog)) as IVsActivityLog;
   ```
 
-- Verwalteter Code verweist auf einen Dienst anhand des Typs, auf, während an einen Dienst durch ihre GUID nicht verwalteter Code bezeichnet.
+- Verwalteter Code bezieht sich auf einen Dienst nach seinem Typ, während nicht verwalteter Code von seiner GUID auf einen Dienst verweist.
 
-- Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lädt ein VSPackage, übergibt einen Dienstanbieter für dem VSPackage die VSPackage-Zugriff auf globale Dienste gewähren. Dies wird als "Positionierung" VSPackage bezeichnet.
+- Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ein VSPackage geladen wird, wird ein Dienstanbieter an das VSPackage weitergereicht, um dem VSPackage Zugriff auf globale Dienste zu gewähren. Dies wird als "Sitzen" des VSPackage bezeichnet.
 
-- VSPackages kann es sich um Dienstanbieter für die Objekte sein, die sie erstellen. Ein Formular könnte z. B. eine Anforderung für einen Dienst für die Farbe an die Rahmen, der der Anforderung übergeben kann senden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- VSPackages können Dienstanbieter für die Objekte sein, die sie erstellen. Ein Formular kann z. B. eine Anforderung für einen Farbdienst [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]an seinen Rahmen senden, der die Anforderung an übergibt.
 
-- Verwaltete Objekte, die tief verschachtelt sind, oder überhaupt nicht positioniert können aufgerufen werden <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> für direkten Zugriff auf globale Dienste.
+- Verwaltete Objekte, die tief verschachtelt sind oder <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> überhaupt nicht vorOrt sind, erfordern möglicherweise direkten Zugriff auf globale Dienste.
 
 <a name="how-to-use-getglobalservice"></a>
 
-## <a name="use-getglobalservice"></a>Verwenden von GetGlobalService
+## <a name="use-getglobalservice"></a>GetGlobalService verwenden
 
-Manchmal müssen Sie zum Abrufen eines Diensts aus einem Toolfenster oder steuern, Container, der ist nicht positioniert wurde, andernfalls ist bei einem Dienstanbieter, der nicht über den Dienst kennt gewünschten positioniert wurde. Beispielsweise empfiehlt es sich zum Schreiben in das Aktivitätsprotokoll in einem Steuerelement aus. Weitere Informationen zu diesen und andere Szenarien finden Sie unter [Vorgehensweise: Problembehandlung bei Services](../../extensibility/how-to-troubleshoot-services.md).
+Manchmal müssen Sie einen Dienst aus einem Toolfenster oder Einem Steuerelementcontainer abrufen, der nicht standortgebunden ist, oder sie wurden bei einem Dienstanbieter eingerichtet, der den gewünschten Dienst nicht kennt. Sie können z. B. innerhalb eines Steuerelements in das Aktivitätsprotokoll schreiben. Weitere Informationen zu diesen und anderen Szenarien finden Sie unter [Gewusst wie: Fehlerbehebungsdienste](../../extensibility/how-to-troubleshoot-services.md).
 
-Sie können die meisten Visual Studio-Dienste abrufen, durch Aufrufen der statischen <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Methode.
+Sie können die meisten Visual Studio-Dienste abrufen, indem Sie die statische <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Methode aufrufen.
 
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> basiert auf einem zwischengespeicherten Dienst Anbieter, der zum ersten Mal initialisiert wird jedem VSPackage aus dem Paket abgeleitet positioniert ist. Sie müssen sicherstellen, dass diese Bedingung erfüllt ist, andernfalls ein null-Dienst vorbereitet sein.
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>basiert auf einem zwischengespeicherten Dienstanbieter, der zum ersten Mal initialisiert wird, wenn ein von Package abgeleitetes VSPackage standortbasiert ist. Sie müssen garantieren, dass diese Bedingung erfüllt ist, oder für einen NULL-Dienst vorbereitet sein.
 
-Glücklicherweise <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> ordnungsgemäß in den meisten Fällen funktioniert.
+Glücklicherweise <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> funktioniert die meiste Zeit korrekt.
 
-- Wenn eine VSPackage ein Dienst, der nur auf einem anderen VSPackage bezeichnet bereitstellt, ist das VSPackage, die die Dienste anfordern positioniert, vor dem VSPackage, das, dass der Dienst geladen werden.
+- Wenn ein VSPackage einen Dienst bereitstellt, der nur einem anderen VSPackage bekannt ist, wird das VSPackage, das den Dienst anfordert, vor dem VsPackage, das den Dienst bereitstellt, vor Ort installiert.
 
-- Wenn von einem VSPackage ein Toolfenster erstellt wird, ist das VSPackage positioniert, bevor das Toolfenster erstellt wird.
+- Wenn ein Toolfenster von einem VSPackage erstellt wird, wird das VSPackage vor dem Erstellen des Toolfensters erstellt.
 
-- Wenn ein Toolfenster erstellt, die von einem VSPackage ein Steuerelementcontainer gehostet wird, ist das VSPackage positioniert, bevor der Steuerelement-Container erstellt wird.
+- Wenn ein Steuerelementcontainer von einem Von einem VSPackage erstellten Toolfenster gehostet wird, wird das VSPackage vor dem Erstellen des Steuerelementcontainers sited.
 
-### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Um einen Dienst in einem Werkzeugcontainer Fensters oder Steuerelements zu erhalten.
+### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>So erhalten Sie einen Dienst in einem Werkzeugfenster oder Steuercontainer
 
-- Fügen Sie diesen Code im Konstruktor, Toolfenster oder Control-Containers an:
+- Fügen Sie diesen Code in den Konstruktor, das Werkzeugfenster oder den Steuercontainer ein:
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -90,9 +90,9 @@ Glücklicherweise <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A
     End If
     ```
 
-    Dieser Code Ruft einen Dienst SVsActivityLog und wandelt ihn in eine IVsActivityLog-Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Gewusst wie: Verwenden des Aktivitätsprotokolls](../../extensibility/how-to-use-the-activity-log.md).
+    Dieser Code ruft einen SVsActivityLog-Dienst ab und gibt ihn in eine IVsActivityLog-Schnittstelle um, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Gewusst wie: Verwenden des Aktivitätsprotokolls](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Liste der verfügbaren Dienste](../../extensibility/internals/list-of-available-services.md)
 - [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)

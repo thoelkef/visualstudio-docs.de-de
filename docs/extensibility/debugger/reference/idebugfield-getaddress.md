@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetAddress | Microsoft-Dokumentation
+title: IDebugField::GetAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetAddress method
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0524121d17158471b3e5aa81945a8e11db5ec58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1be3d839cabe3fce07cdd42720306bdac47282f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352636"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729005"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
-Diese Methode ruft die debugadresse eines Felds ab.
+Diese Methode ruft die Debugadresse eines Felds ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,11 +41,11 @@ int GetAddress(
 
 ## <a name="parameters"></a>Parameter
 `ppAddress`\
-[out] Gibt die Adresse als eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Objekt.
+[out] Gibt die Adresse als [IDebugAddress-Objekt](../../../extensibility/debugger/reference/idebugaddress.md) zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls einen Fehlercode zurückgegeben.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls geben Sie einen Fehlercode zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

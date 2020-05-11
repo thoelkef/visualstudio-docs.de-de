@@ -18,18 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594799"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634057"
 ---
 # <a name="generateresource-task"></a>GenerateResource-Aufgabe
+
 Konvertiert zwischen *TXT-* und *RESX*-Dateien (im XML-basierten Ressourcenformat) und binären *RESOURCES*-Dateien der Common Language Runtime, die in eine ausführbare Laufzeitbinärdatei eingebettet oder in Satellitenassemblys kompiliert werden können. Diese Aufgabe dient normalerweise zum Konvertieren von *TXT*- oder *RESX*-Dateien in *RESOURCES*-Dateien. Die `GenerateResource`-Aufgabe ist funktional identisch mit [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
 ## <a name="parameters"></a>Parameter
-In der folgenden Tabelle werden die Parameter der `GenerateResource` -Aufgabe beschrieben.
+
+In der folgenden Tabelle werden die Parameter der `GenerateResource`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -44,10 +46,10 @@ In der folgenden Tabelle werden die Parameter der `GenerateResource` -Aufgabe be
 |`PublicClass`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wird eine stark typisierte Ressourcenklasse als öffentliche Klasse erstellt.|
 |`References`|Optionaler `String[]`-Parameter.<br /><br /> Verweise, aus denen Typen in *RESX*-Dateien geladen werden. Datenelemente der *RESX*-Datei können vom Typ „.NET“ sein. Wenn die *RESX*-Datei gelesen wird, muss dieser aufgelöst werden. In der Regel wird dies mit Typladungsregeln erfolgreich aufgelöst. Wenn Sie in `References` Assemblys angeben, haben diese Vorrang.<br /><br /> Dieser Parameter ist für stark typisierte Ressourcen nicht erforderlich.|
 |`SdkToolsPath`|Optionaler `String`-Parameter.<br /><br /> Legt den Pfad zu den SDK-Tools fest, wie z.B. *resgen.exe*.|
-|`Sources`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu konvertierenden Elemente an. An diesen Parameter übergebene Elemente müssen eine der folgenden Erweiterungen aufweisen:<br /><br /> -    *.txt*: Gibt die Erweiterung für eine zu konvertierende Textdatei an. Textdateien dürfen nur Zeichenfolgenressourcen enthalten.<br />-    *.resx*: Gibt die Erweiterung für eine zu konvertierende XML-basierte Ressourcendatei an.<br />-    *.restext*: Gibt das gleiche Format wie *.txt* an. Diese andere Erweiterung ist nützlich, wenn Sie Quelldateien klar unterscheiden möchten, die Ressourcen aus anderen Quelldateien in Ihrem Buildprozess enthalten.<br />-    *.resources*: Gibt die Erweiterung für eine zu konvertierende Ressourcendatei an.|
+|`Sources`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu konvertierenden Elemente an. An diesen Parameter übergebene Elemente müssen eine der folgenden Erweiterungen aufweisen:<br /><br /> -    *.txt:* Gibt die Erweiterung für eine zu konvertierende Textdatei an. Textdateien dürfen nur Zeichenfolgenressourcen enthalten.<br />-    *.resx:* Gibt die Erweiterung für eine zu konvertierende XML-basierte Ressourcendatei an.<br />-    *.restext:* Gibt das gleiche Format wie *.txt* an. Diese andere Erweiterung ist nützlich, wenn Sie Quelldateien klar unterscheiden möchten, die Ressourcen aus anderen Quelldateien in Ihrem Buildprozess enthalten.<br />-    *.resources:* Gibt die Erweiterung für eine zu konvertierende Ressourcendatei an.|
 |`StateFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt den Pfad zu einer optionalen Cachedatei an, die zum Beschleunigen der Abhängigkeitsprüfung von Verknüpfungen in *RESX*-Eingabedateien verwendet wird.|
 |`StronglyTypedClassName`|Optionaler `String`-Parameter.<br /><br /> Gibt den Klassennamen für die stark typisierte Ressourcenklasse an. Wenn dieser Parameter nicht angegeben ist, wird der Basisname der Ressourcendatei verwendet.|
-|`StronglyTypedFilename`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt den Dateinamen der Quelldatei an. Wenn dieser Parameter nicht angegeben ist, wird der Name der Klasse mit sprachabhängiger Erweiterung als Basisdateiname verwendet. Zum Beispiel: *MyClass.cs*.|
+|`StronglyTypedFilename`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt den Dateinamen der Quelldatei an. Wenn dieser Parameter nicht angegeben ist, wird der Name der Klasse mit sprachabhängiger Erweiterung als Basisdateiname verwendet. Beispiel: *MyClass.cs*.|
 |`StronglyTypedLanguage`|Optionaler `String`-Parameter.<br /><br /> Gibt die Sprache an, die beim Generieren der Klassenquelle für die Ressource mit starker Typisierung verwendet werden soll. Dieser Parameter muss genau mit einer der Sprachen übereinstimmen, die von CodeDomProvider verwendet werden. Beispiel: `VB` oder `C#`.<br /><br /> Mit der Übergabe eines Werts an diesen Parameter weisen Sie die Aufgabe an, stark typisierte Ressourcen zu generieren.|
 |`StronglyTypedManifestPrefix`|Optionaler `String`-Parameter.<br /><br /> Gibt den Ressourcennamespace oder das Manifestpräfix zur Verwendung in der generierten Klassenquelle für die Ressource mit starker Typisierung an.|
 |`StronglyTypedNamespace`|Optionaler `String`-Parameter.<br /><br /> Gibt den Namespace an, der für die generierte Klassenquelle für die Ressource mit starker Typisierung verwendet werden soll. Wenn dieser Parameter nicht angegeben wird, befinden sich alle Ressourcen mit starker Typisierung im globalen Namespace.|
@@ -60,7 +62,8 @@ In der folgenden Tabelle werden die Parameter der `GenerateResource` -Aufgabe be
 |`TrackFileAccess`|Optionaler <xref:System.Boolean>-Parameter.<br /><br /> Wenn „true“, wird das Verzeichnis der Eingabedatei zum Auflösen relativer Dateipfade verwendet.|
 |`UseSourcePath`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wird angegeben, dass das Verzeichnis der Eingabedatei zum Auflösen relativer Dateipfade verwendet werden soll.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
+
 Da *RESX*-Dateien Links zu anderen Ressourcendateien enthalten können, ist es nicht ausreichend, nur die Zeitstempel von *RESX*- und *RESOURCES*-Dateien zu vergleichen, um festzustellen, ob die Ausgaben aktuell sind. Stattdessen folgt die `GenerateResource`-Aufgabe den Links in den *RESX*-Dateien und prüft ebenfalls die Zeitstempel der verknüpften Dateien. Dies bedeutet, dass Sie `Inputs`- und `Outputs`-Attribute nicht allgemein für das Ziel verwenden sollten, das die `GenerateResource`-Aufgabe enthält, da dies dazu führen könnte, dass es übersprungen wird, wenn es tatsächlich ausgeführt werden sollte.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
@@ -68,6 +71,7 @@ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter vo
 Bei der Verwendung von MSBuild 4.0 für .NET 3.5-Projekte könnte bei der Ausführung des Builds auf x86-Ressourcen ein Fehler auftreten. Um dieses Problem zu umgehen, können Sie das Ziel als AnyCPU-Assembly erstellen.
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird die `GenerateResource`-Aufgabe verwendet, um *RESOURCES*-Dateien aus den Dateien zu generieren, die von der `Resx`-Elementsammlung angegeben werden.
 
 ```xml
@@ -94,6 +98,7 @@ Unter der Voraussetzung, dass die Assembly „myAssembly“ genannt wird, generi
 
 Ohne die \<LogicalName>-Metadaten würde die Ressource den Namen *myAssembly.myResource.resources* erhalten.  Dieses Beispiel gilt nur für den Visual Basic- und Visual C#-Buildprozess.
 
-## <a name="see-also"></a>Siehe auch
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Weitere Informationen
+
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

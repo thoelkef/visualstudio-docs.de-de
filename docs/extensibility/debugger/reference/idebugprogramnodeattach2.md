@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNodeAttach2 | Microsoft-Dokumentation
+title: IDebugProgramNodeAttach2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNodeAttach2 interface
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d42b204ee0c36bc4c006704e663f41c87a83a60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d527dfcfcd09e4d70adca86436aa56e1852bee70
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325159"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721822"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
-Ermöglicht es einen Knoten Programm beim Anfügen an das zugeordnete Programm benachrichtigt werden sollen.
+Ermöglicht die Benachrichtigung eines Programmknotens über den Versuch, eine Verbindung an das zugeordnete Programm anzufügen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,33 +29,33 @@ IDebugProgramNodeAttach2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle wird implementiert, für die gleiche Klasse, die implementiert die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle, um einen Anfügevorgang benachrichtigt und bieten eine Möglichkeit zum Abbrechen des Anfügevorgang.
+ Diese Schnittstelle wird auf derselben Klasse implementiert, die die [IDebugProgramNode2-Schnittstelle](../../../extensibility/debugger/reference/idebugprogramnode2.md) implementiert, um eine Benachrichtigung über einen Anfügevorgang zu erhalten und die Möglichkeit zum Abbrechen des Anfügevorgangs bereitzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Rufen Sie diese Schnittstelle durch Aufrufen der `QueryInterface` -Methode in einer [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt. Die [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Methode muss aufgerufen werden, bevor die [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) Methode geben Sie dem Program-Knoten eine Möglichkeit, den anfügungsprozess zu beenden.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Rufen Sie diese `QueryInterface` Schnittstelle ab, indem Sie die Methode in einem [IDebugProgramNode2-Objekt](../../../extensibility/debugger/reference/idebugprogramnode2.md) aufrufen. Die [OnAttach-Methode](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) muss vor der [Attach-Methode](../../../extensibility/debugger/reference/idebugengine2-attach.md) aufgerufen werden, um dem Programmknoten die Möglichkeit zu geben, den Anfügevorgang zu beenden.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Diese Schnittstelle implementiert die folgende Methode:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Fügt an die zugeordnete Anwendung oder den anfügungsprozess, verzögert die [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) Methode.|
+|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Fügt an das zugeordnete Programm an, oder [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) verschiebt den Anfügeprozess an die Attach-Methode.|
 
-## <a name="remarks"></a>Hinweise
- Diese Schnittstelle ist die bevorzugte Alternative zu veralteten [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) Methode. Alle Debug-Engines werden immer geladen, mit der `CoCreateInstance` funktionieren, d. h., sie außerhalb des Adressraums des gedebuggten Programm instanziiert werden.
+## <a name="remarks"></a>Bemerkungen
+ Diese Schnittstelle ist die bevorzugte Alternative zur veralteten [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) Methode. Alle Debug-Module werden `CoCreateInstance` immer mit der Funktion geladen, d. h. sie werden außerhalb des Adressraums des zu debuggenden Programms instanziiert.
 
- Wenn von einer früheren Implementierung der `IDebugProgramNode2::Attach_V7` Methode wurde einfach Festlegen der `GUID` des gedebuggten Programm, klicken Sie dann nur der [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) -Methode implementiert werden muss.
+ Wenn eine vorherige `IDebugProgramNode2::Attach_V7` Implementierung der Methode `GUID` einfach die des zu debuggenden Programms festlegt, muss nur die [OnAttach-Methode](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) implementiert werden.
 
- Wenn in einer früheren Implementierung der `IDebugProgramNode2::Attach_V7` Methode verwendet die Rückrufschnittstelle, die bereitgestellt wurden, und klicken Sie dann diese Funktionalität auf eine Implementierung der verschoben werden muss die [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) Methode und die `IDebugProgramNodeAttach2` Schnittstelle nicht implementiert werden muss.
+ Wenn eine vorherige `IDebugProgramNode2::Attach_V7` Implementierung der Methode die bereitgestellte Rückrufschnittstelle verwendet hat, muss diese Funktionalität in `IDebugProgramNodeAttach2` eine Implementierung der [Attach-Methode](../../../extensibility/debugger/reference/idebugengine2-attach.md) verschoben werden, und die Schnittstelle muss nicht implementiert werden.
 
-## <a name="requirements"></a>Anforderungen
- Header: Msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)

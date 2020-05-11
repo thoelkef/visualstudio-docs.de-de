@@ -1,26 +1,29 @@
 ---
 title: Konvertieren eines anonymen Typs in eine Klasse
-ms.date: 02/13/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f29e31fb87d8b18e7f5a46d16f90217ee08d51f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968530"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094287"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Konvertieren eines anonymen Typs in eine Klasse
 
 Dieses Refactoring gilt für:
 
 - C#
+
+- Visual Basic
 
 **Beschreibung:** Konvertieren eines anonymen Typs in eine Klasse
 
@@ -31,7 +34,7 @@ Dieses Refactoring gilt für:
 ## <a name="how-to"></a>Vorgehensweise
 
 1. Platzieren Sie den Cursor in einem anonymen Typ.
-2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
 
    ![Konvertieren eines anonymen Typs in eine Klasse](media/convert-anon-to-class.png)
 

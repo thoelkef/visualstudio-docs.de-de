@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd670eed61f510998599276e3a44fc7647777b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594135"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio-IDE-64-Bit-Unterstützung
@@ -28,7 +28,7 @@ Unter [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Konfigurieren von Projekten als 64-Bit-Anwendungen
 
-[Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md): In diesem Artikel wird erläutert, wie Projekte als 64-Bit-Anwendungen konfiguriert werden können.
+Unter [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md) wird erläutert, wie Projekte als 64-Bit-Anwendungen konfiguriert werden können.
 
 ## <a name="debug-a-64-bit-application"></a>Debuggen einer 64-Bit-Anwendung
 

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779778"
 ---
 # <a name="call-tree-view---contention-data"></a>Aufrufstrukturansicht: Konfliktdaten
@@ -33,7 +33,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 
  Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Um den Stammknoten auf den ursprünglichen Knoten zurückzusetzen, klicken Sie mit der rechten Maustaste in der Aufrufstrukturansicht, und klicken Sie dann auf **Stamm zurücksetzen**.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Exklusive blockierte Zeit %**|Wie lange die Instanzen dieser Funktion in diesem Ausführungspfad während der Profilerstellung nicht ausgeführt werden konnten. Diese Zeit enthält nicht die Zeit, für die untergeordnete Funktionen blockiert wurden, die von der Funktion aufgerufen wurden.|
 |**Exklusive blockierte Zeit %**|Der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit für diese Funktion in diesem Ausführungspfad entspricht.|
@@ -54,7 +54,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Aufrufstrukturansicht](../profiling/call-tree-view.md)
 - [Aufrufstrukturansicht: Instrumentierungsdaten des .NET-Arbeitsspeichers](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Aufrufstrukturansicht: Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

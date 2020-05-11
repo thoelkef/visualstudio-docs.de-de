@@ -1,32 +1,32 @@
 ---
-title: Angabe des VSPackage-Dateispeicherorts für die VS Shell | Microsoft-Dokumentation
+title: Angeben des VSPackage-Dateispeicherorts für die VS-Shell | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, file location
 - VSPackages, managed package file location
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 601104e484682b7db833f74a3527139ed312e731
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f112da4e79bff06d12472f0af7a3fe47b2f25da4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322447"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704976"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Angeben des VSPackage-Dateispeicherorts für die VS Shell
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muss die Assembly-DLL für das VSPackage lädt, suchen können. Sie können es verschiedene Möglichkeiten, suchen, wie in der folgenden Tabelle beschrieben.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]muss in der Lage sein, die Baugruppen-DLL zu finden, um das VSPackage zu laden. Sie können es auf verschiedene Weise finden, wie in der folgenden Tabelle beschrieben.
 
-| Methode | Beschreibung |
+| Methode | BESCHREIBUNG |
 | - | - |
-| Verwenden Sie den Registrierungsschlüssel der Codebasis. | Der CodeBase-Schlüssel dienen zum direkten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zum Laden der VSPackage-Assembly von jedem beliebigen Pfad vollständig qualifizierten Dateinamen. Der Wert des Schlüssels sollte der Dateipfad zu der DLL. Dies ist die beste Möglichkeit, Sie haben [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Paket-Assembly zu laden. Diese Technik wird manchmal als die "Codebasis privatem Installation Technik für Arbeitsverzeichnisse." bezeichnet Während der Registrierung der Wert der Codebasis an die Attributklassen Registrierung durch eine Instanz der übergeben wird die <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> Typ. |
-| Kopieren Sie die DLL in den **PrivateAssemblies** Verzeichnis. | Platzieren Sie die Assembly in der **PrivateAssemblies** Unterverzeichnis der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verzeichnis. Assemblys im Verzeichnis **"privateassemblies"** werden automatisch erkannt, aber nicht sichtbar in der **Verweise hinzufügen** Dialogfeld. Der Unterschied zwischen **PrivateAssemblies** und **PublicAssemblies** ist, die Assemblys in **PublicAssemblies** werden aufgelistet, der **Verweise hinzufügen**  Dialogfeld. Wenn Sie nicht die Methode "Installationsverzeichnis Codebasis/Private" verwenden möchten, installieren Sie in der **PrivateAssemblies** Verzeichnis. |
-| Verwenden Sie eine Assembly mit starkem Namen und den Registrierungsschlüssel für die Assembly. | Der Schlüssel der Assembly kann verwendet werden, um explizit zu leiten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] namens VSPackage-Assembly einen starken laden. Der Wert des Schlüssels muss der starke Name der Assembly. |
-| Kopieren Sie die DLL in den **PublicAssemblies** Verzeichnis. | Zum Schluss die Assembly auch in platziert werden kann die **PublicAssemblies** Unterverzeichnis. Assemblys im Verzeichnis **PublicAssemblies** automatisch erkannt werden, und wird auch angezeigt, der **Verweise hinzufügen** im Dialogfeld [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> VSPackage-Assemblys sollten nur angeordnet werden, der **PublicAssemblies** Verzeichnis enthalten verwalteten Komponenten, die von anderen Entwicklern VSPackage wiederverwendet werden sollen. Die meisten Assemblys dieses Kriterium nicht erfüllen. |
+| Verwenden Sie den CodeBase-Registrierungsschlüssel. | Der CodeBase-Schlüssel kann [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet werden, um die VSPackage-Assembly aus einem vollqualifizierten Dateipfad zu laden. Der Wert des Schlüssels sollte der Dateipfad zur DLL sein. Dies ist der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] beste Weg, um Ihre Paketassembly zu laden. Diese Technik wird manchmal als "CodeBase/private Installationsverzeichnistechnik" bezeichnet. Während der Registrierung wird der Wert der Codebasis über eine <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> Instanz des Typs an die Registrierungsattributklassen übergeben. |
+| Platzieren Sie die DLL im **PrivateAssemblies-Verzeichnis.** | Platzieren Sie die Assembly im **Unterverzeichnis PrivateAssemblies** des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verzeichnisses. Assemblys, die sich in **PrivateAssemblies** befinden, werden automatisch erkannt, sind aber im Dialogfeld **Referenzen** hinzufügen nicht sichtbar. Der Unterschied zwischen **PrivateAssemblies** und **PublicAssemblies** besteht darin, dass Assemblys in **PublicAssemblies** im Dialogfeld **Referenzen hinzufügen** aufgelistet werden. Wenn Sie die Technik "CodeBase/privates Installationsverzeichnis" nicht verwenden möchten, sollten Sie die Installation im **PrivateAssemblies-Verzeichnis** durchführen. |
+| Verwenden Sie eine Assembly mit starkem Namen und den Assemblyregistrierungsschlüssel. | Der Assemblyschlüssel kann verwendet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] werden, um explizit zum Laden einer starken VSPackage-Assembly zu leiten. Der Wert des Schlüssels sollte der starke Name der Assembly sein. |
+| Platzieren Sie die DLL im **PublicAssemblies-Verzeichnis.** | Schließlich kann die Assembly auch im **Unterverzeichnis PublicAssemblies** abgelegt werden. Assemblys in **PublicAssemblies** werden automatisch erkannt und **Add References** werden auch [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]im Dialogfeld Referenzen hinzufügen in angezeigt.<br /><br /> VSPackage-Assemblys sollten nur dann im **PublicAssemblies-Verzeichnis** platziert werden, wenn sie verwaltete Komponenten enthalten, die von anderen VSPackage-Entwicklern wiederverwendet werden sollen. Die Mehrheit der Versammlungen erfüllt dieses Kriterium nicht. |
 
 > [!NOTE]
-> Mit starkem Namen, signierte Assemblys für alle Ihre abhängigen Assemblys. Diese Assemblys sollten auch in Ihrem eigenen Verzeichnis oder im globalen Assemblycache (GAC) installiert werden. Dies schützt vor verursacht einen Konflikt mit Assemblys, die den gleichen Basisdateinamen, Weak-namensbindung genannt haben.
+> Verwenden Sie stark benannte, signierte Assemblys für alle abhängigen Assemblys. Diese Assemblys sollten auch in Ihrem eigenen Verzeichnis oder im globalen Assemblycache (GAC) installiert werden. Dies schützt vor Konflikten mit Assemblys mit demselben Basisdateinamen, der als "Schwachname-Bindung" bezeichnet wird.

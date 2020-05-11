@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584490"
 ---
 # <a name="load-test-results-summary-overview"></a>Übersicht der Auslastungstestergebnisse
 
-Nachdem Sie einen Auslastungstest ausgeführt haben, können Sie die Zusammenfassung des Auslastungstests anzeigen, um einen schnellen Überblick über die Ergebnisse zu erhalten. In der Zusammenfassung des Auslastungstests werden die wichtigsten Ergebnisse in einem kompakten und leicht lesbaren Format dargestellt. Sie können die Zusammenfassung des Auslastungstests auch ausdrucken. Dies ist hilfreich, wenn Sie Ergebnisse an Projektbeteiligte weitergeben möchten. Die Zusammenfassung des Auslastungstests ist auch die Standardansicht, wenn Sie das Auslastungstestergebnis eines zuvor ausgeführten Auslastungstest öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md).
+Nachdem Sie einen Auslastungstest ausgeführt haben, können Sie die Zusammenfassung des Auslastungstests anzeigen, um einen schnellen Überblick über die Ergebnisse zu erhalten. In der Zusammenfassung des Auslastungstests werden die wichtigsten Ergebnisse in einem kompakten und leicht lesbaren Format dargestellt. Sie können die Zusammenfassung des Auslastungstests auch ausdrucken. Dies ist hilfreich, wenn Sie Ergebnisse an Projektbeteiligte weitergeben möchten. Die Zusammenfassung des Auslastungstests ist auch die Standardansicht, wenn Sie das Auslastungstestergebnis eines zuvor ausgeführten Auslastungstest öffnen. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Zusammenfassungsansicht](../test/media/ltest_summaryview.png)
 
@@ -37,11 +37,11 @@ Die Zusammenfassung des Auslastungstests ist in Abschnitte unterteilt. Die erste
 
 - Gesamtergebnisse
 
-- Wichtige Statistiken: 5 langsamste Seiten
+- Hauptstatistik: Fünf langsamste Seiten
 
-- Wichtige Statistiken: 5 langsamste Tests
+- Hauptstatistik: Fünf langsamste Tests
 
-- Wichtige Statistiken: 5 langsamsten SQL-Vorgänge
+- Hauptstatistik: Fünf langsamste SQL-Vorgänge
 
     > [!NOTE]
     > Der Abschnitt über SQL-Vorgänge wird nur angezeigt, wenn die SQL-Ablaufverfolgung im Auslastungstest aktiviert wurde.
@@ -68,19 +68,19 @@ Der Abschnitt mit Testlaufinformationen enthält allgemeine Informationen zur Au
 
 Der Abschnitt über Gesamtergebnisse enthält Zusammenfassungsergebnisse des Tests, einschließlich der Anzahl der Anforderungen pro Sekunde, der Gesamtanzahl der fehlgeschlagenen Anforderungen, der durchschnittlichen Antwortzeit sowie der durchschnittlichen Seitenzeit.
 
-## <a name="key-statistic-top-5-slowest-pages"></a>Wichtige Statistiken: 5 langsamste Seiten
+## <a name="key-statistic-top-5-slowest-pages"></a>Schlüsselstatistik: die 5 langsamsten Seiten
 
-Der Abschnitt zu den langsamsten Seiten enthält die fünf langsamsten Seiten im Auslastungstest. Die URL und die durchschnittliche Seitenladezeit werden pro Seite angezeigt. Die Seiten werden in absteigender Reihenfolge aufgelistet. Sie können die URL einer Seite auswählen, um die Tabelle **Seiten** zu öffnen und weitere Details dieser Seite zu überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Der Abschnitt zu den langsamsten Seiten enthält die fünf langsamsten Seiten im Auslastungstest. Die URL und die durchschnittliche Seitenladezeit werden pro Seite angezeigt. Die Seiten werden in absteigender Reihenfolge aufgelistet. Sie können die URL einer Seite auswählen, um die Tabelle **Seiten** zu öffnen und weitere Details dieser Seite zu überprüfen. Weitere Informationen finden Sie unter [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit von Websites)](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 Der Prozentwert für **95% Seitenzeit (Sek.)** gibt an, das 95% der Seiten schneller als in dieser Zeit in Sekunden fertiggestellt wurden.
 
-## <a name="key-statistic-top-5-slowest-tests"></a>Wichtige Statistiken: 5 langsamste Tests
+## <a name="key-statistic-top-5-slowest-tests"></a>Schlüsselstatistik: die 5 langsamsten Tests
 
 Der Abschnitt zu den langsamsten Tests enthält die fünf langsamsten Tests im Auslastungstest. Testname und durchschnittliche Testzeit werden pro Test angezeigt. Die Tests werden in absteigender Reihenfolge aufgelistet. Sie können den Namen eines Tests auswählen, um die Tabelle **Tests** zu öffnen und weitere Details dieses Tests zu überprüfen. Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 Der Prozentwert für **95% Testzeit (Sek.)** gibt an, das 95% der Tests schneller als in dieser Zeit in Sekunden abgeschlossen wurden.
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>Wichtige Statistiken: 5 langsamsten SQL-Vorgänge
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>Schlüsselstatistik: die 5 langsamsten SQL-Vorgänge
 
 Wenn die SQL-Ablaufverfolgung im Auslastungstest aktiviert ist, enthält der Abschnitt zu den langsamsten Abfragen die fünf langsamsten Abfragen im Auslastungstest. Der Name des Vorgangs und die Dauer werden pro Test angezeigt. Die Dauer wird in Mikrosekunden (SQL Server 2005) oder in Millisekunden (SQL Server 2000 und früher) angezeigt. Die Tests werden in absteigender Reihenfolge nach Dauer aufgelistet. Sie können den Namen eines Vorgangs auswählen, um die Tabelle **SQL-Ablaufverfolgung** zu öffnen und weitere Details dieses Vorgangs zu überprüfen. Weitere Informationen finden Sie in der [Datentabelle zur SQL-Ablaufverfolgung](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
@@ -93,7 +93,7 @@ Der Abschnitt über Testergebnisse enthält eine Liste aller im Auslastungstests
 
 ## <a name="page-results"></a>Seitenergebnisse
 
-Der Abschnitt über Seitenergebnisse enthält eine Liste aller im Auslastungstest enthaltenen Webseiten. URL, Szenario, Testname, durchschnittliche Seitenzeit und Anzahl werden angezeigt. Sie können die URL einer Seite auswählen, um die Tabelle **Seiten** zu öffnen und weitere Details dieser Seite zu überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Der Abschnitt über Seitenergebnisse enthält eine Liste aller im Auslastungstest enthaltenen Webseiten. URL, Szenario, Testname, durchschnittliche Seitenzeit und Anzahl werden angezeigt. Sie können die URL einer Seite auswählen, um die Tabelle **Seiten** zu öffnen und weitere Details dieser Seite zu überprüfen. Weitere Informationen finden Sie unter [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit von Websites)](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Sie können diesen Abschnitt reduzieren oder erweitern, indem Sie den Pfeil links neben dem Abschnittstitel auswählen.
@@ -136,7 +136,7 @@ Der Abschnitt über Fehler enthält eine Liste aller Fehler, die während des Au
 
 Sie können die Zusammenfassung des Auslastungstests ausdrucken, indem Sie im Kontextmenü der Zusammenfassung auf **Drucken** klicken. Sie können eine Vorschau des Druck anzeigen, indem Sie im Kontextmenü der Zusammenfassung auf **Seitenansicht** klicken. Sie können auch direkt aus der Seitenansicht drucken.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Analysieren von Verstößen gegen Schwellenwertregeln](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

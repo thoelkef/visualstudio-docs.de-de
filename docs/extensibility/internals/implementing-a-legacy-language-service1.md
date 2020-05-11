@@ -1,55 +1,55 @@
 ---
-title: Implementieren eines Legacysprachdiensts 1 | Microsoft-Dokumentation
+title: Implementieren eines Legacy-Sprachdienstes1 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 626838b0e82846f66b817465fca2df353af42dd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3805e49ffa83f7dea2ee58ef36e1bc8e48b1eaa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707696"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementieren eines Legacysprachdiensts
-Sie können einen legacysprache-Dienst implementiert, der eine Vielzahl von Funktionen unterstützt Klassen in das managed Package Framework (MPF) verwenden, wie syntaxhervorhebung, zugehörige Klammern und IntelliSense-Vervollständigung.
+Sie können Klassen im Managed Package Framework (MPF) verwenden, um einen älteren Sprachdienst zu implementieren, der eine Vielzahl von Features unterstützt, z. B. Syntaxhervorhebung, Klammerabgleich und IntelliSense-Vervollständigung.
 
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).
+ Ältere Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Möglichkeit zum Implementieren von Sprachdienstfunktionen besteht darin, MEF-Erweiterungen zu verwenden. Weitere Informationen zur neuen Möglichkeit zum Implementieren eines Sprachdienstes finden Sie unter [Editor- und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
+> Es wird empfohlen, die neue Editor-API so schnell wie möglich zu verwenden. Dadurch wird die Leistung Ihres Sprachdienstes verbessert und Sie können die neuen Editorfunktionen nutzen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Übersicht über Legacysprachdienste](../../extensibility/internals/legacy-language-service-overview.md)
 
- Eine Übersicht über die Dienst-Sprachfunktionen, die in MPF unterstützt werden.
+ Eine Übersicht über die Sprachdienstfeatures, die in MPF unterstützt werden.
 
 - [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
- Beschreibt, was zu einen Sprachdienst zu implementieren, indem Sie mithilfe von MPF erforderlich ist.
+ Beschreibt, was zum Implementieren eines Sprachdienstes mithilfe von MPF erforderlich ist.
 
 - [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)
 
- Beschreibt die Schritte, die erforderlich sind, registrieren Sie eine MPF-basierten Sprachdienst mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Beschreibt die Schritte, die zum Registrieren eines MPF-basierten Sprachdienstes bei [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]erforderlich sind.
 
 - [Parser und Scanner von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 
- Beschreibt die zwei Parser, die erforderlich sind, um alle Features von einem Sprachdienst zu implementieren, mithilfe des MPFS.
+ Beschreibt die beiden Parser, die erforderlich sind, um alle Features eines Sprachdienstes mithilfe der MPF zu implementieren.
 
 - [Exemplarische Vorgehensweise: Erstellen eines Legacysprachdiensts](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
 
- Enthält die grundlegenden Schritte, die erforderlich sind, eine MPF-Sprachdienst in einem VSPackage implementiert.
+ Enthält die grundlegenden Schritte, die zum Implementieren eines MPF-Sprachdienstes in einem VSPackage erforderlich sind.
 
 - [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
- Zeigt die Techniken zum Abrufen einer Liste der installierten Codeausschnitte an.
+ Veranschaulicht die Techniken zum Abrufen einer Liste installierter Codeausschnitte.
 
 - [Funktionen von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)
 
- Enthält Links zu Themen mit Details, um alle Features von einem Sprachdienst zu implementieren, indem Sie mithilfe von MPF durchgeführt werden müssen.
+ Enthält Links zu Themen, in denen detailliert beschrieben wird, was zum Implementieren aller Features eines Sprachdienstes mithilfe von MPF getan werden muss.

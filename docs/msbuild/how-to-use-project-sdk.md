@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verweisen auf ein MSBuild-Projekt-SDK | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verweis auf MSBuild-Projekt-SDK | Microsoft-Dokumentation'
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76826470"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Vorgehensweise: Verwenden von MSBuild-Projekt SDKs
@@ -126,7 +126,7 @@ Der NuGet-basierte SDK-Resolver unterstützt die Angabe einer Version in der Dat
 
 Nur eine Version jedes Projekt-SDK kann während eines Builds verwendet werden. Wenn Sie auf zwei unterschiedliche Versionen desselben Projekt-SDK verweisen, gibt MSBuild eine Warnung aus. Sie sollten **keine** Version in Ihren Projekten angeben, wenn die Datei *global.json* eine Versionsangabe enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
 - [Customize your build (Anpassen Ihres Builds)](../msbuild/customize-your-build.md)

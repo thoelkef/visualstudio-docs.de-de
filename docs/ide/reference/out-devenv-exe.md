@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568010"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -41,7 +41,7 @@ devenv /Out FileName
 
   Erforderlich. Der Pfad und der Name der Datei, die beim Erstellen einer ausführbaren Datei die Ausgabe empfangen soll.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein nicht vorhandener Dateiname angegeben wird, wird die Datei automatisch erstellt. Andernfalls ist die Datei bereits vorhanden, und die Ergebnisse werden an die vorhandenen Inhalte der Datei angefügt.
 
@@ -55,7 +55,7 @@ In diesem Beispiel wird `MySolution` ausgeführt, und es werden Fehler in die `M
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
 - [/Run („devenv.exe“)](../../ide/reference/run-devenv-exe.md)

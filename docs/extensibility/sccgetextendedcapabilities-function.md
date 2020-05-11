@@ -1,5 +1,5 @@
 ---
-title: SccGetExtendedCapabilities-Funktion | Microsoft-Dokumentation
+title: SccGetExtendedCapabilities-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa6a067a0b9e8358f503228dbc53e20586b84468
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353667"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700726"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities-Funktion
-Diese Funktion gibt die zusätzliche Funktionen, die von das Quellcodeverwaltungs-Plug-in unterstützt werden.
+Diese Funktion gibt zusätzliche Funktionen zurück, die vom Quellcodeverwaltungs-Plug-In unterstützt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,30 +33,30 @@ SCCRTN SccGetExtendedCapabilities(
 ```
 
 ### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+[in] Der Kontextzeiger für die Quellcodeverwaltung.
 
  lSccExCaps
 
-[in] Ein Flag, das eine erweiterte Funktion, die zu überprüfende angibt (siehe die Tabelle erweiterte Funktion Code im [funktionsflags](../extensibility/capability-flags.md) für die möglichen Flags).
+[in] Ein Flag, das eine erweiterte Funktion angibt, für die getestet werden soll (siehe die Tabelle Extended Capability Code in [Capability-Flags](../extensibility/capability-flags.md) für die möglichen Flags).
 
- pbSupported
+ pbUnterstützt
 
-[out] Ungleich NULL zurück (`TRUE`) Wenn die angegebene Funktion unterstützt wird; andernfalls wird NULL (`FALSE`).
+[out] Gibt einen Wert`TRUE`ungleich Null zurück ( ), wenn die angegebene Funktion unterstützt wird; Andernfalls wird Null`FALSE`zurückgegeben ( ).
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Der Vorgang des Get-Funktion, die erfolgreich abgeschlossen.|
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Unbekannte oder nicht angegebene Fehler ist aufgetreten.|
+|SCC_OK|Der Get-Fähigkeitsvorgang wurde erfolgreich abgeschlossen.|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Unbekannter oder nicht angegebener Fehler ist aufgetreten.|
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird bei Bedarf aufgerufen. also wenn eine Funktion getestet werden muss, wird diese Methode aufgerufen, um zu bestimmen, ob, die Funktion unterstützt wird. Nur ein Flag zu einem Zeitpunkt angegeben wird.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird bei Bedarf aufgerufen; Wenn also eine Funktion getestet werden muss, wird diese Methode aufgerufen, um zu bestimmen, ob diese Funktion unterstützt wird. Es wird jeweils nur ein Flag angegeben.
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
 - [Fehlercodes](../extensibility/error-codes.md)
-- [Funktionsflags](../extensibility/capability-flags.md)
+- [Fähigkeitsflags](../extensibility/capability-flags.md)

@@ -1,36 +1,36 @@
 ---
-title: 'Neue Projektgenerierung: In die Hintergründe, Teil 2 | Microsoft-Dokumentation'
+title: 'Neue Projektgeneration: Unter der Haube, Teil 2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ea614be39456f5d6a31ea6c9c12221b4db09bbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311018"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707022"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2
 
-In [Generieren neuer Projekte: In die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) erläutert, wie die **neues Projekt** Dialogfeld Feld wird gefüllt. Angenommen, Sie haben ausgewählt eine **Visual C#-Windows-Anwendung**, ausgefülltes der **Namen** und **Speicherort** Textfelder, und klicken auf OK.
+In [New Project Generation: Under the Hood, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) haben wir gesehen, wie das Dialogfeld Neues **Projekt** ausgefüllt wird. Angenommen, Sie haben eine **Visual C-Windows-Anwendung**ausgewählt, die Textfelder **Name** und **Position** ausgefüllt und auf OK geklickt.
 
-## <a name="generating-the-solution-files"></a>Zum Erstellen der Projektmappendateien
- Auswählen einer Anwendungsvorlage leitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entzippen und öffnen die entsprechende VSTEMPLATE-Datei, und starten Sie eine Vorlage, um die XML-Befehle in dieser Datei zu interpretieren. Diese Befehle erstellen Projekte und Projektelemente in der neuen oder vorhandenen Projektmappe ein.
+## <a name="generating-the-solution-files"></a>Generieren der Lösungsdateien
+ Wenn Sie eine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Anwendungsvorlage auswählen, wird die entsprechende .vstemplate-Datei entpackt und geöffnet und eine Vorlage zum Interpretieren der XML-Befehle in dieser Datei gestartet. Mit diesen Befehlen werden Projekte und Projektelemente in der neuen oder vorhandenen Projektmappe erstellt.
 
- Die Vorlage entpackt Quelldateien namens Elementvorlagen, aus dem gleichen ZIP-Ordner, der die VSTEMPLATE-Datei enthält. Die Vorlage übernimmt diese Dateien in das neue Projekt, und sie entsprechend anpassen.
+ Die Vorlage entpackt Quelldateien, so genannte Elementvorlagen, aus demselben ZIP-Ordner, der die .vstemplate-Datei enthält. Die Vorlage kopiert diese Dateien in das neue Projekt und passt sie entsprechend an.
 
-### <a name="template-parameter-replacement"></a>Vorlage Parameter ersetzt
- Wenn die Vorlage eine Item-Vorlage in ein neues Projekt kopiert, ersetzt Vorlagenparameter durch Zeichenfolgen zum Anpassen der das. Ein Vorlagenparameter ist eine spezielle Token, das vorangestellt ist, und ein Dollarzeichen gefolgt sind, z. B. $date$.
+### <a name="template-parameter-replacement"></a>Vorlagenparameter-Ersetzung
+ Wenn die Vorlage eine Elementvorlage in ein neues Projekt kopiert, werden alle Vorlagenparameter durch Zeichenfolgen ersetzt, um die Datei anzupassen. Ein Vorlagenparameter ist ein spezielles Token, dem ein Dollarzeichen vorangestellt und gefolgt wird, z. B. $date.
 
- Betrachten Sie eine typische Projektelementvorlage aus. Extrahieren Sie und untersuchen Sie die Datei "Program.cs" im Ordner "Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".
+ Sehen wir uns eine typische Projektelementvorlage an. Extrahieren und untersuchen Sie Program.cs im Ordner "Programmdateien" ,,Microsoft Visual Studio 8' "Common7"IDE,ProjectTemplates, "CSharp", "Windows" und "WindowsApplication.zip".
 
 ```csharp
 using System;
@@ -46,7 +46,7 @@ namespace $safeprojectname$
 }
 ```
 
-Wenn Sie ein neues Windows-Anwendungsprojekt mit dem Namen einfach erstellen, die Vorlage ersetzt die `$safeprojectname$` Parameter mit dem Namen des Projekts.
+Wenn Sie ein neues Windows-Anwendungsprojekt mit dem `$safeprojectname$` Namen Einfach erstellen, ersetzt die Vorlage den Parameter durch den Namen des Projekts.
 
 ```csharp
 using System;
@@ -64,8 +64,8 @@ namespace Simple
 
  Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../../ide/template-parameters.md).
 
-## <a name="a-look-inside-a-vstemplate-file"></a>Ein Einblick in ein. VSTemplate-Datei
- Eine einfache VSTEMPLATE-Datei weist Folgendes Format auf
+## <a name="a-look-inside-a-vstemplate-file"></a>Ein Blick in eine . VSTemplate-Datei
+ Eine einfache .vstemplate-Datei hat dieses Format
 
 ```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
@@ -76,9 +76,9 @@ namespace Simple
 </VSTemplate>
 ```
 
- Wir haben uns über die \<TemplateData > im Abschnitt der [Generieren neuer Projekte: In die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Die in diesem Abschnitt werden verwendet, um die Darstellung der steuern die **neues Projekt** Dialogfeld.
+ Wir haben \<uns den Abschnitt TemplateData> in der [neuen Projektgeneration: Unter der Haube, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)angesehen. Die Tags in diesem Abschnitt werden verwendet, um die Darstellung des Dialogfelds **Neues Projekt** zu steuern.
 
- Die Tags in der \<TemplateContent > im Abschnitt Steuerelement der Generierung von neuen Projekten und Projektelementen. Hier ist die \<TemplateContent > aus der cswindowsapplication.vstemplate-Datei im Ordner "\Programme\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".
+ Die Tags \<im Abschnitt TemplateContent> steuern die Generierung neuer Projekte und Projektelemente. Hier ist \<der Abschnitt TemplateContent> aus der Datei cswindowsapplication.vstemplate im Ordner "Programmdateien" , Microsoft Visual Studio 8, "Common7", "IDE"-Projektvorlagen, "CSharp", "Windows" und "WindowsApplication.zip".
 
 ```xml
 <TemplateContent>
@@ -112,26 +112,26 @@ namespace Simple
 </TemplateContent>
 ```
 
- Die \<Projekt >-Tag steuert die Generierung von ein Projekt, und die \<ProjectItem > Tag steuert die Generierung eines Projektelements. Wenn der Parameter ReplaceParameters auf "true" festgelegt ist, wird die Vorlage alle Vorlagenparameter in der Projektdatei oder das Element anpassen. In diesem Fall werden alle Projektelemente, mit Ausnahme von Settings.settings angepasst.
+ Das \<Project>-Tag steuert die Generierung \<eines Projekts, und das ProjectItem>-Tag steuert die Generierung eines Projektelements. Wenn der Parameter ReplaceParameters true ist, passt die Vorlage alle Vorlagenparameter in der Projektdatei oder dem Projektelement an. In diesem Fall werden alle Projektelemente angepasst, mit Ausnahme von Settings.settings.
 
- Der TargetFileName-Parameter gibt den Namen und den relativen Pfad der resultierende Projektdatei oder des Elements. Dadurch können Sie eine Ordnerstruktur für das Projekt zu erstellen. Wenn Sie dieses Argument nicht angeben, müssen das Projektelement den gleichen Namen wie der Projektelementvorlage.
+ Der Parameter TargetFileName gibt den Namen und den relativen Pfad der resultierenden Projektdatei oder des resultierenden Elements an. Auf diese Weise können Sie eine Ordnerstruktur für Ihr Projekt erstellen. Wenn Sie dieses Argument nicht angeben, hat das Projektelement denselben Namen wie die Projektelementvorlage.
 
- Windows-Anwendung Ordnerstruktur sieht folgendermaßen aus:
+ Die resultierende Windows-Anwendungsordnerstruktur sieht wie folgt aus:
 
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
 
- Die erste und einzige \<Projekt >-Tag in die Vorlage liest:
+ Das erste \<und einzige Project>-Tag in der Vorlage lautet:
 
 ```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
- Dies weist die neuen Projektvorlage die Projektdatei Simple.csproj durch Kopieren und Anpassen der Vorlage Element windowsapplication.csproj erstellen.
+ Dadurch wird die Vorlage "Neues Projekt" angewiesen, die Projektdatei Simple.csproj zu erstellen, indem das Vorlagenelement windowsapplication.csproj kopiert und angepasst wird.
 
-### <a name="designers-and-references"></a>Designer und Verweise
- Sie können im Projektmappen-Explorer sehen, dass der Ordner "Properties" vorhanden ist und die erwarteten Dateien enthält. Aber wie sieht es mit Projekt verweist, und Designer-dateiabhängigkeiten, z. B. "Resources.Designer.cs", "Resources.resx" und "Form1.Designer.cs" auf "Form1.cs"?  Diese werden in der Datei Simple.csproj eingerichtet, wenn sie erstellt wird.
+### <a name="designers-and-references"></a>Designer und Referenzen
+ Sie können im Projektmappen-Explorer sehen, dass der Eigenschaftenordner vorhanden ist und die erwarteten Dateien enthält. Aber was ist mit Projektverweisen und Designerdateiabhängigkeiten, z. B. Resources.Designer.cs zu Resources.resx und Form1.Designer.cs zu Form1.cs?  Diese werden in der Datei Simple.csproj eingerichtet, wenn sie generiert wird.
 
- Hier ist die \<ItemGroup > von Simple.csproj, die die Projektverweisen erstellt:
+ Hier ist \<die ItemGroup-> von Simple.csproj, die die Projektreferenzen erstellt:
 
 ```xml
 <ItemGroup>
@@ -144,7 +144,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Sie können sehen, dass diese die sechs Projektverweise, die im Projektmappen-Explorer angezeigt werden. Hier ist ein Abschnitt von einem anderen \<ItemGroup >. Viele Codezeilen wurden aus Gründen der Übersichtlichkeit gelöscht. In diesem Abschnitt werden die Settings.Designer.cs Settings.settings abhängig:
+ Sie können sehen, dass dies die sechs Projektverweise sind, die im Projektmappen-Explorer angezeigt werden. Hier ist ein Abschnitt \<aus einem anderen ItemGroup->. Viele Codezeilen wurden aus Gründen der Übersichtlichkeit gelöscht. In diesem Abschnitt wird Settings.Designer.cs von Einstellungen abhängig.
 
 ```xml
 <ItemGroup>
@@ -154,7 +154,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

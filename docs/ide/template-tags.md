@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189550"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153029"
 ---
 # <a name="add-tags-to-project-templates"></a>Hinzufügen von Tags zu Projektvorlagen
 
@@ -56,7 +56,7 @@ Möglicherweise möchten Sie Tags zur *.vstemplate*-XML-Datei Ihrer Projektvorla
 
 In erweiterten Benutzerszenarien können die folgenden optionalen Attribute verwendet werden:
 
-|Attribut|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Package`|Eine GUID, die die Visual Studio-Paket-ID angibt.|
 |`ID`|Gibt die Visual Studio-Ressourcen-ID an.|
@@ -77,7 +77,7 @@ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Erforderlich) Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
@@ -93,7 +93,7 @@ Visual Studio umfasst verschiedene integrierte Tags. Wenn Sie ein integriertes T
 
 Die folgende Liste zeigt die in Visual Studio verfügbaren integrierten Tags. Zugehörige Werte werden in Klammern angezeigt.
 
-| Sprache | Plattform | Projekttyp: |
+| Tag für Sprache | Tag für Plattform | Tag für Projekttyp |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Cloud (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Console (`console`) |

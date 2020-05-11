@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft-Dokumentation
+title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339367"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714718"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
-Gibt die Debug-Startflags an.
+# <a name="launch_flags"></a>LAUNCH_FLAGS
+Gibt die Debugstartflags an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,29 +48,29 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>Felder
 `LAUNCH_DEBUG`\
-Startet den Prozess für das Debuggen.
+Startet den Prozess zum Debuggen.
 
 `LAUNCH_NODEBUG`\
-Startet den Prozess ohne es zu debuggen.
+Startet den Prozess, ohne ihn zu debuggen.
 
 `LAUNCH_ENABLE_ENC`\
-VERALTET, VERWENDEN SIE NICHT.
+VERALTET, NICHT VERWENDEN.
 
 `LAUNCH_MERGE_ENV`\
-Startet den Prozess und führt die Umgebung mit dem Host starten.
+Startet den Prozess und führt die Umgebung mit dem startenden Host zusammen.
 
-## <a name="remarks"></a>Hinweise
-Diese Werte werden übergeben, als Argument an die [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Diese Werte werden als Argument an die [LaunchSuspended-Methode](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) übergeben.
 
-Diese Flags können kombiniert werden, mit einer bitweisen `OR`.
+Diese Flags können mit einem `OR`bitwise kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778049"
 ---
 # <a name="understand-sampling-data-values"></a>Grundlagen zu Samplingdatenwerten
@@ -52,5 +52,5 @@ Der prozentuale Anteil der Gesamtanzahl exklusiver Samplings in der Profilerstel
 
 ## <a name="see-also"></a>Siehe auch
 
-[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
+[How to: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
 [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

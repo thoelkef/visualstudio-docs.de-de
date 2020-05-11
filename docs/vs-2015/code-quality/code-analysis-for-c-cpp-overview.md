@@ -19,15 +19,15 @@ helpviewer_keywords:
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 caps.latest.revision: 27
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 1ce41cd1c0dabc94658b83aa5e2bcdc08d005fdb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740238"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77275356"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Übersicht über die Codeanalyse für C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

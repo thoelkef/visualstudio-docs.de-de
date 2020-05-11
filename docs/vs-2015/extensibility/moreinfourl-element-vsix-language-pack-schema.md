@@ -1,5 +1,5 @@
 ---
-title: MoreInfoURL-Element (Schema für VSIX-Sprachpaket) | Microsoft-Dokumentation
+title: MoreInfoUrl-Element (VSIX-Sprachpaket Schema) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b80f1f90f3e661b0bbd09fadf173cb171cd97df
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c583d67e1920080f11158a4001e191e93e234006
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695487"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476843"
 ---
-# <a name="moreinfourl-element-vsix-language-pack-schema"></a>MoreInfoURL-Element (Schema für VSIX-Sprachpaket)
+# <a name="moreinfourl-element-vsix-language-pack-schema"></a>MoreInfoUrl-Element (Schema für das VSIX-Sprachpaket)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dies ist optional. Ein Link zum lokalisierte Informationen über die Erweiterung.  
+Optional. Ein Link zu lokalisierten Informationen über die Erweiterung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -27,39 +27,39 @@ Dies ist optional. Ein Link zum lokalisierte Informationen über die Erweiterung
 ```  
   
 ## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
+ In den folgenden Abschnitten werden die Attribute, untergeordneten und übergeordneten Elemente beschrieben.  
   
-### <a name="attributes"></a>Attribute  
+### <a name="attributes"></a>Attributes  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
-|Keiner||  
+|Keine||  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|Keiner||  
+|Keine||  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[VSIX-LanguagePack-Element](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Erforderlich. Stellt das Stammelement für ein VSIX-Sprachpaket bereit.|  
+|[VSIX-LanguagePack-Element](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Erforderlich. Stellt das Stamm Element für ein VSIX-Sprachpaket bereit.|  
   
 ## <a name="text-value"></a>Textwert  
- Dies ist optional. Ein Link zu einer Website. Der Link ist eine Textzeichenfolge.  
+ Optional. Ein Link zu einer Website. Der Link ist eine Text Zeichenfolge.  
   
 ## <a name="element-information"></a>Elementinformationen  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Namespace    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
-|   Schemaname   |                 Schema für das VSIX-Sprachpaket                 |
+|    Namespace    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Name des Schemas   |                 VSIX-Sprachpaket Schema                 |
 | Validierungsdatei |                VSIXLanguagePackSchema.xsd                 |
-|  Leer kann sein   |                      Nicht zutreffend                       |
+|  Kann leer sein   |                      Nicht verfügbar                       |
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz für VSX Sprachpaket](../extensibility/vsx-language-pack-schema-reference.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz für das VSX-Sprachpaket](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)   
- [Referenz zum VSIX-Erweiterung Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [VSIX-Erweiterungs Schema 1,0-Referenz](/previous-versions/dd393700(v=vs.110))

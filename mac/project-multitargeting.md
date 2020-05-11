@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 12/12/2019
 ms.assetid: 2a561af4-f1fe-493e-9a53-aa6d77d15498
 ms.openlocfilehash: 3d1372ab5bd08ce164352293ec9d341ca567e3d5
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75439043"
 ---
 # <a name="projects-with-multiple-target-frameworks"></a>Projekte mit mehreren Zielframeworks
@@ -75,7 +75,7 @@ Beim Schreiben von Code werden Warnungen in den Vorschlägen für die automatisc
 
 ![Eine in IntelliSense angezeigte Warnmeldung, dass eine API für ein bestimmtes Zielframework nicht verwendet werden kann. Beispieltext: namespace System.Buffers, SharedUtils (netstandard2.0) – Nicht verfügbar. Sie können den Kontext über die Navigationsleiste wechseln.](media/project-multitargeting-intellisense-warnings.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über Frameworkziele (Windows)](/visualstudio/ide/visual-studio-multi-targeting-overview)
 - [Zielframeworks in Projekten im SDK-Format](/dotnet/standard/frameworks#how-to-specify-target-frameworks)

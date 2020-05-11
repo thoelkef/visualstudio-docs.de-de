@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft-Dokumentation
+title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e3b12ecbc75b7d07d60ac399412dc5b0deb73b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351685"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732254"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Gibt einen Code-Speicherort-Bezeichner für einen bestimmten Code-Kontext zurück.
+Gibt einen Codepositionsbezeichner für einen bestimmten Codekontext zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,19 +43,19 @@ int GetCodeLocationId( 
 
 ## <a name="parameters"></a>Parameter
 `pCodeContext`\
-[in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das auf einen Bezeichner konvertiert werden.
+[in] Ein [IDebugCodeContext2-Objekt,](../../../extensibility/debugger/reference/idebugcodecontext2.md) das in einen Bezeichner konvertiert werden soll.
 
-`puCodeLocationId` [out] Gibt den Code-Ort-Bezeichner. Siehe Hinweise.
+`puCodeLocationId`[out] Gibt den Codepositionsbezeichner zurück. Siehe Hinweise.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_CODE_CONTEXT_OUT_OF_SCOPE` , wenn der Codekontext gültig ist, aber außerhalb des Bereichs.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_CODE_CONTEXT_OUT_OF_SCOPE` zurück, wenn der Codekontext gültig, aber außerhalb des Bereichs ist.
 
-## <a name="remarks"></a>Hinweise
- Der Standortbezeichner Code bezieht sich auf die Debug-Engine (DE) unterstützt die Disassembly. Diese Standortbezeichner wird intern vom die DE verwendet, um Positionen im Code zu verfolgen und ist in der Regel eine Adresse oder einen Offset irgendeiner Art. Die einzige Voraussetzung ist, sofern der Codekontext von einem Speicherort, die kleiner als der Codekontext von einem anderen Speicherort ist dann der entsprechende Code geographical Location Identifier des ersten Codekontext auch der Bezeichner des zweiten Code Kontexts Speicherort muss niedriger als sein.
+## <a name="remarks"></a>Bemerkungen
+ Die Codepositionskennung ist spezifisch für das Debugmodul (DE), das die Demontage unterstützt. Dieser Positionsbezeichner wird intern von der DE verwendet, um Positionen im Code nachzuverfolgen, und ist in der Regel eine Adresse oder ein Offset irgendeiner Art. Die einzige Voraussetzung ist, dass, wenn der Codekontext eines Speicherorts kleiner als der Codekontext eines anderen Speicherorts ist, der entsprechende Codespeicherortbezeichner des ersten Codekontexts auch kleiner sein muss als der Codespeicherortbezeichner des zweiten Codekontexts.
 
- Rufen Sie zum Abrufen der Codekontext geographical Location Identifier ein Code die [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) Methode.
+ Um den Codekontext eines Codepositionsbezeichners abzurufen, rufen Sie die [GetCodeContext-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) auf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

@@ -1,5 +1,5 @@
 ---
-title: Wie VSPackages Benutzeroberflächenelemente hinzufügen | Microsoft-Dokumentation
+title: Wie VSPackages Benutzeroberflächenelemente hinzufügen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,36 +7,36 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1109d6aecf2bc89f72377b282be0182c1e677ed0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311953"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649599"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Wie VSPackages Benutzeroberflächenelemente hinzufügen
-Eine VSPackage hinzufügen Elemente der Benutzeroberfläche (UI), z. B. Menüs, Symbolleisten und Toolfenster in Visual Studio mit der die *VSCT* Datei.
+Ein VSPackage kann Visual Studio mithilfe der *.vsct-Datei* Benutzeroberflächenelemente hinzufügen, z. B. Menüs, Symbolleisten und Toolfenster.
 
- Finden Sie Richtlinien zum Entwerfen von UI-Elementen an [Richtlinien zur benutzerfreundlichkeit Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+Entwurfsrichtlinien für UI-Elemente finden Sie unter [Visual Studio-Benutzeroberflächenrichtlinien](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
-## <a name="the-visual-studio-command-table-architecture"></a>Die Tabelle-Architektur von Visual Studio-Befehl
- Wie bereits erwähnt, unterstützt der-Tabelle befehlsarchitektur die vorstehenden architektonischen Prinzipien. Die Grundsätze hinter der Abstraktionen, Datenstrukturen und Tools von der-Tabelle befehlsarchitektur lauten wie folgt aus:
+## <a name="the-visual-studio-command-table-architecture"></a>Die Visual Studio-Befehlstabellenarchitektur
+Wie bereits erwähnt, unterstützt die Befehlstabellenarchitektur die vorstehenden architekturischen Prinzipien. Die Grundsätze für die Abstraktionen, Datenstrukturen und Werkzeuge der Befehlstabellenarchitektur lauten wie folgt:
 
-- Es gibt drei grundlegende Arten von Elementen: Menüs, Befehle und Gruppen. Menüs können in der Benutzeroberfläche wie Menüs, Untermenüs, Symbolleisten und Toolfenster verfügbar gemacht werden. Befehle sind Prozeduren, die der Benutzer kann in der IDE ausführen, und sie können als Menüelemente, Schaltflächen, Listenfelder oder andere Steuerelemente verfügbar gemacht werden. Gruppen sind Container für Menüs und Befehle.
+- Es gibt drei grundlegende Arten von Elementen: Menüs, Befehle und Gruppen. Menüs können in der Benutzeroberfläche als Menüs, Untermenüs, Symbolleisten oder Toolfenster verfügbar gemacht werden. Befehle sind Prozeduren, die der Benutzer in der IDE ausführen kann, und sie können als Menüelemente, Schaltflächen, Listenfelder oder andere Steuerelemente verfügbar gemacht werden. Gruppen sind Container für Menüs und Befehle.
 
-- Jedes Element wird durch eine Definition angegeben, die beschreibt, das Element, dessen Priorität relativ zu anderen Elementen und die Flags, die das Verhalten zu ändern.
+- Jedes Element wird durch eine Definition angegeben, die das Element, seine Priorität relativ zu anderen Elementen und die Flags, die sein Verhalten ändern, beschreibt.
 
-- Jedes Element verfügt über eine Platzierung, die das übergeordnete Element des Elements beschreibt. Ein Element kann über mehrere übergeordnete Elemente, verfügen, damit er an mehreren Standorten in der Benutzeroberfläche angezeigt werden kann.
+- Jedes Element verfügt über eine Platzierung, die das übergeordnete Element des Elements beschreibt. Ein Element kann mehrere Eltern haben, sodass es an mehreren Speicherorten in der Benutzeroberfläche angezeigt werden kann.
 
-     Jeder Befehl muss eine Gruppe als übergeordnetes verfügen, auch wenn es das einzige untergeordnete Element in dieser Gruppe ist. Jede Standardmenü muss auch eine übergeordnete Gruppe verfügen. Fungieren als ihre eigenen Eltern, Symbolleisten und Toolfenster. Eine Gruppe kann als das übergeordnete Element der wichtigsten Visual Studio-Menüleiste oder alle Menüs, Symbolleiste oder Toolfenster aufweisen.
+Jeder Befehl muss eine Gruppe als übergeordnetes Element haben, auch wenn er das einzige untergeordnete Element in dieser Gruppe ist. Jedes Standardmenü muss auch über eine übergeordnete Gruppe verfügen. Symbolleisten und Werkzeugfenster fungieren als ihre eigenen Eltern. Eine Gruppe kann als übergeordnete seradiensals Element die Visual Studio-Hauptmenüleiste oder ein beliebiges Menü, eine Symbolleiste oder ein beliebiges Toolfenster haben.
 
-### <a name="how-items-are-defined"></a>Wie die Elemente definiert werden
- Ein *VSCT* Datei ist im XML-Format formatiert. Definiert die Elemente der Benutzeroberfläche für ein Paket und bestimmt, in dem diese Elemente in der IDE angezeigt werden. Jedes Menü, eine Gruppe oder ein Befehl in das Paket wird zuerst zugewiesen, eine GUID und ID in der `Symbols` Abschnitt. Im weiteren Verlauf der *VSCT* -Datei, jedes Menü, Befehl und -Gruppe wird durch die Kombination seiner GUID und ID identifiziert. Das folgende Beispiel zeigt eine typische `Symbols` im Abschnitt über die Visual Studio-Paketvorlage generiert bei einem **Menübefehl** in der Vorlage ausgewählt ist.
+### <a name="how-items-are-defined"></a>Wie Elemente definiert werden
+Eine *.vsct-Datei* ist in XML formatiert. Es definiert die UI-Elemente für ein Paket und bestimmt, wo diese Elemente in der IDE angezeigt werden. Jedem Menü, jeder Gruppe oder jedem Befehl im Paket wird `Symbols` im Abschnitt zunächst eine GUID und EINE ID zugewiesen. Im Weiteren Verlauf der *.vsct-Datei* wird jedes Menü, jeder Befehl und jede Gruppe durch die Kombination aus GUID und ID identifiziert. Das folgende Beispiel `Symbols` zeigt einen typischen Abschnitt, der von der Visual Studio-Paketvorlage generiert wird, wenn ein **Menübefehl** in der Vorlage ausgewählt ist.
 
 ```xml
 <Symbols>
@@ -45,12 +45,11 @@ Eine VSPackage hinzufügen Elemente der Benutzeroberfläche (UI), z. B. Menüs, 
 
   <!-- This is the guid used to group the menu commands together -->
   <GuidSymbol name="guidMenuTextCmdSet" value="{a633d4e4-6c65-4436-a138-1abeba7c9a69}">
-
     <IDSymbol name="MyMenuGroup" value="0x1020" />
     <IDSymbol name="cmdidMyCommand" value="0x0100" />
   </GuidSymbol>
 
-  <GuidSymbol name="guidImages" value="{53323d9a-972d-4671-bb5b-9e418480922f}" >
+  <GuidSymbol name="guidImages" value="{53323d9a-972d-4671-bb5b-9e418480922f}">
     <IDSymbol name="bmpPic1" value="1" />
     <IDSymbol name="bmpPic2" value="2" />
     <IDSymbol name="bmpPicSearch" value="3" />
@@ -60,48 +59,46 @@ Eine VSPackage hinzufügen Elemente der Benutzeroberfläche (UI), z. B. Menüs, 
 </Symbols>
 ```
 
- Element der obersten Ebene der `Symbols` Abschnitt ist die [GuidSymbol-Element](../../extensibility/guidsymbol-element.md). `GuidSymbol` kartenelemente Namen zu GUIDs, die von der IDE verwendet werden, um Pakete und ihre Bestandteile zu identifizieren.
+Das Element der obersten `Symbols` Ebene des Abschnitts ist das [GuidSymbol-Element](../../extensibility/guidsymbol-element.md). `GuidSymbol`Elemente ordnen GUIDs, die von der IDE zum Identifizieren von Paketen und deren Komponenten verwendet werden, Namen zu.
 
 > [!NOTE]
-> GUIDs werden über die Visual Studio-Paketvorlage automatisch generiert. Sie können auch eine eindeutige GUID erstellen, indem Sie auf **GUID erstellen** auf die **Tools** Menü.
+> GUIDs werden automatisch von der Visual Studio-Paketvorlage generiert. Sie können auch eine eindeutige GUID erstellen, indem Sie im Menü **Extras** auf **GUID erstellen** klicken.
 
- Die erste `GuidSymbol` Element `guid<PackageName>Pkg`, ist die GUID des Pakets selbst. Dies ist die GUID, die von Visual Studio zum Laden des Pakets verwendet wird. Es ist in der Regel keine untergeordneten-Elemente enthalten.
+Das `GuidSymbol` erste `guid<PackageName>Pkg`Element, , ist die GUID des Pakets selbst. Dies ist die GUID, die von Visual Studio zum Laden des Pakets verwendet wird. In der Regel enthält es keine untergeordneten Elemente.
 
- Gemäß der Konvention, Menüs und Befehle unter einer Sekunde gruppiert werden `GuidSymbol` Element `guid<PackageName>CmdSet`, Bitmaps sind unter einer dritten `GuidSymbol` Element `guidImages`. Sie müssen keine dieser Konvention folgen, aber jedes Menü, Gruppe, Befehl und Bitmap muss ein untergeordnetes Element von einem `GuidSymbol` Element.
+Gemäß der Konvention werden Menüs und `GuidSymbol` Befehle `guid<PackageName>CmdSet`unter einem zweiten Element `GuidSymbol` gruppiert, `guidImages`und Bitmaps befinden sich unter einem dritten Element, . Sie müssen diese Konvention nicht befolgen, aber jedes Menü, jede Gruppe, `GuidSymbol` jeder Befehl und jede Bitmap muss ein untergeordnetes Element eines Elements sein.
 
- In der zweiten `GuidSymbol` -Element, das den Befehlssatz Paket darstellt, sind mehrere `IDSymbol` Elemente. Jede [IDSymbol-Element](../../extensibility/idsymbol-element.md) ordnet einen Namen in einen numerischen Wert und ein Menü, eine Gruppe oder ein Befehl, der Teil der Befehl ist darstellen kann. Die `IDSymbol` Elemente in der dritten `GuidSymbol` Element darstellen Bitmaps, die als Symbole für Befehle verwendet werden kann. Da GUID-ID-Paaren in einer Anwendung, die keine zwei untergeordnete Elemente des gleichen eindeutig sein müssen `GuidSymbol` Element möglicherweise den gleichen Wert aufweisen.
+Im zweiten `GuidSymbol` Element, das den Paketbefehlssatz darstellt, befinden sich mehrere `IDSymbol` Elemente. Jedes [IDSymbol-Element](../../extensibility/idsymbol-element.md) ordnet einen Namen einem numerischen Wert zu und kann ein Menü, eine Gruppe oder einen Befehl darstellen, die Teil des Befehlssatzes sind. Die `IDSymbol` Elemente im `GuidSymbol` dritten Element stellen Bitmaps dar, die als Symbole für Befehle verwendet werden können. Da GUID/ID-Paare in einer Anwendung eindeutig sein `GuidSymbol` müssen, dürfen keine zwei untergeordneten Elemente desselben Elements denselben Wert haben.
 
 ### <a name="menus-groups-and-commands"></a>Menüs, Gruppen und Befehle
- Wenn ein Menü, Gruppe oder den Befehl wird eine GUID und ID aufweist, können sie der IDE hinzugefügt werden. Jedes Benutzeroberflächenelement muss über Folgendes verfügen:
+Wenn ein Menü, eine Gruppe oder ein Befehl über eine GUID und ID verfügt, kann es der IDE hinzugefügt werden. Jedes UI-Element muss über die folgenden Punkte verfügen:
 
-- Ein `guid` Attribut, das den Namen des entspricht der `GuidSymbol` -Element, das das Element der Benutzeroberfläche unter definiert ist.
+- Ein `guid` Attribut, das mit `GuidSymbol` dem Namen des Elements übereinstimmt, unter dem das UI-Element definiert ist.
 
-- Ein `id` Attribut, das den Namen des zugeordneten entspricht `IDSymbol` Element.
+- Ein `id` Attribut, das mit `IDSymbol` dem Namen des zugeordneten Elements übereinstimmt.
 
-     Zusammen, die `guid` und `id` compose-Attribute der *Signatur* des UI-Elements.
+Zusammen bilden `guid` `id` die und-Attribute die *Signatur* des UI-Elements.
 
-- Ein `priority` -Attribut, das die Platzierung des UI-Elements in der übergeordneten Menüs oder einer Gruppe bestimmt.
+- Ein `priority` Attribut, das die Platzierung des UI-Elements im übergeordneten Menü oder in der übergeordneten Gruppe bestimmt.
 
-- Ein [übergeordnetes Element](../../extensibility/parent-element.md) , bei dem `guid` und `id` Attribute, die die Signatur des übergeordneten Menüs oder der Gruppe angeben.
+- Ein [übergeordnetes](../../extensibility/parent-element.md) `guid` Element `id` mit Attributen, die die Signatur des übergeordneten Menüs oder der übergeordneten Gruppe angeben.
 
 #### <a name="menus"></a>Menüs
- Jedes Menü wird definiert, wie eine [Menu-Element](../../extensibility/menu-element.md) in die `Menus` Abschnitt. Menüs müssen `guid`, `id`, und `priority` Attribute, und ein `Parent` -Element, und auch die folgenden zusätzlichen Attribute und untergeordnete Elemente:
+Jedes Menü wird im `Menus` Abschnitt als [Menüelement](../../extensibility/menu-element.md) definiert. Menüs müssen `guid` `id`, `priority` und Attribute sowie `Parent` ein Element sowie die folgenden zusätzlichen Attribute und untergeordneten Elemente aufweisen:
 
-- Ein `type` Attribut, das angibt, ob Sie im Menü in der IDE als eine Art von Menü oder eine Symbolleiste angezeigt werden soll.
+- Ein `type` Attribut, das angibt, ob das Menü in der IDE als eine Art Menü oder als Symbolleiste angezeigt werden soll.
 
-- Ein [Strings-Element](../../extensibility/strings-element.md) , enthält eine [ButtonText-Element](../../extensibility/buttontext-element.md), dem gibt den Titel des Menüs an, in der IDE und ein [CommandName-Element](../../extensibility/commandname-element.md), die angibt, dass der Name, ist verwendet die **Befehl** Fenster aus, um das Menü zuzugreifen.
+- Ein [Strings-Element,](../../extensibility/strings-element.md) das ein [ButtonText-Element](../../extensibility/buttontext-element.md)enthält, das den Titel des Menüs in der IDE angibt, und ein [CommandName-Element](../../extensibility/commandname-element.md), das den Namen angibt, der im **Befehlsfenster** für den Zugriff auf das Menü verwendet wird.
 
-- Optionale Kennzeichen. Ein [CommandFlag-Element](../../extensibility/command-flag-element.md) kann in einem menüdefinition so ändern Sie seine Darstellung oder Verhalten in der IDE angezeigt werden.
+- Optionale Flags. Ein [CommandFlag-Element](../../extensibility/command-flag-element.md) kann in einer Menüdefinition angezeigt werden, um seine Darstellung oder sein Verhalten in der IDE zu ändern.
 
-  Jede `Menu` Element muss eine Gruppe als übergeordnetes aufweisen, es sei denn, es sich um ein andockbares Element wie z. B. eine Symbolleiste ist. Ein andockbares Menü ist eigenes übergeordnetes Element. Weitere Informationen zu Menüs und Werte für die `type` Attribut, finden Sie unter den [Menu-Element](../../extensibility/menu-element.md) Dokumentation.
+Jedes `Menu` Element muss eine Gruppe als übergeordnetes Element haben, es sei denn, es handelt sich um ein andockbares Element, z. B. eine Symbolleiste. Ein andockbares Menü ist sein eigenes übergeordnetes Menü. Weitere Informationen zu Menüs und `type` Werten für das Attribut finden Sie in der [Menüelementdokumentation.](../../extensibility/menu-element.md)
 
-  Das folgende Beispiel zeigt eine im angezeigten Menü auf der Menüleiste von Visual Studio neben der **Tools** Menü.
+Das folgende Beispiel zeigt ein Menü, das in der Visual Studio-Menüleiste neben dem Menü **Extras** angezeigt wird.
 
 ```xml
-<Menu guid="guidTopLevelMenuCmdSet"
-id="TopLevelMenu" priority="0x700" type="Menu">
-  <Parent guid="guidSHLMainMenu"
-          id="IDG_VS_MM_TOOLSADDINS" />
+<Menu guid="guidTopLevelMenuCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
+  <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
   <Strings>
     <ButtonText>TestMenu</ButtonText>
     <CommandName>TestMenu</CommandName>
@@ -110,22 +107,20 @@ id="TopLevelMenu" priority="0x700" type="Menu">
 ```
 
 #### <a name="groups"></a>Gruppen
- Eine Gruppe ist ein Element, das in definiert ist die `Groups` Teil der *VSCT* Datei. Gruppen sind lediglich Container. Sie werden nicht in der IDE außer als eine Trennlinie in einem Menü angezeigt. Aus diesem Grund eine [Group-Element](../../extensibility/group-element.md) wird nur durch die Signatur, eine Priorität und ein übergeordnetes Element definiert.
+Eine Gruppe ist ein Element, `Groups` das im Abschnitt der *.vsct-Datei* definiert ist. Gruppen sind nur Container. Sie werden in der IDE nur als Trennlinie in einem Menü angezeigt. Daher wird ein [Group-Element](../../extensibility/group-element.md) nur durch seine Signatur, Priorität und übergeordnete neratondefiniert.
 
- Eine Gruppe kann ein Menü, eine andere Gruppe oder selbst als übergeordnetes Element aufweisen. Allerdings ist das übergeordnete Element in der Regel ein Menü oder Symbolleiste. Klicken Sie im Menü im vorangehenden Beispiel ist ein untergeordnetes Element des der `IDG_VS_MM_TOOLSADDINS` Gruppe und die Gruppe ist ein untergeordnetes Element von der Visual Studio-Menüleiste. Die Gruppe im folgenden Beispiel wird ein untergeordnetes Element des Menüs im vorherigen Beispiel.
+Eine Gruppe kann ein Menü, eine andere Gruppe oder sich selbst als übergeordnete Gruppe haben. Das übergeordnete Element ist jedoch in der Regel ein Menü oder eine Symbolleiste. Das Menü im vorherigen Beispiel ist `IDG_VS_MM_TOOLSADDINS` ein untergeordnetes Element der Gruppe, und diese Gruppe ist ein untergeordnetes Element der Visual Studio-Menüleiste. Die Gruppe im folgenden Beispiel ist ein untergeordnetes Element des Menüs im vorherigen Beispiel.
 
 ```xml
- <Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup"
-priority="0x0600">
-   <Parent guid="guidTopLevelMenuCmdSet" id="TopLevelMenu"/>
- </Group>
+<Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" priority="0x0600">
+  <Parent guid="guidTopLevelMenuCmdSet" id="TopLevelMenu"/>
+</Group>
 ```
 
- Da sie Teil eines Menüs ist, würde diese Gruppe in der Regel Befehle enthalten. Es kann jedoch auch andere Menüs enthalten. Dies ist wie Untermenüs definiert werden, wie im folgenden Beispiel gezeigt.
+Da es Teil eines Menüs ist, enthält diese Gruppe in der Regel Befehle. Es könnte jedoch auch andere Menüs enthalten. Auf diese Weise werden Untermenüs definiert, wie im folgenden Beispiel gezeigt.
 
 ```xml
-<Menu guid="guidTopLevelMenuCmdSet" id="SubMenu"
-priority="0x0100" type="Menu">
+<Menu guid="guidTopLevelMenuCmdSet" id="SubMenu" priority="0x0100" type="Menu">
   <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup"/>
   <Strings>
     <ButtonText>Sub Menu</ButtonText>
@@ -135,12 +130,12 @@ priority="0x0100" type="Menu">
 ```
 
 #### <a name="commands"></a>Befehle
- Ein Befehl, der für der IDE bereitgestellt wird, wird definiert, entweder als eine [Schaltflächenelement](../../extensibility/button-element.md) oder [Combo-Element](../../extensibility/combo-element.md). Und in einem Menü oder einer Symbolleiste angezeigt wird, muss der Befehl eine Gruppe als übergeordnete Klasse verfügen.
+Ein Befehl, der der IDE zur Verfügung gestellt wird, wird entweder als [Button-Element](../../extensibility/button-element.md) oder als [Combo-Element](../../extensibility/combo-element.md)definiert. Um in einem Menü oder einer Symbolleiste angezeigt zu werden, muss der Befehl eine Gruppe als übergeordnete Gruppe haben.
 
 ##### <a name="buttons"></a>Schaltflächen
- Schaltflächen sind definiert, der `Buttons` Abschnitt. Ein Menüelement, Schaltfläche oder anderen Element, das ein Benutzer klickt, um das Ausführen eines einzelnen Befehls gilt eine Schaltfläche. Einige Schaltflächentypen können auch Funktionen enthalten. Schaltflächen sind dem gleichen erforderlichen und optionalen Attributen die Menüs zu haben, und kann sogar eine [Icon-Element](../../extensibility/icon-element.md) , der angibt, die GUID und ID der Bitmap, die die Schaltfläche in der IDE darstellt. Weitere Informationen zu Schaltflächen und ihre Attribute finden Sie unter den [Buttons-Element](../../extensibility/buttons-element.md) Dokumentation.
+Schaltflächen sind `Buttons` im Abschnitt definiert. Jedes Menüelement, jede Schaltfläche oder ein anderes Element, auf das ein Benutzer klickt, um einen einzelnen Befehl auszuführen, wird als Schaltfläche betrachtet. Einige Schaltflächentypen können auch Listenfunktionen enthalten. Schaltflächen verfügen über dieselben erforderlichen und optionalen Attribute wie Menüs und können auch über ein [Icon-Element](../../extensibility/icon-element.md) verfügen, das die GUID und ID der Bitmap angibt, die die Schaltfläche in der IDE darstellt. Weitere Informationen zu Schaltflächen und deren Attributen finden Sie in der Dokumentation zum [Buttons-Element.](../../extensibility/buttons-element.md)
 
- Die Schaltfläche im folgenden Beispiel ist ein untergeordnetes Element der Gruppe der im vorherigen Beispiel, und Sie erscheinen in der IDE als ein Menüelement im übergeordneten Menü dieser Gruppe.
+Die Schaltfläche im folgenden Beispiel ist ein untergeordnetes Element der Gruppe im vorherigen Beispiel und wird in der IDE als Menüelement im übergeordneten Menü dieser Gruppe angezeigt.
 
 ```xml
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -154,13 +149,13 @@ priority="0x0100" type="Menu">
 ```
 
 ##### <a name="combos"></a>Combos
- Combos werden definiert, der `Combos` Abschnitt. Jede `Combo` -Element stellt ein Dropdown-Listenfeld, das in der IDE dar. Im Listenfeld können oder nicht beschreibbaren von Benutzern, abhängig vom Wert der `type` Attribut des Kombinationsfeld. Combos haben die gleichen Elemente und Verhalten, die Schaltflächen, und können auch die folgenden zusätzlichen Attribute:
+Combos sind im `Combos` Abschnitt definiert. Jedes `Combo` Element stellt ein Dropdown-Listenfeld in der IDE dar. Das Listenfeld kann von Benutzern abhängig vom Wert des `type` Attributs der Kombination beschreibbar sein oder nicht. Combos haben dieselben Elemente und das gleiche Verhalten wie Schaltflächen und können auch die folgenden zusätzlichen Attribute aufweisen:
 
-- Ein `defaultWidth` Attribut, das Breite in Pixel angibt.
+- Ein `defaultWidth` Attribut, das die Pixelbreite angibt.
 
-- Ein `idCommandList` -Attribut, das eine Liste gibt an, die die Elemente enthält, die Sie im Listenfeld angezeigt werden. Die Befehlsliste muss deklariert werden, in der gleichen `GuidSymbol` Knoten, der das Kombinationsfeld enthält.
+- Ein `idCommandList` Attribut, das eine Liste angibt, die die Elemente enthält, die im Listenfeld angezeigt werden. Die Befehlsliste muss in `GuidSymbol` demselben Knoten deklariert werden, der die Kombination enthält.
 
-  Das folgende Beispiel definiert einen Combo-Element.
+Im folgenden Beispiel wird ein Kombinationselement definiert.
 
 ```xml
 <Combos>
@@ -183,34 +178,34 @@ priority="0x0100" type="Menu">
 ```
 
 ##### <a name="bitmaps"></a>Bitmaps
- Befehle, die zusammen mit einem Symbol angezeigt wird, müssen enthalten eine `Icon` -Element, das in eine Bitmap bezeichnet, mit der GUID und ID Jede Bitmap ist definiert als eine [Bitmapelement](../../extensibility/bitmap-element.md) in die `Bitmaps` Abschnitt. Das einzige erforderliche Attribute für eine `Bitmap` Definition gibt es `guid` und `href`, das zeigt, an der Quelldatei. Wenn die Quelldatei ein Streifen Ressource ist eine **"usedlist"** Attribut ist auch erforderlich, um die verfügbaren Images in den Streifen aufzulisten. Weitere Informationen finden Sie unter den [Bitmapelement](../../extensibility/bitmap-element.md) Dokumentation.
+Befehle, die zusammen mit einem Symbol `Icon` angezeigt werden, müssen ein Element enthalten, das mithilfe seiner GUID und ID auf eine Bitmap verweist. Jede Bitmap wird im `Bitmaps` Abschnitt als [Bitmap-Element](../../extensibility/bitmap-element.md) definiert. Die einzigen erforderlichen Attribute `Bitmap` für `guid` `href`eine Definition sind und , die auf die Quelldatei verweist. Wenn es sich bei der Quelldatei um einen Ressourcenstreifen handelt, ist auch ein **usedList-Attribut** erforderlich, um die verfügbaren Bilder im Strip aufzulisten. Weitere Informationen finden Sie in der [Bitmap-Elementdokumentation.](../../extensibility/bitmap-element.md)
 
-### <a name="parenting"></a>Überordnen von
- Die folgenden Regeln steuern, wie ein Element auf ein anderes Element als übergeordnetes aufrufen kann.
+### <a name="parenting"></a>Erziehung
+Die folgenden Regeln regeln, wie ein Element ein anderes Element als übergeordnetes Element aufrufen kann.
 
-|Element|In diesem Abschnitt der Befehlstabelle definierten|Möglicherweise enthalten sein (als übergeordnetes Element oder durch Platzierung in der `CommandPlacements` Abschnitt oder beides)|Darf (bezeichnet als übergeordnetes Element)|
+|Element|Definiert in diesem Abschnitt der Befehlstabelle|Kann enthalten sein (als übergeordnetes Element `CommandPlacements` oder durch Platzierung im Abschnitt oder beides)|Kann enthalten (als übergeordnetes Element bezeichnet)|
 |-------------| - | - | - |
-|Gruppieren|[Groups-Element](../../extensibility/groups-element.md), die IDE, die anderen VSPackages|Ein Menü, eine Gruppe, das Element selbst|Menüs, Gruppen und Befehle|
-|Menü|[Menus-Element](../../extensibility/menus-element.md), die IDE, die anderen VSPackages|1 bis *n* Gruppen|0 bis *n* Gruppen|
-|Symbolleiste|[Menus-Element](../../extensibility/menus-element.md), die IDE, die anderen VSPackages|Das Element selbst|0 bis *n* Gruppen|
-|Menübefehl|[Buttons-Element](../../extensibility/buttons-element.md), die IDE, die anderen VSPackages|1 bis *n* gruppiert werden, das Element selbst|-0, um *n* Gruppen|
-|Schaltfläche|[Buttons-Element](../../extensibility/buttons-element.md), die IDE, die anderen VSPackages|1 bis *n* gruppiert werden, das Element selbst||
-|Combo|[Combos-Element](../../extensibility/combos-element.md), die IDE, die anderen VSPackages|1 bis *n* gruppiert werden, das Element selbst||
+|Group|[Groups-Element](../../extensibility/groups-element.md), die IDE, andere VSPackages|Ein Menü, eine Gruppe, das Element selbst|Menüs, Gruppen und Befehle|
+|Menü|[Menus-Element](../../extensibility/menus-element.md), die IDE, andere VSPackages|1 bis *n* Gruppen|0 bis *n* Gruppen|
+|Symbolleiste|[Menus-Element](../../extensibility/menus-element.md), die IDE, andere VSPackages|Der Artikel selbst|0 bis *n* Gruppen|
+|Menübefehl|[Buttons-Element](../../extensibility/buttons-element.md), die IDE, andere VSPackages|1 bis *n* Gruppen, das Element selbst|-0 bis *n* Gruppen|
+|Schaltfläche|[Buttons-Element](../../extensibility/buttons-element.md), die IDE, andere VSPackages|1 bis *n* Gruppen, das Element selbst||
+|Kombinationsdiagramm|[Combos-Element](../../extensibility/combos-element.md), die IDE, andere VSPackages|1 bis *n* Gruppen, das Element selbst||
 
-### <a name="menu-command-and-group-placement"></a>Menü-Befehl und Group-Platzierung
- Ein Menü, eine Gruppe oder ein Befehl kann in mehreren Speicherorten in der IDE angezeigt. Für ein Element an mehreren Orten angezeigt werden, es muss hinzugefügt werden die `CommandPlacements` Abschnitt als eine [CommandPlacement-Element](../../extensibility/commandplacement-element.md). Alle Menü, eine Gruppe oder ein Befehl kann als eine Platzierung Befehl hinzugefügt werden. Symbolleisten können nicht jedoch auf diese Weise angeordnet werden, da sie in mehreren kontextbezogene Standorten nicht verwendet werden.
+### <a name="menu-command-and-group-placement"></a>Menü-, Befehls- und Gruppenplatzierung
+Ein Menü, eine Gruppe oder ein Befehl kann an mehr als einem Speicherort in der IDE angezeigt werden. Damit ein Element an mehreren Speicherorten angezeigt `CommandPlacements` wird, muss es dem Abschnitt als [CommandPlacement-Element](../../extensibility/commandplacement-element.md)hinzugefügt werden. Jedes Menü, jede Gruppe oder jeder Befehl kann als Befehlsplatzierung hinzugefügt werden. Symbolleisten können jedoch nicht auf diese Weise positioniert werden, da sie nicht an mehreren kontextabhängigen Positionen angezeigt werden können.
 
- Haben Sie befehlsplatzierungen `guid`, `id`, und `priority` Attribute. Die GUID und ID müssen des Elements übereinstimmen, die positioniert ist. Die `priority` Attribut bestimmt die Platzierung des Elements im Hinblick auf andere Elemente. Bei die IDE auf zwei oder mehr Elemente, die dieselbe Priorität haben zusammengeführt, sind ihre Platzierungen nicht definiert, da die IDE nicht garantiert, dass Paketressourcen in der gleichen Reihenfolge jedes Mal gelesen werden, die das Paket erstellt wird.
+Befehlsplatzierungen `guid` `id`haben `priority` , und Attribute. GuiD und ID müssen mit denen des positionierten Elements übereinstimmen. Das `priority` Attribut regelt die Platzierung des Artikels in Bezug auf andere Artikel. Wenn die IDE zwei oder mehr Elemente mit derselben Priorität zusammenführt, sind ihre Platzierungen nicht definiert, da die IDE nicht garantiert, dass Paketressourcen bei jeder Paketbildung in der gleichen Reihenfolge gelesen werden.
 
- Wenn ein Menü oder die Gruppe an mehreren Orten angezeigt wird, werden alle untergeordneten Elemente dieses Menü oder einer Gruppe in den einzelnen Instanzen angezeigt.
+Wenn ein Menü oder eine Gruppe an mehreren Speicherorten angezeigt wird, werden alle untergeordneten Elemente dieses Menüs oder dieser Gruppe in jeder Instanz angezeigt.
 
-## <a name="command-visibility-and-context"></a>Befehl Sichtbarkeit und Kontext
- Bei der Installation von mehreren VSPackages möglicherweise eine bereitzuhalten von Menüs, Menüelemente und Symbolleisten die IDE mit überflüssigen Daten gefüllt. Um dieses Problem zu vermeiden, können Sie die Sichtbarkeit der einzelnen Elemente der Benutzeroberfläche steuern, indem Sie mithilfe von *Sichtbarkeit Einschränkungen* und Befehlsflags.
+## <a name="command-visibility-and-context"></a>Befehlssichtbarkeit und Kontext
+Wenn mehrere VSPackages installiert sind, kann eine Fülle von Menüs, Menüelementen und Symbolleisten die IDE überladen. Um dieses Problem zu vermeiden, können Sie die Sichtbarkeit einzelner UI-Elemente mithilfe von *Sichtbarkeitseinschränkungen und Befehlsflags* steuern.
 
-### <a name="visibility-constraints"></a>Einschränkungen der Sichtbarkeit
- Eine sichtbarkeitseinschränkung festgelegt ist, als eine [VisibilityItem-Element](../../extensibility/visibilityitem-element.md) in die `VisibilityConstraints` Abschnitt. Eine sichtbarkeitseinschränkung definiert bestimmte Benutzeroberfläche-Kontexte, die in denen das Target-Element angezeigt wird. Ein Menü oder einen Befehl, der in diesem Abschnitt enthalten ist, ist sichtbar, nur, wenn eine der definierten Kontexte aktiv ist. Wenn ein Menü oder einen Befehl in diesem Abschnitt nicht verwiesen wird, ist es immer standardmäßig sichtbar. Dieser Abschnitt gilt nicht für Gruppen.
+### <a name="visibility-constraints"></a>Sichtbarkeitseinschränkungen
+Eine Sichtbarkeitseinschränkung wird als [VisibilityItem-Element](../../extensibility/visibilityitem-element.md) im `VisibilityConstraints` Abschnitt festgelegt. Eine Sichtbarkeitseinschränkung definiert bestimmte UI-Kontexte, in denen das Zielelement sichtbar ist. Ein Menü oder ein Befehl, der in diesem Abschnitt enthalten ist, ist nur sichtbar, wenn einer der definierten Kontexte aktiv ist. Wenn in diesem Abschnitt nicht auf ein Menü oder ein Befehl verwiesen wird, ist es standardmäßig immer sichtbar. Dieser Abschnitt gilt nicht für Gruppen.
 
- `VisibilityItem` Elemente müssen drei Attribute wie folgt: die `guid` und `id` der Ziel-UI-Elements und `context`. Die `context` Attribut gibt an, wenn das Zielelement werden angezeigt und akzeptiert alle gültige UI-Kontext als Wert. Die Konstanten des UI-Kontext für Visual Studio sind Mitglied der <xref:Microsoft.VisualStudio.VSConstants> Klasse. Jede `VisibilityItem` Element kann nur eine Kontextwert annehmen. Um einen zweiten Kontext anzuwenden, erstellen Sie eine zweite `VisibilityItem` Element, auf das gleiche Element zeigt, wie im folgenden Beispiel gezeigt.
+`VisibilityItem`Elemente müssen wie folgt über drei `guid` `id` Attribute verfügen: das `context`und des Zielbenutzeroberflächenelements und . Das `context` Attribut gibt an, wann das Zielelement sichtbar ist, und nimmt einen gültigen UI-Kontext als Wert an. Die UI-Kontextkonstanten für Visual <xref:Microsoft.VisualStudio.VSConstants> Studio sind Mitglieder der Klasse. Jedes `VisibilityItem` Element kann nur einen Kontextwert annehmen. Um einen zweiten Kontext anzuwenden, erstellen Sie ein zweites `VisibilityItem` Element, das auf dasselbe Element verweist, wie im folgenden Beispiel gezeigt.
 
 ```xml
 <VisibilityConstraints>
@@ -224,74 +219,74 @@ priority="0x0100" type="Menu">
 ```
 
 ### <a name="command-flags"></a>Befehlsflags
- Die folgenden Befehlsflags können die Sichtbarkeit von Menüs und Befehle, die für denen Sie geltende auswirken.
+Die folgenden Befehlsflags können sich auf die Sichtbarkeit der Menüs und Befehle auswirken, auf die sie angewendet werden.
 
- `AlwaysCreate` Menü "wird erstellt, auch wenn keine Gruppen oder Schaltflächen verfügbar sind.
+`AlwaysCreate`Menü wird erstellt, auch wenn es keine Gruppen oder Schaltflächen hat.
 
- Gültig für: `Menu`
+Gültig für:`Menu`
 
- `CommandWellOnly` Dieses Flag, wenn der Befehl nicht auf das Menü der obersten Ebene angezeigt, und Sie es zusätzliche Shell Anpassung zur Verfügung stellen möchten z. B. angewendet werden, es an einen Schlüssel binden. Nach der Installation des VSPackages kann ein Benutzer mit diesen Befehlen anpassen, indem Sie öffnen die **Optionen** Dialogfeld und bearbeiten Sie dann die Platzierung der Befehl unter der **Tastatur Umgebung** Kategorie. Die Platzierung auf Kontextmenüs, Symbolleisten, Menücontroller oder Untermenüs hat keine Auswirkungen auf.
+`CommandWellOnly`Wenden Sie dieses Flag an, wenn der Befehl nicht im Menü der obersten Ebene angezeigt wird und Sie es für eine zusätzliche Shellanpassung verfügbar machen möchten, z. B. wenn Sie ihn an einen Schlüssel binden. Nachdem das VSPackage installiert wurde, kann ein Benutzer diese Befehle anpassen, indem er das Dialogfeld **Optionen** öffnet und dann die Befehlsplatzierung unter der Kategorie **Tastaturumgebung** bearbeitet. Wirkt sich nicht auf die Platzierung in Kontextmenüs, Symbolleisten, Menücontrollern oder Untermenüs aus.
 
- Gültig für: `Button`, `Combo`
+Gültig für: `Button`,`Combo`
 
- `DefaultDisabled` Der Befehl ist standardmäßig deaktiviert, wenn das VSPackage, das den Befehl implementiert nicht geladen wurde oder die QueryStatus-Methode nicht aufgerufen wurde.
+`DefaultDisabled`Standardmäßig ist der Befehl deaktiviert, wenn das VSPackage, das den Befehl implementiert, nicht geladen ist oder die QueryStatus-Methode nicht aufgerufen wurde.
 
- Gültig für: `Button`, `Combo`
+Gültig für: `Button`,`Combo`
 
- `DefaultInvisible` Standardmäßig ist der Befehl nicht sichtbar, wenn das VSPackage, das den Befehl implementiert nicht geladen wurde oder die QueryStatus-Methode nicht aufgerufen wurde.
+`DefaultInvisible`Standardmäßig ist der Befehl unsichtbar, wenn das VSPackage, das den Befehl implementiert, nicht geladen ist oder die QueryStatus-Methode nicht aufgerufen wurde.
 
- Kombiniert werden soll, mit der `DynamicVisibility` Flag.
+Sollte mit der `DynamicVisibility` Flagge kombiniert werden.
 
- Gültig für: `Button`, `Combo`, `Menu`
+Gültig `Button`für: `Combo`, ,`Menu`
 
- `DynamicVisibility` Die Sichtbarkeit des Befehls kann geändert werden, indem die `QueryStatus` Methode oder eine Kontext-GUID, der Bestandteil der `VisibilityConstraints` Abschnitt.
+`DynamicVisibility`Die Sichtbarkeit des Befehls kann `QueryStatus` mithilfe der Methode oder einer Kontext-GUID geändert werden, die `VisibilityConstraints` im Abschnitt enthalten ist.
 
- Gilt für Befehle in Menüs, nicht auf der Symbolleiste angezeigt werden. Elemente der obersten Ebene Symbolleiste können deaktiviert, jedoch nicht ausgeblendet, wenn die `OLECMDF_INVISIBLE` Flag wird zurückgegeben, die `QueryStatus` Methode.
+Gilt für Befehle, die in Menüs und nicht auf Symbolleisten angezeigt werden. Symbolleistenelemente der obersten Ebene können deaktiviert, aber `OLECMDF_INVISIBLE` nicht ausgeblendet `QueryStatus` werden, wenn das Flag von der Methode zurückgegeben wird.
 
- In einem Menü gibt dieses Flag auch, dass es automatisch ausgeblendet werden soll, wenn ihre Member ausgeblendet sind. Dieses Flag wird in der Regel Untermenüs zugewiesen, da dies bereits über Menüs der obersten Ebene verfügen.
+In einem Menü zeigt dieses Flag auch an, dass es automatisch ausgeblendet werden sollte, wenn seine Mitglieder ausgeblendet werden. Dieses Flag wird in der Regel Untermenüs zugewiesen, da Menüs der obersten Ebene dieses Verhalten bereits aufweisen.
 
- Kombiniert werden soll, mit der `DefaultInvisible` Flag.
+Sollte mit der `DefaultInvisible` Flagge kombiniert werden.
 
- Gültig für: `Button`, `Combo`, `Menu`
+Gültig `Button`für: `Combo`, ,`Menu`
 
- `NoShowOnMenuController` Wenn ein Befehl, der dieses Flag hat auf ein Menücontroller positioniert ist, wird der Befehl nicht in der Dropdown-Liste angezeigt.
+`NoShowOnMenuController`Wenn ein Befehl mit diesem Flag auf einem Menücontroller positioniert ist, wird der Befehl nicht in der Dropdownliste angezeigt.
 
- Gültig für: `Button`
+Gültig für:`Button`
 
- Weitere Informationen zu Befehlsflags, finden Sie unter den [CommandFlag-Element](../../extensibility/command-flag-element.md) Dokumentation.
+Weitere Informationen zu Befehlsflags finden Sie in der Dokumentation zum [CommandFlag-Element.](../../extensibility/command-flag-element.md)
 
 #### <a name="general-requirements"></a>Allgemeine Anforderungen
- Der Befehl muss die folgende Reihe von Tests übergeben, bevor es angezeigt und aktiviert werden kann:
+Der Befehl muss die folgende Testserie bestehen, bevor er angezeigt und aktiviert werden kann:
 
-- Der Befehl ist richtig positioniert.
+- Der Befehl ist korrekt positioniert.
 
-- Die `DefaultInvisible` Flag nicht festgelegt.
+- Das `DefaultInvisible` Flag ist nicht gesetzt.
 
-- Das übergeordnete Menü oder einer Symbolleiste wird angezeigt.
+- Das übergeordnete Menü oder die Symbolleiste ist sichtbar.
 
-- Der Befehl ist kein nicht sichtbar aufgrund eines Eintrags Kontext, in der [VisibilityConstraints-Element](../../extensibility/visibilityconstraints-element.md) Abschnitt.
+- Der Befehl ist aufgrund eines Kontexteintrags im [Elementabschnitt VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) nicht unsichtbar.
 
-- VSPackage-Code zum Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle angezeigt und können Sie den Befehl. Keine Schnittstellencode abgefangen und darauf reagiert.
+- VSPackage-Code, der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> die Schnittstelle implementiert, zeigt den Befehl an und aktiviert ihn. Kein Schnittstellencode hat ihn abgefangen und darauf reagiert.
 
-- Klickt ein Benutzer den Befehl, wird Sie gemäß der Prozedur, die in beschriebenen [Routing Algorithmus](../../extensibility/internals/command-routing-algorithm.md).
+- Wenn ein Benutzer auf Ihren Befehl klickt, unterliegt er der Prozedur, die im [Routingalgorithmus](../../extensibility/internals/command-routing-algorithm.md)beschrieben ist.
 
-## <a name="call-pre-defined-commands"></a>Aufruf von vordefinierten Befehlen
- Die [UsedCommands-Element](../../extensibility/usedcommands-element.md) ermöglicht VSPackages, Zugriff auf die Befehle, die von anderen VSPackages oder von der IDE bereitgestellt werden. Zu diesem Zweck erstellen Sie eine [UsedCommand-Element](../../extensibility/usedcommand-element.md) hat die GUID und ID des Befehls verwendet. Dadurch wird sichergestellt, dass der Befehl von Visual Studio geladen werden, auch wenn er nicht Teil der aktuellen Visual Studio-Konfiguration ist. Weitere Informationen finden Sie unter [UsedCommand-Element](../../extensibility/usedcommand-element.md).
+## <a name="call-pre-defined-commands"></a>Vordefinierte Befehle aufrufen
+Das [UsedCommands-Element](../../extensibility/usedcommands-element.md) ermöglicht VSPackages den Zugriff auf Befehle, die von anderen VSPackages oder von der IDE bereitgestellt werden. Erstellen Sie dazu ein [UsedCommand-Element](../../extensibility/usedcommand-element.md) mit der GUID und der ID des zu verwendenden Befehls. Dadurch wird sichergestellt, dass der Befehl von Visual Studio geladen wird, auch wenn er nicht Teil der aktuellen Visual Studio-Konfiguration ist. Weitere Informationen finden Sie unter [UsedCommand-Element](../../extensibility/usedcommand-element.md).
 
-## <a name="interface-element-appearance"></a>Darstellung der Benutzeroberfläche-element
- Überlegungen zur Auswahl, und Positionieren von befehlselementen lauten wie folgt aus:
+## <a name="interface-element-appearance"></a>Darstellung von Schnittstellenelementen
+Überlegungen zum Auswählen und Positionieren von Befehlselementen sind wie folgt:
 
-- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet viele Elemente der Benutzeroberfläche, die je nach Platzierung unterschiedlich angezeigt werden.
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bietet viele UI-Elemente, die je nach Platzierung unterschiedlich angezeigt werden.
 
-- Ein Benutzeroberflächenelement, das mit definiert ist die `DefaultInvisible` Flag wird nicht in der IDE angezeigt werden, es sei denn, es ist entweder eine VSPackage-Implementierung des angezeigt der <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> -Methode, oder für einen bestimmten UI-Kontext, in der `VisibilityConstraints` Abschnitt.
+- Ein UI-Element, das `DefaultInvisible` mithilfe des Flags definiert wird, wird nicht in der IDE <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> angezeigt, es sei denn, `VisibilityConstraints` es wird entweder durch die VSPackage-Implementierung der Methode angezeigt oder einem bestimmten UI-Kontext im Abschnitt zugeordnet.
 
-- Sogar ein erfolgreich positionierte-Befehl kann nicht angezeigt werden. Dies ist da die IDE automatisch ausgeblendet oder einige Befehle, abhängig von Schnittstellen, die das VSPackage hat zeigt (oder nicht) implementiert. Z. B. eine VSPackage Implementierung einiger erstellen Schnittstellen bewirkt, dass auf Builds bezogene Menüelemente automatisch angezeigt werden.
+- Selbst ein erfolgreich positionierter Befehl wird möglicherweise nicht angezeigt. Dies liegt daran, dass die IDE automatisch einige Befehle ausblendet oder anzeigt, abhängig von Schnittstellen, die das VSPackage implementiert hat (oder nicht). Beispielsweise führt die Implementierung einiger Buildschnittstellen durch ein VSPackage dazu, dass buildbezogene Menüelemente automatisch angezeigt werden.
 
-- Anwenden der `CommandWellOnly` Flag in der Definition der UI-Element bedeutet, dass der Befehl nur durch Anpassung hinzugefügt werden kann.
+- Das `CommandWellOnly` Anwenden des Flags in der Definition des UI-Elements bedeutet, dass der Befehl nur durch Anpassung hinzugefügt werden kann.
 
-- Befehle können nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. verfügbar sein, nur, wenn ein Dialogfeld angezeigt wird, wenn die IDE in der Entwurfsansicht befindet.
+- Befehle sind nur in bestimmten UI-Kontexten verfügbar, z. B. nur, wenn ein Dialogfeld angezeigt wird, wenn sich die IDE in der Entwurfsansicht befindet.
 
-- Um die dazu führen, dass bestimmte Elemente der Benutzeroberfläche, die in der IDE angezeigt werden, müssen Sie eine oder mehrere Schnittstellen implementieren oder Code schreiben.
+- Um zu bewirken, dass bestimmte UI-Elemente in der IDE angezeigt werden, müssen Sie eine oder mehrere Schnittstellen implementieren oder Code schreiben.
 
 ## <a name="see-also"></a>Siehe auch
 - [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)

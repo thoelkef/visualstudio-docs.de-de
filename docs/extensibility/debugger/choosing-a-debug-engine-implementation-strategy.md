@@ -1,35 +1,35 @@
 ---
-title: Auswählen einer Implementierungsstrategie für die Debug-Engine | Microsoft-Dokumentation
+title: Auswählen einer Debug-Engine-Implementierungsstrategie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930908b66b5d2234b8c62585b10ddf751c96f61c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 05e66975a2d41108d3d9fb469da9e4a36a10d8d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324506"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739130"
 ---
-# <a name="choose-a-debug-engine-implementation-strategy"></a>Auswählen einer Implementierungsstrategie für die Debug-engine
-Verwenden Sie die Run-Time-Architektur, um Ihre Implementierungsstrategie für die Debug-Engine (DE) festzulegen. Sie können die Debug-Engine-in-Process an das Programm erstellen, die Sie debuggen. Erstellen Sie die Debug-Engine im Prozess in der Visual Studio sitzungsbasierter Debug-Manager (SDM). Alternativ können die Debug-Engine-Out-of-Process zu erstellen. Die folgenden Richtlinien sollten Sie für diese drei Strategien für die Auswahl helfen.
+# <a name="choose-a-debug-engine-implementation-strategy"></a>Auswählen einer Debug-Engine-Implementierungsstrategie
+Verwenden Sie die Laufzeitarchitektur, um die Implementierungsstrategie des Debugmoduls (DE) zu bestimmen. Sie können das Debugmodul in dem Programm erstellen, das Sie debuggen. Erstellen Sie das Debugmodul im Prozess für den Visual Studio-Sitzungsdebug-Manager (SDM). Oder erstellen Sie das Debugmodul out-of-Process für beide. Die folgenden Richtlinien sollten Ihnen bei der Auswahl dieser drei Strategien helfen.
 
 ## <a name="guidelines"></a>Richtlinien
- Es ist zwar möglich, für das DE Out-of-Process-sein, das SDM und das Programm, das Sie Debuggen, ist in der Regel keinen Grund dafür. Aufrufe über Prozessgrenzen hinweg sind relativ langsam.
+ Während es möglich ist, dass die DE sowohl für das SDM als auch für das Programm, das Sie debuggen, a-process ist, gibt es in der Regel keinen Grund, dies zu tun. Aufrufe über Prozessgrenzen hinweg sind relativ langsam.
 
- Debuggen von Engines sind bereits verfügbar, für die systemeigene Win32-Laufzeitumgebung und der common Language Runtime-Umgebung. Wenn Sie die DE für entweder Umgebung ersetzen müssen, sollten Sie die DE in-Process mit dem SDM erstellen.
+ Debugmodule werden bereits für die native Win32-Laufzeitumgebung und für die Common Language-Laufzeitumgebung bereitgestellt. Wenn Sie die DE für eine der beiden Umgebungen ersetzen müssen, sollten Sie die DE-in-Process mit dem SDM erstellen.
 
- Andernfalls Sie erstellen Sie entweder die DE in-Process an das SDM oder in-Process an das Programm Sie debuggen. Sie müssen überlegen, ob es sich bei die ausdrucksauswertung des DE häufig Zugriff auf den Symbolspeicher Programm benötigt. Oder, wenn der Speicher den schnellen Zugriff auf der Symbolspeicher geladen werden kann. Berücksichtigen Sie auch die folgenden Methoden:
+ Andernfalls erstellen Sie entweder die DE-in-Process-Datei für das SDM oder die In-Process-Datei für das Programm, das Sie debuggen. Sie müssen überlegen, ob der Ausdrucksauswertungswert des DE häufigen Zugriff auf den Programmsymbolspeicher erfordert. Oder, wenn der Symbolspeicher für den schnellen Zugriff in den Speicher geladen werden kann. Berücksichtigen Sie auch die folgenden Ansätze:
 
-- Erstellen Sie wenn nicht viele Aufrufe zwischen der ausdrucksauswertung und den Symbolspeicher vorhanden sind, oder der Symbolspeicher in den Speicherbereich SDM gelesen werden kann, die DE in-Process an das SDM. Sie müssen die CLSID des Debug-Engine, das SDM zurückkehren, wenn es in Ihr Programm angefügt wird. Das SDM verwendet diese CLSID zum Erstellen einer in-Process-Instanz des DE.
+- Wenn zwischen dem Ausdrucksauswertungswert und dem Symbolspeicher nicht viele Aufrufe vorhanden sind oder der Symbolspeicher in den SDM-Speichereinlesebereich eingelesen werden kann, erstellen Sie die DE-In-Process-Datei für das SDM. Sie müssen die CLSID des Debugmoduls an das SDM zurückgeben, wenn es an Ihr Programm angefügt wird. Das SDM verwendet diese CLSID, um eine Prozessinstanz der DE zu erstellen.
 
-- Wenn das Programm den Zugriff auf das Symbol Store die DE aufgerufen werden muss, erstellen Sie die DE in-Process mit dem Programm an. In diesem Fall erstellt das Programm die Instanz des DE.
+- Wenn die DE das Programm aufrufen muss, um auf den Symbolspeicher zuzugreifen, erstellen Sie die DE-in-Process mit dem Programm. In diesem Fall erstellt das Programm die Instanz der DE.
 
-## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Erweiterbarkeit des Visual Studio-Debuggers](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

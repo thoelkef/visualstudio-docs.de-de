@@ -1,16 +1,16 @@
 ---
 title: Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems
 description: Zusätzliche Informationen und bewährte Methoden für das Übermitteln von Leistungsproblemen in Visual Studio
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f5c83a145eb56dcb95c6e9a299c690ae960442c9
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918159"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615047"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems
 
@@ -74,17 +74,17 @@ Befolgen Sie für diese Probleme die Schritte unter [Melden eines Problems](/vis
 Wenn Sie sich nicht sicher sind, was Ihre Abstürze verursacht, oder wenn sie willkürlich auftreten, können Sie bei jedem Absturz von Visual Studio Speicherabbilder lokal erfassen und diese an separate Feedbackelemente anfügen. Um Speicherabbilder bei einem Absturz von Visual Studio lokal zu speichern, führen Sie im Modus „Administrator“ in einem Befehlsfenster die folgenden Befehle aus:
 
 ```
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe"
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 ```
 
 Passen Sie Anzahl und Ordner für Speicherabbilder entsprechend an. Weitere Informationen dazu finden Sie [hier](/windows/win32/wer/collecting-user-mode-dumps).
@@ -118,7 +118,7 @@ Wie im entsprechenden Abschnitt zu Abstürzen beschrieben, sind für Probleme, d
 **Fehlende Reaktionsfähigkeit aus unbekanntem Grund**
 
 Wenn sich eine fehlende Reaktionsfähigkeit auf unvorhersehbare Weise bemerkbar macht, starten Sie beim nächsten Auftreten eine neue Instanz von Visual Studio, und melden Sie ein Problem aus dieser Instanz.
-Stellen Sie sicher, dass auf dem Bildschirm [Aufzeichnen](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro) die nicht reagierende Visual Studio-Sitzung ausgewählt ist.
+Stellen Sie sicher, dass Sie in der [Anzeige „Aufzeichnen“](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro) die Visual Studio-Sitzung auswählen, die nicht reagiert.
 
 Wenn die nicht reagierende Visual Studio-Instanz im Modus „Administrator“ gestartet wurde, muss die zweite Instanz ebenfalls im Modus „Administrator“ gestartet werden.
 

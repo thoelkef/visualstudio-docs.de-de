@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589291"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634083"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
+
 Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren einer Anwendung sowie ihrer erforderlichen Komponenten. Sie dient als einzelner Installer, der den separaten Installer für alle Komponenten integriert, die zu einer Anwendung gehören.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
 Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben.
 
 - `ApplicationFile`
@@ -76,7 +78,7 @@ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben
   </BootstrapperItem>
   ```
 
-   Das Attribut `Include` stellt den Namen einer erforderlichen Komponente dar, die installiert werden sollte. Die `ProductName`-Elementmetadaten sind optional und werden von der Build-Engine als benutzerfreundlicher Name verwendet, falls das Paket nicht gefunden werden kann. Diese Elemente sind keine erforderlichen Eingabeparameter von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], sofern kein `ApplicationFile`-Parameter angegeben ist. Sie sollten ein Element für jede erforderliche Komponente einfügen, die für Ihre Anwendung installiert werden muss.
+   Das Attribut `Include` stellt den Namen einer erforderlichen Komponente dar, die installiert werden sollte. Die `ProductName`-Elementmetadaten sind optional und werden von der Build-Engine als benutzerfreundlicher Name verwendet, falls das Paket nicht gefunden werden kann. Diese Elemente sind keine erforderlichen Eingabeparameter von MSBuild, sofern kein `ApplicationFile`-Parameter angegeben ist. Sie sollten ein Element für jede erforderliche Komponente einfügen, die für Ihre Anwendung installiert werden muss.
 
    Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.
 
@@ -149,9 +151,11 @@ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben
    Wenn `true`, führt der Bootstrapper die XSD-Validierung der angegebenen Bootstrapper-Eingabeelemente durch. Der Standardwert dieses Parameters ist `false`.
 
 ## <a name="remarks"></a>Hinweise
+
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird der Task `GenerateBootstrapper` zur Installation einer Anwendung verwendet, für die als Voraussetzung .NET Framework 2.0 installiert sein muss.
 
 ```xml
@@ -176,5 +180,6 @@ Im folgenden Beispiel wird der Task `GenerateBootstrapper` zur Installation eine
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

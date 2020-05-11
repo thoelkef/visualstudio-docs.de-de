@@ -8,18 +8,18 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715908"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224497"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Veröffentlichen in einem Ordner mit Visual Studio für Mac
 
 Sie können das Tool zum Veröffentlichen verwenden, um .NET Core-Konsolenanwendungen oder ASP.NET Core-Apps in einem Ordner zu veröffentlichen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - [Visual Studio 2019 für Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installiert mit aktiviertem .NET Core.
 - Ein .NET Core-Konsolen- oder ASP.NET Core-Projekt Wenn Sie noch kein Projekt haben, können Sie [ein neues Projekt erstellen](/visualstudio/mac/create-new-projects?view=vsmac-2019).
@@ -52,7 +52,7 @@ Mit Visual Studio für Mac können Sie Ihre .NET Core-Projekte mithilfe des Tool
 
 ## <a name="customize-publish-options"></a>Anpassen der Veröffentlichungsoptionen
 
-Wenn Sie den Namen des Veröffentlichungsprofils ändern möchten (dieses wird im Kontextmenü „Veröffentlichen“ angezeigt), können Sie die Veröffentlichungsprofildatei umbenennen. Achten Sie darauf, nicht die Erweiterung der Datei zu ändern (`.puxbml`).
+Wenn Sie den Namen des Veröffentlichungsprofils ändern möchten (dieses wird im Kontextmenü „Veröffentlichen“ angezeigt), können Sie die Veröffentlichungsprofildatei umbenennen. Achten Sie darauf, nicht die Erweiterung der Datei zu ändern (`.pubxml`).
 
 Wenn Sie den Pfad des Veröffentlichungsordner ändern möchten, öffnen Sie das Veröffentlichungsprofil, und bearbeiten Sie den Wert `publishUrl`.
 

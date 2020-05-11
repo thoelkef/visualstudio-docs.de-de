@@ -1,17 +1,18 @@
 ---
 title: Pluralsight-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6ae0a77cf4849f0e648eeed17830911c90c8b584
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74707002"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649805"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -24,7 +25,7 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1. Stellen Sie eine Verbindung mit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) her, und klicken Sie auf der Kachel mit den Pluralsight-Vorteilen im Abschnitt „Professionelle Entwicklung“ auf den Link **Code abrufen**, um Ihr Abonnement zu aktivieren.
    > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „Pluralsight“](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
+   > ![Kachel des Vorteils „Pluralsight“](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
    >
    > [!IMPORTANT]
    > Wenn Sie auf der Kachel „Pluralsight-Vorteil“ auf den Link „Code abrufen“ klicken, wird möglicherweise folgende Meldung angezeigt:
@@ -60,15 +61,15 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 |          Visual Studio Enterprise mit GitHub Enterprise          | VL  |   6 Monate    | Ja<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 Monate    | Ja<sup>2</sup> |
 |         Visual Studio Professional mit GitHub Enterprise          | VL  |   3 Monate    | Ja<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 Monate    | Ja<sup>2</sup>  |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 Monate    | Ja<sup>2</sup>  |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Nicht verfügbar    | NA  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Nicht verfügbar    | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) |       Azure       | Nicht verfügbar |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Program      | Nicht verfügbar |       NA       |
 ||
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *Der Pluralsight-Vorteil wird in ausgewählten Visual Studio-Abonnements gemeinsam mit dem Abonnement verlängert. Wenn Sie beispielsweise ein Jahresabonnement abgeschlossen haben, das jährlich verlängert wird, profitieren Sie so lange von diesem Vorteil, bis das Abonnement gekündigt wird. Wenn Sie ein Abonnement mit einer Laufzeit von mehreren Jahren abgeschlossen haben, ist der Pluralsight-Vorteil so lange verfügbar, wie das Abonnement besteht.  Wenn dieses Abonnement verlängert wird, können Sie auch weiter von dem Vorteil profitieren.*
+<sup>2</sup> *Der Pluralsight-Vorteil wird in ausgewählten Visual Studio-Abonnements gemeinsam mit dem Abonnement verlängert. Wenn Sie beispielsweise ein Jahresabonnement abgeschlossen haben, das jährlich verlängert wird, profitieren Sie so lange von diesem Vorteil, bis das Abonnement gekündigt wird. Wenn Sie ein Abonnement mit einer Laufzeit von mehreren Jahren abgeschlossen haben, ist der Pluralsight-Vorteil so lange verfügbar, wie das Abonnement besteht.  Wenn dieses Abonnement verlängert wird, können Sie auch weiter von dem Vorteil profitieren.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
@@ -96,6 +97,12 @@ Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein 
 - [Pluralsight Help Center](https://help.pluralsight.com/help) bietet Hilfe bei der Durchführung von Pluralsight-Kursen und der Verwendung der Pluralsight-Website.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Sobald Sie Ihr Konto erstellt haben, können Sie mit den Schulungen starten.  Besuchen Sie [https://www.pluralsight.com](https://www.pluralsight.com), und klicken Sie auf **Anmelden** oben rechts auf der Seite, um einen neuen Kurs zu starten oder um zu einem laufenden Kurs zurückzukehren.

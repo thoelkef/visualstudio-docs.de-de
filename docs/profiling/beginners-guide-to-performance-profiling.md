@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128296"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638787"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 
-Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten.
+Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. In diesem Artikel wird die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools zum Abrufen von Leistungsdaten zu Ihrer App veranschaulicht.
 
 Wenn der Debugger angehalten wird, sammelt das Tool **CPU-Auslastung** Informationen zu den in der Anwendung ausgeführten Funktionen. Das Tool listet auch die Funktionen auf, die Aufgaben ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.
 
@@ -35,7 +35,7 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 > [!Important]
 > Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
 
-In diesem Artikel wird die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow behandelt. Sie können die CPU-Auslastung auch ohne Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel setzen. Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten während des Debuggens](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+In diesem Artikel wird die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow behandelt. Sie können die CPU-Auslastung auch ohne einen angefügten Debugger analysieren oder indem Sie eine ausgeführte App als Ziel festlegen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Sie können auch ein anderes debuggerintegriertes Profilerstellungstool namens [PerfTips](../profiling/perftips.md) verwenden, um die Schritt-für-Schritt-Ausführung von Code und die Ermittlung, wie viel Zeit bestimmte Funktionen oder Codeblöcke beanspruchen, zu nutzen.
 
 Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 
@@ -51,14 +51,13 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 2. Legen Sie einen zweiten Haltepunkt am Ende der Funktion oder des Codebereichs an, den Sie analysieren möchten.
 
-    > [!TIP]
-    > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
+    Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
 
 3. Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
 4. Mithilfe der Einstellung **Auswahltools** auf der Symbolleiste können Sie auswählen, ob Sie die **CPU-Auslastung**, [Speicherauslastung](../profiling/Memory-Usage.md) oder beides anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie IntelliTrace unter **Extras** > **Optionen** > **IntelliTrace** aktivieren oder deaktivieren.
 
-     ![Anzeigen von Diagnosetools](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
+     ![Fenster „Diagnosetools“](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
      Wir werden hauptsächlich die CPU-Auslastung betrachten, stellen Sie also sicher, dass **CPU-Auslastung** aktiviert ist (ist standardmäßig aktiviert).
 
@@ -66,7 +65,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
      Wenn das Laden der Anwendung abgeschlossen ist, wird die Zusammenfassungsansicht der Diagnosetools angezeigt. Wenn Sie das Fenster öffnen müssen, klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**.
 
-     ![Zusammenfassung Diagnosetools](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
+     ![Registerkarte „Zusammenfassung“ der Diagnosetools](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
      Weitere Informationen zu den Ereignissen finden Sie unter [Searching and filtering the Events tab of the Diagnostic Tools window (Suchen und Filtern auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“)](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
@@ -74,7 +73,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 7. Aktivieren Sie während der Debugger angehalten wird die Sammlung von CPU-Auslastungsdaten, und öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
 
-     ![Diagnosetool CPU-Profilerstellung aktivieren](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
+     ![Diagnosetools ermöglichen die CPU-Profilerstellung](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
 
      Wenn Sie **CPU-Profilerstellung aufzeichnen** auswählen, zeichnet Visual Studio die Funktionen auf und wie lange die Ausführung dauert. Sie können diese gesammelten Daten nur anzeigen lassen, wenn Ihre Anwendung an einem Haltepunkt angehalten wird.
 
@@ -84,17 +83,20 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
      Der Profiler beginnt, Threaddaten vorzubereiten. Warten Sie, bis dieser Vorgang abgeschlossen ist.
 
-     ![Diagnosetools Threads Vorbereiten](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
+     ![Vorbereitung der Threads durch die Diagnosetools](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
 
      Das CPU-Auslastungstool zeigt den Bericht unter der Registerkarte **CPU-Auslastung** an.
 
-     ![Diagnosetools Registerkarte CPU-Auslastung](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
+     ![Registerkarte „CPU-Auslastung“ der Diagnosetools](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
 
 9. Wenn Sie einen spezifischeren Codebereich zur Analyse auswählen möchten, wählen Sie einen Bereich in der CPU-Zeitachse aus (es muss ein Bereich sein, der Profilerstellungsdaten anzeigt).
 
-     ![Diagnosetools Auswahl eines Zeitsegments](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
+     ![Auswählen eines Zeitraums in den Diagnosetools](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      An diesem Punkt können Sie beginnen, die Daten zu analysieren.
+
+     > [!TIP]
+     >  Wenn Sie versuchen, Leistungsprobleme zu identifizieren, sollten Sie mehrere Messungen erfassen. Die Leistung variiert natürlich von Ausführung zu Ausführung, und Codepfade werden aufgrund der einmaligen Initialisierungslast bei der ersten Ausführung langsam ausgeführt, z. B. aufgrund des Ladens von DLL-Dateien, der Just-In-Time-Kompilierung von Methoden und der Initialisierung der Caches. Indem Sie mehrere Messungen erfassen, erhalten Sie einen besseren Überblick über die Spanne und den Durchschnitt der angezeigten Metriken, wodurch Sie die erste Ausführung mit der gleichmäßigen Leistung eines Codebereichs vergleichen können.
 
 ## <a name="step-2-analyze-cpu-usage-data"></a>Schritt 2: Analysieren der CPU-Auslastungsdaten
 
@@ -102,7 +104,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 1. Untersuchen Sie in der Liste der Funktionen die Funktionen, die am meisten Aufgaben ausführen.
 
-    ![Diagnosetools CPU-Auslastung Liste der Funktionen](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
+    ![Liste der Funktionen für die CPU-Auslastung in den Diagnosetools](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Die Auflistung der Funktionen beginnt mit der Funktion, die die meisten Aufgaben ausführt (sie sind nicht in der Reihenfolge der Aufrufe gelistet). Dadurch können Sie schnell feststellen, welche Funktionen am längsten ausgeführt werden.
@@ -111,7 +113,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
     Wenn Sie auf eine Funktion doppelklicken, öffnet sich die Ansicht **Aufrufer/Aufgerufener** im linken Bereich.
 
-    ![Diagnosetools Ansicht Aufrufer-Aufgerufener](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
+    ![Ansicht „Aufrufer/Aufgerufener“ der Diagnosetools](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
     In dieser Ansicht erscheint die ausgewählte Funktion in der Überschrift und im Feld **Aktuelle Funktion** ( in diesem Beispiel „GetNumber“). Die Funktion, die die aktuelle Funktion aufgerufen hat, wird links unter **Aufrufende Funktion** angezeigt, und alle Funktionen, die von der aktuellen Funktion aufgerufen wurden werden im Feld **Aufgerufene Funktionen** auf der rechten Seite angezeigt. (Sie können beide Felder auswählen, um die aktuelle Funktion zu ändern.)
 
@@ -126,10 +128,10 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
     Jeder nummerierte Bereich in der Abbildung bezieht sich auf einen Schritt in der Prozedur.
 
     ::: moniker range=">=vs-2019"
-    ![Diagnosetools Aufrufstruktur](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Aufrufstruktur in den Diagnosetools](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![Diagnosetools Aufrufstruktur](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Aufrufstruktur in den Diagnosetools](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
     |||
@@ -150,7 +152,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
     ::: moniker range=">=vs-2019"
     Um die Funktionsaufrufe anzuzeigen, die den höchsten Prozentsatz der CPU in der Ansicht der Aufrufstruktur verwenden, klicken Sie auf **Langsamsten Pfad erweitern**.
 
-    ![Diagnosetools „Langsamster Pfad“](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ![Langsamster Pfad in den Diagnosetools](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
     > [!NOTE]
@@ -162,7 +164,7 @@ Externer Code umfasst Funktionen in System- und Frameworkkomponenten, die vom Co
 
 Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Filteransicht** die Option **Externen Code anzeigen** und dann **Übernehmen**aus.
 
-![Filteransicht auswählen, dann Externen Code anzeigen](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
+![Anzeigen der Filteransicht und anschließendes Anzeigen von externem Code](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
 Achten Sie darauf, dass viele externe Codeaufrufketten tief verschachtelt sind, sodass die Breite der Spalte mit dem Funktionsnamen die Anzeigebreite aller außer sehr großer Computerbildschirme überschreiten kann. In diesem Fall werden Funktionsnamen als **[…]** angezeigt.
 

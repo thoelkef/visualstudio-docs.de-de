@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString | Microsoft-Dokumentation
+title: IDebugReference2::SetValueasString | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cb58326f36e88768ab9144f08ded8c85410e1c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339820"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720292"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-Legt den Wert, der einen Verweis aus einer Zeichenfolge. Für zukünftige Verwendung reserviert.
+Legt den Wert eines Verweises aus einer Zeichenfolge fest. Für die zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,13 +48,13 @@ int SetValueAsString ( 
 [in] Der Wert als Zeichenfolge.
 
 `dwRadix`\
-[in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.
+[in] Der Radix, der zum Formatieren numerischer Informationen verwendet werden soll.
 
 `dwTimeout`\
-[in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.
+[in] Maximale Wartezeit in Millisekunden, bevor von dieser Methode zurückgegeben wird. Verwenden `INFINITE` Sie diese Verwendung, um auf unbestimmte Zeit zu warten.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

@@ -3,15 +3,16 @@ title: Anmelden bei Visual Studio-Abonnements mit einem Microsoft-Konto (verwalt
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie sich mit einem Microsoft-Konto (verwaltetes Dienstkonto) bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493084"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233203"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Anmeldung bei Ihrem/Ihren Visual Studio-Abonnements mit Ihrem Microsoft-Konto (verwaltetes Dienstkonto)
 
@@ -36,10 +37,16 @@ Antwort:  Der Versuch, sich mit einem anderen als dem Abonnement zugeordneten ve
 
 ### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Frage:  Mein Abonnement wird nicht angezeigt. Wo befinden sie sich?
 Antwort:  Viele Benutzer verfügen über mehr als ein Abonnement.  Es gibt zwei häufige Gründe dafür, wenn Sie sich über https://my.visualstudio.com zwar beim Abonnementportal anmelden können, allerdings kein Abonnement angezeigt wird:
-1. Sie sind mit einem anderen Microsoft-Konto angemeldet.  Sie verfügen möglicherweise über mehrere Abonnements (Professional- oder Enterprise-Abonnement) und eine Visual Studio Dev Essentials-Mitgliedschaft, die unterschiedlichen E-Mail-Adressen zugeordnet sind. Melden Sie sich zunächst ab und danach mit einem anderen verwalteten Dienstkonto noch mal beim Portal an, um die anderen Abonnements anzuzeigen.
-2. Sie verfügen über mehrere Abonnements, die demselben verwalteten Dienstkonto zugeordnet sind.  Besuchen Sie https://my.visualstudio.com/subscriptions, und wählen Sie das Abonnement aus, das Sie verwenden möchten, um alle Abonnements anzuzeigen, die Ihrem verwalteten Dienstkonto zugeordnet sind. 
+- Sie sind mit einem anderen Microsoft-Konto angemeldet.  Sie verfügen möglicherweise über mehrere Abonnements (Professional- oder Enterprise-Abonnement) und eine Visual Studio Dev Essentials-Mitgliedschaft, die unterschiedlichen E-Mail-Adressen zugeordnet sind. Melden Sie sich zunächst ab und danach mit einem anderen verwalteten Dienstkonto noch mal beim Portal an, um die anderen Abonnements anzuzeigen.
+- Sie verfügen über mehrere Abonnements, die demselben verwalteten Dienstkonto zugeordnet sind.  Besuchen Sie https://my.visualstudio.com/subscriptions, und wählen Sie das Abonnement aus, das Sie verwenden möchten, um alle Abonnements anzuzeigen, die Ihrem verwalteten Dienstkonto zugeordnet sind. 
 
 Wenden Sie sich bei anhaltenden Problemen bei der Anmeldung für Unterstützung an das [Supportteam für Abonnements](https://visualstudio.microsoft.com/subscriptions/support/).  
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
-Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und die Tools, Dienste und Angebote zu entdecken, die Ihnen zur Verfügung stehen.  
+Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und sich einen Überblick über die Tools, Dienste und Angebote zu verschaffen, die Ihnen zur Verfügung stehen.  

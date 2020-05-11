@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777514"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nicht unterstützte CLR-Version
@@ -30,7 +30,7 @@ ms.locfileid: "74777514"
 |Regel-ID|DA0029|
 |Kategorie|Verwendung der Profilerstellungstools|
 |Profilerstellungsmethode|Profilerstellung mithilfe der Befehlszeile|
-|Meldung|Während der Sammlung wurde eine nicht unterstützte CLR-Version erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|
+|Nachricht|Während der Sammlung wurde eine nicht unterstützte CLR-Version erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|
 |Regeltyp|Information|
 
 ## <a name="cause"></a>Ursache
@@ -40,4 +40,4 @@ ms.locfileid: "74777514"
  Diese Warnung tritt auf, da die Profilerstellungstools keine Symbole für den verwalteten Code auflösen können, der in der Anwendung ausgeführt wird. Die Profilerstellungstools können keine verwalteten Codesymbole für Anwendungen auflösen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] ausführen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Keine
+ Keine.

@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5bfe09fec169495afa5b58a41f7c9f1b9bacfad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573468"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633628"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup-Element (MSBuild)
+
 Mit dem `ItemDefinitionGroup`-Element können Sie einen Satz von Elementdefinitionen festlegen, die Metadatenwerte sind, die standardmäßig auf alle Elemente im Projekt angewandt werden. Mit ItemDefinitionGroup ist die Verwendung der [CreateItem-Aufgabe](../msbuild/createitem-task.md) und der [CreateProperty-Aufgabe](../msbuild/createproperty-task.md) überflüssig. Weitere Informationen finden Sie unter [Elementdefinitionen](../msbuild/item-definitions.md).
 
 \<Project> \<ItemDefinitionGroup>
@@ -40,6 +41,7 @@ Mit dem `ItemDefinitionGroup`-Element können Sie einen Satz von Elementdefiniti
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
 In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -58,9 +60,10 @@ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeor
 
 | Element | Beschreibung |
 | - | - |
-| [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
+| [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer MSBuild-Projektdatei. |
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Codebeispiel werden zwei Metadatenelemente, m und n, in einer ItemDefinitionGroup definiert. In diesem Beispiel wird das Standardmetadatum "m" auf das Element "i" angewendet, da das Metadatum "m" nicht explizit durch das Element "i" definiert wird. Das Standardmetadatum "n" wird jedoch nicht auf das Element "i" angewendet, da das Metadatum "n" bereits durch Element "i" definiert ist.
 
 ```xml
@@ -82,5 +85,6 @@ Im folgenden Codebeispiel werden zwei Metadatenelemente, m und n, in einer ItemD
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elemente](../msbuild/msbuild-items.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589915"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
@@ -77,7 +77,7 @@ Stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angez
 
 3. Wenden Sie die Textur an, die Sie gerade erstellt haben, indem Sie die Textureigenschaften konfigurieren. Legen Sie den Wert der Eigenschaft **Texture** (Textur) des Knotens **Texture Sample** (Texturbeispiel) auf **Texture1** fest, und geben Sie dann die Texturdatei an, indem Sie die Eigenschaft **Filename** (Dateiname) der Eigenschaftengruppe **Texture1** im gleichen Eigenschaftenfenster verwenden.
 
-   Weitere Informationen darüber, wie Sie eine Textur im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Basistexturshaders](../designers/how-to-create-a-basic-texture-shader.md) beschrieben.
+   Weitere Informationen darüber, wie Sie eine Textur im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Basistextur-Shaders](../designers/how-to-create-a-basic-texture-shader.md).
 
    Die Billardkugel sollte jetzt in etwa folgendermaßen aussehen:
 
@@ -99,7 +99,7 @@ In Computergrafiken werden *Beleuchtungsmodelle* verwendet – vereinfachte Näh
 
 - Optional können Sie das Beleuchtungsverhalten anpassen, indem Sie die Eigenschaft **MaterialDiffuse** des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.
 
-Weitere Informationen darüber, wie Sie das Lambert-Beleuchtungsmodell auf Ihren Shader anwenden, finden Sie unter [ Vorgehensweise: Erstellen eines einfachen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).
+Weitere Informationen zur Verwendung der Lambert-Beleuchtung im Shader finden Sie unter [Vorgehensweise: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Bei angewendetem Lambert-Beleuchtungsmodell sollte die Billardkugel in etwa folgendermaßen aussehen:
 
@@ -121,7 +121,7 @@ Das Phong-Beleuchtungsmodell basiert auf dem Lambert-Beleuchtungsmodell, kann ab
 
 2. Optional können Sie das Glanzlichtverhalten anpassen, indem Sie die Glanzlichteigenschaften (**MaterialSpecular** und **MaterialSpecularPower**) des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.
 
-   Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Standard-Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).
+   Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).
 
    Mit Glanzlichtern sollte die Billardkugel in etwa folgendermaßen aussehen:
 
@@ -207,10 +207,10 @@ Zunächst muss eine Cubemaptextur erstellt werden. In den meisten Apps muss der 
 
    In diesem abschließenden Bild sehen Sie, wie die Effekte, die Sie hinzugefügt haben, zusammen eine sehr überzeugende Darstellung einer Billardkugel ergeben. Die Form, die Textur und die Beleuchtung bilden die Grundlage eines 3D-Objekts, und durch die Glanzlichter und die Reflexionen sieht die Billardkugel interessanter aus und fügt sich in ihre Umgebung ein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
 - [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Shader-Designer](../designers/shader-designer.md)
-- [Image Editor](../designers/image-editor.md)
+- [Bildbearbeitung](../designers/image-editor.md)
 - [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

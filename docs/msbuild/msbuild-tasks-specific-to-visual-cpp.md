@@ -15,21 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6393e771f9e9ed862d21397dabacdb3f3808c386
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633147"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>Spezifische MSBuild-Aufgaben für C++
-Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Wenn C++ installiert wird, sind die folgenden Aufgaben zusätzlich zu den Aufgaben verfügbar, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] installiert sind. Weitere Informationen finden Sie unter [Übersicht über MSBuild (C++)](/cpp/build/msbuild-visual-cpp-overview).
+
+Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Wenn C++ installiert wird, sind zusätzlich zu den mit MSBuild installierten Aufgaben die folgenden Aufgaben verfügbar. Weitere Informationen finden Sie unter [Übersicht über MSBuild (C++)](/cpp/build/msbuild-visual-cpp-overview).
 
  Zusätzlich zu den Parametern für jede Aufgabe hat jede Aufgabe auch die folgenden Parameter.
 
 | Parameter | Beschreibung |
 |-------------------| - |
-| `Condition` | Optionaler `String`-Parameter.<br /><br /> Ein `Boolean`-Ausdruck, den die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine verwendet, um zu bestimmen, ob diese Aufgabe ausgeführt wird. Informationen zu den Bedingungen, die von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] unterstützt werden, finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md). |
+| `Condition` | Optionaler `String`-Parameter.<br /><br /> Ein `Boolean`-Ausdruck, mit dem die MSBuild-Engine bestimmt, ob diese Aufgabe ausgeführt wird. Informationen zu den von MSBuild unterstützten Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ### <a name="related-topics"></a>Verwandte Themen

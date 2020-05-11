@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Organisieren und Bearbeiten von Code in Visual Studio
-summary: Hier erfahren Sie mehr über das Arbeiten mit Codeprojekten, das Verwenden von Code-Editor-Features und das Pflegen eines konsistenten Codeformats.
+summary: 'Hier erfahren Sie mehr über das Arbeiten mit Codeprojekten, das Verwenden von Code-Editor-Features und das Pflegen eines konsistenten Codeformats.'
 metadata:
   title: Neue Funktionen im Code-Editor
   description: Informationen zu den neuen Features zur Codebearbeitung in Visual Studio 2019.
@@ -10,54 +10,48 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
-  ms.translationtype: HT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/22/2019
-  ms.locfileid: "74316441"
 landingContent:
-- title: Öffnen oder Erstellen eines Projekts
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Erstellt ein neues Projekt
-      url: create-new-project.md
-    - text: Öffnen eines Projekts von einem Repository aus
-      url: ../get-started/tutorial-open-project-from-repo.md
-  - linkListType: how-to-guide
-    links:
-    - text: Verwenden von Visual Studio ohne Projekte oder Projektmappen
-      url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Verwenden von Bearbeitungsfunktionen
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Verwenden des Code-Editors
-      url: writing-code-in-the-code-and-text-editor.md
-    - text: Navigieren durch den Code
-      url: navigating-code.md
-    - text: Generieren und Korrigieren von Code
-      url: code-generation-in-visual-studio.md
-    - text: Verwenden von IntelliSense für die Codevervollständigung
-      url: using-intellisense.md
-    - text: Verwalten von Codeformateinstellungen
-      url: code-styles-and-code-cleanup.md
-    - text: Codeanalyse
-      url: ../code-quality/roslyn-analyzers-overview.md
-    - text: IntelliCode
-      url: /visualstudio/intellicode/intellicode-visual-studio
-- title: Erste Schritte mit Programmiersprachen
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Erste Schritte mit C# und ASP.NET Core in Visual Studio
-      url: tutorial-csharp-aspnet-core.md
-    - text: Erstellen einer C++-Konsolen-App in Visual Studio
-      url: /cpp/get-started/tutorial-console-cpp
-    - text: Erste Schritte mit Python in Visual Studio
-      url: quickstart-python.md
-    - text: Erstellen Sie eine Konsolenanwendung mit Visual Basic
-      url: quickstart-visual-basic-console.md
-    - text: Erstellen Sie eine Web-App mit Node.js
-      url: quickstart-nodejs.md
+  - title: Öffnen oder Erstellen eines Projekts
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Erstellen eines neuen Projekts
+            url: create-new-project.md
+          - text: Öffnen eines Projekts von einem Repository aus
+            url: ../get-started/tutorial-open-project-from-repo.md
+      - linkListType: how-to-guide
+        links:
+          - text: Verwenden von Visual Studio ohne Projekte oder Projektmappen
+            url: develop-code-in-visual-studio-without-projects-or-solutions.md
+  - title: Verwenden von Bearbeitungsfunktionen
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Codeeditor verwenden
+            url: writing-code-in-the-code-and-text-editor.md
+          - text: Navigieren durch den Code
+            url: navigating-code.md
+          - text: Generieren und Korrigieren von Code
+            url: code-generation-in-visual-studio.md
+          - text: Verwenden von IntelliSense für die Codevervollständigung
+            url: using-intellisense.md
+          - text: Verwalten von Codeformateinstellungen
+            url: code-styles-and-code-cleanup.md
+          - text: Codeanalyse
+            url: ../code-quality/roslyn-analyzers-overview.md
+          - text: IntelliCode
+            url: /visualstudio/intellicode/intellicode-visual-studio
+  - title: Erste Schritte mit Programmiersprachen
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 'Erste Schritte mit C# und ASP.NET Core in Visual Studio'
+            url: tutorial-csharp-aspnet-core.md
+          - text: Erstellen einer C++-Konsolen-App in Visual Studio
+            url: /cpp/get-started/tutorial-console-cpp
+          - text: Erste Schritte mit Python in Visual Studio
+            url: quickstart-python.md
+          - text: Erstellen Sie eine Konsolenanwendung mit Visual Basic
+            url: quickstart-visual-basic-console.md
+          - text: Erstellen Sie eine Web-App mit Node.js
+            url: quickstart-nodejs.md

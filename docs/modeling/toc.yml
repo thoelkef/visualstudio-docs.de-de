@@ -223,7 +223,7 @@
           href: using-visual-studio-modelbus-in-a-text-template.md
         - name: 'Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift'
           href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
-        - name: 'Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Anweisungsprozessor'
+        - name: 'Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor'
           href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
         - name: Der DslTextTransform-Befehl
           href: the-dsltexttransform-command.md

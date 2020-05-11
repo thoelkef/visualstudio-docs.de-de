@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785088"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307118"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -60,7 +60,7 @@ Beim Verwenden von interaktiven Fenstern in ihrem alltäglichen Workflow entwick
 
 Startskripts enthalten Code, der vom **interaktiven** Fenster automatisch geladen und ausgeführt wird, einschließlich Importe, Funktionsdefinitionen und vieles mehr. Auf derartige Skripts kann auf zwei Weisen verwiesen werden:
 
-1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner *Documents\Visual Studio \<version>\Python Scripts\\\<Umgebung>*, wobei &lt;Version&gt; der Visual Studio-Version (wie etwa 2017 oder 2019) und &lt;Umgebung&gt; dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das **interaktive** Fenster für diese Umgebung starten, lädt es alle hier gefundenen *.py*-Dateien und führt diese in alphabetischer Reihenfolge aus.
+1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner *Documents\Visual Studio \<version>\Python Scripts\\\<Umgebung>* , wobei &lt;Version&gt; der Visual Studio-Version (wie etwa 2017 oder 2019) und &lt;Umgebung&gt; dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das **interaktive** Fenster für diese Umgebung starten, lädt es alle hier gefundenen *.py*-Dateien und führt diese in alphabetischer Reihenfolge aus.
 
 1. Das Steuerelement **Skripts** auf der Registerkarte **Extras** > **Optionen** > **Python** > **Interaktives Fenster** (siehe Optionen für das [interaktive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options) Fenster) gibt einen zusätzlichen Ordner für Startskripts an, die in allen Umgebungen geladen und ausgeführt werden. Diese Funktion funktioniert aktuell noch nicht.
 
@@ -90,7 +90,7 @@ Wenn die Registerkarte**Konfigurieren** verfügbar ist, enthält sie die in der 
 
 *In früheren Versionen auch als „pip“ bezeichnet.*
 
-Verwaltet die Pakete, die mithilfe von Pip (die Registerkarte **Pakete (PyPI)**) oder Conda (die Registerkarte **Pakete (Conda)** für Conda-Umgebungen in Visual Studio 2017 Version 15.7 und höher) in der Umgebung installiert werden. Auf dieser Registerkarte können Sie zudem neue Pakete einschließlich der zugehörigen Abhängigkeiten suchen und installieren.
+Verwaltet die Pakete, die mithilfe von Pip (die Registerkarte **Pakete (PyPI)** ) oder Conda (die Registerkarte **Pakete (Conda)** für Conda-Umgebungen in Visual Studio 2017 Version 15.7 und höher) in der Umgebung installiert werden. Auf dieser Registerkarte können Sie zudem neue Pakete einschließlich der zugehörigen Abhängigkeiten suchen und installieren.
 
 Bereits installierte Pakete werden mit Steuerelementen zum Aktualisieren (nach unten gerichteter Pfeil) und Deinstallieren (X in einem Kreis) des Pakets angezeigt:
 
@@ -131,7 +131,7 @@ Wenn Sie Pakete in einer Umgebung installieren, die sich in einem geschützten B
 
 ![Eingabeaufforderung für erhöhte Rechte](media/environments/environments-pip-elevate.png)
 
-**Jetzt Rechte erweitern** erteilt Administratorrechte an „pip“ für einen einzigen Vorgang, auch gemäß Aufforderungen des Betriebssystems nach Berechtigungen. Wenn Sie **Ohne Administratorberechtigungen fortfahren** auswählen, wird die Installation des Pakets versucht, „pip“ schlägt allerdings beim Erstellen von Ordnern fehl. Die Ausgabe kann z. B. so aussehen: **error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py' (Fehler: 'C:\Programme\Anaconda3\Lib\site-packages\png.py' konnte nicht erstellt werden. Berechtigung verweigert)**.
+**Jetzt Rechte erweitern** erteilt Administratorrechte an „pip“ für einen einzigen Vorgang, auch gemäß Aufforderungen des Betriebssystems nach Berechtigungen. Wenn Sie **Ohne Administratorberechtigungen fortfahren** auswählen, wird die Installation des Pakets versucht, „pip“ schlägt allerdings beim Erstellen von Ordnern fehl. Die Ausgabe kann z. B. so aussehen: **error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py' (Fehler: 'C:\Programme\Anaconda3\Lib\site-packages\png.py' konnte nicht erstellt werden. Berechtigung verweigert)** .
 
 Wenn Sie **Beim Installieren oder Entfernen von Paketen immer Rechte erweitern** auswählen, wird verhindert, dass das Dialogfeld für die entsprechende Umgebung angezeigt wird. Wenn Sie das Dialogfeld wieder anzeigen möchten, wählen Sie unter **Extras** > **Optionen** > **Python** > **Allgemein** die Schaltfläche **Alle dauerhaft ausgeblendeten Dialogfelder zurücksetzen** aus.
 
@@ -157,7 +157,7 @@ Zeigt den aktuellen Status der IntelliSense-Vervollständigungsdatenbank:
 ![Registerkarte „IntelliSense“ von Python-Umgebungen](media/environments/environments-intellisense-tab.png)
 
 - In Visual Studio 2017 Version 15.5 und früher hängen IntelliSense-Vervollständigungen von einer Datenbank ab, die für diese Bibliothek kompiliert wurde. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, kann aber eine Weile dauern und ist möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen.
-- Visual Studio 2017 Version 15.6 und höher verwendet eine schnellere Methode, um Vervollständigungen bereitzustellen, die nicht standardmäßig von der Datenbank abhängen. Deshalb trägt die Registerkarte die Bezeichnung **IntelliSense [Datenbank deaktiviert]**. Sie können die Datenbank durch Deaktivieren der Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use new style IntelliSense for environments (Neues IntelliSense für Umgebungen verwenden)** aktivieren.
+- Visual Studio 2017 Version 15.6 und höher verwendet eine schnellere Methode, um Vervollständigungen bereitzustellen, die nicht standardmäßig von der Datenbank abhängen. Deshalb trägt die Registerkarte die Bezeichnung **IntelliSense [Datenbank deaktiviert]** . Sie können die Datenbank durch Deaktivieren der Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use new style IntelliSense for environments (Neues IntelliSense für Umgebungen verwenden)** aktivieren.
 
 Wenn Visual Studio eine neue Umgebung erkennt (oder wenn Sie eine hinzufügen), wird die Datenbank automatisch kompiliert, indem die Quelldateien der Bibliothek analysiert werden. Dieser Prozess kann eine Minute oder bis zu einer Stunde oder noch länger dauern, je nachdem, was installiert ist. (Zu Anaconda gehören z.B. viele Bibliotheken, und es dauert einige Zeit, die Datenbank zu kompilieren.) Wenn der Vorgang abgeschlossen ist, erhalten Sie detaillierte IntelliSense-Daten und müssen die Datenbank erst erneut aktualisieren (mit der Schaltfläche **DB aktualisieren**), wenn Sie weitere Bibliotheken installieren.
 

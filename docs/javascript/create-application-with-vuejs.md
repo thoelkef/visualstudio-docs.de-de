@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180266"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744914"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
@@ -29,7 +29,7 @@ Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual
 * Erkennung des `lang`-Attributs in *VUE*-Dateien
 * Vorlagen für Vue.js-Projekte und -Dateien
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 * Sie müssen Visual Studio 2017 Version 15.8 oder höher und die Workload **Node.js-Entwicklung** installiert haben.
 
@@ -51,7 +51,7 @@ Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual
 
     Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wenn eine installierte Runtime nicht erkannt wird, können Sie Ihr Projekt so konfigurieren, dass es auf der Eigenschaftenseite auf die installierte Runtime verweist. (Klicken Sie nach dem Erstellen eines Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus.)
 
-## <a name="create-a-vuejs-project-using-a-template"></a>Erstellen eines Vue.js-Projekts mit einer Vorlage
+## <a name="create-a-vuejs-project-using-nodejs"></a>Erstellen eines Vue.js-Projekts unter Verwendung von Node.js
 
 Ein neues Projekt können Sie mithilfe der neuen Vue.js-Vorlage erstellen. Die Verwendung der Vorlage ist die einfachste Möglichkeit für den Einstieg. Eine ausführliche Anleitung finden Sie unter [Use Visual Studio to create your first Vue.js app (Verwenden von Visual Studio zum Erstellen der ersten Vue.js-App)](../javascript/quickstart-vuejs-with-nodejs.md).
 
@@ -74,7 +74,7 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
     Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, den Namen **client-app** ein, und wählen Sie dann **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** , und wählen Sie dann **Web** aus. Wählen Sie im mittleren Bereich **ASP.NET Core-Webanwendung** aus, geben Sie den Namen **client-app** ein, und wählen Sie dann **OK** aus.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** , und wählen Sie dann **Web** aus. Wählen Sie im mittleren Bereich **ASP.NET Core-Webanwendung** aus, geben Sie den Namen **client-app** ein, und wählen Sie dann **OK** aus.
     ::: moniker-end
 
     Wenn die Projektvorlage **ASP.NET Core-Webanwendung** nicht vorhanden ist, installieren Sie zunächst die Workload **ASP.NET und Webentwicklung** und die Entwicklungsworkload .**NET Core**. Klicken Sie zum Installieren der Workloads auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt** (wählen Sie **Datei** > **Neu** > **Projekt** aus). Der Visual Studio-Installer wird gestartet. Wählen Sie die erforderlichen Workloads aus.

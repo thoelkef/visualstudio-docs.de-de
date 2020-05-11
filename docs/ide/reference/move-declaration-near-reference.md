@@ -1,20 +1,21 @@
 ---
 title: Verschieben einer Variablendeklaration in die Nähe eines Verweises
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35735009a5b813ca29159f276fe2d5abb734be0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1339f4a9d151ef41d9a35c5aac0a96f220a297b3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585283"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093993"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Refactoring zum Verschieben einer Deklaration in Verweisnähe
 
@@ -22,9 +23,11 @@ Dieses Refactoring gilt für:
 
 - C#
 
-**Beschreibung:** Hiermit können Sie Variablendeklarationen in die Nähe des Codes verschieben, der sie verwendet.
+- Visual Basic
 
-**Hintergrund:** Sie verwenden Variablendeklarationen, die für eine engeren Bereich definiert werden können.
+**Beschreibung**: Hiermit können Sie Variablendeklarationen näher an deren Verwendung verschieben.
+
+**Hintergrund**: Sie verwenden Variablendeklarationen, die in einem engeren Bereich definiert werden können.
 
 **Vorteile**: Sie könnten die Deklaration in ihrem jeweiligen Zustand belassen, dies könnte jedoch Probleme mit der Lesbarkeit verursachen oder zum Ausblenden von Informationen führen. Mit diesem Feature erhalten Sie die Möglichkeit zur Umgestaltung, um die Lesbarkeit zu verbessern.
 
@@ -62,7 +65,7 @@ if (condition)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

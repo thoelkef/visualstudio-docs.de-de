@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969991"
 ---
 # <a name="execution-profile-report"></a>Ausführungsprofilbericht
@@ -30,7 +30,7 @@ Der Ausführungsprofilbericht ist ein herkömmliches Samplingprofil. Samplings w
 
 |Spalte|Beschreibung|
 |------------|-----------------|
-|name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|
+|Name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|
 |Inklusive Samplings|Die Gesamtzahl von Samplings, die für alle Stapel erfasst werden, die diese Ebene der Aufruflistenstruktur bilden. Die inklusive Anzahl ist die Summe der exklusiven Samplings für diese Funktion und der inklusiven Anzahl für alle untergeordneten Knoten.|
 |Exklusive Stichproben|Die Gesamtzahl erfasster Samplings, für die diese Funktion die niedrigste Ebene der Aufrufliste bildet.|
 |% inklusive|Der Prozentsatz der gesamten Samplings, die in der Spalte für inklusive Samplings angezeigt werden. Prozentsätze werden auf zwei Dezimalstellen gerundet.|
@@ -39,5 +39,5 @@ Der Ausführungsprofilbericht ist ein herkömmliches Samplingprofil. Samplings w
 
  Diese Berichtstabelle kann in der Ansicht [Ausführungszeit (Threadansicht)](../profiling/execution-time-threads-view.md) angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

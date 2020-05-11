@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596774"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633199"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild-Zielframework und -Zielplattform
+
 Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform*, bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist („x86“). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.
 
 > [!IMPORTANT]
 > In diesem Artikel wird die alte Methode zum Angeben eines Zielframeworks beschrieben. Projekte im SDK-Format ermöglichen unterschiedliche Zielframeworks wie .NET Standard. Weitere Informationen finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Zielframework und -profil
+
  Ein Zielframework ist eine bestimmte Version von .NET Framework, mit der das Projekt ausgeführt werden soll. Die Angabe eines Zielframeworks ist erforderlich, da es Compilerfunktionen und Assemblyverweise ermöglicht, die nur für diese Version des Frameworks gelten.
 
  Derzeit werden die folgenden Versionen von .NET Framework unterstützt:
 
 - .NET Framework 2.0 (enthalten in Visual Studio 2005)
 
-- .NET Framework 3.0 (enthalten in [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (enthalten in Windows Vista)
 
-- .NET Framework 3.5 (enthalten in [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (enthalten in Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (enthalten in [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (enthalten in Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -69,6 +71,7 @@ Das Zielframework wird in der `TargetFrameworkVersion`-Eigenschaft in einer Proj
 ```
 
 ## <a name="target-platform"></a>Zielplattform
+
  Eine *Plattform* ist eine Kombination aus Hardware und Software, die eine bestimmte Laufzeitumgebung definiert. Ein auf ein Objekt angewendeter
 
 - `x86` steht für ein 32-Bit-Windows-Betriebssystem, das auf einem Intel 80x86-Prozessor oder einem vergleichbaren Prozessor ausgeführt wird.
@@ -97,4 +100,5 @@ Eine *Zielkonfiguration* ist eine Teilmenge einer Zielplattform. `x86``Debug`-Ko
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568476"
 ---
 # <a name="options-text-editor-f-codelens"></a>Optionen, Text-Editor, F#, CodeLens
@@ -38,7 +38,7 @@ Verwenden Sie die Optionenseite **CodeLens**, um die CodeLens-Einstellungen für
 
    Sie können das Standardpräfix ändern, das für die Anmerkungen verwendet wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
-- [Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)
+- [Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

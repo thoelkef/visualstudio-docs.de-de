@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75589902"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio-Bildbibliothek
@@ -29,9 +29,9 @@ Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Vis
 
 [Laden Sie die Visual Studio-Bildbibliothek herunter](https://www.microsoft.com/download/details.aspx?id=35825)
 
-Die Bibliothek ist in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
+Die Bildbibliothek wird in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren von Visual Studio](../install/install-visual-studio.md)
 - [Bilder, Bitmaps und Metadateien](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

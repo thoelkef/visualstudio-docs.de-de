@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField | Microsoft-Dokumentation
+title: IDebugEnumField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField interface
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14ea4834619d9e28d4b8a15206b3ea9411f50017
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7885f36a113809e81279498a769e257af4f1cde2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345112"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730172"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Diese Schnittstelle stellt einen Enumerationstyp dar.
@@ -29,33 +29,33 @@ IDebugEnumField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein symbolanbieter implementiert diese Schnittstelle, um eine Enumeration darstellt.
+ Ein Symbolanbieter implementiert diese Schnittstelle, um eine Enumeration darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Verwendung [QueryInterface](/cpp/atl/queryinterface) dieser Schnittstelle vom Abrufen der [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle, wenn [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) gibt `FIELD_TYPE_ENUM`.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Verwenden Sie [QueryInterface,](/cpp/atl/queryinterface) um diese Schnittstelle von der `FIELD_TYPE_ENUM` [IDebugField-Schnittstelle](../../../extensibility/debugger/reference/idebugfield.md) abzuholen, wenn [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zurückgibt.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in VTable-Reihenfolge
- Zusätzlich zu den Methoden für die `IDebugField` und `IDebugContainerField` Schnittstellen, die diese Schnittstelle implementiert die folgenden Methoden:
+ Zusätzlich zu den Methoden `IDebugField` `IDebugContainerField` auf der und Schnittstellen implementiert diese Schnittstelle die folgenden Methoden:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , das die den Namen für den Enumerationstyp.|
-|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Gibt den Namen der Enumerationskonstante, die den angegebenen Wert zugeordnet.|
-|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Gibt den Wert mit den Namen der angegebenen Enumeration-Konstante|
-|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Gibt den Wert mit dem angegebene Enumeration-constant-Namen, aber Groß-/Kleinschreibung ignorieren.|
+|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Namen für diesen Enumerationstyp beschreibt.|
+|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Gibt den Namen der Enumerationskonstante zurück, die dem angegebenen Wert zugeordnet ist.|
+|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Gibt den Wert zurück, der dem angegebenen Enumerationskonstantennamen zugeordnet ist.|
+|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Gibt den Wert zurück, der dem angegebenen Enumerationskonstantennamen zugeordnet ist, aber die Groß-/Kleinschreibung ignoriert wird.|
 
-## <a name="remarks"></a>Hinweise
- Es ist das zugrunde liegende Symbol, das tatsächlich an einen Speicherort mit gebunden wird [binden](../../../extensibility/debugger/reference/idebugbinder-bind.md).
+## <a name="remarks"></a>Bemerkungen
+ Es ist das zugrunde liegende Symbol, das tatsächlich an einen Speicherort mit [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)gebunden ist.
 
-## <a name="requirements"></a>Anforderungen
- Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Symbolanbieterschnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [Binden](../../../extensibility/debugger/reference/idebugbinder-bind.md)

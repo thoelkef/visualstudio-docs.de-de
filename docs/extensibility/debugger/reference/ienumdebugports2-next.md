@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPorts2::Next | Microsoft-Dokumentation
+title: IEnumDebugPorts2::Weiter | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2::Next
 ms.assetid: 3f43d18c-6bd1-4ddd-95ef-9550abd2ad09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2245bc6032ebb8df400f595079039b49cee08075
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66cb525157d5902b43a9924291d7c10260b40309
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339332"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716169"
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
 Gibt den nächsten Satz von Elementen aus der Enumeration zurück.
@@ -45,17 +45,17 @@ int Next(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.
+[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale `rgelt` Größe des Arrays an.
 
 `rgelt`\
-[in, out] Array von [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Elementen gefüllt werden soll.
+[in, out] Array von [IDebugPort2-Elementen,](../../../extensibility/debugger/reference/idebugport2.md) die ausgefüllt werden sollen.
 
 `pceltFetched`\
-[out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.
+[out] Gibt die Anzahl der `rgelt`tatsächlich in zurückgegebenen Elemente zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

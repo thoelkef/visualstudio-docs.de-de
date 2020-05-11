@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.openlocfilehash: be8f508a0055d4cd7cbacf1c728e6d73c8b281f7
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984715"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Erstellen und Bearbeiten einer benutzerdefinierten EditorConfig-Datei
@@ -44,7 +44,7 @@ Eine EditorConfig-Datei unterstützt zudem [Codierungskonventionen](/visualstudi
 
     ![Inhalt der Menüelemente](media/editorconfig-image0.png)
 
-3. Wählen Sie **Misc > Empty Text File** (Sonstiges > Leere Textdatei) aus, und geben Sie ihr den **Namen** `.editorconfig`. Klicken Sie auf **Neu**, um die Datei zu erstellen und im Editor zu öffnen:
+3. Wählen Sie **Sonstiges > Leere Textdatei** aus, und geben Sie ihr den **Namen** `.editorconfig`. Klicken Sie auf **Neu**, um die Datei zu erstellen und im Editor zu öffnen:
 
     ![Dialogfeld „Neue Datei“](media/editorconfig-image1.png)
 
@@ -52,7 +52,7 @@ Eine EditorConfig-Datei unterstützt zudem [Codierungskonventionen](/visualstudi
 
     ![Im Lösungspad angezeigtes Projektmappenelement](media/editorconfig-image1a.png)
 
-4. Bearbeiten Sie die Datei. Beispiel:
+4. Bearbeiten Sie die Datei. Zum Beispiel:
 
     ```EditorConfig
     # This file is the top-most EditorConfig file
@@ -138,7 +138,7 @@ Weitere Informationen über die verfügbaren EditorConfig-Einstellungen finden S
 
 ## <a name="override-editorconfig-settings"></a>Überschreiben von EditorConfig-Einstellungen
 
-Es ist möglich, dass mehr als eine `.editorconfig`-Datei in einer Projektmappe enthalten ist. Visual Studio für Mac liest `.editorconfig`-Dateien in der Projektmappe von oben nach unten, wobei Einstellungen hinzugefügt und überschrieben werden. Dabei haben die Einstellungen in der `.editorconfig`-Datei, die der von Ihnen bearbeiteten Datei am _nächsten_ liegen, Vorrang. Die Einstellungen werden aus der `.editorconfig`-Datei im gleichen Ordner (falls vorhanden), dann aus der `.editorconfig`-Datei im übergeordneten Ordner (falls vorhanden) usw. übernommen, bis `root=true` gefunden wird.
+Es ist möglich, dass mehr als eine `.editorconfig`-Datei in einer Projektmappe enthalten ist. Visual Studio für Mac liest `.editorconfig`-Dateien in der Projektmappe von oben nach unten, wobei Einstellungen hinzugefügt und überschrieben werden. Dabei haben die Einstellungen in der `.editorconfig`-Datei Vorrang, die der von Ihnen bearbeiteten Datei am _nächsten_ liegen. Die Einstellungen werden aus der `.editorconfig`-Datei im gleichen Ordner (falls vorhanden), dann aus der `.editorconfig`-Datei im übergeordneten Ordner (falls vorhanden) usw. übernommen, bis `root=true` gefunden wird.
 
 Wenn Sie sicherstellen möchten, dass _keine_ Einstellungen von übergeordneten `.editorconfig`-Dateien auf diesen Teil der Codebase angewendet werden, fügen Sie die `root=true`-Eigenschaft oben in der untergeordneten `.editorconfig`-Datei ein:
 

@@ -1,33 +1,33 @@
 ---
-title: Auswählen des Installationsverzeichnisses für ein VSPackage | Microsoft-Dokumentation
+title: Auswählen des Installationsverzeichnisses für ein VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309121"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709761"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wählen Sie das Installationsverzeichnis für ein VSPackage
-Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benutzers Datei sein. Der Speicherort hängt davon ab, ob das VSPackage wird verwaltet oder nicht verwaltet, Ihr Schema für die versionsverwaltung von Seite-an-Seite, und klicken Sie auf Benutzerauswahl.
+Ein VSPackage und seine unterstützenden Dateien müssen sich im Dateisystem eines Benutzers befinden. Der Speicherort hängt davon ab, ob das VSPackage verwaltet oder nicht verwaltet wird, ihr side-by-side Versionsschema und die Benutzerauswahl.
 
 ## <a name="unmanaged-vspackages"></a>Nicht verwaltete VSPackages
- Eine nicht verwaltete VSPackage ist ein COM-Server, der an einem beliebigen Speicherort installiert werden kann. Registrierungsinformationen muss die Position genau wiedergeben. Der Installer-Benutzeroberfläche (UI) sollte einen Standardspeicherort als Unterverzeichnis des Bereitstellen der `ProgramFilesFolder` Windows Installer-Eigenschaftswert. Zum Beispiel:
+ Ein nicht verwaltetes VSPackage ist ein COM-Server, der an jedem Speicherort installiert werden kann. Seine Registrierungsinformationen müssen seinen Standort genau widerspiegeln. Die Benutzeroberfläche des Installationsprogramms sollte einen Standardspeicherort als `ProgramFilesFolder` Unterverzeichnis des Windows Installer-Eigenschaftswerts bereitstellen. Beispiel:
 
-*&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
+*&lt;ProgramFilesFolder&gt;\\&lt;&gt;\\&lt;MyCompany MyVSPackageProduct&gt;\\*
 
- Der Benutzer sollte ermöglicht werden, ändern das Standardverzeichnis, um Benutzern zu ermöglichen, die eine kleine Startpartition zu halten, und Anwendungen und Tools auf einem anderen Volume installieren möchten.
+ Der Benutzer sollte das Standardverzeichnis ändern können, um Benutzer aufzunehmen, die eine kleine Startpartition beibehalten und es vorziehen, Anwendungen und Tools auf einem anderen Volume zu installieren.
 
- Wenn das Schema für die Seite-an-Seite eine mit versionsverwaltung durch das VSPackage verwendet, können Sie Unterverzeichnisse, um verschiedene Versionen zu speichern. Zum Beispiel:
+ Wenn Ihr Side-by-Side-Schema ein versioniertes VSPackage verwendet, können Sie Unterverzeichnisse verwenden, um verschiedene Versionen zu speichern. Beispiel:
 
  *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
 
@@ -36,30 +36,30 @@ Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benu
  *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2005\\*
 
 ## <a name="managed-vspackages"></a>Verwaltete VSPackages
- Verwaltete VSPackages können auch an einem beliebigen Speicherort installiert werden. Allerdings sollten Sie immer installiert werden, im globalen Assemblycache (GAC), um die Assembly Ladezeiten zu reduzieren. Da verwaltete VSPackages immer Assemblys mit starkem Namen sind, bedeutet, dass im GAC installieren, dass die Überprüfung der Signatur mit starkem Namen nur zum Installationszeitpunkt dauert. Assemblys mit starkem Namen an anderer Stelle im Dateisystem installiert müssen die Signaturen überprüft jedes Mal, wenn sie geladen werden. Wenn Sie verwaltete VSPackages im GAC installieren, verwenden Sie des Regpkg-Tools **/Assembly** Switch zum Schreiben der Registrierungseinträge auf dem starken Namen der Assembly verweist.
+ Verwaltete VSPackages können auch an jedem Beliebigen ortmöglich installiert werden. Sie sollten jedoch immer in Betracht ziehen, sie im globalen Assemblycache (GAC) zu installieren, um die Auslastung der Assembly zu reduzieren. Da verwaltete VSPackages immer Assemblys mit starkem Namen sind, bedeutet die Installation im GAC, dass ihre Überprüfung der Signatur mit starkem Namen nur zur Installationszeit erfolgt. Assemblys mit starkem Namen, die an anderer Stelle im Dateisystem installiert sind, müssen ihre Signaturen bei jedem Laden überprüfen lassen. Wenn Sie verwaltete VSPackages im GAC installieren, verwenden Sie den **Schalter /assembly** des werkzeugs regpkg, um Registrierungseinträge zu schreiben, die auf den starken Namen der Assembly verweisen.
 
- Wenn Sie verwaltete VSPackages in einem anderen Speicherort als im GAC installieren, führen Sie die früheren Hinweise, die für nicht verwaltete VSPackages, die für die Auswahl Verzeichnishierarchien. Verwenden Sie das Regpkg-Tool **/ codebase** Switch zum Schreiben der Registrierungseinträge, die auf den Pfad der VSPackage-Assembly verweist.
+ Wenn Sie verwaltete VSPackages an einem anderen Speicherort als dem GAC installieren, befolgen Sie die früheren Empfehlungen für nicht verwaltete VSPackages zur Auswahl von Verzeichnishierarchien. Verwenden Sie den Schalter **/codebase** des werkzeugs regpkg, um Registrierungseinträge zu schreiben, die auf den Pfad der VSPackage-Assembly verweisen.
 
- Weitere Informationen finden Sie unter [registrieren und Aufheben der Registrierung von VSPackages](../../extensibility/registering-and-unregistering-vspackages.md).
+ Weitere Informationen finden Sie unter [Registrieren und Aufheben der Registrierung von VSPackages](../../extensibility/registering-and-unregistering-vspackages.md).
 
 ## <a name="satellite-dlls"></a>Satelliten-DLLs
- Gemäß der Konvention VSPackage Satelliten-DLLs, die Ressourcen für ein bestimmtes Gebietsschema enthalten, befinden sich in Unterverzeichnissen von der *VSPackage* Verzeichnis. Die Unterverzeichnisse entsprechen Gebietsschema-ID (LCID) Werten.
+ Gemäß der Konvention befinden sich VSPackage-Satelliten-DLLs, die Ressourcen für ein *VSPackage* bestimmtes Gebietsschema enthalten, in Unterverzeichnissen des VSPackage-Verzeichnisses. Die Unterverzeichnisse entsprechen den LCID-Werten (Locale ID).
 
- Die [verwalten VSPackages](../../extensibility/managing-vspackages.md) Artikel gibt an, dass die Registrierungseinträge steuern, wo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tatsächlich sucht einer VSPackages Satelliten-DLL. Allerdings [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versucht, eine Satelliten-DLL in einem Unterverzeichnis mit dem Namen für einen LCID-Wert, in der folgenden Reihenfolge zu laden:
+ Der Artikel [VSPackages verwalten](../../extensibility/managing-vspackages.md) gibt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] an, dass Registrierungseinträge steuern, wo tatsächlich nach der Satelliten-DLL eines VSPackage gesucht wird. Versucht [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jedoch, eine Satelliten-DLL in einem Unterverzeichnis zu laden, das nach einem LCID-Wert benannt ist, in der folgenden Reihenfolge:
 
-1. Standard-LCID (Visual Studio-LCID, z. B. *\1033* für Englisch)
+1. Standard-LCID (Visual Studio LCID; z. B. *1033 USD* für Englisch)
 
-2. Standard-LCID mit der standardmäßigen Sprachvariante an.
+2. Standard-LCID mit der Standarduntersprache.
 
-3. Systemstandard LCID.
+3. Systemstandard-LCID.
 
-4. Systemstandard LCID mit der standardmäßigen Sprachvariante an.
+4. Systemstandard-LCID mit der Standarduntersprache.
 
-5. USA Englisch ( *. \1033* oder *. \0x409*).
+5. Us-Englisch (*.1033* oder *.'0x409*).
 
-Wenn Ihre VSPackage-DLL-Ressourcen enthält und die **SatelliteDll\DllName** Registrierungseintrag verweist, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versucht, die sie in der oben genannten Reihenfolge zu laden.
+Wenn Ihre VSPackage-DLL Ressourcen enthält und der **Registrierungseintrag SatelliteDll-DllName** darauf verweist, versucht, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sie in der oben genannten Reihenfolge zu laden.
 
-## <a name="see-also"></a>Siehe auch
-- [Wählen Sie zwischen freigegebenen und mit versionsverwaltung durch das VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Wählen Sie zwischen freigegebenen und versionierten VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Verwalten von VSPackages](../../extensibility/managing-vspackages.md)
-- [Verwalten der Registrierung des Anwendungspakets](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [Verwalten der Paketregistrierung](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

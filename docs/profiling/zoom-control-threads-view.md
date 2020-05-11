@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62960159"
 ---
 # <a name="zoom-control-threads-view"></a>Zoomsteuerelement (Threadansicht)
@@ -28,7 +28,7 @@ Das Zoomsteuerelement ist ein Schieberegler, mit dem Sie die Zeitachse vergröß
 ## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Vergrößern und Verkleinern mithilfe des Mausrads
  Klicken Sie auf einen beliebigen Punkt auf der Zeitachse (um sicherzustellen, dass sie den Mausfokus hat), und drücken Sie anschließend die **STRG**-TASTE, und bewegen Sie das Mausrad (nach vorne: vergrößern; nach hinten: verkleinern).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Verwalten von Kanälen](../profiling/manage-channels.md)
 - [Aktivieren/Deaktivieren des Messmodus](../profiling/measure-mode-on-off.md)
 - [Threadansicht](../profiling/threads-view-parallel-performance.md)

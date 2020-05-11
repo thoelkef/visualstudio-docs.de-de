@@ -1,27 +1,27 @@
 ---
-title: BPREQI_FIELDS90 | Microsoft-Dokumentation
+title: BPREQI_FIELDS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f4d6df181ac15746202ae9f67e7b8874848e8f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea46939118ec48490280d6a85cc84e144d320d4e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350545"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737734"
 ---
-# <a name="bpreqifields90"></a>BPREQI_FIELDS90
-Listet die gültigen Werte, die die Informationen abgerufen werden sollen eine Haltepunkt-Anforderung angeben. Diese Enumeration erweitert die [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration.
+# <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
+Zählt die gültigen Werte auf, die die Informationen angeben, die zu einer Haltepunktanforderung abgerufen werden sollen. Diese Enumeration erweitert [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) die BPREQI_FIELDS-Enumeration.
 
 ## <a name="syntax"></a>Syntax
 
@@ -78,56 +78,56 @@ public enum enum_BPREQI_FIELDS90
 
 ## <a name="fields"></a>Felder
 `BPREQI90_BPLOCATION`\
-Initialisieren oder verwenden Sie die `bpLocation` (Position des Haltepunkts) Feld der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.
+Initialisieren oder `bpLocation` verwenden Sie das Feld (Haltepunktposition) der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.
 
 `BPREQI90_LANGUAGE`\
-Initialisieren oder verwenden Sie die `guidLanguage` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `guidLanguage` verwenden Sie `BP_REQUEST_INFO` `BP_REQUEST_INFO2` das Feld der oder-Struktur.
 
 `BPREQI90_PROGRAM`\
-Initialisieren oder verwenden Sie die `pProgram` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `pProgram` verwenden Sie `BP_REQUEST_INFO` `BP_REQUEST_INFO2` das Feld der oder-Struktur.
 
 `BPREQI90_PROGRAMNAME`\
-Initialisieren oder verwenden Sie die `bstrProgramName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `bstrProgramName` verwenden Sie `BP_REQUEST_INFO` `BP_REQUEST_INFO2` das Feld der oder-Struktur.
 
 `BPREQI90_THREAD`\
-Initialisieren oder verwenden Sie die `pThread` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `pThread` verwenden Sie `BP_REQUEST_INFO` `BP_REQUEST_INFO2` das Feld der oder-Struktur.
 
 `BPREQI90_THREADNAME`\
-Initialisieren oder verwenden Sie die `bstrThreadName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `bstrThreadName` verwenden Sie `BP_REQUEST_INFO` `BP_REQUEST_INFO2` das Feld der oder-Struktur.
 
 `BPREQI90_PASSCOUNT`\
-Initialisieren oder verwenden Sie die `bpPassCount` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `bpPassCount` verwenden Sie `BP_REQUEST_INFO` `BP_REQUEST_INFO2` das Feld der oder-Struktur.
 
 `BPREQI90_CONDITION`\
-Initialisieren oder verwenden Sie die `bpCondition` (Bedingung für Haltepunkt) Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `bpCondition` verwenden Sie das Feld `BP_REQUEST_INFO` (Breakpoint-Bedingung) der oder-Struktur. `BP_REQUEST_INFO2`
 
 `BPREQI90_FLAGS`\
-Initialisieren oder verwenden Sie die `dwFlags` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `dwFlags` verwenden Sie `BP_REQUEST_INFO` `BP_REQUEST_INFO2` das Feld der oder-Struktur.
 
 `BPREQI90_ALLOLDFIELDS`\
-Initialisieren oder verwenden Sie alle Felder für die von der `BP_REQUEST_INFO` Struktur.
+Initialisieren oder verwenden Sie alle `BP_REQUEST_INFO` Felder für die Struktur.
 
 `BPREQI90_VENDOR`\
-Initialisieren oder verwenden Sie die `guidVendor` Feld `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `guidVendor` verwenden `BP_REQUEST_INFO2` Sie das Strukturfeld.
 
 `BPREQI90_CONSTRAINT`\
-Initialisieren oder verwenden Sie die `bstrConstraint` Feld `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `bstrConstraint` verwenden `BP_REQUEST_INFO2` Sie das Strukturfeld.
 
 `BPREQI90_TRACEPOINT`\
-Initialisieren oder verwenden Sie die `bstrTracepoint` Feld `BP_REQUEST_INFO2` Struktur.
+Initialisieren oder `bstrTracepoint` verwenden `BP_REQUEST_INFO2` Sie das Strukturfeld.
 
 `BPREQI90_MACROTRACEPOINT`\
-Initialisieren oder verwenden Sie die `bstrMacroTracepoint` Feld `BP_REQUEST_INFO2` Struktur. BPREQI_ALLFIELDS enthält dieses Feld keine.
+Initialisieren oder `bstrMacroTracepoint` verwenden `BP_REQUEST_INFO2` Sie das Strukturfeld. BPREQI_ALLFIELDS enthält dieses Feld nicht.
 
 `BPREQI90_ALLFIELDS`\
-Gibt an, alle Felder für die `BP_REQUEST_INFO2` Struktur.
+Gibt alle Felder `BP_REQUEST_INFO2` für die Struktur an.
 
-## <a name="requirements"></a>Anforderungen
-Header: Msdbg90.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: Msdbg90.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

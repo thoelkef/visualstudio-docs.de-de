@@ -1,5 +1,5 @@
 ---
-title: SccCheckin-Funktion | Microsoft-Dokumentation
+title: SccCheckin-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22264f9882192e05a9812cad4d6ea7f74bfdabfc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701182"
 ---
 # <a name="scccheckin-function"></a>SccCheckin-Funktion
-Diese Funktion überprüft im zuvor ausgecheckten Dateien auf das Quellcodeverwaltungssystem, die Änderungen zu speichern und Erstellen einer neuen Version. Diese Funktion wird mit einem Zähler und ein Array von Namen der Dateien eingecheckt werden aufgerufen.
+Diese Funktion checkt zuvor ausgecheckte Dateien in das Quellcodeverwaltungssystem ein, speichert die Änderungen und erstellt eine neue Version. Diese Funktion wird mit einer Anzahl und einem Array von Namen der einzucheckenden Dateien aufgerufen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,54 +39,54 @@ SCCRTN SccCheckin (
 ### <a name="parameters"></a>Parameter
  pvContext
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+[in] Die Quellcodeverwaltungs-Plug-In-Kontextstruktur.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das die SCC-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden können, die er bereitstellt.
+[in] Ein Handle für das IDE-Fenster, das das SCC-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
 
  nFiles
 
-[in] Anzahl der Dateien, die eingecheckt werden sollen.
+[in] Anzahl der dateien, die eingecheckt werden sollen.
 
  lpFileNames
 
-[in] Array der Namen von voll gekennzeichneter lokaler Pfad von Dateien, die eingecheckt werden.
+[in] Array mit vollqualifizierten lokalen Pfadnamen von Dateien, die eingecheckt werden sollen.
 
  lpComment
 
-[in] Der Kommentar, der auf die einzelnen ausgewählten Dateien, die eingecheckt angewendet werden. Dieser Parameter ist `NULL` , wenn das Quellcodeverwaltungs-Plug-In für einen Kommentar auffordert.
+[in] Kommentar, der auf jede der ausgewählten Dateien angewendet werden soll, die eingecheckt werden. Dieser Parameter `NULL` ist, wenn das Quellcodeverwaltungs-Plug-In zur Eingabe eines Kommentars auffordern soll.
 
- Bestanden
+ Foptions
 
-[in] Befehl Flags, die entweder 0 oder `SCC_KEEP_CHECKEDOUT`.
+[in] Befehlsflags, entweder `SCC_KEEP_CHECKEDOUT`0 oder .
 
  pvOptions
 
-[in] SCC-plug-in spezifischen Optionen.
+[in] SCC-Plug-in-spezifische Optionen.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Datei wurde erfolgreich eingecheckt.|
-|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung befindet.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Datei wurde nicht eingecheckt.|
-|SCC_E_NOTCHECKEDOUT|Der Benutzer hat nicht die Datei, damit Sie sie einchecken kann nicht überprüft werden.|
-|SCC_E_CHECKINCONFLICT|Einchecken konnte nicht ausgeführt werden, da:<br /><br /> – Ein anderer Benutzer hat jetzt aktiviert und `bAutoReconcile` wurde "false".<br /><br /> - oder - <br /><br /> – Die automatische Zusammenführung kann nicht erfolgen, (z. B., wenn die Dateien "binary" sind).|
-|SCC_E_VERIFYMERGE|Datei wurde automatisch zusammengeführt, jedoch nicht überprüft wurden ausstehende Überprüfung des Benutzers.|
-|SCC_E_FIXMERGE|Datei wurde automatisch zusammengeführt, aber nicht in eingecheckt wurde aufgrund eines Zusammenführungskonflikts, das manuell gelöst werden muss.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
-|SCC_I_OPERATIONCANCELED|Vorgang wurde vor Abschluss abgebrochen.|
+|SCC_OK|Die Datei wurde erfolgreich eingecheckt.|
+|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei befindet sich nicht unter Quellcodeverwaltung.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quellcodeverwaltungssystem ist ein Problem auftritt, wahrscheinlich aufgrund von Netzwerk- oder Konfliktproblemen. Es wird ein Wiederholungsversuch empfohlen.|
+|SCC_E_NONSPECIFICERROR|Unspezifischer Fehler. Die Datei wurde nicht eingecheckt.|
+|SCC_E_NOTCHECKEDOUT|Der Benutzer hat die Datei nicht ausgecheckt, kann sie daher nicht einchecken.|
+|SCC_E_CHECKINCONFLICT|Das Einchecken konnte aus:<br /><br /> - Ein anderer Benutzer hat `bAutoReconcile` im Voraus eingecheckt und war falsch.<br /><br /> - oder -<br /><br /> - Die automatische Zusammenführung kann nicht durchgeführt werden (z. B. wenn Dateien binär sind).|
+|SCC_E_VERIFYMERGE|Die Datei wurde automatisch zusammengeführt, aber nicht in der ausstehenden Benutzerüberprüfung eingecheckt.|
+|SCC_E_FIXMERGE|Die Datei wurde automatisch zusammengeführt, aber aufgrund eines Zusammenführungskonflikts, der manuell aufgelöst werden muss, nicht eingecheckt.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer darf diesen Vorgang nicht ausführen.|
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor dem Abschluss abgebrochen.|
 |SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|
 |SCC_E_FILENOTEXIST|Lokale Datei wurde nicht gefunden.|
 
-## <a name="remarks"></a>Hinweise
- Der Kommentar gilt für alle Dateien, die eingecheckt wird. Das kommentarargument möglich einen `null` string "," in diesem Fall kann das Quellcodeverwaltungs-Plug-in den Benutzer für eine Kommentarzeichenfolge für jede Datei auffordern.
+## <a name="remarks"></a>Bemerkungen
+ Der Kommentar gilt für alle eingecheckten Dateien. Das Kommentarargument kann `null` eine Zeichenfolge sein, in diesem Fall kann das Quellcodeverwaltungs-Plug-In den Benutzer zur Eingabe einer Kommentarzeichenfolge für jede Datei auffordern.
 
- Die `fOptions` Argument einen Wert angegeben werden kann die `SCC_KEEP_CHECKEDOUT` Flag an, dass die Absicht des Benutzers überprüfen Sie die Datei ein, und Testen Sie es noch mal.
+ Dem `fOptions` Argument kann ein Wert `SCC_KEEP_CHECKEDOUT` des Flags gegeben werden, um die Absicht des Benutzers anzugeben, die Datei einzuchecken und erneut auszuchecken.
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Microsoft-Dokumentation
+title: IDebugObject::SetReferenceValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaef4eb96942789bd3f574e6eeddcd3500ae6ee9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349957"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726379"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
-Legt den Verweiswert, der dieses Objekt.
+Legt den Referenzwert dieses Objekts fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>Parameter
 `pObject`\
-[in] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt, das den neuen Verweiswert darstellt.
+[in] Ein [IDebugObject-Objekt,](../../../extensibility/debugger/reference/idebugobject.md) das den neuen Referenzwert darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Auf diese Weise wird dies [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) einen Verweis auf den Wert des Objekts im angegebenen Objekt der `pObject` wegwirft alle vorherigen Verweis-Parameter. Beachten Sie, das von diesem `IDebugObject` Objekt muss bereits ein Verweistyp sein.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode macht dieses [IDebugObject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) zu einem Verweis `pObject` auf den Wert des im Parameter angegebenen Objekts und wirft alle vorherigen Verweise weg. Beachten Sie, dass dieses `IDebugObject` Objekt bereits ein Verweistyp sein muss.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject | Microsoft-Dokumentation
+title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf82275bf3375098cc8a8bcbeb200846252d2cec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4056befa0b5b053d480983901b24feb6b25cf538
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349378"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727698"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-Legt den Wert der Instanz des Klassenobjekts Wert aus der Instanz der Wertklasse als Parameter angegeben.
+Legt den Wert der Instanz des Wertklassenobjekts aus der Instanz der als Parameter bereitgestellten Wertklasse fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int SetFromManagedObject(
 
 ## <a name="parameters"></a>Parameter
 `pManagedObject`\
-[in] Eine Schnittstelle, die das verwaltete Objekt, das mit dem neuen Wert darstellt.
+[in] Eine Schnittstelle, die das verwaltete Objekt darstellt, das den neuen Wert enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird verwendet, um das verwaltete Objekt zu ändern, dargestellt durch die [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) Objekt.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird verwendet, um das verwaltete Objekt so zu ändern, wie es vom [IDebugManagedObject-Objekt](../../../extensibility/debugger/reference/idebugmanagedobject.md) dargestellt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

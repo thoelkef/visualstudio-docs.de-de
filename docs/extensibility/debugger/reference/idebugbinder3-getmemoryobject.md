@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Microsoft-Dokumentation
+title: IDebugBinder3::GetMemoryObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5386d6b4d32b34b708b7d213cf1a6e96ec0651a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327035"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735722"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Diese Methode ruft ein Arbeitsspeicher-Objekt, das den Speicher darstellt, dem an dieses Objekt gebunden ist.
+Diese Methode ruft ein Speicherobjekt ab, das den Speicher darstellt, an den dieses Objekt gebunden ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,18 +45,18 @@ int GetMemoryObject(
 
 ## <a name="parameters"></a>Parameter
 `pField`\
-[in] Gibt an, welches Feld zum Abrufen des Speicherobjekts für.
+[in] Gibt an, für welches Feld das Speicherobjekt abholt.
 
 `uConstant`\
-[in] Stellt eine Speicheradresse oder den Wert für einen konstanten Wert dar.
+[in] Stellt eine Speicheradresse oder einen Wert für einen konstanten Wert dar.
 
 `ppObject`\
-[out] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die den Arbeitsspeicher, der an dieses Objekt gebunden ist darstellt.
+[out] Ein [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) das den Speicher darstellt, an den dieses Objekt gebunden ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

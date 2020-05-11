@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596748"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Arbeiten mit C++-Code im Klassen-Designer
@@ -46,7 +46,7 @@ Der **Klassen-Designer** unterstützt folgende C++-Codeelemente:
 - TypeDef
 
 > [!NOTE]
-> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML Class Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../../modeling/what-s-new-for-design-in-visual-studio.md).
+> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Referenz](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Behandlung von Anzeigeproblemen und Problemen bei der Typauflösung
 
@@ -108,7 +108,7 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
 - Der **Klassen-Designer** kann keine Typen anzeigen, die „void“ sind oder von einem void-Typ abgeleitet sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Entwerfen und Anzeigen von Klassen und Typen](designing-and-viewing-classes-and-types.md)
 - [Zusätzliche Informationen zu Klassen-Designer-Fehlern](additional-information-about-errors.md)

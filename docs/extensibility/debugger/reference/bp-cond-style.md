@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Microsoft-Dokumentation
+title: BP_COND_STYLE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351814"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738114"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
-Gibt den Haltepunkt-Bedingung-Stil für ausstehende und gebundene Haltepunkte.
+# <a name="bp_cond_style"></a>BP_COND_STYLE
+Gibt den Haltepunktbedingungsstil für ausstehende und gebundene Haltepunkte an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,24 +46,24 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>Felder
 `BP_COND_NONE`\
-Löst den Haltepunkt an, bei des Haltepunkts Position erreichen. Keine Bedingung für Haltepunkt angegeben.
+Feuert den Haltepunkt aus, wenn die Position des Haltepunkts erreicht ist. Es wurde keine Haltepunktbedingung angegeben.
 
 `BP_COND_WHEN_TRUE`\
-Den Haltepunkt ausgelöst wird, nur wenn der bedingte Ausdruck mit dem Haltepunkt verknüpften ergibt `true`.
+Gibt den Haltepunkt nur aus, wenn der dem `true`Haltepunkt zugeordnete bedingte Ausdruck zu ausgewertet wird.
 
 `BP_COND_WHEN_CHANGED`\
-Wird ausgelöst, die der Haltepunkt nur, wenn der Wert des bedingten Ausdrucks mit dem Haltepunkt zugeordneten aus der vorherigen Auswertung geändert wurde.
+Gibt den Haltepunkt nur aus, wenn sich der Wert des bedingten Ausdrucks, der dem Haltepunkt zugeordnet ist, gegenüber der vorherigen Auswertung geändert hat.
 
-## <a name="remarks"></a>Hinweise
-Verwendet für die `styleCondition` Mitglied der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Struktur.
+## <a name="remarks"></a>Bemerkungen
+Wird für `styleCondition` das Element der [BP_CONDITION-Struktur](../../../extensibility/debugger/reference/bp-condition.md) verwendet.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

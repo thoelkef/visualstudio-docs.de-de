@@ -9,18 +9,24 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e5f9b3cee9cdfc2ca85c39c701b87028ad949a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2eadce12890e483f1b1c7aafccb61d9a6ee28e3a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585205"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880298"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testcomputers
 
 Sie können einen eigenen Adapter für diagnostische Daten erstellen, um Daten während der Ausführung eines Tests zu erstellen oder im Rahmen des Tests den Testcomputer zu beeinflussen. Sie möchten beispielsweise Protokolldateien sammeln, die von der getesteten Anwendung erstellt werden, und diese an die Testergebnisse anhängen, oder Sie möchten Tests ausführen, wenn nur noch wenig Speicherplatz auf Ihrem Computer vorhanden ist. Mithilfe der von Visual Studio Enterprise bereitgestellten APIs können Sie Code zur Ausführung von Aufgaben an bestimmten Punkten im Testlauf schreiben. Zum Beispiel können Sie Aufgaben beim Start eines Testlaufs, vor und nach der Ausführung der einzelnen Tests und beim Beenden des Testlaufs ausführen.
 
+::: moniker range="vs-2017"
 Mithilfe einer Datei mit Konfigurationseinstellungen können Sie Standardeingaben für einen benutzerdefinierten Adapter für diagnostische Daten bereitstellen. So können Sie beispielsweise Informationen zum Speicherort der zu erfassenden Datei angeben, die den Testergebnissen angefügt werden soll, und festlegen, wie viel Speicherplatz auf dem System verbleiben soll. Diese Daten können für alle von Ihnen erstellten Testeinstellungen konfiguriert werden. Sie können mit dem von Microsoft Test Manager bereitgestellten Standard-Editor angezeigt und bearbeitet werden. Es besteht auch die Möglichkeit, ein eigenes Benutzersteuerelement zu erstellen, das als Editor verwendet wird. Alle an der Adapterkonfiguration im Editor vorgenommenen Änderungen werden mit den Testeinstellungen gespeichert.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+Mithilfe einer Datei mit Konfigurationseinstellungen können Sie Standardeingaben für einen benutzerdefinierten Adapter für diagnostische Daten bereitstellen. So können Sie beispielsweise Informationen zum Speicherort der zu erfassenden Datei angeben, die den Testergebnissen angefügt werden soll, und festlegen, wie viel Speicherplatz auf dem System verbleiben soll. Diese Daten können für alle von Ihnen erstellten Testeinstellungen konfiguriert werden. Sie können Ihr eigenes Benutzersteuerelement erstellen, um dieses als Editor zu verwenden. Alle an der Adapterkonfiguration im Editor vorgenommenen Änderungen werden mit den Testeinstellungen gespeichert.
+::: moniker-end
 
 Wenn Sie die Tests aus Visual Studio ausführen, müssen Sie für diese Testeinstellungen festlegen, dass sie aktiv sind. Weitere Informationen zu Testeinstellungen finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 

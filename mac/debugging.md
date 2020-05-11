@@ -7,10 +7,10 @@ ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75397936"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debuggen mit Visual Studio für Mac
@@ -43,7 +43,7 @@ Sie können alle gesetzten Haltepunkte in Ihrem Code anzeigen lassen, indem Sie 
 
 ![Liste der Haltepunkte](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>Debugging starten
+## <a name="start-debugging"></a>Starten des Debugvorgangs
 
 Wählen Sie zum Starten des Debuggens den Zielbrowser, das Gerät bzw. den Simulator/Emulator aus:
 
@@ -97,6 +97,6 @@ Navigieren Sie zu **Visual Studio for Mac > Preferences > Debugger** (Visual Stu
 
 ![Option „Step into External Code“ (In externen Code springen)](media/debugging-image8.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Debuggen in Visual Studio (unter Windows)](/visualstudio/debugger/)

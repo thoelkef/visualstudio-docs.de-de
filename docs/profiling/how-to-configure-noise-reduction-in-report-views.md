@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776331"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten
@@ -77,8 +77,8 @@ Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl 
 
 4. Klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)
-- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [Aufrufstrukturansicht](../profiling/call-tree-view.md)
-- [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)
+- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentierung](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view.md)
+- [Allocations View (Zuordnungsansicht)](../profiling/dotnet-memory-allocations-view.md)

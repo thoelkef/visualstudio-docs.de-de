@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776344"
 ---
 # <a name="how-to-choose-collection-methods"></a>Vorgehensweise: Auswählen von Sammlungsmethoden
@@ -31,12 +31,12 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 - Wählen Sie auf der ersten Seite des Assistenten eine der folgenden Optionen aus:
 
-| Option | BESCHREIBUNG |
+| Option | Beschreibung |
 |----------------------------| - |
 | **CPU-Sampling** | Sammelt Anwendungsstatistiken, die für die erste Analyse und zum Analysieren von CPU-Auslastungsproblemen nützlich sind. |
 | **Instrumentation** | Sammelt ausführliche Zeitsteuerungsdaten, die zur gezielten Analyse und zur Analyse von Eingabe/Ausgabe-Leistungsproblemen nützlich sind. |
 | **.NET-Speicherbelegung** | Sammelt .NET Framework-Speicherbelegungsdaten mithilfe der Sampling-Profilerstellungsmethode. |
-| **Parallelität** | Sammelt numerischen Ressourcenkonfliktdaten. |
+| **Concurrency** | Sammelt numerischen Ressourcenkonfliktdaten. |
 
 ## <a name="performance-explorer"></a>Leistungs-Explorer
 
@@ -90,7 +90,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 3. Klicken Sie auf **Parallelität**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
 [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

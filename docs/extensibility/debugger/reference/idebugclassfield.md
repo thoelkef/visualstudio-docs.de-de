@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField | Microsoft-Dokumentation
+title: IDebugClassField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField interface
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d01ee3867481b8ab9bb100f2623c1197492666
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11b0e4cd7c851e65edf299f45ec97273804c25d8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329463"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734286"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
-Diese Schnittstelle stellt eine Klasse als Typ.
+Diese Schnittstelle stellt eine Klasse als Typ dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,32 +29,32 @@ IDebugClassField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein symbolanbieter implementiert diese Schnittstelle für das gleiche Objekt, das implementiert die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle. Diese Schnittstelle ist eine Spezialisierung, die einen Klassentyp darstellt.
+ Ein Symbolanbieter implementiert diese Schnittstelle für dasselbe Objekt, das die [IDebugContainerField-Schnittstelle](../../../extensibility/debugger/reference/idebugcontainerfield.md) implementiert. Diese Schnittstelle ist eine Spezialisierung, die einen Klassentyp darstellt.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Eine Reihe von Schnittstellen-Installationsmethoden, die diese Schnittstelle einschließlich zurückgeben können [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), und [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md). Darüber hinaus können Sie [QueryInterface](/cpp/atl/queryinterface) dieser Schnittstelle vom Abrufen der [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle, wenn die [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) Methode gibt das Flag zurück `FIELD_TYPE_CLASS`.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Eine Reihe von Schnittstellen verfügen über Methoden, die diese Schnittstelle zurückgeben können, einschließlich [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)und [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md). Außerdem können Sie [QueryInterface](/cpp/atl/queryinterface) verwenden, um diese Schnittstelle von der [IDebugContainerField-Schnittstelle](../../../extensibility/debugger/reference/idebugcontainerfield.md) abzusondern, wenn die [GetKind-Methode](../../../extensibility/debugger/reference/idebugfield-getkind.md) das Flag `FIELD_TYPE_CLASS`zurückgibt.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) und [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstellen, die diese Schnittstelle implementiert die folgenden:
+ Zusätzlich zu den Methoden auf den [Schnittstellen IDebugField](../../../extensibility/debugger/reference/idebugfield.md) und [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) implementiert diese Schnittstelle Folgendes:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|Erstellt einen Enumerator für die Basisklassen dieser Klasse.|
 |[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|Bestimmt, ob eine bestimmte Schnittstelle in der Klasse definiert ist.|
-|[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|Erstellt einen Enumerator für die geschachtelte Klassen dieser Klasse.|
-|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|Ruft die Klasse, die diese Klasse umschließt.|
+|[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|Erstellt einen Enumerator für die geschachtelten Klassen dieser Klasse.|
+|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|Ruft die Klasse ab, die diese Klasse umschließt.|
 |[EnumInterfacesImplemented](../../../extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented.md)|Erstellt einen Enumerator für die von dieser Klasse implementierten Schnittstellen.|
-|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|Erstellt einen Enumerator für die Konstruktoren von dieser Klasse.|
-|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|Ruft den Namen der Standardindexer ab.|
-|[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|Erstellt einen Enumerator für die geschachtelte Enumeratoren dieser Klasse.|
+|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|Erstellt einen Enumerator für die Konstruktoren dieser Klasse.|
+|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|Ruft den Namen des Standardindexers ab.|
+|[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|Erstellt einen Enumerator für die geschachtelten Enumeratoren dieser Klasse.|
 
-## <a name="requirements"></a>Anforderungen
- Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Symbolanbieterschnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

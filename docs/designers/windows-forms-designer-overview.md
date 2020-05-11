@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589889"
 ---
 # <a name="windows-forms-designer-overview"></a>Übersicht über Windows Forms-Designer
@@ -35,7 +35,7 @@ Mit dem-Designer können Sie folgende Aktionen ausführen:
 > [!NOTE]
 > Verwenden Sie Windows Forms-Designer und nicht den Ressourcen-Editor, um Änderungen an der Ressourcendatei ( *. resx*) eines Formulars vorzunehmen. Wenn Sie eine formularbasierte RESX-Datei bearbeiten, wird eine Warnung angezeigt, dass Änderungen, die Sie im Ressourcen-Editor vornehmen, verloren gehen können. Dies liegt daran, dass der Windows Forms-Designer die RESX-Datei generiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/)

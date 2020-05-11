@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113443"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word
@@ -44,7 +44,7 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
 
 1. Wenn die Diagrammansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Diagramme**.
 
-2. (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png)
 
@@ -55,7 +55,7 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
     > [!WARNING]
     > Sie können das Diagramm nicht von einem Remotedesktop kopieren und auf einem anderen Computer einfügen, da nur die dem Diagramm zugeordneten Tabelleninformationen und nicht das Diagrammbild kopiert werden. Das Diagrammbild wird im temporären Verzeichnis auf dem Computer gespeichert, von dem es kopiert wurde. Der zweite Computer kann dieses Verzeichnis nicht dereferenzieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md)
 - [Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

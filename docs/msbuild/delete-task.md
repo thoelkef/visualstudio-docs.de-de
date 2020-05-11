@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567462"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634278"
 ---
 # <a name="delete-task"></a>Delete-Aufgabe
+
 Löscht die angegebene Datei.
 
 ## <a name="parameters"></a>Parameter
+
 In der folgenden Tabelle werden die Parameter der `Delete` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -38,9 +40,14 @@ In der folgenden Tabelle werden die Parameter der `Delete` -Aufgabe beschrieben.
 |`TreatErrorsAsWarnings`|Optionaler `Boolean`-Parameter<br /><br /> Wenn `true`, werden Fehler als Warnungen protokolliert. Der Standardwert ist `false`.|
 
 ## <a name="remarks"></a>Hinweise
+
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
+> [!WARNING]
+> Seien Sie vorsichtig, wenn Sie Platzhalter mit dem `Delete`-Task verwenden. Es kann schnell passieren, dass Sie mit Ausdrücken wie `$(SomeProperty)\**\*.*` oder `$(SomeProperty)/**/*.*` die falschen Dateien löschen, insbesondere dann, wenn die Eigenschaft als leere Zeichenfolge ausgewertet wird. In diesem Fall kann der `Files`-Parameter in das Stammverzeichnis Ihres Laufwerks ausgewertet werden, was dazu führen kann, dass deutlich mehr gelöscht wird als gewünscht.
+
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird die Datei *MyApp.pdb* gelöscht.
 
 ```xml
@@ -57,5 +64,6 @@ Im folgenden Beispiel wird die Datei *MyApp.pdb* gelöscht.
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

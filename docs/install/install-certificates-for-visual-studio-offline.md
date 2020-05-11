@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114659"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
@@ -38,7 +38,7 @@ Es gibt drei Optionen, Zertifikate in einer Offlineumgebung zu installieren oder
 
 Wenn Sie ein Netzwerklayout erstellen, werden die erforderlichen Zertifikate in den Ordner „Zertifikate“ heruntergeladen. Sie können die Zertifikate manuell installieren, indem Sie auf die Zertifikatdateien doppelklicken und anschließend den Zertifikat-Manager-Assistenten durchlaufen. Wenn Sie nach einem Kennwort gefragt werden, lassen Sie es leer.
 
-**Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher können Sie die Zertifikate manuell installieren, indem Sie mit der rechten Maustaste auf jede der Zertifikatdateien klicken, „Zertifikat installieren“ auswählen und anschließend den Zertifikat-Manager-Assistenten durchlaufen.
+**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher können Sie die Zertifikate manuell installieren, indem Sie mit der rechten Maustaste auf jede der Zertifikatdateien klicken, „Zertifikat installieren“ auswählen und anschließend den Zertifikat-Manager-Assistenten durchlaufen.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
+   **Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -135,35 +135,35 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
 Die drei P12-Dateien in diesem Ordner enthalten jeweils ein Zwischen- und ein Stammzertifikat. Auf den meisten Systemen, die über die aktuellsten Windows-Updates verfügen, sind diese Zertifikate bereits installiert.
 
 * **ManifestSignCertificates.p12** enthält:
-  * Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
+  * Ein Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
     * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-  * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
+  * Ein Stammzertifikat: **Microsoft Root Certificate Authority 2011**
     * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **ManifestCounterSignCertificates.p12** enthält:
-  * Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
+  * Ein Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
     * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-  * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
+  * Ein Stammzertifikat: **Microsoft Root Certificate Authority 2010**
     * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **Vs_installer_opc.SignCertificates.p12** enthält:
-  * Zwischenzertifikat: **Microsoft Code Signing PCA**
+  * Ein Zwischenzertifikat: **Microsoft Code Signing PCA**
     * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
-  * Stammzertifikat: **Microsoft Root Certificate Authority**
+  * Ein Stammzertifikat: **Microsoft Root Certificate Authority**
     * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 
-**Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden. Diese Zertifikate werden in CER-Dateien anstelle von. P12 gespeichert.
+**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden. Diese Zertifikate werden in CER-Dateien anstelle von. P12 gespeichert.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.cer** enthält:
-  * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
+  * Ein Stammzertifikat: **Microsoft Root Certificate Authority 2011**
     * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **ManifestCounterSignCertificates.cer** enthält:
-  * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
+  * Ein Stammzertifikat: **Microsoft Root Certificate Authority 2010**
     * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **Vs_installer_opc.SignCertificates.cer** enthält:
-  * Stammzertifikat: **Microsoft Root Certificate Authority**
+  * Ein Stammzertifikat: **Microsoft Root Certificate Authority**
     * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 
 Im Visual Studio-Installer müssen nur die Stammzertifikate auf dem System installiert werden.
@@ -203,7 +203,7 @@ Nach der Installation der Zertifikate kann die Bereitstellung von Visual Studio 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Installieren von Visual Studio](install-visual-studio.md)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)

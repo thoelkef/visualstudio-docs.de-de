@@ -2,23 +2,23 @@
 title: Schreiben von Komponententests für C++-DLLs
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926665"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279275"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
 Es gibt einige Möglichkeiten, um DLL-Code zu testen, je nachdem, ob dieser die Funktionen exportiert, die Sie testen möchten. Wählen Sie eine der folgenden Methoden aus:
 
-**Die Komponententests rufen nur Funktionen auf, die von der DLL exportiert werden:** Fügen Sie wie unter [Schreiben von Komponententests für C/C++ in Visual Studio](writing-unit-tests-for-c-cpp.md) beschrieben ein separates Testprojekt hinzu. Fügen Sie im Testprojekt einen Verweis auf das DLL-Projekt hinzu.
+**Die Komponententests rufen nur Funktionen auf, die von der DLL exportiert werden:** Fügen Sie wie unter [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md) beschrieben ein separates Testprojekt hinzu. Fügen Sie im Testprojekt einen Verweis auf das DLL-Projekt hinzu.
 
 Rufen Sie die Prozedur [Verweisen auf exportierte Funktionen aus dem DLL-Projekt](#projectRef) auf.
 
@@ -64,7 +64,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
       ::: moniker range="vs-2017"
 
-      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++**  > **Test** > **C++-Komponententestprojekt**.
 
       ::: moniker-end
 
@@ -96,7 +96,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
       ::: moniker range="vs-2017"
 
-      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++**  > **Test** > **C++-Komponententestprojekt**.
 
       ::: moniker-end
 
@@ -169,11 +169,11 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
 1. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 - [Referenz für die API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-- [Walkthrough: Creating and using a dynamic link library (C++) (Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++))](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importieren und Exportieren](/cpp/build/importing-and-exporting)
 - [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)

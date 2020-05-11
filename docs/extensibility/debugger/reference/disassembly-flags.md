@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS | Microsoft-Dokumentation
+title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318386"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737374"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Gibt die Flags für die Disassemblierung.
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
+Gibt die Flags für die Demontage an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -52,35 +52,35 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>Felder
 `DF_DOCUMENTCHANGE`\
-Gibt an, dass diese Anweisung in einem anderen Dokument als die vorherige Version.
+Gibt an, dass sich diese Anweisung in einem anderen Dokument als dem vorherigen befindet.
 
 `DF_DISABLED`\
 Gibt an, dass diese Anweisung nicht ausgeführt wird.
 
 `DF_INSTRUCTION_ACTIVE`\
-Gibt an, dass diese Anweisung den nächsten Anweisungen ausgeführt werden (möglicherweise mehr als eine).
+Gibt an, dass diese Anweisung eine der nächsten auszuführenden Anweisungen ist (es kann mehr als eine sein).
 
 `DF_DATA`\
-Gibt an, dass diese Anweisung wirklich Daten (nicht Code).
+Gibt an, dass es sich bei dieser Anweisung wirklich um Daten (nicht um Code) handelt.
 
 `DF_HASSOURCE`\
-Gibt an, dass diese Anweisung Quelle verfügt. Einige Anweisungen, z. B. profilerstellung oder Garbage Collection-Code, verfügen über keine entsprechende Quelle.
+Gibt an, dass diese Anweisung über eine Quelle verfügt. Einige Anweisungen, z. B. Profilerstellung oder Garbage Collection-Code, haben keine entsprechende Quelle.
 
 `DF_DOCUMENT_CHECKSUM`\
-Gibt an, dass `bstrDocumentUrl` Feld Prüfsummendaten enthält, nach der Dokument-URL. Finden Sie im Abschnitt "Hinweise" der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur wie die Prüfsummendaten gespeichert werden.
+Gibt `bstrDocumentUrl` an, dass das Feld Prüfsummendaten nach der Dokument-URL enthält. Im Abschnitt Hinweise finden Sie die [DisassemblyData-Struktur,](../../../extensibility/debugger/reference/disassemblydata.md) um zu erfahren, wie die Prüfsummendaten gespeichert werden.
 
-## <a name="remarks"></a>Hinweise
-Verwendet als die `dwFlags` Mitglied der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur.
+## <a name="remarks"></a>Bemerkungen
+Wird als `dwFlags` Member der [DisassemblyData-Struktur](../../../extensibility/debugger/reference/disassemblydata.md) verwendet.
 
-Diese Flags können kombiniert werden, mit einer bitweisen `OR`.
+Diese Flags können mit einem `OR`bitwise kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

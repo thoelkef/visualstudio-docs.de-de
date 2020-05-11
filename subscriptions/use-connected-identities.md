@@ -1,18 +1,19 @@
 ---
 title: 'Vorgehensweise: Verwenden von verbundenen Microsoft-Konten und Azure Active Directory-Identitäten | Microsoft-Dokumentation'
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 09/27/2019
+ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
+ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Erfahren Sie, wie Sie mit verbundenen Microsoft-Konten und Azure Active Directory-Identitäten arbeiten.
-ms.openlocfilehash: 1a862caa1f984f5d22f041a6f0cbff6534d8cc1c
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816575"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233177"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Verwenden von verbundenen Identitäten in Visual Studio-Abonnements
 Wenn Sie über Ihr Geschäfts-, Schul- oder Unikonto ein Visual Studio-Abonnement erhalten und Ihr Microsoft-Konto (MSA) zum Anmelden verwenden, verknüpft Ihr Abonnementadministrator möglicherweise Ihr MSA mit Ihrer Identität im Azure Active Directory (Azure AD) Ihrer Organisation.  Damit ändert sich der Zugriff auf einige der Vorteile, die in Ihrem Abonnement enthalten sind. 
@@ -37,6 +38,12 @@ Wenn Sie Ihrem Visual Studio-Abonnement ein alternatives Konto hinzufügen, habe
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>Frage: Wie kontaktiere ich meinen Administrator zu diesem Thema?
 Antwort:  Informationen zur Kontaktaufnahme mit Ihrem Administrator finden Sie im Artikel [Kontaktieren des Abonnementadministrators](contact-my-admin.md).  
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Ihr Administrator Ihr Azure AD-Konto und Ihr MSA verknüpft hat, ist es ratsam, sich davon zu überzeugen, dass Sie sich weiterhin beim [Abonnementportal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden und auf Vorteile wie Azure DevOps, Visual Studio und Ihr Einzelguthaben für Azure DevTest zugreifen können. 

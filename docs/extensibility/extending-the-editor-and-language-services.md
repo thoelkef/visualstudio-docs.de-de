@@ -1,57 +1,57 @@
 ---
-title: Erweitern des Editors und der Sprachdienste | Microsoft-Dokumentation
+title: Erweiterung des Editors und der Sprachdienste | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af1fa0222be9630a495a43204d7a973341190131
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 239c638ec32cc0dc2b2e275a5dbe0c4213a3423e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186667"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711716"
 ---
-# <a name="extend-the-editor-and-language-services"></a>Erweitern des Editors und der Sprachdienste
-Sie können einem eigenen Editor Sprachdienst Funktionen (z. b. IntelliSense) hinzufügen und die meisten Funktionen des Visual Studio Code-Editors erweitern.  Eine vollständige Liste der Erweiterungen, die Sie erweitern können, finden Sie unter [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md).
+# <a name="extend-the-editor-and-language-services"></a>Erweitern der Editor- und Sprachdienste
+Sie können Ihrem eigenen Editor Sprachdienstfeatures (z. B. IntelliSense) hinzufügen und die meisten Features des Visual Studio-Code-Editors erweitern.  Eine vollständige Liste der [Erweiterungspunkte sprachfürdiens und editor](../extensibility/language-service-and-editor-extension-points.md).
 
- Die meisten Editor-Features werden mithilfe des Managed Extensibility Framework (MEF) erweitert. Wenn z. b. das Editor-Feature, das Sie erweitern möchten, Syntax Farben ist, können Sie einen MEF- *Komponenten Teil* schreiben, der die Klassifizierungen definiert, für die Sie unterschiedliche Farben und deren Handhabung wünschen. Der Editor unterstützt auch mehrere Erweiterungen desselben Features.
+ Sie erweitern die meisten Editorfunktionen mithilfe des Managed Extensibility Framework (MEF). Wenn das Editor-Feature, das Sie erweitern möchten, z. B. Syntaxfarben ist, können Sie ein *MEF-Komponententeil* schreiben, das die Klassifizierungen definiert, für die Sie eine andere Färbung wünschen und wie sie behandelt werden sollen. Der Editor unterstützt auch mehrere Erweiterungen desselben Features.
 
- Die Präsentationsebene des Editors basiert auf Windows Presentation Framework (WPF). WPF stellt eine Grafikbibliothek für die flexible Textformatierung bereit und bietet auch Visualisierungen wie Grafiken und Animationen.
+ Die Editorpräsentationsebene basiert auf dem Windows Presentation Framework (WPF). WPF bietet eine Grafikbibliothek für flexible Textformatierung und auch Visualisierungen wie Grafiken und Animationen.
 
- Das Visual Studio SDK bietet Adapter, die als *Shims* bezeichnet werden, um VSPackages zu unterstützen, die für frühere Versionen geschrieben wurden. Wenn Sie jedoch über ein vorhandenes VSPackage verfügen, empfiehlt es sich, es auf die neue Technologie zu aktualisieren, um eine bessere Leistung und Zuverlässigkeit zu erzielen.
+ Das Visual Studio SDK stellt Adapter bereit, die als *Shims* bezeichnet werden, um VSPackages zu unterstützen, die für frühere Versionen geschrieben wurden. Wenn Sie jedoch über ein vorhandenes VSPackage verfügen, empfehlen wir Ihnen, es auf die neue Technologie zu aktualisieren, um eine bessere Leistung und Zuverlässigkeit zu erzielen.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
-|[Einstieg in die Erweiterungen für Sprachdienste und Editoren](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Erläutert, wie eine Erweiterung für den Editor erstellt wird.|
-|[Innerhalb des Editors](../extensibility/inside-the-editor.md)|Beschreibt die allgemeine Struktur des Editors und listet einige Funktionen auf.|
-|[Im Editor Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)|Erläutert, wie die Managed Extensibility Framework (MEF) mit dem-Editor verwendet wird.|
-|[Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)|Listet die Erweiterungs Punkte des Editors auf. Erweiterungs Punkte stellen die Editor-Funktionen dar, die erweitert werden können.|
-|[Exemplarische Vorgehensweise: Erstellen eines Ansichts Zusatz Elements, von Befehlen und Einstellungen (Spalten Handbücher)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Führt Sie durch und erläutert die Entwicklung eines Ansichts Zusatz Elements, das Spalten Führungslinien zeichnet, damit Sie Code in einer bestimmten Anzeigebreite behalten können.  Außerdem werden Lese-und Schreib Einstellungen sowie das Deklarieren und Implementieren von Befehlen angezeigt, die Sie über das Befehlsfenster aufrufen können.|
-|[Editor Importe](../extensibility/editor-imports.md)|Listet die Dienste auf, die eine Erweiterung importieren kann.|
-|[Anpassen von Legacy Code an den Editor](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|Erläutert verschiedene Möglichkeiten zum Anpassen von Legacy Code (Pre-Visual Studio 2010), um den Editor zu erweitern.|
-|[Migrieren eines Legacy sprach Dienstanbieter](../extensibility/internals/migrating-a-legacy-language-service.md)|Erläutert, wie ein VSPackage-basierter Sprachdienst migriert wird.|
-|[Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Zeigt, wie Sie einen Inhaltstyp mit einer Dateinamenerweiterung verknüpfen.|
-|[Exemplarische Vorgehensweise: Erstellen eines Rand Symbols](../extensibility/walkthrough-creating-a-margin-glyph.md)|Zeigt, wie ein Symbol zu einem Rand hinzugefügt wird.|
-|[Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md)|Zeigt, wie *Tags* zum Markieren von Text verwendet werden.|
-|[Exemplarische Vorgehensweise: Hinzufügen](../extensibility/walkthrough-outlining.md)|Zeigt, wie Gliederung für bestimmte Arten von geschweiften Klammern hinzugefügt wird.|
-|[Exemplarische Vorgehensweise: anzeigen passender geschweifter Klammern](../extensibility/walkthrough-displaying-matching-braces.md)|Zeigt, wie passende geschweifte Klammern hervorgehoben werden.|
-|[Exemplarische Vorgehensweise: Anzeigen von Quick Infos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Zeigt, wie QuickInfo-Popups angezeigt werden, die Code Elemente beschreiben, wie z. b. Eigenschaften, Methoden und Ereignisse.|
-|[Exemplarische Vorgehensweise: Anzeigen der Signatur Hilfe](../extensibility/walkthrough-displaying-signature-help.md)|Zeigt, wie Popups angezeigt werden, die Informationen über die Anzahl und Typen von Parametern in einer Signatur enthalten.|
-|[Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)|Zeigt, wie die Anweisungs Vervollständigung implementiert wird.|
-|[Exemplarische Vorgehensweise: Implementieren von Code Ausschnitten](../extensibility/walkthrough-implementing-code-snippets.md)|Zeigt, wie die Code Ausschnitt Erweiterung implementiert wird.|
-|[Exemplarische Vorgehensweise: Anzeigen von Glühbirnen Vorschlägen](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Zeigt, wie Glühbirnen für Code Vorschläge angezeigt werden.|
-|[Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Zeigt, wie einem Menübefehl in einem VSPackage eine MEF-Komponente zugeordnet wird.|
-|[Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Zeigt, wie eine Menü Verknüpfung in einem VSPackage mit einer MEF-Komponente verknüpft wird.|
-|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Stellt Informationen zum Managed Extensibility Framework (MEF) bereit.|
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Stellt Informationen zum Windows Presentation Foundation (WPF) bereit.|
+|[Erste Schritte mit Sprachdienst- und Editorerweiterungen](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Erläutert, wie eine Erweiterung für den Editor erstellt wird.|
+|[Innerhalb des Editors](../extensibility/inside-the-editor.md)|Beschreibt die allgemeine Struktur des Editors und listet einige seiner Features auf.|
+|[Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md)|Erläutert die Verwendung des Managed Extensibility Framework (MEF) mit dem Editor.|
+|[Sprachdienst- und Editorerweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)|Listet die Erweiterungspunkte des Editors auf. Erweiterungspunkte stellen die Editor-Features dar, die erweitert werden können.|
+|[Exemplarische Vorgehensweise: Erstellen einer Ansichtsverzierung, Befehle und Einstellungen (Spaltenführungslinien)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Durchläuft und erklärt das Erstellen einer Ansichtsverzierung, die Spaltenführungslinien zeichnet, damit Sie Code auf eine bestimmte Anzeigebreite halten können.  Zeigt auch Lese- und Schreibeinstellungen sowie deklarierende und implementierende Befehle an, die Sie über das Befehlsfenster aufrufen können.|
+|[Editor-Importe](../extensibility/editor-imports.md)|Listet die Dienste auf, die eine Erweiterung importieren kann.|
+|[Anpassen von Legacy-Code an den Editor](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|Erläutert verschiedene Möglichkeiten zum Anpassen von Legacycode (pre-Visual Studio 2010), um den Editor zu erweitern.|
+|[Migrieren eines älteren Sprachdienstes](../extensibility/internals/migrating-a-legacy-language-service.md)|Erläutert, wie ein VSPackage-basierter Sprachdienst migriert wird.|
+|[Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Zeigt, wie ein Inhaltstyp mit einer Dateinamenerweiterung verknüpft wird.|
+|[Exemplarische Vorgehensweise: Erstellen einer Rand-Glyphe](../extensibility/walkthrough-creating-a-margin-glyph.md)|Zeigt, wie einem Rand ein Symbol hinzugefügt wird.|
+|[Exemplarische Vorgehensweise: Text hervorheben](../extensibility/walkthrough-highlighting-text.md)|Zeigt, wie *Tags* zum Hervorheben von Text verwendet werden.|
+|[Exemplarische Vorgehensweise: Hinzufügen von Gliederung](../extensibility/walkthrough-outlining.md)|Zeigt, wie Diegliederung für bestimmte Arten von geschweiften Klammern hinzugefügt wird.|
+|[Exemplarische Vorgehensweise: Passende geschweifte Klammern anzeigen](../extensibility/walkthrough-displaying-matching-braces.md)|Zeigt, wie übereinstimmende geschweifte Geschweifungen hervorgehoben werden.|
+|[Exemplarische Vorgehensweise: QuickInfo-Tooltips anzeigen](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Zeigt, wie QuickInfo-Popups angezeigt werden, die Elemente von Code wie Eigenschaften, Methoden und Ereignisse beschreiben.|
+|[Exemplarische Vorgehensweise: Signaturhilfe anzeigen](../extensibility/walkthrough-displaying-signature-help.md)|Zeigt, wie Popups angezeigt werden, die Informationen über die Anzahl und die Typen von Parametern in einer Signatur enthalten.|
+|[Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)|Zeigt, wie die Anweisungsvervollständigung implementiert wird.|
+|[Exemplarische Vorgehensweise: Implementieren von Codeausschnitten](../extensibility/walkthrough-implementing-code-snippets.md)|Zeigt, wie die Codeausschnitterweiterung implementiert wird.|
+|[Walkthrough: Anzeigen von Glühbirnenvorschlägen](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Zeigt, wie Glühbirnen für Codevorschläge angezeigt werden.|
+|[Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editorerweiterung](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Zeigt, wie ein Menübefehl in einem VSPackage einer MEF-Komponente zugeordnet wird.|
+|[Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editorerweiterung](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Zeigt, wie eine Menüverknüpfung in einem VSPackage einer MEF-Komponente zugeordnet wird.|
+|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Enthält Informationen zum Managed Extensibility Framework (MEF).|
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Enthält Informationen zur Windows Presentation Foundation (WPF).|
 
 ## <a name="reference"></a>Referenz
  Der Visual Studio-Editor enthält die folgenden Namespaces.

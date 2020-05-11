@@ -1,25 +1,25 @@
 ---
-title: IDSymbol-Element | Microsoft-Dokumentation
+title: IDSymbol-Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4489be4ea24382ddaf0fcbe5e824eac3945c9cec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319531"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710374"
 ---
-# <a name="idsymbol-element"></a>IDSymbol-element
-Die `IDSymbol` Element enthält die ID der dem GUID: ID-Paar, ein Menü, Gruppe oder den Befehl darstellt. Die GUID wird von der übergeordneten `GuidSymbol` Element. Die `IDSymbol` Element verfügt über eine `name` -Attribut, das einen Anzeigenamen für die ID, der in enthalten ist, enthält die `value` Attribut.
+# <a name="idsymbol-element"></a>IDSymbol-Element
+Das `IDSymbol` Element enthält die ID des GUID:ID-Paares, das ein Menü, eine Gruppe oder einen Befehl darstellt. Die GUID stammt `GuidSymbol` vom übergeordneten Element. Das `IDSymbol` Element `name` verfügt über ein Attribut, das einen Anzeigenamen `value` für die ID bereitstellt, der im Attribut enthalten ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,22 +32,22 @@ Die `IDSymbol` Element enthält die ID der dem GUID: ID-Paar, ein Menü, Gruppe 
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|Name|Erforderlich. Der Name des ID-Symbols.|
-|Wert|Erforderlich. Numerische ID-Wert des ID-Symbols.|
+|name|Erforderlich. Name des ID-Symbols.|
+|value|Erforderlich. Numerischer ID-Wert des ID-Symbols.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[GuidSymbol-element](../extensibility/guidsymbol-element.md)|Enthält die GUID, der das GUID: ID-Paar, die ein Menü, Gruppe oder den Befehl darstellt. Gruppiert `IDSymbol`-Elemente.|
+|[GuidSymbol-Element](../extensibility/guidsymbol-element.md)|Enthält die GUID des GUID:ID-Paares, das ein Menü, eine Gruppe oder einen Befehl darstellt. Gruppiert `IDSymbol`-Elemente.|
 
-## <a name="remarks"></a>Hinweise
- Jede `IDSymbol` Element in einer angegebenen `GuidSymbol` -Element muss einen eindeutigen besitzen `value`. Allerdings `IDSymbol` Elemente, die identische Werte aufweisen können in einem Paket vorhanden, solange sie die verschiedene übergeordneten Elementen verfügen.
+## <a name="remarks"></a>Bemerkungen
+ Jedes `IDSymbol` Element in `GuidSymbol` einem bestimmten `value`Element muss über eine eindeutige verfügen. Elemente `IDSymbol` mit identischen Werten können jedoch in einem Paket vorhanden sein, solange sie unterschiedliche Eltern haben.
 
-## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

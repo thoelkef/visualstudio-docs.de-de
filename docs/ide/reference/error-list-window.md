@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569662"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
@@ -45,7 +45,7 @@ Zum Anzeigen der **Fehlerliste**, wählen Sie **Ansicht** > **Fehlerliste** aus,
 
 Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler** **Warnungen** und **Nachrichten** wählen.
 
-Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Halten Sie die **UMSCHALT**-Taste gedrückt, und klicken Sie auf eine andere Spaltenüberschrift, um erneut nach einer zusätzlichen Spalte zu sortieren. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Um die Reihenfolge zu ändern, in der Spalten angezeigt werden, ziehen Sie eine beliebige Spaltenüberschrift nach links oder rechts.
+Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Halten Sie die **UMSCHALT**-Taste gedrückt, und klicken Sie auf eine andere Spaltenüberschrift, um erneut nach einer zusätzlichen Spalte zu sortieren. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Zum Ändern der Reihenfolge, in der Spalten angezeigt werden, ziehen Sie einen beliebigen Spaltenheader nach links oder rechts.
 
 ## <a name="error-list-filters"></a>Fehlerlistenfilter
 
@@ -53,7 +53,7 @@ Es gibt zwei Filtertypen in beiden Dropdownfeldern, einen auf der rechten Seite 
 
 Sie können den Suchbereich einschränken, um Gruppen von Fehlern zu analysieren und zu behandeln. Beispielsweise sollten Sie sich auf Kernfehler konzentrieren, die das Kompilieren eines Projekts verhindern. Es gibt folgende Eingrenzungsoptionen:
 
-1. **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die geöffneten Dokumente an.
+1. **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die offenen Dokumente an.
 
 2. **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.
 
@@ -66,7 +66,7 @@ Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des F
 
 Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Build (beim Buildvorgang aufgetretene Fehler) oder aus IntelliSense (vor dem Build erkannte Fehler), oder beide angezeigt werden sollen.
 
-## <a name="search"></a>Suchen
+## <a name="search"></a>Suchen,
 
 Verwenden Sie für die Suche nach bestimmten Fehlern in der Fehlerliste das Textfeld **Fehlerliste durchsuchen** auf der rechten Seite der Symbolleiste **Fehlerliste**. Sie können in jeder sichtbaren Spalte in der Fehlerliste suchen, und die Suchergebnisse werden immer basierend auf der Spalte sortiert, die Sortierpriorität hat, und nicht basierend auf der angewendeten Abfrage oder dem angewendeten Filter. Wenn Sie die **ESC**-TASTE drücken, während sich der Fokus in der **Fehlerliste** befindet, können Sie den Suchbegriff und die gefilterten Suchergebnisse löschen. Sie können auch auf das Symbol **X** auf der rechten Seite des Textfelds klicken, um dieses zu löschen.
 
@@ -76,7 +76,7 @@ Sie können die Fehlerliste kopieren und in einer Datei speichern. Wählen Sie d
 
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche
 
-Schweregrad
+severity
 
 Zeigt die verschiedenen Typen des Eintrags **Fehlerliste** an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)** , **Warnung (inaktiv)** .
 

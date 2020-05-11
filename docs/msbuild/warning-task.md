@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567137"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631093"
 ---
 # <a name="warning-task"></a>Warnungsaufgabe
+
 Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Bedingungsanweisung basiert
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `Warning` -Aufgabe beschrieben.
 
 | Parameter | Beschreibung |
@@ -36,16 +38,18 @@ Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Be
 | `Code` | Optionaler `String`-Parameter.<br /><br /> Der Warncode, der der Warnung zugeordnet werden soll. |
 | `File` | Optionaler `String`-Parameter.<br /><br /> Gibt die relevante Datei an, falls vorhanden. Wenn keine Datei angegeben wird, wird die Datei verwendet, die die Warnungsaufgabe enthält. |
 | `HelpKeyword` | Optionaler `String`-Parameter.<br /><br /> Das der Warnung zuzuordnende Hilfeschlüsselwort. |
-| `Text` | Optionaler `String`-Parameter.<br /><br /> Der Warnungstext, den [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolliert, wenn der `Condition`-Parameter `true` ergibt. |
+| `Text` | Optionaler `String`-Parameter.<br /><br /> Der Warnungstext, den MSBuild protokolliert, wenn der `Condition`-Parameter als `true` ausgewertet wird. |
 
 ## <a name="remarks"></a>Hinweise
- Die `Warning`-Aufgabe ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten, zu prüfen, ob eine erforderliche Konfiguration oder Eigenschaft vorhanden ist, bevor Sie mit dem nächsten Schritt des Buildvorgangs fortfahren.
+
+ Die `Warning`-Aufgabe ermöglicht es MSBuild-Projekten, zu prüfen, ob eine erforderliche Konfiguration oder Eigenschaft vorhanden ist, bevor der nächste Schritt des Buildvorgangs ausgeführt wird.
 
  Wenn der `Condition`-Parameter der `Warning`-Aufgabe `true` ergibt, wird der Wert des `Text`-Parameters protokolliert und der Build weiter ausgeführt. Wenn kein `Condition`-Parameter vorhanden ist, wird der Warnungstext protokolliert. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
  Mithilfe des folgenden Codebeispiels können Sie nach Eigenschaften suchen, die in der Befehlszeile festgelegt sind. Wenn keine Eigenschaften festgelegt sind, löst das Projekt ein Warnungsereignis aus und protokolliert den Wert des `Text`-Parameters der `Warning`-Aufgabe.
 
 ```xml
@@ -63,5 +67,6 @@ Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Be
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

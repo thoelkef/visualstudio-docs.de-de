@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405809"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,21 +23,21 @@ Beim Eingeben von Code in einer unterstützten Datei (z. B. C#-Codedatei) werde
 
 Das Vervollständigungsfenster bietet auch Unterstützung für das Filtern der enthaltenen Vervollständigungen nach Typ. Es ist beispielsweise möglich, die Member der Liste einzuschränken, sodass sie nur Typen wie Klassen oder Delegate repräsentieren. Dieser Filtervorgang kann entweder durch das Klicken auf ein bestimmtes Symbol, das den zu filternden Typ darstellt, oder mithilfe von Tastenkombinationen aktiviert werden, die einem bestimmten Typ entsprechen. Die Symbole, die sich unten im Vervollständigungsfenster befinden, lauten wie folgt:
 
-| Symbol                         | name          | Stichwort    | Hotkey |
+| Symbol                         | Name          | Schlüsselwort    | Hotkey |
 | -----------------------------|---------------| -----------|--------|
 | ![Symbol „Klassen“](media/classes-icon.png)  | class         | `class`    |  ⌥C
-| ![Symbol "Konstante"](media/constant-icon.png) | constant      | `const`    |  ⌥O
-| ![Symbol „Delegieren“](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
+| ![Symbol "Konstante"](media/constant-icon.png) | Konstante      | `const`    |  ⌥O
+| ![Symbol „Delegieren“](media/delegate-icon.png) | -Delegat      | `delegate` |  ⌥D
 | ![Symbol „Enumeration“](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![Symbol „Ereignis“](media/event-icon.png)    | event         |            |  ⌥V
+| ![Symbol „Ereignis“](media/event-icon.png)    | Ereignis         |            |  ⌥V
 | ![Symbol "Feld"](media/fields-icon.png)   | Feld         |            |  ⌥F
-| ![Symbol „Schnittstelle“](media/interface-icon.png)| interface     | `interface`|  ⌥I
-| ![Symbol „Schlüsselwort“](media/keyword-icon.png)  | keyword       |            |  ⌥K
-| ![Symbol „Methode“](media/method-icon.png)   | Methode        |            |  ⌥M
-| ![Symbol „Namespace“](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
+| ![Symbol „Schnittstelle“](media/interface-icon.png)| Schnittstelle     | `interface`|  ⌥I
+| ![Symbol „Schlüsselwort“](media/keyword-icon.png)  | Schlüsselwort (keyword)       |            |  ⌥K
+| ![Symbol „Methode“](media/method-icon.png)   | method        |            |  ⌥M
+| ![Symbol „Namespace“](media/namespace-icon.png)| Namespace     | `namespace`|  ⌥N
 | ![Symbol „Eigenschaften“](media/props-icon.png)    | property      |            |  ⌥P
 | ![Symbol „Ausschnitt“](media/snippet-icon.png)  | Codeausschnitt       | `class`    |  ⌥S
-| ![Symbol „Struktur“](media/struct-icon.png)   | Struktur     | `struct`   |  ⌥S
+| ![Symbol „Struktur“](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
 
 Wenn Sie auf eines der Symbole klicken oder die entsprechenden Hotkeys drücken, wird die Vervollständigungsliste auf die vom Filtersatz definierten Typen beschränkt.  
 
@@ -58,7 +58,7 @@ Das Vervollständigungsfenster wird bei Eingaben in der Quelldatei automatisch a
 
 Sie können die Darstellung des Parameterfensters auch manuell auslösen, indem Sie `control-shift-space` eingeben. Wenn Sich das Caretzeichen an einer für die Parameterliste gültigen Position befindet, wird die Parameterliste in der Nähe der Position des Caretzeichens angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnellaktionen (Visual Studio unter Windows)](/visualstudio/ide/quick-actions)
 - [Umgestalten von Code (Visual Studio unter Windows)](/visualstudio/ide/refactoring-in-visual-studio)

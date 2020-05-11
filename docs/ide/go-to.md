@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593784"
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen
@@ -52,7 +52,7 @@ Standardmäßig wird das angegebene Element in allen Projektmappenelementen gesu
 
 Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie entweder ein Präfix in das Suchfeld eingeben oder eines der fünf Filtersymbole auswählen:
 
-Präfix | Symbol | Verknüpfung | Beschreibung
+Präfix | Symbol | Tastenkombination | Beschreibung
 :-: | - | - | -
 :| ![Symbol „Zeile“](media/gotoall-line-icon.png) | **STRG**+**G** | Zur angegebenen Zeilennummer wechseln
 f| ![Symbol „Dateien“](media/gotoall-files-icon.png) | **STRG**+**1**, **STRG**+**F** | Zur angegebenen Datei wechseln
@@ -86,7 +86,7 @@ Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorsch
 Details anzeigen | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an
 Fenster zentrieren | Verschieben Sie dieses Fenster in die Mitte des Code-Editors, statt an die Standardposition.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren durch den Code](../ide/navigating-code.md)
 - [Gehe zu Zeile (Dialogfeld)](../ide/reference/go-to-line.md)

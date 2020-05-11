@@ -3,21 +3,22 @@ title: KI-Tools für Visual Studio
 titleSuffix: ''
 description: Übersicht über KI-Tools für Visual Studio
 keywords: KI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f696f5c2696ef15c133c9011b4235bf6714742e7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915968"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638567"
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
+# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools für KI
 
 Visual Studio-Tools für KI sind Erweiterungen für das Erstellen, Testen und Bereitstellen von Deep Learning- bzw. KI-Lösungen. Diese bieten eine nahtlose Integration in Azure Machine Learning für robuste Experimentierfunktionen, unter anderem einschließlich der transparenten Übermittlung der Datenvorbereitung und der Modelltrainigsaufträge an andere Computeziele. Darüber hinaus unterstützen diese benutzerdefinierte Metriken und die Nachverfolgung des Ausführungsverlaufs, wodurch die Reproduzierbarkeit und Überwachung von Data Science ermöglicht wird. Durch die für Unternehmen optimierte Kollaborationstools wird das sichere Arbeiten an einem Projekt mit anderen Personen zusammen ermöglicht.
 
@@ -45,5 +46,5 @@ Diese Erweiterung vereinfacht das Trainieren von Modellen auf Ihrem lokalen Comp
 ## <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme
 Derzeit unterstützt diese Erweiterung Windows 64-Bit-Betriebssysteme.
 
-## <a name="support"></a>Support
+## <a name="support"></a>Unterstützung
 Die Unterstützung für diese Erweiterung wird auf dem [GitHub Issue Tracker](https://github.com/Microsoft/vs-tools-for-ai/issues) bereitgestellt. Sie können einen Fehlerbericht oder einen Vorschlag für ein Feature übermitteln oder an Diskussionen teilnehmen.

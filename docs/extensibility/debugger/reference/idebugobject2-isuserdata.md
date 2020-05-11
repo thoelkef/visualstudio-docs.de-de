@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData | Microsoft-Dokumentation
+title: IDebugObject2::IsUserData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94c3f6adc9dd75e1ed4ecc4c5fd7f37635099566
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce4a7035ac3786f0cc1644e2ebbb0c142167e2b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317243"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726086"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
-Bestimmt, ob das Objekt mit Daten des Benutzers darstellt.
+Bestimmt, ob das Objekt Benutzerdaten darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int IsUserData(
 
 ## <a name="parameters"></a>Parameter
 `pfUser`\
-[out] Ungleich NULL zurückgibt (`TRUE`) NULL, wenn das Objekt auf Benutzerdaten; darstellt (`FALSE`), wenn dies nicht der Fall.
+[out] Gibt einen`TRUE`Wert ungleich Null zurück ( ), wenn das Objekt Benutzerdaten darstellt; Null`FALSE`( ), wenn dies nicht der Fall ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Benutzerdaten sind ein Objekt, das Teil eines Moduls, das als JustMyCode (eine konfigurierbare Option, die ein Modul als Benutzercode und daher in eine stapelüberwachung sichtbar markiert) festgelegt ist.
+## <a name="remarks"></a>Bemerkungen
+ Benutzerdaten sind jedes Objekt, das Teil eines Moduls ist, das als JustMyCode bezeichnet wird (eine vom Benutzer konfigurierbare Option, die ein Modul als Benutzercode markiert und daher in einer Stapelablaufverfolgung sichtbar ist).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

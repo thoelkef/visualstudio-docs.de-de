@@ -9,28 +9,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114468"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472783"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 
-Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informationen zu diesem Build im Fenster **Ausgabe** angezeigt. Anhand dieser Informationen können Sie beispielsweise einen Buildfehler beheben. 
+Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informationen zu diesem Build im Fenster **Ausgabe** angezeigt. Anhand dieser Informationen können Sie beispielsweise einen Buildfehler beheben.
 
-- Bei C++-Projekten werden die gleichen Informationen auch in einer *TXT*-Datei angezeigt, die automatisch erstellt und gespeichert wird. 
+- Bei C++-Projekten können Sie die gleichen Informationen in einer Protokolldatei anzeigen, die beim Erstellen eines Projekts erstellt und gespeichert wird. 
 
-- Bei Projekten mit verwaltetem Code können Sie in das Buildausgabefenster klicken und **STRG**+**S** drücken. Visual Studio fordert Sie auf, einen Speicherort auszuwählen, an dem die Informationen aus dem **Ausgabefenster** in einer *.txt*-Datei gespeichert werden sollen. 
+- Bei Projekten mit verwaltetem Code können Sie in das Buildausgabefenster klicken und **STRG**+**S** drücken. Visual Studio fordert Sie auf, einen Speicherort auszuwählen, an dem die Informationen aus dem **Ausgabefenster** in einer Protokolldatei gespeichert werden sollen.
 
 Sie können die IDE ebenfalls verwenden, um anzugeben, welche Informationen zu jedem Build angezeigt werden sollen.
 
-Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine *TXT*-Datei erstellen, um Informationen zum Build zu speichern. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
+Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine Protokolldatei erstellen, um Informationen zum Build zu speichern. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Anzeigen der Buildprotokolldatei für ein C++-Projekt
 
-1. Öffnen Sie im **Windows-Explorer** oder im **Datei-Explorer** folgende Datei: *\\...\Visual Studio \<Version\>\Projects\\<ProjectName\>\\<ProjectName\>\Debug\\<ProjectName\>.txt*
+1. Öffnen Sie die folgende Datei über den **Windows-Explorer** oder den **Datei-Explorer** (relativ zum Projektstammordner): *Release*\\<ProjectName>\>.Log* oder *Debug\\<ProjectName\>.log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Erstellen einer Buildprotokolldatei für ein Projekt mit verwaltetem Code
 

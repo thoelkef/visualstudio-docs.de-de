@@ -28,7 +28,7 @@
           href: javascript-memory.md
         - name: Suchen eines Speicherverlusts (JavaScript)
           href: walkthrough-find-a-memory-leak-javascript.md
-    - name: Analysieren der Netzwerkverwendung
+    - name: Netzwerkauslastung
       href: network-usage.md
     - name: HTML-UI-Reaktionsfähigkeit
       items:
@@ -52,7 +52,7 @@
               href: understanding-performance-collection-methods.md
             - name: Grundlagen zu Samplingdatenwerten
               href: understanding-sampling-data-values.md
-            - name: Grundlagen zu Instrumentationsdatenwerten
+            - name: Grundlagen zu Instrumentierungsdatenwerten
               href: understanding-instrumentation-data-values.md
             - name: Datenwerte zur Speicherbelegung und Objektlebensdauer
               href: understanding-memory-allocation-and-object-lifetime-data-values.md
@@ -64,7 +64,7 @@
               href: performance-explorer-window.md
             - name: Eigenschaften von Leistungssitzungen
               href: performance-session-properties.md
-            - name: Profilerstellung und Sicherheit in Windows Vista
+            - name: "Profilerstellung und Sicherheit in Windows\_Vista"
               href: profiling-and-windows-vista-security.md
         - name: Erste Schritte
           items:
@@ -178,11 +178,11 @@
                           href: dotnet-framework-usage-performance-rules.md
                         - name: 'DA0001: StringBuilder für Verkettungen verwenden'
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: Häufige GC2-Auflistungen'
+                        - name: 'DA0005: Häufige GC2-Auflistung'
                           href: da0005-frequent-gc2-collections.md
                         - name: 'DA0006: Equals() für Werttypen überschreiben'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: Vermeiden der Verwendung von Ausnahmen für die Ablaufsteuerung'
+                        - name: 'DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
                         - name: 'DA0010: Speicherintensive GetHashCode-Funktionen'
                           href: da0010-expensive-gethashcode.md
@@ -192,7 +192,7 @@
                           href: da0012-significant-amount-of-reflection.md
                         - name: 'DA0013: Umfangreiche Verwendung von String.Split oder String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt.'
+                        - name: 'DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
                         - name: 'DA0021: Hohes Maß an Garbage Collections der Generation 1'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
@@ -200,11 +200,11 @@
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
                         - name: 'DA0023: Hohe GC-CPU-Zeit'
                           href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024: Übermäßige GC-CPU-Zeit.'
+                        - name: 'DA0024: Übermäßige GC-CPU-Zeit'
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: Hohes Maß an Sperrkonflikten.'
+                        - name: 'DA0038: Hohes Maß an Sperrkonflikten'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: Sehr hohes Maß an Sperrkonflikten.'
+                        - name: 'DA0039: Sehr hohes Maß an Sperrkonflikten'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Leistungsregeln für Speicher und Auslagerung
                       items:
@@ -218,7 +218,7 @@
                       items:
                         - name: Verwendungsregeln für Profilerstellungstools
                           href: profiling-tools-usage-rules.md
-                        - name: 'DA0002: „VSPerfCorProf.dll“ fehlt'
+                        - name: 'DA0002: VSPerfCorProf.dll fehlt'
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: 'DA0003: Zahlreiche Kernelbeispiele'
                           href: da0003-many-kernel-samples.md
@@ -228,7 +228,7 @@
                           href: da0008-few-samples-collected.md
                         - name: 'DA0026: Übermäßige CPU-Zeit für die Kernelverarbeitung'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: Nicht unterstützte CLR-Version.'
+                        - name: 'DA0029: Nicht unterstützte CLR-Version'
                           href: da0029-unsupported-clr-version.md
                         - name: 'DA0030: Sammeln Sie Ebeneninteraktions-Messdaten für Datenbankprojekte.'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
@@ -238,15 +238,15 @@
                           href: resource-monitoring-performance-rules.md
                         - name: 'DA0501: Durchschnittliche CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird.'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: Maximale CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird.'
+                        - name: 'DA0502: Maximale CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: Durchschnittliche Arbeitsseite in Bytes für den Prozess, für den die Profilerstellung ausgeführt wird.'
+                        - name: 'DA0503: Durchschnittliche Arbeitsseite in Bytes für den Prozess, für den die Profilerstellung ausgeführt wird'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0504: Maximale Arbeitsseite in Bytes für den Prozess, für den die Profilerstellung ausgeführt wird'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0505: Durchschnittliche private Bytes, die für den Prozess zugeordnet sind, für den die Profilerstellung ausgeführt wird'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: Höchstwert für „Private Bytes“, der dem Prozess, für den die Profilerstellung ausgeführt wird, zugeordnet ist'
+                        - name: 'DA0506: Maximale private Bytes, die für den Prozess zugeordnet sind, für den die Profilerstellung ausgeführt wird'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Leistungsberichtansichten
               items:
@@ -318,29 +318,29 @@
                       href: dotnet-memory-data-views.md
                     - name: Zusammenfassungsansicht
                       href: summary-view-dotnet-memory-data.md
-                    - name: Zuteilungsansicht
+                    - name: Zuordnungsansicht
                       href: dotnet-memory-allocations-view.md
                     - name: Objektlebensdaueransicht
                       href: object-lifetime-view.md
-                    - name: Aufrufstrukturansicht – Sampling
+                    - name: Aufrufstrukturansicht - Sampling
                       href: call-tree-view-dotnet-memory-sampling-data.md
-                    - name: Modulansicht – Sampling
+                    - name: Modulansicht - Sampling
                       href: modules-view-dotnet-memory-sampling-data.md
-                    - name: Ansicht der aufrufenden/aufgerufenen Funktionen – Sampling
+                    - name: Aufrufer-/Aufgerufener-Ansicht - Sampling
                       href: caller-callee-view-dotnet-memory-sampling-data.md
-                    - name: Funktionsansicht – Sampling
+                    - name: Funktionsansicht - Sampling
                       href: functions-view-dotnet-memory-sampling-data.md
-                    - name: Zeilenansicht – Sampling
+                    - name: Zeilenansicht - Sampling
                       href: lines-view-dotnet-memory-sampling-data.md
-                    - name: Anweisungszeigeransicht – Sampling
+                    - name: Anweisungszeigeransicht - Sampling
                       href: instruction-pointers-ips-view-dotnet-memory-sampling-data.md
-                    - name: Aufrufstrukturansicht – Instrumentierung
+                    - name: Aufrufstrukturansicht - Instrumentation
                       href: call-tree-view-dotnet-memory-instrumentation-data.md
-                    - name: Modulansicht – Instrumentierung
+                    - name: Modulansicht - Instrumentierung
                       href: modules-view-dotnet-memory-instrumentation-data.md
-                    - name: Aufrufstrukturansicht – Instrumentierung
+                    - name: Aufrufer-/Aufgerufener-Ansicht - Instrumentation
                       href: caller-callee-view-net-memory-instrumentation-data.md
-                    - name: Funktionsansicht – Instrumentierung
+                    - name: Funktionsansicht - Instrumentierung
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Ansichten für Ressourcenkonfliktdaten
                   items:
@@ -372,7 +372,7 @@
                   items:
                     - name: Ebeneninteraktions-Ansicht
                       href: tier-interaction-views.md
-                    - name: Ebeneninteraktionen (Ansicht)
+                    - name: Ansicht "Ebeneninteraktionen"
                       href: tier-interactions-view.md
             - name: Anpassen von Berichtsansichten von Leistungstools
               items:
@@ -400,13 +400,13 @@
           href: saving-symbol-information-with-performance-data-files.md
         - name: Speichern und Exportieren von Daten aus Leistungstools
           href: saving-and-exporting-performance-tools-data.md
-        - name: Profilerstellung über die Befehlszeile
+        - name: Profilerstellung mithilfe der Befehlszeile
           items:
-            - name: Profilerstellung über die Befehlszeile
+            - name: Profilerstellung mithilfe der Befehlszeile
               href: using-the-profiling-tools-from-the-command-line.md
             - name: Angeben von Symboldateispeicherorten über die Befehlszeile
               href: how-to-specify-symbol-file-locations-from-the-command-line.md
-            - name: Angeben des Pfads zu Befehlszeilentools
+            - name: Angeben des Pfads zu Tools für die Befehlszeile
               href: specifying-the-path-to-profiling-tools-command-line-tools.md
             - name: Verwenden von Profilerstellungsmethoden über die Befehlszeile
               href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
@@ -426,9 +426,9 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md
                     - name: Anfügen des Profilers an eine native Anwendung und Sammeln von Anwendungsstatistiken
                       href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md
-                - name: Sammeln detaillierter Zeitsteuerungsdaten mithilfe der Instrumentierung
+                - name: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation
                   items:
-                    - name: Sammeln detaillierter Zeitsteuerungsdaten mithilfe der Instrumentierung
+                    - name: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation
                       href: collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md
                     - name: Instrumentieren einer .NET-Komponente und Sammeln detaillierter Zeitsteuerungsdaten
                       href: how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
@@ -446,9 +446,9 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Anfügen des Profilers an eine native Anwendung zum Sammeln von Parallelitätsdaten
                       href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md
-                - name: Sammeln von Arbeitsspeicherdaten für .NET Framework
+                - name: Sammeln von .NET Framework-Arbeitsspeicherdaten
                   items:
-                    - name: Sammeln von Arbeitsspeicherdaten für .NET Framework
+                    - name: Sammeln von .NET Framework-Arbeitsspeicherdaten
                       href: collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md
                     - name: Starten einer .NET Framework-Anwendung mit dem Profiler zum Sammeln von Arbeitsspeicherdaten
                       href: how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md
@@ -472,9 +472,9 @@
                       href: collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md
                     - name: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Sammeln detaillierter Zeitsteuerungsdaten mithilfe der Instrumentierung
+                - name: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation
                   items:
-                    - name: Sammeln detaillierter Zeitsteuerungsdaten mithilfe der Instrumentierung
+                    - name: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation
                       href: collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md
                     - name: Instrumentieren einer statisch kompilierten ASP.NET-Anwendung und Sammeln detaillierter Zeitsteuerungsdaten
                       href: how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md
@@ -510,9 +510,9 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
                     - name: Anfügen des Profilers an einen nativen Dienst zum Sammeln von Anwendungsstatistiken
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Sammeln detaillierter Zeitsteuerungsdaten mithilfe der Instrumentierung
+                - name: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation
                   items:
-                    - name: Sammeln detaillierter Zeitsteuerungsdaten mithilfe der Instrumentierung
+                    - name: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation
                       href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md
                     - name: Instrumentieren eines .NET-Diensts und Sammeln detaillierter Zeitsteuerungsdaten
                       href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
@@ -546,7 +546,7 @@
                   href: how-to-create-a-profiler-comparison-report-from-a-command-prompt.md
                 - name: Erstellen eines Berichts zur Aufrufablaufverfolgung
                   href: how-to-create-a-profiling-tools-call-trace-report.md
-                - name: Erstellen von portierbaren Profilerstellungs-Datendateien
+                - name: Erstellen portierbarer Profilerstellungs-Datendateien
                   href: creating-portable-profiling-data-files-from-the-command-line.md
                 - name: Erstellen eines ETW-Berichts
                   href: how-to-create-a-profiling-tools-etw-report.md
@@ -566,7 +566,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Starten
+                    - name: Start
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
@@ -574,7 +574,7 @@
                       href: output.md
                     - name: WinCounter
                       href: wincounter.md
-                    - name: Zähler
+                    - name: Leistungsindikator
                       href: counter.md
                     - name: WaitStart
                       href: waitstart.md
@@ -584,7 +584,7 @@
                       href: user-vsperfcmd.md
                     - name: QueryCounters
                       href: querycounters.md
-                    - name: Ereignisse
+                    - name: Events
                       href: events-vsperfcmd.md
                     - name: Shutdown
                       href: shutdown.md
@@ -598,13 +598,13 @@
                       href: gc-vsperfcmd.md
                     - name: Starten
                       href: launch.md
-                    - name: Anfügen
+                    - name: Attach
                       href: attach.md
                     - name: Args
                       href: args.md
                     - name: Mark
                       href: mark.md
-                    - name: Trennen
+                    - name: Detach
                       href: detach.md
                     - name: PF
                       href: pf.md
@@ -662,9 +662,9 @@
           href: profiling-aspnet-load-tests.md
         - name: Problembehandlung bei Leistungstools
           href: troubleshooting-performance-tools-issues.md
-    - name: Parallelitätsschnellansicht
+    - name: Concurrency Visualizer
       items:
-        - name: Parallelitätsschnellansicht
+        - name: Concurrency Visualizer
           href: concurrency-visualizer.md
         - name: Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
           href: common-patterns-for-poorly-behaved-multithreaded-applications.md
@@ -700,7 +700,7 @@
               href: copy-selection.md
             - name: Aktuelle Registerkarte
               href: current-tab.md
-            - name: Bericht zu Datenträgervorgängen
+            - name: Bericht über Datenträgervorgänge
               href: disk-operations-report-threads-view.md
             - name: Leeres Zeitachsensegment
               href: empty-timeline-segment.md
@@ -708,7 +708,7 @@
               href: execution-profile-report.md
             - name: Ausführungszeit (Threadansicht)
               href: execution-time-threads-view.md
-            - name: Schaltfläche „Exportieren“
+            - name: Schaltfläche "Exportieren"
               href: export-button-concurrency-visualizer.md
             - name: E/A-Zeit (Threadansicht)
               href: i-o-time-threads-view.md
@@ -724,9 +724,9 @@
               href: memory-management-time.md
             - name: Es sind mehrere Kategorien vorhanden
               href: multiple-categories-are-present.md
-            - name: Keine anzuzeigende Datenträgeraktivität
+            - name: Es wird keine Datenträgeraktivität angezeigt
               href: no-disk-activity-to-show-threads-view.md
-            - name: Keine anzuzeigende Threadaktivität
+            - name: Es werden keine Threadaktivitäten angezeigt
               href: no-thread-activity-to-show-threads-view.md
             - name: Prozentsatz der Rauschunterdrückung
               href: noise-reduction-percentage.md
@@ -852,5 +852,5 @@
                   href: cvwritemessage-function.md
         - name: Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
           href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
-    - name: Analysieren des Energieverbrauchs
+    - name: Analyse des Energieverbrauchs
       href: analyze-energy-use-in-store-apps.md

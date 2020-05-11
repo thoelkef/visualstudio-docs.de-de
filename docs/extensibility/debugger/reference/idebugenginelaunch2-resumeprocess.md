@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::ResumeProcess
 ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52eabc3732dc1d91dca7d0ed84f2b3e00bb8e17f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 12db549cf52df7ad17eea8a3af85255c9ffbfab4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351680"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730522"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
-Prozess wird fortgesetzt.
+Setzt die Prozessausführung fort.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int ResumeProcess ( 
 
 ## <a name="parameters"></a>Parameter
 `pProcess`\
-[in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess, bis die Wiederaufnahme erfolgt darstellt.
+[in] Ein [IDebugProcess2-Objekt,](../../../extensibility/debugger/reference/idebugprocess2.md) das den Prozess darstellt, der fortgesetzt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird aufgerufen, nach dem Starten eines Prozesses mit einem Aufruf der [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird aufgerufen, nachdem ein Prozess mit einem Aufruf der [LaunchSuspended-Methode](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) gestartet wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

@@ -102,9 +102,9 @@ sections:
             html: '<p>Führen Sie Ihre App im Debugger aus, um Probleme zu untersuchen.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Debug
+            title: Debuggen
           - href: version-control.md
             html: '<p>Greifen Sie auf Azure DevOps-, Git- und Subversion-Quellrepositorys zu.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
-            title: Quellcodeverwaltung
+            title: Versionskontrolle

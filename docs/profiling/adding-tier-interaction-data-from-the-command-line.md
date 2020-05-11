@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779869"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
@@ -32,7 +32,7 @@ Profilerstellungsdaten für die Ebeneninteraktion können mit einer beliebigen V
 
 **Sammeln von TIP-Daten auf einem Remotecomputer**
 
-Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs_profiler\_** _\<Plattform>_ **\_** _\<Sprache>_ **.exe** aus dem Ordner _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket [Remotedebuggen](../debugger/remote-debugging.md) verwenden.
+Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs_profiler\_** _\<Plattform>_ **\_** _\<Sprache>_ **.exe** aus dem Ordner _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](../debugger/remote-debugging.md) verwenden.
 
 **TIP-Berichte**
 

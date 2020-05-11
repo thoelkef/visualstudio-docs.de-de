@@ -1,24 +1,24 @@
 ---
-title: IDebugTypeFieldBuilder | Microsoft-Dokumentation
+title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 165bbf6326bee67718c4c2ae44933d1b21b8252c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319792"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718398"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-Stellt die Möglichkeit, ein Feld erstellen, die einen Typ darstellt.
+Stellt die Möglichkeit dar, ein Feld zu erstellen, das einen Typ darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -26,19 +26,19 @@ Stellt die Möglichkeit, ein Feld erstellen, die einen Typ darstellt.
 IDebugTypeFieldBuilder : IUnknown
 ```
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Diese Schnittstelle wird von der symbolanbieter abgerufen.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Diese Schnittstelle wird vom Symbolanbieter abgerufen.
 
 ## <a name="methods"></a>Methoden
  Diese Schnittstelle implementiert die folgenden Methoden:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Erstellt ein Objekt, das einen primitiven Typ darstellt.|
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Erstellt einen Zeiger auf den angegebenen Typ.|
 
-## <a name="requirements"></a>Anforderungen
- Header: Sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: Sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 

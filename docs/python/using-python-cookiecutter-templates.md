@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62832154"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
@@ -100,7 +100,7 @@ Dieses Rendering kann verbessert werden, indem Sie zusätzliche Metadaten in Ihr
 | Bezeichnung | Gibt an, was statt des Variablennamens über dem Editor für die Variable angezeigt werden soll. |
 | Beschreibung | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
 | URL | Ändert die Bezeichnung in einen Hyperlink mit einer QuickInfo, in der die URL angezeigt wird. Durch Klicken auf den Hyperlink wird diese URL im Standardbrowser des Benutzers geöffnet. |
-| Auswahl | Ermöglicht die Anpassung des Editors für eine Variable. Folgende Auswahlmöglichkeiten werden zurzeit unterstützt:<ul><li>`string`: Standardtextfeld, standardmäßig für Zeichenfolgen.</li><li>`list`: Standardkombinationsfeld, standardmäßig für Listen.</li><li>`yesno`: Kombinationsfeld zur Auswahl zwischen `y` und `n`, für Zeichenfolgen.</li><li>`odbcConnection`: Textfeld mit einer **...**-Schaltfläche, die ein Dialogfeld für eine Datenbankverbindung öffnet.</li></ul> |
+| Auswahl | Ermöglicht die Anpassung des Editors für eine Variable. Folgende Auswahlmöglichkeiten werden zurzeit unterstützt:<ul><li>`string`: Standardtextfeld, standardmäßig für Zeichenfolgen.</li><li>`list`: Standardkombinationsfeld, standardmäßig für Listen.</li><li>`yesno`: Kombinationsfeld zur Auswahl zwischen `y` und `n`, für Zeichenfolgen.</li><li>`odbcConnection`: Textfeld mit einer **...** -Schaltfläche, die ein Dialogfeld für eine Datenbankverbindung öffnet.</li></ul> |
 
 Beispiel:
 
@@ -170,7 +170,7 @@ Wenn Sie kein Argument übergeben müssen, geben Sie in der JSON eine leere Zeic
 ]
 ```
 
-Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Sie Schalter verwenden, teilen Sie den Schalter und den zugehörigen Wert in separate Argumente auf und verwenden Sie die korrekten Anführungszeichen. Beispiel:
+Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Sie Schalter verwenden, teilen Sie den Schalter und den zugehörigen Wert in separate Argumente auf und verwenden Sie die korrekten Anführungszeichen. Zum Beispiel:
 
 ```json
 "_visual_studio_post_cmds": [

@@ -8,13 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 03f23aacbe95615b565dfcee54d2b620c0ae1cd9
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+author: mikejo5000
+ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091833"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307004"
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -29,7 +29,7 @@ public partial class FooTest {...}
 
 * **Grenzen der Einschränkungs-Solver**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): Die Sekundenzahl, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu finden, die dazu führen, dass neue und andere Ausführungspfade befolgt werden
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [ verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden.
 * **Grenzen des Explorationspfads**
   * [MaxBranches](#maxbranches): Die maximale Anzahl von Verzweigungen, die entlang eines einzelnen Ausführungspfads genommen werden können
   * [MaxCalls](#maxcalls): Die maximale Anzahl von Aufrufen, die während eines einzelnen Ausführungspfads durchgeführt werden können
@@ -166,7 +166,7 @@ Diese Durchsuchungsbegrenzung ist zum Behandeln von (hauptsächlich) nicht enden
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-Gibt die Testtypen an, die IntelliTest ausgeben soll. Mögliche Werte sind:
+Gibt die Testtypen an, die IntelliTest ausgeben soll. Mögliche Werte:
 
 * **All**: Ausgeben von Tests für alles, einschließlich Annahmeverletzungen
 * **FailuresAndIncreasedBranchHits** (Standard): Ausgeben von Tests für alle eindeutigen Fehler und immer dann, wenn ein Testfall die Coverage erhöht, wie von [TestEmissionBranchHits](#testemissionbranchhits) gesteuert
@@ -184,6 +184,6 @@ Die Einstellung **TestEmissionBranchHits** legt fest, ob IntelliTest nur darauf 
 
 Die Standardeinstellung ist **TestEmissionBranchHits=2**, welche eine ausdrucksstärkere Testsammlung generiert, die sich zudem besser zum Erkennen zukünftiger Regressionsfehler eignet.
 
-## <a name="got-feedback"></a>Sie möchten Feedback geben?
+## <a name="got-feedback"></a>Sie haben Fragen oder Anmerkungen?
 
 Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

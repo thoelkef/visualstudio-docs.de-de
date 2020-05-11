@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591384"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Vorgehensweise: Problembehandlung bei Vorlagen
@@ -45,7 +45,7 @@ Wenn die *VSTEMPLATE*-Datei in einer Vorlage nicht dem Visual Studio-Vorlagensch
 1. Stellen Sie sicher, dass das XML-Format der *VSTEMPLATE*-Datei dem Vorlagenschema folgt. Weitere Informationen zum *VSTEMPLATE*-Schema finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Fügen Sie dem `VSTemplate`-Element ein `xmlns`-Attribut hinzu, und weisen Sie diesem einen Wert von `http://schemas.microsoft.com/developer/vstemplate/2005` zu, um die IntelliSense-Unterstützung während der Erstellung der *VSTEMPLATE*-Datei zu nutzen.
+    > Fügen Sie dem *-Element ein* -Attribut hinzu, und weisen Sie diesem einen Wert von `xmlns` zu, um die IntelliSense-Unterstützung während der Erstellung der `VSTemplate`VSTEMPLATE`http://schemas.microsoft.com/developer/vstemplate/2005`-Datei zu nutzen.
 
 1. Speichern und schließen Sie die *VSTEMPLATE*-Datei.
 
@@ -59,7 +59,7 @@ Wenn die *VSTEMPLATE*-Datei in einer Vorlage nicht dem Visual Studio-Vorlagensch
 
 Sie können die Diagnoseprotokollierung für die Ermittlung von Vorlagen aktivieren, indem Sie die Schritte unter [Troubleshooting template discovery (Extensibility) (Problembehandlung bei der Ermittlung von Vorlagen (Erweiterbarkeit))](../extensibility/troubleshooting-template-discovery.md) beschrieben befolgen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Troubleshooting template discovery (Extensibility) (Problembehandlung bei der Ermittlung von Vorlagen (Erweiterbarkeit))](../extensibility/troubleshooting-template-discovery.md)
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)

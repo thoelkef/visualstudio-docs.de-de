@@ -1,7 +1,7 @@
 ---
-title: Remotedebuggen für ASP.NET Core auf IIS und Azure | Microsoft-Dokumentation
+title: Remote-Debug-ASP.NET Core auf IIS und Azure | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 05/21/2018
+ms.date: 04/14/2020
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -11,143 +11,149 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 079e324f2304118c9041118c13e8ebc0cce2015c
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824438"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385499"
 ---
-# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Remotedebuggen von ASP.NET Core auf IIS in Azure in Visual Studio
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Remotedebug ASP.NET Core auf IIS in Azure in Visual Studio
 
-Dieses Handbuch wird erläutert, wie einrichten und Konfigurieren einer Visual Studio ASP.NET Core-app, in IIS mithilfe von Azure bereitstellen und fügen Sie den Remotedebugger in Visual Studio.
+In diesem Handbuch wird erläutert, wie Sie eine Visual Studio ASP.NET Core-App einrichten und konfigurieren, sie mithilfe von Azure in IIS bereitstellen und den Remotedebugger aus Visual Studio anfügen.
 
-Die empfohlene Methode zum Remotedebuggen in Azure hängt vom Szenario ab:
+Die empfohlene Methode zum Remotedebuggen in Azure hängt von Ihrem Szenario ab:
 
-* Zum Debuggen von ASP.NET Core in Azure App Service finden Sie unter [Debuggen von Azure-apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md). Dies ist die empfohlene Methode.
-* Führen Sie die Schritte in diesem Thema zum Debuggen von ASP.NET Core in Azure App Service mithilfe der eher traditionelle Debugfunktionen (finden Sie im Abschnitt [Remotedebuggen in Azure App Service](#remote_debug_azure_app_service)).
+* Informationen zum Debuggen ASP.NET Core in Azure App Service finden Sie unter Debuggen von [Azure-Apps mithilfe des Snapshot-Debuggers](../debugger/debug-live-azure-applications.md). Dies ist die empfohlene Methode.
+* Um ASP.NET Core in Azure App Service mithilfe herkömmlicherer Debugfunktionen zu debuggen, führen Sie die Schritte in diesem Thema aus (siehe Abschnitt [Remotedebug in Azure App Service](#remote_debug_azure_app_service)).
 
-    Klicken Sie in diesem Szenario müssen Sie Ihre app aus Visual Studio in Azure bereitstellen, aber Sie müssen nicht manuell installieren oder Konfigurieren von IIS oder der Remotedebugger (diese Komponenten mit einer gepunkteten Linien dargestellt werden), wie in der folgenden Abbildung dargestellt.
+    In diesem Szenario müssen Sie Ihre App von Visual Studio in Azure bereitstellen, müssen jedoch IIS oder den Remotedebugger (diese Komponenten werden mit gepunkteten Linien dargestellt) nicht manuell installieren oder konfigurieren (diese Komponenten werden mit gepunkteten Linien dargestellt), wie in der folgenden Abbildung dargestellt.
 
-    ![Remote Debugger-Komponenten](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Remote-Debuggerkomponenten](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
 
-* Führen Sie die Schritte in diesem Thema zum Debuggen von IIS auf einer Azure-VM (finden Sie im Abschnitt [Remote Debuggen auf einer Azure-VM](#remote_debug_azure_vm)). Dadurch können Sie eine angepasste Konfiguration von IIS verwenden, aber die Schritte für Einrichtung und Bereitstellung sind komplizierter.
+* Um IIS auf einer Azure-VM zu debuggen, führen Sie die Schritte in diesem Thema aus (siehe Abschnitt [Remotedebug auf einer Azure-VM](#remote_debug_azure_vm)). Auf diese Weise können Sie eine benutzerdefinierte Konfiguration von IIS verwenden, aber die Setup- und Bereitstellungsschritte sind komplizierter.
 
-    Für eine Azure-VM müssen Sie Ihre app aus Visual Studio in Azure bereitstellen, und darüber hinaus müssen die IIS-Rolle und dem Remotedebugger manuell installieren wie in der folgenden Abbildung dargestellt.
+    Für eine Azure-VM müssen Sie Ihre App von Visual Studio in Azure bereitstellen und auch die IIS-Rolle und den Remotedebugger manuell installieren, wie in der folgenden Abbildung dargestellt.
 
-    ![Remote Debugger-Komponenten](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Remote-Debuggerkomponenten](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
 
-* Zum Debuggen von ASP.NET Core in Azure Service Fabric finden Sie unter [Debuggen eine Service Fabric-Remoteanwendung](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
+* Informationen zum Debuggen ASP.NET Core in Azure Service Fabric finden Sie unter [Debuggen einer Remote-Service Fabric-Anwendung](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
-> Achten Sie darauf, dass Sie die Azure-Ressourcen zu löschen, die Sie erstellen, wenn Sie die Schritte in diesem Lernprogramm abgeschlossen haben. Auf diese Weise vermeiden Sie unnötige Kosten.
+> Achten Sie darauf, die Azure-Ressourcen zu löschen, die Sie erstellen, wenn Sie die Schritte in diesem Tutorial abgeschlossen haben. Auf diese Weise können Sie unnötige Gebühren vermeiden.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 ::: moniker range=">=vs-2019"
-Visual Studio-2019 ist erforderlich, die in diesem Artikel gezeigten Schritte.
+Visual Studio 2019 muss die in diesem Artikel beschriebenen Schritte ausführen.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2017 ist erforderlich, die in diesem Artikel gezeigten Schritte ausführen.
+Visual Studio 2017 muss die in diesem Artikel beschriebenen Schritte ausführen.
 ::: moniker-end
 
 ### <a name="network-requirements"></a>Netzwerkanforderungen
 
-Debuggen zwischen zwei Computern über einen Proxy verbunden sind, wird nicht unterstützt. Debuggen über eine hohe Latenz oder niedriger Bandbreite, wie z. B. DFÜ, Internet oder über das Internet in Ländern wird nicht empfohlen und möglicherweise fehl oder unzumutbar langsam werden. Eine vollständige Liste der Anforderungen, finden Sie unter [Anforderungen](../debugger/remote-debugging.md#requirements_msvsmon).
+Das Debuggen zwischen zwei Computern, die über einen Proxy verbunden sind, wird nicht unterstützt. Das Debuggen über eine Verbindung mit hoher Latenz oder geringer Bandbreite, z. B. DFÜ-Internet, oder über das Internet zwischen Ländern wird nicht empfohlen und kann fehlschlagen oder unannehmbar langsam sein. Eine vollständige Liste der Anforderungen finden Sie unter [Anforderungen](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Erstellen von ASP.NET Core-Anwendung auf dem Visual Studio-computer
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Erstellen der ASP.NET Core-Anwendung auf dem Visual Studio-Computer
 
 1. Erstellen Sie eine neue ASP.NET Core-Anwendung.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in Visual Studio-2019, **STRG + Q** Geben Sie zum Öffnen des Suchfelds **asp.net**, wählen Sie **Vorlagen**, wählen Sie dann **neue ASP.NET Core-Webanwendung erstellen** . Klicken Sie im Dialogfeld, das angezeigt wird, geben Sie dem Projekt **MyASPApp**, und wählen Sie dann **erstellen**. Wählen Sie als Nächstes **Webanwendung (Model-View-Controller)** , und wählen Sie dann **erstellen**.
+    Geben Sie in Visual Studio 2019 **Strg + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann neue ASP.NET Core Web **Application erstellen**. Benennen Sie im angezeigten Dialogfeld das Projekt **MyASPApp**, und wählen Sie dann **Erstellen**aus. Wählen Sie als Nächstes **Webapplication (Model-View-Controller)** aus, und wählen Sie dann **Erstellen**aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Wählen Sie in Visual Studio 2017 **Datei > Neu > Projekt**, und wählen Sie dann **Visual C# > Web > ASP.NET Core-Webanwendung**. Wählen Sie im Abschnitt ASP.NET Core-Vorlagen **Webanwendung (Model-View-Controller)** . Stellen Sie sicher, dass ASP.NET Core 2.1 ausgewählt ist, **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierung** nastaven NA hodnotu **keine Authentifizierung**. Nennen Sie das Projekt **MyASPApp**.
+    Wählen Sie in Visual Studio 2017 **Datei > Neues >-Projekt**aus, und wählen Sie dann **Visual C- > Web > ASP.NET Core Web Application aus.** Wählen Sie im Abschnitt ASP.NET Core-Vorlagen **Webapplication (Model-View-Controller)** aus. Stellen Sie sicher, dass ASP.NET Core 2.1 ausgewählt ist, dass **Docker-Support aktivieren** nicht ausgewählt ist und dass **die Authentifizierung** auf **Keine Authentifizierung**festgelegt ist. Benennen Sie das Projekt **MyASPApp**.
     ::: moniker-end
 
-1. Öffnen Sie die Datei About.cshtml.cs und Festlegen eines Haltepunkts in der `OnGet` Methode (in älteren Vorlagen, stattdessen "HomeController.cs" öffnen, und legen Sie den Haltepunkt der `About()` Methode).
+1. Öffnen Sie die About.cshtml.cs Datei, `OnGet` und legen Sie einen Haltepunkt in der Methode `About()` fest (in älteren Vorlagen öffnen Sie stattdessen HomeController.cs und legen Sie den Haltepunkt in der Methode fest).
 
-## <a name="remote_debug_azure_app_service"></a> Remotedebuggen von ASP.NET Core in Azure App Service
+## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a>Remote-Debug-ASP.NET Core in einem Azure App Service
 
-In Visual Studio können Sie schnell veröffentlichen und Debuggen Ihrer app auf eine vollständig bereitgestellte Instanz von IIS. Allerdings der IIS-Konfiguration ist voreingestellt, und es kann nicht angepasst werden. Ausführlichere Anweisungen finden Sie unter [bereitstellen eine ASP.NET Core-Web-app in Azure mithilfe von Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Wenn Sie die Möglichkeit zum Anpassen von IIS benötigen, versuchen Sie es Debuggen auf einem [Azure-VM](#remote_debug_azure_vm).)
+In Visual Studio können Sie Ihre App schnell veröffentlichen und auf einer vollständig bereitgestellten IIS-Instanz debuggen. Die Konfiguration von IIS ist jedoch voreingestellt und kann nicht angepasst werden. Ausführlichere Anweisungen finden Sie unter [Bereitstellen einer ASP.NET Core-Web-App in Azure mithilfe von Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Wenn Sie iIS anpassen können, versuchen Sie, auf einer [Azure-VM](#remote_debug_azure_vm)zu debuggen.)
 
-#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Zum Bereitstellen der app und Remotedebuggen mit Server-Explorer
+#### <a name="to-deploy-the-app-and-remote-debug-using-cloud-explorer"></a>So stellen Sie die App und das Remote-Debugmit mithilfe von Cloud Explorer bereit
 
-1. Klicken Sie in Visual Studio mit der rechten Maustaste des Projektknotens, und wählen Sie **veröffentlichen**.
+1. Klicken Sie in Visual Studio mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Veröffentlichen**aus.
 
-    Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Klicken Sie auf **neues Profil**.
+    Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Klicken Sie auf **Neues Profil**.
 
-1. Wählen Sie **Azure App Service** aus der **veröffentlichen** wählen Sie im Dialogfeld **neu erstellen**, und befolgen Sie die Anweisungen zum Veröffentlichen.
+1. Wählen Sie **Azure App Service** im Dialogfeld **Veröffentlichen** aus, wählen Sie **Neu erstellen**aus, und folgen Sie den Anweisungen zum Erstellen eines Profils.
 
     Ausführliche Anweisungen finden Sie unter [Veröffentlichen einer ASP.NET Core-App in Azure mit Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
     ![Veröffentlichen in Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
 
-1. Open **Server-Explorer** (**Ansicht** > **Server-Explorer**) mit der rechten Maustaste auf die App Service-Instanz, und wählen Sie **-Debuggeranfügen**.
+1. Wählen Sie im Fenster Veröffentlichen die Option **Konfiguration bearbeiten** aus, wechseln Sie zu einer Debugkonfiguration, und wählen Sie dann **Veröffentlichen**aus.
 
-1. Klicken Sie in der laufenden Anwendung ASP.NET auf den Link, um die **zu** Seite.
+   Zum Debuggen der App ist eine Debugkonfiguration erforderlich.
+
+1. Öffnen Sie **Cloud Explorer** (**View** > **Cloud Explorer**), klicken Sie mit der rechten Maustaste auf die App Service-Instanz und wählen **Debugger anfügen**.
+
+   Wenn Cloud Explorer nicht verfügbar ist, öffnen Sie stattdessen den Server-Explorer. Klicken Sie dann mit der rechten Maustaste auf die App Service-Instanz im Server-Explorer, und wählen Sie **Debugger anfügen**.
+
+1. Klicken Sie in der ausgeführten ASP.NET Anwendung auf den Link zur Seite **Über.**
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
 
-    Das ist alles! Die restlichen Schritte in diesem Thema gelten für die remote-Debuggen auf einer Azure-VM.
+    Das ist alles! Die restlichen Schritte in diesem Thema gelten für das Remotedebuggen auf einer Azure-VM.
 
-## <a name="remote_debug_azure_vm"></a> Remotedebuggen von ASP.NET Core in Azure-VMs
+## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a>Remotedebug-ASP.NET Core auf einer Azure-VM
 
-Sie können erstellen ein Azure-VM für Windows Server und dann installieren und Konfigurieren von IIS und die erforderlichen Softwarekomponenten. Dies dauert länger als eine Bereitstellung in Azure App Service und erfordert, dass Sie die restlichen Schritte in diesem Tutorial ausführen.
+Sie können eine Azure-VM für Windows Server erstellen und dann IIS und die anderen erforderlichen Softwarekomponenten installieren und konfigurieren. Dies nimmt mehr Zeit in Anspruch als die Bereitstellung in einem Azure App Service und erfordert, dass Sie die verbleibenden Schritte in diesem Tutorial ausführen.
 
-Diese Prozeduren haben auf diese Serverkonfigurationen getestet:
+Diese Verfahren wurden an diesen Serverkonfigurationen getestet:
 * Windows Server 2012 R2 und IIS 8
-* WindowsServer 2016 und IIS 10
+* Windows Server 2016 und IIS 10
 
-### <a name="app-already-running-in-iis-on-the-azure-vm"></a>Die App bereits in IIS auf virtuellen Azure-Computer ausgeführt?
+### <a name="app-already-running-in-iis-on-the-azure-vm"></a>App, die bereits in IIS auf der Azure-VM ausgeführt wird?
 
-Dieser Artikel enthält Schritte zum Einrichten einer Standardkonfiguration von IIS unter Windows Server und das Bereitstellen der app aus Visual Studio. Diese Schritte sind enthalten, um sicherzustellen, dass der Server verfügt über die erforderlichen Komponenten installiert, die, dass die app ordnungsgemäß ausgeführt werden kann und Sie bereit, remote zu debuggen sind.
+Dieser Artikel enthält Schritte zum Einrichten einer grundlegenden Konfiguration von IIS auf Windows-Server und zum Bereitstellen der App über Visual Studio. Diese Schritte sind enthalten, um sicherzustellen, dass auf dem Server die erforderlichen Komponenten installiert sind, dass die App ordnungsgemäß ausgeführt werden kann und dass Sie zum Remotedebuggen bereit sind.
 
-* Wenn Ihre app in IIS ausgeführt wird und Sie wollen den Remotedebugger herunterladen und mit dem Debuggen beginnen, navigieren zu [herunterladen und installieren Sie die Remoteserver-Verwaltungstools unter Windows Server](#BKMK_msvsmon).
+* Wenn Ihre App in IIS ausgeführt wird und Sie nur den Remotedebugger herunterladen und mit dem Debuggen beginnen möchten, gehen Sie zu [Herunterladen und Installieren der Remotetools auf Windows Server](#BKMK_msvsmon).
 
-* Wenn Sie Hilfe, um sicherzustellen, dass Ihre app bereitgestellt eingerichtet wurde, anzeigen möchten und ordnungsgemäß in IIS ausgeführt, damit Sie debuggen können, befolgen alle Schritte in diesem Thema.
+* Wenn Sie helfen möchten, um sicherzustellen, dass Ihre App in IIS eingerichtet, bereitgestellt und ordnungsgemäß ausgeführt wird, damit Sie debuggen können, führen Sie alle Schritte in diesem Thema aus.
 
-  * Bevor Sie beginnen, befolgen Sie die Schritte unter [installieren und Ausführen von IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Bevor Sie beginnen, führen Sie alle unter Installieren beschriebenen Schritte [aus, und führen Sie IIS aus.](/azure/virtual-machines/windows/quick-create-portal)
 
-  * Beim Öffnen von Port 80 in der Netzwerksicherheitsgruppe auch öffnen, die [korrigieren Port](#bkmk_openports) für den Remotedebugger (4024 oder 4022). Auf diese Weise müssen Sie es später noch Mal zu öffnen.
+  * Wenn Sie Port 80 in der Netzwerksicherheitsgruppe öffnen, öffnen Sie auch den [richtigen Port](#bkmk_openports) für den Remotedebugger (4024 oder 4022). Auf diese Weise müssen Sie es später nicht öffnen.
 
-### <a name="update-browser-security-settings-on-windows-server"></a>Browser-Sicherheitseinstellungen auf Windows Server aktualisieren
+### <a name="update-browser-security-settings-on-windows-server"></a>Aktualisieren der Browsersicherheitseinstellungen auf Windows Server
 
-Wenn die verstärkte Sicherheitskonfiguration in Internet Explorer aktiviert ist (er ist standardmäßig aktiviert), müssen Sie einige Domänen als vertrauenswürdige Sites, um einige der Web-Server-Komponenten herunterladen können hinzufügen. Der vertrauenswürdigen Sites hinzufügen, indem Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Websites**. Fügen Sie den folgenden Domänen hinzu.
+Wenn die erweiterte Sicherheitskonfiguration in Internet Explorer aktiviert ist (standardmäßig aktiviert), müssen Sie möglicherweise einige Domänen als vertrauenswürdige Sites hinzufügen, damit Sie einige der Webserverkomponenten herunterladen können. Fügen Sie die vertrauenswürdigen Sites hinzu, indem Sie zu **Internetoptionen > Sicherheit > vertrauenswürdige Sites > Sites**gehen. Fügen Sie die folgenden Domänen hinzu.
 
 - microsoft.com
 - go.microsoft.com
-- 0download.microsoft.com
+- download.microsoft.com
 - iis.net
 
-Wenn Sie die Software herunterladen, erhalten Sie möglicherweise Anforderungen an die Berechtigung zum Laden von verschiedenen Website-Skripts und Ressourcen zu erteilen. Einige dieser Ressourcen sind nicht erforderlich, jedoch zur Vereinfachung des Prozesses, klicken Sie auf **hinzufügen** Aufforderung.
+Wenn Sie die Software herunterladen, erhalten Sie möglicherweise Anforderungen, die die Berechtigung zum Laden verschiedener Websiteskripts und -ressourcen erteilen. Einige dieser Ressourcen sind nicht erforderlich, aber um den Prozess zu vereinfachen, klicken Sie auf **Hinzufügen,** wenn Sie dazu aufgefordert werden.
 
-### <a name="install-aspnet-core-on-windows-server"></a>Installieren von ASP.NET Core unter WindowsServer
+### <a name="install-aspnet-core-on-windows-server"></a>Installieren ASP.NET Core auf Windows Server
 
-1. Installieren Sie das Paket [.NET Core Windows Server Hosting](https://aka.ms/dotnetcore-2-windowshosting) auf dem Hostsystem. Das Paket installiert die .NET Core-Runtime, die .NET Core-Bibliothek und das ASP.NET Core-Modul. Weitere ausführlichen Anweisungen finden Sie [Publishing to IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Installieren Sie das Paket [.NET Core Windows Server Hosting](https://aka.ms/dotnetcore-2-windowshosting) auf dem Hostsystem. Das Paket installiert die .NET Core-Runtime, die .NET Core-Bibliothek und das ASP.NET Core-Modul. Ausführlichere Anweisungen finden Sie unter [Veröffentlichen in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Wenn das System nicht über eine Internetverbindung verfügt, beziehen und installieren Sie *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* , bevor Sie das Paket „.NET Core Windows Server Hosting“ installieren.
+    > Wenn das System nicht über eine Internetverbindung verfügt, beziehen und installieren Sie *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*, bevor Sie das Paket „.NET Core Windows Server Hosting“ installieren.
 
 3. Starten Sie das System neu, oder führen Sie über eine Eingabeaufforderung **net stop was /y** gefolgt von **net start w3svc** aus, um eine Änderung am Systempfad zu übernehmen.
 
-## <a name="choose-a-deployment-option"></a>Wählen Sie eine Bereitstellungsoption
+## <a name="choose-a-deployment-option"></a>Auswählen einer Bereitstellungsoption
 
-Wenn Sie Hilfe benötigen, um die app in IIS bereitzustellen, sollten Sie diese Optionen:
+Wenn Sie Hilfe benötigen, um die App auf IIS bereitzustellen, sollten Sie die folgenden Optionen in Betracht ziehen:
 
-* Erstellen eine Datei mit veröffentlichungseinstellungen in IIS, und importieren die Einstellungen in Visual Studio bereitstellen. In einigen Szenarien ist dies eine schnelle Möglichkeit zum Bereitstellen Ihrer app. Wenn Sie die Datei mit veröffentlichungseinstellungen erstellen, werden Berechtigungen automatisch in IIS festgelegt.
+* Bereitstellen, indem Sie eine Veröffentlichungseinstellungsdatei in IIS erstellen und die Einstellungen in Visual Studio importieren. In einigen Szenarien ist dies eine schnelle Möglichkeit, Ihre App bereitzustellen. Wenn Sie die Veröffentlichungseinstellungsdatei erstellen, werden Berechtigungen automatisch in IIS eingerichtet.
 
-* Veröffentlichen in einen lokalen Ordner, und Kopieren der Ausgabe von einer bevorzugten Methode in einem vorbereiteten app-Ordner auf IIS bereitstellen.
+* Bereitstellen durch Veröffentlichen in einem lokalen Ordner und Kopieren der Ausgabe durch eine bevorzugte Methode in einen vorbereiteten App-Ordner auf IIS.
 
-## <a name="optional-deploy-using-a-publish-settings-file"></a>(Optional) Bereitstellen Sie über eine Datei mit veröffentlichungseinstellungen
+## <a name="optional-deploy-using-a-publish-settings-file"></a>(Optional) Bereitstellen mithilfe einer Veröffentlichungseinstellungsdatei
 
-Verwenden Sie diese Option erstellen Sie eine Datei mit veröffentlichungseinstellungen aus, und klicken Sie in Visual Studio importieren.
+Mit dieser Option können Sie eine Veröffentlichungseinstellungsdatei erstellen und in Visual Studio importieren.
 
 > [!NOTE]
-> Diese Methode der Bereitstellung wird die Web Deploy verwendet. Wenn Sie Web Deploy manuell in Visual Studio zu konfigurieren, anstatt die Einstellungen importieren möchten, können Sie Web bereitstellen 3.6 anstelle von Web-bereitstellen-3.6 für Hostserver installieren. Jedoch, wenn Sie Web Deploy manuell konfigurieren, Sie müssen sicherstellen, dass ein app-Ordner auf dem Server mit den richtigen Werten und die Berechtigungen konfiguriert ist (siehe [ASP.NET-Website konfigurieren](#BKMK_deploy_asp_net)).
+> Diese Bereitstellungsmethode verwendet Web Deploy. Wenn Sie Web Deploy manuell in Visual Studio konfigurieren möchten, anstatt die Einstellungen zu importieren, können Sie Web Deploy 3.6 anstelle von Web Deploy 3.6 für Hostingserver installieren. Wenn Sie Web Deploy jedoch manuell konfigurieren, müssen Sie sicherstellen, dass ein App-Ordner auf dem Server mit den richtigen Werten und Berechtigungen konfiguriert ist (siehe [Konfigurieren ASP.NET Website](#BKMK_deploy_asp_net)).
 
-### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Installieren und Konfigurieren von Web Deploy für Hostserver unter Windows Server
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Installieren und Konfigurieren von Web Deploy für Hostingserver auf Windows Server
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
@@ -159,88 +165,88 @@ Verwenden Sie diese Option erstellen Sie eine Datei mit veröffentlichungseinste
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Nachdem die App erfolgreich bereitgestellt wurde, sollte sie automatisch gestartet werden. Wenn die app aus Visual Studio nicht gestartet wird, starten Sie die app in IIS. Für ASP.NET Core müssen Sie sicherstellen, dass das Feld „Anwendungspool“ für **DefaultAppPool** auf **Kein verwalteter Code** festgelegt ist.
+Nachdem die App erfolgreich bereitgestellt wurde, sollte sie automatisch gestartet werden. Wenn die App nicht in Visual Studio gestartet wird, starten Sie die App in IIS. Für ASP.NET Core müssen Sie sicherstellen, dass das Feld „Anwendungspool“ für **DefaultAppPool** auf **Kein verwalteter Code** festgelegt ist.
 
-1. In der **Einstellungen** (Dialogfeld), aktivieren Sie Debuggen, indem Sie auf **Weiter**, wählen Sie eine **Debuggen** Konfiguration, und wählen Sie dann **entfernen weiterer Dateien am Ziel** unter der **-Datei veröffentlichen** Optionen.
+1. Aktivieren Sie im Dialogfeld **Einstellungen** das Debuggen, indem Sie auf **Weiter**klicken , eine **Debugkonfiguration** auswählen, und wählen Sie dann unter den Optionen **Dateiveröffentlichung** **zusätzliche Dateien am Ziel entfernen** aus.
 
     > [!NOTE]
-    > Wenn Sie eine Releasekonfiguration auswählen, deaktivieren Sie Debuggen in der *"Web.config"* -Datei, wenn Sie veröffentlichen.
+    > Wenn Sie eine Release-Konfiguration auswählen, deaktivieren Sie das Debuggen in der Datei *web.config,* wenn Sie veröffentlichen.
 
-1. Klicken Sie auf **speichern** , und klicken Sie dann die app erneut veröffentlichen.
+1. Klicken Sie auf **Speichern,** und veröffentlichen Sie die App erneut.
 
-## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(Optional) Durch die Veröffentlichung in einen lokalen Ordner bereitstellen
+## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(Optional) Bereitstellen durch Veröffentlichen in einem lokalen Ordner
 
-Sie können diese Option verwenden, um Ihre app bereitzustellen, wenn Sie die app in IIS mithilfe von Powershell RoboCopy kopieren möchten, oder Sie die Dateien manuell kopieren möchten.
+Sie können diese Option verwenden, um Ihre App bereitzustellen, wenn Sie die App mithilfe von PowerShell, RoboCopy oder manuell auf IIS kopieren möchten.
 
-### <a name="BKMK_deploy_asp_net"></a> Konfigurieren der ASP.NET-Website auf dem Windows Server-computer
+### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Konfigurieren der ASP.NET Core-Website auf dem Windows Server-Computer
 
-Beim Importieren von veröffentlichungseinstellungen, können Sie diesen Abschnitt überspringen.
+Wenn Sie Veröffentlichungseinstellungen importieren, können Sie diesen Abschnitt überspringen.
 
 1. Öffnen Sie den **Internetinformationsdienste-Manager (IIS)** , und navigieren Sie zu **Websites**.
 
 2. Klicken Sie mit der rechten Maustaste auf den Knoten **Standardwebsite** , und wählen Sie **Anwendung hinzufügen**aus.
 
-3. Legen Sie die **Alias** Feld **MyASPApp** und das Feld "Anwendungspool" auf **kein verwalteter Code**. Legen Sie die **physischer Pfad** zu **C:\Publish** (wird später Bereitstellungsszenario ASP.NET-Projekt).
+3. Legen Sie das **Alias-Feld** auf **MyASPApp** und das Feld Anwendungspool auf **Kein verwalteter Code**fest. Legen Sie den **physischen Pfad** auf **C:-Veröffentlichung** fest (wo Sie später das ASP.NET Core-Projekt bereitstellen werden).
 
-4. Wählen Sie den Standort ausgewählt im IIS-Manager, **Berechtigungen bearbeiten**, und stellen Sie sicher, diese IUSR, IIS_IUSRS oder der Benutzer, die für den Anwendungspool ein autorisierter Benutzer mit Berechtigungen für Lesen & ausführen wird konfiguriert.
+4. Wenn die im IIS-Manager ausgewählte Site ausgewählt ist, wählen Sie **Berechtigungen bearbeiten**aus, und stellen Sie sicher, dass IUSR, IIS_IUSRS oder der für den Anwendungspool konfigurierte Benutzer ein autorisierter Benutzer mit Lese-& Ausführungsrechten ist.
 
-    Wenn Sie einen dieser Benutzer mit Zugriff nicht angezeigt wird, wechseln Sie über die Schritte zum Hinzufügen des IUSR-Konto als Benutzer mit Berechtigungen für Lesen & ausführen.
+    Wenn einer dieser Benutzer nicht mit Zugriff angezeigt wird, führen Sie Schritte durch, um IUSR als Benutzer mit Lese- & Ausführungsrechten hinzuzufügen.
 
-### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Optional) Veröffentlichen und Bereitstellen der app in einen lokalen Ordner durch die Veröffentlichung von Visual Studio
+### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Optional) Veröffentlichen und Bereitstellen der App durch Veröffentlichen in einem lokalen Ordner aus Visual Studio
 
-Wenn Sie Web Deploy nicht verwenden, müssen Sie veröffentlichen und Bereitstellen der app, die über das Dateisystem oder andere Tools. Sie können zunächst erstellen Sie ein Paket mit dem Dateisystem, und klicken Sie dann entweder das Paket entweder manuell oder mit anderen Tools wie XCopy, RoboCopy oder PowerShell. In diesem Abschnitt wird davon ausgegangen, dass Sie das Paket manuell kopieren, wenn Sie Web Deploy nicht verwenden werden.
+Wenn Sie Web Deploy nicht verwenden, müssen Sie die App mit dem Dateisystem oder anderen Tools veröffentlichen und bereitstellen. Sie können zunächst ein Paket mit dem Dateisystem erstellen und dann das Paket entweder manuell bereitstellen oder andere Tools wie PowerShell, RoboCopy oder XCopy verwenden. In diesem Abschnitt gehen wir davon aus, dass Sie das Paket manuell kopieren, wenn Sie Web Deploy nicht verwenden.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="BKMK_msvsmon"></a> Herunterladen Sie und installieren Sie die Remoteserver-Verwaltungstools unter Windows Server
+### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Herunterladen und Installieren der Remotetools auf Windows Server
 
-Laden Sie die Version der Remotetools, die Ihrer Version von Visual Studio entspricht.
+Laden Sie die Version der Remotetools herunter, die Ihrer Version von Visual Studio entsprechen.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="BKMK_setup"></a> Richten Sie den Remotedebugger unter Windows Server
+### <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Einrichten des Remotedebuggers auf Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> Wenn Sie zum Hinzufügen von Berechtigungen für weitere Benutzer: des Authentifizierungsmodus ändern oder Portnummer für den Remotedebugger, finden Sie unter [Konfigurieren des Remotedebuggers](../debugger/remote-debugging.md#configure_msvsmon).
+> Wenn Sie Berechtigungen für weitere Benutzer hinzufügen müssen, den Authentifizierungsmodus oder die Portnummer für den Remotedebugger ändern müssen, finden Sie weitere Informationen unter [Konfigurieren des Remotedebuggers](../debugger/remote-debugging.md#configure_msvsmon).
 
-### <a name="BKMK_attach"></a> Anfügen an die ASP.NET-Anwendung vom Visual Studio-Computer aus
+### <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>An den ASP.NET Anwendung vom Visual Studio-Computer anfügen
 
-1. Öffnen Sie auf dem Computer Visual Studio die Projektmappe, die Sie debuggen möchten (**MyASPApp** , wenn Sie die Schritte in diesem Artikel folgen).
-2. Klicken Sie in Visual Studio auf **Debuggen > an den Prozess anhängen** (Strg + Alt + P).
+1. Öffnen Sie auf dem Visual Studio-Computer die Lösung, die Sie debuggen möchten **(MyASPApp,** wenn Sie die Schritte in diesem Artikel ausführen).
+2. Klicken Sie in Visual Studio auf **Debuggen > an Den Prozess anfügen** (Strg + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017 und höheren Versionen, können Sie erneut an den gleichen Prozess, die Sie zuvor mit angefügte Anfügen **Debuggen > an Prozess anfügen...** (Umschalt + Alt + P).
+    > In Visual Studio 2017 und neueren Versionen können Sie mit **Debug-> Neuattach-to-Process...** (Shift+Alt+P) erneut an denselben Prozess anfügen, an den Sie zuvor angefügt haben.
 
-3. Legen Sie auf das Feld "Qualifizierer"  **\<Remotecomputernamen >** , und drücken Sie **EINGABETASTE**.
+3. Legen Sie das Feld Qualifizierer auf ** \<den Namen des Remotecomputers>** fest, und drücken **Sie die Eingabetaste**.
 
-    Stellen Sie sicher, dass fügt Visual Studio den erforderlichen Port auf den Namen des Computers angezeigt wird, das Format:  **\<Name des Remotecomputers >: Port**
+    Stellen Sie sicher, dass Visual Studio dem Computernamen den erforderlichen Port hinzufügt, der im Format angezeigt wird: ** \<Remotecomputername>:Port**
 
     ::: moniker range=">=vs-2019"
-    Visual Studio-2019, sollte Sie  **\<Name des Remotecomputers >: 4024**
+    In Visual Studio 2019 sollte der Name des ** \<Remotecomputers>:4024 angezeigt werden.**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    In Visual Studio 2017 sollte  **\<Name des Remotecomputers >: 4022**
+    In Visual Studio 2017 sollte der ** \<Name des Remotecomputers>:4022 angezeigt werden.**
     ::: moniker-end
-    Der Port ist erforderlich. Wenn Sie die Nummer des Ports nicht angezeigt wird, fügen Sie sie manuell hinzu.
+    Der Port ist erforderlich. Wenn die Portnummer nicht angezeigt wird, fügen Sie sie manuell hinzu.
 
 4. Klicken Sie auf **Aktualisieren**.
     Im Fenster sollten einige Prozesse **Verfügbare Prozesse** angezeigt werden.
 
-    Wenn alle Prozesse, die nicht angezeigt wird, versuchen Sie den Namen des Remotecomputers (der Port ist erforderlich.) anstelle der IP-Adresse. Sie können `ipconfig` in einer Befehlszeile, um die IPv4-Adresse zu erhalten.
+    Wenn keine Prozesse angezeigt werden, versuchen Sie, die IP-Adresse anstelle des Remotecomputernamens zu verwenden (der Port ist erforderlich). Sie können `ipconfig` in einer Befehlszeile die IPv4-Adresse abrufen.
 
-    Wenn Sie verwenden möchten die **finden** Schaltfläche müssen Sie möglicherweise [Öffnen von UDP-Port 3702](#bkmk_openports) auf dem Server.
+    Wenn Sie die **Schaltfläche Suchen** verwenden möchten, müssen Sie möglicherweise [udP-Port 3702](#bkmk_openports) auf dem Server öffnen.
 
 5. Aktivieren Sie  **Prozesse aller Benutzer anzeigen**.
 
-6. Geben Sie den ersten Buchstaben des Prozessnamens Ihres, um Ihre app schnell zu finden.
+6. Geben Sie den ersten Buchstaben Ihres Prozessnamens ein, um Ihre App schnell zu finden.
 
-    * Wählen Sie **dotnet.exe** (für .NET Core)
+    * wählen Sie **dotnet.exe** (für .NET Core)
 
-      Wenn mehrere Prozesse mit **dotnet.exe**, überprüfen Sie die **Benutzernamen** Spalte. In einigen Szenarien die **Benutzernamen** Spalte zeigt den Namen Ihrer app-Pool, z. B. **IIS APPPOOL\DefaultAppPool**. Wenn der App-Pool, eine einfache Möglichkeit zum Identifizieren des richtigen Prozesses wird zum Erstellen eines neuen Namens der App-Pool für die app-Instanz, die Sie debuggen möchten, und klicken Sie dann Sie es im finden der **Benutzernamen** Spalte.
+      Wenn mehrere Prozesse **an dotnet.exe**angezeigt werden, überprüfen Sie die Spalte **Benutzername.** In einigen Szenarien zeigt die Spalte **Benutzername** Ihren App-Poolnamen an, z. B. **IIS APPPOOL-DefaultAppPool**. Wenn der App-Pool angezeigt wird, können Sie den richtigen Prozess einfach identifizieren, wenn Sie einen neuen benannten App-Pool für die App-Instanz erstellen, die Sie debuggen möchten, und sie dann in der Spalte **Benutzername** leicht finden.
 
-    * In einigen Szenarien IIS möglicherweise den Namen Ihrer app in der Prozessliste z. B. **MyASPApp.exe**. Sie können stattdessen diesen Prozess anfügen.
+    * In einigen IIS-Szenarien finden Sie möglicherweise Ihren App-Namen in der Prozessliste, z. B. **MyASPApp.exe**. Sie können stattdessen an diesen Prozess anfügen.
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -249,31 +255,31 @@ Laden Sie die Version der Remotetools, die Ihrer Version von Visual Studio entsp
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. Klicken Sie auf **Anfügen**aus.
+7. Klicken Sie **auf Anfügen**.
 
-8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>** .
+8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>**.
 
     Es sollte die ASP.NET-Webseite angezeigt werden.
-9. Klicken Sie in der laufenden Anwendung ASP.NET auf den Link, um die **zu** Seite.
+9. Klicken Sie in der ausgeführten ASP.NET Anwendung auf den Link zur Seite **Über.**
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
 
-### <a name="bkmk_openports"></a> Problembehandlung: Öffnen Sie die erforderlichen Ports unter Windows Server
+### <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> Problembehandlung Öffnen Sie die erforderlichen Ports unter Windows Server
 
-In den meisten Setups werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Wenn die Behandlung von Problemen bei der Bereitstellung, und die app hinter einer Firewalls gehostet wird, müssen Sie sicherstellen, dass die richtigen Ports geöffnet sind.
+In den meisten Setups werden die erforderlichen Ports durch die Installation von ASP.NET und des Remote-Debuggers geöffnet. Wenn Sie jedoch Probleme mit der Bereitstellung beheben und die App hinter einer Firewall gehostet wird, müssen Sie möglicherweise überprüfen, ob die richtigen Ports geöffnet sind.
 
-Auf einem virtuellen Azure-Computer müssen Sie Ports durch Öffnen der [Netzwerksicherheitsgruppe](/azure/virtual-machines/windows/nsg-quickstart-portal).
+Auf einer Azure-VM müssen Sie Ports über die [Netzwerksicherheitsgruppe](/azure/virtual-machines/windows/nsg-quickstart-portal)öffnen.
 
 Erforderliche Ports:
 
-* 80 - wird für IIS erforderlich.
+* 80 - Erforderlich für IIS
 ::: moniker range=">=vs-2019"
-* 4024: erforderlich für das Remotedebuggen von Visual Studio-2019 (finden Sie unter [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md) Informationen).
+* 4024 - Erforderlich für Remote-Debugging aus Visual Studio 2019 (weitere Informationen finden Sie unter [Remotedebugger-Portzuweisungen).](../debugger/remote-debugger-port-assignments.md)
 ::: moniker-end
 ::: moniker range="vs-2017"
-* 4022 – erforderlich für das Remotedebuggen von Visual Studio 2017 (finden Sie unter [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md) Informationen).
+* 4022 - Erforderlich für Remote-Debugging aus Visual Studio 2017 (weitere Informationen finden Sie unter [Remotedebugger-Portzuweisungen).](../debugger/remote-debugger-port-assignments.md)
 ::: moniker-end
-* UDP 3702 - erkennungsport (Optional) können Sie die **finden** Schaltfläche beim Anfügen an den Remotedebugger in Visual Studio.
+* Mit dem UDP 3702 - (Optional) Discovery-Port können Sie die Schaltfläche **Suchen** verwenden, wenn Sie an den Remotedebugger in Visual Studio angefügt werden.
 
-Darüber hinaus müssen diese Ports bereits von der Installation von ASP.NET geöffnet werden:
-- 8172 – (Optional) erforderlich für Web Deploy, um die app aus Visual Studio bereitstellen
+Darüber hinaus sollten diese Ports bereits durch die ASP.NET Installation geöffnet werden:
+- 8172 - (Optional) Erforderlich für Web Deploy zur Bereitstellung der App aus Visual Studio

@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1057743732c8dfc7ebb05bc9cbc108d61b2e234c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597411"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632965"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions-Element (MSBuild)
-Ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien, nicht-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Informationen zu enthalten. Alles innerhalb eines `ProjectExtensions`-Elements wird von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ignoriert.
+
+Ermöglicht es, dass MSBuild-Projektdateien nicht MSBuild-bezogene Informationen enthalten. Der gesamte Inhalt eines `ProjectExtensions`-Elements wird von MSBuild ignoriert.
 
  \<Project> \<ProjectExtensions>
 
@@ -39,24 +40,29 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstec
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
+
  Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
+
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 | Element | Beschreibung |
 | - | - |
-| [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
+| [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer MSBuild-Projektdatei. |
 
 ## <a name="remarks"></a>Hinweise
- Nur ein `ProjectExtensions`-Element kann in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet werden.
+
+ In einer MSBuild-Datei kann nur ein `ProjectExtensions`-Element verwendet werden.
 
 ## <a name="example"></a>Beispiel
+
  Das folgende Codebeispiel zeigt Informationen aus der IDE, die in einem `ProjectExtensions`-Element gespeichert werden.
 
 ```xml
@@ -72,5 +78,6 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstec
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

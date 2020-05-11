@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)'
+title: 'Gewusst wie: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591774"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Anzeigen der Vererbung zwischen Typen im Klassen-Designer
 
-Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im **Klassen-Designer** finden. Informationen zum Erstellen einer Vererbungsbeziehung zwischen zwei Typen (sofern nicht vorhanden) finden Sie unter [How to: Create Inheritance Between Types (Vorgehensweise: Erstellen einer Vererbung zwischen Typen)](how-to-create-inheritance-between-types.md).
+Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im **Klassen-Designer** finden. Informationen zum Erstellen einer Vererbungsbeziehung zwischen zwei Typen finden Sie unter [How to: Create Inheritance Between Types (Class Designer) (Vorgehensweise: Erstellen einer Vererbungsbeziehung zwischen Typen (Klassen-Designer))](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>So finden Sie den Basistyp
 
@@ -45,7 +45,7 @@ Sie können auch mit der rechten Maustaste auf den Typ klicken, dessen Basistyp 
 
 Sie können auch mit der rechten Maustaste auf den Typ klicken, für den Sie die abgeleiteten Typen anzeigen möchten, und wählen Sie **Abgeleitete Klassen anzeigen** oder **Abgeleitete Schnittstellen anzeigen**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: How to: Create associations between types (Vorgehensweise: Erstellen von Zuordnungen zwischen Typen)](how-to-create-associations-between-types.md)
+- [Vorgehensweise: Erstellen von Zuordnungen zwischen Typen](how-to-create-associations-between-types.md)
 - [Anzeigen von Typen und Beziehungen](designing-and-viewing-classes-and-types.md)

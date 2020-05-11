@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a1eec02adf0a643d7ac7e0da8a75da5328c601b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115142"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Vorgehensweise: Festlegen mehrerer Startprojekte
@@ -32,7 +32,7 @@ In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des 
 
 4. Klicken Sie auf die Option **Mehrere Startprojekte**, und legen Sie die entsprechenden Aktionen fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
 - [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)

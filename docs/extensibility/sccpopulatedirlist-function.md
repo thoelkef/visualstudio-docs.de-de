@@ -1,5 +1,5 @@
 ---
-title: Sccpopulatedirlist-Funktion | Microsoft-Dokumentation
+title: SccPopulateDirList-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720893"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700555"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList-Funktion
-Diese Funktion bestimmt, welche Verzeichnisse und (optional) Dateien in der Quell Code Verwaltung gespeichert werden, wenn eine Liste der zu untersuchenden Verzeichnisse angegeben wird.
+Diese Funktion bestimmt, welche Verzeichnisse und (optional) Dateien in der Quellcodeverwaltung gespeichert werden, wenn eine Liste von Verzeichnissen angezeigt wird, die untersucht werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,40 +38,40 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>Parameter
  pContext
 
-in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
+[in] Der Kontextzeiger für die Quellcodeverwaltung.
 
- ndirs
+ nDirs
 
-in Anzahl der Verzeichnispfade im `lpDirPaths` Array.
+[in] Anzahl der Verzeichnispfade `lpDirPaths` im Array.
 
- lpdirpath
+ lpDirPaths
 
-in Array der Verzeichnispfade, die untersucht werden sollen.
+[in] Array von zu untersuchenden Verzeichnispfaden.
 
- pfnauffüllen
+ pfnPopulate
 
-in Rückruffunktion, die für jeden Verzeichnispfad und (optional) filename in `lpDirPaths` aufgerufen werden soll (Weitere Informationen finden Sie unter [popdirlistfunc](../extensibility/popdirlistfunc.md) ).
+[in] Rückruffunktion zum Aufrufen für jeden Verzeichnispfad und (optional) Dateinamen in `lpDirPaths` (Details siehe [POPDIRLISTFUNC).](../extensibility/popdirlistfunc.md)
 
- pvcallerdata
+ pvCallerData
 
-in Der Wert, der unverändert an die Rückruffunktion übermittelt werden soll.
+[in] Wert, der unverändert an die Rückruffunktion übergeben werden soll.
 
- f-Optionen
+ Foptions
 
-in Eine Kombination von Werten, die die Verarbeitung der Verzeichnisse steuern (Weitere Informationen finden Sie im Abschnitt "Auffüllen von Auflistungs Flags" von [Bitflags, die von bestimmten Befehlen](../extensibility/bitflags-used-by-specific-commands.md) für mögliche Werte verwendet werden).
+[in] Eine Kombination von Werten, die steuern, wie die Verzeichnisse verarbeitet werden (siehe Abschnitt "PopulateDirList-Flags" von [Bitflags,](../extensibility/bitflags-used-by-specific-commands.md) die von bestimmten Befehlen verwendet werden, für mögliche Werte).
 
 ## <a name="return-value"></a>Rückgabewert
- Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Der Vorgang wurde erfolgreich abgeschlossen.|
-|SCC_E_UNKNOWNERROR|Es ist ein Fehler aufgetreten.|
+|SCC_E_UNKNOWNERROR|Ein Fehler ist aufgetreten.|
 
-## <a name="remarks"></a>Hinweise
- Nur die Verzeichnisse und (optional) Dateinamen, die sich tatsächlich im Quellcodeverwaltungs-Repository befinden, werden an die Rückruffunktion übermittelt.
+## <a name="remarks"></a>Bemerkungen
+ Nur die Verzeichnisse und (optional) Dateinamen, die sich tatsächlich im Quellcodeverwaltungs-Repository befinden, werden an die Rückruffunktion übergeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
 - [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)
 - [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)

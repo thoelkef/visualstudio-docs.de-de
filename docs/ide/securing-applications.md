@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595448"
 ---
 # <a name="secure-applications"></a>Sichern von Anwendungen
@@ -38,7 +38,7 @@ Die Sicherheit ist im Buildprozess auch ein wichtiger Aspekt. Einige zusätzlich
 - [Dotfuscator](dotfuscator/index.md) ist kostenlos und schützt .NET-Assemblys vor Reverse Engineering und nicht autorisierter Verwendung (z.B. nicht autorisiertes Debuggen).
 - Das [Signieren mit starkem Namen](managing-assembly-and-manifest-signing.md) kann zum eindeutigen Identifizieren von Softwarekomponenten verwendet werden kann und das Spoofing von Namen verhindern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sicherheit in .NET](/dotnet/standard/security/index)
 - [Azure-Sicherheit](/azure/security/)

@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73715875"
 ---
 # <a name="create-razor-web-apps"></a>Erstellen von Razor-Web-Apps
@@ -74,6 +74,6 @@ Diese Datei enthält den Einstiegspunkt für das Programm. Weitere Informationen
 
 Diese Datei enthält Code, mit dem das App-Verhalten konfiguriert wird, z. B., ob die App Zustimmung für Cookies erfordert. Weitere Informationen finden Sie unter [Anwendungsstart in ASP.NET Core](/aspnet/core/fundamentals/startup).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 Eine umfassendere Anleitung zum Erstellen von Razor-Web-Apps finden Sie unter [Einführung in Razor Pages in ASP.NET Core](/aspnet/core/razor-pages/index).

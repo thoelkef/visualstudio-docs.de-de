@@ -44,9 +44,9 @@
                   href: artboard-modifier-keys-in-blend.md
                 - name: Stifttool-Zusatztasten
                   href: pen-tool-modifier-keys-in-blend.md
-                - name: Zusatztasten für Direktauswahlwerkzeug
+                - name: Direktauswahlwerkzeug-Zusatztasten
                   href: direct-selection-tool-modifier-keys-in-blend.md
-            - name: Produkte und Dienste für Barrierefreiheit
+            - name: Barrierefreie Produkte und Dienste
               href: accessibility-products-and-services-blend.md
         - name: Tastenkombinationen für den XAML-Designer in Visual Studio und Blend für Visual Studio
           href: keyboard-shortcuts-for-xaml-designer.md
@@ -82,21 +82,21 @@
                       items:
                         - name: Dynamische Eigenschaften der XAttribute-Klasse
                           href: xattribute-class-dynamic-properties.md
-                        - name: Wert
+                        - name: value
                           href: value-xattribute-dynamic-property.md
                     - name: Dynamische Eigenschaften der XElement-Klasse
                       items:
                         - name: Dynamische Eigenschaften der XElement-Klasse
                           href: xelement-class-dynamic-properties.md
-                        - name: Attribut
+                        - name: attribute
                           href: attribute-xelement-dynamic-property.md
                         - name: Element
                           href: element-xelement-dynamic-property.md
-                        - name: Elements
+                        - name: Elemente
                           href: elements-xelement-dynamic-property.md
-                        - name: Nachfolgerelemente
+                        - name: Descendants
                           href: descendants-xelement-dynamic-property.md
-                        - name: Wert
+                        - name: value
                           href: value-xelement-dynamic-property.md
                         - name: Xml
                           href: xml-xelement-dynamic-property.md

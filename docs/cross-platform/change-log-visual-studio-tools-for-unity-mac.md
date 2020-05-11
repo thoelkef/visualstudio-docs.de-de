@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771542"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232918"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="2520"></a>2.5.2.0
+
+Veröffentlichung: 23. März 2020
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Debugger:**
+
+  - Die Registrierung von Threads bei Anfügung wurde behoben.
+
+## <a name="2510"></a>2.5.1.0
+
+Veröffentlichung: 3. März 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) hinzugefügt. Private Methoden, die mit Invoke, InvokeRepeating, StartCoroutine oder StopCoroutine verwendet werden, sollten nicht als nicht verwendet gekennzeichnet werden.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Die OnDrawGizmos/OnDrawGizmosSelected-Dokumentation wurde behoben.
+
+- **Auswertung:**
+
+  - Die Lambdaargumentuntersuchung wurde behoben.
+
+## <a name="2501"></a>2.5.0.1
+
+Veröffentlichung: 19. Februar 2020
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Ein Fehler wurde behoben, durch den die falsche Nachrichtensignatur bei der [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)-Diagnose überprüft wurde. Beim Untersuchen von Typen mit mehreren Vererbungsstufen kann diese Diagnose mit der folgenden Meldung fehlschlagen: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+
+## <a name="2500"></a>2.5.0.0
+
+Veröffentlichung: 22. Januar 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Die Unterstützung für HLSL-Dateien wurde hinzugefügt.
+  
+  - In der Benutzeroberfläche wird ein neues Dialogfeld für neue Ordner verwendet.
+  
+  - In den Einstellungen wird ein neues zugänglicheres Eigenschaftsraster verwendet.
+
+  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) hinzugefügt. Private Felder mit dem `SerializeField`-Attribut sollten nicht als nicht verwendet gekennzeichnet werden.
+
+  - Eine Unterdrückung wurde zu [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) hinzugefügt. Felder mit dem `SerializeField`-Attribut sollten nicht als nicht zugewiesen gekennzeichnet werden.  
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Die Projektgenerierung wurde behoben (`GenerateTargetFrameworkMonikerAttribute`-Ziel wurde nicht immer ordnungsgemäß ermittelt).
+
+- **Auswertung:**
+
+  - Die Zeichenfolgenauswertung wurde behoben (nicht mit ToString()-Aufrufen).
 
 ## <a name="2420"></a>2.4.2.0
 
@@ -277,7 +345,7 @@ Veröffentlichung: 20. März 2019
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Beibehalten externer Eigenschaften bei Verarbeitung der Projektmappendatei.
   
@@ -309,7 +377,7 @@ Veröffentlichung: 5. März 2019
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Die Compilerwarnungen `CS0649` und `IDE0051` in Unity-Projekten, die diese Nachrichten erstellt haben, werden nun automatisch unterdrückt.
 
@@ -430,7 +498,7 @@ Veröffentlichung: 26. Juli 2018
 
   - Ein Schreibfehler in der OnApplicationFocus-Meldung wurde korrigiert.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
 
@@ -474,7 +542,7 @@ Veröffentlichung: 5. März 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Es wurde Unterstützung für den neuen Projektgenerator in Unity 2018.1 hinzugefügt.
 
@@ -488,7 +556,7 @@ Veröffentlichung: 24. Januar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Erkennung von Mono-Version korrigiert.
 
@@ -514,7 +582,7 @@ Veröffentlichung: 13. Dezember 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Unterstützung für .NET Standard wurde hinzugefügt.
 
@@ -562,7 +630,7 @@ Veröffentlichung: 23. Oktober 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrigiert: Eine zusätzliche DLL-Erweiterung wird dem Assemblydateinamen fälschlicherweise hinzugefügt.
 
@@ -574,7 +642,7 @@ Veröffentlichung: 23. Oktober 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Zusätzliche Unterstützung für .NET 4.6-Profil.
 
@@ -588,7 +656,7 @@ Veröffentlichung: 8. August 2017
 
   - Starten Sie das Dialogfeld „An den Prozess anhängen“, wenn Sie nicht sicher sind, an welche Unity-Version angehängt werden soll.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Aktivieren Sie immer den unsafe-Kompilierungsschalter, wenn Unity 5.6 verwendet wird.
 
@@ -612,7 +680,7 @@ Veröffentlichung: 12. Juli 2017
 
   - Es wurde Unterstützung für das Anhängen an Player und Editors über das Fenster „An den Prozess anhängen“ hinzugefügt.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Fehlerhafte Assembly-Namensverweise bei mcs.rsp Dateien behoben.
 

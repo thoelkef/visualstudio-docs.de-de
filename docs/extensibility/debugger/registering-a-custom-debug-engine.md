@@ -1,38 +1,38 @@
 ---
-title: Registrieren einer benutzerdefiniertes Debug-Engine | Microsoft-Dokumentation
+title: Registrieren einer benutzerdefinierten Debug-Engine | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90400a9bf750eb80e40d6558fed382e18e7824ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316046"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713222"
 ---
-# <a name="register-a-custom-debug-engine"></a>Registrieren einer benutzerdefinierten Debug-engine
-Die Debug-Engine muss registrieren sich selbst als eine Klassenfactory, die folgenden COM-Konventionen als auch mit Visual Studio über den Visual Studio-Registrierungsunterschlüssel zu registrieren.
+# <a name="register-a-custom-debug-engine"></a>Registrieren eines benutzerdefinierten Debugmoduls
+Das Debugmodul muss sich selbst als Klassenfactory registrieren, die COM-Konventionen befolgen, sowie sich über den Visual Studio-Registrierungsunterschlüssel bei Visual Studio registrieren.
 
 > [!NOTE]
-> Sie finden ein Beispiel für eine Debug-Engine in diesem Beispiel TextInterpreter registrieren als Teil des basiert die [Lernprogramm: Erstellen einer DebugEngine, die mithilfe von ATL-COM-](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> Sie finden ein Beispiel für das Registrieren eines Debugmoduls im TextInterpreter-Beispiel, das als Teil des [Tutorials: Erstellen eines Debugmoduls mit ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)erstellt wurde.
 
-## <a name="dll-server-process"></a>DLL-Server-Prozess
- Eine Debug-Engine ist in der Regel in eine eigene DLL als ein COM-Server eingerichtet. Daher muss die Debug-Engine die CLSID des Klassenfactory mit COM registrieren, bevor Visual Studio darauf zugreifen können. Registrieren Sie anschließend die Debug-Engine muss selbst mit Visual Studio, um alle Eigenschaften (als Metriken andernfalls bezeichnet) herstellen die Debug-engine unterstützt. Die Auswahl der Metriken, die in den Visual Studio-Registrierungsunterschlüssel geschrieben, die den Funktionen, die die Debug-Engine unterstützt abhängig ist.
+## <a name="dll-server-process"></a>DLL-Serverprozess
+ Ein Debugmodul wird in der Regel in einer eigenen DLL als COM-Server eingerichtet. Daher muss das Debugmodul die CLSID seiner Klassenfactory bei COM registrieren, bevor Visual Studio darauf zugreifen kann. Anschließend muss sich das Debugmodul bei Visual Studio registrieren, um alle Eigenschaften (auch als Metriken bezeichnet) einzurichten, die das Debugmodul unterstützt. Die Auswahl der Metriken, die in den Visual Studio-Registrierungsunterschlüssel geschrieben werden, hängt von den Funktionen ab, die das Debugmodul unterstützt.
 
- [SDK-Hilfsprogramme für das debugging](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) beschreibt nicht nur die Registrierungsspeicherorte, die zum Registrieren einer Debug-Engine; Außerdem wird beschrieben, die *dbgmetric.lib* -Bibliothek, die eine Reihe von nützlichen Funktionen und Deklarationen enthält Bearbeiten die Registrierung einfacher für C++-Entwickler, die vornehmen.
+ [SDK-Hilfsprogramme zum Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) beschreiben nicht nur die Registrierungsspeicherorte, die zum Registrieren eines Debugmoduls erforderlich sind. Außerdem wird die *Dbgmetric.lib-Bibliothek* beschrieben, die eine Reihe nützlicher Funktionen und Deklarationen für C++-Entwickler enthält, die das Bearbeiten der Registrierung erleichtern.
 
 ### <a name="example"></a>Beispiel
- Das folgende Beispiel (aus dem TextInterpreter-Beispiel) zeigt, wie Sie mit der `SetMetric` Funktion (aus *dbgmetric.lib*), um die Registrierung einer Debug-Engine mit Visual Studio. Die Metriken, die übergeben wird, werden auch definiert *dbgmetric.lib*.
+ Das folgende Beispiel (aus dem TextInterpreter-Beispiel) zeigt, wie sie die `SetMetric` Funktion (von *dbgmetric.lib*) verwendet, um ein Debugmodul bei Visual Studio zu registrieren. Die übergebenen Metriken werden auch in *dbgmetric.lib*definiert.
 
 > [!NOTE]
-> TextInterpreter ist es sich um einen einfachen Debug-Engine. Es ist nicht dafür konfiguriert, und registriert daher keine – andere Features. Eine vollständige Debug-Engine müsste eine Liste mit `SetMetric` Aufrufe oder deren äquivalent, eine für jede Funktion die Debug-Engine unterstützt.
+> TextInterpreter ist ein grundlegendes Debugmodul; Es werden keine anderen Features eingerichtet – und daher nicht registriert. Ein vollständigeres Debugmodul hätte `SetMetric` eine ganze Liste von Aufrufen oder deren Äquivalent, eine für jedes Feature, das das Debugmodul unterstützt.
 
 ```
 // Define base registry subkey to Visual Studio.
@@ -48,7 +48,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Erstellen einer benutzerdefinierten Debug-engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-- [SDK-Hilfsprogramme für das Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [Tutorial: Erstellen einer DebugEngine, die Verwendung von ATL-COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+## <a name="see-also"></a>Weitere Informationen
+- [Erstellen eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [SDK-Hilfsprogramme zum Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [Tutorial: Erstellen eines Debugmoduls mit ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

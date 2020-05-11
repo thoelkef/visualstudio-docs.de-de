@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596345"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633888"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Vorgehensweise: Konfigurieren von Zielen und Aufgaben
+
+Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklungscomputers zur Ausführung in der Umgebung, für die sie bestimmt sind, eingestellt werden. Wenn Sie z.B. einen 64-Bit-Computer zum Erstellen einer Anwendung verwenden, die in einer 32-Bit-Architektur ausgeführt werden soll, werden ausgewählte Vorgänge in einem 32-Bit-Prozess ausgeführt.
 Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklungscomputers zur Ausführung in der Umgebung, für die sie bestimmt sind, eingestellt werden. Wenn Sie z.B. einen 64-Bit-Computer zum Erstellen einer Anwendung verwenden, die in einer 32-Bit-Architektur ausgeführt werden soll, werden ausgewählte Vorgänge in einem 32-Bit-Prozess ausgeführt.
 
 > [!NOTE]
 > Wenn eine Buildaufgabe in einer .NET-Sprache wie z.B. Visual C# oder Visual Basic geschrieben ist und keine nativen Ressourcen oder Tools verwendet, wird sie in jedem Zielkontext ohne Anpassung ausgeführt.
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask-Attribute und Aufgabenparameter
+
 Die folgenden `UsingTask`-Attribute wirken sich auf alle Vorgänge einer Aufgabe in einem bestimmten Buildprozess aus:
 
 - Das `Runtime`-Attribut, sofern vorhanden, legt die Version der Common Language Runtime (CLR) fest, und kann einen der folgenden Werte annehmen: `CLR2`, `CLR4`, `CurrentRuntime` oder `*` (beliebige Runtime).
@@ -74,6 +77,7 @@ Bevor MSBuild eine Aufgabe ausführt, wird nach einer übereinstimmenden `UsingT
 ```
 
 ## <a name="task-factories"></a>Aufgabenfactorys
+
 Bevor eine Aufgabe ausgeführt wird, überprüft MSBuild, ob sie zur Ausführung im aktuellen Softwarekontext bestimmt ist. Wenn die Aufgabe hierfür bestimmt ist, übergibt MSBuild sie an die AssemblyTaskFactory, die sie im aktuellen Prozess ausführt; andernfalls übergibt MSBuild die Aufgabe an die TaskHostFactory, die die Aufgabe in einem Prozess ausführt, der dem Zielkontext entspricht. Auch wenn aktueller Kontext und Zielkontext übereinstimmen, können Sie durch Festlegen von `TaskFactory` auf `TaskHostFactory` erzwingen, dass eine Aufgabe prozessextern ausgeführt wird (zur Isolation, zur Sicherheit oder aus anderen Gründen).
 
 ```xml
@@ -84,6 +88,7 @@ Bevor eine Aufgabe ausgeführt wird, überprüft MSBuild, ob sie zur Ausführung
 ```
 
 ## <a name="phantom-task-parameters"></a>Phantomaufgabenparameter
+
 Wie alle anderen Aufgabenparameter können `MSBuildRuntime` und `MSBuildArchitecture` über die Buildeigenschaften festgelegt werden .
 
 ```xml
@@ -107,5 +112,6 @@ Die Parameter `MSBuildRuntime` und `MSBuildArchitecture` bieten die flexibelste 
 > [!NOTE]
 > Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der *Programme*) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht. Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
+
 - [Konfigurieren von Zielen und Aufgaben](../msbuild/configuring-targets-and-tasks.md)

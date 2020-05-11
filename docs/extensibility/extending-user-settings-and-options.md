@@ -1,5 +1,5 @@
 ---
-title: Erweitern von Benutzereinstellungen und Optionen | Microsoft-Dokumentation
+title: Erweitern von Benutzereinstellungen und -optionen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,27 +8,27 @@ helpviewer_keywords:
 - Options dialog box, controlling with the Visual Studio SDK
 - VSPackages, user preferences
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7b8e1205f98aa701f816f42d7115a5d5ded959
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342806"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711554"
 ---
-# <a name="extend-user-settings-and-options"></a>Erweitern von benutzereinstellungen und Optionen
-Es gibt zwei Hauptmethoden zum Beibehalten von benutzereinstellungen, in Visual Studio. Die **Tools** > **Optionen** Seiten können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen, die sowohl allgemeine als auch sprachspezifische festgelegt. Benutzereinstellungen können Benutzer allgemeine Eigenschaften für die Konfiguration von Visual Studio angeben. Weitere Informationen zu den Seiten für Optionen, finden Sie unter [Optionen und Optionsseiten](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu den benutzereinstellungen finden Sie unter [Unterstützung für benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).
+# <a name="extend-user-settings-and-options"></a>Erweitern von Benutzereinstellungen und -optionen
+In Visual Studio gibt es zwei Hauptmethoden zum Verwalten von Benutzereinstellungen. Auf den Seiten > **"Tools-Optionen"** können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen festlegen, sowohl allgemein als auch sprachspezifisch. **Tools** Mithilfe von Benutzereinstellungen können Benutzer allgemeine Visual Studio-Konfigurationseigenschaften angeben. Weitere Informationen zu Optionsseiten finden Sie unter [Options- und Optionsseiten](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu Benutzereinstellungen finden Sie unter [Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).
 
-- [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md) wird erläutert, wie eine Seite mit Optionen zu erstellen.
+- [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md) Erläutert, wie eine Optionsseite erstellt wird.
 
-- [Erstellen eine Einstellungskategorie](../extensibility/creating-a-settings-category.md) erläutert das Erstellen einer Einstellungskategorie.
+- [Erstellen einer Einstellungskategorie](../extensibility/creating-a-settings-category.md) Erläutert, wie eine Einstellungskategorie erstellt wird.
 
-- [Verwenden Sie den einstellungsspeicher](../extensibility/using-the-settings-store.md) wird erläutert, wie Sie mit dem einstellungsspeicher.
+- [Verwenden des Einstellungsspeichers](../extensibility/using-the-settings-store.md) Erläutert die Verwendung des Einstellungsspeichers.
 
-- [Abrufen von Dienstinformationen aus dem einstellungsspeicher](../extensibility/getting-service-information-from-the-settings-store.md) wird erläutert, wie Sie die verfügbaren Dienste aus dem einstellungsspeicher abrufen.
+- [Abrufen von Serviceinformationen aus dem Einstellungsspeicher](../extensibility/getting-service-information-from-the-settings-store.md) Erläutert, wie die verfügbaren Dienste aus dem Einstellungsspeicher abrufen.
 
-- [Schreiben in den Speicher für benutzereinstellungen](../extensibility/writing-to-the-user-settings-store.md) wird erläutert, wie in den Speicher für benutzereinstellungen zu schreiben.
+- [Schreiben in den Benutzereinstellungsspeicher](../extensibility/writing-to-the-user-settings-store.md) Erläutert, wie in den Benutzereinstellungsspeicher geschrieben wird.

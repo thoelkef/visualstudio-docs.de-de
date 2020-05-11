@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72652472"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Vom System generierte Protokolle, die von Visual Studio gesammelt werden
@@ -70,7 +70,7 @@ Erweiterungsersteller sollten die Offenlegung personenbezogener Informationen ei
 
 Aufgrund des Zwecks der gesammelten Daten und deren Einschränkungen des Zugriffs und der Aufbewahrung, wird empfohlen, dass Sie die Standardeinstellungen für den Datenschutz für Visual Studio und Windows verwenden. Sie können das Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio jedoch [deaktivieren](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out). Informationen zum Deaktivieren der vom System generierten Protokollsammlung für alle Programme finden Sie unter [Diagnose, Feedback und Datenschutz unter Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Die Optionen variieren je nach der verwendeten Version von Windows.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Programm zur Verbesserung der Visual Studio-Benutzerfreundlichkeit](visual-studio-experience-improvement-program.md)
 - [Diagnose, Feedback und Datenschutz unter Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

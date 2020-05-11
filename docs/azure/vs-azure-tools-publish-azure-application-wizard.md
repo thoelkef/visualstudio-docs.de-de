@@ -4,17 +4,17 @@ description: Erfahren Sie, wie die verschiedenen Einstellungen im Visual Studio-
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 312a7e072ff5dfbe1a462abb68c8a74a42823e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550330"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489648"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Verwenden des Visual Studio-Assistenten zum Veröffentlichen von Azure-Anwendungen
 
@@ -99,14 +99,14 @@ Mithilfe von Diagnose können Sie Problembehebung für einen Azure-Clouddienst (
 
 ![Zusammenfassung](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Zielprofil**: Sie können sich entscheiden, ein Veröffentlichungsprofil auf der Grundlage der von Ihnen ausgewählten Einstellungen zu erstellen. Sie können beispielsweise ein Profil für eine Testumgebung und ein weiteres für die Produktion verwenden. Um dieses Profil zu speichern, klicken Sie auf das Symbol **Speichern** . Der Assistent erstellt das Profil und speichert es im Visual Studio-Projekt. Um den Namen des Profils zu ändern, öffnen Sie die Liste **Zielprofil**, und wählen Sie anschließend **&lt;Verwalten…&gt;** aus.
+**Zielprofil**: Sie können sich entscheiden, ein Veröffentlichungsprofil auf der Grundlage der von Ihnen ausgewählten Einstellungen zu erstellen. Sie können beispielsweise ein Profil für eine Testumgebung und ein weiteres für die Produktion verwenden. Um dieses Profil zu speichern, wählen Sie das Symbol **Speichern**. Der Assistent erstellt das Profil und speichert es im Visual Studio-Projekt. Um den Profilnamen zu ändern, öffnen Sie die **Liste Zielprofil,** und wählen Sie ** &lt;dann Verwalten... &gt;**.
 
    > [!Note]
    > Das Veröffentlichungsprofil wird im Projektmappen-Explorer in Visual Studio angezeigt. Die Profileinstellungen werden in eine Datei mit der Erweiterung ".azurePubxml" geschrieben. Einstellungen werden als Attribute der XML-Tags gespeichert.
 
 ## <a name="publishing-your-application"></a>Veröffentlichen der Anwendung
 
-Nachdem Sie alle Einstellungen für die Bereitstellung Ihres Projekts konfiguriert haben, wählen Sie unten im Dialogfeld **Veröffentlichen** aus. Sie können den Prozessstatus im Fenster **Ausgabe** in Visual Studio überwachen.
+Nachdem Sie alle Einstellungen für die Bereitstellung Ihres Projekts konfiguriert haben, wählen Sie unten im Dialogfeld **Veröffentlichen** aus. Sie können den Prozessstatus im Bereich **Ausgabe** in Visual Studio überwachen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

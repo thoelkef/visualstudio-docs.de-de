@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435631"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64779240"
 ---
 # <a name="manage-channels"></a>Verwalten von Kanälen
 In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kanäle für den Prozess so organisieren, dass Sie bestimmte Muster untersuchen können. Sie können Kanäle sortieren, sie nach oben und unten verschieben oder sie ausblenden und wieder einblenden.
@@ -58,7 +58,7 @@ In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kan
 ## <a name="group-markers-by-thread"></a>Marker nach Threads gruppieren
  Wenn die Ablaufverfolgung Markerereignisse enthält, können Sie diesen Befehl verwenden, um Markerkanäle unter dem Thread, der die Markerereignisse generiert hat, zu gruppieren.  Die Datenträgerkanäle werden an das obere Ende der Kanalliste verschoben, und GPU-Kanäle werden ganz nach unten verschoben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)
 - [Aktivieren/Deaktivieren des Messmodus](../profiling/measure-mode-on-off.md)
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

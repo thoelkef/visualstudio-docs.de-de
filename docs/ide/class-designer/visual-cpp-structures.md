@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590683"
 ---
 # <a name="c-structures-in-class-designer"></a>C++-Strukturen im Klassen-Designer
@@ -38,7 +38,7 @@ Eine C++-Strukturform in einem Klassendiagramm sieht wie eine Klassenform aus un
 |------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> Struktur|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Arbeiten mit C++-Code](working-with-visual-cpp-code.md)
 - [Klassen und Strukturen](/cpp/cpp/classes-and-structs-cpp)

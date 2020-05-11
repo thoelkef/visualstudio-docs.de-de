@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetFlags
 - IDebugGenericParamField::GetFlags
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17e3bbf128483ab7a3a63c328f4ce3e77095714f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8d131a5dc4a1fd64f2a82bff4f51f7cbc4a905a8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320805"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727998"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 Ruft die Flags für diesen generischen Parameter ab.
@@ -43,13 +43,13 @@ int GetFlags(
 [out] Gibt die Flags für diesen generischen Parameter zurück.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Diese Flags enthalten Informationen zu verschiedenen besonderen Einschränkungen.
+## <a name="remarks"></a>Bemerkungen
+Diese Flags enthalten Informationen zu verschiedenen Sondereinschränkungen.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugGenericParamFieldType-Objekt** implementiert wird, das die [IDebugGenericParamField-Schnittstelle](../../../extensibility/debugger/reference/idebuggenericparamfield.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)
@@ -69,5 +69,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

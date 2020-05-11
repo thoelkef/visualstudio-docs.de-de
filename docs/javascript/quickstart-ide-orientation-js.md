@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: f7a05f62685509a69fd5dfe8f758b4e5599b9324
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636587"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527943"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Einführung in die Visual Studio-IDE
 
@@ -25,7 +25,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen.
 
@@ -81,7 +81,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 ::: moniker range="vs-2017"
 
-1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt** **javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
+1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt****javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
 
    ![Suchen von Projektvorlagen auf der Visual Studio-Startseite](media/start-page-search-templates.png)
 
@@ -114,7 +114,7 @@ Die **Fehlerliste** zeigt Fehler, Warnungen und Meldungen zum aktuellen Zustand 
 
 ![Fehlerliste in Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Ausgabefenster
+## <a name="output-window"></a>Fenster „Ausgabe“
 
 Im **Ausgabefenster** werden Ausgabemeldungen von der Erstellung Ihres Projekts sowie vom Anbieter der Quellcodeverwaltung angezeigt.
 
@@ -156,7 +156,7 @@ Wir haben uns nur einige der Features von Visual Studio angesehen, um uns mit de
 > [!div class="nextstepaction"]
 > [Erfahren Sie mehr über Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht der Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Weitere Features von Visual Studio 2017](../ide/advanced-feature-overview.md)

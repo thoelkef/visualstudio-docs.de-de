@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO | Microsoft-Dokumentation
+title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337701"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736896"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
-Diese Struktur wird eine lokale Variable, Parameter oder andere Feld beschrieben.
+# <a name="field_info"></a>FIELD_INFO
+Diese Struktur beschreibt eine lokale Variable, einen Parameter oder ein anderes Feld.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Member
 `dwFields`\
-Eine Kombination von Flags aus der [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Enumeration, der angibt, welche Elemente ausgefüllt werden.
+Eine Kombination von [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Flags aus der FIELD_INFO_FIELDS-Enumeration, die angibt, welche Elemente ausgefüllt werden.
 
 `bstrFullName`\
 Der vollständige Name des Felds.
@@ -61,20 +61,20 @@ Der kurze Name des Felds.
 Der Typ des Felds.
 
 `dwModifiers`\
-Eine Kombination von Flags aus der [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) -Enumeration, die das Feld beschreibt.
+Eine Kombination von [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) Flags aus der FIELD_MODIFIERS-Enumeration, die das Feld beschreibt.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) Methode, in denen es ausgefüllt wird.
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur wird an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugfield-getinfo.md) übergeben, bei der sie ausgefüllt wird.
 
-## <a name="requirements"></a>Anforderungen
-Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

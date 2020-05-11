@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461538"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Buildumgebung für mehrere Computer
@@ -42,7 +42,7 @@ Die Mehrcomputerumgebung kann nicht zum Erstellen dieser Arten von Apps verwende
 - UWP-Apps. Zum Erstellen von UWP-Apps müssen Sie Visual Studio auf dem Buildcomputer installieren.
 - Desktop-Apps, die auf .NET Framework 4 oder früher ausgerichtet sind. Um diese Arten von Apps zu erstellen, müssen Sie Visual Studio oder die .NET-Verweisassemblys und - Tools (aus dem Windows 7.1-SDK) auf dem Buildcomputer installieren.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Visual Studio mit installierter **.NET-Desktopentwicklungsworkload**
 
@@ -287,7 +287,7 @@ Wenn *vcvarsall.bat* erfolgreich (d.h. ohne Anzeigen einer Fehlermeldung) ausgef
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Installieren von MSBuild-Assemblys für den globalen Assemblycache auf dem Buildcomputer
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Installieren von MSBuild-Assemblys für den globalen Assemblycache auf dem Buildcomputer
 
 Für MSBuild ist die Installation einiger zusätzlicher Assemblys zum GAC auf dem Buildcomputer erforderlich.
 

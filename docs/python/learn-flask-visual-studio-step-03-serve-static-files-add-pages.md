@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72985187"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
-**Vorheriger Schritt: [Erstellen einer Flask-App mit Ansichten und Seitenvorlagen](learn-flask-visual-studio-step-02-create-app.md)**
+**Vorheriger Schritt:[Erstellen einer Flask-App mit Ansichten und Seitenvorlagen](learn-flask-visual-studio-step-02-create-app.md)**
 
 In den vorherigen Schritten dieses Tutorials haben Sie gelernt, eine minimale Flask-App mit einer einzelnen eigenständige HTML-Seite zu erstellen. Moderne Web-Apps bestehen jedoch in der Regel aus vielen Seiten und verwenden freigegebene Ressourcen, z.B. CSS- und JavaScript-Dateien, um ein einheitliches Aussehen und Verhalten bereitzustellen.
 
@@ -32,7 +32,7 @@ In diesem Schritt wird Folgendes erläutert:
 > - Das Hinzufügen von zusätzlichen Seiten zur App (Schritt 3-3)
 > - Das Verwenden der Vorlagenvererbung zur Erstellung einer Kopfzeile und einer Navigationsleiste, die seitenübergreifend verwendet werden (Schritt 3-4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Schritt 3.1: Kennenlernen der Elementvorlagen
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Schritt 3-1: Kennenlernen der Elementvorlagen
 
 Bei der Entwicklung eine Flask-App fügen Sie in der Regel viele weitere Python-, HTML-, CSS- und JavaScript-Dateien hinzu. Für jeden Dateityp (sowie andere Dateien wie *web.config*, die Sie möglicherweise für die Bereitstellung benötigen), bietet Visual Studio praktische [Elementvorlagen](python-item-templates.md) für Ihren Start an.
 
@@ -44,9 +44,9 @@ Um eine Vorlage zu verwenden, wählen Sie die gewünschte Vorlage aus, geben Sie
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Frage: Woher weiß Visual Studio, welche Elementvorlagen angeboten werden sollen?
 
-Antwort: Die Visual Studio-Projektdatei ( *.pyproj*) enthält einen Projekttypbezeichner, der sie als Python-Projekt markiert. Visual Studio verwendet diese Typbezeichner, um nur die Elementvorlagen anzuzeigen, die für den Projekttyp geeignet sind. Auf diese Weise kann Visual Studio mehrere Elementvorlagen für viele Projekttypen anbieten, ohne Sie dazu aufzufordern, sie jedes Mal alle zu sortieren.
+Antwort: Die Visual Studio-Projektdatei (*.pyproj*) enthält einen Projekttypbezeichner, der sie als Python-Projekt markiert. Visual Studio verwendet diese Typbezeichner, um nur die Elementvorlagen anzuzeigen, die für den Projekttyp geeignet sind. Auf diese Weise kann Visual Studio mehrere Elementvorlagen für viele Projekttypen anbieten, ohne Sie dazu aufzufordern, sie jedes Mal alle zu sortieren.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Schritt 3.2: Bereitstellen statischer Dateien aus Ihrer App
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Schritt 3-2: Bereitstellen statischer Dateien aus Ihrer App
 
 In einer mit Python (mit einem Framework) erstellten Web-App werden die Python-Dateien immer auf dem Server des Webhosts ausgeführt, und nie auf den Computer eines Benutzers übertragen. Andere Dateien, wie CSS- und JavaScript-Dateien, werden jedoch ausschließlich vom Browser verwendet, damit sie vom Hostserver einfach unbearbeitet übermittelt werden, wenn sie angefordert wurden. Solche Dateien werden als „statische“ Dateien bezeichnet, und Flask kann sie automatisch übermitteln, ohne dass Sie Code schreiben müssen. Innerhalb von HTML-Dateien können Sie beispielsweise auf statische Dateien verweisen, indem Sie einen relativen Pfad im Projekt verwenden. Im ersten Abschnitt dieses Schritts wird eine CSS-Datei zu Ihrer vorhandenen Seitenvorlage hinzugefügt.
 
@@ -115,13 +115,13 @@ Flask stellt eine Funktion namens `serve_static_file` bereit, die Sie über den 
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Frage: Gibt es Konventionen für die Organisation von statischen Dateien?
 
-Antwort: Sie können andere CSS-, JavaScript- und HTML-Dateien beliebig zu Ihrem *Static*-Ordner hinzufügen. Eine typische Möglichkeit zum Organisieren von statischen Dateien besteht im Erstellen von Unterordnern namens *Fonts* (Schriftarten), *Skripts* und *Content* (Inhalt) (für Stylesheets und andere Dateien).
+Antwort: Sie können andere CSS-, JavaScript- und HTML-Dateien zu Ihrem *Static*-Ordner beliebig hinzufügen. Eine typische Möglichkeit zum Organisieren von statischen Dateien besteht im Erstellen von Unterordnern namens *Fonts* (Schriftarten), *Skripts* und *Content* (Inhalt) (für Stylesheets und andere Dateien).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Frage: Wie behandle ich URL-Variablen und Abfrageparameter in einer API?
 
-Antwort: Die Antwort zu dieser Frage finden Sie in Schritt 1.4 unter der [Frage: Wie verarbeitet Flask variable URL-Routen und Abfrageparameter?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Antwort: Die Antwort finden Sie in Schritt 1.4 unter [Frage: Wie verarbeitet Flask variable URL-Routen und Abfrageparameter?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables).
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Schritt 3.3: Hinzufügen einer Seite zur App
+## <a name="step-3-3-add-a-page-to-the-app"></a>Schritt 3-3: Fügen Sie eine Seite zur App hinzu
 
 Das Hinzufügen einer anderen Seite zur App bedeutet Folgendes:
 
@@ -176,7 +176,7 @@ Die folgenden Schritte fügen eine „Info“-Seite zum Projekt „HelloFlask“
 
 Antwort: Nein, denn der `@app.route`-Decorator bestimmt die URLs, für die Flask die Funktion aufruft, um eine Antwort zu generieren. Entwickler passen den Funktionsnamen üblicherweise an die Route an. Dies ist jedoch nicht erforderlich.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Schritt 3.4: Verwenden der Vorlagenvererbung zur Erstellung einer Kopfzeile und einer Navigationsleiste
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Schritt 3-4: Verwenden Sie die Vorlagenvererbung zur Erstellung einer Kopfzeile und einer Navigationsleiste
 
 Anstelle von expliziten Navigationsverknüpfungen auf jeder Seite verwenden moderne Web-Apps in der Regel eine Branding-Kopfzeile und eine Navigationsleiste, die die wichtigsten Seitenverknüpfungen, Popupmenüs usw. bereitstellt. Um sicherzustellen, dass die Kopfzeile und die Navigationsleiste auf allen Seiten identisch sind, sollten Sie jedoch nicht denselben Code in jeder Seitenvorlage wiederholen. Stattdessen sollten Sie die allgemeinen Teile aller Ihrer Seiten zentral definieren.
 
@@ -288,4 +288,4 @@ Die folgenden Schritte veranschaulichen die Vererbung:
 - [Bereitstellen der App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Weitere Informationen zu den Funktionen der Jinja-Vorlagen (z.B. Ablaufsteuerung) finden Sie in der [Dokumentation zum Jinja-Vorlagen-Designer](http://jinja.palletsprojects.com/en/2.10.x/templates/) unter jinja.pocoo.org.
 - Weitere Informationen zur Verwendung von `url_for` finden Sie in der Dokumentation zu Flask-Anwendungsobjekten (flask.pocoo.org) unter [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for).
-- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

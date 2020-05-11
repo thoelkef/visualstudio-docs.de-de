@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918650"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880311"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -86,7 +86,7 @@ Mit dem folgenden XML-Code wird eine einzelne Assembly beispielsweise ausgeschlo
 ```xml
 <ModulePaths>
   <Exclude>
-   <ModulePath>Fabrikam.Math.UnitTest.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.UnitTest.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Exclude>
 </ModulePaths>
@@ -97,7 +97,7 @@ Im folgenden Beispiel wird festgelegt, dass nur eine einzelne Assembly in Code C
 ```xml
 <ModulePaths>
   <Include>
-   <ModulePath>Fabrikam.Math.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Include>
 </ModulePaths>
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Konfigurieren von Komponententests mithilfe einer Testlaufeinstellungsdatei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

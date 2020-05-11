@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594889"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
@@ -102,7 +102,7 @@ Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuil
 
  In der MSBuild-Befehlszeile geben Sie die benutzerdefinierte Protokollierung mithilfe des Schalters **-logger** an. Sie können auch den Schalter **-noconsolelogger** verwenden, um die Standardkonsole zu deaktivieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Buildprotokollierungen](../msbuild/build-loggers.md)

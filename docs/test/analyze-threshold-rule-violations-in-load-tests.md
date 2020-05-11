@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591280"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
@@ -37,11 +37,11 @@ In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen ang
 |Spalte|Beschreibung|In der Standardeinstellung angezeigt|
 |-|-|-|
 |zeit|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
-|Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**:  Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
+|Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**: Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
 |Kategorie|Die Kategorie des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Zähler|Der Name des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Instanz|Die Instanz des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
-|Meldung|Eine Meldung mit einer Beschreibung der Schwellenwertverletzung Beispiel: **Der Wert 5 überschreitet den kritischen Schwellenwert 0**.|Ja|
+|Nachricht|Eine Meldung mit einer Beschreibung der Schwellenwertverletzung Beispiel: **Der Wert 5 überschreitet den kritischen Schwellenwert 0**.|Ja|
 
 > [!NOTE]
 > Sie können die Tabelle sortieren, indem Sie die Spaltenüberschriften auswählen.
@@ -74,7 +74,7 @@ Schwellenwertverletzungen können im Diagramm angezeigt werden. Wie im **Indikat
 
 Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

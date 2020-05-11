@@ -33,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75568411"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472822"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Dialogfeld „Optionen“: Text-Editor \> Allgemein
 
@@ -93,6 +93,10 @@ Wenn diese Option aktiviert ist, wird ein grauer Rahmen um die Codezeile angezei
 ### <a name="show-structure-guide-lines"></a>Strukturführungslinien anzeigen
 
 Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die sich mit strukturierten Codeblöcken decken, sodass Sie die einzelnen Codeblöcke leicht identifizieren können.
+
+### <a name="show-file-health-indicator"></a>Indikator für Dateiintegrität anzeigen
+
+Wenn diese Option aktiviert wird, wird ein Statusindikatorleiste für die Dateiintegrität (Fehler, Warnungen) mit Optionen zur Codebereinigung in der unteren linken Ecke des Editors angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: d0cf61c94161e6d6bef6cd580e5fb342a177c1c4
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983506"
 ---
 # <a name="projects-and-solutions"></a>Projekte und Projektmappen
@@ -24,6 +24,6 @@ Weitere Informationen zum Erstellen eines neuen Projekts oder einer neuen Projek
 
 Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste darauf klicken und zu **Optionen** navigieren. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Verwalten von Projekt- und Projektmappeneigenschaften](managing-solutions-and-project-properties.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Projektmappen und Projekte in Visual Studio (unter Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777488"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Übermäßige CPU-Zeit für die Kernelverarbeitung
@@ -26,8 +26,8 @@ ms.locfileid: "74777488"
 |-|-|
 |Regel-ID|TODO|
 |Kategorie|Verwendung der Profilerstellungstools|
-|Profilerstellungsmethode|Sampling|
-|Meldung|Ein relativ hohes Maß an CPU-Zeit für den Kernelmodus wurde festgestellt. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling.|
+|Profilerstellungsmethode|Stichproben|
+|Nachricht|Ein relativ hohes Maß an CPU-Zeit für den Kernelmodus wurde festgestellt. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling.|
 |Regeltyp|Information|
 
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.
@@ -39,4 +39,4 @@ ms.locfileid: "74777488"
  Die relativ lange Zeit, die sich die Anwendung im Kernelmodus befand, rechtfertigt möglicherweise eine nähere Untersuchung. Von einer Anwendung im Benutzermodus wird in den Kernelmodus gewechselt, sodass E/A-Vorgänge ausgeführt werden, auf Thread- oder Prozesssynchronisierungsprimitive gewartet wird oder Systemaufrufe ausgeführt werden. Sie können die Arten der von der Anwendung ausgeführten Systemaufrufe sowie die verantwortlichen Funktionen untersuchen, indem Sie die Option zum Sammeln von Beispielaufruflisten auf der Grundlage von Systemaufrufen aktivieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Führen Sie das Profil erneut aus, und wählen Sie die Option zum Sammeln von Samplings auf der Grundlage von Systemaufrufen aus, um die Arten der von der Anwendung ausgeführten Systemaufrufe zu untersuchen. Weitere Informationen finden Sie unter [How to: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md). Informationen zum Ausführen der Profilerstellungstools über die Befehlszeile finden Sie in der Befehlszeilentoolreferenz der Profilerstellungstools im Abschnitt **Samplingintervalloptionen** des Artikels [VSPerfCmd](../profiling/vsperfcmd.md).
+ Führen Sie das Profil erneut aus, und wählen Sie die Option zum Sammeln von Samplings auf der Grundlage von Systemaufrufen aus, um die Arten der von der Anwendung ausgeführten Systemaufrufe zu untersuchen. Weitere Informationen zum Ausführen der Profilerstellungstools in der IDE finden Sie unter [How to: Choose Sampling Events (Vorgehensweise: Auswählen von Samplingereignissen)](../profiling/how-to-choose-sampling-events.md). Informationen zum Ausführen der Profilerstellungstools über die Befehlszeile finden Sie in der Befehlszeilentoolreferenz der Profilerstellungstools im Abschnitt **Samplingintervalloptionen** des Artikels [VSPerfCmd](../profiling/vsperfcmd.md).

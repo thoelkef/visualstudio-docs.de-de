@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62973752"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Threadansicht in der Parallelitätsschnellansicht
@@ -53,7 +53,7 @@ Die Parallelitätsschnellansicht startet dann die App und verfolgt so lange die 
 
 Klicken Sie oben links im Bericht auf die Registerkarte **Threads**, um die **Threadansicht** zu öffnen.
 
-![Threadansicht](../profiling/media/threadsviewnarrowing.png "Threads view")
+![Threadansicht](../profiling/media/threadsviewnarrowing.png "Threadansicht")
 
 Wählen Sie Zeitintervalle und Threads aus, um die entsprechende Leistung zu analysieren.
 
@@ -128,7 +128,7 @@ Auf der Registerkarte **Profilbericht** werden Berichte zu den Kategorien und Li
 
 - **Zusammenfassung pro Thread:** Klicken Sie auf **Zusammenfassung pro Thread**, um ein Diagramm anzuzeigen, in dem der Zustand der Threads für das zum jeweiligen Zeitpunkt ausgewählte Zeitintervall angegeben ist. Farbcodierte Spalten zeigen die Gesamtzeit an, die die einzelnen Threads im ausführenden oder blockierten Zustand, in der E/A oder anderen Zuständen verbracht haben. Die Threads werden im unteren Bereich beschriftet. Wenn Sie die Zoomstufe im Zeitachsendiagramm anpassen, wird das Diagramm automatisch aktualisiert.
 
-  Auf einigen Zoomstufen werden mehrere Threads möglicherweise nicht in dem Diagramm angezeigt. Wenn dies der Fall ist, werden im Bereich rechts Auslassungspunkte angezeigt (**...**). Wenn der gewünschte Thread nicht angezeigt wird, können Sie andere Threads ausblenden. Weitere Informationen finden Sie unter [Zusammenfassungsbericht pro Thread](../profiling/per-thread-summary-report.md).
+  Auf einigen Zoomstufen werden mehrere Threads möglicherweise nicht in dem Diagramm angezeigt. Wenn dies der Fall ist, werden im Bereich rechts Auslassungspunkte angezeigt ( **...** ). Wenn der gewünschte Thread nicht angezeigt wird, können Sie andere Threads ausblenden. Weitere Informationen finden Sie unter [Zusammenfassungsbericht pro Thread](../profiling/per-thread-summary-report.md).
 
 - **Datenträgervorgänge:** Klicken Sie auf **Datenträgervorgänge**, um die Prozesse und Threads anzuzeigen, die im aktuellen Prozess an den E/A-Vorgängen des Datenträgers beteiligt waren, und um anzuzeigen, welche Dateien davon betroffen waren (z.B. DLLs, die geladen wurden) und wie viele Byte gelesen wurden. Sie können diesen Bericht verwenden, um die Zeit auszuwerten, die während der Ausführung für den Zugriff auf Dateien aufgewendet wird, insbesondere, wenn der Prozess E/A-gebunden scheint. Weitere Informationen finden Sie unter [Bericht über Datenträgervorgänge](../profiling/disk-operations-report-threads-view.md).
 
@@ -138,5 +138,5 @@ Diese Registerkarte zeigt die Aufrufliste für einen ausgewählten Punkt auf ein
 ### <a name="unblocking-stack-tab"></a>Registerkarte „Stapelblockierung wird aufgehoben“
 Auf dieser Registerkarte wird angezeigt, welcher Thread die Blockierung für den ausgewählten Thread aufgehoben hat. Außerdem wird die Aufrufliste angegeben, deren Blockierung aufgehoben wird.
 
-## <a name="see-also"></a>Siehe auch
-- [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)

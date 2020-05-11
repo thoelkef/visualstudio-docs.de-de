@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft-Dokumentation
+title: IDebugObject2::CreateAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: efab749b7850cc3c7e3a29a62240ce9502f99843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317397"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726295"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Erstellt eine eindeutige ID oder den Alias für dieses Objekt aus, oder gibt einen vorhandenen Alias.
+Erstellt eine eindeutige ID oder einen Alias für dieses Objekt oder gibt einen vorhandenen Alias zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int CreateAlias(
 
 ## <a name="parameters"></a>Parameter
 `ppAlias`\
-[out] Der Alias (oder vorhanden).
+[out] Der neue (oder vorhandene) Alias.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Ein Alias ist eine Bezeichnung, die ein bestimmtes Objekt darstellt, während das Objekt im Arbeitsspeicher befindet.
+## <a name="remarks"></a>Bemerkungen
+ Ein Alias ist eine Bezeichnung, die ein bestimmtes Objekt darstellt, während sich das Objekt im Arbeitsspeicher befindet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

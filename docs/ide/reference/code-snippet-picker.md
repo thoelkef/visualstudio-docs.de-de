@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570491"
 ---
 # <a name="code-snippet-picker"></a>Codeausschnittauswahl
@@ -42,11 +42,11 @@ Wie Sie die **Codeausschnittauswahl** aufrufen, hängt von der verwendeten Sprac
 
 - SQL: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen**.
 
-In den meisten Entwicklungssprachen von Visual Studio können Sie mit dem **Codeausschnitt-Manager** Ordner zur Ordnerliste hinzufügen, die die **Codeausschnittauswahl** auf XML-Codeausschnittdateien überprüft. Sie haben außerdem die Möglichkeit, eigene Ausschnitte zu erstellen und zur Liste hinzuzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einfügen eines Codeausschnitts](../../ide/walkthrough-creating-a-code-snippet.md).
+In den meisten Entwicklungssprachen von Visual Studio können Sie mit dem **Codeausschnitt-Manager** Ordner zur Ordnerliste hinzufügen, die die **Codeausschnittauswahl** auf XML-Codeausschnittdateien überprüft. Sie haben außerdem die Möglichkeit, eigene Ausschnitte zu erstellen und zur Liste hinzuzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../../ide/walkthrough-creating-a-code-snippet.md).
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-Elementname
+Item Name
 
 Ein editierbares Textfeld, das den Namen des in der **Elementliste** ausgewählten Elements anzeigt. Um eine inkrementelle Suche nach dem gewünschten Element auszuführen, geben Sie zuerst den Namen in dieses Feld ein. Setzen Sie die Eingabe fort, bis das gewünschte Element in der **Elementliste** ausgewählt wird.
 
@@ -54,9 +54,9 @@ Elementliste
 
 Eine Liste von Codeausschnitten, die eingefügt werden können, oder eine Liste von Ordnern, die Codeausschnitte enthalten. Um einen Codeausschnitt einzufügen oder einen Ordner zu erweitern, wählen Sie das gewünschte Element aus, und drücken Sie die EINGABETASTE.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense-Codeausschnitte](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Festlegen von Lesezeichen im Code](../../ide/setting-bookmarks-in-code.md)
-- [Vorgehensweise: Verwenden von umschließenden Codeausschnitten](../../ide/how-to-use-surround-with-code-snippets.md)
+- [Gewusst wie: Verwenden von umschließenden Codeausschnitten](../../ide/how-to-use-surround-with-code-snippets.md)

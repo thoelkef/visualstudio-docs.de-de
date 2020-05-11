@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779050"
 ---
 # <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
@@ -59,9 +59,9 @@ Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
 
 5. Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
-- [Vorgehensweise: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)
+- [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
 - [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
 - [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

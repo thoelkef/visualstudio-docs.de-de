@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422091"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64811550"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marker angezeigt werden. Zudem kann festgelegt werden, wie die Marker angezeigt werden. Registrieren Sie die ETW-Anbieter-GUID über das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), um die EventSource-Marker anzuzeigen. In der Nebenläufigkeitsschnellansicht werden für die Darstellung von EventSource-Ereignissen als [Flag-Marker](../profiling/flag-markers.md), [Bereichsmarker](../profiling/span-markers.md) und [Meldungsmarker](../profiling/message-markers.md) Standardkonventionen verwendet. Durch Hinzufügen von benutzerdefinierten Feldern zu den Ereignissen, können Sie festlegen, wie EventSource-Ereignisse angezeigt werden. Weitere Informationen zu Markern finden Sie unter [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md). Weitere Informationen zu EventSource-Ereignissen finden Sie unter <xref:System.Diagnostics.Tracing>.
@@ -59,11 +59,11 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 
 |cvType-Wert|Resultierender Markertyp|
 |------------------|---------------------------|
-|0|Meldung|
+|0|Nachricht|
 |1|Bereichsanfang|
 |2|Bereichsende|
 |3|Flag|
-|Alle anderen Werte|Meldung|
+|Alle anderen Werte|Nachricht|
 
 ### <a name="importance"></a>Wichtigkeit
  Mit dem Feld `cvImportance`, einem Byte, können Sie zwar die Wichtigkeitseinstellung für ein EventSource-Ereignis festlegen. Es wird jedoch empfohlen, die angezeigte Wichtigkeit eines Ereignisses über die Ebene festzulegen.
@@ -93,5 +93,5 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 > [!NOTE]
 > Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider | Microsoft-Dokumentation
+title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbda02c26018adc4e5f1f3677b75bc2dce25a2e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339287"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714795"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
-Diese Schnittstelle stellt eine Proxyschnittstelle zum Anzeigen und ändern die Daten eines Objekts bereit.
+Diese Schnittstelle stellt eine Proxyschnittstelle zum Anzeigen und Ändern der Daten eines Objekts bereit.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IPropertyProxyProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die ausdrucksauswertung (EE) implementiert diese Schnittstelle für das gleiche Objekt, das implementiert die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle als Teil der EE Unterstützung des Typ-Schnellansichten.
+ Der Ausdrucksevaluator (EE) implementiert diese Schnittstelle für dasselbe Objekt, das die [IDebugProperty3-Schnittstelle](../../../extensibility/debugger/reference/idebugproperty3.md) als Teil der EE-Unterstützung von Typvisualisierern implementiert.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf eine `IDebugProperty3` Schnittstelle, um diese Schnittstelle zu erhalten.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf einer `IDebugProperty3` Schnittstelle auf, um diese Schnittstelle zu erhalten.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die `IPropertyProxyProvider` -Schnittstelle implementiert, die folgende Methode:
+ Die `IPropertyProxyProvider` Schnittstelle implementiert die folgende Methode:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Ruft eine Eigenschaft Proxyschnittstelle zum Anzeigen von Daten für ein Objekt ab.|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Ruft eine Eigenschaftsproxyschnittstelle ab, um Daten für ein Objekt anzuzeigen.|
 
-## <a name="remarks"></a>Hinweise
- Obwohl die EE dieser Schnittstelle, die Implementierung von implementiert [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) erfolgt in der Regel durch [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Finden Sie unter [visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) ausführliche Informationen zum Abrufen der IEEVisualizerService-Schnittstelle.
+## <a name="remarks"></a>Bemerkungen
+ Obwohl der EE diese Schnittstelle implementiert, wird die Implementierung von [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) in der Regel von [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)behandelt. Weitere Informationen zum Abrufen der IEEVisualizerService-Schnittstelle finden Sie unter [Visualisieren und Anzeigen von Daten.](../../../extensibility/debugger/visualizing-and-viewing-data.md)
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)
 - [Typschnellansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

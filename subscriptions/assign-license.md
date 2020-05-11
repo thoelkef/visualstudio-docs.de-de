@@ -3,28 +3,38 @@ title: Zuweisen von Lizenzen für Visual Studio-Abonnements | Microsoft-Dokument
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892180"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564159"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements
 Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
 
-Bei Benutzergruppen können Sie die Abonnements einzeln zuweisen oder über das Feature [Massenhinzufügen](assign-license-bulk.md) Listen von Abonnenten schnell und einfach mit deren Abonnementinformationen hochladen.
+Für Benutzergruppen haben Sie die Wahl, wie Sie Abonnements zuweisen.  
+- Sie können Abonnements entweder einzeln zuweisen, oder
+- Sie laden mithilfe der Funktion [Massenhinzufügen](assign-license-bulk.md) Listen von Abonnenten und den zugehörigen Abonnementinformationen schnell und einfach hoch.
+- Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie Azure AD-Gruppen verwenden, um Benutzergruppen Abonnements zuzuweisen.  (Dieses Feature wird in Phasen bereitgestellt und ist möglicherweise nicht sofort für Ihre Organisation verfügbar.)
+
 
 ## <a name="add-a-single-subscriber"></a>Einzelnen Abonnenten hinzufügen
-Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Abonnementlizenz zuweisen, damit dieser Zugriff auf die Abonnementvorteile hat.
+Im Folgenden wird erläutert, wie Sie einem neuen Benutzer ein Visual Studio-Abonnement zuweisen, damit dieser Zugriff auf die Abonnementvorteile hat.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vpPh]
+
 
 1. Melden Sie sich beim [Verwaltungsportal](https://manage.visualstudio.com) an.
-2. Wählen Sie im oberen Bereich der Tabelle die Option **Hinzufügen** aus, um einem einzelnen Visual Studio-Abonnenten eine Lizenz zuzuweisen.
+2. Um einem einzelnen Visual Studio-Abonnenten eine Lizenz zuzuweisen, wählen Sie im oberen Bereich der Tabelle die Option **Hinzufügen** aus und klicken auf **Einzelner Abonnent**.
    > [!div class="mx-imgBorder"]
-   > ![Einzelnen Abonnenten hinzufügen](media/add-single-subscriber.png)
+   > ![Einzelnen Abonnenten hinzufügen](_img/assign-license-add/add-subscriber-individual.png)
 3. Geben Sie die Informationen in die Formularfelder für den neuen Abonnenten ein. Wenn Ihre Organisation Azure Active Directory verwendet, dient das Feld **Name** als Suchfunktion. Mit dieser Funktion können Sie Personen in Ihrem aktuellen Verzeichnis finden und aus den Suchergebnissen den richtigen Benutzer auswählen. Nach der Auswahl werden die E-Mail-Adressen der entsprechenden Person für die Anmeldung und die Benachrichtigung automatisch aufgefüllt.
    > [!div class="mx-imgBorder"]
    > ![Details von Abonnenten](_img/assign-license-add/subscriber-details.png)
@@ -44,7 +54,15 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Ab
 ## <a name="resend-assignment-emails"></a>Erneutes Senden von Zuweisungs-E-Mails
 Nachdem Sie einen Abonnenten hinzugefügt haben, wird automatisch eine Zuweisungs-E-Mail mit weiteren Anweisungen an den neuen Abonnenten gesendet. Sie können die Zuweisungs-E-Mail jederzeit erneut senden, indem Sie den Abonnenten auswählen und im oberen Menü auf die Schaltfläche **Erneut senden** klicken.  Um E-Mails an mehrere Benutzer erneut zu senden, halten Sie die Taste **STRG** gedrückt, während Sie die Abonnenten auswählen.  Wenn Sie auf die Schaltfläche **Erneut senden** klicken, wird ein Dialogfeld angezeigt, in dem Sie bestätigen können, dass Sie die E-Mail an diese Abonnenten erneut senden möchten.  
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+
 ## <a name="next-steps"></a>Nächste Schritte
 - Müssen Sie viele Benutzer hinzufügen?  Erfahren Sie, wie Sie [mehreren Abonnenten](assign-license-bulk.md) Abonnements zuweisen.
 - Benötigen Sie Hilfe?  Wenden Sie sich an den [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs).
+
 

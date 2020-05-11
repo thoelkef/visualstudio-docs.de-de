@@ -1,25 +1,25 @@
 ---
-title: CommandName-Element | Microsoft-Dokumentation
+title: CommandName-Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b792e7bbe1efaa1158cc517cd96494049e2b9e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337254"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739751"
 ---
-# <a name="commandname-element"></a>CommandName-element
-Die `CommandName` Element gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Optionen** im Dialogfeld und klicken Sie in der **Befehle** Liste der **anpassen** Dialogfeld Box.
+# <a name="commandname-element"></a>CommandName-Element
+Das `CommandName` Element gibt den Text an, der in der Tastaturkategorie im Dialogfeld **Optionen** und in der Liste **Befehle** im Dialogfeld **Anpassen** angezeigt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,16 +31,16 @@ Die `CommandName` Element gibt den Text, der angezeigt wird, in der Kategorie "T
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Strings-element](../extensibility/strings-element.md)|Text-Elemente, wie z. B. gruppiert `ButtonText` und `CommandName`.|
+|[Strings-Element](../extensibility/strings-element.md)|Gruppiert Textelemente, `ButtonText` z. B. und `CommandName`.|
 
-## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

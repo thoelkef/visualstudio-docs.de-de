@@ -1,5 +1,5 @@
 ---
-title: Ausdrücke im Debugger | Microsoft-Dokumentation
+title: Ausdrücke im Debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158496"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301416"
 ---
 # <a name="expressions-in-the-debugger"></a>Ausdrücke im Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Verwenden der systeminternen Funktionen des Debuggers zur Beibehaltung des Zustands  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Verwenden von systeminternen Debuggerfunktionen zum Beibehalten des Status  
  Die systeminternen Debugger-Funktionen geben Ihnen eine Möglichkeit, zum Aufruf bestimmter C/C++-Funktionen in Ausdrücken ohne den Zustand der Anwendung zu ändern.  
   
  Systeminterne Debugger-Funktionen:  
@@ -214,8 +214,8 @@ int main()
   
 - Schlüsselwörter der Namespace- oder Modulebene, wie `End Sub` oder `Module`.  
   
-## <a name="see-also"></a>Siehe auch  
- [Formatspezifizierer in C++](../debugger/format-specifiers-in-cpp.md)   
- [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [Formatspezifizierer in C#](../debugger/format-specifiers-in-csharp.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)   
+ [Kontextoperator (C++)](../debugger/context-operator-cpp.md)   
+ [Formatbezeichner in C #](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariablen](../debugger/pseudovariables.md)

@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4262ed1a7b92170565f7006c9ed06ed884f928
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593771"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633108"
 ---
 # <a name="msbuild-transforms"></a>MSBuild-Transformationen
-Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine andere. Über Transformationen können nicht nur Elementlisten in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. In diesem Artikel werden Transformationen thematisiert, und es wird erläutert, wie sie von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zur effizienteren Erstellung von Projekten verwendet werden.
+
+Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine andere. Über Transformationen können nicht nur Elementlisten in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. In diesem Artikel werden Transformationen thematisiert, und es wird erläutert, wie sie von MSBuild zur effizienteren Erstellung von Projekten verwendet werden.
 
 ## <a name="transform-modifiers"></a>Transformationsmodifizierer
+
 Transformationen werden nicht auf willkürliche Art und Weise erstellt, sondern sind auf eine spezielle Syntax beschränkt, in der alle Transformationsmodifizierer dem Format %(\<Elementmetadatenname>) entsprechen müssen. Alle Elementmetadaten können als Transfomationsmodifizierer verwendet werden, einschließlich des bekannten Elementmetadatenelements, das jedem Element bei der Erstellung zugewiesen wird. Eine vollständige Liste bekannter Metadaten finden Sie unter [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md).
 
 Im folgenden Beispiel wird eine Liste mit *RESX*-Dateien in eine Liste mit *RESOURCES*-Dateien transformiert. Der Transformationsmodifizierer %(dateiname) gibt an, dass jeder *RESOURCES*-Datei derselbe Dateiname wie der zugehörigen *RESX*-Datei zugeordnet wird.
@@ -36,6 +38,7 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *
 > Sie können eine benutzerdefinierte Trennlinie für eine transformierte Elementliste auf dieselbe Weise angeben, wie Sie eine Trennlinie für eine Standardelementliste angeben. Verwenden Sie beispielsweise das folgende XML, um eine transformierte Elementliste durch ein Komma („,“) anstatt durch das standardmäßige Semikolon („;“) zu trennen: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Verwenden mehrerer Modifizierer
+
  Ein Tranformationsausdruck kann mehrere Modifizierer enthalten, die in einer beliebigen Reihenfolge kombiniert und wiederholt werden können. Im folgenden Beispiel wird der Name des Verzeichnisses geändert, das die Dateien enthält. Dabei behalten die Dateien allerdings ihren ursprünglichen Namen und ihre Erweiterungen.
 
 ```xml
@@ -45,7 +48,8 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *
  Wenn die Elemente, die in der `RESXFile`-Elementliste enthalten sind, beispielsweise *Project1\Form1.resx*, *Project1\Form2.resx* und *Project1\Form3.text* sind, lauten die Ausgaben in der transformierten Liste *Toolset\Form1.resx*, *Toolset\Form2.resx* und *Toolset\Form3.text*.
 
 ## <a name="dependency-analysis"></a>Abhängigkeitsanalyse
- Tansformationen garantieren eine 1:1-Zuordnung zwischen der transformierten und der ursprünglichen Elementliste. Wenn daher ein Ziel Ausgaben erzeugt, die Transformationen der Eingaben sind, kann [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] die Zeitstempel der Ein- und Ausgaben analysieren und entscheiden, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt werden soll.
+
+ Tansformationen garantieren eine 1:1-Zuordnung zwischen der transformierten und der ursprünglichen Elementliste. Wenn daher ein Ziel Ausgaben erzeugt, die Transformationen der Eingaben sind, kann MSBuild die Zeitstempel der Ein- und Ausgaben analysieren und entscheiden, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt werden soll.
 
  In der [Kopieraufgabe](../msbuild/copy-task.md) im folgenden Beispiel ist jede Datei in der `BuiltAssemblies`-Elementliste einer Datei im Zielordner der Aufgabe zugeordnet, die durch eine Transformation im `Outputs`-Attribut bestimmt wird. Wenn eine Datei in der `BuiltAssemblies`-Elementliste geändert wird, wird die `Copy`-Aufgabe nur für die geänderte Datei ausgeführt, und alle anderen Dateien werden übersprungen. Weitere Informationen zur Abhängigkeitsanalyse finden Sie unter [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md).
 
@@ -64,7 +68,8 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *
 ## <a name="example"></a>Beispiel
 
 ### <a name="description"></a>Beschreibung
- Im folgenden Beispiel wird eine [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei dargestellt, die die Transformationen verwendet. Es wird angenommen, dass nur eine *XSD*-Datei im Verzeichnis *c:\sub0\sub1\sub2\sub3* vorhanden ist, und dass das Arbeitsverzeichnis *c:\sub0 lautet*.
+
+ Im folgenden Beispiel wird eine MSBuild-Projektdatei dargestellt, die die Transformationen verwendet. Es wird angenommen, dass nur eine *XSD*-Datei im Verzeichnis *c:\sub0\sub1\sub2\sub3* vorhanden ist, und dass das Arbeitsverzeichnis *c:\sub0 lautet*.
 
 ### <a name="code"></a>Code
 
@@ -88,6 +93,7 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *
 ```
 
 ### <a name="comments"></a>Kommentare
+
  Dieses Beispiel erzeugt die folgende Ausgabe:
 
 ```
@@ -102,6 +108,7 @@ extension: .xsd
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)
-- [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)
+- [How to: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)

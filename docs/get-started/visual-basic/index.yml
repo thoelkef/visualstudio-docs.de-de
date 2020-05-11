@@ -15,10 +15,10 @@ metadata:
   dev_langs:
   - VB
   ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
-  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/19/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74188615"
 landingContent:
 - title: Erste Schritte
@@ -39,7 +39,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Erstellen einer Konsolenanwendung
+    - text: Erstellen einer Konsolen-App
       url: tutorial-console.md
     - text: Erstellen einer Windows-Desktop-App
       url: tutorial-wpf.md
@@ -59,9 +59,9 @@ landingContent:
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Debuggen Ihres Codes
       url: ../csharp/tutorial-debugger.md
-    - text: Testen des Codes
+    - text: Testen Ihres Codes
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:
-    - text: Zugriff auf Daten
+    - text: Zugreifen auf Daten
       url: ../../data-tools/create-a-sql-database-by-using-a-designer.md

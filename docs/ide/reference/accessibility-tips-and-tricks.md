@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68919520"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
@@ -35,19 +35,19 @@ Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnu
 
 Einige Personen haben Schwierigkeiten damit, manche Farben zu erkennen. Wenn Sie beim Schreiben von Code einen höheren Kontrast wünschen, aber nicht die üblichen Themen für hohen Kontrast verwenden möchten, bieten wir nun das Design „Blau (zusätzlicher Kontrast)“ an.
 
-  ![Vergleich der Designs „Blau“ und „Blau (zusätzlicher Kontrast)“](media/blue-extra-contrast-theme.png "Screenshot mit einem Vergleich zwischen den Designs „Blau“ und „Blau (zusätzlicher Kontrast)“")
+  ![Vergleich der Designs „Blau“ und „Blau (zusätzlicher Kontrast)“](media/blue-extra-contrast-theme.png "Screenshot: Vergleich zwischen den Designs „Blau“ und „Blau (zusätzlicher Kontrast)“")
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Verwenden von Anmerkungen, um nützliche Informationen über Ihren Code anzuzeigen
 
 Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Sie über Charakteristiken und Funktionen an bestimmten Punkten einer Codezeile informieren, z. B. die Schraubendreher- und Glühbirnensymbole, Wellenlinien für Fehler und Warnungen, Lesezeichen usw. Sie können den Befehlssatz „Zeilenanmerkungen anzeigen“ verwenden, um diese Randsteuerelemente zu ermitteln und zwischen diesen zu navigieren.
 
-  ![Verwenden des Befehlssatzes „Zeilenanmerkungen anzeigen“](media/show-line-annotations-command-set.png "Screenshot mit dem Menüelement „Zeilenanmerkungen anzeigen“")
+  ![Verwenden des Befehlssatzes „Zeilenanmerkungen anzeigen“](media/show-line-annotations-command-set.png "Screenshot: Menüelement „Zeilenanmerkungen anzeigen“")
 
 ## <a name="access-toolbars-by-using-keyboard-shortcuts"></a>Zugreifen auf Symbolleisten mithilfe von Tastenkombinationen
 
 Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolleisten. Mithilfe der folgenden Tastenkombinationen können Sie darauf zugreifen.
 
-|Feature|BESCHREIBUNG|Tastenkombination|
+|Feature|Beschreibung|Tastenkombination|
 |-------------|-----------------| - |
 |IDE-Symbolleisten|Wählen Sie die erste Schaltfläche in der Standardsymbolleiste.|**ALT**, **STRG**+**TAB**|
 |Symbolleisten des Toolfensters|Verschieben Sie den Fokus zu den Symbolleisten in einem Toolfenster. <br> <br> **HINWEIS:** Dies funktioniert für die meisten Toolfenster, jedoch nur, wenn sich der Fokus in einem Toolfenster befindet. Sie müssen außerdem die UMSCHALTTASTE vor der ALT-TASTE drücken. In einigen Toolfenstern wie Team Explorer müssen Sie die UMSCHALTTASTE einen Moment gedrückt halten, bevor Sie die ALT-TASTE drücken.|**UMSCHALT**+**ALT**|
@@ -57,7 +57,7 @@ Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolle
 
 Einige weitere nützliche Tastenkombinationen sind folgende:
 
-|Feature|BESCHREIBUNG|Tastenkombination|
+|Feature|Beschreibung|Tastenkombination|
 |-------------|-----------------| - |
 |IDE|Hohen Kontrast ein- und ausschalten <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**Linke ALT**+**Linke UMSCHALT**+**DRUCK**|
 |Dialogfeld|Aktivieren oder deaktivieren Sie die Kontrollkästchenoption in einem Dialogfeld. <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LEERTASTE**|
@@ -80,7 +80,7 @@ Wenn in der IDE eine Benachrichtigung angezeigt wird, können Sie so über Taste
 
    Das Fenster **Benachrichtigungen** wird geöffnet.
 
-   ![Fenster „Benachrichtigungstool“ in der Visual Studio-IDE](media/toast-notification.png "Screenshot des Fensters „Benachrichtigungen“ in der Visual Studio-IDE")
+   ![Fenster „Benachrichtigungstools“ in der Visual Studio-IDE](media/toast-notification.png "Screenshot: Fenster „Benachrichtigungen“ in der Visual Studio-IDE")
 
 1. Über die **Tabulatortaste** oder die Pfeiltasten können Sie eine Benachrichtigung auswählen.
 
@@ -97,13 +97,13 @@ Gehen Sie dabei folgendermaßen vor:
 
 1. Geben Sie auf einem Computer mit Windows 10 **Systemsounds ändern** in das Feld **Suche** ein.
 
-   ![Suchfeld in Windows 10](media/type-here-to-search.png "Screenshot des Suchfelds in Windows 10")
+   ![Suchfeld in Windows 10](media/type-here-to-search.png "Screenshot: Suchfeld in Windows 10")
 
    (Falls Sie Cortana aktiviert haben, können Sie alternativ „Hey Cortana“ und anschließend „Systemsounds ändern“ sagen.)
 
 1. Doppelklicken Sie auf **Systemsounds ändern**.
 
-   ![Suchergebnisse in Windows 10](media/change-system-sounds.png "Screenshot des Suchergebnisses für „Systemsounds ändern“ in Windows 10")
+   ![Suchergebnisse in Windows 10](media/change-system-sounds.png "Screenshot: Suchergebnisse für „Systemsounds ändern“ in Windows 10")
 
 1. Klicken Sie im Dialogfeld **Sound** auf die Registerkarte **Sounds**.
 
@@ -123,7 +123,7 @@ Gehen Sie dabei folgendermaßen vor:
 ## <a name="see-also"></a>Siehe auch
 
 * [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-* [Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [How to: Anpassen von Menüs und Symbolleisten in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
 * [Barrierefreiheit (Visual Studio für Mac)](/visualstudio/mac/accessibility)
 * [Microsoft Accessibility (Microsoft-Barrierefreiheit)](https://www.microsoft.com/Accessibility)

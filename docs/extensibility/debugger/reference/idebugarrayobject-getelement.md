@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement | Microsoft-Dokumentation
+title: IDebugArrayObject::GetElement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 527302a2e6d6fc2884107e3773402adc56b881c7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322220"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736183"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 Ruft ein Element des Arrays ab.
@@ -46,13 +46,13 @@ int GetElement(
 [in] Der Elementindex.
 
 `ppElement`\
-[out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Schnittstelle, die das Element darstellt.
+[out] Gibt eine [IDebugObject-Schnittstelle](../../../extensibility/debugger/reference/idebugobject.md) zurück, die das Element darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode sieht alle Elemente eines Arrayobjekts als ein eindimensionales Array, selbst wenn das Arrayobjekt mehrdimensionale ist. Angenommen, das Array `myarray[3][2][6]` und `dwIndex` Parameter von 20, würde dieser Methode das Element aus zurückgeben `myarray[1][1][2]`, und ein `dwIndex` Parameter 21 würde das Element zurückgeben `myarray[1][1][3]`. Verwenden der [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) Methode, um zu bestimmen, die Gesamtanzahl der Elemente im Array.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode sieht alle Elemente eines Arrayobjekts als eindimensionales Array, auch wenn das Arrayobjekt mehrdimensional ist. Wenn sie z. `myarray[3][2][6]` B. das Array und `dwIndex` den Parameter `myarray[1][1][2]`20 `dwIndex` angeben, würde diese Methode `myarray[1][1][3]`das Element von zurückgeben, und ein Parameter von 21 würde das Element von zurückgeben. Verwenden Sie die [GetCount-Methode,](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) um die Gesamtzahl der Elemente im Array zu bestimmen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

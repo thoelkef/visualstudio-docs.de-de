@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d03912eecd7b3cfa3563fc095453fee3ddf9b163
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114282"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Festlegen von Standardeinstellungen für Unternehmensbereitstellungen von Visual Studio
@@ -50,7 +50,7 @@ Einige Registrierungswerte werden bei der ersten Verwendung automatisch festgele
 
 Sie können die folgenden Registrierungswerte festlegen:
 
-| **Name** | **Type** | **Default** | **Beschreibung** |
+| **Name** | **Typ** | **Default** | **Beschreibung** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` oder `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Das Verzeichnis, in dem Paketmanifeste und optional Nutzlasten gespeichert werden. Weitere Informationen finden Sie unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Behalten Sie Paketnutzlasten bei, auch nachdem diese installiert wurden. Sie können den Wert jederzeit ändern. Durch Deaktivieren der Richtlinie werden alle zwischengespeicherten Paketnutzlasten für die Instanz entfernt, die Sie reparieren oder ändern. Weitere Informationen finden Sie unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md). |
@@ -63,7 +63,7 @@ Sie können die folgenden Registrierungswerte festlegen:
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren von Visual Studio](install-visual-studio.md)
 - [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md)

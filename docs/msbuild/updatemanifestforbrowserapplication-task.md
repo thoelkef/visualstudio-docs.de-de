@@ -13,32 +13,34 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7b5122a54fd17c6bbe2a9aab204f5855c40e902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950700"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631327"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication-Aufgabe
-Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Task wird ausgeführt, um das **\<hostInBrowser />**-Element dem Anwendungsmanifest (*\<projectname>.exe.manifest*) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]-Projekt erstellt wird.
+
+Die Aufgabe <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> wird ausgeführt, um dem Anwendungsmanifest ( *\<Projektname>.exe.manifest*) das Element **\<hostInBrowser />** hinzuzufügen, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`ApplicationManifest`|Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt den Pfad und den Namen der Anwendungsmanifestdatei an, der Sie das `<hostInBrowser />` Element hinzufügen möchten.|
-|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />**-Element einzufügen. Wenn **true**, dann ist ein neues **\<hostInBrowser />**-Element im **\<entryPoint />**-Element enthalten. Der Einschluss von Elementen ist kumulativ: Wenn ein **\<hostInBrowser />**-Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />**-Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|
+|`ApplicationManifest`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt den Pfad und den Namen der Anwendungsmanifestdatei an, der Sie das `<hostInBrowser />` Element hinzufügen möchten.|
+|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />** -Element einzufügen. Wenn **true**, dann ist ein neues **\<hostInBrowser />** -Element im **\<entryPoint />** -Element enthalten. Der Einschluss von Elementen ist kumulativ: Wenn ein **\<hostInBrowser />** -Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />** -Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|
 
-## <a name="remarks"></a>Anmerkungen
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] werden mithilfe der [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)]-Bereitstellung ausgeführt und müssen aus diesem Grund mit unterstützenden Bereitstellungs- und Anwendungsmanifesten veröffentlicht werden. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] verwendet die [GenerateApplicationManifest](generateapplicationmanifest-task.md)-Aufgabe zum Generieren eines Anwendungsmanifests.
+## <a name="remarks"></a>Hinweise
 
- Anschließend muss ein zusätzliches Element, **\<hostInBrowser />**, dem Anwendungsmanifest hinzugefügt werden, um eine Anwendung zu konfigurieren, die von einem Browser gehostet wird, wie im folgenden Beispiel gezeigt:
+ XBAPs werden mithilfe der ClickOnce-Bereitstellung ausgeführt und müssen aus diesem Grund mit unterstützenden Bereitstellungs- und Anwendungsmanifesten veröffentlicht werden. MSBuild verwendet die [GenerateApplicationManifest](generateapplicationmanifest-task.md)-Aufgabe zum Generieren eines Anwendungsmanifests.
+
+ Anschließend muss ein zusätzliches Element, **\<hostInBrowser />** , dem Anwendungsmanifest hinzugefügt werden, um eine Anwendung zu konfigurieren, die von einem Browser gehostet wird, wie im folgenden Beispiel gezeigt:
 
 ```xml
 <!--MyXBAPApplication.exe.manifest-->
@@ -54,9 +56,10 @@ Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Tas
 />
 ```
 
- Die <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Aufgabe wird ausgeführt, wenn ein [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)] Projekt erstellt wird, um das `<hostInBrowser />` Element hinzuzufügen.
+ Die Aufgabe <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> wird ausgeführt, wenn ein XBAP-Projekt erstellt wird, um das `<hostInBrowser />`-Element hinzuzufügen.
 
 ## <a name="example"></a>Beispiel
+
  Das folgende Beispiel zeigt, wie Sie sicherstellen, dass das `<hostInBrowser />`-Element in eine Anwendungsmanifestdatei eingefügt wird.
 
 ```xml
@@ -73,6 +76,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Tas
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

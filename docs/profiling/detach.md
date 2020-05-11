@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b151e3ede34d0c8fa3a863d7a4e7474431ae6f4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777389"
 ---
 # <a name="detach"></a>Trennen
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 ```
 
 #### <a name="parameters"></a>Parameter
- `PIDs|ProcessNames` `PID`: der numerische Systembezeichner von einem oder mehreren Prozessen.
+ `PIDs|ProcessNames` `PID`: Der numerische Systembezeichner für einen oder mehrere Prozesse.
 
  `ProcessNames`: der Prozessname Wenn mehrere Instanzen des benannten Prozesses ausgeführt werden, sind die Ergebnisse unvorhersehbar.
 

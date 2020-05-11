@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.openlocfilehash: a47af0e87907608ec9f71de4e605772eb1caed8e
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661942"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224562"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
-Eine Python-*Umgebung* ist ein Kontext, in dem Sie Python-Code ausführen und der globale, virtuelle und Conda-Umgebungen umfasst. Eine Umgebung besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und mehreren installierten Paketen. Diese Komponenten bestimmen gemeinsam, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
+Eine **Python-Umgebung** ist ein Kontext, in dem Sie Python-Code ausführen und der globale, virtuelle und Conda-Umgebungen umfasst. Eine Umgebung besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und mehreren installierten Paketen. Diese Komponenten bestimmen gemeinsam, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
 
 In Visual Studio unter Windows verwenden Sie das Fenster **Python-Umgebungen** wie in diesem Artikel beschrieben zum Verwalten der Umgebungen und zum Auswählen einer Standardumgebung für neue Projekte. Andere Aspekte von Umgebungen werden in den folgenden Artikeln beschrieben:
 
@@ -157,7 +157,7 @@ Eine Conda-Umgebung ist eine mit dem `conda`-Tool oder der in Visual Studio 2017
 
 1. Konfigurieren Sie die folgenden Felder:
 
-    | Feld | BESCHREIBUNG |
+    | Feld | Beschreibung |
     | --- | --- |
     | Projekt | Das Projekt, in dem die Umgebung erstellt werden soll (falls eine Visual Studio-Projektmappe mehrere Projekte enthält) |
     | name | Der Name für die Conda-Umgebung |

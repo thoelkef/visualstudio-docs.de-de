@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113773"
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
@@ -62,8 +62,8 @@ Aktiviert oder deaktiviert Sicherheitsregeln. Sie können diesen Eintrag auch er
 Nutzungsregeln\
 Aktiviert oder deaktiviert Nutzungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Warnungen bei der Analyse von verwaltetem Code](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Übersicht über die Analyse von verwaltetem Code](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code im Hinblick auf Codefehler](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

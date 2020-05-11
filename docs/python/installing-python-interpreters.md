@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75735817"
 ---
 # <a name="install-python-interpreters"></a>Installieren von Python-Interpretern
@@ -65,7 +65,7 @@ Wenn Sie einen vorhandenen Interpreter an einen neuen Speicherort im Dateisystem
 
 Mit diesem Prozess stellen Sie sicher, dass die Registrierungseinträge, die den Speicherort des von Visual Studio verwendeten Interpreters identifizieren, ordnungsgemäß aktualisiert werden. Durch die Verwendung eines Installationsprogramms werden auch Probleme durch möglicherweise vorhandene Nebenwirkungen behoben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Python-Umgebungen](managing-python-environments-in-visual-studio.md)
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)

@@ -1,33 +1,33 @@
 ---
-title: Ausführungssteuerung und Zustandsauswertung | Microsoft-Dokumentation
+title: Ausführungskontrolle und Zustandsbewertung | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], execution control
 - expression evaluation, control of execution
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bda531e94bdea07ee37eed2b0b79e6f0667ba28e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc76ae97e8baa6ce78dd4d565109d6a19e2051e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315232"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738754"
 ---
-# <a name="execution-control-and-state-evaluation"></a>Ausführung und Auswertung
-Debuggen einer Anwendung erfordert die Implementierung von Ausführung Steuerelement Features wie Funktionen schrittweise an Haltepunkten anhalten und Fortsetzen der Ausführung. Visual Studio-debugging Basen werden die Steuerung der Ausführung auf Ereignissen zwischen Debuggerkomponenten gesendet.
+# <a name="execution-control-and-state-evaluation"></a>Ausführungskontrolle und Zustandsbewertung
+Das Debuggen einer Anwendung erfordert das Implementieren solcher Ausführungssteuerungsfunktionen als Eintreten in Funktionen, Anhalten an Haltepunkten und Fortsetzen der Ausführung. Das Visual Studio-Debuggen basiert seine Ausführungssteuerung auf Ereignissen, die zwischen Debuggerkomponenten gesendet werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Die Programmsteuerung](../../extensibility/debugger/program-control.md) enthält die folgenden Routinen, die auf Programmebene auftreten: Festlegen der nächsten Anweisung, Ausführung, schrittweise ausführen, Sie den Vorgang fortsetzen, Anhalten und fortsetzen.
+ [Programmsteuerung](../../extensibility/debugger/program-control.md) Listet die folgenden Routinen auf, die auf Programmebene auftreten: Festlegen der nächsten Anweisung, Ausführen, Schrittweisen, Fortsetzen, Anhalten und Fortsetzen.
 
- [Auf Haltepunkte bezogene Methoden](../../extensibility/debugger/breakpoint-related-methods.md) definiert die Grenze und die ausstehenden Typen von Haltepunkten, die Visual Studio unterstützt.
+ [Breakpoint-bezogene Methoden](../../extensibility/debugger/breakpoint-related-methods.md) Definiert die gebundenen und ausstehenden Typen von Haltepunkten, die Visual Studio unterstützt.
 
- [Auswertung der Aufrufliste](../../extensibility/debugger/call-stack-evaluation.md) Implementierung der Methoden, mit denen der Stapelrahmen der Aufrufliste anzeigen, während des Unterbrechungsmodus können erläutert.
+ [Anrufstapelauswertung](../../extensibility/debugger/call-stack-evaluation.md) Erläutert die Implementierung der Methoden, die die Anzeige der Stapelrahmen der Aufrufliste während des Unterbrechungsmodus ermöglichen.
 
- [Auswertung des Ausdrucks](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md) wird erläutert, wie die Debug-Engine (DE), Auswertung von Ausdrücken (EE) und sitzungsbasierter Debug-Manager an die Analyse und Auswertung eines Ausdrucks in eines der Fenster der IDE eingegeben beteiligt sind.
+ [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md) Erläutert, wie das Debugmodul (DE), die Ausdrucksauswertung (EE) und der Sitzungsdebug-Manager an der Analyse und Auswertung eines Ausdrucks beteiligt sind, der in eines der Fenster der IDE eingegeben wurde.
 
- [Steuern von Ereignissen](../../extensibility/debugger/control-events.md) wird erläutert, die verwendete Schnittstelle zum Senden von Ereignissen während der kontrollierten Ausführung des Programms.
+ [Steuern von Ereignissen](../../extensibility/debugger/control-events.md) Erläutert die Schnittstelle, die zum Senden von Ereignissen während der kontrollierten Ausführung des Programms verwendet wird.

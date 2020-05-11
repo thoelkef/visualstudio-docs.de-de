@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596410"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
-Wenn Sie Befehlsaliasse verwenden, müssen Sie weniger Zeichen eingeben, wenn Sie einen Befehl ausführen. Geben Sie die Aliasse in das Feld **Suchen/Befehl** oder das Fenster **Befehl** ein. Um das Dialogfeld **Datei öffnen** anzuzeigen, können Sie beispielsweise den vordefinierten Alias `>of` verwenden, anstatt `>File.OpenFile` einzugeben.
+Wenn Sie Befehlsaliasse verwenden, müssen Sie weniger Zeichen eingeben, wenn Sie einen Befehl ausführen. Geben Sie die Aliasse in das Feld **Suchen/Befehl** oder das Fenster **Befehl** ein. Um das Dialogfeld `>File.OpenFile`Datei öffnen**anzuzeigen, können Sie beispielsweise den vordefinierten Alias** verwenden, anstatt `>of` einzugeben.
 
 Geben Sie `alias` in das Fenster **Befehl** ein, um eine Liste der aktuellen Aliasse und ihrer Definitionen anzuzeigen. Geben Sie `>cls` ein, um den Inhalt des **Befehlsfensters** zu löschen. Wenn Sie einen Alias für einen Befehl finden möchten, geben Sie `alias <command name>` ein.
 
@@ -35,20 +35,20 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 
 |Befehlsname|Alias|Vollständiger Name|
 |------------------|-----------|-------------------|
-|[Befehl "Drucken"](../../ide/reference/print-command.md)|?|Debug.Print|
+|[Drucken (Befehl)](../../ide/reference/print-command.md)|?|Debug.Print|
 |[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Neues Projekt hinzufügen|AddProj|File.AddNewProject|
 |[Befehl "Alias"](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
-|Fenster|Autos|Debug.Autos|
+|Fenster {1}{2}|Autos|Debug.Autos|
 |"Haltepunkte" (Fenster)|bl|Debug.Breakpoints|
-|Haltepunkt ein/aus|bp|Debug.ToggleBreakPoint|
+|Breakpoint ein/aus|bp|Debug.ToggleBreakPoint|
 |Aufruflistenfenster|CallStack|Debug.CallStack|
 |Lesezeichen löschen|ClearBook|Edit.ClearBookmarks|
 |Schließen|Schließen|File.Close|
 |Alle Dokumente schließen|CloseAll|Window.CloseAllDocuments|
-|Aufheben der Auswahl|cls|Edit.ClearAll|
+|Auswahl aufheben|cls|Edit.ClearAll|
 |Befehlsmodus|cmd|View.CommandWindow|
-|Code anzeigen|Code|View.ViewCode|
+|Code anzeigen|code|View.ViewCode|
 |[Befehl "Arbeitsspeicher auflisten"](../../ide/reference/list-memory-command.md)|T|Debug.ListMemory|
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) als ANSI|da|Debug.ListMemory /Ansi|
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) im Ein-Byte-Format|db|Debug.ListMemory /Format:OneByte|
@@ -62,7 +62,7 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |"Disassemblierung" (Fenster)|disasm|Debug.Disassembly|
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) im Acht-Byte-Format|dq|Debug.ListMemory /Format:EightBytes|
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) als Unicode|du|Debug.ListMemory /Unicode|
-|[Befehl "Anweisung auswerten"](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
+|[Anweisung auswerten (Befehl)](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |Schließen|Schließen|File.Exit|
 |Auswahl formatieren|Format|Edit.FormatSelection|
 |Vollbild|FullScreen|View.FullScreen|
@@ -99,7 +99,7 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |Datei drucken|print|File.Print|
 |Eigenschaftenfenster|props|View.PropertiesWindow|
 |Beenden|q|Debug.StopDebugging|
-|Wiederholen|redo|Edit.Redo|
+|Wiederholen|Wiederholen|Edit.Redo|
 |Registerfenster|Register|Debug.Registers|
 |Ausführen bis Cursor|rtc|Debug.RunToCursor|
 |Ausgewählte Elemente speichern|speichern|File.SaveSelectedItems|
@@ -115,17 +115,17 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |Untereinander|TileH|Window.TileHorizontally|
 |Nebeneinander|TileV|Window.TileVertically|
 |Lesezeichen umschalten|ToggleBook|Edit.ToggleBookmark|
-|Fenster „Toolbox“|Toolbox|View.Toolbox|
-|[Befehl "Disassemblierung auflisten"](../../ide/reference/list-disassembly-command.md)|n|Debug.ListDisassembly|
+|Fenster "Toolbox"|Toolbox|View.Toolbox|
+|[Disassembly auflisten (Befehl)](../../ide/reference/list-disassembly-command.md)|n|Debug.ListDisassembly|
 |In Großbuchstaben umwandeln|Ucase|Edit.MakeUppercase|
 |undo|Rückgängig machen|Edit.Undo|
 |Tabstopps aus Auswahl entfernen|Tabstopps entfernen|Edit.UntabifySelection|
 |Überwachungsfenster|Überwachen|Debug.WatchN|
 |Umschalten des Zeilenumbruchs|WordWrap|Edit.ToggleWordWrap|
 |Listenprozesse|&#124;|Debug.ListProcesses|
-|[Befehl "Threads auflisten"](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Threads auflisten (Befehl)](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)

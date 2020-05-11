@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft-Dokumentation
+title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a51a7bbbe081d323ea478b64917507ce43b45762
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347428"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719122"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
-Ruft Informationen über die Module in der Gruppe "Symbol" ab.
+Ruft Informationen zu den Modulen in der Symbolgruppe ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,22 +48,22 @@ int GetCurrentModulesInfo(
 
 ## <a name="parameters"></a>Parameter
 `pCount`\
-[in] Anzahl der Module in der `ppGuids` Array.
+[in] Anzahl der Module `ppGuids` im Array.
 
 `ppGuids`\
-[in] Ein Array, das die eindeutigen Bezeichner für die Module enthält.
+[in] Array, das die eindeutigen Bezeichner für die Module enthält.
 
 `pADIds`\
-[in] Der Bezeichner für Anwendungsdomänen.
+[in] Bezeichner für die Anwendungsdomänen.
 
 `pCurrentState`\
-[in] Aktuellen Status der Gruppe "Symbol".
+[in] Aktueller Status der Symbolgruppe.
 
 `ppCDModItfs`\
-[out] Gibt ein Objekt, das die Module in der Gruppe "Symbol" enthält.
+[out] Gibt ein Objekt zurück, das die Module in der Symbolgruppe enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -9,23 +9,23 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: ba8a29a75b21351d94c818837f07ff22785a07b5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864813"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77579991"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C\#
 
-In diesem Tutorial lernen Sie sich viele Tools, Dialogfelder und Designer kennen, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
+Beim Durcharbeiten dieses Tutorial machen Sie sich mit vielen Tools, Dialogfeldern und Designern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 ::: moniker range="vs-2017"
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?) kostenlos herunterladen.
@@ -46,7 +46,7 @@ Wenn Sie Visual Studio zum ersten Mal öffnen, werden Sie zur Anmeldung aufgefor
 
 Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
-![Visual Studio 2017 IDE mit übernommenen allgemeinen Einstellungen](../media/exploreide-idewithgeneralsettings.png "Screenshot von Visual Studio 2017 IDE mit übernommenen allgemeinen Einstellungen")
+![Visual Studio 2017-IDE mit übernommenen allgemeinen Einstellungen](../media/exploreide-idewithgeneralsettings.png "Screenshot: Visual Studio 2017-IDE mit übernommenen allgemeinen Einstellungen")
 
 ::: moniker-end
 
@@ -62,13 +62,13 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
 ::: moniker range="vs-2017"
 
-1. Erstellen Sie ein neues Projekt. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Erstellen Sie ein neues Projekt. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
-     ![Wählen Sie in der Menüleiste „Datei“, „Neu“, „Projekt“ aus ](../media/exploreide-filenewproject.png "Screenshot der Menüleiste aus, in der Sie „Datei“, „Neu“, „Projekt“ auswählen")
+     ![Wählen Sie in der Menüleiste „Datei > Neu > Projekt“ aus.](../media/exploreide-filenewproject.png "Screenshot: Menüleiste, in der Sie auf „Datei“ > „Neu“ > „Projekt“ klicken")
 
 1. Klicken Sie im Dialogfeld **Neues Projekt** auf **Installiert** > **Visual C#**  > **Windows-Desktop**, und wählen Sie anschließend die Vorlage **WPF-App (.NET Framework)** aus. Nennen Sie das Projekt **HelloWPFApp**, und wählen Sie **OK** aus.
 
-     ![WPF-App-Vorlage im Dialogfeld „Neues Projekt“ in Visual Studio](media/exploreide-newprojectcsharp.png "Screenshot der WPF-App-Vorlage im Dialogfeld „Neues Projekt“")
+     ![Vorlage für eine WPF-App im Visual Studio-Dialogfeld „Neues Projekt“](media/exploreide-newprojectcsharp.png "Screenshot: WPF-App-Vorlage im Dialogfeld „Neues Projekt“")
 
 ::: moniker-end
 
@@ -78,31 +78,31 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   ![Anzeigen des Fensters „Neues Projekt erstellen“](../../get-started/media/vs-2019/start-window-create-new-project.png "Screenshot des Fensters „Neues Projekt erstellen“")
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../../get-started/media/vs-2019/start-window-create-new-project.png "Screenshot: Fenster „Neues Projekt erstellen“")
 
 1. Suchen Sie in der Anzeige **Neues Projekt erstellen** nach „WPF“, und wählen Sie dann **WPF-App (.NET Core)** und anschließend **Weiter** aus.
 
-   ![WPF-App-Vorlage im Dialogfeld „Neues Projekt erstellen“](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Screenshot der WPF-App-Vorlage im Dialogfeld „Neues Projekt erstellen“")
+   ![Vorlage für eine WPF-App im Dialogfeld „Neues Projekt erstellen“](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Screenshot: WPF-App-Vorlage im Dialogfeld „Neues Projekt erstellen“")
 
    > [!NOTE]
    > Möglicherweise finden Sie zwei WPF-Desktopvorlagen, eine für .NET Framework und eine weitere für .NET Core. Die .NET Core ist ab Visual Studio 2019 Version 16.3 verfügbar. Sie können eine beliebige Vorlage für dieses Tutorial verwenden, es wird jedoch empfohlen, .NET Core für neue Entwicklungen zu verwenden.
 
 1. Geben Sie dem Projekt auf dem nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
 
-   ![Nennen Sie das Projekt „HelloWPFApp“](./media/vs-2019/exploreide-nameproject.png "Screenshot des Fensters zum Benennen Ihres Projekts")
+   ![Projekt „HelloWPFApp“ nennen](./media/vs-2019/exploreide-nameproject.png "Screenshot: Fenster zum Benennen des Projekts")
 
 ::: moniker-end
 
 Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen.
 
-![WPF-Projekt und Projekt Mappe in der IDE](media/exploreide-wpfproject-cs.png "Screenshot des WPF-Projekts und der Projektmappe in der IDE")
+![WPF-Projekt und -Projektmappe in der IDE](media/exploreide-wpfproject-cs.png "Screenshot: WPF-Projekt und -Projektmappe in der IDE")
 
 > [!NOTE]
 > Weitere Informationen zu XAML (eXtensible Application Markup Language) finden Sie auf der Seite [Übersicht über XAML für WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Wählen Sie dazu im Menü **Ansicht** die Option **Eigenschaftenfenster** aus, oder drücken Sie auf **F4**. Sie können dann die Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen lassen und ändern.
 
-   ![Eigenschaftenfenster](../media/exploreide-hellowpfappfiles.png "Screenshot des Eigenschaftenfensters mit Namen der WPF-Datei-App")   
+   ![Eigenschaftenfenster](../media/exploreide-hellowpfappfiles.png "Screenshot: Eigenschaftenfenster mit WPF-Datei-App-Namen")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Ändern des Namens der Datei „MainWindow.xaml“
 
@@ -120,13 +120,13 @@ Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein <xref:Sys
 
 1. Erweitern Sie in der **Toolbox** den Knoten **Häufig verwendete WPF-Steuerelemente**, damit das TextBlock-Steuerelement angezeigt wird.
 
-     ![Toolbox mit hervorgehobenem TextBlock-Steuerelement](../media/exploreide-textblocktoolbox.png "Screenshot des Toolboxfensters mit hervorgehobenem TextBlock-Steuerelement")
+     ![Toolbox mit hervorgehobenem TextBlock-Steuerelement](../media/exploreide-textblocktoolbox.png "Screenshot: Toolbox-Fenster mit hervorgehobenem TextBlock-Steuerelement")
 
 1. Fügen Sie auf der Entwurfsoberfläche ein TextBlock-Steuerelement hinzu, indem Sie das **TextBlock**-Element auswählen und in das Fenster auf der Entwurfsoberfläche ziehen. Zentrieren Sie das Steuerelement im oberen Bereich des Fensters. Ab Visual Studio 2019 können Sie das Steuerelement an den roten Hilfslinien ausrichten.
 
     Das Fenster sollte der folgenden Abbildung entsprechen:
 
-    ![TextBlock-Steuerelement im Formular „Greetings“](../media/exploreide-greetingswithtextblockonly.png "Screenshot des TextBlock-Steuerelements im Formular „Greetings“")
+    ![TextBlock-Steuerelement im Formular „Greetings“](../media/exploreide-greetingswithtextblockonly.png "Screenshot: TextBlock-Steuerelement im Formular „Greetings“")
 
    Das XAML-Markup sollte in etwa dem folgenden Beispiel entsprechen:
 
@@ -156,17 +156,17 @@ Anschließend fügen Sie dem Formular zwei [RadioButton](/dotnet/framework/wpf/c
 
 1. Suchen Sie in der **Toolbox** nach dem **Optionsfeld**-Steuerelement.
 
-     ![Toolboxfenster mit ausgewähltem RadioButton-Steuerelement](../media/exploreide-radiobuttontoolbox.png "Screenshot des Toolboxfensters mit ausgewähltem RadioButton-Steuerelement")
+     ![Toolboxfenster mit aktiviertem RadioButton-Steuerelement](../media/exploreide-radiobuttontoolbox.png "Screenshot: Toolbox-Fenster mit ausgewähltem RadioButton-Steuerelement")
 
 1. Fügen Sie auf der Entwurfsoberfläche zwei Optionsfeld-Steuerelemente hinzu, indem Sie auf das **Optionsfeld**-Element klicken und in das Fenster auf der Entwurfsoberfläche ziehen. Verschieben Sie die Schaltflächen (indem Sie darauf klicken und die Pfeiltasten drücken), sodass sie nebeneinander unter dem TextBlock-Steuerelement erscheinen. Richten Sie die Steuerelemente an den roten Hilfslinien aus.
 
    Das Fenster sieht wie folgt aus:
 
-   ![Formular „Greetings“ mit TextBlock und zwei Optionsfeldern](../media/exploreide-greetingswithradiobuttons.png "Screenshot des Formulars „Greetings“ mit TextBlock und zwei Optionsfelder")
+   ![Formular „Greetings“ mit TextBlock und zwei Optionsfeldern](../media/exploreide-greetingswithradiobuttons.png "Screenshot: Formular „Greetings“ mit TextBlock und zwei Optionsfeldern")
 
 1. Ändern Sie im Fenster **Eigenschaften** für das linke RadioButton-Steuerelement die Eigenschaft **Name** (die Eigenschaft oben im Fenster **Eigenschaften** ) in `HelloButton`.
 
-    ![‚RadioButton-Eigenschaftenfenster](../media/exploreide-buttonproperties.png "Screenshot des RadioButton-Eigenschaftenfensters")
+    ![Eigenschaftenfenster „RadioButton“](../media/exploreide-buttonproperties.png "Screenshot: RadioButton-Eigenschaftenfenster")
 
 1. Ändern Sie im Fenster **Eigenschaften** zum rechten RadioButton-Steuerelement die Eigenschaft **Name** in `GoodbyeButton`. Speichern Sie dann die Änderungen.
 
@@ -212,7 +212,7 @@ Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](/d
 
      Das Fenster sollte der folgenden Abbildung entsprechen.
 
-     ![Formular „Greetings“ mit Steuerelementbezeichnungen](media/exploreide-greetingswithcontrollabels-cs.png " Screenshot des Formulars „Greetings“ mit Steuerelementbezeichnungen")
+     ![Formular „Greetings“ mit Steuerelementbezeichnungen](media/exploreide-greetingswithcontrollabels-cs.png "Screenshot: Greetings-Formular mit Steuerelementbezeichnungen")
 
    Das XAML-Markup sollte in etwa wie im folgenden Beispiel aussehen:
 
@@ -312,7 +312,7 @@ Wenn Sie einige Haltepunkte hinzufügen, können Sie den Code während des Debug
 
     Die Zeile wird `MessageBox.Show("Hello.")` gelb hervorgehoben. Am unteren Rand der IDE werden die Fenster „Auto“, „Lokal“ und „Überwachen“ auf der linken Seite zusammen angedockt, und die Fenster „Aufrufliste“, „Haltepunkte", „Ausnahmeeinstellungen“, „Befehl“, „Direkt“ und „Ausgabe“ werden auf der rechten Seite zusammen angedockt.
 
-    ![Haltepunkt im Debugger](media/exploreide-debugbreakpoint.png "Screenshot eines Haltepunkts im Debugger")
+    ![Erreichen eines Breakpoints im Debugger](media/exploreide-debugbreakpoint.png "Screenshot eines Haltepunkts im Debugger")
 
 1. Wählen Sie in der Menüleiste **Debuggen** > **Rücksprung** aus.
 

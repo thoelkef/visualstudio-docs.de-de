@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591189"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Zuweisen von Rollen an einen Testcontroller und einen Test-Agent
@@ -37,7 +37,7 @@ In diesem Artikel werden außerdem die Erstellung und Konfiguration einer Testei
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-2. Klicken Sie im Bereich **Installierte Vorlagen** auf die Option **Testeinstellungen**.
+2. Wählen Sie im Bereich **Installierte Vorlagen** die Option **Testeinstellungen** aus.
 
 3. Geben Sie im Feld **Name** den Namen **TestSettingDistributedTestWalkthrough** ein.
 
@@ -111,6 +111,6 @@ In diesem Artikel werden außerdem die Erstellung und Konfiguration einer Testei
 
      Wenn der Testcontroller Komponententests und Tests der codierten UI verarbeitet, unterteilt er die Tests in Gruppen von je 100 und sendet diese an einen Test-Agent-Computer. Beispielsweise werden bei 250 Komponententests und drei Test-Agents die ersten 100 Komponententests an agent1 gesendet, die nächsten 100 Komponententests an agent2 und die verbleibenden 50 Komponententests an agent3.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)

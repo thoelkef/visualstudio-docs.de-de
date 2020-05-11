@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926198"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
@@ -40,13 +40,13 @@ Verwenden Sie die folgenden Optionen zum Auswählen der anzuzeigenden bzw. zu ä
 
  **Konfiguration**
 
-Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)** , **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
+Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)** , **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plattform**
 
-Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
+Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-## <a name="general-page"></a>Seite "Allgemein"
+## <a name="general-page"></a>Seite Allgemein
 
 Verwenden Sie die folgenden Optionen, um die allgemeinen Eigenschaften des Projekts festzulegen.
 

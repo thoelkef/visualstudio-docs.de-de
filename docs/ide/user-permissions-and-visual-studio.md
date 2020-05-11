@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75718635"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
@@ -28,14 +28,14 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als typischer Benut
 
 Sie können fast jeden Vorgang in der Visual Studio-IDE als typischer Benutzer durchführen. Sie benötigen Administratorberechtigungen, um folgende Aufgaben durchzuführen:
 
-|Bereich|Aufgabe|Weitere Informationen|
+|Bereich|Aufgabe|Weitere Informationen finden Sie unter|
 |----------|----------| - |
 |Installation|Installieren oder ändern Sie Visual Studio.|[Installieren von Visual Studio](../install/install-visual-studio.md), [Ändern von Visual Studio](../install/modify-visual-studio.md)|
 ||Installieren, Aktualisieren oder Entfernen von lokalen Hilfeinhalten.|[Installieren und Verwalten von lokalen Hilfeinhalten](../help-viewer/install-manage-local-content.md)|
-|Werkzeugkasten|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Werkzeugkasten](../ide/reference/toolbox.md)|
+|Toolbox|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Werkzeugpalette](../ide/reference/toolbox.md)|
 |Erstellung|Verwenden von Postbuildereignissen, die eine Komponente registrieren.|[Grundlagen benutzerdefinierter Buildschritte und Buildereignisse](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Einschließen eines Registrierungsschritts beim Erstellen von C++-Projekten.||
-|Debuggen|Debuggen von Anwendungen, die mit höheren Berechtigungen ausgeführt werden.|[Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)|
+|Debugging|Debuggen von Anwendungen, die mit höheren Berechtigungen ausgeführt werden.|[Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)|
 ||Debuggen von Anwendungen, die unter einem anderen Benutzerkonto ausgeführt werden, z.B. ASP.NET-Websites.|[Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Debuggen in der Zone für XAML-Browseranwendungen (XBAP).|[WPF-Host (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Verwenden des Emulators zum Debuggen von Clouddienstprojekten für Microsoft Azure.|[Debuggen eines Clouddiensts in Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
@@ -73,7 +73,7 @@ Wenn Sie Visual Studio als Administrator ausführen müssen, befolgen Sie diese 
 
 Sie können die Anwendungsverknüpfung ebenfalls so ändern, dass die Anwendung immer mit Administratorberechtigungen ausgeführt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Installieren von Visual Studio](../install/install-visual-studio.md)

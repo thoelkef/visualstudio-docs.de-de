@@ -1,5 +1,5 @@
 ---
-title: SccDirDiff-Funktion | Microsoft-Dokumentation
+title: SccDirDiff-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d207a171acba4127849cd479a1049afafa8492
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351902"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701011"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff-Funktion
-Diese Funktion zeigt die Unterschiede zwischen der aktuellen lokalen Verzeichnis auf dem Client-Datenträger und das entsprechende Projekt unter quellcodeverwaltung.
+Diese Funktion zeigt die Unterschiede zwischen dem aktuellen lokalen Verzeichnis auf dem Clientdatenträger und dem entsprechenden Projekt unter Quellcodeverwaltung an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,55 +35,55 @@ SCCRTN SccDirDiff(
 ```
 
 ### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+[in] Die Quellcodeverwaltungs-Plug-In-Kontextstruktur.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
 
  lpDirName
 
-[in] Den vollqualifizierten Pfad zum lokalen Verzeichnis für das Anzeigen eines visuellen Unterschied.
+[in] Vollständig qualifizierter Pfad zum lokalen Verzeichnis, für das ein visueller Unterschied angezeigt werden soll.
 
  dwFlags
 
-[in] Befehl Flags (finden Sie unter "Hinweise" im Abschnitt).
+[in] Befehlsflags (siehe Abschnitt "Bemerkungen").
 
  pvOptions
 
-[in] Quellcodeverwaltungs-plug-in spezifischen Optionen.
+[in] Quellcodeverwaltung Plug-in-spezifische Optionen.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Das Verzeichnis auf dem Datenträger ist identisch mit dem Projekt in der quellcodeverwaltung.|
-|SCC_I_FILESDIFFER|Das Verzeichnis auf dem Datenträger unterscheidet sich von dem Projekt in der quellcodeverwaltung.|
+|SCC_OK|Das Verzeichnis auf dem Datenträger ist mit dem Projekt in der Quellcodeverwaltung identisch.|
+|SCC_I_FILESDIFFER|Das Verzeichnis auf dem Datenträger unterscheidet sich vom Projekt in der Quellcodeverwaltung.|
 |SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|
-|SCC_E_FILENOTCONTROLLED|Das Verzeichnis ist nicht unter quellcodeverwaltung befindet.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nicht spezifischen Fehler.|
-|SCC_E_FILENOTEXIST|Lokales Verzeichnis konnte nicht gefunden werden.|
+|SCC_E_FILENOTCONTROLLED|Das Verzeichnis befindet sich nicht unter Quellcodeverwaltung.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer darf diesen Vorgang nicht ausführen.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quellcodeverwaltungssystem ist ein Problem auftritt, wahrscheinlich aufgrund von Netzwerk- oder Konfliktproblemen. Es wird ein Wiederholungsversuch empfohlen.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Unspezifischer Fehler.|
+|SCC_E_FILENOTEXIST|Das lokale Verzeichnis wurde nicht gefunden.|
 
-## <a name="remarks"></a>Hinweise
- Diese Funktion wird verwendet, um anzuweisen, das Quellcodeverwaltungs-Plug-In für den Benutzer eine Liste der Änderungen an einem angegebenen Verzeichnis anzuzeigen. Das plug-in eigenen Fenster geöffnet, in einem Format seiner Wahl, um die Unterschiede zwischen dem Verzeichnis des Benutzers auf dem Datenträger und das entsprechende Projekt unter Versionskontrolle anzuzeigen.
+## <a name="remarks"></a>Bemerkungen
+ Diese Funktion wird verwendet, um das Quellcodeverwaltungs-Plug-In anzuweisen, dem Benutzer eine Liste der Änderungen an einem angegebenen Verzeichnis anzuzeigen. Das Plug-In öffnet sein eigenes Fenster in einem Format seiner Wahl, um die Unterschiede zwischen dem Verzeichnis des Benutzers auf der Festplatte und dem entsprechenden Projekt unter Versionskontrolle anzuzeigen.
 
- Wenn ein Vergleich-Plug-in unterstützt von Verzeichnissen im Vorfeld für alle muss es Vergleich von Verzeichnissen auf Basis von Dateinamen unterstützen, auch wenn die Optionen "Quick-Diff" nicht unterstützt werden.
+ Wenn ein Plug-In den Vergleich von Verzeichnissen unterstützt, muss es den Vergleich von Verzeichnissen auf Dateinamenbasis unterstützen, auch wenn die "Quick-Diff"-Optionen nicht unterstützt werden.
 
 |`dwFlags`|Interpretation|
 |---------------|--------------------|
-|SCC_DIFF_IGNORECASE|Groß-/Kleinschreibung Vergleich (kann für schnelle Diff oder Visual verwendet werden).|
-|SCC_DIFF_IGNORESPACE|Ignoriert Leerzeichen (kann für schnelle / Diff- oder Visual verwendet werden).|
-|SCC_DIFF_QD_CONTENTS|Wenn durch das Quellcodeverwaltungs-Plug-Ins unterstützt, werden automatisch im Verzeichnis byteweise verglichen.|
-|SCC_DIFF_QD_CHECKSUM|Wenn von-Plug-in unterstützt werden, im Hintergrund des Verzeichnisses über eine Prüfsumme verglichen, wenn nicht unterstützt, auf SCC_DIFF_QD_CONTENTS zurück fällt.|
-|SCC_DIFF_QD_TIME|Wenn von-Plug-in unterstützt werden, im Hintergrund des Verzeichnisses über die Zeitstempel vergleicht oder, wenn nicht unterstützt, auf SCC_DIFF_QD_CHECKSUM oder SCC_DIFF_QD_CONTENTS zurück fällt.|
+|SCC_DIFF_IGNORECASE|Fallunsensitive Vergleich (kann entweder für Quick Diff oder visual verwendet werden).|
+|SCC_DIFF_IGNORESPACE|Ignoriert Leerraum (kann entweder für Quick-Diff oder Visual verwendet werden).|
+|SCC_DIFF_QD_CONTENTS|Wenn vom Quellcodeverwaltungs-Plug-In unterstützt, wird das Verzeichnis automatisch byte byte verglichen.|
+|SCC_DIFF_QD_CHECKSUM|Wenn vom Plug-In unterstützt, wird das Verzeichnis automatisch über eine Prüfsumme verglichen, oder, falls nicht unterstützt, auf SCC_DIFF_QD_CONTENTS zurück.|
+|SCC_DIFF_QD_TIME|Wenn vom Plug-In unterstützt, vergleicht es das Verzeichnis automatisch über seinen Zeitstempel oder greift, falls nicht unterstützt, auf SCC_DIFF_QD_CHECKSUM oder SCC_DIFF_QD_CONTENTS zurück.|
 
 > [!NOTE]
-> Diese Funktion verwendet die gleichen Befehlsflags als die [SccDiff](../extensibility/sccdiff-function.md). Ein Quellcodeverwaltungs-Plug-In können jedoch die "Quick-Diff"-Vorgang für Verzeichnisse wird nicht unterstützt.
+> Diese Funktion verwendet dieselben Befehlsflags wie [SccDiff](../extensibility/sccdiff-function.md). Ein Quellcodeverwaltungs-Plug-In kann jedoch die "Quick-Diff"-Operation für Verzeichnisse nicht unterstützen.
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)

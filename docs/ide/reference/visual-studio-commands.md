@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596371"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
@@ -31,7 +31,7 @@ Für viele Befehle sind Aliase verfügbar. Eine Liste der Aliase für Befehle fi
 
 ## <a name="escape-character"></a>Escapezeichen
 
-Das Escapezeichen für Visual Studio-Befehle ist ein Caretzeichen (^). Das Escapezeichen bedeutet, dass das unmittelbar darauf folgende Zeichen wörtlich und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Zum Beispiel:
+Das Escapezeichen für Visual Studio-Befehle ist ein Caretzeichen (^). Das Escapezeichen bedeutet, dass das unmittelbar darauf folgende Zeichen wörtlich und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:
 
 ```
 >Edit.Find ^^t /regex
@@ -50,8 +50,8 @@ Die folgenden Befehle verwenden Argumente oder Schalter:
 | [Neues Element hinzufügen](../../ide/reference/add-new-item-command.md) | Fügt der aktuellen Projektmappe ein neues Projektmappenelement wie eine HTM-, CSS-, TXT- oder Framesetdatei hinzu und öffnet dieses. |
 | [Alias](../../ide/reference/alias-command.md) | Erstellt einen neuen Alias für einen vollständigen Befehl, einen vollständigen Befehl und seine Argumente oder sogar für einen anderen Alias. |
 | [Anweisung auswerten](../../ide/reference/evaluate-statement-command.md) | Wertet die angegebene Anweisung aus und zeigt sie an. |
-| [Find](../../ide/reference/find-command.md) | Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind. |
-| [Suchen in Dateien](../../ide/reference/find-in-files-command.md) | Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement [Suchen in Dateien](../../ide/find-in-files.md). |
+| [Suchen](../../ide/reference/find-command.md) | Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind. |
+| [In Dateien suchen](../../ide/reference/find-in-files-command.md) | Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement [Suchen in Dateien](../../ide/find-in-files.md). |
 | [Gehe zu](../../ide/reference/go-to-command.md) | Bewegt den Cursor in die angegebene Zeile. |
 | [Aufrufliste auflisten](../../ide/reference/list-call-stack-command.md) | Zeigt die aktuelle Aufrufliste an. |
 | [Disassembly auflisten](../../ide/reference/list-disassembly-command.md) | Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen. |
@@ -67,18 +67,18 @@ Die folgenden Befehle verwenden Argumente oder Schalter:
 | [Print](../../ide/reference/print-command.md) | Wertet den Ausdruck aus und zeigt das Ergebnis oder den angegebenen Text an. |
 | [Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md) | Zeigt den ausgewählten oder angegebenen Text im Feld **Ausdruck** des Dialogfelds **Schnellansicht** an. |
 | [Ersetzen](../../ide/reference/replace-command.md) | Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind. |
-| [In Dateien ersetzen](../../ide/reference/replace-in-files-command.md) | Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md). |
+| [Ersetzen in Dateien](../../ide/reference/replace-in-files-command.md) | Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md). |
 | [Aktuellen Stapelrahmen festlegen](../../ide/reference/set-current-stack-frame-command.md) | Ermöglicht die Anzeige eines bestimmten Stapelrahmens. |
 | [Aktuellen Thread festlegen](../../ide/reference/set-current-thread-command.md) | Ermöglicht die Anzeige eines bestimmten Threads. |
 | [Basis festlegen](../../ide/reference/set-radix-command.md) | Legt die Zahl der anzuzeigenden Bytes fest. |
 | [Shell](../../ide/reference/shell-command.md) | Startet Programme in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , als ob der Befehl in der Befehlszeile ausgeführt würde. |
 | [Befehl "ShowWebBrowser"](../../ide/reference/showwebbrowser-command.md) | Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an. |
-| [Starten](../../ide/reference/start-command.md) | Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen. |
-| [Pfad](../../ide/reference/symbol-path-command.md) | Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht. |
+| [Start](../../ide/reference/start-command.md) | Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen. |
+| [Path](../../ide/reference/symbol-path-command.md) | Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht. |
 | [Haltepunkt ein/aus](../../ide/reference/toggle-breakpoint-command.md) | Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei. |
 | [Befehl "Überwachung"](../../ide/reference/watch-command.md) | Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** . |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)

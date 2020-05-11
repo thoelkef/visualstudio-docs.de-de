@@ -2,19 +2,20 @@
 title: Erstellen eines Projekts
 description: Erstellen eines Projekts mithilfe des Beispiels aus dem Azure Machine Learning-Katalog
 keywords: KI, Visual Studio, Azure Machine Learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fb1158015f1a7065514511b8d62810c937382b7f
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915902"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638685"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Erstellen eines KI-Projekts aus dem Azure Machine Learning-Katalog in Visual Studio
 
@@ -40,9 +41,9 @@ Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, l
 4. Wählen Sie für diesen Schnellstart das Beispiel „**MNIST mit TensorFlow**“ aus, und klicken Sie auf **Installieren**. Geben Sie hierzu folgende Informationen an:
 
    - **Ressourcengruppe**: Die Azure-Ressourcengruppe, in der Ihre Metadaten gespeichert werden
-   - **Konto**: Experimentierkonto für Azure Machine Learning
-   - **Arbeitsbereich**: Azure Machine Learning-Arbeitsbereich
-   - **Projekttyp**: Machine Learning-Framework Wählen Sie in diesem Fall **TensorFlow** aus.
+   - **Konto**: Das Konto für Azure Machine Learning-Experimentieren
+   - **Arbeitsbereich**: Der Azure Machine Learning-Arbeitsbereich
+   - **Projekttyp**: Das Machine Learning-Framework Wählen Sie in diesem Fall **TensorFlow** aus.
    - **Zur Projektmappe hinzufügen**: Bestimmt, ob Ihre aktuelle Visual Studio-Projektmappe hinzugefügt oder eine neue Projektmappe erstellt und geöffnet werden soll
    - **Projektpfad**: Speicherort des Codes
    - **Projektname**: Geben Sie **TensorFlowMNIST** ein.

@@ -1,18 +1,18 @@
 ---
 title: Scrollleisten-Zuordnungsmodus und -Leistenmodus
-ms.date: 09/25/2018
+ms.date: 03/20/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22436c221813ec4c3701d208fc74a96b403fff9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c66cda1b90d11a44f744faf0012a3e41212d33dd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591397"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988560"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Vorgehensweise: Anpassen der Scrollleiste
 
@@ -54,7 +54,7 @@ Im *Leistenmodus* werden Anmerkungsindikatoren auf der Scrollleiste angezeigt. W
 
 ### <a name="map-mode"></a>Zuordnungsmodus
 
-Wenn Sie im *Zuordnungsmodus* auf eine Position in der Scrollleiste klicken, springt der Cursor zu dieser Position in der Datei, anstatt nur eine Seite nach oben oder unten zu scrollen. Codezeilen werden als Miniaturbild auf der Scrollleiste angezeigt. Sie können auswählen, wie breit die Zuordnungsspalte ist, indem Sie einen Wert in **Quellübersicht** auswählen. Um eine größere Vorschau des Codes zu aktivieren, wenn Sie den Mauszeiger auf der Zuordnung positionieren, wählen Sie die Option **Vorschau-QuickInfo anzeigen** aus. Zugeklappte Bereiche werden anders schattiert und durch einen Doppelklick aufgeklappt.
+Im *Zuordnungsmodus* werden Codezeilen klein auf der Scrollleiste angezeigt. Sie können auswählen, wie breit die Zuordnungsspalte ist, indem Sie einen Wert in **Quellübersicht** auswählen. Um eine größere Vorschau des Codes zu aktivieren, wenn Sie den Mauszeiger auf der Zuordnung positionieren, wählen Sie die Option **Vorschau-QuickInfo anzeigen** aus. Zugeklappte Bereiche werden anders schattiert und durch einen Doppelklick aufgeklappt.
 
 > [!TIP]
 > Sie können die Miniaturcodeansicht im Zuordnungsmodus deaktivieren, indem Sie **Quellübersicht** auf **Aus** festlegen. Wenn **Vorschau-QuickInfo anzeigen** ausgewählt ist, sehen Sie immer noch eine Vorschau des Codes an dieser Stelle, wenn Sie den Mauszeiger auf der Scrollleiste positionieren, und der Mauszeiger springt immer noch zu dieser Stelle in der Datei, wenn Sie klicken.
@@ -66,6 +66,9 @@ Die folgende Abbildung zeigt das Suchbeispiel, wenn der Zuordnungsmodus aktivier
 Die folgende Abbildung zeigt die Option **Vorschau-QuickInfo anzeigen**:
 
 ![Visual Studio-Scrollleiste mit QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png)
+
+> [!TIP]
+> Sie können die Farben im Zuordnungsmodus ändern, indem Sie auf **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben** klicken. Wählen Sie als Nächstes unter **Elemente anzeigen** eines der Elemente aus, denen „Overview“ (Übersicht) vorangestellt ist, und nehmen Sie die gewünschten Farbänderungen vor. Klicken Sie dann auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 

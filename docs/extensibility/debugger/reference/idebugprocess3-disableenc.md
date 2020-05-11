@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC | Microsoft-Dokumentation
+title: IDebugProcess3::DisableENC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3ee29540a11248a299d65c32cf2c8396b1fa2ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723734"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Diese Methode explizit bearbeiten und Fortfahren deaktiviert zu diesem Vorgang (und alle Programme, die sie enthält). Ein benutzerdefinierten Port Lieferanten sollte immer zurückgeben `E_NOTIMPL`.
+Diese Methode deaktiviert explizit Bearbeiten und Fortfahren für diesen Prozess (und alle darin enthaltenen Programme). Ein benutzerdefinierter Portlieferant sollte immer zurückgeben. `E_NOTIMPL`
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,17 +40,17 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>Parameter
 `reason`\
-[in] Ein Wert aus der [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) Enumeration.
+[in] Ein Wert aus der [EncUnavailableReason-Enumeration.](../../../extensibility/debugger/reference/encunavailablereason.md)
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Ein benutzerdefinierten Port Lieferanten sollte immer zurückgeben `E_NOTIMPL`.
+> Ein benutzerdefinierter Portlieferant sollte immer zurückgeben. `E_NOTIMPL`
 
-## <a name="remarks"></a>Hinweise
- Bearbeiten und Fortfahren für einen Prozess deaktiviert ist, kann diese erneut aktiviert werden nur durch Neustart des Prozesses.
+## <a name="remarks"></a>Bemerkungen
+ Sobald Bearbeiten und Fortfahren für einen Prozess deaktiviert ist, kann er nur durch einen Neustart des Prozesses wieder aktiviert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

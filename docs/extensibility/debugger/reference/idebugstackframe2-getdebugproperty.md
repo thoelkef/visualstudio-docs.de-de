@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDebugProperty | Microsoft-Dokumentation
+title: IDebugStackFrame2::GetDebugProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c520482d78b8630c639088ca98d66782f2e2d75
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa98107ada265d232647d27b4050b507d4581df7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321817"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719783"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
-Ruft eine Beschreibung der Eigenschaften des ein Stapelrahmen.
+Ruft eine Beschreibung der Eigenschaften eines Stapelrahmens ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetDebugProperty ( 
 
 ## <a name="parameters"></a>Parameter
 `ppDebugProp`\
-[out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das die Eigenschaften des Stapelrahmens beschreibt.
+[out] Gibt ein [IDebugProperty2-Objekt](../../../extensibility/debugger/reference/idebugproperty2.md) zurück, das die Eigenschaften dieses Stapelrahmens beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Aufrufen der [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) -Methode mit den entsprechenden Filtern abrufen kann, die lokalen Variablen, Methodenparameter, Register und "this"-Zeigers, die dem Stapelrahmen zugeordnet.
+## <a name="remarks"></a>Bemerkungen
+ Wenn Sie die [EnumChildren-Methode](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) mit entsprechenden Filtern aufrufen, können Sie die lokalen Variablen, Methodenparameter, Register und "this"-Zeiger abrufen, die dem Stapelrahmen zugeordnet sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

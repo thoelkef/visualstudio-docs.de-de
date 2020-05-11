@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo | Microsoft-Dokumentation
+title: IDebugProperty2::GetPropertyInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetPropertyInfo
 ms.assetid: 39d6e942-df72-4c84-a5d9-a386d112714c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96d291ed86d285316445e40e85c30806f3a42c83
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6ec1c3e29e0dbb6ca069dec696e6645a159ec7e6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342917"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721364"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
-Ruft die [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) -Struktur, die eine Eigenschaft beschreibt.
+Ruft die [DEBUG_PROPERTY_INFO-Struktur](../../../extensibility/debugger/reference/debug-property-info.md) ab, die eine Eigenschaft beschreibt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,27 +51,27 @@ int GetPropertyInfo ( 
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Werten aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, der angibt, welche Felder sind in ausgefüllt werden, müssen die `pPropertyInfo` Struktur.
+[in] Eine Kombination von Werten aus der DEBUGPROP_INFO_FLAGS-Enumeration, die angibt, welche Felder in der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) `pPropertyInfo` Struktur ausgefüllt werden sollen.
 
 `nRadix`\
-[in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.
+[in] Radix, das zum Formatieren numerischer Informationen verwendet werden soll.
 
 `dwTimeout`\
-[in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung `INFINITE` für Warten ohne Timeout.
+[in] Gibt die maximale Wartezeit in Millisekunden an, bevor von dieser Methode zurückgegeben wird. Verwenden `INFINITE` Sie diese Verwendung, um auf unbestimmte Zeit zu warten.
 
 `rgpArgs`\
-[in, out] Für die zukünftige Verwendung reserviert. Legen Sie auf einen null-Wert.
+[in, out] Reserviert für die zukünftige Verwendung; auf einen NULL-Wert festgelegt.
 
 `dwArgCount`\
-[in] Für die zukünftige Verwendung reserviert. Legen Sie auf 0 (null).
+[in] Reserviert für die zukünftige Verwendung; auf Null gesetzt.
 
 `pPropertyInfo`\
-[out] Ein [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) -Struktur, die mit der Beschreibung der Eigenschaft gefüllt wird.
+[out] Eine [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Struktur, die mit der Beschreibung der Eigenschaft ausgefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

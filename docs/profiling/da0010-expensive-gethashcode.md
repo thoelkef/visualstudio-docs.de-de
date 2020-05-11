@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777685"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Speicherintensive GetHashCode-Funktionen
@@ -27,8 +27,8 @@ ms.locfileid: "74777685"
 |-|-|
 |Regel-ID|DA0010|
 |Kategorie|.NET Framework-Verwendung|
-|Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|
-|Meldung|GetHashCode-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der Hashcodefunktionen.|
+|Profilerstellungsmethoden|Stichproben<br /><br /> .NET-Arbeitsspeicher|
+|Nachricht|GetHashCode-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der Hashcodefunktionen.|
 |Nachrichtentyp|Warnung|
 
 ## <a name="cause"></a>Ursache

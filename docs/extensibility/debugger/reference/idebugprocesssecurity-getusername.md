@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Microsoft-Dokumentation
+title: IDebugProcessSecurity::GetUserName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity::GetUserName
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a42b67eb3fd308011bf725f8dd7e24a4d9ddca6f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef00a0b7489c3e5cb709520546f3d3f26c8a4eba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311524"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723259"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-Ruft den Benutzernamen aus den Anschlusslieferanten ab.
+Ruft den Benutzernamen vom Portlieferanten ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,13 +39,13 @@ int GetUserName (
 
 ## <a name="parameters"></a>Parameter
 `pbstrUserName`\
-[out] Eine Zeichenfolge mit den Benutzernamen ein.
+[out] Eine Zeichenfolge, die den Benutzernamen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Methode erfolgreich ist, gibt es `S_OK`. Andernfalls wird einen Fehlercode zurückgegeben.
+ Wenn die Methode erfolgreich ist, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- `GetUserName` Gibt den Benutzernamen zurück, die in angezeigt wird der **Benutzernamen** Spalte die **an den Prozess anhängen** Dialogfeld. Anzeigen der **an den Prozess anhängen** Dialogfeld klicken Sie auf **an den Prozess anhängen** auf die **Tools** im Menü der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE).
+## <a name="remarks"></a>Bemerkungen
+ `GetUserName`gibt den Benutzernamen zurück, der in der Spalte **Benutzername** des Dialogfelds **An Prozess anfügen** angezeigt wird. Um das Dialogfeld **An Prozess anfügen** anzuzeigen, klicken [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Sie im Menü **Extras** in der integrierten Entwicklungsumgebung (IDE) auf An Prozess **anfügen.**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

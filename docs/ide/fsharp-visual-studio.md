@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 75ebee68bf76a4dd5419942f79a3207c29673134
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565239"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Entwickeln mit Visual F# in Visual Studio
@@ -41,7 +41,7 @@ Weitere Informationen zu den Elementvorlagen für den Datenzugriff finden Sie un
 
 In der folgenden Tabelle sind Features in Projekteigenschaften für F# zusammengefasst:
 
-|Projekteinstellung|In F# unterstützt?|Hinweise|
+|Projekteinstellung|In F# unterstützt?|Notizen|
 |---------------|----------------|-----|
 |Ressourcendateien|Ja||
 |Build-, Debug- und Verweiseinstellungen|Ja||
@@ -60,13 +60,13 @@ Der **Projekt-Designer** enthält mehrere Projekteigenschaftenseiten, die nach v
 
 |Projekt-Designer-Seite|Verwandte Links|Beschreibung|
 | - |-------------|-----------|
-|Anwendung|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Hier können Sie Einstellungen und Eigenschaften auf Anwendungsebene angeben und beispielsweise festlegen, ob Sie eine Bibliothek oder eine ausführbare Datei erstellen und auf welche .NET-Version die Anwendung abzielt. Ferner können Sie Informationen zum Speicherort der von der Anwendung verwendeten Ressourcendateien bereitstellen.|
+|Application|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Hier können Sie Einstellungen und Eigenschaften auf Anwendungsebene angeben und beispielsweise festlegen, ob Sie eine Bibliothek oder eine ausführbare Datei erstellen und auf welche .NET-Version die Anwendung abzielt. Ferner können Sie Informationen zum Speicherort der von der Anwendung verwendeten Ressourcendateien bereitstellen.|
 |Build|[Seite „Erstellen“, Projekt-Designer](reference/build-page-project-designer-csharp.md)|Damit können Sie festlegen, wie der Code kompiliert wird.|
 |Buildereignisse|[Seite „Buildereignisse“, Projekt-Designer](reference/build-events-page-project-designer-csharp.md)|Damit können Sie Befehle angeben, die vor oder nach dem Kompilieren ausgeführt werden sollen.|
-|Debug|[Seite „Debuggen“, Projekt-Designer](reference/debug-page-project-designer.md)|Damit können Sie festlegen, wie die Anwendung beim Debuggen ausgeführt wird. So legen Sie beispielsweise fest, welche Befehle verwendet werden und welches Verzeichnis als Startverzeichnis für die Anwendung dient. Ferner legen Sie alle Debugmodi fest, die Sie aktivieren möchten, wie etwa den Modus zum Debuggen von nativem Code und SQL.|
-|Paket (nur .NET SDK)|Nicht zutreffend|Damit können Sie NuGet-Paketmetadaten beim Veröffentlichen als NuGet-Paket definieren.|
+|Debuggen|[Seite "Debuggen", Projekt-Designer](reference/debug-page-project-designer.md)|Damit können Sie festlegen, wie die Anwendung beim Debuggen ausgeführt wird. So legen Sie beispielsweise fest, welche Befehle verwendet werden und welches Verzeichnis als Startverzeichnis für die Anwendung dient. Ferner legen Sie alle Debugmodi fest, die Sie aktivieren möchten, wie etwa den Modus zum Debuggen von nativem Code und SQL.|
+|Paket (nur .NET SDK)|N/V|Damit können Sie NuGet-Paketmetadaten beim Veröffentlichen als NuGet-Paket definieren.|
 |Verweispfade|[Verwalten von Verweisen in einem Projekt](managing-references-in-a-project.md)|Damit können Sie angeben, wo nach Assemblys gesucht werden soll, von denen der Code abhängt.|
-|Ressourcen (nur .NET SDK)|Nicht zutreffend|Damit können Sie eine Standardressourcendatei generieren und verwalten.|
+|Ressourcen (nur .NET SDK)|N/V|Damit können Sie eine Standardressourcendatei generieren und verwalten.|
 
 ### <a name="f-specific-settings"></a>F#-spezifische Einstellungen
 
@@ -135,7 +135,7 @@ In der folgenden Tabelle sind die Features zusammengefasst, die beim Debuggen vo
 
 |Feature|Beschreibung|In F# unterstützt?|
 |-------|-----------|----------------|
-|Fenster|Zeigt automatische oder temporäre Variablen an.|Nein|
+|Fenster {1}{2}|Zeigt automatische oder temporäre Variablen an.|Nein|
 |Haltepunkte|Damit können Sie beim Debuggen die Codeausführung an bestimmten Punkten anhalten.|Ja|
 |Bedingte Haltepunkte|Aktiviert Breakpoints, mit denen eine Bedingung geprüft wird, die bestimmt, ob die Ausführung angehalten wird.|Ja|
 |Bearbeiten und Fortfahren|Ermöglicht beim Debuggen eines aktiven Programms das Ändern und Kompilieren von Code, ohne den Debugger zu beenden und neu zu starten.|Nein|
@@ -148,7 +148,7 @@ In der folgenden Tabelle sind die Features zusammengefasst, die beim Debuggen vo
 
 Weitere Informationen zum Visual Studio-Debugger finden Sie unter [Debugging in Visual Studio](../debugger/index.yml).
 
-## <a name="additional-tools"></a>Weitere Tools
+## <a name="additional-tools"></a>Zusätzliche Tools
 
 In der folgenden Tabelle ist die Unterstützung für F# in Visual Studio-Tools zusammengefasst.
 
@@ -167,9 +167,9 @@ In der folgenden Tabelle ist die Unterstützung für F# in Visual Studio-Tools z
 |Projektmappen-Explorer|Damit können Sie Projekte und Dateien anzeigen und verwalten.|Ja|
 |Aufgabenliste|Damit können Sie Arbeitselemente verwalten, die sich auf den Code beziehen.|Nein|
 |Testprojekte|Stellt Features zum Testen des Codes bereit.|Nein|
-|Werkzeugkasten|Zeigt Registerkarten an, die ziehbare Objekte wie etwa Steuerelemente und Text- oder Codeabschnitte enthalten.|Ja|
+|Toolbox|Zeigt Registerkarten an, die ziehbare Objekte wie etwa Steuerelemente und Text- oder Codeabschnitte enthalten.|Ja|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Leitfaden für F# (.NET Framework)](/dotnet/fsharp/)
 - [Erste Schritte mit F# in Visual Studio](/dotnet/fsharp/get-started/get-started-visual-studio)

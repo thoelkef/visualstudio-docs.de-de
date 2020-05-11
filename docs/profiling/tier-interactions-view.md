@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778140"
 ---
 # <a name="tier-interactions-view"></a>Ansicht "Ebeneninteraktionen"
 
 Die Profilerstellung für die Ebeneninteraktion bietet weitere Informationen zu den Ausführungszeiten in Funktionen von Anwendungen mit mehreren Ebenen, die über [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] mit Datenbanken kommunizieren. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt.
 
-**Anforderungen**
+**Voraussetzungen**
 
 - Visual Studio Enterprise
 
@@ -37,7 +37,7 @@ Die Ansicht „Ebeneninteraktionen“ zeigt Ebeneninteraktionsdaten in zwei Bere
 
 ## <a name="master-pane"></a>Masterbereich
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Name**|– Bei einer Zeile der obersten Ebene ist es der Name des profilierten Prozesses oder der Webseite.<br />– Bei einer Datenbankverbindungszeile ist dies der Name des Servers, der die Datenbank hostet.|
 |**Datenbank**|Der Name der Datenbank (nur Datenbankverbindungszeilen).|
@@ -49,7 +49,7 @@ Die Ansicht „Ebeneninteraktionen“ zeigt Ebeneninteraktionsdaten in zwei Bere
 
 ## <a name="database-connection-details-pane"></a>Detailbereich für die Datenbankverbindung
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Befehlstext**|Die SQL-Abfrage der Anforderung.|
 |**Abfrageanzahl**|Die Anzahl, wie oft die Abfrage ausgeführt wurde.|

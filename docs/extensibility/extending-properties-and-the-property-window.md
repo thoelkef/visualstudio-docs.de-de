@@ -1,5 +1,5 @@
 ---
-title: Erweitern von Eigenschaften und das Eigenschaftenfenster | Microsoft-Dokumentation
+title: Erweitern von Eigenschaften und dem Eigenschaftenfenster | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711739"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Erweitern von Eigenschaften und des Eigenschaftenfensters
-Die **Eigenschaften** Fenster wird verwendet, um die zur Entwurfszeit Eigenschaften und Ereignissen ausgewählter Objekte anzeigen und bearbeiten.
+# <a name="extend-properties-and-the-property-window"></a>Erweitern von Eigenschaften und dem Eigenschaftenfenster
+Das **Fenster Eigenschaften** wird verwendet, um die Entwurfszeiteigenschaften und Ereignisse ausgewählter Objekte anzuzeigen und zu bearbeiten.
 
- Bei Auswahl ein Objekts in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], die öffentlichen Eigenschaften dieses Objekts angezeigt werden, der **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Übersicht über das Eigenschaftenfenster](../extensibility/internals/properties-window-overview.md).
+ Wenn Sie ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Objekt in auswählen, werden die öffentlichen Eigenschaften dieses Objekts im **Eigenschaftenfenster** angezeigt. Weitere Informationen finden Sie unter Übersicht über das [Fenster Eigenschaften](../extensibility/internals/properties-window-overview.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Verfügbarmachen der Eigenschaften, um das Fenster "Eigenschaften"](../extensibility/exposing-properties-to-the-properties-window.md) wird erläutert, wie Sie die benutzerdefinierten Eigenschaften im Eigenschaftenfenster angezeigt haben können.
+- [Verfügbar machen von Eigenschaften im Eigenschaftenfenster](../extensibility/exposing-properties-to-the-properties-window.md) Erläutert, wie Ihre benutzerdefinierten Eigenschaften im Eigenschaftenfenster angezeigt werden können.
 
-- [Abrufen von Projekteigenschaften](../extensibility/getting-project-properties.md) erläutert das Abrufen von Projekteigenschaften.
+- [Abrufen von Projekteigenschaften](../extensibility/getting-project-properties.md) Erläutert, wie Projekteigenschaften abgerufen werden.

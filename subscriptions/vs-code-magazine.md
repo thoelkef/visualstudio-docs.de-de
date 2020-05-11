@@ -1,17 +1,18 @@
 ---
 title: CODE Magazine-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 10/13/2019
+ms.assetid: e5768153-2758-46d3-a323-3272def213ee
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über den CODE Magazine-Vorteil, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: f3b8c7c10cc8995e05b0e0da7da5e85226e131a3
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491655"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274010"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine in Visual Studio-Abonnements
 
@@ -27,7 +28,7 @@ Ein CODE Magazine-Abonnement einzurichten ist einfach.  Führen Sie folgende Sch
 3. Es wird eine Meldung angezeigt, dass Ihr Code abgerufen wurde.  Klicken Sie zum Fortfahren auf **Activate** (Aktivieren).  (Wenn Sie noch nicht dazu bereit sind, ist das kein Problem.  Sie können jederzeit zu der Kachel zurückkehren, um den Code zu aktivieren.  Nachdem Sie den Code abgerufen haben, wird anstelle des Links „Code abrufen“ die Schaltfläche „Aktivieren“ angezeigt.)
    > [!div class="mx-imgBorder"]
    > ![CODE Magazine – abgerufener Code](_img/vs-code-magazine/vs-code-magazine-success.png "Code erfolgreich abgerufen")
-4. Sie werden auf die Angebotsseite des CODE Magazine umgeleitet. Wählen Sie Ihr Land aus und die Form, in der Sie das Magazin erhalten möchten. 
+4. Sie werden auf die Angebotsseite des CODE Magazine umgeleitet. Wählen Sie Ihr Land/Ihre Region aus und die Form, in der Sie das Magazin erhalten möchten. 
    > [!NOTE]
    > Visual Studio Dev Essentials-Mitglieder haben nur Zugriff auf das digitale Abonnement. 
 5. Je nach getroffener Auswahl wird ein Hinweis mit dem Preis Ihres Abonnements sowie dem Betrag des angewendeten Gutscheins angezeigt.
@@ -56,7 +57,7 @@ Nachdem Sie die Bestellung aufgegeben haben, wird eine Bestätigungsseite mit ei
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Nein          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, Imagine Premium.  Umfasst nicht: Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services Developer, MCT Software & Services, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, Imagine Premium.  Umfasst nicht: Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services Developer, MCT Software & Services, Imagine.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
@@ -74,6 +75,12 @@ Antwort:  Das CODE Magazine erfasst Ihre Adresse sowohl bei einem gedruckten als
 - Haben Sie Fragen zu Ihrem CODE Magazine-Abonnement?  Kontaktieren Sie [CODE Magazine](https://www.codemag.com/contact) per E-Mail oder telefonisch, oder senden Sie eine Onlinesupportanfrage.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zu weiteren Vorteilen Ihres Abonnements finden Sie unter: Besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

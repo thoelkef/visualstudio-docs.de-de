@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566773"
 ---
 # <a name="settings-page-project-designer"></a>Seite „Einstellungen“, Projekt-Designer
@@ -69,7 +69,7 @@ Weitere Informationen zu den Hilfsprogrammklassen für Einstellungen finden Sie 
 
 Geben Sie den Namen der Anwendungseinstellung in dieses Feld ein.
 
-**Type**
+**Typ**
 
 Wählen Sie über die Dropdownliste einen Typ für die Einstellung aus. In der Dropdownliste werden die am häufigsten verwendeten Typen angezeigt, wie etwa **String** **(Verbindungszeichenfolge)** und **System.Drawing.Font**. Sie können einen anderen Typ auswählen, indem Sie am Ende der Liste **Durchsuchen** und anschließend im Dialogfeld **Typ auswählen** einen Typ auswählen. Nachdem Sie einen Typ ausgewählt haben, wird er den häufig verwendeten Typen in der Dropdownliste hinzugefügt (nur für die aktuelle Projektmappe).
 
@@ -85,7 +85,7 @@ Einstellungen im Gültigkeitsbereich des Benutzers wie Systemschriftarten sind z
 
 Die mit der Anwendungseinstellung verknüpften Daten oder Werte. Wenn es sich bei der Einstellung beispielsweise um eine Schriftart handelt, könnte der Wert **Verdana, 9.75pt, style=Bold** lauten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Anwendungseinstellungen](../managing-application-settings-dotnet.md)
 - [Zugreifen auf Anwendungseinstellungen (Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

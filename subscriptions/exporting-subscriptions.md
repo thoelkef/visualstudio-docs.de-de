@@ -3,18 +3,19 @@ title: Exportieren von Abonnementinformationen | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie eine Liste von Abonnenten und Details zu den zugewiesenen Abonnements exportiert werden.
-ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491735"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232495"
 ---
 # <a name="export-subscription-information"></a>Exportieren der Abonnementinformationen
-Im [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonnements können Sie eine Liste Ihrer Abonnenten und Details zu deren Zuweisungen exportieren. Folgende Informationen sind enthalten: Name, E-Mail-Adresse, alternative E-Mail-Adresse, Abonnementebene, Datum der Zuweisung, Aktivierungsstatus, Ablaufdatum, Verweisfeld, Informationen zur Aktivierung von Downloads, Land, Sprache, Abonnementstatus und Abonnement-GUID.  Die Liste wird als CSV-Datei exportiert und kann zum Erstellen von Diagrammen, Pivots und anderen Artefakten ganz einfach in Microsoft Excel geöffnet werden.
+Im [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonnements können Sie eine Liste Ihrer Abonnenten und Details zu deren Zuweisungen exportieren. Folgende Informationen sind enthalten: Name, E-Mail-Adresse, alternative E-Mail-Adresse, Abonnementebene, Datum der Zuweisung, Aktivierungsstatus, Ablaufdatum, Verweisfeld, Informationen zur Aktivierung von Downloads, Land/Region, Sprache, Abonnementstatus und Abonnement-GUID.  Die Liste wird als CSV-Datei exportiert und kann zum Erstellen von Diagrammen, Pivots und anderen Artefakten ganz einfach in Microsoft Excel geöffnet werden.
 
 Eine zentrale Übersicht über alle Informationen zu Ihren Abonnenten vereinfacht folgende Aufgaben:
 - Verschaffen Sie sich einen Überblick darüber, welche Abonnements in jedem Team und an jedem Standort in der gesamten Organisation in Verwendung sind.
@@ -22,6 +23,7 @@ Eine zentrale Übersicht über alle Informationen zu Ihren Abonnenten vereinfach
 - Ermutigen Sie Benutzer, denen Abonnements zugewiesen sind, diese zu aktivieren.
 - Handeln Sie proaktiv, bevor Abonnements ablaufen.  
 - Finden Sie heraus, ob zu viele Abonnements zugewiesen wurden. 
+- Weisen Sie Abonnements über die Abonnement-ID zu, um zu steuern, welches Ablaufdatum die Abonnements Ihrer Abonnenten haben. 
 
 ## <a name="export-your-subscriptions"></a>Exportieren von Abonnements
 So führen Sie den Export aus:
@@ -30,9 +32,17 @@ So führen Sie den Export aus:
 > [!div class="mx-imgBorder"]
 > ![Abonnenten exportieren](_img/exporting-subscriptions/exporting-subscriptions.png)
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
 - Weitere Informationen zum Verwalten von Abonnements finden Sie in diesen Themen:
     - [Abgelaufene Abonnements](handle-expired-license.md)
     - [Überlastungen](handle-overclaimed-license.md)
     - [Maximale Nutzung](maximum-usage.md)
 - Benötigen Sie Hilfe bei irgendeinem Aspekt der Abonnementverwaltung?  Wenden Sie sich an den [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs).
+
+

@@ -2,7 +2,7 @@
 title: 'Tutorial: Debuggen von C#-Code'
 description: Erfahren Sie, wie Sie den Visual Studio-Debugger starten, den Code durchlaufen und Daten überprüfen.
 ms.custom: debug-experiment, seodec18, get-started
-ms.date: 01/31/2020
+ms.date: 04/23/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede47c9daf37011195d66c746498cdfc809d24b
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027254"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153061"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C#-Code mit Visual Studio
 
@@ -85,7 +85,7 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
 1. Öffnen Sie Visual Studio 2019.
 
-   Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**.
+   Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**.
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
@@ -153,9 +153,9 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
      In diesem Tutorial werfen wir einen genaueren Blick auf diese App mit dem Debugger und schauen uns die Funktionen des Debuggers an.
 
-2. Beenden Sie den Debugger durch Drücken der roten Stopptaste ![Debuggen beenden](../../debugger/media/dbg-tour-stop-debugging.png "Debuggen beenden") (**UMSCHALTTASTE** + **F5**).
+2. Durch Drücken der roten Stopptaste ![Debuggen beenden](../../debugger/media/dbg-tour-stop-debugging.png "Debuggen beenden") können Sie den Debugger beenden. Alternativ können Sie die Tastenkombination **UMSCHALT** + **F5** verwenden.
 
-3. Drücken Sie im Konsolenfenster auf eine beliebige Taste auf der Tastatur, um es zu schließen.
+3. Drücken Sie im Konsolenfenster auf eine Taste, um das Konsolenfenster zu schließen.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Festlegen eines Breakpoints und Starten des Debuggers
 
@@ -165,11 +165,11 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
     An der Stelle, an die Sie den Haltepunkt setzen, wird ein roter Kreis ![Haltepunkt](../../debugger/media/dbg-breakpoint.png "Haltepunkt") angezeigt.
 
-    Haltepunkte sind eine der grundlegendsten und wichtigsten Funktionen eines zuverlässigen Debuggings. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
+    Haltepunkte sind ein einfaches und wichtiges Feature zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
 2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche**Debuggen starten**![Debuggen starten](../../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
 
-    ![Festlegen und Treffen eines Haltepunkts](../csharp/media/get-started-set-breakpoint.png)
+    ![Festlegen und Treffen eines Haltepunkts](../csharp/media/get-started-set-breakpoint.gif)
 
     Der gelbe Pfeil stellt die Anweisung dar, an der der Debugger angehalten hat. An der gleichen Stelle wird auch die Ausführung der App unterbrochen (diese Anweisung wurde noch nicht ausgeführt).
 
@@ -177,23 +177,45 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
     Breakpoints sind eine nützliche Funktion, wenn Ihnen die Codezeile oder der Codeabschnitt bekannt ist, die bzw. den Sie genauer untersuchen möchten. Informationen zu den verschiedenen verfügbaren Typen von Haltepunkten, wie z. B. bedingte Haltepunkte, finden Sie unter [Verwenden von Haltepunkten im Visual Studio-Debugger](../../debugger/using-breakpoints.md).
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navigieren durch Code im Debugger mithilfe von Schrittbefehlen
+## <a name="navigate-code-and-inspect-data-using-data-tips"></a>Navigieren im Code und Untersuchen von Daten mithilfe von Datentipps
 
 In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese Weise eine schnelle Ausführung Ihrer App im Debugger möglich ist (entsprechende Befehle, wie z.B. Menübefehle, werden in Klammern angezeigt).
 
-1. Wenn der Debugger beim Methodenaufruf von `SendMessage`weiter ausgeführt werden soll, drücken Sie, während er in der `for`-Schleife der `Main`-Methode angehalten wurde, zweimal auf **F11** (oder klicken Sie auf **Debuggen > Hineinspringen**).
+1. Wenn der Debugger bei der `name += letters[i]`-Anweisung angehalten wurde, zeigen Sie auf die `letters`-Variable. Daraufhin wird Ihnen der Standardwert der Variablen angezeigt, bei dem es sich um den Wert des ersten Elements im Array `char[10]` handelt.
 
-     Nachdem Sie **F11** zweimal gedrückt haben, sollte der Debugger in die folgende Codezeile springen:
+     Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlichsten Funktionen des Debuggers. Es gibt verschiedene Möglichkeiten, Variablen zu untersuchen. Beim Debuggen eines Problems wird häufig versucht herauszufinden, ob Variablen die Werte speichern, die diese zu einem bestimmten Zeitpunkt erwartungsgemäß aufweisen.
+
+1. Erweitern Sie die Variable `letters`, damit ihre Eigenschaften angezeigt werden. Dazu zählen auch alle in der Variable enthaltenen Elemente.
+
+     ![Einen Datentipp anzeigen](../csharp/media/get-started-view-data-tip.png "Einen Datentipp anzeigen")
+
+1. Zeigen Sie als Nächstes auf die `name`-Variable. Daraufhin wird Ihnen der aktuelle Variablenwert angezeigt: eine leere Zeichenfolge.
+
+1. Drücken Sie **F10**, oder wählen Sie **Debuggen > Prozedurschritt** aus, um mit dem Aufruf der `SendMessage`-Methode fortzufahren, und drücken Sie dann **F10** ein weiteres Mal.
+
+     Durch Drücken der Taste F10 fährt der Debugger mit der nächsten Anweisung in Ihrem App-Code fort, ohne dass Funktionen oder Methoden schrittweise ausgeführt werden (der Code wird weiterhin ausgeführt). Durch Drücken von F10 im `SendMessage`-Methodenaufruf wurde der Implementierungscode für `SendMessage` übersprungen (der für uns gerade möglicherweise nicht von Interesse ist).
+
+1. Drücken Sie mehrmals auf **F10** (oder **Debuggen** > **Prozedurschritt**), um mehrmals die `for`-Schleife zu durchlaufen. Dabei pausiert der Debugger jedes Mal am Breakpoint, sodass Sie auf die `name`-Variable zeigen und ihren Wert überprüfen können.
+
+     ![Einen Datentipp anzeigen](../csharp/media/get-started-data-tip.gif "Einen Datentipp anzeigen")
+
+     Der Wert der Variable ändert sich bei jeder Iteration der `for`-Schleife, von `f` in `fr` in `fre` usw. Damit der Debugger die Schleife in diesem Szenario schneller durchläuft, können Sie stattdessen **F5** drücken oder **Debuggen** > **Fortsetzen** auswählen, um zum nächsten Breakpoint anstatt zur nächsten Anweisung zu springen.
+
+     Beim Debuggen möchten Sie häufig Eigenschaftswerte von Variablen schnell überprüfen können, um zu sehen, ob sie die Werte speichern, die sie speichern möchten. Die Datentipps sind eine gute Möglichkeit dafür.
+
+1. Drücken Sie **F11**, oder klicken Sie auf **Debuggen > Einzelschritt**, während der Debugger noch in der `for`-Schleife der `Main`-Methode pausiert ist, bis Sie beim `SendMessage`-Methodenaufruf angelangt sind.
+
+     Sie sollten sich in der folgenden Codezeile befinden:
 
      `SendMessage(name, a[i]);`
 
-1. Drücken Sie noch einmal auf **F11**, um in die `SendMessage`-Methode schrittweise auszuführen.
+1. Drücken Sie noch mal **F11**, um die `SendMessage`-Methode schrittweise auszuführen.
 
      Daraufhin wechselt der gelbe Zeiger in die `SendMessage`-Methode.
 
      ![Verwenden von F11 für schrittweise Codeausführung](../csharp/media/get-started-f11.png "Schrittweise ausführen (F10)")
 
-     Durch Drücken der Taste F11 wird der Befehl **Einzelschritt** ausgeführt, und die App wird Anweisung für Anweisung ausgeführt. Das Drücken der Taste F11 bietet eine gute Möglichkeit, den Ausführungsablauf am ausführlichsten zu überprüfen. (Wenn Sie den Code schneller durchlaufen möchten, zeigen wir Ihnen auch einige andere Optionen.) Standardmäßig überspringt der Debugger Nichtbenutzercode (weitere Einzelheiten hierzu finden Sie unter [Nur eigenen Code](../../debugger/just-my-code.md)).
+     Durch Drücken der Taste F11 wird der Befehl **Einzelschritt** ausgeführt, und die App wird Anweisung für Anweisung ausgeführt. Das Drücken der Taste F11 bietet eine gute Möglichkeit, den Ausführungsablauf am ausführlichsten zu überprüfen. Standardmäßig überspringt der Debugger Nichtbenutzercode (weitere Einzelheiten hierzu finden Sie unter [Nur eigenen Code](../../debugger/just-my-code.md)).
 
      Angenommen, Sie haben die Untersuchung der `SendMessage`-Methode abgeschlossen und möchten die Methode beenden, aber nicht den Debugger. Dies ist mit dem Befehl **Ausführen bis Rücksprung** möglich.
 
@@ -201,26 +223,18 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
 
      Mit diesem Befehl wird die Ausführung der App so lange fortgesetzt (und der Debugger weiter ausgeführt), bis die aktuelle Methode oder Funktion wieder ausgeführt wird.
 
-     Der Debugger befindet sich nun wieder in der `for`-Schleife der `Main`-Methode und wurde beim Methodenaufruf von `SendMessage` angehalten.
-
-1. Drücken Sie mehrmals auf **F11**, bis Sie noch einmal zum Methodenaufruf von `SendMessage` gelangen.
-
-1. Während der Debugger beim Methodenaufruf angehalten wurde, drücken Sie einmal auf **F10** (oder klicken Sie auf **Debuggen > Überspringen**).
-
-     ![Verwenden von F10 für Prozedurschritt](../csharp/media/get-started-step-over.png "Prozedurschritt (F10)")
-
-     Beachten Sie, dass der Debugger die `SendMessage`-Methode dieses Mal nicht schrittweise ausführt. Durch Drücken der Taste **F10** fährt der Debugger in Ihrem App-Code fort, ohne dass Funktionen oder Methoden schrittweise ausgeführt werden (der Code wird immer noch ausgeführt). Durch Drücken von **F10** im `SendMessage`-Methodenaufruf (anstelle von **F11**) wurde der Implementierungscode für `SendMessage` übersprungen (der für uns gerade möglicherweise nicht von Interesse ist). Weitere Informationen zu den verschiedenen Möglichkeiten, durch den Code zu navigieren, finden Sie unter [Navigieren durch Code mit dem Visual Studio-Debugger](../../debugger/navigating-through-code-with-the-debugger.md).
+     Der Debugger befindet sich nun wieder in der `for`-Schleife der `Main`-Methode und wurde beim Methodenaufruf von `SendMessage` angehalten. Weitere Informationen zu den verschiedenen Möglichkeiten, durch den Code zu navigieren, finden Sie unter [Navigieren durch Code mit dem Visual Studio-Debugger](../../debugger/navigating-through-code-with-the-debugger.md).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navigieren durch Code mithilfe von „Ausführung bis Klick“
 
-1. Drücken Sie **F5**, um noch einmal zum Haltepunkt zu springen.
+1. Drücken Sie **F5**, um noch mal zum Haltepunkt zu springen.
 
-1. Scrollen Sie im Code-Editor nach unten, und zeigen Sie mit dem Cursor so lange auf die `Console.WriteLine`-Methode in der `SendMessage`-Methode, bis links die grüne Schaltfläche **Run to Click** (Ausführung bis Klick) ![Run to Click (Ausführung bis Klick)](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird. Die QuickInfo für die Schaltfläche zeigt „Ausführung bis hier ausführen“ an.
+1. Scrollen Sie im Code-Editor nach unten, und zeigen Sie mit dem Cursor so lange auf die `Console.WriteLine`-Methode in der `SendMessage`-Methode, bis links die grüne Schaltfläche **Run to Click** (Ausführung bis Klick) ![Symbol für „Ausführung bis Klick“](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird. Die QuickInfo für die Schaltfläche zeigt „Ausführung bis hier ausführen“ an.
 
      ![Verwenden der Funktion „Ausführung bis Klick“](../csharp/media/get-started-run-to-click.png "Ausführung bis Klick")
 
    > [!NOTE]
-   > Die Schaltfläche **Ausführung bis Klick** ist neu in [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. (Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.)
+   > Die Schaltfläche **Ausführung bis Klick** ist neu in [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.
 
 2. Klicken Sie auf die Schaltfläche **Ausführung bis Klick**![Ausführung bis Klick](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -230,29 +244,11 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
 
 ## <a name="restart-your-app-quickly"></a>Schnelles Neustarten Ihrer App
 
-Klicken Sie in der Debugsymbolleiste (**STRG** + **UMSCHALTTASTE** + **F5**) auf **Neu starten** ![App neu starten](../../debugger/media/dbg-tour-restart.png "RestartApp").
+Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
 
 Durch das Klicken auf **Neu starten** sparen Sie im Vergleich zum Beenden der App und dem erneuten Starten des Debuggers Zeit. Der Debugger hält am ersten Breakpoint an, der bei der Codeausführung erreicht wird.
 
 Der Debugger hält wieder an dem von Ihnen zuvor in der `for`-Schleife festgelegten Haltepunkt an.
-
-## <a name="inspect-variables-with-data-tips"></a>Untersuchen von Variablen mithilfe von Datentipps
-
-Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlichsten Funktionen des Debuggers. Es gibt verschiedene Möglichkeiten, Variablen zu untersuchen. Beim Debuggen eines Problems wird häufig versucht herauszufinden, ob Variablen die Werte speichern, die diese zu einem bestimmten Zeitpunkt erwartungsgemäß aufweisen.
-
-1. Während der Debugger bei der `name += letters[i]`-Anweisung angehalten wurde, zeigen Sie auf die `letters`-Variable. Daraufhin wird Ihnen der Standardwert der Variablen angezeigt, bei dem es sich um den Wert des ersten Elements im Array `char[10]` handelt.
-
-1. Erweitern Sie die Variable `letters`, um ihre Eigenschaften anzuzeigen. Dazu zählen auch alle in der Variablen enthaltenen Elemente.
-
-1. Zeigen Sie als Nächstes auf die `name`-Variable. Daraufhin wird Ihnen der aktuelle Variablenwert angezeigt: eine leere Zeichenfolge.
-
-1. Drücken Sie mehrmals auf **F5** (oder **Debuggen** > **Weiter**), um mehrmals die `for`-Schleife zu durchlaufen. Dabei pausiert der Debugger jedes Mal am Haltepunkt, sodass Sie auf die `name`-Variable zeigen und ihren Wert überprüfen können.
-
-     ![Einen Datentipp anzeigen](../csharp/media/get-started-data-tip.gif "Einen Datentipp anzeigen")
-
-     Der Wert der Variable ändert sich bei jeder Iteration der `for`-Schleife, von `f` in `fr` in `fre` usw.
-
-     Beim Debuggen möchten Sie häufig Eigenschaftswerte von Variablen schnell überprüfen können, um zu sehen, ob sie die Werte speichern, die sie speichern möchten. Die Datentipps sind eine gute Möglichkeit dafür.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Untersuchen von Variablen über die Fenster „Auto“ und „Lokal“
 
@@ -266,17 +262,17 @@ Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlic
 
 1. Klappen Sie die `letters`-Variable auf, um die darin enthaltenen Elemente anzuzeigen.
 
-     ![Überprüfen von Variablen im Fenster „Lokale Variablen“](../csharp/media/get-started-locals-window.png "Lokalfenster")
+     ![Untersuchen von Variablen im Fenster „Lokale Variablen“](../csharp/media/get-started-locals-window.png "Lokalfenster")
 
     Im Fenster **Lokal** werden Ihnen die Variablen angezeigt, die sich im aktuellen [Bereich](https://www.wikipedia.org/wiki/Scope_(computer_science)) befinden, also im aktuellen Ausführungskontext.
 
 ## <a name="set-a-watch"></a>Festlegen von Überwachung
 
-1. Klicken Sie im Hauptfenster des Code-Editors mit der rechten Maustaste auf die `name`-Variable und dann auf **Überwachung hinzufügen**.
+1. Klicken Sie im Hauptfenster des Code-Editors mit der rechten Maustaste auf die `name`-Variable, und wählen Sie **Überwachung hinzufügen** aus.
 
     Das Fenster **Überwachung** wird unten im Code-Editor geöffnet. Sie können über das Fenster **Überwachung** eine Variable (oder einen Ausdruck) angeben, die Sie im Auge behalten möchten.
 
-    Nun haben Sie festgelegt, dass die `name`-Variable überwacht werden soll, und können die Wertänderung nachverfolgen, wenn Sie durch den Debugger navigieren. Im Gegensatz zu den anderen Variablenfenstern werden im Fenster **Überwachung** immer die Variablen angezeigt, die von Ihnen überwacht werden (wenn sie außerhalb des gültigen Bereichs liegen, sind sie ausgegraut).
+    Nun haben Sie festgelegt, dass die `name`-Variable überwacht werden soll, und Sie können seine Wertänderung sehen, wenn Sie durch den Debugger navigieren. Im Gegensatz zu den anderen Variablenfenstern werden im Fenster **Überwachung** immer die Variablen angezeigt, die von Ihnen überwacht werden (wenn sie außerhalb des gültigen Bereichs liegen, sind sie ausgegraut).
 
 ## <a name="examine-the-call-stack"></a>Überprüfen der Aufrufliste
 

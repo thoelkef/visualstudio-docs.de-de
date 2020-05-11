@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Fügen Sie eine Abhängigkeit zu einem VSIX-Paket | Microsoft-Dokumentation'
+title: 'Gewusst wie: Hinzufügen einer Abhängigkeit zu einem VSIX-Paket | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - package dll
 - vsix reference
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee6ebeb776e6aa85d5fba200ac357a7375fa2b99
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8b350f063c28762edf90edfe71330534451c75d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711079"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Vorgehensweise: Fügen Sie eine Abhängigkeit zu einem VSIX-Paket
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Gewusst wie: Hinzufügen einer Abhängigkeit zu einem VSIX-Paket
 
-Sie können eine VSIX-Paket-Bereitstellung einrichten, die alle Abhängigkeiten installiert, die noch nicht auf dem Zielcomputer vorhanden sind. Dazu gehören die VSIX-Abhängigkeiten an die *"Source.Extension.vsixmanifest"* Datei.
+Sie können eine VSIX-Paketbereitstellung einrichten, die alle Abhängigkeiten installiert, die noch nicht auf dem Zielcomputer vorhanden sind. Um dies zu erreichen, schließen Sie die VSIX-Abhängigkeiten in die Datei *source.extension.vsixmanifest* ein.
 
-## <a name="to-add-a-dependency"></a>Eine Abhängigkeit hinzufügen
+## <a name="to-add-a-dependency"></a>So fügen Sie eine Abhängigkeit hinzu
 
-1. Öffnen der *"Source.Extension.vsixmanifest"* Datei die **Entwurf** anzeigen. Wechseln Sie zu der **Abhängigkeiten** Registerkarte, und klicken Sie auf **neu**.
+1. Öffnen Sie die Datei *source.extension.vsixmanifest* in der **Entwurfsansicht.** Wechseln Sie zur Registerkarte **Abhängigkeiten,** und klicken Sie auf **Neu**.
 
-2. Um eine installierte Erweiterung hinzuzufügen: in der **neue Abhängigkeit hinzufügen** wählen Sie im Dialogfeld **-Erweiterung installiert** dann für die **Namen**, wählen Sie eine Erweiterung in der Liste.
+2. Um eine installierte Erweiterung hinzuzufügen: Wählen Sie im Dialogfeld **Neue Abhängigkeit hinzufügen** die Option **Installierte Erweiterung** aus, und wählen Sie dann für den **Namen**eine Erweiterung in der Liste aus.
 
-3. Eine andere VSIX hinzufügen, die nicht installiert ist: in der **neue Abhängigkeit hinzufügen** wählen Sie im Dialogfeld **Dateisystem** und verwenden Sie dann die **Durchsuchen** klicken, um die VSIX-Datei auszuwählen.
+3. Um eine weitere VSIX hinzuzufügen, die nicht installiert ist: Wählen Sie im Dialogfeld **Neue Abhängigkeit hinzufügen** die Option Datei im **Dateisystem** aus, und verwenden Sie dann die Schaltfläche **Durchsuchen,** um die VSIX auszuwählen.
 
-## <a name="require-a-specific-visual-studio-release"></a>Benötigen Sie eine bestimmte Version von Visual Studio
+## <a name="require-a-specific-visual-studio-release"></a>Erfordern einer bestimmten Visual Studio-Version
 
-Wenn die Erweiterung eine bestimmte Version von Visual Studio 2017 erforderlich ist, z. B. ein Feature in Version 15.3 hängt, können Sie die Nummer des Builds angeben, in VSIX Einbeziehen **"installationtarget"** . Beispielsweise hat in Version 15.3 eine Buildnummer von "15.0.26730.3". Sehen Sie die Zuordnung von Releases fest, erstellen Sie Zahlen [hier](../install/visual-studio-build-numbers-and-release-dates.md). Beachten Sie, dass mit der Versionsnummer "15.3" nicht ordnungsgemäß funktionieren.
+Wenn Ihre Erweiterung z. B. eine bestimmte Version von Visual Studio 2017 erfordert, hängt dies von einem feature ab, das in 15.3 veröffentlicht wurde, und Sie können die Buildnummer in Ihrem VSIX **InstallationTarget**angeben. Version 15.3 hat beispielsweise die Buildnummer '15.0.26730.3'. Sie können die Zuordnung von Releases zum Erstellen von Nummern [hier](../install/visual-studio-build-numbers-and-release-dates.md)sehen. Beachten Sie, dass die Verwendung der Versionsnummer '15.3' nicht ordnungsgemäß funktioniert.
 
-Wenn Ihre Erweiterung erforderlich, Version 15.3 ist oder höher verwenden, müssten Sie deklarieren die **"installationtarget" Version** als [15.0.26730.3, 16.0):
+Wenn Ihre Erweiterung 15.3 oder höher erfordert, würden Sie die **InstallationTarget-Version** als [15.0.26730.3, 16.0) deklarieren:
 
 ```xml
 <Installation>
@@ -44,10 +44,10 @@ Wenn Ihre Erweiterung erforderlich, Version 15.3 ist oder höher verwenden, müs
 </Installation>
 ```
 
-Die VSIX-Installationsprogramm erkennt von früheren Versionen von Visual Studio und informieren Sie den Benutzer, dass ein neueres Update erforderlich ist.
+Der VSIXInstaller erkennt frühere Versionen von Visual Studio und informiert den Benutzer, dass ein späteres Update erforderlich ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Referenz zum VSIX-Erweiterung Schema 1.0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [VSIX-Erweiterungsschema 1.0-Referenz](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
 - [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)
-- [Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [Vorbereiten von Erweiterungen für die Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

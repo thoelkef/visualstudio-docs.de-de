@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04656351b538aa71811bc32d6b45d735f5441441
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773204"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Sammeln von .NET Framework-Arbeitsspeicherdaten über die Profilerbefehlszeile
@@ -24,7 +24,7 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
 
 |Aufgabe|Verwandter Inhalt|
 |----------|---------------------|
-|**Starten einer Anwendung und Erstellen von Profilen für den .NET-Arbeitsspeicher**|-   [Vorgehensweise: Starten einer .NET Framework-Anwendung mit dem Profiler zum Sammeln von Speicherdaten](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
+|**Starten einer Anwendung und Erstellen von Profilen für den .NET-Arbeitsspeicher**|-   [Vorgehensweise: Starten einer .NET Framework-Anwendung mit dem Profiler zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**Anfügen des Profilers an eine .NET-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine .NET Framework-Anwendung zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
 |**Instrumentieren einer Anwendung zum Sammeln von .NET-Arbeitsspeicherdaten**|-   [Vorgehensweise: Instrumentieren einer eigenständigen .NET Framework-Komponente und Sammeln von Arbeitsspeicherdaten mit dem Profiler](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|
 
@@ -49,5 +49,5 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analysieren von Ansichten und Berichten für .NET-Arbeitsspeicherdaten
 - [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
 - [Referenz zu Profilerstellungstools für die Befehlszeile](../profiling/command-line-profiling-tools-reference.md)

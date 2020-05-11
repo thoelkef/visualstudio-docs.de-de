@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 086601cb8cde00d63e3be85c028201922ebe5b76
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584412"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880194"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -20,7 +20,9 @@ Wenn Sie Visual Studio verwenden möchten, um Tests remote auszuführen, Verteil
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 Wenn Sie mit Microsoft Test Manager Tests in der Laborumgebung ausführen, verwalten Sie Testcontroller und deren Agents, indem Sie den **Testcontroller-Manager** im **Lab-Center** für Microsoft Test Manager verwenden. Dieses Thema gilt nur, wenn Sie Visual Studio verwenden, um Tests auszuführen.
+::: moniker-end
 
 Weitere Informationen darüber, wie Testcontroller und Test-Agents installiert und konfiguriert werden, um Tests in Visual Studio auszuführen, finden Sie unter [Configure test agents and controllers (Konfigurieren von Test-Agents und Testcontrollern)](../test/configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -90,25 +92,36 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
 
 Test-Agents können nur entfernt werden, wenn sie sich im Offlinezustand befinden.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Diese Vorgehensweise können Sie nicht zum Entfernen von Agents verwenden, die als Teil einer Laborumgebung bei einem Controller registriert sind. Um diese Agents von einem Controller zu entfernen, müssen Sie die Umgebung mithilfe von Microsoft Test Manager entfernen.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Diese Vorgehensweise können Sie nicht zum Entfernen von Agents verwenden, die als Teil einer Laborumgebung bei einem Controller registriert sind.
+::: moniker-end
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>So entfernen Sie einen Test-Agent aus einem Testcontroller
 
-1. Wenn der Testcontroller bei keinem Projekt registriert ist, führen Sie die folgenden Schritte aus.
+::: moniker range=">=vs-2019"
+In Visual Studio 2019 können Sie einen Test-Agent nicht entfernen, wenn der Testcontroller bei einem Projekt registriert ist.
+::: moniker-end
+Wenn der Testcontroller bei keinem Projekt registriert ist, führen Sie die folgenden Schritte aus.
 
-    1. Öffnen Sie die Testeinstellungsdatei in Visual Studio für Ihr Testprojekt, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
+1. Öffnen Sie die Testeinstellungsdatei in Visual Studio für Ihr Testprojekt, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
 
-         Das Dialogfeld **Testcontroller verwalten** wird angezeigt.
+   Das Dialogfeld **Testcontroller verwalten** wird angezeigt.
 
-    2. Geben Sie in der Dropdownliste **Controller** den Namen des Computers ein, auf dem der Testcontroller eingerichtet wurde. Wenn Sie bereits einen bestimmten Testcontroller verwaltet haben, können Sie den Namen in der Liste auswählen.
+2. Geben Sie in der Dropdownliste **Controller** den Namen des Computers ein, auf dem der Testcontroller eingerichtet wurde. Wenn Sie bereits einen bestimmten Testcontroller verwaltet haben, können Sie den Namen in der Liste auswählen.
 
-    3. Wählen Sie im Bereich **Agents** den Namen des Test-Agents aus. Wenn der Agent noch immer online ist, klicken Sie auf **Offline**. Klicken Sie auf **Entfernen**, um ihn zu entfernen.
+3. Wählen Sie im Bereich **Agents** den Namen des Test-Agents aus. Wenn der Agent noch immer online ist, klicken Sie auf **Offline**. Klicken Sie auf **Entfernen**, um ihn zu entfernen.
 
-        > [!NOTE]
-        > Durch Entfernen eines Test-Agents wird nur die Zuordnung zum Testcontroller aufgehoben. Unter **Programme und Funktionen** auf dem Test-Agent-Computer können Sie den Test-Agent vollständig deinstallieren.
+   > [!NOTE]
+   > Durch Entfernen eines Test-Agents wird nur die Zuordnung zum Testcontroller aufgehoben. Unter **Programme und Funktionen** auf dem Test-Agent-Computer können Sie den Test-Agent vollständig deinstallieren.
 
-2. Wenn der Testcontroller bei einem Projekt registriert ist, entfernen Sie den Agent mithilfe von Microsoft Test Manager.
+::: moniker range="vs-2017"
+Wenn der Testcontroller bei einem Projekt registriert ist, entfernen Sie den Agent mithilfe von Microsoft Test Manager.
+::: moniker-end
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Ändern der Einstellungen für einen Test-Agent
 
@@ -125,8 +138,10 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>So ändern Sie die Einstellungen eines Test-Agents
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Wenn der Test-Agent bei einem Testcontroller registriert ist, der bei einem Projekt registriert ist, ändern Sie die Einstellungen in Microsoft Test Manager.
+::: moniker-end
 
 1. Wählen Sie zum Konfigurieren und Überwachen des Testcontrollers und der registrierten Agents für einen Auslastungstest das Menü **Auslastungstest** in Visual Studio aus, und klicken Sie dann auf **Testcontroller verwalten**. Öffnen Sie für andere Test die Testeinstellungsdatei für Ihr Testprojekt in Visual Studio, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
 

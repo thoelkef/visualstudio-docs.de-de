@@ -10,7 +10,7 @@
       href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Weitere Visual Studio-Features
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-- name: Erstellen Sie eine App
+- name: Erstellen einer App
   expanded: true
   items:
     - name: 'Erstellen Ihrer ersten C#-App'
@@ -48,9 +48,9 @@
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Debuggen Ihres Codes
       href: ../csharp/tutorial-debugger.md
-    - name: Komponententest
+    - name: Komponententests
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Bereitstellen des Projekts
       href: ../../deployment/index.yml
-    - name: Zugriff auf Daten
+    - name: Zugreifen auf Daten
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json

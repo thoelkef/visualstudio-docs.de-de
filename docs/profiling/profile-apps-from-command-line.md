@@ -1,8 +1,8 @@
 ---
-title: Messen der CPU-Auslastung über die Befehlszeile
-description: Messen Sie die CPU-Auslastung in Ihrer Anwendung über die Befehlszeile.
+title: Messen der Leistung über die Befehlszeile
+description: Messen Sie die CPU-Leistung und die Nutzung des verwalteten Speichers in Ihrer Anwendung über die Befehlszeile.
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972416"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638690"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Messen der Anwendungsleistung über die Befehlszeile
 
@@ -27,11 +27,13 @@ ms.locfileid: "62972416"
 
 In dem Beispiel, das in diesem Artikel beschrieben wird, sammeln Sie Leistungsinformationen zum Microsoft Notepad. Dieselbe Methode kann aber auch verwendet werden, um jeden anderen Prozess zu profilen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
-* Visual Studio 2019 Preview 3 oder höhere Versionen
+* Visual Studio 2019 oder höher
 
 * Kenntnisse im Umgang mit Befehlszeilentools
+
+* Installieren Sie die [Leistungstools für Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) auf dem Remotecomputer, um Leistungsinformationen auf einem Remotecomputer zu erfassen, auf dem Visual Studio nicht installiert ist. Die Version der Tools muss mit Ihrer Version von Visual Studio übereinstimmen.
 
 ## <a name="collect-performance-data"></a>Sammeln von Leistungsdaten
 
@@ -65,7 +67,7 @@ Bei der Profilerstellung mithilfe der CLI-Diagnosetools von Visual Studio wird d
 
 1. Wechseln Sie zur Dateiausgabe des vorherigen Befehls, und öffnen Sie sie in Visual Studio, um die gesammelten Informationen zu untersuchen.
 
-## <a name="config_file"></a> Agent-Konfigurationsdateien
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Agent-Konfigurationsdateien
 
 Sammlungs-Agents sind austauschbare Komponenten, die verschiedene Datentypen sammeln, je nachdem, was gemessen werden soll.
 
@@ -74,7 +76,7 @@ Der Bequemlichkeit halber können Sie diese Informationen in einer Agent-Konfigu
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * Konfigurationen für die CPU-Nutzung (CpuUsage) (Standard/Hoch/Niedrig). Dies entspricht den Daten, die für das Profilerstellungstool für die [CPU-Auslastung](../profiling/cpu-usage.md) gesammelt wurden.
-* DotNetObjectAlloc-Konfigurationen (Standard/Niedrig). Dies entspricht den Daten, die für das [.NET-Objektzuteilungstool](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling) gesammelt wurden.
+* DotNetObjectAlloc-Konfigurationen (Standard/Niedrig). Dies entspricht den Daten, die für das [.NET-Objektzuteilungstool](../profiling/dotnet-alloc-tool.md) gesammelt wurden.
 
 Die Konfigurationen „Standard“, „Niedrig“ und „Hoch“ beziehen sich auf die Stichprobenentnahmerate. So bedeutet „Niedrig“ z.B. 100 Stichproben pro Sekunde, und „Hoch“ 4000 Stichproben pro Sekunde.
 

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773295"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten
@@ -30,7 +30,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 ## <a name="general"></a>Allgemein
  Die allgemeinen Spalten bezeichnen die Funktion in einer Ansichtszeile.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Funktionsname**|Der Name der Funktion.|
 |**Funktionsadresse**|Die Adresse der Funktion.|
@@ -49,7 +49,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 ## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit in untergeordneten Funktionen und die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabevorgänge.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**verstrichene inklusive Zeit**|- Für die aktuelle Funktion die in der Funktion aufgewendete Zeit. Der Wert umfasst die Zeit in untergeordneten Funktionen und für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br />- Bei einer aufrufenden Funktion die Menge an verstrichener inklusiver Zeit für die aktuelle Funktion, die von Aufrufen von dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit für die Instanzen der Funktion, die durch Aufrufe aus der aktuellen Funktion generiert wurden. Der Wert umfasst die Zeit in untergeordneten Funktionen der aufgerufenen Funktion und die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabevorgänge.|
 |**verstrichene inklusive Zeit %**|Der Prozentsatz der gesamten verstrichenen inklusiven Zeit, die innerhalb der verstrichenen inklusiven Zeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|
@@ -60,7 +60,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 ## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit
  Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**verstrichene exklusive Zeit**|- Bei der aktuellen Funktion die Zeit, die für die direkte Ausführung der Funktion aufgewendet wurde. Der Wert umfasst die Zeit in untergeordneten Funktionen und für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br />- Bei einer aufrufenden Funktion die Menge an verstrichener exklusiver Zeit für die aktuelle Funktion, die von Aufrufen von dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit für die Instanzen dieser Funktion, die durch Aufrufe aus der aktuellen Funktion generiert wurden. Der Wert umfasst die Zeit für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen), jedoch nicht die Zeit in untergeordneten Funktionen der aufgerufenen Funktion.|
 |**verstrichene exklusive Zeit %**|Der Prozentsatz der gesamten verstrichenen exklusiven Zeit, die innerhalb der gesamten verstrichenen exklusiven Zeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|
@@ -71,7 +71,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 ## <a name="application-inclusive-values"></a>Werte für inklusive Anwendungszeit
  Werte für die inklusive Anwendungszeit geben die Zeit an, die sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit in untergeordneten Funktionen, jedoch nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**inklusive Anwendungszeit**|- Bei der aktuellen Funktion die Zeit, die für die Funktion und ihre untergeordneten Funktionen aufgewendet wurde. Der Wert umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br />- Bei einer aufrufenden Funktion die Menge an inklusiver Anwendungszeit für die aktuelle Funktion, die von Aufrufen von dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit für die Instanzen dieser Funktion, die durch Aufrufe aus der aktuellen Funktion generiert wurden. Der Wert umfasst die Zeit in untergeordneten Funktionen der aufgerufenen Funktion, jedoch nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabevorgänge.|
 |**inklusive Anwendungszeit %**|Der Prozentsatz der insgesamt verstrichenen inklusiven Zeit, die innerhalb der gesamten inklusiven Anwendungszeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|
@@ -82,7 +82,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 ## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit
  Werte für die exklusive Anwendungszeit geben die Zeit an, die in der Funktion verbracht wurde. Sie umfassen weder den zeitlichen Aufwand für untergeordnete Funktionen noch die Zeit, die für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe-/Ausgabeoperationen) aufgewendet wurde.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**exklusive Anwendungszeit**|- Bei der aktuellen Funktion die Zeit, die für die direkte Ausführung der Funktion aufgewendet wurde. Der Wert umfasst weder die Zeit in untergeordneten Funktionen noch die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br />- Bei einer aufrufenden Funktion die Menge an exklusiver Anwendungszeit für die aktuelle Funktion, die von Aufrufen aus dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit für die Instanzen dieser Funktion, die durch Aufrufe aus der aktuellen Funktion generiert wurden. Der Wert umfasst weder die Zeit in untergeordneten Funktionen der aufgerufenen Funktion noch die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.|
 |**exklusive Anwendungszeit %**|Der Prozentsatz der gesamten verstrichenen exklusiven Zeit, die innerhalb der exklusiven Gesamtanwendungszeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|
@@ -91,7 +91,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 |**Minimale exklusive Anwendungszeit**|Die minimale exklusive Anwendungszeit eines Aufrufs dieser Funktion in diesem Kontext.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Aufrufer-/Aufgerufener-Ansicht: Samplingdaten](../profiling/caller-callee-view-sampling-data.md)
 - [Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 - [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

@@ -1,70 +1,70 @@
 ---
-title: Visual Studio-Debugger-Glossar | Microsoft-Dokumentation
+title: Glossar des Visual Studio-Debuggers | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d968b5c0d18c7ba74e1bd5ea541fdfe080dc4f78
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316077"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713346"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossar zum Visual Studio-Debugger
-Im folgenden sind die Begriffe in der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging-SDK.
+Im Folgenden finden Sie [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Begriffe, die im Debugging SDK verwendet werden.
 
 ## <a name="terms"></a>Begriffe
- gebundene Haltepunkt eine Abstraktion für einen Haltepunkt im Code festlegen. Es ist eine direkte Beziehung zwischen einen gebundenen Haltepunkt und eine Anweisung Haltepunkt im Code-Datenstrom. Wenn der code entladen, gebundener Haltepunkte möglicherweise Aufheben der Bindung.
+ gebundener Haltepunkt Eine Abstraktion für einen im Code festgelegten Haltepunkt. Es besteht eine 1:1-Beziehung zwischen einem gebundenen Haltepunkt und einer Haltepunktanweisung im Codestream. Beim Entladen des Codes können gebundene Haltepunkte die Bindung auflösen.
 
- Kausalität bietet die Möglichkeit, einen logischen Thread der Ausführung auf mehrere physische Threads, Prozesse und Computer nachzuverfolgen und um die Aufrufliste dieses logischen Threads zu einem bestimmten Zeitpunkt in der Lebensdauer des Threads zu rekonstruieren.
+ Causality Bietet die Möglichkeit, einen logischen Ausführungsthread über mehrere physische Threads, Prozesse und Computer hinweg nachzuverfolgen und die Aufrufliste dieses logischen Threads an einem bestimmten Punkt in der Lebensdauer dieses Threads zu rekonstruieren.
 
- Codekontext stellt eine Abstraktion einer Position im Code bekannt, dass die Debug-Engine bereit. Für die meisten Laufzeitfehler-Architekturen ist ein Codekontext eine Adresse im Anweisungsstream eines Programms. Für nicht traditionelle Sprachen, in denen Code Anweisungen nicht dargestellt werden kann, kann ein Codekontext mithilfe anderer Methoden dargestellt werden.
+ Codekontext Stellt eine Abstraktion einer Position im Code bereit, die dem Debugmodul bekannt ist. Bei den meisten Laufzeitarchitekturen ist ein Codekontext eine Adresse im Anweisungsstream eines Programms. Bei nicht traditionellen Sprachen, in denen Code möglicherweise nicht durch Anweisungen dargestellt wird, kann ein Codekontext auf andere Weise dargestellt werden.
 
- Codepfad stellt einen Zeitpunkt der Ausführung im Code, in denen eine Abzweigung verwendet wird, oder erfolgt ein Funktionsaufruf dar. Eine stapelüberwachung ist praktisch eine Liste von Funktion Aufruf Codepfade.
+ Codepfad Stellt einen Ausführungspunkt im Code dar, an dem eine Verzweigung oder ein Funktionsaufruf ausgeführt wird. Eine Stapelablaufverfolgung ist im Wesentlichen eine Liste von Funktionsaufrufcodepfaden.
 
- Debug-Engine (DE) eine Komponente, die ermöglicht das Debuggen von einer Runtime-Architektur. Eine Debug-Engine funktioniert in Verbindung mit dem Betriebssystem oder -Interpreter und Debuggen von Diensten wie z. B. Ausführung-Steuerelement, Haltepunkte und Ausdruck Auswertung enthält.
+ Debug-Engine (DE) Eine Komponente, die das Debuggen einer Laufzeitarchitektur ermöglicht. Ein Debugmodul arbeitet mit dem Interpreter oder Betriebssystem zusammen und stellt Debugdienstdienste wie Ausführungssteuerung, Haltepunkte und Ausdrucksauswertung bereit.
 
- Dokumentkontext stellt eine Abstraktion einer Position in einer Datei-Quelldokument bekannt, dass die Debug-Engine bereit. Für die meisten Sprachen ist ein Dokumentkontext eine Position in einer Quelldatei. Für nicht traditionelle Sprachen, für die die Quelldatei Text möglicherweise nicht möglicherweise ein Dokumentenkontext andere Weise dargestellt werden. Siehe auch *dokumentieren Position*.
+ Dokumentkontext Stellt eine Abstraktion einer Position in einem Quelldateidokument bereit, das dem Debugmodul bekannt ist. Für die meisten Sprachen ist ein Dokumentkontext eine Position in einer Quelldatei. Bei nicht traditionellen Sprachen, bei denen die Quelldatei möglicherweise kein Text ist, kann ein Dokumentkontext auf andere Weise dargestellt werden. Siehe auch *Dokumentposition*.
 
- Dokumentposition stellt eine Abstraktion einer Position in einer Quelldatei bekannt, dass die IDE bereit. Für die meisten Sprachen wird eine Dokumentposition einer Position in einer Quelldatei. Für nicht traditionelle Sprachen wird möglicherweise eine Dokumentposition auf andere Weise dargestellt werden. Siehe auch *Dokumentkontext*.
+ Dokumentposition Stellt eine Abstraktion einer Position in einer Quelldatei bereit, die der IDE bekannt ist. Für die meisten Sprachen ist eine Dokumentposition eine Position in einer Quelldatei. Bei nicht traditionellen Sprachen kann eine Dokumentposition auf andere Weise dargestellt werden. Siehe auch *Dokumentkontext*.
 
- Fehler beim Haltepunkt eine Abstraktion für einen Fehler in ein ausstehender Haltepunkt beschreiben. Ein Haltepunkt auf Fehler unter Umständen einen Fehler in den Speicherort der ausstehenden Haltepunkt, den Ausdruck, der mit den ausstehenden Haltepunkt oder andere Informationen, die Bindung den ausstehenden Haltepunkt an einem codespeicherort verhindert beschreiben.
+ Fehlerhaltepunkt Eine Abstraktion zum Beschreiben eines Fehlers in einem ausstehenden Haltepunkt. Ein Fehlerhaltepunkt kann einen Fehler an der Position des ausstehenden Haltepunkts, den Ausdruck, der dem ausstehenden Haltepunkt zugeordnet ist, oder andere Informationen beschreiben, die verhindern, dass der ausstehende Haltepunkt an einen Codespeicherort gebunden wird.
 
- Evaluierungskontext stellt eine Abstraktion der ein Programmierungskontext für die Auswertung von Ausdrücken bereit. In der Regel mit ein Evaluierungskontext ein Bereich ist. Bei der Auswertung des Ausdrucks in einem Ausdruckskontext bietet der Ausdruckskontext Bereichsregeln, die der Zeitpunkt der Erstellung zu entsprechen. Beispielsweise wird ein Ausdruckskontext erstellt, die in einem Stapelrahmen der Kontext bereitgestellt, für Ihre Evaluierung von lokalen Variablen, Methodenparameter, Klasse, Elemente (falls zutreffend) und globale Variablen.
+ Evaluierungskontext Bietet eine Abstraktion eines Programmierkontexts für die Ausdrucksauswertung. In der Regel ist ein Evaluierungskontext ein Bereich. Bei der Ausdrucksauswertung in einem Ausdruckskontext stellt der Ausdruckskontext Bereichsregeln bereit, die dem Erstellungspunkt entsprechen. Beispielsweise stellt ein in einem Stapelrahmen erstellter Ausdruckskontext den Kontext zum Auswerten lokaler Variablen, Methodenparameter, Klassenmember (falls zutreffend) und globaler Variablen bereit.
 
- abgefangen Ausnahme eine Ausnahme, die von einer Debug-Engine abgefangen wird, auch wenn kein Mechanismus zur Ausnahmebehandlung direkt in den aktuellen Stapelrahmen ist.
+ abgefangene Ausnahme Eine Ausnahme, die von einem Debugmodul abgefangen wird, auch wenn im aktuellen Stapelrahmen kein Ausnahmebehandlungsmechanismus vorhanden ist.
 
- JustMyCode das Konzept der nur den Code Debuggen, der zu einem Benutzer gehört, und wird ignoriert, alle temporären Code wie z. B. Systemcode – selbst wenn der Quellcode für diesen Systemcode verfügbar ist.
+ JustMyCode Das Konzept, nur den Code zu debuggen, der einem Benutzer gehört, und den gesamten Zwischencode wie Systemcode zu ignorieren – auch wenn Quellcode für diesen Systemcode verfügbar ist.
 
- ausstehender Haltepunkt ist stellt eine Abstraktion für Haltepunkte vor, während und nach Code geladen, und es wird eine Möglichkeit, Haltepunkte zu virtualisieren. Ein ausstehender Haltepunkt:
+ Ausstehender Haltepunkt Stellt eine Abstraktion für Haltepunkte vor, während und nach dem Laden von Code und eine Möglichkeit zum Virtualisieren von Haltepunkten bereit. Ein ausstehender Haltepunkt:
 
-- Enthält alle Informationen, die erforderlich sind, einen Haltepunkt für Code in einem oder mehreren Programmen zu binden.
+- Enthält alle Informationen, die zum Binden eines Haltepunkts an Code in einem oder mehreren Programmen erforderlich sind.
 
-- Können eine Bindung an mehreren Standorten von Code in einem oder mehreren Programmen.
+- Kann an mehrere Codespeicherorte in einem oder mehreren Programmen gebunden werden.
 
-- Bindet niemals selbst Code.
+- Bindet sich niemals an Code.
 
-  Jedes Mal Code lädt, alle ausstehenden Haltepunkte in einem Programm werden überprüft, um festzustellen, ob sie binden können. Ein ausstehender Haltepunkt ist dann alle gebundenen Breakpoints enthalten, die gebunden wird.
+  Jedes Mal, wenn Code geladen wird, werden alle ausstehenden Haltepunkte in einem Programm überprüft, um festzustellen, ob sie binden können. Ein ausstehender Haltepunkt enthält angeblich alle gebundenen Haltepunkte, die er bindet.
 
-  verarbeitet einen physische Win32-Prozess. Ein Prozess kann mehrere Programme enthalten. Siehe auch *Programm*.
+  prozess Ein physischer Win32-Prozess. Ein Prozess kann mehrere Programme enthalten. Siehe auch *Programm*.
 
-  Programmieren von einem einzigen Namespace, die in einer bestimmten Laufzeit-Architektur ausgeführt. Siehe auch *Prozess*.
+  programm Ein einzelner Namespace, der in einer bestimmten Laufzeitarchitektur ausgeführt wird. Siehe auch *Prozess*.
 
-  sitzungsbasierter Debug-Manager (SDM) verwaltet eine beliebige Anzahl von Debug-Engines, die eine beliebige Anzahl von Programmen in mehreren Prozessen auf eine beliebige Anzahl von Computern zu debuggen. Auf der Basisebene ist das SDM ein multiplexer der Debug-Engines. Darüber hinaus bietet das SDM eine einheitliche Ansicht der Debugsitzung der IDE.
+  Sitzungsdebug-Manager (SDM) Verwaltet eine beliebige Anzahl von Debugmodulen, die eine beliebige Anzahl von Programmen in mehreren Prozessen auf einer beliebigen Anzahl von Computern debuggen. Auf der Basisebene ist das SDM ein Multiplexer von Debug-Engines. Darüber hinaus bietet das SDM eine einheitliche Ansicht der Debugsitzung für die IDE.
 
-  Stapelrahmen stellt den Status der Berechnung auf einem bestimmten Frame und Maß Aufrufe geschachtelter Funktionen dar.
+  stack frame Stellt den Berechnungszustand für einen bestimmten Frame und eine bestimmte Ebene geschachtelter Funktionsaufrufe dar.
 
-  Thread das generalisierte Konzept der Anweisung stapelbasierten-Ausführung in mindestens ein Programm ausgeführt werden soll.
+  thread Der allgemeine Begriff der stapelbasierten Anweisungsausführung, der in mindestens einem Programm ausgeführt wird.
 
-  Warnung Haltepunkt eine Abstraktion zum Beschreiben der in ein ausstehender Haltepunkt einer Warnung. Ein Haltepunkt für die Warnung beschreibt einen Grund, warum der ausstehenden Haltepunkt noch nicht an einen Speicherort gebunden wurde. Dies kann sein, dass der Code noch nicht für den Speicherort der ausstehenden Haltepunkt beschrieben oder einem anderen Grund geladen ist.
+  Warnhaltepunkt Eine Abstraktion zum Beschreiben einer Warnung in einem ausstehenden Haltepunkt. Ein Warnhaltepunkt beschreibt einen Grund, warum der ausstehende Haltepunkt noch nicht an einen Codespeicherort gebunden ist. Dies kann sein, dass der Code für den vom ausstehenden Haltepunkt beschriebenen Speicherort oder aus einem anderen Grund noch nicht geladen wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Visual Studio Debugger-Erweiterbarkeit](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

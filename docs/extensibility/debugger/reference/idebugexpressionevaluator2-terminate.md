@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::Terminate | Microsoft-Dokumentation
+title: IDebugExpressionEvaluator2::Beenden | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 018557732727c9a4e6669a983ec54fec83263ff5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5460930cbcc528648c2a6c502ef7eb9acbe00d62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338586"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729156"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
-Beendet und die ausdrucksauswertung bereinigt.
+Beendet und bereinigt den Ausdrucksbewerter.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,13 +37,13 @@ int Terminate ();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Weist die ausdrucksauswertung Wenn es bereinigt wird.
+## <a name="remarks"></a>Bemerkungen
+Gibt den Ausdrucksbewerter an, wenn er bereinigt wird.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **ExpressionEvaluatorPackage** -Objekt, das macht die [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **ExpressionEvaluatorPackage-Objekt** implementiert wird, das die [IDebugExpressionEvaluator2-Schnittstelle](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) verfügbar macht.
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
@@ -59,5 +59,5 @@ STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

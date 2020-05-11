@@ -1,77 +1,77 @@
 ---
-title: Erweitern von Eigenschaften | Microsoft-Dokumentation
+title: Erweitern von Eigenschaften | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee70a4d88dfc6eb1dae5c0d8fba0fb1deb7a7621
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7064128c54434b0a7bb8799e62b751e765511c48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332192"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708419"
 ---
 # <a name="extend-properties"></a>Erweitern von Eigenschaften
-Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Eigenschaften** Fenster ist eine universelle Eigenschaftenbrowser für COM- und COM+-Komponenten und unterstützt alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Produkte. Die **Eigenschaften** Fenster arbeitet mit `ITypeInfo` geben Informationen und COM+-Metadaten zum Auflisten der Eigenschaften zur Entwurfszeit für das aktuell ausgewählte Objekt in einem anderen Fenster in der integrierten Entwicklungsumgebung (IDE).
+Das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Fenster Eigenschaften** ist ein universeller Eigenschaftenbrowser für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] COM- und COM+-Komponenten und unterstützt alle Produkte. Das **Fenster** Eigenschaften `ITypeInfo` arbeitet mit Typinformationen und COM+-Metadaten, um die Entwurfszeiteigenschaften für das aktuell ausgewählte Objekt in einem anderen Fenster in der integrierten Entwicklungsumgebung (IDE) aufzulisten.
 
- Die **Eigenschaften** Fenster, das durch Drücken von geöffnet werden kann **F4** auf der Tastatur, oder wählen Sie **Fenster "Eigenschaften"** auf die **Ansicht** im Menü Dient zum Anzeigen und Bearbeiten der Konfiguration unabhängig, zur Entwurfszeit Eigenschaften und Ereignissen ausgewählter Objekte. Konfigurationsabhängigen Eigenschaften für Projektmappen und Projekten, werden angezeigt, auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md). Weitere Informationen [verwalten Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md).
+ Das **Eigenschaftenfenster,** das durch Drücken von **F4** auf der Tastatur oder auswählen von **Eigenschaftenfenster** im Menü **Ansicht** geöffnet werden kann, wird zum Anzeigen und Bearbeiten konfigurationsunabhängiger, entwurfszeitlicher Eigenschaften und Ereignisse ausgewählter Objekte verwendet. Konfigurationsabhängige Eigenschaften, die Projektlösungen und Projekten zugeordnet sind, werden auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md)angezeigt. Weitere Informationen finden Sie unter Verwalten von [Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md).
 
- ![Übersicht über das Eigenschaftenfenster](../../extensibility/internals/media/vspropertieswindow.png "VsPropertiesWindow") Fenster "Eigenschaften"
+ ![Eigenschaftenfensterübersicht](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow") Eigenschaftenfenster
 
- Dieser Abschnitt enthält ausführliche Informationen zu den einzelnen Bereichen im Zusammenhang der **Eigenschaften** Fenster und die Schnittstellen, die Sie implementieren müssen, und Aufruf an das Fenster zu füllen.
+ Dieser Abschnitt enthält detaillierte Informationen zu den einzelnen Bereichen des **Eigenschaftenfensters** und den Schnittstellen, die Sie implementieren und aufrufen müssen, um das Fenster aufzufüllen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Übersicht über das Eigenschaftenfenster](../../extensibility/internals/properties-window-overview.md)
+- [Eigenschaftenfensterübersicht](../../extensibility/internals/properties-window-overview.md)
 
- Erläutert den Zweck der **Eigenschaften** Fensters in Bezug auf das Toolfenster und Dokumentfenster.
+ Erläutert den Zweck des **Eigenschaftenfensters** relativ zum Werkzeugfenster und zum Dokumentfenster.
 
-- [Vorlagenrichtlinie und das Fenster "Eigenschaften"](../../extensibility/internals/template-policy-and-the-properties-window.md)
+- [Vorlagenrichtlinie und das Eigenschaftenfenster](../../extensibility/internals/template-policy-and-the-properties-window.md)
 
- Erläutert, wie ein Projekt in einem Enterprise-Vorlagen-Projekt enthalten ist, und wie diese Enterprise-Vorlagenprojekt Richtlinie erzwingen kann.
+ Erläutert, wie ein Projekt in einem Enterprise-Vorlagenprojekt enthalten ist und wie dieses Enterprise-Vorlagenprojekt Richtlinien erzwingen kann.
 
-- [Eigenschaften im Fenster Felder und Schnittstellen](../../extensibility/internals/properties-window-fields-and-interfaces.md)
+- [Eigenschaften Fensterfelder und Schnittstellen](../../extensibility/internals/properties-window-fields-and-interfaces.md)
 
- Erläutert die Grundlage für die Auswahl, die bestimmt, welche Informationen angezeigt werden, in der **Eigenschaften** Fenster.
+ Erläutert die Auswahlgrundlage, die bestimmt, welche Informationen im **Eigenschaftenfenster** angezeigt werden.
 
-- [Objektliste des Eigenschaftenfensters](../../extensibility/internals/properties-window-object-list.md)
+- [Eigenschaftenfenster-Objektliste](../../extensibility/internals/properties-window-object-list.md)
 
- Beschreibt den Zweck der der **Eigenschaften** Objektliste des Eigenschaftenfensters, beschreiben Sie, wenn ein anderes Objekt aus dieser Liste einen Aufruf ausgelöst wird, die Umgebung informiert wird, dass ein neues Objekt ausgewählt wurde.
+ Beschreibt den Zweck der **Objektliste** Eigenschaftenfenster und beschreibt, wie die Umgebung darüber informiert wird, dass ein neues Objekt ausgewählt wurde, wenn ein anderes Objekt aus dieser Liste einen Aufruf auslöst.
 
-- [Schaltflächen des Eigenschaftenfensters](../../extensibility/internals/properties-window-buttons.md)
+- [Eigenschaftenfensterschaltflächen](../../extensibility/internals/properties-window-buttons.md)
 
- Erläutert den Zweck der vier Schaltflächen angezeigt werden, auf die **Eigenschaften** Symbolleiste des Fensters.
+ Erläutert den Zweck der vier Standardschaltflächen, **die** auf der Symbolleiste eigenschaften angezeigt werden.
 
-- [Anzeigeraster für Eigenschaften](../../extensibility/internals/properties-display-grid.md)
+- [Eigenschaften-Anzeigeraster](../../extensibility/internals/properties-display-grid.md)
 
- Erläutert, in dem die Eigenschaftsnamen und Werte der Eigenschaftenfelder im Raster gefunden werden.
+ Erläutert, wo sich die Felder für Eigenschaftsnamen und Eigenschaftswerte im Raster befinden.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Projekttypen](../../extensibility/internals/project-types.md)
 
- Projekte wird erläutert, wie die Bausteine von der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
+ Erläutert Projekte als Bausteine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der IDE.
 
 - [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)
 
- Beschreibt, wie Sie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Plattform für die fortlaufend testen und Debuggen von Anwendungen erstellen.
+ Beschreibt, wie Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Plattform zum kontinuierlichen Testen und Debuggen von Anwendungen beim Erstellen verwenden können.
 
-- [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)
+- [Idispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)
 
- Beschreibt die `IDispatch` -Schnittstelle, die zuerst entwickelt wurde, um Automation, einen spät gebundenen Mechanismus zum zugreifen und Abrufen von Informationen zu den Methoden und Eigenschaften eines Objekts zu unterstützen.
+ Beschreibt `IDispatch` die Schnittstelle, die zuerst entwickelt wurde, um die Automatisierung zu unterstützen, und stellt einen spät gebundenen Mechanismus für den Zugriff auf und das Abrufen von Informationen über die Methoden und Eigenschaften eines Objekts bereit.
 
 - [Verwalten von Anwendungseinstellungen (.NET)](../../ide/managing-application-settings-dotnet.md)
 
- Bietet eine Übersicht über Anwendungseinstellungen, mit denen Sie Ihre Anwendung so konfigurieren, dass Eigenschaftswerte in einer externen Konfigurationsdatei anstelle von kompilierten Code der Anwendung gespeichert sind.
+ Bietet eine Übersicht über die Anwendungseinstellungen, mit denen Sie Ihre Anwendung so konfigurieren können, dass Eigenschaftswerte in einer externen Konfigurationsdatei anstelle des kompilierten Codes der Anwendung gespeichert werden.
 
 - [Projektmappen und Projekte](../../ide/solutions-and-projects-in-visual-studio.md)
 
- Erläutert, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] effizient verwaltet die Elemente wie z. B. Verweise, datenverbindungen, Ordner und Dateien, die von der Entwicklung über Projektmappen und Projekte erforderlich sind.
+ Erläutert, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wie die Elemente wie Verweise, Datenverbindungen, Ordner und Dateien, die für Ihre Entwicklung durch Lösungen und Projekte erforderlich sind, effizient verwaltet werden.
 
-- [Erweitern von anderen Teilen von Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)
+- [Erweitern anderer Teile von Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)
 
  Erläutert, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Dienste zum Erstellen von Benutzeroberflächenelementen verwendet werden, die zu den übrigen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Komponenten passen.

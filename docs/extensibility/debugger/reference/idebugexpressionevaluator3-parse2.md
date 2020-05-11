@@ -1,27 +1,27 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Microsoft-Dokumentation
+title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 308ef67bab1d91ace71a5e741a1ed998037a9868
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352739"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729125"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Konvertiert eine Ausdruckszeichenfolge in einen analysierten Ausdruck erhält der symbolanbieter und die Adresse des Frames, ausgewertet.
+Konvertiert eine Ausdruckszeichenfolge in einen analysierten Ausdruck, der den Symbolanbieter und die Adresse des auswertenden Frames angibt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,37 +53,37 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>Parameter
 `upstrExpression`\
-[in] Die Ausdruckszeichenfolge analysiert werden.
+[in] Die zu analysierende Ausdruckszeichenfolge.
 
 `dwFlags`\
-[in] Eine Auflistung von [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) Konstanten, die bestimmen, wie der Ausdruck ist, die analysiert werden.
+[in] Eine Auflistung von [PARSEFLAGS-Konstanten,](../../../extensibility/debugger/reference/parseflags.md) die bestimmen, wie der Ausdruck analysiert werden soll.
 
 `nRadix`\
-[in] Die Basis, die verwendet werden, um alle numerischen Informationen interpretieren.
+[in] Radix zur Interpretation numerischer Informationen.
 
 `pSymbolProvider`\
-[in] Schnittstelle, die von der symbolanbieter.
+[in] Schnittstelle des Symbolanbieters.
 
 `pAddress`\
-[in] Die Adresse des Frames, ausgewertet.
+[in] Adresse des Auswerterahmens.
 
 `pbstrError`\
-[out] Gibt den Fehler als Klartext zurück.
+[out] Gibt den Fehler als lesbaren Text zurück.
 
 `pichError`\
-[out] Gibt die Zeichenposition des Starts des Fehlers in der Ausdruckszeichenfolge zurück.
+[out] Gibt die Zeichenposition des Anfangs des Fehlers in der Ausdruckszeichenfolge zurück.
 
 `ppParsedExpression`\
-[out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.
+[out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression-Objekt](../../../extensibility/debugger/reference/idebugparsedexpression.md) zurück.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Diese Methode erzeugt einen analysierten Ausdruck, der nicht auf einen tatsächlichen Wert. Ein analysierten Ausdruck kann ausgewertet werden, d. h. in einen Wert konvertiert.
+## <a name="remarks"></a>Bemerkungen
+Diese Methode erzeugt einen analysierten Ausdruck und keinen tatsächlichen Wert. Ein analysierter Ausdruck kann ausgewertet werden, d. h. in einen Wert konvertiert werden.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CEE** -Objekt, das macht die [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CEE-Objekt** implementiert wird, das die [IDebugExpressionEvaluator3-Schnittstelle](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) verfügbar macht.
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
@@ -137,5 +137,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

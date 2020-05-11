@@ -1,24 +1,24 @@
 ---
-title: IDebugProgramNameChangedEvent2 | Microsoft-Dokumentation
+title: IDebugProgramNameChangedEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramNameChangedEvent2 interface
 ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b0b1ff52523a91bfa15192de56dfdc6f0f58354
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae58728601c3adbe6e37a00fd0694a5d71eef0b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351198"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722149"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
-Gesendet von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM), wenn der Name eines Programms ändert.
+Wird vom Debugmodul (DE) an den Sitzungsdebug-Manager (SDM) gesendet, wenn sich der Name eines Programms ändert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,13 +27,13 @@ IDebugProgramNameChangedEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle für den Bericht, der der Namen des Programms geändert hat. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die **IDebugEvent2** Schnittstelle.
+ Die DE implementiert diese Schnittstelle, um zu melden, dass sich der Name des Programms geändert hat. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss für dasselbe Objekt wie diese Schnittstelle implementiert werden. Das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die **IDebugEvent2-Schnittstelle** zuzugreifen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die DE erstellt und sendet dieses Ereignisobjekt, um eine Änderung des Programm zu melden. Die DE sendet dieses Ereignis mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt. Der benutzerdefinierten Port Lieferanten sendet dieses Ereignis verwenden, die die Schnittstelle.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, um eine Programmnamensänderung zu melden. Die DE sendet dieses Ereignis mithilfe der [IDebugEventCallback2-Rückruffunktion,](../../../extensibility/debugger/reference/idebugeventcallback2.md) die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird. Der benutzerdefinierte Portlieferant sendet dieses Ereignis über die I-Schnittstelle.
 
-## <a name="requirements"></a>Anforderungen
- Header: Msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 

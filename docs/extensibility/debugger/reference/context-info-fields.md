@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS | Microsoft-Dokumentation
+title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ed50d43061ee714f8f892e03bb164f16e2e33d9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346385"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737590"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Gibt an, welche Informationen Sie über eine Speicherkontext abzurufen.
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
+Gibt an, welche Informationen zu einem Speicherkontext abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,38 +54,38 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 ## <a name="fields"></a>Felder
 `CIF_MODULEURL`\
-Initialisieren und Verwenden der `bstrModuleUrl` Feld der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur.
+Initialisieren/verwenden `bstrModuleUrl` Sie das Feld der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur.
 
 `CIF_FUNCTION`\
-Initialisieren und Verwenden der `bstrFunction` Feld der `CONTEXT_INFO` Struktur.
+Initialisieren/verwenden `bstrFunction` Sie das `CONTEXT_INFO` Feld der Struktur.
 
 `CIF_FUNCTIONOFFSET`\
-Initialisieren und Verwenden der `posFunctionOffset` Feld der `CONTEXT_INFO` Struktur.
+Initialisieren/verwenden `posFunctionOffset` Sie das `CONTEXT_INFO` Feld der Struktur.
 
 `CIF_ADDRESS`\
-Initialisieren und Verwenden der `bstrAddress` Feld der `CONTEXT_INFO` Struktur.
+Initialisieren/verwenden `bstrAddress` Sie das `CONTEXT_INFO` Feld der Struktur.
 
 `CIF_ADDRESSOFFSET`\
-Initialisieren und Verwenden der `bstrAddressOffset` Feld der `CONTEXT_INFO` Struktur.
+Initialisieren/verwenden `bstrAddressOffset` Sie das `CONTEXT_INFO` Feld der Struktur.
 
 `CIF_ALLFIELDS`\
-Alle Felder initialisiert und Verwenden der `CONTEXT_INFO` Struktur.
+Initialisieren/Verwenden aller Felder `CONTEXT_INFO` der Struktur.
 
-## <a name="remarks"></a>Hinweise
-Diese Werte werden übergeben einen Parameter für die [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) Methode, um die Felder anzugeben der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) sind, dass die Struktur initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+Diese Werte werden an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) übergeben, um anzugeben, welche Felder der [CONTEXT_INFO-Struktur](../../../extensibility/debugger/reference/context-info.md) initialisiert werden sollen.
 
-Diese Flags werden auch verwendet, welche Felder der an die `CONTEXT_INFO` -Struktur sind gültig und verwendet, wenn die Struktur zurückgegeben wird.
+Diese Flags werden auch verwendet, `CONTEXT_INFO` um anzugeben, welche Felder der Struktur verwendet werden und gültig sind, wenn die Struktur zurückgegeben wird.
 
-Diese Werte können mit einem bitweisen OR kombiniert werden.
+Diese Werte können mit einem bitweisen ODER kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

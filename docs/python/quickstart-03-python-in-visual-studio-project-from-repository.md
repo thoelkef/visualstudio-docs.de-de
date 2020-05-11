@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430642"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "64543138"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -83,5 +83,5 @@ Sobald Sie die [Python-Unterstützung in Visual Studio installiert](installing-p
 ## <a name="see-also"></a>Siehe auch
 
 - [Manuelles Identifizieren eines vorhandenen Python-Interpreters](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installing-python-support-in-visual-studio.md)
+- [Installieren von Python-Unterstützung für Visual Studio unter Windows](installing-python-support-in-visual-studio.md)
 - [Installationsspeicherorte](installing-python-support-in-visual-studio.md#install-locations)

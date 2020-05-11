@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbd3b2a7d7e56870a994af288f5887f1d86256af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591644"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung
@@ -29,9 +29,9 @@ Sie können den Wert der Eigenschaft **Speicher für Details der zeitlichen Steu
   > [!NOTE]
   > Die Option **Alle einzelnen Details** muss aktiviert werden, um Informationen zu virtuellen Benutzerdaten in den Auslastungstestergebnissen zu aktivieren. Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-- **Keine:** Es werden keine einzelnen Details zur zeitlichen Steuerung erfasst. Die Durchschnittswerte sind jedoch nach wie vor verfügbar.
+- **Keine**: Es werden keine einzelnen Details zur zeitlichen Steuerung erfasst. Die Durchschnittswerte sind jedoch nach wie vor verfügbar.
 
-- **Nur Statistik:** Speichert einzelne Zeitsteuerungsdaten, jedoch nur als prozentuale Daten. Dadurch werden Speicherplatzressourcen gespart.
+- **Nur Statistik**: speichert einzelne Zeitsteuerungsdaten, jedoch nur als prozentuale Daten. Dadurch werden Speicherplatzressourcen gespart.
 
   **Überlegungen zur Eigenschaft „Speicher für Details der zeitlichen Steuerung“**
 
@@ -57,9 +57,9 @@ Sie können den Wert der Eigenschaft **Speicher für Details der zeitlichen Steu
 
 5. Wählen Sie unter der Kategorie **Ergebnisse** die Eigenschaft **Speicher für Details der zeitlichen Steuerung** aus, und wählen Sie dann **Alle einzelnen Details** aus.
 
-     Nachdem Sie die Einstellung **Alle einzelnen Details** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** konfiguriert haben, können Sie Ihren Auslastungstest ausführen und das **Diagramm für die Aktivitäten virtueller Benutzer** anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Nachdem Sie die Einstellung **Alle einzelnen Details** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** konfiguriert haben, können Sie Ihren Auslastungstest ausführen und das **Diagramm für die Aktivitäten virtueller Benutzer** anzeigen. Weitere Informationen finden Sie unter [How to: Analyze What Virtual Users Are Doing During a Load Test (Vorgehensweise: Analysieren der Aktivitäten virtueller Benutzer während eines Auslastungstests)](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

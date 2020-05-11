@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject | Microsoft-Dokumentation
+title: IDebugPointerObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject interface
 ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c884f2794031d92add956bf4364824165ee1edfb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b28189b3f0a07a27f5e4478f64963a63d634db5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343927"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725491"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Expressionsevaluatoren finden Sie unter [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Diese Schnittstelle stellt ein Zeigerobjekt.
+ Diese Schnittstelle stellt ein Zeigerobjekt dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,30 +32,30 @@ IDebugPointerObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die ausdrucksauswertung implementiert diese Schnittstelle, um ein Zeigerobjekt darstellen.
+ Der Ausdrucksauswertungswert implementiert diese Schnittstelle, um ein Zeigerobjekt darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Schnittstelle kann diese Schnittstelle abrufen, indem Sie mithilfe von [QueryInterface](/cpp/atl/queryinterface) Wenn die `IDebugObject` stellt einen Zeiger dar.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die [IDebugObject-Schnittstelle](../../../extensibility/debugger/reference/idebugobject.md) kann diese Schnittstelle mithilfe `IDebugObject` von [QueryInterface](/cpp/atl/queryinterface) abrufen, wenn der einen Zeiger darstellt.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den von geerbten Methoden [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugPointerObject` Schnittstelle verfügbar macht, die folgenden Methoden.
+ Zusätzlich zu den von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)geerbten Methoden macht die `IDebugPointerObject` Schnittstelle die folgenden Methoden verfügbar.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Ruft das Objekt ab, das die Schnittstelle verweist.|
-|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Ruft den Wert, den die Schnittstelle als eine Reihe von aufeinander folgenden Bytes verweist.|
-|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Legt den Wert, den die Schnittstelle aus einer Reihe von aufeinander folgenden Bytes verweist.|
+|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Ruft das Objekt ab, auf das die Schnittstelle verweist.|
+|[Getbytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Ruft den Wert ab, auf den die Schnittstelle als eine Reihe aufeinander folgender Bytes verweist.|
+|[Setbytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Legt den Wert fest, auf den die Schnittstelle aus einer Reihe aufeinander folgender Bytes verweist.|
 
-## <a name="remarks"></a>Hinweise
- Eine ausdrucksauswertung verwendet diese Schnittstelle, um einen Zeiger in eine Analysestruktur darzustellen.
+## <a name="remarks"></a>Bemerkungen
+ Ein Ausdrucksauswertungswert verwendet diese Schnittstelle, um einen Zeiger in einer Analysestruktur darzustellen.
 
-## <a name="requirements"></a>Anforderungen
- Header: ee.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: ee.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Schnittstellen für die Ausdrucksauswertung](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

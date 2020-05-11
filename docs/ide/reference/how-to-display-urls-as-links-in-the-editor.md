@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von URLs als Links im Editor'
+title: 'Gewusst wie: Anzeigen von URLs als Links im Editor'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569087"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Vorgehensweise: Anzeigen von URLs als Links im Editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Gewusst wie: Anzeigen von URLs als Links im Editor
 
 Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ihrem Code als aktive Links behandelt. Wenn Sie diese Funktion verwenden, zeigen URLs das folgende Verhalten:
 
@@ -33,7 +33,7 @@ Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ih
 
 1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2. Klicken Sie auf den **Text-Editor**.
+2. Klicken Sie auf **Text-Editor**.
 
 3. Erweitern Sie zum Ändern der Option für nur eine Sprache den Ordner für diese Sprache, und wählen Sie **Allgemein** aus.
 
@@ -43,6 +43,6 @@ Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ih
 
 4. Wählen Sie unter **Anzeige** **Einfaches Klicken für URLs aktivieren** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funktionen des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)

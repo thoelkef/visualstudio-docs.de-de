@@ -1,7 +1,7 @@
 ---
 title: Debuggen einer parallelen Anwendung | Microsoft-Dokumentation
 description: Debuggen mithilfe der Fenster "Parallele Aufgaben" und "parallele Stapel" in Visual Studio
-ms.date: 03/22/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728594"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416424"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen AnwendungC#in Visual Studio C++(, Visual Basic,)
 
@@ -45,7 +45,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
 
 - Skalieren der Fenster durch Gruppieren, Vergrößern/Verkleinern und sonstigen entsprechenden Funktionen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  In dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass **nur eigenen Code** aktiviert ist (es ist in neueren Versionen von Visual Studio standardmäßig aktiviert). Klicken Sie im Menü **Extras** auf **Optionen**, und erweitern Sie den Knoten **Debuggen**. Wählen Sie **Allgemein** aus, und wählen Sie dann **Nur eigenen Code aktivieren (nur verwaltet)** aus. Wenn Sie diese Funktion nicht festlegen, können Sie die vorliegende exemplarische Vorgehensweise zwar verwenden, Ihre Ergebnisse weichen jedoch möglicherweise von den Abbildungen ab.
 
 ## <a name="c-sample"></a>C#-Beispiel
@@ -54,7 +54,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
 ## <a name="c-sample"></a>C++-Beispiel
  Wenn Sie das C++-Beispiel verwenden, können Sie Verweise auf externen Code in diesem Thema ignorieren. Externer Code bezieht sich ausschließlich auf das C#-Beispiel.
 
-## <a name="illustrations"></a>Abbildungen
+## <a name="illustrations"></a>Illustrationen
  Die Abbildungen in diesem Thema wurden auf einem Quad-Core-Computer aufgezeichnet, auf dem das C#-Beispiel ausgeführt wird. Sie können diese exemplarische Vorgehensweise auch mit anderen Konfigurationen durcharbeiten. Die Abbildungen unterscheiden sich jedoch möglicherweise von der Anzeige auf Ihrem Computer.
 
 ## <a name="creating-the-sample-project"></a>Erstellen des Beispielprojekts
@@ -64,25 +64,37 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
 
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
-    ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Drücken Sie **STRG + Q** , um das Suchfeld zu öffnen, geben Sie **Console** (oder **c++** ) ein, wählen Sie **Vorlagen**aus, und klicken Sie dann auf:
+   ::: moniker range=">=vs-2019"
 
-    - Wählen C# Sie für oder Visual Basic **neue Konsolen-App-Projekt (.NET Framework)** für C# entweder oder Visual Basic erstellen aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
-    - Wählen C++Sie für die Option **Neues Konsolen** -APP C++-Projekt für erstellen aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+   Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**.
 
-    Geben Sie dann einen Namen ein, oder verwenden Sie den Standardnamen, und klicken Sie auf **Erstellen**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialog Felds **Neues Projekt** die folgenden Optionen aus:
+   Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-    - Wählen Sie C# für eine-APP unter **Visual C#** den **Windows-Desktop**aus, und wählen Sie dann im mittleren Bereich die Option **Konsolen-app (.NET Framework)** aus.
-    - Wählen Sie für eine Visual Basic-app unter **Visual Basic**die Option **Windows-Desktop**aus, und wählen Sie dann im mittleren Bereich die Option **Konsolen-app (.NET Framework)** aus.
-    - Wählen Sie C++ für eine-APP unter **Visual C++** den **Windows-Desktop**aus, und wählen Sie dann **Windows-Konsolenanwendung**aus.
+   Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie **C#** als nächstes **C++** , oder **Visual Basic** aus der Liste Sprache aus, und wählen Sie dann in der Liste Plattform die Option **Windows** aus. 
 
-    Geben Sie dann einen Namen ein, oder verwenden Sie den Standardnamen, und klicken Sie auf **OK**.
-    ::: moniker-end
+   Nachdem Sie die Sprach-und Platt Form Filter angewendet haben, wählen Sie die **Konsolen-app (.net Core)** oder für Konsolen- C++ **App** -Vorlage aus, und klicken Sie dann auf **weiter**.
 
-    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+   > [!NOTE]
+   > Wenn die richtige Vorlage nicht angezeigt **wird, navigieren Sie zu Extras** > **Tools und Features anzeigen...** , um die Visual Studio-Installer zu öffnen. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+
+   Geben Sie im Fenster **Neues Projekt konfigurieren** einen Namen ein, oder verwenden Sie den Standardnamen im Feld **Projektname** . Wählen Sie anschließend **Erstellen** aus.
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialog Felds **Neues Projekt** die folgenden Optionen aus:
+
+   - Wählen Sie C# für eine-APP unter **Visual C#** den **Windows-Desktop**aus, und wählen Sie dann im mittleren Bereich die Option **Konsolen-app (.NET Framework)** aus.
+   - Wählen Sie für eine Visual Basic-app unter **Visual Basic**die Option **Windows-Desktop**aus, und wählen Sie dann im mittleren Bereich die Option **Konsolen-app (.NET Framework)** aus.
+   - Wählen Sie C++ für eine-APP unter **Visual C++** den **Windows-Desktop**aus, und wählen Sie dann **Windows-Konsolenanwendung**aus.
+
+   Wenn Sie die Konsolen- **app (.net Core)** oder C++für die **Konsolen-App** -Projektvorlage nicht sehen, wechseln **Sie zu Extras** > **Tools und Features anzeigen...** , um die Visual Studio-Installer zu öffnen. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+
+   Geben Sie dann einen Namen ein, oder verwenden Sie den Standardnamen, und klicken Sie auf **OK**.
+
+   Wählen Sie **OK**.
+   ::: moniker-end
+
+   Ein neues Konsolenprojekt wird angezeigt. Nachdem das Projekt erstellt wurde, wird eine Quelldatei angezeigt.
 
 1. Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.
 
@@ -244,7 +256,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
 
      ![Zwei wartende Aufgaben im Aufgaben Fenster](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     Aufgabe 4 wiederum wartet auf einen Monitor, der zu dem Thread gehört, der Aufgabe 2 zugewiesen ist. (Klicken Sie mit der rechten Maustaste auf die Kopfzeile, und wählen Sie **Spalten**  > **Thread Zuweisung** aus, um den Thread Zuweisungs Wert für Aufgabe 2 anzuzeigen).
+     Aufgabe 4 wiederum wartet auf einen Monitor, der zu dem Thread gehört, der Aufgabe 2 zugewiesen ist. (Klicken Sie mit der rechten Maustaste auf die Kopfzeile, und wählen Sie **Spalten** > **Thread Zuweisung** aus, um den Thread Zuweisungs Wert für Aufgabe 2 anzuzeigen).
 
      ![Wartende Aufgabe und QuickInfo im Aufgaben Fenster](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 

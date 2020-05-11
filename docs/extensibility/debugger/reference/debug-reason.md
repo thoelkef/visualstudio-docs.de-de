@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Microsoft-Dokumentation
+title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346165"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737420"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 Gibt an, warum der Prozess zum Debuggen gestartet wurde.
 
 ## <a name="syntax"></a>Syntax
@@ -50,30 +50,30 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>Felder
 `DEBUG_REASON_ERROR`\
-Ein nicht-spezifischer Fehler aufgetreten ist (Dies wird verwendet, als eine standardbedingung Wenn keine der anderen Lösung Gründe).
+Ein nicht spezifischer Fehler ist aufgetreten (dies wird als Standardbedingung verwendet, wenn keiner der anderen Gründe passt).
 
 `DEBUG_REASON_USER_LAUNCHED`\
 Der Prozess wurde auf Anforderung des Benutzers gestartet.
 
 `DEBUG_REASON_USER_ATTACHED`\
-Der bereits ausgeführten Prozess wurde vom Benutzer zugeordnet.
+Der bereits ausgeführte Prozess wurde vom Benutzer angefügt.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-Der Prozess wurde mit automatisch verbunden, wenn sie gestartet wurde.
+Der Prozess wurde automatisch an das Startziel angefügt.
 
 `DEBUG_REASON_CAUSALITY`\
-Der Prozess wurde gestartet, aufgrund einer *Just-In-Time-* Debuggen (JIT)-Ereignis.
+Der Prozess wurde aufgrund eines JIT-Debugging-Ereignisses *(Just-In-Time)* gestartet.
 
-## <a name="remarks"></a>Hinweise
-Zurückgegeben von der [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Von der [GetDebugReason-Methode](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

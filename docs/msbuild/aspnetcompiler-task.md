@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 072d1b94c552b3aca34a1573e5d6545628f6568e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593459"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167331"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler-Aufgabe
-Die `AspNetCompiler`-Aufgabe umschließt *aspnet_compiler.exe*, ein Hilfsprogramm zum Vorkompilieren von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen.
+
+Die Aufgabe `AspNetCompiler` schließt *aspnet_compiler.exe* ein, ein Hilfsprogramm zum Vorkompilieren von ASP.NET-Anwendungen.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
 In der folgenden Tabelle werden die Parameter der `AspNetCompiler` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -48,11 +50,11 @@ In der folgenden Tabelle werden die Parameter der `AspNetCompiler` -Aufgabe besc
 |`Updateable`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn dieser Parameter `true` ist, ist die vorkompilierte Anwendung aktualisierbar.  Der Standardwert ist `false`. Dieser Parameter entspricht dem **-u**-Schalter in *aspnet_compiler.exe*.|
 |`VirtualPath`|Optionaler `String`-Parameter.<br /><br /> Der virtuelle Pfad der zu kompilierenden Anwendung. Wenn `PhysicalPath` festgelegt ist, wird der physische Pfad verwendet, um die Anwendung zu suchen. Andernfalls wird die IIS-Metabasis verwendet, und es wird angenommen, dass sich die Anwendung am Standardspeicherort befindet. Dieser Parameter entspricht dem **-v**-Schalter in *aspnet_compiler.exe*.|
 
-## <a name="remarks"></a>Hinweise
-Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Beispiel
-Im folgenden Codebeispiel wird die `AspNetCompiler`-Aufgabe zum Vorkompilieren einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung verwendet.
+
+Im folgenden Codebeispiel wird die `AspNetCompiler`-Aufgabe zum Vorkompilieren einer ASP.NET-Anwendung verwendet.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -69,5 +71,6 @@ Im folgenden Codebeispiel wird die `AspNetCompiler`-Aufgabe zum Vorkompilieren e
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 * [Aufgaben](../msbuild/msbuild-tasks.md)
 * [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

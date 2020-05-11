@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776157"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
@@ -44,7 +44,7 @@ Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>Hinzufügen einer Datei „app.config“ zum Projekt
 
-1. Wenn für das Testprojekt bereits eine [app.config](#define-a-custom-configuration-section)-Datei vorhanden ist, fahren Sie mit *Definieren eines benutzerdefinierten Konfigurationsabschnitts* fort.
+1. Wenn für das Testprojekt bereits eine *app.config*-Datei vorhanden ist, fahren Sie mit [Definieren eines benutzerdefinierten Konfigurationsabschnitts](#define-a-custom-configuration-section) fort.
 
 2. Klicken Sie erst mit der rechten Maustaste im **Projektmappen-Explorer** auf das Testprojekt und anschließend mit der Linken auf **Hinzufügen** > **Neues Element**.
 
@@ -196,7 +196,7 @@ Nachdem die Datei *app.config* definiert ist, erstellen Sie einen Komponententes
 
 3. Erstellen Sie in `MyDataTable` zwei Felder mit dem Namen `Arg1` und `Arg2` mit dem Datentyp `Number`.
 
-4. Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2` hinzu: (10,50), (3,2), (6,0), (0,8) und (12312,1000).
+4. Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2`: (10,50), (3,2), (6,0), (0,8) bzw. (12312,1000).
 
 5. Speichern und schließen Sie die Datenbank.
 
@@ -210,7 +210,7 @@ Nachdem die Datei *app.config* definiert ist, erstellen Sie einen Komponententes
 
 3. Erstellen Sie die zwei Spaltenüberschriften `Val1` und `Val2` in `Sheet1`.
 
-4. Fügen Sie `Sheet1` fünf Entitäten mit den folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) und (5,0).
+4. Fügen Sie `Sheet1` fünf Entitäten mit folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) bzw. (5,0).
 
 5. Speichern und schließen Sie das Arbeitsblatt.
 
@@ -267,7 +267,7 @@ Nachdem die Datei *app.config* definiert ist, erstellen Sie einen Komponententes
 > [!IMPORTANT]
 > Stellen Sie Elemente wie Datenquellen bereit, damit sie für den Test im Bereitstellungsverzeichnis zugänglich sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
-- [How To: Create a data-driven unit test (Vorgehensweise: Erstellen eines datengesteuerten Komponententests)](../test/how-to-create-a-data-driven-unit-test.md)
+- [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)

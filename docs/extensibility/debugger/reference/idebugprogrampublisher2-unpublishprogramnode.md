@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft-Dokumentation
+title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c59f4df20be0836d42a5d88431401660d9d5bc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343143"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721582"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Entfernt einen angegebenes Programm Knoten aus Verfügbarkeit für die debug-Engines (DEs) und sitzungsbasierter Debug-Manager (SDM).
+Entfernt einen angegebenen Programmknoten aus der Verfügbarkeit für Debugmodule (DEs) und den Sitzungsdebug-Manager (SDM).
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,17 +41,17 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>Parameter
 `pProgramNode`\
-[in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das diesem Programm Knoten darstellt.
+[in] Ein [IDebugProgramNode2-Objekt,](../../../extensibility/debugger/reference/idebugprogramnode2.md) das den zu entfernenden Programmknoten darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Nachdem es entfernt wurde, ist der Programm-Knoten nicht mehr verfügbar, Programm Informationen abgefragt werden.
+## <a name="remarks"></a>Bemerkungen
+ Nach dem Entfernen steht der Programmknoten nicht mehr zur Verfügung, um nach Programminformationen abgefragt zu werden.
 
- Um ein Programm-Knoten verfügbar zu machen, rufen Sie die [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) Methode.
+ Um einen Programmknoten verfügbar zu machen, rufen Sie die [PublishProgramNode-Methode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) auf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

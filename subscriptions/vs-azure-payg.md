@@ -1,19 +1,20 @@
 ---
 title: Azure PAYG-Vorteil
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
-ms.openlocfilehash: 851ebd4a3218cada7af5ac139a7297094abde0c6
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816401"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444848"
 ---
-# <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure Dev/Test-Abonnements mit nutzungsbasierter Bezahlung
+# <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
 
 ## <a name="set-up-a-subscription"></a>Einrichten eines Abonnements
@@ -42,6 +43,12 @@ Antwort: So nehmen Sie Änderungen an Ihren Azure-Abonnements vor:
 2. Wählen Sie im linken Bereich die Option **Kostenverwaltung + Abrechnung** aus.
 3. Im Feld **Meine Abonnements** wird eine Liste Ihrer Abonnements angezeigt. Wählen Sie das gewünschte Abonnement aus.
 4. Sie haben nun die Möglichkeit, das Abonnement zu verwalten oder zu kündigen, es umzubenennen, das Verzeichnis zu wechseln oder den Abrechnungsbesitz zu übertragen.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Viele Abonnements enthalten zusätzliche Azure-bezogene Vorteile wie Azure DevOps und Einzelguthaben für Azure DevTest.  Weitere Informationen zu diesen Vorteilen finden Sie unter:

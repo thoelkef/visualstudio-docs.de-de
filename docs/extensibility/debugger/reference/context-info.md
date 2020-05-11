@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Microsoft-Dokumentation
+title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346466"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737567"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
+# <a name="context_info"></a>CONTEXT_INFO
 Diese Struktur beschreibt einen Speicherkontext oder Codekontext.
 
 ## <a name="syntax"></a>Syntax
@@ -53,40 +53,40 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Member
 `dwFields`\
-Eine Kombination von Flags aus der er [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) Enumeration, der angibt, welche Felder ausgefüllt sind<strong>.</strong>
+Eine Kombination von Flags aus der CONTEXT_INFO_FIELDS-Enumeration, die angibt, welche Felder ausgefüllt<strong>werden.</strong> [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 
 `bstrModuleUrl`\
-Der Name des Moduls auf dem sich der Kontext befindet.
+Der Name des Moduls, in dem sich der Kontext befindet.
 
 `bstrFunction`\
-Der Funktionsname, die auf dem sich der Kontext befindet.
+Der Funktionsname, in dem sich der Kontext befindet.
 
 `posFunctionOffset`\
-Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die den Zeile und Spalte Offset von der Funktion, die dem Codekontext zugeordnete bezeichnet.
+Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die den Zeilen- und Spaltenversatz der Funktion identifiziert, die dem Codekontext zugeordnet ist.
 
 `bstrAddress`\
-Die Adresse im Code, der der angegebene Kontext zugeordnet ist.
+Die Adresse im Code, an der sich der angegebene Kontext befindet.
 
 `bstrAddressOffset`\
-Der Offset der Adresse im Code, der der angegebene Kontext zugeordnet ist.
+Der Offset der Adresse im Code, in dem sich der angegebene Kontext befindet.
 
 `bstrAddressAbsolute`\
-Die absolute Adresse im Speicher, in der angegebene Kontext befindet.
+Die absolute Adresse im Speicher, an der sich der angegebene Kontext befindet.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur wird zurückgegeben, von einem Aufruf der [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur wird von einem Aufruf der [GetInfo-Methode](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) zurückgegeben.
 
-Eine typische Verwendung für diese Struktur ist, Unterstützung des eine **Arbeitsspeicher** Debug-Fenster.
+Eine typische Verwendung für diese Struktur **Memory** wird in Unterstützung eines Speicherdebugfensters verwendet.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

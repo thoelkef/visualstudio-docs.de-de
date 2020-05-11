@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957533"
 ---
 # <a name="format-python-code"></a>Formatieren von Python-Code
@@ -111,7 +111,7 @@ Durch einen **Umbruch** können Sie die **maximale Kommentarbreite** festlegen (
 
 Der Befehl **Bearbeiten** > **Erweitert** > **Kommentarabsatz ausfüllen** (**STRG**+**E** > **P**) formatiert Kommentartext und für einen dynamischen Umbruch durch, indem kurze Zeilen zusammengefasst und lange Zeilen geteilt werden.
 
-Beispiel:
+Zum Beispiel:
 
 ```python
 # foo

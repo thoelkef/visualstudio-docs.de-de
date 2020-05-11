@@ -4,19 +4,19 @@ description: Lernen Sie die Verfahren zum Einrichten von Cloud- und Speicherkont
 author: ghogen
 manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 81c5787e3c058848c97c69fad03827223c9fc582
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6174f8294f3a9e990893ca9a45d77f2a069692e
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572408"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489661"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Vorbereiten der Veröffentlichung und Bereitstellung eines Clouddiensts über Visual Studio
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Vorbereiten der Veröffentlichung und Bereitstellung eines Clouddiensts in Visual Studio
 
 Zum Veröffentlichen eines Clouddienstprojekts müssen Sie die folgenden Dienste wie in diesem Artikel beschrieben einrichten:
 
@@ -41,7 +41,7 @@ Ein Clouddienst führt Ihre Rollen in der Azure-Umgebung aus. Sie können einen 
 1. Wählen Sie **+ Hinzufügen**, und geben Sie die erforderlichen Informationen an (DNS-Name, Abonnement, Ressourcengruppe und Standort). Es ist hier nicht erforderlich, ein Paket hochzuladen, da Sie dies später in Visual Studio durchführen.
 1. Wählen Sie **Erstellen**, um den Prozess abzuschließen.
 
-## <a name="create-a-storage-account"></a>Speicherkonto erstellen
+## <a name="create-a-storage-account"></a>Erstellen eines Speicherkontos
 
 Ein Speicherkonto bietet Zugriff auf die Blob-, Warteschlangen- und Tabellendienste. Sie können ein Speicherkonto in Visual Studio oder über das [Azure-Portal](https://portal.azure.com/) erstellen.
 

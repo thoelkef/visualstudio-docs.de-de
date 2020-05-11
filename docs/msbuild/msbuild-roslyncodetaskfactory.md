@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865374"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>MSBuild-Inlineaufgaben mit RoslynCodeTaskFactory
+
 Ähnlich wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) verwendet RoslynCodeTaskFactory die plattformübergeifenden Roslyn-Compiler, um In-Memory-Taskassemblys für die Verwendung als Inlinetasks zu generieren.  RoslynCodeTaskFactory-Tasks sind für .NET Standard vorgesehen und funktionieren ebenfalls mit .NET Framework- und .NET Core-Runtimes sowie auf anderen Plattformen wie Linux und macOS.
 
 >[!NOTE]
->Der RoslynCodeTaskFactory-Task ist nur in MSBuild 15.8 und höher verfügbar.
+>Der RoslynCodeTaskFactory-Task ist nur in MSBuild 15.8 und höher verfügbar. MSBuild-Versionen folgen den Versionen von Visual Studio. Daher ist RoslynCodeTaskFactory in Visual Studio ab Version 15.8 verfügbar.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Die Struktur einer Inlineaufgabe mit RoslynCodeTaskFactory
+
  RoslynCodeTaskFactory-Inlineaufgaben werden genau wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) deklariert. Der einzige Unterschied liegt darin, dass Sie .NET Standard als Ziel verwenden.  Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
 
 ```xml
@@ -68,6 +70,7 @@ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineau
 > Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.
 
 ### <a name="code-element"></a>Codeelement
+
 Als letztes untergeordnetes Element wird im `Task`-Element das `Code`-Element angegeben. Das `Code`-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten. Welche Elemente Sie im `Code`-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.
 
 Das `Language`-Attribut gibt die Sprache an, in die der Code geschrieben ist. Zulässige Werte sind `cs` für C# und `vb` für Visual Basic.
@@ -88,6 +91,7 @@ Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über
 > Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.
 
 ## <a name="hello-world"></a>Hello World
+
  Im Folgenden sehen Sie einen robusteren Inlinetask mit RoslynCodeTaskFactory: Die HalloWelt-Aufgabe gibt „Hallo, Welt!“ auf dem Standardgerät für die Fehlerprotokollierung aus. In der Regel handelt es sich dabei um die Systemkonsole oder das Fenster **Ausgabe** in Visual Studio. Das `Reference`-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.
 
 ```xml
@@ -125,6 +129,7 @@ Sie können die HelloWorld-Aufgabe in der Datei *HelloWorld.targets* speichern u
 ```
 
 ## <a name="input-and-output-parameters"></a>Eingabe- und Ausgabeparameter
+
  Inlineaufgabenparameter bilden untergeordnete Elemente eines `ParameterGroup`-Elements. Jeder Parameter akzeptiert den Namen des Elements, das von ihm definiert wird. Im folgenden Code wird der Parameter `Text` definiert.
 
 ```xml
@@ -159,9 +164,10 @@ definiert die folgenden drei Parameter:
 
 - `Tally` ist ein Ausgabeparameter vom Typ System.Int32.
 
-Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.
+Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt.  Wenn in RoslynCodeTaskFactory das `Code`-Element über das `Type`-Attribut von `Class` verfügt, müssen Sie `ParameterGroup` nicht angeben, da es aus dem Quellcode abgeleitet wird (darin besteht ein Unterschied zu `CodeTaskFactory`). Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.
 
 ## <a name="example"></a>Beispiel
+
  Der folgende Inlinetask protokolliert einige Meldungen und gibt eine Zeichenfolge zurück.
 
 ```xml
@@ -254,5 +260,6 @@ Diese Inlinetasks können Pfade kombinieren und den Dateinamen abrufen.
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Exemplarische Vorgehensweise: Erstellen eines Inlinetasks](../msbuild/walkthrough-creating-an-inline-task.md)

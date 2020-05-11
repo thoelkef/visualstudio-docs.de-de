@@ -22,22 +22,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26891fa67616b1796499722e03a764da2a8fd7d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589265"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633381"
 ---
 # <a name="msbuild-conditional-constructs"></a>Bedingte Konstrukte in MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt einen Mechanismus für Entweder/Oder-Verarbeitung mit den Elementen [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) und [Otherwise](../msbuild/otherwise-element-msbuild.md) bereit.
+
+MSBuild stellt einen Mechanismus für die Entweder/Oder-Verarbeitung mit den Elementen [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) und [Otherwise](../msbuild/otherwise-element-msbuild.md) bereit.
 
 ## <a name="use-the-choose-element"></a>Verwenden des Elements „Choose“
+
  Das `Choose`-Element enthält mehrere `When`-Elemente und `Condition`-Attribute, die in der Reihenfolge von oben nach unten getestet werden, bis eins `true` ergibt. Wenn mehr als ein `When`-Element `true` ergibt, wird nur das Erste verwendet. Falls ein `Otherwise`-Element vorhanden ist, wird es ausgewertet, wenn keine Bedingung für ein `When`-Element `true` ergibt.
 
  `Choose`-Elemente können als untergeordnete Elemente der Elemente `Project`, `When` und `Otherwise` verwendet werden. Die Elemente `When` und `Otherwise` können über die untergeordneten Elemente `ItemGroup`, `PropertyGroup` und `Choose` verfügen.
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Beispiel werden die Elemente `Choose` und `When` für die Entweder/Oder-Verarbeitung verwendet. Die Eigenschaften und Elemente für das Projekt werden anhand des Werts der `Configuration`-Eigenschaft festgelegt.
 
 ```xml
@@ -77,6 +80,7 @@ ms.locfileid: "75589265"
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Choose-Element (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [When-Element (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Otherwise-Element (MSBuild)](../msbuild/otherwise-element-msbuild.md)

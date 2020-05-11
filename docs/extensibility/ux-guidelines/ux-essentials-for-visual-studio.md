@@ -1,168 +1,168 @@
 ---
-title: UX Essentials für Visual Studio | Microsoft-Dokumentation
+title: UX Essentials für Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310809"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698332"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. In Visual Studio-Umgebung konsistent sein.
+### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Seien Sie innerhalb der Visual Studio-Umgebung konsistent.
 
-- Führen Sie die vorhandenen [Interaktionsmuster](interaction-patterns-for-visual-studio.md) innerhalb der Shell.
+- Folgen Sie vorhandenen [Interaktionsmustern](interaction-patterns-for-visual-studio.md) innerhalb der Shell.
 
-- Entwerfen Sie Funktionen zur visuellen Sprache von der Shell und [handwerkliches können Anforderungen](evaluation-tools-for-visual-studio.md).
+- Design-Features, die mit der visuellen Sprache und [handwerkshandwerklichen Anforderungen](evaluation-tools-for-visual-studio.md)der Schale übereinstimmen.
 
-- Verwenden Sie freigegebene Befehle und Steuerelemente aus, wenn sie vorhanden sind.
+- Verwenden Sie freigegebene Befehle und Steuerelemente, wenn sie vorhanden sind.
 
-- Verstehen Sie die Visual Studio und wie die Anwendung Kontext wird und die Benutzeroberfläche steuert.
+- Verstehen der Visual Studio-Hierarchie und der Einrichtung des Kontexts und der Laufwerke der Benutzeroberfläche.
 
-### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Verwenden Sie die Umgebung-Dienst für Schriftarten und Farben.
+### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Verwenden Sie den Umgebungsdienst für Schriftarten und Farben.
 
-- Benutzeroberfläche berücksichtigt die aktuelle [Umgebungsschriftart](fonts-and-formatting-for-visual-studio.md) festlegen, es sei denn, es für die Anpassung auf der Seite "Schriftarten und Farben" in das Dialogfeld "Optionen" verfügbar gemacht wird.
+- Die Benutzeroberfläche sollte die aktuelle [Umgebungsschriftarteinstellung](fonts-and-formatting-for-visual-studio.md) beachten, es sei denn, sie wird zur Anpassung auf der Seite Schriftarten und Farben im Dialogfeld Optionen verfügbar gemacht.
 
-- UI-Elemente verwenden, müssen die [VSColor Service](colors-and-styling-for-visual-studio.md), verwenden der freigegebenen Umgebung Token oder featurespezifische-Token.
+- UI-Elemente müssen den [VSColor-Dienst](colors-and-styling-for-visual-studio.md)verwenden, indem sie freigegebene Umgebungstoken oder funktionsspezifische Token verwenden.
 
-### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Stellen Sie alle Bilder konsistent mit dem neuen Visual Studio-Stil.
+### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Machen Sie alle Bilder konsistent mit dem neuen VS-Stil.
 
-- Führen Sie Visual Studio-Entwurfsprinzipien für Symbole, Symbole und andere Grafik aus.
+- Befolgen Sie Visual Studio-Entwurfsprinzipien für Symbole, Glyphen und andere Grafiken.
 
-- Platzieren Sie Text in grafischen Elementen nicht.
+- Platzieren Sie Text nicht in grafischen Elementen.
 
-### <a name="4-design-from-a-user-centric-perspective"></a>4. Vom Standpunkt der benutzerorientierten entwerfen.
+### <a name="4-design-from-a-user-centric-perspective"></a>4. Design aus einer benutzerzentrierten Perspektive.
 
-- Erstellen Sie die Aufgabenverlauf, bevor Sie darin die einzelnen Funktionen.
+- Erstellen Sie den Aufgabenfluss vor den einzelnen Features darin.
 
-- Mit Ihren Benutzern vertraut sein, und machen Sie dieses Wissen in Ihrem-Spezifikationen explizit.
+- Machen Sie sich mit Ihren Benutzern vertraut und machen Sie dieses Wissen in Ihrer Spezifikation explizit.
 
-- Bei der Überprüfung der Benutzeroberflächenautomatisierungs bewerten Sie die vollständige Benutzeroberfläche als auch die Details.
+- Bewerten Sie beim Überprüfen der Benutzeroberfläche die gesamte Erfahrung sowie die Details.
 
-- Entwerfen Sie die Benutzeroberfläche so, dass sie funktionsfähig und unabhängig vom Gebietsschema oder der Sprache attraktive bleibt.
+- Entwerfen Sie ihre Benutzeroberfläche so, dass sie funktional und attraktiv bleibt, unabhängig von Gebietsschema oder Sprache.
 
 ## <a name="screen-resolution"></a>Bildschirmauflösung
 
 ### <a name="minimum-resolution"></a>Mindestauflösung
 
-- Wird die mindestauflösung für Visual Studio 2015 **1280 x 720**. Dies bedeutet, dass es *möglich* mit Visual Studio diese Auflösung, obwohl es nicht die optimale benutzerfreundlichkeit möglicherweise. Es gibt keine Garantie, dass alle Aspekte bei einer Auflösung von 1280 x 720 kleiner verwendet werden können.
+- Die Mindestauflösung für Visual Studio 2015 beträgt **1280x720**. Dies bedeutet, dass es *möglich* ist, Visual Studio mit dieser Auflösung zu verwenden, obwohl es sich möglicherweise nicht um eine optimale Benutzererfahrung handelt. Es gibt keine Garantie, dass alle Aspekte bei Auflösungen unter 1280x720 verwendet werden können.
 
-- Die zielauflösung für Visual Studio ist **1366 x 768**. Dies ist die niedrigsten Auflösung, an dem wir versprechen, einer *gute* benutzererfahrung.
+- Die Zielauflösung für Visual Studio ist **1366x768**. Dies ist die niedrigste Auflösung, mit der wir eine *gute* Benutzererfahrung versprechen.
 
-- Erste Dialogfeld Höhe muss **weniger als 700 Pixel**, sodass sie in die minimale Auflösung der des IDE-Fensterrahmens mit 96 dpi passt.
+- Die anfängliche Dialoghöhe sollte **kleiner als 700 Pixel**sein, sodass sie innerhalb der minimalen Auflösung des IDE-Frames bei 96 dpi passt.
 
-### <a name="high-density-displays"></a>Mit hoher Dichte zeigt
- Benutzeroberfläche in Visual Studio muss auch in alle DPI-Skalierungsfaktoren arbeiten, die von Windows standardmäßig unterstützt: 150 %, 200 % und 250 %.
+### <a name="high-density-displays"></a>Displays mit hoher Dichte
+ Die Benutzeroberfläche in Visual Studio muss bei allen DPI-Skalierungsfaktoren, die Windows sofort unterstützt, gut funktionieren: 150 %, 200 % und 250 %.
 
 ## <a name="anti-patterns"></a>Anti-Muster
- Visual Studio enthält viele Beispiele der Benutzeroberfläche, die unsere Richtlinien und bewährte Methoden befolgen. In dem Bestreben konsistent ist nutzen die Entwickler häufig aus Produkt UI-Entwurfsmuster ähnelt, was sie erstellen. Obwohl dies ein guter Ansatz, hilft uns Konsistenz bei der Interaktion des Benutzers und den visuellen Entwurf fördern, wir gelegentlich Funktionen mit ein paar Details mitgeliefert werden, die nicht erfüllt unsere Richtlinien aufgrund der Einschränkungen in Zeitplan oder vollziehen des Austritts Priorisierung ist. In diesen Fällen möchten wir Teams, kopieren Sie eine der folgenden "Anti-Muster" nicht, weil sie ungültige oder inkonsistente UI in Visual Studio-Umgebung angelegt.
+ Visual Studio enthält viele Beispiele für die Benutzeroberfläche, die unseren Richtlinien und bewährten Methoden entsprechen. Um konsistent zu sein, leihen sich Entwickler häufig Produkt-UI-Entwurfsmuster, die denen ähneln, die sie erstellen. Obwohl dies ein guter Ansatz ist, der uns hilft, Konsistenz in der Benutzerinteraktion und visuellen Design zu fördern, versenden wir gelegentlich Funktionen mit ein paar Details, die unsere Richtlinien aufgrund von Zeitplaneinschränkungen oder Fehlerpriorisierung nicht erfüllen. In diesen Fällen möchten wir nicht, dass Teams eines dieser "Antimuster" kopieren, da sie eine fehlerhafte oder inkonsistente Benutzeroberfläche in der Visual Studio-Umgebung vermehren.
 
-### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>Erforderliche Felder/Einstellungen, die standardmäßig im Status "Fehler" angezeigt
+### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>Erforderliche Felder/Einstellungen, die standardmäßig im Fehlerzustand angezeigt werden
 
-#### <a name="feature-team-goals"></a>Feature-Team-Ziele
+#### <a name="feature-team-goals"></a>Feature-Teamziele
 
-- Warnen Sie Benutzer, dass sie ein Element hinzugefügt haben, die konfiguriert werden müssen.
+- Warnen Sie Benutzer, dass sie ein Element hinzugefügt haben, das konfiguriert werden muss.
 
-- Zeichnen Sie die Aufmerksamkeit des Benutzers auf die Bereiche, die Eingabe benötigen.
+- Lenken Sie die Aufmerksamkeit des Benutzers auf die Bereiche, die eingaben müssen.
 
-#### <a name="anti-pattern-solution"></a>Antimuster für Projektmappen
- Platzieren Sie, sobald der Benutzer eine Aktion initiiert hat und bevor sie die Aufgabe abgeschlossen haben, sofort kritische Hand Symbole neben den Bereichen, die Konfiguration erforderlich.
+#### <a name="anti-pattern-solution"></a>Anti-Muster-Lösung
+ Sobald der Benutzer eine Aktion initiiert hat und bevor er die Aufgabe abgeschlossen hat, platzieren Sie sofort kritische Stoppsymbole neben den Bereichen, die eine Konfiguration benötigen.
 
-#### <a name="example-manifest-designer-declarations"></a>Beispiel: Manifest-Designer-Deklarationen
- Eine Deklaration direkt zur Liste hinzufügen werden in einem Fehlerzustand befindet, die persistent gespeichert, bis der Benutzer die erforderlichen Eigenschaften festlegt.
+#### <a name="example-manifest-designer-declarations"></a>Beispiel: Manifest Designer-Deklarationen
+ Wenn Sie der Liste eine Deklaration hinzufügen, wird sie sofort in einen Fehlerzustand versetzt, der so lange beibehalten wird, bis der Benutzer die erforderlichen Eigenschaften festlegt.
 
- In diesem Fall eine zusätzliche Bedeutung vorhanden ist, da das Symbol, das verwendet wird, für die Warnung enthält einen "&times;" Symbol, sodass das allgemeine Remove-Symbol neben verwendet werden kann. Daher wird die Benutzeroberfläche eine Schaltfläche "entfernen" ein mehr umständlich Steuerelement verwendet.
+ In diesem Fall gibt es ein zusätzliches Problem, da&times;das für die Warnung verwendete Symbol ein " "-Symbol enthält, sodass das allgemeine Entfernen-Symbol nicht neben ihm verwendet werden kann. Daher verwendet die Benutzeroberfläche eine Schaltfläche Entfernen, ein klobigeres Steuerelement.
 
- ![Benutzeroberfläche in einem Fehlerzustand platzieren, in der Standardeinstellung ist ein Visual Studio-Anti-Muster. ](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-Muster")<br />Benutzeroberfläche in einem Fehlerzustand platzieren, in der Standardeinstellung ist ein Visual Studio-Anti-Muster.
+ ![Wenn Sie die Benutzeroberfläche standardmäßig in einen Fehlerstatus versetzen, handelt es sich um ein Visual Studio-Antimuster.](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-Muster")<br />Wenn Sie die Benutzeroberfläche standardmäßig in einen Fehlerstatus versetzen, handelt es sich um ein Visual Studio-Antimuster.
 
 #### <a name="alternatives"></a>Alternativen
 
-Eine bessere Lösung für dieses Problem ist auf:
+Eine bessere Lösung für dieses Problem ist:
 
-- Erlaubt dem Benutzer eine Deklaration ohne Warnung hinzufügen, und klicken Sie dann sofort zum Festlegen von Eigenschaften für das Element verschieben.
+- Erlauben Sie dem Benutzer, eine Deklaration ohne Warnung hinzuzufügen, und wechseln Sie dann sofort, um Eigenschaften für das Element festzulegen.
 
-- Fügen Sie das Symbol "Warnung" (gold Dreieck) Wenn der Fokus aus dem Element, wie z. B. eine andere Deklaration zur Liste hinzufügen oder versuchen, die Registerkarten im Designer zu ändern.
+- Fügen Sie das Warnsymbol (Golddreieck) hinzu, wenn der Fokus vom Element verschoben wird, z. B. um eine weitere Deklaration zur Liste hinzuzufügen oder um zu versuchen, Registerkarten innerhalb des Designers zu ändern.
 
-- Wenn der Benutzer versucht, die Registerkarten ändert, vor dem Festlegen von Eigenschaften für alle Deklarationen, pop ein Dialogfeld darauf hingewiesen, dass die Anwendung nicht erstellt werden (oder alle der Auswirkungen), bis die Warnungen aufgelöst werden. Wenn der Benutzer das Dialogfeld schließt und Registerkarten wird trotzdem klicken Sie dann ein Symbol (kritisch oder Warnung, je nach Bedarf) zur Registerkarte "Deklarationen" hinzugefügt.
+- Wenn der Benutzer versucht, Registerkarten zu ändern, bevor Eigenschaften für Deklarationen gesetzt werden, öffnen Sie ein Dialogfeld, in dem erklärt wird, dass die Anwendung erst erstellt wird (oder welche Auswirkungen dies ausbleibt), bis die Warnungen aufgelöst sind. Wenn der Benutzer das Dialogfeld trotzdem ablehnt und Registerkarten ändert, wird der Registerkarte Deklarationen ein Symbol (kritisch oder warnung) hinzugefügt.
 
-### <a name="multiple-clicks-to-dismiss-ui"></a>Mehrere Klicks, um die Benutzeroberfläche zu schließen.
+### <a name="multiple-clicks-to-dismiss-ui"></a>Mehrere Klicks zum Schließen der Benutzeroberfläche
 
-#### <a name="feature-team-goals"></a>Feature-Team-Ziele
- Keine ermöglicht dem Benutzer um die Benutzeroberfläche zu schließen, ohne zuerst den erläuternden Text anzeigen zu lassen.
+#### <a name="feature-team-goals"></a>Feature-Teamziele
+ Erlauben Sie dem Benutzer nicht, die Benutzeroberfläche zu schließen, ohne vorher den Erklärungstext zu sehen.
 
 #### <a name="anti-pattern"></a>Anti-Muster
- Das Einfügen von diese Videolinks in verschiedenen Stellen in der Benutzeroberfläche von Visual Studio-Team entschieden, dem allgemeinen Muster der "&times;" Schließen Schaltfläche und QuickInfo Erklärung, wie von UX angegeben, und stattdessen eine Dropdown-Liste implementiert, und verknüpfen Sie die "Nicht mehr anzeigen".
+ Das Team, das die Videolinks an verschiedenen Stellen innerhalb der&times;VS-Benutzeroberfläche einfügte, entschied sich gegen das allgemeine Muster der " Schaltfläche "Schließen" und tooltip- wie von UX angegeben, und implementierte stattdessen einen Dropdown- und "Nicht erneut anzeigen"-Link.
 
-#### <a name="example-video-links-in-team-explorer"></a>Beispiel: Videolinks in Team Explorer
-Das Erzwingen eines erklärenden Text zu lesen, vor dem Schließen der Benutzeroberfläche des Benutzers ist ein Anti-Muster in Visual Studio. Richtig entworfene und Videofunktionen Links sollte eine QuickInfo mit weiteren Informationen angezeigt, wenn darauf gezeigt wird, und klicken auf die "&times;" sollte die Meldung ohne weitere Interaktion zu schließen.
+#### <a name="example-video-links-in-team-explorer"></a>Beispiel: Videolinks im Team Explorer
+Wenn der Benutzer vor dem Schließen der Benutzeroberfläche erklärenden Text lesen muss, ist dies ein Antimuster in Visual Studio. Richtig gestaltet, sollten Videolinks eine QuickInfo mit zusätzlichen Informationen zum&times;Mauszeiger anzeigen, und wenn Sie auf " klicken, sollte die Nachricht ohne weitere Interaktion verworfen werden.
 
- ![Erklärender Text anti-&#45;Muster &#45; falsche](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Falsche Videolink-Muster
+ ![Erläuternder Text anti&#45;Muster &#45; falsch](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "FalscheVerwendungvon Mehrfachklicks")<br />Falsches Video-Link-Muster
 
-Anstelle einer einfachen Schaltfläche "Schließen" (einem Klick) wird der Benutzer gezwungen, zwei aufeinander folgende Mausklicks zu verwenden, um die Benutzeroberfläche an jeder Stelle einfach zu verwerfen, die diese Videolinks angezeigt werden.
+Anstelle einer einfachen Schaltfläche zum Schließen (ein Klick) ist der Benutzer gezwungen, zwei Klicks zu verwenden, um die Benutzeroberfläche einfach an jedem Ort zu schließen, an dem die Videolinks angezeigt werden.
 
-Der richtige Entwurf für diese Situation ist das allgemeine Muster zur Internet Explorer, Office und Visual Studio folgen: Wenn darauf gezeigt wird, kann dem Benutzer die QuickInfo-Beschreibung angezeigt, und nur einem Klick wird die Benutzeroberfläche ausgeblendet.
+Der richtige Entwurf für diese Situation besteht darin, dem Muster zu folgen, das Internet Explorer, Office und Visual Studio gemeinsam ist: Bei der Maus kann der Benutzer die Beschreibung der QuickInfo sehen, und mit einem Klick wird die Benutzeroberfläche ausgeblendet.
 
- ![Erklärender Text anti-&#45;Muster &#45; richtig](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-Muster-korrigieren")<br />Richtige Videolink-Muster
+ ![Erläuternder Text anti&#45;Muster &#45; korrekt](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-musterkorrekt")<br />Korrektes Video-Link-Muster
 
-### <a name="using-command-bars-for-settings"></a>Mithilfe der Befehlsleisten für Einstellungen
+### <a name="using-command-bars-for-settings"></a>Verwenden von Befehlsleisten für Einstellungen
 
-**Abbildung A** dieses Antimuster darstellt: platzieren eine Einstellung unter eine Befehlsschaltfläche, die auf mehr als nur den Befehl angewendet wird. Bei dieser Version stehen die folgenden Befehle, die neben dem Debugging starten –-ähnliche Ansicht in Browser starten ohne Debugging sowie schrittweise ausführen –, die die ausgewählte Einstellung berücksichtigt.
+**Abbildung A** stellt dieses Antimuster dar: Setzen Sie eine Einstellung unter eine Befehlsschaltfläche, die für mehr als nur den Befehl gilt. In dieser Skizze gibt es neben Debuggen starten – wie View in Browser, Start Without Debugging und Step Into – Befehle, die die ausgewählte Einstellung berücksichtigen.
 
-![Abbildung A: Antimuster für Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-Muster – FigureA")<br />Abbildung A: Antimuster für Befehlsleiste
+![Abbildung A: Befehlsleiste Antimuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-Muster-FigurA")<br />Abbildung A: Befehlsleiste Antimuster
 
-Etwas bessere Leistung, der aber dennoch unerwünschtem, wäre, Einstellungen dieses Typs in den Symbolleisten, siehe **Abbildung B**. Unterteilte Schaltflächen belegen weniger Speicherplatz und sind daher eine Verbesserung über die Dropdown-Elemente, werden beide Entwürfe eine Symbolleiste weiterhin verwendet, um etwas höher zu stufen, die einen Befehl handelt es sich nicht.
+Etwas besser, aber immer noch unerwünscht, ist das Setzen von Einstellungen dieses Typs in die Symbolleisten, wie in **Abbildung B**dargestellt. Während Split-Buttons weniger Platz benötigen und daher eine Verbesserung gegenüber Dropdowns sind, verwenden beide Designs immer noch eine Symbolleiste, um etwas zu fördern, das nicht wirklich ein Befehl ist.
 
-![Abbildung b Besser, aber dennoch ein Antimuster für Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-Muster – FigureB")<br />Abbildung b Besser, aber dennoch ein Antimuster für Befehlsleiste
+![Abbildung B: Besser, aber immer noch ein Befehlsleisten-Antimuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-Muster-FigurB")<br />Abbildung B: Besser, aber immer noch ein Befehlsleisten-Antimuster
 
-In den richtigen Lösungsansatz **Abbildung C**, die Einstellung an eine Reihe von Befehlen gebunden ist. Es gibt keine globale Einstellung festgelegt wird, und wir nur zwischen vier Befehle wechseln. Dies ist die einzige Situation, in der Befehle auf der Symbolleiste zulässig sind.
+In der richtigen Vorgehensweise in **Abbildung C**ist die Einstellung an eine Reihe von Befehlen gebunden. Es wird keine globale Einstellung festgelegt, und wir wechseln nur zwischen vier Befehlen. Dies ist die einzige Situation, in der Befehle in der Symbolleiste akzeptabel sind.
 
-![Abbildung "c:" Korrigieren Sie die Verwendung von Visual Studio-Befehlsleiste Befehlsmuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-Muster – FigureC")<br />Abbildung "c:" Richtige Verwendung von Visual Studio-Befehlsleiste Befehlsmuster
+![Abbildung C: Korrekte Verwendung des Visual Studio-Befehlsleistenmusters](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-Muster-FigureC")<br />Abbildung C: Korrekte Verwendung des Visual Studio-Befehlsleistenmusters
 
-### <a name="control-anti-patterns"></a>Anti-Steuerelementmuster
- Einige Antimuster für sind einfach falsche Verwendung oder eine Präsentation eines Steuerelements oder einer Gruppe von Steuerelementen.
+### <a name="control-anti-patterns"></a>Kontrolle von Anti-Mustern
+ Einige Anti-Muster sind einfach falsche Verwendung oder Darstellung eines Steuerelements oder einer Gruppe von Steuerelementen.
 
-#### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Unterstreichungen, die verwendet werden, während eine gruppenbezeichnung, nicht auf einen Link
- Unterstrichenen Text sollte nur für Links verwendet werden.
+#### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Unterstreichung, die als Gruppenbezeichnung und nicht als Hyperlink verwendet wird
+ Unterstreichungstext sollte nur für Hyperlinks verwendet werden.
 
- **Bad:** \
- ![Unterstrichener Text, der keinen Link ist ein Visual Studio-Anti-Muster. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-G_GroupLabelIncorrect")<br />Unterstrichener Text, der keinen Link ist ein Visual Studio-Anti-Muster.
+ **Schlecht:**\
+ ![Unterstrichener Text, der kein Hyperlink ist, ist ein Visual Studio-Antimuster.](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />Unterstrichener Text, der kein Hyperlink ist, ist ein Visual Studio-Antimuster.
 
- **Gute:** \
- ![Richtig formatiert wurde, wird angezeigt, nicht-Hyperlink-Text nicht erweiterten in die Umgebungsschriftart. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-H_GroupLabelCorrect")<br />Richtig formatiert wurde, wird angezeigt, nicht-Hyperlink-Text nicht erweiterten in die Umgebungsschriftart.
+ **gut:**\
+ ![Richtig formatiert, wird Nicht-Hyperlink-Text in der Umgebungsschriftart ungeschmückt angezeigt.](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />Richtig formatiert, wird Nicht-Hyperlink-Text in der Umgebungsschriftart ungeschmückt angezeigt.
 
-#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Durch Klicken auf ein Kontrollkästchen-Ergebnisse in einem Popupdialogfeld
- Klicken im Assistenten "Windows Azure-Anwendung veröffentlichen" das Kontrollkästchen "Remotedesktop für alle Rollen aktivieren" sofort wird ein Popup-Dialogfeld ein Visual Studio-Anti-Muster. Darüber hinaus das Kontrollkästchen ist nicht ausfüllen des Feldes mit einem Kontrollkästchen nach ausgewählt wird, ein weiteres Anti-Interaktionsmuster.
+#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Ein Klicken auf ein Kontrollkästchen führt zu einem Popup-Dialogfeld
+ Wenn Sie im Assistenten "Windows Azure Application veröffentlichen" auf das Kontrollkästchen "Remotedesktop für alle Rollen aktivieren" klicken, wird sofort ein Popup-Dialogfeld, ein Visual Studio-Antimuster, angezeigt. Darüber hinaus wird das Kontrollkästchenfeld nicht mit einem Kontrollkästchen gefüllt, nachdem es ausgewählt wurde, ein anderes Interaktions-Antimuster.
 
- ![Nach dem Klicken auf ein Kontrollkästchen ein Visual Studio-Anti-Muster wird aufzurufen ein Dialogfeld. ](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-I_CheckboxPopup")<br />Nach dem Klicken auf ein Kontrollkästchen ein Visual Studio-Anti-Muster wird aufzurufen ein Dialogfeld.
+ ![Das Öffnen eines Dialogfelds nach dem Klicken auf ein Kontrollkästchen ist ein Visual Studio-Antimuster.](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />Das Öffnen eines Dialogfelds nach dem Klicken auf ein Kontrollkästchen ist ein Visual Studio-Antimuster.
 
 ### <a name="hyperlink-anti-patterns"></a>Antimuster für Hyperlink
- Das folgende Beispiel enthält zwei Anti-Muster:
+ Das folgende Beispiel enthält zwei Antimuster:
 
-1. Im Vordergrund roten aktivieren, wenn darauf gezeigt wird also nicht die richtige freigegebene Farbe aus dem Schriftartdienst verwendet wird.
+1. Das Rotdrehen im Vordergrund bedeutet, dass die richtige freigegebene Farbe des Schriftartdienstes nicht verwendet wird.
 
-2. "Weitere Informationen" ist nicht den entsprechenden Text einen Link auf ein grundlegendes Thema. Des Benutzers Ziel ist nicht mehr, erfahren, um die Auswirkungen ihrer Wahl zu verstehen ist.
+2. "Weitere Informationen" ist nicht der geeignete Text für einen Link zu einem konzeptionellen Thema. Das Ziel des Benutzers ist es nicht, mehr zu erfahren, es ist, die Auswirkungen seiner Wahl zu verstehen.
 
-   ![Ignorieren den Dienst für die Farbe, und Verwenden von "Erfahren Sie mehr" für Links sind Antimuster für Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-J_HyperlinkIncorrect")<br />Ignorieren den Dienst für die Farbe, und Verwenden von "Erfahren Sie mehr" für Links sind Antimuster für Visual Studio.
+   ![Das Ignorieren des Farbdienstes und die Verwendung von "Weitere Informationen" für Hyperlinks sind Visual Studio-Antimuster.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Das Ignorieren des Farbdienstes und die Verwendung von "Weitere Informationen" für Hyperlinks sind Visual Studio-Antimuster.
 
-**Eine bessere Lösung:** Stellen Sie die Frage, die der Benutzer aufgefordert werden würde, auf den Link. Zum Beispiel:
+**Bessere Lösung:** Stellen Sie die Frage, die der Benutzer stellen würde, indem Sie auf den Link klicken. Beispiel:
 
-- Wie funktionieren die Windows Azure-Dienste?
+- Wie funktionieren Windows Azure-Dienste?
 
 - Wann benötige ich ein Windows Azure Mobile Services-Projekt?
 
-#### <a name="using-click-here-for-links"></a>Mithilfe von "Hier klicken", links
- Links sollte erklären sich von selbst. Es ist ein Anti-Muster verwenden "Hier klicken" oder eine ähnliche Variante.
+#### <a name="using-click-here-for-links"></a>Verwenden von "Klicken Sie hier" für Links
+ Hyperlinks sollten selbstbeschreibend sein. Es ist ein Anti-Muster, um "Klicken Sie hier" oder eine ähnliche Variation zu verwenden.
 
- **Ungültige:** "Klicken Sie hier, um Anweisungen zum Erstellen eines neuen Projekts."
+ **Schlecht:** "Klicken Sie hier, um Anweisungen zum Erstellen eines neuen Projekts zu erhalten."
 
- **Gute:** "Wie erstelle ich ein neues Projekt?"
+ **Gut:** "Wie erstelle ich ein neues Projekt?"

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772201"
 ---
 # <a name="performance-session-properties"></a>Eigenschaften von Leistungssitzungen
@@ -33,21 +33,21 @@ Die Leistungssitzung hat folgende Eigenschaftenseiten:
 
 Mit diesen Einstellungen können Sie die Profilerstellungsmethode auswählen, die .NET-Objektsammlung und Lebenszyklusdaten hinzufügen und den Standardspeicherort und die Benennungskonventionen des Berichts angeben.
 
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie unter
 
-[Vorgehensweise: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)
+[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
 
 [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Vorgehensweise: Dateinamenoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Starten
 
 Sie können diese Einstellungen aus einer Liste der Binärdateien auswählen und die Startreihenfolge der Binärdateien angeben.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdatei](../profiling/how-to-specify-the-binary-to-start.md)
+Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).
 
-## <a name="sampling"></a>Sampling
+## <a name="sampling"></a>Stichproben
 
 Diese Einstellungen ermöglichen Ihnen die Auswahl des Samplingereignisses und des Samplingintervalls, wenn Sampling als Profilerstellungsmethode verwendet wird. Ein Samplingereignis dient zum Erfassen von Profilerstellungsdaten im angegebenen Intervall. Wenn das Samplingereignis z.B. ein Taktzyklus ist und das Samplingintervall auf 10.000.000 eingestellt ist, werden jeweils nach 10 Millionen Taktzyklen Profilerstellungsdaten erfasst. Die folgenden vier Typen von Samplingereignissen sind verfügbar:
 
@@ -57,12 +57,12 @@ Diese Einstellungen ermöglichen Ihnen die Auswahl des Samplingereignisses und d
 - Leistungsindikatoren: für Leistungsproblemen auf niedriger Ebene
 - Zusätzliche Samplingereignisse können auf Grundlage der verfügbaren Leistungsindikatoren angegeben werden
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)
+Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="binary"></a>Binär
 Mit diesen Einstellungen können Sie angeben, ob instrumentierte Binärdateien an einen anderen Speicherort verschoben werden sollen. Wenn Sie beispielsweise eine *My.DLL*-Profilerstellung durchführen und die instrumentierte Binärdatei nicht verschieben, wird eine Sicherungskopie von *My.DLL* mit dem Namen *My.Orig.DLL* erstellt. Anschließend wird *My.DLL* geändert, indem Prüfungen zur Datensammlung eingefügt werden. Wenn Sie sich entschließen, die instrumentierte Binärdatei zu verschieben, wird die ursprüngliche Binärdatei nicht umbenannt, und die instrumentierte Binärdatei wird am angegebenen Speicherort zur Verwendung während der Instrumentation kopiert.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdatei](../profiling/how-to-specify-the-binary-to-start.md)
+Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).
 
 ## <a name="tier-interactions"></a>Ebeneninteraktionen
 
@@ -72,7 +72,7 @@ Weitere Informationen finden Sie unter [Erfassen von Ebeneninteraktionsdaten](..
 
 Mit diesen Einstellungen können Sie Leistungsdaten für den JScript-Code in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webseiten sammeln und alle **Präinstrumentations-** und **Postinstrumentationsereignisse** angeben, die vor oder nach dem Instrumentationsprozess ausgeführt werden sollen.
 
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie unter
 
 [Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
@@ -82,13 +82,13 @@ Weitere Informationen finden Sie unter:
 
 Mit diesen Einstellungen können Sie Daten zu CPU-Leistungsindikatoren sammeln, wenn Sie die Instrumentationsprofilerstellungsmethode verwenden. Portable Leistungszähler sind unabhängig vom CPU-Design und Hersteller verfügbar. Plattformereignisse sind spezifisch für das CPU-Design und den Hersteller. Weitere Informationen über integrierte Leistungsindikatoren finden Sie in der Dokumentation des jeweiligen Prozessors.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)
+Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md).
 
 ## <a name="windows-events"></a>Windows-Ereignisse
 
-Während der Profilierung können Sie Daten von Ereignisablaufverfolgungsanbietern erfassen. Sie können die Daten mithilfe der `/calltrace`-Option des Befehlszeilentools *VSPerfReport.exe* anzeigen. Weitere Informationen über die Ereignisablaufverfolgung für Windows (ETW) finden Sie unter [About Event Tracing (Über Ereignisablaufverfolgung)](/windows/win32/etw/about-event-tracing).
+Während der Profilierung können Sie Daten von Ereignisablaufverfolgungsanbietern erfassen. Sie können die Daten mithilfe der *-Option des Befehlszeilentools* VSPerfReport.exe`/calltrace` anzeigen. Weitere Informationen über die Ereignisablaufverfolgung für Windows (ETW) finden Sie unter [About Event Tracing (Über Ereignisablaufverfolgung)](/windows/win32/etw/about-event-tracing).
 
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie unter
 
 [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
@@ -104,13 +104,13 @@ Mit dieser Option können Sie Daten des Windows-Systemmonitors erfassen. Um dies
 
 Mit diesen Einstellungen können Sie die Optionen des Instrumentationsvorgangs hinzufügen, indem Sie eine oder mehrere Optionen des [VSInstr](../profiling/vsinstr.md)-Profilerstellungstools über die Befehlszeile angeben. Wenn die Anwendung mehr als eine Version ausführt, können Sie auch die Version der typischen Laufzeit angeben, für die ein Profil erstellt werden soll.
 
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie unter
 
 [Vorgehensweise: Angeben der .NET Framework-Laufzeit](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Vorgehensweise: Angeben zusätzlicher Instrumentationsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)

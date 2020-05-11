@@ -8,25 +8,25 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851216"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586334"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen Ihrer Tests mit Internet Explorer automatisieren. Sie können den Test anschließend anpassen und diesen entweder mit Internet Explorer oder anderen Browsertypen für diese Webanwendungen wiedergeben.
 
- **Voraussetzungen**
+ **Anforderungen**
 
 - Visual Studio Enterprise
 
 - Betriebssysteme:
 
-  - Microsoft Windows 7
+  - Microsoft Windows 7
 
   - Microsoft Windows 8
 
@@ -69,7 +69,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
 #### <a name="installing-selenium-components"></a>Installieren von Selenium-Komponenten
 
-1. Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.
+1. Wählen Sie im Menü **Tools****Erweiterungen und Updates**aus.
 
 2. Suchen Sie im Dialogfeld „Erweiterungen und Updates“ für `Selenium components for Cross Browser Testing`.
 
@@ -80,7 +80,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
    Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
-### <a name="enable-debugging"></a>Debuggen aktivieren
+### <a name="enable-debugging"></a>Aktivieren des Debuggings
  Um das Debuggen der Webanwendung zu aktivieren, müssen Sie die folgenden Konfigurationsoptionen ausführen:
 
 1. Nur meinen Code aktivieren:
@@ -95,11 +95,11 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
     2. Deaktivieren Sie in den **Common Language Runtime-Ausnahmen** die Option **Vom Benutzercode unbehandelt**.
 
-## <a name="generate"></a>*Die Option zum Ändern von "BrowserWindow. currentbrowser" wird im Coded UI-Test nicht angezeigt.*
+## <a name="i-dont-see-the-option-to-change-browserwindowcurrentbrowser-in-the-coded-ui-test"></a><a name="generate"></a> *Die Option zum Ändern von „BrowserWindow.CurrentBrowser“ wird im Test der programmierten UI nicht angezeigt.*
  Möglicherweise verwenden Sie eine Version von [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)], die Coded UI-Tests mit verschiedenen Webbrowsern nicht unterstützt. Zum Erstellen von Tests der programmierten UI müssen Sie Visual Studio Enterprise verwenden.
 
  *Was sollte ich noch wissen?*
- **Notizen**
+ **Hinweise**
 
 - ![Prerequsite](../test/media/prereq.png "Prereq") Der Webbrowser von Apple Safari wird nicht unterstützt.
 
@@ -115,7 +115,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
    **C:\Programme (x86)\Microsoft Visual Studio 11.0\Common7\IDE“**
 
-   Geben Sie die folgenden Werte an:
+   Legen Sie die folgenden Werte fest:
 
   - `EqtTraceLevel` im Abschnitt `system.diagnostics`.
 
@@ -138,18 +138,18 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
  [Beheben von Fehlern in browserübergreifenden Tests](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Anleitung
+### <a name="guidance"></a>Anleitungen
  [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](https://msdn.microsoft.com/library/jj159335.aspx)
+ [Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 5: Automatisieren von System Tests](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>Häufig gestellte Fragen
- [Tests der codierten UI – FAQ 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [Tests der codierten UI – FAQ 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [Tests der codierten UI – FAQ 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
  [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden von Benutzeroberflächen Automatisierung zum Testen ihrer vom Code](../test/use-ui-automation-to-test-your-code.md) [unterstützten Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) Analysieren von Tests der programmierten [UI mithilfe von Test Protokollen](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

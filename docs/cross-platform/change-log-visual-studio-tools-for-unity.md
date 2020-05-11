@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 3/23/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,66 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 0b1d735cd05f79eaabd00a575a6c050b37ce2d16
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706786"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232821"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="4510"></a>4.5.1.0
+
+Veröffentlichung: 16. März 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) hinzugefügt. Private Methoden, die mit Invoke, InvokeRepeating, StartCoroutine oder StopCoroutine verwendet werden, sollten nicht als nicht verwendet gekennzeichnet werden.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Die OnDrawGizmos/OnDrawGizmosSelected-Dokumentation wurde behoben.
+
+- **Auswertung:**
+
+  - Die Lambdaargumentuntersuchung wurde behoben.
+
+## <a name="4501"></a>4.5.0.1
+
+Veröffentlichung: 19. Februar 2020
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Ein Fehler wurde behoben, durch den die falsche Nachrichtensignatur bei der [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)-Diagnose überprüft wurde. Beim Untersuchen von Typen mit mehreren Vererbungsstufen kann diese Diagnose mit der folgenden Meldung fehlschlagen: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+
+## <a name="4500"></a>4.5.0.0
+
+Veröffentlichung: 22. Januar 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Die Unterstützung für HLSL-Dateien wurde hinzugefügt.
+  
+  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) hinzugefügt. Private Felder mit dem `SerializeField`-Attribut sollten nicht als nicht verwendet gekennzeichnet werden.
+  
+  - Eine Unterdrückung wurde zu [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) hinzugefügt. Felder mit dem `SerializeField`-Attribut sollten nicht als nicht zugewiesen gekennzeichnet werden.  
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Die Projektgenerierung wurde behoben (`GenerateTargetFrameworkMonikerAttribute`-Ziel wurde nicht immer ordnungsgemäß ermittelt).
 
 ## <a name="4420"></a>4.4.2.0
 
@@ -49,7 +99,7 @@ Veröffentlichung: 6. November 2019
 
 - **Integration:**
 
-  - Analysetool für Tagvergleich, `UNT0002`, mit erweiterten Binär- und Aufrufausdrücken korrigiert.
+  - Das Analysetool zum Vergleichen von Tags, [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md), wurde mit erweiterten Binär- und Aufrufausdrücken korrigiert.
 
 ### <a name="deprecated-features"></a>Veraltete Features
 
@@ -65,7 +115,7 @@ Veröffentlichung: 15. Oktober 2019
 
 - **Integration:**
 
-  - Suppressor für `IDE0060` (nicht verwendeter Parameter) für alle Unity-Meldungen hinzugefügt.
+  - Eine Unterdrückung für [`IDE0060`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) (nicht verwendeter Parameter) wurde für alle Unity-Meldungen hinzugefügt.
   
   - QuickInfo für mit `TooltipAttribute` markierte Felder hinzugefügt. (Dies funktioniert auch für einen einfachen get-Accessor, der dieses Feld verwendet).
 
@@ -88,21 +138,21 @@ Veröffentlicht am 16. September 2019
 - **Integration:**
 
   - Wir haben das Verständnis von Visual Studio für Unity-Projekte vertieft, indem wir neue, für Unity spezifische Diagnosefunktionen hinzugefügt haben. Wir haben die IDE auch intelligenter gestaltet, indem wir allgemeine C#-Diagnosen unterdrückt haben, die nicht für Unity-Projekte gelten. Die IDE zeigt z. B. keine Schnellkorrektur zum Ändern einer Prüfungsvariablen in `readonly` an, die Sie daran hindern würde, die Variable im Unity-Editor zu ändern.
-    - `UNT0001`: Unity-Nachrichten werden von der Runtime auch aufgerufen, wenn sie leer sind. Deklarieren Sie sie nicht, um unnötige Verarbeitung durch die Unity-Laufzeit zu vermeiden.
-    - `UNT0002`: Der Tagvergleich mithilfe der Zeichenfolgengleichheit ist langsamer als die integrierte CompareTag-Methode.
-    - `UNT0003`: Die Verwendung der generischen Form von GetComponent wird für die Typsicherheit bevorzugt.
-    - `UNT0004`: Die Update-Nachricht ist von der Framerate abhängig und sollte Time.deltaTime anstelle von Time.fixedDeltaTime verwenden.
-    - `UNT0005`: Die FixedUpdate-Nachricht ist von der Framerate abhängig und sollte Time.fixedDeltaTime anstelle von Time.deltaTime verwenden.
-    - `UNT0006`: Es wurde eine falsche Methodensignatur für diese Unity-Nachricht erkannt.
-    - `UNT0007`: Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Zusammenfügung nicht kompatibel ist.
-    - `UNT0008`: Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Verteilung nicht kompatibel ist.
-    - `UNT0009`: Wenn Sie das InitializeOnLoad-Attribut auf eine Klasse anwenden, müssen Sie einen statischen Konstruktor bereitstellen. Das InitializeOnLoad-Attribut stellt sicher, dass es aufgerufen wird, wenn der Editor gestartet wird.
-    - `UNT0010`: MonoBehaviour sollte nur mithilfe von AddComponent() erstellt werden. MonoBehaviour ist eine Komponente und muss einem GameObject angefügt werden.
-    - `UNT0011`: ScriptableObject sollte nur mit CreateInstance() erstellt werden. ScriptableObject muss von der Unity-Engine zum Verarbeiten von Unity-Nachrichtenmethoden erstellt werden.
-    - `USP0001` für `IDE0029`: Unity-Objekte sollten keine NULL-Zusammenfügung verwenden.
-    - `USP0002` für `IDE0031`: Unity-Objekte sollten keine NULL-Verteilung verwenden.
-    - `USP0003` für `IDE0051`: Unity-Nachrichten werden von der Unity-Runtime aufgerufen.
-    - `USP0004` für `IDE0044`: Felder mit einem SerializeField-Attribut sollten nicht als schreibgeschützt festgelegt werden.
+    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md): Unity-Nachrichten werden von der Runtime auch aufgerufen, wenn sie leer sind. Deklarieren Sie sie nicht, um unnötige Verarbeitung durch die Unity-Laufzeit zu vermeiden.
+    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md): Der Tagvergleich mithilfe der Zeichenfolgengleichheit ist langsamer als die integrierte CompareTag-Methode.
+    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0003.md): Die Verwendung der generischen Form von GetComponent wird für die Typsicherheit bevorzugt.
+    - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0004.md): Die Update-Nachricht ist von der Framerate abhängig und sollte Time.deltaTime anstelle von Time.fixedDeltaTime verwenden.
+    - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0005.md): Die FixedUpdate-Nachricht ist von der Framerate abhängig und sollte Time.fixedDeltaTime anstelle von Time.deltaTime verwenden.
+    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md): Es wurde eine falsche Methodensignatur für diese Unity-Nachricht erkannt.
+    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0007.md): Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Zusammenfügung nicht kompatibel ist.
+    - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0008.md): Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Verteilung nicht kompatibel ist.
+    - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0009.md): Wenn Sie das InitializeOnLoad-Attribut auf eine Klasse anwenden, müssen Sie einen statischen Konstruktor bereitstellen. Das InitializeOnLoad-Attribut stellt sicher, dass es aufgerufen wird, wenn der Editor gestartet wird.
+    - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0010.md): MonoBehaviour sollte nur mithilfe von AddComponent() erstellt werden. MonoBehaviour ist eine Komponente und muss einem GameObject angefügt werden.
+    - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0011.md): ScriptableObject sollte nur mit CreateInstance() erstellt werden. ScriptableObject muss von der Unity-Engine zum Verarbeiten von Unity-Nachrichtenmethoden erstellt werden.
+    - [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0001.md) für `IDE0029`: Unity-Objekte sollten keine NULL-Zusammenfügung verwenden.
+    - [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0002.md) für `IDE0031`: Unity-Objekte sollten keine NULL-Verteilung verwenden.
+    - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0003.md) für `IDE0051`: Unity-Nachrichten werden von der Unity-Runtime aufgerufen.
+    - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md) für `IDE0044`: Felder mit einem SerializeField-Attribut sollten nicht als schreibgeschützt festgelegt werden.
 
 ## <a name="4310"></a>4.3.1.0
 
@@ -214,7 +264,7 @@ Veröffentlicht am 21. Mai 2019
 
   - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Nur referenzierte Pakete (durch Verwendung von „manifest.json“ im Ordner `Packages`) und lokale Pakete (im Ordner `Packages` integriert) werden angezeigt.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Beibehalten externer Eigenschaften bei Verarbeitung der Projektmappendatei.
 
@@ -270,7 +320,7 @@ Veröffentlichung: 31. Januar 2019
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Die Compilerwarnungen `CS0649` und `IDE0051` in Unity-Projekten, die diese Nachrichten erstellt haben, werden nun automatisch unterdrückt.
 
@@ -406,7 +456,7 @@ am 13. November 2018 veröffentlicht
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
 
@@ -464,7 +514,7 @@ Veröffentlichung: 24. Juli 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - (Aus 3.9.0.0 bereitgestellt) Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
 
@@ -474,7 +524,7 @@ Veröffentlichung: 7. Juli 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
 
@@ -514,7 +564,7 @@ Veröffentlichung: 30. Mai 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Konvertieren Sie keine portablen PDB-Dateien mehr in MDB-Dateien, wenn Sie die neue Unity-Runtime verwenden.
 
@@ -554,7 +604,7 @@ Veröffentlichung: 7. Mai 2018
 
   - Verwendung der Ausnahmeeinstellungen wurde behoben
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Der Paket-Manager wird aus der Kompilierung von Einheiten aus der Generierung ausgeschlossen.
 
@@ -564,7 +614,7 @@ Veröffentlichung: 13. März 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Es wurde Unterstützung für den neuen Projektgenerator in Unity 2018.1 hinzugefügt.
 
@@ -584,7 +634,7 @@ Veröffentlichung: 5. März 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Erkennung von Mono-Version korrigiert.
 
@@ -598,13 +648,13 @@ Veröffentlichung: 23. Februar 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Unterstützung für .NET Standard wurde hinzugefügt.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Erkennung von Unity-Zielframework korrigiert.
 
@@ -646,7 +696,7 @@ Veröffentlichung: 10. Januar 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Unterstützung für 2018.1-MonoIsland-Referenzmodell hinzugefügt.
 
@@ -664,7 +714,7 @@ Veröffentlichung: 10. Januar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Projekt-GUID-Berechnung für Playerprojekte korrigiert.
 
@@ -710,7 +760,7 @@ Veröffentlichung: 4. Dezember 2017
 
   - Korrigiert: Das API-Hilfemenü in Unity wird nicht angezeigt.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrigiert: Player-Projekterstellung bei der Arbeit an einem UWP-Spiel mit IL2CPP/.NET 4.6 als Back-End.
 
@@ -726,7 +776,7 @@ Veröffentlichung: 19. September 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - assembly.json-Kompilierungseinheiten werden nun unterstützt.
 
@@ -748,7 +798,7 @@ Veröffentlichung: 19. September 2017
 
   - Vom Compiler generierte fehlerhafte Elemente mit lokalen Variablen wurden behoben.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Fehlerhafter Verweis auf Microsoft.CSharp für API-Ebene wurde in Unity 4.6 behoben.
 
@@ -758,7 +808,7 @@ Veröffentlichung: 15. August 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrigiert: Die Visual Studio-Projektmappengenerierung in Unity 5.5 und vorherigen Versionen.
 
@@ -820,7 +870,7 @@ Veröffentlichung: 7. April 2017
 
   - Zusätzliche Unterstützung für die neue Unity-Laufzeit (mit .NET 4.6 / C# 6-Kompatibilität).
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Zusätzliche Unterstützung für .NET 4.6-Profil.
 
@@ -836,7 +886,7 @@ Veröffentlichung: 7. April 2017
 
   - Feste Position der Einfügemarke nach dem Einfügen der Methode mit der automatischen Vervollständigung.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Entfernte Assemblyversion nach der Verarbeitung.
 
@@ -870,7 +920,7 @@ Veröffentlichung: 23. Januar 2017
 
   - Hinzufügung einer Warnung für den Fall eines nicht bindbaren Haltepunkts (wenn kein zugehöriger Quellort gefunden wird).
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrektur der csproj-Generierung mit speziellen/lokalisierten Zeichen.
 
@@ -915,7 +965,7 @@ Veröffentlichung: 17. November 2016
 
   - Hinzufügung besserer Fehlermeldungen, wenn ein Typ erwartet oder nicht gefunden wird.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Entfernung des CSharp-Suffixes aus den Projektnamen.
 
@@ -943,7 +993,7 @@ Veröffentlichung: 17. November 2016
 
   - Korrektur der Unterstützung für das Debugging von Iteratorrahmen mit dem neuen C#-Compiler.
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Behebung eines Problems, das beim Adressieren des Unity Web-Players eine Kompilierung verhinderte.
 

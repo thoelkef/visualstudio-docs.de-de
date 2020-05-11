@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Microsoft-Dokumentation
+title: THREADPROPERTIES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316181"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713424"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Beschreibt die Eigenschaften eines Threads.
@@ -53,38 +53,38 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Member
  `dwFields`\
- Eine Kombination von Flags aus der [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) Enumeration, die beschreibt, welche Felder in dieser Struktur gültig sind.
+ Eine Kombination von [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) Flags aus der THREADPROPERTY_FIELDS-Enumeration, die beschreibt, welche Felder in dieser Struktur gültig sind.
 
  `dwThreadId`\
  Die Thread-ID.
 
  `dwSuspendCount`\
- Das Anhalten des Threads Anzahl.
+ Die Anzahl der Thread-Aussetzen.
 
  `dwThreadState`\
- Ein Wert aus der [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) Enumeration, die den Zustand des Betriebssystem Threads angibt.
+ Ein Wert [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) aus der THREADSTATE-Enumeration, der den Status des Betriebssystemthreads angibt.
 
  `bstrPriority`\
- Eine Zeichenfolge, die die Priorität des Threads angibt. z. B. "Höher als Normal", "Normal" oder "Time Critical".
+ Eine Zeichenfolge, die die Threadpriorität angibt; z. B. "Über Normal", "Normal" oder "Zeitkritisch".
 
  `bstName`\
  Der Threadname.
 
  `bstrLocation`\
- Der Threadspeicherort (in der Regel den obersten Stapelrahmen), ausgedrückt in der Regel als Name der Methode, in dem Ausführung zurzeit angehalten wird.
+ Die Threadposition (in der Regel der oberste Stapelrahmen), der in der Regel als Name der Methode ausgedrückt wird, bei der die Ausführung derzeit angehalten wird.
 
-## <a name="remarks"></a>Hinweise
- Diese Struktur wird ausgefüllt, durch einen Aufruf der [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Methode. Die Informationen zurückgegeben, daher wird normalerweise verwendet, füllen die **Threads** Fenster.
+## <a name="remarks"></a>Bemerkungen
+ Diese Struktur wird durch einen Aufruf der [GetThreadProperties-Methode](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) ausgefüllt. Die so zurückgegebenen Informationen werden **Threads** in der Regel beim Auffüllen des Threads-Fensters verwendet.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)

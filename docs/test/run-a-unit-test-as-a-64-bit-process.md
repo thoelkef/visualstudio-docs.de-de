@@ -1,6 +1,6 @@
 ---
 title: Ausführen eines Komponententest als 64-Bit-Prozess
-ms.date: 11/04/2016
+ms.date: 03/10/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 67a614ed164b12070fe40f24cdba09a3051e36a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d6c6839f8c4702d88d1022116231c6f22b5dbf21
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566253"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093913"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Ausführen eines Komponententest als 64-Bit-Prozess
 
@@ -23,16 +23,27 @@ Wenn Sie über einen 64-Bit-Computer verfügen, können Sie Komponententests aus
 
 ## <a name="to-run-a-unit-test-as-a-64-bit-process"></a>So führen Sie einen Komponententest als 64-Bit-Prozess aus
 
-1. Wenn Ihr Code oder Ihre Tests als 32-Bit/X86 kompiliert wurden, aber Sie diese als ein 64-Bit-Prozess ausführen möchten, kompilieren Sie sie als **Beliebige CPU** oder optional als **64-Bit**.
+1. Wenn Ihr Code oder Ihre Tests als 32-Bit/x86-Prozess kompiliert wurden, Sie diese nun aber als 64-Bit-Prozess ausführen möchten, kompilieren Sie sie als **Beliebige CPU**.
+
+   ::: moniker range="vs-2017"
+   Alternativ dazu können Sie Ihr Projekt in Visual Studio 2017 auch als **64-Bit-Prozess** kompilieren.
+   ::: moniker-end
 
     > [!TIP]
     > Maximale Flexibilität erhalten Sie, wenn Sie die Testprojekte mit der Konfiguration **Beliebige CPU** kompilieren. Die Ausführung ist dann sowohl auf 32- als auch auf 64-Bit-Agents möglich. Das Kompilieren von Testprojekten mit der **64-Bit**-Konfiguration bietet keinen Vorteil.
 
-2. Wählen Sie im Visual Studio-Menü **Test**, wählen Sie dann **Einstellungen** und anschließend **Prozessorarchitektur** aus. Wählen Sie **x64** zum Ausführen der Tests als 64-Bit-Prozess aus.
+2. Richten Sie die Komponententests als 64-Bit-Prozess ein.
 
-   - ODER
+   ::: moniker range=">=vs-2019"
+   Klicken Sie im Visual Studio-Menü auf **Test** und anschließend auf **Prozessorarchitektur für AnyCPU-Projekte**. Wählen Sie **x64** zum Ausführen der Tests als 64-Bit-Prozess aus.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Klicken Sie im Visual Studio-Menü auf **Test**, **Testeinstellungen** und anschließend auf **Prozessorarchitektur**. Wählen Sie **x64** zum Ausführen der Tests als 64-Bit-Prozess aus.
+   ::: moniker-end
 
-   Geben Sie `<TargetPlatform>x64</TargetPlatform>` in einer *RUNSETTINGS*-Datei an. Ein Vorteil dieser Methode ist, dass Sie Gruppen von Einstellungen in verschiedenen Dateien angeben und schnell zwischen verschiedenen Einstellungen wechseln können. Sie können auch die Einstellungen zwischen Projektmappen kopieren. Weitere Informationen hierzu finden Sie unter [Configure unit tests by using a .runsettings file (Konfigurieren von Komponententests mithilfe einer .runsettings-Datei)](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+   \- oder -
+
+   Geben Sie `<TargetPlatform>x64</TargetPlatform>` in einer *RUNSETTINGS*-Datei an. Ein Vorteil dieser Methode ist, dass Sie Gruppen von Einstellungen in verschiedenen Dateien angeben und schnell zwischen verschiedenen Einstellungen wechseln können. Sie können auch die Einstellungen zwischen Projektmappen kopieren. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Komponententests mithilfe einer RUNSETTINGS-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
 ## <a name="see-also"></a>Siehe auch
 

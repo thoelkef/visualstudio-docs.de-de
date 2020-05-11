@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "66261113"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
@@ -54,7 +54,7 @@ Dadurch sollte das Problem behoben werden. Wenn Sie immer noch auf Probleme sto�
 
 Mehrere Unity-Plug-Ins wie Parse, FMOD, UMP (Universal Media Player), ZFBrowser oder Embedded Browser verwenden native Threads. Wenn ein Plug-In der Runtime einen nativen Thread hinzufügt, führt dies zu einem Problem, da die Runtime dann Blockierungsaufrufe an das Betriebssystem ausgibt. Das bedeutet, dass Unity den Thread für den Debugger (oder das Neuladen einer Domäne) nicht unterbrechen kann und nicht mehr reagiert.
 
-Für FMOD gibt es eine Möglichkeit zur Problemumgehung: Sie können das Initialisierungs-[Flag](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` weitergeben, um die asynchrone Verarbeitung zu deaktivieren und die gesamte Verarbeitung auf dem Hauptthread durchzuführen.
+Für FMOD gibt es eine Möglichkeit zur Problemumgehung: Sie können das Initialisierungs-[Flag](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags)`FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` weitergeben, um die asynchrone Verarbeitung zu deaktivieren und die gesamte Verarbeitung auf dem Hauptthread durchzuführen.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Nicht kompatibles Projekt in Visual Studio
 

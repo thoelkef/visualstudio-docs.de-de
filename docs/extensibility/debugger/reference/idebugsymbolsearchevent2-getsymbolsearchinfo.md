@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft-Dokumentation
+title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcd584e600849ad30f83adef768671dc8f2ab57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: be498154a8141c61f114682893d0aaf8b841cf95
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320401"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718886"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-Wird aufgerufen, von einem Ereignishandler, um Ergebnisse zu einem Symbol-Load-Prozess abzurufen.
+Wird von einem Ereignishandler aufgerufen, um Ergebnisse über einen Symbolladeprozess abzurufen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,24 +45,24 @@ int GetSymbolSearchInfo(
 
 ## <a name="parameters"></a>Parameter
 `pModule`\
-[out] Ein IDebugModule3-Objekt, das das Modul für das die Symbole geladen wurden darstellt.
+[out] Ein IDebugModule3-Objekt, das das Modul darstellt, für das die Symbole geladen wurden.
 
 `pbstrDebugMessage`\
-[in, out] Gibt eine Zeichenfolge, die alle Fehlermeldungen aus dem Modul enthält. Wenn kein Fehler vorliegt, klicken Sie dann diese Zeichenfolge enthält nur den Modulnamen, aber sie ist niemals leer.
+[in, out] Gibt eine Zeichenfolge zurück, die Fehlermeldungen aus dem Modul enthält. Wenn kein Fehler auftritt, enthält diese Zeichenfolge nur den Namen des Moduls, aber sie ist nie leer.
 
 > [!NOTE]
-> [C++] `pbstrDebugMessage` nicht `NULL` und freigegeben werden müssen, mit `SysFreeString`.
+> [C++] `pbstrDebugMessage` kann `NULL` nicht mit freigegeben `SysFreeString`werden und muss mit freigegeben werden.
 
 `pdwModuleInfoFlags`\
-[out] Eine Kombination von Flags aus der [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) Enumeration, der angibt, ob keine Symbole geladen wurden.
+[out] Eine Kombination von [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) Flags aus der MODULE_INFO_FLAGS-Enumeration an, die angibt, ob Symbole geladen wurden.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Wenn ein Ereignishandler empfängt die [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) Ereignis aus, nachdem versucht wird, um Debugsymbole für ein Modul zu laden, kann der Handler für diese Methode, um die Ergebnisse der diese Last zu ermitteln, aufrufen.
+## <a name="remarks"></a>Bemerkungen
+ Wenn ein Handler das [IDebugSymbolSearchEvent2-Ereignis](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) empfängt, nachdem versucht wurde, Debugsymbole für ein Modul zu laden, kann der Handler diese Methode aufrufen, um die Ergebnisse dieser Last zu ermitteln.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

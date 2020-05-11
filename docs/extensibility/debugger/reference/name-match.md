@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Microsoft-Dokumentation
+title: NAME_MATCH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09ddb4653d1f13024360daca30eab40ebf57df0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346742"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714293"
 ---
-# <a name="namematch"></a>NAME_MATCH
-Wählt den Fall kann Option für den Abgleich von Namen an.
+# <a name="name_match"></a>NAME_MATCH
+Wählt die Falloption für übereinstimmende Namen aus.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  Es wurden keine Optionen angegeben.
 
  `nmCaseSensitive`\
- Gibt an, dass Namen abgeglichen wird Groß-/Kleinschreibung beachtet werden.
+ Gibt an, dass die Groß-/Kleinschreibung der Namen berücksichtigt wird.
 
  `nmCaseInsensitive`\
- Gibt an, dass Namen abgeglichen wird keine Groß-/Kleinschreibung beachtet.
+ Gibt an, dass bei übereinstimmenden Namen die Groß-/Kleinschreibung nicht beachtet wird.
 
-## <a name="remarks"></a>Hinweise
- Übergeben als Argument für die folgenden Methoden:
+## <a name="remarks"></a>Bemerkungen
+ Übergeben als Argument an die folgenden Methoden:
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -64,14 +64,14 @@ public enum NameMatchOptions { 
 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
-## <a name="requirements"></a>Anforderungen
- Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 - [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)

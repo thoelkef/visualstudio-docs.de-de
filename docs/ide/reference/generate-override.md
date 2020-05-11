@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569243"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generieren einer Überschreibung in Visual Studio
@@ -22,9 +22,9 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung:** Sie können sofort Code für eine Methode generieren, die von einer Basisklasse überschrieben werden kann.
+**Beschreibung**: Sie können sofort Code für eine Methode generieren, die von einer Basisklasse überschrieben werden kann.
 
-**Hintergrund:** Sie möchten eine Basisklassenmethode überschreiben und die Signatur automatisch generieren.
+**Hintergrund**: Sie möchten eine Basisklassenmethode überschreiben und die Signatur automatisch generieren.
 
 **Vorteile**: Sie könnten die Methodensignatur selbst schreiben – dieses Feature generiert die Signatur jedoch automatisch.
 
@@ -56,6 +56,6 @@ Diese Codegenerierung gilt für:
 
        ![Ergebnis der Überschreibung in Visual Basic](media/override-result-vb.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)

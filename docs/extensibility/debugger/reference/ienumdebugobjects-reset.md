@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::Reset | Microsoft-Dokumentation
+title: IEnumDebugObjects::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Reset method
 ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5a9e8e08c19e7d4f2a8b47ad0124115743522a8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9302330ac67cba4a9a68cacb7bc8f91aff7ad3ba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339549"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716331"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 Diese Methode setzt die Enumeration auf das erste Element zurück.
@@ -36,14 +36,14 @@ int Reset();
 ```
 
 ## <a name="parameters"></a>Parameter
- Keiner
+ Keine
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Nachdem diese Methode aufgerufen wird, wird beim nächsten Aufruf von [Weiter](../../../extensibility/debugger/reference/ienumdebugobjects-next.md) gibt das erste Element der Enumeration.
+## <a name="remarks"></a>Bemerkungen
+ Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf von [Next](../../../extensibility/debugger/reference/ienumdebugobjects-next.md) das erste Element der Enumeration zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)
-- [Nächste](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)
+- [Weiter](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)

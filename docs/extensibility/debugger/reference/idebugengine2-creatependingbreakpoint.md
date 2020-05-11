@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CreatePendingBreakpoint | Microsoft-Dokumentation
+title: IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fdd7fde0540754df3b152eb38d729576a7b9fe26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333303"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731121"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
-Erstellt einen ausstehenden Haltepunkt in der Debug-Engine (DE).
+Erstellt einen ausstehenden Haltepunkt im Debugmodul (DE).
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,23 +43,23 @@ int CreatePendingBreakpoint(
 
 ## <a name="parameters"></a>Parameter
 `pBPRequest`\
-[in] Ein [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Objekt, das zum Erstellen den ausstehenden Haltepunkt beschreibt.
+[in] Ein [IDebugBreakpointRequest2-Objekt,](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) das den zu erstellenden ausstehenden Haltepunkt beschreibt.
 
 `ppPendingBP`\
-[out] Gibt eine [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt, das den ausstehenden Haltepunkt darstellt.
+[out] Gibt ein [IDebugPendingBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) zurück, das den ausstehenden Haltepunkt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. In der Regel gibt `E_FAIL` Wenn die `pBPRequest` Parameter entspricht einer beliebigen Sprache, die von der DE zurück, wenn unterstützt nicht die `pBPRequest` -Parameter ist ungültig oder unvollständig.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Wird `E_FAIL` in `pBPRequest` der Regel zurückgegeben, wenn der Parameter `pBPRequest` nicht mit einer Sprache übereinstimmt, die von der DE unterstützt wird, wenn der Parameter ungültig oder unvollständig ist.
 
-## <a name="remarks"></a>Hinweise
-Ein ausstehender Haltepunkt ist im Wesentlichen eine Sammlung aller Informationen erforderlich, um einen Haltepunkt in Code zu binden. Der ausstehenden Haltepunkt von dieser Methode zurückgegebene nicht an den Code bis gebunden ist die [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) Methode wird aufgerufen.
+## <a name="remarks"></a>Bemerkungen
+Ein ausstehender Haltepunkt ist im Wesentlichen eine Sammlung aller Informationen, die zum Binden eines Haltepunkts an Code erforderlich sind. Der ausstehende Haltepunkt, der von dieser Methode zurückgegeben wird, ist erst an den Code gebunden, wenn die [Bind-Methode](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) aufgerufen wird.
 
-Für jeden ausstehenden Haltepunkt Ruft die Benutzersätze sitzungsbasierter Debug-Manager (SDM) diese Methode in jeder angefügten DE. Es ist Aufgabe der DE, um sicherzustellen, dass der Haltepunkt für Programme, die unter diesem DE gültig ist.
+Für jeden ausstehenden Haltepunkt, den der Benutzer festlegt, ruft der Sitzungsdebug-Manager (SDM) diese Methode in jeder angefügten DE auf. Es ist an der DE zu überprüfen, ob der Haltepunkt für Programme gültig ist, die in dieser DE ausgeführt werden.
 
-Wenn der Benutzer einen Haltepunkt in einer Zeile des Codes festlegt, kann die DE den Haltepunkt in die nächste Zeile im Dokument binden, der dieser Code entspricht. Dadurch kann der Benutzer zum Festlegen eines Haltepunkts in der ersten Zeile einer mehrzeiligen Anweisung, aber binden es in der letzten Zeile (wobei der gesamte Code in den Debuginformationen zugeordnet ist).
+Wenn der Benutzer einen Haltepunkt für eine Codezeile festlegt, kann der DE den Haltepunkt an die nächste Zeile im Dokument binden, die diesem Code entspricht. Dies ermöglicht es dem Benutzer, einen Haltepunkt in der ersten Zeile einer mehrzeiligen Anweisung festzulegen, ihn jedoch in der letzten Zeile zu binden (wobei der gesamte Code in den Debuginformationen zugeordnet ist).
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CProgram` Objekt. Die DE Implementierung der `IDebugEngine2::CreatePendingBreakpoint` könnte dann alle Aufrufe an diese Implementierung der Methode in jedem Programm weiterleiten.
+Das folgende Beispiel zeigt, wie diese `CProgram` Methode für ein einfaches Objekt implementiert wird. Die De-Implementierung der `IDebugEngine2::CreatePendingBreakpoint` könnte dann alle Aufrufe an diese Implementierung der Methode in jedem Programm weiterleiten.
 
 ```
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)
@@ -72,8 +72,8 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591735"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78235198"
 ---
 # <a name="features-of-visual-studio"></a>Features von Visual Studio
 
@@ -84,7 +84,7 @@ Sie können mithilfe von Visual Studio Apps und Spiele für macOS, Linux, Window
 
 - Entwickeln Sie mit den [Visual Studio-Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md) 2D- und 3D-Spiele in C#.
 
-- Erstellen Sie native C++-Apps für iOS-, Android- und Windows-Geräte. Mit [C++ für plattformübergreifende Entwicklung](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) können Sie allgemeinen Code in Bibliotheken für iOS, Android und Windows freigeben.
+- Erstellen Sie native C++-Apps für iOS-, Android- und Windows-Geräte. Mit [C++ für plattformübergreifende Entwicklung](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development) können Sie allgemeinen Code in Bibliotheken für iOS, Android und Windows freigeben.
 
 - Nutzen Sie den [Android-Emulator](../cross-platform/visual-studio-emulator-for-android.md), um Android-Apps bereitzustellen, zu testen und zu debuggen.
 
@@ -136,7 +136,7 @@ Suchen Sie nach [vorhandenen Erweiterungen](https://marketplace.visualstudio.com
 
 Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweitern der Visual Studio-IDE](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Neuerungen in Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)

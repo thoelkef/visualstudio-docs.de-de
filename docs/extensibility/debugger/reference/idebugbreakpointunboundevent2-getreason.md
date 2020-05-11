@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft-Dokumentation
+title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b3c15b25ec6f4f2d7ddc56efc163ec2eb6b81c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352833"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734722"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Ruft den Grund ab, die, den der Haltepunkt aufgehoben wurde.
+Ruft den Grund ab, warum der Haltepunkt ungebunden war.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>Parameter
 `pdwUnboundReason`\
-[out] Gibt einen Wert aus der [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) Enumeration, der den Grund, der der Haltepunkt aufgehoben wurde.
+[out] Gibt einen Wert [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) aus der BP_UNBOUND_REASON-Enumeration zurück, der den Grund für die Ungebundenheit des Haltepunkts angibt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Ursachen ein Haltepunkts wird erneut gebunden an einen anderen Speicherort nach einem bearbeiten und Fortfahren-Vorgang, oder eine Entscheidung treffen, dass ein Haltepunkt gebunden wurde.
+## <a name="remarks"></a>Bemerkungen
+Gründe sind die Erneutkeit eines Haltepunkts an eine andere Position nach einem Bearbeitungs- und Weitervorgang oder die Feststellung, dass ein Haltepunkt irrtümlich gebunden wurde.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CBreakpointUnboundDebugEventBase** -Objekt, das macht die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CBreakpointUnboundDebugEventBase-Objekt** implementiert wird, das die [IDebugBreakpointUnboundEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) verfügbar macht.
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
@@ -71,5 +71,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

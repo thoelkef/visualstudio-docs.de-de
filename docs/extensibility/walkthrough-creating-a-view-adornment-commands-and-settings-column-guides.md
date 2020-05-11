@@ -1,74 +1,74 @@
 ---
-title: Erstellen ein Randsteuerelement der Ansicht, Befehlen und -Einstellungen | Microsoft-Dokumentation
+title: Erstellen einer Ansichtsverzierung, Befehle und Einstellungen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 4aab9e0ede95eebe6f8f54cc3f01e7e7d5f98d1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890586"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697646"
 ---
-# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen Sie eine Ansicht Zusatzelement, Befehle und Einstellungen)
-Sie können die Visual Studio-Text, Code-Editor mit Befehlen und Anzeigen von Effekten erweitern. Diesem Artikel erfahren Sie, wie zum Einstieg in eine Funktion für beliebte Erweiterung Spaltenführungslinien können. Spaltenführungslinien werden visuell hell Zeilen, die auf den Text-Editor-Ansicht helfen Ihnen beim Verwalten von Code, um bestimmte Spaltenbreite gezeichnet. Insbesondere kann formatierten Code für Beispiele wichtig sein, Sie enthalten, die in Dokumenten, Blogbeiträgen oder Fehlerberichte, werden sollen.
+# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen einer Ansichtsverzierung, Befehle und Einstellungen (Spaltenführungslinien)
+Sie können den Visual Studio-Text-/Code-Editor um Befehle und Ansichtseffekte erweitern. Dieser Artikel zeigt Ihnen, wie Sie mit einer beliebten Erweiterungsfunktion, Spaltenhandbüchern, beginnen. Spaltenhilfslinien sind visuell lichtende Linien, die in der Ansicht des Texteditors gezeichnet werden, um Ihnen zu helfen, Ihren Code für bestimmte Spaltenbreiten zu verwalten. Insbesondere kann formatierter Code für Beispiele wichtig sein, die Sie in Dokumente, Blogbeiträge oder Fehlerberichte aufnehmen.
 
-In dieser exemplarischen Vorgehensweise Sie:
-- Erstellen Sie ein VSIX-Projekt
-- Fügen Sie ein Zusatzelement der Editor-Ansicht
-- Hinzufügen von Unterstützung für das Speichern und Abrufen von Einstellungen (Ort von Zeichnen-Befehl Spaltenführungslinien und ihre Farbe)
-- Hinzufügen von Befehlen (Spaltenführungslinien hinzufügen/entfernen, ändern Sie ihre Farbe)
-- Platzieren Sie die Befehle auf dem Menü "Bearbeiten" und Text-Dokument-Kontextmenüs
-- Hinzufügen von Unterstützung für die Befehle in der Visual Studio-Befehlsfenster aufrufen
+In dieser exemplarischen Vorgehensweise führen Sie folgende Aktionen aus:
+- Erstellen eines VSIX-Projekts
+- Hinzufügen einer Editoransichtsverzierung
+- Unterstützung zum Speichern und Abrufen von Einstellungen hinzufügen (wo Spaltenführungen und deren Farbe gezeichnet werden sollen)
+- Befehle hinzufügen (Spaltenhilfslinien hinzufügen/entfernen, Farbe ändern)
+- Platzieren der Befehle im Menü "Bearbeiten" und in den Kontextmenüs des Textdokuments
+- Hinzufügen von Unterstützung für das Aufrufen der Befehle aus dem Visual Studio-Befehlsfenster
 
-  Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+  Mit dieser Visual Studio[Gallery-Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)können Sie eine Version des Column Guides-Features ausprobieren.
 
   > [!NOTE]
-  > In dieser exemplarischen Vorgehensweise fügen Sie eine große Menge an Code, in einigen Dateien, die von Visual Studio-Extension-Vorlagen generiert. Aber in Kürze in dieser exemplarischen Vorgehensweise wird finden Sie eine vollständige Lösung auf GitHub mit anderen Beispielen für die Erweiterung. Der fertige Code unterscheidet sich geringfügig, dass es sich um echte Befehlssymbole anstelle von Generictemplate Symbole hat.
+  > In dieser exemplarischen Vorgehensweise fügen Sie eine große Menge an Code in einige Dateien ein, die von Visual Studio-Erweiterungsvorlagen generiert werden. Aber bald wird diese exemplarische Vorgehensweise auf eine abgeschlossene Lösung auf GitHub mit anderen Erweiterungsbeispielen verweisen. Der abgeschlossene Code unterscheidet sich geringfügig dadurch, dass er echte Befehlssymbole hat, anstatt generische Vorlagensymbole zu verwenden.
 
 ## <a name="get-started"></a>Erste Schritte
-Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Einrichten der Lösung
-Zunächst erstellen Sie ein VSIX-Projekt, ein Zusatzelement der Editor-Ansicht hinzufügen und fügen Sie dann einen Befehl (bei dem eine VSPackage, um den Befehl Besitzer hinzugefügt). Die grundlegende Architektur lautet wie folgt aus:
-- Sie haben einen Text-Ansicht-erstellen-Listener, der erstellt eine `ColumnGuideAdornment` Objekt pro Ansicht. Dieses Objekt überwacht Ereignisse im Zusammenhang mit der Ansicht ändern, oder die Einstellungen ändern, aktualisieren oder das Neuzeichnen-Spalte führt nach Bedarf.
-- Es gibt eine `GuidesSettingsManager` , verarbeitet werden, lesen und Schreiben von aus dem Speicher der Visual Studio-Einstellungen. Der Settings Manager verfügt auch über die Vorgänge zum Aktualisieren der Einstellungen, die der Benutzerbefehle unterstützen (Spalte hinzufügen, entfernen Sie die Spalte, ändern Sie die Farbe).
-- Es ist ein VSIP-Paket, das ist erforderlich, wenn Sie Benutzerbefehle haben, aber es ist nur für den Standardcode, der die Befehle Implementierungsobjekt initialisiert.
-- Gibt es eine `ColumnGuideCommands` -Objekt, das der Benutzer führt Befehle und verknüpft die Befehlshandler für die deklarierten Befehle in der *VSCT* Datei.
+Zuerst erstellen Sie ein VSIX-Projekt, fügen eine Editoransichtsverzierung hinzu und fügen dann einen Befehl hinzu (der ein VSPackage zum Besitz des Befehls hinzufügt). Die grundlegende Architektur ist wie folgt:
+- Sie verfügen über einen Textansichtserstellungslistener, der ein `ColumnGuideAdornment` Objekt pro Ansicht erstellt. Dieses Objekt überwacht Ereignisse, bei der die Ansicht geändert oder Einstellungen bei Bedarf geändert, aktualisiert oder neu gezeichnet werden.
+- Es gibt `GuidesSettingsManager` eine, die das Lesen und Schreiben aus dem Visual Studio-Einstellungen-Speicher behandelt. Der Einstellungs-Manager verfügt auch über Vorgänge zum Aktualisieren der Einstellungen, die die Benutzerbefehle unterstützen (Spalte hinzufügen, Spalte entfernen, Farbe ändern).
+- Es gibt ein VSIP-Paket, das erforderlich ist, wenn Sie Benutzerbefehle haben, aber es ist nur Boilerplate-Code, der das Befehlsimplementierungsobjekt initialisiert.
+- Es gibt `ColumnGuideCommands` ein Objekt, das die Benutzerbefehle ausführt und die Befehlshandler für Befehle einhängt, die in der *.vsct-Datei* deklariert sind.
 
-  **VSIX**. Verwendung **Datei &#124; neu...**  Befehl aus, um ein Projekt zu erstellen. Wählen Sie die **Erweiterbarkeit** Knoten unter **c#** im linken Navigationsbereich, und wählen Sie **VSIX-Projekt** im rechten Bereich. Geben Sie den Namen **ColumnGuides** , und wählen Sie **OK** zum Erstellen des Projekts.
+  **VSIX**. Verwenden Sie den Befehl **File &#124; New ...** , um ein Projekt zu erstellen. Wählen Sie im linken Navigationsbereich den **Erweiterbarkeitsknoten** unter **"C"** aus, und wählen Sie Im rechten Bereich **VSIX-Projekt** aus. Geben Sie den Namen **ColumnGuides** ein, und wählen Sie **OK** aus, um das Projekt zu erstellen.
 
-  **Anzeigen des Zusatzelements**. Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer. Wählen Sie die **hinzufügen &#124; neues Element...**  Befehl aus, um ein neues Ansicht Zusatzelement Element hinzuzufügen. Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Zusatzelement** im rechten Bereich. Geben Sie den Namen **ColumnGuideAdornment** als Element benennen, und wählen **hinzufügen** hinzugefügt.
+  **Ansicht Sadornment**. Drücken Sie die rechte Zeigertaste auf dem Projektknoten im Projektmappen-Explorer. Wählen Sie den Befehl **&#124; Neues Element hinzufügen ...** aus, um ein neues Ansichtsschmuckelement hinzuzufügen. Wählen Sie **Erweiterbarkeit &#124;-Editor** im linken Navigationsbereich und im rechten Bereich **Editor-Ansichtsfenster-Schmuck** aus. Geben Sie den Namen **ColumnGuideAdornment** als Elementnamen ein, und wählen Sie **Hinzufügen** aus, um ihn hinzuzufügen.
 
-  Sie können sehen, dass diese Elementvorlage zwei Dateien dem Projekt (sowie Verweise usw.) hinzugefügt: **ColumnGuideAdornment.cs** und **ColumnGuideAdornmentTextViewCreationListener.cs**. Die Vorlagen zeichnen eine violette Rechteck für die Sicht. Im folgenden Abschnitt, ändern Sie ein paar Codezeilen in der Ansicht erstellen Listener, und ersetzen den Inhalt der **ColumnGuideAdornment.cs**.
+  Sie können sehen, dass diese Elementvorlage dem Projekt zwei Dateien hinzugefügt hat (sowie Verweise usw.): **ColumnGuideAdornment.cs** und **ColumnGuideAdornmentTextViewCreationListener.cs**. Die Vorlagen zeichnen ein violettes Rechteck in der Ansicht. Im folgenden Abschnitt ändern Sie einige Zeilen im Ansichtserstellungslistener und ersetzen den Inhalt **von ColumnGuideAdornment.cs**.
 
-  **Befehle**. In **Projektmappen-Explorer**, drücken Sie die Zeiger nach rechts-Taste auf den Projektknoten. Wählen Sie die **hinzufügen &#124; neues Element...**  Befehl aus, um ein neues Ansicht Zusatzelement Element hinzuzufügen. Wählen Sie **Erweiterbarkeit &#124; VSPackage** im linken Navigationsbereich, und wählen Sie **benutzerdefinierten Befehls** im rechten Bereich. Geben Sie den Namen **ColumnGuideCommands** als Element benennen, und wählen **hinzufügen**. Zusätzlich zur mehrere Verweise, hinzufügen, die Befehle und das Paket auch hinzugefügt **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, und **ColumnGuideCommandsPackage.vsct** . Im folgenden Abschnitt ersetzen Sie den Inhalt der ersten und letzten Dateien zu definieren und implementieren Sie die Befehle aus.
+  **Befehle**. Drücken Sie im **Projektmappen-Explorer**die rechte Zeigertaste auf dem Projektknoten. Wählen Sie den Befehl **&#124; Neues Element hinzufügen ...** aus, um ein neues Ansichtsschmuckelement hinzuzufügen. Wählen Sie **Erweiterbarkeit &#124; VSPackage** im linken Navigationsbereich und im rechten Bereich **benutzerdefinierter Befehl** aus. Geben Sie den Namen **ColumnGuideCommands** als Elementnamen ein, und wählen Sie **Hinzufügen**aus. Zusätzlich zu mehreren Verweisen wurden die Befehle und das Paket **hinzugefügt, ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**und **ColumnGuideCommandsPackage.vsct**hinzugefügt. Im folgenden Abschnitt ersetzen Sie den Inhalt der ersten und letzten Dateien, um die Befehle zu definieren und zu implementieren.
 
-## <a name="set-up-the-text-view-creation-listener"></a>Einrichten des textlisteners der Ansicht erstellen
-Open *ColumnGuideAdornmentTextViewCreationListener.cs* im Editor. Dieser Code wird ein Handler implementiert, für jedes Mal, wenn Visual Studio Textansichten erstellt. Es gibt Attribute an, mit denen gesteuert wird, wenn der Handler aufgerufen wird, abhängig von den Eigenschaften der Ansicht.
+## <a name="set-up-the-text-view-creation-listener"></a>Einrichten des Textansichtserstellungslisteners
+Öffnen *Sie ColumnGuideAdornmentTextViewCreationListener.cs* im Editor. Dieser Code implementiert einen Handler für jedes Mal, wenn Visual Studio Textansichten erstellt. Es gibt Attribute, die steuern, wann der Handler aufgerufen wird, abhängig von den Merkmalen der Ansicht.
 
-Der Code muss auch eine Zusatzelementebene deklarieren. Wenn der Editor Sichten aktualisiert, ruft der Zusatzelementebenen, die für die Ansicht und ruft aus, die die Elemente des Zusatzelements ab. Sie können deklarieren, die Reihenfolge der der Ebene relativ zu anderen Attribute. Ersetzen Sie die folgende Zeile:
+Der Code muss auch eine Verzierungsebene deklarieren. Wenn der Editor Ansichten aktualisiert, ruft er die Verzierungs-Layer für die Ansicht ab und ruft daraus die Verzierungselemente ab. Sie können die Reihenfolge des Layers relativ zu anderen Mitattributen deklarieren. Ersetzen Sie die folgende Zeile:
 
 ```csharp
 [Order(After = PredefinedAdornmentLayers.Caret)]
 ```
 
-mit diesen zwei Zeilen:
+mit diesen beiden Zeilen:
 
 ```csharp
 [Order(Before = PredefinedAdornmentLayers.Text)]
 [TextViewRole(PredefinedTextViewRoles.Document)]
 ```
 
-Die Zeile der nun ersetzte ist in einer Gruppe von Attributen, die eine Zusatzelementebene deklarieren. Die erste Zeile ändern Sie nur die Änderungen, die Führungslinien Spalte angezeigt werden. Zeichnen von Linien "vor" der Text in der Ansicht bedeutet, dass sie hinter oder unterhalb des Texts angezeigt werden. Die zweite Zeile deklariert, dass die Spalte Handbuch Zusatzelemente gelten für Text-Entitäten, die Ihr Konzept eines Dokuments anpassen, aber Sie können dem Zusatzelement befindet, z. B. um funktioniert nur für die bearbeitbaren Text deklarieren. Es gibt weitere Informationen im [Language Service und -Editor-Erweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
+Die Zeile, die Sie ersetzt haben, befindet sich in einer Gruppe von Attributen, die einen Verzierungs-Layer deklarieren. Die erste Zeile, die Sie geändert haben, ändert sich nur dort, wo die Spaltenführungen angezeigt werden. Wenn Sie die Zeilen "vor" dem Text in der Ansicht zeichnen, wird er hinter oder unter dem Text angezeigt. In der zweiten Zeile wird deklariert, dass die Spaltenführungsverzierungen auf Textentitäten anwendbar sind, die zu Ihrem Begriff eines Dokuments passen, Sie jedoch die Verzierung z. B. für bearbeitbaren Text deklarieren könnten. Weitere Informationen finden Sie in [den Sprachdienst- und Editorerweiterungspunkten](../extensibility/language-service-and-editor-extension-points.md)
 
-## <a name="implement-the-settings-manager"></a>Implementieren der Settings manager
-Ersetzen Sie den Inhalt von der *GuidesSettingsManager.cs* durch den folgenden Code (siehe nachfolgende Erläuterung):
+## <a name="implement-the-settings-manager"></a>Implementieren des Einstellungs-Managers
+Ersetzen Sie den Inhalt der *GuidesSettingsManager.cs* durch den folgenden Code (nachfolgend unten):
 
 ```csharp
 using Microsoft.VisualStudio.Settings;
@@ -319,32 +319,32 @@ namespace ColumnGuides
 
 ```
 
-Die meisten dieser Code erstellt und analysiert das Format der Konfigurationseinstellungen: "RGB (\<Int >,\<Int >,\<Int >) \<Int >, \<Int >,...".  Die ganzen Zahlen am Ende handelt es sich um die Spalten eins Spaltenführungslinien sollen. Die Spalte-Anleitungen-Erweiterung erfasst alle Einstellungen für die in eine einzelne Einstellung-Wert-Zeichenfolge.
+Der größte Teil dieses Codes erstellt und analysiert\<das Einstellungsformat: "RGB( int\<>, int\<>, int>) \<int>, \<int>, ...".  Die ganzzahligen Dateien am Ende sind die einbasierten Spalten, in denen Spaltenführungslinien angezeigt werden sollen. Die Spaltenführungserweiterung erfasst alle Einstellungen in einer einzigen Einstellungswertzeichenfolge.
 
-Es gibt einige Teile des Codes zu markieren. Die folgende Codezeile ruft der verwaltete Wrapper für Visual Studio für die Speicherung der Einstellungen ab. Zum größten Teil, wird dies über die Windows-Registrierung abstrahiert, aber diese API ist unabhängig von den Speichermechanismus.
+Es gibt einige Teile des Codes, die hervorgehoben werden sollten. Die folgende Codezeile ruft den verwalteten Visual Studio-Wrapper für den Einstellungsspeicher ab. In den meisten Teilen wird dies über die Windows-Registrierung abstrahiert, aber diese API ist unabhängig vom Speichermechanismus.
 
 ```csharp
 internal static SettingsManager VsManagedSettingsManager =
     new ShellSettingsManager(ServiceProvider.GlobalProvider);
 ```
 
-Der Speicher der Visual Studio-Einstellungen verwendet ein Kategorie-ID und einer Einstellung-ID zur eindeutigen Identifizierung der alle Einstellungen:
+Der Visual Studio-Einstellungsspeicher verwendet einen Kategoriebezeichner und einen Einstellungsbezeichner, um alle Einstellungen eindeutig zu identifizieren:
 
 ```csharp
 private const string _collectionSettingsName = "Text Editor";
 private const string _settingName = "Guides";
 ```
 
-Sie müssen keine verwenden `"Text Editor"` als Namen der Kategorie. Sie können Alles auswählen, die Ihnen gefällt.
+Sie müssen nicht `"Text Editor"` als Kategoriename verwendet werden. Sie können alles auswählen, was Sie mögen.
 
-Die ersten Paar Funktionen sind die Einstiegspunkte, um Einstellungen zu ändern. Sie überprüfen die allgemeine Einschränkungen wie die maximale Anzahl von Anleitungen, die zulässig.  Sie rufen Sie dann `WriteSettings`, die eine einstellungszeichenfolge verfasst und legt die Eigenschaft `GuideLinesConfiguration`. Durch Festlegen dieser Eigenschaft speichert den Einstellungswert der Visual Studio-einstellungsspeicher und löst die `SettingsChanged` Ereignis, um alle aktualisieren die `ColumnGuideAdornment` Objekten, die jeweils eine Textansicht zugeordnet.
+Die ersten Funktionen sind die Einstiegspunkte, um Einstellungen zu ändern. Sie überprüfen einschränkungen auf hoher Ebene, wie die maximale Anzahl der zulässigen Hilfslinien.  Dann rufen `WriteSettings`sie auf , die eine Einstellungszeichenfolge erstellt und die Eigenschaft `GuideLinesConfiguration`festlegt. Durch Festlegen dieser Eigenschaft wird der Einstellungswert `SettingsChanged` im Visual Studio-Einstellungsspeicher gespeichert und das Ereignis ausgelöst, um alle Objekte zu aktualisieren, die `ColumnGuideAdornment` jeweils einer Textansicht zugeordnet sind.
 
-Es gibt eine Reihe von Funktionen für Posten, z.B. `CanAddGuideline`, die werden verwendet, um Befehle zu implementieren, die Einstellungen zu ändern. Wenn Menüs in Visual Studio angezeigt wird, fragt es befehlsimplementierung, um festzustellen, ob der Befehl derzeit aktiviert ist, was ist der Name und So weiter.  Im folgenden sehen Sie, wie diese Einstiegspunkte für die befehlsimplementierung verknüpft. Weitere Informationen zu Befehlen finden Sie unter [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).
+Es gibt einige Einstiegspunktfunktionen, `CanAddGuideline`z. B. , die verwendet werden, um Befehle zu implementieren, die Einstellungen ändern. Wenn Visual Studio Menüs anzeigt, werden Befehlsimplementierungen abgefragt, um festzustellen, ob der Befehl derzeit aktiviert ist, wie sein Name lautet usw.  Im Folgenden erfahren Sie, wie Sie diese Einstiegspunkte für die Befehlsimplementierungen verbinden. Weitere Informationen zu Befehlen finden Sie unter Erweitern von [Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).
 
-## <a name="implement-the-columnguideadornment-class"></a>Implementieren Sie die ColumnGuideAdornment-Klasse
-Die `ColumnGuideAdornment` für jede Textansicht Zusatzelemente, die denen Klasse instanziiert wird. Diese Klasse überwacht Ereignisse, die über die Ansicht ändern oder Ändern von Einstellungen sowie das Aktualisieren oder das Neuzeichnen Spaltenführungslinien nach Bedarf.
+## <a name="implement-the-columnguideadornment-class"></a>Implementieren der ColumnGuideAdornment-Klasse
+Die `ColumnGuideAdornment` Klasse wird für jede Textansicht instanziiert, die Verzierungen haben kann. Diese Klasse überwacht Ereignisse, bei der die Ansicht geändert oder Einstellungen geändert werden, und die Spaltenleitfäden zum Aktualisieren oder Neuzeichnen werden bei Bedarf.
 
-Ersetzen Sie den Inhalt von der *ColumnGuideAdornment.cs* durch den folgenden Code (siehe nachfolgende Erläuterung):
+Ersetzen Sie den Inhalt der *ColumnGuideAdornment.cs* durch den folgenden Code (nachfolgend unten):
 
 ```csharp
 using System;
@@ -486,33 +486,33 @@ namespace ColumnGuides
 }
 ```
 
-Instanzen dieser Klasse enthalten, auf die zugeordnete <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> und eine Liste der `Line` Objekte, die für die Sicht gezeichnet.
+Instanzen dieser Klasse halten <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> an der `Line` zugeordneten und einer Liste von Objekten fest, die in der Ansicht gezeichnet wurden.
 
-Der Konstruktor (von aufgerufen `ColumnGuideAdornmentTextViewCreationListener` bei Visual Studio erstellt neue Ansichten) im Handbuch für die Spalte erstellt `Line` Objekte.  Der Konstruktor fügt auch Handler für die `SettingsChanged` Ereignis (definiert `GuidesSettingsManager`) und die sichtereignisse `LayoutChanged` und `Closed`.
+Der Konstruktor (aufgerufen ab dem Zeitpunkt, an `ColumnGuideAdornmentTextViewCreationListener` `Line` dem Visual Studio neue Ansichten erstellt) erstellt die Spaltenführungsobjekte.  Der Konstruktor fügt auch `SettingsChanged` Handler für `GuidesSettingsManager`das Ereignis (definiert in ) und die Ansichtsereignisse `LayoutChanged` und `Closed`hinzu.
 
-Die `LayoutChanged` -Ereignis ausgelöst wird, aufgrund von verschiedenen Arten von Änderungen in der Ansicht, die auch bei der Visual Studio die Ansicht erstellt. Die `OnViewLayoutChanged` handleraufrufen `AddGuidelinesToAdornmentLayer` ausgeführt. Der Code in `OnViewLayoutChanged` bestimmt, ob die Zeile positioniert, die basierend auf Änderungen wie Änderungen, Ansicht Bundstege, horizontales scrollen und So weiter aktualisiert werden muss. Der Code in `UpdatePositions` bewirkt, dass Führungslinien, um zwischen Zeichen oder unmittelbar nach der Spalte der Text, der in der angegebenen Zeichenoffset in der Zeile des Texts zu zeichnen.
+Das `LayoutChanged` Ereignis wird aufgrund verschiedener Arten von Änderungen in der Ansicht ausgelöst, z. B. beim Erstellen der Ansicht durch Visual Studio. Der `OnViewLayoutChanged` Handler `AddGuidelinesToAdornmentLayer` ruft die Ausführung auf. Der Code `OnViewLayoutChanged` in bestimmt, ob Zeilenpositionen basierend auf Änderungen wie Schriftgrößenänderungen, Ansichtsrinnen, horizontalem Scrollen usw. aktualisiert werden müssen. Der Code `UpdatePositions` in bewirkt, dass Führungslinien zwischen Zeichen oder kurz nach der Textspalte gezeichnet werden, die sich im angegebenen Zeichenversatz in der Textzeile befindet.
 
-Bei jedem Ändern der Einstellungen der `SettingsChanged` Funktion wird nur erstellt, alle der `Line` Objekte mit die für die neuen Einstellungen werden. Nach dem Festlegen der Zeile positioniert, der Code entfernt alle vorherigen `Line` Objekte aus der `ColumnGuideAdornment` Zusatzelementebene und die neuen Dateien hinzugefügt.
+Immer wenn `SettingsChanged` Einstellungen ändern, erstellt `Line` die Funktion nur alle Objekte mit den neuen Einstellungen neu. Nach dem Festlegen der Zeilenpositionen entfernt `Line` der `ColumnGuideAdornment` Code alle vorherigen Objekte aus der Verzierungsebene und fügt die neuen hinzu.
 
-## <a name="define-the-commands-menus-and-menu-placements"></a>Definieren Sie die Befehle, Menüs und Menü Platzierungen
-Es kann sein viel, deklarieren, Befehle und Menüs, platzieren Gruppen von Befehlen oder Menüs auf verschiedenen anderen Menüs und befehlshandlern einbinden. In dieser exemplarischen Vorgehensweise werden hervorgehoben, wie Befehle in dieser Erweiterung, aber für umfangreichere Informationen funktionieren, finden Sie unter [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).
+## <a name="define-the-commands-menus-and-menu-placements"></a>Definieren der Befehle, Menüs und Menüplatzierungen
+Es kann eine Menge sein, Befehle und Menüs zu deklarieren, Befehlsgruppen oder Menüs in verschiedenen anderen Menüs zu platzieren und Befehlshandler einzubinden. In dieser exemplarischen Vorgehensweise wird erläutert, wie Befehle in dieser Erweiterung funktionieren, aber für tiefere Informationen finden Sie weitere Informationen unter Erweitern von [Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).
 
-### <a name="introduction-to-the-code"></a>Einführung in den code
-Die Erweiterung Spaltenführungslinien zeigt deklarieren eine Gruppe von Befehlen, die zusammengehören (Spalte hinzufügen, entfernen Sie die Spalte, ändern Sie die Linienfarbe), und klicken Sie dann dieser Gruppe auf einem Untermenü des Kontextmenüs des Editors zu platzieren.  Die Spaltenführungslinien Erweiterung fügt auch die Befehle an den Hauptserver **bearbeiten** Menü jedoch hält sie nicht sichtbar ist, als ein allgemeines Muster, die weiter unten erläutert.
+### <a name="introduction-to-the-code"></a>Einführung in den Code
+Die Erweiterung Spaltenführungslinien zeigt das Deklarieren einer Gruppe von Befehlen an, die zusammengehören (Spalte hinzufügen, Spalte entfernen, Linienfarbe ändern) und diese Gruppe dann in einem Untermenü des Kontextmenüs des Editors platzieren.  Die Erweiterung Spaltenführungslinien fügt die Befehle auch zum Hauptmenü **Bearbeiten** hinzu, hält sie jedoch unsichtbar, wird unten als allgemeines Muster besprochen.
 
-Es gibt drei Teile der Implementierung der Befehle aus: ColumnGuideCommandsPackage.cs ColumnGuideCommandsPackage.vsct und ColumnGuideCommands.cs. Der Code generiert, die von den Vorlagen stellt einen Befehl in der **Tools** Menü, das ein als Implementierung Dialogfeld. Sehen Sie sich, die Implementierung von in die *VSCT* und *ColumnGuideCommands.cs* Dateien, da es einfach ist. Sie ersetzen den Code in diesen Dateien, die weiter unten.
+Die Befehlsimplementierung besteht aus drei Teilen: ColumnGuideCommandsPackage.cs, ColumnGuideCommandsPackage.vsct und ColumnGuideCommands.cs. Der von den Vorlagen generierte Code setzt einen Befehl im Menü **Extras** ab, der ein Dialogfeld als Implementierung einstellt. Sie können sich ansehen, wie dies in den *Dateien .vsct* und *ColumnGuideCommands.cs* implementiert wird, da es einfach ist. Sie ersetzen den Code in diesen Dateien unten.
 
-Der Paketcode enthält Codebausteine Deklarationen für Visual Studio erforderlich sind, um zu ermitteln, dass die Erweiterung, Befehle bietet und platzieren Sie die Befehle finden. Wenn das Paket initialisiert wird, instanziiert er die Implementierungsklasse Befehle. Weitere Informationen zu Paketen, die im Zusammenhang mit Befehlen, finden Sie unter [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).
+Der Paketcode enthält Boilerplate-Deklarationen, die für Visual Studio erforderlich sind, um zu ermitteln, dass die Erweiterung Befehle bietet, und um zu finden, wo die Befehle platziert werden sollen. Wenn das Paket initialisiert wird, instanziiert es die Befehlsimplementierungsklasse. Weitere Informationen zu Paketen, die sich auf Befehle beziehen, finden Sie unter Erweitern von [Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).
 
-### <a name="a-common-commands-pattern"></a>Ein häufiges Muster für die Befehle
-Die Befehle in der Erweiterung Spaltenführungslinien sind ein Beispiel für ein weit verbreitetes Muster in Visual Studio. Sie verwandte Befehle in einer Gruppe platzieren, und stellen diese Gruppe auf ein Hauptmenü, häufig mit "`<CommandFlag>CommandWellOnly</CommandFlag>`" festgelegt werden, um den Befehl unsichtbar zu machen.  Platzieren Befehle auf den Hauptmenüs (z. B. **bearbeiten**) erhalten sie eine gute Namen (z. B. **Edit.AddColumnGuide**), eignen sich für die Suche nach Befehlen, wenn tastenzuordnungen in neu zuweisen **Tools Optionen**. Es ist auch hilfreich zum Abrufen der Vervollständigung beim Aufruf von Befehlen aus der **Befehlsfenster**.
+### <a name="a-common-commands-pattern"></a>Ein allgemeines Befehlsmuster
+Die Befehle in der Erweiterung Spaltenhilfslinien sind ein Beispiel für ein sehr häufiges Muster in Visual Studio. Sie setzen verwandte Befehle in eine Gruppe, und Sie setzen`<CommandFlag>CommandWellOnly</CommandFlag>`diese Gruppe in ein Hauptmenü, oft mit " , um den Befehl unsichtbar zu machen.  Wenn Sie Befehle in die Hauptmenüs eingeben (z. B. **Bearbeiten**), erhalten Sie nette Namen (z. B. **Edit.AddColumnGuide**), die nützlich sind, um Befehle beim erneuten Zuweisen von Schlüsselbindungen in **Tools-Optionen**zu finden. Es ist auch nützlich, um den Abschluss zu erhalten, wenn Befehle aus dem **Befehlsfenster**aufrufen.
 
-Klicken Sie anschließend die Gruppe von Befehlen zu Kontextmenüs hinzufügen oder sub-Menüs, in denen erwartungsgemäß Benutzer, die Befehle zu verwenden. Visual Studio behandelt `CommandWellOnly` als ein unsichtbarkeits-Flag für nur den Hauptmenüs. Wenn Sie die gleiche Gruppe von Befehlen auf einem Kontextmenü oder Untermenü platzieren, sind die Befehle angezeigt.
+Anschließend fügen Sie die Befehlsgruppe zu Kontextmenüs oder Untermenüs hinzu, in denen Sie erwarten, dass der Benutzer die Befehle verwendet. Visual Studio `CommandWellOnly` behandelt als Unsichtbarkeitsflag nur für Hauptmenüs. Wenn Sie dieselbe Befehlsgruppe in einem Kontextmenü oder Untermenü platzieren, sind die Befehle sichtbar.
 
-Als Teil eines allgemeinen Musters erstellt die Spaltenführungslinien-Erweiterung eine zweite Gruppe, die einen einzelnen Untermenü enthält. Das Untermenü enthält wiederum die erste Gruppe mit den Befehlen vierspaltige-Handbuch. Die zweite Gruppe, die das Untermenü enthält, ist die wiederverwendbare Asset, die Sie für verschiedene Kontextmenüs, an die setzt ein Sub-Menü auf die Kontextmenüs.
+Als Teil des allgemeinen Musters erstellt die Erweiterung Spaltenführungslinien eine zweite Gruppe, die ein einzelnes Untermenü enthält. Das Untermenü wiederum enthält die erste Gruppe mit den vierspaltigen Führungsbefehlen. Die zweite Gruppe, die das Untermenü enthält, ist das wiederverwendbare Asset, das Sie in verschiedenen Kontextmenüs platzieren, wodurch ein Untermenü in diesen Kontextmenüs platziert wird.
 
-### <a name="the-vsct-file"></a>Der VSCT-Datei
-Die *VSCT* Datei deklariert die Befehle und, zusammen mit Symbolen und wo sie. Ersetzen Sie den Inhalt von der *VSCT* -Datei mit den folgenden Code (siehe nachfolgende Erläuterung):
+### <a name="the-vsct-file"></a>Die .vsct-Datei
+Die *.vsct-Datei* deklariert die Befehle und wo sie gehen, zusammen mit Symbolen und so weiter. Ersetzen Sie den Inhalt der *.vsct-Datei* durch den folgenden Code (nachfolgend unten):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -748,22 +748,22 @@ Die *VSCT* Datei deklariert die Befehle und, zusammen mit Symbolen und wo sie. E
 
 ```
 
-**GUIDS**. Für Visual Studio zum Suchen der Befehlshandler und rufen diese, müssen Sie die Paket-GUID, die im deklarierten Sicherstellen der *ColumnGuideCommandsPackage.cs* Datei (aus der Projektelementvorlage generiert) entspricht, das Paket mit dem GUID in deklariert die *VSCT* (von oben kopierte) Datei. Wenn Sie diesen Beispielcode erneut verwenden, sollten Sie sicherstellen, dass Sie eine andere GUID haben, sodass Sie nicht mit anderen Person in Konflikt stehen, die diesen Code kopiert haben, können.
+**GUIDS**. Damit Visual Studio Ihre Befehlshandler finden und aufruft, müssen Sie sicherstellen, dass die in der *ColumnGuideCommandsPackage.cs-Datei* deklarierte Paket-GUID (generiert aus der Projektelementvorlage) mit der in der *.vsct-Datei* deklarierten Paket-GUID übereinstimmt (von oben kopiert). Wenn Sie diesen Beispielcode wiederverwenden, sollten Sie sicherstellen, dass Sie über eine andere GUID verfügen, damit Sie keinen Konflikt mit anderen Personen haben, die diesen Code möglicherweise kopiert haben.
 
-Suchen Sie nach dieser Zeile im *ColumnGuideCommandsPackage.cs* und kopieren Sie die GUID von einschließlich der Anführungszeichen:
+Suchen Sie diese Zeile in *ColumnGuideCommandsPackage.cs* und kopieren Sie die GUID zwischen den Anführungszeichen:
 
 ```csharp
 public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 ```
 
-Fügen Sie dann auf die GUID in der *VSCT* Datei, sodass Sie die folgende Zeile Ihrer `Symbols` Deklarationen:
+Fügen Sie dann die GUID in die *.vsct-Datei* `Symbols` ein, damit Sie die folgende Zeile in Ihren Deklarationen haben:
 
 ```xml
 <GuidSymbol name="guidColumnGuideCommandsPkg"
             value="{ef726849-5447-4f73-8de5-01b9e930f7cd}" />
 ```
 
-Legen Sie die GUIDs für den Befehl aus, und die Bitmap-Bilddatei muss zu den Erweiterungen, eindeutig sein:
+Die GUIDs für den Befehlssatz und die Bitmap-Image-Datei sollten auch für Ihre Erweiterungen eindeutig sein:
 
 ```xml
 <GuidSymbol name="guidColumnGuidesCommandSet"
@@ -771,36 +771,36 @@ Legen Sie die GUIDs für den Befehl aus, und die Bitmap-Bilddatei muss zu den Er
 <GuidSymbol name="guidImages" value="{2C99F852-587C-43AF-AA2D-F605DE2E46EF}">
 ```
 
-Aber Sie müssen nicht den Befehlssatz zu ändern und die bitmap-Bild-GUIDs in dieser exemplarischen Vorgehensweise zum Abrufen des Codes funktioniert. Den Befehlssatz, der GUID entsprechend die Deklaration in muss der *ColumnGuideCommands.cs* ersetzen Sie den Inhalt der Datei, Sie aber zu; aus diesem Grund sind die GUIDs entspricht.
+Sie müssen jedoch den Befehlssatz und die Bitmap-Bild-GUIDs in dieser exemplarischen Vorgehensweise nicht ändern, um den Code zum Funktionieren zu bringen. Der Befehlssatz GUID muss mit der Deklaration in der *ColumnGuideCommands.cs* Datei übereinstimmen, aber Sie ersetzen auch den Inhalt dieser Datei. Daher stimmen die GUIDs überein.
 
-Andere GUIDs in der *VSCT* Datei zu bereits vorhandenen Menüs, der die Spalte-Guide-Befehle hinzugefügt werden, identifizieren, sodass sie nie ändern.
+Andere GUIDs in der *.vsct-Datei* identifizieren bereits vorhandene Menüs, denen die Spaltenführungsbefehle hinzugefügt werden, sodass sie sich nie ändern.
 
-**Datei Abschnitte**. Die *VSCT* ist drei äußeren Abschnitte unterteilt: Befehle, Platzierungen und Symbole. Im Abschnitt Befehle definiert, Befehlsgruppen, Menüs, Schaltflächen oder Menüelemente und Bitmaps für Symbole. Abschnitt Platzierungen deklariert, wo der Gruppen auf Menüs oder zusätzliche Platzierungen auf bereits vorhandenen Menüs. Der Abschnitt "Symbols" deklariert den Bezeichner, die an anderer Stelle verwendet werden, der *VSCT* -Datei, die macht der *VSCT* Code besser lesbar als GUIDs und hexadezimale Ziffern überall.
+**Dateiabschnitte**. Der *.vsct* hat drei äußere Abschnitte: Befehle, Platzierungen und Symbole. Der Befehlsabschnitt definiert Befehlsgruppen, Menüs, Schaltflächen oder Menüelemente und Bitmaps für Symbole. Im Abschnitt Platzierungen wird erklärt, wo Gruppen in Menüs oder zusätzliche Platzierungen auf bereits vorhandenen Menüs platziert werden. Der Abschnitt Symbole deklariert Bezeichner, die an anderer Stelle in der *.vsct-Datei* verwendet werden, wodurch der *.vsct-Code* besser lesbar ist, als überall GUIDs und Hex-Nummern zu haben.
 
-**Befehle im Abschnitt, Gruppen oder Definitionen**. Im Abschnitt Befehle definiert zunächst Befehlsgruppen. Gruppen von Befehlen handelt es sich um Menübefehle in Menüs mit geringfügigen grauen Linien, die die Gruppen zu trennen. Eine Gruppe kann eine gesamte Untermenü, wie im folgenden Beispiel, Felder aus, und die grauen Trennen von Zeilen in diesem Fall nicht angezeigt. Die *VSCT* Dateien deklariert zwei Gruppen, die `GuidesMenuItemsGroup` , übergeordnet ist die `IDM_VS_MENU_EDIT` (Hauptfenster **bearbeiten** im Menü) und die `GuidesContextMenuGroup` , übergeordnet ist die `IDM_VS_CTXT_CODEWIN` (der Code Anmerkung der Redaktion Kontextmenü).
+**Befehlsabschnitt, Gruppendefinitionen**. Der Befehlsabschnitt definiert zuerst Befehlsgruppen. Befehlsgruppen sind Befehle, die Sie in Menüs mit leichten grauen Linien sehen, die die Gruppen trennen. Eine Gruppe kann auch ein gesamtes Untermenü füllen, wie in diesem Beispiel, und in diesem Fall werden die grauen Trennlinien nicht angezeigt. Die *.vsct-Dateien* deklarieren zwei Gruppen, die `GuidesMenuItemsGroup` dem `IDM_VS_MENU_EDIT` Menü **"Hauptbearbeitung"** und dem `GuidesContextMenuGroup` ,,das" `IDM_VS_CTXT_CODEWIN` (kontextmenü des Code-Editors) übergeordnet ist.
 
-Die zweite Gruppendeklaration hat einen `0x0600` Priorität:
+Die zweite Gruppenerklärung `0x0600` hat eine Priorität:
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesContextMenuGroup"
              priority="0x0600">
 ```
 
-Die Idee ist die-Spalte einzufügenden Untermenü am Ende führt der ein Kontextmenü zu dem Sie die Sub-Menü-Gruppe hinzufügen. Aber, dass Sie nicht annehmen, Sie am besten kennen und erzwingen das Untermenü immer das letzte ist mit einer Priorität von `0xFFFF`. Experimentieren mit der Anzahl, um anzuzeigen, in dem das Sub-Menü auf die Kontextmenüs liegt, wo Sie es platzieren, müssen. In diesem Fall `0x0600` ist hoch genug ist, als Sie sehen, lässt jedoch auch Raum für jemand anderen entwerfen Sie ihre Erweiterung, die nicht niedriger als die Spalte Guides-Erweiterung, ggf. die am Ende des Menüs ausgedrückt.
+Die Idee ist, die Spaltenführungslinien unter dem Menü am Ende eines beliebigen Kontextmenüs zu setzen, dem Sie die Untermenügruppe hinzufügen. Sie sollten jedoch nicht davon ausgehen, dass Sie es am besten wissen, und das Untermenü zwingen, immer letzter zu sein, indem Sie die Priorität von `0xFFFF`verwenden. Sie müssen mit der Zahl experimentieren, um zu sehen, wo sich Ihr Untermenü in den Kontextmenüs befindet, in denen Sie es platzieren. In diesem `0x0600` Fall ist hoch genug, um es am Ende der Menüs so weit wie Sie sehen können, aber es lässt Raum für jemand anderen, um ihre Erweiterung zu entwerfen, um niedriger als die Spaltenführungen Erweiterung zu sein, wenn dies wünschenswert ist.
 
-**Befehle Abschnitt menüdefinition**. Als Nächstes im Abschnitt-Befehl definiert das Sub-Menü `GuidesSubMenu`, übergeordnetes Element, um die `GuidesContextMenuGroup`. Die `GuidesContextMenuGroup` ist die Gruppe, die Sie, die relevanten Kontextmenüs hinzufügen. Klicken Sie im Abschnitt Platzierungen platziert der Code die Gruppe mit den vier Spalten-Guide-Befehlen in diesem Sub-Menü.
+**Befehlsabschnitt, Menüdefinition**. Als Nächstes definiert der Befehlsabschnitt das Untermenü `GuidesSubMenu`, das dem `GuidesContextMenuGroup`übergeordnet ist. Die `GuidesContextMenuGroup` ist die Gruppe, die Sie allen relevanten Kontextmenüs hinzufügen. Im Abschnitt Platzierungen platziert der Code die Gruppe mit den vierspaltigen Führungsbefehlen in diesem Untermenü.
 
-**Befehle im Abschnitt, Schaltflächen Definitionen**. Im Abschnitt Befehle definiert klicken Sie dann die Menüelemente oder Schaltflächen, die die vier Spalten Guides-Befehle sind. `CommandWellOnly`, weiter oben erläuterten, bedeutet, dass die Befehle sind nicht sichtbar, wenn es auf einem Hauptmenü stammt platziert. Zwei der dem Menüelement, das Deklarationen Schaltfläche (Handbuch hinzufügen und entfernen Sie die Anleitung) auch eine `AllowParams` Flag:
+**Befehlsabschnitt, Schaltflächendefinitionen**. Der Befehlsabschnitt definiert dann die Menüelemente oder Schaltflächen, die die Befehle für vier Spaltenführungslinien sind. `CommandWellOnly`, wie oben besprochen, bedeutet, dass die Befehle unsichtbar sind, wenn sie in einem Hauptmenü platziert werden. Zwei der Menüpunkt-Schaltflächendedede (Leitfaden hinzufügen `AllowParams` und Leitfaden entfernen) haben auch ein Flag:
 
 ```xml
 <CommandFlag>AllowParams</CommandFlag>
 ```
 
-Dieses Flag ermöglicht es, zusammen mit Hauptmenü Platzierungen, den Befehl aus, um Argumente zu erhalten, wenn Visual Studio der Befehlshandler ruft.  Wenn der Benutzer den Befehl aus dem Befehlsfenster ausgeführt wird, wird das Argument an den Befehlshandler in dieser Argumente übergeben.
+Dieses Flag ermöglicht neben Hauptmenüplatzierungen den Befehl, Argumente zu empfangen, wenn Visual Studio den Befehlshandler aufruft.  Wenn der Benutzer den Befehl über das Befehlsfenster ausführt, wird das Argument an den Befehlshandler in den Ereignisargumenten übergeben.
 
-**Befehl Abschnitten, Bitmaps Definitionen**. Abschließend deklariert die Befehle im Abschnitt auf, die Bitmaps oder Symbole, die für die Befehle verwendet. Dieser Abschnitt ist eine einfache Deklaration, die die Projektressource identifiziert, und listet 1 basierenden Indizes verwendeten Symbole. Der Abschnitt "Symbols" von der *VSCT* Datei deklariert die Werte als Indizes verwendeten Bezeichner. In dieser exemplarischen Vorgehensweise verwendet den bitmapstrip zur Verfügung gestellt, mit den benutzerdefinierten Befehl Elementvorlage zum Projekt hinzugefügt.
+**Befehlsabschnitte, Bitmaps-Definitionen**. Schließlich werden im Befehlsabschnitt die Bitmaps oder Symbole deklariert, die für die Befehle verwendet werden. Dieser Abschnitt ist eine einfache Deklaration, die die Projektressource identifiziert und ein einzige Indizes verwendeter Symbole auflistet. Der Symbolabschnitt der *.vsct-Datei* deklariert die Werte der Bezeichner, die als Indizes verwendet werden. In dieser exemplarischen Vorgehensweise wird der Bitmap-Strip verwendet, der mit der benutzerdefinierten Befehlselementvorlage bereitgestellt wird, die dem Projekt hinzugefügt wurde.
 
-**Platzierungen Abschnitt**. Nach den Befehlen bildet den Platzierungen-Abschnitt. Der erste Parameter ist, in dem der Code fügt hinzu, dass die erste Gruppe, die hier erläutert, die im Handbuch für die vier Spalten enthält Befehle aus, um das Untermenü angezeigt werden, in dem die Befehle aus:
+**Abschnitt Platzierungen**. Nach dem Befehlsabschnitt wird der Abschnitt Platzierungen angezeigt. Die erste ist, wo der Code die erste oben besprochene Gruppe hinzufügt, die die vierspaltenden Führungsbefehle enthält, zum Untermenü, in dem die Befehle angezeigt werden:
 
 ```xml
 <CommandPlacement guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -809,14 +809,14 @@ Dieses Flag ermöglicht es, zusammen mit Hauptmenü Platzierungen, den Befehl au
 </CommandPlacement>
 ```
 
-Alle der anderen Standorte hinzufügen, die `GuidesContextMenuGroup` (enthält die `GuidesSubMenu`) auf andere Editor-Kontextmenüs. Wenn der Code deklariert die `GuidesContextMenuGroup`, es wurde der Code-Editor-Kontextmenü übergeordnet. Deshalb eine Platzierung für die Code-Editor-Kontextmenü nicht angezeigt.
+Alle anderen Platzierungen fügen `GuidesContextMenuGroup` die (die die enthält ) `GuidesSubMenu`zu anderen Editor-Kontextmenüs hinzu. Als der Code `GuidesContextMenuGroup`die deklarierte, wurde er im Kontextmenü des Codeeditors übergeordnet. Aus diesem Grund wird keine Platzierung für das Kontextmenü des Code-Editors angezeigt.
 
-**Symbole im Abschnitt**. Wie bereits erwähnt, deklariert den Abschnitt "Symbols" Bezeichner, die an anderer Stelle verwendet werden, der *VSCT* -Datei, die macht der *VSCT* Code besser lesbar als GUIDs und hexadezimale Ziffern überall. Die wichtigen Punkte in diesem Abschnitt sind, dass die GUID des Pakets mit der Deklaration in der Paketklasse zustimmen muss. Und der Befehlssatz-GUID muss mit der Deklaration in der Klasse des Befehls Implementierung übereinstimmen.
+**Symbole Abschnitt**. Wie oben erwähnt, deklariert der Symbolabschnitt Bezeichner, die an anderer Stelle in der *.vsct-Datei* verwendet werden, was den *.vsct-Code* lesbarer macht, als GUIDs und Hex-Nummern überall zu haben. Die wichtigsten Punkte in diesem Abschnitt sind, dass die Paket-GUID mit der Deklaration in der Paketklasse übereinstimmen muss. Und der Befehlssatz GUID muss mit der Deklaration in der Befehlsimplementierungsklasse übereinstimmen.
 
-## <a name="implement-the-commands"></a>Implementieren Sie die Befehle
-Die *ColumnGuideCommands.cs* -Datei implementiert die Befehle und die Handler verknüpft. Wenn Visual Studio wird das Paket geladen und wird initialisiert, ruft das Paket im Gegenzug `Initialize` auf der Implementierungsklasse Befehle. Die Initialisierung der Befehle einfach instanziiert die Klasse, und der Konstruktor die Befehlshandler verknüpft.
+## <a name="implement-the-commands"></a>Implementieren der Befehle
+Die *ColumnGuideCommands.cs-Datei* implementiert die Befehle und schließt die Handler ein. Wenn Visual Studio das Paket lädt und initialisiert, `Initialize` ruft das Paket wiederum die Befehlsimplementierungsklasse auf. Die Befehlsinitialisierung instanziiert einfach die Klasse, und der Konstruktor schließt alle Befehlshandler an.
 
-Ersetzen Sie den Inhalt von der *ColumnGuideCommands.cs* -Datei mit den folgenden Code (siehe nachfolgende Erläuterung):
+Ersetzen Sie den Inhalt der *ColumnGuideCommands.cs* Datei durch den folgenden Code (nachfolgend unten):
 
 ```csharp
 using System;
@@ -1157,11 +1157,11 @@ namespace ColumnGuides
 
 ```
 
-**Korrektur von verweisen**. Sie können einen Verweis an diesem Punkt fehlt. Drücken Sie die Zeiger nach rechts auf den Knoten "Verweise" im Projektmappen-Explorer. Wählen Sie die **hinzufügen...**  Befehl. Die **Verweis hinzufügen** Dialog besitzt ein Suchfeld in der oberen rechten Ecke. Geben Sie "Editor" (ohne Anführungszeichen) ein. Wählen Sie die **Microsoft.VisualStudio.Editor** Element (Sie müssen aktivieren Sie das Kontrollkästchen auf der linken Seite des Elements nicht einfach auf das Element), und wählen Sie **OK** um den Verweis hinzuzufügen.
+**Korrekturreferenzen**. An dieser Stelle fehlt ein Verweis. Drücken Sie die rechte Zeigertaste auf dem Verweisknoten im Projektmappen-Explorer. Wählen Sie den Befehl **Hinzufügen ...** aus. Das Dialogfeld **Referenz hinzufügen** verfügt über ein Suchfeld in der oberen rechten Ecke. Geben Sie "Editor" (ohne doppelte Anführungszeichen) ein. Wählen Sie das Element **Microsoft.VisualStudio.Editor** (Sie müssen das Kontrollkästchen links neben dem Element aktivieren, nicht nur das Element auswählen) und wählen Sie **OK,** um den Verweis hinzuzufügen.
 
-**Initialisierung**.  Wenn die Paketklasse initialisiert wird, ruft er `Initialize` auf der Implementierungsklasse Befehle. Die `ColumnGuideCommands` Initialisierung instanziiert die Klasse und die Instanz der Klasse und den Paketverweis in-Klasse, Elemente gespeichert.
+**Initialisierung**.  Wenn die Paketklasse initialisiert `Initialize` wird, ruft sie die Befehlsimplementierungsklasse auf. Die `ColumnGuideCommands` Initialisierung instanziiert die Klasse und speichert die Klasseninstanz und den Paketverweis in Klassenmembern.
 
-Sehen wir uns eine der Befehl Handler Hook-USV vom Konstruktor Klasse:
+Sehen wir uns einen der Befehlshandler-Hook-Ups des Klassenkonstruktors an:
 
 ```csharp
 _addGuidelineCommand =
@@ -1172,17 +1172,17 @@ _addGuidelineCommand =
 
 ```
 
-Sie erstellen eine `OleMenuCommand`. Visual Studio verwendet das Microsoft Office-System-Befehl. Wichtige Argumente bei der Instanziierung einer `OleMenuCommand` ist die Funktion, die der Befehl implementiert (`AddColumnGuideExecuted`), die Funktion, die aufgerufen werden, wenn Visual Studio ein Menü mit dem Befehl zeigt (`AddColumnGuideBeforeQueryStatus`), und die Befehls-ID. Visual Studio Ruft die Abfragefunktion für den Status vor dem Anzeigen eines Befehls in einem Menü, damit der Befehl selbst nicht sichtbar oder für eine bestimmte Darstellung des Menüs abgeblendeter kann (z. B. deaktivieren **Kopie** , wenn keine Auswahl vorhanden ist), Ändern Sie das Symbol, oder sogar ändern Sie den Namen (z. B. vom hinzufügen, entfernen Sie ein), und so weiter. Die Befehls-ID muss einen Befehl, der ID in deklariert entsprechen den *VSCT* Datei. Fügen Sie die Zeichenfolgen für den Befehlssatz, und die Spaltenführungslinien hinzu Befehl muss die gleiche der *VSCT* Datei und die *ColumnGuideCommands.cs*.
+Sie erstellen `OleMenuCommand`eine . Visual Studio verwendet das Microsoft Office-Befehlssystem. Die wichtigsten Argumente beim Instanziieren von a `OleMenuCommand` ist`AddColumnGuideExecuted`die Funktion, die den Befehl ( )`AddColumnGuideBeforeQueryStatus`implementiert, die Funktion, die aufruft, wenn Visual Studio ein Menü mit dem Befehl ( ) und der Befehls-ID anzeigt. Visual Studio ruft die Abfragestatusfunktion auf, bevor ein Befehl in einem Menü angezeigt wird, sodass der Befehl sich für eine bestimmte Anzeige des Menüs unsichtbar oder ausgegraut machen kann (z. B. Deaktivierung von **Kopieren,** wenn keine Auswahl vorhanden ist), das Symbol ändert oder sogar seinen Namen ändert (z. B. von Something hinzufügen, um etwas zu entfernen), und so weiter. Die Befehls-ID muss mit einer Befehls-ID übereinstimmen, die in der *.vsct-Datei* deklariert ist. Die Zeichenfolgen für den Befehlssatz und die Spaltenhilfslinien add-Befehl müssen zwischen der *.vsct-Datei* und dem *ColumnGuideCommands.cs*übereinstimmen.
 
-Die folgende Zeile bietet Unterstützung für, wenn Benutzer den Befehl über das Fenster "Befehl" (siehe nachfolgende Erläuterung) aufrufen:
+Die folgende Zeile bietet Unterstützung für den Aufruf des Befehls über das Befehlsfenster (unten):
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
- **Abfragen des Status**. Die Status-Abfragefunktionen `AddColumnGuideBeforeQueryStatus` und `RemoveColumnGuideBeforeQueryStatus` überprüfen Sie einige Einstellungen (z. B. die maximale Anzahl von Führungslinien oder max-Spalte) oder wenn eine Spalte-Anleitung zum Entfernen vorhanden ist. Sie ermöglichen die Befehle aus, wenn die Bedingungen richtig sind.  Status der Abfragefunktionen müssen effizient, da sie jedes Mal, zeigt Visual Studio ein Menü, und für jeden Befehl führen Sie im Menü.
+ **Abfragestatus**. Der Abfragestatus `AddColumnGuideBeforeQueryStatus` `RemoveColumnGuideBeforeQueryStatus` funktioniert und überprüft einige Einstellungen (z. B. max Anzahl von Hilfslinien oder max Spalte) oder wenn es eine Spaltenführung zum Entfernen gibt. Sie aktivieren die Befehle, wenn die Bedingungen stimmen.  Abfragestatusfunktionen müssen effizient sein, da sie jedes Mal ausgeführt werden, wenn Visual Studio ein Menü und für jeden Befehl im Menü anzeigt.
 
- **AddColumnGuideExecuted Funktion**. Der interessante Teil beim Hinzufügen der Leitfaden ist, den aktuellen Editor-Ansicht und der Einfügemarke Speicherort herauszufinden.  Diese Funktion zunächst ruft `GetApplicableColumn`, die überprüft, ob ein Benutzer bereitgestelltes Argument in den Befehlshandler Ereignisargumente vorliegt und wenn keiner vorhanden ist, die Funktion des Editors anzeigen überprüft:
+ **AddColumnGuideExecuted-Funktion**. Der interessante Teil des Hinzufügens eines Leitfadens ist das Herausfinden der aktuellen Editoransicht und Der einpflegenden Position.  Zuerst ruft diese `GetApplicableColumn`Funktion auf, die überprüft, ob ein vom Benutzer bereitgestelltes Argument in den Ereignisargumenten des Befehlshandlers vorhanden ist, und wenn keine vorhanden sind, überprüft die Funktion die Ansicht des Editors:
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn` ist ein wenig abzurufenden genauer ein <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> Ansicht des Codes.  Wenn Sie über die Ablaufverfolgung `GetActiveTextView`, `GetActiveView`, und `GetTextViewFromVsTextView`, sehen Sie, wie das geht. Der folgende Code ist der relevante Code abstrahiert, beginnend mit der aktuellen Auswahl, die Auswahl des Frames abrufen und dann beim Abrufen des Frames DocView-als ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, abgerufen werden. dann eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> aus der IVsTextView Abrufen eines Hosts anzeigen und schließlich die "IWpfTextView":
+`GetCurrentEditorColumn`muss ein wenig graben, <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> um einen Blick auf den Code zu erhalten.  Wenn Sie `GetActiveTextView`durch `GetActiveView`, `GetTextViewFromVsTextView`und , nachverfolgen, können Sie sehen, wie Sie dies tun. Der folgende Code ist der relevante Code abstrahiert, beginnend mit der aktuellen Auswahl, dann abrufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>sie den <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> Frame der Auswahl, dann abrufen Sie die DocView des Frames als , dann abrufen Sie eine aus der IVsTextView, dann abrufen Sie einen Ansichtshost, und schließlich die IWpfTextView:
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1257,7 +1257,7 @@ ErrorHandler.ThrowOnFailure(selection.GetCurrentElementValue(
 
 ```
 
-Nachdem Sie eine "IWpfTextView" haben, erhalten Sie die Spalte auf dem sich die Einfügemarke befindet:
+Sobald Sie eine IWpfTextView haben, können Sie die Spalte abrufen, in der sich die Einserstelle befindet:
 
 ```csharp
 private static int GetCaretColumn(IWpfTextView textView)
@@ -1272,19 +1272,19 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-Mit der aktuellen Spalte, die der Benutzer geklickt hat, ruft hand der Code nur auf die einstellungs-Manager hinzufügen oder entfernen Sie die Spalte. Der Settings Manager löst das Ereignis zu der alle `ColumnGuideAdornment` Objekte zu lauschen. Wenn das Ereignis ausgelöst wird, aktualisieren Sie diese Objekte ihre Ansichten zugeordneten Text mit neue spalteneinstellungen Handbuch.
+Mit der aktuellen Spalte in der Hand, auf die der Benutzer geklickt hat, ruft der Code nur den Einstellungs-Manager auf, um die Spalte hinzuzufügen oder zu entfernen. Der Einstellungs-Manager löst `ColumnGuideAdornment` das Ereignis aus, auf das alle Objekte lauschen. Wenn das Ereignis ausgelöst wird, aktualisieren diese Objekte ihre zugehörigen Textansichten mit neuen Spaltenführungseinstellungen.
 
-## <a name="invoke-command-from-the-command-window"></a>Befehl "im Befehlsfenster" aufrufen
-Die Handbücher spaltenstichprobe kann Benutzer zwei Befehle aus dem Befehlsfenster als eine Form der Erweiterung aufzurufen. Bei Verwendung der **Ansicht &#124; Other Windows &#124; Befehlsfenster** Befehls sehen Sie das Befehlsfenster. Sie können das Befehlsfenster interagieren, durch Eingabe von "Bearbeiten", und mit Befehl Vervollständigung von Objektnamen, und das Argument 120 bereitstellt, haben Sie das folgende Ergebnis:
+## <a name="invoke-command-from-the-command-window"></a>Aufrufen des Befehls aus dem Befehlsfenster
+Das Beispiel für Spaltenhilfslinien ermöglicht es Benutzern, zwei Befehle aus dem Befehlsfenster als eine Form der Erweiterbarkeit aufzurufen. Wenn Sie den Befehl **"Anzeigen &#124; andere Windows &#124; Befehlsfenster"** verwenden, wird das Befehlsfenster angezeigt. Sie können mit dem Befehlsfenster interagieren, indem Sie "bearbeiten") eingeben, und mit der Ausführung des Befehlsnamens und der Bereitstellung des Arguments 120 haben Sie folgendes Ergebnis:
 
 ```csharp
 > Edit.AddColumnGuide 120
 >
 ```
 
-Die Teile des Beispiels, die dieses Verhalten zu aktivieren, sind in der *VSCT* Datei Deklarationen, die `ColumnGuideCommands` Klassenkonstruktor, wenn diese Befehlshandler und die befehlsimplementierung für Handler, die die Ereignisargumente prüfen verknüpft.
+Die Teile des Beispiels, die dieses Verhalten aktivieren, befinden `ColumnGuideCommands` sich in den .vsct-Dateideklarationen, dem Klassenkonstruktor beim Verbinden von Befehlshandlern und den Befehlshandlerimplementierungen, die Ereignisargumente überprüfen. *.vsct*
 
-Sie haben gesehen, "`<CommandFlag>CommandWellOnly</CommandFlag>`" in der *VSCT* sowie Platzierungen in Datei der **bearbeiten** Hauptmenü, obwohl die Befehle nicht angezeigt werden, in der **bearbeiten** Menü UI. Müssen sie auf der Hauptseite **bearbeiten** -Menü können sie Namen wie z. B. **Edit.AddColumnGuide**. Die Deklaration der Befehle-Gruppe, die die vier Befehle enthält die Gruppe auf platziert die **bearbeiten** Menü direkt:
+Sie haben`<CommandFlag>CommandWellOnly</CommandFlag>`" in der *.vsct-Datei* sowie Platzierungen im Hauptmenü **Bearbeiten** gesehen, obwohl die Befehle nicht in der Menü-Benutzeroberfläche **zum Bearbeiten** angezeigt werden. Wenn sie im Hauptmenü **Bearbeiten** angezeigt werden, erhalten sie Namen wie **Edit.AddColumnGuide**. Die Befehlsgruppendeklaration, die die vier Befehle enthält, platziert die Gruppe direkt im Menü **Bearbeiten:**
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -1294,7 +1294,7 @@ Sie haben gesehen, "`<CommandFlag>CommandWellOnly</CommandFlag>`" in der *VSCT* 
 
 ```
 
-Der Schaltflächen-Abschnitt später deklariert die Befehle `CommandWellOnly` unsichtbar im Hauptmenü behalten möchten und diese mit deklarierten `AllowParams`:
+Der Schaltflächenabschnitt erklärte `CommandWellOnly` später die Befehle, um sie `AllowParams`im Hauptmenü unsichtbar zu halten, und deklarierte sie mit:
 
 ```xml
 <Button guid="guidColumnGuidesCommandSet" id="cmdidAddColumnGuide"
@@ -1306,14 +1306,14 @@ Der Schaltflächen-Abschnitt später deklariert die Befehle `CommandWellOnly` un
 
 ```
 
-Sie haben gesehen, die den Befehlshandler Einbinden von Code in die `ColumnGuideCommands` Klassenkonstruktor bereitgestellt, eine Beschreibung des Parameters zulässig:
+Sie haben gesehen, dass der `ColumnGuideCommands` Befehlshandler den Code im Klassenkonstruktor angeschlossen hat, der eine Beschreibung des zulässigen Parameters bereitgestellt hat:
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 
 ```
 
-Sie haben gesehen, die `GetApplicableColumn` -Funktion überprüft `OleMenuCmdEventArgs` für einen Wert vor der Überprüfung der Editoransicht für eine aktuelle Spalte:
+Sie haben `GetApplicableColumn` die `OleMenuCmdEventArgs` Funktion auf einen Wert überprüft, bevor Sie die Ansicht des Editors auf eine aktuelle Spalte überprüft haben:
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1329,20 +1329,20 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-## <a name="try-your-extension"></a>Wiederholen Sie die Erweiterung
-Sie können jetzt drücken **F5** Ihre Spaltenführungslinien-Erweiterung ausgeführt. Öffnen Sie eine Textdatei, und verwenden Sie im Editor-Kontextmenü, um Führungslinien hinzufügen, entfernen Sie sie und ihre Farbe zu ändern. Klicken Sie in den Text (nicht-Leerzeichen übergeben das Ende der Zeile) hinzufügen eine Spalte Handbuch oder im Editor wird in die letzte Spalte in der Zeile. Wenn Sie das Befehlsfenster, und die Befehle mit einem Argument aufrufen, können Sie eine beliebige Stelle Spaltenführungslinien hinzufügen.
+## <a name="try-your-extension"></a>Versuchen Sie Ihre Erweiterung
+Sie können jetzt **F5** drücken, um Ihre Spaltenführungserweiterung auszuführen. Öffnen Sie eine Textdatei, und verwenden Sie das Kontextmenü des Editors, um Hilfslinien hinzuzufügen, sie zu entfernen und ihre Farbe zu ändern. Klicken Sie in den Text (nicht Leerzeichen am Ende der Zeile übergeben), um eine Spaltenführung hinzuzufügen, oder der Editor fügt sie der letzten Spalte in der Zeile hinzu. Wenn Sie das Befehlsfenster verwenden und die Befehle mit einem Argument aufrufen, können Sie überall Spaltenführungslinien hinzufügen.
 
-Wenn Sie verwenden möchten, versuchen Sie es anderen befehlsplatzierungen, ändern Sie Namen, Symbole usw. zu ändern und Sie haben Probleme mit Visual Studio den neuesten Code in den Menüs angezeigt, können Sie die experimentelle Struktur zurücksetzen, in der Sie debuggen. Rufen Sie die **Windows-Startmenü** , und geben Sie "Zurücksetzen". Suchen Sie nach, und führen Sie den Befehl **Zurücksetzen der nächsten Visual Studio experimentelle Instanz**. Dieser Befehl bereinigt alle Komponenten der Erweiterung der experimentellen Registrierungsstruktur ab. Nicht bereinigen Sie die Einstellungen von Komponenten, daher Anleitungen, die Sie beim Herunterfahren von Visual Studio in der experimentellen Struktur haben sind weiterhin vorhanden, wenn Ihr Code den einstellungsspeicher beim nächsten Start liest.
+Wenn Sie verschiedene Befehlsplatzierungen ausprobieren, Namen ändern, Symbole ändern usw. und Probleme mit Visual Studio haben, in denen der neueste Code in menüs angezeigt wird, können Sie die experimentelle Struktur zurücksetzen, in der Sie debuggen. Schalten Sie das **Windows-Startmenü** auf und geben Sie "Reset" ein. Suchen und führen Sie den Befehl **Zurücksetzen der nächsten Visual Studio-Experimentalinstanz**aus. Dieser Befehl bereinigt die experimentelle Registrierungsstruktur aller Erweiterungskomponenten. Es bereinigt keine Einstellungen aus Komponenten, sodass alle Leitfäden, die Sie beim Herunterfahren der experimentellen Struktur von Visual Studio hatten, immer noch vorhanden sind, wenn Ihr Code den Einstellungsspeicher beim nächsten Start liest.
 
-## <a name="finished-code-project"></a>Fertig gestellten Code-Projekt
-Es ist bald ein GitHub-Projekt von Visual Studio-Erweiterbarkeit-Beispielen, und das abgeschlossene Projekt benötigen, ist vorhanden. In diesem Artikel wird aktualisiert werden, um es zu zeigen, wenn dies der Fall ist. Das abgeschlossene Beispielprojekt möglicherweise andere Guids und erhalten einen Streifen unterschiedliche Bitmaps, Symbole Befehl.
+## <a name="finished-code-project"></a>Fertiges Codeprojekt
+In Kürze wird es ein GitHub-Projekt mit Visual Studio-Extensibilitätsbeispielen geben, und das abgeschlossene Projekt wird vorhanden sein. Dieser Artikel wird aktualisiert, um dort zu zeigen, wenn dies geschieht. Das abgeschlossene Beispielprojekt kann unterschiedliche GUIDs haben und einen anderen Bitmaps-Streifen für die Befehlssymbole haben.
 
-Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+Mit dieser Visual Studio[Gallery-Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)können Sie eine Version des Column Guides-Features ausprobieren.
 
-## <a name="see-also"></a>Siehe auch
-- [Im editor](../extensibility/inside-the-editor.md)
-- [Erweitern Sie die Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md)
-- [Language-Dienst und -Editor-Erweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Innerhalb des Editors](../extensibility/inside-the-editor.md)
+- [Erweitern der Editor- und Sprachdienste](../extensibility/extending-the-editor-and-language-services.md)
+- [Sprachdienst- und Editorerweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md)
-- [Erstellen Sie eine Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Erstellen einer Erweiterung mit einer Editorelementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)

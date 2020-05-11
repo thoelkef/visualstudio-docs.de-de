@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC | Microsoft-Dokumentation
+title: JMC_CODE_SPEC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - JMC_CODE_SPEC structure
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9bc6d5c57c3d3c53b043f1ff5140beb8055a8c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339260"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714742"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
-Diese Struktur wird verwendet, die JustMyCode-Informationen für ein Modul festgelegt.
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
+Diese Struktur wird verwendet, um die JustMyCode-Informationen für ein Modul festzulegen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,21 +43,21 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>Member
 `fIsUserCode`\
-Ungleich 0 (`TRUE`) Wenn das Modul ist, Benutzercode; berücksichtigt werden, andernfalls NULL (`FALSE`) ist das Modul als externer Code behandelt werden und nicht debuggt werden.
+Nicht-Null`TRUE`( ), wenn das Modul als Benutzercode betrachtet werden soll; Andernfalls Null`FALSE`( ), wenn das Modul als externer Code behandelt und nicht gedebuggt werden soll.
 
 `bstrModuleName`\
-Der Name des betreffenden Moduls.
+Name des betreffenden Moduls.
 
-## <a name="remarks"></a>Hinweise
-Diese Struktur wird als eine Liste dieser Strukturen zu übergeben, die die [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Diese Struktur wird als Liste solcher Strukturen an die [SetJustMyCodeState-Methode](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) übergeben.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

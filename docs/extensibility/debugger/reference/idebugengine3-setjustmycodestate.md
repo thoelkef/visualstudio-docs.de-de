@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState | Microsoft-Dokumentation
+title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f53b0eb95a2a91f34917b05cadffda2f4aa9a8b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322328"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730682"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-Diese Methode teilt die Debug-Engine zu den JustMyCode-Status-Informationen.
+Diese Methode informiert das Debugmodul über die JustMyCode-Statusinformationen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,20 +45,20 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>Parameter
 `fUpdate`\
-[in] Ungleich Null (`TRUE`) um aktuelle Informationen zu aktualisieren, NULL (`FALSE`) alle Informationen, die (wird ignoriert, alle zuvor festgelegten) zurücksetzen.
+[in] Ein Wert`TRUE`ungleich Null (`FALSE`), um aktuelle Informationen zu aktualisieren, Null ( ), um alle Informationen zurückzusetzen (wobei alles zuvor festgelegte verwendet wird).
 
 `dwModules`\
-[in] Anzahl der Informationsstrukturen in `rgJMCSpec.`
+[in] Anzahl der Informationsstrukturen in`rgJMCSpec.`
 
 `rgJMCSpec`\
-[in] Array von [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) Strukturen verwenden.
+[in] Array von [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) zu verwendenden Strukturen.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- JustMyCode ist das Konzept der nur den Code Debuggen, der zu einem Benutzer gehört, und wird ignoriert, alle temporären Code wie z. B. Systemcode – selbst wenn der Quellcode für diesen Systemcode verfügbar ist.
+## <a name="remarks"></a>Bemerkungen
+ JustMyCode ist das Konzept, nur den Code zu debuggen, der einem Benutzer gehört, und den gesamten Zwischencode wie Systemcode zu ignorieren – auch wenn Quellcode für diesen Systemcode verfügbar ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

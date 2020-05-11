@@ -1,107 +1,107 @@
 ---
-title: Erstellen von benutzerdefinierten Editoren und Designern | Microsoft-Dokumentation
+title: Erstellen von benutzerdefinierten Editoren und Designern | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: b9f56b82225e1e40782b6753bea03d3c1780f596
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568882"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739478"
 ---
-# <a name="create-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
+# <a name="create-custom-editors-and-designers"></a>Erstellen benutzerdefinierter Editoren und Designer
 
-Die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) von Visual Studio kann unterschiedliche Arten von Editor hosten:
+Die integrierte Visual Studio-Entwicklungsumgebung (IDE) kann verschiedene Editortypen hosten:
 
-- Der Visual Studio-Kern-Editor
+- Der Visual Studio-Kerneditor
 
 - Benutzerdefinierte Editoren
 
-- Externe Editoren
+- Externe Redakteure
 
 - Designer
 
-Die folgenden Informationen helfen Ihnen bei der Auswahl des benötigten Editors.
+Mit den folgenden Informationen können Sie den benötigten Editortyp auswählen.
 
-## <a name="types-of-editor"></a>Editor Typen
+## <a name="types-of-editor"></a>Editor-Typen
 
-Weitere Informationen zum Visual Studio-Kern-Editor finden Sie unter [Erweitern des Editors und der Sprachdienste](../extensibility/extending-the-editor-and-language-services.md).
+Informationen zum Visual Studio-Kerneditor finden Sie unter [Erweitern des Editors und der Sprachdienste](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Benutzerdefinierte Editoren
- Ein benutzerdefinierter Editor ist ein benutzerdefinierter Editor, der in speziellen Situationen funktionieren soll. Beispielsweise können Sie einen Editor erstellen, dessen Funktion das Lesen und Schreiben von Daten in ein bestimmtes Repository, z. b. ein Microsoft Exchange-Server, ist. Wählen Sie einen benutzerdefinierten Editor aus, wenn Sie einen Editor benötigen, der nur mit dem Projekttyp funktioniert, oder wenn Sie einen Editor benötigen, der nur über einige bestimmte Befehle verfügt. Beachten Sie jedoch, dass Benutzer einen benutzerdefinierten Editor nicht verwenden können, um Standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekte zu bearbeiten.
+ Ein benutzerdefinierter Editor ist ein Editor, der unter speziellen Umständen arbeiten soll. Sie können z. B. einen Editor erstellen, dessen Funktion darin besteht, Daten in ein bestimmtes Repository, z. B. einen Microsoft Exchange-Server, zu lesen und zu schreiben. Wählen Sie einen benutzerdefinierten Editor aus, wenn Sie einen Editor wünschen, der nur mit Ihrem Projekttyp arbeitet, oder wenn Sie einen Editor mit nur wenigen bestimmten Befehlen benötigen. Beachten Sie jedoch, dass Benutzer keinen benutzerdefinierten Editor [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Bearbeiten von Standardprojekten verwenden können.
 
- Ein benutzerdefinierter Editor kann eine Editorfactory verwenden und der Registrierung Informationen über den Editor hinzufügen. Der mit dem benutzerdefinierten Editor verknüpfte Projekttyp kann den benutzerdefinierten Editor jedoch auf andere Weise instanziieren.
+ Ein benutzerdefinierter Editor kann eine Editorfactory verwenden und der Registrierung Informationen über den Editor hinzufügen. Der dem benutzerdefinierten Editor zugeordnete Projekttyp kann den benutzerdefinierten Editor jedoch auf andere Weise instanziieren.
 
- Ein benutzerdefinierter Editor kann entweder eine direkte Aktivierung oder eine vereinfachte Einbettung verwenden, um eine Ansicht zu implementieren.
+ Ein benutzerdefinierter Editor kann entweder die direkte Aktivierung oder die vereinfachte Einbettung verwenden, um eine Ansicht zu implementieren.
 
 ### <a name="external-editors"></a>Externe Editoren
- Externe Editoren sind Editoren, die nicht in Visual Studio integriert sind, z. b. Microsoft Word, Notepad oder Microsoft FrontPage. Sie könnten beispielsweise einen solchen Editor aufzurufen, wenn Sie z. b. Text aus Ihrem VSPackage an ihn übergeben. Externe Editoren registrieren sich selbst und können außerhalb von Visual Studio verwendet werden. Wenn Sie einen externen Editor aufzurufen und in ein Host Fenster eingebettet werden können, wird dieser in einem Fenster in der IDE angezeigt. Wenn dies nicht der Fall ist, erstellt die IDE ein separates Fenster dafür.
+ Externe Editoren sind Editoren, die nicht in Visual Studio integriert sind, z. B. Microsoft Word, Notepad oder Microsoft FrontPage. Sie können einen solchen Editor aufrufen, wenn Sie z. B. Text aus Ihrem VSPackage an ihn übergeben. Externe Editoren registrieren sich selbst und können außerhalb von Visual Studio verwendet werden. Wenn Sie einen externen Editor aufrufen und er in ein Hostfenster eingebettet werden kann, wird er in einem Fenster in der IDE angezeigt. Wenn dies nicht der Fall ist, erstellt die IDE ein separates Fenster dafür.
 
- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>-Methode legt die Dokument Priorität mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>-Enumeration fest. Wenn der `DP_External`-Wert angegeben wird, kann die Datei von einem externen Editor geöffnet werden.
+ Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode legt die Dokumentpriorität mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration fest. Wenn `DP_External` der Wert angegeben ist, kann die Datei von einem externen Editor geöffnet werden.
 
-## <a name="editor-design-decisions"></a>Entwurfsentscheidungen im Editor
- Die folgenden Entwurfs Fragen helfen Ihnen, den Typ des Editors auszuwählen, der für Ihre Anwendung am besten geeignet ist:
+## <a name="editor-design-decisions"></a>Editor-Design-Entscheidungen
+ Die folgenden Entwurfsfragen helfen Ihnen bei der Auswahl des Für-Antrags-Typs geeigneten Editors:
 
-- Speichert Ihre Anwendung Ihre Daten in Dateien? Wenn die Daten in Dateien gespeichert werden, befinden Sie sich in einem benutzerdefinierten oder Standardformat?
+- Wird Ihre Anwendung ihre Daten in Dateien speichern oder nicht? Wenn es seine Daten in Dateien speichern wird, werden sie in einem benutzerdefinierten oder Standardformat sein?
 
-   Wenn Sie ein Standarddatei Format verwenden, können andere Projekttypen zusätzlich zu Ihrem Projektdaten öffnen und in diese schreiben/schreiben. Wenn Sie jedoch ein benutzerdefiniertes Dateiformat verwenden, kann nur Ihr Projekttyp Daten öffnen und in diese schreiben/schreiben.
+   Wenn Sie ein Standarddateiformat verwenden, können neben dem Projekt auch andere Projekttypen Daten öffnen und lesen/schreiben. Wenn Sie jedoch ein benutzerdefiniertes Dateiformat verwenden, kann nur der Projekttyp Daten öffnen und lesen/schreiben.
 
-   Wenn das Projektdateien verwendet, sollten Sie den Standard-Editor anpassen. Wenn das Projekt keine Dateien verwendet, sondern stattdessen Elemente in einer Datenbank oder einem anderen Repository verwendet, sollten Sie einen benutzerdefinierten Editor erstellen.
+   Wenn Ihr Projekt Dateien verwendet, sollten Sie den Standard-Editor anpassen. Wenn Ihr Projekt keine Dateien verwendet, sondern Elemente in einer Datenbank oder einem anderen Repository verwendet, sollten Sie einen benutzerdefinierten Editor erstellen.
 
-- Muss der Editor ActiveX-Steuerelemente hosten?
+- Muss Ihr Editor ActiveX-Steuerelemente hosten?
 
-   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](/visualstudio/misc/in-place-activation?view=vs-2015)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard-Editor an.
+   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen in-Place-Aktivierungseditor, wie unter [An-Ort-Aktivierung](/visualstudio/misc/in-place-activation?view=vs-2015)beschrieben. Wenn ActiveX-Steuerelemente nicht hosten, verwenden Sie entweder einen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vereinfachten Einbettungseditor, oder passen Sie den Standard-Editor an.
 
-- Unterstützt der Editor mehrere Ansichten? Sie müssen mehrere Sichten unterstützen, wenn Sie möchten, dass Ansichten des Editors zur gleichen Zeit wie der Standard-Editor sichtbar sind.
+- Unterstützt Ihr Editor mehrere Ansichten? Sie müssen mehrere Ansichten unterstützen, wenn Ansichten des Editors gleichzeitig mit dem Standardeditor sichtbar sein sollen.
 
-   Wenn Ihr Editor mehrere Ansichten unterstützen muss, müssen die Dokument Daten-und Dokument Ansichts Objekte für den Editor getrennte Objekte sein. Weitere Informationen finden Sie [unter Unterstützung mehrerer Dokument Ansichten](../extensibility/supporting-multiple-document-views.md).
+   Wenn der Editor mehrere Ansichten unterstützen muss, müssen die Dokumentdaten- und Dokumentansichtsobjekte für den Editor separate Objekte sein. Weitere Informationen finden Sie unter [Unterstützung mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md).
 
-   Wenn der Editor mehrere Ansichten unterstützt, planen Sie die Verwendung der Text Puffer Implementierung des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editors (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>-Objekts) für das Dokument Datenobjekt? Das heißt, möchten Sie die Editor-Ansicht parallel mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editor unterstützen? Die Möglichkeit, dies zu erreichen, ist die Basis des Forms-Designers.
+   Wenn Ihr Editor mehrere Ansichten unterstützt, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] planen Sie, die Textpufferimplementierung (Objekt)<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> des Kerneditors für Ihr Dokumentdatenobjekt zu verwenden? Das heißt, möchten Sie Ihre Editor-Ansicht Seite an [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Seite mit dem Kerneditor unterstützen? Die Fähigkeit, dies zu tun, ist die Grundlage des Formulardesigners.
 
-- Wenn Sie einen externen Editor hosten müssen, kann der Editor in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]eingebettet werden?
+- Wenn Sie einen externen Editor hosten müssen, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]kann der Editor eingebettet werden?
 
-   Wenn Sie eingebettet werden kann, sollten Sie ein Host Fenster für den externen Editor erstellen und dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>-Methode aufzurufen und den <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumerationswert auf `DP_External`festlegen. Wenn der Editor nicht eingebettet werden kann, wird von der IDE automatisch ein separates Fenster erstellt.
+   Wenn es eingebettet werden kann, sollten Sie ein Hostfenster <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> für den <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> externen Editor erstellen `DP_External`und dann die Methode aufrufen und den Enumerationswert auf festlegen. Wenn der Editor nicht eingebettet werden kann, erstellt die IDE automatisch ein separates Fenster dafür.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md)\
-Erläutert das Erstellen eines benutzerdefinierten Editors.
+[Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Erläutert, wie ein benutzerdefinierter Editor erstellt wird.
 
-Exemplarische Vorgehensweise [: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
-Erläutert das Hinzufügen von Funktionen zu einem benutzerdefinierten Editor.
+[Exemplarische Vorgehensweise: Hinzufügen von Features zu einem benutzerdefinierten Editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Erläutert das Hinzufügen von Features zu einem benutzerdefinierten Editor.
 
-[Initialisierungs-und metadatenkonfigurations-](../extensibility/designer-initialization-and-metadata-configuration.md)\ des Designers
+[Designerinitialisierung und Metadatenkonfiguration](../extensibility/designer-initialization-and-metadata-configuration.md)\
 Erläutert, wie ein Designer initialisiert wird.
 
-[Unterstützung für die Bereitstellung an Designer](../extensibility/supplying-undo-support-to-designers.md)\
-Erläutert die Bereitstellung von Rückgängig-Unterstützung für-Designer.
+[Bereitstellung von Undo-Unterstützung für Designer](../extensibility/supplying-undo-support-to-designers.md)\
+Erläutert, wie Designer nützen.
 
-[Syntax Farbgebung in benutzerdefinierten Editoren](../extensibility/syntax-coloring-in-custom-editors.md)\
-Erläutert den Unterschied zwischen der Syntax Farbgebung im Kern-Editor und in benutzerdefinierten Editoren.
+[Syntaxfärbung in benutzerdefinierten Editoren](../extensibility/syntax-coloring-in-custom-editors.md)\
+Erläutert den Unterschied zwischen der Syntaxfärbung im Kerneditor und in benutzerdefinierten Editoren.
 
-[Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md)\
-Erläutert, wie Dokument Daten und Dokument Sichten in benutzerdefinierten Editoren implementiert werden.
+[Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Erläutert das Implementieren von Dokumentdaten und Dokumentansichten in benutzerdefinierten Editoren.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[Legacy Schnittstellen im Editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
-Erläutert, wie Sie mithilfe der Legacy-API auf den Kern-Editor zugreifen können.
+[Legacy-Schnittstellen im Editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
+Erläutert, wie der Kerneditor über die Legacy-API auf den Kerneditor zugreifen kann.
 
-[Entwickeln eines Legacy sprach Dienstanbieter](../extensibility/internals/developing-a-legacy-language-service.md)\
+[Entwickeln eines älteren Sprachdienstes](../extensibility/internals/developing-a-legacy-language-service.md)\
 Erläutert, wie ein Sprachdienst implementiert wird.
 
 [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
-Erläutert das Erstellen von UI-Elementen, die dem Rest [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]entsprechen.
+Erläutert, wie UI-Elemente erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]werden, die mit dem Rest von übereinstimmen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicField | Microsoft-Dokumentation
+title: IDebugDynamicField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58a4838afc0d52ab60ae0a11de419393d68dfc06
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351342"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731314"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-Diese Schnittstelle stellt einen Typ einer Variablen dar.
+Diese Schnittstelle stellt den Typ einer Variablen dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,21 +29,21 @@ IDebugDynamicField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle wird als Basisklasse für jeden Typ von Symbol-Anbieter implementiert, die zur Laufzeit bestimmt werden kann. Dies ist nur für verwalteten Code.
+ Diese Schnittstelle wird von Symbolanbietern als Basisklasse für jeden Typ implementiert, der zur Laufzeit bestimmt werden kann. Dies gilt nur für verwalteten Code.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Diese Schnittstelle stellt eine Basisklasse, die von der spezialisiertere Schnittstellen abgeleitet werden können.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Diese Schnittstelle stellt eine Basisklasse dar, von der speziellere Schnittstellen abgeleitet werden können.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Diese Schnittstelle stellt keine Methoden außer den von geerbten `IDebugField`.
+ Diese Schnittstelle stellt keine anderen Methoden als `IDebugField`die von .
 
-## <a name="requirements"></a>Anforderungen
- Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Symbolanbieterschnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -10,12 +10,12 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2ade11d4bffc3c9fdf812cb38d21cd742c9845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093632"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält.
 
@@ -41,23 +41,25 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 ### <a name="to-start-the-new-load-test-wizard"></a>So starten Sie den Assistenten für den neuen Auslastungstest
 
+1. Vergewissern Sie sich, dass Sie die Komponente **Tools für Webleistung und Auslastungstests** wie unter [Erstellen eines Auslastungstestprojekts](../test/quickstart-create-a-load-test-project.md) beschrieben installiert haben.
+
 1. Öffnen Sie die Bank-Projektmappe, die Sie in [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) erstellt haben.
 
-2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für den Bank-Projektmappenknoten, klicken Sie auf **Hinzufügen** und dann auf **Neues Projekt**.
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für den Bank-Projektmappenknoten, klicken Sie auf **Hinzufügen** und dann auf **Neues Projekt**.
 
      Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** die Option **Visual C#** , und wählen Sie **Test** aus. Wählen Sie aus der Liste der Vorlagen **Testprojekt für Webleistung und Auslastung** aus, und geben Sie `BankLoadTest` im Feld **Name** ein. Klicken Sie auf **OK**.
+1. Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** die Option **Visual C#** , und wählen Sie **Test** aus. Wählen Sie aus der Liste der Vorlagen **Testprojekt für Webleistung und Auslastung** aus, und geben Sie `BankLoadTest` im Feld **Name** ein. Klicken Sie auf **OK**.
 
      Das BankLoadTest-Testprojekt für Webleistung und Auslastung wird der Projektmappe hinzugefügt.
 
-4. Öffnen Sie das Kontextmenü für das neue BankLoadTest-Testprojekt für Webleistung und Auslastung, klicken Sie auf **Hinzufügen**, und wählen Sie dann **Auslastungstest** aus.
+1. Öffnen Sie das Kontextmenü für das neue BankLoadTest-Testprojekt für Webleistung und Auslastung, klicken Sie auf **Hinzufügen**, und wählen Sie dann **Auslastungstest** aus.
 
-5. Der **Assistent für neuen Auslastungstest** wird gestartet.
+1. Der **Assistent für neuen Auslastungstest** wird gestartet.
 
-6. Die erste Seite des **Assistenten für neuen Auslastungstest** ist die Seite **Willkommen**.
+1. Die erste Seite des **Assistenten für neuen Auslastungstest** ist die Seite **Willkommen**.
 
-7. Wählen Sie **Weiter** aus.
+1. Wählen Sie **Weiter** aus.
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>So bearbeiten Sie die Einstellungen für Auslastungstestszenarien
 

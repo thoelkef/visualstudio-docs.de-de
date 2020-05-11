@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumentcontext2:: | Microsoft-Dokumentation'
+title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetStatementRange
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ef4dae20a69fefcb67240e82999bdf2798d56e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335301"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731768"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-Ruft den Datei-Anweisung den Dokumentenkontext Bereich ab.
+Ruft den Dateianweisungsbereich des Dokumentkontexts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,21 +43,21 @@ int GetStatementRange(
 
 ## <a name="parameters"></a>Parameter
 `pBegPosition`\
-[in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit die Position gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.
+[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Startposition ausgefüllt wird. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
 
 `pEndPosition`\
-[in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.
+[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Endposition ausgefüllt wird. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Eine Anweisung reicht von Bereich der Zeilen, die den Code beigetragen haben, auf dem diese Dokumentkontext verweist.
+## <a name="remarks"></a>Bemerkungen
+Ein Anweisungsbereich ist der Bereich der Zeilen, die den Code beigetragen haben, auf den sich dieser Dokumentkontext bezieht.
 
-Um den Bereich der Source-Code (einschließlich Kommentare) in diesem Dokumentenkontext abzurufen, rufen die [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) Methode.
+Um den Quellcodebereich (einschließlich Kommentare) in diesem Dokumentkontext abzurufen, rufen Sie die [GetSourceRange-Methode](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) auf.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CDebugContext` -Objekt, das macht die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle. In diesem Beispiel füllt die Endposition nur dann, wenn die Anfangsposition kein null-Wert ist.
+Das folgende Beispiel zeigt, wie diese `CDebugContext` Methode für ein einfaches Objekt implementiert wird, das die [IDebugDocumentContext2-Schnittstelle](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) verfügbar macht. In diesem Beispiel wird die Endposition nur dann ausgefüllt, wenn die Anfangsposition kein Nullwert ist.
 
 ```cpp
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
@@ -88,7 +88,7 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

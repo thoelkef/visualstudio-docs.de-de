@@ -1,28 +1,28 @@
 ---
-title: AppliesTo-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Gilt Für Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33288876d1a9101d96d4d2c0c0c7beb5e6f1ac72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352243"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740076"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo-Element (Visual Studio-Vorlagen)
 
-Gibt einen optionalen Ausdruck, um eine oder mehrere Funktionen entsprechen (siehe <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Funktionen werden von Projekttypen über die Hierarchie als Eigenschaft verfügbar gemacht [__VSHPROPID5. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). Dadurch kann die Vorlage von mehreren Projekttypen gemeinsam genutzt werden, die über geläufige anwendbare Funktionen verfügen.
+Gibt einen optionalen Ausdruck an, der <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>mit einer oder mehreren Funktionen übereinstimmt (siehe ). Funktionen werden von Projekttypen über die Hierarchie als Eigenschaft __VSHPROPID5 verfügbar [gemacht. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). Dadurch kann die Vorlage von mehreren Projekttypen gemeinsam genutzt werden, die über geläufige anwendbare Funktionen verfügen.
 
 Dieses Element ist optional. Es kann maximal eine Instanz in einer Vorlagendatei geben. Dieses Element ermöglicht einer Elementvorlage nur, auf Grundlage der Funktionen des ausgewählten aktiven Projekts als anwendbar zu optieren. Es kann nicht verwendet werden, um eine Elementvorlage nicht anwendbar zu machen. Wenn `AppliesTo` fehlt oder der Ausdruck nicht erfolgreich optiert, wird `TemplateID` oder `TemplateGroupID` verwendet, um die Vorlage anwendbar zu machen, wie mit früheren Versionen des Produkts.
 
-Eingeführt in Visual Studio 2013 Update 2. Um die richtige Version verweisen zu können, finden Sie unter [verweisen auf Assemblys in Visual Studio 2013 SDK Update 2 übermittelt](/previous-versions/dn632168(v=vs.120)).
+Eingeführt in Visual Studio 2013 Update 2. Informationen zum Verweisen auf die richtige Version finden Sie unter [Verweisen auf Assemblys, die im Visual Studio 2013 SDK Update 2 bereitgestellt](/previous-versions/dn632168(v=vs.120))wurden.
 
 ```xml
 <VSTemplate>
@@ -42,15 +42,15 @@ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeor
 
 ### <a name="attributes"></a>Attribute
 
-Keine
+Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine
+Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage.|
 
@@ -60,11 +60,11 @@ Ein Textwert ist erforderlich. Dieser Text gibt die Funktionen des Projekts an.
 
 Gültige Ausdruckssyntax ist folgendermaßen definiert:
 
-- Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- Der Fähigkeitsausdruck, z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
-- Die "&#124;" ist der OR-Operator.
+- Der "&#124;" ist der OR-Operator.
 
-- Die "&" und "+" Zeichen sind beide AND-Operatoren.
+- Die Zeichen "&" und "+" sind beide AND-Operatoren.
 
 - Das Zeichen "!" ist der Operator NOT.
 
@@ -72,11 +72,11 @@ Gültige Ausdruckssyntax ist folgendermaßen definiert:
 
 - Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.
 
-- Projektfunktionen können jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r
+- Projektfunktionen können ein beliebiges Zeichen mit Ausnahme dieser reservierten\\Zeichen sein: "'':;,+-*/ !'&#124;&%'()={}[]<>? \t\b\n\r
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1` gilt für alle C#-Projekttypen oder jeden anderen Projekttyp, der die `WindowsAppContainer`-Funktion unterstützt. `Template2` gilt für C#-Projekte beliebiger Art. `Template3` gilt für C#-Projekte, die keine `WindowsAppContainer` sind Projekte.
+Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1`gilt entweder für alle C-Projekttypen oder für `WindowsAppContainer` einen anderen Projekttyp, der die Funktion unterstützt. `Template2`gilt für alle C-Projekte jeglicher Art. `Template3` gilt für C#-Projekte, die keine `WindowsAppContainer` sind Projekte.
 
 ```xml
 <!--  Template 1 -->
@@ -104,7 +104,7 @@ Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1`
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

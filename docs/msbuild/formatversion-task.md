@@ -13,24 +13,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b36c4eb63c503132aaf434c64249e4a5fdd3872
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250c73ce0395f278b72c18605f1666290670e20a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595253"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634109"
 ---
 # <a name="formatversion-task"></a>FormatVersion-Aufgabe
+
 Fügt die Revisionsnummer an die Versionsnummer an.
 
-- Fall 1: Eingabe: Version=\<undefined>;  Revision=\<don't care>;   Output: OutputVersion="1.0.0.0"
+- Fall 1: Input: Version=\<undefined>; Revision=\<don't care>; Output: OutputVersion="1.0.0.0"
 
-- Fall 2: Eingabe: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"
+- Fall 2: Input: Version="1.0.0.*" Revision="5" Output: OutputVersion="1.0.0.5"
 
-- Fall 3: Eingabe: Version="1.0.0.0"  Revision=\<don't care>;  Output: OutputVersion="1.0.0.0"
+- Fall 3: Input: Version="1.0.0.0" Revision=\<don't care>; Output: OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>Parameter
- In der folgenden Tabelle werden die Parameter der `FormatVersion` -Aufgabe beschrieben.
+
+ In der folgenden Tabelle werden die Parameter der `FormatVersion`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -39,9 +41,11 @@ Fügt die Revisionsnummer an die Versionsnummer an.
 |`Revision`|Optionaler `Int32`-Parameter.<br /><br /> Gibt die Revision an, die an die Version angefügt werden soll|
 |`Version`|Optionaler `String`-Parameter.<br /><br /> Gibt die zu formatierende Versionsnummernzeichenfolge an|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
+
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Weitere Informationen
+
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

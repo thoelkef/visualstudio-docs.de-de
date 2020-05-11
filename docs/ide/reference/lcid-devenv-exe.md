@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595526"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77557935"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -41,7 +41,7 @@ devenv {/LCID|/L} LocaleID
 
   Erforderlich. Die Gebietsschema-ID der Sprache, die Sie angeben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Lädt die IDE und legt die natürliche Standardsprache für die Umgebung fest. Diese Änderung wird zwischen den Sitzungen beibehalten, und die IDE zeigt diese Änderung in **Tools** > **Optionen** > **Umgebung** > **Internationale Einstellungen** > **Sprache** an.
 
@@ -53,13 +53,18 @@ In der folgenden Tabelle sind die LCIDs der von Visual Studio unterstützten Spr
 |--------------|----------|
 |Chinesisch (vereinfacht)|2052|
 |Chinesisch (traditionell)|1028|
+|Tschechisch|1029|
 |Englisch|1033|
 |Französisch|1036|
 |Deutsch|1031|
 |Italienisch|1040|
 |Japanisch|1041|
 |Koreanisch|1042|
+|Polnisch|1045|
+|Portugiesisch (Brasilien)|1046|
+|Russisch|1049|
 |Spanisch|3082|
+|Türkisch|1055
 
 ## <a name="example"></a>Beispiel
 
@@ -69,7 +74,7 @@ In diesem Beispiel wird die IDE mit englischen Ressourcenzeichenfolgen geladen.
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
 - [Internationale Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/international-settings-environment-options-dialog-box.md)

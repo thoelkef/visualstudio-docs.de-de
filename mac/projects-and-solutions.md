@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70107821"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Projekte und Projektmappen in Visual Studio für Mac
@@ -28,7 +28,7 @@ Ein Projekt wird durch eine Datei (z.B. `.csproj` für C#-Projekte) definiert, d
 
 Wenn ein Projekt von Visual Studio für Mac geladen wird, verwendet das Lösungspad die Projektdatei, um die Dateien und Ordner in Ihrem Projekt anzuzeigen. Während der Kompilierung liest MSBuild die Einstellungen aus der Projektdatei, um die ausführbare Datei zu erstellen.
 
-## <a name="solutions"></a>Projektmappen
+## <a name="solutions"></a>Lösungen
 
 Eine *Projektmappe* ist ein Container, der ein oder mehrere verwandte Projekte gruppiert. Projektmappen werden von einer Textdatei (mit der Erweiterung `.sln`) in einem individuellen Format beschrieben. Diese Datei sollte nicht manuell bearbeitet werden.
 
@@ -42,6 +42,6 @@ Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem S
 
 Weitere Informationen zu diesen Optionen finden Sie im Artikel [Verwalten von Projekt- und Projektmappeneigenschaften](managing-solutions-and-project-properties.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Projektmappen und Projekte in Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio)

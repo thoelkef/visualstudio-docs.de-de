@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589382"
 ---
 # <a name="symbol-path-command"></a>Befehl "Symbolpfad"
@@ -35,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 
 Dies ist optional. Ein durch Semikolons getrennte Liste der Pfade, in denen der Debugger nach Symbolen sucht.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 Wenn kein `pathname` angegeben wird, werden von dem Befehl die aktuellen Symbolpfade aufgelistet.
 
 ## <a name="example"></a>Beispiel
@@ -52,7 +52,7 @@ In diesem Beispiel wird eine durch Semikolons getrennte Liste der aktuellen Symb
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)

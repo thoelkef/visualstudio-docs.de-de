@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777763"
 ---
 # <a name="customize-performance-tools-report-views"></a>Anpassen von Berichtsansichten von Leistungstools
@@ -24,7 +24,7 @@ In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCL
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Hinzufügen, Entfernen und Sortieren nach Spalten in einer Berichtsansicht:** Sie können festlegen, welche Spalten in welcher Reihenfolge in tabellenbasierten Ansichten angezeigt werden sollen. Darüber hinaus können Sie die Zeilen der Berichtstabelle auch nach Spaltenwerten sortieren.|-   [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)|
 |**Entfernen kleiner Funktionen aus dem Bericht:** Sie können aus Berichten Funktionen entfernen, die kleiner sind als ein festgelegter Schwellenwert.|-   [Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
@@ -33,5 +33,5 @@ In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCL
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Leistungsberichtansichten:](../profiling/performance-report-views.md) beschreiben die Ansichten, die Sie zum Analysieren von Profilerstellungsdaten verwenden können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

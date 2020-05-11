@@ -1,29 +1,29 @@
 ---
-title: Projektordner mit Quellcode-Steuerungs Speicher vergleichen | Microsoft-Dokumentation
+title: Vergleichen des Projektordners mit dem Quellcodeverwaltungsspeicher | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
 - source control plug-ins, local project folders
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd5b105a2fd24078bc85d8cf5b044351cd78be
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726126"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706865"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Optionaler Vergleich des lokalen Projektordners mit dem Speicher der Quellcodeverwaltung
-In der Quellcodeverwaltungs-Plug-in-API 1,2 wird der Vergleich zwischen dem lokalen Projektordner und der Quell Code Verwaltung mithilfe der Funktionen [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) und [sccdirdiff](../../extensibility/sccdirdiff-function.md)durchgeführt.
+In der Quellcodeverwaltung Plug-in API 1.2 wird der Vergleich zwischen dem lokalen Projektordner und der Quellcodeverwaltung mithilfe der Funktionen [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) und [SccDirDiff](../../extensibility/sccdirdiff-function.md)durchgeführt.
 
- Wenn Sie in **Projektmappen-Explorer**einen Ordner anstelle einer einzelnen Datei auswählen, ruft das Kontextmenü für die **Vergleichs Versionen** das neue [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) -und [sccdirdiff](../../extensibility/sccdirdiff-function.md) -Element im Quellcodeverwaltungs-Plug-in auf.
+ Wenn im **Projektmappen-Explorer**anstelle einer einzelnen Datei ein Ordner ausgewählt ist, ruft das Kontextmenü **Versionen vergleichen** die neuen [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) und [SccDirDiff](../../extensibility/sccdirdiff-function.md) im Quellcodeverwaltungs-Plug-In auf.
 
-## <a name="new-capability-flags"></a>Neue funktionsflags
+## <a name="new-capability-flags"></a>Neue Funktionsflags
  `SCC_CAP_DIRECTORYDIFF`
 
  `SCC_CAP_DIRECTORYCHECKOUT`
@@ -33,10 +33,10 @@ In der Quellcodeverwaltungs-Plug-in-API 1,2 wird der Vergleich zwischen dem loka
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- Die `SccDirQueryInfo`-Funktion wird vor `SccDirDiff` aufgerufen, um zu bestimmen, ob das Arbeitsverzeichnis Quell gesteuert ist. Die `SccDirDiff`-Funktion zeigt die Unterschiede zwischen dem aktuellen lokalen Verzeichnis und dem entsprechenden Ordner für die Quell Code Verwaltung an. Dieser Befehl fordert das Quellcodeverwaltungs-Plug-in auf, die Liste der Änderungen im Verzeichnis anzuzeigen. Ein Quellcodeverwaltungs-Plug-in stellt eine eigene Benutzeroberfläche zum Anzeigen der Unterschiede bereit.
+ Die `SccDirQueryInfo` Funktion wird `SccDirDiff` zuvor aufgerufen, um zu bestimmen, ob das Arbeitsverzeichnis von der Quelle gesteuert wird. Die `SccDirDiff` Funktion zeigt die Unterschiede zwischen dem aktuellen lokalen Verzeichnis und dem entsprechenden Quellcodeverwaltungsordner an. Dieser Befehl fordert das Quellcodeverwaltungs-Plug-In auf, die Liste der Änderungen am Verzeichnis anzuzeigen. Ein Quellcodeverwaltungs-Plug-In stellt eine eigene Benutzeroberfläche bereit, um die Unterschiede anzuzeigen.
 
 > [!NOTE]
-> Diese Funktion verwendet die gleichen [Befehlsflags wie sccdiff](../../extensibility/sccdiff-function.md). Als Anbieter von Quellcodeverwaltungs-Plug-Ins können Sie den Vorgang für die schnelle diff-Ausführung für Verzeichnisse nicht unterstützen.
+> Diese Funktion verwendet dieselben Befehlsflags wie [SccDiff](../../extensibility/sccdiff-function.md). Als Quellcodeverwaltungs-Plug-In-Anbieter können Sie den "Quick Diff"-Vorgang für Verzeichnisse nicht unterstützen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

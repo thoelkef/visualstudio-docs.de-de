@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589213"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880142"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren der Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
 
@@ -24,12 +24,19 @@ Sie können den Adapter für diagnostische Daten für das Testen einer Anwendung
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 Im folgenden Verfahren wird beschrieben, wie die Netzwerkemulation über den Konfigurations-Editor konfiguriert wird. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Im folgenden Verfahren wird beschrieben, wie die Netzwerkemulation über den Konfigurations-Editor konfiguriert wird. Diese Schritte gelten für den Konfigurations-Editor in Visual Studio.
+::: moniker-end
 
 > [!NOTE]
-> Der Adapter für diagnostische Daten für die Netzwerkemulation gilt nur für Visual Studio-Testeinstellungen. Er wird nicht für Testeinstellungen in Microsoft Test Manager verwendet.
+> Der Adapter für diagnostische Daten für die Netzwerkemulation gilt nur für Visual Studio-Testeinstellungen. Er wird nicht für Testeinstellungen in Microsoft Test Manager verwendet (ab Visual Studio 2017).
 
+::: moniker range="vs-2017"
 Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet werden. Wenn Sie die Netzwerkemulation für eine lokale Rolle ausgewählt haben, mit der manuelle Tests ausgeführt werden, müssen Sie Microsoft Test Manager mit Administratorrechten starten. Wenn Sie Netzwerkemulation für eine beliebige andere Rolle ausgewählt haben, müssen Sie überprüfen, ob der Test-Agent auf dem Computer für diese Rolle ein Benutzerkonto verwendet, das Mitglied der Administratorgruppe ist. Weitere Informationen über das Einrichten des Kontos für Ihren Test-Agent finden Sie unter[Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
+::: moniker-end
 
 > [!NOTE]
 > Das Netzwerkdienstkonto, das das Standardkonto für den Test-Agent ist, ist kein Mitglied der Administratorgruppe.

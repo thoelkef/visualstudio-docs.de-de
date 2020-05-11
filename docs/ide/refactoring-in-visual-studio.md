@@ -1,5 +1,5 @@
 ---
-title: Umgestaltung
+title: Refactoring
 description: Die beliebtesten Refactorings in Visual Studio mit Beschreibungen und Beispielen
 ms.date: 01/10/2018
 ms.topic: conceptual
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585716"
 ---
 # <a name="refactor-code"></a>Refactoring von Code
@@ -29,10 +29,10 @@ In Visual Studio stehen verschiedene Refactoringvorgänge für verschiedene Prog
 - Informationen zum Refactoring von in C++ geschriebenem Code finden Sie unter [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
 - Refactoringunterstützung für F# wird durch die [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) bereitgestellt, eine Visual Studio-Erweiterung eines Drittanbieters.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnelle Aktionen](../ide/quick-actions.md)
 - [Visual Studio-IDE](../get-started/visual-studio-ide.md)
-- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Vorschau der Änderungen](../ide/preview-changes.md)
 - [Refactoring (Visual Studio für Mac)](/visualstudio/mac/refactoring)

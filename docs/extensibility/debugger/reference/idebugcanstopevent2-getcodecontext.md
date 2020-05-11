@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetCodeContext | Microsoft-Dokumentation
+title: IDebugCanStopEvent2::GetCodeContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetCodeContext
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f5b43a685bcaadccdac1d12ffce2df578a842ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 94c129d7d50bc747291d8a178d73c06655e65414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350083"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734561"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
-Ruft ab, der Codekontext, der den Speicherort der dieses Ereignis beschreibt.
+Ruft den Codekontext ab, der den Speicherort dieses Ereignisses beschreibt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,17 +41,17 @@ int GetCodeContext( 
 
 ## <a name="parameters"></a>Parameter
 `ppCodeContext`\
-[out] Gibt die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das den aktuellen Speicherort darstellt.
+[out] Gibt das [IDebugCodeContext2-Objekt](../../../extensibility/debugger/reference/idebugcodecontext2.md) zurück, das den aktuellen Codespeicherort darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Für die meisten Laufzeitfehler-Architekturen kann ein Codekontext als Adresse im Stream Ausführung eines Programms auf eine bestimmte Anweisung betrachtet werden.
+## <a name="remarks"></a>Bemerkungen
+ Für die meisten Laufzeitarchitekturen kann ein Codekontext als Adresse im Ausführungsstream eines Programms betrachtet werden, die auf eine bestimmte Anweisung verweist.
 
- Rufen Sie den Dokumentenkontext, der auf die Quellcodezeilen ausgerichtet ist, rufen Sie die [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) Methode.
+ Um den Dokumentkontext abzurufen, der auf Quellcodezeilen ausgerichtet ist, rufen Sie die [GetDocumentContext-Methode](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) auf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)

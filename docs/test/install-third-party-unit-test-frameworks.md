@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594278"
 ---
 # <a name="install-unit-test-frameworks"></a>Installieren von Komponententestframeworks
@@ -48,6 +48,6 @@ Aktualisieren Sie auf den neuesten stabilen Testadapter, um eine bessere Testerm
 
    ![Aktualisieren des Testadapters](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)

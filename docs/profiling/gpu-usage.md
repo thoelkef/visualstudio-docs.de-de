@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969820"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
@@ -20,7 +20,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 
 Dieser Screenshot zeigt das Fenster **GPU-Nutzungsbericht**:
 
-![Der GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -43,7 +43,7 @@ Die folgenden Anforderungen für die Verwendung des GPU-Nutzungstools gelten zus
 
 2. Aktivieren Sie im Leistungs- und Diagnosehub das Kontrollkästchen neben **GPU-Nutzung**. Aktivieren Sie optional die Kontrollkästchen neben anderen gewünschten Tools. Sie können mehrere Leistungs- und Diagnosetools gleichzeitig ausführen, um ein umfassenderes Bild der Leistung Ihrer App zu erhalten.
 
-    ![Wählen Sie die Diagnosetools, die Sie verwenden möchten.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")
+    ![Auswählen der gewünschten Diagnosetools](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")
 
    > [!NOTE]
    > Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.
@@ -62,15 +62,15 @@ Die folgenden Anforderungen für die Verwendung des GPU-Nutzungstools gelten zus
 
 1. Wählen Sie im unteren Bereich des Fensters „Diagnosesitzung“ den Link **Auflistung beenden**, oder drücken Sie oben links **Beenden**.
 
-   ![Erfassen Sie GPU- und CPU-Zeitsteuerungsinformationen.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Sammeln der GPU- und CPU-Zeitsteuerungsinformationen](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. Wählen Sie im oberen Bereich des Berichts einen Abschnitt aus einem der Diagramme, die das Problem anzeigt, das Sie untersuchen möchten. Die Auswahl kann bis zu drei Sekunden umfassen. Längere Abschnitte werden in Richtung Anfang gekürzt.
 
-   ![Nach dem Erfassen, wählen Sie einen Bereich zum Anzeigen von Details](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Nachträgliche Sammlung: Auswählen eines Bereichs zur Anzeige von Details](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Wählen Sie im unteren Bereich des Berichts den Link **Details anzeigen** in der Meldung **...Klicken Sie hier, um detaillierte Informationen zur GPU-Nutzung für diesen Bereich anzuzeigen**, um eine detaillierte Zeitachse der Auswahl anzuzeigen.
 
-   ![Nach dem Erfassen, mit ausgewähltem Bereich](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")
+   ![Nachträgliche Sammlung mit ausgewähltem Bereich](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")
 
    Mit dieser Auswahl wird ein neues Dokument im Registerkartenformat mit dem Bericht geöffnet. Mithilfe des GPU-Nutzungsberichts können Sie sehen, wann ein Grafikereignis auf der CPU gestartet wurde, wann es die GPU erreicht und wie lange die Ausführung durch die GPU gedauert hat. Anhand dieser Informationen können Sie Engpässe und Möglichkeiten für eine verbesserte Parallelität in Ihrem Code erkennen.
 
@@ -86,11 +86,11 @@ Ab Visual Studio 2017 können Sie diese Daten mit [GPUView](/windows-hardware/dr
 
 Im oberen Teil des GPU-Nutzungsberichts werden Zeitachsen für die CPU-Verarbeitungsvorgänge, GPU-Renderingvorgänge und GPU-Kopiervorgänge angezeigt. Diese Zeitachsen werden durch hellgraue vertikale Balken unterteilt, die die VSync der Anzeige angeben. Die Häufigkeit der Balken entspricht der Aktualisierungsrate einer der Anzeigen (ausgewählt mithilfe des Dropdownmenüs **Anzeige**), aus der die GPU-Nutzungsdaten erfasst wurden. Da die Anzeige eine höhere Aktualisierungsrate als das Leistungsziel Ihrer App haben kann, besteht ggf. keine 1:1-Beziehung zwischen VSync und der Framerate, die Ihre App erreichen soll. Um das Leistungsziel zu erreichen, muss eine App alle Verarbeitungsvorgänge abschließen, das Rendering ausführen und einen Present()-Aufruf bei der als Ziel festgelegten Framerate vornehmen. Der gerenderte Frame wird jedoch erst bei der nächsten VSync nach Present() angezeigt.
 
-Im unteren Abschnitt werden Grafikereignisse aufgelistet, die innerhalb des Berichtszeitraums aufgetreten sind. 
+Im unteren Abschnitt werden Grafikereignisse aufgelistet, die innerhalb des Berichtszeitraums aufgetreten sind.
 
 Im Folgenden ist das Fenster **GPU-Nutzungsbericht** dargestellt:
 
-![Der GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 Wenn Sie im unteren Bereich des Berichts ein Ereignis auswählen, wird ein Marker bei entsprechenden Ereignissen auf den relevanten Zeitachsen angezeigt. In der Regel zeigt ein Ereignis auf einem CPU-Thread den API-Aufruf an, während ein anderes Ereignis auf einer der GPU-Zeitachsen anzeigt, wann die GPU die Aufgabe abgeschlossen hat. Wenn Sie ein Ereignis auf einer Zeitachse auswählen, wird umgekehrt das entsprechende Ereignis im unteren Bereich des Berichts hervorgehoben. Wenn Sie im oberen Bereich des Berichts die Zeitachsen verkleinern, werden nur die Ereignisse mit dem höchsten Zeitverbrauch angezeigt. Zum Anzeigen von Ereignissen mit einer kürzeren Dauer können Sie die Zeitachsen mithilfe von STRG+Mausrad oder des Skalierungssteuerelements in der unteren linken Ecke des oberen Bereichs vergrößern. Sie können auch die Inhalte des Zeitachsenbereichs ziehen, um durch die erfassten Ereignisse zu navigieren.
 
@@ -132,14 +132,14 @@ Sie können das GPU-Nutzungstool so konfigurieren, dass die Erfassung von Profil
 
 3. Deaktivieren Sie unter **GPU-Profilerstellungskonfiguration** auf der Eigenschaftenseite **Allgemein** das Kontrollkästchen **Profilerstellung beim Appstart beginnen**, um die Profilerstellung zurückzustellen.
 
-   ![Konfigurieren, wenn die GPU-Nutzungserfassung startet](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
+   ![Konfigurieren des Starts der GPU-Nutzungserfassung](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
 
 > [!IMPORTANT]
 > Das Zurückstellen der Profilerstellung wird derzeit nicht für Direct3D 12-Apps unterstützt.
 
 Wenn Sie Ihre App unter dem GPU-Nutzungstool ausführen, wird ein zusätzlicher Link im unteren Bereich des Fensters des GPU-Nutzungstools verfügbar. Wählen Sie zum Starten der Erfassung von Profilinformationen den Link **Starten** in der Meldung **Erfassung detaillierter GPU-Nutzungsdaten starten**.
 
-## <a name="hwsupport"></a> Unterstützte Hardware und Treiber
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> Unterstützte Hardware und Treiber
 
 Folgende GPU-Hardware und Treiber werden unterstützt:
 

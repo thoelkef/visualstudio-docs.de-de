@@ -1,30 +1,30 @@
 ---
-title: M_action-Feld | Microsoft-Dokumentation
+title: m_action Feld | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_action field, Task class [.NET Framework debug engines]
 ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33d356f606dc2622647de53b50f5c677b3c14eb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925141733356ac7730e2708673ebdad793fd465b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330983"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738435"
 ---
-# <a name="maction-field"></a>M_action-Feld
-Der Delegat, der den auszuführenden in Code stellt dar, die <xref:System.Threading.Tasks.Task> Objekt.
+# <a name="m_action-field"></a>m_action Feld
+Der Delegat, der den <xref:System.Threading.Tasks.Task> Code darstellt, der im Objekt ausgeführt werden soll.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
+ **Baugruppe:** mscorlib (in *mscorlib.dll*)
 
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
+ Da Sie über .NET Framework nicht auf dieses interne Element zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,8 +32,8 @@ Der Delegat, der den auszuführenden in Code stellt dar, die <xref:System.Thread
 .field assembly object m_action
 ```
 
-## <a name="remarks"></a>Hinweise
- Dies ist die `action` Parameter in der <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor.
+## <a name="remarks"></a>Bemerkungen
+ Dies `action` ist der <xref:System.Threading.Tasks.Task.%23ctor%2A> Parameter im Konstruktor.
 
-## <a name="see-also"></a>Siehe auch
-- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

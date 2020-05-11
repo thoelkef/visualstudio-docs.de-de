@@ -2,55 +2,62 @@
 title: Neuerungen in Visual Studio-Abonnements
 description: Hier erfahren Sie, welche neuen und aktualisierten Features Sie für die Verwaltung von Visual Studio-Abonnements verwenden können.
 ms.custom: ''
-ms.date: 08/26/2019
+ms.date: 04/01/2020
 ms.topic: conceptual
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060409"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649649"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Neuerungen in Visual Studio-Abonnements
 
 Das Abonnement-Vorteilspaket wird häufig aktualisiert, um es für Sie zu optimieren. Wir nehmen außerdem Verbesserungen an unseren Abonnenten- und Abonnementverwaltungsportalen vor, um Ihnen die bestmögliche Oberfläche zu bieten.  Im Folgenden erhalten Sie weitere Informationen zu den neuesten Features und Updates, nach Quartalen sortiert.
 
-## <a name="2019-q3-june-august"></a>Drittes Quartal 2019 (Juni bis August)
+## <a name="2020-q1-january-march"></a>Q1 2020 (Januar bis März)
 
-### <a name="contact-my-admin-available-for-subscribers---august-2019"></a>„Contact my Admin“ (Administrator kontaktieren) für Abonnenten verfügbar (August 2019)
-Viele Visual Studio-Abonnenten beziehen Abonnements über Unternehmen, Schulen oder Universitäten. Administratoren weise diese Abonnements zu und verwalten sie.  In großen oder komplexen Organisationen wissen Abonnenten, die Unterstützung von einem Administrator benötigen, unter Umständen nicht, wen sie kontaktieren müssen.  Abonnenten werden daher nun durch das neue Feature „Contact my Admin“ (Administrator kontaktieren) im Abonnentenportal unter https://my.visualstudio.com/subscriptions unterstützt. Weitere Informationen finden Sie im Artikel [Anfordern von Unterstützung durch einen Abonnementadministrator](contact-my-admin.md). 
+### <a name="subscriptions-administration-portal"></a>Portal für die Verwaltung von Abonnements
+Im ersten Quartal von 2020 wurden ein neues Design und einige neue Features für das Portal für die Verwaltung von Visual Studio-Abonnements unter https://manage.visualstudio.com eingeführt. Zu den Änderungen am Portal gehören ein neues Farbschema und die Neuanordnung einiger Tools.  Die Übersicht über Ihre Abonnementzuweisungen, Vertragsdetails und maximale Auslastung wird nun über die Schaltflächen oben links gesteuert.  Dadurch wird mehr Anzeigefläche für die Verwaltungsaufgaben freigestellt, die Sie am häufigsten durchführen müssen, z. B. das Zuweisen und Bearbeiten von Abonnements.  
 
-### <a name="agreement-preferences-available-for-super-admins---august-2019"></a>Vertragseinstellungen für Superadministratoren verfügbar (August 2019)
-Mit einem neuen Feature im Verwaltungsportal für Abonnements können Superadministratoren nun globale Einstellungen für ihre Verträge festlegen.  Dies erleichtert es Administratoren, Abonnements zuzuweisen. Außerdem wird mehr Kontrolle über Features bereitgestellt, mit denen beispielsweise festgelegt wird, ob ein Administrator Abonnements für Benutzer außerhalb einer Organisation erstellen kann.  Weitere Informationen finden Sie im Artikel [Festlegen von Vertragseinstellungen](admin-prefs.md). 
+Außerdem wurden die Optionen zum Hinzufügen einzelner Abonnenten und zum Durchführen von Massenhinzufügungen im Dropdownmenü **+ Hinzufügen** kombiniert. 
 
-## <a name="2019-q2-april-june"></a>2019 Q2 (April – Juni)
+   > [!div class="mx-imgBorder"]
+   > ![Neue Benutzeroberfläche des Portals für die Verwaltung von Abonnements](_img/whats-new/new-admin-ui.png)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio mit GitHub Enterprise-Abonnements
-Auf der //build-Konferenz im Mai kündigte Microsoft an, dass Enterprise Agreement-Kunden jetzt Visual Studio-Abonnements erwerben können, in denen GitHub Enterprise enthalten ist.  Auf diese Weise können Sie sowohl Visual Studio-Abonnements als auch GitHub Enterprise zu einem niedrigeren Preis erwerben.  
+#### <a name="connect-emails"></a>Verknüpfen von E-Mail-Adressen
+Das Abgleichen von Abonnenten, die Microsoft-Konten verwenden, mit Ihrer Azure Active Directory-Instanz wurde vereinfacht, sodass Sie die zwei Identitäten nun mühelos verknüpfen können.  Die Verwendung von Azure AD-Identitäten sorgt für erhöhte Sicherheit und Vereinfachung der Abonnementverwaltung.  Weitere Informationen finden Sie im [Artikel zu persönlichen Anmeldungen](personal-email-sign-ins.md). 
 
-GitHub Enterprise ist mit Visual Studio Enterprise- und Visual Studio Professional-Abonnements verfügbar, die über Enterprise Agreements erworben wurden. Es gibt auch ein „Step-Up-Angebot“, mit dem Sie GitHub Enterprise auch dann hinzufügen können, wenn Ihr Enterprise Agreement nicht zur Verlängerung ansteht.
+#### <a name="add-subscribers-using-azure-active-directory-groups"></a>Hinzufügen von Abonnenten mit Azure Active Directory-Gruppen
+Wenn Ihre Organisation Azure Active Directory verwendet, können Sie Abonnements nun mit Azure AD-Gruppen verwalten.  Das Zuweisen von Abonnements zu Gruppen ermöglicht Ihnen, mehreren Benutzer derselben Art schnell Abonnements zuzuweisen.  Wenn neue Benutzer zur Azure AD-Gruppe hinzugefügt werden, wird ihnen automatisch ein Abonnement zugewiesen.  Wenn ein Benutzer aus der Azure AD-Gruppe entfernt wird, wird ihm auch das Abonnement entzogen.  Dies unterstützt Ihre Organisation bei der Automatisierung der Abonnementverwaltung und spart Administratoren Zeit und Mühe.  Ausführliche Informationen finden Sie im Artikel [Hinzufügen mehrerer Benutzer](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions). 
 
-Weitere Informationen zu Vorteilen, Optionen und Preise finden Sie unter https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+### <a name="cast-highlight"></a>CAST Highlight
+Wir freuen uns, eine Erweiterung der Vorteile ankündigen zu dürfen, die unser Partner CAST Highlight anbietet. 
+- Die Länge des in Visual Studio Enterprise-Abonnements enthaltenen Vorteils wurde auf sechs Monate erweitert.  
+- Visual Studio Professional-Abonnenten können nun ein Abonnement erhalten, mit dem Sie eine Einzelanwendung drei Monate lang bewerten können. 
 
-Wenn Ihre Organisation bereits über Visual Studio mit GitHub Enterprise-Abonnements verfügt, erhalten Sie weitere Informationen zum [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)-Abonnements in unserer Dokumentation.  
+## <a name="2020-q2-april-june"></a>2020 Q2 (April bis Juni)
 
-## <a name="2019-q1-january-march"></a>Q1 2019 (Januar–März)
+### <a name="visual-studio-subscriptions-portal"></a>Visual Studio-Abonnementportal
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Maximale Nutzung zum [Abonnementverwaltungsportal](https://manage.visualstudio.com) hinzugefügt
-Mithilfe eines neuen Features im Verwaltungsportal für Visual Studio-Abonnements haben Sie immer im Blick, wie viele Abonnements Sie erworben und zugewiesen haben, und wissen, wie viele Abonnements auf jeder Stufe Sie sowohl während des vergangenen Jahres als auch über die gesamte Dauer Ihrer Vereinbarung hinweg maximal zugewiesen hatten. Dadurch können Sie Ihre aktuelle Abonnementnutzung nachvollziehen und zukünftige Käufe planen. 
+Das Visual Studio-Abonnementportal wurde grundlegend verändert, um die Benutzerfreundlichkeit zu erhöhen.  
 
-  > [!div class="mx-imgBorder"]
-  > ![Screenshot: Menü „Maximum Usage“ (Maximale Auslastung)](_img/maximum-usage/maximum-usage-menu.png)
+- Die Größe der Vorteilskacheln wurde angepasst, sodass nun alle Kacheln im Fenster angezeigt werden und Sie keinen Bildlauf nach links oder rechts durchführen müssen, um alle Kacheln einer Kategorie zu sehen. 
+- Sie können alle verfügbaren Vorteile anzeigen oder über die Kategorieauswahl nur eine Kategorie auswählen, die angezeigt werden soll.
+   > [!div class="mx-imgBorder"]
+   > ![Die neue Kategorieauswahl für Vorteile](_img/whats-new/whats-new-category-picker.png)
+- Außerdem wurde die Abonnementauswahl aus der oberen rechten Ecke des Fensters an eine neue Position verschoben, damit besser darauf zugegriffen werden kann.
+   > [!div class="mx-imgBorder"]
+   > ![Die neue Abonnementauswahl](_img/whats-new/whats-new-sub-picker.png)
+- Wir haben oben in der Vorteilsliste einen „empfohlenen Vorteil“ hinzugefügt, um neue oder beliebte Vorteile hervorzuheben.  
+   > [!div class="mx-imgBorder"]
+   > ![Der neue empfohlene Vorteil](_img/whats-new/whats-new-featured.png)
 
-Sie können auch einen ständig aktualisierten Verlauf Ihrer Zuweisungen anzeigen, einschließlich Ihrer Käufe und Zuweisungen.   
-
-Weitere Informationen finden Sie unserem Artikel zur [maximalen Nutzung](maximum-usage.md). 
-
-
-
-
-
-Und das ist schon alles!
+## <a name="next-steps"></a>Nächste Schritte
+- Testen Sie die neue Benutzeroberfläche des [Portals zur Verwaltung von Abonnements](https://manage.visualstudio.com) und dessen neue Features.
+- Erfahren Sie mehr über [CAST Highlight](vs-cast.md).
+- Hier finden Sie stets die neuesten Informationen über Neuerungen bei Visual Studio-Abonnements.

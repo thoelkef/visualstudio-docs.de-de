@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74298745"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Übersicht über Visual Studio-Tools für Unity
@@ -66,5 +66,5 @@ In diesem Abschnitt erfahren Sie mehr über die Funktionen von Visual Studio-Too
   
 - Sie können ändern, wie Visual Studio-Tools für Unity Projektdateien mithilfe des Rückrufs von "ProjectFileGeneration" im Unity-Stil erstellt. Weitere Informationen finden Sie im Beispiel "Erstellung der Projektdatei".  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Unity-Homepage](https://unity.com/)

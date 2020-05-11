@@ -1,39 +1,39 @@
 ---
-title: Erste Schritte mit Quellcodeverwaltungs-VSPackages | Microsoft-Dokumentation
+title: Erste Schritte mit Source Control VSPackages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
 - getting started, source control packages
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c729ca3e985b2904c9a1a577065865354796112
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328927"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708329"
 ---
-# <a name="get-started-with-source-control-vspackages"></a>Erste Schritte mit der quellcodeverwaltung VSPackages
+# <a name="get-started-with-source-control-vspackages"></a>Erste Schritte mit der Quellcodeverwaltung VSPackages
 
-Eine VSPackage für die quellcodeverwaltung ist eine erweiterte Alternative zum das Quellcodeverwaltungs-Plug-in. Weitere Informationen zu den Quellcodeverwaltungs-Plug-ins, finden Sie unter [erstellen ein Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md). Eine VSPackage für die quellcodeverwaltung ermöglicht die vollständige Kontrolle über das quellcodeverwaltungmodell, Features und Benutzeroberfläche (UI) sowie integriert in die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung wie ein VSPackage.
+Ein Quellcodeverwaltungs-VSPackage ist eine erweiterte Alternative zum Quellcodeverwaltungs-Plug-In. Weitere Informationen zu Quellcodeverwaltungs-Plug-Ins finden Sie unter [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md). Ein Quellcodeverwaltungs-VSPackage ermöglicht die vollständige Steuerung des Quellcodeverwaltungsmodells, der Features und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der Benutzeroberfläche und integriert sich als VSPackage in die Umgebung.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-[Bestimmen Sie, ob ein Quellcodeverwaltungs-VSPackage implementiert.](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+[Bestimmen, ob ein Quellcodeverwaltungs-VSPackage implementiert werden soll](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 
-Erläutert die Optionen für die Quellcode-Kontrollmechanismen, und enthält allgemeine Richtlinien zum Auswählen eines entsprechenden Integration-Pfads.
+Erläutert die Auswahlmöglichkeiten für Quellcodeverwaltungslösungen und enthält allgemeine Richtlinien für die Auswahl eines geeigneten Integrationspfads.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-- [Was ist neu in der quellcodeverwaltung](../../extensibility/internals/what-s-new-in-source-control.md)
+- [Neuerungen in der Quellcodeverwaltung](../../extensibility/internals/what-s-new-in-source-control.md)
 
-   Beschreibt neue Funktionen, die mit VSPackages mit der quellcodeverwaltung.
+   Beschreibt neue Funktionen mit VSPackages mit Quellcodeverwaltung.
 
 - [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
-   Erläutert, wie ein Quellcodeverwaltungs-VSPackage zu erstellen, die nicht nur Quellcodeverwaltungsfunktionen bereitstellt, sondern dienen zum Anpassen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Datenquellen-Steuerelement-Benutzeroberfläche.
+   Erläutert, wie ein Quellcodeverwaltungs-VSPackage erstellt wird, das nicht nur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Quellcodeverwaltungsfunktionen bereitstellt, sondern auch zum Anpassen der Quellcodeverwaltungsbenutzeroberfläche verwendet werden kann.

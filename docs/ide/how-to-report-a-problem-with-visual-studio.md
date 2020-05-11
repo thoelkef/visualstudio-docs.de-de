@@ -4,17 +4,17 @@ description: Erfahren Sie, wie Sie ein Problem mit Visual Studio melden.
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947694"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276500"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Melden eines Problems mit Visual Studio oder Visual Studio-Installer
 
@@ -43,7 +43,7 @@ Sie können ein Problem in Visual Studio oder dem Installationsprogramm über da
 
    ![Ähnliche Probleme suchen und für sie abstimmen](../ide/media/search-and-vote.png)
 
-1. Wenn Sie das gesuchte Problem nicht finden, klicken Sie am unteren Rand des Bildschirms auf **Neues Problem melden**.
+1. Wenn Sie das gesuchte Problem nicht finden, klicken Sie am unteren Rand der Anzeige auf **Neues Problem melden**.
 
    > [!NOTE]
    > Die Schaltfläche **Neues Problem melden** ist nur in der Developer Community-Schnittstelle in Visual Studio verfügbar. Probleme können nicht direkt auf der [Developer Community](https://developercommunity.visualstudio.com/)-Website gemeldet werden.
@@ -122,7 +122,7 @@ Wenn Sie kein Problem melden, sondern ein Feature vorschlagen möchten, haben Si
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Sprechen Sie mit uns](../ide/talk-to-us.md)
+* [Visual Studio-Feedbackoptionen](../ide/feedback-options.md)
 * [Vorgehensweise: Melden eines Problems mit Visual Studio für Mac](/visualstudio/mac/report-a-problem)
 * [Melden eines Problems mit dem Visual C++-Toolset oder der -Dokumentation](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)

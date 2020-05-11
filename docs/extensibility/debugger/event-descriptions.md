@@ -1,48 +1,48 @@
 ---
-title: Ereignisbeschreibungen | Microsoft-Dokumentation
+title: Ereignisbeschreibungen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267011c61a3b43c76db80a758a86f1af1dd228b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315365"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738789"
 ---
 # <a name="event-descriptions"></a>Ereignisbeschreibungen
 Jeder Ereignistyp hat einen bestimmten Zweck.
 
-## <a name="events-and-the-reasons-for-their-use"></a>Ereignisse und die Gründe für deren Verwendung
+## <a name="events-and-the-reasons-for-their-use"></a>Veranstaltungen und die Gründe für ihre Verwendung
 
-|event|Beschreibung|
+|Ereignis|BESCHREIBUNG|
 |-----------|-----------------|
-|Aktivieren der Dokumentereignisse|Treten Sie auf, wenn die Debug-Engine (DE) möchte, die IDE dass zu öffnen oder ein Dokument in den Vordergrund zu bringen.|
-|Haltepunkt gebunden oder Haltepunkt-Fehlerereignisse|Gesendet, wenn ein Haltepunkt gebunden ist oder wenn ein Haltepunkt kann nicht gebunden werden und ein Fehler zurückgegeben.|
-|Ungebundene Haltepunktereignisse|Treten Sie auf, wenn Sie ein gebundener Haltepunkt aus Code hebt die Bindung.|
-|Ereignisse können beendet werden.|Gesendet, um die IDE zu bestimmen, ob der Benutzer an einem angegebenen Punkt im Code beenden möchten.|
-|Haltepunktereignisse|Treten Sie auf, wenn ein Code oder Daten-Haltepunkt erreicht wird.|
-|Dokument-Text-Ereignisse|Treten Sie auf, wenn der Text in einem Dokument geändert wird. Diese Ereignisse werden nicht gesendet, über die `IDebugEventCallBack2::Event` Methode.|
-|-Engine-Ereignisse erstellen.|Gesendet, wenn ein Modul zum ersten Mal erstellt wird.|
-|Punktereignisse Eintrag|Gesendet, wenn die zu debuggende Programm wird der Initialisierungscode ausgeführt und der Einstiegspunkt für die ersten Benutzer erreicht.|
-|Ausnahmeereignisse|Gesendet, wenn ein ausgeführtes Programm eine Ausnahme trifft.|
-|Ereignisse durch Abschluss der Ausdruck Auswertung|Gesendet, wenn asynchrone ausdrucksauswertung abgeschlossen ist.|
-|Symbol-Events suchen|Gesendet, wenn die DE der Benutzer zum Suchen von Symbolen für ein Modul aufgefordert muss.|
-|Laden Sie die Ereignisse zum Abschluss|Gesendet von nur auf, wenn die Last zu startendes Programm abgeschlossen ist und der erste Code in das Programm ausgeführt wird.|
-|Nachrichtenereignisse|Gesendet, wenn Nachrichten an Benutzer gesendet werden.|
-|Ladeereignisse für Module|Gesendet, wenn ein neues Modul geladen oder entladen wird.|
-|Ausgabeereignisse-Zeichenfolge|Gesendet, wenn das Programm-Debug-Ausgabe schreibt.|
-|Erstellen und Zerstören von Ereignissen|Gesendet, um die Erstellung oder Zerstörung von Prozessen, Programme, Eigenschaften, Sitzungen und Threads anzukündigen, damit Visual Studio-IDE den Status der gedebuggten Programme mitverfolgen können.|
-|Ereignisse zum Abschluss von Schritt|Gesendet, wenn ein Schritt abgeschlossen ist.|
-|Thread-Name-Change-Ereignissen|Gesendet, wenn der Benutzer den Namen eines Threads ändert.|
-|Ereignisse des Programms Namen ändern|Gesendet, wenn der Benutzer den Namen eines Programms ändert.|
+|Dokumentereignisse aktivieren|Tritt auf, wenn das Debugmodul (DE) möchte, dass die IDE ein Dokument öffnet oder in den Vordergrund stellt.|
+|Haltepunktgebundene oder Haltepunktfehlerereignisse|Wird gesendet, wenn ein Haltepunkt gebunden ist oder wenn ein Haltepunkt nicht binden kann und ein Fehler zurückgegeben wird.|
+|Ungebundene Ereignisse am Haltepunkt|Tritt auf, wenn ein gebundener Haltepunkt vom Code entbindet.|
+|Kann Ereignisse stoppen|Wird an die IDE gesendet, um zu bestimmen, ob der Benutzer an einem angegebenen Codepunkt anhalten möchte.|
+|Breakpoint-Ereignisse|Tritt auf, wenn ein Code oder Datenhaltepunkt getroffen wird.|
+|Dokumenttextereignisse|Tritt auf, wenn Text in einem Dokument geändert wird. Diese Ereignisse werden nicht `IDebugEventCallBack2::Event` über die Methode gesendet.|
+|Engine erstellen Ereignisse|Wird gesendet, wenn ein Modul zum ersten Mal erstellt wird.|
+|Einstiegspunktereignisse|Gesendet, wenn das zu debuggende Programm seinen Initialisierungscode ausgeführt hat und den ersten Benutzereinstiegspunkt erreicht hat.|
+|Ausnahmeereignisse|Wird gesendet, wenn ein laufendes Programm auf eine Ausnahme trifft.|
+|Ausdrucksauswertung kompletter Ereignisse|Wird gesendet, wenn die Asynchronexpressionsauswertung abgeschlossen ist.|
+|Symbolereignisse suchen|Wird gesendet, wenn die DE den Benutzer bitten muss, Symbole für ein Modul zu finden.|
+|Laden vollständiger Ereignisse|Wird nur gesendet, wenn das anfängliche Laden des Programms abgeschlossen ist und der erste Code im Programm ausgeführt werden soll.|
+|Nachrichtenereignisse|Wird gesendet, wenn Nachrichten an Benutzer gesendet werden.|
+|Modulladeereignisse|Wird gesendet, wenn ein neues Modul geladen oder entladen wird.|
+|Ausgabe von Zeichenfolgenereignissen|Wird gesendet, wenn das Programm die Debugausgabe schreibt.|
+|Erstellen und Zerstören von Ereignissen|Wird gesendet, um die Erstellung oder Zerstörung von Prozessen, Programmen, Eigenschaften, Sitzungen und Threads anzukündigen, damit die Visual Studio-IDE den Status der zu debuggenden Programme nachverfolgen kann.|
+|Schritt für vollständige Ereignisse|Wird gesendet, wenn ein Schritt abgeschlossen ist.|
+|Threadnamensänderungsereignisse|Wird gesendet, wenn der Benutzer den Namen eines Threads ändert.|
+|Programmnamensänderungsereignisse|Wird gesendet, wenn der Benutzer den Namen eines Programms ändert.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)

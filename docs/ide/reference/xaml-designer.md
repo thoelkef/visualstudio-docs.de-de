@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585612"
 ---
 # <a name="xaml-designer-options-page"></a>Seite „Optionen“ im XAML-Designer
@@ -22,7 +22,7 @@ ms.locfileid: "75585612"
 Sie verwenden die Seite „Optionen“ im **XAML-Designer**, um anzugeben, wie Elemente und Attribute in XAML-Dokumenten formatiert werden. Wählen Sie zum Öffnen dieser Seite im Menü **Extras** den Befehl **Optionen** aus. Für den Zugriff auf die Eigenschaftenseite **XAML-Designer** wählen Sie den Knoten **XAML-Designer** aus. Einstellungen für den XAML-Designer werden angewendet, wenn Sie das Dokument öffnen. Wenn Sie die Einstellungen also ändern, müssen Sie Visual Studio schließen und wieder öffnen, damit die Änderungen angezeigt werden.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../environment-settings.md#reset-settings).
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Um Ihre Einstellungen zu ändern, wählen Sie **Einstellungen importieren und exportieren** im Menü **Extras** aus. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>XAML-Designer aktivieren
 
@@ -37,7 +37,7 @@ Mit dieser Einstellung wird gesteuert, ob die Entwurfsansicht angezeigt wird, we
 |||
 |-|-|
 |**Quellansicht**|Gibt an, ob nur die XAML-Quelle in der XAML-Ansicht angezeigt wird. Dies ist beim Laden großer Dokumente hilfreich.|
-|**Entwurfsansicht**|Gibt an, ob nur der visuelle XAML-Designer in der XAML-Ansicht angezeigt wird.|
+|**Design View (Entwurfsansicht)**|Gibt an, ob nur der visuelle XAML-Designer in der XAML-Ansicht angezeigt wird.|
 |**Geteilte Ansicht**|Gibt an, ob visueller XAML-Designer und XAML-Quelle in der XAML-Ansicht nebeneinander angezeigt werden (Ort basiert auf der Einstellung **Ausrichtung teilen**).|
 
 ## <a name="split-orientation"></a>Ausrichtung teilen
@@ -106,7 +106,7 @@ Mit diesen Einstellungen wird bestimmt, ob die Effekte gerendert werden, wenn XA
 |**Rendereffekte**|Gibt an, ob Effekte gerendert werden, wenn XAML-Dateien im XAML-Designer mit Blend bearbeitet werden.|
 |**Zoomschwellenwert**|Gibt den Prozentsatz für den Zoomfaktor an, mit dem Effekte gerendert werden, wenn das Kontrollkästchen **Effekte rendern** aktiviert ist. Wenn Sie über diese Einstellung hinaus vergrößern, können Effekte im XAML-Designer nicht mehr gerendert werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [Exemplarische Vorgehensweise: Walkthrough: My first WPF desktop application (Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung)](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

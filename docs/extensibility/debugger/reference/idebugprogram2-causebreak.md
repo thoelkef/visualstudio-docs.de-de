@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Microsoft-Dokumentation
+title: IDebugProgram2::UrsacheBreak | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a01b5982b4f747bd70c3a35bc0b7191bb54cd21b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e96db32d7ba5a01f89530623c949500a265cdb60
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311357"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723096"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
-Fordert an, dass das Programm die Ausführung der nächsten beenden Zeitpunkt eins seiner Threads Versuche ausgeführt.
+Fordert an, dass das Programm die Ausführung beendet, wenn einer seiner Threads das nächste Mal ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,13 +38,13 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Ein [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) Ereignis wird immer dann gesendet, wenn Sie als Nächstes versucht das Programm, um Code auszuführen, nachdem diese Methode aufgerufen wird.
+## <a name="remarks"></a>Bemerkungen
+ Ein [IDebugBreakEvent2-Ereignis](../../../extensibility/debugger/reference/idebugbreakevent2.md) wird gesendet, wenn das Programm das nächste Programm versucht, Code auszuführen, nachdem diese Methode aufgerufen wurde.
 
- Diese Methode ist asynchron, darin, dass die Methode sofort zurückgegeben, ohne dass unbedingt zum Beenden des Programms.
+ Diese Methode ist insofern asynchron, als die Methode sofort zurückkehrt, ohne notwendigerweise darauf zu warten, dass das Programm beendet wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

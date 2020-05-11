@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593212"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Testmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
@@ -38,7 +38,7 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
-|**Angeben der Testmischung für den Auslastungstest:** Wenn Sie einen Auslastungstest erstellen, geben Sie im **Assistenten für neuen Auslastungstest** Einstellungen für den Auslastungstest an. Im **Assistent für neuen Auslastungstest** wählen Sie vorhandene Web- und Komponententests aus, die dem Anfangsszenario hinzugefügt werden sollen. Nachdem Sie dem Szenario Tests hinzugefügt haben, geben Sie die Testmischung für das Szenario an.<br /><br /> Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.|-   [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Angeben der Testmischung für den Auslastungstest:** Wenn Sie einen Auslastungstest erstellen, geben Sie im **Assistent für neuen Auslastungstest** Einstellungen für den Auslastungstest an. Im **Assistent für neuen Auslastungstest** wählen Sie vorhandene Web- und Komponententests aus, die dem Anfangsszenario hinzugefügt werden sollen. Nachdem Sie dem Szenario Tests hinzugefügt haben, geben Sie die Testmischung für das Szenario an.<br /><br /> Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.|-   [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Bearbeiten des Testmischungsmodells:** Sie können ein Auslastungstestszenario mit dem **Auslastungstest-Editor** ändern, um eines der Testmischungsmodelle zu verwenden.||
 |**Konfigurieren der Geschwindigkeitsverzögerung für ein Testmischungsmodell nach Benutzergeschwindigkeit:** Wenn das Auslastungstestszenario für die Verwendung eines Testmischungsmodells konfiguriert ist und die Option **Auf Grundlage der Benutzergeschwindigkeit** aktiviert ist, können Sie die Verteilung der Geschwindigkeitsverzögerung konfigurieren.|-   [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
@@ -77,9 +77,9 @@ Mit dem **Auslastungstest-Editor** können Sie das Testmischungsmodell in einem 
 
      Im Fenster **Eigenschaften** wird das neue Testmischungsmodell für die Eigenschaft **Testmischungstyp** angezeigt.
 
-9. Klicken Sie nach dem Ändern der Eigenschaft auf im Menü **Datei** auf **Speichern**. Anschließend können Sie den Auslastungstest mithilfe des neuen Werts für **Testmischungstyp** ausführen.
+9. Klicken Sie nach dem Ändern der Eigenschaft auf **Speichern** im Menü **Datei**. Anschließend können Sie den Auslastungstest mithilfe des neuen Werts für **Testmischungstyp** ausführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596514"
 ---
 # <a name="class-designer-errors"></a>Fehler im Klassen-Designer
@@ -46,6 +46,6 @@ Hilfe zu anderen Fehlern und Warnungen finden Sie in den folgenden Ressourcen:
 - [Arbeiten mit Visual C++-Code:](working-with-visual-cpp-code.md) Enthält Informationen zur Problembehandlung in Bezug auf das Anzeigen von C++ in einem Klassendiagramm.
 - [Forum des Visual Studio-Klassen-Designers:](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) Ein Forum für Fragen zum **Klassen-Designer**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Entwerfen und Anzeigen von Klassen und Typen](designing-and-viewing-classes-and-types.md)

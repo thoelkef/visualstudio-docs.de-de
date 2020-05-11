@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589070"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
@@ -29,7 +29,7 @@ Zwei Typen von Auslastungstestberichten sind verfügbar:
 - **Trend:** Eine Trendanalyse kann für zwei oder mehr Auslastungstestergebnisse generiert werden. Die Ergebnisse werden mit Liniendiagrammen angezeigt, doch die Daten sind in PivotTables enthalten.
 
 > [!TIP]
-> Sie können auch manuell Microsoft Word-Berichte erstellen, indem Sie Daten aus der Zusammenfassungsansicht, Diagrammansicht und Tabellenansicht kopieren und einfügen. Weitere Informationen finden Sie unter [How to: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Sie können auch manuell Microsoft Word-Berichte erstellen, indem Sie Daten aus der Zusammenfassungsansicht, Diagrammansicht und Tabellenansicht kopieren und einfügen. Weitere Informationen finden Sie unter [Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Beide Berichte können verwendet werden, um Leistungsdaten für Projektbeteiligte freizugeben, und liefern Informationen dazu, ob die Gesamtleistung und Integrität des Systems besser oder schlechter wird.
 
@@ -62,7 +62,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
 
       Microsoft Excel wird geöffnet, und der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 
-   **ODER**
+   **OR**
 
    1. Öffnen Sie Microsoft Excel, wählen Sie die Registerkarte **Auslastungstest** im **Office**-Menüband aus, und klicken Sie anschließend auf **Auslastungstestbericht**.
 
@@ -102,7 +102,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
    - **Fehlervergleich:** Vergleicht die bei den zwei Testläufen gefundenen Fehlertypen und die Anzahl von Vorkommen.
 
      > [!TIP]
-     > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: Ziel und Berichtsname. Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter "Indikatorensätze verwalten" die Eigenschaft "Computertags" in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
+     > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: "Ziel" und "Berichtsname". Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter "Indikatorensätze verwalten" die Eigenschaft "Computertags" in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>So generieren Sie mit Excel Trendberichte für Auslastungstests
 
@@ -117,7 +117,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
 
       Microsoft Excel wird geöffnet, und der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 
-   **ODER**
+   **OR**
 
    1. Öffnen Sie Microsoft Excel, wählen Sie die Registerkarte **Auslastungstest** im **Office**-Menüband aus, und klicken Sie anschließend auf **Auslastungstestbericht**.
 
@@ -142,12 +142,12 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
 9. Der Bericht wird mit einem Inhaltsverzeichnis generiert, das Links zu den verschiedenen Excel-Arbeitsmappenregisterkarten im Bericht enthält. Die Links basieren auf den für den Trendbericht ausgewählten Indikatoren. Wenn Sie in Schritt 7 z. B. die Standardindikatoren übernommen haben, werden Daten für jeden der in Schritt 7 aufgeführten Indikatoren generiert und auf separaten Registerkarten in Excel dargestellt. Die für die einzelnen Indikatoren generierten Daten werden in Trenddiagrammen dargestellt.
 
    > [!TIP]
-   > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: Ziel und Berichtsname. Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter "Indikatorensätze verwalten" die Eigenschaft "Computertags" in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
+   > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: "Ziel" und "Berichtsname". Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter "Indikatorensätze verwalten" die Eigenschaft "Computertags" in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
 
 ## <a name="net-security"></a>.NET-Sicherheit
 
 Auslastungstestergebnisse und -berichte enthalten potenziell sicherheitsrelevante Informationen, die für einen Angriff auf Ihren Computer oder Ihr Netzwerk verwendet werden können. Auslastungstestergebnisse und -berichte enthalten Computernamen und Verbindungszeichenfolgen. Seien Sie sich dessen bewusst, wenn Sie Auslastungstestberichte für andere freigeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md)

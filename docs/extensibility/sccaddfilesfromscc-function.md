@@ -1,5 +1,5 @@
 ---
-title: SccAddFilesFromSCC-Funktion | Microsoft-Dokumentation
+title: SccAddFilesFromSCC-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe58c3eef4b09fccb5cd21b714e5987ae1e08aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333969"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701291"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC-Funktion
-Diese Funktion hinzugefügt den aktuell geöffneten Projekt eine Liste von Dateien aus der quellcodeverwaltung.
+Diese Funktion fügt dem aktuell geöffneten Projekt eine Liste von Dateien aus der Quellcodeverwaltung hinzu.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,52 +39,52 @@ SCCRTN SccAddFilesFromSCC(
 ```
 
 ### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+[in] Der Kontextzeiger für die Quellcodeverwaltung.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
 
  lpUser
 
-[in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich des null-Abschlusszeichens).
+[in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich des Null-Terminators).
 
  lpAuxProjPath
 
-[in, out] Zusätzliche Zeichenfolge, die zur Identifizierung des Projekts (bis zu `SCC_PRJPATH_`Größe, einschließlich des null-Abschlusszeichens).
+[in, out] Hilfszeichenfolge zur Identifizierung des `SCC_PRJPATH_`Projekts (bis zu SIZE, einschließlich des Nullabschlusses).
 
  cFiles
 
-[in] Anzahl der Dateien, die vom `lpFilePaths`.
+[in] Anzahl der von `lpFilePaths`angegebenen Dateien.
 
  lpFilePaths
 
-[in, out] Array von Dateinamen, die dem aktuellen Projekt hinzufügen.
+[in, out] Array von Dateinamen, die dem aktuellen Projekt hinzugefügt werden sollen.
 
  lpDestination
 
-[in] Der Zielpfad, wo sind die Dateien geschrieben werden.
+[in] Der Zielpfad, in dem die Dateien geschrieben werden sollen.
 
  lpComment
 
-[in] Der Kommentar, der auf jede der hinzugefügten Dateien angewendet werden.
+[in] Der Kommentar, der auf jede der hinzugefügten Dateien angewendet werden soll.
 
- pbResults
+ pbErgebnisse
 
-[in, out] Array von Flags, die auf Erfolg (ungleich NULL oder "true") festgelegt ist oder Fehler (0 (null) oder "false") für jede Datei (Größe des Arrays muss mindestens `cFiles` lang).
+[in, out] Array von Flags, die so eingestellt sind, dass sie auf Erfolg (ungleich Null oder TRUE) `cFiles` oder Fehler (Null oder FALSE) für jede Datei hinweisen (die Größe des Arrays muss mindestens lang sein).
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_E_PROJNOTOPEN|Projekt kann nicht geöffnet werden.|
-|SCC_E_OPNOTPERFORMED|Es ist keine Verbindung zum gleichen Projekt gemäß `lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|Benutzer ist nicht autorisiert, auf die Datenbank zu aktualisieren.|
-|SCC_E_NONSPECIFICERROR|Unbekannter Fehler.|
+|SCC_E_PROJNOTOPEN|Das Projekt ist nicht geöffnet.|
+|SCC_E_OPNOTPERFORMED|Die Verbindung ist nicht mit demselben Projekt verbunden, wie es von`lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, die Datenbank zu aktualisieren.|
+|SCC_E_NONSPECIFICERROR|Unknown error. (Unbekannter Fehler.)|
 |SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)

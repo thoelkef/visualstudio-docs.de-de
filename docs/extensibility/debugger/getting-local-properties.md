@@ -1,5 +1,5 @@
 ---
-title: Abrufen von lokalen Eigenschaften | Microsoft-Dokumentation
+title: Abrufen lokaler Eigenschaften | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local properties
 - expression evaluation, local properties
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c10cd5ebfe1efbf6657b9925c4c27cce33591524
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338254"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738619"
 ---
-# <a name="get-local-properties"></a>Abrufen von lokalen Eigenschaften
+# <a name="get-local-properties"></a>Lokale Eigenschaften abrufen
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Visual Studio-Aufrufe [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) zum Abrufen einer [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) -Objekt, das Zugriff auf alle lokalen anzuzeigenden bietet die **"lokal"** Fenster. Visual Studio ruft dann [Weiter](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) zum Abrufen der Informationen für jede lokale angezeigt werden soll. In diesem Beispiel die Klasse `CEnumPropertyInfo` implementiert die `IEnumDebugPropertyInfo2` Schnittstelle.
+Visual Studio ruft [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) auf, um ein [IEnumDebugPropertyInfo2-Objekt](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) abzuerhalten, das Zugriff auf alle Lokalen bietet, die im **Locals-Fenster** angezeigt werden sollen. Visual Studio ruft dann [Next](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) auf, um die Informationen abzuzeigen, die für jeden Lokalen angezeigt werden sollen. In diesem Beispiel `CEnumPropertyInfo` implementiert die `IEnumDebugPropertyInfo2` Klasse die Schnittstelle.
 
-Diese Implementierung der `IEnumDebugPropertyInfo2::Next` führt die folgenden Aufgaben:
+Diese Implementierung `IEnumDebugPropertyInfo2::Next` von führt die folgenden Aufgaben aus:
 
-1. Löscht das Array, an dem die Informationen gespeichert werden.
+1. Löscht das Array, in dem die Informationen gespeichert werden sollen.
 
-2. Aufrufe [Weiter](../../extensibility/debugger/reference/ienumdebugfields-next.md) für jede lokale, speichern Sie das zurückgegebene [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) im Array zurückgegeben werden. Die [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) Objekt wurde angegeben. wenn dies `CEnumPropertyInfo` Klasse instanziiert wurde.
+2. Ruft [Next](../../extensibility/debugger/reference/ienumdebugfields-next.md) für jeden Lokalen auf und speichert die zurückgegebenen [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) im Array, das zurückgegeben werden soll. Das [IEnumDebugFields-Objekt](../../extensibility/debugger/reference/ienumdebugfields.md) wurde `CEnumPropertyInfo` bereitgestellt, als diese Klasse instanziiert wurde.
 
 ## <a name="managed-code"></a>Verwalteter Code
-Dieses Beispiel zeigt eine Implementierung von `IEnumDebugPropertyInfo2::EnumChildren` für eine Methode, die lokal in verwaltetem Code.
+Dieses Beispiel zeigt `IEnumDebugPropertyInfo2::EnumChildren` eine Implementierung von für die Locals einer Methode in verwaltetem Code.
 
 ```csharp
 namespace EEMC
@@ -94,8 +94,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>Nicht verwalteter code
- Dieses Beispiel zeigt eine Implementierung von `IEnumDebugPropertyInfo2::EnumChildren` für eine Methode "lokal" in nicht verwaltetem Code.
+## <a name="unmanaged-code"></a>Nicht verwalteter Code
+ Dieses Beispiel zeigt `IEnumDebugPropertyInfo2::EnumChildren` eine Implementierung für die Locals einer Methode in nicht verwaltetem Code.
 
 ```cpp
 STDMETHODIMP CEnumPropertyInfo::Next(
@@ -156,6 +156,6 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Beispielimplementierung von lokalen Elementen](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [Auflisten von lokalen Elementen](../../extensibility/debugger/enumerating-locals.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Beispielimplementierung von Locals](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Aufzählen von Einheimischen](../../extensibility/debugger/enumerating-locals.md)

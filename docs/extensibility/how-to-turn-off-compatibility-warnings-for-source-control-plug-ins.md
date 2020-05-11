@@ -1,45 +1,45 @@
 ---
-title: Deaktivieren von Kompatibilitätswarnungen für Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
+title: Deaktivieren von Kompatibilitätswarnungen für Quellcodeverwaltungs-Plug-Ins | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dc8edcb6ee10be8b020424d8f8c247770a98f27
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324806"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710728"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Vorgehensweise: Deaktivieren von kompatibilitätswarnungen für Quellcodeverwaltungs-Plug-ins
-Ein Benutzer möglicherweise mehrere kompatibilitätswarnungen angezeigt, wenn es sich bei Verwendung der quellcodeverwaltung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Die Warnungen dargestellt richten sich nach den Funktionen von das Quellcodeverwaltungs-Plug-in und können wie folgt deaktiviert werden.
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Gewusst wie: Deaktivieren von Kompatibilitätswarnungen für Quellcodeverwaltungs-Plug-Ins
+Ein Benutzer kann mehrere Kompatibilitätswarnungen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]sehen, wenn die Quellcodeverwaltung in verwendet wird. Die angezeigten Warnungen hängen von den Funktionen des Quellcodeverwaltungs-Plug-Ins ab und können wie hier beschrieben deaktiviert werden.
 
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Um die Warnung zu deaktivieren: "So stellen Sie sicher die optimale quellcodeverwaltung mit Visual Studio zu"
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>So deaktivieren Sie die Warnung: "Um eine optimale Quellcodeverwaltungsintegration mit Visual Studio sicherzustellen"
 
-- Legen Sie den folgenden Registrierungseintrag (den Wert hinzufügen, falls erforderlich):
+- Legen Sie den folgenden Registrierungseintrag fest (bei Bedarf den Wert hinzufügen):
 
-   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001**
+   **HKEY_CURRENT_USER-Software-Microsoft-VisualStudio-8.0-SourceControl-DontDisplayCheckDotNETCompatible = dword:00000001**
 
-   Diese Warnung wird angezeigt, für alle nicht-[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] -Plug-ins.
+   Diese Warnung wird für[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] alle Nicht-Plug-Ins angezeigt.
 
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Um die Warnung zu deaktivieren: "Die installierte quellcodeverwaltung unterstützt nicht alle Funktionen, die"
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>So deaktivieren Sie die Warnung: "Der installierte Quellcodeverwaltungsanbieter unterstützt nicht alle Funktionen"
 
-- Legen Sie die folgenden zwei Werte (die Werte hinzufügen, falls erforderlich):
+- Legen Sie die folgenden beiden Registrierungswerte fest (bei Bedarf werden die Werte hinzugefügt):
 
-     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000**
+     **HKEY_CURRENT_USER-Software-Microsoft-VisualStudio-8.0-SourceControl-WarnedOldMSSCCIProvider = dword:00000000**
 
-    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword:00000001**
+    **HKEY_CURRENT_USER-Software-Microsoft-VisualStudio-8.0-SourceControl-UseOldSCC = dword:00000001**
 
-     Diese Warnung wird angezeigt, wenn das Quellcodeverwaltungs-Plug-in explizit Eintrittsinvarianz für mehrere Projekte nicht unterstützt (d. h., wenn sie in nur ein Datei- und Projektinformationen zu einem Zeitpunkt überprüfen kann).
+     Diese Warnung wird angezeigt, wenn das Quellcodeverwaltungs-Plug-In die Wiedereintrittsfähigkeit für mehrere Projekte nicht explizit unterstützt (d. h., wenn es jeweils nur eine Datei und ein Projekt einchecken kann).
 
-     Es wird empfohlen, die Unterstützung von Eintrittsinvarianz (`SCC_CAP_REENTRANT` Funktion); Dies wird daher diese Warnung entfernen. Allerdings ist diese Unterstützung nicht möglich, können diese Registrierungseinträge festgelegt werden.
+     Es ist am besten, Wiedereintritt zu unterstützen (Fähigkeit);`SCC_CAP_REENTRANT` Dadurch wird diese Warnung entfernt. Wenn diese Unterstützung jedoch nicht möglich ist, können diese Registrierungseinträge festgelegt werden.
 
-## <a name="see-also"></a>Siehe auch
-- [Funktionsflags](../extensibility/capability-flags.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Fähigkeitsflags](../extensibility/capability-flags.md)

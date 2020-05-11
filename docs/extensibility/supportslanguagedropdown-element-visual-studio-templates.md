@@ -1,5 +1,5 @@
 ---
-title: SupportsLanguageDropDown-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: UnterstütztLanguageDropDown-Element (Visual Studio-Vorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b5727bd9aa09b05fc95d8f9f9b7913a6046b81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1230b493fe746a272cf4ca4cffe9d197afd8ba1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719416"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699467"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown-Element (Visual Studio-Vorlagen)
-Gibt an, ob die Webelement Vorlage für mehrere Sprachen identisch ist und ob die **sprach** Option im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
+Gibt an, ob die Webelementvorlage für mehrere Sprachen identisch ist und ob die Option **Sprache** im Dialogfeld **Neues Element** hinzufügen aktiviert ist.
 
- \<VSTemplate > \<TemplateData > \<SupportsLanguageDropDown >
+ \<VSTemplate \<> TemplateData> \<unterstütztLanguageDropDown>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,31 +36,31 @@ Gibt an, ob die Webelement Vorlage für mehrere Sprachen identisch ist und ob di
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss entweder `true` oder `false` sein und angibt, ob die **sprach** Option im Dialogfeld **Neues Element hinzufügen** verfügbar ist.
+ Der Text muss `true` `false`entweder oder sein, was angibt, ob die Option **Sprache** im Dialogfeld **Neues Element** hinzufügen verfügbar ist.
 
-## <a name="remarks"></a>Hinweise
- `SupportsLanguageDropDown` ist ein optionales Element. Der Standardwert ist `false`sein.
+## <a name="remarks"></a>Bemerkungen
+ `SupportsLanguageDropDown` ist ein optionales Element. Der Standardwert ist `false`.
 
- Das `SupportsLanguageDropDown`-Element ist nur für Webelement Vorlagen verfügbar.
+ Das `SupportsLanguageDropDown` Element ist nur für Webelementvorlagen verfügbar.
 
- Wenn der Wert für dieses Element auf `true` festgelegt ist, ist die Element Vorlage für alle Programmiersprachen identisch, und die **sprach** Option ist im Dialogfeld **Neues Element hinzufügen** aktiviert. Mit dieser Option können Sie die Programmiersprache des neuen Elements auswählen, das Sie aus der Vorlage erstellen möchten.
+ Wenn der Wert für dieses `true`Element auf festgelegt ist, ist die Elementvorlage für alle Programmiersprachen identisch, und die Option **Sprache** ist im Dialogfeld **Neues Element hinzufügen** aktiviert. Mit dieser Option können Sie die Programmiersprache des neuen Elements auswählen, das Sie aus der Vorlage erstellen möchten.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird angegeben, dass die Dropdown Option **Sprache** angezeigt werden soll.
+ Im folgenden Beispiel wird angegeben, dass die Dropdown-Option **Sprache** angezeigt wird.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -84,6 +84,6 @@ Gibt an, ob die Webelement Vorlage für mehrere Sprachen identisch ist und ob di
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

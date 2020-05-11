@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Microsoft-Dokumentation
+title: IDebugExpressionContext2::GetName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::GetName
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d53d7f497700d4e23587927adc0c2cee37824daa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 500d5c1788e837a27b4affada50ecc59db122e8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325873"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729667"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Ruft den Namen des dem Auswertungskontext ab.
+Ruft den Namen des Auswertungskontexts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,17 +41,17 @@ int GetName( 
 
 ## <a name="parameters"></a>Parameter
 `pbstrName`\
-[out] Gibt den Namen des dem Auswertungskontext zurück.
+[out] Gibt den Namen des Auswertungskontexts zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Der Name ist die Beschreibung dieses Kontexts für die Auswertung. Es ist in der Regel etwas, das von einer ausdrucksauswertung analysiert werden können, die auf diese genaue Evaluierungskontext verweist. Beispielsweise ist in C++ der Name wie folgt:
+## <a name="remarks"></a>Bemerkungen
+ Der Name ist die Beschreibung dieses Evaluierungskontexts. Es ist in der Regel etwas, das von einem Ausdrucksevaluator analysiert werden kann, die auf diesen genauen Auswertungskontext verweist. In C++ lautet der Name beispielsweise wie folgt:
 
 ```
 "{ function-name, source-file-name, module-file-name }"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)

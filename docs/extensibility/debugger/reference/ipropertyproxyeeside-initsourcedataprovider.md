@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider | Microsoft-Dokumentation
+title: iPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 725ac07c85dd31edaf97200a7a8668ff3efd9ab9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329523"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714911"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-Initialisiert die Quelldaten für dieses Objekt und gibt ein Objekt, das die ursprünglichen Daten enthält.
+Initialisiert die Quelldaten für dieses Objekt und gibt ein Objekt zurück, das die ursprünglichen Daten enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int InitSourceDataProvider(
 
 ## <a name="parameters"></a>Parameter
 `dataOut`\
-[out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Objekt
+[out] Gibt ein [IEEDataStorage-Objekt](../../../extensibility/debugger/reference/ieedatastorage.md) zurück
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode führt, was ist erforderlich, ein Objekt zu initialisieren, damit es zurückgeben kann ein [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Schnittstelle für die Daten des Objekts. Dadurch können Daten anzeigen und, wenn zulässig, geändert werden, indem eine typschnellansicht des Objekts.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode führt alles Aus, was erforderlich ist, um ein Objekt zu initialisieren, damit es eine [IEEDataStorage-Schnittstelle](../../../extensibility/debugger/reference/ieedatastorage.md) für die Daten des Objekts zurückgeben kann. Dadurch können die Daten des Objekts angezeigt und, falls zulässig, durch eine Typvisualisierung geändert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

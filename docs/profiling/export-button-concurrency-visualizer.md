@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969900"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Schaltfläche „Exportieren“ (Parallelitätsschnellansicht)
 Mit der Schaltfläche **Exportieren** können Sie die Aufrufliste für Ihre Unterlagen oder zur Verwendung mit einem anderen Tool wie Microsoft Excel als *CSV*-Datei exportieren.
 
-## <a name="see-also"></a>Siehe auch
-- [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

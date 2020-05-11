@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595708"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255564"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenparameter
 
@@ -72,6 +72,7 @@ Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebe
 |[/LCID oder /L](lcid-devenv-exe.md)|Legt die Standardsprache für die IDE fest. Wenn die angegebene Sprache in der Installation von Visual Studio nicht enthalten ist, wird diese Einstellung ignoriert.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Startet Visual Studio und protokolliert sämtliche Aktivitäten in der Protokolldatei.<br /><br /> `devenv /log mylogfile.xml`|
 |[/NoSplash](nosplash-devenv-exe.md)|Öffnet die IDE ohne Anzeige der Begrüßungsbildschirms.<br /><br /> `devenv /nosplash File1 File2`|
+|[/ResetSettings](resetsettings-devenv-exe.md)|Stellt die Visual Studio-Standardeinstellungen wieder her. Setzt die Einstellungen optional auf die der angegebenen `.vssettings`-Datei zurück.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Run oder /R](run-devenv-exe.md)|Kompiliert die angegebene Projektmappe und führt sie aus.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Kompiliert die angegebene Projektmappe und führt sie aus, minimiert die IDE bei der Ausführung der Projektmappe und schließt die IDE nach beendeter Ausführung der Projektmappe.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Startet Visual Studio im abgesicherten Modus. Dieser Schalter lädt nur die Standardumgebung, die Standarddienste und die im Lieferumfang enthaltenen Versionen von Drittanbieterpaketen.<br /><br /> Der Schalter verwendet keine Argumente.|
@@ -89,7 +90,6 @@ Durch die folgenden Befehlszeilenschalter wird die IDE nicht angezeigt.
 |[/Project](project-devenv-exe.md)|Das zu erstellende, bereinigende oder bereitzustellende Projekt. Dieser Schalter kann nur verwendet werden, wenn auch der Schalter `/Build`, `/Rebuild`, `/Clean`, oder `/Deploy` angegeben wurde.<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|Gibt die zu erstellende oder bereitzustellende Projektkonfiguration an. Dieser Schalter kann nur verwendet werden, wenn auch der Schalter `/Project` angegeben wurde.<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
 |[/Rebuild](rebuild-devenv-exe.md)|Bereinigt die angegebene Projektmappe oder das angegebene Projekt und erstellt diese bzw. dieses entsprechend der Konfiguration der angegebenen Projektmappe durch.<br /><br /> `devenv mysln.sln /rebuild`|
-|[/ResetSettings](resetsettings-devenv-exe.md)|Stellt die Visual Studio-Standardeinstellungen wieder her. Setzt die Einstellungen optional auf die der angegebenen `.vssettings`-Datei zurück.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|Aktualisiert die angegebene Projektmappendatei und alle zugehörigen Projektdateien bzw. die angegebene Projektdatei mit den aktuellen, für diese Dateien gültigen Visual Studio-Formaten.<br /><br /> `devenv mysln.sln /upgrade`|
 
 ## <a name="see-also"></a>Siehe auch

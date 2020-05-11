@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE | Microsoft-Dokumentation
+title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 799b7e67248759987a3e3f9595978fb1a7bbf87d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5a7da1486f0edf52f3f0d96db699f60f24e36827
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317597"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736774"
 ---
-# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
-Gibt den Typ des Hostnamens.
+# <a name="gethostname_type"></a>GETHOSTNAME_TYPE
+Gibt den Typ des Hostnamens an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,16 +49,16 @@ Gibt einen Anzeigenamen des Hosts an.
 `GHN_FILE_NAME`\
 Gibt einen Dateinamen des Hosts an.
 
-## <a name="remarks"></a>Hinweise
-Diese Werte werden übergeben, als Argument an die [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) Methode, um einen Hostnamen in verschiedenen Formaten abzurufen.
+## <a name="remarks"></a>Bemerkungen
+Diese Werte werden als Argument an die [GetHostName-Methode](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) übergeben, um einen Hostnamen in verschiedenen Formaten abzurufen.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

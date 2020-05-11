@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Microsoft-Dokumentation
+title: IDebugBinder3::GetTypeArguments | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d301dbb99e88ba4552ad59d9116f64dc032371
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330744"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735698"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-Diese Methode ruft eine Liste der Argumenttypen, die diesem Objekt zugeordneten ab.
+Diese Methode ruft eine Liste der Diesem Objekt zugeordneten Argumenttypen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,23 +47,23 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parameter
 `skip`\
-[in] Die Anzahl von Feldern, die vor dem Abrufen von Argumenttypen übersprungen werden.
+[in] Anzahl der Felder, die vor dem Abrufen von Argumenttypen übersprungen werden sollen.
 
 `count`\
-[in] Die Anzahl der zurückzugebenden Felder Argument (gibt auch die Größe der an die `ppFields` Array).
+[in] Die Anzahl der zurückzugebenden Argumentfelder (gibt `ppFields` auch die Größe des Arrays an).
 
 `ppFields`\
-[in, out] Ein Array von Feldern, die bei der Rückgabe dieser Methode gefüllt werden.
+[in, out] Ein Array von Feldern, die bei der Rückgabe dieser Methode ausgefüllt werden.
 
 `pFetched`\
-[out] \(optional) Geben Sie die Nummer des Arguments tatsächlich zurückgegebenen Felder.
+[out] \(optional) Die Anzahl der tatsächlich zurückgegebenen Argumenttypfelder.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Anzahl der Argumenttypen erhalten Sie im voraus mit [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+## <a name="remarks"></a>Bemerkungen
+ Die Anzahl der Argumenttypen kann vorher mit [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)abgerufen werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

@@ -1,28 +1,28 @@
 ---
-title: Der Support-Website | Microsoft-Dokumentation
+title: Website-Support | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9f6e287a2cd91b0a5eb0d04130627faa787ccac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323186"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703444"
 ---
 # <a name="web-site-support"></a>Websiteunterstützung
-Ein Website-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum die Webanwendungen. Ein Websiteprojekt generiert eine ausführbare Datei für jede Webseite, die Code verknüpft ist. Weitere ausführbare Dateien werden aus der Quellcodedateien im Ordner "kann" generiert.
+Ein Websiteprojektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte wiederum erstellen Webanwendungen. Ein Websiteprojekt generiert eine ausführbare Datei für jede Webseite mit zugeordnetem Code. Zusätzliche ausführbare Dateien werden aus den Quellcodedateien im Ordner /App_Code generiert.
 
- Website-Projektsystemen sind durch Hinzufügen von Vorlagen und die Registrierungsattribute auf einem vorhandenen Projektsystem erstellt. Eines dieser Attribute wählt den IntelliSense-Anbieter für die Sprache aus. Die IntelliSense-anbieterimplementierung Verweise verarbeitet und Sprachcompilers, die aufgerufen, wenn eine intelligente Webseite, die nicht zwischengespeichert werden angefordert wird.
+ Websiteprojektsysteme werden erstellt, indem einem vorhandenen Projektsystem Vorlagen und Registrierungsattribute hinzugefügt werden. Eines dieser Attribute wählt den IntelliSense-Anbieter für die Sprache aus. Die IntelliSense-Anbieterimplementierung verarbeitet Verweise und ruft den Sprachcompiler auf, wenn eine intelligente Webseite angefordert wird, die nicht zwischengespeichert wird.
 
- Der Language-Compiler zum Kompilieren von Webseiten verwendet muss registriert werden, mit [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Sie können die [ \<Compiler > Element](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) in einer Datei "Web.config", um den Compiler an, wie im folgenden Beispiel zu registrieren:
+ Der Sprachcompiler, der zum Kompilieren von Webseiten verwendet wird, muss bei [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]registriert sein. Sie können [ \<](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) den Compiler> Element in einer Web.config-Datei verwenden, um den Compiler zu registrieren, wie im folgenden Beispiel:
 
 ```
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
@@ -31,13 +31,13 @@ Ein Website-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webpr
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Vorlagen für die Websiteunterstützung](../../extensibility/internals/web-site-support-templates.md)
 
- Listet die Vorlagen, die Sie verwenden können, um neue Websiteprojekte und zugehörige Elemente zu erstellen.
+ Listet die Vorlagen auf, die Sie zum Erstellen neuer Websiteprojekte und zugehöriger Elemente verwenden können.
 
 - [Attribute der Websiteunterstützung](../../extensibility/internals/web-site-support-attributes.md)
 
- Stellt die Registrierungsattribute, die ein Websiteprojekt zu verbinden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].
+ Stellt die Registrierungsattribute vor, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ein [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]Websiteprojekt mit und verbinden.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Webprojekte](../../extensibility/internals/web-projects.md)
 
- Bietet eine Übersicht über die zwei Arten von Webprojekten, von Websiteprojekten und Webanwendungsprojekten an.
+ Enthält einen Überblick über die beiden Arten von Webprojekten, Websiteprojekte und Webanwendungsprojekte.

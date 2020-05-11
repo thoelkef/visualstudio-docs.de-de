@@ -1,5 +1,5 @@
 ---
-title: SccCloseProject-Funktion | Microsoft-Dokumentation
+title: SccCloseProject-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a5fe721a3b51f4d3f210e7f2d5450e4f4bc6f41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333933"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701051"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject-Funktion
-Diese Funktion schließt ein Projekt, das das Ende einer bestimmten Sitzung markiert.
+Diese Funktion schließt ein Projekt und markiert das Ende einer bestimmten Sitzung.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,22 +31,22 @@ SCCRTN SccCloseProject (
 ```
 
 ### <a name="parameters"></a>Parameter
- PvContext Source Control-Plug-in Context-Struktur.
+ pvContext Die Quellcodeverwaltungs-Plug-In-Kontextstruktur.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Das Projekt wurde erfolgreich geschlossen.|
-|SCC_E_PROJNOTOPEN|Es ist kein Projekt geöffnet.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|
+|SCC_OK|Das Projekt wurde erfolgreich abgeschlossen.|
+|SCC_E_PROJNOTOPEN|Derzeit ist kein Projekt geöffnet.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer darf diesen Vorgang nicht ausführen.|
+|SCC_E_NONSPECIFICERROR|Unspezifischer Fehler.|
 
-## <a name="remarks"></a>Hinweise
- Die [SccOpenProject](../extensibility/sccopenproject-function.md) wird immer aufgerufen, bevor diese Funktion. Ein Aufruf dieser Funktion wird anschließend durch einen Aufruf an die `SccOpenProject` Funktion oder die [SccUninitialize](../extensibility/sccuninitialize-function.md), die beendet die Verbindung mit dem Quellcodeverwaltungssystem vollständig.
+## <a name="remarks"></a>Bemerkungen
+ Das [SccOpenProject](../extensibility/sccopenproject-function.md) wird immer vor dieser Funktion aufgerufen. Auf einen Aufruf dieser Funktion folgt dann `SccOpenProject` ein Aufruf der Funktion oder der [SccUninitialize](../extensibility/sccuninitialize-function.md), die die Verbindung zum Quellcodeverwaltungssystem vollständig beendet.
 
-## <a name="see-also"></a>Siehe auch
-- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

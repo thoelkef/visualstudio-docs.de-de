@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430031"
 ---
 # <a name="step-2-write-and-run-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
-**Vorheriger Schritt: [Erstellen eines neuen Python-Projekts](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Vorheriger Schritt: [Erstellen eines neuen Python-Objekts](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten Sie mit dem *Inhalt* der Dateien, z.B. mit dem Quellcode, in der Regel im *Editor*-Fenster. Der Editor erkennt kontextbezogen den Typ der Datei, die Sie bearbeiten, einschließlich der Programmiersprache (basierend auf der Dateierweiterung) und bietet für diese Sprache angemessene Funktionen, z.B. Syntaxfarben und automatische Vervollständigung mithilfe von IntelliSense.
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2 | Microsoft-Dokumentation
+title: IEnumDebugThreads2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d8f869e519d9500f1ea8f3bb33a3ee098f5cfd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bbbe047c08f8e91264163d028c1b40d94cde97fc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325420"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715087"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
-Diese Schnittstelle Listet die Threads in der aktuellen Debuggingsitzung ausgeführt werden.
+Diese Schnittstelle zählt die Threads auf, die in der aktuellen Debugsitzung ausgeführt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,36 +29,36 @@ IEnumDebugThreads2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die Debug-Engine (DE) implementiert diese Schnittstelle, um eine Liste der Threads in einem Programm darstellen.
+ Das Debugmodul (DE) implementiert diese Schnittstelle, um eine Liste von Threads in einem Programm darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Rufen Sie [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) beim Abrufen der diese Schnittstelle, die eine Liste aller Threads in allen Programmen, die in einem Prozess repräsentieren. Rufen Sie [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) beim Abrufen der diese Schnittstelle, die eine Liste der Threads, die in einem Programm darstellt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Rufen Sie [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) auf, um diese Schnittstelle abzurufen, die eine Liste aller Threads in allen Programmen darstellt, die in einem Prozess ausgeführt werden. Rufen Sie [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) auf, um diese Schnittstelle abzurufen, die eine Liste der Threads darstellt, die in einem Programm ausgeführt werden.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IEnumDebugThreads2`.
+ Die folgende Tabelle zeigt `IEnumDebugThreads2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Nächste](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Ruft eine angegebene Anzahl von Threads in der Enumerationsfolge ab.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Überspringt eine angegebene Anzahl von Threads in einer Enumerationsfolge.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle enthält.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Ruft die Anzahl der Threads in einen Enumerator ab.|
+|[Weiter](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Ruft eine angegebene Anzahl von Threads in der Enumerationssequenz ab.|
+|[Überspringen](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Überspringt eine angegebene Anzahl von Threads in einer Enumerationssequenz.|
+|[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
+|[Klon](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Erstellt einen Enumerator, der denselben Enumerationsstatus wie der aktuelle enthält.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Ruft die Anzahl der Threads in einem Enumerator ab.|
 
-## <a name="remarks"></a>Hinweise
- Visual Studio in der Regel ruft diese Schnittstelle zum Aktualisieren der **Threads** Fenster auch hinsichtlich den ersten Thread, der Liste zu erhalten, um aufzurufen [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Weiter](../../../extensibility/debugger/reference/idebugprocess3-continue.md), und [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md).
+## <a name="remarks"></a>Bemerkungen
+ Visual Studio ruft diese Schnittstelle in der Regel ab, um das **Threads-Fenster** zu aktualisieren und den ersten Thread der Liste zu erhalten, um [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)und [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)aufzurufen.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
-- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 - [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
-- [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
+- [Ausführen](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

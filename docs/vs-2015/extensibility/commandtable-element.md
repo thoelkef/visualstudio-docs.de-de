@@ -1,5 +1,5 @@
 ---
-title: CommandTable-Element | Microsoft-Dokumentation
+title: Commandtable-Element | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,21 +13,21 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bb2b874f7bbe94e383e9e7fba755dcc373a93150
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685299"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477050"
 ---
 # <a name="commandtable-element"></a>CommandTable-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-CommandTable ist das Stammelement der VSCT-Datei. Dies ist die Datei, die definiert, die tatsächliche Layout und den Typ der Befehle, die eine VSPackage für der IDE bietet. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern folgende Befehle zählen. Weitere Informationen finden Sie unter [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+Commandtable ist das Stamm Element der vsct-Datei. Dies ist die Datei, die das tatsächliche Layout und den Typ der Befehle definiert, die ein VSPackage für die IDE bereitstellt. Befehle können Menü Elemente, Menüs, Symbolleisten und Kombinations Felder enthalten. Weitere Informationen finden Sie unter [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" >  
   <Extern>... </Extern>  
   <Include>... </Include>  
@@ -42,34 +42,34 @@ CommandTable ist das Stammelement der VSCT-Datei. Dies ist die Datei, die defini
 ```  
   
 ## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
+ In den folgenden Abschnitten werden die Attribute, untergeordneten und übergeordneten Elemente beschrieben.  
   
-### <a name="attributes"></a>Attribute  
+### <a name="attributes"></a>Attributes  
   
-| Attribut |                                                                                                                   Beschreibung                                                                                                                   |
+| attribute |                                                                                                                   BESCHREIBUNG                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   xmlns   |                                   Erforderlich. XML-Namespaces:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>"                                   |
-| language  | Dies ist optional. Language-Attribut kann verwendet werden, an der standardmäßigen Sprache der alle \<Zeichenfolgen > Elemente in der Befehlstabelle.  Wenn die Sprache nicht angegeben ist, wird die Sprache des aktuellen Prozesses verwendet werden:<br /><br /> language="en-us" |
+|   xmlns   |                                   Erforderlich. XML-Namespaces:<br /><br /> `xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"`<br /><br /> `xmlns:xs="<http://www.w3.org/2001/XMLSchema>"`                                   |
+| language  | Optional. Das Language-Attribut kann verwendet werden, um die Standardsprache aller \<Zeichen folgen > Elemente in der Befehls Tabelle anzugeben.  Wenn die Sprache nicht angegeben wird, wird die Sprache des aktuellen Prozesses verwendet:<br /><br /> language="en-us" |
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[Extern-Element](../extensibility/extern-element.md)|Dies ist optional. Enthält die präprozessoranweisungen für den Compiler.|  
-|[Include-Element](../extensibility/include-element.md)|Dies ist optional. Enthält die Pfade für alle Dateien in die Kompilierung eingeschlossen werden sollen.|  
-|[Define-Element](../extensibility/define-element.md)|Dies ist optional. Definiert ein Symbol mit dem angegebenen Namen und Wert.|  
-|[Commands-Element](../extensibility/commands-element.md)|Dies ist optional. Das übergeordnete Element, definieren alle Befehle, die für das VSPackage, das alle anderen Elemente enthält.|  
-|[CommandPlacements-Element](../extensibility/commandplacements-element.md)|Dies ist optional. Definiert, in dem auf der Befehlsleiste auf die Befehle, platziert werden soll.|  
-|[VisibilityConstraints-Element](../extensibility/visibilityconstraints-element.md)|Dies ist optional. Bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten.|  
-|[KeyBindings-Element](../extensibility/keybindings-element.md)|Dies ist optional. Gibt die Tastenkombinationen an, sofern vorhanden, für die Befehle.|  
-|[UsedCommands-Element](../extensibility/usedcommands-element.md)|Dies ist optional. Ermöglicht einem VSPackages, implementieren Sie bei Bedarf eine eigene Version der Funktionen, die ursprünglich von anderen VSPackages unterstützt.|  
-|[Symbols-Element](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Dies ist optional. Enthält alle Symboldaten--GUIDs, IDs und So weiter – für den Compiler an.|  
+|[Extern-Element](../extensibility/extern-element.md)|Optional. Enthält Präprozessordirektiven für den Compiler.|  
+|[Include-Element](../extensibility/include-element.md)|Optional. Enthält Pfade zu allen Dateien, die in die Kompilierung eingeschlossen werden sollen.|  
+|[Define-Element](../extensibility/define-element.md)|Optional. Definiert ein Symbol anhand seines Namens und Werts.|  
+|[Commands-Element](../extensibility/commands-element.md)|Optional. Das übergeordnete Element, das alle Befehle für das VSPackage definiert, das alle anderen Elemente enthält.|  
+|[CommandPlacements-Element](../extensibility/commandplacements-element.md)|Optional. Definiert, wo in der Befehlsleiste die Befehle platziert werden sollen.|  
+|[VisibilityConstraints-Element](../extensibility/visibilityconstraints-element.md)|Optional. Bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten.|  
+|[KeyBindings-Element](../extensibility/keybindings-element.md)|Optional. Gibt ggf. die Tastenkombinationen für die Befehle an.|  
+|[UsedCommands-Element](../extensibility/usedcommands-element.md)|Optional. Ermöglicht einem VSPackage, optional seine eigene Version der Funktionalität zu implementieren, die ursprünglich von anderen VSPackages unterstützt wurde.|  
+|[Symbols-Element](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Optional. Enthält beliebige Symbol Daten-GUIDs, IDs usw. für den Compiler.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|Keiner||  
+|Keine||  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

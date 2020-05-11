@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetDocumentContext | Microsoft-Dokumentation
+title: IDebugCodeContext2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetDocumentContext
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342400"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734344"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-Ruft ab, der Dokumentenkontext, der an diesen Codekontext entspricht. Den Dokumentenkontext darstellt, eine Position in der Quelldatei, die auf den Quellcode entspricht, die diese Anweisung generiert wird.
+Ruft den Dokumentkontext ab, der diesem Codekontext entspricht. Der Dokumentkontext stellt eine Position in der Quelldatei dar, die dem Quellcode entspricht, der diese Anweisung generiert hat.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>Parameter
 `ppSrcCxt`\
-[out] Gibt die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das den Codekontext entspricht. Wenn `S_OK` zurückgegeben wird, diesen muss nicht`null`.
+[out] Gibt das [IDebugDocumentContext2-Objekt](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) zurück, das dem Codekontext entspricht. Wenn `S_OK` zurückgegeben wird, sollte ths nicht-`null`sein.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Eine Debug-Engine sollte einen Fehlercode zurück, wie z. B. `E_FAIL` bei der `out` Parameter `null` z. B. wenn der Codekontext keine Position der zugehörigen Datenquelle hat.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Ein Debugmodul sollte einen Fehlercode zurückgeben, z. `E_FAIL` B. wenn der `out` Parameter z. B. wenn dem Codekontext keine Quellposition zugeordnet ist. `null`
 
-## <a name="remarks"></a>Hinweise
- Im Allgemeinen kann der Dokumentenkontext betrachtet werden als eine Position in einer Quelldatei während der Codekontext eine Position ein Code-Anweisung in einen Stream für die Ausführung ist.
+## <a name="remarks"></a>Bemerkungen
+ Im Allgemeinen kann der Dokumentkontext als Position in einer Quelldatei betrachtet werden, während der Codekontext eine Position einer Codeanweisung in einem Ausführungsstream ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

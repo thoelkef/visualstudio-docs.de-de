@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593602"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
@@ -35,7 +35,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   Der vollständige Pfad und Name einer Projektmappendatei
 
-- *ProjectName*
+- *Projektname*
 
   Der vollständige Pfad und Name einer Projektdatei
 
@@ -43,7 +43,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter minimiert die IDE, während das Projekt oder die Projektmappe ausgeführt wird. Er schließt die IDE, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.
 
@@ -59,7 +59,7 @@ In diesem Beispiel wird die Projektmappe mit der aktiven Bereitstellungskonfigur
 devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
 - [/Run („devenv.exe“)](../../ide/reference/run-devenv-exe.md)

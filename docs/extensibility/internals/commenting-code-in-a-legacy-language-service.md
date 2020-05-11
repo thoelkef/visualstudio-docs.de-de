@@ -1,46 +1,46 @@
 ---
-title: Kommentieren von Code in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Kommentieren von Code in einem Legacy-Sprachdienst | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec42d81a2d472cec5f96cbeec416801c22465834
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342048"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709442"
 ---
-# <a name="comment-code-in-a-legacy-language-service"></a>Kommentieren von Code in einem legacy-Sprachdienst
-Programmiersprachen bieten in der Regel eine Möglichkeit zum Kommentieren oder kommentieren Sie den Code. Ein Kommentar ist einen Textabschnitt, der enthält zusätzliche Informationen zu den Code wird jedoch ignoriert, während der Kompilierung oder Interpretation erfordern.
+# <a name="comment-code-in-a-legacy-language-service"></a>Kommentarcode in einem älteren Sprachdienst
+Programmiersprachen bieten in der Regel eine Möglichkeit, den Code zu kommentieren oder zu kommentieren. Ein Kommentar ist ein Textabschnitt, der zusätzliche Informationen zum Code bereitstellt, aber während der Kompilierung oder Interpretation ignoriert wird.
 
- Die verwaltete Package Framework (MPF)-Klassen bieten Unterstützung für auskommentieren und Aufheben der auskommentierung markierten Text.
+ Die MPF-Klassen (Managed Package Framework) unterstützen das Kommentieren und Aufdecken von ausgewähltem Text.
 
 ## <a name="comment-styles"></a>Kommentarstile
-Es gibt zwei allgemeine Arten der Kommentar:
+Es gibt zwei allgemeine Arten von Kommentaren:
 
-1. Zeilenkommentare, die der Kommentar, in dem in einer einzelnen Zeile ist.
+1. Zeilenkommentare, bei denen sich der Kommentar in einer einzigen Zeile befindet.
 
-2. Block-Kommentare, in dem der Kommentar auf mehrere Zeilen enthalten kann.
+2. Blockieren Sie Kommentare, wobei der Kommentar mehrere Zeilen enthalten kann.
 
-Zeilenkommentare haben in der Regel ein (oder die Anfangszeichen), während blockskommentaren sowohl Start-und Endzeichen haben. In c# ein Zeilenkommentar starten z. B. mit `//`, und ein blockskommentar beginnt mit `/*` und endet mit `*/`.
+Zeilenkommentare haben in der Regel ein Startzeichen (oder Zeichen), während Blockkommentare sowohl Start- als auch Endzeichen haben. Ein Zeilenkommentar beginnt z. B. `//`mit , und `/*` ein Blockkommentar beginnt mit und endet mit `*/`.
 
-Wenn der Benutzer den Befehl auswählt **Auswahl kommentieren** aus der **bearbeiten** > **erweitert** im Menü der Befehl geleitet wird die <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse. Wenn der Benutzer den Befehl auswählt **Kommentar der Auswahl**, der Befehl weitergeleitet wird, um die <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> Methode.
+Wenn der Benutzer den Befehl **Kommentarauswahl** aus dem Menü **Erweiterte Bearbeiten** > **Advanced** auswählt, wird der Befehl an die <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> Methode in der <xref:Microsoft.VisualStudio.Package.Source> Klasse weitergeleitet. Wenn der Benutzer den Befehl **Auswahl aufsuchen**auswählt, <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> wird der Befehl an die Methode weitergeleitet.
 
-## <a name="support-code-comments"></a>Unterstützung von Kommentaren im code
- Sie haben Ihre Language Service Support Codekommentare von der `EnableCommenting` benannter Parameter, der die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Hiermit wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> Eigenschaft der <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Weitere Informationen zum Festlegen von Sprache-Service-Features finden Sie unter [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service1.md).
+## <a name="support-code-comments"></a>Support-Codekommentare
+ Sie können Codekommentare für Den Sprachdienst `EnableCommenting` mit Hilfe <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> des benannten Parameters der verwenden. Dadurch wird <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Eigenschaft der Klasse festgelegt. Weitere Informationen zum Festlegen von Sprachdienstfeatures finden Sie unter [Registrieren eines älteren Sprachdienstes](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
- Müssen Sie auch überschreiben die <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> -Methode zur Rückgabe einer <xref:Microsoft.VisualStudio.Package.CommentInfo> Struktur mit die Kommentarzeichen für Ihre Sprache. C#-Stil zeilenkommentarzeichen sind die Standardeinstellungen.
+ Sie müssen auch <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> die Methode <xref:Microsoft.VisualStudio.Package.CommentInfo> überschreiben, um eine Struktur mit den Kommentarzeichen für Ihre Sprache zurückzugeben. Zeilenkommentarzeichen im C-Stil sind die Standardzeichen.
 
 ### <a name="example"></a>Beispiel
- Hier ist eine Beispiel einer Implementierung der <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> Methode.
+ Hier ist ein Beispiel <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> für die Implementierung der Methode.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -61,6 +61,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)
-- [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Legacy-Sprachdienstfunktionen](../../extensibility/internals/legacy-language-service-features1.md)
+- [Registrieren eines älteren Sprachdienstes](../../extensibility/internals/registering-a-legacy-language-service1.md)

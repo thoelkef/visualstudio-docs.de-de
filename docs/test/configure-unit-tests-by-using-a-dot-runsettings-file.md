@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593251"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880350"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -50,17 +50,18 @@ Die Datei wird im Menü „Test“ angezeigt, und Sie können sie auswählen ode
 
 Es gibt drei Möglichkeiten, in Visual Studio 2019, Version 16.4 und höher, eine Datei mit Laufzeiteinstellungen anzugeben:
 
-- Fügen Sie entweder über die Projektdatei oder eine Directory.Build.props-Datei eine Buildeigenschaft zu einem Projekt hinzu. Die Datei mit Laufzeiteinstellungen für ein Projekt wird durch die Eigenschaft **RunSettingsFilePath** angegeben. 
+- Fügen Sie entweder über die Projektdatei oder eine Directory.Build.props-Datei eine Buildeigenschaft zu einem Projekt hinzu. Die Datei mit Laufzeiteinstellungen für ein Projekt wird durch die Eigenschaft **RunSettingsFilePath** angegeben.
 
     - Laufzeiteinstellungen auf Projektebene werden zurzeit in C#-, VB-, C++- und F#-Projekten unterstützt.
     - Eine für ein Projekt angegebene Datei setzt alle anderen in der Projektmappe angegebenen Laufzeiteinstellungen außer Kraft.
+    - Mithilfe [dieser MSBuild-Eigenschaften](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) können Sie den Pfad zur RUNSETTINGS-Datei angeben. 
 
     Beispiel für die Angabe einer *RUNSETTINGS*-Datei für ein Projekt:
     
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
-        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+        <RunSettingsFilePath>$(MSBuildProjectDirectory)\example.runsettings</RunSettingsFilePath>
       </PropertyGroup>
       ...
     </Project>
@@ -256,8 +257,9 @@ Das **RunConfiguration**-Element kann folgende Elemente enthalten:
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Ein oder mehrere Pfade zu dem Verzeichnis, in dem die Testadapter gespeichert sind.|
-|**MaxCpuCount**|1|Durch diese Einstellung wird der Umfang der parallelen Ausführung gesteuert, wenn Komponententests ausgeführt werden, bei denen die auf dem Computer verfügbaren Kerne verwendet werden. Die Testausführungs-Engine startet für jeden verfügbaren Kern einen eigenständigen Prozess und übergibt an jeden Kern einen Container mit auszuführenden Tests. Ein Container kann eine Assembly, eine DLL oder ein relevantes Artefakt sein. Der Testcontainer ist die Planungseinheit. In jedem Container werden die Tests entsprechend dem Testframework ausgeführt. Gibt es viele Container, werden Prozesse, sobald das Ausführen ihrer Tests in einem Container abgeschlossen ist, an den nächsten verfügbaren Container übergeben.<br /><br />MaxCpuCount kann Folgendes sein:<br /><br />n, wobei 1 < = n < = Anzahl von Kernen: bis zu n Prozesse werden gestartet.<br /><br />n, wobei n = beliebiger anderer Wert: die Anzahl von gestarteten Prozessen kann bis zur Anzahl der verfügbaren Kerne betragen.|
+|**MaxCpuCount**|1|Durch diese Einstellung wird der Umfang der parallelen Ausführung gesteuert, wenn Komponententests ausgeführt werden, bei denen die auf dem Computer verfügbaren Kerne verwendet werden. Die Testausführungs-Engine startet für jeden verfügbaren Kern einen eigenständigen Prozess und übergibt an jeden Kern einen Container mit auszuführenden Tests. Ein Container kann eine Assembly, eine DLL oder ein relevantes Artefakt sein. Der Testcontainer ist die Planungseinheit. In jedem Container werden die Tests entsprechend dem Testframework ausgeführt. Gibt es viele Container, werden Prozesse, sobald das Ausführen ihrer Tests in einem Container abgeschlossen ist, an den nächsten verfügbaren Container übergeben.<br /><br />MaxCpuCount kann Folgendes sein:<br /><br />n, wobei 1 < = n < = Anzahl von Kernen: bis zu n Prozesse werden gestartet.<br /><br />n, wobei n = beliebiger anderer Wert: die Anzahl von gestarteten Prozessen kann maximal der Anzahl der verfügbaren Kerne entsprechen. Legen Sie beispielsweise n = 0 fest, damit die Plattform automatisch die optimale Anzahl der zu startenden Prozesse anhand der Umgebung ermittelt.|
 |**TestSessionTimeout**||Ermöglicht Benutzern, eine Testsitzung zu beenden, wenn sie ein angegebenes Timeout überschreitet. Die Einstellung eines Timeouts stellt sicher, dass die Ressourcen gut ausgenutzt werden und Testsitzungen auf einen bestimmten Zeitraum beschränkt bleiben. Diese Einstellung ist in **Visual Studio 2017 Version 15.5** und höher verfügbar.|
+|**DotnetHostPath**||Legen Sie einen benutzerdefinierten Pfad zum Dotnet-Host fest, der zum Ausführen des Testhosts verwendet wird. Dies ist hilfreich, wenn Sie Ihren eigenen Dotnet-Host erstellen, z. B. beim Erstellen des Repositorys „dotnet/runtime“. Wenn Sie diese Option festlegen, wird die Suche nach der Datei „testhost.exe“ übersprungen, und stattdessen wird die Datei „testhost.dll“ verwendet. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adapter für diagnostische Daten (Datensammler)
 
@@ -328,7 +330,7 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 |Konfiguration|Standard|Werte|
 |-|-|-|
 |**ForcedLegacyMode**|False|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf **TRUE** fest, um den älteren Testadapter zu verwenden.<br /><br />Beispielsweise können Sie diese Einstellung verwenden, wenn Sie eine *app.config*-Datei für einen Komponententest angegeben haben.<br /><br />Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|
-|**IgnoreTestImpact**|False|Die Testauswirkungensfunktion priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder von Microsoft Test-Manager ausgeführt werden. Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [Welche Tests sollten ab einem vorherigen Build ausgeführt werden?](https://msdn.microsoft.com/library/dd286589)|
+|**IgnoreTestImpact**|False|Das Testauswirkungsfeature priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder über Microsoft Test Manager ausgeführt werden (ab Visual Studio 2017 veraltet). Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [Welche Tests sollten ab einem vorherigen Build ausgeführt werden?](https://msdn.microsoft.com/library/dd286589)|
 |**SettingsFile**||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Sie können auch eine Testeinstellungsdatei [ im Menü „Einstellungen“](#ide) angeben.<br /><br />Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true**festlegen.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|Nachdem ein Testlauf abgeschlossen ist, wird MSTest beendet. Jeder Prozess, der als Teil des Tests gestartet wird, wird dann ebenfalls abgebrochen. Wenn der Test-Executor aktiv bleiben soll, legen Sie den Wert auf **TRUE** fest. Beispielsweise können Sie mit dieser Einstellung erreichen, dass der Browser zwischen Tests der programmierten UI aktiv bleibt.|
 |**DeploymentEnabled**|true|Wenn Sie den Wert auf **FALSE** festlegen, werden in der Testmethode angegebene Bereitstellungselemente nicht in das Bereitstellungsverzeichnis kopiert.|
@@ -343,3 +345,4 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 - [Konfigurieren eines Testlaufs](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio-Testaufgabe (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+

@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
 ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691883"
 ---
 # <a name="troubleshooting"></a>Problembehandlung
@@ -47,6 +47,6 @@ Wichtige Abschnitte des Dialogfelds sind in der oberen Abbildung nummeriert, und
 
 Beachten Sie, dass einige dieser Abschnitte nur sichtbar sind, wenn die Ausnahme eine innere Ausnahme hat.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ressourcen für die Problembehandlung bei IDE-Fehlern (Visual Studio unter Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

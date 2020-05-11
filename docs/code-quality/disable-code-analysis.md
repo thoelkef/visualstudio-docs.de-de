@@ -1,5 +1,5 @@
 ---
-title: Code Analyse deaktivieren
+title: Deaktivieren der Codeanalyse
 ms.date: 10/03/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,54 +8,50 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d25254cabecd88c6e876646c3c276503aadf7eb7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8db6ad7bed4b1526d87112f33d3586728728d7f5
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587666"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431396"
 ---
-# <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Deaktivieren der Quell Code Analyse für verwalteten Code
+# <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Deaktivieren der Quellcodeanalyse für verwalteten Code
 
 ::: moniker range=">=vs-2019"
 
-Auf dieser Seite können Sie die Code Analyse in Visual Studio deaktivieren. Es gelten Einschränkungen für das, was Sie deaktivieren können, und die Vorgehensweise zum Ausschalten der Code Analyse variiert je nach den folgenden Faktoren:
+Auf dieser Seite können Sie die Codeanalyse in Visual Studio deaktivieren. Es gibt Einschränkungen für das, was Sie deaktivieren können, und das Verfahren zum Deaktivieren der Codeanalyse unterscheidet sich von einigen Faktoren:
 
-- Projekttyp (.net Core/Standard im Vergleich zu .NET Framework)
+- Projekttyp (.NET Core/Standard versus .NET Framework)
 
-  .Net Core-und .NET Standard-Projekte verfügen über Optionen auf der Seite mit den Code Analyse Eigenschaften, mit denen Sie die Code Analyse von Analyzern deaktivieren können, die als nuget-Paket installiert wurden. Weitere Informationen finden Sie unter [.net Core-und .NET Standard-Projekte](#net-core-and-net-standard-projects). Informationen zum Deaktivieren der Quell Code Analyse für .NET Framework Projekte finden Sie unter [.NET Framework Projekte](#net-framework-projects).
+  .NET Core- und .NET Standard-Projekte verfügen über Optionen auf der Seite Codeanalyseeigenschaften, mit denen Sie die Codeanalyse von Analyzern deaktivieren können, die als NuGet-Paket installiert sind. Weitere Informationen finden Sie unter [.NET Core- und .NET Standard-Projekte](#net-core-and-net-standard-projects). Informationen zum Deaktivieren der Quellcodeanalyse für .NET Framework-Projekte finden Sie unter [.NET Framework-Projekte](#net-framework-projects).
 
-- Nuget Analyzer-Paket im Vergleich zu VSIX-oder integrierten Analyzern
+- Quellanalyse im Vergleich zur Legacy-Analyse
 
-  Derzeit ist es nicht möglich, die Live-Code Analyse für die integrierten Analyzers (z. b. Regel-ID IDE0067) zu deaktivieren. Ebenso ist es nicht möglich, die Live Code Analyse für Analysen zu deaktivieren, die als Teil einer Visual Studio-Erweiterung (VSIX) installiert wurden. Wenn Sie Fehler und Warnungen von integrierten und VSIX-basierten Analysemodulen unterdrücken möchten, wählen Sie in der Menüleiste die Option " **analysieren** > **Erstellen und unterdrücken von aktiven Problemen** " aus. Sie *können* die Live-und die integrierte Analyse für Analysen deaktivieren, die als Teil eines nuget-Pakets installiert sind.
+  Dieses Thema gilt für die Quellcodeanalyse und nicht für die Legacyanalyse (binär). Informationen zum Deaktivieren der Legacyanalyse finden Sie unter [Gewusst wie: Aktivieren und Deaktivieren der Legacycodeanalyse](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-- Quell Analyse und Legacy Analyse
+## <a name="net-core-and-net-standard-projects"></a>.NET Core- und .NET Standard-Projekte
 
-  Dieses Thema bezieht sich auf die Quell Code Analyse und nicht auf die Legacy-(binäre) Analyse. Weitere Informationen zum Deaktivieren der Legacy Analyse finden Sie unter Gewusst [wie: Aktivieren und Deaktivieren der Legacy Code Analyse](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Ab Visual Studio 2019 Version 16.3 stehen auf der Seite Codeanalyseeigenschaften zwei Kontrollkästchen zur Verfügung, mit denen Sie steuern können, ob Analysatoren zur Buildzeit und Entwurfszeit ausgeführt werden. Diese Optionen sind projektspezifisch.
 
-## <a name="net-core-and-net-standard-projects"></a>.Net Core-und .NET Standard-Projekte
+![Aktivieren oder Deaktivieren der Livecodeanalyse oder beim Erstellen in Visual Studio](media/run-on-build-run-live-analysis.png)
 
-Ab Visual Studio 2019 Version 16,3 stehen auf der Seite mit den Code Analyse Eigenschaften zwei Kontrollkästchen zur Verfügung, mit denen Sie steuern können, ob nuget-basierte Analysen zum Zeitpunkt der Erstellung und zur Entwurfszeit ausgeführt werden. Diese Optionen sind projektspezifisch.
+Um diese Seite zu öffnen, klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer,** und wählen Sie **Eigenschaften**aus. Wählen Sie die Registerkarte **Codeanalyse** aus.
 
-![Aktivieren oder Deaktivieren der Live Code Analyse oder bei der Erstellung in Visual Studio](media/run-on-build-run-live-analysis.png)
-
-Um diese Seite zu öffnen, klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Eigenschaften**aus. Wählen Sie die Registerkarte **Code Analyse** aus.
-
-- Zum Deaktivieren der Quell Analyse während der Buildzeit deaktivieren Sie die Option **bei Build ausführen** .
-- Um die Live Quell Analyse zu deaktivieren, deaktivieren Sie die Option **bei Live Analyse ausführen** .
+- Um die Quellanalyse zur Buildzeit zu deaktivieren, deaktivieren Sie die Option **Beim Build ausführen.**
+- Um die Live-Quellanalyse zu deaktivieren, deaktivieren Sie die Option **"Auf Live-Analyse ausführen".**
 
 > [!NOTE]
-> Integrierte und auf VSIX basierende Analysen bieten weiterhin Live Analysen Ihres Codes, auch wenn die aktive **Analyse** nicht aktiviert ist. Wenn Sie Fehler und Warnungen von diesen Analysemodulen unterdrücken möchten, wählen Sie in der Menüleiste die Option zum **analysieren** > **Erstellen und unterdrücken aktiver Probleme** aus.
+> Ab Visual Studio 2019 Version 16.5 können Sie, wenn Sie den Bedarfscodeanalyseausführungsworkflow bevorzugen, die Ausführung von Analyzer während der Liveanalyse deaktivieren und/oder die Codeanalyse einmal in einem Projekt oder einer Projektmappe bei Bedarf manuell auslösen. Informationen zum manuellen Ausführen der Codeanalyse finden Sie unter [Gewusst wie: Ausführen der Codeanalyse manuell für verwalteten Code](how-to-run-code-analysis-manually-for-managed-code.md).  
 
-## <a name="net-framework-projects"></a>.NET Framework Projekte
+## <a name="net-framework-projects"></a>.NET Framework-Projekte
 
-Fügen Sie der [Projektdatei](../ide/solutions-and-projects-in-visual-studio.md#project-file)mindestens eine der folgenden MSBuild-Eigenschaften hinzu, um die Quell Code Analyse für Analysen zu deaktivieren, die als Teil eines nuget-Pakets installiert sind.
+Um die Quellcodeanalyse für Analysatoren zu deaktivieren, fügen Sie der [Projektdatei](../ide/solutions-and-projects-in-visual-studio.md#project-file)eine oder mehrere der folgenden MSBuild-Eigenschaften hinzu.
 
-| MSBuild-Eigenschaft | Beschreibung | Default |
+| MSBuild-Eigenschaft | Beschreibung | Standard |
 | - | - | - |
-| `RunAnalyzersDuringBuild` | Steuert, ob nuget-basierte Analysen zum Zeitpunkt der Erstellung ausgeführt werden. | `true` |
-| `RunAnalyzersDuringLiveAnalysis` | Steuert, ob nuget-basierte Analysen Code zur Entwurfszeit Live analysieren. | `true` |
-| `RunAnalyzers` | Deaktiviert nuget-basierte Analysen sowohl bei der Erstellung als auch bei der Entwurfszeit. Diese Eigenschaft hat Vorrang vor `RunAnalyzersDuringBuild` und `RunAnalyzersDuringLiveAnalysis`. | `true` |
+| `RunAnalyzersDuringBuild` | Steuert, ob Analysatoren zur Buildzeit ausgeführt werden. | `true` |
+| `RunAnalyzersDuringLiveAnalysis` | Steuert, ob Analysatoren Code live zur Entwurfszeit analysieren. | `true` |
+| `RunAnalyzers` | Deaktiviert Analysatoren sowohl zur Build- als auch zur Entwurfszeit. Diese Eigenschaft hat `RunAnalyzersDuringBuild` `RunAnalyzersDuringLiveAnalysis`Vorrang vor und . | `true` |
 
 Beispiele:
 
@@ -71,17 +67,17 @@ Beispiele:
 
 ## <a name="source-analysis"></a>Quellanalyse
 
-Sie können die [Quell Analyse](roslyn-analyzers-overview.md) in Visual Studio 2017 nicht deaktivieren. Wenn Sie Analysefehler aus dem Fehlerliste löschen möchten, können Sie alle aktuellen Verstöße unterdrücken, indem Sie in der Menüleiste **analysieren** > **Code Analyse ausführen und aktive Probleme unterdrücken** auswählen. Weitere Informationen finden Sie unter unter [drücken von Verletzungen](use-roslyn-analyzers.md#suppress-violations).
+Sie können die [Quellanalyse](roslyn-analyzers-overview.md) in Visual Studio 2017 nicht deaktivieren. Wenn Sie Analysefehler aus der Fehlerliste löschen möchten, können Sie alle aktuellen Verstöße unterdrücken, indem Sie in der Menüleiste die Option**Ausführen von Codeanalysen** **analysieren** > und aktive Probleme unterdrücken auswählen. Weitere Informationen finden Sie unter Unterdrücken von [Verstößen](use-roslyn-analyzers.md#suppress-violations).
 
-Ab Visual Studio 2019 Version 16,3 können Sie die nuget-basierte Quell Code Analyse deaktivieren. Sie sollten ein Upgrade auf Visual Studio 2019 durchführen.
+Ab Visual Studio 2019 Version 16.3 können Sie die Quellcodeanalyse deaktivieren oder bei Bedarf ausführen. Erwägen Sie ein Upgrade auf Visual Studio 2019.
 
 ## <a name="legacy-analysis"></a>Legacyanalyse
 
-Sie können die Legacy-und buildzeitanalyse auf der Eigenschaften Seite für die **Code Analyse** deaktivieren. Weitere Informationen finden Sie unter Gewusst [wie: Aktivieren und Deaktivieren der Legacy Code Analyse](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Sie können die Legacy-Buildzeitanalyse auf der Eigenschaftenseite **Codeanalyse** deaktivieren. Weitere Informationen finden Sie unter [Gewusst wie: Aktivieren und Deaktivieren der Legacycodeanalyse](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 ::: moniker-end
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Verstöße unterdrücken](use-roslyn-analyzers.md#suppress-violations)
-- [Gewusst wie: Aktivieren und Deaktivieren der Legacy Code Analyse](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Unterdrücken von Verstößen](use-roslyn-analyzers.md#suppress-violations)
+- [Gewusst wie: Aktivieren und Deaktivieren der Legacycodeanalyse](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

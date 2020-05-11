@@ -1,5 +1,5 @@
 ---
-title: Projektmappenbenutzeroptionen (. SUO-Datei | Microsoft-Dokumentation
+title: Lösungsbenutzeroptionen (. Suo) Datei | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,33 +9,33 @@ helpviewer_keywords:
 - solutions, user options
 - solution user options (.suo) file
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f21e4a4a6530692709247e64b0d84aa7b06eb3a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723813"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705318"
 ---
 # <a name="solution-user-options-suo-file"></a>Datei mit Benutzeroptionen in Projektmappen (SUO)
-Die Benutzeroptionen für die Projekt Mappe (. suo) enthalten Optionen für benutzerspezifische Lösungen. Diese Datei sollte nicht in die Quell Code Verwaltung eingeklickt werden.
+Die Lösungsbenutzeroptionsdatei (.suo) enthält benutzerspezifische Lösungsoptionen. Diese Datei sollte nicht in die Quellcodeverwaltung eingecheckt werden.
 
- Bei der Projektmappen-Benutzeroptionen Datei (. suo) handelt es sich um eine strukturierte Speicher-oder Verbund Datei, die in einem binären Format gespeichert ist. Sie speichern Benutzerinformationen in Streams mit dem Namen des Streams, der der Schlüssel ist, der zum Identifizieren der Informationen in der SUO-Datei verwendet wird. Die Benutzer Optionsdatei für die Projekt Mappe wird zum Speichern der Benutzer Einstellungs Einstellungen verwendet und automatisch erstellt, wenn Visual Studio eine Projekt Mappe speichert.
+ Die Lösung Benutzeroptionen (.suo) Datei ist ein strukturierter Speicher, oder zusammengesetzt, Datei in einem binären Format gespeichert. Sie speichern Benutzerinformationen in Streams, wobei der Name des Streams der Schlüssel ist, der zum Identifizieren der Informationen in der .suo-Datei verwendet wird. Die Projektmappenbenutzeroptionsdatei wird zum Speichern von Benutzereinstellungen verwendet und automatisch erstellt, wenn Visual Studio eine Projektmappe speichert.
 
- Wenn die Umgebung eine SUO-Datei öffnet, listet Sie alle zurzeit geladenen VSPackages auf. Wenn ein VSPackage die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>-Schnittstelle implementiert, ruft die Umgebung die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A>-Methode für das VSPackage auf, um alle Daten aus der SUO-Datei zu laden.
+ Wenn die Umgebung eine .suo-Datei öffnet, werden alle aktuell geladenen VSPackages aufgezählt. Wenn ein VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> die Schnittstelle implementiert, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> ruft die Umgebung die Methode auf dem VSPackage auf, die sie auffordert, alle ihre Daten aus der .suo-Datei zu laden.
 
- Es liegt in der Verantwortung des VSPackages, zu wissen, welche Streams es möglicherweise in die SUO-Datei geschrieben hat. Für jeden geschriebenen Stream ruft das VSPackage über <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> an die Umgebung zurück, um einen bestimmten Datenstrom zu laden, der durch den Schlüssel identifiziert wird. Dies ist der Name des Datenstroms. Die Umgebung ruft dann an das VSPackage zurück, um den betreffenden Stream zu lesen und den Namen des Streams und einen `IStream` Zeiger an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A>-Methode zu übergeben.
+ Es liegt in der Verantwortung des VSPackage zu wissen, welche Streams es in die .suo-Datei geschrieben haben könnte. Für jeden Stream, den es geschrieben hat, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> ruft das VSPackage an die Umgebung zurück, um einen bestimmten Stream zu laden, der durch den Schlüssel identifiziert wird, der der Name des Streams ist. Die Umgebung ruft dann zum VSPackage zurück, um den bestimmten `IStream` Stream zu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> lesen, der den Namen des Streams und einen Zeiger auf die Methode übergibt.
 
- An diesem Punkt wird `LoadUserOptions` aufgerufen, um zu überprüfen, ob ein anderer Abschnitt der SUO-Datei vorhanden ist, der gelesen werden muss. Dieser Prozess wird fortgesetzt, bis alle Datenströme in der SUO-Datei von der Umgebung gelesen und verarbeitet wurden.
+ An diesem Punkt wird ein `LoadUserOptions` weiterer Aufruf getätigt, um zu sehen, ob es einen anderen Abschnitt der .suo-Datei gibt, der gelesen werden muss. Dieser Vorgang wird fortgesetzt, bis alle Datenströme in der .suo-Datei von der Umgebung gelesen und verarbeitet wurden.
 
- Wenn die Lösung gespeichert oder geschlossen wird, ruft die Umgebung die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A>-Methode mit einem Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A>-Methode auf. Eine `IStream`, die die zu speichernden Binär Informationen enthält, wird an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A>-Methode weitergegeben, die die Informationen dann in die SUO-Datei schreibt und die `SaveUserOptions`-Methode erneut aufruft, um festzustellen, ob ein anderer Datenstrom zum Schreiben in die SUO-Datei vorhanden ist.
+ Wenn die Lösung gespeichert oder geschlossen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> wird, ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> Umgebung die Methode mit einem Zeiger auf die Methode auf. Ein, `IStream` der die zu speichernden <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> Binärinformationen enthält, wird an die Methode übergeben, `SaveUserOptions` die dann die Informationen in die .suo-Datei schreibt und die Methode erneut aufruft, um zu sehen, ob es einen weiteren Informationsstrom gibt, der in die .suo-Datei geschrieben werden soll.
 
- Diese beiden Methoden, `SaveUserOptions` und `WriteUserOptions`, werden rekursiv für jeden Datenstrom aufgerufen, der in der SUO-Datei gespeichert werden soll, und übergeben den Zeiger auf `IVsSolutionPersistence`. Sie werden rekursiv aufgerufen, um das Schreiben mehrerer Streams in die SUO-Datei zu ermöglichen. Auf diese Weise werden die Benutzerinformationen mit der Projekt Mappe beibehalten und sind beim nächsten Öffnen der Lösung garantiert.
+ Diese beiden `SaveUserOptions` Methoden `WriteUserOptions`und werden rekursiv für jeden Informationsstrom aufgerufen, der in der .suo-Datei gespeichert werden soll, und im Zeiger an `IVsSolutionPersistence`übergeben. Sie werden rekursiv aufgerufen, um das Schreiben mehrerer Streams in die .suo-Datei zu ermöglichen. Auf diese Weise werden Benutzerinformationen mit der Lösung beibehalten und sind garantiert, dass sie beim nächsten Öffnen der Lösung vorhanden sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
-- [Projektmappen](../../extensibility/internals/solutions-overview.md)
+- [Lösungen](../../extensibility/internals/solutions-overview.md)

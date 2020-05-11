@@ -1,5 +1,5 @@
 ---
-title: DLL-Projekte Debuggen | Microsoft-Dokumentation
+title: Debuggen von DLL-Projekten | Microsoft Docs
 ms.date: 11/06/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,128 +19,128 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450412"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301164"
 ---
-# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debuggen von DLLs inC#Visual C++Studio (, F#, Visual Basic,)
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debug-DLLs in Visual Studio (C-, C++-, Visual Basic-, F-Code)
 
-Eine DLL (Dynamic-Link Library) ist eine Bibliothek, die Code und Daten enthält, die von mehreren Apps verwendet werden können. Sie können mit Visual Studio DLLs erstellen, erstellen, konfigurieren und Debuggen.
+Eine DLL (Dynamic-Link-Bibliothek) ist eine Bibliothek, die Code und Daten enthält, die von mehr als einer App verwendet werden können. Sie können Visual Studio zum Erstellen, Erstellen, Konfigurieren und Debuggen von DLLs verwenden.
 
-## <a name="create-a-dll"></a>Erstellen einer dll
+## <a name="create-a-dll"></a>Erstellen einer DLL
 
 Die folgenden Visual Studio-Projektvorlagen können DLLs erstellen:
 
-- C#, Visual Basic oder F# Klassenbibliothek
-- C#oder Visual Basic Windows Forms-Steuerelement Bibliothek (WCF)
+- Die C-, Visual Basic- oder F-Klassenbibliothek
+- WCF-Bibliothek (C- oder Visual Basic Windows Forms Control)
 - C++-Dynamic Link Library (DLL)
 
-Weitere Informationen finden Sie unter [MFC Debugging Techniques (MFC-Debugverfahren)](../debugger/mfc-debugging-techniques.md).
+Weitere Informationen finden Sie unter [MFC-Debugging-Techniken](../debugger/mfc-debugging-techniques.md).
 
-Das Debuggen einer WCF-Bibliothek ähnelt dem Debuggen einer Klassenbibliothek. Weitere Informationen finden Sie unter Windows Forms-Steuer [Elemente](/dotnet/framework/winforms/controls/index).
+Das Debuggen einer WCF-Bibliothek ähnelt dem Debuggen einer Klassenbibliothek. Weitere Informationen finden Sie unter [Windows Forms Controls](/dotnet/framework/winforms/controls/index).
 
-Normalerweise wird eine DLL von einem anderen Projekt aufgerufen. Wenn Sie das aufrufenden Projekt Debuggen, können Sie in Abhängigkeit von der dll-Konfiguration den DLL-Code schrittweise durchlaufen und Debuggen.
+Normalerweise rufen Sie eine DLL aus einem anderen Projekt auf. Wenn Sie das aufrufende Projekt debuggen, können Sie je nach DLL-Konfiguration den DLL-Code schrittweise eingeben und debuggen.
 
-## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a>DLL-Debugkonfiguration
+## <a name="dll-debug-configuration"></a><a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a>DLL-Debugkonfiguration
 
-Wenn Sie eine Visual Studio-Projektvorlage zum Erstellen einer App verwenden, erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatisch erforderliche Einstellungen für Debug-und Releasebuildkonfigurationen. Sie können diese Einstellungen ggf. ändern. Weitere Informationen finden Sie in den folgenden Artikeln:
+Wenn Sie eine Visual Studio-Projektvorlage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Erstellen einer App verwenden, werden automatisch erforderliche Einstellungen für Debug- und Releasebuildkonfigurationen erstellt. Sie können diese Einstellungen bei Bedarf ändern. Weitere Informationen finden Sie in den folgenden Artikeln:
 
 - [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Project settings for C# debug configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Projekteinstellungen für C-Debug-Konfigurationen](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [How to: Set Debug and Release configurations (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen)](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Gewusst wie: Festlegen von Debug- und Release-Konfigurationen](../debugger/how-to-set-debug-and-release-configurations.md)
 
 ### <a name="set-c-debuggableattribute"></a>Festlegen des C++-Attributs „Debuggable“
 
-Damit der Debugger an eine C++ DLL angefügt werden kann C++ , muss im Code `DebuggableAttribute` ausgegeben werden.
+Damit der Debugger an eine C++-DLL anfügen kann, muss der C++-Code aussenden. `DebuggableAttribute`
 
-**So legen Sie `DebuggableAttribute` fest:**
+**So `DebuggableAttribute`legen Sie fest:**
 
-1. Wählen Sie C++ das DLL-Projekt in **Projektmappen-Explorer** aus, und wählen Sie das Symbol " **Eigenschaften** " aus, oder **Klicken Sie mit**der rechten Maustaste auf das Projekt
+1. Wählen Sie das C++-DLL-Projekt im **Projektmappen-Explorer** aus, und wählen Sie das **Eigenschaftensymbol** aus, oder klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus.
 
-1. Wählen Sie im Bereich **Eigenschaften** unter **Linker**  > **Debugging**die Option **Ja (/ASSEMBLYDEBUG)** für **Debugfähige Assembly**aus.
+1. Wählen Sie im **Bereich Eigenschaften** unter **Linker** > **Debugging**die Option Ja **(/ASSEMBLYDEBUG)** für **Debuggable Assembly**aus.
 
 Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
-### <a name="vxtskdebuggingdllprojectsexternal"></a>C/DLLC++ -Dateispeicher Orte festlegen
+### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a>Festlegen von C/C++-DLL-Dateispeicherorten
 
-Zum Debuggen einer externen dll muss ein Aufruf Endes Projekt in der Lage sein, die dll, die zugehörige [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)und alle anderen Dateien, die die dll benötigt, zu finden. Sie können eine benutzerdefinierte Buildaufgabe erstellen, um diese Dateien in den *\<project Ordner > \Debug* -Ausgabeordner zu kopieren, oder Sie können die Dateien dort manuell kopieren.
+Zum Debuggen einer externen DLL muss ein aufrufendes Projekt in der Lage sein, die DLL, seine [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)und alle anderen Dateien zu finden, die die DLL benötigt. Sie können eine benutzerdefinierte Buildaufgabe erstellen, um diese Dateien in ihren * \<Projektordner>-Debug-Ausgabeordner* zu kopieren, oder Sie können die Dateien dort manuell kopieren.
 
-Für C/C++ -Projekte können Sie Header-und lib-Dateispeicher Orte in den Projekteigenschaften Seiten festlegen, anstatt Sie in den Ausgabeordner zu kopieren.
+Bei C/C++-Projekten können Sie Header- und LIB-Dateispeicherorte auf den Projekteigenschaftenseiten festlegen, anstatt sie in den Ausgabeordner zu kopieren.
 
-**So legen Sie CC++ /Header-und lib-Dateispeicher Orte fest:**
+**So legen Sie C/C++-Header und LIB-Dateispeicherorte fest:**
 
-1. Wählen Sie das ProjektC++ C/DLL in **Projektmappen-Explorer** aus, und wählen Sie das Symbol **Eigenschaften** aus, oder klicken Sie mit der rechten Maustaste auf das Projekt und wählen Sie **Eigenschaften**
+1. Wählen Sie das C/C++-DLL-Projekt im **Projektmappen-Explorer** aus, und wählen Sie das **Eigenschaftensymbol aus,** oder klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus.
 
-1. Wählen Sie oben im Bereich **Eigenschaften** unter **Konfiguration**die Option **alle Konfigurationen**aus.
+1. Wählen Sie oben im **Bereich Eigenschaften** unter **Konfiguration** **alle Konfigurationen**aus.
 
-1. Geben Sie unter **C/C++**   > **Allgemein**  > **Zusätzliche Includeverzeichnisse**den Ordner an, der über Header Dateien verfügt.
+1. Geben Sie unter **C/C++** > **General** > **Additional Include Directories**den Ordner mit Headerdateien an.
 
-1. Geben Sie unter **Linker**  > **Allgemeine**  > **Weitere Bibliotheken Verzeichnisse**den Ordner an, der über lib-Dateien verfügt.
+1. Geben Sie unter **Linker** > **Allgemeine** > **Zusätzliche Bibliotheken Verzeichnisse**den Ordner mit LIB-Dateien an.
 
-1. Geben Sie unter **Linker**  > **Eingabe**  > **Zusätzliche Abhängigkeiten**den vollständigen Pfad und Dateinamen für die lib-Dateien an.
+1. Geben Sie unter **Linker** > **Input** > **Additional Dependencies**den vollständigen Pfad und Dateinamen für die LIB-Dateien an.
 
-1. Klicken Sie auf **OK**.
+1. Wählen Sie **OK** aus.
 
-Weitere Informationen zu Projekt C++ Einstellungen finden Sie unter [Referenz C++ zu Windows-Eigenschaften Seiten](/cpp/build/reference/property-pages-visual-cpp).
+Weitere Informationen zu C++-Projekteinstellungen finden Sie unter [Windows C++-Eigenschaftenseitenverweis](/cpp/build/reference/property-pages-visual-cpp).
 
-## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a>Erstellen einer Debugversion
+## <a name="build-a-debug-version"></a><a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a>Erstellen einer Debugversion
 
-Stellen Sie sicher, dass Sie eine Debugversion der DLL erstellen, bevor Sie das Debuggen starten. Zum Debuggen einer DLL muss eine aufrufende app in der Lage sein, Ihre [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und alle anderen Dateien, die die dll benötigt, zu finden.
+Stellen Sie sicher, dass Sie eine Debugversion der DLL erstellen, bevor Sie mit dem Debuggen beginnen. Zum Debuggen einer DLL muss eine aufrufende App in der Lage sein, ihre [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und alle anderen Dateien zu finden, die die DLL benötigt.
 
-Sie können eine benutzerdefinierte Buildaufgabe erstellen, um die DLL-Dateien in den *\<calling Projektordner > \Debug* -Ausgabeordner zu kopieren, oder Sie können die Dateien dort manuell kopieren.
+Sie können eine benutzerdefinierte Buildaufgabe erstellen, um die DLL-Dateien in Ihren * \<aufrufenden Projektordner zu kopieren,>-Debug-Ausgabeordner,* oder Sie können die Dateien dort manuell kopieren.
 
-Stellen Sie sicher, dass die dll an der richtigen Stelle aufgerufen wird. Dies mag offensichtlich erscheinen, aber wenn eine aufrufenden App eine andere Kopie der dll findet und lädt, wird der Debugger nie die von Ihnen festgelegten Haltepunkte erreichen.
+Stellen Sie sicher, dass Sie die DLL an der richtigen Position aufrufen. Dies mag offensichtlich erscheinen, aber wenn eine aufrufende App eine andere Kopie der DLL findet und lädt, wird der Debugger niemals die von Ihnen festgelegten Haltepunkte erreichen.
 
-## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a>Debuggen einer dll
+## <a name="debug-a-dll"></a><a name="vxtskdebuggingdllprojectswaystodebugthedll"></a>Debuggen einer DLL
 
-Eine DLL kann nicht direkt ausgeführt werden. Sie muss von einer APP aufgerufen werden, in der Regel eine *exe* -Datei. Weitere Informationen finden Sie unter [Visual Studio-Projekte C++- ](/cpp/ide/creating-and-managing-visual-cpp-projects).
+Sie können eine DLL nicht direkt ausführen. Es muss von einer App aufgerufen werden, in der Regel eine *EXE-Datei.* Weitere Informationen finden Sie unter [Visual Studio-Projekte - C++](/cpp/ide/creating-and-managing-visual-cpp-projects).
 
-Um eine DLL zu debuggen, können Sie [das Debuggen von der aufrufenden App aus starten](#vxtskdebuggingdllprojectsthecallingapplication)oder [das Debuggen aus dem DLL-Projekt](how-to-debug-from-a-dll-project.md) durch Angabe der zugehörigen Sie können auch das [direkt Fenster](#vxtskdebuggingdllprojectstheimmediatewindow) Debugger verwenden, um DLL-Funktionen oder-Methoden zur Entwurfszeit auszuwerten, ohne eine aufrufende APP zu verwenden.
+Zum Debuggen einer DLL können Sie mit [dem Debuggen über die aufrufende App](#vxtskdebuggingdllprojectsthecallingapplication)oder mit [dem Debuggen aus dem DLL-Projekt](how-to-debug-from-a-dll-project.md) beginnen, indem Sie die aufrufende App angeben. Sie können auch das [Fenster](#vxtskdebuggingdllprojectstheimmediatewindow) "Sofortdebugger" verwenden, um DLL-Funktionen oder -Methoden zur Entwurfszeit auszuwerten, ohne eine aufrufende App zu verwenden.
 
-Weitere Informationen finden Sie unter [der erste Einblick in den Debugger](../debugger/debugger-feature-tour.md).
+Weitere Informationen finden Sie unter [Erste Uhr im Debugger](../debugger/debugger-feature-tour.md).
 
-### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a>Starten des Debuggens von der aufrufenden App
+### <a name="start-debugging-from-the-calling-app"></a><a name="vxtskdebuggingdllprojectsthecallingapplication"></a>Starten des Debuggens über die aufrufende App
 
-Die APP, die eine DLL aufruft, kann folgende sein:
+Die App, die eine DLL aufruft, kann wie ausfolgenden:
 
-- Eine APP aus einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt in derselben oder einer anderen Lösung als die dll.
-- Eine vorhandene APP, die bereits auf einem Test-oder Produktions Computer bereitgestellt ist und ausgeführt wird.
+- Eine App [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aus einem Projekt in derselben oder einer anderen Projektmappe als die DLL.
+- Eine vorhandene App, die bereits auf einem Test- oder Produktionscomputer bereitgestellt und ausgeführt wird.
 - Eine App im Web, auf die über eine URL zugegriffen wird.
-- Eine Web-App mit einer Webseite, die die dll einbettet.
+- Eine Web-App mit einer Webseite, die die DLL einbettet.
 
-Zum Debuggen einer DLL aus einer aufrufenden App können Sie folgende Aktionen ausführen:
+Um eine DLL aus einer aufrufenden App zu debuggen, können Sie:
 
-- Öffnen Sie das Projekt für die aufrufenden APP, und starten Sie das Debugging, indem Sie **Debuggen**  > **Debugging starten** oder **F5**drücken.
+- Öffnen Sie das Projekt für die aufrufende App, und starten Sie das Debuggen, indem Sie **Debuggen** > **debuggen** oder **F5**drücken.
 
   oder
 
-- Fügen Sie eine APP an, die bereits auf einem Test-oder Produktions Computer bereitgestellt ist und ausgeführt wird. Verwenden Sie diese Methode für DLLs auf Websites oder in Web-Apps. Weitere Informationen finden Sie unter [How to: Attach to a running process (Vorgehensweise: Anfügen an einen laufenden Prozess)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- An eine App anfügen, die bereits bereitgestellt und auf einem Test- oder Produktionscomputer ausgeführt wird. Verwenden Sie diese Methode für DLLs auf Websites oder in Web-Apps. Weitere Informationen finden Sie unter [Gewusst wie: Anfügen an einen laufenden Prozess](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-Bevor Sie mit dem Debuggen der aufrufenden App beginnen, legen Sie einen Haltepunkt in der dll fest. Siehe [Verwenden von Breakpoints](../debugger/using-breakpoints.md). Wenn der dll-Haltepunkt gedrückt wird, können Sie den Code schrittweise durchlaufen und dabei die Aktion in den einzelnen Zeilen beobachten. Weitere Informationen finden Sie unter [Navigieren im Code im Debugger](../debugger/navigating-through-code-with-the-debugger.md).
+Bevor Sie mit dem Debuggen der aufrufenden App beginnen, legen Sie einen Haltepunkt in der DLL fest. Siehe [Verwenden von Haltepunkten](../debugger/using-breakpoints.md). Wenn der DLL-Haltepunkt erreicht wird, können Sie den Code schrittweise durchlaufen und die Aktion an jeder Zeile beobachten. Weitere Informationen finden Sie unter [Navigieren von Code im Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
-Während des Debuggens können Sie das Fenster **Module** verwenden, um die DLLs und *exe* -Dateien zu überprüfen, die die APP lädt. Wählen Sie zum Öffnen des Fensters **Module** beim Debuggen die Option **Debuggen**  > **Windows**  > **Module**aus. Weitere Informationen finden Sie unter [How to: Use the Modules window (Vorgehensweise: Verwenden des Fensters „Module“)](../debugger/how-to-use-the-modules-window.md).
+Während des Debuggens können Sie das Fenster **Modules** verwenden, um die DLLs und *EXE-Dateien* zu überprüfen, die die App lädt. Um das **Modulfenster** zu öffnen, **wählen** > Sie beim Debuggen**Windows-Module** > **debuggen**aus. Weitere Informationen finden Sie unter [Gewusst wie: Verwenden des Fensters Modules](../debugger/how-to-use-the-modules-window.md).
 
-### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a>Direkt Fenster verwenden
+### <a name="use-the-immediate-window"></a><a name="vxtskdebuggingdllprojectstheimmediatewindow"></a>Verwenden des Direktfensters
 
-Sie können das **direkt** Fenster verwenden, um DLL-Funktionen oder-Methoden zur Entwurfszeit auszuwerten. Das **direkt** Fenster übernimmt die Rolle einer aufrufenden app.
+Sie können das **Fenster Sofort** verwenden, um DLL-Funktionen oder -Methoden zur Entwurfszeit auszuwerten. Das **Fenster "Sofort"** spielt die Rolle einer aufrufenden App.
 
 >[!NOTE]
->Sie können das **direkt** Fenster zur Entwurfszeit mit den meisten Projekttypen verwenden. Dies wird für SQL, Webprojekte oder Skripts nicht unterstützt.
+>Sie können das **Fenster Sofort** zur Entwurfszeit mit den meisten Projekttypen verwenden. Es wird für SQL, Webprojekte oder Skripte nicht unterstützt.
 
-Um beispielsweise eine Methode mit dem Namen `Test` in der Klasse `Class1` zu testen:
+Zum Beispiel, um eine `Test` Methode `Class1`zu testen, die in der Klasse benannt ist:
 
-1. Wenn das DLL-Projekt geöffnet ist, öffnen Sie das **direkt** Fenster, indem Sie **Debuggen**  > **Fenster**  > **direkt** auswählen oder **STRG** +**alt** +**I**drücken.
+1. Wenn das DLL-Projekt geöffnet ist, öffnen Sie das **Fenster Sofort,** indem Sie**Windows** > **Sofort** **debuggen** > oder **Strg**+**Alt**+**I**drücken.
 
-1. Instanziieren Sie ein Objekt vom Typ `Class1`, indem Sie C# den folgenden Code im **direkt** Fenster eingeben und die **Eingabe**Taste drücken. Dieser verwaltete Code funktioniert mit C# den entsprechenden Syntax Änderungen für und Visual Basic:
+1. Instanziieren Sie ein `Class1` Objekt vom Typ, indem Sie im **Direktfenster** den folgenden C-Code eingeben und **enter**drücken. Dieser verwaltete Code funktioniert für C- und Visual Basic mit entsprechenden Syntaxänderungen:
 
    ```csharp
    Class1 obj = new Class1();
    ```
 
-   In C# müssen alle Namen vollqualifiziert sein. Alle Methoden oder Variablen müssen sich im aktuellen Gültigkeitsbereich und Kontext befinden, wenn der Sprachdienst versucht, den Ausdruck auszuwerten.
+   In C# müssen alle Namen vollqualifiziert sein. Alle Methoden oder Variablen müssen sich im aktuellen Bereich und Kontext befinden, wenn der Sprachdienst versucht, den Ausdruck auszuwerten.
 
 1. Vorausgesetzt, dass `Test` einen `int` -Parameter annimmt, werten Sie `Test` mit dem **Direktfenster** aus:
 
@@ -148,23 +148,23 @@ Um beispielsweise eine Methode mit dem Namen `Test` in der Klasse `Class1` zu te
    ?obj.Test(10);
    ```
 
-   Das Ergebnis druckt im **direkt** Fenster.
+   Das Ergebnis wird im **Direktfenster** gedruckt.
 
 1. Sie können mit dem Debuggen von `Test` fortfahren, indem Sie einen Haltepunkt einfügen und anschließend die Funktion erneut auswerten.
 
-   Der Breakpoint wird angezeigt, und Sie können `Test` schrittweise durchlaufen. Nach der Ausführung von `Test` befindet sich der Debugger wieder im Entwurfsmodus.
+   Der Haltepunkt wird getroffen, und `Test`Sie können durch gehen. Nach der Ausführung von `Test` befindet sich der Debugger wieder im Entwurfsmodus.
 
-## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debuggen im gemischten Modus
+## <a name="mixed-mode-debugging"></a><a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a>Mixed-Mode-Debugging
 
-Sie können eine aufrufende App für eine DLL in verwaltetem oder System eigenem Code schreiben. Wenn Ihre Native App eine verwaltete DLL aufruft und Sie beides debuggen möchten, können Sie sowohl die verwalteten als auch die systemeigenen Debugger in den Projekteigenschaften aktivieren. Der genaue Prozess hängt davon ab, ob Sie das Debuggen aus dem DLL-Projekt oder dem aufrufenden App-Projekt starten möchten. Weitere Informationen finden Sie unter [How to: Debug in Mixed Mode (Vorgehensweise: Debuggen im gemischten Modus)](../debugger/how-to-debug-in-mixed-mode.md).
+Sie können eine aufrufende App für eine DLL in verwaltetem oder systemeigenem Code schreiben. Wenn Ihre systemeigene App eine verwaltete DLL aufruft und Sie beides debuggen möchten, können Sie sowohl die verwalteten als auch die systemeigenen Debugger in den Projekteigenschaften aktivieren. Der genaue Prozess hängt davon ab, ob Sie mit dem Debuggen aus dem DLL-Projekt oder dem aufrufenden App-Projekt beginnen möchten. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).
 
-Sie können eine native dll auch aus einem verwalteten aufrufenden Projekt Debuggen. Weitere Informationen finden Sie unter Gewusst [wie: Debuggen von verwaltetem und nativem Code](how-to-debug-managed-and-native-code.md).
+Sie können auch eine systemeigene DLL aus einem verwalteten Aufrufprojekt debuggen. Weitere Informationen finden Sie unter [Debuggen von verwaltetem und systemeigenem Code](how-to-debug-managed-and-native-code.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
-- [Vorbereiten des Debuggens C++ von Projekten](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Vorbereiten des Debuggens von C++-Projekten](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Project settings for a C++ Debug configuration (Projekteinstellungen für eine C++-Debugkonfiguration)](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Project settings for C# Debug configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Project settings for a Visual Basic Debug configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Projekteinstellungen für C-Debug-Konfigurationen](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Debuggersicherheit](../debugger/debugger-security.md)

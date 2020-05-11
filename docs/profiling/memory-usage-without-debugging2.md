@@ -1,7 +1,7 @@
 ---
 title: Analysieren der Speicherauslastung ohne Debuggen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/15/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910346"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638828"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analysieren der Speicherauslastung ohne den Debugger
 
 Das **Speicherauslastungstool** überwacht die Speicherauslastung Ihrer App. Mithilfe des Tools können Sie in Echtzeit überwachen, welche Auswirkungen die Szenarios haben, die Sie aktiv in Visual Studio entwickeln. Sie können detaillierte Momentaufnahmen des Speicherzustands der App machen und diese miteinander vergleichen, um die Grundursachen für Speicherprobleme zu bestimmen.
 
-Das **Speicherauslastungstool** kann mit oder ohne Debugger ausgeführt werden. Die folgenden Anweisungen zeigen, wie Sie das **Speicherauslastungstool** ohne den Debugger mit dem Visual Studio-**Leistungsprofiler** verwenden.
-
->[!NOTE]
->- Damit Sie die Speicherauslastung für eine .NET Core-Anwendung messen können, müssen Sie das **Speicherauslastungstool** mit dem Debugger verwenden. Weitere Informationen finden Sie unter [Profilerstellung zur Speicherauslastung in Visual Studio](memory-usage.md).
->- Verwenden Sie zum Analysieren der Speicherauslastung in JavaScript- oder HTML UWP-Apps das [JavaScript-Speichertool](../profiling/javascript-memory.md) im **Leistungsprofiler**.
+Das **Speicherauslastungstool** kann [mit oder ohne Debugger ausgeführt werden](../profiling/running-profiling-tools-with-or-without-the-debugger.md). In diesem Artikel wird die Verwendung des **Speicherauslastungstools** ohne den Debugger im **Leistungs-Profiler** von Visual Studio veranschaulicht.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Diagnosesitzungen zur Speicherauslastung
 
 **So starten Sie eine Diagnosesitzung zur Speicherauslastung:**
 
-1. Öffnen Sie ein universelles Windows-C#-Projekt (UWP) in Visual Studio.
+1. Öffnen Sie ein Projekt in Visual Studio.
+
+   Das Speicherauslastungstool unterstützt .NET-Apps und ASP.NET-Apps sowie Apps im nativen und gemischten Modus (.NET und nativ).
+
+1. Legen Sie im Debugmenü die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Windows-Debugger** (oder **Lokaler Computer**) aus.
 
 1. Klicken Sie auf der Menüleiste auf **Debuggen** > **Leistungsprofiler**.
 
-1. Klicken Sie erst auf **Speicherauslastung** und dann auf **Starten**.
+1. Wählen Sie unter **Verfügbare Tools** die Option **Speicherauslastung** aus, und klicken Sie dann auf **Start**.
 
    ![Diagnosesitzung zur Speicherauslastung starten](../profiling/media/memuse_start_diagnosticssession.png "Diagnosesitzung zur Speicherauslastung starten")
 
@@ -56,7 +56,7 @@ Eine App verwendet eine Vielzahl verschiedener Arten von Objekten. Daher sollten
 
 Klicken Sie auf **Momentaufnahme erstellen**, wenn Sie mit dem Erfassen der Speicherdaten beginnen möchten.
 
-### <a name="BKMK_Close_a_monitoring_session"></a> Schließen der Diagnosesitzung
+### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Schließen der Diagnosesitzung
 
 Um eine Überwachungssitzung zu schließen, ohne einen Bericht zu erstellen, schließen Sie das Diagnosefenster einfach. Wenn Sie einen Bericht generieren möchten, nachdem Sie genügend Momentaufnahmen erstellt haben, klicken Sie auf **Sammlung beenden**.
 
@@ -68,7 +68,7 @@ Wenn Sie die Datenerfassung beenden, hält das **Speicherauslastungstool** die A
 
 ![Übersichtsseite Speicherauslastung](../profiling/media/memuse__reportoverview1.png "Übersichtsseite Speicherauslastung")
 
-### <a name="BKMK_Memory_Usage_snapshot_views"></a> Momentaufnahmen zur Speicherauslastung
+### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> Momentaufnahmen zur Speicherauslastung
 
 In den **Momentaufnahmenbereichen** finden Sie die Anzahl der Bytes und Objekte im Speicher zum Zeitpunkt der Momentaufnahme sowie Zahlen zum Vergleich zwischen der aktuellen und der vorherigen Momentaufnahme.
 
@@ -93,17 +93,17 @@ Sie können Einträge zum **Objekttyp** in einem Momentaufnahmenbericht erweiter
 
 Wenn ein **Objekttyp** in blau angezeigt wird, können Sie auf diesen klicken, um in einem separaten Fenster im Quellcode zu dem Objekt zu navigieren.
 
-Typen, die Sie nicht identifizieren können oder deren Bedeutung für Ihren Code Sie nicht kennen, gehören wahrscheinlich zu .NET Framework, zum Betriebssystem oder zu Compilerobjekten. Im **Speicherauslastungstool** werden diese Objekte angezeigt, wenn sie Bestandteil der Besitzketten Ihrer Objekte sind.
+Typen, die Sie nicht identifizieren können oder deren Bedeutung für Ihren Code Sie nicht kennen, gehören wahrscheinlich zu .NET, zum Betriebssystem oder zu Compilerobjekten. Im **Speicherauslastungstool** werden diese Objekte angezeigt, wenn sie Bestandteil der Besitzketten Ihrer Objekte sind.
 
 Der Momentaufnahmenbericht:
 
 - Die **Verwalteter Heap**-Struktur zeigt die Typen und Instanzen im Bericht an. Wenn Sie einen Typ oder eine Instanz auswählen, werden die Strukturen **Pfade zum Stamm** und **Referenzierte Objekte** für das gewählte Element angezeigt.
 
-- Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
+- Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
 
 - Die **Verweistypen**- oder die **Verweisobjekte**-Struktur zeigt die Objekte an, auf die der ausgewählte Typ oder die ausgewählte Instanz verweist.
 
-### <a name="BKMK_Report_tree_filters_"></a> Berichtsstrukturenfilter
+### <a name="report-tree-filters"></a><a name="BKMK_Report_tree_filters_"></a> Berichtsstrukturenfilter
 
 Die meisten Typen in Apps spielen für App-Entwickler keine große Rolle. Mit den Filtern für Momentaufnahmenberichte können die meisten dieser Typen in der **Verwalteter Heap**- und der **Pfade zum Stamm**-Struktur ausgeblendet werden.
 
@@ -123,7 +123,7 @@ Die meisten Typen in Apps spielen für App-Entwickler keine große Rolle. Mit de
 
 Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap**-Struktur. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)** . Der Link „Objekte“ ordnet den Bericht nach der Spalte **Anzahl**. Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
 
-### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> „Verwalteter Heap“-Struktur (Bericht mit Momentaufnahmedetails)
+### <a name="managed-heap-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> „Verwalteter Heap“-Struktur (Bericht mit Momentaufnahmedetails)
  Die Struktur des **verwalteten Heaps** führt die Objekttypen auf, die im Speicher gehalten werden. Sie können den Typennamen erweitern, um die zehn größten Instanzen des Typs nach Größe geordnet anzuzeigen. Wenn Sie einen Typ oder eine Instanz auswählen, wird die **Pfade zum Stamm**- und die **Verweisobjekt**-Struktur für das gewählte Element angezeigt.
 
  ![Struktur „Verwalteter Heap“](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Struktur „Verwalteter Heap“")
@@ -138,14 +138,14 @@ Eine **Verwalteter Heap**-Struktur in einem Bericht mit Momentaufnahmedetails we
 |**Inklusive Größe (Bytes)**|Die Größe der Instanzen des Typs oder einer einzelnen Instanz, einschließlich der Größe der enthaltenen Objekte.|
 |**Modul**|Das Modul, das dieses Objekt enthält.|
 
-### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> „Pfade zum Stamm“-Struktur (Berichte mit Momentaufnahmedetails)
-Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
+### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> „Pfade zum Stamm“-Struktur (Berichte mit Momentaufnahmedetails)
+Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
 
 Bei einer **Pfade zum Stamm**-Struktur wird die Anzahl der Objekte mit Verweisen auf diesen Typ in der Spalte **Verweisanzahl** angezeigt.
 
 ![Struktur „Pfade zum Stamm“ für Typen](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Struktur „Pfade zum Stamm“ für Typen")
 
-### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> „Verweistypen“- oder „Verweisobjekte“-Struktur (Berichte mit Momentaufnahmedetails)
+### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> „Verweistypen“- oder „Verweisobjekte“-Struktur (Berichte mit Momentaufnahmedetails)
 Die **Verweistypen**- oder die **Verweisobjekte**-Struktur zeigt die Objekte an, auf die der ausgewählte Typ oder die ausgewählte Instanz verweist.
 
 ![Struktur „Verweisobjekte“ für Instanzen](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Struktur „Verweisobjekte“ für Instanzen")
@@ -168,7 +168,7 @@ Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der
 
  ![Links zum Unterschiedebericht in einem Snapshot-Bereich](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links zum Unterschiedebericht in einem Snapshot-Bereich")
 
-### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> „Verwalteter Heap“-Struktur (Bericht zu Momentaufnahmenvergleichsberichte)
+### <a name="managed-heap-tree-snapshot-diff-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> „Verwalteter Heap“-Struktur (Bericht zu Momentaufnahmenvergleichsberichte)
 
  Die Struktur des **verwalteten Heaps** führt die Objekttypen auf, die im Speicher gehalten werden. Sie können den Typennamen erweitern, um die zehn größten Instanzen des Typs nach Größe geordnet anzuzeigen. Wenn Sie einen Typ oder eine Instanz auswählen, wird die **Pfade zum Stamm**- und die **Verweisobjekt**-Struktur für das gewählte Element angezeigt.
 
@@ -187,15 +187,15 @@ Eine **Verwalteter Heap**-Struktur in einem Vergleichsbericht bei Momentaufnahme
 |**Unterschied der inklusiven Größen (Bytes)**|Für Typen: der Unterschied in der Größe aller Typinstanzen zwischen der primären Momentaufnahme und der vorhergehenden Momentaufnahme, einschließlich der Größe der in den Objekten enthaltenen Objekte. Für Instanzen ist das Feld leer.|
 |**Modul**|Das Modul, das dieses Objekt enthält.|
 
-### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> „Pfade zum Stamm“-Struktur (Momentaufnahmenvergleichsberichte)
+### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> „Pfade zum Stamm“-Struktur (Momentaufnahmenvergleichsberichte)
 
-Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
+Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.
 
 Bei einer **Pfade zum Stamm**-Struktur wird die Anzahl der Objekte mit Verweisen auf diesen Typ in der Spalte **Verweisanzahl** angezeigt. Die Veränderungen der Anzahl im Vergleich zur vorherigen Momentaufnahme werden in der Spalte **Reference Diff** (Verweisunterschied) aufgeführt.
 
  ![Struktur „Pfade zum Stamm“ in einem Unterschiedsbericht](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Struktur „Pfade zum Stamm“ in einem Unterschiedsbericht")
 
-### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> „Verweistyp“- oder „Verweisobjekte“-Struktur (Momentaufnahmenvergleichsberichte)
+### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> „Verweistyp“- oder „Verweisobjekte“-Struktur (Momentaufnahmenvergleichsberichte)
 
 Die **Verweistypen**- oder die **Verweisobjekte**-Struktur zeigt die Objekte an, auf die der ausgewählte Typ oder die ausgewählte Instanz verweist.
 

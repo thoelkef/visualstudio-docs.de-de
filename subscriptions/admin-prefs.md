@@ -3,18 +3,19 @@ title: Festlegen von Vertragseinstellungen im Verwaltungsportal
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Einstellungen u. a. für Sprachen, Kontakte und die Abonnementebene im Verwaltungsportal festlegen.
-ms.openlocfilehash: 24e9ddfa92ee63e4d15eea086224e1069d4bcbc8
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000980"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508757"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Festlegen der Vertragseinstellungen im Verwaltungsportal
-Superadministratoren können nun bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen entscheiden darüber, welche Einstellungen Administratoren, die in Ihren Verträgen festgelegt sind, beim Hinzufügen von Abonnenten vornehmen können. Die Einstellungen können nur global von Superadministratoren angepasst werden.  
+Superadministratoren können bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen füllen automatisch die Abonnementdaten für Ihre Administratoren aus, wenn diese Abonnenten hinzufügen, und können nur von Superadministratoren global geändert werden.  
 
 ## <a name="access-preferences"></a>Zugriffseinstellungen
 Wenn Sie sich die Einstellungen anzeigen lassen oder diese ändern möchten, müssen Sie beim [Verwaltungsportal](https://manage.visualstudio.com) mit einer ID angemeldet sein, der Superadministratorberechtigungen entsprechend dem Vertrag zugewiesen sind.  
@@ -43,7 +44,7 @@ Wenn nur ein Vertrag mit der E-Mail-Adresse verknüpft ist, mit der Sie sich ang
 Mit dieser Einstellung und der Schaltfläche **Contact my Admin** (Administrator kontaktieren) auf der [Abonnementseite](https://my.visualstudio.com/subscriptions) im Verwaltungsportal können Abonnenten einen Administrator kontaktieren.  Wenn diese Einstellung nicht angegeben wird, werden Abonnentennachrichten an alle Administratoren und Superadministratoren weitergeleitet, die im Vertrag festgelegt sind.  Es wird empfohlen, einen E-Mail-Alias für eine Gruppe oder eine Sicherheitsgruppe zu verwenden, damit Nachrichten nur an die E-Mail-Adresse der gewünschten Zielgruppe weitergeleitet werden. Bei Bedarf können Sie auch die E-Mail-Adresse einer Einzelperson eingeben.
 
 > [!NOTE]
-> Die E-Mail-Adresse, die Sie mit dieser Einstellung festlegen, wird den Abonnenten NICHT mitgeteilt.  Wenn ein Abonnent mit dem Feature **Contact my Admin** (Administrator kontaktieren) eine Anfrage im Abonnentenportal stellt, wird die Nachricht an den Alias weitergeleitet. Dieser ist für die Abonnenten nicht sichtbar. 
+> Die E-Mail-Adresse, die Sie mit dieser Einstellung festlegen, wird den Abonnenten NICHT mitgeteilt.  Wenn ein Abonnent mit dem Feature **Contact my Admin** (Administrator kontaktieren) eine Anfrage im Abonnentenportal stellt, wird die Nachricht an den Alias weitergeleitet. Dieser ist für den Abonnenten nicht sichtbar. 
 
 ### <a name="default-external-subscribers-setting"></a>„Default external subscribers setting“ (Standardeinstellung für externe Abonnenten)
 Mit dieser Einstellung legen Sie fest, ob Administratoren Abonnenten hinzufügen können, die sich außerhalb des Mandanten oder des Verzeichnisses Ihrer Organisation befinden.  Wenn Sie diese Einstellung deaktivieren, sind keine externen Abonnenten zulässig.  Wenn Sie die Einstellung aktivieren und ein Administrator versucht, einen externen Abonnenten hinzuzufügen, wird dieser Administrator aufgefordert, die Aktion zu bestätigen. Anschließend kann er das Abonnent zuweisen. Administratoren können diese Einstellung nicht überschreiben. 
@@ -73,7 +74,18 @@ Antwort:  Wenn keine E-Mail-Adresse für die Einstellung **Contact email address
 ## <a name="resources"></a>Ressourcen
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
-- Erfahren Sie, wie Sie [Abonnements zuweisen](assign-license.md).
-- Erfahren Sie mehr über die unterschiedlichen [Abonnementvorteile](https://visualstudio.microsoft.com/vs/benefits/).
+In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements.
+- [Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements](assign-license.md)
+- [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
+- [Bearbeiten von Abonnements](edit-license.md)
+- [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)
+
+
 

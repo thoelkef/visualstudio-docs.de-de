@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666654"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Optionen, Text-Editor, U-SQL, IntelliSense
@@ -53,7 +53,7 @@ Aktivieren Sie ein Kontrollkästchen, um **QuickInfo** oder **Intellisense** aus
 
    Wenn diese Option aktiviert ist, wird nach Eingabe aller Zeichen für einen Eintrag in die Vervollständigungsliste und Drücken der EINGABETASTE automatisch eine neue Zeile hinzugefügt und der Cursor springt zur neuen Zeile.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
 - [Verwenden von IntelliSense](../../ide/using-intellisense.md)

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567279"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631028"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Neues in MSBuild 15
 
@@ -39,6 +39,7 @@ MSBuild ist jetzt als Teil des [.NET Core SDK](https://www.microsoft.com/net/dow
 - Die Eigenschaften `SDK35ToolsPath` und `SDK40ToolsPath` verweisen auf das .NET Framework SDK, das mit dieser Version von Visual Studio geliefert wird (beispielsweise 10.0A für die 4.X-Tools).
 
 ## <a name="updates"></a>Updates
+
 - Das [Project-Element](../msbuild/project-element-msbuild.md) verfügt über ein neues `SDK`-Attribut. Das `Xmlns`-Attribut ist zudem jetzt optional. Weitere Informationen zum `SDK`-Attribut finden Sie unter [Vorgehensweise: Verwenden von MSBuild-Projekt-SDKs](../msbuild/how-to-use-project-sdk.md), [Pakete, Metapakete und Frameworks](/dotnet/core/packages) und [Erweiterungen des CSPROJ-Formats für .NET Core](/dotnet/core/tools/csproj).
 - Das [Item-Element](../msbuild/item-element-msbuild.md) verfügt außerhalb von Zielen über ein neues `Update`-Attribut. Auch die Einschränkung für das `Remove`-Attribut wurde entfernt.
 - Bei *Directory.Build.props* handelt es sich um eine benutzerdefinierte Datei, die Anpassungen für Projekte in einem Verzeichnis bereitstellt. Diese Datei wird automatisch aus *Microsoft.Common.props* importiert, wenn die Eigenschaft `ImportDirectoryBuildTargets` nicht auf **FALSE** festgelegt wird. *Directory.Build.targets* wird durch *Microsoft.Common.targets* importiert.
@@ -51,5 +52,6 @@ MSBuild ist jetzt als Teil des [.NET Core SDK](https://www.microsoft.com/net/dow
 - `NormalizeDirectory` kombiniert Pfadelemente, sorgt für die Verwendung eines nachgestellten Schrägstrichs und stellt sicher, dass die ausgegebene Zeichenfolge die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem aufweist.
 - `GetPathOfFileAbove` gibt den Pfad der unmittelbar vorangehenden Datei zurück. Dies ist zum Aufruf von `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />` funktional äquivalent.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
+
 - [MSBuild](../msbuild/msbuild.md)

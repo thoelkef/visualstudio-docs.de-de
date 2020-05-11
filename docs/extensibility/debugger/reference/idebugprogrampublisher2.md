@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2 | Microsoft-Dokumentation
+title: IDebugProgramPublisher2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f94e7ea830a49db5b95bae3d0d6c50f73e6d3d64
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343138"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721524"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-Diese Schnittstelle ermöglicht es einer Debug-Engine (DE) oder benutzerdefinierte Portanbieter Programme für das Debuggen zu registrieren.
+Diese Schnittstelle ermöglicht es einem Debugmodul (DE) oder benutzerdefinierten Portlieferanten, Programme für das Debuggen zu registrieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,34 +29,34 @@ IDebugProgramPublisher2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
-Visual Studio implementiert diese Schnittstelle zum Registrieren von Programmen, die gedebuggt wird, um sie für das Debuggen durch mehrere Prozesse sichtbar zu machen.
+Visual Studio implementiert diese Schnittstelle, um zu registrieren, dass Programme gedebuggt werden, um sie für das Debuggen über mehrere Prozesse hinweg sichtbar zu machen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
-Aufrufen von COM `CoCreateInstance` Funktion `CLSID_ProgramPublisher` zum Abrufen dieser Schnittstelle (siehe Beispiel). Ein DE oder einen benutzerdefinierten Port Lieferanten verwendet diese Schnittstelle zum Registrieren von programmknoten, die aktuell gedebuggten Programm darstellen.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+Rufen Sie `CoCreateInstance` die `CLSID_ProgramPublisher` Funktion von COM auf, um diese Schnittstelle zu erhalten (siehe Beispiel). Ein DE oder ein benutzerdefinierter Portlieferant verwendet diese Schnittstelle, um Programmknoten zu registrieren, die Programme darstellen, die gedebuggt werden.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
 Diese Schnittstelle implementiert die folgenden Methoden:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Stellt ein Programm-Knoten zur Verfügung, und die Sitzung DEs Debug-Manager (SDM).|
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Entfernt einen Knoten für die Anwendung, damit es nicht mehr verfügbar ist.|
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Stellt ein Programm DEs und das SDM zur Verfügung.|
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Ein Programm entfernt, sodass sie nicht mehr verfügbar ist.|
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Legt ein Flag, das angibt, dass ein Debugger vorhanden ist.|
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Stellt einen Programmknoten für DEs und den Sitzungsdebug-Manager (SDM) zur Verfügung.|
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Entfernt einen Programmknoten, sodass er nicht mehr verfügbar ist.|
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Stellt ein Programm für DEs und das SDM zur Verfügung.|
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Entfernt ein Programm, sodass es nicht mehr verfügbar ist.|
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Legt ein Flag fest, das angibt, dass ein Debugger vorhanden ist.|
 
-## <a name="remarks"></a>Hinweise
-Diese Schnittstelle stellt Programme und programmknoten zur Verfügung (d. h. "veröffentlicht" werden) für die Verwendung von DEs und sitzungsbasierter Debug-Manager (SDM). Verwenden Sie zum Zugriff auf veröffentlichte Programme und programmknoten der [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle. Dies ist die einzige Möglichkeit, die Visual Studio erkennt, dass ein Programm im Debugmodus befindet.
+## <a name="remarks"></a>Bemerkungen
+Diese Schnittstelle stellt Programme und Programmknoten zur Verfügung (d. h. "veröffentlicht" sie) für die Verwendung durch DEs und den Session Debug Manager (SDM). Um auf veröffentlichte Programme und Programmknoten zuzugreifen, verwenden Sie die [IDebugProgramProvider2-Schnittstelle.](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Nur so kann Visual Studio erkennen, dass ein Programm gedebuggt wird.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Beispiel
-Dieses Beispiel zeigt den Herausgeber des Programms zu instanziieren, und registrieren einen Programm-Knoten. Diese stammt aus dem Tutorial [Veröffentlichen der Anwendung Knoten](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
+In diesem Beispiel wird gezeigt, wie der Programmherausgeber instanziiert und ein Programmknoten registriert wird. Dies wird aus dem [Tutorial, Veröffentlichen des Programmknotens](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)entnommen.
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:
@@ -89,6 +89,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

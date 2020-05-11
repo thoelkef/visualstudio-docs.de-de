@@ -1,27 +1,27 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Microsoft-Dokumentation
+title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionDeleted
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c16b4e89e89477a5dd11a7d358f441c62f13db8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7dd8b5b86b6b8c89d11326b817f2718a3ee4ad3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336562"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733704"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-Ermittelt, dass die Funktion an der angegebenen Debug-Adresse gelöscht wird.
+Bestimmt, dass die Funktion an der angegebenen Debugadresse gelöscht wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,13 +39,13 @@ int IsFunctionDeleted(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Die debugadresse dargestellt werden, indem ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle. Diese Adresse muss es sich um eine METHOD_ADDRESS sein.
+[in] Die Debugadresse, die durch eine [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) dargestellt wird. Diese Adresse muss eine METHOD_ADDRESS sein.
 
 ## <a name="return-value"></a>Rückgabewert
-Gibt zurück, wenn die Funktion gelöscht wird, `S_OK`. Wenn die Funktion vorhanden ist, gibt `S_FALSE`.
+Wenn die Funktion gelöscht `S_OK`wird, gibt zurück. Wenn die Funktion vorhanden `S_FALSE`ist, gibt zurück.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(
@@ -92,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

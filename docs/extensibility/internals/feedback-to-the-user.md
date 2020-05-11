@@ -1,5 +1,5 @@
 ---
-title: Feedback an den Benutzer | Microsoft-Dokumentation
+title: Feedback an den Benutzer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,56 +8,56 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2255a972dd7a889713e77fa686b348500c03ea7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328981"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708410"
 ---
 # <a name="feedback-to-the-user"></a>Feedback an den Benutzer
-In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE), visuelles Feedback in Bezug auf verfügbare Funktionalität auf der aktuellen Auswahl und globale Auswahlkontext des Benutzers basiert. Die folgende Tabelle enthält die Funktionalität, die in andere Auswahl Kontexten verfügbar ist.
+In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der integrierten Entwicklungsumgebung (IDE) basiert das visuelle Feedback zur verfügbaren Funktionalität auf dem aktuellen Auswahl- und globalen Auswahlkontext des Benutzers. In der folgenden Tabelle sind die Funktionen aufgeführt, die in verschiedenen Auswahlkontexten verfügbar sind.
 
-|Auswahlkontext|Verfügbaren Funktionen|
+|Auswahlkontext|Verfügbare Funktionalität|
 |-----------------------|-----------------------------|
 |IDE|Global|
-|Aktuelle Produktgruppe|Produktspezifisch|
-|Aktive Hierarchie|Hierarchie Typ spezifische|
-|Aktive Hierarchie-Element|Hierarchie Element Typ spezifische|
-|Aktive Dokument|Dokument Typ spezifische|
-|Fenster der obersten Multiple Document Interface (MDI)|Fenster Typ spezifische|
-|Aktuellen Auswahlkontext|Bestimmte Auswahlkontext|
+|Aktueller Produktsatz|Produktspezifisch|
+|Aktive Hierarchie|Hierarchietypspezifisch|
+|Aktives Hierarchieelement|Hierarchieelementtyp spezifisch|
+|Aktives Dokument|Dokumenttypspezifisch|
+|MDI-Fenster (Topmost Multiple-Document Interface)|Fenstertypspezifisch|
+|Aktueller Auswahlkontext|Auswahlkontextspezifisch|
 
- Wenn Sie die Funktionalität nur Benutzer benötigen und kontinuierlich bereitstellen, konsistente Auswahl und Umgebung Kontext Feedback anzuzeigen, verringern Sie die Komplexität in der IDE. Die folgenden Regeln gelten immer, wenn ein Fenster in der IDE geöffnet wird:
+ Wenn Sie nur die Funktionen aufbringen, die Benutzer benötigen, und kontinuierlich konsistentes Auswahl- und Umgebungskontextfeedback bereitstellen, reduzieren Sie die Komplexität in der IDE. Die folgenden Regeln gelten immer dann, wenn ein Fenster in der IDE geöffnet wird:
 
-- Wenn das Fenster seinen Auswahlkontext geändert wird, wird Auswahlfeedback eindeutig im Fenster angezeigt und die **dynamische Hilfe** Fenster angezeigt wird, wird den aktuellen Kontext entsprechend aktualisiert.
+- Wenn das Fenster seinen Auswahlkontext ändert, wird das Auswahlfeedback im Fenster deutlich angezeigt, und das Fenster **Dynamische Hilfe** wird, falls angezeigt, aktualisiert, um den aktuellen Kontext widerzuspiegeln.
 
-- Wenn das Fenster globale Auswahlkontext geändert wird, werden alle kontextspezifische Menüs, die aktive Hierarchie-Fenster und die Titelleiste der Anwendung entsprechend den aktuellen Kontext aktualisiert.
+- Wenn das Fenster den globalen Auswahlkontext ändert, werden alle kontextspezifischen Menüs, das aktive Hierarchiefenster und die Titelleiste der Anwendung aktualisiert, um den aktuellen Kontext widerzuspiegeln.
 
-- Im Fenster sollten die Eigenschaften für die aktuelle Auswahl in Oberfläche der **Eigenschaften** Fenster und optional angezeigt, die **Eigenschaftenseiten** Dialogfeld.
+- Das Fenster sollte Eigenschaften für die aktuelle Auswahl im **Eigenschaftenfenster** und optional, falls angezeigt, das Dialogfeld **Eigenschaftenseiten** aufzeigen.
 
-- Wenn das Fenster nicht Eigenschaften Oberfläche oder globale Auswahlkontext ändern, sollten Auswahlfeedback nicht im Fenster bleiben, wenn er nicht mehr das aktive Fenster in der IDE ist.
+- Wenn das Fenster keine Eigenschaften anzeigt oder den globalen Auswahlkontext ändert, sollte das Auswahlfeedback nicht im Fenster verbleiben, wenn es sich nicht mehr um das aktive Fenster in der IDE handelt.
 
-- Alle für die spezifischen Toolfenster sollten kontinuierlich das aktive Dokument widerspiegeln.
+- Alle dokumentspezifischen Werkzeugfenster sollten das aktive Dokument kontinuierlich widerspiegeln.
 
-- Menüs, Symbolleisten und die Titelleiste der Anwendung sollte das oberste Multiple Document Interface (MDI)-Clientfenster widerspiegeln.
+- Menüs, Symbolleisten und die Titelleiste der Anwendung sollten das MDI-Clientfenster (Topmost Multiple Document Interface, MDI) widerspiegeln.
 
-  Z. B. wenn der HTML-Code anzeigen von einer **Webformular** innerhalb einer Web-Anwendung mit Visual Basic-Projekt wird geöffnet und der Benutzer auswählt eine `<td>` Tag, Feedback auf folgende Weise bereitgestellt:
+  Wenn z. B. die HTML-Ansicht eines **Webformulars** in einem Visual `<td>` Basic Web Application-Projekt geöffnet wird und der Benutzer ein Tag auswählt, wird Feedback wie folgt bereitgestellt:
 
-- Auswahl in das aktive Fenster angegeben ist, und entsprechend in der **Eigenschaften** Fenster.
+- Die Auswahl wird im aktiven Fenster angezeigt und im **Eigenschaftenfenster** wiedergegeben.
 
-- Die Dokument-spezifischen **Toolbox** wird das aktive Dokument entsprechend aktualisiert.
+- Die dokumentspezifische **Toolbox** wird aktualisiert, um das aktive Dokument widerzuspiegeln.
 
-- Die **Editor** Symbolleiste und **Tabelle** Menü angezeigt werden und der Titelleiste auf das Web Form-Fenster entsprechend aktualisiert.
+- Das Menü **"Editor-Symbolleiste"** und **"Tabelle"** werden angezeigt, und die Titelleiste wird aktualisiert, um das Fenster Webformular widerzuspiegeln.
 
-- Die aktive Hierarchie-Fenster, in der Regel **Projektmappen-Explorer**, und das Title-Leiste Update entsprechend den aktuellen Kontext und dem kontextabhängigen **Projekt** Menübefehle jetzt anwenden, auf dem aktiven Web -Anwendungsprojekt.
+- Das aktive Hierarchiefenster, das in der Regel **Projektmappen-Explorer**ist, und seine Titelleistenaktualisierung, um den aktuellen Kontext widerzuspiegeln, und die kontextsensitiven **Projektmenübefehle** gelten jetzt für das aktive Webanwendungsprojekt.
 
-## <a name="see-also"></a>Siehe auch
-- [Auswahl und Aktualität in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Auswahl und Währung in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)
 - [Hierarchien und Auswahl](../../extensibility/internals/hierarchies-and-selection.md)

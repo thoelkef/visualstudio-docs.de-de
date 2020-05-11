@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691735"
 ---
 # <a name="data-visualizations"></a>Datenvisualisierungen
@@ -23,12 +23,12 @@ Die Schnellansichten im Debugpad **Local** (Lokal) können angezeigt werden, ind
 
 Die nachfolgende Liste behandelt viele der neuen Visualisierungen, die beim Debuggen in Visual Studio für Mac verfügbar sind.
 
-## <a name="point"></a>Punkt
+## <a name="point"></a>Point
 Ein Point, PointF oder CGPoint unter iOS und Mac wird als Tupel gerendert, der die X- und Y-Werte im Debugpad anzeigt:
 
 ![Punktvisualisierung](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Größe
+## <a name="size"></a>Size
 Eine Size, SizeF oder CGSize unter iOS und Mac wird als Rechteck gerendert. Dieses wird maßstabsgetreu gezeichnet, bis eine Dimension 250 px überschreitet. An diesem Punkt wird das Rechteck auf eine Größe von 250 px für die größte Dimension skaliert:
 
 [Größenvisualisierung](media/data-visualizations-image11.png)
@@ -43,7 +43,7 @@ Die Koordinaten werden auf einer Karte eingezeichnet und der Standort wird an di
 
 [Koordinatenvisualisierung](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Farbe
+## <a name="color"></a>Color
 Hierdurch werden die Eigenschaften von UIColor, CGColor und Color angezeigt, wodurch die Farbvorschau, RGBA-Komponenten, die Werte für Farbton, Sättigung und Helligkeit und der Farbtonwert dargestellt werden:
 
 ![Farbvisualisierung](media/data-visualizations-image14.png)
@@ -60,7 +60,7 @@ Die Schnellansicht zeigt eine `NSBezierPath` an:
 
 ![Visualisierung der Bezier-Kurve](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Zeichenfolge
+## <a name="string"></a>String
 
 Eine Zeichenfolge mit weniger als 100 Zeichen wird vollständig und ohne Vorschau angezeigt. Längere Zeichenfolgen werden in der Vorschau vollständig angezeigt. Zeichenfolgen sind bearbeitbar und die Schnellansicht verfügt über die Schaltfläche „Bearbeiten“, sodass der Zeichenfolgenwert wie unten dargestellt entweder in der Vorschau oder im Zeichenfolgenwert-Editor bearbeitet werden kann:
 
@@ -101,7 +101,7 @@ Einige andere Typen, die ebenfalls über ihre eigenen Inline-Schnellansichten ve
 * **IntPtr**
   * Dadurch wird eine hexadezimale Darstellung des IntPtr angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Untersuchen von Variablen in den Fenstern „Auto“ und „Lokal“ (Visual Studio unter Windows)](/visualstudio/debugger/autos-and-locals-windows)
 - [Anzeigen von Zeichenfolgen in einer Schnellansicht (Visual Studio unter Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

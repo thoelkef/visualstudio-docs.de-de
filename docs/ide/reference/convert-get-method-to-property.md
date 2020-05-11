@@ -1,23 +1,24 @@
 ---
 title: Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in eine Get-Methode
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e3807f3902cbd0d2718f249f15cd268fb81ac51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570231"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094205"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in ein Refactoring einer Get-Methode
 
@@ -25,11 +26,13 @@ Diese Refactorings gelten für:
 
 - C#
 
+- Visual Basic
+
 ## <a name="convert-get-method-to-property"></a>Konvertieren einer Get-Methode in eine Eigenschaft
 
-**Beschreibung:** Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
+**Beschreibung**: Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
 
-**Hintergrund:** Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
+**Hintergrund**: Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
 
 ### <a name="how-to"></a>Vorgehensweise
 
@@ -68,9 +71,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Konvertieren einer Eigenschaft in eine Get-Methode
 
-**Beschreibung:** Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
+**Beschreibung**: Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
 
-**Hintergrund:** Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
+**Hintergrund**: Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
 
 ### <a name="how-to"></a>Vorgehensweise
 
@@ -85,7 +88,7 @@ public int MyValue
 
 1. Wenn Sie mit der Änderung in der Codevorschau zufrieden sind, drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet. Klicken Sie alternativ im Menü auf die Schaltfläche zum Korrigieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

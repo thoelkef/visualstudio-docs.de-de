@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115177"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen in Auslastungstestergebnissen
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>How to: Add and Delete Counters on Graphs in Load Test Results
 
 Sie können das **Indikatorenfenster** verwenden, um einem Diagramm Leistungsindikatoren hinzuzufügen.
 
@@ -28,7 +28,7 @@ Sie können das **Indikatorenfenster** verwenden, um einem Diagramm Leistungsind
 
 **Überlegungen zum Samplingintervall von Leistungsindikatoren**
 
-Wählen Sie basierend auf der Länge des Auslastungstests einen Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wählen Sie basierend auf der Länge des Auslastungstests einen Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstestlaufs aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
@@ -36,7 +36,7 @@ Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 |-|-----------------------------|
 |\< 1 Stunde|5 Sekunden|
 |1 – 8 Stunden|15 Sekunden|
-|8 – 24 Stunden|30 Sekunden|
+|8 – 24 Stunden|30 Sekunden|
 |> 24 Stunden|60 Sekunden|
 
 **Überlegungen zum Einschließen von Details der zeitlichen Steuerung zur Erfassung von prozentualen Daten**
@@ -47,7 +47,7 @@ Zum Aktivieren der Eigenschaft **Speicher für Details der zeitlichen Steuerung*
 
 Insbesondere bei langen Auslastungstests kann sehr viel Speicherplatz erforderlich sein, um Detaildaten der zeitlichen Steuerung im Ergebnisrepository für Auslastungstests zu speichern. Zudem nimmt das Speichern der Daten im Ergebnisrepository für Auslastungstests am Ende des Tests mehr Zeit in Anspruch, da die Daten bis zum Abschluss der Ausführung auf den Auslastungstests-Agents gespeichert werden. Bei der Beendigung des Auslastungstests werden die Daten im Repository gespeichert. Die Eigenschaft **Speicher für Details der zeitlichen Steuerung** ist standardmäßig aktiviert. Falls dies in Ihrer Testumgebung ein Problem ist, sollten Sie **Speicher für Details der zeitlichen Steuerung** auf **Keine** festlegen.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)
+Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>So zeigen Sie einen bestimmten Leistungsindikator in einem Auslastungstestdiagramm an
 
@@ -71,18 +71,18 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft 
 
 5. Um die Leistungsindikatordaten aus dem Diagramm zu entfernen, klicken Sie in der Spalte **Indikator** der Legende mit der rechten Maustaste auf den Leistungsindikator, und klicken Sie auf **Löschen**.
 
-     \- oder -
+     \- oder –
 
      Klicken Sie mit der rechten Maustaste auf die Datenlinie im Diagramm, und klicken Sie auf **Löschen**.
 
-     \- oder -
+     \- oder –
 
      Klicken Sie in der Spalte **Indikator** der Legende oder in der Datenzeile im Diagramm auf den Leistungsindikator, und drücken Sie die **ENTF-TASTE**.
 
     > [!NOTE]
     > Es ist auch möglich, einen Leistungsindikator in der Legende, aber nicht im Diagramm anzuzeigen. Verwenden Sie dazu den Befehl **Indikator in Legende anzeigen**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen in Auslastungstestergebnissen](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [How to: Create Custom Graphs (Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen)](../test/how-to-create-custom-graphs-in-load-test-results.md)

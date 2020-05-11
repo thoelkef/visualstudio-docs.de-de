@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593849"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093603"
 ---
 # <a name="msbuild-targets"></a>MSBuild-Ziele
 
@@ -42,7 +42,7 @@ Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der B
 </Target>
 ```
 
- Wenn AfterBuild ausgeführt wird, wird nur „Second occurrence“ (Zweites Vorkommen) angezeigt.
+ Wird `AfterBuild` ausgeführt, wird nur das „zweite Vorkommen“ angezeigt, da die zweite Definition von `AfterBuild` die erste ausblendet.
 
  MSBuild ist von der Importreihenfolge abhängig, sodass die letzte Definition eines Ziels die verwendete Definition ist.
 
@@ -105,6 +105,7 @@ Reference: 4.0
  Wenn alle Ausgabeelemente aktuell sind, überspringt MSBuild das Ziel, wodurch die Buildgeschwindigkeit deutlich verbessert wird. Dies wird als inkrementeller Build des Ziels bezeichnet. Wenn nur einige Dateien aktuell sind, führt MSBuild das Ziel ohne die aktuellen Elemente aus. Dies wird als partiell inkrementeller Build des Ziels bezeichnet. Weitere Informationen finden Sie unter [Incremental Builds (Inkrementelle Builds)](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Standardbuildziele
+
 Im Folgenden werden die öffentlichen Ziele in Microsoft.Common.CurrentVersion.Targets aufgelistet.
 
 ```
@@ -1014,4 +1015,4 @@ This target gathers the Redist folders from the SDKs which have been resolved.
 ## <a name="see-also"></a>Siehe auch
 
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
-- [Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [How to: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

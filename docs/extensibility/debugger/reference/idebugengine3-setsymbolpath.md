@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetSymbolPath | Microsoft-Dokumentation
+title: IDebugEngine3::SetSymbolPath | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetSymbolPath
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da2318e9e2e30ea4cf0dce4bef6abd03aef2b0d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fbe5128900fa10147c747cbcba4129e96d4c4ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352475"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730662"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Legt fest, den Pfad oder die Pfade, die für das Debuggen von Symbolen durchsucht werden.
+Legt den Pfad oder die Pfade fest, die nach Debugsymbolen durchsucht werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,28 +46,28 @@ int SetSymbolPath(
 ## <a name="parameters"></a>Parameter
 
 `szSymbolSearchPath`\
-[in] Eine Zeichenfolge mit den Symbolsuchpfad oder die Pfade. Einzelheiten finden Sie unter "Hinweise". Darf nicht NULL sein.
+[in] Zeichenfolge, die den Symbolsuchpfad oder die Pfade enthält. Weitere Informationen finden Sie unter "Bemerkungen". Lässt keine NULL-Werte zu.
 
 `szSymbolCachePath`\
-[in] Eine Zeichenfolge mit den lokalen Pfad, in dem Symbole zwischengespeichert werden können. Darf nicht NULL sein.
+[in] Zeichenfolge, die den lokalen Pfad enthält, in dem Symbole zwischengespeichert werden können. Lässt keine NULL-Werte zu.
 
 `Flags`\
-[in] Nicht verwendet. immer auf 0 festgelegt.
+[in] Nicht verwendet; immer auf 0 gesetzt.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Zeichenfolge `szSymbolSearchPath` ist eine Liste von einem oder mehreren Pfaden, getrennt durch ein Semikolon nach Symbolen sucht. Diese Pfade können es sich um einen lokalen Pfad, einen UNC-Format-Pfad oder eine URL sein. Diese Pfade können auch eine Mischung verschiedener Domänentypen sein. Wenn der Pfad UNC ist (z. B. \\\Symserver\Symbols), und klicken Sie dann die Debug-Engine bestimmt werden soll, wenn der Pfad auf einem Symbolserver und sollte in der Lage, laden Symbole von diesem Server, und speichern Sie sie in der Pfadangabe von `szSymbolCachePath`.
+## <a name="remarks"></a>Bemerkungen
+ Die `szSymbolSearchPath` Zeichenfolge ist eine Liste von einem oder mehreren Pfaden, die durch Semikolons getrennt sind, um nach Symbolen zu suchen. Bei diesen Pfaden kann es sich um einen lokalen Pfad, einen UNC-Pfad oder eine URL handelt. Diese Pfade können auch eine Mischung aus verschiedenen Typen sein. Wenn der Pfad UNC ist \\(z. B. "Symserver"-Symbole), sollte das Debugmodul bestimmen, ob der Pfad zu einem Symbolserver `szSymbolCachePath`erfolgt, und sollte in der Lage sein, Symbole von diesem Server zu laden, indem es sie in dem von angegebenen Pfad zwischenspeichern kann.
 
- Der Symbolpfad kann auch eine oder mehrere cachespeicherorte enthalten. Caches sind in der Reihenfolge ihrer Priorität, mit der höchsten Priorität Cache zuerst aufgeführt und getrennt von * Symbole. Zum Beispiel:
+ Der Symbolpfad kann auch einen oder mehrere Cachespeicherorte enthalten. Caches werden in der Prioritätsreihenfolge mit der höchsten Priorität Cache zuerst aufgelistet und durch * Symbole getrennt. Beispiel:
 
 ```
-\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com
+\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com
 ```
 
- Die [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) Methode führt die tatsächliche Last der Symbole.
+ Die [LoadSymbols-Methode](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) führt die tatsächliche Last der Symbole aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

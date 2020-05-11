@@ -1,10 +1,10 @@
 ---
 title: Debugverfahren und -tools
-description: Schreiben Sie mit weniger Fehlern besseren Code, indem Sie Visual Studio verwenden, um Ausnahmen zu beheben, Fehler zu beheben und den Code zu verbessern.
+description: Schreiben Sie mithilfe von Visual Studio besseren Code mit weniger Fehlern, um Ausnahmen zu beseitigen, Fehler zu beheben und den Code zu verbessern.
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 01/24/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -13,43 +13,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
-ms.translationtype: MT
+ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000176"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301020"
 ---
-# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debuggingtechniken und-Tools, mit denen Sie besseren Code schreiben
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debugverfahren und -tools zum Schreiben von besserem Code
 
-Das Beheben von Fehlern und Fehlern im Code kann zeitaufwändig und manchmal frustrierend sein. Es dauert viel Zeit, um zu erfahren, wie Sie effektiv Debuggen, aber eine leistungsstarke IDE wie Visual Studio kann Ihre Aufgabe viel leichter machen. Eine IDE kann Ihnen helfen, Fehler zu beheben und den Code schneller zu debuggen. Dies ist nicht nur das, sondern Sie kann auch Ihnen helfen, besseren Code mit weniger Fehlern zu schreiben. Unser Ziel dieses Artikels besteht darin, Ihnen einen ganzheitlichen Überblick über den "Fehlerbehebungsprozess" zu geben, damit Sie wissen, wann Sie den Code Analyzer verwenden sollten, wann der Debugger verwendet werden soll, wie Ausnahmen behoben werden und wie der Code für beabsichtigt ist. Wenn Sie bereits wissen, dass Sie den Debugger verwenden müssen, lesen Sie [zuerst den Debugger](../debugger/debugger-feature-tour.md).
+Das Beheben von Fehlern im Code kann zeitaufwändig und manchmal frustrierend sein. Es dauert lange, bis man herausgefunden hat, wie man effektiv Fehler beheben kann. Eine integrierte Entwicklungsumgebung (IDE) wie Visual Studio kann Ihnen diese Aufgabe um einiges leichter machen. Eine IDE kann Ihnen helfen, Fehler zu beheben und den Code schneller zu debuggen. Außerdem bietet sie Unterstützung beim Schreiben von besserem Code mit weniger Fehlern. Ziel dieses Artikels ist es, Ihnen einen ganzheitlichen Überblick über den Fehlerbehebungsprozess zu geben, damit Sie wissen, wann Sie das Codeanalysetool bzw. den Debugger verwenden, wie Sie Ausnahmen beseitigen und wie Sie beim Programmieren klare Absichten verfolgen. Wenn Sie bereits wissen, dass Sie den Debugger verwenden müssen, finden Sie weitere Informationen unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
 
-In diesem Artikel wird die Nutzung der IDE erläutert, um Ihre Codierungs Sitzungen produktiver zu gestalten. Wir berühren uns für verschiedene Aufgaben, z. b.:
+In diesem Artikel wird die Nutzung der IDE erläutert, um Ihre Programmierungsvorgänge produktiver zu machen. Es werden unter anderem folgende Aufgaben erläutert:
 
-* Vorbereiten des Codes für das Debuggen mithilfe der Code Analyse der IDE
+* Vorbereiten des Codes für das Debuggen mithilfe des Codeanalysetools der IDE
 
-* Beheben von Ausnahmen (Laufzeitfehler)
+* Beseitigen von Ausnahmen (Laufzeitfehler)
 
-* Minimieren von Fehlern durch Codieren der Absicht (mithilfe von Assert)
+* Minimieren von Fehlern durch Programmieren mit klarer Absicht (mithilfe von Assert)
 
-* Verwendungszwecke des Debuggers
+* Verwendung des Debuggers
 
-Um diese Aufgaben zu veranschaulichen, zeigen wir einige der gängigsten Arten von Fehlern und Fehlern, die beim Debuggen Ihrer Apps auftreten. Obwohl der Beispielcode lautet C#, sind die konzeptionellen Informationen in der Regel C++auf, Visual Basic, JavaScript und andere von Visual Studio unterstützte Sprachen anwendbar (sofern nicht anders angegeben). Die Screenshots wurden in C# erstellt.
+Zur Veranschaulichung dieser Aufgaben zeigen wir einige der gängigsten Arten von Fehlern, die beim Debuggen Ihrer Apps auftreten. Obwohl der Beispielcode in C# geschrieben wurde, sind die konzeptionellen Informationen in der Regel auf C++, Visual Basic, JavaScript und andere von Visual Studio unterstützte Sprachen anwendbar (sofern nicht anders angegeben). Die Screenshots wurden in C# erstellt.
 
-## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Erstellen Sie eine Beispiel-App mit einigen Fehlern und Fehlern darin.
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Erstellen einer Beispiel-App mit Fehlern
 
-Der folgende Code enthält einige Fehler, die Sie mithilfe der Visual Studio-IDE beheben können. Bei der App handelt es sich um eine einfache APP, die das Abrufen von JSON-Daten aus einem Vorgang simuliert, die Daten in ein Objekt deserialisiert und eine einfache Liste mit den neuen Daten aktualisiert.
+Der folgende Code enthält einige Fehler, die Sie mithilfe der Visual Studio-IDE beheben können. Bei der App handelt es sich um eine einfache App, die das Abrufen von JSON-Daten aus einem Vorgang simuliert, die Daten in ein Objekt deserialisiert und eine einfache Liste mit den neuen Daten aktualisiert.
 
 So erstellen Sie die App:
 
-1. Öffnen Sie Visual Studio, und wählen Sie **Datei** > **Neues** > **Projekt**aus. Wählen **Sie C#unter Visualisierung** die Option **Windows-Desktop** oder **.net Core**aus, und wählen Sie dann im mittleren Bereich eine **Konsolen-App**aus.
+1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss, je nachdem, welchen Typ von App Sie erstellen möchten, entweder die Workload **Plattformübergreifende .NET Core-Entwicklung** oder die Workload **.NET-Desktopentwicklung** installiert sein.
 
-    > [!NOTE]
-    > Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
-2. Geben Sie im Feld **Name** **Console_Parse_JSON** ein, und klicken Sie auf **OK**. Visual Studio erstellt daraufhin das Projekt.
+    Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...** . Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** oder die Workload **.NET-Desktopentwicklung** aus, und klicken Sie auf **Anpassen**.
 
-3. Ersetzen Sie den Standard Code in der *Program.cs* -Datei des Projekts durch den unten stehenden Beispielcode.
+1. Öffnen Sie Visual Studio.
+
+    ::: moniker range=">=vs-2019"
+    Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Geben Sie im Suchfeld den Begriff **Konsole** ein, und wählen Sie dann entweder **Konsolen-App (.NET Core)** oder **Konsolen-App (.NET Framework)** aus. Wählen Sie **Weiter** aus. Geben Sie einen Projektnamen wie **Console_Parse_JSON** ein, und klicken Sie dann auf **Erstellen**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** auf die Option **Konsolen-App** und dann im mittleren Bereich entweder auf **Konsolen-App (.NET Core)** oder auf **Konsolen-App (.NET Framework)** . Geben Sie einen Namen wie **Console_Parse_JSON** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
+
+    Wenn die Projektvorlage **Konsolen-App (.NET Core)** oder **Konsolen-App (.NET Framework)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Get Tools and Features** (Tools und Features abrufen), wodurch der Visual Studio-Installer geöffnet wird. Wählen Sie entweder die Workload **Plattformübergreifende .NET Core-Entwicklung** oder die Workload **.NET-Desktopentwicklung** aus, und klicken Sie dann auf **Anpassen**.
+
+    Visual Studio erstellt das Konsolenprojekt, das im Projektmappen-Explorer (rechter Bereich) angezeigt wird.
+
+1. Ersetzen Sie den Standardcode in der *Program.cs*-Datei des Projekts durch den unten stehenden Beispielcode.
 
 ```csharp
 using System;
@@ -172,37 +184,37 @@ namespace Console_Parse_JSON
 }
 ```
 
-## <a name="find-the-red-and-green-squiggles"></a>Suchen Sie die roten und grünen Wellenlinien.
+## <a name="find-the-red-and-green-squiggles"></a>Suche nach roten und grünen Wellenlinien
 
-Bevor Sie versuchen, die Beispiel-APP zu starten und den Debugger auszuführen, überprüfen Sie den Code im Code-Editor auf die roten und grünen Wellenlinien. Diese Stellen Fehler und Warnungen dar, die durch die Code Analyse der IDE identifiziert werden. Die roten Wellenlinien sind Kompilierzeitfehler, die Sie beheben müssen, bevor Sie den Code ausführen können. Bei den grünen Wellenlinien handelt es sich um Warnungen. Obwohl Sie Ihre APP häufig ausführen können, ohne die Warnungen zu beheben, können Sie eine Fehlerquelle sein, und Sie sparen sich häufig Zeit und Probleme, indem Sie Sie untersuchen. Diese Warnungen und Fehler werden auch im **Fehlerliste** Fenster angezeigt, wenn Sie eine Listenansicht bevorzugen.
+Überprüfen Sie den Code im Code-Editor auf die roten und grünen Wellenlinien, bevor Sie versuchen, die Beispiel-App zu starten und den Debugger auszuführen. Diese stellen Fehler und Warnungen dar, die vom Codeanalysetool der IDE identifiziert werden. Die roten Wellenlinien sind Kompilierzeitfehler, die Sie beheben müssen, bevor Sie den Code ausführen können. Bei den grünen Wellenlinien handelt es sich um Warnungen. Obwohl Sie Ihre App häufig ausführen können, ohne die Warnungen zu beseitigen, können diese eine Fehlerquelle sein, und Sie sparen sich häufig Zeit und Nerven bei deren Überprüfung. Diese Warnungen und Fehler werden auch im Fenster **Fehlerliste** angezeigt, wenn Sie eine Listenansicht bevorzugen.
 
-In der Beispiel-App werden mehrere rote Wellenlinien angezeigt, die Sie beheben müssen, und ein grünes Bild, das Sie betrachten. Dies ist der erste Fehler.
+In der Beispiel-App werden mehrere rote Wellenlinien und eine grüne Wellenlinie angezeigt, die Sie beseitigen müssen. Hier ist der erste Fehler.
 
-![Fehler, der als rote Wellenlinie angezeigt wird.](../debugger/media/write-better-code-red-squiggle.png)
+![Fehler, der mit roter Wellenlinie angezeigt wird](../debugger/media/write-better-code-red-squiggle.png)
 
-Um diesen Fehler zu beheben, sehen Sie sich ein weiteres Feature der IDE an, das durch das Glühbirnen Symbol dargestellt wird.
+Sie nutzen zum Beheben des Fehlers eine weitere Funktion der IDE, die durch das Glühbirnensymbol dargestellt wird.
 
-## <a name="check-the-light-bulb"></a>Überprüfen Sie die Glühbirne!
+## <a name="check-the-light-bulb"></a>Glühbirne als Hinweis
 
-Die erste rote Wellenlinie stellt einen Kompilierzeitfehler dar. Bewegen Sie den Mauszeiger darüber, und die Meldung ```The name `Encoding` does not exist in the current context```angezeigt.
+Die erste rote Wellenlinie stellt einen Kompilierzeitfehler dar. Bewegen Sie den Mauszeiger darüber, und die Meldung ```The name `Encoding` does not exist in the current context``` wird angezeigt.
 
-Beachten Sie, dass dieser Fehler ein Glühbirnen Symbol unten links anzeigt. Neben dem Schrauben Schraubensymbol ![Schrauben Schraubensymbol](../ide/media/screwdriver-icon.png)das Glühbirnen Symbol ![Glühbirnen Symbol](../ide/media/light-bulb-icon.png) schnelle Aktionen dar, mit denen Sie Code Inline beheben oder umgestalten können. Die Glühbirne stellt Probleme dar, die Sie beheben *sollten* . Der Schraubendreher ist für Probleme, die Sie beheben können. Verwenden Sie die erste vorgeschlagene Korrektur, um diesen Fehler zu beheben, indem Sie auf der linken Seite auf " **System. Text** " klicken.
+Beachten Sie, dass für diesen Fehler ein Glühbirnensymbol unten links anzeigt wird. Neben dem Schraubendrehersymbol ![Schraubendrehersymbol](../ide/media/screwdriver-icon.png) stellt das Glühbirnensymbol ![Glühbirnensymbol](../ide/media/light-bulb-icon.png) schnelle Aktionen dar, mit denen Sie Code inline korrigieren oder umgestalten können. Die Glühbirne stellt Probleme dar, die Sie beheben *sollten*. Der Schraubendreher steht für Probleme, die Sie beheben können. Verwenden Sie die erste vorgeschlagene Korrektur, um diesen Fehler zu beheben, indem Sie auf der linken Seite auf **using System.Text** klicken.
 
 ![Verwenden der Glühbirne zum Korrigieren von Code](../debugger/media/write-better-code-missing-include.png)
 
-Wenn Sie auf dieses Element klicken, fügt Visual Studio die `using System.Text`-Anweisung am Anfang der *Program.cs* -Datei hinzu, und die rote Wellenlinie verschwindet. (Wenn Sie nicht sicher sind, was eine vorgeschlagene Korrektur tun wird, wählen Sie den Link **Vorschau der Änderungen** auf der rechten Seite aus, bevor Sie die Korrektur anwenden.)
+Wenn Sie auf dieses Element klicken, fügt Visual Studio die `using System.Text`-Anweisung am Anfang der Datei *Program.cs* ein, und die rote Wellenlinie verschwindet. (Wenn Sie nicht sicher sind, was eine vorgeschlagene Korrektur bewirkt, können Sie vor deren Anwendung auf der rechten Seite auf den Link **Vorschau der Änderungen anzeigen** klicken.)
 
-Der vorherige Fehler ist ein allgemeiner Fehler, den Sie normalerweise beheben, indem Sie dem Code eine neue `using`-Anweisung hinzufügen. Es gibt mehrere häufige, ähnliche Fehler, wie z. b. ```The type or namespace `Name` cannot be found.``` diese Arten von Fehlern auf einen fehlenden Assemblyverweis hindeuten (Klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie > **Verweis** **Hinzufügen** ), einen falsch geschriebenen Namen oder eine fehlende C#Bibliothek aus, die Sie hinzufügen müssen (für klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **nuget-Pakete**
+Der vorherige Fehler ist ein häufiger Fehler, den Sie normalerweise beheben, indem Sie dem Code eine neue `using`-Anweisung hinzufügen. Es gibt mehrere häufige, ähnliche Fehler (z. B. ```The type or namespace `Name` cannot be found.```). Diese Arten von Fehlern können auf einen fehlenden Assemblyverweis (mit der rechten Maustaste auf das Projekt und dann auf **Hinzufügen** > **Verweis** klicken), einen falsch geschriebenen Namen oder eine fehlende Bibliothek hindeuten, die Sie hinzufügen müssen (für C# mit der rechten Maustaste auf das Projekt und dann auf **NuGet-Pakete verwalten** klicken).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Beheben der restlichen Fehler und Warnungen
 
-In diesem Code sind einige weitere Wellenlinien zu sehen. Hier sehen Sie einen allgemeinen Typkonvertierungs Fehler. Wenn Sie auf die Wellenlinie zeigen, sehen Sie, dass der Code versucht, eine Zeichenfolge in eine ganze Zahl zu konvertieren. Dies wird nicht unterstützt, es sei denn, Sie fügen expliziten Code hinzu, um die Konvertierung vorzunehmen.
+In diesem Code sind einige weitere Wellenlinien zu sehen. Hier sehen Sie einen häufigen Typkonvertierungsfehler. Wenn Sie mit dem Mauszeiger auf die Wellenlinie zeigen, sehen Sie, dass der Code versucht, eine Zeichenfolge in eine ganze Zahl zu konvertieren. Dies wird nicht unterstützt, es sei denn, Sie fügen expliziten Code hinzu, um die Konvertierung vorzunehmen.
 
-![Typkonvertierungs Fehler](../debugger/media/write-better-code-conversion-error.png)
+![Typkonvertierungsfehler](../debugger/media/write-better-code-conversion-error.png)
 
-Da der Code Analyzer ihre Absicht nicht erraten kann, gibt es keine Glühbirnen, die Ihnen dabei helfen, dieses Mal zu unterstützen. Um diesen Fehler zu beheben, müssen Sie die Absicht des Codes kennen. In diesem Beispiel ist es nicht allzu schwer zu erkennen, dass `points` ein numerischer Wert (Integer) sein sollte, da Sie versuchen, `points` `totalpoints`hinzuzufügen.
+Da das Codeanalysetool Ihre Absicht nicht erraten kann, sind in diesem Fall keine Glühbirnen zu sehen, um Ihnen Unterstützung zu bieten. Sie müssen die Absicht des Codes kennen, um diesen Fehler zu beheben. In diesem Beispiel ist es nicht allzu schwer zu erkennen, dass `points` ein numerischer Wert (Integer) sein sollte, da Sie versuchen, `points` zu `totalpoints` hinzuzufügen.
 
-Um diesen Fehler zu beheben, ändern Sie den `points`-Member der `User`-Klasse von:
+Ändern Sie zum Beheben des Fehlers den `points`-Member der `User`-Klasse von:
 
 ```csharp
 [DataMember]
@@ -218,11 +230,11 @@ internal int points;
 
 Die roten Wellenlinien im Code-Editor verschwinden.
 
-Zeigen Sie dann auf die grüne Wellenlinie in der Deklaration des `points` Datenmembers. Der Code Analyse zeigt Ihnen, dass der Variablen nie ein Wert zugewiesen wird.
+Zeigen Sie dann auf die grüne Wellenlinie in der Deklaration des `points`-Datenmembers. Das Codeanalysetool zeigt Ihnen an, dass der Variablen nie ein Wert zugewiesen wird.
 
 ![Warnmeldung für nicht zugewiesene Variable](../debugger/media/write-better-code-warning-message.png)
 
-In der Regel ist dies ein Problem, das behoben werden muss. Allerdings speichern Sie in der Beispiel-APP während des Deserialisierungsprozesses tatsächlich Daten in der `points` Variable und fügen diesen Wert dann dem `totalpoints` Datenmember hinzu. In diesem Beispiel wissen Sie den Zweck des Codes und können die Warnung gefahrlos ignorieren. Wenn Sie die Warnung jedoch vermeiden möchten, können Sie den folgenden Code ersetzen:
+In der Regel ist dies ein Problem, das behoben werden muss. Allerdings speichern Sie in der Beispiel-App während des Deserialisierungsprozesses tatsächlich Daten in der `points`-Variable und fügen diesen Wert dann dem `totalpoints`-Datenmember hinzu. In diesem Beispiel kennen Sie die Absicht des Codes und können die Warnung gefahrlos ignorieren. Wenn Sie die Warnung jedoch vermeiden möchten, können Sie den folgenden Code ersetzen:
 
 ```csharp
 item.totalpoints = users[i].points;
@@ -235,27 +247,27 @@ item.points = users[i].points;
 item.totalpoints += users[i].points;
 ```
 
-Die grüne Wellenlinie wird entfernt.
+Die grüne Wellenlinie verschwindet.
 
-## <a name="fix-an-exception"></a>Beheben einer Ausnahme
+## <a name="fix-an-exception"></a>Beseitigen einer Ausnahme
 
-Wenn Sie alle roten Wellenlinien korrigiert und behoben oder zumindest untersucht haben (alle grünen Wellenlinien), können Sie den Debugger starten und die app ausführen.
+Wenn Sie alle roten Wellenlinien behoben und korrigiert oder zumindest alle grünen Wellenlinien untersucht haben, können Sie den Debugger starten und die App ausführen.
 
-Drücken Sie die Taste **F5** (**Debuggen > Debuggen starten**), oder klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging").
+Drücken Sie **F5** (**Debuggen > Debuggen starten**), oder klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten").
 
-An diesem Punkt löst die Beispiel-App eine `SerializationException` Ausnahme aus (ein Laufzeitfehler). Das heißt, die APP wählt die Daten aus, die Sie serialisieren möchten. Da Sie die APP im Debugmodus (Debugger angefügt) gestartet haben, führt die Ausnahme Unterstützung des Debuggers Sie direkt zu dem Code, der die Ausnahme ausgelöst hat, und gibt Ihnen eine hilfreiche Fehlermeldung.
+An diesem Punkt löst die Beispiel-App eine `SerializationException`-Ausnahme aus (ein Laufzeitfehler). Das heißt, die App wählt die Daten aus, die Sie serialisieren möchten. Da Sie die App im Debugmodus (Debugger angefügt) gestartet haben, führt Sie die Ausnahmen-Hilfe des Debuggers direkt zu dem Code, der die Ausnahme ausgelöst hat, und gibt Ihnen eine hilfreiche Fehlermeldung.
 
-![Eine SerializationException tritt auf.](../debugger/media/write-better-code-serialization-exception.png)
+![SerializationException tritt auf](../debugger/media/write-better-code-serialization-exception.png)
 
-Die Fehlermeldung weist Sie darauf hin, dass der Wert `4o` nicht als ganze Zahl analysiert werden kann. In diesem Beispiel wissen Sie, dass die Daten schlecht sind: `4o` sollten `40`sein. Wenn Sie jedoch nicht die Kontrolle über die Daten in einem realen Szenario haben (z.b., wenn Sie es von einem Webdienst erhalten), was tun Sie damit? Wie lösen Sie dieses Problem?
+Die Fehlermeldung weist Sie darauf hin, dass der Wert `4o` nicht als ganze Zahl analysiert werden kann. Sie wissen, dass die Daten in diesem Beispiel schlecht sind: `4o` sollte `40` sein. Was tun Sie aber damit, wenn Sie in einem realen Szenario nicht die Kontrolle über die Daten haben (wenn Sie diese beispielsweise von einem Webdienst erhalten)? Wie lösen Sie dieses Problem?
 
-Wenn Sie auf eine Ausnahme reagieren, müssen Sie eine Reihe von Fragen stellen (und beantworten):
+Wenn eine Ausnahme auftritt, müssen Sie eine Reihe von Fragen stellen (und beantworten):
 
 * Handelt es sich bei dieser Ausnahme um einen Fehler, den Sie beheben können? Oder:
 
-* Ist diese Ausnahme etwas, das Ihre Benutzer möglicherweise bemerken?
+* Tritt die Ausnahme auch bei Ihren Benutzern auf?
 
-Wenn dies der erste ist, beheben Sie den Fehler. (In der Beispiel-App bedeutet das, dass die fehlerhaften Daten behoben werden müssen.) Wenn dies der zweite ist, müssen Sie möglicherweise die Ausnahme in Ihrem Code mit einem `try/catch`-Block behandeln (im nächsten Abschnitt sehen wir uns andere mögliche Strategien an). Ersetzen Sie in der Beispiel-App den folgenden Code:
+Ist ersteres der Fall, beheben Sie den Fehler. (In der Beispiel-App bedeutet dies, dass die fehlerhaften Daten korrigiert werden.) Wenn zweiteres der Fall ist, müssen Sie möglicherweise die Ausnahme in Ihrem Code mit einem `try/catch`-Block behandeln (im nächsten Abschnitt sehen wir uns andere mögliche Strategien an). Ersetzen Sie in der Beispiel-App folgenden Code:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -275,13 +287,13 @@ catch (SerializationException)
 }
 ```
 
-Ein `try/catch`-Block hat einige Leistungseinbußen, sodass Sie Sie nur verwenden möchten, wenn Sie Sie wirklich benötigen, d. h. wo (a) Sie in der Releaseversion der APP vorkommen können, und wo (b) die Dokumentation für die Methode anzeigt, dass Sie die Ausnahme überprüfen sollten (vorausgesetzt, die Dokumentation ist vollständig!). In vielen Fällen können Sie eine Ausnahme ordnungsgemäß behandeln, und der Benutzer muss diese nicht kennen.
+Ein `try/catch`-Block hat einige Leistungseinbußen zur Folge, sodass Sie ihn nur verwenden sollten, wenn Sie ihn wirklich benötigen. Dies ist der Fall, wenn (a) sie in der Releaseversion der App vorkommen und (b) die Dokumentation für die Methode anzeigt, dass Sie die Ausnahme überprüfen sollten (vorausgesetzt die Dokumentation ist vollständig). In vielen Fällen können Sie eine Ausnahme ordnungsgemäß behandeln, und der Benutzer bekommt davon nichts mit.
 
-Im folgenden finden Sie einige wichtige Tipps für die Ausnahmebehandlung:
+Im Folgenden finden Sie einige wichtige Tipps für die Behandlung von Ausnahmen:
 
-* Vermeiden Sie die Verwendung eines leeren Catch-Blocks, wie z. b. `catch (Exception) {}`, der keine geeignete Aktion zum verfügbar machen oder behandeln eines Fehlers ausführt. Ein leerer oder nicht informativer catch-Block kann Ausnahmen ausblenden und die debuggingerstellung Ihres Codes erschweren.
+* Vermeiden Sie die Verwendung eines leeren catch-Blocks (z. B. `catch (Exception) {}`), der keine geeignete Aktion zum Aufdecken oder Behandeln eines Fehlers ausführt. Ein leerer oder nicht informativer catch-Block kann Ausnahmen ausblenden und das Debuggen des Codes erschweren anstatt zu erleichtern.
 
-* Verwenden Sie den `try/catch`-Block um die bestimmte Funktion, die die Ausnahme auslöst (`ReadObject`in der Beispiel-APP). Wenn Sie ihn um einen größeren Code Abschnitt herum verwenden, blenden Sie den Speicherort des Fehlers aus. Verwenden Sie z. b. den `try/catch`-Block nicht um den aufzurufenden `ReadToObject`der übergeordneten Funktion, oder Sie wissen nicht genau, wo die Ausnahme aufgetreten ist.
+* Verwenden Sie den `try/catch`-Block für die bestimmte Funktion, die die Ausnahme auslöst (`ReadObject` in der Beispiel-App). Wenn Sie ihn für einen größeren Codeblock verwenden, blenden Sie die Position des Fehlers aus. Verwenden Sie beispielsweise den `try/catch`-Block nicht für den Aufruf der hier gezeigten übergeordneten Funktion `ReadToObject`, da Sie sonst nicht genau wissen, wo die Ausnahme aufgetreten ist.
 
     ```csharp
     // Don't do this
@@ -294,19 +306,19 @@ Im folgenden finden Sie einige wichtige Tipps für die Ausnahmebehandlung:
     }
     ```
 
-* Für unbekannte Funktionen, die Sie in Ihre APP einschließen, insbesondere für die Interaktion mit externen Daten (z. b. eine Webanforderung), überprüfen Sie die Dokumentation, um zu sehen, welche Ausnahmen die Funktion wahrscheinlich auslöst. Dies können wichtige Informationen für die ordnungsgemäße Fehlerbehandlung und das Debuggen Ihrer APP sein.
+* Überprüfen Sie für unbekannte Funktionen, die Sie in Ihre App einschließen, und insbesondere für die Interaktion mit externen Daten (wie z. B. eine Webanforderung), die Dokumentation, um zu sehen, welche Ausnahmen die Funktion wahrscheinlich auslöst. Dies können wichtige Informationen für die ordnungsgemäße Fehlerbehandlung und das Debuggen Ihrer App sein.
 
-Korrigieren Sie für die Beispiel-APP die `SerializationException` in der `GetJsonData`-Methode, indem Sie `4o` in `40`ändern.
+Korrigieren Sie für die Beispiel-App `SerializationException` in der `GetJsonData`-Methode, indem Sie `4o` in `40`ändern.
 
-## <a name="clarify-your-code-intent-by-using-assert"></a>Verdeutlichen Sie Ihre Code Absicht mithilfe von Assert.
+## <a name="clarify-your-code-intent-by-using-assert"></a>Verdeutlichen der Absicht von Code mithilfe von Assert
 
-Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**). Dadurch wird die app in weniger Schritten neu gestartet. Im Konsolenfenster wird die folgende Ausgabe angezeigt.
+Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**). Dadurch wird die App in weniger Schritten neu gestartet. Im Konsolenfenster wird die folgende Aus angezeigt:
 
-![NULL-Wert in Ausgabe](../debugger/media/write-better-code-using-assert-null-output.png)
+![NULL-Wert in der Ausgabe](../debugger/media/write-better-code-using-assert-null-output.png)
 
-Sie können in dieser Ausgabe etwas sehen, das nicht ganz rechts ist. " **Name** " und " **LastName** " für den dritten Datensatz sind leer.
+Sie sehen in dieser Ausgabe etwas, das nicht ganz richtig ist. **name** und **lastname** für den dritten Datensatz sind leer.
 
-Dies ist ein guter Zeitpunkt, über eine hilfreiche Programmier Übung zu sprechen, die häufig unterausgelastet ist, um `assert`-Anweisungen in ihren Funktionen zu verwenden. Durch Hinzufügen des folgenden Codes schließen Sie eine Lauf Zeit Überprüfung ein, um sicherzustellen, dass `firstname` und `lastname` nicht `null`werden. Ersetzen Sie den folgenden Code in der `UpdateRecords`-Methode:
+Dies ist ein guter Zeitpunkt, um über einen nicht allzu häufig verwendeten aber dennoch hilfreichen Programmierstil zu sprechen: die Verwendung von `assert`-Anweisungen in Ihren Funktionen. Durch Hinzufügen des folgenden Codes schließen Sie eine Laufzeitüberprüfung ein, um sicherzustellen, dass `firstname` und `lastname` nicht `null` entsprechen. Ersetzen Sie den folgenden Code in der `UpdateRecords`-Methode:
 
 ```csharp
 if (existingUser == false)
@@ -329,28 +341,28 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-Wenn Sie den Funktionen während des Entwicklungsprozesses `assert`-Anweisungen wie diese hinzufügen, können Sie die Absicht des Codes angeben. Im vorherigen Beispiel geben wir Folgendes an:
+Wenn Sie den Funktionen während des Entwicklungsprozesses `assert`-Anweisungen wie diese hinzufügen, können Sie die Absicht Ihres Codes angeben. Im vorherigen Beispiel geben wir Folgendes an:
 
 * Für den Vornamen ist eine gültige Zeichenfolge erforderlich.
 * Für den Nachnamen ist eine gültige Zeichenfolge erforderlich.
 
-Durch die Angabe der Absicht auf diese Weise erzwingen Sie Ihre Anforderungen. Dies ist eine einfache und praktische Methode, die Sie verwenden können, um während der Entwicklung Fehler zu beheben. (`assert`-Anweisungen werden auch als Hauptelement in Komponententests verwendet.)
+Durch die Angabe der Absicht auf diese Weise erfüllen Sie Ihre Anforderungen. Dies ist eine einfache und praktische Methode, die Sie verwenden können, um während der Entwicklung Fehler zu beheben. (`assert`-Anweisungen werden auch als Hauptelement in Komponententests verwendet.)
 
-Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
-
-> [!NOTE]
-> Der `assert` Code ist nur in einem Debugbuild aktiv.
-
-Wenn Sie neu starten, hält der Debugger an der `assert`-Anweisung an, da der Ausdruck `users[i].firstname != null` als `false` anstelle der `true`ausgewertet wird.
-
-![Assert wird in false aufgelöst.](../debugger/media/write-better-code-using-assert.png)
-
-Der `assert` Fehler weist darauf hin, dass ein Problem vorliegt, das Sie untersuchen müssen. `assert` können viele Szenarien abdecken, in denen Sie nicht notwendigerweise eine Ausnahme sehen. In diesem Beispiel wird dem Benutzer keine Ausnahme angezeigt, und ein `null` Wert wird als `firstname` in der Liste der Datensätze hinzugefügt. Dies kann später zu Problemen führen (z. b. in der Konsolenausgabe) und das Debuggen möglicherweise erschwert werden.
+Klicken Sie auf der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
 
 > [!NOTE]
-> In Szenarien, in denen eine Methode für den `null` Wert aufgerufen wird, wird ein `NullReferenceException` Ergebnisse ausgegeben. Normalerweise möchten Sie die Verwendung eines `try/catch` Blocks für eine allgemeine Ausnahme vermeiden, d. h. eine Ausnahme, die nicht an die jeweilige Bibliotheksfunktion gebunden ist. Jedes Objekt kann eine `NullReferenceException`auslösen. Wenn Sie sich nicht sicher sind, lesen Sie die Dokumentation für die Bibliotheksfunktion.
+> Der `assert`-Code ist nur in einem Debugbuild aktiv.
 
-Während des Debuggens ist es gut, eine bestimmte `assert` Anweisung beizubehalten, bis Sie wissen, dass Sie Sie durch eine tatsächliche Code Korrektur ersetzen müssen. Nehmen wir an, Sie entscheiden, dass der Benutzer die Ausnahme in einem Releasebuild der APP bemerken könnte. In diesem Fall müssen Sie Code umgestalten, um sicherzustellen, dass Ihre APP keine schwerwiegende Ausnahme auslöst oder zu einem anderen Fehler führt. Um diesen Code zu korrigieren, ersetzen Sie den folgenden Code:
+Wenn Sie neu starten, hält der Debugger an der `assert`-Anweisung an, da der Ausdruck `users[i].firstname != null` als `false` anstelle von `true` ausgewertet wird.
+
+![Für Assert wird „false“ ausgegeben](../debugger/media/write-better-code-using-assert.png)
+
+Der `assert`-Fehler weist darauf hin, dass ein Problem vorliegt, das Sie untersuchen müssen. `assert` kann viele Szenarios abdecken, in denen nicht notwendigerweise eine Ausnahme auftritt. In diesem Beispiel wird dem Benutzer keine Ausnahme angezeigt, und ein `null`-Wert wird als `firstname` in der Liste der Datensätze hinzugefügt. Dies kann später zu Problemen führen (siehe Konsolenausgabe) und das Debuggen möglicherweise erschweren.
+
+> [!NOTE]
+> In Szenarios, in denen eine Methode für den `null`-Wert aufgerufen wird, wird `NullReferenceException` ausgegeben. Normalerweise möchten Sie die Verwendung eines `try/catch`-Blocks für eine allgemeine Ausnahme vermeiden (d. h. eine Ausnahme, die nicht an die jeweilige Bibliotheksfunktion gebunden ist). Jedes Objekt kann `NullReferenceException` auslösen. Lesen Sie die Dokumentation für die Bibliotheksfunktion, wenn Sie sich nicht sicher sind.
+
+Während des Debuggens ist es ratsam, eine bestimmte `assert`-Anweisung beizubehalten, bis Sie wissen, dass Sie diese durch eine tatsächliche Codekorrektur ersetzen müssen. Nehmen wir an, Sie entscheiden sich dazu, dass die Ausnahme für den Benutzer in einem Releasebuild der App auftritt. In diesem Fall müssen Sie Code umgestalten, um sicherzustellen, dass Ihre App keine schwerwiegende Ausnahme auslöst oder zu einem anderen Fehler führt. Ersetzen Sie den folgenden Code, um diesen Code zu korrigieren:
 
 ```csharp
 if (existingUser == false)
@@ -366,9 +378,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-Wenn Sie diesen Code verwenden, erfüllen Sie die Code Anforderungen, und stellen Sie sicher, dass ein Datensatz mit einem `firstname` oder `lastname` Wert von `null` den Daten nicht hinzugefügt wird.
+Wenn Sie diesen Code verwenden, erfüllen Sie die Codeanforderungen und stellen sicher, dass den Daten kein Datensatz mit `null` für die Werte `firstname` und `lastname` hinzugefügt wird.
 
-In diesem Beispiel haben wir die beiden `assert`-Anweisungen in einer-Schleife hinzugefügt. Wenn Sie `assert`verwenden, sollten Sie in der Regel `assert` Anweisungen am Einstiegspunkt (Anfang) einer Funktion oder Methode hinzufügen. Sie sehen sich derzeit die `UpdateRecords`-Methode in der Beispiel-APP an. Bei dieser Methode wissen Sie, dass Sie Probleme haben, wenn eines der Methodenargumente `null`ist, und überprüfen beide mit einer `assert`-Anweisung am Einstiegspunkt der Funktion.
+In diesem Beispiel haben wir die beiden `assert`-Anweisungen in einer Schleife hinzugefügt. Wenn Sie `assert` verwenden, sollten Sie in der Regel `assert`-Anweisungen am Einstiegspunkt (Anfang) einer Funktion oder Methode hinzufügen. Sie sehen sich derzeit die `UpdateRecords`-Methode in der Beispiel-App an. Sie wissen, dass bei dieser Methode Probleme auftreten, wenn eines der Methodenargumente `null` ist. Überprüfen Sie daher beide mit einer `assert`-Anweisung am Einstiegspunkt der Funktion.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)
@@ -377,37 +389,37 @@ public static void UpdateRecords(List<User> db, User[] users)
     Debug.Assert(users != null);
 ```
 
-Bei den vorangehenden Anweisungen ist ihre Absicht, dass Sie vorhandene Daten (`db`) laden und neue Daten (`users`) abrufen, bevor Sie etwas aktualisieren.
+Bei den vorangehenden Anweisungen haben Sie die Absicht, vorhandene Daten (`db`) zu laden und neue Daten (`users`) abzurufen, bevor Sie etwas aktualisieren.
 
-Sie können `assert` mit allen Arten von Ausdrücken verwenden, die in `true` oder `false`aufgelöst werden. Sie können z. b. eine `assert`-Anweisung wie die folgende hinzufügen.
+Sie können `assert` mit allen Arten von Ausdrücken verwenden, für die `true` oder `false` ausgegeben wird. Sie können z. B. eine `assert`-Anweisung wie die folgende hinzufügen.
 
 ```csharp
 Debug.Assert(users[0].points > 0);
 ```
 
-Der vorangehende Code ist nützlich, wenn Sie die folgende Absicht angeben möchten: ein neuer Punktwert, der größer als NULL (0) ist, ist erforderlich, um den Datensatz des Benutzers zu aktualisieren.
+Der vorangehende Code ist nützlich, wenn Sie die folgende Absicht angeben möchten: Es ist ein neuer Punktwert erforderlich, der größer als Null (0) ist, um den Datensatz des Benutzers zu aktualisieren.
 
 ## <a name="inspect-your-code-in-the-debugger"></a>Überprüfen des Codes im Debugger
 
-Nun, da Sie alle wichtigen Probleme korrigiert haben, die mit der Beispiel-App falsch sind, können Sie auf andere wichtige Dinge umsteigen!
+Da Sie nun alle wesentlichen Probleme in Zusammenhang mit Ihrer Beispiel-App behoben haben, können Sie sich auf andere Dinge konzentrieren.
 
-Wir haben Ihnen die Ausnahme Hilfe des Debuggers gezeigt, aber der Debugger ist ein viel leistungsfähigeres Tool, mit dem Sie auch andere Aufgaben ausführen können, wie z. b. durchlaufen des Codes und Überprüfen der Variablen. Diese leistungsfähigeren Funktionen sind in vielen Szenarien nützlich, insbesondere in folgenden Fällen:
+Wir haben Ihnen die Ausnahme-Hilfe des Debuggers gezeigt, aber der Debugger ist ein viel leistungsfähigeres Tool, das Sie auch für andere Aufgaben wie das zeilenweise Durchgehen von Code und das Überprüfen von Variablen verwenden können. Die leistungsfähigeren Funktionen sind besonders in den folgenden Szenarios nützlich:
 
-* Sie versuchen, einen Laufzeitfehler im Code zu isolieren, können ihn jedoch nicht mithilfe der zuvor beschriebenen Methoden und Tools ausführen.
+* Sie versuchen, einen Laufzeitfehler im Code zu isolieren, können dies jedoch nicht mithilfe der zuvor beschriebenen Methoden und Tools machen.
 
-* Sie möchten den Code überprüfen, d. h., während er ausgeführt wird, um sicherzustellen, dass er sich in der erwartungsgemäß verhält und was Sie möchten.
+* Sie möchten den Code während der Ausführung überprüfen, um sicherzustellen, dass er sich erwartungsgemäß verhält.
 
-    Es ist lehrreich, den Code während der Ausführung zu überwachen. Sie können auf diese Weise mehr über Ihren Code erfahren und häufig Fehler identifizieren, bevor Sie offensichtliche Symptome manifestieren.
+    Es ist aufschlussreich, den Code während der Ausführung zu überwachen. Sie können auf diese Weise mehr über Ihren Code erfahren und häufig Fehler identifizieren, bevor diese offensichtliche Symptome manifestieren.
 
-Informationen dazu, wie Sie die wesentlichen Features des-Debuggers verwenden, finden Sie unter [Debugging für absolute Anfänger](../debugger/debugging-absolute-beginners.md).
+Informationen zur Verwendung der wesentlichen Features des Debuggers finden Sie unter [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md).
 
 ## <a name="fix-performance-issues"></a>Beheben der Leistungsprobleme
 
-Zu den Fehlern einer anderen Art gehören ineffizienter Code, der bewirkt, dass Ihre APP langsam ausgeführt wird oder zu viel Speicherplatz verwendet wird. Im Allgemeinen ist die Optimierung der Leistung etwas, das Sie später in der APP-Entwicklung durchführen. Leistungsprobleme können jedoch frühzeitig auftreten (z. b. Wenn Sie sehen, dass ein Teil Ihrer APP langsam läuft), und Sie müssen Ihre APP möglicherweise frühzeitig mit den Profil Erstellungs Tools testen. Weitere Informationen zu Profil Erstellungs Tools, wie z. b. dem CPU-Auslastungs Tool und der Speicher Analyse, finden Sie unter [First Look of the profile Tools](../profiling/profiling-feature-tour.md)
+Zu Fehlern einer anderen Art gehört ineffizienter Code, der bewirkt, dass Ihre App langsam ausgeführt wird oder zu viel Speicherplatz beansprucht. Im Allgemeinen ist die Optimierung der Leistung etwas, das Sie später in der App-Entwicklung angehen. Leistungsprobleme können jedoch frühzeitig auftreten (z. B. wenn Sie erkennen, dass ein Teil Ihrer App langsam läuft), und Sie müssen Ihre App möglicherweise frühzeitig mit den Profilerstellungstools testen. Weitere Informationen über Profilerstellungstools wie das CPU-Auslastungstool und des Arbeitsspeicheranalyzer finden Sie in der [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel haben Sie gelernt, wie Sie viele gängige Fehler in Ihrem Code vermeiden und beheben können, und wann der Debugger verwendet werden soll. Im nächsten Schritt erfahren Sie mehr über die Verwendung des Visual Studio-Debuggers, um Fehler zu beheben.
+In diesem Artikel haben Sie gelernt, wie Sie viele gängige Fehler in Ihrem Code vermeiden und beheben können, und wann der Debugger verwendet werden soll. Als nächstes erfahren Sie mehr über die Verwendung des Visual Studio-Debuggers zum Beheben von Fehlern.
 
 > [!div class="nextstepaction"]
 > [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md)

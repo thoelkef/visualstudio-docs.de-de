@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricDword | Microsoft-Dokumentation
+title: IDebugSettingsCallback2::GetEEMetricDword | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricDword
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17ba8b4410b42b6369831c1be075042121b84170
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce326c63f97dfafd06e3e2b3e760b1c06e60d442
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322165"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720051"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
-Ruft einen Wert, der die angegebene Metrik von der ausdrucksauswertung entspricht.
+Ruft einen Wert ab, der der angegebenen Metrik des Ausdrucksauswertungswerts entspricht.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,16 +48,16 @@ private int GetEEMetricDword(
 [in] Eindeutiger Bezeichner der Programmiersprache.
 
 `guidVendor`\
-[in] Eindeutiger Bezeichner des Herstellers.
+[in] Eindeutiger Bezeichner des Kreditors.
 
 `pszMetric`\
-[in] Der Name der Metrik.
+[in] Name der Metrik.
 
 `pdwValue`\
-[out] Gibt den Wert, der auf die Metrik Zeichenfolge zurück.
+[out] Gibt den Wert zurück, der der Metrikzeichenfolge entspricht.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

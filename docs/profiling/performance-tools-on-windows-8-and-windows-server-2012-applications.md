@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778426"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
@@ -39,7 +39,7 @@ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstütz
 Weitere Informationen zur Profilerstellung für UWP-Apps finden Sie in den folgenden Artikeln:
 
 - [Run UWP apps on the local machine (Ausführen von UWP-Apps auf einem lokalen Computer)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
-- [Run UWP apps on a remote machine (Ausführen von UWP-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md)
+- [Ausführen von UWP-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Einführung in Profilerstellungstools](profiling-feature-tour.md)
 - [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)
 - [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem lokalen Computer](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
@@ -64,7 +64,7 @@ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstütz
 
 Sie verwenden zwei Befehlszeilentools, um Profilerstellungsdaten auf Windows 8- und Windows Server 2012-Geräten zu erfassen, einschließlich Geräte, auf denen kein Visual Studio installiert ist:
 
-|Toolname|BESCHREIBUNG|
+|Toolname|Beschreibung|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Erfasst Profilerstellungsdaten von UWP-Apps und Beispielprofilerstellungsdaten von Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Sammelt Instrumentations-, Parallelitäts- und Ebeneninteraktionsprofilerstellungsdaten von Apps, die unter Windows 8-Desktop oder Windows Server 2012 ausgeführt werden. Sammelt alle Arten von Profilerstellungsdaten von früheren Versionen von Windows.|
@@ -110,7 +110,7 @@ Sie müssen die Ebeneninteraktions-Datensammlungsoption einer laufenden Profiler
 
 **Sammeln von TIP-Daten auf einem Remotecomputer**
 
-Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs\_profiler\_** _\<Plattform>_ **\_** _\<Sprache>_ **.exe** aus dem Ordner *%VSInstallDir%\Team Tools\Performance Tools\Setups* eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket [Remotedebuggen](../debugger/remote-debugging.md) verwenden.
+Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs\_profiler\_** _\<Plattform>_ **\_** _\<Sprache>_ **.exe** aus dem Ordner *%VSInstallDir%\Team Tools\Performance Tools\Setups* eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](../debugger/remote-debugging.md) verwenden.
 
 Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) verwenden, um die Profilerstellungsdaten zu erfassen.
 
@@ -118,7 +118,7 @@ Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../pro
 
 Ebeneninteraktionsdaten können nur in Visual Studio Enterprise angezeigt werden. Dateibasierte Ebeneninteraktionsberichte über [VSPerfReport](../profiling/vsperfreport.md) sind nicht verfügbar.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Leistungs-Explorer](../profiling/performance-explorer.md)
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)

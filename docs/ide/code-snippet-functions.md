@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594239"
 ---
 # <a name="code-snippet-functions"></a>Codeausschnittfunktionen
@@ -35,7 +35,7 @@ In der folgenden Tabelle werden die verfügbaren Funktionen für die Verwendung 
 
 ## <a name="generateswitchcases-example"></a>Beispiel für GenerateSwitchCases
 
-Im folgenden Beispiel wird die Verwendung der `GenerateSwitchCases`-Funktion veranschaulicht. Wenn dieser Ausschnitt eingefügt wird und eine Enumeration in das `$switch_on$`-Literal eingefügt wird, generiert das `$cases$`-Literal eine `case`-Anweisung für jeden Wert in der Enumeration.
+Das folgende Beispiel zeigt die Verwendung der Funktion `GenerateSwitchCases`. Wenn dieser Ausschnitt eingefügt wird und eine Enumeration in das `$switch_on$`-Literal eingefügt wird, generiert das `$cases$`-Literal eine `case`-Anweisung für jeden Wert in der Enumeration.
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -77,7 +77,7 @@ Im folgenden Beispiel wird die Verwendung der `GenerateSwitchCases`-Funktion ver
 
 ## <a name="classname-example"></a>Beispiel für ClassName
 
-Im folgenden Beispiel wird die Verwendung der `ClassName`-Funktion veranschaulicht. Wenn dieser Ausschnitt eingefügt wird, wird das `$classname$`-Literal mit dem Namen der einschließenden Klasse an diesem Speicherort in der Codedatei ersetzt.
+Das folgende Beispiel zeigt die Verwendung der Funktion `ClassName`. Wenn dieser Ausschnitt eingefügt wird, wird das `$classname$`-Literal mit dem Namen der einschließenden Klasse an diesem Speicherort in der Codedatei ersetzt.
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -155,7 +155,7 @@ In diesem Beispiel wird die Verwendung der `SimpleTypeName`-Funktion veranschaul
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Function-Element](../ide/code-snippets-schema-reference.md#function-element)
 - [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)

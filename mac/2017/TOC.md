@@ -22,7 +22,7 @@
 ## [Verwalten von Verweisen in einem Projekt](/visualstudio/mac/managing-references-in-a-project)
 ### [Walkthrough - Including a NuGet package in your project (Exemplarische Vorgehensweise: Einschließen eines NuGet-Pakets in Ihr Projekt)](/visualstudio/mac/nuget-walkthrough)
 ## [Managing App Resources (Verwalten von App-Ressourcen)](/visualstudio/mac/managing-app-resources)
-## [Vorgehensweise: Öffnen mehrerer Projektmappen oder Instanzen](/visualstudio/mac/open-multiple-solutions)
+## [How to: Öffnen mehrerer Projektmappen oder Instanzen](/visualstudio/mac/open-multiple-solutions)
 
 # [Source Editor (Quellcode-Editor)](/visualstudio/mac/source-editor)
 ## [Refactoring](/visualstudio/mac/refactoring)
@@ -52,9 +52,9 @@
 ## [Setting Up a Subversion Repository (Einrichten eines Subversion-Repository)](/visualstudio/mac/set-up-subversion-repository)
 ## [Working with Subversion (Arbeiten mit Subversion)](/visualstudio/mac/working-with-subversion)
 
-# [Bereitstellung von Web-Apps](/visualstudio/mac/web-app-deployment.md)
-## [Veröffentlichen in Azure App Service](/visualstudio/mac/publish-app-svc.md)
-## [In Ordner veröffentlichen](/visualstudio/mac/publish-folder.md)
+# [Bereitstellung von Web-Apps](/visualstudio/mac/web-app-deployment)
+## [Veröffentlichen in Azure App Service](/visualstudio/mac/publish-app-svc)
+## [In Ordner veröffentlichen](/visualstudio/mac/publish-folder)
 
 # [Workloads (Arbeitslasten)](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
@@ -67,8 +67,8 @@
 ## [Unity Game Development (Spieleentwicklung mit Unity)](/visualstudio/mac/unity-tools)
 ### [Setup (Einrichtung)](/visualstudio/mac/setup-vsmac-tools-unity)
 ### [Using Unity Tools (Verwenden von Unity-Tools)](/visualstudio/mac/using-vsmac-tools-unity)
-### [Verwenden von .NET 4.x in Unity](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
-### [Änderungsprotokoll](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+### [Verwenden von .NET 4.x in Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Änderungsprotokoll](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Mobile Apps mit Xamarin](/visualstudio/mac/xamarin)
 
 # [Barrierefreiheit](/visualstudio/mac/accessibility)

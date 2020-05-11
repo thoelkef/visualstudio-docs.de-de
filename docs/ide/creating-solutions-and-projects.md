@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589746"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306794"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -30,7 +30,7 @@ ms.locfileid: "75589746"
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Erstellen von Projekten in Visual Studio für Mac](/visualstudio/mac/create-new-projects).
 
-Sie können Ihre Projektmappen und Projekte in dem Toolfenster **Projektmappen-Explorer** abrufen. Im folgenden Screenshot wird ein Beispiel einer Projektmappe im **Projektmappen-Explorer** (**BikeSharing.Xamarin-UWP**) angezeigt, die zwei Projekte enthält: **BikeSharing.Clients.Core** und **BikeSharing.Clients.Windows**. In jedem Projekt sind mehrere Dateien, Ordner und Verweise enthalten. Der Name des *Startprojekts* – also das Projekt, das gestartet wird, wenn Sie die App ausführen – ist fett gedruckt. Sie können das Startprojekt selbst festlegen.
+Sie können Ihre Projektmappen und Projekte in dem Toolfenster **Projektmappen-Explorer** abrufen. Im untenstehenden Screenshot wird ein Beispiel für eine Projektmappe im **Projektmappen-Explorer** (**BikeSharing.Xamarin-UWP**) angezeigt, die zwei Projekte enthält: **BikeSharing.Clients.Core** und **BikeSharing.Clients.Windows**. In jedem Projekt sind mehrere Dateien, Ordner und Verweise enthalten. Der Name des *Startprojekts* – also das Projekt, das gestartet wird, wenn Sie die App ausführen – ist fett gedruckt. Sie können das Startprojekt selbst festlegen.
 
 ![Projektmappen-Explorer mit Projekten](./media/vside-solution-explorer-projects.png)
 
@@ -88,7 +88,7 @@ Sie können auch leere Projektmappen ohne Projekt erstellen. Dies erweist sich u
 
 ### <a name="to-create-an-empty-solution"></a>So erstellen Sie eine leere Projektmappe
 
-1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+1. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -141,7 +141,7 @@ Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funk
 
 1. Klicken Sie auf den Ordner, der die Projektmappe enthält, und drücken Sie dann die Taste **ENTF**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
 - [Microsoft's open source repositories on GitHub (Open Source-Repositorys von Microsoft auf GitHub)](https://github.com/Microsoft)

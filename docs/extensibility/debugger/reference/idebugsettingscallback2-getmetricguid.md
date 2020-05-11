@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetMetricGuid | Microsoft-Dokumentation
+title: IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b46037619bf7e43b647d4e3bc557c8ae9290cbd1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08f03e0d09db17e3dbcda30588191ff3efcb1c41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321992"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719978"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-Ruft den eindeutigen Bezeichner für eine Metrik mit dem angegebenen Namen ab.
+Ruft den eindeutigen Bezeichner einer Metrik ab, die ihren Namen angegeben hat.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,19 +45,19 @@ private int GetMetricGuid(
 
 ## <a name="parameters"></a>Parameter
 `pszType`\
-[in] Der Typ der Metrik.
+[in] Typ der Metrik.
 
 `guidSection`\
 [in] Eindeutiger Bezeichner des Abschnitts.
 
 `pszMetric`\
-[in] Der Name der Metrik.
+[in] Name der Metrik.
 
 `pguidValue`\
 [out] Gibt den eindeutigen Bezeichner der Metrik zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

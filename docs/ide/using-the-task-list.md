@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594226"
 ---
 # <a name="use-the-task-list"></a>Verwenden der Aufgabenliste
@@ -73,7 +73,7 @@ Standardmäßig enthält Visual Studio die folgenden Token: `HACK`, `TODO`, `UND
 
 So erstellen Sie ein benutzerdefiniertes Token:
 
-1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
+1. Wählen Sie **Optionen** im Menü **Extras**.
 
 2. Öffnen Sie den Ordner **Umgebung** , und wählen Sie dann **Aufgabenliste**aus.
 
@@ -108,7 +108,7 @@ Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren m
 
 Um durch die Verknüpfungen im Code zu navigieren, wählen Sie eine Verknüpfung in der Liste und dann im Kontextmenü **Nächste Aufgabe** oder **Vorherige Aufgabe** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Aufgabenliste, Umgebung, Dialogfeld „Optionen“](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Aufgabenkommentare (Visual Studio für Mac)](/visualstudio/mac/task-comments)

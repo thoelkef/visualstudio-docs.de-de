@@ -78,7 +78,7 @@
           href: expression-evaluation-in-break-mode.md
         - name: Ausnahmebehandlung (Visual Studio SDK)
           href: exception-handling-visual-studio-sdk.md
-    - name: 'Vorgehensweise: Debuggen einer benutzerdefinierten Debugengine'
+    - name: 'Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine'
       href: how-to-debug-a-custom-debug-engine.md
 - name: Erste Schritte mit der Erweiterbarkeit des Debuggers
   items:
@@ -122,7 +122,7 @@
           href: processes.md
         - name: Programmknoten
           href: program-nodes.md
-        - name: Programs
+        - name: Programme
           href: programs.md
         - name: Threads
           href: threads.md

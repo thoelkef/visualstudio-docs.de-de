@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596436"
 ---
 # <a name="toolbox-html-tab"></a>Toolbox, Registerkarte „HTML“
@@ -222,7 +222,7 @@ Wenn Sie **Horizontal Rule** auf die Entwurfsoberfläche ziehen, wird ein HTML-M
 
 ![HTML-Seite, Label](../../ide/reference/media/vxlabel.gif)
 
-Fügt ein `div`-Element ein, das ein `ms_positioning="FlowLayout"`-Attribut enthält. Mit Ausnahme der Breite und Höhe ist dieses Element mit einem Flow Layout Panel identisch. Fügen Sie dem Starttag ein `class="stylename"`-Attribut hinzu, um den Text zu formatieren, der im `div`-Element enthalten ist.
+Fügt ein `div`-Element ein, das ein `ms_positioning="FlowLayout"`-Attribut enthält. Mit Ausnahme der Breite und Höhe ist dieses Element mit einem Flow Layout Panel identisch. Fügen Sie dem Starttag ein `div`-Attribut hinzu, um den Text zu formatieren, der im `class="stylename"`-Element enthalten ist.
 
 Wenn Sie **Div** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup ähnlich dem folgenden in das Dokument eingefügt:
 
@@ -230,6 +230,6 @@ Wenn Sie **Div** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup ähnli
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Werkzeugkasten](../../ide/reference/toolbox.md)
+- [Werkzeugpalette](../../ide/reference/toolbox.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727904"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557633"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen. Wenn Sie eine Anwendung veröffentlichen und **Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen** auswählen, tritt ein Fehler auf, wenn die Installationspakete nicht im Ordner **Pakete** enthalten sind.
@@ -31,10 +31,10 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
 
 3. Öffnen Sie im Editor die Datei *Package.xml*.
 
-4. Suchen Sie das **Name** -Element, das **http://go.microsoft.com/fwlink** enthält, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.
+4. Suchen Sie das **Name** -Element, das `http://go.microsoft.com/fwlink`enthält, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.
 
    > [!NOTE]
-   > Wenn kein **Name** -Element **http://go.microsoft.com/fwlink** enthält, öffnen Sie die **Product. XML** -Datei im Stamm Ordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink** .
+   > Wenn kein **Name** -Element `http://go.microsoft.com/fwlink`enthält, öffnen Sie die **Product. XML** -Datei im Stamm Ordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink** .
 
    > [!IMPORTANT]
    > Einige erforderliche Komponenten haben mehrere Installationspakete (z. B. für 32-Bit- oder 64-Bit-Systeme). Wenn mehrere **Name**-Elemente **fwlink** enthalten, müssen Sie die verbleibenden Schritte für jedes dieser Elemente überprüfen.
@@ -49,5 +49,5 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
 
     Sie können das Installationspaket jetzt mit der Anwendung verteilen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

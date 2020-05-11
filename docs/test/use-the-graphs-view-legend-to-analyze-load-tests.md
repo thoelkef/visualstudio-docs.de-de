@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590799"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Verwenden der Legende der Diagrammansicht zum Analysieren von Auslastungstests
@@ -26,7 +26,7 @@ Die Diagrammansicht des Auslastungstest-Analyzers enthält einen Legendenbereich
 
 Die Legende enthält die folgenden Informationen:
 
-- **Im Diagramm anzeigen:** Geben Sie mithilfe der Kontrollkästchen an, ob die Linie für einen bestimmten Indikator wie z.B. **Benutzerauslastung** oder **Fehler/s** im Diagramm eingezeichnet werden soll. Aktivieren Sie ein Kontrollkästchen, wenn die Linie ins Diagramm eingezeichnet werden soll. Deaktivieren Sie ein Kontrollkästchen, um die Zeichnungslinie aus dem Diagramm zu entfernen. Wenn eine Zeichnungslinie entfernt wird, wird die Statistik für den Indikator weiterhin in der Legende angezeigt.
+- **In Diagramm anzeigen:** Geben Sie mithilfe der Kontrollkästchen an, ob die Linie für einen bestimmten Indikator wie z.B. **Benutzerauslastung** oder **Fehler/s** im Diagramm eingezeichnet werden soll. Aktivieren Sie ein Kontrollkästchen, wenn die Linie ins Diagramm eingezeichnet werden soll. Deaktivieren Sie ein Kontrollkästchen, um die Zeichnungslinie aus dem Diagramm zu entfernen. Wenn eine Zeichnungslinie entfernt wird, wird die Statistik für den Indikator weiterhin in der Legende angezeigt.
 
 - **Bereich:** In dieser Spalte wird der y-Achsen-Bereich des Leistungsindikators angezeigt. Standardmäßig wird dieser Wert automatisch angepasst, wenn sich der Bereich der Beispieldaten ändert. Ein automatisch angepasster Bereich ist stets um die nächste Zehnerpotenz größer als der Maximalwert. Dazu gehören negative Zehnerpotenzen. Ein Diagramm kann eine Vielzahl von Indikatoren, jeder mit einem anderen Bereich, enthalten. Daher wird die y-Achse nicht mit einem bestimmten Bereich, sondern mit Werten von 0 bis 100 gekennzeichnet, die einen Prozentsatz des Gesamtbereichs für jeden Indikator darstellen. Für einen Indikator mit einem Bereich von 1000 z. B. würde ein Datenpunkt von 60 auf der y-Achse einem Wert von 600 für den Indikator entsprechen.
 
@@ -42,7 +42,7 @@ Die Legende enthält die folgenden Informationen:
     > [!NOTE]
     > Die Spalte "Letzte" wird nur in der Legende des Auslastungstest-Analyzers während der Ausführung des Auslastungstests angezeigt.
 
-     Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 Das Auswählen eines Elements in der Legende bewirkt Folgendes:
 
@@ -57,7 +57,7 @@ Das Auswählen eines Elements in der Legende bewirkt Folgendes:
 > [!TIP]
 > Sie können auf der Symbolleiste des **Auslastungstest-Analyzers** die Dropdownschaltfläche **Diagrammoptionen** verwenden und auf **Legende anzeigen** klicken, um das der Diagrammansicht zugeordnete Panel **Legende** anzuzeigen oder auszublenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind | Microsoft-Dokumentation
+title: IDebugField::GetKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetKind method
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d99c7d1bed9f5afe844539c9a9ccab11f43a8002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728818"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-Diese Methode ruft die Art des Felds ab.
+Diese Methode erhält die Art des Feldes.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,11 +41,11 @@ int GetKind(
 
 ## <a name="parameters"></a>Parameter
 `pdwKind`\
-[out] Gibt die Art des Felds als eine Kombination von [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten.
+[out] Gibt die Art des Felds als Kombination aus [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) konstanten konstanten.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

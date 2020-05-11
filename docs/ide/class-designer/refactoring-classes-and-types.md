@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e060f044af666f5a4357e527819286d3bd87267
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590747"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Umgestalten von Klassen und Typen im Klassen-Designer
@@ -37,9 +37,9 @@ Wenn Sie einen Code umgestalten, ist er leichter zu verstehen, zu verwalten und 
 
 |Aufgabe|Unterstützender Inhalt|
 |----------| - |
-|**Refactoring von Klassen:** Sie können Refactoringvorgänge zum Aufteilen einer Klasse in partielle Klassen oder zur Implementierung einer abstrakten Klasse verwenden.|-   [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen](how-to-split-a-class-into-partial-classes.md)|
-|**Arbeiten mit Schnittstellen:** In Klassen-Designer können Sie eine Schnittstelle im Klassendiagramm implementieren, indem Sie sie mit einer Klasse verbinden, die Code für die Schnittstellenmethoden bereitstellt.|-   [Vorgehensweise: Implementieren einer Schnittstelle](how-to-implement-an-interface.md)|
-|**Refactoring von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](#rename-types-and-type-members)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](#move-type-members-from-one-type-to-another)<br />-   [Vorgehensweise: Erstellen eines Nullable-Typs](how-to-create-a-nullable-type.md)|
+|**Umgestaltung von Klassen:** Sie können Umgestaltungsvorgänge zum Aufteilen eine Klasse in Teilklassen oder zur Implementierung einer abstrakten Klasse verwenden.|-   [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](how-to-split-a-class-into-partial-classes.md)|
+|**Arbeiten mit Schnittstellen:** Im Klassen-Designer Sie können eine Schnittstelle im Klassendiagramm implementieren, indem Sie es an eine Klasse anhängen, die einen Code für die Schnittstellenmethoden vorsieht.|-   [How to: Implement an Interface (Class Designer) (Vorgehensweise: Implementieren einer Schnittstelle (Klassen-Designer))](how-to-implement-an-interface.md)|
+|**Umgestaltung von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](#rename-types-and-type-members)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](#move-type-members-from-one-type-to-another)<br />-   [How to: Create a Nullable Type (Class Designer) (Vorgehensweise: Erstellen eines Nullable-Typs (Klassen-Designer))](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Umbenennen von Typen und Typmembern
 
@@ -86,6 +86,6 @@ Mit dem **Klassen-Designer** können Sie einen Typmember von einem Typ in einen 
 
      Die Eigenschaft wird aus dem Quelltyp entfernt und im Zieltyp angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Entwerfen von Klassen und Typen](designing-and-viewing-classes-and-types.md)

@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565343"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
-IntelliSense ist ein Hilfsprogramm für die Codevervollständigung, das folgende Features umfasst: Auflisten von Membern, Parameterinformationen, QuickInfo und Wortvervollständigung. Mithilfe dieser Features erfahren Sie mehr über den verwendeten Code. Sie können die eingegebenen Parameter verfolgen und mit wenigen Tastaturanschlägen Eigenschaften und Methoden zu Aufrufen hinzufügen.
+IntelliSense hilft bei der Codevervollständigung und enthält eine Reihe von Features: Member auflisten, Parameterinfo, QuickInfo und Wort vervollständigen. Mithilfe dieser Features erfahren Sie mehr über den verwendeten Code. Sie können die eingegebenen Parameter verfolgen und mit wenigen Tastaturanschlägen Eigenschaften und Methoden zu Aufrufen hinzufügen.
 
 Viele Aspekte von IntelliSense sind sprachspezifisch. Weitere Informationen zu IntelliSense für verschiedene Sprachen finden Sie in den Artikeln, die im Abschnitt [Siehe auch](#see-also) aufgeführt sind.
 
@@ -107,7 +107,7 @@ MessageBox( hWnd, "String literal|")
 
 **Die automatischen Optionen sind deaktiviert.** Standardmäßig funktioniert IntelliSense automatisch, Sie können es jedoch deaktivieren. Auch wenn die automatische Anweisungsvervollständigung deaktiviert ist, können Sie eine IntelliSense-Funktion aufrufen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Basic-IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C#-IntelliSense](../ide/visual-csharp-intellisense.md)

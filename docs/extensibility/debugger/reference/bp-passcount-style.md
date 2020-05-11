@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE | Microsoft-Dokumentation
+title: BP_PASSCOUNT_STYLE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353050"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737918"
 ---
-# <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
-Gibt die Bedingung, die die Anzahl der Haltepunkt-übergeben, die bewirkt, dass der Breakpoint ausgelöst werden zugeordnet.
+# <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
+Gibt die Bedingung an, die der Anzahl der Haltepunktdurchlauferzahl zugeordnet ist, wodurch der Haltepunkt ausgelöst wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,28 +48,28 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>Felder
 `BP_PASSCOUNT_NONE`\
-Gibt an, kein Haltepunkt Pass-Count-Stil.
+Gibt keinen Haltepunktpass-Zählstil an.
 
 `BP_PASSCOUNT_EQUAL`\
-Legt den Haltepunkt Pass Anzahl Stil fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Häufigkeit, mit die der Haltepunkt erreicht wird die Anzahl der Durchläufe entspricht.
+Legt den Stil für die Anzahl der Haltepunktedurchbrüche auf gleich fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Treffer des Haltepunkts der Anzahl der Durchlaufe entspricht.
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
-Legt den Haltepunkt Pass-Count-Stil auf gleich oder größer fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Häufigkeit, mit die der Haltepunkt erreicht wird, gleich oder größer als die Anzahl der übergeben wird.
+Legt den Stil für die Anzahl der Haltepunktedurchlauferjahre auf gleich oder größer fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Treffer des Haltepunkts gleich oder größer als die Anzahl der Durchlaufzeiten ist.
 
 `BP_PASSCOUNT_MOD`\
-Gibt an, ein modulo-Anzahl zu übergeben. Wenn die Anzahl der Durchläufe des Typs ist z. B. `BP_PASSCOUNT_MOD` und der Pass-Count-Wert ist 4, der Haltepunkt ausgelöst wird, jedes Mal, wenn die Trefferanzahl ein Vielfaches von 4 ist.
+Gibt eine Modulo-Passanzahl an. Wenn z. B. die Anzahl `BP_PASSCOUNT_MOD` der Durchlaufzeiten vom Typ ist und der Wert für die Anzahl der Durchlaufzeiten 4 ist, wird der Haltepunkt jedes Mal ausgelöst, wenn die Trefferanzahl ein Vielfaches von 4 ist.
 
-## <a name="remarks"></a>Hinweise
-Verwendet für die `stylePassCount` Mitglied der [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) -Struktur, die wiederum Mitglied ist die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.
+## <a name="remarks"></a>Bemerkungen
+Wird für `stylePassCount` das Element der BP_PASSCOUNT Struktur [verwendet,](../../../extensibility/debugger/reference/bp-passcount.md) die wiederum ein Mitglied der [BP_REQUEST_INFO-](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2-Strukturen](../../../extensibility/debugger/reference/bp-request-info2.md) ist.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

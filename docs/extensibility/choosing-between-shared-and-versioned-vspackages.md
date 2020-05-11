@@ -1,5 +1,5 @@
 ---
-title: Auswählen zwischen freigegebenen und mit versionsverwaltung durch das VSPackages | Microsoft-Dokumentation
+title: Auswählen zwischen freigegebenen und versionierten VSPackages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,60 +7,60 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747794"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739883"
 ---
-# <a name="choose-between-shared-and-versioned-vspackages"></a>Wählen Sie zwischen freigegebenen und mit versionsverwaltung durch das VSPackages
-Verschiedene Versionen von Visual Studio können auf demselben Computer gleichzeitig vorhanden sein. VSPackages kann eine beliebige Kombination von unterstützen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Versionen.
+# <a name="choose-between-shared-and-versioned-vspackages"></a>Wählen Sie zwischen freigegebenen und versionierten VSPackages
+Verschiedene Versionen von Visual Studio können auf demselben Computer nebeneinander bestehen. VSPackages kann jede [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kombination von Versionen unterstützen.
 
- Sie können die Seite-an-Seite-Installationen von VSPackages durch eine von zwei Strategien, die gemeinsam genutzten Strategie oder die Strategie mit versionsverwaltung durch das aktivieren. Sowohl das Vorhandensein mehrerer Versionen von aufzunehmen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und die zugehörigen Versionen von .NET Framework.
+ Sie können die nebeneinander stehende Installation von VSPackages über eine der beiden Strategien, die gemeinsame Strategie oder die versionierte Strategie, aktivieren. Beide berücksichtigen das Vorhandensein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mehrerer Versionen und zugehöriger Versionen von .NET Framework.
 
- In der freigegebenen Strategie ist registriert ein VSPackage für die Verwendung in mehreren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bei der Strategie mit versionsverwaltung durch das mehrere VSPackage-DLLs installiert sind, eine für jede Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , die Sie unterstützen.
+ In der freigegebenen Strategie ist ein VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]für die Verwendung in mehreren Versionen von registriert. In der versionierten Strategie werden mehrere VSPackage-DLLs [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installiert, eine für jede Version, die Sie unterstützen.
 
-## <a name="shared-vspackages"></a>Freigegebenen VSPackages
- Mit einem freigegebenen VSPackage ist geeignet, bei der Verwendung der gleichen VSPackages in mehreren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Um einen freigegebenen VSPackages zu implementieren, müssen Sie die folgenden Schritte ausführen:
+## <a name="shared-vspackages"></a>Freigegebene VSPackages
+ Die Verwendung eines freigegebenen VSPackage ist sinnvoll, wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Sie dasselbe VSPackage in mehreren Versionen von verwenden. Um ein freigegebenes VSPackage zu implementieren, müssen Sie die folgenden Schritte ausführen:
 
-- Machen Sie Ihr VSPackage mit mehreren Versionen kompatibel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Es sind also zwei Möglichkeiten, dies verfügbar:
+- Machen Sie Ihr VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]kompatibel mit mehreren Versionen von . Es gibt zwei Möglichkeiten, dies zu tun:
 
-  - Beschränken Sie Ihr VSPackage mit der nur die Funktionen der frühesten Version des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , die Sie unterstützen.
+  - Beschränken Sie Ihr VSPackage auf die Verwendung [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nur der Funktionen der frühesten Version, die Sie unterstützen.
 
-  - Ihr VSPackage Programmieren zur Anpassung an die Version des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in dem er ausgeführt wird. Klicken Sie dann, wenn Abfragen für neuere Dienste ein Fehler auftritt, das VSPackage bieten andere Dienste, die in früheren Versionen von Microsoft Intune [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+  - Programmieren Sie Ihr VSPackage, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] um sich an die Version anzupassen, in der es ausgeführt wird. Wenn Abfragen für neuere Dienste fehlschlagen, kann Ihr VSPackage andere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Dienste anbieten, die in älteren Versionen von unterstützt werden.
 
-- Registrieren Sie Ihr VSPackage entsprechend an. Weitere Informationen finden Sie unter [VSPackage-Registrierung](../extensibility/internals/vspackage-registration.md) und [verwalteten VSPackage-Registrierung](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Registrieren Sie Ihr VSPackage entsprechend. Weitere Informationen finden Sie unter [VSPackage-Registrierung](../extensibility/internals/vspackage-registration.md) und [Managed VSPackage-Registrierung](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
 
-- Registrieren Sie die Dateierweiterungen entsprechend. Weitere Informationen finden Sie unter [Registrieren von Dateierweiterungen für Seite-an-Seite Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
+- Registrieren Sie Dateierweiterungen entsprechend. Weitere Informationen finden Sie unter [Registrieren von Dateinamenerweiterungen für nebeneinander vorgesehene Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
-- Erstellen Sie ein Installationsprogramm, das das VSPackage für die richtigen Versionen der stellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) und [komponentenverwaltung](../extensibility/internals/component-management.md).
+- Erstellen Sie ein Installationsprogramm, das Ihr [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage für die entsprechenden Versionen von bereitstellt. Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) und [Komponentenverwaltung](../extensibility/internals/component-management.md).
 
-- Das Problem der Registrierung Konflikte zu beheben. Weitere Informationen finden Sie unter [VSPackage-Registrierung](../extensibility/internals/vspackage-registration.md).
+- Beheben Sie das Problem der Registrierungskollisionen. Weitere Informationen finden Sie unter [VSPackage-Registrierung](../extensibility/internals/vspackage-registration.md).
 
-- Stellen Sie sicher, dass sowohl freigegebene als auch mit versionsverwaltung durch das sichere Installation und Deinstallation von mehreren Versionen ermöglichen zählen von Verweisen berücksichtigt. Weitere Informationen finden Sie unter [komponentenverwaltung](../extensibility/internals/component-management.md).
+- Stellen Sie sicher, dass sowohl freigegebene als auch versionierte Dateien die Referenzzählung respektieren, um eine sichere Installation und Entfernung mehrerer Versionen zu ermöglichen. Weitere Informationen finden Sie unter [Komponentenverwaltung](../extensibility/internals/component-management.md).
 
-## <a name="versioned-vspackages"></a>Mit versionsverwaltung durch das VSPackages
- Unter der mit versionsverwaltung durch das VSPackage-Strategie, die Sie erstellen ein VSPackage für jede Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , die Sie unterstützen. Dadurch eignet sich, wenn Sie erwarten, dass spätere Versionen der bereitgestellten Dienste nutzen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], da jedes VSPackage entwickeln kann, ohne Auswirkung auf die anderen. Die Versionsangabe Strategie zum mehrere Binärdateien erstellen, aus einer einzelnen Codebasis oder von mehreren und unabhängige Codebasen, möglicherweise dennoch weitere Entwicklung als Strategie für die freigegebene gelten. Darüber hinaus zusätzliche Einrichtung kann erforderlich sein, da Sie erstellen müssen, entweder eine separate Installation für jede Version oder ein einmaliges Setup, das erkennt, die Versionen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , installiert und, die das VSPackage unterstützt.
+## <a name="versioned-vspackages"></a>Versionierte VSPackages
+ Unter der versionierten VSPackage-Strategie erstellen Sie ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage für jede version, die Sie unterstützen. Dies ist angemessen, wenn Sie erwarten, die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Vorteile der Dienste zu nutzen, die von späteren Versionen von bereitgestellt werden, da sich jedes VSPackage weiterentwickeln kann, ohne die anderen zu beeinträchtigen. Dennoch kann die versionierte Strategie, mehrere Binärdateien entweder aus einer einzelnen Codebasis oder aus mehreren unabhängigen Codebasen zu erstellen, eine größere Entwicklung als die gemeinsame Strategie mit sich bringen. Außerdem kann zusätzliche Einrichtungsarbeit erforderlich sein, da Sie entweder ein separates Setup für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jede Version oder ein einzelnes Setup erstellen müssen, das die installierten Versionen erkennt und die Ihr VSPackage unterstützt.
 
-## <a name="binary-compatibility"></a>Binäre Kompatibilität
- Im Allgemeinen ermöglicht die binäre Kompatibilität systemeigenem Code VSPackages, die mit früheren Versionen von Visual Studio zum Ausführen in höheren Versionen von Visual Studio entwickelt wurden. Es gibt jedoch drei wichtige Ausnahmen:
+## <a name="binary-compatibility"></a>Binärkompatibilität
+ Im Allgemeinen ermöglicht die Binärkompatibilität die Ausführung von VSPackages mit systemeigenem Code, der mit früheren Versionen von Visual Studio entwickelt wurde, in späteren Versionen von Visual Studio. Es gibt jedoch drei wichtige Ausnahmen:
 
-- Wenn das VSPackage auf eine bestimmte Version der common Language Runtime verwendet, müssen sie bestimmen, in welcher Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] er ausgeführt wird.
+- Wenn Ihr VSPackage auf einer bestimmten Version der Common Language Runtime [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] basiert, muss es bestimmen, in welcher Version es ausgeführt wird.
 
-- Eine VSPackage kann eine bestimmte Funktion von einem anderen VSPackage oder ein anderes Produkt eine Abhängigkeit aufweisen. Daher kann das VSPackage ausgeführt werden, in dem nur die Abhängigkeit erfüllt wird.
+- Ein VSPackage kann von einem bestimmten Feature eines anderen VSPackage oder eines anderen Produkts abhängig sein. Folglich kann das VSPackage nur ausgeführt werden, wenn die Abhängigkeit erfüllt ist.
 
-- Eine VSPackage kann beeinflusst werden, durch ein Sicherheitsupdate in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Servicepack oder eine höhere Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In diesen Fällen an, die für eine VSPackage mit einer früheren Version von entwickelt wurden die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] möglicherweise nicht ausgeführt werden, in Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nachdem die Lösung für Sicherheit angewendet wurde. Sie können allerdings erstellen Sie das Paket mit der höheren Version neu und ihn auch in früheren Versionen ausführen.
+- Ein VSPackage kann von einem Sicherheitsupdate in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Service [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Pack oder einer späteren Version von betroffen sein. In diesen Fällen wird ein VSPackage, [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] das mit einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] früheren Version des entwickelt wurde, möglicherweise nicht in Versionen von ausgeführt, nachdem das Sicherheitsupdate angewendet wurde. Sie können Ihr Paket jedoch mit der späteren Version neu erstellen und es auch in früheren Versionen ausführen lassen.
 
-  Verwaltete VSPackages muss erstellt werden, mit einer Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] , entsprechen die Zielversion des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+  Verwaltete VSPackages müssen mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] einer [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Version von erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]werden und der, die mit der Zielversion von übereinstimmen.
 
-  Zusätzlich zur Planung für die binäre Kompatibilität für Ihr VSPackage-Binärdateien, sollten außerdem Lösung und Projekt-Dateiformate. Wenn Ihr VSPackage einen neuer Projekttyp erstellt, müssen Sie entscheiden, ob die Ausführung kann nur eine Version oder in mehreren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekten](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
+  Neben der Planung der Binärkompatibilität für Ihre VSPackage-Binärdateien sollten Sie auch Lösungs- und Projektdateiformate berücksichtigen. Wenn Ihr VSPackage einen neuen Projekttyp erstellt, müssen Sie entscheiden, ob [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]es in nur einer Version oder in mehreren Versionen von ausgeführt werden kann. Weitere Informationen finden Sie unter [Aktualisieren benutzerdefinierter Projekte](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
-- [Verwaltung von Komponenten](../extensibility/internals/component-management.md)
+- [Komponentenmanagement](../extensibility/internals/component-management.md)

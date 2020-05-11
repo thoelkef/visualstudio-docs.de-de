@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99970bfbc955fe972d5e3c9a4e38ae6f57e0e0bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597424"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632952"
 ---
 # <a name="property-element-msbuild"></a>Property-Element (MSBuild)
-Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `PropertyGroup`-Elements angegeben werden.
+
+Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jede Eigenschaft, die in einem MSBuild-Projekt verwendet wird, muss als untergeordnetes Element eines `PropertyGroup`-Elements angegeben werden.
 
  \<Project> \<PropertyGroup>
 
@@ -37,6 +38,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -46,6 +48,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
+
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -55,14 +58,17 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Grouping-Element für Eigenschaften.|
 
 ## <a name="text-value"></a>Textwert
+
  Ein Textwert ist optional.
 
  Dieser Text gibt den Eigenschaftswert an und enthält möglicherweise XML.
 
 ## <a name="remarks"></a>Hinweise
+
  Eigenschaftennamen sind auf ASCII-Zeichen beschränkt. Im Projekt wird durch die Platzierung der Eigenschaftenname zwischen „`$(`“ und „`)`“ verwiesen werden. Beispielsweise würde `$(builddir)\classes` in *build\classes* aufgelöst, wenn die `builddir`-Eigenschaft den Wert `build` hat. Weitere Informationen zu Eigenschaften finden Sie unter [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Code wird die `Optimization`-Eigenschaft auf `false` und die `DefaultVersion`-Eigenschaft auf `1.0` festgelegt, wenn die `Version`-Eigenschaft leer ist.
 
 ```xml
@@ -73,5 +79,6 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

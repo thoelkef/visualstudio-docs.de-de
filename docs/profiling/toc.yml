@@ -10,7 +10,7 @@
       href: quickstart-cpu-usage-managed.md
     - name: Analysieren der CPU-Auslastung (nativ)
       href: quickstart-cpu-usage-native.md
-    - name: Analysieren der CPU-Auslastung (ASP.NET)
+    - name: Analysieren der CPU-Auslastung (ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
 - name: Tutorials
   items:
@@ -24,6 +24,8 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Anleitungen
   items:
+    - name: Verwenden von PerfTips
+      href: perftips.md
     - name: CPU-Auslastung
       href: cpu-usage.md
     - name: Speicherauslastung
@@ -32,18 +34,16 @@
           href: analyze-memory-usage.md
         - name: Analysieren der Speicherauslastung für .NET-Objekte
           href: dotnet-alloc-tool.md
-        - name: Ereignisse für benutzerdefinierte native ETW-Heaps
-          href: custom-native-etw-heap-events.md
         - name: Speicherauslastung ohne Debuggen
           href: memory-usage-without-debugging2.md
+        - name: Ereignisse für benutzerdefinierte native ETW-Heaps
+          href: custom-native-etw-heap-events.md
     - name: Messen der Leistung über die Befehlszeile
       href: profile-apps-from-command-line.md
     - name: Analysieren der GPU-Nutzung
       href: gpu-usage.md
     - name: Analysieren des Ressourcenverbrauchs
       href: application-timeline.md
-    - name: Verwenden von PerfTips
-      href: perftips.md
     - name: Analysieren der Netzwerkverwendung
       href: network-usage.md
     - name: Analysieren von JavaScript-Speicher
@@ -466,8 +466,6 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumentieren einer eigenständigen .NET Framework-Komponente und Sammeln von Speicherdaten über die Befehlszeile mit dem Profiler
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 'Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling'
-                  href: walkthrough-command-line-profiling-using-sampling.md
             - name: ASP.NET-Webanwendungen
               items:
                 - name: Profilerstellung für ASP.NET-Webanwendungen über die Befehlszeile

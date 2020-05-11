@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826457"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988516"
 ---
 # <a name="docker-compose-build-properties"></a>Buildeigenschaften von Docker Compose
 
@@ -41,6 +41,7 @@ In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für 
 |DockerComposeDownArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose down` übergeben werden sollen. Beispiel: `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj oder vbproj|Der relative Pfad zur Docker Compose-Projektdatei (mit der DCPROJ-Erweiterung). Legen Sie diese Eigenschaft fest, wenn Sie das Dienstprojekt veröffentlichen, damit die zugeordneten Imagebuildeinstellungen in der Datei „docker-compose.yml“ gefunden werden.|-|
 |DockerComposeUpArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose up` übergeben werden sollen. Beispiel: `--timeout 500`|-|
+|DockerDevelopmentMode|dcproj| Steuert, ob die Optimierung „build-on-host“ (Debugging im schnellen Modus) aktiviert ist.  Zulässige Werte sind: **Fast** (Schnell) und **Regular** (Normal). | Fast |
 |DockerLaunchAction| dcproj | Legt die Startaktion fest, die beim Drücken von F5 oder STRG+F5 ausgeführt werden soll.  Zulässige Werte sind None, LaunchBrowser und LaunchWCFTestClient.|Keine|
 |DockerLaunchBrowser| dcproj | Legt fest, ob der Browser gestartet werden soll. Wird ignoriert, wenn DockerLaunchAction festgelegt wird. | False |
 |DockerServiceName| dcproj|Wenn DockerLaunchAction oder DockerLaunchBrowser festgelegt wird, ist DockerServiceName der Name des Diensts, der gestartet werden soll.  Da eine Docker Compose-Datei auf mehrere Projekte verweisen kann, können Sie mit dieser Eigenschaft festlegen, welches Projekt gestartet werden soll.|-|

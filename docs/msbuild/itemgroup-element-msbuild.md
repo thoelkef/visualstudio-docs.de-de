@@ -18,28 +18,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588118bf31c5d310e947b02fda476a63d0d9df7a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573442"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633641"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup-Element (MSBuild)
-Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.
+
+Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Jedes Element, das in einem MSBuild-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.
 
 \<Project> \<ItemGroup>
 
 ## <a name="syntax"></a>Syntax
 
 ```xml
-<ItemGroup Condition="'String A' == 'String B'">
+<ItemGroup Condition="'String A' == 'String B'"
+           Label="Label">
     <Item1>... </Item1>
     <Item2>... </Item2>
 </ItemGroup>
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
 In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
@@ -47,6 +50,7 @@ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeor
 |Attribut|Beschreibung|
 |---------------|-----------------|
 |`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
+|`Label`|Optionales Attribut. Identifiziert die `ItemGroup`.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -58,10 +62,11 @@ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeor
 
 | Element | Beschreibung |
 | - | - |
-| [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei. |
+| [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer MSBuild-Projektdatei. |
 | [Target](../msbuild/target-element-msbuild.md) | Ab.NET Framework 3.5 kann das `ItemGroup`-Element innerhalb eines `Target`-Elements angezeigt werden. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Codebeispiel werden die benutzerdefinierten Elementsammlungen `Res` und `CodeFiles` gezeigt, die innerhalb eines `ItemGroup`-Element deklariert sind. Jedes der Elemente in der `Res`-Elementsammlung enthält ein benutzerdefiniertes untergeordnetes [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)-Element.
 
 ```xml
@@ -82,6 +87,7 @@ Im folgenden Codebeispiel werden die benutzerdefinierten Elementsammlungen `Res`
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elemente](../msbuild/msbuild-items.md)
 - [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)

@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631951"
 ---
 # <a name="task-base-class"></a>Aufgabenbasisklasse
+
 Viele Aufgaben erben letztlich von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Diese Klasse fügt den Aufgaben, die ihr abgeleitet werden, mehrere Parameter hinzu. Diese Parameter werden in diesem Dokument aufgeführt.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter dieser Basisklasse beschrieben.
 
 |Parameter|Beschreibung|
@@ -34,6 +36,7 @@ Viele Aufgaben erben letztlich von der <xref:Microsoft.Build.Utilities.Task>-Kla
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Optionaler <xref:Microsoft.Build.Framework.ITaskHost>-Parameter.<br /><br /> Gibt die Hostobjektinstanz (kann null sein) an. Die Build-Engine legt diese Eigenschaft fest, wenn die Host-IDE ein Hostobjekt mit dieser bestimmten Aufgabe verknüpft hat.|
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Optionaler schreibgeschützter <xref:Microsoft.Build.Utilities.TaskLoggingHelper>-Parameter.<br /><br /> Das Hilfsobjekt für die Protokollierung|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,5 @@
 ---
-title: Bewährte Methoden für Sicherheit in VSPackages | Microsoft-Dokumentation
+title: Bewährte Methoden für die Sicherheit in VSPackages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,29 +7,29 @@ helpviewer_keywords:
 - security best practices, VSPackages
 - best practices, security
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 144bc62176ebc552e7070b29088acf70329a84d4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309158"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709910"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Bewährte Methoden für die Sicherheit in VSPackages
-So installieren Sie die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] auf dem Computer, müssen Sie in einem Kontext mit Administratorrechten ausgeführt werden. Die grundlegende Einheit von Sicherheit und Bereitstellung von einem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Anwendung ist die [VSPackage](../../extensibility/internals/vspackages.md). Eine VSPackage muss registriert werden, mithilfe von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], wodurch es auch administrative Anmeldeinformationen erforderlich.
+Um die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] auf Ihrem Computer zu installieren, müssen Sie in einem Kontext mit administrativen Anmeldeinformationen ausgeführt werden. Die grundlegende Einheit für Sicherheit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und Bereitstellung einer Anwendung ist das [VSPackage](../../extensibility/internals/vspackages.md). Ein VSPackage muss mithilfe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]von registriert werden, was auch administrative Anmeldeinformationen erfordert.
 
- Administratoren haben vollständige Berechtigungen zum Schreiben in die Registrierung und das Dateisystem und Code ausführen. Sie müssen diese Berechtigungen zu entwickeln, bereitstellen, oder installieren eine VSPackage verfügen.
+ Administratoren verfügen über vollständige Berechtigungen zum Schreiben in die Registrierung und zum Dateisystem sowie zum Ausführen von Code. Sie müssen über diese Berechtigungen verfügen, um ein VSPackage zu entwickeln, bereitzustellen oder zu installieren.
 
- Sobald sie installiert ist, ist eine VSPackage voll vertrauenswürdig. Aufgrund dieses hohe Maß an Berechtigungen, die ein VSPackage zugeordnet werden soll ist es möglich, versehentlich eine VSPackage zu installieren, die böswillige Absichten hat.
+ Sobald es installiert ist, ist ein VSPackage voll vertrauenswürdig. Aufgrund dieser hohen Berechtigungsstufe, die einem VSPackage zugeordnet ist, ist es möglich, versehentlich ein VSPackage mit böswilliger Absicht zu installieren.
 
- Benutzer sollten stellen Sie sicher, dass sie VSPackages nur von vertrauenswürdigen Quellen installieren. Unternehmen entwickeln von VSPackages sollte stark benennen und Sie zu signieren, um dem Benutzer zu gewährleisten, Manipulationen verhindert werden. Entwickeln von VSPackages Unternehmen sollten ihre externen Abhängigkeiten auf, wie z. B. Webdienste und remote-Installation, auswerten und beheben Sie alle eventuell vorhandenen Sicherheitsrisiken untersuchen.
+ Benutzer sollten sicherstellen, dass sie VSPackages nur aus vertrauenswürdigen Quellen installieren. Unternehmen, die VSPackages entwickeln, sollten sie stark benennen und signieren, um dem Benutzer zu versichern, dass Manipulationen verhindert werden. Unternehmen, die VSPackages entwickeln, sollten ihre externen Abhängigkeiten, wie Webdienste und Remoteinstallation, untersuchen, um Sicherheitsprobleme zu bewerten und zu beheben.
 
- Weitere Informationen finden Sie unter [für .NET Framework Schreiben von sicherem Code](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
+ Weitere Informationen finden Sie unter [Richtlinien für sichere Codierung für .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
-## <a name="see-also"></a>Siehe auch
-- [Add-in-Sicherheit](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
+## <a name="see-also"></a>Weitere Informationen
+- [Add-In-Sicherheit](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
 - [DDEX-Sicherheit](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)

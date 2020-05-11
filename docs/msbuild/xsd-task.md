@@ -20,31 +20,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77630781"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
+
 Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert.
 
 > [!NOTE]
 > Ab Visual Studio 2017 ist die Unterstützung von C++-Projekten für *xsd.exe* veraltet. Sie können die APIs **Microsoft.VisualC.CppCodeProvider** weiterhin verwenden, indem Sie die Datei *CppCodeProvider.dll* manuell dem globalen Assemblycache hinzufügen.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der **XSD**-Aufgabe beschrieben.
 
 - **AdditionalOptions**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.
 
 - **GenerateFromSchema**
 
-  Optionaler **String**-Parameter.
+  Optionaler **String** -Parameter.
 
   Gibt die Typen an, die aus dem angegebenen Schema generiert werden.
 
@@ -56,7 +58,7 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **Sprache**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Gibt die Programmiersprache an, die für den generierten Code verwendet werden soll.
 
@@ -64,13 +66,13 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **Namespace**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Gibt den Laufzeitnamespace für die generierten Typen an.
 
 - **Sources**
 
-     Erforderlicher `ITaskItem[]` -Parameter.
+     Erforderlicher `ITaskItem[]`-Parameter.
 
      Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.
 
@@ -82,9 +84,10 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **TrackerLogDirectory**
 
-     Optionaler **String**-Parameter.
+     Optionaler **String** -Parameter.
 
      Gibt das Verzeichnis für das Nachverfolgungsprotokoll an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

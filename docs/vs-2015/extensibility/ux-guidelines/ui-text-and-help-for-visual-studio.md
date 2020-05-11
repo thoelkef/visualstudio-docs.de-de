@@ -9,58 +9,58 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823616"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301242"
 ---
-# <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächentext und-Hilfe für Visual Studio
+# <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächentext und -hilfe für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="BKMK_UITextAndTerminology"></a> Benutzeroberflächentext und Terminologie
- Verständlich Text ist entscheidend, um effektive Benutzeroberfläche. Softwarebenutzer zu lesen sind tendenziell "Bezeichnungen" zuerst, nämlich die wichtigsten, um die aktuelle Aufgabe fertig zu stellen. Statischer Text wird weniger häufig gelesen. Planen Sie für Benutzer, ihre Arbeitssitzungen mit einer schnellüberprüfung, der das gesamte Fenster, gefolgt von der ein Lesen der Benutzeroberfläche in der angegebenen Reihenfolge ungefähre zu beginnen:
+## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a>UI-Text und Terminologie
+ Verständlicher Text ist entscheidend für eine effektive Benutzeroberfläche. Software-Benutzer neigen dazu, zuerst Etiketten zu lesen, nämlich diejenigen, die für den Abschluss der anstehenden Aufgabe am relevantesten sind. Statischer Text wird mit weniger Häufigkeit gelesen. Planen Sie, dass Benutzer ihre Arbeitssitzungen mit einem schnellen Scan des gesamten Fensters beginnen, gefolgt von einem Lesen der Benutzeroberfläche in dieser ungefähren Reihenfolge:
 
-1. Interaktive Steuerelemente in der Mitte
+1. Interaktive Steuerungen in der Mitte
 
 2. Commit-Schaltflächen
 
-3. Interaktive Steuerelemente, die an anderer Stelle gefunden.
+3. Interaktive Steuerelemente an anderer Stelle
 
-4. Hauptanleitung
+4. Hauptanweisungen
 
-5. Zusätzliche erläuterungen
+5. Ergänzende Erläuterungen
 
 6. Fenstertitel
 
-7. Anderen statischen Text im Hauptteil
+7. Anderer statischer Text im Haupttext
 
-### <a name="usage-patterns-for-ui-text"></a>Verwendungsmuster für Benutzeroberflächen-text
+### <a name="usage-patterns-for-ui-text"></a>Verwendungsmuster für UI-Text
 
 #### <a name="title-bar-text"></a>Titelleistentext
- Text der Titelleiste muss es sich um den Befehl übereinstimmen, der die Benutzeroberfläche erzeugt.
+ Der Text der Titelleiste muss mit dem Befehl übereinstimmen, der die Benutzeroberfläche ausgelöst hat.
 
-#### <a name="instructional-text-helper-text"></a>Anweisungstext (Hilfsprogramm Text)
- In einigen Dialogfeldern ist es hilfreich, die gut sichtbaren main Anweisungen erläutert, was Sie im Fenster oder auf der Seite. Dies wird manchmal als "Hilfsprogramm-Text" bezeichnet
+#### <a name="instructional-text-helper-text"></a>Lehrtext (Hilfstext)
+ In einigen Dialogfeldern ist es hilfreich, prominente Hauptanweisungen bereitzustellen, um zu erklären, was im Fenster oder auf der Seite zu tun ist. Dies wird manchmal als "Helfertext" bezeichnet.
 
-##### <a name="writing-style-rules-for-helper-text"></a>Schreiben von Formatierungsregeln für Hilfetext
+##### <a name="writing-style-rules-for-helper-text"></a>Schreiben von Stilregeln für Hilfstext
 
-- Erläutern Sie nicht, die offensichtlich. Wenn es absolut notwendig ist, enthalten Sie keine Anweisungstext.
+- Erklären Sie nicht das Offensichtliche. Es sei denn, es ist unbedingt erforderlich, schließen Sie keinen Lehrtext ein.
 
-- Anweisungstext befindet sich immer am oberen Rand des Dialogfelds und finden Sie in der Task ausgeführt wird.
+- Instruktionstext wird immer oben im Dialogfeld platziert und sollte sich auf die auszuführende Aufgabe beziehen.
 
-- Erklären Sie genau den Benutzern was sie tun müssen. Vermeiden Sie übermäßige Kommunikation und Redundanz.
+- Erklären Sie den Benutzern genau, was sie tun müssen. Vermeiden Sie übermäßige Kommunikation und Redundanz.
 
-- Überprüfen Sie jedes Fenster aus, und entfernen Sie doppelte Wörter und Anweisungen.
+- Überprüfen Sie jedes Fenster, und entfernen Sie doppelte Wörter und Anweisungen.
 
-- Halten Sie kurze Anweisungstext. Wenn weitere Informationen erforderlich für bestimmte Benutzer oder Szenarien sind, geben Sie einen Link zu detaillierten konzeptionellen Themen online.
+- Halten Sie den Anweisungstext kurz. Wenn für bestimmte Benutzer oder Szenarien weitere Informationen erforderlich sind, stellen Sie einen Link zu einem detaillierten konzeptionellen Onlinethema bereit.
 
-- Schreiben Sie den Text ein, sodass jedes Wort enthält die Gewichtung und erforderlich ist.
+- Schreiben Sie Ihren Text so, dass jedes Wort Gewicht hat und notwendig ist.
 
-- Führen Sie die vorhandene Microsoft-Sicherheitsleitfaden für [Benutzeroberflächentext](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) und [Stil und Ton](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
+- Befolgen Sie die vorhandenen Microsoft-Richtlinien für [Benutzeroberflächentext](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) und [-stil und Ton](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
 
-#### <a name="supplemental-instructions"></a>Zusätzliche Anweisungen
- Zusätzliche Anweisungen bieten zusätzliche Informationen, die den Benutzer verstehen, Steuerelemente oder Gruppierungen zu steuern. Dadurch kann zudem müssen Sie wissen, in welchem Format das Eingabesteuerelement erwartet Hinweistext umfassen. Verwenden Sie zusätzliche Anweisungen nur selten auf. Behalten sie für Fälle, in dem es wahrscheinlich ist, dass der Benutzer wird nicht vollständig die Auswirkungen der Wahl verstehen, die sie vornehmen.
+#### <a name="supplemental-instructions"></a>Ergänzende Anweisungen
+ Zusätzliche Anweisungen enthalten zusätzliche Informationen, die dem Benutzer helfen, Steuerelemente oder Steuerelementgruppierungen zu verstehen. Dies kann auch Hinweistext enthalten, der erforderlich ist, um zu verstehen, welches Format das Eingabesteuerelement erwartet. Verwenden Sie zusätzliche Anweisungen sparsam. Reservieren Sie sie für Fälle, in denen es wahrscheinlich ist, dass der Benutzer die Auswirkungen der Wahl, die er trifft, nicht vollständig versteht.
 
  ![Ergänzender Text in Visual Studio](../../extensibility/ux-guidelines/media/0601-b-supplementaltext1.png "0601-b_SupplementalText1")
 
@@ -70,258 +70,258 @@ ms.locfileid: "67823616"
 
  **Ergänzender Text in Visual Studio**
 
-#### <a name="infotips"></a>InfoTips
- Anweisungstext kann häufig so umfangreich, dass ein direktes in der Benutzeroberfläche zu positionieren oder kann nur an einen neuen Benutzer wie überladen für erfahrene Benutzern hilfreich sein. In diesem Fall sollte dem Lehrzwecken/Informationstext als QuickInfo in einem Infotipp platziert werden.
+#### <a name="infotips"></a>InfoTipps
+ Häufig ist der Anweisungstext zu langwierig, um ihn in der Benutzeroberfläche zu positionieren, oder er ist nur für neue Benutzer nützlich, da er sich für erfahrene Benutzer wie unübersichtlich anfühlt. In diesem Fall sollte der Lehr-/Informationstext als QuickInfo unter einem InfoTip platziert werden.
 
- Infotipps sollten in der Nähe von den Steuerelementen, die sie beziehen sich auf und sollten das bestimmte Infotipp-Symbol, das unaufdringliche noch nicht bemerkbar platziert werden.
+ InfoTips sollten in der Nähe der Steuerelemente platziert werden, mit denen sie verwandt sind, und das spezifische InfoTip-Symbol verwenden, das unauffällig und doch spürbar ist.
 
- ![Infotipp in Visual Studio](../../extensibility/ux-guidelines/media/0601-d-infotip.png "0601-D_InfoTip")
+ ![Infotipp in Visual Studio](../../extensibility/ux-guidelines/media/0601-d-infotip.png "0601-d_InfoTip")
 
- **Beispiel für ein Infotipp in Visual Studio**
+ **Beispiel für einen InfoTip in Visual Studio**
 
-##### <a name="writing-style-rules-for-infotips"></a>Schreiben von Stilregeln für Infotipps
+##### <a name="writing-style-rules-for-infotips"></a>Schreiben von Stilregeln für InfoTips
 
-- Schreiben Sie Infotipps als vollständigen Sätzen. Sie erfordern bestimmte Verben großgeschrieben und setzen Sie satzendpunkte.
+- Schreiben Sie InfoTips als vollständige Sätze. Sie erfordern bestimmte Verben, Satzfall und Endsatz.
 
-- Verwenden Sie Infotipps, um Ihren hauptanweisung oder Informationen ergänzen. Wenn Sie nur unterschiedliche Wörter die Grundidee wie bereits erwähnt, wird Sie keinen Infotipp erforderlich.
+- Verwenden Sie InfoTips, um Ihre Hauptanleitung oder Informationen zu ergänzen. Wenn Sie nur andere Wörter verwenden, um die Hauptidee zu wiederholen, benötigen Sie kein InfoTip.
 
-- Halten Sie Infotipps kurz und einfach. Verwenden Sie kurze Wörter und Plain, alltägliche Sprache, die unterstützt und fördert den Benutzer.
+- Halten Sie InfoTips kurz und süß. Verwenden Sie kleine Wörter und einfache, alltägliche Sprache, die den Benutzer unterstützt und ermutigt.
 
-- Führen Sie die vorhandene Microsoft-Sicherheitsleitfaden für [Benutzeroberflächentext](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) und [Stil und Ton](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
+- Befolgen Sie die vorhandenen Microsoft-Richtlinien für [Benutzeroberflächentext](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) und [-stil und Ton](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
 
-#### <a name="control-labels"></a>Steuerelementbezeichnungen
- Bezeichnungen werden kurze, präzise, und befolgen Sie die [Windows-Desktop-Anleitungen für die Steuerelemente](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx).
+#### <a name="control-labels"></a>Kontrolletiketten
+ Steuerelementbeschriftungen sollten kurz und prägnant sein und den [Windows Desktop-Anleitungen für Steuerelemente](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx)folgen.
 
- Weitere Informationen zum Steuerelement Bezeichnungsformat und die Platzierung auf der Benutzeroberfläche finden Sie unter [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
+ Weitere Informationen zum Steuerelementbeschriftungsformat und zur Platzierung innerhalb der Benutzeroberfläche finden Sie unter [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="help-links"></a>Links zu Hilfethemen
- Links zu Hilfethemen können entweder in Anweisungstext oder im Text der Benutzeroberfläche platziert werden. Sie können rufen Dialogfelder auf interne oder Links zur Hilfe werden.
+#### <a name="help-links"></a>Hilfelinks
+ Hilfelinks können entweder im Anweisungstext oder im Textkörper der Benutzeroberfläche platziert werden. Dabei kann es sich um Links zur Hilfe oder zum Starten interner Dialoge handelt.
 
-##### <a name="visual-style-rules-for-help-links"></a>Visuellen Stil-Regeln für Links zu Hilfethemen
+##### <a name="visual-style-rules-for-help-links"></a>Visuelle Stilregeln für Hilfelinks
 
-- Verwenden Sie die richtige Umgebung-Farben für Links. Ein ordnungsgemäß formatierten Link leuchtet kurz nicht rot, die beim Klicken auf. Wenn dies angezeigt wird, dann ist ein Hinweis, dass die Umgebungsfarben nicht verwendet werden.
+- Verwenden Sie die richtigen Umgebungsfarben für Hyperlinks. Ein ordnungsgemäß formatierter Hyperlink blinkt nicht kurz rot, wenn darauf geklickt wird. Wenn Sie dies sehen, dann ist es ein Hinweis darauf, dass Umgebungsfarben nicht verwendet werden.
 
-- Unterstreichungen sollte nur verwendet werden, wenn darauf gezeigt wird oder wenn der Link in einem Absatz eingebettet ist.
+- Unterstreichungen sollten nur bei der Maus verwendet werden oder wenn die Verknüpfung in einen Absatz eingebettet ist.
 
-- Ausführlichere Informationen zu Visual und Interaktion von Formaten für Links finden Sie Schaltflächen und Links.
+- Ausführlichere Informationen zu visuellen und Interaktionsstilen für Hyperlinks finden Sie unter Schaltflächen und Hyperlinks.
 
-##### <a name="writing-style-rules-for-help-links"></a>Schreiben von Formatierungsregeln für Links zu Hilfethemen
+##### <a name="writing-style-rules-for-help-links"></a>Schreiben von Stilregeln für Hilfelinks
 
-- Beim Starten von Dialogfeldern, behalten Sie die Standards für die Ellipsen: keine mit den Auslassungszeichen für die Navigation, Ellipsen, wenn die Aufgabe weitere Benutzeroberfläche erforderlich sind.
+- Behalten Sie beim Starten von Dialogen die Standards für Ellipsen bei: keine Auslassungspunkte für die Navigation, Ellipsen, wenn die Aufgabe eine zusätzliche Benutzeroberfläche erfordert.
 
-     ![Hilfe-Link in Visual Studio](../../extensibility/ux-guidelines/media/0601-e-helplink.png "0601-E_HelpLink")
+     ![Hilfelink in Visual Studio](../../extensibility/ux-guidelines/media/0601-e-helplink.png "0601-e_HelpLink")
 
-     **In einen Hilfelink Klicken ein Auslassungszeichen (...) gibt an, dass der Task zusätzliche Benutzeroberfläche benötigen.**
+     **Eine Auslassungspunkte (...) in einem Hilfelink gibt an, dass die Aufgabe eine zusätzliche Benutzeroberfläche benötigt.**
 
-- Links sollte nicht mit "Informieren Sie sich," gestartet, wenn dies nicht die Absicht des Benutzers ist. Der Benutzer möchte eine bestimmte Frage beantworten, erhalten eine allgemeine Bildungseinrichtungen keine ab.
+- Links sollten nicht mit "Lernen" beginnen, da dies nicht die Absicht des Benutzers ist. Der Benutzer möchte eine bestimmte Frage beantworten, keine allgemeine Ausbildung erhalten.
 
-- Ausdruck Hilfe verknüpft, damit sie die Frage, dass das Thema beantwortet werden sollen.
+- Phrasenhilfe-Links, so dass sie die Frage stellen, die das Thema beantworten wird.
 
-     Falsch:    "Erfahren Sie mehr über die Preise von Windows Azure Mobile Services"
+     Falsch: "Erfahren Sie mehr über die Preise für Windows Azure Mobile Services"
 
-     Richtig:    "Welche Preisoptionen stehen für Windows Azure Mobile Services zur Verfügung?"
+     Richtig: "Welche Preisoptionen sind für Windows Azure Mobile Services verfügbar?"
 
-- Verwenden Sie niemals *klicken Sie auf...* um den Text des Links.
+- Verwenden Sie niemals *Click...* auf den Linktext.
 
-- Verknüpfen Sie nicht nur das Wort "hier". Dies ist für einige Bildschirmsprachausgaben, die nur das mit einem Link versehenen Wort voice werden problematisch.
+- Verknüpfen Sie niemals nur das Wort "hier". Dies ist problematisch für einige Bildschirmleser, die nur das mit Deminemten verknüpfte Wort sprechen.
 
-     Falsch:    "Informieren Sie sich auf Windows Azure Mobile Services **hier**"
+     Falsch: "Informationen zu Windows Azure Mobile Services **finden Sie hier**"
 
-     Richtig:    "Welche Preisoptionen stehen für Windows Azure Mobile Services zur Verfügung?"
+     Richtig: "Welche Preisoptionen sind für Windows Azure Mobile Services verfügbar?"
 
-- Weitere Informationen zu den richtigen Schreibstil für Links zu Hilfethemen, finden Sie unter den [Windows-Desktop-Anleitung, Hilfe](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx).
+- Weitere Informationen zum richtigen Schreibstil für Hilfelinks finden Sie in der [Windows-Desktopanleitung für Hilfe](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx).
 
 #### <a name="hint-text"></a>Hinweistext
- Hinweistext wird als Wasserzeichen in einem Steuerelement oder unterhalb des Steuerelements angezeigt. Richtige Formatierung wird angewendet werden, mit dem entsprechenden VSColors Token `Environment.GrayText`.
+ Hinweistext wird als Wasserzeichen innerhalb eines Steuerelements oder unterhalb des Steuerelements angezeigt. Die korrekte Formatierung wird mithilfe des `Environment.GrayText`entsprechenden VSColors-Tokens , angewendet.
 
- Sie können in verschiedene Formate angezeigt.
+ Es kann in einer Reihe von Formularen angezeigt werden.
 
-- Anstelle der steuerelementbezeichnung:
+- Anstelle des Steueretiketts:
 
-     ![Text in Visual Studio-Hinweis](../../extensibility/ux-guidelines/media/0601-f-hinttext1.png "0601-f_HintText1")
+     ![Hinweistext in Visual Studio](../../extensibility/ux-guidelines/media/0601-f-hinttext1.png "0601-f_HintText1")
 
-- Mit einem Verb erhalten Anweisungen:
+- Mit einem Verb, das Anweisungen gibt:
 
-     ![Text in Visual Studio-Hinweis](../../extensibility/ux-guidelines/media/0601-g-hinttext2.png "0601-g_HintText2")
+     ![Hinweistext in Visual Studio](../../extensibility/ux-guidelines/media/0601-g-hinttext2.png "0601-g_HintText2")
 
-- Mit dem Text, der angibt, einer erforderlichen Eingabe:
+- Mit Text, der einen erforderlichen Eintrag angibt:
 
-     ![Text in Visual Studio-Hinweis](../../extensibility/ux-guidelines/media/0601-h-hinttext3.png "0601-h_HintText3")
+     ![Hinweistext in Visual Studio](../../extensibility/ux-guidelines/media/0601-h-hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>Wasserzeichentext
- Auf eine leere Entwurfsoberfläche was Sie tun sowie Links zu anderen verknüpften Fenster angezeigt, öffnen Sie bei Bedarf in den Text angeben:
+ Auf einer leeren Entwurfsoberfläche sollte der Text angeben, was zu tun ist, sowie Links zum Öffnen anderer verwandter Fenster bereitstellen, falls zutreffend:
 
- ![Wasserzeichen von Text in Visual Studio](../../extensibility/ux-guidelines/media/0601-i-watermarktext.png "0601-I_WatermarkText")
+ ![Wasserzeichentext in Visual Studio](../../extensibility/ux-guidelines/media/0601-i-watermarktext.png "0601-i_WatermarkText")
 
  **Beispiel für Wasserzeichentext in Visual Studio**
 
-### <a name="common-terminology"></a>Allgemeine Terminologie
+### <a name="common-terminology"></a>Gemeinsame Terminologie
 
-|Begriff|Erklärung|Kommentar|
+|Begriff|Erklärung|Comment|
 |----------|-----------------|-------------|
-|Anmelden / Abmelden|Verben, die mit dem Web synonym verwendet wird, für die Darstellung der Authentifizierung in eine webeigenschaft. Innerhalb von-Clients verwenden wir dies einmal als eine Vorstellung der obersten Ebene für die Signierung und IDE-benutzerverbindung, der eine Identität der obersten Ebene, die bietet Funktionen auf höherer Ebene darstellt, wie roaming und Lizenzierung, der nicht mit alle anderen Verbindungen verfügbar sind.|Der IDE-Benutzer ist die einzige Funktion, die darstellen eine Anmeldung / Abmeldung-Verb, sollte, weil sie auf den obersten Ebene IDE-Benutzer darstellt.|
-|Eine Verbindung herstellen / trennen|Verwenden Sie in den Orten, in denen ein Feature für eine einzelne Verbindung mit einer online-Dienst verwaltet.|Server-Explorer, in dem Sie nur eine aktive Azure-Verbindung zu einem Zeitpunkt verfügen können, ist ein Beispiel für die Verbindung herstellen/trennen.|
-|Hinzufügen / Entfernen|Nichtdestruktive. Verwenden Sie beim Hinzufügen oder entfernen etwas aus der Liste.|Die TFS-Verbindungs-Manager-Dialogfeld "Server Liste" ist ein Beispiel für hinzufügen/entfernen.|
-|Löschen|Destruktive. Verwenden Sie nur, wenn die zu entfernende Element dauerhaft verworfen oder vom Datenträger gelöscht werden.|"Delete" müssen in der Regel eine Eingabeaufforderung, wenn das Ergebnis wird eine Datei vom Datenträger gelöscht wird.|
+|Anmelden / Abmelden|Verben werden synonym mit dem Web für die Darstellung der Authentifizierung in einer Webeigenschaft verwendet. Innerhalb von Clients verwenden wir dies einmal als einen Begriff auf oberster Ebene für die Anmeldung und Aus-aus-ID-Benutzerverbindung, die eine Identität der obersten Ebene darstellt, die Funktionen auf höherer Ebene wie Roaming und Lizenzierung bereitstellt, die nicht mit allen anderen Verbindungen verfügbar sind.|Der IDE-Benutzer ist das einzige Feature, das ein Anmelde-/Abmeldeverb darstellen sollte, da er den IDE-Benutzer der obersten Ebene darstellt.|
+|Verbinden / Trennen|Verwendung an Orten, an denen ein Feature eine einzelne Verbindung zu einem Onlinedienst unterhält.|Der Server-Explorer, bei dem Sie jeweils nur über eine aktive Azure-Verbindung verfügen können, ist ein Beispiel für Verbinden/Trennen.|
+|Hinzufügen / Entfernen|Nicht destruktiv. Wird beim Hinzufügen oder Entfernen von etwas aus einer Liste verwendet.|Das Dialogfeld TFS Connection Manager-Serverlisten ist ein Beispiel für Hinzufügen/Entfernen.|
+|Löschen|Destruktive. Wird nur verwendet, wenn das zu entfernende Element dauerhaft verworfen oder vom Datenträger gelöscht wird.|"Löschen" erfordert in der Regel eine Eingabeaufforderung, wenn das Ergebnis das Löschen einer Datei vom Datenträger ist.|
 
 ## <a name="error-messages"></a>Fehlermeldungen
 
 ### <a name="overview"></a>Übersicht
- Fehler auftreten. Festlegen von Einschränkungen für die Möglichkeiten des Benutzers ist eine sinnvolle zunächst verhindert vermeidbare Fehlermeldungen. Wenn ein Fehler auftritt, kann jedoch eine gut geschriebene Fehlermeldung einen wichtiger Beitrag über das Problem zu entschärfen wechseln. Fehlermeldungen sind wohl eine der wichtigsten Typen von Benachrichtigungen, die dem Benutzer angezeigt wird, da sie synchron sind, und zeigen kein Problem, das gelöst werden muss, wird. Schlecht geschriebenen Fehlermeldungen lassen Sie Benutzer auf ihre eigenen entscheiden, die Ursache der Fehler und alle möglichen Lösungen.
+ Fehler passieren. Das Festlegen von Einschränkungen für das, was der Benutzer tun kann, ist ein sinnvoller erster Schritt, um vermeidbare Fehlermeldungen zu verhindern. Wenn jedoch ein Fehler auftritt, kann eine gut geschriebene Fehlermeldung einen langen Weg zur Milderung des Problems gehen. Fehlermeldungen sind wohl eine der wichtigsten Arten von Benachrichtigungen, die der Benutzer sieht, da sie synchron sind und auf ein Problem hinweisen, das gelöst werden muss. Schlecht geschriebene Fehlermeldungen lassen Benutzer auf sich allein gestellt, um die Ursache der Fehler und mögliche Lösungen zu entscheiden.
 
- Benutzer möglicherweise nicht mehr, und achten Sie dabei übermäßig beansprucht oder verwirrende Fehlermeldungen aus, damit Schreibzugriff nur erforderlich, Nachrichten, die Wert für den Benutzer auftreten. Wenn die Nachricht einfach eine Benachrichtigung ist, verwenden Sie eine alternative Darstellung.
+ Benutzer können aufhören, auf überstrapazierte oder verwirrende Fehlermeldungen zu achten, also schreiben Sie nur die erforderlichen Nachrichten, die der Benutzererfahrung einen Mehrwert verleihen. Wenn es sich bei der Nachricht lediglich um eine Benachrichtigung handelt, verwenden Sie eine alternative Darstellung.
 
-### <a name="rules-for-creating-an-error-message"></a>Regeln für das Erstellen einer Fehlermeldung
+### <a name="rules-for-creating-an-error-message"></a>Regeln zum Erstellen einer Fehlermeldung
 
-- Wenn Sie Fehlermeldungen zu erstellen, wählen Sie die entsprechenden Fehler für die Zielgruppe. Streben Sie für einfache Zusammenfassungen, die eine Aktion, mit denen der Benutzer bereitstellen, falls zutreffend. Keine Status alle Elemente, die der Benutzer nicht kennen muss.
+- Wählen Sie beim Erstellen von Fehlermeldungen die entsprechende Fehlerstufe für die Zielgruppe aus. Ziel für einfache Zusammenfassungen, die eine Aktion bereitstellen, die der Benutzer ggf. ergreifen kann. Geben Sie nichts an, was der Benutzer nicht wissen muss.
 
-- Unterstützen Sie konstruktive. Es ist einfacher zu lesen und reagieren auf eine Fehlermeldung angezeigt, die Anweisung enthält.
+- Bieten Sie konstruktive Hilfe. Es ist einfacher, eine Fehlermeldung zu lesen und zu reagieren, die Anweisungen enthält.
 
-- Verwenden Sie keine doppelten negativ.
+- Verwenden Sie keine doppelten Negative.
 
-- Führen Sie eine automatisierte und Fehlermeldungen, die Sie schreiben eine manuelle Grammatik und Rechtschreibung prüfen.
+- Führen Sie sowohl eine automatisierte als auch eine manuelle Grammatik- und Rechtschreibprüfung für jede Fehlermeldung durch, die Sie schreiben.
 
-- Vermeiden Sie komplexe Fehlermeldungen sequenzielle Kommunikation. Verwenden Sie niemals ein F1-Einbindung für die Fehlermeldung an. Die Nachricht selbst sollte ausreichend sein.
+- Vermeiden Sie bei komplexen Fehlermeldungen die sequenzielle Kommunikation. Verwenden Sie niemals einen F1-Anschluss für die Fehlermeldung. Die Botschaft selbst sollte ausreichen.
 
-- Verwenden Sie die korrekte Symbole angezeigt.
+- Verwenden Sie das richtige Symbol.
 
-- Stellen Sie Fragen einfach zu verstehen und verwenden Sie Schaltflächen, die klare Optionen, wie beispielsweise "Delete" und "Abbrechen".
+- Machen Sie Fragen leicht verständlich und verwenden Sie Schaltflächen, die klare Auswahlmöglichkeiten haben, z. B. "Löschen" und "Abbrechen".
 
-- Werden Sie für Warnungen deutlich hervorzuheben, was zur Folge, dass Sie den Vorgang fortsetzen kann. Die Schaltflächen sollten die Folge angeben.
+- Seien Sie bei Warnungen klar, welche Folgen das Verfahren haben wird. Die Schaltflächen sollten die Folge anzeigen.
 
-- Beschrieben Sie für Fehler, was der Benutzer ausführen kann, um das Problem zu beheben. Schaltflächen müssen Aktionen oder sagen "Schließen". Verwenden Sie eine Schaltfläche "OK" nicht für eine Fehlermeldung an.
+- Beschreiben Sie bei Fehlern, was der Benutzer tun kann, um das Problem zu beheben. Schaltflächen sollten Aktionen sein oder "Schließen" sagen. Verwenden Sie für eine Fehlermeldung keine "OK"-Schaltfläche.
 
-- Einige Fragen sich Fragen, wenn Sie eine Fehlermeldung zu erstellen:
+- Einige Fragen, die Sie sich beim Erstellen einer Fehlermeldung stellen müssen:
 
-  - Kann der Benutzer zur Lösung des Problems zu diesem Fehler allein herausfinden, wie?
+  - Kann der Benutzer herausfinden, wie das Problem mit diesem Fehler allein zu lösen?
 
-  - Wird der Benutzer das gleiche Vokabular wie dieser Fehler verwendet?
+  - Verwendet der Benutzer dasselbe Vokabular wie dieser Fehler?
 
-  - Ist dieser Fehler mehrdeutig oder in mehreren Fällen freigegeben? Wenn dies der Fall ist, führen Sie wie Sie mit der Lösung Benutzerhandbuch, die sie benötigen?
+  - Ist dieser Fehler unbigious oder in mehreren Situationen geteilt? Wenn ja, wie führen Sie Benutzer zu der Lösung, die sie benötigen?
 
 #### <a name="build-errors"></a>Buildfehler
- Da Visual Studio ein Entwicklungstool für die Software ist, verfügen viele Komponenten eine Kompilierung konvertieren oder Codierung Schritt, um die Arbeit des Entwicklers in das binäre Format zu konvertieren. Diese Konvertierungen können Fehler verursachen, wenn der Compiler nicht ordnungsgemäß erstellte Dateien nicht verarbeiten kann oder Compileroptionen ordnungsgemäß festgelegt wurden nicht.
+ Da Visual Studio ein Softwareentwicklungstool ist, verfügen viele seiner Komponenten über einen Kompilierungs-, Konvertierungs- oder Codierungsschritt, um die Arbeit des Entwicklers in binäre Form zu konvertieren. Diese Konvertierungen können Fehler verursachen, wenn der Compiler nicht falsch erstellte Dateien verarbeiten kann oder wenn Compileroptionen nicht richtig festgelegt wurden.
 
- Visual Studio-Benutzer können eine enorme Anzahl von Entwicklung Stunden Beheben von Buildfehlern verbringen. Diese Auflösungszeit wird erhöht, wenn Fehler vorliegen, Abhängigkeiten oder wenn Fehlermeldungen schlecht geschriebene sind die können die Ursache des Fehlers aufdecken erschweren.
+ Visual Studio-Benutzer können eine enorme Anzahl von Entwicklungsstunden aufwenden, um Buildfehler zu beheben. Diese Auflösungszeit erhöht sich, wenn Fehler Abhängigkeiten aufweisen oder Fehlermeldungen schlecht geschrieben sind, was das Aufdecken der Fehlerquelle erschweren kann.
 
- Die beste Buildfehler sind diejenigen, die auftreten, nicht in der ersten Stelle, weshalb Visual Studio bietet automatische Vervollständigung und IntelliSense-Wellenlinien. Schema-Validierungssteuerelemente und ähnliche Tools bieten die gleiche Art von Feedback. Diese Mechanismen führen proaktiv den Benutzer um wohlgeformte Code, verringern das Risiko der Buildfehler zu erstellen.
+ Die besten Buildfehler sind diejenigen, die überhaupt nicht auftreten, weshalb Visual Studio AutoComplete- und IntelliSense-Squiggles bereitstellt. Schemavalidierer und ähnliche Tools bieten die gleiche Art von Feedback. Diese Mechanismen führen den Benutzer proaktiv dazu, wohlgeformten Code zu erstellen, wodurch die Wahrscheinlichkeit von Buildfehlern verringert wird.
 
- Visual Studio bietet ein Toolfenster, in denen Benutzer lesen und navigieren Sie durch die in ihren Dokumentfenster aufgetretenen können. Tastenkombinationen in Visual Studio werden bereitgestellt, sodass der Benutzer kann schnell große Mengen von Code navigieren, und wechseln Sie direkt auf den Speicherort des Problems. Visual Studio können auch jede Buildfehler zu einem bestimmten Schlüsselwort/Hilfekontext-ID gebunden werden, sodass der Benutzer direkt zur ein Hilfethema wechseln kann, die ausführlichere Informationen zu diesem Fehler erhalten.
+ Visual Studio stellt ein Toolfenster bereit, in dem Benutzer die Fehler in ihren Dokumentfenstern lesen und navigieren können. Tastenkombinationen werden bereitgestellt, damit der Benutzer schnell durch große Mengen an Code navigieren und direkt zum Speicherort des Problems wechseln kann. Visual Studio ermöglicht auch, dass jeder Buildfehler an ein bestimmtes Hilfeschlüsselwort/eine bestimmte Kontext-ID gebunden wird, sodass der Benutzer direkt zu einem Hilfethema wechseln kann, das ausführlichere Informationen zu dem Fehler enthält.
 
- Schreiben Sie klare und kompakte Buildfehler:
+ Schreiben Sie klare, prägnante Buildfehler:
 
-- **Verwenden von einfachen** , um das Problem mit wenigen oder gar keinen Compilerfehler-Jargon zu erläutern. Der Text, der einen Buildfehler darf nicht zu technischen sein.
+- **Verwenden Sie eine einfache Sprache,** die das Problem mit wenig oder gar keinem Compilerjargon erklärt. Der Text eines Buildfehlers sollte nicht übermäßig technisch sein.
 
-- **Beschreiben Sie die mögliche Ursachen.** Z. B. "Fehlender Doppelpunkt zwischen der Eigenschaft und Wert in der ' (Eigenschaft): (Wert)' Deklaration."
+- **Skizzieren Sie mögliche Ursachen.** Beispiel: "Fehlen eines Doppelpunkts zwischen der Eigenschaft und dem Wert in der '(property) : (value)' Deklaration."
 
-- Geben Sie Details zu potenziellen Fehlerbehebungen. Wenn nicht genügend Platz vorhanden ist, können zusätzliche Details in das entsprechende Hilfethema abgelegt werden.
+- Geben Sie Details zu möglichen Korrekturen an. Wenn nicht genügend Platz vorhanden ist, können zusätzliche Details in das entsprechende Hilfethema eingefügt werden.
 
-### <a name="components-of-a-well-written-error-message"></a>Komponenten einer gut geschriebene Fehlermeldung
+### <a name="components-of-a-well-written-error-message"></a>Komponenten einer gut geschriebenen Fehlermeldung
 
-#### <a name="use-the-shell-dialog-service-for-error-messages"></a>Verwenden Sie den Shell-Dialogfeld-Dienst Fehlermeldungen vorliegen.
- Mit dem Shell-Dialogfeld-Dienst können Sie steuern, die Darstellung der Nachricht – Schriftarten in bestimmten – ohne wesentliche Änderungen auf einzelne Elemente. Verwenden der **IErrorInfo** Mechanismen und mithilfe von **IVsUIShell::SetErrorInfo/ReportErrorInfo**.
+#### <a name="use-the-shell-dialog-service-for-error-messages"></a>Verwenden Sie den Shelldialogdienst für Fehlermeldungen.
+ Mit dem Shell-Dialogdienst können Sie die Darstellung der Nachricht – insbesondere Schriftarten – ohne wesentliche Änderungen an einzelnen Elementen steuern. Verwenden Sie die **IErrorInfo-Mechanismen,** und melden Sie sie mit **IVsUIShell::SetErrorInfo/ReportErrorInfo**.
 
-#### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>Wählen Sie eine effektive und die entsprechenden Benachrichtigung Präsentation.
- Verwenden Sie ein modales Dialogfeld mit der eine kritische Warnung, wenn sofortige Maßnahmen erforderlich ist, vermeiden von Datenverlust (synchrone Benachrichtigung). Wichtige Symbole sind für Situationen reserviert in der, die Schließen-Nachricht ohne lesen sie zu negativen Konsequenzen führen kann. Verlust von Daten ist einer kritischen Situation, die eine Antwort auf Dokumentebene Warnsignal erforderlich sind. Das Symbol "Kritisch" übermäßige desensitizes Benutzer zu deren Bedeutung. Falls die Fehlermeldung lediglich informativ ist, sollten Sie alternativen für die ein modales Dialogfeld (asynchrone Benachrichtigung) ein.
+#### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>Wählen Sie eine effektive und geeignete Benachrichtigungspräsentation aus.
+ Verwenden Sie ein modales Dialogfeld mit einer kritischen Warnung, wenn sofortige Maßnahmen erforderlich sind, um Datenverlust zu vermeiden (synchrone Benachrichtigung). Kritische Symbole sind für Situationen reserviert, in denen das Schließen der Nachricht ohne Lesen zu negativen Folgen führen kann. Datenverlust ist eine kritische Situation, die eine Reaktion auf Alarmebene erfordert. Die Überbeanspruchung des kritischen Symbols deensizipiert Benutzer auf seine Bedeutung. Wenn die Fehlermeldung informationsbasiert ist, sollten Sie Alternativen zu einem modalen Dialogfeld (asynchrone Benachrichtigung) in Betracht ziehen.
 
-#### <a name="provide-a-clean-succinct-explanation-of-why-the-problem-occurred-rather-than-a-technical-explanation"></a>Geben Sie eine saubere, kurze Erläuterung der Ursache des Problems anstatt eine technische Erklärung.
- Überlasten von Benutzern mit technischen Details in der Erläuterung wird sie eher Fehlermeldungen ignorieren zu machen. Beispiele für gute messaging:
+#### <a name="provide-a-clean-succinct-explanation-of-why-the-problem-occurred-rather-than-a-technical-explanation"></a>Geben Sie eine saubere, prägnante Erklärung dafür, warum das Problem aufgetreten ist, und nicht eine technische Erklärung.
+ Wenn Benutzer mit technischen Details in der Erklärung überlastet werden, ist die Wahrscheinlichkeit größer, dass sie Fehlermeldungen ignorieren. Beispiele für gute Nachrichten:
 
-- "Kann nicht auf die gewünschte Datei zu öffnen."
+- "Die angeforderte Datei kann nicht geöffnet werden."
 
-- "Kann nicht mit dem Internet herstellen."
+- "Es kann keine Verbindung zum Internet hergestellt werden."
 
-#### <a name="provide-information-about-how-to-fix-the-problem"></a>Geben Sie Informationen dazu, wie zum Beheben des Problems.
- Bieten Sie die benutzervorschläge, wie das Problem zu beheben. Ehrlich gesagt, mit dem Benutzer sein, wenn keine Vorschläge vorhanden sind. Geben Sie die direkte Links zu alternativen Onlinequellen, z. B. communitysupport und technischen Support. Versuchen Sie es, um Benutzer auf bestimmte online Informationen für das Problem zu verweisen. Sollten Sie für eine Fehler-ID in der Verknüpfen von Benutzern mit einer Diskussion mit Threads zum jeweiligen Fehler angezeigt. Beispiele für gute messaging:
+#### <a name="provide-information-about-how-to-fix-the-problem"></a>Geben Sie Informationen zum Beheben des Problems an.
+ Bieten Sie den Benutzern Vorschläge an, wie Sie das Problem beheben können. Seien Sie ehrlich mit dem Benutzer, wenn es keine Vorschläge gibt. Stellen Sie direkte Links zu alternativen Online-Quellen bereit, z. B. technische unterstützung oder Community-Support. Versuchen Sie, Benutzer auf bestimmte Onlineinformationen hinzuweisen, die für das Problem relevant sind. Wenn Sie eine Fehler-ID erhalten, sollten Sie Benutzer mit einem Diskussionsthread zu diesem bestimmten Fehler verknüpfen. Beispiele für gute Nachrichten:
 
-- "Stellen Sie sicher, dass Sie mit dem Internet verbunden sind, und versuchen Sie es noch mal."
+- "Stellen Sie sicher, dass Sie mit dem Internet verbunden sind, und wiederholen Sie diesen Vorgang."
 
-- "Stellen Sie sicher, dass die Datei vorhanden ist und Sie die Berechtigung, um ihn zu öffnen."
+- "Stellen Sie sicher, dass die Datei vorhanden ist und dass Sie über die Berechtigung zum Öffnen verfügen."
 
-#### <a name="write-a-message-that-is-short-and-to-the-point"></a>Schreiben Sie eine Nachricht, die kurz und präzise ist.
- Kann eine Fehlermeldung zu benachrichtigen, erläutern, und bieten eine Lösung aber weiterhin ignoriert werden, wenn es zu irgendein ist. Eine Lösung ist die Verwendung von schrittweise Anzeige von mit einer Schaltfläche "Details". Geben Sie z. B. eine kurze Beschreibung/der aktuellen Projektmappe und dann weitere Details zum eine Schaltfläche "Details". Wenn der Benutzer auswählen, um weitere Informationen zu diesem Fehler finden, können sie dies tun.
+#### <a name="write-a-message-that-is-short-and-to-the-point"></a>Schreiben Sie eine Nachricht, die kurz und auf den Punkt ist.
+ Eine Fehlermeldung kann benachrichtigen, erklären und eine Lösung anbieten, aber trotzdem ignoriert werden, wenn sie zu wortwörtlich ist. Eine Lösung besteht darin, die progressive Offenlegung mit einem Detail-Button zu verwenden. Geben Sie z. B. eine kurze Beschreibung/Lösung an und geben Sie dann weitere Details unter eine Detailschaltfläche. Wenn Benutzer weitere Informationen zu dem Fehler lesen möchten, können sie dies tun.
 
- Die Sprache in der Nachricht sollte sein:
+ Die Sprache in der Nachricht sollte wie:
 
-- **Domäne geeignet.** Verwenden Sie die Sprache aus, die der Benutzer verstehen. Obwohl Kunden Entwickler sind, haben sie keine häufig des Kontexts und der Terminologie, mit denen wir haben.
+- **Domänentauglich.** Verwenden Sie die Sprache, die der Benutzer versteht. Obwohl unsere Kunden Entwickler sind, haben sie oft nicht den Kontext und die Terminologie, die wir haben.
 
-- **Spezifisch.** Vermeiden Sie und formulierungen, und geben Sie Namen und Speicherorte der beteiligten Objekte. Z. B. "Zeichen ist ungültig" ist eine Fehlermeldung z. B. nicht hilfreich. Welches Zeichen? "Datei nicht gefunden." Welche Datei?
+- **Bestimmten.** Vermeiden Sie vage Formulierungen und geben Sie bestimmte Namen und Orte der beteiligten Objekte an. Beispielsweise ist eine Fehlermeldung wie "Zeichen ist ungültig" nicht hilfreich. Welcher Charakter? "Datei wurde nicht gefunden." Welche Datei?
 
-- **Höflich.** Keine Verantwortung zuweisen des Benutzers oder ihn dumm aussehen lassen. Vermeiden Sie schädlicher oder anstößige Sprache (Beenden, ausführen, beenden, schwerwiegender, unzulässige). Vermeiden Sie groß geschriebenen Text, der wird häufig als Shouting angezeigt und kann nicht als gelesen. Verwenden Sie keine Humor.
+- **Höflich.** Geben Sie dem Benutzer keine Schuld oder lassen Sie ihn sich dumm fühlen. Vermeiden Sie feindliche oder anstößige Sprache (töten, ausführen, beenden, tödlich, illegal). Vermeiden Sie Großbuchstaben, die oft als schreiend angesehen werden und nicht so lesbar sind. Verwenden Sie keinen Humor.
 
-- **Richtig.** Verwenden Sie die richtige Rechtschreibung und Grammatik (auch in der Alphas). Tippfehler sind unprofessionell und peinliche.
+- **Richtig.** Verwenden Sie die richtige Rechtschreibung und Grammatik (auch in Alphas). Typos sind unprofessionell und peinlich.
 
-- **Je nach Kontext geeignet ist.** Verwenden Sie die entsprechende Schaltflächentext. Vermeiden Sie die Schaltfläche "OK", und verwenden Sie stattdessen "Weiter" oder "Ja/Nein".
+- **Kontextuell angemessen.** Verwenden Sie den entsprechenden Schaltflächentext. Vermeiden Sie die Schaltfläche "OK" und verwenden Sie stattdessen "Weiter" oder "Ja/Nein".
 
-### <a name="error-message-examples"></a>Beispiele für Fehler
+### <a name="error-message-examples"></a>Fehlermeldungsbeispiele
 
-|Gut|Ungültige|
+|Gut|Schlecht|
 |----------|---------|
-|"Der Nummer, die Sie gewählt ist nicht mehr im Dienst. Überprüfen Sie die Anzahl, und wählen Sie erneut oder wählen Sie 0 für den Operator."|-"Fehler (449): Ungültige Anzahl"<br />-"Diesen Fehler nicht behandelte Ausnahme gibt an, dass der Vorgang erfolgreich abgeschlossen."<br /><br /> ![Ungültige Fehlermeldung in Visual Studio](../../extensibility/ux-guidelines/media/0602-a-errordialog.png "0602-A_ErrorDialog")|
+|"Die gewählte Nummer ist nicht mehr in Betrieb. Bitte überprüfen Sie die Nummer und wählen Sie erneut oder wählen Sie 0 für den Bediener."|- "Fehler (449): Illegale Zahl"<br />- "Dieser nicht behandelte Ausnahmefehler gibt an, dass der Vorgang erfolgreich abgeschlossen wurde."<br /><br /> ![Ungültige Fehlermeldung in Visual Studio](../../extensibility/ux-guidelines/media/0602-a-errordialog.png "0602-a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>Zugreifen auf die Hilfe
 
 ### <a name="overview"></a>Übersicht
- Zusätzlich zur Dokumentation in MSDN verfügt ein Visual Studio-Benutzer mehrere Zugriffspunkte, um die Benutzer klicken Sie auf der Benutzeroberfläche zu unterstützen. Um sicherzustellen, dass diese Zugriffspunkte durchgängig verfügbar sind, müssen Feature-Teams nutzen das Hilfesystem von der Umgebung angeboten werden. Diese Zugriffspunkte sind:
+ Zusätzlich zur Dokumentation in MSDN verfügt ein Visual Studio-Benutzer über mehrere Zugriffspunkte, die den Benutzer während der Benutzeroberfläche unterstützen. Um sicherzustellen, dass diese Zugriffspunkte konsistent verfügbar sind, müssen Feature-Teams das von der Umgebung angebotene Hilfesystem nutzen. Diese Access Points sind:
 
-- **Lehre und zusätzlichen Text in Dialogfeldern.** Statischer Text, der Richtung oder Erklärung, entweder auf der Benutzeroberfläche Oberfläche oder bei einer mauszeigerbewegung über ein QuickInfo-Symbol verfügbar zu erhalten.
+- **Lehr- und Ergänzungstext in Dialogen.** Statischer Text, der Richtung oder Erklärung gibt, entweder auf der UI-Oberfläche oder verfügbar, wenn sie mit der Maus auf ein InfoTip-Symbol zeigt.
 
-- **F1-Hilfe** (nur-Editor). Im Visual Studio-Editor kann ein Benutzer vertrauen, dass jederzeit durch Drücken von F1 eines Hilfethemas, die spezifisch für die aktuelle Auswahl angezeigt wird. Sicherstellen Sie, dass Themen über F1 entsprechenden und informativ.
+- **F1-Hilfe** (nur Editor). Im Visual Studio-Editor kann ein Benutzer darauf vertrauen, dass durch Drücken von F1 jederzeit ein Hilfethema angezeigt wird, das für die aktuelle Auswahl spezifisch ist. Stellen Sie sicher, dass die mit F1 verknüpften Themen angemessen und informativ sind.
 
-- **Links zu Hilfethemen.** Ein Link in einem Dialogfeld, Toolfenster oder Entwurfsoberfläche, die ein Thema, um den Benutzer zu unterstützen, erfahren Sie mehr über eine Technologie, Funktionen oder Informationen zum Ausführen einer Aufgabe gestartet wird.
+- **Hyperlinks zu Hilfethemen.** Ein Hyperlink in einem Dialogfeld, einem Toolfenster oder einer Entwurfsoberfläche, der ein Thema startet, um den Benutzer dabei zu unterstützen, mehr über eine Technologie, Funktion oder Informationen zum Ausführen einer Aufgabe zu erfahren.
 
-- **Hilfsprogramm-UI-basierten Mechanismen, z. B. Smarttags und Erstellen von Dialogfeldern.** Diese Mechanismen bei der der Benutzer ein Element der Benutzeroberfläche zu verstehen, oder eine Aufgabe, z. B. Smarttags oder Generator-Dialogfelder erleichtern.
+- **Hilfemechanismen für die Benutzeroberflächen, z. B. Smarttags und Erstellen von Dialogfeldern.** Diese Mechanismen unterstützen den Benutzer beim Verständnis eines UI-Elements oder beim Erleichtern einer Aufgabe, z. B. Smarttags oder Builderdialogen.
 
-- **Hilfe zur Benutzeroberfläche Schaltflächen** (veraltet). Ein sichtbar Indikator in der Titelleiste, die Zugriff auf die verwandten F1-Hilfethema möglich.
+- **UI-Hilfeschaltflächen** (veraltet). Ein sichtbarer Indikator in der Titelleiste, der Zugriff auf das zugehörige F1-Hilfethema gewährt.
 
 ### <a name="text"></a>Text
 
-#### <a name="instructional-and-supplemental-text-in-dialogs"></a>Lehre und zusätzlichen Text in Dialogfeldern
- In Dialogfeldern, die komplexe Aufgaben zu unterstützen, möglicherweise Anweisungstext in der Benutzeroberfläche oft am oberen Rand des Dialogfelds oder komplexe Steuerelemente in der Nähe von erhalten werden muss. Finden Sie unter [UI Text und die Terminologie](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) ausführliche Informationen zum Stil zu schreiben.
+#### <a name="instructional-and-supplemental-text-in-dialogs"></a>Lehr- und Ergänzungstext in Dialogen
+ In Dialogfeldern, die komplexe Aufgaben unterstützen, kann es erforderlich sein, Anweisungstext innerhalb der Benutzeroberfläche zu geben, häufig oben im Dialogfeld oder in der Nähe komplexer Steuerelemente. Weitere Informationen zum Schreibstil finden Sie unter [UI-Text und Terminologie.](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)
 
-#### <a name="infotips"></a>InfoTips
- Anweisungstext kann häufig so umfangreich, dass positionieren direkt in der Benutzeroberfläche oder kann nur an einen neuen Benutzer wie überladen für erfahrene Benutzern hilfreich sein. In diesem Fall sollte dem Lehrzwecken/Informationstext als QuickInfo in einem Infotipp platziert werden.
+#### <a name="infotips"></a>InfoTipps
+ Häufig ist Anweisungstext zu langwierig, um ihn in der Benutzeroberfläche zu positionieren, oder er ist nur für neue Benutzer nützlich, da er sich für erfahrene Benutzer wie Unordnung anfühlt. In diesem Fall sollte der Lehr-/Informationstext als QuickInfo unter einem InfoTip platziert werden.
 
- Infotipps sollten in der Nähe von den Steuerelementen, die sie beziehen sich auf und sollten das bestimmte Infotipp-Symbol, das unaufdringliche noch nicht bemerkbar platziert werden.
+ InfoTips sollten in der Nähe der Steuerelemente platziert werden, mit denen sie verwandt sind, und das spezifische InfoTip-Symbol verwenden, das unauffällig und doch spürbar ist.
 
- ![Infotipp in Visual Studio](../../extensibility/ux-guidelines/media/0601-d-infotip.png "0601-D_InfoTip")
+ ![Infotipp in Visual Studio](../../extensibility/ux-guidelines/media/0601-d-infotip.png "0601-d_InfoTip")
 
- **Beispiel für ein Infotipp in Visual Studio**
+ **Beispiel für einen InfoTip in Visual Studio**
 
 ### <a name="interactive-help-mechanisms"></a>Interaktive Hilfemechanismen
 
 #### <a name="f1-help"></a>F1-Hilfe
- F1-Hilfe ist erforderlich, in einem Editor oder die Entwurfsoberfläche, aber nicht an anderer Stelle in der Visual Studio-Umgebung.
+ F1 Hilfe ist innerhalb eines Editors oder einer Entwurfsoberfläche erforderlich, jedoch nicht an anderer Stelle in der Visual Studio-Umgebung.
 
-#### <a name="hyperlinks-to-help-topics"></a>Links zu Hilfethemen
- Hyperlinks können verwendet werden, um eine Aktion auszuführen, Navigieren in der IDE oder Hilfe in einem Browser zu starten. Finden Sie unter [UI Text und die Terminologie](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) Weitere Informationen zu Sprache und 07.10.01 Schaltflächen und Links für Visuals und Layouts Richtlinien.
+#### <a name="hyperlinks-to-help-topics"></a>Hyperlinks zu Hilfethemen
+ Hyperlinks können verwendet werden, um eine Aktion auszuführen, innerhalb der IDE zu navigieren oder die Hilfe in einem Browser zu starten. Weitere Informationen zur Sprache und 07.10.01 Schaltflächen und Hyperlinks finden Sie unter [UI-Text und Terminologie](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) für visuelle und Layoutrichtlinien.
 
-#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>Hilfe [?]-Schaltflächen im Dialogfeld Titelleisten (veraltet)
- Zum größten Teil, sind die Schaltflächen "Help [?]" in der Titelleiste von Dialogfeldern als veraltet markiert. UI-Themen sind nicht mehr Teil des Modells Doc, und aus diesem Grund gibt es möglicherweise kein relevantes Thema zu verknüpfen. Im Wesentlichen die Titelleistenschaltfläche wurde dasselbe wie die F1-Hilfe, und in Dialogfeldern nicht mehr erforderlich ist. In einigen Fällen kann dies immer noch verwendet werden als Indikator, dass konzeptionelle bzw. prozeduralen Informationen verfügbar, obwohl links häufiger in neueren Benutzeroberfläche verwendet werden.
+#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>Hilfe [?] Schaltflächen in Dialogtitelleisten (veraltet)
+ Die Schaltflächen "Hilfe [?] in der Titelleiste von Dialogfeldern sind größtenteils veraltet. UI-Themen sind nicht mehr Teil unseres Doc-Modells, und daher gibt es möglicherweise kein relevantes Thema, mit dem ein Link verknüpft werden kann. Im Wesentlichen war die Titelleistenschaltfläche dasselbe wie die F1-Hilfe, und das ist in Dialogfeldern nicht mehr erforderlich. In einigen Fällen kann dies immer noch als Indikator dafür verwendet werden, dass mehr konzeptionelle oder prozedurale Informationen verfügbar sind, obwohl Hyperlinks häufiger in neueren Benutzeroberflächen verwendet werden.
 
-##### <a name="dialogs-created-through-the-environment"></a>Dialogfelder, die über die Umgebung erstellt wurden
- Viele Shelldialogfelder werden erstellt, über die **VBDialogBoxParam** Funktion. Diese gemeinsame Funktion wurde aktualisiert, um Unterstützung bei der Umstellung der **Hilfe** Schaltfläche im Dialogfeld, um die **?** Schaltfläche ", und behalten Sie eine Architektur, die Abwärtskompatibilität ist kompatibel und erweiterbar.
+##### <a name="dialogs-created-through-the-environment"></a>Dialoge, die über die Umgebung erstellt wurden
+ Viele Shell-Dialoge werden über die **Funktion VBDialogBoxParam** erstellt. Diese freigegebene Funktion wurde aktualisiert, um das Verschieben der **Hilfeschaltfläche** aus dem Dialogfeld in den **?** unter Beibehaltung einer Architektur, die abwärtskompatibel und erweiterbar ist.
 
- Insbesondere die **VBDialogBoxParam** Funktion untersucht die Dialogfeldvorlage für eine Schaltfläche mit der ID **IDHELP** (9) oder die Bezeichnung **Hilfe** oder **&-Hilfe**. Wenn eine Schaltfläche "Hilfe" gefunden wird, wird es ausgeblendet und die **WS_EX_CONTEXTHELP** Format wird hinzugefügt, um das Dialogfeld, in dem platziert die **?** Schaltfläche in der Titelleiste des Dialogfelds.
+ Insbesondere sucht die **Funktion VBDialogBoxParam** in der Dialogfeldvorlage nach einer Schaltfläche, deren ID **IDHELP** (9) oder Bezeichnung **Hilfe** oder **&Hilfe**ist. Wenn eine Hilfeschaltfläche gefunden wird, wird sie ausgeblendet, und der **WS_EX_CONTEXTHELP-Stil** wird dem Dialogfeld hinzugefügt, der die **?** In der Titelleiste des Dialogfelds.
 
- Wenn das Dialogfeld erstellt wird, legt die Dialogfeldprozedur auf einen Stapel und ruft Sie das Dialogfeld mit einer vorverarbeitung Dialogfeldprozedur, die mit dem Namen **DialogPreProc**. Wenn die **?** Schaltfläche geklickt wird, sendet er eine **WM_SYSCOMMAND** von **SC_CONTEXTHELP** um das Dialogfeld. Die **DialogPreProc** dieser Befehl erfasst und ändert sich zu einem **WM_HELP** -Nachricht, die an das ursprüngliche Dialogfeld-Prozedur übergeben wird
+ Wenn das Dialogfeld erstellt wird, wird das Dialogverfahren proc auf einen Stapel übertragen und das Dialogfeld mit einem Dialogfeld proc vor der Verarbeitung namens **DialogPreProc**aufgerufen. Wenn die **?** klicken, sendet es eine **WM_SYSCOMMAND** **von SC_CONTEXTHELP** an das Dialogfeld. **DialogPreProc** erfasst diesen Befehl und ändert ihn in eine **WM_HELP** Nachricht, die an das ursprüngliche Dialogfeld proc übergeben wird.
 
- Die meisten sind Umgebung erstellten mit einer Schaltfläche "Hilfe" im Dialogfeld. Wenn das Dialogfeld angezeigt wird, wird die Schaltfläche "Hilfe" automatisch ausgeblendete und nur die **?** Schaltfläche funktioniert. Wenn die **?** Schaltfläche je entfernt oder in Windows geändert wird, kann diese Lösung Sie schnell wieder zu der ursprünglichen Hilfe-Schaltflächen gelangen.
+ Die meisten in der Umgebung erstellten Dialogfelder verfügen über eine Hilfeschaltfläche im Dialogfeld. Wenn das Dialogfeld angezeigt wird, wird die Hilfeschaltfläche automatisch ausgeblendet und nur die **?** Taste funktioniert. Wenn die **?** In Windows wird die Schaltfläche entfernt oder geändert, mit dieser Lösung können Sie schnell zu den ursprünglichen Hilfeschaltflächen zurückkehren.
 
- Diese Lösung ist vier Annahmen, die Fehler verursachen könnte:
+ Diese Lösung stellt vier Annahmen auf, die Fehler verursachen können:
 
-- Wird das Dialogfeld die Schaltfläche "Hilfe" **IDHELP** (9).
+- Die Hilfeschaltfläche des Dialogfelds ist **IDHELP** (9).
 
-- Das Dialogfeld fehlerfrei ist, wenn die Schaltfläche "Hilfe" ausgeblendet wird.
+- Das Dialogfeld sieht korrekt aus, wenn die Hilfeschaltfläche ausgeblendet ist.
 
-- Das Dialogfeld ersetzt keine seine Winproc.
+- Das Dialogfeld ersetzt seine Winproc nicht.
 
-- Das Dialogfeld wird in einem anderen Dialog nicht eingebettet werden.
+- Das Dialogfeld ist nicht in ein anderes Dialogfeld eingebettet.
 
-  Wenn das Dialogfeld befindet sich im Msenv befindet und nicht **VBDialogBoxParam**, untersuchen Sie die Nutzung von **VBDialogBoxParam** vor eigene Handler implementieren.
+  Wenn sich Ihr Dialogfeld in msenv befindet und **VBDialogBoxParam**nicht verwendet, untersuchen Sie die Nutzung von **VBDialogBoxParam,** bevor Sie Ihren eigenen Handler implementieren.
 
-##### <a name="dialogs-created-through-other-packages"></a>Dialogfelder, die mit anderen Paketen erstellt wurden
- Sie können Ihre eigene Lösung für Dialogfelder implementieren, die sich außerhalb der Msenv befinden. Erwägen Sie für eine freigegebene Dialogfeldklasse in einem VSPackage verschieben die Schaltfläche mit den in der Titelleiste, oder implementieren einen Handler auf jedem Dialogfeld. Der folgende Code bildet das Grundgerüst einer Implementierung, die Ihnen beim Einstieg helfen:
+##### <a name="dialogs-created-through-other-packages"></a>Dialoge, die über andere Pakete erstellt wurden
+ Sie können Ihre eigene Lösung für Dialogfelder implementieren, die sich außerhalb von msenv befinden. Für eine freigegebene Dialogklasse in Ihrem VSPackage sollten Sie die Schaltfläche in die Titelleiste verschieben oder einen Handler in jedem Dialogfeld implementieren. Der folgende Code ist ein Skelett einer Implementierung, die Ihnen den Einstieg erleichtern soll:
 
 ```
 struct DLGPROCITEM
@@ -377,8 +377,8 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 }
 ```
 
-##### <a name="help-buttons-in-managed-code"></a>Hilfe-Schaltflächen in verwaltetem code
- Überschreiben von Standardverhalten der Fenster Hilfe Titelleistenschaltfläche des ist einfach in verwaltetem Code. Es folgt eine vollständige Demo-Anwendung, die dieses Verhalten veranschaulicht wird. Im Wesentlichen müssen Sie zum Überschreiben des Formulars **WndProc** -Methode und klicken Sie dann Fire deaktiviert; F1-Hilfe, die angefordert werden, wenn ein **SC_CONTEXTHELP** Nachricht abgefangen wird.
+##### <a name="help-buttons-in-managed-code"></a>Hilfeschaltflächen im verwalteten Code
+ Das Standardverhalten der Fenstertitelleiste Hilfeistin ist im verwalteten Code einfach. Unten ist eine vollständige Demo-Anwendung, die dieses Verhalten veranschaulicht. Im Wesentlichen müssen Sie die **WndProc-Methode** Ihres Formulars überschreiben und dann F1-Hilfeanforderungen abfeuern, wenn eine **SC_CONTEXTHELP** Nachricht abgefangen wird.
 
 ```
 using System;
@@ -422,5 +422,5 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
- [Schriftarten und Formatierungen für Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md) [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md) [Benachrichtigungen und Fortschritt für Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Schriftarten und Formatierungen für Visual](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md) [Studio-Layout für Visual](../../extensibility/ux-guidelines/layout-for-visual-studio.md) Studio-Benachrichtigungen [und -Fortschritt für Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773967"
 ---
 # <a name="marks-view"></a>Markierungsansicht
@@ -40,7 +40,7 @@ In der Ansicht "Markierungen" werden Sampling- und ETW-Ereignisse angezeigt, die
 
  Windows-Leistungsindikatordaten: Wenn Windows-Leistungsindikatordaten gesammelt werden, werden die Werte in einer Spalte angezeigt, die den Namen des Leistungsindikators hat.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Leistungsberichtübersicht](../profiling/performance-report-overview.md)
 - [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)
 - [&#91;NIB&#93; Data Collection Control window (Fenster zur Steuerung der Datensammlung für &#91;NIB&#93)](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

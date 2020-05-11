@@ -1,173 +1,173 @@
 ---
-title: Analysetools für Visual Studio | Microsoft-Dokumentation
+title: Evaluierungstools für Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824567"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698431"
 ---
-# <a name="evaluation-tools-for-visual-studio"></a>Analysetools für Visual Studio
-## <a name="craftsmanship-checklist-for-visual-studio"></a>Checkliste für handwerkliches können für Visual Studio
- Verwenden Sie diese Prüfliste, um Qualität der benutzerfreundlichkeit Visual und Interaktion ausführliche auszuwerten.
+# <a name="evaluation-tools-for-visual-studio"></a>Auswertungstools für Visual Studio
+## <a name="craftsmanship-checklist-for-visual-studio"></a>Handwerks-Checkliste für Visual Studio
+ Verwenden Sie diese Checkliste, um die Qualität der Benutzerfreundlichkeit für visuelle und Interaktionsdetails zu bewerten.
 
 ### <a name="overview"></a>Übersicht
 
-- Stellen Sie sicher, dass alle Befehle Feedback erhalten, der Benutzer darüber informiert, dass ihre Befehle ausgeführt haben.
+- Stellen Sie sicher, dass alle Befehle zu Feedback führen, das Benutzern mitteilt, dass ihre Befehle ausgeführt wurden.
 
-- Stellen Sie sicher, dass alle Elemente der Benutzeroberfläche und Steuerelemente in allen Designs übernimmt und im Modus für hohe Kontraste sichtbar sind.
+- Stellen Sie sicher, dass alle UI-Elemente und Steuerelemente in allen Designs und im Modus mit hohem Kontrast sichtbar sind.
 
-- Stellen Sie sicher, dass inaktive und aktive Auswahl immer unterscheiden, sowohl in der Standard- und der Modus für hohe Kontraste.
+- Stellen Sie sicher, dass die inaktive und aktive Auswahl sowohl im Standardmodus als auch im Modus mit hohem Kontrast immer differenziert ist.
 
-- Stellen Sie sicher, dass der Fokus immer sichtbar und offensichtlich ist.
+- Stellen Sie sicher, dass der Fokus immer sichtbar und sichtbar ist.
 
 ### <a name="performance"></a>Leistung
 
-- Stellen Sie sicher, dass eine Art von "beschäftigt" Indikator angezeigt wird, wenn ein Befehl mehr als eine Sekunde dauert.
+- Stellen Sie sicher, dass eine Art "beschäftigter" Indikator angezeigt wird, wenn ein Befehl mehr als eine Sekunde dauert.
 
-- Überprüfen Sie, ob ein Befehl mehr als 10 Sekunden, eine explizite Statusanzeige, entweder akzeptiert bestimmte (bevorzugt) oder unbestimmt ist, wird angezeigt.
+- Stellen Sie sicher, dass, wenn ein Befehl mehr als 10 Sekunden benötigt, eine explizite Fortschrittsleiste angezeigt wird, entweder determiniert (bevorzugt) oder unbestimmt.
 
-### <a name="ui-text"></a>Benutzeroberflächentext
+### <a name="ui-text"></a>UI-Text
 
-- Stellen Sie sicher, dass alle Bezeichnungen Satz oder Buchstabe groß sind und kein Text ausschließlich Kleinbuchstaben ist.
+- Stellen Sie sicher, dass alle Beschriftungen satz- oder titelgroß sind und dass kein Text vollständig klein geschrieben ist.
 
-    ||Richtig|Falsche|
+    ||Richtig|Falsch|
     |-|-------------|---------------|
-    |**Befehlstext (alle)**|Satz-Fall:<br /><br /> **Verzeichnisname:**|Verzeichnisname:|
-    |**Text der Schaltfläche (Client)**|Große Anfangsbuchstaben:<br /><br /> **[Als Standard festlegen]**|SET AS DEFAULT|
-    |**Text der Schaltfläche (online)**|Satz-Fall:<br /><br /> **[Als Standard festgelegt]**||
+    |**Befehlstext (alle)**|Satzfall:<br /><br /> **Verzeichnisname:**|Verzeichnisname:|
+    |**Schaltflächentext (Client)**|Titelfall:<br /><br /> **[ Als Standard festlegen ]**|ALS STANDARD FESTLEGEN|
+    |**Button-Text (online)**|Satzfall:<br /><br /> **[ Als Standard festlegen ]**||
 
-- Stellen Sie sicher, dass alle Bezeichnungen, mit Ausnahme von Kopfzeilen von Gruppen und Schaltflächen mit einem Doppelpunkt enden, und stellen Sie das Steuerelement, mit dem sie miteinander kombiniert sind, voran.
+- Stellen Sie sicher, dass alle Beschriftungen, mit Ausnahme von Gruppenüberschriften und Schaltflächen, mit einem Doppelpunkt enden und dem Steuerelement, mit dem sie gekoppelt sind, voranstellen.
 
-- Stellen Sie sicher, dass für Schaltflächen, Befehle und Befehlslinks, die die Benutzeroberfläche zum Erfassen von Benutzereingaben starten ein Auslassungszeichen aufgetreten **[...]** .
+- Überprüfen Sie, ob Schaltflächen, Befehle und Befehlslinks, die die Benutzeroberfläche starten, um Benutzereingabezugaben zu erfassen, in einer Auslassungsrolle **enden [...]**.
 
   Beispiele:
 
-  - Ein **[Erweitert]**  Schaltfläche in einem Dialogfeld.
+  - Eine **[Erweiterte...]** Schaltfläche in einem Dialogfeld.
 
-  - Die Befehlsoptionen an, unter dem Menü "Extras" (**Tools > Optionen**) Auslassungspunkte sollte nicht abgerufen werden, da starten das Dialogfeld selbst die Absicht des Befehls ist.
+  - Die Befehlsoptionen im Menü Extras (**Tools > Options**) sollten keine Auslassung erhalten, da das Starten des Dialogfelds selbst die Absicht des Befehls ist.
 
-- Stellen Sie sicher, dass die Benutzeroberfläche keine Abkürzungen, mit Ausnahme der Branche zum Standard-Begriffe enthält. Z. B. müssen weder die HTML-als auch die TCP/IP, geschrieben werden, obwohl OOM-Bedingungen (nicht genügend Arbeitsspeicher) und personenbezogene Informationen (persönlich identifizierbare Informationen) sollten.
+- Stellen Sie sicher, dass die Benutzeroberfläche keine Abkürzungen enthält, mit Ausnahme von Branchenstandardbegriffen. Zum Beispiel müssen weder HTML noch TCP/IP buchstabiert werden, obwohl OOM (nicht im Speicher) und PII (persönlich identifizierbare Informationen) festgelegt werden sollten.
 
 ### <a name="keyboard-access"></a>Tastaturzugriff
 
-- Stellen Sie sicher, dass es eine Möglichkeit zum Ausführen der jeweiligen Aufgabe mit der Tastatur. In der Regel erfolgt dies über den Zugriff für jedes Steuerelement, aber für einige Bereiche visuell eine problemumgehung, z. B. zur Codeansicht hier akzeptabel ist.
+- Stellen Sie sicher, dass es eine Möglichkeit gibt, jede Aufgabe mit der Tastatur auszuführen. Im Allgemeinen wird dies durch den Tastaturzugriff für jedes Steuerelement erreicht, aber für einige sehr visuelle Bereiche ist eine Problemumgehung, z. B. das Durchlaufen der Codeansicht, akzeptabel.
 
-- Stellen Sie sicher, dass Sie über Steuerelemente in einer logischen Reihenfolge (links-nach-rechts und oben-nach-unten) TAB-Taste. Obwohl dies eine bewährte Methode für die meisten Steuerelemente ist, müssen nicht alle Steuerelemente dieser Ansatz. Beispielsweise stellen Sie sicher, Optionsfeld, die in einer Gruppe mit einer einzelnen Tabstopp-Steuerelemente sind.
+- Stellen Sie sicher, dass Sie Steuerelemente in logischer Reihenfolge (von links nach rechts und von oben nach unten) durchkreuzen können. Obwohl dies für die meisten Steuerelemente eine bewährte Methode ist, erfordern nicht alle Steuerelemente diesen Ansatz. Stellen Sie beispielsweise sicher, dass sich die Optionsfeldsteuerelemente in einer Gruppe mit einem einzelnen Tabstopp befinden.
 
-- Stellen Sie sicher, dass alle Steuerelemente über Bezeichnungen verfügen und dass jede Bezeichnung mnemonisches Zeichen (Ausnahmen enthalten einige nicht beschrifteten-Steuerelemente, die ein mit Bezeichnung-Steuerelement auf der Registerkarte ausführen können).
+- Stellen Sie sicher, dass alle Steuerelemente über Beschriftungen verfügen und dass jede Beschriftung über eine mnemonic verfügt (Ausnahmen umfassen einige nicht beschriftete Steuerelemente, die einem beschrifteten Steuerelement auf der Registerkarte folgen können).
 
-- Stellen Sie sicher, dass keine mnemonische Konflikte vorhanden sind.
+- Stellen Sie sicher, dass keine mnmonischen Konflikte vorhanden sind.
 
 ### <a name="fonts"></a>Schriftarten
 
-- Stellen Sie sicher, dass alle Schriftarten (Face, Größe, Farbe) konsistent verwendet werden, und Warten der Hierarchie.
+- Stellen Sie sicher, dass alle Schriftarten (Gesicht, Größe, Farbe) konsistent verwendet werden, und behalten Sie die Hierarchie bei.
 
-- Stellen Sie sicher, dass alle Elemente der Benutzeroberfläche den Umgebung Schriftart-Dienst verwenden. (Finden Sie unter [Schriftarten und Formatierungen für Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md))
+- Stellen Sie sicher, dass alle UI-Elemente den Umgebungsschriftartdienst verwenden. (Siehe [Schriftarten und Formatierung enerther für Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md))
 
-     Um festzustellen, ob der Dienst verwendet wird, wechseln Sie zu **Tools > Optionen > Schriftarten und Farben**. Wählen Sie in der Dropdownliste "Einstellungen" Umgebungsschriftart aus ändern Sie Schriftart, einen stilistisch fehlerhaften anderen (z. B. Harrington oder Comic-Sans), und legen Sie die Größe auf 12 pt. Klicken Sie dann auf OK. Sie müssen möglicherweise die IDE neu zu starten, aber die meisten UI wird sofort geändert. Bereiche, die die Schriftart Änderung auch auf Neustart übernimmt nicht verwenden die Umgebungsschriftart nicht.
+     Um zu überprüfen, ob der Dienst verwendet wird, gehen Sie zu **Tools > Optionen > Schriftarten und Farben**. Wählen Sie in der Dropdown-Liste Einstellungen Umgebungsschrift aus und ändern Sie die Schriftart in etwas stilistisch anderes (z. B. Harrington oder Comic Sans) und legen Sie die Größe auf 12 Pkt fest. Klicken Sie dann auf „OK“. Möglicherweise müssen Sie die IDE neu starten, aber die meisten Benutzeroberfläche enden sofort. Bereiche, die die Schriftartänderung auch beim Neustart nicht übernehmen, verwenden die Umgebungsschriftart nicht.
 
-- Stellen Sie sicher, dass die Schriftarten, die Ableitung des Diensts (z. B. fett oder vergrößerte Text) sind, behalten ihre Größe und in Bezug auf "normal" Text formatieren, wenn der Schriftgrad der Umgebung geändert wird.
+- Stellen Sie sicher, dass Schriftarten, die vom Dienst abgeleitet sind (z. B. fett formatierter oder vergrößerter Text), ihre Größe und Formatierung in Bezug auf "normalen" Text beibehalten, wenn die Größe der Umgebungsschriftart geändert wird.
 
-- Stellen Sie sicher, dass keine Clipping Fehler aufgrund von vergrößerte Schriftarten vorhanden sind. Schriftarten, die abgeschnitten wird, erhalten, sind wahrscheinlich das Ergebnis der feste Höhe Steuerelemente oder feste Höhe-Container.
+- Stellen Sie sicher, dass aufgrund vergrößerter Schriftarten keine Clipping-Fehler vorliegen. Schriftarten, die abgeschnitten werden, sind wahrscheinlich das Ergebnis von Steuerelementen für feste Höhen oder Container mit fester Höhe.
 
 ### <a name="dialogs"></a>Dialogfelder
 
-- Stellen Sie sicher, dass der Dialogfeldtitel ist identisch mit dem Befehl, der sie gestartet.
+- Stellen Sie sicher, dass der Dialogfeldtitel mit dem Befehl identisch ist, der ihn gestartet hat.
 
-- Stellen Sie sicher, dass alle Standardsteuerelemente konsistent mit dem Betriebssystem sind: Hintergrundfarbe standard ist und keine Steuerelemente müssen einen speziellen Re auf Vorlagen basierenden Stil, mit der sie sich von standardmäßigen Steuerelementen angezeigt werden.
+- Stellen Sie sicher, dass alle Standardsteuerelemente mit dem Betriebssystem konsistent sind: Die Hintergrundfarbe ist Standard, und keine Steuerelemente sollten einen speziellen neu formatierten Stil haben, der sie von Standardsteuerelementen unterscheiden lässt.
 
-- Stellen Sie sicher, dass Ränder, innerhalb des Formulars sollte 12 Pixel und einheitliches und konsistentes sollte angezeigt werden.
+- Stellen Sie sicher, dass die Ränder innerhalb des Formulars 12 Pixel groß sein und einheitlich und konsistent erscheinen sollten.
 
-- Stellen Sie sicher, dass Dialoge steht in der Mitte in der IDE-Shell oder das Fenster, das sie erzeugt.
+- Stellen Sie sicher, dass Die Dialoge zentriert in der IDE-Shell oder im Fenster angezeigt werden, das sie erstellt hat.
 
-- Wenn nützlich ist, sollte die Dialogfelder mit veränderbarer Größe sein. Für Dialoge, die in der Größe veränderbar sind, stellen Sie sicher, dass beim Ändern der Größe, die entsprechenden Steuerelemente ändern müssen, während andere Teile des Dialogfelds konstant bleibt.
+- Wenn dies nützlich ist, sollten Dialoge in der Geänderten Semittierbarkeit sein. Stellen Sie bei Dialogen, die die Größe ändern können, sicher, dass bei der Größenänderung die Größe der entsprechenden Steuerelemente geändert werden muss, während andere Teile des Dialogfelds konstant bleiben.
 
-- Stellen Sie sicher, dass Dialoge mit änderbarer Größe jeder Benutzer angepasst Größe (Größe, Position, Erweiterung der Dialogfeld-Steuerelemente, usw.) beibehalten werden.
+- Stellen Sie sicher, dass in der Größe der Größe geänderte Dialogfelder jede vom Benutzer angepasste Größe beibehalten (Größe, Speicherort, Erweiterung von Dialogsteuerelementen usw.).
 
-- Stellen Sie sicher, dass es in der Titelleiste kein Symbol wird.
+- Stellen Sie sicher, dass in der Titelleiste kein Symbol vorhanden ist.
 
-- Stellen Sie sicher, dass es keine minimieren und Maximieren-Schaltflächen in der Titelleiste angezeigt stehen.
+- Stellen Sie sicher, dass in der Titelleiste keine Schaltflächen minimieren und maximieren vorhanden sind.
 
-#### <a name="dialog-operation-buttons-vs-client-only"></a>Dialogfeld vorgangsschaltflächen (gilt nur für Visual Studio-Client)
+#### <a name="dialog-operation-buttons-vs-client-only"></a>Dialog-Bedienungsschaltflächen (nur VS Client)
 
-- Stellen Sie sicher, dass die Operation Schaltflächen in der folgenden Reihenfolge: **OK**, **Abbrechen**, **anwenden**.
+- Stellen Sie sicher, dass die Vorgangsschaltflächen in dieser Reihenfolge sind: **OK**, **Abbrechen**, **Anwenden**.
 
-- Überprüfen Sie, ob **OK** und **Abbrechen** Schaltflächen sind die Standardgröße: 75 x 23 Pixel.
+- Stellen Sie sicher, dass die **Schaltflächen OK** und **Abbrechen** die Standardgröße von 75x23 Pixeln haben.
 
-- Überprüfen Sie, ob **OK** und **Abbrechen** Schaltflächen sind gleicher Größe unabhängig von der Länge der Zeichenfolge.
+- Stellen Sie sicher, dass die **Schaltflächen OK** und **Abbrechen** unabhängig von der Zeichenfolgenlänge gleich groß sind.
 
-- Wenn die Bezeichnung auf eine Schaltfläche "Vorgang" Schaltfläche auf breiter als Standard erforderlich ist, sicherstellen, dass die entsprechenden **Abbrechen** Schaltfläche gleicher Größe ist.
+- Wenn die Beschriftung auf einer Bedienschaltfläche erfordert, dass die Schaltfläche breiter als der Standard ist, stellen Sie sicher, dass die entsprechende **Schaltfläche Abbrechen** gleich groß ist.
 
-- Stellen Sie sicher, dass ein 6-Pixel-Abstand zwischen Schaltflächen und dem zugeordneten Steuerelement vorhanden ist.
+- Stellen Sie sicher, dass zwischen Schaltflächen und zugehörigen Steuerelementen ein 6-Pixel-Aufabstand vorhanden ist.
 
-- Überprüfen Sie, ob die **OK** und **Abbrechen** Schaltflächen müssen keine mnemonischen Zeichen (Zugriffstasten, die durch einen unterstrichenen Buchstaben definiert).
+- Stellen Sie sicher, dass die Schaltflächen **OK** und **Abbrechen** nicht über mnemonics verfügen (Zugriffsschlüssel, die durch einen unterstrichenen Buchstaben definiert sind).
 
-- Eine Schaltfläche "Überprüfen" (in der Regel **OK**) den Fokus besitzt, wird standardmäßig.
+- Stellen Sie sicher, dass eine Schaltfläche (in der Regel **OK**) standardmäßig den Fokus hat.
 
-- Überprüfen Sie, ob **Esc** das Dialogfeld wird abgebrochen
+- Stellen Sie sicher, dass **Esc** das Dialogfeld abbricht
 
-- Überprüfen Sie, ob **EINGABETASTE** die Schaltfläche "Standard" ausgeführt wird, wenn der Fokus nicht in einem Steuerelement befindet, die Eingabe verarbeitet.
+- Stellen Sie sicher, dass **Enter** die Standardschaltfläche ausführt, wenn sich der Fokus nicht in einem Steuerelement befindet, das Enter verarbeitet.
 
-- Überprüfen Sie, ob die **OK** und **Abbrechen** Schaltflächen werden in der unteren rechten Ecke des Dialogfelds positioniert. In wenigen Ausnahmen abgesehen ist es akzeptabel ist, damit sie in der oberen rechten Ecke vertikal gestapelt werden.
+- Stellen Sie sicher, dass die Schaltflächen **OK** und **Abbrechen** in der unteren rechten Ecke des Dialogfelds positioniert sind. In seltenen Ausnahmen ist es akzeptabel, dass sie vertikal in der oberen rechten Seite gestapelt werden.
 
-- Stellen Sie sicher, dass die vertikale Konfiguration nur, wenn andere Schaltflächen in eine horizontale Ausrichtung im Dialogfeld verwendet wird.
+- Stellen Sie sicher, dass die vertikale Konfiguration nur verwendet wird, wenn sich andere Schaltflächen in einer horizontalen Ausrichtung innerhalb des Dialogfelds befinden.
 
-### <a name="control-standards"></a>Steuerelement-standards
+### <a name="control-standards"></a>Kontrollnormen
 
 #### <a name="general"></a>Allgemein
 
-- Stellen Sie sicher, dass wenn möglich, es gute Standardwerte sind, um die Benutzerinteraktion und leiten Sie Benutzer in Richtung eines Ergebnisses sicher oder allgemeine zu beschleunigen.
+- Stellen Sie sicher, dass es nach Möglichkeit gute Standardwerte gibt, um die Benutzerinteraktion zu beschleunigen und Benutzer zu einem sicheren oder allgemeinen Ergebnis zu bewegen.
 
-- Stellen Sie sicher, dass die Standardsteuerelemente dasselbe Verhalten auf, damit Benutzer wissen, was geschieht basierend auf frühere Erfahrung.
+- Stellen Sie sicher, dass Standardsteuerelemente auf die gleiche Weise verhalten, damit Benutzer basierend auf früheren Erfahrungen wissen, was passieren wird.
 
-#### <a name="label-controls"></a>Label-Steuerelemente
+#### <a name="label-controls"></a>Beschriftungssteuerelemente
 
-- Stellen Sie sicher, dass für jedes Steuerelement eine Bezeichnung und jede Bezeichnung visuell das Steuerelement (in der Regel in einem 4 bis 6-Pixel-Bereich) zugeordnet ist, und näher an das entsprechende Steuerelement als für andere Steuerelemente ist.
+- Stellen Sie sicher, dass jedes Steuerelement über eine Beschriftung verfügt und dass jedes Steuerelement visuell mit seinem Steuerelement (in der Regel innerhalb eines 4-6-Pixel-Bereichs) gekoppelt ist und näher an der entsprechenden Steuerung als an anderen Steuerelementen liegt.
 
-- Stellen Sie sicher, dass Bezeichnungen leeren positioniert sind Links, mit dem Steuerelement linken Fensterrands, wenn oben positioniert und horizontal zentriert werden, damit, dass die Baseline für die Beschriftung der Grundlinie des Eingabetexts ausgerichtet ist, wenn auf der linken Seite befindet.
+- Stellen Sie sicher, dass Beschriftungen bündig mit der linken Kante des Steuerelements positioniert sind, wenn sie über und horizontal zentriert sind, sodass die Basislinie der Beschriftung an der Basislinie des Eingabetextes ausgerichtet ist, wenn sie nach links positioniert ist.
 
-- Stellen Sie sicher, dass wenn mehrere gestapelte Bezeichnung und Benutzereingabe-Steuerelemente auf der linken Seite eines Steuerelements positioniert ist, die Bezeichnungen linksbündig sind und jeweils denselben Abstand vom Rand des Dialogfelds nicht leeren, Recht und die jeweils denselben Abstand von den Steuerelementen. Paare sollten gleichmäßig verteilt werden, es sei denn, der benötigten zusätzlichen Abstand soll Grouping.
+- Stellen Sie sicher, dass, wenn mehrere gestapelte Beschriftungs- und Eingabesteuerelemente links neben einem Steuerelement positioniert sind, die Beschriftungen bündig links und einen gleichen Abstand vom Rand des Dialogfelds sind, niemals nach rechts und einen gleichen Abstand von den Steuerelementen bündigen. Paare sollten gleichmäßig verteilt werden, es sei denn, sie benötigen zusätzliche Abstände, um die Gruppierung anzuzeigen.
 
-#### <a name="input-controls-text-boxes-and-combo-boxes"></a>Benutzereingabe-Steuerelemente (Textfelder und Kombinationsfelder)
+#### <a name="input-controls-text-boxes-and-combo-boxes"></a>Eingabesteuerelemente (Textfelder und Kombinationsfelder)
 
-- Stellen Sie sicher, dass wenn Sie die Standardschriftart für die Umgebung verwenden zu können, sind die Anzeigehöhe für Textfelder, Kombinationsfelder und Schaltflächen alle 23 Pixel.
+- Stellen Sie sicher, dass bei Verwendung der Standardumgebungsschriftart die Anzeigehöhe für Textfelder, Kombinationsfelder und Schaltflächen alle 23 Pixel beträgt.
 
-- Wenn Hinweistext verwendet wird, stellen Sie sicher, dass die Farbe, um festgelegt wird `Environment.ControlEditHintText` mithilfe des Color-Diensts.
+- Wenn Hinweistext verwendet wird, stellen Sie `Environment.ControlEditHintText` sicher, dass die Farbe auf verwendungsbasiert erlegen ist.
 
-- Wenn das Feld ein Pflichtfeld, die als solche gekennzeichnet werden müssen ist, stellen Sie Folgendes sicher:
+- Wenn es sich bei dem Feld um ein erforderliches Feld handelt, das als solches identifiziert werden muss, überprüfen Sie Folgendes:
 
-  - das der Hintergrund nastaven NA hodnotu `Environment.ControlEditRequiredBackground` und auf der Vordergrund festgelegt ist `Environment.ControlEditRequiredHintText`
+  - dass der Hintergrund `Environment.ControlEditRequiredBackground` und der Vordergrund auf`Environment.ControlEditRequiredHintText`
 
-  - es der Hinweistext im Steuerelement, das wird als angezeigt wird **"\<erforderlichen >"**
+  - dass es Hinweistext innerhalb des Steuerelements gibt, der als **"Erforderlicher\<>"** angezeigt wird
 
 #### <a name="button-controls"></a>Schaltflächen-Steuerelemente
 
-- Stellen Sie sicher, dass die Schaltflächen mit einer Mindestgröße von 75 x 23 Pixel sind, es sei denn, sodass mehr Text.
+- Stellen Sie sicher, dass Schaltflächen eine Mindestgröße von 75x23 Pixeln haben, es sei denn, sie können längeren Text aufnehmen.
 
-- Stellen Sie sicher, dass die Schaltflächen verlassen haben und rechten Rand von 3 bis 5 Pixel als auch die Auffüllung für den Inhalt.
+- Stellen Sie sicher, dass Schaltflächen links und rechts mit 3-5 Pixeln sowie eine Auffüllung für den Inhalt aufweisen.
 
-- Es ist akzeptabel, verwenden Sie eine kleine quadratische Schaltfläche mit nur einer Ellipse **[...]**  darauf statt einer **[durchsuchen...]**  Schaltfläche (oder ähnliche Funktionalität). Wenn verwendet, stellen Sie sicher, dass die Schaltfläche mit der 23 x 23 groß ist.
+- Es ist akzeptabel, einen kleinen quadratischen Knopf mit nur einer **Auslassungsfunktion zu** verwenden [...] darauf anstelle eines **[Browse...]-Buttons** (oder ähnlicher Funktionen). Wenn sie verwendet wird, stellen Sie sicher, dass die Schaltfläche 23x23 groß ist.
 
-- Wenn es mehr als eine **[durchsuchen...]**  in einem Dialogfeld, und klicken Sie dann überprüfen Sie, ob die verkürzte Version (nur Auslassungszeichen **[...]** ) wird für alle verwendet.
+- Wenn es mehr als eine **[Browse...]** Schaltfläche in einem Dialoggibt gibt, überprüfen Sie, ob die gekürzte Version (nur Ellipsen **[...]**) für alle verwendet wird.
 
-- Stellen Sie sicher, mit den Auslassungspunkten **[...]**  Schaltflächen müssen sich nicht auf ein mnemonisches Zeichen. Wenn der Fokus auf das Eingabesteuerelement daneben befindet, sollten eine Registerkarte den Fokus auf die Schaltfläche mit den Auslassungspunkten verschieben.
+- Stellen Sie sicher, dass die Tasten der Ellipse **[...]** keine mnemonic haben. Wenn der Fokus auf dem Eingabesteuerelement daneben liegt, sollte eine Registerkarte den Fokus auf die Auslassungsschaltfläche verschieben.
 
-- Stellen Sie sicher, dass die Schaltflächen, Befehle und Befehlslinks, die sekundäre Benutzeroberfläche zu starten, die weitere Eingabe des Benutzers erfasst ein Auslassungszeichen enden müssen **[...]** .
+- Stellen Sie sicher, dass Schaltflächen, Befehle und Befehlslinks, die die sekundäre Benutzeroberfläche starten, die mehr Benutzereingaben erfasst, in einer Auslassungsrolle enden müssen **[...]**.
 
-#### <a name="hyperlinks"></a>Hyperlinks
+#### <a name="hyperlinks"></a>Links
 
-- Stellen Sie sicher, dass ein Linksteuerelement nie Rot, wenn aktive blinkt. Dies ist ein Indikator, dass der Color-Dienst nicht verwendet wird
+- Stellen Sie sicher, dass ein Hyperlinksteuerelement nie rot blinkt, wenn es aktiv ist. Dies ist ein Indikator dafür, dass der Farbdienst nicht verwendet wird.
 
-- Stellen Sie sicher, dass die VS-Farben, die verwendet werden:
+- Stellen Sie sicher, dass die verwendeten VS-Farben wie:
 
   - `Environment.ControlLinkText`
 
@@ -175,48 +175,48 @@ ms.locfileid: "67824567"
 
   - `Environment.ControlLinkTextPressed`
 
-- Stellen Sie sicher, dass die Hyperlinks werden blau nicht zu unterstreichen, es sei denn, die in einem Absatz eingebettet angezeigt.
+- Stellen Sie sicher, dass Hyperlinks blau ohne Unterstreichung angezeigt werden, es sei denn, sie sind in einen Absatz eingebettet.
 
 #### <a name="check-boxes"></a>Kontrollkästchen
 
-- Wenn das Kontrollkästchen für ein mehrzeiligen Text verfügt, stellen Sie sicher, dass das Feld mit der ersten Zeile des Texts, die nicht in allen Geschäftsbereichen vertikal zentriert ausgerichtet ist.
+- Wenn ein Kontrollkästchen mehrzeiligen Text enthält, stellen Sie sicher, dass das Kontrollkästchen an der ersten Textzeile ausgerichtet ist und nicht vertikal über alle Zeilen zentriert ist.
 
-- Stellen Sie sicher, dass Sie die Kontrollkästchen immer eine binäre Wahl kennzeichnen und nicht den Benutzer oder neuen Fenstern oder Seiten zu öffnen.
+- Stellen Sie sicher, dass Kontrollkästchen immer eine binäre Auswahl anzeigen und nicht durch den Benutzer navigieren oder neue Fenster oder Seiten öffnen.
 
-- Wenn das Kontrollkästchen eine Option, die im Zusammenhang mit der eines Eingabesteuerelements vorweisen, stellen Sie sicher, dass sie unveränderliche links und sehr eng unter das Steuerelement an dessen Beziehung positioniert ist.
+- Wenn ein Kontrollkästchen eine Option für ein Eingabesteuerelement darstellt, stellen Sie sicher, dass es bündig links und sehr nah unter diesem Steuerelement positioniert ist, um seine Beziehung anzugeben.
 
-- Stellen Sie sicher, dass das Kontrollkästchen ist **nie** als Mittel verwendet werden, um den gesamten Inhalt eines Dialog- oder die Seite zu aktivieren.
+- Stellen Sie sicher, dass ein Kontrollkästchen **nie** als Mittel verwendet wird, um den gesamten Inhalt eines Dialogfelds oder einer Seite zu aktivieren.
 
-#### <a name="group-boxes"></a>Gruppenfelder
+#### <a name="group-boxes"></a>Gruppenboxen
 
-- Stellen Sie sicher, dass ein Dialogfeld kein einzelnes Gruppenfeld darin enthält, das den gesamten Inhalt des Dialogfelds enthält.
+- Stellen Sie sicher, dass ein Dialogfeld kein einzelnes Gruppenfeld enthält, das den gesamten Inhalt des Dialogfelds enthält.
 
-- Stellen Sie sicher, dass mindestens zwei Steuerelemente in jeder Gruppenfeld vorhanden sind.
+- Stellen Sie sicher, dass in jedem Gruppenfeld mindestens zwei Steuerelemente vorhanden sind.
 
-- Nur selten sollte mehr als zwei Gruppenfelder in einem Dialogfeld angezeigt werden.
+- Selten sollten mehr als zwei Gruppenfelder in einem Dialogfeld vorhanden sein.
 
-- Stellen Sie sicher, dass keine geschachtelte Gruppenfelder vorhanden sind.
+- Stellen Sie sicher, dass keine verschachtelten Gruppenfelder vorhanden sind.
 
 ### <a name="icons"></a>Symbole
 
-- Stellen Sie sicher, dass Symbole in das Design "dunkel" ordnungsgemäß invertierten angezeigt werden.
+- Stellen Sie sicher, dass Symbole korrekt invertiert angezeigt werden, wenn sie sich im dunklen Design befinden.
 
-- Stellen Sie sicher, dass alle Symbole für die grundlegenden Konzepte basieren.
+- Stellen Sie sicher, dass alle Symbole auf Kernkonzepten basieren.
 
-- Stellen Sie sicher, dass jedes Symbol distinct, einfach zu erkennen, und nicht mehr als zwei Konzepte (ohne Status Modifizierer/Sprache enthält).
+- Stellen Sie sicher, dass jedes Symbol unterschiedlich, leicht zu erkennen ist und nicht mehr als zwei Konzepte enthält (ohne Statusmodifizierer/Sprache).
 
-- Stellen Sie sicher, dass das Symbol "Basis" zentriert innerhalb des Bereichs angezeigt wird.
+- Stellen Sie sicher, dass das Basissymbol zentriert im Raum angezeigt wird.
 
-- Stellen Sie sicher, dass alle Symbole im Modus für hohe Kontraste lesbar angezeigt werden.
+- Stellen Sie sicher, dass alle Symbole im Modus "Hoher Kontrast" lesbar angezeigt werden.
 
-- Sicherstellen Sie, dass eine beliebige Farbe verwendet Farbe Nutzung Standards entspricht.
+- Stellen Sie sicher, dass die verwendete Farbe den Farbverwendungsstandards entspricht.
 
-- Stellen Sie sicher, dass keine Halos (Rahmen) vorhanden sind, um Symbole. (Falls vorhanden, sollte des Halo-Effekts die Hintergrundfarbe der angrenzenden Benutzeroberfläche übereinstimmen).
+- Stellen Sie sicher, dass keine Halos (Rahmen) um Symbole herum vorhanden sind. (Falls vorhanden, sollte der Halo mit der Hintergrundfarbe der benachbarten Benutzeroberfläche übereinstimmen).
 
-### <a name="touch-enabled-ui"></a>Touchscreen-Benutzeroberfläche
+### <a name="touch-enabled-ui"></a>Touch-fähige Benutzeroberfläche
 
-- Stellen Sie sicher, dass interaktive Steuerelemente werden einfach touchable: minimale groß genug sind **23 x 23 Pixel** Größe
+- Stellen Sie sicher, dass interaktive Steuerelemente groß genug sind, um leicht ansetzbar zu sein - mindestens **23x23 Pixel** in der Größe
 
-- Stellen Sie sicher, dass die am häufigsten verwendeten Steuerelemente mindestens **40 x 40 Pixel** Größe.
+- Stellen Sie sicher, dass die am häufigsten verwendeten Steuerelemente mindestens **40 x 40 Pixel** groß sind.
 
-- Überprüfen Sie, ob interaktive Steuerelemente mindestens **5 Pixel Abstand** dazwischen
+- Stellen Sie sicher, dass interaktive **Steuerelemente** mindestens 5 Pixel Abstand zwischen ihnen haben

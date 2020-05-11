@@ -15,11 +15,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585781"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306836"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 
@@ -57,7 +57,7 @@ Sie können die Erweiterung jederzeit über den **Erweiterungs-Manager** oder da
 
 3. Wählen Sie eine der folgenden drei Optionen aus:
 
-   - **Standardverfahren verwenden:** Das Standardverhalten für das Toolfenster. Wenn diese Option ausgewählt ist, wird die Startleistung nicht verbessert.
+   - **Standardverhalten verwenden:** Das Standardverhalten des Toolfensters. Wenn diese Option ausgewählt ist, wird die Startleistung nicht verbessert.
 
    - **Fenster beim Start nicht anzeigen:** Das angegebene Toolfenster ist beim Öffnen von Visual Studio immer geschlossen, auch dann, wenn Sie es in einer früheren Sitzung offen gelassen hatten. Sie können das Toolfenster bei Bedarf über das entsprechende Menü öffnen.
 
@@ -68,7 +68,7 @@ Sie können die Erweiterung jederzeit über den **Erweiterungs-Manager** oder da
 > [!NOTE]
 > In einigen Visual Studio-Versionen vor Version 2017 war ein Feature namens **Lightweight-Ladevorgang für Projektmappen** integriert. In den aktuellen Versionen laden große Projektmappen, die verwalteten Code enthalten, auch ohne den Lightweight-Ladevorgang für Projektmappen viel schneller als zuvor.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Tipps und Tricks zur Leistungssteigerung für Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

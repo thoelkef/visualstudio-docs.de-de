@@ -13,16 +13,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590708"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223670"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
 Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschiedener Komponententests mithilfe des Microsoft-Komponententestframeworks für verwalteten Code und Visual Studio-**Test-Explorer**. Sie beginnen mit einem C#-Projekt in der Entwicklungsphase und erstellen Tests zur Codeüberprüfung. Anschließend führen Sie die Tests aus und überprüfen die Ergebnisse. Dann können Sie den Projektcode ändern und die Tests erneut ausführen.
+
+
 
 ## <a name="create-a-project-to-test"></a>Erstellen eines zu testenden Projekts
 
@@ -429,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Erneut testen, umschreiben und neu analysieren
 
-Wenn ein Fehler in der getesteten Methode vorliegt und die `Debit`-Methode keine <xref:System.ArgumentOutOfRangeException> auslöst, muss keine korrekte Meldung mit der Ausnahme ausgegeben werden. Derzeit ist die Testmethode nicht für diesen Fall ausgelegt. Wenn der `debitAmount`-Wert gültig ist (d. h. kleiner als das Guthaben, jedoch größer als 0 (null)), wird keine Ausnahme erfasst, sodass die Assertion nicht ausgelöst wird. Die Testmethode ist trotzdem erfolgreich. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
+Derzeit verarbeitet die Testmethode nicht alle Fälle, die sie verarbeiten sollte. Wenn die zu testende Methode, die `Debit`-Methode, keine <xref:System.ArgumentOutOfRangeException>-Ausnahme auslöst, wenn der `debitAmount`-Wert größer als der Saldo (oder unter null (0)) liegt, wird die Testmethode erfolgreich ausgeführt. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
 
 Dabei handelt es sich um einen Fehler der Testmethode. Um das Problem zu beheben, fügen Sie eine <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>-Assertion am Ende der Testmethode hinzu, um den Fall abzudecken, in dem keine Ausnahme ausgelöst wird.
 

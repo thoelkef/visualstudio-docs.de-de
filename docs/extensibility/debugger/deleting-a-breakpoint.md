@@ -1,31 +1,31 @@
 ---
-title: Löschen eines Haltepunkts | Microsoft-Dokumentation
+title: Löschen eines Haltepunkts | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, deleting
 - debugging [Debugging SDK], deleting breakpoints
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7551ee12993780544bbb9c9eb127a9bfb4364e8d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345827"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738948"
 ---
 # <a name="deleting-a-breakpoint"></a>Löschen eines Haltepunkts
-Im folgenden beschreibt den Prozess, wenn einen ausstehenden Haltepunkt zu löschen:
+Im Folgenden wird der Prozess beim Löschen eines ausstehenden Haltepunkts beschrieben:
 
-## <a name="deletion-process"></a>Vorgang zum Löschen
- Ruft die Sitzungs-Debug-Manager (SDM) die [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) Methode, um den ausstehenden Haltepunkt, und alle gebundener Haltepunkte entfernen daraus gebunden.
+## <a name="deletion-process"></a>Löschvorgang
+ Der Sitzungsdebug-Manager (SDM) ruft die [IDebugPendingBreakpoint2::Delete-Methode](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) auf, um den ausstehenden Haltepunkt und alle gebundenen Haltepunkte, die davon gebunden sind, zu entfernen.
 
 > [!NOTE]
-> Ein einzelnen gebundener Haltepunkt auch gelöscht werden, durch einen Aufruf von [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Ein einzelner gebundener Haltepunkt kann auch durch einen Aufruf von [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)gelöscht werden.
 
-## <a name="see-also"></a>Siehe auch
-- [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

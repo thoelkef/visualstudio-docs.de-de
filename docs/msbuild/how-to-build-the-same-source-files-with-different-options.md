@@ -13,24 +13,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b196ae92b7388e8b9f4e1cee60a62b3839a9c120
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c31da244e5c264bb81498c6091aefce7e6318bb2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585231"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633940"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
-Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mit unterschiedlichen Buildoptionen. So können Sie, z.B. ein Debugbuild mit Symbolinformationen oder ein Releasebuild ohne Symbolversionen, aber mit aktivierten Optimierungen erstellen. Oder Sie können ein Projekt erstellen, das auf einer bestimmten Plattform wie x86 oder [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] ausgeführt wird. In allen diesen Fällen bleiben die meisten Buildoptionen gleich. Nur ein paar Optionen werden zur Steuerung der Buildkonfiguration geändert. Sie verwenden Eigenschaften und Bedingungen mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um die unterschiedlichen Buildkonfigurationen zu erstellen.
 
-## <a name="use-properties-to-modify-projects"></a>Verwenden von Eigenschaften zum Ändern von Projekten
+Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mit unterschiedlichen Buildoptionen. So können Sie, z.B. ein Debugbuild mit Symbolinformationen oder ein Releasebuild ohne Symbolversionen, aber mit aktivierten Optimierungen erstellen. Alternativ können Sie ein Projekt erstellen, das auf einer bestimmten Plattform wie x86 oder x64 ausgeführt wird. In allen diesen Fällen bleiben die meisten Buildoptionen gleich. Nur ein paar Optionen werden zur Steuerung der Buildkonfiguration geändert. Sie verwenden Eigenschaften und Bedingungen mit MSBuild, um die unterschiedlichen Buildkonfigurationen zu erstellen.
+
+## <a name="use-properties-to-control-build-settings"></a>Verwenden von Eigenschaften zum Steuern von Buildeinstellungen
+
 Das Element `Property` definiert eine Variable, die in einer Projektdatei, z.B. den Speicherort eines temporären Ordners, mehrmals verwiesen wird oder um die Werte für Eigenschaften festzulegen, die in mehrere Konfigurationen (z.B. einem Debug- oder Releasebuild) verwendet werden. Weitere Informationen zu Eigenschaften finden Sie unter [MSBuild Properties (MSBuild-Eigenschaften)](../msbuild/msbuild-properties.md).
 
-Sie können Eigenschaften verwenden, um die Konfiguration Ihres Builds zu ändern, ohne die Projektdatei zu ändern. Das Attribut `Condition` des Elements `Property` und `PropertyGroup` hilft Ihnen beim Ändern der Eigenschaftenwerte. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).
+Sie können Eigenschaften verwenden, um die Konfiguration Ihres Builds zu ändern, ohne die Projektdatei zu ändern. Das Attribut `Condition` des Elements `Property` und `PropertyGroup` hilft Ihnen beim Ändern der Eigenschaftenwerte. Weitere Informationen zu MSBuild-Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).
 
-#### <a name="to-set-a-group-of-properties-based-on-another-property"></a>So legen Sie eine Eigenschaftengruppe anhand einer anderen Eigenschaft fest.
+### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>So legen Sie eine Eigenschaftengruppe fest, die von einer anderen Eigenschaft abhängt
 
-- Verwenden Sie ein Attribut `Condition` in einem Element `PropertyGroup`, das ähnlich dem Folgenden ist:
+- Verwenden Sie ein Attribut `Condition` im Element `PropertyGroup`, das ähnlich dem Folgenden ist:
 
   ```xml
   <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
@@ -39,7 +41,7 @@ Sie können Eigenschaften verwenden, um die Konfiguration Ihres Builds zu änder
   </PropertyGroup>
   ```
 
-#### <a name="to-define-a-property-based-on-another-property"></a>So definieren Sie eine Eigenschaft anhand einer anderen Eigenschaft
+### <a name="to-define-a-property-that-depends-on-another-property"></a>So definieren Sie eine Eigenschaft, die von einer anderen Eigenschaft abhängt
 
 - Verwenden Sie ein Attribut `Condition` im Element `Property`, das ähnlich dem Folgenden ist:
 
@@ -48,9 +50,10 @@ Sie können Eigenschaften verwenden, um die Konfiguration Ihres Builds zu änder
   ```
 
 ## <a name="specify-properties-on-the-command-line"></a>Festlegen von Eigenschaften in der Befehlszeile
-Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt, müssen Sie die Möglichkeit haben, diese Konfigurationen zu ändern, wenn Sie Ihr Projekt erstellen. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet diese Möglichkeit, indem es ermöglicht wird, Eigenschaften mithilfe des Schalters **-property** oder **-p** in der Befehlszeile anzugeben.
 
-#### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest
+Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt, müssen Sie die Möglichkeit haben, diese Konfigurationen zu ändern, wenn Sie Ihr Projekt erstellen. MSBuild bietet diese Möglichkeit, indem es ermöglicht wird, Eigenschaften mithilfe des Schalters **-property** oder **-p** in der Befehlszeile anzugeben.
+
+### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest
 
 - Verwenden Sie den Schalter **-property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:
 
@@ -64,7 +67,7 @@ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt,
   Msbuild file.proj -p:Flavor=Debug
   ```
 
-#### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an
+### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an
 
 - Verwenden Sie mehrmals den Schalter **-property** oder **-p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **-property** bzw. **-p** und unterteilen mehrere Eigenschaft mithilfe von Semikolons (;). Zum Beispiel:
 
@@ -78,13 +81,14 @@ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt,
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
   ```
 
-  Umgebungsvariablen werden ebenfalls als Eigenschaften behandelt und automatisch von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] integriert. Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+  Umgebungsvariablen werden ebenfalls als Eigenschaften behandelt und automatisch von MSBuild integriert. Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
   Der Wert der Eigenschaft, die in der Befehlszeile angegeben ist, hat Vorrang vor jedem Wert, dem in der Projektdatei der gleiche Wert zugewiesen wurde. Dieser Wert hat Vorrang vor dem Wert in einer Umgebungsvariable.
 
   Sie können dieses Verhalten ändern, indem Sie das Attribut `TreatAsLocalProperty` in einem Projekttag verwenden. Der Eigenschaftswert, der auf der Befehlszeile angegeben wurde, hat für Eigenschaftsnamen, die mit diesem Attribut aufgeführt sind, kein Vorrang vor dem Wert in der Projektdatei. Sie finden ein Beispiel weiter unten in diesem Thema.
 
 ## <a name="example"></a>Beispiel
+
 Das folgende Codebeispiel, das Projekt „Hello World“, enthält zwei neue Eigenschaftengruppen, die verwendet werden können, um ein Debugbuild und ein Releasebuild zu erstellen.
 
 So erstellen Sie die Debugversion des Projekts:
@@ -103,7 +107,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 <Project DefaultTargets = "Compile"
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <!-- Sets the default flavor of an environment variable called
+    <!-- Sets the default flavor if an environment variable called
     Flavor is not set or specified on the command line -->
     <PropertyGroup>
         <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
@@ -152,6 +156,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 ```
 
 ## <a name="example"></a>Beispiel
+
 Das folgende Beispiel veranschaulicht, wie das Attribut `TreatAsLocalProperty` verwendet wird. Die Eigenschaft `Color` hat den Wert `Blue` in der Projektdatei und `Green` in der Befehlszeile. Mit `TreatAsLocalProperty="Color"` im Projekttag setzt die Befehlszeileneigenschaft (`Green`) nicht die Eigenschaft außer Kraft, die in der Projektdatei definiert ist (`Blue`).
 
 Geben Sie zum Erstellen des Projekts den folgenden Befehl ein:
@@ -183,6 +188,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

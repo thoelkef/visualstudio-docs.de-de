@@ -1,27 +1,27 @@
 ---
-title: IDebugFunctionObject2::Evaluate | Microsoft-Dokumentation
+title: IDebugFunctionObject2::Auswerten | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::Evaluate
 ms.assetid: bc54c652-904b-4297-a6db-faa329684881
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a830dadd9d24f5ecb815db5a89342c5acd281a9c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d87d7d3531d198a1478b4aaa55b354c3ac101302
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313408"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728449"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
-Ruft die Funktion und der resultierende Wert als Objekt zurückgegeben.
+Ruft die Funktion auf und gibt den resultierenden Wert als Objekt zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,22 +47,22 @@ int Evaluate (
 
 ## <a name="parameters"></a>Parameter
 `ppParams`\
-[in] Ein Array von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekten, die Eingabeparameter darstellt. Dieser Parameter wurde mithilfe einer der Methoden erstellen in dieser Schnittstelle erstellt.
+[in] Ein Array von [IDebugObject-Objekten,](../../../extensibility/debugger/reference/idebugobject.md) das die Eingabeparameter darstellt. Jeder dieser Parameter wurde mithilfe einer der Create-Methoden in dieser Schnittstelle erstellt.
 
 `dwParams`\
-[in] Die Anzahl von Parametern in der `ppParams` Array.
+[in] Die Anzahl der `ppParams` Parameter im Array.
 
 `dwEvalFlags`\
-[in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die angeben, wie die Auswertung ausgeführt werden.
+[in] Eine Kombination von Flags aus der EVALFLAGS-Enumeration, die angeben, wie die Auswertung ausgeführt werden soll. [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 
 `dwTimeout`\
-[in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung **UNENDLICHE** für Warten ohne Timeout.
+[in] Gibt die maximale Wartezeit in Millisekunden an, bevor von dieser Methode zurückgegeben wird. Verwenden Sie **INFINITE,** um auf unbestimmte Zeit zu warten.
 
 `ppResult`\
-[out] Gibt eine **IDebugObject** , das den Wert der Funktion als ein Objekt darstellt.
+[out] Gibt ein **IDebugObject** zurück, das den Wert der Funktion als Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

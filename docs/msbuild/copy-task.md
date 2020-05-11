@@ -21,22 +21,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed57982fb177a49ed89bbe601d753fe155aba22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596085"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634369"
 ---
 # <a name="copy-task"></a>Copy-Aufgabe
+
 Kopiert Dateien an einen neuen Speicherort im Dateisystem.
 
 ## <a name="parameters"></a>Parameter
+
 In der folgenden Tabelle werden die Parameter der `Copy` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`CopiedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Elemente, die erfolgreich kopiert wurden.|
+|`CopiedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Elemente, die erfolgreich kopiert wurden, *einschließlich* derer, die nicht tatsächlich kopiert sondern übersprungen wurden, weil sie bereits auf dem neuesten Stand sind und `SkipUnchangedFiles` den Wert `true` aufweist.|
 |`DestinationFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Liste der Dateien an, in die die Quelldateien kopiert werden sollen. Diese Liste soll der im `SourceFiles`-Parameter angegebenen Liste eins zu eins entsprechen. Das heißt, die erste in `SourceFiles` angegebene Datei wird an den ersten in `DestinationFiles` angegebenen Speicherort kopiert usw.|
 |`DestinationFolder`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt das Verzeichnis an, in das die Dateien kopieren werden sollen. Es muss sich um ein Verzeichnis handeln, nicht um eine Datei. Wenn das Verzeichnis nicht vorhanden ist, wird es automatisch erstellt.|
 |`OverwriteReadOnlyFiles`|Optionaler `Boolean`-Parameter.<br /><br /> Überschreibt Dateien, auch wenn diese als schreibgeschützte gekennzeichnet sind|
@@ -47,6 +49,7 @@ In der folgenden Tabelle werden die Parameter der `Copy` -Aufgabe beschrieben.
 |`UseHardlinksIfPossible`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, werden für die kopierten Dateien feste Links erstellt, statt die Dateien zu kopieren.|
 
 ## <a name="warnings"></a>Warnungen
+
 Warnungen werden protokolliert, darunter:
 
 - `Copy.DestinationIsDirectory`
@@ -66,11 +69,13 @@ Warnungen werden protokolliert, darunter:
 - `Copy.RemovingReadOnlyAttribute`
 
 ## <a name="remarks"></a>Hinweise
+
 Es muss entweder der `DestinationFolder`-Parameter oder der `DestinationFiles`-Parameter angegeben werden, jedoch nicht beide. Wenn beide angegeben werden, schlägt der Task fehl, und ein Fehler wird protokolliert.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel werden die Elemente in der `MySourceFiles`-Elementauflistung in den Ordner *C:\MyProject\Destination* kopiert.
 
 ```xml
@@ -91,6 +96,7 @@ Im folgenden Beispiel werden die Elemente in der `MySourceFiles`-Elementauflistu
 ```
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird veranschaulicht, wie ein rekursiver Kopiervorgang ausgeführt wird. In diesem Projekt werden alle Dateien rekursiv von *C:\MySourceTree* nach *C:\MyDestinationTree* kopiert, wobei die Verzeichnisstruktur beibehalten wird.
 
 ```xml
@@ -111,5 +117,6 @@ Im folgenden Beispiel wird veranschaulicht, wie ein rekursiver Kopiervorgang aus
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

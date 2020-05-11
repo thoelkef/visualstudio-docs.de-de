@@ -1,0 +1,238 @@
+- name: Visual Studio für Mac
+  href: index.yml
+- name: Erste Schritte
+  items:
+    - name: IDE-Überblick
+      href: ide-tour.md
+    - name: Visual Studio für Mac für Windows-Benutzer
+      href: vsmac-for-windows-users.md
+- name: Installation
+  items:
+    - name: Installieren von Visual Studio 2019 für Mac
+      href: installation.md
+    - name: Installation und Verwendung hinter einer Firewall oder einem Proxy
+      href: install-behind-a-firewall-or-proxy-server.md
+    - name: Installieren einer Vorschauversion
+      href: install-preview.md
+    - name: Update
+      href: update.md
+    - name: Deinstallieren
+      href: uninstall.md
+- name: Benutzerkonten
+  items:
+    - name: Übersicht
+      href: user-accounts.md
+    - name: Anmelden
+      href: signing-in.md
+    - name: Aktivieren des Abonnements
+      href: enable-subscription.md
+- name: Anpassen der IDE
+  items:
+    - name: Anpassen des Erscheinungsbilds und Verhaltens der IDE
+      href: customizing-the-ide.md
+    - name: Erweitern von Visual Studio für Mac
+      href: extending-visual-studio-mac.md
+- name: Projekte und Projektmappen
+  items:
+    - name: Übersicht
+      href: projects-and-solutions.md
+    - name: Erstellen neuer Projekte
+      href: create-new-projects.md
+    - name: Hinzufügen und Entfernen von Projektelementen
+      href: add-and-remove-project-items.md
+    - name: Verwalten von Projektmappen und Projekteigenschaften
+      href: managing-solutions-and-project-properties.md
+    - name: Festlegung von Zielversionen
+      href: project-multitargeting.md
+    - name: Verwalten von Verweisen in einem Projekt
+      items:
+        - name: Übersicht
+          href: managing-references-in-a-project.md
+        - name: 'Exemplarische Vorgehensweise: Einschließen eines NuGet-Pakets in Ihr Projekt'
+          href: nuget-walkthrough.md
+    - name: Verwalten von App-Ressourcen
+      href: managing-app-resources.md
+    - name: 'Vorgehensweise: Öffnen mehrerer Projektmappen oder Instanzen'
+      href: open-multiple-solutions.md
+- name: Quellcode-Editor
+  items:
+    - name: Editor-Funktionen
+      href: source-editor.md
+    - name: Umgestaltung
+      href: refactoring.md
+    - name: IntelliSense
+      href: intellisense.md
+    - name: Anzeigen von Importelementen
+      href: show-imports.md
+    - name: Gleichzeitiges Bearbeiten mehrerer Caretzeichen
+      href: multi-caret-editing.md
+    - name: Kommentare
+      href: comments.md
+    - name: Editor-Verhalten
+      href: editor-behavior.md
+    - name: Aufgabenkommentare
+      href: task-comments.md
+    - name: Codeausschnitte
+      href: snippets.md
+    - name: Blockauswahl
+      href: block-selection.md
+    - name: Editor-Designs
+      href: editor-themes.md
+    - name: EditorConfig
+      href: editorconfig.md
+    - name: Standardtastenkombinationen
+      href: keyboard-shortcuts.md
+- name: Debuggen
+  items:
+    - name: Übersicht
+      href: debugging.md
+    - name: Datenvisualisierungen
+      href: data-visualizations.md
+    - name: Debuggen von NuGet-Paketen mithilfe von SourceLink
+      href: source-link.md
+- name: Kompilieren und Erstellen
+  items:
+    - name: Übersicht
+      href: compiling-and-building.md
+    - name: Erstellen und Bereinigen von Projekten und Projektmappen
+      href: building-and-cleaning-projects-and-solutions.md
+    - name: Buildvorgänge
+      href: build-actions.md
+    - name: 'Vorgehensweise: Festlegen mehrerer Startprojekte'
+      href: set-startup-projects.md
+    - name: Anpassen des Buildsystems
+      href: customizing-build-system.md
+    - name: Konfigurationen
+      items:
+        - name: Grundlagen der Buildkonfiguration
+          href: configurations.md
+        - name: Erstellen und Bearbeiten von Konfigurationen
+          href: create-and-edit-configurations.md
+- name: Quellcodeverwaltung
+  items:
+    - name: Übersicht
+      href: version-control.md
+    - name: Einrichten eines Git-Repositorys
+      href: set-up-git-repository.md
+    - name: Arbeiten mit Git
+      href: working-with-git.md
+    - name: Einrichten eines Subversion-Repositorys
+      href: set-up-subversion-repository.md
+    - name: Arbeiten mit Subversion
+      href: working-with-subversion.md
+- name: Bereitstellung von Web-Apps
+  items:
+    - name: Übersicht
+      href: web-app-deployment.md
+    - name: Veröffentlichen in Azure App Service
+      href: publish-app-svc.md
+    - name: In Ordner veröffentlichen
+      href: publish-folder.md
+- name: Arbeitslasten
+  items:
+    - name: Verfügbare Workloads
+      href: workloads.md
+    - name: ASP.NET Core
+      items:
+        - name: .NET Core-Unterstützung
+          href: net-core-support.md
+        - name: Erste Schritte mit ASP.NET Core
+          href: asp-net-core.md
+        - name: Erstellen von ASP.NET Core-Anwendungen in Visual Studio für Mac
+          href: building-asp-net-core.md
+        - name: Razor
+          href: razor.md
+        - name: Blazor
+          href: blazor.md
+        - name: JavaScript und TypeScript
+          href: javascript.md
+        - name: launchSettings.json
+          href: launch-settings.md
+    - name: Azure
+      items:
+        - name: Übersicht
+          href: azure-workload.md
+        - name: Einführung in Azure Functions
+          href: azure-functions.md
+        - name: 'Tutorial: Überprüfung auf'
+          href: azure-functions-lab.md
+        - name: Verbundene Dienste
+          href: connected-services.md
+    - name: Docker
+      items:
+        - name: Erste Schritte mit Docker
+          href: docker-quickstart.md
+        - name: Erstellen einer App mit mehreren Containern mit Docker Compose
+          href: docker-multi-container.md
+    - name: Spieleentwicklung mit Unity
+      items:
+        - name: Spieleentwicklung mit Unity
+          href: unity-tools.md
+        - name: Setup
+          href: setup-vsmac-tools-unity.md
+        - name: Erste Schritte mit Unity
+          href: unity-walkthrough.md
+        - name: Verwenden von Unity-Tools
+          href: using-vsmac-tools-unity.md
+        - name: Verwenden von .NET 4.x in Unity
+          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
+        - name: Änderungsprotokoll
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+    - name: Mobile Apps mit Xamarin
+      href: /visualstudio/mac/xamarin
+- name: Zugriff
+  items:
+    - name: Übersicht
+      href: accessibility.md
+    - name: Festlegen von IDE-Barrierefreiheitsoptionen
+      href: accessibility-ide-options.md
+    - name: macOS-Tools und -Features für Barrierefreiheit
+      items:
+        - name: Verwenden von macOS-Tools für Barrierefreiheit
+          href: accessibility-macos.md
+        - name: Verwenden der Tastaturnavigation
+          href: accessibility-keyboard.md
+        - name: Verwenden von VoiceOver
+          href: accessibility-voiceover.md
+- name: Videotutorials
+  items:
+    - name: Erste Schritte mit ASP.NET Core in Visual Studio für Mac
+      href: tutorial-aspnet-core-vsmac-getting-started.md
+    - name: Erweitern einer vorhandenen ASP.NET Core-Webanwendung
+      href: tutorial-aspnet-core-vsmac-extending.md
+- name: Visual Studio für Mac für Windows-Benutzer
+  href: vsmac-for-windows-users.md
+- name: Problembehandlung
+  items:
+    - name: Protokolle und Ausnahmen
+      href: troubleshooting.md
+    - name: Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
+      href: visual-studio-experience-improvement-program.md
+    - name: Melden eines Problems
+      href: report-a-problem.md
+    - name: 'Problembehandlung: Unterstützt Visual Studio für Mac die Team Foundation-Versionskontrolle?'
+      href: tf-version-control.md
+    - name: 'Problembehandlung: Warum werden nicht alle Vorlagen angezeigt?'
+      href: troubleshooting-no-templates.md
+    - name: 'Problembehandlung: Updater enthält Fehler, die beim Abrufen von Informationen auftreten'
+      href: updater-troubleshooting.md
+- name: Versionshinweise
+  href: /visualstudio/releasenotes/vs2019-mac-relnotes
+- name: Anmerkungen zur Vorschauversion
+  href: /visualstudio/releasenotes/vs2019-mac-preview-relnotes
+- name: Proben
+  items:
+    - name: Vorgestellte Beispiele
+      href: samples/index.yml
+    - name: Alle ASP.NET Core-Beispiele
+      href: /samples/browse/?products=aspnet-core
+    - name: Alle .NET Core-Beispiele
+      href: /samples/browse/?products=dotnet-core
+    - name: Alle Xamarin.Forms-Beispiele
+      href: /xamarin/xamarin-forms/samples/
+    - name: Alle Xamarin.iOS-Beispiele
+      href: /xamarin/ios/samples/
+    - name: Alle Xamarin.Android-Beispiele
+      href: /xamarin/android/samples/
+    - name: Alle Xamarin.Mac-Beispiele
+      href: /xamarin/mac/samples/

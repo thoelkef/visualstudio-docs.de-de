@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.openlocfilehash: 43720947d36fec1ee64c81a48f7bc3eb7466d034
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983367"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
@@ -24,7 +24,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 > * Integrieren mit Webressourcen und Azure-Speicherressourcen
 > * Orchestrieren eines Workflows mit mehreren Azure-Funktionen
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 - Visual Studio für Mac 7.5 oder höher
 - Ein Azure-Abonnement (kostenlos unter [https://azure.com/free](https://azure.com/free) verfügbar)

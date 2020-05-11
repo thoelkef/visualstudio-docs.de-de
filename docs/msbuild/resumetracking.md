@@ -10,19 +10,20 @@ apitype: COM
 helpviewer_keywords:
 - ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2ff32a4eb2218a8b3d09188c787156e484147f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996698"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632497"
 ---
 # <a name="resumetracking"></a>ResumeTracking
+
 Setzt die Nachverfolgung im aktuellen Kontext fort.
 
 ## <a name="syntax"></a>Syntax
@@ -32,10 +33,13 @@ HRESULT WINAPI ResumeTracking();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
+
  Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn die Nachverfolgung fortgesetzt wurde. **E_FAIL** wird zurückgegeben, wenn die Nachverfolgung nicht fortgesetzt werden kann, da der Kontext nicht verfügbar war.
 
 ## <a name="requirements"></a>Anforderungen
+
  **Header:** *FileTracker.h*
 
 ## <a name="see-also"></a>Siehe auch
+
 - [SuspendTracking](../msbuild/suspendtracking.md)

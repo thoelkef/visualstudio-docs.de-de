@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetIndex
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bfb3f02640573eec17f7dd23790a854fc2461c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6b31acd57685058795186fcecb73164218d5ad15
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330304"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727986"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 Ruft den Index dieses generischen Parameters ab.
@@ -39,16 +39,16 @@ int GetIndex(
 
 ## <a name="parameters"></a>Parameter
 `pIndex`\
-[out] Der Indexwert des dieser generische Parameter.
+[out] Indexwert dieses generischen Parameters.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Klicken Sie beispielsweise für Dictionary(K,V), K ist Index 0, V Index 1 ist.
+## <a name="remarks"></a>Bemerkungen
+Für Dictionary(K,V) ist K beispielsweise index 0, V ist Index 1.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugGenericParamFieldType-Objekt** implementiert wird, das die [IDebugGenericParamField-Schnittstelle](../../../extensibility/debugger/reference/idebuggenericparamfield.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)
@@ -68,5 +68,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Festlegen von Berechtigungen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774588"
 ---
 # <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen
@@ -120,7 +120,7 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
    Die angegebenen Benutzer werden nun nach der Anmeldung in der Lage sein, die Profilerstellungstools ohne Administratorberechtigungen zu verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)

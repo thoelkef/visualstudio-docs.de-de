@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 271e9253daf4ab23a5fb06a189ac3042bc925b2a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594265"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880272"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installieren von Test-Agents und Testcontrollern
 
@@ -40,6 +40,7 @@ Sie können Agents für Visual Studio 2017, Visual Studio 2015 und Visual Studio
 
 Diese Installer stehen als ISO-Dateien für die unkomplizierte Installation auf virtuellen Computern zur Verfügung.
 
+::: moniker range="vs-2017"
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Kompatible Versionen von TFS, Microsoft Test Manager, Testcontroller und Test-Agent
 
 Sie können verschiedene Versionen von TFS, Microsoft Test Manager, Testcontroller und Test-Agent entsprechend der folgenden Tabelle kombinieren:
@@ -53,6 +54,23 @@ Sie können verschiedene Versionen von TFS, Microsoft Test Manager, Testcontroll
 | 2015: Neuinstallation | 2013 | 2013 | 2013 |
 | 2015: Upgrade von 2013 oder Neuinstallation | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Kompatible Versionen von TFS, dem Testcontroller und dem Test-Agent
+
+Sie können verschiedene Versionen von TFS, dem Testcontroller und dem Test-Agent entsprechend der folgenden Tabelle kombinieren:
+
+| TFS | Controller | Agent |
+| --- | -------------------------------------- | ---------- | ----- |
+| 2017: Upgrade von 2015 oder Neuinstallation | 2017 | 2017 |
+| 2017: Upgrade von 2015 oder Neuinstallation | 2013 Update 5 | 2013 Update 5 |
+| 2017: Upgrade von 2015 oder Neuinstallation | 2013 Update 5 | 2013 Update 5 |
+| 2015: Upgrade von 2013 | 2013 |2013 |
+| 2015: Neuinstallation | 2013 | 2013 |
+| 2015: Upgrade von 2013 oder Neuinstallation | 2013 | 2013 |
+| 2013 | 2013 | 2013 |
+::: moniker-end
 
 > [!NOTE]
 > Lab Management-Szenarien werden in TFS 2018 und Azure DevOps Services nicht mehr unterstützt. Weitere Informationen finden Sie in [Team Foundation Server 2018: Anmerkungen zu dieser Version](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
@@ -67,5 +85,5 @@ In der folgenden Tabelle werden die von Agents für Visual Studio 2013 unterstü
 | - | - |
 | Erstellen-Bereitstellen-Testen-Workflow in Visual Studio | Benutzer können eine [Buildpipeline](/azure/devops/pipelines/index?view=vsts) (kein XAML-Build) für Szenarios zum Erstellen, Bereitstellen und Testen in TFS verwenden. |
 | Auslastungstests (Leistungstests) mit lokalen Remotecomputern | Verwenden Sie das Testcontroller und Test-Agents 2013 Update 5, um Auslastungstests lokal auszuführen. |
-| Remoteausführung von automatisierten Tests von Microsoft Test Manager mit einer Laborumgebung | Es gibt aktuell keine Alternative für dieses Szenario. Es wird empfohlen, dass Sie den Task „Funktionstests ausführen“ in Build- und Releasedefinitionen verwenden (nicht in XAML-Builds), um Tests remote auszuführen. |
+| Remoteausführung von automatisierten Tests von Microsoft Test Manager mit einer Laborumgebung (ab Visual Studio 2017 veraltet) | Es gibt aktuell keine Alternative für dieses Szenario. Es wird empfohlen, dass Sie den Task „Funktionstests ausführen“ in Build- und Releasedefinitionen verwenden (nicht in XAML-Builds), um Tests remote auszuführen. |
 | Entwickler, die Remotetests in Visual Studio ausführen | Wird nicht mehr unterstützt. |

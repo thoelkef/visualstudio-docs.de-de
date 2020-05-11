@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: C++-App debuggen
       href: quickstart-debug-with-cplusplus.md
-    - name: Debuggen einer ASP.NET-App
+    - name: Debuggen einer ASP.NET Core-App
       href: quickstart-debug-aspnet.md
 - name: Tutorials
   items:
@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Remotedebuggen von ASP.NET auf einem Computer mit IIS
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Remotedebuggen von ASP.NET in Azure
+        - name: Remotedebuggen von ASP.NET Core in Azure
           href: remote-debugging-azure.md
         - name: 'Remotedebuggen eines C#- oder Visual Basic-Projekts'
           href: remote-debugging-csharp.md
         - name: Remotedebuggen eines C++-Projekts
           href: remote-debugging-cpp.md
+        - name: Remotedebuggen von .NET Core unter Linux
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Remotedebugger – Portzuweisungen
           href: remote-debugger-port-assignments.md
         - name: Konfigurieren der Windows-Firewall für das Remotedebuggen
@@ -445,7 +447,7 @@
             - name: Überprüfen von XAML-Eigenschaften beim Debuggen
               href: inspect-xaml-properties-while-debugging.md
             - name: Schreiben und Debuggen von ausgeführtem XAML-Code
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: Debuggen von XAML in Blend
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML und CSS
@@ -505,7 +507,7 @@
                 - name: Überprüfen von XAML-Eigenschaften beim Debuggen
                   href: inspect-xaml-properties-while-debugging.md
                 - name: Schreiben und Debuggen von ausgeführtem XAML-Code
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: Verwenden der WPF-Strukturschnellansicht
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Anzeigen von WPF-Ablaufverfolgungsinformationen
@@ -588,8 +590,6 @@
                   items:
                     - name: Debuggen von COM-Servern und -Containern
                       href: com-server-and-container-debugging.md
-                    - name: RPC-Debuggen von COM-Clients und -Servern
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX-Steuerelement
                   items:
                     - name: Debuggen von ActiveX-Steuerelementen

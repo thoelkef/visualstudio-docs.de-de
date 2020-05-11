@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft-Dokumentation
+title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18d0dbde0d04dcdf42b3e1fbd19841645036e5bf
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 57ddee6e1796159c505b67982f25d1ba09684561
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "66325664"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729471"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-Diese Methode legt die Sprache, die zum Erstellen von druckbaren Ergebnisse.
+Diese Methode legt die Sprache fest, die zum Erstellen druckbarer Ergebnisse verwendet werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int SetLocale(
 
 ## <a name="parameters"></a>Parameter
 `wLangID`\
-[in] Die Sprachen-ID ein.
+[in] Der Sprachbezeichner.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode kann mehrmals aufgerufen werden, während die ausdrucksauswertung (EE) geladen wird, damit die EE Wechseln der Sprache im laufenden Betrieb kann muss. Die EE mithilfe dieses Gebietsschema Fehlermeldungen und Zeichenfolgen in der entsprechenden Sprache zurück.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode kann mehrmals aufgerufen werden, während der Ausdrucksevaluator (EE) geladen wird, sodass der EE die Sprache spontan wechseln kann. Der EE verwendet dieses Gebietsschema, um Fehlermeldungen und Zeichenfolgen in der entsprechenden Sprache zurückzugeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

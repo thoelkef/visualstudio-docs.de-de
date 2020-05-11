@@ -13,10 +13,10 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568879"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für UWP-Apps
@@ -93,7 +93,7 @@ Wenn Sie diese Schritte ausgeführt haben, wird das Komponententestprojekt erste
 
 Bearbeiten Sie den Komponententest im Code-Editor, und fügen Sie die Asserts und die Logik für den Test hinzu.
 
-## <a name="run-unit-tests"></a>Komponententests ausführen
+## <a name="run-unit-tests"></a>Durchführen von Komponententests
 
 So erstellen Sie die Projektmappe und führen den Komponententest mit dem Komponententest-Explorer aus:
 
@@ -108,7 +108,7 @@ So erstellen Sie die Projektmappe und führen den Komponententest mit dem Kompon
 
 3. Wählen Sie im **Test-Explorer** den Komponententest aus, den Sie erstellt haben.
 
-4. Wählen Sie **Alle ausführen** aus.
+4. Wählen Sie **Alle ausführen**aus.
 
    ![Komponententest-Explorer &#45; Komponententest ausführen](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 
@@ -123,7 +123,7 @@ So erstellen Sie die Projektmappe und führen den Komponententest mit dem Kompon
 
    ![Komponententest-Explorer &#45; Komponententest abgeschlossen](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Testen von UWP-Apps mit Visual Studio](../test/unit-test-your-code.md)
 - [Erstellen und Testen einer UWP-App](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

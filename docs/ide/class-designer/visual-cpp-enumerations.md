@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114200"
 ---
 # <a name="c-enumerations-in-class-designer"></a>C++-Enumerationen im Klassen-Designer
@@ -42,7 +42,7 @@ Eine C++-Enumerationsform in einem Klassendiagramm gleicht in Struktur und Funkt
 
 Weitere Informationen zur Verwendung des `enum`-Typs finden Sie unter [Enumerationen](/cpp/cpp/enumerations-cpp).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Arbeiten mit C++-Code](working-with-visual-cpp-code.md)
 - [Enumerationen](/cpp/cpp/enumerations-cpp)

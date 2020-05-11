@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft-Dokumentation
+title: IDebuggenericFieldInstance::TypeArgumentCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - TypeArgumentCount
 - IDebugGenericFieldInstance::TypeArgumentCount
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f1a92cc5e595bd2574174f0d0776c6605e42da
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0f0272e86f5c1bbbd840ee222b2048440338302d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337010"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728151"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
-Gibt die Anzahl der Parameterargumente für diese Instanz zurück.
+Gibt die Anzahl der Typparameterargumente für diese Instanz zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,13 +40,13 @@ int TypeArgumentCount(
 
 ## <a name="parameters"></a>Parameter
 `pcArgs`\
-[in, out] Die Anzahl von Typargumenten für Parameter für diese Instanz.
+[in, out] Anzahl der Typparameterargumente für diese Instanz.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Z. B. wenn Liste\<Int >, diese Methode gibt 1 zurück, und, falls Liste\<Int, float2 > Diese Methode gibt 2 zurück. Diese Methode gibt 0 zurück, wenn keine Argumente des Typs vorhanden sind.
+## <a name="remarks"></a>Bemerkungen
+ Wenn List\<int z. B.>, gibt\<diese Methode 1 zurück, und wenn List int,> diese Methode 2 zurück. Diese Methode gibt 0 zurück, wenn keine Typargumente vorhanden sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

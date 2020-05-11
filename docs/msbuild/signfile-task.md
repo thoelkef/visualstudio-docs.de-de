@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, SignFile task
 - SignFile task [MSBuild]
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496017f386e731e553bfce237bd1d2eabea46f49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee018b42fc23b0a520b510235117cb74729fd4b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976452"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094524"
 ---
 # <a name="signfile-task"></a>SignFile-Aufgabe
 
@@ -31,7 +31,7 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `SignFile` -Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `SignFile`-Aufgabe beschrieben.
 
  Beachten Sie, dass SHA-256-Zertifikate nur auf Computern zulässig sind, auf denen .NET 4.5 und höher installiert ist.
 
@@ -40,18 +40,18 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`CertificateThumbprint`|Erforderlicher `String` -Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|
-|`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|
-|`TimestampUrl`|Optionaler `String` -Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|
+|`CertificateThumbprint`|Erforderlicher `String`-Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|
+|`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|
+|`TimestampUrl`|Optionaler `String`-Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|
 |`TargetFrameworkVersion`|Die Version des .NET Framework, die für das Ziel verwendet wird.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).
 
 ## <a name="example"></a>Beispiel
 
- Im folgenden Beispiel wird die `SignFile`-Aufgabe zum Signieren der Dateien verwendet, die in der `FilesToSign`-Elementauflistung mit dem in der `Certificate`-Eigenschaft angegebenen Zertifikat angegeben werden.
+ Im folgenden Beispiel wird die `SignFile`-Aufgabe zum Signieren der Dateien verwendet, die in der `FilesToSign`-Elementauflistung mit dem in der `CertificateThumbprint`-Eigenschaft angegebenen Zertifikat angegeben werden.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -73,6 +73,7 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 > [!NOTE]
 > Der Zertifikatfingerabdruck ist der SHA1-Hash des Zertifikats. Weitere Informationen finden Sie unter [Abrufen des SHA-1-Hashs eines vertrauenswürdigen Stammzertifizierungsstellen-Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Stellen Sie sicher, dass Sie das zusätzliche (3F) unsichtbare Zeichen beim Kopieren und Einfügen des Fingerabdrucks aus den Zertifikatdetails nicht kopieren, da dies verhindern kann, dass `SignFile` das Zertifikat findet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
-- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)

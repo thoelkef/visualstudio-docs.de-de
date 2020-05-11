@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531677"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Invertieren von bedingten Ausdrücken und bedingten UND/ODER-Operatoren
@@ -33,8 +33,8 @@ Dieses Refactoring gilt für:
 ## <a name="invert-conditional-expressions-and-conditional-andor-operators-refactoring"></a>Umkehren von bedingten Ausdrücken und Refactoring von bedingten UND/ODER-Operatoren
 
 1. Platzieren Sie Ihren Cursor in einen bedingten Ausdruck oder einen bedingten UND/ODER-Operator.
-2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
-3. Wählen Sie **Invert conditional** (Bedingung invertieren) aus oder **ersetzen Sie '&&' mit '||'**.
+2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+3. Wählen Sie **Invert conditional** (Bedingung invertieren) aus oder **ersetzen Sie '&&' mit '||'** .
 
     ![Umkehren einer Bedingung](media/invert-conditional.png)
 

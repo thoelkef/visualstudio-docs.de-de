@@ -9,17 +9,17 @@ ms.topic: article
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027288"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Bereitstellen eines ASP.NET Core-Containers in Azure App Service mit Visual Studio
 
 Dieses Tutorial führt Sie durch die Verwendung von Visual Studio zum Veröffentlichen Ihrer ASP.NET Core-Containerwebanwendung in einer [Azure App Service-Instanz](/azure/app-service). Azure App Service ist ein geeigneter Dienst für Web-Apps mit einem Container, die in Azure gehostet werden.
 
-Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) erstellen, bevor Sie beginnen.
+Wenn Sie kein Azure-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs), bevor Sie beginnen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -29,7 +29,7 @@ Zum Abschließen dieses Tutorials benötigen Sie Folgendes:
 - Installieren der neuesten Version von [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) mit der Workload „ASP.NET und Webentwicklung“
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit der Workload *ASP.NET- und Webentwicklung*
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit der Workload *ASP.NET und Webentwicklung*
 ::: moniker-end
 - Installation von [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
@@ -40,9 +40,9 @@ Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET 
 ::: moniker range="vs-2017"
 1. Wählen Sie im Menü von Visual Studio **Datei > Neu > Projekt** aus.
 2. Wählen Sie im Abschnitt **Vorlagen** des Dialogfelds **Neues Projekt** die Option **Visual C# > Web** aus.
-3. Wählen Sie **ASP.NET Core-Webanwendung** aus.
+3. Klicken Sie auf **Neue ASP.NET Core-Webanwendung**.
 4. Weisen Sie Ihrer neuen Anwendung einen Namen zu (oder übernehmen Sie den Standardnamen), und wählen Sie **OK**aus.
-5. Wählen Sie **Webanwendung** aus.
+5. Klicken Sie auf **Webanwendung**.
 6. Aktivieren Sie das Kontrollkästchen **Docker-Unterstützung aktivieren**.
 7. Wählen Sie den Containertyp **Linux** aus, und klicken Sie auf **OK**. Windows-Container werden nicht für die Bereitstellung in Azure App Service unterstützt.
 ::: moniker-end
@@ -102,6 +102,6 @@ Klicken Sie im Azure-Portal auf **Ressourcengruppen**, und wählen Sie dann die 
 
 Weitere Informationen finden Sie im Artikel [Einführung in Azure App Service unter Linux](/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Bereitstellen in Azure Container Registry](hosting-web-apps-in-docker.md)

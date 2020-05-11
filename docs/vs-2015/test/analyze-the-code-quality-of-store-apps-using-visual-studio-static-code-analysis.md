@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c47a1583a1d4695905c0fb7067faaa6226fb2d7a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3b2e1fd025d559889f0ea41d39879e251e80fa64
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851866"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586701"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Codequalität von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,12 +28,12 @@ Das Codeanalysetool in Visual Studio überprüft den Code auf eine Reihe von all
 
 |||
 |-|-|
-|[Analysieren der Qualität von Visual Basic- und C#-Code](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden Sie die Codeanalyse in Visual Basic- und C#-Projekten.|
-|[Analysieren der Qualität von C++-Code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden Sie die Codeanalyse in C++-Projekten.|
+|[Analysieren der Qualität von Visual Basic- und C#-Code](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden der Codeanalyse in Visual Basic- und C#-Projekten.|
+|[Analysieren der Qualität von C++-Code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden der Codeanalyse in C++-Projekten.|
 
 ## <a name="more-code-analysis-info"></a>Weitere Informationen zur Codeanalyse
 
 |||
 |-|-|
-|[Codeanalyse in der MSDN Library](https://msdn.microsoft.com/library/dd264897.aspx)|Weitere Informationen zur Verwendung der Codeanalyse in Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional.|
-|[Blog des MSDN-Codeanalyseteams](https://blogs.msdn.com/codeanalysis/)|Weitere Informationen, darunter Fachbeiträge und Beispiele, erhalten Sie im Blog des Codeanalyseteams.|
+|[Codeanalyse in der MSDN Library](https://msdn.microsoft.com/library/dd264897.aspx)|Weitere Informationen zur Verwendung von Codeanalyse in Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional.|
+|[Blog des MSDN-Codeanalyseteams](https://blogs.msdn.com/b/codeanalysis/)|Weitere Informationen, einschließlich Fachbeiträgen und Beispielen, im Blog des Codeanalyseteams.|

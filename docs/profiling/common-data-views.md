@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777828"
 ---
 # <a name="common-data-views"></a>Allgemeine Datenansichten
@@ -64,7 +64,7 @@ Dieser Abschnitt enthält Referenzinformationen über die Ansichten und Berichte
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Samplingmethode generiert wurden.
 
-- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
+- [Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Instrumentierungsmethode generiert wurden.
 

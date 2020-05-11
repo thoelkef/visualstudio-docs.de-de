@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft-Dokumentation
+title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer method
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a10630ee8c74af333958e7115c660872ac26f78f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2aa1e20dd8639ce089ebe851116a15bf61e35ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350223"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718120"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-Diese Methode ruft das Objekt, das diese Schnellansicht darstellt.
+Diese Methode ruft das Objekt ab, das diese Visualisierung darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int GetObjectForVisualizer(
 
 ## <a name="parameters"></a>Parameter
 `ppObject`\
-[out] Das Objekt dargestellt wird, indem diese Schnellansicht
+[out] Das Objekt, das von dieser Visualisierung dargestellt wird
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- `GetObjectForVisualizer` ist zulässig, um eine zwischengespeicherte Version des Objekts zurückzugeben. Wenn der Aufrufer sicherstellen, dass das Objekt auf dem neuesten Stand ist, und er ruft [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
+## <a name="remarks"></a>Bemerkungen
+ `GetObjectForVisualizer`ist berechtigt, eine zwischengespeicherte Version des Objekts zurückzugeben. Wenn der Aufrufer sicherstellen möchte, dass das Objekt auf dem neuesten Stand ist, ruft er [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)auf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

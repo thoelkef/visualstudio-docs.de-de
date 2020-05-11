@@ -1,19 +1,19 @@
 ---
 title: Schreiben von Komponententests für C/C++
 description: Schreiben von C++-Komponententests in Visual Studio mit verschiedenen Testframeworks wie CTest, Boost.Test und Google Test
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755586"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649615"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -41,7 +41,7 @@ C++-Komponententestprojekte unterstützen [CodeLens](../ide/find-code-changes-an
 
 - **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Sie ist in den **Test-Explorer** integriert, verfügt aber zurzeit nicht über eine Projektvorlage. Diese muss manuell konfiguriert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- Die Komponente **C++ CMake tools**, die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
+- Die Komponente **C++ CMake tools**, die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 und frühere Versionen**
 
@@ -79,7 +79,7 @@ Fügen Sie im Testprojekt einen Verweis auf das Projekt hinzu, um den Zugriff au
 
 ### <a name="link-to-object-or-library-files"></a>Verknüpfen mit Objekt- oder Bibliotheksdateien
 
-Wenn der Testcode die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die OBJ- oder LIB-Ausgabedateien zu den Abhängigkeiten des Testprojekts hinzufügen. Weitere Informationen finden Sie unter [To link the tests to the object or library files](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files) (Verknüpfen des Tests mit Objekt- oder Bibliotheksdateien).
+Wenn der Testcode die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die OBJ- oder LIB-Ausgabedateien zu den Abhängigkeiten des Testprojekts hinzufügen. Weitere Informationen finden Sie unter [To link the tests to the object or library files](how-to-use-microsoft-test-framework-for-cpp.md#object_files) (Verknüpfen des Tests mit Objekt- oder Bibliotheksdateien).
 
 ### <a name="add-include-directives-for-header-files"></a>Hinzufügen von #include-Direktiven für Headerdateien
 

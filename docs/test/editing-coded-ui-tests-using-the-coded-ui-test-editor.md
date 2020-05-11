@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589655"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445037"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 
@@ -74,7 +74,7 @@ Mit dem Editor für Tests der programmierten UI, können Sie leicht alle UI-Akti
 
 Erweitern Sie zum Ändern der Eigenschaften einer UI-Aktion die Testmethode im Bereich **UI-Aktion** , die die UI-Aktion mit den zu bearbeitenden Eigenschaften enthält. Wählen Sie die UI-Aktion aus, und ändern Sie dann die Eigenschaften im Fenster „Eigenschaften“.
 
-Wenn ein Server beispielsweise nicht verfügbar ist und in Ihrem Webbrowser die UI-Aktion **Zur Webseite „<http://Contoso1/default.aspx>“ wechseln** vorhanden ist, können Sie die URL in `'http://Contoso2/default.aspx'` ändern.
+Wenn ein Server beispielsweise nicht verfügbar ist und Sie über eine UI-Aktion **Zur Webseite http:\///Contoso1/default.aspx wechseln** verfügen, die Ihrem Webbrowser zugeordnet ist, können Sie die URL in `http://Contoso2/default.aspx` ändern.
 
 ![Steuerelementeigenschaften](../test/media/codeduitestcontrolprop.png)
 

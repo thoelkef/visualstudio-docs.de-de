@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567215"
 ---
 # <a name="customize-startup"></a>Anpassen des Programmstarts
@@ -32,7 +32,7 @@ Sie können eine benutzerdefinierte Startseite anzeigen. Dies ist eine Windows P
 
 ## <a name="to-change-the-startup-item"></a>So ändern Sie das Startelement
 
-1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 2. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 
@@ -67,7 +67,7 @@ Sie können [eine eigene benutzerdefinierte Startseite](../extensibility/creatin
 > [!TIP]
 > Wenn ein Fehler in einer benutzerdefinierten Startseite einen Absturz von Visual Studio verursacht, können Sie Visual Studio im abgesicherten Modus öffnen und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md)
 

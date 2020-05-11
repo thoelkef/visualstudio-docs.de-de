@@ -33,17 +33,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588797"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 Mit diesem Dialogfeld können Sie das Standardverhalten der Scrollleiste des Code-Editors ändern. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Scrollleisten** aus.
 
 > [!CAUTION]
-> Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Beim Zurücksetzen einer Option in diesem Dialogfeld werden die Optionen für Scrollleisten in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt. Um die Optionen in „Text-Editor“ für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.
+> Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Beim Zurücksetzen einer Option in diesem Dialogfeld werden die Optionen für Scrollleisten in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt. Um die Optionen des Text-Editors für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.
 
 ## <a name="show-horizontal-scroll-bar"></a>Horizontale Scrollleiste anzeigen
 
@@ -86,6 +86,6 @@ Wenn Sie im *Zuordnungsmodus* auf eine Position in der Scrollleiste klicken, spr
 > [!TIP]
 > Sie können die Miniaturcodeansicht im Zuordnungsmodus deaktivieren, indem Sie **Quellübersicht** auf **Aus** festlegen. Wenn **Vorschau-QuickInfo anzeigen** ausgewählt ist, sehen Sie immer noch eine Vorschau des Codes an dieser Stelle, wenn Sie den Mauszeiger auf der Scrollleiste positionieren, und der Mauszeiger springt immer noch zu dieser Stelle in der Datei, wenn Sie klicken.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Anpassen der Bildlaufleiste](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Vorgehensweise: Anpassen der Scrollleiste](../how-to-track-your-code-by-customizing-the-scrollbar.md)

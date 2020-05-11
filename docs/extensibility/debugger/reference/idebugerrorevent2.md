@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorEvent2 | Microsoft-Dokumentation
+title: IDebugErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2 interface
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 945b04fc2d5a370ef4b2d17abd90e6bdaa818553
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00fd8b4b42f11d18958f8a969bc4ccd58754ab93
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327660"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730001"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
-Diese Schnittstelle gibt eine Fehlermeldung angezeigt, die dem Benutzer gemeldet werden.
+Diese Schnittstelle gibt eine Fehlermeldung an, die dem Benutzer gemeldet werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,28 +29,28 @@ IDebugErrorEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die Debug-Engine (DE) implementiert diese Schnittstelle zum Melden von Fehlern als lesbare Nachrichten. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.
+ Das Debugmodul (DE) implementiert diese Schnittstelle, um Fehler als menschenlesbare Meldungen zu melden. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss für dasselbe Objekt wie diese Schnittstelle implementiert werden. Das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die `IDebugEvent2` Schnittstelle zuzugreifen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die DE erstellt und sendet dieses Ereignisobjekt, um Fehler zu melden. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, um einen Fehler zu melden. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Diese Schnittstelle implementiert die folgende Methode:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |`GetErrorMessage`|Gibt einen Fehler als lesbare Zeichenfolge zurück.|
 
-## <a name="remarks"></a>Hinweise
- Wenn die Debug-Engine ein Fehler auftritt, können sie diese Schnittstelle verwenden, um die Nachricht mithilfe von Visual Studio für den Benutzer zu melden.
+## <a name="remarks"></a>Bemerkungen
+ Wenn beim Debugmodul ein Fehler auftritt, kann es diese Schnittstelle verwenden, um die Nachricht über Visual Studio an den Benutzer zu melden.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

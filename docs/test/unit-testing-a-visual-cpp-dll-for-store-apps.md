@@ -2,17 +2,17 @@
 title: 'Vorgehensweise: Testen einer C++-DLL für UWP-Apps'
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
-author: mikeblome
-ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+author: corob-msft
+ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748080"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77274455"
 ---
 # <a name="how-to-test-a-c-dll"></a>Testen einer C++-DLL
 

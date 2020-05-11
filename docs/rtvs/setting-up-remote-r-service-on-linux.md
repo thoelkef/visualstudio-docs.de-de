@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809556"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service für Linux
@@ -67,7 +67,7 @@ Auf dem Remotecomputer muss in jedem Fall einer der folgenden R-Interpreter inst
     sudo systemctl start rtvsd
     ```
 
-1. Konfigurieren Sie das SSL-Zertifikat (das für eine Produktionsumgebung erforderlich ist). Standardmäßig verwendet rtvs-daemon die vom `ssl-cert`-Paket generierten Dateien `ssl-cert-snakeoil.pem` und `ssl-cert-snakeoil.pem`. Während der Installation werden diese zu `ssl-cert-snakeoil.pfx` kombiniert. Verwenden Sie für Produktionszwecke das von Ihrem Administrator bereitgestellte SSL-Zertifikat. Das SSL-Zertifikat kann konfiguriert werden, indem eine *PFX*-Datei und ein optionales Importkennwort in */etc/rtvs/rtvsd.config.json* angegeben werden.
+1. Konfigurieren Sie das SSL-Zertifikat (das für eine Produktionsumgebung erforderlich ist). Standardmäßig verwendet rtvs-daemon die vom `ssl-cert-snakeoil.pem`-Paket generierten Dateien `ssl-cert-snakeoil.pem` und `ssl-cert`. Während der Installation werden diese zu `ssl-cert-snakeoil.pfx` kombiniert. Verwenden Sie für Produktionszwecke das von Ihrem Administrator bereitgestellte SSL-Zertifikat. Das SSL-Zertifikat kann konfiguriert werden, indem eine *PFX*-Datei und ein optionales Importkennwort in */etc/rtvs/rtvsd.config.json* angegeben werden.
 
 1. (Optional) Überprüfen Sie, ob der Dienst ausgeführt wird:
 
@@ -99,7 +99,7 @@ Auf dem Remotecomputer muss in jedem Fall einer der folgenden R-Interpreter inst
 
 #### <a name="configure-the-vm"></a>Konfigurieren der VM
 
-1. Fügen Sie im Abschnitt **Netzwerk** der VM als erlaubten eingehenden Port 5444 hinzu. Wenn Sie einen anderen Port verwenden möchten, ändern Sie die Einstellung in der Konfigurationsdatei des RTVS-Daemons (*/etc/rtvs/rtvsd.config.json*).
+1. Fügen Sie im Abschnitt **Netzwerk** der VM als erlaubten eingehenden Port 5444 hinzu. Wenn Sie einen anderen Port verwenden möchten, ändern Sie die Einstellung in der Konfigurationsdatei des RTVS-Daemons ( */etc/rtvs/rtvsd.config.json*).
 1. (Optional) Legen Sie einen DNS-Namen fest. Sie können auch die IP-Adresse verwenden.
 1. Stellen Sie eine Verbindung mit der VM über einen SSH-Client wie z.B. PuTTY for Windows her.
 1. Befolgen Sie die vorherigen Anweisungen für einen [physischen Ubuntu-Computer](#physical-ubuntu-computer).

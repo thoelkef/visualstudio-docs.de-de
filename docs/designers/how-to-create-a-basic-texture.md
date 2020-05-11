@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen einer Basistextur'
+title: 'Gewusst wie: Erstellen einer Basistextur'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589453"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer Basistextur
+# <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer einfachen Textur
 
 Dieser Artikel zeigt, wie Sie mit der Bildbearbeitung eine grundlegende Textur erstellen. Dazu gehören die folgenden Aktivitäten:
 
@@ -87,6 +87,6 @@ Die vollständige Textur der Zielscheibe Hier ist das endgültige Bild, das mit 
 
 Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Image Editor](../designers/image-editor.md)
+- [Bildbearbeitung](../designers/image-editor.md)

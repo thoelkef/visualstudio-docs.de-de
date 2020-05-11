@@ -90,7 +90,7 @@
           href: getting-started-with-cpp-in-visual-studio.md
         - name: Erste Schritte beim Debuggen in Visual Studio 2015
           href: getting-started-with-debugging-in-visual-studio-2015.md
-        - name: Projektmappen und Projekte
+        - name: Lösungen und Projekte
           href: solutions-and-projects-in-visual-studio.md
         - name: Creating Solutions and Projects
           href: creating-solutions-and-projects.md
@@ -178,7 +178,7 @@
               href: using-regular-expressions-in-visual-studio.md
             - name: Suchen (Feld)
               href: find-command-box.md
-            - name: Suchen in Dateien
+            - name: In Dateien suchen
               href: find-in-files.md
             - name: In Dateien ersetzen
               href: replace-in-files.md
@@ -186,7 +186,7 @@
           href: encodings-and-line-breaks.md
         - name: Gliedern
           href: outlining.md
-        - name: Umgestaltung
+        - name: Refactoring
           href: refactoring-in-visual-studio.md
         - name: Produktivitätstipps
           items:
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<Wert>
+                    - name: \<Wert >
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -384,9 +384,9 @@
           href: setting-bookmarks-in-code.md
         - name: Verwenden der Aufgabenliste
           href: using-the-task-list.md
-        - name: Ermitteln von Änderungen am Code und weiteren Verlaufsinformationen
+        - name: Änderungen am Code und andere Verläufe ermitteln
           items:
-            - name: Ermitteln von Änderungen am Code und weiteren Verlaufsinformationen
+            - name: Änderungen am Code und andere Verläufe ermitteln
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex-Befehl
               href: codeindex-command.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Visual Studio-IDE-64-Bit-Unterstützung
       href: visual-studio-ide-64-bit-support.md
-    - name: Visual Studio-Beispiele
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Benutzerkonten und Updates
       items:
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: Sicherheitsbibliographie
           href: security-bibliography.md
-    - name: Visual Studio-Beispiele
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Microsoft Help Viewer
       items:
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: Referenz
+    - name: Verweis
       items:
         - name: Allgemeine Elemente der Benutzeroberfläche (Visual Studio)
           items:
@@ -624,13 +624,13 @@
               href: reference/general-user-interface-elements-visual-studio.md
             - name: Aufrufhierarchie
               href: reference/call-hierarchy.md
-            - name: 'Toolboxelemente auswählen, WPF-Komponenten'
+            - name: 'Werkzeugkastenelemente auswählen, WPF-Komponenten'
               href: reference/choose-toolbox-items-wpf-components.md
             - name: Codeausschnittauswahl
               href: reference/code-snippet-picker.md
             - name: Befehlsfenster
               href: reference/command-window.md
-            - name: Konvertieren (Dialogfeld)
+            - name: Dialogfeld "Konvertieren"
               href: reference/convert-dialog-box.md
             - name: Fehlerliste (Fenster)
               href: reference/error-list-window.md
@@ -640,7 +640,7 @@
               href: reference/go-to-line.md
             - name: Direktfenster
               href: reference/immediate-window.md
-            - name: Verschiedene Dateien
+            - name: sonstige Dateien
               href: reference/miscellaneous-files.md
             - name: Dialogfeld "Optionen"
               href: reference/options-dialog-box-visual-studio.md
@@ -740,7 +740,7 @@
                   items:
                     - name: 'Application Page, Project Designer (Visual Basic)'
                       href: reference/application-page-project-designer-visual-basic.md
-                    - name: Assemblyinformationen (Dialogfeld)
+                    - name: Dialogfeld "Assemblyinformationen"
                       href: reference/assembly-information-dialog-box.md
                 - name: 'Seite "Anwendung", Projekt-Designer (C#)'
                   href: reference/application-page-project-designer-csharp.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Seite "Debuggen", Projekt-Designer'
                   href: reference/debug-page-project-designer.md
-                - name: 'Seite „Meine Erweiterungen“, Projekt-Designer'
+                - name: My-Erweiterungen-Seite im Projekt-Designer
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Seite "Veröffentlichen", Projekt-Designer'
                   items:
@@ -788,7 +788,7 @@
                   items:
                     - name: 'Services-Seite, Projekt-Designer'
                       href: reference/services-page-project-designer.md
-                    - name: Dialogfeld "Erweiterte Einstellungen für Dienste"
+                    - name: Dialogfeld Erweiterte Einstellungen für Dienste
                       href: reference/advanced-settings-for-services-dialog-box.md
                 - name: 'Seite "Signierung", Projekt-Designer'
                   href: reference/signing-page-project-designer.md
@@ -810,9 +810,9 @@
               href: reference/property-pages-javascript.md
             - name: Eigenschaftenfenster
               href: reference/properties-window.md
-            - name: Werkzeugkasten
+            - name: Toolbox
               items:
-                - name: Werkzeugkasten
+                - name: Toolbox
                   href: reference/toolbox.md
                 - name: 'Toolbox, Registerkarte „Komponenten“'
                   href: reference/toolbox-components-tab.md
@@ -894,7 +894,7 @@
               href: reference/find-command.md
             - name: Befehl "In Dateien suchen"
               href: reference/find-in-files-command.md
-            - name: Befehl "Gehe zu"
+            - name: Gehe zu (Befehl)
               href: reference/go-to-command.md
             - name: Befehl Einstellungen importieren und exportieren
               href: reference/import-and-export-settings-command.md
@@ -958,9 +958,9 @@
           href: ../msbuild/msbuild.md
         - name: Ressourcen für die Problembehandlung bei IDE-Fehlern
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-        - name: Barrierefreiheit für Personen mit Behinderungen
+        - name: Barrierefreiheit für Benutzer mit Behinderungen
           items:
-            - name: Barrierefreiheit für Personen mit Behinderungen
+            - name: Barrierefreiheit für Benutzer mit Behinderungen
               href: reference/accessibility-for-people-with-disabilities.md
             - name: Barrierefreiheitsfunktionen in Visual Studio
               items:

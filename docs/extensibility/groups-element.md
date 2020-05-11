@@ -1,24 +1,24 @@
 ---
-title: Element für Gruppen | Microsoft-Dokumentation
+title: Gruppen Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f56ab0ea97026d6162a40e5be481e78904d75315
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342331"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711174"
 ---
-# <a name="groups-element"></a>Groups-element
+# <a name="groups-element"></a>Groups-Element
 Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
 
 ## <a name="syntax"></a>Syntax
@@ -35,22 +35,22 @@ Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Group-element](../extensibility/group-element.md)|Stellt eine einzelnen Befehl-Gruppe dar.|
-|[Groups-element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|
+|[Gruppenelement](../extensibility/group-element.md)|Stellt eine einzelne Befehlsgruppe dar.|
+|[Gruppenelement](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Commands-element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|
+|[Befehlselement](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar.|
 
 ## <a name="example"></a>Beispiel
 
@@ -62,6 +62,6 @@ Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
 </Groups>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

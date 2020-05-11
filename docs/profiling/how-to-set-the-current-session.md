@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778751"
 ---
 # <a name="how-to-set-the-current-session"></a>Vorgehensweise: Festlegen der aktuellen Sitzung
@@ -35,7 +35,7 @@ Wenn Sie nach dem Festlegen einer Sitzung als aktuelle Sitzung auf **Start** auf
 
      Der Sitzungsname wird in Fettdruck angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
 [Das Fenster „Leistungs-Explorer“](../profiling/performance-explorer-window.md)

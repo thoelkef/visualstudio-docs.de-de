@@ -1,22 +1,28 @@
 ---
 title: Azure DevOps-Vorteile für Visual Studio-Abonnenten | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
-ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983688"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444822"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in Azure DevOps, die als Vorteil in Ihrem Abonnement enthalten sind. Sie können diese Features in jeder Azure DevOps-Organisation verwenden, bei dem Sie Mitglied sind. Dabei spielt es keine Rolle, ob Sie die Organisation erstellt haben oder von jemandem hinzugefügt wurden.
 
 ## <a name="sign-in"></a>Anmelden
+
+   > [!div class="mx-imgBorder"]
+   > ![Azure DevOps-Kachel](_img/vs-azure-devops/vs-azure-devops-tile.png)
+
+   
 Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anmelden, die Sie zur Aktivierung Ihres Visual Studio-Abonnements verwendet haben, oder mit Ihrer [alternativen Identität](vs-alternate-identity.md).  So können Sie auch ein Geschäfts-, Schul- oder Unikonto (das Sie zum Anmelden in Visual Studio, Office 365 oder Ihrem Geschäfts-, Schul- oder Uninetzwerk verwenden) hinzufügen und auf Azure DevOps über Ihr persönliches sowie über Ihr Geschäfts-, Schul- oder Unikonto zugreifen.
 
 [Für eine kostenloses Azure DevOps-Organisation registrieren](https://visualstudio.microsoft.com/team-services/)
@@ -32,7 +38,7 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
 ||
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
 
 
 > [!NOTE]
@@ -46,9 +52,15 @@ Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige 
 - Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 - [Dokumentation zu Azure DevOps](/azure/devops/).
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu Azure DevOps-Features:
-- [Azure Boards und Repositorys (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure Boards und Repositorys (Basistarif)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 

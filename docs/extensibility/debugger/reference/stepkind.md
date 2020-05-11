@@ -1,5 +1,5 @@
 ---
-title: STEPKIND | Microsoft-Dokumentation
+title: STEPKIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ed2877c880d3cd2674f62b4f900a6e923bb29d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329159"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713557"
 ---
 # <a name="stepkind"></a>STEPKIND
-Gibt den Schritt für die schrittweise Ausführung.
+Gibt die Schrittart für das Schrittschritten an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,27 +48,27 @@ public enum enum_STEPKIND { 
 
 ## <a name="fields"></a>Felder
  `STEP_INTO`\
- Eine Funktion in Einzelschritten.
+ Tritt in eine Funktion ein.
 
  `STEP_OVER`\
- Schritte für eine Funktion.
+ Schritte über eine Funktion.
 
  `STEP_OUT`\
- Die Schritte aus einer Funktion.
+ Tritt aus einer Funktion heraus.
 
  `STEP_BACKWARDS`\
- Schritte nach hinten an eine Funktion.
+ Schritte zurück in eine Funktion.
 
-## <a name="remarks"></a>Hinweise
- Übergeben als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Übergeben als Argument [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) an die Step-Methode.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)

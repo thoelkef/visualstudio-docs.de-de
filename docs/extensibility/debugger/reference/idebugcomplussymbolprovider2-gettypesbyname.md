@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft-Dokumentation
+title: IDebugComPlusSymbolProvider2::GettypesByName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e084b7f6861a8a01a2998c5a5e9ef1feba1daf2d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334726"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733421"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-Ruft einen Typ mit dem angegebenen Namen ab.
+Ruft einen Typ mit dem Namen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,22 +44,22 @@ int GetTypesByName(
 
 ## <a name="parameters"></a>Parameter
 `pszClassName`\
-[in] Der Name des Typs.
+[in] Name des Typs.
 
 `nameMatch`\
-[in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet. Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration.
+[in] Wählt den Typ der Übereinstimmung aus, z. B. groß, wenn die Groß-/Kleinschreibung beachtet wird. Ein Wert [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) aus der NAME_MATCH-Enumeration.
 
 `ppEnum`\
-[out] Ein Enumerator, der den Typ oder Typen mit dem angegebenen Namen enthält.
+[out] Ein Enumerator, der den oder die Typen mit dem angegebenen Namen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Für generische Typen, der Name, sehen Sie sich für "Liste\<Int >" oder "Liste\<Int, Int >" wäre "List". Wenn Typen mit demselben Namen in mehrere Module enthalten die `ppEnum` Parameter wird allen Kopien enthalten. Sie müssen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) und Unterscheidung basierend auf den `guidModule` Parameter.
+## <a name="remarks"></a>Bemerkungen
+Bei generischen Typen wäre der Name, der nach "List\<int>" oder "List\<int,int>" sucht, "Liste". Wenn Typen mit demselben Namen in mehreren `ppEnum` Modulen angezeigt werden, enthält der Parameter alle Kopien. Sie müssen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) verwenden und `guidModule` basierend auf dem Parameter unterscheiden.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider2-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(
@@ -124,5 +124,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

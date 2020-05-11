@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2 | Microsoft-Dokumentation
+title: IDebugActivateDocumentEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugActivateDocumentEvent2 interface
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4f473c7fd13e51de608684fc44466b7bdeac2b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317970"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736618"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
-Die Debug-Engine (DE) verwendet diese Schnittstelle, um eine zu ladende Dokument anzufordern.
+Das Debugmodul (DE) verwendet diese Schnittstelle, um ein dokument zu laden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,30 +29,30 @@ IDebugActivateDocumentEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle an, bei Bedarf eine Quelldatei geöffnet werden. Diese Schnittstelle wird nur von Debug-Engines implementiert, die mit Geschäfts-, Schul- oder sind ein Teil der Skript-Interpreter. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden (wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).
+ Die DE implementiert diese Schnittstelle, wenn eine Quelldatei geöffnet werden muss. Diese Schnittstelle wird nur von Debugmodulen implementiert, die mit Skriptinterpretern arbeiten oder Teil von Skriptinterpretern sind. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden `IDebugEvent2` (das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die Schnittstelle zuzugreifen).
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Die DE erstellt und sendet dieses Ereignisobjekt aus, wenn es eine Quelldatei geöffnet haben muss. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM angegeben wird, wenn diese an die zu debuggende Programm wird angefügt.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, wenn eine Quelldatei geöffnet werden muss. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDebugActivateDocumentEvent2`.
+ Die folgende Tabelle zeigt `IDebugActivateDocumentEvent2`die Methoden von .
 
-|Methoden|Beschreibung|
+|Methoden|BESCHREIBUNG|
 |-------------|-----------------|
-|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Ruft das Dokument zu aktivieren.|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Ruft ab, der Dokumentenkontext, der die Position innerhalb des Dokuments beschreibt.|
+|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Ruft das zu aktivierende Dokument ab.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Ruft den Dokumentkontext ab, der die Position im Dokument beschreibt.|
 
-## <a name="remarks"></a>Hinweise
- Ein typisches Szenario, in dem diese Schnittstelle verwendet wird, ist, tritt ein Analysefehler in Skriptcode in eine HTML-Seite, dem Skript DE diese Schnittstelle, das SDM wird gesendet, damit das Dokument mit der Analysefehler angezeigt werden kann.
+## <a name="remarks"></a>Bemerkungen
+ Ein typisches Szenario, in dem diese Schnittstelle verwendet wird, ist, wenn ein Analysefehler im Skriptcode auf einer HTML-Seite auftritt, sendet das Skript DE diese Schnittstelle an das SDM, sodass das Dokument mit dem Analysefehler angezeigt werden kann.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

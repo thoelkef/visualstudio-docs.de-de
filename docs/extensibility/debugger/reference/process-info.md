@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Microsoft-Dokumentation
+title: PROCESS_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f8333dd697f265480c46ed7edbfbea1a48970ae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309339"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713885"
 ---
-# <a name="processinfo"></a>PROCESS_INFO
-Enthält Informationen zu einem Prozess an.
+# <a name="process_info"></a>PROCESS_INFO
+Enthält Informationen zu einem Prozess.
 
 ## <a name="syntax"></a>Syntax
 
@@ -57,44 +57,44 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>Member
  `Fields`\
- Eine Kombination von Flags aus der [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) -Enumeration, die angeben, welche Felder ausgefüllt sind.
+ Eine Kombination von [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) Flags aus der PROCESS_INFO_FIELDS-Enumeration, die angeben, welche Felder ausgefüllt werden.
 
  `bstrFileName`\
- Der vollständige Name des Prozesses. Entspricht dem Aufrufen der [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) Methode mit dem Parameter `GN_FILENAME`.
+ Der vollständige Pfadname des Prozesses. Entspricht dem Aufrufen der [GetName-Methode](../../../extensibility/debugger/reference/idebugprocess2-getname.md) mit dem Parameter `GN_FILENAME`.
 
  `bstrBaseName`\
- Der Dateiname und Erweiterung des Prozesses. Entspricht dem Aufrufen der `IDebugProcess2::Getname` Methode mit dem Parameter `GN_BASENAME`.
+ Der Dateiname und die Erweiterung des Prozesses. Entspricht dem `IDebugProcess2::Getname` Aufruf der `GN_BASENAME`Methode mit dem Parameter .
 
  `bstrTitle`\
- Der Titel des Prozesses aus, falls vorhanden. Entspricht dem Aufrufen der `IDebugProcess2::Getname` Methode mit dem Parameter `GN_TITLE`.
+ Der Titel des Prozesses, sofern vorhanden. Entspricht dem `IDebugProcess2::Getname` Aufruf der `GN_TITLE`Methode mit dem Parameter .
 
  `ProcessId`\
- Die [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Prozess bezeichnet. Entspricht dem Aufrufen der [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) Methode.
+ Die [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Prozess identifiziert. Entspricht dem Aufrufen der [GetPhysicalProcessId-Methode.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
  `dwSessionId`\
- Der Bezeichner der Debugsitzung, die diesen Prozess ausgeführt wird.
+ Der Bezeichner der Debugsitzung, in der dieser Prozess ausgeführt wird.
 
  `bstrAttachedSessionName`\
- Der Sitzungsname des angefügten. Entspricht dem Aufrufen der [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) Methode.
+ Der angehängte Sitzungsname. Entspricht dem Aufrufen der [GetAttachedSessionName-Methode.](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
 
  `CreationTime`\
- Der Zeitpunkt, an der Prozess erstellt wurde.
+ Der Zeitpunkt, zu dem der Prozess erstellt wurde.
 
  `Flags`\
- Eine Kombination von Flags aus der [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) -Enumeration, die Eigenschaften des Prozesses angeben.
+ Eine Kombination von [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) Flags aus der PROCESS_INFO_FLAGS-Enumeration, die Eigenschaften des Prozesses angeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) Methode, in denen es ausgefüllt wird.
+## <a name="remarks"></a>Bemerkungen
+ Diese Struktur wird an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) übergeben, bei der sie ausgefüllt wird.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)

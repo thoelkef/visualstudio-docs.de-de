@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | Microsoft-Dokumentation
+title: PROVIDER_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8408481efbcaa67ce60d2dbfc9166b5dd0fd5223
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350028"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713817"
 ---
-# <a name="providerflags"></a>PROVIDER_FLAGS
-Gibt die gewünschte Eigenschaften von einem Programm-Anbieter abgerufen werden sollen.
+# <a name="provider_flags"></a>PROVIDER_FLAGS
+Gibt die gewünschten Eigenschaften an, die von einem Programmanbieter abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,27 +54,27 @@ public enum enum_PROVIDER_FLAGS {
 
 ## <a name="fields"></a>Felder
  `PFLAG_NONE`\
- Keine Flags angegeben.
+ Es wurden keine Flags angegeben.
 
  `PFLAG_REMOTE_PORT`\
- Eine Liste der Programme auf einem anderen Computer als "Aufrufer" [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Der Anrufer möchte eine Liste von [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Programmen auf einem anderen Computer als .
 
  `PFLAG_DEBUGGEE`\
- Der Prozess wird von dieser Instanz der gerade gedebuggten [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Der Prozess wird derzeit von dieser [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Instanz von gedebuggen.
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] das derzeit debuggte Programm angefügt ist, jedoch wurde nicht gestartet.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]ist an das zu debuggende Programm angefügt, hat es jedoch nicht gestartet.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] wird für Ereignisse überwachen.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]auf Ereignisse achtet.
 
  `PFLAG_GET_PROGRAM_NODES`\
- Aufrufer möchte, dass die `ProgramNodes` Feld der [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur.
+ Der Anrufer `ProgramNodes` möchte das Feld der [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur.
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- Aufrufer möchte, dass die `fIsTheDebuggerPresent` Feld der `PROVIDER_PROCESS_DATA` Struktur.
+ Der Anrufer `fIsTheDebuggerPresent` möchte `PROVIDER_PROCESS_DATA` das Feld der Struktur.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Diese Flags werden an die folgenden Methoden übergeben:
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
@@ -83,16 +83,16 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Diese Werte können kombiniert werden, mit einer bitweisen `OR`.
+  Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

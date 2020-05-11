@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75886761"
 ---
 # <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung
@@ -22,7 +22,7 @@ Mithilfe des .NET-Tools für die Objektzuordnung können Sie sehen, wie viel Arb
 
 Nachdem Sie das Tool ausgeführt haben, werden Ihnen die Funktionsausführungspfade angezeigt, bei denen Objekte zugewiesen werden. So können Sie die Wurzel der Aufrufstruktur identifizieren, bei der der Speicherbedarf am größten ist.
 
-## <a name="setup"></a>Setup
+## <a name="setup"></a>Einrichten
 
 1. Öffnen Sie den Leistungs-Profiler (**ALT + F2**) in Visual Studio.
 2.  Aktivieren Sie das Kontrollkästchen **Nachverfolgung der .NET-Objektzuordnung**.
@@ -45,13 +45,13 @@ Nachdem Sie das Tool ausgeführt haben, werden Ihnen die Funktionsausführungspf
 
 ![Speicherbelegung](../profiling/media/allocation.png "Zuordnung")
 
-Herzlichen Glückwunsch! Sie können jetzt die Speicherbelegung der Objekte analysieren.
+Glückwunsch! Sie können jetzt die Speicherbelegung der Objekte analysieren.
 
 ## <a name="understand-your-data"></a>Erläuterungen zu den Daten
 
-### <a name="collection"></a>Auflistung
+### <a name="collection"></a>Collection
 
-![Auflistung](../profiling/media/collection.png "Auflistung")
+![Sammlung](../profiling/media/collection.png "Collection")
 
 In der Sammlungsansicht können Sie sehen, wie viele Objekte während der Garbage Collection gesammelt und wie viele davon beibehalten wurden. Hier finden Sie auch zwei Kreisdiagramme, mit denen diese Informationen für die einzelnen Typen grafisch dargestellt werden.
 

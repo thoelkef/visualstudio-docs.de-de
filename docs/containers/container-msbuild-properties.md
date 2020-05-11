@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
+ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950688"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189490"
 ---
 # <a name="container-tools-build-properties"></a>Buildeigenschaften für Containertools
 
@@ -29,7 +29,7 @@ Sie können die Eigenschaftseinstellung einem vorhandenen `PropertyGroup`-Elemen
 
 In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für Containerprojekte verfügbar sind. Die NuGet-Paketversion gilt für[Microsoft.VisualStudio.Azure.Containers.Tools.Targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
 
-| Name der Eigenschaft | BESCHREIBUNG | Standardwert  | NuGet-Paketversion|
+| Name der Eigenschaft | Beschreibung | Standardwert  | NuGet-Paketversion|
 |---------------|-------------|----------------|----------------------|
 | ContainerDevelopmentMode | Steuert, ob die Optimierung „build-on-host“ (Debugging im schnellen Modus) aktiviert ist.  Zulässige Werte sind: **Fast** (Schnell) und **Regular** (Normal). | Fast |1.0.1872750 oder höher|
 | ContainerVsDbgPath | Der Pfad für den VSDBG-Debugger. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 oder höher|
@@ -40,13 +40,41 @@ In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für 
 | DockerDefaultTargetOS | Das standardmäßige Zielbetriebssystem, das beim Erstellen des Docker-Images verwendet wird. | Wird von Visual Studio festgelegt. |1.0.1985401 oder höher|
 | DockerImageLabels | Die Standardbezeichnungen, die auf das Docker-Image angewendet werden. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 oder höher|
 | DockerFastModeProjectMountDirectory|Im **schnellen Modus** steuert diese Eigenschaft, wo das Volume des Projektausgabeverzeichnisses in den ausgeführten Container eingebunden wird.|C:\app (Windows) oder /app (Linux).|1.9.2 oder höher|
-| DockerfileBuildArguments | Zusätzliche Argumente, die an den Docker-Buildbefehl übergeben werden. | Nicht zutreffend. |1.0.1872750 oder höher|
-| DockerfileContext | Der Standardkontext, der beim Erstellen des Docker-Images verwendet wird. | Wird von Visual Studio festgelegt. |1.0.1872750 oder höher|
+| DockerfileBuildArguments | Zusätzliche Argumente, die an den Befehl [docker build](https://docs.docker.com/engine/reference/commandline/build/) übergeben werden. | Nicht zutreffend. |1.0.1872750 oder höher|
+| DockerfileContext | Hierbei handelt es sich um den Standardkontext, der beim Erstellen des Docker-Images als Pfad verwendet wird und relativ zum Dockerfile ist. | Wird von Visual Studio festgelegt. |1.0.1872750 oder höher|
 | DockerfileFastModeStage | Die Dockerfile-Phase (d. h. Ziel), die beim Erstellen des Images im Debugmodus verwendet werden soll. | Die erste Phase, die in der Dockerfile (Base) ermittelt wird. |
 | DockerfileFile | Beschreibt die standardmäßige Dockerfile, die zum Erstellen oder Ausführen des Containers für das Projekt verwendet wird. Hierfür kann auch ein Pfad angegeben werden. | Docker-Datei |1.0.1872750 oder höher|
-| DockerfileRunArguments | Zusätzliche Argumente, die an den Docker-Ausführungsbefehl übergeben werden. | Nicht zutreffend. |1.0.1872750 oder höher|
+| DockerfileRunArguments | Zusätzliche Argumente, die an den Befehl [docker run](https://docs.docker.com/engine/reference/commandline/run/) übergeben werden. | Nicht zutreffend. |1.0.1872750 oder höher|
 | DockerfileRunEnvironmentFiles | Durch Semikolons getrennte Liste von Umgebungsdateien, die während der Docker-Ausführung angewendet werden. | Nicht zutreffend. |1.0.1872750 oder höher|
 | DockerfileTag | Das Tag, das beim Erstellen des Docker-Images verwendet wird. Beim Debuggen wird „.dev“ an das Tag angehängt. | Der Assemblyname, nachdem nicht alphanumerische Zeichen gemäß der folgenden Regeln entfernt wurden: <br/> Wenn das resultierende Tag nur aus numerischen Zeichen besteht, wird „image“ als Präfix eingefügt (z. B. „image2314“). <br/> Wenn das resultierende Tag eine leere Zeichenfolge ist, wird „image“ als Tag verwendet. |1.0.1872750 oder höher|
+
+## <a name="example"></a>Beispiel
+
+Die folgende Projektdatei enthält Beispiele für einige dieser Einstellungen.
+
+```xml
+ <Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>feae72bf-2368-4487-b6c6-546c19338cb1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <!-- In CI/CD scenarios, you might need to change the context. By default, Visual Studio uses the
+         folder above the Dockerfile. The path is relative to the Dockerfile, so here the context is
+         set to the same folder as the Dockerfile. -->
+    <DockerfileContext>.</DockerfileContext>
+    <!-- Set `docker run` arguments to mount a volume -->
+    <DockerfileRunArguments>-v $(pwd)/host-folder:/container-folder:ro</DockerfileRunArguments>
+    <!-- Set `docker build` arguments to add a custom tag -->
+    <DockerfileBuildArguments>-t contoso/front-end:v2.0</DockerfileBuildArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.6" />
+  </ItemGroup>
+
+</Project>
+```
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -10,20 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595149"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632562"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Auflösen von Assemblys zur Entwurfszeit
+
 Wenn Sie über die Registerkarte **.NET** des Dialogfelds **Verweis hinzufügen** einen Verweis auf eine Assembly hinzufügen, zeigt der Verweis auf eine Zwischenverweisassembly, also eine Assembly, die alle Typ- und Signaturinformationen, aber nicht notwendigerweise Code enthält. Auf der Registerkarte **.NET** sind Verweisassemblys aufgeführt, die Laufzeitassemblys in .NET Framework entsprechen. Außerdem werden Verweisassemblys aufgeführt, die den Laufzeitassemblys in den von Drittanbietern verwendeten registrierten AssemblyFoldersEx-Ordnern entsprechen.
 
 ## <a name="multi-targeting"></a>Festlegung von Zielversionen
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ermöglicht die Ausrichtung auf Versionen von .NET-Framework, die mit der Common Language Runtime (CLR) Version 2.0 oder Version 4 ausgeführt werden. Dies schließt die .NET Framework-Versionen 2.0, 3.0, 3.5, 4, 4.5 und 4.5.1 sowie die Silverlight-Versionen 1.0, 2.0 und 3.0 ein. Wenn eine neue auf CLR, Version 2.0 oder Version 4, basierte .NET Framework-Version veröffentlicht wird, kann das Framework mit einem Paket zur Festlegung von Zielversionen installiert werden und wird automatisch als Ziel in Visual Studio angezeigt.
+
+ Mit Visual Studio können Sie Zielversionen von .NET Framework erstellen, die auf verschiedenen .NET Framework-Versionen ausgeführt werden. Wenn eine neue .NET Framework-Version veröffentlicht wird, kann das Framework mit einem Paket zur Festlegung von Zielversionen installiert werden und wird automatisch als Ziel in Visual Studio angezeigt.
 
 ## <a name="how-type-resolution-works"></a>So funktioniert Typauflösung
+
  Zur Laufzeit löst die CLR die Typen in der Assembly auf, indem sie die GAC, das Verzeichnis *bin* und alle Prüfpfade durchsucht. Dies wird vom Fusion-Ladeprogramm gehandhabt. Aber woher weiß das Fusion-Ladeprogramm, wonach gesucht werden soll? Dies hängt von der zur Entwurfszeit (als die Anwendung erstellt wurde) festgelegten Auflösung ab.
 
  Während des Builds löst der Compiler mithilfe von Verweisassemblys Anwendungstypen auf. In den Versionen 2.0, 3.0, 3.5, 4, 4.5 und 4.5.1 von .NET Framework werden die Verweisassemblys bei der Installation von .NET Framework mitinstalliert.

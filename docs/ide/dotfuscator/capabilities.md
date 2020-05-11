@@ -18,10 +18,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918406"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funktionen von Dotfuscator
@@ -58,7 +58,7 @@ Falls Sie lieber keinen Code für den ungültigen Gebrauch von Anwendungen schre
 
 Viele der gleichen Methoden können auch verwendet werden, um [End-of-Life-Deadlines][shelflife] für Auswertungs- oder Testsoftware zu erzwingen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Dieses Thema im vollständigen Dotfuscator Community-Benutzerhandbuch][full]
 

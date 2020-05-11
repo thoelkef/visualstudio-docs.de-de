@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4bf72509610e9d397e4b208294112fcc0975b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588329"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094577"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory-Aufgabe
+
 Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 
 >[!NOTE]
 >Die `ZipDirectory`-Aufgabe ist nur in MSBuild 15.8 und höher verfügbar.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `ZipDirectory` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -45,10 +47,12 @@ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 |`SourceDirectory`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Legt das Verzeichnis fest, aus dem ein *ZIP*-Archiv erstellt werden soll.|
 
 ## <a name="remarks"></a>Hinweise
+
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird nach dem Erstellen des Projekts ein *ZIP*-Archiv aus dem Ausgabeverzeichnis erstellt.
+
+ Im folgenden Beispiel (sofern es als importierte *TARGETS*-Datei verwendet wird) wird nach dem Erstellen des Projekts ein *ZIP*-Archiv aus dem Ausgabeverzeichnis erstellt. Normalerweise würde die `$(OutputPath)`-Eigenschaft in einer MSBuild-Projektdatei definiert werden. Daher erzeugt eine Projektdatei, die die folgende Datei importiert, das ZIP-Archiv `output.zip`:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -63,5 +67,6 @@ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Microsoft-Dokumentation
+title: IDebugThread2::Suspend | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320011"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718642"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-Hält einen Thread.
+Hält einen Thread an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ HRESULT Suspend ( 
 
 ## <a name="parameters"></a>Parameter
 `pdwSuspendCount`\
-[out] Gibt den Unterbrechungszähler nach dem Vorgang "Anhalten" zurück.
+[out] Gibt die Suspend-Anzahl nach dem Suspend-Vorgang zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Jeder Aufruf dieser Methode inkrementiert den Unterbrechungszähler über 0. Diese Unterbrechungszähler wird angezeigt, der **Threads** Debug-Fenster.
+## <a name="remarks"></a>Bemerkungen
+ Bei jedem Aufruf dieser Methode wird die Suspend-Anzahl über 0 erhöht. Diese Suspend-Anzahl wird **Threads** im Thread-Debugfenster angezeigt.
 
- Bei jedem Aufruf dieser Methode, muss ein späterer Aufruf von der [fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md) Methode.
+ Für jeden Aufruf dieser Methode muss ein neuer Aufruf der [Resume-Methode](../../../extensibility/debugger/reference/idebugthread2-resume.md) erfolgen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md)

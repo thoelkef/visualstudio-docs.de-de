@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierDescription2 | Microsoft-Dokumentation
+title: IDebugPortSupplierBeschreibung2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6491628888f682d61c94ae618bfad72837c845
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339884"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724355"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Ermöglicht die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche zum Anzeigen von Text in die **Transportinformationen** Teil der **an den Prozess anhängen** Dialogfeld.
+Ermöglicht [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] der Benutzeroberfläche die Anzeige von Text im Abschnitt **Transportinformationen** im Dialogfeld An fügen an **den Prozess** an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,17 +27,17 @@ IDebugPortSupplierDescription2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle wird von Portanbieter implementiert.
+ Diese Schnittstelle wird von Hafenlieferanten implementiert.
 
 ## <a name="methods"></a>Methoden
- Die folgende Tabelle zeigt die Methoden der `IDebugPortSupplierDescription2`.
+ Die folgende Tabelle zeigt `IDebugPortSupplierDescription2`die Methoden von .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Ruft die Beschreibung und die Beschreibungsmetadaten für den Anschlusslieferanten ab.|
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Ruft die Beschreibungs- und Beschreibungsmetadaten für den Portanbieter ab.|
 
-## <a name="requirements"></a>Anforderungen
- Header: Msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 

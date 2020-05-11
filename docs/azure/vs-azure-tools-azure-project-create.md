@@ -4,21 +4,21 @@ description: Erfahren Sie, wie Sie ein Azure-Clouddienstprojekt mit Visual Studi
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 722c816329c70bb2efad03f9554e201bcc9fde16
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23e2db0b42fb12872feb5942d9f4eeaab96d3c2d
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253471"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489752"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Erstellen eines Azure-Clouddienstprojekts mit Visual Studio
 
-Die Azure-Tools für Visual Studio umfassen eine Projektvorlage, mit der Sie einen [Azure-Clouddienst](/azure/cloud-services/cloud-services-choose-me) erstellen können – einen einfachen allgemeinen Azure-Dienst. Nach der Erstellung des Projekts können Sie den Clouddienst mit Visual Studio in Azure konfigurieren, debuggen und bereitstellen.
+Visual Studio stellt eine Projektvorlage bereit, mit der Sie einen [Azure-Clouddienst](/azure/cloud-services/cloud-services-choose-me)erstellen können, bei dem es sich um einen einfachen allgemeinen Azure-Dienst handelt. Nach der Erstellung des Projekts können Sie den Clouddienst mit Visual Studio in Azure konfigurieren, debuggen und bereitstellen.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Schritte zum Erstellen eines Azure-Clouddienstprojekts in Visual Studio
 In diesem Abschnitt wird das Erstellen eines Azure-Clouddienstprojekts in Visual Studio mit einem oder mehreren Webrollen erläutert.
@@ -26,7 +26,7 @@ In diesem Abschnitt wird das Erstellen eines Azure-Clouddienstprojekts in Visual
 ::: moniker range="vs-2017"
 1. Öffnen Sie Visual Studio als Administrator.
 
-1. Wählen Sie im Hauptmenü **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie im Hauptmenü die Optionen **Datei** > **Neu** > **Projekt** aus.
 
 1. Wählen Sie **Cloud** in den Projektvorlagenknoten „Visual C#“ oder „Visual Basic“ und dann **Azure-Clouddienst** in der Liste der Vorlagen aus.
 
@@ -60,7 +60,7 @@ In diesem Abschnitt wird das Erstellen eines Azure-Clouddienstprojekts in Visual
 
 Das Visual Studio-Azure-Projekt weist Zuordnungen zu den Rollenprojekten in der Projektmappe auf. Das Projekt enthält zudem die *Dienstdefinitionsdatei* und die *Dienstkonfigurationsdatei*:
 
-- **Dienst Definitionsdatei** : definiert die Lauf Zeit Einstellungen für Ihre Anwendung, einschließlich der erforderlichen Rollen, Endpunkte und der Größe des virtuellen Computers.
+- **Dienstdefinitionsdatei** – Definiert die Laufzeiteinstellungen für Ihre Anwendung, einschließlich der erforderlichen Rollen, Endpunkte und der Größe der virtuellen Maschine.
 - **Dienstkonfigurationsdatei:** Konfiguriert, wie viele Instanzen einer Rolle ausgeführt werden, und die Werte der für eine Rolle definierten Einstellungen.
 
 Weitere Informationen zu diesen Dateien finden Sie unter [Konfigurieren der Rollen für einen Azure-Clouddienst mit Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).

@@ -1,27 +1,27 @@
 ---
-title: DisplayKind | Microsoft-Dokumentation
+title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318267"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737254"
 ---
 # <a name="displaykind"></a>DisplayKind
-Listet die gültigen Werte, die darstellen, die Arten von Informationen aus einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt und dem Benutzer anzuzeigen.
+Zählt die gültigen Werte auf, die die Arten von Informationen darstellen, die von einem [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) entnommen und dem Benutzer angezeigt werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,21 +46,21 @@ public enum enum_DisplayKind
 
 ## <a name="fields"></a>Felder
 `DisplayKind_Value`\
-Der Wert des Felds.
+Wert des Felds.
 
 `DisplayKind_Name`\
 Der Name des Felds.
 
 `DisplayKind_Type`\
-Typ des Felds.
+Feldtyp.
 
-## <a name="requirements"></a>Anforderungen
-Header: EE.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: Ee.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

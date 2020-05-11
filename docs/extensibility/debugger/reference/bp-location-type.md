@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE | Microsoft-Dokumentation
+title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353038"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737939"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
-Gibt den Typ des Haltepunkts für eine Haltepunkt-Anforderung an.
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
+Gibt den Positionstyp des Haltepunkts für eine Haltepunktanforderung an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -70,65 +70,65 @@ public enum enum_BP_LOCATION_TYPE {
 
 ## <a name="fields"></a>Felder
 `BPLT_NONE`\
-Gibt keine Position des Haltepunkts an.
+Gibt keine Haltepunktposition an.
 
 `BPLT_FILE_LINE`\
-Gibt den Typ des Haltepunkts als eine Dateizeile an.
+Gibt den Speicherorttyp des Haltepunkts als Dateizeile an.
 
 `BPLT_FUNC_OFFSET`\
-Gibt den Typ des Haltepunkts als Funktion Offset an.
+Gibt den Positionstyp des Haltepunkts als Funktionsversatz an.
 
 `BPLT_CONTEXT`\
-Gibt den Typ des Haltepunkts als Kontext.
+Gibt den Positionstyp des Haltepunkts als Kontext an.
 
 `BPLT_STRING`\
-Gibt den Typ des Haltepunkts als Zeichenfolge an.
+Gibt den Positionstyp des Haltepunkts als Zeichenfolge an.
 
 `BPLT_ADDRESS`\
-Gibt den Typ des Haltepunkts als Adresse an.
+Gibt den Positionstyp des Haltepunkts als Adresse an.
 
 `BPLT_RESOLUTION`\
-Gibt den Typ des Haltepunkts als Lösung an.
+Gibt den Positionstyp des Haltepunkts als Auflösung an.
 
 `BPLT_CODE_FILE_LINE`\
-Gibt den Typ des Haltepunkts als eine Zeile des Quellcodes an.
+Gibt den Positionstyp des Haltepunkts als Quellcodezeile an.
 
 `BPLT_CODE_FUNC_OFFSET`\
-Gibt den Typ des Haltepunkts als Offset-Funktion Code an.
+Gibt den Positionstyp des Haltepunkts als Codefunktionsversatz an.
 
 `BPLT_CODE_CONTEXT`\
-Gibt den Typ des Haltepunkts als Codekontext an.
+Gibt den Positionstyp des Haltepunkts als Codekontext an.
 
 `BPLT_CODE_STRING`\
-Gibt den Typ des Haltepunkts als eine Zeichenfolge an.
+Gibt den Positionstyp des Haltepunkts als Codezeichenfolge an.
 
 `BPLT_CODE_ADDRESS`\
-Gibt den Typ des Haltepunkts als eine Adresse an.
+Gibt den Positionstyp des Haltepunkts als Codeadresse an.
 
 `BPLT_DATA_STRING`\
-Gibt den Typ des Haltepunkts als eine Zeichenfolge mit Daten an.
+Gibt den Positionstyp des Haltepunkts als Datenzeichenfolge an.
 
 `BPLT_TYPE_MASK`\
-Gibt eine Bitmaske, damit der Haltepunkttyp aus dem Wert extrahiert werden kann.
+Gibt eine Bitmaske an, damit der Haltepunkttyp aus dem Wert extrahiert werden kann.
 
 `BPLT_LOCATION_TYPE_MASK`\
-Gibt eine Bitmaske, damit die Haltepunktpositionstyp aus dem Wert extrahiert werden kann.
+Gibt eine Bitmaske an, damit der Haltepunktpositionstyp aus dem Wert extrahiert werden kann.
 
-## <a name="remarks"></a>Hinweise
-Übergeben als Parameter an die [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+Wird als Parameter an die [GetLocationType-Methode](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) übergeben.
 
-Eine Haltepunktpositionstyp besteht aus einem Haltepunkt und einen Speicherorttyp. Dies bedeutet, dass eine Haltepunktpositionstyp nie nur einen Haltepunkttyp ist (z. B. `BPT_CODE`) oder einen Standorttyp (z. B. `BPLT_FILE_LINE`). Vordefinierte Konstanten für alle Haltepunkttypen, Speicherort unterstützt derzeit befinden sich in dieser Enumeration (`BPLT_CODE_FILE_LINE` über `BPLT_DATA_STRING`).
+Ein Haltepunktpositionstyp besteht aus einem Haltepunkttyp und einem Positionstyp. Dies bedeutet, dass ein Haltepunktpositionstyp nie nur `BPT_CODE`ein Haltepunkttyp (z. `BPLT_FILE_LINE`B. ) oder ein Positionstyp (z. B. ) ist. Vordefinierte Konstanten für alle derzeit unterstützten Haltepunktpositionstypen sind`BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING`in dieser Enumeration ( bis ) enthalten.
 
-`BPT_CODE` und `BPT_DATA` sind Mitglied der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration.
+`BPT_CODE`und `BPT_DATA` sind Mitglieder der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Aufzählung.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

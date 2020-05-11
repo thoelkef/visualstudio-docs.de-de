@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InPlaceUpdateObject | Microsoft-Dokumentation
+title: iPropertyProxyeeside::InplaceUpdateObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ce2826aa0bd75638d6f5ee8086cbcce96517ce7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 79167b0f7e8094fabf80bb9b2d83c94ac874aa31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329422"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714895"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
-Aktualisiert die Daten des Objekts mit dem angegebenen Objekt und gibt ein neues Datenobjekt, das neue Daten des Objekts darstellt.
+Aktualisiert die Daten des Objekts mit dem angegebenen Datenobjekt und gibt ein neues Datenobjekt zurück, das die neuen Daten des Objekts darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,22 +43,22 @@ int InPlaceUpdateObject(
 
 ## <a name="parameters"></a>Parameter
 `dataIn`\
-[in] Ein [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das die neuen Daten enthält.
+[in] Ein [IEEDataStorage-Objekt,](../../../extensibility/debugger/reference/ieedatastorage.md) das die neuen Daten enthält.
 
 `dataOut`\
-[out] Gibt eine neue `IEEDataStorage` -Objekt, das die ersetzten Daten enthält.
+[out] Gibt ein `IEEDataStorage` neues Objekt zurück, das die ersetzten Daten enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird tatsächlich die Daten des Objekts aktualisiert. Die Daten in der zurückgegebenen [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Objekt muss nicht identisch mit den Daten in der eingehenden werden `IEEDataStorage` -Objekt, aber das zurückgegebene Objekt muss der aktuelle Eigenschaftswert widerspiegeln.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode aktualisiert tatsächlich die Daten des Objekts. Die Daten im zurückgegebenen [IEEDataStorage-Objekt](../../../extensibility/debugger/reference/ieedatastorage.md) müssen nicht mit den `IEEDataStorage` Daten im eingehenden Objekt identisch sein, aber das zurückgegebene Objekt muss den aktuellen Wert der Eigenschaft widerspiegeln.
 
- Das eingehende Objekt ist in der Regel nicht von der EE implementiert. Das von dieser Methode zurückgegebene Objekt ist jedoch immer implementiert, von der EE, können Sie die EE implementieren die `IEEDataStorage` Schnittstelle für eine beliebige Klasse gewünscht wird.
+ Das eingehende Datenobjekt wird in der Regel nicht von der EE implementiert. Das von dieser Methode zurückgegebene Objekt wird jedoch immer vom EE `IEEDataStorage` implementiert, wodurch der EE die Schnittstelle auf jeder gewünschten Klasse implementieren kann.
 
- Die [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) Methode wird ein Datenobjekt, das basierend auf dem eingehende Datenobjekt erstellt, sondern wirkt sich nicht auf die ursprünglichen Daten von der Eigenschaft.
+ Die [CreateReplacementObject-Methode](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) erstellt ein Datenobjekt basierend auf dem eingehenden Datenobjekt, wirkt sich jedoch nicht auf die ursprünglichen Daten der Eigenschaft aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)

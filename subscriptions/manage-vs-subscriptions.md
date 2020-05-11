@@ -3,15 +3,16 @@ title: Verwalten von Visual Studio-Abonnements
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706967"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444873"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -51,7 +52,6 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 **Über Programme erworbene Abonnements:**  Wenn Sie Ihr Abonnement über ein Programm erwerben, ist dieses an Ihre Teilnahme am Programm gebunden. Wenden Sie sich für weitere Informationen an Ihre Programmkontakte.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -105,10 +105,24 @@ Antwort: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gesp
 |    Microsoft Business Center              |    180          |
 |    Microsoft Produkt- und Servicevertrag (MSPA)    |    180          |
 |    Visual Studio-Cloudabonnements                   |    180          |
-|    Programm (z.B. MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Programm (z. B. MCT, MPN, Imagine)          |    180          |
 |    Nicht zum Weiterverkauf bestimmt (z.B. MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
 > [!NOTE]
 > - Wenn Sie Ihr Microsoft-Konto oder Azure AD schließen, werden Ihre personenbezogenen Daten sofort anonymisiert.
 > - Wenn Sie über aktive Abonnements verfügen, werden Ihre personenbezogenen Daten nicht vollständig entfernt.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Nächste Schritte
+Verwalten Sie Abonnements für Ihre Organisation?  In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements:
+- [Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements](assign-license.md)
+- [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
+- [Bearbeiten von Abonnements](edit-license.md)
+- [Löschen von Abonnements](delete-license.md)
+- [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)

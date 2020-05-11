@@ -1,5 +1,5 @@
 ---
-title: POPDIRLISTFUNC | Microsoft-Dokumentation
+title: POPDIRLISTFUNC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fef3ab783c736fd2573e8d9df1a513e25d37020
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326132"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702083"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-Dies ist eine Callback-Funktion übergeben, um die [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Funktion zum Aktualisieren einer Sammlung von Verzeichnissen und (optional) um Dateinamen, um herauszufinden, die unter quellcodeverwaltung stehen.
+Dies ist eine Rückruffunktion, die der [SccPopulateDirList-Funktion](../extensibility/sccpopulatedirlist-function.md) gegeben wird, um eine Auflistung von Verzeichnissen und (optional) Dateinamen zu aktualisieren, um herauszufinden, welche unter Quellcodeverwaltung stehen.
 
- Die `POPDIRLISTFUNC` Rückruf aufgerufen werden soll, nur für die Verzeichnisse und Dateinamen (in der Liste übergeben, um die `SccPopulateDirList` Funktion), die tatsächlich unter quellcodeverwaltung stehen.
+ Der `POPDIRLISTFUNC` Rückruf sollte nur für die Verzeichnisse und Dateinamen aufgerufen `SccPopulateDirList` werden (in der Liste, die der Funktion gegeben ist), die sich tatsächlich unter Quellcodeverwaltung befinden.
 
 ## <a name="signature"></a>Signatur
 
@@ -37,29 +37,29 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="parameters"></a>Parameter
  pvCallerData
 
-[in] Benutzerwert [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
+[in] Benutzerwert für [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
 
- auf bOrdneroptionen
+ bFolder
 
-[in] `TRUE` Wenn der Name in `lpDirectoryOrFileName` ist ein Verzeichnis; andernfalls ist der Name ein Dateiname.
+[in] `TRUE` wenn es `lpDirectoryOrFileName` sich bei dem Namen in um ein Verzeichnis handelt; Andernfalls ist der Name ein Dateiname.
 
  lpDirectoryOrFileName
 
-[in] Vollständige lokale Pfad zu einem Verzeichnis oder Datei Namen, unter quellcodeverwaltung befindet.
+[in] Vollständiger lokaler Pfad zu einem Verzeichnis oder Dateinamen, der sich unter Quellcodeverwaltung befindet.
 
 ## <a name="return-value"></a>Rückgabewert
- Die IDE gibt einen geeigneten Fehlercode:
+ Die IDE gibt einen entsprechenden Fehlercode zurück:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Die Verarbeitung fortgesetzt.|
+|SCC_OK|Setzen Sie die Verarbeitung fort.|
 |SCC_I_OPERATIONCANCELED|Beendet die Verarbeitung.|
-|SCC_E_xxx|Ein Fehler der entsprechenden Quelle-Steuerelement sollte beendet die Verarbeitung.|
+|SCC_E_xxx|Jeder geeignete Quellcodeverwaltungsfehler sollte die Verarbeitung beenden.|
 
-## <a name="remarks"></a>Hinweise
- Wenn die `fOptions` Parameter der `SccPopulateDirList` -Funktion enthält die `SCC_PDL_INCLUDEFILES` gekennzeichnet, und klicken Sie dann die Liste möglicherweise Dateinamen und Verzeichnisnamen enthalten wird.
+## <a name="remarks"></a>Bemerkungen
+ Wenn `fOptions` der Parameter `SccPopulateDirList` der `SCC_PDL_INCLUDEFILES` Funktion das Flag enthält, enthält die Liste möglicherweise Dateinamen sowie Verzeichnisnamen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Fehlercodes](../extensibility/error-codes.md)

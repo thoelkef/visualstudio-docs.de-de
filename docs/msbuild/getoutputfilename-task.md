@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593290"
 ---
 # <a name="getoutputfilename-task"></a>GetOutputFileName-Aufgabe
@@ -39,6 +39,6 @@ In der folgenden Tabelle werden die Parameter der **GetOutputFileName**-Aufgabe 
 |**OutputPath**|Optionaler **string**-Parameter|
 |**SourceFile**|Erforderlicher **String**-Parameter.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

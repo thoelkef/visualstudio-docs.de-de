@@ -2,20 +2,21 @@
 title: Lokales Trainieren eines TensorFlow-Modells
 description: Lokales Ausführen eines TensorFlow-Modells in KI-Tools für Visual Studio
 keywords: ki, visual studio, tensorflow, lokal
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777429"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638744"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Lokales Trainieren eines TensorFlow-Modells
 
@@ -23,7 +24,7 @@ In diesem Schnellstart trainieren Sie ein TensorFlow-Modell mit einem [MNIST](ht
 
 Die MNIST-Datenbank enthält 60.000 Trainingsbeispiele und 10.000 Testbeispiele für handgeschriebene Ziffern.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Stellen Sie vor Beginn sicher, dass Sie Folgendes installiert haben:
 
@@ -38,7 +39,7 @@ C:\>pip.exe install tensorflow
 ### <a name="numpy-and-scipy"></a>NumPy und SciPy
 Installieren Sie [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) und [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
-### <a name="download-sample-code"></a>Herunterladen von Beispielcode
+### <a name="download-sample-code"></a>Beispielcode herunterladen
 Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai) herunter, das Beispiele für die ersten Schritte mit Deep Learning in TensorFlow, CNTK, Theano usw. enthält.
 
 ## <a name="open-solution-and-train-model"></a>Öffnen einer Projektmappe und Trainieren eines Modells

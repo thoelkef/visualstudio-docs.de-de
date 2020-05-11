@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594356"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen
@@ -55,9 +55,9 @@ So zeigen Sie Diagramme an:
 
 2. Klicken Sie nach Abschluss des Auslastungstestlaufs im Dialogfeld zur Anzeige der Ergebnisse im Speicher für Auslastungstestergebnisse auf **Ja**.
 
-     \- oder -
+     \- oder –
 
-     Zeigen Sie die Details eines zuvor ausgeführten Auslastungstests an. Weitere Informationen finden Sie unter [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md).
+     Zeigen Sie die Details eines zuvor ausgeführten Auslastungstests an. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
 
 3. Klicken Sie auf **Diagramme**, wenn die Diagramme nicht angezeigt werden.
 
@@ -113,8 +113,8 @@ Wenn mehrere Diagramme angezeigt werden, können Sie sie synchronisieren, sodass
 
      Die Ansicht wird verkleinert und enthält den gesamten Auslastungstestlauf.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Vorgehensweise: Add and delete counters on graphs (Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Graphen)](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

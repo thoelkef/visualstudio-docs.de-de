@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumModules | Microsoft-Dokumentation
+title: IDebugProgram2::EnumModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumModules
 ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bcc4beb077683cddfe3df14f147c3cc90b4111b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 967b9b4a06f382e5da2ee2422dd48209184e474b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353132"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723019"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
-Ruft eine Liste der Module, die dieses Programm wurde geladen und ausgeführt wird.
+Ruft eine Liste der Module ab, die dieses Programm geladen hat und ausführt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int EnumModules( 
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt eine [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) -Objekt, das eine Liste der Module enthält.
+[out] Gibt ein [IEnumDebugModules2-Objekt](../../../extensibility/debugger/reference/ienumdebugmodules2.md) zurück, das eine Liste der Module enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Ein Modul ist eine DLL oder Assembly und wird in der Regel in der **Module** Debug-Fenster.
+## <a name="remarks"></a>Bemerkungen
+ Ein Modul ist eine DLL oder Assembly und wird in der Regel im Debugfenster **Modules** aufgeführt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

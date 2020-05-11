@@ -6,15 +6,15 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68493232"
 ---
 # <a name="source-editor"></a>Quellcode-Editor
 
-Ein zuverlässiger Quellcode-Editor ist entscheidend für kurzen und effizienten Code. Visual Studio für Mac bietet einen anspruchsvollen Quellcode-Editor, der das Herzstück der IDE darstellt. Der Quellcode-Editor stellt Features bereit, die Sie möglicherweise erwarten und benötigen, um Ihre Arbeit mühelos durchzuführen: von den Grundlagen wie der Syntaxhervorhebung, über Codeausschnitte und der Codefaltung, bis hin zu den Vorteilen der Roslyn-Compilerintegration wie eine voll funktionale IntelliSense-Codevervollständigung.
+Ein zuverlässiger Quellcode-Editor ist entscheidend für kurzen und effizienten Code. Visual Studio für Mac bietet einen anspruchsvollen Quellcode-Editor, der das Herzstück der IDE darstellt. Der Quellcode-Editor stellt nicht nur die erwarteten Funktionen bereit, sondern auch solche, die Sie für reibungslose Arbeitsabläufe benötigen: von den Grundlagen wie der Syntaxhervorhebung, über Codeausschnitte und der Codefaltung, bis hin zu den Vorteilen der Roslyn-Compilerintegration wie eine voll funktionale IntelliSense-Codevervollständigung.
 
 Der Quellcode-Editor in Visual Studio für Mac funktioniert problemlos mit allen anderen Funktionen der IDE, z.B. dem Debuggen, der Umgestaltung und der Integration der Versionskontrolle.
 
@@ -78,7 +78,7 @@ Die Farbe der Hervorhebung ist auch hilfreich, wenn angegeben werden soll, dass 
 
 ![Beispiel für die Markierungsfarbe](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Features des Code-Editors (Visual Studio unter Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Gliederung (Visual Studio unter Windows)](/visualstudio/ide/outlining)

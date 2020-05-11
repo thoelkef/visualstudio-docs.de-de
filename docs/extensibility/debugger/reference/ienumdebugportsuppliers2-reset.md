@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::Reset | Microsoft-Dokumentation
+title: IEnumDebugPortSuppliers2::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::Next
 ms.assetid: f69cbacf-da9d-4b22-b8a2-abd9b8c131f2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2813e019e9d071ffba14fb581ff0797f4cb2622
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7d5a376a8478fc2254e354085a4b25349317f84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326330"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715960"
 ---
 # <a name="ienumdebugportsuppliers2reset"></a>IEnumDebugPortSuppliers2::Reset
 Setzt die Enumeration auf das erste Element zurück.
@@ -38,10 +38,10 @@ int Reset();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Nachdem diese Methode aufgerufen wird, wird beim nächsten Aufruf von der [Weiter](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md) Methode gibt das erste Element der Enumeration.
+## <a name="remarks"></a>Bemerkungen
+ Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf der [Next-Methode](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md) das erste Element der Enumeration zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

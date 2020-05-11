@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591098"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306824"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio
 
@@ -79,7 +79,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
         Sie können die Symbolleiste auch am linken Rand ziehen, um sie im Hauptandockbereich zu verschieben.
 
         > [!NOTE]
-        > Weitere Informationen zur Verbesserung der Benutzerfreundlichkeit und der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Weitere Informationen über Möglichkeiten zur Verbesserung der Benutzerfreundlichkeit sowie der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Anpassen eines Menüs oder einer Symbolleiste</a>
 
@@ -117,7 +117,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     Sie können auch alle Menüs und Symbolleisten zurücksetzen, indem Sie die Schaltfläche **Alle zurücksetzen** auswählen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Anpassen des Editors](../ide/how-to-change-text-case-in-the-editor.md)

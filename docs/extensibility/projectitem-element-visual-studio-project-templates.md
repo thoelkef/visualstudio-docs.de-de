@@ -1,5 +1,5 @@
 ---
-title: ProjectItem-Element (Visual Studio-Projektvorlagen) | Microsoft-Dokumentation
+title: ProjectItem-Element (Visual Studio-Projektvorlagen) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f062575cc7d0978fbacede32cfe22d0f98a71c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11052d8e585f1d06f6d787402001cfbbe2b6810f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335954"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701842"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem-Element (Visual Studio-Projektvorlagen)
-Gibt eine Datei, die in der Projektvorlage enthalten ist.
+Gibt eine Datei an, die in der Projektvorlage enthalten ist.
 
 > [!NOTE]
-> Die `ProjectItem` -Element akzeptiert verschiedene Attribute je nachdem, ob die Vorlage für ein Projekt oder ein Element. In diesem Thema wird erläutert, die `ProjectItem` -Element für Projektvorlagen. Eine Erläuterung der `ProjectItem` -Element für Elementvorlagen finden Sie unter [ProjectItem-Element (Visual Studio-Elementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md).
+> Das `ProjectItem` Element akzeptiert unterschiedliche Attribute, je nachdem, ob die Vorlage für ein Projekt oder ein Element ist. In diesem `ProjectItem` Thema wird das Element für Projektvorlagen erläutert. Eine Erläuterung des `ProjectItem` Elements für Elementvorlagen finden Sie unter [ProjectItem Element (Visual Studio Item Templates)](../extensibility/projectitem-element-visual-studio-item-templates.md).
 
- \<VSTemplate> \<TemplateContent> \<Project> \<ProjectItem>
+ \<VSTemplate \<> TemplateContent \< \<> Project> ProjectItem>
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,65 +48,65 @@ Gibt eine Datei, die in der Projektvorlage enthalten ist.
 
 ### <a name="attributes"></a>Attribute
 
-| Attribut | Beschreibung |
+| attribute | BESCHREIBUNG |
 |---------------------| - |
-| `TargetFileName` | Optionales Attribut.<br /><br /> Gibt den Namen und Pfad des Projektelements an, wenn ein Projekt aus der Vorlage erstellt wird. Dieses Attribut ist nützlich zum Erstellen einer Verzeichnisstruktur unterscheidet die Verzeichnisstruktur, in der Vorlage *ZIP* -Datei, oder für die Verwendung von parameterersetzungen erstellen Sie einen Elementnamen ein. |
-| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein. |
-| `OpenInEditor` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element soll, im entsprechenden Editor in geöffnet werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Die `OpenInWebBrowser` und `OpenInHelpBrowser` Attribute werden ignoriert, auf ein Element mit einem `OpenInEditor` Wert `true`.<br /><br /> Der Standardwert ist `false`. |
-| `OpenInWebBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element den Webbrowser geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können in einem Webbrowser geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Der Standardwert ist `false`. |
-| `OpenInHelpBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element im Hilfe-Viewer geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können im Browser Hilfe geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Der Standardwert ist `false`. |
-| `OpenOrder` | Optionales Attribut.<br /><br /> Gibt einen numerischen Wert für die Reihenfolge an, dass die Elemente in ihre entsprechenden Editoren geöffnet werden. Alle Werte müssen ein Vielfaches von 10 sein. Elemente mit höheren `OpenOrder` Werte zuerst geöffnet werden. |
+| `TargetFileName` | Optionales Attribut.<br /><br /> Gibt den Namen und Pfad des Projektelements an, wenn ein Projekt aus der Vorlage erstellt wird. Dieses Attribut ist nützlich, um eine Verzeichnisstruktur zu *.zip* erstellen, die sich von der Verzeichnisstruktur in der ZIP-Datei der Vorlage unterscheidet, oder um die Parameterersetzung zum Erstellen eines Elementnamens zu verwenden. |
+| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element Parameterwerte enthält, die ersetzt werden müssen, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`. |
+| `OpenInEditor` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Element in seinem jeweiligen Editor geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Die `OpenInWebBrowser` `OpenInHelpBrowser` und-Attribute werden für ein `OpenInEditor` Element `true`mit dem Wert von ignoriert.<br /><br /> Der Standardwert ist `false`. |
+| `OpenInWebBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element im Webbrowser geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die lokal im Projekt sind, können im Webbrowser geöffnet werden. Externe URLs können mit diesem Attribut nicht geöffnet werden.<br /><br /> Der Standardwert ist `false`. |
+| `OpenInHelpBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element im Hilfe-Viewer geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die lokal im Projekt sind, können im Hilfebrowser geöffnet werden. Externe URLs können mit diesem Attribut nicht geöffnet werden.<br /><br /> Der Standardwert ist `false`. |
+| `OpenOrder` | Optionales Attribut.<br /><br /> Gibt einen numerischen Wert an, der die Reihenfolge darstellt, in der Elemente in den jeweiligen Editoren geöffnet werden. Alle Werte müssen ein Vielfaches von 10 sein. Elemente mit `OpenOrder` höheren Werten werden zuerst geöffnet. |
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Gibt an, die Dateien oder Verzeichnisse dem Projekt hinzu.|
+|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden sollen.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Ein `string` , die der Name oder Pfad darstellt, in eine Datei in der Vorlage *ZIP* Datei.
+ A, `string` das den Namen oder Pfad zu einer Datei in der *ZIP-Datei* der Vorlage darstellt.
 
-## <a name="remarks"></a>Hinweise
- `ProjectItem` ist ein optionales untergeordnetes Element des `Project`.
+## <a name="remarks"></a>Bemerkungen
+ `ProjectItem`ist ein optionales untergeordnetes Element von `Project`.
 
- Die `TargetFileName` -Attribut kann verwendet werden, um eine Verzeichnisstruktur unterscheidet die Verzeichnisstruktur erstellen, in der Vorlage *ZIP* Datei. Z. B. wenn die Datei *MyFile.vb* vorhanden ist, im Stammverzeichnis der Vorlage *ZIP* -Datei, Sie möchten aber die Datei in ein Verzeichnis namens platziert werden *CustomFiles* in allen Projekten erstellt aus der Vorlage, würden Sie das folgende XML verwenden:
+ Das `TargetFileName` Attribut kann verwendet werden, um eine Verzeichnisstruktur zu erstellen, die sich von der Verzeichnisstruktur in der *.zip-Datei* der Vorlage unterscheidet. Wenn z. B. die Datei *MyFile.vb* im Stammverzeichnis der *.zip-Datei* der Vorlage vorhanden ist, die Datei jedoch in allen Projekten, die aus der Vorlage erstellt wurden, in einem Verzeichnis mit dem Namen *CustomFiles* abgelegt werden soll, verwenden Sie den folgenden XML-Code:
 
 ```xml
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>
 ```
 
- Die `TargetFileName` Attribut kann auch verwendet werden, um Dateien umzubenennen, die internationale Zeichen im Dateinamen enthalten. Beispielsweise eine Vorlage *ZIP* Datei darf keine Dateinamen mit Unicode-Zeichen enthalten, damit die Datei umbenannt werden muss, bevor es in komprimiert werden, kann eine *ZIP* Datei. Die `TargetFileName` Attribut kann verwendet werden, um den Dateinamen wieder in den ursprünglichen Namen der Unicode-Datei festgelegt.
+ Das `TargetFileName` Attribut kann auch verwendet werden, um Dateien umzubenennen, die internationale Zeichen in ihren Dateinamen enthalten. Beispielsweise kann eine *.zip-Vorlagedatei* keine Dateinamen mit Unicode-Zeichen enthalten, daher muss die Datei umbenannt werden, bevor sie in eine *ZIP-Datei* komprimiert werden kann. Das `TargetFileName` Attribut kann verwendet werden, um den Dateinamen wieder auf den ursprünglichen Unicode-Dateinamen festzulegen.
 
- Die `TargetFileName` Attribut kann auch zum Umbenennen von Dateien mit Parametern verwendet werden. Das folgende Verfahren erläutert, wie Sie die Datei umbenennen *MyFile.vb*, die im Stammverzeichnis der Vorlage vorhanden ist *ZIP* -Datei, um einen Dateinamen ein, die basierend auf den Namen des Projekts.
+ Das `TargetFileName` Attribut kann auch verwendet werden, um Dateien mit Parametern umzubenennen. Im folgenden Verfahren wird erläutert, wie Sie die Datei *MyFile.vb*, die im Stammverzeichnis der Vorlage *ZIP-Datei* vorhanden ist, in einen Dateinamen umbenennen, der auf dem Projektnamen basiert.
 
-### <a name="to-rename-files-with-parameters"></a>Zum Umbenennen von Dateien mit Parametern
+### <a name="to-rename-files-with-parameters"></a>So benennen Sie Dateien mit Parametern um
 
-1. Verwenden Sie die folgenden XML-Code in die *VSTEMPLATE* Datei:
+1. Verwenden Sie den folgenden XML-Code in der *.vstemplate-Datei:*
 
    ```xml
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. Öffnen Sie die Projektdatei (*vbproj* für eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Projekt) in einem Text-Editor oder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+2. Öffnen Sie die Projektdatei ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] *.vbproj* für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ein Projekt) in einem Texteditor oder .
 
-3. Suchen Sie die Zeile, in der Projektdatei, die die folgenden XML-Code ähnelt:
+3. Suchen Sie die Zeile in der Projektdatei, die dem folgenden XML ähnelt:
 
    ```xml
    <Compile Include="MyFile.vb">
    ```
 
-4. Ersetzen Sie die Zeile des Codes, durch das folgende XML:
+4. Ersetzen Sie die Codezeile durch den folgenden XML-Code:
 
    ```xml
    <Compile Include="$safeprojectname$.vb">
    ```
 
-    Wenn ein Projekt aus dieser Vorlage erstellt wird, der Dateiname wird auf Grundlage der Name des Benutzers im der **neues Projekt** Dialogfelds mit der alle unsicheren Zeichen sowie Leerzeichen entfernt wurden. Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).
+    Wenn ein Projekt aus dieser Vorlage erstellt wird, basiert der Dateiname auf dem Namen, den der Benutzer im Dialogfeld **Neues Projekt** eingegeben hat, wobei alle unsicheren Zeichen und Leerzeichen entfernt werden. Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.
@@ -135,8 +135,8 @@ Gibt eine Datei, die in der Projektvorlage enthalten ist.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
-- [ProjectItem-Element (Visual Studio-Projektelementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [ProjectItem-Element (Visual Studio-Elementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md)

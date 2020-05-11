@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405000"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543897"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -42,7 +42,7 @@ Klicken Sie auf die **leere ASP.NET Core-Webanwendung** und dann auf **Weiter**.
 
 ![Ansicht „Neue leere ASP.NET Core-Anwendung“](media/asp-net-core-2019-empty-project.png)
 
-Die leere Projektvorlage zum Erstellen einer ASP.NET Core-Anwendung erstellt eine Webanwendung mit zwei Standarddateien: **Program.cs** und **Startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, wie z.B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
+Die leere Projektvorlage zum Erstellen einer ASP.NET Core-Anwendung erstellt eine Webanwendung mit zwei Standarddateien: **Program.cs** und **Startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, z. B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
 
 ![Anzeige des Projektmappenpads mit Abhängigkeiten](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -236,7 +236,7 @@ Achten Sie darauf, dass Sie alle Schritte erfolgreich abschließen, um sicherzus
 
 Dieses Handbuch hat Sie in ASP.NET Core eingeführt. Nun wissen Sie, was ASP.NET Core ist und wofür und wie Sie es in Visual Studio für Mac verwenden können.
 Weiter Informationen zu weiteren Schritten finden Sie in den folgenden Handbüchern:
-- Dokumentation zu [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc)
+- Dokumentation zu [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1)
 - [Creating Backend Services for Native Mobile Applications (Erstellen von Back-End-Diensten für native mobile Anwendungen)](/aspnet/core/mobile/native-mobile-backend), wo Sie erfahren, wie Sie einen REST-Dienst mit ASP.NET Core für eine Xamarin.Forms-App erstellen können.
 - [Praktische Übung zu ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778270"
 ---
 # <a name="start"></a>Starten
@@ -48,17 +48,17 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **User:** [`domain\`]`username`: ermöglicht dem Client Zugriff auf den Monitor vom angegebenen Konto aus.
 
- **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** gibt einen Windows-Leistungsindikator an, der als Markierung in die Profilerstellungsdatendatei aufgenommen werden soll. **AutoMark** gibt das Intervall in Millisekunden zwischen dem Erfassen der Datendatei an.
+ **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** gibt einen Windows-Leistungsindikator an, der als Markierung in die Profilerstellungs-Datendatei aufgenommen werden soll. **AutoMark** gibt das Intervall in Millisekunden zwischen dem Erfassen der Datendatei an.
 
 ## <a name="invalid-options"></a>Ungültige Optionen
  Die folgenden Optionen können nicht mit der Option **Start** in einer Befehlszeile verwendet werden.
 
- **Status** **Status** gilt für die Prozesse, von denen ein Profil erstellt wurde. Prozesse und Threads und der aktuelle Zustand der Profile (ein/aus) wird hier aufgeführt. Wenn beispielsweise ein Prozess beendet wird, gibt **Status** dies nicht im Bericht an. **Status** zeigt an, ob vom Prozess ein Profil erstellt wird.
+ **Status** gilt für die Prozesse, für die ein Profil erstellt wurde. Prozesse und Threads und der aktuelle Zustand der Profile (ein/aus) wird hier aufgeführt. Wenn beispielsweise ein Prozess beendet wird, gibt **Status** dies nicht im Bericht an. **Status** zeigt an, ob vom Prozess ein Profil erstellt wird.
 
  **Shutdown**[ **:** `Timeout`] deaktiviert den Profiler.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel veranschaulicht, wie die Option **Start** von *VSPerfCmd.exe* den Profiler initialisiert.
+ Das folgende Beispiel veranschaulicht, wie die *VSPerfCmd.exe*-Option **Start** den Profiler initialisiert.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

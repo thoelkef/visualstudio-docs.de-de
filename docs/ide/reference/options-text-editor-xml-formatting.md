@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568138"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Optionen, Text-Editor, XML, Formatierung
@@ -23,10 +23,10 @@ Verwenden Sie die Optionsseite **Formatierung**, um anzugeben, wie Elemente und 
 
 **Manuelle Attributformatierung beibehalten**
 
-Formatiert Attribute nicht neu. Dies ist die Standardeinstellung.
+Nimmt keine Neuformatierung von Attributen vor. Dies ist die Standardeinstellung.
 
 > [!NOTE]
-> Wenn sich die Attribute auf mehreren Zeilen befinden, zieht der Editor jede Attributzeile ein, sodass das Einzugsmuster des übergeordneten Elements festgelegt wird.
+> Wenn die Attribute auf mehrere Zeilen verteilt sind, richtet der Editor jede Attributzeile am Einzug des jeweils übergeordneten Elements aus.
 
 **Attribute jeweils in einer eigenen Zeile ausrichten**
 
@@ -47,7 +47,7 @@ Formatiert den aus der Zwischenablage eingefügten XML-Text neu.
 
 **Bei Komplettierung des Endtags**
 
-Formatiert das Element neu, wenn das Endtag vervollständigt wird.
+Formatiert das Element nach Abschluss des Endtags neu.
 
 ## <a name="mixed-content"></a>Gemischter Inhalt
 
@@ -64,7 +64,7 @@ Wenn ein Element eine Mischung aus Text und Markup enthält, wird der Inhalt als
 </dir>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [XML-Optionen – Sonstiges](options-text-editor-xml-miscellaneous.md)
 - [XML-Tools in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

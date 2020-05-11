@@ -1,5 +1,5 @@
 ---
-title: Integration der Quell Code Verwaltung | Microsoft-Dokumentation
+title: Source Control Integration Essentials | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,50 +7,50 @@ helpviewer_keywords:
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcce3d8fdcc1c99c9b91bfebec572033ff3beb1a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723468"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705238"
 ---
 # <a name="source-control-integration-essentials"></a>Grundlagen der Integration der Quellcodeverwaltung
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten der Integration der Quell Code Verwaltung: ein Quellcodeverwaltungs-Plug-in, das grundlegende Funktionen bereitstellt und mithilfe der Quellcodeverwaltungs-Plug-in-API (ehemals MSSCCI-API) und einer VSPackage-basierten Quell Code Verwaltungs Lösung erstellt wird. Das bietet robustere Funktionen.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützt zwei Arten der Quellcodeverwaltungsintegration: ein Quellcodeverwaltungs-Plug-In, das grundlegende Funktionen bereitstellt und mithilfe der Quellcodeverwaltungs-Plug-In-API (früher als MSSCCI-API bekannt) erstellt wird, und eine VSPackage-basierte Quellcodeverwaltungsintegrationslösung, die robustere Funktionen bereitstellt.
 
-## <a name="source-control-plug-in"></a>Quellcodeverwaltungs-Plug-in
- Ein Quellcodeverwaltungs-Plug-in wird als DLL geschrieben, die die Quellcodeverwaltungs-Plug-in-API implementiert. Die Integrationsfunktionen für die Registrierung und die Quell Code Verwaltung werden über die API bereitgestellt. Dieser Ansatz ist einfacher zu implementieren als ein VSPackage für die Quell Code Verwaltung und verwendet die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Benutzeroberfläche (UI) für die meisten Quell Code Verwaltungsvorgänge.
+## <a name="source-control-plug-in"></a>Quellcodeverwaltung Plug-in
+ Ein Quellcodeverwaltungs-Plug-In wird als DLL geschrieben, die die Quellcodeverwaltungs-Plug-In-API implementiert. Die Registrierungs- und Quellcodeverwaltungsintegrationsfunktionalität wird über die API bereitgestellt. Dieser Ansatz ist einfacher zu implementieren als ein Quellcodeverwaltungs-VSPackage und verwendet die Benutzeroberfläche (UI) für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] meisten Quellcodeverwaltungsvorgänge.
 
- Gehen Sie folgendermaßen vor, um ein Quellcodeverwaltungs-Plug-in mithilfe der Quellcodeverwaltungs-Plug-in-API zu implementieren:
+ Gehen Sie folgendzubearid vor, um ein Quellcodeverwaltungs-Plug-In mithilfe der Quellcodeverwaltungs-Plug-In-API zu implementieren:
 
-1. Erstellen Sie eine DLL, die die in [Quellcodeverwaltungs-Plug-ins](../../extensibility/source-control-plug-ins.md)angegebenen Funktionen implementiert.
+1. Erstellen Sie eine DLL, die die in [Denksteuerungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)angegebenen Funktionen implementiert.
 
-2. Registrieren Sie die dll, indem Sie die entsprechenden Registrierungseinträge erstellen, wie unter Vorgehens [Weise: Installieren eines Quellcodeverwaltungs-Plug-ins](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)beschrieben.
+2. Registrieren Sie die DLL, indem Sie die entsprechenden Registrierungseinträge erstellen, wie unter [Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)beschrieben.
 
-3. Erstellen Sie eine hilfsprogrammbenutzer Oberfläche, und zeigen Sie diese an, wenn Sie vom Quellcodeverwaltungs-Adapter Paket (der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponente zur Behandlung der Quell Code Verwaltungs Funktionalität über Quellcodeverwaltungs-Plug-ins)
+3. Erstellen Sie eine Hilfsbenutzeroberfläche, und zeigen Sie sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] an, wenn Sie vom Quellcodeverwaltungsadapterpaket (der Komponente, die die Quellcodeverwaltungsfunktionalität über Quellcodeverwaltungs-Plug-Ins verarbeitet) aufgefordert werden.
 
-   Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-Plug-ins](../../extensibility/internals/creating-a-source-control-plug-in.md).
+   Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md).
 
-## <a name="source-control-vspackage"></a>Quellcodeverwaltungs-VSPackage
- Eine VSPackage-Implementierung der Quell Code Verwaltung ermöglicht die Entwicklung eines angepassten Ersatzes für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Quell Code Verwaltungs Benutzeroberfläche. Dieser Ansatz bietet eine umfassende Kontrolle über die Integration der Quell Code Verwaltung, erfordert jedoch die Bereitstellung der Benutzeroberflächen Elemente und die Implementierung der Quell Code Verwaltungs Schnittstellen, die andernfalls unter dem Plug-in-Ansatz bereitgestellt werden.
+## <a name="source-control-vspackage"></a>Quellcodeverwaltung VSPackage
+ Mit einer Quellcodeverwaltungs-VSPackage-Implementierung können Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] einen benutzerdefinierten Ersatz für die Quellcodeverwaltungsbenutzeroberfläche entwickeln. Dieser Ansatz bietet vollständige Kontrolle über die Quellcodeverwaltungsintegration, erfordert jedoch die Bereitstellung der UI-Elemente und die Implementierung der Quellcodeverwaltungsschnittstellen, die andernfalls im Rahmen des Plug-In-Ansatzes bereitgestellt würden.
 
- Zum Implementieren eines Quellcodeverwaltungs-VSPackage müssen Sie folgende Schritte ausführen:
+ Um ein Quellcodeverwaltungs-VSPackage zu implementieren, müssen Sie:
 
-1. Erstellen und registrieren Sie Ihr eigenes VSPackage für die Quell Code Verwaltung, wie unter [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)beschrieben.
+1. Erstellen und registrieren Sie Ihr eigenes Quellcodeverwaltungs-VSPackage, wie unter [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)beschrieben.
 
-2. Ersetzen Sie die Standard Oberfläche der Quell Code Verwaltung durch Ihre benutzerdefinierte Benutzeroberfläche. Siehe [benutzerdefinierte Benutzeroberfläche](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).
+2. Ersetzen Sie die standardmäßige Quellcodeverwaltungsbenutzeroberfläche durch Ihre benutzerdefinierte Benutzeroberfläche. Siehe [Benutzerdefinierte Benutzeroberfläche](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).
 
-3. Geben Sie Symbole an, die verwendet werden sollen, und behandeln Sie **Projektmappen-Explorer** Glyphe-Ereignisse. Siehe [Glyphe-Steuer](../../extensibility/internals/glyph-control-source-control-vspackage.md)Element.
+3. Geben Sie die zu verwendenden Glyphen an, und behandeln Sie die Symbolereignisse **des Projektmappen-Explorers.** Siehe [Glyphensteuerung](../../extensibility/internals/glyph-control-source-control-vspackage.md).
 
-4. Behandeln Sie Ereignisse zum Bearbeiten und Abfragen von Abfragen, wie in [Abfrage Bearbeitungs Abfrage speichern](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)gezeigt.
+4. Behandeln Sie Abfragebearbeitungs- und Abfragespeichern-Ereignisse, wie in [Query Edit Query Save](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)gezeigt.
 
-   Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackages](../../extensibility/internals/creating-a-source-control-vspackage.md).
+   Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht](../../extensibility/internals/source-control-integration-overview.md)
 - [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

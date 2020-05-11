@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE | Microsoft-Dokumentation
+title: REFERENCE_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c45457566682e373b879892cfdd26707102ebd5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329278"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713655"
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
-Gibt den Verweistyp.
+# <a name="reference_type"></a>REFERENCE_TYPE
+Gibt den Referenztyp an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,24 +44,24 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>Felder
  `REF_TYPE_WEAK`\
- Gibt einen schwachen Verweis an. Können nicht kombiniert werden, mit `REF_TYPE_STRONG`.
+ Gibt einen schwachen Verweis an. Kann nicht `REF_TYPE_STRONG`mit kombiniert werden.
 
  `REF_TYPE_STRONG`\
- Gibt einen starken Verweis an. Können nicht kombiniert werden, mit `REF_TYPE_WEAK`.
+ Gibt einen starken Verweis an. Kann nicht `REF_TYPE_WEAK`mit kombiniert werden.
 
-## <a name="remarks"></a>Hinweise
- Verwendet als die `dwRefType` Mitglied der [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Struktur.
+## <a name="remarks"></a>Bemerkungen
+ Wird als `dwRefType` Element der [DEBUG_REFERENCE_INFO-Struktur](../../../extensibility/debugger/reference/debug-reference-info.md) verwendet.
 
- Übergeben als Parameter an die [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) Methode.
+ Wird als Parameter an die [SetReferenceType-Methode](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) übergeben.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)

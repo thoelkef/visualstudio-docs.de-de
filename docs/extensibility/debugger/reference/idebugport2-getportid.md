@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortId | Microsoft-Dokumentation
+title: IDebugPort2::GetPortid | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortId
 ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc118bae5de4cc0b68498219b025f4144e4c5c82
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 97b0134b083b3f9b4697ce26bc4bd57c0b455a63
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343745"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725418"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
-Ruft die Port-ID ab.
+Ruft den Portbezeichner ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int GetPortId( 
 
 ## <a name="parameters"></a>Parameter
 `pguidPort`\
-[out] Gibt die GUID zurück, der den Port identifiziert.
+[out] Gibt die GUID zurück, die den Port identifiziert.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

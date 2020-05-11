@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778972"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Vorgehensweise: Anpassen von Spalten in Berichtsansichten
@@ -34,13 +34,13 @@ Leistungstools in Visual Studio Team System Development Edition sind in der inte
 
 - [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md)
 
-- [Aufrufstrukturansicht](../profiling/call-tree-view.md)
+- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view.md)
 
-- [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)
+- [Allocations View (Zuordnungsansicht)](../profiling/dotnet-memory-allocations-view.md)
 
-- [Objektlebensdaueransicht](../profiling/object-lifetime-view.md)
+- [Object Lifetime View (Objektlebensdaueransicht)](../profiling/object-lifetime-view.md)
 
-- [Markierungsansicht](../profiling/marks-view.md)
+- [Marks View (Markierungsansicht)](../profiling/marks-view.md)
 
 - [Prozessansicht](../profiling/process-view.md)
 
@@ -50,7 +50,7 @@ Leistungstools in Visual Studio Team System Development Edition sind in der inte
 
 2. Klicken Sie mit der rechten Maustaste auf die Berichtsansichtsoberfläche und anschließend auf **Spalten hinzufügen/entfernen**.
 
-     Es wird das Dialogfeld **Spalten hinzufügen/entfernen** angezeigt.
+     Das Dialogfeld **Spalten hinzufügen/entfernen** wird angezeigt.
 
 3. Wählen Sie die Spalten aus, die Sie hinzufügen möchten.
 

@@ -1,23 +1,23 @@
 ---
-title: Color-Tools für Farbdesigns | Microsoft-Dokumentation
+title: Farb-Themen-Tools | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ddf0121631525831f5f4e6971571321700b38b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50d45a7757771474cf2fd7c46a016e5ea685998e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338675"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709729"
 ---
-# <a name="color-theme-tools"></a>Tools für die Farbe Design
-Visual Studio SDK stellt mehrere Tools, mit denen Sie das Erstellen und Verwalten von Farbdesigns bereit.
+# <a name="color-theme-tools"></a>Farb-Design-Tools
+Das Visual Studio SDK bietet mehrere Tools, mit denen Sie Farbdesigns erstellen und verwalten können.
 
-- Die [VSIX-Farb-Editor](../../extensibility/internals/vsix-color-editor.md) Tool erstellen und Bearbeiten von Farben für Visual Studio.
+- Das [VSIX-Farbeditor-Tool](../../extensibility/internals/vsix-color-editor.md) kann benutzerdefinierte Farben für Visual Studio erstellen und bearbeiten.
 
-- Die [VSIX-Farbcompiler](../../extensibility/internals/vsix-color-compiler.md) Tool konvertiert vorhandene Visual Studio-Designs *XML* Dateien in *PKGDEF* Dateien für die Erweiterung.
+- Das [VSIX Color Compiler](../../extensibility/internals/vsix-color-compiler.md) Tool konvertiert vorhandene Visual Studio-Design *.xml-Dateien* in *.pkgdef* Dateien für Ihre Erweiterung.

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostMachineName | Microsoft-Dokumentation
+title: IDebugProgramHost2::GetHostMachineName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostMachineName
 ms.assetid: 4677ffe4-aa9b-4450-a63b-74cd3984d956
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6843856605505e23fc6c76834e83d54a998c90c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a3e134a4e766583c8996c01cb02789202b819bd1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325138"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722303"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
-Ruft den Namen des Computers, den der Hostprozess für dieses Programm ausgeführt wird.
+Ruft den Namen des Computers ab, auf dem der Prozess, auf dem dieses Programm gehostet wird, ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int GetHostMachineName( 
 
 ## <a name="parameters"></a>Parameter
 `pbstrHostMachineName`\
-[out] Gibt den Namen des Computers.
+[out] Gibt den Namen des Computers zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)

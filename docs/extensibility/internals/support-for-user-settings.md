@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für Benutzereinstellungen | Microsoft-Dokumentation
+title: Support für Benutzereinstellungen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,53 +7,53 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90f04d5657fb6f680139ee6de5a47625304b5dbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309755"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704789"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
-Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zustandsvariablen, die beibehalten werden, wenn ein Benutzer wählt definieren die **Import-/Exporteinstellungen** Befehl die **Tools** Menü. Zum Aktivieren der dieser Persistenz, die Sie verwenden der Einstellungen-APIs in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+Ein VSPackage kann eine oder mehrere Einstellungskategorien definieren, d. h. Gruppen von Zustandsvariablen, die beibehalten werden, wenn ein Benutzer im Menü **Extras** den Befehl **Import-/Exporteinstellungen** auswählt. Um diese Persistenz zu aktivieren, verwenden [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Sie die Einstellungs-APIs im .
 
- Ein Registrierungseintrag, der als eines benutzerdefinierten Einstellungspunkts und einer GUID bezeichnet wird definiert, eine VSPackage Einstellungskategorie. Eine VSPackage kann mehrere Einstellungskategorien unterstützen, die jeweils durch einen benutzerdefinierten Einstellungspunkt definiert.
+ Ein Registrierungseintrag, der als benutzerdefinierter Einstellungspunkt und GUID bezeichnet wird, definiert die Einstellungskategorie eines VSPackage. Ein VSPackage kann mehrere Einstellungskategorien unterstützen, die jeweils durch einen benutzerdefinierten Einstellungspunkt definiert sind.
 
-- Implementierungen von Einstellungen, die auf Interopassemblys basieren (mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> Schnittstelle) sollten Sie die benutzerdefinierten Einstellungspunkts durch Bearbeiten der Registrierungs oder mithilfe eines Skripts Registrierungsstelle (RGS-Datei) erstellen. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
+- Implementierungen von Einstellungen, die auf Interopassemblys (mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> Schnittstelle) basieren, sollten benutzerdefinierte Einstellungspunkte erstellen, indem Sie entweder die Registrierung bearbeiten oder ein Registrierungsskript (.rgs-Datei) verwenden. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
-- Code, der das Managed Package Framework (MPF) verwendet, sollten benutzerdefinierten Einstellungspunkten erstellen, durch Anfügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> für das VSPackage für jeden benutzerdefinierten Einstellungspunkts.
+- Code, der das Managed Package Framework (MPF) verwendet, <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sollte benutzerdefinierte Einstellungspunkte erstellen, indem für jeden benutzerdefinierten Einstellungspunkt ein an das VSPackage angefügt wird.
 
-     Wenn ein einzelne VSPackage mehrere benutzerdefinierten Einstellungspunkten unterstützt, jeder benutzerdefinierten Einstellungspunkts durch eine separate Klasse implementiert wird und jedes, indem eine eindeutige Instanz registriert wird der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse. Daher können die Einstellungen für einen implementierende Klasse mehr als eine Einstellungskategorie unterstützen.
+     Wenn ein einzelnes VSPackage mehrere benutzerdefinierte Einstellungspunkte unterstützt, wird jeder benutzerdefinierte Einstellungspunkt <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> von einer separaten Klasse implementiert, und jeder wird von einer eindeutigen Instanz der Klasse registriert. Folglich kann eine Einstellung, die Eine Klasse implementiert, mehr als eine Einstellungskategorie unterstützen.
 
-## <a name="custom-settings-point-registry-entry-details"></a>Benutzerdefinierte Einstellungen Punkt Eintrag Registrierungsdetails
- Benutzerdefinierten Einstellungspunkten werden in einem Registrierungseintrag an folgendem Speicherort erstellt: HKLM\Software\Microsoft\VisualStudio\\ *\<Version >* \UserSettings\\`<CSPName>`, wobei `<CSPName>` ist der Name des benutzerdefinierten Einstellungspunkts das VSPackage unterstützt und  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 8.0.
+## <a name="custom-settings-point-registry-entry-details"></a>Details zu benutzerdefinierten Einstellungen Punktregistrierungseinträge
+ Benutzerdefinierte Einstellungspunkte werden in einem Registrierungseintrag am folgenden Speicherort erstellt: HKLM-Software-Microsoft-VisualStudio-Version\\*\<>*,UserSettings\\`<CSPName>`, wobei `<CSPName>` der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Name des benutzerdefinierten Einstellungspunkts ist, den das VSPackage unterstützt, und * \<Version>* die Version von ist, z. B. 8.0.
 
 > [!NOTE]
-> Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) ist Initialisiert. Weitere Informationen finden Sie unter [Befehlszeilenoptionen](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Der Stammpfad der HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-Version\\*\<>* kann mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] einem alternativen Stamm überschrieben werden, wenn die integrierte Entwicklungsumgebung (IDE) initialisiert wird. Weitere Informationen finden Sie unter [Befehlszeilenschalter](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
- Die Struktur des Registrierungseintrags ist nachstehend dargestellt:
+ Die Struktur des Registrierungseintrags ist unten dargestellt:
 
- HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\
+ HKLM-Software-Microsoft-VisualStudio-Version\\*\<>*"UserSettings"
 
  `<CSPName`>= s '#12345'
 
- Paket = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'
+ Paket = ''XXXXXX XXXX XXXX XXXX XXXXXXXXX''
 
- Kategorie = "{YYYYYY JJJJ JJJJ JJJJ YYYYYYYYY}"
+ Kategorie = ''YYYYYY YYYY YYYY YYYY YYYY YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 
- ResourcePackage = "{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}"
+ ResourcePackage = ''ZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ''
 
- AlternateParent = "CategoryName"
+ AlternateParent = CategoryName
 
-| Name | Typ | Daten | Beschreibung |
+| Name | type | Daten | BESCHREIBUNG |
 |-----------------|--------| - | - |
-| (Standard) | REG_SZ | Name des benutzerdefinierten Einstellungspunkts | Der Schlüsselname `<CSPName`>, der nicht lokalisierte Name des benutzerdefinierten Einstellungspunkts.<br /><br /> Für basierend auf MPF-Implementierungen der Schlüsselname abgerufen wird, aus der `categoryName` und `objectName` Argumente der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Konstruktor in `categoryName_objectName`.<br /><br /> Der Schlüssel kann leer sein, oder die Verweis-ID, die lokalisierte Zeichenfolge in einer Satelliten-DLL enthalten. Dieser Wert wird abgerufen, von der `objectNameResourceID` Argument für die <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Konstruktor. |
-| Package | REG_SZ | GUID | Die GUID des VSPackage, das die benutzerdefinierten Einstellungspunkts implementiert.<br /><br /> Implementierungen je nach MPF der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse, verwenden Sie den Konstruktor des `objectType` , enthält der VSPackages Argument <xref:System.Type> und Reflektion, um diesen Wert zu erhalten. |
-| Kategorie | REG_SZ | GUID | GUID, die die Einstellungskategorie identifiziert werden.<br /><br /> Für Implementierungen, die basierend auf interop-Assemblys, kann dieser Wert kann nach dem Zufallsprinzip gewählten sein GUID, die die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE übergibt an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> Methoden. Alle Implementierungen dieser beiden Methoden sollten überprüfen, ob ihre GUID-Argumente.<br /><br /> Für Implementierungen basierend auf MPF-diese GUID wird abgerufen, indem die <xref:System.Type> von der Klasse implementiert die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] einstellungsmechanismus. |
-| ResourcePackage | REG_SZ | GUID | Dies ist optional.<br /><br /> Pfad zur Satelliten-DLL mit lokalisierte Zeichenfolgen auf, wenn das VSPackage implementierende, wird diese nicht bereitgestellt.<br /><br /> MPF verwendet Reflektion, um die richtige Ressource VSPackage, erhalten so die <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse wird dieses Argument nicht festgelegt. |
-| AlternateParent | REG_SZ | Der Name des Ordners, unter der Extras Optionen-Seite, enthält dieses benutzerdefinierten Einstellungspunkts. | Dies ist optional.<br /><br /> Sie müssen diesen Wert festlegen, nur, wenn eine einstellungenimplementierung unterstützt **Extras/Optionen** Seiten, verwenden den persistenzmechanismus in, der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] statt der Mechanismus in das Automatisierungsmodell zum Zustand zu speichern.<br /><br /> In diesen Fällen ist der Wert im Schlüssel AlternateParent ist die `topic` Teil der `topic.sub-topic` Zeichenfolge zur Identifizierung der entsprechenden **ToolsOptions** Seite. Z. B. für die **ToolsOptions** Seite `"TextEditor.Basic"` wäre der Wert des AlternateParent `"TextEditor"`.<br /><br /> Wenn <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> des benutzerdefinierten Einstellungspunkts, generiert es ist identisch mit den Namen der Kategorie. |
+| (Standardwert) | REG_SZ | Name des benutzerdefinierten Einstellungspunkts | Der Name des `<CSPName` Schlüssels,>, ist der nicht lokalisierte Name des benutzerdefinierten Einstellungspunkts.<br /><br /> Bei Implementierungen, die auf MPF basieren, wird `categoryName` der `objectName` Name <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> des Schlüssels durch Kombinieren der und Argumente des Konstruktors in `categoryName_objectName`ermittelt.<br /><br /> Der Schlüssel kann leer sein oder die Referenz-ID auf die lokalisierte Zeichenfolge in einer Satelliten-DLL enthalten. Dieser Wert wird `objectNameResourceID` aus dem <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Argument an den Konstruktor abgerufen. |
+| Paket | REG_SZ | GUID | Die GUID des VSPackage, das den benutzerdefinierten Einstellungspunkt implementiert.<br /><br /> Implementierungen, die auf <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> MPF unter Verwendung der `objectType` Klasse basieren, verwenden <xref:System.Type> Sie das Argument des Konstruktors, das die VSPackages und die Reflektion enthält, um diesen Wert zu erhalten. |
+| Category | REG_SZ | GUID | GUID, die die Einstellungskategorie identifiziert.<br /><br /> Bei Implementierungen, die auf Interopassemblys basieren, kann dieser Wert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] eine beliebig ausgewählte GUID sein, die die IDE an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> Methoden übergibt. Alle Implementierungen dieser beiden Methoden sollten ihre GUID-Argumente überprüfen.<br /><br /> Für Implementierungen, die auf MPF basieren, <xref:System.Type> wird diese [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] GUID von der Klasse abgerufen, die den Einstellungsmechanismus implementiert. |
+| ResourcePackage | REG_SZ | GUID | Optional.<br /><br /> Pfad zur Satelliten-DLL, die lokalisierte Zeichenfolgen enthält, wenn das implementierende VSPackage sie nicht liefert.<br /><br /> MPF verwendet Reflektion, um die richtige <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Ressource VSPackage abzusondern, sodass die Klasse dieses Argument nicht setzt. |
+| AlternateParent | REG_SZ | Name des Ordners unter der Seite Tools-Optionen, die diesen benutzerdefinierten Einstellungspunkt enthält. | Optional.<br /><br /> Sie müssen diesen Wert nur festlegen, wenn eine Einstellungsimplementierung **Tools-Optionsseiten** unterstützt, die den Persistenzmechanismus im [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] nicht den Mechanismus im Automatisierungsmodell zum Speichern des Status verwenden.<br /><br /> In diesen Fällen ist der Wert im `topic` AlternateParent-Schlüssel der Abschnitt der Zeichenfolge, der `topic.sub-topic` zum Identifizieren der bestimmten **ToolsOptions-Seite** verwendet wird. Für die Seite `"TextEditor.Basic"` **ToolsOptions** wäre der Wert `"TextEditor"`von AlternateParent beispielsweise .<br /><br /> Wenn <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> der benutzerdefinierte Einstellungspunkt generiert wird, entspricht er dem Kategorienamen. |

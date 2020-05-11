@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594330"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen mit dem Auslastungstest-Editor
@@ -53,7 +53,7 @@ Sie können die Indikatoren mit dem **Auslastungstest-Editor** verwalten. Dem Te
 
 6. Wählen Sie einen Indikator und eine Instanz aus, die dem benutzerdefinierten Indikatorensatz hinzugefügt werden sollen.
 
-     \- oder -
+     \- oder –
 
      Aktivieren Sie das Optionsfeld **Alle Indikatoren**, um alle verfügbaren Indikatoren auszuwählen.
 
@@ -62,7 +62,7 @@ Sie können die Indikatoren mit dem **Auslastungstest-Editor** verwalten. Dem Te
     > [!NOTE]
     > Außerdem ist es möglich, Indikatoren einem Indikatorensatz hinzuzufügen, indem Sie einen vorhandenen Indikator oder eine Indikatorkategorie auswählen, auf „Kopieren“ klicken und den Indikator dann im gewünschten Indikatorensatzknoten einfügen. Wenn zusätzliche Indikatoren kopiert wurden, die nicht benötigt werden, können diese gelöscht werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md)

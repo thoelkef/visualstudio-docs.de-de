@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774079"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zeilenansicht: Samplingdaten zum .NET-Speicher
@@ -41,10 +41,10 @@ In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, 
 
   Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.
 
-|Spalte|BESCHREIBUNG|
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
-|**Prozessname**|Der Prozessname.|
+|**Prozessname**|Der Name des Prozesses.|
 |**Modulname**|Der Name des Moduls, das die Anweisung enthält.|
 |**Modulpfad**|Der Pfad des Moduls, das die Anweisung enthält.|
 |**Quelldatei**|Die Quelldatei, die die Anweisung enthält.|
@@ -61,5 +61,5 @@ In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, 
 |**Exklusive Bytes**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|
 |**Exklusive Bytes %**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zeilenansicht](../profiling/lines-view-sampling-data.md)

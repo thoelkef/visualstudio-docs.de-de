@@ -2,7 +2,7 @@
   items:
     - name: Analysieren und Modellieren der Architektur
       href: analyze-and-model-your-architecture.md
-    - name: Neuigkeiten
+    - name: Neues
       href: what-s-new-for-design-in-visual-studio.md
     - name: 'Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung'
       href: scenario-change-your-design-using-visualization-and-modeling.md
@@ -102,7 +102,7 @@
               href: standard-stereotypes-for-uml-models.md
             - name: Installieren eines UML-Profils
               href: install-a-uml-profile.md
-        - name: Verknüpfen von Modellelementen und Arbeitsaufgaben
+        - name: Verknüpfen von Modellelementen und Arbeitselemente
           href: link-model-elements-and-work-items.md
         - name: Freigeben von Modellen und Exportieren von Diagrammen
           items:

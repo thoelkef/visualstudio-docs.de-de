@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen und Ändern von MIP-Ebenen'
+title: 'Gewusst wie: Erstellen und Ändern von MIP-Ebenen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793d730df3942608451e7dbc329819b98c451973
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113280"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Vorgehensweise: Erstellen und Ändern von MIP-Ebenen
@@ -23,7 +23,7 @@ Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *
 
 #### <a name="to-generate-mip-levels"></a>So generieren Sie MIP-Ebenen
 
-1. Beginnen Sie mit einer einfachen Textur, wie unter [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben. Um bestmögliche Ergebnisse zu erzielen, geben Sie eine Textur an, deren Breite und Höhe der Potenz 2 entsprechen, z. B. 256, 512, 1024 usw.
+1. Erstellen Sie wie unter [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben eine Basistextur. Um bestmögliche Ergebnisse zu erzielen, geben Sie eine Textur an, deren Breite und Höhe der Potenz 2 entsprechen, z. B. 256, 512, 1024 usw.
 
 2. Generieren Sie die MIP-Ebenen. Klicken Sie auf der Symbolleiste des **Bildbearbeitungsmodus** auf **Erweitert** > **Extras** > **MIPS generieren**.
 
@@ -39,8 +39,8 @@ Um Spezialeffekte zu erzielen oder die Bildqualität auf bestimmten Detailebenen
 2. Nachdem Sie die MIP-Ebene ausgewählt haben, die Sie ändern möchten, können Sie die Zeichenwerkzeuge verwenden, um sie zu ändern, ohne den Inhalt anderer MIP-Ebenen zu ändern. Die Zeichenwerkzeuge sind auf der Symbolleiste **Bildbearbeitung** verfügbar. Nachdem Sie ein Tool ausgewählt haben, können Sie seine Eigenschaften im Fenster **Eigenschaften** ändern. Informationen zu den Zeichentools und ihren Eigenschaften finden Sie unter [Bildbearbeitung](../designers/image-editor.md).
 
 > [!NOTE]
-> Wenn eine Änderung der Inhalte der einzelnen MIP-Ebenen (wie zum Erreichen bestimmter Effekte) nicht erforderlich ist, wird empfohlen, Mipmaps zur Buildzeit aus der Quelltextur zu generieren. Dies hilft, sicherzustellen, dass MIP-Ebenen synchron mit der Quelltextur bleiben, da Änderungen an einer MIP-Ebene nicht automatisch an andere Ebenen weitergegeben werden. Weitere Informationen zur Generierung von Mipmaps zur Buildzeit finden Sie unter [Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+> Wenn eine Änderung der Inhalte der einzelnen MIP-Ebenen (wie zum Erreichen bestimmter Effekte) nicht erforderlich ist, wird empfohlen, Mipmaps zur Buildzeit aus der Quelltextur zu generieren. Dies hilft, sicherzustellen, dass MIP-Ebenen synchron mit der Quelltextur bleiben, da Änderungen an einer MIP-Ebene nicht automatisch an andere Ebenen weitergegeben werden. Weitere Informationen zum Erstellen von Mipmaps zur Buildzeit finden Sie unter [Vorgehensweise: Erstellen einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md)
+- [Vorgehensweise: Erstellen einer einfachen Textur](../designers/how-to-create-a-basic-texture.md)

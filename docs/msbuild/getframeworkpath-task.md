@@ -13,22 +13,25 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747554"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634005"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
+
+Ruft den Pfad zu den .NET Framework-Assemblys ab.
 Ruft den Pfad zu den .NET Framework-Assemblys ab.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
+
 In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -40,12 +43,14 @@ In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe be
 |`FrameworkVersion40Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den Assemblys der Framework-Version 4.0, sofern vorhanden. Andernfalls wird `null` zurückgegeben.|
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den neuesten Frameworkassemblys, sofern diese verfügbar sind. Andernfalls wird `null` zurückgegeben.|
 
-## <a name="remarks"></a>Anmerkungen
-Wenn mehrere Versionen von .NET Framework installiert sind, gibt dieser Task die Version zurück, in der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt werden soll.
+## <a name="remarks"></a>Hinweise
+
+Wenn mehrere Versionen von .NET Framework installiert sind, gibt diese Aufgabe die Version zurück, mit der MSBuild ausgeführt werden soll.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird mit dem Task `GetFrameworkPath` der Pfad zu .NET Framework in der `FrameworkPath`-Eigenschaft gespeichert.
 
 ```xml
@@ -61,5 +66,6 @@ Im folgenden Beispiel wird mit dem Task `GetFrameworkPath` der Pfad zu .NET Fram
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

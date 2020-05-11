@@ -1,50 +1,50 @@
 ---
-title: Erstellen eines Quellcodeverwaltungs-VSPackages | Microsoft-Dokumentation
+title: Erstellen eines Quellcodeverwaltungs-VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259273eee51c74eb7cb5ca4534db9bc575fd1758
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345491"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709190"
 ---
 # <a name="create-a-source-control-vspackage"></a>Erstellen eines Quellcodeverwaltungs-VSPackage
-Diese Dokumentation enthält Links zu der Architekturübersicht des ein Source-Control-Paket integriert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], die API, die durch die Schnittstellen implementiert werden und die Dienste zur Nutzung definiert wird, und ein Beispiel, das veranschaulicht, eine einfache Quelle Steuern Sie die paketimplementierung.
+Diese Dokumentation enthält Links zur Architekturübersicht eines Quellcodeverwaltungspakets, das in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]integriert ist, der API, die durch die zu implementierenden Schnittstellen und die zu nutzenden Dienste definiert wird, sowie ein Beispiel, das eine einfache Quellcodeverwaltungspaketimplementierung veranschaulicht.
 
- Sie können mit der quellcodeverwaltung VSPackage, einen enge Integration Pfad für die quellcodeverwaltung für die Integration erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Dadurch werden das Paket, das Standard-Datenquellen-Steuerelement von gehosteten UI umgehen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], reagieren auf Source-Control-Anforderungen aus dem Projektsystem und interagieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponenten wie z. B. **Projektmappen-Explorer**. Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] einen Mechanismus für die ein VSPackage zu erstellen, die integriert werden können Partner [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mithilfe eines Dienstmodells.
+ Mit einem Quellcodeverwaltungs-VSPackage können Sie einen tiefen Integrationspfad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]für die Quellcodeverwaltung erstellen, der in integriert werden soll. Es ermöglicht dem Paket, die standardmäßige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Quellcodeverwaltungs-UI zu umgehen, die von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gehostet wird, auf Quellcodeverwaltungsanforderungen des Projektsystems zu reagieren und mit Komponenten wie **dem Projektmappen-Explorer**zu interagieren. Der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ermöglicht [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Partnern einen Mechanismus zum Erstellen eines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage, das in die Verwendung eines Dienstmodells integriert werden kann.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Erste Schritte](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
- Erläutert das Quellcodeverwaltungspaket, die eine erweiterte Alternative zum das Quellcodeverwaltungs-Plug-In für die Implementierung von Funktionen in quellcodeverwaltung ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Erläutert das Quellcodeverwaltungspaket, das eine erweiterte Alternative zum Quellcodeverwaltungs-Plug-In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]zum Implementieren von Quellcodeverwaltungsfeatures in darstellt.
 
-- [Architektur](../../extensibility/internals/source-control-vspackage-architecture.md)
+- [Aufbau](../../extensibility/internals/source-control-vspackage-architecture.md)
 
- Zeigt ein Diagramm und erläutert die Komponenten ein Quellcode-Verwaltungspaket.
+ Stellt ein Diagramm vor und erläutert die Komponenten eines Quellcodeverwaltungspakets.
 
 - [Features](../../extensibility/internals/source-control-vspackage-features.md)
 
- Beschreibt die verschiedenen Funktionen ein Quellcode-Verwaltungspaket.
+ Beschreibt die verschiedenen Features eines Quellcodeverwaltungspakets.
 
-- [Entwurfselemente](../../extensibility/internals/source-control-vspackage-design-elements.md)
+- [Designelemente](../../extensibility/internals/source-control-vspackage-design-elements.md)
 
- Beschreibt die Struktur des VSPackage, die ein Quellcode-Verwaltungspaket für die Tiefe Integration implementieren müssen.
+ Beschreibt die Struktur des VSPackage, die ein Quellcodeverwaltungspaket für eine tiefe Integration implementieren muss.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Erstellen eines Quellcodeverwaltungs-Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+- [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- Erläutert, wie ein Quellcodeverwaltungs-Plug-in erstellen, die Quellcodeverwaltungsfunktionen in stellt das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Source Control-Benutzeroberfläche (UI).
+ Erläutert, wie ein Quellcodeverwaltungs-Plug-In erstellt wird, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] das Quellcodeverwaltungsfunktionen in der Quellcodeverwaltungsbenutzeroberfläche bereitstellt.
 
-- [Datenquellen-Steuerelement](../../extensibility/internals/source-control.md)
+- [Quellcodeverwaltung](../../extensibility/internals/source-control.md)
 
- Erläutert die Optionen zum Implementieren von Datenquellen-Steuerelement als eine integrierte Funktion von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Erläutert die Optionen für die Implementierung der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Quellcodeverwaltung als integriertes Feature von .

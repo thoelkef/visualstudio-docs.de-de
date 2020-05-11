@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347527"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719195"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Ruft die debugadresse, die eine angegebenen Adresse in einer Methode folgt.
+Ruft die Debugadresse ab, die einer bestimmten Debugadresse in einer Methode folgt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Wenn die debugadresse.
+[in] Angegebene Debugadresse.
 
 `fStatementOnly`\
-[in] True gibt an, beschränkt die Debug-Adressen zu einer einzigen Anweisung.
+[in] Wenn TRUE, beschränkt die Debugadressen auf eine einzelne Anweisung.
 
 `ppAddress`\
-[out] Gibt die Adresse des nächste Debuggen zurück.
+[out] Gibt die nächste Debugadresse zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt einen gültigen `HRESULT`, in der Regel S_OK.
+ Gibt eine `HRESULT`gültige , in der Regel S_OK zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

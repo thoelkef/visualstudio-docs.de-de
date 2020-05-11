@@ -1,17 +1,18 @@
 ---
 title: Technischer Support-Vorteil
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706983"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301945"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können Probleme bei der Problemlösung für Produkte in **produktionsfernen Umgebungen** gelöst werden, die sich noch in der Standardsupportphase des [Supportlebenszyklus](https://support.microsoft.com/lifecycle/search) befinden. Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden; bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents, geltend 1 Jahr lang ab Aktivierung des Vorteils. Die Aktivierung des Vorteils muss stattfinden, während das Abonnement aktiv ist.
@@ -38,7 +39,7 @@ Beschreibungen auf Produktebene: Erweitern Sie **Nicht verfügbare Supportpläne
 2. Dadurch wird eine Chatsitzung mit einem Mitarbeiter gestartet, der Ihre **Vertrags-ID** und Ihre **Zugriffs-ID** erstellen und diese für Ihre Unterlagen per E-Mail bereitstellen kann.
 
 3. Sie müssen dem Mitarbeiter Folgendes angeben, um den Vorgang abzuschließen:
-   - Ihr Land
+   - Ihr Land/Ihre Region
    - Firmenname
    - Ihr vollständiger Name
    - Die E-Mail Adresse, die Sie für die Anmeldung bei Ihrem Abonnement verwenden.
@@ -51,7 +52,7 @@ Beschreibungen auf Produktebene: Erweitern Sie **Nicht verfügbare Supportpläne
 4. Nach diesem Prozess erhalten Sie eine E-Mail mit Ihrer **Vertrags-ID** und **Zugriffs-ID**, die Sie verwenden können, wenn Sie ein Support-Incident erstellen möchten.  Außerdem werden Anweisungen für die Übermittlung von Supportfällen mithilfe ihrer neuen Zugriffs- und Vertrags-ID bereitgestellt. 
 
 > [!NOTE]
-> Wählen Sie Ihr Land aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.
+> Wählen Sie Ihr Land/Ihre Region aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Einreichen eines Incidents mithilfe Ihres Vorteils
 Sobald Ihre **Vertrags-ID** und **Zugriffs-ID** eingerichtet wurden, können Sie diese verwenden, um [online](https://support.microsoft.com/oas/) einen technischen Support-Incident einzureichen (Anmeldung erforderlich), oder über das [Azure-Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview), oder, indem Sie die Nummer des technischen Supports für Ihr Land anrufen. Wenn Sie einen Incident online einreichen, kann Sie ein Microsoft-Support-Experte anrufen.
@@ -120,11 +121,17 @@ Sie müssen Ihre Vertrags-ID und Ihre Zugriffs-ID mit Ihrem Azure-Abonnement ver
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 ||
 
-<sup>1</sup> *Umfasst: Imagine Premium, BizSpark. Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup> *Umfasst: Imagine Premium, BizSpark. Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
-<sup>2</sup> *Umfasst: Imagine Standard*
+<sup>2</sup> *Umfasst: Imagine Standard*
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:

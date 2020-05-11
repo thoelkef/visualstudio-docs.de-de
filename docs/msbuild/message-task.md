@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592177"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865361"
 ---
 # <a name="message-task"></a>Meldungsaufgabe
+
 Protokolliert eine Meldung während eines Builds
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `Message` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
@@ -37,15 +39,17 @@ Protokolliert eine Meldung während eines Builds
 |`Text`|Optionaler `String`-Parameter.<br /><br /> Der zu protokollierende Fehlertext.|
 
 ## <a name="remarks"></a>Hinweise
- Aufgrund der `Message`-Aufgabe können [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekte in verschiedenen Schritten des Buildprozesses Nachrichten an die Protokollierungen senden.
+
+ Die Aufgabe `Message` ermöglicht es MSBuild-Projekten, in verschiedenen Schritten des Buildprozesses Nachrichten an die Protokollierungen auszugeben.
 
  Wenn der `Condition`-Parameter `true` ergibt, wird der Wert des `Text`-Parameters protokolliert und der Build weiter ausgeführt. Wenn kein `Condition`-Parameter vorhanden ist, wird der Nachrichtentext protokolliert. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Die Nachricht wird in der Regel an die MSBuild-Konsolenprotokollierung gesendet. Sie können diese Einstellung ändern, indem Sie den <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>-Parameter festlegen. Die Protokollierung interpretiert den `Importance` Parameter. Normalerweise wird eine Nachricht gesendet, die auf `high` gesetzt ist, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` oder höher eingestellt ist. Es wird eine Nachricht gesendet, die auf `low` gesetzt ist, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` eingestellt ist.
+ Standardmäßig wird die Nachricht an alle registrierten Protokollierungen gesendet. Die Protokollierung interpretiert den `Importance` Parameter. In der Regel wird eine Nachricht, die auf den Wert `high` festgelegt ist, gesendet, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Minimal` festgelegt ist. oder höher. Eine Nachricht mit dem Wert `low` wird gesendet, wenn die Ausführlichkeit der Protokollierung auf <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Detailed` festgelegt ist.
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
+
  Im folgenden Codebeispiel werden Nachrichten in allen registrierten Protokollierungen protokolliert.
 
 ```xml
@@ -59,5 +63,6 @@ Protokolliert eine Meldung während eines Builds
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)

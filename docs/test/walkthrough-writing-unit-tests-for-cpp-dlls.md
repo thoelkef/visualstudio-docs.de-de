@@ -2,17 +2,17 @@
 title: 'Vorgehensweise: Schreiben von Komponententests für C++-DLLs'
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+author: corob-msft
+ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661899"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77275422"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -36,7 +36,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ## <a name="create_test_project"></a> Ein natives Komponententestprojekt erstellen
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus.
 
      **Visual Studio 2017 und früher**: Erweitern Sie **Installiert** > **Vorlagen** > **Visual C++**  > **Test**.
      **Visual Studio 2019**: Legen Sie **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein.
@@ -72,7 +72,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          Beachten Sie, dass die `Assert` -Klasse mehrere statische Methoden zur Verfügung stellt, die Sie verwenden können, um Ergebnisse in den Testmethoden zu überprüfen.
 
-    2. Klicken Sie im Menü **Test** auf **Ausführen** > **Alle Tests**.
+    2. Klicken Sie im Menü **Test** auf **Ausführen** >  **Alle Tests**.
 
          Der Test wird erstellt und ausgeführt.
 
@@ -371,5 +371,5 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 - [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-- [Walkthrough: Creating and using a dynamic link library (C++) (Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++))](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Exemplarische Vorgehensweise: Creating and using a dynamic link library (C++) (Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++))](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importieren und Exportieren](/cpp/build/importing-and-exporting)

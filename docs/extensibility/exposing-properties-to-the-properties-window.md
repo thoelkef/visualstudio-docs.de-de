@@ -1,5 +1,5 @@
 ---
-title: Verfügbarmachen der Eigenschaften für das Fenster "Eigenschaften" | Microsoft-Dokumentation
+title: Eigenschaften für das Eigenschaftenfenster anzeigen | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,37 +7,37 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cd1f44342199c26506cceb4c77378b13aefd566
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341225"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711825"
 ---
-# <a name="expose-properties-to-the-properties-window"></a>Verfügbarmachen der Eigenschaften, um das Fenster "Eigenschaften"
+# <a name="expose-properties-to-the-properties-window"></a>Verfügbar machen von Eigenschaften im Eigenschaftenfenster
 
-In dieser exemplarischen Vorgehensweise macht die öffentlichen Eigenschaften eines Objekts auf der **Eigenschaften** Fenster. Die Änderungen, die Sie, um diese Eigenschaften vornehmen werden angezeigt, der **Eigenschaften** Fenster.
+In dieser exemplarischen Vorgehensweise werden die öffentlichen Eigenschaften eines Objekts für das **Eigenschaftenfenster** verfügbar gemacht. Die Änderungen, die Sie an diesen Eigenschaften vornehmen, werden im **Eigenschaftenfenster** widergespiegelt.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="expose-properties-to-the-properties-window"></a>Verfügbarmachen der Eigenschaften, um das Fenster "Eigenschaften"
+## <a name="expose-properties-to-the-properties-window"></a>Verfügbar machen von Eigenschaften im Eigenschaftenfenster
 
-In diesem Abschnitt können Sie auch ein benutzerdefiniertes Toolfenster zu erstellen und Anzeigen der öffentlichen Eigenschaften des Objekts im zugehörigen Fenster im Bereich der **Eigenschaften** Fenster.
+In diesem Abschnitt erstellen Sie ein benutzerdefiniertes Toolfenster und zeigen die öffentlichen Eigenschaften des zugeordneten Fensterbereichsobjekts im **Eigenschaftenfenster** an.
 
-### <a name="to-expose-properties-to-the-properties-window"></a>Eigenschaften für das Fenster "Eigenschaften" verfügbar machen.
+### <a name="to-expose-properties-to-the-properties-window"></a>So machen Sie Eigenschaften für das Eigenschaftenfenster verfügbar
 
-1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Projekt-Bereitstellung, die die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt namens `MyObjectPropertiesExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld, indem Sie nach "Vsix" suchen.
+1. Jede Visual Studio-Erweiterung beginnt mit einem VSIX-Bereitstellungsprojekt, das die Erweiterungselemente enthält. Erstellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Sie ein `MyObjectPropertiesExtension`VSIX-Projekt mit dem Namen . Die VSIX-Projektvorlage finden Sie im Dialogfeld **Neues Projekt,** indem Sie nach "vsix" suchen.
 
-2. Fügen Sie ein Toolfenster durch Hinzufügen eines benutzerdefinierten Toolfensters Elements einer Vorlage mit dem Namen `MyToolWindow`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **Dialogfeld "Neues Element hinzufügen"** , wechseln Sie zu **Visual c#-Elemente** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Toolfensters**. In der **Namen** Feld am unteren Rand des Dialogfelds, ändern Sie den Dateinamen an *MyToolWindow.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Toolfensters finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Fügen Sie ein Toolfenster hinzu, indem `MyToolWindow`Sie eine elementemustergebundene Vorlage für das benutzerdefinierte Werkzeugfenster mit dem Namen hinzufügen. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus. Wechseln Sie im **Dialogfeld Neues Element hinzufügen**zu **Visual C-Items** > **Extensibility,** und wählen Sie **Benutzerdefiniertes Werkzeugfenster**aus. Ändern Sie im Feld **Name** am unteren Rand des Dialogfelds den Dateinamen in *MyToolWindow.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Werkzeugfensters finden Sie unter [Erstellen einer Erweiterung mit einem Werkzeugfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-3. Open *MyToolWindow.cs* und fügen Sie die folgenden using-Anweisung:
+3. Öffnen *Sie MyToolWindow.cs,* und fügen Sie die folgende Using-Anweisung hinzu:
 
    ```csharp
    using System.Collections;
@@ -45,7 +45,7 @@ In diesem Abschnitt können Sie auch ein benutzerdefiniertes Toolfenster zu erst
    using Microsoft.VisualStudio.Shell.Interop;
    ```
 
-4. Fügen Sie jetzt die folgenden Felder mit den `MyToolWindow` Klasse.
+4. Fügen Sie nun die `MyToolWindow` folgenden Felder zur Klasse hinzu.
 
    ```csharp
    private ITrackSelection trackSel;
@@ -53,7 +53,7 @@ In diesem Abschnitt können Sie auch ein benutzerdefiniertes Toolfenster zu erst
 
    ```
 
-5. Fügen Sie der `MyToolWindow` -Klasse folgenden Code hinzu.
+5. Fügen Sie der `MyToolWindow` -Klasse den folgenden Code hinzu.
 
    ```csharp
    private ITrackSelection TrackSelection
@@ -90,27 +90,27 @@ In diesem Abschnitt können Sie auch ein benutzerdefiniertes Toolfenster zu erst
    }
    ```
 
-    Die `TrackSelection` Eigenschaft verwendet `GetService` zum Abrufen einer `STrackSelection` -Dienst, der bietet eine <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> Schnittstelle. Die `OnToolWindowCreated` -Ereignishandler und `SelectList` Methode gemeinsam erstellen Sie eine Liste der ausgewählten Objekte, die nur der Bereich toolfensterobjekt selbst enthält. Die `UpdateSelection` Methode teilt dem **Eigenschaften** Fenster, um die öffentlichen Eigenschaften der Tool-Fensterbereich anzuzeigen.
+    Die `TrackSelection` Eigenschaft `GetService` verwendet, `STrackSelection` um einen <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> Dienst abzuerhalten, der eine Schnittstelle bereitstellt. Der `OnToolWindowCreated` Ereignishandler `SelectList` und die Methode erstellen zusammen eine Liste ausgewählter Objekte, die nur das Werkzeugfensterfensterobjekt selbst enthält. Die `UpdateSelection` Methode weist das **Eigenschaftenfenster** an, die öffentlichen Eigenschaften des Werkzeugfensterbereichs anzuzeigen.
 
 6. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio sollte angezeigt werden.
 
-7. Wenn die **Eigenschaften** nicht sichtbar ist, öffnen Sie sie durch Drücken von **F4**.
+7. Wenn das **Eigenschaftenfenster** nicht sichtbar ist, öffnen Sie es, indem Sie **F4**drücken.
 
-8. Öffnen der **MyToolWindow** Fenster. Sie finden es im **Ansicht** > **Other Windows**.
+8. Öffnen Sie das **Fenster MyToolWindow.** Sie finden es in **View** > **Other Windows**.
 
-    Das Fenster wird geöffnet und die öffentlichen Eigenschaften des Fensterbereichs angezeigt, der **Eigenschaften** Fenster.
+    Das Fenster wird geöffnet, und die öffentlichen Eigenschaften des Fensterbereichs werden im **Eigenschaftenfenster** angezeigt.
 
-9. Ändern der **Beschriftung** -Eigenschaft in der **Eigenschaften** Fenster **Meine Objekteigenschaften**.
+9. Ändern Sie die **Caption-Eigenschaft** im **Eigenschaftenfenster** in **Meine Objekteigenschaften**.
 
-     Die fensterbeschriftung MyToolWindow ändert sich entsprechend.
+     Die MyToolWindow-Fensterbeschriftung ändert sich entsprechend.
 
-## <a name="expose-tool-window-properties"></a>Verfügbarmachen der Eigenschaften der Tool-Fenster
+## <a name="expose-tool-window-properties"></a>Verfügbar machen von Werkzeugfenstereigenschaften
 
-In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügbar machen. Die Änderungen, die Sie, um die Eigenschaften vornehmen werden angezeigt, der **Eigenschaften** Fenster.
+In diesem Abschnitt fügen Sie ein Toolfenster hinzu und machen dessen Eigenschaften verfügbar. Die Änderungen, die Sie an Eigenschaften vornehmen, werden im **Eigenschaftenfenster** widergespiegelt.
 
-### <a name="to-expose-tool-window-properties"></a>Tool-Fenstereigenschaften verfügbar zu machen
+### <a name="to-expose-tool-window-properties"></a>So machen Sie Werkzeugfenstereigenschaften verfügbar
 
-1. Open *MyToolWindow.cs*, und fügen Sie die öffentliche boolesche Eigenschaft IsChecked hinzu, die `MyToolWindow` Klasse.
+1. Öffnen *Sie MyToolWindow.cs*, und fügen Sie der `MyToolWindow` Klasse die öffentliche boolesche Eigenschaft IsChecked hinzu.
 
     ```csharp
     [Category("My Properties")]
@@ -127,9 +127,9 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
     }
     ```
 
-     Diese Eigenschaft ruft den Zustand ab, aus der WPF-Kontrollkästchen, das Sie später erstellen.
+     Diese Eigenschaft erhält ihren Status aus dem WPF-Kontrollkästchen, das Sie später erstellen werden.
 
-2. Open *MyToolWindowControl.xaml.cs* und Ersetzen Sie den MyToolWindowControl-Konstruktor durch den folgenden Code.
+2. Öffnen *Sie MyToolWindowControl.xaml.cs* und ersetzen Sie den MyToolWindowControl-Konstruktor durch den folgenden Code.
 
     ```vb
     private MyToolWindow pane;
@@ -141,19 +141,19 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
     }
     ```
 
-     Dadurch werden `MyToolWindowControl` Zugriff auf die `MyToolWindow` Bereich.
+     Dadurch `MyToolWindowControl` wird der `MyToolWindow` Zugriff auf den Bereich ermöglicht.
 
-3. In *MyToolWindow.cs*, ändern Sie die `MyToolWindow` Konstruktor wie folgt:
+3. Ändern *Sie*in `MyToolWindow` MyToolWindow.cs den Konstruktor wie folgt:
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
     ```
 
-4. Ändern Sie in der Entwurfsansicht des MyToolWindowControl.
+4. Ändern Sie die Entwurfsansicht von MyToolWindowControl.
 
-5. Die Schaltfläche "löschen", und fügen Sie das Kontrollkästchen aus der **Toolbox** auf der linken oberen Ecke.
+5. Löschen Sie die Schaltfläche, und fügen Sie ein Kontrollkästchen aus der **Toolbox** zur oberen linken Ecke hinzu.
 
-6. Fügen Sie die Checked und Unchecked Ereignisse hinzu. Aktivieren Sie das Kontrollkästchen in der Entwurfsansicht. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche "Ereignis-Handler" (oben rechts auf der die **Eigenschaften** Fenster). Suchen **Checked** , und geben **Checkbox_Checked** in das Textfeld, und suchen Sie dann **deaktiviert** und **Checkbox_Unchecked** in das Textfeld.
+6. Fügen Sie die Ereignisse "Geprüft" und "Ungeprüft" hinzu. Aktivieren Sie das Kontrollkästchen in der Entwurfsansicht. Klicken Sie im **Eigenschaftenfenster** auf die Schaltfläche Ereignishandler (oben rechts im **Eigenschaftenfenster).** Suchen Sie **überprüft,** und geben Sie **checkbox_Checked** in das Textfeld ein, und suchen Sie dann **nach Deaktiviert,** und geben Sie **checkbox_Unchecked** in das Textfeld ein.
 
 7. Fügen Sie die Kontrollkästchen-Ereignishandler hinzu:
 
@@ -172,22 +172,22 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
 
 8. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
-9. Öffnen Sie in der experimentellen Instanz den **MyToolWindow** Fenster.
+9. Öffnen Sie in der experimentellen Instanz das **Fenster MyToolWindow.**
 
-     Suchen Sie nach den Eigenschaften des Fensters, in der **Eigenschaften** Fenster. Die **IsChecked** Eigenschaft wird am unteren Fensterrand, unter dem **eigene Eigenschaften** Kategorie.
+     Suchen Sie im **Eigenschaftenfenster** nach den Eigenschaften des Fensters. Die **IsChecked-Eigenschaft** wird am unteren Rand des Fensters unter der Kategorie **Meine Eigenschaften** angezeigt.
 
-10. Aktivieren Sie das Kontrollkästchen der **MyToolWindow** Fenster. **IsChecked** in die **Eigenschaften** wird daraufhin **"true"** . Deaktivieren Sie das Kontrollkästchen in der **MyToolWindow** Fenster. **IsChecked** in die **Eigenschaften** wird daraufhin **"false"** . Ändern Sie den Wert der **IsChecked** in die **Eigenschaften** Fenster. Das Kontrollkästchen in der **MyToolWindow** Fenster-Änderungen an den neuen Wert festlegen.
+10. Aktivieren Sie das Kontrollkästchen im **Fenster MyToolWindow.** **IsChecked** im **Eigenschaftenfenster** ändert sich in **True**. Deaktivieren Sie das Kontrollkästchen im **Fenster MyToolWindow.** **IsChecked** im **Eigenschaftenfenster** ändert sich in **False**. Ändern Sie den Wert von **IsChecked** im **Eigenschaftenfenster.** Das Kontrollkästchen im **Fenster MyToolWindow** wird so geändert, dass es mit dem neuen Wert übereinstimmt.
 
     > [!NOTE]
-    > Wenn Sie ein Objekt zu verwerfen müssen, die in angezeigt wird der **Eigenschaften** Fenster, rufen `OnSelectChange` mit einem `null` Auswahlcontainer erste. Nach dem die Eigenschaft oder das Objekt verworfen wird, können Sie in einem Auswahlcontainer an, der aktualisiert wurde ändern <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> und <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> aufgeführt.
+    > Wenn Sie ein Objekt entsorgen müssen, das im `OnSelectChange` **Eigenschaftenfenster** angezeigt wird, rufen Sie zuerst mit einem `null` Auswahlcontainer auf. Nachdem Sie die Eigenschaft oder das Objekt entfernt haben, <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> können Sie zu einem Auswahlcontainer wechseln, der aktualisiert und aufgelistet wurde.
 
-## <a name="change-selection-lists"></a>Ändern von Auswahllisten
+## <a name="change-selection-lists"></a>Auswahllisten ändern
 
- In diesem Abschnitt fügen Sie eine Auswahlliste für eine grundlegende Eigenschaft-Klasse und Verwenden der Oberfläche des Tools auf der Auswahlliste angezeigt.
+ In diesem Abschnitt fügen Sie eine Auswahlliste für eine grundlegende Eigenschaftsklasse hinzu und wählen mithilfe der Werkzeugfensteroberfläche aus, welche Auswahlliste angezeigt werden soll.
 
-### <a name="to-change-selection-lists"></a>Ändern von Auswahllisten
+### <a name="to-change-selection-lists"></a>So ändern Sie Auswahllisten
 
-1. Open *MyToolWindow.cs* und fügen Sie eine öffentliche Klasse, die mit dem Namen `Simple`.
+1. Öffnen Sie *MyToolWindow.cs,* und `Simple`fügen Sie eine öffentliche Klasse mit dem Namen hinzu.
 
     ```csharp
     public class Simple
@@ -212,7 +212,7 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
     }
     ```
 
-2. Hinzufügen einer `SimpleObject` Eigenschaft, um die `MyToolWindow` Klasse sowie zwei Methoden zum Wechseln der **Eigenschaften** Fenster-Auswahl zwischen den Fensterbereich und `Simple` Objekt.
+2. Fügen `SimpleObject` Sie der `MyToolWindow` Klasse eine Eigenschaft sowie zwei Methoden zum Wechseln `Simple` der **Eigenschaftenfensterauswahl** zwischen dem Fensterbereich und dem Objekt hinzu.
 
     ```csharp
     private Simple simpleObject = null;
@@ -240,7 +240,7 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
     }
     ```
 
-3. In *"mytoolwindowcontrol.cs"* , ersetzen Sie die Kontrollkästchen-Handler mit diesen Codezeilen:
+3. Ersetzen Sie in *MyToolWindowControl.cs*die Kontrollkästchenhandler durch die folgenden Codezeilen:
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -259,19 +259,19 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
 
 4. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
-5. Öffnen Sie in der experimentellen Instanz den **MyToolWindow** Fenster.
+5. Öffnen Sie in der experimentellen Instanz das **Fenster MyToolWindow.**
 
-6. Wählen Sie das Kontrollkästchen in der **MyToolWindow** Fenster. Die **Eigenschaften** Fenster zeigt die `Simple` Objekteigenschaften, **Irgendein_text** und **ReadOnly**. Deaktivieren Sie das Kontrollkästchen. Die öffentlichen Eigenschaften des Fensters angezeigt wird, der **Eigenschaften** Fenster.
+6. Aktivieren Sie das Kontrollkästchen im **Fenster MyToolWindow.** Im **Eigenschaftenfenster** `Simple` werden die Objekteigenschaften **SomeText** und **ReadOnly**angezeigt. Deaktivieren Sie dieses Kontrollkästchen. Die öffentlichen Eigenschaften des Fensters werden im **Eigenschaftenfenster** angezeigt.
 
     > [!NOTE]
-    > Der Anzeigename des **Irgendein_text** ist **My Text**.
+    > Der Anzeigename von **SomeText** ist **Mein Text**.
 
-## <a name="best-practice"></a>Es wird empfohlen
+## <a name="best-practice"></a>Bewährte Methode
 
-In dieser exemplarischen Vorgehensweise <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird implementiert, damit die Auflistung der auswählbaren Objekte und die ausgewählte Objekt-Sammlung derselben Sammlung sind. Nur das ausgewählte Objekt wird in der Liste der Eigenschaften-Browser angezeigt. Eine umfassendere ISelectionContainer-Implementierung finden Sie unter den Beispielen Reference.ToolWindow.
+In dieser exemplarischen Vorgehensweise wird implementiert, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> sodass die wählbare Objektauflistung und die ausgewählte Objektauflistung die gleiche Auflistung sind. Nur das ausgewählte Objekt wird in der Liste Eigenschaftenbrowser angezeigt. Eine vollständigere ISelectionContainer-Implementierung finden Sie in den Beispielen Reference.ToolWindow.
 
-Visual Studio-Toolfenster bleiben zwischen Visual Studio-Sitzungen. Weitere Informationen zum Beibehalten des Zustands der Tool-Fenster, finden Sie unter <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.
+Visual Studio-Toolfenster bleiben zwischen Visual Studio-Sitzungen bestehen. Weitere Informationen zum Beibehalten des Werkzeugfensterstatus finden Sie unter <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Erweitern von Eigenschaften und des Eigenschaftenfensters](../extensibility/extending-properties-and-the-property-window.md)
+- [Erweitern von Eigenschaften und dem Eigenschaftenfenster](../extensibility/extending-properties-and-the-property-window.md)

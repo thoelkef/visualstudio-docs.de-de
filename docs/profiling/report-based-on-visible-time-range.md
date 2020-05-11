@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63002348"
 ---
 # <a name="report-based-on-visible-time-range"></a>Auf sichtbarem Zeitraum basierender Bericht
@@ -24,7 +24,7 @@ Die Profilansicht stellt Berichte dar, die auf dem derzeit sichtbaren Zeitbereic
 
  Weitere Informationen zu den Daten finden Sie in den nachfolgenden Tabellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Es werden keine Threadaktivitäten angezeigt](../profiling/no-thread-activity-to-show-threads-view.md)
 - [Ausführungsprofilbericht](../profiling/execution-profile-report.md)
 - [Synchronisierungszeit](../profiling/synchronization-time.md)

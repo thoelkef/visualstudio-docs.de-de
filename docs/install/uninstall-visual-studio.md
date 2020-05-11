@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: fd21f01f89cb4fe4507775670968496cbb5f99f5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115015"
 ---
 # <a name="uninstall-visual-studio"></a>Deinstallieren von Visual Studio
@@ -55,9 +55,9 @@ Um alle Installationen von Visual Studio 2017 und den Visual Studio-Installer vo
 
 1. Unter Windows 10 geben Sie im Feld „Geben Sie hier Text für die Suche ein.“ den Begriff **Apps und Features** ein.
 1. Suchen Sie nach **Microsoft Visual Studio 2017** (oder **Visual Studio 2017**).
-1. Klicken Sie auf **Deinstallieren**.
+1. Wählen Sie **Deinstallieren** aus.
 1. Suchen Sie dann den **Microsoft Visual Studio-Installer**.
-1. Klicken Sie auf **Deinstallieren**.
+1. Wählen Sie **Deinstallieren** aus.
 
 ::: moniker-end
 
@@ -92,9 +92,9 @@ Um alle Installationen von Visual Studio 2019 und den Visual Studio-Installer vo
 
 1. Unter Windows 10 geben Sie im Feld „Geben Sie hier Text für die Suche ein.“ den Begriff **Apps und Features** ein.
 1. Suchen Sie **Visual Studio 2019**.
-1. Klicken Sie auf **Deinstallieren**.
+1. Wählen Sie **Deinstallieren** aus.
 1. Suchen Sie dann den **Microsoft Visual Studio-Installer**.
-1. Klicken Sie auf **Deinstallieren**.
+1. Wählen Sie **Deinstallieren** aus.
 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ Wenn ein schwerwiegender Fehler auftritt und Visual Studio nicht mithilfe der vo
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Ändern von Visual Studio](modify-visual-studio.md)
 * [Visual Studio aktualisieren](update-visual-studio.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetBreakpointType
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4715dbd6fd3997be932cfd0d8944a30940e1d07
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f933baed55216054ecfec3b3b4c29f15da652ba4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327769"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730051"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 Ruft den Haltepunkttyp ab.
@@ -41,16 +41,16 @@ int GetBreakpointType(
 
 ## <a name="parameters"></a>Parameter
 `pBPType`\
-[out] Gibt einen Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, die den Typ des Haltepunkts beschreibt.
+[out] Gibt einen Wert [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) aus der BP_TYPE-Enumeration zurück, die den Typ des Haltepunkts beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
-Diese Methode gibt den Typ des Haltepunkts, die nicht zu binden, muss ein Fehlerereignis-Haltepunkt.
+## <a name="remarks"></a>Bemerkungen
+Diese Methode gibt den Typ des Haltepunkts zurück, der nicht gebunden werden konnte, wodurch ein Fehler-Breakpoint-Ereignis erforderlich ist.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CDebugErrorBreakpointResolution` -Objekt, das macht die [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese `CDebugErrorBreakpointResolution` Methode für ein einfaches Objekt implementiert wird, das die [IDebugErrorBreakpointResolution2-Schnittstelle](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) verfügbar macht.
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
@@ -83,6 +83,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

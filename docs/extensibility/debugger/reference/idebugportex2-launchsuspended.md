@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Microsoft-Dokumentation
+title: IDebugPortEx2::LaunchSuspended | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::LaunchSuspended
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94810761e546b0cae9eca32fc76bc0bfd396c7e7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28ff6065bbe83852b5acc3ffe253a0bdabcc67ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311115"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725100"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
-Wird eine ausführbare Datei gestartet.
+Startet eine ausführbare Datei.
 
 ## <a name="syntax"></a>Syntax
 
@@ -55,38 +55,38 @@ int LaunchSuspended( 
 
 ## <a name="parameters"></a>Parameter
 `pszExe`\
-[in] Der Name des zu startenden ausführbaren Datei an. Dies kann sein, ein vollständiger Pfad oder relativ zum Arbeitsverzeichnis angegeben, der `pszDir` Parameter.
+[in] Der Name der ausführbaren Datei, die gestartet werden soll. Dies kann ein vollständiger Pfad oder relativ `pszDir` zum im Parameter angegebenen Arbeitsverzeichnis sein.
 
 `pszArgs`\
-[in] Die Argumente, die an die ausführbare Datei übergeben werden sollen. Möglicherweise ein null-Wert ab, wenn keine Argumente vorhanden sind.
+[in] Die Argumente, die an die ausführbare Datei übergeben werden sollen. Kann ein Nullwert sein, wenn keine Argumente vorhanden sind.
 
 `pszDir`\
-[in] Der Name des Arbeitsverzeichnisses durch die ausführbare Datei. Möglicherweise ein null-Wert ab, wenn kein Arbeitsverzeichnis erforderlich ist.
+[in] Der Name des Arbeitsverzeichnisses, das von der ausführbaren Datei verwendet wird. Kann ein NULL-Wert sein, wenn kein Arbeitsverzeichnis erforderlich ist.
 
 `bstrEnv`\
-[in] Umgebungsblock mit Null endende Zeichenfolgen, gefolgt von einer weiteren NULL-Terminator.
+[in] Umgebungsblock von null-terminierten Zeichenfolgen, gefolgt von einem zusätzlichen NULL-Terminator.
 
 `hStdInput`\
-[in] Handle für einen anderen Eingabedatenstrom. 0 kann sein, wenn die Umleitung nicht erforderlich ist.
+[in] Handle zu einem alternativen Eingabestream. Kann 0 sein, wenn keine Umleitung erforderlich ist.
 
 `hStdOutput`\
-[in] Handle für einen anderen Ausgabestream. 0 kann sein, wenn die Umleitung nicht erforderlich ist.
+[in] Handle zu einem alternativen Ausgabestream. Kann 0 sein, wenn keine Umleitung erforderlich ist.
 
 `hStdError`\
-[in] Handle für einen anderen Fehlerausgabestream. 0 kann sein, wenn die Umleitung nicht erforderlich ist.
+[in] Behandeln Sie einen alternativen Fehlerausgabestream. Kann 0 sein, wenn keine Umleitung erforderlich ist.
 
 `ppPortProcess`\
-[out] Gibt eine [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt, das den gestarteten Prozess darstellt.
+[out] Gibt ein [IDebugPendingBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) zurück, das den gestarteten Prozess darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode sollte gestartet werden, den Prozess so, dass die It angehalten wird und der Code nicht ausgeführt. Die [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) aufgerufen, um den Vorgang fortzusetzen.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode sollte den Prozess starten, damit er angehalten wird und kein Code ausgeführt wird. Die [ResumeProcess-Methode](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) wird aufgerufen, um den Prozess fortzusetzen.
 
- Ein Programm kann auch über ein Debug-Engine gestartet werden. Weitere Informationen finden Sie unter [Starten eines Programms](../../../extensibility/debugger/launching-a-program.md).
+ Ein Programm kann auch von einem Debugmodul gestartet werden. Weitere Informationen finden Sie unter [Starten eines Programms](../../../extensibility/debugger/launching-a-program.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)

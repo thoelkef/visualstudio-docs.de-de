@@ -1,17 +1,18 @@
 ---
 title: Anonymisierung von Daten der Visual Studio-Abonnenten | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/19/2019
+ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Abonnentendaten anonymisiert werden, wenn der Zugriff auf Abonnements verloren gegangen ist.
-ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
-ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936910"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232736"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisierung von Informationen der Visual Studio-Abonnenten
 Wenn ein Ereignis eintritt, durch das die Verwendung eines Abonnements durch einen Abonnenten blockiert wird, z.B. der Ablauf eines Abonnements oder die Löschung des Anmeldekontos eines Abonnenten, werden die persönlichen Informationen des Benutzers wie Name und Anmeldekonto so verschlüsselt, dass sie unbrauchbar werden.  Dies geschieht, um die persönlichen Informationen des Abonnenten zu schützen.
@@ -41,5 +42,13 @@ Antwort:  Es gibt zwei Möglichkeiten, das Problem zu verhindern:
 - Stellen Sie ein einziges Identitätsverwaltungssystem bereit – entweder MSA oder AAD, aber nicht beide.  
 - Ordnen Sie die AAD- und MSA-Identitäten über den Mandanten zu. 
 
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Nächste Schritte
-Erfahren Sie, wie Sie die Anonymisierung durch [Verbinden von MSA- und AAD-Identitäten](/azure/active-directory/b2b/add-users-administrator) verhindern.
+Erfahren Sie, wie Sie die Anonymisierung durch [Verbinden von MSA- und AAD-Identitäten](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator) verhindern.
+
+

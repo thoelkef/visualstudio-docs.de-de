@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider | Microsoft-Dokumentation
+title: IEEVisualizerDataProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider interface
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 269f154083f3589e989a6ca2f9ce0835b249181a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a10f306b6c507f6db7add17931b8a38d926a37d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350179"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718052"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Expressionsevaluatoren finden Sie unter [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Diese Schnittstelle bietet die Möglichkeit, den Wert eines Objekts über eine typschnellansicht zu ändern.
+ Diese Schnittstelle bietet die Möglichkeit, den Wert eines Objekts durch eine Typvisualisierung zu ändern.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,32 +35,32 @@ IEEVisualizerDataProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die ausdrucksauswertung implementiert diese Schnittstelle, um die Änderung von Daten auf ein Objekt über eine typschnellansicht unterstützen.
+ Der Ausdrucksauswertungswert implementiert diese Schnittstelle, um das Ändern von Daten für ein Eigenschaftsobjekt über eine Typvisualisierung zu unterstützen.
 
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Diese Schnittstelle wird verwendet, bei der Erstellung der [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) Objekt durch einen Aufruf von [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Finden Sie unter [visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) Weitere Details.
+## <a name="notes-for-callers"></a>Hinweise für Anrufer
+ Diese Schnittstelle wird beim Erstellen des [IEEVisualizerService-Objekts](../../../extensibility/debugger/reference/ieevisualizerservice.md) über einen Aufruf von [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)verwendet. Weitere Informationen finden Sie [unter Visualisieren und Anzeigen von Daten.](../../../extensibility/debugger/visualizing-and-viewing-data.md)
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|Bestimmt, ob es möglich ist, aktualisieren Sie das Objekt (und anschließend den Wert), die diese Schnellansicht ist, darstellt.|
-|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|Erzwingt eine erneute Auswertung der das Objekt für diese Schnellansicht.|
-|[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|Ruft ein vorhandenes Objekt für diese Schnellansicht (keine Auswertung erfolgt) ab.|
-|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|Aktualisiert das Objekt für diese Schnellansicht, ändern und somit auch den Wert, den die Schnellansicht zeigt.|
+|[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|Bestimmt, ob es möglich ist, das Objekt (und anschließend seinen Wert) zu aktualisieren, das von dieser Visualisierung dargestellt wird.|
+|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|Erzwingt eine Neubewertung des Objekts für diese Visualisierung.|
+|[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|Ruft ein vorhandenes Objekt für diese Visualisierung ab (es wird keine Auswertung durchgeführt).|
+|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|Aktualisiert das Objekt für diese Visualisierung, wodurch der Wert der Visualisierung geändert wird.|
 
-## <a name="remarks"></a>Hinweise
- Die schnellansichtsdienst (dargestellt durch die [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) Schnittstelle und zurückgegeben, indem [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) behält einen Verweis auf das Objekt implementiert die `IEEVisualizerDataProvider` Schnittstelle . Daher die `IEEVisualizerDataProvider` Schnittstelle sollte nicht implementiert werden, für das gleiche Objekt, das implementiert die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Wenn dieses Objekt einen Verweis auf verwaltet die `IEEVisualizerService` Objekt: ein Zirkelverweis Ergebnisse und ein Deadlock tritt auf, wenn die Objekte zerstört werden. Wird empfohlen, implementieren `IEEVisualizerDataProvider` auf ein separates Objekt, das `IDebugProperty2` Objekt Delegaten ohne `IUnknown::AddRef` darauf.
+## <a name="remarks"></a>Bemerkungen
+ Der Visualisierungsdienst (wie von der [IEEVisualizerService-Schnittstelle](../../../extensibility/debugger/reference/ieevisualizerservice.md) dargestellt und von [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)zurückgegeben) enthält einen Verweis auf das Objekt, das die `IEEVisualizerDataProvider` Schnittstelle implementiert. Daher sollte die `IEEVisualizerDataProvider` Schnittstelle nicht für dasselbe Objekt implementiert werden, das die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) implementiert, wenn dieses Objekt einen Verweis auf das `IEEVisualizerService` Objekt beibehält: Ein Zirkelverweis resultiert und ein Deadlock tritt auf, wenn die Objekte zerstört werden. Der empfohlene Ansatz `IEEVisualizerDataProvider` besteht darin, für `IDebugProperty2` ein separates `IUnknown::AddRef` Objekt zu implementieren, an das das Objekt delegiert, ohne es aufzurufen.
 
-## <a name="requirements"></a>Anforderungen
- Header: ee.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: ee.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
-- [Schnittstellen für die Ausdrucksauswertung](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)

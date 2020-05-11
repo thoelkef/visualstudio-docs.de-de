@@ -38,7 +38,7 @@
           href: command-design.md
         - name: Befehlsimplementierung
           href: command-implementation.md
-        - name: Befehlsverfügbarkeit
+        - name: Verfügbarkeit von Befehlen
           href: command-availability.md
         - name: Algorithmus für das Befehlsrouting
           href: command-routing-algorithm.md
@@ -208,9 +208,9 @@
   items:
     - name: Projekte
       href: projects.md
-    - name: 'Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1'
+    - name: 'Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1'
       href: new-project-generation-under-the-hood-part-one.md
-    - name: 'Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2'
+    - name: 'Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2'
       href: new-project-generation-under-the-hood-part-two.md
     - name: Projekttypen
       items:
@@ -400,9 +400,9 @@
           href: using-the-automation-model.md
         - name: Automatisierung für Konfigurations- und SelectedItem-Objekte
           href: automation-for-configuration-and-selecteditem-objects.md
-- name: Projektmappen
+- name: Lösungen
   items:
-    - name: Projektmappen
+    - name: Lösungen
       href: solutions-overview.md
     - name: Projektmappendatei (SLN)
       href: solution-dot-sln-file.md

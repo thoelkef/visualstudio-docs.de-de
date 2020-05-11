@@ -1,25 +1,25 @@
 ---
-title: ButtonText-Element | Microsoft-Dokumentation
+title: ButtonText-Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe2440258e95ad0d61998b24dae54b731a998c47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321212"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739904"
 ---
-# <a name="buttontext-element"></a>ButtonText-element
-Dieses Feld ermöglicht die Angabe der Text erscheint in verschiedenen Menüs. In der Standardeinstellung die `ButtonText` Element wird im Menücontroller angezeigt. Die `ButtonText` Element wird auch die Standardeinstellung, wenn die anderen Textfelder leer sind. Die `ButtonText` Element darf nicht leer sein, auch wenn die anderen Textfelder angegeben werden.
+# <a name="buttontext-element"></a>ButtonText-Element
+Mit diesem Feld können Sie den Text angeben, der in verschiedenen Menüs angezeigt wird. Standardmäßig wird `ButtonText` das Element in Menücontrollern angezeigt. Das `ButtonText` Element wird auch zum Standardwert, wenn die anderen Textfelder leer sind. Das `ButtonText` Element darf auch dann nicht leer sein, wenn die anderen Textfelder angegeben sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,19 +31,19 @@ Dieses Feld ermöglicht die Angabe der Text erscheint in verschiedenen Menüs. I
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Strings-Element](../extensibility/strings-element.md)|Text-Elemente, wie z. B. gruppiert `ButtonText` und `CommandName`.|
+|[Strings-Element](../extensibility/strings-element.md)|Gruppiert Textelemente, `ButtonText` z. B. und `CommandName`.|
 
 ## <a name="text-value"></a>Textwert
- Der Textwert, der die `ButtonText` -Element stellt den Text, der angezeigt wird, für Menüelemente, Combos und andere Elemente der Benutzeroberfläche (UI), die sichtbaren Text bereit.
+ Der Textwert `ButtonText` des Elements stellt den Text bereit, der für Menüelemente, Kombinationen und andere Benutzeroberflächenelemente mit sichtbarem Text angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

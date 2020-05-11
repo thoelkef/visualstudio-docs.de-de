@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112532"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77275439"
 ---
 # <a name="warnings-and-errors"></a>Warnungen und Fehler
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112532"
 * **Auflösen von Einschränkung**
   * [Die Lösung kann nicht konkretisiert werden](#cannot-concretize-solution)
 
-* **Domänen**
+* **Domänen oder Runtime**
   * [Benötigen Sie Hilfe bei der Objekterstellung?](#help-construct)
   * [Benötigen Sie Hilfe beim Suchen von Typen?](#help-types)
   * [Verwendbaren Typ erraten](#usable-type-guessed)
@@ -41,7 +41,7 @@ ms.locfileid: "76112532"
   * [Unerwarteter Fehler während der Durchsuchung](#unexpected-exploration)
   * [TargetInvocationException](#targetinvocationexception)
 
-* **Instrumentierung**
+* **Instrumentation**
   * [Nicht instrumentierte aufgerufene Methode](#uninstrumented-method-called)
   * [Externe aufgerufene Methode](#external-method-called)
   * [Nicht instrumentierbare aufgerufene Methode](#uninstrumentable-method-called)
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-Sie können die Option **MaxConditions** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). Zum Beispiel:
+Sie können die Option **MaxConditions** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). Beispiel:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -254,7 +254,7 @@ Sie können IntelliTest helfen, indem Sie auf mindestens einen Typ zeigen, der d
 
 IntelliTest [generiert Testeingaben](input-generation.md) für jeden .NET-Typen. Wenn ein Typ abstrakt oder eine Schnittstelle ist, muss IntelliTest eine bestimmte Implementierung des Typs auswählen. Um diese Wahl treffen zu können, muss es wissen, welche Typen existieren.
 
-Wenn diese Warnung angezeigt wird, gibt dies an, das IntelliTest sich einige der verwiesenen Assemblys angeschaut hat und einen Implementierungstyp gefunden hat, sich aber nicht sicher ist, ob es diesen Typen verwenden soll oder ob es an anderer Stelle besser passende Typen gibt. IntelliTest hat einfach einen vielversprechenden Typen ausgewählt.
+Wenn diese Warnung angezeigt wird, gibt dies an, dass sich IntelliTest einige der Assemblys angesehen hat, auf die verwiesen wird, und einen Implementierungstyp gefunden hat, sich aber nicht sicher ist, ob es diesen Typen verwenden soll oder ob es an anderer Stelle besser passende Typen gibt. IntelliTest hat einfach einen vielversprechenden Typen ausgewählt.
 
 Um diese Warnung zu vermeiden, können Sie entweder die Typwahl von IntelliTest akzeptieren oder IntelliTest beim Verwenden anderer Typen helfen, indem Sie einen entsprechenden [PexUseType](attribute-glossary.md#pexusetype) hinzufügen.
 
@@ -342,6 +342,6 @@ In einigen Situationen ist das Ändern eines statischen Feld akzeptabel:
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>Sie möchten Feedback geben?
+## <a name="got-feedback"></a>Sie haben Fragen oder Anmerkungen?
 
 Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589941"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Vorgehensweise: Ändern des Pivotpunkts eines 3D-Modells
@@ -42,7 +42,7 @@ Hier finden Sie ein Modell, dass einen geänderten Pivotpunkt hat:
 
 ![Modell eines Hauses mit einem geänderten Pivotpunkt](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Erstellen eines einfachen 3D-Modells](../designers/how-to-create-a-basic-3-d-model.md)
 - [Modell-Editor](../designers/model-editor.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595461"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -39,7 +39,7 @@ devenv /Log NameOfLogFile
 
   Erforderlich. Der vollständige Pfad und Name der Protokolldatei, in die gespeichert werden soll.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Schalter muss am Ende der Befehlszeile nach allen anderen Schaltern angezeigt werden.
 
@@ -53,6 +53,6 @@ In diesem Beispiel erfolgt die Protokollierung in der Datei `MyVSLog.xml` im Bas
 devenv /log "%USERPROFILE%\MyVSLog.xml"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)

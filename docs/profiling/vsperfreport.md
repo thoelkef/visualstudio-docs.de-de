@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 282bb801625429d639e625a0a5edb02a8fb4da25
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777984"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -48,7 +48,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="general-report-options"></a>Allgemeine Berichtsoptionen
  In der folgenden Tabelle werden die allgemeinen Optionen zur Berichtsformatierung beschrieben sowie die Optionen, die die Daten auswählen, die gemeldet werden sollen.
 
-|Optionen|BESCHREIBUNG|
+|Optionen|Beschreibung|
 |-------------|-----------------|
 |**U**|Die Berichtsausgabe und die umgeleitete Konsolenausgabe werden als Unicode geschrieben. Es muss sich um die erste angegebene Option handeln.|
 |**Summary:** [*types*]|Erstellt mindestens einen Berichtstyp<br /><br /> -   `All` – alle Berichtstypen werden generiert<br />-   `CallerCallee` – über- und untergeordnete Beziehungen zwischen Funktionen<br />-   `Function` – aufgerufene Funktionen<br />-   `CallTree` – Hierarchien der aufgerufenen Funktionen<br />-   `Counter` – alle Markierungen und Windows-Leistungsindikatorwerte<br />-   `Ip` – Anweisungen mit Profilen<br />-   `Life` – Lebensdauer von zugeordneten Objekten (verfügbar, wenn Speicherbelegungsdaten erfasst wurden)<br />-   `Line` – Profildaten von Quellcodezeilen<br />-   `Header` – der Bericht enthält Dateiheaderinformationen<br />-   `Mark` – alle Markierungen<br />-   `Module` – Module mit Profilen<br />-   `Process` – Prozesse mit Profilen<br />-   `Thread` – Threads mit Profilen<br />-   `Type` – zugeordnete Typen<br />-   `Contention` – Ressourcenkonflikte<br />-   `RuleWarnings` – Probleme mit Leistungsregeln<br />-   `ETW` – alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows (ETW). Die ETL-Datendatei muss sich am ursprünglichen Standort oder in dem Verzeichnis mit der VSP- oder VSPS-Datei befinden.|
@@ -68,7 +68,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>Filteroptionen
  In der folgenden Tabelle werden Optionen beschrieben, über die Sie verfügbare Daten filtern können.
 
-|Optionen|BESCHREIBUNG|
+|Optionen|Beschreibung|
 |-------------|-----------------|
 |**JustMyCode**[ **:** [`caller`][,`callee`]]|Zeigt nur Funktionsaufrufe der Benutzeranwendung an und blendet Systemaufrufe aus<br /><br /> – Keine Parameter: blendet alle Systemfunktionen aus<br />-   `caller` – zeigt eine Ebene von Systemfunktionen an, die Anwendungsfunktionen aufrufen<br />-   `callee` – zeigt eine Ebene von Systemfunktionen an, die von Benutzeranwendungsfunktionen aufgerufen werden|
 |**StartTime:** [*Wert*]|Zeigt nur Daten an, die nach dem Wert erfasst werden (in Millisekunden)|
@@ -82,7 +82,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="difference-report-options"></a>Optionen für Unterschiedeberichte
  In der folgenden Tabelle werden die Optionen zum Vergleichen von Berichtsdateien beschrieben.
 
-|Optionen|BESCHREIBUNG|
+|Optionen|Beschreibung|
 |-------------|-----------------|
 |**Diff** `vspfile1 vspfile2`|Vergleicht zwei Berichtsdateien (*VSP-* oder *VSPS-Dateien*). Optionen zur Zusammenfassung werden bei der Verwendung der „Diff“-Option ignoriert.|
 |**Diff:** [*Wert*]|Bei Werten, die unter diesem Schwellenwert liegen, wird der Unterschied zwischen zwei Werten ignoriert. Außerdem werden keine neuen Daten mit Werten angezeigt, die unter diesem Schwellenwert legen.|

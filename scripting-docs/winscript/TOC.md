@@ -1,4 +1,4 @@
-# [Windows-Skriptschnittstellen](windows-script-interfaces.md)
+# [Windows Script-Schnittstellen](windows-script-interfaces.md)
 # [Windows Script Hosts](windows-script-hosts.md)
 # [Windows Script-Engines](windows-script-engines.md)
 # [Debuggen mit Active Script – Übersicht](active-script-debugging-overview.md)

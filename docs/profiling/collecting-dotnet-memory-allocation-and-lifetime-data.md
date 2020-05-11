@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6a8c5d431b7be54c4c5bc1a1c37619deb67de751
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779583"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer
@@ -46,7 +46,7 @@ Informationen zum Sammeln von .NET-Arbeitsspeicherdaten mit den Befehlszeilentoo
 
 1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie im Dialogfeld *Leistungssitzung* **Eigenschaftenseiten** auf die Registerkarte **Allgemein**, und aktivieren Sie das Kontrollkästchen **.NET-Objektspeicherbelegungsinformationen auflisten**.
+2. Klicken Sie im Dialogfeld **Eigenschaftenseiten** der *Leistungssitzung* auf die Registerkarte **Allgemein**, und aktivieren Sie das Kontrollkästchen **.NET-Objektzuordnungsinformationen auflisten**.
 
 3. Aktivieren Sie das Kontrollkästchen **Lebensdauerinformationen für .NET-Objekt auflisten**, um Lebensdauerinformationen für .NET-Objekte zu sammeln.
 

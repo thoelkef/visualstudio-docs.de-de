@@ -16,16 +16,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779947"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr-Warnungen
 Die folgende Tabelle enthält die vom Tool *VSInstr.exe* ausgegebenen Warnungen. Sie können die NOWARN-Option zusammen mit den Warnungsnummern verwenden, um die Anzeige der Warnung zu unterdrücken.
 
-|Warnnummer|BESCHREIBUNG|
+|Warnnummer|Beschreibung|
 |--------------------|-----------------|
 |**VSP1026**|Die Abdeckung wird für Bibliotheken, die nicht auf MSCorLib verweisen, nicht unterstützt. Dies ist häufig bei portablen Bibliotheken der Fall.<br /><br />Die [/EnableCodeCoverage](../test/vstest-console-options.md)-Befehlszeilenoption ist für .NET Core erforderlich.|
 |**VSP2000**|Interner Fehler. Der Moduldateiname für diese ausführbare Datei kann nicht abgerufen werden.|
@@ -44,5 +44,5 @@ Die folgende Tabelle enthält die vom Tool *VSInstr.exe* ausgegebenen Warnungen.
 |**VSP2013**|Für die Instrumentation dieses Abbilds ist es erforderlich, das Abbild als 32-Bit-Prozess auszuführen. Die CLR-Headerflags wurden hierfür aktualisiert.<br /><br /> Der Profiler ändert die Binärdatei, sodass 64-Bit-Betriebssysteme den 32-Bit-Prozess im WOW64-Emulator öffnen können. Bei Bibliotheken (DLLs) kann hierbei ein Fehler auftreten, wenn sie in einen vorhandenen 64-Bit-Prozess geladen werden. Diese Warnung informiert den Benutzer über die Abhängigkeit.|
 |**VSP2014**|Das sich ergebende instrumentierte Abbild ist scheinbar ungültig und wird möglicherweise nicht ausgeführt.<br /><br /> Diese Meldung tritt auf, wenn die endgültige instrumentierte Assembly über einen ungültigen PE-Header verfügt.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSInstr](../profiling/vsinstr.md)

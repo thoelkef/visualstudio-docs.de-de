@@ -1,6 +1,6 @@
 ---
 title: 'Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung'
-ms.date: 11/04/2016
+ms.date: 03/21/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621541"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472627"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung
 
@@ -44,7 +44,7 @@ Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen ersc
     > [!NOTE]
     > Die Namen "iconLabel" (Symbolbezeichnung) und "control" (Steuerelement) dienen zur Verdeutlichung der Verwendungsweise. Sie können diese Namen durch beliebige andere Namen ersetzen, ohne die Funktionsweise des Codes zu beeinflussen, sofern Sie die Namen in jeder Anweisung innerhalb der Schleife ändern.
 
-     Die `AssignIconsToSquares()`-Methode durchläuft jedes Bezeichnungsfeld-Steuerelement in TableLayoutPanel und führt für jedes die gleichen Anweisungen aus. Diese Anweisungen rufen ein zufälliges Symbol ab aus der Liste aus [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Aus diesem Grund wurden zwei Exemplare jedes Symbols in die Liste eingefügt, damit zufälligen Bezeichnungsfeldern ein Symbolpaar zugewiesen werden kann.)
+     Die `AssignIconsToSquares()`-Methode durchläuft jedes Bezeichnungsfeld-Steuerelement in TableLayoutPanel und führt für jedes die gleichen Anweisungen aus. Diese Anweisungen rufen ein zufälliges Symbol ab aus der Liste aus [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Zur Erinnerung: Jedes dieser Symbole ist ein Buchstabe in der Webdings-Schriftart, daher werden sie in dieser Methode als Text dargestellt. Sie haben zwei aller Symbole in die Liste eingefügt, also sollte zufälligen Label-Steuerelementen ein Symbolpaar zugewiesen sein.
 
      Betrachten Sie den Code genauer, der innerhalb der `foreach`-Schleife oder der `For Each`-Schleife ausgeführt wird. Dabei handelt es sich um den folgenden Code.
 
@@ -55,7 +55,7 @@ Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen ersc
 
      Vergessen Sie nicht: Wenn Sie sich über die Funktionsweise eines Codeabschnitts nicht sicher sind, können Sie den Mauszeiger über einem Codeelement positionieren und erhalten eine entsprechende QuickInfo. Mithilfe des Visual Studio-Debuggers können Sie auch während der Programmausführung jede Codezeile untersuchen. Weitere Informationen erhalten Sie unter [How do I: Step with The debugger in Visual Studio? (Wie setze ich den Debugger in Visual Studio ein?)](https://msdn.microsoft.com/vstudio/ee672313.aspx) oder [Navigate through code with the debugger (Navigieren im Code mit dem Debugger)](../debugger/navigating-through-code-with-the-debugger.md).
 
-3. Um das Spielbrett mit Symbolen zu füllen, müssen Sie die `AssignIconsToSquares()`-Methode aufrufen, sobald das Programm startet. Wenn Sie C# verwenden, fügen Sie direkt unterhalb des Aufrufs der `InitializeComponent()`-Methode im **Form1**_constructor_ eine Anweisung hinzu, mit der das Formular die neue Methode aufruft und sich entsprechend einrichtet, bevor es angezeigt wird. Konstruktoren werden aufgerufen, wenn Sie ein neues Objekt erstellen, beispielsweise eine Klasse oder eine Struktur. Weitere Informationen finden Sie unter [Konstruktoren (C#-Programmierhandbuch)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) oder [Verwenden von Konstruktoren und Destruktoren](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) in Visual Basic.
+3. Um das Spielbrett mit Symbolen zu füllen, müssen Sie die `AssignIconsToSquares()`-Methode aufrufen, sobald das Programm startet. Wenn Sie C# verwenden, fügen Sie direkt unterhalb des Aufrufs der `InitializeComponent()`-Methode im **Form1**-_Konstruktor_ eine Anweisung hinzu, mit der das Formular die neue Methode aufruft und sich entsprechend einrichtet, bevor es angezeigt wird. Konstruktoren werden aufgerufen, wenn Sie ein neues Objekt erstellen, beispielsweise eine Klasse oder eine Struktur. Weitere Informationen finden Sie unter [Konstruktoren (C#-Programmierhandbuch)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) oder [Verwenden von Konstruktoren und Destruktoren](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) in Visual Basic.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -67,17 +67,14 @@ Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen ersc
     End Sub
     ```
 
-4. Speichern Sie das Programm, und führen Sie es aus. Es sollte ein Formular mit zufälligen Symbolen angezeigt werden, die den einzelnen Bezeichnungen zugewiesen sind.
+4. Speichern Sie das Programm, und führen Sie es aus. Es sollte ein Formular mit zufälligen Symbolen angezeigt werden, die den einzelnen Bezeichnungen zugewiesen sind. 
 
-5. Schließen Sie das Programm, und führen Sie es erneut aus. In der folgenden Abbildung erkennen Sie, dass den einzelnen Bezeichnungsfeldern nun unterschiedliche Symbole zugewiesen sind.
+5. Schließen Sie das Programm, und führen Sie es erneut aus. In der folgenden Abbildung erkennen Sie, dass den einzelnen Bezeichnungsfeldern nun unterschiedliche Symbole zugewiesen sind. 
 
      ![Vergleichsspiel mit zufälligen Symbolen](../ide/media/express_tut4step3.png)<br/>
 *Vergleichsspiel mit zufälligen Symbolen*
 
      Die Symbole sind jetzt sichtbar, weil sie nicht ausgeblendet wurden. Um sie vor dem Spieler zu verbergen, können Sie für die **ForeColor**-Eigenschaft jeder Bezeichnung die Farbe der **BackColor**-Eigenschaft verwenden.
-
-    > [!TIP]
-    > Eine andere Methode zum Ausblenden von Steuerelementen wie z.B. Bezeichnungen besteht darin, deren **Visible**-Eigenschaft auf **FALSE** festzulegen.
 
 6. Um die Symbole auszublenden, stoppen Sie das Programm und entfernen die Kommentarmarken für die kommentierte Codezeile innerhalb der `For Each`-Schleife.
 

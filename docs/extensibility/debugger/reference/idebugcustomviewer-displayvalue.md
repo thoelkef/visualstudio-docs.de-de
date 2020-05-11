@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Microsoft-Dokumentation
+title: IDebugCustomViewer::DisplayValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32e444d0d6a30484f708d3001b95e7a71856edd5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335704"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732451"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Diese Methode wird aufgerufen, um den angegebenen Wert anzuzeigen.
@@ -50,23 +50,23 @@ int DisplayValue(
 [in] Übergeordnetes Fenster
 
 `dwID`\
-[in] ID für den benutzerdefinierten Viewer, die mehr als einen Typ zu unterstützen.
+[in] ID für benutzerdefinierte Viewer, die mehr als einen Typ unterstützen.
 
 `pHostServices`\
-[in] Reserviert. Legen Sie immer auf Null.
+[in]: Reserviert Immer auf null gesetzt.
 
 `pDebugProperty`\
-[in] Schnittstelle, die verwendet werden kann, zum Abrufen des Werts, der angezeigt werden.
+[in] Schnittstelle, die verwendet werden kann, um den anzuzeigenden Wert abzurufen.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.
+ Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Die Anzeige ist "modal", insofern diese Methode die erforderlichen Fenster erstellt, den Wert zeigt, auf Eingabe warten, und schließen Sie das Fenster, alle vor der Rückgabe an den Aufrufer. Dies bedeutet, dass alle Aspekte, die zum Anzeigen von den Wert der Eigenschaft, von der Erstellung eines Fensters für die Ausgabe für das Warten auf Benutzereingaben, um das Löschen des Fensters von die Methode behandelt werden muss.
+## <a name="remarks"></a>Bemerkungen
+ Die Anzeige ist "modal", da diese Methode das erforderliche Fenster erstellt, den Wert anzeigt, auf Die Eingabe wartet und das Fenster schließt, bevor alles vor der Rückkehr zum Aufrufer. Dies bedeutet, dass die Methode alle Aspekte der Anzeige des Werts der Eigenschaft behandeln muss, vom Erstellen eines Fensters für die Ausgabe über das Warten auf Benutzereingaben bis hin zum Zerstören des Fensters.
 
- Zur Unterstützung der Änderung des Werts auf die angegebenen [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Objekts verwenden Sie die [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) Methode – Wenn der Wert als Zeichenfolge ausgedrückt werden kann. Andernfalls ist es erforderlich, eine benutzerdefinierte Schnittstelle zu erstellen – ausschließlich für die ausdrucksauswertung Implementierung `DisplayValue` Methode – für das gleiche Objekt, das implementiert die `IDebugProperty3` Schnittstelle. Diese benutzerdefinierte Schnittstelle, die Methoden zum Ändern der Daten von beliebiger Größe oder Komplexität angeben.
+ Um das Ändern des Werts für das angegebene [IDebugProperty3-Objekt](../../../extensibility/debugger/reference/idebugproperty3.md) zu unterstützen, können Sie die [SetValueAsStringWithError-Methode](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) verwenden, wenn der Wert als Zeichenfolge ausgedrückt werden kann. Andernfalls ist es erforderlich, eine benutzerdefinierte Schnittstelle – exklusiv für `DisplayValue` den Ausdrucksevaluator, `IDebugProperty3` der diese Methode implementiert – für dasselbe Objekt zu erstellen, das die Schnittstelle implementiert. Diese benutzerdefinierte Schnittstelle würde Methoden zum Ändern der Daten einer beliebigen Größe oder Komplexität bereitstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 6a602da63f86ee1a2a61054e5c3aa3b011541ba6
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: cb6e9e59ad0c45cfc92ba65ddbc594563ade91fa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76159176"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437576"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio-Kern-Editor (in Visual Studio Team Explorer 2019 enthalten)
 
@@ -25,7 +25,7 @@ ms.locfileid: "76159176"
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | name | Version | Abhängigkeitstyp
+Komponenten-ID | Name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio-Kern-Editor | 16.1.28811.260 | Erforderlich
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio-Startseite für C++-Benutzer | 16.0.28315.86 | Optional
@@ -34,6 +34,6 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio-Startse
 
 Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
 
-Komponenten-ID | name | Version
+Komponenten-ID | Name | Version
 --- | --- | ---
 n/v | n/v | n/v

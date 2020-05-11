@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957856"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
@@ -204,7 +204,7 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
 
 1. Wenn Sie fertig sind, beenden Sie den Server, und übertragen Sie Ihre Änderungen erneut zur Quellcodeverwaltung.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% csrf_token %}, das in den \<Formular\>-Elementen auftritt?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% csrf_token %}, das in den \<Formular\>-Elementen auftritt?
 
 Antwort: Das `{% csrf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, z.B. zu einem Formular. Die Vorlagenrenderingfunktion (`render`) fügt anschließend den erforderlichen Schutz hinzu.
 

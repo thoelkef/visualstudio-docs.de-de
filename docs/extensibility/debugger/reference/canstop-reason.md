@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Microsoft-Dokumentation
+title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737684"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
-Verwendet, um zu bestimmen, ob ein Programm nach Erreichen einer bestimmten Stelle in der Ausführung beenden kann.
+# <a name="canstop_reason"></a>CANSTOP_REASON
+Wird verwendet, um zu bestimmen, ob ein Programm die Ausführung beenden kann, nachdem es einen bestimmten Punkt in der Ausführung erreicht hat.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,18 +47,18 @@ public enum enum_CANSTOP_REASON {
 Gibt den Einstiegspunkt des angegebenen Programms an.
 
 `CANSTOP_STEPIN`\
-Gibt an, eine Funktion schrittweise.
+Gibt den Einstieg in eine Funktion an.
 
-## <a name="remarks"></a>Hinweise
-Übergeben als Argument an die [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) Methode, mit der Sitzung Debug-Manager (SDM) zu bestätigen, wenn nach dem Erreichen des Einstiegspunkt des Programms oder nach einer Funktion oder Methode schrittweise beendet werden kann.
+## <a name="remarks"></a>Bemerkungen
+Übergeben als Argument an die [GetReason-Methode,](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) um mit dem Session Debug Manager (SDM) zu bestätigen, ob es in Ordnung ist, nach Erreichen des Einstiegspunkts des Programms oder nach dem Eintreten in eine Funktion oder Methode zu stoppen.
 
-## <a name="requirements"></a>Anforderungen
-Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

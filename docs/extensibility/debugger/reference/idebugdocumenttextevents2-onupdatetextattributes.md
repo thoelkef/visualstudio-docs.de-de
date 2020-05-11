@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft-Dokumentation
+title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateTextAttributes
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a1eb8d6d9f14fcad5358b4a358673e08f3395ff
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82cda44c50319ef76efbc8fa3ae2712c3a4ae8f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351364"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731374"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-Benachrichtigt dem debugpaket, Text-Attribute im Dokument aktualisiert wurden.
+Benachrichtigt das Debugpaket, dass Textattribute im Dokument aktualisiert wurden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,14 +43,14 @@ int onUpdateTextAttributes( 
 
 ## <a name="parameters"></a>Parameter
 `pos`\
-[in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die angibt, in denen die Textattribute aktualisiert wurden.
+[in] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur an, die angibt, wo die Textattribute aktualisiert wurden.
 
 `dwNumToUpdate`\
-[in] Gibt die Anzahl der Zeichen des Texts, die aktualisiert wurden.
+[in] Gibt die Anzahl der Zeichen des Textes an, die aktualisiert wurden.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

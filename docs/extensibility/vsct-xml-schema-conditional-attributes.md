@@ -1,42 +1,42 @@
 ---
-title: VSCT-XML-Schema bedingte Attribute | Microsoft-Dokumentation
+title: VSCT XML-Schema Bedingte Attribute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11807129c34fa613ef06b3534adc7c7ebb9865e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697943"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>Bedingte VSCT XML Schema-Attribute
-Sie können bedingte Attribute für alle Listen und Elemente anwenden. Logische Operatoren und Ausdrücke der Symbol-Erweiterung, die zu "true" oder "false" ausgewertet werden. Bei "true", ist das zugeordnete Liste oder das Element in der Ausgabe enthalten.
+# <a name="vsct-xml-schema-conditional-attributes"></a>BEDINGTE VSCT-XML-Schema-Schemaattribute
+Sie können bedingte Attribute auf alle Listen und Elemente anwenden. Logische Operatoren und Symbolerweiterungsausdrücke werden als true oder false ausgewertet. Wenn true, wird die zugeordnete Liste oder das zugeordnete Element in die resultierende Ausgabe einbezogen.
 
- Sie können die token-Erweiterungen für andere token Erweiterungen oder Konstanten testen. Die Funktion `Defined()` testet, ob es sich bei ein bestimmter Namen definiert wurde, auch wenn sie keinen Wert besitzt.
+ Sie können Tokenerweiterungen mit anderen Tokenerweiterungen oder Konstanten testen. Die `Defined()` Funktion testet, ob ein bestimmter Name definiert wurde, auch wenn er keinen Wert hat.
 
- Wenn ein Condition-Attribut auf eine Liste angewendet wird, wird die Bedingung auf alle untergeordneten Elemente in der Liste angewendet. Wenn ein untergeordnetes Element selbst ein Condition-Attribut enthält, wird die Bedingung mit dem übergeordneten Ausdruck durch eine AND-Operation kombiniert.
+ Wenn ein Condition-Attribut auf eine Liste angewendet wird, wird die Bedingung auf jedes untergeordnete Element in der Liste angewendet. Wenn ein untergeordnetes Element selbst ein Condition-Attribut enthält, wird seine Bedingung durch einen AND-Vorgang mit dem übergeordneten Ausdruck kombiniert.
 
- Die Werte 1, "1" und "true" werden als "true" ausgewertet, und 0, "0" und "false" werden als "false" ausgewertet.
+ Die Werte 1, '1' und 'true' werden als wahr ausgewertet, und 0, '0' und 'false' werden als false ausgewertet.
 
 ## <a name="operators"></a>Operatoren
  Verwenden Sie die folgenden Operatoren, um bedingte Ausdrücke auszuwerten.
 
 |Operator|Definition|
 |--------------|----------------|
-|(,)|Gruppieren|
+|(,)|Gruppierung|
 |!|Logisches Nicht|
 |\<, >, \<=, >=, ==, !=|Relation und Gleichheit|
-|und|Boolesch|
-|oder|Boolesch|
+|and|Boolean|
+|oder|Boolean|
 
 ## <a name="examples"></a>Beispiele
 
@@ -69,5 +69,5 @@ and !Defined(DEBUG)">
 </Menus>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Visual Studio-Befehlstabelle (. Vsct)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

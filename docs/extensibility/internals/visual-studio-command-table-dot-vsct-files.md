@@ -1,51 +1,51 @@
 ---
-title: Visual Studio-Befehlstabelle (. VSCT)-Dateien | Microsoft-Dokumentation
+title: Visual Studio-Befehlstabelle (. Vsct) Dateien | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd39cfe801df1393ab099e691fbf34021ead70fb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332945"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704024"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>VSCT-Dateien (Visual Studio Command Table)
-Konfiguration eine Befehlsdatei-Tabelle ist eine Textdatei, die den Satz von Befehlen zu beschreiben, die VSPackages enthält. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Befehl Tabelle (VSCT)-Compiler kompiliert XML-basierten Konfiguration (VSCT-Dateien) in binäre Befehl Tabelle Ausgabedateien (CTO). Die resultierende CTO-Dateien sind identisch mit denen, die mit dem Befehl-Tabelle (CTC)-Compiler zum Kompilieren der CTC-Konfigurationsdateien erstellt werden. XML-basierte VSCT-Dateien hat jedoch einige Vorteile, z. B. eine XML-Editor und IntelliSense für XML.
+Eine Befehlstabellenkonfigurationsdatei ist eine Textdatei, die den Befehlssatz beschreibt, den ein VSPackage enthält. Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSCT-Compiler (Befehlstabelle) kompiliert XML-basierte Konfigurationsdateien (.vsct-Dateien) in binäre Befehlstabellenausgabedateien (.cto). Die resultierenden .cto-Dateien sind die gleichen wie die Dateien, die mithilfe des Compilers der Befehlstabelle (CTC) erstellt werden, um .ctc-Konfigurationsdateien zu kompilieren. XML-basierte .vsct-Dateien haben jedoch einige Vorteile, z. B. einen XML-Editor und XML IntelliSense.
 
- Weitere Informationen zu der Syntax und Semantik der VSCT-Dateien finden Sie unter [Entwerfen von XML-Command Table (. VSCT)-Dateien](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+ Weitere Informationen zur Syntax und Semantik von .vsct-Dateien finden Sie unter Entwerfen der [XML-Befehlstabelle (. Vsct) Dateien](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Entwerfen von Dateien für XML-Befehlstabellen (VSCT)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
- Beschreibt das Entwerfen der VSCT-Dateien.
+ Beschreibt das Entwerfen von .vsct-Dateien.
 
- [Vorgehensweise: Erstellen einer VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
+ [Gewusst wie: Erstellen einer VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
 
- Vergleicht die Methoden zum Erstellen einer VSCT-Datei an. Beschreibt den Prozess zum manuellen Erstellen eine neue VSCT-Datei.
+ Vergleicht die Methoden zum Erstellen einer .vsct-Datei. Beschreibt den Prozess zum manuellen Erstellen einer neuen .vsct-Datei.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
  [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)
 
- Enthält Details zu jedem Abschnitt des Befehls Tabelle XML-Datei.
+ Enthält Details zu jedem Abschnitt der XML-Konfigurationsdatei der Befehlstabelle.
 
- [Konfiguration der Befehl (. CTC) Dateien](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) bietet eine Übersicht über das veraltete CTC-Dateiformat.
+ [Befehlstabellenkonfiguration (. Ctc) Dateien](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) Bietet einen Überblick über das veraltete .ctc-Dateiformat.
 
  [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- Beschreibt die Formatspezifikation der Befehl-Tabelle.
+ Beschreibt die Spezifikation des Befehlstabellenformats.
 
  [Ressourcen in VSPackages](../../extensibility/internals/resources-in-vspackages.md)
 
- Beschreibt die Verwendung von verwalteten und nicht verwalteten Ressourcen in verwaltete VSPackages.
+ Beschreibt die Verwendung verwalteter und nicht verwalteter Ressourcen in verwalteten VSPackages.
 
  [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)
 

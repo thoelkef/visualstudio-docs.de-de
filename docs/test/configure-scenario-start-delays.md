@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111479"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurieren des Szenarios „Startverzögerungen in Auslastungstests“
@@ -83,7 +83,7 @@ Mit der Eigenschaft **Während Aufwärmdauer deaktivieren** wird angegeben, ob d
 
 4. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, wählen Sie im Menü **Datei** die Option **Speichern** aus. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Während Aufwärmdauer deaktivieren** ausführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Configure test agents and test controllers for load tests (Konfigurieren von Test-Agents und Testcontrollern für Auslastungstests)](../test/configure-test-agents-and-controllers-for-load-tests.md)

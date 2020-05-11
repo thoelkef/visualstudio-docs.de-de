@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumConstructors | Microsoft-Dokumentation
+title: IDebugClassField::EnumConstructors | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumConstructors method
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94a73b5f46e3e6319fef0ac2134966c4a4944279
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 607f4f4af3021389628fcc1be446ebbe95628b7c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349637"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734455"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Erstellt einen Enumerator für die Konstruktoren für diese Klasse.
@@ -43,20 +43,20 @@ int EnumConstructors(
 
 ## <a name="parameters"></a>Parameter
 `cMatch`\
-[in] Ein Wert aus der [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) -Enumeration, der den Typ der Konstruktoren verwenden, um die Enumeration angibt.
+[in] Ein Wert [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) aus der CONSTRUCTOR_ENUM-Enumeration, der den Typ der Konstruktoren für die Enumeration angibt.
 
 `ppEnum`\
-[out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der Konstruktoren darstellt. Gibt einen null-Wert zurück, wenn es keine Konstruktoren gibt.
+[out] Gibt ein [IEnumDebugFields-Objekt](../../../extensibility/debugger/reference/ienumdebugfields.md) zurück, das die Liste der Konstruktoren darstellt. Gibt einen NULL-Wert zurück, wenn keine Konstruktoren vorhanden sind.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn es keine Konstruktoren gibt. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, gibt S_OK oder S_FALSE zurück, wenn keine Konstruktoren vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Jedes Element der Enumeration ist ein [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das eine Konstruktormethode beschreibt.
+## <a name="remarks"></a>Bemerkungen
+ Jedes Element der Enumeration ist ein [IDebugMethodField-Objekt,](../../../extensibility/debugger/reference/idebugmethodfield.md) das eine Konstruktormethode beschreibt.
 
- Die Liste der Konstruktoren umfasst in der Regel nicht die Standardkonstruktoren, die vom Compiler bereitgestellt.
+ Die Liste der Konstruktoren enthält in der Regel nicht die Standardkonstruktoren, die von einem Compiler bereitgestellt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

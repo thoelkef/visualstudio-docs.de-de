@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::LoadSymbols | Microsoft-Dokumentation
+title: IDebugEngine3::LoadSymbols | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::LoadSymbols
 ms.assetid: c846a440-1d91-4d48-b8f1-82e902ae152b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72c4fce5a7e8dd53093e21db2771d2176462e67c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7963d39601a0d3a90ca2daa7632902d7aa506de8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352526"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730814"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
-Lädt (nach Bedarf)-Symbole für alle Module, die durch diese Debug-Engine gedebuggt wird.
+Lädt (bei Bedarf) Symbole für alle Module, die von diesem Debugging-Modul gedebuggt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,14 +36,14 @@ int LoadSymbols();
 ```
 
 ## <a name="parameters"></a>Parameter
- Keine
+ Keine.
 
 ## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird Fehlercode zurückgegeben.
+ Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Dadurch wird die Debugsymbole für alle Module, die auf die verwiesen wird durch diese Debug-Engine geladen. Nur dann, wenn sie noch nicht geladen wurden, werden die Symbole geladen. Symbole werden durchsucht, auf den Pfaden, die festlegen, die durch einen Aufruf von [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).
+## <a name="remarks"></a>Bemerkungen
+ Dadurch werden Debugsymbole für alle Module geladen, auf die von diesem Debuggingmodul verwiesen wird. Die Symbole werden nur geladen, wenn sie noch nicht geladen wurden. Symbole werden auf den Pfaden durchsucht, die durch einen Aufruf von [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)festgelegt wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

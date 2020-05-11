@@ -1,20 +1,21 @@
 ---
 title: Refactoring von Code zum Konvertieren einer for-Schleife in eine foreach-Anweisung
-ms.date: 05/10/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570244"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094604"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactoring zum Konvertieren einer for-Schleife in eine foreach-Anweisung
 
@@ -27,6 +28,8 @@ Sobald Sie über eine [for](/dotnet/csharp/language-reference/keywords/for)-Schl
 Dieses Refactoring gilt für:
 
 - C#
+
+- Visual Basic
 
 > [!NOTE]
 > Das Schnellaktion-Refactoring **Convert to foreach** (In „foreach“ konvertieren) ist nur für [for](/dotnet/csharp/language-reference/keywords/for)-Schleifen verfügbar, die alle drei Teile enthalten: einen Initialisierer, eine Bedingung und einen Iterator.
@@ -82,7 +85,7 @@ Die Gründe, warum Sie eine [foreach](/dotnet/csharp/language-reference/keywords
 > [!NOTE]
 > In C# verwendet der durch diese Refactorings generierte Code entweder einen expliziten Typ oder [var](/dotnet/csharp/language-reference/keywords/var) als Typ für die Elemente in der Auflistung. Der Typ im generierten Code, unabhängig ob explizit oder implizit, hängt von den Einstellungen des Codeformats für diesen Bereich ab. Diese bestimmten Einstellungen des Codeformats werden auf Computerebene unter **Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Allgemein** >  **\'var-Einstellungen** oder auf Projektmappenebene in einer [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)-Datei konfiguriert. Wenn Sie die Einstellungen des Codeformats in den **Optionen** ändern, müssen Sie die Codedatei erneut öffnen, damit die Änderungen wirksam werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

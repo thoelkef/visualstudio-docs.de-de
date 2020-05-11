@@ -1,5 +1,5 @@
 ---
-title: Architektur der Ausdrucksauswertung | Microsoft-Dokumentation
+title: Expression Evaluator Architektur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,51 +7,51 @@ helpviewer_keywords:
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c52e3d6b71b58668a05434e9ca8f65eb3e7832
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353766"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738698"
 ---
-# <a name="expression-evaluator-architecture"></a>Architektur der ausdrucksauswertung
+# <a name="expression-evaluator-architecture"></a>Expression-Evaluator-Architektur
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Die Integration in das Visual Studio-Paket Debuggen bedeutet, Sie dass von eine proprietäre Sprache muss richten Sie die erforderlichen Expression Evaluator (EE)-Schnittstellen und rufen Sie die common Language Run-Time-Symbol-Dienstanbieter (SP) und den Binder-Schnittstellen. Die SP und Binder-Objekte zusammen mit der aktuellen Adresse für die Ausführung stehen für Kontext in dem Ausdrücke ausgewertet werden. Die Informationen, die diese Schnittstellen zu erzeugen und nutzen, stellt die wichtigsten Konzepte in der Architektur eine EE dar.
+ Wenn Sie eine proprietäre Sprache in das Visual Studio-Debugpaket integrieren, müssen Sie die Schnittstellen für den erforderlichen Ausdrucksevaluator (EE) einrichten und die Common Language Run-Time Symbol Provider (SP) und Binderschnittstellen aufrufen. Die SP- und Binderobjekte sind zusammen mit der aktuellen Ausführungsadresse der Kontext, in dem Ausdrücke ausgewertet werden. Die Informationen, die diese Schnittstellen erzeugen und nutzen, stellen die wichtigsten Konzepte in der Architektur eines EE dar.
 
 ## <a name="overview"></a>Übersicht
 
 ### <a name="parse-the-expression"></a>Analysieren des Ausdrucks
- Wenn Sie ein Programm debuggen, werden Ausdrücke ausgewertet, für eine Reihe von Gründen aber immer wenn die zu debuggende Programm wird an einem Haltepunkt (entweder ein Haltepunkt eingefügt, die vom Benutzer oder eine durch eine Ausnahme verursacht hat) wurde beendet. Es ist zu diesem Zeitpunkt an, wenn Visual Studio einen Stapelrahmen erhält, dargestellt durch die [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) Schnittstelle, von der Debug-Engine (DE). Visual Studio ruft dann [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) zum Abrufen der [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstelle. Diese Schnittstelle stellt einen Kontext, in dem Ausdrücke ausgewertet werden können; [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) ist der Einstiegspunkt für den Prozess der Evaluierung. Bis zu diesem Punkt werden alle Schnittstellen durch die DE implementiert.
+ Wenn Sie ein Programm debuggen, werden Ausdrücke aus einer Reihe von Gründen ausgewertet, aber immer dann, wenn das zu debuggende Programm an einem Haltepunkt angehalten wurde (entweder ein vom Benutzer platzierter Haltepunkt oder einer, der durch eine Ausnahme verursacht wurde). In diesem Moment ruft Visual Studio einen Stackframe, wie er durch die [IDebugStackFrame2-Schnittstelle](../../extensibility/debugger/reference/idebugstackframe2.md) dargestellt wird, vom Debugmodul (DE) ab. Visual Studio ruft dann [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) auf, um die [IDebugExpressionContext2-Schnittstelle](../../extensibility/debugger/reference/idebugexpressioncontext2.md) abruft. Diese Schnittstelle stellt einen Kontext dar, in dem Ausdrücke ausgewertet werden können. [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) ist der Einstiegspunkt für den Auswertungsprozess. Bis zu diesem Zeitpunkt werden alle Schnittstellen von der DE implementiert.
 
- Wenn `IDebugExpressionContext2::ParseText` wird aufgerufen, die DE instanziiert die EE verknüpft ist, mit der Sprache der Quelldatei, in der Haltepunkt aufgetreten ist (die DE instanziiert außerdem die SH an diesem Punkt). Die EE wird dargestellt, durch die [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md) Schnittstelle. Ruft die DE dann [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) zum Konvertieren des Ausdrucks (in Textform) in einer analysierten Ausdruck bereit, für die Evaluierung. Durch diese analysierten Ausdruck dargestellt wird die [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) Schnittstelle. Der Ausdruck wird in der Regel analysiert und an diesem Punkt nicht ausgewertet.
+ Wenn `IDebugExpressionContext2::ParseText` aufgerufen wird, instanziiert die DE die EE, die der Sprache der Quelldatei zugeordnet ist, in der der Haltepunkt aufgetreten ist (die DE instanziiert an dieser Stelle auch das SH). Der EE wird durch die [IDebugExpressionEvaluator-Schnittstelle](../../extensibility/debugger/reference/idebugexpressionevaluator.md) dargestellt. Die DE ruft dann [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) auf, um den Ausdruck (in Textform) in einen analysierten Ausdruck zu konvertieren, der zur Auswertung bereit ist. Dieser analysierte Ausdruck wird durch die [IDebugParsedExpression-Schnittstelle](../../extensibility/debugger/reference/idebugparsedexpression.md) dargestellt. Der Ausdruck wird in der Regel analysiert und zu diesem Zeitpunkt nicht ausgewertet.
 
- Die DE erstellt ein Objekt, das implementiert die [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Schnittstelle, setzt der `IDebugParsedExpression` -Objekt in der `IDebugExpression2` -Objekt und gibt die `IDebugExpression2` -Objekt aus `IDebugExpressionContext2::ParseText`.
+ Die DE erstellt ein Objekt, das die [IDebugExpression2-Schnittstelle](../../extensibility/debugger/reference/idebugexpression2.md) implementiert, `IDebugParsedExpression` das Objekt in das `IDebugExpression2` Objekt einfügt und das `IDebugExpression2` Objekt von `IDebugExpressionContext2::ParseText`zurückgibt.
 
-### <a name="evaluate-the-expression"></a>Wertet den Ausdruck
- Visual Studio ruft entweder [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) zum Auswerten des analysierten Ausdrucks. Beide Methoden rufen [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` Ruft die Methode sofort beendet, während er sich `IDebugExpression2::EvaluateAsync` Ruft die Methode über einen Hintergrundthread) zu den analysierten Ausdruck ausgewertet und zurückgegeben ein [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle, die den Wert und Typ des analysierten Ausdrucks darstellt. `IDebugParsedExpression::EvaluateSync` verwendet die angegebene SH, Adresse und den Binder, konvertieren den analysierten Ausdruck in einen tatsächlichen Wert, der durch dargestellt die `IDebugProperty2` Schnittstelle.
+### <a name="evaluate-the-expression"></a>Auswerten des Ausdrucks
+ Visual Studio ruft entweder [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) auf, um den analysierten Ausdruck auszuwerten. Beide Methoden rufen [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) auf (`IDebugExpression2::EvaluateSync` ruft `IDebugExpression2::EvaluateAsync` die Methode sofort auf, während die Methode über einen Hintergrundthread aufruft), um den analysierten Ausdruck auszuwerten und eine [IDebugProperty2-Schnittstelle](../../extensibility/debugger/reference/idebugproperty2.md) zurückzugeben, die den Wert und Typ des analysierten Ausdrucks darstellt. `IDebugParsedExpression::EvaluateSync`verwendet das angegebene SH, die Adresse und den Bindemittel, um `IDebugProperty2` den analysierten Ausdruck in einen tatsächlichen Wert zu konvertieren, der durch die Schnittstelle dargestellt wird.
 
 ### <a name="for-example"></a>Beispiel:
- Nach dem in ein ausgeführtes Programm ein Haltepunkt erreicht wird, wählt des Benutzers an eine Variable in der **Schnellüberwachung** Dialogfeld. Dieses Dialogfeld zeigt den Namen der Variablen, dessen Wert und den Typ an. Der Benutzer kann den Wert in der Regel ändern.
+ Nachdem ein Haltepunkt in einem laufenden Programm erreicht wurde, wählt der Benutzer eine Variable im **QuickWatch-Dialogfeld** anzeigen. In diesem Dialogfeld werden der Name, der Wert und der Typ der Variablen angezeigt. Der Benutzer kann den Wert in der Regel ändern.
 
- Wenn die **Schnellüberwachung** Dialogfeld wird angezeigt, der Namen der Variablen, die überprüft wird, wird als Text, der gesendet [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Dies gibt eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt, das in diesem Fall den analysierten Ausdruck darstellt, die Variable. [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) wird aufgerufen, um das Erstellen einer `IDebugProperty2` Objekt, das den Wert der Variable und Typ sowie den Namen darstellt. Es ist diese Informationen, die angezeigt wird.
+ Wenn das **QuickWatch-Dialogfeld** angezeigt wird, wird der Name der untersuchten Variablen als Text an [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)gesendet. Dadurch wird ein [IDebugExpression2-Objekt](../../extensibility/debugger/reference/idebugexpression2.md) zurückgegeben, das den analysierten Ausdruck, in diesem Fall die Variable, darstellt. [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) wird dann aufgerufen, um ein `IDebugProperty2` Objekt zu erzeugen, das den Wert und Typ der Variablen sowie ihren Namen darstellt. Es sind diese Informationen, die angezeigt werden.
 
- Wenn der Benutzer den Wert der Variablen, ändert [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) wird aufgerufen, mit dem neuen Wert, der den Wert der Variablen im Speicher ändert, damit es verwendet wird, wenn das Programm fortgesetzt wird ausgeführt.
+ Wenn der Benutzer den Wert der Variablen ändert, wird [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) mit dem neuen Wert aufgerufen, wodurch der Wert der Variablen im Arbeitsspeicher geändert wird, sodass sie verwendet wird, wenn das Programm wieder ausgeführt wird.
 
- Finden Sie unter [anzeigen "lokal"](../../extensibility/debugger/displaying-locals.md) für Weitere Informationen zu diesem Prozess die Werte der Variablen anzuzeigen. Finden Sie unter [Ändern des Werts eines lokalen Elements](../../extensibility/debugger/changing-the-value-of-a-local.md) Weitere Einzelheiten, wie der Wert einer Variablen geändert wird.
+ Weitere Informationen zu diesem Prozess zum Anzeigen der Werte von Variablen finden Sie unter Anzeigen von [Locals.](../../extensibility/debugger/displaying-locals.md) Weitere Informationen dazu, wie der Wert einer Variablen geändert wird, finden Sie unter [Ändern des Werts eines lokalen](../../extensibility/debugger/changing-the-value-of-a-local.md) Gebiets.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md) übergibt die Argumente, die übergeben werden, wenn die DE die EE aufruft.
+ [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md) Stellt die Argumente bereit, die übergeben werden, wenn die DE den EE aufruft.
 
- [Wichtige Schnittstellen für die ausdrucksauswertung Ausdruck](../../extensibility/debugger/key-expression-evaluator-interfaces.md) beschreibt die wichtigen Schnittstellen erforderlich, wenn ein EE, zusammen mit den Auswertungskontext zu schreiben.
+ [Schlüsselausdrucksauswertungsschnittstellen](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Beschreibt die wichtigsten Schnittstellen, die beim Schreiben eines EE erforderlich sind, zusammen mit dem Evaluierungskontext.
 
-## <a name="see-also"></a>Siehe auch
-- [Schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)
-- [Ändern des Werts eines lokalen Elements](../../extensibility/debugger/changing-the-value-of-a-local.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Schreiben eines CLR-Ausdrucksevaluators](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Anzeigen von Einheimischen](../../extensibility/debugger/displaying-locals.md)
+- [Ändern des Werts eines lokalen](../../extensibility/debugger/changing-the-value-of-a-local.md)

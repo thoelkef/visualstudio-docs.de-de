@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593641"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Vorgehensweise: Hinzufügen einer Anwendungskonfigurationsdatei zu einem C#-Projekt
@@ -39,7 +39,7 @@ Bei der Projekterstellung kopiert die Entwicklungsumgebung automatisch die Datei
 
      Eine Datei namens *app.config* wird Ihrem Projekt hinzugefügt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Anwendungseinstellungen (.NET)](../ide/managing-application-settings-dotnet.md)
 - [Konfigurationsdateischema (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)

@@ -1,27 +1,27 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
+title: IDebugProgram3::ExecuteonThread | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 798a0caca394a21d6ee12a99efeacb2f27f6969c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343601"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722658"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-Führt das Debugger-Programm. Der Thread wird zurückgegeben, den Debuggerinformationen geben, in welchem, die Thread dem Benutzer angezeigt wird, wenn das Programm ausgeführt, wird.
+Führt das Debuggerprogramm aus. Der Thread wird zurückgegeben, um den Debuggerinformationen darüber zu geben, welchen Thread der Benutzer beim Ausführen des Programms anzeigt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,22 +38,22 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>Parameter
 `pThread`\
-[in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt.
+[in] Ein [IDebugThread2-Objekt.](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Es gibt drei Möglichkeiten, ein Debugger die Ausführung nach dem Beenden fortgesetzt werden kann:
+## <a name="remarks"></a>Bemerkungen
+ Es gibt drei verschiedene Möglichkeiten, wie ein Debugger die Ausführung nach dem Beenden fortsetzen kann:
 
-- Führen Sie aus: Kündigen Sie alle vorherigen Schritt aus, und führen Sie bis zum nächsten Haltepunkt und so weiter.
+- Ausführen: Brechen Sie einen vorherigen Schritt ab, und führen Sie bis zum nächsten Haltepunkt usw. aus.
 
-- Schritt: Brechen Sie alle alten Schritt und ausgeführt, bis der neue Schritt abgeschlossen ist.
+- Schritt: Brechen Sie jeden alten Schritt ab, und führen Sie aus, bis der neue Schritt abgeschlossen ist.
 
-- Fahren Sie fort: Führen Sie erneut aus, und lassen Sie alle alten Schritt aktiv.
+- Weiter: Führen Sie erneut, und lassen Sie jeden alten Schritt aktiv.
 
-  Der Thread, die an `ExecuteOnThread` ist nützlich, bei der Entscheidung, wird der entsprechende Schritt abgebrochen. Bricht Sie alle Schritte ab, wenn Sie nicht wissen, dass den Thread ausgeführt wird ausgeführt. Mit Kenntnis des Threads müssen Sie nur den Schritt für den aktiven Thread abzubrechen.
+  Der übergebene `ExecuteOnThread` Thread ist nützlich, wenn Sie entscheiden, welcher Schritt abgebrochen werden soll. Wenn Sie den Thread nicht kennen, bricht die Ausführung der Ausführung alle Schritte ab. Wenn Sie den Thread kennen, müssen Sie nur den Schritt im aktiven Thread abbrechen.
 
-## <a name="see-also"></a>Siehe auch
-- [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Ausführen](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

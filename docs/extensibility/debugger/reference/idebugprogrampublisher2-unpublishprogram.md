@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Microsoft-Dokumentation
+title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgram
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0bc394623731679a1172e85a499b1567e15042e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343251"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721588"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-Wird ein Programm nicht verfügbar, die debuggt werden.
+Macht ein Programm nicht für das Debuggen verfügbar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>Parameter
 `pDebuggeeInterface`\
-[in] Ein `IUnknown` Schnittstelle, um die Anwendung. Dies ist der gleiche Wert angegeben die [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) Methode und eindeutig identifiziert die Anwendung entfernt wird (d. h., er dient als ein Cookie).
+[in] Eine `IUnknown` Schnittstelle zum Programm. Dies ist derselbe Wert, der der [PublishProgram-Methode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) zur Verfügung gestellt wird, und identifiziert das zu entfernende Programm eindeutig (d. h. es wird als Cookie verwendet).
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Um ein Programm auf die Debug-Engines und sitzungsbasierter Debug-Manager verfügbar zu machen, verwenden Sie die [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Um ein Programm für die Debugmodule und den Sitzungsdebug-Manager verfügbar zu machen, verwenden Sie die [PublishProgram-Methode.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

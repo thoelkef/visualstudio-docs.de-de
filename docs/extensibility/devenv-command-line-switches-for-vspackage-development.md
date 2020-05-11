@@ -1,5 +1,5 @@
 ---
-title: Devenv-Befehlszeilenschalter für die Entwicklung von VSPackage | Microsoft-Dokumentation
+title: Devenv Command-Line Switches für die VSPackage-Entwicklung | Microsoft Docs
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,43 +13,43 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289f31c503143dc2b992717483f4d8701414e09d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348052"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712190"
 ---
-# <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die Entwicklung von VSPackages
+# <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung
 
-Visual Studio können Entwickler über die Befehlszeile automatisieren Ausführung `devenv.exe`, die Datei, die Visual Studio-IDE wird gestartet.
+Visual Studio ermöglicht Entwicklern, Aufgaben über die `devenv.exe`Befehlszeile zu automatisieren, wenn sie die Datei ausführen, die die Visual Studio-IDE startet.
 
- Tasks gehört Folgendes:
+ Zu den Aufgaben gehören:
 
-- Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE aus.
+- Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE.
 
-- Erstellen von Projekten mit der Voreinstellung wird automatisch Buildeinstellungen oder Debugkonfigurationen.
+- Automatisches Erstellen von Projekten mithilfe voreingestellter Buildeinstellungen oder Debugkonfigurationen.
 
-- Laden die IDE in spezifischen Konfigurationen außerhalb der IDE aus. Sie können auch die IDE beim Start anpassen.
+- Laden der IDE in bestimmten Konfigurationen, alle von außerhalb der IDE. Sie können die IDE auch beim Start anpassen.
 
-## <a name="guidelines-for-switches"></a>Richtlinien für switches
+## <a name="guidelines-for-switches"></a>Richtlinien für Switches
 
-Visual Studio-Dokumentation beschreibt die Benutzerebene `devenv` Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Die `devenv` Tool unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen hilfreich sind.
+In der Visual Studio-Dokumentation werden die Befehlszeilenwechsel auf Benutzerebene `devenv` beschrieben. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Das `devenv` Tool unterstützt auch zusätzliche Befehlszeilen-Switches, die bei der ENTWICKLUNG, Bereitstellung und dem Debuggen von VSPackage nützlich sind.
 
-| Befehlszeilenschalter | Beschreibung |
+| Befehlszeilenschalter | BESCHREIBUNG |
 |---------------------| - |
-| `/ResetSkipPkgs` | Löscht alle Skip-Loading-Optionen, die von Benutzern, die Laden von problematischen VSPackages verhindern möchten hinzugefügt wurden, und klicken Sie dann startet Visual Studio. Das Vorhandensein eines SkipLoading-Tags deaktiviert das Laden eines VSPackage. Das Löschen des Tags das Laden des VSPackage erneut aktiviert werden.<br /><br /> Der Schalter verwendet keine Argumente. |
-| `/RootSuffix` | Startet Visual Studio mit einem alternativen Speicherort. Der folgende Befehl wird die Verknüpfung erstellt, die vom Visual Studio SDK-Installationsprogramm ausgeführt:<br /><br /> `devenv /RootSuffix exp`<br /><br /> In diesem Fall `exp` identifiziert einen Speicherort mit einem bestimmten Suffix (z. B. `10.0Exp` anstelle von `10.0`). Die experimentelle Instanz können Sie eine VSPackage getrennt von der Instanz von Visual Studio zu debuggen, die Sie verwenden, um Code zu schreiben.<br /><br /> Dieser Schalter dauert eine beliebige Zeichenfolge, die einen Speicherort angibt, den Sie mithilfe von VSRegEx.exe erstellt haben. Weitere Informationen finden Sie unter [die experimentelle Instanz](../extensibility/the-experimental-instance.md). |
-| `/SafeMode` | Startet Visual Studio im abgesicherten Modus Laden nur die Standard-IDE und die Dienste an. Die `/SafeMode` Schalter verhindert, dass alle VSPackages von Drittanbietern geladen werden, wenn der Start von Visual Studio stabile Ausführung sicherzustellen.<br /><br /> Der Schalter verwendet keine Argumente. |
-| `/Setup` | Erzwingt, dass Visual Studio, um die Ressourcenmetadaten, die Menüs, Symbolleisten und Befehlsgruppen aus allen verfügbaren VSPackages beschreibt. Sie können diesen Befehl nur als Administrator ausführen. <br /><br /> Der Schalter verwendet keine Argumente. Der Befehl `devenv /Setup` wird in der Regel als letzter Schritt der Installation angegeben. Verwenden der `/Setup` Switch nicht starten Sie die IDE.|
-| `/Splash` | Zeigt den Begrüßungsbildschirm für Visual Studio, Bildschirm wie üblich, und klicken Sie dann zeigt die Meldung vor dem Anzeigen der Haupt-IDE Feld. Das Meldungsfeld können Sie die Studie des Begrüßungsbildschirm (z. B. zu prüfen, ein VSPackage-Produkt-Symbol).<br /><br /> Der Schalter verwendet keine Argumente. |
+| `/ResetSkipPkgs` | Löscht alle Optionen zum Laden über überspringen, die von Benutzern hinzugefügt wurden, die das Laden problematischer VSPackages vermeiden möchten, und startet dann Visual Studio. Das Vorhandensein eines SkipLoading-Tags deaktiviert das Laden eines VSPackage. Das Löschen des Tags ermöglicht das Laden des VSPackage erneut.<br /><br /> Der Schalter verwendet keine Argumente. |
+| `/RootSuffix` | Startet Visual Studio mithilfe eines alternativen Speicherorts. Der folgende Befehl wird von der Vom Visual Studio SDK-Installationsprogramm erstellten Verknüpfung ausgeführt:<br /><br /> `devenv /RootSuffix exp`<br /><br /> Identifiziert in `exp` diesem Fall einen Speicherort mit einem bestimmten `10.0Exp` Suffix (z. B. anstelle von `10.0`). Mit der experimentellen Instanz können Sie ein VSPackage getrennt von der Instanz von Visual Studio debuggen, die Sie zum Schreiben von Code verwenden.<br /><br /> Dieser Schalter kann eine beliebige Zeichenfolge verwenden, die einen Speicherort identifiziert, den Sie mithilfe von VSRegEx.exe erstellt haben. Weitere Informationen finden Sie unter [Die experimentelle Instanz](../extensibility/the-experimental-instance.md). |
+| `/SafeMode` | Startet Visual Studio im abgesicherten Modus und lädt nur die Standard-IDE und Dienste. Der `/SafeMode` Switch verhindert, dass alle VSPackages von Drittanbietern beim Starten von Visual Studio geladen werden, wodurch eine stabile Ausführung gewährleistet wird.<br /><br /> Der Schalter verwendet keine Argumente. |
+| `/Setup` | Erzwingt, dass Visual Studio Ressourcenmetadaten zusammenführt, die Menüs, Symbolleisten und Befehlsgruppen aus allen verfügbaren VSPackages beschreiben. Sie können diesen Befehl nur als Administrator ausführen. <br /><br /> Der Schalter verwendet keine Argumente. Der Befehl `devenv /Setup` wird in der Regel als letzter Schritt der Installation angegeben. Durch die `/Setup` Verwendung des Schalters wird die IDE nicht gestartet.|
+| `/Splash` | Zeigt wie gewohnt den Visual Studio-Begrüßungsbildschirm an und zeigt dann ein Meldungsfeld an, bevor die Haupt-IDE angezeigt wird. Mit dem Meldungsfeld können Sie den Begrüßungsbildschirm untersuchen (z. B. um nach einem VSPackage-Produktsymbol zu suchen).<br /><br /> Der Schalter verwendet keine Argumente. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen von Befehlszeilenschaltern](../extensibility/adding-command-line-switches.md)
-- [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)
+- [Devenv-Befehlszeilenparameter](../ide/reference/devenv-command-line-switches.md)

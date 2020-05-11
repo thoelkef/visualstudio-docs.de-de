@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113710"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649198"
 ---
 # <a name="remove-visual-studio"></a>Entfernen von Visual Studio
 
@@ -51,10 +51,10 @@ So wird das Tool `InstallCleanup.exe` ausgeführt
 1. Öffnen Sie eine Eingabeaufforderung als Administrator. Wenn Sie eine Eingabeaufforderung als Administrator öffnen möchten, führen Sie diese Schritte aus:
    * Geben Sie **cmd** in das Suchfeld ein.
    * Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und wählen Sie dann **Als Administrator ausführen**.
-1. Geben Sie den vollständigen Pfad des Tools `InstallCleanup.exe` ein und fügen Sie den gewünschten Befehlszeilenschalter hinzu. Der Pfad des Tools ist standardmäßig wie folgt:
+1. Geben Sie den vollständigen Pfad des Tools `InstallCleanup.exe` ein und fügen Sie den gewünschten Befehlszeilenschalter hinzu. Der Pfad des Tools lautet standardmäßig wie folgt: Die doppelten Anführungszeichen schließen einen Befehl mit Leerzeichen ein:
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]

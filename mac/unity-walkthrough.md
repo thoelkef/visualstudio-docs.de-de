@@ -7,10 +7,10 @@ ms.date: 05/20/2019
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.openlocfilehash: c25df777a9af10859c70741a78c880a57c6f5b8e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984794"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Erste Schritte beim Erstellen von Spielen mit Unity in Visual Studio für Mac
@@ -24,7 +24,7 @@ Visual Studio für Mac-Tools für Unity ist eine kostenlose Erweiterung, die mit
 > [!div class="checklist"]
 > * Erfahren Sie mehr über die Unity-Entwicklung mit Visual Studio für Mac.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Visual Studio für Mac ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
 - Unity 5.6.1 Personal Edition oder höher ([https://store.unity.com](https://store.unity.com/), erfordert für die Ausführung ein unity.com-Konto)

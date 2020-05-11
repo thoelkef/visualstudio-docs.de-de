@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericParamField::ConstraintCount | Microsoft-Dokumentation
+title: IDebugGenericParamField::ConstraintCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de00e38fa02447217b30e4a6801001e2663798e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5a8f9809df0fa45021aab640bf3ff547efaa1576
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330441"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728079"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
-Gibt die Anzahl von Einschränkungen, die dieser generischen Parameter zugeordnet sind.
+Gibt die Anzahl der Einschränkungen zurück, die diesem generischen Parameter zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,13 +40,13 @@ int ConstraintCount(
 
 ## <a name="parameters"></a>Parameter
 `pcConst`\
-[in, out] Anzahl der Einschränkungen, die in diesem Feld zugeordnet sind.
+[in, out] Anzahl der Einschränkungen, die diesem Feld zugeordnet sind.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.
+Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugGenericParamFieldType-Objekt** implementiert wird, das die [IDebugGenericParamField-Schnittstelle](../../../extensibility/debugger/reference/idebuggenericparamfield.md) verfügbar macht.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)
@@ -81,5 +81,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

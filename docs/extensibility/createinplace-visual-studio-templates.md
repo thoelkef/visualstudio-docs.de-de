@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341778"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739663"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace-Element (Visual Studio-Vorlagen)
-Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in der angegebenen Position oder führen Sie die parameterersetzung in einen temporären Speicherort und speichern Sie das Projekt am angegebenen Speicherort.
+Gibt an, ob das Projekt erstellt und Parameterersetzung enden soll, oder ob Parameterersetzung an einem temporären Speicherort durchgeführt werden soll, und dann das Projekt an dem angegebenen Speicherort speichern soll.
 
- \<VSTemplate> \<TemplateData> \<CreateInPlace>
+ \<VSTemplate \<> TemplateData> \<CreateInPlace>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,23 +36,23 @@ Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in 
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine
+ Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keine.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss entweder `true` oder `false` sein. Wenn `true`, das Projekt wird erstellt und parameterersetzungen erfolgt in der angegebenen Position der **neues Projekt** Dialogfeld. Wenn `false`, die parameterersetzung in einen temporären Speicherort durchgeführt und das Projekt wird dann an den angegebenen Speicherort kopiert.
+ Der Text muss entweder `true` oder `false` sein. Wenn `true`, wird das Projekt erstellt, und die Parameterersetzung wird an der im Dialogfeld **Neues Projekt** angegebenen Position durchgeführt. Wenn `false`, wird die Parameterersetzung an einem temporären Speicherort durchgeführt, und das Projekt wird dann an den angegebenen Speicherort kopiert.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `CreateInPlace` ist ein optionales Element. Der Standardwert ist `true`.
 
 ## <a name="example"></a>Beispiel
@@ -83,6 +83,6 @@ Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)

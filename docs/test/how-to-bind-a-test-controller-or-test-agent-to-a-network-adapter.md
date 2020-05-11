@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594785"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Vorgehensweise: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
@@ -133,4 +133,4 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)
 - [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [How to: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

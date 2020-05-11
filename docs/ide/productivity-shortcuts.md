@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585729"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Tipps zu Tastenkombinationen in Visual Studio
@@ -26,7 +26,7 @@ Eine vollständige Liste von Tastenkombinationen für Befehle finden Sie unter [
 
 ## <a name="window-management"></a>Fensterverwaltung
 
-|Aufgabe|Verknüpfung|
+|Aufgabe|Tastenkombination|
 |-|-|
 |Maximieren eines unverankerten Fensters|**Doppelklick** auf die Titelleiste|
 |Maximieren/Minimieren von Fenstern|**WINDOWS-TASTE**+**NACH-OBEN-TASTE** / **WINDOWS-TASTE**+**NACH-UNTEN-TASTE**|
@@ -39,23 +39,23 @@ Eine vollständige Liste von Tastenkombinationen für Befehle finden Sie unter [
 |Starten einer neuen Instanz|**Win**+**UMSCHALT**+**N**|
 |Wechseln zwischen Fenstern|**Win**+**N**|
 
-## <a name="search"></a>Suchen
+## <a name="search"></a>Suchen,
 
-|Aufgabe|Verknüpfung|
+|Aufgabe|Tastenkombination|
 |-|-|
 |Projektmappen-Explorer-Suche|**STRG**+ **;**|
 |Platzieren des Fokus im Suchfeld eines beliebigen Toolfensters (außer Editor)|**Alt**+ **`** wenn sich der Fokus im Toolfenster befindet|
-|Suche in Visual Studio|**Strg**+**Q**|
+|Suche in Visual Studio|**STRG**+**Q**|
 |Filtern der Suchfeldergebnisse|@opt: Optionen<br />@cmd: Befehle<br />@mru: Zuletzt verwendet<br />@doc: Geöffnete Dokumente|
 |Suchen in den Tooloptionen|**STRG**+**E**|
 
 ## <a name="find-in-the-editor"></a>Suchen im Editor
 
-|Aufgabe|Verknüpfung|
+|Aufgabe|Tastenkombination|
 |-|-|
 |Schnellsuche|**STRG**+**F**|
 |Schnellsuche nach nächstem Ergebnis|**EINGABETASTE**|
-|Schnellsuche nach vorherigem Ergebnis|**UMSCHALT**+**EINGABETASTE**|
+|Schnellsuche nach vorherigem Ergebnis|**SHIFT**+**EINGABETASTE**|
 |Schnellsuche zur Erweiterung des Dropdowns|**ALT**+**NACH-UNTEN-TASTE**|
 |Schließen der Suche|**ESC**|
 |Schnellersetzung|**STRG**+**H**|
@@ -66,7 +66,7 @@ Eine vollständige Liste von Tastenkombinationen für Befehle finden Sie unter [
 
 ## <a name="code-editor"></a>Code-Editor
 
-|Aufgabe|Verknüpfung|
+|Aufgabe|Tastenkombination|
 |-|-|
 |Gehe zu allen|**STRG**+**T**|
 |Zu zuletzt verwendeten Dateien wechseln|**STRG**+**T**,**R**|
@@ -101,20 +101,20 @@ Eine vollständige Liste von Tastenkombinationen für Befehle finden Sie unter [
 
 ## <a name="toolbars"></a>Symbolleisten
 
-|Aufgabe|Verknüpfung|
+|Aufgabe|Tastenkombination|
 |-|-|
 |Hinzufügen von Schaltflächen|Auswählen der Symbolleistenschaltfläche „Überlauf“|
 |Suchen des Kombinationsfelds auf der Standardsymbolleiste|**STRG**+**D**|
 |Suchen des Textfeld-Befehlsmodus|Geben Sie Folgendes ein: **>**|
 |Erstellen eines neuen Alias|Geben Sie **Alias \<Neuer Alias> \<Befehl>** in das **Befehlsfenster** ein.|
 
-## <a name="debugging"></a>Debuggen
+## <a name="debugging"></a>Debugging
 
-|Aufgabe|Verknüpfung|
+|Aufgabe|Tastenkombination|
 |-|-|
 |Debugging starten|**F5**|
 |Beenden des Debuggens|**UMSCHALT**+**F5**|
-|Erneutes Starten des Debuggings|**STRG**+**UMSCHALT**+**F5**|
+|Debuggen neu starten|**STRG**+**UMSCHALT**+**F5**|
 |Prozedurschritt|**F10**|
 |Einzelschritt|**F11**|
 |Ausführen bis Rücksprung|**UMSCHALT**+**F11**|
@@ -127,7 +127,7 @@ Eine vollständige Liste von Tastenkombinationen für Befehle finden Sie unter [
 |Direktfenster: Puffer löschen|Geben Sie **cls** ein.|
 |Direktfenster: Wert ausgeben|Geben Sie **?varname** ein.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)
 - [Produktivitätsfeatures in Visual Studio](productivity-features.md)

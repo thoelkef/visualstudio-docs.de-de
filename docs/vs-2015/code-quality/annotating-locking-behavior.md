@@ -67,7 +67,7 @@ Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Si
 ## <a name="locking-annotations"></a>Sperren von Anmerkungen  
  In der folgenden Tabelle sind die Sperr Anmerkungen aufgeführt.  
   
-|Annotation|Beschreibung|  
+|Anmerkung|BESCHREIBUNG|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine exklusive Sperrenanzahl des Sperr Objekts erhöht wird, das durch `expr`benannt wird.|  
 |`_Acquires_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um einen Schritt um die Sperrenanzahl des Sperr Objekts erhöht wird, das durch `expr`benannt wird.|  
@@ -91,7 +91,7 @@ Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Si
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Systeminterne SAL-Funktionen für nicht verfügbare Sperrobjekte  
  Bestimmte Sperrobjekte werden von der Implementierung der zugehörigen Sperr Funktionen nicht verfügbar gemacht.  In der folgenden Tabelle werden die systeminternen SAL-Variablen aufgelistet, die Anmerkungen für Funktionen ermöglichen, die für diese nicht verfügbar gemachten Sperrobjekte verwendet werden.  
   
-|Annotation|Beschreibung|  
+|Anmerkung|BESCHREIBUNG|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Beschreibt die Abbruch Drehsperre.|  
 |`_Global_critical_region_`|Beschreibt den kritischen Bereich.|  
@@ -101,7 +101,7 @@ Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Si
 ## <a name="shared-data-access-annotations"></a>Anmerkungen zum freigegebenen Datenzugriff  
  In der folgenden Tabelle sind die Anmerkungen für den Zugriff auf freigegebene Daten aufgeführt.  
   
-|Annotation|Beschreibung|  
+|Anmerkung|BESCHREIBUNG|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Kommentiert eine Variable und gibt an, dass bei jedem Zugriff auf die Variable die Sperrenanzahl des Sperr Objekts, das von `expr` benannt wird, mindestens eins ist.|  
 |`_Interlocked_`|Kommentiert eine Variable und entspricht `_Guarded_by_(_Global_interlock_)`.|  

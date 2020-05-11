@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft-Dokumentation
+title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322363"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713476"
 ---
-# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Gibt die Art von symbolischen Informationen abrufen.
+# <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
+Gibt die Art der abzurufenden Symbolinformationen an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,24 +47,24 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>Felder
  `SSIF_NONE`\
- Gibt keine Flags an.
+ Zeigt keine Flags an
 
  `SSIF_VERBOSE_SEARCH_INFO`\
- Gibt, die alle Pfade verwendet werden, für die Suche nach Symbolen suchen
+ Gibt alle Suchpfade zurück, die zum Suchen von Symbolen verwendet werden
 
-## <a name="remarks"></a>Hinweise
- Diese Flags werden übergeben, als Parameter an die ["getsymbolinfo"](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) Methode, um zu bestimmen, die Menge an Informationen zurückgegeben.
+## <a name="remarks"></a>Bemerkungen
+ Diese Flags werden als Parameter an die [GetSymbolInfo-Methode](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) übergeben, um die Menge der zurückgegebenen Informationen zu bestimmen.
 
 > [!NOTE]
-> Derzeit nur `SSIF_VERBOSE_SEARCH_INFO` wird unterstützt, und es muss angegeben werden, als die `dwFlags` Parameter `IDebugModule3::GetSymbolInfo`. Alle anderen Werte wird ein Fehler zurückgegeben.
+> Derzeit wird `SSIF_VERBOSE_SEARCH_INFO` nur unterstützt, und es `dwFlags` muss `IDebugModule3::GetSymbolInfo`als Parameter für angegeben werden. Alle anderen Werte geben einen Fehler zurück.
 
-## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+ Kopfzeile: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

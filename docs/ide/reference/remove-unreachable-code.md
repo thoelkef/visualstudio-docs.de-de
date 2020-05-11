@@ -1,20 +1,21 @@
 ---
 title: Refactoring des Entfernens von nicht erreichbarem Code
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62002e78513ecb6ebaefd8130255471d6ba93d0c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565486"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093961"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refactoring des Entfernens von nicht erreichbarem Code
 
@@ -22,9 +23,11 @@ Dieses Refactoring gilt für:
 
 - C#
 
-**Beschreibung:** Es wird Code entfernt, der nie ausgeführt werden wird.
+- Visual Basic
 
-**Hintergrund:** Ihr Programm enthält keinen Pfad zu einem bestimmten Codeausschnitt, weshalb dieser Codeausschnitt nicht benötigt wird.
+**Beschreibung**: Es wird Code entfernt, der nie ausgeführt wird.
+
+**Hintergrund**: Ihr Programm enthält keinen Pfad zu einem bestimmten Codeausschnitt, weshalb dieser Codeausschnitt nicht benötigt wird.
 
 **Vorteile**: Die Lesbarkeit und Verwaltbarkeit werden durch das Entfernen eines überflüssigen, nie ausgeführten Code verbessert.
 
@@ -62,7 +65,7 @@ private void Method()
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

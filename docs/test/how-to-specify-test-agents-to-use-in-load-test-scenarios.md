@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588927"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Vorgehensweise: Angeben der in Auslastungstestszenarios zu verwendenden Test-Agents
@@ -62,11 +62,11 @@ Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Comp
     > [!NOTE]
     > Die Eigenschaft **Zu verwendende Agents** wird bei lokalen Testläufen ignoriert. Wenn bei Remotetestläufen keiner der in **Zu verwendende Agents** angegebenen Agents vorhanden ist, werden im Szenario keine Tests ausgeführt.
 
-5. Klicken Sie nach dem Ändern der Eigenschaft auf im Menü **Datei** auf **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Zu verwendende Agents** ausführen.
+5. Klicken Sie nach dem Ändern der Eigenschaft auf **Speichern** im Menü **Datei**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Zu verwendende Agents** ausführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
-- [Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
+- [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
 - [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

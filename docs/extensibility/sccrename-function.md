@@ -1,5 +1,5 @@
 ---
-title: Sccrename-Funktion | Microsoft-Dokumentation
+title: SccRename-Funktion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b2928653507b670160c72ca3ce09a0227a4170
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 88a917e43729b3049e488264c260f8455ab08fe4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720765"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700432"
 ---
 # <a name="sccrename-function"></a>SccRename-Funktion
-Diese Funktion benennt eine Datei in das Quell Code Verwaltungssystem um.
+Diese Funktion benennt eine Datei im Quellcodeverwaltungssystem um.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,38 +34,38 @@ SCCRTN SccRename(
 ```
 
 #### <a name="parameters"></a>Parameter
- pvcontext
+ pvContext
 
-in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.
+[in] Die Quellcodeverwaltungs-Plug-In-Kontextstruktur.
 
- HWND
+ hWnd
 
-in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
 
  lpFileName
 
-in Der voll qualifizierte Dateiname der Datei, die umbenannt wird.
+[in] Der vollqualifizierte Dateiname der umbenannten Datei.
 
- lpnewname
+ lpNewName
 
-in Der voll qualifizierte neue Name. Wenn der Verzeichnispfad anders ist, wird die Datei von einem Unterverzeichnis in ein anderes verschoben.
+[in] Der vollqualifizierte neue Name. Wenn der Verzeichnispfad anders ist, wurde die Datei von einem Unterverzeichnis in ein anderes verschoben.
 
 ## <a name="return-value"></a>Rückgabewert
- Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
+ Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Der Umbenennungs Vorgang wurde erfolgreich abgeschlossen.|
-|SCC_E_PROJNOTOPEN|Das Projekt ist nicht unter Quell Code Verwaltung geöffnet.|
-|SCC_E_FILENOTCONTROLLED|Die Datei befindet sich nicht unter Quell Code Verwaltung.|
-|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht autorisiert, diesen Vorgang abzuschließen.|
-|SCC_E_COULDNOTCREATEPROJECT|Das Projekt konnte nicht als Teil des Umbenennungs Prozesses erstellt werden.|
+|SCC_OK|Der Umbenennungsvorgang wurde erfolgreich abgeschlossen.|
+|SCC_E_PROJNOTOPEN|Das Projekt ist nicht unter Quellcodeverwaltung geöffnet.|
+|SCC_E_FILENOTCONTROLLED|Die Datei befindet sich nicht unter Quellcodeverwaltung.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quellcodeverwaltungssystem ist ein Problem auftritt, wahrscheinlich aufgrund von Netzwerk- oder Konfliktproblemen.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diesen Vorgang abzuschließen.|
+|SCC_E_COULDNOTCREATEPROJECT|Das Projekt konnte nicht als Teil des Umbenennungsprozesses erstellt werden.|
 |SCC_E_OPNOTPERFORMED|Der Vorgang wurde nicht ausgeführt.|
-|SCC_E_NONSPECIFICERROR|Ein nicht spezifizierter oder allgemeiner Fehler ist aufgetreten.|
+|SCC_E_NONSPECIFICERROR|Ein nicht angegebener oder allgemeiner Fehler ist aufgetreten.|
 
-## <a name="remarks"></a>Hinweise
- Diese Funktion kann verwendet werden, um eine Datei umzubenennen oder im Quell Code Verwaltungssystem von einem Speicherort zu einem anderen zu verschieben. Das Quellcodeverwaltungs-Plug-in sollte nicht versuchen, auf die Datei auf dem Datenträger zuzugreifen. Es liegt in der Verantwortung der IDE, die lokale Datei umzubenennen.
+## <a name="remarks"></a>Bemerkungen
+ Diese Funktion kann verwendet werden, um eine Datei umzubenennen oder sie von einem Speicherort an einen anderen im Quellcodeverwaltungssystem zu verschieben. Das Quellcodeverwaltungs-Plug-In sollte nicht versuchen, auf die Datei auf dem Datenträger zuzugreifen. Es liegt in der Verantwortung der IDE, die lokale Datei umzubenennen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

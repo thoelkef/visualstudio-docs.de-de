@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666178"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Optionen, Text-Editor, HTML (Web Forms), Sonstiges
@@ -31,6 +31,6 @@ Verwenden Sie die Optionsseite **Sonstiges**, um Einstellungen festzulegen, wie 
 
    Wenn dieses Kontrollkästchen aktiviert ist, wird das Fenster zur Tagvervollständigung bei Eingabe des Kleiner-als-Zeichens („<“) angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)

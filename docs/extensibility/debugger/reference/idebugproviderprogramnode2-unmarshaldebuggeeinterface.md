@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft-Dokumentation
+title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30163fe2dad42f42dd635eddcc2afdf3e1acaf0a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c0f6e66b6585eafde656cd7be88d0c76bbb3f37
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350042"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720706"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg.
+Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int UnmarshalDebuggeeInterface(
 
 ## <a name="parameters"></a>Parameter
 `riid`\
-[in] Die GUID der Schnittstelle abrufen.
+[in] GUID der zu erhaltenden Schnittstelle.
 
 `ppvObject`\
-[out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] dies direkt auf den Typ für die gewünschte Schnittstelle umgewandelt werden kann. [C#] verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.
+[out] Gibt das Objekt zurück, das die gewünschte Schnittstelle implementiert. [C++] kann direkt in den gewünschten Schnittstellentyp gegossen werden. Verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzubekommen.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode wird verwendet, wenn die Debug-Engine, in ausgeführt wird der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Prozessbereich und die zu debuggende Programm wird im eigenen Prozessbereich ausgeführt wird.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode wird verwendet, wenn das [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugmodul im Prozessbereich ausgeführt wird und das zu debuggende Programm in einem eigenen Prozessbereich ausgeführt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

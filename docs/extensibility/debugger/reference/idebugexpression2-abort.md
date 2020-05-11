@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::Abort | Microsoft-Dokumentation
+title: IDebugExpression2::Abbruch | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::Abort
 ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c85a746ab4c916a0aae81b40dd3539264c5572f6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5de2e34a8ae1e038c2109627099dacc5bd03a1ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326022"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729773"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
-Diese Methode bricht den asynchronen ausdrucksauswertung ab, als durch einen Aufruf der [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) Methode.
+Diese Methode bricht die asynchrone Ausdrucksauswertung ab, die durch einen Aufruf der [EvaluateAsync-Methode](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) gestartet wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,12 +38,12 @@ int Abort();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Asynchrone ausdrucksauswertung abgebrochen wird, werden nicht gesendet, wenn ein [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) Ereignis an den Ereignisrückruf übergeben wird, um die [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md) oder [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) Methoden.
+## <a name="remarks"></a>Bemerkungen
+ Wenn die Asynchronexpressionauswertung abgebrochen wird, senden Sie kein [IDebugExpressionEvaluationCompleteEvent2-Ereignis](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) an den Ereignisrückruf, der an die [Attach-](../../../extensibility/debugger/reference/idebugprogram2-attach.md) oder [Attach-Methoden](../../../extensibility/debugger/reference/idebugengine2-attach.md) übergeben wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

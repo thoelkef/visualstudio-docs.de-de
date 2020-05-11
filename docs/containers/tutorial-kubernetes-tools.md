@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916950"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444686"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Erste Schritte mit Kubernetes-Tools in Visual Studio
 
@@ -30,7 +30,7 @@ Sie benötigen Folgendes, um diese neue Funktionalität zu nutzen:
 - Das [Kubernetes-Tool für Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), das als separater Download verfügbar ist.
 ::: moniker-end
 ::: moniker range="vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit der Workload *ASP.NET- und Webentwicklung*
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit der Workload *ASP.NET und Webentwicklung*
 ::: moniker-end
 - [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows) auf Ihrer Entwicklungsarbeitsstation installiert (d. h. der Computer, auf dem Sie Visual Studio ausführen), wenn Sie Docker-Images erstellen, lokal ausgeführte Docker-Container debuggen oder in AKS veröffentlichen möchten. (Docker ist für das Erstellen und Debuggen von Docker-Containern in AKS mithilfe von Azure Dev Spaces *nicht* erforderlich.)
 ::: moniker range="vs-2017"
@@ -40,7 +40,7 @@ Sie benötigen Folgendes, um diese neue Funktionalität zu nutzen:
 
     1. Ein Azure Kubernetes Service-Cluster. Weitere Informationen finden Sie unter [Erstellen eines AKS-Clusters](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Stellen Sie sicher, dass Sie über Ihre Entwicklungsarbeitsstation [eine Verbindung mit dem Cluster](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) herstellen.
 
-    1. Die Helm-Befehlszeilenschnittstelle muss auf Ihrer Entwicklungsarbeitsstation installiert sein. Weitere Informationen finden Sie unter [Installieren von Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Die Helm-Befehlszeilenschnittstelle muss auf Ihrer Entwicklungsarbeitsstation installiert sein. Weitere Informationen finden Sie unter [Installieren von Helm](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md).
 
     1. Helm muss mithilfe des `helm init`-Befehls für Ihren AKS-Cluster konfiguriert sein. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end

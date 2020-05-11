@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593654"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638045"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
+
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
  Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Dies vereinfacht das Nachverfolgen von Quellcode und das Bereitstellen der Aufgabe. Der Quellcode ist im Skript integriert.
 
  In MSBuild 15.8 wurde [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) hinzugefügt, womit plattformübergreifende .NET Standard-Inlineaufgaben erstellt werden können.  Wenn Sie Inlineaufgaben in .NET Core verwenden müssen, müssen Sie RoslynCodeTaskFactory verwenden.
 ## <a name="the-structure-of-an-inline-task"></a>Struktur von Inlineaufgaben
+
  Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
 
 ```xml
@@ -50,7 +52,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
 
 - Nach dem `TaskFactory`-Attribut wird die Klasse benannt, die die Inlineaufgabenfactory implementiert.
 
-- Über das `AssemblyFile`-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben. Sie können auch mit dem `AssemblyName`-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory-Klasse angeben, die sich in der Regel im globalen Assemblycache (Global Assembly Cache, GAC) befindet.
+- Über das `AssemblyFile`-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben. Sie können auch mit dem `AssemblyName`-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory-Klasse angeben, die sich in der Regel in `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` befindet.
 
 Die verbleibenden Elemente der `DoNothing`-Aufgabe sind leer und werden bereitgestellt, um die Reihenfolge und Struktur einer Inlineaufgabe zu veranschaulichen. Ein robusteres Beispiel wird weiter unten in diesem Thema präsentiert.
 
@@ -68,6 +70,7 @@ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineau
 > Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.
 
 ### <a name="code-element"></a>Codeelement
+
  Als letztes untergeordnetes Element wird im `Task`-Element das `Code`-Element angegeben. Das `Code`-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten. Welche Elemente Sie im `Code`-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.
 
  Das `Language`-Attribut gibt die Sprache an, in die der Code geschrieben ist. Zulässige Werte sind `cs` für C# und `vb` für Visual Basic.
@@ -88,6 +91,7 @@ Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über
 > Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.
 
 ## <a name="helloworld"></a>HelloWorld
+
  Im Folgenden finden Sie eine robustere Inlineaufgabe. Die HalloWelt-Aufgabe gibt „Hallo, Welt!“ auf dem Standardgerät für die Fehlerprotokollierung aus. In der Regel handelt es sich dabei um die Systemkonsole oder das Fenster **Ausgabe** in Visual Studio. Das `Reference`-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Eingabe- und Ausgabeparameter
+
  Inlineaufgabenparameter bilden untergeordnete Elemente eines `ParameterGroup`-Elements. Jeder Parameter akzeptiert den Namen des Elements, das von ihm definiert wird. Im folgenden Code wird der Parameter `Text` definiert.
 
 ```xml
@@ -162,6 +167,7 @@ definiert die folgenden drei Parameter:
 Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.
 
 ## <a name="example"></a>Beispiel
+
  Mit der folgenden Inlineaufgabe wird jedes Vorkommen eines Tokens in der angegebenen Datei durch den angegebenen Wert ersetzt.
 
 ```xml
@@ -190,5 +196,6 @@ File.WriteAllText(Path, content);
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Exemplarische Vorgehensweise: Erstellen eines Inlinetasks](../msbuild/walkthrough-creating-an-inline-task.md)

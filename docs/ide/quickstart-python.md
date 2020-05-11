@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180345"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444946"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -46,7 +46,7 @@ In den folgenden Schritten wird ein leeres Projekt erstellt, das als Container f
 
     ![Dialogfeld „Neues Projekt“ mit der Auswahl „Python-Webprojekt“](media/quickstart-python-00-web-project.png)
 
-    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, wählen Sie **More** > **Modify** (Mehr > Ändern), die Workload **Python-Entwicklung** und dann **Modify** (Ändern) aus.
+    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, klicken Sie auf **Mehr** > **Ändern**, wählen Sie die Workload **Python-Entwicklung** aus, und klicken Sie dann auf **Ändern**.
 
     ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](../python/media/installation-python-workload.png)
 
@@ -62,7 +62,7 @@ In den folgenden Schritten wird ein leeres Projekt erstellt, das als Container f
 
     ![Anzeige „Neues Projekt erstellen“ mit der Auswahl „Python-Webprojekt“](media/quickstart-python-00-web-project-2019a.png)
 
-    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, wählen Sie **More** > **Modify** (Mehr > Ändern), die Workload **Python-Entwicklung** und dann **Modify** (Ändern) aus.
+    Wenn die Python-Projektvorlagen nicht angezeigt werden, führen Sie den **Visual Studio-Installer** aus, klicken Sie auf **Mehr** > **Ändern**, wählen Sie die Workload **Python-Entwicklung** aus, und klicken Sie dann auf **Ändern**.
 
     ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](../python/media/installation-python-workload.png)
 
@@ -182,7 +182,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 
 3. Klicken Sie auf **Debuggen > Starten ohne Debugging** (**STRG**+**F5**). Dadurch werden Änderungen an Dateien gespeichert, und die App wird ausgeführt.
 
-4. Ein Befehlsfenster mit der Meldung „* Running in <https://localhost:4449/>“ wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ (Hallo, Python!) angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
+4. Ein Befehlsfenster mit der Meldung **Running in https:\//localhost:4449** wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
 
     Wenn kein Browser automatisch geöffnet wird, starten Sie Ihren bevorzugten Browser, und navigieren Sie zu `localhost:4449`.
 

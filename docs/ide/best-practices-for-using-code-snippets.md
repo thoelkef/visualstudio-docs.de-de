@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591709"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bewährte Methoden für die Verwendung von Codeausschnitten
@@ -23,7 +23,7 @@ Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tu
 
 ## <a name="handling-exceptions"></a>Behandeln von Ausnahmen
 
-Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele hierzu finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) und [Try...Catch...Finally Statement (Visual Basic) (Try...Catch...Finally-Anweisung (Visual Basic))](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) und [Try...Catch...Finally Statement (Visual Basic) (Try...Catch...Finally-Anweisung (Visual Basic))](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Dateispeicherorte
 
@@ -45,7 +45,7 @@ Wie sicher ein Ausschnitt ist, hängt davon ab, wo er im Quellcode verwendet wir
 
 - Schützen von Ressourcen (z.B. Ereignisprotokolle, Registrierung)
 
-- Speichern von geheimen Daten
+- Speichern von Geheimnissen
 
 - Überprüfen von Eingaben
 
@@ -67,7 +67,7 @@ IntelliSense-Codeausschnitte, die von Visual Studio installiert werden, sind in 
 
   - Der Codeausschnitt kann Verweise enthalten, die automatisch dem Projekt hinzugefügt werden und von überall auf Ihr System geladen werden können. Diese Verweise wurden möglicherweise von der Stelle auf den Computer heruntergeladen, von der Sie den Ausschnitt heruntergeladen haben. Der Ausschnitt kann dann eine Methode im Verweis aufrufen, die bösartigen Code ausführt. Um sich gegen einen solchen Angriff zu schützen, sollten Sie die Import- und Verweisblöcke der Ausschnittdatei überprüfen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Basic IntelliSense Code Snippets (Visual Basic IntelliSense-Codeausschnitte)](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Schützen von Anwendungen](../ide/securing-applications.md)

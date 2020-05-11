@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851445"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223701"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Konfigurieren und Verwenden von Live Unit Testing
 
@@ -130,12 +130,13 @@ Methoden, die keine Testmethoden darstellen, sind nicht mit einem Symbol versehe
 
 Beispiel: Der in der obigen Abbildung dargestellte nicht bestandene Test wurde durch die falsche Annahme in der Testmethode verursacht, dass nicht alphabetische Zeichen `true` zurückgeben, wenn sie an die <xref:System.Char.IsLower%2A?displayProperty=fullName>-Methode übergeben werden. Nachdem Sie die Testmethode korrigiert haben, sollten alle Tests bestanden werden. Sie müssen Live Unit Testing nicht vorübergehend anhalten oder beenden.
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>Test-Explorer
 
 Der **Test-Explorer** stellt eine Schnittstelle bereit, mit der Sie Tests ausführen und debuggen und Testergebnisse analysieren können. Live Unit Testing ist in den **Test-Explorer** integriert. Wenn Live Unit Testing nicht aktiviert ist oder beendet wurde, zeigt der **Test-Explorer** den Status von Komponententests an, als zuletzt ein Test ausgeführt wurde. Änderungen am Quellcode erfordern, dass Sie die Tests erneut ausführen. Wenn Live Unit Testing dagegen aktiviert ist, wird der Status der Komponententests im **Test-Explorer** sofort aktualisiert. Sie müssen die Komponententests nicht explizit ausführen.
 
 > [!TIP]
-> Öffnen Sie den **Test-Explorer**, indem Sie im obersten Visual Studio-Menü **Test** > **Windows** > **Test-Explorer** auswählen.
+> Öffnen Sie **Live Unit Testing**, indem Sie im obersten Visual Studio-Menü **Test** > **Windows** > **Test-Explorer** auswählen.
 
 Möglicherweise ist Ihnen ausgefallen, dass im **Test-Explorer**-Fenster einige Tests als verblasst angezeigt werden. Beispiel: Wenn Sie Live Unit Testing aktivieren, nachdem Sie ein zuvor gespeichertes Projekt geöffnet haben, sind im **Test-Explorer**-Fenster alle Tests mit Ausnahme des nicht bestandenen ausgeblendet, wie die folgende Abbildung zeigt. In diesem Fall hat Live Unit Testing den nicht bestandenen Test erneut ausgeführt, die erfolgreichen Tests jedoch nicht erneut ausgeführt. Dies liegt daran, dass die beibehaltenen Daten von Live Unit Testing darauf hindeuten, dass seit der letzten erfolgreichen Durchführung der Tests keine Änderungen vorgenommen wurden.
 
@@ -148,6 +149,28 @@ Es gibt einige Unterschiede zwischen dem automatischen Ausführen und Aktualisie
 - Beim Ausführen oder Debuggen von Tests im Test-Explorer-Fenster werden reguläre Binärdateien ausgeführt. Live Unit Testing führt dagegen instrumentierte Binärdateien aus.
 - Live Unit Testing erstellt keine neue Anwendungsdomäne zum Ausführen von Tests, sondern führt Tests mit der Standarddomäne aus. Tests, die über das **Test-Explorer**-Fenster ausgeführt werden, erstellen eine neue Anwendungsdomäne.
 - Live Unit Testing führt Tests in allen Testassemblys nacheinander aus. Im Fenster **Test-Explorer** können Sie auswählen, mehrere Tests parallel auszuführen.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Live Unit Testing-Fenster
+
+Ähnlich wie der **Test-Explorer** stellt **Live Unit Testing** eine Schnittstelle bereit, mit der Sie Tests ausführen und debuggen sowie Testergebnisse analysieren können. Wenn Live Unit Testing aktiviert ist, wird der Status der Komponententests im **Test-Explorer** sofort aktualisiert. Sie müssen die Komponententests nicht explizit ausführen. Wenn Live Unit Testing nicht aktiviert ist oder beendet wurde, zeigt **Live Unit Testing** den Status von Komponententests an, als zuletzt ein Test ausgeführt wurde. Nachdem Sie Live Unit Testing neu gestartet haben, müssen Sie eine Änderung am Quellcode vornehmen, um die Tests nochmal auszuführen.
+
+> [!TIP]
+> Starten Sie Live Unit Testing, indem Sie im obersten Menü von Visual Studio auf **Test** > **Live Unit Testing** > **Starten** klicken. Sie können das Fenster **Live Unit Testing** über **Ansicht** > **Andere Fenster** > **Live Unit Testing-Fenster** öffnen.
+
+Möglicherweise ist Ihnen ausgefallen, dass im Fenster **Live Unit Testing** einige Tests verblasst angezeigt werden. Wenn Sie Live Unit Testing beenden und neu starten, werden beispielsweise alle Tests im Fenster **Live Unit Testing** wie in der folgenden Abbildung gezeigt verblasst angezeigt. Verblasste Testergebnisse weisen darauf hin, dass der jeweilige Test nicht im Rahmen der letzten Ausführung von Live Unit Testing stattfand. Tests werden nur ausgeführt, wenn eine Änderung am Test oder den Abhängigkeiten des Tests erkannt wird. Wenn es keine Änderungen gibt, wird eine unnötige Ausführung des Tests vermieden. In diesem Fall ist das ausgegraute Testergebnis weiterhin aktuell, obwohl der Test nicht in der letzten Ausführung enthalten war.
+
+![Verblasste Tests im Test-Explorer](media/vs-2019/lut-test-explorer.png)
+
+Sie können Tests, die verblasst angezeigt werden, noch mal ausführen, indem Sie eine Änderung am Code vornehmen.
+
+Es gibt einige Unterschiede zwischen dem automatischen Ausführen und Aktualisieren der Testergebnisse durch Live Unit Testing und dem expliziten Ausführen von Tests im **Test-Explorer**. Zu diesen Unterschieden zählen Folgende:
+
+- Beim Ausführen oder Debuggen von Tests im Test-Explorer-Fenster werden reguläre Binärdateien ausgeführt. Live Unit Testing führt dagegen instrumentierte Binärdateien aus.
+- Live Unit Testing erstellt keine neue Anwendungsdomäne zum Ausführen von Tests, sondern führt Tests mit der Standarddomäne aus. Tests, die über das **Test-Explorer**-Fenster ausgeführt werden, erstellen eine neue Anwendungsdomäne.
+- Live Unit Testing führt Tests in allen Testassemblys nacheinander aus. Im Fenster **Test-Explorer** können Sie auswählen, mehrere Tests parallel auszuführen.
+::: moniker-end
 
 ## <a name="large-solutions"></a>Große Projektmappen
 

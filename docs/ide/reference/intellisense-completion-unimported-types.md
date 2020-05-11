@@ -1,27 +1,30 @@
 ---
 title: IntelliSense-Vervollständigung für nicht importierte Typen
 description: So verwenden Sie die IntelliSense-Vervollständigung für Typen, die Sie noch nicht per `using`-Direktive importiert haben.
-ms.date: 06/20/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f313cfa8520e4c13b310be0f9223466c529ca18f
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 04ea7c94d3dd24c1a511544adca9bfac3370cd71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67312909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094265"
 ---
 # <a name="intellisense-completion-for-unimported-types"></a>IntelliSense-Vervollständigung für nicht importierte Typen
 
 Dieses Refactoring gilt für:
 
 - C#
+
+- Visual Basic
 
 **Beschreibung:** IntelliSense bietet eine Vervollständigung für nicht importierte Typen.
 

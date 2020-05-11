@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596956"
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
@@ -68,7 +68,7 @@ Klicken Sie neben der Glühbirne auf den Pfeil nach unten oder auf den Link **M�
 
 ![Erweiterte Glühbirne](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codegenerierung in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Häufige schnelle Aktionen](../ide/common-quick-actions.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189255"
 ---
 # <a name="debug-r-in-visual-studio"></a>Debuggen von R in Visual Studio
@@ -53,7 +53,7 @@ Wenn Sie im Debugger angehalten werden, werden Sie auch bei der Aufforderung des
 
 Der Umgebungsbrowser unterstützt eine Reihe bestimmter Befehle:
 
-| Befehl | BESCHREIBUNG |
+| Befehl | Beschreibung |
 | --- | --- |
 | n | next: führt die nächste Anweisung in der Codedatei aus (das gleiche wie „step over“) |
 | s | step into: führt die nächste Anweisung in der Codedatei aus, wobei schrittweise ein Funktionsbereich ausgeführt wird, wenn die nächste Anweisung ein Funktionsaufruf ist. |

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::EnumChildren | Microsoft-Dokumentation
+title: IDebugReference2::EnumChildren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::EnumChildren
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 432a3c25722ae7adb966efa6998c42680bd60307
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335772"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720633"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-Ruft eine Liste der ausgewählten, untergeordneten Elemente eines Verweises. Für zukünftige Verwendung reserviert.
+Hier wird eine Liste der ausgewählten untergeordneten Elemente einer Referenz abgesucht. Für die zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,27 +51,27 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) Enumeration, der angibt, welche Felder in den aufgelisteten [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Strukturen sind gefüllt werden soll.
+[in] Eine Kombination von Flags aus der DEBUGREF_INFO_FLAGS-Enumeration, die angibt, welche Felder in den aufgezählten [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Strukturen ausgefüllt werden sollen. [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 
 `dwRadix`\
-[in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.
+[in] Der Radix, der zum Formatieren numerischer Informationen verwendet werden soll.
 
 `dwAttribFilter`\
-[in] Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) -Enumeration, der verwendet wird, als Filter in Kombination mit der `pszNameFilter` Parameter auswählen, welche Strukturen sind, aufgelistet werden sollen.
+[in] Eine Kombination von Flags aus der DBG_ATTRIB_FLAGS-Enumeration, die `pszNameFilter` als Filter in Kombination mit dem Parameter verwendet wird, um auszuwählen, welche Strukturen aufgezählt werden sollen. [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)
 
 `pszNameFilter`\
-[in] Eine Zeichenfolge, die Angabe eines Filters, wie z. B. "MyX", verwendet in Kombination mit der `dwAttribFilter` Parameter an, wählen Sie die Strukturen aufgelistet werden sollen.
+[in] Eine Zeichenfolge, die einen Filter angibt, z. `dwAttribFilter` B. "MyX", der in Kombination mit dem Parameter verwendet wird, um die aufzuzählenden Strukturen auszuwählen.
 
 `dwTimeout`\
-[in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.
+[in] Maximale Wartezeit in Millisekunden, bevor von dieser Methode zurückgegeben wird. Verwenden `INFINITE` Sie diese Verwendung, um auf unbestimmte Zeit zu warten.
 
 `ppEnum`\
-[out] Gibt eine [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) -Objekt, das eine Liste der angeforderten untergeordneten Eigenschaften enthält.
+[out] Gibt ein [IEnumDebugReferenceInfo2-Objekt](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) zurück, das eine Liste der angeforderten untergeordneten Eigenschaften enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode | Microsoft-Dokumentation
+title: IDebugPortnotify2::RemoveProgramNode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::RemoveProgramNode
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05565005838fb47c3ad798464ee9382ae1168905
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c59b80a2c9748dccccd7b1fa1d5217b8e9f4979f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314241"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724964"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
-Hebt die Registrierung für ein Programm, das vom Port debuggt werden kann, die es ausgeführt wird.
+Entregistriert ein Programm, das von dem Port, auf dem es ausgeführt wird, gedebuggen werden kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int RemoveProgramNode( 
 
 ## <a name="parameters"></a>Parameter
 `pProgramNode`\
-[in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das das Programm an, deren Registrierung aufgehoben werden darstellt.
+[in] Eine [IDebugProgramNode2-Objecy,](../../../extensibility/debugger/reference/idebugprogramnode2.md) die das programm darstellt, das nicht registriert werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
- Diese Methode entfernt einen Programm-Knoten, die mit einem Aufruf von hinzugefügt wurde die [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) Methode.
+## <a name="remarks"></a>Bemerkungen
+ Diese Methode entfernt einen Programmknoten, der mit einem Aufruf der [AddProgramNode-Methode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) hinzugefügt wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

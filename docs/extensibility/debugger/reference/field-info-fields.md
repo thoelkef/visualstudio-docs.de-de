@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS | Microsoft-Dokumentation
+title: FIELD_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337673"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736910"
 ---
-# <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-Gibt an, welche Informationen Sie zum Abrufen einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.
+# <a name="field_info_fields"></a>FIELD_INFO_FIELDS
+Gibt an, welche Informationen zu einem [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -52,32 +52,32 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>Felder
 `FIF_FULLNAME`\
-Initialisieren und Verwenden der `bstrFullName` -Feld in der [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.
+Initialisieren/verwenden `bstrFullName` Sie das Feld in der [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.
 
 `FIF_NAME`\
-Initialisieren und Verwenden der `bstrName` -Feld in der `FIELD_INFO` Struktur.
+Initialisieren/verwenden `bstrName` Sie das `FIELD_INFO` Feld in der Struktur.
 
 `FIF_TYPE`\
-Initialisieren und Verwenden der `bstrType` -Feld in der `FIELD_INFO` Struktur.
+Initialisieren/verwenden `bstrType` Sie das `FIELD_INFO` Feld in der Struktur.
 
 `FIF_MODIFIERS`\
-Initialisieren und Verwenden der `bstrModifiers` -Feld in der `FIELD_INFO` Struktur.
+Initialisieren/verwenden `bstrModifiers` Sie das `FIELD_INFO` Feld in der Struktur.
 
-## <a name="remarks"></a>Hinweise
-Diese Werte werden auch als Argument übergeben die [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) Methode, um die Felder der anzugeben, die [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) sind, dass die Struktur initialisiert werden.
+## <a name="remarks"></a>Bemerkungen
+Diese Werte werden auch als Argument an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugfield-getinfo.md) übergeben, um anzugeben, welche Felder der [FIELD_INFO-Struktur](../../../extensibility/debugger/reference/field-info.md) initialisiert werden sollen.
 
-Diese Werte werden auch verwendet, der `dwFields` Mitglied der `FIELD_INFO` Struktur, um anzugeben, welche Felder verwendet und gültig sind.
+Diese Werte werden auch `dwFields` im `FIELD_INFO` Element der Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
 
-Diese Flags können kombiniert werden, mit einer bitweisen `OR`.
+Diese Flags können mit einem `OR`bitwise kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
-Header: sh.h
+## <a name="requirements"></a>Requirements (Anforderungen)
+Kopfzeile: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

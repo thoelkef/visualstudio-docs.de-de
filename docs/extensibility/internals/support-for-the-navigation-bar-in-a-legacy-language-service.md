@@ -1,33 +1,33 @@
 ---
-title: Unterstützung für die Navigationsleiste in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Unterstützung für die Navigationsleiste in einem Legacy Language Service | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cccfd98bdd126c69baeddaf5151c7ece3f6ec331
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f86dabb0594b1e33c45808efb387fcbe313e3de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309779"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704861"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützen der Navigationsleiste in einem Legacysprachdienst
-Die Navigationsleiste am oberen Rand die Editor-Ansicht zeigt die Typen und Member in der Datei an. Typen werden angezeigt, in der linken Dropdownliste aus, und Elemente werden in der rechten Dropdownliste angezeigt. Wenn der Benutzer einen Typ auswählt, wird die Einfügemarke in der ersten Zeile des Typs platziert. Wenn der Benutzer ein Element auswählt, wird die Einfügemarke in die Definition des Elements platziert. Die Dropdown-Felder werden entsprechend die aktuelle Position der Einfügemarke aktualisiert.
+In der Navigationsleiste oben in der Editoransicht werden die Typen und Elemente in der Datei angezeigt. Typen werden in der linken Dropdownliste und Member in der rechten Dropdownliste angezeigt. Wenn der Benutzer einen Typ auswählt, wird die Einstellte in der ersten Zeile des Typs platziert. Wenn der Benutzer ein Element auswählt, wird die Einsersorge auf die Definition des Elements gelegt. Die Dropdown-Felder werden aktualisiert, um den aktuellen Speicherort der Einstelle widerzuspiegeln.
 
-## <a name="displaying-and-updating-the-navigation-bar"></a>Anzeigen und aktualisieren die Navigationsleiste
- Um die Navigationsleiste unterstützen zu können, müssen Sie leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Klasse und Implementieren der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode. Wenn erhält der Sprachdienst einem Code-Fenster, die Basis <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse instanziiert die <xref:Microsoft.VisualStudio.Package.CodeWindowManager>, enthält die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> Objekt, das im Code-Fenster darstellt. Die <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Objekt erhält dann eine neue <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt. Die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> Methode ruft eine <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Objekt. Wenn Sie eine Instanz des zurückzugeben Ihre <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> -Klasse, die <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Aufrufe Ihrer <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode, um die interne Auffüllen aufgelistet und übergibt Ihre <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> -Objekt an die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dropdown-Leiste Manager. Der Dropdown-bar-Manager wiederum ruft die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> Methode für Ihre <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Objekt, das Einrichten der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> -Objekt, die zwei dropdownleisten enthält.
+## <a name="displaying-and-updating-the-navigation-bar"></a>Anzeigen und Aktualisieren der Navigationsleiste
+ Um die Navigationsleiste zu unterstützen, müssen <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Sie eine <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Klasse aus der Klasse ableiten und die Methode implementieren. Wenn Ihrem Sprachdienst ein Codefenster <xref:Microsoft.VisualStudio.Package.LanguageService> angezeigt wird, instanziiert die Basisklasse die <xref:Microsoft.VisualStudio.Package.CodeWindowManager>, die das Objekt enthält, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> das Codefenster darstellt. Dem <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Objekt wird dann <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ein neues Objekt gegeben. Die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> Methode <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> ruft ein Objekt ab. Wenn Sie eine Instanz <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Ihrer <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Klasse <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> zurückgeben, ruft die Methode zum <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Auffüllen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der internen Listen auf und übergibt das Objekt an den Dropdown-Bar-Manager. Der Dropdown-Balken-Manager ruft wiederum <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Methode für <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> das Objekt auf, um das Objekt einzurichten, das die beiden Dropdown-Balken enthält.
 
- Wenn die Einfügemarke verschoben wird, die <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> Methode. Die Basis <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> -Methode in Ihrer <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Klasse, um den Status der Navigationsleiste zu aktualisieren. Übergeben Sie einen Satz von <xref:Microsoft.VisualStudio.Package.DropDownMember> Objekte für diese Methode. Jedes Objekt stellt einen Eintrag in der Dropdownliste aus.
+ Wenn sich die Einserart bewegt, ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> Methode die <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> Methode auf. Die <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> Basismethode <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> ruft die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Methode in Ihrer Klasse auf, um den Status der Navigationsleiste zu aktualisieren. Sie übergeben eine <xref:Microsoft.VisualStudio.Package.DropDownMember> Reihe von Objekten an diese Methode. Jedes Objekt stellt einen Eintrag in der Dropdown-Liste dar.
 
 ## <a name="the-contents-of-the-navigation-bar"></a>Der Inhalt der Navigationsleiste
- Die Navigationsleiste in der Regel enthält eine Liste von Typen und eine Liste von Elementen. Die Liste der Typen enthält alle verfügbaren Typen in der aktuellen Quelldatei. Die Typnamen enthalten den vollständigen Namespace-Informationen. Im folgenden finden ein Beispiel für C#-Code mit zwei Typen:
+ Die Navigationsleiste enthält in der Regel eine Liste von Typen und eine Liste von Elementen. Die Liste der Typen enthält alle Typen, die in der aktuellen Quelldatei verfügbar sind. Die Typnamen enthalten die vollständigen Namespaceinformationen. Im Folgenden finden Sie ein Beispiel für C-Code mit zwei Typen:
 
 ```csharp
 namespace TestLanguagePackage
@@ -44,48 +44,48 @@ namespace TestLanguagePackage
 }
 ```
 
- Die Liste zeigt `TestLanguagePackage.TestLanguageService` und `TestLanguagePackage.TestLanguageService.Tokens`.
+ Die Typliste `TestLanguagePackage.TestLanguageService` wird `TestLanguagePackage.TestLanguageService.Tokens`angezeigt und .
 
- Die Liste Elemente zeigt die verfügbaren Mitglieder des Typs, der in der Liste der Typen ausgewählt ist. Im obigen Codebeispiel zu verwenden, wenn `TestLanguagePackage.TestLanguageService` ist der Typ, der ausgewählt wird, enthält die Mitgliederliste die privaten Member `tokens` und `serviceName`. Die interne Struktur `Token` wird nicht angezeigt.
+ In der Mitgliederliste werden die verfügbaren Member des Typs angezeigt, der in der Typenliste ausgewählt ist. Wenn es sich bei `TestLanguagePackage.TestLanguageService` dem oben beschriebenen Codebeispiel um den `tokens` ausgewählten `serviceName`Typ handelt, enthält die Mitgliederliste die privaten Member und . Die interne `Token` Struktur wird nicht angezeigt.
 
- Sie können die Memberliste, um den Namen eines Members fett formatieren, wenn die Einfügemarke in die Datei platziert wird, implementieren. Mitglieder können auch in angezeigt werden abgeblendeter Text, gibt an, dass sie nicht innerhalb des Bereichs sind, in dem die Einfügemarke positioniert ist.
+ Sie können die Mitgliederliste implementieren, um den Namen eines Mitglieds fett zu machen, wenn die Einstellte darin platziert wird. Mitglieder können auch in abgeblendetem Text angezeigt werden, was darauf hinweist, dass sie sich nicht innerhalb des Bereichs befinden, in dem sich die Einstellte gerade befindet.
 
 ## <a name="enabling-support-for-the-navigation-bar"></a>Aktivieren der Unterstützung für die Navigationsleiste
- Um Unterstützung für die Navigationsleiste aktivieren, müssen Sie festlegen der `ShowDropdownBarOption` Parameter, der die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Attribut `true`. Dieser Parameter legt die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A>-Eigenschaft fest. Sie müssen zur Unterstützung der Navigationsleiste implementieren die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> -Objekt in der <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse.
+ Um die Unterstützung für die Navigationsleiste `ShowDropdownBarOption` zu <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> aktivieren, `true`müssen Sie den Parameter des Attributs auf festlegen. Dieser Parameter legt die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A>-Eigenschaft fest. Um die Navigationsleiste zu unterstützen, müssen Sie das <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Objekt in der <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse implementieren.
 
- In der Implementierung von der <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> -Methode, wenn die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> -Eigenschaftensatz auf `true`, kann man eine <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Objekt. Wenn Sie nicht das Objekt zurückgeben, wird die Navigationsleiste nicht angezeigt.
+ Wenn <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> Eigenschaft in der Implementierung der `true`Methode auf <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> festgelegt ist, können Sie ein Objekt zurückgeben. Wenn Sie das Objekt nicht zurückgeben, wird die Navigationsleiste nicht angezeigt.
 
- Die Option zum Anzeigen der Navigationsleiste kann vom Benutzer festgelegt werden, daher ist es möglich, dass dieses Steuerelement zurückgesetzt werden, während die Editor-Ansicht geöffnet ist. Der Benutzer muss schließen und öffnen im Editor-Fenster aus, bevor die Änderung in Kraft tritt.
+ Die Option zum Anzeigen der Navigationsleiste kann vom Benutzer festgelegt werden, sodass dieses Steuerelement zurückgesetzt werden kann, während die Editoransicht geöffnet ist. Der Benutzer muss das Editorfenster schließen und erneut öffnen, bevor die Änderung stattfindet.
 
 ## <a name="implementing-support-for-the-navigation-bar"></a>Implementieren der Unterstützung für die Navigationsleiste
- Die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> -Methode übernimmt zwei Listen (eine für jede Dropdown-Liste) und zwei Werte, die die aktuelle Auswahl in jeder Liste darstellt. Die Listen und die Auswahlwerte können aktualisiert werden, in diesem Fall die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methodenrückgabewert müssen `true` , um anzugeben, dass die Listen geändert haben.
+ Die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode verwendet zwei Listen (eine für jede Dropdownliste) und zwei Werte, die die aktuelle Auswahl in jeder Liste darstellen. Die Listen und die Selektionswerte <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> können aktualisiert `true` werden, in diesem Fall muss die Methode zurückkehren, um anzugeben, dass sich die Listen geändert haben.
 
- Wenn die Auswahl in der Dropdown-Typen geändert wird, muss die Mitgliederliste aktualisiert werden, entsprechend den neuen Typ. Was in der Liste angezeigt wird, kann Folgendes sein:
+ Wenn sich die Auswahl in der Dropdownliste der Typen ändert, muss die Mitgliederliste aktualisiert werden, um den neuen Typ widerzuspiegeln. Was in der Mitgliederliste angezeigt wird, kann entweder sein:
 
-- Die Liste der Mitglieder für den aktuellen Typ.
+- Die Liste der Member für den aktuellen Typ.
 
-- Alle Member verfügbar im Quell-Datei, aber mit allen Elementen nicht im aktuellen Typ, der in abgeblendeten Text angezeigt. Der Benutzer auswählen kann immer noch die Elemente ausgegraut ist, daher sie für die schnelle Navigation verwendet werden können, aber die Farbe Gibt an, dass sie nicht Teil des ausgewählten Typs sind.
+- Alle Elemente, die in der Quelldatei verfügbar sind, jedoch alle Elemente nicht im aktuellen Typ, die in abgeblendetem Text angezeigt werden. Der Benutzer kann weiterhin die ausgegrauten Elemente auswählen, sodass sie für die schnelle Navigation verwendet werden können, aber die Farbe zeigt an, dass sie nicht Teil des aktuell ausgewählten Typs sind.
 
-  Eine Implementierung der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode in der Regel führt die folgenden Schritte aus:
+  Eine Implementierung <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> der Methode führt in der Regel die folgenden Schritte aus:
 
-1. Ruft eine Liste der aktuellen Deklarationen für die Quelldatei.
+1. Abrufen einer Liste aktueller Deklarationen für die Quelldatei.
 
-     Es gibt eine Reihe von Möglichkeiten zum Auffüllen der Listen. Ein Ansatz besteht darin, erstellen Sie eine benutzerdefinierte Methode in Ihrer Version von der <xref:Microsoft.VisualStudio.Package.LanguageService> -Klasse, die Aufrufe der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode mit einem Grund für die benutzerdefinierte Analyse, die eine Liste mit allen Deklarationen zurückgibt. Ein anderer Ansatz ist möglicherweise rufen Sie die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode direkt aus der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode mit dem Grund für die benutzerdefinierte Analyse. Ein dritter Ansatz ist möglicherweise die Deklarationen in den cache der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse, die von der letzten vollständigen Analysevorgang in zurückgegebenen der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und abzurufen, die von der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode.
+     Es gibt eine Reihe von Möglichkeiten, die Listen aufzufüllen. Ein Ansatz besteht darin, eine benutzerdefinierte <xref:Microsoft.VisualStudio.Package.LanguageService> Methode für <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Ihre Version der Klasse zu erstellen, die die Methode mit einem benutzerdefinierten Analysegrund aufruft, der eine Liste aller Deklarationen zurückgibt. Ein anderer Ansatz könnte <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> darin bestehen, die Methode direkt aus der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode mit dem benutzerdefinierten Analysegrund aufzurufen. Ein dritter Ansatz besteht möglicherweise darin, <xref:Microsoft.VisualStudio.Package.AuthoringScope> die Deklarationen in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse zwischenzuspeichern, die vom letzten vollständigen Analysevorgang in der Klasse zurückgegeben wurde, und diese aus der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode abzurufen.
 
-2. Füllen Sie auf und aktualisieren Sie die Liste der Typen.
+2. Füllen oder aktualisieren Sie die Liste der Typen.
 
-     Der Inhalt der Liste der Typen sollten aktualisiert werden, wenn die Quelle geändert hat oder wenn Sie ausgewählt haben, so ändern Sie den Textstil der Typen basierend auf der aktuellen Position der Einfügemarke. Diese Position übergeben, um die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode.
+     Der Inhalt der Typenliste kann aktualisiert werden, wenn sich die Quelle geändert hat oder wenn Sie sich entschieden haben, die Textgestaltung der Typen basierend auf der aktuellen Einserposition zu ändern. Beachten Sie, dass diese <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Position an die Methode übergeben wird.
 
-3. Bestimmen Sie den Typ, wählen Sie in der Liste der Typen basierend auf der aktuellen Position der Einfügemarke ein.
+3. Bestimmen Sie den Typ, der in der Typenliste basierend auf der aktuellen Einserposition ausgewählt werden soll.
 
-     Sie können Suchen in Schritt 1 fest, um den Typ zu suchen, der von der aktuellen Position der Einfügemarke enthält, Deklarationen, die abgerufen wurden und suchen Sie dann die Liste der Typen für diesen Typ, dessen Index in der Liste der Typen zu ermitteln.
+     Sie können die deklarationen durchsuchen, die in Schritt 1 abgerufen wurden, um den Typ zu finden, der die aktuelle Einsierposition umschließt, und dann die Typenliste nach diesem Typ durchsuchen, um seinen Index in der Typenliste zu bestimmen.
 
-4. Füllen Sie auf und aktualisieren Sie die Liste der Mitglieder basierend auf den ausgewählten Typ.
+4. Füllen oder aktualisieren Sie die Liste der Mitglieder basierend auf dem ausgewählten Typ.
 
-     Die Mitgliederliste spiegelt wider, was derzeit angezeigt wird, in der **Mitglieder** Dropdown-Liste. Der Inhalt der Liste Elemente müssen möglicherweise aktualisiert werden, wenn die Quelle geändert hat, oder Sie werden nur die Elemente des ausgewählten Typs angezeigt, und der ausgewählte Typ geändert wurde. Wenn Sie alle Elemente in der Quelldatei angezeigt, auch und klicken Sie dann der Textstil für jedes Elements in der Liste muss aktualisiert werden, wenn der aktuell ausgewählte Typ geändert wurde.
+     Die Mitgliederliste gibt an, was derzeit in der Dropdown-Liste **Mitglieder** angezeigt wird. Der Inhalt der Mitgliederliste muss möglicherweise aktualisiert werden, wenn sich die Quelle geändert hat oder wenn Sie nur die Member des ausgewählten Typs anzeigen und der ausgewählte Typ geändert wurde. Wenn Sie alle Elemente in der Quelldatei anzeigen möchten, muss die Textgestaltung jedes Elements in der Liste aktualisiert werden, wenn sich der aktuell ausgewählte Typ geändert hat.
 
-5. Bestimmen Sie das Element, wählen Sie in der Liste der Mitglieder basierend auf der aktuellen Position der Einfügemarke ein.
+5. Bestimmen Sie das Mitglied, das in der Mitgliederliste basierend auf der aktuellen Einserposition ausgewählt werden soll.
 
-     Suchen Sie die Deklarationen, die abgerufen wurden in Schritt 1, für das Element, das der aktuellen Position der Einfügemarke enthält, und suchen Sie die Liste der Elemente für dieses Element aus, um zu bestimmen, dessen Index in der Memberliste aus.
+     Durchsuchen Sie die Deklarationen, die in Schritt 1 für das Element abgerufen wurden, das die aktuelle Pflegeposition enthält, und durchsuchen Sie dann die Mitgliederliste nach diesem Mitglied, um seinen Index in der Mitgliederliste zu bestimmen.
 
-6. Zurückgeben `true` Wenn Änderungen in den Listen oder die Auswahl in einer der Listen vorgenommen wurden.
+6. Gibt `true` zurück, wenn Änderungen an den Listen oder der Auswahl in beiden Listen vorgenommen wurden.

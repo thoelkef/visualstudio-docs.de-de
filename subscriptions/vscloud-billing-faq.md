@@ -1,17 +1,18 @@
 ---
 title: Häufig gestellte Fragen zur Abrechnung von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851407"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273828"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
@@ -94,6 +95,12 @@ Antwort:  Ja, das ist möglich, wenn Ihr Händler am Cloud Solution Provider-Pro
 - [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com/)
 - [Support für Visual Studio-Abonnements](https://visualstudio.microsoft.com/vs/support/)
 - [Visual Studio cloud subscription purchasing for CSPs (Erwerben von Visual Studio-Cloudabonnements für CSPs)](vscloud-csp.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Erwerben Sie jetzt Cloudabonnements

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111306"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Seite "Kompilieren", Projekt-Designer (Visual Basic)
@@ -43,7 +43,7 @@ Die folgenden Eigenschaften ermöglichen es Ihnen, die anzuzeigende bzw. zu änd
 
 **Konfiguration**
 
-Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen** (Standard), **Freigeben** oder **Alle Konfigurationen**. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md) und [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).
+Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen** (Standard), **Freigeben** oder **Alle Konfigurationen**. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md) und [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).
 
 **Plattform**
 
@@ -155,7 +155,7 @@ Während der Kompilierung werden standardmäßig alle Compilerwarnungen der Aufg
 
 **Alle Warnungen deaktivieren**
 
-Gibt an, ob der Compiler Benachrichtigungen ausgeben darf, sowie in der vorher in diesem Dokument beschriebenen Tabelle **Bedingung und Benachrichtigung** angegeben. Dieses Kontrollkästchen ist standardmäßig deaktiviert. Aktivieren Sie dieses Kontrollkästchen, um den Compiler anzuweisen, keine Warnungen oder Fehler auszugeben.
+Gibt an, ob der Compiler Benachrichtigungen ausgeben darf, sowie in der vorher in diesem Dokument beschriebenen Tabelle **Bedingung und Benachrichtigung** angegeben. Standardmäßig ist dieses Kontrollkästchen deaktiviert. Aktivieren Sie dieses Kontrollkästchen, um den Compiler anzuweisen, keine Warnungen oder Fehler auszugeben.
 
 Diese Einstellung entspricht der Compileroption [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).
 
@@ -187,8 +187,8 @@ Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Buildereignisse** z
 
 Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Erweiterte Compileroptionen** zuzugreifen. Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte. Weitere Informationen finden Sie im [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Gewusst wie: Festlegen von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index)
-- [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)
+- [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)

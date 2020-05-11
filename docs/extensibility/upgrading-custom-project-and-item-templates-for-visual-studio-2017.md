@@ -1,73 +1,73 @@
 ---
-title: Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 2017
+title: Aktualisieren benutzerdefinierter Projekt- und Elementvorlagen für Visual Studio 2017
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559762"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698858"
 ---
-# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 2017
+# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Aktualisieren benutzerdefinierter Projekt- und Elementvorlagen für Visual Studio 2017
 
-Ab Visual Studio 2017, erkennt Visual Studio Projekt- und Elementvorlagen, die vom VSIX oder in eine MSI-Datei in eine andere Möglichkeit, frühere Versionen von Visual Studio installiert wurden. Wenn Sie Erweiterungen, die Verwenden von benutzerdefinierten Projekt- oder Elementvorlagen verfügen, müssen Sie Ihre Erweiterungen zu aktualisieren. In diesem Artikel wird erläutert, was Sie tun müssen.
+Ab Visual Studio 2017 ermittelt Visual Studio Projekt- und Elementvorlagen, die von einem VSix oder einer MSI auf andere Weise als frühere Versionen von Visual Studio installiert wurden. Wenn Sie Erweiterungen besitzen, die benutzerdefinierte Projekt- oder Elementvorlagen verwenden, müssen Sie die Erweiterungen aktualisieren. In diesem Artikel wird erläutert, was Sie tun müssen.
 
-Diese Änderung betrifft nur Visual Studio 2017. Es wirkt sich nicht auf frühere Versionen von Visual Studio aus.
+Diese Änderung wirkt sich nur auf Visual Studio 2017 aus. Frühere Versionen von Visual Studio sind davon nicht betroffen.
 
-Wenn Sie eine Projekt- oder Elementvorlage während der VSIX-Erweiterung erstellen möchten, finden Sie unter [Erstellen von benutzerdefinierten Projekt- und Elementvorlagen](../extensibility/creating-custom-project-and-item-templates.md).
+Wenn Sie ein Projekt oder eine Elementvorlage als Teil einer VSIX-Erweiterung erstellen möchten, finden Sie weitere Informationen unter [Erstellen benutzerdefinierter Projekt- und Elementvorlagen](../extensibility/creating-custom-project-and-item-templates.md).
 
-## <a name="template-scanning"></a>Vorlage überprüfen
+## <a name="template-scanning"></a>Vorlagen-Scannen
 
-In früheren Versionen von Visual Studio **Devenv/Setup** oder **Devenv/installvstemplates** durchsucht den lokalen Datenträger aus, um die Projekt- und Elementvorlagen zu suchen. Ab Visual Studio 2017, Überprüfung nur für den Speicherort auf Benutzerebene erfolgt. Der Standardspeicherort für die Benutzerebene ist **%USERPROFILE%\Documents\\< Visual Studio-Version\>\Templates\\** . Dieser Speicherort wird für Vorlagen, die vom verwendet die **Projekt** > **Vorlagen exportieren...**  Befehl, wenn die **Vorlage automatisch in Visual Studio importieren** Option im Assistenten ausgewählt ist.
+In früheren Versionen von Visual Studio haben **devenv /setup** oder **devenv /installvstemplates** den lokalen Datenträger gescannt, um Projekt- und Elementvorlagen zu finden. Ab Visual Studio 2017 wird das Scannen nur für den Speicherort auf Benutzerebene durchgeführt. Der Standardspeicherort auf Benutzerebene ist **%USERPROFILE%-Dokumente\\<Visual\>Studio-Version .\\** Dieser Speicherort wird für Vorlagen verwendet, die mit dem Befehl > **Projektexportvorlagen...** generiert werden, wenn die Option **Automatisch importieren in Visual Studio** im Assistenten ausgewählt ist. **Project**
 
-Für andere Speicherorte (nicht-Benutzer) müssen Sie eine Datei manifest(.vstman) einschließen, die den Speicherort und andere Merkmale der Vorlage angibt. Die vstman-Datei wird zusammen mit der Vorlagen zum VSTEMPLATE-Datei generiert. Wenn Sie die Erweiterung VSIX mit installieren, können Sie dies erreichen, durch das erneute Kompilieren der Erweiterungs in Visual Studio 2017. Aber wenn Sie eine MSI-Datei verwenden, müssen Sie die Änderungen manuell vornehmen. Eine Übersicht darüber, was Sie tun, um diese Änderungen vornehmen müssen, finden Sie unter **Upgrades für die Erweiterungen installiert, mit ein. MSI** weiter unten auf dieser Seite.
+Für andere (Nicht-Benutzer-)Speicherorte müssen Sie eine manifest(.vstman)-Datei einfügen, die den Speicherort und andere Merkmale der Vorlage angibt. Die .vstman-Datei wird zusammen mit der für Vorlagen verwendeten .vstemplate-Datei generiert. Wenn Sie die Erweiterung mit einer .vsix installieren, können Sie dies erreichen, indem Sie die Erweiterung in Visual Studio 2017 neu kompilieren. Wenn Sie jedoch eine MSI verwenden, müssen Sie die Änderungen manuell vornehmen. Eine Liste der Maßnahmen, die Sie tun müssen, um diese Änderungen vorzunehmen, finden Sie unter **Upgrades für Erweiterungen, die mit einem installiert wurden. MSI** später auf dieser Seite.
 
-## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Aktualisieren Sie eine VSIX-Erweiterung mit Projekt- oder Elementvorlagen
+## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Aktualisieren einer VSIX-Erweiterung mit Projekt- oder Elementvorlagen
 
-1. Öffnen Sie die Projektmappe in Visual Studio 2017. Sie werden aufgefordert, den Code aktualisieren. Klicken Sie auf **OK**.
+1. Öffnen Sie die Lösung in Visual Studio 2017. Sie werden aufgefordert, den Code zu aktualisieren. Klicken Sie auf **OK**.
 
-2. Nachdem das Upgrade abgeschlossen ist, müssen Sie die Version von des installationsziels ändern. Klicken Sie im VSIX-Projekt, öffnen Sie die Datei "Source.Extension.vsixmanifest", und wählen die **Ziele installieren** Registerkarte. Wenn die **Versionsbereich** Feld **[14.0]** , klicken Sie auf **bearbeiten** und ändern Sie diese Visual Studio 2017 enthalten. Angenommen, Sie können sie festlegen **[14.0,15.0]** zum Installieren der Erweiterung, um entweder Visual Studio 2015 oder Visual Studio 2017 oder **[15.0]** nur Visual Studio 2017 installieren.
+2. Nach Abschluss des Upgrades müssen Sie möglicherweise die Version des Installationsziels ändern. Öffnen Sie im VSIX-Projekt die Datei source.extension.vsixmanifest, und wählen Sie die Registerkarte **Ziele installieren** aus. Wenn das Feld **Versionsbereich** **[14.0]** lautet, klicken Sie auf **Bearbeiten,** und ändern Sie es so, dass Visual Studio 2017 eingeschlossen wird. Sie können es z. B. auf **[14.0,15.0]** festlegen, um die Erweiterung entweder auf Visual Studio 2015 oder Visual Studio 2017 oder **auf [15.0]** zu installieren, um sie nur auf Visual Studio 2017 zu installieren.
 
-3. Kompilieren Sie der Code neu.
+3. Kompilieren Sie den Code neu.
 
 4. Schließen Sie Visual Studio.
 
-5. Installieren Sie die VSIX-Datei.
+5. Installieren Sie den VSIX.
 
-6. Sie können das Update testen, indem Sie wie folgt vorgehen:
+6. Sie können das Update wie folgt testen:
 
-    1. Die Datei, die Überprüfung ändern wird aktiviert, durch den folgenden Registrierungsschlüssel:
+    1. Die Änderung des Dateiscans wird durch den folgenden Registrierungsschlüssel aktiviert:
 
-         **REG hinzufügen hklm\software\microsoft\visualstudio\15.0\VSTemplate/v DisableTemplateScanning/t REG_DWORD/d 1 /reg:32**
+         **reg hinzufügen von hklm-software-microsoft-visualstudio-15.0-VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2. Nachdem Sie den Schlüssel hinzugefügt haben, führen Sie **Devenv/installvstemplates**.
+    2. Nachdem Sie den Schlüssel hinzugefügt haben, führen Sie **devenv /installvstemplates**aus.
 
     3. Öffnen Sie Visual Studio erneut. Sie sollten Ihre Vorlage am erwarteten Speicherort finden.
 
     > [!NOTE]
-    > Die Erweiterbarkeit von Visual Studio-Projektvorlagen sind nicht verfügbar, wenn der Registrierungsschlüssel vorhanden ist. Sie müssen den Registrierungsschlüssel löschen (und erneut ausführen **Devenv/installvstemplates**) ihre Verwendung.
+    > Die Visual Studio-Projektvorlagen für Extensibilität sind nicht verfügbar, wenn der Registrierungsschlüssel vorhanden ist. Sie müssen den Registrierungsschlüssel löschen (und **devenv /installvstemplates**erneut ausführen), um ihn verwenden zu können.
 
-## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Weitere Empfehlungen für die Bereitstellung von Projekt- und Elementvorlagen
+## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Weitere Empfehlungen zum Bereitstellen von Projekt- und Elementvorlagen
 
-- Vermeiden Sie die Verwendung des ZIP-Vorlagendateien. ZIP-Vorlage, die Dateien, um Ressourcen und Inhalte abzurufen, dekomprimiert werden müssen, also Leistungsseite verwendet werden. Stattdessen sollten Sie die Projekt- und Elementvorlagen als einzelne Dateien unter einem eigenen Verzeichnis zur Beschleunigung von Vorlage-Initialisierung bereitstellen. VSIX-Erweiterungen vorliegen werden Buildaufgaben SDK automatisch alle ZIP-Vorlage Entzippen Sie beim Erstellen der VSIX-Datei.
+- Vermeiden Sie die Verwendung von ZIP-Vorlagendateien. Gezippte Vorlagendateien müssen dekomprimiert werden, um Ressourcen und Inhalte abzurufen, damit sie teurer zu verwenden sind. Stattdessen sollten Sie Projekt- und Elementvorlagen als einzelne Dateien in ihrem eigenen Verzeichnis bereitstellen, um die Vorlageninitialisierung zu beschleunigen. Bei VSIX-Erweiterungen entpacken SDK-Buildaufgaben beim Erstellen der VSIX-Datei automatisch jede zipierte Vorlage.
 
-- Vermeiden Sie die Verwendung der Ressource "Package" / ID-Einträge für den Namen, Beschreibung und Symbol oder eine Vorschau anzeigen Sie, um nicht benötigte Ressource Laden von Assemblys bei der vorlagenermittlung zu vermeiden. Stattdessen können Sie lokalisierte Manifeste verwenden, einen Vorlageneintrag für jedes Gebietsschema, zu erstellen, die lokalisierten Namen oder Eigenschaften verwendet.
+- Vermeiden Sie die Verwendung von Paket-/Ressourcen-ID-Einträgen für den Vorlagennamen, die Beschreibung, das Symbol oder die Vorschau, um unnötige Ressourcenassembly-Lasten während der Vorlagenermittlung zu vermeiden. Stattdessen können Sie lokalisierte Manifeste verwenden, um einen Vorlageneintrag für jedes Gebietsschema zu erstellen, das lokalisierte Namen oder Eigenschaften verwendet.
 
-- Wenn Sie Vorlagen, die als Dateielemente einschließen, Generierung von Manifesten Ihnen möglicherweise nicht die erwarteten Ergebnisse. In diesem Fall müssen Sie ein manuelles generiertes Manifest für das VSIX-Projekt hinzufügen.
+- Wenn Sie Vorlagen als Dateielemente einschließen, liefert Ihnen die Manifestgenerierung möglicherweise nicht die erwarteten Ergebnisse. In diesem Fall müssen Sie dem VSIX-Projekt ein manuell generiertes Manifest hinzufügen.
 
-## <a name="file-changes-in-project-and-item-templates"></a>Dateiänderungen auf Projekt- und Elementvorlagen
-Wir zeigen die Punkte der Unterschied zwischen dem Visual Studio 2015 und Visual Studio 2017-Versionen von den Vorlagendateien, damit Sie die neuen Dateien korrekt erstellen zu können.
+## <a name="file-changes-in-project-and-item-templates"></a>Dateiänderungen in Projekt- und Elementvorlagen
+Wir zeigen die Unterschiede zwischen den Visual Studio 2015- und Visual Studio 2017-Versionen der Vorlagendateien an, sodass Sie die neuen Dateien ordnungsgemäß erstellen können.
 
- Hier ist der Standard-Projekt VSTEMPLATE-Datei von Visual Studio 2015 erstellt:
+ Hier ist die Standardprojekt .vstemplate-Datei von Visual Studio 2015 erstellt:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,7 +94,7 @@ Wir zeigen die Punkte der Unterschied zwischen dem Visual Studio 2015 und Visual
 
 ```
 
- Hier ist die vstman-Datei (Sie es im manifest-Verzeichnis des VSIX-Projekts finden), die aus der Neuerstellung des VSIX-Projekts ein:
+ Hier ist die .vstman-Datei (Sie finden sie im Manifestverzeichnis des VSIX-Projekts), die sich aus der Neuerstellung des VSIX-Projekts ergab:
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -120,9 +120,9 @@ Wir zeigen die Punkte der Unterschied zwischen dem Visual Studio 2015 und Visual
 
 ```
 
- Die Informationen der [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) Element bleibt unverändert. Die  **\<VSTemplateContainer >** -Element verweist auf die VSTEMPLATE-Datei für die zugeordnete Vorlage.
+ Die vom [TemplateData-Element](../extensibility/templatedata-element-visual-studio-templates.md) bereitgestellten Informationen bleiben unverändert. Das ** \<>-Element VSTemplateContainer** verweist auf die .vstemplate-Datei für die zugehörige Vorlage.
 
- So sieht die standardmäßige Element VSTEMPLATE-Datei von Visual Studio 2015 erstellte aus:
+ Hier ist das Standardelement .vstemplate Datei von Visual Studio 2015 erstellt:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,7 +149,7 @@ Wir zeigen die Punkte der Unterschied zwischen dem Visual Studio 2015 und Visual
 
 ```
 
- Hier ist die vstman-Datei (Sie es im manifest-Verzeichnis des VSIX-Projekts finden), die aus der Neuerstellung des VSIX-Projekts ein:
+ Hier ist die .vstman-Datei (Sie finden sie im Manifestverzeichnis des VSIX-Projekts), die sich aus der Neuerstellung des VSIX-Projekts ergab:
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -172,23 +172,23 @@ Wir zeigen die Punkte der Unterschied zwischen dem Visual Studio 2015 und Visual
 </VSTemplateManifest>
 ```
 
- Die Informationen der  **\<TemplateData >** Element bleibt unverändert. Die  **\<VSTemplateContainer >** -Element verweist auf die VSTEMPLATE-Datei für die zugeordnete Vorlage
+ Die vom ** \<TemplateData->-Element** bereitgestellten Informationen bleiben unverändert. Das ** \<>-Element VSTemplateContainer** verweist auf die .vstemplate-Datei für die zugehörige Vorlage
 
- Weitere Informationen zu den verschiedenen Elementen der vstman-Datei, finden Sie unter [Visual Studio-Manifest Schemareferenz zu Vorlagen](../extensibility/visual-studio-template-manifest-schema-reference.md).
+ Weitere Informationen zu den verschiedenen Elementen der .vstman-Datei finden Sie unter [Visual Studio Template Manifest Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Upgrades für Erweiterungen installiert, mit ein. MSI-DATEI
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Upgrades für Erweiterungen, die mit einer installiert wurden. Msi
 
-Einige MSI-basierte Erweiterungen Bereitstellen von Vorlagen in allgemeine Vorlage Speicherorte wie z. B. den folgenden Verzeichnissen:
+Einige MSI-basierte Erweiterungen stellen Vorlagen an allgemeinen Vorlagenspeicherorten wie den folgenden Verzeichnissen bereit:
 
-- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\\< ProjectTemplates / "ItemTemplates"\>**
+- **\<Visual Studio-Installationsverzeichnis>-Common7-IDE-<\\ ProjectTemplates/ItemTemplates\>**
 
-- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project / "ItemTemplates"\>**
+- **\<Visual Studio-Installationsverzeichnis>-Common7-IDE-Erweiterungen\\<ExtensionName\> \\<Project/ItemTemplates\>**
 
-Wenn die Erweiterung eine MSI-basierte Bereitstellung ausgeführt wird, müssen Sie das Vorlagemanifest manuell zu generieren, und stellen Sie sicher, dass sie in der Erweiterung-Setup enthalten ist. Vergleichen Sie die oben aufgeführten vstman-Beispiele und die [Visual Studio-Manifest Schemareferenz zu Vorlagen](../extensibility/visual-studio-template-manifest-schema-reference.md).
+Wenn Ihre Erweiterung eine MSI-basierte Bereitstellung durchführt, müssen Sie das Vorlagenmanifest manuell generieren und sicherstellen, dass es in der Erweiterungseinrichtung enthalten ist. Vergleichen Sie die oben aufgeführten .vstman-Beispiele und die [Visual Studio-Vorlagenmanifest-Schemareferenz](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
-Erstellen separate Manifeste für Projekt- und Elementvorlagen, und diese Vorlage Stammverzeichnis wie oben zeigen sollte. Erstellen Sie ein Manifest pro Erweiterung und Gebietsschema.
+Erstellen Sie separate Manifeste für Projekt- und Elementvorlagen, und sie sollten wie oben angegeben auf das Stammvorlagenverzeichnis verweisen. Erstellen Sie ein Manifest pro Erweiterung und Gebietsschema.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Problembehandlung bei der vorlagenerkennung](troubleshooting-template-discovery.md)
-- [Erstellen von benutzerdefinierten Projekt- und Elementvorlagen](creating-custom-project-and-item-templates.md)
+- [Fehlerbehebung bei der Vorlagenermittlung](troubleshooting-template-discovery.md)
+- [Erstellen benutzerdefinierter Projekt- und Elementvorlagen](creating-custom-project-and-item-templates.md)

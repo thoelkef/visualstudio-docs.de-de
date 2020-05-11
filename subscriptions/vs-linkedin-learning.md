@@ -1,17 +1,18 @@
 ---
 title: LinkedIn Learning-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/02/2019
+ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: a0b837ce4a86b48acb690030c1a96064b336cd61
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099651"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649527"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements
 
@@ -26,7 +27,7 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 
 2. Suchen Sie in der Kategorie „Education“ (Bildung) die Kachel „LinkedIn Learning“, und klicken Sie auf den Link **Get code** (Code abrufen).
    > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „LinkedIn Learning“](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
+   > ![Kachel des Vorteils „LinkedIn Learning“](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
 3. Wenn Sie bereits über ein LinkedIn-Konto verfügen und automatisch angemeldet wurden, werden Sie sofort zur Aktivierungsseite für den LinkedIn Learning-Vorteil weitergeleitet.  Wenn Sie über ein LinkedIn-Konto verfügen, aber nicht automatisch angemeldet wurden, geben Sie einfach Benutzername und Kennwort ein, und klicken Sie anschließend auf **Anmelden**.  Fahren Sie mit [diesem Schritt](#activate-your-offer) fort, um Ihr Angebot zu aktivieren.
 
@@ -74,11 +75,11 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 | Visual Studio Enterprise mit GitHub Enterprise   | VL | 6 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |Nein.  Nur für neue Abonnenten verfügbar         |
 | Visual Studio Professional mit GitHub Enterprise | VL | 3 Monate      | Nein.  Nur für neue Abonnenten verfügbar         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 Monate                                             |  Nein.  Nur für neue Abonnenten verfügbar         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 Monate                                              | Nein.  Nur für neue Abonnenten verfügbar         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                            |  NA         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              | NA         |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
@@ -95,6 +96,12 @@ Antwort:  Nein, das LinkedIn Learning-Angebot ist nur für neue Abonnenten verf�
   - Hilfe bei allgemeinen Fragen rund um [LinkedIn](https://www.linkedin.com/help/linkedin), beispielsweise zum Erstellen von Konten und Profilen oder zum Verwalten Ihres Netzwerks.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zu weiteren Vorteilen Ihres Abonnements finden Sie unter: Besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

@@ -1,65 +1,65 @@
 ---
-title: Übersicht über die Language-Server-Protokoll | Microsoft-Dokumentation
+title: Language Server-Protokollübersicht | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3bd5dce3cfb7022a8abb6397dc87b418144cbe1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309624"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703102"
 ---
 # <a name="language-server-protocol"></a>Sprachserverprotokoll
 
-## <a name="what-is-the-language-server-protocol"></a>Was ist das Sprachserverprotokoll?
+## <a name="what-is-the-language-server-protocol"></a>Was ist das Language Server-Protokoll?
 
-Unterstützende umfangreichen Bearbeitungsfunktionen wie Quelle automatische codevervollständigung oder **Gehe zu Definition** für eine Programmiersprache in einem Editor oder die IDE normalerweise sehr schwierig und zeitaufwändig ist. In der Regel ist es erforderlich, schreiben ein Domänenmodell (einen Scanner, einen Parser, einen Typ aus, einen Generator usw.) in der Programmiersprache des Editors oder IDE. Beispielsweise ist das Plug-In für Eclipse KDTZE, bietet Unterstützung für C/C++ in der Eclipse-IDE in Java geschrieben, da der Eclipse-IDE selbst in Java geschrieben ist. Nach diesem Ansatz würde dies bedeuten, implementieren ein C-/C++-Domänenmodell in TypeScript für Visual Studio Code, und ein separates Domänenmodell in c# für Visual Studio.
+Die Unterstützung umfangreicher Bearbeitungsfunktionen wie automatischer Hauptvervollständigungen für Quellcode oder **Go to Definition** für eine Programmiersprache in einem Editor oder einer IDE ist traditionell sehr anspruchsvoll und zeitaufwändig. In der Regel ist es erforderlich, ein Domänenmodell (einen Scanner, einen Parser, einen Typprüfer, einen Builder und mehr) in der Programmiersprache des Editors oder der IDE zu schreiben. Beispielsweise wird das Eclipse CDT-Plugin, das C/C++ in der Eclipse IDE unterstützt, in Java geschrieben, da die Eclipse IDE selbst in Java geschrieben ist. Nach diesem Ansatz würde dies bedeuten, ein C/C++-Domänenmodell in TypeScript für Visual Studio-Code und ein separates Domänenmodell in C-Code für Visual Studio zu implementieren.
 
-Erstellen sprachspezifische Domänenmodelle sind auch viel einfacher, wenn ein Entwicklungstool für vorhandene sprachspezifische Bibliotheken wiederverwendet werden kann. Diese Bibliotheken sind jedoch in der Regel implementiert, in der Programmiersprache selbst (z. B. gute C/C++-Domäne, die in C/C++-Implementierung sind). Die Integration von einer C/C++-Bibliothek in einem Editor in TypeScript geschrieben ist technisch möglich, aber schwierig.
+Das Erstellen sprachspezifischer Domänenmodelle ist ebenfalls viel einfacher, wenn ein Entwicklungstool vorhandene sprachspezifische Bibliotheken wiederverwenden kann. Diese Bibliotheken werden jedoch in der Regel in der Programmiersprache selbst implementiert (z. B. werden gute C/C++-Domänenmodelle in C/C++ implementiert). Die Integration einer C/C++-Bibliothek in einen in TypeScript geschriebenen Editor ist technisch möglich, aber schwierig.
 
-### <a name="language-servers"></a>Language-Server
+### <a name="language-servers"></a>Sprachserver
 
-Ein anderer Ansatz ist die Bibliothek in einem eigenen Prozess ausgeführt und prozessübergreifende Kommunikation, Kommunikation verwenden. Die Nachrichten hin-und bilden ein Protokoll. Das sprachserverprotokoll (LSP) ist das Produkt der Standardisierung von Nachrichten zwischen ein Entwicklungstool und einen Vorgang zur Sprache Server ausgetauscht werden. Mithilfe von Sprache-Servern oder wer's ist keine neue oder neuartige Idee. Editoren wie Vim und Emacs haben wurde dadurch für einige Zeit in semantische automatische Vervollständigung zu unterstützen. Das Ziel der LSP war, vereinfachen diese Arten von Integrationen und ein Framework nützlich für das Verfügbarmachen von Sprachfunktionen, um eine Vielzahl von Tools.
+Ein anderer Ansatz besteht darin, die Bibliothek in einem eigenen Prozess auszuführen und die prozessübergreifende Kommunikation zu verwenden, um mit ihr zu kommunizieren. Die hin- und hersenden Nachrichten bilden ein Protokoll. Das Language Server Protocol (LSP) ist das Produkt der Standardisierung der Zwischennachrichten, die zwischen einem Entwicklungstool und einem Sprachserverprozess ausgetauscht werden. Die Verwendung von Sprachservern oder Dämonen ist keine neue oder neue Idee. Redakteure wie Vim und Emacs tun dies seit einiger Zeit, um semantische Auto-Vervollständigung Unterstützung zu bieten. Das Ziel des LSP war es, diese Art von Integrationen zu vereinfachen und einen nützlichen Rahmen für die Bereitstellung von Sprachfeatures für eine Vielzahl von Tools bereitzustellen.
 
-Mit einem gemeinsamen Protokoll ermöglicht die Integration von Sprachfeatures in ein Entwicklungstool, mit minimalen anfällt programmieren, indem Sie eine vorhandene Implementierung von der Sprache Domänenmodell wiederverwenden. Ein Language-Server als Back-End konnten in PHP, Python oder Java geschrieben werden, und LSP können sie ganz einfach in eine Vielzahl von Tools integriert werden. Das Protokoll funktioniert auf einer gemeinsamen Ebene der Abstraktion, damit ein Tool umfangreiche Sprachdienste bieten kann, ohne die Details in Bezug auf die zugrunde liegenden Domänenmodells für vollständig zu verstehen.
+Ein gemeinsames Protokoll ermöglicht die Integration von Programmiersprachenfunktionen in ein Entwicklungstool mit minimalem Aufwand, indem eine vorhandene Implementierung des Domänenmodells der Sprache wiederverwendet wird. Ein Sprachserver-Back-End könnte in PHP, Python oder Java geschrieben werden und der LSP ermöglicht es, es einfach in eine Vielzahl von Tools zu integrieren. Das Protokoll arbeitet auf einer gemeinsamen Abstraktionsebene, sodass ein Tool umfangreiche Sprachdienste anbieten kann, ohne die für das zugrunde liegende Domänenmodell spezifischen Nuancen vollständig verstehen zu müssen.
 
-## <a name="how-work-on-the-lsp-started"></a>Wie funktionieren auf die Schritte gehen
+## <a name="how-work-on-the-lsp-started"></a>Wie die Arbeit am LSP begann
 
-LSP hat sich im Laufe der Zeit entwickelt, und heute ist er auf Version 3.0. Er gestartet, wenn das Konzept eines Servers für die Sprache von OmniSharp übernommen wurde, um umfassende Bearbeitungsfunktionen für C#-Code bereitzustellen. Zunächst OmniSharp verwendet das HTTP-Protokoll mit einem JSON-Nutzlast und wurde in verschiedene Editoren einschließlich integriert [Visual Studio Code](https://code.visualstudio.com).
+Der LSP hat sich im Laufe der Zeit weiterentwickelt und ist heute bei Version 3.0. Es begann, als das Konzept eines Sprachservers von OmniSharp übernommen wurde, um umfangreiche Bearbeitungsfunktionen für C-Code bereitzustellen. Zunächst verwendete OmniSharp das HTTP-Protokoll mit einer JSON-Nutzlast und wurde in mehrere Editoren integriert, einschließlich [Visual Studio Code](https://code.visualstudio.com).
 
-Etwa zur gleichen Zeit gestartet Microsoft auf einem Server für das TypeScript-Sprache, mit dem Überblick über die Unterstützung von TypeScript in Editor wie Emacs und Sublime Text arbeiten. In dieser Implementierung ein Editors kommuniziert über "Stdin/stdout" mit der TypeScript-Server-Prozess und eine JSON-Nutzlast, die durch das debuggerprotokoll V8 inspiriert für Anforderungen und Antworten verwendet. Der TypeScript-Server wurde in der TypeScript-Sublime-Plug-in und Visual Studio Code zum Bearbeiten von rich TypeScript integriert.
+Etwa zur gleichen Zeit begann Microsoft mit der Arbeit an einem TypeScript-Sprachserver mit der Idee, TypeScript in Editoren wie Emacs und Sublime Text zu unterstützen. In dieser Implementierung kommuniziert ein Editor über stdin/stdout mit dem TypeScript-Serverprozess und verwendet eine JSON-Nutzlast, die vom V8-Debuggerprotokoll für Anforderungen und Antworten inspiriert ist. Der TypeScript-Server wurde in das TypeScript Sublime-Plugin und den VS-Code für die umfangreiche TypeScript-Bearbeitung integriert.
 
-Nach müssen integriert zwei andere Sprache-Servern, gestartet im VS Code-Team eine allgemeine sprachserverprotokoll für Editoren und IDEs zu untersuchen. Ein häufig verwendetes Protokoll ermöglicht einen Sprachanbieter für eine einzelne Sprache-Server zu erstellen, der von anderen IDEs genutzt werden können. Ein Sprache-Server-Consumer muss nur einmal der Clientseite des Protokolls zu implementieren. Dies führt in einer Win-Win-Situation für den Sprachanbieter und der Language-Consumer.
+Nachdem das VS-Code-Team zwei verschiedene Sprachserver integriert hatte, begann es, ein Common Language Server-Protokoll für Editoren und IDEs zu erkunden. Ein gemeinsames Protokoll ermöglicht es einem Sprachanbieter, einen einzelnen Sprachserver zu erstellen, der von verschiedenen IDEs genutzt werden kann. Ein Sprachserver-Consumer muss die Clientseite des Protokolls nur einmal implementieren. Dies führt zu einer Win-Win-Situation sowohl für den Sprachanbieter als auch für den Sprachkonsumenten.
 
-Das sprachserverprotokoll, die mit dem Protokoll verwendet wird, durch den TypeScript-Server, erweitern es mit mehr Sprachfeatures, die sich inspirieren, von der Sprache der Visual Studio Code-API-wurde gestartet. Das Protokoll wird mit JSON-RPC für Remoteaufruf aufgrund seiner Einfachheit und vorhandene Bibliotheken gesichert.
+Das Sprachserverprotokoll begann mit dem vom TypeScript-Server verwendeten Protokoll und erweiterte es um weitere Sprachfeatures, die von der VS-Code-Sprach-API inspiriert wurden. Das Protokoll wird aufgrund seiner Einfachheit und vorhandenen Bibliotheken mit JSON-RPC für Remoteaufrufe unterstützt.
 
-Die VS Code Team Prototyp des Protokolls durch die Implementierung von mehrere Language Linter Servern, die auf Antworten auf Lint (Überprüfung) fordert eine Datei, und geben Sie einen Satz von erkannte Warnungen und Fehler zurück. Ziel war es, Lint eine Datei als die benutzerbearbeitungen in einem Dokument, das bedeutet, dass viele Linting-Anforderungen während einer editorsitzung stehen. Vereinfacht sinnvoll, halten Sie einen Server einrichten und ausführen, damit ein neuer Linting-Prozess nicht gestartet werden, damit jeder Benutzer bearbeiten muss. Mehrere Server für linting-Funktion implementiert wurden, einschließlich Visual Studio Code Erweiterungen ESLint und TSLint. Dieser beiden Server für die linting-Funktion sind sowohl in TypeScript und JavaScript implementiert, und führen Sie auf Node.js. Sie teilen eine Bibliothek, die der Client und Server Teil des Protokolls implementiert.
+Das VS-Code-Team hat das Protokoll prototypisch erstellt, indem es mehrere Linter-Sprachserver implementiert hat, die auf Anfragen reagieren, eine Datei zu scannen und eine Reihe von erkannten Warnungen und Fehlern zurückzugeben. Das Ziel bestand darin, eine Datei zu verfeinern, während der Benutzer in einem Dokument bebaut, was bedeutet, dass es während einer Editorsitzung viele Linting-Anforderungen geben wird. Es war sinnvoll, einen Server betriebsbereit zu halten, damit nicht für jede Benutzerbearbeitung ein neuer Linting-Prozess gestartet werden musste. Mehrere Linter-Server wurden implementiert, darunter die ESLint- und TSLint-Erweiterungen von VS Code. Diese beiden linter-Server werden beide in TypeScript/JavaScript implementiert und auf Node.js ausgeführt. Sie verwenden eine Bibliothek, die den Client- und Serverteil des Protokolls implementiert.
 
-## <a name="how-the-lsp-works"></a>Wie funktioniert die LSP
+## <a name="how-the-lsp-works"></a>Funktionsweise des LSP
 
-Ein Sprache-Server, die in einem eigenen Prozess ausgeführt wird, und Tools wie Visual Studio oder Visual Studio Code mit dem Server, die mithilfe des Language-Protokolls über JSON-RPC kommunizieren. Ein weiterer Vorteil der Sprache des Serverbetriebssystems in einem dedizierten Prozess ist, dass Leistungsprobleme im Zusammenhang mit einer einzelnen Prozessmodell vermieden werden. Der tatsächliche Transportkanal kann Stdio, Sockets, benannte Pipes oder Knoten Ipc entweder sein, wenn sowohl die Client-als auch in Node.js geschrieben werden.
+Ein Sprachserver wird in einem eigenen Prozess ausgeführt, und Tools wie Visual Studio oder VS Code kommunizieren mit dem Server über das Sprachprotokoll über JSON-RPC. Ein weiterer Vorteil des Sprachservers, der in einem dedizierten Prozess arbeitet, besteht darin, dass Leistungsprobleme im Zusammenhang mit einem einzelnen Prozessmodell vermieden werden. Der eigentliche Transportkanal kann entweder stdio, Sockets, Named Pipes oder Node ipc sein, wenn sowohl der Client als auch der Server in Node.js geschrieben werden.
 
-Im folgenden ist ein Beispiel für die ein Tool und eine Sprache-Server bei einer Routine Kommunikation zwischen Sitzung bearbeiten:
+Im Folgenden finden Sie ein Beispiel für die Kommunikation eines Tools und eines Sprachservers während einer routinen Bearbeitungssitzung:
 
-![LSP-Flussdiagramm](media/lsp-flow-diagram.png)
+![lsp Strömungsdiagramm](media/lsp-flow-diagram.png)
 
-* **Der Benutzer öffnet eine Datei (als Dokument bezeichnet) im Tool**: Das Tool wird der Sprache-Server benachrichtigt, dass ein Dokument geöffnet ist ("TextDocument/DidOpen"). Von nun an die Wahrheit über den Inhalt des Dokuments ist nicht mehr im Dateisystem jedoch vom Tool im Arbeitsspeicher beibehalten.
+* **Der Benutzer öffnet eine Datei (als Dokument bezeichnet) im Tool**: Das Tool benachrichtigt den Sprachserver, dass ein Dokument geöffnet ist ('textDocument/didOpen'). Von nun an ist die Wahrheit über den Inhalt des Dokuments nicht mehr auf dem Dateisystem, sondern durch das Tool im Speicher gehalten.
 
-* **Der Benutzer trifft Bearbeitungen**: Das Tool benachrichtigt den Server über die Dokument-Änderung (' TextDocument/DidChange"), und die semantische Informationen des Programms durch die Language-Server aktualisiert wird. Wie in diesem Fall wird der Language-Server diese Informationen werden analysiert, und benachrichtigt das Tool mit dem erkannten Fehler und Warnungen ("TextDocument/PublishDiagnostics").
+* **Der Benutzer nimmt Änderungen vor:** Das Tool benachrichtigt den Server über die Dokumentänderung ('textDocument/didChange') und die semantischen Informationen des Programms werden vom Sprachserver aktualisiert. In diesem Fall analysiert der Sprachserver diese Informationen und benachrichtigt das Tool mit den erkannten Fehlern und Warnungen ('textDocument/publishDiagnostics").
 
-* **Der Benutzer führt die "Gehe zu Definition" auf ein Symbol im Editor**: Das Tool sendet eine Anforderung "TextDocument/Definition" mit zwei Parametern: (1) der Dokument-URI und (2) die Position im Text aus, in dem der zum Aufrufen der Anforderung der Anwendungsdefinition an den Server initiiert wurde. Der Server antwortet mit dem Dokument-URI und die Position der Definition des Symbols, innerhalb des Dokuments.
+* **Der Benutzer führt "Zur Definition" auf einem Symbol im Editor**aus: Das Tool sendet eine 'textDocument/Definition'-Anforderung mit zwei Parametern: (1) den Dokument-URI und (2) die Textposition, von der aus die Go to Definition-Anforderung an den Server initiiert wurde. Der Server antwortet mit dem Dokument-URI und der Position der Symboldefinition im Dokument.
 
-* **Der Benutzer schließt das Dokument (Datei)** : Eine "TextDocument/DidClose" Benachrichtigung wird gesendet, aus dem Tool, den Language-Server, den das Dokument ist nun nicht mehr im Arbeitsspeicher und, die den aktuellen Inhalt ist nun auf dem Dateisystem auf dem neuesten Stand zu informieren.
+* **Der Benutzer schließt das Dokument (Datei):** Eine 'textDocument/didClose'-Benachrichtigung wird vom Tool gesendet, um den Sprachserver darüber zu informieren, dass sich das Dokument jetzt nicht mehr im Speicher befindet und der aktuelle Inhalt nun auf dem Dateisystem auf dem neuesten Stand ist.
 
-In diesem Beispiel wird veranschaulicht, wie das Protokoll mit dem Language-Server, auf der Ebene der Editor-Funktionen wie "Gehe zu Definition", "Alle Verweise suchen" kommuniziert. Die Datentypen, die vom Protokoll verwendete sind-Editor oder IDE "Datentypen", wie das aktuell geöffneten Textdokument und die Position des Cursors. Die Datentypen sind nicht auf der Ebene der einer Sprache Domäne Programmiermodell, das in der Regel die abstrakte Syntaxstrukturen und Compiler-Symbole (z. B. aufgelösten Typen, Namespaces,...) bieten würde. Dadurch wird das Protokoll erheblich vereinfacht.
+Dieses Beispiel veranschaulicht, wie das Protokoll mit dem Sprachserver auf der Ebene von Editor-Features wie "Go to Definition", "Alle Referenzen suchen" kommuniziert. Die vom Protokoll verwendeten Datentypen sind Editor- oder IDE-Datentypen wie das aktuell geöffnete Textdokument und die Position des Cursors. Die Datentypen befinden sich nicht auf der Ebene eines Programmiersprachendomänenmodells, das normalerweise abstrakte Syntaxstrukturen und Compilersymbole bereitstellen würde (z. B. aufgelöste Typen, Namespaces, ...). Dies vereinfacht das Protokoll erheblich.
 
-Jetzt sehen wir uns die Anforderung "TextDocument/Definition" im Detail. Im folgenden sind die Nutzlasten, die zwischen dem Clienttool und das Language-Server für die Anforderung "Gehe zu Definition" in einem C++-Dokument zu wechseln.
+Sehen wir uns nun die Anfrage "textDocument/definition" genauer an. Im Folgenden finden Sie die Nutzlasten, die zwischen dem Clienttool und dem Sprachserver für die "Go to Definition"-Anforderung in einem C++-Dokument verlaufen.
 
 Dies ist die Anforderung:
 
@@ -102,22 +102,22 @@ Dies ist die Antwort:
 }
 ```
 
-Rückblickend ist, beschreibt die Datentypen, die auf der Ebene des Editors und nicht auf der Ebene des Programmiermodells Sprache eine der Ursachen für den Erfolg der sprachserverprotokoll. Es ist viel einfacher, ein Textdokument URI zu standardisieren, oder die Cursorposition im Vergleich mit Standardisierung eine abstrakte Syntax-Struktur und Compiler-Symbole in verschiedenen Programmiersprachen.
+Im Nachhinein ist die Beschreibung der Datentypen auf der Ebene des Editors und nicht auf der Ebene des Programmiersprachenmodells einer der Gründe für den Erfolg des Sprachserverprotokolls. Es ist viel einfacher, einen Textdokument-URI oder eine Cursorposition zu standardisieren, verglichen mit der Standardisierung einer abstrakten Syntaxstruktur und Compilersymbolen in verschiedenen Programmiersprachen.
 
-Wenn ein Benutzer mit verschiedenen Sprachen funktioniert, startet Visual Studio Code in der Regel einen Sprache-Server für jede der Programmiersprachen. Das folgende Beispiel zeigt eine Sitzung, in denen der Benutzer Java-und SASS arbeitet.
+Wenn ein Benutzer mit verschiedenen Sprachen arbeitet, startet VS Code in der Regel einen Sprachserver für jede Programmiersprache. Das folgende Beispiel zeigt eine Sitzung, in der der Benutzer an Java- und SASS-Dateien arbeitet.
 
-![Java und sass](media/lsp-java-and-sass.png)
+![java und sass](media/lsp-java-and-sass.png)
 
 ### <a name="capabilities"></a>Funktionen
 
-Nicht jede Sprache-Server unterstützen alle Features, die durch das Protokoll definiert. Client und Server gibt daher festgelegtem unterstütztes Feature über "Capabilities" bekannt. Als Beispiel kündigt ein Server, kann er die Anforderung "TextDocument/Definition" verarbeiten, aber er möglicherweise nicht die Anforderung "Arbeitsbereich/Symbol" behandelt. Auf ähnliche Weise können Clients ankündigen, dass sie zu "zum Speichern" können Benachrichtigungen, bevor ein Dokument gespeichert wird, damit ein Server Text Änderungen zum automatischen Formatieren von das bearbeitete Dokument berechnen,.
+Nicht jeder Sprachserver kann alle vom Protokoll definierten Funktionen unterstützen. Daher geben Client und Server ihre unterstützte Funktion über "Funktionen" bekannt. Ein Server kündigt beispielsweise an, dass er die "textDocument/definition"-Anforderung verarbeiten kann, aber möglicherweise nicht die "workspace/symbol"-Anforderung. Ebenso können Clients ankündigen, dass sie Benachrichtigungen zum Speichern bereitstellen können, bevor ein Dokument gespeichert wird, sodass ein Server Textänderungen berechnen kann, um das bearbeitete Dokument automatisch zu formatieren.
 
-## <a name="integrating-a-language-server"></a>Die Integration von eine Sprache-server
+## <a name="integrating-a-language-server"></a>Integration eines Sprachservers
 
-Die eigentliche Integration eines Sprache-Servers zu einem bestimmten Tool wird nicht durch das sprachserverprotokoll definiert und ist das Tool Implementierer überlassen. Einige Tools integrieren Sprache Server generisch, dass eine Erweiterung, die gestartet und für jede Art von Sprache-Server kommunizieren kann. Andere erstellen wie Visual Studio Code, eine benutzerdefinierte Erweiterung pro Sprache-Server, damit eine Erweiterung noch einige Funktionen für die benutzerdefinierte Sprache ist.
+Die tatsächliche Integration eines Sprachservers in ein bestimmtes Tool wird nicht durch das Sprachserverprotokoll definiert und den Toolimplementierern überlassen. Einige Tools integrieren Sprachserver generisch, indem sie über eine Erweiterung verfügen, die jede Art von Sprachserver starten und mit ihnen kommunizieren kann. Andere, wie VS Code, erstellen eine benutzerdefinierte Erweiterung pro Sprachserver, sodass eine Erweiterung immer noch einige benutzerdefinierte Sprachfeatures bereitstellen kann.
 
-Um die Implementierung von Sprache-Servern und Clients zu vereinfachen, sind es Bibliotheken oder SDKs für den Client und Server teilen. Diese Bibliotheken werden für verschiedene Sprachen bereitgestellt. Ist es z. B. eine [Npm-Clientmodul Sprache](https://www.npmjs.com/package/vscode-languageclient) zum Vereinfachen der Integration von eine Sprache-Server in einer Visual Studio Code-Erweiterung und ein anderes [Npm-Moduls für Sprache Server](https://www.npmjs.com/package/vscode-languageserver) , schreiben einen Sprache-Server mithilfe von Node.js. Dies ist die aktuelle [Liste](https://github.com/Microsoft/language-server-protocol/wiki/Protocol-Implementations) Support-Bibliotheken.
+Um die Implementierung von Sprachservern und Clients zu vereinfachen, gibt es Bibliotheken oder SDKs für den Client und die Serverteile. Diese Bibliotheken werden für verschiedene Sprachen bereitgestellt. Beispielsweise gibt es ein [Sprachclient-npm-Modul,](https://www.npmjs.com/package/vscode-languageclient) um die Integration eines Sprachservers in eine VS-Code-Erweiterung zu vereinfachen, und ein anderes [npm-Modul des Sprachservers,](https://www.npmjs.com/package/vscode-languageserver) um einen Sprachserver mit Node.js zu schreiben. Dies ist die aktuelle [Liste](https://github.com/Microsoft/language-server-protocol/wiki/Protocol-Implementations) der Supportbibliotheken.
 
-## <a name="using-the-language-server-protocol-in-visual-studio"></a>Verwenden in Visual Studio das Sprachserverprotokoll
+## <a name="using-the-language-server-protocol-in-visual-studio"></a>Verwenden des Language Server-Protokolls in Visual Studio
 
-* [Hinzufügen einer Erweiterung Sprachserverprotokoll](adding-an-lsp-extension.md) -erfahren Sie mehr über die Integration von einem Server für die Sprache in Visual Studio.
+* [Hinzufügen einer Language Server Protocol-Erweiterung](adding-an-lsp-extension.md) – Erfahren Sie mehr über die Integration eines Sprachservers in Visual Studio.

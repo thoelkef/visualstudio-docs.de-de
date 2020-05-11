@@ -19,13 +19,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779167"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen von Leistungstools an laufende Prozesse und Trennen von laufenden Prozessen
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen von Leistungstools an laufende Prozesse und Trennen von Leistungstools von laufenden Prozessen
 Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu werden oder um von ihm getrennt zu werden, damit das Sampling und Sammeln von Leistungsdaten vereinfacht wird. Sie können diese Methode zum Erstellen eines Profils verwenden, wenn Sie das Sammeln von Daten über Anwendungsladezeiten vermeiden wollen oder nachdem es einen bestimmten Zustand erreicht hat.
 
 > [!NOTE]
@@ -49,7 +49,7 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
 
 2. Klicken Sie auf den Prozessnamen, mit dem eine Verbindung hergestellt werden soll.
 
-3. Klicken Sie auf **Anfügen**.
+3. Klicken Sie auf **Anfügen**aus.
 
 ### <a name="to-detach-from-a-running-process"></a>So trennen Sie den Profiler von einem laufenden Prozess
 
@@ -61,7 +61,7 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
 
 3. Klicken Sie auf **Trennen**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
 - [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
 - [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)

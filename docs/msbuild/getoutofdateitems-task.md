@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), GetOutOfDateItems task
 - GetOutOfDateItems task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747318"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77272394"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems-Aufgabe
 
@@ -32,9 +32,9 @@ Hilfsaufgabe zum Lesen alter Nachverfolgungsprotokolle, Schreiben neuer Nachverf
 
 In der folgenden Tabelle werden die Parameter der **GetOutOfDateItems-Aufgabe** beschrieben.
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
-|**CheckForInterdependencies**|Optionaler **bool**-Parameter|
+|**CheckForInterdependencies**|Optionaler **bool**-Parameter.|
 |**CommandMetadataName**|Optionaler **string**-Parameter|
 |**DependenciesMetadataName**|Optionaler **string**-Parameter|
 |**HasInterdependencies**|Optionaler **bool**-Ausgabeparameter|
@@ -44,6 +44,6 @@ In der folgenden Tabelle werden die Parameter der **GetOutOfDateItems-Aufgabe** 
 |**TLogDirectory**|Erforderlicher **String**-Parameter.|
 |**TLogNamePrefix**|Erforderlicher **String**-Parameter.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

@@ -3,15 +3,16 @@ title: Visual Studio-Abonnements, die für Startups über das Microsoft-Programm
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier finden Sie Informationen zu den Abonnements, die über das Microsoft für Startups-Programm angeboten werden.
-ms.openlocfilehash: 087fb820687063c22e98b34b0c3cd2292fb9a35b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605739"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233257"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Visual Studio-Abonnements, die für Startups angeboten werden
 Qualifizierte Startups, die dem Microsoft für Startups-Programm beitreten, können fünf [monatliche Cloud-Abonnements](https://visualstudio.microsoft.com/vs/pricing/) für Visual Studio Enterprise erwerben. 
@@ -38,6 +39,12 @@ Antwort: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die
 Bei monatlichen Cloudabonnements wird die Kündigung zum ersten Tag des nächsten Monats wirksam. Wenn Sie nur manche Ihrer monatlichen Cloudabonnements kündigen, entfernen Sie die Benutzer am ersten Tag des nächsten Monats, um sicherzustellen, dass den richtigen Personen weiterhin aktive Abonnements zugewiesen sind.
 
 Bei jährlichen Cloudabonnements wird die Kündigung am ersten Tag des Monats wirksam, der 12 Monate nach dem ursprünglichen Kauf liegt, oder 12 Monate nach der letzten jährlichen Verlängerungsgebühr. Wenn Sie beispielsweise ein jährliches Visual Studio Professional-Cloudabonnement am 3. Januar 2018 gekauft haben, bleibt dieses bis zum 1. Februar 2019 aktiv. Dann wird es automatisch für ein weiteres Jahr verlängert. Wenn Sie irgendwann zwischen diesem Zeitpunkt und dem 1. Februar 2020 kündigen, läuft das Abonnement am 1. Februar 2020 ab. Es gibt keine Rückzahlung bei jährlichen Cloudabonnements, wenn Sie das Abonnement im laufenden Jahr kündigen.
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Weitere Informationen zu Microsoft für Startups](https://startups.microsoft.com)

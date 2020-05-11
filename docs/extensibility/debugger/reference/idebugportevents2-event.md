@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEvents2::Event | Microsoft-Dokumentation
+title: IDebugPortEvents2::Ereignis | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2::Event
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ede9055f97a796e4e007914f68e370d4ff81420
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 931be468f6321250481aec79688f7f326abcfcac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326757"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725250"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
-Diese Methode sendet die Ereignisse, die die Erstellung und Zerstörung von Prozessen und Programme auf einem Port angeben.
+Diese Methode sendet Ereignisse, die die Erstellung und Zerstörung von Prozessen und Programmen auf einem Port bedeuten.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,19 +51,19 @@ int Event(
 
 ## <a name="parameters"></a>Parameter
 `pMachine`\
-[in] Ein [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) Objekt, das der debugserver darstellt (es gibt ein für jede Instanz des [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]) in der das Ereignis aufgetreten ist.
+[in] Ein [IDebugCoreServer2-Objekt,](../../../extensibility/debugger/reference/idebugcoreserver2.md) das den Debugserver darstellt [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)](es gibt einen für jede Instanz von ), in dem das Ereignis aufgetreten ist.
 
 `pPort`\
-[in] Ein [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Objekt, das den Port darstellt, in dem das Ereignis aufgetreten ist.
+[in] Ein [IDebugPort2-Objekt,](../../../extensibility/debugger/reference/idebugport2.md) das den Port darstellt, in dem das Ereignis aufgetreten ist.
 
 `pProcess`\
-[in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess darstellt, in dem das Ereignis aufgetreten ist.
+[in] Ein [IDebugProcess2-Objekt,](../../../extensibility/debugger/reference/idebugprocess2.md) das den Prozess darstellt, in dem das Ereignis aufgetreten ist.
 
 `pProgram`\
-[in] Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm darstellt, in dem das Ereignis aufgetreten ist.
+[in] Ein [IDebugProgram2-Objekt,](../../../extensibility/debugger/reference/idebugprogram2.md) das das Programm darstellt, in dem das Ereignis aufgetreten ist.
 
 `pEvent`\
-[in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das das Ereignis identifiziert. Die möglichen Ereignisse sind wie folgt aus:
+[in] Ein [IDebugEvent2-Objekt,](../../../extensibility/debugger/reference/idebugevent2.md) das das Ereignis identifiziert. Die möglichen Ereignisse sind wie folgt:
 
 - [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)
 
@@ -74,12 +74,12 @@ int Event(
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 
 `riidEvent`\
-[in] Die GUID des Ereignisses. Da das Ereignis umgewandelt wird [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) vor dem Aufrufen dieser Methode diese Bezeichner macht es erheblich einfacher ermitteln, welches Ereignis gesendet wird.
+[in] Die GUID des Ereignisses. Da das Ereignis vor dem Aufruf dieser Methode in [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) gecastet wird, erleichtert dieser Bezeichner die Bestimmung, welches Ereignis gesendet wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

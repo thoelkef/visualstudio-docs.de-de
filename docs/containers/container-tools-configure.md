@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73188775"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Konfigurieren von Visual Studio-Containertools
@@ -40,7 +40,7 @@ Einstellungen unter **Einzelnes Projekt** und **Docker Compose** für Containert
 Die folgende Tabelle hilft Ihnen möglicherweise beim Festlegen dieser Optionen.
 
 ::: moniker range="vs-2017"
-| name | Standardeinstellung | Gilt für | BESCHREIBUNG |
+| name | Standardeinstellung | Gilt für | Beschreibung |
 | -----|:---------------:|:----------:| ----------- |
 | Erforderliche Docker-Images beim Laden des Projekts automatisch abrufen | Ein | Docker Compose | Zum Steigern der Leistung beim Laden von Projekten beginnt Visual Studio einen Docker-Pull-Vorgang im Hintergrund, sodass das Image bereits heruntergeladen ist oder heruntergeladen wird, wenn Sie zur Ausführung Ihres Codes bereit sind. Wenn Sie lediglich Projekte laden und Code durchsuchen, können Sie dies ausschalten, um das Herunterladen von Containerimages zu vermeiden, die Sie nicht benötigen. |
 | Container im Hintergrund automatisch starten | Ein | Docker Compose | Ebenfalls zum Steigern der Leistung erstellt Visual Studio einen Container mit Volumeeinbindungen, die bereit stehen, wenn Sie Ihren Container erstellen und ausführen. Wenn Sie steuern möchten, wann Ihr Container erstellt wird, deaktivieren Sie diese Option. |
@@ -52,14 +52,14 @@ Die folgende Tabelle hilft Ihnen möglicherweise beim Festlegen dieser Optionen.
 
 Die Einstellungen unter **Allgemein** sind in der folgenden Tabelle beschrieben:
 
-| name | Standardeinstellung | Gilt für | BESCHREIBUNG |
+| name | Standardeinstellung | Gilt für | Beschreibung |
 | -----|:---------------:|:----------:| ----------- |
 | Installieren Sie bei Bedarf Docker für Windows | Aufforderung | Einzelnes Projekt, Docker Compose | Wählen Sie aus, ob eine Benachrichtigung angezeigt werden soll, wenn Docker Desktop nicht installiert ist. |
 | ASP.NET Core-SSL-Zertifikat als vertrauenswürdig einstufen | Aufforderung | ASP.NET Core 2.x-Projekte | Wenn **Aufforderung** aktiviert und das Localhost-SSL-Zertifikat nicht vertrauenswürdig ist, benachrichtigt Visual Studio Sie bei jeder Ausführung Ihres Projekts. |
 
 In der folgenden Tabelle werden die Einstellungen unter **Einzelnes Projekt** und **Docker Compose** beschrieben:
 
-| name | Standardeinstellung | Gilt für | BESCHREIBUNG |
+| name | Standardeinstellung | Gilt für | Beschreibung |
 | -----|:---------------:|:----------:| ----------- |
 | Erforderliche Docker-Images beim Öffnen des Projekts mithilfe von Pull übertragen | True | Einzelnes Projekt, Docker Compose | Zum Steigern der Leistung beim Laden von Projekten beginnt Visual Studio einen Docker-Pull-Vorgang im Hintergrund, sodass das Image bereits heruntergeladen ist oder heruntergeladen wird, wenn Sie zur Ausführung Ihres Codes bereit sind. Wenn Sie lediglich Projekte laden und Code durchsuchen, können Sie **False** festlegen, um das Herunterladen von Containerimages zu vermeiden, die Sie nicht benötigen. |
 | Container beim Öffnen des Projekts ausführen | True | Einzelnes Projekt, Docker Compose | Visual Studio nutzt einen Ahead-of-time-Prozess zur Erstellung eines Containers, der bereitsteht, wenn Sie Ihren Container erstellen und ausführen. Auch diese Maßnahme dient der Leistungsoptimierung. Wenn Sie steuern möchten, wann Ihr Container erstellt wird, legen Sie **False** fest. |
