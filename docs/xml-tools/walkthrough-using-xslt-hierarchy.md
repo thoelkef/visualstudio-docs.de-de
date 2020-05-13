@@ -7,7 +7,7 @@ ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592450"
@@ -46,7 +46,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </COLLECTION>
     ```
 
-1. Fügen Sie die folgende *xslincludefile. XSL-Datei*hinzu:
+1. Fügen Sie die folgende Datei *xslincludefile.xsl* hinzu:
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-3. Fügen Sie die folgende *xslinclude. xsl* -Datei hinzu:
+3. Fügen Sie die folgende Datei *xslinclude.xsl* hinzu:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-4. Fügen Sie einen Haltepunkt in der Anweisungs `<xsl:include href="xslincludefile.xsl" />`hinzu.
+4. Fügen Sie einen Haltepunkt bei der Anweisung `<xsl:include href="xslincludefile.xsl" />` hinzu.
 
 5. Beginnen Sie mit dem Debuggen.
 
-6. Wenn der Debugger bei der Anweisungs `<xsl:include href="xslincludefile.xsl" />`angehalten wird, klicken Sie auf die Schaltfläche Einzel **Schritt** . Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
+6. Klicken Sie auf die Schaltfläche **Einzelschritt**, wenn der Debugger bei der `<xsl:include href="xslincludefile.xsl" />`-Anweisung anhält. Das Debugging kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 

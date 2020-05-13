@@ -1,5 +1,5 @@
 ---
-title: Registerkarte "Windows", Optionsdialogfeld | Microsoft-Dokumentation
+title: Fenster (Registerkarte), Meldungsoptionen (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,28 +12,28 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929174"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Registerkarte "Fenster", Dialogfeld "Meldungsoptionen"
-Verwenden der **Windows** Registerkarte beim Festlegen des Bereichs der Nachrichten in aufgeführten [Meldungsansicht](../debugger/messages-view.md). Zum Anzeigen der [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md), wählen Sie **Protokollmeldungen** aus der **Spy** Menü.
+Verwenden Sie die Registerkarte **Fenster**, um den Bereich der Meldungen festzulegen, die in der [Meldungsansicht](../debugger/messages-view.md) aufgeführt werden. Um das [Dialogfeld „Meldungsoptionen](../debugger/message-options-dialog-box.md) anzuzeigen, wählen Sie im Menü **Spy** die Option **Meldungen protokollieren** aus.
 
- Die folgenden Einstellungen stehen auf der **Windows** Registerkarte:
+ Auf der Registerkarte **Fenster** sind folgende Einstellungen verfügbar:
 
- **Suchtool** das Drag & Drop-Tool verwendet, um ein Fenster auszuwählen.
+ **Suchtool**: Das Drag & Drop-Tool, das zum Auswählen eines Fensters verwendet wird.
 
- **Ausblenden von Spy++-** Spy++-Hauptfenster entfernt und behält die **MessageOptions** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen.
+ **Spy++ ausblenden**: Entfernt das Spy++-Hauptfenster und hinterlässt das Dialogfeld **Meldungsoptionen** sichtbar vor allen Ihren anderen Anwendungen.
 
- **Übergeordnete Fenster** Meldungen für das ausgewählte Fenster und das unmittelbar übergeordnete Fenster angezeigt werden.
+ **Übergeordnetes Fenster**: Zeigt Meldungen für das ausgewählte Fenster und dessen direkt übergeordnetes Fenster an.
 
- **Untergeordnetes Fenster** Nachrichten anzeigen, für das ausgewählte Fenster und alle zugehörigen untergeordneten-Fenster, einschließlich der geschachtelten untergeordnete Fenster.
+ **Untergeordnetes Fenster**: Zeigt Meldungen für das ausgewählte Fenster und alle seine untergeordneten Fenster, einschließlich geschachtelter untergeordneter Fenster, an.
 
- **Windows von demselben Thread** Meldungen für das ausgewählte Fenster und alle anderen Fenster, die im Besitz von im gleichen Thread anzuzeigen.
+ **Fenster des gleichen Threads**: Zeigt Meldungen für das ausgewählte Fenster und alle anderen Fenster an, die im Besitz desselben Threads sind.
 
- **Der gleiche Prozess Windows** Meldungen für das ausgewählte Fenster und alle anderen Fenster, die im Besitz von den gleichen Prozess angezeigt.
+ **Fenster des gleichen Prozesses**: Zeigt Meldungen für das ausgewählte Fenster und alle anderen Fenster an, die im Besitz desselben Prozesses sind.
 
- **Alle Windows im System** Meldungen für alle Fenster angezeigt werden.
+ **Alle Fenster im System**: Zeigt Meldungen für alle Fenster an.
 
- **Speichern Sie die Einstellungen als Standard** speichern Sie die vorherigen Einstellungen für neue Nachrichten Stream-Fenster. Diese Einstellungen werden ebenfalls gespeichert, wenn Spy++ beendet wird.
+ **Als Voreinstellung speichern**: Speichert die vorherigen Einstellungen für neue Meldungsdatenstrom-Fenster. Diese Einstellungen werden ebenfalls beim Beenden von Spy++ gespeichert.

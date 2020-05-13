@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: SQL kann&#39;finden SSDEBUGPS wurde von | Microsoft-Dokumentation'
+title: 'Fehler: SQL kann SSDEBUGPS nicht finden | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 854105ea5d94f6d3b09ce73a23ec45ccab9e797c
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62850489"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Fehler: SQL kann&#39;finden SSDEBUGPS wurde von
+# <a name="error-sql-can39t-find-ssdebugps"></a>Fehler: SQL kann SSDEBUGPS nicht finden
 
 SSDEBUGPS.dll ist die Hostkomponente von SQL Server-Debuggen.
 
@@ -30,9 +30,9 @@ Dieser Fehler tritt beim Versuch auf, das Debuggen zu starten, und zeigt an, das
 
 Es gibt zwei Möglichkeiten, diesen Fehler zu beheben: Entweder führen Sie Remotedebuggen-Setup erneut aus, oder Sie kopieren die Datei auf den [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)]-Computer.
 
-Um Remotedebuggen-Setup erneut auszuführen, befolgen Sie die Anweisungen unter [Remotedebuggen](../debugger/remote-debugging.md).
+Wenn Sie Remotedebuggen-Setup erneut ausführen möchten, folgen Sie den Anweisungen unter [Remotedebuggen](../debugger/remote-debugging.md).
 
-Wenn Sie eine Kopie von „ssdebugps.dll“ finden, können Sie sie auf den [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)]-Computer kopieren. Wenn die Datei vorhanden ist, finden Sie sie im Verzeichnis \Programme\Gemeinsame Dateien\Microsoft Shared\SQL-Debuggen. Sie finden es vielleicht auf einem anderen [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] -Computer oder auf einem Computer mit Visual Studio 2005 installiert.
+Wenn Sie eine Kopie von „ssdebugps.dll“ finden, können Sie sie auf den [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)]-Computer kopieren. Wenn die Datei vorhanden ist, finden Sie sie im Verzeichnis \Programme\Gemeinsame Dateien\Microsoft Shared\SQL-Debuggen. Sie finden sie möglicherweise auf einem anderen [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)]-Computer oder auf einem Computer, auf dem Visual Studio 2005 installiert ist.
 
 So kopieren Sie „SSDEBUGPS.dll“ auf den SQL Server 2005-Computer:
 

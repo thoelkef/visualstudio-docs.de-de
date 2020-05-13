@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas'
+title: 'Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
@@ -10,14 +10,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592801"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 
-Die Funktion **Beispiel-XML generieren** generiert eine XML-Beispieldatei, die auf der XML-Schema Datei (XSD) basiert.
+Die Funktion **Beispiel-XML generieren** generiert auf Grundlage der XML-Schemadatei (XSD) eine Beispiel-XML-Datei.
 
 Diese Option kann für die folgenden Szenarien verwendet werden :
 
@@ -25,27 +25,27 @@ Diese Option kann für die folgenden Szenarien verwendet werden :
 
 - Um zu bestätigen, dass das Schema wie beabsichtigt ausgeführt wird.
 
-Die Funktion **Beispiel-XML generieren** ist nur für globale Elemente verfügbar und erfordert ein gültiges XML-Schemaset.
+Die Funktion **Beispiel-XML generieren** ist nur für globale Elemente verfügbar und benötigt ein gültiges XML-Schemaset.
 
 Diese Funktion generiert i. d. R. gültige XML-Dokumente. Wenn das Schema jedoch eines der folgenden Elemente enthält, ist das Beispiel möglicherweise nicht gültig:
 
 - Die folgenden Identitätseinschränkungen: `xs:key`, `xs:keyref` und `xs:unique`
 
-- `xs:pattern` Facetten.
+- `xs:pattern`-Facets.
 
 - Enumerationen des `xs:QName`-Typs
 
-- die Typen `xs:ENTITY`, `xs:ENTITIES`und `xs:NOTATION`.
+- `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen.
 
 Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, wenn Enumerationen im Schema für diesen Typ vorkommen.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>So generieren Sie ein XML-Instanzdokument auf Grundlage der XSD-Datei
 
-1. Befolgen Sie die Schritte unter Gewusst [wie: Erstellen und Bearbeiten einer XSD-Schema Datei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Führen Sie die unter [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md) aufgeführten Schritte durch.
 
-2. Klicken Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)mit der rechten Maustaste auf das `PurchaseOrder` globale Element. Wählen Sie **Beispiel-XML generieren**aus.
+2. Klicken Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) mit der rechten Maustaste auf das globale `PurchaseOrder`-Element. Wählen Sie **Beispiel-XML generieren** aus.
 
-     Wenn Sie diese Option auswählen, wird PurchaseOrder angegeben. die *XML* -Datei mit dem folgenden XML-Beispiel Inhalt wird generiert und im XML-Editor geöffnet:
+     Die Datei „PurchaseOrder.*xml*“ wird mit dem folgenden Beispiel-XML-Inhalt generiert und im XML-Editor geöffnet:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

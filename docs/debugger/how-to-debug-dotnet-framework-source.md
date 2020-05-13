@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von .NET Framework-Quelle | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Debuggen einer .NET Framework-Quelle | Microsoft-Dokumentation'
 ms.date: 11/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,56 +12,56 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 25f40b0528b794863aabdb13ed9785d2b0c551b8
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62894273"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Vorgehensweise: Debuggen einer .NET Framework-Quelle
 
-Zum Debuggen von .NET Framework-Quellcodes ist Folgendes erforderlich:
+Zum Debuggen einer .NET Framework-Quelle müssen die folgenden Bedingungen erfüllt sein:
 
-- Aktivieren Sie .NET Framework-Quelle schrittweise.
+- Sie müssen das Durchlaufen des .NET Framework-Quellcodes aktivieren.
 
-- Haben Sie Zugriff auf Debugsymbole für den Code ein.
+- Sie müssen Zugriff auf Debugsymbole für den Code haben.
 
-  Sie können auch sofort Debugsymbole herunterladen, oder legen Sie Optionen für das Herunterladen später noch mal. Wenn Sie keine Symbole sofort herunterladen, werden sie beim nächsten herunterladen, die Sie das Debuggen Ihrer app starten. Während des Debuggens können Sie auch die **Module** oder **Aufrufliste** Windows zu laden, und Laden von Symbolen.
+  Sie können die Debugsymbole sofort herunterladen oder Optionen für einen späteren Download festlegen. Wenn Sie die Symbole nicht sofort herunterladen, werden sie beim nächsten Starten des Debuggens Ihrer App heruntergeladen. Während des Debuggens können Sie auch das Fenster **Module** oder **Aufrufliste** verwenden, um Symbole herunterzuladen und zu laden.
 
-### <a name="to-enable-stepping-into-net-framework-source"></a>.NET Framework-Quellcodes-Quellcodes aktivieren
+### <a name="to-enable-stepping-into-net-framework-source"></a>So aktivieren Sie das Durchlaufen des .NET Framework-Quellcodes
 
-1. Klicken Sie unter **Tools** (oder **Debuggen**) > **Optionen** > **Debuggen** > **Allgemein**Option **aktivieren Sie .NET Framework-Quelle schrittweise**.
+1. Wählen Sie unter **Extras** (oder **Debuggen**) > **Optionen** > **Debugging** > **Allgemein** die Option **Durchlaufen des .NET Framework-Quellcodes aktivieren** aus.
 
    - Wenn Sie Nur Mein Code aktiviert haben, wird Ihnen in einem Warndialogfeld mitgeteilt, dass Nur mein Code jetzt deaktiviert wird. Klicken Sie auf **OK**.
 
-   - Wenn Sie einen lokalen Symbolcache legen Sie keinen, besagt ein Warndialogfeld angezeigt, dass ein Symbol Standardcache festgelegt wurde. Klicken Sie auf **OK**.
+   - Wenn Sie keinen lokalen Symbolcache festgelegt haben, wird in einem Warnungsdialogfeld angezeigt, dass ein Standardsymbolcache festgelegt wurde. Klicken Sie auf **OK**.
 
-1. Wählen Sie **OK** schließen die **Optionen** Dialogfeld.
+1. Wählen Sie **OK** aus, um das Dialogfeld **Optionen** zu schließen.
 
-### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Festlegen oder Ändern der Speicherorte für Symboldateien-Quelle und des Ladeverhaltens
+### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>So legen Sie Symbolquellspeicherorte und das Ladeverhalten fest oder ändern diese(s)
 
-1. Wählen Sie die **Symbole** unter Kategorie **Tools** (oder **Debuggen**) > **Optionen** > **Debuggen**.
+1. Wählen Sie unter **Extras** (oder **Debuggen**) > **Optionen** > **Debugging** die Kategorie **Symbole** aus.
 
-1. Auf der **Symbole** Seite **Symboldateien (.pdb) Orte für Symboldateien**Option **Microsoft-Symbolserver** auf Access Symbole von den öffentlichen Microsoft-Symbolservern. Wählen Sie die Symbolleisten-Schaltflächen an andere Orte für Symboldateien hinzufügen und Ändern der Reihenfolge geladen.
+1. Wählen Sie auf der Seite **Symbole** unter **Speicherorte für Symboldateien (.pdb)** die Option **Microsoft-Symbolserver** aus, um auf Symbole von öffentlichen Microsoft-Symbolservern zuzugreifen. Wählen Sie die Symbolleistenschaltflächen aus, um weitere Symbolspeicherorte hinzuzufügen und die Ladereihenfolge zu ändern.
 
-1. Um Ihre lokalen Symbolcache zu ändern, bearbeiten, oder navigieren Sie zu einem anderen Speicherort unter **Symbole in diesem Verzeichnis zwischenspeichern**.
+1. Um Ihren lokalen Symbolcache zu ändern, bearbeiten Sie den Speicherort, oder navigieren Sie zu einem anderen Speicherort unter **Symbole in diesem Verzeichnis zwischenspeichern**.
 
-1. Wählen Sie zum Symbole sofort herunterladen **alle Symbole laden**. Diese Schaltfläche ist nur während des Debuggens verfügbar.
+1. Wählen Sie **Alle Symbole laden** aus, um Symbole sofort herunterzuladen. Diese Schaltfläche ist nur während des Debuggens verfügbar.
 
-   Wenn Sie keine Symbole jetzt herunterladen, müssen sie das nächste Mal heruntergeladen werden, die, das Sie das Debuggen starten.
+   Wenn Sie jetzt keine Symbole herunterladen, werden die Symbole beim nächsten Starten des Debuggens heruntergeladen.
 
-1. Wählen Sie **OK** schließen die **Optionen** Dialogfeld.
+1. Wählen Sie **OK** aus, um das Dialogfeld **Optionen** zu schließen.
 
-### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>So laden Sie Symbole aus den Modulen oder die Aufrufliste Windows
+### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>So laden Sie Symbole aus dem Fenster „Module“ oder „Aufrufliste“
 
-1. Öffnen Sie das Fenster während des Debuggens dazu **Debuggen** > **Windows** > **Module** (oder drücken Sie **Strg + Alt + U**) oder **Debuggen** > **Windows** > **Aufrufliste** (**Strg + Alt + C**).
+1. Öffnen Sie während des Debuggens das Fenster, indem Sie **Debuggen** > **Fenster** > **Module** auswählen (oder drücken Sie **STRG+ALT+U**). Oder wählen Sie **Debuggen** > **Fenster** > **Aufrufliste** aus (**STRG+ALT+C**).
 
-1. Mit der rechten Maustaste in ein Modul für die Symbole geladen wurden nicht. In der **Module** Fenster, Symbol Status geladen ist der **Symbolstatus** Spalte. In der **Aufrufliste** Fenster, Status ist der **Framestatus** Spalte und der Rahmen wird abgeblendet.
+1. Klicken Sie mit der rechten Maustaste auf ein Modul, für das keine Symbole geladen wurden. Im Fenster **Module** wird der Symbolladestatus in der Spalte **Symbolstatus** angezeigt. Im Fenster **Aufrufliste** wird der Status in der Spalte **Framestatus** angezeigt, und der Frame ist abgeblendet.
 
-   - Wählen Sie **Symbole laden** aus dem Menü zu suchen und Laden von Symboldateien aus einem Ordner auf Ihrem Computer.
+   - Wählen Sie im Menü die Option **Symbole laden** aus, um Symboldateien in einem Ordner auf Ihrem Computer zu suchen und zu laden.
 
-   - Wählen Sie **Symbolladeinformationen** den Speicherorten angezeigt, der Debugger nach Symbolen durchsucht.
+   - Wählen Sie **Symbolladeinformationen** aus, um die Speicherorte anzuzeigen, in denen der Debugger nach Symbolen gesucht hat.
 
-   - Wählen Sie **Symboleinstellungen** zum Öffnen der **Symbole** Seite. Auf der **Symbole** Seite **Symboldateien (.pdb) Orte für Symboldateien**Option **Microsoft-Symbolserver** auf Access Symbole von den öffentlichen Microsoft-Symbolservern. Wählen Sie die Symbolleisten-Schaltflächen an andere Orte für Symboldateien hinzufügen und Ändern der Reihenfolge geladen. Wählen Sie **OK** um das Dialogfeld zu schließen.
+   - Wählen Sie **Symboleinstellungen** aus, um die Seite **Symbole** zu öffnen. Wählen Sie auf der Seite **Symbole** unter **Speicherorte für Symboldateien (.pdb)** die Option **Microsoft-Symbolserver** aus, um auf Symbole von öffentlichen Microsoft-Symbolservern zuzugreifen. Wählen Sie die Symbolleistenschaltflächen aus, um weitere Symbolspeicherorte hinzuzufügen und die Ladereihenfolge zu ändern. Wählen Sie **OK** aus, um das Dialogfeld zu schließen.
 
 ### <a name="see-also"></a>Siehe auch
 - [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

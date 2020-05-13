@@ -10,18 +10,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a2f2bcdd0c28d7b4b99c92d3346b32ed34aa92a0
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592320"
 ---
 # <a name="xml-snippets"></a>XML-Ausschnitte
 
-Der XML-Editor bietet eine Funktion mit dem Namen *XML-Ausschnitte*, mit der Sie XML-Dateien schneller erstellen können. Sie können XML-Ausschnitte wiederverwenden, indem Sie diese in die Dateien einfügen. Sie können auch XML-Daten auf Grundlage eines XSD-Schemas (XML Schema Definition Language) generieren.
+Der XML-Editor bietet eine als *XML-Ausschnitte* bezeichnete Funktion, mit dem Sie schneller XML-Dateien erstellen können. Sie können XML-Ausschnitte wiederverwenden, indem Sie diese in die Dateien einfügen. XML-Dateien können auch auf der Grundlage eines XSD-Schemas (XML Schema Definition Language) erstellt werden.
 
-## <a name="reusable-xml-snippets"></a>Verwendbare XML-Ausschnitte
+## <a name="reusable-xml-snippets"></a>Wiederverwendbare XML-Ausschnitte
 
-Der XML-Editor enthält viele Code Ausschnitte, die einige allgemeine Aufgaben abdecken. Dadurch wird Ihnen das Erstellen von XML-Dateien erleichtert. Wenn Sie z. b. ein XML-Schema erstellen, wird durch die Verwendung der Code Ausschnitte "Complex Type Sequence Element" und "Simple Type Element" der folgende XML-Text in die Datei eingefügt. Entsprechend Ihren Anforderungen ändern Sie den `name`-Wert.
+Der XML-Editor enthält viele Ausschnitte, die einige häufig auszuführende Aufgaben beinhalten. Dadurch wird Ihnen das Erstellen von XML-Dateien erleichtert. Wenn Sie z. B. ein XML-Schema unter Verwendung der Ausschnitte "complexType Sequence-Element" und "simpleType-Element" erstellt haben, wird der folgende XML-Text in die Datei eingefügt. Entsprechend Ihren Anforderungen ändern Sie den `name`-Wert.
 
 ```xml
 <xs:element name="name">
@@ -37,19 +37,19 @@ Der XML-Editor enthält viele Code Ausschnitte, die einige allgemeine Aufgaben a
 </xs:element>
 ```
 
-Es gibt zwei Möglichkeiten zum Einfügen von Ausschnitten. Der Befehl **Ausschnitt einfügen** fügt den XML-Code Ausschnitt an der Cursorposition ein. Der Befehl **Umschließen mit** umschließt den XML-Code Ausschnitt um den markierten Text. Beide Befehle sind entweder über das **IntelliSense** -Untermenü im Menü " **Bearbeiten** " oder über das Kontextmenü im Editor verfügbar.
+Es gibt zwei Möglichkeiten zum Einfügen von Ausschnitten. Mit dem Befehl **Ausschnitt einfügen** wird der XML-Ausschnitt an der Cursorposition eingefügt. Der Befehl **Umgeben mit** veranlasst, dass der XML-Ausschnitt als Wrapper für den ausgewählten Text fungiert. Beide Befehle sind entweder im Menü **Bearbeiten**, Untermenü **IntelliSense**, oder im Kontextmenü des Editors verfügbar.
 
-Weitere Informationen finden Sie unter Gewusst [wie: Verwenden von XML-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von XML-Codeausschnitten](../xml-tools/how-to-use-xml-snippets.md).
 
-## <a name="schema-generated-xml-snippets"></a>Schema generierte XML-Ausschnitte
+## <a name="schema-generated-xml-snippets"></a>Schemagenerierte XML-Ausschnitte
 
-Der XML-Editor ist auch in der Lage, einen XML-Ausschnitt aus einem XML-Schema zu generieren. Mithilfe dieses Features können Sie ein Element mit XML-Elementen auffüllen, die aus den Schemainformationen für dieses Element generiert werden. Weitere Informationen finden Sie unter Gewusst [wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
+Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XML-Schema zu generieren. Mithilfe dieses Features können Sie ein Element mit XML-Elementen auffüllen, die aus den Schemainformationen für dieses Element generiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Generieren eines XML-Codeausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Erstellen neuer XML-Ausschnitte
 
-Zusätzlich zu den Code Ausschnitten, die in Visual Studio standardmäßig enthalten sind, können Sie auch eigene XML-Ausschnitte erstellen und verwenden. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von XML-Ausschnitten](../xml-tools/how-to-create-xml-snippets.md).
+Zusätzlich zu den standardmäßig in -Visual Studio enthaltenen Ausschnitten können Sie eigene XML-Ausschnitte erstellen und verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von XML-Codeausschnitten](../xml-tools/how-to-create-xml-snippets.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Code Ausschnitte in Visual Studio](../ide/code-snippets.md)
+- [Codeausschnitte in Visual Studio](../ide/code-snippets.md)
 - [XML-Editor](../xml-tools/xml-editor.md)

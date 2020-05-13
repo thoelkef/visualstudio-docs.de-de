@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Der Zielprozess wurde beendet mit Code &#39;Code&#39; beim Auswerten der Funktion &#39;Funktion&#39; | Microsoft-Dokumentation'
+title: 'Fehler: Der Zielprozess wurde mit dem Code &#39;Code&#39; beim Auswerten der Funktion &#39;function&#39; beendet | Microsoft-Dokumentation'
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -11,37 +11,37 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62850817"
 ---
-# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Fehler: Der Zielprozess wurde beendet mit Code &#39;Code&#39; beim Auswerten der Funktion &#39;Funktion&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Fehler: Der Zielprozess wurde mit dem Code &#39;Code&#39; beim Auswerten der Funktion &#39;function&#39; beendet
 
-Vollständige Nachrichtentext: Der Zielprozess wurde mit Code 'Code' beim Auswerten der Funktion 'Funktion' beendet.
+Vollständiger Meldungstext: Der Zielprozess wurde mit dem Code „Code“ beim Auswerten der Funktion „Funktion“ beendet.
 
-Zum Überprüfen des Status von Objekten für .NET zu vereinfachen, der Debugger wird automatisch erzwingen, dass den gedebuggten Prozess zum Ausführen von zusätzlichen Codes (in der Regel die Eigenschaft Getter-Methoden und `ToString` Funktionen). In den meisten Szenarien werden diese Funktionen erfolgreich abgeschlossen oder Auslösen von Ausnahmen, die vom Debugger abgefangen werden kann. Es gibt jedoch einige Situationen, in denen Ausnahmen abgefangen werden können, da diese Kernel-Grenzen überschreiten, müssen die Benutzer-meldungsweiterleitung oder nicht behebbar sind. Als ein Ergebnis, einen Eigenschaftengetter oder die ToString-Methode, die Code ausführt, beendet, dass entweder explizit den Prozess (z. B. Aufrufe `ExitProcess()`) oder eine nicht behandelte Ausnahme auslöst, die nicht abgefangen werden kann (z. B. `StackOverflowException`) wird beendet die debuggten Prozess und Ende der Debugsitzung. Wenn Sie diese Fehlermeldung auftritt, ist dies aufgetreten.
+Um das Überprüfen des Status von .NET-Objekten zu vereinfachen, zwingt der Debugger den debuggten Prozess automatisch zur Ausführung von zusätzlichem Code (in der Regel Eigenschaftengettermethoden und `ToString`-Funktionen). In den meisten Szenarien werden diese Funktionen erfolgreich ausgeführt, oder es werden Ausnahmen ausgelöst, die vom Debugger abgefangen werden können. Es gibt jedoch einige Situationen, in denen Ausnahmen nicht abgefangen werden können, weil sie Kernelgrenzen überschreiten, ein Benutzermeldungssystem erfordern oder nicht behebbar sind. Folglich beendet eine Eigenschaftengetter- oder ToString-Methode, die Code ausführt, der den Prozess entweder explizit beendet (z. B. `ExitProcess()` aufruft) oder eine unbehandelte Ausnahme auslöst, die nicht abgefangen werden kann (z. B. `StackOverflowException`), den debuggten Prozess und die Debugsitzung. Wenn diese Fehlermeldung angezeigt wird, ist dieser Fall eingetreten.
 
-Ein häufiger Grund für dieses Problem ist, dass wenn der Debugger eine Eigenschaft, die sich selbst aufruft wertet, dies in einer Stapelüberlauf-Ausnahmen führen kann. Die Stapelüberlaufausnahme kann nicht wiederhergestellt werden, und der Zielprozess wird beendet.
+Ein häufiger Grund für dieses Problem ist, dass es zu einer Stapelüberlaufausnahme führen kann, wenn der Debugger eine Eigenschaft auswertet, die sich selbst aufruft. Die Stapelüberlaufausnahme kann nicht behoben werden, und der Zielprozess wird beendet.
 
 ## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-Es gibt zwei mögliche Lösungen für dieses Problem.
+Für dieses Problem gibt es zwei mögliche Lösungen.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1-Lösung: Verhindern Sie, dass des Debuggers beim Aufrufen der Getter-Eigenschaft oder die ToString-Methode 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Lösung 1: Verhindern, dass der Debugger die Eigenschaftengetter- oder ToString-Methode aufruft 
 
-Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versucht hat, aufgerufen. Mit dem Namen der Funktion können Sie versuchen, erneut auswerten dieser Funktion aus der **direkt** Fenster aus, um die Auswertung zu debuggen. Debuggen ist möglich, bei der Auswertung von der **direkt** Fenster daran, im Gegensatz zu impliziten auswertungen aus der **Auto/lokal/Überwachung** Windows, unterbricht der Debugger bei Ausnahmefehlern.
+In der Fehlermeldung wird der Name der Funktion angegeben, die der Debugger aufzurufen versucht hat. Mithilfe des Namens der Funktion können Sie versuchen, diese Funktion im Fenster **Direkt** erneut auszuwerten, um die Auswertung zu debuggen. Das Debuggen ist beim Auswerten über das Fenster **Direkt** (im Gegensatz zu impliziten Auswertungen über die Fenster **Auto/Lokal/Überwachung**) möglich, weil der Debugger bei unbehandelten Ausnahmen unterbricht.
 
-Wenn Sie diese Funktion ändern können, können Sie verhindern den Debugger den Eigenschaftengetter aufrufen oder `ToString` Methode. Versuchen Sie Folgendes:
+Wenn es Ihnen möglich ist, diese Funktion zu ändern, können Sie verhindern, dass der Debugger die Eigenschaftengetter- oder `ToString`-Methode aufruft. Probieren Sie einen der folgenden Lösungsschritte aus:
 
-* Ändern Sie die Methode in eine andere Art von Code als einen Eigenschaften-Getter oder ToString-Methode und das Problem werden verschwinden.
-    - oder - 
-* (Für `ToString`) definieren eine `DebuggerDisplay` Attribut für den Typ, und Sie können den Debugger, die etwas anders als ausgewertet haben `ToString`.
-    - oder - 
-* (Für einen Eigenschaften-Getter) Platzieren der `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` Attribut für die Eigenschaft. Dies ist hilfreich, wenn Sie eine Methode, die eine Eigenschaft aus Gründen der Kompatibilität von API-bleiben muss verfügen, aber es sollte eigentlich eine Methode sein.
+* Ändern Sie die Methode in einen anderen Codetyp neben einer Eigenschaftengetter- oder ToString-Methode. Dadurch wird das Problem gelöst.
+    - oder -
+* (Für `ToString`) Definieren Sie ein `DebuggerDisplay`-Attribut für den Typ. Dann kann der Debugger etwas anderes als `ToString` auswerten.
+    - oder -
+* (Für einen Eigenschaftengetter) Legen Sie das Attribut `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` für die Eigenschaft fest. Dies kann sinnvoll sein, wenn Sie über eine Methode verfügen, die aus Gründen der API-Kompatibilität eine Eigenschaft bleiben muss, aber tatsächlich eine Methode sein sollte.
 
-Wenn Sie diese Methode nicht ändern, können Sie möglicherweise den Zielprozess an eine alternative Anweisung unterbrochen, und wiederholen die Auswertung.
+Wenn es Ihnen nicht möglich ist, diese Methode zu ändern, können Sie möglicherweise den Zielprozess möglicherweise an einer alternativen Anweisung unterbrechen und die Auswertung wiederholen.
 
-### <a name="solution-2-disable-all-implicit-evaluation"></a>Lösung #2: Deaktivieren Sie alle implizite Auswertung
+### <a name="solution-2-disable-all-implicit-evaluation"></a>Lösung 2: Deaktivieren aller impliziten Auswertungen
 
-Wenn die vorherigen Lösungen das Problem nicht beheben, wechseln Sie zu **Tools** > **Optionen**, und deaktivieren Sie die Einstellung **Debuggen**  >   **Allgemeine** > **eigenschaftenauswertung und andere implizite Funktionsaufrufe**. Dadurch werden die meisten Evaluierungsversionen von impliziten Funktionen deaktiviert und sollte das Problem zu beheben.
+Wenn das Problem durch die vorherigen Lösungen nicht behoben werden kann, navigieren Sie zu **Extras** > **Optionen**, und deaktivieren Sie die Einstellung **Debuggen** > **Allgemein** > **Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**. Dadurch werden die meisten impliziten Funktionsauswertungen deaktiviert, und das Problem sollte behoben sein.
