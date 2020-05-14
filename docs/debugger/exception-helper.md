@@ -18,46 +18,46 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2dae1609486ec4f3462be89b0526467dd7414647
 ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2020
 ms.locfileid: "76829756"
 ---
-# <a name="inspect-an-exception-using-the-exception-helper"></a>Untersuchen einer Ausnahme mithilfe des Exception-Hilfsprogramms 
+# <a name="inspect-an-exception-using-the-exception-helper"></a>Untersuchen einer Ausnahme mit der Ausnahmen-Hilfe 
 
-Der Umgang mit Ausnahmen ist ein häufiges Problem, unabhängig von ihrer Technologie oder ihrer Kenntnis. Es kann frustrierend sein, herauszufinden, warum Ausnahmen in Ihrem Code Probleme verursachen. Wenn Sie eine Ausnahme in Visual Studio debuggen, sollten Sie diese Frustration verringern, indem Sie Ihnen relevante Ausnahme Informationen bereitstellen, die Ihnen helfen, das Problem schneller zu debuggen.
+Der Umgang mit Ausnahmen ist unabhängig davon, welche Technologie Sie nutzen oder welchen Wissenstand Sie haben, ein häufiges Problem. Die Ermittlung des Grunds, warum Ausnahmen in Ihrem Code zu Problemen führen, kann ein frustrierender Prozess sein. Beim Debuggen einer Ausnahme in Visual Studio möchten wir Ihnen in diesen frustrierenden Situationen helfen, indem wir Sie mit relevanten Informationen zu Ausnahmen versorgen, damit Sie Ihr Problem schneller debuggen können.
 
 ![Ausnahmen-Hilfe](media/debugger-exception-helper-default.png)
 
-## <a name="pause-on-the-exception"></a>Anhalten bei der Ausnahme
-Wenn der Debugger bei einer Ausnahme unterbrochen wird, wird rechts neben der Codezeile ein Ausnahme Fehler Symbol angezeigt. Ein nicht modales Exception-Hilfsprogramm wird in der Nähe des Ausnahme Symbols angezeigt.
+## <a name="pause-on-the-exception"></a>Anhalten bei einer Ausnahme
+Wenn der Debugger den Vorgang beim Auftreten einer Ausnahme unterbricht, wird rechts von der entsprechenden Codezeile ein Symbol für eine Ausnahme angezeigt. Neben dem Symbol für die Ausnahme wird eine nicht modale Ausnahmen-Hilfe angezeigt.
 
-![Ausnahme-Hilfsobjekt neben einer Codezeile](media/debugger-exception-helper-locerror.png)
+![Ausnahmen-Hilfe neben einer Codezeile](media/debugger-exception-helper-locerror.png)
 
-## <a name="inspect-exception-info"></a>Ausnahme Informationen überprüfen
-Sie können den Ausnahmetyp und die Ausnahme Meldung sofort im Ausnahmen-Hilfsprogramm lesen und unabhängig davon, ob die Ausnahme ausgelöst oder nicht behandelt wurde. Sie können die Eigenschaften des Ausnahme Objekts überprüfen und anzeigen, indem Sie auf den Link **Details anzeigen** klicken.
+## <a name="inspect-exception-info"></a>Untersuchen der Informationen zur Ausnahme
+Sie können den Typ und die Meldung zur Ausnahme in der Ausnahmen-Hilfe sofort ablesen, und es ist auch angegeben, ob es sich um eine ausgelöste Ausnahme oder einen Ausnahmefehler handelt. Sie können die Eigenschaften des Ausnahmeobjekts untersuchen und anzeigen, indem Sie auf den Link **Details anzeigen** klicken.
 
-## <a name="analyze-null-references"></a>Analysieren von Null-verweisen
-Ab Visual Studio 2017 sehen Sie für .net und C/C++ Code, wenn Sie eine `NullReferenceException` oder eine `AccessViolation`erreichen, NULL-Analyse Informationen im Ausnahme-Hilfsprogramm. Die Analyse wird als Text unterhalb der Ausnahme Meldung angezeigt. In der Abbildung unten werden die Informationen als "**s** war NULL" angezeigt.
+## <a name="analyze-null-references"></a>Analysieren von Nullverweisen
+Ab Visual Studio 2017 gilt sowohl für .NET- als auch für C/C++-Code Folgendes: Beim Auftreten von `NullReferenceException` oder `AccessViolation` werden in der Ausnahmen-Hilfe Null-Analyseinformationen angezeigt. Die Analyse wird als Text unterhalb der Ausnahmemeldung angegeben. In der Abbildung unten werden die Informationen als „**s** war NULL“ angezeigt.
 
-![Exception Helper-NULL-Analyse](media/debugger-exception-helper-default.png)
+![Ausnahmen-Hilfe: Null-Analyse](media/debugger-exception-helper-default.png)
 
 
 > [!NOTE]
-> Die NULL-Verweis Analyse in verwaltetem Code erfordert die .NET-Version 4.6.2. Die NULL-Analyse wird derzeit für universelle Windows-Plattform (UWP) und andere .net Core-Anwendungen nicht unterstützt. Sie ist nur beim Debuggen von Code verfügbar, der keine Just-in-time (JIT)-Code Optimierungen enthält.
+> Für die NULL-Referenzanalyse in verwaltetem Code ist .NET-Version 4.6.2 erforderlich. Die Null-Analyse wird für die Universelle Windows-Plattform (UWP) und andere .NET Core-Anwendungen derzeit nicht unterstützt. Sie ist nur beim Debuggen von Code verfügbar, für den keine JIT-Codeoptimierungen (Just-In-Time) vorhanden sind.
 
-## <a name="configure-exception-settings"></a>Konfigurieren von Ausnahme Einstellungen 
-Sie können den Debugger so konfigurieren, dass er nicht mehr ausgeführt wird, wenn eine Ausnahme des aktuellen Typs im **Ausnahme Einstellungs** Abschnitt der Ausnahme Unterstützung ausgelöst wird. Wenn der Debugger bei einer ausgelösten Ausnahme angehalten wird, können Sie das Kontrollkästchen verwenden, um das unterbrechen für diesen Ausnahmetyp zu deaktivieren, wenn er in der Zukunft ausgelöst wird. Wenn Sie diese spezielle Ausnahme nicht unterbrechen möchten, wenn Sie in diesem bestimmten Modul ausgelöst wird, aktivieren Sie das Kontrollkästchen im Fenster " **Ausnahme Einstellungen** " im Fenster "Ausnahme Einstellungen **" unter dem** Namen des Moduls. 
+## <a name="configure-exception-settings"></a>Konfigurieren von Einstellungen für Ausnahmen 
+Sie können den Debugger so konfigurieren, dass der Vorgang unterbrochen wird, wenn eine Ausnahme des aktuellen Typs auftritt. Verwenden Sie hierfür in der Ausnahmen-Hilfe den Abschnitt mit den **Ausnahmeeinstellungen**. Wenn der Debugger bei Auslösung einer Ausnahme angehalten wird, können Sie das Anhalten über das Kontrollkästchen für den Ausnahmetyp deaktivieren, um das Verhalten bei zukünftigen Fällen entsprechend zu ändern. Gehen Sie wie folgt vor, wenn der Vorgang bei Auslösung dieser Ausnahme im aktuellen Modul nicht angehalten werden soll: Aktivieren Sie im Fenster **Ausnahmeeinstellungen** das Kontrollkästchen neben dem Modulnamen unter **Ausgenommen, wenn ausgelöst von:** . 
 
-## <a name="inspect-inner-exceptions"></a>Überprüfen von inneren Ausnahmen 
-Wenn die Ausnahme irgendwelche inneren Ausnahmen aufweist ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception)), können Sie Sie in der Ausnahme-Hilfsmethode anzeigen. Wenn mehrere Ausnahmen vorhanden sind, können Sie zwischen diesen mithilfe der Pfeile nach links und rechts navigieren, die oberhalb der-aufrufsstapel angezeigt werden.
+## <a name="inspect-inner-exceptions"></a>Untersuchen von inneren Ausnahmen 
+Falls die Ausnahme über innere Ausnahmen verfügt ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception)), können Sie diese in der Ausnahmen-Hilfe anzeigen. Wenn mehrere Ausnahmen vorhanden sind, können Sie dazwischen wechseln, indem Sie oberhalb der Aufrufliste den Pfeil nach links bzw. rechts verwenden.
 
-![Exception-Hilfsprogramm mit innerer Ausnahme](media/debugger-exception-helper-innerexception.png)
+![Ausnahmen-Hilfe mit innerer Ausnahme](media/debugger-exception-helper-innerexception.png)
 
-## <a name="inspect-rethrown-exceptions"></a>Erneut ausgelöste Ausnahmen überprüfen
-In Fällen, in denen eine Ausnahme `thrown` wurde, zeigt die Ausnahme-Hilfe die Aufruf Stapel an, wenn die Ausnahme zum ersten Mal ausgelöst wurde. Wenn die Ausnahme mehrmals ausgelöst wurde, wird nur die aufrufsstapel der ursprünglichen Ausnahme angezeigt.
+## <a name="inspect-rethrown-exceptions"></a>Untersuchen von erneut ausgelösten Ausnahmen
+Falls eine Ausnahme ausgelöst wurde (`thrown`), wird in der Ausnahmen-Hilfe die Aufrufliste der ersten Ausnahmenauslösung angezeigt. Wenn die Ausnahme mehrmals ausgelöst wurde, wird nur die Aufrufliste der ursprünglichen Ausnahme angezeigt.
 
-![Exception-Hilfsprogramm mit erneut ausgelösten Ausnahmen](media/debugger-exception-helper-innerexception.png)
+![Ausnahmen-Hilfe mit erneut ausgelösten Ausnahmen](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Freigeben einer Debugsitzung mit Live Share
-Aus dem Ausnahmen-Hilfsprogramm können Sie eine [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) Sitzung starten, indem Sie den Link **Live Share Sitzung starten...** . Jeder Benutzer, der die Live Share Sitzung einrichtet, kann das Exception-Hilfsprogramm zusammen mit allen anderen Debuginformationen sehen.
+Über die Ausnahmen-Hilfe können Sie eine [Live Share](https://docs.microsoft.com/visualstudio/liveshare/)-Sitzung starten, indem Sie den Link **Live Share-Sitzung starten...** verwenden. Alle Benutzer, die der Live Share-Sitzung beitreten, können die Ausnahmen-Hilfe und alle anderen Debuginformationen anzeigen.

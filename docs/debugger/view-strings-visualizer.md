@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Zeichen folgen in einer Zeichen folgen Schnellansicht | Microsoft-Dokumentation
+title: Anzeigen von Zeichenfolgen in einer Zeichenfolgenschnellansicht | Microsoft-Dokumentation
 ms.date: 04/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,53 +18,53 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
 ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72450397"
 ---
-# <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Anzeigen von Zeichen folgen in einer Zeichen folgen Schnellansicht in Visual Studio
+# <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Anzeigen von Zeichenfolgen in einer Zeichenfolgenschnellansicht in Visual Studio
 
-Beim Debuggen in Visual Studio können Sie Zeichen folgen mit der integrierten Zeichen folgen Schnellansicht anzeigen. Die Zeichen folgen Schnellansicht zeigt Zeichen folgen an, die für einen datentip oder ein Debuggerfenster zu lang sind. Sie kann auch helfen, falsch formatierte Zeichen folgen zu identifizieren.
+Beim Debuggen in Visual Studio können Sie Zeichenfolgen mit der integrierten Zeichenfolgenschnellansicht anzeigen. In der Zeichenfolgenschnellansicht werden Zeichenfolgen angezeigt, die zu lang für einen Datentipp oder ein Debuggerfenster sind. Sie kann auch dabei helfen, falsch formatierte Zeichenfolgen zu ermitteln.
 
-Die integrierte Zeichen folgen Schnellansicht enthält nur-Text-, XML-, HTML-und JSON-Optionen. Sie können auch integrierte schnell Ansichten für einige andere Typen, z. b. [DataSet-, Datentabelle-und DataView-](../debugger/dataset-visualizer-dialog-box.md) Objekte, **in den Fenstern** "Auto" oder "anderes Debuggen" öffnen.
+Die integrierte Zeichenfolgenschnellansicht beinhaltet Optionen für Nur-Text, XML, HTML und JSON. Über das Fenster **Auto** oder andere Debuggerfenster können Sie auch integrierte Schnellansichten für einige andere Typen (z. B. [DataSet-, DataTable- und DataView-Objekte](../debugger/dataset-visualizer-dialog-box.md)) öffnen.
 
 > [!NOTE]
-> Informationen zum Überprüfen von XAML-oder WPF-Benutzeroberflächen Elementen in einer Schnellansicht finden Sie unter oder unter [Suchen von XAML-Eigenschaften beim Debuggen](../xaml-tools/inspect-xaml-properties-while-debugging.md) oder [Verwenden der WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md)-Struktur Schnellansicht.
+> Informationen zum Überprüfen von XAML- oder WPF-Benutzeroberflächenelemente in einer Schnellansicht finden Sie unter [Überprüfen von XAML-Eigenschaften beim Debuggen](../xaml-tools/inspect-xaml-properties-while-debugging.md) oder [Verwenden der WPF-Strukturschnellansicht](../debugger/how-to-use-the-wpf-tree-visualizer.md).
 
-## <a name="open-a-string-visualizer"></a>Öffnen einer Zeichen folgen Schnellansicht
+## <a name="open-a-string-visualizer"></a>Öffnen einer Zeichenfolgenschnellansicht
 
-Um die Zeichen folgen Schnellansicht zu öffnen, müssen Sie während des Debuggens angehalten werden. Zeigen Sie auf eine Variable, die einen nur-Text-, XML-, HTML-oder JSON-Zeichen folgen Wert hat, und wählen Sie das Lupensymbol ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol "Schnellansicht"")aus.
+Das Debuggen muss pausiert sein, wenn Sie die Zeichenfolgenschnellansicht öffnen möchten. Zeigen Sie auf eine Variable mit einem Nur-Text-, XML-, HTML- oder JSON-Zeichenfolgenwert, und wählen Sie das Lupensymbol ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol der Schnellansicht") aus.
 
-![Öffnen einer Zeichen folgen Schnellansicht](../debugger/media/dbg-tips-string-visualizers.png "Öffnen der Zeichen folgen Schnellansicht")
+![Öffnen einer Zeichenfolgenschnellansicht](../debugger/media/dbg-tips-string-visualizers.png "Öffnen der Zeichenfolgenschnellansicht")
 
-## <a name="view-string-visualizer-data"></a>Anzeigen von Zeichen folgen-Visualisierungs Daten
+## <a name="view-string-visualizer-data"></a>Anzeigen der Daten einer Zeichenfolgenschnellansicht
 
-Im Fenster "Zeichen folgen Schnellansicht" zeigt das **Ausdrucks** Feld die Variable oder den Ausdruck an, auf die Sie zeigen, und das Feld " **Wert** " zeigt den Zeichen folgen Wert an.
+Im Fenster der Zeichenfolgenschnellansicht wird im Feld **Ausdruck** die Variable oder der Ausdruck angezeigt, auf die bzw. den Sie zeigen. Das Feld **Wert** enthält den Zeichenfolgenwert.
 
-Ein leerer **Wert** bedeutet, dass die ausgewählte Schnellansicht die Zeichenfolge nicht erkennen kann. Die **XML** -Schnellansicht zeigt z. b. einen leeren **Wert** für eine Text Zeichenfolge ohne XML-Tags oder eine JSON-Zeichenfolge an.
+Ist **Wert** leer, bedeutet das, dass die ausgewählte Schnellansicht die Zeichenfolge nicht erkennen kann. In der **XML-Schnellansicht** wird beispielsweise ein leerer **Wert** für eine Textzeichenfolge ohne XML-Tags oder für eine JSON-Zeichenfolge angezeigt.
 
-Um Zeichen folgen anzuzeigen, die von der ausgewählten Schnellansicht nicht erkannt werden können, wählen Sie die **Text**Schnellansicht aus. Die **Text** Schnellansicht zeigt nur-Text an.
+Wählen Sie die **Text-Schnellansicht** aus, um Zeichenfolgen anzuzeigen, die von der ausgewählten Schnellansicht nicht erkannt werden. Von der **Text-Schnellansicht** wird Nur-Text angezeigt.
 
-### <a name="view-json-string-data"></a>Anzeigen von JSON-Zeichen folgen Daten
+### <a name="view-json-string-data"></a>Anzeigen von JSON-Zeichenfolgendaten
 
-Eine wohlgeformte JSON-Zeichenfolge ähnelt der folgenden Abbildung in der JSON-Schnellansicht. Falsch formatierter JSON-Code zeigt möglicherweise ein Fehler Symbol an (oder, falls nicht erkannt). Um den JSON-Fehler zu identifizieren, kopieren Sie die Zeichenfolge, und fügen Sie Sie in ein JSON-linting-Tool wie [JSLint](https://www.jslint.com/)ein.
+Eine wohlgeformte JSON-Zeichenfolge ähnelt der unten gezeigten Abbildung in der JSON-Schnellansicht. Für eine falsch formatierte JSON-Zeichenfolge wird unter Umständen ein Fehlersymbol (oder bei Nichterkennung ein leerer Wert) angezeigt. Kopieren Sie die Zeichenfolge, und fügen Sie sie in ein Tool für JSON-Linting (etwa [JSLint](https://www.jslint.com/)) ein, um den JSON-Fehler zu identifizieren.
 
-![JSON-Zeichen folgen Schnellansicht](../debugger/media/dbg-tips-string-visualizer-json.png "JSON-Zeichen folgen Schnellansicht")
+![JSON-Zeichenfolgenschnellansicht](../debugger/media/dbg-tips-string-visualizer-json.png "JSON-Zeichenfolgenschnellansicht")
 
-### <a name="view-xml-string-data"></a>Anzeigen von XML-Zeichen folgen Daten
+### <a name="view-xml-string-data"></a>Anzeigen von XML-Zeichenfolgendaten
 
-Eine wohlgeformte XML-Zeichenfolge ähnelt der folgenden Abbildung in der XML-Schnellansicht. Falsch formatierte XML-Daten können ohne die XML-Tags angezeigt werden, oder wenn Sie nicht erkannt werden.
+Eine wohlgeformte XML-Zeichenfolge ähnelt der unten gezeigten Abbildung in der XML-Schnellansicht. Eine falsch formatierte XML-Zeichenfolge wird möglicherweise ohne XML-Tags oder bei Nichterkennung als leerer Wert angezeigt.
 
-![XML-Zeichen folgen Schnellansicht](../debugger/media/dbg-string-visualizers-xml.png "XML-Zeichen folgen Schnellansicht")
+![XML-Zeichenfolgenschnellansicht](../debugger/media/dbg-string-visualizers-xml.png "XML-Zeichenfolgenschnellansicht")
 
-### <a name="view-html-string-data"></a>Anzeigen von HTML-Zeichen folgen Daten
+### <a name="view-html-string-data"></a>Anzeigen von HTML-Zeichenfolgendaten
 
-Eine wohlgeformte HTML-Zeichenfolge wird angezeigt, wenn Sie in einem Browser gerendert wird, wie in der folgenden Abbildung dargestellt. Falsch formatierter HTML-Code kann als Klartext angezeigt werden.
+Eine wohlgeformte HTML-Zeichenfolge wird wie beim Rendern im Browser angezeigt, wie in der folgenden Abbildung dargestellt. Eine falsch formatierte HTML-Zeichenfolge wird möglicherweise als Nur-Text angezeigt.
 
-![HTML-Zeichen folgen Schnellansicht](../debugger/media/dbg-string-visualizers-html.png "HTML-Zeichen folgen Schnellansicht")
+![HTML-Zeichenfolgenschnellansicht](../debugger/media/dbg-string-visualizers-html.png "HTML-Zeichenfolgenschnellansicht")
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von benutzerdefinierten VisualisierungenC#(, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
-- [Datenvisualisierungen in Visual Studio für Mac](/visualstudio/mac/data-visualizations)
+- [Erstellen von benutzerdefinierten Datenschnellansichten](../debugger/create-custom-visualizers-of-data.md)
+- [Datenvisualisierungen](/visualstudio/mac/data-visualizations)

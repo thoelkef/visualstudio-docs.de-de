@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: der Webserver ist nicht ordnungsgemäß konfiguriert | Microsoft-Dokumentation'
+title: 'Fehler: Der Webserver ist nicht richtig konfiguriert. | Microsoft-Dokumentation'
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,34 +18,34 @@ ms.workload:
 - multiple
 ms.openlocfilehash: be5db0a08a287e2611c29396e96e72719b5106a7
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736931"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Fehler: Der Webserver ist nicht richtig konfiguriert.
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Fehler: Der Webserver ist nicht richtig konfiguriert
 
-Nachdem Sie die hier beschriebenen Schritte ausgeführt haben, um das Problem zu beheben, und bevor Sie versuchen, das Debugging erneut auszuführen, müssen Sie möglicherweise auch IIS zurücksetzen. Öffnen Sie hierzu eine Administrator Eingabeaufforderung, und geben Sie `iisreset` ein.
+Unter Umständen müssen Sie auch IIS zurücksetzen, nachdem Sie die hier aufgeführten Problembehandlungsschritte ausgeführt haben und bevor Sie das Debugging erneut versuchen. Öffnen Sie hierzu eine Administratoreingabeaufforderung, und geben Sie `iisreset` ein.
 
-Gehen Sie folgendermaßen vor, um dieses Problem zu beheben:
+Gehen Sie wie folgt vor, um das Problem zu beheben:
 
-1. Wenn die auf dem Server gehostete Web-App als Releasebuild konfiguriert ist, veröffentlichen Sie Sie als Debugbuild erneut, und überprüfen Sie, ob die Datei Web. config `debug=true` im Kompilierungs Element enthält. IIS zurücksetzen und wiederholen.
+1. Wenn die auf dem Server gehostete Web-App als Releasebuild konfiguriert ist, veröffentlichen Sie sie erneut als Debugbuild, und überprüfen Sie, ob die Datei „web.config“ im Kompilierungselement `debug=true` enthält. Setzen Sie IIS zurück, und wiederholen Sie den Vorgang.
 
-    Wenn Sie z. b. ein Veröffentlichungs Profil für einen Releasebuild verwenden, ändern Sie es in Debuggen und erneut veröffentlichen. Andernfalls wird das debug-Attribut auf `false` festgelegt, wenn Sie veröffentlichen.
+    Wenn Sie beispielsweise ein Veröffentlichungsprofil für einen Releasebuild verwenden, ändern Sie ihn in einen Debugbuild, und veröffentlichen Sie ihn erneut. Andernfalls wird das debug-Attribut beim Veröffentlichen auf `false` festgelegt.
 
-2. Ausschalten Überprüfen Sie, ob der physische Pfad richtig ist. In IIS finden Sie diese Einstellung unter **Grundeinstellungen > physischen Pfad** (oder **Erweiterte Einstellungen** in älteren Versionen von IIS).
+2. (IIS) Vergewissern Sie sich, dass der physische Pfad korrekt ist. In IIS befindet sich diese Einstellung unter **Grundeinstellungen > Physischer Pfad** (in älteren Versionen von IIS unter **Erweiterten Einstellungen**).
 
-    Der physische Pfad ist möglicherweise falsch, wenn die Webanwendung auf einen anderen Computer kopiert, manuell umbenannt oder verschoben wurde. IIS zurücksetzen und wiederholen.
+    Der physische Pfad ist unter Umständen falsch, wenn die Webanwendung auf einen anderen Computer kopiert, manuell umbenannt oder verschoben wurde. Setzen Sie IIS zurück, und wiederholen Sie den Vorgang.
 
-3. Wenn Sie lokal in Visual Studio debuggen, vergewissern Sie sich, dass in den Eigenschaften der richtige Server ausgewählt ist. (Öffnen Sie die **Eigenschaften > web > Server** oder Eigenschaften, die je nach Projekttyp **> Debuggen** . Öffnen Sie für ein Web Forms Projekt die **Eigenschaften Seiten > Start Optionen > Server**).
+3. Vergewissern Sie sich beim lokalen Debuggen in Visual Studio, dass in den Eigenschaften der richtige Server ausgewählt ist. (Öffnen Sie abhängig vom Projekttyp **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen**. Öffnen Sie bei einem Web Forms-Projekt **Eigenschaftenseiten > Startoptionen > Server**.)
 
-    Wenn Sie einen externen (benutzerdefinierten) Server (z. b. IIS) verwenden, muss die URL richtig sein. Wählen Sie andernfalls IIS Express aus, und versuchen Sie es erneut.
+    Wenn Sie einen externen (benutzerdefinierten) Server wie IIS verwenden, muss die URL korrekt sein. Wählen Sie andernfalls IIS Express aus, und versuchen Sie es erneut.
 
-4. Ausschalten Stellen Sie sicher, dass die richtige Version von ASP.net auf dem Server installiert ist.
+4. (IIS) Stellen Sie sicher, dass auf dem Server die richtige ASP.NET-Version installiert ist.
 
-    Das Problem kann durch nicht übereinstimmende Versionen von ASP.net auf IIS und in Ihrem Visual Studio-Projekt verursacht werden. Möglicherweise müssen Sie die Frameworkversion in der Datei "Web. config" festlegen. Verwenden Sie zum Installieren von ASP.net auf IIS den [Webplattform-Installer (webpi)](https://www.microsoft.com/web/downloads/platform.aspx). Weitere Informationen finden [Sie unter IIS 8,0 mithilfe von ASP.NET 3,5 und ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oder ASP.net Core unter [Windows mit IIS hosten](https://docs.asp.net/en/latest/publishing/iis.html).
+    Das Problem kann durch nicht übereinstimmende Versionen von ASP.NET in IIS und in Ihrem Visual Studio-Projekt verursacht werden. Möglicherweise müssen Sie die Framework-Version in der Datei „web.config“ festlegen. Verwenden Sie zum Installieren von ASP.NET in IIS den [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Weitere Informationen finden Sie unter [IIS 8.0: Verwenden von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Lesen Sie bei Verwendung von ASP.NET Core die Informationen unter [Hosten von ASP.NET Core unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
-4. Wenn das `maxConnection` Limit in IIS zu niedrig ist, und Sie über zu viele Verbindungen verfügen, müssen Sie möglicherweise [das Verbindungs Limit erhöhen](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
+4. Wenn der `maxConnection`-Grenzwert in IIS zu niedrig ist und Sie über zu viele Verbindungen verfügen, müssen Sie unter Umständen den [Verbindungsgrenzwert erhöhen](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
 
 ## <a name="see-also"></a>Siehe auch
 - [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)

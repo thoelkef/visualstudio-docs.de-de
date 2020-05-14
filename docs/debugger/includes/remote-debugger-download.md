@@ -1,5 +1,5 @@
 ---
-title: Remotedebugger-download
+title: Download für den Remotedebugger
 description: Downloadlinks für den Remotedebugger
 services: ''
 author: mikejo5000
@@ -10,25 +10,25 @@ ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
 ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68149206"
 ---
-Klicken Sie auf dem Remotegerät oder Server, die Sie debuggen möchten, anstatt Visual Studio-Computers, herunterladen Sie und installieren Sie die richtige Version der Remotetools, über die Links in der folgenden Tabelle.
+Laden Sie über die Links in der folgenden Tabelle die richtige Version der Remotetools herunter, und installieren Sie sie nicht auf dem Visual Studio-Computer, sondern auf dem Remotegerät oder -server, auf dem Sie das Debugging durchführen möchten.
 
-- Laden Sie die neuesten Remoteserver-Verwaltungstools für Ihre Version von Visual Studio herunter. Die neueste Version der Remotetools ist kompatibel mit früheren Versionen von Visual Studio, jedoch frühere Versionen der Remotetools nicht mit späteren Versionen von Visual Studio kompatibel sind. (Z. B. Wenn Sie Visual Studio 2017 verwenden, herunterladen Sie das neueste Update der Remotetools für Visual Studio 2017. In diesem Szenario wird kein download der Remotetools für Visual Studio-2019.)
-- Laden Sie die Remoteserver-Verwaltungstools mit derselben Architektur wie der Computer, der Sie sie auf installieren. Wenn Sie eine 32-Bit-app auf einem Remotecomputer unter einem 64-Bit-Betriebssystem debuggen möchten, installieren Sie z. B. die 64-Bit-Remoteserver-Verwaltungstools.
+- Laden Sie die aktuellen Remotetools für Ihre Visual Studio-Version herunter. Die aktuelle Version der Remotetools ist mit früheren Versionen von Visual Studio kompatibel, frühere Versionen der Remotetools sind jedoch nicht mit neueren Visual Studio-Versionen kompatibel. (Beispiel: Laden Sie bei Verwendung von Visual Studio 2017 das aktuelle Update der Remotetools für Visual Studio 2017 herunter. Laden Sie in diesem Szenario nicht die Remotetools für Visual Studio 2019 herunter.)
+- Laden Sie die Remotetools herunter, die die gleiche Architektur wie der Computer aufweisen, auf dem Sie sie installieren. Wenn Sie beispielsweise eine 32-Bit-App auf einem Remotecomputer mit einem 64-Bit-Betriebssystem debuggen möchten, installieren Sie die 64-Bit-Remotetools.
 
 ::: moniker range=">=vs-2019"
 
 |Version|Link|Hinweise|
 |-|-|-|
-|Visual Studio 2019|[Remotetools](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|Kompatibel mit allen Versionen von Visual Studio-2019. Laden Sie die Version, die übereinstimmende Ihr Betriebssystems des Geräts (x 86, X64 oder ARM64). Unter Windows Server finden Sie unter [entsperren Sie den Dateidownload](../../debugger/remote-debugging-unblock-file-download.md) Hilfe Herunterladen der Remoteserver-Verwaltungstools.|
-|Visual Studio 2017|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Kompatibel mit allen Versionen von Visual Studio 2017. Laden Sie die Version, die übereinstimmende Ihr Betriebssystems des Geräts (x 86, X64 oder ARM64). Unter Windows Server finden Sie unter [entsperren Sie den Dateidownload](../../debugger/remote-debugging-unblock-file-download.md) Hilfe Herunterladen der Remoteserver-Verwaltungstools.|
-|Visual Studio 2015|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Remotetools für Visual Studio 2015 sind My.VisualStudio.com verfügbar. Wenn Sie dazu aufgefordert werden, verknüpfen Sie die kostenlose [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) -Programm, oder melden Sie sich mit Ihrem Visual Studio-Abonnement-ID. Unter Windows Server finden Sie unter [entsperren Sie den Dateidownload](../../debugger/remote-debugging-unblock-file-download.md) Hilfe Herunterladen der Remoteserver-Verwaltungstools.|
-|Visual Studio 2013|[Remotetools](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Download-Seite in Visual Studio 2013-Dokumentation|
-|Visual Studio 2012|[Remotetools](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Download-Seite in Visual Studio 2012-Dokumentation|
+|Visual Studio 2019|[Remotetools](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|Kompatibel mit allen Visual Studio 2019-Versionen. Laden Sie die Version herunter, die Ihrem Gerätebetriebssystem entspricht (x86, x64 oder ARM64). Wenn Sie Unterstützung beim Herunterladen der Remotetools unter Windows Server benötigen, lesen Sie die Informationen unter [Entsperren des Dateidownloads](../../debugger/remote-debugging-unblock-file-download.md).|
+|Visual Studio 2017|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Kompatibel mit allen Visual Studio 2017-Versionen. Laden Sie die Version herunter, die Ihrem Gerätebetriebssystem entspricht (x86, x64 oder ARM64). Wenn Sie Unterstützung beim Herunterladen der Remotetools unter Windows Server benötigen, lesen Sie die Informationen unter [Entsperren des Dateidownloads](../../debugger/remote-debugging-unblock-file-download.md).|
+|Visual Studio 2015|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Remotetools für Visual Studio 2015 stehen auf My.VisualStudio.com zur Verfügung. Treten Sie bei entsprechender Aufforderung dem kostenlosen Programm [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) bei, oder melden Sie sich mit Ihrer Visual Studio-Abonnement-ID an. Wenn Sie Unterstützung beim Herunterladen der Remotetools unter Windows Server benötigen, lesen Sie die Informationen unter [Entsperren des Dateidownloads](../../debugger/remote-debugging-unblock-file-download.md).|
+|Visual Studio 2013|[Remotetools](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Downloadseite in der Visual Studio 2013-Dokumentation|
+|Visual Studio 2012|[Remotetools](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Downloadseite in der Visual Studio 2012-Dokumentation|
 
 ::: moniker-end
 
@@ -36,15 +36,15 @@ Klicken Sie auf dem Remotegerät oder Server, die Sie debuggen möchten, anstatt
 
 |Version|Link|Hinweise|
 |-|-|-|
-|Visual Studio 2017|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Kompatibel mit allen Versionen von Visual Studio 2017. Laden Sie die Version, die übereinstimmende Ihr Betriebssystems des Geräts (x 86, X64 oder ARM64). Unter Windows Server finden Sie unter [entsperren Sie den Dateidownload](../../debugger/remote-debugging-unblock-file-download.md) Hilfe Herunterladen der Remoteserver-Verwaltungstools. Öffnen Sie für die neueste Version der Remotetools, die [Visual Studio-2019 Doc](../../debugger/remote-debugging.md?view=vs-2019).|
-|Visual Studio 2015|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Remotetools für Visual Studio 2015 sind My.VisualStudio.com verfügbar. Wenn Sie dazu aufgefordert werden, verknüpfen Sie die kostenlose [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) -Programm, oder melden Sie sich mit Ihrem Visual Studio-Abonnement-ID. Unter Windows Server finden Sie unter [entsperren Sie den Dateidownload](../../debugger/remote-debugging-unblock-file-download.md) Hilfe Herunterladen der Remoteserver-Verwaltungstools.|
-|Visual Studio 2013|[Remotetools](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Download-Seite in Visual Studio 2013-Dokumentation|
-|Visual Studio 2012|[Remotetools](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Download-Seite in Visual Studio 2012-Dokumentation|
+|Visual Studio 2017|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Kompatibel mit allen Visual Studio 2017-Versionen. Laden Sie die Version herunter, die Ihrem Gerätebetriebssystem entspricht (x86, x64 oder ARM64). Wenn Sie Unterstützung beim Herunterladen der Remotetools unter Windows Server benötigen, lesen Sie die Informationen unter [Entsperren des Dateidownloads](../../debugger/remote-debugging-unblock-file-download.md). Informationen zur aktuellen Version der Remotetools finden Sie in der [Visual Studio 2019-Dokumentation](../../debugger/remote-debugging.md?view=vs-2019).|
+|Visual Studio 2015|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Remotetools für Visual Studio 2015 stehen auf My.VisualStudio.com zur Verfügung. Treten Sie bei entsprechender Aufforderung dem kostenlosen Programm [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) bei, oder melden Sie sich mit Ihrer Visual Studio-Abonnement-ID an. Wenn Sie Unterstützung beim Herunterladen der Remotetools unter Windows Server benötigen, lesen Sie die Informationen unter [Entsperren des Dateidownloads](../../debugger/remote-debugging-unblock-file-download.md).|
+|Visual Studio 2013|[Remotetools](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Downloadseite in der Visual Studio 2013-Dokumentation|
+|Visual Studio 2012|[Remotetools](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Downloadseite in der Visual Studio 2012-Dokumentation|
 
 ::: moniker-end
 
-Sie können den Remotedebugger ausführen, durch Kopieren *msvsmon.exe* auf dem Remotecomputer, anstatt die Remoteserver-Verwaltungstools installieren. Allerdings die Konfigurations-Assistenten (*rdbgwiz.exe*) steht nur, wenn Sie die Remoteserver-Verwaltungstools installieren. Sie müssen möglicherweise den Assistenten für die Konfiguration verwenden, wenn der Remotedebugger als Dienst ausgeführt werden sollen. Weitere Informationen finden Sie unter [(Optional) Konfigurieren des Remotedebuggers als Dienst](../../debugger/remote-debugging.md#bkmk_configureService).
+Sie können den Remotedebugger ausführen, indem Sie *msvsmon.exe* auf den Remotecomputer kopieren, statt die Remotetools zu installieren. Der Konfigurations-Assistent für den Remotedebugger (*rdbgwiz.exe*) ist jedoch nur verfügbar, wenn Sie die Remotetools installieren. Unter Umständen müssen Sie den Assistenten für die Konfiguration verwenden, wenn Sie den Remotedebugger als Dienst ausführen möchten. Weitere Informationen finden Sie unter [(Optional) Konfigurieren des Remotedebuggers als Dienst](../../debugger/remote-debugging.md#bkmk_configureService).
 
 >[!NOTE]
->- Verwenden Sie zum Debuggen von Windows 10-apps auf ARM-Geräten ARM64, die mit der neuesten Version der Remotetools verfügbar ist.
->- Verwenden Sie zum Debuggen von Windows 10-apps auf Windows RT-Geräten, ARM, die nur in Visual Studio 2015 verfügbar ist, die zum Herunterladen der Remoteserver-Verwaltungstools.
+>- Verwenden Sie ARM64 (verfügbar mit der aktuellen Version der Remotetools) zum Debuggen von Windows 10-Apps auf ARM-Geräten.
+>- Zum Debuggen von Windows 10-Apps auf Windows RT-Geräten verwenden Sie ARM (nur im Download der Visual Studio 2015-Remotetools verfügbar).

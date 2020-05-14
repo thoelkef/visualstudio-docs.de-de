@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Code ÄnderungenC# (und Visual Basic) | Microsoft-Dokumentation
+title: Unterstützte Codeänderungen (C# und Visual Basic) | Microsoft-Dokumentation
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,32 +18,32 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729090"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte CodeänderungenC# (und Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte Codeänderungen (C# und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.
 
-## <a name="supported-changes-to-code"></a>Unterstützte Änderungen am Code
+## <a name="supported-changes-to-code"></a>Unterstützte Änderungen an Code
 
-In der folgenden Tabelle sind die Änderungen aufgeführt, die während C# einer Debugsitzung vorgenommen und Visual Basic werden können, ohne dass die Sitzung neu gestartet wird.
+In der folgenden Tabelle sind die Änderungen aufgeführt, die während einer Debugsitzung ohne Neustart der Sitzung an C#- und Visual Basic-Code vorgenommen werden können.
 
-|Sprach Element/Feature|Unterstützter Bearbeitungsvorgang|Einschränkungen|
+|Sprachelement/Feature|Unterstützter Bearbeitungsvorgang|Einschränkungen|
 |-|-|-|
-|Typen|Add Methods, Fields, Constructors, et al|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Typen|Hinzufügen von Methoden, Feldern, Konstruktoren usw.|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Iterators|Hinzufügen oder ändern|Nein|
-|Async/Erwartung von Ausdrücken|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|async-/await-Ausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Dynamische Objekte|Hinzufügen oder ändern|Nein|
 |Lambdaausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ-Ausdrücke|Hinzufügen oder ändern|[Identisch mit Lambda-Ausdrücken](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|LINQ-Ausdrücke|Hinzufügen oder ändern|[Wie bei Lambdaausdrücken](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
-> Neuere sprach Features wie Zeichen folgen Interpolationen und NULL bedingte Operatoren werden in der Regel von "Bearbeiten und Fortfahren" unterstützt. Die aktuellsten Informationen finden Sie auf der Seite [unterstützte](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) bearbeitbare edits.
+> Neuere Sprachfeatures wie Zeichenfolgeninterpolation und NULL-bedingte Operatoren werden von „Bearbeiten und Fortfahren“ in der Regel unterstützt. Aktuelle Informationen finden Sie auf der Seite [Von „Bearbeiten und Fortfahren“ unterstützte Bearbeitungsvorgänge](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits).
 
-## <a name="unsupported-changes-to-code"></a>Nicht unterstützte Codeänderungen
- Die folgenden Änderungen können während einer Debugsitzung nicht auf C# und Visual Basic Code angewendet werden:
+## <a name="unsupported-changes-to-code"></a>Nicht unterstützte Änderungen an Code
+ Folgende Änderungen am C#- und Visual Basic-Code können während einer Debugsitzung nicht übernommen werden:
 
 - Änderungen an der aktuellen Anweisung oder einer beliebigen anderen aktiven Anweisung.
 
@@ -51,42 +51,42 @@ In der folgenden Tabelle sind die Änderungen aufgeführt, die während C# einer
 
      Die aktuelle Anweisung wird im Quellcodefenster durch einen gelben Hintergrund gekennzeichnet. Andere aktive Anweisungen werden durch einen schattierten Hintergrund gekennzeichnet und sind schreibgeschützt. Diese Standardfarben können im Dialogfeld **Optionen** geändert werden.
 
-- In der folgenden Tabelle werden nicht unterstützte Änderungen am Code des Language-Elements angezeigt.
+- Die folgende Tabelle enthält nicht unterstützte Änderungen am Code nach Sprachelement.
 
-|Sprach Element/Feature|Nicht unterstützter Bearbeitungsvorgang.|
+|Sprachelement/Feature|Nicht unterstützter Bearbeitungsvorgang|
 |-|-|
-|Alle Code Elemente|Umbenennen|
+|Alle Codeelemente|Umbenennen|
 |Namespaces|Hinzufügen|
 |Namespaces, Typen, Member|Löschen|
 |Generics|Hinzufügen oder ändern|
 |Schnittstellen|Ändern|
-|Typen|Abstract oder Virtual Member hinzufügen, außer Kraft Setzung hinzufügen (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Typen|Hinzufügen abstrakter oder virtueller Member, Hinzufügen von Außerkraftsetzung (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Typen|Destruktor hinzufügen|
 |Member|Ändern eines Members, der auf einen eingebetteten Interoptyp verweist|
-|Member|Ändern eines statischen Members, nachdem er durch Ausführen von Code bereits aufgerufen wurde|
-|Member (Visual Basic)|Ändern eines Members mit On Error-oder Resume-Anweisung|
-|Member (Visual Basic)|Ändern eines Members, der eine LINQ-Abfrage Klausel mit Aggregat-, Group by-, Simple Join-oder Group Join-Klausel enthält|
-|Methoden|Signaturen ändern|
-|Methoden|Eine abstrakte Methode durch Hinzufügen eines Methoden Texts als nicht abstrakt festlegen|
-|Methoden|Methoden Text löschen|
+|Member|Ändern eines statischen Members, nachdem darauf durch Ausführen von Code bereits zugegriffen wurde|
+|Member (Visual Basic)|Ändern eines Members mit On Error- oder Resume-Anweisung|
+|Member (Visual Basic)|Ändern eines Members, der eine LINQ-Abfrageklausel vom Typ „Aggregate“, „Group By“, „Simple Join“ oder „Group Join“ enthält|
+|Methoden|Ändern von Signaturen|
+|Methoden|Festlegen einer abstrakten Methode als nicht abstrakte Methode durch Hinzufügen eines Methodenkörpers|
+|Methoden|Löschen eines Methodenkörpers|
 |Attribute|Hinzufügen oder ändern|
-|Ereignisse oder Eigenschaften|Ändern eines Typparameters, Basistyps, Delegattyps oder Rückgabe Typs |
-|Operatoren oder Indexer|Ändern eines Typparameters, Basistyps, Delegattyps oder Rückgabe Typs |
-|catch-Blöcke|Ändern, wenn es eine aktive Anweisung enthält|
-|try-catch-endlich-Blöcke|Ändern, wenn es eine aktive Anweisung enthält|
+|Ereignisse oder Eigenschaften|Ändern eines Typparameters, Basistyps, Delegattyps oder Rückgabetyps |
+|Operatoren oder Indexer|Ändern eines Typparameters, Basistyps, Delegattyps oder Rückgabetyps |
+|catch-Blöcke|Ändern, wenn eine aktive Anweisung enthalten ist|
+|Blöcke vom Typ „try-catch-finally“|Ändern, wenn eine aktive Anweisung enthalten ist|
 |Using-Anweisungen|Hinzufügen|
-|Async-Methoden/Lambdas|Ändern einer Async-Methode/eines Lambda-Ausdrucks in einem Projekt, das auf die .NET Framework 4 und niedriger abzielt (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|Ändern eines Iterators in einem Projekt, das auf .NET Framework 4 und niedriger abzielt (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Async-Methoden oder -Lambdaausdrücke|Ändern einer Async-Methode oder eines Async-Lambdaausdrucks in einem Projekt für .NET Framework 4 und niedrigere Versionen (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Iterators|Ändern eines Iterators in einem Projekt für .NET Framework 4 und niedrigere Versionen (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Unsicherer Code
- Bei Änderungen an unsicherem Code gibt es dieselben Einschränkungen wie bei Änderungen an sicherem Code, es gibt jedoch eine zusätzliche Einschränkung: „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden ist, die den Operator `stackalloc` enthält.
+ Änderungen an unsicherem Code unterliegen denselben Einschränkungen wie Änderungen an sicherem Code, allerdings mit einer zusätzlichen Einschränkung: Die Funktion „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der sich innerhalb einer Methode mit dem `stackalloc`-Operator befindet.
 
-## <a name="unsupported-app-scenarios"></a>Nicht unterstützte App-Szenarios
+## <a name="unsupported-app-scenarios"></a>Nicht unterstützte App-Szenarien
 
-Nicht unterstützte apps und Plattformen sind ASP.net 5, Silverlight 5 und Windows 8.1.
+Nicht unterstützte Apps und Plattformen sind u. a. ASP.NET 5, Silverlight 5 und Windows 8.1.
 
 > [!NOTE]
-> Zu den unterstützten apps zählen UWP in Windows 10 und x86-und x64-apps, die auf den .NET Framework 4,6-Desktop oder spätere Versionen abzielen (die .NET Framework ist nur eine Desktop Version).
+> Zu den unterstützten Apps zählen UWP-Apps in Windows 10 sowie x86- und x64-Apps, die für die Desktopversion von .NET Framework 4.6 oder höhere Versionen vorgesehen sind. (.NET Framework ist nur als Desktopversion verfügbar.)
 
 ## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien
  Bearbeiten und Fortfahren steht in den folgenden Debugszenarios nicht zur Verfügung:
@@ -95,11 +95,11 @@ Nicht unterstützte apps und Plattformen sind ASP.net 5, Silverlight 5 und Windo
 
 - SQL-Debuggen.
 
-- Debuggen eines Dr. Watson-dumpspeichers.
+- Debuggen einer Dr. Watson-Sicherungskopie.
 
 - Debuggen einer eingebetteten Laufzeitanwendung.
 
-- Debuggen einer Anwendung mit **Anfügen** an den Prozess (**debug> an den Prozess anhängen**) anstatt die Anwendung durch Auswahl von starten im Menü **Debuggen** zu starten.
+- Debuggen einer Anwendung mit „An Prozess anhängen“ (**Debuggen > An Prozess anhängen**), anstatt die Anwendung durch Auswählen von **Start** im Menü **Debuggen** auszuführen
 
 - Debuggen von optimiertem Code.
 
@@ -107,4 +107,4 @@ Nicht unterstützte apps und Plattformen sind ASP.net 5, Silverlight 5 und Windo
 
 ## <a name="see-also"></a>Siehe auch
 - [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [How to: Verwenden von „Bearbeiten und fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

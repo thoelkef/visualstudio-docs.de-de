@@ -24,65 +24,65 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
 ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72431804"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuggen von Multithreadanwendungen in Visual Studio
-Ein Thread ist eine Abfolge von Anweisungen, denen das Betriebssystem Prozessorzeit zuweist. Jeder Prozess, der im Betriebssystem ausgeführt wird, umfasst mindestens einen Thread. Prozesse, die über mehr als einen Thread verfügen, werden als Multithreadprozesse bezeichnet.
+Ein Thread ist eine Folge von Anweisungen, für die das Betriebssystem Prozessorzeit vergibt. Jeder Prozess, der im Betriebssystem ausgeführt wird, umfasst mindestens einen Thread. Prozesse, die über mehr als einen Thread verfügen, werden als Multithreadprozesse bezeichnet.
 
-Auf Computern mit mehreren Prozessoren, Multi-Core-Prozessoren oder Hyperthreading-Prozessen können mehrere gleichzeitige Threads ausgeführt werden. Die parallele Verarbeitung mit vielen Threads kann die Programmleistung erheblich verbessern, aber auch das Debuggen erschwert werden, da viele Threads nachverfolgt werden.
+Auf Computern mit mehreren Prozessoren, Mehrkernprozessoren oder Hyperthreadingprozessen können mehrere gleichzeitige Threads ausgeführt werden. Die parallele Verarbeitung mit vielen Threads kann die Programmleistung erheblich verbessern, andererseits aber auch das Debuggen erschweren, da zahlreiche Threads nachverfolgt werden.
 
-Durch das Multithreading können neue Arten potenzieller Fehler eingeführt werden. Beispielsweise müssen zwei oder mehr Threads möglicherweise auf dieselbe Ressource zugreifen, aber jeweils nur ein Thread kann sicher auf die Ressource zugreifen. Eine Form des gegenseitigen Ausschlusses ist erforderlich, um sicherzustellen, dass zu einem beliebigen Zeitpunkt nur ein Thread auf die Ressource zugreift. Wenn der gegenseitige Ausschluss nicht ordnungsgemäß implementiert ist, kann er eine Deadlockbedingung erstellen, in *der kein Thread* ausgeführt wird. Deadlocks sind häufig ein schwer zu debuggenden Problem.
+Durch Multithreading können neue potenzielle Fehlertypen eingeführt werden. Beispielsweise müssen zwei oder mehr Threads auf dieselbe Ressource zugreifen, während jeweils nur ein Thread sicher auf die Ressource zugreifen kann. Um sicherzustellen, dass immer nur ein Thread auf die Ressource zugreifen kann, ist eine Form des gegenseitigen Ausschlusses erforderlich. Wenn der gegenseitige Ausschluss nicht richtig implementiert wird, kann eine *Deadlock*-Bedingung entstehen, unter der kein Thread ausgeführt wird. Deadlocks können beim Debuggen ein schwerwiegendes Problem darstellen.
 
-## <a name="tools-for-debugging-multithreaded-apps"></a>Tools zum Debuggen von Multithread-apps
+## <a name="tools-for-debugging-multithreaded-apps"></a>Tools zum Debuggen von Multithread-Apps
 
-Visual Studio stellt verschiedene Tools für das Debuggen von Multithread-apps bereit.
+Visual Studio stellt verschiedene Tools für das Debuggen von Multithread-Apps bereit.
 
-- Bei Threads handelt es sich bei den primären Tools zum Debuggen von Threads um das Fenster **Threads** , Thread Markierungen in Quell Fenstern, das Fenster **parallele Stapel** , das Fenster **parallele Überwachung** und die Symbolleiste **Debugspeicherort** . Weitere Informationen zum Fenster **Threads** und zum **Debugspeicherort** finden Sie unter Exemplarische Vorgehensweise [: Debuggen mithilfe des Fensters "Threads](../debugger/how-to-use-the-threads-window.md)". Informationen dazu, wie Sie **parallele Stapel** und **parallele Überwachungs** Fenster verwenden, finden Sie unter Einstieg in das [Debuggen einer Multithreadanwendung](../debugger/get-started-debugging-multithreaded-apps.md). Beide Themen zeigen, wie Thread Marker verwendet werden.
+- Die wichtigsten Tools für das Debuggen von Threads sind das Fenster **Threads**, Threadmarker in Quellcodefenstern, das Fenster **Parallele Stapel**, das Fenster **Parallele Überwachung** sowie die Symbolleiste **Debugspeicherort**. Weitere Informationen zum Fenster **Threads** und zur Symbolleiste **Debugspeicherort** finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md). Informationen zum Verwenden der Fenster **Parallele Stapel** und **Parallele Überwachung** finden Sie unter [Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic, C++)](../debugger/get-started-debugging-multithreaded-apps.md). In beiden Themen wird gezeigt, wie Threadmarker verwendet werden.
 
-- Für Code, in dem die [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) oder die [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/)verwendet wird, sind die wichtigsten Tools für das Debuggen das Fenster **parallele Stapel** , das Fenster **parallele Überwachung** und das Fenster **Tasks** , das auch Ja. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md) und Exemplarische Vorgehensweise [: Debuggen einer C++ amp-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- Bei Code, der die [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) oder [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/) verwendet, werden für das Debuggen hauptsächlich das Fenster **Parallele Stapel**, das Fenster **Parallele Überwachung** und das Fenster **Aufgaben** verwendet, das zudem JavaScript unterstützt. Informationen zu den ersten Schritten finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio (C#, Visual Basic, C++)](../debugger/walkthrough-debugging-a-parallel-application.md) und [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
 
-- Beim Debuggen von Threads auf der GPU ist das primäre Tool das **GPU-Thread** Fenster. Siehe Gewusst [wie: Verwenden des Fensters "GPU-Threads](../debugger/how-to-use-the-gpu-threads-window.md)".
+- Zum Debuggen von Threads auf der GPU wird hauptsächlich das Fenster **GPU-Threads** verwendet. Weitere Informationen finden Sie unter [How to: Use the GPU Threads window (Vorgehensweise: Verwenden des Fensters „GPU-Threads“)](../debugger/how-to-use-the-gpu-threads-window.md)
 
-- Für Prozesse sind die primären Tools das Dialogfeld **an den Prozess anhängen** , das Fenster **Prozesse** und die Symbolleiste **Debugspeicherort** .
+- Die wichtigsten Tools bei Prozessen sind das Dialogfeld **An Prozess anhängen**, das Fenster **Prozesse** und die Symbolleiste **Debugspeicherort**.
 
-Visual Studio bietet auch leistungsstarke Haltepunkte und Ablauf Verfolgungs Punkte, die beim Debuggen von Multithreadanwendungen nützlich sein können. Verwenden Sie Haltepunkt Bedingungen und Filter, um Haltepunkte in einzelnen Threads zu platzieren. Ablauf Verfolgungs Punkte ermöglichen es Ihnen, die Ausführung des Programms ohne Unterbrechung zu verfolgen, um Probleme wie Deadlocks zu untersuchen. Weitere Informationen finden Sie unterhalte [Punkt Aktionen und](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)Ablauf Verfolgungs Punkte.
+Visual Studio stellt auch leistungsstarke Breakpoints und Ablaufverfolgungspunkte bereit, die beim Debuggen von Multithreadanwendungen hilfreich sein können. Verwenden Sie Breakpointbedingungen und -filter, um Breakpoints in einzelnen Threads zu platzieren. Ablaufverfolgungspunkte ermöglichen es Ihnen, die Ausführung des Programms ohne Unterbrechung zu verfolgen, um Probleme wie Deadlocks zu untersuchen. Weitere Informationen finden Sie unter [Haltepunktaktionen und Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints).
 
-Das Debuggen einer Multithreadanwendung mit einer Benutzeroberfläche kann besonders schwierig sein. Sie sollten die Anwendung auf einem zweiten Computer ausführen und Remote Debugging verwenden. Weitere Informationen finden Sie unter [Remote Debuggen](../debugger/remote-debugging.md).
+Das Debuggen einer Multithreadanwendung mit einer Benutzeroberfläche kann besonders schwierig sein. Sie könnten erwägen, die Anwendung auf einem zweiten Computer auszuführen und das Remotedebuggen zu verwenden. Weitere Informationen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
 
-## <a name="articles-about-debugging-multithreaded-apps"></a>Artikel zum Debuggen von Multithread-apps
+## <a name="articles-about-debugging-multithreaded-apps"></a>Artikel zum Debuggen von Multithread-Apps
 
- [Starten des Debuggens einer Multithread-Anwendung](../debugger/get-started-debugging-multithreaded-apps.md)
+ [Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic, C++)](../debugger/get-started-debugging-multithreaded-apps.md)
 
-Eine Tour durch Thread-Debuggingfunktionen, die Features im Fenster **parallele Stapel** und im Fenster **parallele Überwachung** hervorheben.
+Dieser Artikel enthält eine Einführung in die Features für das Threaddebuggen, wobei der Schwerpunkt auf den Features im Fenster **Parallele Stapel** und **Parallele Überwachung** liegt.
 
- [Tools zum Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)
+ [Tools zum Debuggen von Threads und Prozessen in Visual Studio](../debugger/debug-threads-and-processes.md)
 
-Listet die Funktionen der Tools zum Debuggen von Threads und Prozessen auf.
+Unter diesem Link sind die Features der Tools zum Debuggen von Threads und Prozessen aufgeführt.
 
  [Debuggen mehrerer Prozesse](../debugger/debug-multiple-processes.md)
 
 Erläutert das Debuggen mehrerer Prozesse.
 
- [Walkthrough: Debug using the Threads window (Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“)](../debugger/how-to-use-the-threads-window.md)
+ [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md).
 
-Exemplarische Vorgehensweise, die zeigt, wie das Fenster **Threads** und die Symbolleiste **Debugspeicherort** verwendet werden.
+Dieser Artikel enthält eine exemplarische Vorgehensweise zur Verwendung des Fensters **Threads** und der Symbolleiste **Debugspeicherort**.
 
  [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)
 
-Exemplarische Vorgehensweise, die zeigt, wie die Fenster **parallele Stapel** und **Aufgaben** verwendet werden.
+Exemplarische Vorgehensweise, in der erläutert wird, wie die Fenster **Parallele Stapel** und **Aufgaben** verwendet werden
 
- [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [How to: Switch to another thread while debugging (Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens)](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
-Es gibt mehrere Möglichkeiten, den debuggingkontext auf einen anderen Thread zu
+Hier werden verschiedene Möglichkeiten erläutert, mit dem Debugkontext zu einem anderen Thread zu wechseln.
 
- [Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung](../debugger/how-to-flag-and-unflag-threads.md)
+ [How to: Flag and unflag threads (Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung)](../debugger/how-to-flag-and-unflag-threads.md)
 
 Markieren oder Kennzeichnen von Threads, die beim Debuggen besondere Aufmerksamkeit erhalten sollen.
 
- [How to: Debug on a high-performance cluster (Vorgehensweise: Debuggen eines Hochleistungsclusters)](../debugger/how-to-debug-on-a-high-performance-cluster.md)
+ [How to: Debug on a high-performance cluster (Vorgehensweise: Debuggen auf einem Hochleistungscluster)](../debugger/how-to-debug-on-a-high-performance-cluster.md)
 
 Techniken zum Debuggen einer Anwendung, die auf einem Hochleistungscluster ausgeführt wird.
 
@@ -90,11 +90,11 @@ Techniken zum Debuggen einer Anwendung, die auf einem Hochleistungscluster ausge
 
 Einfache Techniken, die beim Debuggen systemeigener Threads hilfreich sein können.
 
- [Gewusst wie: Festlegen eines Threadnamens in nativem Code](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [How to: Set a thread name in native code (Vorgehensweise: Festlegen eines Threadnamens in nativem Code)](../debugger/how-to-set-a-thread-name-in-native-code.md)
 
 Geben Sie Ihrem Thread einen Namen, der im Fenster **Threads** angezeigt wird.
 
- [Gewusst wie: Festlegen eines Threadnamens in verwaltetem Code](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [How to: Set a thread name in managed code (Vorgehensweise: Festlegen eines Threadnamens in verwaltetem Code)](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 Geben Sie Ihrem Thread einen Namen, der im Fenster **Threads** angezeigt wird.
 
@@ -103,6 +103,6 @@ Geben Sie Ihrem Thread einen Namen, der im Fenster **Threads** angezeigt wird.
 - [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
 - [Threading](/dotnet/standard/threading/index)
 - [Multithreading in components (Multithreading in Komponenten)](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
-- [Multithreading-Unterstützung für älteren Code](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
+- [Multithreadingunterstützung für älteren Code (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Debug threads and processes (Debuggen von Threads und Prozessen)](../debugger/debug-threads-and-processes.md)
 - [Remotedebuggen](../debugger/remote-debugging.md)
