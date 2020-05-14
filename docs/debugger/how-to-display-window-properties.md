@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62906751"
 ---
 # <a name="how-to-display-window-properties"></a>Vorgehensweise: Anzeigen von Fenstereigenschaften
-Um weitere Informationen zu einem Fenster in aufgeführt [Windows-Ansicht](../debugger/windows-view.md), verwenden Sie die [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md).
+Um mehr über ein Fenster zu erfahren, das in der [Fensteransicht](../debugger/windows-view.md) aufgeführt ist, verwenden Sie das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md).
 
-### <a name="to-open-the-window-properties-dialog-box"></a>Öffnen Sie das Dialogfeld "Fenstereigenschaften"
+### <a name="to-open-the-window-properties-dialog-box"></a>So öffnen Sie das Dialogfeld „Fenstereigenschaften“
 
-1. Wählen Sie das Element, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.
+1. Wählen Sie das Element aus, und wählen Sie dann im Menü **Ansicht** die Option **Eigenschaften** aus.
 
-   Eigenschaftendialogfelder sind nicht modal. Wie Sie von Element zu Element im Ansichtsfenster klicken, wird das Dialogfeld automatisch mit Informationen für jedes ausgewählte Element aktualisiert.
+   Eigenschaftendialogfelder sind nicht modal. Wenn Sie in einem Ansichtsfenster von einem Element zum nächsten klicken, wird das Dialogfeld automatisch mit Informationen zum jeweils ausgewählten Element aktualisiert.

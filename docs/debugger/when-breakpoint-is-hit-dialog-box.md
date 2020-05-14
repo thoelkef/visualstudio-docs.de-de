@@ -1,5 +1,5 @@
 ---
-title: Dialog Feld "beim Erreichen des Breakpoints" | Microsoft-Dokumentation
+title: Dialogfeld „Beim Erreichen eines Haltepunktes“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728148"
@@ -28,11 +28,11 @@ ms.locfileid: "72728148"
 In diesem Dialogfeld können Sie die Aktion anpassen, die beim Erreichen eines Haltepunkts ausgeführt wird.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- **Meldung drucken** Druckt eine Meldung mithilfe der DebuggerDisplay-Syntax. Weitere Informationen finden Sie unter [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md).
+ **Meldung drucken** druckt eine Meldung mithilfe der DebuggerDisplay-Syntax. Weitere Informationen finden Sie unter [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md).
 
  Dieses Textfeld unterstützt auch spezielle Schlüsselwörter (z. B. $ADDRESS), die alleine oder innerhalb der geschweiften Klammern eines DebuggerDisplay-Ausdrucks verwendet werden können. Die verfügbaren Schlüsselwörter werden im Dialogfeld aufgelistet.
 
- **Ausführung fortsetzen** Dieses Steuerelement ist nur aktiviert, wenn **Meldung drucken** ausgewählt ist. Durch Auswählen dieses Steuerelements können Sie einen Haltepunkt als Ablaufverfolgungspunkt verwenden, um die Programmausführung zu verfolgen, statt beim Erreichen des Haltepunkts zu unterbrechen.
+ Das Steuerelement **Ausführung fortsetzen** ist nur aktiviert, wenn **Meldung drucken** ausgewählt ist. Durch Auswählen dieses Steuerelements können Sie einen Haltepunkt als Ablaufverfolgungspunkt verwenden, um die Programmausführung zu verfolgen, statt beim Erreichen des Haltepunkts zu unterbrechen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)

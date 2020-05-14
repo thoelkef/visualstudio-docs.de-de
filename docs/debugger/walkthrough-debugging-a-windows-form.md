@@ -1,5 +1,5 @@
 ---
-title: Debuggen eines Windows Forms | Microsoft-Dokumentation
+title: Debuggen eines Windows Form-Projekts | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728331"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms
+# <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms-Projekts
 Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendungen. Ein solches Formular erstellt eine Windows-Standardanwendung. Sie können diese exemplarische Vorgehensweise mit Visual Basic, C# oder C++ ausführen.
 
  Zuerst müssen Sie alle geöffneten Projektmappen schließen.
@@ -50,9 +50,9 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
 
 2. Öffnen Sie im Bereich „Projekttypen“ den Knoten **Visual Basic**, **Visual C#** oder **Visual C++** . Gehen Sie anschließend wie folgt vor:
 
-    1. Wählen Sie für Visual Basic C#oder Visual **Windows-Desktop**  >  Windows Forms-**App**aus.
+    1. Klicken Sie bei Visual Basic oder Visual C# auf **Windows Desktop** > **Windows Form-App**.
 
-    2. Wählen Sie C++für Visual **Windows-Desktop Anwendung**aus.
+    2. Bei Visual C++ klicken Sie auf **Windows-Desktopanwendung**.
 
 3. Geben Sie im Feld **Name** einen eindeutigen Namen für das Projekt ein (z. B. „Walkthrough_SimpleDebug“).
 
@@ -124,7 +124,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
 
 4. Klicken Sie im Menü **Debuggen** auf **Fenster**, dann auf **Überwachen** und anschließend auf **Überwachen 1**.
 
-5. Klicken Sie im Fenster **Überwachen 1** auf eine leere Zeile. Geben Sie in der Spalte **Name** `textBox1.Text` (bei Verwendung von Visual Basic oder Visual C#) oder `textBox1->Text` (wenn Sie verwenden C++) ein, und drücken Sie dann die EINGABETASTE.
+5. Klicken Sie im Fenster **Überwachen 1** auf eine leere Zeile. Geben Sie `textBox1.Text` in der Spalte **Name** ein, wenn Sie Visual Basic oder Visual C# verwenden, oder `textBox1->Text`, wenn Sie C++ verwenden, und drücken Sie dann die EINGABETASTE.
 
      Das Fenster **Überwachen 1** zeigt den Wert dieser Variablen in Anführungszeichen an:
 
@@ -132,7 +132,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
 
 6. Wählen Sie im Menü **Debuggen** die Option **Einzelschritt** aus.
 
-     Der Wert von textBox1. Text ändert sich im **Überwachen 1** -Fenster in:
+     Im Fenster **Überwachen1** ändert sich der Wert von „textBox1.Text“ in:
 
     `Button was clicked!`
 
@@ -167,17 +167,17 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
     textBox1->Text = "Button was clicked!";
     ```
 
-2. Wählen Sie im Menü **Debuggen** die Option **Starten ohne Debugging**aus.
+2. Klicken Sie im Menü **Debuggen** auf die Option **Starten ohne Debuggen**.
 
      Das Windows Form wird unter Windows ausgeführt, genau wie bei einem Doppelklick auf die ausführbare Datei. Der Debugger wird nicht angehängt.
 
-3. Wählen Sie im Menü **Debuggen** die Option **an den Prozess anhängen**aus. (Dieser Befehl ist auch **im Menü Extras** verfügbar.)
+3. Klicken Sie im Menü **Debuggen** auf die Option **An den Prozess anhängen**. (Dieser Befehl ist auch im Menü **Extras** verfügbar.)
 
      Das Dialogfeld **An den Prozess anhängen** wird angezeigt.
 
-4. Suchen Sie im Bereich **Verfügbare Prozesse** den Prozessnamen (Walkthrough_SimpleDebug. exe) in der Spalte **verarbeiten** , und klicken Sie darauf.
+4. Suchen Sie im Bereich **Verfügbare Prozesse** in der Spalte **Prozess** den Prozessnamen (Walkthrough_SimpleDebug.exe), und klicken Sie darauf.
 
-5. Klicken Sie auf die Schaltfläche **Anhängen** .
+5. Klicken Sie auf die Schaltfläche **Anfügen**.
 
 6. Klicken Sie im Formular auf die einzige vorhandene Schaltfläche.
 

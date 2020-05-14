@@ -1,5 +1,5 @@
 ---
-title: Suchen von Arbeits Speicherverlusten mit der CRT-Bibliothek | Microsoft-Dokumentation
+title: Finden von Arbeitsspeicherverlusten mit der CRT-Bibliothek | Microsoft-Dokumentation
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -28,22 +28,22 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
 ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/25/2019
 ms.locfileid: "75404981"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Finden von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 
-Speicher Verluste gehören zu den gängigsten und schwer zu erkennender Fehler in C/C++ apps. Arbeitsspeicher Verluste führen dazu, dass der zuvor zugewiesene Arbeitsspeicher nicht ordnungsgemäß freigegeben wird. Ein kleiner Speichermangel wird möglicherweise zuerst nicht bemerkt, aber im Laufe der Zeit kann es zu Symptomen zwischen einer schlechten Leistung und Abstürzen kommen, wenn die APP nicht über genügend Arbeitsspeicher verfügt. Eine Verlust-APP, die den gesamten verfügbaren Arbeitsspeicher beansprucht, kann dazu führen, dass andere apps abstürzen, wodurch Verwirrung entsteht, welche App verantwortlich ist. Sogar harmlose Speicher Verluste können auf andere Probleme hindeuten, die korrigiert werden sollten.
+Arbeitsspeicherverluste gehören zu den subtilsten und am schwersten zu erkennenden Fehlern in C/C++-Apps. Arbeitsspeicherverluste entstehen dadurch, dass zuvor zugewiesener Arbeitsspeicher nicht ordnungsgemäß freigegeben wird. Ein geringfügiger Arbeitsspeicherverlust wird möglicherweise zunächst nicht bemerkt, aber im Laufe der Zeit kann es zu Symptomen von einer schlechten Leistung bis hin zu Abstürzen kommen, wenn die App nicht mehr über genügend Arbeitsspeicher verfügt. Eine App mit einem Speicherverlust, der den gesamten verfügbaren Arbeitsspeicher betrifft, kann dazu führen, dass andere Apps abstürzen, wodurch Unsicherheit entsteht, welche App für das Problem verantwortlich ist. Selbst harmlose Arbeitsspeicherverluste können auf andere Probleme hindeuten, die korrigiert werden sollten.
 
-Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger und die C-Lauf Zeit Bibliothek (CRT) können Ihnen helfen, Speicher Verluste zu erkennen und zu identifizieren.
+Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger und die C-Laufzeitbibliothek (CRT) können Ihnen helfen, Arbeitsspeicherverluste zu erkennen und zu identifizieren.
 
-## <a name="enable-memory-leak-detection"></a>Aktivieren der Erkennung von Speicherlecks
+## <a name="enable-memory-leak-detection"></a>Aktivieren der Arbeitsspeicherverlusterkennung
 
-Die wichtigsten Tools zum Erkennen von Speicher Verlusten sind der cC++ /Debugger und die Debugheapfunktionen der c-Lauf Zeit Bibliothek (CRT).
+Die wichtigsten Tools zum Erkennen von Arbeitsspeicherverlusten sind der C/C++-Debugger und die Debugging-Heapfunktionen der C-Laufzeitbibliothek (CRT).
 
-Um alle Debugheapfunktionen zu aktivieren, fügen Sie C++ die folgenden Anweisungen in das Programm ein, und zwar in der folgenden Reihenfolge:
+Um alle Debugging-Heapfunktionen zu aktivieren, fügen Sie die folgenden Anweisungen in der hier genannten Reihenfolge in das C++-Programm ein:
 
 ```cpp
 #define _CRTDBG_MAP_ALLOC
@@ -51,17 +51,17 @@ Um alle Debugheapfunktionen zu aktivieren, fügen Sie C++ die folgenden Anweisun
 #include <crtdbg.h>
 ```
 
-Durch die `#define` -Anweisung wird eine Basisversion der CRT-Heapfunktionen der entsprechenden Debugversion zugeordnet. Wenn Sie die `#define`-Anweisung weglassen, wird der Speicher [Verlust weniger detailliert dargestellt](#interpret-the-memory-leak-report).
+Durch die `#define` -Anweisung wird eine Basisversion der CRT-Heapfunktionen der entsprechenden Debugversion zugeordnet. Wenn Sie die `#define`-Anweisung weglassen, ist das Speicherabbild des Arbeitsspeicherverlusts [weniger detailliert](#interpret-the-memory-leak-report).
 
-Durch das Einschließen von " *CRTDBG. h* " werden die `malloc`-und `free` Funktionen Ihren Debugversionen [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg) und [_free_dbg](/cpp/c-runtime-library/reference/free-dbg)zugeordnet, die die Speicher Belegung und-Freigabe nachverfolgen. Diese Zuordnung findet nur in Debugbuilds mit `_DEBUG`statt. Releasebuilds verwenden die normalen Funktionen `malloc` und `free` .
+Durch das Einschließen von *crtdbg.h* werden die Funktionen `malloc` und `free` den zugehörigen Debugversionen [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg) und [_free_dbg](/cpp/c-runtime-library/reference/free-dbg) zugeordnet, welche die Speicherbelegung und -freigabe nachverfolgen. Diese Zuordnung findet nur in Debugbuilds mit `_DEBUG`statt. Releasebuilds verwenden die normalen Funktionen `malloc` und `free` .
 
-Nachdem Sie die Debugheapfunktionen mithilfe der vorangehenden Anweisungen aktiviert haben, platzieren Sie [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) vor einem App-Beendigungs Punkt, um beim Beenden der APP einen Speicher ungenügenden Bericht anzuzeigen.
+Nachdem Sie die Debugging-Heapfunktionen mithilfe der vorangehenden-Anweisungen aktiviert haben, platzieren Sie einen Aufruf von [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) vor einem Endpunkt der App, sodass beim Beenden der App ein Bericht über Arbeitsspeicherverluste angezeigt wird.
 
 ```cpp
 _CrtDumpMemoryLeaks();
 ```
 
-Wenn Ihre APP mehrere beenden hat, müssen Sie `_CrtDumpMemoryLeaks` nicht an jedem Endpunkt manuell platzieren. Wenn Sie einen automatischen `_CrtDumpMemoryLeaks` an jedem Endpunkt auslösen möchten, platzieren Sie `_CrtSetDbgFlag` am Anfang Ihrer APP mit den hier gezeigten Bitfeldern:
+Wenn Ihre App mehrere Endpunkte aufweist, müssen Sie `_CrtDumpMemoryLeaks` nicht manuell an jedem Endpunkt platzieren. Um einen automatischen Aufruf von `_CrtDumpMemoryLeaks` an jedem Endpunkt auszulösen, platzieren Sie am Anfang Ihrer App einen Aufruf von `_CrtSetDbgFlag` mit den hier gezeigten Bitfeldern:
 
 ```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
@@ -69,15 +69,15 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 
 Standardmäßig gibt `_CrtDumpMemoryLeaks` den Arbeitsspeicherverlust-Bericht im Bereich **Debuggen** des **Ausgabefensters** aus. Bei Verwendung einer Bibliothek wird die Ausgabe u. U. auf einen anderen Ort zurückgesetzt.
 
-Sie können `_CrtSetReportMode` verwenden, um den Bericht an einen anderen Speicherort oder zurück zum **Ausgabe** Fenster umzuleiten, wie hier gezeigt:
+Sie können `_CrtSetReportMode` verwenden, um den Bericht an einen anderen Speicherort oder wieder an das Fenster **Ausgabe** umzuleiten – wie hier gezeigt:
 
 ```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```
 
-## <a name="interpret-the-memory-leak-report"></a>Interpretieren des Arbeitsspeicher Lecks-Berichts
+## <a name="interpret-the-memory-leak-report"></a>Interpretieren des Arbeitsspeicherverlust-Berichts
 
-Wenn Ihre APP keine `_CRTDBG_MAP_ALLOC`definiert, zeigt [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) einen Arbeits speicherungenügbericht an, der wie folgt aussieht:
+Wenn `_CRTDBG_MAP_ALLOC` nicht in der App definiert ist, zeigt [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) einen Arbeitsspeicherverlust-Bericht an, der wie folgt aussieht:
 
 ```cmd
 Detected memory leaks!
@@ -87,7 +87,7 @@ Dumping objects ->
 Object dump complete.
 ```
 
-Wenn Ihre APP `_CRTDBG_MAP_ALLOC`definiert, sieht der Arbeits speicherungenügbericht wie folgt aus:
+Wenn `_CRTDBG_MAP_ALLOC` in der App definiert ist, sieht der Arbeitsspeicherverlust-Bericht wie folgt aus:
 
 ```cmd
 Detected memory leaks!
@@ -98,23 +98,23 @@ normal block at 0x00780E80, 64 bytes long.
 Object dump complete.
 ```
 
-Der zweite Bericht zeigt den Dateinamen und die Zeilennummer an, in der der kompromittierte Arbeitsspeicher zuerst zugewiesen wird.
+Der zweite Bericht enthält den Dateinamen und die Zeilennummer, in der der Speicherblock mit dem Arbeitsspeicherverlust zuerst belegt wurde.
 
-Unabhängig davon, ob Sie `_CRTDBG_MAP_ALLOC`definieren, wird der Bericht "Speicherplatz" angezeigt:
+Unabhängig davon, ob Sie `_CRTDBG_MAP_ALLOC` definieren oder nicht, sind im Arbeitsspeicherverlust-Bericht folgende Informationen enthalten:
 
-- Die Speicher Belegungs Nummer, die im Beispiel `18` wird.
-- Der Blocktyp, `normal` im Beispiel.
-- Der hexadezimale Speicher Speicherort, `0x00780E80` im Beispiel.
-- Die Größe des Blocks, `64 bytes` im Beispiel.
+- Die Speicherbelegungsnummer, in diesem Beispiel `18`
+- Der Blocktyp, in diesem Beispiel `normal`
+- Der hexadezimale Speicherbereich, in diesem Beispiel `0x00780E80`
+- Die Größe des Blocks, in diesem Beispiel `64 bytes`
 - Die ersten 16 Bytes Daten im Block im Hexadezimalformat
 
-Speicherblock Typen sind *Normal*, *Client*oder *CRT*. Ein *normaler Block* ist gewöhnlicher, durch das Programm belegter Speicher. Ein *Clientblock* ist ein spezieller Speicherblocktyp, der von MFC-Programmen für Objekte verwendet wird, die einen Destruktor erfordern. Durch den MFC-Operator `new` wird entsprechend dem zu erstellenden Objekt ein normaler Block oder ein Clientblock erstellt.
+Speicherblocktypen sind *normal*, *Client* oder *CRT*. Ein *normaler Block* ist gewöhnlicher, durch das Programm belegter Speicher. Ein *Clientblock* ist ein spezieller Speicherblocktyp, der von MFC-Programmen für Objekte verwendet wird, die einen Destruktor erfordern. Durch den MFC-Operator `new` wird entsprechend dem zu erstellenden Objekt ein normaler Block oder ein Clientblock erstellt.
 
-Ein *CRT-Block* wird von der CRT-Bibliothek zur eigenen Verwendung belegt. Die CRT-Bibliothek behandelt die Aufhebung der Zuordnung für diese Blöcke, sodass CRT-Blöcke nicht im Arbeitsspeicher-ungenügendsten Bericht angezeigt werden, es sei denn, es sind schwerwiegende Probleme mit der CRT-Bibliothek
+Ein *CRT-Block* wird von der CRT-Bibliothek zur eigenen Verwendung belegt. Die CRT-Bibliothek behandelt das Aufheben der Zuordnung für diese Blöcke, sodass CRT-Blöcke nicht im Arbeitsspeicherverlust-Bericht angezeigt werden, es sei denn, es handelt sich um schwerwiegende Probleme mit der CRT-Bibliothek.
 
-Zwei weitere Speicherblocktypen werden nie in Arbeitsspeicherverlust-Berichten angezeigt. Ein *freier Block* ist Speicher, der freigegeben wurde, sodass definitionsgemäß nicht verloren geht. Ein *Ignore-Block* ist der Arbeitsspeicher, den Sie explizit zum Ausschließen aus dem Arbeitsspeicher-ungenügende Bericht ausgewählt haben.
+Zwei weitere Speicherblocktypen werden nie in Arbeitsspeicherverlust-Berichten angezeigt. Bei einem *freien Block* handelt es sich um Arbeitsspeicher, der freigegeben wurde, sodass es sich definitionsgemäß nicht um einen Verlust handelt. Ein *ignorierter Block* ist ein Speicherblock, der explizit von Ihnen markiert wurde, damit er aus dem Arbeitsspeicherverlust-Bericht ausgeschlossen wird.
 
-In den vorangehenden Verfahren werden Speicher Verluste für den Arbeitsspeicher identifiziert, der mithilfe der standardmäßigen CRT-`malloc` Funktion Wenn das Programmspeicher mithilfe des C++ `new`-Operators zuordnet, werden Ihnen möglicherweise nur der Dateiname und die Zeilennummer angezeigt, bei denen `operator new` Aufrufe `_malloc_dbg` im Arbeitsspeicher-ungenügwert melden. Zum Erstellen eines nützlicheren Speicherplatz Berichts können Sie ein Makro wie das folgende schreiben, um die Zeile zu melden, die die Zuordnung hergestellt hat:
+Mit den obigen Verfahren werden Speicherverluste für Arbeitsspeicher identifiziert, der mithilfe der CRT-`malloc`-Standardfunktion zugewiesen wurde. Belegt das Programm Speicher mithilfe des C++-Operators `new`, werden im Arbeitsspeicherverlust-Bericht möglicherweise nur der Dateiname und die Zeilennummer angezeigt, wo `operator new` `_malloc_dbg` aufruft. Um einen nützlicheren Arbeitsspeicherverlust-Berichts zu erstellen, können Sie ein Makro wie das folgende schreiben, das die Zeile meldet, die die Belegung vorgenommen hat:
 
 ```cpp
 #ifdef _DEBUG
@@ -126,7 +126,7 @@ In den vorangehenden Verfahren werden Speicher Verluste für den Arbeitsspeicher
 #endif
 ```
 
-Nun können Sie den `new`-Operator ersetzen, indem Sie das `DBG_NEW`-Makro in Ihrem Code verwenden. In Debugbuilds wird von `DBG_NEW` eine Überladung globaler `operator new` verwendet, die zusätzliche Parameter für den Blocktyp, die Datei und die Zeilennummer erfordert. Mit der Überladung von `new` werden `_malloc_dbg` aufgerufen, um die zusätzlichen Informationen aufzuzeichnen. In den Speicher Verlust Berichten werden der Dateiname und die Zeilennummer angezeigt, in der die kompromittierten Objekte zugeordnet wurden. Releasebuilds verwenden weiterhin die Standard `new`. Im folgenden finden Sie ein Beispiel für die Vorgehensweise:
+Nun können Sie den `new`-Operator ersetzen, indem Sie das `DBG_NEW`-Makro in Ihrem Code verwenden. In Debugbuilds wird von `DBG_NEW` eine Überladung des globalen `operator new` verwendet, die zusätzliche Parameter für den Blocktyp, die Datei und die Zeilennummer nutzt. Die Überladung von `new` ruft `_malloc_dbg` auf, um die zusätzlichen Informationen zu erfassen. In den Arbeitsspeicherverlust-Berichten werden der Dateiname und die Zeilennummer angezeigt, in der die Blöcke mit dem Arbeitsspeicherverlust belegt wurden. Releasebuilds verwenden weiterhin den Standardoperator `new`. Ein Beispiel für dieses Verfahren:
 
 ```cpp
 // debug_new.cpp
@@ -156,7 +156,7 @@ void main() {
 }
 ```
 
-Wenn Sie diesen Code im Visual Studio-Debugger ausführen, generiert der-`_CrtDumpMemoryLeaks` einen Bericht im **Ausgabe** Fenster, der in etwa wie folgt aussieht:
+Wenn Sie diesen Code im Visual Studio-Debugger ausführen, generiert der Aufruf von `_CrtDumpMemoryLeaks` einen Bericht im Fenster **Ausgabe**, der in etwa wie folgt aussieht:
 
 ```Output
 Detected memory leaks!
@@ -167,36 +167,36 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```
 
-Diese Ausgabe meldet, dass die kompromittierte Zuordnung in Zeile 20 von *DEBUG_NEW. cpp*erfolgte.
+Diese Ausgabe meldet, dass die zu einem Speicherverlust führende Belegung in Zeile 20 der Datei *debug_new.cpp* erfolgte.
 
 >[!NOTE]
->Es wird nicht empfohlen, ein Präprozessormakro mit dem Namen `new`oder einem anderen sprach Schlüsselwort zu erstellen.
+>Es wird nicht empfohlen, ein Präprozessormakro mit dem Namen `new` oder einem anderen Programmiersprachen-Schlüsselwort zu erstellen.
 
-## <a name="set-breakpoints-on-a-memory-allocation-number"></a>Festlegen von Haltepunkten für eine Speicher Belegungs Nummer
+## <a name="set-breakpoints-on-a-memory-allocation-number"></a>Festlegen von Haltepunkten für eine Speicherbelegungsnummer
 
-Die Speicherbelegungsnummer gibt Aufschluss darüber, wann ein Speicherblock mit Arbeitsspeicherverlust belegt wurde. Ein Block mit der Speicher Belegungs Nummer 18 ist z. b. der 18. Speicherblock, der während der APP-Laufzeit zugeordnet wird. Im CRT-Bericht werden alle Speicherblock Zuordnungen während des Testlaufs gezählt, einschließlich der Zuordnungen durch die CRT-Bibliothek und anderen Bibliotheken wie MFC. Daher ist die Speicher Belegungs Block Nummer 18 wahrscheinlich nicht der 18. Speicherblock, der von Ihrem Code zugewiesen wird.
+Die Speicherbelegungsnummer gibt Aufschluss darüber, wann ein Speicherblock mit Arbeitsspeicherverlust belegt wurde. Ein Block mit der Speicherbelegungsnummer 18 ist z. B. der 18. Speicherblock, der während der Ausführung der App belegt wurde. Im CRT-Bericht werden alle Speicherblockbelegungen während der Ausführung gezählt, einschließlich der Belegungen durch die CRT-Bibliothek und andere Bibliotheken wie MFC. Daher ist Speicherbelegungsblock Nummer 18 wahrscheinlich nicht der 18. Speicherblock, der von Ihrem Code zugewiesen wird.
 
 Sie können die Speicherbelegungsnummer verwenden, um einen Haltepunkt für die Speicherbelegung festzulegen.
 
 **So legen Sie einen Haltepunkt für die Speicherbelegung im Überwachungsfenster fest:**
 
-1. Legen Sie einen Haltepunkt am Anfang der APP fest, und starten Sie das Debuggen.
+1. Legen Sie einen Haltepunkt am Anfang der App fest, und starten Sie das Debuggen.
 
-1. Wenn die APP am Haltepunkt angehalten wird, öffnen **Sie ein Überwachungs** Fenster, indem Sie **Debuggen** > **Windows** > **Überwachung 1** (oder überwachen **2**, über **Wachen 3**oder überwachen **4**) auswählen.
+1. Wenn die App am Haltepunkt angehalten wird, öffnen Sie ein Fenster **Überwachung**, indem Sie **Debuggen** > **Fenster** > **Überwachen 1** (bzw. **Überwachen 2**, **Überwachen 3** oder **Überwachen 4**) auswählen.
 
-1. Geben **Sie im Überwachungs** Fenster in der Spalte **Name** `_crtBreakAlloc` ein.
+1. Geben Sie im Fenster **Überwachung** in der Spalte **Name** `_crtBreakAlloc` ein.
 
-   Wenn Sie die Multithread-DLL-Version der CRT-Bibliothek (die/MD-Option) verwenden, fügen Sie den Kontext Operator hinzu: `{,,ucrtbased.dll}_crtBreakAlloc`
+   Bei Verwendung der Multithread-DLL-Version der CRT-Bibliothek (/MD-Option) fügen Sie den Kontextoperator hinzu: `{,,ucrtbased.dll}_crtBreakAlloc`
    
-   Stellen Sie sicher, dass Debugsymbole geladen sind. Andernfalls wird `_crtBreakAlloc` als nicht *identifiziert*gemeldet.
+   Stellen Sie sicher, dass Debugsymbole geladen sind. Andernfalls wird `_crtBreakAlloc` als *nicht identifiziert* gemeldet.
 
 1. Drücken Sie die **EINGABETASTE**.
 
    Der Debugger wertet den Aufruf aus und gibt das Ergebnis in der Spalte **Wert** aus. Wenn Sie keine Haltepunkte für Speicherbelegungen festgelegt haben, lautet dieser Wert **–1**.
 
-1. Ersetzen Sie in der Spalte **Wert** den Wert durch die Zuordnungs Nummer der Speicher Belegung, in der der Debugger unterbrechen soll.
+1. Ersetzen Sie den Wert in der Spalte **Wert** durch die Nummer der Speicherbelegung, bei der die Unterbrechung durch den Debugger erfolgen soll.
 
-Nachdem Sie einen Haltepunkt für eine Speicher Belegungs Nummer festgelegt haben, fahren Sie mit dem Debuggen fort. Stellen Sie sicher, dass Sie unter denselben Bedingungen ausgeführt werden, sodass sich die Speicher Belegungs Nummer nicht ändert. Wenn das Programm bei der angegebenen Speicher Belegung unterbrochen wird, verwenden Sie das Fenster **"Fenster"** und andere Debuggerfenster, um die Bedingungen zu bestimmen, unter denen der Arbeitsspeicher zugeordnet wurde. Anschließend können Sie die Ausführung fortsetzen, um zu beobachten, was mit dem Objekt geschieht, und festzustellen, warum es nicht ordnungsgemäß freigegeben wird
+Nachdem Sie einen Haltepunkt für eine Speicherbelegungsnummer festgelegt haben, fahren Sie mit dem Debuggen fort. Stellen Sie sicher, dass die Ausführung unter denselben Bedingungen erfolgt, damit sich die Speicherbelegungsnummer nicht ändert. Wenn das Programm bei der angegebenen Speicherbelegung unterbrochen wird, prüfen Sie im Fenster **Aufrufliste** und in anderen Debuggerfenstern, unter welchen Bedingungen der Speicher belegt wurde. Anschließend können Sie die Ausführung fortsetzen, um zu beobachten, was mit dem Objekt geschieht, und festzustellen, warum es nicht ordnungsgemäß freigegeben wird.
 
 Das Festlegen eines Datenhaltepunkts für das Objekt kann auch hilfreich sein. Weitere Informationen finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).
 
@@ -212,24 +212,24 @@ _crtBreakAlloc = 18;
 _CrtSetBreakAlloc(18);
 ```
 
-## <a name="compare-memory-states"></a>Vergleichen von Arbeitsspeicher Zuständen
+## <a name="compare-memory-states"></a>Vergleichen von Speicherzuständen
 
-Ein weiteres Verfahren zum Ermitteln von Speicherverlusten besteht darin, zu bestimmten Zeitpunkten Momentaufnahmen von Speicherzuständen der Anwendung aufzuzeichnen. Um eine Momentaufnahme des Speicher Zustands an einem bestimmten Punkt in der Anwendung zu erstellen, erstellen Sie eine `_CrtMemState` Struktur, und übergeben Sie Sie an die Funktion `_CrtMemCheckpoint`.
+Ein weiteres Verfahren zum Ermitteln von Speicherverlusten besteht darin, zu bestimmten Zeitpunkten Momentaufnahmen von Speicherzuständen der Anwendung aufzuzeichnen. Um eine Momentaufnahme des Speicherzustands an einem bestimmten Punkt in der Anwendung aufzuzeichnen, erstellen Sie eine `_CrtMemState`-Struktur, die Sie dann an die `_CrtMemCheckpoint`-Funktion übergeben.
 
 ```cpp
 _CrtMemState s1;
 _CrtMemCheckpoint( &s1 );
 ```
 
-Die `_CrtMemCheckpoint`-Funktion füllt die-Struktur mit einer Momentaufnahme des aktuellen Speicher Zustands auf.
+Durch die `_CrtMemCheckpoint`-Funktion wird eine Momentaufnahme des aktuellen Speicherzustands in die Struktur eingefügt.
 
-Um den Inhalt einer `_CrtMemState` Struktur auszugeben, übergeben Sie die-Struktur an die `_ CrtMemDumpStatistics`-Funktion:
+Um den Inhalt einer `_CrtMemState`-Struktur auszugeben, übergeben Sie die Struktur an die `_ CrtMemDumpStatistics`-Funktion:
 
 ```cpp
 _CrtMemDumpStatistics( &s1 );
 ```
 
-`_ CrtMemDumpStatistics` gibt ein Speicher Abbild des Speicher Zustands aus, das wie folgt aussieht:
+`_ CrtMemDumpStatistics` gibt ein Speicherabbild des Speicherzustands aus, das wie folgt aussieht:
 
 ```cmd
 0 bytes in 0 Free Blocks.
@@ -252,13 +252,13 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );
 ```
 
-`_CrtMemDifference` vergleicht die Speicher Zustände `s1` und `s2` und gibt ein Ergebnis in (`s3`) zurück, bei dem es sich um den Unterschied zwischen `s1` und `s2`handelt.
+`_CrtMemDifference` vergleicht die Speicherzustände `s1` und `s2` und gibt in (`s3`) ein Ergebnis zurück, das die Differenz zwischen `s1` und `s2` darstellt.
 
-Ein Verfahren zum Auffinden von Speicher Verlusten beginnt mit dem Platzieren von `_CrtMemCheckpoint`-aufrufen am Anfang und Ende der APP und der anschließenden Verwendung `_CrtMemDifference` zum Vergleichen der Ergebnisse. Wenn `_CrtMemDifference` einen Speicherlecks anzeigt, können Sie weitere `_CrtMemCheckpoint` Aufrufe hinzufügen, um das Programm mithilfe einer binären Suche aufzuteilen, bis Sie die Quelle des Lecks isoliert haben.
+Eine Methode zum Suchen nach Arbeitsspeicherverlusten besteht darin, zunächst `_CrtMemCheckpoint`-Aufrufe am Anfang und Ende der App einzufügen und anschließend mit `_CrtMemDifference` die Ergebnisse zu vergleichen. Wenn `_CrtMemDifference` einen Arbeitsspeicherverlust anzeigt, können Sie weitere `_CrtMemCheckpoint`-Aufrufe hinzufügen, um das Programm anhand einer Binärsuche aufzuteilen, bis Sie die Quelle des Verlusts gefunden haben.
 
 ## <a name="false-positives"></a>Falsch positive Ergebnisse
 
- `_CrtDumpMemoryLeaks` kann falsche Anzeichen für Speicher Verluste verursachen, wenn eine Bibliothek Interne Zuordnungen als normale Blöcke anstelle von CRT-Blöcken oder Client Blöcken kennzeichnet. In diesem Fall kann `_CrtDumpMemoryLeaks` den Unterschied zwischen Benutzerspeicherbelegungen und internen Bibliotheksspeicherbelegungen nicht erkennen. Wenn die globalen Destruktoren für die Bibliotheksspeicherbelegungen nach dem Punkt ausgeführt werden, an dem `_CrtDumpMemoryLeaks`aufgerufen wird, wird jede interne Bibliotheksspeicherbelegung als Arbeitsspeicherverlust angezeigt. Versionen der Standard Vorlagen Bibliothek vor Visual Studio .net können `_CrtDumpMemoryLeaks` bewirken, dass diese falsch positiven Ergebnisse melden.
+ `_CrtDumpMemoryLeaks` kann falsche Hinweise auf Arbeitsspeicherverluste geben, wenn eine Bibliothek interne Zuordnungen als normale Blöcke statt als CRT-Blöcke oder Client-Blöcke kennzeichnet. In diesem Fall kann `_CrtDumpMemoryLeaks` den Unterschied zwischen Benutzerspeicherbelegungen und internen Bibliotheksspeicherbelegungen nicht erkennen. Wenn die globalen Destruktoren für die Bibliotheksspeicherbelegungen nach dem Punkt ausgeführt werden, an dem `_CrtDumpMemoryLeaks`aufgerufen wird, wird jede interne Bibliotheksspeicherbelegung als Arbeitsspeicherverlust angezeigt. In früheren Versionen der Standardvorlagenbibliothek (vor Visual Studio .NET) werden unter Umständen von `_CrtDumpMemoryLeaks` derartige falsch positive Ergebnisse ausgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 

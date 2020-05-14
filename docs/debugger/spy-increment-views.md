@@ -13,26 +13,26 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62902568"
 ---
 # <a name="spy-views"></a>Spy++-Ansichten
-Spy-Strukturansichten des Windows-, Nachrichten, Prozesse und Threads verfügbar sind auf Ihrem Computer angezeigt.
+Spy++ zeigt Strukturansichten der Fenster, Meldungen, Prozesse und Threads an, die auf Ihrem Computer verfügbar sind.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Windows-Ansicht](../debugger/windows-view.md) zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente.
+ [Fensteransicht](../debugger/windows-view.md) zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente an.
 
- [Meldungsansicht](../debugger/messages-view.md) zeigt den Nachrichtenstream, der ein Fenster, Prozess oder Thread zugeordnet.
+ [Meldungsansicht](../debugger/messages-view.md) zeigt den Meldungsstream an, der einem Fenster, einem Prozess oder einem Thread zugeordnet ist.
 
- [Prozessansicht](../debugger/processes-view.md) zeigt eine Strukturansicht der aktiven Prozesse.
+ [Prozessansicht](../debugger/processes-view.md) zeigt eine Strukturansicht der aktiven Prozesse an.
 
- [Threadansicht](../debugger/threads-view.md) zeigt eine Strukturansicht der aktiven Threads.
+ [Threadansicht](../debugger/threads-view.md) zeigt eine Strukturansicht der aktiven Threads an.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md) Dialogfelder verwendet, um bestimmte Knoten in Fenstern mit Spy++-Ansichten zu suchen.
+ [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md) listet die Dialogfelder auf, die verwendet werden, um in einem Spy++-Ansichtsfenster nach einem bestimmten Knoten zu suchen.
 
- [Verwenden von Spy++](../debugger/using-spy-increment.md) stellt die Spy++-Tools vor und erläutert, wie sie verwendet werden kann.
+ [Verwenden von Spy++](../debugger/using-spy-increment.md) bietet eine Einführung in das Tool Spy++ und dessen Verwendung.
 
- [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+ [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte mit Beschreibungen der einzelnen Menüs und Dialogfelder von Spy++.

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Ändern des Grafikdiagnose Wiedergabe Computers | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5a41caf3f866c4a21d0a44fc69932066b2b7d923
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735052"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Gewusst wie: Ändern des Grafikdiagnose-Wiedergabecomputers
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers
 Sie können Grafikinformationen über Ihren lokalen Computer oder einen Remotecomputer bzw. ein Remotegerät wiedergeben.
 
 ## <a name="choosing-a-playback-machine"></a>Auswählen eines Wiedergabecomputers
@@ -25,7 +25,7 @@ Sie können Grafikinformationen über Ihren lokalen Computer oder einen Remoteco
 
 1. Klicken Sie im Dokumentfenster „Grafikprotokolle“ auf den Link **Wiedergabecomputer**. Das Dialogfeld **Verbindungen des Remotedebuggers** wird angezeigt.
 
-2. Geben Sie in der Eigenschaft **Adresse** unter **manuelle Konfiguration**`localhost` ein.
+2. Geben Sie unter **Manuelle Konfiguration** in der Eigenschaft **Adresse** `localhost` ein.
 
 3. Setzen Sie die Eigenschaft **Authentifizierungsmodus** auf **Keine**.
 

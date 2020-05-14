@@ -1,5 +1,5 @@
 ---
-title: Anzeigen der Rückruf Stapel im Debugger | Microsoft-Dokumentation
+title: Anzeigen der Aufrufliste im Debugger | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 10/29/2018
 ms.topic: conceptual
@@ -31,16 +31,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
 ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/17/2019
 ms.locfileid: "72535989"
 ---
-# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Anzeigen der aufrufsstapel und Verwenden des Fensters "Fenster" im Debugger
+# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>In diesem Artikel erhalten Sie Informationen zum Anzeigen der Aufrufliste und Verwenden des Fensters „Aufrufliste“ im Debugger.
 
 Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozeduraufrufe anzeigen, die sich derzeit im Stapel befinden. Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. Die Aufrufliste bietet eine nützliche Möglichkeit zum Untersuchen und Verstehen des Ausführungsablaufs einer App.
 
-Wenn das [Debuggen von Symbolen](#bkmk_symbols) für einen Teil einer Aufruf Stapel nicht verfügbar ist, kann das Fenster **Aufruf Stapel** möglicherweise keine korrekten Informationen für diesen Teil der Aufruf Stapel anzeigen, stattdessen wird Folgendes angezeigt:
+Wenn für einen Teil der Aufrufliste keine [Debugsymbole](#bkmk_symbols) verfügbar sind, können im Fenster **Aufrufliste** für diesen Teil der Aufrufliste möglicherweise keine korrekten Informationen angezeigt werden. Stattdessen wird Folgendes angezeigt:
 
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
@@ -48,79 +48,79 @@ Wenn das [Debuggen von Symbolen](#bkmk_symbols) für einen Teil einer Aufruf Sta
 > Das Fenster **Aufrufliste** ist mit der Debugperspektive in einigen IDEs wie Eclipse vergleichbar.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Siehe [Zurücksetzen von Einstellungen](../ide/environment-settings.md#reset-settings).
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Zurücksetzen von Einstellungen](../ide/environment-settings.md#reset-settings).
 
-## <a name="view-the-call-stack-while-in-the-debugger"></a>Anzeigen der aufrufsstapel im Debugger
+## <a name="view-the-call-stack-while-in-the-debugger"></a>Anzeigen der Aufrufliste während des Debuggens
 
-- Wählen Sie beim Debuggen im Menü **Debuggen** die Option **Windows->-Aufrufe**
+- Während des Debuggens können Sie im Menü **Debuggen** auf **Windows > Aufrufliste** klicken.
 
-  ![Fenster "Fenster"](../debugger/media/dbg_basics_callstack_window.png "Callstackwindow")
+  ![Fenster „Aufrufliste“](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger derzeit befindet. Standardmäßig werden die Informationen dieses Stapels in den Fenstern "Quelle **", "lokal", "** Auto **", "** **Überwachung**" und " **Disassembly** " angezeigt. Wechseln Sie zu [einem anderen Stapel Rahmen](#bkmk_switch), um den debuggerkontext in einen anderen Frame im Stapel zu ändern.
+Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger derzeit befindet. Standardmäßig werden die Informationen dieses Stapelrahmens in der Quelle und in den Fenstern **Lokale Variablen**, **Auto**, **Überwachung** und **Disassemblierung** angezeigt. [Wechseln Sie zu einem anderen Stapelrahmen](#bkmk_switch), um den Debuggerkontext in einen anderen Rahmen auf dem Stapel zu ändern.
 
-## <a name="display-non-user-code-in-the-call-stack-window"></a>Anzeigen von Nichtbenutzer Code im Fenster "aufrufsstapel"
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Anzeigen von IDE-generiertem Code im Fenster „Aufrufliste“
 
 - Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Externen Code anzeigen** aus.
 
-Bei Nichtbenutzer Code handelt es sich um Code, der nicht angezeigt wird, wenn [nur eigenen Code](../debugger/just-my-code.md) aktiviert ist. In verwaltetem Code werden Nichtbenutzer Code rahmenstandard mäßig ausgeblendet. Die folgende Notation wird anstelle der Nichtbenutzer Code Rahmen angezeigt:
+IDE-generierter Code ist sämtlicher Code, der nicht angezeigt wird, wenn [Nur eigenen Code](../debugger/just-my-code.md) aktiviert ist. Bei verwaltetem Code werden Rahmen mit IDE-generiertem Code standardmäßig ausgeblendet. Anstelle der Rahmen mit IDE-generiertem Code wird die folgende Notation angezeigt:
 
 `[<External Code>]`
 
-## <a name="bkmk_switch"></a>Wechseln Sie zu einem anderen Stapel Rahmen (ändern Sie den debuggerkontext).
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a> Wechseln zu einem anderen Stapelrahmen (Ändern des Debuggerkontexts)
 
-1. Klicken Sie im Fenster " **aufrufsstapel** " mit der rechten Maustaste auf den Stapel Rahmen, dessen Code und Daten Sie anzeigen möchten.
+1. Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf den Stapelrahmen, dessen Code und Daten angezeigt werden sollen.
 
-    Sie können auch auf einen Frame im Fenster "Fenster" **aufgerufen** werden, um zu diesem Frame zu wechseln.
+    Alternativ können Sie auf einen Rahmen im Fenster **Aufrufliste** doppelklicken, um zu diesem Rahmen zu wechseln.
 
 2. Wählen Sie **Switch to Frame** (Zu Frame wechseln) aus.
 
-     Neben dem Stapel Rahmen, den Sie ausgewählt haben, wird ein grüner Pfeil mit einem geschweiften Ende angezeigt. Der Ausführungszeiger verbleibt im ursprünglichen Rahmen, der noch immer durch einen gelben Pfeil gekennzeichnet ist. Wenn Sie im Menü **Debuggen** den Befehl **Schritt** oder **Weiter** auswählen, wird die Ausführung nicht im neu ausgewählten, sondern im ursprünglichen Frame fortgesetzt.
+     Neben dem ausgewählten Stapelrahmen wird ein grüner Pfeil in Form einer Welle angezeigt. Der Ausführungszeiger verbleibt im ursprünglichen Rahmen, der noch immer durch einen gelben Pfeil gekennzeichnet ist. Wenn Sie im Menü **Debuggen** den Befehl **Schritt** oder **Weiter** auswählen, wird die Ausführung nicht im neu ausgewählten, sondern im ursprünglichen Frame fortgesetzt.
 
-## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Anzeigen des Quellcodes für eine Funktion in der aufrufsstapel
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Anzeigen des Quellcodes für eine Funktion in der Aufrufliste
 
 - Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Quellcode Sie anzeigen möchten, und wählen Sie **Gehe zu Quellcode** aus.
 
-## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Ausführen bis zu einer bestimmten Funktion aus dem Fenster "aufrufsstapel"
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Ausführung bis zu einer angegebenen Funktion im Fenster „Aufrufliste“
 
-- Wählen Sie im Fenster " **CallStack** " die Funktion aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Ausführen bis Cursor**aus.
+- Wählen Sie im Fenster **Aufrufliste** die Funktion aus, klicken Sie mit der rechten Maustaste darauf, und wählen Sie dann die Option **Ausführen bis Cursor** aus.
 
-## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Festlegen eines halte Punkts am Beendigungs Punkt eines Funktions Aufrufes
+## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Festlegen eines Haltepunkts am Punkt der Beendigung eines Funktionsaufrufs
 
-- Weitere Informationen finden Sie [unter Festlegen eines halte Punkts in einer Funktion der-Funktion](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
+- Weitere Informationen finden Sie unter [Festlegen von Breakpoints in Debuggerfenstern](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
-## <a name="display-calls-to-or-from-another-thread"></a>Aufrufe von oder von einem anderen Thread anzeigen
+## <a name="display-calls-to-or-from-another-thread"></a>Anzeigen von Aufrufen für oder von anderen Threads
 
 - Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Aufrufe zu/von anderen Threads einschließen** aus.
 
-## <a name="visually-trace-the-call-stack"></a>Visuelles verfolgen der aufrufsstapel
+## <a name="visually-trace-the-call-stack"></a>Visuelle Überwachung der Aufrufliste
 
-In Visual Studio Enterprise (nur) können Sie Code Maps für die aufrufsstapel beim Debuggen anzeigen.
+(Nur) in Visual Studio Enterprise können Sie Code Maps für die Aufrufliste während des Debuggens anzeigen.
 
-- Öffnen Sie das Kontextmenü im Fenster **Aufrufliste**. Wählen **Sie in der Code Zuordnung die Option Show Stack anzeigen** (**STRG**  + **UMSCHALT**  +  **`** ).
+- Öffnen Sie das Kontextmenü im Fenster **Aufrufliste**. Klicken Sie auf **Aufrufliste auf Code Map anzeigen** (**STRG** + **UMSCHALT** +  **`** ).
 
-    Weitere Informationen finden Sie unter [map-Methoden in der aufrufsstapel beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+    Weitere Informationen finden Sie unter [Erstellen einer visuellen Map der Aufrufliste während des Debuggens (C#, Visual Basic, C++, JavaScript)](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Anzeigen der aufrufsstapel auf der Code Map](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "Showcallstackoncodemap")
+![Aufrufliste auf Code Map anzeigen](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Anzeigen des Disassemblycodes für eine Funktion in der aufrufsstapel (C#, C++, Visual Basic, F#)
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Anzeigen des Disassemblierungscodes für eine Funktion in der Aufrufliste (C#, C++, Visual Basic, F#)
 
 - Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Disassemblycode Sie anzeigen möchten, und wählen Sie **Gehe zu Disassembly** aus.
 
-## <a name="change-the-optional-information-displayed"></a>Ändern der angezeigten optionalen Informationen
+## <a name="change-the-optional-information-displayed"></a>Ändern der Anzeige optionaler Informationen
 
-- Klicken Sie mit der rechten Maustaste in das Fenster " **aufrufsstapel** ", und legen Sie **\<** _die gewünschten Informationen_  **>** anzeigen oder deaktivieren.
+- Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste, und legen Sie **\<** _Gewünschte Informationen_ **> anzeigen** fest, oder heben Sie die Festlegung auf.
 
-## <a name="bkmk_symbols"></a>Laden von Symbolen für ein ModulC#( C++,, Visual Basic F#,)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Laden von Symbolen für ein Modul (C#, C++, Visual Basic, F#)
 
-Im Fenster **Aufrufliste** können Sie Debugsymbole für Code laden, für den derzeit keine Symbole geladen sind. Diese Symbole können .net-oder System Symbole sein, die von den öffentlichen Microsoft-Symbol Servern heruntergeladen werden, oder Symbole in einem Symbol Pfad auf dem Computer, den Sie Debuggen.
+Im Fenster **Aufrufliste** können Sie Debugsymbole für Code laden, für den derzeit keine Symbole geladen sind. Bei diesen Symbolen kann es sich um .NET-Symbole oder Systemsymbole handeln, die von den öffentlichen Microsoft-Symbolservern heruntergeladen wurden, oder um Symbole in einem Symbolpfad auf dem Computer, den Sie debuggen.
 
 Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ### <a name="to-load-symbols"></a>So laden Sie Symbole
 
-1. Klicken Sie **im Fenster "** Fenster" mit der rechten Maustaste auf den Stapel Rahmen, für den Symbole nicht geladen werden. Der Rahmen wird abgeblendet.
+1. Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf einen Stapelrahmen, für den keine Symbole geladen werden. Der Rahmen wird abgeblendet.
 
-2. Zeigen Sie auf **Symbole laden** , und wählen Sie dann **Microsoft-Symbol Server** (falls verfügbar) aus, oder navigieren Sie zum Symbol Pfad.
+2. Zeigen Sie auf **Symbole laden**, und klicken Sie dann auf **Microsoft-Symbolserver** (wenn verfügbar). Folgen Sie andernfalls dem Symbolpfad.
 
 ### <a name="to-set-the-symbol-path"></a>So legen Sie den Symbolpfad fest
 
@@ -128,15 +128,15 @@ Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](..
 
      Das Dialogfeld **Optionen** wird geöffnet, und die Seite **Symbole** wird angezeigt.
 
-2. Wählen Sie **Symbol Einstellungen**aus.
+2. Klicken Sie auf **Symboleinstellungen**.
 
 3. Klicken Sie im Dialogfeld **Optionen** auf das Ordnersymbol.
 
      Im Feld **Speicherorte für Symboldateien (.pdb)** wird ein Cursor angezeigt.
 
-4. Geben Sie einen Verzeichnis Pfadnamen zum Symbol Speicherort auf dem Computer ein, den Sie Debuggen. Beim lokalen und Remote Debuggen ist dies ein Pfad auf dem lokalen Computer.
+4. Geben Sie einen Verzeichnispfadnamen zum Symbolspeicherort auf dem Computer ein, den Sie debuggen. Beim lokalen und Remotedebuggen ist dies ein Pfad auf Ihrem lokalen Computer.
 
-5. Wählen Sie **OK** aus, um das Dialogfeld **Optionen** zu schließen.
+5. Klicken Sie auf **OK**, um das Dialogfeld **Optionen** zu schließen.
 
 ## <a name="see-also"></a>Siehe auch
 

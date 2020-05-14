@@ -1,5 +1,5 @@
 ---
-title: Die Formatbezeichner im Debugger (C++) | Microsoft-Dokumentation
+title: Formatbezeichner im Debugger (C++) | Microsoft-Dokumentation
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -26,21 +26,21 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62896619"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ in Visual Studio-Debugger
-Sie können das Format, in dem ein Wert, im angezeigt wird, Ändern der **Watch**, **"Auto"**, und **"lokal"** Windows mithilfe von Formatbezeichnern.
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ im Visual Studio-Debugger
+Mit Formatbezeichnern können Sie das Format ändern, in dem ein Wert in den Fenstern **Überwachung**, **Auto** und **Lokal** angezeigt wird.
 
-Sie können auch die Formatbezeichner in der **direkt** Fenster die **Befehl** Fenster im [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), und sogar in den Quellcodefenstern. Wenn Sie auf einem Ausdruck in diesen Fenstern anhalten, das Ergebnis wird in einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Die DataTip-Anzeige entspricht dem Formatbezeichner.
+Formatbezeichner können auch im Fenster **Direkt**, im Fenster **Befehl**, in [Ablaufverfolgungspunkten](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) und sogar in Quellcodefenstern verwendet werden. Wenn Sie einen Ausdruck in diesen Fenstern anhalten, wird das Ergebnis in einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) angezeigt. Die DataTip-Anzeige entspricht dem Formatbezeichner.
 
 > [!NOTE]
-> Bei der native Debugger von Visual Studio als neues Debugmodul konstruiert geändert, es wurden mehrere neue Formatbezeichner hinzugefügt und einige alte Formatbezeichner entfernt. Der ältere Debugger wird weiterhin verwendet, wenn Sie das Interop-Debuggen (systemeigen und verwaltet) mit C++/CLI durchführen.
+> Wenn der native Debugger von Visual Studio in eine neue Debug-Engine geändert wurde, wurden einige neue Formatbezeichner hinzugefügt, während einige alte Bezeichner entfernt wurden. Der ältere Debugger wird weiterhin verwendet, wenn Sie das Interop-Debuggen (systemeigen und verwaltet) mit C++/CLI durchführen.
 
-## <a name="set-format-specifiers"></a>Satz von Formatbezeichnern
-Wir verwenden den folgenden aus:
+## <a name="set-format-specifiers"></a>Festlegen von Formatbezeichnern
+Wir verwenden den folgenden Beispielcode:
 
 ```C++
 int main() {
@@ -50,19 +50,19 @@ int main() {
 }
 ```
 
-Hinzufügen der `my_var1` Variable die **Überwachen** Fenster während des Debuggens **Debuggen** > **Windows** > **ansehen**  >  **Überwachen 1**. Als Nächstes mit der rechten Maustaste in der Variablenwerts, und wählen Sie **Hexadezimale Anzeige**. Jetzt die **Watch** Fenster zeigt den Wert 0 x 0065. Um diesen Wert als ein Zeichen anstatt in eine ganze Zahl anzuzeigen, zuerst mit der rechten Maustaste, und deaktivieren Sie **Hexadezimale Anzeige**. Fügen Sie dann den Zeichenformatbezeichner **, C** in die **Namen** Spalte nach dem Variablennamen ein. Die **Wert** Spalte zeigt jetzt **101 'e'**.
+Fügen Sie beim Debuggen dem Fenster **Überwachung** die Variable `my_var1` hinzu, **Debuggen** > **Fenster** > **Überwachung** > **Überwachen 1**. Klicken Sie dann mit der rechten Maustaste auf die Variable, und wählen Sie **Hexadezimale Anzeige** aus. Im Fenster **Überwachung** wird jetzt der Wert 0x0065 angezeigt. Um diesen Wert als ein Zeichen und nicht als Integer auszudrücken, klicken Sie zunächst mit der rechten Maustaste, und deaktivieren Sie **Hexadezimale Anzeige**. Fügen Sie dann den Zeichenformatbezeichner **, c** in der Spalte **Name** nach dem Variablennamen hinzu. In der Spalte **Wert** wird jetzt **101 'e'** angezeigt.
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
 ::: moniker range=">= vs-2019" 
-Sie können anzeigen, und wählen Sie aus einer Liste der verfügbaren Formatbezeichner durch ein Komma (,) anfügen, auf den Wert in der **Überwachen** Fenster. 
+Sie können eine Liste der verfügbaren Formatbezeichner anzeigen und Formatbezeichner darin auswählen, indem Sie an den Wert im Fenster **Überwachung** ein Komma (,) anfügen. 
 
 ![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
 
 ::: moniker-end
 
-## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Formatbezeichner
-Die folgenden Tabellen beschreiben die Formatbezeichner angegeben, die Sie in Visual Studio verwenden können. Fett formatierte Bezeichner werden nur unterstützt, für den neuen Debugger und nicht für das interop-Debuggen mit C++/CLI.
+## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Formatbezeichner
+Die folgenden Tabellen beschreiben die Formatbezeichner, die Sie in Visual Studio verwenden können. Fett formatierte Bezeichner werden nur für den neuen Debugger unterstützt und nicht für das Interop-Debuggen mit C++/CLI.
 
 ::: moniker range=">= vs-2019" 
 
@@ -79,25 +79,25 @@ Die folgenden Tabellen beschreiben die Formatbezeichner angegeben, die Sie in Vi
 |e|Wissenschaftliche Schreibweise|25000000|2.500000e+07|
 |g|Kürzere Variante aus wissenschaftlicher oder Gleitkommaschreibweise|25000000|2.5e+07|
 |c|Einzelnes Zeichen|0x0065, c|101 'e'|
-|s|const Char * string (mit Anführungszeichen)|\<Speicherort > "Hello World"|"hello world"|
-|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > "Hello World"|hello world|
-|s8|UTF-8-Zeichenfolge|\<Speicherort > "Dies ist eine UTF-8-Â˜• Kaffee Cup"|"Dies ist eine UTF-8-☕ Kaffee Cup"|
-|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > "Hello World"|hello world|
-|su|Unicode (UTF-16-Codierung)-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > L "Hello World"|L"hello world"<br /><br /> u"hello world"|
-|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<Speicherort > L "Hello World"|hello world|
-|bstr|Binärer BSTR-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > L "Hello World"|L"hello world"|
-|env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<location> L"=::=::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\Windows\\\\" System32 "\\0ALLUSERSPROFILE =...|
-|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > U "Hello World"|u"hello world"|
-|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > U "Hello World"|hello world|
+|s|const char*-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> "hello world"|"hello world"|
+|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
+|s8|UTF-8-Zeichenfolge|\<Speicherort> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
+|su|Unicode-Zeichenfolge (UTF-16-Codierung mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<Speicherort> L"hello world"|hello world|
+|bstr|BSTR-Binärzeichenfolge (mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"|
+|env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> U"hello world"|u"hello world"|
+|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> U"hello world"|hello world|
 |**en**|enum|Samstag(6)|Samstag|
-|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort > {\<erste Member >, \<zweite Member >,...}|
+|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort>{\<Erster Member>, \<zweiter Member>, ...}|
 |**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<Speicherort>, {member=value…}|{member=value...}|
 |**nd**|Es werden nur die Basisklasseninformationen angezeigt, die abgeleiteten Klassen werden ignoriert.|`(Shape*) square` enthält die Basisklassen- und abgeleitete Klasseninformationen|Zeigt nur Basisklasseninformationen an|
-|hr|HRESULT oder Win32-Fehlercode. Dieser Bezeichner wird für HRESULTs nicht mehr benötigt werden, wie der Debugger sie automatisch decodiert.|S_OK|S_OK|
+|hr|HRESULT oder Win32-Fehlercode. Dieser Bezeichner wird nicht mehr für HRESULTs benötigt, da er vom Debugger automatisch decodiert wird.|S_OK|S_OK|
 |wc|Fensterklassenflag|0x0010|WC_DEFAULTCHAR|
 |wm|Windows-Meldungsnummern|16|WM_CLOSE|
 |nr|"Raw View"-Element unterdrücken|
-|nvo|"Rohdatenansicht"-Element für nur numerische Werte anzeigen|
+|nvo|"Raw View"-Element nur für numerische Werte anzeigen|
 |!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|
 
 ::: moniker-end
@@ -111,21 +111,21 @@ Die folgenden Tabellen beschreiben die Formatbezeichner angegeben, die Sie in Vi
 |w<br /><br /> **h**|Ganze Hexadezimalzahl|102|0xcccccccc|
 |X<br /><br /> **H**|Ganze Hexadezimalzahl|102|0xcccccccc|
 |c|Einzelnes Zeichen|0x0065, c|101 'e'|
-|s|const Char * string (mit Anführungszeichen)|\<Speicherort > "Hello World"|"hello world"|
-|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > "Hello World"|hello world|
-|s8|UTF-8-Zeichenfolge|\<Speicherort > "Dies ist eine UTF-8-Â˜• Kaffee Cup"|"Dies ist eine UTF-8-☕ Kaffee Cup"|
-|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > "Hello World"|hello world|
-|su|Unicode (UTF-16-Codierung)-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > L "Hello World"|L"hello world"<br /><br /> u"hello world"|
-|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<Speicherort > L "Hello World"|hello world|
-|bstr|Binärer BSTR-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > L "Hello World"|L"hello world"|
-|env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<location> L"=::=::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\Windows\\\\" System32 "\\0ALLUSERSPROFILE =...|
-|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > U "Hello World"|u"hello world"|
-|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > U "Hello World"|hello world|
+|s|const char*-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> "hello world"|"hello world"|
+|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
+|s8|UTF-8-Zeichenfolge|\<Speicherort> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
+|su|Unicode-Zeichenfolge (UTF-16-Codierung mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<Speicherort> L"hello world"|hello world|
+|bstr|BSTR-Binärzeichenfolge (mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"|
+|env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> U"hello world"|u"hello world"|
+|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> U"hello world"|hello world|
 |**en**|enum|Samstag(6)|Samstag|
-|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort > {\<erste Member >, \<zweite Member >,...}|
+|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort>{\<Erster Member>, \<zweiter Member>, ...}|
 |**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<Speicherort>, {member=value…}|{member=value...}|
 |**nd**|Es werden nur die Basisklasseninformationen angezeigt, die abgeleiteten Klassen werden ignoriert.|`(Shape*) square` enthält die Basisklassen- und abgeleitete Klasseninformationen|Zeigt nur Basisklasseninformationen an|
-|hr|HRESULT oder Win32-Fehlercode. Dieser Bezeichner wird für HRESULTs nicht mehr benötigt werden, wie der Debugger sie automatisch decodiert.|S_OK|S_OK|
+|hr|HRESULT oder Win32-Fehlercode. Dieser Bezeichner wird nicht mehr für HRESULTs benötigt, da er vom Debugger automatisch decodiert wird.|S_OK|S_OK|
 |wc|Fensterklassenflag|0x0010|WC_DEFAULTCHAR|
 |wm|Windows-Meldungsnummern|16|WM_CLOSE|
 |!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|
@@ -133,18 +133,18 @@ Die folgenden Tabellen beschreiben die Formatbezeichner angegeben, die Sie in Vi
 ::: moniker-end
 
 > [!NOTE]
-> Wenn die **Hv** Formatbezeichner vorhanden ist, wird der Debugger versucht, die Länge des Puffers zu bestimmen, und zeigt diese Anzahl von Elementen. Da der Debugger nicht immer die exakte Puffergröße eines Arrays finden kann, sollten Sie möglichst immer einen Größenbezeichner `(pBuffer,[bufferSize])` verwenden. Die **Hv** Formatbezeichner ist nützlich, wenn die Größe des Puffers nicht sofort verfügbar ist.
+> Wenn der Formatbezeichner **hv** vorhanden ist, versucht der Debugger, die Länge des Puffers zu bestimmen, und zeigt die betreffende Anzahl von Elementen an. Da der Debugger nicht immer die exakte Puffergröße eines Arrays finden kann, sollten Sie möglichst immer einen Größenbezeichner `(pBuffer,[bufferSize])` verwenden. Der Formatbezeichner **hv** ist nützlich, wenn die Puffergröße nicht unmittelbar verfügbar ist.
 
-### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Größenbezeichner für Zeiger als Arrays
+### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Größenbezeichner für Zeiger als Arrays
 Wenn Sie über einen Zeiger für ein Objekt verfügen, das Sie als Array anzeigen möchten, können Sie eine ganze Zahl oder einen Ausdruck verwenden, um die Anzahl von Arrayelementen zu bestimmen.
 
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|
 |---------------|------------|---------------------------|---------------------|
-|n|Dezimalzahl oder ganze **Hexadezimalzahl**|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Zeigt `pBuffer` als Array mit 32 Elementen an.|
+|n|Dezimalzahl oder ganze **Hexadezimalzahl**|pBuffer,[32]<br /><br /> pBuffer, **[0x20]**|Zeigt `pBuffer` als Array mit 32 Elementen an.|
 |**[exp]**|Ein gültiger C++-Ausdruck, der für eine ganze Zahl ausgewertet wird.|pBuffer,[bufferSize]|Zeigt pBuffer als Array von `bufferSize` Elementen an.|
 |**expand(n)**|Ein gültiger C++-Ausdruck, der für eine ganze Zahl ausgewertet wird|pBuffer, expand(2)|Zeigt das dritte Element von  `pBuffer`an|
 
-## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für das Interop-Debuggen mit C++/CLI
+## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für das Interop-Debuggen mit C++/CLI
 **Fett formatierte** Bezeichner werden nur zum Debuggen von systemeigenem und C++/CLI-Code unterstützt.
 
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|
@@ -156,19 +156,19 @@ Wenn Sie über einen Zeiger für ein Objekt verfügen, das Sie als Array anzeige
 |**l**<br /><br />**h**|Langes oder kurzes Präfix für: d, i, u, o, x, X|00406042|0x0c22|
 |**f**|Gleitkommazahl mit Vorzeichen|(3./2.), f|1.500000|
 |**e**|Wissenschaftliche Notation mit Vorzeichen|(3.0/2.0)|1.500000e+000|
-|**g**|signiert Gleitkommazahl oder wissenschaftliche Notation mit Vorzeichen,<br/> Je nachdem, was kürzer ist.|(3.0/2.0)|1.5|
+|**g**|Gleitkommazahl oder wissenschaftliche Schreibweise mit Vorzeichen,<br/> je nachdem, was kürzer ist|(3.0/2.0)|1.5|
 |c|Einzelnes Zeichen|\<Speicherort>|101 'e'|
-|s|const Char * (mit Anführungszeichen)|\<Speicherort>|"hello world"|
+|s|const char* (mit Anführungszeichen)|\<Speicherort>|"hello world"|
 |su|const wchar_t*<br /><br /> const char16_t\* (mit Anführungszeichen)|\<Speicherort>|L"hello world"|
 |sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort>|hello world|
-|s8|const Char * (mit Anführungszeichen)|\<Speicherort>|"hello world"|
-|hr|HRESULT oder Win32-Fehlercode.<br/>Dieser Bezeichner wird für HRESULTs nicht mehr benötigt werden, wie der Debugger sie automatisch decodiert.|S_OK|S_OK|
+|s8|const char* (mit Anführungszeichen)|\<Speicherort>|"hello world"|
+|hr|HRESULT oder Win32-Fehlercode.<br/>Dieser Bezeichner wird nicht mehr für HRESULTs benötigt, da er vom Debugger automatisch decodiert wird.|S_OK|S_OK|
 |wc|Fensterklassenflag|0x00000040,|WC_DEFAULTCHAR|
 |wm|Windows-Meldungsnummern|0x0010|WM_CLOSE|
-|!|RAW-Format wird ignoriert, Anpassungen Ansicht Typ von Daten|\<Benutzerdefinierte Darstellung>|4|
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert|\<Benutzerdefinierte Darstellung>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim interop-Debuggen mit C++/CLI
-Die folgende Tabelle beschreibt die Formatierungssymbole, die für Speicherbereiche verwendet. Bezeichner für Speicherbereiche können mit beliebigen Werten oder Ausdrücken verwendet werden, die als Speicherbereiche ausgewertet werden.
+### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim Interop-Debuggen mit C++/CLI
+Die folgende Tabelle beschreibt Formatierungssymbole, die für Speicherbereiche verwendet werden. Bezeichner für Speicherbereiche können mit beliebigen Werten oder Ausdrücken verwendet werden, die als Speicherbereiche ausgewertet werden.
 
 |Symbol|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|
 |------------|------------|--------------------------|---------------------|
@@ -180,9 +180,9 @@ Die folgende Tabelle beschreibt die Formatierungssymbole, die für Speicherberei
 |**mq**|2 Vierfachwörter|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|
 |**mu**|2-Byte-Zeichen (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
-### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Größenbezeichner für Zeiger als Arrays beim Interop-Debuggen mit C++/CLI
+### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Größenbezeichner für Zeiger als Arrays beim Interop-Debuggen mit C++/CLI
 Wenn Sie einen Zeiger für ein Objekt haben, das Sie als Array anzeigen möchten, können Sie eine ganze Zahl verwenden, um die Anzahl von Arrayelementen zu bestimmen.
 
-|Bezeichner|Format|Ausdruck|Angezeigter Wert|
+|Bezeichner|Format|expression|Angezeigter Wert|
 |---------------|------------|----------------|---------------------|
 |n|Ganze Dezimalzahl|pBuffer[32]|Zeigt `pBuffer` als Array mit 32 Elementen an.|

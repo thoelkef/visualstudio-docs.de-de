@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187215"
@@ -43,5 +43,5 @@ Die Schnellansicht-APIs werden für Benutzer bereitgestellt, die eine Schnellans
 ## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Gewusst wie: Schreiben einer Schnellansicht](create-custom-visualizers-of-data.md)
+- [How to: Schreiben einer Schnellansicht](create-custom-visualizers-of-data.md)
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)
