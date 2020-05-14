@@ -1,5 +1,5 @@
 ---
-title: Schreiben einer Lauf Zeit Fehler Berichterstattungs Funktion | Microsoft-Dokumentation
+title: Schreiben einer Berichtsfunktion für Laufzeitfehler | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b145e34b0dfeafbb7fde436dd561721962a89f3b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731806"

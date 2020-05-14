@@ -16,21 +16,21 @@ ms.workload:
 - cordova
 ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731696"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsolenbefehle in Visual Studio
 
-Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele für die Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Die Informationen in diesem Thema gelten für die Node. js-APP, UWP-apps und apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden.
+Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Die Informationen in diesem Thema beziehen sich auf Node.js-Apps, UWP-Apps und Apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden.
 
 Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.
 
 > [!NOTE]
 > Wenn das Fenster während einer Debugsitzung nicht verfügbar ist, stellen Sie sicher, dass der Debuggertyp in den Debugeigenschaften für das Projekt auf **Script** festgelegt ist.
 
-Informationen zur Verwendung der-Konsole in Microsoft Edge-Entwicklertools finden Sie in [diesem Thema](/microsoft-edge/devtools-guide).
+Informationen zur Verwendung der Konsole in den Microsoft Edge-Entwicklertools finden Sie in [diesem Thema](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Konsolenobjektbefehle
 
@@ -55,9 +55,9 @@ Sie können die längere Befehlsform `window.console.[command]` verwenden, wenn 
 |`groupEnd()`|Beendet die aktuelle Gruppe.<br /><br /> Anforderungen:<br /><br /> Visual Studio 2013|Siehe Beispiel für den `group` -Befehl.|
 |`info(message)`|Sendet `message` an das Konsolenfenster. Der Meldung wird ein Informationssymbol vorangestellt.|`console.info("info message");`<br /><br /> Weitere Beispiele finden Sie unter [Formatting console.log output](#ConsoleLog) weiter unten in diesem Thema.|
 |`log(message)`|Sendet `message` an das Konsolenfenster.<br /><br /> Wenn Sie ein Objekt übergeben, sendet der Befehl dieses Objekt an das Konsolenfenster und zeigt es in einer Objektschnellansicht an. Sie können die Schnellansicht verwenden, um Eigenschaften im Konsolenfenster zu überprüfen.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|Wird in Web-Apps verwendet. Wird in UWP-apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|
-|`profile(reportName)`|Wird in Web-Apps verwendet. Wird in UWP-apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|
-|`profileEnd()`|Wird in Web-Apps verwendet. Wird in UWP-apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|
+|`msIsIndependentlyComposed(element)`|Wird in Web-Apps verwendet. Wird in UWP-Apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|
+|`profile(reportName)`|Wird in Web-Apps verwendet. Wird in UWP-Apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|
+|`profileEnd()`|Wird in Web-Apps verwendet. Wird in UWP-Apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|
 |`select(element)`|Wählt das angegebene HTML- `element` im [DOM Explorer](../debugger/quickstart-debug-html-and-css.md)aus.|console.select(element);|
 |`time (name)`|Startet einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Wenn dieser Befehl mit `console.timeEnd`verwendet wird, wird die Zeit, die zwischen `time` und `timeEnd`verstreicht, berechnet, und das Ergebnis (gemessen in ms) wird mit der Zeichenfolge `name` als Präfix an die Konsole gesendet. Wird verwendet, um Instrumentierung von App-Codes zum Messen der Leistung zu aktivieren.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|Stoppt einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Siehe den Konsolenbefehl `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -89,7 +89,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Überprüfen von Objekten im JavaScript-Konsolenfenster
 Über das JavaScript-Konsolenfenster können Sie mit jedem Objekt interagieren, das im Bereich enthalten ist. Um ein Objekt, das außerhalb des gültigen Bereichs liegt, im Konsolenfenster zu überprüfen, führen Sie `console.log` , `console.dir`oder andere Befehle aus dem Code aus. Alternativ können Sie aus dem Konsolenfenster mit dem Objekt interagieren, während es innerhalb des gültigen Bereichs liegt. Dazu müssen Sie einen Haltepunkt im Code festlegen (**Haltepunkt** > **Insert Haltepunkt**.)
 
-## <a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe
 Wenn Sie mehrere Argumente an `console.log`übergeben, behandelt die Konsole die Argumente als Array und verkettet die Ausgabe.
 
 ```javascript
@@ -128,4 +128,4 @@ console.log("%s is %f years old!", user.first, user.age);
 
 ## <a name="see-also"></a>Siehe auch
 - [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

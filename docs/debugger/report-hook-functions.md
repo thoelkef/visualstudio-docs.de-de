@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729868"
@@ -37,7 +37,7 @@ Eine mithilfe von [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetrep
 int YourReportHook(int nRptType, char *szMsg, int *retVal);
 ```
 
- Der Zeiger, den Sie an **_CrtSetReportHook** übergeben, ist vom Typ **_CRT_REPORT_HOOK**, wie in CRTDBG definiert. Micha
+ Der an **_CrtSetReportHook** übergebene Zeiger ist vom Typ **_CRT_REPORT_HOOK**, wie in CRTDBG.H definiert:
 
 ```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);

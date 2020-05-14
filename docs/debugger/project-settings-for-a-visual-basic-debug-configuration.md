@@ -1,5 +1,5 @@
 ---
-title: Projekteinstellungen für eine VB-Debug-Konfiguration | Microsoft-Dokumentation
+title: Projekteinstellungen für eine VB-Debugkonfiguration | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730602"
@@ -34,7 +34,7 @@ ms.locfileid: "72730602"
 Sie können die Projekteinstellungen für eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Debugkonfiguration im Fenster **Eigenschaftenseiten** entsprechend der Anleitung unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md) ändern. Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Fenster **Eigenschaftenseiten** zu finden sind.
 
 > [!WARNING]
-> Dieses Thema gilt nicht für UWP-Apps. Weitere Informationen finden Sie unter [Starten einer Debugsitzung (VB, C# C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) .
+> Dieses Thema gilt nicht für UWP-Apps. Siehe [Starten einer Debugsitzung (VB, C#, C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ### <a name="debug-tab"></a>Registerkarte "Debuggen"
 
@@ -44,7 +44,7 @@ Sie können die Projekteinstellungen für eine [!INCLUDE[vbprvb](../code-quality
 | **Startaktion** | Anhand dieser Gruppe von Steuerungen wird festgelegt, welche Aktion bei Auswahl von Starten im Menü Debuggen erfolgt.<br /><br /> -   **Projekt starten** ist der Standardwert, durch den das Startprojekt zum Debuggen gestartet wird. <br />-   **Externes Programm starten** ermöglicht es, ein Programm zu starten, das nicht zu einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt gehört, und eine Verbindung zu diesem Programm herzustellen. Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Browser mit folgender URL starten** ermöglicht das Debuggen einer Webanwendung. |
 | **Befehlszeilenargumente** | Legt Befehlszeilenargumente für das Programm fest, das gedebuggt werden soll. Der Befehlsname entspricht dem unter Externes Programm starten angegebenen Programmnamen. Wenn die Option Start-URL für Startaktion ausgewählt ist, werden die Befehlszeilenargumente ignoriert. |
 | **Arbeitsverzeichnis** | Gibt das Arbeitsverzeichnis des Programms an, das gerade gedebuggt wird. Das Arbeitsverzeichnis in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ist das Verzeichnis, über das die Anwendung gestartet wird. Das Standardarbeitsverzeichnis ist \bin\Debug oder \bin\Release. Dies hängt von der aktuellen Konfiguration ab. |
-| **Remotecomputer verwenden** | Bei aktiviertem Kontrollkästchen ist das Remotedebuggen aktiviert. Im Textfeld können Sie den Namen eines Remotecomputers eingeben, auf dem die Anwendung zu Debugzwecken ausgeführt wird, oder einen [Msvsmon-Servernamen](../debugger/remote-debugging.md). Der Speicherort der exe-Datei auf dem Remote Computer wird durch die Eigenschaft Ausgabepfad auf der Registerkarte Build angegeben. Der Speicherort muss ein auf dem Remote Computer ausführbares Verzeichnis sein. |
+| **Remotecomputer verwenden** | Bei aktiviertem Kontrollkästchen ist das Remotedebuggen aktiviert. Im Textfeld können Sie den Namen eines Remotecomputers eingeben, auf dem die Anwendung zu Debugzwecken ausgeführt wird, oder einen [Msvsmon-Servernamen](../debugger/remote-debugging.md). Der Speicherort der EXE-Datei auf dem Remotecomputer wird in der Registerkarte „Erstellen“ unter der Eigenschaft „Ausgabepfad“ festgelegt. Bei diesem Speicherort muss es sich um ein freigegebenes Verzeichnis auf dem Remotecomputer handeln. |
 | **Nicht verwalteten Code debuggen** | Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen. Wenn Sie in einem [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekt unter Debuggertyp die Option Gemischt auswählen, erzielen Sie denselben Effekt. |
 | **SQL Server debuggen** | Ermöglicht das Debuggen von SQL Server-Datenbankobjekten. |
 

@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von GPU-Threads im Debugger | Microsoft-Dokumentation
+title: Verwenden von GPU-Threads im Debugger | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,19 +20,19 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732086"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Gewusst wie: Verwenden des Fensters "GPU-C++Threads" ()
-Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu Anwendungen, die auf der GPU ausgeführt werden, [ C++ ](/cpp/parallel/amp/cpp-amp-overview)finden Sie unter amp Overview.
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Vorgehensweise: Verwenden des Fensters „GPU-Threads“ (C++)
+Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu den Anwendungen, die in der GPU ausgeführt werden, finden Sie unter [Übersicht über C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
 
  Das GPU-Threadfenster enthält eine Tabelle, in der jede Zeile einen Satz GPU-Threads darstellt, die in allen Spalten über die gleichen Werte verfügen. Sie können Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads aus dem GPU-Threadfenster heraus kennzeichnen, die Kennzeichnung aufheben, sie einfrieren (anhalten), und reaktivieren (fortsetzen). Die folgenden Spalten werden im GPU-Threadfenster angezeigt:
 
 - Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.
 
-- Die aktuelle Thread Spalte, in der ein gelber Pfeil den aktuellen Thread angibt.
+- Die Spalte für den aktuellen Thread, in der ein gelber Pfeil den aktuellen Thread kennzeichnet.
 
 - Die Spalte **Threadanzahl**, in der die Anzahl von Threads an derselben Position angezeigt wird.
 
@@ -66,7 +66,7 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
 
 7. Klicken Sie in der Menüleiste auf **Debuggen**, **Fenster** und **GPU-Threads**.
 
-### <a name="to-switch-to-a-different-thread"></a>So wechseln Sie zu einem anderen Thread
+### <a name="to-switch-to-a-different-thread"></a>So wechseln zu einem anderen Thread
 
 - Doppelklicken Sie auf die Spalte. (Tastatur: Wählen Sie die Zeile aus, und drücken Sie die EINGABETASTE.)
 
@@ -104,5 +104,5 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Gewusst wie: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)
+- [How to: Verwenden des Fensters „Parallele Überwachung“](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

@@ -27,7 +27,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731278"
@@ -35,7 +35,7 @@ ms.locfileid: "72731278"
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:
 
-## <a name="BKMK_In_this_topic"></a> In diesem Thema
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> In diesem Thema
 [AfxDebugBreak](#BKMK_AfxDebugBreak)
 
 [Das TRACE-Makro](#BKMK_The_TRACE_macro)
@@ -60,7 +60,7 @@ Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreic
 
   - [So erstellen Sie eine MFC‑Anwendung mit Debuginformationen für ausgewählte Module](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)
 
-## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak
+## <a name="afxdebugbreak"></a><a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak
 MFC bietet eine spezielle [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) -Funktion für hart codierte Haltepunkte im Quellcode:
 
 ```cpp
@@ -79,7 +79,7 @@ Achten Sie darauf, die `AfxDebugBreak` -Anweisungen vor dem Erstellen eines Rele
 
 [Inhalt](#BKMK_In_this_topic)
 
-## <a name="BKMK_The_TRACE_macro"></a> Das TRACE-Makro
+## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> Das TRACE-Makro
 Um Programmmeldungen im [Ausgabefenster](../ide/reference/output-window.md)des Debuggers anzuzeigen, können Sie das [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) -Makro oder das MFC- [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) -Makro verwenden. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.
 
 Die folgenden Beispiele zeigen einige Verwendungsmöglichkeiten für das **TRACE** -Makro auf. Ähnlich wie `printf`ist das **TRACE** -Makro in der Lage, mehrere Argumente zu verarbeiten.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-Das Trace-Makro behandelt sowohl char \*-als auch wchar_t-\* Parameter entsprechend. In den folgenden Beispielen wird die Verwendung des TRACE-Makros mit unterschiedlichen Zeichenfolgenparametertypen veranschaulicht.
+Das TRACE-Makro behandelt char\*- und wchar_t\*-Parameter ordnungsgemäß. In den folgenden Beispielen wird die Verwendung des TRACE-Makros mit unterschiedlichen Zeichenfolgenparametertypen veranschaulicht.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -111,10 +111,10 @@ Weitere Informationen zum **TRACE** -Makro finden Sie unter [Diagnosedienste](/c
 
 [Inhalt](#BKMK_In_this_topic)
 
-## <a name="BKMK_Memory_leak_detection_in_MFC"></a> Feststellen von Speicherverlusten in MFC
+## <a name="detecting-memory-leaks-in-mfc"></a><a name="BKMK_Memory_leak_detection_in_MFC"></a> Feststellen von Speicherverlusten in MFC
 MFC stellt Klassen und Funktionen bereit, mit deren Hilfe Speicherbereiche ermittelt werden können, die belegt, jedoch nicht wieder freigegeben werden.
 
-### <a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung
+### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung
 In MFC können Sie anstelle des Operators [new](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) auch das **DEBUG_NEW** -Makro verwenden, um Speicherverluste aufzudecken. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.
 
 Wenn Sie nicht das gesamte Programm umschreiben möchten, um `DEBUG_NEW` anstelle von **new**zu verwenden, können Sie dieses Makro in den Quellcodedateien definieren:
@@ -129,7 +129,7 @@ In der Debugversion des MFC-Frameworks wird `DEBUG_NEW` automatisch verwendet, i
 
 [Inhalt](#BKMK_In_this_topic)
 
-### <a name="BKMK_Enabling_memory_diagnostics"></a> Aktivieren der Speicherdiagnose
+### <a name="enabling-memory-diagnostics"></a><a name="BKMK_Enabling_memory_diagnostics"></a> Aktivieren der Speicherdiagnose
 Damit Sie die Speicherdiagnosefeatures nutzen können, muss die Diagnosenachverfolgung aktiviert werden.
 
 **So aktivieren oder deaktivieren Sie die Speicherdiagnose**
@@ -154,7 +154,7 @@ Damit Sie die Speicherdiagnosefeatures nutzen können, muss die Diagnosenachverf
 
   [Inhalt](#BKMK_In_this_topic)
 
-### <a name="BKMK_Taking_memory_snapshots"></a> Aufzeichnen von Speichermomentaufnahmen
+### <a name="taking-memory-snapshots"></a><a name="BKMK_Taking_memory_snapshots"></a> Aufzeichnen von Speichermomentaufnahmen
 
 1. Erstellen Sie ein [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) -Objekt, und rufen Sie die [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) -Memberfunktion auf. Dadurch wird die erste Speichermomentaufnahme erstellt.
 
@@ -185,13 +185,13 @@ Damit Sie die Speicherdiagnosefeatures nutzen können, muss die Diagnosenachverf
     #endif
     ```
 
-    Beachten Sie, dass die Speicher Überprüfungs Anweisungen **#ifdef _DEBUG/#endif-** Blöcken in Klammern gesetzt werden, sodass Sie nur in Debugversionen des Programms kompiliert werden.
+    Beachten Sie, dass die Speicherüberprüfungsanweisungen in **#ifdef _DEBUG / #endif**-Blöcke eingeschlossen sind und daher nur in Debugversionen des Programms kompiliert werden.
 
     Da Sie nun wissen, dass ein Speicherverlust auftritt, können Sie eine andere Memberfunktion namens [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) verwenden, um die Stelle zu lokalisieren.
 
     [Inhalt](#BKMK_In_this_topic)
 
-### <a name="BKMK_Viewing_memory_statistics"></a> Anzeigen einer Speicherstatistik
+### <a name="viewing-memory-statistics"></a><a name="BKMK_Viewing_memory_statistics"></a> Anzeigen einer Speicherstatistik
 Durch die [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) -Funktion werden die beiden Speicherzustandsobjekte verglichen und alle Objekte ermittelt, die zwischen dem Anfangs- und dem Endzustand nicht vom Heap freigegeben wurden. Nachdem Sie Speichermomentaufnahmen aufgezeichnet und diese mithilfe von `CMemoryState::Difference`verglichen haben, können Sie [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) aufrufen, um Informationen über die nicht freigegebenen Objekte zu erhalten.
 
 Betrachten Sie das folgende Beispiel:
@@ -226,8 +226,8 @@ Nicht-Objektblöcke umfassen Arrays und Strukturen, die mit `new`reserviert wurd
 
 [Inhalt](#BKMK_In_this_topic)
 
-### <a name="BKMK_Taking_object_dumps"></a> Nachverfolgen von Objektabbildern
-In einem MFC-Programm können Sie [CMemoryState::D](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) -Enumeration verwenden, um eine Beschreibung aller Objekte auf dem Heap zu speichern, deren Zuordnung aufgehoben wurde. `DumpAllObjectsSince` sichert alle seit dem letzten [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)aufgerufen. Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.
+### <a name="taking-object-dumps"></a><a name="BKMK_Taking_object_dumps"></a> Nachverfolgen von Objektabbildern
+In einem MFC-Programm kann [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) verwendet werden, um eine Beschreibung aller Objekte auf dem Heap zu sichern, die nicht freigegeben wurden. `DumpAllObjectsSince` sichert alle seit dem letzten [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)aufgerufen. Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.
 
 > [!NOTE]
 > Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](#BKMK_Enabling_memory_diagnostics)aktiviert werden.
@@ -272,7 +272,7 @@ Die C-Laufzeitbibliothek verfügt über eine vergleichbare Funktion, [_CrtSetBre
 
 [Inhalt](#BKMK_In_this_topic)
 
-#### <a name="BKMK_Interpreting_memory_dumps"></a> Interpretieren von Speicherabbildern
+#### <a name="interpreting-memory-dumps"></a><a name="BKMK_Interpreting_memory_dumps"></a> Interpretieren von Speicherabbildern
 Im Folgenden wird dieser Objektdump ausführlich erläutert:
 
 ```cmd
@@ -355,7 +355,7 @@ Objekte, für die Speicher auf dem Heap reserviert wird, sollten Sie jedoch expl
 
 [Inhalt](#BKMK_In_this_topic)
 
-#### <a name="BKMK_Customizing_object_dumps"></a> Anpassen von Objektdumps
+#### <a name="customizing-object-dumps"></a><a name="BKMK_Customizing_object_dumps"></a> Anpassen von Objektdumps
 Wenn Sie eine Klasse von [CObject](/cpp/mfc/reference/cobject-class)ableiten, können Sie die Memberfunktion `Dump` überschreiben, um bei Verwendung von [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) für den Objektdump zusätzliche Informationen im [Ausgabefenster](../ide/reference/output-window.md)anzuzeigen.
 
 Die `Dump` -Funktion gibt eine Textdarstellung der objektspezifischen Membervariablen in einem Dumpkontext ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)) aus. Der Dumpkontext ist mit einem E/A-Stream vergleichbar. Mithilfe des Anfügeoperators ( **<<** ) können Sie Daten an einen `CDumpContext`aufgerufen.
@@ -410,19 +410,19 @@ pMyPerson->Dump( afxDump );
 
 [Inhalt](#BKMK_In_this_topic)
 
-## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Verringern der Größe eines MFC-Debugbuilds
+## <a name="reducing-the-size-of-an-mfc-debug-build"></a><a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Verringern der Größe eines MFC-Debugbuilds
 Die Debuginformationen für eine umfangreiche MFC-Anwendung können sehr viel Speicherplatz beanspruchen. Sie können eine dieser Prozeduren zum Verringern der Größe verwenden:
 
-1. Erstellen Sie die MFC-Bibliotheken mit der Option [/Z7,/Zi,/Zi (Debug Information Format)](/cpp/build/reference/z7-zi-zi-debug-information-format) anstelle von **/Z7**neu. Durch diese Optionen wird eine einzelne Programmdatenbank-Datei (PDB) mit Debuginformationen für die gesamte Bibliothek erstellt, wodurch Redundanz und Speicherplatzanforderungen verringert werden.
+1. Erstellen Sie die MFC-Bibliotheken mit der Option [/Z7, /Zi, /ZI (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format) anstatt **/Z7**. Durch diese Optionen wird eine einzelne Programmdatenbank-Datei (PDB) mit Debuginformationen für die gesamte Bibliothek erstellt, wodurch Redundanz und Speicherplatzanforderungen verringert werden.
 
-2. Erstellen Sie die MFC-Bibliotheken ohne Debuginformationen (keine [/Z7-,/Zi-,/ZI-Option (Debug Information Format)](/cpp/build/reference/z7-zi-zi-debug-information-format) ). In diesem Fall werden Sie die meisten Debuggerfunktionen aufgrund fehlender Debuginformationen innerhalb des MFC-Bibliothekscodes nicht nutzen können. Da die MFC-Bibliotheken jedoch bereits eingehend gedebuggt wurden, stellt dies u. U. kein Problem dar.
+2. Erstellen Sie die MFC-Bibliotheken ohne Debuginformationen (ohne die Option [/Z7, /Zi, /Zi (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format)). In diesem Fall werden Sie die meisten Debuggerfunktionen aufgrund fehlender Debuginformationen innerhalb des MFC-Bibliothekscodes nicht nutzen können. Da die MFC-Bibliotheken jedoch bereits eingehend gedebuggt wurden, stellt dies u. U. kein Problem dar.
 
 3. Erstellen Sie eine eigene Anwendung mit modulspezifischen Debuginformationen nur wie unten beschrieben.
 
-    [Inhalt](#BKMK_In_this_topic)
+    [In diesem Thema](#BKMK_In_this_topic)
 
-### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> So erstellen Sie eine MFC‑Anwendung mit Debuginformationen für ausgewählte Module
-Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die schrittweise Ausführung der Module sowie die Verwendung weiterer Debugfunktionen. In diesem Verfahren werden sowohl die Debug-als auch die Releasekonfiguration des Projekts verwendet. Daher müssen die in den folgenden Schritten beschriebenen Änderungen erforderlich sein (und auch "alles neu erstellen" erforderlich, wenn ein vollständiger Releasebuild erforderlich ist).
+### <a name="building-an-mfc-app-with-debug-information-for-selected-modules"></a><a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> So erstellen Sie eine MFC‑Anwendung mit Debuginformationen für ausgewählte Module
+Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die schrittweise Ausführung der Module sowie die Verwendung weiterer Debugfunktionen. In den folgenden Schritten wird sowohl die Debug- als auch die Releasekonfiguration des Projekts verwendet. Dadurch werden die im Folgenden beschriebenen Änderungen erforderlich. (Darüber hinaus ist die Option „Alles neu erstellen“ erforderlich, wenn ein vollständiges Releasebuild benötigt wird.)
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus.
 
@@ -438,7 +438,7 @@ Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die
 
    4. Wählen Sie in der Liste **Einstellungen kopieren von** die Option **Release**.
 
-   5. Klicken Sie auf **OK** , um das Dialogfeld **neue Projekt Konfiguration** zu schließen.
+   5. Klicken Sie auf **OK**, um das Dialogfeld **Neue Projektkonfiguration** zu schließen.
 
    6. Schließen Sie das Dialogfeld **Konfigurations-Manager** .
 

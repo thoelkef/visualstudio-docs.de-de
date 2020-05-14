@@ -1,5 +1,5 @@
 ---
-title: Ausführbare Datei für Debugsitzung (Dialog Feld) | Microsoft-Dokumentation
+title: Ausführbare Datei für die Debugsitzung (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,20 +22,20 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 92cf53ed499318d60c8da5147685e3f0f340e404
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736239"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Ausführbare Datei für die Debugsitzung (Dialogfeld)
 
-Dieses Dialogfeld wird angezeigt, wenn Sie eine DLL debuggen, für die keine ausführbare Datei festgelegt wurde. Visual Studio kann eine DLL nicht direkt starten. Stattdessen wird die angegebene ausführbare Datei von Visual Studio gestartet. Sie können die DLL Debuggen, wenn Sie von der ausführbaren Datei aufgerufen wird.
+Dieses Dialogfeld wird angezeigt, wenn Sie eine DLL debuggen, für die keine ausführbare Datei festgelegt wurde. In Visual Studio können DLLs nicht direkt gestartet werden. Stattdessen wird die angegebene ausführbare Datei gestartet. Sie können die DLL debuggen, wenn diese durch die ausführbare Datei aufgerufen wird.
 
- **Name der ausführbaren Datei** Geben Sie den Pfadnamen in eine ausführbare Datei ein, die die zu debuggende DLL aufruft.
+ **Name der ausführbaren Datei** Geben Sie den Pfad zu einer ausführbaren Datei ein, mit der die zu debuggende DLL aufgerufen wird.
 
- **URL, an die auf das Projekt zugegriffen werden kann (nur ATL-Server)** Wenn Sie eine ATL-Server-DLL Debuggen, geben Sie die URL ein, unter der sich das Projekt befindet.
+ **URL, von der aus auf das Projekt zugegriffen werden kann (nur ATL-Server)** Wenn Sie eine ATL-Server-DLL debuggen, geben Sie die URL ein, unter der sich das Projekt befindet.
 
- Nachdem Sie diese Einstellungen eingegeben haben, werden Sie auf den Eigenschaften Seiten des Projekts gespeichert, sodass Sie Sie nicht erneut für nachfolgende Debugsitzungen eingeben müssen. Wenn Sie diese Einstellungen ändern möchten, können Sie die Eigenschaftenseiten öffnen und die Werte ändern. Weitere Informationen zum Angeben einer ausführbaren Datei für die Debugsitzung finden Sie unter [Debuggen von DLLs](../debugger/how-to-debug-from-a-dll-project.md).
+ Nach der Eingabe werden diese Einstellungen in den Eigenschaftenseiten des Projekts gespeichert, sodass Sie diese bei späteren Debugsitzungen nicht erneut eingeben müssen. Wenn Sie diese Einstellungen ändern möchten, können Sie die Eigenschaftenseiten öffnen und die Werte ändern. Weitere Informationen zum Angeben einer ausführbaren Datei für die Debugsitzung finden Sie unter [Debuggen von DLLs](../debugger/how-to-debug-from-a-dll-project.md).
 
 ## <a name="see-also"></a>Siehe auch
 

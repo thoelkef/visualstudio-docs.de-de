@@ -1,5 +1,5 @@
 ---
-title: Dialog Feld "Microsoft Visual Studio Debugger (Ausnahme ausgelöst)" | Microsoft-Dokumentation
+title: Microsoft Visual Studio Debugger (Ausnahmeverweis) (Dialogfeld) | Microsoft-Dokumentation
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731208"
@@ -32,14 +32,14 @@ ms.locfileid: "72731208"
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (Ausnahmeverweis) (Dialogfeld)
 Im Programm ist eine Ausnahme aufgetreten. In diesem Dialogfeld wird die Art der ausgelösten Ausnahme angezeigt. Die Ausnahme muss durch den Code behandelt werden. Folgende Optionen stehen für das Behandeln der Ausnahme zur Verfügung:
 
- **Abbrechen** Ermöglicht die Ausführung in den Debugger. Der Ausnahmehandler wird vor der Unterbrechung nicht aufgerufen. Wenn Sie ab der Unterbrechung fortsetzen, wird der Ausnahmehandler aufgerufen.
+ **Unterbrechen** Die Ausführung wird im Debugger unterbrochen. Der Ausnahmehandler wird vor der Unterbrechung nicht aufgerufen. Wenn Sie ab der Unterbrechung fortsetzen, wird der Ausnahmehandler aufgerufen.
 
- **Fortfahren** Ermöglicht, dass die Ausführung fortgesetzt wird, sodass der Ausnahmehandler die Ausnahme behandeln kann. Diese Option ist für bestimmte Ausnahmetypen nicht verfügbar. Mit **Weiter** kann die Anwendung fortgesetzt werden. In einer systemeigenen Anwendung wird die Ausnahme bei dieser Option erneut ausgelöst. In einer verwalteten Anwendung wird dadurch entweder das Programm beendet oder die Ausnahme wird von einer Hostanwendung behandelt.
+ **Weiter** Die Ausführung wird fortgesetzt, sodass die Ausnahme vom Ausnahmehandler behandelt werden kann. Diese Option ist für bestimmte Ausnahmetypen nicht verfügbar. Mit **Weiter** kann die Anwendung fortgesetzt werden. In einer systemeigenen Anwendung wird die Ausnahme bei dieser Option erneut ausgelöst. In einer verwalteten Anwendung wird dadurch entweder das Programm beendet oder die Ausnahme wird von einer Hostanwendung behandelt.
 
 > [!NOTE]
 > In verwaltetem Code können Sie die Ausführung nach einem Ausnahmefehler nicht fortsetzen. Wenn Sie nach einem Ausnahmefehler in verwaltetem Code auf **Weiter** klicken, wird das Debuggen beendet.
 
- **Ignorieren** Ermöglicht das Fortsetzen der Ausführung ohne Aufrufen des Ausnahme Handlers. Dies kann sich weiter auswirken und beispielsweise zu weiteren Ausnahmen und Fehlern führen. Diese Option ist für bestimmte Ausnahmetypen nicht verfügbar.
+ **Ignorieren** Diese Option ermöglicht das Fortsetzen der Ausführung ohne Aufrufen des Ausnahmehandlers. Dies kann sich weiter auswirken und beispielsweise zu weiteren Ausnahmen und Fehlern führen. Diese Option ist für bestimmte Ausnahmetypen nicht verfügbar.
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)

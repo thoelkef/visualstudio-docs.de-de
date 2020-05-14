@@ -15,34 +15,34 @@ translation.priority.ht:
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
 ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68149171"
 ---
-1. Suchen Sie auf dem Remotecomputer, und Starten der **Remote Debugger** aus der **starten** Menü. 
+1. Suchen und starten Sie auf dem Remotecomputer im Menü **Start** den **Remotedebugger**. 
    
-   Wenn Sie nicht über die Administratorberechtigungen auf dem Remotecomputer verfügen, mit der rechten Maustaste die **Remotedebugger** app, und wählen **als Administrator ausführen**. Andernfalls starten Sie es normalerweise.
+   Wenn Sie auf dem Remotecomputer nicht über Administratorberechtigungen verfügen, klicken Sie mit der rechten Maustaste auf die App **Remotedebugger**, und wählen Sie **Als Administrator ausführen** aus. Starten Sie andernfalls die App auf normale Weise.
 
-   Wenn Sie planen, fügen Sie einen Prozess, der als Administrator ausgeführt wird, oder unter einem anderen Benutzerkonto ausgeführt wird (z. B. IIS)-Konto, mit der rechten Maustaste die **Remotedebugger** app, und wählen **führen Sie als Administrator**. Weitere Informationen finden Sie unter [führen den Remotedebugger als Administrator](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
+   Wenn Sie beabsichtigen, eine Verbindung mit einem Prozess herzustellen, der unter einem Administratorkonto oder einem anderen Benutzerkonto ausgeführt wird (z. B IIS), klicken Sie mit der rechten Maustaste auf die App **Remotedebugger**, und wählen Sie **Als Administrator ausführen** aus. Weitere Informationen finden Sie unter [Ausführen des Remotedebuggers als Administrator](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
-1. Beim ersten Verwenden Sie den Remotedebugger zu starten (oder bevor Sie sie konfiguriert haben), die **Konfiguration für Remotedebugging** Dialogfeld wird angezeigt.  
+1. Wenn Sie den Remotedebugger zum ersten Mal starten (oder bevor Sie ihn konfiguriert haben), wird das Dialogfeld **Konfiguration für Remotedebugging** angezeigt.  
   
-    ![Konfiguration für Remotedebugging](../media/remotedebuggerconfwizardpage.png "Remote Debugger-Konfiguration.")  
+    ![Konfiguration des Remotedebuggers](../media/remotedebuggerconfwizardpage.png "Konfiguration des Remotedebuggers")  
   
-1. Wenn die Windows-Webdienste-API nicht dies nur bei Windows Server 2008 R2 der Fall installiert ist, wählen Sie die **installieren** Schaltfläche.  
+1. Wenn die Windows-Webdienste-API nicht installiert ist (geschieht nur unter Windows Server 2008 R2), klicken Sie auf die Schaltfläche **Installieren**.  
   
-1. Wählen Sie mindestens ein Netzwerktyp, die Sie auf die Remotetools verwenden möchten. Wenn die Computer über eine Domäne verbunden sind, müssen Sie das erste Element auswählen. Wenn der Computer über eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden sind, wählen Sie das zweite bzw. dritte Element nach Bedarf.  
+1. Wählen Sie mindestens einen Netzwerktyp aus, für den Sie die Remotetools verwenden möchten. Wenn die Computer über eine Domäne verbunden sind, müssen Sie das erste Element auswählen. Wenn die Computer über eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden sind, wählen Sie das zweite bzw. dritte Element aus.  
   
-1. Wählen Sie **Konfigurieren des Remotedebuggings** zum Konfigurieren der Firewall und den Remotedebugger zu starten.  
+1. Wählen Sie **Remotedebugging konfigurieren** aus, um die Firewall zu konfigurieren und den Remotedebugger zu starten.  
   
-1. Wenn die Konfiguration abgeschlossen ist, wird die **Remotedebugger** Fenster wird angezeigt.
+1. Wenn die Konfiguration abgeschlossen ist, wird das Fenster **Remotedebugger** angezeigt.
   
-    ![Remote Debugger-Fenster](../media/remotedebuggerwindow.png "Remotedebugger-Fenster")
+    ![Fenster „Remotedebugger“](../media/remotedebuggerwindow.png "Fenster „Remotedebugger“")
   
-    Der Remotedebugger wartet jetzt eine Verbindung. Verwenden Sie den Namen des Servers und die Portnummer, die angezeigt wird, legen Sie die Konfiguration des remote-Verbindung in Visual Studio.  
+    Der Remotedebugger wartet nun auf eine Verbindung. Verwenden Sie den Servernamen und die Portnummer, die angezeigt werden, um die Remoteverbindungskonfiguration in Visual Studio festzulegen.  
   
-Wählen Sie zum Beenden des Remotedebuggers **Datei** > **beenden**. Sie können es von den Neustart der **starten** Menü oder über die Befehlszeile:  
+Um den Remotedebugger zu beenden, wählen Sie **Datei** > **Beenden** aus. Sie können ihn über das Menü **Start** oder über die Befehlszeile neu starten:  
   
 ```cmd
 <Remote debugger installation directory>\msvsmon.exe

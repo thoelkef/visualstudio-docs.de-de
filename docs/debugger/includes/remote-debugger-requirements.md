@@ -15,7 +15,7 @@ translation.priority.ht:
 - zh-tw
 ms.openlocfilehash: fe2927a7a863b3825a680096da44afa6d68f1cba
 ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68149200"
@@ -24,9 +24,9 @@ ms.locfileid: "68149200"
 
 Auf dem Remotecomputer muss eines der folgenden Betriebssysteme ausgeführt werden:  
   
-- Windows 10 (nicht "Phone")
+- Windows 10 (nicht Smartphones)
   
-- Windows 8 oder 8.1 (nicht "Phone")
+- Windows 8 oder 8.1 (nicht Windows Phone)
   
 - Windows 7 Service Pack 1  
 
@@ -37,7 +37,7 @@ Auf dem Remotecomputer muss eines der folgenden Betriebssysteme ausgeführt werd
 - Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1
 
 > [!NOTE]
-> Windows Phone erfordert eine USB-Verbindung zum Debuggen (sie erfordert keine der Remoteserver-Verwaltungstools).
+> Windows Phone erfordert zum Debuggen eine USB-Verbindung (die Remotetools sind nicht erforderlich).
   
 ### <a name="supported-hardware-configurations"></a>Unterstützte Hardwarekonfigurationen  
   
@@ -53,4 +53,4 @@ Auf dem Remotecomputer muss eines der folgenden Betriebssysteme ausgeführt werd
   
 ### <a name="network-configuration"></a>Netzwerkkonfiguration  
 
-Der Remotecomputer und der Visual Studio-Computer müssen über ein Netzwerk, eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden bzw. mit einem Ethernetkabel direkt verbunden werden. Debuggen zwischen zwei Computern über einen Proxy verbunden sind, wird nicht unterstützt. Debuggen über eine hohe Latenz oder niedriger Bandbreite, wie z. B. DFÜ, Internet oder über das Internet in Ländern wird nicht empfohlen und möglicherweise fehl oder unzumutbar langsam werden.
+Der Remotecomputer und der Visual Studio-Computer müssen über ein Netzwerk, eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden bzw. mit einem Ethernetkabel direkt verbunden werden. Das Debuggen zwischen zwei über einen Proxy verbundenen Computern wird nicht unterstützt. Das Debuggen über eine Verbindung mit hoher Latenz oder niedriger Bandbreite, z. B. DFÜ-Internetverbindung oder Internetverbindung über mehrere Länder hinweg, wird nicht empfohlen und schlägt möglicherweise fehl oder weist eine unzureichende Geschwindigkeit auf.

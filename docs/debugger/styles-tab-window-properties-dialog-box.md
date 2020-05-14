@@ -1,5 +1,5 @@
 ---
-title: Stile (Registerkarte), Dialogfeld "Fenstereigenschaften" | Microsoft-Dokumentation
+title: Registerkarte „Stile“, Dialogfeld „Fenstereigenschaften“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,17 +12,17 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 581ad210e5e8b11fec35e2171f4e8c4b5553baa5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929675"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Registerkarte "Stile", Dialogfeld "Fenstereigenschaften"
-Verwenden der **Stile** Tab, um die Stile angewendet werden, um das ausgewählte Fenster anzuzeigen. Zum Anzeigen der [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md), Verschieben des Fokus auf die [Windows-Ansicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.
+Verwenden Sie die Registerkarte **Stile**, um die auf das ausgewählte Fenster angewendeten Stile anzuzeigen. Verschieben Sie den Fokus auf das [Fensteransichtsfenster](../debugger/windows-view.md), um das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.
 
- Die folgenden Einstellungen stehen auf der **Stile** Registerkarte:
+ Auf der Registerkarte **Stile** sind folgende Einstellungen verfügbar:
 
 |Eingabe|Beschreibung|
 |-----------|-----------------|
-|**Fensterstile**|Eine Kombination des Fensters Codes formatieren und Formate zu steuern, sofern zutreffend.|
-|**Erweiterte Stile**|Eine Kombination von erweiterten Stil-Codes.|
+|**Fensterstile**|Eine Kombination aus Fensterstilcodes und ggf. vorhandenen Steuerelementstilen.|
+|**Erweiterte Stile**|Eine Kombination aus erweiterten Fensterstilcodes.|

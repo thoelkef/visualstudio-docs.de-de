@@ -1,5 +1,5 @@
 ---
-title: Einführung in Spy + + | Microsoft-Dokumentation
+title: Einführung in Spy++ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4d04b2e9e04e1f2b952baadbdf0cca32cc3b301b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731817"
@@ -30,7 +30,7 @@ Mit Spy++ können Sie die folgenden Aufgaben ausführen:
 
 - das [Suchtool](../debugger/how-to-use-the-finder-tool.md) verwenden, um Fenster über die Positionierung des Mauszeigers auszuwählen
 
-- Legen Sie die [Option Message](../debugger/how-to-open-messages-view-from-find-window.md) mithilfe komplexer Nachrichtenprotokoll Auswahl Parameter fest.
+- [Meldungsoptionen](../debugger/how-to-open-messages-view-from-find-window.md) über komplexe Auswahlparameter für die Nachrichtenprotokollierung festlegen
 
   Spy++ verfügt über eine Symbolleiste und Hyperlinks, um Ihnen die Arbeit zu erleichtern. Darüber hinaus stellt es den Befehl **Aktualisieren** bereit, um die aktive Ansicht zu aktualisieren, ein **Tool zum Suchen von Fenstern** für leichteres Nachverfolgen und das Dialogfeld **Schriftart** zum Anpassen der Ansichtsfenster. Darüber hinaus können Sie mit Spy++ Benutzereinstellungen speichern und wiederherstellen.
 
@@ -40,7 +40,7 @@ Mit Spy++ können Sie die folgenden Aufgaben ausführen:
 > Es gibt zwei weitere Hilfsprogramme, die Spy++ ähneln: PView, das Informationen über Prozesse und Threads anzeigt, und DDESPY.EXE, mit dem Sie DDE-Meldungen (Dynamic Data Exchange) überwachen können.
 
 ## <a name="64-bit-operating-systems"></a>64-Bit-Betriebssysteme
- Es gibt zwei Versionen von Spy++. Die erste Version namens Spy++ (spyxx.exe) dient zum Anzeigen von Nachrichten an ein Fenster, das in einem 32-Bit-Prozess ausgeführt wird. Visual Studio wird z.B. in einem 32-Bit-Prozess ausgeführt. Sie können Spy++ daher dazu verwenden, um Nachrichten an den **Projektmappen-Explorer**anzuzeigen. Da die Standardkonfiguration für die meisten Builds in Visual Studio in einem 32-Bit-Prozess ausgeführt wird, ist diese erste Version von Spy + **+ die im Menü Extras** in Visual Studio verfügbare, wenn [erforderliche Komponenten installiert sind](../debugger/how-to-start-spy-increment.md).
+ Es gibt zwei Versionen von Spy++. Die erste Version namens Spy++ (spyxx.exe) dient zum Anzeigen von Nachrichten an ein Fenster, das in einem 32-Bit-Prozess ausgeführt wird. Visual Studio wird z.B. in einem 32-Bit-Prozess ausgeführt. Sie können Spy++ daher dazu verwenden, um Nachrichten an den **Projektmappen-Explorer**anzuzeigen. Da die Standardkonfiguration für die meisten Builds in Visual Studio in einem 32-Bit-Prozess ausgeführt wird, ist diese erste Version von Spy++ diejenige, die im Menü unter **Extras** in Visual Studio verfügbar ist, sofern [die erforderlichen Komponenten installiert sind](../debugger/how-to-start-spy-increment.md).
 
  Die zweite Version namens Spy++ (64-Bit) (spyxx_amd64.exe) dient zum Anzeigen von Nachrichten an ein Fenster, das in einem 64-Bit-Prozess ausgeführt wird. In einem 64-Bit-Betriebssystem wird z.B. Notepad in einem 64-Bit-Prozess ausgeführt. Sie können Spy++ (64-Bit) daher dazu verwenden, an Notepad gesendete Nachrichten anzuzeigen. Spy++ (64-Bit) befindet sich in der Regel in
 
@@ -52,7 +52,7 @@ Mit Spy++ können Sie die folgenden Aufgaben ausführen:
 > Obwohl der Dateiname von Spy++ (64-Bit) „amd“ enthält, kann die Datei auf allen x64-Betriebssystemen von Windows aufgeführt werden.
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Starten von Spy++](../debugger/how-to-start-spy-increment.md)
+- [How to: Starten von Spy++](../debugger/how-to-start-spy-increment.md)
 - [Verwenden von Spy++](../debugger/using-spy-increment.md)
 - [Spy++-Ansichten](../debugger/spy-increment-views.md)
 - [Spy++-Referenz](../debugger/spy-increment-reference.md)

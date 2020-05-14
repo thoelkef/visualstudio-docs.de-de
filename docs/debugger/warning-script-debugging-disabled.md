@@ -1,5 +1,5 @@
 ---
-title: 'Warnung: Skript-Debugging deaktiviert | Microsoft Docs'
+title: 'Warnung: Skriptdebuggen deaktiviert | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
 ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2020
 ms.locfileid: "81648503"
@@ -35,7 +35,7 @@ Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
 
 3. Zeigen Sie auf der Registerkarte **Erweitert** unter der Kategorie **Browsen** das Feld **Einstellungen** an.
 
-4. Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)**.
+4. Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)** .
 
 5. Klicken Sie auf **OK**.
 
@@ -44,4 +44,4 @@ Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
      Die neuen Einstellungen sind jetzt wirksam.
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Anfügen an ein Skript](attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [How to: Anfügen an ein Skript](attach-to-running-processes-with-the-visual-studio-debugger.md)

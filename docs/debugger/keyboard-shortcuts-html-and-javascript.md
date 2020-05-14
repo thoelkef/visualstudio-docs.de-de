@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731498"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Tastenkombinationen (HTML und JavaScript)
 
-Tastenkombinationen in Visual Studio zum Debuggen von UWP-apps mit HTML und JavaScript.
+Tastenkombinationen in Visual Studio für das Debuggen von UWP-Apps mit HTML und JavaScript
 
 ## <a name="general-shortcuts"></a>Allgemeine Tastenkombinationen
 
- Diese Tastenkombinationen funktionieren in allen Tools für UWP-apps, die HTML und JavaScript verwenden.
+ Die folgenden Tastenkombinationen funktionieren für alle Tools für UWP-Apps mit HTML und JavaScript.
 
 |Aktion|Verknüpfung|
 |------------|--------------|
@@ -60,5 +60,5 @@ Tastenkombinationen in Visual Studio zum Debuggen von UWP-apps mit HTML und Java
 
 ## <a name="see-also"></a>Siehe auch
 - [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017)
-- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

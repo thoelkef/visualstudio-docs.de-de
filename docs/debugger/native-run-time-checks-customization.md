@@ -1,5 +1,5 @@
 ---
-title: Anpassung der nativen Lauf Zeit Überprüfung | Microsoft-Dokumentation
+title: Anpassen der nativen Laufzeitüberprüfung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,13 +24,13 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730892"
 ---
 # <a name="native-run-time-checks-customization"></a>Anpassen der systemeigenen Laufzeitüberprüfung
-Wenn Sie mit **/RTC** (Laufzeitüberprüfungen) kompilieren oder das `runtime_checks`-Pragma verwenden, stellt die C-Lauf Zeit Bibliothek systemeigene Laufzeitüberprüfungen bereit. In einigen Fällen können Sie die Laufzeitüberprüfung anpassen:
+Bei der Kompilierung mit **/RTC** (Run-Time Checks, Laufzeitüberprüfungen) oder mit dem `runtime_checks`-Pragma stellt die C-Laufzeitbibliothek native Laufzeitüberprüfungen zur Verfügung. In einigen Fällen können Sie die Laufzeitüberprüfung anpassen:
 
 - Zum Weiterleiten von Meldungen der Laufzeitüberprüfung an eine Datei oder an ein vom Standardziel abweichendes Ziel.
 
@@ -40,7 +40,7 @@ Wenn Sie mit **/RTC** (Laufzeitüberprüfungen) kompilieren oder das `runtime_ch
 
   Sie haben folgende Möglichkeiten, um Laufzeitfehlerüberprüfungen anzupassen:
 
-- Schreiben einer Funktion zur Erstellung von Laufzeitfehlerberichten. Weitere Informationen finden Sie unter Gewusst [wie: Schreiben einer Lauf Zeit Fehlerberichts Funktion](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- Schreiben einer Funktion zur Erstellung von Laufzeitfehlerberichten. Weitere Informationen finden Sie unter [Vorgehensweise: Schreiben einer Berichtsfunktion für Laufzeitfehler](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - Anpassen des Ziels für Fehlermeldungen.
 
@@ -55,6 +55,6 @@ Wenn Sie mit **/RTC** (Laufzeitüberprüfungen) kompilieren oder das `runtime_ch
  `_RTC_NumErrors` gibt die Anzahl der Fehlertypen zurück, die bei Laufzeitfehlerüberprüfungen entdeckt wurden. Um eine kurze Beschreibung der einzelnen Fehler zu erhalten, können Sie eine Schleife von 0 bis zum Rückgabewert von `_RTC_NumErrors` durchlaufen, wobei der Iterationswert in jedem Schleifendurchlauf an `_RTC_GetErrDesc` übergeben wird. Weitere Informationen finden Sie unter [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) und [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Verwenden von nativen Laufzeitprüfungen](../debugger/how-to-use-native-run-time-checks.md)
+- [How to: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

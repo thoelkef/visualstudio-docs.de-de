@@ -1,5 +1,5 @@
 ---
-title: Eigenschafts Einstellungen für Webprojekte | Microsoft-Dokumentation
+title: Eigenschafteneinstellungen für Webprojekte | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730593"
@@ -31,7 +31,7 @@ ms.locfileid: "72730593"
 # <a name="property-pages-settings-for-web-projects"></a>Einstellungen von Eigenschaftenseiten für Webprojekte
 Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration im Dialogfeld **Eigenschaftenseiten** ändern. Eine genaue Anweisung finden Sie unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.
 
-### <a name="start-options-category"></a>Start Options Kategorie
+### <a name="start-options-category"></a>Kategorie „Startoptionen“
 
 | **Einstellung** | **Beschreibung** |
 | - | - |
@@ -42,7 +42,7 @@ Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration 
 | **Befehlszeilenargumente:** | Gibt Argumente für den oben aufgeführten Befehl an. |
 | **Arbeitsverzeichnis:** | Gibt das Arbeitsverzeichnis des Programms an, das gerade gedebuggt wird. Das Arbeitsverzeichnis in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ist das Verzeichnis, über das die Anwendung gestartet wird: standardmäßig \bin\debug. |
 | **Start-URL** | Gibt den Pfad der Webanwendung an, die gedebuggt werden soll. |
-| **Öffnen Sie keine Seite. Auf eine Anforderung einer externen Anwendung warten** | Legt fest, dass auf die Anforderung einer externen Anwendung gewartet wird. Mit dieser Option wird weder Internet Explorer noch eine andere Anwendung gestartet. Sie wird lediglich zum Debuggen vorbereitet, wenn sie von einer Anwendung aufgerufen wird. |
+| **Keine Seite öffnen, sondern auf eine Anforderung einer externen Anwendung warten** | Legt fest, dass auf die Anforderung einer externen Anwendung gewartet wird. Mit dieser Option wird weder Internet Explorer noch eine andere Anwendung gestartet. Sie wird lediglich zum Debuggen vorbereitet, wenn sie von einer Anwendung aufgerufen wird. |
 | **Server** | Überschrift, unter der sich Optionen zum zu verwendenden Server befinden. |
 | **Standardwebserver verwenden** | Legt fest, dass der Standardwebserver verwendet wird. |
 | **Benutzerdefinierten Server verwenden** | Ermöglicht es Ihnen, die Basis-URL einzugeben, die als Server verwendet werden soll. |

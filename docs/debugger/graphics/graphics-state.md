@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
 ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/11/2019
 ms.locfileid: "67823772"
@@ -50,7 +50,7 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
 
 |Spalte|Beschreibung|
 |------------|-----------------|
-|Name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API-Eingabestatusansicht** und in der **logischen Statusansicht** geben Namen die hierarchische Beziehung zwischen den Zuständen an.<br /><br /> In der **angehefteten Statusansicht** werden vollqualifizierte Namen in einer einfachen Liste angezeigt.|
+|name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API-Eingabestatusansicht** und in der **logischen Statusansicht** geben Namen die hierarchische Beziehung zwischen den Zuständen an.<br /><br /> In der **angehefteten Statusansicht** werden vollqualifizierte Namen in einer einfachen Liste angezeigt.|
 |Wert|Der Wert des Statuselements.|
 |Typ|Der Typ des Statuselements.|
 

@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: der Webserver wurde gesperrt und blockiert das DEBUG-Verb | Microsoft-Dokumentation'
+title: 'Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9564f077a5379f44d2beb4d7851453dd6b35fa48
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736954"

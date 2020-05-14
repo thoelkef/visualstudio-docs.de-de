@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Verwenden von nativen Laufzeitüberprüfungen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -39,13 +39,13 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732157"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Gewusst wie: Verwenden von systemeigenen Laufzeitprüfungen
-In einem Visual Studio C++ -Projekt können Sie Native [runtime_checks](/cpp/preprocessor/runtime-checks) verwenden, um häufige Laufzeitfehler wie die folgenden zu erfassen:
+# <a name="how-to-use-native-run-time-checks"></a>Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen
+In C++-Projekten in Visual Studio können Sie mit nativen [runtime_checks](/cpp/preprocessor/runtime-checks) häufige Laufzeitfehler abfangen. Beispiele:
 
 - Beschädigung des Stapelzeigers
 

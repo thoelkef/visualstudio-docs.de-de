@@ -1,5 +1,5 @@
 ---
-title: Info zum Fenster "Register" | Microsoft-Dokumentation
+title: Informationen zum Fenster „Register“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738248"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Info zum Fenster "Register" in VisualC#Studio C++(,, F#Visual Basic,)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informationen zum Fenster „Register“ in Visual Studio (C#, C++, Visual Basic, F#)
 
 Das Fenster **Register** ist nur verfügbar, wenn Debuggen auf Adressebene im Dialogfeld **Optionen** im Knoten **Debuggen** aktiviert ist.
 
@@ -40,31 +40,31 @@ Das Fenster **Register** ist nur verfügbar, wenn Debuggen auf Adressebene im Di
 
  Weitere Informationen zum Anzeigen des Fensters **Register** finden Sie unter [Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md).
 
- Wenn Sie sich das Fenster " **Register** " ansehen, werden Einträge wie `EAX = 003110D8` angezeigt.
+ Im Fenster **Register** finden Sie Einträge wie z. B. `EAX = 003110D8`.
 
- Das Symbol auf der linken Seite des `=` Zeichens ist der Register Name `EAX`, in diesem Fall. Die Zahl auf der rechten Seite des Gleichheitszeichens (`=`) stellt den Registerinhalt dar.
+ Das Symbol auf der linken Seite des Gleichheitszeichens (`=`) ist der Registername (in diesem Fall `EAX`). Die Zahl auf der rechten Seite des Gleichheitszeichens (`=`) stellt den Registerinhalt dar.
 
  Das Fenster **Register** bietet neben der Anzeige des Registerinhalts jedoch noch weitere Vorteile. Wenn Sie sich im Unterbrechungsmodus befinden, können Sie im nativen Code auf den Inhalt eines Registers klicken und den jeweiligen Wert bearbeiten. Dies sollten Sie jedoch nicht willkürlich machen. Solange Sie das zu bearbeitende Register und die darin enthaltenen Daten nicht vollständig verstehen, werden achtlose Bearbeitungen vermutlich einen Systemabsturz oder andere unerwünschte Konsequenzen zur Folge haben. Leider würden detailliertere Erklärungen der Registergruppen der verschiedenen Intel- bzw. Intel-kompatiblen Prozessoren den Rahmen dieser kurzen Einführung sprengen.
 
-## <a name="register-groups"></a>Gruppen registrieren
+## <a name="register-groups"></a>Registergruppen
 
 Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** in Gruppen organisiert. Wenn Sie mit der rechten Maustaste in das Fenster **Register** klicken, wird ein Kontextmenü mit einer Liste von Gruppen geöffnet, die Sie je nach Bedarf ein- oder ausblenden können.
 
-## <a name="register-flags"></a>Registrierungsflags
+## <a name="register-flags"></a>Registerflags
 
-Bei Intel x86-Prozessoren werden möglicherweise die folgenden Flags im Fenster " **Register** " angezeigt. Während einer Debugsitzung können Sie diese Flags auch bearbeiten.
+Für Intel x86-Prozessoren werden im Fenster **Register** möglicherweise die folgenden Flags angezeigt. Während einer Debugsitzung können Sie diese Flags bearbeiten.
 
 |Flag|Wert festlegen|
 |-|-|
 |Überlauf|OV = 1|
-|Richtung|Aufwärts = 1|
-|Bricht|Ei = 1|
+|Richtung|UP = 1|
+|Interrupt|EI = 1|
 |Sign|PL = 1|
 |Zero|ZR = 1|
-|Hilfsanführung|AC = 1|
-|Parity|PE = 1|
-|Erledigen|CY = 1|
+|Auxiliary Carry|AC = 1|
+|Parität|PE = 1|
+|Carry|CY = 1|
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)
+- [How to: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

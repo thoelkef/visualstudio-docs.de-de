@@ -1,5 +1,5 @@
 ---
-title: Das Anfügen an den Prozess ist nicht möglich | Microsoft-Dokumentation
+title: Anfügen an den Prozess nicht möglich | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728878"
@@ -32,9 +32,9 @@ Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wu
 
  Benutzer 1 startet eine Terminal Server-Sitzung (Sitzung 1) auf Computer B und ruft in dieser Sitzung eine verwaltete Anwendung auf.
 
- Benutzer 2, der auf beiden Computern Administrator ist, ist auf Computer A angemeldet. Von dort aus versucht er, eine Anwendung an eine Anwendung anzufügen, die in Sitzung 1 auf Computer B ausgeführt wird.
+ Benutzer 2, der auf beiden Computern Administrator ist, ist auf Computer A angemeldet. Von dort aus versucht er, eine Verbindung mit einer Anwendung herzustellen, die in Sitzung 1 auf Computer B ausgeführt wird.
 
- **Szenario 2:** Ein Benutzer hat sich in derselben Arbeitsgruppe unter Verwendung desselben Kennworts bei zwei Computern (A und B) angemeldet. Der Debugger wird auf Computer a ausgeführt und versucht, eine Verbindung mit einer verwalteten Anwendung herzustellen, die auf Computer B ausgeführt wird. Computer A verfügt über **Netzwerk Zugriff: Freigabe-und Sicherheitsmodell für lokale Konten** , die auf **Gast**festgelegt sind.
+ **Szenario 2:** Ein Benutzer hat sich in derselben Arbeitsgruppe unter Verwendung desselben Kennworts bei zwei Computern (A und B) angemeldet. Der Debugger wird auf Computer A ausgeführt und versucht, eine Verbindung mit einer verwalteten Anwendung auf Computer B herzustellen. Auf Computer A ist **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** auf **Gast** festgelegt.
 
 ### <a name="to-solve-scenario-1"></a>So lösen Sie Szenario 1
 
@@ -50,12 +50,12 @@ Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wu
 
 4. Wählen Sie im Fenster „Lokale Sicherheitsrichtlinie“ die Option **Lokale Richtlinien**.
 
-5. Doppelklicken Sie in der Spalte **Richtlinien** auf die Option **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten**.
+5. Doppelklicken Sie in der Spalte **Richtlinien** auf **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten**.
 
 6. Ändern Sie im Dialogfeld **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** die lokale Sicherheitseinstellung in **Klassisch**, und klicken Sie auf **OK**.
 
     > [!CAUTION]
-    > Das Ändern des Sicherheitsmodells in Klassisch kann zu unerwünschtem Zugriff auf freigegebene Dateien und DCOM-Komponenten führen. Wenn Sie diese Änderung vornehmen, kann sich ein Remotebenutzer mit Ihrem lokalen Benutzerkonto anstatt als Gast authentifizieren. Wenn ein Remote Benutzer mit dem Benutzernamen und dem Kennwort übereinstimmt, kann dieser Benutzer auf alle Ordner oder DCOM-Objekte zugreifen, die Sie freigegeben haben. Wenn Sie dieses Sicherheitsmodell verwenden, stellen Sie sicher, dass alle Benutzerkonten auf dem Computer über sichere Kenn Wörter verfügen, oder richten Sie eine isolierte Netzwerk Insel für das Debugging und die debuggten Computer ein, um nicht autorisierten Zugriff zu verhindern.
+    > Das Ändern des Sicherheitsmodells in Klassisch kann zu unerwünschtem Zugriff auf freigegebene Dateien und DCOM-Komponenten führen. Wenn Sie diese Änderung vornehmen, kann sich ein Remotebenutzer mit Ihrem lokalen Benutzerkonto anstatt als Gast authentifizieren. Wenn ein Remotebenutzer Ihren Benutzernamen und Ihr Kennwort angibt, kann dieser Benutzer auf alle von Ihnen freigegebenen Ordner und DCOM-Objekte zugreifen. Um nicht autorisierte Zugriffe bei der Verwendung dieses Sicherheitsmodells zu vermeiden, sollten Sie dafür sorgen, dass alle Benutzerkonten auf dem Computer über sichere Kennwörter verfügen, oder richten Sie einen isolierten Netzwerkabschnitt für zu debuggende Computer und die Computer ein, auf denen das Debuggen ausgeführt wird.
 
 7. Schließen Sie alle Fenster.
 

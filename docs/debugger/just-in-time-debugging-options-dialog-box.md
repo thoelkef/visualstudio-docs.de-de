@@ -1,5 +1,5 @@
 ---
-title: Just-in-Time, Debuggen, Dialog Feld "Optionen" | Microsoft-Dokumentation
+title: Just-In-Time, Debuggen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,7 +22,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731611"
@@ -43,18 +43,18 @@ Um die Seite **Just-In-Time** zu öffnen, klicken Sie im Menü **Extras** auf **
 ## <a name="associated-warnings"></a>Zugeordnete Warnungen
  Wenn Sie diese Seite des Dialogfelds **Optionen** anzeigen, wird möglicherweise folgende Warnmeldung angezeigt:
 
- **Ein anderer Debugger hat sich selbst als Just-in-Time-Debugger registriert. Aktivieren Sie zur Reparatur das Just-in-Time-Debugging, oder führen Sie die Visual Studio-Reparatur aus.**
+ **Ein anderer Debugger hat sich als Just-In-Time-Debugger registriert. Aktivieren Sie zur Reparatur das Just-In-Time-Debugging, oder führen Sie die Visual Studio-Reparatur aus.**
 
  Diese Meldung wird angezeigt, wenn Sie einen anderen Debugger (möglicherweise eine ältere Version des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debuggers) als Just-In-Time-Debugger festgelegt haben.
 
  Eine andere Meldung, die Sie sehen könnten, ist:
 
- **Registrierungsfehler für Just-in-Time-Debugging erkannt. Aktivieren Sie zur Reparatur das Just-in-Time-Debugging, oder führen Sie die Visual Studio-Reparatur aus.**
+ **Registrierungsfehler für Just-In-Time-Debugging. Aktivieren Sie zur Reparatur das Just-In-Time-Debugging, oder führen Sie die Visual Studio-Reparatur aus.**
 
  Wenn eine dieser Warnmeldungen angezeigt wird, sind für das Just-In-Time-Debuggen mit [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] Administratorrechte erforderlich, bis Sie das Problem behoben haben. Wenn Sie versuchen, Just-In-Time-Debuggen unter diesen Bedingungen zu aktivieren, obwohl Sie kein Administrator sind, wird die folgende Fehlermeldung angezeigt:
 
- **Der Zugriff wurde verweigert. Lassen Sie einen Administrator das Just-in-Time-Debuggen aktivieren, oder reparieren Sie die Installation von Visual Studio.**
+ **Zugriff verweigert. Lassen Sie einen Administrator das Just-In-Time-Debugging aktivieren oder die Installation von Visual Studio reparieren.**
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen, Dialogfeld "Optionen"](../debugger/debugging-options-dialog-box.md)
-- [Gewusst wie: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md)
+- [How to: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md)

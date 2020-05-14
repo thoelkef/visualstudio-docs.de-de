@@ -1,5 +1,5 @@
 ---
-title: Registerkarte Ausgabe, die Message-Optionen (Dialogfeld) | Microsoft-Dokumentation
+title: Registerkarte „Ausgabe“, Dialogfeld „Meldungsoptionen“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,34 +12,34 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62905074"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Registerkarte "Ausgabe", Dialogfeld "Meldungsoptionen"
-Verwenden der **Ausgabe** Registerkarte angeben, welche Daten aus den einzelnen Nachrichten zur Liste in [Meldungsansicht](../debugger/messages-view.md). Zum Anzeigen der [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md), wählen Sie **Protokollmeldungen** aus der **Spy** Menü.
+Auf der Registerkarte **Ausgabe** können Sie angeben, welche Daten aus den einzelnen Meldungen in der [Meldungsansicht](../debugger/messages-view.md) aufgelistet werden sollen. Um das [Dialogfeld „Meldungsoptionen“](../debugger/message-options-dialog-box.md) anzuzeigen, wählen Sie im Menü **Spy** die Option **Meldungen protokollieren** aus.
 
- Die folgenden Einstellungen stehen auf der **Ausgabe** Registerkarte:
+ Auf der Registerkarte **Ausgabe** sind folgende Einstellungen verfügbar:
 
- **Zeilennummern** Zeilennummern anzeigen.
+ **Zeilennummern**: Zeigt die Zeilennummern an.
 
- **Schachteln von Nachrichtenebene** Präfix geschachtelte Nachrichten mit einem Punkt pro Ebene.
+ **Message Nesting Level** (Meldungsschachtelungsebene): Geschachtelten Meldungen wird pro Ebene ein Punkt vorangestellt.
 
- **Unformatierte Meldungsparameter** Anzeigen der Hexadezimalwert **wParam** und **lParam** Werte.
+ **Nicht formatierte Meldungsparameter**: Zeigt die **wParam**- und **lParam**-Hexadezimalwerte an.
 
- **Decodierte Meldungsparameter** zeigt die Ergebnisse der Message-spezifische Decodierung der **wParam** und **lParam** Werte.
+ **Decodierte Meldungsparameter**: Zeigt die Ergebnisse der meldungsspezifischen Decodierung der **wParam**- und **lParam**-Werte an.
 
- **Unformatierte Return Values** Anzeigen der Hexadezimalwert **lResult** Wert zurückgeben.
+ **Nicht formatierte Rückgabewerte**: Zeigt die **IResult**-Rückgabe als Hexadezimalwert an.
 
- **Decodiert von Rückgabewerten der** zeigt die Ergebnisse der Message-spezifische Decodierung der **lResult** Wert zurückgeben.
+ **Decodierte Rückgabewerte**: Zeigt die Ergebnisse der meldungsspezifischen Decodierung des **IResult**-Rückgabewerts an.
 
- **Nachrichten der Ursprung Zeit** die verstrichene Zeit seit dem Start der Windows-System (für nur bereitgestellte Meldungen).
+ **Zeitpunkt der Meldungssendung**: Die seit dem Starten des Windows-Systems verstrichene Zeit (nur für gesendete Meldungen).
 
- **Position des Mauszeigers Nachricht** die Bildschirmkoordinaten des Mauszeigers beim Senden der Nachricht (für nur bereitgestellte Meldungen).
+ **Meldungsmausposition**: Die Bildschirmkoordinaten der Maus, als die Meldung gesendet wurde (nur für gesendete Meldungen).
 
- **Zeilen maximal** begrenzen die Anzahl der Zeilen, die in der ausgewählten Ansicht "Nachrichten" beibehalten werden.
+ **Zeilen maximal**: Beschränkt die Anzahl der Zeilen, die in der derzeit ausgewählten Meldungsansicht beibehalten werden.
 
- **Auch die Protokollmeldungen in Datei** Geben Sie eine Ausgabedatei für den Message-Protokoll. Diese Datei wird gleichzeitig mit dem Message-Protokoll-Fenster geschrieben.
+ **Also Log Messages to File** (Meldungen auch in Datei protokollieren): Geben Sie eine Ausgabedatei für das Meldungsprotokoll an. Diese Ausgabedatei wird gleichzeitig mit dem Meldungsprotokollfenster geschrieben.
 
- **Speichern Sie die Einstellungen als Standard** speichern Sie die vorherigen Einstellungen für neue Nachrichten Stream-Fenster. Diese Einstellungen werden gespeichert, wenn Sie Spy++ beenden.
+ **Als Voreinstellung speichern**: Speichert die vorherigen Einstellungen für neue Meldungsdatenstrom-Fenster. Diese Einstellungen werden gespeichert, wenn Sie Spy++ beenden.

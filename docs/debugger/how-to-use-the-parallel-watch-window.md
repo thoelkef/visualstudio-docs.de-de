@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732018"
@@ -29,14 +29,14 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
 
 - Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.
 
-- Die aktuelle Thread Spalte, in der ein gelber Pfeil den aktuellen Thread angibt (ein grüner Pfeil mit einem geschweiften Ende zeigt an, dass ein nicht aktueller Thread über den aktuellen Debugger-Kontext verfügt).
+- Die Spalte mit aktuellen Threads, in der ein gelber Pfeil einen aktuellen Thread kennzeichnet (ein grüner Pfeil mit einem geschweiften Ende zeigt an, dass ein nicht aktueller Thread über den aktuellen Debuggerkontext verfügt).
 
 - Eine konfigurierbare Spalte, in der der Computer, der Prozess, die Kachel, die Aufgabe und der Thread angezeigt werden können.
 
   > [!TIP]
-  > Zum Anzeigen von Task Informationen im Fenster **parallele Überwachung** müssen Sie zuerst das **Aufgaben** Fenster öffnen.
+  > Sie müssen das Fenster **Aufgabe** öffnen, um die Aufgabeninformationen im Fenster **Parallele Überwachung** anzuzeigen.
 
-- Die leeren Spalten zum *Hinzufügen* von Überwachungen, in denen Sie die zu überwachenden Ausdrücke eingeben können.
+- Die leeren Spalten *Überwachung hinzufügen*, in denen Ausdrücke zur Überwachung eingegeben werden können.
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,19 +50,19 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
 
 ### <a name="to-add-a-watch-expression"></a>So fügen Sie einen Überwachungsausdruck hinzu
 
-- Wählen Sie eine der leeren Spalten für die *Überwachung hinzufügen* aus, und geben Sie dann einen Überwachungs Ausdruck ein.
+- Wählen Sie eine der leeren Spalten *Überwachung hinzufügen* aus, und geben Sie dann einen Überwachungsausdruck ein.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf
 
-- Wählen Sie die Spalte Flag für die Zeile (erste Spalte) aus, oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Flag** oder **Flag**aufheben aus.
+- Wählen Sie die Spalte zur Kennzeichnung für die Zeile (erste Spalte) aus, oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Kennzeichnen** oder **Kennzeichnung aufheben** aus.
 
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an
 
-- Wählen Sie in der oberen linken Ecke des Fensters **parallele Überwachung** die Schaltfläche **nur markierte anzeigen** aus.
+- Klicken Sie auf die Schaltfläche **Nur gekennzeichnete anzeigen** in der linken oberen Ecke des Fensters **Parallele Überwachung** aus.
 
 ### <a name="to-switch-to-another-thread"></a>So wechseln Sie zu einem anderen Thread
 
-- Doppelklicken Sie auf die Spalte aktueller Thread (zweite Spalte). (Tastatur: Wählen Sie die Zeile aus, und drücken Sie EINGABETASTE.)
+- Doppelklicken Sie auf die Spalte aktueller Threads (zweite Spalte). (Tastatur: Wählen Sie die Zeile aus, und drücken Sie die EINGABETASTE.)
 
 ### <a name="to-sort-a-column"></a>So sortieren Sie eine Spalte
 
@@ -86,5 +86,5 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Gewusst wie: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)
+- [How to: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

@@ -1,5 +1,5 @@
 ---
-title: Debugging von verwaltetem Code | Microsoft-Dokumentation
+title: Debuggen von verwaltetem Code | Microsoft-Dokumentation
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188410"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuggen von verwaltetem Code (C#, Visual Basic, F#, C++/CLI)
 
-In diesem Abschnitt werden häufige Debugprobleme und-Techniken für verwaltete Anwendungen oder Anwendungen behandelt, die in Sprachen geschrieben wurden, die auf C#die Common Language Runtime C++abzielen, z. b. Visual Basic, und/CLI. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
+In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahrensweisen für verwaltete Anwendungen bzw. Anwendungen erörtert, die in Sprachen für die Common Language Runtime geschrieben wurden, z. B. Visual Basic, C# und C++/CLI. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -38,7 +38,7 @@ Hier werden Assertionen in verwaltetem Code beschrieben. Diese testen Bedingunge
 [Stop-Anweisungen in Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Hier wird die `Stop`-Anweisung beschrieben, die eine Alternative zum Festlegen eines Haltepunkts bietet. Sie finden hier außerdem Beispielcode sowie Vergleiche zwischen der `Stop`-Anweisung und der `End`-Anweisung sowie zwischen der `Stop`-Anweisung und der `Assert`-Anweisung.
 
-[Exemplarische Vorgehensweise: Debuggen eines Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Exemplarische Vorgehensweise: Debuggen eines Windows Forms-Projekts](../debugger/walkthrough-debugging-a-windows-form.md)\
 Hier finden Sie Schritt-für-Schritt-Anweisungen zum Erstellen eines Windows Forms und zum Debuggen dieses Formulars. Ein Windows Form, eine Standardkomponente verwalteter Windows-Anwendungen, ist eine der am häufigsten verwendeten verwalteten Anwendungen. In dieser exemplarischen Vorgehensweise werden Visual C# und Visual Basic verwendet, die Verfahrensweisen zum Erstellen eines Windows Forms mit C++ sind jedoch grundsätzlich vergleichbar.
 
 [Debuggen der OnStart-Methode](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,7 +47,7 @@ Dieser Abschnitt enthält Codebeispiele zum Debuggen der `OnStart`-Methode eines
 [Debuggen im gemischten Modus](../debugger/debugging-mixed-mode-applications.md)\
 Erörtert das Debuggen von Anwendungen im gemischten Modus. Dies sind alle Anwendungen, die nativen Code mit verwaltetem Code kombinieren.
 
-[Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Fehler: Debuggen ist nicht möglich, da ein Kerneldebugger im System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 In diesem Abschnitt wird eine Fehlermeldung beschrieben, die auftritt, wenn Sie versuchen, verwalteten Code auf einem [!INCLUDE[win7](../debugger/includes/win7_md.md)]-, [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]-, [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]-, [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]- oder Windows NT-System zu debuggen, das im Debugmodus gestartet wurde.
 
 [JIT-Optimierung und -Debuggen](../debugger/jit-optimization-and-debugging.md)\
@@ -74,14 +74,14 @@ Beschreibt eine Linkeroption, die <xref:System.Diagnostics.DebuggableAttribute> 
 Hier finden Sie Hinweise zum Debuggen von Windows-Dienstanwendungen, z. B. zum Einrichten, Anhängen an den Prozess, Debuggen des Codes in der `OnStart`-Methode des Diensts und in der Main-Methode, zum Festlegen von Haltepunkten sowie zum Verwenden des Dienststeuerungs-Managers zum Starten, Beenden, Anhalten und Fortsetzen eines Diensts.
 
 [Debuggen und Profilerstellung](/dotnet/framework/debug-trace-profile/index)\
-Erläutert das Debuggen von .NET-Anwendungen und die Konfigurations Anforderungen.
+Hier werden das Debuggen von .NET-Anwendungen sowie die Konfigurationsanforderungen beschrieben.
 
 [Debuggen von Skript- und Webanwendungen](how-to-enable-debugging-for-aspnet-applications.md)\
 Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und Webanwendungen auftreten können.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms-Steuerelementen](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Debuggersicherheit](../debugger/debugger-security.md)
 - [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
