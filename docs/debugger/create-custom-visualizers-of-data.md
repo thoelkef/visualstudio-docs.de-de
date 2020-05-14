@@ -1,5 +1,5 @@
 ---
-title: Erstellen von benutzerdefinierten Daten-Schnellansichten | Microsoft-Dokumentation
+title: Erstellen von benutzerdefinierten Datenschnellansichten | Microsoft-Dokumentation
 ms.date: 11/07/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,70 +21,70 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564722"
 ---
-# <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Daten-Schnellansichten
- Ein *Schnellansicht* ist Teil der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Debugger-Benutzeroberfläche, die eine Variable oder ein Objekt in einer entsprechend seinem Datentyp angezeigt. Beispielsweise wird eine HTML-Schnellansicht eine HTML-Zeichenfolge interpretiert und das Ergebnis zeigt, wie es in einem Browserfenster angezeigt wird. Eine Bitmapschnellansicht interpretiert eine Bitmapstruktur und zeigt die Grafik aus, die es darstellt. Einige Schnellansichten können Sie sowie das Anzeigen der Daten ändern.
+# <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Datenschnellansichten
+ Eine *Schnellansicht* ist Teil der Benutzeroberfläche des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debuggers, in der eine Variable oder ein Objekt auf eine für den jeweiligen Datentyp geeignete Weise angezeigt wird. Eine HTML-Schnellansicht interpretiert beispielsweise eine HTML-Zeichenfolge und zeigt das Ergebnis so an, wie es in einem Browserfenster angezeigt würde. Eine Bitmap-Schnellansicht interpretiert eine Bitmapstruktur und zeigt die zugehörige Grafik an. In einigen Schnellansichten können Sie die Daten nicht nur anzeigen, sondern auch bearbeiten.
 
- Der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debugger beinhaltet sechs Standardschnellansichten. Der Text, HTML, XML und JSON-Schnellansichten für String-Objekten zu arbeiten. Der WPF Tree Visualizer zeigt die Eigenschaften der visuellen Struktur eines WPF-Objekts. Die Dataset-Schnellansicht funktioniert für DataView DataSet und DataTable-Objekten.
+ Der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debugger beinhaltet sechs Standardschnellansichten. Die Text-, HTML-, XML-und JSON-Schnellansichten funktionieren bei Zeichenfolgenobjekten. Die WPF-Strukturschnellansicht zeigt die Eigenschaften der visuellen Struktur eines WPF-Objekts an. Die DataSet-Schnellansicht funktioniert für DataSet-, DataView- und DataTable-Objekte.
 
-Weitere Schnellansichten möglicherweise zum Herunterladen von Microsoft, Drittanbietern und der Community zur Verfügung. Sie können auch eigene Schnellansichten schreiben und installieren Sie sie in der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Debugger.
+Weitere Schnellansichten können von Microsoft, Drittanbietern und aus der Community heruntergeladen werden. Sie können auch eigene Schnellansichten schreiben und sie im [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debugger installieren.
 
-Im Debugger wird eine Schnellansicht durch ein Lupensymbol dargestellt ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Schnellansicht Symbol"). Sie können auswählen, das Symbol in einer **DataTip**, Debugger **sehen Sie sich** Fenster oder **Schnellüberwachung** (Dialogfeld), und wählen Sie dann die entsprechende Schnellansicht für das entsprechende Objekt.
+Im Debugger wird eine Schnellansicht durch das Lupensymbol ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol für Schnellansichten") dargestellt. Das Symbol steht in einem **Datentipp**, im **Überwachungsfenster** des Debuggers oder im Dialogfeld **Schnellüberwachung** zur Verfügung. Wählen Sie dieses Symbol und dann die geeignete Schnellansicht für das entsprechende Objekt aus.
 
-## <a name="write-custom-visualizers"></a>Benutzerdefinierte Schnellansichten schreiben
+## <a name="write-custom-visualizers"></a>Schreiben von benutzerdefinierten Schnellansichten
 
  > [!NOTE]
- > Um eine benutzerdefinierte Schnellansicht für nativen Code zu erstellen, finden Sie unter den [nativen SQLite-Debuggerschnellansicht](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) Beispiel. Benutzerdefinierte Schnellansichten werden nicht für UWP und Windows 8.x-apps unterstützt.
+ > Im Beispiel [Schnellansicht für eine SQLite-Instanz beim nativen Debuggen](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) ist beschrieben, wie Sie eine benutzerdefinierte Schnellansicht für nativen Code erstellen. Benutzerdefinierte Schnellansichten werden für UWP- und Windows 8.x-Apps nicht unterstützt.
 
 Sie können für ein Objekt einer beliebigen verwalteten Klasse eine benutzerdefinierte Schnellansicht schreiben. Ausnahmen stellen <xref:System.Object> und <xref:System.Array> dar.
 
 Die Architektur einer Debuggerschnellansicht besteht aus zwei Teilen:
 
-- Die *Debuggerseite* innerhalb der Visual Studio-Debugger ausgeführt wird, erstellt und zeigt die Benutzeroberfläche der Schnellansicht.
+- Die *Debuggerseite*, die im Visual Studio-Debugger ausgeführt wird, erstellt die Benutzeroberfläche der Schnellansicht und zeigt diese an.
 
-- Die *zu debuggende Seite* wird innerhalb des Prozesses ausgeführt, den Visual Studio debuggt (die *zu debuggende Komponente*). Das Datenobjekt zu visualisieren (z. B. ein Zeichenfolgenobjekt), die in der zu debuggenden Prozess vorhanden ist. Die zu debuggende Seite sendet das Objekt auf der Seite des Debuggers, die sie in der Benutzeroberfläche anzeigt, die Sie erstellen.
+- Die *zu debuggende Seite* wird innerhalb des Prozesses ausgeführt, den Visual Studio debuggt (die *zu debuggende Komponente*). Das darzustellende Datenobjekt (z. B. ein Zeichenfolgenobjekt) ist im zu debuggenden Prozess vorhanden. Die zu debuggende Seite sendet das Objekt an die Debuggerseite, die es auf der von Ihnen erstellten Benutzeroberfläche anzeigt.
 
-Die Debuggerseite empfängt das Datenobjekt aus einer *Objektanbieter* , implementiert die <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> Schnittstelle. Die zu debuggende Seite sendet das Objekt über die *Objektquelle*, ergibt sich aus <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+Die Debuggerseite empfängt das Datenobjekt von einem *Objektanbieter*, der die <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>-Oberfläche implementiert. Die zu debuggende Seite sendet das Objekt über die *Objektquelle*, die von <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> abgeleitet wird.
 
-Der Objektanbieter kann auch Daten zurücksenden zur Objektquelle, können Sie eine Schnellansicht schreiben, die Daten bearbeiten können. Sie Überschreiben der Objektanbieter die ausdrucksauswertung und die Objektquelle zu kommunizieren.
+Der Objektanbieter kann auch Daten an die Objektquelle zurücksenden. Dadurch können Sie eine Schnellansicht schreiben, die Daten bearbeiten kann. Sie überschreiben den Objektanbieter, um mit der Ausdrucksauswertung und der Objektquelle zu kommunizieren.
 
-Die zu debuggende Seite und die Debuggerseite kommunizieren miteinander über <xref:System.IO.Stream> Methoden, die eine serialisieren-Objekt in ein <xref:System.IO.Stream> und Deserialisieren der <xref:System.IO.Stream> zurück in ein Datenobjekt.
+Die zu debuggende Seite und die Debuggerseite kommunizieren miteinander über <xref:System.IO.Stream>-Methoden, die ein Datenobjekt in einem <xref:System.IO.Stream> serialisieren und anschließend den <xref:System.IO.Stream> wieder in ein Datenobjekt konvertieren (deserialisieren).
 
-Sie können eine Schnellansicht für einen generischen Typ erstellen, nur dann, wenn der Typ ein offener Typ ist. Diese Einschränkung entspricht der Einschränkung bei Verwendung des `DebuggerTypeProxy`-Attributs. Weitere Informationen finden Sie unter [Verwenden des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md).
+Sie können für einen generischen Typ nur dann eine Schnellansicht schreiben, wenn es sich um einen offenen Typ handelt. Diese Einschränkung entspricht der Einschränkung bei Verwendung des `DebuggerTypeProxy`-Attributs. Einzelheiten finden Sie unter [Verwenden des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md).
 
-In benutzerdefinierten Schnellansichten treten möglicherweise Sicherheitsprobleme auf. Finden Sie unter [sicherheitsüberlegungen zu Schnellansichten](../debugger/visualizer-security-considerations.md).
+In benutzerdefinierten Schnellansichten treten möglicherweise Sicherheitsprobleme auf. Siehe [Sicherheitsüberlegungen zu Schnellansichten](../debugger/visualizer-security-considerations.md).
 
-Die folgenden Schritte bieten einen allgemeinen Überblick über die Schnellansicht erstellen. Ausführliche Anweisungen finden Sie unter [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oder [Exemplarische Vorgehensweise: Schreiben eine Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
+Die folgenden Schritte bieten einen allgemeinen Überblick über das Erstellen einer Schnellansicht. Ausführliche Anweisungen dazu finden Sie unter [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oder [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
 
 ### <a name="to-create-the-debugger-side"></a>So erstellen Sie die Debuggerseite
 
-Um die Benutzeroberfläche der Schnellansicht auf Debuggerseite zu erstellen, erstellen Sie eine Klasse, die von erbt <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>, und überschreiben die <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> Methode, um die Benutzeroberfläche anzuzeigen. Sie können <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> Windows Forms, Dialogfelder und Steuerelemente in der Schnellansicht angezeigt.
+Zum Erstellen der Benutzeroberfläche der Schnellansicht auf Debuggerseite erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> erbt, und überschreiben die <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName>-Methode zum Anzeigen der Oberfläche. Mit <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> können Sie Windows Forms, Dialogfelder und Steuerelemente in der Schnellansicht anzeigen.
 
 1. Verwenden Sie <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>-Methoden, damit das visuell dargestellte Objekt auf der Debuggerseite ist.
 
 1. Erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> erbt.
 
-1. Überschreiben Sie die <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName>-Methode, um die Oberfläche anzuzeigen. Verwendung <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> Methoden für die Anzeige von Windows Forms, Dialogfelder und Steuerelemente in der Schnittstelle.
+1. Überschreiben Sie die <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName>-Methode, um die Oberfläche anzuzeigen. Mit den <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>-Methoden können Sie Windows Forms, Dialogfelder und Steuerelemente auf der Oberfläche anzeigen.
 
-4. Anwenden <xref:System.Diagnostics.DebuggerVisualizerAttribute>, indem sie die Schnellansicht anzuzeigende (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
+4. Wenden Sie <xref:System.Diagnostics.DebuggerVisualizerAttribute> an, und lassen Sie es in der Schnellansicht anzeigen (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
 
 ### <a name="to-create-the-debuggee-side"></a>So erstellen Sie die zu debuggende Seite
 
-Sie geben zu debuggende Code mit der <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
+Mit dem <xref:System.Diagnostics.DebuggerVisualizerAttribute> geben Sie Code für die zu debuggende Seite an.
 
-1. Übernehmen Sie <xref:System.Diagnostics.DebuggerVisualizerAttribute>, indem Sie diesem Attribut eine Schnellansicht (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) und eine Objektquelle (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) zuweisen. Wenn Sie die Objektquelle weglassen, wird die Schnellansicht eine Standardobjektquelle verwenden.
+1. Übernehmen Sie <xref:System.Diagnostics.DebuggerVisualizerAttribute>, indem Sie diesem Attribut eine Schnellansicht (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) und eine Objektquelle (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) zuweisen. Wenn Sie die Objektquelle weglassen, wird eine Standardobjektquelle für die Schnellansicht verwendet.
 
-1. Damit können die Schnellansicht, bearbeiten und Anzeigen von Datenobjekten, überschreiben die `TransferData` oder `CreateReplacementObject` Methoden aus <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+1. Damit Sie in der Schnellansicht Datenobjekte sowohl anzeigen als auch bearbeiten können, überschreiben Sie die `TransferData`- oder `CreateReplacementObject`-Methode von <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)
-- [Vorgehensweise: Testen und Debuggen einer Schnellansicht](../debugger/how-to-test-and-debug-a-visualizer.md)
+- [How to: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)
+- [How to: Testen und Debuggen einer Schnellansicht](../debugger/how-to-test-and-debug-a-visualizer.md)
 - [Referenz zur Schnellansicht-API](../debugger/visualizer-api-reference.md)
 - [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

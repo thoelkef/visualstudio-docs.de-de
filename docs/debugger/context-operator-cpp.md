@@ -1,5 +1,5 @@
 ---
-title: Kontextoperator im Debugger (C++) | Microsoft-Dokumentation
+title: Kontextoperator im Debugger ( C++ ) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,15 +24,15 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564703"
 ---
-# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Kontextoperator in Visual Studio-Debugger (C++)
+# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Kontextoperator im Visual Studio-Debugger (C++)
 Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositionen, Variablennamen oder Ausdrücken verwenden. Der Kontextoperator eignet sich für die Angabe eines Namens außerhalb des Gültigkeitsbereichs, der andernfalls durch einen lokalen Namen verborgen würde.
 
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntax
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntax
  Es gibt zwei Methoden zum Angeben von Kontext:
 
 1. {,,[*module*] } *expression*

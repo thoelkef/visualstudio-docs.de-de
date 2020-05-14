@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564293"
@@ -23,12 +23,12 @@ Anhand der Informationen dieses Abschnitts können Sie die IntelliTrace-Erweiter
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-Dieser Namespace enthält die IntelliTrace-Erweiterbarkeits-APIs:
+Dieser Namespace enthält die Erweiterbarkeits-APIs von IntelliTrace:
 
 - <xref:Microsoft.VisualStudio.IntelliTrace>
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[IntelliTrace](../debugger/intellitrace.md) enthält Informationen zum Debuggen mit IntelliTrace.
+[IntelliTrace](../debugger/intellitrace.md): Stellt Informationen bereit, wie Sie mit IntelliTrace debuggen können.
 
-[Codebeispiele für Entwickler](https://code.msdn.microsoft.com/) hostet eine beispielanwendung, die zeigt, wie IntelliTrace-Erweiterbarkeit verwendet.
+[Entwickler-Codebeispiele](https://code.msdn.microsoft.com/): Hostet eine Beispielanwendung, die anzeigt, wie die IntelliTrace-Erweiterbarkeit verwendet wird.
