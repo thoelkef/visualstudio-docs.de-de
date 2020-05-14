@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734829"
@@ -37,7 +37,7 @@ Definiert den Standarddateinamen der Grafikprotokolldatei.
 ## <a name="remarks"></a>Hinweise
  Wenn das Präprozessorsymbol `DONT_SAVE_VSGLOG_TO_TEMP` definiert ist, ist der Dateiname relativ zum aktuellen Verzeichnis der aufgezeichneten App oder ein absoluter Pfad. Andernfalls ist er relativ zum Verzeichnis der temporären Dateien des Benutzers und kann kein absoluter Pfad sein.
 
- Um den definierten Dateinamen zu ändern, müssen Sie ihn neu definieren, bevor Sie `vsgcapture.h` in das Programm einschließen.
+ Um den definierten Dateinamen zu ändern, müssen Sie ihn erneut definieren, bevor Sie `vsgcapture.h` in Ihr Programm einschließen.
 
 ## <a name="example"></a>Beispiel
  Dieses Beispiel zeigt, wie der Standarddateiname der Erfassungsdatei geändert wird:

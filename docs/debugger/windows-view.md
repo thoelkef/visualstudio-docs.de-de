@@ -1,5 +1,5 @@
 ---
-title: Windows-Ansicht | Microsoft-Dokumentation
+title: Fensteransicht | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,38 +14,38 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62900857"
 ---
 # <a name="windows-view"></a>Fensteransicht
-Wenn Sie erstmalig Spy++ öffnen, zeigt Windows-Ansicht eine Struktur mit allen Windows- und Steuerelemente im System. Werden die Fenster-Handle und die Klasse angezeigt. Das aktuelle Desktopfenster ist am Anfang der Struktur. Alle anderen Fenster sind untergeordnete Elemente des Desktops, und anhand der Hierarchie Standardfenster aufgeführt sind. Gleichgeordnete Fenster werden im erweiterbaren Listen unter der übergeordneten Elemente eingezogen angezeigt.
+Wenn Sie Spy + + zum ersten Mal öffnen, wird in der Fensteransicht eine Struktur aller Fenster und Steuerelemente im System angezeigt. Das Fensterhandle und der Klassenname werden angezeigt. Das aktuelle Desktopfenster befindet sich ganz oben in der Struktur. Alle anderen Fenster sind untergeordnete Fenster des Desktops und werden entsprechend der Standardfensterhierarchie aufgeführt. Gleichgeordnete Fenster werden in erweiterbaren Listen unter ihren übergeordneten Fenstern eingerückt angezeigt.
 
- Die folgende Abbildung zeigt eine typische Spy++-Windows-Ansicht mit den obersten Knoten erweitert.
+ Die folgende Abbildung zeigt eine typische Spy++-Fensteransicht, bei der der oberste Knoten erweitert ist.
 
- ![Spy++&#43; &#43; Windows-Ansicht](../debugger/media/spy--_windowsview.png "Spy-_WindowsView") Spy++-Windows-Ansicht
+ ![Spy&#43;&#43;-Fensteransicht](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Spy++-Fensteransicht
 
- Das aktuelle Desktopfenster ist am Anfang der Struktur. Alle anderen Fenster sind untergeordnete Elemente des Desktops, und werden anhand der Hierarchie Standardfenster mit nebengeordnete Fenster nach Z-Reihenfolge geordnet aufgeführt. Sie können erweitern oder reduzieren Sie alle übergeordneten Knoten der Struktur, indem Sie auf das + oder - Symbol neben dem Knoten.
+ Das aktuelle Desktopfenster befindet sich ganz oben in der Struktur. Alle anderen Fenster sind untergeordnete Fenster des Desktops und werden entsprechend der Standardfensterhierarchie aufgelistet, wobei gleichgeordnete Fenster in der Z-Reihenfolge sortiert sind. Sie können jeden übergeordneten Knoten der Struktur erweitern oder reduzieren, indem Sie neben dem Knoten auf das Symbol „+“ oder „-“ klicken.
 
- Windows-Ansicht den Fokus hat, können Sie das Suchtool im Verwenden der [Fenster Meldungssuche (Dialogfeld)](../debugger/window-search-dialog-box.md) zum Anzeigen von Informationen in einem beliebigen geöffneten Fenster auf Ihrem System.
+ Wenn die Fensteransicht den Fokus besitzt, können Sie das Suchtool im [Dialogfeld „Fenstersuche“](../debugger/window-search-dialog-box.md) verwenden, um Informationen aus jedem in Ihrem System geöffneten Fenster anzuzeigen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Vorgehensweise: Verwenden des Suchtools](../debugger/how-to-use-the-finder-tool.md) zeigt, wie dieses Tool Windows für die Eigenschaften oder Meldungen überprüft.
+ [How to: Verwenden des Suchtools](../debugger/how-to-use-the-finder-tool.md): Zeigt, wie dieses Tool Fenster auf Eigenschaften oder Meldungen überprüft.
 
- [Vorgehensweise: Suchen nach einem Fenster in der Windows-Ansicht](../debugger/how-to-search-for-a-window-in-windows-view.md) wird erläutert, wie Sie ein bestimmtes Fenster in der Windows-Ansicht.
+ [How to: Suchen nach einem Fenster in der Fensteransicht](../debugger/how-to-search-for-a-window-in-windows-view.md): Erläutert, wie Sie in der Fensteransicht ein bestimmtes Fenster suchen.
 
- [Vorgehensweise: Anzeigen von Fenstereigenschaften](../debugger/how-to-display-window-properties.md) m Verfahren zum Öffnen das Dialogfeld "Eigenschaften".
+ [How to: Anzeigefenstereigenschaften](../debugger/how-to-display-window-properties.md): m-Prozeduren zum Öffnen des Dialogfelds „Fenstereigenschaften“.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Spy++-Ansichten](../debugger/spy-increment-views.md) wird erläutert, die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+ [Spy++-Ansichten](../debugger/spy-increment-views.md): Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
- [Verwenden von Spy++](../debugger/using-spy-increment.md) stellt die Spy++-Tools vor und erläutert, wie sie verwendet werden kann.
+ [Verwenden von Spy++](../debugger/using-spy-increment.md): Bietet eine Einführung in das Tool Spy++ und erläutert, wie es verwendet werden kann.
 
- [Suchen Sie im Dialogfeld Fenster](../debugger/find-window-dialog-box.md) verwendet, um die Eigenschaften oder Nachrichten von einem bestimmten Fenster anzuzeigen.
+ [Dialogfeld „Fenster Suchen“](../debugger/find-window-dialog-box.md): Wird verwendet, um die Eigenschaften oder Meldungen eines bestimmten Fensters anzuzeigen.
 
- [Das Dialogfeld Fenstersuche](../debugger/window-search-dialog-box.md) verwendet, um den Knoten für ein bestimmtes Fenster in der Windows-Ansicht zu suchen.
+ [Fenstersuche (Dialogfeld)](../debugger/window-search-dialog-box.md): Dient zum Suchen des Knotens für ein bestimmtes Fenster in der Fensteransicht.
 
- [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md) verwendet zum Anzeigen der Eigenschaften eines Fensters in Windows-Ansicht ausgewählt.
+ [Fenstereigenschaften (Dialogfeld )](../debugger/window-properties-dialog-box.md): Wird verwendet, um die Eigenschaften eines in der Fensteransicht ausgewählten Fensters anzuzeigen.
 
- [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+ [Spy++-Referenz](../debugger/spy-increment-reference.md): Enthält Abschnitte mit Beschreibungen der einzelnen Menüs und Dialogfelder von Spy++.

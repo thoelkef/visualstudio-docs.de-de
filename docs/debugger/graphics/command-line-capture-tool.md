@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389695"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64808450"
 ---
 # <a name="command-line-capture-tool"></a>Befehlszeilen-Erfassungs-Tool
 DXCap.exe ist ein Befehlszeilenprogramm für die Aufzeichnung und Wiedergabe der Grafikdiagnose. Es unterstützt Direct3D 10 bis Direct3D 12 auf allen Funktionsebenen.
@@ -31,75 +31,75 @@ DXCap.exe -info
 ```
 
 #### <a name="parameters"></a>Parameter
- `-file` `filename` Unter dem Erfassungsmodus (`-c`), `filename` gibt den Namen der grafikprotokolldatei an, die Grafikinformationen aufgezeichnet werden. Wenn `filename` nicht angegeben ist, werden Grafikinformationen in eine Datei namens aufgezeichnet `<appname>-<date>-<time>.vsglog` standardmäßig.
+ `-file` `filename` Unter Aufnahmemodus (`-c`) gibt `filename` den Namen der Grafikprotokolldatei an, in der die Grafikinformationen aufgezeichnet werden. Wenn `filename` nicht angegeben ist, werden Grafikinformationen standardmäßig in der Datei `<appname>-<date>-<time>.vsglog` aufgezeichnet.
 
- Unter Gültigkeitsprüfung (-V)-Modus `filename` wird der Namen der zu prüfenden Grafikprotokolldatei angezeigt. Wenn `filename` nicht angegeben ist, das grafikprotokoll an, die zuletzt überprüft wurde, erneut verwendet.
+ Unter Gültigkeitsprüfung (-V)-Modus `filename` wird der Namen der zu prüfenden Grafikprotokolldatei angezeigt. Wenn `filename` nicht angegeben ist, wird das zuletzt überprüfte Grafikprotokoll erneut verwendet.
 
- `-frame` `frames` Unter dem Erfassungsmodus gibt `frames` die Frames an, die Sie erfassen möchten. Der erste Frame ist 1. Sie können mehrere Frames mithilfe von Kommas und Bereichen angeben. Z. B. wenn `frames` ist `2, 5, 7-9, 15`, dann werden die frames `2`, `5`, `7`, `8`, `9`, und `15` erfasst werden.
+ `-frame` `frames` Unter dem Erfassungsmodus gibt `frames` die Frames an, die Sie erfassen möchten. Der erste Frame ist 1. Sie können mehrere Frames mithilfe von Kommas und Bereichen angeben. Wenn `frames` beispielsweise `2, 5, 7-9, 15` ist, werden die Frames `2`, `5`, `7`, `8`, `9` und `15` aufgezeichnet.
 
 > [!TIP]
-> Verwendung `-frame` `manual` um anzugeben, dass Bilder manuell durch Drücken der Taste "Druck" erfasst werden sollen. Frames können erfasst werden, wenn die Anwendung gestartet wird; Um das Erfassen von Frames zu beenden, kehren Sie zur Befehlszeilen-Schnittstelle zurück und drücken Sie die EINGABETASTE.
+> Verwenden Sie `-frame` `manual`, um anzugeben, dass Bilder manuell durch Drücken der DRUCK-TASTE erfasst werden. Frames können erfasst werden, wenn die Anwendung gestartet wird; Um das Erfassen von Frames zu beenden, kehren Sie zur Befehlszeilen-Schnittstelle zurück und drücken Sie die EINGABETASTE.
 
- `-period` `periods` Unter dem Erfassungsmodus legt `periods` die Bereiche für die Zeit in Sekunden fest, in denen Sie Frames erfassen möchten. Sie können mehrere Perioden mithilfe von Kommas und Bereichen angeben. Zum Beispiel wenn `periods` ist `2.1-5, 7.0-9.3`, dann werden Frames, die zwischen `2.1` und `5` Sekunden und zwischen`7` und `9.3` Sekunden erfasst werden.
+ `-period` `periods` Im Erfassungsmodus legt `periods` die Bereiche für die Zeit in Sekunden fest, in denen Sie Frames erfassen möchten. Sie können mehrere Zeiträume mithilfe von Kommas und Bereichen angeben. Wenn `periods` beispielsweise `2.1-5, 7.0-9.3` ist, werden Frames erfasst, die zwischen `2.1` und `5` Sekunden sowie zwischen `7` und `9.3` Sekunden gerendert werden.
 
- `-c``app` [`args...`] Aufzeichnungsmodus. Unter dem Aufnahmemodus gibt `app` den Namen der Anwendung an, aus der Sie Grafikinformationen aufzeichnen möchten; `args...` gibt zusätzliche Befehlszeilenparameter für diese Anwendung an.
+ `-c` `app` [`args...`] Aufzeichnungsmodus. Unter dem Aufnahmemodus gibt `app` den Namen der Anwendung an, aus der Sie Grafikinformationen aufzeichnen möchten; `args...` gibt zusätzliche Befehlszeilenparameter für diese Anwendung an.
 
- `-p` [`filename`] Wiedergabemodus (`-p`). Unter dem Wiedergabemodus gibt `filename` den Namen der Grafikprotokolldatei an, die wiedergegeben werden soll. Wenn `filename` nicht angegeben ist, das grafikprotokoll, das zuletzt wiedergegeben wurde, erneut verwendet.
+ `-p` [`filename`] Wiedergabemodus (`-p`). Unter dem Wiedergabemodus gibt `filename` den Namen der Grafikprotokolldatei an, die wiedergegeben werden soll. Wenn `filename` nicht angegeben ist, wird das zuletzt wiedergegebene Grafikprotokoll erneut verwendet.
 
- `-debug` Unter dem Wiedergabemodus `-debug` gibt an, dass die Wiedergabe mit der Direct3D-Debug-Ebene aktiviert wiedergegeben werden soll.
+ `-debug` Im Wiedergabemodus gibt `-debug` an, dass die Wiedergabe mit aktivierter Direct3D-Debugebene erfolgen sollte.
 
- `-warp` Unter dem Wiedergabemodus `-warp` gibt an, dass die Wiedergabe mit dem warpsoftwarerenderer wiedergegeben werden soll.
+ `-warp` Im Wiedergabemodus gibt `-warp` an, dass die Wiedergabe mit dem WARP-Softwarerenderer durchgeführt werden sollte.
 
- `-hw` Unter dem Wiedergabemodus `-hw` gibt an, dass die Wiedergabe mit GPU-Hardware wiedergegeben werden soll.
+ `-hw` Im Wiedergabemodus gibt `-hw` an, dass die Wiedergabe mit GPU-Hardware ausgeführt werden sollte.
 
- `-config` Unter dem Wiedergabemodus `-config` zeigt alle Informationen über den Computer, der zum Aufzeichnen der grafikprotokolldatei verwendet wurde.
+ `-config` Im Wiedergabemodus zeigt `-config` alle Informationen zu dem Computer an, der zum Erfassen der Grafikprotokolldatei verwendet wurde.
 
- `-rawmode` Unter dem Wiedergabemodus `-rawmode` gibt an, dass die Wiedergabe ohne Änderung der aufgezeichneten Ereignisse ausgeführt werden soll. Unter normalen Bedingungen werden unter dem Wiedergabemodus möglicherweise geringfügige Änderungen an der Wiedergabe vorgenommen, um das Debuggen zu vereinfachen und die Wiedergabe zu beschleunigen. z. B. kann eine Swap-Ketten-Ausgabe anstelle der Ausführung von Swap-Kette Befehlen simuliert werden. Dieser Wiedergabe ist normalerweise kein Problem, aber Sie benötigen die Wiedergabe auf eine Weise erfolgen, die mit dem erfassten Ereignis zuverlässiger ist. Beispielsweise können Sie diese Option, Full-Screen-Rendering-Verhalten einer App wiederherstellen, die während der Ausführung im Vollbildmodus erfasst wurde.
+ `-rawmode` Im Wiedergabemodus gibt `-rawmode` an, dass die Wiedergabe ohne Änderung der aufgezeichneten Ereignisse ausgeführt werden sollte. Unter normalen Bedingungen werden unter dem Wiedergabemodus möglicherweise geringfügige Änderungen an der Wiedergabe vorgenommen, um das Debuggen zu vereinfachen und die Wiedergabe zu beschleunigen. z. B. kann eine Swap-Ketten-Ausgabe anstelle der Ausführung von Swap-Kette Befehlen simuliert werden. Diese Wiedergabe ist in der Regel kein Problem, möglicherweise muss die Wiedergabe jedoch dem aufgezeichneten Ereignis besser entsprechen. Beispielsweise können Sie diese Option verwenden, um das Vollbild-Renderingverhalten für eine App wiederherzustellen, die während der Ausführung im Vollbildmodus aufgezeichnet wurde.
 
  `-toXML``xml_filename` Unter dem Wiedergabemodus gibt `xml_filename` den Namen der Datei an, in die eine XML-Darstellung der Wiedergabe geschrieben wird. Wenn `xml_filename` nicht angegeben ist, wird die XML-Darstellung in eine Datei mit demselben Namen der widergegebenen Datei geschrieben, erhält aber eine `.xml` Erweiterung.
 
  `-v` Validierungsmodus. Unter dem Validierungsmodus erfasste Frames werden sowohl auf Hardware als auch auf WARP wiedergegeben, und ihre Ergebnisse werden mithilfe einer Bildvergleichsfunktion verglichen. Dieses Feature können Sie verwenden, um Treiberprobleme schnell zu identifizieren, die sich auf das Rendering auswirken.
 
- `-examine``events` Unter dem Validierungsmodus gibt `events` die Grafikereignisse an, deren sofortige Ergebnisse verglichen werden. Z. B. `-examine present,draw,copy,clear` schränkt den Vergleich so um nur die Ereignisse, die zu diesen Kategorien gehören.
+ `-examine` `events` Im Validierungsmodus gibt `events` die Grafikereignisse an, deren sofortige Ergebnisse verglichen werden. Beispielsweise beschränkt `-examine present,draw,copy,clear` den Vergleich auf die Ereignisse, die zu diesen Kategorien gehören.
 
 > [!TIP]
-> Es wird empfohlen, beginnend mit `-examine present,draw,copy,clear` , da dadurch die meisten Probleme offengelegt werden, aber deutlich weniger Zeit als eine umfassendere Gruppe von Ereignissen in Anspruch nehmen. Bei Bedarf können Sie eine größere oder andere Ereignismenge angeben, um diese Ereignisse zu prüfen und andere Arten von Problemen offenzulegen.
+> Es wird empfohlen, mit `-examine present,draw,copy,clear` zu beginnen, da auf diese Weise die meisten Probleme offengelegt werden, und zwar innerhalb einer wesentlich kürzeren Zeit als bei einer umfangreicheren Reihe von Ereignissen. Bei Bedarf können Sie eine größere oder andere Ereignismenge angeben, um diese Ereignisse zu prüfen und andere Arten von Problemen offenzulegen.
 
- `-haltonfail` Unter dem Validierungsmodus `-haltonfail` Validierung angehalten, wenn Unterschiede zwischen der Hardware und dem WARP-Renderer erkannt werden. Die Validierung wird fortgesetzt, wenn eine Taste gedrückt wird.
+ `-haltonfail` Im Validierungsmodus wird mit `-haltonfail` die Validierung angehalten, wenn Unterschiede zwischen der Hardware und dem WARP-Renderer erkannt werden. Die Validierung wird fortgesetzt, wenn eine Taste gedrückt wird.
 
- `-exitonfail` Unter dem Validierungsmodus `-exitonfail` Validierung sofort bei der Unterschiede zwischen der Hardware und dem WARP-Renderer erkannt werden beendet. Wenn Sie auf diese Weise das Programm beendet wird, gibt er `0` in der Umgebung; andernfalls `1`.
+ `-exitonfail` Im Validierungsmodus wird mit `-exitonfail` die Validierung sofort beendet, wenn Unterschiede zwischen der Hardware und dem WARP-Renderer erkannt werden. Wird das Programm auf diese Weise beendet, wird `0` an die Umgebung zurückgegeben; andernfalls wird `1` zurückgegeben.
 
- `-showprogress` Unter dem Validierungsmodus `-showprogress` zeigt Statusinformationen zur Validierung-Sitzung. Der WARP-Fortschritt wird auf der linken Seite angezeigt; der Hardware-Status wird auf der rechten Seite angezeigt.
+ `-showprogress` Im Validierungsmodus zeigt `-showprogress` Statusinformationen zur Validierungssitzung an. Der WARP-Fortschritt wird auf der linken Seite angezeigt; der Hardware-Status wird auf der rechten Seite angezeigt.
 
- `-e` `search_string` Listet die UWP-apps, die installiert werden. Sie können diese Informationen verwenden, zum Ausführen von Befehlszeilen-Snapshots mit UWP-apps.
+ `-e` `search_string` Listet die installierten UWP-Apps auf. Mithilfe dieser Informationen können Sie Befehlszeilenerfassungen mit UWP-Apps ausführen.
 
  `-info` Zeigt Informationen über den Computer und die Erfassung von DLLs an.
 
 ## <a name="remarks"></a>Hinweise
  DXCap.exe kann in drei verschiedenen Modi betrieben werden:
 
- Aufnahme-Modus (-c) erfassen Sie Grafikinformationen aus einer ausgeführten app, und notieren Sie sich in einer grafikprotokolldatei. Die Erfassungsfunktionen und das Dateiformat sind identisch mit denen in Visual Studio.
+ Aufzeichnungsmodus (-c): Erfassen von Grafikinformationen aus einer ausgeführten Anwendung und Aufzeichnen dieser Informationen in einer Grafikprotokolldatei. Die Erfassungsfunktionen und das Dateiformat sind identisch mit denen in Visual Studio.
 
- Wiedergabemodus (-p) Wiedergabe zuvor grafikereignisse aus einer vorhandenen grafikprotokolldatei erfasst. Standardgemäß erfolgt die Wiedergabe in einem Fenster, auch wenn die Grafikprotokolldatei aus einer Vollbild-Anwendung erfasst wurde. Erfolgt die Wiedergabe im Vollbild-nur-Datei von einer Vollbild-Anwendung erfasst wurde, wenn die grafikprotokolldatei und `-rawmode` angegeben ist.
+ Wiedergabemodus (-p): Wiedergeben von zuvor aufgezeichneten Grafikereignissen aus einer vorhandenen Grafikprotokolldatei. Standardgemäß erfolgt die Wiedergabe in einem Fenster, auch wenn die Grafikprotokolldatei aus einer Vollbild-Anwendung erfasst wurde. Die Wiedergabe erfolgt nur dann im Vollbildmodus, wenn die Grafikprotokolldatei von einer Vollbildanwendung aufgezeichnet und `-rawmode` angegeben wurde.
 
- Validierungsmodus (`-v`) Überprüfen des Renderingverhaltens durch Wiedergabe erfasster Frames sowohl auf Hardware als auch auf WARP und Vergleich ihrer Ergebnisse mithilfe einer bildvergleichsfunktion. Dieses Feature können Sie verwenden, um Treiberprobleme schnell zu identifizieren, die sich auf das Rendering auswirken.
+ Validierungsmodus (`-v`): Überprüfen des Renderingverhaltens durch Wiedergeben erfasster Frames sowohl auf Hardware als auch auf WARP und Vergleich der Ergebnisse mithilfe einer Bildvergleichsfunktion. Dieses Feature können Sie verwenden, um Treiberprobleme schnell zu identifizieren, die sich auf das Rendering auswirken.
 
  Zusätzlich zu diesen Modi führt dxcap.exe zwei weitere Funktionen aus, die keine Aufnahme oder Wiedergabe von Grafikinformationen durchführen.
 
- Enumerationsfunktion (`-e`) zeigt Informationen zu den UWP-apps, die auf dem Computer installiert sind. Zu diesen Details zählen der Paketname und die App-ID, die die ausführbare Datei in eine UWP-app zu identifizieren. Verwenden Sie zum Erfassen von Grafikinformationen aus einer Windows Store-Anwendung mit DXCap.exe den Paketnamen und die Anwendungs-ID anstelle der ausführbaren Datei, die verwendet wird, wenn Sie eine Desktop-Anwendung aufnehmen.
+ Aufzählungsfunktion (`-e`): Anzeigen von Details zu den auf dem Computer installierten UWP-Apps. Zu diesen Details zählen der Paketname und die Anwendungs-ID, die die ausführbare Datei in einer UWP-App identifizieren. Verwenden Sie zum Erfassen von Grafikinformationen aus einer Windows Store-Anwendung mit DXCap.exe den Paketnamen und die Anwendungs-ID anstelle der ausführbaren Datei, die verwendet wird, wenn Sie eine Desktop-Anwendung aufnehmen.
 
- Info-Funktion (`-info)` zeigt Details über den Computer und Erfassung von DLLs an.
+ Infofunktion (`-info)`): Anzeigen von Details zum Computer und den Aufzeichnungs-DLLs.
 
 ## <a name="examples"></a>Beispiele
 
 ### <a name="capture-graphics-information-from-a-desktop-app"></a>Erfassung von Grafikinformationen aus einer Desktopanwendung
- Verwendung `-c` an die app, aus der Sie Grafikinformationen erfassen möchten.
+ Mit `-c` geben Sie die App an, von der aus Sie Grafikinformationen aufzeichnen möchten.
 
 ```cmd
 DXCap.exe -c BasicHLSL11.exe
 ```
 
- In der Standardeinstellung Grafikinformationen aufgezeichnet wird, in eine Datei namens `<appname>-<date>-<time>.vsglog`. Verwendung `-file` an eine andere Datei zum Aufzeichnen.
+ Standardmäßig werden Grafikinformationen in der Datei `<appname>-<date>-<time>.vsglog` erfasst. Mit `-file` geben Sie eine andere Datei zum Aufzeichnen an.
 
 ```cmd
 DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
@@ -116,51 +116,51 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
 > [!NOTE]
 > Da die nach der App angezeigten Befehlszeilenargumente an sie übergeben werden, müssen Sie die für „DXCap.exe“ bestimmten Argumente vor der `-c`-Option angeben.
 
-### <a name="capture-graphics-information-from-a-uwp-app"></a>Erfassen Sie Grafikinformationen aus einer UWP-app.
- Sie können Grafikinformationen aus einer UWP-app erfassen.
+### <a name="capture-graphics-information-from-a-uwp-app"></a>Erfassen von Grafikinformationen aus einer UWP-App
+ Sie können Grafikinformationen aus einer UWP-App aufzeichnen.
 
 ```cmd
 DXCap.exe -c Microsof.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps
 ```
 
- Verwendung der DXCap.exe zum Erfassen von einer UWP-app funktioniert ähnlich wie es von einer Windows-desktop-app erfassen, aber stattdessen Identifizierung nach Dateinamen, identifizieren Sie eine UWP-app nach ihrem Paketnamen und dem Namen oder ID der ausführbaren Datei in, das Paket möchten  Erfassen Sie aus. Um einfacher zu erfahren, wie die UWP-apps zu identifizieren, die auf Ihrem Computer installiert sind, verwenden Sie die `-e` -Option mit DXCap.exe, um diese aufzulisten:
+ Die Verwendung von „DXCap.exe“ zum Erfassen von einer UWP-App ähnelt dem Erfassen von einer Windows-Desktopanwendung, aber anstelle des Identifizierens nach Dateinamen identifizieren Sie eine UWP-App nach dem Paketnamen und dem Namen oder der ID der ausführbaren Datei in diesem Paket, aus der Sie die Erfassung durchführen möchten. Um auf Ihrem Computer installierte UWP-Apps einfacher zu identifizieren, verwenden Sie die Option `-e` mit „DXCap.exe“, um diese aufzulisten:
 
 ```cmd
 DXCap.exe -e
 ```
 
- Sie können eine optionale Suchzeichenfolge angeben, um die Anwendung zu finden, die Sie suchen. Wenn die zu suchende Zeichenfolge angegeben wird, listet DXCap.exe der UWP-apps, deren Paketname, Anwendungsname oder app-IDs der Suchzeichenfolge entsprechen. Die Groß- und Kleinschreibung wird bei der Suche nicht berücksichtigt.
+ Sie können eine optionale Suchzeichenfolge angeben, um die Anwendung zu finden, die Sie suchen. Wenn die zu suchende Zeichenfolge angegeben ist, listet „DXCap.exe“ die UWP-Apps auf, deren Paketname, App-Name oder App-IDs der Suchzeichenfolge entsprechen. Die Groß- und Kleinschreibung wird bei der Suche nicht berücksichtigt.
 
 ```cmd
 DXCap.exe -e map
 ```
 
- Der obige Befehl listet die UWP-apps, die mit "Zuordnung"; übereinstimmen. So sieht die Ausgabe aus:
+ Der obige Befehl listet UWP-Apps auf, die mit „map“ übereinstimmen. Dies ist die Ausgabe:
 
- **Package "Microsoft.BingMaps":** **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Name: Microsoft.BingMaps** **Publisher        : CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US** **Version: 2.1.2914.1734** **ausführbare Anwendungen:** **Id: AppexMaps** **exe-Datei: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: Keine** **AppSpec (zum Starten): DXCap.exe - C Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** die letzte Zeile der Ausgabe für jede aufgelistete Anwendung zeigt der Befehl, der sie Grafikinformationen erfassen können.
+ **Package "Microsoft.BingMaps":** **InstallDirectory : C:\Programme\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533** **Name             : Microsoft.BingMaps** **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US** **Version          : 2.1.2914.1734** **Launchable Applications:** **Id: AppexMaps** **Exe: C:\Programme\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: No** **AppSpec (to launch): DXCap.exe -c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** Die letzte Zeile der Ausgabe für jede aufgeführte Anwendung zeigt den Befehl, den Sie verwenden können, um Grafikinformationen daraus zu erfassen.
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Erfassen Sie bestimmte Bilder oder Bilder zwischen bestimmten Zeiten.
- Verwendung `-frame` um die Frames anzugeben, die Sie erfassen mithilfe von Kommas und Bereichen möchten:
+ Mit `-frame` legen Sie mithilfe von Kommas und Bereichen die Frames fest, die Sie erfassen möchten:
 
 ```cmd
 DXCap.exe -frame 2,5,7-9,15 -c SimpleBezier11.exe
 ```
 
- Oder verwenden Sie `-period` an einen Satz von Zeiträumen, bei denen Frames erfasst. Zeiträume werden in Sekunden angegeben, und mehrere Bereiche können angegeben werden:
+ Sie können auch `-period` verwenden, um verschiedene Zeiträume anzugeben, in denen Frames erfasst werden. Zeiträume werden in Sekunden angegeben, und mehrere Bereiche können angegeben werden:
 
 ```cmd
 DXCap.exe -period 2.1-5, 7.0-9.3 -c SimpleBezier11.exe
 ```
 
 ### <a name="capture-frames-interactively"></a>Erfassen Sie Frames interaktiv.
- Verwendung `-manual` Frames interaktiv erfassen. Drücken Sie die EINGABETASTE, um die Aufnahme zu starten, und drücken Sie die EINGABETASTE, um zu stoppen.
+ Mit `-manual` erfassen Sie Frames interaktiv. Drücken Sie die EINGABETASTE, um die Aufnahme zu starten, und drücken Sie die EINGABETASTE, um zu stoppen.
 
 ```cmd
 DXCap.exe -manual -c SimpleBezier11.exe
 ```
 
-### <a name="play-back-a-graphic-log-file"></a>Wiedergeben einer Grafik Protokolldatei
- Verwendung `-p` eine zuvor aufgezeichnete grafikprotokolldatei wiedergeben.
+### <a name="play-back-a-graphic-log-file"></a>Wiedergeben einer Grafikprotokolldatei
+ Mit `-p` können Sie eine zuvor aufgezeichnete Grafikprotokolldatei wiedergeben.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog
@@ -173,20 +173,20 @@ DXCap.exe -p
 ```
 
 ### <a name="play-back-in-raw-mode"></a>Wiedergabe im raw-Modus
- Verwendung `-rawmode` zur Wiedergabe der aufgezeichnete Befehle genau so, wie sie aufgetreten sind. Unter einer normalen Wiedergabe werden bestimmte Befehle emuliert, z. B. wird eine Grafikprotokolldatei, die aus einer Vollbild-Anwendung erfasst wurde, in einem Fenster wiedergegeben; bei aktiviertem raw-Modus versucht die gleiche Datei diese im Vollbildmodus wiederzugeben.
+ Mit `-rawmode` können Sie aufgezeichnete Befehle genau so wiedergeben, wie sie aufgetreten sind. Unter einer normalen Wiedergabe werden bestimmte Befehle emuliert, z. B. wird eine Grafikprotokolldatei, die aus einer Vollbild-Anwendung erfasst wurde, in einem Fenster wiedergegeben; bei aktiviertem raw-Modus versucht die gleiche Datei diese im Vollbildmodus wiederzugeben.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -rawmode
 ```
 
 ### <a name="play-back-using-warp-or-a-hardware-device"></a>Wiedergabe mit WARP oder einem Hardwaregerät
- Vielleicht möchten Sie die Wiedergabe einer Grafikprotokolldatei erzwingen, die auf einem Hardwaregerät mit WARP aufgezeichnet wurde, oder Sie erzwingen die Wiedergabe eines Protokolls auf einem Hardwaregerät, das WARP verwendet. Verwendung `-warp` für die Wiedergabe mit WARP.
+ Vielleicht möchten Sie die Wiedergabe einer Grafikprotokolldatei erzwingen, die auf einem Hardwaregerät mit WARP aufgezeichnet wurde, oder Sie erzwingen die Wiedergabe eines Protokolls auf einem Hardwaregerät, das WARP verwendet. Verwenden Sie `-warp` für die Wiedergabe mit WARP.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -warp
 ```
 
- Verwendung `-hw` für die Wiedergabe mit Hardware.
+ Verwenden Sie `-hw` für die Wiedergabe mithilfe der Hardware.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -hw
@@ -206,26 +206,26 @@ DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear
 ```
 
 ### <a name="convert-a-graphics-log-file-to-pngs"></a>Konvertieren einer Grafikprotokolldatei in PNG-Dateien
- Um Frames aus einer Grafikprotokolldatei anzuzeigen oder zu analysieren, können mit DXCap.exe erfasste Frames als PNG (Portable Network Graphics)-Bilddateien gespeichert werden. Verwendung `-screenshot` , unter dem Wiedergabemodus zur Ausgabe erfasste Frames als PNG-Dateien.
+ Um Frames aus einer Grafikprotokolldatei anzuzeigen oder zu analysieren, können mit DXCap.exe erfasste Frames als PNG (Portable Network Graphics)-Bilddateien gespeichert werden. Mit `-screenshot` im Wiedergabemodus können Sie erfasste Frames als PNG-Dateien ausgeben.
 
 ```cmd
 DXCap.exe -p BasicHLSL11.vsglog -screenshot
 ```
 
- Verwendung `-frame` mit `-screenshot` um die Frames anzugeben, die Sie ausgeben möchten.
+ Verwenden Sie `-frame` mit `-screenshot`, um die Frames anzugeben, die Sie ausgeben möchten.
 
 ```cmd
 DXCap.exe -p BasicHLSL11.vsglog -screenshot -frame 5, 7-9
 ```
 
 ### <a name="convert-a-graphics-log-file-to-xml"></a>Konvertieren einer Grafikprotokolldatei in XML-Dateien
- Um Grafikprotokolldateien mit vertrauten Tools wie FindStr oder XSLT zu verarbeiten und zu analysieren, kann DXCap.exe eine Grafikprotokolldatei in XML konvertiert werden. Verwendung `-toXML` unter dem Wiedergabemodus, das Protokoll in XML zu konvertieren, anstatt es zu sichern.
+ Um Grafikprotokolldateien mit vertrauten Tools wie FindStr oder XSLT zu verarbeiten und zu analysieren, kann DXCap.exe eine Grafikprotokolldatei in XML konvertiert werden. Mit `-toXML` im Wiedergabemodus können Sie das Protokoll in XML konvertieren, anstatt es wiederzugeben.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -toXML
 ```
 
- Standardmäßig wird die XML-Ausgabe in eine Datei mit demselben Namen wie das Grafikprotokoll geschrieben, aber die Erweiterung .xml wurde zugewiesen. Im obigen Beispiel wird die XML-Datei mit dem Namen werden **regression_test_12.xml**. Um der XML-Datei auf einen anderen Namen geben, geben Sie ihn nach dem `-toXML`.
+ Standardmäßig wird die XML-Ausgabe in eine Datei mit demselben Namen wie das Grafikprotokoll geschrieben, aber die Erweiterung .xml wurde zugewiesen. Im obigen Beispiel erhält die XML-Datei den Namen **regression_test_12.xml**. Um der XML-Datei einen anderen Namen zu geben, geben Sie ihn nach `-toXML` an.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -toXML temp.xml

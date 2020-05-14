@@ -1,5 +1,5 @@
 ---
-title: Grafik Pipeline Stufen | Microsoft-Dokumentation
+title: Grafikpipelinestufen | Microsoft-Dokumentation
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735469"
@@ -22,7 +22,7 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
 
  Im Folgenden finden Sie das Fenster „Pipelinestufen“:
 
- ![Ein 3D-Objekt durchläuft die Pipeline Stufen.](media/gfx_diag_demo_pipeline_stages_orientation.png)
+ ![Ein 3D-Objekt durchläuft die Pipelinestufen.](media/gfx_diag_demo_pipeline_stages_orientation.png)
 
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Verstehen des Fensters Grafikpipelinestufen
  Im Fenster „Pipelinestufen“ wird das Ergebnis jeder Stufe der Grafikpipeline einzeln veranschaulicht, und zwar für jeden Zeichnen-Befehl. Für gewöhnlich werden die Ergebnisse von Stufen in der Mitte der Pipeline ausgeblendet, wodurch es schwierig wird, den Ursprung des Renderingproblems zu finden. Durch die Veranschaulichung jeder einzelnen Stufe erleichtert das Fenster „Pipelinestufen“ das Auffinden des Problemursprungs. Beispielsweise können Sie problemlos nachvollziehen, wenn die Vertex-Shader-Stufe dazu führt, dass ein Objekt unerwartet neben dem Bildschirm gezeichnet wird.
@@ -58,54 +58,54 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
 > [!NOTE]
 > Compute-Shader werden nicht im Fenster **Grafikpipelinestufen** unterstützt.
 
- **Eingabe Assembler** Der Eingabe Assembler liest von der APP angegebene Index-und Vertexdaten und assembliert Sie für die Grafikhardware.
+ **Eingabeassembler:** Der Eingabeassembler liest die durch Ihre App angegebenen Index- und Vertexdaten und assembliert sie für die Grafikhardware.
 
  Im Fenster „Pipelinestufen“ wird die Ausgabe „Eingabe-Assembler“ in einem Drahtmodell veranschaulicht. Wählen Sie zur detaillierten Anzeige des Ergebnisses im Fenster **Grafikpipelinestufen** die Option **Eingabe-Assembler** aus, um die assemblierten Scheitelpunkte mithilfe des Modell-Editors in vollständigem 3D anzuzeigen.
 
 > [!NOTE]
 > Wenn die `POSITION`-Semantik nicht in der Eingabe-Assembler-Ausgabe vorhanden ist, dann wird in der **Eingabe-Assembler**-Phase nichts angezeigt.
 
- **Vertex-Shader** Die Vertex-Shader-Stufe verarbeitet Scheitel Punkte, die in der Regel Vorgänge wie Transformation, Skinning und Beleuchtung ausführen. Vertex-Shader generieren die gleiche Anzahl an Scheitelpunkten, die sie als Eingabe verwenden.
+ **Vertex-Shader:** In der Vertex-Shader-Stufe werden Scheitelpunkte verarbeitet, wobei in der Regel Vorgänge wie die Transformation, das Skinning und die Beleuchtung ausgeführt werden. Vertex-Shader generieren die gleiche Anzahl an Scheitelpunkten, die sie als Eingabe verwenden.
 
  Im Fenster „Pipelinestufen“ wird die Ausgabe „Vertex-Shader“ als ein Drahtmodell-Rasterbild veranschaulicht. Wählen Sie zum genaueren Anzeigen des Ergebnisses im Fenster **Grafikpipelinestufen** die Option **Vertex-Shader** aus, um die verarbeiteten Scheitelpunkte im Bild-Editor anzuzeigen.
 
 > [!NOTE]
 > Wenn die `POSITION`- oder `SV_POSITION`-Semantik nicht in der Vertex-Shader-Ausgabe vorhanden ist, dann wird in der **Vertex-Shader**-Phase nichts angezeigt.
 
- **Rumpf-Shader** (nur Direct3D 11 und Direct3D 12) die Hull-Shader-Stufe verarbeitet Steuerungs Punkte, die eine niedrige Ordnung definieren, wie z. b. eine Linie, ein Dreieck oder ein Quad. Als Ausgabe werden ein Geometriepatch mit höherer Ordnung und Patchkonstanten generiert, die an die Mosaikphase einer festen Funktion weitergegeben werden.
+ **Hull-Shader** (nur Direct3D 11 und Direct3D 12): In der Hull-Shader-Stufe werden Kontrollpunkte verarbeitet, die eine Oberfläche mit geringer Ordnung wie eine Linie, ein Dreieck oder ein Quadrupel definieren. Als Ausgabe werden ein Geometriepatch mit höherer Ordnung und Patchkonstanten generiert, die an die Mosaikphase einer festen Funktion weitergegeben werden.
 
  Die Hull-Shader-Stufe wird im Fenster „Pipelinestufen“ nicht visualisiert.
 
- Mosaik **Stufe** (nur Direct3D 11 und Direct3D 12) die Mosaik Phase ist eine Hardware Einheit fester Funktion (nicht programmierbar), die die von der Ausgabe des Hull-Shaders dargestellte Domäne vorverarbeitet. In der Ausgabe wird ein Samplingmuster der Domäne und ein Satz von kleineren Primitiven erstellt (Punkte, Linien, Dreiecke), die diese Beispiele verbinden.
+ **Mosaikstufe** (nur Direct3D 11 und Direct3D 12): Bei der Mosaikstufe handelt es sich um eine Hardwareeinheit mit fester Funktion (nicht programmierbar), die die durch die Ausgabe des Hull-Shaders repräsentierte Domäne vorverarbeitet. In der Ausgabe wird ein Samplingmuster der Domäne und ein Satz von kleineren Primitiven erstellt (Punkte, Linien, Dreiecke), die diese Beispiele verbinden.
 
  Die Mosaikstufe wird im Fenster „Pipelinestufen“ nicht veranschaulicht.
 
- **Domänen-Shader** (nur Direct3D 11 und Direct3D 12) die Domäne-Shader-Phase verarbeitet Geometrie Erweiterungen höherer Ordnung aus dem Hull-Shader, zusammen mit Mosaik Faktoren aus der Mosaik Phase. Die Mosaikfaktoren können Mosaikeingabefaktoren und -ausgabefaktoren enthalten. In der Ausgabe wird die Vertexposition eines Punkts im Ausgabepatch gemäß den Mosaikfaktoren berechnet.
+ **Domänen-Shader** (nur Direct3D 11 und Direct3D 12): In der Domänen-Shader-Stufe werden Geometriepatches höherer Ordnung aus dem Hull-Shader zusammen mit Mosaikfaktoren aus der Mosaikstufe verarbeitet. Die Mosaikfaktoren können Mosaikeingabefaktoren und -ausgabefaktoren enthalten. In der Ausgabe wird die Vertexposition eines Punkts im Ausgabepatch gemäß den Mosaikfaktoren berechnet.
 
  Die Domain-Shader-Stufe wird im Fenster „Pipelinestufen“ nicht visualisiert.
 
- **Geometry-Shader** Die Geometry-Shader-Stufe verarbeitet ganze primitive – Punkte, Linien oder Dreiecke – zusammen mit optionalen Scheitelpunkt Daten für Rand angrenzende primitive. Im Gegensatz zu Vertex-Shadern können Geometrie-Shader mehr oder weniger Primitive generieren, als sie als Eingabe verwenden.
+ **Geometrie-Shader:** In der Geometrie-Shader-Stufe werden vollständige Primitive (Punkte, Linien oder Dreiecke) zusammen mit optionalen Vertexdaten für direkt benachbarte Primitive verarbeitet. Im Gegensatz zu Vertex-Shadern können Geometrie-Shader mehr oder weniger Primitive generieren, als sie als Eingabe verwenden.
 
  Im Fenster „Pipelinestufen“ wird die Geometrie-Shader-Ausgabe als ein Drahtmodell-Rasterbild veranschaulicht. Wählen Sie zum genaueren Anzeigen des Ergebnisses im Fenster **Grafikpipelinestufen** die Option **Geometrie-Shader** aus, um die verarbeiteten Primitive im Bild-Editor anzuzeigen.
 
- **Stream-Ausgabe Phase** In der Stream-Ausgabestufe können transformierte primitive vor der rasterisierung abgefangen und in den Arbeitsspeicher geschrieben werden. von dort aus können die Daten als Eingabe in die vorherigen Stufen der Grafik Pipeline umgeleitet oder von der CPU gelesen werden.
+ **Stream-Ausgabestufe:** In der Stream-Ausgabestufe können Primitive vor der Rasterung und dem Schreiben in den Arbeitsspeicher abgefangen werden. Von dort aus können die Daten erneut als Eingabe in den Kreislauf zu den vorherigen Stufen der Grafikpipeline gelangen oder durch die CPU eingelesen werden.
 
  Die Stream-Ausgabestufe wird im Fenster „Pipelinestufen“ nicht veranschaulicht.
 
- **Rasterizer-Phase** Die Raster-Phase ist eine Hardware Einheit fester Funktion (nicht programmierbar), mit der Vektor primitive – Punkte, Linien, Dreiecke – in ein Rasterbild konvertiert werden, indem eine Scan Zeilen Konvertierung durchgeführt wird. Während der Rasterung werden Scheitelpunkte in homogene Clipräume umgewandelt und abgeschnitten. In der Ausgabe werden Pixel-Shader zugeordnet, und Pro-Vertex-Attribute werden primitivübergreifend interpoliert und für den Pixel-Shader zur Verfügung gestellt.
+ **Rasterizer-Stufe:** Bei der Rasterizer-Stufe handelt es sich um eine Hardwareeinheit mit fester Funktion (nicht programmierbar), die durch Ausführung der Abtastlinienkonvertierung Vektorprimitive (Punkte, Linien, Dreiecke) in ein Rasterbild konvertiert. Während der Rasterung werden Scheitelpunkte in homogene Clipräume umgewandelt und abgeschnitten. In der Ausgabe werden Pixel-Shader zugeordnet, und Pro-Vertex-Attribute werden primitivübergreifend interpoliert und für den Pixel-Shader zur Verfügung gestellt.
 
  Die Stufe des Rasterizers wird im Fenster „Pipelinestufen“ nicht veranschaulicht.
 
- **Pixelshader** Die Pixel-Shader-Stufe verarbeitet gerachtelte primitive und interpoliert Vertex-Daten, um pro Pixel-Werte wie Farbe und Tiefe zu generieren.
+ **Pixel-Shader:** In der Pixel-Shader-Stufe werden gerasterte Primitive zusammen mit interpolierten Vertexdaten zum Genieren von Pro-Pixel-Werten wie Farbe und Tiefe verarbeitet.
 
  Im Fenster „Pipelinestufen“ wird die Pixel-Shader-Ausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Wählen Sie zum genaueren Anzeigen des Ergebnisses im Fenster **Grafikpipelinestufen** die Option **Pixel-Shader** aus, um die verarbeiteten Primitive im Bild-Editor anzuzeigen.
 
- **Ausgabe Fusion** In der Ausgabe Zusammenführungs Phase werden die Auswirkungen der neu gerenderten Pixel zusammen mit den vorhandenen Inhalten der entsprechenden Puffer – Farbe, Tiefe und Schablone – kombiniert, um neue Werte in diesen Puffern zu erzielen.
+ **Ausgabemerger:** In der Ausgabemerger-Stufe werden die Auswirkungen der neu gerenderten Pixel zusammen mit den vorhandenen Inhalten der entsprechenden Puffer (Farbe, Tiefe und Schablone) kombiniert, um neue Werte in diesen Puffern zu generieren.
 
  Im Fenster „Pipelinestufen“ wird die Ausgabezusammenführungsausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Wählen Sie zum genaueren Anzeigen der Ergebnisse im Fenster **Grafikpipelinestufen** die Option **Ausgabezusammenführung** aus, um den zusammengeführten Framepuffer anzuzeigen.
 
-### <a name="vertex-and-geometry-shader-preview"></a>Vertex-und Geometry-Shader-Vorschau
- Wenn Sie die Scheitelpunkt-oder Geometry-Shader-Stufe im Fenster " **Pipeline Stufen** " auswählen, können Sie die Eingaben für und Ausgaben im Shader im folgenden Bereich anzeigen.  Hier finden Sie Details zur Liste der Scheitel Punkte, die den Shadern bereitgestellt werden, nachdem Sie von der Eingabe Assembler-Stufe assembliert wurden.
+### <a name="vertex-and-geometry-shader-preview"></a>Vorschau des Vertex- und des Geometrie-Shaders
+ Wenn Sie im Fenster **Pipelinestufen** die Stufe des Vertex- oder des Geometrie-Shaders auswählen, werden die Eingaben und Ausgaben des Shaders im unteren Bereich angezeigt.  Hier werden die Details zur Liste der Scheitelpunkte angezeigt, die den Shadern übermittelt werden, nachdem sie durch die Eingabeassemblerstufe assembliert wurden.
 
  ![Anzeige des Vertexshader-Phaseneingabepuffers](media/gfx_diag_vertex_shader_inbuffers.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Grafik Pixel Verlauf | Microsoft-Dokumentation
+title: Grafikpixelverlauf | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735486"
@@ -35,14 +35,14 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
 
  Sie können jeden Primitiv erweitern, um zu untersuchen, wie die Pixel-Shader-Ausgabe mit der vorhandenen Pixelfarbe zusammengeführt wurde, um die Ergebnisfarbe zu erzeugen. Von hier aus können Sie den Pixel Shader-Code prüfen oder debuggen, der dem Primitiv-Typ zugeordnet ist, und Sie können den Vertex-Shader Knoten zum Überprüfen der Vertex-Shaders-Eingaben erweitern.
 
-### <a name="exclusion"></a> Ausschluss eines Primitivs
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Ausschluss eines Primitivs
  Wenn ein Primitiv die Pixelfarbe nicht beeinflusst, kann der Ausschluss für eine Vielzahl von Gründen erfolgen. Jeder Grund wird durch ein Symbol dargestellt, das in dieser Tabelle beschrieben wird:
 
 |Symbol|Grund für den Ausschluss|
 |----------|--------------------------|
-|![Symbol für tiefen Test Fehler.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Das Pixel wurde ausgeschlossen, weil der Tiefentest fehlgeschlagen ist.|
-|![Symbol für "Scissor-Test Fehler".](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Das Pixel wurde ausgeschlossen, weil der Scherentest fehlgeschlagen ist.|
-|![Symbol "Schablone-Test Fehler".](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Das Pixel wurde ausgeschlossen, weil der Schablonentest fehlgeschlagen ist.|
+|![Symbol für Fehler beim Tiefentest.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Das Pixel wurde ausgeschlossen, weil der Tiefentest fehlgeschlagen ist.|
+|![Symbol für Fehler beim Scherentest.](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Das Pixel wurde ausgeschlossen, weil der Scherentest fehlgeschlagen ist.|
+|![Symbol für Fehler beim Schablonentest.](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Das Pixel wurde ausgeschlossen, weil der Schablonentest fehlgeschlagen ist.|
 
 ### <a name="draw-call-exclusion"></a>Ausschluss des Zeichenaufrufs
  Wenn alle Primitive in einem Zeichnen-Aufruf von der Auswirkung auf das Renderingziel ausgeschlossen werden, da sie einen Test nicht bestehen, kann der Aufruf einer Zeichnung nicht erweitert werden, und ein Symbol, das dem Grund für den Ausschluss entspricht, wird daneben angezeigt. Die Gründe für den Ausschluss des Aufrufs einer Zeichnung ähneln den Gründen für den Ausschluss von Primitiven, und die Symbole sind ähnlich.

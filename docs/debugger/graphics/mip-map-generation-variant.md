@@ -1,5 +1,5 @@
 ---
-title: MIP-Map-Generierungs Variante | Microsoft-Dokumentation
+title: Mipmap-Generierungsvariante | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734904"
@@ -26,7 +26,7 @@ Für 3D-Szenen empfehlen wir Mipmaps, wenn Speicher verfügbar ist, um die zusä
 Wenn diese Variante zu einer deutlichen Leistungssteigerung führt, zeigt dies an, dass Sie Texturen ohne Aktivierung von Mipmaps verwenden und deshalb den Texturcache nicht optimal nutzen.
 
 ## <a name="remarks"></a>Hinweise
-Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. Insbesondere wird die MIP-Map-Generierung erzwungen, wenn das D3D11_TEXTURE2D_DESC-Objekt, das an `pDesc` weitergegeben wird, eine nicht veränderliche Shaderressource beschreibt. Das heißt:
+Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. Die Mipmap-Erzeugung wird insbesondere dann erzwungen, wenn das in `pDesc` übergebene Objekt D3D11_TEXTURE2D_DESC eine nicht veränderliche Shaderressource beschreibt. Das bedeutet:
 
 - Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.
 
@@ -62,7 +62,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 ```
 
-Wenn Sie eine Textur mit einer vollständigen Mip-Kette erstellen möchten, setzen Sie `D3D11_TEXTURE2D_DESC::MipLevels` auf 0. Die Anzahl der MIP-Ebenen in einer vollständigen MIP-Kette ist Floor (log2 (n) + 1), wobei n die größte Dimension der Textur ist.
+Wenn Sie eine Textur mit einer vollständigen Mip-Kette erstellen möchten, setzen Sie `D3D11_TEXTURE2D_DESC::MipLevels` auf 0. Die Anzahl der Mip-Ebenen in einer vollständigen Mip-Kette ist floor(log2(n) + 1), wobei n die größte Dimension der Textur ist.
 
 Bitte bedenken Sie, dass bei einer Bereitstellung der ursprünglichen Daten auf `CreateTexture2D` ein D3D11_SUBRESOURCE_DATA-Objekt für jede Mip-Ebene erstellt werden muss.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erfassen von Grafik Informationen | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734725"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Exemplarische Vorgehensweise: Erfassen von Grafikinformationen
+# <a name="walkthrough-capturing-graphics-information"></a>Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose verwendet wird, um Grafikinformationen aus einer Direct3D-App manuell zu erfassen.
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:
@@ -45,18 +45,18 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 #### <a name="to-capture-graphics-information"></a>So erfassen Grafikinformationen
 
-- Wählen Sie in der Grafikdiagnose-Symbolleiste die Schaltfläche **Erfassen** aus. ![Symbol "Grafik Erfassung" Schaltfläche](media/debuggingdirectxgraphics.png "Debuggingdirectxgraphics ")
+- Wählen Sie in der Grafikdiagnose-Symbolleiste die Schaltfläche **Erfassen** aus. ![Symbol für die Schaltfläche „Grafikerfassung“](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
    - oder -
 
    Wenn die App auf dem Bildschirm angezeigt wird, drücken Sie die **Drucktaste**.
 
-  Immer wenn Sie Informationen über Frames erfassen, zeichnet die Grafikdiagnose die Direct3D-Ereignisse und den zugeordneten Zustand auf und fügt die Daten einem Grafikprotokoll hinzu. Für jede Grafikdiagnosesitzung wird ein neues Grafikprotokoll erstellt. Weitere Informationen zu Grafik Protokollen finden Sie unter [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).
+  Immer wenn Sie Informationen über Frames erfassen, zeichnet die Grafikdiagnose die Direct3D-Ereignisse und den zugeordneten Zustand auf und fügt die Daten einem Grafikprotokoll hinzu. Für jede Grafikdiagnosesitzung wird ein neues Grafikprotokoll erstellt. Weitere Informationen zu Grafikprotokollen finden Sie unter [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
  Diese exemplarische Vorgehensweise veranschaulicht, wie Grafikinformationen manuell erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:
 
-- Erfahren Sie, wie Sie aufgezeichnete Grafikinformationen mithilfe der Grafikdiagnosetools analysieren können. Siehe [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).
+- Erfahren Sie, wie Sie aufgezeichnete Grafikinformationen mithilfe der Grafikdiagnosetools analysieren können. Weitere Informationen finden Sie unter [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Capturing Graphics Information](capturing-graphics-information.md)

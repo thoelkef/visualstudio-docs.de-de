@@ -1,5 +1,5 @@
 ---
-title: Halbquarter Textur Dimensionen Variant | Microsoft-Dokumentation
+title: Halb-/Viertel-Texturdimensionsvariante | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f4c82836f5a80fae421a30721d8c3ee4c3d6893d
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735395"
@@ -41,7 +41,7 @@ Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.
   Wenn Mipmaps für die Textur aktiviert werden, reduziert die Variante die Anzahl der Mip-Ebenen entsprechend – um eine Ebene, wenn auf halbe Größe skaliert wird, oder um zwei Ebenen, wenn auf Viertelgröße skaliert wird.
 
 ## <a name="example"></a>Beispiel
- Diese Variante ändert die Größe von Texturen zur Laufzeit, bevor der Aufruf an `CreateTexture2D`. Wir empfehlen bei diesem Ansatz die Verwendung eines Produktionscodes, da die Texturen in vollständiger Größe mehr Speicherplatz verbrauchen und der zusätzliche Schritt die Ladezeiten in Ihrer App bedeutend in die Länge ziehen kann – insbesondere bei komprimierten Texturen, für denen Kodierung beträchtliche Computerressourcen erforderlich sind. Wir empfehlen, die Größe Ihrer Texturen stattdessen mithilfe eines Bildeditors oder Bildprozessors, der Teil Ihrer Erstellungspipeline ist, offline zu ändern. Diese Ansätze reduzieren Speicheranforderungen, eliminieren den Laufzeit-Overhead in Ihrer App und wenden mehr Bearbeitungszeit auf, sodass Sie die beste Bildqualität erreichen, wenn Sie Ihre Texturen verkleinern oder komprimieren.
+ Diese Variante ändert die Größe von Texturen zur Laufzeit vor dem Aufruf von `CreateTexture2D`. Wir empfehlen bei diesem Ansatz die Verwendung eines Produktionscodes, da die Texturen in vollständiger Größe mehr Speicherplatz verbrauchen und der zusätzliche Schritt die Ladezeiten in Ihrer App bedeutend in die Länge ziehen kann – insbesondere bei komprimierten Texturen, für denen Kodierung beträchtliche Computerressourcen erforderlich sind. Wir empfehlen, die Größe Ihrer Texturen stattdessen mithilfe eines Bildeditors oder Bildprozessors, der Teil Ihrer Erstellungspipeline ist, offline zu ändern. Diese Ansätze reduzieren Speicheranforderungen, eliminieren den Laufzeit-Overhead in Ihrer App und wenden mehr Bearbeitungszeit auf, sodass Sie die beste Bildqualität erreichen, wenn Sie Ihre Texturen verkleinern oder komprimieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [Mipmap-Generierungsvariante](mip-map-generation-variant.md)

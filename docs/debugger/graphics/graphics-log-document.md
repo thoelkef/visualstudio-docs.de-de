@@ -1,5 +1,5 @@
 ---
-title: Grafik Protokoll Dokument | Microsoft-Dokumentation
+title: Grafikprotokolldokument | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735517"
@@ -24,7 +24,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 
  So sieht ein Grafikprotokolldokument in der Grafikanalyse aus:
 
- ![Ein Grafik Protokoll, das zwei erfasste Frames enthält.](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
+ ![Grafikprotokoll mit zwei erfassten Frames](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
 
 ## <a name="understanding-graphics-log-documents"></a>Grundlegendes zu Grafikprotokolldokumenten
  Wenn Sie das Grafikprotokolldokument mithilfe der Grafikanalyse überprüfen, können Sie die erfassten Auswirkungen von Direct3D-Ereignissen auf das Renderziel visuell darstellen. Sie können Bereiche des Renderziels festlegen, die unerwartete Ausgabe enthalten. Wenn Sie ein Pixel im betroffenen Bereich auswählen, können Sie dieses, seine Shader, die Direct3D-Ereignisse, die Auswirkungen auf das Pixel hatten, die Anwendungsaufrufliste, die zu diesen Ereignissen führte, sowie die DirectX-Objekte, die diese Ereignisse unterstützen, mit der Grafikdiagnose überprüfen. Sie können diese Informationen verwenden, um Renderingprobleme im Spiel oder in der App zu bestimmen.
@@ -37,19 +37,19 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 
 #### <a name="to-inspect-a-pixel"></a>So überprüfen Sie ein Pixel
 
-- Wählen Sie das gewünschte Pixel im obersten Abschnitt des Grafikprotokolldokuments aus der Renderzielausgabe aus. Wenn ein Pixel aktiviert ist, können Sie im Fenster **Grafikpixelverlauf** ausführliche Informationen über das ausgewählte Pixel anzeigen. Weitere Informationen finden Sie unter [Pixel Verlauf](graphics-pixel-history.md).
+- Wählen Sie das gewünschte Pixel im obersten Abschnitt des Grafikprotokolldokuments aus der Renderzielausgabe aus. Wenn ein Pixel aktiviert ist, können Sie im Fenster **Grafikpixelverlauf** ausführliche Informationen über das ausgewählte Pixel anzeigen. Weitere Informationen finden Sie unter [Pixelverlauf](graphics-pixel-history.md).
 
 ## <a name="playback-machine"></a>Wiedergabecomputer
  In der rechten oberen Ecke der **Frameliste** wird auch der **Wiedergabecomputer** angezeigt. Der Wiedergabecomputer ist ein Computer oder ein Gerät, das Grafikereignisse aus einer Grafikprotokolldatei während einer späteren Grafikdiagnosesitzung wiedergibt. Wenn Sie ein anderes Gerät als Ihren Entwicklungscomputer zur Wiedergabe der aufgezeichneten Ereignisse verwenden, können Sie die Ausführungsumgebung genauer reproduzieren, in der das Problem aufgetreten ist – Sie können beispielsweise einen Computer mit anderer Grafikhardware oder anderen Treibern als Ihr Entwicklungscomputer oder andere Arten von Geräten verwenden, z. B. ein ARM-basiertes Windows RT-Tablet oder ein Gerät mit Windows Phone.
 
- Informationen zum Angeben eines Wiedergabecomputers finden Sie unter [How to: Change the Graphics Diagnostics Playback Machine (Vorgehensweise: Ändern des Wiedergabecomputers für die Grafikdiagnose)](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Informationen zur Festlegung eines Wiedergabecomputers finden Sie unter [Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="graphics-log-summary-information"></a>Kurzinformationen zum Grafikprotokoll
  Wenn das aktive Dokument eine Graphikprotokolldatei ist, werden im Fenster **Eigenschaften** Informationen zur Umgebung angezeigt, in der die Grafikdiagnose-Erfassungssitzung gehostet wird. Es werden verschiedene Kategorien von Informationen angezeigt.
 
- **Direct3D-Informationen** Listet Informationen zu den Hardware-und Treiber Features des Anzeige Adapters, der während der Erfassungs Sitzung verwendet wurde.
+ Unter **Direct3D-Informationen** werden Informationen zu der Hardwarekonfiguration und den Treiberfunktionen der Grafikkarte aufgeführt, die während der Erfassungssitzung verwendet wurde.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**10-Bit-XR-Format mit hoher Farbtiefe**|**True**, wenn das 10-Bit-XR-Format mit hoher Farbtiefe unterstützt wird; andernfalls **False**.|
 |**DirectCompute CS 4.x**|**True**, wenn der Compute-Shader 4.0 unterstützt wird; andernfalls **False**.|
@@ -59,9 +59,9 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 |**Erweiterte Formate (BGRA usw.)**|**True**, wenn erweiterte Formate wie BGRA unterstützt werden; andernfalls **False**.|
 |**Maximale Hardwarefunktionsebene**|Zeigt die höchste Funktionsebene an, die über die Grafikkarte unterstützt wird.|
 
- **Anzeigeinformationen** Listet Informationen zum Anzeige Adapter auf, der während der Erfassungs Sitzung verwendet wurde.
+ Unter **Anzeigeinformationen** werden Informationen zu der Grafikkarte aufgeführt, die während der Erfassungssitzung verwendet wurde.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Beschreibung**|Die Zeichenfolge für die Grafikkartenbeschreibung.|
 |**Anzeigespeicher**|Der Speicherplatz, der auf der Grafikkarte installiert ist.|
@@ -69,17 +69,17 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 |**Treiberversion**|Die Version des Grafikkartentreibers.|
 |**Name**|Der Name der Grafikkarte.|
 
- **Experiment Datei** Listet Informationen über die Experiment Datei auf, die der Erfassungs Sitzung zugeordnet ist.
+ Unter **Experimentdatei** werden Informationen zu der Experimentdatei aufgeführt, die mit dieser Erfassungssitzung verknüpft ist.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Pfad**|Der Pfad der .vsglog-Datei. **Hinweis:**  Bei der Legacy Erfassung wird diese Eigenschaft nicht verwendet.|
+|**Pfad**|Der Pfad der .vsglog-Datei. **Hinweis**:  In früheren Erfassungen wird diese Eigenschaft nicht verwendet.|
 
- **Modul Informationen** Listet den Namen und die Version der DLLs (Dynamic Link Libraries), die während der Erfassungs Sitzung von der App geladen wurden.
+ Unter **Modulinformationen** werden der Name und die Version der Dynamic Link Librarys (DLLs) aufgeführt, die während der Erfassungssitzung durch die App geladen wurden.
 
- **System Informationen** Listet Informationen über die Hardware und das Betriebssystem auf, die die APP während der Erfassungs Sitzung gehostet haben.
+ Unter **Systeminformationen** werden Informationen zu der Hardware und dem Betriebssystem aufgeführt, die die App während der Erfassungssitzung gehostet haben.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Arbeitsspeicher**|Der Speicher, der auf dem Computer installiert ist.|
 |**Betriebssystemarchitektur**|Die CPU-Architektur des Betriebssystems des Zielcomputers.|
@@ -87,18 +87,18 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 |**Prozessor**|Der Prozessor, der auf dem Computer installiert ist.|
 |**Architektur der Zielanwendung**|Die CPU-Architektur der App auf dem Zielcomputer. Diese kann sich von der **Betriebssystemarchitektur** unterscheiden.|
 
- **Zielanwendung** Listet Informationen über die APP auf, die den Betreff der Erfassungs Sitzung ist.
+ Unter **Zielanwendung** werden Informationen zu der App aufgeführt, die von der Erfassungssitzung erfasst wird.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Datum/Uhrzeit der letzten Änderung**|Datum und Uhrzeit der Erstellung der App.|
 |**Pfad**|Der Pfad der App.|
 |**Prozess-ID**|Die Prozess-ID, die zur App angegeben wurde.|
 |**Version**|Die App-Version.|
 
- **VSG-Protokolldatei** Listet Informationen zum Grafik Protokoll Dokument auf.
+ Unter **VSG-Protokolldatei** werden Informationen zum Grafikprotokolldokument aufgeführt.
 
-| property | Beschreibung |
+| Eigenschaft | Beschreibung |
 |------------------------| - |
 | **Erstellt von** | Der Name der App, die das Grafikprotokolldokument erstellt hat. Wenn die Erfassungssitzung z. B. von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] initiiert wurde (manuelle Erfassung) ist der Wert dieser Eigenschaft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | **Startzeit der Sitzung** | Das Datum und die Uhrzeit, zu der die Erfassungssitzung begann. |

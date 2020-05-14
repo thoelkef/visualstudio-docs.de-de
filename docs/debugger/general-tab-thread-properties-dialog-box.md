@@ -1,5 +1,5 @@
 ---
-title: Registerkarte "Allgemein", Thread-Eigenschaftendialogfeld | Microsoft-Dokumentation
+title: Registerkarte „Allgemein“, Dialogfeld „Threadeigenschaften“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,29 +13,29 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62896366"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Threadeigenschaften"
-Verwenden Sie das Dialogfeld zu öffnen, um weitere Informationen zu einem bestimmten Thread. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Ansicht "Threads"](../debugger/threads-view.md) Fenster, oder Sie öffnen [Meldungsansicht](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.
+Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Thread zu erfahren. Verschieben zum Öffnen dieses Dialogfelds den Fokus auf ein [Threadansichtsfenster](../debugger/threads-view.md), oder öffnen Sie die [Meldungsansicht](../debugger/messages-view.md), und erweitern Sie eine Meldung. Wählen Sie in der Struktur einen beliebigen Threadknoten und anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.
 
- Die **Threadeigenschaften** Dialogfeld enthält einen einzigen Bereich, der **allgemeine** Registerkarte. Die folgenden Einstellungen sind verfügbar:
+ Das Dialogfeld **Threadeigenschaften** enthält einen einzelnen Bereich: die Registerkarte **Allgemein**. Die folgenden Einstellungen sind verfügbar:
 
-|Eingabe|Beschreibung|
+|Eintrag|Beschreibung|
 |-----------|-----------------|
 |**Modulname**|Der Name des Moduls.|
-|**Thread-ID**|Die eindeutige ID dieses Threads. Beachten Sie, dass Thread-ID-Nummern wiederverwendet werden. Identifizieren sie einen Thread, nur für die Lebensdauer des Threads.|
-|**Prozess-ID**|Die eindeutige ID dieses Prozesses. Prozess-ID-Nummern werden wiederverwendet, damit sie einen Prozess nur für die Lebensdauer des Prozesses identifizieren. Der Prozess-Objekttyp wird erstellt, wenn ein Programm ausgeführt wird. Alle Threads in einem Prozess gemeinsam nutzen denselben Adressraum und haben Zugriff auf die gleichen Daten. Wählen Sie diesen Wert zum Anzeigen der Eigenschaften die Prozess-ID.|
-|**Threadzustand**|Der aktuelle Zustand des Threads. Ein Thread ausgeführt wird, ist einen Prozessor verwenden; ein Standby-Thread ist zu verwenden. Ein bereit-Thread wartet auf einen Prozessor verwenden, da diese nicht kostenlos ist. Ein Thread im Übergang wartet darauf, dass eine Ressource ausgeführt wie z.B. das Warten der Ausführungsstapel von der Festplatte gelesen werden. Ein wartenden Thread ist den Prozessor nicht erforderlich, da sie eine Operation in der Peripherie oder Freiwerden einer Ressource wartet.|
-|**Warteursache**|Dies gilt nur, wenn der Thread im Wartezustand befindet. Ereignispaare werden verwendet, für die Kommunikation mit geschützten Subsystemen.|
-|**CPU-Zeit**|CPU-Gesamtzeit für diesen Prozess und seine Threads. Gleich Benutzerzeit + privilegierte Zeit.|
-|**Benutzerzeit**|Die insgesamt verstrichene Zeit, dass dieser Thread Code im Benutzermodus ausgeführt hat, hat. Anwendungen werden im Benutzermodus ausgeführt, wie Subsysteme wie die Fenstermanager und der Grafik-Engine.|
-|**Privilegierte Zeit**|Die insgesamt verstrichene Zeit, dass dieser Thread die Ausführung von Code im privilegierten Modus beansprucht hat. Wenn ein Windows-System-Dienst aufgerufen wird, wird der Dienst im privilegierten Modus für den Zugriff auf Systemdaten oft ausgeführt. Solche Daten werden von Threads im Benutzermodus ausgeführt vor Zugriff geschützt. Aufrufe an das System können explizit oder implizit, wie z. B. wenn ein Seitenfehler oder eine Unterbrechung auftritt.|
-|**Verstrichene Zeit**|Die gesamte verstrichene Zeit (in Sekunden) hat dieser Thread ausgeführt wurde.|
-|**Aktuelle Priorität**|Die aktuelle dynamische Priorität dieses Threads. Threads innerhalb eines Prozesses können ausgelöst und senken ihre eigenen Basispriorität Bezug auf die Basispriorität des Prozesses.|
-|**Basispriorität**|Die aktuelle Basispriorität des Threads.|
-|**Startadresse**|Virtuelle Startadresse für diesen Thread.|
+|**Thread-ID**|Die eindeutige ID dieses Threads. Hinweis: Die Nummern von Thread-IDs werden wiederverwendet und identifizieren einen Thread nur während dessen Lebensdauer.|
+|**Prozess-ID**|Die eindeutige ID dieses Prozesses. Die Nummern von Prozess-IDs werden wiederverwendet und identifizieren einen Prozess nur während dessen Lebensdauer. Der Prozessobjekttyp wird erstellt, wenn ein Programm ausgeführt wird. Alle Threads in einem Prozess teilen sich den gleichen Adressraum und haben Zugriff auf die gleichen Daten. Wählen Sie diesen Wert aus, um die Eigenschaften der Prozess-ID anzuzeigen.|
+|**Threadzustand**|Der aktuelle Zustand des Threads. Ein ausgeführter Thread verwendet einen Prozessor. Ein Standbythread steht kurz davor, einen Prozessor zu verwenden. Ein bereiter Thread wartet auf die Verwendung eines Prozessors, da gerade keiner frei ist. Ein Thread im Übergangszustand wartet auf die Ausführung einer Ressource, also beispielsweise darauf, dass der zugehörige Ausführungsstapel vom Datenträger aus eingebunden wird. Von einem wartenden Thread wird der Prozessor nicht benötigt, da er darauf wartet, dass ein Peripherievorgang abgeschlossen oder eine Ressource frei wird.|
+|**Warteursache**|Nur relevant, wenn sich der Thread im Wartezustand befindet. Für die Kommunikation mit geschützten Subsystemen werden Ereignispaare verwendet.|
+|**CPU-Zeit**|Die gesamte CPU-Zeit, die für diesen Prozess und die zugehörigen Threads aufgewendet wurde. Entspricht der Summe aus Benutzerzeit und privilegierter Zeit.|
+|**Benutzerzeit**|Die insgesamt verstrichene Zeit, während der von diesem Thread Code im Benutzermodus ausgeführt wurde. Anwendungen werden im Benutzermodus ausgeführt. Gleiches gilt für Subsysteme wie den Fenster-Manager und die Grafik-Engine.|
+|**Privilegierte Zeit**|Die insgesamt verstrichene Zeit, während der von diesem Thread Code im privilegierten Modus ausgeführt wurde. Wenn ein Windows-Systemdienst aufgerufen wird, wird dieser häufig im privilegierten Modus ausgeführt, um auf private Systemdaten zugreifen zu können. Solche Daten sind vor dem Zugriff durch Threads im Benutzermodus geschützt. Systemaufrufe können explizit aber auch implizit sein, etwa im Falle eines Seitenfehlers oder eines Interrupts.|
+|**Verstrichene Zeit**|Die gesamte verstrichene Zeit (in Sekunden), während der dieser Thread ausgeführt wurde.|
+|**Aktuelle Priorität**|Die aktuelle dynamische Priorität dieses Threads. Threads innerhalb eines Prozesses können ihre eigene Basispriorität in Relation zur Basispriorität des Prozesses erhöhen und verringern.|
+|**Basispriorität**|Die aktuelle Basispriorität dieses Threads.|
+|**Startadresse**|Die virtuelle Startadresse für diesen Thread.|
 |**Benutzer-PC**|Der Benutzerprogrammzähler für den Thread.|
-|**Kontextwechsel**|Die Anzahl der Wechsel von einem Thread in einen anderen. Threadänderungen können entweder in einem einzelnen Prozess oder zwischen Prozessen auftreten. Ein Threadswitch kann verursacht werden, von einem Thread, der Informationen in einer anderen oder von einem Thread präemptiv unterbrochen wird, wenn ein Thread höherer Priorität ausgeführt wird.|
+|**Kontextwechsel**|Die Anzahl von Wechseln zwischen Threads. Threadwechsel können innerhalb eines einzelnen Prozesses oder prozessübergreifend auftreten. Ein Threadwechsel kann ausgelöst werden, wenn ein Thread Informationen von einem anderen Thread anfordert oder wenn ein Thread mit einer höheren Priorität ausführungsbereit und dem ursprünglichen Thread vorweggenommen wird.|
