@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6ba41447af829a378f70d2286ed7a7b9295ed109
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916293"
@@ -33,7 +33,7 @@ Eine Anwendung im gemischten Modus ist eine Anwendung, in der nativer Code (C++)
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Aktivieren von "Bearbeiten und Fortfahren" in C++ beim Debuggen im gemischten Modus
 
-Informationen zum Aktivieren von bearbeiten und C++fortfahren für finden Sie unter [aktivieren und Deaktivieren von "Bearbeiten und Fortfahren](../debugger/how-to-enable-and-disable-edit-and-continue.md)".
+Informationen zum Aktivieren von „Bearbeiten und fortfahren“ für C++ finden Sie unter [Aktivieren und Deaktivieren von „Bearbeiten und fortfahren“](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
 > Um "Bearbeiten und Fortfahren" für C++ in Visual Studio 2013 zu verwenden, müssen Sie die Legacyversion der Debug-Engine wiederherstellen. Informationen dazu finden Sie im Microsoft Application Lifecycle Management-Blogbeitrag [Switching to Managed Compatibility Mode in Visual Studio 2013 (Wechseln zum verwalteten Kompatibilitätsmodus in Visual Studio 2013)](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/)
@@ -42,7 +42,7 @@ Informationen zum Aktivieren von bearbeiten und C++fortfahren für finden Sie un
  In einer Anwendung im gemischten Modus erfordert die Auswertung von Eigenschaften durch den Debugger sehr viel Rechenleistung. Folglich werden Debugoperationen, z. B. das schrittweise Ausführen, scheinbar langsam ausgeführt. Weitere Informationen finden Sie unter [Stepping](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)). Falls Sie beim Debuggen im gemischten Modus einen Leistungsabfall beobachten, empfiehlt es sich u. U., die Eigenschaftenauswertung in den Debuggerfenstern zu deaktivieren.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
 
 ### <a name="to-turn-off-property-evaluation"></a>So deaktivieren Sie die Eigenschaftenauswertung
 

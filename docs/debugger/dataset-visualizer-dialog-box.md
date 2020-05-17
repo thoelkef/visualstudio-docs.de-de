@@ -1,5 +1,5 @@
 ---
-title: DataSet-Schnellansicht (Dialog Feld) | Microsoft-Dokumentation
+title: Dialogfeld „Dataset-Schnellansicht“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745601"
@@ -32,7 +32,7 @@ Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-
  Sie können in dieser Schnellansicht Änderungen an den Objekten vornehmen. Die Änderungen werden gespeichert, sobald Sie für eine Zeile einen Commit ausführen.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- Tabelle verwenden Sie dieses Dropdown-Listenfeld, um eine Tabelle innerhalb des Datasets auszuwählen, die Sie visualisieren möchten.
+ Tabelle: Verwenden Sie dieses Dropdownlistenfeld, um eine Tabelle innerhalb des Datasets auszuwählen, die Sie visuell darstellen möchten.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Ermitteln, ob meine Zeiger eine Speicheradresse beschädigen | Microsoft-Dokumentation
+title: Herausfinden, ob Zeiger eine Speicheradresse beschädigen | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dc178675e6d2423336c38e69691f081bf4b447a4
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916173"
@@ -36,13 +36,13 @@ ms.locfileid: "75916173"
 
 #### <a name="check-for-heap-corruption"></a>Überprüfen des Heaps auf Beschädigungen
 
-- Ein Speicherschaden ist eigentlich die Folge einer Heapbeschädigung. Verwenden Sie in diesem Fall das Global Flags-Dienstprogramm (gflags.exe) oder "pageheap.exe". Siehe [/Windows-Hardware/Drivers/Debugger/Gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap).
+- Ein Speicherschaden ist eigentlich die Folge einer Heapbeschädigung. Verwenden Sie in diesem Fall das Global Flags-Dienstprogramm (gflags.exe) oder "pageheap.exe". Siehe [/windows-hardware/drivers/debugger/gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap).
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>So finden Sie die geänderte Stelle der Speicheradresse
 
 1. Legen Sie einen Datenhaltepunkt bei 0x00408000 fest. Weitere Informationen finden Sie unter [Set a data change breakpoint (native C++ only) (Festlegen eines Haltepunkts für Datenänderungen (nur nativer C++-Code))](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 
-2. Zeigen Sie den Speicherinhalt bei Erreichen eines Haltepunkts im Fenster **Speicher** ab Adresse 0x00408000 an. Weitere Informationen finden Sie unter Arbeits [Speicherfenster](../debugger/memory-windows.md).
+2. Zeigen Sie den Speicherinhalt bei Erreichen eines Haltepunkts im Fenster **Speicher** ab Adresse 0x00408000 an. Weitere Informationen finden Sie unter [Arbeitsspeicherfenster](../debugger/memory-windows.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)

@@ -1,5 +1,5 @@
 ---
-title: Debugging bereitgestellter ASP.NET-Anwendungen | Microsoft-Dokumentation
+title: Debuggen bereitgestellter ASP.NET-Anwendungen | Microsoft-Dokumentation
 ms.date: 06/30/2018
 ms.topic: conceptual
 dev_langs:
@@ -22,24 +22,24 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: c2b1838375ee878640d77a9c93808efafc9f519c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738291"
 ---
-# <a name="debugging-deployed-aspnet-applications"></a>Debugging bereitgestellter ASP.NET-Anwendungen
-Um eine bereitgestellte und ausgeführte Anwendung über [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu debuggen, müssen Sie den Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess anhängen und sicherstellen, dass der Debugger auf Symbole für die Anwendung zugreifen kann. Außerdem müssen Sie die Quelldateien für die Anwendung lokalisieren und öffnen. Weitere Informationen finden Sie unter [Angeben von Symbol (PDB)-und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), Vorgehens [Weise: Suchen des Namens des ASP.NET-Prozesses und der](../debugger/how-to-find-the-name-of-the-aspnet-process.md) [System Anforderungen](../debugger/aspnet-debugging-system-requirements.md).
+# <a name="debugging-deployed-aspnet-applications"></a>Debuggen bereitgestellter ASP.NET-Anwendungen
+Um eine bereitgestellte und ausgeführte Anwendung über [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu debuggen, müssen Sie den Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess anhängen und sicherstellen, dass der Debugger auf Symbole für die Anwendung zugreifen kann. Außerdem müssen Sie die Quelldateien für die Anwendung lokalisieren und öffnen. Weitere Informationen finden Sie unter [Angeben von Symboldateien (PDB-Dateien) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens](../debugger/how-to-find-the-name-of-the-aspnet-process.md)und [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md).
 
 > [!WARNING]
-> Wenn Sie den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Arbeitsprozess zum Debuggen anfügen und einen Haltepunkt erreichen, wird der gesamte verwaltete Code im Arbeitsprozess angehalten. Das Anhalten des gesamten verwalteten Codes im Arbeitsprozess kann zu einem Arbeitsstopp für alle Benutzer des Servers führen. Wenn Sie auf einem Produktionsserver debuggen, müssen Sie unter allen Umständen die möglichen Auswirkungen auf die Produktion beachten.
+> Wenn der Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Workerprozess angefügt wird, wird beim Erreichen eines Breakpoints der gesamte verwaltete Code im Workerprozess angehalten. Das Anhalten des gesamten verwalteten Codes im Arbeitsprozess kann zu einem Arbeitsstopp für alle Benutzer des Servers führen. Wenn Sie auf einem Produktionsserver debuggen, müssen Sie unter allen Umständen die möglichen Auswirkungen auf die Produktion beachten.
 
 Das Anhängen an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess unterscheidet sich nicht vom Anhängen an einen beliebigen anderen Remoteprozess. Wenn das passende Projekt nicht geöffnet ist, wird nach dem Anhängen ein Dialogfeld angezeigt, sobald die Anwendung unterbrochen wird. Dieses Dialogfeld fordert Sie auf, den Speicherort der Quelldateien der Anwendung anzugeben. Der im Dialogfeld eingegebene Dateiname muss mit dem Dateinamen übereinstimmen, der in den Debugsymbolen (auf dem Webserver) angegeben ist. Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md). Zum Einrichten des Remotedebuggens auf IIS, finden Sie unter [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md).
 
 > [!NOTE]
-> Viele [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen verweisen auf DLLs, die Geschäftslogik oder sonstigen nützlichen Code enthalten. Ein solcher Verweis kopiert die dll von Ihrem lokalen Computer in den Ordner \bin des virtuellen Verzeichnisses der Webanwendung, wenn Sie die APP bereitstellen. Beim Debuggen sollten Sie beachten, dass die Webanwendung nicht auf die Kopie der DLL auf dem lokalen Computer, sondern auf diese Kopie der DLL verweist.
+> Viele [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen verweisen auf DLLs, die Geschäftslogik oder sonstigen nützlichen Code enthalten. Durch einen solchen Verweis wird die DLL vom lokalen Computer in den Ordner \bin des virtuellen Verzeichnisses der Webanwendung kopiert, wenn Sie die App bereitstellen. Beim Debuggen sollten Sie beachten, dass die Webanwendung nicht auf die Kopie der DLL auf dem lokalen Computer, sondern auf diese Kopie der DLL verweist.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debug ASP.NET Applications (Debuggen von ASP.NET-Anwendungen)](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Gewusst wie: Debuggen für ASP.NET-Anwendungen aktivieren](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Gewusst wie: Herausfinden des ASP.NET-Prozessnamens](../debugger/how-to-find-the-name-of-the-aspnet-process.md)
+- [How to: Debuggen für ASP.NET-Anwendungen aktivieren](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [How to: Herausfinden des ASP.NET-Prozessnamens](../debugger/how-to-find-the-name-of-the-aspnet-process.md)
 - [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

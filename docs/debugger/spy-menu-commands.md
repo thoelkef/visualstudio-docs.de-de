@@ -1,5 +1,5 @@
 ---
-title: Befehle im Menü Spy | Microsoft-Dokumentation
+title: Spy-Menübefehle | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929757"
 ---
 # <a name="spy-menu-commands"></a>Befehle im Menü "Spy"
-Die **Spy** Menü enthält Befehle zum Arbeiten mit Spy++ Windows und Ansichten.
+Das Menü **Spy** enthält Befehle für das Arbeiten mit Spy++-Fenstern und -Ansichten.
 
- **Windows** öffnet eine neue Windows-Ansicht.
+ **Fenster**: Öffnet eine neue Fensteransicht.
 
- **Prozesse** öffnet eine neue Prozessansicht.
+ **Prozesse**: Öffnet eine neue Prozessansicht.
 
- **Threads** öffnet eine neue Threadansicht.
+ **Threads**: Öffnet eine neue Threadansicht.
 
- **Protokollieren von Meldungen** öffnet eine neue Nachrichten Ansicht und öffnet die [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md) für die Ansicht.
+ **Protokollmeldungen**:Öffnet eine neue Meldungsansicht und öffnet das [Dialogfeld „Meldungsoptionen“](../debugger/message-options-dialog-box.md) für die Ansicht.
 
- **Fenster "** zeigt die **" FindWindow "** Dialogfeld ein Fenster mit der Maus auswählen.
+ **Fenster suchen**: Zeigt das Dialogfeld **FindWindow** an, um ein Fenster mit der Maus auszuwählen.
 
- **Exit** beendet das Hilfsprogramm Spy++.
+ **Beenden**: Schließt das Spy++-Hilfsprogramm.

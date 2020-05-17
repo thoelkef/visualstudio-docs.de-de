@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist. Microsoft-Dokumentation'
+title: 'Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911546"
@@ -67,7 +67,7 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 
 2. Aktivieren Sie die Windows-Authentifizierung und die IIS6-Verwaltungskompatibilität, wenn diese nicht bereits aktiviert wurden, indem Sie folgende Schritte ausführen:
 
-    1. Klicken Sie im **Startmenü**auf **Systemsteuerung** , und klicken Sie dann auf **Programme**.
+    1. Klicken Sie auf **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie dann auf **Programme**.
 
     2. Klicken Sie unter **Programme und Funktionen** auf **Windows-Funktionen ein- oder ausschalten**.
 
@@ -116,4 +116,4 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest Authentication (Microsoft Digest-Authentifizierung)](/windows/win32/secauthn/microsoft-digest-authentication)
-- [Ausführen von Webanwendungen unter Windows Vista mit IIS 7,0 und Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Ausführen von Webanwendungen unter Windows Vista mit IIS 7.0 und Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929396"
@@ -21,7 +21,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
 
 Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden, jedoch nicht in der Professional oder Community Edition.
 
-## <a name="GettingStarted"></a> Konfigurieren von IntelliTrace
+## <a name="configure-intellitrace"></a><a name="GettingStarted"></a> Konfigurieren von IntelliTrace
 
 Sie können ein Debugging nur mit IntelliTrace-Ereignissen durchführen. IntelliTrace-Ereignisse sind Debuggerereignisse, Ausnahmen, .NET Framework-Ereignisse und andere Systemereignisse. Bevor Sie mit dem Debuggen beginnen, sollten Sie bestimmte Ereignisse aktivieren oder deaktivieren, um die von IntelliTrace aufgezeichneten Ereignisse zu steuern. Weitere Informationen finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
@@ -51,7 +51,7 @@ Sie können ein Debugging nur mit IntelliTrace-Ereignissen durchführen. Intelli
 
 3. Legen Sie einen Haltepunkt auf `Console.WriteLine("done");`fest.
 
-## <a name="start-debugging-and-view-intellitrace-events"></a>Starten Sie das Debuggen und Anzeigen von IntelliTrace-Ereignisse
+## <a name="start-debugging-and-view-intellitrace-events"></a>Starten des Debuggens und Anzeigen von IntelliTrace-Ereignissen
 
 1. Starten Sie das Debuggen wie gewohnt. (Drücken Sie **F5**, oder klicken Sie auf **Debuggen > Debuggen starten**.)
 
@@ -84,7 +84,7 @@ Sie können ein Debugging nur mit IntelliTrace-Ereignissen durchführen. Intelli
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie können einige der erweiterten Funktionen von IntelliTrace mit verlaufsbezogenem debugging verwenden:
+Sie können einige der erweiterten Features von IntelliTrace mit verlaufsbezogenem Debuggen verwenden:
 
-- Zum Anzeigen von Momentaufnahmen finden Sie unter [überprüfen Sie die vorherigen app-Status, die mit IntelliTrace](../debugger/view-historical-application-state.md)
-- So untersuchen Sie Variablen, und Navigieren im Code finden Sie unter [untersuchen Ihrer app mit verlaufsbezogenem debugging](../debugger/historical-debugging-inspect-app.md)
+- Wenn Sie Momentaufnahmen anzeigen möchten, finden Sie weitere Informationen unter [Untersuchen von vorherigen App-Zuständen mithilfe von IntelliTrace](../debugger/view-historical-application-state.md).
+- Informationen zum Untersuchen von Variablen und Navigieren in Code finden Sie unter [Untersuchen der App mit verlaufsbezogenem Debuggen](../debugger/historical-debugging-inspect-app.md).

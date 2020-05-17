@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Debuggen eines ActiveX-Steuer Elements | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Debuggen von ActiveX-Steuerelementen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733866"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Gewusst wie: Debuggen von ActiveX-Steuerelementen
+# <a name="how-to-debug-an-activex-control"></a>Vorgehensweise: Debuggen von ActiveX-Steuerelementen
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
@@ -42,7 +42,7 @@ Um das ActiveX-Steuerelement zu debuggen, müssen Sie einen Container (ausführb
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus.
 
-2. Wählen Sie im Menü **Ansicht** die Option **Eigenschaften Seiten**aus.
+2. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenseiten**.
 
 3. Öffnen Sie im Dialogfeld **Projekteigenschaftenseiten** den Ordner **Konfigurationseigenschaften**, und wählen Sie **Debuggen** aus.
 

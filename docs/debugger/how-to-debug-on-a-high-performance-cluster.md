@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Debuggen in einem Hochleistungs Cluster | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Debuggen auf einem Hochleistungscluster | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +18,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733665"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Gewusst wie: Debuggen in einem Hochleistungs Cluster (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Vorgehensweise: Debuggen auf einem Hochleistungscluster (C#, Visual Basic, C++)
 
-Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleicht dem Debuggen eines gewöhnlichen Programms auf einem Remotecomputer. Es müssen jedoch einige zusätzliche Aspekte berücksichtigt werden. Allgemeine Anforderungen für die Remote Installation finden Sie unter [Remote Debugging](../debugger/remote-debugging.md).
+Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleicht dem Debuggen eines gewöhnlichen Programms auf einem Remotecomputer. Es müssen jedoch einige zusätzliche Aspekte berücksichtigt werden. Allgemeine Anforderungen für das Remotesetup finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
 
  Beim Debuggen auf einem Hochleistungscluster können alle Debugfenster von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und alle Verfahren für das Remotedebuggen eingesetzt werden. Da Sie jedoch remote debuggen, ist das externe Konsolenfenster nicht verfügbar.
 
- Das Fenster **Threads** und das Fenster **Prozesse** sind zum Debuggen von parallelen Anwendungen besonders nützlich. Tipps zur Verwendung dieser Fenster finden Sie unter Gewusst [wie: Verwenden des Fensters "Prozesse](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) " und Exemplarische Vorgehensweise [: Debuggen mithilfe des Fensters "Threads](../debugger/how-to-use-the-threads-window.md)".
+ Das Fenster **Threads** und das Fenster **Prozesse** sind zum Debuggen von parallelen Anwendungen besonders nützlich. Tipps zur Verwendung dieser Fenster finden Sie unter [Vorgehensweise: Verwenden des Prozessfensters](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) und [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md).
 
  In den folgenden Verfahren werden einige Techniken vorgestellt, die beim Debuggen in einem Hochleistungscluster besonders nützlich sind.
 
@@ -63,7 +63,7 @@ Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleic
 
 3. Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:
 
-     `ProcessName =`  *IhrProzessName*
+     `ProcessName =` *IhrProzessName*
 
      – oder –
 
@@ -99,7 +99,7 @@ Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleic
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
-- [Gewusst wie: Verwenden des Fensters "Prozesse"](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
-- [Starten des Debuggens von Multithread-apps](../debugger/get-started-debugging-multithreaded-apps.md)
+- [How to: Verwenden des Fensters „Prozesse“](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [Debuggen von Multithread-Apps](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Threads und Prozesse](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)

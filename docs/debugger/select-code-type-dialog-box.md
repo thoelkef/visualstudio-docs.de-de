@@ -1,5 +1,5 @@
 ---
-title: Dialog Feld "Codetyp auswählen" | Microsoft-Dokumentation
+title: Dialogfeld „Codetyp auswählen“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 761845044bae9b35694bef53cae36dd64f3dd6ba
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729583"
@@ -31,9 +31,9 @@ ms.locfileid: "72729583"
 # <a name="select-code-type-dialog-box"></a>Dialogfeld "Codetyp auswählen"
 Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhängen** und klicken auf die Schaltfläche **Auswählen**.
 
- **Typ des zu debuggenden Codes automatisch bestimmen** Der geeignete Debugger wird basierend auf der Art des ausgesuchten Codes ausgewählt.
+ **Zu debuggenden Codetyp automatisch bestimmen**: Der entsprechende Debugger wird auf Grundlage des ausgeführten Codetyps ausgewählt.
 
- **Diese Codetypen debuggen:** Wählen Sie in der Liste den Typ des Codes aus, den Sie debuggen möchten.
+ **Diese Codetypen debuggen:** Wählen Sie den zu debuggenden Codetyp in der angegebenen Liste aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728679"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Teilen Sie dem Debugger mit, was mithilfe des DebuggerDisplay-C#Attributs angezeigt F#werden C++soll (, Visual Basic,,/CLI).
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Debugger mit dem DebuggerDisplay-Attribut anweisen, was angezeigt werden soll (C#, Visual Basic, F#, C++/CLI)
 
 Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden. Wenn das Attribut auf einen Basistyp angewendet wird, gilt es auch für eine Unterklasse.
 
 Das `DebuggerDisplay` -Attribut verfügt über ein einziges Argument, das als Zeichenfolge in der Wertspalte für Instanzen des Typs angezeigt wird. Diese Zeichenfolge kann geschweifte Klammern (`{` und `}`) enthalten. Text innerhalb von Klammern wird als Feld, Eigenschaft oder Methode ausgewertet.
 
-Wenn eine Klasse eine überschriebene `ToString()` -Methode aufweist, verwendet der Debugger die überschriebene Methode anstelle des standardmäßigen `{<typeName>}`. Wenn Sie also die `ToString()` -Methode überschrieben haben, verwendet der Debugger die überschriebene Methode anstelle des standardmäßigen`{<typeName>}`, und Sie brauchen `DebuggerDisplay`nicht zu verwenden. Wenn Sie beides verwenden, hat das `DebuggerDisplay`-Attribut Vorrang vor der überschriebenen `ToString()`-Methode. Das `DebuggerDisplay`-Attribut hat auch Vorrang vor der überschriebenen `ToString()`-Methode in einer Unterklasse.
+Wenn eine Klasse eine überschriebene `ToString()` -Methode aufweist, verwendet der Debugger die überschriebene Methode anstelle des standardmäßigen `{<typeName>}`. Wenn Sie also die `ToString()` -Methode überschrieben haben, verwendet der Debugger die überschriebene Methode anstelle des standardmäßigen`{<typeName>}`, und Sie brauchen `DebuggerDisplay`nicht zu verwenden. Wenn Sie beides verwenden, hat das `DebuggerDisplay`-Attribut Vorrang vor der überschriebenen `ToString()`-Methode. Das `DebuggerDisplay`-Attribut besitzt auch Vorrang vor der überschriebenen `ToString()`-Methode in einer Unterklasse.
 
 Ob der Debugger diesen impliziten `ToString()` -Aufruf auswertet, hängt von einer Benutzereinstellung im Dialogfeld **Extras / Optionen / Debugging** ab. Visual Basic implementiert diese implizite `ToString()` -Auswertung nicht.
 
@@ -33,7 +33,7 @@ Ob der Debugger diesen impliziten `ToString()` -Aufruf auswertet, hängt von ein
 > Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras / Optionen / Debugging** aktiviert ist, wird das `DebuggerDisplay` -Attribut ignoriert.
 
 > [!NOTE]
-> Für nativen Code wird dieses Attribut nur in C++/CLI-Code unterstützt.
+> Für nativen Code wird dieses Attribut nur in C++-/CLI-Code unterstützt.
 
 In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.
 
@@ -91,7 +91,7 @@ public sealed class MyClass
 }
 ```
 
-Das Suffix ", NQ" weist die Ausdrucks Auswertung an, die Anführungszeichen zu entfernen, wenn der endgültige Wert angezeigt wird (NQ = No Anführungszeichen).
+Das Suffix „,nq“ weist die Ausdrucksauswertung an, die Anführungszeichen zu entfernen, wenn der endgültige Wert angezeigt wird (nq = no quotes, keine Anführungszeichen).
 
 ## <a name="example"></a>Beispiel
 Im folgenden Codebeispiel wird veranschaulicht, wie `DebuggerDisplay`zusammen mit `DebuggerBrowseable` und `DebuggerTypeProxy`verwendet wird. Bei der Anzeige in einem Variablenfenster des Debuggers (z. B. im Fenster **Überwachen** ) wird dadurch eine Erweiterung erzeugt, die folgendermaßen aussieht:

@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: seitenweise nach oben oder unten im Arbeitsspeicher | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Bildlauf nach oben oder unten im Arbeitsspeicher | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733021"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Gewusst wie: Bildlauf nach oben oder unten im Arbeitsspeicher
+# <a name="how-to-page-up-or-down-in-memory"></a>Vorgehensweise: Bildlauf nach oben oder unten im Arbeitsspeicher
 
 Beim Anzeigen des Speicherinhalts im Fenster **Arbeitsspeicher** oder im Fenster **Disassemblierung** können Sie mithilfe der vertikalen Scrollleiste im Speicher nach oben oder unten navigieren.
 
@@ -48,5 +48,5 @@ Beim Anzeigen des Speicherinhalts im Fenster **Arbeitsspeicher** oder im Fenster
 
 ## <a name="see-also"></a>Siehe auch
 - [Fenster "Arbeitsspeicher"](../debugger/memory-windows.md)
-- [Gewusst wie: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)
+- [How to: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)
 - [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: Debuggerfenster beim Debuggen einer Vordergrund-App verwenden | Microsoft-Dokumentation
+title: Verwenden von Debuggerfenstern beim Debuggen einer im Vordergrund ausgeführten App | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 759d9a6a3beb55bf72a0f41a93cb26c8c15b0c5e
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734053"
@@ -34,7 +34,7 @@ ms.locfileid: "72734053"
  Es liegt ein Problem beim Zeichnen auf dem Bildschirm vor. Um das Problem beobachten zu können, muss das Programm im Vordergrund bleiben; das bedeutet jedoch, dass kein Zugriff auf die Debuggerfenster möglich wäre. Welche Möglichkeiten gibt es?
 
 ## <a name="solution"></a>Lösung
- Wenn Sie über einen zweiten Computer verfügen, können Sie das Remotedebuggen verwenden. So können Sie das Zeichnen auf dem Bildschirm auf dem Remotecomputer beobachten und gleichzeitig den Debugger auf dem Host ausführen. Weitere Informationen zum Remote Debuggen finden Sie unter [Remote Debugging](../debugger/remote-debugging.md).
+ Wenn Sie über einen zweiten Computer verfügen, können Sie das Remotedebuggen verwenden. So können Sie das Zeichnen auf dem Bildschirm auf dem Remotecomputer beobachten und gleichzeitig den Debugger auf dem Host ausführen. Weitere Informationen zum Remotedebuggen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)

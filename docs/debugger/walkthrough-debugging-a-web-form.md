@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62901631"
@@ -48,13 +48,13 @@ Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven E
 
 3. Klicken Sie im Bereich **Vorlagen** auf **ASP.NET-Website**.
 
-4. Auf der **Speicherort** Zeile, klicken Sie auf **HTTP** aus der Liste, und klicken Sie im Textfeld geben **http://localhost/WebSite**.
+4. Klicken Sie in der Liste in der Zeile **Speicherort** auf die Option **HTTP**, und geben Sie **http://localhost/WebSite** in das Textfeld ein.
 
 5. Klicken Sie in der Liste **Sprache** auf **Visual C#** oder **Visual Basic**.
 
 6. Klicken Sie auf **OK**.
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt ein neues Projekt und zeigt den standardmäßigen HTML-Quellcode an. Außerdem wird unter der **Standardwebsite** von IIS ein neues virtuelles Verzeichnis mit dem Namen **WebSite** erstellt.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt ein neues Projekt und zeigt den HTML-Standardquellcode an. Außerdem wird unter der **Standardwebsite** von IIS ein neues virtuelles Verzeichnis mit dem Namen **WebSite** erstellt.
 
 7. Klicken Sie am unteren Rand auf die Registerkarte **Entwurf**.
 
@@ -68,7 +68,7 @@ Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven E
 
 11. Doppelklicken Sie auf das abgelegte Button-Steuerelement.
 
-     Dadurch gelangen Sie zur Codepage: Default.aspx.cs bei C# oder Default.aspx.vb bei [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Der Cursor sollte sich in der `Button1_Click`-Funktion befinden.
+     Dadurch gelangen Sie auf die Codepage: „Default.aspx.cs“ für C# oder „default.aspx.vb“ für [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Der Cursor sollte sich in der `Button1_Click`-Funktion befinden.
 
 12. Fügen Sie folgenden Code in die `Button1_Click`-Funktion ein:
 
@@ -154,7 +154,7 @@ Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven E
 
     Das Web Form wird in Internet Explorer gestartet, der Debugger ist jedoch nicht angehängt.
 
-4. Fügen Sie den Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Prozess an. Weitere Informationen finden Sie unter [bereitgestellte Web-Anwendungen Debuggen](../debugger/debugging-deployed-web-applications.md).
+4. Fügen Sie den Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Prozess an. Weitere Informationen finden Sie unter [Debuggen von bereitgestellten Webanwendungen](../debugger/debugging-deployed-web-applications.md).
 
 5. Klicken Sie im Internet Explorer auf die Schaltfläche im Formular.
 

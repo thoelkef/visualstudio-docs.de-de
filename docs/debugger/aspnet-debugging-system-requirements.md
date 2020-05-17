@@ -1,5 +1,5 @@
 ---
-title: 'ASP.NET-Debugging: System Anforderungen | Microsoft-Dokumentation'
+title: 'ASP.NET-Debugging: Systemanforderungen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745810"
@@ -37,14 +37,14 @@ In diesem Thema werden die Software- und Sicherheitsanforderungen für die folge
 ## <a name="security-requirements"></a>Sicherheitsanforderungen
  Lokale Computer und Remotecomputer müssen sich beim Remotedebuggen in einer Domänen- oder Arbeitsgruppenkonfiguration befinden.
 
- Zum Debuggen des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Arbeitsprozesses (von einem Anwendungs Pool gehostet) müssen Sie über die Berechtigung zum Debuggen dieses Prozesses verfügen. Standardmäßig werden [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Anwendungen vor IIS 6,0 als **ASPNET** -Benutzer ausgeführt. In IIS 6,0 und IIS 7,0 ist das **Netzwerkdienst** Konto die Standardeinstellung. Wenn der Arbeitsprozess als **ASPNET**oder als **NETZWERKDIENST**ausgeführt wird, benötigen Sie zum Debuggen Administratorrechte.
+ Zum Debuggen des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Workerprozesses (gehostet von einem Anwendungspool) müssen Sie über eine entsprechende Berechtigung verfügen. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen vor IIS 6.0 werden standardmäßig als **ASPNET**-Benutzer ausgeführt. In IIS 6.0 und IIS 7.0 ist das Konto **NETZWERKDIENST** die Standardeinstellung. Wenn der Arbeitsprozess als **ASPNET**oder als **NETZWERKDIENST**ausgeführt wird, benötigen Sie zum Debuggen Administratorrechte.
 
  > [!IMPORTANT]
- > Ab Windows Server 2008 R2 empfiehlt es sich, die [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungs Pool zu verwenden.
+ > Ab Windows Server 2008 R2 empfiehlt es sich, die [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungspool zu verwenden.
 
- Der Name des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Arbeitsprozesses ist je nach Debugszenario und IIS-Version unterschiedlich. Weitere Informationen finden Sie unter [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
+ Der Name des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Arbeitsprozesses ist je nach Debugszenario und IIS-Version unterschiedlich. Weitere Informationen finden Sie unter [Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
 
- Sie können das Benutzerkonto, unter dem der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Arbeitsprozess ausgeführt wird, ändern, indem Sie die Datei „machine.config“ auf dem Server ändern, auf dem IIS ausgeführt wird. Dazu verwenden Sie am besten den **Internet Information Services (IIS) Manager**. Weitere Informationen finden [Sie unter Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
+ Sie können das Benutzerkonto, unter dem der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Arbeitsprozess ausgeführt wird, ändern, indem Sie die Datei „machine.config“ auf dem Server ändern, auf dem IIS ausgeführt wird. Dazu verwenden Sie am besten den **Internet Information Services (IIS) Manager**. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
 
  Wenn Sie den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Arbeitsprozess so ändern, dass er unter Ihrem eigenen Benutzerkonto ausgeführt wird, müssen Sie kein Administrator auf dem IIS-Servercomputer sein.
 
@@ -54,4 +54,4 @@ In diesem Thema werden die Software- und Sicherheitsanforderungen für die folge
 ## <a name="see-also"></a>Siehe auch
 
 - [Debug ASP.NET Applications (Debuggen von ASP.NET-Anwendungen)](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+- [How to: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

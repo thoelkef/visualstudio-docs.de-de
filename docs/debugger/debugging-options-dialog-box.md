@@ -1,5 +1,5 @@
 ---
-title: Debuggen, Dialog Feld "Optionen" | Microsoft-Dokumentation
+title: Debuggen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738151"

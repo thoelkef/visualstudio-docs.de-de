@@ -1,5 +1,5 @@
 ---
-title: Anzeigen der Befehle im Menü | Microsoft-Dokumentation
+title: Befehle im Menü „Ansicht“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929623"
 ---
 # <a name="view-menu-commands"></a>Befehle im Menü "Ansicht"
-Die **Ansicht** Menü enthält Befehle zum Steuern von Spy++-Benutzeroberfläche.
+Das Menü **Ansicht** enthält Befehle zum Steuern der Spy++-Benutzeroberfläche.
 
- **Schriftart** öffnet die **Schriftart** Dialogfeld, in dem Sie eine Schriftart für die Verwendung in der aktuellen Spy++-Ansicht auswählen können.
+ **Schriftart**: Öffnet das Dialogfeld **Schriftart**, in dem Sie eine Schriftart auswählen können, die in der aktuellen Spy++-Ansicht verwendet werden soll.
 
- **Symbolleiste** bzw. Blendet die Symbolleiste.
+ **Symbolleiste**: Blendet die Symbolleiste aus oder ein.
 
- **Statusleiste** ausgeblendet oder zeigt die Statusleiste.
+ **Statusleiste**: Zeigt die Statusleiste an oder blendet sie aus.
 
- **Eigenschaften** öffnet die **Eigenschaften** im Dialogfeld für die aktive Ansicht.
+ **Eigenschaften**: Öffnet das Dialogfeld **Eigenschaften** für die aktive Ansicht.

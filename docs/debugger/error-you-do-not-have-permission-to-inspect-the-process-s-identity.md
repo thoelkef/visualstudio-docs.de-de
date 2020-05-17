@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Sie verfügen nicht über die Berechtigung, die Identität&#39;des Prozesses zu überprüfen | Microsoft-Dokumentation'
+title: 'Fehler: Sie haben keine Berechtigung, die Prozessidentität zu überprüfen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736220"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Fehler: Sie verfügen nicht über die Berechtigung zum Überprüfen&#39;der Identität des Prozesses.
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Fehler: Sie haben keine Berechtigung, die Prozessidentität zu überprüfen.
 Sie haben keine Berechtigung, die Prozessidentität zu überprüfen. Dies liegt möglicherweise an der Konfiguration des Systems.
 
  Der Debugger konnte die Prozessidentität nicht überprüfen, was für das Debuggen aber erforderlich ist. Die wahrscheinlichste Ursache ist die Deaktivierung der Terminaldienste. Der Dienst Terminaldienste ist standardmäßig aktiviert. Führen Sie diese Schritte aus, um den Dienst wieder zu aktivieren.
@@ -40,7 +40,7 @@ Sie haben keine Berechtigung, die Prozessidentität zu überprüfen. Dies liegt 
 
 6. Klicken Sie in der Liste **Dienste** mit der rechten Maustaste auf **Terminaldienste**, und wählen Sie dann **Eigenschaften** aus.
 
-7. Wechseln Sie im Fenster **Eigenschaften von Terminal Dienste** zur Register **Karte allgemein** , und legen Sie **Starttyp** auf **manuell**fest.
+7. Wechseln Sie im Fenster **Eigenschaften von Terminaldienste** zur Registerkarte **Allgemein**, und legen Sie den **Starttyp** auf **Manuell** fest.
 
 8. Klicken Sie auf **OK**.
 

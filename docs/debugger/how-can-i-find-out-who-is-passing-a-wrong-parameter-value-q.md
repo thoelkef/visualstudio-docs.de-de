@@ -1,5 +1,5 @@
 ---
-title: Ermitteln, wer einen falschen Parameterwert übergibt | Microsoft-Dokumentation
+title: Ermitteln, woher ein falscher Parameterwert stammt | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 42884cd6498f00cfe2df2d0396ff9ea6b03c2f98
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734238"
@@ -41,7 +41,7 @@ ms.locfileid: "72734238"
 
 2. Klicken Sie mit der rechten Maustaste auf den Haltepunkt, und wählen Sie **Bedingung** aus.
 
-3. Aktivieren Sie im Dialogfeld **Bedingung für Haltepunkt** das Kontrollkästchen **Bedingung**. Siehe [Erweiterte Breakpoints](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+3. Aktivieren Sie im Dialogfeld **Bedingung für Haltepunkt** das Kontrollkästchen **Bedingung**. Siehe [Erweiterte Haltepunkte](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
 4. Geben Sie einen Ausdruck, z. B. `Var==3`, in das Textfeld ein, wobei `Var` der Name des Parameters ist, der den falschen Wert enthält, und `3` der übergebene falsche Wert.
 
@@ -49,7 +49,7 @@ ms.locfileid: "72734238"
 
 6. Führen Sie nun das Programm erneut aus. Der Haltepunkt bewirkt, dass das Programm am Funktionsanfang anhält, sobald `Var` den Wert `3` hat.
 
-7. Im Fenster Aufrufliste sehen Sie die aufrufende Funktion und können zu ihrem Quellcode navigieren. Weitere Informationen finden Sie unter Gewusst [wie: Verwenden des Fensters "aufrufsstapel](../debugger/how-to-use-the-call-stack-window.md)".
+7. Im Fenster Aufrufliste sehen Sie die aufrufende Funktion und können zu ihrem Quellcode navigieren. Weitere Informationen finden Sie unter [Vorgehensweise: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)

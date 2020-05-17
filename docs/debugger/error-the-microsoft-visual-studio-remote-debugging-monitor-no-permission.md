@@ -21,26 +21,26 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9cafbd6a6c9c6844028b1b18d0ebfe7afd8ddf57
 ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/13/2019
 ms.locfileid: "67043448"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer verfügt nicht über die Berechtigung, eine Verbindung mit diesem Computer herzustellen
 
-Dieser Fehler tritt auf, wenn der Benutzer, der versucht, den Visual Studio-Remotedebugmonitor (msvsmon) auszuführen, kein Konto auf dem lokalen Computer hat. Dieser Fehler kann beim Debuggen mit der älteren Debug-Engine auftreten.
+Dieser Fehler tritt auf, wenn der Benutzer, der versucht, den Visual Studio-Remotedebugmonitor (msvsmon) auszuführen, kein Konto auf dem lokalen Computer hat. Dieser Fehler kann beim Remotedebuggen mit der Legacydebug-Engine auftreten.
 
 ## <a name="to-fix-this-problem"></a>So beheben Sie dieses Problem
 
 - Fügen Sie dem Hostcomputer mit dem Visual Studio Debugger ein Benutzerkonto mit demselben Namen und Kennwort wie dem Benutzerkonto hinzu, unter dem msvsmon auf dem Remotecomputer ausgeführt wird.
 
-   \- oder –
+   \- oder -
 
 - Führen Sie msvsmon als Benutzer aus, der berechtigt ist, auf dem lokalen Computer Aufrufe durchzuführen. Dies bedeutet, dass der Benutzer ein Domänenbenutzer sein und Administratorrechte auf dem msvsmon-Computer besitzen muss. Sie haben zwei Möglichkeiten, um das Benutzerkonto zum Ausführen von msvsmon anzugeben:
 
   - Klicken Sie mit der rechten Maustaste auf das msvsmon-Symbol, und wählen Sie im Kontextmenü **Ausführen als** aus
 
-    \- oder –
+    \- oder -
 
   - Führen Sie an der Eingabeaufforderung `runas.exe` aus.
 

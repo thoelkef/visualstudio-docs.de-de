@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Remote Computer wird im Dialogfeld "Remote Verbindungen" nicht angezeigt | Microsoft-Dokumentation'
+title: 'Fehler: Remotecomputer wird im Dialogfeld „Remoteverbindungen“ nicht angezeigt | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -14,15 +14,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dd46d2164ccb3cd26831160235b992d699229e2c
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916180"
 ---
-# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Fehler: Remotecomputer wird im Dialogfeld „Remoteverbindungen“ nicht angezeigt.
+# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Fehler: Remotecomputer wird im Dialogfeld „Remoteverbindungen“ nicht angezeigt
 Wenn der Remotecomputer im Dialogfeld „Remoteverbindungen“ nicht angezeigt wird, überprüfen Sie die folgenden häufigen Ursachen.
 
- Bei Verwendung des verwalteten Kompatibilitätsmodus, ziehen Sie die Visual Studio 2010-Dokumentation zurate: [Troubleshooting Remote Debugging - Visual Studio 2010 (Problembehandlung beim Remotedebuggen: Visual Studio 2010)](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)).
+ Bei Verwendung des verwalteten Kompatibilitätsmodus, ziehen Sie die Visual Studio 2010-Dokumentation zurate: [Problembehandlung beim Remotedebuggen: Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)).
 
 ### <a name="common-causes-for-this-error"></a>Häufige Ursachen dieses Fehlers
 

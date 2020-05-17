@@ -1,5 +1,5 @@
 ---
-title: Befehle im Menü Hilfe | Microsoft-Dokumentation
+title: Befehle des Hilfemenüs | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62895103"
 ---
 # <a name="help-menu-commands"></a>Befehle im Menü "Hilfe"
-Die **Hilfe** Menü enthält Befehle zum Öffnen der Hilfedateien.
+Das Menü **Hilfe** enthält Befehle zum Öffnen von Hilfedateien.
 
- **Index** wird der Inhalt-Bildschirm für die Spy++-Hilfe geöffnet.
+ **Index**: Öffnet den Inhaltsbildschirm für Spy++-Hilfe.
 
- **Verwenden der Hilfe** öffnet eine Hilfedatei, die beschreibt, wie Sie mit der Hilfe.
+ **Verwenden der Hilfe**: Öffnet eine Hilfedatei, in der die Verwendung der Hilfe beschrieben wird.
 
- **Info** zeigt die Version und urheberrechtliche Informationen für die Spy++.
+ **Info zu Spy++** : Zeigt die Softwareversion und Urheberrechtsinformationen für Spy++ an.

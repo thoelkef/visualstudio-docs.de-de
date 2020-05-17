@@ -1,5 +1,5 @@
 ---
-title: Fehler-und Warnungs Dialogfelder Debuggen | Microsoft-Dokumentation
+title: Dialogfelder für Debugfehler und Warnungen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916451"
@@ -38,7 +38,7 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
 
  [Debugger kann keinen Quellcode oder Disassembly anzeigen](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Debugger-Dienste mit nicht genügend Arbeitsspeicher](../debugger/error-debugger-services-no-memory.md)
+ [Debuggerdienste verfügen nicht über genügend Arbeitsspeicher](../debugger/error-debugger-services-no-memory.md)
 
  [Ausführbare Datei für die Debugsitzung (Dialogfeld)](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -59,7 +59,7 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
  [Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debugging Script and Web: Errors and Troubleshooting (Debuggen von Skript und Web: Fehler und Problembehandlung)](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debuggen von Skript und Web: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Fehler beim Remotedebuggen](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

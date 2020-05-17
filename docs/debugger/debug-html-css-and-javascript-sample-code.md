@@ -1,5 +1,5 @@
 ---
-title: HTML-und CSS-Beispielcode Debuggen | Microsoft-Dokumentation
+title: Debuggen von HTML- und CSS-Beispielcode | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745547"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Debuggen von HTML- und CSS-Beispielcode
 
-Der Code in diesem Thema ist die Beispieldatei für den [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md). Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.
+Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md). Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.
 
 ## <a name="sample-code"></a>Beispielcode
 Der folgende HTML-Code wird im \<body>-Tag im Schnellstart verwendet.
@@ -102,4 +102,4 @@ Im folgenden Codebeispiel wird der vollständige JavaScript-Code in default.js d
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Fehler bei Remote Anmeldung der Arbeitsgruppe | Microsoft-Dokumentation'
+title: 'Fehler: Fehler bei Remoteanmeldung von Arbeitsgruppe | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736260"
@@ -55,7 +55,7 @@ Inhalt dieses Fehlers:
 
 4. Doppelklicken Sie in der Spalte **Richtlinie** auf **Debuggen von Programmen**, um die aktuell zugewiesenen Richtlinien der lokalen Gruppe im Dialogfeld **Lokale Sicherheitsrichtlinieneinstellung** anzuzeigen.
 
-     ![Benutzerrechte der lokalen Sicherheitsrichtlinie](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
+     ![Benutzerrechte für Richtlinie zur lokalen Sicherheit](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
 5. Klicken Sie auf die Schaltfläche **Benutzer oder Gruppe hinzufügen**, um neue Benutzer hinzuzufügen.
 
@@ -67,11 +67,11 @@ Inhalt dieses Fehlers:
 
 3. Klicken Sie auf **Sicherheitsoptionen**.
 
-4. Doppelklicken Sie in der Spalte **Richtlinie** auf die Option **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten**.
+4. Doppelklicken Sie in der Spalte **Richtlinie** auf **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten**.
 
-5. Ändern Sie im Dialogfeld **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** den Wert in **Klassisch – lokale Benutzer authentifizieren sich als sie selbst**, und klicken Sie auf **Apply** (Übernehmen).
+5. Ändern Sie im Dialogfeld **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** den Wert in **Klassisch – lokale Benutzer authentifizieren sich als sie selbst**, und klicken Sie auf **Übernehmen**.
 
-     ![Sicherheitsoptionen für lokale Sicherheitsrichtlinien](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![Sicherheitsoptionen für Richtlinie zur lokalen Sicherheit](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
 ## <a name="see-also"></a>Siehe auch
 - [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)

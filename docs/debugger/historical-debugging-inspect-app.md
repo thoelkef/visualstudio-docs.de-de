@@ -1,5 +1,5 @@
 ---
-title: Überprüfen Sie Ihre app mit verlaufsbezogenem debugging | Microsoft-Dokumentation
+title: Untersuchen Ihrer App mit verlaufsbezogenem Debuggen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -10,18 +10,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62848217"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Überprüfen Sie Ihre app mit IntelliTrace verlaufsbezogenes Debuggen in Visual Studio (C#, Visual Basic C++)
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Untersuchen der App mit verlaufsbezogenem Debuggen (C#, Visual Basic, C++)
 
-Sie können [verlaufsbezogenes debugging](../debugger/historical-debugging.md) rückwärts und Vorwärts durch die Ausführung Ihrer Anwendung und ihren Status überprüfen.
+Sie können [verlaufsbezogenes Debuggens Debuggen](../debugger/historical-debugging.md) verwenden, um die Ausführung Ihrer Anwendung rückwärts und vorwärts zu durchlaufen und ihren Status zu überprüfen.
 
 Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden, jedoch nicht in der Professional oder Community Edition.
 
-## <a name="navigate-your-code-with-historical-debugging"></a>Navigieren Sie in Ihrem Code mit verlaufsbezogenem debugging
+## <a name="navigate-your-code-with-historical-debugging"></a>Navigieren im Code mit verlaufsbezogenem Debuggen
 
 Beginnen wir mit einem einfachen Programm, das einen Fehler aufweist. Fügen Sie in einer C#-Konsolenanwendung folgenden Code hinzu:
 
@@ -51,9 +51,9 @@ private static int AddInt(int add)
 }
 ```
 
-Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von `AddAll()` 20 beträgt (das Ergebnis des Inkrementierens von `testInt` × 20). (Wir außerdem davon aus, dass Sie nicht, dass den Fehler in angezeigt `AddInt()`). Doch das Ergebnis ist jedoch tatsächlich 44. Wie finden wir den Fehler, ohne `AddAll()` schrittweise 10 Mal durchzugehen? Wir können das verlaufsbezogene Debugging verwenden, um Fehler schneller und leichter zu finden. Gehen Sie dabei folgendermaßen vor:
+Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von `AddAll()` 20 beträgt (das Ergebnis des Inkrementierens von `testInt` × 20). (Gehen wir außerdem davon aus, dass Ihnen der Fehler in `AddInt()` nicht angezeigt wird). Das Ergebnis beträgt jedoch tatsächlich 44. Wie finden wir den Fehler, ohne `AddAll()` schrittweise 10 Mal durchzugehen? Wir können das verlaufsbezogene Debugging verwenden, um Fehler schneller und leichter zu finden. Gehen Sie dabei folgendermaßen vor:
 
-1. In **Tools > Optionen > IntelliTrace > allgemeine**, stellen Sie sicher, dass IntelliTrace aktiviert ist, und wählen **IntelliTrace-Ereignisse und Aufrufinformationen**. Wenn Sie diese Option nicht auswählen, wird Ihnen der Navigationsbundsteg nicht angezeigt (sie Erläuterung weitere unten).
+1. Stellen Sie unter **Extras > Optionen > IntelliTrace > Allgemein** sicher, dass IntelliTrace aktiviert ist, und wählen Sie **IntelliTrace-Ereignisse und -Aufrufinformationen** aus. Wenn Sie diese Option nicht auswählen, wird Ihnen der Navigationsbundsteg nicht angezeigt (sie Erläuterung weitere unten).
 
 2. Legen Sie einen Haltepunkt in der Zeile `Console.WriteLine(resultInt);` fest.
 
@@ -79,5 +79,5 @@ Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von
 
 Dieses Verfahren behandelt die Möglichkeiten des verlaufsbezogenen Debugging nur oberflächlich.
 
-- Zum Anzeigen von Momentaufnahmen während des Debuggens finden Sie unter [überprüfen Sie die vorherigen app-Status, die mithilfe von IntelliTrace](../debugger/view-historical-application-state.md).
+- Wenn Sie beim Debuggen Momentaufnahmen anzeigen möchten, finden Sie weitere Informationen unter [Untersuchen von vorherigen App-Zuständen mithilfe von IntelliTrace](../debugger/view-historical-application-state.md).
 - Weitere Informationen über die unterschiedlichen Einstellungen und Auswirkungen der verschiedenen Schaltflächen auf dem Navigationsbundsteg finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).

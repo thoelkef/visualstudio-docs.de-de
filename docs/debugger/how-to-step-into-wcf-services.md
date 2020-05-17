@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: schrittweises Ausführen von WCF-Diensten | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Ausführen eines Einzelschritts in WCF-Diensten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +18,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c405b4fcca91f8deddce4d65c8a4155b90af49e0
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732596"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Gewusst wie: Ausführen eines Einzelschritts in WCF-Dienste
+# <a name="how-to-step-into-wcf-services"></a>Vorgehensweise: Ausführen eines Einzelschritts in WCF-Diensten
 In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] können Sie einen Einzelschritt in einen WCF-Dienst ausführen. Wenn sich der WCF-Dienst in derselben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe wie der Client befindet, erreichen Sie Haltepunkte innerhalb des WCF-Dienstes.
 
- Damit dies funktioniert, müssen Sie das Debuggen in der Datei app.config oder Web.config aktivieren. Weitere Informationen zum Aktivieren des Debuggens und Einschränkungen bei der schrittweise Verwendung von WCF-Diensten finden Sie unter [Einschränkungen bei WCF-Debuggen](../debugger/limitations-on-wcf-debugging.md).
+ Damit dies funktioniert, müssen Sie das Debuggen in der Datei app.config oder Web.config aktivieren. Weitere Informationen zum Aktivieren des Debuggens sowie zu Einschränkungen beim Ausführen von Einzelschritten in WCF-Dienste finden Sie unter [Einschränkungen beim WCF-Debuggen](../debugger/limitations-on-wcf-debugging.md).
 
 ### <a name="to-step-into-a-wcf-service"></a>So führen Sie einen Einzelschritt in einen WCF-Dienst aus
 
@@ -43,4 +43,4 @@ In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] können
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)
 - [Einschränkungen beim WCF-Debugging](../debugger/limitations-on-wcf-debugging.md)
-- [Gewusst wie: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [How to: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

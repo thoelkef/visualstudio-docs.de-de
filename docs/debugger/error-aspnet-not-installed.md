@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: ASP.net nicht installiert | Microsoft-Dokumentation'
+title: 'Fehler: ASP.NET ist nicht installiert | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737919"
@@ -37,7 +37,7 @@ Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../code-quality/includes/vstec
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    Dabei steht *Version* für die Versionsnummer der .NET Framework, die auf Ihrem Computer installiert ist, z. b. v 1.0.370. Sie können die Frameworkversion ermitteln, indem Sie im `\WINDOWS\Microsoft.NET\Framework` Verzeichnis suchen.
+    Dabei stellt *Version* die Versionsnummer des auf dem Computer installierten .NET Framework (z. B. v1.0.370) dar. Sie können die Frameworkversion im Verzeichnis `\WINDOWS\Microsoft.NET\Framework` ermitteln.
 
    > [!NOTE]
    > Unter Windows Server 2003 können Sie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] in der Systemsteuerung über die Option **Software** installieren.

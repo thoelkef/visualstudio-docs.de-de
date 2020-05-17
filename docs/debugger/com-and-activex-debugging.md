@@ -1,5 +1,5 @@
 ---
-title: COM-und ActiveX-Debugging | Microsoft-Dokumentation
+title: Debuggen von COM und ActiveX | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188683"
@@ -32,14 +32,14 @@ ms.locfileid: "73188683"
 Dieser Abschnitt enthält Tipps zum Debuggen von COM‑Anwendungen und ActiveX-Steuerelementen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Com-Server-und Container Debugging](../debugger/com-server-and-container-debugging.md) Erwähnt besondere Aspekte beim Debuggen von com-Anwendungen. Zu den behandelten Themen gehören das Debuggen eines COM‑Servers und ‑Containers mit zwei Projekten in derselben Projektmappe, die Ablaufverfolgung in Aufrufen, die Prozessgrenzen überschreiten, das Setzen von Haltepunkten in Rückruffunktionen und das Springen über und in Container und Server.
+ [Debuggen von COM-Servern und -Containern](../debugger/com-server-and-container-debugging.md) stellt besondere Überlegungen beim Debuggen von COM‑Anwendungen vor. Zu den behandelten Themen gehören das Debuggen eines COM‑Servers und ‑Containers mit zwei Projekten in derselben Projektmappe, die Ablaufverfolgung in Aufrufen, die Prozessgrenzen überschreiten, das Setzen von Haltepunkten in Rückruffunktionen und das Springen über und in Container und Server.
 
- Gewusst [wie: Debuggen eines ActiveX-Steuer](../debugger/how-to-debug-an-activex-control.md) Elements Enthält Informationen zum Debuggen von ActiveX-Steuerelementen. Zu den behandelten Themen gehören das Angeben eines Containers für die Debugsitzung, um die Ausführung des Codes im ActiveX-Steuerelements zu überwachen, das Debuggen eines datengebundenen ActiveX-Steuerelements, das Simulieren eines bestimmten Containers und das Springen in den Code des Containers.
+ [How to: Debuggen von ActiveX-Steuerelementen](../debugger/how-to-debug-an-activex-control.md) enthält Informationen zum Debuggen von ActiveX‑Steuerelementen. Zu den behandelten Themen gehören das Angeben eines Containers für die Debugsitzung, um die Ausführung des Codes im ActiveX-Steuerelements zu überwachen, das Debuggen eines datengebundenen ActiveX-Steuerelements, das Simulieren eines bestimmten Containers und das Springen in den Code des Containers.
 
- [Com-Debugtools](../debugger/com-debugging-tools.md) Listet Betrachter und Beispielanwendungen auf, die beim Debuggen Ihrer COM-Anwendung nützlich sein können.
+ [COM-Debugtools](../debugger/com-debugging-tools.md) listet Viewer und Beispielanwendungen auf, die beim Debuggen der COM-Anwendung u. U. hilfreich sind.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Der erste Blick auf den Debugger](../debugger/debugger-feature-tour.md) Enthält Links zu den größeren Abschnitten der debuggingdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, bearbeiten und fortfahren, Debuggen von verwaltetem C++ Code, Debuggen von Projekten, Debuggen von com und ActiveX, Debuggen von DLLs, Debuggen von SQL und Benutzer Schnittstellen Verweise.
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md) enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Breakpoints, Ausnahmebehandlung, Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von C++-Projekten, Debuggen von COM und ActiveX, Debuggen von DLLs, Debuggen von SQL sowie Referenzen zur Benutzeroberfläche.
 
 ## <a name="see-also"></a>Siehe auch
 

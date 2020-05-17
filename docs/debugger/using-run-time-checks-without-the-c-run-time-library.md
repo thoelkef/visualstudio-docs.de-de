@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Laufzeitüberprüfungen ohne die C-Lauf Zeit Bibliothek | Microsoft-Dokumentation
+title: Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,13 +25,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728666"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek
-Wenn Sie das Programm ohne die C-Lauf Zeit Bibliothek mit **/NODEFAULTLIB**verknüpfen und Laufzeitüberprüfungen verwenden möchten, müssen Sie eine Verknüpfung mit RunTmChk. lib herstellen.
+Wenn Sie das Programm ohne die C-Laufzeitbibliothek (mit **/NODEFAULTLIB**) verknüpfen und Laufzeitfehlerüberprüfungen verwenden möchten, müssen Sie es mit „RunTmChk.lib“ verknüpfen.
 
 `_RTC_Initialize` initialisiert das Programm für Laufzeitüberprüfungen. Wenn Sie keine Verknüpfung mit der C-Laufzeitbibliothek erstellen, müssen Sie sicherstellen, dass das Programm mit Laufzeitüberprüfungen kompiliert wurde, bevor Sie `_RTC_Initialize` aufrufen:
 
@@ -64,4 +64,4 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 Nach der Installation der standardmäßigen Fehlerberichtsfunktion können Sie mit `_RTC_SetErrorFuncW` weitere Fehlerberichtsfunktionen installieren. Weitere Informationen finden Sie unter [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
 
 ## <a name="see-also"></a>Siehe auch
-[Gewusst wie: Verwenden von nativen Laufzeitprüfungen](../debugger/how-to-use-native-run-time-checks.md)
+[How to: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)

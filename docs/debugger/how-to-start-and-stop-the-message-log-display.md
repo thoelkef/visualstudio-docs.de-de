@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9f1fd5a7b7951056f65604bdea67eddcc3e696da
 ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/12/2019
 ms.locfileid: "64825015"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige
-Wenn eine [Meldungsansicht](../debugger/messages-view.md) Fenster aktiv ist, eine **Protokollierung starten** oder **Protokollierung beenden** Auswahl wird angezeigt, auf die Spy++- **Nachrichten** im Menü und die entsprechende **Protokollierung starten** oder **Protokollierung beenden** Symbolleisten-Schaltfläche aktiviert wird.
+Wenn ein Fenster [Meldungsansicht](../debugger/messages-view.md) aktiv ist, wird im Spy++-Menü **Meldungen** die Auswahl **Protokollierung starten** oder **Protokollierung beenden** angezeigt, und die entsprechende Symbolleistenschaltfläche **Protokollierung starten** oder **Protokollierung beenden** wird aktiv.
 
-### <a name="to-start-the-message-log-display"></a>Starten der Meldungsprotokollanzeige
+### <a name="to-start-the-message-log-display"></a>So starten Sie die Anzeige des Meldungsprotokolls
 
-1. Von der **Nachrichten** Menü wählen **Protokollierung starten**.
+1. Wählen Sie im Menü **Meldungen** die Option **Protokollierung starten** aus.
 
-### <a name="to-stop-the-message-log-display"></a>Zum Beenden der Meldungsprotokollanzeige
+### <a name="to-stop-the-message-log-display"></a>So beenden Sie die Anzeige des Meldungsprotokolls
 
-1. Von der **Nachrichten** Menü wählen **Protokollierung beenden**.
+1. Wählen Sie im Menü **Meldungen** die Option **Protokollierung beenden** aus.

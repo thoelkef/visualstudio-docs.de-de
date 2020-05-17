@@ -1,5 +1,5 @@
 ---
-title: 'Sicherheitswarnung: der Debugger muss einen nicht vertrauenswürdigen Befehl ausführen | Microsoft-Dokumentation'
+title: 'Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729749"
@@ -33,11 +33,11 @@ Diese Warnmeldung wird bei Verwendung des Quellservers angezeigt. Diese Meldung 
  **Möchten Sie diesen Befehl ausführen?**
 
 ## <a name="uielement-list"></a>UIElement-Liste
- Der Text Feld Befehl aus der PDB-Datei, der ausgeführt werden soll.
+ Textfeld: Auszuführender Befehl aus der PDB-Datei.
 
- Ausführen lassen Sie den Befehl ausführen.
+ Ausführen: Lässt die Ausführung des Befehls zu.
 
- Führen Sie die Befehlsausführung des Befehls nicht aus, und laden Sie die Datei vom Quell Server herunter.
+ Nicht ausführen: Beendet die Ausführung des Befehls und das Herunterladen der Datei vom Quellserver.
 
 ## <a name="see-also"></a>Siehe auch
 - [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: Senden von Nachrichten an das Ausgabefenster | Microsoft-Dokumentation
+title: Senden von Meldungen an das Ausgabefenster | Microsoft-Dokumentation
 ms.date: 11/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -23,25 +23,25 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
 ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/29/2019
 ms.locfileid: "68605375"
 ---
 # <a name="send-messages-to-the-output-window"></a>Senden von Meldungen an das Ausgabefenster
 
-Sie können Lauf Zeit Meldungen in das **Ausgabe** Fenster schreiben, indem Sie <xref:System.Diagnostics.Debug> die-Klasse <xref:System.Diagnostics.Trace> oder die- <xref:System.Diagnostics> Klasse verwenden, die Teil der-Klassenbibliothek sind. Verwenden Sie <xref:System.Diagnostics.Debug> die-Klasse, wenn Sie nur die Ausgabe in der *Debugversion* des Programms verwenden möchten. Verwenden Sie <xref:System.Diagnostics.Trace> die-Klasse, wenn Sie sowohl in der *Debug* -als auch in der *Releaseversion* eine Ausgabe
+Laufzeitmeldungen können im **Ausgabefenster** mithilfe der <xref:System.Diagnostics.Debug>-Klasse oder der <xref:System.Diagnostics.Trace>-Klasse ausgegeben werden. Beide sind Bestandteil der <xref:System.Diagnostics>-Klassenbibliothek. Falls die Ausgabe lediglich in der *Debugversion* des Programms erfolgen soll, verwenden Sie die <xref:System.Diagnostics.Debug>-Klasse. Soll die Ausgabe sowohl in der *Debug*- als auch in der *Releaseversion* erfolgen, verwenden Sie die <xref:System.Diagnostics.Trace>-Klasse.
 
 ## <a name="output-methods"></a>Ausgabemethoden
  Die <xref:System.Diagnostics.Trace>-Klasse und die <xref:System.Diagnostics.Debug>-Klasse stellen die folgenden Ausgabemethoden bereit:
 
 - Verschiedene `Write`-Methoden, die die Ausgabe von Informationen ermöglichen, ohne dass die Ausführung unterbrochen wird. Diese Methoden ersetzen die `Debug.Print`-Methode, die in früheren Versionen von Visual Basic verwendet wurde.
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>und <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> -Methoden, die die Ausführungs-und Ausgabeinformationen unterbrechen, wenn eine angegebene Bedingung fehlschlägt. Standardmäßig werden die Informationen der `Assert`-Methode in einem Dialogfeld angezeigt. Weitere Informationen finden Sie unter [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md).
+- Die <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode und die <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>-Methode, durch die die Ausführung unterbrochen wird und Informationen ausgegeben werden, wenn eine festgelegte Bedingung nicht erfüllt ist. Standardmäßig werden die Informationen der `Assert`-Methode in einem Dialogfeld angezeigt. Weitere Informationen finden Sie unter [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md).
 
-- Die <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> - <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> Methode und die-Methode, die Ausführungs-und Ausgabeinformationen immer unterbrechen. Standardmäßig werden die Informationen der `Fail`-Methoden in einem Dialogfeld angezeigt.
+- Die <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>-Methode und die <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>-Methode, durch die die Ausführung stets unterbrochen wird und Informationen ausgegeben werden. Standardmäßig werden die Informationen der `Fail`-Methoden in einem Dialogfeld angezeigt.
 
-Im Fenster **Ausgabe** können auch Informationen zu folgenden Informationen angezeigt werden:
+Im Fenster **Ausgabe** können auch Informationen zu Folgendem angezeigt werden:
 
 - Module, die der Debugger geladen oder entladen hat.
 
@@ -54,6 +54,6 @@ Im Fenster **Ausgabe** können auch Informationen zu folgenden Informationen ang
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)
 - [Ausgabefenster](../ide/reference/output-window.md)
-- [Trace und Instrumentieren von Anwendungen](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [Stapelüberwachung und Instrumentieren von Anwendungen](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

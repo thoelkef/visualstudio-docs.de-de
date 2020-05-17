@@ -1,5 +1,5 @@
 ---
-title: Der Debugger kann keinen Quellcode oder Disassembly anzeigen.
+title: Debugger kann keinen Quellcode oder Disassembly anzeigen
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d87de3034cb6cb8ba3364fa362eff1c27e6bae9d
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738343"
@@ -30,7 +30,7 @@ Inhalt dieses Fehlers:
 
  Diese Fehlermeldung kann mehrere Ursachen haben:
 
-- Während des Debuggens einer Sprache, die die Disassembly nicht unterstützt, wurde ein Haltepunkt an einer Position erreicht, für die kein Quellcode vorhanden ist. Öffnen Sie das Fenster **Breakpoints** , suchen Sie den Haltepunkt, und löschen Sie ihn.
+- Während des Debuggens einer Sprache, die die Disassembly nicht unterstützt, wurde ein Haltepunkt an einer Position erreicht, für die kein Quellcode vorhanden ist. Öffnen Sie das Fenster **Haltepunkte**, suchen Sie den Haltepunkt, und löschen Sie ihn.
 
 - Beim Debuggen von Skripts wurde ein Haltepunkt erreicht, während das Programm keine Threads enthielt. Wählen Sie im Menü **Debuggen** die Option **Schritt** oder **Weiter** aus, um das Debuggen fortzusetzen.
 

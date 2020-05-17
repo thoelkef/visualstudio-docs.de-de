@@ -1,5 +1,5 @@
 ---
-title: Anwenden von Bearbeitungen im Umbruch Modus mit "Bearbeiten und Fortfahren" | Microsoft-Dokumentation
+title: Anwenden von Bearbeitungen im Unterbrechungsmodus mit „Bearbeiten und fortfahren“ | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,15 +25,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734033"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Vorgehensweise: Anwenden von Bearbeitungen im Break-Modus mit "Bearbeiten und Fortfahren" (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit „Bearbeiten und fortfahren“ (Visual Basic)
 Sie können mit Bearbeiten und Fortfahren den Code im Unterbrechungsmodus bearbeiten und anschließend fortfahren, ohne die Codeausführung anzuhalten und erneut starten zu müssen.
 
-Informationen zu Einschränkungen bei der Verwendung von bearbeiten und Fortfahren beim Debuggen finden Sie [unter Unterstützte Code Änderungen (C# und Visual Basic)](../debugger/supported-code-changes-csharp.md).
+Informationen zu Einschränkungen bei der Verwendung von „Bearbeiten und fortfahren“ beim Debuggen finden Sie unter [Unterstützte Codeänderungen ( C# und Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
 ### <a name="to-edit-code-in-break-mode"></a>So bearbeiten Sie Code im Unterbrechungsmodus
 
@@ -47,11 +47,11 @@ Informationen zu Einschränkungen bei der Verwendung von bearbeiten und Fortfahr
 
          - oder -
 
-    - Wenn eine Ausnahme auftritt, wählen Sie im Ausnahmen- **Assistenten**die Option **Bearbeitung aktivieren** aus.
+    - Wenn eine Ausnahme auftritt, wählen Sie im **Ausnahmen-Assistenten** den Befehl **Bearbeiten aktivieren** aus.
 
 2. Nehmen Sie die gewünschten und unterstützten Codeänderungen vor.
 
-     Weitere Informationen finden Sie [unter Unterstützte Code ÄnderungenC# (und Visual Basic)](../debugger/supported-code-changes-csharp.md).
+     Weitere Informationen finden Sie unter [Unterstützte Codeänderungen (C# und Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
     > [!NOTE]
     > Bei dem Versuch, mit Bearbeiten und Fortfahren eine nicht zulässige Änderung vorzunehmen, wird die bearbeitete Stelle violett wellenförmig unterstrichen, und in der Aufgabeliste wird eine Aufgabe angezeigt. Sie können mit der Codeausführung erst fortfahren, nachdem Sie die nicht zulässige Codeänderung rückgängig gemacht haben.
@@ -61,5 +61,5 @@ Informationen zu Einschränkungen bei der Verwendung von bearbeiten und Fortfahr
      Der Code wird nun einschließlich der vorgenommenen Änderungen ausgeführt, die jetzt Teil des Projekts sind.
 
 ## <a name="see-also"></a>Siehe auch
-- [Unterstützte Code ÄnderungenC# (und Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Unterstützte Codeänderungen (C# und Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Bearbeiten und Fortfahren (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

@@ -1,5 +1,5 @@
 ---
-title: Remote Debugger-Port Zuweisungen | Microsoft-Dokumentation
+title: Remotedebugger-Portzuweisungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
 ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74239455"
@@ -48,18 +48,18 @@ Die Nummer des Ports, der dem Remotedebugger zugewiesen ist, wird also für jede
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Remotedebugger-Port bei 64-Bit-Betriebssystemen
 ::: moniker range=">=vs-2019"
- Wenn die 64-Bit-Version des Remote Debuggers gestartet wird, wird standardmäßig der Hauptport (4024) verwendet.  Wenn Sie einen 32-Bit-Prozess Debuggen, startet die 64-Bit-Version des Remote Debuggers eine 32-Bit-Version des Remote Debuggers an Port 4025 (die durch 1 inkrementierte Haupt Portnummer). Wenn Sie den 32-Bit-Remotedebugger ausführen, wird Port 4024 und nicht Port 4025 verwendet.
+ Beim Starten der 64-Bit-Version des Remotedebuggers wird standardmäßig der Hauptport (4024) verwendet.  Wenn Sie einen 32-Bit-Prozess debuggen, startet die 64-Bit-Version des Remotedebuggers eine 32-Bit-Remotedebuggerversion auf Port 4025 (die Nummer des Hauptports, inkrementiert um 1). Wenn Sie den 32-Bit-Remotedebugger ausführen, wird Port 4024 und nicht Port 4025 verwendet.
 ::: moniker-end
 ::: moniker range="vs-2017"
- Wenn die 64-Bit-Version des Remote Debuggers gestartet wird, wird standardmäßig der Hauptport (4022) verwendet.  Wenn Sie einen 32-Bit-Prozess Debuggen, startet die 64-Bit-Version des Remote Debuggers eine 32-Bit-Version des Remote Debuggers an Port 4023 (die durch 1 inkrementierte Haupt Portnummer). Wenn Sie den 32-Bit-Remotedebugger ausführen, wird Port 4022 und nicht Port 4023 verwendet.
+ Beim Starten der 64-Bit-Version des Remotedebuggers wird standardmäßig der Hauptport (4022) verwendet.  Wenn Sie einen 32-Bit-Prozess debuggen, startet die 64-Bit-Version des Remotedebuggers eine 32-Bit-Remotedebuggerversion auf Port 4023 (die Nummer des Hauptports, inkrementiert um 1). Wenn Sie den 32-Bit-Remotedebugger ausführen, wird Port 4022 und nicht Port 4023 verwendet.
 :::moniker-end
 
- Dieser Port ist über die Befehlszeile konfigurierbar: **Msvsmon /wow64port \<Portnummer>** .
+ Dieser Port ist über die Befehlszeile konfigurierbar: **Msvsmon/wow64port \<Portnummer>** .
 
 ## <a name="the-discovery-port"></a>Port für die Ermittlung
  UDP 3702 wird für die Suche nach ausgeführten Instanzen des Remotedebuggers im Netzwerk verwendet (z. B. bei **Suchen** im Dialogfeld **An den Prozess anhängen** ). Er wird nur für die Ermittlung von Computern verwendet, auf denen der Remotedebugger ausgeführt wird, und ist daher optional, wenn Sie den Computernamen oder die IP-Adresse des Zielcomputers auf andere Weise ermitteln können. Da dies der Standardport für die Ermittlung ist, kann die Portnummer nicht konfiguriert werden.
 
- Wenn Sie die Ermittlung nicht aktivieren möchten, können Sie msvsmon von der Befehlszeile aus mit deaktivierter Ermittlung starten:  **msvsmon /nodiscovery**.
+ Wenn Sie die Ermittlung nicht aktivieren möchten, können Sie msvsmon von der Befehlszeile aus mit deaktivierter Ermittlung starten:  **Msvsmon /nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Remotedebugger-Ports in Azure
  Die folgenden Ports werden vom Remotedebugger in Azure verwendet. Die Ports im Clouddienst werden den Ports auf den einzelnen virtuellen Computern zugeordnet. Bei allen Ports handelt es sich um TCP-Ports.
@@ -72,4 +72,4 @@ Die Nummer des Ports, der dem Remotedebugger zugewiesen ist, wird also für jede
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
 ## <a name="see-also"></a>Siehe auch
-- [Remotedebuggen](../debugger/remote-debugging.md)
+- [Remote Debugging](../debugger/remote-debugging.md)

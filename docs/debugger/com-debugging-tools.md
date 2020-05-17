@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
 ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/24/2019
 ms.locfileid: "71211279"
@@ -46,5 +46,5 @@ Die MFC-ActiveX-Beispiele OCLIENT und SUPERPAD stehen ebenfalls zum Testen der A
 - [COM-Debugtools](../debugger/com-debugging-tools.md)
 - [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
-- [OCLIENT-Beispiel: Veranschaulicht eine Anwendung für die visuelle Bearbeitung von Containern.](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [SUPERPAD-Beispiel: Veranschaulicht einen visuellen Bearbeitungs Server, der Text mithilfe von CEditView bearbeitet.](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [OCLIENT-Beispiel: Veranschaulicht eine Containeranwendung für die visuelle Bearbeitung](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [SUPERPAD-Beispiel: Veranschaulicht einen Server für die visuelle Bearbeitung, der Text mithilfe von CEditView bearbeitet](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

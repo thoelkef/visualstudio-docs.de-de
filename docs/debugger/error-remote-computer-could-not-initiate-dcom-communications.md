@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: der Remote Computer konnte die DCOM-Kommunikation nicht initiieren | Microsoft-Dokumentation'
+title: 'Fehler: Der Remotecomputer konnte die DCOM-Kommunikation nicht initiieren | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2d61fe145a8dc301c928b81f9b57f1a574865a1d
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737553"
@@ -32,7 +32,7 @@ Bei einem Versuch des Remotecomputers, mit dem lokalen Computer zu kommunizieren
 
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-1. Wenn auf dem lokalen Computer die Windows-Firewall aktiviert ist, finden Sie unter [Remote Debuggen](../debugger/remote-debugging.md) Anweisungen zum Konfigurieren der Firewall für das lokale Debuggen.
+1. Wenn auf dem lokalen Computer die Windows-Firewall aktiviert ist, finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md) Anweisungen zum Konfigurieren der Firewall zum lokalen Debuggen.
 
 2. Testen Sie die Windows-Authentifizierung, indem Sie versuchen, vom Remoteserver auf dem lokalen Computer eine Dateifreigabe zu öffnen.
 

@@ -1,5 +1,5 @@
 ---
-title: Warnung bei veraltetem Code (Dialog Feld) | Microsoft-Dokumentation
+title: 'Dialogfeld „Warnung: Veralteter Code“ | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,7 +22,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729544"
