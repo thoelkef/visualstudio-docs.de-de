@@ -106,7 +106,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise „[Projekt erstellen](#create-a-project)“ zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld *Projektname***HalloWelt** ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
@@ -134,7 +134,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![HTML-Code für den Bereich „Weitere Informationen“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Ändern Sie den Text "„Weitere Informationen“ in „**Hallo Welt!**“.
+1. Ändern Sie den Text "„Weitere Informationen“ in „**Hallo Welt!** “.
 
    ![Ändern des standardmäßigen HTML-Codes für den Bereich „Weitere Informationen“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -146,7 +146,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![C#-Code für die Anwendung im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. Ändern Sie den Text „Anwendungsbeschreibung“ in „**Wie lautet meine Nachricht?**“.
+1. Ändern Sie den Text „Anwendungsbeschreibung“ in „**Wie lautet meine Nachricht?** “.
 
    ![Ändern des Standardnachrichtentexts im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
@@ -187,7 +187,7 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
    ![Der HTML-Code in der Datei „Index.cshtml“ für die Startseite im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. Ändern Sie den Text „Welcome“ in „**Hello World!**“.
+1. Ändern Sie den Text „Welcome“ in „**Hello World!** “.
 
    ![Ändern des HTML-Standardcodes, der „Welcome“ lautet, in „Hello World“ im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 

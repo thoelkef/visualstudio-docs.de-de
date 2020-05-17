@@ -30,10 +30,10 @@ In diesem Lernprogramm lernen Sie Folgendes:
 > * Importieren der Veröffentlichungseinstellungsdatei in Visual Studio
 > * Bereitstellen der App in Azure App Service
 
-Eine Veröffentlichungseinstellungsdatei (*\*.publishsettings*) unterscheidet sich von einem in Visual Studio erstellten Veröffentlichungsprofil (*\*.pubxml*). Eine Veröffentlichungseinstellungsdatei wird von Azure App Service erstellt und kann anschließend in Visual Studio importiert werden.
+Eine Veröffentlichungseinstellungsdatei ( *\*.publishsettings*) unterscheidet sich von einem in Visual Studio erstellten Veröffentlichungsprofil ( *\*.pubxml*). Eine Veröffentlichungseinstellungsdatei wird von Azure App Service erstellt und kann anschließend in Visual Studio importiert werden.
 
 > [!NOTE]
-> Sie müssen lediglich ein Visual Studio-Veröffentlichungsprofil (*\*.pubxml*-Datei) aus einer Installation von Visual Studio in eine andere kopieren. Das Veröffentlichungsprofil *\<Profilname\>.pubxml* finden Sie im Ordner *\\<Projektname\>\Properties\PublishProfiles* für verwaltete Projekttypen. Für Websites durchsuchen Sie den Ordner *\App_Data*. Die Veröffentlichungsprofile sind XML-Dateien von MSBuild.
+> Sie müssen lediglich ein Visual Studio-Veröffentlichungsprofil ( *\*.pubxml*-Datei) aus einer Installation von Visual Studio in eine andere kopieren. Das Veröffentlichungsprofil *\<Profilname\>.pubxml* finden Sie im Ordner *\\<Projektname\>\Properties\PublishProfiles* für verwaltete Projekttypen. Für Websites durchsuchen Sie den Ordner *\App_Data*. Die Veröffentlichungsprofile sind XML-Dateien von MSBuild.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

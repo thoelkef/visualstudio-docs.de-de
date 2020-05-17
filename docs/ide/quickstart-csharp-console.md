@@ -48,7 +48,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 
 2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-3. Erweitern Sie im linken Dialogfeld **Neues Projekt** den Eintrag **C#**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie dann das Projekt *HalloWelt*.
+3. Erweitern Sie im linken Dialogfeld **Neues Projekt** den Eintrag **C#** , und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie dann das Projekt *HalloWelt*.
 
    ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
@@ -87,7 +87,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise „[Projekt erstellen](#create-a-project)“ zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld *Projektname***HalloWelt** ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 

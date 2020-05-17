@@ -67,7 +67,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 ::: moniker range="vs-2017"
 
-1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt****Konsole** ein, um die Liste der Projekttypen nach denen zu filtern, die „Konsole“ im Namen enthalten.
+1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt** **Konsole** ein, um die Liste der Projekttypen nach denen zu filtern, die „Konsole“ im Namen enthalten.
 
    ![Suchen von Projektvorlagen auf der Visual Studio-Startseite](media/start-page-search-templates.png)
 

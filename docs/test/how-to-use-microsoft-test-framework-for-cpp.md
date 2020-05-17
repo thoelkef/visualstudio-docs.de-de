@@ -19,11 +19,11 @@ ms.locfileid: "75755565"
 
 Das Microsoft-Komponententest-Framework für C++ ist standardmäßig in der Workload **Desktopentwicklung mit C++** enthalten.
 
-## <a name="separate_project"></a> Schreiben von Komponententests in einem separaten Projekt
+## <a name="to-write-unit-tests-in-a-separate-project"></a><a name="separate_project"></a> Schreiben von Komponententests in einem separaten Projekt
 
 In der Regel führen Sie Ihren Testcode in einem eigenen Projekt in derselben Projektmappe aus, in der sich der Code befindet, den Sie testen möchten. Weitere Informationen zum Einrichten und Konfigurieren eines neuen Testprojekts finden Sie unter [Writing Unit Tests for C/C++ (Schreiben von Komponententests für C/C++)](writing-unit-tests-for-c-cpp.md).
 
-## <a name="same_project"></a> Schreiben von Komponententests im gleichen Projekt
+## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a> Schreiben von Komponententests im gleichen Projekt
 
 In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer DLL) sollten Sie die Tests im gleichen Projekt wie das Programm erstellen, das Sie testen. So schreiben Sie Komponententests im gleichen Projekt:
 
@@ -44,7 +44,7 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
    - Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und wählen Sie **Hinzufügen** > **Neues Element** > **C++-Datei (cpp)** aus.
 
-## <a name="object_files"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
+## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
 
 Wenn der zu testende Code nicht die Funktionen exportiert, die Sie testen möchten, können Sie die Ausgabedatei ( **.obj**- oder **.lib**) zu den Abhängigkeiten des Testprojekts hinzufügen. Ändern Sie die Eigenschaften des Testprojekts, um die Header und die Bibliotheks- oder Objektdateien einzuschließen, die für die Komponententests erforderlich sind.
 
