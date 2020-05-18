@@ -22,16 +22,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732816"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto
 Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess (aspnet_wp.exe oder w3wp.exe) unter einem Benutzerkonto ausgeführt werden kann, führen Sie folgende Schritte aus:
 
  > [!IMPORTANT]
- > Ab Windows Server 2008 R2 empfiehlt es sich, die [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungs Pool zu verwenden.
+ > Ab Windows Server 2008 R2 empfiehlt es sich, die [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungspool zu verwenden.
 
 ## <a name="procedure"></a>Prozedur
 
@@ -49,7 +49,7 @@ Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/
 
    2. Klicken Sie im Dialogfeld **Internetinformationsdienste** mit der rechten Maustaste auf den Ordner **Web Sites** (Websites), und wählen Sie **Eigenschaften** aus.
 
-   3. Wählen Sie im Dialogfeld **Web Sites Properties**  (Eigenschaften von Websites) die Option **Service** (Dienst) aus.
+   3. Wählen Sie im Dialogfeld **Web Sites Properties** (Eigenschaften von Websites) die Option **Service** (Dienst) aus.
 
    4. Wählen Sie **Run WWW service in IIS6.0 isolation mode** (WWW-Dienst im IIS 6.0-Isolationsmodus ausführen) aus.
 
