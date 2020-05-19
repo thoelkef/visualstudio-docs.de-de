@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Aktivieren und Deaktivieren von "Bearbeiten und Fortfahren" | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Aktivieren und Deaktivieren von „Bearbeiten und Fortfahren“ | Microsoft-Dokumentation'
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -28,30 +28,30 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 2c8486bdcd7bc737d3851eabd88734df4efd80b7
 ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72430536"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Gewusst wie: Aktivieren und Deaktivieren von "Bearbeiten undC#fortfahren" C++(, VB,)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Vorgehensweise: Aktivieren und Deaktivieren von „Bearbeiten und Fortfahren“ (C#, VB und C++)
 
-Sie können " **Bearbeiten und Fortfahren** " im Visual Studio-Dialogfeld " **Optionen** " zur Entwurfszeit deaktivieren oder aktivieren. Die Funktion **Bearbeiten und Fortfahren** funktioniert nur in Debugversionen. Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
+Sie können im Visual Studio-Dialogfeld **Optionen** die Option **Bearbeiten und Fortfahren** zur Entwurfszeit aktivieren oder deaktivieren. Die Funktion **Bearbeiten und Fortfahren** funktioniert nur in Debugversionen. Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
 
-Für Native C++, **Bearbeiten und Fortfahren** erfordert die Verwendung der Option `/INCREMENTAL`. Weitere Informationen zu den Funktionsanforderungen in C++finden Sie in diesem [Blogbeitrag](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) und unter " [BearbeitenC++und Fortfahren" ()](../debugger/edit-and-continue-visual-cpp.md).
+Bei nativem C++ erfordert **Bearbeiten und Fortfahren** die Verwendung der `/INCREMENTAL`-Option. Weitere Informationen zu den Featureanforderungen in C++ finden Sie in diesem [Blogbeitrag](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) und unter [Bearbeiten und Fortfahren (C++)](../debugger/edit-and-continue-visual-cpp.md).
 
-**So aktivieren oder deaktivieren Sie "Bearbeiten und Fortfahren":**
+**Aktivieren oder Deaktivieren von „Bearbeiten und Fortfahren“:**
 
-1. Wenn Sie sich in einer Debugsitzung befinden, können Sie das Debuggen**Abbrechen (Debuggen**  > **Debugging Abbrechen** oder **UMSCHALT** +**F5**)
+1. Wenn Sie sich in einer Debugsitzung befinden, beenden Sie das Debuggen (**Debuggen** > **Debuggen beenden** oder **UMSCHALT**+**F5**).
 
-1. Wählen Sie unter Extras  > **Optionen** > (oder **Debuggen**  > **Optionen**) > **Debugging**  > **Allgemein**aus, und klicken Sie im rechten **Bereich auf** **Bearbeiten und Fortfahren** .
+1. Klicken Sie unter **Extras** > **Optionen** (oder **Debuggen** > **Optionen**) > **Debuggen** > **Allgemein** im rechten Bereich auf **Bearbeiten und Fortfahren**.
 
     > [!NOTE]
-    > Wenn IntelliTrace aktiviert ist und Sie IntelliTrace-Ereignisse und Aufrufinformationen erfassen, wird "Bearbeiten und Fortfahren" deaktiviert. Weitere Informationen finden Sie unter [IntelliTrace](../debugger/intellitrace.md).
+    > Wenn IntelliTrace aktiviert ist und Sie IntelliTrace-Ereignisse und Aufrufinformationen erfassen, wird "Bearbeiten und Fortfahren" deaktiviert. Weitere Informationen finden Sie unter [IntelliTrace für Visual Studio Enterprise (C#, Visual Basic, C++)](../debugger/intellitrace.md).
 
-1. Stellen C++ Sie für Code sicher, dass **native bearbeiten und Fortfahren aktivieren** ausgewählt ist, und legen Sie die zusätzlichen Optionen fest:
+1. Stellen Sie bei C++-Code sicher, dass **Natives Bearbeiten und Fortfahren aktivieren** ausgewählt ist, und legen Sie die zusätzlichen Optionen fest:
     - **Änderungen beim Fortfahren anwenden (nur nativ)**
 
-      Wenn Sie diese Option auswählen, kompiliert Visual Studio automatisch Codeänderungen und wendet sie an, wenn Sie das Debuggen fortsetzen. Andernfalls können Sie Änderungen mithilfe von **Debug** - >  Anwenden von**Code Änderungen**auswählen.
+      Wenn diese Option ausgewählt ist, werden Codeänderungen von Visual Studio automatisch kompiliert und angewendet, wenn Sie das Debuggen fortsetzen. Andernfalls können Sie Änderungen mithilfe von **Debuggen** > **Codeänderungen übernehmen** anwenden.
 
     - **Warnung bei veraltetem Code (nur nativ)**
 

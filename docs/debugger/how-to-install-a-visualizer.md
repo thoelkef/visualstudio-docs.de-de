@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Installieren eines Visualizers | Microsoft Docs'
+title: 'Vorgehensweise: Installieren einer Schnellansicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,52 +19,52 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 499d644cc8374b070cedaf058b0e4dc17d155bdc
 ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/08/2020
 ms.locfileid: "80880259"
 ---
-# <a name="how-to-install-a-visualizer"></a>Gewusst wie: Installieren einer Schnellansicht
+# <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.
 
 > [!NOTE]
-> In UWP-Apps werden nur die Standard-Text-, HTML-, XML- und JSON-Visualisierungen unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.
+> In UWP-Apps werden nur die Schnellansichten Standardtext, HTML, XML und JSON unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.
 
 ::: moniker range=">=vs-2019"
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>So installieren Sie eine Visualisierung für Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Installieren einer Schnellansicht für Visual Studio 2019
   
-1. Suchen Sie die DLL, die die von Ihnen erstellte Visualisierung enthält.
+1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
 
-   In der Regel ist es am besten, wenn sowohl die Debugger-seitige DLL als auch die Debuggee-seitige DLL **eine beliebige CPU** als Zielplattform angeben. Die Debugger-seitige DLL muss entweder **beliebige CPU** oder **32-Bit**sein. Die Zielplattform für die Debuggee-seitige DLL sollte dem Debugee-Prozess entsprechen.
+   In der Regel ist es am besten, wenn sowohl für die debuggerseitige DLL als auch für die zu debuggende DLL **Beliebige CPU** als Zielplattform angegeben ist. Für die debuggerseitige DLL muss entweder **Beliebige CPU** oder **32-Bit** ausgewählt sein. Die Zielplattform für die zu debuggende DLL sollte dem Prozess für zu debuggende Komponenten entsprechen.
 
-2. Kopieren Sie die [Debugger-Seiten-DLL](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (und alle DLLs, von denen sie abhängt) an einen der folgenden Speicherorte:
+2. Kopieren Sie die [debuggerseitige](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL (und alle davon abgängigen DLLs) in einen der folgenden Speicherorte:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Kopieren Sie die [Debuggee-Seiten-DLL](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) an einen der folgenden Speicherorte:
+3. Kopieren Sie die [zu debuggende](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) DLL in einen der folgenden Speicherorte:
 
-    - *VisualStudioInstallPath-Framework* `\Common7\Packages\Debugger\Visualizers\` *Framework*
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
-    - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Framework*
+    - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
 
-    wobei *Framework* entweder:
-    - `net2.0`für Debuggees, `.NET Framework` die die Laufzeit ausführen.
-    - `netstandard2.0`für Debuggees, die eine `netstandard 2.0` `.NET Framework v4.6.1+` Laufzeit `.NET Core 2.0+`verwenden, die ( oder ) unterstützt.
-    - `netcoreapp`für Debuggees, `.NET Core` die die Laufzeit ausführen. (unterstützt `.NET Core 2.0+`)
+    *Framework* kann hier Folgendes sein:
+    - `net2.0` für zu debuggende Komponenten, die die `.NET Framework`-Runtime ausführen
+    - `netstandard2.0` für zu debuggende Komponenten, die eine Runtime verwenden, die `netstandard 2.0` unterstützt (`.NET Framework v4.6.1+` oder `.NET Core 2.0+`)
+    - `netcoreapp` für zu debuggende Komponenten, die die `.NET Core`-Runtime ausführen (Unterstützung für `.NET Core 2.0+`)
 
 4. Starten Sie die Debugsitzung neu.
 
 > [!NOTE]
-> Die Prozedur ist in Visual Studio 2017 und älter anders. Siehe die [vorherige Version](how-to-install-a-visualizer.md?view=vs-2017) dieses Artikels.
+> Das Verfahren unterscheidet sich in Visual Studio 2017 und älteren Versionen. Lesen Sie die [vorherige Version](how-to-install-a-visualizer.md?view=vs-2017) dieses Artikels.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>So installieren Sie eine Visualisierung für Visual Studio 2017 und älter
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Installieren einer Schnellansicht für Visual Studio 2017 und ältere Versionen
 
 > [!IMPORTANT]
-> Nur .NET Framework-Visualisierungen werden in Visual Studio 2017 und älter unterstützt.
+> Nur .NET Framework-Schnellansichten werden in Visual Studio 2017 und älteren Versionen unterstützt.
 
 1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
 
@@ -82,4 +82,4 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)
-- [Gewusst wie: Schreiben einer Schnellansicht](create-custom-visualizers-of-data.md)
+- [How to: Schreiben einer Schnellansicht](create-custom-visualizers-of-data.md)

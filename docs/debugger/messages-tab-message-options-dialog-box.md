@@ -1,5 +1,5 @@
 ---
-title: Registerkarte "Meldungen", Optionsdialogfeld | Microsoft-Dokumentation
+title: Meldungen-Registerkarte und Meldungsoptionen-Dialogfeld | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,30 +12,30 @@ ms.workload:
 - multiple
 ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62905530"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Registerkarte "Meldungen", Dialogfeld "Meldungsoptionen"
-Verwenden der **Nachrichten** Tab, um auszuwählen, welche Nachrichtentypen zur Liste in [Meldungsansicht](../debugger/messages-view.md), und Angeben von Suchkriterien für die Nachricht. Zum Anzeigen der [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md), wählen Sie **Protokollmeldungen** aus der **Spy** Menü.
+Verwenden Sie die Registerkarte **Meldungen**, um auszuwählen, welche Meldungstypen in der [Meldungsansicht](../debugger/messages-view.md) angezeigt werden sollen, und um Suchkriterien für Meldungen anzugeben. Um das [Dialogfeld „Meldungsoptionen](../debugger/message-options-dialog-box.md) anzuzeigen, wählen Sie im Menü **Spy** die Option **Meldungen protokollieren** aus.
 
- In der Regel zuerst auswählen **Nachrichtengruppen**, und der anschließenden Optimierung die Auswahl durch Auswahl eines einzelnen **Nachrichten an die Ansicht**. Die **alle** Schaltfläche auswählt, alle Nachrichtentypen, und die **keine** Schaltfläche löscht alle Typen.
+ In der Regel wählen Sie zunächst **Meldungsgruppen** aus und optimieren dann die Auswahl, indem Sie einzelne **anzuzeigende Meldungen** auswählen. Mit der Schaltfläche **Alle** können Sie alle Meldungstypen auswählen und mit der Schaltfläche **Keine** werden alle Typen gelöscht.
 
- Die folgenden Einstellungen stehen auf der **Nachrichten** Registerkarte:
+ Auf der Registerkarte **Meldungen** sind folgende Einstellungen verfügbar:
 
- **Nachrichten zur Ansicht** bestimmte Nachrichten für die Anzeige auswählen. Wenn Sie ein neues Fenster für die Nachrichten erstellen, können sie alle Meldungen anzuzeigen. Wenn Sie Nachrichten von Filtern die **Nachrichten** Registerkarte, dass der Filter gilt nur für neue Nachrichten, nicht die Nachrichten, die bereits in der Windows-Ansicht angezeigt wurden.
+ **Anzuzeigende Meldungen:** Hier wählen Sie spezifische Meldungen aus, die angezeigt werden sollen. Wenn Sie ein neues Meldungsfenster erstellen, können alle Meldungen angezeigt werden. Wenn Sie Meldungen über die Registerkarte **Meldungen** filtern, gilt dieser Filter nur für neue Meldungen und nicht für Meldungen, die bereits in der Fensteransicht angezeigt wurden.
 
- **Nachricht Gruppen** wählen Sie für die Anzeige. Die verfügbaren Gruppen enthalten:
+ **Meldungsgruppen:** Hier wählen Sie Meldungsgruppen aus, die angezeigt werden sollen. Zu den verfügbaren Gruppen gehören:
 
-- WM_USER: Klicken Sie mit einem Code, die größer als oder gleich WM_USER
+- WM_USER: Meldungen mit einem Code größer als oder gleich WM_USER
 
-- : Registriert mit der **RegisterWindowMessage registriert** aufrufen
+- Registered (Registriert): Meldungen die mit dem Aufruf **RegisterWindowMessage** registriert wurden
 
-- Unbekannt: Unbekannte Nachrichten im Bereich von 0 WM_USER (- 1)
+- Unknown (Unbekannt): Unbekannte Meldungen im Bereich 0 (null) bis (WM_USER - 1)
 
-  Beachten Sie, dass diese **Nachrichtengruppen** lassen sich bestimmte Einträge unter nicht zuordnen **Nachrichten zu Ansicht**. Wenn Sie eine Gruppe auswählen, wird die Auswahl direkt auf den Nachrichtenstream angewendet.
+  Beachten Sie, dass diese **Meldungsgruppen** nicht bestimmten Einträgen unter **Anzuzeigende Meldungen** zugeordnet werden. Wenn Sie eine Gruppe auswählen, wird diese Auswahl direkt auf den Meldungsdatenstrom angewendet.
 
-  In das Kontrollkästchen grau **Nachrichtengruppen** gibt an, dass die **Nachrichten zu Ansicht** Listenfeld für Nachrichten in dieser Gruppe geändert wurde, nicht alle die Nachrichtentypen in der Gruppe ausgewählt werden.
+  Ein ausgegrautes Kontrollkästchen in **Meldungsgruppen** gibt an, dass das Listenfeld **Anzuzeigende Meldungen** für Meldungen in dieser Gruppe geändert wurde. Nicht alle Meldungstypen in dieser Gruppe wurden ausgewählt.
 
-  **Speichern Sie die Einstellungen als Standard** speichern Sie die aktuellen Einstellungen für die spätere Verwendung als Nachricht Suchoptionen. Diese Einstellungen werden ebenfalls gespeichert, wenn Spy++ beendet wird.
+  **Als Voreinstellung speichern:** Hiermit können Sie die aktuellen Einstellungen zur späteren Verwendung als Optionen für die Suche nach Meldungen speichern. Diese Einstellungen werden ebenfalls beim Beenden von Spy++ gespeichert.

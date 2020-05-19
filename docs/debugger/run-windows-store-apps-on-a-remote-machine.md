@@ -1,5 +1,5 @@
 ---
-title: Debuggen von UWP-apps auf Remotecomputern | Microsoft-Dokumentation
+title: Debuggen von UWP-Apps auf Remotecomputern | Microsoft-Dokumentation
 ms.date: 10/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -15,96 +15,96 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62902871"
 ---
-# <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-apps auf Remotecomputern aus Visual Studio
+# <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-Apps auf Remotecomputern in Visual Studio
 
-Sie können Visual Studio ausführen, Debuggen, profilerstellung und zum Testen einer app (Universelle Windows Plattform) auf einem anderen Computer oder Gerät verwenden. Ausführen von UWP-app auf einem Remotecomputer ist besonders hilfreich, wenn Visual Studio-Computer nicht mit UWP-spezifische Funktionen wie die Fingereingabe, GeoLocation und physische Ausrichtung unterstützt.
+Sie können mit Visual Studio UWP-Apps (Universelle Windows-Plattform) auf einem anderen Computer oder Gerät ausführen, debuggen, profilen und testen. Das Ausführen einer UWP-App auf einem Remotecomputer ist besonders dann hilfreich, wenn der Visual Studio-Computer keine UWP-spezifischen Funktionen wie Toucheingabe, Geolocation oder physische Ausrichtung unterstützt.
 
-## <a name="BKMK_Prerequisites"></a> Erforderliche Komponenten
+## <a name="prerequisites"></a><a name="BKMK_Prerequisites"></a> Erforderliche Komponenten
 
-So debuggen Sie eine UWP-app auf einem Remotegerät in Visual Studio
+Für das Debuggen einer UWP-App auf einem Remotegerät in Visual Studio müssen folgende Voraussetzungen erfüllt sein:
 
-- Visual Studio-Projekt muss für das Remotedebuggen konfiguriert werden.
-- Der Remotecomputer und Visual Studio-Computer müssen über ein Netzwerk verbunden oder direkt über ein USB- oder Ethernet-Kabel verbunden. Das Debugging über das Internet wird nicht unterstützt.
-- Sie müssen [Entwicklermodus aktivieren](/windows/uwp/get-started/enable-your-device-for-development) auf dem Visual Studio-Computer und dem Remotecomputer.
-- Remote-Computern müssen der Remotetools für Visual Studio ausgeführt werden.
-  - Einige Windows 10-Versionen starten, und führen die Remotetools automatisch. Andernfalls [installieren und Ausführen der Remotetools für Visual Studio](#BKMK_download).
-  - Mobile für Windows 10-Geräte nicht erforderlich oder die Remoteserver-Verwaltungstools unterstützen.
+- Das Visual Studio-Projekt muss für das Remotedebuggen konfiguriert sein.
+- Der Remotecomputer und der Visual Studio-Computer müssen über ein Netzwerk oder direkt über ein USB-Kabel oder Ethernetkabel miteinander verbunden sein. Das Debugging über das Internet wird nicht unterstützt.
+- Sie müssen sowohl auf dem Visual Studio-Computer als auch auf dem Remotecomputer den [Entwicklermodus aktivieren](/windows/uwp/get-started/enable-your-device-for-development).
+- Auf Remotecomputern muss Remotetools für Visual Studio ausgeführt werden.
+  - In einigen Windows 10-Versionen werden die Remotetools automatisch gestartet und ausgeführt. Ist dies bei Ihnen nicht der Fall, [installieren Sie Remotetools für Visual Studio, und führen Sie die Tools aus](#BKMK_download).
+  - Auf Windows 10 Mobile-Geräten sind die Remotetools nicht erforderlich und werden auch nicht unterstützt.
 
-## <a name="BKMK_ConnectVS"></a> Konfigurieren eines Visual Studio-Projekts für das Remotedebuggen
-<a name="BKMK_DirectConnect"></a> Verwenden Sie das Projekt **Eigenschaften** an das Remotegerät an, um eine Verbindung herstellen. Die Einstellungen unterscheiden sich je nach Programmiersprache.
+## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a> Konfigurieren eines Visual Studio-Projekts für das Remotedebuggen
+<a name="BKMK_DirectConnect"></a> Geben Sie in den **Eigenschaften** des Projekts das Remotegerät an, mit dem eine Verbindung hergestellt werden soll. Die Einstellungen unterscheiden sich je nach Programmiersprache.
 
 > [!CAUTION]
-> Standardmäßig legt die Eigenschaftenseite **universell (unverschlüsseltes Protokoll)** als die **Authentifizierungstyp** für Windows 10-Remoteverbindungen. Sie müssen möglicherweise festlegen **keine Authentifizierung** eine Verbindung mit dem Remotedebugger herstellen. **Universell (unverschlüsseltes Protokoll)** und **keine Authentifizierung** Protokolle verfügen über keine Netzwerksicherheit, damit zwischen der Entwicklung und den Remotecomputern übergebene Daten gefährdet ist. Wählen Sie die folgenden Authentifizierungstypen nur für vertrauenswürdige Netzwerke, die Sie nicht sicher durch bösartigen oder feindlichen Datenverkehr gefährdet sind.
+> Standardmäßig ist für Windows 10-Remoteverbindungen auf der Eigenschaftenseite **Universell (unverschlüsseltes Protokoll)** als **Authentifizierungstyp** festgelegt. Möglicherweise müssen Sie **Keine Authentifizierung** festlegen, um eine Verbindung mit dem Remotedebugger herzustellen. Die Protokolle **Universell (unverschlüsseltes Protokoll)** und **Keine Authentifizierung** stellen keine Netzwerksicherheit bereit. Daher sind die zwischen dem Entwicklungs- und dem Remotecomputer weitergegebenen Daten anfällig. Verwenden Sie diese Authentifizierungstypen nur in vertrauenswürdigen Netzwerken, bei denen Sie sicher sind, dass keine Gefährdung durch schädlichen oder bösartigen Datenverkehr besteht.
 >
->Auf Wunsch **Windows-Authentifizierung** für die **Authentifizierungstyp**, Sie müssen sich auf den Remotecomputer beim Debuggen. Der Remotedebugger muss auch unter ausgeführt werden **Windows-Authentifizierung** -Modus mit dem gleichen Benutzerkonto wie auf dem Visual Studio-Computer.
+>Wenn Sie **Windows-Authentifizierung** als **Authentifizierungstyp** auswählen, müssen Sie sich beim Debuggen beim Remotecomputer anmelden. Der Remotedebugger muss ebenfalls im Modus **Windows-Authentifizierung** ausgeführt werden, und zwar mit dem Benutzerkonto des Visual Studio-Computers.
 
-### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Konfigurieren einer C# oder Visual Basic-Projekt für das Remotedebuggen
+### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Konfigurieren eines C#- oder Visual Basic-Projekts für das Remotedebuggen
 
-1. Wählen Sie die C# oder Visual Basic-Projekt in Visual Studio **Projektmappen-Explorer** , und wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt** +  **Geben Sie**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
+1. Klicken Sie in Visual Studio im **Projektmappen-Explorer** auf das C#- oder Visual Basic-Projekt, dann auf das Symbol für **Eigenschaften**, und drücken Sie **ALT**+**EINGABETASTE**. Alternativ können Sie mit der rechten Maustaste auf das Projekt und anschließend mit der linken Maustaste auf **Eigenschaften** klicken.
 
 1. Klicken Sie auf die Registerkarte **Debuggen**.
 
-1. Klicken Sie unter **Zielgerät**Option **Remotecomputer** für einen Remotecomputer, oder **Gerät** für ein direkt verbundene Mobile für Windows 10-Gerät.
+1. Wählen Sie unter **Zielgerät** **Remotecomputer** für einen Remotecomputer oder **Gerät** für ein direkt verbundenes Windows 10 Mobile-Gerät aus.
 
-1. Für einen Remotecomputer, geben Sie den Netzwerknamen oder die IP-Adresse in der **Remotecomputer** Feld, oder wählen **finden** , suchen Sie für das Gerät in die [Remoteverbindungen-Dialogfeld](#remote-connections).
+1. Geben Sie bei einem Remotecomputer den Netzwerknamen oder die IP-Adresse in das Feld **Remotecomputer** ein, oder klicken Sie im [Dialogfeld Remoteverbindungen](#remote-connections) auf **Suchen**, um nach dem Gerät zu suchen.
 
-    ![Verwaltete Projekteigenschaften für Remotedebugging](../debugger/media/vsrun_managed_projprop_remote.png "verwalteten Debug-Projekteigenschaften")
+    ![Verwaltete Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_managed_projprop_remote.png "Verwaltete Projekteigenschaften unter „Debuggen“")
 
-### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurieren einer C++ Projekts für das Remotedebuggen
+### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurieren eines C++-Projekts für das Remotedebuggen
 
-1. Wählen Sie die C++ Projekt in Visual Studio **Projektmappen-Explorer** , und wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
+1. Klicken Sie in Visual Studio im **Projektmappen-Explorer** auf das C++-Projekt, dann auf das Symbol für **Eigenschaften**, und drücken Sie **ALT**+**EINGABETASTE**. Alternativ können Sie mit der rechten Maustaste auf das Projekt und anschließend mit der linken Maustaste auf **Eigenschaften** klicken.
 
-1. Wählen Sie die **Debuggen** Registerkarte.
+1. Klicken Sie auf die Registerkarte **Debuggen**.
 
-3. Klicken Sie unter **zu startender Debugger**Option **Remotecomputer** für einen Remotecomputer, oder **Gerät** für ein direkt verbundene Mobile für Windows 10-Gerät.
+3. Wählen Sie unter **Zu startender Debugger:** **Remotecomputer** für einen Remotecomputer oder **Gerät** für ein direkt verbundenes Windows 10 Mobile-Gerät aus.
 
-1. Für eine remote-Computer eingeben, oder wählen Sie den Netzwerknamen oder die IP-Adresse in der **Computername** Feld oder die Drop nach unten, und wählen **suchen** , suchen Sie für das Gerät in die [RAS-Verbindungen (Dialogfeld) ](#remote-connections).
+1. Geben Sie bei einem Remotecomputer den Netzwerknamen oder die IP-Adresse in das Feld **Computername** ein. Alternativ können Sie die entsprechende Dropdownliste aufklappen und auf **Suchen** klicken, um über das [Dialogfeld Remoteverbindungen](#remote-connections) nach dem Gerät zu suchen.
 
-    ![C++-Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "Debuggen von C++-Projekteigenschaften")
+    ![C++-Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "C++-Projekteigenschaften unter „Debuggen“")
 
-### <a name="remote-connections"></a> Verwenden Sie das Dialogfeld "Remoteverbindungen"
+### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> Verwenden des Dialogfelds „Remoteverbindungen“
 
-In der **Remoteverbindungen** (Dialogfeld), Sie können für einen bestimmten Remotecomputer-Namen oder die IP-Adresse suchen oder automatische Erkennung Verbindungen durch Auswählen des Symbols gerundet Pfeil in der Aktualisierung. Das Dialogfeld "durchsucht nur Geräte im lokalen Subnetz, die derzeit den Remotedebugger ausgeführt werden. Nicht alle Geräte erkannt werden können, der **Remoteverbindungen** Dialogfeld.
+Im Dialogfeld **Remoteverbindungen** können Sie entweder nach einem bestimmten Remotecomputernamen oder einer bestimmten IP-Adresse suchen oder per Klick auf das Aktualisierungssymbol mit dem gebogenen Pfeil die automatische Erkennung von Verbindungen verwenden. Das Dialogfeld sucht nur nach Geräten im lokalen Subnetz, auf denen derzeit der Remotedebugger ausgeführt wird. Nicht alle Geräte können im Dialogfeld **Remoteverbindungen** erkannt werden.
 
- ![Remote-Verbindung (Dialogfeld)](../debugger/media/vsrun_selectremotedebuggerdlg.png "Dialogfeld \"Remoteverbindungen\"")
+ ![Dialogfeld „Remoteverbindungen“](../debugger/media/vsrun_selectremotedebuggerdlg.png "Dialogfeld „Remoteverbindungen“")
 
 >[!TIP]
->Wenn Sie anhand des Namens mit einem Remotegerät herstellen können, verwenden Sie die IP-Adresse. Um zu bestimmen, die IP-Adresse, auf dem Remotegerät, geben Sie **Ipconfig** in einem Befehlsfenster. Die IP-Adresse wird als **IPv4-Adresse**.
+>Wenn Sie mit einem Remotegerät über den Namen keine Verbindung herstellen können, versuchen Sie es mit der IP-Adresse. Ermitteln Sie die IP-Adresse, indem Sie auf dem Remotegerät **ipconfig** in ein Befehlsfenster eingeben. Die IP-Adresse wird als **IPv4-Adresse** angezeigt.
 
-## <a name="BKMK_download"></a> Herunterladen und Installieren der Remotetools für Visual Studio
+## <a name="download-and-install-the-remote-tools-for-visual-studio"></a><a name="BKMK_download"></a> Herunterladen und Installieren der Remotetools für Visual Studio
 
-Für Visual Studio zum Debuggen von apps auf einem Remotecomputer befindet muss auf der Remotecomputer die Remotetools für Visual Studio ausgeführt werden.
+Damit Visual Studio auf einem Remotecomputer Apps debuggen kann, muss Remotetools für Visual Studio darauf ausgeführt werden.
 
-- Mobile für Windows 10-Geräte nicht erforderlich, und unterstützen die Remoteserver-Verwaltungstools.
-- Windows 10-PCs, die Ausführung des Erstellers Update (Version 1703) und höher, Windows 10 Xbox, IoT und HoloLens-Geräte Installieren der Remotetools automatisch, wenn Sie die app bereitstellen.
-- Auf Pre-creators Update Windows 10-PCs müssen Sie manuell herunterladen, installieren und werden die Remotetools auf dem Remotecomputer ausgeführt wird, bevor Sie das Debuggen starten.
+- Auf Windows 10 Mobile-Geräten sind die Remotetools nicht erforderlich und werden auch nicht unterstützt.
+- Bei Windows 10-PCs mit Creators Update (Version 1703) und höher installieren Windows 10 Xbox-, IoT- und HoloLens-Geräte automatisch die Remotetools, wenn Sie die App bereitstellen.
+- Bei PCs mit Windows 10-Versionen vor Creators Update müssen Sie die Remotetools vor dem Debuggen manuell auf dem Remotecomputer herunterladen, installieren und ausführen.
 
-**Zum Herunterladen und installieren die Remoteserver-Verwaltungstools:**
+**So laden Sie die Remotetools herunter und installieren sie**
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="BKMK_setup"></a> Konfiguration der Remotetools
+### <a name="configure-the-remote-tools"></a><a name="BKMK_setup"></a> Konfigurieren der Remotetools
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-## <a name="BKMK_RunRemoteDebug"></a> Remotedebuggen von UWP-apps
+## <a name="debug-uwp-apps-remotely"></a><a name="BKMK_RunRemoteDebug"></a> UWP-Apps remote debuggen
 
-Remotedebuggen funktioniert genauso wie das lokale Debuggen die folgenden Schritte ausführen.
+Das Remotedebuggen funktioniert wie das lokale Debuggen.
 
-1. Pre-creators Update-Versionen von Windows 10, vergewissern Sie sich auf den Remotedebugmonitor (*msvsmon.exe*) auf dem Remotegerät ausgeführt wird.
+1. Stellen Sie sicher, dass bei Windows 10-Versionen vor Creators Update der Remotedebugmonitor (*msvsmon.exe*) auf dem Remotegerät ausgeführt wird.
 
-1. Visual Studio-Computer, vergewissern Sie sich auf das richtige Ziel (**Remotecomputer** oder **Gerät**) neben dem grünen Pfeil auf der Symbolleiste angezeigt.
+1. Stellen Sie sicher, dass auf dem Visual Studio-Computer neben dem grünen Pfeil auf der Symbolleiste das richtige Debugziel angezeigt wird (**Remotecomputer** oder **Gerät**).
 
-1. Starten Sie das Debuggen durch Auswahl **Debuggen** > **Debuggen starten**, drücken **F5**, oder wählen Sie den grünen Pfeil auf der Symbolleiste.
+1. Starten Sie das Debuggen, indem Sie auf **Debuggen** > **Debuggen starten** klicken, auf **F5** drücken oder auf den grünen Pfeil auf der Symbolleiste klicken.
 
-   Das Projekt kompiliert, klicken Sie dann bereitgestellt und gestartet wird, auf dem Remotegerät. Der Debugger hält die Ausführung an Haltepunkten an können, und Sie in, und Prozedurschritte für Code.
+   Das Projekt wird neu kompiliert und anschließend auf dem Remotegerät bereitgestellt und gestartet. An Haltepunkten unterbricht der Debugger die Ausführung, und Sie können die Optionen Einzelschritt, Prozedurschritt und Rücksprung auf den Code anwenden.
 
-1. Wählen Sie bei Bedarf **Debuggen** > **Debuggen beenden** , oder drücken Sie **UMSCHALT**+**F5** debugging beenden, und Schließen Sie die RemoteApp.
+1. Klicken Sie bei Bedarf auf **Debuggen** > **Debuggen beenden**, oder drücken Sie **UMSCHALT**+**F5**, um das Debuggen zu beenden und die Remote-App zu schließen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Advanced remote deployment options (Erweiterte Optionen für die Remotebereitstellung)](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)

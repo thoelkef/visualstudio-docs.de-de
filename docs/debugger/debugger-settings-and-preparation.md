@@ -1,5 +1,5 @@
 ---
-title: Debugger-Einstellungen und-Vorbereitung | Microsoft-Dokumentation
+title: Debuggereinstellungen und -vorbereitung | Microsoft-Dokumentation
 ms.date: 08/01/2018
 ms.topic: reference
 f1_keywords:
@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738276"
@@ -32,19 +32,19 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
- Gewusst [wie: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md) Beschreibt Debuggereinstellungen im Dialogfeld **Optionen** .
+ [How to: Specify Debugger Settings (Vorgehensweise: Festlegen von Debuggereinstellungen):](../debugger/how-to-specify-debugger-settings.md) In diesem Artikel werden die Debuggereinstellungen des Dialogfelds **Optionen** beschrieben.
  
- [Debuggerprojekteinstellungen](../debugger/debugger-project-settings.md) Erläutert das Angeben von Debuggereinstellungen, das Festlegen von Debug-und Releasekonfigurationen sowie das Verwalten von Symbolen und Quellcode. Weiterhin werden die richtigen Projekteinstellungen für die Debugkonfigurationen in C++, C#, F# und Visual Basic sowie Webprojekte beschrieben.
+ [Debuggerprojekteinstellungen:](../debugger/debugger-project-settings.md) In diesem Artikel wird das Festlegen der Debuggereinstellungen, Debug- und Releasekonfigurationen sowie die Verwaltung von Symbolen und Quellcode erläutert. Weiterhin werden die richtigen Projekteinstellungen für die Debugkonfigurationen in C++, C#, F# und Visual Basic sowie Webprojekte beschrieben.
 
- [Debugging von DLL-Projekten](../debugger/debugging-dll-projects.md) Beschreibt Empfohlene Projekteinstellungen für das Debuggen von DLL-Projekten, das Debuggen aus einem DLL-Projekt, das Debuggen im gemischten Modus und das Debuggen einer websteuer Element Bibliothek mit verwaltetem Code.
+ [Debuggen von DLL-Projekten:](../debugger/debugging-dll-projects.md) In diesem Artikel werden die empfohlenen Projekteinstellungen für das Debuggen von DLL-Projekten, das Debuggen aus einem DLL-Projekt, das Debuggen im gemischten Modus sowie das Debuggen einer Websteuerelementbibliothek mit verwaltetem Code erläutert.
 
- [Konsolen Projekte](../debugger/debugging-preparation-console-projects.md) Enthält Anweisungen zum Konfigurieren von Konsolen Projekten für das Debuggen.
+ [Konsolenprojekte:](../debugger/debugging-preparation-console-projects.md) In diesem Artikel finden Sie Anweisungen zum Konfigurieren von Konsolenprojekten für das Debuggen.
 
- Gewusst [wie: Debuggen einer ausführbaren Datei, nicht Teil einer Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) -Projekt Mappe Erläutert das Debuggen einer ausführbaren Datei, die nicht als Teil eines Visual Studio-Projekts erstellt wurde.
+ [How to: Debug an Executable Not Part of a Visual Studio Solution (Vorgehensweise: Debuggen einer ausführbaren Datei außerhalb einer Visual Studio-Projektmappe):](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) In diesem Artikel wird das Debuggen einer ausführbaren Datei erläutert, die nicht als Bestandteil eines Visual Studio-Projekts erstellt wurde.
 
- [64-Bit-Anwendungen debuggen](../debugger/debug-64-bit-applications.md) Beschreibt, wie 64-Bit-Anwendungen debuggt werden.
+ [Debuggen von 64-Bit-Anwendungen:](../debugger/debug-64-bit-applications.md) In diesem Artikel wird das Debuggen von 64-Bit-Anwendungen beschrieben.
 
- Gewusst [wie: Angeben einer älteren .NET Framework Version für das Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Beschreibt, wie ein Registrierungsschlüssel festgelegt wird, um den Debugger anzugeben, welche Version verwendet werden soll.
+ [How to: Specify an older .NET Framework Version For Debugging (Vorgehensweise: Festlegen einer älteren .NET Framework-Version für das Debuggen):](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) In diesem Artikel wird beschrieben, wie ein Registrierungsschlüssel festgelegt wird, durch den der Debugger erkennt, welche Version verwendet werden soll.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

@@ -1,5 +1,5 @@
 ---
-title: Entsperren Sie den Download der Remotetools
+title: Freischalten des Remotetooldownloads
 ms.date: 07/19/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,32 +11,32 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62903022"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Vorgehensweise: Entsperren Sie den Download der Remotetools unter Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Vorgehensweise: Freischalten des Downloads der Remotetools unter Windows Server
 
-Die standardsicherheitseinstellungen in Internet Explorer unter Windows Server können zum Herunterladen von Komponenten wie z. B. die Remotetools zeitaufwändige gestalten.
+Aufgrund der Standardsicherheitseinstellungen in Internet Explorer unter Windows Server kann es sehr zeitaufwändig sein, Komponenten wie die Remotetools herunterzuladen.
 
-* Durch die verstärkte Sicherheitskonfiguration für Internet Explorer, der verhindert, dass Sie von Websites öffnen und den Zugriff auf Webressourcen, es sei denn, die Domäne, die mit der Ressource explizit zugelassen wird aktiviert ist (d. h. vertrauenswürdig). Obwohl Sie diese Einstellung deaktivieren können, empfohlen nicht es, da er ein Sicherheitsrisiko darstellen kann.
+* Die verstärkte Sicherheitskonfiguration ist in Internet Explorer aktiviert. Sie können also weder Websites öffnen noch auf Webressourcen zugreifen, es sei denn, die Domäne, die die Ressource enthält, wurde explizit zugelassen (d. h. sie ist vertrauenswürdig). Obwohl Sie diese Einstellung deaktivieren können, wird dies nicht empfohlen, da die Deaktivierung ein Sicherheitsrisiko darstellen kann.
 
-* Unter Windows Server 2016 eine Standardeinstellung in **Internetoptionen** > **Sicherheit** > **Internet**  >   **Stufe** > **Downloads** auch deaktiviert Dateidownloads. Wenn Sie die Remoteserver-Verwaltungstools unter Windows Server direkt herunterladen möchten, müssen Sie die Datei zum Herunterladen aktivieren.
+* Unter Windows Server 2016 werden Dateidownloads durch eine Standardeinstellung unter **Internetoptionen** > **Sicherheit** > **Internet** > **Stufe anpassen** > **Downloads** deaktiviert. Wenn Sie die Remotetools direkt unter Windows Server herunterladen möchten, müssen Sie zunächst den Dateidownload aktivieren.
 
-Herunterladen von Tools unter Windows Server, empfehlen wir eine der folgenden:
+Zum Herunterladen der Tools unter Windows Server wird eine der folgenden Vorgehensweisen empfohlen:
 
-* Laden Sie die Remoteserver-Verwaltungstools auf einem anderen Computer wie die einer ausgeführten Visual Studio, und kopieren Sie die *.exe* -Datei mit Windows Server.
+* Laden Sie die Remotetools auf einem anderen Computer herunter, z. B. auf dem Computer, auf dem Visual Studio ausgeführt wird. Kopieren Sie dann die *EXE*-Datei zu Windows Server.
 
-* Ausführen des Remotedebuggers [aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon) auf Ihrem Computer Visual Studio.
+* Führen Sie den Remotedebugger [auf einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon) auf Ihrem Visual Studio-Computer aus.
 
-* Laden Sie die Remoteserver-Verwaltungstools direkt auf Windows Server, und akzeptieren Sie die aufforderungen, um den vertrauenswürdigen Sites hinzufügen. Moderne Websites enthalten häufig viele Ressourcen von Drittanbietern, damit dies zahlreiche Anweisungen führen kann. Darüber hinaus müssen alle umgeleiteten Links manuell hinzugefügt werden. Sie können auch einige der vertrauenswürdigen Sites hinzufügen, bevor Sie den Download ab. Wechseln Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Websites** und fügen Sie den folgenden Websites hinzu.
+* Laden Sie die Remotetools direkt unter Windows Server herunter, und akzeptieren Sie die Aufforderungen zum Hinzufügen von vertrauenswürdigen Websites. Moderne Websites enthalten häufig viele Drittanbieterressourcen. Möglicherweise werden Ihnen daher sehr viele Aufforderungen angezeigt. Außerdem müssen Umleitungs-URLs, sofern vorhanden, möglicherweise manuell hinzugefügt werden. Sie können einige der vertrauenswürdigen Websites bereits vor dem Download hinzufügen. Navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**, und fügen Sie die folgenden Websites hinzu.
 
   * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
-  * Informationen zu: leer
+  * about:blank
 
-  Fügen Sie bei älteren Versionen des Debuggers auf my.visualstudio.com wird diese zusätzliche Websites hinzu, stellen Sie sicher, dass diese Anmeldung erfolgreich ist:
+  Fügen Sie auf my.visualstudio.com für ältere Versionen des Debuggers außerdem diese Websites hinzu, um sicherzustellen, dass die Anmeldung erfolgreich ist:
 
   * microsoft.com
   * go.microsoft.com
@@ -51,8 +51,8 @@ Herunterladen von Tools unter Windows Server, empfehlen wir eine der folgenden:
   * vlscppe.microsoft.com
   * query.prod.cms.rt.microsoft.com
 
-    Wenn Sie diese Domänen, die beim Herunterladen der Remoteserver-Verwaltungstools hinzufügen möchten, und wählen Sie dann **hinzufügen** Aufforderung.
+    Wenn Sie diese Domänen beim Herunterladen der Remotetools hinzufügen möchten, klicken Sie auf **Hinzufügen**, wenn Sie dazu aufgefordert werden.
 
-    ![Blockierte Content (Dialogfeld)](../debugger/media/remotedbg-blocked-content.png)
+    ![Dialogfeld zu blockierten Inhalten](../debugger/media/remotedbg-blocked-content.png)
 
-    Wenn Sie die Software herunterladen, erhalten Sie einige zusätzlichen Anforderungen zum Laden von verschiedenen Website-Skripts und Ressourcen berechtigt zu gewähren. Auf my.visualstudio.com empfehlen wir, dass Sie, die zusätzlichen Domänen hinzufügen an, stellen Sie sicher, dass diese Anmeldung erfolgreich ist.
+    Wenn Sie die Software herunterladen, werden Sie möglicherweise auch dazu aufgefordert, die Berechtigung zum Laden verschiedener Websiteskripts und -ressourcen zu erteilen. Es ist empfehlenswert, auf my.visualstudio.com die zusätzlichen Domänen hinzuzufügen, um sicherzustellen, dass die Anmeldung erfolgreich ist.

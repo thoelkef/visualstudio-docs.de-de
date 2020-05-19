@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Verwenden der WPF-Struktur Schnellansicht | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Verwenden der WPF-Strukturschnellansicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +18,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
 ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/24/2019
 ms.locfileid: "72888403"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Gewusst wie: Verwenden des WPF Tree Visualizer (WPF-Strukturschnellansicht)
-Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um die visuelle Struktur eines WPF-Objekts zu untersuchen und die WPF-Abhängigkeitseigenschaften für die Objekte anzuzeigen, die in dieser Struktur enthalten sind. Weitere Informationen zu visuellen Bäumen finden Sie Unterstrukturen [in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Weitere Informationen zu Abhängigkeits Eigenschaften finden Sie unter [Übersicht über Abhängigkeits Eigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview).
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Vorgehensweise: Verwenden der WPF-Strukturschnellansicht
+Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um die visuelle Struktur eines WPF-Objekts zu untersuchen und die WPF-Abhängigkeitseigenschaften für die Objekte anzuzeigen, die in dieser Struktur enthalten sind. Weitere Informationen zu visuellen Strukturen finden Sie unter [Strukturen in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Weitere Informationen zu Abhängigkeitseigenschaften finden Sie unter [Übersicht über Abhängigkeitseigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Wenn Sie die WPF-Struktur Schnellansicht öffnen, werden zwei Bereiche angezeigt: die **visuelle** Struktur auf der linken Seite und die **Eigenschaften von** _Name_ **:** _Typbereich_ auf der rechten Seite. Wählen Sie im **visuellen** Strukturbereich ein beliebiges Objekt aus, und die **Eigenschaften des** _Bereichs Name_ **:** _Typ_ werden automatisch aktualisiert, um die Eigenschaften für dieses Objekt anzuzeigen.
+ Wenn Sie die WPF-Strukturschnellansicht öffnen, werden zwei Bereiche angezeigt: **Visuelle Struktur** auf der linken und **Eigenschaften von** _Name_ **:** _Typ_ auf der rechten Seite. Wenn Sie im Bereich **Visuelle Struktur** auf ein Objekt klicken, wird der Bereich **Eigenschaften von** _Name_ **:** _Typ_ automatisch aktualisiert, und die Eigenschaften des ausgewählten Objekts werden angezeigt.
 
  > [!NOTE]
- > Sie können auch den visuellen [livebaum und den Live-Eigenschaften-Explorer](../xaml-tools/inspect-xaml-properties-while-debugging.md) verwenden, um die visuelle Struktur von WPF-Objekten zu untersuchen. Die WPF-Struktur Schnellansicht ist ein Legacy Feature und befindet sich nicht in der aktiven Entwicklung.
+ > Sie können auch den [Explorer für visuelle Livestrukturen und Liveeigenschaften](../xaml-tools/inspect-xaml-properties-while-debugging.md) verwenden, um die visuelle Struktur von WPF-Objekten zu untersuchen. Die WPF-Strukturschnellansicht ist ein veraltetes Feature und befindet sich nicht in der aktiven Entwicklung.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>So öffnen Sie die WPF-Strukturschnellansicht
 
@@ -53,7 +53,7 @@ Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um d
 
 ### <a name="to-search-the-properties-list"></a>So durchsuchen Sie die Eigenschaftenliste
 
-- Geben Sie im Bereich **Eigenschaften von** _Name_ **:** _Typ_ im Feld **Filter** die Zeichenfolge ein, nach der Sie suchen möchten.
+- Geben Sie im Bereich **Eigenschaften von**: _Name_ **:** _Typ_ in das Feld **Filter** die Zeichenfolge ein, die Sie suchen möchten.
 
   Die WPF-Strukturschnellansicht zeigt sofort die Eigenschaften an, die zur eingegebenen Zeichenfolge passen, und in der Liste werden nur die Eigenschaften angezeigt, die zur eingegebenen Zeichenfolge passen. Geben Sie mehr Zeichen ein, um eine genauere Übereinstimmung zu erzielen.
 

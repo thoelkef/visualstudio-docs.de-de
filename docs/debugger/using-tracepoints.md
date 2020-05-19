@@ -1,5 +1,5 @@
 ---
-title: Protokollinformationen mit Ablauf Verfolgungs Punkten | Microsoft-Dokumentation
+title: Protokollieren von Informationen mit Ablaufverfolgungspunkten | Microsoft-Dokumentation
 ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,65 +11,65 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187299"
 ---
-# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Protokollieren von Informationen im Ausgabefenster mithilfe von Ablauf Verfolgungs Punkten in Visual Studio
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Protokollieren von Informationen im Ausgabefenster mithilfe von Ablaufverfolgungspunkten in Visual Studio
 
-Mit Ablauf Verfolgungs Punkten können Sie Informationen im Ausgabefenster unter konfigurierbare Bedingungen protokollieren, ohne den Code zu ändern oder zu beenden. Diese Funktion wird sowohl für verwaltete Sprachen (C#, Visual Basic, F#) als auch für nativen Code sowie für Sprachen wie JavaScript und python unterstützt.
+Mit Ablaufverfolgungspunkten können Sie Informationen im Ausgabefenster protokollieren. Hierfür können Sie Bedingungen konfigurieren, sodass der Code nicht geändert oder angehalten werden muss. Dieses Feature wird für verwaltete Sprachen (C#, Visual Basic, F#), nativen Code und Sprachen wie JavaScript und Python unterstützt.
 
-## <a name="let39s-take-an-example"></a>Sehen&#39;Sie sich ein Beispiel an
+## <a name="let39s-take-an-example"></a>Beispiel
 
-Das folgende Beispielprogramm ist eine einfache `for`-Schleife mit einer Counter-Variablen, die sich bei jeder Ausführung einer anderen Iterations Schleife um eins vergrößert.
+Das folgende Beispielprogramm ist eine einfache `for`-Schleife mit einer Zählervariable, die jedes Mal um 1 erhöht wird, wenn die Schleife eine weitere Iteration ausführt.
 
-![Counter-Beispiel](../debugger/media/counterexample.png "Counter-Beispiel")
+![Zählerbeispiel](../debugger/media/counterexample.png "Zählerbeispiel")
 
-## <a name="set-tracepoints-in-source-code"></a>Festlegen von Ablauf Verfolgungs Punkten im Quellcode
+## <a name="set-tracepoints-in-source-code"></a>Festlegen von Ablaufverfolgungspunkten im Quellcode
 
-Sie können Ablauf Verfolgungs Punkte festlegen, indem Sie im Fenster "halte **Punkt Einstellungen** " unter dem Kontrollkästchen **Aktion** eine Ausgabe Zeichenfolge angeben.
+Sie können Ablaufverfolgungspunkte festlegen, indem Sie eine Ausgabezeichenfolge unter dem Kontrollkästchen **Aktion** im Fenster **Haltepunkteinstellungen** festlegen.
 
-1. Um einen Ablauf Verfolgungs Punkt zu initialisieren, klicken Sie zuerst auf den bundbundrand links neben der Zeilennummer, in der Sie den Ablauf Verfolgungs Punkt festlegen möchten.
+1. Klicken Sie zunächst links auf dem Bundsteg auf die Zeilennummer, in der der Ablaufverfolgungspunkt festgelegt werden soll, um einen Ablaufverfolgungspunkt zu initialisieren.
 
    ![Initialisierung von Haltepunkten](../debugger/media/breakpointinitialization.png "Initialisierung von Haltepunkten")
 
-2. Zeigen Sie auf den roten Kreis, und klicken Sie dann auf das Zahnrad Symbol.
-3. Dadurch wird das Fenster halte **Punkt Einstellungen** geöffnet.
+2. Zeigen Sie auf den roten Kreis, und klicken Sie dann auf das Zahnradsymbol.
+3. Daraufhin wird das Fenster **Haltepunkteinstellungen** geöffnet.
 
-   ![Haltepunkt Fenster](../debugger/media/breakpointwindow.png "Haltepunkt Fenster")
+   ![Haltepunktfenster](../debugger/media/breakpointwindow.png "Haltepunktfenster")
 
-4. Aktivieren Sie das Kontrollkästchen **Aktion** .
+4. Aktivieren Sie das Kontrollkästchen **Aktion**.
 
-   ![Aktivierte Aktionsfelder](../debugger/media/checkedactionsbox.png "Aktivierte Aktionsfelder")
+   ![Aktivierte Kontrollkästchen unter „Aktion“](../debugger/media/checkedactionsbox.png "Aktivierte Kontrollkästchen unter „Aktion“")
 
-   Beachten Sie, dass sich der rote Kreis in einen Diamanten ändert, der anzeigt, dass Sie von einem Haltepunkt zu Ablauf Verfolgungs Punkt gewechselt haben.
+   Sie sehen, dass sich der rote Kreis in einen Diamanten ändert. Das bedeutet, dass der Haltepunkt in einen Ablaufverfolgungspunkt geändert wurde.
 
-5. Geben Sie die Meldung ein, die Sie beim **Anzeigen einer Meldung in das Ausgabefenster** Textfeld anmelden möchten (Ausführliche Informationen finden Sie in den Abschnitten weiter unten in diesem Artikel).
+5. Geben Sie die Meldung ein, die Sie im Textfeld **Meldung im Ausgabefenster anzeigen:** protokollieren möchten. Weitere Informationen finden Sie in nachfolgenden Abschnitten in diesem Artikel.
 
-   Der Ablauf Verfolgungs Punkt ist jetzt festgelegt. Klicken Sie auf die Schaltfläche &quot;Close &quot;, wenn Sie nur einige Informationen in der Ausgabefenster protokollieren möchten.
+   Der Ablaufverfolgungspunkt ist damit festgelegt. Klicken Sie auf die Schaltfläche &quot;Schließen&quot;, wenn Sie nur einige Informationen im Ausgabefenster protokollieren möchten.
 
-6. Wenn Sie Bedingungen hinzufügen möchten, die bestimmen, ob Ihre Meldung angezeigt wird, aktivieren Sie das Kontrollkästchen **Bedingungen** .
+6. Wenn Sie Bedingungen hinzufügen möchten, die bestimmen, ob und wann Ihre Meldung angezeigt wird, aktivieren Sie das Kontrollkästchen **Bedingungen**.
 
-   ![Feld für aktivierte Bedingungen](../debugger/media/checkedconditionsbox.png "Feld für aktivierte Bedingungen")
+   ![Aktiviertes Kontrollkästchen „Bedingungen“](../debugger/media/checkedconditionsbox.png "Aktiviertes Kontrollkästchen „Bedingungen“")
 
-   Sie haben drei Möglichkeiten für Bedingungen: **bedingter Ausdruck**, **Filter**und **Treffer Anzahl**.
+   Es gibt drei mögliche Bedingungen: **Bedingter Ausdruck**, **Filter** und **Trefferanzahl**.
 
-## <a name="actions-menu"></a>Menü "Aktionen"
+## <a name="actions-menu"></a>Menü „Aktionen“
 
-Mit diesem Menü können Sie eine Meldung im Ausgabefenster protokollieren. Geben Sie die Zeichen folgen ein, die im Meldungs Feld ausgegeben werden sollen (keine Anführungszeichen erforderlich). Wenn Sie Werte von Variablen anzeigen möchten, stellen Sie sicher, dass Sie diese in geschweiften Klammern einschließen.
+Mit diesem Menü können Sie eine Meldung im Ausgabefenster protokollieren. Geben Sie die Zeichenfolgen ein, die im Meldungsfeld ausgegeben werden sollen (Anführungszeichen sind nicht erforderlich). Wenn Sie die Werte von Variablen anzeigen möchten, müssen Sie diese in geschweifte Klammern einschließen.
 
-Wenn Sie z. b. den Wert der `counter` Variablen in der Ausgabe Konsole anzeigen möchten, geben Sie im Textfeld Nachricht den Wert {Counter} ein.
+Wenn Sie z. B. den Wert der Variablen `counter` in der Ausgabekonsole anzeigen möchten, müssen Sie {counter} im Textfeld für die Meldung eingeben.
 
-![Counter-Ausgabe Meldung](../debugger/media/counteroutputmessage.png "Counter-Ausgabe Meldung")
+![Ausgabemeldung des Zählers](../debugger/media/counteroutputmessage.png "Ausgabemeldung des Zählers")
 
-Wenn Sie auf **Schließen** klicken und dann das Programm Debuggen (**F5**), wird im Ausgabefenster die folgende Ausgabe angezeigt.
+Wenn Sie auf **Schließen** klicken und anschließend den Debugger für das Programm starten (**F5**), wird im Ausgabefenster die folgende Ausgabe angezeigt:
 
-![Aktions Meldung in Ausgabefenster](../debugger/media/actionsmessageinoutputwindow.png "Aktions Meldung in Ausgabefenster")
+![Aktionsmeldung im Ausgabefenster](../debugger/media/actionsmessageinoutputwindow.png "Aktionsmeldung im Ausgabefenster")
 
-Sie können auch spezielle Schlüsselwörter verwenden, um spezifischere Informationen anzuzeigen. Geben Sie das Schlüsselwort genau wie unten dargestellt ein (verwenden Sie "$" vor jedem Schlüsselwort und alle Caps für das Schlüsselwort selbst).
+Sie können auch bestimmte Schlüsselwörter verwenden, um spezifischere Informationen anzuzeigen. Geben Sie das Schlüsselwort genau wie unten dargestellt ein. Schreiben Sie das Schlüsselwort in Großbuchstaben, und stellen Sie ihm $ voran.
 
-| Stichwort | Was wird angezeigt? |
+| Stichwort | Anzeige |
 | --- | --- |
 | $ADDRESS | Aktuelle Anweisung |
 | $CALLER | Aufrufen des Funktionsnamens |
@@ -79,43 +79,43 @@ Sie können auch spezielle Schlüsselwörter verwenden, um spezifischere Informa
 | $PNAME | Prozessname |
 | $TID | Thread-ID |
 | $TNAME   | Threadname |
-| $TICK | Tick-Anzahl (aus Windows GetTickCount) |
+| $TICK | Taktanzahl (von Windows GetTickCount) |
 
-## <a name="conditions-menu"></a>Menü "Bedingungen"
+## <a name="conditions-menu"></a>Menü „Bedingungen“
 
-Mit Bedingungen können Sie Ihre Ausgabemeldungen filtern, sodass Sie nur in bestimmten Szenarien angezeigt werden. Ihnen stehen drei Hauptarten von Bedingungen zur Verfügung.
+Mit Bedingungen können Sie Ihre Ausgabemeldungen filtern, sodass sie nur in bestimmten Fällen angezeigt werden. Dabei stehen Ihnen drei Überkategorien für Bedingungen zur Verfügung.
 
 ### <a name="conditional-expression"></a>Bedingter Ausdruck
-Bei einem bedingten Ausdruck wird eine Ausgabe Meldung nur angezeigt, wenn bestimmte Bedingungen erfüllt sind.
+Mit einem bedingten Ausdruck wird eine Ausgabemeldung nur angezeigt, wenn bestimmte Bedingungen erfüllt sind.
 
-Für bedingte Ausdrücke können Sie entweder den Ablauf Verfolgungs Punkt so festlegen, dass eine Meldung ausgegeben wird, wenn eine bestimmte Bedingung erfüllt ist oder sich geändert hat. Wenn Sie z. b. nur den Wert des Zählers während der Iterationen der `for` Schleife anzeigen möchten, können Sie die Option **ist true** auswählen und dann `i%2 == 0` in das Textfeld Nachricht eingeben.
+Bei diesen können Sie den Ablaufverfolgungspunkt so festlegen, dass eine Meldung ausgegeben wird, wenn eine bestimmte Bedingung erfüllt ist oder sich geändert hat. Wenn Sie z. B. nur den Wert des Zählers während der Iterationen der `for`-Schleife anzeigen möchten, können Sie die Option **Trifft zu** auswählen und dann `i%2 == 0` in das Textfeld für die Meldung eingeben.
 
-![Bedingter Ausdruck ist "true"](../debugger/media/conditionalexpressionistrue.png "Bedingter Ausdruck ist "true"")
+![Bedingter Ausdruck wird erfüllt](../debugger/media/conditionalexpressionistrue.png "Bedingter Ausdruck wird erfüllt")
 
-Wenn Sie den Wert des Zählers ausgeben möchten, wenn sich die Iterations `for` Schleife ändert, wählen Sie die Option **bei Änderung** aus, und geben Sie `i` in das Textfeld Nachricht ein.
+Wenn Sie den Wert des Zählers ausgeben möchten, wenn sich die Iterationen der `for`-Schleife ändert, wählen Sie die Option **Bei Änderung** aus, und geben Sie `i` in das Textfeld für die Meldung ein.
 
 ![Bedingter Ausdruck bei Änderung](../debugger/media/conditionalexpressionwhenchanged.png "Bedingter Ausdruck bei Änderung")
 
-Das Verhalten der Option **bei Änderung** unterscheidet sich für verschiedene Programmiersprachen.
+Das Verhalten der Option **Bei Änderung** unterscheidet sich je nach Programmiersprache.
 
-- Bei nativem Code betrachtet der Debugger die erste Auswertung der Bedingung nicht als Änderung, sodass bei der ersten Auswertung nicht der Ablauf Verfolgungs Punkt auftritt.
-- Bei verwaltetem Code trifft der Debugger auf den Ablauf Verfolgungs Punkt bei der ersten Auswertung, nachdem **geändert** ausgewählt wurde.
+- Bei nativem Code wird die erste Auswertung der Bedingung vom Debugger nicht als Änderung betrachtet. Der Ablaufverfolgungspunkt wird also bei der ersten Auswertung nicht beachtet.
+- Bei verwaltetem Code wird der Ablaufverfolgungspunkt bei der ersten Auswertung beachtet, wenn **Bei Änderung** festgelegt ist.
 
-Einen umfassenderen Einblick in gültige Ausdrücke, die Sie beim Festlegen von Bedingungen verwenden können, finden Sie unter [Ausdrücke im Debugger](expressions-in-the-debugger.md).
+Mehr gültige Ausdrücke beim Festlegen von Bedingungen finden Sie unter [Ausdrücke im Debugger](expressions-in-the-debugger.md).
 
-### <a name="hit-count"></a>Treffer Anzahl
-Mit der Bedingung "Treffer Anzahl" können Sie die Ausgabe nur dann senden, wenn die Codezeile, in der der Ablauf Verfolgungs Punkt festgelegt ist, eine angegebene Anzahl von Wiederholungen ausgeführt hat.
+### <a name="hit-count"></a>Trefferanzahl
+Mit der Bedingung „Trefferanzahl“ können Sie festlegen, dass die Ausgabe nur gesendet wird, wenn für die Codezeile mit dem Ablaufverfolgungspunkt eine bestimmte Anzahl Ausführungen ermittelt wurde.
 
-Bei der Treffer Anzahl können Sie angeben, dass eine Meldung ausgegeben werden soll, wenn die Codezeile, in der der Ablauf Verfolgungs Punkt festgelegt ist, mehrmals ausgeführt wurde, ein Vielfaches von ist oder größer oder gleich dem angegebenen Treffer Anzahl Wert ist. Wählen Sie die Option aus, die Ihren Anforderungen am besten entspricht, und geben Sie im Feld (z. b. 5) einen ganzzahligen Wert ein, der die betreffende Iterations Rate darstellt.
+Bei der Trefferanzahl können Sie angeben, dass eine Meldung ausgegeben werden soll, wenn die Anzahl der Ausführungen der Codezeile mit dem Ablaufverfolgungspunkt dem festgelegten Wert für die Trefferanzahl entspricht, ein Vielfaches von diesem ist oder größer oder gleich diesem Wert ist. Wählen Sie die für Sie passende Option aus, und geben Sie einen Integerwert wie 5 in das Feld ein, der für die gewünschte Iteration steht.
 
-![Treffer Anzahl für bedingten Ausdruck](../debugger/media/conditionalexpressionhitcount.png "Treffer Anzahl für bedingten Ausdruck")
+![Trefferanzahl für bedingten Ausdruck](../debugger/media/conditionalexpressionhitcount.png "Trefferanzahl für bedingten Ausdruck")
 
 ### <a name="filter"></a>Filter
-Legen Sie für eine Filterbedingung fest, welche Geräte, Prozesse oder Thread Ausgaben für angezeigt werden.
+Bei einer Filterbedingung legen Sie fest, für welche Geräte, Prozesse oder Threads eine Ausgabe angezeigt wird.
 
-![Bedingter Ausdrucks Filter](../debugger/media/conditionalexpressionfilter.png "Bedingter Ausdrucks Filter")
+![Filter für bedingten Ausdruck](../debugger/media/conditionalexpressionfilter.png "Filter für bedingten Ausdruck")
 
-Liste der Filter Ausdrücke:
+Filterausdrücke:
 
 - MachineName = "name"
 - ProcessId = value
@@ -123,23 +123,23 @@ Liste der Filter Ausdrücke:
 - ThreadId = value
 - ThreadName = "name"
 
-Schließen Sie Zeichen folgen (z. b. Namen) in doppelte Anführungszeichen ein. Werte können ohne Anführungszeichen eingegeben werden. Sie können Klauseln mit `&` (`AND`), `||` (`OR`), `!` (`NOT`) und Klammern kombinieren.
+Schließen Sie Zeichenfolgen (wie Namen) in doppelte Anführungszeichen ein. Werte können ohne Anführungszeichen eingegeben werden. Sie können Klauseln mit `&` (`AND`), `||` (`OR`), `!` (`NOT`) und Klammern kombinieren.
 
 ## <a name="considerations"></a>Weitere Überlegungen
 
-Obwohl Ablauf Verfolgungs Punkte dazu gedacht sind, das Debuggen zu bereinigen und zu vereinfachen, sollten Sie sich über einige Aspekte im klaren sein, die Sie bei der Verwendung berücksichtigen sollten.
+Ablaufverfolgungspunkte sollen das Debuggen zwar vereinfachen, doch es gibt bei deren Verwendung auch einiges zu beachten.
 
-Manchmal kann sich der Wert ändern, wenn Sie eine Eigenschaft oder ein Attribut eines Objekts überprüfen. Wenn sich der Wert während der Überprüfung ändert, handelt es sich nicht um einen Fehler, der von der Funktion Ablauf Verfolgungs Punkt selbst verursacht wird Durch die Verwendung von Ablauf Verfolgungs Punkten zum Überprüfen von Objekten werden diese versehentlichen Änderungen jedoch nicht vermieden.
+Wenn Sie eine Eigenschaft oder ein Attribut eines Objekts überprüfen, kann sich dessen Wert manchmal ändern. Wenn sich der Wert während der Überprüfung ändert, wird der Fehler jedoch nicht vom Feature für Ablaufverfolgungspunkte verursacht. Es ist eher so, dass die Verwendung von Ablaufverfolgungspunkten nicht verhindert, dass Werte bei der Überprüfung von Objekten versehentlich geändert werden.
 
-Die Art und Weise, wie Ausdrücke im **Aktions** Meldungs Feld ausgewertet werden, unterscheidet sich möglicherweise von der Sprache, die Sie zurzeit für die Entwicklung verwenden. Wenn Sie z. b. eine Zeichenfolge ausgeben möchten, müssen Sie eine Nachricht nicht in Anführungszeichen einschließen, auch wenn Sie `Debug.WriteLine()` oder `console.log()` normalerweise verwenden. Außerdem kann sich die Syntax der geschweiften Klammer (`{ }`) für Ausgabe Ausdrücke von der Konvention zum Ausgeben von Werten in der Entwicklungssprache unterscheiden. (Der Inhalt innerhalb der geschweiften Klammern (`{ }`) sollte jedoch immer noch mit der Syntax Ihrer Entwicklungssprache geschrieben werden.)
+Die Auswertung von Ausdrücken im Meldungsfeld **Aktion** kann sich von der Sprache unterscheiden, die Sie für die Entwicklung verwenden. Wenn Sie beispielsweise eine Zeichenfolge ausgeben möchten, müssen Sie eine Meldung nicht in Anführungszeichen einschließen, auch wenn das bei `Debug.WriteLine()` oder `console.log()` normalerweise erforderlich wäre. Außerdem kann sich die Syntax für geschweifte Klammern (`{ }`) in Ausgabeausdrücken von der Konvention zum Ausgeben von Werten in der Entwicklungssprache unterscheiden. Der Inhalt der geschweiften Klammern (`{ }`) sollte jedoch immer noch der Syntax Ihrer Entwicklungssprache entsprechend geschrieben werden.
 
-Wenn Sie versuchen, eine Live Anwendung zu Debuggen und nach einer ähnlichen Funktion zu suchen, sehen Sie sich unser Protokoll Punkt-Feature im Momentaufnahmedebugger an. Der Snapshot Debugger ist ein Tool, mit dem Probleme in Produktionsanwendungen untersucht werden können. Mit Protokoll Punkten können Sie auch Nachrichten an den Ausgabefenster senden, ohne den Quellcode ändern zu müssen und sich nicht auf die laufende Anwendung auswirken. Weitere Informationen finden Sie unter [Debuggen einer Azure-Live Anwendung](../debugger/debug-live-azure-applications.md).
+Wenn Sie eine Liveanwendung debuggen und nach einem ähnlichen Feature suchen, können Sie sich das Feature für Protokollpunkte im Momentaufnahmedebugger ansehen. Der Momentaufnahmedebugger ist ein Tool, mit dem Probleme in Produktionsanwendungen untersucht werden können. Mit Protokollpunkten können Sie auch Meldungen an das Ausgabefenster senden, ohne den Quellcode ändern zu müssen oder die ausgeführte Anwendung zu beeinträchtigen. Weitere Informationen finden Sie unter [Debuggen einer Azure-Liveanwendungen](../debugger/debug-live-azure-applications.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
-- [Schreiben von C# besserem Code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)
-- [Erster Einblick in das Debuggen](../debugger/debugger-feature-tour.md)
+- [Debugtechniken und -tools, mit denen Sie besseren Code schreiben](../debugger/write-better-code-with-visual-studio.md)
+- [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md)
 - [Ausdrücke im Debugger](expressions-in-the-debugger.md)
 - [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
-- [Azure-Live Anwendungen debuggen](../debugger/debug-live-azure-applications.md)
+- [Debuggen einer Azure-Liveanwendungen](../debugger/debug-live-azure-applications.md)

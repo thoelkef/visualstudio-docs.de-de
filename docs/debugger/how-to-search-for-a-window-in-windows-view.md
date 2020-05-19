@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Suchen nach einem Fenster in der Windows-Ansicht | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Suchen nach einem Fenster in der Fensteransicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ba5c8469885fd62c99a672e894cde82700c980d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389296"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64831026"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Vorgehensweise: Suchen nach einem Fenster in der Fensteransicht
-Sie können für ein bestimmtes Fenster in der Windows-Ansicht mit das Handle, Beschriftung, Klasse oder eine Kombination der Beschriftung und die Klasse als Suchkriterium suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld werden die Attribute des ausgewählten Fensters in der Fensterstruktur im angezeigt werden.
+Sie können in der Fensteransicht anhand des Handles, der Beschriftung, der Klasse oder einer Kombination aus Beschriftung und Klasse als Suchkriterium nach einem Fenster suchen. Sie können auch die anfängliche Richtung der Suche angeben. In den Feldern im Dialogfeld werden die Attribute des ausgewählten Fensters in der Fensterstruktur angezeigt.
 
- Beginnen Sie mit der Struktur auf der zweiten Ebene (alle Fenster, die untergeordnete Elemente des Desktops), erweitert, damit Sie Windows-Desktop auf von ihren Klassennamen und den Titel identifizieren können. Nachdem Sie ein Fenster auf Desktop-Ebene ausgewählt haben, können Sie dieser Ebene um ein bestimmtes untergeordnetes Fenster suchen erweitern.
+ Erweitern Sie die Struktur zunächst auf die zweite Ebene (alle Fenster, die dem Desktop untergeordnet sind), damit Sie die Fenster der Desktopebene anhand ihrer Klassennamen und Titel identifizieren können. Sobald Sie ein Fenster der Desktopebene ausgewählt haben, können Sie diese Ebene erweitern, um ein spezifisches untergeordnetes Fenster zu suchen.
 
-### <a name="to-search-for-a-window-in-windows-view"></a>Suchen Sie nach einem Fenster in Windows-Ansicht
+### <a name="to-search-for-a-window-in-windows-view"></a>So suchen Sie in der Fensteransicht nach einem Fenster
 
-1. Ordnen Sie die Fenster also, Spy++, die [Windows-Ansicht](../debugger/windows-view.md) Fenster und das Ziel sind sichtbar.
+1. Ordnen Sie Ihre Fenster so an, dass Spy++, das Fenster [Fensteransicht](../debugger/windows-view.md) und das Zielfenster sichtbar sind.
 
-2. Von der **Suche** Menü wählen **Fenster Suchen**.
+2. Klicken Sie im Menü **Suche** auf **Fenster suchen**.
 
-    Die [Dialogfeld Fenstersuche](../debugger/window-search-dialog-box.md) wird geöffnet.
+    Daraufhin wird das [Dialogfeld „Fenstersuche“](../debugger/window-search-dialog-box.md) geöffnet.
 
    > [!TIP]
-   > Um die Übersichtlichkeit des Bildschirms, wählen Sie die **Spy++ ausblenden** Option. Mit dieser Option das Hauptfenster Spy++ verbirgt und verbleibt nur der **Fenstersuche** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **Abbrechen**, oder wenn Sie das Kontrollkästchen der **Spy++ ausblenden** Option.
+   > Damit der Bildschirm übersichtlich bleibt, wählen Sie die Option **Spy++ ausblenden** aus. Mit dieser Option wird das Spy++-Hauptfenster ausgeblendet, sodass nur das Dialogfeld **Fenster suchen** über Ihren anderen Anwendungen angezeigt wird. Das Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **Abbrechen** klicken oder die Option **Spy++ ausblenden** deaktivieren.
 
-3. Ziehen Sie die **Suchtool** über das Zielfenster. Wie Sie das Tool, ziehen Sie die **Fenstersuche** Dialogfeld zeigt die Details für das ausgewählte Fenster.
-
-   - ODER
-
-     Wenn Sie wissen das Handle des Fensters werden sollen (z. B. aus dem Debugger), können Sie eingeben, in der **behandeln** Feld.
+3. Ziehen Sie das **Suchtool** über das Zielfenster. Während Sie das Tool ziehen, werden im Dialogfeld **Fenster suchen** Details zum ausgewählten Fenster angezeigt.
 
    - ODER
 
-     Wenn Sie wissen, die Beschriftung und/oder die Klasse des Fensters werden sollen, können Sie eingeben, in der **Beschriftung** und **Klasse** Textfelder, und Deaktivieren der **behandeln** Textfeld.
+     Wenn Sie den Handle des gesuchten Fensters kennen (z. B. vom Debugger), können diesen in das Feld **Handle** eingeben.
 
-4. Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung für die Suche.
+   - ODER
+
+     Wenn Sie die Beschriftung und/oder die Klasse des gesuchten Fensters kennen, können Sie diese in die Textfelder **Beschriftung** und **Klasse** eingeben und den Inhalt des Textfelds **Handle** löschen.
+
+4. Sie können auch **Nach oben** oder **Nach unten** als anfängliche Suchrichtung angeben.
 
 5. Klicken Sie auf **OK**.
 
-    Wenn ein entsprechendes Fenster gefunden wird, ist die Hervorhebung der [Windows-Ansicht](../debugger/windows-view.md) Fenster.
+    Wenn ein übereinstimmendes Fenster gefunden wird, wird es im Fenster [Fensteransicht](../debugger/windows-view.md) hervorgehoben.

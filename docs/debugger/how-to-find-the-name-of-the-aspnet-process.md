@@ -18,33 +18,33 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187654"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Herausfinden des ASP.NET-Prozessnamens
 
-Zum Debuggen einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-APP, die ausgeführt wird, muss der Visual Studio-Debugger mithilfe des Namens an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Prozess angehängt werden
+Der Visual Studio-Debugger muss nach Namen an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Prozess angehängt werden, um eine ausgeführte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-App zu debuggen.
 
-**So ermitteln Sie, welcher Prozess eine ASP.net-app ausgeführt hat:**
+**Ermitteln eines Prozesses, der eine ASP.NET-App ausführt:**
 
-1. Wenn die app ausgeführt wird, wählen Sie in Visual Studio **Debuggen** > **an den Prozess anhängen**.
+1. Klicken Sie auf **Debuggen** > **An Prozess anhängen**, wenn die App in Visual Studio ausgeführt wird.
 
-1. Geben Sie im Dialogfeld **an den Prozess anhängen** in der folgenden Liste die ersten Buchstaben der Prozessnamen ein, oder geben Sie Sie in das Suchfeld ein. Der einzige, der ausgeführt wird, ist der, der die ASP.net-app ausgeführt wird. Fügen Sie diesen Prozess an, um die APP zu debuggen.
+1. Geben Sie die ersten Buchstaben der Prozessnamen aus der folgenden Liste ein im Dialogfeld **An Prozess anhängen** oder im Suchfeld ein. Bei dem ausgeführten Prozess handelt es sich um den Prozess, der die ASP.NET-App ausführt. Hängen Sie den Debugger an diesen Prozess an, um die App zu debuggen.
 
-    - *w3wp. exe* ist IIS 6,0 und höher.
-    - *Aspnet_wp. exe* ist eine frühere Version von IIS.
-    - *iisexpress. exe* ist iisexpress.
-    - " *dotnet. exe* " ist ASP.net Core.
-    - *inetinfo. exe* ist ältere ASP-Anwendungen, die innerhalb des Prozesses ausgeführt werden.
+    - *w3wp.exe* entspricht IIS 6.0 und höher.
+    - *aspnet_wp.exe* entspricht früheren Versionen von IIS.
+    - *iisexpress.exe* entspricht IISExpress.
+    - *dotnet.exe* entspricht ASP.NET Core.
+    - *inetinfo.exe* entspricht älteren ASP-Anwendungen, die im Prozess ausgeführt werden.
 
 >[!NOTE]
->Visual Studio 2012 und frühere [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Code kann sich im Dateisystem befinden und auf dem Testserver " *WebDev. Webserver. exe* " oder " *WebDev. WebServer40. exe*" ausgeführt werden. Fügen Sie in diesem Fall für das lokale Debuggen an *WebDev. Webserver. exe* oder *WebDev. WebServer40. exe* statt an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Prozess an.
+>Visual Studio 2012 und älterer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Code kann sich im Dateisystem befinden und auf den Testservern *WebDev.WebServer.exe* oder *WebDev.WebServer40.exe* ausgeführt werden. Hängen Sie den Debugger für das lokale Debuggen in diesem Fall an die Testserver *WebDev.WebServer.exe* oder *WebDev.WebServer40.exe* anstatt an den Prozess [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] an.
 
 **Weitere Informationen finden Sie in den folgenden Artikeln:**
 
 - [Anfügen an einen laufenden Prozess](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Voraussetzungen für das Remote Debugging von Webanwendungen](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Voraussetzungen für das Remotedebuggen von Webanwendungen](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md)
 - [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -12,30 +12,30 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929912"
 ---
 # <a name="using-spy"></a>Verwenden von Spy++
-Spy++ (SPYXX. EXE-Datei) ist ein Win32-basierte-Hilfsprogramm, die Ihnen ermöglicht, dass eine grafische Ansicht der Prozesse, Threads, Windows und Windows-Meldungen des Systems. In diesem Abschnitt der Spy++-Hilfe umfasst die folgenden Hilfethemen:
+Spy++ (SPYXX.EXE) ist ein Win32-basiertes Hilfsprogramm, das Ihnen eine grafische Ansicht der Prozesse, Threads, Fenster und Fenstermeldungen des Systems bietet. Dieser Abschnitt der Spy++-Hilfe umfasst die folgenden Hilfsartikel:
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Einführung in Spy++](../debugger/introducing-spy-increment.md) wird erläutert, die Arten von Informationen, die Sie mit dem Tool Spy++ anzeigen können.
+ [Einführung in Spy++:](../debugger/introducing-spy-increment.md) In diesem Artikel werden die Arten von Informationen erläutert, die Sie mit dem Spy++-Tool anzeigen können.
 
- [Vorgehensweise: Starten von Spy++](../debugger/how-to-start-spy-increment.md) wird erläutert, wie zum Starten von Spy++ aus dem Menü "Extras".
+ [How to: Start Spy++ (Vorgehensweise: Starten von Spy++):](../debugger/how-to-start-spy-increment.md) In diesem Artikel wird erläutert, wie Spy++ über das Menü „Extras“ gestartet wird.
 
- [Spy++-Symbolleiste](../debugger/spy-increment-toolbar.md) beschreibt die verfügbaren Befehle in der Spy++-Symbolleiste.
+ [Spy++-Symbolleiste:](../debugger/spy-increment-toolbar.md) In diesem Artikel werden die Befehle beschrieben, die auf der Spy++-Symbolleiste verfügbar sind.
 
- [Vorgehensweise: Anzeigen von Spy++-Ansichten](../debugger/how-to-display-spy-increment-views.md) wie Windows-Ansicht "," Ansicht "Nachrichten" "," Prozessansicht "und" Ansicht "Threads" angezeigt.
+ [How to: Display Spy++ Views (Vorgehensweise: Anzeigen von Spy++-Ansichten):](../debugger/how-to-display-spy-increment-views.md) In diesem Artikel erfahren Sie, wie Sie die Ansichten „Windows“, „Meldungen“, „Prozesse“ und „Threads“ anzeigen.
 
- [Vorgehensweise: Aktualisieren Sie die Ansicht](../debugger/how-to-refresh-the-view.md) wird erläutert, die Refresh-Befehl.
+ [How to: Refresh the View (Vorgehensweise: Aktualisieren der Ansicht):](../debugger/how-to-refresh-the-view.md) In diesem Artikel wird der Befehl „Aktualisieren“ erläutert.
 
- [Vorgehensweise: Ändern von Schriftarten](../debugger/how-to-change-fonts.md) wird erläutert, wie die Art ändern, wird eine Ansicht angezeigt.
+ [How to: Change Fonts (Vorgehensweise: Ändern der Schriftarten):](../debugger/how-to-change-fonts.md) In diesem Artikel erfahren Sie, wie Sie die Anzeige einer Ansicht ändern.
 
- [Vorgehensweise: Erweitern und reduzieren Spy++-Strukturen](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) wird erläutert, wie eine Sicht zu bearbeiten.
+ [How to: Expand and Collapse Spy++ Trees (Vorgehensweise: Erweitern und Reduzieren von Spy++-Strukturen):](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) In diesem Artikel erfahren Sie, wie Sie eine Ansicht ändern.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Spy++-Ansichten](../debugger/spy-increment-views.md) wird erläutert, die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+ [Spy++-Ansichten](../debugger/spy-increment-views.md) Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
- [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+ [Spy++-Referenz](../debugger/spy-increment-reference.md): Enthält Abschnitte mit Beschreibungen der einzelnen Menüs und Dialogfelder von Spy++.

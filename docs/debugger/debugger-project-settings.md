@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188635"
@@ -29,24 +29,24 @@ Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst.
  In diesem Abschnitt wird beschrieben, welche Optionen verfügbar sind und wie sie festgelegt werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- Gewusst [wie: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md) Beschreibt Debuggereinstellungen im Dialogfeld **Optionen** .
+ [How to: Specify Debugger Settings (Vorgehensweise: Festlegen von Debuggereinstellungen):](../debugger/how-to-specify-debugger-settings.md) In diesem Artikel werden die Debuggereinstellungen des Dialogfelds **Optionen** beschrieben.
 
- Gewusst [wie: Festlegen von Debug-und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md) Beschreibt die **Debug** -und **Releaseeinstellungen** sowie die Art und Weise, wie zwischen Ihnen gewechselt wird.
+ [How to: Set Debug and Release Configurations (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio):](../debugger/how-to-set-debug-and-release-configurations.md) Hier werden die Einstellungen **Debuggen** und **Release** sowie das Wechseln zwischen diesen beschrieben.
 
- [Die Projekteinstellungen für C++ eine Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md) listet die Eigenschaften auf, die im Dialogfeld Eigenschaften C++ **Seiten** für C-oder-Projekte verfügbar sind.
+ [Projekteinstellungen für eine C++-Debugkonfiguration:](../debugger/project-settings-for-a-cpp-debug-configuration.md) Hier werden die im Dialogfeld **Eigenschaftenseiten** verfügbaren Eigenschaften für C- oder C++-Projekte aufgelistet.
 
- [In den Projekt C# Einstellungen für Debugkonfigurationen](../debugger/project-settings-for-csharp-debug-configurations.md) werden Eigenschaften aufgelistet, die im Dialog C# Feldeigenschaften **Seiten** für-Projekte verfügbar sind.
+ [Projekteinstellungen für C#-Debugkonfigurationen:](../debugger/project-settings-for-csharp-debug-configurations.md) Hier werden die im Dialogfeld **Eigenschaftenseiten** verfügbaren Eigenschaften für C#-Projekte aufgelistet.
 
- [Eigenschaften Seiteneinstellungen für Webprojekte](../debugger/property-pages-settings-for-web-projects.md) Listet die Eigenschaften auf, die im Dialogfeld Eigenschaften **Seiten** für Webprojekte verfügbar sind.
+ [Einstellungen von Eigenschaftenseiten für Webprojekte:](../debugger/property-pages-settings-for-web-projects.md) Hier werden die im Dialogfeld **Eigenschaftenseiten** verfügbaren Eigenschaften für Webprojekte aufgelistet.
 
- [Projekteinstellungen für eine Visual Basic Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) Listet die Eigenschaften auf, die im Dialogfeld Eigenschaften **Seiten** für [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekte verfügbar sind.
+ [Projekteinstellungen für eine Visual Basic-Debugkonfiguration:](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) Hier werden die im Dialogfeld **Eigenschaftenseiten** verfügbaren Eigenschaften für [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekte aufgelistet.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Angeben von Symbol-(PDB-) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Beschreibt, wie der Debugger Symbol Dateien und Quelldateien verwendet, um Informationen zum Debuggen anzuzeigen.
+ [Angeben von Symbol- und Quelldateien (PDB):](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Hier wird beschrieben, wie der Debugger mithilfe von Symbol- und Quelldateien Informationen zum Debuggen anzeigt.
 
- [Debuggen von apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Beschreibt das Debuggen von UWP-apps. (Windows Developer Center)
+ [Debuggen von Apps in Visual Studio:](debugging-windows-store-and-windows-universal-apps.md) Hier wird das Debuggen von UWP-Apps beschrieben. (Windows Developer Center)
 
- [Debugger-Einstellungen und-Vorbereitung](../debugger/debugger-settings-and-preparation.md) Beschreibt die Debugger-bezogenen Eigenschaften Einstellungen und die erforderliche Vorbereitung, um das Programm mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger zu debuggen.
+ [Debuggereinstellungen und -vorbereitung:](../debugger/debugger-settings-and-preparation.md) Hier werden die debuggerbezogenen Eigenschafteneinstellungen sowie die notwendige Vorbereitung beschrieben, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger erforderlich sind.
 
 ## <a name="see-also"></a>Siehe auch
  [Debuggersicherheit](../debugger/debugger-security.md)

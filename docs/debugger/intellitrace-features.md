@@ -22,16 +22,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911420"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace-FunktionenC#(, Visual Basic C++,)
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace-Features (C#, Visual Basic, C++)
 
-Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwendung aufzuzeichnen, mit deren Hilfe Sie den Status (Aufruflisten- und lokale Variablenwerte) zu unterschiedlichen Punkten in der Ausführung ermitteln können. Starten Sie das Debuggen wie gewohnt: IntelliTrace ist standardmäßig aktiviert, und Sie sehen, dass IntelliTrace im neuen **Diagnosetools** Fenster auf der Registerkarte " **Ereignisse** " aufgezeichnet wird. Wählen Sie ein Ereignis aus, und klicken Sie auf Verlaufs bezogenes **Debugging aktivieren.** , um die für dieses Ereignis aufgezeichnete aufrufsstapel und lokalen Variablen anzuzeigen.
+Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwendung aufzuzeichnen, mit deren Hilfe Sie den Status (Aufruflisten- und lokale Variablenwerte) zu unterschiedlichen Punkten in der Ausführung ermitteln können. Starten Sie das Debugging wie gewohnt – IntelliTrace ist standardmäßig aktiviert, und im neuen Fenster **Diagnosetools** unter der Registerkarte **Ereignisse** werden Ihnen die von IntelliTrace erfassten Informationen angezeigt. Wählen Sie ein Ereignis aus, und klicken Sie auf **Verlaufsbezogenes Debugging aktivieren**, um die Aufrufliste und lokal erfasste Informationen für dieses Ereignis anzuzeigen.
 
-Eine detaillierte Beschreibung finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+Eine detaillierte Beschreibung finden Sie unter [Anzeigen von Ereignissen mit IntelliTrace in Visual Studio Enterprise (C#, Visual Basic)](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace ist verfügbar in Visual Studio Enterprise Edition, jedoch nicht in der Visual Studio Professional oder Community Edition.
 
@@ -40,23 +40,23 @@ IntelliTrace ist verfügbar in Visual Studio Enterprise Edition, jedoch nicht in
 > [!NOTE]
 > Der Bereich der Einstellungen auf der **IntelliTrace**-Optionsseite umfasst Visual Studio vollständig, nicht nur Projekte oder Projektmappen. Eine Änderung dieser Einstellungen gilt für alle Instanzen von Visual Studio, alle Debugsitzungen und alle Projekte oder Projektmappen.
 
-## <a name="ChooseEvents"></a>Wählen Sie die Ereignisse aus, die IntelliTrace aufzeichnet (C#Visual Basic).
+## <a name="choose-the-events-that-intellitrace-records-c-visual-basic"></a><a name="ChooseEvents"></a> Auswählen der von IntelliTrace aufgezeichneten Ereignisse (C#, Visual Basic)
 
 Sie können die Aufzeichnung bestimmter IntelliTrace-Ereignisse aktivieren oder deaktivieren.
 
-Wenn Sie gerade einen Debugging-Vorgang ausführen, beenden Sie diesen. Wechseln Sie zu Extras **> Optionen > IntelliTrace-> IntelliTrace-Ereignisse**. Wählen Sie die Ereignisse, die IntelliTrace aufgezeichnen soll.
+Wenn Sie gerade einen Debugging-Vorgang ausführen, beenden Sie diesen. Wechseln Sie zu **Extras > Optionen > IntelliTrace > IntelliTrace-Ereignisse**. Wählen Sie die Ereignisse, die IntelliTrace aufgezeichnen soll.
 
-## <a name="Snapshots"></a>Momentaufnahmen erfassenC#(, Visual Basic C++,)
+## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a> Erfassen von Momentaufnahmen (C#, Visual Basic, C++ )
 
-Dies ist standardmäßig nicht aktiviert, IntelliTrace kann jedoch Momentaufnahmen Ihrer Anwendung bei jedem Breakpoint-und Debugger-Schritt Ereignis aufzeichnen, und Sie können diese Momentaufnahmen in einer Verlaufs bezogenen Debugsitzung anzeigen. Eine Momentaufnahme gibt Ihnen einen Überblick über den vollständigen Anwendungs Zustand. Um die Erfassung von Momentaufnahmen zu aktivieren, wechseln Sie zu Extras **> Optionen > IntelliTrace > Allgemein**, und wählen Sie **IntelliTrace-Momentaufnahmen (verwaltet und**System eigen) aus. Weitere Informationen finden Sie unter [Inspect previous app states using IntelliTrace (Untersuchen vorheriger App-Zustände mithilfe von IntelliTrace)](../debugger/view-historical-application-state.md).
+Dieses Feature ist nicht automatisch aktiviert. IntelliTrace kann bei jedem Haltepunkt und jedem Ereignis in einem Debuggerschritt Momentaufnahmen Ihrer Anwendung aufzeichnen. Beim verlaufsbezogenen Debuggen können Sie sich diese Momentaufnahmen dann anzeigen lassen. Eine Momentaufnahme bietet Ihnen einen Überblick über den vollständigen Anwendungszustand. Navigieren Sie zu **Extras > Optionen > IntelliTrace > Allgemein**, und klicken Sie auf **IntelliTrace snapshots (managed and native)** (IntelliTrace-Momentaufnahmen [verwaltet und nativ]). Weitere Informationen finden Sie unter [Inspect previous app states using IntelliTrace (Untersuchen vorheriger App-Zustände mithilfe von IntelliTrace)](../debugger/view-historical-application-state.md).
 
-Momentaufnahmen sind in Visual Studio Enterprise 2017-Version 15,5 und höher verfügbar und erfordern Windows 10 Anniversary Update oder höher.  Für .net Core-und ASP.net Core-Apps ist Visual Studio Enterprise 2017-Version 15,7 erforderlich. Für Native apps, die auf Windows abzielen, ist Visual Studio Enterprise 2017 Version 15,9 Preview 2 erforderlich.
+Momentaufnahmen sind ab Visual Studio Enterprise 2017, Version 15.5 und höher verfügbar und erfordern Windows 10 Anniversary Update oder höher.  Für .NET Core- und ASP.NET Core-Apps ist Visual Studio Enterprise 2017, Version 15.7 erforderlich. Für native Apps, die für Windows entwickelt wurden, ist Visual Studio Enterprise 2017, Version 15.9 Preview 2 erforderlich.
 
-## <a name="GoingFurther"></a>Erfassen von IntelliTrace-Ereignissen und-C#aufrufsinformationen (Visual Basic)
+## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a> Sammeln von IntelliTrace-Ereignissen und Aufrufen von Informationen (C#, Visual Basic)
 
-Diese Option ist nicht standardmäßig aktiviert, aber IntelliTrace kann Methodenaufrufe zusammen mit Ereignissen aufzeichnen. Um die Erfassung von Methoden aufrufen zu aktivieren, wechseln Sie zu Extras **> Optionen > IntelliTrace > Allgemein**, und wählen Sie **IntelliTrace-Ereignisse und Aufruf Informationen (nur verwaltet)** .
+Diese Option ist nicht standardmäßig aktiviert, aber IntelliTrace kann Methodenaufrufe zusammen mit Ereignissen aufzeichnen. Wählen Sie unter **Extras > Optionen > IntelliTrace > Allgemein** die Option **IntelliTrace events and call information (managed only)** (IntelliTrace-Ereignisse und Aufrufinformationen) aus, um die Erfassung von Methodenaufrufen zu aktivieren.
 
-Für .net Core-und ASP.net Core-apps sind zurzeit keine Telefon Informationen verfügbar.
+Für .NET Core- und ASP.NET Core-Apps sind zurzeit keine Aufrufinformationen verfügbar.
 
 Auf diese Weise können Sie den Verlauf der Aufrufliste anzeigen und Aufrufe in Ihrem Code schrittweise durchlaufen. IntelliTrace zeichnet Daten wie z. B. Methodennamen, Methodeneinstiegs- und -Endpunkte sowie bestimmte Parameter- und Rückgabewerte auf.
 
@@ -65,7 +65,7 @@ Auf diese Weise können Sie den Verlauf der Aufrufliste anzeigen und Aufrufe in 
 >
 > Sie können den Leistungsaufwand reduzieren, indem Sie die Ereignisliste beschränken, die von IntelliTrace aufgezeichnet werden, und indem Sie die Anzahl der Module auf ein Mindestmaß reduzieren. Weitere Informationen finden Sie unter [Steuern der Anzahl der von IntelliTrace aufgezeichneten Aufrufinformationen](../debugger/intellitrace-features.md#ControlCallData).
 
-### <a name="use-the-navigation-gutter"></a>Verwenden des Navigations Bundstegs
+### <a name="use-the-navigation-gutter"></a>Verwenden des Navigationsbundstegs
 
 Sie können den Navigationsbundsteg verwenden, der unten links neben dem Code-Fenster angezeigt wird. Wenn den Navigationsbundsteg nicht angezeigt wird, wechseln Sie zu **Extras > Optionen > IntelliTrace > Erweitert**, und wählen Sie **Den Navigationsbundsteg im Debugmodus anzeigen**.
 
@@ -84,7 +84,7 @@ Mithilfe des Navigationsbundstegs können Sie in den Methodenaufrufen und Ereign
 
 Sie können nur bei aktivierten Methodenaufrufinformationen nach Methoden suchen. Sie können den IntelliTrace-Verlauf nach einer bestimmten Zeile oder Methode durchsuchen. Während die Ausführung des Debuggers angehalten ist, können Sie mit der rechten Maustaste in den Text der Funktion klicken, um das Kontextmenü anzuzeigen, und auf die Optionen **In IntelliTrace nach dieser Zeile suchen** oder **In IntelliTrace nach dieser Methode suchen** klicken.
 
-### <a name="ControlCallData"></a> Steuern der Anzahl der von IntelliTrace aufgezeichneten Aufrufinformationen
+### <a name="control-how-much-call-information-intellitrace-records"></a><a name="ControlCallData"></a> Steuern der Anzahl der von IntelliTrace aufgezeichneten Aufrufinformationen
 
 Standardmäßig erfasst IntelliTrace Informationen für alle Module, die von der Projektmappe verwendet werden. Sie können IntelliTrace so einstellen, dass nur Aufrufinformationen für die Module erfasst werden, die für Sie von Bedeutung sind. Unter **Extras > Optionen > IntelliTrace > Module** können Sie die in IntelliTrace einzuschließenden oder auszuschließenden Module angeben. IntelliTrace erfasst nur die Ereignisse, die aus den Modulen stammen, die Sie angegeben haben, und die Methodenaufrufe, die in den Modulen aufgetreten sind, die für Sie von Bedeutung sind.
 
@@ -92,7 +92,7 @@ Um mehrere Module hinzuzufügen, verwenden Sie das Platzhalterzeichen * am Anfan
 
 Versuchen Sie, die Anzahl der Module auf ein Mindestmaß zu beschränken. Sie erhalten eine bessere Leistung, da weniger Daten erfasst werden. Sie erhalten auch weniger Störungen auf der Benutzeroberfläche, da weniger Daten verarbeitet werden müssen.
 
-## <a name="SaveSession"></a>IntelliTrace-Daten in Datei speichernC#(, Visual Basic C++,)
+## <a name="save-intellitrace-data-to-file-c-visual-basic-c"></a><a name="SaveSession"></a> Speichern von IntelliTrace-Daten in Dateien (C#, Visual Basic, C++)
 
 Sie können die von IntelliTrace erfassten Daten speichern, indem Sie während des Debuggens zu **Debuggen > IntelliTrace > IntelliTrace-Sitzung speichern** wechseln, solange die Anwendung unterbrochen ist. Das Menüelement ist deaktiviert, und Sie können die von IntelliTrace erfassten Daten nicht speichern, sofern die Anwendung noch ausgeführt wird oder das Debuggen bereits beendet wurde.
 
@@ -107,19 +107,19 @@ Wenn Sie IntelliTrace-Daten in einer Datei speichern, erhalten Sie eine ITRACE-D
 
 [IntelliTrace in Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[Exemplarische Vorgehensweise zum Live Debuggen mit IntelliTrace in Visual Studio 2015 (Text-Editor)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[Exemplarische Vorgehensweise für das Livedebugging mit IntelliTrace in Visual Studio 2015 (Text-Editor)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[Exemplarische Vorgehensweise zum Live Debuggen mit IntelliTrace in Visual Studio 2015 (Social Club)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[Exemplarische Vorgehensweise für das Livedebugging mit IntelliTrace in Visual Studio 2015 (SocialClub)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[IntelliTrace in Visual Studio Enterprise 2015 unterstützt jetzt Attach!](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[IntelliTrace in Visual Studio Enterprise 2015 unterstützt nun das Anfügen](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[Sammeln von Daten von einem Windows-Dienst mithilfe des eigenständigen IntelliTrace-Sammlers](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[Sammeln von Daten aus einem Windows-Dienst mithilfe des eigenständigen IntelliTrace-Sammlers](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[Bearbeiten des IntelliTrace-Sammlungs Plans](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
+[Bearbeiten des IntelliTrace-Sammlungsplans](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[Benutzerdefinierte TraceSource und Debuggen mit IntelliTrace](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
+[Benutzerdefinierte Quellüberwachung und Debuggen mit IntelliTrace](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[Eigenständiger IntelliTrace Collector und Anwendungs Pools, die unter Active Directory Konten ausgeführt werden](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[Eigenständiger IntelliTrace-Sammler und unter Active Directory-Konten ausgeführte Anwendungspools](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>Foren
 
@@ -127,6 +127,6 @@ Wenn Sie IntelliTrace-Daten in einer Datei speichern, erhalten Sie eine ITRACE-D
 
 ## <a name="videos"></a>Videos
 
-[IntelliTrace-Darstellung](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
+[Benutzeroberfläche von IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
 [Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015 (Verlaufsbezogenes Debuggen mit In# in Microsoft Visual Studio Ultimate 2015)](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
