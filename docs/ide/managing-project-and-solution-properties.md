@@ -40,7 +40,7 @@ In C#-, Visual Basic- und F#-Projekten sind Eigenschaften im **Projekt-Designer*
 Informationen zu den einzelnen Eigenschaftsseiten im **Projekt-Designer** finden Sie unter [Project properties reference (Referenz zu Projekteigenschaften)](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
-> Projektmappen besitzen ebenso wie Projektelemente einige Eigenschaften. Auf diese Eigenschaften wird nicht über den [Projekt-Designer](../ide/reference/properties-window.md), sondern über das **Eigenschaftenfenster** zugegriffen.
+> Projektmappen besitzen ebenso wie Projektelemente einige Eigenschaften. Auf diese Eigenschaften wird nicht über den **Projekt-Designer**, sondern über das [Eigenschaftenfenster](../ide/reference/properties-window.md) zugegriffen.
 
 ### <a name="c-and-javascript-projects"></a>C++- und JavaScript-Projekte
 

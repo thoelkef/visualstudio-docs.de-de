@@ -66,13 +66,13 @@ Mit diesem Anbieter können Sie Dateischachtelungsregeln mithilfe bestimmter Dat
 
 ![Regeln für das extensionToExtension-Beispiel](media/filenesting_extensiontoextension.png) ![Wirkung des extensionToExtension-Beispiels](media/filenesting_extensiontoextension_effect.png)
 
-* *cart.js* wird aufgrund der ersten *extensionToExtension*-Regel unter **cart.ts** geschachtelt.
+* *cart.js* wird aufgrund der ersten **extensionToExtension**-Regel unter *cart.ts* geschachtelt.
 
 * *cart.js* wird nicht unter *cart.tsx* geschachtelt, da **.ts** vor **.tsx** in den Regeln steht und es nur ein übergeordnetes Element geben darf.
 
-* *light.css* wird aufgrund der zweiten *extensionToExtension*-Regel unter **light.sass** geschachtelt.
+* *light.css* wird aufgrund der zweiten **extensionToExtension**-Regel unter *light.sass* geschachtelt.
 
-* *home.html* wird aufgrund der dritten *extensionToExtension*-Regel unter **home.md** geschachtelt.
+* *home.html* wird aufgrund der dritten **extensionToExtension**-Regel unter *home.md* geschachtelt.
 
 ### <a name="the-filesuffixtoextension-provider"></a>Der fileSuffixToExtension-Anbieter
 
@@ -80,7 +80,7 @@ Dieser Anbieter arbeitet genau so wie der **extensionToExtension**-Anbieter, mit
 
 ![Regeln für das fileSuffixToExtension-Beispiel](media/filenesting_filesuffixtoextension.png) ![Wirkung des fileSuffixToExtension-Beispiels](media/filenesting_filesuffixtoextension_effect.png)
 
-* *portal-vsdoc.js* wird aufgrund der *fileSuffixToExtension*-Regel unter **portal.js** geschachtelt.
+* *portal-vsdoc.js* wird aufgrund der **fileSuffixToExtension**-Regel unter *portal.js* geschachtelt.
 
 * Jeder andere Aspekt der Regel arbeitet genauso wie **extensionToExtension**.
 
@@ -92,7 +92,7 @@ Betrachten Sie das folgende Beispiel:
 
 ![Regeln für das addedExtension-Beispiel](media/filenesting_addedextension.png) ![Wirkung des addedExtension-Beispiels](media/filenesting_addedextension_effect.png)
 
-* *file.html.css* wird aufgrund der *addedExtension*-Regel unter **file.html** geschachtelt.
+* *file.html.css* wird aufgrund der **addedExtension**-Regel unter *file.html* geschachtelt.
 
 > [!NOTE]
 > Sie müssen keine Dateierweiterungen für die `addedExtension`-Regel angeben, da sie automatisch auf alle Dateierweiterungen angewendet wird. Das bedeutet Folgendes: Eine Datei mit dem gleichen Namen und der gleichen Erweiterung wie eine andere Datei plus eine weitere Erweiterung am Ende wird unter der anderen Datei geschachtelt. Sie können die Wirkung dieses Anbieters nicht auf bestimmte Dateierweiterungen einschränken.
@@ -105,7 +105,7 @@ Betrachten Sie das folgende Beispiel:
 
 ![Regeln des pathSegment-Beispiels](media/filenesting_pathsegment.png) ![Wirkung des pathSegment-Beispiels](media/filenesting_pathsegment_effect.png)
 
-* *jquery.min.js* wird aufgrund der *pathSegment*-Regel unter **jquery.js** geschachtelt.
+* *jquery.min.js* wird aufgrund der **pathSegment**-Regel unter *jquery.js* geschachtelt.
 
 > [!NOTE]
 > - Wenn Sie keine Dateierweiterungen für die `pathSegment`-Regel angeben, wird sie automatisch auf alle Dateierweiterungen angewendet. Das bedeutet Folgendes: Eine Datei mit dem gleichen Namen und der gleichen Erweiterung wie eine andere Datei plus eine weitere Erweiterung in der Mitte wird unter der anderen Datei geschachtelt.
@@ -130,7 +130,7 @@ Mit diesem Anbieter können Sie Regeln für die Dateischachtelung ohne zusätzli
 
 ![Regeln des allExtensions-Beispiels](media/filenesting_allextensions.png) ![Wirkung des allExtensions-Beispiels](media/filenesting_allextensions_effect.png)
 
-* *template.cs* und *template.doc* werden aufgrund der *allExtensions*-Regel unter **template.tt** geschachtelt.
+* *template.cs* und *template.doc* werden aufgrund der **allExtensions**-Regel unter *template.tt* geschachtelt.
 
 ### <a name="the-filetofile-provider"></a>Der fileToFile-Anbieter
 
@@ -138,7 +138,7 @@ Mit diesem Anbieter können Sie Dateischachtelungsregeln auf Basis ganzer Datein
 
 ![Regel für das fileToFile-Beispiel](media/filenesting_filetofile.png) ![Wirkung des fileToFile-Beispiels](media/filenesting_filetofile_effect.png)
 
-* *.bowerrc* wird aufgrund der *fileToFile*-Regel unter **bower.json** geschachtelt.
+* *.bowerrc* wird aufgrund der **fileToFile**-Regel unter *bower.json* geschachtelt.
 
 ### <a name="rule-order"></a>Regelreihenfolge
 

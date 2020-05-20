@@ -56,7 +56,7 @@ Ein anderes Beispiel ist, dass ein Szenario nur zu einer bestimmten Tageszeit au
     > [!NOTE]
     > Wenn der Wert für die Eigenschaft **Während Aufwärmdauer deaktivieren** für das Szenario auf **TRUE** festgelegt wird, wird der Zeitwert der Eigenschaft **Startzeit verzögern** nach der Aufwärmphase übernommen. Sie können mithilfe der Szenarioeigenschaft **Während Aufwärmdauer deaktivieren** festlegen, welche Szenarios in die Aufwärmphase einbezogen werden.
 
-5. Klicken Sie nach dem Ändern der Eigenschaft auf **Speichern** im Menü **Datei**. Sie können anschließend den Auslastungstest mithilfe des neuen Werts für **Startzeit verzögern** ausführen.
+5. Klicken Sie nach dem Ändern der Eigenschaft im Menü **Datei** auf **Speichern**. Sie können anschließend den Auslastungstest mithilfe des neuen Werts für **Startzeit verzögern** ausführen.
 
 ## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>Aktivieren und Deaktivieren, ob ein Szenario während der Aufwärmphase ausgeführt wird
 

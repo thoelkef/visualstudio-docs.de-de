@@ -154,7 +154,7 @@ Die an dieser Stelle definierten `<appSettings>` sind für Ihre Anwendung als Um
 - `WSGI_HANDLER` muss auf eine durch Ihre App importierbare WSGI-Anwendung verweisen.
 - `WSGI_LOG` ist optional, wird jedoch zum Debuggen Ihrer App empfohlen.
 
-Zusätzliche Informationen zu [web.config](publishing-python-web-applications-to-azure-from-visual-studio.md)-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter *Veröffentlichen in Azure*.
+Zusätzliche Informationen zu *web.config*-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter [Veröffentlichen in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ## <a name="install-packages"></a>Installieren von Paketen
 

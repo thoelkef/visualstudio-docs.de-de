@@ -51,7 +51,7 @@ Wenn Sie die Komponente **Klassen-Designer** nicht installiert haben, befolgen S
    > [!NOTE]
    > Wenn Sie die Vorlage **Klassendiagramm** nicht sehen, [befolgen Sie diese Schritte](#install-the-class-designer-component), um die Komponente **Klassen-Designer** für Visual Studio zu installieren.
 
-   Das Klassendiagramm wird im Klassen-Designer geöffnet. Im *Projektmappen-Explorer* wird es als Datei mit der Erweiterung **.cd** angezeigt. Sie können Formen und Linien aus der **Toolbox** in das Diagramm ziehen.
+   Das Klassendiagramm wird im Klassen-Designer geöffnet. Im **Projektmappen-Explorer** wird es als Datei mit der Erweiterung *.cd* angezeigt. Sie können Formen und Linien aus der **Toolbox** in das Diagramm ziehen.
 
 Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.
 

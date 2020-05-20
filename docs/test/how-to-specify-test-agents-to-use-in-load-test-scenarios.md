@@ -62,7 +62,7 @@ Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Comp
     > [!NOTE]
     > Die Eigenschaft **Zu verwendende Agents** wird bei lokalen Testläufen ignoriert. Wenn bei Remotetestläufen keiner der in **Zu verwendende Agents** angegebenen Agents vorhanden ist, werden im Szenario keine Tests ausgeführt.
 
-5. Klicken Sie nach dem Ändern der Eigenschaft auf **Speichern** im Menü **Datei**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Zu verwendende Agents** ausführen.
+5. Klicken Sie nach dem Ändern der Eigenschaft im Menü **Datei** auf **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Zu verwendende Agents** ausführen.
 
 ## <a name="see-also"></a>Weitere Informationen
 
