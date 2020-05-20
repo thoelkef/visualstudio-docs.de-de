@@ -44,7 +44,7 @@ Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>Hinzufügen einer Datei „app.config“ zum Projekt
 
-1. Wenn für das Testprojekt bereits eine *app.config*-Datei vorhanden ist, fahren Sie mit [Definieren eines benutzerdefinierten Konfigurationsabschnitts](#define-a-custom-configuration-section) fort.
+1. Wenn für das Testprojekt bereits eine [app.config](#define-a-custom-configuration-section)-Datei vorhanden ist, fahren Sie mit *Definieren eines benutzerdefinierten Konfigurationsabschnitts* fort.
 
 2. Klicken Sie erst mit der rechten Maustaste im **Projektmappen-Explorer** auf das Testprojekt und anschließend mit der Linken auf **Hinzufügen** > **Neues Element**.
 

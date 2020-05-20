@@ -65,7 +65,7 @@ Fügen Sie Ihrer *CPP*-Testdatei alle erforderlichen `#include`-Anweisungen hinz
 
 ## <a name="write-and-run-tests"></a>Schreiben und Ausführen von Tests
 
-Sie können nun Google Test-Tests schreiben und ausführen. Weitere Informationen über die Testmakros finden Sie unter [Google Test primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Weitere Informationen zum Ermitteln, Ausführen und Gruppieren Ihrer Tests mithilfe des [Test-Explorers](run-unit-tests-with-test-explorer.md) finden Sie unter **Ausführen von Komponententests mit dem Test-Explorer**.
+Sie können nun Google Test-Tests schreiben und ausführen. Weitere Informationen über die Testmakros finden Sie unter [Google Test primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Weitere Informationen zum Ermitteln, Ausführen und Gruppieren Ihrer Tests mithilfe des **Test-Explorers** finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 

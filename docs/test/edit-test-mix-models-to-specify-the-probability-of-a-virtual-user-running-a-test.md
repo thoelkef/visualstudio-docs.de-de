@@ -77,7 +77,7 @@ Mit dem **Auslastungstest-Editor** können Sie das Testmischungsmodell in einem 
 
      Im Fenster **Eigenschaften** wird das neue Testmischungsmodell für die Eigenschaft **Testmischungstyp** angezeigt.
 
-9. Klicken Sie nach dem Ändern der Eigenschaft auf **Speichern** im Menü **Datei**. Anschließend können Sie den Auslastungstest mithilfe des neuen Werts für **Testmischungstyp** ausführen.
+9. Klicken Sie nach dem Ändern der Eigenschaft im Menü **Datei** auf **Speichern**. Anschließend können Sie den Auslastungstest mithilfe des neuen Werts für **Testmischungstyp** ausführen.
 
 ## <a name="see-also"></a>Weitere Informationen
 

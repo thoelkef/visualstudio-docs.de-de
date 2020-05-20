@@ -45,7 +45,7 @@ Da Daten in Tabellen erfasst werden, können Sie alle komplexen Datentypen als s
 
 Durch einen Klick auf eine Spaltenüberschrift werden die Daten nach Spalten sortiert (abwechselnd in aufsteigender und absteigender Reihenfolge). Wenn Sie die **UMSCHALTTASTE** gedrückt gehalten und auf zusätzliche Spalten klicken, werden diese Spalten ebenfalls der Sortierung hinzugefügt. Wenn Sie ohne **UMSCHALTTASTE** auf eine Spalte klicken, wird wieder nach einer Spalte sortiert.
 
-Die Reihenfolge, in der Sie auf die Spaltenüberschriften klicken, bestimmt die Reihenfolge, in der die Sortierung ausgeführt wird. Wenn Sie z.B. bei gedrückter **UMSCHALTTASTE** auf die Spalte **cyl**+**klicken** und dann zweimal ebenfalls bei gedrückter **UMSCHALTTASTE** auf die Spalte **mpg**+**klicken**, wird die Liste aufsteigend nach Zylindern und absteigend nach Meilen pro Gallone sortiert:
+Die Reihenfolge, in der Sie auf die Spaltenüberschriften klicken, bestimmt die Reihenfolge, in der die Sortierung ausgeführt wird. Wenn Sie z.B. bei gedrückter **UMSCHALTTASTE** auf die Spalte **cyl** **klicken** und dann zweimal ebenfalls bei gedrückter **UMSCHALTTASTE** auf die Spalte **mpg** **klicken**, wird die Liste aufsteigend nach Zylindern und absteigend nach Meilen pro Gallone sortiert:
 
 ![Tabellenansicht der Daten, nach zwei Spalten sortiert](media/variable-explorer-table-view-sorting.png)
 

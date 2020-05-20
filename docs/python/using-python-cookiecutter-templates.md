@@ -187,7 +187,7 @@ Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Si
 
 Argumente können auf andere Cookiecutter-Variablen verweisen. In den oben stehenden Beispielen wird die interne `_output_folder_path`-Variable verwendet, um einen absoluten Pfad zu den generierten Dateien zu bilden.
 
-Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Diese Einschränkung besteht, weil der Befehl vom Python-Projekt im **Projektmappen-Explorer** verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der  - **Ordneransicht** des **Projektmappen-Explorers** befinden. Wir hoffen, diese Einschränkung in einer zukünftigen Version aufzuheben (und eine bessere Unterstützung der **Ordneransicht** im Allgemeinen zu ermöglichen).
+Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Diese Einschränkung besteht, weil der Befehl vom Python-Projekt im **Projektmappen-Explorer** verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der **Ordneransicht** des **Projektmappen-Explorers** befinden. Wir hoffen, diese Einschränkung in einer zukünftigen Version aufzuheben (und eine bessere Unterstützung der **Ordneransicht** im Allgemeinen zu ermöglichen).
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

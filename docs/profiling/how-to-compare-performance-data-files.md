@@ -54,6 +54,6 @@ Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.*vs
 
 1. Klicken Sie im Menü **Analysieren** auf **Leistungsberichte vergleichen**.
 
-2. Durchsuchen Sie das Fenster **Analysedateien für den Vergleich auswählen** und wählen Sie die Analysedatei **Baselinedatei** (jeweils im *VSP*- oder *VSPS*-Format) und die **Vergleichsdatei** (jeweils im *VSP*- oder *VSPS*-Format) aus.
+2. Durchsuchen Sie das Fenster **Analysedateien für den Vergleich auswählen** und wählen Sie die Analysedatei **Baselinedatei** und die **Vergleichsdatei** (jeweils im *VSP*- oder *VSPS*-Format) aus.
 
 3. Klicken Sie auf **OK**.
