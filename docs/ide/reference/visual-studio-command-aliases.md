@@ -25,7 +25,7 @@ ms.locfileid: "75596410"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
-Wenn Sie Befehlsaliasse verwenden, müssen Sie weniger Zeichen eingeben, wenn Sie einen Befehl ausführen. Geben Sie die Aliasse in das Feld **Suchen/Befehl** oder das Fenster **Befehl** ein. Um das Dialogfeld `>File.OpenFile`Datei öffnen**anzuzeigen, können Sie beispielsweise den vordefinierten Alias** verwenden, anstatt `>of` einzugeben.
+Wenn Sie Befehlsaliasse verwenden, müssen Sie weniger Zeichen eingeben, wenn Sie einen Befehl ausführen. Geben Sie die Aliasse in das Feld **Suchen/Befehl** oder das Fenster **Befehl** ein. Um das Dialogfeld **Datei öffnen** anzuzeigen, können Sie beispielsweise den vordefinierten Alias `>of` verwenden, anstatt `>File.OpenFile` einzugeben.
 
 Geben Sie `alias` in das Fenster **Befehl** ein, um eine Liste der aktuellen Aliasse und ihrer Definitionen anzuzeigen. Geben Sie `>cls` ein, um den Inhalt des **Befehlsfensters** zu löschen. Wenn Sie einen Alias für einen Befehl finden möchten, geben Sie `alias <command name>` ein.
 

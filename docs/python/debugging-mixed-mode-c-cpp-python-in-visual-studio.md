@@ -139,7 +139,7 @@ C-Typen, die **[Python-Ansicht]** -Knoten anzeigen (sofern aktiviert):
 
 Bei Python 2.x allerdings deklariert jeder Objekttyp seinen Header üblicherweise als Auflistung von Inlinefeldern, und es gibt keine Verknüpfung auf Typsystemebene im C/C++-Code zwischen benutzerdefiniert erstellten Typen und `PyObject`. Um **[Python-Ansicht]** -Knoten für solche benutzerdefinierten Typen zu aktivieren, bearbeiten Sie die Datei *PythonDkm.natvis* im [Installationsverzeichnis für Python Tools](installing-python-support-in-visual-studio.md#install-locations), und fügen Sie im XML-Code ein weiteres Element für Ihre C-Struktur oder C++-Klasse hinzu.
 
-Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3123](https://www.python.org/dev/peps/pep-3123/) zu folgen und statt `PyObject ob_base;` ein explizites `PyObject_HEAD`-Feld zu verwenden. Allerdings ist dieses Vorgehen aus Gründen der Abwärtskompatibilität nicht immer möglich.
+Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3123](https://www.python.org/dev/peps/pep-3123/) zu folgen und statt `PyObject_HEAD` ein explizites `PyObject ob_base;`-Feld zu verwenden. Allerdings ist dieses Vorgehen aus Gründen der Abwärtskompatibilität nicht immer möglich.
 
 ### <a name="native-values-view-in-python-code"></a>Ansicht der nativen Werte im Python-Code
 

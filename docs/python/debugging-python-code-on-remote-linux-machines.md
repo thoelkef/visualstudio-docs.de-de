@@ -65,7 +65,7 @@ Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Az
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Installieren Sie mithilfe von `ptvsd` das `pip3 install ptvsd`-Paket in Ihrer Umgebung.
+1. Installieren Sie mithilfe von `pip3 install ptvsd` das `ptvsd`-Paket in Ihrer Umgebung.
    >[!NOTE]
    >Es empfiehlt sich, die Version von ptvsd zu erfassen, die installiert wird, falls Sie diese für die Problembehandlung benötigen. Die [ptvsd-Liste](https://pypi.python.org/pypi/ptvsd) enthält die verfügbaren Versionen.
 

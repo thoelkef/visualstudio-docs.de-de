@@ -27,7 +27,7 @@ ms.locfileid: "75570348"
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.
 
 ## <a name="displaying-the-values-of-variables"></a>Anzeigen der Werte von Variablen
-Verwenden Sie den `varA`Befehl „Drucken“[, um den Wert einer Variablen ](../../ide/reference/print-command.md) zu überprüfen:
+Verwenden Sie den [Befehl „Drucken“](../../ide/reference/print-command.md), um den Wert einer Variablen `varA` zu überprüfen:
 
 ```cmd
 >Debug.Print varA

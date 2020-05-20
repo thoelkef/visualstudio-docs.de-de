@@ -86,7 +86,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von CPU-Indikato
 
 ## <a name="windows-events"></a>Windows-Ereignisse
 
-Während der Profilierung können Sie Daten von Ereignisablaufverfolgungsanbietern erfassen. Sie können die Daten mithilfe der *-Option des Befehlszeilentools* VSPerfReport.exe`/calltrace` anzeigen. Weitere Informationen über die Ereignisablaufverfolgung für Windows (ETW) finden Sie unter [About Event Tracing (Über Ereignisablaufverfolgung)](/windows/win32/etw/about-event-tracing).
+Während der Profilierung können Sie Daten von Ereignisablaufverfolgungsanbietern erfassen. Sie können die Daten mithilfe der `/calltrace`-Option des Befehlszeilentools *VSPerfReport.exe* anzeigen. Weitere Informationen über die Ereignisablaufverfolgung für Windows (ETW) finden Sie unter [About Event Tracing (Über Ereignisablaufverfolgung)](/windows/win32/etw/about-event-tracing).
 
 Weitere Informationen finden Sie unter
 

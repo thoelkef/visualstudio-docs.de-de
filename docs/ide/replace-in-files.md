@@ -45,7 +45,7 @@ Rufen Sie die Option **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** 
 Um eine neue Zeichenfolge oder einen neuen Ausdruck zu suchen, geben Sie die Zeichenfolge oder den Ausdruck im Feld ein. Öffnen Sie die Dropdownliste, und wählen Sie die Zeichenfolge aus, um nach einer der 20 Zeichenfolgen zu suchen, nach denen Sie zuletzt gesucht haben. Wählen Sie die benachbarte Schaltfläche **Ausdrucks-Generator** aus, wenn Sie einen oder mehrere reguläre Ausdrücke in der Suchzeichenfolge verwenden möchten. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
-> Die Schaltfläche **Ausdrucks-Generator** wird nur aktiviert, wenn Sie in den **Suchoptionen** **Reguläre Ausdrücke verwenden** ausgewählt haben.
+> Die Schaltfläche **Ausdrucks-Generator** wird nur aktiviert, wenn Sie in den **Suchoptionen****Reguläre Ausdrücke verwenden** ausgewählt haben.
 
 ## <a name="replace-with"></a>Ersetzen durch
 

@@ -44,7 +44,7 @@ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter vo
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Codebeispiel wird das von der Eigenschaft `MakeDir` angegebene Verzeichnis mit der `OutputDirectory`-Aufgabe erstellt.
+Im folgenden Codebeispiel wird das von der Eigenschaft `OutputDirectory` angegebene Verzeichnis mit der `MakeDir`-Aufgabe erstellt.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

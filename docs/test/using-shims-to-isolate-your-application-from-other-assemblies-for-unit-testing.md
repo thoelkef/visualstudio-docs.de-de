@@ -446,7 +446,7 @@ ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
 
 ## <a name="detect-environment-accesses"></a>Erkennen von Umgebungszugriffen
 
-Es ist möglich, ein Verhalten an alle Member (einschließlich statische Methoden) eines bestimmten Typs anzufügen, indem der statischen `ShimsBehaviors.NotImplemented`-Eigenschaft des entsprechenden Shimtyps das `Behavior`-Verhalten zugewiesen wird:
+Es ist möglich, ein Verhalten an alle Member (einschließlich statische Methoden) eines bestimmten Typs anzufügen, indem der statischen `Behavior`-Eigenschaft des entsprechenden Shimtyps das `ShimsBehaviors.NotImplemented`-Verhalten zugewiesen wird:
 
 ```csharp
 // unit test code
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Fügen Sie den folgenden Inhalt in die Datei „mscorlib.fakes“ nach dem <xref:System.Environment?displayProperty=fullName>Assembly **-Element ein, um einen Shim für**  zu erstellen:
+Fügen Sie den folgenden Inhalt in die Datei „mscorlib.fakes“ nach dem **Assembly**-Element ein, um einen Shim für <xref:System.Environment?displayProperty=fullName> zu erstellen:
 
 ```xml
 <ShimGeneration>

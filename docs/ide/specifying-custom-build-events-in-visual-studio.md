@@ -36,7 +36,7 @@ Buildereignisse folgen derselben Syntax wie DOS-Befehle, Sie können aber außer
 
 Um optimale Ergebnisse zu erhalten, befolgen Sie diese Tipps zur Formatierung:
 
-- Fügen Sie allen Buildereignissen, die `call`BAT-Dateien*ausführen, eine*-Anweisung hinzu.
+- Fügen Sie allen Buildereignissen, die *BAT-Dateien* ausführen, eine `call`-Anweisung hinzu.
 
    Ein Beispiel: `call C:\MyFile.bat`
 

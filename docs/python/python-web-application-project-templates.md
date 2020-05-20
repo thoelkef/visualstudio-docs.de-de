@@ -58,7 +58,7 @@ Alle Vorlagen für **\<Framework>-Webprojekte** erstellen eine Web-App mit einem
 
 ### <a name="polls-group"></a>Umfragen-Gruppe
 
-Die Vorlagen **Framework>-Webprojekt für \<Umfragen** erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von **Webprojektvorlagen** auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer *samples.json*-Datei lädt.
+Die Vorlagen **Framework>-Webprojekt für **Umfragen\< erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von **Webprojektvorlagen** auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer *samples.json*-Datei lädt.
 
 | Vorlage | Beschreibung |
 | --- | --- |

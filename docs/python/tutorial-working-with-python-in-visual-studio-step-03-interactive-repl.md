@@ -46,7 +46,7 @@ In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable
 
 1. Das **interaktive** Fenster enthält einen vollständigen Verlauf aller Elemente, die Sie eingegeben haben, und verbessert das Befehlszeilen-REPL mit mehrzeiligen Verlaufselementen. Beispielsweise können Sie einfach die vollständige Definition der `f`-Funktion als einzelne Einheit zurückrufen und den Namen mühelos in `make_double` ändern, anstatt die Funktion Zeile für Zeile neu erstellen zu müssen.
 
-1. Visual Studio kann mehrere Codezeilen aus einem Editor-Fenster an das **interaktive** Fenster senden. Mithilfe dieser Funktion können Sie Code in einer Quelldatei pflegen und ausgewählte Teile davon mühelos an das **interaktive** Fenster senden. Sie können dann mit solchen Codefragmenten in der schnellen REPL-Umgebung arbeiten, anstatt das gesamte Programm ausführen zu müssen. Um dieses Feature anzuzeigen, ersetzen Sie zunächst in der Datei `for`PythonApplication1.py*die Schleife* durch Folgendes:
+1. Visual Studio kann mehrere Codezeilen aus einem Editor-Fenster an das **interaktive** Fenster senden. Mithilfe dieser Funktion können Sie Code in einer Quelldatei pflegen und ausgewählte Teile davon mühelos an das **interaktive** Fenster senden. Sie können dann mit solchen Codefragmenten in der schnellen REPL-Umgebung arbeiten, anstatt das gesamte Programm ausführen zu müssen. Um dieses Feature anzuzeigen, ersetzen Sie zunächst in der Datei *PythonApplication1.py* die Schleife `for` durch Folgendes:
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
@@ -54,7 +54,7 @@ In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Wählen Sie in der `import`.py`from`-Datei nur die Anweisungen `make_dot_string`, *und* aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **An Interactive senden** aus (oder drücken Sie **STRG**+**EINGABE**). Das Codefragment wird direkt in das **interaktive** Fenster eingefügt und ausgeführt. Da der Code eine Funktion definiert hat, können Sie diese Funktion schnell testen, indem Sie sie mehrmals aufrufen:
+1. Wählen Sie in der *.py*-Datei nur die Anweisungen `import`, `from` und `make_dot_string` aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **An Interactive senden** aus (oder drücken Sie **STRG**+**EINGABE**). Das Codefragment wird direkt in das **interaktive** Fenster eingefügt und ausgeführt. Da der Code eine Funktion definiert hat, können Sie diese Funktion schnell testen, indem Sie sie mehrmals aufrufen:
 
     ![Code an das interaktive Fenster senden und diesen testen](media/vs-getting-started-python-14-interactive4.png)
 

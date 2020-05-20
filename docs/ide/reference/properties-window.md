@@ -63,13 +63,13 @@ Meldungen\
 Führt alle Windows-Meldungen auf. Ermöglicht das Hinzufügen oder Löschen bestimmter Handlerfunktionen für die Nachrichten, die für die ausgewählte Klasse gelten.
 
 > [!NOTE]
-> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines **-Projekts die** Klassenansicht[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] das aktive Fenster ist.
+> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.
 
 Überschreibungen\
 Führt alle virtuellen Funktionen für die ausgewählte Klasse auf und ermöglicht das Hinzufügen oder Löschen überschreibender Funktionen.
 
 > [!NOTE]
-> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines **-Projekts die** Klassenansicht[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] das aktive Fenster ist.
+> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.
 
 Beschreibungsbereich\
 Zeigt den Eigenschaftentyp und eine Kurzbeschreibung der Eigenschaft an. Mithilfe des Befehls "Beschreibung" im Kontextmenü können Sie die Beschreibung der Eigenschaft ein- und ausblenden.

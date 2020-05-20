@@ -46,7 +46,7 @@ Liest die Metadaten in der angegebenen Assembly und fügt die erforderlichen Ein
 
 ## <a name="example"></a>Beispiel
 
- Im folgenden Beispiel wird die von der Elementsammlung `RegisterAssembly` angegebene Assembly mithilfe der `MyAssemblies`-Aufgabe registriert.
+ Im folgenden Beispiel wird die von der Elementsammlung `MyAssemblies` angegebene Assembly mithilfe der `RegisterAssembly`-Aufgabe registriert.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

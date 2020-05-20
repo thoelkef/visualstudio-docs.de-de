@@ -189,7 +189,7 @@ Funktionen zum Debuggen in Visual Studio:
 
 - In den Fenstern **Überwachung**, **Auto** und **Lokal** kann nach einer Zeichenfolge gesucht werden.
 - Durch *Run to click* (Ausführung bis Klick) können Sie auf eine Stelle neben einer Codezeile zeigen, auf das angezeigte grüne Wiedergabesymbol klicken und das Programm ausführen, bis es diese Zeile erreicht.
-- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `null` als `NullReferenceException` festgelegt ist.
+- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `NullReferenceException` als `null` festgelegt ist.
 - Durch Debuggen mit der Funktion [Schritt zurück](../debugger/view-historical-application-state.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
 - Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer aktiven Webanwendung bei Auslösung einer Ausnahme (muss in Azure erfolgen) untersuchen.
 
@@ -198,7 +198,7 @@ Funktionen zum Debuggen in Visual Studio:
 ::: moniker range="vs-2017"
 
 - Durch *Run to click* (Ausführung bis Klick) können Sie auf eine Stelle neben einer Codezeile zeigen, auf das angezeigte grüne Wiedergabesymbol klicken und das Programm ausführen, bis es diese Zeile erreicht.
-- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `null` als `NullReferenceException` festgelegt ist.
+- Die **Ausnahmen-Hilfe** zeigt die wichtigsten Informationen auf der obersten Ebene im Dialogfeld am, z.B. die Information, welche Variable in einer `NullReferenceException` als `null` festgelegt ist.
 - Durch Debuggen mit der Funktion [Schritt zurück](../debugger/view-historical-application-state.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
 - Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer aktiven Webanwendung bei Auslösung einer Ausnahme (muss in Azure erfolgen) untersuchen.
 

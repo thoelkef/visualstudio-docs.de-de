@@ -67,7 +67,7 @@ Auf dem Remotecomputer muss in jedem Fall einer der folgenden R-Interpreter inst
     sudo systemctl start rtvsd
     ```
 
-1. Konfigurieren Sie das SSL-Zertifikat (das für eine Produktionsumgebung erforderlich ist). Standardmäßig verwendet rtvs-daemon die vom `ssl-cert-snakeoil.pem`-Paket generierten Dateien `ssl-cert-snakeoil.pem` und `ssl-cert`. Während der Installation werden diese zu `ssl-cert-snakeoil.pfx` kombiniert. Verwenden Sie für Produktionszwecke das von Ihrem Administrator bereitgestellte SSL-Zertifikat. Das SSL-Zertifikat kann konfiguriert werden, indem eine *PFX*-Datei und ein optionales Importkennwort in */etc/rtvs/rtvsd.config.json* angegeben werden.
+1. Konfigurieren Sie das SSL-Zertifikat (das für eine Produktionsumgebung erforderlich ist). Standardmäßig verwendet rtvs-daemon die vom `ssl-cert`-Paket generierten Dateien `ssl-cert-snakeoil.pem` und `ssl-cert-snakeoil.pem`. Während der Installation werden diese zu `ssl-cert-snakeoil.pfx` kombiniert. Verwenden Sie für Produktionszwecke das von Ihrem Administrator bereitgestellte SSL-Zertifikat. Das SSL-Zertifikat kann konfiguriert werden, indem eine *PFX*-Datei und ein optionales Importkennwort in */etc/rtvs/rtvsd.config.json* angegeben werden.
 
 1. (Optional) Überprüfen Sie, ob der Dienst ausgeführt wird:
 

@@ -161,7 +161,7 @@ Die einzelnen Seitenvorlagen *about.html*, *contact.html* und *index.html* erwei
 
 *index.html* und *contact.html* verwenden die gleiche Struktur. Außerdem ist ihr Inhalt im Block „content“ umfangreicher.
 
-Im Ordner *templates/app* befindet sich ebenso eine vierte Seite, *login.html* zusammen mit *loginpartial.html*, die über *in*layout.html`{% include %}` verschoben wird. Diese Vorlagendateien werden bei der Authentifizierung in Schritt 5 näher erläutert.
+Im Ordner *templates/app* befindet sich ebenso eine vierte Seite, *login.html* zusammen mit *loginpartial.html*, die über `{% include %}` in *layout.html* verschoben wird. Diese Vorlagendateien werden bei der Authentifizierung in Schritt 5 näher erläutert.
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Frage: Können {% block %} und {% endblock %} in der Django-Seitenvorlage eingerückt werden?
 

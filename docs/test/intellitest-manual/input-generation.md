@@ -22,7 +22,7 @@ IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md
 
 Die Schritte der Schleife sind wie folgt:
 
-1. IntelliTest bestimmt Eingaben `i` mit einem `q(i)=false`Einschränkungs-Solver[, sodass ](#constraint-solver) ist. Aufgrund der Konstruktion nimmt die Eingabe `i` einen neuen Ausführungspfad. Zunächst bedeutet dies, dass `i` jede Eingabe sein kann, weil noch kein Ausführungspfad gefunden wurde.
+1. IntelliTest bestimmt Eingaben `i` mit einem [Einschränkungs-Solver](#constraint-solver), sodass `q(i)=false` ist. Aufgrund der Konstruktion nimmt die Eingabe `i` einen neuen Ausführungspfad. Zunächst bedeutet dies, dass `i` jede Eingabe sein kann, weil noch kein Ausführungspfad gefunden wurde.
 
 1. IntelliTest führt den Test mit der ausgewählten Eingabe `i` aus und überwacht die Ausführung des Test sowie das getestete Programm.
 

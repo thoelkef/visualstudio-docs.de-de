@@ -45,7 +45,7 @@ Wenn die *VSTEMPLATE*-Datei in einer Vorlage nicht dem Visual Studio-Vorlagensch
 1. Stellen Sie sicher, dass das XML-Format der *VSTEMPLATE*-Datei dem Vorlagenschema folgt. Weitere Informationen zum *VSTEMPLATE*-Schema finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Fügen Sie dem *-Element ein* -Attribut hinzu, und weisen Sie diesem einen Wert von `xmlns` zu, um die IntelliSense-Unterstützung während der Erstellung der `VSTemplate`VSTEMPLATE`http://schemas.microsoft.com/developer/vstemplate/2005`-Datei zu nutzen.
+    > Fügen Sie dem `VSTemplate`-Element ein `xmlns`-Attribut hinzu, und weisen Sie diesem einen Wert von `http://schemas.microsoft.com/developer/vstemplate/2005` zu, um die IntelliSense-Unterstützung während der Erstellung der *VSTEMPLATE*-Datei zu nutzen.
 
 1. Speichern und schließen Sie die *VSTEMPLATE*-Datei.
 

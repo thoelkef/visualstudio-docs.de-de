@@ -70,7 +70,7 @@ Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollst�
 
 - **enum-Schlüsselwort:** Wenn Sie nach einem Gleichheitszeichen für eine enum-Zuweisung die **LEERTASTE** drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden automatisch Elemente in der Vervollständigungsliste ausgewählt, nachdem Sie das return-Schlüsselwort eingegeben oder eine Deklaration erstellt haben.
 
-- **Operatoren „as“ und „is“:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die **LEERTASTE** drücken.
+- **as- und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die **Leertaste** drücken.
 
 - **Ereignisse:** Wenn Sie das Schlüsselwort `event` eingeben, sind in der Vervollständigungsliste nur Delegattypen enthalten.
 
@@ -158,7 +158,7 @@ Wenn Sie die **Tab**-Taste drücken, schließt IntelliSense die Anweisung automa
 Wenn Sie die **TAB-TASTE** drücken, versieht IntelliSense eine Methode per Stub mit der richtigen Signatur und fügt den Cursor in den Text Ihres Ereignishandlers ein.
 
 > [!NOTE]
-> Verwenden Sie im Menü **Ansicht** (**STRG**+ **-** ) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.
+> Verwenden Sie im Menü **Ansicht** (**STRG**+**-**) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.
 
 ## <a name="see-also"></a>Siehe auch
 

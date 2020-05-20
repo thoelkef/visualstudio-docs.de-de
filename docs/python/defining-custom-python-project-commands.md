@@ -200,7 +200,7 @@ Die Datei *.targets* hat das folgende Format:
 </Project>
 ```
 
-Platzieren Sie ein *-Element an einer beliebigen Stelle im Element* , um eine `<Import Project="(path)">`.targets`<Project>`-Datei in ein Projekt zu laden. Wenn Sie zum Beispiel eine Datei namens *CustomCommands.targets* im Unterordner *targets* in Ihrem Projekt haben, verwenden Sie folgenden Code:
+Platzieren Sie ein `<Import Project="(path)">`-Element an einer beliebigen Stelle im Element `<Project>`, um eine *.targets*-Datei in ein Projekt zu laden. Wenn Sie zum Beispiel eine Datei namens *CustomCommands.targets* im Unterordner *targets* in Ihrem Projekt haben, verwenden Sie folgenden Code:
 
 ```xml
 <Import Project="targets/CustomCommands.targets"/>

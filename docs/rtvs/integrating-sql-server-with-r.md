@@ -67,7 +67,7 @@ RTVS vereinfacht den ansonsten komplizierten und fehleranfälligen Prozess zum K
 
     ![SQL-Verbindung (Dialogfeld)](media/sql-connection-string-dialog.png)
 
-1. Sobald Sie auf **OK** geklickt haben, generiert Visual Studio bei einer gültigen Verbindung in einer neuen `dbConnection`settings.R *-Datei eine Verbindungszeichenfolge mit dem Namen* . RTVS fügt diese Datei automatisch hinzu (führt dies aus), damit Sie die Verbindung von R-Skripts sofort nutzen können:
+1. Sobald Sie auf **OK** geklickt haben, generiert Visual Studio bei einer gültigen Verbindung in einer neuen *settings.R*-Datei eine Verbindungszeichenfolge mit dem Namen `dbConnection`. RTVS fügt diese Datei automatisch hinzu (führt dies aus), damit Sie die Verbindung von R-Skripts sofort nutzen können:
 
 ![SQL-Datei „Settings.R“](media/sql-settings-dot-r.png)
 

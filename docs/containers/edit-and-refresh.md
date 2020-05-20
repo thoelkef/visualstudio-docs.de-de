@@ -61,7 +61,7 @@ Sie können die Anwendung in einem Container starten, um Änderungen schnell zu 
 
 1. Stellen Sie sicher, dass Docker so eingerichtet ist, dass der von Ihnen verwendete Containertyp (Linux oder Windows) verwendet wird. Klicken Sie mit der rechten Maustaste auf das Docker-Symbol auf der Taskleiste und wählen Sie die Option zum **Wechseln zu Linux-Containern** oder **Wechseln zu Windows-Containern** aus.
 
-1. (Nur .NET Core 3 und höher) Die in diesem Abschnitt beschriebene Bearbeitung von Code und Aktualisierung der ausgeführten Website ist in den Standardvorlagen von .NET Core 3.0 und höher nicht aktiviert. Fügen Sie zur Aktivierung das NuGet-Paket [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/) hinzu. Fügen Sie in *Startup.cs* dem Code in der `IMvcBuilder.AddRazorRuntimeCompilation`-Methode einen Aufruf der Erweiterungsmethode `ConfigureServices` hinzu. Sie benötigen die Aktivierung nur im Debugmodus, verwenden Sie also folgenden Code:
+1. (Nur .NET Core 3 und höher) Die in diesem Abschnitt beschriebene Bearbeitung von Code und Aktualisierung der ausgeführten Website ist in den Standardvorlagen von .NET Core 3.0 und höher nicht aktiviert. Fügen Sie zur Aktivierung das NuGet-Paket [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/) hinzu. Fügen Sie in *Startup.cs* dem Code in der `ConfigureServices`-Methode einen Aufruf der Erweiterungsmethode `IMvcBuilder.AddRazorRuntimeCompilation` hinzu. Sie benötigen die Aktivierung nur im Debugmodus, verwenden Sie also folgenden Code:
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }

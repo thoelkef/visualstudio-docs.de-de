@@ -32,7 +32,7 @@ Ausschnitte können viel mehr sein als nur die Zeichenvervollständigung von Zei
 
 In diesem Fall zeigt IntelliSense eine Vervollständigungsliste an, wenn Sie `readc` eintippen. Wenn Sie den vervollständigten Eintrag in der Dropdownliste auswählen und die **TAB-Taste** drücken, wird `readc` ausgewählt. Wenn Sie erneut die **TAB-Taste** drücken, wird der Ausschnitt erweitert. (Aus diesem Grund wird die Ausschnitterweiterung oft mit „den Ausschnitt eintippen und die TAB-Taste zweimal drücken“ gleichgesetzt). In den meisten Fällen beendet das erste Drücken der TAB-Taste die IntelliSense-Auswahl, und ein erneutes Drücken der TAB-Taste löst die Erweiterung aus.
 
-Öffnen Sie das Dialogfeld **Extras** > **Codeausschnitt-Manager** (**STRG**+**K**,**B**), und wählen Sie für **Sprache** **R** aus, um alle verfügbaren Ausschnitte anzuzeigen. Erweitern Sie die Gruppen, und wählen Sie einzelne Ausschnitte aus, um eine Beschreibung sowie den Verknüpfungstext anzuzeigen:
+Öffnen Sie das Dialogfeld **Extras** > **Codeausschnitt-Manager** (**STRG**+**K**,**B**), und wählen Sie für **Sprache****R** aus, um alle verfügbaren Ausschnitte anzuzeigen. Erweitern Sie die Gruppen, und wählen Sie einzelne Ausschnitte aus, um eine Beschreibung sowie den Verknüpfungstext anzuzeigen:
 
 ![Dialogfeld „Codeausschnitt-Manager“ für R](media/code-snippet-dialog.png)
 

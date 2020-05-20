@@ -222,7 +222,7 @@ Wenn Sie **Horizontal Rule** auf die Entwurfsoberfläche ziehen, wird ein HTML-M
 
 ![HTML-Seite, Label](../../ide/reference/media/vxlabel.gif)
 
-Fügt ein `div`-Element ein, das ein `ms_positioning="FlowLayout"`-Attribut enthält. Mit Ausnahme der Breite und Höhe ist dieses Element mit einem Flow Layout Panel identisch. Fügen Sie dem Starttag ein `div`-Attribut hinzu, um den Text zu formatieren, der im `class="stylename"`-Element enthalten ist.
+Fügt ein `div`-Element ein, das ein `ms_positioning="FlowLayout"`-Attribut enthält. Mit Ausnahme der Breite und Höhe ist dieses Element mit einem Flow Layout Panel identisch. Fügen Sie dem Starttag ein `class="stylename"`-Attribut hinzu, um den Text zu formatieren, der im `div`-Element enthalten ist.
 
 Wenn Sie **Div** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup ähnlich dem folgenden in das Dokument eingefügt:
 

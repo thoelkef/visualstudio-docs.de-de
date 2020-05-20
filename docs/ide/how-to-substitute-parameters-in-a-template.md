@@ -34,7 +34,7 @@ Im folgenden Abschnitt wird erläutert, wie Sie eine Vorlage ändern, um den Nam
 
 1. Suchen Sie in der *VSTEMPLATE*-Datei der Vorlage nach dem `ProjectItem`-Element, in dem diese Datei enthalten ist.
 
-1. Legen Sie das `ReplaceParameters`-Attribut für das `true`-Element auf `ProjectItem` fest:
+1. Legen Sie das `ReplaceParameters`-Attribut für das `ProjectItem`-Element auf `true` fest:
 
     ```xml
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
