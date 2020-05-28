@@ -81,7 +81,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 ::: moniker range="vs-2017"
 
-1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt****javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
+1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt** **javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
 
    ![Suchen von Projektvorlagen auf der Visual Studio-Startseite](media/start-page-search-templates.png)
 
@@ -114,7 +114,7 @@ Die **Fehlerliste** zeigt Fehler, Warnungen und Meldungen zum aktuellen Zustand 
 
 ![Fehlerliste in Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Fenster „Ausgabe“
+## <a name="output-window"></a>Ausgabefenster
 
 Im **Ausgabefenster** werden Ausgabemeldungen von der Erstellung Ihres Projekts sowie vom Anbieter der Quellcodeverwaltung angezeigt.
 
@@ -156,7 +156,7 @@ Wir haben uns nur einige der Features von Visual Studio angesehen, um uns mit de
 > [!div class="nextstepaction"]
 > [Erfahren Sie mehr über Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht der Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Weitere Features von Visual Studio 2017](../ide/advanced-feature-overview.md)
