@@ -1,16 +1,16 @@
 ---
 title: Übersicht über XAML
-ms.date: 01/10/2020
+ms.date: 05/20/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2556387f523769bba93708a9c00d1f7c62429c0f
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: 97f3bc7777023903d5fc38ad1bda7cde45b683b6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "82921226"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183482"
 ---
 # <a name="overview-of-xaml"></a>Übersicht über XAML
 
@@ -34,11 +34,11 @@ Visual Studio und Blend für Visual Studio beinhalten einen XAML-Designer, der S
 
 In den Artikeln in dieser Dokumentationsreihe wird der XAML-Designer in Visual Studio und Blend für Visual Studio erläutert.
 
-## <a name="whats-new"></a>Neues
+## <a name="whats-new"></a>Neuigkeiten
 
-Die neuesten Informationen finden Sie im Blogbeitrag [What es New in XAML Developer Tools in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/) und im Video zu den [neuen XAML-Funktionen in Visual Studio](https://youtu.be/yI9OyA4ZM2E) auf YouTube.
+Die neuesten Informationen finden Sie im Blogbeitrag [Neuerungen in den XAML-Entwicklertools in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/) , den [Verbesserungen an XAML-Tools in Visual Studio 2019, Version 16,7 Preview 1](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/) und den [neuen XAML-Funktionen in Visual Studio](https://youtu.be/yI9OyA4ZM2E) Video auf YouTube.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [XAML in WPF-Apps](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML in UWP-Apps](/windows/uwp/xaml-platform/xaml-overview)

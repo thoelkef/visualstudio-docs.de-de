@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen eines Befehls zur Projektmappen-Toolleiste | Microsoft Docs
+title: Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,39 +12,39 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a14d87fbb5754d7af35d3add9e438351877a49
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740335"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183729"
 ---
-# <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zur Symbolleiste des Projektmappen-Explorers
-In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Symbolleiste des **Projektmappen-Explorers** eine Schaltfläche hinzufügen.
+# <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste
+In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche zur **Projektmappen-Explorer** Symbolleiste erläutert.
 
- Jeder Befehl auf einer Symbolleiste oder einem Menü wird in Visual Studio als Schaltfläche bezeichnet. Wenn auf die Schaltfläche geklickt wird, wird der Code im Befehlshandler ausgeführt. In der Regel werden verwandte Befehle zu einer Gruppe gruppiert. Menüs oder Symbolleisten dienen als Container für Gruppen. Priorität bestimmt die Reihenfolge, in der einzelne Befehle in einer Gruppe im Menü oder auf der Symbolleiste angezeigt werden. Sie können verhindern, dass eine Schaltfläche auf der Symbolleiste oder im Menü angezeigt wird, indem Sie die Sichtbarkeit steuern. Ein Befehl, der `<VisibilityConstraints>` in einem Abschnitt der *.vsct-Datei* aufgeführt ist, wird nur im zugeordneten Kontext angezeigt. Die Sichtbarkeit kann nicht auf Gruppen angewendet werden.
+ Jeder Befehl auf einer Symbolleiste oder einem Menü wird in Visual Studio als Schaltfläche bezeichnet. Wenn auf die Schaltfläche geklickt wird, wird der Code im Befehls Handler ausgeführt. In der Regel werden verwandte Befehle gruppiert, um eine Gruppe zu bilden. Menüs oder Symbolleisten fungieren als Container für Gruppen. Priorität bestimmt die Reihenfolge, in der einzelne Befehle in einer Gruppe im Menü oder auf der Symbolleiste angezeigt werden. Sie können verhindern, dass eine Schaltfläche auf der Symbolleiste oder im Menü angezeigt wird, indem Sie die Sichtbarkeit steuern. Ein Befehl, der in einem `<VisibilityConstraints>` Abschnitt der *vsct* -Datei aufgelistet ist, wird nur im zugeordneten Kontext angezeigt. Die Sichtbarkeit kann nicht auf Gruppen angewendet werden.
 
- Weitere Informationen zu Menüs, Symbolleistenbefehlen und *.vsct-Dateien* finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
+ Weitere Informationen zu Menüs, Symbolleisten Befehlen und *vsct* -Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Verwenden Sie XML-Befehlstabellendateien (*.vsct*) Dateien anstelle der Befehlstabellenkonfiguration (*.ctc*) Dateien, um zu definieren, wie Menüs und Befehle in Ihren VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio-Befehlstabelle (. Vsct)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Verwenden Sie XML-Befehls Tabellen Dateien (*vsct*) anstelle von Befehls Tabellen Konfigurationsdateien (*. CTC*), um zu definieren, wie Menüs und Befehle in ihren VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl
- Erstellen Sie ein `SolutionToolbar`VSIX-Projekt mit dem Namen . Fügen Sie eine Menübefehlselementvorlage mit dem Namen **ToolbarButton**hinzu. Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+ Erstellen Sie ein VSIX-Projekt mit dem Namen `SolutionToolbar` . Fügen Sie eine Menübefehls Element-Vorlage mit dem Namen **ToolBarButton**hinzu. Weitere Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Hinzufügen einer Schaltfläche zur Symbolleiste des Projektmappen-Explorers
- In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie Sie der Symbolleiste des **Projektmappen-Explorers** eine Schaltfläche hinzufügen. Wenn auf die Schaltfläche geklickt wird, wird der Code in der Rückrufmethode ausgeführt.
+## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Hinzufügen einer Schaltfläche zur Projektmappen-Explorer Symbolleiste
+ In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie Sie der **Projektmappen-Explorer** Symbolleiste eine Schaltfläche hinzufügen. Wenn auf die Schaltfläche geklickt wird, wird der Code in der Rückruf Methode ausgeführt.
 
-1. Wechseln Sie in der Datei *ToolbarButtonPackage.vsct* zum `<Symbols>` Abschnitt. Der `<GuidSymbol>` Knoten enthält die Menügruppe und den Befehl, die von der Paketvorlage generiert wurden. Fügen `<IDSymbol>` Sie diesem Knoten ein Element hinzu, um die Gruppe zu deklarieren, die Ihren Befehl enthält.
+1. Wechseln Sie in der Datei *toolbarbuttonpackage. vsct* zum `<Symbols>` Abschnitt. Der `<GuidSymbol>` Knoten enthält die Menü Gruppe und den Befehl, die von der Paket Vorlage generiert wurden. Fügen Sie `<IDSymbol>` diesem Knoten ein Element hinzu, um die Gruppe zu deklarieren, die Ihren Befehl enthalten soll.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2. Definieren `<Groups>` Sie im Abschnitt nach dem vorhandenen Gruppeneintrag die neue Gruppe, die Sie im vorherigen Schritt deklariert haben.
+2. `<Groups>`Definieren Sie im-Abschnitt nach dem vorhandenen Gruppen Eintrag die neue Gruppe, die Sie im vorherigen Schritt deklariert haben.
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -53,9 +53,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Symbolleiste d
           </Group>
     ```
 
-     Wenn Sie das übergeordnete GUID:ID-Paar auf `guidSHLMainMenu` die Symbolleiste des `IDM_VS_TOOL_PROJWIN` **Projektmappen-Explorers** festlegen und diese Gruppe auf diese Gruppe setzen und einen Wert mit hoher Priorität festlegen, wird es hinter den anderen Befehlsgruppen gesetzt.
+     Legen Sie das übergeordnete GUID: ID-Paar auf fest `guidSHLMainMenu` `IDM_VS_TOOL_PROJWIN` , und legen Sie diese Gruppe auf der **Projektmappen-Explorer** Symbolleiste ab. Wenn Sie einen Wert mit hoher Priorität festlegen, wird dieser nach den anderen Befehls Gruppen platziert.
 
-3. Ändern `<Buttons>` Sie im Abschnitt die übergeordnete `<Button>` ID des generierten Eintrags, um die Gruppe widerzuspiegeln, die Sie im vorherigen Schritt definiert haben. Das `<Button>` geänderte Element sollte wie folgt aussehen:
+3. `<Buttons>`Ändern Sie im-Abschnitt die übergeordnete ID des generierten `<Button>` Eintrags, um die Gruppe widerzuspiegeln, die Sie im vorherigen Schritt definiert haben. Das geänderte `<Button>` Element sollte wie folgt aussehen:
 
     ```xml
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">
@@ -69,27 +69,27 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Symbolleiste d
 
 4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
 
-     In der **Symbolleiste des Projektmappen-Explorers** sollte die neue Befehlsschaltfläche rechts neben den vorhandenen Schaltflächen angezeigt werden. Das Schaltflächensymbol ist der Durchschlag.
+     Auf der **Projektmappen-Explorer** Symbolleiste sollte die neue Befehls Schaltfläche rechts neben den vorhandenen Schaltflächen angezeigt werden. Das Schaltflächen Symbol ist das durchgestrichen.
 
-5. Klicken Sie auf die neue Schaltfläche.
+5. Klicken Sie auf die Schaltfläche neu.
 
-     Ein Dialogfeld mit der Meldung **ToolbarButtonPackage Inside SolutionToolbar.ToolbarButton.MenuItemCallback()** sollte angezeigt werden.
+     Ein Dialogfeld, in dem die Meldung **toolbarbuttonpackage innerhalb von solutiontoolbar. ToolBarButton. MenuItemCallBack ()** angezeigt wird, sollte angezeigt werden.
 
 ## <a name="control-the-visibility-of-a-button"></a>Steuern der Sichtbarkeit einer Schaltfläche
- In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie Sie die Sichtbarkeit einer Schaltfläche auf einer Symbolleiste steuern. Indem Sie einen Kontext auf ein `<VisibilityConstraints>` oder mehrere Projekte im Abschnitt der *Datei SolutionToolbar.vsct* festlegen, schränken Sie eine Schaltfläche darauf ein, dass sie nur angezeigt wird, wenn ein Projekt oder Projekte geöffnet sind.
+ In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie Sie die Sichtbarkeit einer Schaltfläche auf einer Symbolleiste steuern können. Durch Festlegen eines Kontexts auf ein oder mehrere Projekte im- `<VisibilityConstraints>` Abschnitt der Datei " *solutiontoolbar. vsct* " wird eine Schaltfläche so eingeschränkt, dass Sie nur angezeigt wird, wenn ein Projekt oder Projekte geöffnet sind.
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>So zeigen Sie eine Schaltfläche an, wenn ein oder mehrere Projekte geöffnet sind
 
-1. Fügen `<Buttons>` Sie im Abschnitt *von ToolbarButtonPackage.vsct*dem `<Button>` vorhandenen Element `<Strings>` `<Icons>` zwei Befehlsflags zwischen den und-Tags hinzu.
+1. `<Buttons>`Fügen Sie im-Abschnitt von *toolbarbuttonpackage. vsct*dem vorhandenen `<Button>` -Element zwischen den Tags und zwei Befehlsflags hinzu `<Strings>` `<Icons>` .
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>
    <CommandFlag>DynamicVisibility</CommandFlag>
    ```
 
-    Die `DefaultInvisible` `DynamicVisibility` und Flags müssen so gesetzt `<VisibilityConstraints>` werden, dass Einträge im Abschnitt wirksam werden können.
+    Die `DefaultInvisible` -und- `DynamicVisibility` Flags müssen festgelegt werden, damit Einträge im- `<VisibilityConstraints>` Abschnitt wirksam werden können.
 
-2. Erstellen `<VisibilityConstraints>` Sie einen `<VisibilityItem>` Abschnitt mit zwei Einträgen. Setzen Sie den neuen `</Commands>` Abschnitt direkt nach dem schließenden Tag.
+2. Erstellen Sie einen `<VisibilityConstraints>` Abschnitt mit zwei `<VisibilityItem>` Einträgen. Fügen Sie den neuen Abschnitt direkt hinter das `</Commands>` Endtag ein.
 
    ```xml
    <VisibilityConstraints>
@@ -102,19 +102,19 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Symbolleiste d
    </VisibilityConstraints>
    ```
 
-    Jedes Sichtbarkeitselement stellt eine Bedingung dar, unter der die angegebene Schaltfläche angezeigt wird. Um mehrere Bedingungen anzuwenden, müssen Sie mehrere Einträge für dieselbe Schaltfläche erstellen.
+    Jedes Sichtbarkeits Element stellt eine Bedingung dar, unter der die angegebene Schaltfläche angezeigt wird. Wenn Sie mehrere Bedingungen anwenden möchten, müssen Sie mehrere Einträge für die gleiche Schaltfläche erstellen.
 
 3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
 
-    Die **Symbolleiste des Projektmappen-Explorers** enthält nicht die Durchstreichen-Schaltfläche.
+    Die **Projektmappen-Explorer** Symbolleiste enthält nicht die Schaltfläche durchgestrichen.
 
-4. Öffnen Sie jede Projektmappe, die ein Projekt enthält.
+4. Öffnen Sie eine beliebige Projekt Mappe, die ein Projekt enthält.
 
-    Die Durchschlagsschaltfläche wird auf der Symbolleiste rechts neben den vorhandenen Schaltflächen angezeigt.
+    Die Schaltfläche durchgestrichen wird auf der Symbolleiste rechts neben den vorhandenen Schaltflächen angezeigt.
 
-5. Klicken Sie im Menü **Datei** auf **Projektmappe schließen**. Die Schaltfläche verschwindet aus der Symbolleiste.
+5. Klicken Sie im Menü **Datei** auf **Projektmappe schließen**. Die Schaltfläche wird nicht mehr auf der Symbolleiste angezeigt.
 
-   Die Sichtbarkeit der Schaltfläche [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird durch gesteuert, bis das VSPackage geladen wird. Nach dem Laden des VSPackage wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu OleMenuCommands](/visualstudio/extensibility/menucommands-vs-olemenucommands?view=vs-2015).
+   Die Sichtbarkeit der Schaltfläche wird von gesteuert, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bis das VSPackage geladen wurde. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

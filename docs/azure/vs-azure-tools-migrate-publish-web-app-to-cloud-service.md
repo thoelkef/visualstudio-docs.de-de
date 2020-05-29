@@ -9,25 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: c3d622d52e6ae1c1e25563fdbb05f68a9ecc91d0
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489674"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84179998"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-Clouddienst aus Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-clouddienst aus Visual Studio
 
 Um die Vorteile der Hostingdienste und der Skalierbarkeit von Azure zu nutzen, kann es ratsam sein, Ihre Webanwendung zu einem Azure-Clouddienst zu migrieren und dort bereitzustellen. Es sind nur geringfügige Änderungen erforderlich. Dieser Artikel behandelt nur die Bereitstellung in Clouddiensten; Informationen für App Service finden Sie unter [Bereitstellen von Web-Apps in Azure App Service](/azure/app-service/app-service-deploy-local-git).
 
 > [!Important]
-> Diese Migration wird nur für die jeweiligen ASP.NET-, Silverlight-, WCF- und WCF Workflow-Projekte unterstützt. Für ASP.NET Core-Projekte wird sie nicht unterstützt. Siehe [Unterstützte Projektvorlagen](#supported-project-templates).
+> Diese Migration wird nur für die jeweiligen ASP.net-, WCF-und WCF-Workflow Projekte unterstützt. Für ASP.NET Core-Projekte wird sie nicht unterstützt. Siehe [Unterstützte Projektvorlagen](#supported-project-templates).
 
 ## <a name="migrate-a-project-to-cloud-services"></a>Migrieren eines Projekts zu Clouddiensten
 
-1. Klicken Sie mit der rechten Maustaste auf das Webanwendungsprojekt, und wählen Sie **Konvertieren > In Microsoft Azure Cloud Services-Projekt konvertieren**. (Beachten Sie, dass dieser Befehl nicht angezeigt wird, wenn Sie bereits über ein Webrollenprojekt in der Projektmappe verfügen.)
-1. Visual Studio erstellt in der Projektmappe ein Clouddienstprojekt, das die erforderliche Webrolle enthält. Der Name dieses Projekts ist der Name Ihres Anwendungsprojekts mit dem angehängten Suffix `.Azure`.
-1. Visual Studio legt außerdem die **Copy Local**-Eigenschaft für alle Assemblys, die für MVC 2-, MVC 3-, MVC 4- und Silverlight-Geschäftsanwendungen erforderlich sind, auf „true“ fest. Diese Eigenschaft fügt diese Assemblys dem Dienstpaket hinzu, das für die Bereitstellung verwendet wird.
+1. Klicken Sie mit der rechten Maustaste auf den Projektmappenknoten, und wählen Sie **> neues Projekt hinzufügen...** aus, und fügen Sie der vorhandenen Projekt Mappe ein neues **Azure Cloud Service (klassisches)**
+1. Klicken Sie im Dialogfeld **neuer Microsoft Azure clouddienst (klassisch)** auf OK, ohne dem Projektrollen hinzuzufügen.
+1. Klicken Sie im neu hinzugefügten Cloud Services Projekt mit der rechten Maustaste auf den Knoten Rollen, und wählen Sie dann **Webrollen Projekt in Projekt Mappe hinzufügen aus**.
+1. Wählen Sie im Dialogfeld **mit Rollen Projekt zuordnen** das Projekt aus, das Sie als webrolle zuordnen möchten.
 
    > [!Important]
    > Wenn Sie über andere Assemblys oder Dateien verfügen, die für diese Webanwendung benötigt werden, müssen Sie die Eigenschaften für diese Dateien manuell festlegen. Informationen zum Festlegen dieser Eigenschaften finden Sie unter [Einschließen von Dateien in das Dienstpaket](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
@@ -79,7 +80,6 @@ Die folgende Tabelle enthält Details zum Starten der Anwendung in Azure:
 | --- | --- |
 | ASP.NET-Webanwendung<br/>(einschließlich MVC 2, MVC 3, MVC 4) | Wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. |
 | Leere ASP.NET-Webanwendung | Wenn in Ihrer Anwendung eine `.aspx`-Standardseite vorhanden ist, wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. Um zu einer anderen Seite zu navigieren, geben Sie eine URL im folgenden Format in einen Browser ein: `<deployment_url>/<page_name>.aspx` |
-| Silverlight-Anwendung<br/>Silverlight-Geschäftsanwendung<br/>Silverlight-Navigationsanwendung | Navigieren Sie zur speziellen Seite für Ihre Anwendung, indem Sie das folgende URL-Format verwenden: `<deployment_url>/<page_name>.aspx` |
 | WCF-Dienstanwendung<br/>Dienstanwendung für WCF-Workflows | Legen Sie die `.svc`-Datei als Startseite für Ihr WCF-Dienstprojekt fest. Navigieren Sie dann zu `<deployment_url>/<service_file>.svc`. |
 | ASP.NET Dynamic Entities<br/>ASP.NET Dynamic Data-LINQ to SQL | Aktualisieren Sie die Verbindungszeichenfolge wie im nächsten Abschnitt beschrieben. Navigieren Sie dann zu `<deployment_url>/<page_name>.aspx`. Für Linq to SQL müssen Sie eine Azure SQL-Datenbank verwenden. |
 
@@ -117,9 +117,6 @@ Anwendungen, die migriert und in Clouddiensten veröffentlicht werden können, m
 | Web | Leere ASP.NET MVC 2-Webanwendung |
 | Web | Webanwendung für ASP.NET Dynamic Data Entities |
 | Web | Webanwendung für ASP.NET Dynamic Data-LINQ to SQL |
-| Silverlight | Silverlight-Anwendung |
-| Silverlight | Silverlight-Geschäftsanwendung |
-| Silverlight | Silverlight-Navigationsanwendung |
 | WCF | WCF-Dienstanwendung |
 | WCF | Dienstanwendung für WCF-Workflows |
 | Workflow | Dienstanwendung für WCF-Workflows |
@@ -127,4 +124,4 @@ Anwendungen, die migriert und in Clouddiensten veröffentlicht werden können, m
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Veröffentlichen und Bereitstellen einer Azure-Anwendung in Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
-- [Einrichten der benannten Authentifizierungsanmeldeinformationen](vs-azure-tools-setting-up-named-authentication-credentials.md).
+- [Einrichten benannter Authentifizierungs Anmelde](vs-azure-tools-setting-up-named-authentication-credentials.md)Informationen.
