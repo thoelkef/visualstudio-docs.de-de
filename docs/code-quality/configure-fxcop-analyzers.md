@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 182042db9a744d037e295a8448f8c49a9c7b3a97
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587718"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184795"
 ---
-# <a name="configure-fxcop-analyzers"></a>Konfigurieren von FxCop-Analyzern
+# <a name="configure-fxcop-analyzers"></a>Konfigurieren von FxCop-Analysetools
 
 Das [Paket FxCop](install-fxcop-analyzers.md) Analyzer besteht aus den wichtigsten "FxCop"-Regeln aus der Legacy-Analyse, die in .NET Compiler Platform-basierte Code Analysen konvertiert wurden. Bei bestimmten FxCop-Regeln können Sie durch [konfigurierbare Optionen](fxcop-analyzer-options.md)verfeinern, auf welche Teile Ihrer Codebasis Sie angewendet werden sollen. Jede Option wird durch Hinzufügen eines Schlüssel-Wert-Paars zu einer [Editor config](https://editorconfig.org) -Datei angegeben. Eine Konfigurationsdatei kann [für ein projektspezifisch](#per-project-configuration) sein oder von zwei oder mehr Projekten [gemeinsam genutzt](#shared-configuration) werden.
 
 > [!TIP]
-> Fügen Sie dem Projekt eine Editor config-Datei hinzu, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und > **Neues Element** **Hinzufügen** auswählen. Geben Sie im Fenster **Neues Element hinzufügen** im Suchfeld den Text **Editor config** ein. Wählen Sie die Vorlage **Editor config file (Standard)** aus, und wählen Sie **Hinzufügen**aus.
+> Fügen Sie dem Projekt eine Editor config-Datei hinzu, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und **Add**  >  **Neues Element**hinzufügen auswählen. Geben Sie im Fenster **Neues Element hinzufügen** im Suchfeld den Text **Editor config** ein. Wählen Sie die Vorlage **Editor config file (Standard)** aus, und wählen Sie **Hinzufügen**aus.
 >
 > ![Editor config-Datei dem Projekt in Visual Studio hinzufügen](media/add-editorconfig-file.png)
 
@@ -64,13 +64,27 @@ Die Syntax zum Konfigurieren einer Option für eine *bestimmte* Regel lautet wie
 |-|-|
 | dotnet_code_quality. RuleId. optionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
-## <a name="per-project-configuration"></a>Konfiguration pro Projekt
+## <a name="enabling-editorconfig-based-configuration"></a>Aktivieren der Editor config-basierten Konfiguration
+
+### <a name="vs2019-163-and-later--fxcopanalyzers-package-version-33x-and-later"></a>VS2019 16,3 und höher + fxcopanalyzers-Paketversion 3.3. x und höher
+
+Die Editor config-basierte Analyse Konfiguration kann für die folgenden Bereiche aktiviert werden:
+
+- Bestimmte Dokumente
+- Bestimmte Ordner
+- Bestimmte Projekt (e)
+- Bestimmte Lösungen
+- Gesamtes Repository
+
+Um die Konfiguration zu aktivieren, fügen Sie eine *Editor config* -Datei mit den Optionen im entsprechenden Verzeichnis hinzu. Diese Datei kann auch Editor config-basierte Konfigurationseinträge des Diagnose schwere Grads enthalten. Ausführlichere Informationen finden Sie [hier](use-roslyn-analyzers.md#rule-severity).
+
+### <a name="prior-to-vs2019-163-or-using-an-fxcopanalyzers-package-version-prior-to-33x"></a>Vor VS2019 16,3 oder Verwendung einer fxcopanalyzers-Paketversion vor 3.3. x
+
+#### <a name="per-project-configuration"></a>Konfiguration pro Projekt
 
 Fügen Sie dem Stammverzeichnis des Projekts eine *Editor config* -Datei hinzu, um die Editor config-basierte Analyse Konfiguration für ein bestimmtes Projekt zu aktivieren.
 
-Zurzeit gibt es keine hierarchische Unterstützung für das Kombinieren von Editor config-Dateien, die auf unterschiedlichen Verzeichnis Ebenen vorhanden sind, z. b. die Projekt Mappe und die Projektebene.
-
-## <a name="shared-configuration"></a>Freigegebene Konfiguration
+#### <a name="shared-configuration"></a>Freigegebene Konfiguration
 
 Sie können eine Editor config-Datei für die Konfiguration von FxCop Analyzer zwischen zwei oder mehr Projekten freigeben, es sind jedoch einige zusätzliche Schritte erforderlich.
 
@@ -89,7 +103,7 @@ Sie können eine Editor config-Datei für die Konfiguration von FxCop Analyzer z
    </Project>
    ```
 
-3. Fügen Sie der *csproj* -oder *vbproj* -Datei eine Zeile hinzu, um die im vorherigen Schritt erstellte *.* -Datei zu importieren. Diese Zeile muss vor allen Zeilen platziert werden, in denen die FxCop Analyzer *.* -Eigenschaften Dateien importiert werden. Beispiel: die Datei ".-Eigenschaften" hat den Namen " *Editor config.* -Eigenschaften":
+3. Fügen Sie der *csproj* -oder *vbproj* -Datei eine Zeile hinzu, um die im vorherigen Schritt erstellte *.* -Datei zu importieren. Diese Zeile muss vor allen Zeilen platziert werden, in denen die FxCop Analyzer *.* -Eigenschaften Dateien importiert werden. Beispiel: die Datei ".-Eigenschaften" hat den Namen " *Editor config.*-Eigenschaften":
 
    ```xml
    ...
@@ -106,6 +120,6 @@ Sie können eine Editor config-Datei für die Konfiguration von FxCop Analyzer z
 ## <a name="see-also"></a>Siehe auch
 
 - [Optionen für den Regelbereich für FxCop-Analysen](fxcop-analyzer-options.md)
-- [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
-- [FxCop-Analysen](install-fxcop-analyzers.md)
+- [Analysetoolkonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
+- [FxCop-Analysetools](install-fxcop-analyzers.md)
 - [.Net-Codierungs Konventionen für Editor config](../ide/editorconfig-code-style-settings-reference.md)
