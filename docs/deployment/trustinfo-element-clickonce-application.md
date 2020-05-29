@@ -1,5 +1,5 @@
 ---
-title: '&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+title: '&lt;TrustInfo- &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745595"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184431"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;-Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.
@@ -69,7 +69,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `trustInfo` -Element ist erforderlich und befindet sich im `asm.v2` -Namespace. Es besitzt keine Attribute und enthält die folgenden Elemente.
 
-## <a name="security"></a>Sicherheit
+## <a name="security"></a>security
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `trustInfo` -Elements. Es enthält das `applicationRequestMinimum` -Element und besitzt keine Attribute.
 
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum
@@ -87,7 +87,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      Erforderlich. Bezeichnet die Version der Berechtigung. Normalerweise ist dieser Wert `1`.
 
 ## <a name="ipermission"></a>IPermission
- Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Die `IPermission` Element vollständig identifiziert eine Berechtigungsklasse in .NET Framework. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das- `IPermission` Element identifiziert vollständig eine Berechtigungs Klasse in der .NET Framework. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.
 
 - `class`
 
@@ -142,7 +142,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 
 - `Level`
 
-   Erforderlich. Bezeichnet die Sicherheitsstufe, die von der Anwendung angefordert wird. Dabei sind folgende Werte möglich:
+   Erforderlich. Bezeichnet die Sicherheitsstufe, die von der Anwendung angefordert wird. Mögliche Werte:
 
    `asInvoker`, es werden keine zusätzlichen Berechtigungsstufen angefordert. Für diese Stufe sind keine zusätzlichen Eingaben für die Vertrauensstellung erforderlich.
 
@@ -161,7 +161,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 
  Alle mithilfe von `defaultAssemblyRequest` und `assemblyRequest` angeforderten Berechtigungen werden ohne Nachfrage beim Benutzer erteilt, wenn das Bereitstellungsmanifest eine gültige Vertrauenslizenz aufweist.
 
- Weitere Informationen zur Berechtigungserweiterung finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md). Weitere Informationen zur Bereitstellung von Richtlinien finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
+ Weitere Informationen zur Berechtigungs Erweiterung finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md). Weitere Informationen zur Bereitstellung von Richtlinien finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
 ## <a name="examples"></a>Beispiele
  Die folgenden drei Codebeispiele veranschaulichen `trustInfo` -Elemente für die benannten Standardsicherheitszonen – Internet, Lokales Intranet und Vertrauenswürdige Sites – für die Verwendung im Anwendungsmanifest einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung.
@@ -268,5 +268,5 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Trusted Application Deployment overview (Überblick: Bereitstellen vertrauenswürdiger Anwendungen)](../deployment/trusted-application-deployment-overview.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Übersicht über bereit Stellungen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

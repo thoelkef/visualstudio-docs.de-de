@@ -14,27 +14,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c60dffc7bb47336ae36e64a366def3c4dce06213
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586583"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184229"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
-Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Verwenden Sie das Dialogfeld **Dienstverweis hinzufügen** , um in der aktuellen Projekt Mappe, lokal, in einem lokalen Netzwerk oder im Internet nach [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] zu suchen.
+
+::: moniker range="vs-2017"
+Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Verwenden Sie das Dialogfeld **Dienstverweis hinzufügen** , um [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in der aktuellen Projekt Mappe lokal, in einem lokalen Netzwerk oder im Internet zu suchen.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie auf den **Microsoft WCF Web Service Reference Provider**zugreifen, mit dem Sie Windows Communication Foundation (WCF)-Datendienst Verweise verwalten können.
+::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="add-a-service-reference"></a>Hinzufügen eines Dienst Verweises
+## <a name="add-a-wcf-service-reference"></a>Hinzufügen eines WCF-Dienst Verweises
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>So fügen Sie einen Verweis auf einen externen Dienst hinzu
 
+::: moniker range="vs-2017"
+
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Namen des Projekts, dem Sie den Dienst hinzufügen möchten, und klicken Sie dann auf **Dienstverweis hinzufügen**.
 
-     Das Dialogfeld **Dienstverweis hinzufügen** wird angezeigt.
+   Das Dialogfeld **Dienstverweis hinzufügen** wird angezeigt.
 
-2. Geben Sie im Feld **Adresse** die URL für den Dienst ein, und klicken Sie dann auf **suchen, um** nach dem Dienst zu suchen. Wenn der Dienst Benutzernamen-und Kenn Wort Sicherheit implementiert, werden Sie möglicherweise aufgefordert, einen Benutzernamen und ein Kennwort einzugeben.
+1. Geben Sie im Feld **Adresse** die URL für den Dienst ein, und klicken Sie dann auf **suchen, um** nach dem Dienst zu suchen. Wenn der Dienst Benutzernamen-und Kenn Wort Sicherheit implementiert, werden Sie möglicherweise aufgefordert, einen Benutzernamen und ein Kennwort einzugeben.
 
     > [!NOTE]
     > Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.
@@ -43,33 +51,90 @@ Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere
 
      Eine Statusanzeige wird angezeigt, wenn die Suche ausgeführt wird. Sie können die Suche jederzeit abbrechen, indem Sie auf " **Abbrechen**" klicken.
 
-3. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
+1. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
 
-4. Geben Sie im Feld **Namespace** den Namespace ein, den Sie für den Verweis verwenden möchten.
+1. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
 
-5. Klicken Sie auf **OK** , um den Verweis auf das Projekt hinzuzufügen.
+1. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
+
+     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Doppelklicken oder tippen Sie in **Projektmappen-Explorer**auf den Knoten **verbundene Dienste** .
+
+   Die Registerkarte **Dienste konfigurieren** wird geöffnet.
+
+1. Wählen Sie **Microsoft WCF Web Service Reference Provider**aus.
+
+   Das Dialogfeld **WCF-Webdienst Verweis konfigurieren** wird angezeigt.
+
+   ![Screenshot des Dialog Felds "WCF-Webdienst Anbieter"](media/vs-2019/configure-wcf-web-service-reference-dialog.png)
+
+
+1. Geben Sie im Feld **URI** die URL für den Dienst ein, **und klicken Sie dann auf Suchen** , um nach dem Dienst zu suchen. Wenn der Dienst Benutzernamen-und Kenn Wort Sicherheit implementiert, werden Sie möglicherweise aufgefordert, einen Benutzernamen und ein Kennwort einzugeben.
+
+    > [!NOTE]
+    > Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.
+
+     Sie können auch die URL aus der **URI** -Liste auswählen, in der die vorherigen 15 URLs gespeichert sind, bei denen gültige Dienst Metadaten gefunden wurden.
+
+     Eine Statusanzeige wird angezeigt, wenn die Suche ausgeführt wird. Sie können die Suche jederzeit abbrechen, indem Sie auf " **Abbrechen**" klicken.
+
+1. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
+
+1. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
+
+1. Klicken Sie auf **Fertig** stellen, um den Verweis auf das Projekt hinzuzufügen.
 
      Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
 
+::: moniker-end
+
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>So fügen Sie einen Verweis auf einen Dienst in der aktuellen Projekt Mappe hinzu
+
+::: moniker range="vs-2017"
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Namen des Projekts, dem Sie den Dienst hinzufügen möchten, und klicken Sie dann auf **Dienstverweis hinzufügen**.
 
     Das Dialogfeld **Dienstverweis hinzufügen** wird angezeigt.
 
-2. Klicken Sie auf **ermitteln**.
+1. Klicken Sie auf **ermitteln**.
 
     Alle Dienste (sowohl [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] als auch WCF-Dienste) in der aktuellen Projekt Mappe werden der Liste der **Dienste** hinzugefügt.
 
-3. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
+1. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
 
-4. Geben Sie im Feld **Namespace** den Namespace ein, den Sie für den Verweis verwenden möchten.
+1. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
 
-5. Klicken Sie auf **OK** , um den Verweis auf das Projekt hinzuzufügen.
+1. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
+
+    Ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Doppelklicken oder tippen Sie in **Projektmappen-Explorer**auf den Knoten **verbundene Dienste** . 
+
+   Die Registerkarte **Dienste konfigurieren** wird geöffnet.
+
+1. Wählen Sie **Microsoft WCF Web Service Reference Provider**aus.
+
+   Das Dialogfeld **WCF-Webdienst Verweis konfigurieren** wird angezeigt.
+
+1. Klicken Sie auf **ermitteln**.
+
+    Alle Dienste (sowohl [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] als auch WCF-Dienste) in der aktuellen Projekt Mappe werden der Liste der **Dienste** hinzugefügt.
+
+1. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
+
+1. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
+
+1. Klicken Sie auf **Fertig** stellen, um den Verweis auf das Projekt hinzuzufügen.
 
     Ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
 
+::: moniker-end
+
 ## <a name="update-a-service-reference"></a>Aktualisieren eines Dienst Verweises
+
 Der Entity Data Model für eine [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] ändert sich manchmal. Wenn dies der Fall ist, müssen Sie den Dienst Verweis aktualisieren.
 
 ### <a name="to-update-a-service-reference"></a>So aktualisieren Sie einen Dienst Verweis
@@ -79,6 +144,7 @@ Der Entity Data Model für eine [!INCLUDE[ssAstoria](../data-tools/includes/ssas
      Ein Status Dialogfeld wird angezeigt, während der Verweis vom ursprünglichen Speicherort aus aktualisiert wird, und der Dienst Client wird erneut generiert, um Änderungen an den Metadaten widerzuspiegeln.
 
 ## <a name="remove-a-service-reference"></a>Entfernen eines Dienst Verweises
+
 Wenn ein Dienst Verweis nicht mehr verwendet wird, können Sie ihn aus der Projekt Mappe entfernen.
 
 ### <a name="to-remove-a-service-reference"></a>So entfernen Sie einen Dienst Verweis
@@ -92,4 +158,4 @@ Wenn ein Dienst Verweis nicht mehr verwendet wird, können Sie ihn aus der Proje
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -910,6 +910,8 @@
           href: ide/signing-in-to-visual-studio.md
         - name: Arbeiten mit mehreren Benutzerkonten
           href: ide/work-with-multiple-user-accounts.md
+        - name: 'Arbeiten mit Konten, die mehrstufige Authentifizierung erfordern'
+          href: ide/work-with-multi-factor-authentication.md
         - name: Erweitern einer Testversion oder Aktualisieren einer Lizenz
           href: ide/how-to-unlock-visual-studio.md
     - name: Optimieren der Leistung von Visual Studio
