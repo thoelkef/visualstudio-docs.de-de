@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386169"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200323"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Wie weise ich Visual Studio-Abonnements zu?
 
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um Abonnements einzeln zuzuweisen:
 
 1. Klicken Sie unter [manage.visualstudio.com](https://manage.visualstudio.com) oben auf der Seite auf die [Registerkarte „Manage Subscribers“ (Abonnenten verwalten)](https://manage.visualstudio.com/subscribers).
 2. Klicken Sie auf „Hinzufügen“, und tippen Sie den Namen und die E-Mail-Adresse des Benutzers ein, dem Sie ein Abonnement zuweisen möchten.
-    - Wenn Ihre Organisation Azure Active Directory verwendet, sucht das Namensfeld nach Personen in Ihrem aktuellen Verzeichnis. Sie können entweder eines der Suchergebnisse auswählen oder Personen manuell hinzufügen.
+    1. Wenn Ihre Organisation Azure Active Directory verwendet, sucht das Namensfeld nach Personen in Ihrem aktuellen Verzeichnis. Sie können entweder eines der Suchergebnisse auswählen oder Personen manuell hinzufügen.
 3. Wenn Sie möchten, dass der Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnements-Portal](https://my.visualstudio.com/) anmeldet, stellen Sie sicher, dass die Umschaltfläche „Downloads“ im Abschnitt „Download settings“ (Downloadeinstellungen) aktiviert ist.
 4. Füllen Sie den Abschnitt „Communication Preferences“ (Kommunikationseinstellungen) aus, damit wir wissen, in welcher Sprache die Zuweisungs-E-Mail an Ihre Abonnenten gesendet werden soll.
 5. Wenn Sie Hinweise in Zusammenhang mit der Zuweisung hinzufügen möchten, verwenden Sie hierfür den Abschnitt „Verweis“.
