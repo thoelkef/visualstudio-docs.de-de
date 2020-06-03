@@ -3,14 +3,14 @@ title: Aktivieren des Abonnements
 description: In diesem Artikel wird beschrieben, wie Sie mit Ihrem Microsoft-Konto Ihr Abonnement aktivieren und Features in Visual Studio für Mac entsperren.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 2074207876df78bc6a268db909e5fa190073f9ba
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984045"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183937"
 ---
 # <a name="enable-subscription"></a>Aktivieren des Abonnements
 
@@ -44,6 +44,6 @@ Derzeit gibt es keine Möglichkeit, einen Produktschlüssel zu verwenden, um Pro
 
 Wenn Sie Visual Studio Enterprise 2019 für Mac für Computer ohne Internetverbindung erworben haben, können Sie Visual Studio für Mac weiterhin ohne Aktivierung verwenden. Xamarin Inspector, Xamarin Profiler und eingebettete Assemblyfeatures stehen so jedoch nicht zur Verfügung.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anmelden bei Visual Studio (unter Windows)](/visualstudio/ide/signing-in-to-visual-studio)

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6095a3d7d8bfa7a5ee367da2c93d16113a777d0c
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: 6453c263cb970ae3fff2c134f1ae570bca730b93
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109480"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183235"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Visual Studio-Images in Azure
 
@@ -37,10 +37,10 @@ Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual
 | Releaseversion                                                                                                                                          | Editionen              |    Produktversion    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
 | [Visual Studio 2019: Neueste Version (Version 16.5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Version 16.5.4    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | Version 16.0.13    |
-| [Visual Studio 2017: Aktuellste Version (Version 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Version 15.9.22   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Version 15.0.28   |
-| [Visual Studio 2015: Aktuellste Version (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Version 14.0.25431.01 |
+| Visual Studio 2019: RTW                         | Enterprise            | Version 16.0.13    |
+| Visual Studio 2017: Aktuellste Version (Version 15.9)           | Enterprise, Community | Version 15.9.22   |
+| Visual Studio 2017: RTW                             | Enterprise, Community | Version 15.0.28   |
+| Visual Studio 2015: Aktuellste Version (Update 3)              | Enterprise, Community | Version 14.0.25431.01 |
 
 > [!NOTE]
 > In Übereinstimmung mit der Microsoft-Wartungsrichtlinie ist die ursprünglich veröffentlichte Version (RTW) von Visual Studio 2015 aus dem Wartungsfenster gelaufen. Visual Studio 2015 Update 3 ist die einzig verbleibende Version, die für die Visual Studio 2015-Produktlinie angeboten wird.

@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1158015f1a7065514511b8d62810c937382b7f
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: f5ff05fa7c8fe68d7c09f4881efc249a74959b2b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638685"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180219"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Erstellen eines KI-Projekts aus dem Azure Machine Learning-Katalog in Visual Studio
 
@@ -24,7 +24,7 @@ Azure Machine Learning ist in Visual Studio-Tools für KI enthalten. Sie können
 Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, lässt sich anhand der Anleitungen im Azure Machine Learning-Beispielkatalog ganz einfach ein neues Python-Projekt erstellen.
 
 > [!NOTE]
-> Azure Machine Learning Workbench muss installiert sein. Weitere Informationen zur Installation finden Sie unter [Schnellstart für die Azure Machine Learning-Installation](/azure/machine-learning/preview/quickstart-installation).
+> Azure Machine Learning Workbench muss installiert sein. 
 
 1. Starten Sie Visual Studio. Öffnen Sie den **Server-Explorer**, indem Sie das Menü **AI Tools** (KI-Tools) öffnen und auf **Cluster auswählen** klicken.
 
@@ -41,9 +41,9 @@ Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, l
 4. Wählen Sie für diesen Schnellstart das Beispiel „**MNIST mit TensorFlow**“ aus, und klicken Sie auf **Installieren**. Geben Sie hierzu folgende Informationen an:
 
    - **Ressourcengruppe**: Die Azure-Ressourcengruppe, in der Ihre Metadaten gespeichert werden
-   - **Konto**: Das Konto für Azure Machine Learning-Experimentieren
-   - **Arbeitsbereich**: Der Azure Machine Learning-Arbeitsbereich
-   - **Projekttyp**: Das Machine Learning-Framework Wählen Sie in diesem Fall **TensorFlow** aus.
+   - **Konto**: Experimentierkonto für Azure Machine Learning
+   - **Arbeitsbereich**: Azure Machine Learning-Arbeitsbereich
+   - **Projekttyp**: Machine Learning-Framework Wählen Sie in diesem Fall **TensorFlow** aus.
    - **Zur Projektmappe hinzufügen**: Bestimmt, ob Ihre aktuelle Visual Studio-Projektmappe hinzugefügt oder eine neue Projektmappe erstellt und geöffnet werden soll
    - **Projektpfad**: Speicherort des Codes
    - **Projektname**: Geben Sie **TensorFlowMNIST** ein.

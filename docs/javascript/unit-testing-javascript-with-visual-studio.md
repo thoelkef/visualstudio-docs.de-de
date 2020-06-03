@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071946"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183105"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Komponententests für JavaScript und TypeScript in Visual Studio
 
@@ -28,9 +28,6 @@ Folgende Frameworks werden unterstützt:
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (dieses Framework bezieht sich speziell auf Node.js-Tools für Visual Studio)
-
-> [!WARNING]
-> Ein Problem in Tape verhindert derzeit die Ausführung von Tape-Tests. Mit der Zusammenführung von [PR 361](https://github.com/substack/tape/pull/361) sollte das Problem behoben sein.
 
 Wenn Ihr bevorzugtes Framework nicht unterstützt wird, finden Sie unter [Add support for a unit test framework (Hinzufügen der Unterstützung für ein Komponententest-Framework)](#addingFramework) Informationen zum Hinzufügen der Unterstützung.
 
@@ -130,7 +127,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > Wenn eine Fehlermeldung angezeigt wird, die besagt, dass *vstest.console.exe* nicht gefunden werden kann, prüfen Sie, ob Sie tatsächlich die Developer-Eingabeaufforderung und nicht nur eine gewöhnliche Eingabeaufforderung geöffnet haben.
 
-## <a name="addingFramework"></a>Hinzufügen der Unterstützung für ein Komponententest-Framework
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Hinzufügen der Unterstützung für ein Komponententest-Framework
 
 Sie können die Unterstützung für weitere Testframeworks hinzufügen, indem Sie die Erkennungs- und Ausführungslogik mit JavaScript implementieren. Hierzu fügen Sie einen Ordner mit dem Namen des Testframeworks an folgender Stelle hinzu:
 

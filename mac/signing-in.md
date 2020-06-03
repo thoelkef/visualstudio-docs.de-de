@@ -3,14 +3,14 @@ title: Anmelden bei Visual Studio für Mac
 description: 'Vorgehensweise: Anmelden bei Visual Studio für Mac'
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d5bfb81264c3503643c51c621cad29df44acef92
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75844258"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173191"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Anmelden bei Visual Studio für Mac
 
@@ -51,7 +51,7 @@ Visual Studio für Mac unterstützt das Hinzufügen mehrerer Konten zu Ihrem Per
 
 Wenn Sie weitere Benutzerkonten hinzufügen möchten, wählen Sie das Menü **Visual Studio > Konto…** in Visual Studio für Mac aus. Klicken Sie auf die Schaltfläche **Hinzufügen…** , um weitere Kontoanmeldeinformationen einzugeben.
 
-![Konten verwalten](media/signing-in-image15.png)
+![Screenshot: Verwalten von Konten](media/user-accounts-login.png)
 
 ## <a name="view-or-change-your-profile-information"></a>Anzeigen oder Ändern Ihrer Profilinformationen
 
@@ -61,7 +61,7 @@ Wenn Sie weitere Benutzerkonten hinzufügen möchten, wählen Sie das Menü **Vi
 
 3. Wählen Sie anschließend **Änderungen speichern** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anmelden bei Visual Studio (unter Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Arbeiten Sie mit mehreren Benutzerkonten (Visual Studio unter Windows)](/visualstudio/ide/work-with-multiple-user-accounts)
