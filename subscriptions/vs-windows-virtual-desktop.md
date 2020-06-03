@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie Microsoft Windows Virtual Desktop über Ihr Visual Studio-Abonnement nutzen können.
-ms.openlocfilehash: 87911b1b7b6eb63eb85b64515d5d24755e4656e6
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649738"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183586"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Zugriff auf Windows Virtual Desktop in Abonnements 
 Visual Studio-Abonnenten können nun ihr Azure DevTest-Einzelguthaben für Microsoft Windows Virtual Desktop-Dienste verwenden.  
@@ -39,7 +39,7 @@ Eine vollständige Liste der Voraussetzungen für die Verwendung von Windows Vir
 
 ## <a name="get-started"></a>Erste Schritte 
 Wenn Sie alle Voraussetzungen erfüllen, sollten Sie einige Aktionen durchführen, um die Implementierung einzurichten.  Informationen zu den ersten Schritten finden Sie in den folgenden Tutorials:
-- [Erstellen eines Windows Virtual Desktop-Mandanten](https://docs.microsoft.com/azure/virtual-desktop/tenant-setup-azure-active-directory)
+- [Erstellen eines Windows Virtual Desktop-Mandanten](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - [Erstellen eines Hostpools über das Azure-Portal](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace)
 - [Verwalten von App-Gruppen für Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups)
 

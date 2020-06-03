@@ -7,16 +7,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d147397a168bb78a31a8fbe6929d6c2184d080
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386687"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180492"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Visual Studio-Unterstützung des FIPS 140-2-konformen Betriebsmodus
 
-Ab [Version 16.4](/visualstudio/releases/2019/release-notes-v16.4/) unterstützt Visual Studio 2019 den Betriebsmodus für Windows, Azure und .NET gemäß FIPS 140-2 (Federal Information Processing Standard). Ab [Version 16.5](/visualstudio/releases/2019/release-notes-v16.5/) unterstützt Visual Studio den Betriebsmodus gemäß FIPS 140-2 auch bei der Entwicklung von [C++-Anwendungen für Linux-Remotesysteme](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
+Ab [Version 16.4](/visualstudio/releases/2019/release-notes-v16.4/) unterstützt Visual Studio 2019 den Betriebsmodus für Windows, Azure und .NET gemäß FIPS 140-2 (Federal Information Processing Standard). Ab [Version 16.5](/visualstudio/releases/2019/release-notes-archive-v16.5) unterstützt Visual Studio den Betriebsmodus gemäß FIPS 140-2 auch bei der Entwicklung von [C++-Anwendungen für Linux-Remotesysteme](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
 
 [Installieren Sie .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48), und aktivieren Sie die Gruppenrichtlinieneinstellung **Systemkryptografie: FIPS-konformen Algorithmus für Verschlüsselung, Hashing und Signatur verwenden**, um den FIPS 140-2-konformen Betriebsmodus für Visual Studio zu konfigurieren.
 
