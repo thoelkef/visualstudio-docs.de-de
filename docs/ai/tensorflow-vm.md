@@ -40,7 +40,7 @@ Weitere Anweisungen zum Einrichten eines virtuellen Computers mit Deep Learning 
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Beispielcode herunterladen
+### <a name="download-sample-code"></a>Herunterladen von Beispielcode
 
 Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai) herunter, das Beispiele für die ersten Schritte mit Deep Learning in TensorFlow, CNTK, Theano usw. enthält.
 
@@ -52,7 +52,7 @@ Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai
 
    ![Öffnen des Projekts](media/tensorflow-local/open-project.png)
 
-   ![Projektmappe öffnen](media/tensorflow-local/open-solution.png)
+   ![Öffnen der Projektmappe](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Hinzufügen eines virtuellen Azure-Remotecomputers
 
@@ -71,7 +71,7 @@ Führen Sie im Übermittlungsfenster Folgendes aus:
 
 - Geben Sie einen **Auftragsnamen** ein.
 
-- Klicken Sie auf **Submit**(Senden).
+- Klicken Sie auf **Senden**.
 
 ## <a name="check-status-of-job"></a>Überprüfen des Auftragsstatus
 Erweitern Sie den virtuellen Computer im **Server-Explorer**, dem Sie den Auftrag übermittelt haben, um den Status und die Details des Auftrags anzuzeigen. Doppelklicken Sie auf **Aufträge**.

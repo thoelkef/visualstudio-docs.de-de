@@ -40,9 +40,9 @@ Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Pro
 
 ## <a name="modeling"></a>Modellierung
 
-Verweislink: **[Analyse und Modellarchitektur](../modeling/analyze-and-model-your-architecture.md)**
+Referenzlink: **[Analyze and model architecture (Analysieren und Modellieren der Architektur)](../modeling/analyze-and-model-your-architecture.md)**
 
-Allgemeiner Kommentar: Obwohl diese Funktionen entweder unabhängig von der Programmiersprache sind oder mit .NET-Sprachen wie C# funktionieren, beziehen sie sich auf ein traditionelles Anwendungsparadigma mit Objekthierarchien und Klassenbeziehungen. Für das Entwerfen eines Spiels in Unity ist ein anderes Paradigma erforderlich, nämlich die Beziehungen von grafischen Objekten, Sounds, Shadern, Skripts usw. Aus diesem Grund sind die Modellierungsdiagrammtools von Visual Studio für die Gesamtheit eines Unity-Projekts nicht von besonderer Bedeutung. Sie können möglicherweise zum Verwalten von Beziehungen innerhalb von C#-Skripts verwendet werden, aber das ist nur ein Teil des Ganzen.
+Allgemeiner Hinweis: Obwohl diese Entwurfsfunktionen entweder unabhängig von der Programmiersprache sind oder mit .NET-Sprachen wie C# funktionieren, beziehen sie sich auf ein traditionelles Anwendungsparadigma mit Objekthierarchien und Klassenbeziehungen. Für das Entwerfen eines Spiels in Unity ist ein anderes Paradigma erforderlich, nämlich die Beziehungen von grafischen Objekten, Sounds, Shadern, Skripts usw. Aus diesem Grund sind die Modellierungsdiagrammtools von Visual Studio für die Gesamtheit eines Unity-Projekts nicht von besonderer Bedeutung. Sie können möglicherweise zum Verwalten von Beziehungen innerhalb von C#-Skripts verwendet werden, aber das ist nur ein Teil des Ganzen.
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
@@ -53,7 +53,7 @@ Allgemeiner Kommentar: Obwohl diese Funktionen entweder unabhängig von der Prog
 |Architektur-Explorer|Nein||
 |UML-Diagramme (Anwendungsfall, Aktivität, Klasse, Komponente, Sequenz und DSL)|Nein||
 |Ebenendiagramme|Nein||
-|Gültigkeitsprüfung|Nein||
+|Ebenenüberprüfung|Nein||
 
 ## <a name="code"></a>Code
 
@@ -98,7 +98,7 @@ Referenzlink: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität
 
-Verweislink: **[Verbessern der Codequalität](../test/improve-code-quality.md)**
+Referenzlink: **[Improve code quality (Verbessern der Codequalität)](../test/improve-code-quality.md)**
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
@@ -110,17 +110,17 @@ Verweislink: **[Verbessern der Codequalität](../test/improve-code-quality.md)**
 
 ## <a name="release-management"></a>Release Management:
 
-Referenzlink: [Build und Release in Azure Pipelines und TFS](/azure/devops/pipelines/overview?view=vsts)
+Referenzlink: [Build and release in Azure Pipelines and TFS (Build und Release in Azure Pipelines und TFS)](/azure/devops/pipelines/overview?view=vsts)
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
 |Verwalten von Releaseprozessen|Ja||
 |Bereitstellen auf Servern für das Sideloading über Skripts|Ja||
-|Hochladen in den App Store|Teilweise|Es stehen Erweiterungen zur Verfügung, die diesen Prozess für manche App-Stores automatisieren können. Ein Übersicht finden Sie unter [Extensions for Azure DevOps Services (Erweiterungen für Azure DevOps Services)](https://marketplace.visualstudio.com/VSTS). Dort ist beispielsweise die [Erweiterung für Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) erhältlich.|
+|Hochladen in den App Store|Partial|Es stehen Erweiterungen zur Verfügung, die diesen Prozess für manche App-Stores automatisieren können. Ein Übersicht finden Sie unter [Extensions for Azure DevOps Services (Erweiterungen für Azure DevOps Services)](https://marketplace.visualstudio.com/VSTS). Dort ist beispielsweise die [Erweiterung für Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) erhältlich.|
 
 ## <a name="monitor-with-hockeyapp"></a>Überwachen mit HockeyApp
 
-Verweislink: **[Überwachen mit HockeyApp](https://www.hockeyapp.net/features/)**
+Referenzlink: **[Monitor with HockeyApp (Überwachen mit HockeyApp)](https://www.hockeyapp.net/features/)**
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|

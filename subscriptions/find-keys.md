@@ -18,7 +18,7 @@ ms.locfileid: "80232487"
 In diesem Artikel wird das Suchen, Beanspruchen und Exportieren von Product Keys über https://my.visualstudio.com/productkeys erläutert.  Weitere Informationen zum Aktivieren eines Produkts mit einem Product Key, den Einzelhandels- und Volumenlizenzversionen von Product Keys und den Anspruchseinschränkungen für Product Keys pro Tag finden Sie in der [Übersicht über Product Keys](product-keys.md).
 
 ## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
-Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite **Downloads** auf den blauen Link [Schlüssel abrufen](https://my.visualstudio.com/downloads) für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
+Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 > [!div class="mx-imgBorder"]
 > ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
 
@@ -29,7 +29,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
-|    Schlüsseltyp           |    BESCHREIBUNG                                                                                                                                                                                                           |
+|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nicht zutreffend                    |    Für die Installation dieses Produkts ist kein Schlüssel erforderlich.                                                       |
 |    Einzelhandel                     |    Mit Verkaufsschlüsseln sind mehrere Aktivierungen möglich. Sie werden für die Verkaufsversionen des Produkts verwendet. In vielen Fällen sind pro Schlüssel 10 Aktivierungen zulässig. Häufig sind jedoch weitere Aktivierungen auf demselben Computer zulässig.                                                       |
@@ -66,7 +66,7 @@ Sie können eine Liste mit allen in Anspruch genommenen Schlüsseln exportieren,
 
 Klicken Sie zum Exportieren Ihrer Schlüssel einfach ganz rechts auf der Seite „Product Keys“ auf den Link **Alle Schlüssel exportieren**.  Es wird eine XML-Datei mit dem Namen „KeysExport.xml“ erstellt, die Sie öffnen oder speichern können.  Sie müssen die Datei mit einer Anwendung öffnen, die XML-Dateien verarbeiten kann.  Sie können die Datei beispielsweise als schreibgeschützte Arbeitsmappe in Excel öffnen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)

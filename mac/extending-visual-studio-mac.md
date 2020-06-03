@@ -155,7 +155,7 @@ Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind,
 * Zielframeworks
 * Ziellaufzeit
 * VCS-Back-Ends
-* Refactoring
+* Umgestaltung
 * Ausführungshandler
 * Syntaxhervorhebung
 
@@ -193,6 +193,6 @@ Für ein bestimmtes [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.c
 > [!NOTE]
 > Wir arbeiten derzeit an der Verbesserung der Erweiterbarkeitsszenarios für Visual Studio für Mac. Wenn Sie Erweiterungen erstellen und zusätzliche Hilfe oder Informationen benötigen bzw. Feedback geben möchten, füllen Sie bitte das [Visual Studio for Mac Extension Authoring](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)-Formular (Erstellung von Erweiterungen für Visual Studio für Mac) aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Entwickeln von Visual Studio-Erweiterungen (unter Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

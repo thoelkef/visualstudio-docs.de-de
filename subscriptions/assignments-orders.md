@@ -37,7 +37,7 @@ Möglicherweise weisen Sie Abonnements monatlich über Programme wie „Open Lic
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise, MPSA und ausgewählte Vereinbarungen
 Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihnen Flexibilität im Hinblick auf die Verwendung und Lizenzierung von Visual Studio-Software über einen gewissen Zeitraum hinweg. Visual Studio-Administratoren müssen eine jährliche True Up-Bestellung aufgeben, um die Anzahl ihrer Softwarelizenzen entsprechend dem maximalen Nutzungswert aufzustocken, der für die Dauer der Vereinbarung festgelegt wurde.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)
@@ -48,5 +48,5 @@ Weitere Informationen zu den Aufgaben von Administratoren:
 - [Administratoraufgaben](admin-responsibilities.md)
 - [Inventory of pre-production environment (Inventur der Präproduktionsumgebung)](admin-inventory.md)
 - [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
-- Verwenden des Berichts [Maximum Usage](maximum-usage.md) (Maximale Auslastung) zum Nachverfolgen von Kaufverpflichtungen
+- Verwenden der [maximalen Auslastung](maximum-usage.md) zum Nachverfolgen von Kaufverpflichtungen
 
