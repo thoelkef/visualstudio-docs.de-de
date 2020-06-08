@@ -92,7 +92,7 @@ Wenn Sie die Fragen und Antworten mit anderen Entwicklern teilen möchten, erwä
 
 * [MSDN-Foren](https://social.msdn.microsoft.com/Forums/home)
 * Visual Studio auf [Reddit](https://www.reddit.com/r/VisualStudio/)
-* [Stapelüberlauf](https://stackoverflow.com/search?q=visual+studio+-code)
+* [StackOverflow](https://stackoverflow.com/search?q=visual+studio+-code)
 
 Sie können auch Code anderer Entwickler anzeigen und Ihre eigenen Beispiele auf der Seite [Codebeispiele durchsuchen](/samples/browse/) freigeben.
 
