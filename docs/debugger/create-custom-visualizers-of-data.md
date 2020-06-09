@@ -1,6 +1,6 @@
 ---
 title: Erstellen von benutzerdefinierten Datenschnellansichten | Microsoft-Dokumentation
-ms.date: 11/07/2018
+ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564722"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184548"
 ---
 # <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Datenschnellansichten
  Eine *Schnellansicht* ist Teil der Benutzeroberfläche des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debuggers, in der eine Variable oder ein Objekt auf eine für den jeweiligen Datentyp geeignete Weise angezeigt wird. Eine HTML-Schnellansicht interpretiert beispielsweise eine HTML-Zeichenfolge und zeigt das Ergebnis so an, wie es in einem Browserfenster angezeigt würde. Eine Bitmap-Schnellansicht interpretiert eine Bitmapstruktur und zeigt die zugehörige Grafik an. In einigen Schnellansichten können Sie die Daten nicht nur anzeigen, sondern auch bearbeiten.
@@ -33,7 +33,7 @@ ms.locfileid: "62564722"
 
 Weitere Schnellansichten können von Microsoft, Drittanbietern und aus der Community heruntergeladen werden. Sie können auch eigene Schnellansichten schreiben und sie im [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debugger installieren.
 
-Im Debugger wird eine Schnellansicht durch das Lupensymbol ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol für Schnellansichten") dargestellt. Das Symbol steht in einem **Datentipp**, im **Überwachungsfenster** des Debuggers oder im Dialogfeld **Schnellüberwachung** zur Verfügung. Wählen Sie dieses Symbol und dann die geeignete Schnellansicht für das entsprechende Objekt aus.
+Im Debugger wird eine Schnellansicht durch das Lupensymbol ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol der Schnellansicht") dargestellt. Das Symbol steht in einem **Datentipp**, im **Überwachungsfenster** des Debuggers oder im Dialogfeld **Schnellüberwachung** zur Verfügung. Wählen Sie dieses Symbol und dann die geeignete Schnellansicht für das entsprechende Objekt aus.
 
 ## <a name="write-custom-visualizers"></a>Schreiben von benutzerdefinierten Schnellansichten
 
@@ -72,11 +72,11 @@ Zum Erstellen der Benutzeroberfläche der Schnellansicht auf Debuggerseite erste
 
 4. Wenden Sie <xref:System.Diagnostics.DebuggerVisualizerAttribute> an, und lassen Sie es in der Schnellansicht anzeigen (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
 
-### <a name="to-create-the-debuggee-side"></a>So erstellen Sie die zu debuggende Seite
+### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>So erstellen Sie die Schnellansichtobjektquelle für die zu debuggende Seite
 
-Mit dem <xref:System.Diagnostics.DebuggerVisualizerAttribute> geben Sie Code für die zu debuggende Seite an.
+Sie geben den zu visualisierenden Typ (die Objektquelle der zu debuggenden Seite) an, indem Sie das <xref:System.Diagnostics.DebuggerVisualizerAttribute>-Element im debuggerseitigen Code verwenden.
 
-1. Übernehmen Sie <xref:System.Diagnostics.DebuggerVisualizerAttribute>, indem Sie diesem Attribut eine Schnellansicht (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) und eine Objektquelle (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) zuweisen. Wenn Sie die Objektquelle weglassen, wird eine Standardobjektquelle für die Schnellansicht verwendet.
+1. Bearbeiten Sie im debuggerseitigen Code das <xref:System.Diagnostics.DebuggerVisualizerAttribute>-Element, indem Sie die Objektquelle (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) bereitstellen. Die `Target`-Eigenschaft legt die Objektquelle fest. Wenn Sie die Objektquelle weglassen, wird eine Standardobjektquelle für die Schnellansicht verwendet.
 
 1. Damit Sie in der Schnellansicht Datenobjekte sowohl anzeigen als auch bearbeiten können, überschreiben Sie die `TransferData`- oder `CreateReplacementObject`-Methode von <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 

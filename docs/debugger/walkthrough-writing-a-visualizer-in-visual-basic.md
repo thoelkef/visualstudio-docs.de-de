@@ -1,7 +1,7 @@
 ---
 title: Schreiben einer Schnellansicht in Visual Basic | Microsoft-Dokumentation
 ms.custom: seodec18
-ms.date: 04/12/2019
+ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542606"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180531"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
+
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Nach dem Muster dieser einfachen Zeichenfolgen-Schnellansicht können Sie auch Schnellansichten für andere Datentypen erstellen, die Sie in Ihren Projekten benötigen.
 
 > [!NOTE]
@@ -62,7 +63,7 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 4. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Durchsuchen** den Eintrag **Durchsuchen** aus, und suchen Sie nach Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    Sie finden die DLL im Unterverzeichnis *\<Visual Studio-Installationsverzeichnis>\Common7\IDE\PublicAssemblies* des Installationsverzeichnisses von Visual Studio.
+    Sie finden die DLL im Unterverzeichnis *\<Visual Studio Install Directory>\Common7\IDE\PublicAssemblies* des Installationsverzeichnisses von Visual Studio.
 
 5. Klicken Sie auf **OK**.
 
@@ -138,7 +139,9 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 ## <a name="add-the-necessary-attribute"></a>Hinzufügen des erforderlichen Attributs
  Damit sind wir mit dem Code für den Debugger fertig. Ein Schritt fehlt allerdings noch: Das Attribut, das der zu debuggenden Seite mitteilt, welche Auflistung von Klassen die Schnellansicht enthält.
 
-### <a name="to-add-the-debugee-side-code"></a>So fügen Sie den Code für die zu debuggende Seite hinzu
+### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>So fügen Sie den Typ hinzu, der für den zu debuggenden Code visualisiert werden soll
+
+Geben Sie den zu visualisierenden Typ (die Objektquelle) für die zu debuggende Komponente mit dem <xref:System.Diagnostics.DebuggerVisualizerAttribute>-Attribut im debuggerseitigen Code an. Die `Target`-Eigenschaft legt den zu visualisierenden Typ fest.
 
 1. Fügen Sie DebuggerSide.vb den folgenden Attributcode hinzu, und zwar nach den `Imports`-Anweisungen und vor `namespace MyFirstVisualizer`:
 
@@ -206,7 +209,7 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in TestConsole.vb automatisch an den neuen Dateinamen an.
 
-3. Fügen Sie in TestConsole.vb die folgende `Imports`-Anweisung hinzu:
+3. Fügen Sie in „TestConsole. vb“ Sie die folgende `Imports`-Anweisung hinzu:
 
    ```vb
    Imports MyFirstVisualizer

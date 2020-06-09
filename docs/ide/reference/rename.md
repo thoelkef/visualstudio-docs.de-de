@@ -1,6 +1,6 @@
 ---
 title: Refactoring des Umbenennens
-ms.date: 01/26/2018
+ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565460"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182955"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring des Umbenennens eines Codesymbols
 
@@ -27,11 +27,11 @@ Dieses Refactoring gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie Bezeichner für Codesymbole (z.B. Felder, lokale Variablen, Methoden, Namespaces, Eigenschaften und Typen) umbenennen.
+**Beschreibung:** Hiermit können Sie Bezeichner für Codesymbole (z. B. Felder, lokale Variablen, Methoden, Namespaces, Eigenschaften und Typen) umbenennen.
 
-**Hintergrund**: Sie möchten ein Element sicher umbenennen, ohne alle Instanzen suchen und den neuen Namen kopieren und einfügen zu müssen.
+**Hintergrund:** Sie möchten ein Element sicher umbenennen, ohne alle Instanzen suchen und den neuen Namen kopieren und einfügen zu müssen.
 
-**Vorteile**: Das Kopieren und Einfügen des neuen Namens in ein ganzes Projekt würde aller Wahrscheinlichkeit nach zu Fehlern führen. Dieses Refactoringtool führt die Umbenennungsaktion ordnungsgemäß durch.
+**Vorteile**: Das Kopieren und Einfügen des neuen Namens in ein ganzes Projekt würde wahrscheinlich zu Fehlern führen. Dieses Refactoringtool führt die Umbenennungsaktion ordnungsgemäß durch.
 
 ## <a name="how-to"></a>Vorgehensweise
 
@@ -45,7 +45,7 @@ Dieses Refactoring gilt für:
 
        ![Hervorgehobener Code – Visual Basic](media/rename-highlight-vb.png)
 
-2. Führen Sie dann eine der folgenden Aktionen aus:
+2. Verwenden Sie nun die Tastatur oder Maus wie folgt:
 
    - **Tastatur**
       - Drücken Sie **STRG+R** und dann **STRG+R**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
@@ -68,9 +68,9 @@ Dieses Refactoring gilt für:
 
 4. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-- Wenn Sie ab Visual Studio 2019 Version 16.3 einen Typ umbenennen, der mit dem Namen der Datei übereinstimmt, in der er sich befindet, wird ein Kontrollkästchen angezeigt, mit dem Sie die Datei zur gleichen Zeit umbenennen können. Diese Option wird angezeigt, wenn Sie eine Klasse, eine Schnittstelle oder eine Enumeration umbenennen. Diese Option wird für partielle Typen mit mehreren Definitionen nicht unterstützt.
+- Wenn Sie ab Visual Studio 2019 Version 16.3 einen Typ umbenennen, der mit dem Namen der Datei übereinstimmt, in der er sich befindet, wird ein Kontrollkästchen angezeigt, mit dem Sie die Datei zur gleichen Zeit umbenennen können. Diese Option wird angezeigt, wenn Sie eine Klasse, eine Schnittstelle oder eine Enumeration umbenennen. Diese Option wird für partielle Typen mit mehreren Definitionen nicht unterstützt.
 
    ![Umbenennen einer Animation mit Datei: C#](media/rename-with-file-animated-cs.gif)
 
@@ -78,9 +78,11 @@ Dieses Refactoring gilt für:
 
    ![Umbenennungskonflikt](media/rename-conflict-cs.png)
 
-- Eine andere Möglichkeit zum Umbenennen eines Symbols besteht darin, den Namen des Symbols im Editor zu ändern. Wenn sich der Cursor auf dem Symbolnamen befindet, drücken Sie **STRG**+ **.** Alternativ dazu können Sie auch einfach das Menü mit dem Glühbirnensymbol erweitern, und **Umbenennen von \<alter Name> zu \<neuer Name>** auswählen.
+- Eine andere Möglichkeit zum Umbenennen eines Symbols besteht darin, den Namen des Symbols im Editor zu ändern. Wenn sich der Cursor auf dem Symbolnamen befindet, drücken Sie **STRG**+ **.** Alternativ dazu können Sie auch einfach das Menü mit dem Glühbirnensymbol erweitern und **Umbenennen von \<old name> in \<new name>** auswählen.
 
-## <a name="see-also"></a>Weitere Informationen
+   ![Umbenennen im Editor](media/rename-with-editor-cs.png)
+
+## <a name="see-also"></a>Siehe auch
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

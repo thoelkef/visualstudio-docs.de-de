@@ -7,12 +7,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597138"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184028"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualisieren einer vorhandenen Anwendung für MSBuild 15
 
@@ -85,7 +85,33 @@ Legen Sie keine `ExcludeAssets=runtime` für das Microsoft.Build.Locator-Paket f
 
 ### <a name="register-instance-before-calling-msbuild"></a>Registrieren der Instanz vor dem Aufrufen von MSBuild
 
-Fügen Sie einen Aufruf der Locator-API hinzu, bevor Sie eine Methode aufrufen, die MSBuild verwendet.
+> [!IMPORTANT]
+> Sie können in der Methode, die MSBuildLocator aufruft, auf keine MSBuild-Typen (aus dem Namespace `Microsoft.Build`) verweisen. Beispielsweise können Sie nicht so vorgehen:
+>
+> ```csharp
+> void ThisWillFail()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     Project p = new Project(SomePath); // Could be any MSBuild type
+>     // Code that uses the MSBuild type
+> }
+> ```
+>
+> Sie müssen stattdessen folgendermaßen vorgehen:
+>
+> ```csharp
+> void MethodThatDoesNotDirectlyCallMSBuild()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     MethodThatCallsMSBuild();
+> }
+> 
+> void MethodThatCallsMSBuild()
+> {
+>     Project p = new Project(SomePath);
+>     // Code that uses the MSBuild type
+> }
+> ```
 
 Die einfachste Möglichkeit, den Aufruf der Locator-API hinzuzufügen, ist, einen Aufruf
 

@@ -1,16 +1,16 @@
 ---
 title: Einrichten eines Git-Repositorys
 description: Verwenden von Git und Subversion in Visual Studio für Mac
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 02/15/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e9dc8728a3115368f1772287362b2a9f21a4309
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70107891"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173342"
 ---
 # <a name="set-up-a-git-repository"></a>Einrichten eines Git-Repositorys
 
@@ -46,13 +46,13 @@ Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_
 
 1. Wählen Sie aus dem Projektmappenpad in Visual Studio für Mac den Namen der Projektmappe aus.
 
-2. Klicken Sie in der Menüleiste auf **Versionskontrolle > Publish in Version Control** (In Versionskontrolle veröffentlichen), damit das Dialogfeld **Repository auswählen** angezeigt wird.
+2. Klicken Sie in der Menüleiste auf **Versionskontrolle > In Versionskontrolle veröffentlichen**, damit das Dialogfeld **Repository klonen** angezeigt wird:
 
-    ![Beginnen des Auscheckens in Visual Studio für Mac](media/version-control-git4-sml.png)
+    ![Beginnen des Auscheckens in Visual Studio für Mac](media/version-control-git4.png)
 
     Falls dieses Menüelement im Menü abgeblendet ist, stellen Sie sicher, dass Sie den Namen der Projektmappe ausgewählt haben.
 
-3. Wählen Sie die Registerkarte **Registered Repositories** (Registrierte Repositorys), und klicken Sie auf die Schaltfläche **Add** (Hinzufügen):
+3. Wählen Sie die Registerkarte **Aus registrierten auswählen**, und klicken Sie auf die Schaltfläche **Hinzufügen**:
 
     ![](media/version-control-git5.png)
 
@@ -81,7 +81,7 @@ Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_
 
     ![Versionskontrolle](media/version-control-git10.png)
 
-10. Wenn Sie zusätzliche Änderungen vornehmen, klicken Sie auf **Änderungen mit Push übertragen**, um die Änderungen per Push an das **Remoterepository** zu übertragen. Dadurch wird es allen entsprechenden Benutzern ermöglicht, diese auf github.com anzusehen:
+10. Nachdem Sie mit dem Vornehmen weiterer Änderungen begonnen haben, verwenden Sie zuerst das Menü **Versionskontrolle > Überprüfen und committen**, um die Statusansicht zu öffnen. Nachdem Sie Änderungen ausgewählt und committet haben, wählen Sie **Pushen** aus, um die Änderungen in das Remoterepository zu pushen. Dadurch wird es allen entsprechenden Benutzern ermöglicht, diese auf github.com anzusehen:
 
     ![Übertragen von Änderungen mit einem Push an ein Remoterepository](media/version-control-git11.png)
 
@@ -96,7 +96,7 @@ Führen Sie die folgenden Schritte aus, um Ihr neues lokales Repository auf ein 
 > [!NOTE]
 > Wenn Sie noch kein GitHub-Repository erstellt haben, lesen Sie sich den Abschnitt [Erstellen eines Remoterepository auf GitHub](#creating-a-remote-repo-on-github) durch.
 
-1. Erstellen Sie Ihren ersten Commit, indem Sie in der Menüleiste zu **Versionskontrolle > Review Solution and Commit** (Projektmappe überprüfen und committen) navigieren.
+1. Erstellen Sie Ihren ersten Commit, indem Sie in der Menüleiste zu **Versionskontrolle > Überprüfen und committen** navigieren.
 
 2. Klicken Sie auf der Registerkarte „Status“ oben links auf **Committen**.
 
@@ -127,23 +127,23 @@ Dann pusht Visual Studio für Mac die Änderungen auf das GitHub-Remoterepositor
 
 ![Bestätigung eines erfolgreichen Pushvorgangs](media/version-control-git11.png)
 
-## <a name="check-out-an-existing-repository"></a>Auschecken eines vorhandenen Repositorys
+## <a name="clone-an-existing-repository"></a>Klonen eines vorhandenen Repositorys
 
-Es ist wahrscheinlich, dass Sie mit einem GitHub-Repository arbeiten müssen, dass nur auf dem Remotecomputer und nicht auf dem lokalen Computer vorhanden ist. Mit Visual Studio für Mac können Sie dieses Repository schnell auschecken. Führen Sie die unten stehenden Schritte durch, um das Repository auf Ihrem Computer zu klonen:
+Es ist wahrscheinlich, dass Sie mit einem GitHub-Repository arbeiten müssen, dass nur auf dem Remotecomputer und nicht auf dem lokalen Computer vorhanden ist. Mit Visual Studio für Mac können Sie dieses Repository schnell klonen. Führen Sie die unten stehenden Schritte durch, um das Repository auf Ihrem Computer zu klonen:
 
-1. Klicken Sie in der Menüleiste auf **Versionskontrolle > Check-Out**:
+1. Klicken Sie in der Menüleiste auf **Versionskontrolle > Repository klonen**:
 
-2. Die Registerkarte **Connect to Repository** (Mit Repository verbinden) wird geöffnet:
+2. Die Registerkarte **Mit URL verbinden** wird angezeigt:
 
-    ![Registerkarte „Mit Repository verbinden“ mit ausgefüllten Angaben](media/version-control-git13.png)
+    ![Registerkarte „Mit Repository verbinden“ mit eingegebenen Details](media/version-control-git13.png)
 
 3. Klicken Sie auf der GitHub-Seite des Remoterepositorys auf **Clone or Download** (Klonen oder Herunterladen), und kopieren die dort angegebene URL:
 
     ![angegebene GitHub-URL](media/version-control-git14.png)
 
-4. Ersetzen Sie den Text im Eingabefeld **URL** auf der Registerkarte **Mit Repository verbinden**. Dadurch wird ein Großteil der anderen Felder auf dieser Registerkarte wie auf dem Bild in Schritt 2 ausgefüllt.
+4. Ersetzen Sie den Text im Eingabefeld **URL** auf der Registerkarte **Mit URL verbinden**. Dadurch wird ein Großteil der anderen Felder auf dieser Registerkarte wie auf dem Bild in Schritt 2 ausgefüllt.
 
-5. Geben Sie das Verzeichnis ein, in das das Repository geklont werden soll, und klicken Sie auf **Check-Out**.
+5. Geben Sie das Verzeichnis ein, in das das Repository geklont werden soll, und klicken Sie auf **Klonen**.
 
 > [!NOTE]
 > Möglicherweise treten Probleme auf, wenn das Repository größer als 4 GB ist.

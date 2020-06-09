@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911595"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182871"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
@@ -30,12 +30,36 @@ Wenn der folgende Fehler im Fenster **Ausgabe** während des Anfügeversuchs ang
 
 ### <a name="401-unauthorized"></a>401 – Nicht autorisiert
 
-Dieser Fehler deutet darauf hin, dass der von Visual Studio für Azure ausgegebene REST-Aufruf ungültige Anmeldeinformationen verwendet. Diese Fehlermeldung kann von einem bekannten Fehler des Azure Active Directory-EasyOAuth-Moduls verursacht werden.
+Dieser Fehler deutet darauf hin, dass der von Visual Studio für Azure ausgegebene REST-Aufruf ungültige Anmeldeinformationen verwendet. 
 
 Führen Sie diese Schritte aus:
 
 * Überprüfen Sie, ob Ihr Visual Studio-Personalisierungskonto Berechtigungen für das Azure-Abonnement und die Ressourcen hat, an die Sie anfügen möchten. Eine schnelle Möglichkeit, dies bestätigen zu können, ist es, zu überprüfen, ob die Ressource im Dialogfeld über **Debuggen** > **Momentaufnahmedebugger anfügen…**  > **Azure-Ressource** > **Vorhandene auswählen** oder im Cloud-Explorer verfügbar ist.
 * Wenn dieser Fehler weiterhin besteht, verwenden Sie einen der Kanäle für Feedback, die zu Beginn dieses Artikels beschrieben wurden.
+
+Wenn Sie Authentifizierung/Autorisierung (EasyAuth) für Ihren App Service aktiviert haben, tritt möglicherweise Fehler 401 mit LaunchAgentAsync in der Fehlermeldung der Aufrufliste auf. Stellen Sie sicher, dass **Die auszuführende Aktion, wenn die Anforderung nicht authentifiziert ist** im Azure-Portal auf **Anonyme Anforderungen erlauben (keine Aktion)** festgelegt ist, und stellen Sie stattdessen die Datei „authorization.json“ in „D:\Home\sites\wwwroot“ mit folgendem Inhalt bereit. 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+Die erste Route sichert Ihre App-Domäne effektiv, ähnlich wie **Mit [IdentityProvider] anmelden**. Die zweite Route stellt den AgentLaunch-Endpunkt von SnapshotDebugger außerhalb der Authentifizierung bereit, der die vordefinierte Aktion zum Starten des SnapshotDebugger-Diagnose-Agents *nur dann* ausführt, wenn die vorinstallierte SnapshotDebugger-Siteerweiterung für Ihren App Service aktiviert ist. Weitere Informationen zur Konfiguration von „Authorization.json“ finden Sie unter [URL-Autorisierungsregeln](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
 
 ### <a name="403-forbidden"></a>(403) Unzulässig
 
@@ -54,8 +78,8 @@ Dieser Fehler weist darauf hin, dass die Website auf dem Server nicht gefunden w
 Führen Sie diese Schritte aus:
 
 * Vergewissern Sie sich, dass Sie eine Website bereitgestellt haben und sie auf der App Service-Ressource ausführen, an die Sie anfügen.
-* Überprüfen Sie, ob die Website unter https://\<Ressource\>.azurewebsites.net verfügbar ist.
-* Vergewissern Sie sich, dass Ihre benutzerdefinierte Webanwendung bei ordnungsgemäßer Ausführung keinen 404-Statuscode zurückgibt, wenn auf https://\<Ressource\>.azurewebsites.net zugegriffen wird.
+* Überprüfen Sie, ob die Website unter https://\<resource\>.azurewebsites.net verfügbar ist.
+* Vergewissern Sie sich, dass Ihre benutzerdefinierte Webanwendung bei ordnungsgemäßer Ausführung keinen 404-Statuscode zurückgibt, wenn auf https://\<resource\>.azurewebsites.net zugegriffen wird.
 * Wenn dieser Fehler weiterhin besteht, verwenden Sie einen der Kanäle für Feedback, die zu Beginn dieses Artikels beschrieben wurden.
 
 ### <a name="406-not-acceptable"></a>406: Nicht annehmbar
@@ -64,7 +88,7 @@ Dieser Fehler weist darauf hin, dass der Server nicht auf den Typ reagieren kann
 
 Führen Sie diese Schritte aus:
 
-* Überprüfen Sie, ob die Website unter https://\<Ressource\>.azurewebsites.net verfügbar ist.
+* Vergewissern Sie sich, dass Ihre Website unter https://\<resource\>.azurewebsites.net verfügbar ist.
 * Vergewissern Sie sich, dass Ihre Website nicht auf neue Instanzen migriert wurde. Der Momentaufnahmedebugger verwendet ARRAffinity für das Weiterleiten von Anforderungen an bestimmte Instanzen, die diesen Fehler zeitweilig verursachen können.
 * Wenn dieser Fehler weiterhin besteht, verwenden Sie einen der Kanäle für Feedback, die zu Beginn dieses Artikels beschrieben wurden.
 
@@ -181,7 +205,7 @@ Agent-Protokolle können sich an folgenden Speicherorten befinden:
   - Navigieren Sie zur Kudu-Website Ihres App Service (d.h. yourappservice.**scm**.azurewebsites.net), und navigieren Sie zur Debugging-Konsole.
   - Agent-Protokolle werden im folgenden Verzeichnis gespeichert:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\.
 - VM/VMSS:
-  - Melden Sie sich bei Ihrer VM an. Agent-Protokolle werden im folgendem Verzeichnis gespeichert:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt.
+  - Melden Sie sich bei Ihrer VM an. Agent-Protokolle werden im folgendem Verzeichnis gespeichert:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - Navigieren Sie zum folgenden Verzeichnis: „/tmp/diag/AgentLogs/*“
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300852"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173725"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
 
@@ -26,26 +26,26 @@ Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, vertei
 
 Für viele gängige App-Typen können Sie Ihre App direkt über den Projektmappen-Explorer in Visual Studio bereitstellen. Einen schnellen Überblick über diese Funktion finden Sie unter [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md).
 
-![Auswählen einer Veröffentlichungsoption](../deployment/media/quickstart-publish-azure.png)
+![Auswählen einer Veröffentlichungsoption](../deployment/media/quickstart-publish-dialog.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Welche Optionen für die Veröffentlichung sind für mich geeignet?
 
 Apps können aus Visual Studio direkt auf die folgenden Ziele veröffentlicht werden:
 
-- [Azure App Service](#azure-app-service)
-- [Azure Virtual Machines](#azure-virtual-machines)
-- [Dateisystem](#file-system)
-- [Benutzerdefinierte Ziele (IIS, FTP usw.)](#custom-targets-iis-ftp), darunter alle beliebigen Webserver.
+- [Azure](#azure)
+- [Docker-Containerregistrierung](#docker-container-registry)
+- [Ordner](#folder)
+- [Benutzerdefinierte Ziele (IIS, FTP)](#Custom targets (IIS, FTP))
 
 Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffentlichungsprofil auswählen, ein vorhandenes Veröffentlichungsprofil importieren oder ein neues Veröffentlichungsprofil mit den hier beschriebenen Optionen erstellen. Einen Überblick über Veröffentlichungsoptionen in der IDE für unterschiedliche App-Typen finden Sie unter [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md).
 
-## <a name="azure-app-service"></a>Azure App Service
+## <a name="azure"></a>Azure 
 
-[Azure App Service](/azure/app-service/app-service-web-overview) und [App Service unter Linux](/azure/app-service/containers/app-service-linux-intro) ermöglichen Entwicklern, schnell und ohne die Verwaltung von Infrastruktur eine Vielzahl von skalierbaren Webanwendungen und -diensten zu erstellen.
+### <a name="azure-app-service"></a>Azure App Service
+
+[Azure App Service](/azure/app-service/app-service-web-overview) ermöglicht Entwicklern, schnell und ohne die Verwaltung von Infrastruktur skalierbare Webanwendungen und -dienste zu erstellen. Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure ausgeführt, aber diese virtuellen Maschinen werden für Sie verwaltet. Jeder App in einem App Service wird eine eindeutige „\*. azurewebsites.net“-URL zugeordnet. Alle Tarife (außer „kostenlos“) ermöglichen, dass Sie der Website benutzerdefinierte Domänennamen zuweisen.
 
 Sie bestimmen, wie viel Computingleistung dem App Service zur Verfügung stehen, indem Sie einen [Tarif oder Plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) für den enthaltenden App Service auswählen. Sie können mehrere Web-Apps (und andere App-Typen) ohne Tarifänderung den gleichen App Service nutzen lassen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-Apps gemeinsam im selben App Service hosten.
-
-Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure ausgeführt, aber diese virtuellen Maschinen werden für Sie verwaltet. Jeder App in einem App Service wird eine eindeutige „\*. azurewebsites.net“-URL zugeordnet. Alle Tarife (außer „kostenlos“) ermöglichen, dass Sie der Website benutzerdefinierte Domänennamen zuweisen.
 
 ### <a name="when-to-choose-azure-app-service"></a>Wann sollten Sie Azure App Service wählen?
 
@@ -58,7 +58,7 @@ Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure a
 
 Weitere Informationen zur Veröffentlichung in App Service finden Sie in den Schnellstarts zum [Veröffentlichen von Web-Apps in Azure App Service](quickstart-deploy-to-azure.md) und [Veröffentlichen einer ASP.NET Core-App unter Linux](quickstart-deploy-to-linux.md).
 
-## <a name="azure-virtual-machines"></a>Azure Virtual Machines
+### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
 Mit [Azure Virtual Machines (VMs)](https://azure.microsoft.com/documentation/services/virtual-machines/) können Sie eine beliebige Anzahl von Computingressourcen in der Cloud erstellen und verwalten. Indem Sie die Verantwortung für die gesamte Software und alle Updates auf den VMs übernehmen, können Sie diese wie gewünscht dem Bedarf Ihrer App anpassen. Sie können direkt über den Remotedesktop auf die VMs zugreifen, und jeder behält, sofern gewünscht, die ihm zugewiesene IP-Adresse bei.
 
@@ -75,7 +75,15 @@ Weitere Informationen finden Sie in dem [detaillierten Vergleich](https://azure.
 
 > Wenn Sie Azure Virtual Machines in Ihrem eigenen Datencenter oder anderen lokalen Computern verwenden möchten, können Sie dazu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) verwenden.
 
-## <a name="file-system"></a>Dateisystem
+## <a name="docker-container-registry"></a>Docker-Containerregistrierung
+
+Wenn Ihre Anwendung Docker verwendet, können Sie Ihre containerisierte Anwendung in einer Docker-Containerregistrierung veröffentlichen.
+
+### <a name="when-to-choose-docker-container-registry"></a>Unter welchen Umständen eine Docker-Containerregistrierung ausgewählt werden sollte
+
+- Sie möchten eine containerisierte Anwendung bereitstellen.
+
+## <a name="folder"></a>Ordner
 
 Bereitstellung im Dateisystem bedeutet einfach, dass Sie die Dateien Ihrer App in einen bestimmten Ordner auf Ihrem eigenen Computer kopieren. Dies erfolgt meistens zu Testzwecken oder zum Bereitstellen der Anwendung für die Verwendung durch eine begrenzte Anzahl von Personen, wenn auf dem Computer auch ein Server ausgeführt wird. Wird der Zielordner in einem Netzwerk freigegeben, können die Webanwendungsdateien durch das Bereitstellen im Dateisystem für andere Personen verfügbar gemacht werden, die diese dann auf bestimmten Servern bereitstellen können.
 

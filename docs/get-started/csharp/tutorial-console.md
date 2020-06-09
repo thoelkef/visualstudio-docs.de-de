@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78215432"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183287"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -241,7 +241,7 @@ Wie Sie auf dem folgenden Screenshot sehen, erhalten Sie die Zahl 0 (null) als E
 
 Gehen Sie daher wie folgt vor, um den Code für die Verarbeitung von Dezimalzahlen anzupassen.
 
-1. Drücken Sie **STRG** + **F**, um das Steuerelement **Suchen und Ersetzen** zu öffnen.
+1. Drücken Sie **STRG** + **H**, um das Steuerelement **Suchen und Ersetzen** zu öffnen.
 
 1. Ändern Sie sämtliche Instanzen der `int`-Variablen in `float`.
 
@@ -257,7 +257,7 @@ Gehen Sie daher wie folgt vor, um den Code für die Verarbeitung von Dezimalzahl
 
 Die App gibt allerdings nur Dezimalzahlen als Ergebnis zurück. Gehen Sie daher wie folgt vor, damit die App auch mit Dezimalzahlen rechnen kann.
 
-1. Verwenden Sie das Steuerelement **Suchen und Ersetzen** (**STRG** + **F**), um jede Instanz der Variablen `float` in `double` und jede Instanz der Methode `Convert.ToInt32` in `Convert.ToDouble` zu ändern.
+1. Verwenden Sie das Steuerelement **Suchen und Ersetzen** (**STRG** + **H**), um jede Instanz der Variablen `float` in `double` und jede Instanz der Methode `Convert.ToInt32` in `Convert.ToDouble` zu ändern.
 
 1. Führen Sie Ihre Rechner-App aus, und dividieren Sie **42,5** durch **119,75**.
 

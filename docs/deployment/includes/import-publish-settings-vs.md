@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f286002112667ba763419f0e3d6265dbe1942212
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143528"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173877"
 ---
 
 1. Klicken Sie auf dem Computer, auf dem das ASP.NET-Projekt in Visual Studio geöffnet ist, erst mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer und anschließend mit der linken auf **Veröffentlichen**.
@@ -17,7 +17,7 @@ ms.locfileid: "68143528"
 
 1. Navigieren Sie zum Speicherort der Datei mit Veröffentlichungseinstellungen, die Sie bereits erstellt haben.
 
-1. Navigieren Sie im Dialogfeld **Datei mit Veröffentlichungseinstellungen** zu dem Profil, das Sie bereits erstellt haben, wählen Sie es aus, und klicken Sie auf **Öffnen**.
+1. Navigieren Sie im Dialogfeld **Datei mit Veröffentlichungseinstellungen importieren** zu dem Profil, das Sie im vorherigen Abschnitt erstellt haben, wählen Sie es aus, und klicken Sie dann auf **Öffnen**.
 
     Dann beginnt Visual Studio mit dem Bereitstellungsprozess, und im Ausgabefenster werden der Fortschritt und die Ergebnisse angezeigt.
 

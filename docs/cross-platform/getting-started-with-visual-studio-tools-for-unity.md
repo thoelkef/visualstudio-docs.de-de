@@ -1,21 +1,21 @@
 ---
 title: Erste Schritte mit Visual Studio-Tools für Unity | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 05/11/2020
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: conceptdev
+author: indiesaudi
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b39de7437348a79901615e4482544c78f189d04
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306962"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184675"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
 
@@ -31,21 +31,25 @@ Stellen Sie während der Installation sicher, dass Visual Studio in der Liste de
 
 #### <a name="unity-hub"></a>Unity Hub
 
-![Installation von Unity Hub](media/vstu_unity-hub.png)
+:::moniker range="vs-2017"
+![Installation von Unity Hub](media/vs-2017/vstu-unity-hub.png)
+:::moniker-end
+:::moniker range=">=vs-2019"
+![Installation von Unity Hub](media/vs-2019/vstu-unity-hub.png)
+:::moniker-end
+
+:::moniker range="vs-2017"
 
 #### <a name="unity-download-assistant"></a>Unity-Download-Assistent
 
-![Installation mit dem Unity-Download-Assistenten](media/vstu_download-assistant.png)
+![Installation mit dem Unity-Download-Assistenten](media/vs-2017/vstu-download-assistant.png)
 
-#### <a name="check-for-updates-to-visual-studio"></a>Suchen nach Updates für Visual Studio
-
-Die Version von Visual Studio, die in der Installation von Unity enthalten ist, ist möglicherweise nicht aktuell. Es wird empfohlen, nach Updates zu suchen, damit Sie Zugriff auf die aktuellen Tools und Features haben.
-
-- [Visual Studio aktualisieren](../install/update-visual-studio.md)
+Die Version von Visual Studio, die in der Installation von Unity enthalten ist, ist möglicherweise nicht aktuell. Wenn Sie aufgefordert werden, Visual Studio 2017 zu installieren, empfiehlt es sich, eine neuere Version von Visual Studio manuell zu installieren.
+:::moniker-end
 
 ### <a name="manual-installation"></a>Manuelle Installation
 
-Wenn Sie Visual Studio 2017 bereits installiert haben, oder Sie die manuelle Installation bevorzugen, führen Sie den Visual Studio-Installer aus.
+Wenn Sie Visual Studio bereits installiert haben oder eine manuelle Installation bevorzugen, führen Sie den Visual Studio-Installer aus.
 
 1. [Laden Sie den Visual Studio-Installer herunter](../install/install-visual-studio.md), oder öffnen Sie ihn, wenn er bereits installiert ist.
 
@@ -53,9 +57,22 @@ Wenn Sie Visual Studio 2017 bereits installiert haben, oder Sie die manuelle Ins
 
 1. Scrollen Sie auf der Registerkarte **Workloads** zum Abschnitt **Mobil und Gaming**, und wählen Sie die Workload **Spieleentwicklung mit Unity** aus.
 
-    ![Unity-Workload](media/vstu_unity-workload.png)
+   :::moniker range="vs-2017"
+   ![Unity-Workload](media/vs-2017/vstu-unity-workload.png)
+   :::moniker-end
+   :::moniker range=">=vs-2019"
+   ![Unity-Workload](media/vs-2019/vstu-unity-workload.png)
+   :::moniker-end
 
 1. Klicken Sie in der unteren rechten Ecke des Installer-Fensters auf **Ändern** (sofern bereits installiert) oder **Installieren** (für neue Installationen).
+
+
+#### <a name="check-for-updates-to-visual-studio"></a>Suchen nach Updates für Visual Studio
+
+Es wird empfohlen, nach Updates innerhalb von Visual Studio zu suchen, um sicherzustellen, dass Sie Zugriff auf die aktuellen Tools und Features haben. Dadurch wird das Unity-Projekt nicht fehlerhaft.
+
+- [Visual Studio aktualisieren](../install/update-visual-studio.md)
+
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>Konfigurieren von Unity für die Verwendung mit Visual Studio
 
@@ -63,17 +80,33 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
 
 1. Wählen Sie im Menü **Bearbeiten** die Option **Einstellungen...** aus.
 
-   ![Auswählen von Einstellungen](media/vstu_unity-preferences.png)
+   :::moniker range="vs-2017"
+   ![Auswählen von Einstellungen](media/vs-2017/vstu-unity-preferences.png)
+   :::moniker-end
+   :::moniker range=">=vs-2019"
+   ![Auswählen von Einstellungen](media/vs-2019/vstu-unity-preferences.png)
+   :::moniker-end
 
 2. Klicken Sie im Dialogfeld "Einstellungen" auf die Registerkarte **Externe Tools**.
 
 3. Wählen Sie in der Dropdownliste **Externer Skript-Editor** Ihre gewünschte Version von Visual Studio aus, falls diese aufgelistet ist, oder andernfalls **Durchsuchen...**
 
-   ![Auswählen von Visual Studio](media/vstu_unity-external-tools.png)
+   :::moniker range="vs-2017"
+   ![Auswählen von Visual Studio](media/vs-2017/vstu-unity-external-tools.png)
+   :::moniker-end
+   :::moniker range=">=vs-2019"
+   ![Auswählen von Visual Studio](media/vs-2019/vstu-unity-external-tools.png)
+   :::moniker-end
+
 
 4. Navigieren Sie bei Auswahl von **Durchsuchen...** zum Verzeichnis **Common7/IDE** in Ihrem Visual Studio-Installationsverzeichnis, und wählen Sie **devenv.exe** aus. Klicken Sie dann auf **Öffnen**.
 
-   ![Auswählen von „Öffnen“](media/vstu_browse-for-application.png)
+   :::moniker range="vs-2017"
+   ![Auswählen von „Öffnen“](media/vs-2017/vstu-browse-for-application.png)
+   :::moniker-end
+   :::moniker range=">=vs-2019"
+   ![Auswählen von „Öffnen“](media/vs-2019/vstu-browse-for-application.png)
+   :::moniker-end
 
 5. Sobald Visual Studio in der Liste **Externer Skript-Editor** ausgewählt ist, überprüfen Sie, ob das Kontrollkästchen **Editoranhängen** aktiviert ist.
 
@@ -81,7 +114,7 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
 
 ## <a name="support-for-older-versions"></a>Unterstützung älterer Versionen
 
- Laden Sie Visual Studio-Tools für Unity aus dem Visual Studio Marketplace herunter, und installieren Sie sie. Sie müssen das richtige Paket für Ihre Version von Visual Studio installieren.
+Laden Sie Visual Studio-Tools für Unity aus dem Visual Studio Marketplace herunter, und installieren Sie sie. Sie müssen das richtige Paket für Ihre Version von Visual Studio installieren.
 
 - Für Visual Studio 2015 Community, Visual Studio 2015 Professional oder Visual Studio 2015 Enterprise:
 
@@ -89,7 +122,8 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
 
 > [!NOTE]
 > Visual Studio-Tools für Unity setzt Unity 5.2 und höher voraus sowie eine Version von Visual Studio, die Erweiterungen unterstützt (z.B. Visual Studio Community, Professional, Premium oder Enterprise). Überprüfen Sie, ob Visual Studio-Tools für Unity in Ihrer Installation von Unity aktiviert sind, indem Sie im **Hilfemenü** die Option **Informationen zu Unity** auswählen und unten links im Dialogfeld nach dem Text „Microsoft Visual Studio-Tools für Unity aktiviert“ suchen.
-> ![Informationen zu Unity](media/vstu_about-unity.png)
+> ![Informationen zu Unity](media/vs-2019/vstu-about-unity.png)
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

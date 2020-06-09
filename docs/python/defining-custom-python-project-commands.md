@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aee42648eb4a2de3611d20fc0ca83ff898ad1fa9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957668"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183079"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definieren von benutzerdefinierten Befehlen für Python-Projekte
 
@@ -36,15 +36,15 @@ Jeder benutzerdefinierte Befehl kann auf folgendes verweisen: Eine Python-Datei,
 > [!Tip]
 > Wenn Sie Änderungen an einer Projektdatei in einem Text-Editor vornehmen, müssen Sie das Projekt in Visual Studio erneut laden, damit diese Änderungen angewendet werden. Zum Beispiel müssen Sie ein Projekt erneut laden, nachdem Sie die Definitionen für benutzerdefinierte Befehle hinzugefügt haben, damit diese im Kontextmenü des Projekts angezeigt werden.
 >
-> Wie Sie vermutlich wissen, bietet Visual Studio die Möglichkeit, Projektdateien direkt zu bearbeiten. Klicken Sie zunächst mit der rechten Maustaste auf die Projektdatei, und wählen Sie **Projekt entladen** aus, führen Sie den Rechtsklick dann ein weiteres mal aus, und wählen Sie **Bearbeiten \<Projektname>** aus, um das Projekt im Visual Studio-Editor zu öffnen. Nehmen Sie dann Ihre Änderungen vor und speichern diese, klicken Sie ein weiteres Mal mit der rechten Maustaste auf das Projekt und wählen **Projekt neu laden** aus. Dann werden Sie dazu aufgefordert, das Schließen der Projektdatei im Editor zu bestätigen.
+> Wie Sie vermutlich wissen, bietet Visual Studio die Möglichkeit, Projektdateien direkt zu bearbeiten. Klicken Sie zunächst mit der rechten Maustaste auf die Projektdatei, und wählen Sie **Projekt entladen** aus, klicken Sie erneut mit der rechten Maustaste, und wählen Sie **Bearbeiten\<project-name>** aus, um das Projekt im Visual Studio-Editor zu öffnen. Nehmen Sie dann Ihre Änderungen vor und speichern diese, klicken Sie ein weiteres Mal mit der rechten Maustaste auf das Projekt und wählen **Projekt neu laden** aus. Dann werden Sie dazu aufgefordert, das Schließen der Projektdatei im Editor zu bestätigen.
 >
-> Beim Entwickeln eines benutzerdefinierten Befehls wird das viele Klicken jedoch mühsam. Laden Sie das Projekt in Visual Studio, und öffnen Sie die *.pyproj*-Datei in einem separatem Editor (z.B. eine weitere Instanz von Visual Studio, Visual Studio Code, Notepad, usw.), um einen effizienteren Workflow zu ermöglichen. Wenn Sie im Editor Änderungen speichern und zu Visual Studio wechseln, erkennt Visual Studio, dass Änderungen vorgenommen wurden, und fragt Sie, ob das Projekt neu geladen werden soll (**Das Projekt \<Projektname> wurde außerhalb der Umgebung geändert.** ). Wählen Sie **Erneut laden** aus, und Ihre Änderungen werden in einem Schritt sofort angewendet.
+> Beim Entwickeln eines benutzerdefinierten Befehls wird das viele Klicken jedoch mühsam. Laden Sie das Projekt in Visual Studio, und öffnen Sie die *.pyproj*-Datei in einem separatem Editor (z.B. eine weitere Instanz von Visual Studio, Visual Studio Code, Notepad, usw.), um einen effizienteren Workflow zu ermöglichen. Wenn Sie im Editor Änderungen speichern und zu Visual Studio wechseln, erkennt Visual Studio, dass Änderungen vorgenommen wurden, und fragt Sie, ob das Projekt neu geladen werden soll (**Das Projekt \<name> wurde außerhalb der Umgebung geändert.** ). Wählen Sie **Erneut laden** aus, und Ihre Änderungen werden in einem Schritt sofort angewendet.
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>Exemplarische Vorgehensweise: Hinzufügen eines Befehls zu einer Projektdatei
 
 Dieser Abschnitt zeigt ein einfaches Beispiel, in dem die Startdatei eines Projekts mit *python.exe* direkt ausgeführt wird, damit Sie sich mit benutzerdefinierten Befehlen vertraut machen können. (So ein Befehl entspricht der Verwendung von **Debuggen** > **Starten ohne Debugging**.)
 
-1. Erstellen Sie ein neues Projekt namens „Python-CustomCommands“ mithilfe der Vorlage **Python-Anwendung**. (Falls Sie mit diesem Vorgang noch nicht vertraut sind, finden Sie Anweisungen dazu unter [Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage](quickstart-02-python-in-visual-studio-project-from-template.md).)
+1. Erstellen Sie ein neues Projekt namens „Python-CustomCommands“ mithilfe der Vorlage **Python-Anwendung**. (Siehe [Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage](quickstart-02-python-in-visual-studio-project-from-template.md), falls Sie mit diesem Vorgang noch nicht vertraut sind.)
 
 1. Fügen Sie in *Python_CustomCommands.py* den Code `print("Hello custom commands")` hinzu.
 
@@ -133,7 +133,7 @@ Verwenden Sie zum Verweisen auf Projekteigenschaften oder Umgebungsvariablen in 
 
 | Attribut | Erforderlich | Beschreibung |
 | --- | --- | --- |
-| Name | Ja | Der Bezeichner für den Befehl im Visual Studio-Projekt. Dieser Name muss der Eigenschaftengruppe `<PythonCommands>` hinzugefügt werden, damit der Befehl im Python-Untermenü angezeigt wird. |
+| name | Ja | Der Bezeichner für den Befehl im Visual Studio-Projekt. Dieser Name muss der Eigenschaftengruppe `<PythonCommands>` hinzugefügt werden, damit der Befehl im Python-Untermenü angezeigt wird. |
 | Bezeichnung | Ja | Der Anzeigename für die Benutzeroberfläche der im Python-Untermenü angezeigt wird. |
 | Rückgabe | Ja | Muss `@(Commands)` enthalten, damit „Target“ als Befehl identifiziert wird. |
 
@@ -143,14 +143,14 @@ Alle Attributwerte beachten die Groß-/Kleinschreibung.
 
 | Attribut | Erforderlich | Beschreibung |
 | --- | --- | --- |
-| TargetType | Ja | Gibt an, was das Attribut „Target“ enthält , und wie es dem Attribut „Arguments“ verwendet wird:<ul><li>**executable**: Führt die ausführbare Datei aus, die in „Target“ angegeben ist, und fügt den Wert an „Arguments“ an, als ob er direkt in die Befehlszeile eingegeben worden wäre. Der Wert darf nur einen Programmnamen ohne Argumente enthalten.</li><li>**script**: Führt *python.exe* mit dem Dateinamen in „Target“ aus, gefolgt von dem Wert in „Arguments“.</li><li>**module**: Führt `python -m` gefolgt von dem Modulnamen in Target und dem Wert in „Arguments“ aus.</li><li>**code**: Führt den in „Target“ enthaltenen Inlinecode aus. Der Wert „Arguments“ wird ignoriert.</li><li>**PIP**: Führt `pip` mit dem in „Target“ enthaltenen Befehl gefolgt von „Arguments“ aus. Wenn „ExecuteIn“ jedoch auf „output“ festgelegt ist, geht PIP von einem `install`-Befehl aus und nutzt „Target“ als den Paketnamen.</li></ul> |
+| TargetType | Ja | Gibt an, was das Attribut „Target“ enthält , und wie es dem Attribut „Arguments“ verwendet wird:<ul><li>**executable:** Führt die ausführbare Datei aus, die in „Target“ angegeben ist, und fügt den Wert an „Arguments“ an, als ob er direkt in die Befehlszeile eingegeben worden wäre. Der Wert darf nur einen Programmnamen ohne Argumente enthalten.</li><li>**script:** Führt *python.exe* mit dem Dateinamen in „Target“ aus, gefolgt von dem Wert in „Arguments“.</li><li>**module:** Führt `python -m` gefolgt von dem Modulnamen in „Target“ und dem Wert in „Arguments“ aus.</li><li>**code:** Führt den in „Target“ enthaltenen Inlinecode aus. Der Wert „Arguments“ wird ignoriert.</li><li>**pip:** Führt `pip` mit dem in „Target“ enthaltenen Befehl gefolgt von „Arguments“ aus. Wenn „ExecuteIn“ jedoch auf „output“ festgelegt ist, geht pip von einem `install`-Befehl aus und nutzt „Target“ als den Paketnamen.</li></ul> |
 | Target | Ja | Der Dateiname, Modulname, Code oder PIP-Befehl, der je nach TargetType genutzt wird. |
 | Argumente | Optional | Gibt eine Zeichenfolge der Argumente (sofern vorhanden) an, die an „Target“ übergeben werden. Beachten Sie: Wenn TargetType `script` entspricht, werden die Argumente an das Python-Programm übergeben und nicht an *python.exe*. Wird beim TargetType `code` ignoriert. |
-| ExecuteIn | Ja | Gibt die Umgebung an, in der die Anwendung ausgeführt wird:<ul><li>**console**: (Standard) Führt „Target“ und die Argumente aus, als würden sie direkt in die Befehlszeile eingegeben werden. Während „Target“ ausgeführt wird, wird ein Befehlsfenster angezeigt, das dann automatisch geschlossen wird.</li><li>**consolepause**: Entspricht „console“, wartet mit dem Schließen des Befehlsfenster jedoch, bis Sie eine Taste drücken.</li><li>**output**: Führt „Target“ aus und zeigt die Ergebnisse im **Ausgabefenster** in Visual Studio an. Wenn der TargetType „PIP“ ist, verwendet Visual Studio „Target“ als den Paketnamen und fügt „Arguments“ an.</li><li>**REPL**: Führt „Target“ im [interaktiven Python-Fenster](python-interactive-repl-in-visual-studio.md) aus. Der optionale Anzeigename wird als Titel des Fensters verwendet.</li><li>**none**: Verhält sich wie „console“.</li></ul>|
+| ExecuteIn | Ja | Gibt die Umgebung an, in der die Anwendung ausgeführt wird:<ul><li>**console:** (Standard) Führt „Target“ und die Argumente aus, als würden sie direkt in die Befehlszeile eingegeben werden. Während „Target“ ausgeführt wird, wird ein Befehlsfenster angezeigt, das dann automatisch geschlossen wird.</li><li>**consolepause:** Entspricht „console“, wartet mit dem Schließen des Befehlsfenster jedoch, bis Sie eine Taste drücken.</li><li>**output:** Führt „Target“ aus und zeigt die Ergebnisse im **Ausgabefenster** in Visual Studio an. Wenn der TargetType „PIP“ ist, verwendet Visual Studio „Target“ als den Paketnamen und fügt „Arguments“ an.</li><li>**repl:** Führt „Target“ im [interaktiven Python-Fenster](python-interactive-repl-in-visual-studio.md) aus. Der optionale Anzeigename wird als Titel des Fensters verwendet.</li><li>**none**: Verhält sich wie „console“.</li></ul>|
 | WorkingDirectory | Optional | Der Ordner, in dem der Befehl ausgeführt wird. |
 | ErrorRegex<br>WarningRegEx | Optional | Wird nur verwendet, wenn ExecuteIn `output` entspricht. Beide Werte geben einen regulären Ausdruck an, mit dem Visual Studio die Ausgabe des Befehls analysiert, um Fehler und Warnungen im Fenster **Fehlerliste** anzuzeigen. Wenn das Argument nicht angegeben wird, wirkt der Befehl sich nicht auf das Fenster **Fehlerliste** aus. Weitere Informationen darüber, was Visual Studio erwartet, finden Sie unter [Named capture groups (Benannte Erfassungsgruppen)](#named-capture-groups-for-regular-expressions). |
-| RequiredPackages | Optional | Eine Liste der Paketanforderungen für den Befehl mit demselben Format wie [*requirements.txt*](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). Der Befehl **PyLint ausführen** gibt zum Beispiel `pylint>=1.0.0` an. Visual Studio prüft, ob alle in der Liste aufgelisteten Pakete installiert sind, bevor der Befehl ausgeführt wird. Visual Studio nutzt PIP zum Installieren fehlender Pakete. |
-| Environment | Optional | Eine Zeichenfolge von Umgebungsvariablen, die definiert werden müssen, bevor der Befehl ausgeführt wird. Jede Variable nutzt das Format \<NAME>=\<VALUE> mit mehreren Variablen, die durch Semikolons getrennt werden. Eine Variable mit mehreren Werten muss in einfache oder doppelte Anführungszeichen gesetzt werden, z.B. 'NAME=WERT1;WERT2'. |
+| RequiredPackages | Optional | Eine Liste der Paketanforderungen für den Befehl mit demselben Format wie [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io). Der Befehl **PyLint ausführen** gibt zum Beispiel `pylint>=1.0.0` an. Visual Studio prüft, ob alle in der Liste aufgelisteten Pakete installiert sind, bevor der Befehl ausgeführt wird. Visual Studio nutzt PIP zum Installieren fehlender Pakete. |
+| Umgebung | Optional | Eine Zeichenfolge von Umgebungsvariablen, die definiert werden müssen, bevor der Befehl ausgeführt wird. Jede Variable verwendet das Format \<NAME>=\<VALUE> mit mehreren Variablen, die durch Semikolons getrennt werden. Eine Variable mit mehreren Werten muss in einfache oder doppelte Anführungszeichen gesetzt werden, z.B. 'NAME=WERT1;WERT2'. |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>Benannte Erfassungsgruppen für reguläre Ausdrücke
 
@@ -209,7 +209,7 @@ Platzieren Sie ein `<Import Project="(path)">`-Element an einer beliebigen Stell
 > [!Note]
 > Wenn Sie Änderungen an der Datei *.targets* vornehmen, müssen Sie die *Projektmappe*, die das Projekt enthält, neu laden und nicht nur das Projekt selbst.
 
-## <a name="example-commands"></a>Beispiele für Befehle
+## <a name="example-commands"></a>Beispielbefehle
 
 ### <a name="run-pylint-module-target"></a>PyLint ausführen (Target-Modul)
 
@@ -372,7 +372,7 @@ Zum Beispiel stimmt in den folgenden Elementen der Name „Example“ in der Eig
   </Target>
 ```
 
-### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Meldung: „Beim Ausführen von \<Befehlsname> ist ein Fehler aufgetreten. Befehl \<target-name> konnte nicht vom Projekt abgerufen werden.“
+### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Meldung: „Fehler beim Ausführen von \<command name>. Befehl \<target-name> konnte nicht aus dem Projekt abgerufen werden.“
 
 Gibt an, dass der Inhalt der Elemente `<Target>` oder `<CreatePythonCommandItem>` falsch ist. Mögliche Ursachen schließen ein:
 

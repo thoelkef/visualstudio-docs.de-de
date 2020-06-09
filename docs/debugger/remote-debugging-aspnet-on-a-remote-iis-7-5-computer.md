@@ -3,7 +3,7 @@ title: Remotedebuggen von ASP.NET auf einem Computer mit IIS
 ms.custom:
 - remotedebugging
 - seodec18
-ms.date: 05/21/2018
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 86b035164c4d34f4ce0182ea51fdfe6381ad2d4f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536020"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173914"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS
 Zum Debuggen einer ASP.NET-Anwendung, die in den Internetinformationsdiensten (Internet Information Services, IIS) bereitgestellt wurde, müssen Sie die Remotetools auf dem Computer installieren und ausführen, auf dem Sie die App bereitgestellt haben, und diese anschließend über Visual Studio an Ihre laufende App anfügen.
@@ -34,7 +34,7 @@ In diesem Leitfaden wird erläutert, wie Sie eine Visual Studio-App für ASP.NET
 Visual Studio 2019 ist erforderlich, um die in diesem Artikel gezeigten Schritte auszuführen.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2017 ist erforderlich, um die in diesem Artikel gezeigten Schritte auszuführen.
+Sie benötigen Visual Studio 2017, um die in diesem Artikel beschriebene Anleitung auszuführen.
 ::: moniker-end
 
 Diese Verfahren wurden für die folgenden Serverkonfigurationen getestet:
@@ -49,9 +49,9 @@ Der Remotedebugger wird auf Windows Server-Versionen ab Windows Server 2008 Ser
 
 ## <a name="app-already-running-in-iis"></a>In den IIS ausgeführte Apps
 
-Dieser Artikel enthält Schritte zum Einrichten einer Basiskonfiguration von IIS unter Windows Server und zum Bereitstellen der App aus Visual Studio. Mithilfe dieser Schritte können Sie sicherstellen, dass die erforderlichen Komponenten auf dem Server installiert sind, die App ordnungsgemäß ausgeführt werden kann und Sie für das Remotedebuggen bereit sind.
+Dieser Artikel enthält eine Anleitung zum Einrichten einer Basiskonfiguration der IIS unter Windows Server und zum Bereitstellen der App über Visual Studio. Damit soll sichergestellt, dass auf dem Server die erforderlichen Komponenten installiert sind, die App ordnungsgemäß ausgeführt werden kann und Sie bereit sind, das Remotedebuggen zu beginnen.
 
-* Wenn Ihre App in IIS ausgeführt wird und Sie nur den Remotedebugger herunterladen und mit dem Debuggen starten möchten, navigieren Sie zu [Herunterladen und Installieren der Remotetools unter Windows Server](#BKMK_msvsmon).
+* Wenn Ihre App in den IIS ausgeführt wird und Sie nur den Remotedebugger herunterladen möchten, um das Debuggen zu starten, navigieren Sie zu [Herunterladen und Installieren der Remotetools unter Windows Server](#BKMK_msvsmon).
 
 * Wenn Sie sicherstellen möchten, dass Ihre App in IIS ordnungsgemäß eingerichtet, bereitgestellt und ausgeführt wird, damit Sie mit dem Debuggen beginnen können, führen Sie alle Schritte in diesem Thema aus.
 
@@ -72,7 +72,7 @@ Dieser Artikel enthält Schritte zum Einrichten einer Basiskonfiguration von IIS
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
-## <a name="update-browser-security-settings-on-windows-server"></a>Aktualisieren von Browsersicherheitseinstellungen unter Windows Server
+## <a name="update-browser-security-settings-on-windows-server"></a>Aktualisieren der Sicherheitseinstellungen des Browsers unter Windows Server
 
 Wenn die verstärkte Sicherheitskonfiguration in Internet Explorer aktiviert ist (sie ist standardmäßig aktiviert), müssen Sie möglicherweise einige Domänen als vertrauenswürdige Sites hinzufügen, damit Sie einige der Webserverkomponenten herunterladen können. Fügen Sie die vertrauenswürdigen Sites hinzu, indem Sie zu **Internetoptionen > Sicherheit > vertrauenswürdige Sites > Sites** navigieren. Fügen Sie die folgenden Domänen hinzu.
 
@@ -113,7 +113,7 @@ Wenn Sie Hilfe bei der Bereitstellung der App in IIS benötigen, ziehen Sie die 
 Sie können diese Option verwenden, um eine Datei mit Veröffentlichungseinstellungen zu erstellen und in Visual Studio zu importieren.
 
 > [!NOTE]
-> Bei dieser Bereitstellungsmethode wird Web Deploy verwendet. Wenn Sie Web Deploy manuell in Visual Studio konfigurieren möchten, anstatt die Einstellungen zu importieren, können Sie Web Deploy 3.6 anstelle von Web Deploy 3.6 für Hostingserver installieren. Wenn Sie Web Deploy jedoch manuell konfigurieren, müssen Sie sicherstellen, dass ein App-Ordner auf dem Server mit den richtigen Werten und Berechtigungen konfiguriert ist (siehe [Konfigurieren der ASP.NET-Website](#BKMK_deploy_asp_net)).
+> Bei dieser Bereitstellungsmethode wird Web Deploy verwendet und muss auf dem Server installiert sein. Wenn Sie Web Deploy manuell in konfigurieren möchten, anstatt die Einstellungen zu importieren, können Sie Web Deploy 3.6 anstelle von Web Deploy 3.6 für Hostingserver installieren. Wenn Sie Web Deploy jedoch manuell konfigurieren, müssen Sie sicherstellen, dass ein App-Ordner auf dem Server mit den richtigen Werten und Berechtigungen konfiguriert ist (siehe [Konfigurieren der ASP.NET-Website](#BKMK_deploy_asp_net)).
 
 ### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Installieren und Konfigurieren von Web Deploy für Hostingserver unter Windows Server
 
@@ -131,7 +131,7 @@ Nachdem die App erfolgreich bereitgestellt wurde, sollte sie automatisch gestart
 
 1. Aktivieren Sie im Dialogfeld **Einstellungen** das Debuggen, indem Sie auf **Weiter** klicken, eine **Debugkonfiguration** auswählen und dann **Weitere Dateien im Ziel entfernen** unter den **Dateiveröffentlichungsoptionen** auswählen.
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > Wenn Sie eine Releasekonfiguration auswählen, deaktivieren Sie beim Veröffentlichen das Debuggen in der Datei *Web.config*.
 
 1. Klicken Sie auf **Speichern**, und veröffentlichen Sie die App dann erneut.
@@ -202,15 +202,15 @@ Weitere Informationen zum Ausführen des Remotedebuggers als Dienst finden Sie u
     > [!TIP]
     > In Visual Studio 2017 und höher können Sie erneut an denselben Prozess anfügen, an den Sie zuvor angefügt haben, indem Sie **Debuggen > Erneut an Prozess anfügen...** (UMSCHALT+ALT+P) verwenden.
 
-3. Legen Sie das Feld „Qualifizierer“ auf **\<Name_des_Remotecomputers** fest, und drücken Sie die **EINGABETASTE**.
+3. Legen Sie das Feld „Qualifizierer“ auf **\<remote computer name>** fest, und drücken Sie die **EINGABETASTE**.
 
-    Vergewissern Sie sich, dass Visual Studio den erforderlichen Port dem Computernamen hinzufügt, der im folgenden Format angezeigt wird: **\<Remotecomputername>:Port**.
+    Vergewissern Sie sich, dass Visual Studio den erforderlichen Port dem Computernamen hinzufügt, der im folgenden Format angezeigt wird: **\<remote computer name>:port**.
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 sollte **\<Remotecomputername>:4024** angezeigt werden.
+    In Visual Studio 2019 sollte **\<remote computer name>:4024** angezeigt werden.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    In Visual Studio 2017 sollte **\<Remotecomputername>:4022** angezeigt werden.
+    In Visual Studio 2017 sollte **\<remote computer name>:4022** angezeigt werden.
     ::: moniker-end
     Der Port ist erforderlich. Wenn die Portnummer nicht angezeigt wird, fügen Sie sie manuell hinzu.
 
@@ -234,7 +234,7 @@ Weitere Informationen zum Ausführen des Remotedebuggers als Dienst finden Sie u
 
 7. Klicken Sie auf **Attach** (Anhängen).
 
-8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>** .
+8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<remote computer name>** .
 
     Es sollte die ASP.NET-Webseite angezeigt werden.
 9. Klicken Sie in der ausgeführten ASP.NET-Anwendung auf den Link zur Seite **Info**.
@@ -257,7 +257,7 @@ Erforderliche Ports:
 ::: moniker range="vs-2017"
 * 4022 – erforderlich für das Remotedebuggen aus Visual Studio 2017 (weitere Informationen finden Sie unter [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md)).
 ::: moniker-end
-* UDP 3702 (optional) – Der Ermittlungsport aktiviert für Sie die Schaltfläche **Suchen**, wenn Sie den Remotedebugger in Visual Studio anfügen.
+* UDP 3702 (optional): Der Ermittlungsport aktiviert für Sie die Schaltfläche **Suchen**, wenn Sie den Remotedebugger in Visual Studio anfügen.
 
 1. Suchen Sie im Menü **Start** nach **Windows-Firewall mit erweiterter Sicherheit**, um einen Port auf Windows Server zu öffnen.
 

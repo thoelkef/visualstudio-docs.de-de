@@ -5,16 +5,16 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68493232"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173095"
 ---
 # <a name="source-editor"></a>Quellcode-Editor
 
-Ein zuverlässiger Quellcode-Editor ist entscheidend für kurzen und effizienten Code. Visual Studio für Mac bietet einen anspruchsvollen Quellcode-Editor, der das Herzstück der IDE darstellt. Der Quellcode-Editor stellt nicht nur die erwarteten Funktionen bereit, sondern auch solche, die Sie für reibungslose Arbeitsabläufe benötigen: von den Grundlagen wie der Syntaxhervorhebung, über Codeausschnitte und der Codefaltung, bis hin zu den Vorteilen der Roslyn-Compilerintegration wie eine voll funktionale IntelliSense-Codevervollständigung.
+Ein zuverlässiger Quellcode-Editor ist entscheidend für kurzen und effizienten Code. Visual Studio für Mac bietet einen anspruchsvollen Quellcode-Editor, der das Herzstück der IDE darstellt. Der Quellcode-Editor stellt Features bereit, die Sie möglicherweise erwarten und benötigen, um Ihre Arbeit mühelos durchzuführen: von den Grundlagen wie der Syntaxhervorhebung, über Codeausschnitte und der Codefaltung, bis hin zu den Vorteilen der Roslyn-Compilerintegration wie eine voll funktionale IntelliSense-Codevervollständigung.
 
 Der Quellcode-Editor in Visual Studio für Mac funktioniert problemlos mit allen anderen Funktionen der IDE, z.B. dem Debuggen, der Umgestaltung und der Integration der Versionskontrolle.
 
@@ -52,7 +52,7 @@ Der Zeilenumbruch kann Ihnen beim Verwalten des Platzes helfen, wenn Sie an lang
 
 Der Zeilenumbruch ist in der Standardeinstellung deaktiviert, kann jedoch über die **Einstellungen** in Visual Studio für Mac aktiviert werden. 
 
-Aktivieren Sie den Zeilenumbruch, indem Sie zu **Visual Studio > Einstellungen > Text-Editor > Neuer Editor > Zeilenumbruch** navigieren.
+Aktivieren Sie den Zeilenumbruch, indem Sie zu **Visual Studio > Einstellungen > Text-Editor > Zeilenumbruch** navigieren:
 
 ![Optionen für den Zeilenumbruch](media/source-neweditor-wordwrap1.png)
 
@@ -78,7 +78,7 @@ Die Farbe der Hervorhebung ist auch hilfreich, wenn angegeben werden soll, dass 
 
 ![Beispiel für die Markierungsfarbe](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Features des Code-Editors (Visual Studio unter Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Gliederung (Visual Studio unter Windows)](/visualstudio/ide/outlining)

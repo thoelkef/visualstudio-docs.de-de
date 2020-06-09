@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093975"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183664"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 
@@ -61,7 +61,7 @@ Das `Include`-Attribut ist ein Pfad, der relativ zum Ordner der Projektdatei „
 
  Verwenden Sie die Syntax @(\<ItemType>), um auf Elementtypen in der gesamten Projektdatei zu verweisen. Auf den Elementtyp aus dem vorherigen Beispiel würden Sie z.B. mithilfe von `@(Compile)` verweisen. Mithilfe dieser Syntax können Sie Elemente an Aufgaben übergeben, indem Sie den Elementtyp als einen Parameter dieser Aufgabe angeben. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).
 
- Standardmäßig sind die Elemente eines Elementtyps durch Semikolons (;) getrennt, wenn er erweitert wird. Verwenden Sie die Syntax @(\<ItemType>, '\<Trennzeichen>'), um ein anderes Trennzeichen als den Standard anzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
+ Standardmäßig sind die Elemente eines Elementtyps durch Semikolons (;) getrennt, wenn er erweitert wird. Sie können die Syntax @(\<ItemType>, '\<separator>') verwenden, um ein anderes Trennzeichen als das Standardtrennzeichen anzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
 ## <a name="use-wildcards-to-specify-items"></a>Verwenden von Platzhaltern zum Angeben von Elementen
 
@@ -126,7 +126,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 
 ### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> Verweisen auf Elementmetadaten in einer Projektdatei
 
- Mithilfe der Syntax %(\<ItemMetadataName>) kann in der gesamten Projektdatei auf Elementmetadaten verwiesen werden. Bei Mehrdeutigkeiten können Sie mit dem Namen des Elementtyps einen Verweis qualifizieren. Sie können z.B. %(\<ItemType.ItemMetaDataName>). angeben. Im folgenden Beispiel erfolgt die Batchverarbeitung der Meldungsaufgabe mithilfe der Anzeige von Metadaten. Weitere Informationen zur Verwendung von Elementmetadaten für die Batchverarbeitung finden Sie unter [Item Metadata in Task Batching (Elementmetadaten bei der Batchverarbeitung von Aufgaben)](../msbuild/item-metadata-in-task-batching.md).
+ Mithilfe der Syntax %(\<ItemMetadataName>) kann in der gesamten Projektdatei auf Elementmetadaten verwiesen werden. Bei Mehrdeutigkeiten können Sie mit dem Namen des Elementtyps einen Verweis qualifizieren. Sie können z. B. %(\<ItemType.ItemMetaDataName>) angeben. Im folgenden Beispiel erfolgt die Batchverarbeitung des Nachrichtentasks mithilfe der Anzeigemetadaten. Weitere Informationen zur Verwendung von Elementmetadaten für die Batchverarbeitung finden Sie unter [Item Metadata in Task Batching (Elementmetadaten bei der Batchverarbeitung von Aufgaben)](../msbuild/item-metadata-in-task-batching.md).
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -146,7 +146,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 
 ### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Bekannte Elementmetadaten
 
- Wenn einem Elementtypen ein Element hinzugefügt wird, werden diesem Element bekannte Metadaten zugewiesen. So verfügen z. B. alle Elemente über die bekannten Metadaten %(\<Dateiname>), deren Wert dem Dateinamen des Elements entspricht (ohne Erweiterung). Weitere Informationen finden Sie unter [Well-known Item Metadata (Bekannte Elementmetadaten)](../msbuild/msbuild-well-known-item-metadata.md).
+ Wenn einem Elementtypen ein Element hinzugefügt wird, werden diesem Element bekannte Metadaten zugewiesen. So verfügen z. B. alle Elemente über die bekannten Metadaten %(\<Filename>), deren Wert dem Dateinamen des Elements entspricht (ohne Erweiterung). Weitere Informationen finden Sie unter [Well-known Item Metadata (Bekannte Elementmetadaten)](../msbuild/msbuild-well-known-item-metadata.md).
 
 ### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Umwandeln von Elementtypen mithilfe von Metadaten
 
@@ -335,6 +335,261 @@ Output:
   Item2: hourglass;boomerang;hourglass
     hourglass  Count: 2
     boomerang  Count: 1
+-->
+```
+
+##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Aktualisieren von Metadaten für Elemente in einer ItemGroup außerhalb eines Ziels
+
+Für Elemente außerhalb von Zielen können vorhandene Metadaten über das `Update`-Attribut aktualisiert werden. Dieses Attribut ist **nicht** für Elemente unter Zielen verfügbar.
+
+```xml
+<Project>
+    <PropertyGroup>
+        <MetadataToUpdate>pencil</MetadataToUpdate>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Color>red</Color>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>YELLOW</Color>
+        </Item2>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="$(MetadataToUpdate);stapler;er*r;@(Item2)" Price="10" Material="">
+            <Color>RED</Color>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: RED
+    Material:
+    Price: 10
+Item1: pencil
+    Size: small
+    Color: RED
+    Material:
+    Price: 10
+Item1: eraser
+    Size:
+    Color: RED
+    Material:
+    Price: 10
+Item1: notebook
+    Size: large
+    Color: RED
+    Material:
+    Price: 10
+-->
+```
+
+:::moniker range=">=vs-2019"
+In MSBuild (Version 16.6 und höher) unterstützt das `Update`-Attribut qualifizierte Metadatenverweise, um das Importieren von Metadaten aus mindestens zwei Elementen zu vereinfachen.
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item3 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>BLUE</Color>
+            <Price>20</Price>
+        </Item3>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="@(Item2);er*r;@(Item3)" Size="%(Size)" Color="%(Item2.Color)" Price="%(Item3.Price)" Model="2020">
+            <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: black
+    Material: plastic
+    Price:
+    Model:
+Item1: pencil
+    Size: small
+    Color: RED
+    Material: Premium PLASTIC
+    Price:
+    Model: 2020
+Item1: eraser
+    Size: small
+    Color:
+    Material: gum
+    Price:
+    Model: 2020
+Item1: notebook
+    Size: large
+    Color:
+    Material: paper
+    Price: 20
+    Model: 2020
+-->
+```
+
+Anmerkungen:
+- Nicht qualifizierte Metadaten (% (M)) werden an den zu aktualisierenden Elementtyp (`Item1` im Beispiel oben) gebunden. Qualifizierte Metadaten (`%(Item2.Color)`) werden innerhalb des Satzes der erfassten übereinstimmenden Elementtypen aus dem Aktualisierungsausdruck gebunden.
+- Wenn ein Element mehrmals innerhalb von und zwischen mehreren referenzierten Elementen übereinstimmt:
+  - Das letzte Vorkommen jedes referenzierten Elementtyps wird erfasst (also ein erfasstes Element pro Elementtyp).
+  - Dies entspricht dem Verhalten der Batchverarbeitung von Aufgabenelementen unter den Zielen.
+- Hier können%()-Verweise eingefügt werden:
+  - Metadaten
+  - Metadatenbedingungen
+- Beim Abgleich von Metadatennamen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+:::moniker-end
+
+## <a name="updating-metadata-on-items-in-an-itemgroup-of-a-target"></a>Aktualisieren von Metadaten für Elemente in einer ItemGroup eines Ziels
+
+Metadaten können auch in Zielen mit einer weniger ausdrucksstarken Syntax als `Update` geändert werden:
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item2 Include="ruler">
+            <Color>GREEN</Color>
+        </Item2>
+
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <ItemGroup>
+            <!-- Metadata can be expressed either as attributes or as elements -->
+            <Item1 Size="GIGANTIC" Color="%(Item2.Color)">
+                <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+            </Item1>
+        </ItemGroup>
+
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: pencil
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: eraser
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: notebook
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
 -->
 ```
 

@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632250"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184041"
 ---
 # <a name="special-characters-to-escape"></a>Sonderzeichen mit Escapezeichen
 
@@ -31,16 +31,16 @@ Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine 
 
  Es folgt die vollständige Liste der Sonderzeichen mit Escapezeichen:
 
-|Zeichen|Beschreibung|
-|---------------|-----------------|
-|%|Prozentzeichen, für Verweise auf Metadaten verwendet.|
-|$|Dollarzeichen, für Verweise auf Eigenschaften verwendet.|
-|@|At-Zeichen, für Verweise auf Elementlisten verwendet.|
-|(|Öffnende runde Klammer, in Listen verwendet.|
-|)|Schließende runde Klammer, in Listen verwendet.|
-|;|Semikolon, ein Listentrennzeichen.|
-|?|Fragezeichen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|
-|*|Sternchen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|
+|Zeichen|ASCII-Codierung|Beschreibung|
+|---------|----------|-----------|
+|%|%25|Prozentzeichen, für Verweise auf Metadaten verwendet.|
+|$|%24|Dollarzeichen, für Verweise auf Eigenschaften verwendet.|
+|@|%40|At-Zeichen, für Verweise auf Elementlisten verwendet.|
+|(|%28|Öffnende runde Klammer, in Listen verwendet.|
+|)|%29|Schließende runde Klammer, in Listen verwendet.|
+|;|%3B|Semikolon, ein Listentrennzeichen.|
+|?|%3F|Fragezeichen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|
+|* |%2A|Sternchen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|
 
 > [!NOTE]
 > In einigen Szenarios müssen Sie doppelte gerade Anführungszeichen (") möglicherweise mit Escapezeichen versehen, beispielsweise bei der Verwendung solcher Zeichen innerhalb eines `Exec`-Tasks.

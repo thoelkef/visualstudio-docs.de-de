@@ -1,7 +1,7 @@
 ---
 title: Veröffentlichen in IIS durch Importieren von Veröffentlichungseinstellungen
 description: Erstellen und Importieren eines Veröffentlichungsprofils zum Bereitstellen einer Anwendung aus Visual Studio in IIS
-ms.date: 01/31/2019
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65680143"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183300"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in IIS durch Importieren von Veröffentlichungseinstellungen in Visual Studio
 
@@ -23,7 +23,7 @@ Sie können das Tool **Veröffentlichen** zum Importieren von Veröffentlichungs
 
 Die in diesem Artikel genannten Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-Apps in Visual Studio.
 
-In diesem Lernprogramm lernen Sie Folgendes:
+In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
 > * Konfigurieren von IIS, sodass Sie ein Veröffentlichungseinstellungsprofil generieren können
@@ -34,7 +34,7 @@ In diesem Lernprogramm lernen Sie Folgendes:
 Eine Veröffentlichungseinstellungsdatei ( *\*.publishsettings*) unterscheidet sich von einem in Visual Studio erstellten Veröffentlichungsprofil ( *\*.pubxml*). Eine Veröffentlichungseinstellungsdatei wird von IIS oder Azure App Service erstellt. Sie können sie aber auch manuell erstellen und dann in Visual Studio importieren.
 
 > [!NOTE]
-> Sie müssen lediglich ein Visual Studio-Veröffentlichungsprofil (\*.pubxml-Datei) aus einer Installation von Visual Studio in eine andere kopieren. Das Veröffentlichungsprofil *\<Profilname\>.pubxml* finden Sie im Ordner *\\<Projektname\>\Properties\PublishProfiles* für verwaltete Projekttypen. Für Websites durchsuchen Sie den Ordner *\App_Data*. Die Veröffentlichungsprofile sind XML-Dateien von MSBuild.
+> Sie müssen lediglich ein Visual Studio-Veröffentlichungsprofil (\*.pubxml-Datei) aus einer Installation von Visual Studio in eine andere kopieren. Das Veröffentlichungsprofil *\<profilename\>.pubxml* finden Sie im Ordner *\\<Projektname\>\Properties\PublishProfiles* für verwaltete Projekttypen. Suchen Sie im Ordner *\App_Data* nach Websites. Die Veröffentlichungsprofile sind XML-Dateien von MSBuild.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -52,7 +52,7 @@ Eine Veröffentlichungseinstellungsdatei ( *\*.publishsettings*) unterscheidet s
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 ::: moniker-end
 
-* Sie müssen Windows Server 2012 oder Windows Server 2016 auf Ihrem Server ausführen, und die [IIS-Webserverrolle](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) muss ordnungsgemäß installiert sein (zum Generieren der Veröffentlichungseinstellungsdatei ( *\*.publishsettings*) erforderlich). Außerdem muss entweder ASP.NET 4.5 oder ASP.NET Core auf dem Server installiert sein. Informationen zum Einrichten von ASP.NET 4.5 finden Sie unter [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (IIS 8.0 mit ASP.NET 3.5 und ASP.NET 4.5)](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Informationen zum Einrichten von ASP.NET Core finden Sie unter [Hosten von ASP.NET Core unter Windows mit IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+* Sie müssen Windows Server 2012, Windows Server 2016 oder Windows Server 2019 auf Ihrem Server ausführen, und die [IIS-Webserverrolle](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) muss ordnungsgemäß installiert sein (zum Generieren der Datei mit den Veröffentlichungseinstellungen ( *\*.publishsettings*) erforderlich). Außerdem muss entweder ASP.NET 4.5 oder ASP.NET Core auf dem Server installiert sein. Informationen zum Einrichten von ASP.NET 4.5 finden Sie unter [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (IIS 8.0 mit ASP.NET 3.5 und ASP.NET 4.5)](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Informationen zum Einrichten von ASP.NET Core finden Sie unter [Hosten von ASP.NET Core unter Windows mit IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Stellen Sie für ASP.NET Core sicher, dass Sie den Anwendungspool so konfigurieren, dass **Kein verwalteter Code** verwendet wird, wie im Artikel beschrieben.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Erstellen eines neuen ASP.NET-Projekts in Visual Studio
 

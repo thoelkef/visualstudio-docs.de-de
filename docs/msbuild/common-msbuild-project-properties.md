@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece57a102851efe0198f8993b60dba8e0eae6dec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7502644c9820b47149acb4a9b8a749bec70551e4
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634421"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180427"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 
@@ -118,6 +118,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | Satellite_Win32Resource | Fügt eine Win32-Ressource (*RES*-Datei) in die Satellitenassembly ein. |
 | SGenToolPath | Ein optionaler Toolpfad, der angibt, von wo *SGen.exe* abgerufen werden kann, wenn die aktuelle Version von *SGen.exe* überschrieben wurde. Diese Eigenschaft wird nur für .NET Framework verwendet.|
 | SGenUseProxyTypes | Ein boolescher Wert, der angibt, ob Proxytypen von *SGen.exe* generiert werden sollen. Dies gilt nur, wenn *GenerateSerializationAssemblies* ausschließlich für .NET Framework aktiviert ist.<br /><br /> Das SGen-Ziel verwendet diese Eigenschaft, um das "UseProxyTypes"-Flag festzulegen. Diese Eigenschaft wird standardmäßig auf "true" festgelegt. Es ist keine Benutzeroberfläche verfügbar, um diesen Wert zu ändern. Fügen Sie diese Eigenschaft der Projektdatei hinzu, und legen Sie sie auf FALSE fest, bevor Sie *Microsoft.Common.Targets* oder *C#/VB.targets* importieren, um die Serialisierungsassembly für nicht webdienstbezogene Typen zu generieren. |
+| SkipInvalidConfigurations | Wenn `true`, wird eine Warnung zu ungültigen Plattform- und Konfigurationskombinationen generiert, aber der Build schlägt nicht fehl. Wenn `false` oder undefiniert (Standardeinstellung), wird ein Fehler generiert. |
 | StartupObject | Gibt die Klasse oder das Modul an, die bzw. das die "Main"-Methode oder die "Sub Main"-Prozedur enthält. Diese Eigenschaft entspricht dem `/main`-Compilerschalter. |
 | SubsystemVersion | Gibt die mindestens erforderliche Version des Subsystems an, die die generierte ausführbare Datei verwenden kann. Diese Eigenschaft entspricht dem `/subsystemversion`-Compilerschalter. Informationen zum Standardwert dieser Eigenschaft finden Sie unter [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) oder [/subsystemversion (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Die Version von .NET Compact Framework, die zur Ausführung der zu erstellenden Anwendung erforderlich ist. Durch diese Angabe können Sie auf bestimmte Frameworkassemblys verweisen, auf die andernfalls möglicherweise nicht verwiesen werden kann. |

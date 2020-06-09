@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Einstellungen u. a. für Sprachen, Kontakte und die Abonnementebene im Verwaltungsportal festlegen.
-ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508757"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183495"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Festlegen der Vertragseinstellungen im Verwaltungsportal
 Superadministratoren können bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen füllen automatisch die Abonnementdaten für Ihre Administratoren aus, wenn diese Abonnenten hinzufügen, und können nur von Superadministratoren global geändert werden.  
@@ -50,7 +50,7 @@ Mit dieser Einstellung und der Schaltfläche **Contact my Admin** (Administrator
 Mit dieser Einstellung legen Sie fest, ob Administratoren Abonnenten hinzufügen können, die sich außerhalb des Mandanten oder des Verzeichnisses Ihrer Organisation befinden.  Wenn Sie diese Einstellung deaktivieren, sind keine externen Abonnenten zulässig.  Wenn Sie die Einstellung aktivieren und ein Administrator versucht, einen externen Abonnenten hinzuzufügen, wird dieser Administrator aufgefordert, die Aktion zu bestätigen. Anschließend kann er das Abonnent zuweisen. Administratoren können diese Einstellung nicht überschreiben. 
 
 ### <a name="default-downloads-setting"></a>„Default downloads setting“ (Standardeinstellung für Downloads)
-Wenn Sie diese Einstellung aktivieren (was der Standardeinstellung entspricht), können Abonnenten auf Downloads zugreifen, wenn Administratoren neue Abonnements erstellen.  Administratoren können Downloads aber weiterhin für einzelne Abonnements deaktivieren.  
+Wenn Sie diese Einstellung aktivieren (was der Standardeinstellung entspricht), können Abonnenten auf Downloads zugreifen, wenn Administratoren neue Abonnements erstellen.  Administratoren können Downloads aber weiterhin für einzelne Abonnements deaktivieren.  Durch das Deaktivieren des Zugriffs auf Downloads wird auch der Zugriff auf Product Keys deaktiviert.  
 
 ### <a name="default-subscription-level"></a>„Default subscription level“ (Standardabonnementebene)
 Mit dieser Einstellung können Sie festlegen, welche Abonnementebenen, die in Ihrem Vertrag festgelegt sind, standardmäßig ausgewählt werden, wenn ein Abonnement einem Benutzer zugewiesen wird.  Administratoren können diese Einstellung anpassen und dabei jede Abonnementebene Ihres Vertrags auswählen. Dadurch wird verhindert, dass Sie die am häufigsten verwendete Einstellung mehrfach angeben müssen. 

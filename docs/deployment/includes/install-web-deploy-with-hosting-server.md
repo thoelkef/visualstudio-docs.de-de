@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1e6c6714720d652fff266e3e852d01982c98e34a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143525"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173879"
 ---
 Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures für die Erstellung der Datei mit Veröffentlichungseinstellungen über die Benutzeroberfläche.
 
@@ -12,9 +12,9 @@ Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures f�
 
 2. Installieren Sie anschließend Web Deploy 3.6 für Hostingserver in Windows Server.
 
-    Verwenden Sie den [Webplattform-Installer (Web PI)](https://www.microsoft.com/web/downloads/platform.aspx) für die Installation von Web Deploy für Hostingserver. (Sie finden den Link zum Web PI über IIS, wenn Sie links im Server-Manager auf **IIS** klicken. Klicken sie erst mit der rechten Maustaste auf den Server und anschließend mit der linken auf **Internetinformationsdienste-Manager**.)
+    Verwenden Sie den Webplattform-Installer (Web PI) für die Installation von Web Deploy für Hostingserver. (Sie finden den Link zum Web PI über IIS, wenn Sie links im Server-Manager auf **IIS** klicken. Klicken sie zuerst im Serverbereich mit der rechten Maustaste auf den Server, und wählen Sie dann **Internet Information Services (IIS) Manager (Internetinformationsdienste-Manager)** aus. Verwenden Sie dann den Link **Neue Webplattformkomponenten abrufen** im Fenster **Aktionen**. Sie können den Webplattform-Installer (Web PI) auch über [Downloads](https://www.microsoft.com/web/downloads/platform.aspx) abrufen.
 
-    Im Web PI finden Sie **Web Deploy für Hostingserver** auf der Registerkarte „Anwendungen“.
+    Im Webplattform-Installer finden Sie **Web Deploy 3.6 für Hostingserver** auf der Registerkarte „Anwendungen“.
 
 3. Installieren Sie, falls noch nicht geschehen, die **Verwaltungsskripts und -tools für IIS**.
 
@@ -26,4 +26,4 @@ Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures f�
 
 4. (Optional) Überprüfen Sie, ob Web Deploy korrekt ausgeführt wird, indem Sie **Einstellungen > System and Security (System und Sicherheit) > Verwaltung > Dienste** öffnen und sich vergewissern, dass der **Webbereitstellungs-Agent-Dienst**  ausgeführt wird (in älteren Versionen ist dieser Dienst anders benannt).
 
-    Wenn der Agent-Dienst noch nicht ausgeführt wird, starten Sie ihn. Wenn er gar nicht vorhanden ist, navigieren Sie zu **Einstellungen > Programm > Uninstall a program** (Programm deinstallieren), und suchen Sie die **Microsoft Web Deploy\<-Version**. **Ändern** Sie die Installation, und vergewissern Sie sich, dass Sie für die Web Deploy-Komponenten **Will be installed to the local hard drive** (Wird auf der lokalen Festplatte installiert) auswählen. Führen Sie die Schritte zur Änderung der Installation durch.
+    Wenn der Agent-Dienst noch nicht ausgeführt wird, starten Sie ihn. Wenn er gar nicht vorhanden ist, navigieren Sie zu **Einstellungen > Programm > Uninstall a program** (Programm deinstallieren), und suchen Sie **Microsoft Web Deploy\<version>** . **Ändern** Sie die Installation, und vergewissern Sie sich, dass Sie für die Web Deploy-Komponenten **Will be installed to the local hard drive** (Wird auf der lokalen Festplatte installiert) auswählen. Führen Sie die Schritte zur Änderung der Installation durch.

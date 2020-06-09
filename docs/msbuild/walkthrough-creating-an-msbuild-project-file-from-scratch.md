@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263135"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184275"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 
@@ -25,11 +25,11 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 
  In dieser exemplarischen Vorgehensweise wird das inkrementelle Erstellen einer einfachen Projektdatei nur mit einem Texteditor veranschaulicht. In der exemplarischen Vorgehensweise werden die nachfolgenden Schritte ausgeführt:
 
-1. Erstellen einer minimalen Anwendungsquelldatei
+1. Erweitern Sie die PATH-Umgebungsvariable.
 
-2. Erstellen einer minimalen MSBuild-Projektdatei
+2. Erstellen einer minimalen Anwendungsquelldatei
 
-3. Erweitern der PATH-Umgebungsvariablen um MSBuild
+3. Erstellen einer minimalen MSBuild-Projektdatei
 
 4. Erstellen der Anwendung mit der Projektdatei
 
@@ -45,13 +45,17 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 
 In dieser exemplarischen Vorgehensweise werden das Erstellen des Projekts an der Eingabeaufforderung und das Untersuchen der Ergebnisse veranschaulicht. Weitere Informationen zu MSBuild und zum Ausführen von MSBuild an der Eingabeaufforderung finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-Sie können die exemplarische Vorgehensweise nur abschließen, wenn Sie .NET Framework (Version 2.0, 3.5, 4.0, 4.5 oder später) installiert haben. .NET Framework enthält MSBuild und den Visual C#-Compiler, und Sie benötigen beide Komponenten für diese exemplarische Vorgehensweise.
+Sie können die exemplarische Vorgehensweise nur ausführen, wenn Sie Visual Studio installiert haben, da darin MSBuild und der Visual C#-Compiler enthalten sind, die für die exemplarische Vorgehensweise erforderlich sind.
+
+## <a name="extend-the-path"></a>Erweitern des Pfads
+
+Bevor Sie MSBuild verwenden können, müssen Sie die PATH-Umgebungsvariable so erweitern, dass Sie alle erforderlichen Tools enthält. Sie können die **Developer-Eingabeaufforderung für Visual Studio** verwenden. Suchen Sie unter Windows 10 im Suchfeld auf der Windows-Taskleiste danach. Wenn Sie die Umgebung in einer gewöhnlichen Eingabeaufforderung oder in einer Skriptumgebung einrichten möchten, führen Sie *VSDevCmd.bat* im Unterordner *Common7/Tools* einer Visual Studio-Installation aus.
 
 ## <a name="create-a-minimal-application"></a>Erstellen einer minimalen Anwendung
 
  In diesem Abschnitt wird veranschaulicht, wie Sie eine minimale Visual C#-Anwendungsquelldatei mithilfe eines Text-Editors erstellen.
 
-1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\\* oder *\Desktop\\* .
+1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\* oder *\Desktop\\* .
 
 2. Geben Sie **md HelloWorld** ein, um den Unterordner *\HelloWorld\\* zu erstellen.
 
@@ -154,16 +158,6 @@ Aufgaben im Build-Ziel werden sequenziell ausgeführt. In diesem Fall bildet die
 > ```xml
 > <Compile Include="*.cs" />
 > ```
-
-## <a name="extend-the-path-to-include-msbuild"></a>Erweitern des Pfads zum Einbeziehen von MSBuild
-
-Auf MSBuild können Sie erst zugreifen, wenn Sie die PATH-Umgebungsvariable um den .NET Framework-Ordner erweitert haben.
-
-Ab Visual Studio 2013 ist die Datei *MSBuild.exe* im Ordner „MSBuild“ zu finden ( *%ProgramFiles%\MSBuild* in einem 32-Bit-Betriebssystem oder *%ProgramFiles(x86)%\MSBuild* in einem 64-Bit-Betriebssystem).
-
-Geben Sie an der Befehlszeile **set PATH=%PATH%;%ProgramFiles%\MSBuild** oder **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild** ein.
-
-Wenn Sie Visual Studio installiert haben, können Sie auch die **Developer-Eingabeaufforderung für Visual Studio** verwenden. Einer ihrer Pfade enthält den Ordner *MSBuild*.
 
 ## <a name="build-the-application"></a>Erstellen der Anwendung
 
@@ -392,7 +386,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
      **Das Ziel „Build“ wird übersprungen, da alle Ausgabedateien hinsichtlich der Eingabedateien aktuell sind.**
 
-     **Eingabedateien: HelloWorld.cs**
+     **en: HelloWorld.cs**
 
      **Ausgabedateien: BinMSBuildSample.exe**
 
@@ -476,7 +470,7 @@ Das folgende Beispiel enthält eine Projektdatei, durch die eine Visual Basic-An
 
  Visual Studio kann einen großen Teil der in dieser exemplarischen Vorgehensweise gezeigten Aktionen automatisch übernehmen. Informationen zum Erstellen und Bearbeiten sowie zum Build und zu Tests von MSBuild-Projektdateien in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über MSBuild](../msbuild/msbuild.md)
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

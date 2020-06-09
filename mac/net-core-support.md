@@ -5,25 +5,26 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 6a4bc5a68a17bf3562e0f82b1f2c521f9b3f3e72
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b9892a322c0264a1bdb68d672c7fe6c6e9b08d4f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75735804"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183599"
 ---
 # <a name="net-core-support"></a>.NET Core-Unterstützung
 
 Die folgende Tabelle beschreibt die Versionen von .NET Core, die von den Stabil- und Preview-Versionen von Visual Studio für Mac unterstützt werden:
 
-| .NET Core SDK-Version |Visual Studio für Mac 8.1 (Stabil) | Visual Studio für Mac 8.2 (Stabil) | Visual Studio für Mac 8.3 (Stabil) | Visual Studio für Mac 8.4 (Stabil)
-|---------|---------|---------|---------|---------|
-|v2.1.0 – v2.1.5xx | | | | |
-|v2.1.600 + |✔︎|✔︎|✔︎|✔︎|
-|v2.2.1 – v2.2.1xx | | | | |
-|v2.2.200 + |✔︎|✔︎|✔︎|✔︎|
-|v3.0 | | |✔︎|✔︎|
-|v3.1 | | | |✔︎|
+| .NET Core SDK-Version |Visual Studio für Mac 8.1 | Visual Studio für Mac 8.2 | Visual Studio für Mac 8.3 | Visual Studio für Mac 8.4 | Visual Studio für Mac 8.5 | Visual Studio für Mac 8.6 |
+|---------|---------|---------|---------|---------|---------|---------|
+|v2.1.0 – v2.1.5xx | | | | | | |
+|v2.1.600 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|v2.2.1 – v2.2.1xx | | | | | | |
+|v2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|v3.0 | | |✔︎|✔︎|✔︎|✔︎|
+|v3.1 | | | |✔︎|✔︎|✔︎|
+|v5.0 (Vorschau) | | | | | |✔︎|
 
 > [!IMPORTANT]
 > Vorschauversionen der .NET Core SDK werden nicht unterstützt. Führen Sie ein Update auf die veröffentlichte Version durch. Bei der Installation von Visual Studio für Mac 8.4 wird die freigegebene Version von .NET Core v3.1 installiert.
@@ -31,7 +32,7 @@ Die folgende Tabelle beschreibt die Versionen von .NET Core, die von den Stabil-
 > [!IMPORTANT]
 > Wenn Sie zuvor .NET Core v2.2.1xx mit Visual Studio für Mac 8.0 verwendet haben, müssen Sie ein manuelles Update auf die unterstützte .NET Core-Version durchführen (siehe die obige Tabelle). Es wird entweder [2.1.700](https://dotnet.microsoft.com/download/dotnet-core/2.1) oder [2.2.300](https://dotnet.microsoft.com/download/dotnet-core/2.2) empfohlen.
 
-* .NET Core v3.1 wird standardmäßig für 8.4 installiert.
+* .NET Core v3.1 wird standardmäßig für die Versionen 8.4, 8.5 und 8.6 installiert.
 * .NET Core v3.0 wird standardmäßig für 8.3 installiert.
 * .NET Core Version 2.1.701 (Version 2.1.700 für 8.1) wird standardmäßig mit dem Installer installiert.
 * Um eine andere Version von .NET Core herunterzuladen, besuchen Sie die [dotnet-Seite](https://dotnet.microsoft.com/download/dotnet-core).

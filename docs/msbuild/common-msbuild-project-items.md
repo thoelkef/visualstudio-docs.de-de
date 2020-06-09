@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634447"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182910"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 
 In MSBuild ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in Visual Studio haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei *Microsoft.Build.CommonTypes.xsd* definiert.
+
 ## <a name="common-items"></a>Gemeinsame Elemente
 
- In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="reference"></a>Referenz
 
- Stellt einen Assemblyverweis (verwaltet) im Projekt dar.
+Stellt einen Assemblyverweis (verwaltet) im Projekt dar.
 
 |Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
@@ -45,7 +45,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="comreference"></a>COMReference
 
- Stellt einen COM-Komponentenverweis (nicht verwaltet) im Projekt dar. Dieses Element gilt nur für .NET-Projekte.
+Stellt einen COM-Komponentenverweis (nicht verwaltet) im Projekt dar. Dieses Element gilt nur für .NET-Projekte.
 
 |Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
@@ -59,7 +59,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="comfilereference"></a>COMFileReference
 
- Stellt eine Liste von Typbibliotheken dar, die an den Parameter `TypeLibFiles` des [ResolvedComreference](resolvecomreference-task.md)-Ziels übertragen werden. Dieses Element gilt nur für .NET-Projekte.
+Stellt eine Liste von Typbibliotheken dar, die an den Parameter `TypeLibFiles` des [ResolvedComreference](resolvecomreference-task.md)-Ziels übertragen werden. Dieses Element gilt nur für .NET-Projekte.
 
 |Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
@@ -67,7 +67,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="nativereference"></a>NativeReference
 
- Stellt eine systemeigene Manifestdatei oder einen Verweis auf eine solche Datei dar.
+Stellt eine systemeigene Manifestdatei oder einen Verweis auf eine solche Datei dar.
 
 |Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
@@ -76,7 +76,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="projectreference"></a>ProjectReference
 
- Stellt einen Verweis auf ein anderes Projekt dar.
+Stellt einen Verweis auf ein anderes Projekt dar. `ProjectReference`-Elemente werden durch das `ResolveProjectReferences`-Ziel in [Verweiselemente](#reference) transformiert. Daher können alle gültigen Metadaten für einen Verweis für `ProjectReference` gültig sein, wenn der Transformationsprozess diese nicht überschreibt.
 
 |Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
@@ -87,7 +87,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="compile"></a>Compile
 
- Stellt die Quelldateien für den Compiler dar.
+Stellt die Quelldateien für den Compiler dar.
 
 | Elementmetadatenname | Beschreibung |
 |-----------------------| - |
@@ -99,7 +99,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="embeddedresource"></a>EmbeddedResource
 
- Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.
+Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.
 
 | Elementmetadatenname | Beschreibung |
 |-----------------------| - |
@@ -114,7 +114,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="content"></a>Inhalt
 
- Stellt Dateien dar, die zwar nicht in das Projekt kompiliert werden, jedoch möglicherweise mit dem Projekt eingebettet oder veröffentlicht werden.
+Stellt Dateien dar, die zwar nicht in das Projekt kompiliert werden, jedoch möglicherweise mit dem Projekt eingebettet oder veröffentlicht werden.
 
 | Elementmetadatenname | Beschreibung |
 |-----------------------| - |
@@ -130,7 +130,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="none"></a>Keine
 
- Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.
+Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.
 
 | Elementmetadatenname | Beschreibung |
 |-----------------------| - |
@@ -144,7 +144,7 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
 
- Stellt Assemblyattribute dar, die als `[AssemblyMetadata(key, value)]` generiert werden sollen.
+Stellt Assemblyattribute dar, die als `[AssemblyMetadata(key, value)]` generiert werden sollen.
 
 | Elementmetadatenname | Beschreibung |
 |-----------------------| - |
@@ -156,16 +156,17 @@ In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
- Stellt das Basisanwendungsmanifest für den Build dar und enthält Sicherheitsinformationen für die ClickOnce-Bereitstellung.
+Stellt das Basisanwendungsmanifest für den Build dar und enthält Sicherheitsinformationen für die ClickOnce-Bereitstellung.
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
 
- Stellt das zu importierende FxCop-Projekt dar.
+Stellt das zu importierende FxCop-Projekt dar.
 
 ### <a name="import"></a>Importieren
 
- Stellt Assemblys dar, deren Namespaces vom Visual Basic-Compiler importiert werden sollen.
+Stellt Assemblys dar, deren Namespaces vom Visual Basic-Compiler importiert werden sollen.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)
+- [MSBuild-Eigenschaften für .NET Core SDK-Projekte](/dotnet/core/project-sdk/msbuild-props)

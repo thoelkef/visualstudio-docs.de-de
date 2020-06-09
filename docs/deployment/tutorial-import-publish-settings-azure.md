@@ -1,7 +1,7 @@
 ---
 title: Veröffentlichen in Azure durch Importieren von Veröffentlichungseinstellungen
 description: Erstellen und Importieren eines Veröffentlichungsprofils zum Bereitstellen einer Anwendung aus Visual Studio in Azure App Service
-ms.date: 05/07/2018
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65679192"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183313"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in Azure App Service durch Importieren von Veröffentlichungseinstellungen in Visual Studio
 
@@ -23,7 +23,7 @@ Sie können das Tool **Veröffentlichen** zum Importieren von Veröffentlichungs
 
 Die in diesem Artikel genannten Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-Apps in Visual Studio. Sie können auch Veröffentlichungseinstellungen für [Python-Apps](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) importieren.
 
-In diesem Lernprogramm lernen Sie Folgendes:
+In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
 > * Generieren einer Veröffentlichungseinstellungsdatei aus Azure App Service
@@ -33,7 +33,7 @@ In diesem Lernprogramm lernen Sie Folgendes:
 Eine Veröffentlichungseinstellungsdatei ( *\*.publishsettings*) unterscheidet sich von einem in Visual Studio erstellten Veröffentlichungsprofil ( *\*.pubxml*). Eine Veröffentlichungseinstellungsdatei wird von Azure App Service erstellt und kann anschließend in Visual Studio importiert werden.
 
 > [!NOTE]
-> Sie müssen lediglich ein Visual Studio-Veröffentlichungsprofil ( *\*.pubxml*-Datei) aus einer Installation von Visual Studio in eine andere kopieren. Das Veröffentlichungsprofil *\<Profilname\>.pubxml* finden Sie im Ordner *\\<Projektname\>\Properties\PublishProfiles* für verwaltete Projekttypen. Für Websites durchsuchen Sie den Ordner *\App_Data*. Die Veröffentlichungsprofile sind XML-Dateien von MSBuild.
+> Sie müssen lediglich ein Visual Studio-Veröffentlichungsprofil ( *\*.pubxml*-Datei) aus einer Installation von Visual Studio in eine andere kopieren. Das Veröffentlichungsprofil *\<profilename\>.pubxml* finden Sie im Ordner *\\<Projektname\>\Properties\PublishProfiles* für verwaltete Projekttypen. Suchen Sie im Ordner *\App_Data* nach Websites. Die Veröffentlichungsprofile sind XML-Dateien von MSBuild.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

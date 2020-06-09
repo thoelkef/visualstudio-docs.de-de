@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
-ms.openlocfilehash: 138b85d151aff5ecded4e8a69595518d05f12e7b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232230"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183924"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -21,6 +21,9 @@ Visual Studio-Abonnements bieten Zugriff auf eine große Auswahl von Microsoft-P
 Visual Studio-Abonnements enthalten in der Regel fünf Product Keys für aktuelle Versionen von Windows- und Office-Produkten sowie drei Product Keys für ältere Versionen.
 
 Bei den meisten Product Keys ist für jeden Schlüssel auch eine Mehrfachaktivierung des Produkts möglich.  Viele der Produkte lassen sich mindestens 30 Tage lang ohne Aktivierung installieren und verwenden.  Die meisten Abonnenten verfügen damit über genügend Aktivierungsmöglichkeiten, um ihre Bedürfnisse zu erfüllen.  Wenn die verfügbaren Aktivierungsmöglichkeiten für ein Produkt jedoch ausgeschöpft sind, können Sie über den [Kundendienst für Visual Studio-Abonnements](https://visualstudio.microsoft.com/subscriptions/support/) eine Anforderung für zusätzliche Schlüssel übermitteln.
+
+> [!NOTE]
+> Wenn Ihr Abonnement von Ihrem Unternehmen oder Ihrer Schule/Universität bereitgestellt wird, steuert Ihr Abonnementadministrator, ob Sie Zugriff auf Softwaredownloads haben.  Wenn der Zugriff auf Downloads für Ihr Abonnement deaktiviert ist, ist der Zugriff auf Product Keys ebenfalls deaktiviert.  Wenn Sie Downloads und/oder Product Keys benötigen, [wenden Sie sich an Ihren Administrator](contact-my-admin.md).
 
 ## <a name="activating-a-product"></a>Aktivieren eines Produkts
 Für bestimmte Produkte ist eine Aktivierung erforderlich.  Bei Visual Studio-Abonnements ist dies grundsätzlich auf Windows-, Windows Server-, Microsoft Office-Clientanwendungen und Expression Studio beschränkt. Viele der Produkte, für die eine Aktivierung erforderlich ist – einschließlich Windows und Office –, lassen sich mindestens 30 Tage lang ohne Aktivierung installieren und verwenden. Wenn Sie häufig ein Image Ihrer Computer erstellen (d.h. mindestens alle 30 Tage), sollten Sie das Produkt NICHT aktivieren. Mit den im Rahmen Ihres Visual Studio-Abonnements bereitgestellten Product Keys können Produkte nicht unbegrenzt aktiviert werden.
@@ -37,14 +40,14 @@ Microsoft ist bestrebt, die Integrität des Visual Studio-Abonnementprogramms so
 
 Der Grenzwert für die Inanspruchnahme von Product Keys liegt für alle Visual Studio-Abonnements (einschließlich derjenigen, die über MPN, BizSpark, MCT Software & Services und MCT angeboten werden) bei 10. Ausgenommen ist Visual Studio Professional (MPN), für das täglich maximal 7 Product Keys in Anspruch genommen werden können.
 
-Hinweis: Die Grenzwerte für die Inanspruchnahme von Product Keys können sich ändern. Hier finden Sie die jeweils aktuellen Grenzwerte.
+Hinweis: Die Grenzen für die Inanspruchnahme von Product Keys unterliegen Änderungen. Hier finden Sie die jeweils aktuellen Grenzwerte.
 
 Wenn Sie die maximale Anzahl von Product Keys in Anspruch genommen haben, die Ihnen für Ihr Abonnement in einem Zeitraum von 24 Stunden zur Verfügung stehen, wird Ihnen eine Fehlermeldung angezeigt, in der Ihnen mitgeteilt wird, dass Sie den Grenzwert erreicht haben. Der Grenzwert wird alle 24 Stunden zurückgesetzt, beginnend um 00:01 Pacific Time.
 
 Unsere Untersuchungen zeigen, dass für die meisten Abonnenten die in ihrem Abonnement enthaltene Anzahl von Product Keys ausreicht. Wenn Sie zusätzliche Product Keys benötigen, können Sie diese über den [Kundendienst für Visual Studio-Abonnements](https://visualstudio.microsoft.com/subscriptions/support/) anfordern. Der Antrag wird fallweise auf Genehmigung geprüft.
 
 ## <a name="accessing-product-keys"></a>Zugriff auf Product Keys
-Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite **Downloads** auf den blauen Link [Schlüssel abrufen](https://my.visualstudio.com/downloads) für ein bestimmtes Produkt klicken.  Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
+Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
@@ -60,7 +63,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
-|    Schlüsseltyp           |    BESCHREIBUNG                                                                                                                                                                                                           |
+|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nicht zutreffend                    |    Für die Installation dieses Produkts ist kein Schlüssel erforderlich.                                                       |
 |    Einzelhandel                     |    Mit Verkaufsschlüsseln sind mehrere Aktivierungen möglich. Sie werden für die Verkaufsversionen des Produkts verwendet. In vielen Fällen sind pro Schlüssel 10 Aktivierungen zulässig. Häufig sind jedoch weitere Aktivierungen auf demselben Computer zulässig.                                                       |
@@ -76,7 +79,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 Sie können einen Schlüssel von der Downloadseite des Produkts anfordern. Alternativ können Sie auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) nach dem erforderlichen Schlüssel suchen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)

@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3ec4b28f9af769d4765750ab48048e3b155fb48e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543897"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180342"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -19,7 +19,7 @@ ms.locfileid: "80543897"
 
 ## <a name="installing-net-core"></a>Installieren von .NET Core
 
-.NET Core 2.1 wird automatisch mit der Installation von Visual Studio für Mac installiert.
+.NET Core 3.1 wird automatisch mit der Installation von Visual Studio für Mac installiert. Weitere Informationen zu .NET Core-Versionen, die in Visual Studio für Mac unterstützt werden, finden Sie unter [.NET Core-Support](/visualstudio/mac/net-core-support).
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Erstellen einer ASP.NET Core-App in Visual Studio für Mac
 
@@ -35,6 +35,8 @@ Es gibt einige Projekte, die eine vorgefertigte Vorlage zum Erstellen einer ASP.
 - **.NET Core > API**
 - **.NET Core > Webanwendung**
 - **.NET Core > Webanwendung (Model View Controller)**
+- **.NET Core > Blazor Server-App**
+- **.NET Core > Blazor WebAssembly-App**
 
 ![ASP.NET-Projektoptionen](media/asp-net-core-2019-new-asp-core.png)
 
