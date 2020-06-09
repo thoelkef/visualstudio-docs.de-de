@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 3/23/2019
+ms.date: 5/19/2020
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,68 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b1d735cd05f79eaabd00a575a6c050b37ce2d16
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: cc1cbc98d4612c8f480cca0a9469d4a56da10bb3
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232821"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184782"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="4610"></a>4.6.1.0
+Veröffentlicht am 19. Mai 2020
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Warnen, wenn der Messaging Server auf der Unity-Seite nicht erstellt werden kann.
+  
+  - Ordnungsgemäßes Ausführen von Analysetools während der Lightweight-Kompilierung.
+  
+  - Ein Problem wurde behoben, bei dem eine MonoBehaviour-Klasse, die aus der UPE erstellt wurde, nicht mit dem Namen der Datei übereinstimmte.
+
+## <a name="4600"></a>4.6.0.0
+Veröffentlicht: 14. April 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Unterstützung für CodeLens (Unity-Skripts und -Meldungen) wurde hinzugefügt.
+  
+  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md)-Diagnose wurde hinzugefügt. Erkennen und Umschließen von Aufrufen von Coroutinen in `StartCoroutine()`.
+
+  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md)-Diagnose wurde hinzugefügt. Erkennen und Entfernen eines ungültigen oder redundanten `SerializeField`-Attributs.
+
+  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md)-Diagnose wurde hinzugefügt. Erkennen, dass `GetComponent()` mit einem Nicht-Komponenten- oder Nicht-Schnittstellentyp aufgerufen wurde.
+  
+  - [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Methoden mit dem `ContextMenu`-Attribut oder über ein Feld mit dem `ContextMenuItem`-Attribut referenziert nicht als nicht verwendet kennzeichnen.
+
+  - [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Methoden mit dem `ContextMenuItem`-Attribut nicht als nicht verwendet kennzeichnen.
+  
+  - [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md)-Unterdrückung für `IDE0044` wurde hinzugefügt. Felder mit dem `ContextMenuItem`-Attribut nicht mit Schreibschutz versehen.
+  
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) und [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) funktionieren jetzt für die `SerializeReference`- und `SerializeField`-Attribute.
+  
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Befehle zum Starten/Beenden nur an Unity senden, wenn der Editor kommunizieren kann.
+  
+  - QuickInfo-Dokumentation wurde mit geerbten Meldungen korrigiert.
+  
+  - Der Nachrichtenbereich für die `CreateInspectorGUI`-Nachricht wurde korrigiert.
+
+  - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) nicht für Methoden mit polymorphen Modifizierern melden.
+
+- **Auswertung:**
+
+  - Verarbeitung von using-Direktiven mit Alias korrigiert.
 
 ## <a name="4510"></a>4.5.1.0
 
@@ -29,13 +81,13 @@ Veröffentlichung: 16. März 2020
 
 - **Integration:**
 
-  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) hinzugefügt. Private Methoden, die mit Invoke, InvokeRepeating, StartCoroutine oder StopCoroutine verwendet werden, sollten nicht als nicht verwendet gekennzeichnet werden.
+  - [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Private Methoden, die mit Invoke, InvokeRepeating, StartCoroutine oder StopCoroutine verwendet werden, sollten nicht als nicht verwendet gekennzeichnet werden.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 - **Integration:**
 
-  - Die OnDrawGizmos/OnDrawGizmosSelected-Dokumentation wurde behoben.
+  - Die OnDrawGizmos/OnDrawGizmosSelected-Dokumentation wurde korrigiert.
 
 - **Auswertung:**
 
@@ -61,15 +113,15 @@ Veröffentlichung: 22. Januar 2020
 
   - Die Unterstützung für HLSL-Dateien wurde hinzugefügt.
   
-  - Eine Unterdrückung wurde zu [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) hinzugefügt. Private Felder mit dem `SerializeField`-Attribut sollten nicht als nicht verwendet gekennzeichnet werden.
+  - [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Private Felder mit dem `SerializeField`-Attribut sollten nicht als nicht verwendet gekennzeichnet werden.
   
-  - Eine Unterdrückung wurde zu [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) hinzugefügt. Felder mit dem `SerializeField`-Attribut sollten nicht als nicht zugewiesen gekennzeichnet werden.  
+  - [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)-Unterdrückung für `CS0649` wurde hinzugefügt. Felder mit dem `SerializeField`-Attribut sollten nicht als nicht zugewiesen gekennzeichnet werden.  
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 - **Integration:**
 
-  - Die Projektgenerierung wurde behoben (`GenerateTargetFrameworkMonikerAttribute`-Ziel wurde nicht immer ordnungsgemäß ermittelt).
+  - Projektgenerierung wurde korrigiert (`GenerateTargetFrameworkMonikerAttribute`-Ziel wurde nicht immer ordnungsgemäß ermittelt).
 
 ## <a name="4420"></a>4.4.2.0
 
@@ -115,7 +167,7 @@ Veröffentlichung: 15. Oktober 2019
 
 - **Integration:**
 
-  - Eine Unterdrückung für [`IDE0060`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) (nicht verwendeter Parameter) wurde für alle Unity-Meldungen hinzugefügt.
+  - [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md)-Unterdrückung für `IDE0060` (nicht verwendeter Parameter) wurde für alle Unity-Meldungen hinzugefügt.
   
   - QuickInfo für mit `TooltipAttribute` markierte Felder hinzugefügt. (Dies funktioniert auch für einen einfachen get-Accessor, der dieses Feld verwendet).
 
@@ -1097,7 +1149,7 @@ Veröffentlichung: 8. September 2015
 
 - Es wird keine Fehlermeldung mehr angezeigt, wenn Intellisense-XML-Dateien von Visual Studio gesperrt werden.
 
-- Verarbeiten bedingter <\<When Changed>>-Haltepunkte, wenn das bedingte Argument kein boolescher Wert ist.
+- Verarbeiten bedingter <\<When Changed>>-Breakpoints, wenn das bedingte Argument kein boolescher Wert ist.
 
 - Korrektur der Verweise auf Assemblys von UnityEngine und UnityEditor für Windows Store-Apps.
 

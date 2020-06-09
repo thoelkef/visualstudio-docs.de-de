@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c73adff20ea253ac854d99b90c4161a963343e29
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916523"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184808"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debuggen von Apps in einem lokalen Docker-Container
 
@@ -78,6 +78,16 @@ Sie können die Anwendung in einem Container starten, um Änderungen schnell zu 
     #endif
     
         // code omitted for brevity
+    }
+    ```
+
+    Ändern Sie die `Startup`-Methode wie folgt:
+
+    ```csharp
+    public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
+    {
+        Configuration = configuration;
+        Env = webHostEnvironment;
     }
     ```
 

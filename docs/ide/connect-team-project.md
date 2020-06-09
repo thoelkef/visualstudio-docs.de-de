@@ -1,16 +1,16 @@
 ---
 title: Herstellen einer Verbindung mit Projekten in Team Explorer
-ms.date: 03/31/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472743"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183703"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Herstellen einer Verbindung mit Projekten in Team Explorer
 
@@ -19,7 +19,7 @@ Verwenden Sie das Toolfenster **Team Explorer**, um Ihren Codeaufwand für die E
 ![Team Explorer-Homepage in Visual Studio](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> Wenn Sie Visual Studio öffnen und **Team Explorer** nicht angezeigt wird, öffnen Sie das Plug-In, indem Sie in der Menüleiste auf **Ansicht** > **Team Explorer** klicken.
+> Wenn Sie Visual Studio öffnen und **Team Explorer** nicht angezeigt wird, öffnen Sie das Plug-In, indem Sie in der Menüleiste auf **Ansicht** > **Team Explorer** klicken oder **STRG**+ **&#92;** , **STRG**+**M** drücken.
 
 ## <a name="connect-to-a-project-or-repository"></a>Herstellen einer Verbindung mit einem Projekt oder Repository
 

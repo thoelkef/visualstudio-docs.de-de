@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 37dcfd6351cfa3adde4c1825518dd2bea7ce9b34
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276500"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180557"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Melden eines Problems mit Visual Studio oder Visual Studio-Installer
 
@@ -45,9 +45,6 @@ Sie können ein Problem in Visual Studio oder dem Installationsprogramm über da
 
 1. Wenn Sie das gesuchte Problem nicht finden, klicken Sie am unteren Rand der Anzeige auf **Neues Problem melden**.
 
-   > [!NOTE]
-   > Die Schaltfläche **Neues Problem melden** ist nur in der Developer Community-Schnittstelle in Visual Studio verfügbar. Probleme können nicht direkt auf der [Developer Community](https://developercommunity.visualstudio.com/)-Website gemeldet werden.
-
 1. Geben Sie einen aussagekräftigen Titel für das Problem an, der uns die Weiterleitung an das richtige Visual Studio-Team erleichtert.
 
 1. Geben Sie zusätzliche Details und, wenn möglich, die Schritte zum Reproduzieren des Problems an.
@@ -72,7 +69,7 @@ Ablaufverfolgungs- und Heap-Abbilddateien sind nützlich für die Diagnose von P
 
 1. Klicken Sie auf die Registerkarte **Datensatz**.
 
-1. Wählen Sie unter **Zeichnen Sie Ihre Aktionen auf** die aktuelle Visual Studio-Instanz aus, wenn Sie das Problem dort reproduzieren können. Falls dies nicht der Fall ist, z.B. weil Visual Studio abgestürzt ist, klicken Sie auf **\<Create a new instance>** (<Neue Instanz erstellen>), um die Aktionen in einer neuen Visual Studio-Instanz aufzuzeichnen.
+1. Wählen Sie unter **Zeichnen Sie Ihre Aktionen auf** die aktuelle Visual Studio-Instanz aus, wenn Sie das Problem dort reproduzieren können. Falls dies nicht der Fall ist, z. B. weil Visual Studio abgestürzt ist, klicken Sie auf **\<Create a new instance>** , um die Aktionen in einer neuen Visual Studio-Instanz aufzuzeichnen.
 
 1. Klicken Sie auf **Aufzeichnung starten**. Erteilen Sie die Berechtigung zum Ausführen des Tools.
 

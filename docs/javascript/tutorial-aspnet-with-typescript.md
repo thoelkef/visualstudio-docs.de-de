@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e212aec6d2d3aa7e20cb0ca08c9ea604f32bb08c
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988550"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183092"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Erstellen einer ASP.NET Core-App mit TypeScript in Visual Studio
 
@@ -95,11 +95,9 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
    > [!NOTE]
    > Dieses Tutorial erfordert das NuGet-Paket. Alternativ können Sie in Ihren eigenen Apps das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) verwenden.
 
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten und wählen Sie **Hinzufügen > Neuer Ordner** aus. Verwenden Sie den Namen *scripts* für den neuen Ordner.
+1. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen**.
 
-1. Klicken Sie mit der rechten Maustaste auf den Ordner *scripts* und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen**.
-
-   Visual Studio fügt die Datei *tsconfig.json* zum Ordner *scripts* hinzu. Sie können mit dieser Datei für den TypeScript-Compiler [Optionen konfigurieren](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+   Visual Studio fügt die Datei *tsconfig.json* zum Projektstamm hinzu. Sie können mit dieser Datei für den TypeScript-Compiler [Optionen konfigurieren](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 1. Öffnen Sie *tsconfig.json* und ersetzen Sie den Standardcode durch den folgenden Code:
 
@@ -111,18 +109,19 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
        "removeComments": false,
        "sourceMap": true,
        "target": "es5",
-       "outDir": "../wwwroot/js"
+       "outDir": "wwwroot/js"
      },
-     "exclude": [
-       "node_modules",
-       "wwwroot"
+     "include": [
+       "scripts/**/*"
      ]
    }
    ```
 
    Die Option *outDir* gibt den Ausgabeordner für die einfachen JavaScript-Dateien an, die vom TypeScript-Compiler transpiliert werden.
 
-   Diese Konfiguration bietet eine grundlegende Einführung in die Verwendung von TypeScript. In anderen Szenarien, z. B. bei der Verwendung von [gulp oder webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html), möchten Sie vielleicht je nach Tools und Konfigurationseinstellungen einen anderen Zwischenspeicherort für die transpilierten JavaScript-Dateien verwenden als *../wwwwroot/js*.
+   Diese Konfiguration bietet eine grundlegende Einführung in die Verwendung von TypeScript. In anderen Szenarien, z. B. bei der Verwendung von [gulp oder webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html), möchten Sie vielleicht je nach Tools und Konfigurationseinstellungen einen anderen Zwischenspeicherort für die transpilierten JavaScript-Dateien verwenden als *wwwwroot/js*.
+
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten und wählen Sie **Hinzufügen > Neuer Ordner** aus. Verwenden Sie den Namen *scripts* für den neuen Ordner.
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner *scripts* und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript-Datei** aus, geben Sie den Namen *app.ts* als Dateinamen ein und klicken Sie dann auf **Hinzufügen**.
 
@@ -176,7 +175,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
     </div>
     ```
 
-1. Öffnen Sie den Ordner *Views/Shared* und öffnen Sie dann die Datei *_Layout.cshtml*.
+1. Öffnen Sie den Ordner *Views/Shared*, und öffnen Sie dann die Datei *_Layout.cshtml*.
 
 1. Fügen Sie die folgende Skriptreferenz vor dem Aufruf von `@RenderSection("Scripts", required: false)` hinzu:
 
@@ -190,7 +189,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
 
    Obwohl die App automatisch erstellt wird, wenn Sie sie ausführen, wollen wir einen Blick auf etwas werfen, das während des Buildvorgangs geschieht.
 
-1. Öffnen Sie den Ordner *wwwwroot/js* und Sie finden zwei neue Dateien, *app.js* und die Quellzuordnungsdatei *app.js.map*. Diese Dateien werden vom TypeScript-Compiler generiert.
+1. Öffnen Sie den Ordner *wwwwroot/js*. Sie finden zwei neue Dateien: *app.js* und die Quellzuordnungsdatei *app.js.map*. Diese Dateien werden vom TypeScript-Compiler generiert.
 
    Für die Fehlersuche werden Quellzuordnungsdateien benötigt.
 

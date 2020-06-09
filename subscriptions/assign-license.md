@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564159"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183469"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements
 Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
@@ -20,7 +20,7 @@ Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsport
 Für Benutzergruppen haben Sie die Wahl, wie Sie Abonnements zuweisen.  
 - Sie können Abonnements entweder einzeln zuweisen, oder
 - Sie laden mithilfe der Funktion [Massenhinzufügen](assign-license-bulk.md) Listen von Abonnenten und den zugehörigen Abonnementinformationen schnell und einfach hoch.
-- Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie Azure AD-Gruppen verwenden, um Benutzergruppen Abonnements zuzuweisen.  (Dieses Feature wird in Phasen bereitgestellt und ist möglicherweise nicht sofort für Ihre Organisation verfügbar.)
+- Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie [Azure AD-Gruppen verwenden](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions), um Benutzergruppen Abonnements zuzuweisen.  
 
 
 ## <a name="add-a-single-subscriber"></a>Einzelnen Abonnenten hinzufügen
@@ -39,7 +39,11 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer ein Visual Studio-Abo
    > [!div class="mx-imgBorder"]
    > ![Details von Abonnenten](_img/assign-license-add/subscriber-details.png)
 
-    Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnementsportal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet, stellen Sie sicher, dass die Umschaltfläche „Downloads“ im Abschnitt **Downloadeinstellungen** aktiviert ist. Wenn Sie die Downloads deaktivieren, hat der Benutzer zwar keinen Zugriff auf Softwaredownloads, aber trotzdem auf alle anderen Abonnementvorteile.
+    > [!NOTE]
+    > Damit Mitglieder eines Azure Active Directory-Mandanten sichtbar sind, wenn Sie einen Abonnentennamen eingeben, muss der Administrator Mitglied des Mandanten sein. 
+
+
+    Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnementsportal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet, stellen Sie sicher, dass die Umschaltfläche „Downloads“ im Abschnitt **Downloadeinstellungen** aktiviert ist. Wenn Sie Downloads deaktivieren, hat der Benutzer keinen Zugriff auf Softwaredownloads.  Der Zugriff auf Product Keys wird ebenfalls deaktiviert.  Der Abonnent hat weiterhin Zugriff auf alle anderen Vorteile, die im Abonnement enthalten sind.
    > [!div class="mx-imgBorder"]
    > ![Zugriff auf Downloads](media/access-to-downloads.png)
 

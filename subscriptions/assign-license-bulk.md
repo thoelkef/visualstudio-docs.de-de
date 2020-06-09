@@ -4,20 +4,24 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren entweder Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564185"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182897"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
 
 Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinzufügen verwenden. Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie hierzu alternativ Azure AD-Gruppen verwenden. In diesem Artikel wird das Vorgehen für beide Optionen beschrieben. 
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Verwenden des Massenhinzufügens zum Zuweisen von Abonnements
 1. Melden Sie sich unter https://manage.visualstudio.com beim Verwaltungsportal für Visual Studio-Abonnements an.
@@ -32,6 +36,9 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
    > Laden sie stets die neueste Vorlagenversion herunter. Wenn Sie eine ältere Version herunterladen, schlägt Ihr Massenupload möglicherweise fehl.
 
 3. Tragen Sie in die Felder der Excel-Tabelle die Informationen für die Personen ein, denen Sie Abonnements zuweisen möchten. (Das Ausfüllen des Felds *Verweis* ist optional.) Speichern Sie die Datei anschließend lokal.
+
+    > [!NOTE]
+    > Eines der Felder in der Vorlage ermöglicht Administratoren, die Möglichkeit zum Herunterladen von Software für Abonnenten zu aktivieren bzw. zu deaktivieren.  Durch das Deaktivieren von Downloads wird auch der Zugriff auf Product Keys deaktiviert.
 
    Beachten Sie die im Folgenden aufgelisteten bewährten Methoden, um einen fehlerfreien Upload zu gewährleisten:
 
@@ -74,12 +81,17 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 > [!IMPORTANT]
 >
 > Für die Verwendung von Azure AD-Gruppen zum Hinzufügen von Abonnements gelten die folgenden Einschränkungen:
+> - Der Administrator muss Mitglied des AAD-Mandanten sein, wenn dem Verwaltungsportal zunächst eine Gruppe hinzugefügt wird.  Nachdem die Gruppe hinzugefügt wurde, ist für Änderungen an der Mitgliedschaft der Gruppen kein Administratoreingriff erforderlich. 
 > - Gruppen müssen mindestens ein Mitglied enthalten.  Leere Gruppen werden nicht unterstützt.
 > - Gruppen müssen weniger als 1.000 Benutzer enthalten. 
 > - Alle Benutzer müssen auf oberster Ebene der Gruppe enthalten sein.  Geschachtelte Gruppen werden nicht unterstützt.
 > - Es werden nur vertrauenswürdige Vereinbarungen unterstützt.
 > - Alle Mitglieder der Gruppe müssen über eine E-Mail-Adresse verfügen, die mit ihrem Azure AD-Konto verknüpft ist.
 > - Separate E-Mail-Adressen für Benachrichtigungen werden für Abonnements nicht unterstützt, die über Azure AD-Gruppen hinzugefügt wurden.  
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
 1. Melden Sie sich unter [https://manage.visualstudio.com](https://manage.visualstudio.com) beim Verwaltungsportal für Visual Studio-Abonnements an.
 
@@ -106,9 +118,6 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 > [!NOTE]
 > Wenn Sie Abonnements bereits einzeln Benutzern zugewiesen haben, die anschließend zu einer Azure-AD-Gruppe hinzugefügt werden, werden sie zur Gruppe hinzugefügt und nicht mehr einzeln aufgeführt. Wenn das individuelle Abonnement jedoch für eine andere Abonnements gilt, verfügen sie über zwei Abonnements.  Beispiel:  Wenn ein Benutzer über ein individuelles Visual Studio Professional-Abonnement verfügt und Mitglied einer Gruppe ist, der Sie Visual Studio Enterprise-Abonnements hinzufügen, verfügt er über beide Abonnements.  
 
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Frage: Kann ich für die Zuweisung mehrere Abonnementebenen innerhalb einer Azure AD-Gruppe auswählen? 

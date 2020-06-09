@@ -1,24 +1,40 @@
 ---
-title: Produktivitätstipps
-ms.date: 2/21/2019
+title: Produktivitätsleitfaden
+ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ad93c03e1a1b260ee14cb27093403f27648d7
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544301"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184080"
 ---
-# <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
+# <a name="productivity-guide-for-visual-studio"></a>Produktivitätsleitfaden für Visual Studio
 
-In diesem Artikel werden Tipps für Visual Studio-Funktionen vorgestellt, die Ihnen helfen, Ihren Code schneller und effizienter zu schreiben, darin zu navigieren und zu debuggen.
+Wenn Sie beim Schreiben von Code Zeit sparen möchten, sind Sie hier richtig. Dieser Produktivitätsleitfaden enthält Tipps, die Sie bei ersten Schritten mit Visual Studio, beim Schreiben von Code, beim Debuggen von Code, beim Behandeln von Fehlern und bei der Verwendung von Tastenkombinationen unterstützen können. Und all dies auf einer Seite.
 
 Informationen zu nützlichen Tastenkombinationen finden Sie unter [Tastenkombinationen für die Produktivität](../ide/productivity-shortcuts.md). Eine vollständige Liste von Tastenkombinationen für Befehle finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="get-started"></a>Erste Schritte
+
+Sparen Sie Zeit beim Durchforsten von Menüs, indem Sie schnell nach allem suchen, was Sie benötigen, einschließlich Befehlen, Einstellungen, Dokumentation und Installationsoptionen. Zeigen Sie Tastenkombinationen für Befehle innerhalb Ihrer Suchergebnisse in Visual Studio an, damit Sie sich diese leichter merken können. 
+
+- **Mock-Code mit Aufgabenliste**. Wenn Sie nicht genügend Anforderungen haben, um ein Codesegment zu vervollständigen, verwenden Sie die Aufgabenliste, um Codekommentare, die Token wie `TODO` und `HACK` verwenden, nachzuverfolgen und um Verknüpfungen zu verwalten, mit denen Sie direkt zu einem vordefinierten Speicherort im Code gelangen. Weitere Informationen finden Sie unter [Verwenden der Aufgabenliste](../ide/using-the-task-list.md.).
+
+- **Verwenden von Tastenkombinationen im Projektmappen-Explorer**. Wenn Sie mit Visual Studio noch nicht vertraut sind, sind diese Tastenkombinationen praktisch und sparen Ihnen Zeit, während Sie schnell mit einer neuen Codebase arbeiten. Eine vollständige Liste der Tastenkombinationen finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
+
+- **[Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)** . Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese Tastenkombinationen anpassen und sie dann exportieren, damit andere Benutzer sie verwenden können. Sie können eine Tastenkombination im Dialogfeld „Optionen“ immer nachschlagen und ändern.
+
+- **Größere Barrierefreiheit in Visual Studio**. Visual Studio verfügt über integrierte Barrierefreiheitsfunktionen, die mit Sprachausgaben und anderen Hilfstechnologien kompatibel sind. Eine vollständige Liste der verfügbaren Funktionen finden Sie unter [Tipps und Tricks zur Barrierefreiheit für Visual Studio](../ide/reference/accessibility-tips-and-tricks.md). 
+
+- **Informieren Sie sich über den Projektlebenszyklus und die Wartung in Visual Studio**. Informationen dazu, wie Sie Updates für Visual Studio, Supportoptionen für Enterprise- und Professional-Kunden, Support für ältere Versionen von Visual Studio und Komponenten erhalten, die nicht von der Visual Studio-Wartung abgedeckt werden, finden Sie unter [Produktlebenszyklus und Wartung in Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/servicing). 
+
+- **Installieren und Verwalten von NuGet-Paketen in Visual Studio**. Über die Benutzeroberfläche des NuGet-Paket-Managers in Visual Studio können Sie auf einfache Weise NuGet-Pakete in Projekten und Lösungen installieren, deinstallieren und aktualisieren. Weitere Informationen finden Sie unter [Installieren und Verwalten von Paketen in Visual Studio mit dem NuGet-Paket-Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## <a name="write-code"></a>Schreiben von Code
 
@@ -44,9 +60,13 @@ Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.
 
 - **Verwenden von Beispielanwendungen**. Sie können Anwendungsentwicklung beschleunigen, indem Sie Beispielanwendungen von [Microsoft Developer Network](https://code.msdn.microsoft.com/) herunterladen und installieren. Sie können eine bestimmte Technologie oder ein Programmierkonzept auch kennenlernen, indem Sie ein Beispielpaket für diesen Bereich herunterladen und untersuchen.
 
-## <a name="navigate-within-your-code"></a>Navigieren innerhalb des Codes
+- **Ändern der Klammerformatierung durch Formatierung/Neue Zeilen**. Auf der Optionsseite **Formatierung** können Sie Optionen zur Formatierung von Code im Code-Editor festlegen, z. B. auch neue Zeilen. Weitere Informationen zur Verwendung dieser Einstellung in C# finden Sie im [Dialogfeld „Optionen“: Text-Editor > C# > Codeformat > Formatierung](../ide/reference/options-text-editor-csharp-formatting.md). Informationen zu C++ finden Sie unter [Festlegen der C++-Codierungseinstellungen in Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Informationen zu Python finden Sie unter [Formatieren von Python-Code](../python/formatting-python-code.md).
 
-Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code schneller zu finden und dorthin zu wechseln.
+- **Ändern des Einzugs mit Tabstoppzeichen**. Verwenden Sie benutzerdefinierte Editor-Einstellungen, die auf jede CodeBase individuell zugeschnitten sind, um einen konsistente Codierungsstil für mehrere Entwickler zu erzwingen, die an demselben Projekt mit verschiedenen Editoren und IDEs arbeiten. Stellen Sie sicher, dass Ihr gesamtes Team dieselben Sprachkonventionen, Benennungskonventionen und Formatierungsregeln befolgt. Da diese benutzerdefinierten Einstellungen portabel sind und mit Ihrem Code weitergegeben werden, können Sie Codierungsstile auch außerhalb von Visual Studio durchsetzen. Weitere Informationen finden Sie unter [Optionen, Text-Editor, Alle Sprachen, Tabstoppzeichen](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
+
+## <a name="navigate-within-your-code-and-the-ide"></a>Navigieren innerhalb des Codes und der IDE
+
+Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code schneller zu finden und dorthin zu wechseln. Sie können auch das Layout Ihrer Visual Studio-Fenster basierend auf Ihren Einstellungen ändern. 
 
 - **Speichern von Codezeilen als Lesezeichen**. Sie können Lesezeichen verwenden, um schnell zu bestimmten Codezeilen in einer Datei zu navigieren.
 
@@ -57,6 +77,14 @@ Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code sch
    Um auf dieses Feature zuzugreifen, wählen Sie in der Menüleiste **Bearbeiten** > **Navigieren zu** aus.
 
 - **Durchsuchen der Gesamtstruktur des Codes**. Im **Projektmappen-Explorer** können Sie Klassen und ihre Typen und Member in den Projekten suchen. Sie können auch nach Symbolen suchen, die Aufrufhierarchie einer Methode anzeigen, Symbolverweise suchen und andere Aufgaben ausführen. Wenn Sie ein Codeelement im **Projektmappen-Explorer** auswählen, wird die dazugehörige Datei auf einer Registerkarte **Vorschau** angezeigt, und der Cursor wird auf das Element in der Datei verschoben. Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md).
+
+- **Springen zu einer Position in einer Datei mit dem Zuordnungsmodus**. Im Zuordnungsmodus werden Codezeilen als Miniaturansicht auf der Scrollleiste angezeigt. Weitere Informationen zu diesem Anzeigemodus finden Sie unter [Vorgehensweise: Anpassen der Scrollleiste](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md#map-mode).
+
+- **Verstehen der Codestruktur mit Code Map**. Codezuordnungen können Sie dabei unterstützen, Abhängigkeiten im gesamten Code visuell darzustellen und zu erkennen, wie diese zusammenspielen, ohne dass Dateien und Codezeilen gelesen werden müssen. Weitere Informationen finden Sie unter [Map dependencies with code maps (Zuordnen von Abhängigkeiten mit Code Maps)](../modeling/map-dependencies-across-your-solutions.md).
+
+- **Weitere Informationen finden Sie unter „Häufig verwendete Dateien mit Bearbeiten/Zu zuletzt verwendeter Datei wechseln“** . Verwenden Sie die Wechseln zu-Befehle in Visual Studio, um eine zielgerichtete Suche in Ihrem Code auszuführen, damit Sie angegebene Elemente schneller finden. Ausführliche Anweisungen finden Sie unter [Suchen nach Code mithilfe von „Wechseln zu“-Befehlen](../ide/go-to.md).
+
+- **Verschieben des [Fensters „Eigenschaften“](../ide/reference/properties-window.md) auf die rechte Seite**. Wenn Sie ein vertrauteres Fensterlayout bevorzugen, können Sie das Fenster „Eigenschaften“ in Visual Studio verschieben, indem Sie **F4** drücken.
 
 ## <a name="find-items-faster"></a>Schnelleres Suchen von Elementen
 
@@ -88,6 +116,8 @@ Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeit
 
 Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihnen helfen, den Prozess zu beschleunigen.
 
+- **Verwenden der Visual Studio-Debuggertools**. Wenn Sie *Ihre App im Visual Studio-Kontext debuggen*, bedeutet dies in der Regel, dass Sie die Anwendung im Debugmodus ausführen. Der Debugger bietet viele Möglichkeiten zum Ermitteln der Aktionen Ihres Codes während der Ausführung. Eine Anleitung für die ersten Schritte finden Sie unter [Erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md). 
+
 - **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** zu finden ist, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.
 
     ![Auswählen von Debuggingoptionen für den Webbrowser](../ide/media/webbrowserdropdowntoolbar.png)
@@ -107,6 +137,12 @@ Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihn
 - **Löschen Sie das Direktfenster**. Sie können den Inhalt des [Direktfensters](../ide/reference/immediate-window.md) zur Entwurfszeit löschen, indem Sie `>cls` oder `>Edit.ClearAll` eingeben.
 
      Weitere Informationen zu weiteren Befehlen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).
+
+- **[Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)** . Mit CodeLens können Sie sich auf Ihre Arbeit konzentrieren, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Verweise auf Codeabschnitte und -änderungen, verknüpfte Fehler, Arbeitselemente, Code Reviews und Komponententests.
+
+- **Verwenden von Live Share, um in Echtzeit mit anderen Entwicklern zu debuggen**. Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Weitere Informationen finden Sie unter [Was ist Visual Studio Live Share?](https://docs.microsoft.com/visualstudio/liveshare/)
+
+- **Verwenden Sie des interaktiven Fensters zum Schreiben und Testen von kleinen Codeanschnitten**. Visual Studio bietet ein interaktives REPL-Fenster (Read-Evaluate-Print-Loop), mit dem Sie beliebigen Code eingeben und unmittelbare Ergebnisse anzeigen können. Diese Art der Codierung unterstützt Sie beim Lernen und Experimentieren mit APIs und Bibliotheken und beim interaktiven Entwickeln von funktionierendem Code, den Sie in Ihre Projekte einfügen können. Weitere Informationen für Python finden Sie unter [Arbeiten mit dem interaktiven Python-Fenster](../python/python-interactive-repl-in-visual-studio.md). Die Funktion „Interaktives Fenster“ ist auch für C# verfügbar. 
 
 ## <a name="access-visual-studio-tools"></a>Zugreifen auf Visual Studio-Tools
 
@@ -138,12 +174,12 @@ Bei der Entwicklung einer Anwendung möchten Sie jederzeit in mehreren Codedatei
 
    Sie können Dateien auch einfacher verwalten, indem Sie eine weitere Instanz des **Projektmappen-Explorers** erstellen und sie auf einen anderen Bildschirm verschieben. Um eine andere Instanz des **Projektmappen-Explorers** zu erstellen, öffnen Sie ein Kontextmenü im **Projektmappen-Explorer**, und wählen Sie dann **Neue Projektmappen-Explorer-Ansicht** aus.
 
-- **Passen Sie die Schriftarten an, die in Visual Studio angezeigt werden**. Sie können die Schriftart, Größe und Farbe ändern, die für Text in der IDE verwendet wird. Beispielsweise können Sie die Farbe von bestimmten Codeelementen im Editor und die Schriftart in Toolfenstern oder in der IDE anpassen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) und [Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Passen Sie die Schriftarten an, die in Visual Studio angezeigt werden**. Sie können die Schriftart, Größe und Farbe ändern, die für Text in der IDE verwendet wird. Beispielsweise können Sie die Farbe von bestimmten Codeelementen im Editor und die Schriftart in Toolfenstern oder in der IDE anpassen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) und [Vorgehensweise: Ändern der im Editor in Visual Studio 2017 verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Blogbeitrag mit Tipps und Tricks zu Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Standardtastenkombinationen für häufig verwendete Befehle](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../get-started/csharp/tutorial-wpf.md)
+- [How to: Anpassen von Menüs und Symbolleisten in Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Tutorial: Create a simple application with C# or Visual Basic (Tutorial: Erstellen einer einfachen Anwendung mit C# oder Visual Basic)](../get-started/csharp/tutorial-wpf.md)
 - [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)

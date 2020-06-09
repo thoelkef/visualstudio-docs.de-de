@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594889"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184054"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
 
@@ -64,7 +64,7 @@ Sie können den Schalter **-fileLogger** (**fl**) verwenden, um Builddaten in ei
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- Im folgenden Beispiel heißt die Protokolldatei *MyProjectOutput.log*, und der Ausführlichkeitsgrad der Protokollausgabe ist auf `diagnostic` festgelegt. Geben Sie diese beiden Einstellungen mithilfe des Schalters **-filelogparameters** (`flp`) an.
+ Im folgenden Beispiel heißt die Protokolldatei *MyProjectOutput.log*, und der Ausführlichkeitsgrad der Protokollausgabe ist auf `diagnostic` festgelegt. Geben Sie diese beiden Einstellungen mithilfe des Schalters **-fileLoggerParameters** (`flp`) an.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -76,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
  Im folgenden Beispiel wird das gesamte Protokoll in *msbuild1.log*, nur die Fehler in *JustErrors.log* und nur die Warnungen in *JustWarnings.log* gespeichert. Im Beispiel werden Dateinummern für jede der drei Dateien verwendet. Die Dateinummern werden nach den Schaltern **-fl** und **-flp** angegeben (z.B. `-fl1` und `-flp1`).
 
- Die Schalter **-filelogparameters** (`flp`) für die Dateien 2 und 3 gibt an, wie jede Datei benannt werden und was sie enthalten soll. Es wird kein Name für die Datei 1 angegeben, deshalb wird der Standardname *msbuild1.log* verwendet.
+ Die Schalter **-fileLoggerParameters** (`flp`) für die Dateien 2 und 3 gibt an, wie jede Datei benannt werden und was sie enthalten soll. Es wird kein Name für die Datei 1 angegeben, deshalb wird der Standardname *msbuild1.log* verwendet.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
@@ -102,7 +102,7 @@ Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuil
 
  In der MSBuild-Befehlszeile geben Sie die benutzerdefinierte Protokollierung mithilfe des Schalters **-logger** an. Sie können auch den Schalter **-noconsolelogger** verwenden, um die Standardkonsole zu deaktivieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Buildprotokollierungen](../msbuild/build-loggers.md)

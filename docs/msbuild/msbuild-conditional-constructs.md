@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633381"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184288"
 ---
 # <a name="msbuild-conditional-constructs"></a>Bedingte Konstrukte in MSBuild
 
@@ -77,6 +77,18 @@ MSBuild stellt einen Mechanismus für die Entweder/Oder-Verarbeitung mit den Ele
     </Choose>
     <!-- Rest of Project -->
 </Project>
+```
+
+In diesem Beispiel wird eine Bedingung für eine Compilerkonstante `DEFINED_CONSTANT` verwendet. Diese ist in der `DefinedConstants`-Eigenschaft enthalten. Der reguläre Ausdruck wird verwendet, um die Konstante in einer durch Semikolons getrennten Liste genau abzugleichen.
+
+```xml
+<Choose>
+   <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(
+         $(DefineConstants), '^(.*;)*DEFINED_CONSTANT(;.*)*$'))">
+      <!-- When DEFINED_CONSTANT is defined. -->
+   </When>
+   <!-- other conditions -->
+</Choose>
 ```
 
 ## <a name="see-also"></a>Siehe auch

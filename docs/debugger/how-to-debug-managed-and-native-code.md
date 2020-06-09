@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416359"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182637"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
@@ -139,7 +139,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
     Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
     > [!NOTE]
-    > Sie könnten das neue verwaltete Projekt Ihrer bereits vorhandenen C++-Projektmappe hinzufügen. Wenn Sie jedoch eine neue Projektmappe erstellen, werden mehr Debuggingszenarios unterstützt.
+    > Sie können das neue verwaltete Projekt auch Ihrer vorhandenen C++-Projektmappe hinzufügen. Wir erstellen das Projekt in einer neuen Projektmappe, um das Debuggen im gemischten Modus schwieriger zu gestalten.
 
    Visual Studio erstellt das leere Projekt und zeigt es im **Projektmappen-Explorer** an.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: EditorConfig-Einstellungen
 ms.date: 08/01/2018
 ms.topic: conceptual
@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: d356b9817213aebe2d0c6923097a90aa037ba3fd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81648528"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183261"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 

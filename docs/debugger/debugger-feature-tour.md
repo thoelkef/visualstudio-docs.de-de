@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77578954"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184210"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -93,9 +93,7 @@ Mit diesem Befehl wird die Ausführung der App so lange fortgesetzt (und der Deb
 
 ## <a name="run-to-cursor"></a>Ausführen bis Cursor
 
-Beenden Sie den Debugger, indem Sie auf die rote Schaltfläche **Debuggen beenden**![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Debuggen beenden") klicken oder die Tastenkombination **UMSCHALTTASTE** + **F5** verwenden.
-
-Klicken Sie mit der rechten Maustaste auf eine Codezeile in Ihrer App, und wählen Sie **Ausführen bis Cursor** aus. Dadurch wird das Debuggen gestartet und ein temporärer Breakpoint in der aktuellen Codezeile festgelegt.
+Wenn Sie Code bearbeiten (anstatt ihn im Debugger anzuhalten), klicken Sie mit der rechten Maustaste auf eine Codezeile in Ihrer App, und wählen Sie dann **Ausführen bis Cursor** aus. Dadurch wird das Debuggen gestartet und ein temporärer Breakpoint in der aktuellen Codezeile festgelegt.
 
 ![Ausführen bis Cursor](../debugger/media/dbg-tour-run-to-cursor.png "Ausführen bis Cursor")
 

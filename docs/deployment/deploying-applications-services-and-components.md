@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543959"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183001"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
-Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, verteilen Sie diese für die Installation auf anderen Computern, Geräten, Servern oder in der Cloud. Wählen Sie die entsprechende Methode für den Typ der Bereitstellung in Visual Studio aus, den Sie benötigen. (Viele App-Typen unterstützen andere Bereitstellungstools, welche hier nicht beschrieben werden, z. B. das Tool zur Bereitstellung der Befehlszeile.)
+Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, verteilen Sie diese für die Installation auf anderen Computern, Geräten, Servern oder in der Cloud. Wählen Sie die entsprechende Methode für den Typ der Bereitstellung in Visual Studio aus, den Sie benötigen. (Viele App-Typen unterstützen andere Bereitstellungstools wie das Befehlszeilen-Bereitstellungstool oder NuGet, welche hier nicht beschrieben werden.)
 
 Sehen Sie sich die Schnellstarts und Tutorials an, um ausführliche Anweisungen für die Bereitstellung anzuzeigen. Eine Übersicht der Bereitstellungsoptionen finden Sie unter [Welche Optionen für die Veröffentlichung sind für mich geeignet?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -44,7 +44,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
     ![„Veröffentlichen“ auswählen](../deployment/media/quickstart-publish.png)
 
-- **Windows-Desktop:** Sie können eine Windows-Desktopanwendung mit der ClickOnce-Bereitstellung in einem Ordner veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLI finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows-Desktop:** Sie können eine Windows-Desktopanwendung mit der ClickOnce-Bereitstellung in einem Ordner veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
@@ -77,13 +77,13 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
     Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Tool „Veröffentlichen“ die gewünschte Option aus, und führen Sie die Konfigurationsschritte aus.
 
-    ![Auswählen von IIS, FTP, usw.](../deployment/media/quickstart-publish-iis-ftp.png)
+    ![Auswählen von IIS](../deployment/media/quickstart-publish-iis.png)
 
     Weitere Informationen zum Importieren eines Veröffentlichungsprofils in Visual Studio, finden Sie unter [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Es gibt noch viele weitere Möglichkeiten, ASP.NET-Anwendungen und -Dienste bereitzustellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und -Diensten](/aspnet/mvc/overview/deployment/).
+    Es gibt noch viele weitere Möglichkeiten, ASP.NET-Anwendungen und -Dienste bereitzustellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und -Diensten](/aspnet/overview/deployment).
 
-- **Windows Desktop**: Mit der ClickOnce-Bereitstellung können Sie eine Windows-Desktopanwendung auf einem Webserver oder in einer Netzwerk-Dateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLI finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop**: Mit der ClickOnce-Bereitstellung können Sie eine Windows-Desktopanwendung auf einem Webserver oder in einer Netzwerk-Dateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Veröffentlichen im Microsoft Store
 
@@ -93,16 +93,9 @@ Sie können aus Visual Studio App-Pakete zur Bereitstellung im Microsoft Store e
 
     ![Erstellen eines App-Pakets](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows-Desktop:** Eine Bereitstellung im Microsoft Store ist ab Version 15.4 in Visual Studio 2017 möglich. Erstellen Sie hierzu als Erstes ein Paketerstellungsprojekt für Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer Desktop-App für den Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
+- **Windows-Desktop:** Eine Bereitstellung im Microsoft Store ist mithilfe der ab Version 15.4 in Visual Studio 2017 verfügbaren Desktop-Brücke möglich. Erstellen Sie hierzu als Erstes ein Paketerstellungsprojekt für Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer Desktop-App für den Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-    ![Packen einer Desktop-App](../deployment/media/feature-tour-desktop-bridge.png)
-
-## <a name="deploy-net-packages-to-nugetorg"></a>Bereitstellen von .NET-Paketen in NuGet.org
-
-Zum Bereitstellen von gepacktem Code in „Paketen“, die kompilierten Code (in Form von DLLs) sowie weitere Inhalte enthalten, die von den Projekten benötigt werden, die diese Pakete nutzen, können Sie das NuGet-Paket in Visual Studio erstellen und den endgültigen Bereitstellungsbefehl in einem Befehlszeilenschnittstellentool ausgeben.
-
-- [Erstellen und Veröffentlichen eines .NET Standard-Pakets](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-- [Erstellen und Veröffentlichen eines .NET Framework-Pakets](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
+    ![Desktop-Brücke](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-to-a-device-uwp"></a>Bereitstellen für ein Gerät (UWP)
 
@@ -112,13 +105,12 @@ Wenn Sie eine UWP-App zum Testen auf einem Gerät bereitstellen, lesen Sie mehr 
 
 Wenn Sie eine komplexere Installation einer Desktop-Anwendung benötigen als [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) sie bietet, können Sie ein Windows Installer-Paket (MSI- oder EXE-Installationsdatei) oder einen benutzerdefinierten Bootstrapper erstellen.
 
-- Mithilfe der [WiX-Toolseterweiterung](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset) kann ein MSI-basiertes Installationspaket erstellt werden. Dabei handelt es sich um ein Befehlszeilentoolset.
+- Mithilfe der [WiX-Toolset-Erweiterung für Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) kann ein MSI-basiertes Installer-Paket erstellt werden. Dabei handelt es sich um ein Befehlszeilentoolset.
 
-   ::: moniker range=">=vs-2019"
-   Laden Sie sich für Visual Studio 2019 die [WiX-Toolseterweiterung für Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension) herunter.
-   ::: moniker-end
+- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 und höheren Versionen verwendet werden (Community Edition wird nicht unterstützt). 
 
-- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 und höheren Versionen verwendet werden (Community Edition wird nicht unterstützt). Beachten Sie, dass InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist und in Visual Studio 2017 und höheren Versionen nicht unterstützt wird. Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
+  > [!NOTE]
+  > InstallShield Limited Edition ist nicht mehr in Visual Studio enthalten und wird in Visual Studio 2017 und höheren Versionen nicht unterstützt. Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 
 - MSI- oder EXE-Installer-Pakete können mithilfe eines Setupprojekts (vdproj) erstellt werden. Installieren Sie die [Projekterweiterung für Visual Studio-Installer](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview), um diese Option zu verwenden.
 
@@ -146,7 +138,7 @@ Sie können Azure Pipelines verwenden um Continuous Deployment (kontinuierliche 
 
 | App-Typ | Bereitstellungsszenario | Link |
 | --- | --- | --- |
-| **Office-App** | Sie können ein Add-In für Office aus Visual Studio veröffentlichen. | [Bereitstellen und Veröffentlichen Ihres Office-Add-Ins](/office/dev/add-ins/publish/publish) |
+| **Office-App** | Sie können ein Add-In für Office aus Visual Studio veröffentlichen. | [Bereitstellen und Veröffentlichen Ihres Office-Add-Ins](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF oder OData-Dienst** | Für andere Anwendungen können WCF RIA-Dienste verwendet werden, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch wird ab Visual Studio 2017 nicht mehr unterstützt, kann aber aus Visual Studio 2015 und niedrigeren Versionen immer noch bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

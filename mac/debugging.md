@@ -3,15 +3,15 @@ title: Debuggen mit Visual Studio für Mac
 description: Das Debuggen ist ein üblicher und notwendiger Teil des Programmierens. Da Visual Studio für Mac eine ausgereifte IDE ist, enthält es eine Reihe von Features, die das Debuggen vereinfachen. Dieser Artikel erläutert vom sicheren Debuggen bis hin zur Datenvisualisierung, wie das volle Potenzial des Debuggens in Visual Studio für Mac genutzt werden kann.
 author: therealjohn
 ms.author: johmil
-ms.date: 12/13/2019
+ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75397936"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183981"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debuggen mit Visual Studio für Mac
 
@@ -43,7 +43,7 @@ Sie können alle gesetzten Haltepunkte in Ihrem Code anzeigen lassen, indem Sie 
 
 ![Liste der Haltepunkte](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>Starten des Debugvorgangs
+## <a name="start-debugging"></a>Debugging starten
 
 Wählen Sie zum Starten des Debuggens den Zielbrowser, das Gerät bzw. den Simulator/Emulator aus:
 
@@ -87,6 +87,15 @@ Hier sind die vier Schaltflächen:
 * **Einzelschritt**: Dadurch wird ebenfalls die nächste Codezeile ausgeführt. Wenn die nächste Zeile ein Funktionsaufruf ist, wird der Einzelschritt in der ersten Zeile der Funktion anhalten, wodurch Sie die Funktion dann Zeile für Zeile debuggen können. Wenn die nächste Zeile keine Funktion ist, funktioniert diese Schaltfläche genauso wie der Prozedurschritt.
 * **Rücksprung**: Dadurch wird zu der Zeile zurückgekehrt, in der die aktuelle Funktion aufgerufen wurde.
 
+## <a name="change-which-statement-is-executed-next"></a>Ändern, welche Anweisung als nächstes ausgeführt wird
+
+Während der Debugger angehalten wird, zeigt ein Pfeil im Rand an, welche Codezeile als nächstes ausgeführt wird. Sie können auf den Pfeil klicken und ihn in eine andere Codezeile ziehen, um zu ändern, welche Anweisung ausgeführt wird. Sie können das gleiche Ergebnis erreichen, indem Sie mit der rechten Maustaste auf eine Codezeile klicken und im Kontextmenü die Option **Nächste Anweisung festlegen** auswählen.
+
+![Drag & Drop-Pfeil zum Festlegen der nächsten Anweisung](media/debugger-drag-setnextstatement.gif)
+
+> [!CAUTION]
+> Das Ändern der aktuellen Ausführungszeile kann in einer Anwendung zu unerwartetem Verhalten führen. Es gibt auch einige Situationen, in denen es nicht möglich ist, die nächste auszuführende Anweisung zu ändern. Wenn Sie z. B. den Pfeil von einer Methode auf eine andere Methode ziehen, funktioniert dies nicht. In diesen nicht unterstützten Fällen wird in Visual Studio für Mac ein Dialogfeld angezeigt, das Sie informiert, dass es nicht möglich war, die aktuelle Ausführungszeile zu ändern. 
+
 ## <a name="debugging-monos-class-libraries"></a>Debuggen der Mono-Klassenbibliotheken
 
 Xamarin-Produkte enthalten den Quellcode für die Mono-Klassenbibliotheken, die Sie verwenden können, um in einem einzigen Schritt vom Debugger zu einer Überprüfung der Vorgänge im Hintergrund zu gelangen.
@@ -97,6 +106,6 @@ Navigieren Sie zu **Visual Studio for Mac > Preferences > Debugger** (Visual Stu
 
 ![Option „Step into External Code“ (In externen Code springen)](media/debugging-image8.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Debuggen in Visual Studio (unter Windows)](/visualstudio/debugger/)

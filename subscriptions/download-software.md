@@ -7,18 +7,19 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: Informationen zum Suchen und Herunterladen von Microsoft-Softwaretiteln in Visual Studio-Abonnements
-ms.openlocfilehash: 4196d8bcf256a624f34ae0b66e11f536e3c2c2ec
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232610"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180232"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Herunterladen von Softwaretiteln in Visual Studio-Abonnements
 Je nachdem, über welches Visual Studio-Abonnement Sie verfügen, können Sie auf eine Vielzahl von Softwaretiteln zurückgreifen.  In diesem Artikel wird erläutert, wie Sie die benötigte Software suchen und finden, um Ihr Abonnement optimal zu nutzen. 
 
-> [!NOTE]
-> Nur die Downloads, die in Ihrem Abonnement enthalten sind, werden auf der Seite [Downloads](https://my.visualstudio.com/downloads/featured) angezeigt.  Wenn Sie über mehr als ein Abonnement oder mehr als eine Programmmitgliedschaft verfügen, werden die Downloads für Ihr **höchstes Abonnement** angezeigt, auch wenn Sie zu dem Zeitpunkt ein anderes Abonnement abrufen.  Wenn Sie beispielsweise über ein Visual Studio Enterprise- und ein Visual Studio Professional-Abonnement verfügen, die beide derselben Anmelde-ID zugeordnet sind, werden die Downloads angezeigt, die im Visual Studio Enterprise-Abonnement enthalten sind, auch wenn Sie derzeit die Vorteile des Professional-Abonnements anzeigen lassen.
+Nur die Downloads, die in Ihrem Abonnement enthalten sind, werden auf der Seite [Downloads](https://my.visualstudio.com/downloads/featured) angezeigt.  Wenn Sie über mehr als ein Abonnement oder mehr als eine Programmmitgliedschaft verfügen, werden die Downloads für Ihr **höchstes Abonnement** angezeigt, auch wenn Sie zu dem Zeitpunkt ein anderes Abonnement abrufen.  Wenn Sie beispielsweise über ein Visual Studio Enterprise- und ein Visual Studio Professional-Abonnement verfügen, die beide derselben Anmelde-ID zugeordnet sind, werden die Downloads angezeigt, die im Visual Studio Enterprise-Abonnement enthalten sind, auch wenn Sie derzeit die Vorteile des Professional-Abonnements anzeigen lassen.  
+
+Wenn Ihr Abonnement von Ihrem Unternehmen oder Ihrer Schule/Universität bereitgestellt wird, steuert Ihr Abonnementadministrator, ob Sie Zugriff auf Downloads haben. Durch das Deaktivieren des Zugriffs auf Downloads wird auch der Zugriff auf Product Keys deaktiviert. Wenn Sie keinen Zugriff auf Downloads und Product Keys haben, jedoch Zugriff benötigen, [wenden Sie sich an Ihren Administrator](contact-my-admin.md).
 
 > [!NOTE]
 > Ein Problem mit der Verfügbarkeit von Office 365-Product Keys ist bekannt.  Die Ursache wird derzeit untersucht. Dieser Artikel wird aktualisiert, sobald das Problem behoben wurde. 

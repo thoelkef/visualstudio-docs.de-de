@@ -1,7 +1,7 @@
 ---
 title: Installation und Verwendung hinter einer Firewall oder einem Proxy
 description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Zulassungsliste setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
-ms.date: 02/01/2020
+ms.date: 05/13/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223657"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180440"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -132,11 +132,11 @@ Um sicherzustellen, dass Sie bei der Verwendung von Visual Studio oder Azure-Die
 | Entwicklercommunity | sendvsfeedback2.azurewebsites.net/api | https/443 | Wird zum Aufrufen von Developer Community Feedback Tool-APIs verwendet (Meine Probleme, Suchen, Abstimmungen, Kommentare, gegebenes Feedback, Uploads, Lebenslauf) |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Wird zum Aufrufen von Intellicode-APIs verwendet |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Wird zum Aufrufen von Live Share-APIs verwendet |
-| Visual Studio Online | \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von Visual Studio Online-APIs verwendet |
+| Visual Studio Codespaces | \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von Visual Studio Codespaces-APIs verwendet |
 | Automatische Typerfassung für JavaScript | registry.npmjs.org | https/443 | Wird verwendet zum Installieren von TypeScript-Typdefinitionen, um IntelliSense für häufig verwendete JavaScript-Bibliotheken zur Verfügung zu stellen |
 | Lizenzierungsdienst für Visual Studio-Abonnements | app.vssps.visualstudio.com/apis/<br/>Licensing/ClientRights | https/443 | Lizenzierung für Online-Aktivierung |
 | Debugger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Wird zum Herunterladen von Debuggerbits für das .NET Core-Debuggen unter Unix oder macOS über SSH verwendet <br><br>2. <br>Wird zum Herunterladen von Debuggerbits für das Debuggen von Docker für Windows-Remotecontainer verwendet<br><br> 3. Wird für das Durchlaufen des .NET Framework-Quellcodes verwendet <br><br> 4. <br>(Bei Benutzeranmeldung) Wird für das Herunterladen von Symbolen verwendet, die für NuGet.org-Symbolserver veröffentlicht wurden<br><br> 5. (Bei Benutzeranmeldung) Wird für das Herunterladen von Microsoft-Symbolen und Binärdateien verwendet, und möglicherweise für das Debuggen von verwaltetem Code in Speicherabbildern |
-| Visual Studio Online| \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von Visual Studio Online-APIs verwendet |
+| Visual Studio Codespaces| \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von Visual Studio Codespaces-APIs verwendet |
 | Veröffentlichen von Xamarin Android-Apps | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Wird für die Interaktion mit dem Google Play Store-Dienst zum Veröffentlichen/Hochladen von Xamarin Android-Anwendungen direkt in Visual Studio verwendet |
 | Azure Container Registry | *.azurecr.io | https/443 | Zugriff für auf Azure gehostete Containerregistrierungen für die Konfiguration von CI/CD-Pipelines |
 | | | | |

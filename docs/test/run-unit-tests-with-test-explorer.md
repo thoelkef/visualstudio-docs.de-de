@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 429892e3022854cac157605117f955fd672f8997
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278520"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182923"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -27,9 +27,7 @@ Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektma
 
 ## <a name="run-tests-in-test-explorer"></a>Ausführen von Tests im Test-Explorer
 
-
-Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
-
+Wenn Sie das [Testprojekt erstellen](../test/getting-started-with-unit-testing.md), werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
 ::: moniker range="vs-2017"
 ![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)

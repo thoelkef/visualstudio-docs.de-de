@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094577"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183066"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory-Aufgabe
 
@@ -43,7 +43,7 @@ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |`DestinationFile`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter<br /><br /> Der vollständige Pfad der *ZIP*-Datei, die erstellt werden soll.|
-|`Overwrite`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wird die Zieldatei überschrieben, sofern diese vorhanden ist. Wird standardmäßig auf `false` festgelegt.|
+|`Overwrite`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wird die Zieldatei überschrieben, sofern sie vorhanden ist. Wird standardmäßig auf `false` festgelegt.|
 |`SourceDirectory`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Legt das Verzeichnis fest, aus dem ein *ZIP*-Archiv erstellt werden soll.|
 
 ## <a name="remarks"></a>Hinweise

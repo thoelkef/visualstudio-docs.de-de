@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564172"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183612"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -50,7 +50,10 @@ Wenn Ihr Visual Studio-Abonnement abläuft oder gekündigt wird, sind alle Abonn
 
 Es gibt mehrere Möglichkeiten, weiterhin ein monatliches Guthaben für Azure zu verwenden.  Unabhängig der Aktion, die Sie unten auswählen, müssen Sie [Ihre Ressourcen in ein anderes Azure-Abonnement übertragen](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription),um Ihre Azure-Ressourcen zu speichern. 
 
-- **Wenn Sie Ihr neues Visual Studio-Abonnement direkt erworben haben**, erwerben Sie ein neues Abonnement, oder verlängern Sie Ihr Abonnement über den [Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=).  
+- **Wenn Sie Ihr neues Visual Studio-Abonnement direkt erworben haben**, erwerben Sie ein neues Abonnement, oder verlängern Sie Ihr Abonnement über den Microsoft Store.  
+    - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 - **Wenn jemand in Ihrer Organisation für den Erwerb von Abonnements zuständig ist**, [wenden Sie sich an Ihren Administrator für Visual Studio-Abonnements](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin), und fordern Sie ein Abonnement an, das das gewünschte monatliche Guthaben bereitstellt.  
 - **Wenn Sie über ein anderes aktives Visual Studio-Abonnement mit derselben Abonnementstufe verfügen**, das mit einem anderen Microsoft-Konto verknüpft ist, können Sie den Azure-Vorteil möglicherweise auf ein anderes aktives Visual Studio-Abonnement übertragen, indem Sie im [Visual Studio-Abonnementportal](https://my.visualstudio.com/subscriptions) [ein alternatives Konto hinzufügen](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile).  
 
