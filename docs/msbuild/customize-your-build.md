@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77652793"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180401"
 ---
 # <a name="customize-your-build"></a>Anpassen Ihres Builds
 
@@ -73,7 +73,14 @@ Der Speicherort der Projektmappendatei ist für *Directory.Build.props* ohne Bed
 
 *Directory.Build.props* wird zu einem frühen Zeitpunkt in *Microsoft.Common.props* importiert, und später definierte Eigenschaften sind dafür nicht verfügbar. Vermeiden Sie deshalb das Verweisen auf Eigenschaften, die noch nicht definiert sind (und als leer ausgewertet werden).
 
-*Directory.Build.targets* wird aus *Microsoft.Common.targets* importiert, nachdem *TARGETS*-Dateien aus NuGet-Paketen importiert wurden. Deshalb kann es zum Überschreiben der meisten in der Buildlogik definierten Eigenschaften und Ziele verwendet werden. In manchen Fällen kann es jedoch erforderlich sein, dass Sie nach dem abschließenden Import Anpassungen an der Projektdatei vornehmen.
+Eigenschaften, die in *Directory.Build.props* festgelegt werden, können an anderer Stelle in der Projektdatei oder in importierten Dateien überschrieben werden, daher sollten Sie sich die Einstellungen in *Directory.Build.props* als Angabe der Standardeinstellungen für Ihre Projekte vorstellen.
+
+*Directory.Build.targets* wird aus *Microsoft.Common.targets* importiert, nachdem *TARGETS*-Dateien aus NuGet-Paketen importiert wurden. Die Datei kann also Eigenschaften und Ziele, die in den meisten Buildlogiken definiert sind, außer Kraft setzen oder Eigenschaften für alle Ihre Projekte festlegen, und zwar unabhängig davon, was die einzelnen Projekte festlegen.
+
+Wenn Sie eine Eigenschaft festlegen oder ein Ziel für ein einzelnes Projekt definieren müssen, das alle vorherigen Einstellungen überschreibt, platzieren Sie diese Logik nach dem letzten Import in der Projektdatei. In einem SDK-Projekt müssen Sie dazu müssen zuerst das Attribut im SDK-Stil durch die entsprechenden Importe ersetzen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von MSBuild-Projekt-SDKs](how-to-use-project-sdk.md).
+
+> [!NOTE]
+> Die MSBuild-Engine liest alle importierten Dateien während der Auswertung ein, bevor mit der Buildausführung für ein Projekt (einschließlich aller `PreBuildEvent`-Vorgänge) begonnen wird, sodass nicht erwartet wird, dass diese Dateien durch das `PreBuildEvent` oder einen anderen Teil des Buildprozesses geändert werden. Änderungen werden erst nach dem nächsten Aufruf von *MSBuild.exe* oder dem nächsten Visual Studio-Buildvorgang wirksam.
 
 ### <a name="use-case-multi-level-merging"></a>Anwendungsfall: Zusammenführen mehrerer Ebenen
 
@@ -189,6 +196,8 @@ Sie können beispielsweise ein neues Ziel definieren, um eine benutzerdefinierte
 </Project>
 ```
 
+Der Projektmappenbuild ist von den Projektbuilds getrennt, sodass sich die Einstellungen hier nicht auf Projektbuilds auswirken.
+
 ## <a name="customize-all-net-builds"></a>Anpassen aller .NET-Builds
 
 Wenn Sie einen Buildserver verwalten, müssen Sie möglicherweise die MSBuild-Einstellungen global für alle Builds auf dem Server konfigurieren.  Im Prinzip könnten Sie die globalen Dateien *Microsoft.Common.Targets* oder *Microsoft.Common.Props* ändern, aber es gibt eine bessere Möglichkeit. Sie können alle Builds eines bestimmten Projekttyps (z. B. alle C#-Projekte) beeinflussen, indem Sie bestimmte MSBuild-Eigenschaften verwenden und bestimmte benutzerdefinierte `.targets`- und `.props`-Dateien hinzufügen.
@@ -216,14 +225,35 @@ Die *Common*-Versionen dieser Eigenschaften wirken sich sowohl auf C#- als auch 
 msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
 ```
 
-Der beste Ansatz richtet sich nach Ihrem Szenario. Wenn Sie über einen dedizierten Buildserver verfügen und sicherstellen möchten, dass bestimmte Ziele immer für alle Builds des entsprechenden Projekttyps ausgeführt werden, die auf diesem Server ausgeführt werden, dann ist die Verwendung einer globalen benutzerdefinierten `.targets`- oder `.props`-Datei sinnvoll.  Wenn Sie möchten, dass die benutzerdefinierten Ziele nur unter bestimmten Bedingungen ausgeführt werden, verwenden Sie einen anderen Dateispeicherort, und legen Sie den Pfad zu dieser Datei fest, indem Sie die entsprechende MSBuild-Eigenschaft in der MSBuild-Befehlszeile nur bei Bedarf festlegen.
+Der beste Ansatz richtet sich nach Ihrem Szenario. Mithilfe von Visual Studio-Erweiterbarkeit können Sie das Buildsystem anpassen und einen Mechanismus zum Installieren und Verwalten der Anpassungen bereitstellen.
+
+Wenn Sie über einen dedizierten Buildserver verfügen und sicherstellen möchten, dass bestimmte Ziele immer für alle Builds des entsprechenden Projekttyps ausgeführt werden, die auf diesem Server ausgeführt werden, dann ist die Verwendung einer globalen benutzerdefinierten `.targets`- oder `.props`-Datei sinnvoll.  Wenn Sie möchten, dass die benutzerdefinierten Ziele nur unter bestimmten Bedingungen ausgeführt werden, verwenden Sie einen anderen Dateispeicherort, und legen Sie den Pfad zu dieser Datei fest, indem Sie die entsprechende MSBuild-Eigenschaft in der MSBuild-Befehlszeile nur bei Bedarf festlegen.
 
 > [!WARNING]
 > Visual Studio verwendet die benutzerdefinierten `.targets`- oder `.props`-Dateien, wenn diese bei Erstellung eines Projekts des entsprechenden Typs im MSBuild-Ordner gefunden werden. Dies kann unbeabsichtigte Folgen haben und bei falscher Verwendung dazu führen, dass Visual Studio auf Ihrem Computer keine Builds mehr erstellen kann.
 
+## <a name="customize-c-builds"></a>Anpassen von C++-Builds
+
+Für C++-Projekte können die zuvor erwähnten benutzerdefinierten *TARGETS*- und *PROPS*-Dateien nicht auf dieselbe Weise verwendet werden, um Standardeinstellungen zu überschreiben. *Directory.Build.props* wird von *Microsoft.Common.props* importiert. Diese Datei wird in `Microsoft.Cpp.Default.props` importiert, während die meisten Standardeinstellungen in *Microsoft.Cpp.props* definiert werden und für eine Reihe von Eigenschaften eine „wenn noch nicht definiert“-Bedingung nicht verwendet werden kann, da die Eigenschaft bereits definiert ist, aber der Standardwert für bestimmte Projekteigenschaften, die in `PropertyGroup` mit `Label="Configuration"` definiert sind, anders sein muss (siehe [VCXPROJ- und PROPS-Dateistruktur](/cpp/build/reference/vcxproj-file-structure)).
+
+Sie können jedoch die folgenden Eigenschaften verwenden, um mindestens eine *PROPS*-Datei anzugeben, die vor/nach *Microsoft.Cpp\** -Dateien automatisch importiert werden soll:
+
+- ForceImportAfterCppDefaultProps
+- ForceImportBeforeCppProps
+- ForceImportAfterCppProps
+- ForceImportBeforeCppTargets
+- ForceImportAfterCppTargets
+
+Wenn Sie die Standardwerte der Eigenschaften für alle C++-Builds anpassen möchten, erstellen Sie eine weitere *PROPS*-Datei (z. B. *MyProps.props*), und definieren Sie die `ForceImportAfterCppProps`-Eigenschaft in `Directory.Build.props`, die darauf verweist:
+
+<PropertyGroup> <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
+</PropertyGroup>
+
+*Microsoft.Cpp.props* wird automatisch ganz am Ende von *Microsoft.Cpp.props* importiert.
+
 ## <a name="customize-all-c-builds"></a>Anpassen aller C++-Builds
 
-Für C++-Projekte werden die zuvor erwähnten `.targets`- und `.props`-Dateien ignoriert. Sie können für C++-Projekte `.targets`-Dateien für jede Plattform erstellen und diese in geeigneten Importordnern für diese Plattformen platzieren.
+Das Anpassen der Visual Studio-Installation wird nicht empfohlen, da es nicht einfach ist, solche Anpassungen nachzuverfolgen. Wenn Sie Visual Studio jedoch erweitern, um C++-Builds für eine bestimmte Plattform anzupassen, können Sie `.targets`-Dateien für jede Plattform erstellen und sie als Teil einer Visual Studio-Erweiterung in den entsprechenden Importordnern für diese Plattformen speichern.
 
 Die `.targets`-Datei für die Win32-Plattform, *Microsoft.Cpp.Win32.targets*, enthält das folgende `Import`-Element:
 
@@ -243,7 +273,9 @@ Am Ende derselben Datei befindet sich ein ähnliches Element:
 
 Ähnliche Importelemente liegen für andere Zielplattformen in *%ProgramFiles32%\MSBuild\Microsoft.Cpp\v{version}\Platforms\* vor.
 
-Sobald Sie die `.targets`-Datei im geeigneten Ordner der Plattform platziert haben, importiert MSBuild Ihre Datei in jeden C++-Build für diese Plattform. Falls erforderlich, können Sie mehrere `.targets`-Dateien platzieren.
+Sobald Sie die `.targets`-Datei im geeigneten Ordner `ImportAfter` der Plattform platziert haben, importiert MSBuild Ihre Datei in jeden C++-Build für diese Plattform. Falls erforderlich, können Sie mehrere `.targets`-Dateien platzieren. 
+
+Mithilfe von Visual Studio-Erweiterbarkeit sind weitere Anpassungen möglich, z. B. das Definieren einer neuen Plattform. Weitere Informationen finden Sie unter [C++-Projekterweiterbarkeit](../extensibility/visual-cpp-project-extensibility.md).
 
 ### <a name="specify-a-custom-import-on-the-command-line"></a>Angeben eines benutzerdefinierten Imports über die Befehlszeile
 
