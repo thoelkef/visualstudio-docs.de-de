@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916143"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183560"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Debuggen zur Entwurfszeit in Visual Studio (C#, C++/CLI, Visual Basic, F#)
 
@@ -83,13 +83,13 @@ Das folgende Beispiel ist in Visual Basic. Sie können das Fenster **Direkt** au
 
 1. Öffnen Sie die XAML-Seite mit dem benutzerdefinierten Steuerelement, das Sie debuggen möchten.
 
-   Bei UWP-Projekten für Windows Build 16299 oder höher wird mit diesem Schritt der Prozess *UwpSurface.exe* gestartet. Bei WPF- oder UWP-Versionen vor Windows Build 16299 wird mit diesem Schritt der Prozess *XDesProc.exe* gestartet.
+   Bei UWP-Projekten für Windows Build 16299 oder höher wird mit diesem Schritt der Prozess *UwpSurface.exe* gestartet. Bei WPF-Projekten für Windows Build 16299 oder höher wird mit diesem Schritt der Prozess *WpfSurface.exe* gestartet. Bei WPF- oder UWP-Versionen vor Windows Build 16299 wird mit diesem Schritt der Prozess *XDesProc.exe* gestartet. 
 
 1. Öffnen Sie eine zweite Instanz von Visual Studio. Öffnen Sie keine Projektmappe bzw. kein Projekt in der zweiten Instanz.
 
 1. Öffnen Sie in der zweiten Instanz von Visual Studio das Menü **Debuggen**, und wählen Sie **An Prozess anhängen...** aus.
 
-1. Wählen Sie je nach Projekttyp (siehe vorherige Schritte) entweder den Prozess *UwpSurface.exe* oder den Prozess *XDesProc.exe* aus der Liste der verfügbaren Prozesse aus.
+1. Wählen Sie je nach Projekttyp (siehe vorherige Schritte) den Prozess *UwpSurface.exe*, *WpfSurface.exe* oder *XDesProc.exe* aus der Liste der verfügbaren Prozesse aus.
 
 1. Wählen Sie im Dialogfeld **Anfügen an Prozess** im Feld **Anfügen an** den richtigen Codetyp für das benutzerdefinierte Steuerelement aus, das Sie debuggen möchten.
 
