@@ -1,18 +1,18 @@
 ---
 title: Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 05ccb885c799bf2bfd2e3868b80226eca726cc31
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f396027025572d953d5ea0265d122e6954c3ad7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589551"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288572"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen
 

@@ -1,8 +1,8 @@
 ---
-title: 'Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)'
+title: 'Vorgehensweise: Angeben von Buildereignissen (Visual Basic)'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115110"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283969"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Angeben von Buildereignissen (Visual Basic)
 
 Buildereignisse in Visual Basic können für das Ausführen von Skripts, Makros oder anderen Aktionen als Teil des Kompilierungsprozesses verwendet werden. Präbuildereignisse treten vor der Kompilierung auf, während Postbuildereignisse nach der Kompilierung auftreten.
 
@@ -44,7 +44,7 @@ Buildereignisse werden im Dialogfeld **Buildereignisse** angegeben, das über di
 4. Geben Sie die Befehlszeilenargumente für Ihre Prä- oder Postbuildaktion ein, und klicken Sie dann auf **OK**.
 
     > [!NOTE]
-    > Fügen Sie allen Postbuildbefehlen, die *BAT*-Dateien ausführen, eine `call`-Anweisung hinzu. Zum Beispiel: `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Fügen Sie allen Postbuildbefehlen, die *BAT*-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Wenn Ihr Prä- oder Postbuildereignis nicht erfolgreich abgeschlossen wird, können Sie den Build abschließen, indem Sie Ihre Ereignisaktion mit einem Code, der nicht 0 (null) ist, beenden. Dies gibt eine erfolgreiche Aktion an.
@@ -63,9 +63,9 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>So erstellen Sie einen EXE-Befehl zum Ändern des Anwendungsmanifests
 
-1. Erstellen Sie eine Konsolenanwendung für den Befehl. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
+1. Erstellen Sie eine Konsolenanwendung für den Befehl. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows**, und wählen Sie dann die Vorlage **Konsolenanwendung** aus. Geben Sie dem Projekt den Namen `ChangeOSVersionVB`.
+2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows**, und wählen Sie dann die Vorlage **Konsolenanwendung** aus. Benennen Sie das Projekt mit `ChangeOSVersionVB`.
 
 3. Fügen Sie in *Module1.vb* die folgende Zeile in die anderen `Imports`-Anweisungen am Anfang der Datei ein:
 
@@ -116,7 +116,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
    End Sub
    ```
 
-   Der Befehl benötigt zwei Argumente. Beim ersten Argument handelt es sich um den Pfad zum Anwendungsmanifest (also den Ordner, in dem der Buildprozess das Manifest erstellt, üblicherweise *\<Projektname>.publish*). Beim zweiten Argument handelt es sich um die neue Version des Betriebssystems.
+   Der Befehl benötigt zwei Argumente. Beim ersten Argument handelt es sich um den Pfad zum Anwendungsmanifest (also den Ordner, in dem der Buildprozess das Manifest erstellt, in der Regel *\<ProjectName>.publish*). Beim zweiten Argument handelt es sich um die neue Version des Betriebssystems.
 
 5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
@@ -126,9 +126,9 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aufrufen eines Postbuildereignisses zum Ändern des Anwendungsmanifests
 
-1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
+1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Geben Sie dem Projekt den Namen `VBWinApp`.
+2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
 3. Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
 
 4. Navigieren Sie im **Projekt-Designer** zu der Seite **Veröffentlichen**, und legen Sie den **Veröffentlichungsort** auf *C:\TEMP* fest.
@@ -163,9 +163,9 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Seite „Kompilieren“, Projekt-Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Seite „Veröffentlichen“, Projekt-Designer](../ide/reference/publish-page-project-designer.md)
 - [Pre-build Event/Post-build Event command line dialog box (Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Vorgehensweise: Angeben von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [How to: Angeben von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md)

@@ -1,7 +1,7 @@
 ---
 title: Daten Tools für .net
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: ghogen
 ms.author: ghogen
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586041"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281070"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Datentools für .NET
 
@@ -42,6 +42,6 @@ Der typische Workflow lautet wie folgt:
 
 Sie können Schritt 3 überspringen und eine .NET-Anwendung programmieren, um Befehle direkt an eine Datenbank auszugeben, anstatt ein Modell zu verwenden. In diesem Fall finden Sie hier auf die entsprechende Dokumentation: [ADO.NET](/dotnet/framework/data/adonet/index). Beachten Sie, dass Sie den **Assistenten zum Konfigurieren von Datenquellen** und Designer weiterhin verwenden können, um Daten Bindungs Code zu generieren, wenn Sie Ihre eigenen Objekte im Arbeitsspeicher auffüllen und anschließend Daten der Benutzeroberflächen-Steuerelemente an diese Objekte binden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

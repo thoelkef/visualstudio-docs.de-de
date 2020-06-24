@@ -2,19 +2,19 @@
 title: 'Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien | Microsoft-Dokumentation'
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472783"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283904"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 
@@ -63,7 +63,7 @@ Sie können auch Protokolle generieren, indem Sie MSBuild direkt von der Befehls
      Weitere Informationen finden Sie unter [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) und <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Sie müssen das Projekt neu erstellen, damit Ihre Änderungen im Fenster **Ausgabe** (alle Projekte) und in der Datei *\<Projektname>.txt* (nur C++-Projekte) wirksam werden.
+    > Sie müssen das Projekt neu erstellen, damit Ihre Änderungen im Fenster **Ausgabe** (für alle Projekte) und in der Datei *\<ProjectName>.txt* (nur C++-Projekte) wirksam werden.
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Verwenden von Binärprotokollen, um das Durchsuchen großer Protokolldateien zu vereinfachen
 

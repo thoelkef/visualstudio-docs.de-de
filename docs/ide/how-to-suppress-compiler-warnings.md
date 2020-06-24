@@ -2,22 +2,22 @@
 title: Unterdrücken von Compilerwarnungen für Projekte und NuGet-Pakete
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114507"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283956"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Gewusst wie: Unterdrücken von Compilerwarnungen
+# <a name="how-to-suppress-compiler-warnings"></a>Vorgehensweise: Unterdrücken von Compilerwarnungen
 
-Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Möglicherweise möchten Sie nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Ausführlichkeit für Buildprotokolle auf **Normal**, **Ausführlich** oder **Diagnose** generiert wird. Weitere Informationen zur Protokollausführlichkeit finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
+Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Möglicherweise möchten Sie nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Ausführlichkeit für Buildprotokolle auf **Normal**, **Ausführlich** oder **Diagnose** generiert wird. Weitere Informationen zur Ausführlichkeit erhalten Sie im Artikel [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F\#
 
@@ -63,7 +63,7 @@ In diesem Beispiel wird gezeigt, wie Sie die *VBPROJ*-Datei zum Unterdrücken be
 
 1. Wählen Sie in der Menüleiste **Projekt** > **Projekt entladen** aus.
 
-1. Öffnen Sie im **Projektmappen-Explorer** per Rechtsklick das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten\<Projektname>.vbproj** aus.
+1. Öffnen Sie im **Projektmappen-Explorer** per Rechtsklick das Kontextmenü für das Projekt, und klicken Sie dann auf **\<ProjectName>.vbproj bearbeiten**.
 
     Die XML-Projektdatei wird im Code-Editor geöffnet.
 
@@ -87,7 +87,7 @@ In diesem Beispiel wird gezeigt, wie Sie die *VBPROJ*-Datei zum Unterdrücken be
     ```
 
    > [!NOTE]
-   > .NET Core-Projekte enthalten standardmäßig keine Eigenschaftengruppen für die Buildkonfiguration. Um Warnungen in einem .NET Core-Projekt zu unterdrücken, fügen sie der Datei den Abschnitt für die Buildkonfiguration manuell hinzu. Beispiel:
+   > .NET Core-Projekte enthalten standardmäßig keine Eigenschaftengruppen für die Buildkonfiguration. Um Warnungen in einem .NET Core-Projekt zu unterdrücken, fügen sie der Datei den Abschnitt für die Buildkonfiguration manuell hinzu. Zum Beispiel:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -130,8 +130,8 @@ In einigen Fällen möchten Sie möglicherweise NuGet-Compilerwarnungen nicht f�
 
    Die Warnung wird im **Projektmappen-Explorer** und in der **Fehlerliste** nicht mehr angezeigt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)
-- [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [How to: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)

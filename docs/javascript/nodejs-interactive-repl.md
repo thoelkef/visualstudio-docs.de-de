@@ -2,7 +2,7 @@
 title: Verwenden der Node.js-REPL
 description: Visual Studio bietet Unterstützung für die Interaktion mit der Node.js-Runtime
 ms.date: 12/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840663"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285003"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Arbeiten mit dem interaktiven Node.js-Fenster
 

@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Partner Visual Studio-Abonnements für ihre Kunden verwalten.
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564211"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289026"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Von Partnern verwaltete Visual Studio-Abonnements für Kunden
 Partner müssen zuerst einige Schritte befolgen, bevor sie Abonnements im [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) verwalten können. 
@@ -30,7 +30,7 @@ Dies gilt für Partner, die bereits auf das [Verwaltungsportal für Visual Studi
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 Hinzufügen einer neuen Lizenz durch Partner:
-- Melden Sie sich bei https://manage.visualstudio.com an.
+- Melden Sie sich bei <https://manage.visualstudio.com> an.
 - Wählen Sie die Dropdownliste mit Vereinbarungen aus, und scrollen nach unten zur Option **Neue Open License**.
 - Geben Sie im Popupfenster die Autorisierungsnummer, die Lizenznummer und die E-Mail-Adresse des Kunden gemäß den Angaben in der Vereinbarung ein, aktivieren Sie das Kontrollkästchen, und klicken Sie dann auf **Senden**.
 
@@ -52,7 +52,7 @@ Dies gilt für neue Partner, die neue Open License-Bestellungen aufgeben und sic
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Neue Partner, die das Verwaltungsportal für Visual Studio-Abonnements direkt besuchen
 Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellungen aufgegeben haben, sich aber nicht beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) registriert haben und direkt zum [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) wechseln.  Führen Sie folgende Schritte aus:
-- Besuchen Sie https://manage.visualstudio.com.
+- Besuchen Sie <https://manage.visualstudio.com>.
 - Eine Fehlermeldung weist darauf hin, dass Sie kein bekannter Benutzer sind.
 - Wählen Sie die Registrierungsoption **OLP-Partner** aus, geben Sie die bei der Bestellung verwendete Autorisierungsnummer, Lizenznummer und E-Mail-Adresse des Kunden ein, aktivieren Sie das Kontrollkästchen, und klicken Sie auf **Senden**.
 
