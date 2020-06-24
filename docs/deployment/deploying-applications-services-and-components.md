@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183001"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286354"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -58,7 +58,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
   Klicken Sie zur Verwendung des Tools zum **Veröffentlichen** mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer, und wählen Sie **Veröffentlichen** aus. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Dialogfeld „Veröffentlichen“ entweder **App Service** oder **Azure Virtual Machines** aus, und führen Sie dann die Konfigurationsschritte aus.
 
-  ![Azure App Service auswählen](../deployment/media/quickstart-publish-azure.png "Azure App Service auswählen")
+  ![Azure App Service auswählen](../deployment/media/quickstart-publish-azure-new.png "Azure App Service auswählen")
 
   Ab Visual Studio 2017, Version 15.7 können Sie ASP.NET Core-Apps in **App Service für Linux** bereitstellen.
 
@@ -91,7 +91,7 @@ Sie können aus Visual Studio App-Pakete zur Bereitstellung im Microsoft Store e
 
 - **UWP:** Sie können Ihre App packen und mithilfe von Menüelementen bereitstellen. Weitere Informationen finden Sie unter [Packen einer UWP-App mit Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
-    ![Erstellen eines App-Pakets](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Erstellen eines App-Pakets](../deployment/media/feature-tour-create-app-package.png)
 
 - **Windows-Desktop:** Eine Bereitstellung im Microsoft Store ist mithilfe der ab Version 15.4 in Visual Studio 2017 verfügbaren Desktop-Brücke möglich. Erstellen Sie hierzu als Erstes ein Paketerstellungsprojekt für Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer Desktop-App für den Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 

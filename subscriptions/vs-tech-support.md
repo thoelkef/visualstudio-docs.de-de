@@ -7,18 +7,18 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301945"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289429"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können Probleme bei der Problemlösung für Produkte in **produktionsfernen Umgebungen** gelöst werden, die sich noch in der Standardsupportphase des [Supportlebenszyklus](https://support.microsoft.com/lifecycle/search) befinden. Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden; bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents, geltend 1 Jahr lang ab Aktivierung des Vorteils. Die Aktivierung des Vorteils muss stattfinden, während das Abonnement aktiv ist.
 
 > [!NOTE]
-> In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio-Abonnements unter https://visualstudio.microsoft.com/vs/pricing/ zu vergleichen.
+> In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio-Abonnements unter <https://visualstudio.microsoft.com/vs/pricing/> zu vergleichen.
 
 > [!NOTE]
 > Nicht alle Abonnements auf einer bestimmten Ebene sind berechtigt, Supportanfragen zu empfangen. Abonnements, die über FTE, NFR, MPN, MCT und andere Programme erworben wurden, empfangen keine Supportanfragen. Wenn Ihr Abonnement nicht dafür berechtigt ist, technische Supportanfragen zu empfangen, wird die Kachel „Technischer Support“ nicht bei Ihren verfügbaren Vorteilen angezeigt.
@@ -33,7 +33,7 @@ Für Produkte, die nicht für Entwickler konzipiert wurden (z. B. SQL Server, W
 Beschreibungen auf Produktebene: Erweitern Sie **Nicht verfügbare Supportpläne**. Wenn die Meldung **Support plan cannot be used for support on the specified product (Code: 8)** (Der Supportplan kann nicht für Support zum angegebenen Produkt verwendet werden (Code: 8)) angezeigt wird, kann Ihr Supportvertrag nicht für die ausgewählte Produktversion verwendet werden.
 
 ## <a name="how-to-activate-the-benefit"></a>Aktivieren des Vorteils
-1. Wechseln Sie zu https://my.visualstudio.com/Benefits, scrollen Sie nach unten zum Abschnitt „Support“, und klicken Sie auf der Kachel „Technischer Support“ auf **Chat to activate** (Chat für die Aktivierung).
+1. Wechseln Sie zu <https://my.visualstudio.com/Benefits>, scrollen Sie nach unten zum Abschnitt „Support“, und klicken Sie auf der Kachel „Technischer Support“ auf **Chat to activate** (Chat für die Aktivierung).
     > [!div class="mx-imgBorder"]
     > ![Kachel des Vorteils „Technischer Support“](_img/vs-tech-support/vs-tech-support-tile.png)
 2. Dadurch wird eine Chatsitzung mit einem Mitarbeiter gestartet, der Ihre **Vertrags-ID** und Ihre **Zugriffs-ID** erstellen und diese für Ihre Unterlagen per E-Mail bereitstellen kann.

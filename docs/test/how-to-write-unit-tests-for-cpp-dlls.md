@@ -1,18 +1,18 @@
 ---
 title: Schreiben von Komponententests für C++-DLLs
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279275"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287037"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
@@ -38,7 +38,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
 ## <a name="create-the-tests"></a>Erstellen der Tests
 
-### <a name="staticLink"></a> Ändern der DLL in eine statische Bibliothek
+### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a> Ändern der DLL in eine statische Bibliothek
 
 - Wenn die Tests Members verwenden müssen, die nicht von einem DLL-Projekt exportiert werden, und das zu testende Projekt als dynamische Bibliothek erstellt wird, erwägen Sie, es in eine statische Bibliothek zu konvertieren.
 
@@ -50,7 +50,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
   Fahren Sie mit der Prozedur [So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien](#objectRef) fort.
 
-### <a name="projectRef"></a> So verweisen Sie auf exportierte DLL-Funktionen aus dem Testprojekt
+### <a name="to-reference-exported-dll-functions-from-the-test-project"></a><a name="projectRef"></a> So verweisen Sie auf exportierte DLL-Funktionen aus dem Testprojekt
 
 - Wenn das DLL-Projekt die Funktionen exportiert, die Sie testen möchten, können Sie aus dem Testprojekt einen Verweis auf das Codeprojekt hinzufügen.
 
@@ -82,7 +82,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
   Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
-### <a name="objectRef"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
 
 - Wenn die DLL die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die *OBJ*- oder *LIB*-Ausgabedatei zu den Abhängigkeiten des Testprojekts hinzufügen.
 
@@ -116,7 +116,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
   Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
-### <a name="sameProject"></a> So fügen Sie Komponententests im gleichen Projekt hinzu
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> So fügen Sie Komponententests im gleichen Projekt hinzu
 
 1. Ändern Sie die Produktcodeprojekteigenschaften, um die Header und Bibliotheksdateien einzuschließen, die für die Unittests erforderlich sind.
 
@@ -137,7 +137,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
    Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
-## <a name="addTests"></a> Schreiben der Komponententests
+## <a name="write-the-unit-tests"></a><a name="addTests"></a> Schreiben der Komponententests
 
 1. Fügen Sie in jeder Komponententestcodedatei eine `#include`-Anweisung für die Header des zu testenden Projekts hinzu.
 

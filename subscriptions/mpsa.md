@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
-ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232200"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289351"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
 Wenn Sie Visual Studio-Abonnements über das MPSA-Programm erworben haben, müssen Sie einige Dinge beachten, bevor Sie ein Administrator von Visual Studio-Abonnements werden und Abonnements für Ihre Benutzer zuweisen können. Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements wechseln.
@@ -45,7 +45,7 @@ Sobald Sie die oben genannten Kriterien erfüllen, können Sie damit fortfahren,
 5. Klicken Sie auf **Domäne zuordnen**.
 
 Nach der Zuordnung werden alle Benutzer, die die Kriterien erfüllen, in der Regel innerhalb weniger Minuten als Administratoren für Visual Studio Abonnements bereitgestellt. Manchmal kann es allerdings bis zu 24 Stunden dauern. Nach der Bereitstellung des Mandanten können Sie auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen. Wenden Sie sich folgendermaßen an den MPSA-Support, wenn der Vorgang länger als 24 Stunden dauert:
-1. Rufen Sie https://www.microsoft.com/licensing/mpsa/default auf.
+1. Rufen Sie <https://www.microsoft.com/licensing/mpsa/default> auf.
 2. Klicken Sie oben auf der Seite auf die das Menü **Mehr**. 
 3. Klicken Sie auf **Hilfe**.
 4. Wählen Sie die Option für **Hilfe bei der Lizenzierung** aus.

@@ -3,16 +3,16 @@ title: Docker-Containerprotokolle, Umgebungsvariablen und Dateisystemzugriff
 description: In diesem Artikel wird beschrieben, wie Sie Ihre Fähigkeiten zum Debuggen und Diagnostizieren Ihrer containerbasierten Apps in Visual Studio mithilfe eines Toolfensters verbessern, um zu erfahren, was innerhalb der Container geschieht, die Ihre App hosten.
 author: ghogen
 ms.author: ghogen
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027307"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283124"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Anzeigen und Diagnostizieren von Containern und Images in Visual Studio
 

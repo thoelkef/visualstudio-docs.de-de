@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984910"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289416"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installieren von Visual Studio 2017 für Mac
 
@@ -23,13 +23,13 @@ ms.locfileid: "74984910"
 
 Um ein optimales Ergebnis zu erzielen, sollten Sie Visual Studio 2019 für Mac vor dem Downgrade unbedingt [deinstallieren](uninstall.md). Wenn Probleme Sie zum Herabstufen zwingen, teilen Sie uns dies unbedingt mit, indem Sie [ein Problem berichten](report-a-problem.md).
  
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 Um mit der Entwicklung nativer, plattformübergreifender Apps zu beginnen, wenn Sie Visual Studio für Mac heruntergeladen haben, müssen Sie vorher verschiedene Installationen und Setups durchführen.
 
 Damit Visual Studio unter iOS funktioniert, benötigen Sie Folgendes:
 
-- einen Mac mit macOS Sierra 10.12 oder höher
+- Ein Mac mit macOS High Sierra 10.13 oder höher.
 - Xcode 9.3 oder höher. Für gewöhnlich wird die neuste stabile Version empfohlen.
 - eine Apple-ID Erstellen Sie eine kostenlose Apple-ID unter https://appleid.apple.com, wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.
 
@@ -125,6 +125,6 @@ Informationen zu anderen Workloads finden Sie auf der Seite zu den [Workloads](/
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Installieren von Visual Studio 2017 (unter Windows)](/visualstudio/install/install-visual-studio)

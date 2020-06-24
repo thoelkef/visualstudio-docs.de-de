@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184163"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285404"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Bereitstellen einer App in einem lokalen Ordner mithilfe von Visual Studio
 
@@ -34,7 +34,7 @@ Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Co
 
 1. Wählen Sie im Dialogfeld **Veröffentlichen** die Option **Ordner** aus.
 
-    ![Auswählen eines Ordners als Veröffentlichungsziel](../deployment/media/quickstart-publish-folder.png "Auswählen eines Ordners")
+    ![Auswählen eines Ordners als Veröffentlichungsziel](../deployment/media/quickstart-publish-folder-new.png "Auswählen eines Ordners")
 
 1. Geben Sie einen Pfad ein, oder klicken Sie auf **Durchsuchen**, um einen Ordner anzugeben.
 
