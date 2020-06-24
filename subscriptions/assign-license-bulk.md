@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren entweder Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182897"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289130"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
@@ -24,18 +24,18 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Verwenden des Massenhinzufügens zum Zuweisen von Abonnements
-1. Melden Sie sich unter https://manage.visualstudio.com beim Verwaltungsportal für Visual Studio-Abonnements an.
+1. Melden Sie sich unter <https://manage.visualstudio.com> beim Verwaltungsportal für Visual Studio-Abonnements an.
 
-2. Navigieren Sie zur Registerkarte **Abonnenten verwalten**, um mehrere Abonnenten gleichzeitig hinzuzufügen. Klicken Sie auf die Registerkarte **Hinzufügen**, und wählen Sie im Dropdownmenü **Massenhinzufügen** aus.  
+1. Navigieren Sie zur Registerkarte **Abonnenten verwalten**, um mehrere Abonnenten gleichzeitig hinzuzufügen. Klicken Sie auf die Registerkarte **Hinzufügen**, und wählen Sie im Dropdownmenü **Massenhinzufügen** aus.  
 
-2. Die Funktion zum Massenhinzufügen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenteninformationen. Klicken Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) auf **Herunterladen**, um die Vorlage herunterzuladen.
+1. Die Funktion zum Massenhinzufügen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenteninformationen. Klicken Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) auf **Herunterladen**, um die Vorlage herunterzuladen.
    > [!div class="mx-imgBorder"]
    > ![Excel-Vorlage zum Hochladen mehrerer Abonnenten herunterladen](media/download-template-upload-subscribers.png)
    >
    > [!NOTE]
    > Laden sie stets die neueste Vorlagenversion herunter. Wenn Sie eine ältere Version herunterladen, schlägt Ihr Massenupload möglicherweise fehl.
 
-3. Tragen Sie in die Felder der Excel-Tabelle die Informationen für die Personen ein, denen Sie Abonnements zuweisen möchten. (Das Ausfüllen des Felds *Verweis* ist optional.) Speichern Sie die Datei anschließend lokal.
+1. Tragen Sie in die Felder der Excel-Tabelle die Informationen für die Personen ein, denen Sie Abonnements zuweisen möchten. (Das Ausfüllen des Felds *Verweis* ist optional.) Speichern Sie die Datei anschließend lokal.
 
     > [!NOTE]
     > Eines der Felder in der Vorlage ermöglicht Administratoren, die Möglichkeit zum Herunterladen von Software für Abonnenten zu aktivieren bzw. zu deaktivieren.  Durch das Deaktivieren von Downloads wird auch der Zugriff auf Product Keys deaktiviert.
@@ -48,11 +48,11 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
     - Stellen Sie sicher, dass alle erforderlichen Felder ausgefüllt sind. 
     - Überprüfen Sie die Spalte **Fehlermeldung**.  Falls Fehler aufgeführt werden, lösen Sie diese, bevor Sie die Datei hochladen. 
 
-4. Kehren Sie zum Portal für die Verwaltung von Visual Studio-Abonnements zurück. Klicken Sie im Dialogfeld **Mehrere Abonnenten hochladen** auf **Durchsuchen**.
+1. Kehren Sie zum Portal für die Verwaltung von Visual Studio-Abonnements zurück. Klicken Sie im Dialogfeld **Mehrere Abonnenten hochladen** auf **Durchsuchen**.
    > [!div class="mx-imgBorder"]
    > ![Zum Hochladen mehrerer Abonnenten zur gespeicherten Vorlage navigieren](media/bulk-add-browse-saved-template.png)
 
-5. Navigieren Sie zur Excel-Datei, die Sie gespeichert haben, und klicken Sie anschließend auf **OK**.
+1. Navigieren Sie zur Excel-Datei, die Sie gespeichert haben, und klicken Sie anschließend auf **OK**.
    > [!div class="mx-imgBorder"]
    > ![Excel-Vorlage zum Upload mehrerer Abonnenten hochladen](media/bulk-upload-subscribers.png)
 
