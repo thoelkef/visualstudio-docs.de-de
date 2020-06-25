@@ -6,21 +6,21 @@ manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300930"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280543"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
 Ein Azure-Clouddienstprojekt in Visual Studio enthält drei Konfigurationsdateien: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` und `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef` wird in Azure bereitgestellt, um die Anforderungen des Clouddiensts und seiner Rollen zu beschreiben, und um Einstellungen bereitzustellen, die für alle Instanzen gelten. Einstellungen können zur Laufzeit mithilfe der Azure Service Hosting Runtime-API gelesen werden. Diese Datei kann in Azure nur aktualisiert werden, wenn der Clouddienst beendet wird.
+- `ServiceDefinition.csdef` wird in Azure bereitgestellt, um die Anforderungen des Clouddiensts und seiner Rollen zu beschreiben, und um Einstellungen bereitzustellen, die für alle Instanzen gelten. Einstellungen können zur Laufzeit mit der Azure Service Hosting Runtime-API gelesen werden. Diese Datei kann in Azure nur aktualisiert werden, wenn der Clouddienst beendet wird.
 - `ServiceConfiguration.Local.cscfg` und `ServiceConfiguration.Cloud.cscfg` stellen Werte für Einstellungen in der Definitionsdatei bereit und legen die Anzahl der für die einzelnen Rollen auszuführenden Instanzen fest. Die „Local“-Datei enthält Werte, die beim lokalen Debuggen verwendet werden; die „Cloud“-Datei wird in Azure als `ServiceConfiguration.cscfg` bereitgestellt und bietet Einstellungen für die Serverumgebung. Diese Datei kann aktualisiert werden, während Ihr Clouddienst in Azure ausgeführt wird.
 
 Konfigurationseinstellungen werden in Visual Studio mithilfe der Eigenschaftenseiten für die entsprechende Rolle verwaltet und geändert (klicken Sie mit der rechten Maustaste auf die Rolle, und wählen Sie **Eigenschaften**, oder doppelklicken Sie auf die Rolle). Änderungen können auf die in der Dropdownliste **Dienstkonfiguration** ausgewählte Konfiguration beschränkt werden. Die Unterschiede zwischen den ansonsten ähnlichen Eigenschaften für Web- und Workerrollen werden in den folgenden Abschnitten beschrieben.
@@ -39,13 +39,13 @@ Legt fest, welche `ServiceConfiguration.*.cscfg`-Datei von Änderungen betroffen
 
 Legen Sie die Eigenschaft **Instanzenanzahl** auf die Anzahl der Instanzen fest, die der Dienst für diese Rolle ausführen soll.
 
-Legen Sie die Eigenschaft **Größe des virtuellen Computers** auf **Sehr klein**, **Klein**, **Mittel**, **Groß** oder **Sehr groß** fest.  Weitere Informationen finden Sie unter [Größen für Cloud-Dienste](/azure/cloud-services/cloud-services-sizes-specs).
+Legen Sie die Eigenschaft **Größe des virtuellen Computers** auf **Sehr klein**, **Klein**, **Mittel**, **Groß** oder **Sehr groß** fest.  Weitere Informationen finden Sie unter [Größen für Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Startaktion (nur Webrolle)
 
 Legen Sie diese Eigenschaft fest, um anzugeben, dass bei Beginn des Debugvorgangs von Visual Studio ein Webbrowser für die HTTP-Endpunkte und/oder für die HTTPS-Endpunkte gestartet werden soll.
 
-Die **HTTPS-Endpunktoption** ist nur verfügbar, wenn Sie bereits einen HTTPS-Endpunkt für Ihre Rolle definiert haben. Sie können einen HTTPS-Endpunkt auf der Eigenschaftenseite **Endpunkte** definieren.
+Die Option " **https-Endpunkt** " ist nur verfügbar, wenn Sie bereits einen HTTPS-Endpunkt für ihre Rolle definiert haben. Sie können einen HTTPS-Endpunkt auf der Eigenschaftenseite **Endpunkte** definieren.
 
 Wenn Sie bereits einen HTTPS-Endpunkt hinzugefügt haben, ist die Option „HTTPS-Endpunkt“ standardmäßig aktiviert. Visual Studio startet nun beim Start des Debugvorgangs neben dem Browser für den HTTP-Endpunkt einen Browser für diesen Endpunkt, vorausgesetzt dass beide Startoptionen aktiviert sind.
 
@@ -55,7 +55,7 @@ Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-
 
 ## <a name="settings-page"></a>Seite "Einstellungen"
 
-Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. Code, der in der Rolle ausgeführt wird, kann die Werte Ihrer Konfigurationseinstellungen zur Laufzeit mithilfe von Klassen lesen, die von der [Azure Managed Library](/previous-versions/azure/dn602775(v=azure.11))bereitgestellt werden, insbesondere der [GetConfigurationSettingValue-Methode.](/previous-versions/azure/reference/ee772857(v=azure.100))
+Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. Code, der in der Rolle ausgeführt wird, kann die Werte der Konfigurationseinstellungen zur Laufzeit mithilfe von Klassen lesen, die von der [verwalteten Azure-Bibliothek](/previous-versions/azure/dn602775(v=azure.11))bereitgestellt werden, insbesondere die [getconfigurationsettingvalue](/previous-versions/azure/reference/ee772857(v=azure.100)) -Methode.
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurieren einer Verbindungszeichenfolge für ein Speicherkonto
 

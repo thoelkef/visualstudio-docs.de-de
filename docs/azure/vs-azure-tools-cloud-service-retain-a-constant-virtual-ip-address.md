@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ae9064b6aba283c8d2fb8d1e5ec02ef1bd70e199
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260726"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280849"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Beibehalten einer konstanten virtuellen IP-Adresse für einen Azure-Clouddienst
 Wenn Sie einen in Azure gehosteten Clouddienst aktualisieren, müssen Sie möglicherweise sicherstellen, dass die virtuelle IP-Adresse (VIP) des Diensts unverändert bleibt. Viele Domänenverwaltungsdienste nutzen DNS (Domain Name System) für die Registrierung der Domänennamen. DNS funktioniert nur, wenn die VIP unverändert bleibt. Mithilfe des **Veröffentlichungs-Assistenten** in Azure Tools können Sie sicherstellen, dass die VIP Ihres Clouddiensts beibehalten wird, wenn Sie den Dienst aktualisieren. Weitere Informationen zur Verwendung der DNS-Domänenverwaltung für Clouddienste finden Sie unter [Konfigurieren eines benutzerdefinierten Domänennamens für einen Azure-Clouddienst](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -35,11 +35,11 @@ Sie können im **Veröffentlichungs-Assistenten** die entsprechenden Bereitstell
 
     ![Azure-Anwendung veröffentlichen – Seite „Anmelden“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Überprüfen Sie auf der Registerkarte **Allgemeine Einstellungen**, ob der Name des Clouddiensts, für den die Bereitstellung durchgeführt wird, sowie die Angaben für **Umgebung**, **Buildkonfiguration** und **Dienstkonfiguration** richtig sind.
+4. Überprüfen Sie auf der Registerkarte **Allgemeine Einstellungen** , ob der Name des clouddiensts, für den Sie bereitstellen, die **Umgebung**, die **Buildkonfiguration**und die **Dienst Konfiguration** richtig sind.
 
     ![Azure-Anwendung veröffentlichen – Registerkarte „Allgemeine Einstellungen“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Vergewissern Sie sich auf der Registerkarte **Erweiterte Einstellungen**, dass die Angaben für **Bereitstellungsbezeichnung** und **Speicherkonto** korrekt sind. Stellen Sie sicher, dass das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktiviert und das Kontrollkästchen **Bereitstellungsaktualisierung** aktiviert ist. Durch Deaktivierung von **Bereitstellung bei Fehler löschen** stellen Sie sicher, dass die VIP beibehalten wird, wenn während der Bereitstellung ein Fehler auftritt. Durch Aktivierung des Kontrollkästchens **Bereitstellungsaktualisierung** wird sichergestellt, dass die Bereitstellung nicht gelöscht und die VIP beibehalten wird, wenn Sie die Anwendung erneut veröffentlichen.
+5. Vergewissern Sie sich auf der Registerkarte **Erweiterte Einstellungen**, dass die Angaben für **Bereitstellungsbezeichnung** und **Speicherkonto** korrekt sind. Stellen Sie sicher, dass das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktiviert und das Kontrollkästchen **Bereitstellungsaktualisierung** aktiviert ist. Wenn Sie das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktivieren, stellen Sie sicher, dass die VIP nicht verloren geht, wenn während der Bereitstellung ein Fehler auftritt. Durch Aktivierung des Kontrollkästchens **Bereitstellungsaktualisierung** wird sichergestellt, dass die Bereitstellung nicht gelöscht und die VIP beibehalten wird, wenn Sie die Anwendung erneut veröffentlichen.
 
     ![Azure-Anwendung veröffentlichen – Registerkarte „Erweiterte Einstellungen“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
@@ -52,4 +52,4 @@ Sie können im **Veröffentlichungs-Assistenten** die entsprechenden Bereitstell
     ![Azure-Anwendung veröffentlichen – Seite „Zusammenfassung“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Verwenden des Visual Studio-Assistenten zur Veröffentlichung einer Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md)
+- [Verwenden des Visual Studio-Assistenten zum Veröffentlichen von Azure-Anwendungen](vs-azure-tools-publish-azure-application-wizard.md)

@@ -1,25 +1,25 @@
 ---
 title: 'Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ad2a108c0ce4162beecd77ac0a761d4950904156
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 20889a2fcaf9f44cc21f90ed9b164d4457981764
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648041"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281031"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden
 
 Warnung. Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden. Möchten Sie die Änderungen übernehmen?
 
-Im Dialogfeld **Verhalten konfigurieren** können Sie `Insert`, `Update` und `Delete` Verhalten für alle verfügbaren Klassen konfigurieren. Diese Nachricht wird angezeigt, wenn Sie eine neue Kombination von **Klasse** und **Verhalten** auswählen und die vorangegangene Änderung noch nicht übernommen wurde.
+Im Dialogfeld **Verhalten konfigurieren** können Sie das `Insert` -, `Update` -und- `Delete` Verhalten für alle verfügbaren Klassen konfigurieren. Diese Nachricht wird angezeigt, wenn Sie eine neue Kombination von **Klasse** und **Verhalten** auswählen und die vorangegangene Änderung noch nicht übernommen wurde.
 
 ## <a name="change-options"></a>Änderungsoptionen
 
@@ -29,4 +29,4 @@ Im Dialogfeld **Verhalten konfigurieren** können Sie `Insert`, `Update` und `De
 
 ## <a name="see-also"></a>Siehe auch
 
-- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

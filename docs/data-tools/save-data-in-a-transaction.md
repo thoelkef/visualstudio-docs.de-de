@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion'
 ms.date: 09/08/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586236"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281629"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion
 
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe des <xref:System.Transactions>-Namespace in einer Transaktion gespeichert werden. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows Forms-Anwendung. Mit dem Assistenten zum Konfigurieren von Datenquellen können Sie in der Beispieldatenbank Northwind ein Dataset für zwei Tabellen erstellen. Sie fügen einem Windows Form Daten gebundene Steuerelemente hinzu, und Sie ändern den Code für die Schaltfläche "Save" (speichern) des bindingnavigators, um die Datenbank in einem Transaktionsbereich zu aktualisieren.
+In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe des-Namespace in einer Transaktion gespeichert werden <xref:System.Transactions> . In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows Forms-Anwendung. Mit dem Assistenten zum Konfigurieren von Datenquellen können Sie in der Beispieldatenbank Northwind ein Dataset für zwei Tabellen erstellen. Sie fügen einem Windows Form Daten gebundene Steuerelemente hinzu, und Sie ändern den Code für die Schaltfläche "Save" (speichern) des bindingnavigators, um die Datenbank in einem Transaktionsbereich zu aktualisieren.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -52,7 +52,7 @@ Der erste Schritt besteht darin, eine **Windows Forms Anwendung**zu erstellen.
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
@@ -62,11 +62,11 @@ Der erste Schritt besteht darin, eine **Windows Forms Anwendung**zu erstellen.
 
 ## <a name="create-a-database-data-source"></a>Erstellen einer Datenbank-Datenquelle
 
-In diesem Schritt wird mithilfe des **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle erstellt, die auf den `Customers`-und `Orders` Tabellen in der Beispieldatenbank Northwind basiert.
+In diesem Schritt wird mithilfe des **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle basierend auf den `Customers` `Orders` Tabellen und in der Beispieldatenbank Northwind erstellt.
 
 1. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen**aus.
 
-2. Wählen Sie im Fenster **Datenquellen** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank**aus, und klicken Sie dann auf **weiter**.
 
@@ -74,7 +74,7 @@ In diesem Schritt wird mithilfe des **Assistenten zum Konfigurieren von Datenque
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         \- oder -
+         - oder -
 
     - Klicken Sie auf **neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.
 
@@ -84,7 +84,7 @@ In diesem Schritt wird mithilfe des **Assistenten zum Konfigurieren von Datenque
 
 7. Erweitern Sie auf dem Bildschirm **Wählen Sie Ihre Datenbankobjekte** aus den Knoten **Tabellen** .
 
-8. Wählen Sie die Tabellen `Customers` und `Orders` aus, und klicken Sie dann auf **Fertig**stellen.
+8. Wählen Sie `Customers` die `Orders` Tabellen und aus, und klicken Sie dann auf **Fertig**stellen.
 
      Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im Fenster **Datenquellen** angezeigt.
 
@@ -96,11 +96,11 @@ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus
 
 2. Ziehen Sie den Hauptknoten **Customers** aus dem Fenster **Datenquellen** auf **Form1**.
 
-   Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
+   Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter` , <xref:System.Windows.Forms.BindingSource> und wird <xref:System.Windows.Forms.BindingNavigator> in der Komponenten Leiste angezeigt.
 
 3. Ziehen Sie den zugehörigen Knoten **Orders** (nicht den Haupt Knoten **Orders** , sondern den zugehörigen untergeordneten Tabellen Knoten unterhalb der Spalte **Fax** ) auf das Formular unterhalb von **CustomersDataGridView**.
 
-   Ein <xref:System.Windows.Forms.DataGridView> wird auf dem Formular angezeigt. Eine `OrdersTableAdapter` und <xref:System.Windows.Forms.BindingSource> werden in der Komponenten Leiste angezeigt.
+   Ein <xref:System.Windows.Forms.DataGridView> wird auf dem Formular angezeigt. Ein `OrdersTableAdapter` und wird <xref:System.Windows.Forms.BindingSource> in der Komponenten Leiste angezeigt.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Fügen Sie einen Verweis auf die System. Transactions-Assembly hinzu.
 
@@ -116,7 +116,7 @@ Transaktionen verwenden den Namespace <xref:System.Transactions>. Eine Projektve
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Ändern Sie den Code in der Schaltfläche "SaveItem" von BindingNavigator.
 
-Für die erste Tabelle, die auf dem Formular abgelegt wird, wird standardmäßig Code dem `click`-Ereignis der Schaltfläche Speichern auf der <xref:System.Windows.Forms.BindingNavigator>hinzugefügt. Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise wird der vorhandene Save-Code aus dem Click-Ereignishandler der Schaltfläche "Save" umgestalten. Wir erstellen außerdem einige weitere Methoden, um bestimmte Aktualisierungs Funktionen bereitzustellen, je nachdem, ob die Zeile hinzugefügt oder gelöscht werden muss.
+Für die erste Tabelle, die auf dem Formular abgelegt wird, wird standardmäßig Code dem- `click` Ereignis der Schaltfläche Speichern in hinzugefügt <xref:System.Windows.Forms.BindingNavigator> . Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise wird der vorhandene Save-Code aus dem Click-Ereignishandler der Schaltfläche "Save" umgestalten. Wir erstellen außerdem einige weitere Methoden, um bestimmte Aktualisierungs Funktionen bereitzustellen, je nachdem, ob die Zeile hinzugefügt oder gelöscht werden muss.
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>So ändern Sie automatisch generierten Speichern-Code
 
